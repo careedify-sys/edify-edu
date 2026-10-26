@@ -21,7 +21,7 @@ const SEM_TABS = [
 
 // Learning outcome hints per subject keyword
 const OUTCOMES: Record<string, string> = {
-  'Management': 'Understand core management functions — planning, organising, leading, controlling',
+  'Management': 'Understand core management functions: planning, organising, leading, controlling',
   'Organizational Behavior': 'Analyse individual and group behaviour to improve workplace effectiveness',
   'Marketing': 'Build strategies to identify, attract, and retain customers profitably',
   'Finance': 'Apply financial tools to evaluate business decisions and manage capital',
@@ -40,7 +40,7 @@ const OUTCOMES: Record<string, string> = {
   'Java': 'Develop object-oriented applications and backend systems using Java',
   'Cloud': 'Deploy and manage scalable applications on cloud infrastructure',
   'SQL': 'Query relational databases to extract, transform, and load business data',
-  'Project': 'Apply project management frameworks — scope, schedule, budget, risk',
+  'Project': 'Apply project management frameworks: scope, schedule, budget, risk',
   'International': 'Navigate global trade regulations, currency risks, and cross-cultural management',
   'Supply Chain': 'Design and manage end-to-end supply chain for cost and resilience',
   'Healthcare': 'Apply management principles to hospital operations and healthcare systems',
@@ -132,7 +132,7 @@ export default function SyllabusSection({ syllabus, program, universityName, act
       <div style={{ padding: '14px 20px', background: 'rgba(11,29,53,0.04)', borderBottom: '1px solid #E2E8F4', display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', }}>
         <BookOpen size={14} color="var(--amber)" />
         <span style={{ fontSize: 11, fontWeight: 700, color: 'var(--ink)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-          {program} Syllabus — Semester-wise Breakdown
+          {program} Syllabus: Semester-wise Breakdown
         </span>
         {activeSpec && (
           <span style={{ marginLeft: 'auto', fontSize: 10, padding: '2px 10px', borderRadius: 'var(--r-lg)', background: 'rgba(200,129,26,0.1)', color: 'var(--amber-text)', fontWeight: 700, }}>
@@ -178,7 +178,7 @@ export default function SyllabusSection({ syllabus, program, universityName, act
                   Select a specialisation above to see {activeSem === 'sem3' ? 'Semester 3' : 'Semester 4'} subjects
                 </div>
                 <div style={{ fontSize: 12, color: 'var(--ink-3)' }}>
-                  Sem 3 & 4 are specialisation-specific — click any specialisation pill to see its subjects
+                  Sem 3 & 4 are specialisation-specific, click any specialisation pill to see its subjects
                 </div>
               </div>
             )
@@ -210,7 +210,7 @@ export default function SyllabusSection({ syllabus, program, universityName, act
       {(syllabus.edifySkills?.length || syllabus.edifyProjects?.length || syllabus.edifyInternships?.length) ? (
         <div style={{ padding: '14px 20px', borderTop: '1px solid #F1F5F9', background: 'rgba(31,107,82,0.03)', }}>
           <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--sage)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 12 }}>
-            ✦ Edify Recommends — do these alongside the program
+            ✦ Edify Recommends: do these alongside the program
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 14 }}>
             {syllabus.edifySkills && syllabus.edifySkills.length > 0 && (

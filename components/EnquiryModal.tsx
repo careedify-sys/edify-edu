@@ -352,7 +352,7 @@ export default function EnquiryModal({
                 <div className="flex items-center gap-2 bg-green-50 border border-green-200 rounded-xl px-4 py-2.5 mb-2">
                   <CheckCircle className="w-4 h-4 text-green-500 shrink-0" />
                   <span className="text-sm font-bold text-green-700">
-                    Coupon applied: {couponCode} — {couponDiscount}
+                    Coupon applied: {couponCode}: {couponDiscount}
                   </span>
                 </div>
               )}
@@ -414,7 +414,7 @@ export default function EnquiryModal({
             </p>
             <p className="text-xs text-slate-400 mb-6">
               We've noted your interest in <strong>{form.program}</strong>
-              {form.preferredUniversity ? ` — ${form.preferredUniversity}` : ''}.
+              {form.preferredUniversity ? `, ${form.preferredUniversity}` : ''}.
             </p>
 
             <button

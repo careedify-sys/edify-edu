@@ -9,7 +9,7 @@ export default function BestMBAClient() {
       <div className="card p-8 text-center" style={{ background: 'linear-gradient(135deg, #0B1D35, #1a3a5c)' }}>
         <h2 className="text-2xl font-bold text-white mb-2">Not Sure Which Online MBA is Right for You?</h2>
         <p className="text-white/60 mb-6 max-w-md mx-auto text-sm leading-relaxed">
-          Tell us your budget, target career, and current qualification — our education advisors will shortlist the best fit for you at no cost.
+          Tell us your budget, target career, and current qualification, our education advisors will shortlist the best fit for you at no cost.
         </p>
         <button
           onClick={() => setOpen(true)}

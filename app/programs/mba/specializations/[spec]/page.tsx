@@ -253,7 +253,7 @@ const SPECS: Record<string, SpecDef> = {
     },
     supportingBlogs: [
       { slug: 'online-mba-logistics-management-india-2026', title: 'Online MBA Logistics Management India 2026', desc: 'Compares universities, fees, curriculum, and career outcomes for the MBA Logistics Management specialisation.' },
-      { slug: 'online-mba-supply-chain-management-india-2026', title: 'Online MBA Supply Chain Management India 2026', desc: 'Related programme covering upstream procurement and vendor networks — cross-reference for career direction.' },
+      { slug: 'online-mba-supply-chain-management-india-2026', title: 'Online MBA Supply Chain Management India 2026', desc: 'Related programme covering upstream procurement and vendor networks, cross-reference for career direction.' },
     ],
     careerBlogSlug: 'online-mba-logistics-management-india-2026',
     faqs: [
@@ -290,7 +290,7 @@ const SPECS: Record<string, SpecDef> = {
     },
     supportingBlogs: [
       { slug: 'online-mba-hospitality-management-india-2026', title: 'Online MBA Hospitality Management India 2026', desc: 'Compares universities, fees, curriculum, and career outcomes for the MBA Hospitality Management specialisation.' },
-      { slug: 'online-mba-hospital-healthcare-management-india-2026', title: 'Online MBA Hospital and Healthcare Management India 2026', desc: 'Related programme for healthcare roles — cross-reference for candidates choosing between hospitality and healthcare management.' },
+      { slug: 'online-mba-hospital-healthcare-management-india-2026', title: 'Online MBA Hospital and Healthcare Management India 2026', desc: 'Related programme for healthcare roles, cross-reference for candidates choosing between hospitality and healthcare management.' },
     ],
     careerBlogSlug: 'online-mba-hospitality-management-india-2026',
     faqs: [

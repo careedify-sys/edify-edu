@@ -178,7 +178,7 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
             </div>
           </div>
           <p style={{ color: '#94a3b8', fontSize: 12, lineHeight: 1.65, margin: '0 0 14px' }}>
-            Get real answers from someone who completed this program — fees, workload, placements, and whether it was worth it.
+            Get real answers from someone who completed this program, fees, workload, placements, and whether it was worth it.
           </p>
         </div>
 

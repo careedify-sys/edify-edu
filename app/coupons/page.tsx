@@ -164,7 +164,7 @@ function CouponCard({
                 className="w-full flex items-center justify-center gap-2 bg-amber-50 border border-amber-300 hover:bg-amber-100 text-amber-800 py-2 rounded-xl text-xs font-bold transition-colors"
               >
                 <Eye className="w-3.5 h-3.5" />
-                Reveal Code — Fill Quick Form
+                Reveal Code: Fill Quick Form
               </button>
             </div>
           )}

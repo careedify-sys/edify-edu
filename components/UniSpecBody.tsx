@@ -155,7 +155,7 @@ function SpecSyllabusSection({
         {syllabus.emptyFallback && (
           <section className="rounded-xl border border-slate-200 bg-white p-6">
             <h2 className="text-lg font-bold mb-3" style={{ color: '#0B1533' }}>
-              Syllabus — {spec}
+              Syllabus: {spec}
             </h2>
             <div className="text-sm text-slate-600 leading-relaxed whitespace-pre-line">
               {syllabus.emptyFallback}
@@ -195,7 +195,7 @@ function SpecSyllabusSection({
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-6">
       <h2 className="text-lg font-bold mb-4" style={{ color: '#0B1533' }}>
-        {hasSem12 ? `Full Programme Syllabus — ${spec}` : `Semester 3 and 4 — ${spec} Subjects`}
+        {hasSem12 ? `Full Programme Syllabus: ${spec}` : `Semester 3 and 4: ${spec} Subjects`}
       </h2>
 
       {semGroups.map((group, gi) => (
@@ -208,7 +208,7 @@ function SpecSyllabusSection({
                 <div>
                   <span className="font-semibold text-slate-800">{s.name}</span>
                   {s.description && (
-                    <span className="text-slate-500"> — {s.description}</span>
+                    <span className="text-slate-500">, {s.description}</span>
                   )}
                 </div>
               </div>
@@ -346,7 +346,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
     if (!specContent) return null
     return (
       <section className="rounded-xl border border-slate-200 bg-white p-6">
-        <h2 className="text-lg font-bold mb-3" style={{ color: '#0B1533' }}>Curriculum Deep Dive — {spec}</h2>
+        <h2 className="text-lg font-bold mb-3" style={{ color: '#0B1533' }}>Curriculum Deep Dive: {spec}</h2>
         {specContent.overview && (
           <p className="text-sm text-slate-600 leading-relaxed mb-4">{specContent.overview}</p>
         )}
@@ -688,7 +688,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                   <HonestVerdict u={u} program={program} cleanName={cleanName} />
 
                   <InlineCTA
-                    text="Still have questions? Ask our counsellor — free call, no commission."
+                    text="Still have questions? Ask our counsellor, free call, no commission."
                     linkText="Ask a counsellor"
                     href="/contact"
                     variant="primary"

@@ -62,7 +62,7 @@ export default function RedFlagsBlock({ u, program, cleanName }: Props) {
     <section className="rounded-xl border border-red-100 bg-red-50 p-6">
       <div className="flex items-center gap-2 mb-1">
         <AlertCircle size={16} className="text-red-500" />
-        <h2 className="text-lg font-bold text-red-800">Red Flags — Be Honest With Yourself</h2>
+        <h2 className="text-lg font-bold text-red-800">Red Flags: Be Honest With Yourself</h2>
       </div>
       <p className="text-sm text-red-600 mb-4">
         Edify gives you the honest picture. Read these before you decide.

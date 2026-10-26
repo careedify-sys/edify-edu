@@ -4,12 +4,12 @@ import Image from 'next/image'
 import { Shield, Award, Users, Phone, Mail, CheckCircle, XCircle, Database, BarChart2 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Edify — India\'s Independent Online Education Guide',
+  title: 'About Edify: India\'s Independent Online Education Guide',
   description: 'edifyedu.in is India\'s independent guide to UGC DEB approved online degrees. No paid rankings. No university affiliations. We help students compare 143 universities honestly.',
   keywords: 'about edify, independent education guide india, ugc deb approved universities, honest online degree comparison, best online mba colleges in india, online mba india, nirf ranked online universities, naac a++ online university, online mba for working professionals, top 10 mba colleges in india',
   alternates: { canonical: 'https://edifyedu.in/about' },
   openGraph: {
-    title: 'About Edify — India\'s Independent Online Education Guide',
+    title: 'About Edify: India\'s Independent Online Education Guide',
     description: 'No paid rankings. No university affiliations. We help students compare 143 UGC DEB approved online universities honestly.',
     url: 'https://edifyedu.in/about',
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Edify — India\'s Independent Online Education Guide',
+    title: 'About Edify: India\'s Independent Online Education Guide',
     description: 'No paid rankings. No university affiliations. Honest comparison of 143 UGC DEB approved online universities.',
   },
 }
@@ -92,10 +92,10 @@ export default function AboutPage() {
         <div className="card p-8 mb-8">
           <h2 className="text-2xl font-bold text-navy mb-4">Our Mission</h2>
           <p className="text-ink-2 leading-relaxed mb-4">
-            Thousands of students in India search for online degrees every month — but most information they find is either paid content disguised as reviews, or outdated university brochures. Students end up spending ₹1–3 lakhs on degrees without understanding what they&apos;re paying for.
+            Thousands of students in India search for online degrees every month, but most information they find is either paid content disguised as reviews, or outdated university brochures. Students end up spending ₹1–3 lakhs on degrees without understanding what they&apos;re paying for.
           </p>
           <p className="text-ink-2 leading-relaxed">
-            Edify was built to fix that. We independently research every UGC DEB approved university using public NAAC, NIRF, and UGC data — then present it clearly, so you can compare universities on facts, not marketing.
+            Edify was built to fix that. We independently research every UGC DEB approved university using public NAAC, NIRF, and UGC data, then present it clearly, so you can compare universities on facts, not marketing.
           </p>
         </div>
 
@@ -106,8 +106,8 @@ export default function AboutPage() {
             {[
               { icon: Shield, title: 'Zero Paid Rankings', desc: 'No university pays to appear higher in our rankings. Our order is based purely on NIRF, NAAC, and student outcomes data.' },
               { icon: Award, title: 'Official Data Only', desc: 'Every fee, ranking, and accreditation shown is sourced from UGC, NAAC, NIRF, or direct university disclosures.' },
-              { icon: Users, title: 'Expert Guidance', desc: 'Our advisors help you shortlist universities based on your goals, budget, and eligibility — at zero cost.' },
-              { icon: CheckCircle, title: 'UGC DEB Verified', desc: 'We only list universities that are approved by UGC DEB for online education — protecting you from degree mills.' },
+              { icon: Users, title: 'Expert Guidance', desc: 'Our advisors help you shortlist universities based on your goals, budget, and eligibility, at zero cost.' },
+              { icon: CheckCircle, title: 'UGC DEB Verified', desc: 'We only list universities that are approved by UGC DEB for online education, protecting you from degree mills.' },
             ].map(item => (
               <div key={item.title} className="flex gap-4">
                 <div className="w-10 h-10 rounded-full bg-amber/10 flex items-center justify-center shrink-0">
@@ -175,7 +175,7 @@ export default function AboutPage() {
                   'Not an enrollment portal',
                   'Not affiliated with any university',
                   'Not earning money from student enrollments',
-                  'Not the final authority on fees — always verify on the official university website',
+                  'Not the final authority on fees, always verify on the official university website',
                 ].map(item => (
                   <li key={item} className="flex items-start gap-2">
                     <XCircle className="w-3.5 h-3.5 text-red-400 shrink-0 mt-0.5" />
@@ -213,14 +213,14 @@ export default function AboutPage() {
             </div>
             <h2 className="text-2xl font-bold text-navy">Data Sources</h2>
           </div>
-          <p className="text-sm text-ink-2 mb-4">All university data on this site — fees, programs, specialisations — is sourced from:</p>
+          <p className="text-sm text-ink-2 mb-4">All university data on this site, fees, programs, specialisations, is sourced from:</p>
           <ul className="space-y-2 text-ink-2">
             {[
-              'Official university websites — fee structures and program details',
-              'NIRF rankings — Ministry of Education, India (nirfindia.org)',
-              'NAAC grades — National Assessment and Accreditation Council (naac.gov.in)',
+              'Official university websites: fee structures and program details',
+              'NIRF rankings: Ministry of Education, India (nirfindia.org)',
+              'NAAC grades: National Assessment and Accreditation Council (naac.gov.in)',
               'UGC Distance Education Bureau approved university list (ugc.ac.in)',
-              'AICTE approvals — for technical programs',
+              'AICTE approvals: for technical programs',
             ].map(src => (
               <li key={src} className="flex items-start gap-2">
                 <CheckCircle className="w-4 h-4 text-sage shrink-0 mt-0.5" />

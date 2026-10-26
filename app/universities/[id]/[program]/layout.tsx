@@ -89,7 +89,7 @@ const PROG_KW: Record<string, string> = {
 
 function getSeoName(id: string, fullName: string): string {
   if (SEO_NAME[id]) return SEO_NAME[id]
-  let n = fullName.split(/\s*[–—]\s*/)[0].trim()
+  let n = fullName.split(/\s*[–, ]\s*/)[0].trim()
   n = n.replace(/\s*\([^)]+\)\s*$/, '').replace(/\s+Online\s*$/i, '').trim()
   if (n.length > 40) n = n.split(' ').slice(0, 4).join(' ')
   return n
@@ -125,7 +125,7 @@ export async function generateMetadata({ params }: { params: { id: string; progr
   const nirf = nirfLabel ?? `NAAC ${u.naac}`
 
   const titleName = getTitleName(u.id, u.name, u.abbr)
-  const title = `${titleName} ${progTitle} — Fees & Syllabus 2026 | EdifyEdu`
+  const title = `${titleName} ${progTitle}: Fees & Syllabus 2026 | EdifyEdu`
 
   const baseDescription = `January 2027 admissions open till March. Online ${progTitle} at ${seoName}: ${fee} total${naacSegment(u.naac)}${nirfLabel ? `, ${nirfLabel}` : ''}.${specs ? ` Specs: ${specs}.` : ''} UGC DEB approved. Compare & apply!`
 

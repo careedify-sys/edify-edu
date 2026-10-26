@@ -247,7 +247,7 @@ function UniSlot({
               )}
               {!search && available.length > 25 && (
                 <p className="text-center py-3 text-xs text-slate-400 border-t border-slate-100">
-                  +{available.length - 25} more — type to filter
+                  +{available.length - 25} more: type to filter
                 </p>
               )}
             </div>
@@ -403,7 +403,7 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
                 onChange={e => setSpec(e.target.value)}
                 className="w-full text-sm rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-slate-700 focus:outline-none focus:border-amber-400 transition-colors"
               >
-                <option value="">— Select Specialisation —</option>
+                <option value="">, Select Specialisation, </option>
                 {specs.map(s => <option key={s} value={s}>{s}</option>)}
               </select>
             )}
@@ -412,7 +412,7 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
 
         {spec && syllabus?.sem1 && (
           <div>
-            <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest mb-1.5">Sem 1 — Core Subjects</p>
+            <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest mb-1.5">Sem 1: Core Subjects</p>
             <div className="flex flex-wrap gap-1">
               {syllabus.sem1.split(' | ').map(s => s.trim()).filter(Boolean).map(subj => (
                 <span key={subj} className="px-2 py-1 rounded-md text-[11px] bg-slate-50 border border-slate-200 text-slate-600">{subj}</span>
@@ -423,7 +423,7 @@ function SyllabusComparison({ program }: { program: 'MBA' | 'MCA' }) {
 
         {spec && subjects.length > 0 && (
           <div>
-            <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest mb-1.5">Sem 3–4 Electives — {spec}</p>
+            <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest mb-1.5">Sem 3–4 Electives: {spec}</p>
             <div className="space-y-1">
               {subjects.map(subj => {
                 const inOther = otherSpec && otherSet.has(subj.toLowerCase())
@@ -842,8 +842,8 @@ function CompareContent() {
       {universities.length >= 2 && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
           '@context':'https://schema.org','@type':'Article',
-          headline:`${universities[0]?.name} vs ${universities[1]?.name} Online ${program} — Comparison 2026`,
-          description:`Detailed comparison of ${universities[0]?.name} and ${universities[1]?.name} Online ${program} — fees, NIRF rank, NAAC grade and syllabus.`,
+          headline:`${universities[0]?.name} vs ${universities[1]?.name} Online ${program}: Comparison 2026`,
+          description:`Detailed comparison of ${universities[0]?.name} and ${universities[1]?.name} Online ${program}: fees, NIRF rank, NAAC grade and syllabus.`,
           url:`https://edifyedu.in/compare?a=${universities[0]?.id}&b=${universities[1]?.id}`,
           author:{'@type':'Organization',name:'edifyedu.in',url:'https://edifyedu.in'},
           publisher:{'@type':'Organization',name:'edifyedu.in',logo:{'@type':'ImageObject',url:'https://edifyedu.in/logo.png'}},
@@ -1076,7 +1076,7 @@ function CompareContent() {
                     </div>
                     {universities.map(u => (
                       <div key={u.id} className="p-4 border-l border-white/20 flex flex-col items-center justify-center gap-1">
-                        <p className="text-xs font-medium text-white text-center">Save up to ₹50,000 — check eligibility</p>
+                        <p className="text-xs font-medium text-white text-center">Save up to ₹50,000, check eligibility</p>
                         <span className="px-3 py-1 bg-white/20 rounded-full text-[11px] font-semibold text-white border border-white/30 hover:bg-white hover:text-amber-600 transition-all uppercase tracking-tight">
                           Check Now
                         </span>

@@ -34,20 +34,20 @@ const PROGRAM_SUITS: Record<string, string[]> = {
 
 const PROGRAM_ELSEWHERE: Record<string, string[]> = {
   MBA: [
-    'You need the IIM/XLRI/ISB campus brand for investment banking or top consulting — apply offline only',
+    'You need the IIM/XLRI/ISB campus brand for investment banking or top consulting, apply offline only',
     'You need a written placement guarantee with a minimum salary commitment',
     'You want a 1-year accelerated full-time MBA format',
   ],
   MCA: [
-    'You want a core systems programming or VLSI role — needs B.Tech/M.Tech',
+    'You want a core systems programming or VLSI role, needs B.Tech/M.Tech',
     'You expect FAANG-tier product roles straight after graduation',
   ],
   BBA: [
     'You want a full-time campus experience with hostel and placements at top MNCs',
-    'You are interested in engineering — consider B.Tech instead',
+    'You are interested in engineering: consider B.Tech instead',
   ],
   BCA: [
-    'You want deep core CS roles — consider B.Tech instead',
+    'You want deep core CS roles, consider B.Tech instead',
     'You need on-campus labs with physical hardware access',
   ],
 }

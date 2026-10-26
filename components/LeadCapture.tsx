@@ -37,7 +37,7 @@ export function EntryPopup() {
               Not sure which university is right for you?
             </h2>
             <p style={{fontSize:13,color:'var(--ink-2)',lineHeight:1.6,margin:0}}>
-              Edify evaluates 3–4 stages before recommending any university — goals, budget, eligibility & ROI. Takes 2 minutes.
+              Edify evaluates 3–4 stages before recommending any university, goals, budget, eligibility & ROI. Takes 2 minutes.
             </p>
           </div>
 
@@ -84,13 +84,13 @@ export function ExitIntentPopup() {
           <div className="text-center mb-5">
             <div className="text-4xl mb-2">⚡</div>
             <div style={{fontSize:11,fontWeight:700,color:'var(--amber-vivid)',textTransform:'uppercase',letterSpacing:'0.1em',marginBottom:8}}>
-              Wait — Before You Leave
+              Wait: Before You Leave
             </div>
             <h2 style={{fontSize:20,fontWeight:800,color:'#fff',lineHeight:1.3,margin:'0 0 8px'}}>
               Get a personalised university shortlist in 2 minutes
             </h2>
             <p style={{fontSize:13,color:'rgba(255,255,255,0.75)',lineHeight:1.6,margin:0}}>
-              Free. No spam. Edify evaluates your goals, budget & eligibility before recommending — zero paid placements.
+              Free. No spam. Edify evaluates your goals, budget & eligibility before recommending, zero paid placements.
             </p>
           </div>
 
@@ -141,7 +141,7 @@ export function MidScrollPopup({ universityName }: { universityName?: string }) 
               {universityName ? `Considering ${universityName.split(' ')[0]}?` : 'Need help choosing?'}
             </div>
             <div className="text-xs text-ink-3 leading-snug mb-3">
-              Edify advisors compare fees, NIRF ranks & placement data to find your best match — free.
+              Edify advisors compare fees, NIRF ranks & placement data to find your best match, free.
             </div>
             <button onClick={() => { setDismissed(true); setModalOpen(true) }} style={{ padding:'9px 16px',borderRadius:'var(--r-xs)', background:'linear-gradient(135deg,#c9922a,#e0a93a)', color:'#fff',fontWeight:700,fontSize:12,border:'none',cursor:'pointer' }}>
               Connect with an Advisor →

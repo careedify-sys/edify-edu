@@ -72,11 +72,11 @@ const BBA_BCA_PAIRS = [
 const FAQS = [
   {
     q: 'Which online MBA is best in India in 2026?',
-    a: 'There is no single best — it depends on your budget, current qualification, and career goal. NMIMS and Symbiosis are premium options (₹1.5L–₹2.5L) with strong brand value. Amity, JAIN, and LPU offer good programs in the ₹60K–₹1.2L range. Use the comparison tool above to evaluate NIRF rank, NAAC grade, and specialisations side by side.',
+    a: 'There is no single best: it depends on your budget, current qualification, and career goal. NMIMS and Symbiosis are premium options (₹1.5L–₹2.5L) with strong brand value. Amity, JAIN, and LPU offer good programs in the ₹60K–₹1.2L range. Use the comparison tool above to evaluate NIRF rank, NAAC grade, and specialisations side by side.',
   },
   {
     q: 'Is an online MBA valid for PSU and government jobs?',
-    a: 'Yes — online degrees from UGC DEB approved universities are treated on par with regular degrees for PSU eligibility and government employment as per the UGC DEB regulations 2020. However, a few specific PSUs may have their own criteria. Our counsellors can confirm eligibility for any specific university before you apply.',
+    a: 'Yes, online degrees from UGC DEB approved universities are treated on par with regular degrees for PSU eligibility and government employment as per the UGC DEB regulations 2020. However, a few specific PSUs may have their own criteria. Our counsellors can confirm eligibility for any specific university before you apply.',
   },
   {
     q: 'What is the difference between NAAC A++ and NAAC A+ grade?',
@@ -84,7 +84,7 @@ const FAQS = [
   },
   {
     q: 'What does NIRF rank mean and why does it matter?',
-    a: "NIRF (National Institutional Ranking Framework) is an annual ranking published by the Government of India's Ministry of Education. It scores universities on teaching and learning resources, research productivity, graduation outcomes, outreach, and perception. Lower the number, better the rank. NIRF rank directly affects employer perception — many corporates and HR teams use it as a credibility filter when shortlisting candidates from online programs.",
+    a: "NIRF (National Institutional Ranking Framework) is an annual ranking published by the Government of India's Ministry of Education. It scores universities on teaching and learning resources, research productivity, graduation outcomes, outreach, and perception. Lower the number, better the rank. NIRF rank directly affects employer perception, many corporates and HR teams use it as a credibility filter when shortlisting candidates from online programs.",
   },
   {
     q: 'How much does an online MBA cost in India?',
@@ -96,11 +96,11 @@ const FAQS = [
   },
   {
     q: 'Is the syllabus the same across online MBA universities?',
-    a: 'No — syllabi vary significantly. While Semester 1 and 2 cover common management foundations (financial management, marketing, HR, operations), Semester 3 and 4 specialisation subjects differ by university. Some universities like Amity and JAIN offer 10+ specialisations; others like NMIMS offer fewer but more focused tracks. The syllabus comparison tool on this page lets you see subject-level differences before deciding.',
+    a: 'No, syllabi vary significantly. While Semester 1 and 2 cover common management foundations (financial management, marketing, HR, operations), Semester 3 and 4 specialisation subjects differ by university. Some universities like Amity and JAIN offer 10+ specialisations; others like NMIMS offer fewer but more focused tracks. The syllabus comparison tool on this page lets you see subject-level differences before deciding.',
   },
   {
     q: 'How long does an online MBA or MCA take to complete?',
-    a: 'Both online MBA and online MCA are typically 2-year (4 semester) programs under UGC DEB regulations. A few universities offer an accelerated format with annual exams. Working professionals generally take 2–2.5 years to complete the degree. There is no fast-track option — UGC DEB mandates a minimum duration to maintain degree equivalency.',
+    a: 'Both online MBA and online MCA are typically 2-year (4 semester) programs under UGC DEB regulations. A few universities offer an accelerated format with annual exams. Working professionals generally take 2–2.5 years to complete the degree. There is no fast-track option, UGC DEB mandates a minimum duration to maintain degree equivalency.',
   },
   {
     q: 'What specialisations are available in online MBA?',
@@ -108,7 +108,7 @@ const FAQS = [
   },
   {
     q: 'How do I choose between online MBA and online MCA?',
-    a: 'Choose MBA if your goal is moving into management, business strategy, leadership, or switching from a technical to a business role. Choose MCA if you want to stay in or deepen a technology career — software development, data science, cloud computing, or IT management. Both degrees are eligible for government and private sector jobs. If you already hold a BCA or B.Sc (CS), MCA is a natural progression; if you hold any graduation, MBA is open to you.',
+    a: 'Choose MBA if your goal is moving into management, business strategy, leadership, or switching from a technical to a business role. Choose MCA if you want to stay in or deepen a technology career, software development, data science, cloud computing, or IT management. Both degrees are eligible for government and private sector jobs. If you already hold a BCA or B.Sc (CS), MCA is a natural progression; if you hold any graduation, MBA is open to you.',
   },
 ]
 
@@ -235,7 +235,7 @@ export default function ComparePage() {
           <div className="grid sm:grid-cols-3 gap-6">
             {[
               { step: '1', title: 'Select universities', desc: 'Use the 3 slots to pick any universities you want to compare. Search by name. All 143 UGC DEB approved programs are available.' },
-              { step: '2', title: 'Compare syllabus', desc: 'Pick a specialisation for each university. Green subjects are common to both; amber subjects are unique — so you can see exactly what differs.' },
+              { step: '2', title: 'Compare syllabus', desc: 'Pick a specialisation for each university. Green subjects are common to both; amber subjects are unique, so you can see exactly what differs.' },
               { step: '3', title: 'Check rankings & fees', desc: 'Scroll down to see NIRF rank, NAAC grade, total fees, EMI options, average salary, and top hiring companies side by side.' },
             ].map(s => (
               <div key={s.step} className="flex gap-4">
@@ -257,7 +257,7 @@ export default function ComparePage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-14">
           <p className="text-xs font-semibold text-amber-600 uppercase tracking-widest text-center mb-2">Common Questions</p>
           <h2 className="font-display text-xl font-bold text-slate-800 text-center mb-10">
-            Frequently Asked Questions — Online MBA &amp; MCA Comparison
+            Frequently Asked Questions: Online MBA &amp; MCA Comparison
           </h2>
           <div className="space-y-3">
             {FAQS.map((faq, i) => (
@@ -279,7 +279,7 @@ export default function ComparePage() {
           {/* Still confused CTA */}
           <div className="mt-10 p-6 bg-white rounded-2xl border border-slate-200 shadow-sm text-center">
             <p className="font-bold text-slate-800 mb-1">Still not sure which university to pick?</p>
-            <p className="text-sm text-slate-500 mb-4">Our advisors compare programs for you based on your budget, qualification, and career goal — in a free 15-minute call.</p>
+            <p className="text-sm text-slate-500 mb-4">Our advisors compare programs for you based on your budget, qualification, and career goal, in a free 15-minute call.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href="tel:7061285806"

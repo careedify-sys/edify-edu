@@ -1,5 +1,16 @@
 # Fix log
 
+## 2026-10-27 · Em-dash sweep, part 2: component and page prose
+
+Visible em dashes in app/ and components/ (comments stripped; admin, blog/write, leads and api excluded): 194 in
+57 files, including page titles and descriptions in the guides, tools, compare, programs and university-programme
+layouts. Same rule as part 1: a short label (5 words or fewer) before the dash takes a colon, anything longer or a
+Yes/No opener takes a comma, a parenthetical pair becomes commas. 177 replaced in 52 files.
+
+Left by design: standalone "—" placeholders in empty table cells and calculator outputs, code comments, and the
+out-of-scope admin/CMS pages. Verified on dev: 0 visible em dashes on /, /about, /compare, /tools, /guides,
+/programs, /blog, /privacy-policy and an MBA hub, titles included.
+
 ## 2026-10-27 · Static NIRF ranks: wrong numbers and no category outside the gate
 
 check-nirf-category only sees templated ranks. A scan of literal "NIRF #N" in app/components/lib (not blog) found 43;

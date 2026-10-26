@@ -103,7 +103,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
     },
     {
       q:`Is ${u.name} ${displayProgram} valid for government jobs?`,
-      a:`${u.name} is UGC DEB approved, and the Ministry of Education confirmed parity of online and regular degrees in 2020. ${u.psuEligible ? `${u.name} degrees are accepted for PSU and government applications. Always verify the specific recruitment notification.` : 'Most central government and PSU jobs may not accept online degrees — check the specific notification before applying.'}`
+      a:`${u.name} is UGC DEB approved, and the Ministry of Education confirmed parity of online and regular degrees in 2020. ${u.psuEligible ? `${u.name} degrees are accepted for PSU and government applications. Always verify the specific recruitment notification.` : 'Most central government and PSU jobs may not accept online degrees, check the specific notification before applying.'}`
     },
     {
       q:`What specialisations are available in ${u.name} ${displayProgram}?`,
@@ -115,7 +115,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
     },
     {
       q:`Should I apply through Edify for ${u.name}?`,
-      a:`Edify is a free, independent guidance platform. We do a 3–4 stage evaluation covering your career goals, eligibility, budget, and ROI before recommending any university. Our rankings use only NIRF rank with zero paid placements. You can apply directly to the university — Edify is here if you want unbiased advice at no cost.`
+      a:`Edify is a free, independent guidance platform. We do a 3–4 stage evaluation covering your career goals, eligibility, budget, and ROI before recommending any university. Our rankings use only NIRF rank with zero paid placements. You can apply directly to the university, Edify is here if you want unbiased advice at no cost.`
     },
   ]
 
@@ -193,7 +193,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     </div>
                   )}
                   <h1 className="font-display flex-1" style={{fontSize:'clamp(1.75rem,4vw,3rem)',fontWeight:800,color:'#fff',lineHeight:1.15,margin:0,wordWrap:'break-word',overflowWrap:'break-word'}}>
-                    {cleanName} — Online Degrees, Fees &amp; Reviews 2026
+                    {cleanName}: Online Degrees, Fees &amp; Reviews 2026
                   </h1>
                 </div>
                 {[u.city, u.state].filter(Boolean).length > 0 && (
@@ -301,7 +301,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                   <div style={{marginTop:16,paddingTop:14,borderTop:'1px solid rgba(255,255,255,0.08)'}}>
                     <div style={{fontSize:11,color:'#94A3B8',marginBottom:4}}>Govt Job Valid?</div>
                     <div style={{fontSize:13,fontWeight:700,color: u.govtRecognised ? '#4ADE80' : '#FBBF24'}}>
-                      {u.govtRecognised ? '✓ Yes — UGC DEB Approved' : '⚠️ Check specific notification'}
+                      {u.govtRecognised ? '✓ Yes: UGC DEB Approved' : '⚠️ Check specific notification'}
                     </div>
                   </div>
                 </div>
@@ -364,7 +364,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
               {/* About University */}
               <section className="card-lg p-6">
                 <h2 className="font-display text-xl font-bold text-navy mb-4">
-                  {cleanName} Online Programs — Fees & Reviews 2026
+                  {cleanName} Online Programs: Fees & Reviews 2026
                 </h2>
                 <p className="text-ink-2 text-[15px] leading-relaxed mb-4">
                   {u.description}
@@ -509,7 +509,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     <h2 className="font-display text-xl font-bold text-white mb-2">Admissions Open: January 2027 Batch</h2>
                     <ul className="flex flex-col gap-1.5">
                       <li className="text-sm text-slate-300">📅 Last date to apply: <strong className="text-white">March 2027</strong></li>
-                      <li className="text-sm text-slate-300">💻 Mode: <strong className="text-white">100% Online — apply from anywhere in India</strong></li>
+                      <li className="text-sm text-slate-300">💻 Mode: <strong className="text-white">100% Online: apply from anywhere in India</strong></li>
                       <li className="text-sm text-slate-300">✅ Eligibility: <strong className="text-white">{u.eligibility}</strong></li>
                     </ul>
                   </div>
@@ -541,10 +541,10 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
               <section className="card-lg p-6" style={{background:'linear-gradient(135deg, rgba(31,107,82,0.05), rgba(31,107,82,0.02))', border:'1px solid rgba(31,107,82,0.15)'}}>
                 <div className="flex items-center gap-2 mb-4">
                   <span className="text-xl">✦</span>
-                  <h2 className="font-display text-xl font-bold text-navy">edifyedu.in Recommends — Build These Alongside</h2>
+                  <h2 className="font-display text-xl font-bold text-navy">edifyedu.in Recommends: Build These Alongside</h2>
                 </div>
                 <p className="text-sm text-ink-3 mb-6">
-                  Your degree gets you the credential. These are the things that get you the job — and the raise after that.
+                  Your degree gets you the credential. These are the things that get you the job, and the raise after that.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6">
                   <div>
@@ -610,7 +610,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                   feeMax={u.feeMax}
                   emiFrom={u.emiFrom}
                   hints={[
-                    `🎓 Merit scholarship — up to 25% fee waiver for eligible profiles at ${u.abbr}`,
+                    `🎓 Merit scholarship: up to 25% fee waiver for eligible profiles at ${u.abbr}`,
                     u.emiFrom > 0 ? `🏦 No-cost EMI, 12 to 24 months, from ₹${u.emiFrom.toLocaleString()}/month` : '🏦 No-cost EMI, 12 to 24 month plans via partner banks',
                     `💼 Alumni referral & early-bird discounts available this admission cycle`,
                   ]}
@@ -620,7 +620,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
               {/* FAQs */}
               <section>
                 <h2 className="font-display text-xl font-bold text-navy mb-4">
-                  Frequently Asked Questions — {u.name}
+                  Frequently Asked Questions: {u.name}
                 </h2>
                 <div className="flex flex-col gap-2">
                   {faqs.map((faq, i) => (

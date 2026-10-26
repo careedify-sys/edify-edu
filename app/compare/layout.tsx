@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Compare Online MBA Fees 2026 — Top Universities India',
+  title: 'Compare Online MBA Fees 2026: Top Universities India',
   description: 'Compare online MBA fees 2026 across 143 UGC-DEB approved universities including NMIMS, Amity, Symbiosis, UPES and Sikkim Manipal. Total fees from ₹60,000. UGC DEB approved, NIRF ranked.',
   keywords: [
     'online mba fees', 'nmims online mba fees', 'amity online mba fees', 'symbiosis online mba fees',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://edifyedu.in/compare' },
   openGraph: {
-    title: 'Compare Online MBA Fees 2026 — Top Universities India | Edify',
+    title: 'Compare Online MBA Fees 2026: Top Universities India | Edify',
     description: 'Compare online MBA fees & syllabus side-by-side. NMIMS, Amity, Symbiosis, UPES, Sikkim Manipal and 143 UGC-DEB approved universities in total. Fees from ₹60,000. UGC DEB approved.',
     url: 'https://edifyedu.in/compare',
     type: 'website',

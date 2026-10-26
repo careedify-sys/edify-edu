@@ -42,7 +42,7 @@ export function ProReportCTAPlaceholder({ universityName }: { universityName: st
           We dig into placements, alumni reviews, hidden fees, recruiter perception. Delivered on WhatsApp in 24-48 hrs.
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginBottom: 14 }}>
-          {['Real placement % from 2024-25 alumni', 'Honest alumni reviews — no university filter', 'Hidden fees, scholarships, completion rates', 'Speak directly to a current alum (optional)'].map((item, i) => (
+          {['Real placement % from 2024-25 alumni', 'Honest alumni reviews: no university filter', 'Hidden fees, scholarships, completion rates', 'Speak directly to a current alum (optional)'].map((item, i) => (
             <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               <span style={{ color: '#4ADE80', fontSize: 11 }}>✓</span>
               <span style={{ fontSize: 11, color: brand.cream }}>{item}</span>

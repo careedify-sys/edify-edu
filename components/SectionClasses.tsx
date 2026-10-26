@@ -18,7 +18,7 @@ export default function SectionClasses({ u, program, cleanName }: Props) {
 
   const items = [
     { icon: Video, label: 'Live Sessions', desc: 'Interactive weekend webinars with faculty. Recorded for replay within 48 hours.' },
-    { icon: Clock, label: 'Weekly Time', desc: `${hours} — designed for working professionals with full-time jobs.` },
+    { icon: Clock, label: 'Weekly Time', desc: `${hours}: designed for working professionals with full-time jobs.` },
     { icon: Monitor, label: 'LMS Access', desc: 'Lecture recordings, study materials, assignments, and discussion forums on the university LMS portal.' },
     { icon: FileText, label: 'Assessments', desc: `${u.examMode} assessments. No mandatory campus visits for exams in most semesters.` },
     { icon: Wifi, label: 'Connectivity', desc: 'Any device with a stable internet connection. Mobile apps available for on-the-go learning.' },

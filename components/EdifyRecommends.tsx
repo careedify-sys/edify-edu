@@ -103,7 +103,7 @@ export default function EdifyRecommends({ program, currentId, programSlug }: Pro
       </div>
 
       <p className="text-[10px] text-ink-3 mt-3 leading-relaxed">
-        Recommendations based on NAAC accreditation, NIRF rank, and UGC DEB approval. Zero paid placements — independent picks only.
+        Recommendations based on NAAC accreditation, NIRF rank, and UGC DEB approval. Zero paid placements, independent picks only.
       </p>
     </section>
   )

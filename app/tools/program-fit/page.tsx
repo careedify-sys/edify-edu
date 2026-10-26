@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Will This Program Fit Me? — Program Suitability Guide | EdifyEdu',
+  title: 'Will This Program Fit Me?, Program Suitability Guide | EdifyEdu',
   description: 'Find out if an online MBA, MCA, BBA, or BCA is right for your career goals, eligibility, and budget. Free, unbiased guide by EdifyEdu.',
   robots: { index: true, follow: true },
 }
@@ -15,7 +15,7 @@ export default function ProgramFitPage() {
           className="inline-block px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest mb-4"
           style={{ background: '#FEF3C7', color: '#92400E' }}
         >
-          Coming Soon — Phase 5
+          Coming Soon: Phase 5
         </span>
         <h1 className="text-3xl font-bold mb-4" style={{ color: '#0B1533' }}>
           Will This Program Fit Me?

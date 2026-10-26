@@ -18,7 +18,7 @@ const pressItems: PressItem[] = [
     publication: 'Boss Moves Magazine',
     logo: '/press/boss-moves-badge.png',
     url: 'https://www.sherisesstudios.com/product-page/boss-moves-magazine-june-2026-edition',
-    alt: 'Boss Moves Magazine — June 2026',
+    alt: 'Boss Moves Magazine: June 2026',
   },
 ]
 

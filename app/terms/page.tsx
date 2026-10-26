@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Terms of Use — Edify | edifyedu.in' },
-  description: 'Terms of Use for EdifyEdu.in — the rules governing your use of India\'s independent online university comparison platform.',
+  title: { absolute: 'Terms of Use: Edify | edifyedu.in' },
+  description: 'Terms of Use for EdifyEdu.in: the rules governing your use of India\'s independent online university comparison platform.',
   alternates: { canonical: 'https://edifyedu.in/terms' },
   robots: { index: true, follow: true },
 }
@@ -65,7 +65,7 @@ export default function TermsPage() {
 
           <h2 className="font-bold text-navy mt-8 mb-3">7. Intellectual Property</h2>
           <p className="text-ink-2">
-            All original content on edifyedu.in — including blog articles, comparison tables, guides, and tools — is the property of Edify Education and protected under Indian copyright law. You may share links to our pages but may not reproduce content in full without written permission.
+            All original content on edifyedu.in: including blog articles, comparison tables, guides, and tools, is the property of Edify Education and protected under Indian copyright law. You may share links to our pages but may not reproduce content in full without written permission.
           </p>
 
           <h2 className="font-bold text-navy mt-8 mb-3">8. Third-Party Links</h2>

@@ -82,7 +82,7 @@ export default function SectionAbout({ u, program, pd, cleanName, spec, customIn
             </p>
             {pd.specs && pd.specs.length > 0 && (
               <p>
-                Students choose a specialisation from {formatSpecList(pd.specs, 4)} — completing the program with an industry project or capstone that reflects their chosen track.
+                Students choose a specialisation from {formatSpecList(pd.specs, 4)}, completing the program with an industry project or capstone that reflects their chosen track.
               </p>
             )}
           </>
