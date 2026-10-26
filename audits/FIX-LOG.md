@@ -1,5 +1,24 @@
 # Fix log
 
+## 2026-10-27 · Static NIRF ranks: wrong numbers and no category outside the gate
+
+check-nirf-category only sees templated ranks. A scan of literal "NIRF #N" in app/components/lib (not blog) found 43;
+each number was matched against lib/data.ts nirf / nirfMgt.
+
+Wrong numbers, now corrected: homepage Symbiosis "#47" (data: University 24, Management 11; card now #11 Mgmt) and
+MAHE "#4" (University 3); EdifyRecommends MAHE "#6" (3); data-slim approval badges MAHE "#14", Amrita "#7" (8),
+KL "#46" (26), Alliance "#25" (it has only Management #71). The slim approvals are now copied from lib/data.ts, which
+already carries labelled badges; Chandigarh has none there, so its badges come from nirf/nirfMgt (#19 Univ, #32 Mgmt).
+
+Category added: homepage JAIN, 9 EdifyRecommends tags, MBA spec FAQs (NMIMS and UPES now give the Management rank),
+compare pair LPU, Amrita coupon FAQ, MUJ tagline (111 chars). Verified on dev: homepage 9 ranks and /programs/mba
+50 ranks, none bare. Rescan leaves 19, all in comments, app/blog/write (CMS, off limits) or lib/reviews-data.ts.
+
+Flag for Rishi: lib/reviews-data.ts holds 85 named "student reviews" for 10 universities ("Rahul Sharma, Delhi ...
+Edify helped me choose") with outcomes like "Got a 25% hike", two citing MAHE as NIRF #6. components/ReviewsBlock.tsx
+is its only importer and is not rendered anywhere; the rating schema it fed was removed on 2026-08-07. Dead, but
+fabricated testimonials in the repo are one import away from shipping. Recommend deleting both files.
+
 ## 2026-10-27 · check-nirf-category catches "#${...nirf...}"; 7 more bare ranks fixed
 
 The ComparisonTable bare rank (fixed in 73c72f9) slipped past the gate because PATTERN only matched "NIRF #${expr}".

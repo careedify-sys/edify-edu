@@ -170,7 +170,7 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'finance',
     faqs: [
-      { q: 'Is Chandigarh University or LPU better for online MBA?', a: 'Both are Punjab-based with NAAC A+ (CU) and A++ (LPU). CU has NIRF #19 University and PwC triple certification. LPU has NIRF #31 and dual-specialisation. CU wins on rank; LPU wins on accreditation grade.' },
+      { q: 'Is Chandigarh University or LPU better for online MBA?', a: 'Both are Punjab-based with NAAC A+ (CU) and A++ (LPU). CU has NIRF #19 University and PwC triple certification. LPU has NIRF #31 University and dual-specialisation. CU wins on rank; LPU wins on accreditation grade.' },
       { q: 'What is the fee difference?', a: 'CU costs Rs 1,65,000 to Rs 2,20,000. LPU costs Rs 1,61,600 to Rs 2,00,000. Both are in the same range. CU can be cheaper at base level or costlier at premium track.' },
       { q: 'Does Chandigarh University offer PwC certification?', a: 'Yes. CU Online MBA includes triple industry certification from PwC India, PMI, and IBM. Two subjects are co-taught by PwC. This is unique among online MBA programmes in India.' },
       { q: 'Which has more specialisations?', a: 'CU offers 26 specialisations (highest count in this tier). LPU offers 12 with dual-spec option. CU wins on variety; LPU wins on combination flexibility.' },
