@@ -1,5 +1,21 @@
 # Fix log
 
+## 2026-10-27 · Bucket C: online LLB/LLM explainer; fabricated online-LLM list removed from the LLM guide
+
+New post /blog/online-llb-llm-india ("online llb course" 2,400/month). UGC notice F.No. 1-34/2024 (DEB-I)
+para 6(ix) prohibits Law "including their allied domains" in ODL and online mode, which covers the LLM.
+Checked the August 2026 DEB list: no Bachelor or Master of Laws entry; NMIMS is listed for BBA, B.Com, MBA
+and MBA (WX) only.
+
+llm-course-duration-fees-scope-india-2026 (1,306 impressions) had a section titled "LLM Online Programmes
+UGC-DEB Approved India 2026" listing NMIMS Global Online LLM ("UGC-DEB approved", Rs 2.10 lakh), JAIN Online
+LLM (Rs 1.50 lakh), IGNOU Master of Laws (Rs 30,000) and a Symbiosis distance LLM (Rs 1.60 lakh). None can
+exist under the prohibition; they read as fabricated. Removed, with a visible correction note in the post,
+plus the fee-table row, the modes section, a Honest Gaps bullet and an FAQ line that assumed distance LLMs.
+
+Not fixed in that post (out of scope, flag for review): salary bands, named employers and fee ranges are
+unsourced throughout; same template family as the PhD full-form post.
+
 ## 2026-10-27 · Bucket C: online PhD validity explainer; PhD full-form post corrected
 
 New post /blog/online-phd-in-india (online phd cluster, ~1,000-1,300/month per keyword). Sourced from the
