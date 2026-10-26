@@ -1,5 +1,6 @@
-import type { University } from '@/lib/data'
-import { formatFee } from '@/lib/data'
+import type { University, Program } from '@/lib/data'
+import { getDisplayFee } from '@/lib/fees'
+import { formatNirfBadge } from '@/lib/data-slim'
 import Link from 'next/link'
 import { CheckCircle, XCircle, Minus } from 'lucide-react'
 
@@ -18,9 +19,17 @@ function cell(val: Verdict) {
   return <Minus size={14} className="text-slate-300 mx-auto" />
 }
 
-function nirfLabel(nirf: number): string {
-  if (!nirf || nirf >= 999) return '—'
-  return `#${nirf}`
+// Was "#11" from u.nirf on every page, so an MBA comparison showed University
+// ranks with no category. Management table first for management programmes.
+function nirfCell(uni: University, program: string): string {
+  const prefer = /^(mba|bba|pgdm)/i.test(program) ? 'management' : 'university'
+  return formatNirfBadge(uni, { style: 'short', prefer }) ?? 'Not ranked'
+}
+
+// Was uni.feeMin, which is MBA-led, so BBA and BCA pages compared MBA fees.
+function feeCell(uni: University, program: string): string {
+  const f = getDisplayFee(uni, program as Program)
+  return f.ok && f.compact ? f.compact : 'On request'
 }
 
 function naacWeight(naac: string): number {
@@ -59,10 +68,10 @@ export default function ComparisonTable({ current: u, peers, program, programSlu
           <tbody>
             {[
               {
-                label: 'Fees (from)',
+                label: `${program} fees`,
                 render: (uni: University) => (
                   <td className="px-3 py-2 text-center text-slate-700 font-semibold">
-                    {uni.feeMin > 0 ? formatFee(uni.feeMin) : 'On request'}
+                    {feeCell(uni, program)}
                   </td>
                 ),
               },
@@ -77,7 +86,7 @@ export default function ComparisonTable({ current: u, peers, program, programSlu
               {
                 label: 'NIRF Rank',
                 render: (uni: University) => (
-                  <td className="px-3 py-2 text-center text-slate-600">{nirfLabel(uni.nirf)}</td>
+                  <td className="px-3 py-2 text-center text-slate-600">{nirfCell(uni, program)}</td>
                 ),
               },
               {

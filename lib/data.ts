@@ -308,7 +308,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹5L – ₹18L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank', 'ICICI Bank', 'Reliance', 'Accenture', 'EY', 'KPMG', 'Amazon'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from JAIN (Deemed-to-be University) – JA — recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from JAIN (Deemed-to-be University) – JA, recognised for corporate hiring.'},
       'MCA': {
         specs: ['Artificial Intelligence and Machine Learning', 'Cybersecurity', 'Data Science', 'Internet of Things (IoT)', 'Full Stack Development', 'Cloud Computing', 'General', 'Blockchain Technology'],
         // Verified 2026-10-06 on onlinejain.com/online-mca. Priced per elective:
@@ -326,7 +326,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Jain (Deemed-to-be University) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Jain (Deemed-to-be University), recognised for corporate hiring.',
       },
       
       
@@ -339,7 +339,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹8L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank', 'ICICI Bank', 'Reliance', 'Accenture', 'EY', 'KPMG', 'Amazon'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from JAIN (Deemed-to-be University) – JA — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from JAIN (Deemed-to-be University) – JA, recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['Computer Science & IT', 'Data Science', 'Cyber Security', 'Artificial Intelligence', 'Cloud Computing'],
@@ -349,7 +349,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹10L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank', 'ICICI Bank', 'Reliance', 'Accenture', 'EY', 'KPMG', 'Amazon'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from JAIN (Deemed-to-be University) – JA — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from JAIN (Deemed-to-be University) – JA, recognised for corporate hiring.',
       },
       'M.Com': {
         specs: ['Accounting & Finance', 'Professional Accounting & Finance (CPA US)', 'International Finance & Accounting (ACCA)'],
@@ -359,7 +359,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank', 'ICICI Bank', 'Reliance', 'Accenture', 'EY', 'KPMG', 'Amazon'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved M.Com from JAIN (Deemed-to-be University) – JA — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved M.Com from JAIN (Deemed-to-be University) – JA, recognised for corporate hiring.',
       }
     },
     color: '#1B4FBE',
@@ -429,7 +429,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹5L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'HCL Tech', 'Reliance', 'Accenture', 'PwC', 'EY', 'HDFC Bank', 'SBI', 'Tech Mahindra'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Amity University Online — recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from Amity University Online, recognised for corporate hiring.'},
       'MCA': {
         specs: ['General', 'Artificial Intelligence and Machine Learning', 'Financial Technology and AI', 'Cyber Security', 'Software Engineering', 'Blockchain Technology'],
         fees: '₹1.99L',
@@ -438,7 +438,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Amity University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Amity University, recognised for corporate hiring.',
       },
       
       
@@ -451,7 +451,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹6L per annum',
         topCompanies: ['TCS', 'Infosys', 'HCL Tech', 'Reliance', 'Accenture', 'PwC', 'EY', 'HDFC Bank', 'SBI', 'Tech Mahindra'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Amity University Online — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Amity University Online, recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['Computer Applications', 'Computer Applications – Data Science', 'Computer Applications – Financial Technology & AI'],
@@ -461,7 +461,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹7L per annum',
         topCompanies: ['TCS', 'Infosys', 'HCL Tech', 'Reliance', 'Accenture', 'PwC', 'EY', 'HDFC Bank', 'SBI', 'Tech Mahindra'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Amity University Online — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Amity University Online, recognised for corporate hiring.',
       },
       'B.Com': {
         specs: ['Commerce', 'Accounting', 'Commerce Honours (Advanced Accounting & Finance)'],
@@ -471,7 +471,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹6L per annum',
         topCompanies: ['TCS', 'Infosys', 'HCL Tech', 'Reliance', 'Accenture', 'PwC', 'EY', 'HDFC Bank', 'SBI', 'Tech Mahindra'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from Amity University Online — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved B.Com from Amity University Online, recognised for corporate hiring.',
       }
     },
     color: '#2563EB',
@@ -533,7 +533,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹5L – ₹15L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Lovely Professional University (LPU) — recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from Lovely Professional University (LPU), recognised for corporate hiring.'},
       'MCA': {
         specs: ['AR/VR (Game Development)', 'Machine Learning & AI', 'Data Science', 'Cybersecurity', 'Full Stack Web Development', 'Cloud Computing'],
         fees: '₹1.08L',
@@ -542,7 +542,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Lovely Professional University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Lovely Professional University, recognised for corporate hiring.',
       },
       
       
@@ -555,7 +555,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹8L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Lovely Professional University (LPU) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Lovely Professional University (LPU), recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['Cyber Security', 'Data Science', 'Full Stack Web Development'],
@@ -565,7 +565,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹7L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Lovely Professional University (LPU) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Lovely Professional University (LPU), recognised for corporate hiring.',
       },
       'BA': {
         specs: ['Humanities & Social Sciences'],
@@ -575,7 +575,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹2L – ₹6L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BA from Lovely Professional University (LPU) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BA from Lovely Professional University (LPU), recognised for corporate hiring.',
       },
       'M.Com': {
         specs: ['Commerce & Finance'],
@@ -585,7 +585,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved M.Com from Lovely Professional University (LPU) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved M.Com from Lovely Professional University (LPU), recognised for corporate hiring.',
       },
       'MSc': {
         specs: ['Mathematics', 'Economics'],
@@ -595,7 +595,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MSc from Lovely Professional University (LPU) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MSc from Lovely Professional University (LPU), recognised for corporate hiring.',
       }
     },
     color: '#1B4FBE',
@@ -646,7 +646,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Dayananda Sagar University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Dayananda Sagar University, recognised for corporate hiring.',
       },
       
       
@@ -720,7 +720,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['Indigo Airlines', 'American Express', 'Cipla', 'Emerson', 'Bajaj', 'Vodafone', 'IBM', 'Genpact', 'Taj Hotels', 'Oberoi Hotels'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from D.Y. Patil University, Navi Mumbai — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from D.Y. Patil University, Navi Mumbai, recognised for corporate hiring.',
       },
 
       'BBA': {
@@ -731,7 +731,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹2.5L – ₹6L per annum',
         topCompanies: ['Indigo Airlines', 'American Express', 'Cipla', 'Emerson', 'Bajaj', 'Vodafone', 'IBM', 'Genpact', 'Taj Hotels', 'Oberoi Hotels'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from D.Y. Patil University, Navi Mumbai — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from D.Y. Patil University, Navi Mumbai, recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['Web Development', 'Data Science', 'Cloud Technology & Information Security', 'Artificial Intelligence', 'Full Stack Development'],
@@ -741,7 +741,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹8L per annum',
         topCompanies: ['Indigo Airlines', 'American Express', 'Cipla', 'Emerson', 'Bajaj', 'Vodafone', 'IBM', 'Genpact', 'Taj Hotels', 'Oberoi Hotels'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from D.Y. Patil University, Navi Mumbai — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from D.Y. Patil University, Navi Mumbai, recognised for corporate hiring.',
       }
     },
     color: '#0891B2',
@@ -806,7 +806,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from University of Petroleum and Energy — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from University of Petroleum and Energy, recognised for corporate hiring.',
       },
       
       
@@ -884,7 +884,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Parul University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Parul University, recognised for corporate hiring.',
       },
       
       
@@ -1019,7 +1019,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Amrita Vishwa Vidyapeetham — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Amrita Vishwa Vidyapeetham, recognised for corporate hiring.',
       },
       
       
@@ -1113,7 +1113,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Mangalayatan University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Mangalayatan University, recognised for corporate hiring.',
       },
       
       
@@ -1217,7 +1217,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Shoolini University of Biotechnology and Management Sciences — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Shoolini University of Biotechnology and Management Sciences, recognised for corporate hiring.',
       },
       
       
@@ -1388,7 +1388,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹15L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Manipal University Jaipur (MUJ) – O — recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from Manipal University Jaipur (MUJ) – O, recognised for corporate hiring.'},
       'MCA': {
         specs: ['AI & Data Science', 'Comprehensive Emerging Technologies', 'Artificial Intelligence & Machine Learning', 'Cloud Computing', 'Cybersecurity'],
         fees: '₹1,47,600–₹1,64,000',
@@ -1397,7 +1397,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Manipal University Jaipur — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Manipal University Jaipur, recognised for corporate hiring.',
       },
       
       
@@ -1410,7 +1410,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹7L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Manipal University Jaipur (MUJ) – O — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Manipal University Jaipur (MUJ) – O, recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['General Management'],
@@ -1420,7 +1420,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹7L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Manipal University Jaipur (MUJ) – O — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Manipal University Jaipur (MUJ) – O, recognised for corporate hiring.',
       },
       'B.Com': {
         specs: ['General Management'],
@@ -1430,7 +1430,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹6L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from Manipal University Jaipur (MUJ) – O — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved B.Com from Manipal University Jaipur (MUJ) – O, recognised for corporate hiring.',
       },
       'M.Com': {
         specs: ['General Management'],
@@ -1444,7 +1444,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹9L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved M.Com from Manipal University Jaipur (MUJ) – O — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved M.Com from Manipal University Jaipur (MUJ) – O, recognised for corporate hiring.',
       },
       'MSc': {
         specs: ['Mathematics'],
@@ -1511,7 +1511,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Galgotias University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Galgotias University, recognised for corporate hiring.',
       },
       
       
@@ -1598,7 +1598,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹5L – ₹9L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'HDFC Bank', 'ICICI Bank', 'Axis Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Sikkim Manipal University (SMU) – O — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Sikkim Manipal University (SMU) – O, recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['General'],
@@ -1608,7 +1608,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Sikkim Manipal University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Sikkim Manipal University, recognised for corporate hiring.',
       },
       'BBA': {
         specs: ['General Management'],
@@ -1618,7 +1618,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹2.5L – ₹6L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'HDFC Bank', 'ICICI Bank', 'Axis Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Sikkim Manipal University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Sikkim Manipal University, recognised for corporate hiring.',
       },
 
       'B.Com': {
@@ -1629,7 +1629,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹2.5L – ₹5L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from Sikkim Manipal University (SMU) – O — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved B.Com from Sikkim Manipal University (SMU) – O, recognised for corporate hiring.',
       },
       'BA': {
         specs: ['General Management'],
@@ -1641,7 +1641,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹2L – ₹5L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BA from Sikkim Manipal University (SMU) – O — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BA from Sikkim Manipal University (SMU) – O, recognised for corporate hiring.',
       },
       'M.Com': {
         specs: ['General Management'],
@@ -1654,7 +1654,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3.5L – ₹8L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved M.Com from Sikkim Manipal University (SMU) – O — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved M.Com from Sikkim Manipal University (SMU) – O, recognised for corporate hiring.',
       }
     },
     color: '#2563EB',
@@ -1710,7 +1710,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹6L – ₹10L per annum',
         topCompanies: ['IBM', 'TAFE', 'Airtel', 'SBI General Insurance', 'Vodafone', 'Deloitte', 'Infosys', 'TCS', 'Cognizant', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Symbiosis School for Online and Dig — recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from Symbiosis School for Online and Dig, recognised for corporate hiring.'},
       'BBA': {
         specs: ['General Management'],
         fees: '₹1,65,000',
@@ -1719,7 +1719,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹8L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Symbiosis School for Online and Dig — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Symbiosis School for Online and Dig, recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['General Management'],
@@ -1729,7 +1729,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹7L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Symbiosis School for Online and Dig — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Symbiosis School for Online and Dig, recognised for corporate hiring.',
       },
       'MSc': {
         specs: ['Data Science', 'Computer Applications', 'Economics'],
@@ -1743,7 +1743,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹6L – ₹25L per annum',
         topCompanies: ['Deloitte', 'KPMG', 'Accenture', 'American Express', 'DHL Logistics', 'Johnson Controls', 'Schneider Electric', 'Sterlite Power', 'Asian Paints', 'Forbes Marshall'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MSc from Symbiosis School for Online and Dig — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MSc from Symbiosis School for Online and Dig, recognised for corporate hiring.',
       },
       'BSc': {
         specs: ['Economics', 'Social Sciences'],
@@ -1756,7 +1756,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹9L per annum',
         topCompanies: ['Deloitte', 'KPMG', 'Accenture', 'American Express', 'DHL Logistics', 'Johnson Controls', 'Schneider Electric', 'Sterlite Power', 'Asian Paints', 'Forbes Marshall'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BSc from Symbiosis School for Online and Dig — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BSc from Symbiosis School for Online and Dig, recognised for corporate hiring.',
       },
       'MA': {
         specs: ['Mass Communication'],
@@ -1811,7 +1811,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹5L – ₹14L per annum',
         topCompanies: ['Google', 'Amazon', 'Deloitte', 'Adobe', 'Microsoft', 'PolicyBazaar', 'Accenture', 'Kohler', 'Electrolux', '500+ recruiters'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Chitkara University – Centre for Di — recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from Chitkara University – Centre for Di, recognised for corporate hiring.'},
       'BBA': {
         specs: ['FinTech & AI', 'Digital Sciences & Business Management', 'Logistics & Supply Chain Management', 'Data Science & AI'],
         fees: '₹60K – ₹200K',
@@ -1820,7 +1820,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹8L per annum',
         topCompanies: ['Google', 'Amazon', 'Deloitte', 'Adobe', 'Microsoft', 'PolicyBazaar', 'Accenture', 'Kohler', 'Electrolux', '500+ recruiters'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Chitkara University – Centre for Di — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Chitkara University – Centre for Di, recognised for corporate hiring.',
       },
     },
       rankingBadge: 'NIRF #78 (Management 2025)',
@@ -1861,7 +1861,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4.5L – ₹9L per annum',
         topCompanies: ['Infosys', 'Wipro', 'Amazon', 'IBM', 'Capgemini', 'Tech Mahindra', 'Apollo Hospitals', 'Manipal Hospital', 'Fortis Escorts Hospital', 'Max Healthcare'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Yenepoya (Deemed to be University) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Yenepoya (Deemed to be University), recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['Computer Science and Information Technology', 'Cloud Computing and Cyber Security'],
@@ -1871,7 +1871,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Yenepoya University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Yenepoya University, recognised for corporate hiring.',
       },
       
       
@@ -1883,7 +1883,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹8L per annum',
         topCompanies: ['Infosys', 'Wipro', 'Amazon', 'IBM', 'Capgemini', 'Tech Mahindra', 'Apollo Hospitals', 'Manipal Hospital', 'Fortis Escorts Hospital', 'Max Healthcare'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Yenepoya (Deemed to be University) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Yenepoya (Deemed to be University), recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['Data Science and Artificial Intelligence', 'Computer Science and IT', 'Cloud Computing and Cyber Security', 'Animation and Graphic Design'],
@@ -1893,7 +1893,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['Infosys', 'Wipro', 'Amazon', 'IBM', 'Capgemini', 'Tech Mahindra', 'Apollo Hospitals', 'Manipal Hospital', 'Fortis Escorts Hospital', 'Max Healthcare'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Yenepoya (Deemed to be University) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Yenepoya (Deemed to be University), recognised for corporate hiring.',
       },
       'B.Com': {
         specs: ['Accounting and Finance'],
@@ -1903,7 +1903,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹8L per annum',
         topCompanies: ['Infosys', 'Wipro', 'Amazon', 'IBM', 'Capgemini', 'Tech Mahindra', 'Apollo Hospitals', 'Manipal Hospital', 'Fortis Escorts Hospital', 'Max Healthcare'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from Yenepoya (Deemed to be University) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved B.Com from Yenepoya (Deemed to be University), recognised for corporate hiring.',
       }
     },
     color: '#2563EB',
@@ -1948,7 +1948,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: 'Not Mentioned',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Sharda University (Sharda Online) — recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from Sharda University (Sharda Online), recognised for corporate hiring.'},
       'MCA': {
         specs: ['Artificial Intelligence & Machine Learning', 'Cybersecurity', 'Data Science'],
         fees: '₹1.2L',
@@ -1957,7 +1957,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Sharda University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Sharda University, recognised for corporate hiring.',
       },
       
       
@@ -1970,7 +1970,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Sharda University (Sharda Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Sharda University (Sharda Online), recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['General Management'],
@@ -1984,7 +1984,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Sharda University (Sharda Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Sharda University (Sharda Online), recognised for corporate hiring.',
       },
       'BA': {
         specs: ['Political Science'],
@@ -1994,7 +1994,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BA from Sharda University (Sharda Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BA from Sharda University (Sharda Online), recognised for corporate hiring.',
       },
       'M.Com': {
         specs: ['Accounting and Finance', 'Public Accounting', 'Fintech'],
@@ -2004,7 +2004,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: 'Not Mentioned',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved M.Com from Sharda University (Sharda Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved M.Com from Sharda University (Sharda Online), recognised for corporate hiring.',
       }
     },
       rankingBadge: 'NIRF #87 (University 2025)',
@@ -2044,7 +2044,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['foundit', 'Google Cloud', 'AWS', 'HDFC Bank', 'ICICI Bank', 'Amazon', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Vignan\'s Foundation for Science, Te — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Vignan\'s Foundation for Science, Te, recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['Artificial Intelligence & Machine Learning', 'Data Science'],
@@ -2054,7 +2054,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Vignan\'s Foundation for Science, Technology and Research — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Vignan\'s Foundation for Science, Technology and Research, recognised for corporate hiring.',
       },
       
       
@@ -2066,7 +2066,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹9L per annum',
         topCompanies: ['foundit', 'Google Cloud', 'AWS', 'HDFC Bank', 'ICICI Bank', 'Amazon', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Vignan\'s Foundation for Science, Te — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Vignan\'s Foundation for Science, Te, recognised for corporate hiring.',
       }
     },
       rankingBadge: 'NIRF #70 (University 2025)',
@@ -2262,7 +2262,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹5L – ₹18L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Manipal Academy of Higher Education — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Manipal Academy of Higher Education, recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['Artificial Intelligence and Machine Learning', 'Cybersecurity', 'Data Science', 'General'],
@@ -2272,7 +2272,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Manipal Academy of Higher Education — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Manipal Academy of Higher Education, recognised for corporate hiring.',
       },
       
       
@@ -2285,7 +2285,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'HDFC Bank', 'ICICI Bank', 'Axis Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Manipal Academy of Higher Education — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Manipal Academy of Higher Education, recognised for corporate hiring.',
       },
       'B.Com': {
         specs: ['General Management'],
@@ -2295,7 +2295,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹15L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'HDFC Bank', 'ICICI Bank', 'Axis Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from Manipal Academy of Higher Education — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved B.Com from Manipal Academy of Higher Education, recognised for corporate hiring.',
       },
       'MSc': {
         specs: ['Biostatistics', 'Financial Economics', 'Data Science', 'Business Analytics'],
@@ -2362,7 +2362,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Koneru Lakshmaiah Education Foundation — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Koneru Lakshmaiah Education Foundation, recognised for corporate hiring.',
       },
       
       
@@ -2457,7 +2457,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹5L – ₹22L per annum',
         topCompanies: ['Amazon', 'Microsoft', 'TCS', 'Infosys', 'Wipro', 'Cognizant', 'HCL', 'Accenture', 'Flipkart', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Chandigarh University (CU Online) — recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from Chandigarh University (CU Online), recognised for corporate hiring.'},
       'MCA': {
         specs: ['Cloud Computing', 'Full Stack Development', 'Data Analytics', 'Artificial Intelligence and Machine Learning'],
         fees: '₹1.55L',
@@ -2466,7 +2466,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Chandigarh University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Chandigarh University, recognised for corporate hiring.',
       },
       
       
@@ -2479,7 +2479,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['Amazon', 'Microsoft', 'TCS', 'Infosys', 'Wipro', 'Cognizant', 'HCL', 'Accenture', 'Flipkart', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Chandigarh University (CU Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Chandigarh University (CU Online), recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['General Management'],
@@ -2489,7 +2489,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Chandigarh University (CU Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Chandigarh University (CU Online), recognised for corporate hiring.',
       },
       'MSc': {
         specs: ['Data Science'],
@@ -2499,7 +2499,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹6L – ₹20L per annum',
         topCompanies: ['Amazon', 'Microsoft', 'TCS', 'Infosys', 'Wipro', 'Cognizant', 'HCL', 'Accenture', 'Flipkart', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MSc from Chandigarh University (CU Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MSc from Chandigarh University (CU Online), recognised for corporate hiring.',
       }
     },
     color: '#2563EB',
@@ -2550,7 +2550,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Visveswaraya Technological University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Visveswaraya Technological University, recognised for corporate hiring.',
       },
       
       
@@ -2713,7 +2713,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Manav Rachna International Institute of Research and Studies — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Manav Rachna International Institute of Research and Studies, recognised for corporate hiring.',
       },
       
       
@@ -2966,7 +2966,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Hindustan Institute of Technology and Science (HITS) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Hindustan Institute of Technology and Science (HITS), recognised for corporate hiring.',
       },
       
       
@@ -3007,7 +3007,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Guru Ghasidas Vishwavidyalaya (GGU) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Guru Ghasidas Vishwavidyalaya (GGU), recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['General'],
@@ -3017,7 +3017,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Guru Ghasidas Vishwavidyalaya — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Guru Ghasidas Vishwavidyalaya, recognised for corporate hiring.',
       },
       
       
@@ -3030,7 +3030,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Guru Ghasidas Vishwavidyalaya (GGU) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Guru Ghasidas Vishwavidyalaya (GGU), recognised for corporate hiring.',
       },
       'B.Com': {
         specs: ['Commerce'],
@@ -3040,7 +3040,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from Guru Ghasidas Vishwavidyalaya (GGU) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved B.Com from Guru Ghasidas Vishwavidyalaya (GGU), recognised for corporate hiring.',
       },
       'M.Com': {
         specs: ['Commerce'],
@@ -3050,7 +3050,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved M.Com from Guru Ghasidas Vishwavidyalaya (GGU) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved M.Com from Guru Ghasidas Vishwavidyalaya (GGU), recognised for corporate hiring.',
       }
     },
     color: '#1B4FBE',
@@ -3100,7 +3100,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Dr. Babasaheb Ambedkar Open University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Dr. Babasaheb Ambedkar Open University, recognised for corporate hiring.',
       },
       
       
@@ -3172,7 +3172,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Marwadi University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Marwadi University, recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['General'],
@@ -3182,7 +3182,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Marwadi University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Marwadi University, recognised for corporate hiring.',
       },
       
       
@@ -3195,7 +3195,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Marwadi University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Marwadi University, recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['Computer Applications'],
@@ -3205,7 +3205,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Marwadi University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Marwadi University, recognised for corporate hiring.',
       },
       'B.Com': {
         specs: ['Commerce'],
@@ -3215,7 +3215,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from Marwadi University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved B.Com from Marwadi University, recognised for corporate hiring.',
       },
       'MSc': {
         specs: ['Business Analytics'],
@@ -3225,7 +3225,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MSc from Marwadi University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MSc from Marwadi University, recognised for corporate hiring.',
       }
     },
     color: '#2563EB',
@@ -3265,7 +3265,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3.5 LPA -- ₹9 LPA',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from P P Savani University (CDOE) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from P P Savani University (CDOE), recognised for corporate hiring.',
       },
       'BBA': {
         specs: ['General Management'],
@@ -3275,7 +3275,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹2.5 LPA -- ₹4.5 LPA',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from P P Savani University (CDOE) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from P P Savani University (CDOE), recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['Computer Applications'],
@@ -3285,7 +3285,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3 LPA -- ₹6 LPA',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from P P Savani University (CDOE) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from P P Savani University (CDOE), recognised for corporate hiring.',
       },
       'M.Com': {
         specs: ['General Management'],
@@ -3295,7 +3295,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3.5 LPA -- ₹6 LPA',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved M.Com from P P Savani University (CDOE) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved M.Com from P P Savani University (CDOE), recognised for corporate hiring.',
       },
       'MSc': {
         specs: ['Data Science'],
@@ -3305,7 +3305,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4.5 LPA -- ₹10 LPA',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MSc from P P Savani University (CDOE) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MSc from P P Savani University (CDOE), recognised for corporate hiring.',
       }
     },
     color: '#2563EB',
@@ -3346,7 +3346,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from University of Mysore (Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from University of Mysore (Online), recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['General'],
@@ -3356,7 +3356,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from University of Mysore — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from University of Mysore, recognised for corporate hiring.',
       },
       
       
@@ -3369,7 +3369,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from University of Mysore (Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from University of Mysore (Online), recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['General Management'],
@@ -3379,7 +3379,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from University of Mysore (Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from University of Mysore (Online), recognised for corporate hiring.',
       },
       'B.Com': {
         specs: ['General Management'],
@@ -3389,7 +3389,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from University of Mysore (Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved B.Com from University of Mysore (Online), recognised for corporate hiring.',
       },
       'M.Com': {
         specs: ['General Management'],
@@ -3399,7 +3399,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved M.Com from University of Mysore (Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved M.Com from University of Mysore (Online), recognised for corporate hiring.',
       }
     },
     color: '#0891B2',
@@ -3441,7 +3441,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹8L per annum',
         topCompanies: ['Government PSUs', 'Public Sector Banks', 'Central Ministries', 'IT Firms'],
         internshipType: 'Project-based learning',
-        careerOutcome: 'UGC DEB approved MBA from Aligarh Muslim University — Central University, UGC recognised.'},
+        careerOutcome: 'UGC DEB approved MBA from Aligarh Muslim University, a Central University recognised by UGC.'},
       'B.Com': {
         specs: ['General Commerce'],
         fees: '₹28K – ₹28K',
@@ -3599,7 +3599,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Charotar University of Science & Technology — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Charotar University of Science & Technology, recognised for corporate hiring.',
       },
       
       
@@ -3751,7 +3751,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Maharishi Markandeshwar — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Maharishi Markandeshwar, recognised for corporate hiring.',
       },
       
       
@@ -3834,7 +3834,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Mizoram University (MZU) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Mizoram University (MZU), recognised for corporate hiring.',
       }
     },
     color: '#0891B2',
@@ -3886,7 +3886,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Vivekananda Global University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Vivekananda Global University, recognised for corporate hiring.',
       },
       
       
@@ -4070,7 +4070,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Uttaranchal University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Uttaranchal University, recognised for corporate hiring.',
       },
 
       
@@ -4160,7 +4160,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3.5L – ₹6L per annum',
         topCompanies: ['NGOs', 'Government Organisations', 'Research Institutes', 'Educational Institutions'],
         internshipType: 'Dissertation Project (Semester 4)',
-        careerOutcome: 'UGC DEB approved MA (Sociology) from Andhra University — NIRF #23, NAAC A++. One of India\'s oldest universities est. 1926.',
+        careerOutcome: 'UGC DEB approved MA (Sociology) from Andhra University. NIRF #23 University, NAAC A++. Established in 1926.',
       },
     },
     color: '#1B4FBE',
@@ -4318,7 +4318,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Mahatma Gandhi University (CDOE) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Mahatma Gandhi University (CDOE), recognised for corporate hiring.',
       }
     },
     color: '#0891B2',
@@ -4370,7 +4370,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Vellore Institute of Science and Te — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Vellore Institute of Science and Te, recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['Artificial Intelligence and Machine Learning', 'Cybersecurity', 'Data Science', 'Internet of Things (IoT)', 'Full Stack Development', 'Cloud Computing', 'Blockchain Technology', 'Data Analytics', 'Software Engineering', 'Game Development', 'General'],
@@ -4380,7 +4380,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Vellore Institute of Technology — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Vellore Institute of Technology, recognised for corporate hiring.',
       },
       
       
@@ -4484,7 +4484,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Kurukshetra University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Kurukshetra University, recognised for corporate hiring.',
       },
       
       
@@ -4602,7 +4602,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹5L – ₹18L per annum',
         topCompanies: ['ITC', 'HDFC Bank', 'Capgemini', 'Infosys', 'TCS', 'Wipro', 'Accenture', 'IBM', 'HCL', 'Cognizant'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Dr. D.Y. Patil Vidyapeeth, Pune – C — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Dr. D.Y. Patil Vidyapeeth, Pune – C, recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['General', 'Artificial Intelligence & Machine Learning', 'Blockchain Technology', 'Business Analytics', 'Digital Marketing Management', 'FinTech Management'],
@@ -4612,7 +4612,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Dr. D.Y. Patil Vidyapeeth (Pune) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Dr. D.Y. Patil Vidyapeeth (Pune), recognised for corporate hiring.',
       },
     },
     color: '#1B4FBE',
@@ -4654,7 +4654,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Jamia Millia Islamia (JMI) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Jamia Millia Islamia (JMI), recognised for corporate hiring.',
       },
     },
     color: '#1B4FBE',
@@ -4697,7 +4697,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Christ (Deemed to be University) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Christ (Deemed to be University), recognised for corporate hiring.',
       },
       
       
@@ -4761,7 +4761,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Shobhit Institute of Engineering & — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Shobhit Institute of Engineering &, recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['Cloud Computing', 'AI & Machine Learning', 'Full Stack Development', 'Cyber Security', 'Data Science'],
@@ -4771,7 +4771,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Shobhit Institute of Engineering & Technology — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Shobhit Institute of Engineering & Technology, recognised for corporate hiring.',
       },
       
       
@@ -4784,7 +4784,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Shobhit Institute of Engineering & — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Shobhit Institute of Engineering &, recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['General Management'],
@@ -4794,7 +4794,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Shobhit Institute of Engineering & — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Shobhit Institute of Engineering &, recognised for corporate hiring.',
       }
     },
     color: '#0891B2',
@@ -4853,7 +4853,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Bharati Vidyapeeth — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Bharati Vidyapeeth, recognised for corporate hiring.',
       },
       
       
@@ -4932,7 +4932,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Assam Don Bosco University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Assam Don Bosco University, recognised for corporate hiring.',
       },
       
       
@@ -5061,7 +5061,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from JSS Academy of Higher Education & R — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from JSS Academy of Higher Education & R, recognised for corporate hiring.',
       },
       'BBA': {
         specs: ['Hospital and Health System Management'],
@@ -5071,7 +5071,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from JSS Academy of Higher Education & R — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from JSS Academy of Higher Education & R, recognised for corporate hiring.',
       }
     },
     color: '#1B4FBE',
@@ -5113,7 +5113,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Alliance University (Online) — recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from Alliance University (Online), recognised for corporate hiring.'},
       'BBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management'],
         fees: '₹0.2L – ₹1.1L',
@@ -5122,7 +5122,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Alliance University (Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Alliance University (Online), recognised for corporate hiring.',
       },
       'B.Com': {
         specs: ['Accounting and Taxation', 'Finance'],
@@ -5132,7 +5132,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from Alliance University (Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved B.Com from Alliance University (Online), recognised for corporate hiring.',
       }
     },
     color: '#0891B2',
@@ -5174,7 +5174,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Desh Bhagat University (DBU Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Desh Bhagat University (DBU Online), recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['Cyber Security', 'AI and Data Science'],
@@ -5184,7 +5184,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Desh Bhagat University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Desh Bhagat University, recognised for corporate hiring.',
       },
       
       
@@ -5196,7 +5196,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Desh Bhagat University (DBU Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Desh Bhagat University (DBU Online), recognised for corporate hiring.',
       },
       'B.Com': {
         specs: ['General Management'],
@@ -5206,7 +5206,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from Desh Bhagat University (DBU Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved B.Com from Desh Bhagat University (DBU Online), recognised for corporate hiring.',
       }
     },
     color: '#0891B2',
@@ -5245,7 +5245,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Ganpat University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Ganpat University, recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['General'],
@@ -5255,7 +5255,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Ganpat university — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Ganpat university, recognised for corporate hiring.',
       },
       
       
@@ -5268,7 +5268,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Ganpat University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Ganpat University, recognised for corporate hiring.',
       }
     },
     color: '#0891B2',
@@ -5379,7 +5379,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Guru Nanak Dev University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Guru Nanak Dev University, recognised for corporate hiring.',
       },
       
       
@@ -5432,7 +5432,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹5L – ₹12L per annum',
         topCompanies: ['JIIT placement partners', 'Industry MNCs'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Jaypee Institute of Information Tec — recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from Jaypee Institute of Information Tec, recognised for corporate hiring.'},
       'BBA': {
         specs: ['General Management'],
         fees: '₹0.2L – ₹1.2L',
@@ -5441,7 +5441,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹7L per annum',
         topCompanies: ['JIIT placement partners'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Jaypee Institute of Information Tec — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Jaypee Institute of Information Tec, recognised for corporate hiring.',
       }
     },
     color: '#0891B2',
@@ -5491,7 +5491,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Savitribai Phule Pune University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Savitribai Phule Pune University, recognised for corporate hiring.',
       },
       
       
@@ -5562,7 +5562,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹10L per annum',
         topCompanies: ['HDFC Bank', 'OYO', 'Flipkart', 'ECOLAB', 'Wipro'],
         internshipType: 'Project (Semester 4)',
-        careerOutcome: 'UGC DEB approved MBA from SRM University Sikkim — NAAC A+, SRM Group. AI-driven platform with Coursera certifications and 3000+ company placement network.',
+        careerOutcome: 'UGC DEB approved MBA from SRM University Sikkim, part of the SRM Group. NAAC A+.',
         syllabus: {
           sem1: 'Managerial Economics | Financial Accounting | Marketing Management | Production & Operations Management | Communication Skills for Managers',
           sem2: 'Legal Aspects of Business | Business Analytics | Human Resource Management | Financial Management | Business Statistics & Quantitative Methods',
@@ -5584,7 +5584,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹2.85L – ₹4L per annum',
         topCompanies: ['IT Companies', 'Retail Chains', 'FMCG Brands', 'Digital Marketing Agencies'],
         internshipType: 'Project (Semester 6)',
-        careerOutcome: 'UGC DEB approved BBA from SRM University Sikkim — NAAC A+. AI-driven platform with specialisations in Digital Marketing and Business Analytics.',
+        careerOutcome: 'UGC DEB approved BBA from SRM University Sikkim. NAAC A+, with specialisations in Digital Marketing and Business Analytics.',
         syllabus: {
           sem1: 'Professional Communication | Principles of Management | Financial Accounting | Basics of Production & Operations | Managerial Economics | Environmental Science',
           sem2: 'Management & Cost Accounting | Organizational Culture & Behaviour | Management Information Systems | Business Environment | Statistics in Business',
@@ -5605,7 +5605,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3.5L – ₹6L per annum',
         topCompanies: ['Accenture', 'Amazon', 'Infosys', 'TATA', 'IT Services Firms'],
         internshipType: 'Mini Project (Sem 5) + Project Work (Sem 6)',
-        careerOutcome: 'UGC DEB approved BCA from SRM Sikkim — NAAC A+. Future-ready curriculum integrating ML, blockchain, and cloud from UG level.',
+        careerOutcome: 'UGC DEB approved BCA from SRM University Sikkim. NAAC A+.',
         syllabus: {
           sem1: 'Business English | Introduction to Data Science | Programming for Problem Solving | Data Analysis using Excel | Discrete Mathematical Structures | Environmental Science',
           sem2: 'Programming in Java | Data Structures & Algorithms | Database Systems | Operating System Concepts | Introduction to Cloud Computing | Online Practicals',
@@ -5856,7 +5856,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Noida International University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Noida International University, recognised for corporate hiring.',
       },
       
       
@@ -5992,7 +5992,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Birla Institute of Technology (BIT) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Birla Institute of Technology (BIT), recognised for corporate hiring.',
       },
     },
     color: '#0891B2',
@@ -6032,7 +6032,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Alva\'s College (Autonomous) - ACU — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Alva\'s College (Autonomous) - ACU, recognised for corporate hiring.',
       }
     },
     color: '#2563EB',
@@ -6072,7 +6072,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Datta Meghe Institute of Higher Edu — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Datta Meghe Institute of Higher Edu, recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['General'],
@@ -6082,7 +6082,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Datta Meghe Institute of Higher Education and Research — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Datta Meghe Institute of Higher Education and Research, recognised for corporate hiring.',
       },
       
       
@@ -6126,7 +6126,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Centurion University of Technology — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Centurion University of Technology, recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['General'],
@@ -6136,7 +6136,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Centurion University of Technology and Management — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Centurion University of Technology and Management, recognised for corporate hiring.',
       },
     },
     color: '#2563EB',
@@ -6176,7 +6176,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Guru Kashi University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Guru Kashi University, recognised for corporate hiring.',
       },
       
       
@@ -6218,7 +6218,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Jaipur National University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Jaipur National University, recognised for corporate hiring.',
       },
       
       
@@ -6283,7 +6283,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from B.S. Abdur Rahman Institute of Science and Technology — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from B.S. Abdur Rahman Institute of Science and Technology, recognised for corporate hiring.',
       },
       
       
@@ -6328,7 +6328,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4.5L – ₹12L per annum',
         topCompanies: ['Amazon', 'Deloitte', 'Google', 'Microsoft', 'TATA', 'Wipro', 'Infosys'],
         internshipType: 'Mini Project (Sem 3) + Major Project (Sem 4)',
-        careerOutcome: 'UGC DEB approved MBA from SRMIST — NIRF #56 (Management 2025), NAAC A++. Category 1 university status with international faculty and global alumni network.',
+        careerOutcome: 'UGC DEB approved MBA from SRMIST. NIRF #56 Management, NAAC A++.',
         syllabus: {
           sem1: 'Management Principles & Practices | Organizational Behavior | Managerial Economics | Financial Accounting | Quantitative Techniques for Management',
           sem2: 'Financial Management | Marketing Management | Human Resource Management | Operations Management | Research Methodology for Management',
@@ -6348,7 +6348,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from S.R.M. Institute of Sciences and Technology — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from S.R.M. Institute of Sciences and Technology, recognised for corporate hiring.',
       },
       
       
@@ -6382,7 +6382,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹2.5L – ₹5L per annum',
         topCompanies: ['MNCs', 'FMCG Companies', 'IT Firms', 'Retail Chains'],
         internshipType: 'Internship (Sem 5) + Project Work (Sem 6)',
-        careerOutcome: 'UGC DEB approved BBA from SRMIST — NAAC A++. Foundational business training from a globally recognised university.',
+        careerOutcome: 'UGC DEB approved BBA from SRMIST. NAAC A++.',
         syllabus: {
           sem1: 'Business Communication | Principles of Management | Financial Accounting | Micro Economics | Computer Applications',
           sem2: 'Marketing Management | Human Resource Management | Macro Economics | Business Statistics | Environmental Science',
@@ -6403,7 +6403,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹6L per annum',
         topCompanies: ['IT Services Companies', 'E-commerce Firms', 'Startups', 'Tech MNCs'],
         internshipType: 'Mini Project (Sem 5) + Major Project (Sem 6)',
-        careerOutcome: 'UGC DEB approved BCA from SRMIST — NAAC A++. Heavy focus on Data Science modules and lab-oriented online learning.',
+        careerOutcome: 'UGC DEB approved BCA from SRMIST. NAAC A++, with a focus on Data Science modules.',
         syllabus: {
           sem1: 'Mathematical Foundations | Problem Solving using C | Programming Lab in C | Digital Logic & Design | English',
           sem2: 'Data Structures & Algorithms | OOP in C++ | Programming Lab C++ | DBMS | DBMS Lab',
@@ -6609,7 +6609,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BSc from Sri Ramachandra Institute of Higher — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BSc from Sri Ramachandra Institute of Higher, recognised for corporate hiring.',
       }
     },
     color: '#1B4FBE',
@@ -6730,7 +6730,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹5L – ₹12L per annum',
         topCompanies: ['Google', 'Apple', 'PwC', 'Reliance', 'EY', 'Samsung', 'Qatar Airways', 'Tech Mahindra', 'SBI', 'HDFC'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from GLA University (GLA Online) — recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from GLA University (GLA Online), recognised for corporate hiring.'},
       'MCA': {
         specs: ['General', 'Data Science & AI', 'Cybersecurity', 'Cloud Computing'],
         fees: '₹94,300',
@@ -6752,7 +6752,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹6L per annum',
         topCompanies: ['Google', 'Apple', 'PwC', 'Reliance', 'EY', 'Samsung', 'Qatar Airways', 'Tech Mahindra', 'SBI', 'HDFC'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from GLA University (GLA Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from GLA University (GLA Online), recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['Computer Applications', 'Computer Applications – Data Science', 'Computer Applications – Financial Technology & AI'],
@@ -6762,7 +6762,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹7L per annum',
         topCompanies: ['Google', 'Apple', 'PwC', 'Reliance', 'EY', 'Samsung', 'Qatar Airways', 'Tech Mahindra', 'SBI', 'HDFC'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from GLA University (GLA Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from GLA University (GLA Online), recognised for corporate hiring.',
       },
       'B.Com': {
         specs: ['Commerce', 'Accounting', 'Commerce Honours (Advanced Accounting & Finance)'],
@@ -6772,7 +6772,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹6L per annum',
         topCompanies: ['Google', 'Apple', 'PwC', 'Reliance', 'EY', 'Samsung', 'Qatar Airways', 'Tech Mahindra', 'SBI', 'HDFC'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from GLA University (GLA Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved B.Com from GLA University (GLA Online), recognised for corporate hiring.',
       }
     },
     color: '#2563EB',
@@ -6810,7 +6810,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Jagan Nath University (Online) — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Jagan Nath University (Online), recognised for corporate hiring.',
       }
     },
     color: '#0891B2',
@@ -7057,7 +7057,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Jamia Hamdard — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Jamia Hamdard, recognised for corporate hiring.',
       },
       
       
@@ -7378,7 +7378,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Graphic Era University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Graphic Era University, recognised for corporate hiring.',
       },
       
       
@@ -7892,7 +7892,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'Tech Mahindra'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from IIIT Hyderabad — recognised for corporate hiring across India.',
+        careerOutcome: 'UGC DEB approved MBA from IIIT Hyderabad, recognised for corporate hiring across India.',
       }
     },
     color: '#134e4a',
@@ -8160,7 +8160,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Chatrapati Shahuji Maharaj University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Chatrapati Shahuji Maharaj University, recognised for corporate hiring.',
       },
       
       
@@ -8547,7 +8547,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from MATS University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from MATS University, recognised for corporate hiring.',
       },
       
       
@@ -8710,7 +8710,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Mody University of Science and Technology — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Mody University of Science and Technology, recognised for corporate hiring.',
       },
 
     },
@@ -8834,7 +8834,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Assam Down Town University — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Assam Down Town University, recognised for corporate hiring.',
       },
       
       
