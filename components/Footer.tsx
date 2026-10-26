@@ -139,7 +139,7 @@ export default function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4"
           style={{ borderTop:'1px solid rgba(255,255,255,0.07)' }}>
           <p className="text-xs text-white/25">
-            © 2026 Edify (edifyedu.in) — Independent information portal. Not affiliated with any university.
+            © 2026 Edify (edifyedu.in). Independent information portal. Not affiliated with any university.
           </p>
           <p className="text-xs text-center text-white/25">
             All data from public UGC/NAAC/NIRF records. Verify fees with university before enrolling.

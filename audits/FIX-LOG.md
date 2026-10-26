@@ -1,5 +1,25 @@
 # Fix log
 
+## 2026-10-27 · Em-dash sweep: spec-page prose, careerOutcome lines, footer and trust bar
+
+House style bans em dashes. A rescan of the 200 non-MBA spec pages found one in the body of 99 of them, from
+lib/content.ts spec prose (481 em dashes) and lib/data.ts careerOutcome strings (163), plus the footer and the
+navbar trust bar on every page.
+
+- content.ts: in each string, a short label (5 words or fewer, no sentence punctuation) before the dash becomes
+  "Label: rest"; anything longer becomes a comma; "Yes —" becomes "Yes,". Multi-line markdown templates get the
+  same rule per line. 463 strings and 15 template lines; 1 left, in a code comment.
+- data.ts: 155 templated "— recognised for corporate hiring" endings became commas. Eight hand-written lines were
+  rewritten, dropping unsourced claims ("3000+ company placement network", "Coursera certifications") and
+  naming NIRF categories (Andhra #23 University, SRMIST #56 Management, both from lib/data.ts).
+- Footer and Navbar trust bar.
+
+Result on dev: 0 visible em dashes on spec pages (was 1+ on all 200).
+
+Still open: component JSX on university pages and the homepage (17 on /, 9 on an MBA hub), under the
+em-dash baseline. Also found: the university-page comparison table prints "NIRF Rank #11" with no category
+on an MBA page (SRMIST University rank); check-nirf-category only catches the NIRF #${} template form.
+
 ## 2026-10-27 · MUJ and MAHE MSc listed "General Management" as the specialisation
 
 Both records had MSc specs ["General Management"] while their own verified comments (onlinemanipal.com,
