@@ -472,7 +472,7 @@ export default function MBASpecialisationHubPage(
                           </Link>
                         </td>
                         <td className="p-3 text-center text-ink-2">
-                          {u.nirf < 500 ? `#${u.nirf}` : 'NR'}
+                          {u.nirfMgt && u.nirfMgt < 500 ? `#${u.nirfMgt} Mgmt` : u.nirf < 500 ? `#${u.nirf} Univ` : 'NR'}
                         </td>
                         <td className="p-3 text-center text-ink-2">{u.naac}</td>
                         <td className="p-3 text-right font-semibold text-navy">

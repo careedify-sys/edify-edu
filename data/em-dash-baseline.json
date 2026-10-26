@@ -60,7 +60,6 @@
     "components/EdifyTrust.tsx": 3,
     "components/EnquiryModal.tsx": 6,
     "components/EnquiryModalDynamic.tsx": 1,
-    "components/FeesTableClient.tsx": 1,
     "components/FloatingCTA.tsx": 1,
     "components/GatedContent.tsx": 6,
     "components/HonestVerdict.tsx": 4,
