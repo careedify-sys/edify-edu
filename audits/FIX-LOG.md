@@ -1,4 +1,51 @@
-# Fix log
+# Fi## 2026-10-26 · Uttaranchal is NAAC A+ on every peer page; MUJ MBA title carries its fee
+
+Two defects surfaced by the MUJ/Uttaranchal January 2027 fee sweep (8359b5b).
+
+**1. Peer pages called Uttaranchal "NAAC A".** Uttaranchal University Online is
+NAAC A+ in `lib/data.ts` and in Supabase (CGPA 3.30, joined through
+`scripts/lib/supabase-uni-map.mjs`). Comparison paragraphs on other
+universities' spec pages had it as "NAAC A". Corrected:
+
+| file | was | now |
+|---|---|---|
+| kurukshetra mba business-analytics, hrm | "NAAC A", "A++ vs A" | "NAAC A+", "A++ vs A+" |
+| integral mba finance, international-business | "NAAC A grade", "A+ vs A", Integral "higher grade" | same A+ grade; Integral's case rests on NIRF and history |
+| integral mba hrm, marketing | "NAAC A+ (lower than Integral's A+)" | "the same grade as Integral" |
+| bharati-vidyapeeth mba international-business | "cheaper at the same NAAC grade", "NAAC A is acceptable" | "one NAAC grade lower (A+ vs A++)", "NAAC A+" |
+| lib/blog.ts, online MBA supply chain guide | UU and SMU "NAAC A or A+" (x2) | both "NAAC A+" (SMU is A+ in Supabase, 3.28) |
+
+**Why the rewrites, not a letter swap.** Integral is also A+ (Supabase 3.40), so
+every Integral sentence that won on "higher accreditation" picked a winner that
+does not exist. Bharati is A++, so "cheaper at the same NAAC grade" was false in
+the other direction. Changing only the letter would have left those comparisons
+asserting the wrong conclusion.
+
+Left alone on purpose: the Dr MGR HR page says Galgotias and Uttaranchal have
+"similar NAAC grades". All three are A+, so it is correct.
+
+Verified: a sentence-level scan of `lib/data/page-content/*.json` and
+`lib/blog.ts` for Uttaranchal/UU next to a non-A+ grade now returns only the MGR
+line and "NAAC A plus" table cells. The Integral marketing page renders the new
+sentence in the dev server and no longer contains "lower than Integral".
+
+**2. MUJ MBA hub title dropped its fee.** `/universities/manipal-university-jaipur-online/mba`
+rendered "Manipal Univ Jaipur Online MBA Fees 2026 | edifyedu.in". The generic
+template starts from the full name "Manipal University Jaipur (MUJ) Online",
+runs past the 60-character cap, and `clampTitle` drops the fee segment first.
+The fee is what the "muj mba fees" query is looking for. Added a fee-led entry
+to `lib/mba-seo-overrides.ts` on the Uttaranchal pattern: title
+"MUJ Online MBA Fees 2026: ₹1.56L-₹1.84L | edifyedu.in" (53 chars), plus
+description, h1 and intro from data.ts (₹1,84,000 list, ₹1,56,400 after the 15%
+discount, EMI from ₹6,517, 13 specialisations, NAAC A+, NIRF Management #81 with
+its category stated).
+
+Verified in the dev server: document.title is the new 53-character string, and
+the description, h1 and intro render from the override.
+
+---
+
+x log
 
 Running record of every fix: what changed, **why**, how it was verified, and what
 guards it. Newest first. One entry per commit that changes behaviour or data.

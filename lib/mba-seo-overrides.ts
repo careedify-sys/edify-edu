@@ -36,6 +36,17 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
     h1: 'Uttaranchal University Online MBA 2026: Fees, Specialisations and Honest Review',
     intro: 'For the January 2027 batch, the Uttaranchal University online MBA lists at ₹1,48,000. A 30% scholarship brings it to ₹1,03,600, paid as four semester instalments of ₹25,900, and paying the full fee upfront costs ₹99,600. The programme holds NAAC A+ accreditation and UGC-DEB approval, with 8 specialisations including Logistics and Supply Chain, International Business and Digital Marketing. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Confirm the current fee on the official portal before you pay.',
   },
+  // MUJ: data.ts feeMin=156400 (after the 15% discount), feeMax=184000 (list),
+  // emiFrom=6517, January 2027 chart. The generic template opens with the full
+  // name "Manipal University Jaipur (MUJ) Online", which runs past 60 chars, so
+  // clampTitle dropped the fee and rendered "Manipal Univ Jaipur Online MBA
+  // Fees 2026". "MUJ" frees enough room to carry the range.
+  'manipal-university-jaipur-online': {
+    title: 'MUJ Online MBA Fees 2026: ₹1.56L-₹1.84L | edifyedu.in',
+    description: 'Manipal University Jaipur online MBA fees: ₹1,84,000 list, ₹1,56,400 after the 15% discount, EMI from ₹6,517. 13 specialisations, NAAC A+, UGC-DEB.',
+    h1: 'Manipal University Jaipur (MUJ) Online MBA 2026: Fees, Specialisations and Honest Review',
+    intro: 'For the January 2027 batch, the Manipal University Jaipur (MUJ) online MBA lists at ₹1,84,000, or ₹46,000 a semester. A 15% discount brings the total to ₹1,56,400, with EMI from ₹6,517 a month. The programme holds NAAC A+ accreditation, UGC-DEB approval and a NIRF Management rank of #81, with 13 specialisations including Finance, Analytics and Data Science, and BFSI. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Confirm the current fee on onlinemanipal.com before you pay.',
+  },
   'lovely-professional-university-online': {
     title: 'LPU Online MBA 2026: Fees, Specializations, NAAC A++ Review | edifyedu.in',
     description: 'LPU online MBA fees, all specializations, NAAC A++ details. Lovely Professional University distance MBA reviewed honestly. Compare with Amity, Chandigarh, NMIMS.',
