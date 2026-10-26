@@ -3,6 +3,23 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'online-bachelors-ug-courses-india': [
+    { label: 'Online UG degrees', value: 'BA, B.Com, BBA, BCA' },
+    { label: 'Eligibility', value: 'Class 12 (incl. open school)' },
+    { label: 'Usual duration', value: '3 years' },
+    { label: '1-year degree', value: 'Not valid' },
+    { label: 'B.Tech / BFA online', value: 'Not allowed' },
+    { label: 'Equal to regular', value: 'Yes (Reg. 22)', green: true },
+    { label: 'Last verified', value: '26 Oct 2026', green: true },
+  ],
+  'online-masters-pg-courses-india': [
+    { label: 'Online PG degrees', value: 'MBA, MCA, MA, M.Com, MSc' },
+    { label: 'Usual duration', value: '2 years' },
+    { label: 'One-year PG', value: 'Only after 4-yr Honours' },
+    { label: 'Eligibility', value: '3-yr (120 cr) or 4-yr UG' },
+    { label: 'Equal to regular', value: 'Yes (Reg. 22)', green: true },
+    { label: 'Last verified', value: '26 Oct 2026', green: true },
+  ],
   'online-degree-courses-india': [
     { label: 'Valid online degrees', value: 'BA, B.Com, BBA, BCA, MA, M.Com, MBA, MCA, MSc' },
     { label: 'Banned online', value: 'Engineering, Law, Medical, PhD +more' },
