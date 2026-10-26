@@ -42,11 +42,15 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const cleanName = u.name.replace(/\s+online\s*$/i, '')
   const titleName = getTitleName(u.id, u.name, u.abbr)
-  const progStr = u.programs.slice(0, 3).join(', ')
+  // Only programmes whose hub page resolves. University of Mumbai listed MBA,
+  // BBA and BCA here while all three hubs 404.
+  const liveProgs = getResolvableProgrammes(u)
+  const progStr = liveProgs.slice(0, 3).join(', ')
   // feeMin/feeMax are MBA-led, so printing them as "fees" for the whole
   // university misstated every non-MBA programme. Show the MBA fee, labelled,
   // from getDisplayFee so a suppressed figure stays suppressed here too.
-  const mbaFee = u.programs.includes('MBA') ? getDisplayFee(u, 'MBA') : null
+  // With no MBA hub, getDisplayFee falls back to the record's placeholder range.
+  const mbaFee = liveProgs.includes('MBA') ? getDisplayFee(u, 'MBA') : null
   const hasFee = !!(mbaFee && mbaFee.ok && mbaFee.compact)
   const feeStr = hasFee ? `MBA ${mbaFee!.compact}` : ''
   const feeSeg = hasFee ? `${feeStr}, ` : ''

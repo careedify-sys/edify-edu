@@ -6935,7 +6935,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   {
     id: 'jawaharlal-nehru-university-online',
     logo: '/logos/university_logos/jnu-logo-final.webp',
-    name: 'JAWAHARLAL NEHRU UNIVERSITY Online',
+    name: 'Jawaharlal Nehru University Online',
     abbr: 'JNU',
     city: 'New Delhi',
     state: 'Delhi',
@@ -6953,7 +6953,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Delhi university with online programs',
-    description: 'JAWAHARLAL NEHRU UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
+    description: 'Jawaharlal Nehru University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in New Delhi and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['MA'],
@@ -6966,7 +6966,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from JAWAHARLAL NEHRU UNIVERSITY is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from Jawaharlal Nehru University is ideal for civil services, research and education careers.',
       }
     },
     color: '#6366f1',
@@ -6976,7 +6976,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   {
     id: 'jamia-hamdard-online',
     logo: '/logos/university_logos/jamia-hamdard-online-logo.svg',
-    name: 'JAMIA HAMDARD Online',
+    name: 'Jamia Hamdard Online',
     abbr: 'JH',
     city: 'New Delhi',
     state: 'Delhi',
@@ -6995,7 +6995,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Delhi university with online programs',
-    description: 'JAMIA HAMDARD offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
+    description: 'Jamia Hamdard offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in New Delhi and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['B.Com', 'BBA', 'BCA', 'MA', 'MBA', 'MCA'],
@@ -7008,7 +7008,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
-        careerOutcome: 'B.Com from JAMIA HAMDARD is valid for banking, finance and government roles.'},
+        careerOutcome: 'B.Com from Jamia Hamdard is valid for banking, finance and government roles.'},
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
         fees: '\u20b945K \u2013 \u20b9108K',
@@ -7017,7 +7017,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b98L per annum',
         topCompanies: ['HUL','Reliance','HDFC Bank','Amazon','Flipkart'],
         internshipType: 'Industry project',
-        careerOutcome: 'BBA from JAMIA HAMDARD provides a recognised management degree for entry-level corporate roles.',
+        careerOutcome: 'BBA from Jamia Hamdard provides a recognised management degree for entry-level corporate roles.',
       },
       'BCA': {
         specs: ['Data Science','Web Development','Cloud Computing','Cybersecurity','AI & ML','Mobile Development'],
@@ -7027,7 +7027,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b910L per annum',
         topCompanies: ['TCS','Wipro','HCL','Infosys','Tech Mahindra'],
         internshipType: 'Project-based',
-        careerOutcome: 'BCA from JAMIA HAMDARD builds IT fundamentals for entry-level software careers.',
+        careerOutcome: 'BCA from Jamia Hamdard builds IT fundamentals for entry-level software careers.',
       },
       'MA': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
@@ -7037,7 +7037,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from JAMIA HAMDARD is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from Jamia Hamdard is ideal for civil services, research and education careers.',
       },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations Management', 'Data Science', 'Digital Marketing', 'International Business'],
@@ -7047,7 +7047,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
-        careerOutcome: 'MBA from JAMIA HAMDARD is UGC DEB approved and valid for corporate hiring and government roles across India.',
+        careerOutcome: 'MBA from Jamia Hamdard is UGC DEB approved and valid for corporate hiring and government roles across India.',
       },
       'MCA': {
         specs: ['General'],
@@ -7069,7 +7069,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'kalinga-institute-industrial-technology-online',
-    name: 'KALINGA INSTITUTE OF INDUSTRIAL TECHNOLOGY Online',
+    name: 'Kalinga Institute of Industrial Technology Online',
     abbr: 'KIOIT',
     city: 'Bhubaneswar',
     state: 'Odisha',
@@ -7089,7 +7089,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Odisha university with online programs',
-    description: 'KALINGA INSTITUTE OF INDUSTRIAL TECHNOLOGY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
+    description: 'Kalinga Institute of Industrial Technology offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Bhubaneswar and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['BA', 'B.Com', 'MA', 'M.Com'],
@@ -7112,7 +7112,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
-        careerOutcome: 'B.Com from KALINGA INSTITUTE OF INDUSTRIAL TECHNOLOGY is valid for banking, finance and government roles.',
+        careerOutcome: 'B.Com from Kalinga Institute of Industrial Technology is valid for banking, finance and government roles.',
       },
       'MA': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
@@ -7122,7 +7122,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from KALINGA INSTITUTE OF INDUSTRIAL TECHNOLOGY is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from Kalinga Institute of Industrial Technology is ideal for civil services, research and education careers.',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -7132,7 +7132,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
-        careerOutcome: 'M.Com from KALINGA INSTITUTE OF INDUSTRIAL TECHNOLOGY advances commerce careers in finance, tax and audit.',
+        careerOutcome: 'M.Com from Kalinga Institute of Industrial Technology advances commerce careers in finance, tax and audit.',
       }
     },
     color: '#b45309',
@@ -7141,9 +7141,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'university-of-kerala-online',
-    name: 'UNIVERSITY OF KERALA Online',
+    name: 'University of Kerala Online',
     abbr: 'UOK',
-    city: 'Kochi',
+    city: 'Thiruvananthapuram',
     state: 'Kerala',
     region: 'South',
     nirf: 25,
@@ -7159,7 +7159,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Kerala university with online programs',
-    description: 'UNIVERSITY OF KERALA offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
+    description: 'University of Kerala offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Kochi and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['B.Com', 'BBA', 'M.Com', 'MBA'],
@@ -7172,7 +7172,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
-        careerOutcome: 'B.Com from UNIVERSITY OF KERALA is valid for banking, finance and government roles.',
+        careerOutcome: 'B.Com from University of Kerala is valid for banking, finance and government roles.',
       },
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
@@ -7182,7 +7182,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b98L per annum',
         topCompanies: ['HUL','Reliance','HDFC Bank','Amazon','Flipkart'],
         internshipType: 'Industry project',
-        careerOutcome: 'BBA from UNIVERSITY OF KERALA provides a recognised management degree for entry-level corporate roles.',
+        careerOutcome: 'BBA from University of Kerala provides a recognised management degree for entry-level corporate roles.',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -7192,7 +7192,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
-        careerOutcome: 'M.Com from UNIVERSITY OF KERALA advances commerce careers in finance, tax and audit.',
+        careerOutcome: 'M.Com from University of Kerala advances commerce careers in finance, tax and audit.',
       },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations Management', 'Data Science', 'Digital Marketing', 'International Business'],
@@ -7202,7 +7202,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
-        careerOutcome: 'MBA from UNIVERSITY OF KERALA is UGC DEB approved and valid for corporate hiring and government roles across India.',
+        careerOutcome: 'MBA from University of Kerala is UGC DEB approved and valid for corporate hiring and government roles across India.',
       }
     },
     color: '#0369a1',
@@ -7306,7 +7306,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   {
     id: 'graphic-era-university-online',
     logo: '/logos/university_logos/graphic-era-university.svg',
-    name: 'GRAPHIC ERA UNIVERSITY Online',
+    name: 'Graphic Era University Online',
     abbr: 'GEU',
     city: 'Dehradun',
     state: 'Uttarakhand',
@@ -7326,7 +7326,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Uttarakhand university with online programs',
-    description: 'GRAPHIC ERA UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
+    description: 'Graphic Era University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Dehradun and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['B.Com', 'BBA', 'BCA', 'MBA', 'MCA'],
@@ -7339,7 +7339,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
-        careerOutcome: 'B.Com from GRAPHIC ERA UNIVERSITY is valid for banking, finance and government roles.'},
+        careerOutcome: 'B.Com from Graphic Era University is valid for banking, finance and government roles.'},
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
         fees: '\u20b945K \u2013 \u20b9108K',
@@ -7348,7 +7348,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b98L per annum',
         topCompanies: ['HUL','Reliance','HDFC Bank','Amazon','Flipkart'],
         internshipType: 'Industry project',
-        careerOutcome: 'BBA from GRAPHIC ERA UNIVERSITY provides a recognised management degree for entry-level corporate roles.',
+        careerOutcome: 'BBA from Graphic Era University provides a recognised management degree for entry-level corporate roles.',
       },
       'BCA': {
         specs: ['Data Science','Web Development','Cloud Computing','Cybersecurity','AI & ML','Mobile Development'],
@@ -7358,7 +7358,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b910L per annum',
         topCompanies: ['TCS','Wipro','HCL','Infosys','Tech Mahindra'],
         internshipType: 'Project-based',
-        careerOutcome: 'BCA from GRAPHIC ERA UNIVERSITY builds IT fundamentals for entry-level software careers.',
+        careerOutcome: 'BCA from Graphic Era University builds IT fundamentals for entry-level software careers.',
       },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations Management', 'Data Science', 'Digital Marketing', 'International Business'],
@@ -7368,7 +7368,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
-        careerOutcome: 'MBA from GRAPHIC ERA UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
+        careerOutcome: 'MBA from Graphic Era University is UGC DEB approved and valid for corporate hiring and government roles across India.',
       },
       'MCA': {
         specs: ['General'],
@@ -7390,7 +7390,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'devi-ahilya-vishwavidyalaya-online',
-    name: 'DEVI AHILYA VISHWAVIDYALAYA Online',
+    name: 'Devi Ahilya Vishwavidyalaya Online',
     abbr: 'DAV',
     city: 'Indore',
     state: 'Madhya Pradesh',
@@ -7408,7 +7408,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Madhya Pradesh university with online programs',
-    description: 'DEVI AHILYA VISHWAVIDYALAYA offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
+    description: 'Devi Ahilya Vishwavidyalaya offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Bhopal and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['MA', 'MBA'],
@@ -7421,7 +7421,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from DEVI AHILYA VISHWAVIDYALAYA is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from Devi Ahilya Vishwavidyalaya is ideal for civil services, research and education careers.',
       },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations Management', 'Data Science', 'Digital Marketing', 'International Business'],
@@ -7431,7 +7431,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
-        careerOutcome: 'MBA from DEVI AHILYA VISHWAVIDYALAYA is UGC DEB approved and valid for corporate hiring and government roles across India.',
+        careerOutcome: 'MBA from Devi Ahilya Vishwavidyalaya is UGC DEB approved and valid for corporate hiring and government roles across India.',
       }
     },
     color: '#d97706',
@@ -7439,9 +7439,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'madurai-kamaraj-university-online',
-    name: 'MADURAI KAMARAJ UNIVERSITY Online',
+    name: 'Madurai Kamaraj University Online',
     abbr: 'MKU',
-    city: 'Chennai',
+    city: 'Madurai',
     state: 'Tamil Nadu',
     region: 'South',
     nirf: 85,
@@ -7457,7 +7457,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Tamil Nadu university with online programs',
-    description: 'MADURAI KAMARAJ UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
+    description: 'Madurai Kamaraj University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Chennai and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['BA', 'B.Com', 'BBA', 'MA', 'M.Com', 'BCA', 'MBA', 'MCA'],
@@ -7480,7 +7480,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
-        careerOutcome: 'B.Com from MADURAI KAMARAJ UNIVERSITY is valid for banking, finance and government roles.',
+        careerOutcome: 'B.Com from Madurai Kamaraj University is valid for banking, finance and government roles.',
       },
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
@@ -7490,7 +7490,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b98L per annum',
         topCompanies: ['HUL','Reliance','HDFC Bank','Amazon','Flipkart'],
         internshipType: 'Industry project',
-        careerOutcome: 'BBA from MADURAI KAMARAJ UNIVERSITY provides a recognised management degree for entry-level corporate roles.',
+        careerOutcome: 'BBA from Madurai Kamaraj University provides a recognised management degree for entry-level corporate roles.',
       },
       'MA': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
@@ -7500,7 +7500,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from MADURAI KAMARAJ UNIVERSITY is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from Madurai Kamaraj University is ideal for civil services, research and education careers.',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -7510,7 +7510,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
-        careerOutcome: 'M.Com from MADURAI KAMARAJ UNIVERSITY advances commerce careers in finance, tax and audit.',
+        careerOutcome: 'M.Com from Madurai Kamaraj University advances commerce careers in finance, tax and audit.',
       }
     },
     color: '#16a34a',
@@ -7519,9 +7519,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'university-of-mumbai-online',
-    name: 'UNIVERSITY OF MUMBAI Online',
+    name: 'University of Mumbai Online',
     abbr: 'UOM',
-    city: 'Pune',
+    city: 'Mumbai',
     state: 'Maharashtra',
     region: 'West',
     nirf: 54,
@@ -7537,7 +7537,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Maharashtra university with online programs',
-    description: 'UNIVERSITY OF MUMBAI offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
+    description: 'University of Mumbai offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Pune and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['MA', 'BBA', 'BCA', 'MBA', 'MCA'],
@@ -7550,7 +7550,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from UNIVERSITY OF MUMBAI is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from University of Mumbai is ideal for civil services, research and education careers.',
       }
     },
     color: '#b45309',
@@ -7559,7 +7559,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'university-of-jammu-online',
-    name: 'UNIVERSITY OF JAMMU Online',
+    name: 'University of Jammu Online',
     abbr: 'UOJ',
     city: '',
     state: 'Jammu and Kashmir',
@@ -7577,7 +7577,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Jammu & Kashmir university with online programs',
-    description: 'UNIVERSITY OF JAMMU offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
+    description: 'University of Jammu offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in India and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['MA', 'M.Com'],
@@ -7590,7 +7590,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from UNIVERSITY OF JAMMU is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from University of Jammu is ideal for civil services, research and education careers.',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -7600,7 +7600,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
-        careerOutcome: 'M.Com from UNIVERSITY OF JAMMU advances commerce careers in finance, tax and audit.',
+        careerOutcome: 'M.Com from University of Jammu advances commerce careers in finance, tax and audit.',
       }
     },
     color: '#0369a1',
@@ -7609,9 +7609,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'shivaji-university-online',
-    name: 'SHIVAJI UNIVERSITY Online',
+    name: 'Shivaji University Online',
     abbr: 'SU',
-    city: 'Pune',
+    city: 'Kolhapur',
     state: 'Maharashtra',
     region: 'West',
     nirf: 999,
@@ -7627,7 +7627,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Maharashtra university with online programs',
-    description: 'SHIVAJI UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
+    description: 'Shivaji University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Pune and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['M.Com', 'MBA'],
@@ -7640,7 +7640,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
-        careerOutcome: 'M.Com from SHIVAJI UNIVERSITY advances commerce careers in finance, tax and audit.',
+        careerOutcome: 'M.Com from Shivaji University advances commerce careers in finance, tax and audit.',
       },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations Management', 'Data Science', 'Digital Marketing', 'International Business'],
@@ -7650,7 +7650,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
-        careerOutcome: 'MBA from SHIVAJI UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
+        careerOutcome: 'MBA from Shivaji University is UGC DEB approved and valid for corporate hiring and government roles across India.',
       }
     },
     color: '#15803d',
@@ -7658,7 +7658,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'banasthali-vidyapith-online',
-    name: 'BANASTHALI VIDYAPITH Online',
+    name: 'Banasthali Vidyapith Online',
     abbr: 'BV',
     city: 'Jaipur',
     state: 'Rajasthan',
@@ -7676,7 +7676,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Rajasthan university with online programs',
-    description: 'BANASTHALI VIDYAPITH offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
+    description: 'Banasthali Vidyapith offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Jaipur and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['BA', 'B.Com', 'MA', 'M.Com', 'MBA'],
@@ -7699,7 +7699,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
-        careerOutcome: 'B.Com from BANASTHALI VIDYAPITH is valid for banking, finance and government roles.',
+        careerOutcome: 'B.Com from Banasthali Vidyapith is valid for banking, finance and government roles.',
       },
       'MA': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
@@ -7709,7 +7709,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from BANASTHALI VIDYAPITH is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from Banasthali Vidyapith is ideal for civil services, research and education careers.',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -7719,7 +7719,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
-        careerOutcome: 'M.Com from BANASTHALI VIDYAPITH advances commerce careers in finance, tax and audit.',
+        careerOutcome: 'M.Com from Banasthali Vidyapith advances commerce careers in finance, tax and audit.',
       },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations Management', 'Data Science', 'Digital Marketing', 'International Business'],
@@ -7729,7 +7729,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
-        careerOutcome: 'MBA from BANASTHALI VIDYAPITH is UGC DEB approved and valid for corporate hiring and government roles across India.',
+        careerOutcome: 'MBA from Banasthali Vidyapith is UGC DEB approved and valid for corporate hiring and government roles across India.',
       }
     },
     color: '#c2410c',
@@ -7739,7 +7739,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   {
     id: 'guru-gobind-singh-indraprastha-university-online',
     logo: '/logos/university_logos/guru-gobind-singhindraprastha-university.svg',
-    name: 'GURU GOBIND SINGH INDRAPRASTHA VISHWAVIDYALAYA Online',
+    name: 'Guru Gobind Singh Indraprastha Vishwavidyalaya Online',
     abbr: 'GGSIV',
     city: 'New Delhi',
     state: 'Delhi',
@@ -7758,7 +7758,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Delhi university with online programs',
-    description: 'GURU GOBIND SINGH INDRAPRASTHA VISHWAVIDYALAYA offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
+    description: 'Guru Gobind Singh Indraprastha Vishwavidyalaya offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in New Delhi and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['B.Com', 'BBA', 'MA'],
@@ -7771,7 +7771,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
-        careerOutcome: 'B.Com from GURU GOBIND SINGH INDRAPRASTHA VISHWAVIDYALAYA is valid for banking, finance and government roles.'},
+        careerOutcome: 'B.Com from Guru Gobind Singh Indraprastha Vishwavidyalaya is valid for banking, finance and government roles.'},
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
         fees: '\u20b954K \u2013 \u20b9120K',
@@ -7780,7 +7780,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b98L per annum',
         topCompanies: ['HUL','Reliance','HDFC Bank','Amazon','Flipkart'],
         internshipType: 'Industry project',
-        careerOutcome: 'BBA from GURU GOBIND SINGH INDRAPRASTHA VISHWAVIDYALAYA provides a recognised management degree for entry-level corporate roles.',
+        careerOutcome: 'BBA from Guru Gobind Singh Indraprastha Vishwavidyalaya provides a recognised management degree for entry-level corporate roles.',
       },
       'MA': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
@@ -7790,7 +7790,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from GURU GOBIND SINGH INDRAPRASTHA VISHWAVIDYALAYA is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from Guru Gobind Singh Indraprastha Vishwavidyalaya is ideal for civil services, research and education careers.',
       }
 
     },
@@ -7800,7 +7800,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'bangalore-university-online',
-    name: 'BANGALORE UNIVERSITY Online',
+    name: 'Bangalore University Online',
     abbr: 'BU',
     city: 'Bengaluru',
     state: 'Karnataka',
@@ -7818,7 +7818,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Karnataka university with online programs',
-    description: 'BANGALORE UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
+    description: 'Bangalore University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Bengaluru and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['B.Com', 'MA', 'M.Com'],
@@ -7831,7 +7831,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
-        careerOutcome: 'B.Com from BANGALORE UNIVERSITY is valid for banking, finance and government roles.',
+        careerOutcome: 'B.Com from Bangalore University is valid for banking, finance and government roles.',
       },
       'MA': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
@@ -7841,7 +7841,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from BANGALORE UNIVERSITY is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from Bangalore University is ideal for civil services, research and education careers.',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -7851,7 +7851,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
-        careerOutcome: 'M.Com from BANGALORE UNIVERSITY advances commerce careers in finance, tax and audit.',
+        careerOutcome: 'M.Com from Bangalore University advances commerce careers in finance, tax and audit.',
       }
     },
     color: '#312e81',
@@ -7860,7 +7860,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'iiit-bangalore-online',
-    name: 'INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY Online',
+    name: 'International Institute of Information Technology Hyderabad Online',
     abbr: 'IIOIT',
     city: 'Hyderabad',
     state: 'Telangana',
@@ -7879,7 +7879,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Telangana university with online programs',
-    description: 'INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
+    description: 'International Institute of Information Technology Hyderabad offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Hyderabad and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['MBA'],
@@ -7900,9 +7900,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'dayalbagh-educational-institute-online',
-    name: 'DAYAL BAGH EDUCATIONAL INSTITUTE Online',
+    name: 'Dayalbagh Educational Institute Online',
     abbr: 'DBEI',
-    city: 'Lucknow',
+    city: 'Agra',
     state: 'Uttar Pradesh',
     region: 'North',
     nirf: 999,
@@ -7919,7 +7919,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Uttar Pradesh university with online programs',
-    description: 'DAYAL BAGH EDUCATIONAL INSTITUTE offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
+    description: 'Dayalbagh Educational Institute offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Lucknow and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['BA', 'B.Com', 'BBA', 'MA', 'M.Com'],
@@ -7941,7 +7941,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
-        careerOutcome: 'B.Com from DAYAL BAGH EDUCATIONAL INSTITUTE is valid for banking, finance and government roles.',
+        careerOutcome: 'B.Com from Dayalbagh Educational Institute is valid for banking, finance and government roles.',
       },
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
@@ -7951,7 +7951,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b98L per annum',
         topCompanies: ['HUL','Reliance','HDFC Bank','Amazon','Flipkart'],
         internshipType: 'Industry project',
-        careerOutcome: 'BBA from DAYAL BAGH EDUCATIONAL INSTITUTE provides a recognised management degree for entry-level corporate roles.',
+        careerOutcome: 'BBA from Dayalbagh Educational Institute provides a recognised management degree for entry-level corporate roles.',
       },
       'MA': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
@@ -7961,7 +7961,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from DAYAL BAGH EDUCATIONAL INSTITUTE is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from Dayalbagh Educational Institute is ideal for civil services, research and education careers.',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -7971,7 +7971,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
-        careerOutcome: 'M.Com from DAYAL BAGH EDUCATIONAL INSTITUTE advances commerce careers in finance, tax and audit.',
+        careerOutcome: 'M.Com from Dayalbagh Educational Institute advances commerce careers in finance, tax and audit.',
       }
     },
     color: '#0891b2',
@@ -7979,7 +7979,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'adichunchanagiri-university-online',
-    name: 'ADICHUNCHANAGIRI UNIVERSITY Online',
+    name: 'Adichunchanagiri University Online',
     abbr: 'AU',
     city: 'B G Nagara',
     state: 'Karnataka',
@@ -7997,7 +7997,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'NAAC A+ (CGPA 3.39, first cycle 2024); online MBA is its only online programme',
-    description: 'ADICHUNCHANAGIRI UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
+    description: 'Adichunchanagiri University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Mandya, Mysuru and the Bengaluru corridor', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['MBA'],
@@ -8010,7 +8010,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
-        careerOutcome: 'MBA from ADICHUNCHANAGIRI UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
+        careerOutcome: 'MBA from Adichunchanagiri University is UGC DEB approved and valid for corporate hiring and government roles across India.',
       }
     },
     color: '#059669',
@@ -8019,7 +8019,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'bharath-university-online',
-    name: 'BHARATH INSTITUTE OF HIGHER EDUCATION AND RESEARCH Online',
+    name: 'Bharath Institute of Higher Education and Research Online',
     abbr: 'BIOHE',
     city: 'Chennai',
     state: 'Tamil Nadu',
@@ -8037,7 +8037,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Tamil Nadu university with online programs',
-    description: 'BHARATH INSTITUTE OF HIGHER EDUCATION AND RESEARCH offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
+    description: 'Bharath Institute of Higher Education and Research offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Chennai and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['BA', 'B.Com', 'M.Com'],
@@ -8060,7 +8060,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
-        careerOutcome: 'B.Com from BHARATH INSTITUTE OF HIGHER EDUCATION AND RESEARCH is valid for banking, finance and government roles.',
+        careerOutcome: 'B.Com from Bharath Institute of Higher Education and Research is valid for banking, finance and government roles.',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -8070,7 +8070,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
-        careerOutcome: 'M.Com from BHARATH INSTITUTE OF HIGHER EDUCATION AND RESEARCH advances commerce careers in finance, tax and audit.',
+        careerOutcome: 'M.Com from Bharath Institute of Higher Education and Research advances commerce careers in finance, tax and audit.',
       }
     },
     color: '#d97706',
@@ -8079,9 +8079,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'chhatrapati-shahu-ji-maharaj-university-online',
-    name: 'CHATRAPATI SHAHUJI MAHARAJ UNIVERSITY Online',
+    name: 'Chhatrapati Shahu Ji Maharaj University Online',
     abbr: 'CSMU',
-    city: 'Lucknow',
+    city: 'Kanpur',
     state: 'Uttar Pradesh',
     region: 'North',
     nirf: 999,
@@ -8097,7 +8097,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Uttar Pradesh university with online programs',
-    description: 'CHATRAPATI SHAHUJI MAHARAJ UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC B++ accredited.',
+    description: 'Chhatrapati Shahu Ji Maharaj University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC B++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Lucknow and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['B.Com', 'BBA', 'BCA', 'M.Com', 'MBA', 'MCA'],
@@ -8110,7 +8110,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
-        careerOutcome: 'B.Com from CHATRAPATI SHAHUJI MAHARAJ UNIVERSITY is valid for banking, finance and government roles.',
+        careerOutcome: 'B.Com from Chhatrapati Shahu Ji Maharaj University is valid for banking, finance and government roles.',
       },
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
@@ -8120,7 +8120,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b98L per annum',
         topCompanies: ['HUL','Reliance','HDFC Bank','Amazon','Flipkart'],
         internshipType: 'Industry project',
-        careerOutcome: 'BBA from CHATRAPATI SHAHUJI MAHARAJ UNIVERSITY provides a recognised management degree for entry-level corporate roles.',
+        careerOutcome: 'BBA from Chhatrapati Shahu Ji Maharaj University provides a recognised management degree for entry-level corporate roles.',
       },
       'BCA': {
         specs: ['Data Science','Web Development','Cloud Computing','Cybersecurity','AI & ML','Mobile Development'],
@@ -8130,7 +8130,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b910L per annum',
         topCompanies: ['TCS','Wipro','HCL','Infosys','Tech Mahindra'],
         internshipType: 'Project-based',
-        careerOutcome: 'BCA from CHATRAPATI SHAHUJI MAHARAJ UNIVERSITY builds IT fundamentals for entry-level software careers.',
+        careerOutcome: 'BCA from Chhatrapati Shahu Ji Maharaj University builds IT fundamentals for entry-level software careers.',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -8140,7 +8140,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
-        careerOutcome: 'M.Com from CHATRAPATI SHAHUJI MAHARAJ UNIVERSITY advances commerce careers in finance, tax and audit.',
+        careerOutcome: 'M.Com from Chhatrapati Shahu Ji Maharaj University advances commerce careers in finance, tax and audit.',
       },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations Management', 'Data Science', 'Digital Marketing', 'International Business'],
@@ -8150,7 +8150,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
-        careerOutcome: 'MBA from CHATRAPATI SHAHUJI MAHARAJ UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
+        careerOutcome: 'MBA from Chhatrapati Shahu Ji Maharaj University is UGC DEB approved and valid for corporate hiring and government roles across India.',
       },
       'MCA': {
         specs: ['General'],
@@ -8180,7 +8180,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // ma and msc are both Rs 30,500 but the programFees key union does not
     // include them, so they rely on pd.fees alone.
     programFees: { mba: { fee: 52500 }, bba: { fee: 57500 }, bcom: { fee: 56500 } },
-    name: 'DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY Online',
+    name: 'Deen Dayal Upadhyaya Gorakhpur University Online',
     abbr: 'DDUGU',
     city: 'Gorakhpur',
     state: 'Uttar Pradesh',
@@ -8198,7 +8198,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Uttar Pradesh university with online programs',
-    description: 'DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
+    description: 'Deen Dayal Upadhyaya Gorakhpur University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Lucknow and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['B.Com', 'BBA', 'MA', 'M.Com', 'MBA', 'MSc'],
@@ -8214,7 +8214,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
-        careerOutcome: 'B.Com from DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY is valid for banking, finance and government roles.',
+        careerOutcome: 'B.Com from Deen Dayal Upadhyaya Gorakhpur University is valid for banking, finance and government roles.',
       },
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
@@ -8227,7 +8227,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b98L per annum',
         topCompanies: ['HUL','Reliance','HDFC Bank','Amazon','Flipkart'],
         internshipType: 'Industry project',
-        careerOutcome: 'BBA from DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY provides a recognised management degree for entry-level corporate roles.',
+        careerOutcome: 'BBA from Deen Dayal Upadhyaya Gorakhpur University provides a recognised management degree for entry-level corporate roles.',
       },
       'MA': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
@@ -8240,7 +8240,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from Deen Dayal Upadhyaya Gorakhpur University is ideal for civil services, research and education careers.',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -8250,7 +8250,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
-        careerOutcome: 'M.Com from DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY advances commerce careers in finance, tax and audit.',
+        careerOutcome: 'M.Com from Deen Dayal Upadhyaya Gorakhpur University advances commerce careers in finance, tax and audit.',
       },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations Management', 'Data Science', 'Digital Marketing', 'International Business'],
@@ -8263,7 +8263,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
-        careerOutcome: 'MBA from DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
+        careerOutcome: 'MBA from Deen Dayal Upadhyaya Gorakhpur University is UGC DEB approved and valid for corporate hiring and government roles across India.',
       },
       // 2026-08-23: MSc added. The official CDOE portal at ddugucdoe.com lists
       // M.Sc Mathematics among DDU's online programmes, but it was absent from
@@ -8277,7 +8277,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹8L per annum',
         topCompanies: ['TCS (Tata Consultancy Services)', 'Infosys', 'Wipro', 'HCL Technologies', 'Cognizant'],
         internshipType: 'Virtual industry project',
-        careerOutcome: 'MSc from DEEN DAYAL UPADHYAY GORAKHPUR UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
+        careerOutcome: 'MSc from Deen Dayal Upadhyaya Gorakhpur University is UGC DEB approved and valid for corporate hiring and government roles across India.',
       }
     },
     color: '#4f46e5',
@@ -8286,9 +8286,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   {
     id: 'guru-jambheshwar-university-online',
     logo: '/logos/university_logos/guru-jambeshwar-university-of-science-and-technology.webp',
-    name: 'GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY Online',
+    name: 'Guru Jambheshwar University of Science and Technology Online',
     abbr: 'GJUOS',
-    city: 'Rohtak',
+    city: 'Hisar',
     state: 'Haryana',
     region: 'North',
     nirf: 999,
@@ -8305,7 +8305,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Haryana university with online programs',
-    description: 'GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
+    description: 'Guru Jambheshwar University of Science and Technology offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Rohtak and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['B.Com', 'MA', 'M.Com', 'MBA'],
@@ -8318,7 +8318,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
-        careerOutcome: 'B.Com from GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY is valid for banking, finance and government roles.'},
+        careerOutcome: 'B.Com from Guru Jambheshwar University of Science and Technology is valid for banking, finance and government roles.'},
       'MA': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
         fees: '\u20b939K \u2013 \u20b997K',
@@ -8327,7 +8327,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from Guru Jambheshwar University of Science and Technology is ideal for civil services, research and education careers.',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -8337,7 +8337,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
-        careerOutcome: 'M.Com from GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY advances commerce careers in finance, tax and audit.',
+        careerOutcome: 'M.Com from Guru Jambheshwar University of Science and Technology advances commerce careers in finance, tax and audit.',
       },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations Management', 'Data Science', 'Digital Marketing', 'International Business'],
@@ -8347,7 +8347,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
-        careerOutcome: 'MBA from GURU JAMBHESHWAR UNIVERSITY OF SCIENCE AND TECHNOLOGY is UGC DEB approved and valid for corporate hiring and government roles across India.',
+        careerOutcome: 'MBA from Guru Jambheshwar University of Science and Technology is UGC DEB approved and valid for corporate hiring and government roles across India.',
       }
 
     },
@@ -8356,7 +8356,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'maharshi-dayanand-university-online',
-    name: 'MAHARSHI DAYANAND UNIVERSITY Online',
+    name: 'Maharshi Dayanand University Online',
     abbr: 'MDU',
     city: 'Rohtak',
     state: 'Haryana',
@@ -8374,7 +8374,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Haryana university with online programs',
-    description: 'MAHARSHI DAYANAND UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
+    description: 'Maharshi Dayanand University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Rohtak and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['BA', 'MA', 'M.Com'],
@@ -8397,7 +8397,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from MAHARSHI DAYANAND UNIVERSITY is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from Maharshi Dayanand University is ideal for civil services, research and education careers.',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -8407,7 +8407,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
-        careerOutcome: 'M.Com from MAHARSHI DAYANAND UNIVERSITY advances commerce careers in finance, tax and audit.',
+        careerOutcome: 'M.Com from Maharshi Dayanand University advances commerce careers in finance, tax and audit.',
       }
     },
     color: '#7c3aed',
@@ -8416,9 +8416,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'mahatma-jyotiba-phule-rohilkhand-university-online',
-    name: 'MAHATMA JYOTIBA PHULE ROHILKHAND UNIVERSITY Online',
+    name: 'Mahatma Jyotiba Phule Rohilkhand University Online',
     abbr: 'MJPRU',
-    city: 'Lucknow',
+    city: 'Bareilly',
     state: 'Uttar Pradesh',
     region: 'North',
     nirf: 999,
@@ -8434,7 +8434,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Uttar Pradesh university with online programs',
-    description: 'MAHATMA JYOTIBA PHULE ROHILKHAND UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
+    description: 'Mahatma Jyotiba Phule Rohilkhand University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Lucknow and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['BA', 'MA', 'M.Com'],
@@ -8457,7 +8457,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from MAHATMA JYOTIBA PHULE ROHILKHAND UNIVERSITY is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from Mahatma Jyotiba Phule Rohilkhand University is ideal for civil services, research and education careers.',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -8467,7 +8467,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
-        careerOutcome: 'M.Com from MAHATMA JYOTIBA PHULE ROHILKHAND UNIVERSITY advances commerce careers in finance, tax and audit.',
+        careerOutcome: 'M.Com from Mahatma Jyotiba Phule Rohilkhand University advances commerce careers in finance, tax and audit.',
       }
     },
     color: '#0284c7',
@@ -8476,7 +8476,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   {
     id: 'mats-university-online',
     logo: '/logos/university_logos/mats-university.webp',
-    name: 'MATS UNIVERSITY Online',
+    name: 'MATS University Online',
     abbr: 'MU',
     city: 'Raipur',
     state: 'Chhattisgarh',
@@ -8494,7 +8494,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Chhattisgarh university with online programs',
-    description: 'MATS UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
+    description: 'MATS University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Raipur and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['B.Com', 'BBA', 'BCA', 'MBA', 'MCA'],
@@ -8507,7 +8507,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
-        careerOutcome: 'B.Com from MATS UNIVERSITY is valid for banking, finance and government roles.',
+        careerOutcome: 'B.Com from MATS University is valid for banking, finance and government roles.',
       },
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
@@ -8517,7 +8517,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b98L per annum',
         topCompanies: ['HUL','Reliance','HDFC Bank','Amazon','Flipkart'],
         internshipType: 'Industry project',
-        careerOutcome: 'BBA from MATS UNIVERSITY provides a recognised management degree for entry-level corporate roles.',
+        careerOutcome: 'BBA from MATS University provides a recognised management degree for entry-level corporate roles.',
       },
       'BCA': {
         specs: ['Data Science','Web Development','Cloud Computing','Cybersecurity','AI & ML','Mobile Development'],
@@ -8527,7 +8527,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b910L per annum',
         topCompanies: ['TCS','Wipro','HCL','Infosys','Tech Mahindra'],
         internshipType: 'Project-based',
-        careerOutcome: 'BCA from MATS UNIVERSITY builds IT fundamentals for entry-level software careers.',
+        careerOutcome: 'BCA from MATS University builds IT fundamentals for entry-level software careers.',
       },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations Management', 'Data Science', 'Digital Marketing', 'International Business'],
@@ -8537,7 +8537,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
-        careerOutcome: 'MBA from MATS UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
+        careerOutcome: 'MBA from MATS University is UGC DEB approved and valid for corporate hiring and government roles across India.',
       },
       'MCA': {
         specs: ['General'],
@@ -8559,7 +8559,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'meenakshi-academy-higher-education-online',
-    name: 'MEENAKSHI ACADEMY OF HIGHER EDUCATION AND RESEARCH Online',
+    name: 'Meenakshi Academy of Higher Education and Research Online',
     abbr: 'MAOHE',
     city: 'Chennai',
     state: 'Tamil Nadu',
@@ -8577,7 +8577,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Tamil Nadu university with online programs',
-    description: 'MEENAKSHI ACADEMY OF HIGHER EDUCATION AND RESEARCH offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
+    description: 'Meenakshi Academy of Higher Education and Research offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Chennai and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['BA', 'B.Com', 'MA'],
@@ -8600,7 +8600,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
-        careerOutcome: 'B.Com from MEENAKSHI ACADEMY OF HIGHER EDUCATION AND RESEARCH is valid for banking, finance and government roles.',
+        careerOutcome: 'B.Com from Meenakshi Academy of Higher Education and Research is valid for banking, finance and government roles.',
       },
       'MA': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
@@ -8610,7 +8610,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from MEENAKSHI ACADEMY OF HIGHER EDUCATION AND RESEARCH is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from Meenakshi Academy of Higher Education and Research is ideal for civil services, research and education careers.',
       }
     },
     color: '#4f46e5',
@@ -8619,7 +8619,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   {
     id: 'mody-university-online',
     logo: '/logos/university_logos/mody-university.svg',
-    name: 'MODY UNIVERSITY OF SCIENCE AND TECHNOLOGY Online',
+    name: 'Mody University of Science and Technology Online',
     abbr: 'MUOSA',
     city: 'Jaipur',
     state: 'Rajasthan',
@@ -8637,7 +8637,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Rajasthan university with online programs',
-    description: 'MODY UNIVERSITY OF SCIENCE AND TECHNOLOGY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
+    description: 'Mody University of Science and Technology offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Jaipur and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['BA', 'B.Com', 'BCA', 'MA', 'M.Com', 'MBA', 'MCA'],
@@ -8660,7 +8660,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
         topCompanies: ['Deloitte','EY','HDFC Bank','ICICI Bank','CA firms'],
         internshipType: 'Commerce/Finance internship',
-        careerOutcome: 'B.Com from MODY UNIVERSITY OF SCIENCE AND TECHNOLOGY is valid for banking, finance and government roles.',
+        careerOutcome: 'B.Com from Mody University of Science and Technology is valid for banking, finance and government roles.',
       },
       'BCA': {
         specs: ['Data Science','Web Development','Cloud Computing','Cybersecurity','AI & ML','Mobile Development'],
@@ -8670,7 +8670,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b910L per annum',
         topCompanies: ['TCS','Wipro','HCL','Infosys','Tech Mahindra'],
         internshipType: 'Project-based',
-        careerOutcome: 'BCA from MODY UNIVERSITY OF SCIENCE AND TECHNOLOGY builds IT fundamentals for entry-level software careers.',
+        careerOutcome: 'BCA from Mody University of Science and Technology builds IT fundamentals for entry-level software careers.',
       },
       'MA': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
@@ -8680,7 +8680,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from MODY UNIVERSITY OF SCIENCE AND TECHNOLOGY is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from Mody University of Science and Technology is ideal for civil services, research and education careers.',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -8690,7 +8690,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
-        careerOutcome: 'M.Com from MODY UNIVERSITY OF SCIENCE AND TECHNOLOGY advances commerce careers in finance, tax and audit.',
+        careerOutcome: 'M.Com from Mody University of Science and Technology advances commerce careers in finance, tax and audit.',
       },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations Management', 'Data Science', 'Digital Marketing', 'International Business'],
@@ -8700,7 +8700,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
-        careerOutcome: 'MBA from MODY UNIVERSITY OF SCIENCE AND TECHNOLOGY is UGC DEB approved and valid for corporate hiring and government roles across India.',
+        careerOutcome: 'MBA from Mody University of Science and Technology is UGC DEB approved and valid for corporate hiring and government roles across India.',
       },
       'MCA': {
         specs: ['Artificial Intelligence and Machine Learning', 'Cloud Computing', 'Internet of Things (IoT)', 'Web Technology'],
@@ -8721,7 +8721,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   {
     id: 'sage-university-online',
     logo: '/logos/university_logos/sage-university-logo.webp',
-    name: 'SAGE UNIVERSITY Online',
+    name: 'SAGE University Online',
     abbr: 'SU',
     city: 'Bhopal',
     state: 'Madhya Pradesh',
@@ -8739,7 +8739,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Madhya Pradesh university with online programs',
-    description: 'SAGE UNIVERSITY offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
+    description: 'SAGE University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Bhopal and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['BBA', 'BCA', 'MA', 'M.Com', 'MBA'],
@@ -8752,7 +8752,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b98L per annum',
         topCompanies: ['HUL','Reliance','HDFC Bank','Amazon','Flipkart'],
         internshipType: 'Industry project',
-        careerOutcome: 'BBA from SAGE UNIVERSITY provides a recognised management degree for entry-level corporate roles.',
+        careerOutcome: 'BBA from SAGE University provides a recognised management degree for entry-level corporate roles.',
       },
       'BCA': {
         specs: ['Data Science','Web Development','Cloud Computing','Cybersecurity','AI & ML','Mobile Development'],
@@ -8762,7 +8762,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b92.5L \u2013 \u20b910L per annum',
         topCompanies: ['TCS','Wipro','HCL','Infosys','Tech Mahindra'],
         internshipType: 'Project-based',
-        careerOutcome: 'BCA from SAGE UNIVERSITY builds IT fundamentals for entry-level software careers.',
+        careerOutcome: 'BCA from SAGE University builds IT fundamentals for entry-level software careers.',
       },
       'MA': {
         specs: ['English','Political Science','Sociology','Psychology','Economics','History','Public Administration'],
@@ -8772,7 +8772,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b93L \u2013 \u20b99L per annum',
         topCompanies: ['Government Departments','NGOs','Think Tanks','Media Houses','Ed-tech firms'],
         internshipType: 'Research or media project',
-        careerOutcome: 'MA from SAGE UNIVERSITY is ideal for civil services, research and education careers.',
+        careerOutcome: 'MA from SAGE University is ideal for civil services, research and education careers.',
       },
       'M.Com': {
         specs: ['Finance','Accounting','Taxation','Business Studies','E-Commerce'],
@@ -8782,7 +8782,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b912L per annum',
         topCompanies: ['Deloitte','EY','KPMG','HDFC Bank','ICICI Bank'],
         internshipType: 'Finance firm internship',
-        careerOutcome: 'M.Com from SAGE UNIVERSITY advances commerce careers in finance, tax and audit.',
+        careerOutcome: 'M.Com from SAGE University advances commerce careers in finance, tax and audit.',
       },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations Management', 'Data Science', 'Digital Marketing', 'International Business'],
@@ -8792,7 +8792,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',
         topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
         internshipType: 'Virtual industry project',
-        careerOutcome: 'MBA from SAGE UNIVERSITY is UGC DEB approved and valid for corporate hiring and government roles across India.',
+        careerOutcome: 'MBA from SAGE University is UGC DEB approved and valid for corporate hiring and government roles across India.',
       }
 
     },

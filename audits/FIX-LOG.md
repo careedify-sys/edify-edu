@@ -1,5 +1,51 @@
 # Fix log
 
+## 2026-10-26 · 26 all-caps university names, 8 wrong cities, overview fee for a 404 MBA hub
+
+Keyword gap improve track, Bucket A part 3. Started as the "five duplicate-title
+groups" item from part 1. Re-probed on the dev server: every page in those groups
+(University of Mumbai /bba /bca /mba /mca, Madurai Kamaraj /bca /mba /mca,
+Hindustan /bba /bca, Jagannath /bba /bca /mca) returns 404. The duplicates were
+build files for routes the edge never serves, so there was nothing to fix. The
+live titles in each group are distinct.
+
+The probe found three real defects instead.
+
+**1. Overview title advertised an MBA fee for an MBA hub that 404s.** Part 1
+gated the overview fee on u.programs.includes('MBA'). University of Mumbai and
+Madurai Kamaraj list MBA but have no MBA programme details, so the hub 404s and
+getDisplayFee fell back to the record's feeMin/feeMax: ₹90K-₹2L (shared by 7
+records) and ₹75K-₹1.8L (shared by 11), placeholder ranges. The description also
+listed programmes whose hubs 404 (Mumbai: "MA, BBA, BCA" with only MA live).
+Fix: the overview metadata uses getResolvableProgrammes(u) for both the programme
+list and the MBA-fee gate. 8 descriptions change, none end up empty, and both
+placeholder fees are gone.
+
+**2. 26 records named in capitals** ("UNIVERSITY OF MUMBAI Online"), the August
+2026 UGC-DEB batch. The name rendered 95 times on Mumbai's page, including the H1
+and schema. Proper-cased with official styling (MATS University, SAGE University,
+Dayalbagh Educational Institute, Chhatrapati Shahu Ji Maharaj University, Deen
+Dayal Upadhyaya Gorakhpur University) in lib/data.ts, lib/data-slim.ts,
+data/fees-hub-data.json and the MATS MCA content JSON. Nothing matches records by
+name; the verify slug map is precomputed.
+
+**3. Eight wrong cities, which feed schema addressLocality.** University of Mumbai
+Pune -> Mumbai, Madurai Kamaraj Chennai -> Madurai, Shivaji Pune -> Kolhapur,
+University of Kerala Kochi -> Thiruvananthapuram, Guru Jambheshwar Rohtak ->
+Hisar, CSJM Lucknow -> Kanpur, MJP Rohilkhand Lucknow -> Bareilly, Dayalbagh
+Lucknow -> Agra. Fixed in lib/data.ts and the slim mirror.
+
+**Caught and reverted:** I first moved iiit-bangalore-online to Bengaluru because
+of its id. The UGC-DEB list (audits/ugc-deb-2026-08/university-status.csv) puts
+"INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY" in Telangana, and IIIT
+Hyderabad and IIIT Bangalore share that official name. The record is IIIT
+Hyderabad and only its slug is wrong. City stays Hyderabad; the name now says
+Hyderabad, matching its existing TITLE_NAME.
+
+**Open, for Rishi:** the iiit-bangalore-online slug names the wrong institute
+(renaming needs a redirect). The same record says NAAC A++ in the naac field and
+"NAAC A accredited" in its description; an accreditation claim, so left alone.
+
 ## 2026-10-26 · MBA hub intros rewritten as direct answers (Amity, LPU, NMIMS, Chandigarh, Symbiosis)
 
 Keyword gap improve track, Bucket A part 2. These hubs rank 38-61 for "X online
