@@ -1,5 +1,54 @@
 # Fix log
 
+## 2026-10-27 · Bucket C complete: online B.Tech, B.Ed and PGDM explainers; MBA vs PGDM post corrected
+
+Rishi approved aicte-india.org and ncte.gov.in as sources for these three posts (memory: feedback_regulator_sources).
+aicte-india.org resets connections from this machine; the Approval Process Handbook 2024-27 was read from the
+government-hosted copy (cdnbbsr.s3waas.gov.in) and the working-professional provision from PIB, 6 Dec 2023.
+
+- /blog/online-btech-mtech-india: UGC notice para 6(i); UGC Regs 2020 Reg 4(C)(ii) proviso bars lab-based
+  programmes online except programming and coding, which is why MCA/BCA run online; AICTE APH cl. 5.1(b).
+- /blog/online-bed-course-india: NCTE Regs 2014 Appendix 10 (read from the scanned gazette pages). The ODL B.Ed
+  is for trained in-service elementary teachers or face-to-face TE graduates only, with six months of contact
+  programme and three months of teaching practice. No NCTE norm for an online B.Ed.
+- /blog/online-pgdm-india: the one "yes" in the series. APH Chapter V lets standalone institutes offer PG
+  diplomas in management online with AICTE approval, if NBA 700/1000 or NIRF top-200 institution.
+
+Corrected mba-vs-pgdm-online-india-2026: its "Can You Do PGDM Online?" section said "effectively no" and
+called the regulatory standing "ambiguous at best". AICTE rules say otherwise; rewritten and linked.
+
+## 2026-10-27 · Bucket C: online LLB/LLM explainer; fabricated online-LLM list removed from the LLM guide
+
+New post /blog/online-llb-llm-india ("online llb course" 2,400/month). UGC notice F.No. 1-34/2024 (DEB-I)
+para 6(ix) prohibits Law "including their allied domains" in ODL and online mode, which covers the LLM.
+Checked the August 2026 DEB list: no Bachelor or Master of Laws entry; NMIMS is listed for BBA, B.Com, MBA
+and MBA (WX) only.
+
+llm-course-duration-fees-scope-india-2026 (1,306 impressions) had a section titled "LLM Online Programmes
+UGC-DEB Approved India 2026" listing NMIMS Global Online LLM ("UGC-DEB approved", Rs 2.10 lakh), JAIN Online
+LLM (Rs 1.50 lakh), IGNOU Master of Laws (Rs 30,000) and a Symbiosis distance LLM (Rs 1.60 lakh). None can
+exist under the prohibition; they read as fabricated. Removed, with a visible correction note in the post,
+plus the fee-table row, the modes section, a Honest Gaps bullet and an FAQ line that assumed distance LLMs.
+
+Not fixed in that post (out of scope, flag for review): salary bands, named employers and fee ranges are
+unsourced throughout; same template family as the PhD full-form post.
+
+## 2026-10-27 · Bucket C: online PhD validity explainer; PhD full-form post corrected
+
+New post /blog/online-phd-in-india (online phd cluster, ~1,000-1,300/month per keyword). Sourced from the
+gazetted texts, not summaries: UGC PhD Regulations 2022 (Gazette 7 Nov 2022) Reg 4, 9(1), 13, 14; UGC
+public notice F.No. 1-34/2024 (DEB-I) para 6; UGC Equivalence Regulations 2025 (Gazette 4 Apr 2025).
+
+Finding worth keeping: web summaries say foreign online degrees cannot get UGC equivalence. That was the
+2023 draft. The final 2025 text has no online exclusion; a Standing Committee assesses each case on credits,
+contact hours, thesis evaluation and hands-on components, and franchised qualifications are excluded
+(Reg 3(4)). The post says "not automatically equivalent", not "banned".
+
+Corrected phd-full-form-doctorate-meaning-india (50,657 impressions): it credited the ban to "UGC's 2020
+guidelines", claimed without source that "several IITs" run part-time PhDs, and said foreign DBAs are
+"not recognized by UGC but recognized by international employers". Replaced with the regulation-cited
+version and a link to the new post.
+
 ## 2026-10-26 · Item 10: online degree scholarships post
 
 New post /blog/online-degree-scholarships-india (keyword gap item 10, "online degree scholarships" 590/month).
