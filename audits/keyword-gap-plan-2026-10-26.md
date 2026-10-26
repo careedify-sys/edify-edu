@@ -168,4 +168,5 @@ eligibility follows the regulator. Feeds item 8 and the "one year online mba" ro
 - 2026-10-26 · Bucket A part 1 · merged ee50ab9 · NIRF category on every templated rank (gate added), brand-led overview titles with labelled MBA fee for all 143 /universities/{id}, MBA override fixes (NMIMS NAAC A++ and Narsee Monjee, Chandigarh Mgmt #32, fee-led LPU/NMIMS/DY Patil/MAHE titles). Details: audits/FIX-LOG.md 2026-10-26. Measure in GSC from ~2026-11-23 (28 days after deploy), Pages.csv, control = untouched hubs.
 - Bucket A part 2 DONE 2026-10-26: answer-first intros on Amity, LPU, NMIMS, Chandigarh, Symbiosis MBA hubs (unbacked claims removed, see FIX-LOG).
 - Bucket A part 3 DONE 2026-10-26: duplicate titles were 404 build artifacts (no fix); fixed overview MBA fee on 404 hubs, 26 caps names, 8 cities, "Based in Pune". Open: iiit-bangalore-online slug is IIIT Hyderabad; its NAAC A++ vs "NAAC A" conflict.
-- Bucket A next: "Online Online" in some spec descriptions; University of Mumbai "Based in Pune".
+- Bucket A part 4 DONE 2026-10-26: "Online Online" removed from 14 template lines (descriptions, schema).
+- Bucket A next: University of Mumbai "Based in Pune".

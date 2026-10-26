@@ -10,6 +10,7 @@ import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
 import { getDisplayFee } from '@/lib/fees'
 import { pageKeywords } from '@/lib/page-keywords'
 import { shouldIndexUniversity, onlinePrefix } from '@/lib/seo/mode-unverified'
+import { formatUniversityDisplayName } from '@/lib/format'
 
 // The phrase people type for a university's online arm, where it differs from
 // the short title name. Amity's short name is "Amity", but the searches are
@@ -114,7 +115,7 @@ export async function generateMetadata(
       url: `https://edifyedu.in/universities/${u.id}`,
       type: 'website',
       siteName: 'edifyedu.in',
-      images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: `${u.name} ${onlinePrefix(u.id)}Programs` }],
+      images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: `${formatUniversityDisplayName(u.name)} ${onlinePrefix(u.id)}Programs` }],
     },
     twitter: {
       card: 'summary_large_image',
@@ -181,7 +182,7 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
         },
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
-          name: `${u.name} ${onlinePrefix(u.id)}Programs`,
+          name: `${formatUniversityDisplayName(u.name)} ${onlinePrefix(u.id)}Programs`,
           itemListElement: u.programs.map((prog, i) => ({
             '@type': 'Offer',
             category: 'Online Education',
@@ -189,7 +190,7 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
             itemOffered: {
               '@type': 'Service',
               name: `${onlinePrefix(u.id)}${prog}`,
-              description: `${u.name} ${onlinePrefix(u.id)}${prog} program`,
+              description: `${formatUniversityDisplayName(u.name)} ${onlinePrefix(u.id)}${prog} program`,
               provider: { '@type': 'CollegeOrUniversity', name: u.name },
             },
           })),

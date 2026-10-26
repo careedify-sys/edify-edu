@@ -1,5 +1,14 @@
 # Fix log
 
+## 2026-10-26 · "Online Online" in descriptions and schema names
+
+u.name already ends in " Online", and 14 visible template lines appended Online again: the BBA, BCA and MCA spec
+meta descriptions ("KL University Online Online BBA in Finance"), the BBA/BCA/MCA hub Course schema names, the
+overview ItemList and Course schema, the [program] hub schema and OG alt, and the /programs card schema.
+All now use formatUniversityDisplayName(u.name). Verified on the dev server: 0 occurrences on the KL BBA spec,
+Amity BCA spec, MCA, MA pages. The only remaining doubles are in meta keywords arrays, which Google ignores
+and nobody sees; left as is.
+
 ## 2026-10-26 · 26 all-caps university names, 8 wrong cities, overview fee for a 404 MBA hub
 
 Keyword gap improve track, Bucket A part 3. Started as the "five duplicate-title

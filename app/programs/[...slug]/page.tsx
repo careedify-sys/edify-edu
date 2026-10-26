@@ -21,6 +21,7 @@ import ProgramPageClient from '@/components/ProgramPageClient'
 import MBAHubClient from '@/components/MBAHubClient'
 import MBASpecHubClient from '@/components/MBASpecHubClient'
 import ProgramHubClient from '@/components/ProgramHubClient'
+import { formatUniversityDisplayName } from '@/lib/format'
 
 const SEMESTER_TO_TOTAL_IDS = new Set<string>([])
 
@@ -657,7 +658,7 @@ export default async function CatchAllProgramPage(
               '@type': 'ListItem',
               position: i + 1,
               url: `https://edifyedu.in/universities/${u.id}/mba`,
-              name: `${u.name} Online MBA`,
+              name: `${formatUniversityDisplayName(u.name)} Online MBA`,
             })),
         }) }} />
         <div className="bg-white border-b border-border">
@@ -688,7 +689,7 @@ export default async function CatchAllProgramPage(
         '@type': 'ListItem',
         position: i + 1,
         url: `https://edifyedu.in/universities/${u.id}/${programSlug}`,
-        name: `${u.name} Online ${program}`,
+        name: `${formatUniversityDisplayName(u.name)} Online ${program}`,
       })),
     }
     return (
