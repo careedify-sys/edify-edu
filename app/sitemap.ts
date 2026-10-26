@@ -215,7 +215,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .filter(post => !BLOG_REDIRECT_SLUGS.has(post.slug))
     .map(post => ({
       url: `${BASE}/blog/${post.slug}`,
-      lastModified: new Date(post.publishedAt),
+      lastModified: new Date(post.updatedAt || post.publishedAt),
       changeFrequency: 'monthly' as const,
       priority: 0.85,
     }))

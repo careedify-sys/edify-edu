@@ -10121,6 +10121,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-after-bsc-is-it-good-2026',
+    updatedAt: '2026-10-26',
     title: 'MBA After BSc 2026: Is It Good? Salary and Career Guide',
     seoTitle: 'MBA After BSc India 2026: Spec by Stream, Salary Curve, MBA vs MSc | Edify',
     metaDescription: 'MBA after BSc India 2026: BSc CS to Data Science Rs 10-18L, BSc Maths to Analytics, BSc Bio to Healthcare Mgmt. Real salary curve, MBA vs MSc decision.',
@@ -10327,7 +10328,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>BSc Agriculture to MBA Agribusiness:</strong> 2x to 4x salary lift. Strong at ITC Foods, Mahindra Agri, agritech startups.</li>
 </ul>
 
-<h2>BSc to MBA Application Checklist July 2026 Intake</h2>
+<h2>BSc to MBA Application Checklist January 2027 Intake</h2>
 
 <ol>
   <li><strong>Verify BSc 50 percent eligibility:</strong> Most top online MBA programmes require 50 percent aggregate (45 percent for reserved categories). Get your degree certificate plus marksheets ready.</li>
@@ -11893,6 +11894,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'online-mba-lpu-review-2026',
+    updatedAt: '2026-10-26',
     title: 'LPU Online MBA Fees 2026: Lovely Professional University Review and Honest Take',
     seoTitle: 'LPU Online MBA 2026: Rs 1.46L, NAAC A++, Dual Specs',
     metaDescription: 'Lovely Professional University (LPU) online MBA fees ₹1,46,240 lumpsum or ₹40,400/semester. 12 specializations, NAAC A++, NIRF Management #44.',
@@ -12307,7 +12309,7 @@ export const BLOG_POSTS: BlogPost[] = [
   </tbody>
 </table>
 
-<p>No entrance exam required. Admissions are merit-based (graduation marks). Two sessions per year: January and July. The July session application window typically opens in May–June.</p>
+<p>No entrance exam required. Admissions are merit-based (graduation marks). Two sessions per year: January and July. Admissions for the January 2027 session are open now and close by March 2027 at most universities.</p>
 
 <h2>Who Should Consider LPU Online MBA</h2>
 
@@ -12348,6 +12350,7 @@ export const BLOG_POSTS: BlogPost[] = [
   // ── DISTANCE MBA KOLKATA ───────────────────────────────────────────────────
   {
     slug: 'distance-mba-kolkata-top-programs-2026',
+    updatedAt: '2026-10-26',
     title: 'Best Distance MBA in Kolkata 2026: Top Programs, Fees and Tips',
     seoTitle: 'Best Distance MBA in Kolkata: Top Programs and Tips',
     metaDescription: 'Distance MBA in Kolkata 2026: top UGC-approved programs, fees, colleges, and how to choose the right option for your career.',
@@ -12494,13 +12497,14 @@ export const BLOG_POSTS: BlogPost[] = [
   </tbody>
 </table>
 
-<h2>Kolkata Specific Application Timeline 2026</h2>
+<h2>Kolkata Specific Application Timeline: January 2027 Intake</h2>
 
 <ol>
-  <li><strong>March to April 2026:</strong> Shortlist 3-5 programmes (NSOU, IGNOU, Amity, JAIN, NMIMS). Attend webinars.</li>
-  <li><strong>May to June 2026:</strong> NSOU plus IGNOU applications. Private online MBA applications.</li>
-  <li><strong>July 2026:</strong> NSOU plus IGNOU intake. Private programmes also start.</li>
-  <li><strong>August onwards:</strong> Begin parallel certification stacking. Active LinkedIn engagement.</li>
+  <li><strong>October to November 2026:</strong> Shortlist 3-5 programmes (IGNOU, Amity, JAIN, NMIMS). Attend webinars.</li>
+  <li><strong>December 2026 to February 2027:</strong> IGNOU January session plus private online MBA applications.</li>
+  <li><strong>March 2027:</strong> Most January 2027 admission windows close. Confirm the last date on each official portal.</li>
+  <li><strong>NSOU applicants:</strong> NSOU admits once a year, so plan for its next July window instead.</li>
+  <li><strong>After semester 1 starts:</strong> Begin parallel certification stacking. Active LinkedIn engagement.</li>
 </ol>
 
 <h2>Kolkata Distance MBA FAQ 2026</h2>
@@ -12527,7 +12531,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>5-Year Career Plan for Kolkata Working Professional 2026</h2>
 
 <ol>
-  <li><strong>Year 1:</strong> Decide between NSOU plus IGNOU (budget) vs NMIMS plus JAIN plus Amity (brand). Apply by July intake.</li>
+  <li><strong>Year 1:</strong> Decide between NSOU plus IGNOU (budget) vs NMIMS plus JAIN plus Amity (brand). Apply for the January 2027 intake before admissions close in March 2027.</li>
   <li><strong>Year 2:</strong> Complete MBA semester 1-2. Begin parallel certification (CFA Level 1, Tableau, AWS).</li>
   <li><strong>Year 3 (MBA completion):</strong> Active LinkedIn engagement. Apply for lateral entries.</li>
   <li><strong>Year 4:</strong> First management role. Pay Rs 8 to 14 LPA. Add senior certifications.</li>
@@ -12579,6 +12583,7 @@ export const BLOG_POSTS: BlogPost[] = [
   // ── ONLINE MBA PUNE ────────────────────────────────────────────────────────
   {
     slug: 'online-mba-pune-university-2026',
+    updatedAt: '2026-10-26',
     title: 'Online MBA Pune 2026: SPPU, Symbiosis and Top Programs',
     seoTitle: 'Online MBA Pune University 2026: SPPU vs SCDL, Fees, Admission',
     metaDescription: 'Online MBA Pune university 2026: UGC-approved programs, fees, Symbiosis SSODL, Parul, and top options for Pune-based professionals.',
@@ -12683,14 +12688,14 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>JAIN Online MBA graduates in Pune:</strong> Rs 5-10 LPA Year 1 (lateral from Bengaluru tech ecosystem). Rs 12-22 LPA Year 5.</li>
 </ul>
 
-<h2>Pune Online MBA Application Timeline 2026</h2>
+<h2>Pune Online MBA Application Timeline: January 2027 Intake</h2>
 
 <ol>
-  <li><strong>March to April 2026:</strong> Shortlist 3-5 programmes. SPPU SODL entrance exam preparation.</li>
-  <li><strong>May 2026:</strong> Application submission. SPPU entrance test attempt.</li>
-  <li><strong>June 2026:</strong> Admission interview for Symbiosis plus NMIMS. Confirm enrolment.</li>
-  <li><strong>July 2026:</strong> First instalment payment. Programme launch.</li>
-  <li><strong>August onwards:</strong> Begin certification stacking (CFA, FRM, Tableau, AWS).</li>
+  <li><strong>October to November 2026:</strong> Shortlist 3-5 programmes. Check whether SPPU SODL runs an entrance test for your session.</li>
+  <li><strong>December 2026:</strong> Application submission. Upload marksheets and ID.</li>
+  <li><strong>January to February 2027:</strong> Admission interview for Symbiosis plus NMIMS where required. Confirm enrolment and pay the first instalment.</li>
+  <li><strong>March 2027:</strong> Most January 2027 admission windows close. Programme launch follows.</li>
+  <li><strong>After semester 1 starts:</strong> Begin certification stacking (CFA, FRM, Tableau, AWS).</li>
 </ol>
 
 <h2>Pune Online MBA Honest Gaps 2026</h2>
@@ -12827,6 +12832,7 @@ export const BLOG_POSTS: BlogPost[] = [
   // ── DISTANCE MBA KERALA ───────────────────────────────────────────────────
   {
     slug: 'distance-mba-kerala-programs-2026',
+    updatedAt: '2026-10-26',
     title: 'Distance MBA Kerala 2026: Top Colleges and Fees',
     seoTitle: 'Distance MBA in Kerala 2026, Top Programs, Fees & Admission Guide',
     metaDescription: 'Distance MBA in Kerala 2026, UGC-approved programs, fees, top colleges, and how Kerala professionals can earn a recognised degree.',
@@ -12991,14 +12997,14 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Kerala IT sector recognises national brand more:</strong> Infosys plus UST plus TCS Trivandrum prefer NMIMS plus JAIN plus Amrita over state distance MBAs.</li>
 </ul>
 
-<h2>Kerala Distance MBA Application Timeline 2026</h2>
+<h2>Kerala Distance MBA Application Timeline: January 2027 Intake</h2>
 
 <ol>
-  <li><strong>May-June 2026:</strong> Kerala state university SDE applications open. IGNOU plus Amrita plus NMIMS applications.</li>
-  <li><strong>July 2026:</strong> Kerala SDE intake begins. National online MBA programmes also start.</li>
-  <li><strong>August onwards:</strong> Begin parallel certification stacking (CFA, FRM, Tableau, AWS).</li>
-  <li><strong>July 2027 (Year 2):</strong> Complete first year. Begin internal promotion application or lateral entry preparation.</li>
-  <li><strong>July 2028 (Year 2 completion):</strong> Degree completion. Active job search plus career upgrade.</li>
+  <li><strong>October 2026 to March 2027:</strong> IGNOU plus Amrita plus NMIMS January 2027 applications are open. Most windows close in March 2027.</li>
+  <li><strong>Kerala state university SDEs:</strong> Each follows its own admission calendar. Check the next window on the university portal before you plan around it.</li>
+  <li><strong>After semester 1 starts:</strong> Begin parallel certification stacking (CFA, FRM, Tableau, AWS).</li>
+  <li><strong>Early 2028 (end of Year 1):</strong> Complete first year. Begin internal promotion application or lateral entry preparation.</li>
+  <li><strong>Early 2029 (Year 2 completion):</strong> Degree completion. Active job search plus career upgrade.</li>
 </ol>
 
 <h2>Kerala Distance MBA FAQ 2026</h2>
@@ -13026,6 +13032,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'is-online-degree-valid-india-2026',
+    updatedAt: '2026-10-26',
     title: 'Is Online Degree Valid in India 2026? UGC Says Yes',
     seoTitle: 'Is Online Degree Valid in India 2026? UGC Recognition Explained',
     metaDescription: 'Is online degree valid in India 2026? UGC-DEB approved degrees, government job eligibility, PSU rules, and what the law actually says.',
@@ -13162,7 +13169,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Current Offers and Discounts (2026)</h2>
 
-<p>Several UGC-DEB approved universities are running early-bird discounts for their July 2026 intake. Amity Online is offering scholarship waivers for applicants with 60 percent plus in graduation. NMIMS and Manipal Online have referral discounts available this semester. If you are planning to enroll, applying before the June deadline can save you anywhere from 10 to 25 percent on total fees. Do not wait until the last minute.</p>
+<p>Admissions for the January 2027 intake are open now and close by March 2027 at most UGC-DEB approved universities. Some universities run early-application scholarships or merit waivers, but the terms change every cycle. Ask the university for the current offer in writing before you pay, and apply early so a closing deadline does not force your choice.</p>
 
 <h2>Top UGC-DEB Approved Universities 2026 (Detailed List)</h2>
 
@@ -13270,6 +13277,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-after-engineering-india-2026',
+    updatedAt: '2026-10-26',
     title: 'MBA After Engineering India 2026: Worth It? Best Specs',
     seoTitle: 'MBA After Engineering India 2026: Worth It? Best Specialisations',
     metaDescription: 'MBA after engineering in India 2026: is it worth it, best specialisations for engineers, salary jump, and top colleges to consider.',
@@ -13376,7 +13384,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Several universities offer strong online MBA programs that work well for engineers. NMIMS has a dedicated technology management track. Amity Online has strong alumni networks in IT and consulting. Manipal Online has consistently good placement assistance for working professionals.</p>
 
-<p>For 2026, early applications (before May) get access to scholarship discounts of 10 to 20 percent at most of these universities. If you are planning to join the July batch, applying now will save you a significant amount on tuition.</p>
+<p>Admissions for the January 2027 batch are open now and close by March 2027 at most of these universities. Some offer early-application scholarships, but the terms change every cycle, so confirm the current offer with the university before you pay.</p>
 
 <h2>B.Tech Branch to MBA Specialisation Best-Fit Matrix 2026</h2>
 
@@ -13491,6 +13499,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-finance-career-salary-scope-2026',
+    updatedAt: '2026-10-26',
     title: 'MBA Finance Career 2026: Salary and Scope in India',
     seoTitle: 'MBA Finance Career, Salary & Scope India 2026 | Edify',
     metaDescription: 'MBA Finance career India 2026: salary Rs 6L to Rs 22L, top jobs in investment banking, NBFC and fintech. Best universities for the Finance specialisation compared.',
@@ -13594,7 +13603,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>NMIMS is considered the gold standard for online MBA Finance in India, strong alumni network in banking and finance, rigorous curriculum, and decent placement assistance. Amity Online Finance is widely accepted and has a well-structured program. Manipal Online has strong industry connections in South India.</p>
 
-<p>For 2026, NMIMS and Amity are both running early-enrolment offers for the July intake. Applicants who secure admission before May can access scholarship waivers that reduce fees by 10-15%. If you have been planning to enrol, this is a good time to apply and lock in those savings.</p>
+<p>Admissions for the January 2027 intake are open now and close by March 2027 at most universities. If NMIMS or Amity is on your shortlist, ask about any early-enrolment scholarship for this cycle. Terms change every intake, so get the current offer confirmed before you pay.</p>
 
 <h2>MBA Finance vs CA vs CFA: Which Should You Do?</h2>
 
@@ -13702,14 +13711,14 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Year 6 plus:</strong> AVP plus VP track. Pay Rs 25 to 50 LPA. Build cross-functional leadership plus P&L responsibility.</li>
 </ol>
 
-<h2>MBA Finance Application Timeline July 2026 Intake</h2>
+<h2>MBA Finance Application Timeline January 2027 Intake</h2>
 
 <ol>
-  <li><strong>March to April 2026:</strong> Shortlist 3 to 5 online MBA Finance programmes. NMAT registration for NMIMS.</li>
-  <li><strong>May 2026:</strong> Submit applications. CAT registration for tier-1 IIM plus ISB attempts.</li>
-  <li><strong>June 2026:</strong> NMAT exam. Admission interviews. Confirm enrolment.</li>
-  <li><strong>July 2026:</strong> First instalment plus programme commencement.</li>
-  <li><strong>August onwards:</strong> Begin CFA Level 1 prep in parallel. Build LinkedIn finance content cadence.</li>
+  <li><strong>October to November 2026:</strong> Shortlist 3 to 5 online MBA Finance programmes. Check whether any of them needs an entrance test.</li>
+  <li><strong>December 2026:</strong> Submit applications with marksheets, ID and employer letter.</li>
+  <li><strong>January to February 2027:</strong> Admission interviews where required. Confirm enrolment and pay the first instalment.</li>
+  <li><strong>March 2027:</strong> Most January 2027 admission windows close. Programme commencement follows.</li>
+  <li><strong>After semester 1 starts:</strong> Begin CFA Level 1 prep in parallel. Build LinkedIn finance content cadence.</li>
 </ol>
 
 <h2>MBA Finance FAQ 2026</h2>
@@ -13741,6 +13750,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-hr-career-salary-scope-2026',
+    updatedAt: '2026-10-26',
     title: 'MBA HR Career 2026: Salary and Scope in India',
     seoTitle: 'MBA HR Career, Salary & Scope India 2026 | Human Resource Management',
     metaDescription: 'MBA HR career salary and scope 2026, roles, average packages, top companies hiring MBA HR graduates, and how to choose the right college.',
@@ -13902,7 +13912,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Several strong universities offer online MBA in Human Resource Management. Amity Online has one of the most recognized HR specialisations with a good alumni network in corporate HR. Chandigarh University and Manipal Online also have well-structured HR programs with placement assistance. For a deeper look at top universities and programme specifics, <a href="/blog/mba-hr-management-online-india-2026" class="ilink">read the full MBA HR management guide</a> covering online options, fees, and career outcomes.</p>
 
-<p>For the July 2026 intake, some universities are offering early-bird scholarship discounts specifically for HR and marketing specialisations. If you are ready to apply, check with Amity and Chandigarh University before June. The discount windows typically close before the last application deadline.</p>
+<p>Admissions for the January 2027 intake are open now and close by March 2027 at most universities. If you want an early-bird scholarship, ask Amity and Chandigarh University about current terms early. Discount windows usually close before the last application date.</p>
 
 <h2>HR Analytics Skills That Compound MBA HR Salary</h2>
 
@@ -13937,14 +13947,14 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Year 5-plus:</strong> HR Manager, People Analytics Lead, or Talent Director. Pay Rs 22 to 35 LPA. Drive function-wide strategy.</li>
 </ol>
 
-<h2>MBA HR Application Timeline July 2026 Intake</h2>
+<h2>MBA HR Application Timeline January 2027 Intake</h2>
 
 <ol>
-  <li><strong>March to April 2026:</strong> Shortlist 3 to 5 online MBA HR programmes. Attend webinars, request live curriculum decks.</li>
-  <li><strong>May 2026:</strong> Submit application with statement of purpose, academic transcripts, employer letter. Block first instalment funds.</li>
-  <li><strong>June 2026:</strong> Complete admission interview (if required). Confirm enrolment plus first payment.</li>
-  <li><strong>July 2026:</strong> Programme launch. Set up structured 8 to 10 hour weekly study cadence from day 1.</li>
-  <li><strong>August onwards:</strong> Start parallel SHRM-CP certification preparation. Build LinkedIn HR content cadence (weekly post).</li>
+  <li><strong>October to November 2026:</strong> Shortlist 3 to 5 online MBA HR programmes. Attend webinars, request live curriculum decks.</li>
+  <li><strong>December 2026:</strong> Submit application with statement of purpose, academic transcripts, employer letter. Block first instalment funds.</li>
+  <li><strong>January to February 2027:</strong> Complete admission interview (if required). Confirm enrolment plus first payment.</li>
+  <li><strong>March 2027:</strong> Most admission windows close. Programme launch follows. Set up a structured 8 to 10 hour weekly study cadence from day 1.</li>
+  <li><strong>After semester 1 starts:</strong> Start parallel SHRM-CP certification preparation. Build LinkedIn HR content cadence (weekly post).</li>
 </ol>
 
 <h2>MBA HR FAQ 2026</h2>
@@ -14246,6 +14256,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'distance-mba-bangalore-2026',
+    updatedAt: '2026-10-26',
     title: 'Distance MBA Bangalore 2026: Top Colleges and Fees',
     seoTitle: 'Distance MBA Bangalore 2026: Tech Park Picker, JAIN vs Christ vs Manipal | Edify',
     metaDescription: 'Distance MBA Bangalore 2026: Whitefield vs Koramangala vs ORR job market map, JAIN A++ vs Christ vs Manipal vs Dayananda Sagar comparison.',
@@ -14401,11 +14412,11 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Most online MBA programmes now use AI-proctored online exams, so you may never visit a centre.</p>
 
-<h2>Application Process and 2026 Discounts</h2>
+<h2>Application Process and January 2027 Discounts</h2>
 
 <ol>
-  <li>Verify UGC-DEB approval at deb.ugc.ac.in for July 2026 intake.</li>
-  <li>Apply 8 to 10 weeks before intake start (April to May 2026) for early-bird waivers.</li>
+  <li>Verify UGC-DEB approval at deb.ugc.ac.in for the January 2027 intake.</li>
+  <li>Apply early in the October 2026 to March 2027 window for any early-bird waivers.</li>
   <li>Submit application online with graduation marksheets, ID, photographs, work experience certificate.</li>
   <li>Pay application fee (Rs 500 to Rs 2,000).</li>
   <li>Wait for verification (5 to 10 working days at JAIN, NMIMS, Amity).</li>
@@ -14413,7 +14424,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li>Receive LMS credentials and orientation invitation.</li>
 </ol>
 
-<p>2026 early-bird waivers available at: JAIN Online (Bengaluru resident discount), Amity Online (early application 10-15 percent off), Chandigarh University Online (tier-based scholarship up to Rs 30K).</p>
+<p>Early-bird terms change every intake. Ask JAIN Online, Amity Online and Chandigarh University Online for their current January 2027 scholarship terms in writing before you pay.</p>
 
 <h2>5-Question Filter for Bengaluru IT Professionals</h2>
 
@@ -14441,7 +14452,7 @@ export const BLOG_POSTS: BlogPost[] = [
   </tbody>
 </table>
 
-<h2>Specific Bengaluru Application Tips for July 2026 Intake</h2>
+<h2>Specific Bengaluru Application Tips for January 2027 Intake</h2>
 
 <ol>
   <li><strong>Visit JAIN campus in Jayanagar in person:</strong> Direct counselling produces faster admission than online forms alone. Bring graduation marksheets and ID.</li>
@@ -14514,6 +14525,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'online-mba-delhi-ncr-2026',
+    updatedAt: '2026-10-26',
     title: 'Online MBA Delhi NCR 2026: The Sub-Region Job Market Picker',
     seoTitle: 'Online MBA Delhi NCR 2026: Noida vs Delhi vs Gurgaon Picker | Edify',
     metaDescription: 'Online MBA Delhi NCR 2026: Noida vs Delhi vs Gurgaon vs Faridabad job market mapping, NAAC A+ options under Rs 2 lakh, Jamia Hamdard pick decoded.',
@@ -14688,18 +14700,18 @@ export const BLOG_POSTS: BlogPost[] = [
   <li>What is your work shift? Weekend live classes or weekday evening?</li>
 </ol>
 
-<h2>NCR-Specific Application Timeline for July 2026</h2>
+<h2>NCR-Specific Application Timeline for January 2027</h2>
 
 <table>
-  <caption>Delhi NCR online MBA application timeline July 2026 intake</caption>
-  <thead><tr><th>Months before intake</th><th>Action for NCR applicants</th></tr></thead>
+  <caption>Delhi NCR online MBA application timeline January 2027 intake</caption>
+  <thead><tr><th>When</th><th>Action for NCR applicants</th></tr></thead>
   <tbody>
-    <tr><td>5 to 6 months out (Jan to Feb 2026)</td><td>Shortlist 3 universities, attend campus open day at Amity Noida or Jamia Hamdard if local</td></tr>
-    <tr><td>4 months out (Mar 2026)</td><td>Submit application with early-bird benefit. Notarise documents at Tehsildar (Tehsil offices in NCR have 1-2 week wait)</td></tr>
-    <tr><td>3 months out (Apr 2026)</td><td>Document verification, in-person counselling at university campus if applicable</td></tr>
-    <tr><td>2 months out (May 2026)</td><td>Pay first semester fee, use no-cost EMI option for working professionals</td></tr>
-    <tr><td>1 month out (Jun 2026)</td><td>Receive LMS credentials, attend online orientation</td></tr>
-    <tr><td>July 2026</td><td>Programme begins, live classes start</td></tr>
+    <tr><td>October to November 2026</td><td>Shortlist 3 universities, attend campus open day at Amity Noida or Jamia Hamdard if local</td></tr>
+    <tr><td>November to December 2026</td><td>Submit application early. Notarise documents at Tehsildar (Tehsil offices in NCR have 1-2 week wait)</td></tr>
+    <tr><td>December 2026 to January 2027</td><td>Document verification, in-person counselling at university campus if applicable</td></tr>
+    <tr><td>January to February 2027</td><td>Pay first semester fee, use no-cost EMI option for working professionals</td></tr>
+    <tr><td>March 2027</td><td>Most admission windows close. Receive LMS credentials, attend online orientation</td></tr>
+    <tr><td>Semester 1 start</td><td>Programme begins, live classes start. Confirm the exact date on the official portal</td></tr>
   </tbody>
 </table>
 
@@ -14778,6 +14790,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-data-science-analytics-career-2026',
+    updatedAt: '2026-10-26',
     title: 'MBA Data Science and Analytics Career and Salary India 2026',
     seoTitle: 'MBA Data Science & Analytics Career, Salary India 2026 | Edify',
     metaDescription: 'MBA Data Science and Analytics career India 2026: top jobs, salary data, which companies hire, best universities and MBA vs M.Sc comparison.',
@@ -14877,7 +14890,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>NMIMS Online has one of the most rigorous MBA Data Science programs, strong on both the technical and business sides. Amity Online offers a solid program with good placement assistance. Manipal Online has industry projects integrated into the curriculum. For a complete programme-by-programme breakdown, visit the <a href="/blog/online-mba-business-data-analytics-india-2026" class="ilink">online MBA business data analytics guide</a> covering all major universities in India.</p>
 
-<p>For the July 2026 intake, NMIMS and Amity are both offering early application discounts of 10-15%. Given the salary premiums in data analytics roles, this is one of the highest ROI MBA specialisations you can choose right now.</p>
+<p>Admissions for the January 2027 intake are open now and close by March 2027 at most universities. Ask NMIMS and Amity about any early-application scholarship for this cycle before you pay. Given the salary premiums in data analytics roles, this is one of the highest ROI MBA specialisations you can choose right now.</p>
 
 <h2>Online MBA Data Science Programmes Comparison India 2026</h2>
 
@@ -14939,14 +14952,14 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p><a href="/programs/mba/business-analytics" class="ilink">Compare online MBA Business Analytics programmes</a>, full university table with fees and eligibility on edifyedu.in.</p>
 
-<h2>MBA Data Science Application Timeline July 2026 Intake</h2>
+<h2>MBA Data Science Application Timeline January 2027 Intake</h2>
 
 <ol>
-  <li><strong>March to April 2026:</strong> Shortlist 3 to 5 programmes, attend webinars, request live curriculum decks. Compare NMIMS, JAIN, Amity, MUJ side by side.</li>
-  <li><strong>May 2026:</strong> Take any required entrance test (NMAT or university-specific). Most online programmes accept profile-based admission without high-stakes test.</li>
-  <li><strong>June 2026:</strong> Submit application with statement of purpose, academic transcripts, employer letter. Block first instalment funds.</li>
-  <li><strong>July 2026:</strong> Programme launch, semester 1 begins. Set up structured 8-hour weekly study cadence from day 1 (4 hours live class plus 4 hours self-study).</li>
-  <li><strong>August 2026 onwards:</strong> Start parallel certification track (Tableau, AWS Cloud Practitioner, Coursera ML). Build LinkedIn presence with weekly analytics post cadence.</li>
+  <li><strong>October to November 2026:</strong> Shortlist 3 to 5 programmes, attend webinars, request live curriculum decks. Compare NMIMS, JAIN, Amity, MUJ side by side.</li>
+  <li><strong>December 2026:</strong> Take any required entrance test (NMAT or university-specific). Most online programmes accept profile-based admission without high-stakes test.</li>
+  <li><strong>January to February 2027:</strong> Submit application with statement of purpose, academic transcripts, employer letter. Block first instalment funds.</li>
+  <li><strong>March 2027:</strong> Most admission windows close. Semester 1 begins after that. Set up structured 8-hour weekly study cadence from day 1 (4 hours live class plus 4 hours self-study).</li>
+  <li><strong>After semester 1 starts:</strong> Start parallel certification track (Tableau, AWS Cloud Practitioner, Coursera ML). Build LinkedIn presence with weekly analytics post cadence.</li>
 </ol>
 
 <h2>MBA Data Science Year-by-Year Salary Curve 2026</h2>
@@ -15265,6 +15278,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'online-mba-eligibility-criteria-india-2026',
+    updatedAt: '2026-10-26',
     title: 'Online MBA Eligibility India 2026: Criteria and Steps',
     seoTitle: 'Online MBA Eligibility India 2026: Real Cutoffs, Work-Ex Rules, Workarounds | Edify',
     metaDescription: 'Online MBA eligibility India 2026: 50% UGC norm, 45% reserved relaxation, 40% Amity exception, work-ex by university, what to do if you fall short.',
@@ -15297,7 +15311,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Most "online MBA eligibility" articles say "50 percent in graduation" and end. The real questions candidates have are sharper: what if I have 47 percent, can I apply with a distance education BBA, which programmes accept freshers vs require work experience, what happens if I am in my final year. This guide answers each, with the regulatory reference and the workarounds nobody else publishes.</p>
 
-<p>Written for: candidates worried about borderline graduation marks, working professionals confused by varying experience requirements across universities, and final-year graduation students wanting to apply for July 2026 intake.</p>
+<p>Written for: candidates worried about borderline graduation marks, working professionals confused by varying experience requirements across universities, and final-year graduation students planning for the January 2027 or July 2027 intake.</p>
 
 <div class="callout-key"><strong>One-line frame for online MBA eligibility:</strong> 50 percent in any bachelor degree from a UGC-recognised university is the UGC norm. 45 percent for SC, ST, PwD. 40 percent at some universities like Amity for select programmes. Work experience is optional at most programmes, mandatory at Executive tier.</div>
 
@@ -15395,7 +15409,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Final-Year Students: The Provisional Admission Path</h2>
 
-<p>If you are in your final year of graduation in 2026 and want to enrol in the July 2026 or January 2027 online MBA intake, provisional admission is the standard path.</p>
+<p>If you are in your final year of graduation in 2026 and want to enrol in the January 2027 or July 2027 online MBA intake, provisional admission is the standard path.</p>
 
 <ul>
   <li><strong>Apply with current semester marksheets:</strong> Submit your most recent semester marks plus 10th and 12th certificates.</li>
@@ -15431,14 +15445,14 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Filing under wrong category.</strong> Claiming reserved category without valid certificate, or claiming work experience without proper documentation.</li>
 </ol>
 
-<h2>Apply for July 2026 Intake: Timeline</h2>
+<h2>Apply for January 2027 Intake: Timeline</h2>
 
 <ul>
-  <li><strong>Application opens:</strong> January to March 2026 for most universities.</li>
-  <li><strong>Early-bird application window:</strong> Apply before May 2026 for fee waivers of 10 to 15 percent at universities like Amity Online and Chandigarh University Online.</li>
-  <li><strong>Regular application deadline:</strong> June to July 2026.</li>
+  <li><strong>Application opens:</strong> October 2026 for most universities. The window is open now.</li>
+  <li><strong>Early-bird application window:</strong> Some universities, such as Amity Online and Chandigarh University Online, have run early-application fee waivers in past cycles. Confirm the January 2027 terms before you pay.</li>
+  <li><strong>Regular application deadline:</strong> March 2027 at most universities.</li>
   <li><strong>Document verification:</strong> 1 to 3 weeks post-application.</li>
-  <li><strong>Programme starts:</strong> July to September 2026 for July intake.</li>
+  <li><strong>Programme starts:</strong> After the admission window closes. Confirm the exact date on the official portal.</li>
 </ul>
 
 <h2>The Pre-Application Eligibility Self-Check</h2>
@@ -15810,6 +15824,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'online-mba-admission-process-india-2026',
+    updatedAt: '2026-10-26',
     title: 'Online MBA Admission Process India 2026: Month-by-Month',
     seoTitle: 'Online MBA Admission Process India 2026: Timeline, Documents, Deadlines | Edify',
     metaDescription: 'Online MBA admission process India 2026: 8 steps, month-by-month timeline, document checklist, common rejection causes, early-bird fee waivers.',
@@ -15829,7 +15844,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { label: 'Key Documents', value: 'Graduation marksheets, ID proof' },
     ],
     faqs: [
-      { q: 'When does online MBA admission start in India in 2026?', a: 'Most UGC-DEB approved universities run two intake cycles per year. January intake applications open October to November of previous year, close mid-December. July intake applications open March to April, close mid-June. Rolling admissions are common in between, but main intake cycles are the most competitive for scholarships and early-bird fee waivers.' },
+      { q: 'When does online MBA admission start in India in 2026?', a: 'Most UGC-DEB approved universities run two intake cycles per year. January intake applications open around October of the previous year and close by March at most universities. For the January 2027 intake, the window runs from October 2026 to March 2027. July intake applications open March to April and close around June. Rolling admissions are common in between, but main intake cycles are the most competitive for scholarships and early-bird fee waivers.' },
       { q: 'Do I need to visit the university campus for online MBA admission?', a: 'No. The entire admission process is remote: online application, scanned document upload, video verification or KYC, online fee payment via UPI or net banking. Only the end-semester exam (in some programmes) requires physical presence at a designated centre, and that is twice a year, not at admission time.' },
       { q: 'How long does the online MBA admission process take in 2026?', a: 'From application submission to LMS access, the typical timeline is 7 to 21 working days. Document verification takes 3 to 10 working days. Fee payment is same-day. LMS credential issuance is 1 to 3 days post-payment. Inter-state applicants and those with non-English marksheets see longer verification windows.' },
       { q: 'What is the early-bird application advantage in 2026?', a: 'Applying 6 to 10 weeks before intake start gets you fee waivers of 10 to 20 percent at universities like Amity Online (Rs 25,000 to 35,000 off), Chandigarh University Online (Rs 20,000 to 30,000 off), and JAIN Online (smaller waivers). Late application means full sticker price plus risk of cohort being closed at premium programmes.' },
@@ -15842,11 +15857,11 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Most online MBA admission articles give you 8 vague steps. They miss the timing question (when exactly to apply for maximum benefit), the document precision (what causes 60 percent of delays), and the early-bird math (where the Rs 20,000-plus fee waivers actually come from). This guide answers all three with month-by-month timelines and the specific document gotchas to avoid.</p>
 
-<p>Written for: working professionals planning a July 2026 or January 2027 enrollment, recent graduates timing their first MBA application, and applicants wanting to maximise scholarships and fee waivers.</p>
+<p>Written for: working professionals planning a January 2027 or July 2027 enrollment, recent graduates timing their first MBA application, and applicants wanting to maximise scholarships and fee waivers.</p>
 
 <div class="callout-key"><strong>One-line frame for online MBA admission:</strong> The process is simple but timing is everything. Apply 6 to 10 weeks before intake start for fee waivers. Pre-check documents to avoid the most common 60 percent of delays. Total admission time 7 to 21 working days when done right.</div>
 
-<h2>The Month-by-Month Timeline for July 2026 Intake</h2>
+<h2>The Month-by-Month Timeline for January 2027 Intake</h2>
 
 <figure style="margin: 28px 0;">
   <img src="https://images.pexels.com/photos/7683746/pexels-photo-7683746.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="College students on campus stairs with books and backpacks, preparing for higher education." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
@@ -15854,16 +15869,16 @@ export const BLOG_POSTS: BlogPost[] = [
 </figure>
 
 <table>
-  <caption>Online MBA July 2026 intake: month-by-month action plan</caption>
-  <thead><tr><th>Months before intake</th><th>Stage</th><th>Action items</th></tr></thead>
+  <caption>Online MBA January 2027 intake: month-by-month action plan</caption>
+  <thead><tr><th>When</th><th>Stage</th><th>Action items</th></tr></thead>
   <tbody>
-    <tr><td>4 to 6 months out (Jan to Feb 2026)</td><td>Research phase</td><td>Shortlist 3 universities, verify UGC-DEB approval, compare fees and specialisations</td></tr>
-    <tr><td>3 to 4 months out (Mar 2026)</td><td>Document preparation</td><td>Gather marksheets, certificates, ID proofs. Get caste or PwD certificates updated if needed.</td></tr>
-    <tr><td>2 to 3 months out (Apr 2026)</td><td>Application phase</td><td>Apply with early-bird benefit. Submit form and documents. Pay application fee.</td></tr>
-    <tr><td>1.5 to 2.5 months out (Apr-May 2026)</td><td>Verification phase</td><td>Document verification by university (5 to 10 working days). Respond to clarification requests fast.</td></tr>
-    <tr><td>4 to 6 weeks out (mid-May 2026)</td><td>Enrollment phase</td><td>Pay first semester fee post-acceptance. Receive LMS credentials.</td></tr>
-    <tr><td>2 to 4 weeks out (Jun 2026)</td><td>Pre-programme phase</td><td>Attend orientation, study LMS layout, review programme structure.</td></tr>
-    <tr><td>0 weeks (Jul 2026)</td><td>Programme starts</td><td>Live classes begin. Semester 1 underway.</td></tr>
+    <tr><td>October 2026</td><td>Research phase</td><td>Shortlist 3 universities, verify UGC-DEB approval, compare fees and specialisations</td></tr>
+    <tr><td>November 2026</td><td>Document preparation</td><td>Gather marksheets, certificates, ID proofs. Get caste or PwD certificates updated if needed.</td></tr>
+    <tr><td>December 2026</td><td>Application phase</td><td>Apply early for any early-bird benefit. Submit form and documents. Pay application fee.</td></tr>
+    <tr><td>December 2026 to January 2027</td><td>Verification phase</td><td>Document verification by university (5 to 10 working days). Respond to clarification requests fast.</td></tr>
+    <tr><td>January to February 2027</td><td>Enrollment phase</td><td>Pay first semester fee post-acceptance. Receive LMS credentials.</td></tr>
+    <tr><td>March 2027</td><td>Last month to apply</td><td>Most January 2027 admission windows close. Attend orientation, study LMS layout, review programme structure.</td></tr>
+    <tr><td>Semester 1 start</td><td>Programme starts</td><td>Live classes begin. Confirm the exact start date on the official portal.</td></tr>
   </tbody>
 </table>
 
@@ -16092,6 +16107,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-for-commerce-students-india-2026',
+    updatedAt: '2026-10-26',
     title: 'MBA for Commerce Students India 2026: Best Specs',
     seoTitle: 'MBA for Commerce Students India 2026: Best Specialisations & Careers',
     metaDescription: 'MBA for commerce students in India 2026, best specialisations after B.Com, fees, top colleges, and career outcomes for commerce graduates.',
@@ -16193,7 +16209,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>If you are already working (which is common for B.Com graduates who started careers early), an online MBA from a recognized university is the practical path. Amity Online and NMIMS are particularly strong for finance-oriented commerce graduates. For marketing, Amity and Chandigarh University are well-regarded. Manipal Online is a strong choice across multiple specialisations.</p>
 
-<p>For the July 2026 intake, several universities have early-bird scholarship options for commerce graduates with 60 percent plus in graduation. Applying before May is the best way to access those discounts. Fees can be reduced by 10 to 15 percent compared to applying at the last minute.</p>
+<p>Admissions for the January 2027 intake are open now and close by March 2027 at most universities. Some universities offer merit scholarships for commerce graduates with strong graduation marks. Terms change every cycle, so apply early and confirm the current offer before you pay.</p>
 
 <h2>B.Com Plus MBA Salary Year-by-Year India 2026</h2>
 
@@ -19496,6 +19512,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'distance-mba-colleges-mumbai-2026',
+    updatedAt: '2026-10-26',
     title: 'Distance MBA Mumbai 2026: Top Colleges, Fees and Guide',
     seoTitle: 'Distance MBA Colleges in Mumbai 2026: NMIMS, Welingkar, MU | Edify',
     metaDescription: 'Distance MBA colleges in Mumbai 2026: UGC-approved programs, fees, top institutions, and how to shortlist the right college.',
@@ -19689,14 +19706,14 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Amity Online plus DY Patil Online:</strong> Eduvanz, Propelld, Bajaj. EMI from Rs 6,000 to 8,000 per month.</li>
 </ul>
 
-<h2>Mumbai Distance MBA Application Timeline July 2026 Intake</h2>
+<h2>Mumbai Distance MBA Application Timeline January 2027 Intake</h2>
 
 <ol>
-  <li><strong>March 2026:</strong> NMIMS Global Access NMAT registration opens.</li>
-  <li><strong>April 2026:</strong> NMAT exam window. Welingkar plus Amity plus DY Patil applications open.</li>
-  <li><strong>May 2026:</strong> Application submission for all distance MBA programmes. Mumbai University IDOL admissions also open.</li>
-  <li><strong>June 2026:</strong> Admission interviews (NMIMS plus Welingkar). Result announcements.</li>
-  <li><strong>July 2026:</strong> First instalment payment. Programme commencement.</li>
+  <li><strong>October to November 2026:</strong> Shortlist programmes. Check whether NMIMS or Welingkar needs an entrance test for your session.</li>
+  <li><strong>December 2026:</strong> Application submission for Amity, DY Patil, NMIMS and Welingkar January 2027 sessions.</li>
+  <li><strong>January to February 2027:</strong> Admission interviews (NMIMS plus Welingkar) where required. Result announcements. First instalment payment.</li>
+  <li><strong>March 2027:</strong> Most January 2027 admission windows close. Programme commencement follows.</li>
+  <li><strong>Mumbai University IDOL:</strong> Follows its own admission calendar. Check the next window on the university portal.</li>
 </ol>
 
 <h2>Mumbai Distance MBA Career Acceleration Tips 2026</h2>
@@ -20260,6 +20277,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'distance-mba-meaning-what-is-it-2026',
+    updatedAt: '2026-10-26',
     title: 'Distance MBA 2026: What It Is, Fees from ₹31,500, and Complete Guide',
     seoTitle: 'Distance MBA 2026: Fees, Top Universities, Validity and How It Works',
     metaDescription: 'Distance MBA in India 2026: fees ₹31,500 to ₹2.25L. UGC-DEB validity, top universities, how exams work, online vs distance vs correspondence. Zero commission guide.',
@@ -20503,14 +20521,14 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>International career pivot:</strong> Amity Online MBA International Business or UWA Global MBA (AACSB accredited).</li>
 </ul>
 
-<h2>Distance MBA Application Timeline July 2026 Intake</h2>
+<h2>Distance MBA Application Timeline January 2027 Intake</h2>
 
 <ol>
-  <li><strong>March to April 2026:</strong> Shortlist 3 to 5 programmes. Attend university webinars. Request curriculum decks.</li>
-  <li><strong>May 2026:</strong> Submit application with documents. Pay registration fee.</li>
-  <li><strong>June 2026:</strong> Complete admission interview (if required). Pay first instalment.</li>
-  <li><strong>July 2026:</strong> Programme launch. LMS access activated. Orientation webinar.</li>
-  <li><strong>August onwards:</strong> Build structured 8 to 10 hour weekly study cadence. Start parallel certification (CFA Level 1, SHRM-CP, Tableau Specialist).</li>
+  <li><strong>October to November 2026:</strong> Shortlist 3 to 5 programmes. Attend university webinars. Request curriculum decks.</li>
+  <li><strong>December 2026:</strong> Submit application with documents. Pay registration fee.</li>
+  <li><strong>January to February 2027:</strong> Complete admission interview (if required). Pay first instalment.</li>
+  <li><strong>March 2027:</strong> Most admission windows close. Programme launch, LMS access and orientation follow.</li>
+  <li><strong>After semester 1 starts:</strong> Build structured 8 to 10 hour weekly study cadence. Start parallel certification (CFA Level 1, SHRM-CP, Tableau Specialist).</li>
 </ol>
 
 <h2>Distance MBA Admission Process: How to Apply</h2>
@@ -20587,6 +20605,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'ma-distance-learning-india-2026',
+    updatedAt: '2026-10-26',
     title: 'MA Distance Learning India 2026: IGNOU and Top Programs',
     seoTitle: 'MA Distance Learning India 2026: IGNOU vs Private, Spec Picker | Edify',
     metaDescription: 'MA distance learning India 2026: IGNOU 43 specialisations Rs 8K-27K, private online MA, specialisation-by-career picker, UGC validity check.',
@@ -20642,7 +20661,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <ol>
   <li>Visit <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener noreferrer" class="ilink">deb.ugc.ac.in</a> official UGC Distance Education Bureau portal.</li>
   <li>Click "Recognised Institutions" tab.</li>
-  <li>Select the current academic year (2026 for July 2026 intake).</li>
+  <li>Select the academic year for your intake (the 2026-27 cycle covers the January 2027 intake).</li>
   <li>Search your university name and confirm your specific MA programme is listed.</li>
   <li>For online MA specifically, also check <a href="https://ugc.ac.in" target="_blank" rel="noopener noreferrer" class="ilink">ugc.ac.in</a> Online Education Regulations approved list.</li>
 </ol>
@@ -20868,6 +20887,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'online-mba-courses-chennai-2026',
+    updatedAt: '2026-10-26',
     title: 'Online MBA Chennai 2026: Top Programs, Fees and UGC',
     seoTitle: 'Online MBA Courses Chennai 2026: Best Programs, Fees and Eligibility | Edify',
     metaDescription: 'Online MBA Chennai 2026: Annamalai, Madras University, IGNOU and Amrita compared. UGC-DEB approved fees and specialisations for Tamil Nadu students.',
@@ -21026,14 +21046,14 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Pay fees and onboard:</strong> Receive LMS credentials, academic calendar, and exam schedule.</li>
 </ol>
 
-<h2>Chennai Online MBA Application Timeline July 2026 Intake</h2>
+<h2>Chennai Online MBA Application Timeline January 2027 Intake</h2>
 
 <ol>
-  <li><strong>March to April 2026:</strong> Shortlist 3 to 5 online MBA programmes. Attend Annamalai plus University of Madras IDE counselling sessions.</li>
-  <li><strong>May 2026:</strong> Application submission for all Chennai-relevant programmes (Annamalai, University of Madras IDE, IGNOU, Amity, Amrita).</li>
-  <li><strong>June 2026:</strong> Pay registration fee (Rs 500 to 2,500). Submit documents. Admission interview if required.</li>
-  <li><strong>July 2026:</strong> Programme launch. LMS access activated. Begin study cadence using OMR commute time.</li>
-  <li><strong>August onwards:</strong> Start parallel certification (Tableau, Power BI, AWS Cloud) plus build LinkedIn presence.</li>
+  <li><strong>October to November 2026:</strong> Shortlist 3 to 5 online MBA programmes. Attend Annamalai plus University of Madras IDE counselling sessions.</li>
+  <li><strong>December 2026:</strong> Application submission for Chennai-relevant programmes with a January session (IGNOU, Amity, Amrita). Check the Annamalai and Madras IDE calendars separately.</li>
+  <li><strong>January to February 2027:</strong> Pay registration fee (Rs 500 to 2,500). Submit documents. Admission interview if required.</li>
+  <li><strong>March 2027:</strong> Most admission windows close. Programme launch and LMS access follow. Begin study cadence using OMR commute time.</li>
+  <li><strong>After semester 1 starts:</strong> Start parallel certification (Tableau, Power BI, AWS Cloud) plus build LinkedIn presence.</li>
 </ol>
 
 <h2>Chennai Specific MBA Career Hacks 2026</h2>
@@ -21099,6 +21119,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'top-correspondence-mba-colleges-india-2026',
+    updatedAt: '2026-10-26',
     title: 'MBA Correspondence Fees 2026: IGNOU to NMIMS, Complete Fee Guide',
     seoTitle: 'Correspondence MBA Fees 2026: ₹31,500 to ₹2L',
     metaDescription: 'Top correspondence MBA colleges India 2026: 3-tier picker (premium, mid, budget), IGNOU Rs 31.5K to NMIMS Rs 1.96L, NAAC + UGC-DEB verified.',
@@ -21291,12 +21312,12 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Application Timeline and Process for Correspondence MBA</h2>
 
 <ol>
-  <li><strong>3 to 6 months before intake (Jan to April for July intake):</strong> Research shortlist, verify UGC-DEB plus NAAC plus NIRF.</li>
-  <li><strong>2 to 3 months before intake (May):</strong> Apply with early-bird benefit. Submit graduation marksheets, ID, photos.</li>
-  <li><strong>1.5 to 2 months before intake (May to June):</strong> University verifies documents (5 to 14 working days).</li>
-  <li><strong>4 to 6 weeks before intake (mid-June):</strong> Pay first semester fee post-acceptance. Use no-cost EMI if available.</li>
-  <li><strong>2 to 4 weeks before intake (late June):</strong> Receive LMS credentials, study materials, orientation invitation.</li>
-  <li><strong>Intake start (July):</strong> Live classes begin. Self-paced study materials access opens.</li>
+  <li><strong>3 to 6 months before intake (July to October 2026 for the January 2027 intake):</strong> Research shortlist, verify UGC-DEB plus NAAC plus NIRF.</li>
+  <li><strong>2 to 3 months before intake (November 2026):</strong> Apply with early-bird benefit. Submit graduation marksheets, ID, photos.</li>
+  <li><strong>1.5 to 2 months before intake (November to December 2026):</strong> University verifies documents (5 to 14 working days).</li>
+  <li><strong>4 to 6 weeks before intake (December 2026):</strong> Pay first semester fee post-acceptance. Use no-cost EMI if available.</li>
+  <li><strong>2 to 4 weeks before intake (January 2027):</strong> Receive LMS credentials, study materials, orientation invitation.</li>
+  <li><strong>Intake start (January 2027 session, admissions close in March 2027):</strong> Live classes begin. Self-paced study materials access opens.</li>
 </ol>
 
 <h2>What Correspondence MBA Looks Like Day-to-Day</h2>
@@ -23498,6 +23519,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'amity-online-mba-review-2026',
+    updatedAt: '2026-10-26',
     // Sprint 1 revert: title/seoTitle/metaDescription reverted to pre-Sprint values
     // pending a separate A/B test. Cross-link callout at top of content field kept.
     title: 'Amity University Online MBA Fees 2026: ₹2.07L Review and Honest Assessment',
@@ -23807,7 +23829,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p><strong>Verification resources:</strong> <a href="https://deb.ugc.ac.in" target="_blank" rel="nofollow">deb.ugc.ac.in</a> (UGC-DEB approval checker), <a href="https://naac.gov.in" target="_blank" rel="nofollow">naac.gov.in</a> (NAAC accreditation), <a href="https://nirfindia.org" target="_blank" rel="nofollow">nirfindia.org</a> (NIRF ranking).</p>
 
 <h2 id="admission-2026">Amity Online MBA Admission 2026: Dates, Process & Eligibility</h2>
-<p><strong>Session intakes:</strong> Amity runs two intake windows per year. January 2026 session admissions were available until approximately March 2026. July 2026 session typically opens in April 2026. Verify current dates on amityonline.com as deadlines shift between batches.</p>
+<p><strong>Session intakes:</strong> Amity runs two intake windows per year. January 2027 session admissions are open now and run until approximately March 2027. The July 2027 session typically opens around April 2027. Verify current dates on amityonline.com as deadlines shift between batches.</p>
 <p><strong>Application fee:</strong> ₹1,100 (online), non-refundable. Some older sources cite ₹2,500, so verify the current amount on the portal.</p>
 <p><strong>Eligibility:</strong> Bachelor's degree from a UGC-recognized university (any stream) with minimum 40% aggregate (50% for Executive MBA track). Below 40%? You can clear the internal ISAT admission test. No CAT, MAT, or XAT required for the standard Online MBA. No work experience mandatory (except Executive track: 3+ years). No age limit. International students eligible.</p>
 <p><strong>5-step application process:</strong></p>
@@ -27550,6 +27572,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'amity-online-mca-fees-review',
+    updatedAt: '2026-10-26',
     title: 'Amity Online MCA: Fees, Specialisations and Honest Review 2026',
     seoTitle: 'Amity Online MCA Review 2026: FinTech and Cyber Tracks',
     metaDescription: 'Amity Online MCA fees Rs 1.99L total (Rs 49,800 per semester). Review of all 6 specialisations, HCLTech and Paytm tie-ups and comparison with alternatives.',
@@ -27713,18 +27736,16 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Amity Online MCA in 2026 is a credible mid-premium online MCA option with strong industry co-developed specialisations. The Rs 1.99 lakh investment is defensible for AI plus FinTech plus Cyber Security plus Software Engineering tracks targeting specific employer sectors. For budget-constrained learners or those prioritising NIRF rank, Amrita or LPU offer alternative routes. Match your specialisation choice plus target sector plus brand pull required against the Amity premium. Stack one premium certification plus build active GitHub portfolio plus LinkedIn presence during the 2-year programme for maximum career impact.</p>
 
-<h2>Amity Online MCA Application Timeline 2026</h2>
+<h2>Amity Online MCA Application Timeline: January 2027 Batch</h2>
 
 <ol>
-  <li><strong>March to May 2026:</strong> Research programme specialisations. Attend Amity Online webinars. Decide between July or January batch.</li>
-  <li><strong>June 2026:</strong> Submit application at amityonline.com. Pay registration fee (approximately Rs 1,000).</li>
-  <li><strong>July 2026:</strong> First semester fee payment (Rs 49,800). LMS access activated.</li>
-  <li><strong>July to October 2026:</strong> Semester 1 (foundational modules common across specialisations).</li>
-  <li><strong>November 2026 to February 2027:</strong> Semester 2 (specialisation deep-dive begins).</li>
-  <li><strong>August 2026 onwards:</strong> Start parallel certification (AWS, Coursera Deep Learning, Tableau).</li>
-  <li><strong>April to June 2027:</strong> Semester 3 (advanced specialisation). Internship if applicable.</li>
-  <li><strong>July to September 2027:</strong> Semester 4. Capstone project plus thesis.</li>
-  <li><strong>October to December 2027:</strong> Final exams plus degree completion.</li>
+  <li><strong>October to November 2026:</strong> Research programme specialisations. Attend Amity Online webinars. Confirm the January 2027 batch suits your schedule.</li>
+  <li><strong>December 2026 to February 2027:</strong> Submit application at amityonline.com. Pay registration fee (approximately Rs 1,000).</li>
+  <li><strong>By March 2027:</strong> Admissions close. First semester fee payment (Rs 49,800). LMS access activated.</li>
+  <li><strong>Semester 1:</strong> Foundational modules common across specialisations. Start parallel certification (AWS, Coursera Deep Learning, Tableau).</li>
+  <li><strong>Semester 2:</strong> Specialisation deep-dive begins.</li>
+  <li><strong>Semester 3:</strong> Advanced specialisation. Internship if applicable.</li>
+  <li><strong>Semester 4:</strong> Capstone project plus thesis, then final exams and degree completion. Confirm the exact semester dates in the Amity academic calendar.</li>
 </ol>
 
 <h2>Amity Online MCA Plus Career Plan: 5-Year Trajectory 2026</h2>
@@ -41204,6 +41225,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'symbiosis-online-bba-review-2026',
+    updatedAt: '2026-10-26',
     title: 'Symbiosis Online BBA Review 2026: Fees, SSODL, Honest Take',
     h1Title: 'Symbiosis Online BBA (SSODL): Fees and Honest Take',
     metaDescription: 'Symbiosis online BBA review 2026: SSODL ₹1,65,000 fees, NIRF #19, NAAC A++, Symbiosis International Deemed University Pune branch, BBA progression to MBA.',
@@ -41219,7 +41241,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     heroImageAlt: 'Wide view of a modern university building in Dehradun, India, highlighting architectural design and stairs.',
     faqs: [
       { q: 'Is Symbiosis Online BBA worth it 2026?', a: 'Yes, Symbiosis Online BBA at SSODL is worth it for candidates seeking Tier 1 Premium Mumbai-Pune corridor brand recall through Symbiosis institutional legacy. Symbiosis International (Deemed University) Pune holds NIRF University rank #19 nationally, NAAC A++ accreditation, and UGC Category-1 status. The Symbiosis School for Online and Digital Learning (SSODL) is a direct branch of Symbiosis International Deemed University, established 2023 as the dedicated online learning division. SSODL Online BBA at ₹1,65,000 across 6 semesters delivers structured progression pathway to Symbiosis Online MBA at ₹3,15,000 for working professional senior tier transitions. For Mumbai-Pune corridor BFSI, consulting, and marketing career direction, SSODL BBA is structurally a strong pick.' },
-      { q: 'What is Symbiosis Online BBA fee structure 2026?', a: 'Symbiosis Online BBA fee structure 2026 at SSODL: Total programme fee ₹1,65,000 across 6 semesters with structured payment schedule of ₹35,000 first semester + ₹26,000 across remaining 5 semesters. Registration fee ₹1,000 one-time non-refundable. EMI and instalment options available through institutional finance partners. International student fee differs from Indian student fee; talk to our counsellor on edifyedu.in for confirmation. July 2026 academic year confirmed total fee is ₹1,65,000 + ₹1,000 registration = ₹1,66,000. Confirm EMI eligibility and any limited-period scholarships with the SSODL counsellor before paying first semester fee.' },
+      { q: 'What is Symbiosis Online BBA fee structure 2026?', a: 'Symbiosis Online BBA fee structure 2026 at SSODL: Total programme fee ₹1,65,000 across 6 semesters with structured payment schedule of ₹35,000 first semester + ₹26,000 across remaining 5 semesters. Registration fee ₹1,000 one-time non-refundable. EMI and instalment options available through institutional finance partners. International student fee differs from Indian student fee; talk to our counsellor on edifyedu.in for confirmation. The confirmed total fee for the July 2026 academic year was ₹1,65,000 + ₹1,000 registration = ₹1,66,000. Confirm the January 2027 fee, EMI eligibility and any limited-period scholarships with the SSODL counsellor before paying first semester fee.' },
       { q: 'Is SSODL same as SCDL?', a: 'No, SSODL and SCDL are structurally different entities. SSODL (Symbiosis School for Online and Digital Learning) is a direct branch of Symbiosis International (Deemed University) Pune, established in 2023 as the dedicated online learning division of the parent university. SSODL delivers UGC-DEB approved online degree programmes including Online BBA, BCA, BSc, MBA, MSc, MA. SCDL (Symbiosis Centre for Distance Learning) is a separate entity that operated traditional distance learning programmes; SCDL is not connected to SSODL and SSODL does not flow from SCDL legacy. The institutional structure is direct: Symbiosis International Deemed University parent and SSODL online learning branch. Get accreditation and approval status confirmed by our counsellor before paying.' },
       { q: 'What specialisation options are in Symbiosis Online BBA?', a: 'Symbiosis Online BBA at SSODL offers two structural options within the 6-semester programme: General BBA (broad management foundation without specialisation track) and BBA with single specialisation (focused track in one functional area). Specialisation choices typically include Marketing, Finance, Human Resource Management, International Business, and other UGC-aligned tracks; confirm current specialisation list with our counsellor on edifyedu.in before locking specialisation choice. Specialisation is typically locked from semester 5 onwards; difficult to switch tracks mid-programme.' },
       { q: 'What is NIRF rank of Symbiosis 2026?', a: 'Symbiosis International (Deemed University) Pune holds NIRF University rank #19 nationally (2024 rankings). The university also holds NAAC A++ accreditation (highest grade) and UGC Category-1 status reflecting strong academic quality. Symbiosis Pune was established in 1971 with the founding vision of welcoming international students through the motto \'World as One Family.\' For NIRF MBA category specifically, Symbiosis ranks at #11. Strong Mumbai-Pune corridor brand recall through Symbiosis institutional legacy delivers Tier 1 Premium credentialling for online programme graduates. The SSODL Online BBA degree is fully UGC-DEB entitled and equivalent to regular Symbiosis BBA for jobs and higher studies progression.' },
@@ -41285,7 +41307,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>The Symbiosis Online BBA fee structure follows the ₹35,000 first semester plus ₹26,000 across remaining 5 semesters pattern, totalling ₹1,65,000 programme fee. Add ₹1,000 one-time non-refundable registration for total ₹1,66,000. The July 2026 fee structure is confirmed updated; older sources citing lower figures are outdated. Confirm EMI options and instalment plans with the SSODL counsellor before paying first semester fee.</p>
 
-<p class="callout-warning"><strong>Verify before paying:</strong> All fees verified for July 2026 academic year and indicative subject to revision. Confirm examination fee and alumni fee components with SSODL counsellor before paying. Verify UGC-DEB entitlement on deb.ugc.ac.in for the 2026 intake. Do not pay any agent extra processing fees, commissions, or referral charges. EdifyEdu does not earn referral commission from any university listed.</p>
+<p class="callout-warning"><strong>Verify before paying:</strong> All fees verified for July 2026 academic year and indicative subject to revision. Confirm examination fee and alumni fee components with SSODL counsellor before paying. Confirm whether the fee has changed for the January 2027 intake, and verify UGC-DEB entitlement on deb.ugc.ac.in. Do not pay any agent extra processing fees, commissions, or referral charges. EdifyEdu does not earn referral commission from any university listed.</p>
 
 <h2>Symbiosis Online BBA Specialisation Options</h2>
 
@@ -41384,7 +41406,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p><strong>Eligibility:</strong> Class 12 or equivalent (10+2) from any recognised board with minimum 50 percent aggregate marks in any stream. Reserved categories (SC, ST) qualify with 45 percent under standard reservation framework. No upper age limit. Final-year 12th students with pending results eligible with provisional admission. International students eligible per UGC framework with separate fee structure.</p>
 
-<p><strong>Application steps:</strong> Step 1: <a href="/contact">Talk to our counsellor on edifyedu.in</a> to confirm current intake dates, fees, and specialisation availability for your chosen session. Step 2: Provide your basic details, education record, and specialisation preference. Step 3: Receive guidance on documentation and registration process. Step 4: Generate ABC ID and DEB-ID (mandatory for online programme application). Step 5: Upload supporting documents (Class 10 marksheet, Class 12 marksheet, photo ID, Aadhaar). Step 6: Pay registration fee ₹1,000 followed by first semester fee ₹35,000 after admission confirmation. Step 7: Receive student ID and learning portal credentials to begin classes. Last application date for January 2026 academic year was 26 March 2026; for July 2026 academic year, applications open from 15 April 2026 with last date 31 May 2026.</p>
+<p><strong>Application steps:</strong> Step 1: <a href="/contact">Talk to our counsellor on edifyedu.in</a> to confirm current intake dates, fees, and specialisation availability for your chosen session. Step 2: Provide your basic details, education record, and specialisation preference. Step 3: Receive guidance on documentation and registration process. Step 4: Generate ABC ID and DEB-ID (mandatory for online programme application). Step 5: Upload supporting documents (Class 10 marksheet, Class 12 marksheet, photo ID, Aadhaar). Step 6: Pay registration fee ₹1,000 followed by first semester fee ₹35,000 after admission confirmation. Step 7: Receive student ID and learning portal credentials to begin classes. Applications for the January 2027 academic year are open now. Confirm the last date on the SSODL portal, since the January window closed in late March in the previous cycle.</p>
 
 <h2>Symbiosis Online BBA Reality Check 2026</h2>
 
@@ -41394,7 +41416,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p><strong>Reality 2: SSODL relatively new with building alumni network.</strong> SSODL was established 2023; alumni network depth is still building compared to legacy Symbiosis institutional alumni network through offline programmes since 1971. Working professionals expecting deep SSODL-specific alumni network for career mobility should set realistic expectations; broader Symbiosis institutional alumni network is accessible but not SSODL-exclusive.</p>
 
-<p><strong>Reality 3: July 2026 fee structure is updated.</strong> The July 2026 academic year fee at SSODL is confirmed at ₹1,65,000 programme fee plus ₹1,000 registration. Older competitor sources citing lower figures reflect outdated previous-year fees and should be ignored. Working professionals planning EMI commitment should confirm EMI eligibility and instalment plans with SSODL counsellor before paying.</p>
+<p><strong>Reality 3: Fees change between academic years.</strong> The July 2026 academic year fee at SSODL was confirmed at ₹1,65,000 programme fee plus ₹1,000 registration. Confirm the January 2027 figure with SSODL before paying. Older competitor sources citing lower figures reflect outdated previous-year fees and should be ignored. Working professionals planning EMI commitment should confirm EMI eligibility and instalment plans with SSODL counsellor before paying.</p>
 
 <h2>Related Reading on edifyedu.in</h2>
 
@@ -41419,7 +41441,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p><em>Search reference: this guide covers <strong>symbiosis ssodl bba</strong> programme details, <strong>symbiosis online bba fees</strong> structure, and <strong>ssodl bba pune</strong> institutional structure for the 2026 admission cycle.</em></p>
 
-<p class="disclaimer"><em>Disclaimer: All fees verified as of May 2026 for July 2026 academic year and indicative subject to revision. Talk to our counsellor on edifyedu.in to confirm current fee, intake calendar, and specialisation availability before paying. NIRF rankings, NAAC grades, UGC Category status, and placement data are based on publicly available sources. edifyedu.in does not earn referral commission from any university listed.</em></p>
+<p class="disclaimer"><em>Disclaimer: All fees verified as of May 2026 for the July 2026 academic year and indicative subject to revision. Confirm the January 2027 fee before paying. Talk to our counsellor on edifyedu.in to confirm current fee, intake calendar, and specialisation availability before paying. NIRF rankings, NAAC grades, UGC Category status, and placement data are based on publicly available sources. edifyedu.in does not earn referral commission from any university listed.</em></p>
 `,
   },
   {
