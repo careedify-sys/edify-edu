@@ -49,7 +49,7 @@ Status key: TODO, WRITING, SHIPPED (commit), BLOCKED (reason).
 | 4 | Two degrees at the same time: UGC rules | `/blog/ugc-two-degrees-simultaneously-rules` | ugc allows two degrees simultaneously 2,900 | No page | SHIPPED 26 Oct |
 | 5 | UGC biannual admissions (January and July intake) | `/blog/ugc-biannual-admissions-january-july-intake` | ugc biannual admissions 1,900 | No page. Directly useful for the Jan 2027 intake | SHIPPED 26 Oct |
 | 6 | UGC fee refund policy | `/blog/ugc-fee-refund-policy` | ugc refund policy 2023-24 1,300 | No page. Applies to every online admission | SHIPPED 26 Oct |
-| 7 | Online degree courses in India (pillar) | `/blog/online-degree-courses-india` | online degree courses 5,400; online university in india 880; online degree courses in india 720; online degree in india 480; online graduation degree 1,300; accredited online degrees 1,300 ≈ **10,080** | No cross-programme pillar. Links down to all 10 programme hubs | TODO |
+| 7 | Online degree courses in India (pillar) | `/blog/online-degree-courses-india` | online degree courses 5,400; online university in india 880; online degree courses in india 720; online degree in india 480; online graduation degree 1,300; accredited online degrees 1,300 ≈ **10,080** | No cross-programme pillar. Links down to all 10 programme hubs | SHIPPED 26 Oct |
 | 8 | Online master's / PG courses in India | `/blog/online-masters-pg-courses-india` | online masters, online pg courses, online postgraduate courses, online master degree courses ≈ **7,710** | No PG pillar above MBA/MCA/MA/MSc/MCom hubs | TODO |
 | 9 | Online bachelor's / UG courses in India | `/blog/online-bachelors-ug-courses-india` | online graduation degree, online ug courses, online bachelor's degree in india ≈ **3,500** (psychology rows held, see C) | No UG pillar above BA/BBA/BCA/BCom/BSc hubs | TODO |
 | 10 | Online degree scholarships | `/blog/online-degree-scholarships-india` | online degree scholarships 590 | No page. Needs per-uni facts from data; may block | TODO |
@@ -108,7 +108,7 @@ The fee-query rows repeat memory `project_fee_query_gap`: review blogs outrank f
 | Online LLB / LLM | 7,880 | BCI does not recognise online LLB for enrolment as an advocate. Is an online LLM (UGC) in scope, and do we say so? |
 | Online B.Tech / M.Tech | 6,820 | AICTE online-mode rules for working professionals (2025 framework). Which universities are actually approved? |
 | Online PhD / DBA | 5,920 | UGC PhD Regulations 2022 bar online/distance PhD. Is a "not valid, here is why" page wanted? Foreign online DBA? |
-| Online psychology degree | ~2,600 | UGC barred allied/healthcare programmes, incl. psychology, from ODL/online from July 2025 (verify on ugc.gov.in). Write as a validity explainer? |
+| Online psychology degree | ~2,600 | **ANSWERED 26 Oct:** UGC public notice F.No. 4-1/2025 (DEB-NER), 12 Aug 2025 (592nd meeting): no ODL/Online Psychology, Microbiology, Food & Nutrition Science, Biotechnology, Clinical Nutrition & Dietetics from July-Aug 2025; recognitions withdrawn. See data defect below. |
 | Online PGDM | 1,310 | AICTE status of online PGDM. Is it in scope? |
 
 ### Bucket C update, 26 Oct: the UGC notice answers three of these
@@ -146,3 +146,20 @@ Append one line per shipped page: date, item #, URL, commit, keywords covered, b
 - 2026-10-26 · #4 · `/blog/ugc-two-degrees-simultaneously-rules` · 2,900/mo · sources: UGC guidelines April 2022 (ugc.gov.in/pdfnews/5729348) and June 2025 modification after 589th meeting (pdfnews/6493421). Blocked facts: none.
 - 2026-10-26 · #5 · `/blog/ugc-biannual-admissions-january-july-intake` · 1,900/mo · sources: UGC UG/PG Regulations 2025 (Gazette 2 Apr 2025, cl. 3 and 4.0), ODL/Online Regs 2020 Reg 2(b), DEB portal (13 Oct 2026 cut-off), DEB notice Apr 2025. Blocked facts: the January 2027 session last date is not yet published on DEB; post says so instead of guessing. Update the post when DEB notifies it.
 - 2026-10-26 · #6 · `/blog/ugc-fee-refund-policy` · 1,300/mo · sources: UGC Fee Refund Policy 2024-25 (12 Jun 2024, 580th meeting), UGC notice 27 Oct 2025 (policy continues, cut-off 31 Oct 2025), Oct 2018 refund table, Student Grievance Regs 2023. Rs 1,000 and Rs 5,000 are UGC caps, allowlisted in data/blog-fee-allowlist.json with the UGC letters as source. Blocked facts: none. **Batch 1 complete.**
+- 2026-10-26 · #7 · `/blog/online-degree-courses-india` · ~10,080/mo · sources: ODL/Online Regs 2020 Reg 3(B) (NAAC 3.26 / NIRF top-100 twice in three cycles), 3rd Amendment May 2024, UGC notice 11 Nov 2024 (prohibited list), DEB notice Apr 2025 (578th meeting, no AICTE NOC for mgmt/CA at central/state/private unis), DEB OL page (no lab programmes online). Counts from lib/data.ts u.programs on 26 Oct. Internal links capped at 10 per house rule, so the table does not link the 10 hubs; the hubs are not in the CLAUDE.md allowed-target list anyway. Blocked facts: none. No fee range quoted on purpose.
+
+## Data defect found 26 Oct (outside this content plan, needs Rishi's call)
+
+lib/data.ts still lists **29 online BA/MA Psychology programme rows across 26 universities**, and
+**32 `/universities/{id}/{ba|ma}/psychology` URLs are in valid-urls.json** as indexed pages. UGC withdrew
+recognition for Psychology as a specialisation in ODL/Online mode from the July-August 2025 session
+(notice F.No. 4-1/2025 (DEB-NER), 12 Aug 2025, deb.ugc.ac.in/Uploads/Notices_Upload/UGC_20250814162155_1.pdf).
+Also `/blog/ma-distance-learning-india-2026` mentions online psychology. Fix needs: drop the spec from
+lib/data.ts and data-slim, regenerate allowlists/valid-urls/canonical map, and redirect the 32 URLs to
+their programme hub (check-gsc-404s requires a redirect for any URL with GSC history).
+
+## Also found: one-year online PG (28 Jul 2026)
+UGC circular F.No. 7-2/2026 (DEB-NWR), 28 Jul 2026: universities entitled for a two-year online PG may
+offer a one-year online PG in the same discipline, only to four-year honours graduates; MBA/MCA
+eligibility follows the regulator. Feeds item 8 and the "one year online mba" row (P1).
+- 2026-10-26 · #7 patch · added the Aug 2025 NCAHP/psychology ban to `/blog/online-degree-courses-india` (warning box, FAQ, figure, sources).

@@ -49354,6 +49354,161 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <p class="disclaimer"><em>Last verified against UGC notices on 26 October 2026. UGC can replace this policy at any time. Confirm the current policy on ugc.gov.in before relying on it.</em></p>
     `,
   },
+  {
+    slug: 'online-degree-courses-india',
+    title: 'Online Degree Courses in India 2026: What UGC Allows',
+    seoTitle: 'Online Degree Courses in India 2026: What UGC Allows',
+    h1Title: 'Online Degree Courses in India 2026: Every Degree UGC Allows Online, and the Ones It Bans',
+    metaDescription: 'Which online degree courses are valid in India: BA, B.Com, BBA, BCA, MA, M.Com, MBA, MCA, MSc. What UGC bans online, who may offer them, and how to check.',
+    category: 'Online Degree Validity',
+    tags: ['Online Degree Courses', 'Online Degree India', 'UGC Approved Online Degrees', 'UGC-DEB', 'Online University', 'Student Guidance'],
+    publishedAt: '2026-10-26',
+    readTime: 9,
+    targetKeyword: 'online degree courses in india',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/30858451/pexels-photo-30858451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@shootsaga" target="_blank" rel="noopener nofollow">Anil  Sharma</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling young girl with headset on a video call, studying online at home.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'Which online degree courses are valid in India?', a: 'Undergraduate and postgraduate degrees and two-year postgraduate diplomas offered in Online mode by a university UGC has recognised or entitled for that programme and session. In practice that covers BA, B.Com, BBA, BCA, MA, M.Com, MBA, MCA and some MSc and BSc programmes.' },
+      { q: 'Are online degrees from Indian universities equal to regular degrees?', a: 'Yes, when the programme is UGC-entitled. Regulation 22 of the UGC ODL and Online Programmes Regulations, 2020 treats them as equivalent to the corresponding conventional degrees.' },
+      { q: 'Which degrees cannot be done online in India?', a: 'UGC prohibits ODL and Online programmes in engineering, medical, physiotherapy, para-medical, pharmacy, nursing, dental, architecture, law, agriculture, horticulture, hotel management, catering technology, culinary sciences, aircraft maintenance, visual arts and sports, and aviation. M.Phil and Ph.D. are also prohibited in both modes, and since the July-August 2025 session so are allied and healthcare specialisations such as Psychology, Microbiology and Biotechnology.' },
+      { q: 'Which universities can offer online degrees?', a: 'Under the 2020 regulations, a university with a NAAC score of 3.26 or above, or a top-100 rank in the NIRF University category at least twice in three preceding cycles, may start full online programmes without prior UGC approval, subject to all other conditions. UGC publishes the entitled list on deb.ugc.ac.in each session.' },
+      { q: 'How do I check whether an online degree course is UGC approved?', a: 'Find the university and the exact programme, in Online mode, for your admission session on deb.ugc.ac.in. Also confirm the university is not on the UGC fake universities list and check its NAAC status on naac.gov.in.' },
+      { q: 'Do I need anything before taking admission in an online degree?', a: 'Yes. UGC requires a DEB ID, created on deb.ugc.ac.in from your ABC or APAAR ID, for every ODL and Online admission since the session beginning October 2024.' },
+      { q: 'How are online degree exams conducted?', a: 'Through proctored end-semester exams, either remotely with webcam proctoring or at a designated test centre. Continuous assessment counts for at most 30 per cent of marks and the exam for at least 70 per cent.' },
+    ],
+    ctaTitle: 'Shortlist an online degree that UGC actually entitles',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">You can earn a valid degree online in India, but only certain degrees, only from certain universities, and only for the session UGC has cleared. Here is the whole map on one page.</p>
+
+<p><strong>Short answer:</strong> an online degree in India is valid when a <strong>UGC-entitled university</strong> offers that <strong>exact programme in Online mode</strong> for the session you join. The degrees available online are mainly <strong>BA, B.Com, BBA, BCA, MA, M.Com, MBA, MCA, and some MSc and BSc programmes</strong>. UGC <strong>bans</strong> engineering, law, medicine, nursing, pharmacy, architecture and several other disciplines online, and bars M.Phil and Ph.D. Under Regulation 22 of the UGC 2020 regulations, a valid online degree is <strong>equivalent to a regular one</strong>.</p>
+
+<div class="callout-key">
+<strong>Online degrees in India at a glance (last verified 26 October 2026)</strong>
+<ul>
+<li><strong>Rulebook:</strong> UGC (ODL Programmes and Online Programmes) Regulations, 2020, amended in 2021, 2022 and 2024</li>
+<li><strong>Who may offer them:</strong> universities with a NAAC score of 3.26+ or a top-100 NIRF University rank twice in three cycles, subject to other conditions</li>
+<li><strong>Where to verify:</strong> deb.ugc.ac.in, programme by programme, session by session</li>
+<li><strong>Before admission:</strong> a DEB ID, made from your ABC/APAAR ID</li>
+<li><strong>Exams:</strong> proctored, with the end-semester exam worth at least 70% of marks</li>
+<li><strong>Value:</strong> equivalent to the conventional degree (Regulation 22)</li>
+</ul>
+</div>
+
+<h2>Which online degree courses can you study in India?</h2>
+
+<p>The table below lists the degrees that UGC-entitled universities commonly offer online, with the number of universities offering each one in the edifyedu.in database of 143 universities. A university appearing here still needs entitlement for your specific session, which you confirm on deb.ugc.ac.in.</p>
+
+<table>
+<thead><tr><th>Online degree</th><th>Level</th><th>Universities in our database</th><th>Usual duration</th></tr></thead>
+<tbody>
+<tr><td>MBA</td><td>Postgraduate</td><td>121</td><td>Usually 2 years</td></tr>
+<tr><td>BBA</td><td>Undergraduate</td><td>80</td><td>Usually 3 years</td></tr>
+<tr><td>MCA</td><td>Postgraduate</td><td>74</td><td>Usually 2 years</td></tr>
+<tr><td>BCA</td><td>Undergraduate</td><td>57</td><td>Usually 3 years</td></tr>
+<tr><td>B.Com</td><td>Undergraduate</td><td>57</td><td>Usually 3 years</td></tr>
+<tr><td>MA</td><td>Postgraduate</td><td>52</td><td>Usually 2 years</td></tr>
+<tr><td>M.Com</td><td>Postgraduate</td><td>50</td><td>Usually 2 years</td></tr>
+<tr><td>BA</td><td>Undergraduate</td><td>27</td><td>Usually 3 years</td></tr>
+<tr><td>MSc</td><td>Postgraduate</td><td>17</td><td>Usually 2 years</td></tr>
+<tr><td>BSc</td><td>Undergraduate</td><td>2</td><td>Usually 3 years</td></tr>
+</tbody>
+</table>
+
+<p>Two patterns stand out. Management and computer applications dominate, because they need no lab work and UGC lets central, state and private universities run them online without a separate AICTE approval. Science degrees are scarce, because UGC does not permit online programmes that require practical or laboratory courses, which rules out most of a BSc.</p>
+
+<h2>Which degrees does UGC ban online?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>UGC's public notice of 11 November 2024 lists the disciplines that cannot be offered in ODL or Online mode, including their allied fields. If a website offers one of these online, treat it as a warning, not an opportunity.</p>
+
+<div class="callout-warning">
+<strong>Not permitted online or by distance:</strong> Engineering, Medical, Physiotherapy, Occupational Therapy and other para-medical disciplines, Pharmacy, Nursing, Dental, Architecture, Law, Agriculture, Horticulture, Hotel Management, Catering Technology, Culinary Sciences, Aircraft Maintenance, Visual Arts and Sports, and Aviation. Yoga, and Tourism and Hospitality Management, are not permitted online at UG and PG level. M.Phil and Ph.D. are prohibited in both ODL and Online mode. Since the July-August 2025 session, UGC also bars allied and healthcare specialisations under the NCAHP Act, 2021, naming Psychology, Microbiology, Food and Nutrition Science, Biotechnology, and Clinical Nutrition and Dietetics.
+</div>
+
+<p>This answers a lot of searches directly. An "online B.Tech", "online LLB" or "online PhD" from an Indian university is not a UGC-recognised online degree. Working professionals have other routes in some of these fields, but those run under different regulators and rules, not as UGC online degrees.</p>
+
+<figure class="svg-figure">
+<svg viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two-column summary: degrees commonly offered online in India such as BA, B.Com, BBA, BCA, MA, M.Com, MBA, MCA and some MSc, versus disciplines UGC prohibits online such as engineering, law, medicine, nursing, pharmacy, architecture, agriculture, hotel management and PhD">
+<rect width="640" height="250" fill="#ffffff"/>
+<rect x="16" y="16" width="296" height="218" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+<text x="164" y="44" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Offered online (if entitled)</text>
+<g font-size="12.5" fill="#0f172a">
+<text x="36" y="74">MBA, MCA</text><text x="36" y="98">MA, M.Com, some MSc</text><text x="36" y="122">BBA, BCA</text><text x="36" y="146">BA, B.Com, limited BSc</text><text x="36" y="170">PG diplomas (two-year)</text>
+</g>
+<text x="164" y="214" text-anchor="middle" font-size="11" fill="#64748b">Check the programme and session on deb.ugc.ac.in</text>
+<rect x="328" y="16" width="296" height="218" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+<text x="476" y="44" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Prohibited online</text>
+<g font-size="12.5" fill="#0f172a">
+<text x="348" y="74">Engineering, Architecture</text><text x="348" y="98">Law</text><text x="348" y="122">Medical, Dental, Nursing, Pharmacy</text><text x="348" y="146">Para-medical, Physiotherapy</text><text x="348" y="170">Agriculture, Hotel Management</text><text x="348" y="194">M.Phil, Ph.D., Psychology</text>
+</g>
+<text x="476" y="214" text-anchor="middle" font-size="11" fill="#64748b">UGC public notice, 11 November 2024 (partial list)</text>
+</svg>
+<figcaption>The left column needs entitlement for your session. The right column is closed regardless of the university.</figcaption>
+</figure>
+
+<h2>Which universities are allowed to offer online degrees?</h2>
+
+<p>UGC ties online programmes to quality benchmarks. Under Regulation 3(B) of the 2020 regulations, a university with a <strong>NAAC score of 3.26 or above</strong>, or a <strong>top-100 rank in the NIRF University category at least twice in the three preceding cycles</strong>, may start full online programmes without prior UGC approval, as long as it meets every other condition. The May 2024 amendment confirmed these NAAC and NIRF requirements apply from the session beginning July-August 2024 onward.</p>
+
+<p>Other conditions matter too. A university can only take a discipline online if it already teaches it in regular or distance mode, and UGC bars franchise arrangements, so admissions must run through the university itself. UGC then publishes, for every session, which universities are recognised or entitled and for which programmes. That list, not a brochure, is the authority.</p>
+
+<p class="pull">The NAAC grade gets a university through the door. The DEB list tells you which programmes it may sell this session.</p>
+
+<p>NAAC grades lapse when an accreditation cycle expires, so check the current status on <a href="https://naac.gov.in" target="_blank" rel="noopener">naac.gov.in</a>, and remember that every NIRF rank belongs to a category. The University category is the one this rule uses. Our explainer on <a href="/guides/naac-nirf-rankings-explained">NAAC and NIRF rankings</a> covers how to read both.</p>
+
+<h2>Is an online degree as valid as a regular degree?</h2>
+
+<p>Yes, for an entitled programme. Regulation 22 says degrees and postgraduate diplomas awarded in ODL or Online mode by recognised institutions are equivalent to the corresponding conventional awards. Each degree carries a unique number and is uploaded to the National Academic Depository, which makes it verifiable by employers. Our guide on <a href="/guides/is-online-degree-valid-india">whether an online degree is valid in India</a> covers jobs, government recruitment and higher study.</p>
+
+<h2>How do you check an online degree course before paying?</h2>
+
+<ol>
+<li><strong>Rule out fake institutions</strong> on the <a href="/blog/ugc-fake-universities-list-2026">UGC fake universities list</a>.</li>
+<li><strong>Confirm the programme is entitled</strong> for Online mode and your session on <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>. Our step-by-step <a href="/guides/how-to-check-ugc-deb-approval">UGC-DEB approval guide</a> shows where to look.</li>
+<li><strong>Check NAAC status and validity</strong> on naac.gov.in.</li>
+<li><strong>Create your DEB ID</strong>, which is mandatory for every ODL and Online admission. See <a href="/blog/ugc-deb-id-explained">our DEB ID guide</a>.</li>
+<li><strong>Read the refund clause</strong> and note the last date of admission, because UGC refund rules count days from that date.</li>
+</ol>
+
+<p>Or skip the manual work for the universities we track: the <a href="/verify">edifyedu.in verify tool</a> shows each university's UGC-DEB and NAAC standing on one page.</p>
+
+<h2>How does studying for an online degree actually work?</h2>
+
+<p>Teaching runs through the university's learning platform in four parts that UGC calls quadrants: video lectures, reading material, web resources, and self-assessment. The university tracks participation through its platform. Each semester ends in a proctored exam, written remotely under webcam supervision or at a test centre, and the exam carries at least 70 per cent of the marks. Our guide on <a href="/blog/how-online-degree-exams-work-india">how online degree exams work</a> explains it step by step.</p>
+
+<p>Online degrees run on two sessions a year, beginning in January to February or July to August. If you missed one, see <a href="/blog/ugc-biannual-admissions-january-july-intake">how the January and July intakes work</a>. Since 2022, UGC has also allowed an online degree alongside a regular one.</p>
+
+<h2>What do online degrees cost?</h2>
+
+<p>Fees vary widely by university and programme, and they change between intakes. We do not quote a single range here, because one number across 143 universities would mislead more than it helps. Each university page on edifyedu.in lists its published fee, and every figure there is indicative. Confirm the current fee on the university's official portal before you pay.</p>
+
+<div class="cta-box">
+<p><strong>Trying to shortlist from 143 universities?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities side by side</a> or <a href="/contact">ask us</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulations 3(B), 15 and 22: deb.ugc.ac.in/Regulations</li>
+<li>UGC Third Amendment Regulations, 2024 (Gazette, 2 May 2024): deb.ugc.ac.in/Regulations</li>
+<li>UGC public notice F.No. 1-34/2024 (DEB-I), 11 November 2024, on precautions before enrolling in ODL and Online programmes: deb.ugc.ac.in</li>
+<li>UGC public notice F.No. 4-1/2025 (DEB-NER), 12 August 2025, on NCAHP allied and healthcare specialisations including Psychology: deb.ugc.ac.in</li>
+<li>UGC-DEB, Online Learning: deb.ugc.ac.in</li>
+<li>NAAC accreditation status: naac.gov.in. NIRF rankings: nirfindia.org</li>
+<li>UGC-DEB notice of April 2025 recording the 578th Commission decision on AICTE approval for management and computer applications programmes: deb.ugc.ac.in</li>
+<li>University counts: edifyedu.in database of 143 universities, 26 October 2026</li>
+</ul>
+
+<p class="disclaimer"><em>Last verified on 26 October 2026. Entitlement is granted per programme and per session, and UGC can change the rules by notice. Confirm on deb.ugc.ac.in before you enrol.</em></p>
+    `,
+  },
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))
