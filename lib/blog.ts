@@ -49204,6 +49204,156 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <p class="disclaimer"><em>Last verified on 26 October 2026. UGC-DEB announces session names and last dates by notice, and they change. Confirm the current session and deadline on deb.ugc.ac.in before you apply.</em></p>
     `,
   },
+  {
+    slug: 'ugc-fee-refund-policy',
+    title: 'UGC Fee Refund Policy 2026: How Much You Get Back',
+    seoTitle: 'UGC Fee Refund Policy 2026: How Much You Get Back',
+    h1Title: 'UGC Fee Refund Policy: How Much a University Must Refund When You Cancel Admission',
+    metaDescription: 'UGC requires universities to refund fees when you cancel admission, within 15 days of your written request. The full-refund window, the 2018 table, and how to complain.',
+    category: 'Online Degree Validity',
+    tags: ['UGC Fee Refund Policy', 'Refund of Fees', 'Cancel Admission', 'UGC Rules', 'Online Degree Admission', 'Student Guidance'],
+    publishedAt: '2026-10-26',
+    readTime: 7,
+    targetKeyword: 'ugc refund policy',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/30858451/pexels-photo-30858451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@shootsaga" target="_blank" rel="noopener nofollow">Anil  Sharma</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling young girl with headset on a video call, studying online at home.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'What is the UGC fee refund policy?', a: 'It is the rule UGC sets for refunds when a student cancels or withdraws admission. The current policy is the Fee Refund Policy 2024-25, issued on 12 June 2024, which UGC said on 27 October 2025 remains in force for later sessions until a new policy is issued.' },
+      { q: 'Will I get a full refund if I cancel admission?', a: 'Under the 2024-25 policy, cancellations up to 30 September 2024 got a full refund, and up to 31 October 2024 a refund with a processing deduction of at most Rs 1,000. For admission schedules running past the cut-off, the 2018 UGC table applies, which gives 100 per cent if you withdraw 15 days or more before the notified last date of admission.' },
+      { q: 'How long does a university have to refund my fees?', a: 'Fifteen days from the date it receives your written application, under the UGC notification of October 2018 that the current policy relies on.' },
+      { q: 'Does the UGC refund policy apply to online degrees?', a: 'The policy applies to all higher education institutions under the UGC Act, including deemed universities and affiliated colleges, and does not carve out online mode. The 2020 ODL and Online regulations also require universities to publish their refund percentage and timeline in advance.' },
+      { q: 'Can a university keep my original certificates?', a: 'No. UGC prohibits universities from taking original certificates into custody. They may verify originals at admission but must return them immediately and keep self-attested copies.' },
+      { q: 'What can I do if a university refuses to refund my fees?', a: 'Delay in or denial of a refund due under the rules is a recognised grievance under the UGC (Redressal of Grievances of Students) Regulations, 2023. Raise it with the university grievance body in writing, then escalate to UGC if it is not resolved.' },
+      { q: 'Is caution money or a security deposit refundable?', a: 'Yes. UGC says caution money and security deposits are not part of the fees and must be refunded in full.' },
+    ],
+    ctaTitle: 'Check the refund terms before you pay',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">Paid a university and changed your mind? UGC rules decide how much you get back and how fast. Most students never read them, and some universities count on that.</p>
+
+<p><strong>Short answer:</strong> UGC requires every university to refund fees when a student cancels or withdraws admission. The current rule is the <strong>UGC Fee Refund Policy 2024-25</strong>, which UGC confirmed on 27 October 2025 stays in force for later sessions until it issues a new one. It gives a full refund up to a cut-off date, a small processing deduction for a short period after, and then the <strong>2018 UGC refund table</strong>, which ties your refund to how close you withdraw to the last date of admission. The university must pay <strong>within 15 days</strong> of your written application.</p>
+
+<div class="callout-key">
+<strong>The refund rules in one box (last verified 26 October 2026)</strong>
+<ul>
+<li><strong>Policy in force:</strong> UGC Fee Refund Policy 2024-25 (letter of 12 June 2024), continued by UGC notice of 27 October 2025</li>
+<li><strong>Applies to:</strong> all universities and colleges under the UGC Act, including deemed universities, affiliated colleges, and bodies that collect fees on their behalf</li>
+<li><strong>Deadline to pay you:</strong> 15 days from your written application</li>
+<li><strong>Caution money and security deposit:</strong> refunded in full</li>
+<li><strong>Original certificates:</strong> may not be retained</li>
+<li><strong>If refused:</strong> a grievance under the UGC Student Grievance Regulations, 2023</li>
+</ul>
+</div>
+
+<h2>What does the UGC fee refund policy say?</h2>
+
+<p>The Commission adopted the 2024-25 policy at its 580th meeting on 15 May 2024 and sent it to universities on 12 June 2024. Its core rule overrides anything in a prospectus or schedule: a full refund for every cancellation of admission or migration up to 30 September 2024, and a refund with a processing deduction of not more than Rs 1,000 up to 31 October 2024.</p>
+
+<p>For any admission schedule that runs past that cut-off, the policy points to the UGC notification of October 2018 on refund of fees. On 27 October 2025, UGC wrote to universities that the 2024-25 policy remains in force for later sessions, with a cut-off date of 31 October 2025, until it issues a new policy. We found no newer policy on ugc.gov.in when we checked on 26 October 2026.</p>
+
+<p class="pull">The policy overrides the prospectus. A "no refund" line in a brochure does not cancel a UGC rule.</p>
+
+<h2>How much do you get back? The 2018 UGC table</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>This is the table most students actually fall under, because it covers admission schedules that run beyond the fixed cut-off dates. Your refund depends on when the university receives your written notice of withdrawal, measured against the formally notified last date of admission.</p>
+
+<table>
+<thead><tr><th>When the university receives your withdrawal notice</th><th>Refund of fees</th></tr></thead>
+<tbody>
+<tr><td>15 days or more before the notified last date of admission</td><td>100%</td></tr>
+<tr><td>Less than 15 days before the notified last date of admission</td><td>90%</td></tr>
+<tr><td>15 days or less after the notified last date of admission</td><td>80%</td></tr>
+<tr><td>More than 15 days but not more than 30 days after the last date</td><td>50%</td></tr>
+<tr><td>More than 30 days after the last date</td><td>0%</td></tr>
+</tbody>
+</table>
+
+<p>One deduction applies to the first row only. In the 100 per cent case, the university may keep processing charges of not more than 5 per cent of the fees paid, capped at Rs 5,000. Caution money and security deposits are not fees, so they come back in full in every row.</p>
+
+<figure class="svg-figure">
+<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bar chart of the UGC 2018 refund table: 100 per cent refund 15 or more days before the last date of admission, 90 per cent less than 15 days before, 80 per cent up to 15 days after, 50 per cent 16 to 30 days after, and 0 per cent more than 30 days after">
+<rect width="640" height="230" fill="#ffffff"/>
+<text x="320" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Refund falls the later you withdraw (UGC, October 2018)</text>
+<line x1="40" y1="180" x2="620" y2="180" stroke="#64748b"/>
+<g font-size="12" text-anchor="middle">
+<rect x="60" y="40" width="80" height="140" fill="#10b981"/><text x="100" y="34" fill="#0f172a" font-weight="700">100%</text>
+<rect x="170" y="54" width="80" height="126" fill="#10b981"/><text x="210" y="48" fill="#0f172a" font-weight="700">90%</text>
+<rect x="280" y="68" width="80" height="112" fill="#B8892A"/><text x="320" y="62" fill="#0f172a" font-weight="700">80%</text>
+<rect x="390" y="110" width="80" height="70" fill="#f97316"/><text x="430" y="104" fill="#0f172a" font-weight="700">50%</text>
+<rect x="500" y="178" width="80" height="2" fill="#ef4444"/><text x="540" y="168" fill="#0f172a" font-weight="700">0%</text>
+<text x="100" y="198" fill="#0f172a">15+ days</text><text x="100" y="212" fill="#64748b">before</text>
+<text x="210" y="198" fill="#0f172a">Under 15 days</text><text x="210" y="212" fill="#64748b">before</text>
+<text x="320" y="198" fill="#0f172a">Up to 15 days</text><text x="320" y="212" fill="#64748b">after</text>
+<text x="430" y="198" fill="#0f172a">16 to 30 days</text><text x="430" y="212" fill="#64748b">after</text>
+<text x="540" y="198" fill="#0f172a">30+ days</text><text x="540" y="212" fill="#64748b">after</text>
+</g>
+</svg>
+<figcaption>Days are counted from the formally notified last date of admission. Source: UGC notification on Refund of Fees, October 2018, as reproduced in the Fee Refund Policy 2024-25.</figcaption>
+</figure>
+
+<h2>Does the refund policy cover online degrees?</h2>
+
+<p>The policy names who it applies to: universities established under a central or state law, institutions recognised under the UGC Act, deemed universities and affiliated colleges. It does not exclude online or distance programmes. It also covers organisations that run counselling or collect fees on behalf of universities, and it makes the university responsible for the refund in that case.</p>
+
+<p>There is a second layer for online learners. The UGC ODL and Online regulations of 2020 require each university to publish, in advance, the percentage of tuition fee and other charges refundable on withdrawal and the time and manner of refund. So read the refund clause on the university's website before you pay, and keep a screenshot with the date.</p>
+
+<div class="callout-warning">
+<strong>Get the "last date of admission" in writing.</strong> The 2018 table counts days from the formally notified last date of admission. If you do not know that date, you cannot tell which row you fall in. For online programmes, UGC-DEB also fixes a last date to admit learners for each session on deb.ugc.ac.in.
+</div>
+
+<h2>How do you claim a refund?</h2>
+
+<ol>
+<li><strong>Write to the university.</strong> Send a written withdrawal and refund request by email and, if possible, by post. Quote your application number and the date and amount paid.</li>
+<li><strong>Note the date it was received.</strong> Both the refund percentage and the 15-day payment clock run from the date the university receives your written notice.</li>
+<li><strong>Ask for originals back.</strong> UGC prohibits universities from keeping original certificates. They may verify them at admission and must return them immediately.</li>
+<li><strong>Follow up after 15 days.</strong> If the money has not arrived, write again and cite the UGC Fee Refund Policy and the 15-day rule.</li>
+<li><strong>Escalate as a grievance.</strong> Delay in, or denial of, a refund due to a student is listed as a grievance under the UGC (Redressal of Grievances of Students) Regulations, 2023. Use the university's grievance mechanism first, then escalate to UGC.</li>
+</ol>
+
+<p>If you paid through an agent or a "counselling" company, the policy still makes the university responsible. That is one more reason to pay only through the university's official channel. UGC also bars franchise arrangements for online and distance admissions, as our <a href="/blog/ugc-deb-id-explained">DEB ID guide</a> explains.</p>
+
+<h2>What happens to a university that breaks the policy?</h2>
+
+<p>UGC states that any institution violating the refund policy is liable for punitive action under Clause 5 of its October 2018 notification. In its October 2025 notice it also asked universities to stick to the cut-off dates in each year's policy, from 2021-22 to 2024-25, to settle old pending cases.</p>
+
+<p>For a student, the practical leverage is the written record. A dated request, a received date and a citation of the policy turn a refund from a favour into an obligation.</p>
+
+<h2>Before you pay any fee</h2>
+
+<ul>
+<li>Check the institution is not on the <a href="/blog/ugc-fake-universities-list-2026">UGC fake universities list</a>. A fake body will not follow any refund rule.</li>
+<li>Check the programme is entitled for your session. Our guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> shows how.</li>
+<li>Find the notified last date of admission and the university's published refund clause.</li>
+<li>Pay only to the university's own account and keep every receipt.</li>
+</ul>
+
+<p>If you are still choosing, you can <a href="/compare">compare universities side by side</a> or read <a href="/guides/is-online-degree-valid-india">whether an online degree is valid in India</a>.</p>
+
+<div class="cta-box">
+<p><strong>Not sure what a university's refund terms really mean?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC, Fee Refund Policy 2024-25, D.O. No. F.2-71/2022 (CPP-II), 12 June 2024 (580th Commission meeting, 15 May 2024): ugc.gov.in</li>
+<li>UGC, Fee Refund Policy for Academic Session 2025-26, notice of 27 October 2025: ugc.gov.in</li>
+<li>UGC Notification on Refund of Fees and Non-Retention of Original Certificates, October 2018 (reproduced in the above)</li>
+<li>UGC (Redressal of Grievances of Students) Regulations, 2023: ugc.gov.in</li>
+<li>UGC (ODL Programmes and Online Programmes) Regulations, 2020, prospectus disclosure on refunds: deb.ugc.ac.in/Regulations</li>
+</ul>
+
+<p class="disclaimer"><em>Last verified against UGC notices on 26 October 2026. UGC can replace this policy at any time. Confirm the current policy on ugc.gov.in before relying on it.</em></p>
+    `,
+  },
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))

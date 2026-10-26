@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07",
+  "updatedAt": "2026-10-26",
   "note": "Owner-verified fee figures that have no counterpart in lib/data.ts and therefore cannot resolve to MATCH via getDisplayFee. Only for figures a university's admissions team has confirmed in writing for a specific specialisation-tier or payment-mode variant that the fees hub does not model yet. Prefer the FeeVariant schema when implemented (see audits/fee-model-proposal-2026-08-07.md). Adding an entry here is a source-of-truth commitment: someone will re-verify at each intake.",
   "entries": [
     {
@@ -1234,6 +1234,24 @@
       "source": "Derived: Amity Online BBA one-time Rs 1,75,120 minus MUJ BBA Rs 1,44,000 (MUJ January 2027 fee chart, owner supplied 2026-10-26)",
       "verified_date": "2026-10-26",
       "note": "A fee gap, not a fee. Replaced Rs 35,620, which was the same gap against the old MUJ BBA fee of Rs 1,39,500."
+    },
+    {
+      "slug": "ugc-fee-refund-policy",
+      "university": null,
+      "programme": null,
+      "verified_date": "2026-10-26",
+      "figure": 1000,
+      "source": "UGC Fee Refund Policy 2024-25, D.O. No. F.2-71/2022 (CPP-II), 12 June 2024, para 3(a), ugc.gov.in/pdfnews/1654477_Fee-Refund-Policy-2024-25.pdf",
+      "note": "Regulatory cap, not a university fee: maximum processing deduction on cancellations up to 31 Oct 2024. Appears in body and FAQ."
+    },
+    {
+      "slug": "ugc-fee-refund-policy",
+      "university": null,
+      "programme": null,
+      "verified_date": "2026-10-26",
+      "figure": 5000,
+      "source": "UGC Notification on Refund of Fees, Oct 2018, clause 4.1.4, as reproduced in ugc.gov.in/pdfnews/1857727_Fee-Refund-Policy-2025-26.pdf",
+      "note": "Regulatory cap, not a university fee: maximum processing charge (5% of fees, capped) in the 100% refund category."
     }
   ]
 }

@@ -3,6 +3,15 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'ugc-fee-refund-policy': [
+    { label: 'Policy in force', value: '2024-25 (continued Oct 2025)' },
+    { label: 'Refund deadline', value: '15 days from written request', green: true },
+    { label: 'Withdraw 15+ days before last date', value: '100%', green: true },
+    { label: 'Within 15 days after', value: '80%' },
+    { label: '30+ days after', value: '0%' },
+    { label: 'Original certificates', value: 'Must be returned', green: true },
+    { label: 'Last verified', value: '26 Oct 2026', green: true },
+  ],
   'ugc-biannual-admissions-january-july-intake': [
     { label: 'Windows', value: 'Jan/Feb and Jul/Aug' },
     { label: 'Regular degrees', value: 'Optional (UG/PG Regs 2025)' },
