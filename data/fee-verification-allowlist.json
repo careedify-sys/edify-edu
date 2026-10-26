@@ -4,7 +4,6 @@
     { "id": "lovely-professional-university-online", "reason": "data.ts corrected to 161600-200000 (verified). fees-hub-data.json still shows 161000-200000. Pending hub sync." },
     { "id": "sharda-university-online", "reason": "data.ts corrected to 140000-154500 (verified). fees-hub-data.json still shows 150000-150000. Pending hub sync." },
     { "id": "vignan-university-online", "reason": "data.ts corrected to 90000-90000 (verified). fees-hub-data.json still shows 110000-110000. Pending hub sync." },
-    { "id": "uttaranchal-university-online", "reason": "data.ts corrected to 94000-98000 (verified). fees-hub-data.json still shows 110000-110000. Pending hub sync." },
     { "id": "srm-institute-science-technology-online", "reason": "data.ts corrected to 150000-189000 (verified). fees-hub-data.json still shows 60000-189000. Pending hub sync." },
     { "id": "gla-university-online", "reason": "data.ts corrected to 140000-220000 (verified). fees-hub-data.json still shows 60000-200000. Pending hub sync." },
     { "id": "ignou-online", "reason": "data.ts corrected to 66000-66000 (verified). fees-hub-data.json still shows 9600-66000. Pending hub sync." }

@@ -34,13 +34,13 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'marketing',
     faqs: [
       { q: 'Is Amity or MUJ better for online MBA?', a: 'Both are NAAC A+ and UGC-DEB approved. Amity has 19 specialisations and QS ranking. MUJ has Coursera Plus bundled and Manipal group brand. Choose based on spec variety vs platform perks.' },
-      { q: 'What is the fee difference between Amity and MUJ?', a: 'Amity costs Rs 2,07,000 (one-time) to Rs 2,25,000 (standard). MUJ costs Rs 1,80,000 (or Rs 1,53,000 with 15% upfront discount). MUJ is more affordable.' },
+      { q: 'What is the fee difference between Amity and MUJ?', a: 'Amity costs Rs 2,07,000 (one-time) to Rs 2,25,000 (standard). MUJ costs Rs 1,84,000 (or Rs 1,56,400 with 15% upfront discount). MUJ is more affordable.' },
       { q: 'Does MUJ include Coursera Plus?', a: 'Yes. MUJ bundles free Coursera Plus access throughout the programme. Amity does not include Coursera but offers broader specialisation options.' },
       { q: 'Which university has better NIRF rank?', a: 'Amity holds NIRF #22 University. MUJ holds NIRF rank in the University category as well. Both are comparable in NIRF positioning.' },
       { q: 'Can I get scholarships at both universities?', a: 'MUJ offers 5 scholarship categories including Defence, Divyaang, and Merit. Amity offers Defence, Divyaang, Alumni, Merit, and Sports scholarships. Both have multiple discount options.' },
     ],
     verdictA: ['You want 19 specialisation options', 'QS Asia-Pacific ranking matters for international portability', 'Your target is NCR-region employers'],
-    verdictB: ['Coursera Plus free access adds genuine value to your learning', 'You want the Manipal group brand at a lower fee', 'You qualify for MUJs 15% upfront discount (saves Rs 27,000)'],
+    verdictB: ['Coursera Plus free access adds genuine value to your learning', 'You want the Manipal group brand at a lower fee', 'You qualify for MUJs 15% upfront discount (saves Rs 27,600)'],
   },
   'amity-vs-nmims': {
     uniA: 'amity-university-online',
@@ -94,7 +94,7 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'finance',
     faqs: [
       { q: 'Is MUJ or NMIMS better for online MBA Finance?', a: 'NMIMS has NIRF #17 Management rank and stronger Mumbai BFSI recruiter connections. MUJ is more affordable and includes Coursera Plus. For pure finance careers in Mumbai, NMIMS. For value, MUJ.' },
-      { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,80,000 (Rs 1,53,000 with upfront discount). NMIMS costs Rs 1,96,000 to Rs 2,20,000. MUJ saves Rs 16,000-67,000 depending on payment track.' },
+      { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,84,000 (Rs 1,56,400 with upfront discount). NMIMS costs Rs 1,96,000 to Rs 2,20,000. MUJ saves Rs 12,000-63,600 depending on payment track.' },
       { q: 'Which has more specialisations?', a: 'MUJ offers 13 specialisations. NMIMS offers 5-6. MUJ has broader choice; NMIMS is more focused.' },
       { q: 'Does NMIMS have better brand recognition?', a: 'NMIMS has stronger recognition specifically in Mumbai financial services. MUJ benefits from the Manipal group brand which is stronger in South India and healthcare sectors.' },
       { q: 'Are both UGC-DEB approved?', a: 'Yes. Both are UGC-DEB approved, NAAC accredited, and legally equivalent. Government and private sector employers accept both.' },
@@ -110,13 +110,13 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'finance',
     faqs: [
-      { q: 'Is MUJ or MAHE better for online MBA?', a: 'MAHE is the flagship Manipal entity (NIRF #3 University, NAAC A++). MUJ is the Jaipur campus (NAAC A+). Both run on the same platform. MAHE costs Rs 1,12,000 more but carries stronger brand weight.' },
+      { q: 'Is MUJ or MAHE better for online MBA?', a: 'MAHE is the flagship Manipal entity (NIRF #3 University, NAAC A++). MUJ is the Jaipur campus (NAAC A+). Both run on the same platform. MAHE costs Rs 1,08,000 more but carries stronger brand weight.' },
       { q: 'Are MUJ and MAHE the same university?', a: 'No. MUJ (Manipal University Jaipur) and MAHE (Manipal Academy of Higher Education, Manipal Karnataka) are separate universities under the same Manipal group. Independently accredited and ranked.' },
-      { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,80,000. MAHE costs Rs 2,92,000. MAHE is Rs 1,12,000 more expensive. Both include Coursera Plus.' },
+      { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,84,000. MAHE costs Rs 2,92,000. MAHE is Rs 1,08,000 more expensive. Both include Coursera Plus.' },
       { q: 'Do both include Coursera Plus?', a: 'Yes. Both MUJ and MAHE bundle free Coursera Plus access. The platform and LMS experience is similar.' },
-      { q: 'Is MAHE worth the extra Rs 1.12L?', a: 'MAHE carries NIRF #3 University rank and Institution of Eminence potential. For employers who specifically value the MAHE flagship brand, the premium may be justified. For employers who treat both as Manipal degrees, MUJ is better value.' },
+      { q: 'Is MAHE worth the extra Rs 1.08L?', a: 'MAHE carries NIRF #3 University rank and Institution of Eminence potential. For employers who specifically value the MAHE flagship brand, the premium may be justified. For employers who treat both as Manipal degrees, MUJ is better value.' },
     ],
-    verdictA: ['Budget matters: save Rs 1,12,000 vs MAHE', 'Your employer treats both as Manipal group degrees', 'You want Coursera Plus at the lowest Manipal fee'],
+    verdictA: ['Budget matters: save Rs 1,08,000 vs MAHE', 'Your employer treats both as Manipal group degrees', 'You want Coursera Plus at the lowest Manipal fee'],
     verdictB: ['NIRF #3 University rank is a genuine career differentiator for you', 'Your target employers specifically value the MAHE flagship brand', 'You qualify for MAHE scholarships (Defence 20%, Female 15%, etc.)'],
   },
   'amity-vs-symbiosis': {
@@ -157,7 +157,7 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'finance',
     faqs: [
       { q: 'Is LPU or MUJ better for online MBA?', a: 'LPU has NAAC A++ and dual-specialisation option. MUJ has Coursera Plus bundled and the Manipal group brand. LPU is slightly cheaper. Both are UGC-DEB approved and AICTE recognised.' },
-      { q: 'What is the fee difference?', a: 'LPU costs Rs 1,61,600 to Rs 2,00,000. MUJ costs Rs 1,53,000 (upfront) to Rs 1,80,000. MUJ upfront is cheaper by Rs 8,600; LPU standard is cheaper by Rs 19,600.' },
+      { q: 'What is the fee difference?', a: 'LPU costs Rs 1,61,600 to Rs 2,00,000. MUJ costs Rs 1,56,400 (upfront) to Rs 1,84,000. MUJ upfront is Rs 5,200 below the lowest LPU fee; the full MUJ fee is Rs 22,400 above it.' },
       { q: 'Does MUJ include Coursera Plus with online MBA?', a: 'Yes. MUJ bundles free Coursera Plus access. LPU does not include Coursera. This is a genuine learning add-on at MUJ.' },
       { q: 'Which has more specialisations?', a: 'MUJ offers 13 specialisations. LPU offers 12 specialisations but allows dual-spec combinations. For unique spec count, MUJ leads slightly. For combination flexibility, LPU leads.' },
     ],
@@ -199,7 +199,7 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'finance',
     faqs: [
       { q: 'Is MUJ or Chandigarh University better for online MBA?', a: 'MUJ has Coursera Plus bundled and the Manipal group brand. CU has PwC triple certification and NIRF #19 University. Both are NAAC A+ and UGC-DEB approved.' },
-      { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,53,000 (upfront) to Rs 1,80,000. CU costs Rs 1,65,000 to Rs 2,20,000. MUJ upfront is cheaper. At standard track, MUJ is Rs 15,000-40,000 less expensive.' },
+      { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,56,400 (upfront) to Rs 1,84,000. CU costs Rs 1,65,000 to Rs 2,20,000. MUJ upfront is Rs 8,600 below the lowest CU fee. The full MUJ fee is Rs 36,000 below the top CU track.' },
       { q: 'Which includes Coursera Plus?', a: 'Only MUJ. MUJ bundles free Coursera Plus access. CU includes PwC/PMI/IBM certifications instead. Different value add-ons for different learning styles.' },
       { q: 'Which has better NIRF rank?', a: 'CU has NIRF #19 University (stronger). MUJ has NIRF #58 University. CU ranks significantly higher in NIRF.' },
     ],
@@ -270,8 +270,8 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MCA',
     defaultSpec: 'general',
     faqs: [
-      { q: 'Is MUJ or Chandigarh University better for online MCA?', a: 'MUJ MCA costs Rs 1,58,000 with 5 specs (AI/Data Science, Emerging Tech, AI/ML, Cloud, Cybersecurity). CU MCA costs Rs 1,55,000 with 4 specs (Cloud, Full Stack, Data Analytics, AI/ML). Fees are nearly identical.' },
-      { q: 'What is the fee difference for MCA?', a: 'MUJ MCA costs Rs 1,58,000. CU MCA costs Rs 1,55,000. Only Rs 3,000 difference. Choose on programme features, not price.' },
+      { q: 'Is MUJ or Chandigarh University better for online MCA?', a: 'MUJ MCA costs Rs 1,64,000 (Rs 1,47,600 with the 10% discount) with 5 specs (AI/Data Science, Emerging Tech, AI/ML, Cloud, Cybersecurity). CU MCA costs Rs 1,55,000 with 4 specs (Cloud, Full Stack, Data Analytics, AI/ML). The two fees sit within Rs 10,000 of each other.' },
+      { q: 'What is the fee difference for MCA?', a: 'MUJ MCA costs Rs 1,64,000, or Rs 1,47,600 with the 10% discount. CU MCA costs Rs 1,55,000. The gap is under Rs 10,000 either way. Choose on programme features, not price.' },
       { q: 'Does MUJ include Coursera Plus with MCA?', a: 'Yes. MUJ bundles free Coursera Plus access for MCA students as well. CU does not include Coursera but has industry tie-ups with IBM and PwC.' },
       { q: 'Which has better NIRF rank?', a: 'CU has NIRF #19 University. MUJ has NIRF #58 University. CU ranks significantly higher. Both are NAAC A+ and UGC-DEB approved.' },
     ],

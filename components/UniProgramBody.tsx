@@ -47,7 +47,7 @@ import { getProgramLinks } from '@/lib/internal-links'
 import ProgramBlogLinks from './ProgramBlogLinks'
 import SiblingProgrammes from './SiblingProgrammes'
 import { getSiblingProgrammes, getUniversityOverviewLink, getVerifyPage } from '@/lib/seo/safe-internal-links'
-import { feeSentence, emiSentence, hasRealFee } from '@/lib/seo/display-guards'
+import { feeSentence, emiSentence } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
 interface Props {
@@ -157,14 +157,17 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
   //
   // NIRF sentinel guard: skip the NIRF line entirely when u.nirf is 999 or
   // otherwise out of the ranked band.
-  const feeStr = u.feeMax && u.feeMax !== u.feeMin
-    ? `₹${u.feeMin.toLocaleString('en-IN')} to ₹${u.feeMax.toLocaleString('en-IN')}`
-    : `₹${u.feeMin.toLocaleString('en-IN')}`
+  // feeMin/feeMax are the university-wide (MBA-led) range, so reading them here
+  // printed the MBA fee on every BBA, BCA, MCA and B.Com hub: MUJ BBA said
+  // "₹1,56,400 to ₹1,84,000 across 3 Years" in its FAQ and FAQPage schema.
+  // getDisplayFee resolves the fee for this programme.
+  const programFee = getDisplayFee(u, program)
+  const feeStr = programFee.ok ? programFee.range : null
   const nirfSuffix = u.nirf > 0 && u.nirf < 500 ? ` and a NIRF rank of #${u.nirf}` : ''
 
   const templateFaqs: { q: string; a: string }[] = [
     { q: `What is the total fee for ${program} at ${cleanName}?`,
-      a: `${feeSentence(feeStr, pd.duration || '2 years', hasRealFee(u))} ${emiSentence(u.emiFrom)}` },
+      a: `${feeSentence(feeStr, pd.duration || '2 years', programFee.ok)} ${emiSentence(u.emiFrom)}` },
     { q: `Is the ${program} degree from ${cleanName} valid?`,
       a: `Yes. ${cleanName} is UGC-DEB approved. UGC-DEB approved online degrees are recognised as equivalent to on-campus degrees for higher education and government recruitment.` },
     ...(specs.length ? [{ q: `What specialisations does ${cleanName} offer in ${program}?`,

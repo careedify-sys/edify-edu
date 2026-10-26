@@ -26,6 +26,16 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
     h1: 'Amity University Online MBA 2026: Fees, Specializations, and Honest Review',
     intro: 'Amity University online MBA total fees range from ₹2,07,000 to ₹2,25,000 over two years, with EMI from ₹8,906 per month. The programme holds NAAC A+ accreditation and UGC-DEB approval, covering 19 specializations from Finance to Business Analytics. International accreditations from WASC and QAA strengthen the degree for candidates targeting global employers. edifyedu.in compares Amity online MBA fees against NMIMS, Symbiosis, and other approved universities using public data only.',
   },
+  // Uttaranchal: data.ts feeMin=99600 (one-time), feeMax=148000 (before the 30%
+  // scholarship); 1,03,600 is the semester-track total. The generic template
+  // rendered "₹99.6K-₹1.48L" at 61 chars, one over the cap, so clampTitle
+  // dropped the fee from the title entirely. "From ₹99.6K" keeps it fee-led.
+  'uttaranchal-university-online': {
+    title: 'Uttaranchal Online MBA Fees 2026: From ₹99.6K | edifyedu.in',
+    description: 'Uttaranchal University online MBA fees: ₹1,03,600 after the 30% scholarship, or ₹99,600 paid upfront. 8 specialisations, NAAC A+, UGC-DEB approved.',
+    h1: 'Uttaranchal University Online MBA 2026: Fees, Specialisations and Honest Review',
+    intro: 'For the January 2027 batch, the Uttaranchal University online MBA lists at ₹1,48,000. A 30% scholarship brings it to ₹1,03,600, paid as four semester instalments of ₹25,900, and paying the full fee upfront costs ₹99,600. The programme holds NAAC A+ accreditation and UGC-DEB approval, with 8 specialisations including Logistics and Supply Chain, International Business and Digital Marketing. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Confirm the current fee on the official portal before you pay.',
+  },
   'lovely-professional-university-online': {
     title: 'LPU Online MBA 2026: Fees, Specializations, NAAC A++ Review | edifyedu.in',
     description: 'LPU online MBA fees, all specializations, NAAC A++ details. Lovely Professional University distance MBA reviewed honestly. Compare with Amity, Chandigarh, NMIMS.',
