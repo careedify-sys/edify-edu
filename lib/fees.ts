@@ -106,6 +106,9 @@ function fmtIndianShort(n: number): string {
     const rounded = Math.round(l * 100) / 100
     return `₹${String(rounded).replace(/\.?0+$/, '')}L`
   }
+  // 99,500 to 99,999 would round to "₹100K", which reads as one lakh and
+  // overstates the fee; keep one decimal there (Uttaranchal MBA is 99,600).
+  if (n >= 99500) return `₹${(n / 1000).toFixed(1).replace(/\.0$/, '')}K`
   if (n >= 1000) return `₹${Math.round(n / 1000)}K`
   return `₹${n.toLocaleString('en-IN')}`
 }

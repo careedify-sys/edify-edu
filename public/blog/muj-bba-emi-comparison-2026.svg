@@ -17,11 +17,11 @@
   <text x="510" y="260" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">₹6,000</text>
   <text x="670" y="260" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">₹9,000</text>
 
-  <!-- Row 1: MUJ ₹3,875 → 3875/9000*480 = 206.7 → green highlight (lowest) -->
+  <!-- Row 1: MUJ ₹4,000 → 4000/9000*480 = 213.3 → green highlight (lowest) -->
   <text x="180" y="104" text-anchor="end" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#10b981">MUJ Online</text>
-  <rect x="190" y="82" width="207" height="40" fill="#10b981" rx="4"/>
-  <text x="403" y="105" text-anchor="start" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#0f172a" dx="6">₹3,875/mo</text>
-  <text x="403" y="118" text-anchor="start" font-family="system-ui,sans-serif" font-size="10" fill="#64748b" dx="6">Lowest in Tier 2</text>
+  <rect x="190" y="82" width="213" height="40" fill="#10b981" rx="4"/>
+  <text x="409" y="105" text-anchor="start" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#0f172a" dx="6">₹4,000/mo</text>
+  <text x="409" y="118" text-anchor="start" font-family="system-ui,sans-serif" font-size="10" fill="#64748b" dx="6">Lowest in Tier 2</text>
   <!-- "Lowest EMI" badge -->
   <rect x="190" y="78" width="75" height="16" fill="#0f172a" rx="3"/>
   <text x="227" y="90" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#10b981">LOWEST EMI ★</text>

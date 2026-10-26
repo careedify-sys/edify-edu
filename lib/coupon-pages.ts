@@ -125,7 +125,7 @@ export const COUPON_PAGES: CouponPageData[] = [
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
       { uni: 'Symbiosis (Rs 3,70,000; Rs 3,15,000 after 2+ yrs exp concession)', savings: 'Up to Rs 5,000 via SYMB2026-7500' },
       { uni: 'JAIN (Rs 1,96,000)', savings: 'Up to Rs 5,000 via JAIN2026-5K' },
-      { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
+      { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
     ],
   },
   {
@@ -134,11 +134,11 @@ export const COUPON_PAGES: CouponPageData[] = [
     universityName: 'Manipal University Jaipur (MUJ) Online',
     shortName: 'MUJ',
     tier: 'budget',
-    totalFee: 'Rs 1,80,000',
-    totalFeeNum: 180000,
+    totalFee: 'Rs 1,84,000',
+    totalFeeNum: 184000,
     maxSavings: 'Rs 5,000',
     maxSavingsNum: 5000,
-    finalFee: 'Rs 1,75,000',
+    finalFee: 'Rs 1,79,000',
     naac: 'A+',
     nirf: '#58 University',
     couponCode: 'MUJ2026-4K',
@@ -146,13 +146,13 @@ export const COUPON_PAGES: CouponPageData[] = [
     blogSlug: 'muj-online-mba-review-2026',
     officialUrl: 'jaipur.manipal.edu',
     discounts: [
-      { type: '15% upfront discount', eligibility: 'All students paying full fee upfront', saving: 'Rs 27,000 (pay Rs 1,53,000)', howToApply: 'Select one-time payment during enrollment' },
+      { type: '15% upfront discount', eligibility: 'All students paying full fee upfront', saving: 'Rs 27,600 (pay Rs 1,56,400)', howToApply: 'Select one-time payment during enrollment' },
       { type: 'Defence scholarship', eligibility: 'Serving/retired defence', saving: '20% fee waiver', howToApply: 'Submit defence ID' },
       { type: 'Divyaang scholarship', eligibility: 'Disability certificate holders', saving: 'Up to 100%', howToApply: 'Submit disability certificate' },
       { type: 'Merit scholarship', eligibility: '60%+ graduation marks', saving: '5-15%', howToApply: 'Automatic during admission' },
       { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code MUJ2026-4K during enrollment call' },
     ],
-    stackExample: 'MUJ offers a strong 15% upfront payment discount that brings the fee from Rs 1,80,000 to Rs 1,53,000. Stack with the coupon discount (up to Rs 4,000 on Tue/Sat) for additional savings.',
+    stackExample: 'MUJ offers a strong 15% upfront payment discount that brings the fee from Rs 1,84,000 to Rs 1,56,400. Stack with the coupon discount (up to Rs 4,000 on Tue/Sat) for additional savings.',
     emiCompatible: 'Yes. MUJ offers EMI options. The coupon discount is applied to the total fee first.',
     exclusions: ['Does not apply to dual specialisation upgrade fees', 'Does not reduce exam or registration fees', 'Cannot combine with other third-party coupons'],
     faqs: [
@@ -204,7 +204,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     peerComparisons: [
       { uni: 'Chandigarh (Rs 1,65,000)', savings: 'Up to Rs 5,000 via CU2026-5K' },
       { uni: 'Galgotias (Rs 80,200)', savings: 'Up to Rs 5,000 via GALG2026-5K' },
-      { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
+      { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
     ],
   },
   {
@@ -239,7 +239,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     ],
     peerComparisons: [
       { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
-      { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
+      { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
     ],
   },
@@ -274,7 +274,7 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Is SMU different from MUJ?', a: 'Yes. SMU (Sikkim) and MUJ (Jaipur) are separate universities under the Manipal group.' },
     ],
     peerComparisons: [
-      { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
+      { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
       { uni: 'Galgotias (Rs 80,200)', savings: 'Up to Rs 5,000 via GALG2026-5K' },
     ],
   },
@@ -551,7 +551,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     peerComparisons: [
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
       { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
-      { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
+      { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
       { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
@@ -593,7 +593,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     peerComparisons: [
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
       { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
-      { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
+      { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
       { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
@@ -636,7 +636,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     peerComparisons: [
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
       { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
-      { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
+      { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
       { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
@@ -679,7 +679,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     peerComparisons: [
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
       { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
-      { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
+      { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
       { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
@@ -722,7 +722,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     peerComparisons: [
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
       { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
-      { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
+      { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
       { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
@@ -765,7 +765,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     peerComparisons: [
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
       { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
-      { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
+      { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
       { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
@@ -807,7 +807,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     peerComparisons: [
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
       { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
-      { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
+      { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
       { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
@@ -849,7 +849,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     peerComparisons: [
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
       { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
-      { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
+      { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
       { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
@@ -892,7 +892,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     peerComparisons: [
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
       { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
-      { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
+      { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
       { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
@@ -934,7 +934,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     peerComparisons: [
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
       { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
-      { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
+      { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
       { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
@@ -976,7 +976,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     peerComparisons: [
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
       { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
-      { uni: 'MUJ (Rs 1,80,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
+      { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
       { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },

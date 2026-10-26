@@ -1328,17 +1328,19 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // The Manipal group's own portal, serving MUJ, SMU and MAHE as separate
     // entities with entity-suffixed programme URLs.
     officialUrl: 'https://www.onlinemanipal.com',
-    feeVerifiedOn: '2026-10-06',
-    // mba added 2026-10-07 from the onlinemanipal.com MUJ MBA fee panel, owner
-    // verified. fee is the payable total after the standing 15 percent
-    // concession, feeMax the list price: Rs 1,80,000 across four semesters,
-    // Rs 1,53,000 after concession. Carried as a range rather than the list
-    // price alone so getDisplayFee reaches rule 1 by agreement with pd.fees
-    // "₹1.53L–₹1.80L"; a bare fee: 180000 leaves the lower bound 15 percent
-    // out and only passes via the 10-25% drift fallback at fees.ts:284, whose
-    // stated rationale (trust per-programme pd.fees over a uni-wide reference)
-    // no longer applies once the reference is itself per-programme.
-    programFees: { mba: { fee: 153000, feeMax: 180000 }, bca: { fee: 139500 }, mca: { fee: 158000 } },
+    feeVerifiedOn: '2026-10-26',
+    // January 2027 fee chart, owner supplied 2026-10-26. It replaces the
+    // 2026-10-07 panel (MBA Rs 1,80,000 list, Rs 1,53,000 after 15 percent).
+    // Full fee, semester fee and EMI; Rs 500 application fee is additional.
+    //   MBA   1,84,000  sem 46,000  EMI 7,667; 15% discount 1,56,400 / 39,100 / 6,517
+    //   MCA   1,64,000  sem 41,000  EMI 6,833; 10% discount 1,47,600 / 36,900 / 6,150
+    //   BBA, BCA 1,44,000 (sem 24,000)   B.Com 1,05,000 (sem 17,500)
+    //   M.Com 1,08,000 (sem 27,000)      MSc Mathematics 84,000 (sem 21,000)
+    //   MA JMC, MA Economics 80,000 each (sem 20,000)
+    // mba and mca carry {discounted, list} so getDisplayFee reaches rule 1 by
+    // agreement with pd.fees; a bare list fee leaves the lower bound outside
+    // tolerance and only passes via the drift fallback in lib/fees.ts.
+    programFees: { mba: { fee: 156400, feeMax: 184000 }, mca: { fee: 147600, feeMax: 164000 }, bba: { fee: 144000 }, bca: { fee: 144000 } },
     logo: '/logos/university_logos/muj-logo.svg',
     name: 'Manipal University Jaipur (MUJ) Online',
     abbr: 'MUJOM',
@@ -1353,12 +1355,12 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 153000,
-    feeMax: 180000,
-    emiFrom: 6375,
+    feeMin: 156400,
+    feeMax: 184000,
+    emiFrom: 6517,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'NAAC A+ | NIRF #58 MUJ Online MBA — same university brand as on-campus at ₹43,750/sem; 7 specializations available; reco',
+    tagline: 'NAAC A+ | NIRF #58 MUJ Online MBA at ₹46,000 a semester, or ₹1,56,400 total after the 15% discount',
     description: 'UGC DEB approved online programs from Manipal University Jaipur (MUJ). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Graduates seeking management credentials', 'working professionals targeting leadership', 'those wanting NAAC A+ MBA at affordable fees'],
     notFor: ['Those seeking only offline/on-campus experience', 'students not meeting UG eligibility', 'those needing highly personalized offline mentoring'],
@@ -1380,7 +1382,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
           { slug: 'bfsi-banking-financial-services-and-insurance', name: 'BFSI (Banking, Financial Services and Insurance)' },
           { slug: 'retail-management', name: 'Retail Management' },
         ],
-        fees: '₹1.53L–₹1.80L',
+        fees: '₹1,56,400–₹1,84,000',
         duration: '2 Years (4 Semesters)',
         roles: ['Management Trainee', 'Business Analyst', 'Marketing Manager', 'HR Executive', 'Operations Manager', 'Financial Analyst'],
         avgSalary: '₹4L – ₹15L per annum',
@@ -1389,7 +1391,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved MBA from Manipal University Jaipur (MUJ) – O — recognised for corporate hiring.'},
       'MCA': {
         specs: ['AI & Data Science', 'Comprehensive Emerging Technologies', 'Artificial Intelligence & Machine Learning', 'Cloud Computing', 'Cybersecurity'],
-        fees: '₹1.58L',
+        fees: '₹1,47,600–₹1,64,000',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -1402,7 +1404,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['General Management'],
-        fees: '₹1.39L',
+        fees: '₹1.44L',
         duration: '3 Years (6 Semesters)',
         roles: ['Management Trainee', 'Sales Executive', 'Marketing Executive', 'HR Executive', 'Operations Coordinator'],
         avgSalary: '₹3L – ₹7L per annum',
@@ -1412,7 +1414,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['General Management'],
-        fees: '₹1.39L',
+        fees: '₹1.44L',
         duration: '3 Years (6 Semesters)',
         roles: ['Software Developer', 'Web Developer', 'Systems Administrator', 'Data Analyst', 'IT Support Engineer'],
         avgSalary: '₹3L – ₹7L per annum',
@@ -1422,7 +1424,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'B.Com': {
         specs: ['General Management'],
-        fees: '₹99,000',
+        fees: '₹1,05,000',
         duration: '3 Years (6 Semesters)',
         roles: ['Accountant', 'Tax Assistant', 'Financial Analyst', 'Auditor', 'Banking Officer', 'Commerce Executive'],
         avgSalary: '₹3L – ₹6L per annum',
@@ -1434,7 +1436,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         specs: ['General Management'],
         // Verified 2026-10-06 on onlinemanipal.com/online-mcom-degree-muj:
         // semester fee 27,000, course fee 1,08,000. The 97,200 also shown
-        // is a 10 per cent full-payment discount, not the price.
+        // is a 10 per cent full-payment discount, not the price. Unchanged
+        // in the January 2027 chart.
         fees: '₹1.08L',
         duration: '2 Years (4 Semesters)',
         roles: ['Senior Accountant', 'Tax Consultant', 'Finance Manager', 'Auditor', 'Commerce Lecturer'],
@@ -1445,10 +1448,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MSc': {
         specs: ['General Management'],
-        // Verified 2026-10-06 on onlinemanipal.com/online-msc-mathematics-muj:
-        // semester fee 20,000, course fee 80,000. Mathematics is the only
-        // MSc MUJ awards; the other MSc pages on that portal are MAHE.
-        fees: '₹80K',
+        // January 2027 chart: semester fee 21,000, course fee 84,000 (was
+        // 80,000 on onlinemanipal.com/online-msc-mathematics-muj, 2026-10-06).
+        // Mathematics is the only MSc MUJ awards; the other MSc pages on that
+        // portal are MAHE.
+        fees: '₹84K',
         duration: '2 Years (4 Semesters)',
         roles: ['Mathematics Lecturer', 'Data Analyst', 'Statistical Analyst', 'Research Associate', 'Actuarial Analyst'],
         avgSalary: '₹3L – ₹8L per annum',
@@ -4009,7 +4013,19 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     id: 'uttaranchal-university-online',
     // links to student.uttaranchaluniversity.ac.in and uudoon.in
     officialUrl: 'https://onlineuu.in',
-    feeVerifiedOn: '2026-10-06',
+    feeVerifiedOn: '2026-10-26',
+    // January 2027 fee chart, owner supplied 2026-10-26. Before scholarship /
+    // after scholarship / semester / annual / one-time (full payment):
+    //   MBA 1,48,000 / 1,03,600 / 25,900 / 49,800 / 99,600   (30% scholarship)
+    //   MCA 1,20,000 / 1,02,000 / 25,500 / 49,000 / 98,000   (15%)
+    //   BBA 1,20,000 / 1,08,000 / 18,000 / 34,000 / 1,02,000 (10%)
+    //   BCA 1,20,000 / 1,08,000 / 18,000 / 34,000 / 1,02,000 (10%)
+    //   BA    75,000 /   67,500 / 11,250 / 20,500 /   61,500 (10%)
+    // programFees carries {lowest payable, before scholarship}. For the MBA
+    // the floor is the one-time 99,600, as the old record's 94,000 was, so the
+    // copy's "Rs 99,600 one-time" and "Rs 1,03,600 semester-wise" both sit
+    // inside the range. The other programmes use the after-scholarship total.
+    programFees: { mba: { fee: 99600, feeMax: 148000 }, mca: { fee: 102000, feeMax: 120000 }, bba: { fee: 108000, feeMax: 120000 }, bca: { fee: 108000, feeMax: 120000 } },
     logo: '/logos/university_logos/uttaranchal-online-university-logo_1.svg',
     name: 'Uttaranchal University Online',
     abbr: 'UUUDO',
@@ -4023,12 +4039,14 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 94000,
-    feeMax: 98000,
-    emiFrom: 3917,
+    feeMin: 99600,
+    feeMax: 148000,
+    // No EMI figure in the January 2027 chart; the semester-track total
+    // (1,03,600) over 24 months, the figure the page copy quotes.
+    emiFrom: 4317,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: '8 specialisations at just ₹94,000 total — includes Logistics & SCM + IT + Digital Marketing + International Business (ra',
+    tagline: '8 MBA specialisations at ₹1,03,600 after the 30% scholarship, incl. Logistics & SCM, IT and Digital Marketing',
     description: 'UGC DEB approved online programs from Uttaranchal University. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals targeting MBA upgrade', 'Graduates in any discipline', 'Those needing WES-recognized degree for Canada'],
     notFor: ['Students needing fully on-campus experience', 'Those wanting deep tech research tracks'],
@@ -4036,7 +4054,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing Management', 'Financial Management', 'HR Management', 'Logistics & Supply Chain Management', 'Business Analytics', 'International Business', 'Digital Marketing', 'Information Technology'],
-        fees: '₹94K',
+        fees: '₹99,600–₹1,48,000',
         duration: '2 Yrs',
         roles: ['Business Analyst', 'Marketing Executive', 'HR Executive', 'Finance Analyst', 'Digital Marketing Executive', 'Supply Chain Analyst'],
         avgSalary: '₹4L – ₹16L per annum',
@@ -4046,7 +4064,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MCA': {
         specs: ['General'],
-        fees: '₹1.2L',
+        fees: '₹1,02,000–₹1,20,000',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',
@@ -4060,7 +4078,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management'],
-        fees: '₹1,02,000',
+        fees: '₹1,08,000–₹1,20,000',
         duration: '3 Yrs',
         roles: ['Marketing Executive', 'Sales Trainee', 'Finance Trainee', 'HR Trainee', 'Business Development Trainee'],
         avgSalary: '₹3L – ₹8L per annum',
@@ -4070,11 +4088,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['General'],
-        // Verified 2026-10-06 on onlineuu.in/bca.php: total program fee
-        // 1,20,000, or 1,02,000 under a 15 per cent Early Bird scholarship
-        // whose last date is 9 October 2026. The list price is recorded
-        // because the offer expires. Includes exam fee 2,500 a semester.
-        fees: '₹1.2L',
+        // January 2027 chart: 1,20,000 before, 1,08,000 after the 10 per cent
+        // scholarship (the October 2026 page showed 1,02,000 under a 15 per
+        // cent Early Bird that expired 9 October 2026).
+        fees: '₹1,08,000–₹1,20,000',
         duration: '3 Yrs',
         roles: ['Web Developer', 'Java Developer', 'Python Developer', 'Software Tester'],
         avgSalary: '₹3L – ₹10L per annum',
@@ -4084,10 +4101,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BA': {
         specs: ['General – Sociology', 'Economics', 'Psychology', 'Political Science', 'Public Speaking'],
-        // Verified 2026-10-06 on onlineuu.in/ba.php: total program fee 72,000, or
-        // 61,200 under the same 15 per cent Early Bird scholarship expiring
-        // 9 October 2026. Includes exam fee 2,500 a semester.
-        fees: '₹72K',
+        // January 2027 chart: 75,000 before, 67,500 after the 10 per cent
+        // scholarship (was 72,000 / 61,200 on onlineuu.in/ba.php, 2026-10-06).
+        fees: '₹67,500–₹75,000',
         duration: '3 Yrs',
         roles: ['Content Writer', 'Research Assistant', 'Social Worker', 'Counsellor Trainee', 'Government exam aspirant'],
         avgSalary: '₹2.5L – ₹6L per annum',
