@@ -49374,7 +49374,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
     faqs: [
       { q: 'Which online degree courses are valid in India?', a: 'Undergraduate and postgraduate degrees and two-year postgraduate diplomas offered in Online mode by a university UGC has recognised or entitled for that programme and session. In practice that covers BA, B.Com, BBA, BCA, MA, M.Com, MBA, MCA and some MSc and BSc programmes.' },
       { q: 'Are online degrees from Indian universities equal to regular degrees?', a: 'Yes, when the programme is UGC-entitled. Regulation 22 of the UGC ODL and Online Programmes Regulations, 2020 treats them as equivalent to the corresponding conventional degrees.' },
-      { q: 'Which degrees cannot be done online in India?', a: 'UGC prohibits ODL and Online programmes in engineering, medical, physiotherapy, para-medical, pharmacy, nursing, dental, architecture, law, agriculture, horticulture, hotel management, catering technology, culinary sciences, aircraft maintenance, visual arts and sports, and aviation. M.Phil and Ph.D. are also prohibited in both modes.' },
+      { q: 'Which degrees cannot be done online in India?', a: 'UGC prohibits ODL and Online programmes in engineering, medical, physiotherapy, para-medical, pharmacy, nursing, dental, architecture, law, agriculture, horticulture, hotel management, catering technology, culinary sciences, aircraft maintenance, visual arts and sports, and aviation. M.Phil and Ph.D. are also prohibited in both modes, and since the July-August 2025 session so are allied and healthcare specialisations such as Psychology, Microbiology and Biotechnology.' },
       { q: 'Which universities can offer online degrees?', a: 'Under the 2020 regulations, a university with a NAAC score of 3.26 or above, or a top-100 rank in the NIRF University category at least twice in three preceding cycles, may start full online programmes without prior UGC approval, subject to all other conditions. UGC publishes the entitled list on deb.ugc.ac.in each session.' },
       { q: 'How do I check whether an online degree course is UGC approved?', a: 'Find the university and the exact programme, in Online mode, for your admission session on deb.ugc.ac.in. Also confirm the university is not on the UGC fake universities list and check its NAAC status on naac.gov.in.' },
       { q: 'Do I need anything before taking admission in an online degree?', a: 'Yes. UGC requires a DEB ID, created on deb.ugc.ac.in from your ABC or APAAR ID, for every ODL and Online admission since the session beginning October 2024.' },
@@ -49430,7 +49430,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <p>UGC's public notice of 11 November 2024 lists the disciplines that cannot be offered in ODL or Online mode, including their allied fields. If a website offers one of these online, treat it as a warning, not an opportunity.</p>
 
 <div class="callout-warning">
-<strong>Not permitted online or by distance:</strong> Engineering, Medical, Physiotherapy, Occupational Therapy and other para-medical disciplines, Pharmacy, Nursing, Dental, Architecture, Law, Agriculture, Horticulture, Hotel Management, Catering Technology, Culinary Sciences, Aircraft Maintenance, Visual Arts and Sports, and Aviation. Yoga, and Tourism and Hospitality Management, are not permitted online at UG and PG level. M.Phil and Ph.D. are prohibited in both ODL and Online mode.
+<strong>Not permitted online or by distance:</strong> Engineering, Medical, Physiotherapy, Occupational Therapy and other para-medical disciplines, Pharmacy, Nursing, Dental, Architecture, Law, Agriculture, Horticulture, Hotel Management, Catering Technology, Culinary Sciences, Aircraft Maintenance, Visual Arts and Sports, and Aviation. Yoga, and Tourism and Hospitality Management, are not permitted online at UG and PG level. M.Phil and Ph.D. are prohibited in both ODL and Online mode. Since the July-August 2025 session, UGC also bars allied and healthcare specialisations under the NCAHP Act, 2021, naming Psychology, Microbiology, Food and Nutrition Science, Biotechnology, and Clinical Nutrition and Dietetics.
 </div>
 
 <p>This answers a lot of searches directly. An "online B.Tech", "online LLB" or "online PhD" from an Indian university is not a UGC-recognised online degree. Working professionals have other routes in some of these fields, but those run under different regulators and rules, not as UGC online degrees.</p>
@@ -49447,7 +49447,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <rect x="328" y="16" width="296" height="218" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
 <text x="476" y="44" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Prohibited online</text>
 <g font-size="12.5" fill="#0f172a">
-<text x="348" y="74">Engineering, Architecture</text><text x="348" y="98">Law</text><text x="348" y="122">Medical, Dental, Nursing, Pharmacy</text><text x="348" y="146">Para-medical, Physiotherapy</text><text x="348" y="170">Agriculture, Hotel Management</text><text x="348" y="194">M.Phil and Ph.D.</text>
+<text x="348" y="74">Engineering, Architecture</text><text x="348" y="98">Law</text><text x="348" y="122">Medical, Dental, Nursing, Pharmacy</text><text x="348" y="146">Para-medical, Physiotherapy</text><text x="348" y="170">Agriculture, Hotel Management</text><text x="348" y="194">M.Phil, Ph.D., Psychology</text>
 </g>
 <text x="476" y="214" text-anchor="middle" font-size="11" fill="#64748b">UGC public notice, 11 November 2024 (partial list)</text>
 </svg>
@@ -49499,6 +49499,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulations 3(B), 15 and 22: deb.ugc.ac.in/Regulations</li>
 <li>UGC Third Amendment Regulations, 2024 (Gazette, 2 May 2024): deb.ugc.ac.in/Regulations</li>
 <li>UGC public notice F.No. 1-34/2024 (DEB-I), 11 November 2024, on precautions before enrolling in ODL and Online programmes: deb.ugc.ac.in</li>
+<li>UGC public notice F.No. 4-1/2025 (DEB-NER), 12 August 2025, on NCAHP allied and healthcare specialisations including Psychology: deb.ugc.ac.in</li>
 <li>UGC-DEB, Online Learning: deb.ugc.ac.in</li>
 <li>NAAC accreditation status: naac.gov.in. NIRF rankings: nirfindia.org</li>
 <li>UGC-DEB notice of April 2025 recording the 578th Commission decision on AICTE approval for management and computer applications programmes: deb.ugc.ac.in</li>
