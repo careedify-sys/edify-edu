@@ -21,6 +21,13 @@ University of Mumbai #61, while lib/data.ts and Supabase have Yenepoya and Shiva
 Needs a nirfindia.org check. Several posts still cite "Amity WASC+QAA", removed from Amity's MBA intro on 26 Oct
 because lib/data.ts approvals do not list it.
 
+Follow-up (same day): the stale set also sat in table cells and short forms ("<td>#28</td>", "LPU #38, Amity #51",
+"NIRF rank: #28 University") across eight BBA posts. Pass 3 fixed rows by the university the row names and inline
+"#N" by the nearest university name in rank-shaped context; pass 4 used post-scoped exact strings in the
+Chandigarh and LPU reviews and the best-online-BBA list, where sentences name no university. 0 stale #28/#38/#51
+left in those posts. Pass 1 had turned "institutional" into "Universityal" in 2 places; repaired. Tamil Nadu
+MBA post's #38 (Madras) and #28 (Kalasalingam) are correct and untouched.
+
 ## 2026-10-27 · Em-dash sweep, part 2: component and page prose
 
 Visible em dashes in app/ and components/ (comments stripped; admin, blog/write, leads and api excluded): 194 in
