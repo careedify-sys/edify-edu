@@ -3,6 +3,15 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'online-degree-courses-india': [
+    { label: 'Valid online degrees', value: 'BA, B.Com, BBA, BCA, MA, M.Com, MBA, MCA, MSc' },
+    { label: 'Banned online', value: 'Engineering, Law, Medical, PhD +more' },
+    { label: 'Who may offer', value: 'NAAC 3.26+ or NIRF top-100' },
+    { label: 'Equal to regular degree', value: 'Yes (Reg. 22)', green: true },
+    { label: 'Verify at', value: 'deb.ugc.ac.in' },
+    { label: 'Universities tracked', value: '143' },
+    { label: 'Last verified', value: '26 Oct 2026', green: true },
+  ],
   'ugc-fee-refund-policy': [
     { label: 'Policy in force', value: '2024-25 (continued Oct 2025)' },
     { label: 'Refund deadline', value: '15 days from written request', green: true },
