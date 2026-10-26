@@ -48433,6 +48433,927 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <p class="disclaimer"><em>All fee figures in this article were verified against the respective universities' official portals on 13 August 2026 and are indicative only. Universities revise fees and scholarship terms between intakes without notice. Confirm the current fee, the concession conditions and any examination or convocation charges directly with the university in writing before making a payment. edifyedu.in does not charge students, does not accept payment for rankings, and compares programmes only on publicly available UGC, NAAC and NIRF data.</em></p>
     `,
   },
+  {
+    slug: 'ugc-fake-universities-list-2026',
+    title: 'UGC Fake Universities List 2026: All 32 Names by State',
+    seoTitle: 'UGC Fake Universities List 2026: All 32 Names by State',
+    h1Title: 'UGC Fake Universities List 2026: All 32 Institutions, State by State',
+    metaDescription: 'UGC lists 32 fake universities as of February 2026, 12 of them in Delhi. Every name by state, why their degrees are invalid, and how to check any university.',
+    category: 'Online Degree Validity',
+    tags: ['UGC Fake Universities', 'Fake University List', 'UGC', 'Degree Validity', 'UGC-DEB', 'Student Guidance'],
+    publishedAt: '2026-10-26',
+    readTime: 8,
+    targetKeyword: 'ugc fake universities list',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/30858451/pexels-photo-30858451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@shootsaga" target="_blank" rel="noopener nofollow">Anil  Sharma</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling young girl with headset on a video call, studying online at home.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'How many fake universities are there in India in 2026?', a: 'The University Grants Commission lists 32 fake universities in its state-wise list dated February 2026. They are spread across 12 states and union territories, with Delhi holding the most at 12.' },
+      { q: 'Which state has the most fake universities?', a: 'Delhi, with 12 of the 32 institutions on the February 2026 UGC list. Uttar Pradesh follows with 4. Andhra Pradesh, Karnataka, Kerala, Maharashtra, Puducherry and West Bengal have 2 each.' },
+      { q: 'Is a degree from a UGC fake university valid?', a: 'No. Under Section 22 of the UGC Act, 1956, only a university set up by a central or state law, a deemed university, or an institution empowered by an Act of Parliament can award a degree. A fake university has no such power, so its degree carries no legal standing for jobs or further study.' },
+      { q: 'Where can I see the official UGC fake university list?', a: 'On the UGC website at ugc.gov.in, under Universities, then Fake Universities. The page carries the state-wise table and a Hindi version. Treat any list on another website, including this one, as a copy and check the date against the UGC page.' },
+      { q: 'If a university is not on the fake list, is it genuine?', a: 'Not necessarily. The fake list only names bodies that call themselves universities without any legal basis. A recognised university can still be barred from offering a particular programme online. For an online degree, also check that the programme appears on deb.ugc.ac.in for your admission session.' },
+      { q: 'How do I check whether an online degree is UGC approved?', a: 'Confirm three things: the university is not on the UGC fake list, it appears on the UGC list of recognised universities, and the exact programme is entitled for online mode on deb.ugc.ac.in for the session you are joining.' },
+      { q: 'What should I do if I already paid a fake university?', a: 'Stop further payments, keep every receipt and message, and file a police complaint for cheating. Write to your state higher education department and to UGC through the contact details on ugc.gov.in. UGC says it has asked state governments to act against these institutions.' },
+    ],
+    ctaTitle: 'Check a university before you pay',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">UGC names 32 fake universities in its list dated February 2026. Delhi has 12 of them. A degree from any of these has no legal value, whatever the certificate looks like.</p>
+
+<p><strong>Short answer:</strong> the University Grants Commission (UGC) currently lists <strong>32 fake universities across 12 states and union territories</strong>, in a state-wise list dated February 2026. Delhi has the most (12), followed by Uttar Pradesh (4). These bodies call themselves universities without being set up under any central or state law, so they cannot award a valid degree. The full list is below, grouped by state, with the date we last checked it against <a href="https://www.ugc.gov.in/universitydetails/Fakeuniversity" target="_blank" rel="noopener">the UGC fake universities page</a>.</p>
+
+<div class="callout-key">
+<strong>Key facts, last verified 26 October 2026</strong>
+<ul>
+<li><strong>Total on the UGC list:</strong> 32 institutions</li>
+<li><strong>List dated:</strong> February 2026 (UGC's own heading)</li>
+<li><strong>States and UTs covered:</strong> 12</li>
+<li><strong>Highest:</strong> Delhi 12, Uttar Pradesh 4</li>
+<li><strong>Legal basis:</strong> Sections 22 and 23 of the UGC Act, 1956</li>
+<li><strong>Overlap with the 143 universities edifyedu.in tracks:</strong> none</li>
+</ul>
+</div>
+
+<h2>What makes a university "fake" under UGC rules?</h2>
+
+<p>A university in India gets its power to award degrees from a law. Section 22 of the UGC Act, 1956 limits that power to three kinds of body: a university created by a central or state Act, an institution declared a deemed university, and an institution specially empowered by an Act of Parliament. Anything else that awards a "degree" is acting outside the law.</p>
+
+<p>Section 23 goes one step further. It bars any institution outside those categories from using the word "university" in its name at all. So the bodies on this list break the rules twice: they use a title they are not entitled to, and they issue certificates they have no power to issue.</p>
+
+<p class="pull">A fake university is not a bad university. It is not a university at all.</p>
+
+<h2>How many fake universities are there, state by state?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/5905749/pexels-photo-5905749.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Back view of crop anonymous attentive African American teacher answer questions of pupils online on laptop" loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@katerina-holmes" target="_blank" rel="noopener nofollow">Katerina Holmes</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<figure class="svg-figure">
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bar chart of UGC fake universities by state as of February 2026: Delhi 12, Uttar Pradesh 4, Andhra Pradesh 2, Karnataka 2, Kerala 2, Maharashtra 2, Puducherry 2, West Bengal 2, Arunachal Pradesh 1, Haryana 1, Jharkhand 1, Rajasthan 1">
+<rect width="640" height="360" fill="#ffffff"/>
+<text x="20" y="28" font-size="15" font-weight="700" fill="#0f172a">UGC fake universities by state (list dated February 2026)</text>
+<g font-size="12" fill="#0f172a">
+<text x="20" y="62">Delhi</text><rect x="150" y="50" width="420" height="16" fill="#ef4444"/><text x="578" y="62" font-weight="700">12</text>
+<text x="20" y="86">Uttar Pradesh</text><rect x="150" y="74" width="140" height="16" fill="#f97316"/><text x="298" y="86" font-weight="700">4</text>
+<text x="20" y="110">Andhra Pradesh</text><rect x="150" y="98" width="70" height="16" fill="#B8892A"/><text x="228" y="110">2</text>
+<text x="20" y="134">Karnataka</text><rect x="150" y="122" width="70" height="16" fill="#B8892A"/><text x="228" y="134">2</text>
+<text x="20" y="158">Kerala</text><rect x="150" y="146" width="70" height="16" fill="#B8892A"/><text x="228" y="158">2</text>
+<text x="20" y="182">Maharashtra</text><rect x="150" y="170" width="70" height="16" fill="#B8892A"/><text x="228" y="182">2</text>
+<text x="20" y="206">Puducherry</text><rect x="150" y="194" width="70" height="16" fill="#B8892A"/><text x="228" y="206">2</text>
+<text x="20" y="230">West Bengal</text><rect x="150" y="218" width="70" height="16" fill="#B8892A"/><text x="228" y="230">2</text>
+<text x="20" y="254">Arunachal Pradesh</text><rect x="150" y="242" width="35" height="16" fill="#64748b"/><text x="193" y="254">1</text>
+<text x="20" y="278">Haryana</text><rect x="150" y="266" width="35" height="16" fill="#64748b"/><text x="193" y="278">1</text>
+<text x="20" y="302">Jharkhand</text><rect x="150" y="290" width="35" height="16" fill="#64748b"/><text x="193" y="302">1</text>
+<text x="20" y="326">Rajasthan</text><rect x="150" y="314" width="35" height="16" fill="#64748b"/><text x="193" y="326">1</text>
+</g>
+<text x="20" y="350" font-size="11" fill="#64748b">Source: ugc.gov.in, state-wise list of fake universities. Checked 26 Oct 2026.</text>
+</svg>
+<figcaption>Delhi alone accounts for 12 of the 32 names, more than the next four states combined.</figcaption>
+</figure>
+
+<h2>The full UGC fake universities list 2026</h2>
+
+<p>Names below follow the UGC table. We shortened street addresses to the city to keep the table readable. If an institution offering you admission matches a name or a city here, check the full address on the UGC page before you do anything else.</p>
+
+<table>
+<thead><tr><th>#</th><th>Institution (as named by UGC)</th><th>City</th><th>State / UT</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Christ New Testament Deemed University</td><td>Guntur</td><td>Andhra Pradesh</td></tr>
+<tr><td>2</td><td>Bible Open University of India</td><td>Visakhapatnam</td><td>Andhra Pradesh</td></tr>
+<tr><td>3</td><td>Indian Institute of Alternative Medicine</td><td>Secretariat S.O.</td><td>Arunachal Pradesh</td></tr>
+<tr><td>4</td><td>Mountain Institute of Management &amp; Technology</td><td>Nehru Place, New Delhi</td><td>Delhi</td></tr>
+<tr><td>5</td><td>World Peace of United Nations University (WPUNU)</td><td>Pitampura, New Delhi</td><td>Delhi</td></tr>
+<tr><td>6</td><td>Institute of Management and Engineering</td><td>Kotla Mubarakpur</td><td>Delhi</td></tr>
+<tr><td>7</td><td>National Institute of Management Solution</td><td>Janakpuri</td><td>Delhi</td></tr>
+<tr><td>8</td><td>All India Institute of Public &amp; Physical Health Sciences (AIIPHS) State Government University</td><td>Alipur</td><td>Delhi</td></tr>
+<tr><td>9</td><td>Commercial University Ltd.</td><td>Daryaganj</td><td>Delhi</td></tr>
+<tr><td>10</td><td>United Nations University</td><td>Delhi</td><td>Delhi</td></tr>
+<tr><td>11</td><td>Vocational University</td><td>Delhi</td><td>Delhi</td></tr>
+<tr><td>12</td><td>ADR-Centric Juridical University</td><td>Rajendra Place, New Delhi</td><td>Delhi</td></tr>
+<tr><td>13</td><td>Indian Institute of Science and Engineering</td><td>New Delhi</td><td>Delhi</td></tr>
+<tr><td>14</td><td>Viswakarma Open University for Self-Employment</td><td>Sanjay Enclave</td><td>Delhi</td></tr>
+<tr><td>15</td><td>Adhyatmik Vishwavidyalaya (Spiritual University)</td><td>Rohini</td><td>Delhi</td></tr>
+<tr><td>16</td><td>Magic &amp; Art University</td><td>Faridabad</td><td>Haryana</td></tr>
+<tr><td>17</td><td>Daksha University (Vocational and Life Skill Education)</td><td>Ranchi</td><td>Jharkhand</td></tr>
+<tr><td>18</td><td>Global Human Peace University</td><td>Bengaluru</td><td>Karnataka</td></tr>
+<tr><td>19</td><td>Sarva Bharatiya Shiksha Peeth</td><td>Tumkur</td><td>Karnataka</td></tr>
+<tr><td>20</td><td>International Islamic University of Prophetic Medicine (IIUPM)</td><td>Kozhikode</td><td>Kerala</td></tr>
+<tr><td>21</td><td>St. John's University</td><td>Kishanattam</td><td>Kerala</td></tr>
+<tr><td>22</td><td>Raja Arabic University</td><td>Nagpur</td><td>Maharashtra</td></tr>
+<tr><td>23</td><td>National Backward Krushi Vidyapeeth</td><td>Solapur district</td><td>Maharashtra</td></tr>
+<tr><td>24</td><td>Usha Latchumanan College of Education</td><td>Thirukkanur</td><td>Puducherry</td></tr>
+<tr><td>25</td><td>Sree Bodhi Academy of Higher Education</td><td>Puducherry</td><td>Puducherry</td></tr>
+<tr><td>26</td><td>Rajeev Gandhi Institute of Technology &amp; Management</td><td>Bhiwadi, Alwar district</td><td>Rajasthan</td></tr>
+<tr><td>27</td><td>Gandhi Hindi Vidyapith</td><td>Prayagraj (Allahabad)</td><td>Uttar Pradesh</td></tr>
+<tr><td>28</td><td>Netaji Subhash Chandra Bose University (Open University)</td><td>Aligarh</td><td>Uttar Pradesh</td></tr>
+<tr><td>29</td><td>Bhartiya Shiksha Parishad</td><td>Lucknow</td><td>Uttar Pradesh</td></tr>
+<tr><td>30</td><td>Mahamaya Technical University</td><td>Noida</td><td>Uttar Pradesh</td></tr>
+<tr><td>31</td><td>Indian Institute of Alternative Medicine</td><td>Kolkata</td><td>West Bengal</td></tr>
+<tr><td>32</td><td>Institute of Alternative Medicine and Research</td><td>Kolkata</td><td>West Bengal</td></tr>
+</tbody>
+</table>
+
+<p>Two things stand out in the table. "Indian Institute of Alternative Medicine" appears twice, once in Arunachal Pradesh and once in Kolkata, so a matching name in a different city is not a reason to relax. And several names borrow the vocabulary of real institutions: "United Nations", "Indian Institute of Science", "Deemed University", "State Government University". The words in a name prove nothing.</p>
+
+<div class="callout-warning">
+<strong>Do not rely on a copy of this list, including ours.</strong> UGC updates the list without a fixed schedule. Before you pay any fee, open the official page on ugc.gov.in and check the date in its heading. If the date there is later than February 2026, the page wins.
+</div>
+
+<h2>Is a degree from a fake university valid for jobs or higher studies?</h2>
+
+<p>No. A fake university has no legal power to award a degree, so the certificate does not count as one. Employers who verify qualifications, government recruitment boards and other universities admitting you to a higher programme can all reject it.</p>
+
+<p>The damage usually surfaces late. A student finds out at a government job document check, during a visa or credential evaluation, or when applying for a master's programme. By then the fee is gone and the years are spent. That is the reason to check before admission, not after.</p>
+
+<h2>Not on the fake list does not mean approved for online study</h2>
+
+<p>This is where most students get caught. The fake list covers only bodies with no legal standing at all. It says nothing about genuine universities that UGC has restricted, and it says nothing about whether a specific programme may run online.</p>
+
+<p>For an online degree, a recognised university still needs UGC-DEB entitlement for that exact programme, in online mode, for the session you join. A university can be legitimate and still not be entitled to offer the online MBA or BCA it is advertising. Our guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> walks through the portal step by step.</p>
+
+<p>The same logic applies to names people search alongside the word "fake", such as Vinayaka Mission, CV Raman, Shri Venkateshwara, Rabindranath Tagore and Suresh Gyan Vihar. None of them appears on the February 2026 UGC fake list. That settles only the first question. Whether a particular online or distance programme from any of them is valid depends on its entitlement on <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> for your session.</p>
+
+<h2>How do you check if a university is genuine? A three-step test</h2>
+
+<ol>
+<li><strong>Rule out the fake list.</strong> Search the institution's name and city on the UGC fake universities page.</li>
+<li><strong>Confirm it is a recognised university.</strong> UGC publishes lists of central, state, deemed and private universities on ugc.gov.in. The institution must appear on one of them.</li>
+<li><strong>For online or distance study, confirm the programme.</strong> Find the exact programme and mode on deb.ugc.ac.in for the current admission session. Then check the NAAC grade and its validity on <a href="https://naac.gov.in" target="_blank" rel="noopener">naac.gov.in</a>, because online entitlement depends on accreditation.</li>
+</ol>
+
+<p>We run steps two and three for every university we track and publish the result on a single page per university. Start at <a href="/verify">the edifyedu.in verify tool</a>, or read <a href="/guides/is-online-degree-valid-india">whether an online degree is valid in India</a> if you are still weighing online against regular study.</p>
+
+<h2>Warning signs that an institution may be fake</h2>
+
+<ul>
+<li>It promises a degree in a few months, or "without exams", or backdated.</li>
+<li>It cannot give you a UGC recognition reference or a DEB programme listing, only a certificate image or an "ISO" logo.</li>
+<li>Its name copies a real institution with one word changed.</li>
+<li>Fees must go to a personal account or a UPI handle rather than the university's official account.</li>
+<li>The "university" has no campus address that matches any UGC list.</li>
+</ul>
+
+<p class="pull">If an admission offer is urgent and the paperwork is vague, slow down. Real universities publish their approvals.</p>
+
+<h2>What should you do if you already enrolled in a fake university?</h2>
+
+<p>Stop any further payment first. Collect every receipt, chat, email and brochure, because a complaint without documents goes nowhere. Then file a police complaint for cheating and write to your state's higher education department.</p>
+
+<p>UGC states on its fake universities page that it has written to state governments asking them to act against these institutions. Copy UGC on your complaint through the contact details on ugc.gov.in. If you want to restart with a valid programme, our <a href="/blog/ugc-deb-approved-universities-list-2026">list of UGC-DEB approved online universities</a> is a safer starting point, and you can <a href="/compare">compare approved universities side by side</a>.</p>
+
+<div class="cta-box">
+<p><strong>Not sure about a university you are considering?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us to check it</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC, State-wise list of fake universities as on February 2026: ugc.gov.in/universitydetails/Fakeuniversity</li>
+<li>UGC Act, 1956, Sections 22 and 23: ugc.gov.in</li>
+<li>UGC-DEB programme entitlement: deb.ugc.ac.in</li>
+<li>NAAC accreditation status: naac.gov.in</li>
+</ul>
+
+<p class="disclaimer"><em>Last verified against the UGC fake universities page on 26 October 2026. UGC revises this list without notice. Always confirm against the official page before acting on it.</em></p>
+    `,
+  },
+  {
+    slug: 'how-online-degree-exams-work-india',
+    title: 'How Do Online Degree Exams Work in India? UGC Rules 2026',
+    seoTitle: 'How Do Online Degree Exams Work in India? UGC Rules 2026',
+    h1Title: 'How Online Degree Exams Work in India: Proctoring, Marks and UGC Rules',
+    metaDescription: 'Online degree exams in India are proctored, either remotely or at a test centre. UGC caps internal marks at 30%. Here is how the exam, ID check and grading work.',
+    category: 'Online Degree Validity',
+    tags: ['Online Exams', 'Proctored Exams', 'UGC Regulations', 'Online Degree', 'UGC-DEB', 'Student Guidance'],
+    publishedAt: '2026-10-26',
+    readTime: 8,
+    targetKeyword: 'how do online exams work',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/30858451/pexels-photo-30858451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@shootsaga" target="_blank" rel="noopener nofollow">Anil  Sharma</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling young girl with headset on a video call, studying online at home.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'How do online exams work for a UGC-approved online degree?', a: 'The university runs a proctored exam each semester. Under the UGC 2020 regulations it can hold the exam at a designated test centre, on computer or on paper, or remotely through technology-mediated proctoring that watches you through your webcam and locks your screen.' },
+      { q: 'Can I write online degree exams from home?', a: 'Often, yes. The UGC regulations allow online examination through technology-mediated proctoring, which most universities use for online programmes. Some universities still use test centres for some or all papers, so check the exam section of your university before you enrol.' },
+      { q: 'How are marks split in an online degree?', a: 'UGC caps continuous assessment such as assignments and quizzes at 30 per cent of the marks. The end-semester exam carries at least 70 per cent. Both are shown separately on your grade card.' },
+      { q: 'How does the university confirm it is really me writing the exam?', a: 'The regulations require attendance to be authenticated biometrically against Aadhaar or another government identifier for Indian learners, and passports for international learners. In remote exams this usually means a photo and ID check through the webcam before the paper opens.' },
+      { q: 'What happens if my internet disconnects during an online exam?', a: 'It depends on the university. The regulations require test centres to have backup plans for power or application failure, but remote-exam rules on reconnection and re-tests are set by each university. Ask for the written policy before your first exam.' },
+      { q: 'Is an online degree with online exams valid?', a: 'Yes, if the programme is UGC-entitled. Regulation 22 of the UGC 2020 regulations treats online degrees from recognised institutions as equivalent to conventional degrees. Check the programme on deb.ugc.ac.in for your admission session.' },
+      { q: 'Can a university outsource its online exams?', a: 'No. The regulations say all assessment must be handled directly by the institution and no part of it may be outsourced. Invigilators and observers must be faculty from the university or another UGC-recognised institution.' },
+    ],
+    ctaTitle: 'Want to know how a specific university runs its exams?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">Every UGC-approved online degree ends each semester with a proctored exam. You may write it from home under webcam supervision or at a test centre. The rules on marks and identity checks are the same everywhere.</p>
+
+<p><strong>Short answer:</strong> online degree exams in India are <strong>proctored exams held at the end of every semester</strong>. Under the UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, a university can run them at a designated test centre, on a computer or on paper, or remotely through <strong>technology-mediated proctoring</strong>, where software watches you through your webcam. Assignments and quizzes can carry <strong>at most 30 per cent</strong> of your marks, and the end-semester exam carries <strong>at least 70 per cent</strong>.</p>
+
+<div class="callout-key">
+<strong>The rules in one box, from the UGC 2020 regulations (last checked 26 October 2026)</strong>
+<ul>
+<li><strong>Exam type:</strong> proctored, every semester</li>
+<li><strong>Where:</strong> a designated test centre, or remotely with technology-mediated proctoring</li>
+<li><strong>Marks split:</strong> continuous assessment up to 30%, end-semester exam at least 70%</li>
+<li><strong>Identity check:</strong> biometric, against Aadhaar or another government ID (passport for international learners)</li>
+<li><strong>Who runs it:</strong> the university itself. Outsourcing any part of assessment is not allowed</li>
+<li><strong>Degree value:</strong> equivalent to a conventional degree (Regulation 22)</li>
+</ul>
+</div>
+
+<h2>What is a proctored exam?</h2>
+
+<p>UGC defines a proctored examination as one held under the supervision of an approved person or technology that confirms two things: the identity of the person taking the test, and the integrity of the room they are taking it in. The format can be pen and paper, computer-based testing, or fully online.</p>
+
+<p>So "online exam" does not mean an open-book quiz you take whenever you like. It means a timed paper, on a fixed date, with someone or something watching. That supervision is what lets an online degree stand next to a regular one.</p>
+
+<h2>Can you write online degree exams from home?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>In most cases, yes. Annexure II of the regulations lets a university running an online programme hold exams at a designated test centre, and it adds that the university "can also conduct online examination through technology mediated proctoring." That second route is the one most online universities use for most papers.</p>
+
+<p>Not every university uses it for every paper, though. Some keep test centres for end-semester exams, some for practical-heavy subjects, and some switch between the two from one session to the next. Before you enrol, read the examination section of the university's website and ask the admissions team in writing which format applies to your programme.</p>
+
+<figure class="svg-figure">
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram comparing the two exam formats UGC allows for online degrees: remote proctored exam at home and proctored exam at a designated test centre, both with biometric ID checks and a 70 per cent minimum weight for the end-semester exam">
+<rect width="640" height="300" fill="#ffffff"/>
+<text x="320" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Two exam formats UGC allows for online degrees</text>
+<rect x="24" y="48" width="280" height="190" rx="10" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.5"/>
+<text x="164" y="76" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Remote proctored exam</text>
+<g font-size="12" fill="#0f172a">
+<text x="44" y="104">Where: your home or office</text>
+<text x="44" y="128">Needs: laptop, webcam, stable internet</text>
+<text x="44" y="152">Watched by: proctoring software,</text>
+<text x="44" y="170">often with human review</text>
+<text x="44" y="194">ID check: photo and ID on webcam</text>
+<text x="44" y="218">Common for most online programmes</text>
+</g>
+<rect x="336" y="48" width="280" height="190" rx="10" fill="#f1f5f9" stroke="#f97316" stroke-width="1.5"/>
+<text x="476" y="76" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Test centre exam</text>
+<g font-size="12" fill="#0f172a">
+<text x="356" y="104">Where: a designated test centre</text>
+<text x="356" y="128">Format: computer-based or pen and paper</text>
+<text x="356" y="152">Watched by: proctors in each room,</text>
+<text x="356" y="170">CCTV recording</text>
+<text x="356" y="194">ID check: biometric at check-in</text>
+<text x="356" y="218">Used by some universities or papers</text>
+</g>
+<rect x="24" y="252" width="592" height="34" rx="8" fill="#0f172a"/>
+<text x="320" y="274" text-anchor="middle" font-size="12.5" fill="#ffffff">Both: end-semester exam at least 70% of marks. Assignments and quizzes at most 30%.</text>
+</svg>
+<figcaption>Source: UGC (ODL and Online Programmes) Regulations, 2020, Regulation 15 and Annexure II.</figcaption>
+</figure>
+
+<h2>How does a remote proctored exam work, step by step?</h2>
+
+<p>The software differs between universities, but the sequence is close to identical. Here is what a typical end-semester paper looks like from the student's side.</p>
+
+<ol>
+<li><strong>Exam slot and admit card.</strong> The university publishes a schedule and issues an admit card or exam link on its learning portal, usually after you clear any pending fee.</li>
+<li><strong>System check.</strong> You run a compatibility test in advance: browser, webcam, microphone and internet speed. Do this a day early, not ten minutes before.</li>
+<li><strong>Identity check.</strong> You show your face and a government ID to the camera. The regulations require biometric authentication against Aadhaar or another government identifier, which in a remote exam usually takes this form.</li>
+<li><strong>Room scan.</strong> Many systems ask you to turn the camera around the room to show your desk is clear.</li>
+<li><strong>Locked paper.</strong> The exam opens in a locked browser. Switching tabs, opening another app or leaving the frame can be flagged.</li>
+<li><strong>Submission and review.</strong> Flags raised by the software are typically reviewed by a person before any action is taken.</li>
+</ol>
+
+<div class="callout-warning">
+<strong>Ask for the disconnection policy in writing.</strong> The regulations require test centres to have backup plans for power or application failure. They do not spell out what happens if your home internet drops mid-paper. Each university sets that rule itself, including whether you get a re-test and whether it costs extra.
+</div>
+
+<h2>How are marks split between assignments and exams?</h2>
+
+<p>Regulation 15 fixes the split for every ODL and online programme. Continuous or formative assessment, meaning assignments, quizzes and similar work during the semester, can count for <strong>a maximum of 30 per cent</strong>. The summative end-semester or term-end exam must count for <strong>a minimum of 70 per cent</strong>.</p>
+
+<p>That has a practical consequence. You cannot coast through an online degree on assignments alone. The proctored exam decides most of your grade, which is exactly why UGC regulates it so closely. Your grade card shows the two components separately, so anyone reading it can see both.</p>
+
+<p class="pull">An online degree is graded mostly by a supervised exam, not by homework.</p>
+
+<h2>Who sets and checks the papers?</h2>
+
+<p>The university does, and only the university. Annexure II says all assessment must be handled directly by the institution and no part of it may be outsourced. Invigilators, exam superintendents and observers must be full-time faculty of the university or qualified faculty from another UGC-recognised institution.</p>
+
+<p>This rule is one of the quieter tests of a legitimate programme. If an "online degree" offer comes through an agent who promises to "manage" your exams, that is a red flag about the whole programme, not a convenience. Our guide on <a href="/blog/ugc-fake-universities-list-2026">the UGC fake universities list</a> covers the other warning signs.</p>
+
+<h2>What does a test centre exam involve?</h2>
+
+<p>When a university uses a test centre, the regulations set minimum standards. Each room needs human proctors or technology-mediated proctoring, examinees must sit far enough apart that they cannot see each other's work, and the centre must test the exam application before the paper starts. Centres also need CCTV recording of the whole exam, kept for at least five years, plus an observer appointed by the university.</p>
+
+<p>There is one difference from distance learning that matters if you live far from the university. Online programmes are not bound by territorial jurisdiction, so a university can enrol online learners across India. Distance (ODL) exams, by contrast, must be held within the university's territorial jurisdiction. If you are weighing the two modes, our guide to <a href="/guides/online-mba-vs-distance-mba">online versus distance MBA</a> sets out the other differences.</p>
+
+<h2>Is a degree earned through online exams valid?</h2>
+
+<p>Yes, when the programme is UGC-entitled. Regulation 22 says degrees awarded through ODL or online mode by recognised institutions are equivalent to the corresponding conventional degrees. Each degree must also carry a unique identification number and be uploaded to the National Academic Depository, which makes it verifiable.</p>
+
+<p>The entitlement is the part to check, because it applies to a specific programme in a specific session. Look the programme up on <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>, or use our step-by-step guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a>. For the wider question, read <a href="/guides/is-online-degree-valid-india">is an online degree valid in India</a>.</p>
+
+<h2>How to prepare for your first online exam</h2>
+
+<ul>
+<li>Run the university's system check at least a day before, on the device you will use.</li>
+<li>Use a wired connection or sit close to the router, and keep a mobile hotspot ready as a fallback.</li>
+<li>Keep the ID you registered with on the desk. A different ID can fail the check.</li>
+<li>Clear the desk and the wall behind you. Notes in view can be flagged.</li>
+<li>Read the university's rules on breaks. In many remote exams, leaving the frame counts as a violation.</li>
+<li>Save the exam helpdesk number and email before the paper, not during it.</li>
+</ul>
+
+<p>If you are still choosing a programme, the exam format is worth comparing alongside fees and accreditation. You can <a href="/compare">compare universities side by side</a> or browse <a href="/programs/mba">online MBA programmes</a>.</p>
+
+<div class="cta-box">
+<p><strong>Want to know how a particular university runs its exams?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020: Regulation 2 (definition of proctored examination), Regulation 15 (evaluation), Regulation 16 (certification), Regulation 22 (equivalence), Annexure II (conduct of examination). Published on deb.ugc.ac.in/Regulations</li>
+<li>UGC-DEB, Online Learning: deb.ugc.ac.in</li>
+</ul>
+
+<p class="disclaimer"><em>Last checked against the UGC 2020 regulations as published on deb.ugc.ac.in on 26 October 2026. Exam formats, software and re-test policies vary by university and can change between sessions. Confirm the current rules with your university.</em></p>
+    `,
+  },
+  {
+    slug: 'ugc-deb-id-explained',
+    title: 'UGC DEB ID 2026: What It Is and How to Create It',
+    seoTitle: 'UGC DEB ID 2026: What It Is and How to Create It',
+    h1Title: 'UGC DEB ID Explained: What UGC-DEB Is, Why You Need a DEB ID, and How to Create One',
+    metaDescription: 'A DEB ID is mandatory for every online and distance learner since October 2024. What UGC-DEB is, how to create a DEB ID from your ABC ID, and how to fix errors.',
+    category: 'Online Degree Validity',
+    tags: ['UGC DEB ID', 'DEB ID', 'UGC-DEB', 'ABC ID', 'APAAR', 'Online Degree', 'Student Guidance'],
+    publishedAt: '2026-10-26',
+    readTime: 7,
+    targetKeyword: 'ugc deb id',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/30858451/pexels-photo-30858451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@shootsaga" target="_blank" rel="noopener nofollow">Anil  Sharma</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling young girl with headset on a video call, studying online at home.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'What is a DEB ID?', a: 'A DEB ID is a unique learner ID generated on the UGC-DEB portal. UGC made it mandatory for every student enrolling in an Open and Distance Learning or Online programme at a recognised university, from the academic session beginning October 2024.' },
+      { q: 'What is UGC-DEB?', a: 'UGC-DEB is the Distance Education Bureau of the University Grants Commission. It recognises universities to offer programmes in Open and Distance Learning and Online mode, and publishes which programmes each university is entitled to offer, session by session, on deb.ugc.ac.in.' },
+      { q: 'How do I create a DEB ID?', a: 'First create an Academic Bank of Credits (ABC) ID, also called an APAAR ID, through DigiLocker. Then register on the Student DEB ID page of deb.ugc.ac.in using that ABC ID. The portal generates your DEB ID.' },
+      { q: 'Is a DEB ID required for an online MBA?', a: 'Yes. UGC requires a DEB ID to enrol in any ODL or Online programme at a recognised or entitled university, which includes online MBA, MCA, BBA, BCA, BA, B.Com, MA, M.Com and MSc programmes.' },
+      { q: 'Do I need a new DEB ID for every course?', a: 'No. UGC states that a DEB ID, once generated, remains valid for lifelong ODL and Online learning.' },
+      { q: 'How do I correct my name or date of birth in my DEB ID?', a: 'Correct the details in your APAAR or ABC record first, through the ABC support ticket system or DigiLocker. Once the APAAR card is correct, update the DEB ID through the Update DEB Details link on deb.ugc.ac.in.' },
+      { q: 'Does having a DEB ID mean my programme is approved?', a: 'No. A DEB ID identifies you as a learner. It does not approve a university or a programme. You still need to check that your exact programme is entitled for online mode on deb.ugc.ac.in for the session you join.' },
+    ],
+    ctaTitle: 'Check your programme, not just your ID',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">If you are joining an online or distance degree in India, you need a DEB ID before the university can enrol you. It takes one sitting to create, as long as your ABC ID is correct first.</p>
+
+<p><strong>Short answer:</strong> a <strong>DEB ID</strong> is a unique learner ID issued on the UGC Distance Education Bureau (UGC-DEB) portal. UGC made it <strong>mandatory for every student enrolling in an online or distance (ODL) programme from the academic session beginning October 2024</strong>. You create it on <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> using your Academic Bank of Credits (ABC) ID, also called an APAAR ID. Once created, it stays valid for life.</p>
+
+<div class="callout-key">
+<strong>DEB ID at a glance (last verified 26 October 2026)</strong>
+<ul>
+<li><strong>Who needs it:</strong> every learner joining an ODL or Online programme at a UGC-recognised university</li>
+<li><strong>Mandatory since:</strong> academic session beginning October 2024 (UGC public notice of 11 November 2024)</li>
+<li><strong>Built from:</strong> your ABC / APAAR ID, created through DigiLocker</li>
+<li><strong>Where:</strong> the Student DEB ID page on deb.ugc.ac.in</li>
+<li><strong>Validity:</strong> lifelong, for all future ODL and Online study</li>
+<li><strong>DEB technical helpline:</strong> 011-23604645 (as listed on the portal)</li>
+</ul>
+</div>
+
+<h2>What is UGC-DEB?</h2>
+
+<p>UGC-DEB is the Distance Education Bureau of the University Grants Commission. It handles the recognition of universities that want to teach in Open and Distance Learning mode or Online mode, under the UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020.</p>
+
+<p>For a student, the bureau matters for one reason: its website is where UGC publishes which universities may offer which programmes, in which mode, for which session. People search for it as "UGC DEB" and "DEB UGC" interchangeably. They mean the same body and the same site.</p>
+
+<h2>What is a DEB ID, and why did UGC make it mandatory?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>The DEB portal describes the DEB ID as a unique ID that a learner must create before taking admission in an ODL or Online programme. Its stated purpose is to make sure learners are joining programmes at institutions UGC has actually recognised.</p>
+
+<p>According to the UGC public notice of 11 November 2024, the Commission decided at its 581st meeting on 25 June 2024 to standardise admissions for ODL and Online learners. Students must register on the UGC-DEB portal with their ABC ID to generate the DEB ID, which became mandatory from the 2024-25 academic year, for the session beginning October 2024 and onward.</p>
+
+<p class="pull">The DEB ID ties you to a recognised programme. It is UGC's way of making admission traceable.</p>
+
+<h2>How do you create a DEB ID? Step by step</h2>
+
+<ol>
+<li><strong>Create your ABC ID.</strong> The Academic Bank of Credits ID, now shown as an APAAR ID, is created through your DigiLocker account. If you already have one from school or college, use it.</li>
+<li><strong>Check every detail on your APAAR card.</strong> Name, date of birth and gender must be exactly right. The DEB portal tells students to fix errors here first, because the DEB ID pulls from this record.</li>
+<li><strong>Open the Student DEB ID page.</strong> Go to deb.ugc.ac.in and choose "Get DEBID".</li>
+<li><strong>Register with your ABC ID.</strong> Enter the ABC ID and complete the authentication the portal asks for.</li>
+<li><strong>Save the DEB ID.</strong> Note it down and give it to your university during admission. The university uses it to enrol you.</li>
+</ol>
+
+<figure class="svg-figure">
+<svg viewBox="0 0 640 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flow diagram: DigiLocker account leads to ABC or APAAR ID, which you check for errors, then register on deb.ugc.ac.in to get a DEB ID, which the university uses to enrol you">
+<rect width="640" height="170" fill="#ffffff"/>
+<g font-size="12" text-anchor="middle">
+<rect x="10" y="40" width="110" height="64" rx="8" fill="#f1f5f9" stroke="#0f172a"/>
+<text x="65" y="68" fill="#0f172a" font-weight="700">DigiLocker</text><text x="65" y="86" fill="#64748b">account</text>
+<rect x="138" y="40" width="110" height="64" rx="8" fill="#f1f5f9" stroke="#0f172a"/>
+<text x="193" y="68" fill="#0f172a" font-weight="700">ABC / APAAR</text><text x="193" y="86" fill="#64748b">ID created</text>
+<rect x="266" y="40" width="110" height="64" rx="8" fill="#fff7ed" stroke="#f97316"/>
+<text x="321" y="68" fill="#0f172a" font-weight="700">Check details</text><text x="321" y="86" fill="#64748b">name, DOB, gender</text>
+<rect x="394" y="40" width="110" height="64" rx="8" fill="#f1f5f9" stroke="#0f172a"/>
+<text x="449" y="68" fill="#0f172a" font-weight="700">deb.ugc.ac.in</text><text x="449" y="86" fill="#64748b">Get DEBID</text>
+<rect x="522" y="40" width="110" height="64" rx="8" fill="#0f172a"/>
+<text x="577" y="68" fill="#ffffff" font-weight="700">DEB ID</text><text x="577" y="86" fill="#ffffff">give to university</text>
+</g>
+<g stroke="#0f172a" stroke-width="1.5" fill="#0f172a">
+<line x1="120" y1="72" x2="134" y2="72"/><polygon points="134,68 138,72 134,76"/>
+<line x1="248" y1="72" x2="262" y2="72"/><polygon points="262,68 266,72 262,76"/>
+<line x1="376" y1="72" x2="390" y2="72"/><polygon points="390,68 394,72 390,76"/>
+<line x1="504" y1="72" x2="518" y2="72"/><polygon points="518,68 522,72 518,76"/>
+</g>
+<text x="320" y="140" text-anchor="middle" font-size="11.5" fill="#64748b">Fix errors at the APAAR step. The DEB ID copies whatever your ABC record says.</text>
+</svg>
+<figcaption>The DEB ID sits on top of your ABC/APAAR record, so the order of steps matters.</figcaption>
+</figure>
+
+<h2>How do you correct a mistake in your DEB ID?</h2>
+
+<p>Fix the source, then the copy. The DEB portal sets out the order: correct your APAAR or ABC details first, through the ABC support ticket system or the DigiLocker app, and confirm the APAAR card now shows the right details. Only then update the DEB ID through the "Update DEB Details" link on deb.ugc.ac.in.</p>
+
+<p>If you try to correct the DEB ID while the ABC record is still wrong, the error comes straight back. For ABC problems the portal lists the ABC support call centre, 1800-889-3511. For DEB portal issues it lists 011-23604645.</p>
+
+<div class="callout-warning">
+<strong>Do not give your DigiLocker login to an agent.</strong> You can create an ABC ID and a DEB ID yourself in one sitting. Anyone who asks for your DigiLocker password "to do the DEB ID for you" has access to all your documents. UGC also prohibits franchise arrangements for online admissions, so the admission itself should run through the university's own headquarters.
+</div>
+
+<h2>Does a DEB ID mean your programme is UGC approved?</h2>
+
+<p>No, and this is the most common misunderstanding. The DEB ID identifies you. It does not approve the university, and it does not approve the programme. A university that is recognised for one programme can still be outside its entitlement for another.</p>
+
+<p>So check the programme as well as the ID. Find your university and the exact programme, in Online mode, for your admission session, on deb.ugc.ac.in. Our guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> shows where to click. You can also run any university we track through <a href="/verify">the edifyedu.in verify tool</a>, which shows its UGC-DEB and NAAC standing on one page.</p>
+
+<h2>What else does UGC tell students to check before enrolling?</h2>
+
+<p>The same November 2024 notice lists the checks UGC expects every ODL and Online learner to make. In short:</p>
+
+<ul>
+<li><strong>Recognition and entitlement for your session.</strong> Both are published year by year on deb.ugc.ac.in.</li>
+<li><strong>Debarred universities.</strong> UGC names universities barred from ODL or Online admissions for particular sessions. Check the notice board before you pay.</li>
+<li><strong>Prohibited programmes.</strong> Engineering, medical, law, pharmacy, nursing, architecture, agriculture, aviation and several other disciplines cannot be offered in ODL or Online mode. M.Phil and Ph.D. are prohibited in both modes too.</li>
+<li><strong>No franchising.</strong> No university may admit or teach ODL or Online learners through a franchise.</li>
+<li><strong>Degree specification.</strong> Duration, name and entry qualification must follow the UGC Specification of Degrees, 2014.</li>
+</ul>
+
+<p>If a programme passes all of that, the degree is treated as equivalent to the same degree earned on campus. Read <a href="/guides/is-online-degree-valid-india">is an online degree valid in India</a> for the detail, and <a href="/blog/ugc-fake-universities-list-2026">the UGC fake universities list</a> for the institutions that fail at the very first step.</p>
+
+<h2>When is the DEB ID needed in the admission cycle?</h2>
+
+<p>Before enrolment is confirmed, because the university needs it to admit you. Admission windows are fixed by UGC for each session. The DEB portal states that the last date to admit learners in ODL and Online programmes for the August 2026 session was 13 October 2026. If you are aiming for the next intake, create the DEB ID as soon as you shortlist a university, not on the last day.</p>
+
+<p>Once you have the ID, the real decision is which programme to join. You can <a href="/compare">compare universities side by side</a> or start with <a href="/programs/mba">online MBA programmes</a>.</p>
+
+<div class="cta-box">
+<p><strong>Got your DEB ID and still unsure about the university?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us to check it</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC-DEB, Student DEB ID page: deb.ugc.ac.in/StudentDEBId</li>
+<li>UGC public notice F.No. 1-34/2024 (DEB-I), 11 November 2024, "Precautions to be taken by the students before enrolling in Programmes offered under ODL and/or OL mode": deb.ugc.ac.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020: deb.ugc.ac.in/Regulations</li>
+</ul>
+
+<p class="disclaimer"><em>Last verified against the UGC-DEB portal on 26 October 2026. Portal steps, helpline numbers and admission deadlines change. Confirm on deb.ugc.ac.in before acting.</em></p>
+    `,
+  },
+  {
+    slug: 'ugc-two-degrees-simultaneously-rules',
+    title: 'Can You Do Two Degrees at Once? UGC Rules 2026',
+    seoTitle: 'Can You Do Two Degrees at Once? UGC Rules 2026',
+    h1Title: 'Two Degrees at the Same Time: What UGC Allows, Including Online Degrees',
+    metaDescription: 'UGC allows two degrees at once: two regular, one regular plus one online, or two online. What the 2022 guidelines and the 2025 change say, and what to check first.',
+    category: 'Online Degree Validity',
+    tags: ['Dual Degree', 'Two Degrees Simultaneously', 'UGC Guidelines', 'Online Degree', 'UGC-DEB', 'Student Guidance'],
+    publishedAt: '2026-10-26',
+    readTime: 7,
+    targetKeyword: 'ugc allows two degrees simultaneously',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/30858451/pexels-photo-30858451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@shootsaga" target="_blank" rel="noopener nofollow">Anil  Sharma</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling young girl with headset on a video call, studying online at home.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'Does UGC allow two degrees at the same time?', a: 'Yes. Under the UGC Guidelines for Pursuing Two Academic Programmes Simultaneously (April 2022, modified in 2025), a student can pursue two programmes at once: two full-time physical programmes with non-overlapping class timings, one physical plus one ODL or online programme, or up to two ODL or online programmes.' },
+      { q: 'Can I do a regular degree and an online degree together?', a: 'Yes. The guidelines allow one full-time programme in physical mode alongside one programme in Open and Distance Learning or Online mode. The online programme must come from a university recognised by UGC to run it.' },
+      { q: 'Can I do two online degrees at the same time?', a: 'Yes. The guidelines allow up to two ODL or Online programmes simultaneously, provided both universities are recognised and entitled for those programmes.' },
+      { q: 'Can I do a PhD alongside another degree under these rules?', a: 'No. UGC states that the guidelines apply only to programmes other than Ph.D.' },
+      { q: 'Are two degrees done together before 2022 valid?', a: 'Following the 2025 modification, yes, if they were pursued in line with the UGC First Degree and Master Degree Regulations, the universities\' own statutes, and the norms of the relevant councils and the Distance Education Bureau. The original 2022 text had denied retrospective benefit.' },
+      { q: 'Does my university have to allow two programmes?', a: 'UGC asks universities to implement the guidelines, and each university sets up its own mechanism through its statutory bodies. Ask both universities in writing whether they permit concurrent enrolment and how they handle exam clashes.' },
+      { q: 'Do I need two DEB IDs for two online programmes?', a: 'No. UGC states that a DEB ID, once generated, stays valid for lifelong ODL and Online learning, so the same ID applies to both enrolments.' },
+    ],
+    ctaTitle: 'Planning an online degree next to your current one?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">Yes, you can study for two degrees at once in India. UGC has allowed it since April 2022, and that includes pairing a regular degree with an online one.</p>
+
+<p><strong>Short answer:</strong> UGC allows a student to pursue <strong>two academic programmes at the same time</strong>. The UGC Guidelines for Pursuing Two Academic Programmes Simultaneously, issued in April 2022 and modified in June 2025, permit three combinations: <strong>two full-time physical programmes</strong> whose class timings do not overlap, <strong>one physical programme plus one ODL or online programme</strong>, or <strong>up to two ODL or online programmes</strong>. The rule does not apply to Ph.D.</p>
+
+<div class="callout-key">
+<strong>The rule in one box (last verified 26 October 2026)</strong>
+<ul>
+<li><strong>Source:</strong> UGC Guidelines for Pursuing Two Academic Programmes Simultaneously, April 2022, modified after the Commission's 589th meeting on 3 April 2025</li>
+<li><strong>Two physical programmes:</strong> allowed if class timings do not overlap</li>
+<li><strong>One physical plus one online or ODL:</strong> allowed</li>
+<li><strong>Two online or ODL:</strong> allowed</li>
+<li><strong>Ph.D.:</strong> excluded</li>
+<li><strong>Online or ODL programme must be:</strong> from a university recognised to run it</li>
+</ul>
+</div>
+
+<h2>Which combinations does UGC allow?</h2>
+
+<table>
+<thead><tr><th>Combination</th><th>Allowed?</th><th>Condition</th></tr></thead>
+<tbody>
+<tr><td>Two full-time programmes, both on campus</td><td>Yes</td><td>Class timings must not overlap</td></tr>
+<tr><td>One on campus, one online</td><td>Yes</td><td>Online programme from a UGC-recognised, entitled university</td></tr>
+<tr><td>One on campus, one distance (ODL)</td><td>Yes</td><td>ODL programme from a UGC-recognised, entitled university</td></tr>
+<tr><td>Two online or ODL programmes</td><td>Yes</td><td>Both recognised and entitled</td></tr>
+<tr><td>A Ph.D. with any other programme</td><td>Not covered</td><td>The guidelines exclude Ph.D.</td></tr>
+<tr><td>Any programme UGC prohibits online, such as engineering or law</td><td>No</td><td>Prohibited in ODL and Online mode regardless</td></tr>
+</tbody>
+</table>
+
+<p>The guidelines also say both programmes stay governed by UGC regulations and by any statutory or professional council that oversees the subject. So the two-degree rule never makes a programme valid that would otherwise be invalid. It only removes the bar on doing two valid ones together.</p>
+
+<h2>Can you do a regular degree and an online degree together?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>Yes. This is the combination most people searching this question are after: a B.Com or B.Sc on campus with an online BBA, or a job-linked online MBA next to another qualification. Guideline 2 allows one programme in full-time physical mode and another in ODL or Online mode.</p>
+
+<p>The condition sits in Guideline 3. The ODL or online programme has to come from an institution recognised by UGC, a statutory council or the Government of India to run it. For an online degree, that means checking the exact programme on <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> for your admission session. Our guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> shows how.</p>
+
+<p class="pull">The two-degree rule does not validate anything. It lets you stack two programmes that are already valid.</p>
+
+<h2>Can you do two online degrees at once?</h2>
+
+<p>Yes, up to two ODL or Online programmes at the same time. Whether you should is a separate question. Each online programme has its own proctored end-semester exams, and assignments count for up to 30 per cent of marks, so two programmes means two sets of deadlines and two exam calendars. Read <a href="/blog/how-online-degree-exams-work-india">how online degree exams work</a> before you commit to both.</p>
+
+<p>You do not need a second DEB ID. UGC states that a DEB ID stays valid for lifelong ODL and Online learning, so the one you created for the first programme covers the second. If you have not created one yet, see <a href="/blog/ugc-deb-id-explained">our DEB ID guide</a>.</p>
+
+<h2>What changed in 2025?</h2>
+
+<p>One clause. The April 2022 text said the guidelines applied from the date of notification and that students who had already done two programmes simultaneously before that date could claim no retrospective benefit. That left people who had stacked degrees earlier in an uncertain position.</p>
+
+<p>The Commission approved a modification at its 589th meeting on 3 April 2025, and UGC circulated the revised guidelines to universities in June 2025. The new proviso says two programmes pursued together before the guidelines were issued shall be treated as valid, provided they followed the UGC First Degree and Master Degree Regulations, the universities' own statutes and ordinances, and the norms of the relevant professional council and the Distance Education Council or Distance Education Bureau.</p>
+
+<figure class="svg-figure">
+<svg viewBox="0 0 640 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: April 2022 UGC issues guidelines allowing two programmes at once with no retrospective benefit; 3 April 2025 the 589th Commission meeting approves a change; June 2025 revised guidelines treat earlier concurrent degrees as valid if they followed the rules of the time">
+<rect width="640" height="170" fill="#ffffff"/>
+<line x1="60" y1="70" x2="580" y2="70" stroke="#0f172a" stroke-width="2"/>
+<g font-size="12" fill="#0f172a" text-anchor="middle">
+<circle cx="100" cy="70" r="8" fill="#f97316"/><text x="100" y="45" font-weight="700">April 2022</text><text x="100" y="98">Guidelines issued.</text><text x="100" y="115">Two programmes allowed.</text><text x="100" y="132">No retrospective benefit.</text>
+<circle cx="320" cy="70" r="8" fill="#B8892A"/><text x="320" y="45" font-weight="700">3 April 2025</text><text x="320" y="98">589th Commission meeting</text><text x="320" y="115">approves a change</text><text x="320" y="132">to clause 5.</text>
+<circle cx="540" cy="70" r="8" fill="#10b981"/><text x="540" y="45" font-weight="700">June 2025</text><text x="540" y="98">Revised guidelines sent.</text><text x="540" y="115">Earlier concurrent degrees</text><text x="540" y="132">valid if rules were followed.</text>
+</g>
+<text x="320" y="160" text-anchor="middle" font-size="11" fill="#64748b">Source: UGC guidelines (April 2022) and UGC letter to universities (June 2025), ugc.gov.in</text>
+</svg>
+<figcaption>The 2025 change protects people who stacked degrees before 2022, but only if each programme followed the rules of its time.</figcaption>
+</figure>
+
+<h2>What should you check before enrolling in a second programme?</h2>
+
+<ol>
+<li><strong>Both universities' rules.</strong> UGC says universities devise their own mechanism through their statutory bodies. Ask each university, in writing, whether it permits a concurrent enrolment and whether it needs a declaration or no-objection from the other.</li>
+<li><strong>Entitlement of the online or ODL programme</strong> for your session, on deb.ugc.ac.in.</li>
+<li><strong>Prohibited programmes.</strong> UGC does not allow engineering, law, medicine, pharmacy, nursing, architecture and several other disciplines in ODL or Online mode. A two-degree plan cannot get around that.</li>
+<li><strong>Exam clashes.</strong> Nothing in the guidelines obliges either university to move an exam for you. Compare both academic calendars before paying.</li>
+<li><strong>Whether a fake institution is involved.</strong> Rule this out on the <a href="/blog/ugc-fake-universities-list-2026">UGC fake universities list</a> before anything else.</li>
+</ol>
+
+<div class="callout-warning">
+<strong>Watch for "two degrees in one year" offers.</strong> The guidelines let you study two programmes at the same time. They do not shorten either one. Each degree still needs its full minimum duration and credits under the UGC Specification of Degrees. An offer that compresses two degrees into one year is a red flag.
+</div>
+
+<h2>Is a second degree done this way valid for jobs?</h2>
+
+<p>Each degree stands on its own. An online degree from a recognised, entitled programme is treated as equivalent to the conventional degree under Regulation 22 of the UGC 2020 regulations, whether or not you earned another degree alongside it. Read <a href="/guides/is-online-degree-valid-india">is an online degree valid in India</a> for the detail, and <a href="/guides/online-mba-for-government-jobs">online MBA validity for government jobs</a> if that is your target.</p>
+
+<p>If you are choosing the online half of the pair, you can <a href="/compare">compare universities side by side</a> on approvals and accreditation.</p>
+
+<div class="cta-box">
+<p><strong>Adding an online degree to your current studies?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us which programmes are entitled for your session</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC, Guidelines for Pursuing Two Academic Programmes Simultaneously, April 2022: ugc.gov.in</li>
+<li>UGC letter D.O. No. F.1-6/2007 (CPP-II), June 2025, with the modified guidelines approved at the 589th Commission meeting on 3 April 2025: ugc.gov.in</li>
+<li>UGC public notice of 11 November 2024 on ODL and Online admissions (DEB ID, prohibited programmes): deb.ugc.ac.in</li>
+</ul>
+
+<p class="disclaimer"><em>Last verified against the UGC guidelines on 26 October 2026. Universities apply these guidelines through their own statutory bodies, so local rules can be stricter. Confirm with both universities before enrolling.</em></p>
+    `,
+  },
+  {
+    slug: 'ugc-biannual-admissions-january-july-intake',
+    title: 'UGC Biannual Admissions: January and July Intake Explained',
+    seoTitle: 'UGC Biannual Admissions: January and July Intake Explained',
+    h1Title: 'UGC Biannual Admissions Explained: How the January and July Intakes Work for Online and Regular Degrees',
+    metaDescription: 'UGC lets universities admit students twice a year, July/August and January/February. Online degrees have had two sessions since 2020. What it means for you.',
+    category: 'Online Degree Validity',
+    tags: ['UGC Biannual Admission', 'January Intake', 'July Intake', 'Online Degree Admission', 'UGC Regulations', 'Student Guidance'],
+    publishedAt: '2026-10-26',
+    readTime: 7,
+    targetKeyword: 'ugc biannual admissions',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/38305335/pexels-photo-38305335.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@mananmaheshwari" target="_blank" rel="noopener nofollow">momentsbymanan</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Serene corridor of La Martiniere College in Lucknow, India, showcasing vintage architecture.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'What is biannual admission under UGC rules?', a: 'UGC defines biannual admission as admitting students twice a year, in July/August and January/February. The definition appears in the UGC (Minimum Standards of Instruction for the Grant of Undergraduate Degree and Postgraduate Degree) Regulations, 2025, published in the Gazette on 2 April 2025.' },
+      { q: 'Is biannual admission compulsory for universities?', a: 'No. The 2025 regulations say universities prepared to handle biannual admissions may admit students twice a year. Each university decides, and fixes its intake capacity in advance through its statutory bodies.' },
+      { q: 'Do online degrees have a January intake?', a: 'Yes, and they have had one since well before 2025. The UGC ODL and Online regulations of 2020 define an academic session as twelve months beginning in January to February or in July to August, so recognised online programmes can run two sessions a year.' },
+      { q: 'What is the last date for the January intake of an online degree?', a: 'UGC-DEB announces a last date to admit learners for each session. For the August 2026 session it was 13 October 2026. Check the DEB portal and notice board for the date that applies to the January 2027 session before you apply.' },
+      { q: 'Is a January-intake online degree less valid than a July-intake one?', a: 'No. Validity depends on whether the programme is recognised and entitled for the session you join, not on which half of the year it starts. Check your programme on deb.ugc.ac.in for that specific session.' },
+      { q: 'Does every university offer a January intake for its online MBA?', a: 'No. A university needs recognition or entitlement for that particular session, and some run only one intake a year. Confirm on deb.ugc.ac.in and with the university in writing.' },
+    ],
+    ctaTitle: 'Aiming for the January intake?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">If you missed the July admissions, you have not lost a year. UGC rules allow a second intake in January and February, and online degrees have used it for years.</p>
+
+<p><strong>Short answer:</strong> UGC allows universities to admit students <strong>twice a year, in July/August and January/February</strong>. For regular degrees this comes from the UGC (Minimum Standards of Instruction for the Grant of Undergraduate Degree and Postgraduate Degree) Regulations, 2025, which make it <strong>optional</strong>: universities "prepared to handle biannual admissions" may use it. For <strong>online and distance degrees</strong>, two sessions a year are older: the UGC ODL and Online regulations of 2020 already define an academic session as starting in January to February or July to August.</p>
+
+<div class="callout-key">
+<strong>Biannual admissions in one box (last verified 26 October 2026)</strong>
+<ul>
+<li><strong>Regular UG and PG degrees:</strong> optional twice-a-year intake under the UGC UG and PG Regulations, 2025 (Gazette, 2 April 2025)</li>
+<li><strong>Online and ODL degrees:</strong> two sessions a year under the UGC ODL and Online Regulations, 2020</li>
+<li><strong>Windows:</strong> July/August and January/February</li>
+<li><strong>Who decides:</strong> each university, with intake fixed in advance by its statutory bodies</li>
+<li><strong>Admission cut-off:</strong> set by UGC-DEB per session. August 2026 session: 13 October 2026</li>
+</ul>
+</div>
+
+<h2>What does biannual admission mean?</h2>
+
+<p>The 2025 regulations define it in one line: the process of admitting students twice a year, in July/August and January/February. Before this, a regular college degree in India ran on a single July intake. If you missed it, you waited a year.</p>
+
+<p>The same regulations describe an academic year as twelve months starting in either window. So a student who joins in January follows a full academic year from January, not a shortened one tacked on to someone else's.</p>
+
+<h2>Is biannual admission compulsory for every university?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/18067562/pexels-photo-18067562.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A group of young South Asian women working together on a laptop in a Jaipur office." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@biyani-girls-college-701394465" target="_blank" rel="noopener nofollow">Biyani Girls College</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>No. The wording is permissive. Section 4.0 of the 2025 regulations says universities prepared to handle biannual admissions "may admit students twice a year". Each university also has to fix its intake capacity in advance, through its statutory bodies, based on its faculty, facilities and student-teacher ratio.</p>
+
+<p>In practice that means a university can run a January intake for some programmes and not others. A January seat is a decision the university makes, not a right the student holds. Ask the specific university, and get the answer in writing.</p>
+
+<p class="pull">UGC opened the second door. Each university decides whether to use it.</p>
+
+<h2>How does it work for online and distance degrees?</h2>
+
+<p>Online degrees did not need the 2025 change. Regulation 2(b) of the UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020 defines an academic session as twelve months beginning in January to February or July to August. Recognised online programmes have been able to run two sessions a year since then.</p>
+
+<p>Two details matter more than the rule itself.</p>
+
+<ul>
+<li><strong>Recognition is per session.</strong> UGC-DEB publishes, session by session, which universities may offer which ODL and Online programmes. A programme entitled for one session is not automatically entitled for the next. Check the session you are joining.</li>
+<li><strong>Session dates shift.</strong> UGC has relabelled sessions when timelines moved. Its notices refer, for example, to a session beginning October 2024 "revised from July-August, 2024", and to a session beginning February 2025. Go by the session name and last date in the current DEB notice, not by the calendar month you expect.</li>
+</ul>
+
+<figure class="svg-figure">
+<svg viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Calendar showing the two UGC admission windows: January to February and July to August, with the note that UGC-DEB sets a last date to admit online learners for each session, for example 13 October 2026 for the August 2026 session">
+<rect width="640" height="200" fill="#ffffff"/>
+<text x="320" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">The two UGC admission windows</text>
+<g font-size="11" text-anchor="middle" fill="#0f172a">
+<rect x="20" y="50" width="50" height="40" fill="#f97316"/><text x="45" y="75" fill="#ffffff" font-weight="700">Jan</text>
+<rect x="70" y="50" width="50" height="40" fill="#f97316"/><text x="95" y="75" fill="#ffffff" font-weight="700">Feb</text>
+<rect x="120" y="50" width="50" height="40" fill="#f1f5f9"/><text x="145" y="75">Mar</text>
+<rect x="170" y="50" width="50" height="40" fill="#f1f5f9"/><text x="195" y="75">Apr</text>
+<rect x="220" y="50" width="50" height="40" fill="#f1f5f9"/><text x="245" y="75">May</text>
+<rect x="270" y="50" width="50" height="40" fill="#f1f5f9"/><text x="295" y="75">Jun</text>
+<rect x="320" y="50" width="50" height="40" fill="#0f172a"/><text x="345" y="75" fill="#ffffff" font-weight="700">Jul</text>
+<rect x="370" y="50" width="50" height="40" fill="#0f172a"/><text x="395" y="75" fill="#ffffff" font-weight="700">Aug</text>
+<rect x="420" y="50" width="50" height="40" fill="#f1f5f9"/><text x="445" y="75">Sep</text>
+<rect x="470" y="50" width="50" height="40" fill="#f1f5f9"/><text x="495" y="75">Oct</text>
+<rect x="520" y="50" width="50" height="40" fill="#f1f5f9"/><text x="545" y="75">Nov</text>
+<rect x="570" y="50" width="50" height="40" fill="#f1f5f9"/><text x="595" y="75">Dec</text>
+</g>
+<text x="70" y="112" text-anchor="middle" font-size="12" font-weight="700" fill="#f97316">January session</text>
+<text x="370" y="112" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">July session</text>
+<line x1="495" y1="92" x2="495" y2="130" stroke="#ef4444" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="495" y="146" text-anchor="middle" font-size="11" fill="#ef4444">13 Oct 2026: last date to admit</text>
+<text x="495" y="160" text-anchor="middle" font-size="11" fill="#ef4444">online learners, Aug 2026 session</text>
+<text x="320" y="190" text-anchor="middle" font-size="11" fill="#64748b">Sources: UGC ODL and Online Regulations 2020, Reg 2(b); UGC UG and PG Regulations 2025; deb.ugc.ac.in</text>
+</svg>
+<figcaption>Admission can run past the session's start month. UGC-DEB fixes the last date for each session.</figcaption>
+</figure>
+
+<h2>When is the last date for the January intake?</h2>
+
+<p>UGC-DEB announces a last date to admit learners for each ODL and Online session, and it varies year to year. The DEB portal states that the last date for the August 2026 session was 13 October 2026. An earlier DEB notice set 31 March 2025 as the last date for the session beginning February 2025.</p>
+
+<p>We are not going to guess the January 2027 date. Watch the notice board on <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>, and treat any date a counsellor gives you as unconfirmed until you see it there.</p>
+
+<div class="callout-warning">
+<strong>"Last date" pressure is a sales tactic as often as it is a deadline.</strong> A real cut-off comes from a UGC-DEB notice. A "seats closing tonight" message from an agent does not. Check the DEB notice before you pay a registration fee.
+</div>
+
+<h2>Is a January-intake degree worth less than a July one?</h2>
+
+<p>No. Validity depends on whether your programme is recognised and entitled for the session you join. A January-session online degree from an entitled programme is treated exactly like a July one, and like a campus degree under Regulation 22 of the 2020 regulations. Read <a href="/guides/is-online-degree-valid-india">is an online degree valid in India</a> for the full picture.</p>
+
+<p>The practical differences are smaller and more personal. Your convocation and result dates shift by six months, and some placement drives or employer reimbursement cycles follow the July calendar. If either matters to you, ask the university how January-session students are handled.</p>
+
+<h2>What to do before applying in January</h2>
+
+<ol>
+<li>Confirm the university and the exact programme are recognised or entitled for the January session on deb.ugc.ac.in. Our guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> shows where to look.</li>
+<li>Create your DEB ID from your ABC ID. It is mandatory for every ODL and Online admission. See <a href="/blog/ugc-deb-id-explained">our DEB ID guide</a>.</li>
+<li>Rule out fake institutions on the <a href="/blog/ugc-fake-universities-list-2026">UGC fake universities list</a>.</li>
+<li>Ask for the fee for the January session in writing. Universities often revise fees between intakes, so a July figure may not carry over.</li>
+<li>Read the refund terms. The 2020 regulations require universities to publish the share of fees refundable on withdrawal and the timeline for it.</li>
+</ol>
+
+<p>If you are deciding where to apply, you can <a href="/compare">compare universities side by side</a> or start with <a href="/programs/mba">online MBA programmes</a>.</p>
+
+<div class="cta-box">
+<p><strong>Planning for the January intake?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us which programmes are entitled for the session</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC (Minimum Standards of Instruction for the Grant of Undergraduate Degree and Postgraduate Degree) Regulations, 2025, Gazette of India, 2 April 2025, clauses 3 and 4.0; circulated by UGC public notice of 23 April 2025: ugc.gov.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulation 2(b): deb.ugc.ac.in/Regulations</li>
+<li>UGC-DEB Student DEB ID page (last date for the August 2026 session) and DEB notice of April 2025 (session beginning February 2025): deb.ugc.ac.in</li>
+</ul>
+
+<p class="disclaimer"><em>Last verified on 26 October 2026. UGC-DEB announces session names and last dates by notice, and they change. Confirm the current session and deadline on deb.ugc.ac.in before you apply.</em></p>
+    `,
+  },
+  {
+    slug: 'ugc-fee-refund-policy',
+    title: 'UGC Fee Refund Policy 2026: How Much You Get Back',
+    seoTitle: 'UGC Fee Refund Policy 2026: How Much You Get Back',
+    h1Title: 'UGC Fee Refund Policy: How Much a University Must Refund When You Cancel Admission',
+    metaDescription: 'UGC requires universities to refund fees when you cancel admission, within 15 days of your written request. The full-refund window, the 2018 table, and how to complain.',
+    category: 'Online Degree Validity',
+    tags: ['UGC Fee Refund Policy', 'Refund of Fees', 'Cancel Admission', 'UGC Rules', 'Online Degree Admission', 'Student Guidance'],
+    publishedAt: '2026-10-26',
+    readTime: 7,
+    targetKeyword: 'ugc refund policy',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/30858451/pexels-photo-30858451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@shootsaga" target="_blank" rel="noopener nofollow">Anil  Sharma</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling young girl with headset on a video call, studying online at home.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'What is the UGC fee refund policy?', a: 'It is the rule UGC sets for refunds when a student cancels or withdraws admission. The current policy is the Fee Refund Policy 2024-25, issued on 12 June 2024, which UGC said on 27 October 2025 remains in force for later sessions until a new policy is issued.' },
+      { q: 'Will I get a full refund if I cancel admission?', a: 'Under the 2024-25 policy, cancellations up to 30 September 2024 got a full refund, and up to 31 October 2024 a refund with a processing deduction of at most Rs 1,000. For admission schedules running past the cut-off, the 2018 UGC table applies, which gives 100 per cent if you withdraw 15 days or more before the notified last date of admission.' },
+      { q: 'How long does a university have to refund my fees?', a: 'Fifteen days from the date it receives your written application, under the UGC notification of October 2018 that the current policy relies on.' },
+      { q: 'Does the UGC refund policy apply to online degrees?', a: 'The policy applies to all higher education institutions under the UGC Act, including deemed universities and affiliated colleges, and does not carve out online mode. The 2020 ODL and Online regulations also require universities to publish their refund percentage and timeline in advance.' },
+      { q: 'Can a university keep my original certificates?', a: 'No. UGC prohibits universities from taking original certificates into custody. They may verify originals at admission but must return them immediately and keep self-attested copies.' },
+      { q: 'What can I do if a university refuses to refund my fees?', a: 'Delay in or denial of a refund due under the rules is a recognised grievance under the UGC (Redressal of Grievances of Students) Regulations, 2023. Raise it with the university grievance body in writing, then escalate to UGC if it is not resolved.' },
+      { q: 'Is caution money or a security deposit refundable?', a: 'Yes. UGC says caution money and security deposits are not part of the fees and must be refunded in full.' },
+    ],
+    ctaTitle: 'Check the refund terms before you pay',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">Paid a university and changed your mind? UGC rules decide how much you get back and how fast. Most students never read them, and some universities count on that.</p>
+
+<p><strong>Short answer:</strong> UGC requires every university to refund fees when a student cancels or withdraws admission. The current rule is the <strong>UGC Fee Refund Policy 2024-25</strong>, which UGC confirmed on 27 October 2025 stays in force for later sessions until it issues a new one. It gives a full refund up to a cut-off date, a small processing deduction for a short period after, and then the <strong>2018 UGC refund table</strong>, which ties your refund to how close you withdraw to the last date of admission. The university must pay <strong>within 15 days</strong> of your written application.</p>
+
+<div class="callout-key">
+<strong>The refund rules in one box (last verified 26 October 2026)</strong>
+<ul>
+<li><strong>Policy in force:</strong> UGC Fee Refund Policy 2024-25 (letter of 12 June 2024), continued by UGC notice of 27 October 2025</li>
+<li><strong>Applies to:</strong> all universities and colleges under the UGC Act, including deemed universities, affiliated colleges, and bodies that collect fees on their behalf</li>
+<li><strong>Deadline to pay you:</strong> 15 days from your written application</li>
+<li><strong>Caution money and security deposit:</strong> refunded in full</li>
+<li><strong>Original certificates:</strong> may not be retained</li>
+<li><strong>If refused:</strong> a grievance under the UGC Student Grievance Regulations, 2023</li>
+</ul>
+</div>
+
+<h2>What does the UGC fee refund policy say?</h2>
+
+<p>The Commission adopted the 2024-25 policy at its 580th meeting on 15 May 2024 and sent it to universities on 12 June 2024. Its core rule overrides anything in a prospectus or schedule: a full refund for every cancellation of admission or migration up to 30 September 2024, and a refund with a processing deduction of not more than Rs 1,000 up to 31 October 2024.</p>
+
+<p>For any admission schedule that runs past that cut-off, the policy points to the UGC notification of October 2018 on refund of fees. On 27 October 2025, UGC wrote to universities that the 2024-25 policy remains in force for later sessions, with a cut-off date of 31 October 2025, until it issues a new policy. We found no newer policy on ugc.gov.in when we checked on 26 October 2026.</p>
+
+<p class="pull">The policy overrides the prospectus. A "no refund" line in a brochure does not cancel a UGC rule.</p>
+
+<h2>How much do you get back? The 2018 UGC table</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>This is the table most students actually fall under, because it covers admission schedules that run beyond the fixed cut-off dates. Your refund depends on when the university receives your written notice of withdrawal, measured against the formally notified last date of admission.</p>
+
+<table>
+<thead><tr><th>When the university receives your withdrawal notice</th><th>Refund of fees</th></tr></thead>
+<tbody>
+<tr><td>15 days or more before the notified last date of admission</td><td>100%</td></tr>
+<tr><td>Less than 15 days before the notified last date of admission</td><td>90%</td></tr>
+<tr><td>15 days or less after the notified last date of admission</td><td>80%</td></tr>
+<tr><td>More than 15 days but not more than 30 days after the last date</td><td>50%</td></tr>
+<tr><td>More than 30 days after the last date</td><td>0%</td></tr>
+</tbody>
+</table>
+
+<p>One deduction applies to the first row only. In the 100 per cent case, the university may keep processing charges of not more than 5 per cent of the fees paid, capped at Rs 5,000. Caution money and security deposits are not fees, so they come back in full in every row.</p>
+
+<figure class="svg-figure">
+<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bar chart of the UGC 2018 refund table: 100 per cent refund 15 or more days before the last date of admission, 90 per cent less than 15 days before, 80 per cent up to 15 days after, 50 per cent 16 to 30 days after, and 0 per cent more than 30 days after">
+<rect width="640" height="230" fill="#ffffff"/>
+<text x="320" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Refund falls the later you withdraw (UGC, October 2018)</text>
+<line x1="40" y1="180" x2="620" y2="180" stroke="#64748b"/>
+<g font-size="12" text-anchor="middle">
+<rect x="60" y="40" width="80" height="140" fill="#10b981"/><text x="100" y="34" fill="#0f172a" font-weight="700">100%</text>
+<rect x="170" y="54" width="80" height="126" fill="#10b981"/><text x="210" y="48" fill="#0f172a" font-weight="700">90%</text>
+<rect x="280" y="68" width="80" height="112" fill="#B8892A"/><text x="320" y="62" fill="#0f172a" font-weight="700">80%</text>
+<rect x="390" y="110" width="80" height="70" fill="#f97316"/><text x="430" y="104" fill="#0f172a" font-weight="700">50%</text>
+<rect x="500" y="178" width="80" height="2" fill="#ef4444"/><text x="540" y="168" fill="#0f172a" font-weight="700">0%</text>
+<text x="100" y="198" fill="#0f172a">15+ days</text><text x="100" y="212" fill="#64748b">before</text>
+<text x="210" y="198" fill="#0f172a">Under 15 days</text><text x="210" y="212" fill="#64748b">before</text>
+<text x="320" y="198" fill="#0f172a">Up to 15 days</text><text x="320" y="212" fill="#64748b">after</text>
+<text x="430" y="198" fill="#0f172a">16 to 30 days</text><text x="430" y="212" fill="#64748b">after</text>
+<text x="540" y="198" fill="#0f172a">30+ days</text><text x="540" y="212" fill="#64748b">after</text>
+</g>
+</svg>
+<figcaption>Days are counted from the formally notified last date of admission. Source: UGC notification on Refund of Fees, October 2018, as reproduced in the Fee Refund Policy 2024-25.</figcaption>
+</figure>
+
+<h2>Does the refund policy cover online degrees?</h2>
+
+<p>The policy names who it applies to: universities established under a central or state law, institutions recognised under the UGC Act, deemed universities and affiliated colleges. It does not exclude online or distance programmes. It also covers organisations that run counselling or collect fees on behalf of universities, and it makes the university responsible for the refund in that case.</p>
+
+<p>There is a second layer for online learners. The UGC ODL and Online regulations of 2020 require each university to publish, in advance, the percentage of tuition fee and other charges refundable on withdrawal and the time and manner of refund. So read the refund clause on the university's website before you pay, and keep a screenshot with the date.</p>
+
+<div class="callout-warning">
+<strong>Get the "last date of admission" in writing.</strong> The 2018 table counts days from the formally notified last date of admission. If you do not know that date, you cannot tell which row you fall in. For online programmes, UGC-DEB also fixes a last date to admit learners for each session on deb.ugc.ac.in.
+</div>
+
+<h2>How do you claim a refund?</h2>
+
+<ol>
+<li><strong>Write to the university.</strong> Send a written withdrawal and refund request by email and, if possible, by post. Quote your application number and the date and amount paid.</li>
+<li><strong>Note the date it was received.</strong> Both the refund percentage and the 15-day payment clock run from the date the university receives your written notice.</li>
+<li><strong>Ask for originals back.</strong> UGC prohibits universities from keeping original certificates. They may verify them at admission and must return them immediately.</li>
+<li><strong>Follow up after 15 days.</strong> If the money has not arrived, write again and cite the UGC Fee Refund Policy and the 15-day rule.</li>
+<li><strong>Escalate as a grievance.</strong> Delay in, or denial of, a refund due to a student is listed as a grievance under the UGC (Redressal of Grievances of Students) Regulations, 2023. Use the university's grievance mechanism first, then escalate to UGC.</li>
+</ol>
+
+<p>If you paid through an agent or a "counselling" company, the policy still makes the university responsible. That is one more reason to pay only through the university's official channel. UGC also bars franchise arrangements for online and distance admissions, as our <a href="/blog/ugc-deb-id-explained">DEB ID guide</a> explains.</p>
+
+<h2>What happens to a university that breaks the policy?</h2>
+
+<p>UGC states that any institution violating the refund policy is liable for punitive action under Clause 5 of its October 2018 notification. In its October 2025 notice it also asked universities to stick to the cut-off dates in each year's policy, from 2021-22 to 2024-25, to settle old pending cases.</p>
+
+<p>For a student, the practical leverage is the written record. A dated request, a received date and a citation of the policy turn a refund from a favour into an obligation.</p>
+
+<h2>Before you pay any fee</h2>
+
+<ul>
+<li>Check the institution is not on the <a href="/blog/ugc-fake-universities-list-2026">UGC fake universities list</a>. A fake body will not follow any refund rule.</li>
+<li>Check the programme is entitled for your session. Our guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> shows how.</li>
+<li>Find the notified last date of admission and the university's published refund clause.</li>
+<li>Pay only to the university's own account and keep every receipt.</li>
+</ul>
+
+<p>If you are still choosing, you can <a href="/compare">compare universities side by side</a> or read <a href="/guides/is-online-degree-valid-india">whether an online degree is valid in India</a>.</p>
+
+<div class="cta-box">
+<p><strong>Not sure what a university's refund terms really mean?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC, Fee Refund Policy 2024-25, D.O. No. F.2-71/2022 (CPP-II), 12 June 2024 (580th Commission meeting, 15 May 2024): ugc.gov.in</li>
+<li>UGC, Fee Refund Policy for Academic Session 2025-26, notice of 27 October 2025: ugc.gov.in</li>
+<li>UGC Notification on Refund of Fees and Non-Retention of Original Certificates, October 2018 (reproduced in the above)</li>
+<li>UGC (Redressal of Grievances of Students) Regulations, 2023: ugc.gov.in</li>
+<li>UGC (ODL Programmes and Online Programmes) Regulations, 2020, prospectus disclosure on refunds: deb.ugc.ac.in/Regulations</li>
+</ul>
+
+<p class="disclaimer"><em>Last verified against UGC notices on 26 October 2026. UGC can replace this policy at any time. Confirm the current policy on ugc.gov.in before relying on it.</em></p>
+    `,
+  },
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))
