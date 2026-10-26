@@ -2,6 +2,7 @@
 import { notFound, redirect, permanentRedirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById, specSlug as getSpecSlug, specName as getSpecName } from '@/lib/data'
+import { nirfForProgramme } from '@/lib/data-slim'
 import type { Program } from '@/lib/data'
 import { resolveSpec } from '@/lib/data/programs'
 import { getTitleName, getShortTitleName, clampTitle, clampTitleSpecLed, clampDescription, compactFee, shortenSpec } from '@/lib/seo-title'
@@ -45,7 +46,8 @@ export async function generateMetadata(
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
   const fees = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`)
-  const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
+  const nirfLabel = nirfForProgramme(u, program)
+  const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
   // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
   // Uses shortenSpec so long names like "Healthcare Management" stay clampable.
   const title     = clampTitleSpecLed(

@@ -26,6 +26,7 @@
 import type { University } from './data'
 import { TITLE_NAME, getTitleName } from './seo-title'
 import { shouldIndexUniversity } from './seo/mode-unverified'
+import { nirfForProgramme } from './data-slim'
 
 export type UniType = 'private' | 'deemed' | 'state-private' | 'central' | 'state-public' | 'open'
 
@@ -164,8 +165,10 @@ export function buildUniDescription(
   const shortName = getShortName(uni)
   const parts: string[] = []
   if (uni.naac) parts.push(`NAAC ${uni.naac}`)
-  const nirf = pickBetterNirf(uni, program)
-  if (nirf != null) parts.push(`NIRF #${nirf}`)
+  // Labelled by category. pickBetterNirf returns whichever of the two ranks is
+  // smaller, which is not something a reader can be shown without its table.
+  const nirf = nirfForProgramme(uni, program)
+  if (nirf) parts.push(nirf)
   const fee = formatINR(getDisplayFee(uni, program))
   if (fee) parts.push(`Fees ${fee}`)
   const dataPart = parts.length > 0 ? `${parts.join(', ')}. ` : ''

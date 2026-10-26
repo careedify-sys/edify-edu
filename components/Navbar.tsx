@@ -1,5 +1,5 @@
 'use client'
-import { getSortRank } from '@/lib/data-slim'
+import { getSortRank, formatNirfBadge } from '@/lib/data-slim'
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
@@ -208,7 +208,7 @@ export default function Navbar() {
                         <div style={{ width: '4px', height: '28px', borderRadius: '2px', background: u.color, flexShrink: 0 }} />
                         <div>
                           <div style={{ fontSize: '13px', fontWeight: 600, color: 'var(--navy)' }}>{u.name}</div>
-                          <div style={{ fontSize: '11px', color: 'var(--ink-3)' }}>{u.nirf < 200 ? `NIRF #${u.nirf} · ` : ''}{u.city}</div>
+                          <div style={{ fontSize: '11px', color: 'var(--ink-3)' }}>{formatNirfBadge(u, { prefer: 'university' }) ? `NIRF ${formatNirfBadge(u, { prefer: 'university' })} · ` : ''}{u.city}</div>
                         </div>
                       </Link>
                     ))}
@@ -426,7 +426,7 @@ export default function Navbar() {
                       <div style={{ width: '4px', height: '32px', borderRadius: '2px', background: u.color, flexShrink: 0 }} />
                       <div>
                         <div style={{ fontSize: '13px', fontWeight: 700, color: 'var(--navy)' }}>{u.name}</div>
-                        <div className="text-[11px] text-amber mt-0.5 font-semibold">{u.nirf < 200 ? `NIRF #${u.nirf} · ` : ''}{u.city}</div>
+                        <div className="text-[11px] text-amber mt-0.5 font-semibold">{formatNirfBadge(u, { prefer: 'university' }) ? `NIRF ${formatNirfBadge(u, { prefer: 'university' })} · ` : ''}{u.city}</div>
                       </div>
                     </Link>
                   )) : (

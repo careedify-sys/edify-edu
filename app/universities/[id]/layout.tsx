@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { getUniversityById, formatFee } from '@/lib/data'
+import { nirfForProgramme } from '@/lib/data-slim'
 import { getTitleName } from '@/lib/seo-title'
 import { naacSuffix, naacSegment, naacAccredited, naacPhrase } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
@@ -199,11 +200,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   const hasFee = u.feeMin > 0
   const feeStr = `${formatFee(u.feeMin)}–${formatFee(u.feeMax)}`
   // Falls back through NIRF then NAAC then the one thing every record has.
-  const nirf = u.nirf < 200
-    ? `NIRF #${u.nirf}`
-    : u.nirfMgt
-      ? `NIRF #${u.nirfMgt} ${u.nirfCategory || 'Mgmt'}`
-      : naacPhrase(u.naac)
+  const nirf = nirfForProgramme(u) ?? naacPhrase(u.naac)
 
   // ── Title: short name + programs in parens — stays within Google's 600px limit ──
   const titleName = getTitleName(u.id, u.name, u.abbr)

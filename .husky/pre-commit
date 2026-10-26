@@ -221,6 +221,13 @@ npx tsx scripts/check-sitemap-vs-404.ts || exit 1
 # cluster. On 2026-09-13 five of them were wrong at once, including an
 # overstated NIRF Management rank and a category NIRF does not publish. See the
 # header of scripts/check-coupon-claims.mts.
+# A NIRF rank without its category. Amity is #22 University and #49
+# Management; a bare "#22" on its MBA page is wrong. 20+ templates printed it
+# until 2026-10-26, one of them choosing whichever rank was smaller. See the
+# header of scripts/check-nirf-category.mts.
+echo "pre-commit: check-nirf-category"
+npx tsx scripts/check-nirf-category.mts || exit 1
+
 echo "pre-commit: check-coupon-claims"
 npx tsx scripts/check-coupon-claims.mts || exit 1
 

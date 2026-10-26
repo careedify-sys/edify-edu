@@ -2,6 +2,7 @@
 import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getUniversityById } from '@/lib/data'
+import { nirfForProgramme } from '@/lib/data-slim'
 import { getMasterSyllabus } from '@/lib/content'
 import { getProgramSpecParams, resolveSpec } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
@@ -43,7 +44,8 @@ export async function generateMetadata(
   const shortSpec = shortenSpec(spec)
   const pd = u.programDetails['MCA']
   const fee = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`)
-  const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
+  const nirfLabel = nirfForProgramme(u, 'MCA')
+  const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
   // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
   const title = clampTitleSpecLed(
       `${titleName} MCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,

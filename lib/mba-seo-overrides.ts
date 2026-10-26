@@ -48,16 +48,16 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
     intro: 'For the January 2027 batch, the Manipal University Jaipur (MUJ) online MBA lists at ₹1,84,000, or ₹46,000 a semester. A 15% discount brings the total to ₹1,56,400, with EMI from ₹6,517 a month. The programme holds NAAC A+ accreditation, UGC-DEB approval and a NIRF Management rank of #81, with 13 specialisations including Finance, Analytics and Data Science, and BFSI. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Confirm the current fee on onlinemanipal.com before you pay.',
   },
   'lovely-professional-university-online': {
-    title: 'LPU Online MBA 2026: Fees, Specializations, NAAC A++ Review | edifyedu.in',
-    description: 'LPU online MBA fees, all specializations, NAAC A++ details. Lovely Professional University distance MBA reviewed honestly. Compare with Amity, Chandigarh, NMIMS.',
+    title: 'LPU Online MBA Fees 2026: ₹1.61L-₹2L | edifyedu.in',
+    description: 'Lovely Professional University (LPU) online MBA fees ₹1.61L to ₹2L total. NAAC A++, NIRF #44 Management, UGC-DEB approved. Compare with Amity, Chandigarh, NMIMS.',
     h1: 'LPU Online MBA 2026: Fees, Review, and Specialization Guide',
     intro: 'LPU online MBA from Lovely Professional University carries NAAC A++ accreditation, one of the top-rated programs in North India. LPU MBA fees are structured across four semesters with EMI options available. Lovely Professional University MBA fees are competitive against similar NAAC A++ programs. The program spans 15+ specializations including Finance, HR, Marketing, and Operations, delivered via weekend live sessions and recorded backups. edifyedu.in presents LPU online MBA fees and accreditation data from UGC-DEB and NAAC public records, without referral commissions.',
   },
   'nmims-online': {
-    title: 'NMIMS Online MBA 2026: Fees, Review, Specializations | edifyedu.in',
-    description: 'NMIMS online MBA fees and complete review. All specializations listed. NAAC A+ accredited. Compare NMIMS vs Amity vs Symbiosis for value. Zero-commission advice from edifyedu.in.',
+    title: 'NMIMS Online MBA Fees 2026: ₹1.96L-₹2.2L | edifyedu.in',
+    description: 'NMIMS (Narsee Monjee) online MBA fees ₹1.96L to ₹2.2L total. NAAC A++, NIRF #24 Management, UGC-DEB approved. Compare NMIMS vs Amity vs Symbiosis, zero commission.',
     h1: 'NMIMS Online MBA 2026: Fees, Specializations, and Independent Review',
-    intro: 'NMIMS online MBA is one of India\'s most searched management programs, offered under the School of Distance Learning with NAAC A+ accreditation. NMIMS online MBA fees cover two years of coursework across Finance, Marketing, HR, Operations, and other specializations. The university holds UGC-DEB approval, giving the degree full validity for employment and higher studies. edifyedu.in compares NMIMS online MBA fees against Amity, Symbiosis, and MAHE using public regulatory data. Candidates shortlisting NMIMS frequently compare fees and specialization counts before applying.',
+    intro: 'The NMIMS online MBA, from Narsee Monjee Institute of Management Studies, is one of India\'s most searched management programmes. NMIMS holds NAAC A++ accreditation and a NIRF Management rank of #24. NMIMS online MBA fees cover two years of coursework across Finance, Marketing, HR, Operations, and other specializations. The university holds UGC-DEB approval, giving the degree full validity for employment and higher studies. edifyedu.in compares NMIMS online MBA fees against Amity, Symbiosis, and MAHE using public regulatory data. Candidates shortlisting NMIMS frequently compare fees and specialization counts before applying.',
   },
 
   // Sprint 1: fee-led rewrites for the 5 fee-stripping overrides + CU MBA reconciliation.
@@ -101,14 +101,14 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
   // the correct MBA net?
   'chandigarh-university-online': {
     title: 'Chandigarh MBA Fees 2026: ₹1.65L-₹1.8L | edifyedu.in',
-    description: 'Chandigarh University online MBA fees ₹1,65,000 to ₹1,80,000. NAAC A+, NIRF #19, UGC-DEB approved. 25% Early Bird Scholarship available. Zero-commission, verified fee data.',
+    description: 'Chandigarh University online MBA fees ₹1,65,000 to ₹1,80,000. NAAC A+, NIRF #32 Management, UGC-DEB approved. 25% Early Bird Scholarship available. Zero-commission, verified fee data.',
     h1: 'Chandigarh University Online MBA 2026: Fees, Scholarships, and Review',
     intro: 'Chandigarh University online MBA total fees range from ₹1,65,000 to ₹1,80,000 across four semesters. The programme is UGC-DEB approved and NAAC A+ accredited, with a NIRF University rank of #19. Chandigarh University runs a 25% Early Bird Scholarship for eligible early applicants, verifiable on the UGC-DEB and NAAC public registers. Live classes are delivered on weekends via the CUOnline platform. edifyedu.in compares Chandigarh University MBA fees using public university data, not paid rankings.',
   },
 
   'dy-patil-university-online': {
-    title: 'DY Patil Online MBA 2026: Fees, Review, Specializations | edifyedu.in',
-    description: 'DY Patil University online MBA fees, review, and specializations 2026. Mumbai/Pune campus. NAAC A++ accredited. Compare vs Amity, Symbiosis, NMIMS.',
+    title: 'DY Patil Online MBA Fees 2026: ₹1.75L | edifyedu.in',
+    description: 'D.Y. Patil University, Navi Mumbai online MBA fees ₹1.75L total. NAAC A++, UGC-DEB approved. Not the same institution as Dr. D.Y. Patil Vidyapeeth, Pune.',
     h1: 'DY Patil Online MBA 2026: Fees, Review, and Specialization Guide',
     intro: 'DY Patil University online MBA from its Navi Mumbai campus carries NAAC A++ accreditation and UGC-DEB approval. DY Patil online MBA fees cover a two-year program spanning Finance, Marketing, HR, and Operations specializations. The university\'s proximity to Mumbai\'s business district gives the degree employer visibility across Maharashtra. edifyedu.in reviews DY Patil online MBA fees against Amity, Symbiosis, and NMIMS using public NAAC and UGC-DEB data. No paid rankings or referral commissions influence this comparison.',
   },
@@ -123,8 +123,8 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
 
   // MAHE: no fee-strip issue on this override, kept intact.
   'manipal-academy-higher-education-online': {
-    title: 'Manipal (MAHE) Online MBA 2026: Fees, Review, Specializations | edifyedu.in',
-    description: 'MAHE Manipal online MBA fees, review, and specializations 2026. NAAC A++ accredited. Compare MAHE vs Amity, Symbiosis, NMIMS. Zero-commission advice.',
+    title: 'Manipal (MAHE) Online MBA Fees 2026: ₹2.92L | edifyedu.in',
+    description: 'MAHE Manipal online MBA fees ₹2.92L total. NAAC A++, NIRF #39 Management, UGC-DEB approved. Compare MAHE vs Amity, Symbiosis, NMIMS. Zero-commission data.',
     h1: 'MAHE Manipal Online MBA 2026: Fees, Specializations, and Review',
     intro: 'MAHE Manipal online MBA from Manipal Academy of Higher Education carries NAAC A++ accreditation and strong recognition across India\'s IT and consulting sectors. Manipal online MBA fees cover a two-year program with specializations in Finance, Marketing, HR, Business Analytics, and Digital Business. The UGC-DEB approved degree is delivered via the Online Manipal platform, with weekend sessions and on-demand recordings. edifyedu.in compares MAHE online MBA fees against Amity, Symbiosis, and NMIMS using public accreditation and NIRF data.',
   },

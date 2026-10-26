@@ -6,6 +6,7 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
+import { nirfForProgramme } from '@/lib/data-slim'
 import type { ProgramDetail } from '@/lib/data'
 import { getTitleName, getShortTitleName, clampTitle, clampTitleFeeLed, clampDescription } from '@/lib/seo-title'
 import { getDisplayFee } from '@/lib/fees'
@@ -41,7 +42,8 @@ export async function generateMetadata(
   const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
   const fee = getDisplayFee(u, 'BCA')
   const specCount = pd?.specs?.length || 4
-  const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : ''
+  const nirfLabel = nirfForProgramme(u, 'BCA')
+  const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
   const title = fee.ok
     ? clampTitleFeeLed(
         `${titleName} ${onlinePrefix(u.id)}BCA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,

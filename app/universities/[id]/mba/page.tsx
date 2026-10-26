@@ -12,6 +12,7 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
+import { nirfForProgramme } from '@/lib/data-slim'
 import type { ProgramDetail } from '@/lib/data'
 import { getTitleName, getShortTitleName, clampTitle, clampTitleFeeLed, clampDescription } from '@/lib/seo-title'
 import { getDisplayFee } from '@/lib/fees'
@@ -84,7 +85,8 @@ export async function generateMetadata(
   const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
   const fee = getDisplayFee(u, 'MBA')
   const specCount = pd?.specs?.length || 5
-  const nirfStr = u.nirf > 0 && u.nirf < 200 ? `, NIRF #${u.nirf}` : u.nirfMgt && u.nirfMgt < 200 ? `, NIRF #${u.nirfMgt} Mgmt` : ''
+  const nirfLabel = nirfForProgramme(u, 'MBA')
+  const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
   // Sprint 1 FIX 2: fee comes from getDisplayFee (one canonical source).
   // When fee.ok === false the fee is suppressed everywhere; user sees
   // "Fee structure verified by our counsellor" and the lead CTA instead.
