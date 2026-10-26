@@ -2,37 +2,37 @@
 
 Extractor v2 (structural attribution + range parsing + expanded NON_FEE).
 
-Total figures: **9571**
+Total figures: **9569**
 
 ## By classification
 
 | Class | Count |
 |---|---:|
-| MATCH | 1108 |
-| MISMATCH | 764 |
+| MATCH | 1109 |
+| MISMATCH | 763 |
 | SUPPRESSED | 9 |
 | ORPHAN | 44 |
-| UNRESOLVED | 1847 |
-| NON_FEE | 5799 |
+| UNRESOLVED | 1846 |
+| NON_FEE | 5798 |
 
 ## By class × confidence
 
 | Class / Confidence | Count |
 |---|---:|
-| MATCH/high | 650 |
+| MATCH/high | 651 |
 | MATCH/low | 97 |
 | MATCH/medium | 361 |
-| MISMATCH/high | 319 |
+| MISMATCH/high | 318 |
 | MISMATCH/low | 165 |
 | MISMATCH/medium | 280 |
-| NON_FEE/- | 5799 |
+| NON_FEE/- | 5798 |
 | ORPHAN/high | 34 |
 | ORPHAN/low | 2 |
 | ORPHAN/medium | 8 |
 | SUPPRESSED/high | 7 |
 | SUPPRESSED/medium | 2 |
 | UNRESOLVED/high | 18 |
-| UNRESOLVED/low | 1824 |
+| UNRESOLVED/low | 1823 |
 | UNRESOLVED/medium | 5 |
 
 ## Top 30 slugs by figure count
@@ -54,7 +54,7 @@ Total figures: **9571**
 | bsc-career-options-scope-salary-india-2026 | 100 | 1 | 3 | 0 | 0 | 2 | 94 |
 | arts-stream-jobs-career-options-salary-india | 98 | 0 | 3 | 0 | 1 | 5 | 89 |
 | 1-year-mba-india-executive-mba-2026 | 96 | 5 | 5 | 0 | 0 | 30 | 56 |
-| online-mba-supply-chain-management-india-2026 | 96 | 14 | 5 | 0 | 0 | 13 | 64 |
+| online-mba-supply-chain-management-india-2026 | 96 | 15 | 4 | 0 | 0 | 13 | 64 |
 | ias-officer-salary-india-2026-pay-scale-perks | 92 | 0 | 0 | 0 | 0 | 33 | 59 |
 | online-mba-hospital-healthcare-management-india-2026 | 92 | 21 | 5 | 0 | 0 | 15 | 51 |
 | online-mba-tamil-nadu-2026 | 90 | 23 | 22 | 0 | 0 | 34 | 11 |
@@ -62,7 +62,7 @@ Total figures: **9571**
 | amity-online-bba-review-2026 | 87 | 6 | 9 | 0 | 0 | 5 | 67 |
 | top-correspondence-mba-colleges-india-2026 | 84 | 24 | 14 | 1 | 0 | 30 | 15 |
 | commerce-jobs-list-salary-india-2026 | 84 | 0 | 0 | 0 | 0 | 5 | 79 |
-| distance-mba-bangalore-2026 | 81 | 5 | 4 | 0 | 2 | 3 | 67 |
+| distance-mba-bangalore-2026 | 82 | 5 | 4 | 0 | 2 | 3 | 68 |
 | mba-scope-india-2026 | 80 | 5 | 2 | 0 | 0 | 1 | 72 |
 | llm-course-duration-fees-scope-india-2026 | 79 | 0 | 0 | 0 | 0 | 24 | 55 |
 | mba-after-bsc-is-it-good-2026 | 78 | 3 | 2 | 0 | 3 | 11 | 59 |
