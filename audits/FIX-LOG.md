@@ -1,5 +1,20 @@
 # Fix log
 
+## 2026-10-27 · MUJ and MAHE MSc listed "General Management" as the specialisation
+
+Both records had MSc specs ["General Management"] while their own verified comments (onlinemanipal.com,
+2026-10-06) say MUJ awards only MSc Mathematics and MAHE awards Biostatistics, Financial Economics, Data
+Science and Business Analytics. /universities/{id}/msc/general-management was in the sitemap for both.
+
+Changed: lib/data.ts specs for both MSc blocks, and MUJ's truncated careerOutcome ("(MUJ) – O —");
+removed the two stale programs-manifest.json rows the resolver still accepted; rebuilt spec-allowlist.json;
+valid-urls.json drops the two old URLs and adds msc/mathematics (MUJ) and the four MAHE specs; two
+permanent redirects send the old URLs to each /msc hub (same pattern as the Chitkara fix, ae6c00e).
+Verified on dev: 4 new pages 200 + index, old URLs 308 to the hub.
+
+Not changed: spec pages show the programme-level fee range (MAHE ₹1.6L-₹2.8L on every spec, though Data Science
+and Business Analytics are ₹2.8L); that is how all spec pages work today.
+
 ## 2026-10-27 · Programme hubs and spec pages: wrong programme titles, MBA fees on non-MBA pages, unsourced salary stats
 
 Bucket A rows /programs/bsc (bsc online 1,570, pos 27-79) and /programs/bba (online bba 1,110, pos 40-51).

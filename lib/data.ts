@@ -1447,7 +1447,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved M.Com from Manipal University Jaipur (MUJ) – O — recognised for corporate hiring.',
       },
       'MSc': {
-        specs: ['General Management'],
+        specs: ['Mathematics'],
         // January 2027 chart: semester fee 21,000, course fee 84,000 (was
         // 80,000 on onlinemanipal.com/online-msc-mathematics-muj, 2026-10-06).
         // Mathematics is the only MSc MUJ awards; the other MSc pages on that
@@ -1458,7 +1458,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹8L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MSc from Manipal University Jaipur (MUJ) – O — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MSc in Mathematics from Manipal University Jaipur (MUJ), recognised for corporate hiring.',
       }
     },
     color: '#2563EB',
@@ -2298,7 +2298,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved B.Com from Manipal Academy of Higher Education — recognised for corporate hiring.',
       },
       'MSc': {
-        specs: ['General Management'],
+        specs: ['Biostatistics', 'Financial Economics', 'Data Science', 'Business Analytics'],
         // Verified 2026-10-06 on onlinemanipal.com: MAHE awards four online MSc
         // programmes at two prices. Biostatistics and Financial Economics
         // are 1,60,000; Data Science and Business Analytics are 2,80,000.
@@ -2309,7 +2309,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹8L – ₹30L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MSc from Manipal Academy of Higher Education — recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MSc from Manipal Academy of Higher Education, recognised for corporate hiring.',
       }
     },
     color: '#1B4FBE',
