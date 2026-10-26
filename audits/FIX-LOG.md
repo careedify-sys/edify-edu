@@ -1,5 +1,22 @@
 # Fix log
 
+## 2026-10-27 · Bucket C complete: online B.Tech, B.Ed and PGDM explainers; MBA vs PGDM post corrected
+
+Rishi approved aicte-india.org and ncte.gov.in as sources for these three posts (memory: feedback_regulator_sources).
+aicte-india.org resets connections from this machine; the Approval Process Handbook 2024-27 was read from the
+government-hosted copy (cdnbbsr.s3waas.gov.in) and the working-professional provision from PIB, 6 Dec 2023.
+
+- /blog/online-btech-mtech-india: UGC notice para 6(i); UGC Regs 2020 Reg 4(C)(ii) proviso bars lab-based
+  programmes online except programming and coding, which is why MCA/BCA run online; AICTE APH cl. 5.1(b).
+- /blog/online-bed-course-india: NCTE Regs 2014 Appendix 10 (read from the scanned gazette pages). The ODL B.Ed
+  is for trained in-service elementary teachers or face-to-face TE graduates only, with six months of contact
+  programme and three months of teaching practice. No NCTE norm for an online B.Ed.
+- /blog/online-pgdm-india: the one "yes" in the series. APH Chapter V lets standalone institutes offer PG
+  diplomas in management online with AICTE approval, if NBA 700/1000 or NIRF top-200 institution.
+
+Corrected mba-vs-pgdm-online-india-2026: its "Can You Do PGDM Online?" section said "effectively no" and
+called the regulatory standing "ambiguous at best". AICTE rules say otherwise; rewritten and linked.
+
 ## 2026-10-27 · Bucket C: online LLB/LLM explainer; fabricated online-LLM list removed from the LLM guide
 
 New post /blog/online-llb-llm-india ("online llb course" 2,400/month). UGC notice F.No. 1-34/2024 (DEB-I)

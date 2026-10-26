@@ -3,6 +3,27 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'online-pgdm-india': [
+    { label: 'Online PGDM', value: 'Valid with AICTE approval for that mode', green: true },
+    { label: 'Who can offer', value: 'NBA 700/1,000 or NIRF top-200' },
+    { label: 'Check', value: 'AICTE, not UGC-DEB' },
+    { label: 'Intakes', value: 'July and January' },
+    { label: 'Entrance', value: 'CAT, XAT, CMAT, ATMA, MAT, GMAT preferred' },
+  ],
+  'online-bed-course-india': [
+    { label: 'Fully online B.Ed', value: 'No NCTE norm exists' },
+    { label: 'Distance B.Ed', value: 'Permitted, NCTE Appendix 10' },
+    { label: 'Eligible', value: 'In-service or already-trained teachers', green: true },
+    { label: 'Contact sessions', value: '6 months + 3 months teaching practice' },
+    { label: 'Duration', value: '2 years, max 5' },
+  ],
+  'online-btech-mtech-india': [
+    { label: 'Online B.Tech / M.Tech', value: 'Not permitted (UGC, 11 Nov 2024)' },
+    { label: 'Why', value: 'Lab-based programmes barred online' },
+    { label: 'Online MCA / BCA', value: 'Permitted: coding-only practicals', green: true },
+    { label: 'Working professionals', value: 'AICTE flexible timings, in class' },
+    { label: 'Distance B.Tech', value: 'Also prohibited' },
+  ],
   'online-llb-llm-india': [
     { label: 'Online LLB', value: 'Not permitted (UGC, 11 Nov 2024)' },
     { label: 'Online LLM', value: 'Not permitted, allied domains included' },
