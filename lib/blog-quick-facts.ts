@@ -3,6 +3,16 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'ugc-deb-id-explained': [
+    { label: 'Mandatory since', value: 'Oct 2024 session' },
+    { label: 'Who needs it', value: 'Every ODL / Online learner' },
+    { label: 'Built from', value: 'ABC / APAAR ID' },
+    { label: 'Where', value: 'deb.ugc.ac.in' },
+    { label: 'Validity', value: 'Lifelong', green: true },
+    { label: 'Approves programme?', value: 'No' },
+    { label: 'DEB helpline', value: '011-23604645' },
+    { label: 'Last verified', value: '26 Oct 2026', green: true },
+  ],
   'how-online-degree-exams-work-india': [
     { label: 'Exam type', value: 'Proctored, every semester' },
     { label: 'Remote exams', value: 'Allowed (tech-mediated proctoring)' },

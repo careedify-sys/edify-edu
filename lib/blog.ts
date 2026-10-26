@@ -48780,6 +48780,155 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <p class="disclaimer"><em>Last checked against the UGC 2020 regulations as published on deb.ugc.ac.in on 26 October 2026. Exam formats, software and re-test policies vary by university and can change between sessions. Confirm the current rules with your university.</em></p>
     `,
   },
+  {
+    slug: 'ugc-deb-id-explained',
+    title: 'UGC DEB ID 2026: What It Is and How to Create It',
+    seoTitle: 'UGC DEB ID 2026: What It Is and How to Create It',
+    h1Title: 'UGC DEB ID Explained: What UGC-DEB Is, Why You Need a DEB ID, and How to Create One',
+    metaDescription: 'A DEB ID is mandatory for every online and distance learner since October 2024. What UGC-DEB is, how to create a DEB ID from your ABC ID, and how to fix errors.',
+    category: 'Online Degree Validity',
+    tags: ['UGC DEB ID', 'DEB ID', 'UGC-DEB', 'ABC ID', 'APAAR', 'Online Degree', 'Student Guidance'],
+    publishedAt: '2026-10-26',
+    readTime: 7,
+    targetKeyword: 'ugc deb id',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/30858451/pexels-photo-30858451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@shootsaga" target="_blank" rel="noopener nofollow">Anil  Sharma</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling young girl with headset on a video call, studying online at home.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'What is a DEB ID?', a: 'A DEB ID is a unique learner ID generated on the UGC-DEB portal. UGC made it mandatory for every student enrolling in an Open and Distance Learning or Online programme at a recognised university, from the academic session beginning October 2024.' },
+      { q: 'What is UGC-DEB?', a: 'UGC-DEB is the Distance Education Bureau of the University Grants Commission. It recognises universities to offer programmes in Open and Distance Learning and Online mode, and publishes which programmes each university is entitled to offer, session by session, on deb.ugc.ac.in.' },
+      { q: 'How do I create a DEB ID?', a: 'First create an Academic Bank of Credits (ABC) ID, also called an APAAR ID, through DigiLocker. Then register on the Student DEB ID page of deb.ugc.ac.in using that ABC ID. The portal generates your DEB ID.' },
+      { q: 'Is a DEB ID required for an online MBA?', a: 'Yes. UGC requires a DEB ID to enrol in any ODL or Online programme at a recognised or entitled university, which includes online MBA, MCA, BBA, BCA, BA, B.Com, MA, M.Com and MSc programmes.' },
+      { q: 'Do I need a new DEB ID for every course?', a: 'No. UGC states that a DEB ID, once generated, remains valid for lifelong ODL and Online learning.' },
+      { q: 'How do I correct my name or date of birth in my DEB ID?', a: 'Correct the details in your APAAR or ABC record first, through the ABC support ticket system or DigiLocker. Once the APAAR card is correct, update the DEB ID through the Update DEB Details link on deb.ugc.ac.in.' },
+      { q: 'Does having a DEB ID mean my programme is approved?', a: 'No. A DEB ID identifies you as a learner. It does not approve a university or a programme. You still need to check that your exact programme is entitled for online mode on deb.ugc.ac.in for the session you join.' },
+    ],
+    ctaTitle: 'Check your programme, not just your ID',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">If you are joining an online or distance degree in India, you need a DEB ID before the university can enrol you. It takes one sitting to create, as long as your ABC ID is correct first.</p>
+
+<p><strong>Short answer:</strong> a <strong>DEB ID</strong> is a unique learner ID issued on the UGC Distance Education Bureau (UGC-DEB) portal. UGC made it <strong>mandatory for every student enrolling in an online or distance (ODL) programme from the academic session beginning October 2024</strong>. You create it on <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> using your Academic Bank of Credits (ABC) ID, also called an APAAR ID. Once created, it stays valid for life.</p>
+
+<div class="callout-key">
+<strong>DEB ID at a glance (last verified 26 October 2026)</strong>
+<ul>
+<li><strong>Who needs it:</strong> every learner joining an ODL or Online programme at a UGC-recognised university</li>
+<li><strong>Mandatory since:</strong> academic session beginning October 2024 (UGC public notice of 11 November 2024)</li>
+<li><strong>Built from:</strong> your ABC / APAAR ID, created through DigiLocker</li>
+<li><strong>Where:</strong> the Student DEB ID page on deb.ugc.ac.in</li>
+<li><strong>Validity:</strong> lifelong, for all future ODL and Online study</li>
+<li><strong>DEB technical helpline:</strong> 011-23604645 (as listed on the portal)</li>
+</ul>
+</div>
+
+<h2>What is UGC-DEB?</h2>
+
+<p>UGC-DEB is the Distance Education Bureau of the University Grants Commission. It handles the recognition of universities that want to teach in Open and Distance Learning mode or Online mode, under the UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020.</p>
+
+<p>For a student, the bureau matters for one reason: its website is where UGC publishes which universities may offer which programmes, in which mode, for which session. People search for it as "UGC DEB" and "DEB UGC" interchangeably. They mean the same body and the same site.</p>
+
+<h2>What is a DEB ID, and why did UGC make it mandatory?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>The DEB portal describes the DEB ID as a unique ID that a learner must create before taking admission in an ODL or Online programme. Its stated purpose is to make sure learners are joining programmes at institutions UGC has actually recognised.</p>
+
+<p>According to the UGC public notice of 11 November 2024, the Commission decided at its 581st meeting on 25 June 2024 to standardise admissions for ODL and Online learners. Students must register on the UGC-DEB portal with their ABC ID to generate the DEB ID, which became mandatory from the 2024-25 academic year, for the session beginning October 2024 and onward.</p>
+
+<p class="pull">The DEB ID ties you to a recognised programme. It is UGC's way of making admission traceable.</p>
+
+<h2>How do you create a DEB ID? Step by step</h2>
+
+<ol>
+<li><strong>Create your ABC ID.</strong> The Academic Bank of Credits ID, now shown as an APAAR ID, is created through your DigiLocker account. If you already have one from school or college, use it.</li>
+<li><strong>Check every detail on your APAAR card.</strong> Name, date of birth and gender must be exactly right. The DEB portal tells students to fix errors here first, because the DEB ID pulls from this record.</li>
+<li><strong>Open the Student DEB ID page.</strong> Go to deb.ugc.ac.in and choose "Get DEBID".</li>
+<li><strong>Register with your ABC ID.</strong> Enter the ABC ID and complete the authentication the portal asks for.</li>
+<li><strong>Save the DEB ID.</strong> Note it down and give it to your university during admission. The university uses it to enrol you.</li>
+</ol>
+
+<figure class="svg-figure">
+<svg viewBox="0 0 640 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flow diagram: DigiLocker account leads to ABC or APAAR ID, which you check for errors, then register on deb.ugc.ac.in to get a DEB ID, which the university uses to enrol you">
+<rect width="640" height="170" fill="#ffffff"/>
+<g font-size="12" text-anchor="middle">
+<rect x="10" y="40" width="110" height="64" rx="8" fill="#f1f5f9" stroke="#0f172a"/>
+<text x="65" y="68" fill="#0f172a" font-weight="700">DigiLocker</text><text x="65" y="86" fill="#64748b">account</text>
+<rect x="138" y="40" width="110" height="64" rx="8" fill="#f1f5f9" stroke="#0f172a"/>
+<text x="193" y="68" fill="#0f172a" font-weight="700">ABC / APAAR</text><text x="193" y="86" fill="#64748b">ID created</text>
+<rect x="266" y="40" width="110" height="64" rx="8" fill="#fff7ed" stroke="#f97316"/>
+<text x="321" y="68" fill="#0f172a" font-weight="700">Check details</text><text x="321" y="86" fill="#64748b">name, DOB, gender</text>
+<rect x="394" y="40" width="110" height="64" rx="8" fill="#f1f5f9" stroke="#0f172a"/>
+<text x="449" y="68" fill="#0f172a" font-weight="700">deb.ugc.ac.in</text><text x="449" y="86" fill="#64748b">Get DEBID</text>
+<rect x="522" y="40" width="110" height="64" rx="8" fill="#0f172a"/>
+<text x="577" y="68" fill="#ffffff" font-weight="700">DEB ID</text><text x="577" y="86" fill="#ffffff">give to university</text>
+</g>
+<g stroke="#0f172a" stroke-width="1.5" fill="#0f172a">
+<line x1="120" y1="72" x2="134" y2="72"/><polygon points="134,68 138,72 134,76"/>
+<line x1="248" y1="72" x2="262" y2="72"/><polygon points="262,68 266,72 262,76"/>
+<line x1="376" y1="72" x2="390" y2="72"/><polygon points="390,68 394,72 390,76"/>
+<line x1="504" y1="72" x2="518" y2="72"/><polygon points="518,68 522,72 518,76"/>
+</g>
+<text x="320" y="140" text-anchor="middle" font-size="11.5" fill="#64748b">Fix errors at the APAAR step. The DEB ID copies whatever your ABC record says.</text>
+</svg>
+<figcaption>The DEB ID sits on top of your ABC/APAAR record, so the order of steps matters.</figcaption>
+</figure>
+
+<h2>How do you correct a mistake in your DEB ID?</h2>
+
+<p>Fix the source, then the copy. The DEB portal sets out the order: correct your APAAR or ABC details first, through the ABC support ticket system or the DigiLocker app, and confirm the APAAR card now shows the right details. Only then update the DEB ID through the "Update DEB Details" link on deb.ugc.ac.in.</p>
+
+<p>If you try to correct the DEB ID while the ABC record is still wrong, the error comes straight back. For ABC problems the portal lists the ABC support call centre, 1800-889-3511. For DEB portal issues it lists 011-23604645.</p>
+
+<div class="callout-warning">
+<strong>Do not give your DigiLocker login to an agent.</strong> You can create an ABC ID and a DEB ID yourself in one sitting. Anyone who asks for your DigiLocker password "to do the DEB ID for you" has access to all your documents. UGC also prohibits franchise arrangements for online admissions, so the admission itself should run through the university's own headquarters.
+</div>
+
+<h2>Does a DEB ID mean your programme is UGC approved?</h2>
+
+<p>No, and this is the most common misunderstanding. The DEB ID identifies you. It does not approve the university, and it does not approve the programme. A university that is recognised for one programme can still be outside its entitlement for another.</p>
+
+<p>So check the programme as well as the ID. Find your university and the exact programme, in Online mode, for your admission session, on deb.ugc.ac.in. Our guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> shows where to click. You can also run any university we track through <a href="/verify">the edifyedu.in verify tool</a>, which shows its UGC-DEB and NAAC standing on one page.</p>
+
+<h2>What else does UGC tell students to check before enrolling?</h2>
+
+<p>The same November 2024 notice lists the checks UGC expects every ODL and Online learner to make. In short:</p>
+
+<ul>
+<li><strong>Recognition and entitlement for your session.</strong> Both are published year by year on deb.ugc.ac.in.</li>
+<li><strong>Debarred universities.</strong> UGC names universities barred from ODL or Online admissions for particular sessions. Check the notice board before you pay.</li>
+<li><strong>Prohibited programmes.</strong> Engineering, medical, law, pharmacy, nursing, architecture, agriculture, aviation and several other disciplines cannot be offered in ODL or Online mode. M.Phil and Ph.D. are prohibited in both modes too.</li>
+<li><strong>No franchising.</strong> No university may admit or teach ODL or Online learners through a franchise.</li>
+<li><strong>Degree specification.</strong> Duration, name and entry qualification must follow the UGC Specification of Degrees, 2014.</li>
+</ul>
+
+<p>If a programme passes all of that, the degree is treated as equivalent to the same degree earned on campus. Read <a href="/guides/is-online-degree-valid-india">is an online degree valid in India</a> for the detail, and <a href="/blog/ugc-fake-universities-list-2026">the UGC fake universities list</a> for the institutions that fail at the very first step.</p>
+
+<h2>When is the DEB ID needed in the admission cycle?</h2>
+
+<p>Before enrolment is confirmed, because the university needs it to admit you. Admission windows are fixed by UGC for each session. The DEB portal states that the last date to admit learners in ODL and Online programmes for the August 2026 session was 13 October 2026. If you are aiming for the next intake, create the DEB ID as soon as you shortlist a university, not on the last day.</p>
+
+<p>Once you have the ID, the real decision is which programme to join. You can <a href="/compare">compare universities side by side</a> or start with <a href="/programs/mba">online MBA programmes</a>.</p>
+
+<div class="cta-box">
+<p><strong>Got your DEB ID and still unsure about the university?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us to check it</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC-DEB, Student DEB ID page: deb.ugc.ac.in/StudentDEBId</li>
+<li>UGC public notice F.No. 1-34/2024 (DEB-I), 11 November 2024, "Precautions to be taken by the students before enrolling in Programmes offered under ODL and/or OL mode": deb.ugc.ac.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020: deb.ugc.ac.in/Regulations</li>
+</ul>
+
+<p class="disclaimer"><em>Last verified against the UGC-DEB portal on 26 October 2026. Portal steps, helpline numbers and admission deadlines change. Confirm on deb.ugc.ac.in before acting.</em></p>
+    `,
+  },
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))

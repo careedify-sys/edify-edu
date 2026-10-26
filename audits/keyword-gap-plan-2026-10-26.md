@@ -45,7 +45,7 @@ Status key: TODO, WRITING, SHIPPED (commit), BLOCKED (reason).
 |---|---|---|---|---|---|
 | 1 | UGC fake universities list 2026 | `/blog/ugc-fake-universities-list-2026` | ugc fake universities list 8,100; ugc fake university list 4,400; fake university list 880; ugc fake university list 2026 880; fake degree 720; "ugc identified 32 fake universities" 720+480+260; list of fake universities in india 590; + 6 tails ≈ **17,400** | No page lists the UGC-declared fake universities. `/verify` covers 125 legit unis, not the fake list | SHIPPED 26 Oct |
 | 2 | How online degree exams work in India | `/blog/how-online-degree-exams-work-india` | how do online exams work 18,100 (KD 17); gla online exam 880; amity online exam 210; srm online exam 210 ≈ **19,400** | Nothing on proctoring, exam pattern or what happens if the connection drops | SHIPPED 26 Oct |
-| 3 | UGC-DEB explained: what it is, DEB ID, how to check | `/blog/ugc-deb-id-explained` | deb ugc 8,100; ugc deb 8,100; ugc deb id 2,400; deb.ugc.ac.in deb id 880 ≈ **19,480** | Guide `how-to-check-ugc-deb-approval` covers checking a university. Nobody explains the student DEB ID | TODO |
+| 3 | UGC-DEB explained: what it is, DEB ID, how to check | `/blog/ugc-deb-id-explained` | deb ugc 8,100; ugc deb 8,100; ugc deb id 2,400; deb.ugc.ac.in deb id 880 ≈ **19,480** | Guide `how-to-check-ugc-deb-approval` covers checking a university. Nobody explains the student DEB ID | SHIPPED 26 Oct |
 | 4 | Two degrees at the same time: UGC rules | `/blog/ugc-two-degrees-simultaneously-rules` | ugc allows two degrees simultaneously 2,900 | No page | TODO |
 | 5 | UGC biannual admissions (January and July intake) | `/blog/ugc-biannual-admissions-january-july-intake` | ugc biannual admissions 1,900 | No page. Directly useful for the Jan 2027 intake | TODO |
 | 6 | UGC fee refund policy | `/blog/ugc-fee-refund-policy` | ugc refund policy 2023-24 1,300 | No page. Applies to every online admission | TODO |
@@ -111,6 +111,23 @@ The fee-query rows repeat memory `project_fee_query_gap`: review blogs outrank f
 | Online psychology degree | ~2,600 | UGC barred allied/healthcare programmes, incl. psychology, from ODL/online from July 2025 (verify on ugc.gov.in). Write as a validity explainer? |
 | Online PGDM | 1,310 | AICTE status of online PGDM. Is it in scope? |
 
+### Bucket C update, 26 Oct: the UGC notice answers three of these
+UGC public notice F.No. 1-34/2024 (DEB-I), 11 Nov 2024 (deb.ugc.ac.in/Uploads/Notices_Upload/UGC_20241112154715_1.pdf)
+lists programmes **prohibited in ODL and Online mode**: Engineering, Medical, Physiotherapy, OT and para-medical,
+Pharmacy, Nursing, Dental, Architecture, **Law**, Agriculture, Horticulture, Hotel Management, Catering Technology,
+Culinary Sciences, Aircraft Maintenance, Visual Arts and Sports, Aviation. Yoga and **Tourism & Hospitality
+Management at UG and PG level are not permitted online**. **M.Phil and Ph.D. are prohibited** in ODL and Online.
+So online B.Tech, LLB and PhD explainers can be written as "not permitted, here is the source" pages if Rishi
+wants them. B.Ed (NCTE) and psychology (2025 healthcare rule) still need their own primary source.
+
+**Flag for Rishi:** `/blog/online-mba-hospitality-management-india-2026` and
+`/blog/online-mba-hospitality-hotel-professionals-india-2026` exist. An MBA with a hospitality specialisation is
+still an MBA, so this may be fine, but the notice bars "Tourism & Hospitality Management programmes at UG and PG
+level" online. Worth a read before the next GSC push on those posts.
+
+The same notice names Periyar University, NALSAR and Suresh Gyan Vihar as debarred from ODL or Online for
+2024-25 / 2025-26 sessions. Dated; re-check before quoting.
+
 ## Bucket D: parked, no data
 
 - IIT / IIM / IIIT online courses (≈16,000): mostly certificates and executive programmes, not UGC-DEB degrees. `iim-online-mba-india-2026` already exists for the MBA side.
@@ -125,3 +142,4 @@ Append one line per shipped page: date, item #, URL, commit, keywords covered, b
 
 - 2026-10-26 · #1 · `/blog/ugc-fake-universities-list-2026` · ~17,400/mo (13 keywords) · source: ugc.gov.in/universitydetails/Fakeuniversity, list dated Feb 2026, 32 names, checked 26 Oct. No overlap with lib/data.ts. Also answers the Bucket D 'X fake' queries (Vinayaka Mission, CV Raman, etc.) with the narrow fact 'not on the Feb 2026 list' plus the DEB check. Blocked facts: none.
 - 2026-10-26 · #2 · `/blog/how-online-degree-exams-work-india` · ~19,400/mo · source: UGC ODL & Online Regulations 2020 (Reg 2(y), 15, 16, 22, Annexure II) from deb.ugc.ac.in/Regulations. University-specific exam rows (GLA, Amity, SRM) answered generically, no per-uni claims. Blocked facts: each university's disconnection/re-test policy (not public in the regulation).
+- 2026-10-26 · #3 · `/blog/ugc-deb-id-explained` · ~19,500/mo · sources: deb.ugc.ac.in/StudentDEBId (steps, helplines, 13 Oct 2026 deadline for Aug 2026 session) and UGC notice 11 Nov 2024 (581st meeting, mandatory from Oct 2024 session, lifelong). Blocked facts: none.
