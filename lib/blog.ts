@@ -48433,6 +48433,193 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <p class="disclaimer"><em>All fee figures in this article were verified against the respective universities' official portals on 13 August 2026 and are indicative only. Universities revise fees and scholarship terms between intakes without notice. Confirm the current fee, the concession conditions and any examination or convocation charges directly with the university in writing before making a payment. edifyedu.in does not charge students, does not accept payment for rankings, and compares programmes only on publicly available UGC, NAAC and NIRF data.</em></p>
     `,
   },
+  {
+    slug: 'ugc-fake-universities-list-2026',
+    title: 'UGC Fake Universities List 2026: All 32 Names by State',
+    seoTitle: 'UGC Fake Universities List 2026: All 32 Names by State',
+    h1Title: 'UGC Fake Universities List 2026: All 32 Institutions, State by State',
+    metaDescription: 'UGC lists 32 fake universities as of February 2026, 12 of them in Delhi. Every name by state, why their degrees are invalid, and how to check any university.',
+    category: 'Online Degree Validity',
+    tags: ['UGC Fake Universities', 'Fake University List', 'UGC', 'Degree Validity', 'UGC-DEB', 'Student Guidance'],
+    publishedAt: '2026-10-26',
+    readTime: 8,
+    targetKeyword: 'ugc fake universities list',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/30858451/pexels-photo-30858451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@shootsaga" target="_blank" rel="noopener nofollow">Anil  Sharma</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling young girl with headset on a video call, studying online at home.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'How many fake universities are there in India in 2026?', a: 'The University Grants Commission lists 32 fake universities in its state-wise list dated February 2026. They are spread across 12 states and union territories, with Delhi holding the most at 12.' },
+      { q: 'Which state has the most fake universities?', a: 'Delhi, with 12 of the 32 institutions on the February 2026 UGC list. Uttar Pradesh follows with 4. Andhra Pradesh, Karnataka, Kerala, Maharashtra, Puducherry and West Bengal have 2 each.' },
+      { q: 'Is a degree from a UGC fake university valid?', a: 'No. Under Section 22 of the UGC Act, 1956, only a university set up by a central or state law, a deemed university, or an institution empowered by an Act of Parliament can award a degree. A fake university has no such power, so its degree carries no legal standing for jobs or further study.' },
+      { q: 'Where can I see the official UGC fake university list?', a: 'On the UGC website at ugc.gov.in, under Universities, then Fake Universities. The page carries the state-wise table and a Hindi version. Treat any list on another website, including this one, as a copy and check the date against the UGC page.' },
+      { q: 'If a university is not on the fake list, is it genuine?', a: 'Not necessarily. The fake list only names bodies that call themselves universities without any legal basis. A recognised university can still be barred from offering a particular programme online. For an online degree, also check that the programme appears on deb.ugc.ac.in for your admission session.' },
+      { q: 'How do I check whether an online degree is UGC approved?', a: 'Confirm three things: the university is not on the UGC fake list, it appears on the UGC list of recognised universities, and the exact programme is entitled for online mode on deb.ugc.ac.in for the session you are joining.' },
+      { q: 'What should I do if I already paid a fake university?', a: 'Stop further payments, keep every receipt and message, and file a police complaint for cheating. Write to your state higher education department and to UGC through the contact details on ugc.gov.in. UGC says it has asked state governments to act against these institutions.' },
+    ],
+    ctaTitle: 'Check a university before you pay',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">UGC names 32 fake universities in its list dated February 2026. Delhi has 12 of them. A degree from any of these has no legal value, whatever the certificate looks like.</p>
+
+<p><strong>Short answer:</strong> the University Grants Commission (UGC) currently lists <strong>32 fake universities across 12 states and union territories</strong>, in a state-wise list dated February 2026. Delhi has the most (12), followed by Uttar Pradesh (4). These bodies call themselves universities without being set up under any central or state law, so they cannot award a valid degree. The full list is below, grouped by state, with the date we last checked it against <a href="https://www.ugc.gov.in/universitydetails/Fakeuniversity" target="_blank" rel="noopener">the UGC fake universities page</a>.</p>
+
+<div class="callout-key">
+<strong>Key facts, last verified 26 October 2026</strong>
+<ul>
+<li><strong>Total on the UGC list:</strong> 32 institutions</li>
+<li><strong>List dated:</strong> February 2026 (UGC's own heading)</li>
+<li><strong>States and UTs covered:</strong> 12</li>
+<li><strong>Highest:</strong> Delhi 12, Uttar Pradesh 4</li>
+<li><strong>Legal basis:</strong> Sections 22 and 23 of the UGC Act, 1956</li>
+<li><strong>Overlap with the 143 universities edifyedu.in tracks:</strong> none</li>
+</ul>
+</div>
+
+<h2>What makes a university "fake" under UGC rules?</h2>
+
+<p>A university in India gets its power to award degrees from a law. Section 22 of the UGC Act, 1956 limits that power to three kinds of body: a university created by a central or state Act, an institution declared a deemed university, and an institution specially empowered by an Act of Parliament. Anything else that awards a "degree" is acting outside the law.</p>
+
+<p>Section 23 goes one step further. It bars any institution outside those categories from using the word "university" in its name at all. So the bodies on this list break the rules twice: they use a title they are not entitled to, and they issue certificates they have no power to issue.</p>
+
+<p class="pull">A fake university is not a bad university. It is not a university at all.</p>
+
+<h2>How many fake universities are there, state by state?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/5905749/pexels-photo-5905749.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Back view of crop anonymous attentive African American teacher answer questions of pupils online on laptop" loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@katerina-holmes" target="_blank" rel="noopener nofollow">Katerina Holmes</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<figure class="svg-figure">
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bar chart of UGC fake universities by state as of February 2026: Delhi 12, Uttar Pradesh 4, Andhra Pradesh 2, Karnataka 2, Kerala 2, Maharashtra 2, Puducherry 2, West Bengal 2, Arunachal Pradesh 1, Haryana 1, Jharkhand 1, Rajasthan 1">
+<rect width="640" height="360" fill="#ffffff"/>
+<text x="20" y="28" font-size="15" font-weight="700" fill="#0f172a">UGC fake universities by state (list dated February 2026)</text>
+<g font-size="12" fill="#0f172a">
+<text x="20" y="62">Delhi</text><rect x="150" y="50" width="420" height="16" fill="#ef4444"/><text x="578" y="62" font-weight="700">12</text>
+<text x="20" y="86">Uttar Pradesh</text><rect x="150" y="74" width="140" height="16" fill="#f97316"/><text x="298" y="86" font-weight="700">4</text>
+<text x="20" y="110">Andhra Pradesh</text><rect x="150" y="98" width="70" height="16" fill="#B8892A"/><text x="228" y="110">2</text>
+<text x="20" y="134">Karnataka</text><rect x="150" y="122" width="70" height="16" fill="#B8892A"/><text x="228" y="134">2</text>
+<text x="20" y="158">Kerala</text><rect x="150" y="146" width="70" height="16" fill="#B8892A"/><text x="228" y="158">2</text>
+<text x="20" y="182">Maharashtra</text><rect x="150" y="170" width="70" height="16" fill="#B8892A"/><text x="228" y="182">2</text>
+<text x="20" y="206">Puducherry</text><rect x="150" y="194" width="70" height="16" fill="#B8892A"/><text x="228" y="206">2</text>
+<text x="20" y="230">West Bengal</text><rect x="150" y="218" width="70" height="16" fill="#B8892A"/><text x="228" y="230">2</text>
+<text x="20" y="254">Arunachal Pradesh</text><rect x="150" y="242" width="35" height="16" fill="#64748b"/><text x="193" y="254">1</text>
+<text x="20" y="278">Haryana</text><rect x="150" y="266" width="35" height="16" fill="#64748b"/><text x="193" y="278">1</text>
+<text x="20" y="302">Jharkhand</text><rect x="150" y="290" width="35" height="16" fill="#64748b"/><text x="193" y="302">1</text>
+<text x="20" y="326">Rajasthan</text><rect x="150" y="314" width="35" height="16" fill="#64748b"/><text x="193" y="326">1</text>
+</g>
+<text x="20" y="350" font-size="11" fill="#64748b">Source: ugc.gov.in, state-wise list of fake universities. Checked 26 Oct 2026.</text>
+</svg>
+<figcaption>Delhi alone accounts for 12 of the 32 names, more than the next four states combined.</figcaption>
+</figure>
+
+<h2>The full UGC fake universities list 2026</h2>
+
+<p>Names below follow the UGC table. We shortened street addresses to the city to keep the table readable. If an institution offering you admission matches a name or a city here, check the full address on the UGC page before you do anything else.</p>
+
+<table>
+<thead><tr><th>#</th><th>Institution (as named by UGC)</th><th>City</th><th>State / UT</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Christ New Testament Deemed University</td><td>Guntur</td><td>Andhra Pradesh</td></tr>
+<tr><td>2</td><td>Bible Open University of India</td><td>Visakhapatnam</td><td>Andhra Pradesh</td></tr>
+<tr><td>3</td><td>Indian Institute of Alternative Medicine</td><td>Secretariat S.O.</td><td>Arunachal Pradesh</td></tr>
+<tr><td>4</td><td>Mountain Institute of Management &amp; Technology</td><td>Nehru Place, New Delhi</td><td>Delhi</td></tr>
+<tr><td>5</td><td>World Peace of United Nations University (WPUNU)</td><td>Pitampura, New Delhi</td><td>Delhi</td></tr>
+<tr><td>6</td><td>Institute of Management and Engineering</td><td>Kotla Mubarakpur</td><td>Delhi</td></tr>
+<tr><td>7</td><td>National Institute of Management Solution</td><td>Janakpuri</td><td>Delhi</td></tr>
+<tr><td>8</td><td>All India Institute of Public &amp; Physical Health Sciences (AIIPHS) State Government University</td><td>Alipur</td><td>Delhi</td></tr>
+<tr><td>9</td><td>Commercial University Ltd.</td><td>Daryaganj</td><td>Delhi</td></tr>
+<tr><td>10</td><td>United Nations University</td><td>Delhi</td><td>Delhi</td></tr>
+<tr><td>11</td><td>Vocational University</td><td>Delhi</td><td>Delhi</td></tr>
+<tr><td>12</td><td>ADR-Centric Juridical University</td><td>Rajendra Place, New Delhi</td><td>Delhi</td></tr>
+<tr><td>13</td><td>Indian Institute of Science and Engineering</td><td>New Delhi</td><td>Delhi</td></tr>
+<tr><td>14</td><td>Viswakarma Open University for Self-Employment</td><td>Sanjay Enclave</td><td>Delhi</td></tr>
+<tr><td>15</td><td>Adhyatmik Vishwavidyalaya (Spiritual University)</td><td>Rohini</td><td>Delhi</td></tr>
+<tr><td>16</td><td>Magic &amp; Art University</td><td>Faridabad</td><td>Haryana</td></tr>
+<tr><td>17</td><td>Daksha University (Vocational and Life Skill Education)</td><td>Ranchi</td><td>Jharkhand</td></tr>
+<tr><td>18</td><td>Global Human Peace University</td><td>Bengaluru</td><td>Karnataka</td></tr>
+<tr><td>19</td><td>Sarva Bharatiya Shiksha Peeth</td><td>Tumkur</td><td>Karnataka</td></tr>
+<tr><td>20</td><td>International Islamic University of Prophetic Medicine (IIUPM)</td><td>Kozhikode</td><td>Kerala</td></tr>
+<tr><td>21</td><td>St. John's University</td><td>Kishanattam</td><td>Kerala</td></tr>
+<tr><td>22</td><td>Raja Arabic University</td><td>Nagpur</td><td>Maharashtra</td></tr>
+<tr><td>23</td><td>National Backward Krushi Vidyapeeth</td><td>Solapur district</td><td>Maharashtra</td></tr>
+<tr><td>24</td><td>Usha Latchumanan College of Education</td><td>Thirukkanur</td><td>Puducherry</td></tr>
+<tr><td>25</td><td>Sree Bodhi Academy of Higher Education</td><td>Puducherry</td><td>Puducherry</td></tr>
+<tr><td>26</td><td>Rajeev Gandhi Institute of Technology &amp; Management</td><td>Bhiwadi, Alwar district</td><td>Rajasthan</td></tr>
+<tr><td>27</td><td>Gandhi Hindi Vidyapith</td><td>Prayagraj (Allahabad)</td><td>Uttar Pradesh</td></tr>
+<tr><td>28</td><td>Netaji Subhash Chandra Bose University (Open University)</td><td>Aligarh</td><td>Uttar Pradesh</td></tr>
+<tr><td>29</td><td>Bhartiya Shiksha Parishad</td><td>Lucknow</td><td>Uttar Pradesh</td></tr>
+<tr><td>30</td><td>Mahamaya Technical University</td><td>Noida</td><td>Uttar Pradesh</td></tr>
+<tr><td>31</td><td>Indian Institute of Alternative Medicine</td><td>Kolkata</td><td>West Bengal</td></tr>
+<tr><td>32</td><td>Institute of Alternative Medicine and Research</td><td>Kolkata</td><td>West Bengal</td></tr>
+</tbody>
+</table>
+
+<p>Two things stand out in the table. "Indian Institute of Alternative Medicine" appears twice, once in Arunachal Pradesh and once in Kolkata, so a matching name in a different city is not a reason to relax. And several names borrow the vocabulary of real institutions: "United Nations", "Indian Institute of Science", "Deemed University", "State Government University". The words in a name prove nothing.</p>
+
+<div class="callout-warning">
+<strong>Do not rely on a copy of this list, including ours.</strong> UGC updates the list without a fixed schedule. Before you pay any fee, open the official page on ugc.gov.in and check the date in its heading. If the date there is later than February 2026, the page wins.
+</div>
+
+<h2>Is a degree from a fake university valid for jobs or higher studies?</h2>
+
+<p>No. A fake university has no legal power to award a degree, so the certificate does not count as one. Employers who verify qualifications, government recruitment boards and other universities admitting you to a higher programme can all reject it.</p>
+
+<p>The damage usually surfaces late. A student finds out at a government job document check, during a visa or credential evaluation, or when applying for a master's programme. By then the fee is gone and the years are spent. That is the reason to check before admission, not after.</p>
+
+<h2>Not on the fake list does not mean approved for online study</h2>
+
+<p>This is where most students get caught. The fake list covers only bodies with no legal standing at all. It says nothing about genuine universities that UGC has restricted, and it says nothing about whether a specific programme may run online.</p>
+
+<p>For an online degree, a recognised university still needs UGC-DEB entitlement for that exact programme, in online mode, for the session you join. A university can be legitimate and still not be entitled to offer the online MBA or BCA it is advertising. Our guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> walks through the portal step by step.</p>
+
+<p>The same logic applies to names people search alongside the word "fake", such as Vinayaka Mission, CV Raman, Shri Venkateshwara, Rabindranath Tagore and Suresh Gyan Vihar. None of them appears on the February 2026 UGC fake list. That settles only the first question. Whether a particular online or distance programme from any of them is valid depends on its entitlement on <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> for your session.</p>
+
+<h2>How do you check if a university is genuine? A three-step test</h2>
+
+<ol>
+<li><strong>Rule out the fake list.</strong> Search the institution's name and city on the UGC fake universities page.</li>
+<li><strong>Confirm it is a recognised university.</strong> UGC publishes lists of central, state, deemed and private universities on ugc.gov.in. The institution must appear on one of them.</li>
+<li><strong>For online or distance study, confirm the programme.</strong> Find the exact programme and mode on deb.ugc.ac.in for the current admission session. Then check the NAAC grade and its validity on <a href="https://naac.gov.in" target="_blank" rel="noopener">naac.gov.in</a>, because online entitlement depends on accreditation.</li>
+</ol>
+
+<p>We run steps two and three for every university we track and publish the result on a single page per university. Start at <a href="/verify">the edifyedu.in verify tool</a>, or read <a href="/guides/is-online-degree-valid-india">whether an online degree is valid in India</a> if you are still weighing online against regular study.</p>
+
+<h2>Warning signs that an institution may be fake</h2>
+
+<ul>
+<li>It promises a degree in a few months, or "without exams", or backdated.</li>
+<li>It cannot give you a UGC recognition reference or a DEB programme listing, only a certificate image or an "ISO" logo.</li>
+<li>Its name copies a real institution with one word changed.</li>
+<li>Fees must go to a personal account or a UPI handle rather than the university's official account.</li>
+<li>The "university" has no campus address that matches any UGC list.</li>
+</ul>
+
+<p class="pull">If an admission offer is urgent and the paperwork is vague, slow down. Real universities publish their approvals.</p>
+
+<h2>What should you do if you already enrolled in a fake university?</h2>
+
+<p>Stop any further payment first. Collect every receipt, chat, email and brochure, because a complaint without documents goes nowhere. Then file a police complaint for cheating and write to your state's higher education department.</p>
+
+<p>UGC states on its fake universities page that it has written to state governments asking them to act against these institutions. Copy UGC on your complaint through the contact details on ugc.gov.in. If you want to restart with a valid programme, our <a href="/blog/ugc-deb-approved-universities-list-2026">list of UGC-DEB approved online universities</a> is a safer starting point, and you can <a href="/compare">compare approved universities side by side</a>.</p>
+
+<div class="cta-box">
+<p><strong>Not sure about a university you are considering?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us to check it</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC, State-wise list of fake universities as on February 2026: ugc.gov.in/universitydetails/Fakeuniversity</li>
+<li>UGC Act, 1956, Sections 22 and 23: ugc.gov.in</li>
+<li>UGC-DEB programme entitlement: deb.ugc.ac.in</li>
+<li>NAAC accreditation status: naac.gov.in</li>
+</ul>
+
+<p class="disclaimer"><em>Last verified against the UGC fake universities page on 26 October 2026. UGC revises this list without notice. Always confirm against the official page before acting on it.</em></p>
+    `,
+  },
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))

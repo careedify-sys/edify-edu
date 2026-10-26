@@ -3,6 +3,16 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'ugc-fake-universities-list-2026': [
+    { label: 'Fake universities listed', value: '32' },
+    { label: 'List dated', value: 'February 2026' },
+    { label: 'States and UTs', value: '12' },
+    { label: 'Delhi', value: '12' },
+    { label: 'Uttar Pradesh', value: '4' },
+    { label: 'Legal basis', value: 'UGC Act 1956, s.22 and s.23' },
+    { label: 'Degree valid?', value: 'No' },
+    { label: 'Last verified', value: '26 Oct 2026', green: true },
+  ],
   'srm-online-mba-2026': [
     { label: 'SRMIST Total Fee',  value: '₹1,50,000 to ₹1,89,000' },
     { label: 'SRM Sikkim Fee',    value: '₹1,10,000', green: true },
