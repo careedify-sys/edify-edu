@@ -40,17 +40,17 @@ export default function EdifyRecommends({ program, currentId, programSlug }: Pro
   if (picks.length === 0) return null
 
   const WHY: Record<string, string> = {
-    'amity-university-online':                    'NAAC A+ · NIRF #22 · WES Recognised',
-    'chandigarh-university-online':               'NIRF #19 · NAAC A+ · Largest online enrolment',
+    'amity-university-online':                    'NAAC A+ · NIRF #22 Univ · WES Recognised',
+    'chandigarh-university-online':               'NIRF #19 Univ · NAAC A+ · Largest online enrolment',
     'nmims-online':                               'Premium B-school · Industry-aligned curriculum',
-    'manipal-university-jaipur-online':           'NIRF #58 · NAAC A+ · Strong placement record',
-    'lovely-professional-university-online':      'NAAC A++ · NIRF #31 · WES Recognised',
+    'manipal-university-jaipur-online':           'NIRF #58 Univ · NAAC A+ · Strong placement record',
+    'lovely-professional-university-online':      'NAAC A++ · NIRF #31 Univ · WES Recognised',
     'symbiosis-university-online':                'NAAC A++ · Recognised brand · WES Approved',
-    'manipal-academy-higher-education-online':    'NAAC A++ · NIRF #6 · Global recognition',
-    'amrita-vishwa-vidyapeetham-online':          'NAAC A++ · NIRF #8 · Top research university',
-    'jain-university-online':                     'NAAC A++ · NIRF #62 · WES Recognised',
-    'srm-institute-science-technology-online':    'NAAC A++ · NIRF #11 · Industry connections',
-    'upes-online':                                'NIRF #45 · NAAC A · Industry-focused',
+    'manipal-academy-higher-education-online':    'NAAC A++ · NIRF #3 Univ · Global recognition',
+    'amrita-vishwa-vidyapeetham-online':          'NAAC A++ · NIRF #8 Univ · Top research university',
+    'jain-university-online':                     'NAAC A++ · NIRF #62 Univ · WES Recognised',
+    'srm-institute-science-technology-online':    'NAAC A++ · NIRF #11 Univ · Industry connections',
+    'upes-online':                                'NIRF #45 Univ · NAAC A · Industry-focused',
     'shoolini-university-online':                 'NAAC A+ · Affordable fees · Flexible schedule',
   }
 

@@ -492,7 +492,7 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'What is the Amrita online MBA discount coupon code?', a: 'AMR2026-5K. Up to Rs 5,000 on Tuesday and Saturday in IST.' },
       { q: 'Does Amrita offer per-specialisation pricing?', a: 'Yes. Amrita Online MBA fees vary by specialisation, with premium tracks like Analytics, FinTech, and International Finance priced higher than General Management. Confirm current per-specialisation pricing with our admission desk on the enrollment call.' },
       { q: 'Does Amrita have Grant Thornton co-branding?', a: 'Yes. Selected specialisations (Analytics, FinTech, ESG) are co-branded with Grant Thornton.' },
-      { q: 'Is Amrita NIRF #8?', a: 'Yes. Amrita holds NIRF #8 in the University category for 2025.' },
+      { q: 'Is Amrita ranked NIRF #8 in the University category?', a: 'Yes. Amrita holds NIRF #8 in the University category for 2025.' },
     ],
     peerComparisons: [
       { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },

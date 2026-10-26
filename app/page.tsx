@@ -26,9 +26,9 @@ const PROGRAMS_SHOWCASE = [
 ]
 
 const FEATURED_BRANDS = [
-  { name:'JAIN Online',    color:'#1B4FBE', tag:'NIRF #62 · NAAC A++',   id:'jain-university-online' },
-  { name:'Symbiosis',     color:'#D4922A', tag:'NIRF #47 · NAAC A++',   id:'symbiosis-university-online' },
-  { name:'Manipal (MAHE)', color:'#C0392B', tag:'NIRF #4 · NAAC A++',   id:'manipal-academy-higher-education-online' },
+  { name:'JAIN Online',    color:'#1B4FBE', tag:'NIRF #62 Univ · NAAC A++',   id:'jain-university-online' },
+  { name:'Symbiosis',     color:'#D4922A', tag:'NIRF #11 Mgmt · NAAC A++',   id:'symbiosis-university-online' },
+  { name:'Manipal (MAHE)', color:'#C0392B', tag:'NIRF #3 Univ · NAAC A++',   id:'manipal-academy-higher-education-online' },
   { name:'Amity',         color:'#1E6FBB', tag:'NAAC A+ · QS Ranked',   id:'amity-university-online' },
   { name:'Chandigarh U.', color:'#0E8A78', tag:'NAAC A+ · QS Ranked',   id:'chandigarh-university-online' },
   { name:'LPU',           color:'var(--warning)', tag:'NAAC A++ · THE Ranked', id:'lovely-professional-university-online' },

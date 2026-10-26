@@ -1360,7 +1360,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 6517,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'NAAC A+ | NIRF #58 MUJ Online MBA at ₹46,000 a semester, or ₹1,56,400 total after the 15% discount',
+    tagline: 'NAAC A+ | NIRF #58 University | MUJ Online MBA at ₹46,000 a semester, or ₹1,56,400 total after the 15% discount',
     description: 'UGC DEB approved online programs from Manipal University Jaipur (MUJ). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Graduates seeking management credentials', 'working professionals targeting leadership', 'those wanting NAAC A+ MBA at affordable fees'],
     notFor: ['Those seeking only offline/on-campus experience', 'students not meeting UG eligibility', 'those needing highly personalized offline mentoring'],
