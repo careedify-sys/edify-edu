@@ -1,5 +1,34 @@
 # Fix log
 
+## 2026-10-27 · Programme hubs and spec pages: wrong programme titles, MBA fees on non-MBA pages, unsourced salary stats
+
+Bucket A rows /programs/bsc (bsc online 1,570, pos 27-79) and /programs/bba (online bba 1,110, pos 40-51).
+
+**1. 53 of 200 non-MBA spec pages in the sitemap had another programme's title.** lib/content.ts is keyed by
+specialisation only, so /programs/bba/finance was "Online MBA Finance — Careers..." and six BCA pages said MCA;
+63 titles had an em dash. Now: the content.ts title/description is used only if it names this programme and has
+no em dash, else a data-built one ("Online BBA in Finance 2026: 27 UGC-DEB Universities"). Rescan: 0 wrong
+programme, 0 em dash, 0 duplicate titles, all under 60 chars. Overview and "Why X?" lists that name another
+programme are replaced or hidden (BBA Finance opened with "India's highest-paying MBA specialisation").
+
+**2. MBA fees on every non-MBA page.** ProgramHubClient, UniversityCard and ProgramPageClient read
+u.feeMin/feeMax and emiFrom, which are MBA-led. /programs/bba cards showed MBA fees; 18 MA/BA/M.Com spec pages
+showed "From ₹0". The page now resolves each university's fee for the programme via getDisplayFee and passes it
+down; unknown shows "Fee on request"; EMI hidden off MBA. No hub-wide "from X" floor (never derive fee
+superlatives: Sathyabama BBA ₹15K-₹45K sits at the 3x limit, IGNOU BA ₹9,600).
+
+**3. Unsourced stats.** "Salary Range ₹4L–₹18L" on every hub and "₹3L–₹15L" default / content.ts salary on
+spec pages: replaced with Level/Mode. Spec stat "Universities 8" counted the capped card list (BBA Finance has 27).
+UG spec pages said "3-year postgraduate program". Hub FAQ claimed "most programmes offer zero-cost EMI" and
+50% marks for UG entry; now Class 12 incl. open schooling, validity cites Reg 22 (2020 Regs).
+
+**4. BSc hub** now answers the real query: Reg 4 lab proviso, so only lab-free BSc runs online; title "Which
+Subjects UGC Allows Online". The old description listed Mathematics, CS and IT, none of which we hold.
+
+Not fixed, flagged: body em dashes on 99 spec pages come from content.ts whyChoose/skills and data.ts
+careerOutcome prose (em-dash baseline); MA/BA hub descriptions list Psychology (open dispute with Rishi);
+MUJ and MAHE list "General Management" as an MSc specialisation (looks like a copy error, needs portal check).
+
 ## 2026-10-27 · Bucket C complete: online B.Tech, B.Ed and PGDM explainers; MBA vs PGDM post corrected
 
 Rishi approved aicte-india.org and ncte.gov.in as sources for these three posts (memory: feedback_regulator_sources).

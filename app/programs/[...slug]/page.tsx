@@ -21,6 +21,7 @@ import ProgramPageClient from '@/components/ProgramPageClient'
 import MBAHubClient from '@/components/MBAHubClient'
 import MBASpecHubClient from '@/components/MBASpecHubClient'
 import ProgramHubClient from '@/components/ProgramHubClient'
+import { getDisplayFee } from '@/lib/fees'
 import { formatUniversityDisplayName } from '@/lib/format'
 
 const SEMESTER_TO_TOTAL_IDS = new Set<string>([])
@@ -186,6 +187,27 @@ export async function generateMetadata(
     : null
 
   const allUnis = getUniversitiesByProgram(program)
+
+  // content.ts is keyed by specialisation, not programme, so /programs/bba/finance
+  // inherited an "Online MBA Finance" title and six BCA pages said "MCA".
+  // On 2026-10-27, 53 of 200 non-MBA spec pages in the sitemap carried another
+  // programme's title, and 63 had an em dash. Use the content.ts string only
+  // when it names this programme and has no em dash; otherwise build from data.
+  const programRe = new RegExp(`\\b${program.replace('.', '\\.?')}\\b`, 'i')
+  const fitsProgram = (s?: string) => !!s && programRe.test(s) && !s.includes('\u2014')
+  const specUniCount = activeSpec
+    ? allUnis.filter(u => u.programDetails[program]?.specs?.some(s => getSpecName(s) === activeSpec)).length
+    : 0
+  const specTitle = fitsProgram(specContent?.metaTitle)
+    ? specContent!.metaTitle
+    : activeSpec && program !== 'MBA'
+      ? `Online ${program} in ${activeSpec} ${year}: ${specUniCount ? `${specUniCount} ` : ''}UGC-DEB ${specUniCount === 1 ? 'University' : 'Universities'}`
+      : undefined
+  const specDesc = fitsProgram(specContent?.metaDesc)
+    ? specContent!.metaDesc
+    : activeSpec && program !== 'MBA'
+      ? `${specUniCount === 1 ? '1 UGC-DEB entitled university offers' : specUniCount ? `${specUniCount} UGC-DEB entitled universities offer` : 'Compare UGC-DEB entitled universities offering'} an online ${program} in ${activeSpec}. NIRF ranks, NAAC grades, fees and syllabus. No paid rankings.`
+      : undefined
   const uniCount = allUnis.length
 
   // Get top 3 university brand names for SEO (sorted by NIRF).
@@ -216,28 +238,28 @@ export async function generateMetadata(
   // Google's 60-char SERP cap.
   const rawTitle = hubOverride?.title
     || specOverride?.title
-    || specContent?.metaTitle
+    || specTitle
     || (activeSpec
       ? program === 'MBA'
         ? `Online MBA ${activeSpec} ${year}: ${uniCount}+ Colleges, Fees | EdifyEdu`
         : `Online ${program} ${activeSpec} ${year}: ${uniCount}+ Colleges | EdifyEdu`
       : program === 'MBA'
         ? `Online MBA in India ${year}: ${uniCount} Colleges, Fees | edifyedu.in`
-        : `Online ${program} India ${year}: ${uniCount}+ UGC-DEB Colleges | EdifyEdu`)
+        : `Online ${program} India ${year}: ${hubUniCount} UGC-DEB Colleges | EdifyEdu`)
   const title = clampTitle(rawTitle)
 
   // CTR-tuned description: lead with most specific number, micro-CTA at end,
   // never start with "Compare" or "Explore".
   const rawDescription = hubOverride?.description
     || specOverride?.description
-    || specContent?.metaDesc
+    || specDesc
     || (activeSpec
       ? program === 'MBA'
         ? `${uniCount}+ UGC-DEB online MBAs offer ${activeSpec}: ${topBrands || 'top NIRF-ranked colleges'}. Fees, syllabus, salary data, placements. Check eligibility free.`
         : `${uniCount}+ UGC-DEB online ${program} programs in ${activeSpec} ${year}. NIRF ranks, fees, syllabus, career outcomes and salary data. Check eligibility free.`
       : program === 'MBA'
         ? `Compare ${uniCount} UGC-DEB approved online MBA universities in India. Fees from ₹10K to ₹3.7L. NIRF ranked. NAAC graded. Filter by specialization, fee, location. Zero-commission comparison by edifyedu.in.`
-        : `${uniCount}+ UGC-DEB approved online ${program} programs in India: real NIRF ranks, NAAC grades, verified fees, syllabus. Admissions ${year} open. Check eligibility.`)
+        : `${hubUniCount} UGC-DEB approved online ${program} programs in India: real NIRF ranks, NAAC grades, verified fees, syllabus. Admissions ${year} open. Check eligibility.`)
   const description = clampDescription(rawDescription)
 
   const canonical = activeSpec
@@ -337,6 +359,17 @@ export default async function CatchAllProgramPage(
   const meta = PROGRAM_META[program]
   const content = getProgramContent(program)
   const universities = getUniversitiesByProgram(program)
+  // Spec pages called every non-PG programme a "3-year postgraduate program",
+  // so BBA, BCA, B.Com, BA and BSc specialisations all claimed the wrong level.
+  const isPgProgram = ['MBA', 'MCA', 'M.Com', 'MA', 'MSc'].includes(program)
+  // Client components here only see u.feeMin/feeMax, which are MBA-led, so BBA
+  // and MA pages printed MBA fees or "From Rs 0". Resolve this programme's own
+  // fee once, through getDisplayFee; null means suppressed or unknown.
+  const programFees: Record<string, string | null> = {}
+  for (const u of universities) {
+    const f = getDisplayFee(u, program as Program)
+    programFees[u.id] = f.ok && f.compact ? f.compact : null
+  }
   
   const feeMin = universities.length ? Math.min(...universities.map(u => u.feeMin)) : 0
   const feeMax = universities.length ? Math.max(...universities.map(u => u.feeMax)) : 0
@@ -502,10 +535,29 @@ export default async function CatchAllProgramPage(
     if (!sc) sc = { overview: '', whyChoose: [], skills: [], careerBeginner: [], careerMid: [], careerSenior: [], salaryRange: '', certifications: [], topCompanies: [] }
 
     const specSlugStr = activeSpec.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
-    const unisWithSpec = universities
+    const allWithSpec = universities
       .filter(u => u.programDetails[program]?.specs?.some(s => getSpecName(s) === activeSpec))
       .sort((a, b) => (a.nirf || 999) - (b.nirf || 999))
-      .slice(0, 8)
+    const unisWithSpec = allWithSpec.slice(0, 8)
+    // The stat used to count the 8-card list, so BBA Finance said 8 while 27
+    // universities offer it. Count the full set; the list stays capped.
+    const specUniTotal = allWithSpec.length || universities.length
+
+    // content.ts overviews are keyed by specialisation, so BBA Finance opened
+    // with "Finance is consistently India's highest-paying MBA specialisation".
+    // Drop any overview that names a different programme and say what we know.
+    const otherProgramRe = new RegExp(
+      `\\b(${['MBA', 'MCA', 'BBA', 'BCA', 'B.Com', 'M.Com', 'BSc', 'MSc']
+        .filter(p => p !== program)
+        .map(p => p.replace('.', '\\.?'))
+        .join('|')})\\b`,
+    )
+    const specOverview = sc.overview && !otherProgramRe.test(sc.overview)
+      ? sc.overview
+      : `${specUniTotal} UGC-DEB entitled ${specUniTotal === 1 ? 'university offers' : 'universities offer'} an online ${program} in ${activeSpec}. It is a ${isPgProgram ? '2-year postgraduate degree for graduates' : '3-year undergraduate degree you can join after Class 12'}, with the same credits and duration as the campus programme under UGC rules.`
+    // Same rule for the "Why {spec}?" list: BBA Finance showed MBA claims such
+    // as "BFSI sector: India's largest MBA employer at 35%+ share".
+    const specWhyChoose: string[] = (sc.whyChoose || []).some((w: string) => otherProgramRe.test(w)) ? [] : (sc.whyChoose || [])
 
     return (
       <>
@@ -535,7 +587,7 @@ export default async function CatchAllProgramPage(
                       <span className="text-amber-text">in {activeSpec}</span>
                     </h1>
                     <p className="mt-4 text-lg text-ink-2 max-w-2xl leading-relaxed">
-                      Compare {unisWithSpec.length || universities.length} top-ranked universities offering online {program} in {activeSpec} in India.
+                      Compare {specUniTotal} universities offering online {program} in {activeSpec} in India.
                       UGC approved degrees valid for govt and private jobs.
                     </p>
                   </div>
@@ -543,10 +595,12 @@ export default async function CatchAllProgramPage(
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
                   {[
-                    { icon: BookOpen, label: 'Universities', value: `${unisWithSpec.length || universities.length}` },
-                    { icon: Award, label: 'Min Fee', value: formatFee(feeMin) },
-                    { icon: Users, label: 'Duration', value: program.startsWith('B') ? '3 Years' : '2 Years' },
-                    { icon: Briefcase, label: 'Salary Range', value: sc.salaryRange || '₹3L – ₹15L' },
+                    // "Min Fee" printed Rs 0 and "Salary Range" came from MBA-oriented
+                    // content.ts with an unsourced default; both replaced with facts.
+                    { icon: BookOpen, label: 'Universities', value: `${specUniTotal}` },
+                    { icon: Award, label: 'Level', value: isPgProgram ? 'Postgraduate' : 'Undergraduate' },
+                    { icon: Users, label: 'Duration', value: isPgProgram ? '2 Years' : '3 Years' },
+                    { icon: Briefcase, label: 'Mode', value: 'Online' },
                   ].map(stat => (
                     <div key={stat.label} className="bg-white rounded-xl p-5 border border-slate-200 flex flex-col gap-3">
                       <div className="w-5 h-5 text-amber-text"><stat.icon size={20}/></div>
@@ -558,23 +612,23 @@ export default async function CatchAllProgramPage(
                   ))}
                 </div>
 
-                {sc.overview && (
+                {specOverview && (
                   <section className="card p-6 md:p-8 mt-6">
                     <h2 className="text-xl font-bold text-navy mb-4">About Online {program} in {activeSpec}</h2>
                     <div className="text-[15px] text-ink-2 leading-relaxed space-y-3">
-                      <p>{sc.overview}</p>
+                      <p>{specOverview}</p>
                       <p>Online degrees from UGC DEB approved universities are accepted by government and private sector employers across India.</p>
                     </div>
                   </section>
                 )}
 
-                {(sc.whyChoose?.length || sc.skills?.length) ? (
+                {(specWhyChoose.length || sc.skills?.length) ? (
                   <section className="grid md:grid-cols-2 gap-4 mt-4">
-                    {sc.whyChoose?.length ? (
+                    {specWhyChoose.length ? (
                       <div className="card p-6">
                         <h3 className="text-base font-bold text-navy mb-3">Why {activeSpec}?</h3>
                         <ul className="space-y-2">
-                          {sc.whyChoose.map((w: string, i: number) => (
+                          {specWhyChoose.map((w: string, i: number) => (
                             <li key={i} className="flex items-start gap-2 text-sm text-ink-2">
                               <span className="text-green-500 font-bold mt-0.5 shrink-0">✓</span><span>{w}</span>
                             </li>
@@ -614,7 +668,7 @@ export default async function CatchAllProgramPage(
                             </div>
                             <div className="flex-1 min-w-0">
                               <div className="text-sm font-bold text-navy group-hover:text-amber transition-colors leading-snug truncate">{getShortUniversityName(u.name)}</div>
-                              <div className="text-xs text-ink-3">NAAC {u.naac}{nirfForProgramme(u, program) ? ` · ${nirfForProgramme(u, program)}` : ''} · {upd?.fees || formatFee(u.feeMin)}</div>
+                              <div className="text-xs text-ink-3">NAAC {u.naac}{nirfForProgramme(u, program) ? ` · ${nirfForProgramme(u, program)}` : ''} · {(() => { const f = getDisplayFee(u, program as Program); return f.ok && f.compact ? f.compact : 'Fee on request' })()}</div>
                             </div>
                             <ChevronRight size={14} className="text-amber shrink-0" />
                           </Link>
@@ -628,7 +682,7 @@ export default async function CatchAllProgramPage(
                   </section>
                 )}
 
-                <ProgramPageClient program={program} programSlug={programSlug} universities={universities} allSpecs={allSpecs} initialSpec={activeSpec ?? undefined} />
+                <ProgramPageClient program={program} programSlug={programSlug} universities={universities} allSpecs={allSpecs} initialSpec={activeSpec ?? undefined} programFees={programFees} />
               </div>
             </div>
           </div>
@@ -705,7 +759,7 @@ export default async function CatchAllProgramPage(
             </Link>
           </div>
         </div>
-        <ProgramHubClient program={program} />
+        <ProgramHubClient program={program} programFees={programFees} />
         <div className="max-w-7xl mx-auto px-4 pb-10">
           <ProgrammeComparisonTable program={program} programSlug={programSlug} />
         </div>
@@ -747,7 +801,7 @@ export default async function CatchAllProgramPage(
                   {activeSpec ? (
                     <span className="text-amber-text">in {activeSpec}</span>
                   ) : (
-                    <span className="text-amber-text">Universities in India {year} — UGC DEB Approved</span>
+                    <span className="text-amber-text">Universities in India {year}, UGC DEB Approved</span>
                   )}
                 </h1>
                 <p className="mt-4 text-lg text-ink-2 max-w-2xl leading-relaxed">
@@ -763,7 +817,9 @@ export default async function CatchAllProgramPage(
                 { icon: BookOpen, label: 'Universities', value: `${universities.length}` },
                 { icon: Award, label: 'Min Fee', value: formatFee(feeMin) },
                 { icon: Users, label: 'Specialisations', value: `${allSpecs.length}+` },
-                { icon: Briefcase, label: 'Salary Range', value: '₹4L – ₹18L' },
+                // Was a hard-coded "Salary Range ₹4L – ₹18L" on every programme and
+                // specialisation, backed by no source. Level is a fact we hold.
+                { icon: Briefcase, label: 'Level', value: isPgProgram ? 'Postgraduate' : 'Undergraduate' },
               ].map(stat => (
                 <div key={stat.label} className="bg-white rounded-xl p-5 border border-slate-200 flex flex-col gap-3">
                   <div className="w-5 h-5 text-amber-text">
@@ -789,7 +845,7 @@ export default async function CatchAllProgramPage(
                     <h2 className="text-xl font-bold text-navy mb-4">About Online {program} in {activeSpec}</h2>
                     <div className="flex flex-col gap-4 text-[15px] text-ink-2 leading-relaxed">
                       <p>
-                        {uniName.replace(/\s+online\s*$/i, '')} and other UGC DEB approved universities offer an Online {program} in {activeSpec} as a{program === 'MCA' || program === 'MSc' ? ' 2-year' : program === 'MBA' || program === 'M.Com' || program === 'MA' ? ' 2-year' : ' 3-year'} postgraduate program delivered entirely online. The program is UGC DEB approved and designed for working professionals and fresh graduates.
+                        {uniName.replace(/\s+online\s*$/i, '')} and other UGC DEB approved universities offer an Online {program} in {activeSpec} as a{isPgProgram ? ' 2-year postgraduate' : ' 3-year undergraduate'} program delivered entirely online. The program is UGC DEB approved and designed for working professionals and {isPgProgram ? 'graduates' : 'students who have passed Class 12'}.
                       </p>
                       {sc.overview && <p>{sc.overview}</p>}
                       <p>Online degrees from UGC DEB approved universities are accepted by government and private sector employers across India. The degree holds the same value as a regular on-campus degree as per UGC regulations.</p>
@@ -909,7 +965,7 @@ export default async function CatchAllProgramPage(
                     Top Universities for {program} in {activeSpec}
                   </h2>
                   <p className="text-sm text-ink-3 mb-5">
-                    UGC DEB approved universities offering {program} with {activeSpec} specialisation — sorted by NIRF rank
+                    UGC DEB approved universities offering {program} with {activeSpec} specialisation, sorted by NIRF rank
                   </p>
                   <div className="grid sm:grid-cols-2 gap-3">
                     {unisWithSpec.map(u => {
@@ -964,6 +1020,7 @@ export default async function CatchAllProgramPage(
               universities={universities}
               allSpecs={allSpecs}
               initialSpec={activeSpec ?? undefined}
+              programFees={programFees}
             />
 
             {/* Related Programs — internal linking for SEO */}

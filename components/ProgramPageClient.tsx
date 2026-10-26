@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { BookOpen, Star, Users, TrendingUp, ArrowRight } from 'lucide-react'
-import { getSortRank, formatFeeSlim as formatFee } from '@/lib/data-slim'
+import { getSortRank } from '@/lib/data-slim'
 import { cleanCareerOutcome } from '@/lib/format'
 import { specName as getSpecName } from '@/lib/data'
 import type { Program, University } from '@/lib/data'
@@ -75,9 +75,12 @@ interface Props {
   universities: University[]
   allSpecs: string[]
   initialSpec?: string
+  // This programme's governed fee per university (getDisplayFee on the server).
+  // u.feeMin/feeMax and u.emiFrom are MBA-led and printed "From Rs 0" on MA pages.
+  programFees: Record<string, string | null>
 }
 
-export default function ProgramPageClient({ program, programSlug, universities, allSpecs, initialSpec }: Props) {
+export default function ProgramPageClient({ program, programSlug, universities, allSpecs, initialSpec, programFees }: Props) {
   const [enquiryOpen, setEnquiryOpen] = useState(false)
   const [activeSpec, setActiveSpec] = useState<string | null>(initialSpec || null)
   const [sortBy, setSortBy] = useState<'nirf'|'fees'>('nirf')
@@ -328,7 +331,7 @@ export default function ProgramPageClient({ program, programSlug, universities, 
                     </div>
                     <div className="flex items-center gap-1.5">
                       <Star size={14} className="text-amber" />
-                      <span>From {formatFee(u.feeMin)}</span>
+                      <span>{programFees[u.id] ?? 'Fee on request'}</span>
                     </div>
                   </div>
                 </div>
@@ -369,8 +372,8 @@ export default function ProgramPageClient({ program, programSlug, universities, 
               {filtered.slice(0, 15).map(u => (
                 <tr key={u.id} className="border-b border-border-light hover:bg-surface-1 transition-colors">
                   <td className="py-3 font-semibold text-navy">{u.name}</td>
-                  <td className="py-3 text-right font-bold text-amber-text">{u.feeMin === u.feeMax ? formatFee(u.feeMin) : `${formatFee(u.feeMin)}–${formatFee(u.feeMax)}`}</td>
-                  <td className="py-3 text-right text-ink-2">{u.emiFrom > 0 ? `₹${u.emiFrom.toLocaleString()}` : 'On request'}</td>
+                  <td className="py-3 text-right font-bold text-amber-text">{programFees[u.id] ?? 'On request'}</td>
+                  <td className="py-3 text-right text-ink-2">{program === 'MBA' && u.emiFrom > 0 ? `₹${u.emiFrom.toLocaleString()}` : 'On request'}</td>
                   <td className="py-3 text-right text-ink-3">{u.programDetails?.[program]?.specs?.length || '—'}</td>
                 </tr>
               ))}

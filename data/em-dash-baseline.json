@@ -26,7 +26,7 @@
     "app/leads/LeadsClient.tsx": 24,
     "app/page.tsx": 23,
     "app/privacy-policy/page.tsx": 15,
-    "app/programs/[...slug]/page.tsx": 12,
+    "app/programs/[...slug]/page.tsx": 10,
     "app/programs/layout.tsx": 4,
     "app/programs/mba/specializations/[spec]/page.tsx": 2,
     "app/programs/page.tsx": 1,
