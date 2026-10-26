@@ -1,5 +1,21 @@
 # Fix log
 
+## 2026-10-27 · Bucket C: online PhD validity explainer; PhD full-form post corrected
+
+New post /blog/online-phd-in-india (online phd cluster, ~1,000-1,300/month per keyword). Sourced from the
+gazetted texts, not summaries: UGC PhD Regulations 2022 (Gazette 7 Nov 2022) Reg 4, 9(1), 13, 14; UGC
+public notice F.No. 1-34/2024 (DEB-I) para 6; UGC Equivalence Regulations 2025 (Gazette 4 Apr 2025).
+
+Finding worth keeping: web summaries say foreign online degrees cannot get UGC equivalence. That was the
+2023 draft. The final 2025 text has no online exclusion; a Standing Committee assesses each case on credits,
+contact hours, thesis evaluation and hands-on components, and franchised qualifications are excluded
+(Reg 3(4)). The post says "not automatically equivalent", not "banned".
+
+Corrected phd-full-form-doctorate-meaning-india (50,657 impressions): it credited the ban to "UGC's 2020
+guidelines", claimed without source that "several IITs" run part-time PhDs, and said foreign DBAs are
+"not recognized by UGC but recognized by international employers". Replaced with the regulation-cited
+version and a link to the new post.
+
 ## 2026-10-26 · Item 10: online degree scholarships post
 
 New post /blog/online-degree-scholarships-india (keyword gap item 10, "online degree scholarships" 590/month).

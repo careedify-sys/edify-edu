@@ -3,6 +3,13 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'online-phd-in-india': [
+    { label: 'Online PhD (Indian uni)', value: 'Not permitted, UGC Reg 13(3)' },
+    { label: 'Part-time PhD', value: 'Permitted with employer NOC', green: true },
+    { label: 'Minimum duration', value: '3 years incl. coursework' },
+    { label: 'Coursework', value: '12 credits minimum' },
+    { label: 'Foreign online DBA', value: 'Case-by-case equivalence' },
+  ],
   'online-degree-scholarships-india': [
     { label: 'Sources of funding', value: 'University, government, employer' },
     { label: 'Govt waivers', value: 'SC, ST, PwD, deprived (UGC Reg 14(2)(iii))' },

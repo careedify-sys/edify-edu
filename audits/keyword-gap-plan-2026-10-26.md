@@ -107,7 +107,7 @@ The fee-query rows repeat memory `project_fee_query_gap`: review blogs outrank f
 | Online B.Ed | 17,810 | Does NCTE recognise any online-mode B.Ed in 2026, or only ODL (IGNOU-type)? If none, the page is a "not allowed, here is the ODL route" explainer. Confirm before writing |
 | Online LLB / LLM | 7,880 | BCI does not recognise online LLB for enrolment as an advocate. Is an online LLM (UGC) in scope, and do we say so? |
 | Online B.Tech / M.Tech | 6,820 | AICTE online-mode rules for working professionals (2025 framework). Which universities are actually approved? |
-| Online PhD / DBA | 5,920 | UGC PhD Regulations 2022 bar online/distance PhD. Is a "not valid, here is why" page wanted? Foreign online DBA? |
+| Online PhD / DBA | 5,920 | **SHIPPED 27 Oct** as /blog/online-phd-in-india. PhD Regs 2022 Reg 13(3) + DEB notice 11 Nov 2024. Final 2025 Equivalence Regs do NOT carry the draft's online exclusion: foreign online DBA is case by case, franchise excluded (Reg 3(4)). |
 | Online psychology degree | ~2,600 | **ANSWERED 26 Oct:** UGC public notice F.No. 4-1/2025 (DEB-NER), 12 Aug 2025 (592nd meeting): no ODL/Online Psychology, Microbiology, Food & Nutrition Science, Biotechnology, Clinical Nutrition & Dietetics from July-Aug 2025; recognitions withdrawn. See data defect below. |
 | Online PGDM | 1,310 | AICTE status of online PGDM. Is it in scope? |
 
