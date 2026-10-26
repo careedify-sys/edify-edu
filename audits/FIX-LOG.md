@@ -1,5 +1,15 @@
 # Fix log
 
+## 2026-10-27 · University-page comparison table: uncategorised NIRF rank and MBA fees on every programme
+
+components/ComparisonTable.tsx (peer table on every /universities/{id}/{programme} and spec page) printed
+"NIRF Rank #11" from u.nirf, so SRMIST's MBA page showed its University rank with no category instead of
+Management #56. Its "Fees (from)" row read uni.feeMin, which is MBA-led, so BBA/BCA/MCA pages compared MBA fees.
+check-nirf-category missed it because it only matches the NIRF #${expr} template form.
+
+Now: formatNirfBadge short style ("#56 Mgmt", "#57 Univ", Management first for MBA/BBA), and a "{programme}
+fees" row from getDisplayFee. Verified on dev: SRMIST MBA, Amity BBA and Amity MBA tables.
+
 ## 2026-10-27 · Em-dash sweep: spec-page prose, careerOutcome lines, footer and trust bar
 
 House style bans em dashes. A rescan of the 200 non-MBA spec pages found one in the body of 99 of them, from
