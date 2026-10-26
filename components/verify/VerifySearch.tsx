@@ -91,7 +91,7 @@ export function VerifySearch({ universities, compact = false }: { universities: 
               setQuery(e.target.value);
               if (e.target.value.length >= 2) track.search(e.target.value);
             }}
-            placeholder="Search any university — try Manipal, Symbiosis, Delhi"
+            placeholder="Search any university: try Manipal, Symbiosis, Delhi"
             autoFocus
             style={{
               width: '100%', padding: '16px 18px 16px 48px', boxSizing: 'border-box',
@@ -147,7 +147,7 @@ export function VerifySearch({ universities, compact = false }: { universities: 
             ))}
             {filtered.length > 6 && (
               <div style={{ fontSize: 12, color: brand.goldMid, textAlign: 'center', padding: '6px 0', fontWeight: 500 }}>
-                + {filtered.length - 6} more — scroll down to browse all
+                + {filtered.length - 6} more: scroll down to browse all
               </div>
             )}
           </div>

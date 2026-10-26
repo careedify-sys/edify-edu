@@ -74,7 +74,7 @@ export default function HomePage() {
           {
             '@type':'Question',
             name:'Are online degrees valid for government jobs?',
-            acceptedAnswer:{'@type':'Answer',text:'Yes — all UGC DEB approved degrees are valid for government recruitment. Every university on edifyedu.in is verified UGC DEB approved. The Ministry of Education confirmed parity of online and regular degrees in 2020.'}
+            acceptedAnswer:{'@type':'Answer',text:'Yes, all UGC DEB approved degrees are valid for government recruitment. Every university on edifyedu.in is verified UGC DEB approved. The Ministry of Education confirmed parity of online and regular degrees in 2020.'}
           },
           {
             '@type':'Question',
@@ -84,16 +84,16 @@ export default function HomePage() {
           {
             '@type':'Question',
             name:'Is an online MBA worth it for working professionals?',
-            acceptedAnswer:{'@type':'Answer',text:'Yes — especially from NIRF top-50 universities. Most professionals see a 30-50% salary jump within 2 years of completing an online MBA. Budget ₹1.5L–₹4L total. Pick NAAC A+ or A++ universities with placement support for best ROI.'}
+            acceptedAnswer:{'@type':'Answer',text:'Yes, especially from NIRF top-50 universities. Most professionals see a 30-50% salary jump within 2 years of completing an online MBA. Budget ₹1.5L–₹4L total. Pick NAAC A+ or A++ universities with placement support for best ROI.'}
           },
           {
             '@type':'Question',
             name:'What is the difference between NIRF Overall and NIRF Management rank?',
-            acceptedAnswer:{'@type':'Answer',text:'NIRF Overall ranks universities across all disciplines. NIRF Management specifically ranks MBA and BBA programs. A university can rank #50 overall but #8 in management — meaning its business school is far stronger than the overall rank suggests. For MBA decisions, always check the NIRF Management rank.'}
+            acceptedAnswer:{'@type':'Answer',text:'NIRF Overall ranks universities across all disciplines. NIRF Management specifically ranks MBA and BBA programs. A university can rank #50 overall but #8 in management, meaning its business school is far stronger than the overall rank suggests. For MBA decisions, always check the NIRF Management rank.'}
           },
           {
             '@type':'Question',
-            name:'Which is better — Finance MBA or Marketing MBA?',
+            name:'Which is better: Finance MBA or Marketing MBA?',
             acceptedAnswer:{'@type':'Answer',text:'Finance MBA is stronger for BFSI sector careers with a higher salary ceiling of ₹8L–₹25L, and suits analytical profiles. Marketing MBA is stronger for FMCG, D2C, and tech roles with salaries of ₹7L–₹20L, and suits communication-oriented profiles. The right choice depends on your career target industry.'}
           },
         ]
@@ -193,7 +193,7 @@ export default function HomePage() {
               <span className="font-extrabold text-[16px] tracking-wide" style={{ color:'var(--amber-bright)' }}>edifyedu.in</span>
             </div>
             <div className="relative z-10">
-            {['Sorted by NIRF rank only — zero paid placement','Exact fees from official university brochures','Explain NAAC/NIRF/UGC DEB in plain language','One advisor — you will never be spammed','Govt job validity verified for every degree'].map(item => (
+            {['Sorted by NIRF rank only: zero paid placement','Exact fees from official university brochures','Explain NAAC/NIRF/UGC DEB in plain language','One advisor: you will never be spammed','Govt job validity verified for every degree'].map(item => (
               <div key={item} className="flex items-start gap-3 mb-5">
                 <CheckCircle style={{ width:'16px', height:'16px', color:'var(--sage-bright)', flexShrink:0, marginTop:'2px' }} />
                 <span className="text-[13.5px] font-medium leading-relaxed" style={{ color:'rgba(255,255,255,0.7)' }}>{item}</span>
@@ -251,7 +251,7 @@ export default function HomePage() {
               Most online MBA guides are ads.<br />We built the one that isn't.
             </h2>
             <p style={{ fontSize: '16px', color: 'var(--ink-2)', lineHeight: 1.8, maxWidth: '600px' }}>
-              The university that pays more gets the "Best MBA" badge everywhere else. We got tired of it — so every ranking on edifyedu.in comes from <strong style={{ color: 'var(--navy)' }}>official NIRF data</strong>, not who paid us. That's literally how the code works.
+              The university that pays more gets the "Best MBA" badge everywhere else. We got tired of it, so every ranking on edifyedu.in comes from <strong style={{ color: 'var(--navy)' }}>official NIRF data</strong>, not who paid us. That's literally how the code works.
             </p>
           </div>
 
@@ -261,21 +261,21 @@ export default function HomePage() {
               {
                 icon: <Shield size={20} />,
                 label: 'DEB approval first, always',
-                body: 'The Distance Education Bureau is the only body that can authorise an online degree in India. Without it, your degree may not count for jobs, govt exams, or PhD admission. We verify every university before listing — you can always double-check at ugc.ac.in.',
+                body: 'The Distance Education Bureau is the only body that can authorise an online degree in India. Without it, your degree may not count for jobs, govt exams, or PhD admission. We verify every university before listing, you can always double-check at ugc.ac.in.',
               },
               {
                 icon: <Award size={20} />,
                 label: 'Government rankings, not ours',
-                body: 'We sort by NIRF rank — published by the Ministry of Education, not sold to us. If Amity is #62 overall but #24 in management, you see both numbers. That gap matters more than most people realise for an MBA decision.',
+                body: 'We sort by NIRF rank: published by the Ministry of Education, not sold to us. If Amity is #62 overall but #24 in management, you see both numbers. That gap matters more than most people realise for an MBA decision.',
               },
               {
                 icon: <CheckCircle size={20} />,
                 label: 'Total fee. No hidden line items.',
-                body: 'Other portals show the semester fee and bury exam fees and study material costs in the fine print. Every number on edifyedu.in is total programme cost — what you pay from day one to graduation day. Online MBAs run ₹60,000 to ₹3,00,000. You\'ll know exactly where each option lands.',
+                body: 'Other portals show the semester fee and bury exam fees and study material costs in the fine print. Every number on edifyedu.in is total programme cost, what you pay from day one to graduation day. Online MBAs run ₹60,000 to ₹3,00,000. You\'ll know exactly where each option lands.',
               },
               {
                 icon: <BookOpen size={20} />,
-                label: 'Online degrees and govt jobs — the real answer',
+                label: 'Online degrees and govt jobs: the real answer',
                 body: 'Per the 2020 UGC notification, an online degree from a DEB-approved university is legally equivalent to a campus degree. Valid for UPSC, SSC, banking, and state recruitment. One catch: the university must have been DEB-approved during your study period. We flag this clearly on each page.',
               },
             ].map((item, i) => (
@@ -293,7 +293,7 @@ export default function HomePage() {
           <div style={{ padding: '22px 28px', background: 'var(--navy)', borderRadius: '14px', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
             <div style={{ fontSize: '22px', flexShrink: 0, marginTop: '2px' }}>🤝</div>
             <p style={{ fontSize: '14.5px', color: 'rgba(255,255,255,0.85)', lineHeight: 1.8, margin: 0 }}>
-              <strong style={{ color: '#fff' }}>Our promise:</strong> We don't take money to rank universities. We don't spam your phone. If you ask an advisor to compare two options, they'll tell you honestly — even if that means recommending the cheaper one.
+              <strong style={{ color: '#fff' }}>Our promise:</strong> We don't take money to rank universities. We don't spam your phone. If you ask an advisor to compare two options, they'll tell you honestly: even if that means recommending the cheaper one.
             </p>
           </div>
 
@@ -592,11 +592,11 @@ export default function HomePage() {
             </h2>
           </div>
           {[
-            { q:'Are online degrees valid for government jobs?', a:'Yes — all UGC DEB approved degrees are valid for government recruitment. Every university on edifyedu.in is verified UGC DEB approved. The Ministry of Education confirmed parity in 2020.' },
-            { q:'NIRF Overall vs NIRF Management rank — what is the difference?', a:'NIRF Overall ranks across all disciplines. NIRF Management specifically ranks MBA/BBA programs. A university can rank #50 overall but #8 in management — meaning its business school is far stronger than the overall rank suggests.' },
-            { q:'Is an online MBA worth it for working professionals?', a:'Yes — especially from NIRF top-50 universities. Most professionals see 30–50% salary jump within 2 years. Budget ₹1.5L–₹4L total. Pick NAAC A+ or A++ with placement support for best ROI.' },
-            { q:'What is UGC DEB approval and why does it matter?', a:'UGC DEB (Distance Education Bureau) licenses universities to offer online degrees. Only UGC DEB approved degrees are accepted for government jobs, corporate hiring, and further studies. Never join without verifying this — check ugc.ac.in.' },
-            { q:'Finance MBA vs Marketing MBA — which is better?', a:'Finance: stronger for BFSI sector, higher salary ceiling (₹8L–₹25L), suits analytical profiles. Marketing: stronger for FMCG/D2C/tech (₹7L–₹20L), suits communicators. Check job roles on each university page for exact company names.' },
+            { q:'Are online degrees valid for government jobs?', a:'Yes, all UGC DEB approved degrees are valid for government recruitment. Every university on edifyedu.in is verified UGC DEB approved. The Ministry of Education confirmed parity in 2020.' },
+            { q:'NIRF Overall vs NIRF Management rank, what is the difference?', a:'NIRF Overall ranks across all disciplines. NIRF Management specifically ranks MBA/BBA programs. A university can rank #50 overall but #8 in management, meaning its business school is far stronger than the overall rank suggests.' },
+            { q:'Is an online MBA worth it for working professionals?', a:'Yes, especially from NIRF top-50 universities. Most professionals see 30–50% salary jump within 2 years. Budget ₹1.5L–₹4L total. Pick NAAC A+ or A++ with placement support for best ROI.' },
+            { q:'What is UGC DEB approval and why does it matter?', a:'UGC DEB (Distance Education Bureau) licenses universities to offer online degrees. Only UGC DEB approved degrees are accepted for government jobs, corporate hiring, and further studies. Never join without verifying this, check ugc.ac.in.' },
+            { q:'Finance MBA vs Marketing MBA: which is better?', a:'Finance: stronger for BFSI sector, higher salary ceiling (₹8L–₹25L), suits analytical profiles. Marketing: stronger for FMCG/D2C/tech (₹7L–₹20L), suits communicators. Check job roles on each university page for exact company names.' },
           ].map((faq, i) => (
             <details key={i} style={{ marginBottom:'10px', borderRadius:'var(--r-sm)', overflow:'hidden', background:'var(--surface)', border:'1px solid var(--border)' }}>
               <summary style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'16px 20px', cursor:'pointer', fontWeight:'600', fontSize:'14px', color:'var(--navy)', listStyle:'none' }}>

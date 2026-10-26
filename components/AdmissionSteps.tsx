@@ -2,7 +2,7 @@ import { MessageSquare, FileCheck, CreditCard, BookOpen } from 'lucide-react'
 
 const STEPS = [
   { icon: MessageSquare, label: 'Enquire', desc: 'Fill the counsellor form or call us', color: '#3b82f6' },
-  { icon: FileCheck, label: 'Verify Docs', desc: 'Marksheets, ID proof — 2 minutes online', color: '#8b5cf6' },
+  { icon: FileCheck, label: 'Verify Docs', desc: 'Marksheets, ID proof, 2 minutes online', color: '#8b5cf6' },
   { icon: CreditCard, label: 'Pay Fees', desc: 'Semester-wise, EMI or one-shot payment', color: '#f59e0b' },
   { icon: BookOpen, label: 'Attend Class', desc: 'LMS access, live sessions start within 7 days', color: '#10b981' },
 ]

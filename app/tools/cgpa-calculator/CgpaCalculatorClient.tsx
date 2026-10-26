@@ -454,7 +454,7 @@ export default function CgpaCalculatorClient() {
             </p>
 
             <h3 className="font-display text-lg font-bold text-navy mt-6 mb-2">
-              CGPA vs SGPA — What is the Difference?
+              CGPA vs SGPA: What is the Difference?
             </h3>
             <p>
               <strong>SGPA (Semester Grade Point Average)</strong> measures your performance in a single semester,
@@ -464,16 +464,16 @@ export default function CgpaCalculatorClient() {
             <div className="grid sm:grid-cols-2 gap-4 my-4">
               <div className="bg-amber/5 border border-amber/20 rounded-xl p-4">
                 <p className="font-bold text-navy text-sm mb-1">SGPA</p>
-                <p className="text-xs text-ink-3">Semester Grade Point Average — GPA for one semester only</p>
+                <p className="text-xs text-ink-3">Semester Grade Point Average: GPA for one semester only</p>
               </div>
               <div className="bg-sage/5 border border-sage/20 rounded-xl p-4">
                 <p className="font-bold text-navy text-sm mb-1">CGPA</p>
-                <p className="text-xs text-ink-3">Cumulative Grade Point Average — overall average of all semesters</p>
+                <p className="text-xs text-ink-3">Cumulative Grade Point Average: overall average of all semesters</p>
               </div>
             </div>
 
             <h3 className="font-display text-lg font-bold text-navy mt-6 mb-2">
-              How to Convert CGPA to Percentage — The Formula
+              How to Convert CGPA to Percentage, The Formula
             </h3>
             <p>
               The University Grants Commission (UGC) of India has prescribed a standard conversion formula for

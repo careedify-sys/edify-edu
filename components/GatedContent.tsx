@@ -13,9 +13,9 @@ interface GatedContentProps {
 }
 
 const DEFAULT_HINTS = [
-  '🎓 Merit scholarship — up to 25% fee waiver for eligible profiles',
-  '🏦 No-cost EMI — 12 to 24 month plans via partner banks',
-  '💼 Alumni referral discount — ₹8,000 off on verified referral',
+  '🎓 Merit scholarship: up to 25% fee waiver for eligible profiles',
+  '🏦 No-cost EMI: 12 to 24 month plans via partner banks',
+  '💼 Alumni referral discount: ₹8,000 off on verified referral',
 ]
 
 function formatFeeLocal(n?: number) {
@@ -125,7 +125,7 @@ export default function GatedContent({
                     Check your scholarship eligibility
                   </div>
                   <div className="text-[11px] text-ink-3 leading-snug">
-                    An advisor will share all available discounts for {uniShort} {programName} — takes 2 minutes.
+                    An advisor will share all available discounts for {uniShort} {programName}: takes 2 minutes.
                   </div>
                 </div>
               </div>
@@ -172,7 +172,7 @@ export default function GatedContent({
               )}
 
               <div style={{ textAlign: 'center', marginTop: 8, fontSize: 10, color: 'var(--ink-4)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}>
-                <Shield size={10}/> Your details are shared only with your advisor — never sold
+                <Shield size={10}/> Your details are shared only with your advisor, never sold
               </div>
             </div>
           </div>

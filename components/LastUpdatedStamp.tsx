@@ -17,7 +17,7 @@ export default function LastUpdatedStamp({ program, universityId }: Props) {
         <RefreshCw size={14} className="text-slate-400 shrink-0" />
         <span>
           Page data last verified: <strong className="text-slate-700">{month} {year}</strong>.
-          Fees and intake dates may change — confirm at the official university portal before applying.
+          Fees and intake dates may change, confirm at the official university portal before applying.
         </span>
       </div>
       <Link

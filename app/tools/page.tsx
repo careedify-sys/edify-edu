@@ -32,7 +32,7 @@ function EMICalc() {
         </label>
       </div>
       <label className="flex flex-col gap-[5px]">
-        <span className="text-[11px] font-bold text-ink-3 uppercase">Interest Rate — {rate===0?'No-cost EMI':rate+'% p.a.'}</span>
+        <span className="text-[11px] font-bold text-ink-3 uppercase">Interest Rate: {rate===0?'No-cost EMI':rate+'% p.a.'}</span>
         <input type="range" min={0} max={18} step={0.5} value={rate} onChange={e=>setRate(+e.target.value)} className="accent-amber"/>
       </label>
       <div className="grid grid-cols-3 gap-2">
@@ -108,7 +108,7 @@ function SalaryCalc() {
         </label>
       </div>
       <label className="flex flex-col gap-[5px]">
-        <span className="text-[11px] font-bold text-ink-3 uppercase">Current Salary — ₹{(salary/100000).toFixed(1)}L/yr</span>
+        <span className="text-[11px] font-bold text-ink-3 uppercase">Current Salary: ₹{(salary/100000).toFixed(1)}L/yr</span>
         <input type="range" min={200000} max={3000000} step={25000} value={salary} onChange={e=>setSalary(+e.target.value)} className="accent-amber"/>
       </label>
       <div className="grid grid-cols-2 gap-2.5">
@@ -223,7 +223,7 @@ function PercentCalc() {
   const MODES = [
     {id:'pct_of',l:'% of a number',q:`What is ${a||'X'}% of ${b||'Y'}?`},
     {id:'what_pct',l:'X is what % of Y',q:`${a||'X'} is what % of ${b||'Y'}?`},
-    {id:'pct_change',l:'% change',q:`From ${a||'X'} to ${b||'Y'} — what % change?`},
+    {id:'pct_change',l:'% change',q:`From ${a||'X'} to ${b||'Y'}: what % change?`},
   ]
 
   return (
@@ -447,7 +447,7 @@ export default function ToolsPage() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
             <div className="text-[11px] font-bold text-amber uppercase tracking-widest mb-2">Free Tools</div>
             <h1 style={{fontSize:'clamp(1.4rem,3vw,1.9rem)',fontWeight:800,color:'var(--ink)',margin:'0 0 8px',lineHeight:1.2}}>Daily Calculators & Converters</h1>
-            <p className="body-sm m-0">8 free tools — EMI, ROI, salary, unit converter, percentage, age, GPA & CGPA calculator.</p>
+            <p className="body-sm m-0">8 free tools: EMI, ROI, salary, unit converter, percentage, age, GPA & CGPA calculator.</p>
           </div>
         </div>
 
@@ -479,7 +479,7 @@ export default function ToolsPage() {
           <div style={{marginTop:24,padding:'20px 24px',background:'linear-gradient(135deg,#0B1D35,#142540)',borderRadius:'var(--r-md)',display:'flex',alignItems:'center',justifyContent:'space-between',gap:16,flexWrap:'wrap'}}>
             <div>
               <div className="text-sm font-bold text-white mb-1">Need help choosing the right university?</div>
-              <div className="text-xs text-slate-400">Free guidance — Edify evaluates 3–4 stages before recommending. Zero paid rankings.</div>
+              <div className="text-xs text-slate-400">Free guidance: Edify evaluates 3–4 stages before recommending. Zero paid rankings.</div>
             </div>
             <Link href="/universities" style={{padding:'11px 20px',borderRadius:'var(--r-sm)',background:'linear-gradient(135deg,#c9922a,#e0a93a)',color:'#fff',fontWeight:700,fontSize:13,textDecoration:'none',whiteSpace:'nowrap'}}>
               Browse Universities →

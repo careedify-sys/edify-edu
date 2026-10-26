@@ -77,7 +77,7 @@ async function getSupabase() {
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
   const supabase = await getSupabase();
-  if (!supabase) return { title: `Verify ${slug} — edifyedu.in` };
+  if (!supabase) return { title: `Verify ${slug}: edifyedu.in` };
 
   const brandSlug = BRAND_SLUGS[slug];
 
@@ -86,17 +86,17 @@ export async function generateMetadata({ params }: PageProps) {
   if (brandSlug) {
     return {
       title: { absolute: `Is Amity Online MBA / MCA UGC-DEB Approved? Verification ${year} | EdifyEdu` },
-      description: `Independent verification of Amity online programmes ${year}. Different programmes are approved through Amity University Uttar Pradesh (Noida) and Amity University Rajasthan (Jaipur) — see exactly which entity issues each online degree.`,
+      description: `Independent verification of Amity online programmes ${year}. Different programmes are approved through Amity University Uttar Pradesh (Noida) and Amity University Rajasthan (Jaipur), see exactly which entity issues each online degree.`,
       alternates: { canonical: `https://edifyedu.in/verify/${slug}` },
       openGraph: {
-        title: `Amity Online Programmes — UGC-DEB Verification ${year}`,
+        title: `Amity Online Programmes: UGC-DEB Verification ${year}`,
         description: 'See which Amity entity (Noida or Jaipur) approves each online programme.',
         url: `https://edifyedu.in/verify/${slug}`,
         type: 'article',
       },
       twitter: {
         card: 'summary_large_image',
-        title: `Amity Online Programmes — UGC-DEB Verification ${year}`,
+        title: `Amity Online Programmes: UGC-DEB Verification ${year}`,
         description: 'See which Amity entity (Noida or Jaipur) approves each online programme.',
       },
     };

@@ -1010,7 +1010,7 @@ export default async function CatchAllProgramPage(
             {/* Section H2 — visible to crawlers even when no spec is active */}
             {!activeSpec && (
               <h2 className="text-xl font-bold text-navy mt-8 mb-2">
-                Best Online {program} Colleges in India 2026 — UGC DEB Approved
+                Best Online {program} Colleges in India 2026: UGC DEB Approved
               </h2>
             )}
 

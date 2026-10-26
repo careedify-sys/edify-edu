@@ -16,7 +16,7 @@ export default function ProgramsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
           <div className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">Programs</div>
           <h1 className="font-display text-3xl md:text-4xl font-bold text-slate-900 mb-2">Online Degree Programs</h1>
-          <p className="text-slate-500 text-sm max-w-lg">Every UGC approved online program explained — who it's for, which universities offer it, and what it actually costs.</p>
+          <p className="text-slate-500 text-sm max-w-lg">Every UGC approved online program explained, who it's for, which universities offer it, and what it actually costs.</p>
         </div>
       </div>
 

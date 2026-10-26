@@ -6,7 +6,7 @@ import { GUIDES } from '@/lib/guides'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Guides & Honest Answers — Online Degree Questions Answered | EdifyEdu',
+  title: 'Guides & Honest Answers: Online Degree Questions Answered | EdifyEdu',
   description: 'No fluff. Straight answers to every question students ask before enrolling in an online degree in India. UGC DEB approval, NIRF rankings, MBA eligibility, and more.',
   alternates: { canonical: 'https://edifyedu.in/guides' },
 }

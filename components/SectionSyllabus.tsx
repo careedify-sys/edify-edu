@@ -52,7 +52,7 @@ export default function SectionSyllabus({ syllabus, program, universityName, spe
     <section className="rounded-xl border border-slate-200 bg-white p-6">
       <div className="flex items-center gap-2 mb-1">
         <BookOpen size={16} className="text-slate-400" />
-        <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>Syllabus — Semester-wise</h2>
+        <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>Syllabus: Semester-wise</h2>
       </div>
       <p className="text-sm text-slate-500 mb-4">
         {universityName} Online {program} curriculum. Subject names may vary slightly by intake year.

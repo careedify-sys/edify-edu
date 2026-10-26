@@ -175,7 +175,7 @@ const PROG_KW: Record<string, string> = {
 function getSeoName(id: string, fullName: string): string {
   if (SEO_NAME[id]) return SEO_NAME[id]
   // Fallback: strip suffixes from full name
-  let n = fullName.split(/\s*[–—]\s*/)[0].trim()
+  let n = fullName.split(/\s*[–, ]\s*/)[0].trim()
   n = n.replace(/\s*\([^)]+\)\s*$/, '').trim()
   n = n.replace(/\s+Online\s*$/i, '').trim()
   if (n.length > 40) n = n.split(' ').slice(0, 4).join(' ')

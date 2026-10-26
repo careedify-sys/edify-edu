@@ -10,8 +10,8 @@ export default function LearningExperience({ program, universityName, specializa
   const isMBA = program && program.toLowerCase() === 'mba'
   const progLabel = program ? `Online ${program}` : 'Online Degree'
   const h2 = universityName
-    ? `How ${universityName} Delivers ${progLabel} — Classes & Schedule`
-    : `Online ${progLabel} Learning Format — Classes & Schedule`
+    ? `How ${universityName} Delivers ${progLabel}: Classes & Schedule`
+    : `Online ${progLabel} Learning Format: Classes & Schedule`
 
   return (
     <section className="card-lg p-6">

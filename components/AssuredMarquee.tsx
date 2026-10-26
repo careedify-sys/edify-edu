@@ -17,7 +17,7 @@ export default function AssuredMarquee() {
     <div
       style={{ background: '#0B1533', overflow: 'hidden', position: 'relative' }}
       className="h-8 sm:h-9"
-      aria-label="EdifyEdu Assured — our commitments to you"
+      aria-label="EdifyEdu Assured: our commitments to you"
     >
       <style>{`
         @keyframes edify-marquee {

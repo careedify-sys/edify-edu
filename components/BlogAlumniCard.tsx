@@ -45,7 +45,7 @@ export default function BlogAlumniCard({ postTitle }: Props) {
           Talk to an Alumnus
         </div>
         <p style={{ color: '#94a3b8', fontSize: 12, lineHeight: 1.6, margin: '0 0 14px' }}>
-          Real graduates share their honest experience — fees, workload, placements, and whether it was worth it.
+          Real graduates share their honest experience, fees, workload, placements, and whether it was worth it.
         </p>
 
         {/* CTA */}

@@ -448,7 +448,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
 
               {/* CTA before FAQ */}
               <InlineCTA
-                text="Still have questions? Ask our counsellor — free call, no commission."
+                text="Still have questions? Ask our counsellor, free call, no commission."
                 linkText="Ask a counsellor"
                 href="/contact"
                 variant="primary"

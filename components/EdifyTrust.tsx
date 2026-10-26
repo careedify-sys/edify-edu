@@ -8,7 +8,7 @@ const STAGES = [
     num: '01',
     icon: '🎯',
     title: 'Career Goal Mapping',
-    desc: 'We start by understanding where you want to go — sector, role, and 5-year target. This determines which program type and specialisation actually matters for you.',
+    desc: 'We start by understanding where you want to go, sector, role, and 5-year target. This determines which program type and specialisation actually matters for you.',
   },
   {
     num: '02',
@@ -26,7 +26,7 @@ const STAGES = [
     num: '04',
     icon: '🏆',
     title: 'University Shortlist',
-    desc: 'Only after stages 1–3 do we recommend. Your list is sorted by NIRF rank. Zero paid placements — if a university pays, they don\'t appear on Edify.',
+    desc: 'Only after stages 1–3 do we recommend. Your list is sorted by NIRF rank. Zero paid placements, if a university pays, they don\'t appear on Edify.',
   },
 ]
 
@@ -78,7 +78,7 @@ export default function EdifyTrust({ compact = false }: { compact?: boolean }) {
               We Evaluate 3–4 Stages Before Recommending Any University
             </h2>
             <p style={{fontSize:14,color:'rgba(255,255,255,0.75)',maxWidth:540,margin:'0 auto',lineHeight:1.6}}>
-              Most platforms list whoever pays them. Edify is different — our rankings are 100% NIRF-based with zero paid placements.
+              Most platforms list whoever pays them. Edify is different, our rankings are 100% NIRF-based with zero paid placements.
             </p>
           </div>
 

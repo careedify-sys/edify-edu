@@ -710,7 +710,7 @@ export default async function BlogPostPage({ params }: Props) {
             </h2>
             <p className="mb-8 max-w-2xl mx-auto text-base" style={{ color: '#3B5068' }}>
               Every guide on Edify is built from real student data and expert insights.
-              Stop guessing — start building your future today.
+              Stop guessing: start building your future today.
             </p>
             <Link
               href="/universities"

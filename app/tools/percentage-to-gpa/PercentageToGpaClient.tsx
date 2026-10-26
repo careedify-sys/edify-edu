@@ -44,11 +44,11 @@ const TABLE_ROWS = Array.from({ length: 61 }, (_, i) => {
 const FAQS = [
   {
     q: 'How to convert percentage to GPA in India?',
-    a: 'For the Indian 10-point CGPA scale: divide your percentage by 9.5. So 76% ÷ 9.5 = 8.0 CGPA. For the US 4.0 scale, use the grade band table above — 80–89% typically maps to 3.0–3.7 GPA.',
+    a: 'For the Indian 10-point CGPA scale: divide your percentage by 9.5. So 76% ÷ 9.5 = 8.0 CGPA. For the US 4.0 scale, use the grade band table above, 80–89% typically maps to 3.0–3.7 GPA.',
   },
   {
     q: 'What is 75% in GPA?',
-    a: '75% converts to 7.89 CGPA on the Indian 10-point scale (75 ÷ 9.5 = 7.89). On the US 4.0 scale, 75% falls in the B+ range — approximately 2.7 GPA.',
+    a: '75% converts to 7.89 CGPA on the Indian 10-point scale (75 ÷ 9.5 = 7.89). On the US 4.0 scale, 75% falls in the B+ range, approximately 2.7 GPA.',
   },
   {
     q: 'What is 60% in GPA?',
@@ -60,7 +60,7 @@ const FAQS = [
   },
   {
     q: 'Is the percentage to GPA conversion the same for all Indian universities?',
-    a: 'The 10-point CGPA formula (divide by 9.5) is recommended by UGC and used by most Indian universities. However, some universities use their own grading scales — always check your university\'s official conversion policy when applying abroad.',
+    a: 'The 10-point CGPA formula (divide by 9.5) is recommended by UGC and used by most Indian universities. However, some universities use their own grading scales, always check your university\'s official conversion policy when applying abroad.',
   },
 ]
 
@@ -194,7 +194,7 @@ export default function PercentageToGpaClient() {
             Two Scales Explained
           </h2>
           <p className="text-xs mb-4" style={{ color: '#64748b' }}>
-            India uses a 10-point CGPA scale. The US and most international universities use a 4.0 scale. Both are valid — different contexts use different systems.
+            India uses a 10-point CGPA scale. The US and most international universities use a 4.0 scale. Both are valid, different contexts use different systems.
           </p>
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="p-4 rounded-xl" style={{ background: '#f0fdf4', border: '1px solid #bbf7d0' }}>

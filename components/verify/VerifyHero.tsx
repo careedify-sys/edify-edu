@@ -185,7 +185,7 @@ export function VerifyHero({ university, accreditations = [] }: Props) {
         }}
       >
         {isApproved
-          ? `Yes — ${university.name} is approved to offer online degrees in India under UGC-DEB regulations.`
+          ? `Yes, ${university.name} is approved to offer online degrees in India under UGC-DEB regulations.`
           : `${university.name} is not currently approved to offer online degrees under UGC-DEB.`}
       </p>
 
