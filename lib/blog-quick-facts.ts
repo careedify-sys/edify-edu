@@ -3,6 +3,23 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'ugc-biannual-admissions-january-july-intake': [
+    { label: 'Windows', value: 'Jan/Feb and Jul/Aug' },
+    { label: 'Regular degrees', value: 'Optional (UG/PG Regs 2025)' },
+    { label: 'Online degrees', value: 'Two sessions since 2020', green: true },
+    { label: 'Who decides', value: 'Each university' },
+    { label: 'Aug 2026 last date', value: '13 Oct 2026' },
+    { label: 'Last verified', value: '26 Oct 2026', green: true },
+  ],
+  'ugc-two-degrees-simultaneously-rules': [
+    { label: 'Two degrees at once', value: 'Allowed', green: true },
+    { label: 'Regular + online', value: 'Allowed', green: true },
+    { label: 'Two online', value: 'Allowed', green: true },
+    { label: 'Ph.D.', value: 'Excluded' },
+    { label: 'Guidelines issued', value: 'April 2022' },
+    { label: 'Modified', value: 'June 2025' },
+    { label: 'Last verified', value: '26 Oct 2026', green: true },
+  ],
   'ugc-deb-id-explained': [
     { label: 'Mandatory since', value: 'Oct 2024 session' },
     { label: 'Who needs it', value: 'Every ODL / Online learner' },

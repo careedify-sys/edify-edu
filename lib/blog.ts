@@ -48929,6 +48929,281 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <p class="disclaimer"><em>Last verified against the UGC-DEB portal on 26 October 2026. Portal steps, helpline numbers and admission deadlines change. Confirm on deb.ugc.ac.in before acting.</em></p>
     `,
   },
+  {
+    slug: 'ugc-two-degrees-simultaneously-rules',
+    title: 'Can You Do Two Degrees at Once? UGC Rules 2026',
+    seoTitle: 'Can You Do Two Degrees at Once? UGC Rules 2026',
+    h1Title: 'Two Degrees at the Same Time: What UGC Allows, Including Online Degrees',
+    metaDescription: 'UGC allows two degrees at once: two regular, one regular plus one online, or two online. What the 2022 guidelines and the 2025 change say, and what to check first.',
+    category: 'Online Degree Validity',
+    tags: ['Dual Degree', 'Two Degrees Simultaneously', 'UGC Guidelines', 'Online Degree', 'UGC-DEB', 'Student Guidance'],
+    publishedAt: '2026-10-26',
+    readTime: 7,
+    targetKeyword: 'ugc allows two degrees simultaneously',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/30858451/pexels-photo-30858451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@shootsaga" target="_blank" rel="noopener nofollow">Anil  Sharma</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling young girl with headset on a video call, studying online at home.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'Does UGC allow two degrees at the same time?', a: 'Yes. Under the UGC Guidelines for Pursuing Two Academic Programmes Simultaneously (April 2022, modified in 2025), a student can pursue two programmes at once: two full-time physical programmes with non-overlapping class timings, one physical plus one ODL or online programme, or up to two ODL or online programmes.' },
+      { q: 'Can I do a regular degree and an online degree together?', a: 'Yes. The guidelines allow one full-time programme in physical mode alongside one programme in Open and Distance Learning or Online mode. The online programme must come from a university recognised by UGC to run it.' },
+      { q: 'Can I do two online degrees at the same time?', a: 'Yes. The guidelines allow up to two ODL or Online programmes simultaneously, provided both universities are recognised and entitled for those programmes.' },
+      { q: 'Can I do a PhD alongside another degree under these rules?', a: 'No. UGC states that the guidelines apply only to programmes other than Ph.D.' },
+      { q: 'Are two degrees done together before 2022 valid?', a: 'Following the 2025 modification, yes, if they were pursued in line with the UGC First Degree and Master Degree Regulations, the universities\' own statutes, and the norms of the relevant councils and the Distance Education Bureau. The original 2022 text had denied retrospective benefit.' },
+      { q: 'Does my university have to allow two programmes?', a: 'UGC asks universities to implement the guidelines, and each university sets up its own mechanism through its statutory bodies. Ask both universities in writing whether they permit concurrent enrolment and how they handle exam clashes.' },
+      { q: 'Do I need two DEB IDs for two online programmes?', a: 'No. UGC states that a DEB ID, once generated, stays valid for lifelong ODL and Online learning, so the same ID applies to both enrolments.' },
+    ],
+    ctaTitle: 'Planning an online degree next to your current one?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">Yes, you can study for two degrees at once in India. UGC has allowed it since April 2022, and that includes pairing a regular degree with an online one.</p>
+
+<p><strong>Short answer:</strong> UGC allows a student to pursue <strong>two academic programmes at the same time</strong>. The UGC Guidelines for Pursuing Two Academic Programmes Simultaneously, issued in April 2022 and modified in June 2025, permit three combinations: <strong>two full-time physical programmes</strong> whose class timings do not overlap, <strong>one physical programme plus one ODL or online programme</strong>, or <strong>up to two ODL or online programmes</strong>. The rule does not apply to Ph.D.</p>
+
+<div class="callout-key">
+<strong>The rule in one box (last verified 26 October 2026)</strong>
+<ul>
+<li><strong>Source:</strong> UGC Guidelines for Pursuing Two Academic Programmes Simultaneously, April 2022, modified after the Commission's 589th meeting on 3 April 2025</li>
+<li><strong>Two physical programmes:</strong> allowed if class timings do not overlap</li>
+<li><strong>One physical plus one online or ODL:</strong> allowed</li>
+<li><strong>Two online or ODL:</strong> allowed</li>
+<li><strong>Ph.D.:</strong> excluded</li>
+<li><strong>Online or ODL programme must be:</strong> from a university recognised to run it</li>
+</ul>
+</div>
+
+<h2>Which combinations does UGC allow?</h2>
+
+<table>
+<thead><tr><th>Combination</th><th>Allowed?</th><th>Condition</th></tr></thead>
+<tbody>
+<tr><td>Two full-time programmes, both on campus</td><td>Yes</td><td>Class timings must not overlap</td></tr>
+<tr><td>One on campus, one online</td><td>Yes</td><td>Online programme from a UGC-recognised, entitled university</td></tr>
+<tr><td>One on campus, one distance (ODL)</td><td>Yes</td><td>ODL programme from a UGC-recognised, entitled university</td></tr>
+<tr><td>Two online or ODL programmes</td><td>Yes</td><td>Both recognised and entitled</td></tr>
+<tr><td>A Ph.D. with any other programme</td><td>Not covered</td><td>The guidelines exclude Ph.D.</td></tr>
+<tr><td>Any programme UGC prohibits online, such as engineering or law</td><td>No</td><td>Prohibited in ODL and Online mode regardless</td></tr>
+</tbody>
+</table>
+
+<p>The guidelines also say both programmes stay governed by UGC regulations and by any statutory or professional council that oversees the subject. So the two-degree rule never makes a programme valid that would otherwise be invalid. It only removes the bar on doing two valid ones together.</p>
+
+<h2>Can you do a regular degree and an online degree together?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>Yes. This is the combination most people searching this question are after: a B.Com or B.Sc on campus with an online BBA, or a job-linked online MBA next to another qualification. Guideline 2 allows one programme in full-time physical mode and another in ODL or Online mode.</p>
+
+<p>The condition sits in Guideline 3. The ODL or online programme has to come from an institution recognised by UGC, a statutory council or the Government of India to run it. For an online degree, that means checking the exact programme on <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> for your admission session. Our guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> shows how.</p>
+
+<p class="pull">The two-degree rule does not validate anything. It lets you stack two programmes that are already valid.</p>
+
+<h2>Can you do two online degrees at once?</h2>
+
+<p>Yes, up to two ODL or Online programmes at the same time. Whether you should is a separate question. Each online programme has its own proctored end-semester exams, and assignments count for up to 30 per cent of marks, so two programmes means two sets of deadlines and two exam calendars. Read <a href="/blog/how-online-degree-exams-work-india">how online degree exams work</a> before you commit to both.</p>
+
+<p>You do not need a second DEB ID. UGC states that a DEB ID stays valid for lifelong ODL and Online learning, so the one you created for the first programme covers the second. If you have not created one yet, see <a href="/blog/ugc-deb-id-explained">our DEB ID guide</a>.</p>
+
+<h2>What changed in 2025?</h2>
+
+<p>One clause. The April 2022 text said the guidelines applied from the date of notification and that students who had already done two programmes simultaneously before that date could claim no retrospective benefit. That left people who had stacked degrees earlier in an uncertain position.</p>
+
+<p>The Commission approved a modification at its 589th meeting on 3 April 2025, and UGC circulated the revised guidelines to universities in June 2025. The new proviso says two programmes pursued together before the guidelines were issued shall be treated as valid, provided they followed the UGC First Degree and Master Degree Regulations, the universities' own statutes and ordinances, and the norms of the relevant professional council and the Distance Education Council or Distance Education Bureau.</p>
+
+<figure class="svg-figure">
+<svg viewBox="0 0 640 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: April 2022 UGC issues guidelines allowing two programmes at once with no retrospective benefit; 3 April 2025 the 589th Commission meeting approves a change; June 2025 revised guidelines treat earlier concurrent degrees as valid if they followed the rules of the time">
+<rect width="640" height="170" fill="#ffffff"/>
+<line x1="60" y1="70" x2="580" y2="70" stroke="#0f172a" stroke-width="2"/>
+<g font-size="12" fill="#0f172a" text-anchor="middle">
+<circle cx="100" cy="70" r="8" fill="#f97316"/><text x="100" y="45" font-weight="700">April 2022</text><text x="100" y="98">Guidelines issued.</text><text x="100" y="115">Two programmes allowed.</text><text x="100" y="132">No retrospective benefit.</text>
+<circle cx="320" cy="70" r="8" fill="#B8892A"/><text x="320" y="45" font-weight="700">3 April 2025</text><text x="320" y="98">589th Commission meeting</text><text x="320" y="115">approves a change</text><text x="320" y="132">to clause 5.</text>
+<circle cx="540" cy="70" r="8" fill="#10b981"/><text x="540" y="45" font-weight="700">June 2025</text><text x="540" y="98">Revised guidelines sent.</text><text x="540" y="115">Earlier concurrent degrees</text><text x="540" y="132">valid if rules were followed.</text>
+</g>
+<text x="320" y="160" text-anchor="middle" font-size="11" fill="#64748b">Source: UGC guidelines (April 2022) and UGC letter to universities (June 2025), ugc.gov.in</text>
+</svg>
+<figcaption>The 2025 change protects people who stacked degrees before 2022, but only if each programme followed the rules of its time.</figcaption>
+</figure>
+
+<h2>What should you check before enrolling in a second programme?</h2>
+
+<ol>
+<li><strong>Both universities' rules.</strong> UGC says universities devise their own mechanism through their statutory bodies. Ask each university, in writing, whether it permits a concurrent enrolment and whether it needs a declaration or no-objection from the other.</li>
+<li><strong>Entitlement of the online or ODL programme</strong> for your session, on deb.ugc.ac.in.</li>
+<li><strong>Prohibited programmes.</strong> UGC does not allow engineering, law, medicine, pharmacy, nursing, architecture and several other disciplines in ODL or Online mode. A two-degree plan cannot get around that.</li>
+<li><strong>Exam clashes.</strong> Nothing in the guidelines obliges either university to move an exam for you. Compare both academic calendars before paying.</li>
+<li><strong>Whether a fake institution is involved.</strong> Rule this out on the <a href="/blog/ugc-fake-universities-list-2026">UGC fake universities list</a> before anything else.</li>
+</ol>
+
+<div class="callout-warning">
+<strong>Watch for "two degrees in one year" offers.</strong> The guidelines let you study two programmes at the same time. They do not shorten either one. Each degree still needs its full minimum duration and credits under the UGC Specification of Degrees. An offer that compresses two degrees into one year is a red flag.
+</div>
+
+<h2>Is a second degree done this way valid for jobs?</h2>
+
+<p>Each degree stands on its own. An online degree from a recognised, entitled programme is treated as equivalent to the conventional degree under Regulation 22 of the UGC 2020 regulations, whether or not you earned another degree alongside it. Read <a href="/guides/is-online-degree-valid-india">is an online degree valid in India</a> for the detail, and <a href="/guides/online-mba-for-government-jobs">online MBA validity for government jobs</a> if that is your target.</p>
+
+<p>If you are choosing the online half of the pair, you can <a href="/compare">compare universities side by side</a> on approvals and accreditation.</p>
+
+<div class="cta-box">
+<p><strong>Adding an online degree to your current studies?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us which programmes are entitled for your session</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC, Guidelines for Pursuing Two Academic Programmes Simultaneously, April 2022: ugc.gov.in</li>
+<li>UGC letter D.O. No. F.1-6/2007 (CPP-II), June 2025, with the modified guidelines approved at the 589th Commission meeting on 3 April 2025: ugc.gov.in</li>
+<li>UGC public notice of 11 November 2024 on ODL and Online admissions (DEB ID, prohibited programmes): deb.ugc.ac.in</li>
+</ul>
+
+<p class="disclaimer"><em>Last verified against the UGC guidelines on 26 October 2026. Universities apply these guidelines through their own statutory bodies, so local rules can be stricter. Confirm with both universities before enrolling.</em></p>
+    `,
+  },
+  {
+    slug: 'ugc-biannual-admissions-january-july-intake',
+    title: 'UGC Biannual Admissions: January and July Intake Explained',
+    seoTitle: 'UGC Biannual Admissions: January and July Intake Explained',
+    h1Title: 'UGC Biannual Admissions Explained: How the January and July Intakes Work for Online and Regular Degrees',
+    metaDescription: 'UGC lets universities admit students twice a year, July/August and January/February. Online degrees have had two sessions since 2020. What it means for you.',
+    category: 'Online Degree Validity',
+    tags: ['UGC Biannual Admission', 'January Intake', 'July Intake', 'Online Degree Admission', 'UGC Regulations', 'Student Guidance'],
+    publishedAt: '2026-10-26',
+    readTime: 7,
+    targetKeyword: 'ugc biannual admissions',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/38305335/pexels-photo-38305335.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@mananmaheshwari" target="_blank" rel="noopener nofollow">momentsbymanan</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Serene corridor of La Martiniere College in Lucknow, India, showcasing vintage architecture.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'What is biannual admission under UGC rules?', a: 'UGC defines biannual admission as admitting students twice a year, in July/August and January/February. The definition appears in the UGC (Minimum Standards of Instruction for the Grant of Undergraduate Degree and Postgraduate Degree) Regulations, 2025, published in the Gazette on 2 April 2025.' },
+      { q: 'Is biannual admission compulsory for universities?', a: 'No. The 2025 regulations say universities prepared to handle biannual admissions may admit students twice a year. Each university decides, and fixes its intake capacity in advance through its statutory bodies.' },
+      { q: 'Do online degrees have a January intake?', a: 'Yes, and they have had one since well before 2025. The UGC ODL and Online regulations of 2020 define an academic session as twelve months beginning in January to February or in July to August, so recognised online programmes can run two sessions a year.' },
+      { q: 'What is the last date for the January intake of an online degree?', a: 'UGC-DEB announces a last date to admit learners for each session. For the August 2026 session it was 13 October 2026. Check the DEB portal and notice board for the date that applies to the January 2027 session before you apply.' },
+      { q: 'Is a January-intake online degree less valid than a July-intake one?', a: 'No. Validity depends on whether the programme is recognised and entitled for the session you join, not on which half of the year it starts. Check your programme on deb.ugc.ac.in for that specific session.' },
+      { q: 'Does every university offer a January intake for its online MBA?', a: 'No. A university needs recognition or entitlement for that particular session, and some run only one intake a year. Confirm on deb.ugc.ac.in and with the university in writing.' },
+    ],
+    ctaTitle: 'Aiming for the January intake?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">If you missed the July admissions, you have not lost a year. UGC rules allow a second intake in January and February, and online degrees have used it for years.</p>
+
+<p><strong>Short answer:</strong> UGC allows universities to admit students <strong>twice a year, in July/August and January/February</strong>. For regular degrees this comes from the UGC (Minimum Standards of Instruction for the Grant of Undergraduate Degree and Postgraduate Degree) Regulations, 2025, which make it <strong>optional</strong>: universities "prepared to handle biannual admissions" may use it. For <strong>online and distance degrees</strong>, two sessions a year are older: the UGC ODL and Online regulations of 2020 already define an academic session as starting in January to February or July to August.</p>
+
+<div class="callout-key">
+<strong>Biannual admissions in one box (last verified 26 October 2026)</strong>
+<ul>
+<li><strong>Regular UG and PG degrees:</strong> optional twice-a-year intake under the UGC UG and PG Regulations, 2025 (Gazette, 2 April 2025)</li>
+<li><strong>Online and ODL degrees:</strong> two sessions a year under the UGC ODL and Online Regulations, 2020</li>
+<li><strong>Windows:</strong> July/August and January/February</li>
+<li><strong>Who decides:</strong> each university, with intake fixed in advance by its statutory bodies</li>
+<li><strong>Admission cut-off:</strong> set by UGC-DEB per session. August 2026 session: 13 October 2026</li>
+</ul>
+</div>
+
+<h2>What does biannual admission mean?</h2>
+
+<p>The 2025 regulations define it in one line: the process of admitting students twice a year, in July/August and January/February. Before this, a regular college degree in India ran on a single July intake. If you missed it, you waited a year.</p>
+
+<p>The same regulations describe an academic year as twelve months starting in either window. So a student who joins in January follows a full academic year from January, not a shortened one tacked on to someone else's.</p>
+
+<h2>Is biannual admission compulsory for every university?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/18067562/pexels-photo-18067562.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A group of young South Asian women working together on a laptop in a Jaipur office." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@biyani-girls-college-701394465" target="_blank" rel="noopener nofollow">Biyani Girls College</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>No. The wording is permissive. Section 4.0 of the 2025 regulations says universities prepared to handle biannual admissions "may admit students twice a year". Each university also has to fix its intake capacity in advance, through its statutory bodies, based on its faculty, facilities and student-teacher ratio.</p>
+
+<p>In practice that means a university can run a January intake for some programmes and not others. A January seat is a decision the university makes, not a right the student holds. Ask the specific university, and get the answer in writing.</p>
+
+<p class="pull">UGC opened the second door. Each university decides whether to use it.</p>
+
+<h2>How does it work for online and distance degrees?</h2>
+
+<p>Online degrees did not need the 2025 change. Regulation 2(b) of the UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020 defines an academic session as twelve months beginning in January to February or July to August. Recognised online programmes have been able to run two sessions a year since then.</p>
+
+<p>Two details matter more than the rule itself.</p>
+
+<ul>
+<li><strong>Recognition is per session.</strong> UGC-DEB publishes, session by session, which universities may offer which ODL and Online programmes. A programme entitled for one session is not automatically entitled for the next. Check the session you are joining.</li>
+<li><strong>Session dates shift.</strong> UGC has relabelled sessions when timelines moved. Its notices refer, for example, to a session beginning October 2024 "revised from July-August, 2024", and to a session beginning February 2025. Go by the session name and last date in the current DEB notice, not by the calendar month you expect.</li>
+</ul>
+
+<figure class="svg-figure">
+<svg viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Calendar showing the two UGC admission windows: January to February and July to August, with the note that UGC-DEB sets a last date to admit online learners for each session, for example 13 October 2026 for the August 2026 session">
+<rect width="640" height="200" fill="#ffffff"/>
+<text x="320" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">The two UGC admission windows</text>
+<g font-size="11" text-anchor="middle" fill="#0f172a">
+<rect x="20" y="50" width="50" height="40" fill="#f97316"/><text x="45" y="75" fill="#ffffff" font-weight="700">Jan</text>
+<rect x="70" y="50" width="50" height="40" fill="#f97316"/><text x="95" y="75" fill="#ffffff" font-weight="700">Feb</text>
+<rect x="120" y="50" width="50" height="40" fill="#f1f5f9"/><text x="145" y="75">Mar</text>
+<rect x="170" y="50" width="50" height="40" fill="#f1f5f9"/><text x="195" y="75">Apr</text>
+<rect x="220" y="50" width="50" height="40" fill="#f1f5f9"/><text x="245" y="75">May</text>
+<rect x="270" y="50" width="50" height="40" fill="#f1f5f9"/><text x="295" y="75">Jun</text>
+<rect x="320" y="50" width="50" height="40" fill="#0f172a"/><text x="345" y="75" fill="#ffffff" font-weight="700">Jul</text>
+<rect x="370" y="50" width="50" height="40" fill="#0f172a"/><text x="395" y="75" fill="#ffffff" font-weight="700">Aug</text>
+<rect x="420" y="50" width="50" height="40" fill="#f1f5f9"/><text x="445" y="75">Sep</text>
+<rect x="470" y="50" width="50" height="40" fill="#f1f5f9"/><text x="495" y="75">Oct</text>
+<rect x="520" y="50" width="50" height="40" fill="#f1f5f9"/><text x="545" y="75">Nov</text>
+<rect x="570" y="50" width="50" height="40" fill="#f1f5f9"/><text x="595" y="75">Dec</text>
+</g>
+<text x="70" y="112" text-anchor="middle" font-size="12" font-weight="700" fill="#f97316">January session</text>
+<text x="370" y="112" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">July session</text>
+<line x1="495" y1="92" x2="495" y2="130" stroke="#ef4444" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="495" y="146" text-anchor="middle" font-size="11" fill="#ef4444">13 Oct 2026: last date to admit</text>
+<text x="495" y="160" text-anchor="middle" font-size="11" fill="#ef4444">online learners, Aug 2026 session</text>
+<text x="320" y="190" text-anchor="middle" font-size="11" fill="#64748b">Sources: UGC ODL and Online Regulations 2020, Reg 2(b); UGC UG and PG Regulations 2025; deb.ugc.ac.in</text>
+</svg>
+<figcaption>Admission can run past the session's start month. UGC-DEB fixes the last date for each session.</figcaption>
+</figure>
+
+<h2>When is the last date for the January intake?</h2>
+
+<p>UGC-DEB announces a last date to admit learners for each ODL and Online session, and it varies year to year. The DEB portal states that the last date for the August 2026 session was 13 October 2026. An earlier DEB notice set 31 March 2025 as the last date for the session beginning February 2025.</p>
+
+<p>We are not going to guess the January 2027 date. Watch the notice board on <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>, and treat any date a counsellor gives you as unconfirmed until you see it there.</p>
+
+<div class="callout-warning">
+<strong>"Last date" pressure is a sales tactic as often as it is a deadline.</strong> A real cut-off comes from a UGC-DEB notice. A "seats closing tonight" message from an agent does not. Check the DEB notice before you pay a registration fee.
+</div>
+
+<h2>Is a January-intake degree worth less than a July one?</h2>
+
+<p>No. Validity depends on whether your programme is recognised and entitled for the session you join. A January-session online degree from an entitled programme is treated exactly like a July one, and like a campus degree under Regulation 22 of the 2020 regulations. Read <a href="/guides/is-online-degree-valid-india">is an online degree valid in India</a> for the full picture.</p>
+
+<p>The practical differences are smaller and more personal. Your convocation and result dates shift by six months, and some placement drives or employer reimbursement cycles follow the July calendar. If either matters to you, ask the university how January-session students are handled.</p>
+
+<h2>What to do before applying in January</h2>
+
+<ol>
+<li>Confirm the university and the exact programme are recognised or entitled for the January session on deb.ugc.ac.in. Our guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> shows where to look.</li>
+<li>Create your DEB ID from your ABC ID. It is mandatory for every ODL and Online admission. See <a href="/blog/ugc-deb-id-explained">our DEB ID guide</a>.</li>
+<li>Rule out fake institutions on the <a href="/blog/ugc-fake-universities-list-2026">UGC fake universities list</a>.</li>
+<li>Ask for the fee for the January session in writing. Universities often revise fees between intakes, so a July figure may not carry over.</li>
+<li>Read the refund terms. The 2020 regulations require universities to publish the share of fees refundable on withdrawal and the timeline for it.</li>
+</ol>
+
+<p>If you are deciding where to apply, you can <a href="/compare">compare universities side by side</a> or start with <a href="/programs/mba">online MBA programmes</a>.</p>
+
+<div class="cta-box">
+<p><strong>Planning for the January intake?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us which programmes are entitled for the session</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC (Minimum Standards of Instruction for the Grant of Undergraduate Degree and Postgraduate Degree) Regulations, 2025, Gazette of India, 2 April 2025, clauses 3 and 4.0; circulated by UGC public notice of 23 April 2025: ugc.gov.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulation 2(b): deb.ugc.ac.in/Regulations</li>
+<li>UGC-DEB Student DEB ID page (last date for the August 2026 session) and DEB notice of April 2025 (session beginning February 2025): deb.ugc.ac.in</li>
+</ul>
+
+<p class="disclaimer"><em>Last verified on 26 October 2026. UGC-DEB announces session names and last dates by notice, and they change. Confirm the current session and deadline on deb.ugc.ac.in before you apply.</em></p>
+    `,
+  },
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))
