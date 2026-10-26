@@ -188,7 +188,8 @@
     "adichunchanagiri-university-online-mba-review": 0,
     "integral-university-online-review": 0,
     "srm-online-mba-2026": 0,
-    "ugc-fee-refund-policy": 0
+    "ugc-fee-refund-policy": 0,
+    "online-degree-scholarships-india": 0
   },
   "rebaselineNote": "2026-08-24: re-baselined after replacing placeholder fee ranges in lib/data.ts with exact owner-confirmed fees for 24 programme hubs. Wide junk ranges (e.g. 60K-200K) had been absorbing blog fee figures as MATCH; exact fees correctly reclassify them as payment-mode/list-price variants (e.g. NMIMS BBA semester plan 1,50,000 vs annual plan 1,41,000; Chandigarh BBA list 1,75,000 vs post-early-bird 1,31,250). No blog content was changed by that commit."
 }

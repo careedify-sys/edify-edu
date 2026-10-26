@@ -9,6 +9,7 @@ import { getTitleName, getShortTitleName, shortenSpec, clampTitle, clampTitleSpe
 import { pageKeywords } from '@/lib/page-keywords'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
+import { formatUniversityDisplayName } from '@/lib/format'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
 export async function generateStaticParams() {
@@ -51,7 +52,7 @@ export async function generateMetadata(
       `${shortName} BCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
       shortSpec,
     ),
-    description: shouldIndexUniversity(u.id) ? clampDescription(`${u.name} Online BCA in ${spec} ${year}: ${fee} fees${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved 3-year degree. Check syllabus, eligibility & career scope free.`) : unverifiedDescription(u.name, 'BCA'),
+    description: shouldIndexUniversity(u.id) ? clampDescription(`${formatUniversityDisplayName(u.name)} Online BCA in ${spec} ${year}: ${fee} fees${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved 3-year degree. Check syllabus, eligibility & career scope free.`) : unverifiedDescription(u.name, 'BCA'),
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/bca/${canonicalSlug}` },
     robots: { index: shouldIndexUniversity(u.id), follow: true },
   }

@@ -19,6 +19,7 @@ import { getProgramSchemaOffer, getProgramSchemaFeeFragment } from '@/lib/seo/pr
 import { pageKeywords } from '@/lib/page-keywords'
 import { resolveProgramme } from '@/lib/seo/resolve-programme'
 import { naacSuffix, naacSegment, naacAccredited, naacPhrase } from '@/lib/seo/display-guards'
+import { formatUniversityDisplayName } from '@/lib/format'
 
 // Static Params (SSG). Pre-render top university+program combinations only.
 // Others are served via ISR (dynamicParams = true) on first request, then cached.
@@ -106,7 +107,7 @@ export async function generateMetadata(
       url: `https://edifyedu.in/universities/${u.id}/${programSlug}`,
       type: 'website',
       siteName: 'edifyedu.in',
-      images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: `${u.name} Online ${program}` }],
+      images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: `${formatUniversityDisplayName(u.name)} Online ${program}` }],
     },
     twitter: {
       card: 'summary_large_image',
@@ -138,7 +139,7 @@ function ProgramSchema({
   const programSchema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'EducationalOccupationalProgram',
-    name: `${u.name} Online ${program}`,
+    name: `${formatUniversityDisplayName(u.name)} Online ${program}`,
     description: `UGC-DEB approved Online ${program} from ${u.name}.${naacAccredited(u.naac)} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, program)}.`,
     url: pageUrl,
     provider: {

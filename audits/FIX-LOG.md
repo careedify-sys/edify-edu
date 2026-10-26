@@ -1,5 +1,100 @@
 # Fix log
 
+## 2026-10-26 · Item 10: online degree scholarships post
+
+New post /blog/online-degree-scholarships-india (keyword gap item 10, "online degree scholarships" 590/month).
+The plan flagged it as likely blocked on per-university data. We hold verified scholarship figures for two
+universities only (Uttaranchal 30%, MUJ 15%, January 2027 charts), so the post does not rank or list offers.
+It answers from UGC Regulation 14(2) of the 2020 ODL/Online Regulations instead: fees must be declared on the
+website, paid only to the university, and reserved-category waivers follow Central or State orders. No claim
+about any named government scheme, since none is on the approved source list.
+
+The five rupee figures classify as NON_FEE in the scanner and passed only because the post is dated on the
+baseline day. Allowlisted against the charts recorded in lib/data.ts so they do not depend on that.
+
+The existing online-mba-scholarship-india-2026 post had zero impressions in six months of Pages.csv. One of
+its five duplicated Related Reading cards now points at the new post, so link count is unchanged.
+
+## 2026-10-26 · "Online Online" in descriptions and schema names
+
+u.name already ends in " Online", and 14 visible template lines appended Online again: the BBA, BCA and MCA spec
+meta descriptions ("KL University Online Online BBA in Finance"), the BBA/BCA/MCA hub Course schema names, the
+overview ItemList and Course schema, the [program] hub schema and OG alt, and the /programs card schema.
+All now use formatUniversityDisplayName(u.name). Verified on the dev server: 0 occurrences on the KL BBA spec,
+Amity BCA spec, MCA, MA pages. The only remaining doubles are in meta keywords arrays, which Google ignores
+and nobody sees; left as is.
+
+## 2026-10-26 · 26 all-caps university names, 8 wrong cities, overview fee for a 404 MBA hub
+
+Keyword gap improve track, Bucket A part 3. Started as the "five duplicate-title
+groups" item from part 1. Re-probed on the dev server: every page in those groups
+(University of Mumbai /bba /bca /mba /mca, Madurai Kamaraj /bca /mba /mca,
+Hindustan /bba /bca, Jagannath /bba /bca /mca) returns 404. The duplicates were
+build files for routes the edge never serves, so there was nothing to fix. The
+live titles in each group are distinct.
+
+The probe found three real defects instead.
+
+**1. Overview title advertised an MBA fee for an MBA hub that 404s.** Part 1
+gated the overview fee on u.programs.includes('MBA'). University of Mumbai and
+Madurai Kamaraj list MBA but have no MBA programme details, so the hub 404s and
+getDisplayFee fell back to the record's feeMin/feeMax: ₹90K-₹2L (shared by 7
+records) and ₹75K-₹1.8L (shared by 11), placeholder ranges. The description also
+listed programmes whose hubs 404 (Mumbai: "MA, BBA, BCA" with only MA live).
+Fix: the overview metadata uses getResolvableProgrammes(u) for both the programme
+list and the MBA-fee gate. 8 descriptions change, none end up empty, and both
+placeholder fees are gone.
+
+**2. 26 records named in capitals** ("UNIVERSITY OF MUMBAI Online"), the August
+2026 UGC-DEB batch. The name rendered 95 times on Mumbai's page, including the H1
+and schema. Proper-cased with official styling (MATS University, SAGE University,
+Dayalbagh Educational Institute, Chhatrapati Shahu Ji Maharaj University, Deen
+Dayal Upadhyaya Gorakhpur University) in lib/data.ts, lib/data-slim.ts,
+data/fees-hub-data.json and the MATS MCA content JSON. Nothing matches records by
+name; the verify slug map is precomputed.
+
+**3. Eight wrong cities, which feed schema addressLocality.** University of Mumbai
+Pune -> Mumbai, Madurai Kamaraj Chennai -> Madurai, Shivaji Pune -> Kolhapur,
+University of Kerala Kochi -> Thiruvananthapuram, Guru Jambheshwar Rohtak ->
+Hisar, CSJM Lucknow -> Kanpur, MJP Rohilkhand Lucknow -> Bareilly, Dayalbagh
+Lucknow -> Agra. Fixed in lib/data.ts and the slim mirror.
+
+**Caught and reverted:** I first moved iiit-bangalore-online to Bengaluru because
+of its id. The UGC-DEB list (audits/ugc-deb-2026-08/university-status.csv) puts
+"INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY" in Telangana, and IIIT
+Hyderabad and IIIT Bangalore share that official name. The record is IIIT
+Hyderabad and only its slug is wrong. City stays Hyderabad; the name now says
+Hyderabad, matching its existing TITLE_NAME.
+
+**Open, for Rishi:** the iiit-bangalore-online slug names the wrong institute
+(renaming needs a redirect). The same record says NAAC A++ in the naac field and
+"NAAC A accredited" in its description; an accreditation claim, so left alone.
+
+## 2026-10-26 · MBA hub intros rewritten as direct answers (Amity, LPU, NMIMS, Chandigarh, Symbiosis)
+
+Keyword gap improve track, Bucket A part 2. These hubs rank 38-61 for "X online
+mba fees". The override intro is the first paragraph under "Programme Overview"
+and the most extractable text on the page, but it opened with positioning copy and
+three of five never stated the fee.
+
+Each intro now answers in order: total fee and duration, eligibility, NAAC,
+UGC-DEB, NIRF Management rank, specialisation count, then the verify directive.
+Every figure comes from lib/data.ts through getDisplayFee.
+
+Claims removed because the data did not back them:
+- LPU "15+ specializations" (data lists 12), "one of the top-rated programs in
+  North India", "weekend live sessions".
+- Amity "EMI from ₹8,906" (emiFrom is 8,625), and "WASC and QAA" accreditations,
+  which are not in its approvals.
+- Chandigarh intro still led with NIRF University #19 on the MBA page; now
+  Management #32 with the University rank in brackets. Its scholarship sentence
+  said the offer was "verifiable on the UGC-DEB and NAAC public registers", which
+  do not list scholarships. "CUOnline platform" weekend classes also dropped.
+- Symbiosis "placement data" (the page cites none).
+
+Verified on the dev server: all five pages render the new paragraph.
+Measure with the Bucket A part 1 set around 23 Nov.
+
 ## 2026-10-26 · NIRF ranks always name their category; overview titles carry the searched brand and a labelled MBA fee
 
 Keyword gap improve track (audits/keyword-gap-plan-2026-10-26.md, Bucket A).

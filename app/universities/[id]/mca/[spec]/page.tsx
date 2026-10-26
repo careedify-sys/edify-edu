@@ -10,6 +10,7 @@ import { getTitleName, getShortTitleName, shortenSpec, clampTitle, clampTitleSpe
 import { pageKeywords } from '@/lib/page-keywords'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
+import { formatUniversityDisplayName } from '@/lib/format'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
 export async function generateStaticParams() {
@@ -53,8 +54,8 @@ export async function generateMetadata(
       shortSpec,
     )
   const baseDescription = clampDescription(syllabus?.metaDesc
-    ? `${u.name} Online MCA in ${spec} ${year}. ${syllabus.metaDesc}`
-    : `${u.name} Online MCA in ${spec} ${year}: ${fee} fees${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. Check syllabus, eligibility & career scope free.`)
+    ? `${formatUniversityDisplayName(u.name)} Online MCA in ${spec} ${year}. ${syllabus.metaDesc}`
+    : `${formatUniversityDisplayName(u.name)} Online MCA in ${spec} ${year}: ${fee} fees${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. Check syllabus, eligibility & career scope free.`)
 
   // Mode-unverified universities: see lib/seo/mode-unverified.ts.
   const description = shouldIndexUniversity(u.id)

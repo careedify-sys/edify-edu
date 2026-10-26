@@ -20,6 +20,7 @@ import { pageKeywords } from '@/lib/page-keywords'
 import { resolveProgramme } from '@/lib/seo/resolve-programme'
 import { naacSuffix, naacSegment, naacAccredited, naacPhrase } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription, onlinePrefix } from '@/lib/seo/mode-unverified'
+import { formatUniversityDisplayName } from '@/lib/format'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('BBA')).map(u => ({ id: u.id }))
@@ -97,7 +98,7 @@ function BBAProgramSchema({
   const programSchema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'EducationalOccupationalProgram',
-    name: `${u.name} ${onlinePrefix(u.id)}BBA`,
+    name: `${formatUniversityDisplayName(u.name)} ${onlinePrefix(u.id)}BBA`,
     description: `UGC-DEB approved ${onlinePrefix(u.id)}BBA from ${u.name}.${naacAccredited(u.naac)} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'BBA')}.`,
     url: pageUrl,
     provider: {

@@ -43,7 +43,7 @@
 - Lovely Professional University Online (NAAC A++, NIRF Management #44): https://edifyedu.in/universities/lovely-professional-university-online
 - ICFAI Foundation for Higher Education Online (NAAC A++, NIRF Management #46): https://edifyedu.in/universities/icfai-university-online
 - Amity University Online (NAAC A+, NIRF Management #49): https://edifyedu.in/universities/amity-university-online
-- GRAPHIC ERA UNIVERSITY Online (NAAC A+, NIRF Management #52): https://edifyedu.in/universities/graphic-era-university-online
+- Graphic Era University Online (NAAC A+, NIRF Management #52): https://edifyedu.in/universities/graphic-era-university-online
 - SRM Institute of Science and Technology Online (NAAC A++, NIRF Management #56): https://edifyedu.in/universities/srm-institute-science-technology-online
 - Christ (Deemed to be University) Online (NAAC A+, NIRF Management #57): https://edifyedu.in/universities/christ-university-online
 - Aligarh Muslim University Online (NAAC A+, NIRF Management #69): https://edifyedu.in/universities/aligarh-muslim-university-online
@@ -51,11 +51,11 @@
 - JAIN (Deemed-to-be University) Online (NAAC A++, NIRF Management #73): https://edifyedu.in/universities/jain-university-online
 - Chitkara University Online (NAAC A+, NIRF Management #78): https://edifyedu.in/universities/chitkara-university-online
 - Manipal University Jaipur (MUJ) Online (NAAC A+, NIRF Management #81): https://edifyedu.in/universities/manipal-university-jaipur-online
-- JAMIA HAMDARD Online (NAAC A+, NIRF Management #87): https://edifyedu.in/universities/jamia-hamdard-online
+- Jamia Hamdard Online (NAAC A+, NIRF Management #87): https://edifyedu.in/universities/jamia-hamdard-online
 - Anna University Online (NAAC A++, NIRF Management #88): https://edifyedu.in/universities/anna-university-online
 - Birla Institute of Technology (BIT) Mesra Online (NAAC A, NIRF Management #97): https://edifyedu.in/universities/bit-mesra-online
 - University of Lucknow Online (NAAC A++, NIRF Management #100): https://edifyedu.in/universities/university-of-lucknow-online
-- ADICHUNCHANAGIRI UNIVERSITY Online (NAAC A+): https://edifyedu.in/universities/adichunchanagiri-university-online
+- Adichunchanagiri University Online (NAAC A+): https://edifyedu.in/universities/adichunchanagiri-university-online
 - Alagappa University Online (NAAC A++): https://edifyedu.in/universities/alagappa-university-online
 - Andhra University Online (NAAC A++): https://edifyedu.in/universities/andhra-university-online
 - ARKA JAIN University – JGI Online (arkajain.edu.in) Online (NAAC A): https://edifyedu.in/universities/arka-jain-university-online

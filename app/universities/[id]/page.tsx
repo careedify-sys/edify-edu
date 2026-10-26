@@ -10,6 +10,7 @@ import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
 import { getDisplayFee } from '@/lib/fees'
 import { pageKeywords } from '@/lib/page-keywords'
 import { shouldIndexUniversity, onlinePrefix } from '@/lib/seo/mode-unverified'
+import { formatUniversityDisplayName } from '@/lib/format'
 
 // The phrase people type for a university's online arm, where it differs from
 // the short title name. Amity's short name is "Amity", but the searches are
@@ -42,11 +43,15 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const cleanName = u.name.replace(/\s+online\s*$/i, '')
   const titleName = getTitleName(u.id, u.name, u.abbr)
-  const progStr = u.programs.slice(0, 3).join(', ')
+  // Only programmes whose hub page resolves. University of Mumbai listed MBA,
+  // BBA and BCA here while all three hubs 404.
+  const liveProgs = getResolvableProgrammes(u)
+  const progStr = liveProgs.slice(0, 3).join(', ')
   // feeMin/feeMax are MBA-led, so printing them as "fees" for the whole
   // university misstated every non-MBA programme. Show the MBA fee, labelled,
   // from getDisplayFee so a suppressed figure stays suppressed here too.
-  const mbaFee = u.programs.includes('MBA') ? getDisplayFee(u, 'MBA') : null
+  // With no MBA hub, getDisplayFee falls back to the record's placeholder range.
+  const mbaFee = liveProgs.includes('MBA') ? getDisplayFee(u, 'MBA') : null
   const hasFee = !!(mbaFee && mbaFee.ok && mbaFee.compact)
   const feeStr = hasFee ? `MBA ${mbaFee!.compact}` : ''
   const feeSeg = hasFee ? `${feeStr}, ` : ''
@@ -110,7 +115,7 @@ export async function generateMetadata(
       url: `https://edifyedu.in/universities/${u.id}`,
       type: 'website',
       siteName: 'edifyedu.in',
-      images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: `${u.name} ${onlinePrefix(u.id)}Programs` }],
+      images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: `${formatUniversityDisplayName(u.name)} ${onlinePrefix(u.id)}Programs` }],
     },
     twitter: {
       card: 'summary_large_image',
@@ -177,7 +182,7 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
         },
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
-          name: `${u.name} ${onlinePrefix(u.id)}Programs`,
+          name: `${formatUniversityDisplayName(u.name)} ${onlinePrefix(u.id)}Programs`,
           itemListElement: u.programs.map((prog, i) => ({
             '@type': 'Offer',
             category: 'Online Education',
@@ -185,7 +190,7 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
             itemOffered: {
               '@type': 'Service',
               name: `${onlinePrefix(u.id)}${prog}`,
-              description: `${u.name} ${onlinePrefix(u.id)}${prog} program`,
+              description: `${formatUniversityDisplayName(u.name)} ${onlinePrefix(u.id)}${prog} program`,
               provider: { '@type': 'CollegeOrUniversity', name: u.name },
             },
           })),
