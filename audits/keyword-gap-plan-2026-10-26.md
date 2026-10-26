@@ -170,4 +170,5 @@ eligibility follows the regulator. Feeds item 8 and the "one year online mba" ro
 - Bucket A part 3 DONE 2026-10-26: duplicate titles were 404 build artifacts (no fix); fixed overview MBA fee on 404 hubs, 26 caps names, 8 cities, "Based in Pune". Open: iiit-bangalore-online slug is IIIT Hyderabad; its NAAC A++ vs "NAAC A" conflict.
 - Bucket A part 4 DONE 2026-10-26: "Online Online" removed from 14 template lines (descriptions, schema).
 - Bucket A improve track: all listed items done ("Based in Pune" fixed in part 3).
+- Bucket A part 5 2026-10-27: /programs/bsc and /programs/bba plus all 200 non-MBA spec pages (wrong-programme titles, MBA fees, salary stats). Remaining Bucket A rows: UPES and Uttaranchal overviews; /best-online-mba-india needs Rishi.
 - Item 10 SHIPPED 2026-10-26. Writing queue 1-10 complete. Remaining: Bucket C validity explainers (need Rishi), psychology dispute, measure Bucket A ~23 Nov.

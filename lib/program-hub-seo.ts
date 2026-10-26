@@ -65,7 +65,15 @@ export function getProgramHubSeo(
     case 'bba':
       return {
         title: `Online BBA in India ${year}: ${uniCount} UGC-DEB Universities Compared`,
-        description: `${uniCount} UGC-DEB approved online BBA universities, filterable by fee, NAAC grade and specialisation. No paid rankings, no commission.`,
+        description: `Online BBA: a 3-year undergraduate degree you can join after Class 12. ${uniCount} UGC-DEB approved universities compared on fee, NAAC grade and specialisation. No paid rankings.`,
+      }
+    // BSc: only two universities list an online BSc, and both are in lab-free
+    // subjects. The searcher's real question is which subjects can run online,
+    // so the title answers that instead of advertising a count of two.
+    case 'bsc':
+      return {
+        title: `Online BSc in India ${year}: Which Subjects UGC Allows Online`,
+        description: `UGC allows an online BSc only where practical work is programming and coding, so lab subjects cannot run online. ${uniCount} UGC-DEB universities offer one, in Data Science and Economics.`,
       }
     default:
       return null
@@ -73,4 +81,4 @@ export function getProgramHubSeo(
 }
 
 /** Every programme slug that carries a hand-written override. Used by the gate. */
-export const PROGRAM_HUB_SEO_SLUGS: readonly string[] = ['mba', 'bba']
+export const PROGRAM_HUB_SEO_SLUGS: readonly string[] = ['mba', 'bba', 'bsc']

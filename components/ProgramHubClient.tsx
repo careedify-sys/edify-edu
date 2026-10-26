@@ -3,7 +3,7 @@
 import { useMemo } from 'react'
 import Link from 'next/link'
 import { GraduationCap, Layers, Wallet, BadgeCheck } from 'lucide-react'
-import { UNIS_SLIM, formatFeeSlim, PREFERRED_UNI_IDS } from '@/lib/data-slim'
+import { UNIS_SLIM, PREFERRED_UNI_IDS } from '@/lib/data-slim'
 import UniversityCard from '@/components/UniversityCard'
 import { formatRank, preferForProgram } from '@/lib/highlight'
 
@@ -60,21 +60,28 @@ const PROGRAM_INFO: Record<string, { title: string; level: string; duration: str
     title: 'Online MSc in India',
     level: 'Postgraduate',
     duration: '2 Years',
-    description: 'Master of Science. Advanced study in data science, mathematics, computer science, and related fields. Growing demand in AI/ML and analytics roles.',
+    description: 'Master of Science. UGC allows a science degree online only where practical work is limited to programming and coding, so lab-based subjects cannot run online. Online MSc programmes are in subjects such as Mathematics and Data Science.',
   },
   BSc: {
     title: 'Online BSc in India',
     level: 'Undergraduate',
     duration: '3 Years',
-    description: 'Bachelor of Science. Available in subjects like Mathematics, Computer Science, IT, and Data Science. Foundation for MSc or direct employment in technical roles.',
+    description: 'Bachelor of Science. UGC allows a science degree online only where practical work is limited to programming and coding (UGC ODL and Online Regulations 2020, Regulation 4), so lab subjects such as Physics, Chemistry and Microbiology cannot run online. The online BSc programmes listed here are in Data Science, Economics and Social Sciences.',
   },
 }
 
 interface Props {
   program: string
+  // Per-university fee for THIS programme, from getDisplayFee on the server.
+  // null = suppressed or unknown. UNIS_SLIM feeMin/feeMax are MBA-led and must
+  // not be shown on a non-MBA hub.
+  programFees: Record<string, string | null>
 }
 
-export default function ProgramHubClient({ program }: Props) {
+// No hub-wide "from X to Y" fee: the floor of a cross-university range is a
+// derived superlative, and floors like IGNOU's BA Rs 9,600 or a 3x-wide range
+// are exactly where those go wrong (memory: feedback_never_derive_fees).
+export default function ProgramHubClient({ program, programFees }: Props) {
   const info = PROGRAM_INFO[program] || { title: `Online ${program} in India`, level: 'Degree', duration: '2-3 Years', description: `UGC-DEB approved online ${program} programmes.` }
 
   const unis = useMemo(() => {
@@ -91,8 +98,7 @@ export default function ProgramHubClient({ program }: Props) {
       })
   }, [program])
 
-  const feeFloor = Math.min(...unis.map(u => u.feeMin).filter(f => f > 0))
-  const feeCeiling = Math.max(...unis.map(u => u.feeMax).filter(f => f > 0))
+  const feeKnown = Object.values(programFees).filter(Boolean).length
 
   return (
     <>
@@ -100,21 +106,21 @@ export default function ProgramHubClient({ program }: Props) {
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-12 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-extrabold leading-tight mb-3">
-            {info.title} - Compare {unis.length}+ UGC-Approved Universities
+            {info.title} - Compare {unis.length} UGC-Approved Universities
           </h1>
           <p className="text-slate-400 text-base max-w-xl mx-auto mb-6">
             Independent comparison. No paid rankings. No referral commissions.
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-6">
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
-              <GraduationCap size={14} className="text-amber-400" /> {unis.length}+ Universities
+              <GraduationCap size={14} className="text-amber-400" /> {unis.length} Universities
             </span>
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
               <Layers size={14} className="text-amber-400" /> {info.level} · {info.duration}
             </span>
-            {feeFloor > 0 && feeCeiling > 0 && (
+            {feeKnown > 0 && (
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
-                <Wallet size={14} className="text-amber-400" /> {formatFeeSlim(feeFloor)} - {formatFeeSlim(feeCeiling)}
+                <Wallet size={14} className="text-amber-400" /> {feeKnown} {program} fees listed
               </span>
             )}
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
@@ -136,7 +142,7 @@ export default function ProgramHubClient({ program }: Props) {
         <p className="text-sm text-slate-500 mb-6">{unis.length} universities offering online {program}. Sorted by NIRF rank.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {unis.map(u => (
-            <UniversityCard key={u.id} u={u as any} highlightProgram={program} />
+            <UniversityCard key={u.id} u={u as any} highlightProgram={program} programFee={programFees[u.id] ?? null} />
           ))}
         </div>
       </section>
@@ -146,10 +152,10 @@ export default function ProgramHubClient({ program }: Props) {
         <h2 className="text-2xl font-bold mb-6" style={{ color: '#0B1533' }}>Quick Answers</h2>
         <div className="space-y-4">
           {[
-            { q: `Is online ${program} valid for jobs?`, a: `Yes. UGC-DEB approved online ${program} degrees are legally equivalent to campus degrees under UGC 2020 regulations. Valid for government jobs, PSU recruitment, and private-sector employment.` },
-            { q: `How much does online ${program} cost?`, a: `Fees range from ${formatFeeSlim(feeFloor)} to ${formatFeeSlim(feeCeiling)} across ${unis.length} universities. Most programmes offer zero-cost EMI or semester-wise payment options.` },
-            { q: `How long is online ${program}?`, a: `Standard duration is ${info.duration}. Most universities allow flexible completion within the maximum permitted timeframe.` },
-            { q: `What is the eligibility for online ${program}?`, a: `${info.level === 'Postgraduate' ? 'Graduation with 50% marks from a UGC-recognised university. Some universities accept lower marks with work experience.' : '10+2 or equivalent from a recognised board with minimum 50% marks (relaxed for reserved categories at some universities).'}` },
+            { q: `Is online ${program} valid for jobs?`, a: `Yes, when the university is UGC-DEB entitled for online ${program} in your admission session. Regulation 22 of the UGC ODL and Online Regulations 2020 treats these degrees as equivalent to campus degrees. Check the entitlement on deb.ugc.ac.in before you pay.` },
+            { q: `How much does online ${program} cost?`, a: feeKnown > 0 ? `It depends on the university. Each card below shows the total ${program} fee where we can confirm it, which is ${feeKnown} of ${unis.length} universities. Fees are indicative, so confirm the current figure on the official portal.` : `We cannot yet confirm a ${program} fee for these universities. Check each university's official portal or ask our counsellor.` },
+            { q: `How long is online ${program}?`, a: `Standard duration is ${info.duration}. Universities set a maximum period to finish, which is longer than the standard duration.` },
+            { q: `What is the eligibility for online ${program}?`, a: `${info.level === 'Postgraduate' ? 'A bachelor\'s degree from a recognised university. Many universities ask for 50% marks, so check the programme page.' : 'Class 12 (10+2) or equivalent from a recognised board, including open schooling. Some universities set a minimum percentage, so check the programme page.'}` },
           ].map((faq, i) => (
             <details key={i} className="rounded-xl border border-slate-200 bg-white">
               <summary className="px-5 py-3 text-sm font-semibold cursor-pointer" style={{ color: '#0B1533' }}>{faq.q}</summary>

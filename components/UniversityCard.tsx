@@ -66,7 +66,10 @@ function getApprovalEntry(tag: string) {
   return null
 }
 
-export default function UniversityCard({ u, highlightProgram, specSlug }: { u: UniversityCardData; highlightProgram?: string; specSlug?: string }) {
+// programFee: the governed fee for the programme the hub is about. Pass it on
+// non-MBA hubs, where u.feeMin/feeMax (MBA-led) would print the wrong
+// programme's fee. undefined keeps the old behaviour; null means "not known".
+export default function UniversityCard({ u, highlightProgram, specSlug, programFee }: { u: UniversityCardData; highlightProgram?: string; specSlug?: string; programFee?: string | null }) {
   const [enquiryOpen, setEnquiryOpen] = useState(false)
 
   const location = u.city || u.region || 'India'
@@ -204,12 +207,15 @@ export default function UniversityCard({ u, highlightProgram, specSlug }: { u: U
           {/* Fees */}
           <div className="flex items-end justify-between pt-3 border-t border-slate-100">
             <div>
-              <div className="text-xs mb-0.5 text-[var(--ink-3)]">Total fees</div>
+              <div className="text-xs mb-0.5 text-[var(--ink-3)]">{programFee !== undefined && highlightProgram ? `${highlightProgram} total fees` : 'Total fees'}</div>
               <div className="font-bold text-base" style={{ color:'var(--navy-light)' }}>
-                {formatFee(u.feeMin)} – {formatFee(u.feeMax)}
+                {programFee === undefined
+                  ? <>{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</>
+                  : programFee ?? 'Ask counsellor'}
               </div>
             </div>
-            {u.emiFrom > 0 && (
+            {/* emiFrom is MBA-derived, so it is hidden when a programme fee is shown */}
+            {programFee === undefined && u.emiFrom > 0 && (
             <div className="text-right">
               <div className="text-xs mb-0.5 text-[var(--ink-3)]">EMI from</div>
               <div className="font-semibold text-sm" style={{ color:'var(--amber)' }}>{u.emiFrom > 0 ? `₹${u.emiFrom.toLocaleString()}/mo` : 'On request'}</div>
