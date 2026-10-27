@@ -48,13 +48,13 @@ const PROGRAM_INFO: Record<string, { title: string; level: string; duration: str
     title: 'Online MA in India',
     level: 'Postgraduate',
     duration: '2 Years',
-    description: 'Master of Arts. Available in subjects like Economics, English, Hindi, Political Science, Public Administration, and Psychology. Suitable for government exam preparation and teaching careers.',
+    description: 'Master of Arts. A 2-year postgraduate degree you can join with a bachelor\'s degree. The subjects UGC-DEB universities offer online most often are Sociology, English, Political Science, Economics, History and Public Administration. It counts the same as a campus MA under UGC rules, which matters for government exams and teaching eligibility.',
   },
   BA: {
     title: 'Online BA in India',
     level: 'Undergraduate',
     duration: '3 Years',
-    description: 'Bachelor of Arts. Foundation degree in humanities and social sciences. Covers subjects like English, Hindi, Economics, Political Science, Sociology, and Psychology.',
+    description: 'Bachelor of Arts. A 3-year undergraduate degree you can join after Class 12. The subjects UGC-DEB universities offer online most often are Political Science, English, History, Sociology and Economics. It counts the same as a campus BA under UGC rules, so it supports a later MA, government exams and teaching qualifications.',
   },
   MSc: {
     title: 'Online MSc in India',
