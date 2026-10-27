@@ -3,6 +3,13 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'online-diploma-courses-india': [
+    { label: 'Online PG diploma 2026-27', value: '8 at Amity and VTU', green: true },
+    { label: 'Distance PG diploma', value: '18 entries (ODL)' },
+    { label: 'UGC covers', value: 'Degrees and 2-year PG diplomas' },
+    { label: 'Engineering diploma online', value: 'Not allowed (AICTE 5.1(b))' },
+    { label: 'Diploma after 10th', value: 'Outside UGC-DEB; check awarding body' },
+  ],
   'online-msw-india': [
     { label: 'Online MSW 2026-27', value: '5 universities UGC-DEB entitled', green: true },
     { label: 'Distance MSW 2026-27', value: '29 universities (ODL)' },

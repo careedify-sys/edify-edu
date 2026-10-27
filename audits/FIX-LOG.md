@@ -1,5 +1,29 @@
 # Fix log
 
+## 2026-10-27 · Unsourced salary-source bylines and invented completion rates removed from blog posts
+
+House rule: no fabricated stats, approved sources only. A scan of published posts found 52 with statistic-like claims
+that cite no approved source. This pass covers the two clear-cut kinds; salary figures in body text await Rishi.
+
+1. 18 bylines read "Salary data sourced from NASSCOM Tech Hiring Report 2026, Naukri.com Job Speak Q1 2026, 6figr ...
+AON ... LinkedIn India Hiring Index ...". None is an approved source and the named reports could not be confirmed. Each
+now says salary figures are indicative ranges, not survey results. Plus 4 one-offs: a Bengaluru line citing "LinkedIn
+alumni cluster analysis", two "2024-25 cohort feedback/analysis" lines, and "UGC ODL Regulations 2018" (it is 2020).
+Official-source bylines (IIM portals, Pay Commission, RBI, NAAC) were left alone.
+
+2. Completion and drop-out rates in 7 posts ("35 to 45 percent complete in 2 years", "60 to 75 percent"), attributed to
+"analysis of 4 batches". No university or UGC publishes these. Two sections replaced with an honest one listing what to ask
+the university (maximum duration, structure, re-registration, exams); single sentences reworded without the figure.
+
+## 2026-10-27 · New post: online diploma courses, from the UGC-DEB register and AICTE handbook
+
+Keyword gap diploma rows: "online diploma courses" (P3, 3,600/mo), "online diploma courses after 10th" 390, "apply diploma
+online" 390, "online pg diploma" 260, "online diploma courses in india" 260, "diploma in civil engineering online" 260.
+UGC notice F.No. 1-34/2024 scopes the ODL/Online Regulations to degrees and two-year PG diplomas. The HEI register lists 8
+online PG diplomas for 2026-27 (Amity 4, VTU 4) and 18 ODL entries. AICTE APH 2024-27 cl. 5.1(b) bars ODL for engineering
+diplomas. Diplomas after Class 10 and certificates are outside UGC-DEB; the post says to check the awarding body and makes
+no claims beyond that.
+
 ## 2026-10-27 · "Is online MBA worth it" rewritten: fabricated statistics removed
 
 Keyword gap "Worth-it guide: online MBA" rows (3,240/mo: "is an online mba worth it" 1,300, "is online mba worth it" 1,300,
