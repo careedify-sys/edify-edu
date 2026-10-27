@@ -181,3 +181,4 @@ eligibility follows the regulator. Feeds item 8 and the "one year online mba" ro
 - 2026-10-27 · diploma cluster (~5,200/mo): /blog/online-diploma-courses-india (8 online PG diplomas 2026-27; engineering diplomas barred). "online courses after 12th" already covered by online-bachelors-ug-courses-india.
 - 2026-10-27 · MBA spec rows: healthcare/hospital administration (1,000) and HR (800) hub titles fixed.
 - 2026-10-27 · MBA head terms (~14,600/mo): /programs/mba retitled with "Courses"; working-professionals and executive MBA titles fixed.
+- 2026-10-27 · BBA / BCA / MCA hubs (bba online 2,900; online bba course 1,600; online mca course 1,900; mca online 1,300; bca online 1,300; online bca course 1,300; degree/program tails ≈ 13,400/mo): hub titles "Online {X} Courses in India 2026: N UGC-DEB Universities" (57 chars), descriptions 132-136 chars, H1s aligned. BCA/MCA added to PROGRAM_HUB_SEO_SLUGS so the collision gate covers them.

@@ -15,19 +15,19 @@ const PROGRAM_INFO: Record<string, { title: string; level: string; duration: str
     description: 'Master of Business Administration. UGC-DEB approved online MBA is legally equivalent to campus MBA under 2020 regulations. Valid for government jobs, PSU recruitment, and private-sector employment.',
   },
   MCA: {
-    title: 'Online MCA in India',
+    title: 'Online MCA Courses in India',
     level: 'Postgraduate',
     duration: '2 Years',
     description: 'Master of Computer Applications. Designed for IT professionals and graduates seeking advanced computing skills. Covers software engineering, AI/ML, data science, and cybersecurity.',
   },
   BBA: {
-    title: 'Online BBA in India',
+    title: 'Online BBA Courses in India',
     level: 'Undergraduate',
     duration: '3 Years',
     description: 'Bachelor of Business Administration. Foundation management degree for students after 12th. Covers marketing, finance, HR, and operations fundamentals.',
   },
   BCA: {
-    title: 'Online BCA in India',
+    title: 'Online BCA Courses in India',
     level: 'Undergraduate',
     duration: '3 Years',
     description: 'Bachelor of Computer Applications. Entry-level IT degree covering programming, databases, web development, and computer networks. Gateway to MCA or direct IT employment.',

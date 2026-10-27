@@ -4539,3 +4539,11 @@ stop. Caught by injecting that exact URL before trusting it. A blocklist cannot
 recognise the next lookalike, because a lookalike is built from the university's
 own name and a name heuristic would clear it while flagging honest abbreviations
 like `onlineuu.in`. The defence stays human, and is written on the field.
+
+## BBA, BCA and MCA hub titles for the keyword-gap head terms (2026-10-27)
+
+**What:** `/programs/bba` retitled "Online BBA Courses in India 2026: 80 UGC-DEB Universities". `/programs/bca` and `/programs/mca` had no override and fell through to the generic template; both now get the same pattern (57 characters each). Descriptions cut to 132-136 characters, so the clamp no longer truncates the BBA one (it ran 167). The `PROGRAM_INFO` titles in `components/ProgramHubClient.tsx` now say "Courses" too, so H1 and title agree.
+
+**Why:** the keyword export lists "bba online" (2,900/mo), "online mca course" (1,900), "online bba course" (1,600), "mca online" and "bca online" (1,300 each) as Missing. The BCA and MCA descriptions say why the degree may run online (practicals are coding, UGC Regs 2020 Reg 4(C)(ii) lab proviso), the same answer the BSc and MSc hubs give. No fee figures, because `u.feeMin` is MBA-led.
+
+**Gate:** `bca` and `mca` added to `PROGRAM_HUB_SEO_SLUGS`, so `check-hub-blog-title-collision` now checks them (26 hub titles vs 240 posts, clean).

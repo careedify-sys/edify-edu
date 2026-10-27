@@ -65,10 +65,24 @@ export function getProgramHubSeo(
         title: `Online MBA Courses in India ${year}: ${uniCount} UGC-DEB Universities`,
         description: `Online MBA courses from ${uniCount} UGC-DEB entitled universities: a 2-year degree for graduates. Compare fee, specialisation, NAAC grade and NIRF rank.`,
       }
+    // BBA / BCA / MCA (keyword gap 2026-10-26): "bba online" 2,900/mo, "online bba
+    // course" 1,600, "online mca course" 1,900, "mca online" 1,300, "bca online"
+    // 1,300, "online bca course" 1,300, all Missing. Titles carry "Courses" like
+    // the MBA hub; descriptions stay under 145 characters so the clamp keeps them whole.
     case 'bba':
       return {
-        title: `Online BBA in India ${year}: ${uniCount} UGC-DEB Universities Compared`,
-        description: `Online BBA: a 3-year undergraduate degree you can join after Class 12. ${uniCount} UGC-DEB approved universities compared on fee, NAAC grade and specialisation. No paid rankings.`,
+        title: `Online BBA Courses in India ${year}: ${uniCount} UGC-DEB Universities`,
+        description: `Online BBA: a 3-year degree after Class 12. Compare ${uniCount} UGC-DEB universities on fee, NAAC grade and specialisation. No paid rankings.`,
+      }
+    case 'bca':
+      return {
+        title: `Online BCA Courses in India ${year}: ${uniCount} UGC-DEB Universities`,
+        description: `Online BCA: a 3-year computing degree after Class 12, allowed online because its practicals are coding. Compare ${uniCount} UGC-DEB universities.`,
+      }
+    case 'mca':
+      return {
+        title: `Online MCA Courses in India ${year}: ${uniCount} UGC-DEB Universities`,
+        description: `Online MCA: a 2-year postgraduate computing degree, allowed online because its practicals are coding. Compare ${uniCount} UGC-DEB universities.`,
       }
     // BSc: only two universities list an online BSc, and both are in lab-free
     // subjects. The searcher's real question is which subjects can run online,
@@ -104,4 +118,4 @@ export function getProgramHubSeo(
 }
 
 /** Every programme slug that carries a hand-written override. Used by the gate. */
-export const PROGRAM_HUB_SEO_SLUGS: readonly string[] = ['mba', 'bba', 'bsc', 'ba', 'ma', 'msc']
+export const PROGRAM_HUB_SEO_SLUGS: readonly string[] = ['mba', 'bba', 'bca', 'mca', 'bsc', 'ba', 'ma', 'msc']
