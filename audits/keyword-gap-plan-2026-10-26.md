@@ -174,3 +174,4 @@ eligibility follows the regulator. Feeds item 8 and the "one year online mba" ro
 - Item 10 SHIPPED 2026-10-26. Writing queue 1-10 complete. Remaining: Bucket C validity explainers (need Rishi), psychology dispute, measure Bucket A ~23 Nov.
 
 - 2026-10-27 · BA / MA / MSc programme hubs (export rows: online BA 8,120/mo, online MA 5,620/mo, online MSc 5,540/mo): titles, descriptions and hub copy rewritten for the head terms. Measure with Bucket A ~23 Nov.
+- 2026-10-27 · one year online mba (720) + 1 year online mba (390): answered inside /blog/1-year-mba-india-executive-mba-2026 from UGC circular 7-2/2026; Jindal claims corrected.

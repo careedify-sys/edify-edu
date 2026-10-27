@@ -1,5 +1,18 @@
 # Fix log
 
+## 2026-10-27 · One-year online MBA answered from the UGC circular; Jindal section corrected
+
+Keyword gap rows "one year online mba" (P1, 720/mo) and "1 year online mba" (P2, 390/mo). The existing post
+1-year-mba-india-executive-mba-2026 (position ~8, 1,233 impressions) called O.P. Jindal's 12-month online MBA
+"India's only 1-year fully online UGC-recognised MBA" with "Graduation with 50% marks" eligibility.
+
+UGC circular F.No. 7-2/2026 (DEB-NWR), 28 July 2026, read from the original: a one-year online PG may be offered
+only where the two-year online PG is already UGC-entitled, admission is restricted to four-year Honours graduates,
+and MBA/MCA/PGDM entry follows the regulator. Added an answer section and FAQ built on it. Jindal is an Institution
+of Eminence and not on the August 2026 UGC-DEB list, so the section now says that and tells readers to confirm the
+approval and eligibility with JGU. Removed "only" superlatives, "top 5% globally", "no other Indian online MBA
+holds AACSB", and an unverified alumni-employer and salary list.
+
 ## 2026-10-27 · BA, MA and MSc programme hubs: titles and copy for the keyword-gap head terms
 
 From the keyword gap export: "Programme hub: online BA" (12 rows, 8,120/mo, head term "online ba degree" 1,900),
