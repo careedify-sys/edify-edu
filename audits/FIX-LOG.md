@@ -4553,3 +4553,11 @@ like `onlineuu.in`. The defence stays human, and is written on the field.
 **What:** `/programs/bcom` and `/programs/mcom` get hand-written overrides, "Online B.Com Courses in India 2026: 57 UGC-DEB Universities" and the M.Com equivalent (59 chars), plus matching H1s. Both slugs are now in `PROGRAM_HUB_SEO_SLUGS`.
 
 **Why:** "mcom online" (880/mo), "online b com course" (480), "online mcom course" and "bcom online" (390 each) are Missing in the keyword export. The generic template called the universities "Colleges" and told readers "Admissions 2026 open", which no source on the page backs.
+
+## IGNOU MBA fee: Rs 31,500 in 26 posts, Rs 66,000 on IGNOU's portal (2026-10-27)
+
+**What:** every IGNOU MBA fee of Rs 31,500 (86 occurrences across 26 posts, plus one "Rs 31.5K") now reads Rs 66,000. The per-semester figure Rs 7,875 (31,500 / 4) became "Rs 16,000 to Rs 18,000". 27 claims that leaned on the old figure were rewritten: "absolute cheapest UGC-DEB approved MBA in the country", "Single cheapest UGC-recognised MBA", "cheapest A++ option in India", "Cheapest UGC-DEB" table labels, IGNOU inside "under Rs 50K" budget buckets, a "6x to 8x" gap (now roughly 3x), "over 6x fee variation" (about 3x), break-even "under 2 months" (just over 3), and three titles carrying a "Rs 31,500 to ..." range (range dropped, memory: never derive fee superlatives). The five Rs 31,500 figures in the Integral University review are Integral's BA fee and stay.
+
+**Why:** IGNOU's own programme pages, read 27 Oct 2026, list MBA (ODL, ignouadmission.samarth.edu.in) and MBAOL (online, ignouiop.samarth.edu.in) at "Rs.16,000/- per semester for 1st, 2nd and 4th semester Rs.18,000/- for 3rd semester", plus registration and development fees. That is Rs 66,000, which is what lib/data.ts already held. At Rs 66,000 the "cheapest in India" lines were false against our own records: Andhra University Rs 62,200, University of Madras Rs 20K-40K, NSOU Rs 20-30K. This closes the IGNOU conflict parked for Rishi.
+
+**Left alone:** IGNOU MBA Banking and Finance (Rs 33,000) and IGNOU MCA (Rs 36,000) table rows in two posts carry their own figures, which were not checked here. The IGNOU online MCA on the portal is a separate programme (MCAOL).
