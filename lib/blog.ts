@@ -25193,6 +25193,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>FMS Delhi at Rs 2 lakh fee is the highest ROI tier-1 MBA in India if you can secure admission (CAT 99-plus, less than 200 seats). ISB's 1-year format saves time but costs Rs 40 lakh. IIM PGP is the benchmark across all dimensions.</p>
 
+<p>XLRI also runs an online PGDM for working professionals, a separate product from the residential programme in this table. Our <a href="/blog/xlri-online-mba-review-2026">XLRI MBA fees</a> breakdown covers what that online track costs and who it suits.</p>
+
 <h2>IIM PGP vs IIM Executive vs Online MBA: Quick Picker</h2>
 
 <ul>
@@ -29029,7 +29031,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Is Galgotias Online MBA the cheapest accredited option?', a: 'At Rs. 80,200 total, Galgotias is the cheapest NAAC A+ online MBA in India. The only cheaper options typically lack NAAC accreditation or UGC-DEB approval.' },
       { q: 'Who should apply for Galgotias Online MBA?', a: 'Best suited for working professionals in NCR, UP, and North India who need the formal MBA credential without spending Rs. 2+ lakhs. Particularly good for the Business Analytics track which covers Python, AI for Business, and data tools.' }
     ],
-    content: `<p>If you searched "galgotias university mba fees" or "galgotias university distance", note that Galgotias University runs both campus and online MBA programmes. The full-time campus MBA at Galgotias Greater Noida costs approximately ₹3L to ₹5L total. The online MBA reviewed on this page costs ₹80,200 total. The semester-wise structure and EMI options are on the <a href="/universities/galgotias-university-online/mba" class="ilink">Galgotias University online MBA fees</a> page. Galgotias does not currently offer a separate "distance" MBA. The online programme is the only non-campus option available through UGC-DEB approval. This review covers the online programme.</p>
+    content: `<p>If you searched "galgotias university mba fees", "galgotia mba fees" (the spelling without the s) or "galgotias university distance", note that Galgotias University runs both campus and online MBA programmes. The full-time campus MBA at Galgotias Greater Noida costs approximately ₹3L to ₹5L total. The online MBA reviewed on this page costs ₹80,200 total. The semester-wise structure and EMI options are on the <a href="/universities/galgotias-university-online/mba" class="ilink">Galgotias University online MBA fees</a> page. Galgotias does not currently offer a separate "distance" MBA. The online programme is the only non-campus option available through UGC-DEB approval. This review covers the online programme.</p>
 
 <p>Rs. 80,200. That is the total cost of a two-year online MBA from a NAAC A+ university in India's NCR region. <a href="/universities/galgotias-university-online" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Galgotias University Online</a> MBA sits at the cheapest end of the legitimate online MBA market, and yet it holds UGC-DEB approval, NIRF Band 101-125 (Management, 2025) ranking, and a curriculum that covers modern topics like AI for Business and Python analytics.</p>
 

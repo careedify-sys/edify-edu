@@ -67,6 +67,25 @@ session and mode columns. 2026-27 July session: Online MSW entitled for Guru Gha
 Amity and University of Lucknow; 29 universities in ODL (30 rows). IGNOU and Mizoram were online in 2025-26 but not
 2026-27. No fees or NAAC grades stated; facts from the register and the 2020 Regulations only.
 
+## 2026-10-27 · Exact-match anchors to consolidate five commercial queries onto the review blogs
+
+Semrush Position Tracking (India, mobile, 27 Oct) showed Google ranking the wrong URL for five queries: "Symbiosis
+online MBA" (/mba/international-business at 73), "Galgotia MBA fees" (hub at 33, blog at 4 for the "galgotias"
+spelling), "Sikkim Manipal University MBA fees" (hub at 50, blog at 4), "Amrita online MBA" (/mba/finance at 88) and
+"XLRI MBA fees". The competing hubs and spec pages linked the blog only under its full title, or not at all (the
+Amrita MBA hub had no UNIVERSITY_PROGRAM_LINKS entry), so nothing on the site told Google which page owns the query.
+
+New `keywordLink` on ProgramLinks, rendered by ReviewKeywordLink on the hub (inside ProgramBlogLinks, above the
+existing list) and on every spec page under it (UniSpecBody). 37 pages: Symbiosis 10, Galgotias 8, SMU 7, Amrita 12.
+XLRI has no hub, so its link is one sentence in the IIM ranking post. No existing link removed, no title or fee changed.
+
+"Galgotia" spelling added to the Galgotias MBA review intro and to the Galgotias BCA hub intro (new BCA_INTRO_OVERRIDES
+in app/universities/[id]/bca/page.tsx). Not the BBA hub: it is cited in an AI Overview, so its copy was left alone.
+
+Open: the Galgotias review's first paragraph still links the hub with the anchor "Galgotias University online MBA
+fees", which votes the other way. Left in place because links were not to be removed; worth revisiting at the next
+position read. The IIM ranking post now has 11 internal links, one above the house 10.
+
 ## 2026-10-27 · /fees retitled for "online mba fees"
 
 Keyword gap "Fee guide: online MBA fees" rows: "online mba fees" 3,600/mo, "mba online courses fees" 1,300, "online mba
