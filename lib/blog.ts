@@ -43535,7 +43535,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <h3>Shivaji University, Kolhapur</h3>
 
-<p>Shivaji University holds NAAC A++ accreditation and NIRF #65 University rank. The online MBA covers 7 specialisations including Data Science and Digital Marketing alongside standard Finance, Marketing, and HR tracks. Fee range: ₹90,000 to ₹2,00,000.</p>
+<p>Shivaji University holds NAAC A++ accreditation and sits in the NIRF 2025 University rank band of 151-200. The online MBA covers 7 specialisations including Data Science and Digital Marketing alongside standard Finance, Marketing, and HR tracks. Fee range: ₹90,000 to ₹2,00,000.</p>
 
 <p>Shivaji University is a state public university. This gives it extra weight for Maharashtra government job applications, MPSC exams, and public sector hiring where a government university brand carries recognition that private deemed universities often do not match.</p>
 
@@ -43547,7 +43547,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <h3>University of Mumbai</h3>
 
-<p>The University of Mumbai holds NAAC A++ accreditation and NIRF #61 University rank. MBA is listed among the university's online programme offerings through its Centre for Distance and Open Education. Specific MBA fee structure and specialisation details should be confirmed with our <a href="/contact">counsellor</a> before applying. The general university fee range for online programmes is ₹90,000 to ₹2,00,000.</p>
+<p>The University of Mumbai holds NAAC A++ accreditation and NIRF #54 University rank (NIRF 2025). MBA is listed among the university's online programme offerings through its Centre for Distance and Open Education. Specific MBA fee structure and specialisation details should be confirmed with our <a href="/contact">counsellor</a> before applying. The general university fee range for online programmes is ₹90,000 to ₹2,00,000.</p>
 
 <p>As one of India's oldest public universities, the Mumbai University brand carries strong recognition for Maharashtra government jobs and across Western India's corporate market.</p>
 

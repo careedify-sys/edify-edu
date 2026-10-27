@@ -1,5 +1,17 @@
 # Fix log
 
+## 2026-10-27 · NIRF 2025 checked at the source; Mumbai and Shivaji blog ranks fixed
+
+Read the NIRF 2025 University and Management tables on nirfindia.org (tbl_overall, plus the 101-150 and 151-200
+band pages). They confirm every value used in the blog corrections: University MAHE 3, Amrita 8, Chandigarh 19,
+Amity 22, Symbiosis 24, Kalasalingam 28, LPU 31, Madras 38, NMIMS 52, Mumbai 54, MUJ 58, JAIN 62, Christ 63;
+Management Symbiosis (SIBM) 11, NMIMS 24, Amrita 26, Chandigarh 32, MAHE (TAPMI) 39, LPU 44, Amity 49, Christ 57,
+JAIN 73, MUJ 81.
+
+Fixed in online-mba-maharashtra-2026: University of Mumbai "#61" -> #54; Shivaji "#65" -> the 151-200 University band.
+Yenepoya is also in the 151-200 band with no Management rank; the #63/#57 line flagged earlier is about Christ
+University and is correct. lib/data.ts holds Shivaji and Yenepoya as unranked (999), which is consistent with a band.
+
 ## 2026-10-27 · Blog posts quoted stale and wrong NIRF ranks
 
 No gate covers lib/blog.ts. An audit of all 375 "NIRF #N" mentions, each matched to the university named just
