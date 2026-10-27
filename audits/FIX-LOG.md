@@ -1,5 +1,19 @@
 # Fix log
 
+## 2026-10-27 · "Is online MBA worth it" rewritten: fabricated statistics removed
+
+Keyword gap "Worth-it guide: online MBA" rows (3,240/mo: "is an online mba worth it" 1,300, "is online mba worth it" 1,300,
+"...in india" 320, "online mba with placement" 320). The target post is-online-mba-worth-it-2026 (position 8.16, 0.17% CTR)
+carried figures with no approved source, against the house rule: completion rates ("60 to 75 percent" online, "35 to 45
+percent" IGNOU), a nine-row employer acceptance table attributed to a "Naukri 2025 HR survey of 1,200 HR managers",
+"UGC data from 2022 showed enrolments jumped 179%", salary uplifts of 20-50%, two invented CTC/ROI tables, "IGNOU Rs
+31,500" (data: Rs 66,000), "after 2022 UGC confirmed" (it is Regulation 22 of 2020) and a byline citing "5 years of
+counsellor alumni data".
+
+Rewritten on the same URL and title: answer-first, sourced to Regulations 14 and 22, the one-year circular and the DEB
+register; fees deferred to the comparison tool; an explicit "what we cannot tell you" section saying no official salary
+or completion data exists. FAQs rewritten (FAQPage schema intact). Unverified fee figures in the post: 8 -> 0.
+
 ## 2026-10-27 · New post: online MSW, from the UGC-DEB HEI programme register
 
 Keyword gap rows "online msw programs" (P2, 590/mo) and "masters in social work online" (P2, 390/mo). The August 2026
