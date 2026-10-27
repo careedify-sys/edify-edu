@@ -1,5 +1,14 @@
 # Fix log
 
+## 2026-10-27 · New post: online diploma courses, from the UGC-DEB register and AICTE handbook
+
+Keyword gap diploma rows: "online diploma courses" (P3, 3,600/mo), "online diploma courses after 10th" 390, "apply diploma
+online" 390, "online pg diploma" 260, "online diploma courses in india" 260, "diploma in civil engineering online" 260.
+UGC notice F.No. 1-34/2024 scopes the ODL/Online Regulations to degrees and two-year PG diplomas. The HEI register lists 8
+online PG diplomas for 2026-27 (Amity 4, VTU 4) and 18 ODL entries. AICTE APH 2024-27 cl. 5.1(b) bars ODL for engineering
+diplomas. Diplomas after Class 10 and certificates are outside UGC-DEB; the post says to check the awarding body and makes
+no claims beyond that.
+
 ## 2026-10-27 · "Is online MBA worth it" rewritten: fabricated statistics removed
 
 Keyword gap "Worth-it guide: online MBA" rows (3,240/mo: "is an online mba worth it" 1,300, "is online mba worth it" 1,300,

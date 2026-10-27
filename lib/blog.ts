@@ -50577,6 +50577,120 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <p class="disclaimer"><em>Checked against the UGC-DEB register on 27 October 2026. Entitlements are granted by session and can change. Confirm the current position on deb.ugc.ac.in before you enrol.</em></p>
     `,
   },
+  {
+    slug: 'online-diploma-courses-india',
+    title: 'Online Diploma Courses in India 2026: Which Are UGC-Valid',
+    seoTitle: 'Online Diploma Courses India 2026: Which Are Valid?',
+    h1Title: 'Online Diploma Courses in India: Which Diplomas UGC and AICTE Allow Online, and Which They Do Not',
+    metaDescription: 'Only two-year PG diplomas come under UGC online entitlement: 8 at two universities for 2026-27. Engineering diplomas cannot run online. How to check any diploma.',
+    category: 'Online Degree Validity',
+    tags: ['Online Diploma', 'PG Diploma Online', 'Diploma Courses', 'UGC-DEB', 'AICTE', 'Online Degree Validity'],
+    publishedAt: '2026-10-27',
+    readTime: 7,
+    targetKeyword: 'online diploma courses',
+    relatedUniversities: ['amity-university-online', 'vtu-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/30858451/pexels-photo-30858451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@shootsaga" target="_blank" rel="noopener nofollow">Anil  Sharma</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling young girl with headset on a video call, studying online at home.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'Are online diploma courses valid in India?', a: 'It depends on the kind of diploma. UGC\'s ODL and Online Regulations cover degrees and two-year postgraduate diplomas, so an online PG diploma is valid when the university is UGC-DEB entitled for it in your session. Engineering diplomas cannot run in distance mode under AICTE rules, and short certificate courses are not UGC-entitled qualifications at all.' },
+      { q: 'Which universities offer an online PG diploma for 2026-27?', a: 'The UGC-DEB programme register lists eight online postgraduate diplomas for the 2026-27 session, at two universities: Amity University (Machine Learning and AI, Management, Logistics, Data Science) and Visvesvaraya Technological University (Big Data Analytics, Software Testing, Investment and Risk Management, Financial and Marketing Analytics).' },
+      { q: 'Can I do a diploma in civil or electrical engineering online?', a: 'No. AICTE\'s Approval Process Handbook 2024-2027 says the Council shall not allow Open and Distance Learning at diploma, degree or postgraduate degree level in Engineering and Technology, and UGC prohibits engineering in online mode.' },
+      { q: 'Are online diploma courses after 10th valid?', a: 'Diplomas after Class 10, such as polytechnic diplomas, are not covered by UGC-DEB online entitlement. Engineering ones cannot run in distance mode under AICTE rules. For any other diploma after Class 10, check the recognition with the state board or council that awards it before you enrol.' },
+      { q: 'Is an online PG diploma the same as a PGDM?', a: 'No. A PG diploma in the UGC-DEB register is awarded by a university. A PGDM is awarded by an AICTE-approved standalone institute and needs AICTE approval for online mode.' },
+      { q: 'Are online certificate courses like Six Sigma recognised?', a: 'They are professional certifications, not UGC-entitled degrees or diplomas, so UGC-DEB does not cover them. Their value depends on the body that issues them and how employers in your field view it.' },
+    ],
+    ctaTitle: 'Check a programme before you pay',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">"Online diploma" covers everything from a two-year postgraduate diploma to a weekend certificate. Only some of them are qualifications UGC or AICTE allow online. Here is which, with the register entries for 2026-27.</p>
+
+<p><strong>Short answer:</strong> UGC's online entitlement covers degrees and <strong>two-year postgraduate diplomas</strong>. For the <strong>2026-27 session</strong>, the UGC-DEB programme register lists <strong>eight online PG diplomas at two universities</strong>, Amity University and Visvesvaraya Technological University. <strong>Engineering diplomas cannot run online or by distance</strong> under AICTE rules. Diplomas after Class 10 and short certificate courses sit outside UGC-DEB entitlement, so check them with the body that awards them.</p>
+
+<div class="callout-key">
+<strong>Online diplomas in one box (checked 27 October 2026)</strong>
+<ul>
+<li><strong>Online PG diploma, 2026-27:</strong> 8 programmes at 2 universities (UGC-DEB HEI programme register)</li>
+<li><strong>Distance (ODL) PG diploma, 2026-27:</strong> 18 more entries</li>
+<li><strong>What UGC covers:</strong> degrees and two-year postgraduate diplomas (UGC notice F.No. 1-34/2024 (DEB-I))</li>
+<li><strong>Engineering diploma online:</strong> not allowed (AICTE Approval Process Handbook 2024-2027, clause 5.1(b))</li>
+<li><strong>Diploma after Class 10, certificates:</strong> outside UGC-DEB; check the awarding body</li>
+</ul>
+</div>
+
+<h2>Which diplomas does UGC allow online?</h2>
+
+<p>UGC's notice F.No. 1-34/2024 (DEB-I) of 11 November 2024 states what its ODL and Online Regulations cover: degrees at undergraduate and postgraduate level and postgraduate diplomas of two years' duration. So the diploma that a university can be entitled to offer online is a two-year postgraduate diploma, and only in a discipline that is not on UGC's prohibited list.</p>
+
+<h2>Online PG diplomas entitled for 2026-27</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>These are the postgraduate diploma entries marked Online for the 2026-27 session in the UGC-DEB HEI programme register:</p>
+
+<table>
+<thead><tr><th>University</th><th>Online PG diploma</th></tr></thead>
+<tbody>
+<tr><td rowspan="4"><a href="/universities/amity-university-online">Amity University</a></td><td>Machine Learning and Artificial Intelligence</td></tr>
+<tr><td>Management</td></tr>
+<tr><td>Logistics</td></tr>
+<tr><td>Data Science</td></tr>
+<tr><td rowspan="4"><a href="/universities/vtu-online">Visvesvaraya Technological University</a></td><td>Big Data Analytics</td></tr>
+<tr><td>Software Testing</td></tr>
+<tr><td>Investment Management and Risk Management</td></tr>
+<tr><td>Financial Analytics and Marketing Analytics</td></tr>
+</tbody>
+</table>
+
+<p>Another 18 postgraduate diploma entries for 2026-27 are in distance (ODL) mode. Entitlements are granted by session, so check the register for the session you are applying to.</p>
+
+<p class="pull">If a "diploma" is not a two-year PG diploma in the UGC-DEB register, UGC online entitlement does not cover it.</p>
+
+<h2>Can you do an engineering diploma online?</h2>
+
+<p>No. AICTE's Approval Process Handbook 2024-2027 states, in clause 5.1(b) of its chapter on distance and online learning, that the Council shall not allow Open and Distance Learning at diploma, degree or postgraduate degree level in Engineering and Technology, among other fields. UGC separately lists engineering among the disciplines prohibited in online mode. That rules out a valid online diploma in civil, mechanical or electrical engineering. Our <a href="/blog/online-btech-mtech-india">online B.Tech and M.Tech explainer</a> covers the rule in detail.</p>
+
+<h2>What about diplomas after Class 10?</h2>
+
+<p>Diplomas you join after Class 10, such as polytechnic diplomas, are not part of UGC-DEB online entitlement. Engineering diplomas at this level fall under the AICTE bar above. For any other diploma after Class 10, ask which board or council awards it and check its recognition with that body before you pay.</p>
+
+<h2>PG diploma or PGDM?</h2>
+
+<p>They are different qualifications. The PG diplomas above are awarded by universities under UGC-DEB entitlement. A PGDM is awarded by an AICTE-approved standalone institute, and it can run online only with AICTE approval for that mode. Our <a href="/blog/online-pgdm-india">online PGDM guide</a> explains the AICTE conditions.</p>
+
+<h2>Certificate courses</h2>
+
+<p>Short online courses and professional certifications, such as Six Sigma or software certifications, are not UGC-entitled degrees or diplomas. They can still be useful, but their value depends on the body that issues them and how employers in your field view it, not on UGC.</p>
+
+<h2>How to check any online diploma</h2>
+
+<ol>
+<li><strong>Ask what it is:</strong> a two-year PG diploma, a PGDM, a diploma after Class 10, or a certificate.</li>
+<li><strong>For a PG diploma:</strong> find it in the UGC-DEB register and check the year, session and mode column. Our <a href="/guides/how-to-check-ugc-deb-approval">UGC-DEB approval guide</a> shows how, and you will need a <a href="/blog/ugc-deb-id-explained">DEB ID</a> to enrol.</li>
+<li><strong>For a PGDM:</strong> ask for the AICTE approval letter naming online mode and the current year.</li>
+<li><strong>For anything else:</strong> check recognition with the awarding body.</li>
+</ol>
+
+<p>If you want a full degree instead, our guide to <a href="/blog/online-masters-pg-courses-india">online master's and PG courses</a> lists what UGC permits online.</p>
+
+<div class="cta-box">
+<p><strong>Not sure what a diploma offer really is?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC-DEB HEI programme register, postgraduate diploma entries for 2026-27, read on 27 October 2026: deb.ugc.ac.in</li>
+<li>UGC public notice F.No. 1-34/2024 (DEB-I), 11 November 2024, scope of the ODL and Online Regulations and prohibited programmes: deb.ugc.ac.in</li>
+<li>AICTE Approval Process Handbook 2024-2027, Chapter V, clause 5.1(b): aicte-india.org</li>
+</ul>
+
+<p class="disclaimer"><em>Checked against the UGC-DEB register and AICTE handbook on 27 October 2026. Entitlements are granted by session. Confirm the current position before you enrol.</em></p>
+    `,
+  },
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))
