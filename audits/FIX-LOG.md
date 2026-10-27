@@ -1,5 +1,22 @@
 # Fix log
 
+## 2026-10-27 · Compare and spec-hub fees in exact rupees, discounts labelled, no derived per-semester
+
+c83b505 printed getDisplayFee's min/max in the compare table. Those come from parsing pd.fees, which is often
+abbreviated: LPU's "₹1.61L" became ₹1,61,000 against a portal figure of ₹1,61,600. Chandigarh's "₹1.80L" is not a CU
+figure, and both CU values were early-bird nets with no label. The per-semester row divided that total by four, giving
+a ₹45,000 CU never publishes. Rishi caught it before merge.
+
+Fix: lib/fees.ts getExactFee keeps getDisplayFee as the gate. It takes rupees only from an exact numeric field that
+agrees with it, and returns nothing otherwise. New lib/data.ts `feeBreakdown` holds list price, labelled net and
+published per-semester figure:
+- LPU and CU MBA: Rishi's verified Aug 2026 values.
+- MUJ MBA and MCA: the portal figures already in its comment.
+
+Five known drift pairs show the counsellor line. The MBA spec-hub range, FAQ and per-university table use the same
+path. The live floor there was "₹28K", a regex fragment. 11 of the 20 c83b505 values were wrong; the full table is in
+audits/tech-health-2026-10-27.md.
+
 ## 2026-10-27 · Tech-health decisions: DY Patil verify link, visible fees via getDisplayFee, Course startDate removed
 
 Rishi's calls on audits/tech-health-2026-10-27.md.

@@ -137,6 +137,21 @@ export interface University {
   // six others. Omit feeMax when the programme has one price.
   programFees?: Partial<Record<'mba' | 'bba' | 'mca' | 'bca' | 'mcom' | 'bcom' | 'btech' | 'mtech', { fee: number; feeMax?: number }>>
   /**
+   * Exact published fee components, in rupees, for programmes where the plain
+   * min/max would mix a list price with a discounted net. Read by getExactFee
+   * in lib/fees.ts, which prints "₹list list; ₹net label" and never a bare net.
+   * Added 2026-10-27: the compare table showed LPU's ₹1,61,600 semester-wise
+   * total as "₹1,61,000" and Chandigarh's early-bird nets as an unlabelled
+   * "₹1,65,000 - ₹1,80,000". Only figures read from the university's own
+   * portal belong here; perSemester only when the university publishes one.
+   */
+  feeBreakdown?: Partial<Record<'mba' | 'bba' | 'mca' | 'bca' | 'mcom' | 'bcom', {
+    list: number
+    net?: { min: number; max: number; label: string }
+    perSemester?: { list: number; net?: number; netLabel?: string }
+    source: string
+  }>>
+  /**
    * The university's OWN portal for its online programmes, https only.
    *
    * Added 2026-10-06 because nothing recorded where a fee came from, so every
@@ -485,6 +500,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     feeVerifiedOn: '2026-10-06',
     uniType: 'private',
     programFees: { bca: { fee: 122400 }, mca: { fee: 129600 } },
+    // MBA list Rs 2,00,000; Rs 1,61,600 paid semester-wise; Rs 1,46,240 paid as a
+    // lump sum. Official portal, recorded Aug 2026, confirmed by Rishi 2026-10-27.
+    // pd.fees "₹1.61L" is a truncation of 1,61,600, not a fee in its own right.
+    feeBreakdown: { mba: { list: 200000, net: { min: 146240, max: 161600, label: 'by payment plan (lump sum to semester-wise)' }, source: 'lpuonline.com, Aug 2026' } },
     logo: '/logos/university_logos/lpu-logo.svg',
     name: 'Lovely Professional University Online',
     abbr: 'LPUO',
@@ -1341,6 +1360,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // agreement with pd.fees; a bare list fee leaves the lower bound outside
     // tolerance and only passes via the drift fallback in lib/fees.ts.
     programFees: { mba: { fee: 156400, feeMax: 184000 }, mca: { fee: 147600, feeMax: 164000 }, bba: { fee: 144000 }, bca: { fee: 144000 } },
+    // The same portal figures as the comment above, labelled for tables.
+    feeBreakdown: {
+      mba: { list: 184000, net: { min: 156400, max: 156400, label: 'after 15% discount' }, perSemester: { list: 46000, net: 39100, netLabel: 'after 15% discount' }, source: 'officialUrl, read 2026-10-26' },
+      mca: { list: 164000, net: { min: 147600, max: 147600, label: 'after 10% discount' }, perSemester: { list: 41000, net: 36900, netLabel: 'after 10% discount' }, source: 'officialUrl, read 2026-10-26' },
+    },
     logo: '/logos/university_logos/muj-logo.svg',
     name: 'Manipal University Jaipur (MUJ) Online',
     abbr: 'MUJOM',
@@ -2396,6 +2420,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     id: 'chandigarh-university-online',
     shortName: 'Chandigarh', // uses "Chandigarh" in cuchd.in and on its own logo
     programFees: { bca: { fee: 177000 }, mca: { fee: 155000 } },
+    // MBA list Rs 2,20,000; after early-bird Rs 1,80,400 (Standard) and Rs 1,65,000
+    // (HBP and Business Analytics variants). Official portal, recorded Aug 2026,
+    // confirmed by Rishi 2026-10-27. CU publishes no per-semester MBA figure, and
+    // pd.fees "₹1.80L" is not a CU number.
+    feeBreakdown: { mba: { list: 220000, net: { min: 165000, max: 180400, label: 'after early-bird' }, source: 'CU Online portal, Aug 2026' } },
     logo: '/logos/university_logos/cu-online.svg',
     name: 'Chandigarh University Online',
     abbr: 'CUO',

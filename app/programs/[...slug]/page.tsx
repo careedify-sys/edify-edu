@@ -21,7 +21,8 @@ import ProgramPageClient from '@/components/ProgramPageClient'
 import MBAHubClient from '@/components/MBAHubClient'
 import MBASpecHubClient from '@/components/MBASpecHubClient'
 import ProgramHubClient from '@/components/ProgramHubClient'
-import { getDisplayFee } from '@/lib/fees'
+import { getDisplayFee, getExactFee, exactFeeBounds, formatExactFee } from '@/lib/fees'
+import { formatINR } from '@/lib/format'
 import { resolveSpecHref, hubResolves, isLinkable } from '@/lib/seo/safe-internal-links'
 
 // Where a university's page for this specialisation actually lives. Each
@@ -33,27 +34,6 @@ function uniSpecHref(u: { id: string; programDetails: Record<string, { specs?: u
 }
 import { formatUniversityDisplayName } from '@/lib/format'
 
-const SEMESTER_TO_TOTAL_IDS = new Set<string>([])
-
-function parseMbaFeeString(s: string, uniId?: string): { min: number; max: number } | null {
-  if (/emi|\/mo|per\s*month/i.test(s)) return null
-  const nums: number[] = []
-  const re = /([\d,.]+)\s*([LlKk])?/g
-  let m: RegExpExecArray | null
-  while ((m = re.exec(s)) !== null) {
-    let v = parseFloat(m[1].replace(/,/g, ''))
-    if (isNaN(v)) continue
-    const unit = (m[2] || '').toUpperCase()
-    if (unit === 'L') v *= 100000
-    else if (unit === 'K') v *= 1000
-    if (v > 0) nums.push(v)
-  }
-  if (nums.length === 0) return null
-  const lo = Math.min(...nums)
-  const hi = Math.max(...nums)
-  if (uniId && SEMESTER_TO_TOTAL_IDS.has(uniId)) return { min: hi, max: hi }
-  return { min: lo, max: hi }
-}
 
 const PM: Record<string, Program> = {
   'mba':'MBA','mca':'MCA','bba':'BBA','bca':'BCA','ba':'BA',
@@ -489,28 +469,32 @@ export default async function CatchAllProgramPage(
       specCardHrefs[u.id] = spec ?? (hubResolves(u.id, 'MBA') && isLinkable(hub) ? hub : `/universities/${u.id}`)
     }
 
-    // Build MBA-specific fee map from programDetails / programFees
+    // MBA fee per university for the spec hub's range, FAQ and table, from
+    // getExactFee. This regex-parsed pd.fees ("₹1.61L" became 1,61,000), took
+    // the first programFees number even when it was a discounted net, and fell
+    // back to the raw MBA-led feeMin when nothing parsed. A labelled fee counts
+    // at its list price in the range and prints with its label in the table.
     const mbaFeeMap: Record<string, { min: number; max: number }> = {}
+    const mbaFeeText: Record<string, string> = {}
     for (const slim of specMbaUnis) {
       const full = getUniversityById(slim.id)
       if (!full) continue
-      const mbaFeeOverride = full.programFees?.mba?.fee
-      if (mbaFeeOverride && mbaFeeOverride > 0) {
-        mbaFeeMap[slim.id] = { min: mbaFeeOverride, max: mbaFeeOverride }
-        continue
-      }
-      const feeStr = full.programDetails?.MBA?.fees
-      if (!feeStr) continue
-      const parsed = parseMbaFeeString(feeStr, slim.id)
-      if (parsed) mbaFeeMap[slim.id] = parsed
+      const exact = getExactFee(full, 'MBA')
+      const bounds = exactFeeBounds(exact)
+      const text = formatExactFee(exact)
+      if (bounds) mbaFeeMap[slim.id] = bounds
+      if (text) mbaFeeText[slim.id] = text
     }
     const mbaFeeVals = Object.values(mbaFeeMap)
     const specFeeMinVals = mbaFeeVals.map(f => f.min).filter(f => f > 0)
     const specFeeMaxVals = mbaFeeVals.map(f => f.max).filter(f => f > 0)
     const hasSpecFees = specFeeMinVals.length > 0
-    const specFeeMin = hasSpecFees ? Math.min(...specFeeMinVals) : (feeMin > 0 ? feeMin : 0)
-    const specFeeMax = hasSpecFees ? Math.max(...specFeeMaxVals) : (feeMax > 0 ? feeMax : 0)
-    const specFAQs = getSpecFAQs(activeSpec, specMbaUnis.length || universities.length, formatFeeSlim(specFeeMin), formatFeeSlim(specFeeMax))
+    const specFAQs = getSpecFAQs(
+      activeSpec,
+      specMbaUnis.length || universities.length,
+      hasSpecFees ? formatINR(Math.min(...specFeeMinVals)) : null,
+      hasSpecFees ? formatINR(Math.max(...specFeeMaxVals)) : null,
+    )
     const specEditorial = SPEC_HUB_EDITORIAL[subSlug]
     const allSpecFAQs = specEditorial ? [...specEditorial.faqs, ...specFAQs] : specFAQs
     const specFaqSchema = {
@@ -548,6 +532,7 @@ export default async function CatchAllProgramPage(
           customH1={mbaSpecOverride?.h1}
           customIntro={mbaSpecOverride?.intro}
           mbaFeeMap={mbaFeeMap}
+          mbaFeeText={mbaFeeText}
           cardHrefs={specCardHrefs}
           mbaHubIds={Object.keys(specCardHrefs).filter(id => hubResolves(id, 'MBA') && isLinkable(`/universities/${id}/mba`))}
         />

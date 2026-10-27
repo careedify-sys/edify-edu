@@ -293,6 +293,92 @@ export function getDisplayFee(u: University, program: Program): FeeDisplay {
   }
 }
 
+// ── Exact fees for tables ───────────────────────────────────────────────────
+// getDisplayFee decides WHETHER a fee may be shown, but its min/max come from
+// parsing pd.fees, and pd.fees is often abbreviated: LPU's "₹1.61L" parses to
+// 1,61,000 when the portal says 1,61,600. Titles can live with that; a fee
+// table cannot. getExactFee keeps getDisplayFee as the gate and takes the
+// rupees from a numeric field instead, in this order:
+//   1. feeBreakdown: list price plus a labelled net, so a discounted net is
+//      never printed as the fee on its own.
+//   2. Known drift pairs: two sources disagree and neither is verified. None.
+//   3. programFees, pd.fees written in full rupees, or (MBA) feeMin/feeMax,
+//      accepted only when it agrees with getDisplayFee within 1% (or ₹1,000).
+// Anything else returns none, and the caller prints the counsellor line.
+
+export const FEE_COUNSELLOR_LINE = 'Contact our counsellor for current fee details'
+
+// programFees and pd.fees disagree and neither has been read from the portal.
+// Rishi, 2026-10-27. Remove an entry once the portal figure is in feeBreakdown.
+const DRIFT_PAIRS: ReadonlySet<string> = new Set([
+  'amity-university-online|mca',
+  'lovely-professional-university-online|mca',
+  'galgotias-university-online|mca',
+  'ignou-online|bca',
+  'ignou-online|mca',
+])
+
+type BreakdownKey = 'mba' | 'bba' | 'mca' | 'bca' | 'mcom' | 'bcom'
+type Breakdown = NonNullable<NonNullable<University['feeBreakdown']>[BreakdownKey]>
+
+export type ExactFee =
+  | { kind: 'none' }
+  | { kind: 'exact'; min: number; max: number; from: boolean }
+  | { kind: 'labelled'; breakdown: Breakdown }
+
+export function getExactFee(u: University, program: Program): ExactFee {
+  const key = program.toLowerCase().replace(/\./g, '')
+  const bd = u.feeBreakdown?.[key as BreakdownKey]
+  if (bd) return { kind: 'labelled', breakdown: bd }
+  if (DRIFT_PAIRS.has(`${u.id}|${key}`)) return { kind: 'none' }
+
+  const f = getDisplayFee(u, program)
+  if (!f.ok || f.min == null) return { kind: 'none' }
+
+  const pf = (u.programFees as Record<string, { fee: number; feeMax?: number }> | undefined)?.[key]
+  const pdFees = u.programDetails[program]?.fees
+  let exact: { min: number; max: number } | null = null
+  if (pf?.fee) exact = { min: pf.fee, max: pf.feeMax ?? pf.fee }
+  else if (pdFees && !/\d\s*[KL]/i.test(pdFees)) exact = parseFeeStr(pdFees)
+  else if (program === 'MBA' && u.feeMin > 0) exact = { min: u.feeMin, max: u.feeMax || u.feeMin }
+  if (!exact) return { kind: 'none' }
+
+  const close = (a: number, b: number) => Math.abs(a - b) <= Math.max(1000, b * 0.01)
+  if (f.mode === 'from') {
+    return close(exact.min, f.min) ? { kind: 'exact', min: exact.min, max: exact.min, from: true } : { kind: 'none' }
+  }
+  if (!close(exact.min, f.min) || !close(exact.max, f.max ?? f.min)) return { kind: 'none' }
+  return { kind: 'exact', min: exact.min, max: exact.max, from: false }
+}
+
+const rupees = (min: number, max: number) => (min === max ? fmtIndianFull(min) : `${fmtIndianFull(min)}–${fmtIndianFull(max)}`)
+
+/** Total fee as exact rupees with any discount labelled, or null when none may be shown. */
+export function formatExactFee(e: ExactFee): string | null {
+  if (e.kind === 'none') return null
+  if (e.kind === 'exact') return e.from ? `From ${fmtIndianFull(e.min)}` : rupees(e.min, e.max)
+  const b = e.breakdown
+  return b.net ? `${fmtIndianFull(b.list)} list; ${rupees(b.net.min, b.net.max)} ${b.net.label}` : fmtIndianFull(b.list)
+}
+
+/** Per-semester fee, only where the university publishes one. Never derived from a total. */
+export function formatPublishedSemesterFee(e: ExactFee): string | null {
+  if (e.kind !== 'labelled' || !e.breakdown.perSemester) return null
+  const s = e.breakdown.perSemester
+  return s.net ? `${fmtIndianFull(s.list)} list; ${fmtIndianFull(s.net)} ${s.netLabel ?? 'after discount'}` : fmtIndianFull(s.list)
+}
+
+/**
+ * Bounds for a cross-university fee range ("fees range from X to Y"). A
+ * labelled fee contributes its list price only, so a discounted net never
+ * becomes the floor of a range it carries no label in.
+ */
+export function exactFeeBounds(e: ExactFee): { min: number; max: number } | null {
+  if (e.kind === 'none') return null
+  if (e.kind === 'labelled') return { min: e.breakdown.list, max: e.breakdown.list }
+  return { min: e.min, max: e.max }
+}
+
 // Return every uni x program where getDisplayFee fell through to suppression
 // (rules 4a or 4b), including rows without any pd.fees value. Matches the
 // tallyFeeRules totals used by the pre-commit baseline check.
