@@ -1,5 +1,12 @@
 # Fix log
 
+## 2026-10-27 · /programs/mba and two MBA posts retitled for keyword-gap head terms
+
+"online mba courses" (8,100/mo), "online mba courses in india" (3,600) and "online mba in india" (2,900) are Missing while
+/programs/mba sits at 6.93 with 0.16% CTR. Title now "Online MBA Courses in India 2026: 121 UGC-DEB Universities" (58), H1
+aligned. online-mba-for-working-professionals-india (1,300 + 260 + 170/mo, position 26.9): 77-char seoTitle cut to 56 and an
+answer-first description. online-executive-mba-india-2026 (390/mo): 72-char seoTitle cut to 57.
+
 ## 2026-10-27 · MBA healthcare and HR spec hubs retitled for keyword-gap rows
 
 "online mba hospital administration" (P1, 1,000/mo) and "mba in hr management online" / "mba in human resource management

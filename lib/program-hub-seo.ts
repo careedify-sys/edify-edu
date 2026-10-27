@@ -57,10 +57,13 @@ export function getProgramHubSeo(
   year: number,
 ): ProgramHubSeo | null {
   switch (programSlug) {
+    // Keyword gap 2026-10-26: "online mba courses" (8,100/mo), "online mba courses
+    // in india" (3,600) and "online mba in india" (2,900), all Missing while this
+    // hub sat at position 6.93 with a 0.16% CTR. The title now carries "Courses".
     case 'mba':
       return {
-        title: `Online MBA in India ${year}: ${uniCount} UGC-DEB Universities Compared`,
-        description: `${uniCount} UGC-DEB approved online MBA universities, filterable by fee, specialisation, NAAC grade and NIRF rank. No paid rankings, no commission.`,
+        title: `Online MBA Courses in India ${year}: ${uniCount} UGC-DEB Universities`,
+        description: `Online MBA courses from ${uniCount} UGC-DEB entitled universities: a 2-year degree for graduates. Compare fee, specialisation, NAAC grade and NIRF rank.`,
       }
     case 'bba':
       return {

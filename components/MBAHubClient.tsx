@@ -102,7 +102,7 @@ export default function MBAHubClient() {
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-12 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-extrabold leading-tight mb-3">
-            Online MBA in India 2026: {mbaUnis.length} UGC-Approved Universities Compared
+            Online MBA Courses in India 2026: {mbaUnis.length} UGC-Approved Universities Compared
           </h1>
           <p className="text-slate-400 text-base max-w-xl mx-auto mb-6">
             Independent comparison by EdifyEdu. No paid rankings. No referral commissions. NIRF 2025 data verified.
