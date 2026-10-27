@@ -3,6 +3,13 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'online-computer-science-degree-india': [
+    { label: 'Online BCA / MCA', value: 'Allowed from an entitled university', green: true },
+    { label: 'Online B.Tech CSE', value: 'Not allowed (engineering prohibited)' },
+    { label: 'Rule', value: 'UGC 2020 Regs, Reg 4 coding exception' },
+    { label: 'Data science spec', value: '25 BCA, 24 MCA universities' },
+    { label: 'Cyber security spec', value: '13 BCA, 23 MCA universities' },
+  ],
   'lpu-online-lms-login': [
     { label: 'LMS', value: 'lms.lpuonline.com', green: true },
     { label: 'Login check', value: 'OTP to registered mobile and email' },

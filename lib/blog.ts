@@ -51043,6 +51043,120 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <p class="disclaimer"><em>Checked on 27 October 2026. Portal addresses and helplines can change. Confirm them on lpuonline.com.</em></p>
     `,
   },
+  {
+    slug: 'online-computer-science-degree-india',
+    title: 'Online Computer Science Degree in India 2026: What UGC Allows',
+    seoTitle: 'Online Computer Science Degree India 2026: BCA, MCA, MSc',
+    h1Title: 'Online Computer Science Degree in India: BCA, MCA, Data Science and Cyber Security',
+    metaDescription: 'UGC allows a computing degree online because its practicals are coding, but not a B.Tech. Which degrees qualify, and how many universities teach data science, AI and cyber security.',
+    category: 'Online Degree Validity',
+    tags: ['Online Computer Science Degree', 'Online BCA', 'Online MCA', 'Data Science Degree', 'Cyber Security Degree', 'Online Degree Validity'],
+    publishedAt: '2026-10-27',
+    readTime: 6,
+    targetKeyword: 'online computer science degree',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/40117751/pexels-photo-40117751.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@rakib-hosan-243127831" target="_blank" rel="noopener nofollow">Rakib hosan</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Group of students conducting a lab experiment in a university setting.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'Can I do a computer science degree online in India?', a: 'Yes, as a BCA after Class 12 or an MCA after graduation, from a university UGC-DEB entitles for that programme in online mode. A B.Tech in Computer Science cannot run online, because UGC lists engineering among the disciplines prohibited in online and distance mode.' },
+      { q: 'Why is an online MCA allowed but not an online B.Tech CSE?', a: 'Regulation 4 of the UGC ODL and Online Regulations, 2020 bars online delivery of programmes that need practical or laboratory courses, except where the practical work is limited to programming and coding, including software tools. MCA and BCA practicals fit that exception. Engineering labs do not, and engineering is also on the prohibited list in UGC notice F.No. 1-34/2024 (DEB-I).' },
+      { q: 'Is there an online data science degree in India?', a: 'Yes, mostly as a specialisation. In our records, 25 universities offer a data science or analytics specialisation in the online BCA and 24 in the online MCA, and four offer it in an online MSc.' },
+      { q: 'Is there an online cyber security degree in India?', a: 'As a specialisation, yes. In our records, 13 universities offer cyber security within the online BCA and 23 within the online MCA. We do not track a standalone online degree titled cyber security.' },
+      { q: 'Is an online BCA or MCA valid for jobs?', a: 'Yes, from a UGC-DEB entitled university for your admission session. Regulation 22 of the 2020 regulations treats an entitled online degree as equivalent to the same degree on campus.' },
+      { q: 'Can I do an online MSc in Computer Science?', a: 'Our records show online MSc programmes mostly in Mathematics and Data Science. Only one university lists an MSc in Computer Applications. Check the UGC-DEB register for the exact programme title and mode before applying.' },
+    ],
+    ctaTitle: 'Compare online BCA and MCA programmes',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">"Online computer science degree" covers four different things in India: a BCA, an MCA, an MSc, and a B.Tech that UGC does not allow online at all. Here is which is which, why the rule falls where it does, and how many universities teach data science, AI and cyber security inside them.</p>
+
+<p><strong>Short answer:</strong> Yes, you can earn a computing degree online in India. Take a <strong>BCA</strong> after Class 12 or an <strong>MCA</strong> after graduation, from a UGC-DEB entitled university. You cannot take a <strong>B.Tech in Computer Science</strong> online, because UGC prohibits engineering in online and distance mode. Data science, AI and cyber security usually come as specialisations inside the BCA or MCA.</p>
+
+<div class="callout-key">
+<strong>Online computing degrees in one box (checked 27 October 2026)</strong>
+<ul>
+<li><strong>Allowed online:</strong> BCA, MCA, and an MSc where practicals are coding</li>
+<li><strong>Not allowed online:</strong> B.Tech or M.Tech, engineering is prohibited</li>
+<li><strong>Why:</strong> UGC ODL and Online Regulations 2020, Regulation 4, coding-only practical exception</li>
+<li><strong>Data science specialisation:</strong> 25 universities in the online BCA, 24 in the online MCA</li>
+<li><strong>Cyber security specialisation:</strong> 13 in the online BCA, 23 in the online MCA</li>
+</ul>
+</div>
+
+<h2>Which computing degrees can you study online?</h2>
+
+<table>
+<thead><tr><th>Degree</th><th>Level and entry</th><th>Online?</th></tr></thead>
+<tbody>
+<tr><td>BCA (Bachelor of Computer Applications)</td><td>3-year undergraduate, after Class 12</td><td>Yes, from an entitled university</td></tr>
+<tr><td>MCA (Master of Computer Applications)</td><td>2-year postgraduate, after a degree</td><td>Yes, from an entitled university</td></tr>
+<tr><td>MSc (Data Science, Mathematics)</td><td>2-year postgraduate</td><td>Yes, where practicals are coding</td></tr>
+<tr><td>B.Tech or M.Tech in Computer Science</td><td>Engineering degree</td><td>No, engineering is prohibited online</td></tr>
+</tbody>
+</table>
+
+<p>The names matter. A BCA and a B.Tech CSE cover overlapping ground, but only the BCA can run online. Our guide to <a href="/blog/online-btech-mtech-india">online B.Tech and M.Tech in India</a> explains the engineering bar in detail.</p>
+
+<h2>Why UGC allows an online MCA but not an online B.Tech</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/37765899/pexels-photo-37765899.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Two young scientists in lab coats performing an experiment in a laboratory setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@poddar-group-of-institutions-2161503852" target="_blank" rel="noopener nofollow">Poddar Group of Institutions</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>The rule sits in Regulation 4 of the UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020. It bars online delivery of any programme that needs practical or laboratory courses. The exception covers practical work limited to programming and coding, including software tools.</p>
+
+<p>BCA and MCA practicals are programming, so they fit the exception. Engineering labs do not. UGC's public notice F.No. 1-34/2024 (DEB-I) of 11 November 2024 also lists engineering among the disciplines prohibited in online and distance mode.</p>
+
+<p class="pull">If the lab is a laptop, the degree can run online. If the lab is a workshop, it cannot.</p>
+
+<h2>Online data science, AI and cyber security degrees</h2>
+
+<p>Few universities offer these as standalone degrees. Most teach them as a specialisation inside the BCA or MCA. These counts come from the specialisations each university lists for its online programmes in our records:</p>
+
+<table>
+<thead><tr><th>Specialisation</th><th>Online BCA</th><th>Online MCA</th></tr></thead>
+<tbody>
+<tr><td>Data science and analytics</td><td>25 universities</td><td>24 universities</td></tr>
+<tr><td>Artificial intelligence and machine learning</td><td>17</td><td>28</td></tr>
+<tr><td>Cyber security</td><td>13</td><td>23</td></tr>
+<tr><td>Cloud computing</td><td>13</td><td>16</td></tr>
+<tr><td>Blockchain</td><td>0</td><td>6</td></tr>
+</tbody>
+</table>
+
+<p>For data science at postgraduate level, four universities in our records list it in an online MSc. Mathematics is the most common online MSc subject, and only one university lists an MSc in Computer Applications.</p>
+
+<div class="callout-warning">
+<strong>Check the exact title before you pay.</strong> A specialisation printed on your marksheet is not the same as a degree titled in that subject. Check the programme name and mode on the UGC-DEB register at deb.ugc.ac.in for your admission session.
+</div>
+
+<h2>Is an online BCA or MCA valid?</h2>
+
+<p>Yes, when the university is UGC-DEB entitled for that programme in online mode for your session. Regulation 22 of the 2020 regulations treats an entitled online degree as equivalent to the same degree on campus. Our guide to <a href="/guides/is-online-degree-valid-india">whether an online degree is valid in India</a> explains how that equivalence works.</p>
+
+<p>Exams in these programmes are proctored online. Our guide to <a href="/blog/how-online-degree-exams-work-india">how online degree exams work</a> covers what to expect.</p>
+
+<h2>BCA, MCA or something else?</h2>
+
+<p>Pick by where you are now. After Class 12, the BCA is the online route into computing; see our guide to <a href="/blog/online-bachelors-ug-courses-india">online bachelor's courses in India</a>. After a degree, the MCA is the main online postgraduate option, covered with the others in our guide to <a href="/blog/online-masters-pg-courses-india">online master's courses</a>. If you are torn between technology and management, read our comparison of <a href="/blog/mba-or-mca-which-is-better-2026">MBA and MCA</a>.</p>
+
+<div class="cta-box">
+<p><strong>Shortlisting an online BCA or MCA?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities</a> or <a href="/contact">ask us</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulations 4 and 22: deb.ugc.ac.in</li>
+<li>UGC public notice F.No. 1-34/2024 (DEB-I), 11 November 2024, list of programmes prohibited in ODL and Online mode: deb.ugc.ac.in</li>
+<li>Specialisation counts: online programme specialisations listed for each university in edifyedu.in records, 27 October 2026</li>
+</ul>
+
+<p class="disclaimer"><em>Counts reflect the specialisations universities list for their online programmes in our records on 27 October 2026. Entitlements are granted by session. Confirm the programme and mode on deb.ugc.ac.in before you enrol.</em></p>
+    `,
+  },
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))

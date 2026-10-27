@@ -4573,3 +4573,9 @@ like `onlineuu.in`. The defence stays human, and is written on the field.
 **What:** two short navigational posts, `/blog/amity-online-student-portal-login` and `/blog/lpu-online-lms-login`.
 
 **Why:** the keyword export holds about 21,780 searches a month for Amity's portal (amityonline.com variants, Amigo) and 5,200 for the LPU LMS, all Missing. Each post says which address is the learning portal and which is the admissions site, how the login and password reset work, and which helpline handles what, all from the universities' own login and contact pages read 27 Oct 2026. Both state that Edify is not affiliated. Left out on purpose: Amity's homepage claims "only QS-ranked online MBA in India" (flagged false in memory) and "India's first UGC-approved online university", and no fee figures appear.
+
+## Online computer science degree explainer (2026-10-27)
+
+**What:** new post `/blog/online-computer-science-degree-india`.
+
+**Why:** "computer science online course" (2,400/mo), "online cs degree" (1,000), "data science online degree" (880) and "online cyber security degree" (480) were Missing. The answer is regulatory (BCA/MCA allowed under the Reg 4 coding exception, B.Tech prohibited) plus counts. Counts use only programmes whose hub resolves, so they can differ from the hub headline totals, which count membership differently; the post therefore quotes specialisation counts only and no programme totals.
