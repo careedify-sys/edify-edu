@@ -1,5 +1,17 @@
 # Fix log
 
+## 2026-10-27 · /fees retitled for "online mba fees"
+
+Keyword gap "Fee guide: online MBA fees" rows: "online mba fees" 3,600/mo, "mba online courses fees" 1,300, "online mba
+courses fees" 1,000, all Missing. /fees sits at position 7.02 under a 79-character "Online University Fees 2026: Compare
+125+ UGC-DEB Approved Programs | EdifyEdu" title that never said MBA. Now "Online MBA & Degree Fees 2026: 125 Universities
+Compared" (56 chars); "& Degree" because the table is MBA-led but lists every university. Description leads with total
+fees and says fees are indicative. No figures changed. The blog fee guide (mba-fees-india-complete-guide-2026) covers
+campus MBAs too and was left alone.
+
+Flag for Rishi: several posts call "IGNOU MBAOL at ₹31,500" the cheapest UGC-DEB MBA; lib/data.ts and getDisplayFee give
+IGNOU MBA ₹66,000, and ₹31,500 is IGNOU's BA fee in another post. Not changed pending his confirmation.
+
 ## 2026-10-27 · One-year online MBA answered from the UGC circular; Jindal section corrected
 
 Keyword gap rows "one year online mba" (P1, 720/mo) and "1 year online mba" (P2, 390/mo). The existing post

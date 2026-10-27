@@ -30,9 +30,13 @@ const programCounts = (() => {
   return Object.entries(counts).sort((a, b) => b[1] - a[1])
 })()
 
+// Keyword gap 2026-10-26: "online mba fees" (3,600/mo), "mba online courses fees"
+// (1,300), "online mba courses fees" (1,000) all Missing while this page held
+// position 7 under a 79-character "Online University Fees" title that never
+// said MBA. The table is MBA-led but lists every university, hence "& Degree".
 export const metadata: Metadata = {
-  title: { absolute: `Online University Fees ${year}: Compare ${priced.length}+ UGC-DEB Approved Programs | EdifyEdu` },
-  description: `Compare total fees and EMI for ${priced.length}+ UGC-DEB approved online MBA, MCA, BBA and BCA programs. Filter by NAAC grade, program type and region. Free, no login.`,
+  title: { absolute: `Online MBA & Degree Fees ${year}: ${priced.length} Universities Compared` },
+  description: `Total online MBA and degree fees for ${priced.length} UGC-DEB universities in one table, with NAAC grade and EMI. Filter by programme and region. Fees are indicative.`,
   keywords: [
     'online mba fees india 2026',
     'online degree fees comparison',
@@ -47,8 +51,8 @@ export const metadata: Metadata = {
   ].join(', '),
   alternates: { canonical: `${BASE}/fees` },
   openGraph: {
-    title: `Online University Fees ${year}: Compare ${priced.length}+ Programs | EdifyEdu`,
-    description: `Compare fees and EMI for ${priced.length}+ UGC-DEB approved online degrees. Filter by NAAC, program and region.`,
+    title: `Online MBA & Degree Fees ${year}: ${priced.length} Universities Compared`,
+    description: `Total online MBA and degree fees for ${priced.length} UGC-DEB universities, with NAAC grade and EMI. Fees are indicative.`,
     url: `${BASE}/fees`,
     type: 'website',
     siteName: 'edifyedu.in',
@@ -56,8 +60,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `Online University Fees ${year} | EdifyEdu`,
-    description: `Compare fees for ${priced.length}+ UGC-DEB approved online MBAs and degrees. Filter by NAAC, program and region.`,
+    title: `Online MBA & Degree Fees ${year} | edifyedu.in`,
+    description: `Total online MBA and degree fees for ${priced.length} UGC-DEB universities, with NAAC grade and EMI. Fees are indicative.`,
   },
   robots: { index: true, follow: true },
 }
