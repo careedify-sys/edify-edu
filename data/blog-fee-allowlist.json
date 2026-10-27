@@ -1297,6 +1297,15 @@
       "figure": 156400,
       "source": "MUJ Online January 2027 fee chart, recorded in lib/data.ts (manipal-university-jaipur-online comment block; programFees.mba 156400/184000)",
       "note": "MBA fee after the 15% discount."
+    },
+    {
+      "slug": "1-year-mba-india-executive-mba-2026",
+      "university": "op-jindal-global-university-online",
+      "programme": "MBA",
+      "verified_date": "2026-10-27",
+      "figure": 200000,
+      "source": "lib/data.ts op-jindal-global-university-online programDetails.MBA.fees = ₹2,00,000",
+      "note": "O.P. Jindal 1-year online MBA total fee in the callout; same figure as the programme table row."
     }
   ]
 }

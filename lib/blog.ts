@@ -7602,6 +7602,7 @@ export const BLOG_POSTS: BlogPost[] = [
     heroImageAlt: 'Young Indian man and woman sitting at table and working together with documents laptop while discussing business at home in daytime',
     faqs: [
       { q: 'Which is the best 1-year MBA in India 2026?', a: 'By brand: IIM Ahmedabad PGPX (Rs 35 lakh, 1-year residential). By outcomes: ISB Hyderabad PGP (Rs 38.67 lakh tuition plus Rs 6.45 lakh living = Rs 45 lakh total, average placement Rs 35 to 40 LPA). By IIM accessibility: IIM Bangalore EPGP (Rs 33.71 lakh single accommodation per 2026-27). By value: IIM Kozhikode EPGP (Rs 15.95 lakh, blended). Affordable: BITS Pilani WILP (Rs 3.5 to 5 lakh, work-integrated). Pick by experience plus budget.' },
+      { q: 'Can I do a one-year online MBA in India?', a: 'Only with a four-year bachelor\'s degree with Honours. UGC circular F.No. 7-2/2026 (DEB-NWR) of 28 July 2026 lets universities already entitled for a two-year online postgraduate programme offer a one-year version, restricted to four-year Honours graduates, with MBA entry rules set by the regulator. Three-year graduates should choose a two-year online MBA.' },
       { q: 'What is the eligibility for 1-year executive MBA in India?', a: 'IIM Ahmedabad PGPX: 4-plus years post-graduation experience, valid GMAT or GRE score, minimum age 25. IIM Bangalore EPGP: 5-plus years experience plus GMAT. IIM Calcutta PGPEX: 5-plus years plus GMAT. ISB PGP: 2-plus years preferred plus GMAT (most flexible on experience). <a href="/blog/xlri-online-mba-review-2026" class="ilink">XLRI online PGDM fees and review</a>: 5-plus years plus XAT. BITS Pilani WILP: must be employed full-time (employer verification required).' },
       { q: 'Is 1-year MBA valid in India in 2026?', a: 'Depends on the credential. Residential 1-year programmes at IIM (PGPX, EPGP, PGPEX), ISB (PGP), XLRI (1-year EMBA), are UGC-recognised degree-equivalents with full legal validity. BITS Pilani WILP is a UGC-recognised 2-year work-integrated MBA degree (not 1 year despite confusion). Many 1-year programmes labeled MBA are actually PGDM diplomas (AICTE-approved); for government job purposes, require AIU equivalence for full equivalence to degree.' },
       { q: 'What is the IIM Ahmedabad PGPX fee in 2026?', a: 'IIM Ahmedabad PGPX 2026-27 batch fee is Rs 35 lakh for SSH (Single Student Hostel) and Rs 37.10 lakh for MSH (Married Student Housing). International Immersion Programme (IIP) additional, excluding travel and stay. Scholarships available up to 25 percent of SSH fee. Median placement Rs 31.28 LPA (2026-27 batch). Average work experience 7.5 years.' },
@@ -7691,11 +7692,23 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Best for:</strong> Mid-career professionals at IT services, manufacturing, BFSI tech wanting strong brand without IIM-tier fees.</li>
 </ul>
 
-<h2>O.P. Jindal Global 1-Year Online MBA: The Only 1-Year Fully Online Option</h2>
+<h2>Can You Do a One-Year Online MBA in India?</h2>
 
-<div class="callout-key"><strong>India's only 1-year fully online UGC-recognised MBA.</strong> O.P. Jindal Global University (JGU) Sonipat is the single Indian university offering a complete 12-month online MBA with degree (not diploma) status. AACSB accredited, Institution of Eminence, NAAC A, QS 5 Star rated. Total fee Rs 2,00,000.</div>
+<p><strong>Short answer:</strong> only if you hold a four-year bachelor's degree with Honours. UGC circular F.No. 7-2/2026 (DEB-NWR) of 28 July 2026 lets a university that UGC already entitles for a two-year online postgraduate programme offer a one-year version in the same discipline. Admission is restricted to learners who have completed a Four-Year Bachelor's Degree with Honours, and for MBA, MCA and PGDM the entry rules of the relevant regulator also apply.</p>
 
-<p>This is the structural gap-filler in the 1-year MBA market. Every other 1-year programme above is residential, requires 4 to 5 years of work experience, and costs Rs 25 to 45 lakh. JGU offers a 12-month online MBA at Rs 2 lakh, with no work-experience requirement, and the degree carries the same brand weight as the on-campus programme (Institution of Eminence + AACSB accreditation places JGU's business school in the top 5% globally).</p>
+<ul>
+  <li><strong>Three-year graduates</strong> (most BA, B.Com and BBA holders): the two-year online MBA is your route.</li>
+  <li><strong>Four-year Honours graduates:</strong> a one-year online MBA is possible where the university already holds UGC entitlement for the two-year online MBA.</li>
+  <li><strong>Before you pay:</strong> ask the university in writing which approval the one-year programme rests on and whether it admits your degree.</li>
+</ul>
+
+<p>Our guide to <a href="/blog/online-masters-pg-courses-india" class="ilink">online master's and PG courses</a> explains the one-year PG rule for every subject, not just the MBA.</p>
+
+<h2>O.P. Jindal Global 1-Year Online MBA: What It Is and Who Qualifies</h2>
+
+<div class="callout-key"><strong>A 12-month online MBA with degree status.</strong> O.P. Jindal Global University (JGU), Sonipat, offers it as an Institution of Eminence. AACSB accredited, NAAC A, QS 5 Star rated. Total fee Rs 2,00,000 (indicative). JGU does not appear on the UGC-DEB entitlement list of August 2026, so confirm with JGU which approval the programme rests on.</div>
+
+<p>This is the structural gap-filler in the 1-year MBA market. Every other 1-year programme above is residential, requires 4 to 5 years of work experience, and costs Rs 25 to 45 lakh. JGU offers a 12-month online MBA at Rs 2 lakh, and the degree carries the JGU brand of an Institution of Eminence with AACSB accreditation. Under the UGC circular of 28 July 2026, one-year online postgraduate programmes admit four-year Honours graduates, so check your eligibility with JGU first.</p>
 
 <p>Verify the live programme details at <a href="https://jgu.edu.in" target="_blank" rel="noopener">jgu.edu.in</a> and the current Edify university page at <a href="/universities/op-jindal-global-university-online" class="ilink">edifyedu.in/universities/op-jindal-global-university-online</a>.</p>
 
@@ -7706,10 +7719,10 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><th>University</th><td>O.P. Jindal Global University, Sonipat, Haryana</td></tr>
     <tr><th>Total fee</th><td>Rs 2,00,000 (indicative). EMI from Rs 6,319/month.</td></tr>
     <tr><th>Accreditation</th><td>UGC Recognised, NAAC A, AACSB Accredited, Institution of Eminence (MoE), QS 5 Star.</td></tr>
-    <tr><th>Eligibility</th><td>Graduation with 50% marks from a recognised university. No mandatory work experience.</td></tr>
+    <tr><th>Eligibility</th><td>Confirm with JGU. UGC's 28 July 2026 circular restricts one-year online postgraduate programmes to four-year Honours graduates, with MBA entry rules set by the regulator.</td></tr>
     <tr><th>Specialisations</th><td>Finance, Human Resource Management, Marketing, Strategy & Leadership, Supply Chain & Operations Management, AI for Business, Digital Finance.</td></tr>
     <tr><th>Delivery</th><td>Fully online with live sessions plus recorded lectures. Capstone project and Global Immersion Programme included.</td></tr>
-    <tr><th>Career outcomes</th><td>Roles include Strategy Consultant, Business Manager, Product Manager, Finance Manager, Marketing Manager. Average salary range Rs 8 to 25 LPA. Companies hiring JGU alumni include McKinsey, BCG, Deloitte, Amazon, Google, HDFC Bank, Reliance.</td></tr>
+    <tr><th>Typical roles</th><td>Strategy, business, product, finance and marketing management roles. Ask JGU for programme-level placement data; we do not publish employer lists we cannot verify.</td></tr>
   </tbody>
 </table>
 
@@ -7718,8 +7731,8 @@ export const BLOG_POSTS: BlogPost[] = [
   <li>Same 12-month duration as IIM PGPX/EPGP, ISB PGP, XLRI 1-year EMBA.</li>
   <li>Same online-degree model as NMIMS, JAIN, Amity, MUJ. But all those are 2-year programmes.</li>
   <li>One-tenth the cost of IIM residential 1-year programmes (Rs 2L vs Rs 30 to 45L).</li>
-  <li>AACSB accreditation places JGU's business school globally on par with top international B-schools, an accreditation no other Indian online MBA currently holds.</li>
-  <li>No work experience requirement, unlike all IIM 1-year programmes which need 4 to 5-plus years.</li>
+  <li>AACSB accreditation for JGU's business school.</li>
+  <li>No 4 to 5-year work-experience bar like the IIM 1-year programmes, but the four-year Honours degree rule applies to one-year online PG admission.</li>
 </ul>
 
 <p><strong>Best for:</strong> Career switchers wanting an accelerated MBA without quitting work, entrepreneurs needing a globally recognised credential fast, working professionals wanting AACSB on the degree without IIM-tier fees, candidates with less than 4 years of experience locked out of IIM 1-year programmes.</p>
