@@ -1,5 +1,12 @@
 # Fix log
 
+## 2026-10-27 · All 16 remaining MBA spec hub titles cut to 60 characters
+
+Keyword gap MBA spec rows (project management 480, marketing 390, operations 390, international business 210, IT 210, and
+others) are Missing. Every override used "Online MBA in X 2026: Top Universities, Fees, ... | edifyedu.in" at 69-80 characters;
+clampTitle keeps the suffix and cuts the words. Now "Online MBA in X 2026: UGC-DEB Universities" (or "...: Universities"
+when longer than 60). Finance description dropped its derived "Fees from ₹80K to ₹3.7L" range.
+
 ## 2026-10-27 · /programs/mba and two MBA posts retitled for keyword-gap head terms
 
 "online mba courses" (8,100/mo), "online mba courses in india" (3,600) and "online mba in india" (2,900) are Missing while
