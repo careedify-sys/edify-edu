@@ -15,9 +15,13 @@ interface Props {
   customH1?: string
   customIntro?: string
   mbaFeeMap?: Record<string, { min: number; max: number }>
+  /** Card href per university id, resolved on the server against the edge allowlists. */
+  cardHrefs?: Record<string, string>
+  /** University ids whose MBA hub resolves and is indexable (hubResolves + isLinkable). */
+  mbaHubIds?: string[]
 }
 
-export default function MBASpecHubClient({ specSlug, specName, customH1, customIntro, mbaFeeMap }: Props) {
+export default function MBASpecHubClient({ specSlug, specName, customH1, customIntro, mbaFeeMap, cardHrefs, mbaHubIds }: Props) {
   const canonical = getCanonicalSpec(specSlug)
   const editorial = SPEC_HUB_EDITORIAL[specSlug]
 
@@ -142,7 +146,9 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
                 {mbaUnis.slice(0, 10).map(u => (
                   <tr key={u.id} className="border-t border-slate-100">
                     <td className="px-4 py-3">
-                      <Link href={`/universities/${u.id}/mba`} className="font-medium text-blue-700 hover:underline">{u.name}</Link>
+                      {mbaHubIds?.includes(u.id)
+                        ? <Link href={`/universities/${u.id}/mba`} className="font-medium text-blue-700 hover:underline">{u.name}</Link>
+                        : <span className="font-medium text-blue-700">{u.name}</span>}
                     </td>
                     <td className="px-4 py-3">{u.nirfMgt && u.nirfMgt < 500 ? `#${u.nirfMgt} (Mgmt)` : u.nirf > 0 && u.nirf < 500 ? `#${u.nirf} (Univ)` : 'Not ranked (Mgmt)'}</td>
                     <td className="px-4 py-3">{u.naac || 'NA'}</td>
@@ -248,7 +254,7 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
         <p className="text-sm text-slate-500 mb-6">Sorted by NIRF 2025 rank. Click any university for detailed fees, syllabus, and programme information.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {mbaUnis.map(u => (
-            <UniversityCard key={u.id} u={u as any} highlightProgram="MBA" specSlug={specSlug} />
+            <UniversityCard key={u.id} u={u as any} highlightProgram="MBA" specSlug={specSlug} href={cardHrefs?.[u.id]} />
           ))}
         </div>
       </section>

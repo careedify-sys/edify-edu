@@ -14,7 +14,9 @@ import { AboutUniversity } from '@/components/verify/AboutUniversity';
 import { HelpdeskTeaser } from '@/components/verify/HelpdeskTeaser';
 import { VerifyFAQ, getVerifyFAQs } from '@/components/verify/VerifyFAQ';
 import { getTitleName, shortenInstitutionName } from '@/lib/seo-title';
-import { getUniversityById } from '@/lib/data';
+import { getUniversityById, type Program } from '@/lib/data';
+import { getUniversityForVerifySlug, hubResolves, isLinkable } from '@/lib/seo/safe-internal-links';
+import { programmeSlug } from '@/lib/seo/resolve-programme';
 import { VerifyAdvisory } from '@/components/verify/VerifyAdvisory';
 import advisoryData from '@/lib/data/verify-advisories.json';
 
@@ -166,8 +168,25 @@ export async function generateMetadata({ params }: PageProps) {
   };
 }
 
+// Links from a verify page back into the site, gated the same way as every
+// other internal link: the overview only when isLinkable, programme hubs only
+// when the middleware allowlist serves them (hubResolves) AND the sitemap
+// indexes them (isLinkable). See lib/seo/safe-internal-links.ts.
+function siteLinksForVerifySlug(slug: string) {
+  const siteUni = getUniversityForVerifySlug(slug);
+  const overview = siteUni ? `/universities/${siteUni.id}` : null;
+  const profileHref = overview && isLinkable(overview) ? overview : null;
+  const programmeLinks = siteUni
+    ? siteUni.programs
+        .map((program: Program) => ({ program, href: `/universities/${siteUni.id}/${programmeSlug(program)}` }))
+        .filter(l => hubResolves(siteUni.id, l.program) && isLinkable(l.href))
+    : [];
+  return { siteUni, profileHref, programmeLinks };
+}
+
 export default async function VerifyPage({ params }: PageProps) {
   const { slug } = await params;
+  const { siteUni, profileHref, programmeLinks } = siteLinksForVerifySlug(slug);
   const supabase = await getSupabase();
   if (!supabase) redirect('/verify');
 
@@ -280,7 +299,7 @@ export default async function VerifyPage({ params }: PageProps) {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}` }}>
-              <VerifyHero university={university} accreditations={accreditations} />
+              <VerifyHero university={university} accreditations={accreditations} universityHref={profileHref} />
             </div>
             {/* Directly under the verdict. A reader who searched "is X fake"
                 needs this before the programme list, not after it. */}
@@ -297,7 +316,7 @@ export default async function VerifyPage({ params }: PageProps) {
             )}
             {programmes.length > 0 && (
               <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}`, padding: '22px 0 6px' }}>
-                <ProgrammeFinder universitySlug={slug} programmes={programmes} />
+                <ProgrammeFinder universityHref={profileHref} programmes={programmes} />
               </div>
             )}
             <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}` }}>
@@ -323,11 +342,9 @@ export default async function VerifyPage({ params }: PageProps) {
             <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}` }}>
               <VerifyInterlinks
                 universityName={university.name}
-                universitySlug={slug}
-                siteSlug={university.slug}
-                programmes={programmes}
-                naacGrade={accreditations.find((a: any) => a.body === 'NAAC')?.grade}
-                nirfRank={accreditations.find((a: any) => a.body === 'NIRF' && a.category === 'Overall')?.rank}
+                siteId={siteUni?.id ?? null}
+                profileHref={profileHref}
+                programmeLinks={programmeLinks}
               />
             </div>
           </div>
@@ -384,7 +401,7 @@ function BrandMergedPage({ slug, brandSlug, universities, programmes, accreditat
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {/* Hero */}
             <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}` }}>
-              <VerifyHero university={{...primaryUni, name: `${brandName} University`, programme_count: programmes.length}} accreditations={allAccreditations} />
+              <VerifyHero university={{...primaryUni, name: `${brandName} University`, programme_count: programmes.length}} accreditations={allAccreditations} universityHref={siteLinksForVerifySlug(slug).profileHref} />
             </div>
 
             {/* About */}

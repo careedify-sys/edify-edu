@@ -6,7 +6,7 @@ import { formatFeeSlim as formatFee, PREFERRED_UNI_IDS } from '@/lib/data-slim'
 import { getShortUniversityName } from '@/lib/format'
 import { clampTitle, clampDescription, getTitleName } from '@/lib/seo-title'
 import { PROGRAM_META } from '@/lib/data-client'
-import { getAllSpecs, getUniversitiesByProgram, UNIVERSITIES, specName as getSpecName, getUniversityById } from '@/lib/data'
+import { getAllSpecs, getUniversitiesByProgram, UNIVERSITIES, specName as getSpecName, specSlug as getSpecSlug, getUniversityById } from '@/lib/data'
 import { getProgramContent, getSpecContent, getSpecFallback } from '@/lib/content'
 import type { Program } from '@/lib/data'
 import { formatFeeSlim, UNIS_SLIM, nirfForProgramme } from '@/lib/data-slim'
@@ -22,6 +22,15 @@ import MBAHubClient from '@/components/MBAHubClient'
 import MBASpecHubClient from '@/components/MBASpecHubClient'
 import ProgramHubClient from '@/components/ProgramHubClient'
 import { getDisplayFee } from '@/lib/fees'
+import { resolveSpecHref, hubResolves, isLinkable } from '@/lib/seo/safe-internal-links'
+
+// Where a university's page for this specialisation actually lives. Each
+// university's own slug first, then the hub's slug, both through the
+// middleware's alias and accepted-set tables. null means it would 404.
+function uniSpecHref(u: { id: string; programDetails: Record<string, { specs?: unknown[] } | undefined> }, program: string, programSlug: string, activeSpec: string, hubSlug: string): string | null {
+  const own = (u.programDetails[program]?.specs as Parameters<typeof getSpecName>[0][] | undefined)?.find(s => getSpecName(s) === activeSpec)
+  return (own ? resolveSpecHref(u.id, programSlug, getSpecSlug(own)) : null) ?? resolveSpecHref(u.id, programSlug, hubSlug)
+}
 import { formatUniversityDisplayName } from '@/lib/format'
 
 const SEMESTER_TO_TOTAL_IDS = new Set<string>([])
@@ -372,6 +381,10 @@ export default async function CatchAllProgramPage(
   }
   
   const feeMin = universities.length ? Math.min(...universities.map(u => u.feeMin)) : 0
+  const schemaFeeVals = universities.map(u => getDisplayFee(u, program as Program)).filter(f => f.ok && f.min != null)
+  const schemaFeeBounds = schemaFeeVals.length
+    ? { min: Math.min(...schemaFeeVals.map(f => f.min!)), max: Math.max(...schemaFeeVals.map(f => f.max ?? f.min!)) }
+    : null
   const feeMax = universities.length ? Math.max(...universities.map(u => u.feeMax)) : 0
 
   const year = new Date().getFullYear()
@@ -396,25 +409,26 @@ export default async function CatchAllProgramPage(
     name: activeSpec ? `Online ${program} in ${activeSpec}` : `Online ${program} in India ${year}`,
     description: activeSpec
       ? `UGC DEB approved online ${program} with ${activeSpec} specialisation. Compare ${universities.length} top-ranked universities in India.`
-      : `UGC DEB approved online ${program} programs in India. Compare ${universities.length} top-ranked universities. Fees from ₹${Math.round(feeMin/1000)}K.`,
+      : `UGC DEB approved online ${program} programs in India. Compare ${universities.length} top-ranked universities.`,
     provider: { '@type': 'Organization', name: 'edifyedu.in', sameAs: 'https://edifyedu.in' },
     educationalLevel: program.startsWith('M') ? 'Postgraduate' : 'Undergraduate',
-    offers: {
+    // Price range from getDisplayFee only. The raw feeMin/feeMax above are
+    // MBA-led and include placeholder range floors, so they never reach schema.
+    offers: schemaFeeBounds ? {
+      '@type': 'AggregateOffer',
+      category: 'Online Education',
+      lowPrice: String(schemaFeeBounds.min),
+      highPrice: String(schemaFeeBounds.max),
+      priceCurrency: 'INR',
+    } : {
       '@type': 'Offer',
       category: 'Online Education',
-      price: feeMin,
       priceCurrency: 'INR',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        minPrice: feeMin,
-        maxPrice: feeMax,
-        priceCurrency: 'INR',
-      },
     },
     hasCourseInstance: {
       '@type': 'CourseInstance',
       courseMode: 'Online',
-      courseWorkload: 'PT2Y',
+      courseWorkload: isPgProgram ? 'P2Y' : 'P3Y',
       startDate: `${year}-07-01`,
     },
   }
@@ -456,6 +470,26 @@ export default async function CatchAllProgramPage(
         })
       })
     })
+    // Card hrefs for MBASpecHubClient. The cards used to append this hub's slug
+    // to every university, so a university calling the spec "Human Resource
+    // Management" got a 308 and one with no page under that slug got a 404:
+    // 172 and 63 links on the local crawl of 27 Oct 2026. Same matcher as the
+    // client list; each university's own spec slug first, then the hub slug,
+    // then its MBA hub, then its overview.
+    const cardVariants = (specCanonical?.variants || [subSlug]).map(v => v.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim())
+    const specCardHrefs: Record<string, string> = {}
+    for (const u of UNIS_SLIM) {
+      if (!u.programs.includes('MBA')) continue
+      const own = (((u as any).mbaSpecs as string[] | undefined) ?? []).filter(s => {
+        const sn = s.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim()
+        return cardVariants.some(vn => sn === vn || sn.startsWith(vn + ' ') || sn.startsWith(vn + 's') || vn.startsWith(sn + ' ') || vn.startsWith(sn + 's'))
+      })
+      if (!own.length) continue
+      const spec = [...own.map(s => getSpecSlug(s)), subSlug].map(s => resolveSpecHref(u.id, 'mba', s)).find(Boolean)
+      const hub = `/universities/${u.id}/mba`
+      specCardHrefs[u.id] = spec ?? (hubResolves(u.id, 'MBA') && isLinkable(hub) ? hub : `/universities/${u.id}`)
+    }
+
     // Build MBA-specific fee map from programDetails / programFees
     const mbaFeeMap: Record<string, { min: number; max: number }> = {}
     for (const slim of specMbaUnis) {
@@ -515,6 +549,8 @@ export default async function CatchAllProgramPage(
           customH1={mbaSpecOverride?.h1}
           customIntro={mbaSpecOverride?.intro}
           mbaFeeMap={mbaFeeMap}
+          cardHrefs={specCardHrefs}
+          mbaHubIds={Object.keys(specCardHrefs).filter(id => hubResolves(id, 'MBA') && isLinkable(`/universities/${id}/mba`))}
         />
       </>
     )
@@ -538,7 +574,7 @@ export default async function CatchAllProgramPage(
     const allWithSpec = universities
       .filter(u => u.programDetails[program]?.specs?.some(s => getSpecName(s) === activeSpec))
       .sort((a, b) => (a.nirf || 999) - (b.nirf || 999))
-    const unisWithSpec = allWithSpec.slice(0, 8)
+    const unisWithSpec = allWithSpec.filter(u => uniSpecHref(u, program, programSlug, activeSpec, specSlugStr)).slice(0, 8)
     // The stat used to count the 8-card list, so BBA Finance said 8 while 27
     // universities offer it. Count the full set; the list stays capped.
     const specUniTotal = allWithSpec.length || universities.length
@@ -659,7 +695,7 @@ export default async function CatchAllProgramPage(
                       {unisWithSpec.map(u => {
                         const upd = u.programDetails[program]
                         return (
-                          <Link key={u.id} href={`/universities/${u.id}/${programSlug}/${specSlugStr}`}
+                          <Link key={u.id} href={uniSpecHref(u, program, programSlug, activeSpec, specSlugStr)!}
                             className="flex items-center gap-3 p-4 bg-white border border-border rounded-xl hover:border-amber hover:shadow-md transition-all no-underline group">
                             <div className="w-9 h-9 rounded-lg border border-border bg-white flex items-center justify-center overflow-hidden shrink-0">
                               {u.logo
@@ -957,6 +993,7 @@ export default async function CatchAllProgramPage(
               const unisWithSpec = universities
                 .filter(u => u.programDetails[program]?.specs?.some(s => getSpecName(s) === activeSpec))
                 .sort((a,b) => (a.nirf||999) - (b.nirf||999))
+                .filter(u => uniSpecHref(u, program, programSlug, activeSpec, specSlugStr))
                 .slice(0, 8)
               if (!unisWithSpec.length) return null
               return (
@@ -973,7 +1010,7 @@ export default async function CatchAllProgramPage(
                       return (
                         <Link
                           key={u.id}
-                          href={`/universities/${u.id}/${programSlug}/${specSlugStr}`}
+                          href={uniSpecHref(u, program, programSlug, activeSpec, specSlugStr)!}
                           className="flex items-center gap-3 p-4 bg-white border border-border rounded-xl hover:border-amber hover:shadow-md transition-all no-underline group"
                         >
                           <div className="w-9 h-9 rounded-lg border border-border bg-white flex items-center justify-center overflow-hidden shrink-0">

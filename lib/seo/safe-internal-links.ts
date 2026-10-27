@@ -31,9 +31,13 @@ import MBA_ALLOWLIST from '@/lib/data/programme-allowlist-mba.json'
 import BBA_ALLOWLIST from '@/lib/data/programme-allowlist-bba.json'
 import BCA_ALLOWLIST from '@/lib/data/programme-allowlist-bca.json'
 import MCA_ALLOWLIST from '@/lib/data/programme-allowlist-mca.json'
+import BA_ALLOWLIST from '@/lib/data/programme-allowlist-ba.json'
+import MSC_ALLOWLIST from '@/lib/data/programme-allowlist-msc.json'
+import BSC_ALLOWLIST from '@/lib/data/programme-allowlist-bsc.json'
+import SPEC_ALLOWLIST_RAW from '@/lib/data/spec-allowlist.json'
 import VERIFY_SLUG_LIST from '@/lib/data/verify-slugs.json'
 import VERIFY_OVERRIDE_FILE from '@/lib/data/verify-slug-overrides.json'
-import type { University, Program } from '@/lib/data'
+import { getUniversityById, type University, type Program } from '@/lib/data'
 import { programmeSlug } from '@/lib/seo/resolve-programme'
 
 const VALID = new Set(VALID_URLS as string[])
@@ -49,6 +53,10 @@ const HUB_ALLOWLISTS: Record<string, Set<string>> = {
   bba: new Set(BBA_ALLOWLIST as string[]),
   bca: new Set(BCA_ALLOWLIST as string[]),
   mca: new Set(MCA_ALLOWLIST as string[]),
+  // Added to middleware in slice 6 (2026-08-29) but never mirrored here.
+  ba: new Set(BA_ALLOWLIST as string[]),
+  msc: new Set(MSC_ALLOWLIST as string[]),
+  bsc: new Set(BSC_ALLOWLIST as string[]),
 }
 
 /**
@@ -108,6 +116,25 @@ export function getVerifyPage(uniId: string): string | null {
   const mapped = VERIFY_OVERRIDES[uniId]
   if (mapped && VERIFY_SLUGS.has(mapped)) return `/verify/${mapped}`
   return null
+}
+
+// The reverse direction: a /verify/{supabase-slug} page linking back into the
+// site. VerifyHero carried its own hand-written SLUG_MAP for this and
+// VerifyInterlinks used the Supabase slug as if it were a site id, so
+// /verify/vellore-institute-of-technology-online linked
+// /universities/vellore-institute-of-technology-online/bcom: an old slug that
+// redirects, into a hub the allowlist 404s. Semrush, 27 Oct 2026.
+// Only the exact-name-matched overrides file is trusted here. The old SLUG_MAP
+// also sent amity-university-rajasthan-online to amity-university-online, a
+// different institution.
+const VERIFY_SLUG_TO_SITE_ID: Record<string, string> = Object.fromEntries(
+  Object.entries(VERIFY_OVERRIDES).map(([id, slug]) => [slug, id]),
+)
+
+/** The lib/data.ts university for a verify slug, or null when none is known. */
+export function getUniversityForVerifySlug(verifySlug: string): University | null {
+  const id = VERIFY_SLUG_TO_SITE_ID[verifySlug] ?? verifySlug
+  return getUniversityById(id) ?? null
 }
 
 export interface SiblingLink {
@@ -189,4 +216,33 @@ export function getSiblingSpecialisations(
   const out: SpecLink[] = []
   for (let i = 0; i < count; i++) out.push(pool[(start + i) % pool.length])
   return out
+}
+
+// ── Specialisation hrefs ────────────────────────────────────────────────────
+// Mirrors section 2 of middleware.ts for /universities/{u}/{p}/{s}: the hub
+// allowlist gates the whole subtree, the alias table 308s a slug onto its
+// canonical form, and anything outside the accepted set is a hard 404.
+// Building a spec href by slugifying a display name skipped all three: the
+// Semrush audit of 27 Oct 2026 found 338 links into 308s (human-resource-
+// management -> hr-management) and 63 into 404s (a /programs/mba/{spec} hub
+// linking universities that call the spec something else).
+const SPEC_ALLOWLIST = SPEC_ALLOWLIST_RAW as unknown as { s: string[]; m: Record<string, number[]>; r: Record<string, number[]> }
+
+/**
+ * The URL a specialisation link should point at: the canonical slug when
+ * `specSlug` is an alias, the path itself when it resolves, or null when it
+ * would 404. Never returns a URL that redirects.
+ */
+export function resolveSpecHref(uniId: string, progSlug: string, specSlug: string): string | null {
+  const allowlist = HUB_ALLOWLISTS[progSlug]
+  // Middleware leaves programme slugs outside its ten allowlists ungated.
+  if (!allowlist) return `/universities/${uniId}/${progSlug}/${specSlug}`
+  if (!allowlist.has(uniId)) return null
+  const pairKey = `${uniId}|${progSlug}`
+  const wanted = specSlug.toLowerCase()
+  let slug: string | null = null
+  const alias = SPEC_ALLOWLIST.r[pairKey]
+  if (alias) for (let i = 0; i < alias.length; i += 2) if (SPEC_ALLOWLIST.s[alias[i]] === wanted) { slug = SPEC_ALLOWLIST.s[alias[i + 1]]; break }
+  if (!slug && (SPEC_ALLOWLIST.m[pairKey] ?? []).some(i => SPEC_ALLOWLIST.s[i] === wanted)) slug = wanted
+  return slug ? `/universities/${uniId}/${progSlug}/${slug}` : null
 }

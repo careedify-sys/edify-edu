@@ -2,7 +2,8 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
-import { getUniversityById } from '@/lib/data'
+import { getUniversityById, type Program } from '@/lib/data'
+import { getProgramSchemaOffer } from '@/lib/seo/program-schema'
 import { getTitleName } from '@/lib/seo-title'
 import { formatINR } from '@/lib/format'
 import { PAIRS, PAIR_SLUGS, type PairSlug } from './pairs'
@@ -11,6 +12,7 @@ import { PAIRS, PAIR_SLUGS, type PairSlug } from './pairs'
 // lib/data.ts ids for 63 of 128 universities, so building the href from the id
 // produced the 404 wave Search Console reported on 2026-08-23.
 import { hubResolves, getVerifyPage } from '@/lib/seo/safe-internal-links'
+import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
 export const revalidate = false
 
@@ -107,19 +109,25 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
     })),
   }
 
+  const courseWorkload = ['MBA', 'MCA', 'M.Com', 'MA', 'MSc'].includes(prog) ? 'P2Y' : 'P3Y'
   const courseSchemaA = {
     '@context': 'https://schema.org', '@type': 'Course',
     name: `Online ${prog} - ${uA.name}`,
     provider: { '@type': 'Organization', name: uA.name, sameAs: `https://edifyedu.in/universities/${uA.id}` },
     educationalCredentialAwarded: prog,
-    ...(feeA ? { offers: { '@type': 'Offer', price: feeA.min, priceCurrency: 'INR' } } : {}),
+    // Schema fees go through getDisplayFee, never getProgramFee above, which
+    // reads the MBA-led u.feeMin for MBA. Course info needs offers.category and
+    // a hasCourseInstance; courseMode is only valid on the instance.
+    offers: { category: 'Online Education', ...(getProgramSchemaOffer(uA, prog as Program) ?? { '@type': 'Offer', priceCurrency: 'INR' }) },
+    hasCourseInstance: { '@type': 'CourseInstance', courseMode: 'Online', courseWorkload: courseWorkload },
   }
   const courseSchemaB = {
     '@context': 'https://schema.org', '@type': 'Course',
     name: `Online ${prog} - ${uB.name}`,
     provider: { '@type': 'Organization', name: uB.name, sameAs: `https://edifyedu.in/universities/${uB.id}` },
     educationalCredentialAwarded: prog,
-    ...(feeB ? { offers: { '@type': 'Offer', price: feeB.min, priceCurrency: 'INR' } } : {}),
+    offers: { category: 'Online Education', ...(getProgramSchemaOffer(uB, prog as Program) ?? { '@type': 'Offer', priceCurrency: 'INR' }) },
+    hasCourseInstance: { '@type': 'CourseInstance', courseMode: 'Online', courseWorkload: courseWorkload },
   }
 
   const relatedPairs = PAIR_SLUGS.filter(p => {
@@ -136,8 +144,10 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchemaA) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchemaB) }} />
+      {/* Mode-unverified universities get no Course node: it would stamp
+          courseMode 'Online' on a claim we cannot back. Same gate as SchemaBlock. */}
+      {shouldIndexUniversity(uA.id) && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchemaA) }} />}
+      {shouldIndexUniversity(uB.id) && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchemaB) }} />}
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Breadcrumb */}

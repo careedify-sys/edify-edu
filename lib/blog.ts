@@ -4964,7 +4964,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Look specifically at whether the university delivers on live sessions (or just sends recordings), whether assignment feedback is real or just automated, and what the exam experience is actually like.</p>
 
 <div class="callout-info">
-  <p>For a current, verified list of all UGC-DEB approved universities offering online programs, you can browse the compiled list at <a href="/ugc-approved-online-universities">EdifyEdu.in</a>, we keep it updated with program details, fees, and accreditations.</p>
+  <p>For a current, verified list of all UGC-DEB approved universities offering online programs, you can browse the compiled list at <a href="/blog/ugc-deb-approved-universities-list-2026">EdifyEdu.in</a>, we keep it updated with program details, fees, and accreditations.</p>
 </div>
 
 <h2>Step 5: Match the University to Your Actual Career Goal</h2>
@@ -5224,7 +5224,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>The ₹1–1.75 lakh private university programs tend to offer a noticeably better platform experience, live classes, mentor support, peer interaction through virtual campuses. For most working professionals, that structure is what keeps them from dropping out quietly.</p>
 
 <div class="callout-warning">
-  <p><strong>One thing to verify yourself:</strong> Fees listed online frequently reflect introductory or discounted rates. Always ask for the full breakup (including exam fees, registration charges, and any semester-end costs) before you pay the first instalment. The number on the website is rarely the final number. Also <a href="/scholarships" class="ilink">check available scholarships</a> on EdifyEdu, many merit and need-based options can reduce the total outgo further.</p>
+  <p><strong>One thing to verify yourself:</strong> Fees listed online frequently reflect introductory or discounted rates. Always ask for the full breakup (including exam fees, registration charges, and any semester-end costs) before you pay the first instalment. The number on the website is rarely the final number. Also <a href="/compare" class="ilink">check available scholarships</a> on EdifyEdu, many merit and need-based options can reduce the total outgo further.</p>
 </div>
 
 <h2>Cheapest Online MBA in India 2026: Under ₹1 Lakh Options</h2>
@@ -6547,7 +6547,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <div class="internal-links">
       <h3>Also Compare With Other Manipal Universities</h3>
       <div class="il-grid">
-        <a href="/blog/manipal-online-mba-comparison-2026" class="il-card"><div class="il-uni">COMPARISON</div><div class="il-title">MAHE vs MUJ vs SMU</div><div class="il-sub">Full comparison blog</div></a>
+        <a href="/compare/manipal-jaipur-vs-manipal-mahe" class="il-card"><div class="il-uni">COMPARISON</div><div class="il-title">MAHE vs MUJ</div><div class="il-sub">Side-by-side comparison</div></a>
         <a href="/blog/muj-online-mba-review-2026" class="il-card"><div class="il-uni">MUJ</div><div class="il-title">MUJ MBA Review 2026</div><div class="il-sub">₹1,84,000 &middot; 13 specs</div></a>
         <a href="/blog/smu-online-mba-review" class="il-card"><div class="il-uni">SMU</div><div class="il-title">SMU MBA Review 2026</div><div class="il-sub">Rs 1,10,000 &middot; Dual spec</div></a>
         <a href="/blog/online-mba-karnataka-2026" class="il-card"><div class="il-uni">STATE</div><div class="il-title">Online MBA Karnataka</div><div class="il-sub">All 12 Karnataka universities</div></a>
@@ -6788,7 +6788,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <div class="internal-links">
       <h3>Also Compare With Other Manipal Universities</h3>
       <div class="il-grid">
-        <a href="/blog/manipal-online-mba-comparison-2026" class="il-card"><div class="il-uni">COMPARISON</div><div class="il-title">MAHE vs MUJ vs SMU</div><div class="il-sub">Full comparison blog</div></a>
+        <a href="/compare/manipal-jaipur-vs-manipal-mahe" class="il-card"><div class="il-uni">COMPARISON</div><div class="il-title">MAHE vs MUJ</div><div class="il-sub">Side-by-side comparison</div></a>
         <a href="/blog/mahe-online-mba-review-2026" class="il-card"><div class="il-uni">MAHE</div><div class="il-title">MAHE MBA Review 2026</div><div class="il-sub">Rs 2,92,000 &middot; 9 specs</div></a>
         <a href="/blog/smu-online-mba-review" class="il-card"><div class="il-uni">SMU</div><div class="il-title">SMU MBA Review 2026</div><div class="il-sub">Rs 1,10,000 &middot; Dual spec</div></a>
       </div>
@@ -27797,7 +27797,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;font-size:14px;font-weight:600;color:#0f172a;display:flex;align-items:center;gap:10px"><span style="font-size:20px">🚚</span> Logistics &amp; Supply Chain</div>
 </div>
 
-<p>Also considering an MCA? See our guide to <a href="/vignan-online-mca" style="color:inherit;text-decoration:underline;text-underline-offset:2px">Vignan Online MCA fees and admission</a> for a full overview of the MCA program offered by the same university.</p>
+<p>Also considering an MCA? See our guide to <a href="/universities/vignan-university-online/mca" style="color:inherit;text-decoration:underline;text-underline-offset:2px">Vignan Online MCA fees and admission</a> for a full overview of the MCA program offered by the same university.</p>
 
 <h2>Vignan Online MBA Syllabus (Semester-Wise)</h2>
 
@@ -31533,7 +31533,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <td>5 - 15 LPA</td>
     </tr>
     <tr>
-      <td><a href="/programs/mba/data-science--ai" class="ilink">Data Science and AI</a></td>
+      <td><a href="/programs/mba/data-science" class="ilink">Data Science and AI</a></td>
       <td>Tech-savvy, analytics, AI enthusiasts</td>
       <td>7 - 22 LPA</td>
     </tr>
@@ -33145,7 +33145,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 </p>
 
 <p class="ilink">
-  <a href="/blog/how-to-choose-right-online-university-india-2026">Read: How to Choose the Right University in India</a>
+  <a href="/blog/how-to-verify-ugc-deb-approval-online-university-2026">Read: How to Verify a University Before You Apply</a>
 </p>
 
 <!-- CTA Box -->
@@ -39079,7 +39079,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <li><strong>Accreditation:</strong> NIRF top tier, NAAC A++, UGC-DEB approved</li>
 <li><strong>Value position:</strong> Saves ₹39K vs MAHE, ₹24K vs Symbiosis</li>
 </ul>
-<p style="margin-top:12px;"><a href="/universities/amrita-vishwa-vidyapeetham">See full Amrita university profile on edifyedu.in</a> &bull; <a href="/compare">Compare with other Tier 1 BBA colleges</a></p>
+<p style="margin-top:12px;"><a href="/universities/amrita-vishwa-vidyapeetham-online">See full Amrita university profile on edifyedu.in</a> &bull; <a href="/compare">Compare with other Tier 1 BBA colleges</a></p>
 </div>
 
 <p>The Amrita Online BBA programme delivered through AHEAD has emerged as the highest value-to-fee Tier 1 Premium online BBA pick for working professionals and 12th-pass students in India 2026. AHEAD (Amrita Hub for Excellence in Academics and Development) is the dedicated online learning division of Amrita Vishwa Vidyapeetham. The parent university holds NIRF University rank within top tier nationally, NAAC A++ accreditation (highest grade), and UGC-DEB approved status. The Online BBA programme at fee tier of ₹1,41,000 across 6 semesters delivers Tier 1 Premium institutional credentialling at structurally accessible fee. The question worth answering: does Amrita AHEAD BBA genuinely deliver Tier 1 Premium career outcomes proportional to its accessible fee positioning, and how does it compare to MAHE and Symbiosis at the same Tier 1 brand tier? This honest review covers verified fees, AHEAD institutional structure, value-to-fee analysis versus peers, and the specific student profiles where Amrita Online BBA is the right pick.</p>
@@ -39229,7 +39229,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <li><a href="/blog/best-online-bba-colleges-india-2026">Online BBA India 2026: top UGC approved colleges, fees, salary</a></li>
 <li><a href="/blog/online-bba-fees-india-2026">Online BBA fees comparison across 11 universities India 2026</a></li>
 <li><a href="/blog/best-online-bba-colleges-india-2026">Best online BBA colleges India 2026 ranked by tier</a></li>
-<li><a href="/universities/amrita-vishwa-vidyapeetham">Amrita Vishwa Vidyapeetham university profile on edifyedu.in</a></li>
+<li><a href="/universities/amrita-vishwa-vidyapeetham-online">Amrita Vishwa Vidyapeetham university profile on edifyedu.in</a></li>
 <li><a href="/compare">Compare BBA colleges side by side</a></li>
 <li><a href="/contact">Talk to our counsellor for personalised BBA admission guidance</a></li>
 </ul>
@@ -39537,7 +39537,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <li><strong>NIRF rank:</strong> #31 University category</li>
 <li><strong>Grant validity:</strong> 20% grant valid until 9 May 2026</li>
 </ul>
-<p style="margin-top:12px;"><a href="/universities/lovely-professional-university">See full LPU profile on edifyedu.in</a> &bull; <a href="/compare">Compare with other Tier 2 BBA colleges</a></p>
+<p style="margin-top:12px;"><a href="/universities/lovely-professional-university-online">See full LPU profile on edifyedu.in</a> &bull; <a href="/compare">Compare with other Tier 2 BBA colleges</a></p>
 </div>
 
 <p>The LPU Online BBA programme has emerged as one of the most-considered Tier 2 Mid-Premium online BBA picks for working professionals and 12th-pass students in India 2026. Lovely Professional University (LPU) holds NIRF University rank #31 nationally, NAAC A++ accreditation (highest grade), UGC-DEB approved status, and WES Canada credential recognition. The Online BBA programme has sticker fee of ₹1,50,000 across 6 semesters; the current 20 percent grant reduces net fee to ₹1,22,400 (saving ₹27,600). The question worth answering: does LPU Online BBA at net fee tier genuinely deliver Tier 2 Mid-Premium career outcomes proportional to its structurally accessible fee positioning, and how does the 20 percent grant work versus peer Tier 2 programmes? This honest review covers verified fees including the grant math, NIRF #31 University positioning, Punjab and North India IT corridor brand recall, WES Canada recognition for international mobility, and the specific student profiles where LPU Online BBA is the right pick.</p>
@@ -39693,7 +39693,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <li><a href="/blog/best-online-bba-colleges-india-2026">Online BBA India 2026: top UGC approved colleges, fees, salary</a></li>
 <li><a href="/blog/online-bba-fees-india-2026">Online BBA fees comparison across 11 universities India 2026</a></li>
 <li><a href="/blog/best-online-bba-colleges-india-2026">Best online BBA colleges India 2026 ranked by tier</a></li>
-<li><a href="/universities/lovely-professional-university">LPU university profile on edifyedu.in</a></li>
+<li><a href="/universities/lovely-professional-university-online">LPU university profile on edifyedu.in</a></li>
 <li><a href="/compare">Compare BBA colleges side by side</a></li>
 <li><a href="/contact">Talk to our counsellor for personalised BBA admission guidance</a></li>
 </ul>
@@ -39755,7 +39755,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <li><strong>Specialisations:</strong> Healthcare, Business Analytics, FinTech, Marketing, HR</li>
 <li><strong>Honors trigger:</strong> CGPA 8+ at end of semester 6 opens 4th year</li>
 </ul>
-<p style="margin-top:12px;"><a href="/universities/manipal-academy-of-higher-education">See full MAHE university profile on edifyedu.in</a> &bull; <a href="/compare">Compare with other Tier 1 BBA colleges</a></p>
+<p style="margin-top:12px;"><a href="/universities/manipal-academy-higher-education-online">See full MAHE university profile on edifyedu.in</a> &bull; <a href="/compare">Compare with other Tier 1 BBA colleges</a></p>
 </div>
 
 <p>The MAHE Online BBA programme has emerged as one of the most-considered Tier 1 Premium online BBA picks for working professionals and 12th-pass students in India 2026. MAHE (Manipal Academy of Higher Education) holds NIRF University rank within top 5 nationally, NAAC A++ accreditation, and Institution of Eminence (IoE) status granted by Government of India. The Online BBA programme is delivered through MAHE Directorate of Online Education at fee tier of ₹1,80,000 across 3 years standard or ₹2,40,000 across 4 years for BBA Honors track. The question worth answering: does MAHE Online BBA genuinely deliver Tier 1 Premium career outcomes proportional to fee investment, or is the fee tier difficult to justify versus value-tier alternatives like LPU? This honest review covers verified fees, programme structure, BBA Honors trigger logic, scholarship math, ABC credit portability under NEP 2020, and the specific student profiles where MAHE Online BBA is the right pick.</p>
@@ -39926,7 +39926,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <li><a href="/blog/best-online-bba-colleges-india-2026">Online BBA India 2026: top UGC approved colleges, fees, salary</a></li>
 <li><a href="/blog/online-bba-fees-india-2026">Online BBA fees comparison across 11 universities India 2026</a></li>
 <li><a href="/blog/best-online-bba-colleges-india-2026">Best online BBA colleges India 2026 ranked by tier</a></li>
-<li><a href="/universities/manipal-academy-of-higher-education">MAHE university profile on edifyedu.in</a></li>
+<li><a href="/universities/manipal-academy-higher-education-online">MAHE university profile on edifyedu.in</a></li>
 <li><a href="/compare">Compare BBA colleges side by side</a></li>
 <li><a href="/contact">Talk to our counsellor for personalised BBA admission guidance</a></li>
 </ul>
@@ -39986,7 +39986,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <li><strong>Registration fee:</strong> ₹1,200 one-time non-refundable</li>
 <li><strong>Distinctive feature:</strong> BA electives variant adds analytics depth</li>
 </ul>
-<p style="margin-top:12px;"><a href="/universities/nmims">See full NMIMS profile on edifyedu.in</a> &bull; <a href="/compare">Compare with other Tier 1 BBA colleges</a></p>
+<p style="margin-top:12px;"><a href="/universities/nmims-online">See full NMIMS profile on edifyedu.in</a> &bull; <a href="/compare">Compare with other Tier 1 BBA colleges</a></p>
 </div>
 
 <p>The NMIMS Online BBA programme has emerged as one of the most-considered Mumbai BFSI corridor online BBA picks for working professionals and 12th-pass students in India 2026. NMIMS (Narsee Monjee Institute of Management Studies) is a deemed-to-be university with NAAC A++ accreditation (highest grade), NIRF University rank within top 100 nationally, and UGC-DEB approved status for online programmes. The Online BBA programme offers two structurally distinctive variant fee structures: Standard BBA at ₹1,50,000 across 6 semesters or BBA with Business Analytics electives at ₹1,80,000 across 6 semesters. The question worth answering: does NMIMS Online BBA genuinely deliver Mumbai BFSI corridor career outcomes proportional to fee investment, and how does the BA electives variant compare to MAHE BBA Honors and Symbiosis SSODL specialisation pathways? This honest review covers verified fees, BA electives variant analysis, Mumbai BFSI brand recall positioning, and the specific student profiles where NMIMS Online BBA is the right pick.</p>
@@ -40142,7 +40142,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <li><a href="/blog/best-online-bba-colleges-india-2026">Online BBA India 2026: top UGC approved colleges, fees, salary</a></li>
 <li><a href="/blog/online-bba-fees-india-2026">Online BBA fees comparison across 11 universities India 2026</a></li>
 <li><a href="/blog/best-online-bba-colleges-india-2026">Best online BBA colleges India 2026 ranked by tier</a></li>
-<li><a href="/universities/nmims">NMIMS university profile on edifyedu.in</a></li>
+<li><a href="/universities/nmims-online">NMIMS university profile on edifyedu.in</a></li>
 <li><a href="/compare">Compare BBA colleges side by side</a></li>
 <li><a href="/contact">Talk to our counsellor for personalised BBA admission guidance</a></li>
 </ul>
@@ -42407,7 +42407,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <li><strong>Application fee:</strong> ₹500 one-time non-refundable</li>
 <li><strong>Institutional legacy:</strong> Manipal Group + NAAC A+</li>
 </ul>
-<p style="margin-top:12px;"><a href="/universities/manipal-university-jaipur">See full MUJ profile on EdifyEdu</a> &bull; <a href="/compare">Compare BBA colleges side by side</a></p>
+<p style="margin-top:12px;"><a href="/universities/manipal-university-jaipur-online">See full MUJ profile on EdifyEdu</a> &bull; <a href="/compare">Compare BBA colleges side by side</a></p>
 </div>
 
 <p>The MUJ Online BBA programme delivered by Manipal University Jaipur has emerged as one of the most-considered value Tier 2 Mid-Premium online BBA picks for working professionals and 12th-pass students in India 2026. MUJ holds NAAC A+ accreditation, UGC-DEB approved status, and operates as part of the prestigious Manipal Group with shared institutional legacy across MAHE Manipal, MUJ Jaipur, and Sikkim Manipal. The Online BBA programme has full course fee of ₹1,44,000 inclusive of all taxes across 6 semesters, with EMI starting at ₹4,000 per month.</p>
@@ -43267,7 +43267,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>UGC-DEB treats both as equivalent for job purposes. But employer perception and learning experience differ. Online MBA generally offers better engagement, faculty interaction, and digital skill building. For a detailed comparison, read our <a href="/blog/distance-mba-meaning-what-is-it-2026">distance MBA meaning and guide</a>.</p>
 
-<p>If you are weighing affordability above all else, an <a href="/blog/affordable-online-mba-programs-india-2026">affordable online MBA guide</a> covers the lowest-fee options across all Indian states, not just Tamil Nadu.</p>
+<p>If you are weighing affordability above all else, an <a href="/blog/affordable-online-mba-india-2026">affordable online MBA guide</a> covers the lowest-fee options across all Indian states, not just Tamil Nadu.</p>
 
 <h2>Final Word</h2>
 

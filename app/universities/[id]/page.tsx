@@ -5,9 +5,10 @@ import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import { nirfForProgramme } from '@/lib/data-slim'
 import UniversityPageClient from '@/components/UniversityPageClient'
-import { getResolvableProgrammes, getVerifyPage } from '@/lib/seo/safe-internal-links'
+import { getResolvableProgrammes, getVerifyPage, resolveSpecHref } from '@/lib/seo/safe-internal-links'
 import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
 import { getDisplayFee } from '@/lib/fees'
+import { getProgramSchemaOffer } from '@/lib/seo/program-schema'
 import { pageKeywords } from '@/lib/page-keywords'
 import { shouldIndexUniversity, onlinePrefix } from '@/lib/seo/mode-unverified'
 import { formatUniversityDisplayName } from '@/lib/format'
@@ -236,6 +237,18 @@ export default async function UniversityPage(
         university={university}
         linkableProgrammes={getResolvableProgrammes(university)}
         verifyHref={getVerifyPage(university.id)}
+        programSchema={Object.fromEntries(university.programs.map(p => {
+          const f = getDisplayFee(university, p)
+          return [p, { offer: getProgramSchemaOffer(university, p), feeCompact: f.ok && f.compact ? f.compact : null }]
+        }))}
+        specHrefs={Object.fromEntries(university.programs.flatMap(p => {
+          // Same slug derivation as the chips in UniversityPageClient.
+          const progSlug = p.toLowerCase().replace(/\./g, '')
+          return (university.programDetails[p]?.specs ?? []).map(spec => {
+            const slug = typeof spec === 'string' ? spec.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') : spec.slug
+            return [`${progSlug}/${slug}`, resolveSpecHref(university.id, progSlug, slug)]
+          })
+        }))}
       />
     </>
   )

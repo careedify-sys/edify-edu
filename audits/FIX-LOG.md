@@ -1,5 +1,30 @@
 # Fix log
 
+## 2026-10-27 · Semrush site audit: Course schema, dead and redirecting links, email, blog related links
+
+Semrush crawl of 27 Oct (4,383 pages, 2 healthy). Full numbers and the weak-page list: audits/tech-health-2026-10-27.md.
+
+1. Course schema. SchemaBlock put `courseMode` on the Course itself as well as its CourseInstance; schema.org only
+defines it on CourseInstance, which was the 2,421 errors. Removed. The overview page's Course node read the MBA-led
+u.feeMin/feeMax and put lowPrice/highPrice on a plain Offer; it now gets getDisplayFee-backed offers from the server.
+Compare pair Course nodes had no hasCourseInstance or offers.category and bypassed getDisplayFee; fixed, and gated on
+mode-unverified like SchemaBlock. /programs and coupon nodes used `PT2Y`, which is not ISO 8601; now `P2Y`/`P3Y`.
+/programs dropped a derived "Fees from ₹XK" floor from its schema description. 14 validator issues on 10 sample pages to 0.
+2. Dead links. /verify built hub links from the Supabase slug plus Supabase programme names, never through the hub
+allowlist. Now resolved to the lib/data id by the exact-name-matched overrides file and gated on hubResolves + isLinkable.
+VerifyHero's hand-kept SLUG_MAP is gone; it mapped Amity Rajasthan onto Amity Online. ProgrammeComparisonTable and the
+/programs spec hubs linked u.programs-derived hubs and the hub's spec slug for every university; both now resolve through
+the middleware allowlists (new resolveSpecHref mirrors middleware section 2). safe-internal-links lacked the BA, MSc and
+BSc allowlists middleware added on 29 Aug, so overview pages never linked those hubs. 199 real dead links to 0.
+3. Redirect links. Spec chips slugified display names into 308 aliases (human-resource-management); verify programme rows
+pointed at the legacy /programmes/ path; 19 blog-body hrefs used old slugs or dead posts. 857 to 0. The legacy
+/ugc-approved-online-universities redirect pointed at a 404 post and now points at the live UGC list.
+4. Email. Cloudflare rewrote every mailto into /cdn-cgi/l/email-protection, a 404 link on all 3,217 pages. Wrapped in
+email_off/email_on comments (components/EmailOff.tsx), so it survives obfuscation being on or off.
+5. Blog related links. "Related Guides" was the three newest posts on every post, so older posts were linked only from
+/blog pagination. lib/blog-related.ts picks by shared universities, category and tags and spreads inbound links.
+29 weakly linked posts to 0.
+
 ## 2026-10-27 · All 16 remaining MBA spec hub titles cut to 60 characters
 
 Keyword gap MBA spec rows (project management 480, marketing 390, operations 390, international business 210, IT 210, and

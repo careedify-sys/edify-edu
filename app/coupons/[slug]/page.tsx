@@ -160,7 +160,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
     hasCourseInstance: {
       '@type': 'CourseInstance',
       courseMode: 'Online',
-      courseWorkload: 'PT2Y',
+      courseWorkload: 'P2Y',
     },
   }
 
