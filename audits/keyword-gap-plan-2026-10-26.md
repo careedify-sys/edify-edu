@@ -179,3 +179,4 @@ eligibility follows the regulator. Feeds item 8 and the "one year online mba" ro
 - 2026-10-27 · online msw programs (590) + masters in social work online (390): /blog/online-msw-india from the UGC-DEB HEI register (5 online, 29 ODL for 2026-27).
 - 2026-10-27 · worth-it cluster (3,240/mo): is-online-mba-worth-it-2026 rewritten without fabricated stats.
 - 2026-10-27 · diploma cluster (~5,200/mo): /blog/online-diploma-courses-india (8 online PG diplomas 2026-27; engineering diplomas barred). "online courses after 12th" already covered by online-bachelors-ug-courses-india.
+- 2026-10-27 · MBA spec rows: healthcare/hospital administration (1,000) and HR (800) hub titles fixed.

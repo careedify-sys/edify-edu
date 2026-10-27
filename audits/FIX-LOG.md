@@ -1,5 +1,12 @@
 # Fix log
 
+## 2026-10-27 · MBA healthcare and HR spec hubs retitled for keyword-gap rows
+
+"online mba hospital administration" (P1, 1,000/mo) and "mba in hr management online" / "mba in human resource management
+online" (P2, 480 + 320/mo), all Missing. /programs/mba/healthcare-management led with "Fees From ₹80K", a derived lowest
+fee, and never said hospital; now "Online MBA Healthcare & Hospital Administration 2026" with a matching H1. The HR title
+ran 87 characters; now "Online MBA in HR Management 2026: UGC-DEB Universities" (54). No fee figures.
+
 ## 2026-10-27 · Unsourced salary-source bylines and invented completion rates removed from blog posts
 
 House rule: no fabricated stats, approved sources only. A scan of published posts found 52 with statistic-like claims

@@ -23,15 +23,21 @@ export const MBA_SPEC_SEO_OVERRIDES: Record<string, MBASpecSeoOverride> = {
     intro: 'An online MBA in Marketing prepares you for brand management, digital strategy, sales leadership, and market research roles. This page lists every UGC-DEB approved online MBA Marketing programme in India with real fee comparisons, accreditation checks, and placement data. edifyedu.in earns zero commissions from any university listed here.',
   },
   'human-resource-management': {
-    title: 'Online MBA in HR 2026: Top Universities, Fees, Human Resource Management | edifyedu.in',
-    description: 'Online MBA in Human Resource Management from top Indian universities. Fees, syllabus, and career scope. Compare Amity, LPU, Symbiosis, NMIMS HR programmes.',
+    // Keyword gap 2026-10-26: "mba in hr management online" (480/mo) and "mba in
+    // human resource management online" (320/mo), both Missing. The old title ran
+    // 87 characters and was cut off in results.
+    title: 'Online MBA in HR Management 2026: UGC-DEB Universities',
+    description: 'Online MBA in Human Resource Management from UGC-DEB entitled universities. Compare specialisation, NAAC grade and total fee side by side. No paid rankings.',
     h1: 'Online MBA in HR (Human Resource Management) 2026: Fees and Universities',
     intro: 'An online MBA in Human Resource Management is ideal for professionals in talent acquisition, L&D, compensation, and people operations. This page covers every UGC-DEB approved online MBA HR programme in India with fee breakdowns and honest reviews. edifyedu.in is commission-free and ranks no university based on payments.',
   },
   'healthcare-management': {
-    title: 'Online MBA in Healthcare Management 2026: Fees From ₹80K',
-    description: 'Amity, MAHE, DY Patil and LPU online MBA Healthcare Management fees from ₹80K, UGC-DEB approved. Zero-commission comparison. Check eligibility free.',
-    h1: 'Online MBA in Healthcare Management 2026: Fees, Universities, and Career Scope',
+    // Keyword gap 2026-10-26: "online mba hospital administration" (P1, 1,000/mo),
+    // Missing. The old title led with "Fees From ₹80K", a derived lowest fee
+    // (memory: never derive fee superlatives), and never said hospital.
+    title: 'Online MBA Healthcare & Hospital Administration 2026',
+    description: 'Online MBA in healthcare and hospital administration from UGC-DEB entitled universities. Compare NAAC grade, specialisation and total fee. No paid rankings.',
+    h1: 'Online MBA in Healthcare and Hospital Administration 2026: Universities and Career Scope',
     intro: 'An online MBA in Healthcare Management or Hospital Administration is one of the fastest-growing specializations in India. From hospital chains to health-tech startups, this degree opens diverse career paths. Compare all UGC-DEB approved programmes here with verified fees and accreditation data. edifyedu.in earns zero commissions.',
   },
   'business-analytics': {
