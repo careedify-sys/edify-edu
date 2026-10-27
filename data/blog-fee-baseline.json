@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-10-27",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 2346,
+  "totalUnverified": 2345,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 0,
@@ -69,7 +69,7 @@
     "distance-mba-meaning-what-is-it-2026": 10,
     "ma-distance-learning-india-2026": 46,
     "online-mba-courses-chennai-2026": 19,
-    "top-correspondence-mba-colleges-india-2026": 38,
+    "top-correspondence-mba-colleges-india-2026": 37,
     "correspondence-mba-meaning-2026": 14,
     "top-executive-mba-programs-india-2026": 41,
     "icfai-online-mba-fees-2026": 8,
@@ -189,7 +189,8 @@
     "integral-university-online-review": 0,
     "srm-online-mba-2026": 0,
     "ugc-fee-refund-policy": 0,
-    "online-degree-scholarships-india": 0
+    "online-degree-scholarships-india": 0,
+    "ignou-online-admission-guide": 0
   },
   "rebaselineNote": "2026-08-24: re-baselined after replacing placeholder fee ranges in lib/data.ts with exact owner-confirmed fees for 24 programme hubs. Wide junk ranges (e.g. 60K-200K) had been absorbing blog fee figures as MATCH; exact fees correctly reclassify them as payment-mode/list-price variants (e.g. NMIMS BBA semester plan 1,50,000 vs annual plan 1,41,000; Chandigarh BBA list 1,75,000 vs post-early-bird 1,31,250). No blog content was changed by that commit."
 }

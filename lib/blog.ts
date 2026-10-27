@@ -8048,7 +8048,7 @@ export const BLOG_POSTS: BlogPost[] = [
     heroImageAlt: 'Smiling worker in blue uniform at desk in a textile factory, showcasing industry professionalism.',
     faqs: [
       { q: 'What is the realistic MBA fee range in India 2026?', a: 'Rs 66,000 (IGNOU distance) to Rs 45 lakh (ISB plus living costs). Bucket breakdown: IIM A/B/C: Rs 26 to 30 lakh. ISB PGP: Rs 38.67 lakh tuition plus Rs 6.45 lakh living costs (total approximately Rs 45 lakh). Tier-1 private (XLRI, MDI, FMS): Rs 2 to 25 lakh (FMS Rs 2.32 lakh is the lowest). Tier-2 private (Amity, KJ Somaiya, Great Lakes): Rs 8 to 15 lakh. State government MBA: Rs 50K to Rs 2 lakh. Online MBA from NAAC A+ universities: Rs 1.56L to 2.25L. Online MBA budget (IGNOU): Rs 66,000.' },
-      { q: 'What is the cheapest credible MBA in India 2026?', a: 'IGNOU online MBA at Rs 66,000 total fee. Central University, NAAC A++, UGC-DEB approved. Requires OpenMAT entrance test. Among private campus MBA: FMS Delhi at Rs 2.32 lakh (CAT 99-plus required). Among state government campus: Mumbai University, Pune University at Rs 50K to Rs 1 lakh. State open universities (BRAOU, KSOU) at Rs 15K to 30K but with weaker brand recognition.' },
+      { q: 'What is the cheapest credible MBA in India 2026?', a: 'IGNOU online MBA at Rs 66,000 total fee. Central University, NAAC A++, UGC-DEB approved. No entrance test is listed in the July 2026 prospectus. Among private campus MBA: FMS Delhi at Rs 2.32 lakh (CAT 99-plus required). Among state government campus: Mumbai University, Pune University at Rs 50K to Rs 1 lakh. State open universities (BRAOU, KSOU) at Rs 15K to 30K but with weaker brand recognition.' },
       { q: 'What is the IIM MBA fee in 2026?', a: 'IIM Ahmedabad PGP: Rs 30 lakh approximately. IIM Bangalore PGP: Rs 27 lakh. IIM Calcutta PGP: Rs 28 lakh. IIM Lucknow, Kozhikode, Indore PGP: Rs 20 to 24 lakh. New IIMs (Shillong, Rohtak, Ranchi, Raipur, etc.): Rs 15 to 22 lakh. Baby IIMs (Sambalpur, Sirmaur, Mumbai NITIE): Rs 14 to 18 lakh. IIM A PGPX (1-year Executive): Rs 35 lakh. IIM B EPGP (1-year Executive): Rs 33.71 lakh single accommodation per 2026-27.' },
       { q: 'Is online MBA cheaper than regular MBA?', a: 'Yes, significantly. Online MBA from NAAC A+ university (NMIMS, JAIN, Amity, Manipal Jaipur): Rs 1.56L to 2.25L. Regular campus tier-1 (IIM, ISB): Rs 28 to 45 lakh. The 10x to 20x cost gap is real. Online MBA additionally saves opportunity cost (you keep working) of Rs 10 to 25 lakh over 2 years. Net difference often Rs 35 to 55 lakh in your favour for online MBA route.' },
       { q: 'What are the hidden costs of campus MBA?', a: 'Hostel and accommodation Rs 1.5 to 3 lakh per year. Mess and food Rs 50K to 1 lakh per year. Books, study materials Rs 30K to 60K. Travel and miscellaneous Rs 30K. Lost salary and PF contributions during 2-year programme Rs 10 to 25 lakh. International immersion (some IIMs) Rs 1.5 to 3 lakh. Total hidden costs add Rs 5 to 8 lakh on top of the headline tuition fee.' },
@@ -14442,7 +14442,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Are there NCR-based study centres for online MBA in 2026?', a: 'For mostly-online programmes, study centres are not critical (LMS-based delivery). For some hybrid options: Amity main campus in Noida, Sharda University in Greater Noida, Manav Rachna in Faridabad, Jamia Hamdard in South Delhi, IGNOU regional centres across all NCR cities. Most students never visit study centres beyond end-semester exam dates (twice a year).' },
       { q: 'What is Jamia Hamdard online MBA and is it suitable for Delhi NCR students?', a: 'Jamia Hamdard Online MBA is a Deemed-to-be-University (Jamia Hamdard, located in Hamdard Nagar, South Delhi) with NAAC A+ accreditation, NIRF University 47, NIRF Management 87 in 2025. Total online MBA fee approximately Rs 1.03 lakh, in the Rs 75K to Rs 1.80L range per edifyedu.in data. UGC-DEB approved. Strong for Delhi NCR working professionals on budget under Rs 1.50 lakh, BFSI or healthcare lateral move candidates, and those wanting the Hamdard Foundation alumni network.' },
       { q: 'Can I do an online MBA while working at a Gurgaon or Noida company?', a: 'Yes. Online MBA programmes are designed for working professionals. Live class timings typically work around full-time jobs: weekend mornings (Saturday 10 AM to 1 PM, Sunday 10 AM to 1 PM) at NMIMS, JAIN, Manipal Jaipur. Weekday evening 7 to 9 PM at some Amity and Chandigarh tracks. Confirm class timing matches your shift schedule before enrolling.' },
-      { q: 'What is the admission process for online MBA in Delhi NCR?', a: 'Standard direct admission process at most universities. Apply online with 10th, 12th, and graduation marksheets, ID proof, and photograph. Pay application fee (Rs 500 to Rs 2,000). University verifies within 5 to 10 working days. Pay first semester fee. Receive LMS credentials. No entrance exam at NMIMS Online, JAIN Online, Amity Online, Manipal Jaipur, Chandigarh University, LPU, Jamia Hamdard. IGNOU requires OpenMAT. Symbiosis SCDL may require SNAP.' }
+      { q: 'What is the admission process for online MBA in Delhi NCR?', a: 'Standard direct admission process at most universities. Apply online with 10th, 12th, and graduation marksheets, ID proof, and photograph. Pay application fee (Rs 500 to Rs 2,000). University verifies within 5 to 10 working days. Pay first semester fee. Receive LMS credentials. No entrance exam at NMIMS Online, JAIN Online, Amity Online, Manipal Jaipur, Chandigarh University, LPU, Jamia Hamdard. IGNOU admits on graduation marks. Symbiosis SCDL may require SNAP.' }
     ],
     relatedUniversities: ["manav-rachna-online","amity-university-online","jamia-hamdard-online","nmims-online","jain-university-online"],
     content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. NCR sub-region job market analysis sourced from NASSCOM Q1 2026 tracker, LinkedIn India Hiring Index April 2026, and current edifyedu.in university profiles.</em></p>
@@ -14533,7 +14533,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <ul>
   <li><strong>Central University, NAAC A++, UGC-DEB approved.</strong></li>
   <li><strong>Total fee Rs 66,000</strong> (tuition, per the IGNOU admission portal).</li>
-  <li><strong>OpenMAT entrance exam required.</strong></li>
+  <li><strong>No entrance test listed</strong> in the July 2026 prospectus: a 3-year bachelor degree with 50 percent (45 percent reserved).</li>
   <li><strong>Government and PSU recognition: strongest among all distance programmes.</strong></li>
   <li><strong>Trade-off:</strong> Limited live faculty interaction, fewer career services, more self-directed learning required.</li>
 </ul>
@@ -15194,7 +15194,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Is work experience mandatory for online MBA in India 2026?', a: 'Standard online MBA programmes from NMIMS Online, JAIN Online, Amity Online, Manipal Jaipur, Chandigarh University, LPU, DY Patil, and Jamia Hamdard accept 0 years of work experience. IIM Mumbai Online MBA requires 3 to 5 years. Online Executive MBA programmes (NMIMS Executive, MAHE, IIT Roorkee Coursera EMBA) need 2 to 5 years. The work experience requirement signals the cohort positioning of the programme.' },
       { q: 'Can I apply for online MBA if I scored less than 50 percent in graduation?', a: 'Yes, with three workaround paths. First, Amity University Online accepts 40 percent for select programmes. Second, if you fall under SC, ST, or PwD categories, the 45 percent relaxed threshold applies at most universities. Third, you can complete a UGC-recognised PG Diploma first (Rs 30,000 to Rs 1 lakh, 1 year) and use that as the qualifying credential. Some universities also offer foundation or bridge courses for sub-50 percent candidates.' },
       { q: 'Is there an age limit for online MBA admission in India?', a: 'No upper age limit at most UGC-DEB approved online MBA programmes. Minimum age is 21 years (after completing a 3-year bachelor degree). Working professionals enrolling in their 30s, 40s, and even 50s is common. Senior-cohort Executive MBA programmes may have informal cohort age expectations but no formal upper age limit. Eligibility is qualification-based, not age-based.' },
-      { q: 'Which entrance exams are accepted for online MBA in 2026?', a: 'Most UGC-DEB approved online MBA programmes do not require any entrance exam. Direct admission based on graduation marks is the standard. Exceptions: NMIMS Online and Symbiosis SSODL sometimes ask for NMAT or SNAP scores; IGNOU may use OpenMAT; IIM Mumbai Online has its own admission process. CAT, MAT, XAT, CMAT, and GMAT are required for tier-1 campus MBA only, not for online MBA.' },
+      { q: 'Which entrance exams are accepted for online MBA in 2026?', a: 'Most UGC-DEB approved online MBA programmes do not require any entrance exam. Direct admission based on graduation marks is the standard. Exceptions: NMIMS Online and Symbiosis SSODL sometimes ask for NMAT or SNAP scores; IIM Mumbai Online has its own admission process. CAT, MAT, XAT, CMAT, and GMAT are required for tier-1 campus MBA only, not for online MBA.' },
       { q: 'Can final-year students apply for online MBA in 2026?', a: 'Yes. Most UGC-DEB approved online MBA programmes accept provisional admission for final-year graduation students. You apply with your current semester marksheets, get provisional admission, and submit your final marksheet and degree certificate after graduation results. Confirm the provisional admission rules on the specific university portal before applying.' },
       { q: 'Does the type of bachelor degree (regular vs distance) affect online MBA eligibility?', a: 'No. UGC ODL Regulations 2018 specify that any UGC-recognised bachelor degree qualifies, regardless of delivery mode (regular, distance, ODL, online). The qualifier is that the awarding university is UGC-recognised at the time of degree award. A distance B.Com from IGNOU and a regular B.Com from Delhi University are treated identically for online MBA admission eligibility.' }
     ],
@@ -15248,7 +15248,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td><a href="/universities/lovely-professional-university-online" class="ilink">LPU Online</a></td><td>50 percent</td><td>Yes</td><td>Not required</td><td>None</td></tr>
     <tr><td><a href="/universities/dy-patil-university-online" class="ilink">DY Patil University Online</a></td><td>50 percent</td><td>Yes</td><td>Not required</td><td>None</td></tr>
     <tr><td><a href="/universities/jamia-hamdard-online" class="ilink">Jamia Hamdard Online</a></td><td>50 percent</td><td>Yes</td><td>Not required (preferred)</td><td>None</td></tr>
-    <tr><td>IGNOU MBA</td><td>50 percent (45 percent flexible)</td><td>Yes</td><td>Not required</td><td>OpenMAT</td></tr>
+    <tr><td>IGNOU MBA</td><td>50 percent (45 percent flexible)</td><td>Yes</td><td>Not required</td><td>None listed</td></tr>
     <tr><td>Symbiosis SSODL</td><td>50 percent</td><td>Yes</td><td>Not required</td><td>SNAP or own test for some programmes</td></tr>
     <tr><td>IIM Mumbai Online MBA</td><td>50 percent</td><td>Yes</td><td>3-plus years mandatory</td><td>Own admission process</td></tr>
   </tbody>
@@ -15819,7 +15819,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <ul>
   <li><strong>NMIMS Online:</strong> NMAT or own test for some specialisations.</li>
   <li><strong>Symbiosis SSODL:</strong> SNAP score or own test for select tracks.</li>
-  <li><strong>IGNOU MBA:</strong> OpenMAT score required.</li>
+  <li><strong>IGNOU MBA:</strong> no entrance test listed in the July 2026 prospectus.</li>
   <li><strong>IIM Mumbai Online MBA:</strong> Own admission process plus interview.</li>
 </ul>
 
@@ -20435,7 +20435,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Distance MBA Admission Process: How to Apply</h2>
 
-<p>Most distance and online MBA programmes in India follow a straightforward admission process. No entrance exam is required at most universities (IGNOU requires OPENMAT as an exception). Here is the typical process:</p>
+<p>Most distance and online MBA programmes in India follow a straightforward admission process. No entrance exam is required at most universities. Here is the typical process:</p>
 
 <p><strong>Step 1:</strong> Check eligibility. You need a bachelor's degree from a recognised university with minimum 50% marks (45% for reserved categories). <strong>Step 2:</strong> Choose your university based on fee, accreditation, and specialisation availability. <strong>Step 3:</strong> Fill the online application form on the university's official portal. <strong>Step 4:</strong> Upload documents (graduation marksheet, ID proof, photograph). <strong>Step 5:</strong> Pay the registration or application fee (typically ₹500 to ₹1,500). <strong>Step 6:</strong> Receive admission confirmation and LMS access within 7 to 14 days.</p>
 
@@ -20576,7 +20576,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>43-plus specialisations</strong> across languages, humanities, social sciences, education, gender studies.</li>
   <li><strong>Total fee:</strong> Rs 8,000 to Rs 27,000 depending on subject. Most common specs around Rs 16,000 to Rs 18,000 for 2-year programme.</li>
   <li><strong>Duration:</strong> 2 years minimum, 5 years maximum.</li>
-  <li><strong>Admission:</strong> Two cycles per year (January and July). Direct admission for most specs; OpenMAT not required for MA (only for MBA).</li>
+  <li><strong>Admission:</strong> Two cycles per year (January and July). Direct admission for most specs; no entrance test listed for the MA or the MBA in the July 2026 prospectus.</li>
   <li><strong>LMS:</strong> Digital materials via eGyanKosh, recorded video lectures via SWAYAM, optional counselling at regional study centres.</li>
   <li><strong>Examinations:</strong> Centre-based exams twice a year. Some specs allow online proctored exams.</li>
 </ul>
@@ -21039,8 +21039,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Which is the top correspondence MBA college in India 2026?', a: 'Depends on the tier you target. Premium tier (Rs 2 lakh-plus): NMIMS Online (NAAC A++, NIRF Mgmt 24, AACSB), MAHE (NAAC A++, NIRF Univ 3), Symbiosis SSODL. Mid tier (Rs 1.5 to 2 lakh): JAIN Online (A++, 20-plus specs), Manipal University Jaipur Online (A+), Chandigarh University Online (A+, Triple Industry Cert), LPU Online (A++), Amity Online (A+, 19 specs). Budget tier (under Rs 1 lakh): IGNOU (Rs 66,000, A++), Sikkim Manipal, Galgotias University. Pick by NAAC plus your target sector.' },
       { q: 'Is a correspondence MBA valid for government jobs in India 2026?', a: 'Yes. UGC-DEB approved correspondence (ODL) and UGC online approved MBA degrees are accepted for government jobs that specify "MBA from a recognised university". This includes UPSC Civil Services, SSC CGL (PG-required posts), IBPS PO and SO, RBI Grade B, NABARD Grade A, SEBI Grade A, PSU Management Trainee. Verify the specific notification language; some bodies (RBI Grade B) prefer regular degrees over distance for cohort-specific roles.' },
       { q: 'Which correspondence MBA has the best placement support?', a: 'NMIMS Online has the strongest BFSI recruiter pipeline (HDFC, ICICI, Axis, Kotak) plus structured career service team. Symbiosis SCDL and SSODL have pan-India recruiter access. Amity Online provides resume building plus virtual job fairs. MAHE has 1:1 industry mentorship. IGNOU has limited placement; primarily a credentialing programme. Cross-check current placement claims via LinkedIn alumni searches in your target sector.' },
-      { q: 'Can I pursue correspondence MBA without entrance exam?', a: 'Yes. Most UGC-DEB approved correspondence and online MBA programmes do not require CAT, MAT, GMAT, XAT, or CMAT. Standard eligibility: Bachelor degree with 50 percent aggregate (45 percent SC, ST, PwD). Exceptions: IGNOU requires OpenMAT, NMIMS may require NMAT for select tracks, Symbiosis SSODL may require SNAP, IIM Mumbai Online has own admission. For pure direct admission: JAIN, Amity, Manipal Jaipur, Chandigarh University, LPU, DY Patil.' },
-      { q: 'What is the cheapest credible correspondence MBA in India?', a: 'IGNOU MBA at Rs 66,000 total fee. Central University, NAAC A++, UGC-DEB approved. Strongest government job recognition among budget options. Requires OpenMAT score (its own entrance test). Galgotias University Online at Rs 80,200 is the next cheapest UGC-DEB credible option. State open universities (BRAOU, KSOU) are even cheaper but with weaker pan-India brand.' },
+      { q: 'Can I pursue correspondence MBA without entrance exam?', a: 'Yes. Most UGC-DEB approved correspondence and online MBA programmes do not require CAT, MAT, GMAT, XAT, or CMAT. Standard eligibility: Bachelor degree with 50 percent aggregate (45 percent SC, ST, PwD). Exceptions: NMIMS may require NMAT for select tracks, Symbiosis SSODL may require SNAP, IIM Mumbai Online has own admission. For pure direct admission: JAIN, Amity, Manipal Jaipur, Chandigarh University, LPU, DY Patil.' },
+      { q: 'What is the cheapest credible correspondence MBA in India?', a: 'IGNOU MBA at Rs 66,000 total fee. Central University, NAAC A++, UGC-DEB approved. Strongest government job recognition among budget options. Galgotias University Online at Rs 80,200 is the next cheapest UGC-DEB credible option. State open universities (BRAOU, KSOU) are even cheaper but with weaker pan-India brand.' },
       { q: 'Premium NMIMS vs mid-tier JAIN vs budget IGNOU: which to pick?', a: 'Match by goal. Government job eligibility plus budget: IGNOU (Rs 66,000, A++). BFSI lateral career or corporate role: NMIMS Online (Rs 1.96L to 2.20L, AACSB). Tech analytics career: JAIN Online (Rs 1.60L to 1.96L, A++, 20-plus specs). All three are UGC-DEB approved and legally equivalent; brand value and career service differ sharply.' },
       { q: 'How long does correspondence MBA take in India?', a: 'Standard 2 years (4 semesters) per UGC ODL Regulations 2018. Maximum allowed period 4 to 5 years for working professionals needing extension. IGNOU specifically allows up to 5 years. Online MBA programmes allow up to 4 years extension. No university publishes on-time completion rates, but distance programmes with less scheduled structure demand more self-discipline to finish on time.' }
     ],
@@ -21146,7 +21146,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <ul>
   <li>Specialisations: General, Banking, Marketing, HR, Financial Markets, Health Care.</li>
-  <li>Admission: OpenMAT entrance exam (IGNOU's own test).</li>
+  <li>Admission: on graduation marks, with no entrance test listed in the July 2026 prospectus.</li>
   <li>Delivery: Self-paced study materials plus optional counselling at 67 regional centres across India.</li>
   <li>Best for: Government job aspirants (Bank PO, SSC CGL, UPSC), credential-only seekers, budget-constrained working professionals.</li>
 </ul>
@@ -37219,7 +37219,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
       { q: 'Which is better for online MBA: NMIMS, Amity, or Symbiosis?', a: 'Three different optimal use cases. NMIMS at ₹1.96L to ₹2.20L is best for finance, marketing, and business analytics careers in India because of the AACSB institutional brand recognised by Indian BFSI. Amity at ₹2.07L to ₹2.25L is best for international mobility because of WASC, QAA, WES accreditations. Symbiosis at ₹3.15 lakh net (after experience scholarship) is best for general management and consulting because of NAAC A++ institutional brand. Pick based on whether your career path needs Indian BFSI brand, international mobility, or general management positioning.' },
       { q: 'Are online MBA colleges in India worth it in 2026?', a: 'Yes, if you choose a UGC-DEB approved university with strong NAAC grade and either NIRF rank or international accreditations. Working professionals consistently report 25-40 percent salary uplift within 2 years post-MBA. The degree is legally identical to on-campus for jobs and higher education. Online MBA is not worth it if you need on-campus networking, structured placement support, or your career path runs through tier-1 consulting firms (BCG, Bain, Mckinsey) which typically only hire from full-time IIM/ISB programmes.' },
       { q: 'What is the UGC auto-approval rule for online MBA programmes?', a: 'Per UGC ODL plus Online Regulations 2020, universities with NAAC score 3.26-plus OR appearance in NIRF top 100 in 2 of the preceding 3 cycles get automatic approval to run online MBA programmes. This is why NMIMS (A++ score 3.6), JAIN (A++), LPU (A++), Amity (A+ plus NIRF 22 University), and Chandigarh University (A+ plus NIRF 19) qualify. Verify auto-approval status before applying.' },
-      { q: 'What is the best online MBA without entrance exam in India 2026?', a: 'For direct admission: NMIMS Online, JAIN Online, Amity University Online, Manipal University Jaipur, Chandigarh University Online, LPU Online, DY Patil University, Jamia Hamdard Online all offer no-entrance-exam admission. NMIMS sometimes requires NMAT or own test for specific tracks. IGNOU MBA requires OpenMAT. Symbiosis SSODL may require SNAP for some specialisations. IIM Mumbai Online MBA has its own admission process.' },
+      { q: 'What is the best online MBA without entrance exam in India 2026?', a: 'For direct admission: NMIMS Online, JAIN Online, Amity University Online, Manipal University Jaipur, Chandigarh University Online, LPU Online, DY Patil University, Jamia Hamdard Online all offer no-entrance-exam admission. NMIMS sometimes requires NMAT or own test for specific tracks. Symbiosis SSODL may require SNAP for some specialisations. IIM Mumbai Online MBA has its own admission process.' },
       { q: 'Is AACSB-accredited online MBA better than others in India?', a: 'For international employment and global recognition: yes. AACSB International is the highest US business school accreditation, held by fewer than 6 percent of business schools globally. NMIMS is the only Indian online MBA programme currently holding AACSB at the time of writing. For Indian employer recognition, AACSB is a nice-to-have, not a must-have; UGC-DEB plus NAAC A or A+ is sufficient for most use cases.' }
     ],
     content: `
@@ -50688,6 +50688,155 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 </ul>
 
 <p class="disclaimer"><em>Checked against the UGC-DEB register and AICTE handbook on 27 October 2026. Entitlements are granted by session. Confirm the current position before you enrol.</em></p>
+    `,
+  },
+  {
+    slug: 'ignou-online-admission-guide',
+    title: 'IGNOU Online Admission 2026: How to Apply, Step by Step',
+    seoTitle: 'IGNOU Online Admission 2026: How to Apply Step by Step',
+    h1Title: 'IGNOU Online Admission and Registration: The Two Portals, the Steps and the Fees',
+    metaDescription: 'IGNOU takes admission on two portals: one for distance (ODL) and one for online programmes. The steps, upload sizes, fees and what to do if payment fails.',
+    category: 'Guides',
+    tags: ['IGNOU', 'IGNOU Admission', 'IGNOU Online Registration', 'Online Admission', 'Open University', 'IGNOU MBA'],
+    publishedAt: '2026-10-27',
+    readTime: 7,
+    targetKeyword: 'ignou online admission',
+    relatedUniversities: ['ignou-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/38305335/pexels-photo-38305335.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@mananmaheshwari" target="_blank" rel="noopener nofollow">momentsbymanan</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Serene corridor of La Martiniere College in Lucknow, India, showcasing vintage architecture.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'What is the IGNOU online admission portal?', a: 'IGNOU runs two admission portals. Distance (ODL) programmes use ignouadmission.samarth.edu.in. Online programmes use ignouiop.samarth.edu.in. Fixed-intake programmes use ignouflip.samarth.edu.in, and the PhD has its own portal. Pick the portal that matches the mode you want.' },
+      { q: 'When does IGNOU admission open?', a: 'IGNOU admits twice a year, in the January and July cycles. Its prospectus tells applicants to check the admission notification on ignou.ac.in for each cut-off date. On 27 October 2026 both portals showed registration for the July 2026 session as closed.' },
+      { q: 'What documents and file sizes does the IGNOU form need?', a: 'A recent passport-size photograph and your specimen signature, each up to 100 KB in JPG, plus scanned copies of the relevant documents, each up to 200 KB in JPG or PDF. You also need an email address, because registration is not possible without one.' },
+      { q: 'Is there an entrance test for IGNOU MBA?', a: 'The July 2026 Common Prospectus lists MBA eligibility as a bachelor degree of at least three years with 50 percent marks, or 45 percent for reserved categories. It lists no entrance test for the MBA.' },
+      { q: 'What is the IGNOU MBA fee?', a: 'IGNOU lists Rs 16,000 for semesters 1, 2 and 4 and Rs 18,000 for semester 3, which carries an 8-credit project. That is Rs 66,000 in programme fee, plus the registration and development fees charged at admission. The same structure appears for the distance MBA and the online MBAOL.' },
+      { q: 'My payment was deducted but I got no confirmation. What should I do?', a: 'IGNOU asks you to email csrc@ignou.ac.in with the transaction details: the control number, your name, the programme, your mobile number and the amount paid. The Centralised Student Registration Cell is on 011-29571528. You can escalate on iGRAM, igram.ignou.ac.in.' },
+      { q: 'How do I re-register for the next semester at IGNOU?', a: 'Use the re-registration portal, onlinerr.ignou.ac.in, in each January and July cycle. IGNOU does not refund the re-registration fee in any case, so check the programme and semester before you pay.' },
+    ],
+    ctaTitle: 'Comparing IGNOU with another university?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">IGNOU does not have one admission form. It has two portals, one for distance learning and one for online programmes, and the form you fill depends on which mode you choose. Here is how each works, from IGNOU's own portals and its July 2026 prospectus.</p>
+
+<p><strong>Short answer:</strong> Apply for a distance (ODL) programme at <strong>ignouadmission.samarth.edu.in</strong> and for an online programme at <strong>ignouiop.samarth.edu.in</strong>. Register with your email, log in again, fill the form, upload a photo, signature and documents, then pay by card or net banking. IGNOU admits in <strong>January and July</strong>. On 27 October 2026 both portals showed the July 2026 registration as closed.</p>
+
+<div class="callout-key">
+<strong>IGNOU admission in one box (checked 27 October 2026)</strong>
+<ul>
+<li><strong>Distance (ODL) portal:</strong> ignouadmission.samarth.edu.in</li>
+<li><strong>Online programmes portal:</strong> ignouiop.samarth.edu.in</li>
+<li><strong>Cycles:</strong> January and July, cut-off dates in each admission notification on ignou.ac.in</li>
+<li><strong>Uploads:</strong> photo and signature up to 100 KB (JPG), documents up to 200 KB (JPG or PDF)</li>
+<li><strong>Payment:</strong> Visa or Mastercard credit and debit cards, or net banking</li>
+<li><strong>Re-registration:</strong> onlinerr.ignou.ac.in, every cycle</li>
+</ul>
+</div>
+
+<h2>Which IGNOU portal should you use?</h2>
+
+<p>The mode decides the portal. An MBA in ODL mode and the MBAOL in online mode are separate programmes with separate forms, even though IGNOU lists the same eligibility and fee for both.</p>
+
+<table>
+<thead><tr><th>You want</th><th>Portal</th><th>What changes</th></tr></thead>
+<tbody>
+<tr><td>Distance (ODL) programme</td><td>ignouadmission.samarth.edu.in</td><td>Printed or digital study material, a study centre, term-end exams</td></tr>
+<tr><td>Online programme</td><td>ignouiop.samarth.edu.in</td><td>No printed material. You need a computer and internet access</td></tr>
+<tr><td>Fixed-intake programme</td><td>ignouflip.samarth.edu.in</td><td>Limited seats, a separate registration fee</td></tr>
+<tr><td>PhD</td><td>ignou-phd.samarth.edu.in</td><td>Entrance and research admission rules</td></tr>
+</tbody>
+</table>
+
+<p>The online portal carries a plain warning: enrol only if you have a computer, internet access and are comfortable learning online, because it sends no printed study material. If that does not suit you, IGNOU points you to the ODL portal instead.</p>
+
+<p class="pull">Same university, same degree name, two different forms. Choose the mode before you register.</p>
+
+<h2>How to fill the IGNOU admission form, step by step</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/18067562/pexels-photo-18067562.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A group of young South Asian women working together on a laptop in a Jaipur office." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@biyani-girls-college-701394465" target="_blank" rel="noopener nofollow">Biyani Girls College</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>IGNOU's admission FAQ sets out the same stages on both portals:</p>
+
+<ol>
+<li>Open the portal for your mode and complete the registration. It creates your username and password and sends them by SMS and email.</li>
+<li>Log in again with that username and password.</li>
+<li>Fill the admission form for your programme.</li>
+<li>Upload a recent passport-size photograph, up to 100 KB in JPG.</li>
+<li>Upload your specimen signature, up to 100 KB in JPG.</li>
+<li>Upload scanned copies of your documents, each up to 200 KB in JPG or PDF.</li>
+<li>Read the instructions and tick the declaration box.</li>
+<li>Preview your data and confirm it.</li>
+<li>Pay the fee by credit card, debit card or net banking.</li>
+<li>Download the submitted form and keep a copy.</li>
+</ol>
+
+<p>The portal saves your data at the end of each stage. If the power or connection fails mid-stage, log in again and restart from that stage. Registration needs an email address, so set one up before you start.</p>
+
+<h2>What does IGNOU charge at admission?</h2>
+
+<p>The programme fee is only part of the payment. The July 2026 prospectus adds a non-refundable registration fee and a university development fee at the time of admission. Check the summary table in the prospectus for the exact amounts for your programme.</p>
+
+<p>For the MBA, IGNOU lists Rs 16,000 for semesters 1, 2 and 4 and Rs 18,000 for semester 3, which carries an 8-credit project. That totals <strong>Rs 66,000</strong> in programme fee, paid semester by semester. Our <a href="/universities/ignou-online/mba">IGNOU MBA page</a> sets it beside the other programmes we track.</p>
+
+<div class="callout-warning">
+<strong>Fees are indicative.</strong> IGNOU revises fees by cycle. Confirm the current programme, registration and development fees in the admission notification and the Common Prospectus on ignou.ac.in before you pay.
+</div>
+
+<p>Two schemes can lower the bill. IGNOU gives a 15 percent concession on the programme fee to learners who choose digital study material instead of printed books. It also exempts eligible SC and ST students from the programme fee for one programme. That exemption does not cover the registration, development or exam fees.</p>
+
+<h2>Who can apply for the IGNOU MBA?</h2>
+
+<p>The prospectus lists a bachelor degree of at least three years with 50 percent marks, or 45 percent for reserved categories. It lists no entrance test for the MBA. Admission runs in both the January and July cycles.</p>
+
+<p>Our <a href="/blog/ignou-online-mba-review-2026">IGNOU online MBA review</a> covers the syllabus, the specialisations and who the programme suits.</p>
+
+<h2>What happens after you submit?</h2>
+
+<p>IGNOU staff check each form against the eligibility rules. If something is missing, IGNOU writes to your registered email. Once your form clears, IGNOU confirms the admission and allots your study centre.</p>
+
+<p>IGNOU processes forms region by region, first come first served. So the wait for confirmation depends on how many people applied through your Regional Centre.</p>
+
+<h2>Payment deducted but no confirmation?</h2>
+
+<p>Do not pay again. IGNOU asks you to email <strong>csrc@ignou.ac.in</strong> with the control number, your name, the programme, your mobile number and the amount paid. The Centralised Student Registration Cell is on 011-29571528. If that does not resolve it, raise a grievance on iGRAM at igram.ignou.ac.in.</p>
+
+<h2>Can you cancel and get a refund?</h2>
+
+<p>Partly. The registration fee is non-refundable, and IGNOU never refunds a re-registration fee. For cancelling an admission, the prospectus applies IGNOU's refund notification dated 12 February 2025. If IGNOU itself denies you admission, it refunds the programme fee less any processing fee to the account you paid from.</p>
+
+<p>Our guide to the <a href="/blog/ugc-fee-refund-policy">UGC fee refund policy</a> explains the wider rules on refunds for online and distance admissions.</p>
+
+<h2>Is an IGNOU degree valid?</h2>
+
+<p>Yes. IGNOU is a central open university set up by an Act of Parliament in 1985. UGC exempted it from the UGC ODL and Online Regulations by letters dated 9 August 2019 and 17 March 2020, and its prospectus states that its programmes are at par with those UGC-DEB approves. Our <a href="/blog/is-ignou-fake-or-legit-2026">IGNOU legitimacy check</a> walks through the evidence.</p>
+
+<h2>Can you study two programmes at once?</h2>
+
+<p>IGNOU's online portal allows a student enrolled in a programme of a year or longer to add a six-month certificate at the same time. It will not adjust clashing counselling or exam dates. Our guide to <a href="/blog/ugc-two-degrees-simultaneously-rules">UGC rules on two degrees at once</a> covers the wider position.</p>
+
+<h2>How to re-register for the next semester</h2>
+
+<p>Re-registration moves you into the next semester or year. Submit it online at <strong>onlinerr.ignou.ac.in</strong> in each January and July cycle, within IGNOU's schedule. The fee is never refunded, so check the programme and semester before you pay.</p>
+
+<p>For how the January and July intakes work across all universities, see our guide to <a href="/blog/ugc-biannual-admissions-january-july-intake">UGC January and July admissions</a>.</p>
+
+<div class="cta-box">
+<p><strong>Weighing IGNOU against a private online university?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities</a> or <a href="/contact">ask us</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>IGNOU ODL admission portal and admission FAQ, read 27 October 2026: ignouadmission.samarth.edu.in</li>
+<li>IGNOU online programmes admission portal, admission FAQ and MBAOL programme page, read 27 October 2026: ignouiop.samarth.edu.in</li>
+<li>IGNOU Common Prospectus, July 2026: sections on fees, SC/ST fee support, re-registration (14.6), refunds (14.12) and digital study material (14.13): ignou.ac.in</li>
+<li>UGC letters F. No. 1-8/2019 (DEB-I), 9 August 2019, and F. No. 2-/2019 (OL), 17 March 2020, as cited in the IGNOU prospectus</li>
+</ul>
+
+<p class="disclaimer"><em>Checked against IGNOU's portals and its July 2026 prospectus on 27 October 2026. Dates and fees change by cycle. Confirm the current admission notification on ignou.ac.in before you apply.</em></p>
     `,
   },
 ]

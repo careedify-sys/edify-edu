@@ -1306,6 +1306,24 @@
       "figure": 200000,
       "source": "lib/data.ts op-jindal-global-university-online programDetails.MBA.fees = ₹2,00,000",
       "note": "O.P. Jindal 1-year online MBA total fee in the callout; same figure as the programme table row."
+    },
+    {
+      "slug": "ignou-online-admission-guide",
+      "figure": 16000,
+      "university": "ignou-online",
+      "programme": "MBA",
+      "source": "IGNOU MBAOL and MBA programme-detail pages (ignouiop.samarth.edu.in, ignouadmission.samarth.edu.in) and Common Prospectus July 2026",
+      "verified_date": "2026-10-27",
+      "note": "MBA semesters 1, 2 and 4 each. Rs 16,000 x 3 + Rs 18,000 = Rs 66,000, which matches lib/data.ts."
+    },
+    {
+      "slug": "ignou-online-admission-guide",
+      "figure": 18000,
+      "university": "ignou-online",
+      "programme": "MBA",
+      "source": "IGNOU MBAOL and MBA programme-detail pages (ignouiop.samarth.edu.in, ignouadmission.samarth.edu.in) and Common Prospectus July 2026",
+      "verified_date": "2026-10-27",
+      "note": "MBA semester 3 (8-credit project). Rs 16,000 x 3 + Rs 18,000 = Rs 66,000, which matches lib/data.ts."
     }
   ]
 }

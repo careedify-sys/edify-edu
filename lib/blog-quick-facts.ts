@@ -3,6 +3,14 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'ignou-online-admission-guide': [
+    { label: 'ODL portal', value: 'ignouadmission.samarth.edu.in' },
+    { label: 'Online portal', value: 'ignouiop.samarth.edu.in' },
+    { label: 'Cycles', value: 'January and July' },
+    { label: 'MBA programme fee', value: 'Rs 66,000 (4 semesters)', green: true },
+    { label: 'MBA eligibility', value: 'Bachelor degree, 50% (45% reserved)' },
+    { label: 'Re-registration', value: 'onlinerr.ignou.ac.in' },
+  ],
   'online-diploma-courses-india': [
     { label: 'Online PG diploma 2026-27', value: '8 at Amity and VTU', green: true },
     { label: 'Distance PG diploma', value: '18 entries (ODL)' },
