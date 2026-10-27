@@ -75,10 +75,30 @@ export function getProgramHubSeo(
         title: `Online BSc in India ${year}: Which Subjects UGC Allows Online`,
         description: `UGC allows an online BSc only where practical work is programming and coding, so lab subjects cannot run online. ${uniCount} UGC-DEB universities offer one, in Data Science and Economics.`,
       }
+    // BA / MA / MSc (keyword gap 2026-10-26): the hubs existed but carried the
+    // generic "Online BA India 2026: N+ UGC-DEB Colleges" title and ranked for
+    // none of "online ba degree" (1,900/mo), "ma degree online" (1,600/mo) or
+    // "msc maths online" (880/mo). Subjects named are the most offered in
+    // lib/data.ts for each programme.
+    case 'ba':
+      return {
+        title: `Online BA Degree in India ${year}: ${uniCount} UGC-DEB Universities`,
+        description: `Online BA: a 3-year degree after Class 12. Compare ${uniCount} UGC-DEB universities in Political Science, English, History, Sociology and Economics.`,
+      }
+    case 'ma':
+      return {
+        title: `Online MA Degree in India ${year}: ${uniCount} UGC-DEB Universities`,
+        description: `Online MA: a 2-year postgraduate degree. Compare ${uniCount} UGC-DEB universities in Sociology, English, Political Science, Economics and History.`,
+      }
+    case 'msc':
+      return {
+        title: `Online MSc in India ${year}: Maths, Data Science and More`,
+        description: `An online MSc runs only where practicals are coding, so lab sciences are out. Compare ${uniCount} UGC-DEB universities, mostly in Maths and Data Science.`,
+      }
     default:
       return null
   }
 }
 
 /** Every programme slug that carries a hand-written override. Used by the gate. */
-export const PROGRAM_HUB_SEO_SLUGS: readonly string[] = ['mba', 'bba', 'bsc']
+export const PROGRAM_HUB_SEO_SLUGS: readonly string[] = ['mba', 'bba', 'bsc', 'ba', 'ma', 'msc']

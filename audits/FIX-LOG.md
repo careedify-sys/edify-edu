@@ -1,5 +1,16 @@
 # Fix log
 
+## 2026-10-27 · BA, MA and MSc programme hubs: titles and copy for the keyword-gap head terms
+
+From the keyword gap export: "Programme hub: online BA" (12 rows, 8,120/mo, head term "online ba degree" 1,900),
+"online MA" (10 rows, 5,620/mo, "ma degree online" 1,600) and "online MSc" (13 rows, 5,540/mo, "msc maths online"
+880), all status Missing. The hubs existed with the generic "Online BA India 2026: N+ UGC-DEB Colleges" title and a
+one-line description. Now: titles naming the degree ("Online BA Degree in India 2026: 27 UGC-DEB Universities"),
+answer-first descriptions under 145 characters (the clamp had been cutting longer ones mid-list), and hub copy giving
+level, duration, entry and the most-offered subjects from lib/data.ts (BA: Political Science 17, English 15, History
+15; MA: Sociology 23, English 22; MSc: Mathematics 7, Data Science 4). Psychology is left out while its status is
+open with Rishi; it is sixth for both BA and MA, so a top-five list omits it without taking a side.
+
 ## 2026-10-27 · Amity WASC (USA) and QAA (UK) restored, sourced to the official portal
 
 On 26 Oct these were removed from the Amity MBA intro and an MBA spec FAQ because lib/data.ts approvals did not list

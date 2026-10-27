@@ -172,3 +172,5 @@ eligibility follows the regulator. Feeds item 8 and the "one year online mba" ro
 - Bucket A improve track: all listed items done ("Based in Pune" fixed in part 3).
 - Bucket A part 5 2026-10-27: /programs/bsc and /programs/bba plus all 200 non-MBA spec pages (wrong-programme titles, MBA fees, salary stats). Remaining Bucket A rows: UPES and Uttaranchal overviews; /best-online-mba-india needs Rishi.
 - Item 10 SHIPPED 2026-10-26. Writing queue 1-10 complete. Remaining: Bucket C validity explainers (need Rishi), psychology dispute, measure Bucket A ~23 Nov.
+
+- 2026-10-27 · BA / MA / MSc programme hubs (export rows: online BA 8,120/mo, online MA 5,620/mo, online MSc 5,540/mo): titles, descriptions and hub copy rewritten for the head terms. Measure with Bucket A ~23 Nov.
