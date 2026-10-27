@@ -3,7 +3,6 @@
   "_generated": "2026-08-23",
   "_no_verify_page": [
     "dayananda-sagar-university-online",
-    "dy-patil-university-online",
     "shoolini-university-online",
     "manipal-university-jaipur-online",
     "symbiosis-university-online",
@@ -63,6 +62,10 @@
     "mody-university-online": "mody-university-of-science-and-technology-online",
     "sgt-university-online": "shree-guru-gobind-singh-tricentenary-university-online",
     "vit-university-online": "vellore-institute-of-technology-online",
-    "sastra-university-online": "shanmugha-arts-science-technology-research-academy-online"
+    "sastra-university-online": "shanmugha-arts-science-technology-research-academy-online",
+    "dy-patil-university-online": "dy-patil-navi-mumbai-online"
+  },
+  "_manual_entries": {
+    "dy-patil-university-online": "Added 2026-10-27 on Rishi's confirmation, not by name match: per the 7 Aug audit dy-patil-university-online is the Navi Mumbai institution. dr-dy-patil-vidyapeeth-online is Pune and must never map here."
   }
 }

@@ -3,11 +3,12 @@ import { brand } from '@/lib/brand'
 
 interface Props {
   universityName: string
-  universitySlug: string  // Supabase slug
-  siteSlug: string        // edifyedu.in slug (from SLUG_MAP)
-  programmes: { name: string; category?: string }[]
-  naacGrade?: string
-  nirfRank?: number
+  /** lib/data.ts id, or null when the verify slug maps to no site university. */
+  siteId: string | null
+  /** Gated on the server: null unless the overview page is linkable. */
+  profileHref: string | null
+  /** Programme hubs that pass hubResolves AND isLinkable, computed on the server. */
+  programmeLinks: { href: string; program: string }[]
 }
 
 // Map site universityId -> coupon page slug (only universities with dedicated coupon pages)
@@ -26,37 +27,26 @@ const COUPON_SLUGS: Record<string, string> = {
   'amrita-vishwa-vidyapeetham-online': 'amrita-online-mba-discount-coupon-2026',
 }
 
-export function VerifyInterlinks({ universityName, universitySlug, siteSlug, programmes, naacGrade, nirfRank }: Props) {
-  // Derive program slugs from programmes
-  const programSlugs = new Set<string>()
-  for (const p of programmes) {
-    const cat = (p.category || p.name || '').toLowerCase()
-    if (cat.includes('mba') || cat.includes('management')) programSlugs.add('mba')
-    if (cat.includes('mca') || cat.includes('computer application')) programSlugs.add('mca')
-    if (cat.includes('bba')) programSlugs.add('bba')
-    if (cat.includes('bca')) programSlugs.add('bca')
-    if (cat.includes('b.com') || cat.includes('bcom') || cat.includes('commerce')) programSlugs.add('bcom')
-    if (cat.includes('m.com') || cat.includes('mcom')) programSlugs.add('mcom')
-    if (cat.includes('ma ') || cat === 'ma') programSlugs.add('ma')
-    if (cat.includes('ba ') || cat === 'ba') programSlugs.add('ba')
-  }
-
+export function VerifyInterlinks({ universityName, siteId, profileHref, programmeLinks }: Props) {
+  // Programme links used to be guessed from Supabase programme names and glued
+  // onto the Supabase slug, which linked 404 hubs and redirecting old slugs.
+  // The server now passes only hubs the middleware allowlist serves and the
+  // sitemap indexes. See getUniversityForVerifySlug in lib/seo/safe-internal-links.ts.
   const links: { label: string; href: string; desc: string }[] = []
 
-  // University profile page
-  links.push({
-    label: `${universityName} Full Profile`,
-    href: `/universities/${siteSlug}`,
-    desc: 'Fees, specialisations, reviews, and admission details',
-  })
-
-  // Program pages on the university
-  const programNames: Record<string, string> = { mba: 'MBA', mca: 'MCA', bba: 'BBA', bca: 'BCA', bcom: 'B.Com', mcom: 'M.Com', ma: 'MA', ba: 'BA' }
-  for (const prog of Array.from(programSlugs).slice(0, 3)) {
+  if (profileHref) {
     links.push({
-      label: `${universityName.split(' ')[0]} Online ${programNames[prog] || prog.toUpperCase()}`,
-      href: `/universities/${siteSlug}/${prog}`,
-      desc: `Fees, syllabus, and specialisations for ${programNames[prog] || prog.toUpperCase()}`,
+      label: `${universityName} Full Profile`,
+      href: profileHref,
+      desc: 'Fees, specialisations, reviews, and admission details',
+    })
+  }
+
+  for (const { href, program } of programmeLinks.slice(0, 3)) {
+    links.push({
+      label: `${universityName.split(' ')[0]} Online ${program}`,
+      href,
+      desc: `Fees, syllabus, and specialisations for ${program}`,
     })
   }
 
@@ -70,8 +60,8 @@ export function VerifyInterlinks({ universityName, universitySlug, siteSlug, pro
   // Coupon page (if likely exists)
   links.push({
     label: `${universityName.split(' ')[0]} discount and coupons`,
-    href: COUPON_SLUGS[siteSlug] ? `/coupons/${COUPON_SLUGS[siteSlug]}` : '/coupons',
-    desc: COUPON_SLUGS[siteSlug] ? 'View verified discount code and fee breakdown' : 'Check if a fee discount is available',
+    href: siteId && COUPON_SLUGS[siteId] ? `/coupons/${COUPON_SLUGS[siteId]}` : '/coupons',
+    desc: siteId && COUPON_SLUGS[siteId] ? 'View verified discount code and fee breakdown' : 'Check if a fee discount is available',
   })
 
   // Relevant guides

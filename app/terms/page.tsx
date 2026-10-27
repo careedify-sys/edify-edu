@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import EmailOff from '@/components/EmailOff'
 
 export const metadata: Metadata = {
   title: { absolute: 'Terms of Use: Edify | edifyedu.in' },
@@ -97,7 +98,7 @@ export default function TermsPage() {
           <p className="text-ink-2">
             For any questions about these terms, contact us at:<br />
             <strong>Edify Education</strong><br />
-            Email: <a href="mailto:hello@edifyedu.in" className="text-amber font-semibold">hello@edifyedu.in</a><br />
+            Email: <EmailOff><a href="mailto:hello@edifyedu.in" className="text-amber font-semibold">hello@edifyedu.in</a></EmailOff><br />
             Phone: +91 70612 85806<br />
             Website: <Link href="/contact" className="text-amber font-semibold">edifyedu.in/contact</Link>
           </p>

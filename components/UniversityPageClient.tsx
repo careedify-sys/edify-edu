@@ -22,6 +22,7 @@ import GatedContent from '@/components/GatedContent'
 import AssuredMarquee from '@/components/AssuredMarquee'
 import PreAdmissionTools from '@/components/PreAdmissionTools'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
+import type { SchemaOffer } from '@/lib/seo/program-schema'
 
 const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')
 
@@ -43,9 +44,23 @@ interface Props {
    * catalogue. Render the link conditionally on this value.
    */
   verifyHref: string | null
+  /**
+   * Course JSON-LD fee bits per programme, resolved on the server through
+   * getDisplayFee (lib/seo/program-schema.ts). The node used to read
+   * u.feeMin/u.feeMax, which are MBA-led, so a BBA-first university published
+   * its MBA price, and it put lowPrice/highPrice on a plain Offer.
+   */
+  programSchema: Partial<Record<Program, { offer: SchemaOffer | null; feeCompact: string | null }>>
+  /**
+   * Specialisation chip hrefs keyed "{programSlug}/{slug}", resolved on the
+   * server by resolveSpecHref. Slugifying the display name linked 308 aliases
+   * (human-resource-management -> hr-management) on most overview pages.
+   * null renders the chip without a link.
+   */
+  specHrefs: Record<string, string | null>
 }
 
-export default function UniversityPageClient({ university: u, linkableProgrammes, verifyHref }: Props) {
+export default function UniversityPageClient({ university: u, linkableProgrammes, verifyHref, programSchema, specHrefs }: Props) {
   const [enquiryOpen, setEnquiryOpen] = useState(false)
   const [activeProgram, setActiveProgram] = useState<Program | null>(null)
   const [compareList, setCompareList] = useState<string[]>([])
@@ -153,11 +168,11 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
         '@context':'https://schema.org','@type':'Course',
         name:`${u.name} ${displayProgram}`,
-        description:`UGC DEB approved ${displayProgram} from ${u.name}.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}${u.nirf > 0 && u.nirf < 200 ? ` NIRF #${u.nirf} University.` : ''}${u.feeMin > 0 ? ` Total fee ${formatFee(u.feeMin)}–${formatFee(u.feeMax)}.` : ''}`,
+        description:`UGC DEB approved ${displayProgram} from ${u.name}.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}${u.nirf > 0 && u.nirf < 200 ? ` NIRF #${u.nirf} University.` : ''}${programSchema[displayProgram]?.feeCompact ? ` Total fee ${programSchema[displayProgram]!.feeCompact}.` : ''}`,
         url:`https://edifyedu.in/universities/${u.id}`,
         provider:{'@type':'EducationalOrganization',name:u.name},
-        educationalLevel:'Postgraduate',
-        offers:{'@type':'Offer',category:'Online Education',priceCurrency:'INR',lowPrice:u.feeMin,highPrice:u.feeMax,availability:'https://schema.org/InStock'},
+        educationalLevel:['MBA','MCA','M.Com','MA','MSc'].includes(displayProgram)?'Postgraduate':'Undergraduate',
+        offers:{category:'Online Education',...(programSchema[displayProgram]?.offer ?? {'@type':'Offer',priceCurrency:'INR',availability:'https://schema.org/InStock'})},
         timeRequired: displayProgram==='MBA'||displayProgram==='MCA'?'P2Y':'P3Y',
       hasCourseInstance:{'@type':'CourseInstance',courseMode:'online',courseWorkload:displayProgram==='MBA'||displayProgram==='MCA'?'P2Y':'P3Y'},
       })}}/>
@@ -437,10 +452,14 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                         const slug = typeof spec === 'string' ? spec.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') : spec.slug
                         const name = typeof spec === 'string' ? spec : spec.name
                         const programSlug = displayProgram.toLowerCase().replace(/\./g, '')
+                        const href = specHrefs[`${programSlug}/${slug}`]
+                        if (!href) return (
+                          <span key={slug} className="px-3 py-1.5 bg-surface-2 border border-border rounded-full text-sm text-ink-2">{name}</span>
+                        )
                         return (
                           <Link
                             key={slug}
-                            href={`/universities/${u.id}/${programSlug}/${slug}`}
+                            href={href}
                             className="px-3 py-1.5 bg-surface-2 border border-border rounded-full text-sm text-ink-2 hover:border-amber hover:text-amber transition-colors"
                           >
                             {name}

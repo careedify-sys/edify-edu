@@ -9,7 +9,10 @@ type Programme = {
   duration_years: number | null; ugc_valid_till: string | null; aicte_listed: boolean;
 };
 
-export function ProgrammeFinder({ universitySlug, programmes }: { universitySlug: string; programmes: Programme[] }) {
+// universityHref replaces /universities/{supabase-slug}/programmes/{uuid}, a legacy
+// path middleware 308s to /universities/{supabase-slug}, which then redirects again
+// or 404s. Every programme row was a redirect link. null renders plain rows.
+export function ProgrammeFinder({ universityHref, programmes }: { universityHref: string | null; programmes: Programme[] }) {
   const [query, setQuery] = useState('');
   const [showAll, setShowAll] = useState(false);
 
@@ -54,7 +57,7 @@ export function ProgrammeFinder({ universitySlug, programmes }: { universitySlug
       </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-        {visible.map(prog => <ProgrammeRow key={prog.id} programme={prog} universitySlug={universitySlug} />)}
+        {visible.map(prog => <ProgrammeRow key={prog.id} programme={prog} universityHref={universityHref} />)}
 
         {hidden > 0 && !showAll && (
           <button
@@ -78,21 +81,18 @@ export function ProgrammeFinder({ universitySlug, programmes }: { universitySlug
   );
 }
 
-function ProgrammeRow({ programme, universitySlug }: { programme: Programme; universitySlug: string }) {
+function ProgrammeRow({ programme, universityHref }: { programme: Programme; universityHref: string | null }) {
   const validTill = programme.ugc_valid_till
     ? new Date(programme.ugc_valid_till).toLocaleDateString('en-IN', { month: 'short', year: 'numeric' })
     : null;
 
-  return (
-    <Link
-      href={`/universities/${universitySlug}/programmes/${programme.id}`}
-      onClick={() => track.ctaClick('programme_row', { programmeId: programme.id })}
-      style={{
-        background: brand.successBgSoft, border: `1px solid ${brand.successBorder}`,
-        borderRadius: 10, padding: '12px 14px', display: 'flex',
-        alignItems: 'center', gap: 12, textDecoration: 'none',
-      }}
-    >
+  const rowStyle = {
+    background: brand.successBgSoft, border: `1px solid ${brand.successBorder}`,
+    borderRadius: 10, padding: '12px 14px', display: 'flex',
+    alignItems: 'center', gap: 12, textDecoration: 'none',
+  } as const;
+  const body = (
+    <>
       <div style={{
         width: 22, height: 22, background: brand.successAccent, borderRadius: '50%',
         display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
@@ -107,7 +107,18 @@ function ProgrammeRow({ programme, universitySlug }: { programme: Programme; uni
           {validTill && ` · valid till ${validTill}`}
         </div>
       </div>
-      <span style={{ color: brand.successText, fontSize: 14 }}>›</span>
+      {universityHref && <span style={{ color: brand.successText, fontSize: 14 }}>›</span>}
+    </>
+  );
+
+  if (!universityHref) return <div style={rowStyle}>{body}</div>;
+  return (
+    <Link
+      href={universityHref}
+      onClick={() => track.ctaClick('programme_row', { programmeId: programme.id })}
+      style={rowStyle}
+    >
+      {body}
     </Link>
   );
 }

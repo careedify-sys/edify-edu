@@ -16,6 +16,7 @@ import UniversityEndCta from '@/components/blog-cta/UniversityEndCta'
 import { BLOG_CTA_BUNDLES } from '@/lib/university-blog-cta'
 import { getUniversityFromBlog } from '@/lib/internal-links'
 import BlogRelatedLinks from '@/components/BlogRelatedLinks'
+import { getRelatedPosts } from '@/lib/blog-related'
 import BlogComparisonLinks from '@/components/BlogComparisonLinks'
 import { getComparisonsForBlog } from '@/lib/compare-links'
 import WhatsAppSticky from '@/components/WhatsAppSticky'
@@ -162,9 +163,8 @@ export default async function BlogPostPage({ params }: Props) {
     .map((id) => getSlimById(id))
     .filter(Boolean)
 
-  const otherPosts = getPublishedPosts()
-    .filter((p) => p.slug !== slug)
-    .slice(0, 3)
+  // Relevance-picked and spread across the archive. See lib/blog-related.ts.
+  const otherPosts = getRelatedPosts(slug)
 
   let contentWithIds = addHeadingIds(post.content)
   const headings = extractHeadings(post.content)

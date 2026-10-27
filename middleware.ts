@@ -381,7 +381,8 @@ export function middleware(req: NextRequest) {
     '/courses.html': '/programs',
     '/thankyou.html': '/',
     '/index.html': '/',
-    '/ugc-approved-online-universities': '/blog/ugc-deb-approved-online-universities-india',
+    // Pointed at /blog/ugc-deb-approved-online-universities-india, which 404s. Repointed 2026-10-27.
+    '/ugc-approved-online-universities': '/blog/ugc-deb-approved-universities-list-2026',
   }
   if (LEGACY_STATIC_REDIRECTS[pathname]) {
     const url = req.nextUrl.clone()

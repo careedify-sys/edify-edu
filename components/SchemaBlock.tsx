@@ -59,7 +59,8 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
       sameAs: `${baseUrl}/universities/${u.id}`,
     },
     educationalLevel: ['MBA', 'MCA', 'M.Com', 'MA', 'MSc'].includes(program) ? 'Postgraduate' : 'Undergraduate',
-    courseMode: 'Online',
+    // courseMode belongs to CourseInstance only. Emitted on the Course itself
+    // it was the 2,421 "invalid property" errors in the Semrush audit of 27 Oct 2026.
     timeRequired: `P${durationYears}Y`,
     url: pageUrl,
     offers: (fee.ok && fee.min) ? (fee.max && fee.max !== fee.min ? {
@@ -86,7 +87,6 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
     hasCourseInstance: {
       '@type': 'CourseInstance',
       courseMode: 'Online',
-      startDate: `${year}-07-01`,
       courseWorkload: `P${durationYears}Y`,
     },
     ...(keywords ? { keywords } : {}),
@@ -99,9 +99,8 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
   // rich result errors in Google Search Console
 
   // Mode-unverified universities: courseSchema asserts a Course exists, names it
-  // "Online {program}", and stamps courseMode: 'Online' on both the Course and
-  // its CourseInstance. That is the exact claim we cannot support, and as
-  // structured data it travels further than the visible copy. Emit the
+  // "Online {program}", and stamps courseMode: 'Online' on its CourseInstance.
+  // That is the exact claim we cannot support, and as structured data it travels further than the visible copy. Emit the
   // breadcrumb only. See MODE_UNVERIFIED_UNIS in lib/seo/should-index.ts.
   const emitCourse = shouldIndexUniversity(u.id)
 

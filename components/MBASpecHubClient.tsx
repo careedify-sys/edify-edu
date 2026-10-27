@@ -3,7 +3,8 @@
 import { useMemo } from 'react'
 import Link from 'next/link'
 import { BadgeCheck, TrendingUp, BookOpen, Shield } from 'lucide-react'
-import { UNIS_SLIM, formatFeeSlim } from '@/lib/data-slim'
+import { UNIS_SLIM } from '@/lib/data-slim'
+import { formatINR } from '@/lib/format'
 import { getCanonicalSpec, type CanonicalSpec } from '@/lib/specMapping'
 import { getSpecFAQs } from '@/lib/specFaqs'
 import UniversityCard from '@/components/UniversityCard'
@@ -15,9 +16,15 @@ interface Props {
   customH1?: string
   customIntro?: string
   mbaFeeMap?: Record<string, { min: number; max: number }>
+  /** Per-university fee text from getExactFee: exact rupees, discounts labelled. */
+  mbaFeeText?: Record<string, string>
+  /** Card href per university id, resolved on the server against the edge allowlists. */
+  cardHrefs?: Record<string, string>
+  /** University ids whose MBA hub resolves and is indexable (hubResolves + isLinkable). */
+  mbaHubIds?: string[]
 }
 
-export default function MBASpecHubClient({ specSlug, specName, customH1, customIntro, mbaFeeMap }: Props) {
+export default function MBASpecHubClient({ specSlug, specName, customH1, customIntro, mbaFeeMap, mbaFeeText, cardHrefs, mbaHubIds }: Props) {
   const canonical = getCanonicalSpec(specSlug)
   const editorial = SPEC_HUB_EDITORIAL[specSlug]
 
@@ -47,19 +54,18 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
       })
   }, [specSlug])
 
-  const feeMinVals = mbaFeeMap
-    ? Object.values(mbaFeeMap).map(f => f.min).filter(f => f > 0)
-    : mbaUnis.map(u => u.feeMin).filter(f => f > 0)
-  const feeMaxVals = mbaFeeMap
-    ? Object.values(mbaFeeMap).map(f => f.max).filter(f => f > 0)
-    : mbaUnis.map(u => u.feeMax).filter(f => f > 0)
+  // getExactFee bounds only. No fallback to the slim u.feeMin/feeMax, which are
+  // MBA-led raw values that never passed getDisplayFee.
+  const feeMinVals = Object.values(mbaFeeMap ?? {}).map(f => f.min).filter(f => f > 0)
+  const feeMaxVals = Object.values(mbaFeeMap ?? {}).map(f => f.max).filter(f => f > 0)
   const hasFees = feeMinVals.length > 0
   const feeFloor = hasFees ? Math.min(...feeMinVals) : 0
   const feeCeiling = hasFees ? Math.max(...feeMaxVals) : 0
   const uniCount = mbaUnis.length
-  const feeFloorStr = hasFees ? formatFeeSlim(feeFloor) : 'Contact our counsellor for current fee details'
-  const feeCeilingStr = hasFees ? formatFeeSlim(feeCeiling) : ''
-  const templateFaqs = getSpecFAQs(specName, uniCount, feeFloorStr, feeCeilingStr)
+  // Exact rupees, never the compact "₹1.6L" form: these are fee figures, not titles.
+  const feeFloorStr = hasFees ? formatINR(feeFloor) : 'Contact our counsellor for current fee details'
+  const feeCeilingStr = hasFees ? formatINR(feeCeiling) : ''
+  const templateFaqs = getSpecFAQs(specName, uniCount, hasFees ? feeFloorStr : null, hasFees ? feeCeilingStr : null)
   const faqs = editorial ? [...editorial.faqs, ...templateFaqs] : templateFaqs
 
   return (
@@ -142,14 +148,14 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
                 {mbaUnis.slice(0, 10).map(u => (
                   <tr key={u.id} className="border-t border-slate-100">
                     <td className="px-4 py-3">
-                      <Link href={`/universities/${u.id}/mba`} className="font-medium text-blue-700 hover:underline">{u.name}</Link>
+                      {mbaHubIds?.includes(u.id)
+                        ? <Link href={`/universities/${u.id}/mba`} className="font-medium text-blue-700 hover:underline">{u.name}</Link>
+                        : <span className="font-medium text-blue-700">{u.name}</span>}
                     </td>
                     <td className="px-4 py-3">{u.nirfMgt && u.nirfMgt < 500 ? `#${u.nirfMgt} (Mgmt)` : u.nirf > 0 && u.nirf < 500 ? `#${u.nirf} (Univ)` : 'Not ranked (Mgmt)'}</td>
                     <td className="px-4 py-3">{u.naac || 'NA'}</td>
                     <td className="px-4 py-3">{(() => {
-                      const mf = mbaFeeMap?.[u.id]
-                      if (!mf) return '—'
-                      return mf.min === mf.max ? formatFeeSlim(mf.min) : `${formatFeeSlim(mf.min)} - ${formatFeeSlim(mf.max)}`
+                      return mbaFeeText?.[u.id] ?? 'Contact our counsellor for current fee details'
                     })()}</td>
                   </tr>
                 ))}
@@ -248,7 +254,7 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
         <p className="text-sm text-slate-500 mb-6">Sorted by NIRF 2025 rank. Click any university for detailed fees, syllabus, and programme information.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {mbaUnis.map(u => (
-            <UniversityCard key={u.id} u={u as any} highlightProgram="MBA" specSlug={specSlug} />
+            <UniversityCard key={u.id} u={u as any} highlightProgram="MBA" specSlug={specSlug} href={cardHrefs?.[u.id]} />
           ))}
         </div>
       </section>

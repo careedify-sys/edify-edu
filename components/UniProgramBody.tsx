@@ -47,7 +47,7 @@ import { hasSyllabusData } from '@/lib/syllabus'
 import { getProgramLinks } from '@/lib/internal-links'
 import ProgramBlogLinks from './ProgramBlogLinks'
 import SiblingProgrammes from './SiblingProgrammes'
-import { getSiblingProgrammes, getUniversityOverviewLink, getVerifyPage } from '@/lib/seo/safe-internal-links'
+import { getSiblingProgrammes, getUniversityOverviewLink, getVerifyPage, resolveSpecHref } from '@/lib/seo/safe-internal-links'
 import { feeSentence, emiSentence } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
@@ -115,9 +115,15 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
     const seen = new Set<string>()
     const add = (raw: string) => {
       const r = resolveSpec(u.id, program, programSlug, raw)
-      if (!r || seen.has(r.slug)) return
-      seen.add(r.slug)
-      out.push(r)
+      if (!r) return
+      // resolveSpec does not see the spec-slug rescue rules, which middleware
+      // applies as 308s, so take the slug the edge actually serves.
+      const href = resolveSpecHref(u.id, programSlug, r.slug)
+      if (!href) return
+      const slug = href.slice(href.lastIndexOf('/') + 1)
+      if (seen.has(slug)) return
+      seen.add(slug)
+      out.push({ slug, name: r.name })
     }
     for (const s of specs) add(specSlug(s))
     for (const row of getAllSpecsForProgram(u.id, programSlug)) add(row.spec_slug)

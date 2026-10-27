@@ -21,6 +21,7 @@
 import Link from 'next/link'
 import { getUniversitiesByProgram, getSpecs, type Program, type University } from '@/lib/data'
 import { getDisplayFee } from '@/lib/fees'
+import { hubResolves, isLinkable } from '@/lib/seo/safe-internal-links'
 import naacSnapshot from '@/data/naac-verified.json'
 import verifySlugMap from '@/lib/data/verify-slug-map.json'
 
@@ -127,9 +128,13 @@ export default function ProgrammeComparisonTable({
             {rows.map(({ u, naac, nirf, fee, specCount, verifySlug }) => (
               <tr key={u.id} className="border-t border-border align-top">
                 <th scope="row" className="text-left px-3 py-3 font-medium">
-                  <Link href={`/universities/${u.id}/${programSlug}`} className="text-navy hover:text-amber no-underline font-semibold">
-                    {u.name}
-                  </Link>
+                  {/* Rows come from u.programs, which is the input to the hub
+                      allowlist, not its output: 41 of these linked 404s. */}
+                  {hubResolves(u.id, program) && isLinkable(`/universities/${u.id}/${programSlug}`)
+                    ? <Link href={`/universities/${u.id}/${programSlug}`} className="text-navy hover:text-amber no-underline font-semibold">
+                        {u.name}
+                      </Link>
+                    : <span className="text-navy font-semibold">{u.name}</span>}
                   {verifySlug && (
                     <Link href={`/verify/${verifySlug}`} className="block text-xs text-ink-3 hover:text-amber no-underline mt-0.5">
                       UGC-DEB verification

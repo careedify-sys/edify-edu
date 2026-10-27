@@ -69,7 +69,11 @@ function getApprovalEntry(tag: string) {
 // programFee: the governed fee for the programme the hub is about. Pass it on
 // non-MBA hubs, where u.feeMin/feeMax (MBA-led) would print the wrong
 // programme's fee. undefined keeps the old behaviour; null means "not known".
-export default function UniversityCard({ u, highlightProgram, specSlug, programFee }: { u: UniversityCardData; highlightProgram?: string; specSlug?: string; programFee?: string | null }) {
+// href, when given, wins over the specSlug-built URL. Pass one whenever the
+// card is spec-scoped: specSlug is the hub's slug, not necessarily this
+// university's, and the built URL 308s or 404s when they differ.
+export default function UniversityCard({ u, highlightProgram, specSlug, programFee, href }: { u: UniversityCardData; highlightProgram?: string; specSlug?: string; programFee?: string | null; href?: string }) {
+  const cardHref = href ?? (specSlug ? `/universities/${u.id}/mba/${specSlug}` : `/universities/${u.id}`)
   const [enquiryOpen, setEnquiryOpen] = useState(false)
 
   const location = u.city || u.region || 'India'
@@ -88,7 +92,7 @@ export default function UniversityCard({ u, highlightProgram, specSlug, programF
         {/* Color bar */}
         <div className="h-1 w-full shrink-0" style={{ background: u.color }} />
 
-        <Link href={specSlug ? `/universities/${u.id}/mba/${specSlug}` : `/universities/${u.id}`} aria-label={`View ${u.name} online programs`} className="block p-5 flex-1">
+        <Link href={cardHref} aria-label={`View ${u.name} online programs`} className="block p-5 flex-1">
           {/* Header */}
           <div className="flex items-start justify-between mb-3">
             <div className="flex-1 min-w-0 pr-3">
@@ -226,7 +230,7 @@ export default function UniversityCard({ u, highlightProgram, specSlug, programF
 
         {/* Action buttons */}
         <div className="px-5 pb-4 flex gap-2">
-          <Link href={specSlug ? `/universities/${u.id}/mba/${specSlug}` : `/universities/${u.id}`}
+          <Link href={cardHref}
             className="flex-1 text-center py-2.5 rounded-[var(--r-sm)] text-sm font-bold btn-primary">
             View Details →
           </Link>
