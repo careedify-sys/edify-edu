@@ -24,7 +24,7 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
     title: 'Amity Online MBA Fees 2026: ₹2.07L-₹2.25L | edifyedu.in',
     description: 'Amity University online MBA fees ₹2,07,000 to ₹2,25,000 total (₹8,906/mo EMI). 19 specializations, NAAC A+, WASC and QAA accredited. UGC-DEB approved. Zero-commission, verified fee data.',
     h1: 'Amity University Online MBA 2026: Fees, Specializations, and Honest Review',
-    intro: 'The Amity University online MBA costs ₹2,07,000 to ₹2,25,000 in total over two years (four semesters), depending on the specialisation. You need a bachelor\'s degree with 50% marks to apply. Amity holds NAAC A+ accreditation, UGC-DEB approval and a NIRF Management rank of #49, and lists 19 specialisations, from Finance and Accounting to Business Analytics and Data Science. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Fees are indicative, so confirm the current figure on online.amity.edu before you pay.',
+    intro: 'The Amity University online MBA costs ₹2,07,000 to ₹2,25,000 in total over two years (four semesters), depending on the specialisation. You need a bachelor\'s degree with 50% marks to apply. Amity holds NAAC A+ accreditation, UGC-DEB approval and a NIRF Management rank of #49, and lists 19 specialisations, from Finance and Accounting to Business Analytics and Data Science. Amity also lists WASC (USA) and QAA (UK) accreditation on its official portal. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Fees are indicative, so confirm the current figure on online.amity.edu before you pay.',
   },
   // Uttaranchal: data.ts feeMin=99600 (one-time), feeMax=148000 (before the 30%
   // scholarship); 1,03,600 is the semester-track total. The generic template
