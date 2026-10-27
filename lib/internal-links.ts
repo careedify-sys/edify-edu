@@ -6,12 +6,24 @@ export interface BlogEntry {
   label: string
 }
 
+// Exact-match anchor for the query this programme should rank on. Added
+// 2026-10-27 from Semrush Position Tracking (India, mobile): Google was ranking
+// the hub or a spec page for a commercial query the review blog answers better.
+// Rendered on the hub (ProgramBlogLinks) and on every spec page under it
+// (UniSpecBody), so the competing pages all point at the blog with the query
+// as anchor text.
+export interface KeywordLink {
+  slug: string
+  anchor: string
+}
+
 export interface ProgramLinks {
   universityName: string
   shortName: string
   programPage: string
   comparePage?: string
   verifyPage?: string
+  keywordLink?: KeywordLink
   blogs: BlogEntry[]
 }
 
@@ -64,6 +76,8 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Symbiosis Online (SSODL)',
       shortName: 'Symbiosis',
       programPage: '/universities/symbiosis-university-online/mba',
+      // /mba/international-business was ranking 73 for this query.
+      keywordLink: { slug: 'symbiosis-online-mba-review-2026', anchor: 'Symbiosis online MBA' },
       blogs: [
         { slug: 'symbiosis-online-mba-review-2026', label: 'Symbiosis Online MBA Review 2026: SSODL Fees, Scholarship and Honest Verdict' },
       ],
@@ -183,6 +197,8 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Sikkim Manipal University Online',
       shortName: 'SMU',
       programPage: '/universities/sikkim-manipal-university-online/mba',
+      // Hub ranked 50 for this query, the blog 4.
+      keywordLink: { slug: 'smu-online-mba-review', anchor: 'Sikkim Manipal University MBA fees' },
       blogs: [
         { slug: 'smu-online-mba-review', label: 'SMU Online MBA Review 2026: Fees, Dual Specialisation and Verdict' },
       ],
@@ -223,6 +239,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Galgotias University Online',
       shortName: 'Galgotias',
       programPage: '/universities/galgotias-university-online/mba',
+      // Hub ranked 33 for "galgotia mba fees"; the blog ranks 4 for the
+      // "galgotias" spelling. The anchor keeps the no-s spelling on purpose.
+      keywordLink: { slug: 'galgotias-online-mba-review', anchor: 'Galgotia MBA fees' },
       blogs: [
         { slug: 'galgotias-online-mba-review', label: 'Galgotias University Online MBA Fees 2026: ₹80,200 Review and Honest Rating' },
         { slug: 'is-galgotias-university-online-fake-or-legit-2026', label: 'Is Galgotias University Online Fake or Legit? 2026' },
@@ -413,7 +432,20 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       ],
     },
   },
+  // MBA entry added 2026-10-27. /mba/finance was ranking 88 for "amrita online
+  // mba" and the MBA hub had no link to the review at all. Registering the slug
+  // also turns on BlogRelatedLinks and the CollegeOrUniversity JSON-LD on the
+  // review; the hub is index,follow in valid-urls.json.
   'amrita-vishwa-vidyapeetham-online': {
+    mba: {
+      universityName: 'Amrita Vishwa Vidyapeetham Online',
+      shortName: 'Amrita',
+      programPage: '/universities/amrita-vishwa-vidyapeetham-online/mba',
+      keywordLink: { slug: 'amrita-online-mba-review', anchor: 'Amrita online MBA' },
+      blogs: [
+        { slug: 'amrita-online-mba-review', label: 'Amrita Online MBA Review 2026: Is the Premium Worth It?' },
+      ],
+    },
     bba: {
       universityName: 'Amrita Vishwa Vidyapeetham Online',
       shortName: 'Amrita',

@@ -40,6 +40,8 @@ import HonestVerdict      from './HonestVerdict'
 import FAQBlock           from './FAQBlock'
 import LastUpdatedStamp   from './LastUpdatedStamp'
 import SiblingSpecialisations from './SiblingSpecialisations'
+import ReviewKeywordLink from './ReviewKeywordLink'
+import { getProgramLinks } from '@/lib/internal-links'
 import { getSiblingSpecialisations, isLinkable } from '@/lib/seo/safe-internal-links'
 import { resolveSpec, getAllSpecsForProgram } from '@/lib/data/programs'
 import { specSlug as toSpecSlug } from '@/lib/data'
@@ -308,6 +310,15 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
       hubHref={specHubHref}
     />
   )
+  // Spec pages were outranking the review blog for the university's head
+  // query (Symbiosis /mba/international-business at 73, Amrita /mba/finance
+  // at 88). Every spec page under a hub with a keywordLink points at the blog.
+  const keywordLink = getProgramLinks(u.id, programSlug)?.keywordLink
+  const keywordLinkBlock = keywordLink ? (
+    <div className="rounded-xl border border-slate-200 bg-white p-5">
+      <ReviewKeywordLink link={keywordLink} />
+    </div>
+  ) : null
 
   // Spec-specific JSON content (Batch 9+) — takes priority over generic specContent
   const specJson = getSpecPageContent(u.id, program.toLowerCase(), specSlug)
@@ -597,6 +608,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                   )}
 
                   {siblingSpecBlock}
+                  {keywordLinkBlock}
 
                   <LastUpdatedStamp program={program} universityId={u.id} />
 
@@ -696,6 +708,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
 
                   <FAQBlock faqs={faqs} title={`${cleanName} ${shouldIndexUniversity(u.id) ? 'Online ' : ''}${program} FAQs`} />
                   {siblingSpecBlock}
+                  {keywordLinkBlock}
 
                   <LastUpdatedStamp program={program} universityId={u.id} />
 

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { BookOpen } from 'lucide-react'
 import type { ProgramLinks } from '@/lib/internal-links'
 import { getCouponPage, getCouponPageSlugForUniversity } from '@/lib/coupon-pages'
+import ReviewKeywordLink from './ReviewKeywordLink'
 
 interface Props {
   links: ProgramLinks
@@ -52,6 +53,11 @@ export default function ProgramBlogLinks({ links, program, universityId }: Props
           In-Depth Reviews
         </span>
       </div>
+      {links.keywordLink && (
+        <div className="mb-3">
+          <ReviewKeywordLink link={links.keywordLink} />
+        </div>
+      )}
       <div className="space-y-2.5">
         {links.blogs.map(({ slug, label }) => (
           <Link

@@ -137,6 +137,15 @@ function BCAProgramSchema({
   )
 }
 
+// Body intro only; the title and meta still come from the template above.
+// Galgotias (2026-10-27): searchers also type "Galgotia" without the s, so the
+// intro carries both spellings. The BBA hub deliberately has no override: it is
+// cited in an AI Overview, so its copy stays as it is.
+const BCA_INTRO_OVERRIDES: Record<string, string> = {
+  'galgotias-university-online':
+    'Galgotias University, often searched as Galgotia University, runs an Online BCA programme recognised by UGC DEB. It suits working professionals and fresh graduates aiming for careers in software development, data science and IT management. The 3-year programme runs through live and recorded sessions on an online platform, with no mandatory campus visits.',
+}
+
 export default async function OnlineBCAPage(
   { params }: { params: Promise<{ id: string }> }
 ) {
@@ -148,7 +157,7 @@ export default async function OnlineBCAPage(
   return (
     <>
       <BCAProgramSchema u={u} pd={pd} />
-      <UniProgramBody u={u} program="BCA" programSlug="bca" pd={pd} />
+      <UniProgramBody u={u} program="BCA" programSlug="bca" pd={pd} customIntro={BCA_INTRO_OVERRIDES[id]} />
     </>
   )
 }
