@@ -1,5 +1,13 @@
 # Fix log
 
+## 2026-10-27 · New post: online MSW, from the UGC-DEB HEI programme register
+
+Keyword gap rows "online msw programs" (P2, 590/mo) and "masters in social work online" (P2, 390/mo). The August 2026
+DEB PDFs name programmes without a mode, so used the full register at deb.ugc.ac.in/Home/HEI_Prog_List, which has year,
+session and mode columns. 2026-27 July session: Online MSW entitled for Guru Ghasidas Vishwavidyalaya, Integral, Parul,
+Amity and University of Lucknow; 29 universities in ODL (30 rows). IGNOU and Mizoram were online in 2025-26 but not
+2026-27. No fees or NAAC grades stated; facts from the register and the 2020 Regulations only.
+
 ## 2026-10-27 · /fees retitled for "online mba fees"
 
 Keyword gap "Fee guide: online MBA fees" rows: "online mba fees" 3,600/mo, "mba online courses fees" 1,300, "online mba

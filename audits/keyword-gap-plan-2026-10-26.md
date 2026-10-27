@@ -176,3 +176,4 @@ eligibility follows the regulator. Feeds item 8 and the "one year online mba" ro
 - 2026-10-27 · BA / MA / MSc programme hubs (export rows: online BA 8,120/mo, online MA 5,620/mo, online MSc 5,540/mo): titles, descriptions and hub copy rewritten for the head terms. Measure with Bucket A ~23 Nov.
 - 2026-10-27 · one year online mba (720) + 1 year online mba (390): answered inside /blog/1-year-mba-india-executive-mba-2026 from UGC circular 7-2/2026; Jindal claims corrected.
 - 2026-10-27 · online mba fees cluster (~5,900/mo): /fees retitled "Online MBA & Degree Fees 2026: 125 Universities Compared". IGNOU ₹31,500 vs ₹66,000 conflict in posts awaiting Rishi.
+- 2026-10-27 · online msw programs (590) + masters in social work online (390): /blog/online-msw-india from the UGC-DEB HEI register (5 online, 29 ODL for 2026-27).

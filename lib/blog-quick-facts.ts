@@ -3,6 +3,13 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'online-msw-india': [
+    { label: 'Online MSW 2026-27', value: '5 universities UGC-DEB entitled', green: true },
+    { label: 'Distance MSW 2026-27', value: '29 universities (ODL)' },
+    { label: 'Prohibited online?', value: 'No' },
+    { label: 'Equivalence', value: 'Same as campus, UGC Reg 22' },
+    { label: 'Check', value: 'deb.ugc.ac.in HEI programme list' },
+  ],
   'online-pgdm-india': [
     { label: 'Online PGDM', value: 'Valid with AICTE approval for that mode', green: true },
     { label: 'Who can offer', value: 'NBA 700/1,000 or NIRF top-200' },
