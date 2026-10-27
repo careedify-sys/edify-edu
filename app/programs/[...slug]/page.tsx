@@ -429,7 +429,6 @@ export default async function CatchAllProgramPage(
       '@type': 'CourseInstance',
       courseMode: 'Online',
       courseWorkload: isPgProgram ? 'P2Y' : 'P3Y',
-      startDate: `${year}-07-01`,
     },
   }
 
@@ -851,7 +850,9 @@ export default async function CatchAllProgramPage(
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
               {[
                 { icon: BookOpen, label: 'Universities', value: `${universities.length}` },
-                { icon: Award, label: 'Min Fee', value: formatFee(feeMin) },
+                // Was formatFee(feeMin): the raw MBA-led u.feeMin minimum, which printed
+                // ₹0 on nine programmes. Lowest getDisplayFee value, or the counsellor line.
+                { icon: Award, label: 'Min Fee', value: schemaFeeBounds ? formatFee(schemaFeeBounds.min) : 'Contact our counsellor for current fee details' },
                 { icon: Users, label: 'Specialisations', value: `${allSpecs.length}+` },
                 // Was a hard-coded "Salary Range ₹4L – ₹18L" on every programme and
                 // specialisation, backed by no source. Level is a fact we hold.

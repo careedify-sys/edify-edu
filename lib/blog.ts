@@ -5224,7 +5224,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>The ₹1–1.75 lakh private university programs tend to offer a noticeably better platform experience, live classes, mentor support, peer interaction through virtual campuses. For most working professionals, that structure is what keeps them from dropping out quietly.</p>
 
 <div class="callout-warning">
-  <p><strong>One thing to verify yourself:</strong> Fees listed online frequently reflect introductory or discounted rates. Always ask for the full breakup (including exam fees, registration charges, and any semester-end costs) before you pay the first instalment. The number on the website is rarely the final number. Also <a href="/compare" class="ilink">check available scholarships</a> on EdifyEdu, many merit and need-based options can reduce the total outgo further.</p>
+  <p><strong>One thing to verify yourself:</strong> Fees listed online frequently reflect introductory or discounted rates. Always ask for the full breakup (including exam fees, registration charges, and any semester-end costs) before you pay the first instalment. The number on the website is rarely the final number. Also <a href="/coupons" class="ilink">check available scholarships</a> on EdifyEdu, many merit and need-based options can reduce the total outgo further.</p>
 </div>
 
 <h2>Cheapest Online MBA in India 2026: Under ₹1 Lakh Options</h2>

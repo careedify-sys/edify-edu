@@ -87,7 +87,6 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
     hasCourseInstance: {
       '@type': 'CourseInstance',
       courseMode: 'Online',
-      startDate: `${year}-07-01`,
       courseWorkload: `P${durationYears}Y`,
     },
     ...(keywords ? { keywords } : {}),

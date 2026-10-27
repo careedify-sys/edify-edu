@@ -61,7 +61,8 @@ Yenepoya MBA, before (production):
  "hasCourseInstance":{"@type":"CourseInstance","courseMode":"Online","startDate":"2026-07-01","courseWorkload":"P2Y"}}
 ```
 
-After: identical except the top-level `"courseMode":"Online"` is gone. Fee unchanged at ₹1,20,000.
+After: identical except the top-level `"courseMode":"Online"` is gone, and (decision 6) the CourseInstance no
+longer carries the hardcoded `"startDate":"2026-07-01"`. Fee unchanged at ₹1,20,000.
 
 ## 2. Dead links
 
@@ -126,30 +127,102 @@ Proposals, none applied:
 4. Swap the 9 repeated chevrons and 12 check icons for one SVG `<symbol>` and `<use>`. About 6 KB.
 5. Move repeated inline `style` objects (233) to classes. About 8 KB.
 
-## Needs Rishi's decision
+## Decisions (Rishi, 27 Oct 2026)
 
-1. **Spec pages under noindex hubs are now 4 clicks deep.** /programs tables and /verify linked noindex hubs before.
-   Your "resolve 200 + index" rule removes those links. Their spec pages went from depth 3 to 4 (deep pages 20 to
-   50). Either accept, or allow navigation links to noindex hubs (`hubResolves` only) from /programs tables.
-2. **Three verify slugs could map to a site university but are not name-matched**, so their profile link is now
-   hidden: `bs-abdur-rahman-institute-of-science-and-technology-online` to `bs-abdur-rahman-university-online`,
-   `dy-patil-navi-mumbai-online` to `dy-patil-university-online`, `shobhit-institute-of-engineering-technology-online`
-   to `shobhit-university-online`. Confirm they are the same institutions and I add them to
-   `verify-slug-overrides.json`. `amity-university-rajasthan-online` used to link Amity Online, a different
-   institution, and stays unlinked.
-3. **"Check available scholarships" in `affordable-online-mba-india-2026` now links /compare**, the final
-   destination of the /scholarships redirect. That is literal but a poor match. Pick /coupons or remove the sentence.
-4. **Two blog cards renamed.** The MAHE and MUJ reviews linked "MAHE vs MUJ vs SMU", a post that does not exist.
-   They now link /compare/manipal-jaipur-vs-manipal-mahe titled "MAHE vs MUJ". The BBA full-form post's "How to
-   Choose the Right University" now reads "How to Verify a University Before You Apply" and links the verification
-   post.
-5. **Spec links are gated on "resolves", not "indexable".** Requiring indexable would remove links to every thin
-   spec page, which is your held spec-page decision.
-6. **Visible fees still bypass getDisplayFee in two places** (schema is fixed, page copy is not): the /programs
-   "Min Fee" stat (`u.feeMin` minimum, a derived superlative) and the compare pair table (`getProgramFee`).
-7. **Course `startDate` is hardcoded `{year}-07-01`**, which is already past and not sourced. Drop it or source it.
-8. **Blog `about: Course`** (225 posts) is a nested Course with no offers or instance. Google may flag it as an
-   incomplete Course. Changing it to `EducationalOccupationalProgram` would stop that.
+1. **Spec pages under noindex hubs at 4 clicks: accepted.** No change. /programs tables and /verify no longer link
+   noindex hubs, so their spec pages went from depth 3 to 4 (deep pages 20 to 50).
+2. **Verify profile links.** `dy-patil-navi-mumbai-online` now links `/universities/dy-patil-university-online`.
+   Per the 7 Aug audit that record is Navi Mumbai; `dr-dy-patil-vidyapeeth-online` is Pune and is not linked to it.
+   Added to `lib/data/verify-slug-overrides.json` under `_manual_entries` with that provenance, since it was not a
+   name match. The mapping also works the other way, so DY Patil's own site pages now link its verify page.
+   `amity-university-rajasthan-online` stays unlinked (different institution). BS Abdur Rahman and Shobhit stay
+   unlinked (NEEDS_RISHI below).
+3. **Scholarships sentence** in `affordable-online-mba-india-2026` now links /coupons. Sentence kept.
+4. **Blog wording changes: accepted.** The MAHE and MUJ review cards say "MAHE vs MUJ" and link
+   /compare/manipal-jaipur-vs-manipal-mahe. The BBA full-form post links the verification post.
+5. **Visible fees now go through getDisplayFee** in the compare pair table
+   (Total Fees and Per Semester rows, the verdict sentence and the meta description share the same value). A
+   suppressed fee shows "Contact our counsellor for current fee details", the existing counsellor line from
+   MBASpecHubClient. Every changed value is in the tables below. The /programs "Min Fee" stat was changed too, but
+   it turned out to be dead code that renders on no page (see the note under its table).
+   One more visible bypass found while checking: the MBA spec hub FAQ fee range (`specFeeMin`/`specFeeMax` in
+   app/programs/[...slug]/page.tsx) parses `pd.fees` directly and falls back to the raw `feeMin`. Not changed here.
+6. **Course `startDate` removed** from SchemaBlock and /programs, with no replacement date. The same 12 sample pages
+   re-validate with 0 issues and no `startDate`.
+7. **143-university layout ItemList: not done on this branch**, as instructed.
+
+Still open from the first pass: spec links are gated on "resolves", not "indexable" (your held spec-page decision),
+and blog `about: Course` (nested, no offers or instance) may still be flagged by Google as an incomplete Course.
+
+## NEEDS_RISHI
+
+- **BS Abdur Rahman.** `/verify/bs-abdur-rahman-institute-of-science-and-technology-online` could map to
+  `/universities/bs-abdur-rahman-university-online`, but the names do not match exactly. The profile link stays
+  hidden until you confirm they are the same institution.
+- **Shobhit.** `/verify/shobhit-institute-of-engineering-technology-online` could map to
+  `/universities/shobhit-university-online`. Same situation: hidden until confirmed.
+- **New "Min Fee" floors on /programs are real getDisplayFee values, but each is still the single cheapest
+  university.** MA and BA now show ₹18K and ₹10K, both set by IGNOU. MBA shows ₹20K, set by Madras. Worth a
+  portal check before the next GSC read. IGNOU's MBA floor was a range floor once before.
+
+## Fee values changed (before → after)
+
+Before is the code on origin/main. After is this branch.
+
+### Compare pair table (Total Fees row)
+
+| Pair | University | Before | After |
+|---|---|---|---|
+| amity-vs-lpu | lovely-professional-university-online | ₹1,61,600 - ₹2,00,000 | ₹1,61,000 - ₹2,00,000 |
+| lpu-vs-manipal-jaipur | lovely-professional-university-online | ₹1,61,600 - ₹2,00,000 | ₹1,61,000 - ₹2,00,000 |
+| chandigarh-vs-lpu | chandigarh-university-online | ₹1,65,000 - ₹2,20,000 | ₹1,65,000 - ₹1,80,000 |
+| chandigarh-vs-lpu | lovely-professional-university-online | ₹1,61,600 - ₹2,00,000 | ₹1,61,000 - ₹2,00,000 |
+| amity-vs-chandigarh | chandigarh-university-online | ₹1,65,000 - ₹2,20,000 | ₹1,65,000 - ₹1,80,000 |
+| manipal-jaipur-vs-chandigarh | chandigarh-university-online | ₹1,65,000 - ₹2,20,000 | ₹1,65,000 - ₹1,80,000 |
+| jain-vs-lpu | lovely-professional-university-online | ₹1,61,600 - ₹2,00,000 | ₹1,61,000 - ₹2,00,000 |
+| symbiosis-vs-nmims-bba | symbiosis-university-online | (row hidden) | ₹1,65,000 |
+| symbiosis-vs-nmims-bba | nmims-online | (row hidden) | ₹1,41,000 |
+| amity-vs-lpu-mca | lovely-professional-university-online | ₹1,29,600 | ₹1,08,000 |
+| lpu-vs-chandigarh-mca | lovely-professional-university-online | ₹1,29,600 | ₹1,08,000 |
+| amity-vs-jain-mca | jain-university-online | ₹1,30,000 - ₹1,60,000 | From ₹1,30,000 |
+| amity-vs-lpu-bba | amity-university-online | (row hidden) | ₹1,99,000 |
+| amity-vs-lpu-bba | lovely-professional-university-online | (row hidden) | Contact our counsellor for current fee details |
+| sharda-vs-galgotias-bba | sharda-university-online | (row hidden) | ₹1,35,000 |
+| sharda-vs-galgotias-bba | galgotias-university-online | (row hidden) | ₹77,200 |
+| ignou-vs-lpu | lovely-professional-university-online | ₹1,61,600 - ₹2,00,000 | ₹1,61,000 - ₹2,00,000 |
+
+17 of 52 cells changed
+
+### Compare pair table (Per Semester row, MBA pairs only)
+
+| Pair | University | Before | After |
+|---|---|---|---|
+| chandigarh-vs-lpu | chandigarh-university-online | ₹55,000/sem | ₹45,000/sem |
+| amity-vs-chandigarh | chandigarh-university-online | ₹55,000/sem | ₹45,000/sem |
+| manipal-jaipur-vs-chandigarh | chandigarh-university-online | ₹55,000/sem | ₹45,000/sem |
+
+3 of 32 cells changed
+
+### /programs/{prog} Min Fee stat (unreachable: no visible change)
+
+Correction to the first pass: this stat sits in the final fallback branch of app/programs/[...slug]/page.tsx, which no
+URL reaches. Every /programs URL is served by the MBA hub, the generic hub, or one of the two spec branches first.
+Neither production nor the local build renders "Min Fee" on /programs/mba, /ma, /bsc, /mba/finance or
+/bba/marketing. The code now uses getDisplayFee anyway. The table shows what the block would print if reached.
+
+
+| Programme | Before | After | Lowest getDisplayFee university | Unis with feeMin 0 |
+|---|---|---|---|---|
+| MBA | ₹0 | ₹20K | university-of-madras-online | 15 |
+| MCA | ₹0 | ₹50K | yenepoya-university-online | 9 |
+| BBA | ₹0 | ₹15K | sathyabama-university-online | 9 |
+| BCA | ₹0 | ₹12K | gujarat-university-online | 6 |
+| B.Com | ₹0 | ₹12K | gujarat-university-online | 6 |
+| M.Com | ₹0 | ₹12K | aligarh-muslim-university-online | 8 |
+| MA | ₹0 | ₹18K | ignou-online | 7 |
+| BA | ₹0 | ₹10K | ignou-online | 2 |
+| MSc | ₹0 | ₹18K | gujarat-university-online | 1 |
+| BSc | ₹60K | ₹1.5L | symbiosis-university-online | 0 |
 
 ## 5. Weakly linked and deep pages
 

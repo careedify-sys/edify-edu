@@ -1,5 +1,20 @@
 # Fix log
 
+## 2026-10-27 · Tech-health decisions: DY Patil verify link, visible fees via getDisplayFee, Course startDate removed
+
+Rishi's calls on audits/tech-health-2026-10-27.md.
+1. `dy-patil-navi-mumbai-online` maps to `dy-patil-university-online` in verify-slug-overrides.json, as a manual entry
+   with provenance (7 Aug audit: that record is Navi Mumbai, the Pune one is dr-dy-patil-vidyapeeth-online). Not a
+   name match, so it is recorded separately. BS Abdur Rahman and Shobhit stay unlinked pending confirmation.
+2. /programs "Min Fee" read the raw u.feeMin minimum (₹0 on nine programmes). Now the lowest getDisplayFee value or the
+   counsellor line, but the block is in an unreachable fallback branch and renders on no page, live or local. The first
+   report called it a visible bypass; it is not.
+3. The compare pair table read u.feeMin/feeMax for MBA and programFees for the rest, bypassing getDisplayFee, so it
+   could disagree with the hub it links: 17 Total Fees cells and 3 Per Semester cells changed. Suppressed fees show
+   the counsellor line, never a number. Before/after values are in the audit report.
+4. Course `startDate` was a hardcoded `{year}-07-01`: unsourced, and already in the past. Removed with no replacement.
+5. The "check available scholarships" link goes to /coupons, not the /compare that the old redirect ended at.
+
 ## 2026-10-27 · Semrush site audit: Course schema, dead and redirecting links, email, blog related links
 
 Semrush crawl of 27 Oct (4,383 pages, 2 healthy). Full numbers and the weak-page list: audits/tech-health-2026-10-27.md.

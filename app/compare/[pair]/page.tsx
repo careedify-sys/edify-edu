@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
 import { getUniversityById, type Program } from '@/lib/data'
 import { getProgramSchemaOffer } from '@/lib/seo/program-schema'
+import { getDisplayFee } from '@/lib/fees'
 import { getTitleName } from '@/lib/seo-title'
 import { formatINR } from '@/lib/format'
 import { PAIRS, PAIR_SLUGS, type PairSlug } from './pairs'
@@ -20,19 +21,22 @@ export function generateStaticParams() {
   return PAIR_SLUGS.map(pair => ({ pair }))
 }
 
-function getProgramFee(uni: ReturnType<typeof getUniversityById>, program: string): { min: number; max: number } | null {
+// Visible fees go through getDisplayFee like every other fee on the site.
+// This used to read u.feeMin/u.feeMax for MBA (MBA-led, unvetted) and
+// programFees for the rest, so the table could disagree with the hub it links.
+// null means suppressed: show FEE_CTA, never a number.
+const FEE_CTA = 'Contact our counsellor for current fee details'
+type PairFee = { min: number; max: number; from: boolean }
+function getProgramFee(uni: ReturnType<typeof getUniversityById>, program: string): PairFee | null {
   if (!uni) return null
-  if (program === 'MBA') return { min: uni.feeMin, max: uni.feeMax }
-  const pd = (uni.programDetails as Record<string, unknown> | undefined)?.[program] as { fees?: string } | undefined
-  if (!pd) return null
-  const pf = uni.programFees as Record<string, { fee: number; feeMax?: number }> | undefined
-  const key = program.toLowerCase()
-  if (pf?.[key]) {
-    const { fee, feeMax } = pf[key]
-    return { min: fee, max: typeof feeMax === 'number' && feeMax > fee ? feeMax : fee }
-  }
-  return null
+  const f = getDisplayFee(uni, program as Program)
+  if (!f.ok || f.min == null) return null
+  return { min: f.min, max: f.max ?? f.min, from: f.mode === 'from' }
 }
+const feeText = (f: PairFee | null) =>
+  !f ? FEE_CTA : f.from ? `From ${formatINR(f.min)}` : f.min === f.max ? formatINR(f.min) : `${formatINR(f.min)} - ${formatINR(f.max)}`
+const semText = (f: PairFee | null) =>
+  !f ? FEE_CTA : `${f.from ? 'From ' : ''}${formatINR(Math.round(f.max / 4))}/sem`
 
 function nirfDisplay(uni: NonNullable<ReturnType<typeof getUniversityById>>, program: string): string {
   if (program === 'MBA' || program === 'BBA') {
@@ -175,7 +179,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
           <p className="text-sm text-slate-700">
             {nameA} ({uA.naac}, NIRF {nirfDisplay(uA, prog)}) and {nameB} ({uB.naac}, NIRF {nirfDisplay(uB, prog)}) are
             both UGC-DEB approved for online {prog}.
-            {feeA && feeB ? ` ${nameA} costs ${formatINR(feeA.min)}${feeA.min !== feeA.max ? ` to ${formatINR(feeA.max)}` : ''}; ${nameB} costs ${formatINR(feeB.min)}${feeB.min !== feeB.max ? ` to ${formatINR(feeB.max)}` : ''}.` : ''}
+            {feeA && feeB ? ` ${nameA} costs ${feeA.from ? 'from ' : ''}${formatINR(feeA.min)}${feeA.min !== feeA.max ? ` to ${formatINR(feeA.max)}` : ''}; ${nameB} costs ${feeB.from ? 'from ' : ''}${formatINR(feeB.min)}${feeB.min !== feeB.max ? ` to ${formatINR(feeB.max)}` : ''}.` : ''}
             {' '}Scroll down for a side-by-side breakdown and our pick-by-profile recommendation.
           </p>
         </div>
@@ -191,11 +195,9 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
               { label: 'NAAC Grade', vA: uA.naac, vB: uB.naac },
               { label: 'NIRF Rank', vA: nirfDisplay(uA, prog), vB: nirfDisplay(uB, prog) },
               { label: 'UGC-DEB', vA: uA.ugc ? 'Approved' : 'Not listed', vB: uB.ugc ? 'Approved' : 'Not listed' },
-              ...(feeA && feeB ? [
-                { label: 'Total Fees', vA: feeA.min === feeA.max ? formatINR(feeA.min) : `${formatINR(feeA.min)} - ${formatINR(feeA.max)}`, vB: feeB.min === feeB.max ? formatINR(feeB.min) : `${formatINR(feeB.min)} - ${formatINR(feeB.max)}` },
-              ] : []),
+              { label: 'Total Fees', vA: feeText(feeA), vB: feeText(feeB) },
               ...(prog === 'MBA' ? [
-                { label: 'Per Semester (x4)', vA: formatINR(Math.round(uA.feeMax / 4)) + '/sem', vB: formatINR(Math.round(uB.feeMax / 4)) + '/sem' },
+                { label: 'Per Semester (x4)', vA: semText(feeA), vB: semText(feeB) },
                 { label: 'EMI from', vA: uA.emiFrom > 0 ? formatINR(uA.emiFrom) + '/mo' : 'On request', vB: uB.emiFrom > 0 ? formatINR(uB.emiFrom) + '/mo' : 'On request' },
               ] : []),
               { label: 'Duration', vA: pdA?.duration || (prog === 'MBA' || prog === 'MCA' ? '2 Years' : '3 Years'), vB: pdB?.duration || (prog === 'MBA' || prog === 'MCA' ? '2 Years' : '3 Years') },
