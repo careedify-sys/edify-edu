@@ -1,5 +1,12 @@
 # Fix log
 
+## 2026-10-27 · Amity WASC (USA) and QAA (UK) restored, sourced to the official portal
+
+On 26 Oct these were removed from the Amity MBA intro and an MBA spec FAQ because lib/data.ts approvals did not list
+them. amityonline.com shows "WASC Accreditation (USA)" and "QAA (UK) Accreditation" badges and an FAQ claiming WASC,
+and university portals are an approved source. Restored at Rishi's request, worded as what Amity lists on its
+portal; added both to Amity's approvals in lib/data.ts. Blog mentions of "Amity WASC+QAA" are left as they are.
+
 ## 2026-10-27 · NIRF 2025 checked at the source; Mumbai and Shivaji blog ranks fixed
 
 Read the NIRF 2025 University and Management tables on nirfindia.org (tbl_overall, plus the 101-150 and 151-200
