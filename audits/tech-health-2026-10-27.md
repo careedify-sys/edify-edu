@@ -163,23 +163,43 @@ and blog `about: Course` (nested, no offers or instance) may still be flagged by
   `/universities/shobhit-university-online`. Same situation: hidden until confirmed.
 - **LPU MCA: two unverified figures.** `programFees.mca` says ₹1,29,600 (comment: read from
   lpuonline.com/master-of-computer-application). `programDetails.MCA.fees` says "₹1.08L". Neither is verified, so
-  the compare table shows the counsellor line. The other drift pairs get the same treatment: amity/mca,
-  galgotias/mca, ignou/bca, ignou/mca. Amity MCA's two sources actually agree (₹1,99,000 and "₹1.99L"), so that one
-  may only need the portal check to come off the list. Add the portal figure to `feeBreakdown` and remove the pair
-  from `DRIFT_PAIRS` in lib/fees.ts to restore a number.
-- **Unverified numbers still in the compare table:** NMIMS BBA ₹1,41,000, Sharda BBA ₹1,35,000, Galgotias BBA
-  ₹77,200, Jain MCA from ₹1,30,000. Each is exact rupees from a numeric field, but none has a verified record.
+  the compare table shows the counsellor line. Same treatment for galgotias/mca, ignou/bca and ignou/mca. Add the
+  portal figure to `feeBreakdown` and remove the pair from `DRIFT_PAIRS` in lib/fees.ts to restore a number.
+- **Amity MCA: three conflicting figures, counsellor line kept.** Current data says ₹1,99,000 (`programFees.mca`) and
+  "₹1.99L" (`pd.fees`). The Aug 2026 audit recorded `pd.fees` as ₹1.7L, and a blog figure of ₹42,500, likely per
+  semester (× 4 = ₹1,70,000). That is ₹1,70,000 against ₹1,99,000; needs a portal check.
+- **LPU MBA tiers carry an expiry.** The source widget stamped both the lump-sum and semester-wise figures (₹1,46,240
+  and ₹1,61,600) "valid until 14 Aug 2026". The values stay in `feeBreakdown` as instructed. Recheck the portal.
+- **Unverified numbers still in the compare table:** NMIMS BBA ₹1,41,000, Sharda BBA ₹1,35,000, Jain MCA from
+  ₹1,30,000. Each is exact rupees from a numeric field, but none has a verified record.
 - **Five MBA ranges with no label**, unchanged from origin/main: NMIMS ₹1,96,000–₹2,20,000, Symbiosis
   ₹3,15,000–₹3,70,000, Amity ₹2,07,000–₹2,25,000, Amrita ₹1,76,000–₹2,60,000, Jain ₹1,60,000–₹2,98,000. If any is
   list vs discount rather than tiers, it breaks your rule 3 and needs a `feeBreakdown` entry.
+- **Uttaranchal ranges are list vs scholarship, unlabelled.** Every Uttaranchal range runs from the lowest payable
+  figure to the before-scholarship figure (MBA ₹99,600–₹1,48,000). It prints unlabelled in the MBA spec-hub table and
+  the hub's fee box. The values are verified; the label is missing. A `feeBreakdown` from the L4054-L4058 chart would
+  fix it. Not done this round because it wasn't asked.
+- **Hub hero and specialisation cards print the compact form.** They show "₹99.6K-₹1.48L" even where exact rupees
+  are stored, because UniHero and UniProgramBody's specialisation grid use getDisplayFee's `compact`. FeeBreakdown
+  on the same page prints the exact range. This is hub-wide display, not titles or schema; say if it should move to
+  exact rupees.
+- **UniversityCard prints raw slim fees, abbreviated.** On /programs/mba and the MBA spec hubs, the card shows
+  `formatFeeSlim(u.feeMin) – formatFeeSlim(u.feeMax)` from lib/data-slim.ts. It never goes through getDisplayFee or
+  getExactFee. LPU's card reads "₹1.6L – ₹2.0L", unlabelled, and Uttaranchal's reads "₹100K – ₹1.5L", rounding
+  ₹99,600 up. Same fix as the tables: pass a getExactFee string as `programFee`. Not done this round.
+- **Uttaranchal is missing from every MBA spec hub**, because its lib/data-slim.ts record has no `mbaSpecs`.
 - **Spec-hub fee floors are single unverified records.** ₹52,500 is DDU Gorakhpur. ₹67,000 is Mangalayatan, which
   carries a verify advisory. ₹75,000 is Madurai Kamaraj (feeMin only, no pd.fees). ₹80,200 is Galgotias. The live
   ₹28K floor they replace was worse, a regex fragment.
+- **Hand-written compare FAQ answers repeat unlabelled ranges** (app/compare/[pair]/pairs.ts). "LPU costs Rs
+  1,61,600 to Rs 2,00,000" appears at L146, L160, L174, L216 and L394, and "CU costs Rs 1,65,000 to Rs 2,20,000" at
+  L174, L188 and L202. The table on the same pages now labels list vs discount, so the answers disagree with it. L146
+  and L188 also give "saves Rs X-Y" figures derived from those ranges. Needs a copy rewrite, not done here.
+- **The same claim survives outside the FAQ.** The spec-hub tip box (components/MBASpecHubClient.tsx L236) says
+  "One-time payment discounts can save Rs 10,000-20,000." The /programs/mba FAQ (components/MBAHubClient.tsx L51) has a
+  hardcoded "Rs 66,000 (IGNOU) to Rs 3,70,000" range. Neither was in scope.
 - **Titles and Course schema still use getDisplayFee's abbreviated values.** The LPU MBA hub's schema offer is
-  161000–200000, and its title shows "₹1.61L-₹2L". This round fixed tables only, as asked. The schema should move to
-  getExactFee too.
-- **The MBA spec-hub FAQ still says** "Most programmes fall between Rs 1,50,000 and Rs 2,50,000. One-time payment
-  discounts of Rs 10,000-20,000 are common." Neither sentence has a source.
+  161000–200000, and its title shows "₹1.61L-₹2L". Held for a later branch, as instructed.
 
 ## Compare and spec-hub fees: exact rupees (round 3, 27 Oct 2026)
 
@@ -212,38 +232,39 @@ spec hubs:
 
 Line numbers are lib/data.ts on this branch after the rebase onto origin/main (3a13145). Status key:
 
-- **OK**: matches a verified value (your 27 Oct message, or the backfill worklist's VERIFIED_TOTAL_FEE), or no
-  number is shown.
+- **OK**: matches a verified value (your 27 Oct message, the backfill worklist, or the round-4 verifications:
+  Amity BBA 7 Aug, Galgotias BBA 4 Aug), or no number is shown.
 - **WRONG**: contradicts a verified value.
 - **UNVERIFIED**: no verified record exists for that university and programme.
 
 | Pair | University | Field | origin/main | c83b505 | c83b505 came from (lib/data.ts) | c83b505 status | Now | Now comes from | Now status |
 |---|---|---|---|---|---|---|---|---|---|
-| amity-vs-lpu | lovely-professional-university-online | Total Fees | ₹1,61,600 - ₹2,00,000 | ₹1,61,000 - ₹2,00,000 | programDetails.MBA.fees "₹1.61L–₹2.00L" @ L549 via getDisplayFee | WRONG | ₹2,00,000 list; ₹1,46,240–₹1,61,600 by payment plan (lump sum to semester-wise) | feeBreakdown.mba @ L506 | OK |
-| lpu-vs-manipal-jaipur | lovely-professional-university-online | Total Fees | ₹1,61,600 - ₹2,00,000 | ₹1,61,000 - ₹2,00,000 | programDetails.MBA.fees "₹1.61L–₹2.00L" @ L549 via getDisplayFee | WRONG | ₹2,00,000 list; ₹1,46,240–₹1,61,600 by payment plan (lump sum to semester-wise) | feeBreakdown.mba @ L506 | OK |
-| chandigarh-vs-lpu | chandigarh-university-online | Total Fees | ₹1,65,000 - ₹2,20,000 | ₹1,65,000 - ₹1,80,000 | programDetails.MBA.fees "₹1.65L–₹1.80L" @ L2483 via getDisplayFee | WRONG | ₹2,20,000 list; ₹1,65,000–₹1,80,400 after early-bird | feeBreakdown.mba @ L2427 | OK |
+| amity-vs-lpu | lovely-professional-university-online | Total Fees | ₹1,61,600 - ₹2,00,000 | ₹1,61,000 - ₹2,00,000 | programDetails.MBA.fees "₹1.61L–₹2.00L" @ L555 via getDisplayFee | WRONG | ₹2,00,000 list; ₹1,46,240–₹1,61,600 by payment plan (lump sum to semester-wise) | feeBreakdown.mba @ L512 | OK |
+| lpu-vs-manipal-jaipur | lovely-professional-university-online | Total Fees | ₹1,61,600 - ₹2,00,000 | ₹1,61,000 - ₹2,00,000 | programDetails.MBA.fees "₹1.61L–₹2.00L" @ L555 via getDisplayFee | WRONG | ₹2,00,000 list; ₹1,46,240–₹1,61,600 by payment plan (lump sum to semester-wise) | feeBreakdown.mba @ L512 | OK |
+| chandigarh-vs-lpu | chandigarh-university-online | Total Fees | ₹1,65,000 - ₹2,20,000 | ₹1,65,000 - ₹1,80,000 | programDetails.MBA.fees "₹1.65L–₹1.80L" @ L2489 via getDisplayFee | WRONG | ₹2,20,000 list; ₹1,65,000–₹1,80,400 after early-bird | feeBreakdown.mba @ L2433 | OK |
 | chandigarh-vs-lpu | chandigarh-university-online | Per Semester | ₹55,000/sem | ₹45,000/sem | pd.fees max ÷ 4 (derived) | WRONG | (blank: not published) | none | OK (nothing shown) |
-| chandigarh-vs-lpu | lovely-professional-university-online | Total Fees | ₹1,61,600 - ₹2,00,000 | ₹1,61,000 - ₹2,00,000 | programDetails.MBA.fees "₹1.61L–₹2.00L" @ L549 via getDisplayFee | WRONG | ₹2,00,000 list; ₹1,46,240–₹1,61,600 by payment plan (lump sum to semester-wise) | feeBreakdown.mba @ L506 | OK |
-| amity-vs-chandigarh | chandigarh-university-online | Total Fees | ₹1,65,000 - ₹2,20,000 | ₹1,65,000 - ₹1,80,000 | programDetails.MBA.fees "₹1.65L–₹1.80L" @ L2483 via getDisplayFee | WRONG | ₹2,20,000 list; ₹1,65,000–₹1,80,400 after early-bird | feeBreakdown.mba @ L2427 | OK |
+| chandigarh-vs-lpu | lovely-professional-university-online | Total Fees | ₹1,61,600 - ₹2,00,000 | ₹1,61,000 - ₹2,00,000 | programDetails.MBA.fees "₹1.61L–₹2.00L" @ L555 via getDisplayFee | WRONG | ₹2,00,000 list; ₹1,46,240–₹1,61,600 by payment plan (lump sum to semester-wise) | feeBreakdown.mba @ L512 | OK |
+| amity-vs-chandigarh | chandigarh-university-online | Total Fees | ₹1,65,000 - ₹2,20,000 | ₹1,65,000 - ₹1,80,000 | programDetails.MBA.fees "₹1.65L–₹1.80L" @ L2489 via getDisplayFee | WRONG | ₹2,20,000 list; ₹1,65,000–₹1,80,400 after early-bird | feeBreakdown.mba @ L2433 | OK |
 | amity-vs-chandigarh | chandigarh-university-online | Per Semester | ₹55,000/sem | ₹45,000/sem | pd.fees max ÷ 4 (derived) | WRONG | (blank: not published) | none | OK (nothing shown) |
-| manipal-jaipur-vs-chandigarh | chandigarh-university-online | Total Fees | ₹1,65,000 - ₹2,20,000 | ₹1,65,000 - ₹1,80,000 | programDetails.MBA.fees "₹1.65L–₹1.80L" @ L2483 via getDisplayFee | WRONG | ₹2,20,000 list; ₹1,65,000–₹1,80,400 after early-bird | feeBreakdown.mba @ L2427 | OK |
+| manipal-jaipur-vs-chandigarh | chandigarh-university-online | Total Fees | ₹1,65,000 - ₹2,20,000 | ₹1,65,000 - ₹1,80,000 | programDetails.MBA.fees "₹1.65L–₹1.80L" @ L2489 via getDisplayFee | WRONG | ₹2,20,000 list; ₹1,65,000–₹1,80,400 after early-bird | feeBreakdown.mba @ L2433 | OK |
 | manipal-jaipur-vs-chandigarh | chandigarh-university-online | Per Semester | ₹55,000/sem | ₹45,000/sem | pd.fees max ÷ 4 (derived) | WRONG | (blank: not published) | none | OK (nothing shown) |
-| jain-vs-lpu | lovely-professional-university-online | Total Fees | ₹1,61,600 - ₹2,00,000 | ₹1,61,000 - ₹2,00,000 | programDetails.MBA.fees "₹1.61L–₹2.00L" @ L549 via getDisplayFee | WRONG | ₹2,00,000 list; ₹1,46,240–₹1,61,600 by payment plan (lump sum to semester-wise) | feeBreakdown.mba @ L506 | OK |
-| symbiosis-vs-nmims-bba | symbiosis-university-online | Total Fees | (row hidden) | ₹1,65,000 | programDetails.BBA.fees "₹1,65,000" @ L1740 via getDisplayFee | OK | ₹1,65,000 | programDetails.BBA.fees @ L1740 | OK |
-| symbiosis-vs-nmims-bba | nmims-online | Total Fees | (row hidden) | ₹1,41,000 | programDetails.BBA.fees "₹1,41,000" @ L2224 via getDisplayFee | UNVERIFIED | ₹1,41,000 | programDetails.BBA.fees @ L2224 | UNVERIFIED |
-| amity-vs-lpu-mca | lovely-professional-university-online | Total Fees | ₹1,29,600 | ₹1,08,000 | programDetails.MCA.fees "₹1.08L" @ L558 via getDisplayFee | UNVERIFIED | Contact our counsellor for current fee details | none (counsellor line) | OK (no number shown) |
-| lpu-vs-chandigarh-mca | lovely-professional-university-online | Total Fees | ₹1,29,600 | ₹1,08,000 | programDetails.MCA.fees "₹1.08L" @ L558 via getDisplayFee | UNVERIFIED | Contact our counsellor for current fee details | none (counsellor line) | OK (no number shown) |
-| amity-vs-jain-mca | jain-university-online | Total Fees | ₹1,30,000 - ₹1,60,000 | From ₹1,30,000 | programDetails.MCA.fees "₹1.3L" @ L338 via getDisplayFee | UNVERIFIED | From ₹1,30,000 | programFees.mca @ L272 | UNVERIFIED |
-| amity-vs-lpu-bba | amity-university-online | Total Fees | (row hidden) | ₹1,99,000 | programDetails.BBA.fees "₹1.99L" @ L463 via getDisplayFee | UNVERIFIED | Contact our counsellor for current fee details | none (counsellor line) | OK (no number shown) |
+| jain-vs-lpu | lovely-professional-university-online | Total Fees | ₹1,61,600 - ₹2,00,000 | ₹1,61,000 - ₹2,00,000 | programDetails.MBA.fees "₹1.61L–₹2.00L" @ L555 via getDisplayFee | WRONG | ₹2,00,000 list; ₹1,46,240–₹1,61,600 by payment plan (lump sum to semester-wise) | feeBreakdown.mba @ L512 | OK |
+| symbiosis-vs-nmims-bba | symbiosis-university-online | Total Fees | (row hidden) | ₹1,65,000 | programDetails.BBA.fees "₹1,65,000" @ L1746 via getDisplayFee | OK | ₹1,65,000 | programDetails.BBA.fees @ L1746 | OK |
+| symbiosis-vs-nmims-bba | nmims-online | Total Fees | (row hidden) | ₹1,41,000 | programDetails.BBA.fees "₹1,41,000" @ L2230 via getDisplayFee | UNVERIFIED | ₹1,41,000 | programDetails.BBA.fees @ L2230 | UNVERIFIED |
+| amity-vs-lpu-mca | lovely-professional-university-online | Total Fees | ₹1,29,600 | ₹1,08,000 | programDetails.MCA.fees "₹1.08L" @ L564 via getDisplayFee | UNVERIFIED | Contact our counsellor for current fee details | none (counsellor line) | OK (no number shown) |
+| lpu-vs-chandigarh-mca | lovely-professional-university-online | Total Fees | ₹1,29,600 | ₹1,08,000 | programDetails.MCA.fees "₹1.08L" @ L564 via getDisplayFee | UNVERIFIED | Contact our counsellor for current fee details | none (counsellor line) | OK (no number shown) |
+| amity-vs-jain-mca | jain-university-online | Total Fees | ₹1,30,000 - ₹1,60,000 | From ₹1,30,000 | programDetails.MCA.fees "₹1.3L" @ L341 via getDisplayFee | UNVERIFIED | From ₹1,30,000 | programFees.mca @ L275 | UNVERIFIED |
+| amity-vs-lpu-bba | amity-university-online | Total Fees | (row hidden) | ₹1,99,000 | programDetails.BBA.fees "₹1.99L" @ L469 via getDisplayFee | OK | ₹1,75,120 one-time; ₹1,99,000 semester-wise total | feeBreakdown.bba @ L396 | OK |
 | amity-vs-lpu-bba | lovely-professional-university-online | Total Fees | (row hidden) | Contact our counsellor for current fee details | getDisplayFee suppressed | OK (no number shown) | Contact our counsellor for current fee details | none (counsellor line) | OK (no number shown) |
-| sharda-vs-galgotias-bba | sharda-university-online | Total Fees | (row hidden) | ₹1,35,000 | programDetails.BBA.fees "₹1,35,000" @ L1991 via getDisplayFee | UNVERIFIED | ₹1,35,000 | programDetails.BBA.fees @ L1991 | UNVERIFIED |
-| sharda-vs-galgotias-bba | galgotias-university-online | Total Fees | (row hidden) | ₹77,200 | programDetails.BBA.fees "₹77,200" @ L1545 via getDisplayFee | UNVERIFIED | ₹77,200 | programFees.bba @ L1495 | UNVERIFIED |
-| ignou-vs-lpu | lovely-professional-university-online | Total Fees | ₹1,61,600 - ₹2,00,000 | ₹1,61,000 - ₹2,00,000 | programDetails.MBA.fees "₹1.61L–₹2.00L" @ L549 via getDisplayFee | WRONG | ₹2,00,000 list; ₹1,46,240–₹1,61,600 by payment plan (lump sum to semester-wise) | feeBreakdown.mba @ L506 | OK |
+| sharda-vs-galgotias-bba | sharda-university-online | Total Fees | (row hidden) | ₹1,35,000 | programDetails.BBA.fees "₹1,35,000" @ L1997 via getDisplayFee | UNVERIFIED | ₹1,35,000 | programDetails.BBA.fees @ L1997 | UNVERIFIED |
+| sharda-vs-galgotias-bba | galgotias-university-online | Total Fees | (row hidden) | ₹77,200 | programDetails.BBA.fees "₹77,200" @ L1551 via getDisplayFee | OK | ₹77,200 | programFees.bba @ L1501 | OK |
+| ignou-vs-lpu | lovely-professional-university-online | Total Fees | ₹1,61,600 - ₹2,00,000 | ₹1,61,000 - ₹2,00,000 | programDetails.MBA.fees "₹1.61L–₹2.00L" @ L555 via getDisplayFee | WRONG | ₹2,00,000 list; ₹1,46,240–₹1,61,600 by payment plan (lump sum to semester-wise) | feeBreakdown.mba @ L512 | OK |
 
-Summary: of the 20 c83b505 values, 11 were WRONG (LPU MBA ×5, Chandigarh MBA total ×3, Chandigarh per semester
-×3), 2 OK (Symbiosis BBA, and LPU BBA as a counsellor line), and 7 UNVERIFIED. Now: every WRONG value is replaced by a
-verified, labelled value or by nothing. LPU MCA and Amity BBA show the counsellor line. Four cells stay UNVERIFIED
-numbers: NMIMS BBA ₹1,41,000, Jain MCA from ₹1,30,000, Sharda BBA ₹1,35,000, Galgotias BBA ₹77,200.
+Summary (updated in round 4): of the 20 c83b505 values, 11 were WRONG (LPU MBA ×5, Chandigarh MBA total ×3,
+Chandigarh per semester ×3). 4 were OK: Symbiosis BBA, Galgotias BBA, Amity BBA (₹1,99,000 is its semester-wise
+total) and LPU BBA as a counsellor line. 5 were UNVERIFIED. Now every WRONG value is replaced by a verified,
+labelled value or by nothing, and Amity BBA shows both payment modes. LPU MCA shows the counsellor line. Three cells
+stay UNVERIFIED numbers: NMIMS BBA ₹1,41,000, Jain MCA from ₹1,30,000, Sharda BBA ₹1,35,000.
 
 ### Other compare cells that changed in this round
 
@@ -286,6 +307,92 @@ vs this build:
 
 This sits in a fallback branch that no URL reaches; neither production nor the build renders it. It now reads
 getDisplayFee, but no visible value changed. The table from round 2 is dropped as moot.
+
+## Round 4: review of 34fbd77 (27 Oct 2026)
+
+### MUJ: kept, figures add up
+
+The breakdown comes from Rishi's own entry in lib/data.ts. The Aug 2026 figure (₹1,53,000, 10% merit) is
+superseded. Source lines:
+
+```
+L1356:     feeVerifiedOn: '2026-10-26',
+L1357:     // January 2027 fee chart, owner supplied 2026-10-26. It replaces the
+L1358:     // 2026-10-07 panel (MBA Rs 1,80,000 list, Rs 1,53,000 after 15 percent).
+L1359:     // Full fee, semester fee and EMI; Rs 500 application fee is additional.
+L1360:     //   MBA   1,84,000  sem 46,000  EMI 7,667; 15% discount 1,56,400 / 39,100 / 6,517
+L1361:     //   MCA   1,64,000  sem 41,000  EMI 6,833; 10% discount 1,47,600 / 36,900 / 6,150
+```
+
+| Programme | Figure | Check | Result |
+|---|---|---|---|
+| MBA (L1360, duration "2 Years (4 Semesters)" L1416) | list 1,84,000, sem 46,000 | 46,000 × 4 = 1,84,000 | adds up |
+| MBA | 15% net 1,56,400, sem 39,100 | 39,100 × 4 = 1,56,400; 1,84,000 × 0.85 = 1,56,400 | adds up |
+| MCA (L1361, duration "2 Yrs" L1425) | list 1,64,000, sem 41,000 | 41,000 × 4 = 1,64,000 | adds up |
+| MCA | 10% net 1,47,600, sem 36,900 | 36,900 × 4 = 1,47,600; 1,64,000 × 0.90 = 1,47,600 | adds up |
+
+The 15% figures and the ₹46,000 semester belong to the MBA. MCA is 10% and ₹41,000. Nothing failed, so no
+programme was held. The `feeBreakdown` source now reads "Rishi, Jan 2027 fee chart, entered 2026-10-26".
+
+### Uttaranchal: fee fields
+
+All stored in full rupees, none abbreviated:
+
+```
+L4051:     feeVerifiedOn: '2026-10-26',
+L4052:     // January 2027 fee chart, owner supplied 2026-10-26. Before scholarship /
+L4053:     // after scholarship / semester / annual / one-time (full payment):
+L4054:     //   MBA 1,48,000 / 1,03,600 / 25,900 / 49,800 / 99,600   (30% scholarship)
+L4055:     //   MCA 1,20,000 / 1,02,000 / 25,500 / 49,000 / 98,000   (15%)
+L4056:     //   BBA 1,20,000 / 1,08,000 / 18,000 / 34,000 / 1,02,000 (10%)
+L4057:     //   BCA 1,20,000 / 1,08,000 / 18,000 / 34,000 / 1,02,000 (10%)
+L4058:     //   BA    75,000 /   67,500 / 11,250 / 20,500 /   61,500 (10%)
+L4063:     programFees: { mba: { fee: 99600, feeMax: 148000 }, mca: { fee: 102000, feeMax: 120000 }, bba: { fee: 108000, feeMax: 120000 }, bca: { fee: 108000, feeMax: 120000 } },
+L4077:     feeMin: 99600,
+L4078:     feeMax: 148000,
+L4092:         fees: '₹99,600–₹1,48,000',      (MBA)
+L4102:         fees: '₹1,02,000–₹1,20,000',    (MCA)
+L4116:         fees: '₹1,08,000–₹1,20,000',    (BBA)
+L4129:         fees: '₹1,08,000–₹1,20,000',    (BCA)
+L4141:         fees: '₹67,500–₹75,000',        (BA)
+```
+
+Semester × semesters = after-scholarship total in every row: MBA 25,900 × 4 = 1,03,600; MCA 25,500 × 4 = 1,02,000;
+BBA/BCA 18,000 × 6 = 1,08,000; BA 11,250 × 6 = 67,500.
+
+Where they render:
+
+| Surface | Form | Example (MBA) |
+|---|---|---|
+| Hub fee box (FeeBreakdown, `range`) | exact | ₹99,600 to ₹1,48,000 |
+| Hub hero (UniHero) and specialisation cards (`compact`) | **abbreviated** | ₹99.6K-₹1.48L |
+| MBA spec hubs (/programs/mba/{spec}) | **not listed at all**: UU has no `mbaSpecs` in lib/data-slim.ts | n/a |
+| /programs/mba card grid (UniversityCard) | **abbreviated and rounded**, from raw slim feeMin/feeMax | ₹100K – ₹1.5L |
+| Compare pairs | not in any pair | n/a |
+
+Where getExactFee runs, the output is exact (it would print ₹99,600–₹1,48,000). Uttaranchal just never reaches those
+surfaces.
+
+No stored value is abbreviated. The abbreviation happens at render time, in the `compact` surfaces and in
+UniversityCard. All of them are in NEEDS_RISHI.
+
+### Fee verification status (round 4)
+
+| Fee | Status | Source |
+|---|---|---|
+| MUJ MBA, MCA | VERIFIED | Rishi, portal update, late Oct 2026 (Jan 2027 chart, entered 2026-10-26) |
+| Uttaranchal MBA, MCA, BBA, BCA, BA | VERIFIED | Rishi, portal update, late Oct 2026 (Jan 2027 chart, entered 2026-10-26) |
+| LPU MBA | VERIFIED (recheck: stamped valid until 14 Aug 2026) | Rishi, portal, Aug 2026 |
+| Chandigarh MBA | VERIFIED | Rishi, portal, Aug 2026 |
+| Amity BBA ₹1,75,120 one-time; ₹1,99,000 semester-wise | VERIFIED | Rishi, portal, 2026-08-07. Now a `feeBreakdown` with payment-mode labels |
+| Galgotias BBA ₹77,200 | VERIFIED | Official portal, 2026-08-04: yearly tuition ₹21,000, exam, registration ₹1,200, alumni ₹1,000 |
+| Symbiosis BBA ₹1,65,000 | VERIFIED | Backfill worklist, 2026-08-21 |
+
+### Spec-hub FAQ
+
+Removed "Most programmes fall between Rs 1,50,000 and Rs 2,50,000." and "One-time payment discounts of Rs
+10,000-20,000 are common." from lib/specFaqs.ts, with nothing put in their place. The answer now holds only the exact
+range (or the counsellor line) and the existing EMI sentence.
 
 ## 5. Weakly linked and deep pages
 

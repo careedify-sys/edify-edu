@@ -1,5 +1,18 @@
 # Fix log
 
+## 2026-10-27 · Fee review round 4: Amity BBA payment modes, MUJ/UU checked, two unsourced FAQ claims removed
+
+- Amity BBA gets a `feeBreakdown` with `modes`, a new form for payment options that are not a discount. It renders
+  "₹1,75,120 one-time; ₹1,99,000 semester-wise total" (Rishi, portal, 7 Aug 2026). Previously it showed the counsellor
+  line, because its only figure was an abbreviated "₹1.99L".
+- MUJ and Uttaranchal fees are Rishi's 26 Oct entries and current. Every semester figure times semesters equals the
+  stated total (MUJ MBA 46,000 × 4 = 1,84,000; UU MBA 25,900 × 4 = 1,03,600). MUJ breakdown source relabelled to
+  his entry.
+- The MBA spec-hub FAQ lost "most programmes fall between Rs 1,50,000 and Rs 2,50,000" and "one-time payment discounts
+  of Rs 10,000-20,000 are common". Neither had a source; nothing replaced them.
+- Found, not changed: UniHero and the specialisation cards print getDisplayFee's compact form ("₹99.6K"), even where
+  exact rupees are stored. Uttaranchal ranges are list vs scholarship and print unlabelled.
+
 ## 2026-10-27 · Compare and spec-hub fees in exact rupees, discounts labelled, no derived per-semester
 
 c83b505 printed getDisplayFee's min/max in the compare table. Those come from parsing pd.fees, which is often

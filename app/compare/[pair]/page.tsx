@@ -32,7 +32,8 @@ function getProgramFee(uni: ReturnType<typeof getUniversityById>, program: strin
 const feeText = (f: ExactFee) => formatExactFee(f) ?? FEE_COUNSELLOR_LINE
 // Short form for prose: the list price where there is a breakdown.
 const feePhrase = (f: ExactFee): string | null =>
-  f.kind === 'labelled' ? `${formatINR(f.breakdown.list)} at list price` : f.kind === 'exact' ? (formatExactFee(f) ?? '').replace(/^From/, 'from') : null
+  f.kind === 'labelled' && f.breakdown.modes?.length ? f.breakdown.modes.map(m => `${formatINR(m.amount)} ${m.label}`).join(' or ')
+  : f.kind === 'labelled' ? `${formatINR(f.breakdown.list)} at list price` : f.kind === 'exact' ? (formatExactFee(f) ?? '').replace(/^From/, 'from') : null
 
 function nirfDisplay(uni: NonNullable<ReturnType<typeof getUniversityById>>, program: string): string {
   if (program === 'MBA' || program === 'BBA') {

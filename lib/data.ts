@@ -149,6 +149,9 @@ export interface University {
     list: number
     net?: { min: number; max: number; label: string }
     perSemester?: { list: number; net?: number; netLabel?: string }
+    // Payment modes that are not a discount (one-time vs semester-wise). When
+    // set, the table prints these in order instead of "list; net".
+    modes?: { amount: number; label: string }[]
     source: string
   }>>
   /**
@@ -388,6 +391,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     feeVerifiedOn: '2026-10-06',
     uniType: 'private',
     programFees: { bca: { fee: 175000 }, mca: { fee: 199000 } },
+    // BBA: Rs 1,75,120 paid one-time, Rs 1,99,000 paid semester-wise. Payment
+    // modes, not a discount. Verified by Rishi on the portal 2026-08-07.
+    feeBreakdown: { bba: { list: 199000, modes: [{ amount: 175120, label: 'one-time' }, { amount: 199000, label: 'semester-wise total' }], source: 'Rishi, amity.edu portal, 2026-08-07' } },
     logo: '/logos/university_logos/amity-online-university-logo_2.svg',
     name: 'Amity University Online',
     abbr: 'AUO',
@@ -1362,8 +1368,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programFees: { mba: { fee: 156400, feeMax: 184000 }, mca: { fee: 147600, feeMax: 164000 }, bba: { fee: 144000 }, bca: { fee: 144000 } },
     // The same portal figures as the comment above, labelled for tables.
     feeBreakdown: {
-      mba: { list: 184000, net: { min: 156400, max: 156400, label: 'after 15% discount' }, perSemester: { list: 46000, net: 39100, netLabel: 'after 15% discount' }, source: 'officialUrl, read 2026-10-26' },
-      mca: { list: 164000, net: { min: 147600, max: 147600, label: 'after 10% discount' }, perSemester: { list: 41000, net: 36900, netLabel: 'after 10% discount' }, source: 'officialUrl, read 2026-10-26' },
+      mba: { list: 184000, net: { min: 156400, max: 156400, label: 'after 15% discount' }, perSemester: { list: 46000, net: 39100, netLabel: 'after 15% discount' }, source: 'Rishi, Jan 2027 fee chart, entered 2026-10-26' },
+      mca: { list: 164000, net: { min: 147600, max: 147600, label: 'after 10% discount' }, perSemester: { list: 41000, net: 36900, netLabel: 'after 10% discount' }, source: 'Rishi, Jan 2027 fee chart, entered 2026-10-26' },
     },
     logo: '/logos/university_logos/muj-logo.svg',
     name: 'Manipal University Jaipur (MUJ) Online',

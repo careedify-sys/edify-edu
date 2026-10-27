@@ -358,6 +358,7 @@ export function formatExactFee(e: ExactFee): string | null {
   if (e.kind === 'none') return null
   if (e.kind === 'exact') return e.from ? `From ${fmtIndianFull(e.min)}` : rupees(e.min, e.max)
   const b = e.breakdown
+  if (b.modes?.length) return b.modes.map(m => `${fmtIndianFull(m.amount)} ${m.label}`).join('; ')
   return b.net ? `${fmtIndianFull(b.list)} list; ${rupees(b.net.min, b.net.max)} ${b.net.label}` : fmtIndianFull(b.list)
 }
 
@@ -375,6 +376,11 @@ export function formatPublishedSemesterFee(e: ExactFee): string | null {
  */
 export function exactFeeBounds(e: ExactFee): { min: number; max: number } | null {
   if (e.kind === 'none') return null
+  if (e.kind === 'labelled' && e.breakdown.modes?.length) {
+    // Payment modes are all real prices, so the range spans them.
+    const a = e.breakdown.modes.map(m => m.amount)
+    return { min: Math.min(...a), max: Math.max(...a) }
+  }
   if (e.kind === 'labelled') return { min: e.breakdown.list, max: e.breakdown.list }
   return { min: e.min, max: e.max }
 }
