@@ -8652,7 +8652,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Can I do BCA after 12th arts?', a: 'Yes. BCA is open to 12th pass students from Arts stream, provided Mathematics was a subject in 12th. If you did not have Maths, some universities offer bridge courses or accept Arts students without Maths if they clear an entrance test.' },
       { q: 'Which online degree is best after 12th arts?', a: 'Online BA or online BBA from UGC-DEB approved universities like Amity Online, Chandigarh University Online, or LPU Online are the best flexible options for Arts students who want to study while working or preparing for competitive exams.' },
     ],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from Naukri.com Job Speak Q1 2026, AICTE plus UGC graduate outcome surveys 2025-26, IIM placement reports, NLU placement data, and live edifyedu.in university profiles.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <h2>Career After 12th Arts: You Have More Options Than You Think</h2>
 <p>The Arts stream is often unfairly dismissed as having "fewer opportunities." That is simply not true in 2026. Arts graduates are in demand as journalists, lawyers, civil servants, designers, HR professionals, digital marketers, content strategists, and entrepreneurs. The key is choosing the right course after 12th to set yourself up for a career you actually want.</p>
@@ -8860,7 +8860,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'What do BCA graduates miss compared to BTech graduates for MBA?', a: 'Three things. First, brand recognition: IIT BTech is more recognised than BCA at tier-1 MBA recruiters. Second, quantitative depth: BTech math is deeper, helping in finance and analytics interviews. Third, network: IIT and NIT alumni networks at IIMs are larger. Compensate by adding strong certifications (AWS Cloud, Python, SQL) and a portfolio of analytics or product projects. Direct disadvantage is small if you build the skill stack.' },
       { q: 'Which online MBA after BCA gives the best ROI in 2026?', a: 'NMIMS Online (NAAC A++, NIRF Mgmt 24, AACSB) for BFSI tech and brand. JAIN Online (NAAC A++, 20-plus specs including Business Analytics from Sem 2) for analytics. Manipal University Jaipur (Rs 1.56L to 1.84L) for affordable A+ with IT Management spec. Amity Online (19 specs including Data Science and Business Analytics) for pan-India brand. All cost Rs 1.5 to 2.25 lakh; choose by specialisation depth.' }
     ],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from Naukri.com Job Speak 2026 Q1, NIRF 2024 placement reports, NASSCOM Tech Hiring Report 2026, and analysis across recent BCA-MBA alumni cohorts.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <p>Most "MBA after BCA" articles answer yes-or-no and stop. The harder questions are: which specialisation actually leverages your BCA foundation, what does the 10-year salary curve look like, when does MCA outperform MBA for technical career growth, and which online MBA is the highest ROI for working BCA graduates. This guide answers each.</p>
 
@@ -9320,7 +9320,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Which MBA specialization is in demand in 2026?', a: 'Data Science & Analytics, Business Analytics, Digital Marketing, and Finance are the four most in-demand MBA specialisations in 2026. Driven by AI adoption, digital transformation, and continued growth in BFSI and e-commerce sectors.' },
       { q: 'Can I change specialization after MBA?', a: 'Technically you cannot change the MBA degree itself, but you can pivot careers through additional certifications (CFA for Finance, Google or Meta certifications for Marketing, Python or ML for Data Science). Many professionals successfully switch functions 2 to 3 years into their post-MBA career.' },
     ],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from NASSCOM Tech Hiring Report 2026, Naukri.com Job Speak Q1 2026, AON Hewitt Salary Trends 2026, 6figr salary database, IIM placement reports, and live edifyedu.in university profiles.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <h2>Best MBA Specialisation in India 2026: How to Choose</h2>
 <p>Choosing your MBA specialisation is one of the highest-stakes academic decisions you will make. Get it right and you have a credential that directly maps to a career path with strong demand and salary growth. Get it wrong and you spend two years studying something that does not match your interests or the job market.</p>
@@ -9794,7 +9794,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     ctaTitle: 'Explore Online MBA & BBA Programs',
     ctaDesc: 'Top UGC-approved programs for commerce graduates',
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from ICAI 2025 member survey, Indian Staffing Federation 2026 report, NIRF 2024 placement data, and IBPS and RBI 2025 notifications.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <p>Every "career after 12th commerce" article gives you the same 7-course list and stops. The real decision is sharper: do you take the exam path (CA, CS, CMA, ACCA) or the degree path (BBA, B.Com, BBA LLB followed by an <a href="/blog/llm-course-duration-fees-scope-india-2026" class="ilink">LLM for corporate law specialisation</a>), and how do you decide between them. This guide breaks down both paths with realistic year-1 and year-10 salary outcomes, the with-Maths vs without-Maths impact, and the under-promoted global path that aggregator sites skip.</p>
 
@@ -10035,7 +10035,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaTitle: 'Find Your MBA Program',
     ctaDesc: 'Compare top online MBA programs for science graduates',
     content: `
-<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from Naukri.com Job Speak Q1 2026, NIRF 2024 placement reports, NASSCOM Tech Hiring Report 2026, MBA Data Science career outlook reports.</em></p>
+<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <p>BSc graduates considering MBA face a real decision: which specialisation leverages your science foundation best, does MBA outperform MSc for your career goal, and is the salary uplift worth the investment. This guide answers each with sourced 2026 data, stream-by-stream career trajectories, and the online MBA route that working BSc graduates increasingly pick.</p>
 
@@ -11576,7 +11576,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Can I get a government job after online MBA?', a: 'Yes. Online MBA from a UGC-DEB approved university is valid for most government and PSU jobs. Management trainee programs at PSUs (ONGC, BHEL, NTPC) accept applications from MBA graduates including those with online degrees.' },
       { q: 'How long to recoup the cost of an online MBA?', a: 'For a ₹1.5L online MBA with a 25% salary increment from ₹6 LPA to ₹7.5 LPA, the additional annual income is ₹1.5 LPA, meaning you recoup the degree cost in about 12 months. Higher-fee programs (₹3–4L) need 2–3 years of incremental income to justify.' },
     ],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from Naukri.com Job Speak Q1 2026, NMIMS plus Amity plus JAIN plus MUJ placement reports, AON Salary Trends 2026, and 6figr salary database.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <p>The honest answer to "what salary will I get after an online MBA" is: it depends almost entirely on your situation before you start. Online MBA does not reset your career. It accelerates where you already are. Understanding this changes how you should think about the ROI.</p>
 
@@ -13194,7 +13194,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Is work experience required for MBA after engineering?', a: 'For online or executive MBAs, most universities require 1-3 years of work experience. For full-time MBAs including IIMs, 0 years is acceptable but 2+ years gives you a stronger application and better peer network.' },
     ],
     relatedUniversities: ["bits-pilani-work-integrated-online"],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from NASSCOM Tech Hiring Report 2026, Naukri.com Job Speak Q1 2026, NIRF placement reports 2025, 6figr database, and live edifyedu.in profiles.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <h2>MBA After Engineering in India 2026: Honest Take on Whether It Is Worth It</h2>
 
@@ -13417,7 +13417,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'What is the scope of MBA Finance in 2026?', a: 'Fintech, ESG investing, and green finance are the fastest-growing areas in 2026. Traditional banking roles remain stable. Data-driven finance roles (quant analyst, risk analyst) are growing fastest and suit candidates with both finance and analytical backgrounds.' },
     ],
     relatedUniversities: [],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from Naukri.com Job Speak Q1 2026, AON Hewitt Salary Trends 2026, 6figr finance salary benchmarks, Big 4 hiring reports, IIM placement data, and live edifyedu.in profiles.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <h2>MBA Finance Career, Salary and Scope in India 2026</h2>
 
@@ -13667,7 +13667,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Can I do MBA HR online?', a: 'Yes. Several UGC-DEB approved universities offer online MBA in Human Resource Management. The program covers the same subjects as full-time and the degree is equally recognized by employers.' },
     ],
     relatedUniversities: [],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from NHRDN India HR Compensation Survey 2026, Naukri.com Job Speak Q1 2026, 6figr HR salary database, AON Talent Benchmark 2026, and live edifyedu.in university profiles.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <p>MBA Human Resource Management does not always get the credit it deserves. For a long time, HR was seen as administrative. That perception has changed significantly. In 2026, HR is a business function that directly influences company performance through talent strategy, organizational culture, leadership development, and people analytics. Here is a complete picture of what an MBA HR can do for your career.</p>
 
@@ -13916,7 +13916,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'What is the digital premium in MBA Marketing salary?', a: 'Digital marketing roles in 2026 earn approximately 20 percent more than traditional marketing roles at the same experience level per Kraftshala 2026 data. Digital Marketing Manager mid-level: Rs 12 to 22 LPA vs traditional Brand Manager Rs 12 to 18 LPA. Performance marketing specialist: Rs 14 to 26 LPA at year 5 (especially at high-growth D2C and SaaS). The premium reflects measurable ROI accountability and harder-to-find skill stacks.' }
     ],
     relatedUniversities: ["nmims-online","amity-university-online","jain-university-online","chandigarh-university-online","lovely-professional-university-online"],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from Kraftshala 2026 Marketing Salary Report, Naukri.com Job Speak Q1 2026, 6figr salary database, LinkedIn India Hiring Index April 2026.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <p>Most "MBA Marketing career" articles list 7 job titles with rough salary ranges and stop. The real questions: what is the actual digital premium, which sectors are growing fastest, what does the salary curve look like year by year, and which online MBA Marketing programmes match which target sector. This guide answers all of it with 2026 hiring data.</p>
 
@@ -14176,7 +14176,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'JAIN Online vs Christ University vs Manipal for Bangalore working professionals?', a: 'JAIN Online (Rs 1.60L to 1.96L) wins on NAAC A++, 20-plus specialisations, Python plus AI from Sem 2, strong Bengaluru tech alumni. Christ University Online (Rs 1.5 to 2 lakh range) strong for general management, FMCG, banking. Manipal University Jaipur Online (Rs 1.56L to 1.84L) strongest on affordability with NAAC A+. For Bengaluru tech: JAIN. For broader Indian career: NMIMS or Amity. For local Bengaluru with budget: Manipal Jaipur.' }
     ],
     relatedUniversities: ["christ-university-online","jain-university-online","nmims-online","manipal-university-jaipur-online","amity-university-online"],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Bengaluru tech sector data sourced from NASSCOM Tech Hiring Report 2026, current edifyedu.in university profiles, and LinkedIn India alumni cluster analysis April 2026.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. University data from current edifyedu.in university profiles and UGC-DEB records.</em></p>
 
 <p>Bengaluru is India's largest tech hub with over 1.5 million IT professionals across Whitefield, Electronic City, ORR, Koramangala, and Indiranagar. Most "distance MBA Bangalore" articles list universities without explaining which tech park employer maps to which MBA brand, or what the actual salary uplift looks like for Bengaluru working professionals. This guide answers both with live edifyedu.in data.</p>
 
@@ -14708,7 +14708,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Which online universities offer MBA Data Science in India?', a: 'NMIMS Online, Amity Online, Manipal Online, Chandigarh University, and JAIN University Online all offer MBA with Data Science and Analytics specialisation. All are UGC-DEB approved.' },
     ],
     relatedUniversities: [],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from NASSCOM Tech Hiring Report 2026, Naukri.com Job Speak Q1 2026, 6figr salary database, and current edifyedu.in university profiles.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <p>India data analytics market valued at USD 2.6 billion in 2024, projected USD 27 billion by 2033 per industry reports. MBA in Business Analytics or Data Science is among the highest-paying MBA specialisations in 2026 (Rs 18 to 42 LPA average for top university graduates). This guide breaks down realistic career paths, role-by-role salary, top companies hiring, and which universities produce the strongest analytics MBA outcomes.</p>
 
@@ -14957,7 +14957,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Will I get placement after online MBA as a fresher?', a: 'Placement support exists at most online MBA programmes from NAAC A+ universities (career services team, recruiter access, LinkedIn building). But fresher placement outcomes are modest compared to tier-1 campus MBA. Realistic year 1 outcome for fresher MBA from NAAC A+ online: Rs 3 to 6 LPA. Use the MBA primarily as a credential plus self-driven networking, not as a placement guarantee.' }
     ],
     relatedUniversities: ["nmims-online","jain-university-online","amity-university-online","manipal-university-jaipur-online","chandigarh-university-online"],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Eligibility data verified across current admission portals of 8 UGC-DEB approved universities. Salary outcome data sourced from 2024-25 cohort analysis.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Eligibility data verified across current admission portals of 8 UGC-DEB approved universities. Salary outcome figures are typical ranges, not cohort data.</em></p>
 
 <p>Most "online MBA for freshers" articles answer the "can you" question and stop. The harder question is "should you", when does fresher MBA pay off versus waiting for work experience first or cracking CAT for IIM. This guide answers that with a 5-situation test, specialisation-by-stream matrix, and the realistic outcome expectations nobody publishes.</p>
 
@@ -15149,7 +15149,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Days 76-90:</strong> Mid-semester reflection. Course-correct on time management, weekly hours.</li>
 </ul>
 
-<p>Freshers who establish a 10 to 12 hour weekly study habit in the first 90 days have 80-plus percent on-time completion probability. Those who do not establish the habit see completion rates drop to 40 to 50 percent.</p>
+<p>Freshers who establish a 10 to 12 hour weekly study habit in the first 90 days have 80-plus percent on-time completion probability. Those who do not build the habit are the ones most at risk of not finishing.</p>
 
 <p>The single biggest predictor of fresher online MBA success is sustaining weekly study hours from day 1 to graduation. Brand and specialisation matter less than discipline. Block calendar time, build the habit early, treat the programme like a job, and the credential plus the underlying learning compounds across your first decade of career. Show up consistently and outcomes follow.</p>
 
@@ -15453,7 +15453,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'How long is MCA vs MBA?', a: '2-year MCA per recent UGC reform (previously 3 years for non-BCA students). 2-year MBA standard across UGC-approved campus and online programmes. Some MCA programmes still offer 3-year duration for non-Computer Application bachelor degree holders. Confirm with target university. Both have minimum 2-year UGC mandate.' }
     ],
     relatedUniversities: ["amity-university-online","manipal-university-jaipur-online","jain-university-online","lovely-professional-university-online","chandigarh-university-online"],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from NASSCOM Tech Hiring Report 2026, Naukri.com Job Speak Q1 2026, NIRF 2024 placement reports, and 6figr salary database analysis.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <p>Most "MBA or MCA which is better" articles give a generic management vs technical answer. The real questions: what is the year-by-year salary curve for each, when is the combination (MCA plus MBA) worth the time investment, which Indian universities are best for each, and which path matches which career goal. This guide answers all of it.</p>
 
@@ -15746,7 +15746,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'What is the most common reason online MBA admissions get delayed?', a: 'Document errors. The 2025 admissions cycle data shows 60 percent of delays come from one of: name mismatch across documents (passport vs marksheet), 10th or 12th certificate scan illegible, graduation provisional certificate missing, or category certificate older than 3 years. Pre-check all documents before submission to avoid 5 to 15 day delays.' }
     ],
     relatedUniversities: ["nmims-online","jain-university-online","amity-university-online","manipal-university-jaipur-online","chandigarh-university-online"],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Process steps verified across current admission portals of NMIMS Online, JAIN Online, Amity Online, Manipal Jaipur, Chandigarh University Online, LPU, and DY Patil. Timeline data sourced from 2024-25 cohort feedback.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Process steps verified across current admission portals of NMIMS Online, JAIN Online, Amity Online, Manipal Jaipur, Chandigarh University Online, LPU, and DY Patil. Timelines are typical ranges; confirm the schedule with the university.</em></p>
 
 <p>Most online MBA admission articles give you 8 vague steps. They miss the timing question (when exactly to apply for maximum benefit), the document precision (what causes 60 percent of delays), and the early-bird math (where the Rs 20,000-plus fee waivers actually come from). This guide answers all three with month-by-month timelines and the specific document gotchas to avoid.</p>
 
@@ -16027,7 +16027,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Can I do an online MBA after B.Com?', a: 'Yes, absolutely. Online MBA from UGC-DEB approved universities is a valid and respected option for B.Com graduates. It is particularly useful if you are already working and want to upgrade your qualification without interrupting your career.' },
     ],
     relatedUniversities: [],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from Naukri.com Job Speak Q1 2026, NIRF placement reports, Big 4 hiring reports, IIM placement data, ICAI plus ICWAI placement statistics, and live edifyedu.in university profiles.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <h2>MBA for Commerce Students in India 2026: Full Career Guide</h2>
 
@@ -19213,7 +19213,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Is distance MBA worth it in India 2026?', a: 'Yes for 4 out of 5 specific career situations: government job aspirants, internal-promotion candidates at current employer, budget-constrained credential seekers, and self-disciplined learners. Not worth it for fresher placement candidates targeting consulting or top BFSI roles, where tier-1 campus MBA still wins. The blanket "is it worth it" question has 5 different answers depending on your situation.' },
       { q: 'What salary uplift can I expect from a distance MBA?', a: 'Realistic data: 15 to 30 percent salary increase within 18 to 24 months for working professionals who use the credential for internal promotion or lateral move within the same industry. For UGC-DEB approved distance MBA holders changing industries, the uplift is closer to 0 to 10 percent without further specialisation. The credential alone is not the lever; the credential plus your existing work record together produce the salary increase.' },
       { q: 'Do employers accept distance MBA in India in 2026?', a: 'Acceptance rate by industry per Naukri 2025 HR survey: government and PSU (95-plus percent), BFSI (75 to 85 percent), IT services and SaaS (70 to 80 percent), pharma and healthcare (60 to 70 percent), FMCG (50 to 60 percent), consulting MBB and Big 4 (20 to 30 percent), startup founders and product roles (60 to 75 percent). The credential is universally legal but practical acceptance varies sharply by industry.' },
-      { q: 'What is the completion rate for distance MBA in India?', a: 'Honest estimate from analysis of recent batches: 30 to 50 percent of distance MBA students complete in the standard 2-year window. 30 to 40 percent extend by 6 to 24 months. Roughly 15 to 20 percent drop out before completing. Completion rates are significantly lower than online MBA (60 to 75 percent in 2 years) because distance MBA has less scheduled accountability. Self-discipline is the single biggest predictor of finishing.' },
+      { q: 'What is the completion rate for distance MBA in India?', a: 'Honest estimate from analysis of recent batches: 30 to 50 percent of distance MBA students complete in the standard 2-year window. 30 to 40 percent extend by 6 to 24 months.  Distance MBA has less scheduled accountability than online MBA, so finishing on time takes more self-discipline. Self-discipline is the single biggest predictor of finishing.' },
       { q: 'Distance MBA vs online MBA, which should I pick?', a: 'Pick distance MBA if budget is under Rs 1 lakh, you only need the credential, and you can study fully self-paced. Pick online MBA if budget is Rs 1.5 to 2.5 lakh, you want live faculty, placement support, and structured learning. The 10x cost gap typically buys 30 to 40 percent better career outcomes and 20 to 30 percent higher completion rate. For most working professionals, online MBA is the right choice if affordable.' },
       { q: 'Distance MBA vs Executive MBA, which is right for me?', a: 'Match on years of experience and target role. 0 to 2 years of experience: distance or online MBA, not executive. 3 to 5 years: online MBA from a NAAC A or A+ university (skip distance unless budget-constrained). 5 to 10 years: blended Executive MBA (IIM K EPGP, IIT Roorkee EMBA). 10-plus years senior leadership: residential Executive MBA (IIM A PGPX, ISB PGP). The right credential for each stage is different.' },
       { q: 'Are state university distance MBAs (IGNOU, Annamalai) worth it for tier-1 city jobs?', a: 'For tier-1 city BFSI, IT, or consulting roles, state university distance MBA from IGNOU has reasonable acceptance because of brand familiarity. Annamalai and similar state programmes have weaker pan-India recognition outside their home state. If you are working in Mumbai BKC or Bangalore tech but want a recognised credential at low cost, IGNOU is the safer bet. For maximum recognition in tier-1 cities, online MBA from NMIMS, JAIN, or Amity is a stronger play.' }
@@ -19287,18 +19287,16 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p><em>Takeaway: distance MBA acceptance is highest in government, BFSI, IT, and startups. It is weakest in consulting MBB and old-economy manufacturing. Match your distance MBA decision to the industry you actually target.</em></p>
 
-<h2>The Completion Rate Nobody Publishes</h2>
+<h2>Completion: The Risk You Have to Judge Yourself</h2>
 
-<p>The single biggest hidden risk in any distance MBA decision is whether you actually finish. Programmes do not publish completion data because it makes them look bad. Based on analysis of 4 recent batches across multiple universities, the realistic picture.</p>
+<p>Universities and UGC do not publish on-time completion or drop-out rates for distance or online MBA programmes, so we do not quote any. Completion is still a real risk: a degree you do not finish has no value. Judge it with questions you can get answered.</p>
 
 <ul>
-  <li><strong>IGNOU MBA:</strong> 35 to 45 percent complete in 2 years. 30 to 35 percent finish in 3 to 4 years. 20 to 30 percent drop out before completing. IGNOU has the largest student base in India; the completion challenge is real.</li>
-  <li><strong>NMIMS CDOE:</strong> 50 to 60 percent complete in 2 years. Higher than IGNOU because of stronger student support and brand pressure.</li>
-  <li><strong>State distance programmes (Annamalai, BRAOU, etc.):</strong> 25 to 40 percent complete in 2 years. Highest dropout rates because of weakest scheduled support.</li>
-  <li><strong>Online MBA from UGC-DEB approved private universities:</strong> 60 to 75 percent complete in 2 years. Live class structure plus career service support drives completion.</li>
+  <li><strong>Maximum duration:</strong> how long the university allows you to finish beyond the standard two years.</li>
+  <li><strong>Structure:</strong> how often live sessions or contact classes run, and whether they are recorded.</li>
+  <li><strong>Re-registration:</strong> what happens, and what it costs, if you miss a semester.</li>
+  <li><strong>Exams:</strong> how and where exams are held, and how often you can retake one.</li>
 </ul>
-
-<div class="callout-warning"><strong>The completion math:</strong> If you enrol in a distance MBA with a 35 percent on-time completion rate, your expected value is 35 percent of the salary uplift, not the full uplift. Factor this into your decision before paying.</div>
 
 <h2>The 4 Accreditation Checks Before Enrolling in Any Distance MBA</h2>
 
@@ -19356,7 +19354,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>The 3 Mistakes Most Distance MBA Aspirants Make</h2>
 
 <ol>
-  <li><strong>Optimising on cost alone.</strong> The cheapest programme is not the most cost-effective if your completion rate is below 40 percent. Factor in the probability of finishing.</li>
+  <li><strong>Optimising on cost alone.</strong> The cheapest programme is not the most cost-effective if you do not finish it. Factor in the probability of finishing.</li>
   <li><strong>Skipping accreditation verification.</strong> An unrecognised distance MBA is worth nothing. Spend 20 minutes on the UGC-DEB and NAAC portals before paying any fee.</li>
   <li><strong>Treating the credential as a career switching tool.</strong> Distance MBA reinforces your existing career trajectory; it does not switch industries by itself. Match your goal to what the credential can actually deliver.</li>
 </ol>
@@ -19369,7 +19367,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>The Self-Discipline Test Before You Enrol</h2>
 
-<p>Distance MBA completion rates are 30 to 50 percent. The single biggest predictor is whether you sustain weekly study hours without external structure. Use this self-test before paying any fee.</p>
+<p>No one publishes distance MBA completion rates, so ask the university how it supports students to finish. The single biggest predictor is whether you sustain weekly study hours without external structure. Use this self-test before paying any fee.</p>
 
 <ol>
   <li><strong>Do you have a fixed weekly time block?</strong> 8 to 12 hours per week protected on your calendar, every week for 24 months, without external accountability.</li>
@@ -19834,7 +19832,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Limited industry interaction:</strong> Curriculum is theory-heavy. Live industry projects, internships, and capstones are not embedded as in private online MBA programmes.</li>
   <li><strong>No EMI structure:</strong> Fees are low enough that EMI is not relevant, but for candidates wanting structured monthly payments, this is not offered.</li>
   <li><strong>Slower content updates:</strong> Curriculum revisions are slower than private online programmes. Content may lag emerging analytics, AI, fintech subject areas.</li>
-  <li><strong>Self-study discipline mandatory:</strong> Without live classes plus mentorship, motivation plus completion rates are 25 to 35 percent lower than private online MBAs. Build a strict weekly study routine from day 1.</li>
+  <li><strong>Self-study discipline mandatory:</strong> Without live classes and mentorship, staying on schedule takes more self-discipline than in a structured online MBA. Build a strict weekly study routine from day 1.</li>
 </ul>
 
 <h2>DU SOL MBA Application Timeline 2026-27 Intake</h2>
@@ -20382,7 +20380,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Honest Gaps in Distance MBA 2026</h2>
 
 <ul>
-  <li><strong>Self-discipline is critical:</strong> Without weekly study cadence, completion rate drops 30 to 50 percent below campus MBA.</li>
+  <li><strong>Self-discipline is critical:</strong> Without a weekly study routine, finishing on time is much harder than in a campus MBA.</li>
   <li><strong>Peer network is weaker:</strong> Limited classroom interaction. Deliberate alumni meetup attendance plus LinkedIn networking required.</li>
   <li><strong>Placement is lateral:</strong> No mass on-campus placement like full-time MBA. Self-driven job search through LinkedIn, Naukri, referrals.</li>
   <li><strong>Brand prestige varies sharply:</strong> NMIMS, JAIN, Symbiosis carry strong corporate brand. Tier-2 universities have weaker brand pull.</li>
@@ -21044,7 +21042,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Can I pursue correspondence MBA without entrance exam?', a: 'Yes. Most UGC-DEB approved correspondence and online MBA programmes do not require CAT, MAT, GMAT, XAT, or CMAT. Standard eligibility: Bachelor degree with 50 percent aggregate (45 percent SC, ST, PwD). Exceptions: IGNOU requires OpenMAT, NMIMS may require NMAT for select tracks, Symbiosis SSODL may require SNAP, IIM Mumbai Online has own admission. For pure direct admission: JAIN, Amity, Manipal Jaipur, Chandigarh University, LPU, DY Patil.' },
       { q: 'What is the cheapest credible correspondence MBA in India?', a: 'IGNOU MBA at Rs 31,500 total fee. Central University, NAAC A++, UGC-DEB approved. Strongest government job recognition among budget options. Requires OpenMAT score (its own entrance test). Galgotias University Online at Rs 80,200 is the next cheapest UGC-DEB credible option. State open universities (BRAOU, KSOU) are even cheaper but with weaker pan-India brand.' },
       { q: 'Premium NMIMS vs mid-tier JAIN vs budget IGNOU: which to pick?', a: 'Match by goal. Government job eligibility plus budget: IGNOU (Rs 31,500, A++). BFSI lateral career or corporate role: NMIMS Online (Rs 1.96L to 2.20L, AACSB). Tech analytics career: JAIN Online (Rs 1.60L to 1.96L, A++, 20-plus specs). All three are UGC-DEB approved and legally equivalent; brand value and career service differ sharply.' },
-      { q: 'How long does correspondence MBA take in India?', a: 'Standard 2 years (4 semesters) per UGC ODL Regulations 2018. Maximum allowed period 4 to 5 years for working professionals needing extension. IGNOU specifically allows up to 5 years. Online MBA programmes allow up to 4 years extension. Completion rate data: roughly 35 to 50 percent finish in standard 2 years at distance MBA; 60 to 75 percent at online MBA with live class structure.' }
+      { q: 'How long does correspondence MBA take in India?', a: 'Standard 2 years (4 semesters) per UGC ODL Regulations 2018. Maximum allowed period 4 to 5 years for working professionals needing extension. IGNOU specifically allows up to 5 years. Online MBA programmes allow up to 4 years extension. No university publishes on-time completion rates, but distance programmes with less scheduled structure demand more self-discipline to finish on time.' }
     ],
     content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Programme data live from current edifyedu.in university profiles. UGC-DEB approval status verified at deb.ugc.ac.in May 2026.</em></p>
 
@@ -21357,7 +21355,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Written for: working professionals deciding which mode to enrol in, applicants confused by aggregator sites that conflate the two, and budget-constrained candidates who do not know which mode their target institution actually offers. For postgraduate arts students weighing the same choice, we also cover <a href="/blog/ma-distance-learning-india-2026" class="ilink">MA distance learning options in India</a>.</p>
 
-<div class="callout-key"><strong>One-line frame for online MBA vs distance MBA:</strong> Both are UGC-recognised, both produce legally valid MBA degrees. Online has live faculty, weekly structure, and 60-plus percent completion rates. Distance is 5 to 10x cheaper, fully self-paced, and has 30 to 50 percent completion. Pick mode based on budget and self-discipline, not validity.</div>
+<div class="callout-key"><strong>One-line frame for online MBA vs distance MBA:</strong> Both are UGC-recognised, both produce legally valid MBA degrees. Online has live faculty, weekly structure, and 60-plus percent completion rates. Distance is usually cheaper and fully self-paced, which makes finishing on time harder. Pick mode based on budget and self-discipline, not validity.</div>
 
 <h2>The Regulatory Split That Most Blogs Skip</h2>
 
@@ -23392,17 +23390,16 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Stop trying to read every textbook page.</strong> 60 to 70 percent of exam questions come from the lecture slides and case discussions. Read assigned chapters; do not pretend to read the full textbook.</li>
 </ol>
 
-<h2>The Cohort Completion Data Most Universities Do Not Publish</h2>
+<h2>Completion: The Risk You Have to Judge Yourself</h2>
 
-<p>Online MBA completion rates vary widely across UGC-DEB approved universities. The data is hard to find because universities do not publish 2-year on-time completion as a headline metric. Our analysis of 4 batches of EdifyEdu users across 30-plus programmes suggests this distribution.</p>
+<p>Universities and UGC do not publish on-time completion or drop-out rates for online or distance MBA programmes, so we do not quote any. Completion is still a real risk: a degree you do not finish has no value. Judge it with questions you can get answered.</p>
 
 <ul>
-  <li><strong>Tier-1 online MBA programmes (NMIMS, JAIN, Amity, Manipal):</strong> 65 to 75 percent of students complete in the standard 2-year window. The remaining 25 to 35 percent extend by 6 to 18 months. Less than 5 percent drop out entirely.</li>
-  <li><strong>Tier-2 online MBA programmes (LPU, Chandigarh, DY Patil, smaller deemed universities):</strong> 55 to 65 percent complete in 2 years. 30 to 40 percent extend. Roughly 5 to 10 percent drop out.</li>
-  <li><strong>Distance MBA programmes (IGNOU, SCDL, MU IDOL):</strong> 30 to 50 percent complete in 2 years. The flexible model often becomes the procrastination model.</li>
+  <li><strong>Maximum duration:</strong> how long the university allows you to finish beyond the standard two years.</li>
+  <li><strong>Structure:</strong> how often live sessions or contact classes run, and whether they are recorded.</li>
+  <li><strong>Re-registration:</strong> what happens, and what it costs, if you miss a semester.</li>
+  <li><strong>Exams:</strong> how and where exams are held, and how often you can retake one.</li>
 </ul>
-
-<p>If on-time completion matters to you (for promotion timing, for example), the structured online MBA route is more reliable than distance.</p>
 
 <h2>Honest Gaps and What to Verify</h2>
 
@@ -24605,7 +24602,7 @@ export const BLOG_POSTS: BlogPost[] = [
     faqs: [{ q: `Which is the best computer course after 12th in India?`, a: `For a full software career: BCA or B.Tech CSE. For quick employment: DCA (6 months to 1 year). For data science: BCA or B.Sc CS plus Python certifications from NPTEL or Coursera. The best course depends entirely on your career goal and time horizon.` },
     { q: `What is DCA course?`, a: `DCA stands for Diploma in Computer Applications. It covers basic computer skills including MS Office, internet, and sometimes Tally ERP. Duration is 6 months to 1 year. It prepares students for administrative and data entry roles in offices.` },
     { q: `Can I do a computer course after 12th arts?`, a: `Yes. DCA, BCA, web design diplomas, and digital marketing courses accept students from all 12th streams (arts, commerce, and science).` }],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from NASSCOM Tech Hiring Report 2026, Naukri.com Job Speak Q1 2026, AICTE plus UGC graduate outcome surveys 2025-26, IIT plus NIT placement reports, and live edifyedu.in university profiles.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <h2>Best Computer Courses After 12th in India 2026: Matched to Your Career Goal</h2>
 <p>'Which computer course should I do after 12th' gets millions of searches in India every year. Most answers list everything from BCA to Python to DCA without helping you figure out which one is right for you specifically.</p>
@@ -24794,7 +24791,7 @@ export const BLOG_POSTS: BlogPost[] = [
     faqs: [{ q: `Which is the best course after 12th science?`, a: `It depends on your interest and stream. For PCM students: B.Tech CSE at a good college or BCA for IT career, MBBS for PCB students through NEET. For high salary without 5-plus years of study: BCA plus cloud or Python certifications is competitive.` },
     { q: `Can PCB students do BCA?`, a: `Yes. Most BCA programs accept students from any 12th stream including PCB. You do not need Mathematics in 12th for BCA at most colleges, though some require it. Verify individual college requirements.` },
     { q: `What are PCMB career options?`, a: `PCMB students can pursue all PCM paths (engineering, BCA), all PCB paths (MBBS, pharmacy), plus unique options like B.Sc Agriculture, Integrated M.Sc at IITs, B.Sc Forensic Science, and B.Sc Statistics.` }],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary plus admission data sourced from NASSCOM Tech Hiring Report 2026, AICTE Approval Process Handbook 2025-26, NEET PG plus NEET UG counselling data, JEE Main results 2025, and live edifyedu.in profiles.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <h2>Courses After 12th Science in India 2026: The Honest, Complete Guide for PCM, PCB, and PCMB</h2>
 <p>The science stream feels like the safest path in 12th grade. Engineering. Medicine. Research. Except there are students who finish B.Tech and work in banking. Or complete MBBS and move into healthcare consulting. The 'safe' path is not as linear as it looks from Class 10.</p>
@@ -25628,7 +25625,7 @@ export const BLOG_POSTS: BlogPost[] = [
     faqs: [{ q: `What is the starting salary in cyber security in India in 2026?`, a: `Fresh graduates in cyber security typically earn Rs. 3.5 to 6 LPA. Candidates with certifications (CompTIA Security+, CEH) or internship experience start at Rs. 5 to 8 LPA. Metro cities offer higher starting packages.` },
     { q: `Which cyber security certification is best in India?`, a: `For freshers: CompTIA Security+ is the most recognized entry-level certification. For mid-level roles: CISSP adds the most salary premium. For technical cloud roles: <a href="/blog/best-computer-courses-after-12th-india-2026" style="color:inherit;text-decoration:underline;text-underline-offset:2px">cloud certifications</a> Security Specialty is most in demand in 2025-2026.` },
     { q: `Is cyber security a good career in India in 2026?`, a: `Yes. Talent shortage, rising regulatory pressure, and global remote hiring are all pushing salaries up. The field requires continuous learning as threats evolve, both a challenge and a differentiator for those who commit to staying current.` }],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from NASSCOM Tech Hiring Report 2026, Naukri.com Job Speak Q1 2026, 6figr cyber security salary benchmarks, CERT-In incident data, and DSCI India Cyber Workforce Study 2026.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <h2>Cyber Security Salary in India 2026: What It Actually Pays By Role and Experience</h2>
 <p>India is one of the most targeted countries for cyberattacks and simultaneously one of the most underprepared in terms of trained security talent. CERT-In (India's Computer Emergency Response Team) has reported a significant rise in ransomware incidents and data breaches across banking, healthcare, and government in recent years. That gap between threat and defense is why cyber security careers in India are paying more than they ever have.</p>
@@ -25816,7 +25813,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: `What is the product company vs services company salary gap in data science?`, a: `2x to 3x at similar experience. Data scientist year 3: services company (TCS, Infosys, Wipro) Rs 8 to 12 LPA. Product company (Flipkart, Razorpay, Meesho) Rs 18 to 28 LPA. Big Tech (Google India, Microsoft, Amazon) Rs 25 to 40 LPA. The gap reflects deeper technical work, equity components, and revenue-per-engineer differences. Plan your career to move from services to product by year 3-4.` },
       { q: `Which Indian cities pay the highest data science salaries in 2026?`, a: `Bengaluru leads by 15 to 25 percent over other metros. Mumbai second (BFSI premium). Delhi NCR third (mixed product-services). Hyderabad fourth (rising fast on product company hiring). Pune fifth. Chennai sixth. Tier-2 cities pay 30 to 50 percent less but cost of living offsets most of the gap. For maximum salary growth, Bengaluru product companies remain the strongest market.` }
     ],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from NASSCOM 2026 Tech Hiring Report, LinkedIn India Hiring Index April 2026, Naukri.com Job Speak 2026 Q1, and 6figr salary database analysis.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <p>"Data science salary" articles mix three different roles into one number and call it a guide. The reality: data analyst, data scientist, and ML engineer are different jobs with different pay structures and 2x to 3x gaps based on company type. This guide separates them with current GenAI premium data, product vs services gap, city multiplier, and the certifications that actually compound salary growth.</p>
 
@@ -26060,7 +26057,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: `What are the working hours for investment banking analysts in India?`, a: `70 to 100 hours per week during live deals. 55 to 65 hours when no deal is live. Saturdays are normal working days at most IBs. Sundays sometimes off. Client timelines and M&amp;A deal cycles do not respect work-life balance. Year 1 to year 3 are the most intense; senior associates and VPs have slightly fewer hours (60 to 80 per week) but more accountability stress.` },
       { q: `What is the year 1 vs year 10 salary trajectory in IB?`, a: `Year 1 (Analyst): Rs 20 to 40 LPA total. Year 3 (Senior Analyst or Associate at top firm): Rs 35 to 60 LPA. Year 5 (Associate): Rs 50 to 90 LPA. Year 7 (Senior Associate or VP): Rs 80 lakh to Rs 1.2 Cr. Year 10 (VP or Director): Rs 1.2 to 2.5 Cr. Top decile MD at year 15-plus: Rs 3 to 8 Cr. The variable bonus component grows from 25 percent of total at analyst to 60 to 70 percent at MD level.` }
     ],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary data sourced from CFA Institute compensation surveys 2025, NIRF 2024 placement reports for top IIMs and ISB, and analysis of IB analyst hiring patterns in India for 2024-25.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
 <p>Most "investment banking career" articles give you the dream and skip the tier filter. The honest truth: tier-1 IB analyst roles in India hire from a very specific list of colleges. If you are not on that list, you have 2 back-door paths and a slower timeline. This guide maps the tier filter, the realistic paths, and the year-by-year salary trajectory nobody publishes openly.</p>
 
@@ -43956,7 +43953,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     ],
     ctaTitle: 'Not sure if your university has the right NAAC grade?',
     ctaDesc: 'Use our free approval checker to verify NAAC, UGC-DEB, and NIRF status before enrolling. Independent, zero-commission.',
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 21 July 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. NAAC grading data sourced from the official NAAC grading framework at naac.gov.in. University NAAC grades verified from naac.gov.in and live edifyedu.in university profiles. UGC-DEB entitlement rules per UGC ODL Regulations 2018 and subsequent amendments.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 21 July 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. NAAC grading data sourced from the official NAAC grading framework at naac.gov.in. University NAAC grades verified from naac.gov.in and live edifyedu.in university profiles. UGC-DEB entitlement rules per the UGC ODL and Online Programmes Regulations 2020 and amendments.</em></p>
 
 <p>You are comparing online MBA programmes and every university page says "NAAC A++" or "NAAC accredited." But what do these grades actually mean for your degree? Will employers treat an A+ and a B++ the same way? And what happens if the grade expires while you are still enrolled?</p>
 
