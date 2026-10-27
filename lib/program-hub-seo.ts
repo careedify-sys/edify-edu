@@ -84,6 +84,19 @@ export function getProgramHubSeo(
         title: `Online MCA Courses in India ${year}: ${uniCount} UGC-DEB Universities`,
         description: `Online MCA: a 2-year postgraduate computing degree, allowed online because its practicals are coding. Compare ${uniCount} UGC-DEB universities.`,
       }
+    // B.Com / M.Com (keyword gap 2026-10-26): "mcom online" 880/mo, "online b com
+    // course" 480, "online mcom course" 390, "bcom online" 390, all Missing. The
+    // generic template said "Colleges" and promised "Admissions 2026 open".
+    case 'bcom':
+      return {
+        title: `Online B.Com Courses in India ${year}: ${uniCount} UGC-DEB Universities`,
+        description: `Online B.Com: a 3-year commerce degree after Class 12. Compare ${uniCount} UGC-DEB universities on fee, NAAC grade and specialisation. No paid rankings.`,
+      }
+    case 'mcom':
+      return {
+        title: `Online M.Com Courses in India ${year}: ${uniCount} UGC-DEB Universities`,
+        description: `Online M.Com: a 2-year postgraduate commerce degree. Compare ${uniCount} UGC-DEB universities on fee, NAAC grade and specialisation. No paid rankings.`,
+      }
     // BSc: only two universities list an online BSc, and both are in lab-free
     // subjects. The searcher's real question is which subjects can run online,
     // so the title answers that instead of advertising a count of two.
@@ -118,4 +131,4 @@ export function getProgramHubSeo(
 }
 
 /** Every programme slug that carries a hand-written override. Used by the gate. */
-export const PROGRAM_HUB_SEO_SLUGS: readonly string[] = ['mba', 'bba', 'bca', 'mca', 'bsc', 'ba', 'ma', 'msc']
+export const PROGRAM_HUB_SEO_SLUGS: readonly string[] = ['mba', 'bba', 'bca', 'mca', 'bcom', 'mcom', 'bsc', 'ba', 'ma', 'msc']

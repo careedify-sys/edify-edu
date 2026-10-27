@@ -4547,3 +4547,9 @@ like `onlineuu.in`. The defence stays human, and is written on the field.
 **Why:** the keyword export lists "bba online" (2,900/mo), "online mca course" (1,900), "online bba course" (1,600), "mca online" and "bca online" (1,300 each) as Missing. The BCA and MCA descriptions say why the degree may run online (practicals are coding, UGC Regs 2020 Reg 4(C)(ii) lab proviso), the same answer the BSc and MSc hubs give. No fee figures, because `u.feeMin` is MBA-led.
 
 **Gate:** `bca` and `mca` added to `PROGRAM_HUB_SEO_SLUGS`, so `check-hub-blog-title-collision` now checks them (26 hub titles vs 240 posts, clean).
+
+## B.Com and M.Com hub titles (2026-10-27)
+
+**What:** `/programs/bcom` and `/programs/mcom` get hand-written overrides, "Online B.Com Courses in India 2026: 57 UGC-DEB Universities" and the M.Com equivalent (59 chars), plus matching H1s. Both slugs are now in `PROGRAM_HUB_SEO_SLUGS`.
+
+**Why:** "mcom online" (880/mo), "online b com course" (480), "online mcom course" and "bcom online" (390 each) are Missing in the keyword export. The generic template called the universities "Colleges" and told readers "Admissions 2026 open", which no source on the page backs.

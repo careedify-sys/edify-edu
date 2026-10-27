@@ -33,13 +33,13 @@ const PROGRAM_INFO: Record<string, { title: string; level: string; duration: str
     description: 'Bachelor of Computer Applications. Entry-level IT degree covering programming, databases, web development, and computer networks. Gateway to MCA or direct IT employment.',
   },
   'B.Com': {
-    title: 'Online B.Com in India',
+    title: 'Online B.Com Courses in India',
     level: 'Undergraduate',
     duration: '3 Years',
     description: 'Bachelor of Commerce. Covers accounting, taxation, business law, economics, and financial management. Foundation for CA, CMA, MBA, or direct employment in commerce roles.',
   },
   'M.Com': {
-    title: 'Online M.Com in India',
+    title: 'Online M.Com Courses in India',
     level: 'Postgraduate',
     duration: '2 Years',
     description: 'Master of Commerce. Advanced study in accounting, finance, taxation, and business management. Suitable for B.Com graduates targeting senior commerce and finance roles.',
