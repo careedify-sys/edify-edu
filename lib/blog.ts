@@ -50839,6 +50839,210 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <p class="disclaimer"><em>Checked against IGNOU's portals and its July 2026 prospectus on 27 October 2026. Dates and fees change by cycle. Confirm the current admission notification on ignou.ac.in before you apply.</em></p>
     `,
   },
+  {
+    slug: 'amity-online-student-portal-login',
+    title: 'Amity Online Student Portal: Amigo Login, Exams and Support',
+    seoTitle: 'Amity Online Login: Amigo Portal, Exams and Support 2026',
+    h1Title: 'Amity University Online Student Portal: Where Amigo Is, How to Log In and Who to Call',
+    metaDescription: 'Amity University Online runs its classes and exams on Amigo, at amigo.amityonline.com. Where to log in, what to do if you are locked out, and how exams work.',
+    category: 'Guides',
+    tags: ['Amity University Online', 'Amigo', 'Amity Online Login', 'Student Portal', 'Online Exams'],
+    publishedAt: '2026-10-27',
+    readTime: 5,
+    targetKeyword: 'amity online login',
+    relatedUniversities: ['amity-university-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/30858451/pexels-photo-30858451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@shootsaga" target="_blank" rel="noopener nofollow">Anil  Sharma</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling young girl with headset on a video call, studying online at home.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'What is Amigo at Amity University Online?', a: 'Amigo is the learning portal Amity University Online students log in to. It sits at amigo.amityonline.com and runs on Moodle. Amity says its student portal carries live and recorded lectures, assignments, quizzes and proctored exams.' },
+      { q: 'What is the official Amity University Online website?', a: 'amityonline.com is the main site, for programme information and admissions. The student learning portal is a separate address, amigo.amityonline.com. Type both addresses yourself rather than following a link from a message.' },
+      { q: 'I forgot my Amigo password. What should I do?', a: 'Use the Forgot your password link on the Amigo login page. If that does not work, use the Contact site support link on the same page, or call Amity University Online on 1800-102-3434.' },
+      { q: 'How are Amity Online exams conducted?', a: 'Amity says it runs exams online in a proctored environment on its student portal, offers mock exams so students can learn the system first, and gives flexible time slots.' },
+      { q: 'Is Amity University Online UGC approved?', a: 'Amity University is UGC-DEB entitled to offer online programmes. Check the specific programme and your admission session on the UGC-DEB register at deb.ugc.ac.in before you enrol.' },
+    ],
+    ctaTitle: 'Still choosing a university?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">Amity University Online has two addresses that students mix up: the public website and the learning portal, Amigo. Here is which one does what, how to get back in when you are locked out, and how Amity says its exams work.</p>
+
+<p><strong>Short answer:</strong> Log in to your classes, assignments and exams at <strong>amigo.amityonline.com</strong>. The main site, <strong>amityonline.com</strong>, covers programmes and admissions. If you cannot log in, use the Forgot your password link on the Amigo page, or call Amity University Online on <strong>1800-102-3434</strong>.</p>
+
+<div class="callout-key">
+<strong>Amity Online portals in one box (checked 27 October 2026)</strong>
+<ul>
+<li><strong>Learning portal (Amigo):</strong> amigo.amityonline.com, a Moodle login</li>
+<li><strong>Main website:</strong> amityonline.com</li>
+<li><strong>Support site:</strong> support.amityonline.com</li>
+<li><strong>Phone:</strong> 1800-102-3434</li>
+<li><strong>Admissions email:</strong> admissions@amityonline.com</li>
+</ul>
+</div>
+
+<p class="disclaimer"><em>edifyedu.in is independent and not affiliated with Amity. We cannot reset a password or see your account.</em></p>
+
+<h2>Which Amity Online address do you need?</h2>
+
+<table>
+<thead><tr><th>Address</th><th>What it is for</th></tr></thead>
+<tbody>
+<tr><td>amigo.amityonline.com</td><td>Enrolled students: classes, recorded lectures, assignments, quizzes, exams</td></tr>
+<tr><td>amityonline.com</td><td>Programme pages, fees and the admission form</td></tr>
+<tr><td>support.amityonline.com</td><td>Student support requests</td></tr>
+</tbody>
+</table>
+
+<p>Searches such as "amityonline com" and "www amityonline com" lead to the main site. If you are already a student, you need Amigo instead. Type the address yourself. Do not log in through a link in an SMS or a social media message.</p>
+
+<p class="pull">The website is for applying. Amigo is for studying.</p>
+
+<h2>How to log in to Amigo</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<ol>
+<li>Go to amigo.amityonline.com.</li>
+<li>Enter the username and password linked to your enrolment.</li>
+<li>Select Log in.</li>
+</ol>
+
+<p>The login page carries a Forgot your password link and a Contact site support link. Use those first if your details do not work. If you have not enrolled yet, you have no Amigo account, so start on amityonline.com.</p>
+
+<h2>What is inside the student portal?</h2>
+
+<p>Amity describes its student portal as offering live lectures, recorded sessions, assignments, quizzes, proctored exams and other academic resources, open around the clock. It also lists an AI tutor it calls AMI and a community space called beSocial.</p>
+
+<h2>How do Amity Online exams work?</h2>
+
+<p>Amity says it conducts exams online in a secure, proctored environment on the student portal. It offers mock exams so you can learn the system before the real one, and it offers flexible time slots.</p>
+
+<p>Proctoring rules differ between universities. Our guide to <a href="/blog/how-online-degree-exams-work-india">how online degree exams work in India</a> explains webcam checks, permitted materials and what to do if your connection drops.</p>
+
+<div class="callout-warning">
+<strong>Before an exam, check your setup.</strong> Take the mock exam on the same device and connection you will use on the day. If something fails, report it to Amity support before the exam window opens, not after.
+</div>
+
+<h2>Is Amity University Online valid?</h2>
+
+<p>Amity University is UGC-DEB entitled to offer online programmes, and an entitled online degree counts the same as a campus degree under UGC rules. Check your programme and session on the UGC-DEB register. Our <a href="/blog/is-amity-university-online-fake-or-legit-2026">Amity Online legitimacy check</a> walks through the evidence, and our guide to the <a href="/blog/ugc-deb-id-explained">UGC-DEB student ID</a> explains the ID you need before enrolling.</p>
+
+<p>For the programme itself, see our <a href="/universities/amity-university-online">Amity University Online page</a> and the <a href="/blog/amity-online-mba-review-2026">Amity Online MBA review</a>.</p>
+
+<div class="cta-box">
+<p><strong>Comparing Amity with another university?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities</a> or <a href="/contact">ask us</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>Amigo login page, read 27 October 2026: amigo.amityonline.com</li>
+<li>Amity University Online homepage FAQ (student portal, exams, support) and contact page, read 27 October 2026: amityonline.com</li>
+<li>UGC-DEB HEI programme register: deb.ugc.ac.in</li>
+</ul>
+
+<p class="disclaimer"><em>Checked on 27 October 2026. Portal addresses and support numbers can change. Confirm them on amityonline.com.</em></p>
+    `,
+  },
+  {
+    slug: 'lpu-online-lms-login',
+    title: 'LPU Online LMS Login: The Student Portal, OTP and Helpline',
+    seoTitle: 'LPU Online LMS Login 2026: Student Portal, OTP, Helpline',
+    h1Title: 'LPU Online LMS: How to Log In, Reset Your Password and Reach Student Support',
+    metaDescription: 'LPU Online students log in at lms.lpuonline.com, with a one-time password sent to mobile and email. The login steps, the app, and the helpline for LMS and exams.',
+    category: 'Guides',
+    tags: ['LPU Online', 'LPU LMS', 'LPU Online Login', 'Student Portal', 'Lovely Professional University'],
+    publishedAt: '2026-10-27',
+    readTime: 4,
+    targetKeyword: 'lms lpu online',
+    relatedUniversities: ['lovely-professional-university-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/30858451/pexels-photo-30858451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@shootsaga" target="_blank" rel="noopener nofollow">Anil  Sharma</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling young girl with headset on a video call, studying online at home.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'What is the LPU Online LMS address?', a: 'The LPU Online learning portal is at lms.lpuonline.com. The main site, lpuonline.com, covers programmes and admissions.' },
+      { q: 'Why does the LPU Online LMS ask for an OTP?', a: 'The LMS login page sends a one-time password to the mobile number and email ID on your student record. If the OTP does not arrive, wait for the timer and use the resend option on the page.' },
+      { q: 'I forgot my LPU Online LMS password. What should I do?', a: 'Use the Forgot Password option on the LMS login page. If that fails, call LPU Online on 01824 520500, the number it lists for newly enrolled and existing students with LMS, class and exam queries.' },
+      { q: 'Is there an LPU Online mobile app?', a: 'Yes. The LMS login page links an app called LPU Online on Google Play and the Apple App Store.' },
+      { q: 'Which LPU Online number is for admissions?', a: 'LPU Online lists 01824 520001 for admission queries and admissions@lpuonline.com. The 01824 520500 line is for enrolled students.' },
+    ],
+    ctaTitle: 'Still choosing a university?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">LPU Online keeps its classes and exams on a separate learning portal with its own login. Here is the address, how the one-time password works, and which LPU number to call for which problem.</p>
+
+<p><strong>Short answer:</strong> Log in at <strong>lms.lpuonline.com</strong>. The page sends a one-time password to the mobile number and email on your record. For LMS, class or exam problems, LPU Online lists <strong>01824 520500</strong>. For admissions it lists 01824 520001.</p>
+
+<div class="callout-key">
+<strong>LPU Online LMS in one box (checked 27 October 2026)</strong>
+<ul>
+<li><strong>Learning portal:</strong> lms.lpuonline.com</li>
+<li><strong>Login check:</strong> OTP sent to your registered mobile and email</li>
+<li><strong>App:</strong> LPU Online, on Google Play and the App Store</li>
+<li><strong>Enrolled students (LMS, classes, exams):</strong> 01824 520500</li>
+<li><strong>Admissions:</strong> 01824 520001, admissions@lpuonline.com</li>
+</ul>
+</div>
+
+<p class="disclaimer"><em>edifyedu.in is independent and not affiliated with LPU. We cannot reset a password or see your account.</em></p>
+
+<h2>How to log in to the LPU Online LMS</h2>
+
+<ol>
+<li>Go to lms.lpuonline.com.</li>
+<li>Enter your login details and select Login.</li>
+<li>Enter the one-time password sent to your registered mobile and email.</li>
+<li>Select Confirm.</li>
+</ol>
+
+<p>If the OTP does not arrive, wait for the countdown and use the resend link on the page. The OTP goes to the contact details on your student record. If those have changed, call the student line rather than retrying.</p>
+
+<p class="pull">The OTP goes to the phone and email LPU holds for you, not the ones you type in.</p>
+
+<h2>Forgot your password?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>Use the Forgot Password option on the LMS login page. If the reset fails, call <strong>01824 520500</strong>. LPU Online lists that number for newly enrolled and existing students with questions about the LMS, classes and exams.</p>
+
+<h2>Using the LPU Online app</h2>
+
+<p>The LMS page links an app called LPU Online on Google Play and the Apple App Store. Download it from those store links, not from a file someone sends you.</p>
+
+<div class="callout-warning">
+<strong>Never share your OTP.</strong> LPU sends the OTP so that only you can log in. Anyone who asks you for it on a call or in a chat is not LPU support.
+</div>
+
+<h2>Exams on the LMS</h2>
+
+<p>LPU Online routes exam queries through the same student line. For how proctored online exams work across universities, see our guide to <a href="/blog/how-online-degree-exams-work-india">how online degree exams work in India</a>.</p>
+
+<h2>Is LPU Online valid?</h2>
+
+<p>Lovely Professional University is UGC-DEB entitled to offer online programmes. Check your programme and session on the UGC-DEB register. Our <a href="/blog/is-lpu-online-fake-or-legit-2026">LPU Online legitimacy check</a> covers the evidence, and our <a href="/blog/ugc-deb-id-explained">UGC-DEB student ID guide</a> explains the ID you need before enrolling.</p>
+
+<p>For the programmes, see our <a href="/universities/lovely-professional-university-online">LPU Online page</a> and the <a href="/blog/online-mba-lpu-review-2026">LPU Online MBA review</a>.</p>
+
+<div class="cta-box">
+<p><strong>Comparing LPU with another university?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities</a> or <a href="/contact">ask us</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>LPU Online LMS login page and its app links, read 27 October 2026: lms.lpuonline.com</li>
+<li>LPU Online contact page (helplines and admissions email), read 27 October 2026: lpuonline.com/contact-us</li>
+<li>UGC-DEB HEI programme register: deb.ugc.ac.in</li>
+</ul>
+
+<p class="disclaimer"><em>Checked on 27 October 2026. Portal addresses and helplines can change. Confirm them on lpuonline.com.</em></p>
+    `,
+  },
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))

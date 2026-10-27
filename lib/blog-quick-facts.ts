@@ -3,6 +3,20 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'lpu-online-lms-login': [
+    { label: 'LMS', value: 'lms.lpuonline.com', green: true },
+    { label: 'Login check', value: 'OTP to registered mobile and email' },
+    { label: 'Student helpline', value: '01824 520500' },
+    { label: 'Admissions', value: '01824 520001' },
+    { label: 'App', value: 'LPU Online (Play Store, App Store)' },
+  ],
+  'amity-online-student-portal-login': [
+    { label: 'Student portal', value: 'amigo.amityonline.com', green: true },
+    { label: 'Main site', value: 'amityonline.com' },
+    { label: 'Support', value: 'support.amityonline.com' },
+    { label: 'Phone', value: '1800-102-3434' },
+    { label: 'Exams', value: 'Online, proctored, mock exams offered' },
+  ],
   'ignou-online-admission-guide': [
     { label: 'ODL portal', value: 'ignouadmission.samarth.edu.in' },
     { label: 'Online portal', value: 'ignouiop.samarth.edu.in' },

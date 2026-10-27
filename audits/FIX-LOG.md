@@ -4567,3 +4567,9 @@ like `onlineuu.in`. The defence stays human, and is written on the field.
 **What:** new post `/blog/ignou-online-admission-guide`. Twelve claims across nine posts that the IGNOU MBA "requires OpenMAT" were rewritten to say no entrance test is listed.
 
 **Why:** the keyword export holds about 24,450 searches a month for IGNOU admission and registration with no Edify page. The facts come from IGNOU only: the ODL portal (ignouadmission.samarth.edu.in) and online portal (ignouiop.samarth.edu.in), their admission FAQs (steps, 100 KB / 200 KB upload limits, payment failure contacts), the MBAOL programme page, and the Common Prospectus July 2026 (registration and development fees, 15% digital-material concession, SC/ST programme-fee exemption, re-registration and refund sections, and IGNOU's exemption from the UGC ODL and Online Regulations by UGC letters of 9 Aug 2019 and 17 Mar 2020). The prospectus gives MBA eligibility as a 3-year bachelor degree with 50% (45% reserved) and never mentions OPENMAT, so the "requires OpenMAT" lines were stale. Rs 16,000 and Rs 18,000 per-semester figures are allowlisted against the IGNOU pages.
+
+## Amity and LPU student portal guides (2026-10-27)
+
+**What:** two short navigational posts, `/blog/amity-online-student-portal-login` and `/blog/lpu-online-lms-login`.
+
+**Why:** the keyword export holds about 21,780 searches a month for Amity's portal (amityonline.com variants, Amigo) and 5,200 for the LPU LMS, all Missing. Each post says which address is the learning portal and which is the admissions site, how the login and password reset work, and which helpline handles what, all from the universities' own login and contact pages read 27 Oct 2026. Both state that Edify is not affiliated. Left out on purpose: Amity's homepage claims "only QS-ranked online MBA in India" (flagged false in memory) and "India's first UGC-approved online university", and no fee figures appear.
