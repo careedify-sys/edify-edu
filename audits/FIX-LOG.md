@@ -9,8 +9,18 @@
 - **Measured locally:** one card 5,643 → 3,651 bytes (−35%); /universities DOM 1.44 MB → 0.50 MB in dev. Every computed
   style of all 43 elements in a card matched the old build (0 diffs, same wait time; a first comparison taken before
   fonts and logos loaded showed 3 false height diffs). Also shrinks the homepage and every programme hub that lists cards.
-- **Open, not done:** /blog renders all 248 posts on one page (473 KB, 137 KB of it client payload). Paginated
-  /blog/page/N archives would cap it, but that is a URL-structure change for Rishi to decide.
+- **Blog pagination (Rishi approved 28 Oct):** /blog rendered every post (473 KB in production, 137 KB of it client
+  payload for a category filter). Now /blog is page 1 (featured + 24) and /blog/page/2..N hold the rest, 24 each,
+  server-rendered with no post list shipped to the client. Local /blog 154 KB. Every one of 245 published posts is
+  linked from exactly one archive page (checked by fetching all 11 pages). Page N is self-canonical with its own title;
+  dynamicParams=false so /blog/page/1, /blog/page/12 and /blog/page/abc are real 404s.
+  - **Not in the sitemap, on purpose:** archive pages are crawl paths, not ranking targets, and the posts are already
+    listed. Keeping them out also means no static URL list to update when the page count changes.
+  - **Category filter removed:** it could not work across pages, and BLOG_CATEGORIES holds 36 values, many duplicates
+    ("University Review" / "University Reviews", "Career Guide" / "Career Guides"). Normalising them to ~8 would make
+    category hub pages worth building; not done.
+  - Two sidebar Trending chips share /blog/ugc-deb-approved-universities-list-2026, which threw a duplicate-key
+    warning; keyed by label now. The duplicate link itself is unchanged.
 
 ## 2026-10-28 · Press coverage from the 27 Oct release
 

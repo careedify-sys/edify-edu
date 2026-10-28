@@ -42,6 +42,24 @@ export function getPublishedListings(): BlogListing[] {
     )
 }
 
+// /blog is page 1 (the newest post as the featured card, then BLOG_PAGE_SIZE
+// more); /blog/page/N carries the rest. Rendering every post on one page made
+// /blog 473 KB at 248 posts and it grew with each new one.
+export const BLOG_PAGE_SIZE = 24
+
+export function getBlogPage(page: number) {
+  const all = getPublishedListings()
+  const rest = all.slice(1)
+  const totalPages = Math.max(1, Math.ceil(rest.length / BLOG_PAGE_SIZE))
+  return {
+    featured: page === 1 ? all[0] : undefined,
+    posts: rest.slice((page - 1) * BLOG_PAGE_SIZE, page * BLOG_PAGE_SIZE),
+    page,
+    totalPages,
+    total: all.length,
+  }
+}
+
 export function getPostBySlug(slug: string) { return BLOG_POSTS.find(p => p.slug === slug) || null }
 export const getBlogPost = getPostBySlug
 
