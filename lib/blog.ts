@@ -9329,59 +9329,20 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>The worst choice is no choice. Waiting a year "to figure things out" without a clear plan is how students lose momentum. Pick a direction, start the degree, and course-correct with a postgraduate qualification later if needed.</p>
 
-<h2>Career After 12th Science 2026 EEAT Notes</h2>
+<h2>Career After 12th Science 2026: Summary</h2>
 
-<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu.</em></p>
+<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Summary updated 29 October 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. It restates the guide above. Salary figures in this guide are indicative ranges, not offers.</em></p>
 
-<div class="callout-key"><strong>One-line frame for Career After 12th Science 2026:</strong> PCM opens B.Tech (Rs 15-40 LPA tier-1) plus BCA plus B.Sc CS plus B.Arch plus B.Design paths. PCB opens MBBS (Rs 7-30 LPA post-residency) plus BDS plus Pharmacy plus Nursing paths. PCMB combines both plus B.Sc Agriculture plus integrated M.Sc options. Pick based on interest plus aptitude plus financial runway.</div>
+<div class="callout-key"><strong>In one line:</strong> Science students have far more options than NEET and JEE. Choose by what you enjoy: technology points to BCA or BSc CS, business points to BBA and then an MBA, and healthcare without NEET points to BSc Nursing, B.Pharma or BSc Biotechnology.</div>
 
-<h2>Top 15 Science Stream Career Paths Salary Map 2026</h2>
-
-<table>
-  <caption>Top science career paths salary outcomes 2026</caption>
-  <thead><tr><th>Path</th><th>Year 1 CTC</th><th>Year 5 CTC</th><th>Best For</th></tr></thead>
-  <tbody>
-    <tr><td>B.Tech CSE (IIT, NIT)</td><td>Rs 15-40 LPA</td><td>Rs 30-70 LPA</td><td>Top tech career</td></tr>
-    <tr><td>B.Tech (tier-2 private)</td><td>Rs 4-8 LPA</td><td>Rs 10-22 LPA</td><td>Standard tech career</td></tr>
-    <tr><td>MBBS Government plus PG specialisation</td><td>Rs 7-15 LPA (PG)</td><td>Rs 18-35 LPA (specialist)</td><td>Medicine career</td></tr>
-    <tr><td>BDS plus PG Dental Specialty</td><td>Rs 4-8 LPA</td><td>Rs 12-22 LPA</td><td>Dentistry</td></tr>
-    <tr><td>B.Pharma</td><td>Rs 3-6 LPA</td><td>Rs 9-16 LPA</td><td>Pharma career</td></tr>
-    <tr><td>BSc Nursing (India)</td><td>Rs 3-6 LPA</td><td>Rs 9-16 LPA</td><td>India nursing career</td></tr>
-    <tr><td>BSc Nursing (foreign placement)</td><td>Rs 20-60 LPA</td><td>Rs 30-80 LPA</td><td>UK, Canada, Australia nursing</td></tr>
-    <tr><td>BCA plus MCA plus cloud certifications</td><td>Rs 4-9 LPA</td><td>Rs 12-22 LPA</td><td>Tech management track</td></tr>
-    <tr><td>B.Sc CS plus Data Science</td><td>Rs 5-10 LPA</td><td>Rs 14-25 LPA</td><td>Data analytics career</td></tr>
-    <tr><td>B.Arch plus M.Arch</td><td>Rs 3-6 LPA</td><td>Rs 10-22 LPA</td><td>Architecture career</td></tr>
-    <tr><td>BBA plus MBA</td><td>Rs 6-14 LPA</td><td>Rs 16-30 LPA</td><td>Management career</td></tr>
-    <tr><td>BA-LLB at NLU plus Corporate Law</td><td>Rs 18-22 LPA</td><td>Rs 30-50 LPA</td><td>Corporate law</td></tr>
-    <tr><td>UPSC IAS plus IPS plus IFS</td><td>Rs 8-12 LPA plus perks</td><td>Rs 18-30 LPA plus pension</td><td>Civil services</td></tr>
-    <tr><td>RBI Grade B plus SEBI Grade A</td><td>Rs 14-18 LPA</td><td>Rs 22-35 LPA plus pension</td><td>Finance regulatory</td></tr>
-    <tr><td>B.Sc Agriculture plus M.Sc</td><td>Rs 4-8 LPA</td><td>Rs 10-20 LPA</td><td>Agri-business plus ICAR</td></tr>
-  </tbody>
-</table>
-
-<h2>Science Stream Decision Framework 2026</h2>
-
-<ol>
-  <li><strong>Step 1: Identify genuine interest plus aptitude.</strong> Self-assessment plus career counsellor.</li>
-  <li><strong>Step 2: Check eligibility for target career.</strong> JEE for engineering, NEET for medical, CLAT for law.</li>
-  <li><strong>Step 3: Calculate financial runway.</strong> Engineering Rs 4-10 lakh, MBBS Rs 50 lakh-2 Cr private.</li>
-  <li><strong>Step 4: Apply for multiple entrance exams.</strong> JEE Main plus NEET plus CLAT plus CUET as backup.</li>
-  <li><strong>Step 5: Plan PG plus career trajectory beyond UG.</strong> M.Tech, MBA, PG specialisation matter.</li>
-</ol>
-
-<p>Science stream offers India's broadest career opportunity portfolio. Tier-1 engineering at IIT plus NIT plus medical at AIIMS plus PGIMER plus law at NLU plus IIM through CAT all open at top-tier salary outcomes. Match your interest plus aptitude plus financial runway to chosen path. The 12th science decision is the foundation. Choose deliberately plus execute consistently across UG plus PG for compounded career outcomes over 10-15 year horizon.</p>
-
-<h2>Common 12th Science Decision Mistakes 2026</h2>
+<h2>Common 12th Science Decision Mistakes</h2>
 
 <ul>
-  <li><strong>Picking on family pressure instead of personal interest:</strong> Leads to dropouts plus career dissatisfaction.</li>
-  <li><strong>Targeting only top tier entrance exams (JEE Advanced plus NEET PG) without backup:</strong> Limited options if main attempts fail.</li>
-  <li><strong>Ignoring PCMB cross-stream flexibility:</strong> PCMB students have widest career options.</li>
-  <li><strong>Underestimating tier-3 engineering cost vs limited placement:</strong> Rs 4-12 lakh fee vs Rs 4-6 LPA fresher placement is poor ROI.</li>
-  <li><strong>Skipping career counselling:</strong> Professional counsellor (Rs 5K-15K) saves 1-2 years of wrong path.</li>
+  <li><strong>Following family pressure over interest:</strong> pick the field you would study willingly for three or four years.</li>
+  <li><strong>Betting on one entrance exam:</strong> keep a backup degree in mind if NEET or JEE does not go your way.</li>
+  <li><strong>Waiting a year with no plan:</strong> start a degree and course-correct later with a postgraduate qualification.</li>
+  <li><strong>Choosing an online degree without checks:</strong> confirm UGC-DEB approval for the exact programme before you enrol.</li>
 </ul>
-
-<p>For 2026 12th science students, deliberate path selection plus strong UG execution plus PG planning together compound career outcomes. The right choice based on genuine interest plus financial runway plus aptitude unlocks long-term career success. Build the strategy in 12th itself plus execute consistently through UG plus PG for compounded outcomes. Match path to genuine interest plus aptitude plus financial runway for long-term career success. For MBA-specific career paths from a science background, see the <a href="/guides/career-after-mba-india" class="ilink">career paths after MBA for science students</a> guide.</p>
 
 <div class="internal-links">
   <div class="il-grid">
