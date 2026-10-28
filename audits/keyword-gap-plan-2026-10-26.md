@@ -191,3 +191,31 @@ eligibility follows the regulator. Feeds item 8 and the "one year online mba" ro
 - 2026-10-27 · computing cluster (computer science online course 2,400; online cs degree 1,000; data science online degree 880; online cyber security degree 480 ≈ 4,760/mo): /blog/online-computer-science-degree-india. Rule from UGC 2020 Regs Reg 4 (coding exception) and the Nov 2024 prohibited list; specialisation counts from lib/data.ts via getResolvableProgrammes. Psychology rows (~3,400/mo) stay parked: Rishi holds that online psychology is valid. CFA/CMA/ACCA/FRM rows (~3,700/mo) parked: professional bodies are not on the approved source list.
 - 2026-10-28 · #11 · `/blog/online-degree-admission-process-india` · ~4,400/mo (admission & eligibility cluster) · sources: UGC ODL/Online Regs 2020 Regs 2(b), 4, 14, 22; UG/PG Regs 2025; DEB notice 11 Nov 2024; circular 7-2/2026; Fee Refund Policy 2024-25 + 27 Oct 2025 notice. Programme counts from lib/data.ts via getResolvableProgrammes on 28 Oct (BBA 77, B.Com 56, BCA 54, BA 27, BSc 2). No rupee figure. Blocked facts: January 2027 DEB cut-off not yet published.
 - 2026-10-28 · Remaining export rows after #11: (a) university application-portal rows (Amrita 850, SASTRA ~810, Christ 260, LPU 590) need each portal read first, same pattern as the Amity/LPU portal posts; (b) "difference between online and distance learning" 420, only an MBA-specific post exists; (c) small tails (public policy ~710, library science ~680, BMS, DCA) need a DEB register check before writing; (d) psychology, CFA/CMA/ACCA, taxation, IIM certificates stay parked. Flag for Rishi: /blog/online-mba-admission-process-india-2026 carries unsourced figures ("60 percent of delays", early-bird waiver amounts per university).
+- 2026-10-28 · #11 live check: 200, index,follow, self-canonical, in sitemap.xml, title/meta/H1 match source, Article + FAQPage (7 Q) + BreadcrumbList schema, zero rupee figures rendered (source has none), all 57 internal hrefs return 200 with no redirect. No mismatch.
+- 2026-10-28 · Rishi's Semrush read (India, 28 Oct): online-vs-distance comparison is ~270/mo (odl full form and distance mba are off-target); portal admission intent is ~1,400/mo, login queries (amity online login 33,100, srm online portal 1,900) are existing students. Both deprioritised.
+- 2026-10-28 · Amity / MUJ online MBA review blogs: NOT written, both already exist (`/blog/amity-online-mba-review-2026`, `/blog/muj-online-mba-review-2026`; no duplicate slugs). Diagnosis below; no change made.
+
+### Amity / MUJ MBA review diagnosis, 28 Oct
+Both posts: 200, index,follow, self-canonical, in sitemap. Linked from their MBA hubs (2 links each) and from other posts (Amity 13, MUJ 8). Not linked from the university overview pages. Indexing and linking are not the problem.
+
+| Query (India/mo) | Our best URL and Semrush position |
+|---|---|
+| amity online mba 8,100 | no edifyedu.in URL in the top 100 |
+| amity online mba fees 2,400 / amity mba online fees 1,900 / amity university online mba fees 1,600 | /universities/amity-university-online/mba at 54 / 54 / 61 |
+| amity online mba review 140; amity online review 170 | the review blog at 11-12 (only queries it ranks for) |
+| manipal jaipur fees 6,600 | /universities/manipal-university-jaipur-online at 41 |
+| manipal university jaipur mba fees 1,900 | /compare/manipal-jaipur-vs-manipal-mahe 20, overview 63, MBA hub 75 |
+| muj review blog | not checked: Semrush API units hit zero mid-run |
+
+GSC (3 months to 8 Oct): Amity review 11,231 impressions, 0.15% CTR, avg position 7.79 (long-tail mix). MUJ review 1,669 impressions, 0.12%, 7.49. Amity MBA hub 591 impressions at avg 43.
+
+Why they do not rank for the ~20,000/mo:
+1. **Intent.** Both titles say "review". The Amity post ranks 11-12 for the review queries, about 450/mo combined. The volume sits on the navigational head term ("amity online mba", where the official portal and aggregators hold the SERP) and on fee queries, where Google picks the hub, not the blog.
+2. **Fee queries split across 3-4 URLs.** For "manipal university jaipur mba fees" three edifyedu.in URLs rank at once (20, 63, 75) and the compare page beats the hub. Same pattern as memory `project_fee_query_gap`.
+3. **Amity post `title` and `seoTitle` disagree** ("...Fees 2026: ₹2.07L Review..." vs "...Who It Actually Suits"). The live <title> uses seoTitle, so the fee wording never reaches the SERP.
+4. Site-wide context: the Sep 2026 spam-update decline (memory `project_spam_update_decline_oct2026`); measure before reworking.
+Not a problem: `/review/{slug}` URLs Semrush still lists are noindex review-submission forms.
+Decision needed from Rishi: which single URL owns "{uni} online mba fees" (hub or review), before retitling either.
+
+## Next gap after the review decision: portal admission guides (parked 28 Oct)
+Admission intent only, no login pages: lpu online admission 590, amity online admission 260, amity online portal 210 (only the admission side), cu online admission 210, nmims online portal 170 (admission side) ≈ 1,400/mo. Read each official admission page first; same pattern as the Amity/LPU portal posts. Do not target "amity online login" (33,100) or "srm online portal" (1,900).
