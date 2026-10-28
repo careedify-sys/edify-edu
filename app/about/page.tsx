@@ -284,6 +284,37 @@ export default function AboutPage() {
         {/* Press */}
         <div className="card p-8 mb-8">
           <h2 className="text-2xl font-bold text-navy mb-6">In the Press</h2>
+          <div className="grid sm:grid-cols-2 gap-4 mb-8">
+            {[
+              {
+                outlet: 'ANI · 27 Oct 2026',
+                headline: 'Same Degree, Different Answers: How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
+                url: 'https://aninews.in/news/business/same-degree-different-answers-how-edifyeduin-is-bringing-transparency-to-indias-online-degree-choices20261027123148',
+              },
+              {
+                outlet: 'ET Edge Insights · Oct 2026',
+                headline: 'How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
+                url: 'https://etedge-insights.com/brands-speak/how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/',
+              },
+            ].map(item => (
+              <a
+                key={item.url}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-5 rounded-xl no-underline group"
+                style={{ background: 'var(--surface-2)', border: '1px solid var(--border)' }}
+              >
+                <div className="text-xs font-bold uppercase tracking-wider mb-2" style={{ color: 'var(--amber-text)' }}>
+                  {item.outlet}
+                </div>
+                <p className="font-bold text-navy text-sm leading-snug mb-3">{item.headline}</p>
+                <span className="text-sm font-semibold group-hover:underline" style={{ color: 'var(--amber-text)' }}>
+                  Read the article →
+                </span>
+              </a>
+            ))}
+          </div>
           <a
             href="https://www.sherisesstudios.com/product-page/boss-moves-magazine-june-2026-edition"
             target="_blank"

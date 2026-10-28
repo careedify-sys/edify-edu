@@ -2,12 +2,29 @@ import Image from 'next/image'
 
 type PressItem = {
   publication: string
-  logo: string
+  // Items without a logo file render as a text wordmark card
+  logo?: string
   url: string
   alt: string
+  headline?: string
+  date?: string
 }
 
 const pressItems: PressItem[] = [
+  {
+    publication: 'ANI',
+    url: 'https://aninews.in/news/business/same-degree-different-answers-how-edifyeduin-is-bringing-transparency-to-indias-online-degree-choices20261027123148',
+    alt: 'ANI News',
+    headline: 'Same Degree, Different Answers: How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
+    date: '27 Oct 2026',
+  },
+  {
+    publication: 'ET Edge Insights',
+    url: 'https://etedge-insights.com/brands-speak/how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/',
+    alt: 'ET Edge Insights',
+    headline: 'How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
+    date: 'Oct 2026',
+  },
   {
     publication: 'Tech Bullion',
     logo: '/press/techbullion.png',
@@ -53,15 +70,32 @@ export default function PressStrip() {
               aria-label={`Read coverage on ${item.publication}`}
               className="inline-flex items-center opacity-95 hover:opacity-100 hover:scale-105 transition-transform duration-200"
             >
-              <Image
-                src={item.logo}
-                alt={item.alt}
-                width={640}
-                height={200}
-                className="rounded-lg max-h-40 md:max-h-48 w-auto object-contain"
-                sizes="(max-width: 640px) 480px, 640px"
-                priority={false}
-              />
+              {item.logo ? (
+                <Image
+                  src={item.logo}
+                  alt={item.alt}
+                  width={640}
+                  height={200}
+                  className="rounded-lg max-h-40 md:max-h-48 w-auto object-contain"
+                  sizes="(max-width: 640px) 480px, 640px"
+                  priority={false}
+                />
+              ) : (
+                <div
+                  className="rounded-lg px-5 py-4 text-left max-w-[280px]"
+                  style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}
+                >
+                  <div className="font-black text-xl text-navy leading-tight">{item.publication}</div>
+                  {item.date && (
+                    <div className="text-[11px] font-bold uppercase tracking-wider mt-1" style={{ color: 'var(--amber-text)' }}>
+                      {item.date}
+                    </div>
+                  )}
+                  {item.headline && (
+                    <p className="text-xs mt-2 leading-snug" style={{ color: 'var(--ink-2)' }}>{item.headline}</p>
+                  )}
+                </div>
+              )}
             </a>
           ))}
         </div>
