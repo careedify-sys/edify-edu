@@ -392,6 +392,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     officialUrl: 'https://amityonline.com',
     feeVerifiedOn: '2026-10-06',
     uniType: 'private',
+    // MCA Rs 1,99,000 confirmed by Rishi 2026-10-28 (the Aug audit's Rs 1,70,000 is superseded).
     programFees: { bca: { fee: 175000 }, mca: { fee: 199000 } },
     // BBA: Rs 1,75,120 paid one-time, Rs 1,99,000 paid semester-wise. Payment
     // modes, not a discount. Verified by Rishi on the portal 2026-08-07.
@@ -507,11 +508,18 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     officialUrl: 'https://www.lpuonline.com',
     feeVerifiedOn: '2026-10-06',
     uniType: 'private',
-    programFees: { bca: { fee: 122400 }, mca: { fee: 129600 } },
+    // MCA: Rs 32,500 per semester (4 semesters, so Rs 1,30,000 semester-wise) or
+    // Rs 1,17,440 one-time. Confirmed by Rishi 2026-10-28; replaces Rs 1,29,600
+    // (programFees) and "₹1.08L" (pd.fees), which disagreed and were both unverified.
+    programFees: { bca: { fee: 122400 }, mca: { fee: 117440, feeMax: 130000 } },
     // MBA list Rs 2,00,000; Rs 1,61,600 paid semester-wise; Rs 1,46,240 paid as a
     // lump sum. Official portal, recorded Aug 2026, confirmed by Rishi 2026-10-27.
     // pd.fees "₹1.61L" is a truncation of 1,61,600, not a fee in its own right.
-    feeBreakdown: { mba: { list: 200000, net: { min: 146240, max: 161600, label: 'by payment plan (lump sum to semester-wise)' }, source: 'lpuonline.com, Aug 2026' } },
+    feeBreakdown: {
+      // MBA tiers reconfirmed by Rishi 2026-10-28 (semester-wise 1,61,600; one-time 1,46,240).
+      mba: { list: 200000, net: { min: 146240, max: 161600, label: 'by payment plan (lump sum to semester-wise)' }, source: 'lpuonline.com, Aug 2026; reconfirmed by Rishi 2026-10-28' },
+      mca: { list: 130000, modes: [{ amount: 117440, label: 'one-time' }, { amount: 130000, label: 'semester-wise (₹32,500 × 4 semesters)' }], perSemester: { list: 32500, listLabel: 'semester-wise' }, source: 'Rishi, 2026-10-28' },
+    },
     logo: '/logos/university_logos/lpu-logo.svg',
     name: 'Lovely Professional University Online',
     abbr: 'LPUO',
@@ -563,7 +571,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved MBA from Lovely Professional University (LPU), recognised for corporate hiring.'},
       'MCA': {
         specs: ['AR/VR (Game Development)', 'Machine Learning & AI', 'Data Science', 'Cybersecurity', 'Full Stack Web Development', 'Cloud Computing'],
-        fees: '₹1.08L',
+        fees: '₹1,17,440–₹1,30,000',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '₹4L – ₹14L per annum',

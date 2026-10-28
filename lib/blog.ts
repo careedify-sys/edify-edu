@@ -2740,7 +2740,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>Ganpat University</td><td>Rs 97,000</td><td>A</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>SGT University</td><td>Rs 98,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Maharishi Markandeshwar University</td><td>Rs 1,00,000</td><td>A++</td><td>#85</td></tr>
-    <tr><td>Lovely Professional University</td><td>Rs 1,08,000</td><td>A++</td><td>#31</td></tr>
+    <tr><td>Lovely Professional University</td><td>Rs 1,17,440 one-time; Rs 1,30,000 semester-wise</td><td>A++</td><td>#31</td></tr>
     <tr><td>Noida International University</td><td>Rs 1,18,000</td><td>A+</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Parul University</td><td>Rs 1,20,000</td><td>A++</td><td>Not ranked in NIRF 2025</td></tr>
     <tr><td>Amrita Vishwa Vidyapeetham</td><td>Rs 1,40,000</td><td>A++</td><td>#8</td></tr>
@@ -2764,7 +2764,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>An MCA is a technical degree, so what you study matters more than it would for a general management qualification. Fourteen of these twenty-four universities now run an artificial intelligence, data science or cybersecurity track.</p>
 
-<p><a href="/universities/bharati-vidyapeeth-university-online/mca">Bharati Vidyapeeth lists twelve specialisations</a>, the widest menu here, at Rs 1,46,000. <a href="/universities/lovely-professional-university-online/mca">Lovely Professional University offers five</a> at Rs 1,08,000, paired with NAAC A++ and NIRF rank 31.</p>
+<p><a href="/universities/bharati-vidyapeeth-university-online/mca">Bharati Vidyapeeth lists twelve specialisations</a>, the widest menu here, at Rs 1,46,000. <a href="/universities/lovely-professional-university-online/mca">Lovely Professional University offers five</a> at Rs 1,17,440 paid one-time or Rs 1,30,000 paid semester-wise, paired with NAAC A++ and NIRF rank 31.</p>
 
 <p>Check that a specialisation is genuinely taught rather than listed. Ask how many papers in the four semesters actually belong to that track, and what the final project involves. A single elective is not a specialisation.</p>
 
@@ -27511,7 +27511,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
             "q": "How does Amity online MCA compare to Manipal online MCA?",
-            "a": "Amity costs Rs.1.7L vs Manipal MAHE's Rs.2.2L. Manipal is an Institution of Eminence with a higher NIRF ranking. Amity offers distinctive industry co-developed specialisations with HCLTech, Paytm, and TCS iON that Manipal doesn't match. Both are UGC-approved."
+            "a": "Amity costs Rs 1,99,000 vs Manipal MAHE's Rs.2.2L. Manipal is an Institution of Eminence with a higher NIRF ranking. Amity offers distinctive industry co-developed specialisations with HCLTech, Paytm, and TCS iON that Manipal doesn't match. Both are UGC-approved."
       },
       {
             "q": "Can I pursue Amity MCA online while working full-time?",
@@ -41409,7 +41409,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
       },
       {
         q: 'What is the total fee for an online MCA in India in 2026?',
-        a: 'Online MCA fees in India range from approximately Rs 50,800 (IGNOU distance, not online) to Rs 2,20,000 (MAHE Manipal Online) for the 2-year program. Mid-range options include LPU Online at Rs 1,29,600 and Chandigarh University Online at Rs 1,55,000. All figures are indicative. Verify current fees at official university portals before paying.'
+        a: 'Online MCA fees in India range from approximately Rs 50,800 (IGNOU distance, not online) to Rs 2,20,000 (MAHE Manipal Online) for the 2-year program. Mid-range options include LPU Online at Rs 1,30,000 semester-wise or Rs 1,17,440 one-time and Chandigarh University Online at Rs 1,55,000. All figures are indicative. Verify current fees at official university portals before paying.'
       },
       {
         q: 'How long does an online MCA take to complete in India?',
@@ -41420,7 +41420,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <p><em>By Rishi Kumar, Senior Education Researcher, Founder EdifyEdu. Published 27 May 2026.</em></p>
 
 <div class="callout-key">
-<strong>Quick Answer:</strong> Online MCA programs from UGC-DEB approved universities are legally equivalent to campus MCA degrees in India. The best options in 2026 include MAHE Manipal Online (NAAC A++, Rs 2,20,000), Amity University Online (NAAC A+, Rs 1,99,000), and LPU Online (NAAC A++, Rs 1,29,600). Duration is 2 years. No entrance exam required at most universities. Eligibility: BCA or BSc (CS/IT/Maths) with 50% aggregate.
+<strong>Quick Answer:</strong> Online MCA programs from UGC-DEB approved universities are legally equivalent to campus MCA degrees in India. The best options in 2026 include MAHE Manipal Online (NAAC A++, Rs 2,20,000), Amity University Online (NAAC A+, Rs 1,99,000), and LPU Online (NAAC A++, Rs 1,30,000 semester-wise or Rs 1,17,440 one-time). Duration is 2 years. No entrance exam required at most universities. Eligibility: BCA or BSc (CS/IT/Maths) with 50% aggregate.
 </div>
 
 <h2>What is an Online MCA?</h2>
@@ -41454,7 +41454,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <tr><td><a href="/universities/amity-university-online">Amity University Online</a></td><td>Rs 1,99,000</td><td>A+</td><td>2 years</td><td>Yes</td></tr>
 <tr><td><a href="/universities/manipal-university-jaipur-online">Manipal University Jaipur Online</a></td><td>Rs 1,64,000</td><td>A+</td><td>2 years</td><td>Yes</td></tr>
 <tr><td><a href="/universities/chandigarh-university-online">Chandigarh University Online</a></td><td>Rs 1,55,000</td><td>A+</td><td>2 years</td><td>Yes</td></tr>
-<tr><td><a href="/universities/lovely-professional-university-online">LPU Online</a></td><td>Rs 1,29,600</td><td>A++</td><td>2 years</td><td>Yes</td></tr>
+<tr><td><a href="/universities/lovely-professional-university-online">LPU Online</a></td><td>Rs 1,30,000 semester-wise; Rs 1,17,440 one-time</td><td>A++</td><td>2 years</td><td>Yes</td></tr>
 <tr><td><a href="/universities/sharda-university-online">Sharda University Online</a></td><td>Rs 1,20,000</td><td>A+</td><td>2 years</td><td>Yes</td></tr>
 <tr><td><a href="/universities/sikkim-manipal-university-online">Sikkim Manipal Online</a></td><td>Rs 1,10,000</td><td>A+</td><td>2 years</td><td>Yes</td></tr>
 <tr><td><a href="/universities/galgotias-university-online">Galgotias University Online</a></td><td>Rs 74,000</td><td>A+</td><td>2 years</td><td>Yes</td></tr>
@@ -41542,7 +41542,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
       },
       {
         q: 'Which online MCA is best after BCA in India?',
-        a: 'Amity University Online (NAAC A+, Rs 1,99,000) and LPU Online (NAAC A++, Rs 1,29,600) are among the most recognised options for BCA graduates seeking an online MCA. Galgotias University Online (NAAC A+, Rs 74,000) is the most affordable UGC-DEB approved option. All fees are indicative; verify at official portals.'
+        a: 'Amity University Online (NAAC A+, Rs 1,99,000) and LPU Online (NAAC A++, Rs 1,30,000 semester-wise or Rs 1,17,440 one-time) are among the most recognised options for BCA graduates seeking an online MCA. Galgotias University Online (NAAC A+, Rs 74,000) is the most affordable UGC-DEB approved option. All fees are indicative; verify at official portals.'
       },
       {
         q: 'Can I do MCA after BCA without Maths in Class 12?',
@@ -41588,7 +41588,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 </thead>
 <tbody>
 <tr><td><a href="/universities/amity-university-online">Amity Online</a></td><td>Rs 1,99,000</td><td>A+</td><td>Data Science, Full Stack, Cloud</td><td>Brand recognition, international mobility</td></tr>
-<tr><td><a href="/universities/lovely-professional-university-online">LPU Online</a></td><td>Rs 1,29,600</td><td>A++</td><td>Data Science, Cybersecurity, Full Stack</td><td>Budget-conscious, strong placement cell</td></tr>
+<tr><td><a href="/universities/lovely-professional-university-online">LPU Online</a></td><td>Rs 1,30,000 semester-wise; Rs 1,17,440 one-time</td><td>A++</td><td>Data Science, Cybersecurity, Full Stack</td><td>Budget-conscious, strong placement cell</td></tr>
 <tr><td><a href="/universities/chandigarh-university-online">Chandigarh University Online</a></td><td>Rs 1,55,000</td><td>A+</td><td>Cloud, AI/ML, Full Stack</td><td>Strong North India brand</td></tr>
 <tr><td><a href="/universities/galgotias-university-online">Galgotias University Online</a></td><td>Rs 74,000</td><td>A+</td><td>Computer Science, IT</td><td>Most affordable UGC-DEB approved option</td></tr>
 </tbody>
@@ -41600,7 +41600,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>Campus MCA at an NIT, IIIT, or top state university carries stronger placement infrastructure and alumni networks. If you clear the MCA entrance exam (NIMCET for NITs, or state-level tests) and can afford campus fees plus living costs, campus MCA is worth considering for the best placement outcomes.</p>
 
-<p>Online MCA makes more sense if you need to work while studying, cannot relocate, or want to minimise the total cost. A 2-year online MCA at Rs 1,29,600 (LPU) versus a campus MCA at Rs 2-4 lakh plus Rs 1-2 lakh annual living costs is a significant financial difference. Online MCA allows you to keep earning while completing the degree, which further tilts the financial calculation.</p>
+<p>Online MCA makes more sense if you need to work while studying, cannot relocate, or want to minimise the total cost. A 2-year online MCA at Rs 1,30,000 semester-wise (LPU) versus a campus MCA at Rs 2-4 lakh plus Rs 1-2 lakh annual living costs is a significant financial difference. Online MCA allows you to keep earning while completing the degree, which further tilts the financial calculation.</p>
 
 <p>The key test: does your target employer or career path require a specific institution's name? If yes, target that campus program. If the requirement is just a valid MCA degree from a UGC-DEB approved university, online MCA gives you the same credential at lower cost and without a career break.</p>
 
@@ -41647,7 +41647,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p><strong>What salary can I expect after MCA following a BCA?</strong><br>Entry-level: Rs 4-8 LPA. After 5 years: Rs 12-20 LPA in senior roles. All figures are indicative based on placement disclosures.</p>
 
-<p><strong>Which online MCA is best after BCA?</strong><br>Amity Online (NAAC A+, Rs 1,99,000) for brand recognition. LPU Online (NAAC A++, Rs 1,29,600) for budget. Galgotias Online (NAAC A+, Rs 74,000) for lowest cost.</p>
+<p><strong>Which online MCA is best after BCA?</strong><br>Amity Online (NAAC A+, Rs 1,99,000) for brand recognition. LPU Online (NAAC A++, Rs 1,30,000 semester-wise or Rs 1,17,440 one-time) for budget. Galgotias Online (NAAC A+, Rs 74,000) for lowest cost.</p>
 
 <p><strong>Can I do MCA after BCA without Maths in Class 12?</strong><br>If your BCA included Mathematics subjects, you typically qualify. Confirm the specific requirement with your chosen university's admissions team.</p>
 
@@ -41841,11 +41841,11 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     faqs: [
       {
         q: 'Which is better, Amity Online MCA or LPU Online MCA in 2026?',
-        a: 'Both are NAAC A++ rated and UGC-DEB approved. Amity suits students who value brand recognition, international accreditations, and a polished learning platform. LPU suits students who want a lower total fee (Rs 1,29,600 vs Rs 1,99,000) and a strong physical campus network for placement drives. The better choice depends entirely on your budget, career target, and whether brand name or fee saving matters more to you.'
+        a: 'Both are NAAC A++ rated and UGC-DEB approved. Amity suits students who value brand recognition, international accreditations, and a polished learning platform. LPU suits students who want a lower total fee (Rs 1,30,000 semester-wise or Rs 1,17,440 one-time, vs Rs 1,99,000) and a strong physical campus network for placement drives. The better choice depends entirely on your budget, career target, and whether brand name or fee saving matters more to you.'
       },
       {
         q: 'What is the fee difference between Amity and LPU online MCA?',
-        a: 'Amity Online MCA total fee is approximately Rs 1,99,000 over 2 years. LPU Online MCA total fee is approximately Rs 1,29,600 over 2 years. The difference is approximately Rs 69,400 in Amity\'s favour for students who prioritise lower cost. All fees are indicative; verify current semester-wise breakdowns at official portals before paying.'
+        a: 'Amity Online MCA total fee is approximately Rs 1,99,000 over 2 years. LPU Online MCA costs Rs 1,30,000 paid semester-wise or Rs 1,17,440 paid one-time. LPU is Rs 69,000 to Rs 81,560 cheaper, which matters for students who prioritise lower cost. All fees are indicative; verify current semester-wise breakdowns at official portals before paying.'
       },
       {
         q: 'Does Amity Online MCA have better placements than LPU Online MCA?',
@@ -41876,7 +41876,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <tr><th>Fee Component</th><th>Amity University Online</th><th>LPU Online</th></tr>
 </thead>
 <tbody>
-<tr><td>Total Program Fee (indicative)</td><td>Rs 1,99,000</td><td>Rs 1,29,600</td></tr>
+<tr><td>Total Program Fee (indicative)</td><td>Rs 1,99,000</td><td>Rs 1,30,000 semester-wise; Rs 1,17,440 one-time</td></tr>
 <tr><td>Duration</td><td>2 years (4 semesters)</td><td>2 years (4 semesters)</td></tr>
 <tr><td>Fee Difference</td><td colspan="2">Amity costs approx Rs 69,400 more</td></tr>
 <tr><td>EMI Availability</td><td>Yes (no-cost EMI options)</td><td>Yes</td></tr>
@@ -41958,7 +41958,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p><strong>Which is better, Amity or LPU online MCA in 2026?</strong><br>Both are NAAC accredited and UGC-DEB approved. Amity: NAAC A+. LPU: NAAC A++. Amity for brand and international recognition. LPU for lower fee (Rs 69,400 cheaper) and Cybersecurity specialisation.</p>
 
-<p><strong>What is the fee difference?</strong><br>Amity: Rs 1,99,000. LPU: Rs 1,29,600. Difference: approx Rs 69,400. All indicative; verify at official portals.</p>
+<p><strong>What is the fee difference?</strong><br>Amity: Rs 1,99,000. LPU: Rs 1,30,000 semester-wise or Rs 1,17,440 one-time. Difference: Rs 69,000 to Rs 81,560. All indicative; verify at official portals.</p>
 
 <p><strong>Does Amity have better placements than LPU?</strong><br>Both have active placement cells. Neither discloses full online-batch placement data publicly. Ask admissions for online-specific placement records before enrolling.</p>
 

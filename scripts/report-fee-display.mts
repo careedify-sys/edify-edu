@@ -23,6 +23,8 @@ const VERIFIED = (id: string, p: string) =>
   (id === 'symbiosis-university-online' && p === 'BBA') ||
   (id === 'galgotias-university-online' && p === 'BBA') ||
   (id === 'amity-university-online' && p === 'BBA') ||
+  (id === 'amity-university-online' && p === 'MCA') ||
+  (id === 'lovely-professional-university-online' && p === 'MCA') ||
   id === 'manipal-university-jaipur-online' || id === 'uttaranchal-university-online'
 
 const src = fs.readFileSync('lib/data.ts', 'utf8').split('\n')

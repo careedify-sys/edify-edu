@@ -14,6 +14,22 @@ Full before/after for every changed string: **audits/fee-display-unify-2026-10-2
 rows; one column pair per surface; source field and lib/data.ts line; VERIFIED/UNVERIFIED). Regenerate with
 `npx tsx scripts/report-fee-display.mts audits/fee-display-unify-2026-10-28.csv`.
 
+## Round 2 (28 Oct 2026): Rishi's answers applied
+
+| Item | What Rishi confirmed | Change | Renders as |
+|---|---|---|---|
+| LPU MBA | Semester-wise ₹1,61,600, one-time ₹1,46,240 | No value change; source and expiry note updated | ₹2,00,000 list; ₹1,46,240–₹1,61,600 by payment plan |
+| LPU MCA | ₹32,500 per semester; one-time ₹1,17,440 | `feeBreakdown.mca` with payment modes. `programFees.mca` changed from 1,29,600 to 1,17,440–1,30,000, `pd.fees` from "₹1.08L" to "₹1,17,440–₹1,30,000". Removed from the drift list | ₹1,17,440 one-time; ₹1,30,000 semester-wise (₹32,500 × 4 semesters). Per semester: ₹32,500 |
+| Amity MCA | ₹1,99,000 | Removed from the drift list. The Aug ₹1,70,000 is superseded | ₹1,99,000 |
+| Shobhit | Shobhit Institute of Engineering & Technology is the institution behind Shobhit Online | `verify-slug-overrides.json` manual entry, both directions | /verify/shobhit-institute-of-engineering-technology-online links /universities/shobhit-university-online, and back |
+| Uttaranchal | Add only the specialisations it officially offers | lib/data-slim.ts `mbaSpecs` copied from the 8 MBA specialisations in lib/data.ts; nothing new added | Uttaranchal now appears on the matching MBA spec hubs |
+
+LPU MCA's ₹1,30,000 is the published ₹32,500 multiplied by the programme's 4 semesters. The label shows the
+working. Nothing is divided from a total.
+
+Still open: BS Abdur Rahman (unconfirmed, unlinked). The remaining drift pairs are galgotias/mca, ignou/bca and
+ignou/mca. The 179 abbreviated-only fees stay on the counsellor line, minus LPU MCA, which is now exact.
+
 ## Needs Rishi's decision first
 
 1. **179 programme fees, all on indexable hubs, now show the counsellor line instead of a number.** Each one's only

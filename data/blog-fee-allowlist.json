@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-10-28",
   "note": "Owner-verified fee figures that have no counterpart in lib/data.ts and therefore cannot resolve to MATCH via getDisplayFee. Only for figures a university's admissions team has confirmed in writing for a specific specialisation-tier or payment-mode variant that the fees hub does not model yet. Prefer the FeeVariant schema when implemented (see audits/fee-model-proposal-2026-08-07.md). Adding an entry here is a source-of-truth commitment: someone will re-verify at each intake.",
   "entries": [
     {
@@ -1324,6 +1324,42 @@
       "source": "IGNOU MBAOL and MBA programme-detail pages (ignouiop.samarth.edu.in, ignouadmission.samarth.edu.in) and Common Prospectus July 2026",
       "verified_date": "2026-10-27",
       "note": "MBA semester 3 (8-credit project). Rs 16,000 x 3 + Rs 18,000 = Rs 66,000, which matches lib/data.ts."
+    },
+    {
+      "slug": "online-mca-india-2026",
+      "figure": 130000,
+      "university": "lovely-professional-university-online",
+      "programme": "MCA",
+      "source": "Owner-verified by Rishi",
+      "verified_date": "2026-10-28",
+      "note": "LPU MCA semester-wise total (Rs 32,500 x 4 semesters). Matches lib/data.ts feeBreakdown.mca, but this sentence names several universities, so the gate cannot attribute the figure to LPU and counts it UNRESOLVED."
+    },
+    {
+      "slug": "online-mca-india-2026",
+      "figure": 117440,
+      "university": "lovely-professional-university-online",
+      "programme": "MCA",
+      "source": "Owner-verified by Rishi",
+      "verified_date": "2026-10-28",
+      "note": "LPU MCA one-time payment. Matches lib/data.ts feeBreakdown.mca, but this sentence names several universities, so the gate cannot attribute the figure to LPU and counts it UNRESOLVED."
+    },
+    {
+      "slug": "mca-after-bca-is-it-good-2026",
+      "figure": 130000,
+      "university": "lovely-professional-university-online",
+      "programme": "MCA",
+      "source": "Owner-verified by Rishi",
+      "verified_date": "2026-10-28",
+      "note": "LPU MCA semester-wise total (Rs 32,500 x 4 semesters). Matches lib/data.ts feeBreakdown.mca, but this sentence names several universities, so the gate cannot attribute the figure to LPU and counts it UNRESOLVED."
+    },
+    {
+      "slug": "mca-after-bca-is-it-good-2026",
+      "figure": 117440,
+      "university": "lovely-professional-university-online",
+      "programme": "MCA",
+      "source": "Owner-verified by Rishi",
+      "verified_date": "2026-10-28",
+      "note": "LPU MCA one-time payment. Matches lib/data.ts feeBreakdown.mca, but this sentence names several universities, so the gate cannot attribute the figure to LPU and counts it UNRESOLVED."
     }
   ]
 }

@@ -10,7 +10,6 @@
     "manav-rachna-online",
     "charusat-university-online",
     "dr-dy-patil-vidyapeeth-online",
-    "shobhit-university-online",
     "amet-university-online",
     "srm-university-sikkim-online",
     "sathyabama-university-online",
@@ -63,9 +62,11 @@
     "sgt-university-online": "shree-guru-gobind-singh-tricentenary-university-online",
     "vit-university-online": "vellore-institute-of-technology-online",
     "sastra-university-online": "shanmugha-arts-science-technology-research-academy-online",
-    "dy-patil-university-online": "dy-patil-navi-mumbai-online"
+    "dy-patil-university-online": "dy-patil-navi-mumbai-online",
+    "shobhit-university-online": "shobhit-institute-of-engineering-technology-online"
   },
   "_manual_entries": {
-    "dy-patil-university-online": "Added 2026-10-27 on Rishi's confirmation, not by name match: per the 7 Aug audit dy-patil-university-online is the Navi Mumbai institution. dr-dy-patil-vidyapeeth-online is Pune and must never map here."
+    "dy-patil-university-online": "Added 2026-10-27 on Rishi's confirmation, not by name match: per the 7 Aug audit dy-patil-university-online is the Navi Mumbai institution. dr-dy-patil-vidyapeeth-online is Pune and must never map here.",
+    "shobhit-university-online": "Added 2026-10-28 on Rishi's confirmation, not by name match: Shobhit Institute of Engineering & Technology is the institution behind Shobhit Online."
   }
 }

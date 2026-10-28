@@ -1,5 +1,23 @@
 # Fix log
 
+## 2026-10-28 · LPU MCA and Amity MCA fees confirmed; Shobhit verify link; Uttaranchal on MBA spec hubs
+
+Rishi confirmed:
+- **LPU MCA:** ₹32,500 per semester or ₹1,17,440 one-time. The record held two disagreeing unverified figures
+  (programFees ₹1,29,600, pd.fees "₹1.08L"). It now carries a payment-mode breakdown.
+- **Amity MCA:** ₹1,99,000. The Aug ₹1,70,000 is superseded.
+- Both MCA pairs are off the drift list, so their compare cells show numbers again.
+- **LPU MBA tiers** reconfirmed.
+- **Shobhit:** Shobhit Institute of Engineering & Technology is Shobhit Online. Its verify page now links the profile
+  and back, as a manual override entry.
+- **Blog posts quoting the old figures** were corrected: LPU MCA "Rs 1,29,600" / "Rs 1,08,000" (online-mca-india-2026,
+  mca-after-bca-is-it-good-2026, online-mca-amity-vs-lpu-2026, online-mca-fees-india-2026-compared) and Amity MCA
+  "Rs.1.7L" (amity-online-mca-fees-review). A FAQ that said the LPU saving was "in Amity's favour" now says LPU is
+  Rs 69,000 to Rs 81,560 cheaper. Four LPU figures in multi-university sentences are allowlisted, because the blog
+  gate cannot attribute them to LPU.
+- **Uttaranchal** was missing from every MBA spec hub because its lib/data-slim.ts record had no mbaSpecs. It now
+  mirrors the 8 specialisations already in lib/data.ts, and nothing new.
+
 ## 2026-10-28 · Fee display unified on getExactFee: cards, hero, schema, titles, compare FAQs
 
 Rishi's rule from the tech-health review: every fee is exact rupees, labelled list vs discount or payment mode, never

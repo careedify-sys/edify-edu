@@ -311,8 +311,6 @@ export const FEE_COUNSELLOR_LINE = 'Contact our counsellor for current fee detai
 // programFees and pd.fees disagree and neither has been read from the portal.
 // Rishi, 2026-10-27. Remove an entry once the portal figure is in feeBreakdown.
 const DRIFT_PAIRS: ReadonlySet<string> = new Set([
-  'amity-university-online|mca',
-  'lovely-professional-university-online|mca',
   'galgotias-university-online|mca',
   'ignou-online|bca',
   'ignou-online|mca',
