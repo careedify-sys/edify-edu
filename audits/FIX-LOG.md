@@ -1,5 +1,27 @@
 # Fix log
 
+## 2026-10-29 · "Low readability" audit rows, batch 2: 19 blog posts rewritten in plain language
+
+- **Why:** the 19 flagged posts scored 1-40 on Flesch reading ease, with ~277 paragraphs over 60 words. Render-time
+  splitting (batch 1) fixed paragraph length but not long sentences and heavy vocabulary.
+- **Fix:** each post's content and FAQs rewritten in short sentences and plain words via a scripted swap in
+  lib/blog.ts (content literal, faqs array, updatedAt), one post per commit. Fee-bearing sentences and FAQ answers
+  kept verbatim: check-blog-fees attributes a figure from the surrounding wording, so rephrasing "per semester" as
+  "a semester", naming a university in a different clause, or splitting a long sentence moved figures from
+  NON_FEE/MATCH to MISMATCH and failed the gate. Restoring the original sentence shape fixed each case.
+- **Content defects removed along the way (house-style or factual):** body H1s (4 posts); named competitor citations
+  (Symbiosis BBA); unsourced stats (sector headcounts, GDP shares, "percent of cohort from LinkedIn data", salary
+  premiums, a "NIRF Hospitality category"); placement claims with no source; a duplicated tail and a cut-off disclaimer;
+  repeated links; uncategorised NIRF ranks; and internal contradictions (MUJ fee table Rs 1,40,000 vs its own
+  Rs 1,44,500; SMU at Rs 1.10L vs Rs 1,20,000; JIIT and ARKA appendices listing specialisations the programmes do not
+  offer; Chandigarh/Amity/LPU rank and NAAC mismatches; UGC-DEB table listing UPES twice and Symbiosis as A+).
+- **Measured on a production build (next build exit 0, next start):** reading ease now 33-55 on all 19; paragraphs
+  over 60 words down to 8 (all verbatim fee sentences). Fee gate baseline fell 2340 to 2323.
+- **Still open:** (1) 23 other posts carry the same templated "EEAT Notes" appendix; all 3 fixed here contained
+  invented or contradictory data. (2) Spec-page copy in lib/data/page-content/*.json waits on the NIRF-category branch
+  claude/inspiring-lumiere-b7e14e. (3) NMIMS Rs 1,76,500 and Amity Rs 1,99,000 in the profession MBA guides disagree
+  with lib/data.ts (Rs 1.96-2.2L, Rs 2.07-2.25L); left unchanged pending Rishi.
+
 ## 2026-10-28 · "Paragraphs are too long" / "Low readability" audit rows, batch 1
 
 - **Why:** the site audit flagged ~200 spec hubs, coupon pages and blogs. House style caps paragraphs at 2-4 sentences,
