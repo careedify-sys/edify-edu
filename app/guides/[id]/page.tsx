@@ -92,10 +92,12 @@ export default async function GuidePage({ params }: Props) {
     },
     author: {
       '@type': 'Person',
+      '@id': 'https://edifyedu.in/#rishi-kumar',
       name: 'Rishi Kumar',
       url: 'https://edifyedu.in/about',
     },
     publisher: {
+      '@id': 'https://edifyedu.in/#organization',
       '@type': 'Organization',
       name: 'edifyedu.in',
       url: 'https://edifyedu.in',

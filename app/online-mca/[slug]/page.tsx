@@ -107,9 +107,10 @@ export default async function OnlineMcaPostPage({ params }: Props) {
     datePublished: post.publishedAt,
     dateModified: post.updatedAt || post.publishedAt,
     image: { '@type': 'ImageObject', url: 'https://edifyedu.in/og.webp', width: 1200, height: 630 },
-    author: { '@type': 'Person', name: 'Rishi Kumar', url: 'https://edifyedu.in/about' },
+    author: { '@type': 'Person', '@id': 'https://edifyedu.in/#rishi-kumar', name: 'Rishi Kumar', url: 'https://edifyedu.in/about' },
     publisher: {
       '@type': 'Organization',
+      '@id': 'https://edifyedu.in/#organization',
       name: 'edifyedu.in',
       url: 'https://edifyedu.in',
       logo: { '@type': 'ImageObject', url: 'https://edifyedu.in/logos/edify_logo_192.png', width: 192, height: 192 },

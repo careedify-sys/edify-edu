@@ -227,17 +227,22 @@ export default async function BlogPostPage({ params }: Props) {
       width: 1200,
       height: 630,
     },
+    // Rishi's posts point at the same Person entity the root layout declares,
+    // so AI engines and Google attribute every article to one author, not a
+    // fresh unnamed duplicate per post. Same for the publisher below.
     author: {
       '@type': 'Person',
+      ...(post.author === 'Komal Srivastava' ? {} : { '@id': 'https://edifyedu.in/#rishi-kumar' }),
       name: post.author || 'Rishi Kumar',
       url: 'https://edifyedu.in/about#team',
-      jobTitle: post.author === 'Komal Srivastava' ? 'Senior Education Counsellor' : 'Founder & Lead Researcher',
+      jobTitle: post.author === 'Komal Srivastava' ? 'Senior Education Counsellor' : 'Senior Education Researcher',
       description: post.author === 'Komal Srivastava'
         ? '7+ years in higher education counselling. Specialises in reviewing online MBA programs and helping working professionals choose programs aligned with their career goals.'
         : 'Education researcher and data analyst focused on India\'s online higher education sector. 7+ years advising students on degree choices.',
     },
     publisher: {
       '@type': 'Organization',
+      '@id': 'https://edifyedu.in/#organization',
       name: 'edifyedu.in',
       url: 'https://edifyedu.in',
       logo: {

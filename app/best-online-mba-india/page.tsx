@@ -155,11 +155,13 @@ const articleSchema = {
   image: { '@type': 'ImageObject', url: 'https://edifyedu.in/og.webp', width: 1200, height: 630 },
   author: {
     '@type': 'Person',
+    '@id': 'https://edifyedu.in/#rishi-kumar',
     name: 'Rishi Kumar',
     url: 'https://edifyedu.in/about#team',
     jobTitle: 'Senior Education Researcher, Founder, EdifyEdu',
   },
   publisher: {
+    '@id': 'https://edifyedu.in/#organization',
     '@type': 'Organization',
     name: 'edifyedu.in',
     url: 'https://edifyedu.in',

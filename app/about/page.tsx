@@ -26,9 +26,10 @@ const teamSchema = [
   {
     '@context': 'https://schema.org',
     '@type': 'Person',
+    '@id': 'https://edifyedu.in/#rishi-kumar',
     name: 'Rishi Kumar',
-    jobTitle: 'Founder & Lead Researcher',
-    worksFor: { '@type': 'Organization', name: 'edifyedu.in', url: 'https://edifyedu.in' },
+    jobTitle: 'Senior Education Researcher',
+    worksFor: { '@id': 'https://edifyedu.in/#organization' },
     url: 'https://edifyedu.in/about#team',
     description: 'Education researcher and data analyst focused on India\'s online higher education sector. Tracks UGC DEB approvals, NIRF rankings, and fee structures across 143 universities. 7+ years advising students on degree choices.',
     knowsAbout: ['UGC DEB approved universities', 'Online MBA India 2026', 'NIRF rankings', 'NAAC accreditation', 'Online degree validity India'],
