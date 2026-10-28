@@ -23251,11 +23251,13 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p class="pull">Is MBA post graduation? Yes, and the answer affects your eligibility for government jobs, PhD admission, loan terms, salary scale and international recognition. Get the UGC-DEB approval right at enrolment and your PG status holds for life. The PG classification is a one-time decision at programme selection plus stays valid for the entire career.</p>
 
-<h2>MBA Post-Graduation Status 2026 EEAT Notes</h2>
+<h2>Is MBA Post Graduation: Summary</h2>
 
-<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. PG status verified from UGC notifications, AIU equivalence rules, AICTE PGDM classification.</em></p>
+<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Summary updated 29 October 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. It restates the guide above. Verify a specific programme at deb.ugc.ac.in and ugc.gov.in.</em></p>
 
-<p>MBA is a postgraduate master's degree under UGC framework. Eligible for all PG-level government posts plus PhD admission plus PG education loan interest rates. Verify UGC-DEB approval at deb.ugc.ac.in for online MBA. PGDM from AICTE-approved institutes also recognised but needs AIU equivalence for some government posts. Smart programme choice at enrolment locks PG eligibility for lifetime career horizon. The PG label opens government plus PSU plus higher studies eligibility. The classification is permanent plus lifetime career enabler for MBA degree holders.</p>
+<div class="callout-key"><strong>In one line:</strong> An MBA is a master's-level postgraduate degree. From a UGC-recognised university, and with active UGC-DEB approval for an online MBA, it counts for PG-level government posts and PhD admission.</div>
+
+<p>PGDM is a diploma, not a degree. Outside the IIMs and similar institutes, it needs an AIU equivalence certificate for government roles and PhD admission. Check the approval for your intake year before you enrol, because that check settles your PG status for good.</p>
 
 <div class="internal-links">
 <strong>Related Guides</strong>
