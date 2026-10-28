@@ -34,7 +34,7 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
     title: 'Uttaranchal Online MBA Fees 2026: ₹1,48,000 | edifyedu.in',
     description: 'Uttaranchal University online MBA fees: ₹1,03,600 after the 30% scholarship, or ₹99,600 paid upfront. 8 specialisations, NAAC A+, UGC-DEB approved.',
     h1: 'Uttaranchal University Online MBA 2026: Fees, Specialisations and Honest Review',
-    intro: 'For the January 2027 batch, the Uttaranchal University online MBA lists at ₹1,48,000. A 30% scholarship brings it to ₹1,03,600, paid as four semester instalments of ₹25,900, and paying the full fee upfront costs ₹99,600. The programme holds NAAC A+ accreditation and UGC-DEB approval, with 8 specialisations including Logistics and Supply Chain, International Business and Digital Marketing. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Confirm the current fee on the official portal before you pay.',
+    intro: 'For the January 2027 batch, the Uttaranchal University Online (UU Online) MBA lists at ₹1,48,000. A 30% scholarship brings it to ₹1,03,600, paid as four semester instalments of ₹25,900, and paying the full fee upfront costs ₹99,600. The programme holds NAAC A+ accreditation and UGC-DEB approval, with 8 specialisations including Logistics and Supply Chain, International Business and Digital Marketing. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Confirm the current fee on the official portal before you pay.',
   },
   // MUJ: data.ts feeMin=156400 (after the 15% discount), feeMax=184000 (list),
   // emiFrom=6517, January 2027 chart. The generic template opens with the full

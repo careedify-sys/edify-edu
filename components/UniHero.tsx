@@ -17,9 +17,12 @@ interface Props {
   spec?: string
   customH1?: string
   h1Variant?: 'admission'
+  // Brand segment for the generated H1 when u.name drops the searched form
+  // ("WILP" sits in brackets that getShortUniversityName strips).
+  h1Name?: string
 }
 
-export default function UniHero({ u, program, pd, cleanName, spec, customH1, h1Variant }: Props) {
+export default function UniHero({ u, program, pd, cleanName, spec, customH1, h1Variant, h1Name }: Props) {
   const specs  = pd.specs || []
   const level  = getProgramLevel(program)
   const logoPath: string | undefined = (LOGOS_MANIFEST as Record<string, string>)[u.id]
@@ -34,7 +37,7 @@ export default function UniHero({ u, program, pd, cleanName, spec, customH1, h1V
   const modeVerified = shouldIndexUniversity(u.id)
 
   const onlinePrefix = modeVerified
-    ? (nameEndsOnline ? cleanName : cleanName + ' Online')
+    ? h1Name ?? (nameEndsOnline ? cleanName : cleanName + ' Online')
     : cleanName
   const generatedH1 = spec
     ? `${onlinePrefix} ${program} in ${spec}: Syllabus, Fees & Career Outcomes ${year}`

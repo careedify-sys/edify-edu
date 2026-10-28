@@ -28749,8 +28749,8 @@ export const BLOG_POSTS: BlogPost[] = [
     updatedAt: '2026-10-26',
     title: 'Uttaranchal University Online MBA Fees 2026: ₹1,48,000',
     seoTitle: 'Uttaranchal University Online MBA Fees 2026: ₹1,48,000',
-    h1Title: 'Uttaranchal University Online MBA Fees 2026: ₹1,48,000, Specialisations and Our Review',
-    metaDescription: 'UU Doon Online MBA at Rs. 1,03,600 total after the 30% scholarship, or Rs. 99,600 paid upfront. NAAC A+, Dehradun. Full fee breakdown, 8 specializations, syllabus and honest review for 2026.',
+    h1Title: 'Uttaranchal University Online (UU Online) MBA Fees 2026: ₹1,48,000, Specialisations and Our Review',
+    metaDescription: 'UU Online MBA at Rs. 1,03,600 total after the 30% scholarship, or Rs. 99,600 paid upfront. NAAC A+, Dehradun. Full fee breakdown, 8 specializations, syllabus and honest review for 2026.',
     category: 'Online MBA Programs',
     tags: ['uttaranchal university online mba', 'uu doon online mba', 'online mba dehradun', 'uu online mba fees', 'cheapest online mba uttarakhand', 'uu doon mba review'],
     publishedAt: '2026-04-12',
@@ -28770,7 +28770,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'What specializations does UU Doon Online MBA offer?', a: '8 specializations: Business Analytics, Digital Marketing, Financial Management, HR Management, Information Technology, International Business, Logistics & Supply Chain Management, and Marketing Management.' },
       { q: 'Who should apply for UU Doon Online MBA?', a: 'Best suited for working professionals in Uttarakhand, UP, and North India, especially government/semi-government employees needing an MBA for promotion, or professionals in marketing who want the formal credential at minimum cost.' }
     ],
-    content: `<p><a href="/universities/uttaranchal-university-online">Uttaranchal University</a> does not get nearly as much search traffic as Amity or LPU, and that is precisely why it can rank well for certain searches. The university holds NAAC A+ accreditation, sits in Dehradun, and was the first university in Uttarakhand to receive A+ in the first accreditation cycle. The online MBA at Rs. 1,03,600 total (after the 30% scholarship) is one of the most affordable accredited options in North India.</p>
+    content: `<p><a href="/universities/uttaranchal-university-online">Uttaranchal University Online</a>, or UU Online, does not get nearly as much search traffic as Amity or LPU, and that is precisely why it can rank well for certain searches. The university holds NAAC A+ accreditation, sits in Dehradun, and was the first university in Uttarakhand to receive A+ in the first accreditation cycle. The online MBA at Rs. 1,03,600 total (after the 30% scholarship) is one of the most affordable accredited options in North India.</p>
 
 <p>This review uses publicly available data. EdifyEdu does not take referral fees. All fees should be verified at <a href="https://www.onlineuu.in/mba.php" target="_blank" rel="noopener">onlineuu.in</a>.</p>
 

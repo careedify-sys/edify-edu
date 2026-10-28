@@ -51,6 +51,14 @@ function reviewOwnedTitle(u: NonNullable<ReturnType<typeof getUniversityById>>):
   return options.find(t => t.length <= 60) ?? clampTitle(`${names[0]}: Specialisations and Admission`)
 }
 
+// H1 brand for hubs whose searched name is not what u.name renders. Semrush
+// Position Tracking (27 Oct 2026, mobile): "bits pilani wilp" 12,100/mo and
+// "uu online" 2,400/mo both outside the top 100.
+const MBA_HUB_H1_NAMES: Record<string, string> = {
+  'bits-pilani-work-integrated-online': 'BITS Pilani WILP Online',
+  'uttaranchal-university-online': 'Uttaranchal University Online (UU Online)',
+}
+
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('MBA')).map(u => ({ id: u.id }))
 }
@@ -266,6 +274,7 @@ export default async function OnlineMBAPage(
         pd={pd}
         customH1={reviewOwned ? undefined : override?.h1}
         h1Variant={reviewOwned ? 'admission' : undefined}
+        h1Name={MBA_HUB_H1_NAMES[u.id]}
         customIntro={override?.intro}
       />
     </>

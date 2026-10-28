@@ -1,5 +1,22 @@
 # Fix log
 
+## 2026-10-28 · "bits pilani wilp" and "uu online" in hub H1s; LPU BCA/MCA fee audit
+
+- **Why:** Semrush Position Tracking (27 Oct, mobile) has "bits pilani wilp" (12,100/mo) and "uu online" (2,400/mo)
+  outside the top 100. Neither string was in the hub H1: UniHero builds the H1 from getShortUniversityName(u.name),
+  which strips the bracketed "(WILP)", and nothing anywhere on the Uttaranchal hub said "UU Online".
+- **Fix:** UniHero/UniProgramBody take an optional `h1Name` for the brand segment; app/universities/[id]/mba sets it
+  for two hubs. BITS H1 is now "BITS Pilani WILP Online MBA 2026: ...", Uttaranchal "Uttaranchal University Online
+  (UU Online) MBA: ...". The Uttaranchal hub intro (lib/mba-seo-overrides.ts) and its review blog H1, lede and first
+  paragraph carry "UU Online". Hub titles unchanged: Uttaranchal's is deliberately review-owned.
+- **Not changed:** the BITS review blog. Its title, H1 and intro already say WILP, with 102 mentions in the body, and it
+  is cited in an AI Overview. The BITS hub title and intro already said WILP.
+- **Spotted, not fixed:** the BITS hub TL;DR says "Rs 75,000 to Rs 1,80,000" beside a ₹3,12,400 fee tile, and the hub
+  says NAAC A+ / NIRF #7 University while the review says NAAC A++ / NIRF #16 Overall. Needs a Supabase check.
+- **LPU BCA/MCA:** neither hub shows the counsellor line. BCA shows ₹1,22,400 (programFees and pd.fees, set 10 May in
+  cb36baf, never portal-verified), the same figure the BBA posts give as LPU's BBA net after a 20% grant. MCA shows
+  Rishi's ₹1,17,440 / ₹1,30,000. Both hubs print EMI ₹6,708, which is the MBA emiFrom. Waiting on Rishi for BCA.
+
 ## 2026-10-28 · UniversityCard page weight (scaling)
 
 - **Why:** production /universities served 750 KB of HTML on 28 Oct, 287 KB of it `style=""` attributes copied onto
