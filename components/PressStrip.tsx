@@ -10,12 +10,31 @@ type PressItem = {
   date?: string
 }
 
+// The 27 Oct 2026 story ran under one headline across several outlets, so the
+// syndicated cards show outlet and date only; the full headline is on /about.
 const pressItems: PressItem[] = [
   {
     publication: 'ANI',
     url: 'https://aninews.in/news/business/same-degree-different-answers-how-edifyeduin-is-bringing-transparency-to-indias-online-degree-choices20261027123148',
     alt: 'ANI News',
-    headline: 'Same Degree, Different Answers: How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
+    date: '27 Oct 2026',
+  },
+  {
+    publication: 'The Tribune',
+    url: 'https://www.tribuneindia.com/news/business/same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/',
+    alt: 'The Tribune',
+    date: '27 Oct 2026',
+  },
+  {
+    publication: 'LatestLY',
+    url: 'https://www.latestly.com/agency-news/business-news-same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices-7658196.html',
+    alt: 'LatestLY',
+    date: '27 Oct 2026',
+  },
+  {
+    publication: 'Punjab Kesari',
+    url: 'https://english.punjabkesari.com/business/same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/',
+    alt: 'Punjab Kesari English',
     date: '27 Oct 2026',
   },
   {

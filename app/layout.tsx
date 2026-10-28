@@ -161,6 +161,20 @@ const orgSchema = {
     availableLanguage: ['English', 'Hindi'],
   },
   founder: { '@id': 'https://edifyedu.in/#rishi-kumar' },
+  // Coverage about the organisation. subjectOf, not sameAs: sameAs is only for
+  // profiles that are the same entity, and a news article is not one.
+  subjectOf: [
+    ['ANI', 'https://aninews.in/news/business/same-degree-different-answers-how-edifyeduin-is-bringing-transparency-to-indias-online-degree-choices20261027123148'],
+    ['The Tribune', 'https://www.tribuneindia.com/news/business/same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/'],
+    ['LatestLY', 'https://www.latestly.com/agency-news/business-news-same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices-7658196.html'],
+    ['Punjab Kesari', 'https://english.punjabkesari.com/business/same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/'],
+  ].map(([publisher, url]) => ({
+    '@type': 'NewsArticle',
+    headline: 'Same Degree, Different Answers: How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
+    url,
+    datePublished: '2026-10-27',
+    publisher: { '@type': 'Organization', name: publisher },
+  })),
 }
 
 const siteSchema = {

@@ -182,6 +182,13 @@ L.push('We accept no payment from any university and we do not sell ranking posi
 L.push('Rankings cite NIRF with the category named; accreditation cites NAAC with its validity date.')
 L.push('Contact: hello@edifyedu.in')
 L.push('')
+L.push('## Press coverage')
+L.push('- ANI, 27 Oct 2026: https://aninews.in/news/business/same-degree-different-answers-how-edifyeduin-is-bringing-transparency-to-indias-online-degree-choices20261027123148')
+L.push('- The Tribune, 27 Oct 2026: https://www.tribuneindia.com/news/business/same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/')
+L.push('- LatestLY, 27 Oct 2026: https://www.latestly.com/agency-news/business-news-same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices-7658196.html')
+L.push('- Punjab Kesari English, 27 Oct 2026: https://english.punjabkesari.com/business/same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/')
+L.push(`- All coverage: ${BASE}/about`)
+L.push('')
 
 const content = L.join('\n')
 
