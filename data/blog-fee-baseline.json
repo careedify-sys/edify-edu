@@ -1,11 +1,11 @@
 {
   "updatedAt": "2026-10-28",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 2291,
+  "totalUnverified": 2287,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 0,
-    "how-to-choose-online-mba-university-india-2026": 16,
+    "how-to-choose-online-mba-university-india-2026": 12,
     "affordable-online-mba-india-2026": 35,
     "online-mba-for-working-professionals-india": 9,
     "symbiosis-online-mba-review-2026": 3,
