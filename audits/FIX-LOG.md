@@ -1,5 +1,16 @@
 # Fix log
 
+## 2026-10-29 · Spec content JSON: NIRF branch merged, repeated boilerplate in plain words
+
+- **Why:** spec hubs are the bulk of the "low readability" rows. Their copy is 470k words across 431 files in
+  lib/data/page-content, with a reading-ease score of 15. The NIRF-category branch (claude/inspiring-lumiere-b7e14e) was editing
+  the same files, so it was merged first (only conflict: this log).
+- **Fix:** nine sentences repeated across files (placement-claims caveat in 304, fee recheck line in 289, mode and
+  entitlement lines in 37-117 each) rewritten in plain words by a script that walks parsed JSON string values. 397
+  files, 971 lines, one-for-one. No fee figure touched; content-JSON, NIRF, em-dash and fee-baseline gates pass.
+- **Measured:** spec JSON reading ease 15.0 to 15.7. The low score comes from unique per-university prose,
+  not boilerplate. Raising it means rewriting that prose file by file, which is a separate scope decision.
+
 ## 2026-10-29 · "Low readability" audit rows, batch 2: 19 blog posts rewritten in plain language
 
 - **Why:** the 19 flagged posts scored 1-40 on Flesch reading ease, with ~277 paragraphs over 60 words. Render-time
