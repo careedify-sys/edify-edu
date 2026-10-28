@@ -24,6 +24,10 @@ Hubs keep BBA/BCA/MCA programme-fee searches.
 - **MUJ review** cited Shiksha and College Vidya (blacklisted) as feedback sources and used &mdash;. Removed.
 - Allowlisted Amity ₹4,49,000 (Construction Management, verified 7 Aug) and MUJ ₹46,000 per semester.
 - Measure in GSC from ~2026-11-25 (28 days after deploy): Pages.csv blog vs hub per pair, control = BITS and DY Patil.
+- **Held before merge (Rishi, 28 Oct):** Shoolini MBA hub keeps its fee-led title and H1 (hub ranks 12 for "shoolini
+  university mba fees", blog 34), via keepHubTitle; its new link to the review stays. BITS hub unchanged. Chandigarh
+  blog and hub restored to main exactly (no keywordLink; the [program] route still prerenders its MBA hub, so it renders
+  as before) until Rishi confirms its fee. DY Patil never changed. Controls are now BITS, DY Patil, Chandigarh, Shoolini.
 
 ## 2026-10-28 · LPU MCA and Amity MCA fees confirmed; Shobhit verify link; Uttaranchal on MBA spec hubs
 

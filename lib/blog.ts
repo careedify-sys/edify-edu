@@ -30738,9 +30738,8 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'chandigarh-university-online-mba-review',
     updatedAt: '2026-10-26',
-    title: 'Chandigarh University Online MBA Fees 2026 and Review',
-    seoTitle: 'Chandigarh University Online MBA Fees 2026 and Review',
-    h1Title: 'Chandigarh University Online MBA Fees 2026, Specialisations and Our Review',
+    title: 'Chandigarh University Online MBA Fees 2026: ₹1.65L Review and Honest Verdict',
+    seoTitle: 'Chandigarh University Online MBA Review 2026: PwC Tie-Up',
     metaDescription: 'Chandigarh University Online MBA reviewed: fees after Early Bird scholarship, pros, cons, who it suits. Real student feedback, zero commission.',
     category: 'Online MBA Programs',
     tags: ['chandigarh university online mba', 'cu online mba review', 'online mba with harvard certification india', 'online mba with pwc certification', 'chandigarh university mba fees', 'Chandigarh University MBA Fees 2026', 'CU Online MBA Review'],

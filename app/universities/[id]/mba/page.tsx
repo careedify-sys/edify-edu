@@ -33,8 +33,9 @@ import { getProgramLinks } from '@/lib/internal-links'
 // to its review stops leading with the fee in title and H1, and links the
 // review instead (ProgramBlogLinks). The fee stays in the body and description.
 function reviewOwnedTitle(u: NonNullable<ReturnType<typeof getUniversityById>>): string | null {
-  const link = getProgramLinks(u.id, 'mba')?.keywordLink
-  if (!link) return null
+  const links = getProgramLinks(u.id, 'mba')
+  const link = links?.keywordLink
+  if (!link || links?.keepHubTitle) return null
   // Short name first, then the name the review anchor uses ("Manipal Univ
   // Jaipur" does not fit the pattern, "MUJ" does). u.abbr is not usable here:
   // it holds values like "MUJOM".
@@ -253,7 +254,8 @@ export default async function OnlineMBAPage(
   // generic template rather than displaying an unbacked fee number.
   const bodyFee = getDisplayFee(u, 'MBA')
   const override = bodyFee.ok ? MBA_SEO_OVERRIDES[id] : undefined
-  const reviewOwned = !!getProgramLinks(u.id, 'mba')?.keywordLink
+  const mbaLinks = getProgramLinks(u.id, 'mba')
+  const reviewOwned = !!mbaLinks?.keywordLink && !mbaLinks.keepHubTitle
   return (
     <>
       <MBAProgramSchema u={u} pd={pd} />

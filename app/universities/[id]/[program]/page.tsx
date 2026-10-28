@@ -35,6 +35,10 @@ export async function generateStaticParams() {
   // overrides (found 2026-10-28; the live Amity hub title came from here).
   const TOP_PROGRAMS = ['mca']
   const params: { id: string; program: string }[] = []
+  // Held on this template on purpose: its MBA hub must render exactly as it
+  // did before 2026-10-28 until Rishi confirms the fee (the review body gives
+  // the early-bird net, the record the list price). Remove once confirmed.
+  params.push({ id: 'chandigarh-university-online', program: 'mba' })
 
   for (const id of TOP_UNI_IDS) {
     for (const program of TOP_PROGRAMS) {

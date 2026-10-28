@@ -24,6 +24,10 @@ export interface ProgramLinks {
   comparePage?: string
   verifyPage?: string
   keywordLink?: KeywordLink
+  // The hub still owns its fee query, so it keeps its fee-led title and H1
+  // even with a keywordLink. Shoolini: hub ranks 12 for "shoolini university
+  // mba fees", blog 34 (Semrush, 27 Oct 2026, mobile).
+  keepHubTitle?: boolean
   blogs: BlogEntry[]
 }
 
@@ -215,10 +219,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Chandigarh University Online',
       shortName: 'CU Online',
       programPage: '/universities/chandigarh-university-online/mba',
-      keywordLink: { slug: 'chandigarh-university-online-mba-review', anchor: 'Chandigarh University Online MBA fees and review' },
       comparePage: '/compare?a=chandigarh-university-online&b=amity-university-online',
       blogs: [
-        { slug: 'chandigarh-university-online-mba-review', label: 'Chandigarh University Online MBA Fees 2026 and Review' },
+        { slug: 'chandigarh-university-online-mba-review', label: 'Chandigarh University Online MBA Fees 2026: ₹1.65L Review and Honest Verdict' },
         { slug: 'is-chandigarh-university-online-fake-or-legit-2026', label: 'Is Chandigarh University Online Fake or Legit? 2026' },
       ],
     },
@@ -282,6 +285,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       shortName: 'Shoolini',
       programPage: '/universities/shoolini-university-online/mba',
       keywordLink: { slug: 'shoolini-online-mba-review', anchor: 'Shoolini Online MBA fees and review' },
+      keepHubTitle: true,
       blogs: [
         { slug: 'shoolini-online-mba-review', label: 'Shoolini Online MBA Fees 2026 and Review' },
       ],
