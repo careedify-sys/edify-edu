@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-10-28",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 2335,
+  "totalUnverified": 2330,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 0,
@@ -105,7 +105,7 @@
     "shoolini-online-mba-review": 12,
     "dy-patil-online-mba-review": 21,
     "chandigarh-university-online-mba-review": 8,
-    "jaypee-jiit-online-mba-review": 22,
+    "jaypee-jiit-online-mba-review": 17,
     "mba-full-form-course-details-eligibility-fees-2026": 12,
     "bca-full-form-course-details-eligibility-fees-2026": 9,
     "bba-full-form-course-details-eligibility-fees-2026": 9,
