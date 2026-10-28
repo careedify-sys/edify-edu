@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Home, Search, BarChart2, MessageCircle } from 'lucide-react'
+import { openWhatsApp } from '@/lib/open-whatsapp'
 
 const TABS = [
   { href: '/',              icon: Home,       label: 'Home'    },
@@ -34,6 +35,7 @@ export default function BottomNav() {
         page_path: window.location.pathname,
       })
     }
+    openWhatsApp(WA_URL)
   }
 
   return (
@@ -69,20 +71,18 @@ export default function BottomNav() {
         )
       })}
       {/* WhatsApp tab */}
-      <a
-        href={WA_URL}
-        target="_blank"
-        rel="noopener noreferrer"
+      <button
+        type="button"
         onClick={handleWhatsAppClick}
         style={{
           flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center',
           justifyContent: 'center', gap: '3px', padding: '10px 4px 8px',
-          textDecoration: 'none', color: 'var(--ink-3)',
+          color: 'var(--ink-3)', background: 'none', border: 'none', cursor: 'pointer', font: 'inherit',
         }}
       >
         <MessageCircle className="w-5 h-5" strokeWidth={1.8} />
         <span style={{ fontSize: '10px', fontWeight: 500 }}>WhatsApp</span>
-      </a>
+      </button>
     </nav>
   )
 }

@@ -1,5 +1,18 @@
 # Fix log
 
+## 2026-10-28 · wa.me "429 broken link" rows in the site audit
+
+- **Why:** the crawl report listed 2-3k outbound wa.me links returning 429. They are not broken: a browser gets a 302 to
+  api.whatsapp.com. WhatsApp rate-limits a crawler that requests wa.me once per page across ~3,000 pages. Three
+  always-rendered anchors caused every row: the BottomNav WhatsApp tab and WhatsAppSticky (one per page each), and the
+  blog share button in BlogClientActions.
+- **Fix:** those three are now buttons that call openWhatsApp (lib/open-whatsapp.ts), so the same URL opens on click and
+  no href reaches the HTML. Anchors that render only after a form step (success or fallback) are unchanged, since a
+  crawler never reaches them.
+- **Verified on the dev server:** 0 wa.me hrefs in the HTML of 9 page types (blog, blog index, programme, spec hub,
+  university, verify, coupon, CGPA, home). Clicking each button calls window.open with the same URLs as before, and the
+  bottom-nav tab matches the other tabs' size, colour and font.
+
 ## 2026-10-28 · /cdn-cgi/l/email-protection 404s from body text emails
 
 - **Why:** GSC reported /cdn-cgi/l/email-protection as a 404 linked from three login/admission blogs and the

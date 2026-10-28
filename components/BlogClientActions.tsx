@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { openWhatsApp } from '@/lib/open-whatsapp'
 import {
   ChevronDown,
   ThumbsUp,
@@ -160,16 +161,15 @@ export default function BlogClientActions({ faqs, postTitle, postUrl }: Props) {
           </p>
           <div className="flex flex-wrap gap-2">
             {/* WhatsApp */}
-            <a
-              href={waShareUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={() => openWhatsApp(waShareUrl)}
               className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold text-white transition-opacity hover:opacity-90 no-underline"
-              style={{ background: '#25D366' }}
+              style={{ background: '#25D366', border: 'none', cursor: 'pointer' }}
             >
               <WhatsAppIcon />
               WhatsApp
-            </a>
+            </button>
 
             {/* LinkedIn */}
             <a
