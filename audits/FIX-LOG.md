@@ -1,5 +1,33 @@
 # Fix log
 
+## 2026-10-29 · Templated "EEAT Notes" appendices removed from the last 20 blog posts
+
+- **Why:** batch 2 found invented or contradictory data in all 3 EEAT appendices it touched (JIIT, ARKA JAIN, SMU).
+  The other 20 were the same template and the same failure: salary tables and 5-year salary plans with no source,
+  competitor tables whose fees and NIRF/NAAC figures disagreed with the rest of the site (SMU at Rs 1.10 lakh in five
+  of them, UU Doon at Rs 1 lakh), and "X plus Y plus Z" filler. Some contradicted their own post: Galgotias and UU Doon
+  "basic 4-5 specs" against 7 and 8 listed; DSU's callout swapped Financial Management for Supply Chain; MUJ's semester
+  fee Rs 45,000 against Rs 46,000 and a "MeritShine" service the review never mentions; MUJ fake-or-legit gave a NIRF
+  University rank of 64 that the Online Manipal review assigns to SMU; Symbiosis claimed NIRF Management 11 and AACSB,
+  which the review never states; how-to-choose set NIRF and NAAC thresholds that contradicted the guide above it;
+  career-after-BCom named ICAI for CMA where the guide says ICMAI.
+- **Fix:** each appendix, from the EEAT h2 to the disclaimer, CTA or link-card block, replaced with a short summary built
+  only from facts the same post already states: a one-line callout, an honest-gaps or mistakes list where the post had
+  material for one, application steps, and at most one closing paragraph. No new fee figures. Fee sentences that were
+  kept (Shoolini "Who should choose", MUJ fake-or-legit fee paragraph, career-after-BCom link sentence) are verbatim.
+  Internal links in dropped tables were kept where they were not already in the post; one target that does not exist
+  (/blog/upes-online-mba-review-2026) was not carried over. Disclaimers, CTA blocks and link cards untouched. One post
+  per commit, applied by a script that reads the file fresh each time and writes CRLF; updatedAt set to 2026-10-29.
+- **Result:** `grep -c "EEAT Notes" lib/blog.ts` is 0. check-blog-fees and check-nirf-category pass on every commit;
+  unverified blog fee figures fell 2323 to 2266. Net -959 lines in lib/blog.ts. Full next build exits 0.
+- **Still open (top halves, not touched here):** SMU's fee reads Rs 1,10,000 in the NIU, UU Doon, Online Manipal and
+  MUJ reviews and Rs 1.25 lakh in the affordable-MBA guide, against Rs 1,20,000 in the SMU review. DSU's at-a-glance
+  box says Rs 1,20,000 while its body says Rs 1,30,000. NIU's comparison table gives Uttaranchal NAAC A, the UU Doon
+  review says A+. The MUJ fake-or-legit post calls MUJ both a state private and a deemed university. Online Manipal
+  gives MUJ NIRF Management 81 and SMU NIRF University 64 (2024), and Vignan's at-a-glance says "NIRF Top 75 (2024)"
+  with no category; none checked against Supabase. The affordable-MBA guide still links Mangalayatan, which carries a
+  verify advisory.
+
 ## 2026-10-29 · "Low readability" audit rows, batch 2: 19 blog posts rewritten in plain language
 
 - **Why:** the 19 flagged posts scored 1-40 on Flesch reading ease, with ~277 paragraphs over 60 words. Render-time
