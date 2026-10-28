@@ -292,6 +292,26 @@ export default function AboutPage() {
                 url: 'https://aninews.in/news/business/same-degree-different-answers-how-edifyeduin-is-bringing-transparency-to-indias-online-degree-choices20261027123148',
               },
               {
+                outlet: 'The Tribune · 27 Oct 2026',
+                headline: 'Same Degree, Different Answers: How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
+                url: 'https://www.tribuneindia.com/news/business/same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/',
+              },
+              {
+                outlet: 'LatestLY · 27 Oct 2026',
+                headline: 'Same Degree, Different Answers: How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
+                url: 'https://www.latestly.com/agency-news/business-news-same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices-7658196.html',
+              },
+              {
+                outlet: 'Punjab Kesari English · 27 Oct 2026',
+                headline: 'Same Degree, Different Answers: How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
+                url: 'https://english.punjabkesari.com/business/same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/',
+              },
+              {
+                outlet: 'WebIndia123 · 27 Oct 2026',
+                headline: 'Same Degree, Different Answers: How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
+                url: 'https://news.webindia123.com/news/Articles/Business/20261027/4515665.html',
+              },
+              {
                 outlet: 'ET Edge Insights · Oct 2026',
                 headline: 'How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
                 url: 'https://etedge-insights.com/brands-speak/how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/',
