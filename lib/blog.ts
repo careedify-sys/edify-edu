@@ -6856,40 +6856,13 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p><strong>3. Startup demand for MBAs is real.</strong> India's startup ecosystem employs over 8 lakh people. Growth-stage startups (Series A to C) actively hire MBAs for business development, marketing, finance, and operations roles. Salaries at well-funded startups match or exceed corporate salaries.</p>
 
-<h2>Career After MBA 2026 EEAT Notes</h2>
+<h2>Career After MBA 2026: Summary</h2>
 
-<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Career data verified from Naukri.com Job Speak Q1 2026, IIM placement reports plus NIRF placement data.</em></p>
+<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Summary updated 29 October 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. It restates the guide above. Salary figures in this guide are indicative ranges, not offers.</em></p>
 
-<div class="callout-key"><strong>One-line frame for Career After MBA 2026:</strong> Tier-1 IIM PGDM Rs 25-40 LPA fresher. Online MBA Rs 6-15 LPA lateral. 10-year career trajectory reaches Rs 30-50 LPA at functional lead. Match programme tier plus specialisation plus sector target for maximum 5-10 year career outcome.</div>
+<div class="callout-key"><strong>In one line:</strong> Your specialisation and your work experience shape your MBA career more than the study mode. Online and campus degrees are legally equal for government jobs, while campus placement drives help freshers most.</div>
 
-<h2>MBA 10-Year Career Trajectory by Programme Tier 2026</h2>
-
-<table>
-  <caption>MBA career trajectory by programme tier 2026</caption>
-  <thead><tr><th>Programme Tier</th><th>Year 1</th><th>Year 5</th><th>Year 10</th></tr></thead>
-  <tbody>
-    <tr><td>Tier-1 IIM (A, B, C)</td><td>Rs 25-40 LPA</td><td>Rs 50-80 LPA</td><td>Rs 80 LPA-1.5 Cr</td></tr>
-    <tr><td>Tier-2 IIM plus XLRI plus MDI</td><td>Rs 18-28 LPA</td><td>Rs 35-55 LPA</td><td>Rs 60 LPA-1 Cr</td></tr>
-    <tr><td>NMIMS Mumbai plus SP Jain plus FMS</td><td>Rs 16-25 LPA</td><td>Rs 30-50 LPA</td><td>Rs 50 LPA-90 LPA</td></tr>
-    <tr><td>NMIMS Online MBA (lateral)</td><td>Rs 7-15 LPA</td><td>Rs 18-32 LPA</td><td>Rs 30-50 LPA</td></tr>
-    <tr><td>JAIN plus MUJ plus Amity Online</td><td>Rs 5-10 LPA</td><td>Rs 12-22 LPA</td><td>Rs 22-38 LPA</td></tr>
-    <tr><td>State University plus IGNOU</td><td>Rs 4-8 LPA</td><td>Rs 10-18 LPA</td><td>Rs 18-30 LPA</td></tr>
-  </tbody>
-</table>
-
-<p>MBA career trajectories in 2026 span BFSI, consulting, FMCG, IT services, manufacturing, plus startup ecosystem. Match the specialisation to your sector target. Stack premium certification (CFA, FRM, Tableau, AWS, SHRM, PMP) during programme. Active LinkedIn engagement plus alumni networking compound career outcomes over 5-10 year horizon.</p>
-
-<h2>5-Year Post-MBA Career Plan 2026</h2>
-
-<ol>
-  <li><strong>Year 1 (during MBA):</strong> Foundational management. Active LinkedIn presence plus alumni networking. Stack 1 premium certification.</li>
-  <li><strong>Year 2 (post-MBA):</strong> First management role at Rs 8-18 LPA depending on programme tier.</li>
-  <li><strong>Year 3:</strong> Specialist senior role at Rs 14-25 LPA. Add senior certifications.</li>
-  <li><strong>Year 4:</strong> Senior manager role at Rs 18-30 LPA.</li>
-  <li><strong>Year 5:</strong> Functional lead or pre-VP track at Rs 22-40 LPA.</li>
-</ol>
-
-<p>The MBA credential plus active execution plus deliberate sector targeting together deliver measurable career trajectory over 5-10 year horizon. Pick programme tier matching your career stage plus sector target plus brand pull required. Smart MBA path choice plus disciplined execution together unlock measurable post-MBA career outcomes for 5-15 year horizon. The MBA credential plus active career building together accelerate career trajectory at compound rates. Pick the path matching your career stage plus sector target. Stack relevant certifications plus build active alumni network for accelerated career trajectory. Plan deliberately plus execute disciplined for outcomes. For role-by-role salary benchmarks and 10-year career trajectories, see the <a href="/guides/career-after-mba-india" class="ilink">career after MBA salary guide</a>.</p>
+<p>If you already have three to five years of work behind you, an online MBA gives you the credential without a career break, and the post-MBA pivot window is where the gains show. If you are a fresher, weigh the placement support a campus programme offers. Whichever route you take, build basic data skills, because every specialisation now expects them.</p>
 
 <div class="internal-links">
   <div class="il-grid">
