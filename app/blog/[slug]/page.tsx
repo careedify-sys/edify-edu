@@ -21,6 +21,9 @@ import BlogComparisonLinks from '@/components/BlogComparisonLinks'
 import { getComparisonsForBlog } from '@/lib/compare-links'
 import WhatsAppSticky from '@/components/WhatsAppSticky'
 import { pageKeywords } from '@/lib/page-keywords'
+import { getUniversityById, type Program } from '@/lib/data'
+import { getProgramSchemaOffer } from '@/lib/seo/program-schema'
+import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
 // Inject a mid-article CTA marker right before the next <h2> after a given
 // heading ID. BlogContentWithCTAs picks up the marker and renders the right
@@ -173,6 +176,8 @@ export default async function BlogPostPage({ params }: Props) {
   // See lib/university-blog-cta.ts for config entries.
   const ctaConfig = BLOG_CTA_BUNDLES[slug]
   const uniFromBlog = getUniversityFromBlog(slug)
+  const blogUni = uniFromBlog ? getUniversityById(uniFromBlog.universityId) : undefined
+  const blogProg = (uniFromBlog?.program.toUpperCase() ?? 'MBA') as Program
   // Derived from the post's own relatedUniversities, so a pair added to
   // [pair]/pairs.ts picks up inbound links with no mapping to maintain.
   const comparisonLinks = getComparisonsForBlog(post)
@@ -243,17 +248,30 @@ export default async function BlogPostPage({ params }: Props) {
     },
     keywords: pageKeywords[post.slug]?.join(', ') || post.tags.join(', '),
     mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
-    ...(uniFromBlog ? {
+    // Google validates a nested Course like a top-level one: without
+    // description, offers and hasCourseInstance it was the "3 fields" GSC error
+    // on every review blog (Oct 2026). Same fee path and mode gate as SchemaBlock.
+    ...(uniFromBlog && blogUni && shouldIndexUniversity(blogUni.id) ? {
       about: {
         '@type': 'Course',
         // Strip trailing " Online" from universityName so brands like
         // "Galgotias University Online" don't compose into
         // "Galgotias University Online Online MBA".
-        name: `${uniFromBlog.links.universityName.replace(/\s+Online(\s*\([^)]*\))?\s*$/i, '$1').trim()} Online ${uniFromBlog.program.toUpperCase()}`,
+        name: `${uniFromBlog.links.universityName.replace(/\s+Online(\s*\([^)]*\))?\s*$/i, '$1').trim()} Online ${blogProg}`,
+        description: post.metaDescription,
         provider: {
           '@type': 'CollegeOrUniversity',
           name: uniFromBlog.links.universityName,
           sameAs: `https://edifyedu.in/universities/${uniFromBlog.universityId}`,
+        },
+        offers: {
+          ...(getProgramSchemaOffer(blogUni, blogProg) ?? { '@type': 'Offer', priceCurrency: 'INR', availability: 'https://schema.org/InStock' }),
+          category: 'Online Education',
+        },
+        hasCourseInstance: {
+          '@type': 'CourseInstance',
+          courseMode: 'Online',
+          courseWorkload: ['MBA', 'MCA', 'M.Com', 'MA', 'MSc'].includes(blogProg) ? 'P2Y' : 'P3Y',
         },
       },
     } : {}),

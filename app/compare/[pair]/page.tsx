@@ -124,6 +124,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
   const courseSchemaA = {
     '@context': 'https://schema.org', '@type': 'Course',
     name: `Online ${prog} - ${uA.name}`,
+    description: `Online ${prog} from ${uA.name}, compared with ${uB.name} on fees, specialisations and approvals. Fees are indicative, so confirm them on the official portal.`,
     provider: { '@type': 'Organization', name: uA.name, sameAs: `https://edifyedu.in/universities/${uA.id}` },
     educationalCredentialAwarded: prog,
     // Schema fees go through getProgramSchemaOffer (getDisplayFee). Course info needs offers.category and
@@ -134,6 +135,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
   const courseSchemaB = {
     '@context': 'https://schema.org', '@type': 'Course',
     name: `Online ${prog} - ${uB.name}`,
+    description: `Online ${prog} from ${uB.name}, compared with ${uA.name} on fees, specialisations and approvals. Fees are indicative, so confirm them on the official portal.`,
     provider: { '@type': 'Organization', name: uB.name, sameAs: `https://edifyedu.in/universities/${uB.id}` },
     educationalCredentialAwarded: prog,
     offers: { category: 'Online Education', ...(getProgramSchemaOffer(uB, prog as Program) ?? { '@type': 'Offer', priceCurrency: 'INR' }) },
