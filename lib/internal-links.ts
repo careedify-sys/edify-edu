@@ -85,7 +85,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       // /mba/international-business was ranking 73 for this query.
       keywordLink: { slug: 'symbiosis-online-mba-review-2026', anchor: 'Symbiosis Online MBA fees and review' },
       blogs: [
-        { slug: 'symbiosis-online-mba-review-2026', label: 'Symbiosis Online MBA Fees 2026: ₹3,15,000–₹3,70,000' },
+        { slug: 'symbiosis-online-mba-review-2026', label: 'Symbiosis Online MBA Fees 2026: ₹3,70,000 and Review' },
       ],
     },
     bba: {
@@ -287,7 +287,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       keywordLink: { slug: 'shoolini-online-mba-review', anchor: 'Shoolini Online MBA fees and review' },
       keepHubTitle: true,
       blogs: [
-        { slug: 'shoolini-online-mba-review', label: 'Shoolini Online MBA Fees 2026 and Review' },
+        { slug: 'shoolini-online-mba-review', label: 'Shoolini Online MBA Review 2026: Pharma and Biotech' },
       ],
     },
   },
@@ -405,7 +405,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       keywordLink: { slug: 'bharati-vidyapeeth-online-mba-review', anchor: 'Bharati Vidyapeeth Online MBA fees and review' },
       verifyPage: '/verify/bharati-vidyapeeth-online',
       blogs: [
-        { slug: 'bharati-vidyapeeth-online-mba-review', label: 'Bharati Vidyapeeth Online MBA Fees 2026: ₹1,76,000' },
+        { slug: 'bharati-vidyapeeth-online-mba-review', label: 'Bharati Vidyapeeth Online MBA Fees 2026: ₹1,78,000' },
       ],
     },
   },
