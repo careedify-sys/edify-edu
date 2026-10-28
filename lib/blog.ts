@@ -24024,97 +24024,23 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>For freshers: yes, almost always. Your resume needs context that your academic record alone cannot provide. A good career objective tells a recruiter not just what you studied, but how you think about your career.</p>
 <p>Once you have 2 to 3 years of experience, replace it with a resume summary that highlights your actual accomplishments. But while you are starting out, the objective is your chance to tell your own story before the interviewer does it for you.</p>
 
-<h2>Career Objective 2026 EEAT Notes</h2>
+<h2>Career Objective for Freshers: Summary</h2>
 
-<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Career objective examples curated from successful Indian MBA, engineering, commerce graduates' actual resumes plus recruiter feedback.</em></p>
+<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Summary updated 29 October 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. It restates the guide above.</em></p>
 
-<div class="callout-key"><strong>One-line frame for fresher career objective 2026:</strong> 2-3 sentences max, under 60 words. Mentions specific role, company type, plus 2-3 skills. Customised per application. Replaces generic clichés. Tells recruiter why you specifically belong at this role.</div>
+<div class="callout-key"><strong>In one line:</strong> Write two to three sentences that say who you are, what you bring and what role you want. Name the role, show two or three skills that match it, and rewrite it for every application.</div>
 
-<h2>Career Objective Templates by Industry 2026</h2>
-
-<ol>
-  <li><strong>IT Services template:</strong> "[Education plus stream] seeking [specific role] at [company type]. Skilled in [3 specific tech skills]. Active GitHub portfolio plus [internship plus project name]."</li>
-  <li><strong>BFSI template:</strong> "[Education] graduate plus [certification level] seeking [specific banking or finance role] at [bank or NBFC]. Strong in [3 specific skills: accounting, financial modeling, risk analysis]."</li>
-  <li><strong>FMCG plus Marketing template:</strong> "[Education] graduate seeking [Brand Manager plus Marketing Coordinator] role at [company type FMCG plus E-commerce plus D2C]. Strong in [3 specific skills: consumer research, digital marketing, go-to-market]."</li>
-  <li><strong>Consulting template:</strong> "[Education] graduate seeking [Business Analyst plus Consulting Associate] role at [Big 4 plus boutique consulting firm]. Strong in [3 specific skills: problem-solving, financial analysis, client communication]."</li>
-</ol>
-
-<h2>Career Objective Plus Resume Summary Comparison 2026</h2>
-
-<table>
-  <caption>Career objective vs resume summary 2026</caption>
-  <thead><tr><th>Aspect</th><th>Career Objective (Fresher)</th><th>Resume Summary (Experienced)</th></tr></thead>
-  <tbody>
-    <tr><td>Length</td><td>2-3 sentences, under 60 words</td><td>3-5 sentences, under 100 words</td></tr>
-    <tr><td>Focus</td><td>Forward-looking, target role plus skills</td><td>Backward-looking, achievements plus impact</td></tr>
-    <tr><td>Use when</td><td>0-3 years experience</td><td>3-plus years experience</td></tr>
-    <tr><td>Customise</td><td>Per application target</td><td>Per industry plus role family</td></tr>
-    <tr><td>Verb tense</td><td>Future-oriented "seeking", "eager to contribute"</td><td>Past-oriented "achieved", "led", "delivered"</td></tr>
-  </tbody>
-</table>
-
-<h2>15-Plus Career Objective Examples by Specialisation 2026</h2>
-
-<h3>MBA Fresher Examples</h3>
-<ul>
-  <li><strong>MBA Finance:</strong> "MBA Finance graduate from NMIMS seeking analyst role at investment banking firm. Strong in financial modeling, Excel plus VBA, and equity research."</li>
-  <li><strong>MBA Marketing:</strong> "MBA Marketing graduate with Brand Management specialisation. Seeking Brand Manager role at FMCG company. Strong in consumer research, digital marketing, plus go-to-market strategy."</li>
-  <li><strong>MBA HR:</strong> "MBA HR graduate seeking HR Business Partner role at IT services company. Skilled in HR analytics, OD interventions, plus talent acquisition."</li>
-  <li><strong>MBA Data Science:</strong> "MBA Data Science graduate seeking Analytics Manager role at e-commerce or BFSI firm. Skilled in Python, SQL, Tableau, plus business storytelling."</li>
-</ul>
-
-<h3>Engineering Fresher Examples</h3>
-<ul>
-  <li><strong>B.Tech CSE:</strong> "B.Tech CSE graduate seeking Software Engineer role at product company. Proficient in Python, React, AWS, plus DSA. Active GitHub portfolio."</li>
-  <li><strong>B.Tech Mechanical:</strong> "B.Tech Mechanical Engineer seeking Manufacturing Engineer role in auto plus white goods industry. Strong in CAD, Lean Six Sigma."</li>
-  <li><strong>B.Tech ECE:</strong> "B.Tech ECE graduate seeking Embedded Systems Engineer role. Hands-on with C plus C plus plus, ARM Cortex, plus PCB design."</li>
-</ul>
-
-<h3>Commerce Plus Arts Plus Science Fresher Examples</h3>
-<ul>
-  <li><strong>BCom:</strong> "BCom graduate from DU SRCC seeking Audit Associate role at Big 4 firm. CA Foundation cleared plus CA Intermediate in progress."</li>
-  <li><strong>BA Economics:</strong> "BA Economics from St Stephens seeking Research Associate role at policy think tank. Strong in econometrics, R, plus impact evaluation."</li>
-  <li><strong>BA Journalism:</strong> "BA Journalism graduate seeking Content Strategist role at digital media plus B2B SaaS company. Active byline on national media."</li>
-  <li><strong>BSc CS plus BCA:</strong> "BCA graduate seeking Full Stack Developer role at SaaS startup. Proficient in MERN stack, REST APIs, plus AWS deployment."</li>
-</ul>
-
-<h2>Common Career Objective Mistakes 2026</h2>
-
-<ul>
-  <li><strong>Generic phrases:</strong> "Seeking challenging position", "utilize my skills", "contribute to organizational growth" all sound the same.</li>
-  <li><strong>No specific role mentioned:</strong> Generic objectives get auto-rejected at ATS filtering.</li>
-  <li><strong>Too long:</strong> Over 4 sentences signals inability to be concise.</li>
-  <li><strong>Skills mismatch with target role:</strong> Skills listed should match target role expectations.</li>
-  <li><strong>Negative framing:</strong> "Seeking opportunity to learn" implies you have no skills. Frame positively.</li>
-  <li><strong>Copy-paste from internet:</strong> Recruiters recognise template language. Customise per application.</li>
-  <li><strong>Vague career goals:</strong> "Aspiring to be a successful leader" is too vague.</li>
-</ul>
-
-<h2>Career Objective FAQ 2026</h2>
-
-<ul>
-  <li><strong>Should every resume have a career objective?:</strong> Freshers yes. Experienced replace with resume summary.</li>
-  <li><strong>How long should it be?:</strong> 2-3 sentences, under 60 words.</li>
-  <li><strong>Can I use same objective for all jobs?:</strong> Not recommended. Customise per target role for 30-50 percent better callback rate.</li>
-  <li><strong>Should I include salary expectations?:</strong> No. Salary is discussed at interview stage.</li>
-  <li><strong>Is career objective same as cover letter?:</strong> No. Objective is 2-3 sentences in resume. Cover letter is 200-400 words separate document.</li>
-</ul>
-
-<p>Career objective for 2026 fresher resumes works best when specific, concise, plus customised. Generic templates copy-pasted from internet do not differentiate you from 100-plus competing applicants. Two minutes spent customising the objective per application produces 30-50 percent better callback rates. Combine specific role plus 2-3 concrete skills plus company-type fit for strongest impact. Replace clichés with measurable specifics. The objective is your 60-word elevator pitch. Make it earn the reader's continued attention.</p>
-
-<h2>5-Step Career Objective Customisation Process 2026</h2>
+<h2>How to Customise Your Career Objective in Five Steps</h2>
 
 <ol>
-  <li><strong>Step 1: Read the job description carefully.</strong> Identify the 3 most-required skills plus the role title plus the company type.</li>
-  <li><strong>Step 2: Map your skills to those requirements.</strong> Pick 2-3 of your actual skills that match.</li>
-  <li><strong>Step 3: Write the objective in 2-3 sentences.</strong> "[Education] graduate seeking [exact role title] at [company type]. Skilled in [skill 1 plus skill 2 plus skill 3]."</li>
-  <li><strong>Step 4: Add one differentiator.</strong> Internship, certification, project, or achievement that makes you stand out.</li>
-  <li><strong>Step 5: Review for clichés.</strong> Remove "challenging", "utilize", "team player", "hardworking". Replace with specific verbs plus outcomes.</li>
+  <li><strong>Read the job description.</strong> Note the role title, the company type and the skills it asks for most.</li>
+  <li><strong>Match your skills.</strong> Pick two or three skills you really have that fit those requirements.</li>
+  <li><strong>Write two to three sentences.</strong> "[Education] graduate seeking [exact role title] at [company type]. Skilled in [skill 1], [skill 2] and [skill 3]."</li>
+  <li><strong>Add one differentiator.</strong> An internship, certification, project or achievement that sets you apart.</li>
+  <li><strong>Cut the clichés.</strong> Remove "challenging", "utilize", "team player" and "hardworking", and use specific verbs instead.</li>
 </ol>
 
-<p>The 5-step process takes 2-3 minutes per application but produces materially better callback rates. Treat it as a calculated investment in interview opportunities, not a generic resume header.</p>
-
-<p>For 2026 freshers, the career objective remains a high-leverage 60-word zone on your resume. Spent right, it converts ATS systems plus recruiter scans into interview calls. Spent wrong, it dilutes your candidacy. Customise per application, lead with specific role plus skills plus differentiator, and the objective earns you the reading time on the rest of your resume. This small adjustment plus deliberate effort transforms generic resumes into targeted job applications.</p>
+<p>Once you have three or more years of work, replace the objective with a resume summary that leads with what you achieved.</p>
 
 <div class="cta-block">
 <h3>Ready to Upgrade Your Qualifications?</h3>
