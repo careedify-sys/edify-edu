@@ -58,6 +58,8 @@ interface Props {
   pd: ProgramDetail
   customH1?: string
   customIntro?: string
+  // 'admission': H1 for a hub whose review blog owns the fee query.
+  h1Variant?: 'admission'
 }
 
 // ── Inline generated-content components ─────────────────────────────────────
@@ -83,7 +85,7 @@ function GeneratedRedFlagsBlock({ redFlags }: { redFlags: NonNullable<PageConten
 
 // ── Main component ───────────────────────────────────────────────────────────
 
-export default function UniProgramBody({ u, program, programSlug, pd, customH1, customIntro }: Props) {
+export default function UniProgramBody({ u, program, programSlug, pd, customH1, customIntro, h1Variant }: Props) {
   const cleanName  = getShortUniversityName(u.name)
 
   // GSC striking-distance fee pages (July 2026): fee table renders right after
@@ -242,7 +244,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
         </nav>
 
         {/* Hero — full width */}
-        <UniHero u={u} program={program} pd={pd} cleanName={cleanName} customH1={customH1} />
+        <UniHero u={u} program={program} pd={pd} cleanName={cleanName} customH1={customH1} h1Variant={h1Variant} />
 
         {/* Sticky section navigation */}
         <StickySectionNav items={[

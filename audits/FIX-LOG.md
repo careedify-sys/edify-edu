@@ -1,5 +1,34 @@
 # Fix log
 
+## 2026-10-28 · Review blog owns "{uni} online MBA (fees)"; MBA hubs de-targeted; MBA route collision fixed
+
+Rishi's call, from Semrush tracking (27 Oct, mobile: blogs 4-10, hubs 33-54) and Aug GSC (blog beat hub in 10/10 pairs).
+Hubs keep BBA/BCA/MCA programme-fee searches.
+- **22 review blogs** retitled: title, seoTitle and H1 lead with "{Uni} Online MBA Fees 2026" plus the fee from
+  getExactFee (list price where the fee has a labelled discount). Amity and MUJ carry Rishi's figures and a
+  direct-answer block under the H1. Amity's old top box sent fee readers to the hub; it is now the answer block.
+- **No fee figure** in three titles, on purpose: Chandigarh (body gives the ₹1,65,000 early-bird net as the fee and
+  never the ₹2,20,000 list), Shoolini (old title said ₹1.18L; body says ₹2,00,000 sticker, ₹1,30,000 / ₹1,58,000
+  after scholarship, and data holds only the nets), NIU (no exact fee in lib/data.ts). Fix those bodies, then add it.
+- **22 MBA hubs**: a keywordLink in lib/internal-links.ts marks the review as owner. Hub title and H1 become
+  "{Uni} Online MBA: Specialisations, Eligibility and Admission" and the hub links the blog with the anchor
+  "{Uni} Online MBA fees and review". Description, intro and fee body unchanged. Existing blog-to-hub links stay.
+- **Left out:** BITS Pilani (blog cited in the AI Overview; hub has no keywordLink, so it stays fee-led) and DY Patil
+  (the review is mapped to D.Y. Patil University, Navi Mumbai at ₹1,75,000, but its body quotes ₹1,89,400, which
+  looks like Dr D.Y. Patil Vidyapeeth; needs Rishi). Galgotias BBA hub and the MUJ fake-or-legit post untouched.
+- **Route collision (the bigger finding):** app/universities/[id]/[program] prerendered "mba" for 13 top
+  universities, and that output replaced the [id]/mba route's HTML at the same path. So the Amity, NMIMS, Symbiosis,
+  LPU, MUJ, MAHE, SMU, Chandigarh, Jain, Amrita, Sharda, Chitkara and Alliance MBA hubs never served
+  MBA_SEO_OVERRIDES or the MBA route's title. The live Amity title "Amity Online MBA Fees 2026 | edifyedu.in" came
+  from the generic template. Removed "mba" from that list. Sharda, Chitkara and Alliance render the same titles as before.
+- **MUJ review** cited Shiksha and College Vidya (blacklisted) as feedback sources and used &mdash;. Removed.
+- Allowlisted Amity ₹4,49,000 (Construction Management, verified 7 Aug) and MUJ ₹46,000 per semester.
+- Measure in GSC from ~2026-11-25 (28 days after deploy): Pages.csv blog vs hub per pair, control = BITS and DY Patil.
+- **Held before merge (Rishi, 28 Oct):** Shoolini MBA hub keeps its fee-led title and H1 (hub ranks 12 for "shoolini
+  university mba fees", blog 34), via keepHubTitle; its new link to the review stays. BITS hub unchanged. Chandigarh
+  blog and hub restored to main exactly (no keywordLink; the [program] route still prerenders its MBA hub, so it renders
+  as before) until Rishi confirms its fee. DY Patil never changed. Controls are now BITS, DY Patil, Chandigarh, Shoolini.
+
 ## 2026-10-28 · LPU MCA and Amity MCA fees confirmed; Shobhit verify link; Uttaranchal on MBA spec hubs
 
 Rishi confirmed:

@@ -1360,6 +1360,24 @@
       "source": "Owner-verified by Rishi",
       "verified_date": "2026-10-28",
       "note": "LPU MCA one-time payment. Matches lib/data.ts feeBreakdown.mca, but this sentence names several universities, so the gate cannot attribute the figure to LPU and counts it UNRESOLVED."
+    },
+    {
+      "slug": "amity-online-mba-review-2026",
+      "figure": 449000,
+      "university": "amity-university-online",
+      "programme": "MBA",
+      "source": "Owner-verified by Rishi against online.amity.edu",
+      "verified_date": "2026-08-07",
+      "note": "Construction Management specialisation total, stated in the direct-answer block. lib/data.ts carries the standard MBA range (2,07,000 one-time to 2,25,000 semester-wise), so the gate reads this as a mismatch."
+    },
+    {
+      "slug": "muj-online-mba-review-2026",
+      "figure": 46000,
+      "university": "manipal-university-jaipur-online",
+      "programme": "MBA",
+      "source": "Rishi's late-Oct 2026 entry from the Online Manipal portal (January 2027 batch)",
+      "verified_date": "2026-10-28",
+      "note": "Per-semester fee (4 x 46,000 = 1,84,000 list). The gate compares it with the programme total and reads it as a mismatch."
     }
   ]
 }

@@ -29,8 +29,16 @@ export async function generateStaticParams() {
     'nmims-online', 'symbiosis-university-online', 'manipal-academy-higher-education-online', 'sikkim-manipal-university-online', 'sharda-university-online',
     'amrita-vishwa-vidyapeetham-online', 'chitkara-university-online', 'alliance-university-online',
   ]
-  const TOP_PROGRAMS = ['mba', 'mca']
+  // No 'mba': /universities/[id]/mba has its own route. Prerendering it here
+  // too wrote this template's HTML over that route's output for these 13
+  // universities, so their MBA hubs never served the MBA route's title, H1 or
+  // overrides (found 2026-10-28; the live Amity hub title came from here).
+  const TOP_PROGRAMS = ['mca']
   const params: { id: string; program: string }[] = []
+  // Held on this template on purpose: its MBA hub must render exactly as it
+  // did before 2026-10-28 until Rishi confirms the fee (the review body gives
+  // the early-bird net, the record the list price). Remove once confirmed.
+  params.push({ id: 'chandigarh-university-online', program: 'mba' })
 
   for (const id of TOP_UNI_IDS) {
     for (const program of TOP_PROGRAMS) {

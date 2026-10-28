@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-10-28",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 2342,
+  "totalUnverified": 2341,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 0,
@@ -77,7 +77,7 @@
     "jamia-hamdard-mba-2026": 7,
     "is-mba-post-graduation-india-2026": 4,
     "mba-course-duration-india-2026": 17,
-    "amity-online-mba-review-2026": 33,
+    "amity-online-mba-review-2026": 32,
     "phd-full-form-doctorate-meaning-india": 1,
     "cat-exam-syllabus-2026-complete-guide": 5,
     "best-computer-courses-after-12th-india-2026": 14,
