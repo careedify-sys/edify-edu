@@ -66,7 +66,10 @@ function chunk(s: string, markdownBold: boolean): string[] {
 }
 
 /** Plain text (FAQ answers, content JSON paragraphs, which may carry **bold**). */
-export function splitParagraph(text: string): string[] {
+// Some FAQ rows carry no answer (a: undefined); render nothing rather than throw.
+// An unguarded .trim() here failed the 28 Oct production build on MBA hubs.
+export function splitParagraph(text: string | null | undefined): string[] {
+  if (!text?.trim()) return []
   return chunk(text.trim(), true)
 }
 
