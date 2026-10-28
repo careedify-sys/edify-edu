@@ -28638,7 +28638,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'uu-doon-online-mba-review',
-    updatedAt: '2026-10-26',
+    updatedAt: '2026-10-29',
     title: 'Uttaranchal University Online MBA Fees 2026: ₹1,48,000',
     seoTitle: 'Uttaranchal University Online MBA Fees 2026: ₹1,48,000',
     h1Title: 'Uttaranchal University Online (UU Online) MBA Fees 2026: ₹1,48,000, Specialisations and Our Review',
@@ -28853,107 +28853,29 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p style="font-size:14px;color:#64748b;margin:16px 0">Also read: <a href="/blog/galgotias-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Galgotias MBA</a>, Rs. 80,200, cheapest NAAC A+ · <a href="/blog/vignan-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Vignan MBA</a>, Rs. 90,000 · <a href="/blog/smu-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">SMU MBA</a>, Rs. 1,10,000, dual spec · <a href="/blog" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">All MBA Reviews</a></p>
 
-<h2>UU Doon Online MBA 2026 EEAT Notes</h2>
+<h2>UU Doon Online MBA 2026: Summary</h2>
 
-<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. UU Doon Online MBA data verified from onlineuu.in, UGC-DEB approval list, NAAC database, plus current pricing 2026.</em></p>
+<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Summary updated 29 October 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. It restates the facts in the review above. Verify current figures at onlineuu.in, the UGC-DEB list and the NAAC database.</em></p>
 
-<div class="callout-key"><strong>One-line frame for UU Doon Online MBA 2026:</strong> Uttaranchal University Dehradun Online MBA. UGC-DEB approved. Budget-friendly tier with 30 percent scholarship availability. Best for budget-conscious working professionals seeking credible recognition plus management upgrade without premium fees.</div>
+<div class="callout-key"><strong>UU Doon Online MBA 2026 in one line:</strong> Uttaranchal University, Dehradun. NAAC A+, UGC-DEB approved, eight specialisations, exam fees included and a 1-on-1 mentor per student. It suits budget-minded working professionals in Uttarakhand and North India.</div>
 
-<h2>UU Doon Online MBA vs Top Competitors 2026</h2>
-
-<table>
-  <caption>UU Doon Online MBA vs key competitors May 2026</caption>
-  <thead><tr><th>University</th><th>NAAC plus NIRF</th><th>Total Fees</th><th>USP</th></tr></thead>
-  <tbody>
-    <tr><td>UU Doon Online MBA</td><td>NAAC A plus</td><td>Rs 99,600-1,03,600 after scholarship</td><td>Budget plus North India regional brand</td></tr>
-    <tr><td>Galgotias University Online</td><td>NAAC A plus</td><td>Rs 80,200</td><td>Cheapest NAAC A plus online MBA</td></tr>
-    <tr><td>Vignan Online MBA</td><td>NAAC A plus</td><td>Rs 90,000</td><td>South India regional plus low fees</td></tr>
-    <tr><td>UPES Online (Dehradun)</td><td>NAAC A plus</td><td>Rs 1.40-1.66 lakh</td><td>Energy plus sustainability specs</td></tr>
-    <tr><td>IGNOU MBAOL</td><td>NAAC A plus plus</td><td>Rs 66,000</td><td>Central open university</td></tr>
-    <tr><td>Sikkim Manipal Online</td><td>NAAC A plus</td><td>Rs 1.10 lakh</td><td>Manipal brand plus affordable</td></tr>
-  </tbody>
-</table>
-
-<div class="callout-warning"><strong>Verify before paying:</strong> UU Doon fees indicative. Verify 30 percent scholarship plus current pricing at onlineuu.in.</div>
-
-<h2>UU Doon Online MBA Career Outcomes 2026</h2>
-
-<table>
-  <caption>UU Doon Online MBA outcomes 2026</caption>
-  <thead><tr><th>Specialisation</th><th>Year 1 CTC</th><th>Year 5 CTC</th><th>Top Recruiters</th></tr></thead>
-  <tbody>
-    <tr><td>Finance</td><td>Rs 4-7 LPA</td><td>Rs 9-15 LPA</td><td>State banks plus NBFCs plus financial services</td></tr>
-    <tr><td>Marketing</td><td>Rs 4-7 LPA</td><td>Rs 9-15 LPA</td><td>FMCG mid-tier plus retail plus e-commerce</td></tr>
-    <tr><td>HR</td><td>Rs 4-7 LPA</td><td>Rs 9-15 LPA</td><td>IT services HR plus manufacturing HR</td></tr>
-    <tr><td>Operations</td><td>Rs 4-7 LPA</td><td>Rs 10-16 LPA</td><td>Auto plus pharma plus manufacturing</td></tr>
-  </tbody>
-</table>
-
-<h2>UU Doon Online MBA Best Fit Profiles 2026</h2>
-
-<ol>
-  <li><strong>Budget-conscious working professionals:</strong> Under Rs 1 lakh fees with NAAC A plus accreditation.</li>
-  <li><strong>Uttarakhand plus Dehradun local professionals:</strong> Strong regional brand recognition.</li>
-  <li><strong>Govt employees seeking promotion eligibility:</strong> Affordable plus UGC-DEB approved.</li>
-  <li><strong>Career upgrade at Rs 4-7 LPA stage:</strong> Reasonable ROI for first management role.</li>
-</ol>
-
-<h2>Honest Gaps in UU Doon Online MBA 2026</h2>
+<h2>Honest Gaps in UU Doon 2026</h2>
 
 <ul>
-  <li><strong>Brand pull is regional:</strong> Strong in Uttarakhand plus Dehradun. Less recognition outside North India.</li>
-  <li><strong>NIRF rank below NMIMS or JAIN:</strong> Limited national tier brand pull.</li>
-  <li><strong>Career service moderate:</strong> Self-driven LinkedIn plus referral effort required.</li>
-  <li><strong>Limited specialisations:</strong> Basic 4-5 specs vs 19-plus at Amity.</li>
-  <li><strong>Career outcomes capped at Rs 15 LPA by year 5:</strong> For senior management track, premium online MBA at NMIMS or Amity preferred.</li>
+  <li><strong>Time-limited scholarship:</strong> the 30% scholarship does not run all year, so confirm it applies to your intake.</li>
+  <li><strong>Regional brand:</strong> the name is known mainly in Uttarakhand and nearby states.</li>
+  <li><strong>Placement support:</strong> placement infrastructure for the online batch is limited.</li>
+  <li><strong>Two different MBAs:</strong> the Executive MBA is a separate, costlier programme. Check which one you are applying to.</li>
 </ul>
 
-<h2>5-Year Career Plan Post UU Doon MBA 2026</h2>
+<h2>UU Doon Application Process 2026</h2>
 
 <ol>
-  <li><strong>Year 1 (during MBA):</strong> Continue current role. Stack one premium certification.</li>
-  <li><strong>Year 2 (MBA completion):</strong> Internal promotion or lateral entry. Rs 4-7 LPA.</li>
-  <li><strong>Year 3:</strong> Senior executive role. Rs 7-10 LPA.</li>
-  <li><strong>Year 4:</strong> First management role. Rs 9-13 LPA.</li>
-  <li><strong>Year 5:</strong> Manager role. Rs 12-15 LPA.</li>
+  <li>Confirm Uttaranchal University and the online MBA on the UGC-DEB list at deb.ugc.ac.in.</li>
+  <li>Check on onlineuu.in whether the scholarship is open for your intake.</li>
+  <li>Apply with a three-year bachelor's degree and 50% aggregate (45% for reserved categories). There is no entrance exam and seats go first-come, first-served.</li>
+  <li>Choose the January or July session.</li>
 </ol>
-
-<h2>UU Doon Online MBA FAQ 2026</h2>
-
-<ul>
-  <li><strong>Is UU Doon UGC-DEB approved?:</strong> Yes. Verify current year status at deb.ugc.ac.in.</li>
-  <li><strong>Is UU Doon Online MBA accepted in IT services?:</strong> Yes for lateral entry plus internal promotion. National brand preferred for tier-1 IT.</li>
-  <li><strong>Does UU Doon provide placement?:</strong> Career service team exists. Self-driven plus support combination.</li>
-  <li><strong>Can BCom plus BBA graduates apply?:</strong> Yes. Any graduation 50 percent eligible.</li>
-  <li><strong>Is 30 percent scholarship available to all?:</strong> Verify eligibility criteria at onlineuu.in. Usually merit-based.</li>
-</ul>
-
-<p>UU Doon Online MBA in 2026 is a credible budget-tier online MBA option at around the Rs 1 lakh price point. Best fit for budget-conscious working professionals plus Uttarakhand regional career upgrade. For pan-India tier-1 brand plus consulting career switch, NMIMS plus JAIN plus Amity provide stronger career outcomes. Match the programme to your career stage plus budget plus regional context.</p>
-
-<h2>UU Doon Online MBA Application Tips 2026</h2>
-
-<ol>
-  <li><strong>Tip 1:</strong> Apply at onlineuu.in 2-3 months before intake.</li>
-  <li><strong>Tip 2:</strong> Verify 30 percent scholarship eligibility plus current pricing.</li>
-  <li><strong>Tip 3:</strong> Submit graduation certificate, marksheets, ID, work experience letter.</li>
-  <li><strong>Tip 4:</strong> Pay semester fees plus access LMS.</li>
-  <li><strong>Tip 5:</strong> Build active LinkedIn presence plus Uttarakhand alumni network during programme.</li>
-  <li><strong>Tip 6:</strong> Stack one premium certification (CFA Level 1, Tableau, AWS Cloud Practitioner).</li>
-</ol>
-
-<h2>UU Doon Specialisation Recommendations 2026</h2>
-
-<ul>
-  <li><strong>Finance:</strong> For state banks, NBFC, plus financial services career upgrade.</li>
-  <li><strong>Marketing:</strong> For FMCG mid-tier, retail, plus e-commerce career.</li>
-  <li><strong>HR:</strong> For IT services HR plus manufacturing HR roles.</li>
-  <li><strong>Operations:</strong> For auto, pharma, manufacturing supply chain.</li>
-  <li><strong>International Business:</strong> Strong for working professionals targeting export plus import sectors.</li>
-</ul>
-
-<p>For Uttarakhand plus Dehradun working professionals at Rs 4-7 LPA stage, UU Doon Online MBA represents reasonable career upgrade investment. Combined with active LinkedIn engagement plus certification stacking plus regional network building, the credential delivers career trajectory acceleration to Rs 12-15 LPA by year 5. For higher career ambitions plus tier-1 brand pull, premium online MBAs at NMIMS plus JAIN plus MAHE plus Symbiosis SSODL offer alternative routes.</p>
-
-<p>The right online MBA programme choice combined with disciplined 2-year execution plus deliberate career planning together determine post-MBA career outcomes. Match the programme to your specific career stage plus regional context plus 5-10 year career goal. Verify UGC-DEB approval plus NAAC plus scholarship plus EMI plus full fee structure before paying any amount. Budget online MBA options like UU Doon work strongly for working professionals seeking credible career upgrade without premium fee burden. The credential carries genuine UGC-DEB recognition plus career upgrade potential. Pair with one premium certification (Tableau, Power BI, AWS Cloud) for compounded career outcomes at Rs 1 lakh-plus total programme cost. The budget tier MBA delivers genuine career upgrade when committed to disciplined 2-year execution. Plan deliberately plus the credential plus your work together deliver measurable career upgrade.</p>
 
 <div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
   <strong>Disclaimer:</strong> EdifyEdu is an independent university comparison platform. All fees are indicative based on publicly available data as of early 2026. The 30% scholarship availability should be verified directly at <a href="https://www.onlineuu.in/mba.php" target="_blank" rel="noopener">onlineuu.in</a>. Confirm UGC-DEB approval status on the UGC portal before applying. EdifyEdu does not accept referral commissions from any university.
