@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { ChevronDown, HelpCircle } from 'lucide-react'
+import { splitParagraph } from '@/lib/split-paragraphs'
 
 interface FAQ { q: string; a: string }
 
@@ -51,7 +52,9 @@ export default function FAQBlock({ faqs, title = 'Frequently Asked Questions' }:
             </button>
             {open === i && (
               <div className="px-4 pb-4 pt-1 bg-slate-50 border-t border-slate-100">
-                <p className="text-sm text-slate-600 leading-relaxed">{faq.a}</p>
+                <div className="text-sm text-slate-600 leading-relaxed space-y-2">
+                  {splitParagraph(faq.a).map((para, pi) => <p key={pi}>{para}</p>)}
+                </div>
               </div>
             )}
           </div>

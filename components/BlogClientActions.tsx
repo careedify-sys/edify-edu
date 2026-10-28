@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { openWhatsApp } from '@/lib/open-whatsapp'
+import { splitParagraph } from '@/lib/split-paragraphs'
 import {
   ChevronDown,
   ThumbsUp,
@@ -103,9 +104,9 @@ export default function BlogClientActions({ faqs, postTitle, postUrl }: Props) {
                     openFaq === i ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
                   }`}
                 >
-                  <p className="px-5 pb-4 pt-1 text-sm text-slate-600 leading-relaxed border-t border-border">
-                    {faq.a}
-                  </p>
+                  <div className="px-5 pb-4 pt-1 text-sm text-slate-600 leading-relaxed border-t border-border space-y-2">
+                    {splitParagraph(faq.a).map((para, pi) => <p key={pi}>{para}</p>)}
+                  </div>
                 </div>
               </div>
             ))}

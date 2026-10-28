@@ -284,16 +284,23 @@ export default async function CouponDetailPage({ params }: { params: any }) {
             The verified {page.shortName} online MBA discount coupon for {year} is <strong>{page.couponCode}</strong>. It carries an additional discount of up to Rs {tierMax.toLocaleString('en-IN')} on Tuesday and Saturday in IST, and Rs {tierBase.toLocaleString('en-IN')} on other days. The coupon is applied at the time of enrollment by our admission desk.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            The coupon redemption is straightforward: no marksheet upload, no eligibility test, no paperwork beyond the standard enrollment process. Reveal the code below by submitting a short form, mention it on your enrollment call, and the discount is reflected in your invoice before any payment is made.
+            Using the coupon is simple. There is no marksheet upload, no test and no extra paperwork. Reveal the code below with a short form and mention it on your enrollment call. The discount shows on your invoice before you pay.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            {page.universityName} holds NAAC {page.naac} accreditation and is UGC-DEB approved for online degree programmes. The online MBA degree is legally equivalent to a campus MBA under UGC 2020 regulations. Per UGC (Online Programmes) Regulations 2018, the degree certificate clearly identifies the programme as "Online" mode. It is valid for UPSC, banking exams, PSU recruitment, and all private-sector employment.
+            {page.universityName} holds NAAC {page.naac} and is UGC-DEB approved for online degrees. Under UGC 2020 rules, the online MBA counts the same as a campus MBA.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            Most students searching for "{page.shortName} online MBA coupon code" or "{page.shortName} MBA discount {year}" land on inflated coupon claims that turn out to be university-administered scholarships with separate eligibility checks and documentation requirements. This page lists only the verified, no-paperwork coupon discount of up to Rs {tierMax.toLocaleString('en-IN')}. For programme fee details and any university-administered scholarships, contact {page.universityName} admissions directly.
+            The degree certificate names the mode as &quot;Online&quot;, as the UGC 2018 online rules require. It is valid for UPSC, bank exams, PSU jobs and all private jobs.
+          </p>
+          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            Many &quot;{page.shortName} online MBA coupon code&quot; or &quot;{page.shortName} MBA discount {year}&quot; offers are really scholarships. Those come with their own rules and documents. This page lists only the coupon of up to Rs {tierMax.toLocaleString('en-IN')}, with no paperwork.
+          </p>
+          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            For fee details and university scholarships, contact {page.universityName} admissions directly.
           </p>
           <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 mb-4">
-            <p className="text-xs text-amber-800"><strong>How the coupon discount works:</strong> the coupon amount is tiered by day of week. On Tuesday and Saturday in IST it is Rs {tierMax.toLocaleString('en-IN')}, on other days it is Rs {tierBase.toLocaleString('en-IN')}. The amount is applied as a fee adjustment when you complete enrollment with code <strong>{page.couponCode}</strong>. The live amount and countdown to the next Tuesday or Saturday max window are shown at the top of this page.</p>
+            <p className="text-xs text-amber-800"><strong>How the coupon works:</strong> the amount depends on the day. On Tuesday and Saturday (IST) it is Rs {tierMax.toLocaleString('en-IN')}. On other days it is Rs {tierBase.toLocaleString('en-IN')}.</p>
+            <p className="text-xs text-amber-800 mt-2">It comes off your fee when you enroll with code <strong>{page.couponCode}</strong>. The top of this page shows today&apos;s amount and a countdown to the next Tuesday or Saturday.</p>
           </div>
         </section>
 
@@ -301,13 +308,16 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Why the {page.couponCode} Coupon Code Matters</h2>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            An online MBA is a significant investment. Every rupee saved at enrollment is a rupee that improves the return on your degree. The {page.couponCode} verified discount coupon is one of the few savings that students actually receive without paperwork or eligibility checks.
+            An online MBA costs a lot. Every rupee you save at enrollment makes the degree better value. The {page.couponCode} coupon is one of the few savings you get without paperwork or checks.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            The coupon is independent of marksheet thresholds, category certificates, payment-plan choices, and intake-specific early-bird windows. Whether you pay lump-sum or via EMI, the coupon discount applies at the time of enrollment. Reveal the code, mention it on your enrollment call, and the discount is reflected in your invoice before any payment.
+            Your marks, category, payment plan and intake date do not affect it. It works whether you pay in one go or by EMI. Reveal the code, mention it on your call, and the discount shows on your invoice before you pay.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            The Tuesday and Saturday max-window design exists for one reason: it gives applicants a fixed, predictable date to plan around. If you enroll on a Tuesday or Saturday in IST, the coupon pays the maximum Rs {tierMax.toLocaleString('en-IN')}. If you enroll any other day, it pays Rs {tierBase.toLocaleString('en-IN')}. There is no hidden small print, no minimum batch fill, no application count gate.
+            The Tuesday and Saturday rule gives you a fixed date to plan around. Enroll on one of those days (IST) and the coupon pays the full Rs {tierMax.toLocaleString('en-IN')}. On any other day it pays Rs {tierBase.toLocaleString('en-IN')}.
+          </p>
+          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            There is no hidden small print. It does not depend on a batch filling up or on how many people apply.
           </p>
         </section>
 
@@ -375,10 +385,13 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>What About {page.shortName} Scholarships and Other Waivers?</h2>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            {page.universityName} runs its own scholarship programmes for merit, defence personnel, divyaang candidates, sports achievers, alumni, and other categories. The eligibility, percentage, and documentation requirements for each category are set by the university directly and change between batches. We do not administer these scholarships and we cannot quote their current values on this page.
+            {page.universityName} runs its own scholarships for merit, defence staff, divyaang students, sports winners, alumni and others. The university sets the rules, amounts and documents for each, and they change between batches. We do not run these scholarships, so we cannot quote their current values here.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            If you think you qualify for any of these categories, ask the {page.shortName} admissions team directly during enrollment. They will confirm whether the scholarship is active for the {year} batch, what documents you need, and whether it can be combined with the {page.couponCode} coupon discount. Information about university scholarships should be verified on {page.officialUrl} or by speaking with {page.shortName} admissions.
+            If you think you qualify, ask {page.shortName} admissions when you enroll. They will tell you if the scholarship is open for the {year} batch, what documents you need, and whether it works with the {page.couponCode} coupon.
+          </p>
+          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            Check scholarship details on {page.officialUrl} or with {page.shortName} admissions.
           </p>
         </section>
 
@@ -386,34 +399,37 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Online MBA Discount Coupons in India {year}: Buyer&apos;s Guide</h2>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            Online MBA discount coupons are one of the most searched queries on Google in the Indian online-education space. Search volumes for "online MBA coupon code", "online MBA discount {year}", "best online MBA offer", and "MBA fee discount India" run into tens of thousands of monthly queries each. The reason is simple: every applicant wants to confirm they are getting a genuine, verifiable saving before enrolling.
+            Every applicant wants to know a saving is real before they enroll. That is why people search for terms like &quot;online MBA coupon code&quot;, &quot;online MBA discount {year}&quot; and &quot;MBA fee discount India&quot;.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            However, most "online MBA coupon" listings on the internet are inflated. They show large savings that are actually university-administered scholarships, not coupon discounts. The applicant then arrives at the enrollment desk and discovers the promised discount has eligibility rules, marksheet thresholds, or batch quotas that do not match what was advertised.
+            Many coupon listings online overstate the saving. The big numbers are often scholarships, not coupons. Students then find rules on marks, documents or batch limits that the ad never mentioned.
           </p>
 
           <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>How a Real MBA Coupon Code Differs from a Scholarship</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            A coupon code is a fixed, no-paperwork discount that any applicant can redeem at enrollment. A scholarship is a university-administered concession with eligibility rules (marksheets, category certificates, defence ID, sports achievements, alumni status). Most students search for "coupon" but receive scholarship-style answers that do not match the search intent.
+            A coupon is a fixed discount anyone can use at enrollment, with no paperwork. A scholarship comes from the university and has rules: marksheets, category certificates, defence ID, sports records or alumni status.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            The {page.couponCode} coupon on this page is the former. It is a fixed Rs {tierMax.toLocaleString('en-IN')} (Tue/Sat IST) or Rs {tierBase.toLocaleString('en-IN')} (other days) discount applied at enrollment. There is no marksheet check, no category certificate, no application essay. If you can complete the {page.shortName} online MBA enrollment, you can redeem the coupon.
+            The {page.couponCode} coupon is the first kind. It takes Rs {tierMax.toLocaleString('en-IN')} (Tue/Sat IST) or Rs {tierBase.toLocaleString('en-IN')} (other days) off at enrollment. There is no marks check, no certificate and no essay. If you can enroll in the {page.shortName} online MBA, you can use it.
           </p>
 
-          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>What "Online MBA Offer {year}" Searches Usually Mean</h3>
+          <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>What &quot;Online MBA Offer {year}&quot; Searches Usually Mean</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            High-volume queries like "online MBA offer {year}", "online MBA special offer India", "online MBA fee waiver code", and "best online MBA discount" all refer to the same underlying intent: a verifiable, no-strings discount at the point of enrollment. The Rs {tierMax.toLocaleString('en-IN')} max coupon on this page sits in that exact niche across UGC-DEB approved universities.
+            Searches like &quot;online MBA offer {year}&quot;, &quot;online MBA fee waiver code&quot; and &quot;best online MBA discount&quot; all want the same thing: a real discount at enrollment with no strings. The coupon on this page, up to Rs {tierMax.toLocaleString('en-IN')}, is exactly that.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            Across the UGC-DEB approved online MBA universities we work with, coupon discounts settle into a narrow band. The bulk of programmes carry coupon savings in the Rs 4,000 to Rs 5,000 range, similar to what {page.shortName} offers via {page.couponCode}. Larger advertised savings on other sites usually refer to scholarships that are not bundled with any coupon.
+            At the UGC-DEB approved universities we work with, coupons fall in a narrow band. Most are Rs 4,000 to Rs 5,000, like {page.shortName}&apos;s {page.couponCode}. Bigger savings on other sites are usually scholarships, not coupons.
           </p>
 
           <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>Tuesday and Saturday Max Window: Why It Matters</h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            The {page.couponCode} coupon pays its maximum value of Rs {tierMax.toLocaleString('en-IN')} only on Tuesday and Saturday in IST. On other days the coupon still works but at the base value of Rs {tierBase.toLocaleString('en-IN')}. The difference of Rs {(tierMax - tierBase).toLocaleString('en-IN')} is small in absolute terms but becomes meaningful if you are deciding between three or four programmes and trying to compare like-for-like.
+            The {page.couponCode} coupon pays its top value of Rs {tierMax.toLocaleString('en-IN')} only on Tuesday and Saturday (IST). On other days it pays Rs {tierBase.toLocaleString('en-IN')}.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            Practical advice: time your enrollment call so the fee invoice is generated on a Tuesday or Saturday. The countdown timer at the top of this page tracks the next max window so you can plan around it. If you have already started enrollment on a base-amount day, ask the admission desk to schedule the final invoice generation on the next Tuesday or Saturday.
+            The gap is Rs {(tierMax - tierBase).toLocaleString('en-IN')}. That is small, but it matters when you compare three or four programmes side by side.
+          </p>
+          <p className="text-sm text-slate-600 leading-relaxed mb-4">
+            Tip: time your enrollment call so the fee invoice is made on a Tuesday or Saturday. The countdown at the top of this page shows the next one. If you started on another day, ask the admission desk to raise the final invoice on the next Tuesday or Saturday.
           </p>
 
           <h3 className="text-base font-bold mb-2 mt-5" style={{ color: '#0f2756' }}>Coupon Validity, Refreshes, and Stacking Rules</h3>
@@ -569,8 +585,17 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         {/* Buried legal disclaimer */}
         <div className="mt-12 pt-6 border-t border-slate-100">
           <p className="text-[10px] text-slate-400 leading-relaxed">
-            <strong className="text-slate-500">Disclosure and terms.</strong> edifyedu.in is an independent advisory and comparison platform. The discount coupon codes shown on this page represent enrollment-time fee adjustments coordinated by our admission desk during the enrollment process for the {year} batch and are not official discount offers issued, endorsed, sponsored, or administered by {page.universityName} or any of its affiliates. The coupon amounts (Rs {tierMax.toLocaleString('en-IN')} on Tuesday and Saturday in IST and Rs {tierBase.toLocaleString('en-IN')} on other days) are indicative for the current monthly cycle and may be revised, suspended, or withdrawn at any time without prior notice. Final acceptance, applicability, and amount of the discount at enrollment are at the sole discretion of the {page.universityName} admissions team and subject to verification of student details, programme availability, batch quotas, and applicable university policies in effect at the time of enrollment. University-administered scholarships (merit, defence, divyaang, sports, alumni, and similar categories) are separate from this coupon, are governed independently by {page.universityName}, and should be verified directly with the university via {page.officialUrl}. Coupon discounts are not transferable, not redeemable for cash, and cannot be combined with other third-party coupon codes for the same programme. Programme fees, accreditation status, and other figures referenced are sourced from publicly available university communications and are believed to be accurate at the time of publishing. Students are advised to independently verify all fees, accreditation, and discount applicability on the official {page.universityName} portal before making any payment. All trademarks, university names, and logos referenced are the property of their respective owners and used here for identification and comparison purposes only. By revealing or using a coupon code, you acknowledge these terms.
+            <strong className="text-slate-500">Disclosure and terms.</strong> edifyedu.in is an independent advice and comparison site. By revealing or using a coupon code, you accept these terms.
           </p>
+          <ul className="text-[10px] text-slate-400 leading-relaxed list-disc pl-4 mt-1 space-y-0.5">
+            <li>The coupon codes on this page are fee adjustments our admission desk arranges at enrollment for the {year} batch. They are not official offers from {page.universityName} or its affiliates, and the university does not issue, endorse, sponsor or run them.</li>
+            <li>The amounts (Rs {tierMax.toLocaleString('en-IN')} on Tuesday and Saturday IST, Rs {tierBase.toLocaleString('en-IN')} on other days) are indicative for this month. They may change, pause or end at any time without notice.</li>
+            <li>{page.universityName} admissions decide whether the discount applies and how much it is. That depends on your details, programme seats, batch quotas and university policy at the time you enroll.</li>
+            <li>University scholarships (merit, defence, divyaang, sports, alumni and similar) are separate from this coupon and run by {page.universityName}. Check them with the university at {page.officialUrl}.</li>
+            <li>Coupons cannot be transferred or cashed, and cannot be combined with other third-party coupon codes for the same programme.</li>
+            <li>Fees, accreditation and other figures come from public university sources and were correct when published. Check every fee, accreditation and discount on the official {page.universityName} portal before you pay.</li>
+            <li>University names, trademarks and logos belong to their owners and appear here only to identify and compare programmes.</li>
+          </ul>
         </div>
       </div>
     </>

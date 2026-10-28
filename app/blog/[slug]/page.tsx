@@ -24,6 +24,7 @@ import { pageKeywords } from '@/lib/page-keywords'
 import { getUniversityById, type Program } from '@/lib/data'
 import { getProgramSchemaOffer } from '@/lib/seo/program-schema'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
+import { splitLongParagraphsHtml } from '@/lib/split-paragraphs'
 
 // Inject a mid-article CTA marker right before the next <h2> after a given
 // heading ID. BlogContentWithCTAs picks up the marker and renders the right
@@ -169,7 +170,7 @@ export default async function BlogPostPage({ params }: Props) {
   // Relevance-picked and spread across the archive. See lib/blog-related.ts.
   const otherPosts = getRelatedPosts(slug)
 
-  let contentWithIds = addHeadingIds(post.content)
+  let contentWithIds = splitLongParagraphsHtml(addHeadingIds(post.content))
   const headings = extractHeadings(post.content)
 
   // Slug-conditional CTA bundle (component-driven, not in content body).

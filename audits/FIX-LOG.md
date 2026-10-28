@@ -1,5 +1,21 @@
 # Fix log
 
+## 2026-10-28 · "Paragraphs are too long" / "Low readability" audit rows, batch 1
+
+- **Why:** the site audit flagged ~200 spec hubs, coupon pages and blogs. House style caps paragraphs at 2-4 sentences,
+  but blog bodies, FAQ answers and spec content JSON predate it; one coupon disclosure was a single 290-word paragraph.
+- **Fix 1, render-time split:** lib/split-paragraphs.ts breaks any paragraph over 55 words at sentence ends outside
+  tags and **bold**, into balanced chunks of at most 4 sentences. Applied to blog bodies (app/blog/[slug]), blog FAQ
+  answers (BlogClientActions), FAQBlock and spec content JSON (UniSpecBody). No wording, fee or rank changes, and
+  lib/blog.ts and lib/data/page-content/*.json are untouched (the NIRF-category session is editing the JSON).
+  Abbreviations (Rs., vs., e.g.) and one long sentence are never split.
+- **Fix 2, coupon template rewritten in plain words:** app/coupons/[slug]/page.tsx, every amount and code expression
+  kept. Dropped the unsourced "tens of thousands of monthly queries" claim (GSC shows ~33 coupon impressions/week).
+  The disclosure is now a short lead line plus a bullet list with the same terms.
+- **Measured on the dev server:** 19 flagged blogs went from ~277 paragraphs over 60 words to 55, the spec and coupon
+  pages sampled to 0. Coupon reading ease 44 to 60. Blog and spec reading ease is unchanged (splitting does not shorten
+  sentences); the remaining long paragraphs are 2-3 very long sentences and need the copy rewrite (batch 2+).
+
 ## 2026-10-28 · wa.me "429 broken link" rows in the site audit
 
 - **Why:** the crawl report listed 2-3k outbound wa.me links returning 429. They are not broken: a browser gets a 302 to

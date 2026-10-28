@@ -53,6 +53,7 @@ import RequestSyllabusCard from './RequestSyllabusCard'
 import { getExactFee, formatExactFee } from '@/lib/fees'
 import { feeSentence, emiSentence, programmeEmiFrom, NO_PROGRAMME_EMI } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
+import { splitParagraph } from '@/lib/split-paragraphs'
 
 // ── Inline bold renderer: converts **text** → <strong> at render time ─────────
 
@@ -68,7 +69,10 @@ function renderBoldInline(text: string) {
 
 function renderParagraphsWithBold(text: string) {
   if (!text) return null
-  return text.split(/\n\n+/).map((para, pi) => {
+  // Single-line paragraphs over the house-style length are split at sentence
+  // ends first (lib/split-paragraphs.ts); bullet and multi-line ones are not.
+  const paras = text.split(/\n\n+/).flatMap(p => (p.includes('\n') ? [p] : splitParagraph(p)))
+  return paras.map((para, pi) => {
     const lines = para.split('\n')
     const hasBullets = lines.some(l => l.trimStart().startsWith('- '))
 
