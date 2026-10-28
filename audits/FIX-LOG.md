@@ -1,5 +1,16 @@
 # Fix log
 
+## 2026-10-28 · LPU BCA fee confirmed
+
+- **Rishi confirmed:** ₹20,400 per semester (6 semesters, ₹1,22,400 semester-wise) or ₹1,11,360 lump sum. The
+  ₹1,22,400 the hub showed since 10 May was the semester-wise total, never read from the portal, and hid the cheaper
+  lump sum. lib/data.ts now carries a feeBreakdown.bca payment-mode breakdown like MCA, and programFees/pd.fees hold the
+  range, so the hub title, tile, schema and FAQ read ₹1,11,360–₹1,22,400 with both modes labelled.
+- **Blogs:** two sentences that called ₹1,22,400 the total now give both modes (online-bca-fees-india-2026-compared,
+  best-online-bca-colleges-india-2026). The lump sum in the second is allowlisted because the sentence also names Amrita.
+  Sorted fee tables and the ₹1.22L quick-facts cell are left as they are: still true, as the semester-wise figure.
+- **Still open:** both LPU BCA and MCA hubs print "EMI from ₹6,708", which is the MBA emiFrom.
+
 ## 2026-10-28 · "bits pilani wilp" and "uu online" in hub H1s; LPU BCA/MCA fee audit
 
 - **Why:** Semrush Position Tracking (27 Oct, mobile) has "bits pilani wilp" (12,100/mo) and "uu online" (2,400/mo)

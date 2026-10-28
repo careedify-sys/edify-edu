@@ -1378,6 +1378,15 @@
       "source": "Rishi's late-Oct 2026 entry from the Online Manipal portal (January 2027 batch)",
       "verified_date": "2026-10-28",
       "note": "Per-semester fee (4 x 46,000 = 1,84,000 list). The gate compares it with the programme total and reads it as a mismatch."
+    },
+    {
+      "slug": "best-online-bca-colleges-india-2026",
+      "figure": 111360,
+      "university": "lovely-professional-university-online",
+      "programme": "BCA",
+      "source": "Owner-verified by Rishi",
+      "verified_date": "2026-10-28",
+      "note": "LPU BCA lump sum (semester-wise is Rs 20,400 x 6 = Rs 1,22,400). Matches lib/data.ts feeBreakdown.bca, but this sentence names several universities, so the gate cannot attribute the figure to LPU and counts it UNRESOLVED."
     }
   ]
 }
