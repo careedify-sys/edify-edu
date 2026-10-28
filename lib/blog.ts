@@ -28389,40 +28389,31 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p style="font-size:14px;color:#64748b;margin:16px 0">Also read: <a href="/blog/vignan-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Vignan Online MBA Review</a>, NAAC A+, Andhra Pradesh, Rs. 90,000 · <a href="/blog" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">All MBA Reviews</a> · <a href="/universities" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Browse All Universities</a></p>
 
-<h2>DSU Online MBA 2026 EEAT Notes</h2>
+<h2>DSU Online MBA 2026: Summary</h2>
 
-<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. DSU Online MBA data verified from dsuonline.com, UGC-DEB approval list, NAAC database.</em></p>
+<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Summary updated 29 October 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. It restates the facts in the review above. Verify current figures at dsuonline.com, the UGC-DEB list and the NAAC database.</em></p>
 
-<div class="callout-key"><strong>One-line frame for DSU Online MBA 2026:</strong> Rs 1.30 lakh, NAAC A plus plus, UGC-DEB approved. AI, Business Analytics, Entrepreneurship, HR, IT and Systems, Marketing, Supply Chain specialisations. Best for budget-conscious Bengaluru working professionals seeking credible career upgrade.</div>
+<div class="callout-key"><strong>DSU Online MBA 2026 in one line:</strong> A NAAC A++ Bengaluru university with UGC-DEB approval and seven tracks, including AI and Business Analytics. It suits working professionals in South India's tech sector who want an accredited MBA at a mid-range price.</div>
 
-<h2>DSU vs Top Competitors 2026</h2>
+<h2>Honest Gaps in DSU 2026</h2>
 
-<table>
-  <caption>DSU vs key competitors May 2026</caption>
-  <thead><tr><th>University</th><th>NAAC</th><th>Total Fees</th><th>USP</th></tr></thead>
-  <tbody>
-    <tr><td>DSU Online MBA</td><td>NAAC A plus plus</td><td>Rs 1.30 lakh</td><td>Bengaluru location plus AI plus Analytics specs</td></tr>
-    <tr><td>JAIN Online (Bengaluru)</td><td>NAAC A plus plus</td><td>Rs 1.50 lakh</td><td>Cloud, FinTech specs</td></tr>
-    <tr><td>NMIMS Online</td><td>NAAC A plus plus</td><td>Rs 2.10-2.40 lakh</td><td>Premium BFSI brand</td></tr>
-    <tr><td><a href="/universities/christ-university-online">Christ University</a> Online</td><td>NAAC A plus plus</td><td>Rs 2.30 lakh</td><td>Premier Bengaluru brand</td></tr>
-    <tr><td>Sikkim Manipal Online</td><td>NAAC A plus</td><td>Rs 1.10 lakh</td><td>Manipal brand budget</td></tr>
-  </tbody>
-</table>
+<ul>
+  <li><strong>Regional brand:</strong> recall is limited in North and West India.</li>
+  <li><strong>Thin public syllabus:</strong> full syllabi for every track, and for Supply Chain in particular, were not easy to find.</li>
+  <li><strong>Placement support:</strong> help for online students is weaker than for the campus programme.</li>
+  <li><strong>Campus ranking only:</strong> the Business World rank of 61st applies to the campus school, not the online mode.</li>
+  <li><strong>Exam fees:</strong> confirm whether exam fees are included in the quoted total.</li>
+</ul>
 
-<h2>DSU Career Outcomes 2026</h2>
+<h2>DSU Application Process 2026</h2>
 
-<table>
-  <caption>DSU specialisation outcomes 2026</caption>
-  <thead><tr><th>Spec</th><th>Year 1 CTC</th><th>Year 5 CTC</th></tr></thead>
-  <tbody>
-    <tr><td>AI plus Business Analytics</td><td>Rs 6-12 LPA</td><td>Rs 14-25 LPA</td></tr>
-    <tr><td>Finance plus HR plus Marketing</td><td>Rs 5-9 LPA</td><td>Rs 12-22 LPA</td></tr>
-    <tr><td>Supply Chain plus IT Systems</td><td>Rs 5-10 LPA</td><td>Rs 12-22 LPA</td></tr>
-    <tr><td>Entrepreneurship</td><td>Variable (founder route)</td><td>Variable</td></tr>
-  </tbody>
-</table>
-
-<p>DSU Online MBA in 2026 combines NAAC A plus plus accreditation with Bengaluru location plus modern specialisations including AI plus Business Analytics. Best fit for budget-conscious working professionals in Bengaluru tech ecosystem seeking credible career upgrade at Rs 1.30 lakh price point. For premium brand pull, NMIMS plus JAIN preferred at higher price. For Bengaluru regional brand at budget tier, DSU delivers strong value. Combine credential with active LinkedIn engagement plus certification stacking for accelerated career trajectory over 5-year horizon. The Bengaluru tech ecosystem rewards deliberate skill building plus credible UGC-DEB credential. Match programme to your career stage plus tech sector target. The 24-month structured execution determines actual career outcomes post-MBA. The DSU credential plus active engagement together compound outcomes.</p>
+<ol>
+  <li>Confirm DSU and the online MBA on the UGC-DEB list at deb.ugc.ac.in.</li>
+  <li>Apply online at dsuonline.com with a bachelor's degree in any discipline. Admission is merit-based with no entrance exam.</li>
+  <li>Check the minimum marks for your intake, since sources cite both 50% and 55%.</li>
+  <li>Create your ABC ID and DEB ID, which UGC rules require.</li>
+  <li>Pick the January or July/August intake and confirm which specialisations it offers.</li>
+</ol>
 
 <div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
   <strong>Disclaimer:</strong> EdifyEdu is an independent university comparison platform. All fees mentioned are indicative based on publicly available data as of early 2026. Fees may change without notice. Please verify all details including current fees, UGC-DEB approval status, and eligibility criteria directly at <a href="https://dsuonline.com/" target="_blank" rel="noopener">dsuonline.com</a> and the UGC portal before applying. EdifyEdu does not accept referral commissions from any university.
