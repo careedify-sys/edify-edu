@@ -1,5 +1,18 @@
 # Fix log
 
+## 2026-10-28 · Course schema: GSC "missing field" errors on review blogs and compare pages
+
+- **Why:** GSC Course info flagged 48 review/legitimacy blogs (description, offers and hasCourseInstance missing) and
+  every /compare pair page (description missing). The blog Article carried a bare Course node in `about`, and Google
+  validates a nested Course like a top-level one. The compare Course nodes had offers and an instance but no description.
+- **Fix:** app/blog/[slug]/page.tsx now gives the about-Course the post's metaDescription, offers from
+  getProgramSchemaOffer (same fee path as SchemaBlock, a bare Offer with category when the fee is suppressed) and an
+  online CourseInstance. The node is dropped for mode-unverified universities, the same gate hub and compare pages use.
+  app/compare/[pair]/page.tsx adds a neutral description to both Course nodes. No new fee or accreditation claims.
+- **Verified on the dev server:** all 48 blog URLs from the GSC report emit one Course with all three fields; sampled
+  compare pages (amity-vs-lpu-bca, sharda-vs-galgotias-bba) emit two complete Course nodes. The other Course emitters
+  (programs, coupons, UniversityPageClient, SchemaBlock) already carried all three.
+
 ## 2026-10-28 · MBA EMI no longer printed on non-MBA programme pages
 
 - **Why:** u.emiFrom is entered against the MBA fee and EMI is not stored per programme, but programme hubs and spec
