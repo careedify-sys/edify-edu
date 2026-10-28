@@ -51157,6 +51157,152 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <p class="disclaimer"><em>Counts reflect the specialisations universities list for their online programmes in our records on 27 October 2026. Entitlements are granted by session. Confirm the programme and mode on deb.ugc.ac.in before you enrol.</em></p>
     `,
   },
+  {
+    slug: 'online-degree-admission-process-india',
+    title: 'Online Degree Admission 2026: How to Apply for BA, BBA, BCA, BSc',
+    seoTitle: 'Online Degree Admission 2026: How to Apply for BA, BBA, BCA, BSc',
+    h1Title: 'Online Degree Admission in India 2026: How to Apply for an Online BA, B.Com, BBA, BCA, BSc or MBA',
+    metaDescription: 'How online degree admission works in India: eligibility, the DEB ID, the two intakes, documents, fees and refunds. Same steps for BA, BBA, BCA, BSc and MBA.',
+    category: 'Online Degree Validity',
+    tags: ['Online Degree Admission', 'Online BCA Admission', 'Online BBA Admission', 'Online BSc Admission', 'Online BA Registration', 'DEB ID', 'Student Guidance'],
+    publishedAt: '2026-10-28',
+    readTime: 8,
+    targetKeyword: 'online degree admission',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/7683746/pexels-photo-7683746.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by RDNE Stock project on Pexels ',
+    heroImageAlt: 'Three college students with backpacks and books on campus stairs outdoors.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'How do I take admission in an online degree in India?', a: 'Check that the university is UGC-entitled for that exact programme in Online mode for your session on deb.ugc.ac.in, create your ABC (APAAR) ID and then your DEB ID, apply on the university\'s own admission portal, upload your documents and pay the fee to the university only. The steps are the same for BA, B.Com, BBA, BCA, BSc and MBA.' },
+      { q: 'Who is eligible for online BCA, BBA or BSc admission?', a: 'Under the UGC UG and PG Regulations, 2025, anyone who has passed Class 12, through formal schooling or the open school system, or its equivalent, is eligible for an undergraduate programme. Universities can add their own subject or marks conditions, so read the programme page.' },
+      { q: 'Is a DEB ID required for online degree admission?', a: 'Yes. UGC made the DEB ID mandatory for every learner joining an ODL or Online programme from the session beginning October 2024. You create it on deb.ugc.ac.in using your ABC (APAAR) ID, and it stays valid for life.' },
+      { q: 'When does online degree admission open?', a: 'Online programmes run two sessions a year, starting in January/February and July/August, under the UGC ODL and Online Regulations, 2020. UGC-DEB sets a last date to admit learners for each session. For the August 2026 session it was 13 October 2026.' },
+      { q: 'Is there an entrance exam for online BCA or BBA admission?', a: 'Most online undergraduate programmes admit on Class 12 results without an entrance test. Some universities run their own test or interview for certain programmes, especially at postgraduate level. The university\'s prospectus is the only reliable source.' },
+      { q: 'Can I get my fee back if I cancel an online degree admission?', a: 'Yes, under UGC rules. The UGC Fee Refund Policy 2024-25, which UGC confirmed in October 2025 stays in force, and the 2018 refund table tie your refund to how close you withdraw to the notified last date of admission. Universities must also publish their refund terms in advance.' },
+      { q: 'Can I apply for an online BSc?', a: 'Only at a few universities. Most science degrees need laboratory work, and UGC does not allow lab-based programmes online. Only 2 of the 143 universities in our records list an online BSc, so check the subject and the DEB entitlement before applying.' },
+    ],
+    ctaTitle: 'Applying for an online degree?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">Online admission takes a few days if you do it in the right order, and weeks of back-and-forth if you do not. The order is the same whether you are applying for a BA, a BCA or an MBA.</p>
+
+<p><strong>Short answer:</strong> to take admission in an online degree in India, first confirm the university is <strong>UGC-entitled for that exact programme in Online mode</strong> for the session you are joining. Then create your <strong>ABC (APAAR) ID</strong> and your <strong>DEB ID</strong>, which UGC has required since October 2024. Apply on the university's own portal, upload your documents, and pay the fee <strong>to the university only</strong>. Undergraduate programmes need a Class 12 pass, and postgraduate programmes need a bachelor's degree.</p>
+
+<div class="callout-key">
+<strong>Online degree admission in one box (last verified 28 October 2026)</strong>
+<ul>
+<li><strong>Intakes:</strong> two a year, January/February and July/August (UGC ODL and Online Regulations, 2020)</li>
+<li><strong>UG eligibility:</strong> Class 12 pass, formal or open schooling, or equivalent (UGC UG and PG Regulations, 2025)</li>
+<li><strong>PG eligibility:</strong> a bachelor's degree, plus any regulator or university conditions</li>
+<li><strong>Mandatory ID:</strong> DEB ID, built from your ABC (APAAR) ID, since the session beginning October 2024</li>
+<li><strong>Cut-off:</strong> set by UGC-DEB per session. August 2026 session: 13 October 2026</li>
+<li><strong>Fees:</strong> paid only to the university, against a receipt</li>
+</ul>
+</div>
+
+<h2>What are the steps for online degree admission?</h2>
+
+<ol>
+<li><strong>Check the programme on the UGC-DEB register.</strong> Look up the university, the programme and the mode for your session on deb.ugc.ac.in. Recognition is granted per programme and per session, so an entitled online MBA does not prove the same university's online BCA is entitled. Our <a href="/guides/how-to-check-ugc-deb-approval">guide to checking UGC-DEB approval</a> shows where to look.</li>
+<li><strong>Create or check your ABC (APAAR) ID.</strong> You make it through DigiLocker. Your name, date of birth and gender must match your marksheets exactly.</li>
+<li><strong>Generate your DEB ID.</strong> Register on the Student DEB ID page of deb.ugc.ac.in with your ABC ID. The university needs this number to enrol you.</li>
+<li><strong>Apply on the university's own portal.</strong> Use the admission link on the university's official website, not a link sent by a third party.</li>
+<li><strong>Upload your documents.</strong> The university lists what it needs. Scan them clearly and keep the names consistent across every document.</li>
+<li><strong>Pay the fee to the university.</strong> Pay online or by bank draft to the university itself and keep the receipt.</li>
+<li><strong>Get your enrolment and login details.</strong> The university confirms admission and gives you access to its learning platform.</li>
+</ol>
+
+<p class="pull">Check the programme first and the fee last. Most admission trouble comes from doing it the other way round.</p>
+
+<h2>Who is eligible for an online bachelor's degree?</h2>
+
+<p>The UGC (Minimum Standards of Instruction for the Grant of Undergraduate Degree and Postgraduate Degree) Regulations, 2025 make anyone who has passed Class 12 eligible for an undergraduate programme. That includes students from the open school system, such as NIOS. Universities can add subject or marks conditions on top.</p>
+
+<p>The same regulations let you cross streams. A commerce or arts student can join a BCA if the university admits on that basis, or qualify through an entrance test where one applies. Our guide to <a href="/blog/online-bachelors-ug-courses-india">online bachelor's courses in India</a> covers each UG degree in detail.</p>
+
+<table>
+<thead><tr><th>Programme</th><th>Entry requirement</th><th>Universities in our records listing it online</th></tr></thead>
+<tbody>
+<tr><td>Online BBA</td><td>Class 12 pass</td><td>77</td></tr>
+<tr><td>Online B.Com</td><td>Class 12 pass</td><td>56</td></tr>
+<tr><td>Online BCA</td><td>Class 12 pass, university conditions vary</td><td>54</td></tr>
+<tr><td>Online BA</td><td>Class 12 pass</td><td>27</td></tr>
+<tr><td>Online BSc</td><td>Class 12 pass, subject rules vary</td><td>2</td></tr>
+</tbody>
+</table>
+
+<p>Counts come from the programme lists we hold for 143 universities on 28 October 2026. A university listing a programme does not prove it is entitled for your session. Check deb.ugc.ac.in before you apply.</p>
+
+<h2>Who is eligible for an online master's or MBA?</h2>
+
+<p>Postgraduate admission needs a bachelor's degree. The 2025 regulations accept a three-year bachelor's (120 credits) or a four-year Honours degree (160 credits). Regulators and universities can add conditions, such as minimum marks or subject requirements.</p>
+
+<p>Since a UGC circular of 28 July 2026, a one-year online master's is possible, but only for holders of a four-year Honours degree, at universities entitled for it. Our guide to <a href="/blog/online-masters-pg-courses-india">online master's and PG courses</a> compares the options.</p>
+
+<h2>What is a DEB ID, and when do you need it?</h2>
+
+<p>A DEB ID is a learner ID issued on the UGC-DEB portal. UGC made it mandatory for every student joining an ODL or Online programme from the session beginning October 2024, under its public notice of 11 November 2024. One DEB ID lasts for life, so you do not need a new one for a second programme.</p>
+
+<p>Create it before you apply, not after. If your ABC record has a spelling error, the DEB ID inherits it, and fixing it later delays enrolment. Our <a href="/blog/ugc-deb-id-explained">DEB ID guide</a> walks through creating and correcting one.</p>
+
+<div class="callout-warning">
+<strong>A DEB ID does not approve your programme.</strong> It identifies you as a learner. Whether your university may teach that programme online, for that session, is a separate check on deb.ugc.ac.in.
+</div>
+
+<h2>When does online degree admission open?</h2>
+
+<p>Online programmes run two sessions a year. Regulation 2(b) of the UGC ODL and Online Regulations, 2020 defines an academic session as starting in January/February or July/August. So if you miss the July intake, the January intake is the next one, not next July.</p>
+
+<p>UGC-DEB fixes a last date to admit learners for each session. For the August 2026 session it was 13 October 2026. The date for the January 2027 session had not been published on the DEB portal when we checked on 28 October 2026. Our explainer on <a href="/blog/ugc-biannual-admissions-january-july-intake">January and July intakes</a> tracks it.</p>
+
+<h2>Is there an entrance exam for online admission?</h2>
+
+<p>Usually not at undergraduate level. Most online BA, B.Com, BBA and BCA programmes admit on Class 12 results. Some universities set their own test, interview or profile round, more often for an MBA.</p>
+
+<p>The university's prospectus is the only source that counts. If an agent says a test is waived for a payment, treat that as a warning sign, not a shortcut.</p>
+
+<h2>How do you pay the fee safely?</h2>
+
+<p>Regulation 14(2) of the 2020 regulations requires universities to declare all fees in the prospectus and on their website. Fees are paid to the university only, by online transfer, bank draft or pay order, against a written receipt. A request to pay an individual, or a "counsellor" account, is not a UGC-compliant admission.</p>
+
+<p>Fees change each session. Take the current figure from the university's official portal on the day you pay, and keep a dated screenshot of the fee page.</p>
+
+<h2>What if you change your mind after paying?</h2>
+
+<p>UGC rules give you a refund. The UGC Fee Refund Policy 2024-25, which UGC confirmed on 27 October 2025 stays in force until it issues a new one, and the 2018 UGC refund table tie your refund to how close you withdraw to the notified last date of admission. The university must pay within 15 days of your written application.</p>
+
+<p>Ask for the last date of admission in writing when you apply. Without it, you cannot tell which refund row you fall in. Our <a href="/blog/ugc-fee-refund-policy">UGC fee refund guide</a> has the full table.</p>
+
+<h2>Which online admissions should you avoid?</h2>
+
+<ul>
+<li><strong>Prohibited programmes.</strong> UGC's notice of 11 November 2024 bars engineering, law, medical, nursing, pharmacy, architecture, visual arts and several other disciplines in ODL and Online mode. An "online B.Tech" or "online LLB" offer is not a UGC-valid degree.</li>
+<li><strong>Short-cut degrees.</strong> Online programmes must carry the same credits and minimum duration as the campus degree. A one-year bachelor's is a warning sign.</li>
+<li><strong>Fake universities.</strong> UGC publishes a list of institutions that cannot award degrees. Our <a href="/blog/ugc-fake-universities-list-2026">UGC fake universities list for 2026</a> has the current names.</li>
+</ul>
+
+<h2>Does IGNOU admission work the same way?</h2>
+
+<p>Mostly. IGNOU follows the same UGC rules, including the DEB ID, but runs separate portals for its ODL and Online programmes. Our <a href="/blog/ignou-online-admission-guide">IGNOU online admission guide</a> covers its portals step by step.</p>
+
+<div class="cta-box">
+<p><strong>Choosing where to apply?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities</a> or <a href="/contact">ask us</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulations 2(b), 4, 14 and 22: deb.ugc.ac.in</li>
+<li>UGC (Minimum Standards of Instruction for the Grant of Undergraduate Degree and Postgraduate Degree) Regulations, 2025, Gazette of 2 April 2025: ugc.gov.in</li>
+<li>UGC public notice F.No. 1-34/2024 (DEB-I), 11 November 2024, on DEB ID and programmes prohibited in ODL and Online mode: deb.ugc.ac.in</li>
+<li>UGC circular F.No. 7-2/2026 (DEB-NWR), 28 July 2026, on one-year online PG programmes: deb.ugc.ac.in</li>
+<li>UGC Fee Refund Policy 2024-25 (12 June 2024) and UGC notice of 27 October 2025: ugc.gov.in</li>
+<li>Student DEB ID page and session cut-off dates: deb.ugc.ac.in</li>
+</ul>
+
+<p class="disclaimer"><em>Last verified against UGC and UGC-DEB sources on 28 October 2026. Programme counts reflect edifyedu.in records on the same date. Universities set their own documents, tests and fees within these rules, so confirm each on the university's official portal before you apply.</em></p>
+    `,
+  },
 ]
 
 export const BLOG_CATEGORIES: string[] = Array.from(new Set(BLOG_POSTS.map(p => p.category).filter(Boolean)))
