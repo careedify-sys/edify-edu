@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { Phone, Mail, Shield } from 'lucide-react'
-import EmailOff from '@/components/EmailOff'
 
 export default function Footer() {
   return (
@@ -24,9 +23,9 @@ export default function Footer() {
               <a href="tel:7061285806" className="footer-link flex items-center gap-2">
                 <Phone className="w-4 h-4 shrink-0 text-amber" /> 70612 85806
               </a>
-              <EmailOff><a href="mailto:hello@edifyedu.in" className="footer-link flex items-center gap-2">
+              <a href="mailto:hello@edifyedu.in" className="footer-link flex items-center gap-2">
                 <Mail className="w-4 h-4 shrink-0 text-amber" /> hello@edifyedu.in
-              </a></EmailOff>
+              </a>
             </div>
             {/* Social links */}
             <div className="flex items-center gap-3 mt-5">

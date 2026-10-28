@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react'
 import { Phone, Mail, MapPin, CheckCircle, Send } from 'lucide-react'
-import EmailOff from '@/components/EmailOff'
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })
@@ -61,7 +60,7 @@ export default function ContactPage() {
                   <div>
                     <div className="text-xs text-ink-3 font-semibold uppercase tracking-wide mb-0.5">{item.label}</div>
                     {item.href
-                      ? <EmailOff><a href={item.href} className="font-semibold text-navy hover:text-amber">{item.value}</a></EmailOff>
+                      ? <a href={item.href} className="font-semibold text-navy hover:text-amber">{item.value}</a>
                       : <div className="font-semibold text-navy">{item.value}</div>
                     }
                   </div>

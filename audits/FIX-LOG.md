@@ -1,5 +1,18 @@
 # Fix log
 
+## 2026-10-28 · /cdn-cgi/l/email-protection 404s from body text emails
+
+- **Why:** GSC reported /cdn-cgi/l/email-protection as a 404 linked from three login/admission blogs and the
+  Mangalayatan verify page. The 27 Oct fix wrapped only mailto links (footer, about, contact and so on) in EmailOff.
+  Cloudflare also obfuscates plain-text addresses, so admissions@ and csrc@ in blog bodies and FAQ answers, plus
+  hello@ in the VerifyAdvisory note, still became email-protection links.
+- **Fix:** one EmailOff pair around the whole body in app/layout.tsx, with the per-page wrappers removed. The markers
+  do not nest: an inner email_on switches obfuscation back on for the rest of the page, so keeping the old wrappers
+  would have left everything after the first one exposed.
+- **Verified on the dev server:** on the 4 reported pages plus /, /contact, /about, /methodology, /privacy-policy and
+  /terms, every address in visible HTML sits between the single email_off and email_on. The addresses that sit after
+  email_on are in Next's script payload, which Cloudflare does not rewrite.
+
 ## 2026-10-28 · Course schema: GSC "missing field" errors on review blogs and compare pages
 
 - **Why:** GSC Course info flagged 48 review/legitimacy blogs (description, offers and hasCourseInstance missing) and

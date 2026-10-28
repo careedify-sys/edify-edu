@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import { EntryPopup, ExitIntentPopup } from '@/components/LeadCapture'
 import Footer from '@/components/Footer'
+import EmailOff from '@/components/EmailOff'
 import BottomNav from '@/components/BottomNav'
 import MobileLeadNudge from '@/components/MobileLeadNudge'
 
@@ -251,6 +252,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: `var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();(function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;s1.src='https://embed.tawk.to/6a2a752d135ef41c3064d54e/1jqqtjf74';s1.charset='UTF-8';s1.setAttribute('crossorigin','*');s0.parentNode.insertBefore(s1,s0);})();` }} />
       </head>
       <body>
+        {/* One email_off span for the whole page. Cloudflare obfuscated plain-text
+            addresses in blog bodies, FAQ answers and verify advisories into
+            /cdn-cgi/l/email-protection links that GSC reports as 404s. The
+            markers do not nest (an inner email_on re-enables it), so no page
+            wraps its own addresses. */}
+        <EmailOff>
         {/* Skip-navigation for keyboard / screen-reader users */}
         <a
           href="#main-content"
@@ -271,6 +278,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <BottomNav />
         <MobileLeadNudge />
+        </EmailOff>
       </body>
     </html>
   )

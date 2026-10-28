@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import EmailOff from '@/components/EmailOff'
 
 export const metadata: Metadata = {
   title: { absolute: 'Privacy Policy: Edify | edifyedu.in' },
@@ -70,7 +69,7 @@ export default function PrivacyPolicyPage() {
             <li><strong>Grievance redressal</strong>, raise a complaint with our Data Protection Officer.</li>
           </ul>
           <p className="text-ink-2 mt-3">
-            To exercise any of these rights, email us at <EmailOff><a href="mailto:hello@edifyedu.in" className="text-amber font-semibold">hello@edifyedu.in</a></EmailOff> with subject "Privacy Request". We will respond within 30 days.
+            To exercise any of these rights, email us at <a href="mailto:hello@edifyedu.in" className="text-amber font-semibold">hello@edifyedu.in</a> with subject "Privacy Request". We will respond within 30 days.
           </p>
 
           <h2 className="font-bold text-navy mt-8 mb-3">5. Third-Party Services</h2>
@@ -104,7 +103,7 @@ export default function PrivacyPolicyPage() {
           <p className="text-ink-2">
             <strong>Data Protection Officer / Grievance Officer</strong><br />
             Edify Education<br />
-            Email: <EmailOff><a href="mailto:hello@edifyedu.in" className="text-amber font-semibold">hello@edifyedu.in</a></EmailOff><br />
+            Email: <a href="mailto:hello@edifyedu.in" className="text-amber font-semibold">hello@edifyedu.in</a><br />
             Phone: +91 70612 85806
           </p>
         </div>

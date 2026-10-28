@@ -12,7 +12,6 @@
 
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import EmailOff from '@/components/EmailOff'
 import { ChevronRight } from 'lucide-react'
 import { UNIVERSITIES, getUniversitiesByProgram, type Program, type University } from '@/lib/data'
 import { getDisplayFee } from '@/lib/fees'
@@ -244,7 +243,7 @@ export default function MethodologyPage() {
           </p>
           <p className="text-sm text-ink-2 leading-relaxed">
             Report an error at{' '}
-            <EmailOff><a href="mailto:hello@edifyedu.in" className="text-amber font-semibold hover:underline">hello@edifyedu.in</a></EmailOff>{' '}
+            <a href="mailto:hello@edifyedu.in" className="text-amber font-semibold hover:underline">hello@edifyedu.in</a>{' '}
             or through the <Link href="/contact" className="text-amber font-semibold hover:underline no-underline">contact page</Link>.
             Tell us the page and the figure and we will tell you which source we took it from.
           </p>

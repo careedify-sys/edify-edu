@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import EmailOff from '@/components/EmailOff'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Shield, Award, Users, Phone, Mail, CheckCircle, XCircle, Database, BarChart2 } from 'lucide-react'
@@ -374,11 +373,11 @@ export default function AboutPage() {
               style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)' }}>
               <Phone className="w-4 h-4" /> 70612 85806
             </a>
-            <EmailOff><a href="mailto:hello@edifyedu.in"
+            <a href="mailto:hello@edifyedu.in"
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold text-white"
               style={{ background: 'rgba(200,129,26,0.3)', border: '1px solid rgba(200,129,26,0.4)' }}>
               <Mail className="w-4 h-4" /> hello@edifyedu.in
-            </a></EmailOff>
+            </a>
           </div>
           <div className="mt-6">
             <Link href="/contact"
