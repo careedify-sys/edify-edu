@@ -7,42 +7,36 @@ type PressItem = {
   url: string
   alt: string
   headline?: string
-  date?: string
 }
 
 // The 27 Oct 2026 story ran under one headline across several outlets, so the
-// syndicated cards show outlet and date only; the full headline is on /about.
+// syndicated cards show the outlet name only; the full headline is on /about.
 const pressItems: PressItem[] = [
   {
     publication: 'ANI',
     url: 'https://aninews.in/news/business/same-degree-different-answers-how-edifyeduin-is-bringing-transparency-to-indias-online-degree-choices20261027123148',
     alt: 'ANI News',
-    date: '27 Oct 2026',
   },
   {
     publication: 'The Tribune',
     url: 'https://www.tribuneindia.com/news/business/same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/',
     alt: 'The Tribune',
-    date: '27 Oct 2026',
   },
   {
     publication: 'LatestLY',
     url: 'https://www.latestly.com/agency-news/business-news-same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices-7658196.html',
     alt: 'LatestLY',
-    date: '27 Oct 2026',
   },
   {
     publication: 'Punjab Kesari',
     url: 'https://english.punjabkesari.com/business/same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/',
     alt: 'Punjab Kesari English',
-    date: '27 Oct 2026',
   },
   {
     publication: 'ET Edge Insights',
     url: 'https://etedge-insights.com/brands-speak/how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/',
     alt: 'ET Edge Insights',
     headline: 'How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
-    date: 'Oct 2026',
   },
   {
     publication: 'Tech Bullion',
@@ -105,11 +99,6 @@ export default function PressStrip() {
                   style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}
                 >
                   <div className="font-black text-xl text-navy leading-tight">{item.publication}</div>
-                  {item.date && (
-                    <div className="text-[11px] font-bold uppercase tracking-wider mt-1" style={{ color: 'var(--amber-text)' }}>
-                      {item.date}
-                    </div>
-                  )}
                   {item.headline && (
                     <p className="text-xs mt-2 leading-snug" style={{ color: 'var(--ink-2)' }}>{item.headline}</p>
                   )}

@@ -287,32 +287,32 @@ export default function AboutPage() {
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
               {
-                outlet: 'ANI · 27 Oct 2026',
+                outlet: 'ANI',
                 headline: 'Same Degree, Different Answers: How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
                 url: 'https://aninews.in/news/business/same-degree-different-answers-how-edifyeduin-is-bringing-transparency-to-indias-online-degree-choices20261027123148',
               },
               {
-                outlet: 'The Tribune · 27 Oct 2026',
+                outlet: 'The Tribune',
                 headline: 'Same Degree, Different Answers: How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
                 url: 'https://www.tribuneindia.com/news/business/same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/',
               },
               {
-                outlet: 'LatestLY · 27 Oct 2026',
+                outlet: 'LatestLY',
                 headline: 'Same Degree, Different Answers: How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
                 url: 'https://www.latestly.com/agency-news/business-news-same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices-7658196.html',
               },
               {
-                outlet: 'Punjab Kesari English · 27 Oct 2026',
+                outlet: 'Punjab Kesari English',
                 headline: 'Same Degree, Different Answers: How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
                 url: 'https://english.punjabkesari.com/business/same-degree-different-answers-how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/',
               },
               {
-                outlet: 'WebIndia123 · 27 Oct 2026',
+                outlet: 'WebIndia123',
                 headline: 'Same Degree, Different Answers: How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
                 url: 'https://news.webindia123.com/news/Articles/Business/20261027/4515665.html',
               },
               {
-                outlet: 'ET Edge Insights · Oct 2026',
+                outlet: 'ET Edge Insights',
                 headline: 'How edifyedu.in is Bringing Transparency to India’s Online Degree Choices',
                 url: 'https://etedge-insights.com/brands-speak/how-edifyedu-in-is-bringing-transparency-to-indias-online-degree-choices/',
               },
@@ -352,10 +352,10 @@ export default function AboutPage() {
             </div>
             <div>
               <div className="text-xs font-bold uppercase tracking-wider mb-2" style={{ color: 'var(--amber-text)' }}>
-                Boss Moves Magazine · June 2026
+                Boss Moves Magazine
               </div>
               <p className="text-ink-2 leading-relaxed text-sm mb-3">
-                Founder Rishi Kumar was featured in the June 2026 edition of Boss Moves Magazine, discussing what building edifyedu.in solo taught him about leading under pressure.
+                Founder Rishi Kumar was featured in Boss Moves Magazine, discussing what building edifyedu.in solo taught him about leading under pressure.
               </p>
               <span className="text-sm font-semibold group-hover:underline" style={{ color: 'var(--amber-text)' }}>
                 Read the digital edition →
