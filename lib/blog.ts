@@ -23540,85 +23540,23 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>A PhD in India typically takes 5 to 7 real years of your life, often at below-market compensation, with significant dependency on one person, your supervisor. That relationship can make or break the experience entirely.</p>
 <p>That said, for the right person with the right research problem and the right supervisor, a PhD is one of the most intellectually rewarding things you can do. The key is going in with clear eyes.</p>
 
-<h2>PhD India 2026 EEAT Notes</h2>
+<h2>PhD in India: Summary</h2>
 
-<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. PhD data verified from UGC plus AIRSA plus IIT plus IIM plus IISc plus central university PhD admission portals plus 7th Pay Commission stipend records.</em></p>
+<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Summary updated 29 October 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. It restates the guide above. Check the current UGC PhD rules on ugc.gov.in before you apply.</em></p>
 
-<div class="callout-key"><strong>One-line frame for PhD India 2026:</strong> 3-7 years duration. UGC-approved campus-only mode (online PhD not allowed). Fees Rs 10K-50K per year govt, Rs 1-3 lakh per year private. JRF stipend Rs 37K-42K per month. Best for genuinely research-motivated candidates with specific research questions plus supportive supervisor.</div>
+<div class="callout-key"><strong>In one line:</strong> PhD means Doctor of Philosophy, the highest academic degree, earned through original research. In India it takes three to six years officially and often longer, and UGC does not allow PhDs by online or distance mode. A part-time PhD with an employer NOC is allowed.</div>
 
-<h2>Top Indian PhD Institutions 2026</h2>
-
-<table>
-  <caption>Top PhD institutions India 2026</caption>
-  <thead><tr><th>Institution</th><th>NIRF Rank</th><th>Annual Fees</th><th>JRF Stipend</th></tr></thead>
-  <tbody>
-    <tr><td>IITs (Bombay, Delhi, Madras, Kanpur, Kharagpur)</td><td>Engineering 1-10</td><td>Rs 25-50K</td><td>Rs 37-42K per month</td></tr>
-    <tr><td>IISc Bangalore</td><td>Overall 1 University</td><td>Rs 25-40K</td><td>Rs 37-42K per month</td></tr>
-    <tr><td>IIMs (A, B, C, L, K, I)</td><td>Management top 10</td><td>Rs 30-60K</td><td>Rs 37-42K per month plus PGPX stipend</td></tr>
-    <tr><td>Central Universities (DU, JNU, BHU, AMU)</td><td>University top 50</td><td>Rs 10-30K</td><td>Rs 37-42K per month</td></tr>
-    <tr><td>NIT Trichy, Surathkal, Warangal</td><td>Engineering 15-30</td><td>Rs 30-50K</td><td>Rs 37-42K per month</td></tr>
-    <tr><td>Private universities (BITS, MAHE, JGU)</td><td>Mixed ranking</td><td>Rs 1-3 lakh</td><td>Rs 20-35K per month</td></tr>
-    <tr><td>State universities</td><td>Mixed</td><td>Rs 10-25K</td><td>Rs 25-37K per month (state JRF)</td></tr>
-  </tbody>
-</table>
-
-<h2>PhD India Career Outcomes 2026</h2>
-
-<ul>
-  <li><strong>Academic faculty:</strong> Rs 8-18 LPA at central universities. Rs 12-25 LPA at IIMs plus IITs plus IISc.</li>
-  <li><strong>Industry R&D (Big Tech, Pharma):</strong> Rs 18-35 LPA at year 1 post-PhD. Google AI, NVIDIA, Microsoft Research India hire.</li>
-  <li><strong>Government R&D (DRDO, ISRO, CSIR):</strong> Rs 10-18 LPA at Group A scientist. Stable career plus pension.</li>
-  <li><strong>Consulting plus Policy:</strong> Rs 15-30 LPA at Big 4 plus think tanks (Niti Aayog, NCAER).</li>
-  <li><strong>Postdoc plus Foreign career:</strong> Rs 25-50 LPA equivalent at US plus UK universities.</li>
-  <li><strong>Startups plus Specialised:</strong> Rs 25-45 LPA at AI-first plus biotech startups.</li>
-</ul>
-
-<h2>PhD India FAQ 2026</h2>
-
-<ul>
-  <li><strong>Is online PhD valid in India?:</strong> No. UGC does not allow online PhD. Only campus residency-based PhD recognised.</li>
-  <li><strong>Is foreign distance PhD recognised in India?:</strong> Generally no. Verify via AIU plus UGC equivalence.</li>
-  <li><strong>How long does PhD take in India?:</strong> 3-6 years officially. Most take 5-7 years actual completion.</li>
-  <li><strong>Can I do PhD while working?:</strong> Part-time PhD allowed at some institutions. Online or fully distance PhD not allowed.</li>
-  <li><strong>What is JRF plus SRF stipend 2026?:</strong> JRF Rs 37,000 per month (first 2 years), SRF Rs 42,000 per month (year 3 onwards).</li>
-  <li><strong>Can I do PhD after MBA?:</strong> Yes. Many IIM plus IIT PhDs accept MBA degree holders.</li>
-</ul>
-
-<p>PhD in India 2026 is a serious 5-7 year commitment requiring genuine research motivation plus supportive supervisor plus institutional fit. UGC does not currently allow online PhD programmes. Campus residency is mandatory. JRF stipend at Rs 37,000-42,000 per month plus low government fees make PhD financially viable for serious candidates. Career outcomes post-PhD span academia, industry R&D, government science, consulting, plus international opportunities. Match the PhD path to genuine research interest plus career goal plus 7-year time horizon for the commitment.</p>
-
-<h2>PhD Admission Process India 2026</h2>
+<h2>PhD Admission Steps in India</h2>
 
 <ol>
-  <li><strong>Step 1:</strong> Identify research area plus 5-7 target institutions plus potential supervisors.</li>
-  <li><strong>Step 2:</strong> Prepare research proposal plus statement of purpose plus academic CV.</li>
-  <li><strong>Step 3:</strong> Take entrance exam (UGC NET, GATE, JEST, NBHM, or institute-specific).</li>
-  <li><strong>Step 4:</strong> Submit application plus pay fees Rs 500-2,500.</li>
-  <li><strong>Step 5:</strong> Personal interview plus research presentation.</li>
-  <li><strong>Step 6:</strong> Admission confirmation plus supervisor allotment.</li>
-  <li><strong>Step 7:</strong> Begin coursework (typically 1-2 semesters) plus comprehensive exam.</li>
-  <li><strong>Step 8:</strong> Confirm research topic plus committee approval.</li>
-  <li><strong>Step 9:</strong> Conduct research, publish 1-2 journal papers.</li>
-  <li><strong>Step 10:</strong> Submit thesis plus defend at viva voce. Receive PhD degree.</li>
+  <li>Check eligibility: a master's with 55% (50% for reserved categories), or a four-year bachelor's with 75%.</li>
+  <li>Identify your research question, target institutions and possible supervisors.</li>
+  <li>Clear the entrance route: UGC-NET scores or the university's own written test, followed by an interview.</li>
+  <li>Complete one or two semesters of coursework, then write and defend your research proposal.</li>
+  <li>Publish in a peer-reviewed journal, then submit and defend your thesis.</li>
 </ol>
 
-<h2>PhD Funding Options India 2026</h2>
-
-<ul>
-  <li><strong>UGC NET JRF Fellowship:</strong> Rs 37K-42K per month. Most prestigious. Through UGC NET exam.</li>
-  <li><strong>CSIR-UGC NET JRF:</strong> Same fellowship for science subjects.</li>
-  <li><strong>ICMR JRF:</strong> For medical sciences PhD. Rs 35-40K per month.</li>
-  <li><strong>ICAR JRF:</strong> For agriculture sciences PhD. Rs 31-35K per month.</li>
-  <li><strong>DST INSPIRE Fellowship:</strong> For science plus technology PhD. Rs 35-40K per month.</li>
-  <li><strong>Prime Minister Research Fellowship (PMRF):</strong> Rs 70K-80K per month at IITs, IISc, IIITs. Most lucrative.</li>
-  <li><strong>Project fellowships:</strong> Linked to specific research projects, Rs 25-37K per month.</li>
-  <li><strong>Industry-sponsored PhD:</strong> Some companies sponsor PhD with stipend Rs 50K-1 lakh per month.</li>
-</ul>
-
-<p>Indian PhD candidates have multiple funding pathways. UGC NET JRF plus PMRF are the most prestigious plus highest-paying. PhD financial planning matters because the 5-7 year timeline requires sustained income source. Plan funding strategy along with research topic plus institution choice before commitment.</p>
-
-<p>The Indian PhD ecosystem in 2026 has become more competitive plus globally aligned. IITs plus IISc plus IIMs publish in top-tier international journals. Industry R&D at Google India, Microsoft Research India, Adobe Research plus pharmaceutical R&D actively hire Indian PhDs. The 5-7 year investment, when matched with right research question plus supervisor plus institution, delivers measurable career returns through academic plus industry plus international career pathways.</p>
-
-<p>For 2026 PhD aspirants, the critical first steps are identifying genuine research interest, mapping target institutions plus supervisors, plus preparing entrance exam (UGC NET, GATE, JEST, PMRF screening). Funding plus stipend planning matters equally. The 5-7 year commitment requires sustained financial support plus emotional resilience plus institutional fit. With right preparation plus institution match plus supervisor relationship, the Indian PhD remains one of the most intellectually rewarding career paths plus a strong pathway into academia, industry R&D, government science, plus international opportunities.</p>
+<p>Budget beyond the fees: journal charges, conferences, books and lab consumables add up over five to seven years. Your supervisor matters as much as your institution, so speak to their current students before you commit.</p>
 
 <div class="cta-block">
 <h3>Explore UGC Approved Online Programs</h3>
