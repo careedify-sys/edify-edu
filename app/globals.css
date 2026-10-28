@@ -339,6 +339,45 @@ input, select, textarea { font-size: 16px; font-family: inherit; }
   border: 1px solid rgba(109,40,217,0.2);
   font-weight: 700; font-size: 10px; padding: 3px 8px; border-radius: 999px;
 }
+/* UniversityCard. These were inline style objects, repeated on every card;
+   /universities renders 143 cards, so classes keep page weight flat as the
+   list grows. Per-card values (brand colour, selected programme) stay inline. */
+.uc-logo-box { margin-bottom: 12px; height: 40px; display: flex; align-items: center; }
+.uc-initials {
+  width: 40px; height: 40px; border-radius: 8px; color: #fff; font-weight: 800; font-size: 13px;
+  display: flex; align-items: center; justify-content: center; letter-spacing: -0.01em; flex-shrink: 0;
+}
+.uc-logo { max-height: 36px; max-width: 130px; object-fit: contain; height: auto; width: auto; }
+.uc-title { color: var(--navy-light); font-family: var(--font-body); }
+.uc-qs {
+  font-size: 9px; font-weight: 700; color: #6B21A8; background: #F3E8FF; border: 1px solid #D8B4FE;
+  padding: 2px 6px; border-radius: 999px; white-space: nowrap;
+}
+.uc-approvals {
+  display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; padding: 8px 10px; border-radius: 8px;
+  background: linear-gradient(135deg, #f8faff, #f0f4ff); border: 1px solid rgba(37,99,235,0.08);
+}
+.uc-chip {
+  background: #fff; border-radius: 6px; padding: 3px 7px; border: 1px solid rgba(0,0,0,0.07);
+  display: flex; align-items: center; height: 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.uc-chip-logo { justify-content: center; min-width: 40px; }
+.uc-chip-text { font-size: 9px; font-weight: 700; color: #334155; }
+.uc-chip-img { max-height: 18px; max-width: 52px; object-fit: contain; }
+.uc-chip-naac { padding: 3px 8px; border-color: rgba(22,163,74,0.25); }
+.uc-naac { font-size: 10px; font-weight: 800; color: #16a34a; }
+.uc-highlight {
+  padding: 6px 12px; margin-bottom: 10px; border-radius: var(--r-xs);
+  background: linear-gradient(135deg, rgba(200,129,26,0.08), rgba(200,129,26,0.04));
+  border: 1px solid rgba(200,129,26,0.2); font-size: 11px; font-weight: 700; color: var(--amber-text);
+  display: flex; align-items: center; gap: 6px;
+}
+.uc-prog { background: var(--surface-2); color: var(--ink-2); border: 1px solid var(--border); }
+.uc-prog-on { background: var(--amber); color: #fff; border: 1px solid #F59E0B; }
+.uc-prog-more { background: var(--surface-2); color: var(--ink-3); border: 1px solid var(--border); }
+.uc-fee { color: var(--navy-light); }
+.uc-emi { color: var(--amber); }
+
 .badge-ugc {
   background: var(--sage-light); color: var(--sage);
   border: 1px solid rgba(31,107,82,0.2);

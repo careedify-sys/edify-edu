@@ -1,5 +1,17 @@
 # Fix log
 
+## 2026-10-28 · UniversityCard page weight (scaling)
+
+- **Why:** production /universities served 750 KB of HTML on 28 Oct, 287 KB of it `style=""` attributes copied onto
+  each of the 143 cards. Listing pages grow linearly with the catalogue, so every new university paid that cost again.
+- **Fix:** static inline styles in components/UniversityCard.tsx became `uc-*` classes in app/globals.css. Brand colour
+  and initials background stay inline because they vary per card.
+- **Measured locally:** one card 5,643 → 3,651 bytes (−35%); /universities DOM 1.44 MB → 0.50 MB in dev. Every computed
+  style of all 43 elements in a card matched the old build (0 diffs, same wait time; a first comparison taken before
+  fonts and logos loaded showed 3 false height diffs). Also shrinks the homepage and every programme hub that lists cards.
+- **Open, not done:** /blog renders all 248 posts on one page (473 KB, 137 KB of it client payload). Paginated
+  /blog/page/N archives would cap it, but that is a URL-structure change for Rishi to decide.
+
 ## 2026-10-28 · Press coverage from the 27 Oct release
 
 - **Source:** the PR distribution report (PR-2627076959) lists ~130 placements of one story. Only the recognisable

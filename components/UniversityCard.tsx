@@ -15,7 +15,7 @@ function UniLogo({ src, name, abbr, color }: { src?: string | null; name: string
   const initials = abbr ? abbr.slice(0, 2).toUpperCase() : name.split(' ').filter(Boolean).map(w => w[0]).join('').slice(0, 2).toUpperCase()
   if (!src || err) {
     return (
-      <div style={{ width: 40, height: 40, borderRadius: 8, background: color || '#1B4FBE', color: '#fff', fontWeight: 800, fontSize: 13, display: 'flex', alignItems: 'center', justifyContent: 'center', letterSpacing: '-0.01em', flexShrink: 0 }}>
+      <div className="uc-initials" style={{ background: color || '#1B4FBE' }}>
         {initials}
       </div>
     )
@@ -26,7 +26,7 @@ function UniLogo({ src, name, abbr, color }: { src?: string | null; name: string
       alt={`${name} logo`}
       width={130}
       height={36}
-      style={{ maxHeight: 36, maxWidth: 130, objectFit: 'contain', height: 'auto', width: 'auto' }}
+      className="uc-logo"
       onError={() => setErr(true)}
     />
   )
@@ -96,11 +96,10 @@ export default function UniversityCard({ u, highlightProgram, specSlug, programF
           {/* Header */}
           <div className="flex items-start justify-between mb-3">
             <div className="flex-1 min-w-0 pr-3">
-              <div style={{ marginBottom: 12, height: 40, display: 'flex', alignItems: 'center' }}>
+              <div className="uc-logo-box">
                 <UniLogo src={u.logo || getUniversityLogo(u.id)} name={u.name} abbr={(u as any).abbr || ''} color={u.color} />
               </div>
-              <h3 className="font-semibold text-base leading-tight mb-1"
-                style={{ color:'var(--navy-light)', fontFamily: 'var(--font-body)' }}>
+              <h3 className="uc-title font-semibold text-base leading-tight mb-1">
                 {u.name}
               </h3>
               <div className="flex items-center gap-1 text-xs text-[var(--ink-3)]">
@@ -121,41 +120,28 @@ export default function UniversityCard({ u, highlightProgram, specSlug, programF
                 )
               })()}
               {u.qsRank && (
-                <span style={{fontSize:9,fontWeight:700,color:'#6B21A8',background:'#F3E8FF',border:'1px solid #D8B4FE',padding:'2px 6px',borderRadius:999,whiteSpace:'nowrap'}}>QS #{u.qsRank}</span>
+                <span className="uc-qs">QS #{u.qsRank}</span>
               )}
             </div>
           </div>
 
           {/* ── Approval Logos Strip ── */}
-          <div style={{
-            display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 12,
-            padding: '8px 10px', borderRadius: 8,
-            background: 'linear-gradient(135deg, #f8faff, #f0f4ff)',
-            border: '1px solid rgba(37,99,235,0.08)'
-          }}>
+          <div className="uc-approvals">
             {allApprovals.map(tag => {
               const entry = getApprovalEntry(tag)
               if (entry) {
                 return (
-                  <div key={tag} title={entry.label} style={{
-                    background: '#fff',
-                    borderRadius: 6,
-                    padding: '3px 7px',
-                    border: '1px solid rgba(0,0,0,0.07)',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    height: 28, minWidth: 40,
-                    boxShadow: '0 1px 3px rgba(0,0,0,0.06)'
-                  }}>
+                  <div key={tag} title={entry.label} className="uc-chip uc-chip-logo">
                     <img
                       src={entry.src}
                       alt={entry.label}
-                      style={{ maxHeight: 18, maxWidth: 52, objectFit: 'contain' }}
+                      className="uc-chip-img"
                       loading="lazy"
                       onError={(e) => {
                         const el = e.target as HTMLImageElement
                         const parent = el.parentElement
                         if (parent) {
-                          parent.innerHTML = `<span style="font-size:9px;font-weight:700;color:#334155">${entry.label}</span>`
+                          parent.innerHTML = `<span class="uc-chip-text">${entry.label}</span>`
                         }
                       }}
                     />
@@ -164,28 +150,17 @@ export default function UniversityCard({ u, highlightProgram, specSlug, programF
               }
               // Fallback: text badge for unknown approvals
               return (
-                <span key={tag} style={{
-                  fontSize: 9, fontWeight: 700, color: '#334155',
-                  background: '#fff', borderRadius: 6, padding: '3px 7px',
-                  border: '1px solid rgba(0,0,0,0.07)', height: 28,
-                  display: 'flex', alignItems: 'center',
-                  boxShadow: '0 1px 3px rgba(0,0,0,0.06)'
-                }}>{tag}</span>
+                <span key={tag} className="uc-chip uc-chip-text">{tag}</span>
               )
             })}
             {/* NAAC grade label always visible */}
-            <div style={{
-              background: '#fff', borderRadius: 6, padding: '3px 8px',
-              border: '1px solid rgba(22,163,74,0.25)',
-              display: 'flex', alignItems: 'center', height: 28,
-              boxShadow: '0 1px 3px rgba(0,0,0,0.06)'
-            }}>
-              <span style={{ fontSize: 10, fontWeight: 800, color: '#16a34a' }}>NAAC {u.naac}</span>
+            <div className="uc-chip uc-chip-naac">
+              <span className="uc-naac">NAAC {u.naac}</span>
             </div>
           </div>
 
           {/* Highlight badge */}
-          <div style={{ padding: '6px 12px', marginBottom: 10, borderRadius: 'var(--r-xs)', background: 'linear-gradient(135deg, rgba(200,129,26,0.08), rgba(200,129,26,0.04))', border: '1px solid rgba(200,129,26,0.2)', fontSize: 11, fontWeight: 700, color: 'var(--amber-text)', display: 'flex', alignItems: 'center', gap: 6, }}>
+          <div className="uc-highlight">
             <span className="text-sm">✦</span>
             {highlightProgram ? buildHighlight(u, preferForProgram(highlightProgram)) : u.highlight}
           </div>
@@ -193,16 +168,12 @@ export default function UniversityCard({ u, highlightProgram, specSlug, programF
           {/* Programs */}
           <div className="flex flex-wrap gap-1.5 mb-3">
             {u.programs.slice(0, 5).map(p => (
-              <span key={p} className="text-xs px-2 py-0.5 rounded-md font-medium"
-                style={highlightProgram === p
-                  ? { background:'var(--amber)', color:'#fff', border:'1px solid #F59E0B' }
-                  : { background:'var(--surface-2)', color:'var(--ink-2)', border:'1px solid var(--border)' }}>
+              <span key={p} className={`text-xs px-2 py-0.5 rounded-md font-medium ${highlightProgram === p ? 'uc-prog-on' : 'uc-prog'}`}>
                 {p}
               </span>
             ))}
             {u.programs.length > 5 && (
-              <span className="text-xs px-2 py-0.5 rounded-md"
-                style={{ background:'var(--surface-2)', color:'var(--ink-3)', border:'1px solid var(--border)' }}>
+              <span className="uc-prog-more text-xs px-2 py-0.5 rounded-md">
                 +{u.programs.length - 5}
               </span>
             )}
@@ -212,7 +183,7 @@ export default function UniversityCard({ u, highlightProgram, specSlug, programF
           <div className="flex items-end justify-between pt-3 border-t border-slate-100">
             <div>
               <div className="text-xs mb-0.5 text-[var(--ink-3)]">{programFee !== undefined && highlightProgram ? `${highlightProgram} total fees` : 'Total fees'}</div>
-              <div className="font-bold text-base" style={{ color:'var(--navy-light)' }}>
+              <div className="uc-fee font-bold text-base">
                 {programFee === undefined
                   ? <>{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</>
                   : programFee ?? 'Contact our counsellor for current fee details'}
@@ -222,7 +193,7 @@ export default function UniversityCard({ u, highlightProgram, specSlug, programF
             {programFee === undefined && u.emiFrom > 0 && (
             <div className="text-right">
               <div className="text-xs mb-0.5 text-[var(--ink-3)]">EMI from</div>
-              <div className="font-semibold text-sm" style={{ color:'var(--amber)' }}>{u.emiFrom > 0 ? `₹${u.emiFrom.toLocaleString()}/mo` : 'On request'}</div>
+              <div className="uc-emi font-semibold text-sm">{u.emiFrom > 0 ? `₹${u.emiFrom.toLocaleString()}/mo` : 'On request'}</div>
             </div>
             )}
           </div>
