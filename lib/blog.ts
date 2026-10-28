@@ -28422,7 +28422,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'smu-online-mba-review',
-    updatedAt: '2026-10-26',
+    updatedAt: '2026-10-29',
     title: 'SMU Online MBA Fees 2026: ₹1,20,000 and Review',
     seoTitle: 'SMU Online MBA Fees 2026: ₹1,20,000 and Review',
     h1Title: 'Sikkim Manipal University (SMU) Online MBA Fees 2026: ₹1,20,000, Specialisations and Our Review',
@@ -28440,12 +28440,12 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaTitle: 'Compare SMU Against Other Online MBA Programs',
     ctaDesc: 'See how SMU Online MBA stacks up against MAHE, MUJ and 20+ other UGC-approved programs, fees, dual specialization, accreditation side by side.',
     faqs: [
-      { q: 'What are Sikkim Manipal University online MBA fees 2026?', a: 'SMU Online MBA total fee for 2026 is ₹1,20,000 for the full 2-year programme. Fee is paid per semester, with options for one-time and instalment payment. Exact instalment amounts depend on intake batch.' },
-      { q: 'Is Sikkim Manipal Online MBA UGC approved?', a: 'Yes. Sikkim Manipal University is UGC-DEB approved for online programmes and holds NAAC A+ grade with a CGPA of 3.28. The online MBA degree is recognised for jobs, higher education, and competitive exams.' },
-      { q: 'What is dual specialisation in SMU Online MBA?', a: 'SMU offers dual specialisation in the online MBA where students can pick two specialisations and study electives from both, resulting in a degree that mentions both areas. This is useful for combining a primary domain like Finance with a secondary like Business Analytics or HR.' },
-      { q: 'Is Sikkim Manipal Online MBA same as Manipal University Jaipur?', a: 'No. Sikkim Manipal University, Manipal University Jaipur, and Manipal Academy of Higher Education (MAHE) are three separate universities. SMU is based in Sikkim, MUJ in Jaipur Rajasthan, MAHE in Karnataka. Each has its own online MBA programme with different fees, specialisations, and rankings.' },
-      { q: 'Why do old SMU MBA reviews say avoid it?', a: 'Most negative reviews are about the old distance-learning MBA from a decade ago, which had a different structure and reputation problem. The current SMU online MBA is a UGC-DEB approved programme from a NAAC A+ university and is a different offering. Judge it on 2026 facts, not 2013 forum posts.' },
-      { q: 'Is SMU online MBA degree valid in 2026?', a: 'Yes. SMU\'s online MBA is UGC-DEB approved, so the degree is valid for government jobs, further studies, and private employment throughout India.' }
+      { q: "What are Sikkim Manipal University online MBA fees 2026?", a: "SMU Online MBA total fee for 2026 is ₹1,20,000 for the full 2-year programme. Fee is paid per semester, with options for one-time and instalment payment. Exact instalment amounts depend on intake batch." },
+      { q: "Is Sikkim Manipal Online MBA UGC approved?", a: "Yes. Sikkim Manipal University is UGC-DEB approved for online programmes and holds NAAC A+ grade with a CGPA of 3.28. The online MBA degree is recognised for jobs, higher education, and competitive exams." },
+      { q: "What is dual specialisation in SMU Online MBA?", a: "SMU offers dual specialisation in the online MBA where students can pick two specialisations and study electives from both, resulting in a degree that mentions both areas. This is useful for combining a primary domain like Finance with a secondary like Business Analytics or HR." },
+      { q: "Is Sikkim Manipal Online MBA same as Manipal University Jaipur?", a: "No. Sikkim Manipal University, Manipal University Jaipur, and Manipal Academy of Higher Education (MAHE) are three separate universities. SMU is based in Sikkim, MUJ in Jaipur Rajasthan, MAHE in Karnataka. Each has its own online MBA programme with different fees, specialisations, and rankings." },
+      { q: "Why do old SMU MBA reviews say avoid it?", a: "Most negative reviews are about the old distance-learning MBA from a decade ago, which had a different structure and reputation problem. The current SMU online MBA is a UGC-DEB approved programme from a NAAC A+ university and is a different offering. Judge it on 2026 facts, not 2013 forum posts." },
+      { q: "Is SMU online MBA degree valid in 2026?", a: "Yes. SMU's online MBA is UGC-DEB approved, so the degree is valid for government jobs, further studies, and private employment throughout India." },
     ],
     content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 16,000 on SMU Online MBA.</p><a href="/coupons/smu-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View SMU Coupon Code</a></div>
 
@@ -28641,102 +28641,48 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p style="font-size:14px;color:#64748b;margin:16px 0">Also read: <a href="/blog/galgotias-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Galgotias MBA</a>, Rs. 80,200 · <a href="/blog/uu-doon-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">UU Doon MBA</a>, Rs. 99,600 · <a href="/blog/vignan-online-mba-review" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">Vignan MBA</a>, Rs. 90,000 · <a href="/blog" style="color:#0f172a;font-weight:600;text-decoration:underline;text-underline-offset:2px">All MBA Reviews</a></p>
 
-<h2>SMU Online MBA 2026 EEAT Notes</h2>
 
-<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. SMU Online MBA data verified from onlinemanipal.com SMU section, UGC-DEB approval list, NAAC database.</em></p>
+<h2>SMU Online MBA 2026: Summary</h2>
 
-<div class="callout-key"><strong>One-line frame for SMU Online MBA 2026:</strong> Sikkim Manipal University. ₹1,20,000 total. Mandatory dual specialisation (Marketing plus second of Finance, HR, Systems, Operations and SCM). UGC-DEB approved. Manipal brand at affordable price. Best for working professionals seeking dual functional expertise at budget price point.</div>
+<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 29 October 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. SMU Online MBA data checked against the SMU section of onlinemanipal.com, the UGC-DEB approval list and the NAAC database.</em></p>
 
-<h2>SMU Online MBA vs Top Competitors 2026</h2>
-
-<table>
-  <caption>SMU vs key competitors May 2026</caption>
-  <thead><tr><th>University</th><th>NAAC</th><th>Total Fees</th><th>USP</th></tr></thead>
-  <tbody>
-    <tr><td>SMU Online MBA</td><td>NAAC A plus</td><td>₹1,20,000</td><td>Manipal brand plus mandatory dual spec</td></tr>
-    <tr><td>MUJ Online MBA</td><td>NAAC A plus</td><td>Rs 1.56-1.84 lakh</td><td>13 specs, MeritShine service</td></tr>
-    <tr><td>MAHE Online MBA</td><td>NAAC A plus plus, IoE</td><td>Rs 2.92 lakh</td><td>Premium Manipal brand, IoE status</td></tr>
-    <tr><td>Galgotias Online MBA</td><td>NAAC A plus</td><td>Rs 80,200</td><td>Cheapest NAAC A plus</td></tr>
-    <tr><td>IGNOU MBAOL</td><td>NAAC A plus plus</td><td>Rs 66,000</td><td>Central open university</td></tr>
-  </tbody>
-</table>
-
-<h2>SMU Dual Specialisation Combinations 2026</h2>
-
-<ul>
-  <li><strong>Marketing plus Finance:</strong> Best for BFSI marketing plus FMCG product launches.</li>
-  <li><strong>Marketing plus HR:</strong> Brand plus people management combo.</li>
-  <li><strong>Marketing plus Systems:</strong> Marketing analytics plus tech management.</li>
-  <li><strong>Marketing plus Operations and SCM:</strong> Go-to-market plus supply chain understanding.</li>
-</ul>
-
-<h2>SMU Career Outcomes 2026</h2>
-
-<ul>
-  <li><strong>Year 1 (lateral entry):</strong> Rs 4-9 LPA depending on dual spec choice.</li>
-  <li><strong>Year 5:</strong> Rs 10-18 LPA at functional manager track.</li>
-  <li><strong>Year 7-plus:</strong> Senior manager track. Rs 14-22 LPA.</li>
-</ul>
+<div class="callout-key"><strong>SMU Online MBA 2026 in one line:</strong> Sikkim Manipal University, ₹1,20,000 total, UGC-DEB approved, with a dual specialisation. The Manipal name at the lowest Manipal price, for working professionals who want two functional areas on one degree.</div>
 
 <h2>Honest Gaps in SMU 2026</h2>
 
 <ul>
-  <li><strong>Budget tier brand:</strong> Manipal brand affordable but not premium tier like MAHE.</li>
-  <li><strong>Mandatory dual spec limits depth:</strong> Less depth in single specialisation vs dedicated 13-spec MUJ.</li>
-  <li><strong>Career outcomes capped vs premium MBAs:</strong> Rs 18-20 LPA ceiling by year 5 typical.</li>
-  <li><strong>Regional brand pull moderate:</strong> Stronger in East India plus Sikkim. Less in tier-1 metros.</li>
+  <li><strong>A budget Manipal brand:</strong> you get the Manipal name at a low price, but not MAHE's standing.</li>
+  <li><strong>Two areas, less depth in each:</strong> the dual specialisation gives breadth, while MUJ's longer list offers more depth in one area.</li>
+  <li><strong>Regional pull:</strong> the name is stronger in East India and Sikkim than in the big metros.</li>
+  <li><strong>Check the combinations:</strong> confirm which specialisation pairs your intake allows before you pay.</li>
 </ul>
-
-<p>SMU Online MBA in 2026 is the budget-tier Online Manipal option at Rs 1.10 lakh with mandatory dual specialisation. Best fit for working professionals seeking affordable Manipal brand plus dual functional expertise. For premium career upgrade, MAHE Online preferred. For 13-spec choice, MUJ Online preferred. SMU works strongly for budget-conscious students valuing dual spec functional breadth. Combine credential with active LinkedIn networking plus certification stacking for accelerated career trajectory over 5-year horizon.</p>
-
-<h2>SMU Dual Specialisation Career Strategy 2026</h2>
-
-<ol>
-  <li><strong>Marketing plus Finance:</strong> Best for BFSI marketing roles plus product launches at fintechs. Rs 5-10 LPA at year 1.</li>
-  <li><strong>Marketing plus HR:</strong> Strong for talent branding plus employer branding roles. Rs 4-8 LPA at year 1.</li>
-  <li><strong>Marketing plus Systems:</strong> Marketing analytics plus tech-marketing roles. Rs 5-10 LPA at year 1.</li>
-  <li><strong>Marketing plus Operations and SCM:</strong> Go-to-market plus supply chain combo for FMCG plus retail. Rs 5-9 LPA at year 1.</li>
-</ol>
 
 <h2>SMU Application Process 2026</h2>
 
 <ol>
-  <li><strong>Step 1:</strong> Apply at onlinemanipal.com SMU section.</li>
-  <li><strong>Step 2:</strong> Submit graduation certificate, marksheets, ID, photo.</li>
-  <li><strong>Step 3:</strong> Pay registration fee plus first semester fee.</li>
-  <li><strong>Step 4:</strong> Activate LMS plus access shared Online Manipal platform.</li>
-  <li><strong>Step 5:</strong> Attend orientation plus pick dual spec by Sem 2.</li>
-  <li><strong>Step 6:</strong> Stack premium certification (CFA, Tableau, AWS Cloud Practitioner).</li>
+  <li>Apply in the SMU section of onlinemanipal.com.</li>
+  <li>Submit your degree certificate, marksheets, ID and photo.</li>
+  <li>Pay the registration fee and first semester fee.</li>
+  <li>Get your login for the shared Online Manipal platform.</li>
+  <li>Attend orientation and confirm your two specialisations.</li>
+  <li>Add a certificate alongside, such as CFA, Tableau or AWS Cloud Practitioner.</li>
 </ol>
-
-<p>SMU Online MBA combines Manipal brand pull plus affordable ₹1,20,000 fees plus mandatory dual specialisation into a unique value proposition. For working professionals at 0-5 years experience plus budget conscious plus seeking dual functional breadth, SMU delivers strong career upgrade. Combine credential with active LinkedIn plus alumni networking plus 1-2 premium certifications during 24-month programme for compounded career trajectory.</p>
-
-<h2>SMU 5-Year Career Plan Post-MBA 2026</h2>
-
-<ol>
-  <li><strong>Year 1 (during MBA):</strong> Foundational management plus dual spec selection. Active LinkedIn plus Manipal alumni networking.</li>
-  <li><strong>Year 2 (MBA completion):</strong> Internal promotion plus lateral entry at Rs 4-9 LPA lateral roles.</li>
-  <li><strong>Year 3:</strong> Specialist role at chosen dual spec combo. Rs 8-13 LPA.</li>
-  <li><strong>Year 4:</strong> Manager role. Rs 11-17 LPA.</li>
-  <li><strong>Year 5:</strong> Senior manager track. Rs 14-22 LPA.</li>
-</ol>
-
-<p>SMU's mandatory dual specialisation creates unique functional breadth that single-spec MBAs cannot match at the same price point. The Rs 1.10 lakh fees plus Manipal brand pull plus dual functional knowledge together compound into measurable career trajectory acceleration. Best fit budget-conscious working professionals valuing functional breadth alongside management upgrade. Pair credential with active LinkedIn engagement plus 1-2 premium certifications for accelerated 5-year career outcome.</p>
 
 <h2>SMU FAQ 2026</h2>
 
 <ul>
-  <li><strong>Why is Marketing mandatory at SMU?:</strong> Dual spec design philosophy. Marketing plus one more functional area creates broad skill base.</li>
-  <li><strong>Can I do single specialisation at SMU?:</strong> No. Dual spec is mandatory programme structure.</li>
-  <li><strong>Is SMU MBA accepted at IT services?:</strong> Yes. UGC-DEB approved fully accepted.</li>
-  <li><strong>How is SMU different from MUJ in 2026?:</strong> Different universities. SMU is Sikkim Manipal. MUJ is Manipal University Jaipur. Different fees plus specs.</li>
+  <li><strong>Can I take a single specialisation at SMU?</strong> The programme is built around two specialisations. Confirm the current rules for your intake.</li>
+  <li><strong>Do IT services firms accept the SMU MBA?</strong> Yes. It is UGC-DEB approved and accepted for jobs.</li>
+  <li><strong>How is SMU different from MUJ?</strong> They are separate universities. SMU is Sikkim Manipal University and MUJ is Manipal University Jaipur, with different fees and specialisations.</li>
 </ul>
 
-<p>SMU Online MBA's unique mandatory dual specialisation makes it differentiated from generic single-spec MBAs at budget price point. For working professionals valuing functional breadth, this design adds genuine career value beyond single-spec alternatives.</p>
+<p>SMU Online MBA is the lowest-priced Online Manipal option, with two specialisations on one degree. For a premium upgrade, MAHE Online is the stronger choice. For more specialisation choice, MUJ Online offers a longer list. SMU suits budget-minded students who want functional breadth.</p>
 
 <div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
   <strong>Disclaimer:</strong> EdifyEdu is an independent university comparison platform. All fees are indicative based on publicly available data as of early 2026. Please verify all current fees, available specializations, and UGC-DEB approval status at <a href="https://www.onlinemanipal.com/institution/sikkim-manipal-university" target="_blank" rel="noopener">onlinemanipal.com</a> before applying. EdifyEdu does not accept referral commissions from any university.
-</div>`,
+</div>
+
+`,
   },
   {
     slug: 'uu-doon-online-mba-review',
