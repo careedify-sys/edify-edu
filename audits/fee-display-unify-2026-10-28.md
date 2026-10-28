@@ -21,12 +21,9 @@ rows; one column pair per surface; source field and lib/data.ts line; VERIFIED/U
    take rupees from, and your rule forbids reading them from the string. By programme: MBA 39, MCA 28, BBA 28,
    BCA 23, M.Com 19, B.Com 18, BA 11, MSc 9, BSc 2, MA 2. On those hubs the title loses its fee token, the hero shows
    the counsellor line, and the spec titles read "UGC-DEB Approved". Indexing is unchanged (`shouldIndexProgrammeHub`
-   still uses `getDisplayFee`). The options:
-   - keep this;
-   - treat a `pd.fees` written to the rupee in K form ("₹135K" = ₹1,35,000) as exact;
-   - backfill `programFees` from the portals.
-
-   Full list at the end.
+   still uses `getDisplayFee`). **Decided by Rishi, 28 Oct 2026: keep the counsellor line for all 179 until
+   `programFees` (or `feeBreakdown`) is backfilled from the portals.** A K-form string is not to be treated as exact.
+   Full list at the end; it doubles as the backfill worklist.
 2. **Titles and short tokens now show the list price, which raises the headline figure for discounted
    universities.** LPU's title goes from "₹1.61L-₹2L" to "₹2,00,000", Chandigarh's to "₹2,20,000", and Uttaranchal's
    from "From ₹99.6K" to "₹1,48,000". That is your rule 3 ("show the list price only"), but these are fee-query
