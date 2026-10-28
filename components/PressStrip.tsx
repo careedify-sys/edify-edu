@@ -113,6 +113,9 @@ export default function PressStrip() {
                   {item.headline && (
                     <p className="text-xs mt-2 leading-snug" style={{ color: 'var(--ink-2)' }}>{item.headline}</p>
                   )}
+                  <div className="text-xs font-semibold mt-2 hover:underline" style={{ color: 'var(--amber-text)' }}>
+                    Read article →
+                  </div>
                 </div>
               )}
             </a>
