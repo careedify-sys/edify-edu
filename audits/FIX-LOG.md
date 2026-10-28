@@ -37,6 +37,31 @@
 - **Measured on the dev server:** 19 flagged blogs went from ~277 paragraphs over 60 words to 55, the spec and coupon
   pages sampled to 0. Coupon reading ease 44 to 60. Blog and spec reading ease is unchanged (splitting does not shorten
   sentences); the remaining long paragraphs are 2-3 very long sentences and need the copy rewrite (batch 2+).
+## 2026-10-28 · Bare "NIRF #N" in spec hub content (lib/data/page-content)
+
+- **Why:** NIRF publishes separate tables, so a rank without its category misleads. CU is University #19 but
+  Management #32; Chitkara's hub told readers "NIRF #19" and "NIRF #78 ranking" with no category. check-nirf-category
+  only scanned templates, so the 431 page-content JSON files were never gated. Re-probe on 28 Oct: 905 bare mentions
+  in 270 files (the brief said ~898 in ~309; it had moved).
+- **Fix:** each mention was attributed to a university (the nearest name on the same line, else the next name in the
+  sentence, else the file's own university) and joined to Supabase `accreditations` (body NIRF) through
+  scripts/lib/supabase-uni-map.mjs. 782 matched one Supabase rank and now read "NIRF <Category> #N". When a rank sat
+  in two categories (MUJ #58 University/Engineering, Chitkara #78 University/Management, UPES #45 University/Research)
+  University was used. About 120 matched nothing and were removed, never re-guessed: Integral "#101" (Supabase: Pharmacy #40
+  only), BITS Pilani "#7" (BITS is absent from Supabase), MAHE "#6", CU "#28", Symbiosis "#20", Shoolini "#92",
+  LPU "#19", VIT "#11", Vignan "#73/#75" and others. About 50 needed a sentence rewrite rather than a clipped
+  phrase, e.g. "Integral has NIRF #101 ranking (Galgotias is unranked)" (Galgotias holds Pharmacy and Law ranks), a CU
+  bullet saying Amity and LPU had a "higher NIRF overall rank" (they rank lower in every category), and "If NIRF top 20
+  matters ... Symbiosis (NIRF #20)" (Symbiosis is University #24). Edits were computed from the original text for all
+  files and written once per file.
+- **Gate:** scripts/check-nirf-category.mts now also fails on a literal "NIRF #N" in lib/data/page-content/*.json
+  with no category word beside it. Self-test covers 4 bare prose forms and 6 categorised ones. Proved by restoring
+  one bare "NIRF #19" in the Chitkara marketing hub: the gate exited 1 and named the file and sentence.
+- **Still open:** 132 mentions that already carried a category before this fix do not match Supabase, mostly BITS
+  "NIRF #7 University" (54, absent from Supabase), "Overall" used to mean University (CU, MUJ, Sharda, Vignan),
+  Amity "Management #22" (Supabase: 49), Alliance "Management #25" (71), IIFT "Management #17", SASTRA "#29",
+  BIT Mesra "Engineering #54" (51). The gate checks that a category is present, not that it is right. Bare ranks
+  without the word NIRF ("VIT (#11)") are also outside the gate.
 
 ## 2026-10-28 · wa.me "429 broken link" rows in the site audit
 

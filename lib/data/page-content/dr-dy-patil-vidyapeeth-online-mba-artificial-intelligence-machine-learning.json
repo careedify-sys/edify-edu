@@ -63,7 +63,7 @@
       "body": "The AI and ML specialisation builds management-layer skills for leading AI initiatives:\n\n**Technical understanding:**\n- ML Model Evaluation: precision, recall, F1 score, AUC-ROC interpretation, confusion matrix analysis, and model comparison for business stakeholder communication\n- Deep Learning Architecture Selection: CNN vs RNN vs Transformer trade-off decisions for business use cases\n- NLP Application Design: chatbot conversation flow design, sentiment analysis pipeline specification, and document processing automation scoping\n- AI Infrastructure: cloud AI service comparison (AWS SageMaker, Azure ML, GCP Vertex AI at conceptual level), GPU compute cost estimation\n\n**Strategic skills:**\n- AI Strategy: enterprise AI maturity assessment, AI use-case prioritisation (impact vs feasibility matrix), AI talent acquisition planning\n- AI Governance: algorithmic bias audit framework, model explainability requirements, data privacy compliance for ML training data, and AI incident response procedures\n- ROI Analysis: AI project cost-benefit modelling, build vs buy vs API decision framework, and ML model maintenance cost forecasting\n\n**Soft skills:** Translating data science outputs into board-level presentations, managing expectations with non-technical stakeholders, facilitating cross-functional AI sprint teams, and negotiating AI vendor contracts."
     },
     "comparisons": {
-      "body": "Comparing DPU-COL Online MBA AI and ML against peer programmes:\n\n**vs Amrita Online MBA Artificial Intelligence:** Amrita at ₹2,44,000 holds NIRF #8 and NAAC A++, substantially stronger NIRF positioning than DPU's #41. Amrita's AI spec is the premium-tier option. DPU at ₹1,89,400 saves ₹54,600 and includes edX certifications. For candidates where NIRF rank is the primary employer filter, Amrita wins. For candidates where fee and edX bundling matter more, DPU is competitive.\n\n**vs Chandigarh University Online MBA Data Science and AI:** CU at ₹1,65,000 with NIRF #19 and PwC co-teaching covers data science and AI together. CU wins on NIRF rank and fee. DPU wins on NAAC grade (A++ vs A+) and dedicated AI and ML focus with cognitive computing and AI governance depth.\n\n**vs JAIN University Online MBA (AI-focused specs):** JAIN at approximately ₹1,80,000 covers AI and business intelligence. DPU and JAIN are comparable on fee. DPU holds stronger NAAC (A++ vs A) and includes NLP and cognitive computing depth that JAIN may not cover as standalone subjects.\n\n**vs LPU Online MBA (general or IT):** LPU does not list a dedicated AI and ML MBA specialisation. For candidates specifically targeting AI management roles, DPU's dedicated spec is more directly relevant."
+      "body": "Comparing DPU-COL Online MBA AI and ML against peer programmes:\n\n**vs Amrita Online MBA Artificial Intelligence:** Amrita at ₹2,44,000 holds NIRF University #8 and NAAC A++, substantially stronger NIRF positioning than DPU's #41. Amrita's AI spec is the premium-tier option. DPU at ₹1,89,400 saves ₹54,600 and includes edX certifications. For candidates where NIRF rank is the primary employer filter, Amrita wins. For candidates where fee and edX bundling matter more, DPU is competitive.\n\n**vs Chandigarh University Online MBA Data Science and AI:** CU at ₹1,65,000 with NIRF University #19 and PwC co-teaching covers data science and AI together. CU wins on NIRF rank and fee. DPU wins on NAAC grade (A++ vs A+) and dedicated AI and ML focus with cognitive computing and AI governance depth.\n\n**vs JAIN University Online MBA (AI-focused specs):** JAIN at approximately ₹1,80,000 covers AI and business intelligence. DPU and JAIN are comparable on fee. DPU holds stronger NAAC (A++ vs A) and includes NLP and cognitive computing depth that JAIN may not cover as standalone subjects.\n\n**vs LPU Online MBA (general or IT):** LPU does not list a dedicated AI and ML MBA specialisation. For candidates specifically targeting AI management roles, DPU's dedicated spec is more directly relevant."
     },
     "fees": {
       "body": "The DPU-COL Online MBA in AI and ML has a total programme fee of ₹1,89,400 for Indian students (USD 3,600 for international students).\n\n**Semester-wise fee breakdown:**\n- Semester 1: ₹50,000\n- Semester 2: ₹50,000\n- Semester 3: ₹45,000\n- Semester 4: ₹44,400\n- **Total: ₹1,89,400**\n\n**Scholarship:** ₹10,000 off for full payment in a single transaction or two transactions within 15 days (effective fee ₹1,79,400).\n\n**Payment options:**\n- Zero-cost EMI: from ₹2,500/month directly through DPU-COL (no external NBFC, no interest)\n- Semester-wise payments as above\n- No application fee\n\n**Bundled:** edX certifications included at no extra cost.\n\nFees are indicative. Reconfirm at dypatilonline.com before payment."
@@ -78,7 +78,7 @@
       },
       {
         "question": "How does DPU AI and ML compare to Amrita's AI MBA?",
-        "answer": "Amrita at ₹2,44,000 with NIRF #8 is the premium AI MBA option with stronger NIRF positioning. DPU at ₹1,89,400 with NIRF #41 saves ₹54,600 and includes edX certifications. Both hold NAAC A++. Choose Amrita if NIRF top-10 rank is critical for your employer. Choose DPU if fee and edX bundling matter more."
+        "answer": "Amrita at ₹2,44,000 with NIRF University #8 is the premium AI MBA option with stronger NIRF positioning. DPU at ₹1,89,400 with NIRF University #41 saves ₹54,600 and includes edX certifications. Both hold NAAC A++. Choose Amrita if NIRF top-10 rank is critical for your employer. Choose DPU if fee and edX bundling matter more."
       },
       {
         "question": "What certifications are included?",
@@ -96,14 +96,14 @@
     "chooseAlternatives": {
       "chooseIf": [
         "You manage or want to manage AI/ML initiatives and need a management-layer MBA, not a coding bootcamp.",
-        "NAAC A++ and NIRF #41 meet your employer's credential filters, and edX certifications add value.",
+        "NAAC A++ and NIRF University #41 meet your employer's credential filters, and edX certifications add value.",
         "₹1,89,400 with zero-cost EMI fits your budget, ₹54,600 less than Amrita's AI MBA.",
         "Your role requires AI governance, ethics, and strategy understanding alongside ML fundamentals."
       ],
       "consider": [
-        "Your employer filters strictly by NIRF top 10, Amrita (NIRF #8) is the stronger option at a premium fee.",
+        "Your employer filters strictly by NIRF top 10, Amrita (NIRF University #8) is the stronger option at a premium fee.",
         "You need hands-on ML model building and deployment skills, a data science programme is more appropriate.",
-        "You want PwC co-teaching and CU's NIRF #19 positioning, CU's Data Science and AI spec at ₹1,65,000 is an alternative."
+        "You want PwC co-teaching and CU's NIRF University #19 positioning, CU's Data Science and AI spec at ₹1,65,000 is an alternative."
       ]
     }
   },
