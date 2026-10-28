@@ -3491,8 +3491,9 @@ export const BLOG_POSTS: BlogPost[] = [
     heroImage: "https://images.pexels.com/photos/5538322/pexels-photo-5538322.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     heroImageAlt: "Concentrated Asian female in black blouse watching video lecture at laptop and taking notes sitting at table in cafe.",
     heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@zen-chung\" target=\"_blank\" rel=\"noopener nofollow\">Zen Chung</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
-    title: "Amrita Online MBA Review 2026: Is the Rs 1.76 Lakh Premium Worth It?",
-    seoTitle: "Amrita Online MBA Review 2026: Is the Premium Worth It?",
+    title: 'Amrita Online MBA Fees 2026: ₹1,76,000–₹2,60,000 and Review',
+    seoTitle: 'Amrita Online MBA Fees 2026: ₹1,76,000–₹2,60,000 and Review',
+    h1Title: 'Amrita Vishwa Vidyapeetham Online MBA Fees 2026: ₹1,76,000–₹2,60,000, Specialisations and Our Review',
     metaDescription: "Amrita online MBA fees run Rs 1.76L to Rs 2.6L by specialisation. An honest review of what the premium buys: NAAC A++, NIRF Management rank, AICTE and WES.",
     category: "Online MBA Programs",
     tags: ["amrita online mba","amrita online mba fees","amrita vishwa vidyapeetham online mba","amrita ahead online mba","amrita online mba review","naac a++ online mba","nirf ranked online mba","Amrita Online MBA Fees 2026"],
@@ -3755,8 +3756,9 @@ export const BLOG_POSTS: BlogPost[] = [
     heroImage: 'https://images.pexels.com/photos/32662455/pexels-photo-32662455.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAlt: 'Young male student explores bookshelves in university library for research.',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@jatin-chaudhary-820545799" target="_blank" rel="noopener nofollow">Jatin  Chaudhary</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
-    title: 'DDU Gorakhpur Online MBA Review 2026: Rs 52,500 From a NAAC A++ University, and What That Price Does Not Buy',
-    seoTitle: 'DDU Gorakhpur Online MBA Review 2026: Rs 52,500 Verdict',
+    title: 'DDU Gorakhpur Online MBA Fees 2026: ₹52,500 and Review',
+    seoTitle: 'DDU Gorakhpur Online MBA Fees 2026: ₹52,500 and Review',
+    h1Title: 'DDU Gorakhpur University Online MBA Fees 2026: ₹52,500, Specialisations and Our Review',
     metaDescription: 'DDU Gorakhpur online MBA costs Rs 52,500 for the full two years, from a NAAC A++ state university. An honest review of what that low price does not buy.',
     category: 'Online MBA Programs',
     tags: ['ddu gorakhpur online mba', 'ddu gorakhpur online mba fees', 'deen dayal upadhyay gorakhpur university online', 'cheapest online mba naac a++', 'state university online mba india', 'ddu gorakhpur online ma fees', 'DDU Gorakhpur Online MBA Fees 2026'],
@@ -4030,8 +4032,9 @@ export const BLOG_POSTS: BlogPost[] = [
     heroImage: 'https://images.pexels.com/photos/6549598/pexels-photo-6549598.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAlt: 'A young adult studying with books and a laptop, focused on taking notes at a desk under a lamp.',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@tima-miroshnichenko" target="_blank" rel="noopener nofollow">Tima Miroshnichenko</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
-    title: 'Bharati Vidyapeeth Online MBA Review 2026: The Real Fee, the AICTE Advantage, and Who Should Skip It',
-    seoTitle: 'Bharati Vidyapeeth Online MBA Review 2026: Real Fee, AICTE',
+    title: 'Bharati Vidyapeeth Online MBA Fees 2026: ₹1,76,000',
+    seoTitle: 'Bharati Vidyapeeth Online MBA Fees 2026: ₹1,76,000',
+    h1Title: 'Bharati Vidyapeeth Online MBA Fees 2026: ₹1,76,000, Specialisations and Our Review',
     metaDescription: 'Bharati Vidyapeeth online MBA fees are Rs 1,76,000 plus Rs 2,000 non-refundable, not the Rs 1,60,000 quoted elsewhere. AICTE listed, NAAC A++ honest review.',
     category: 'Online MBA Programs',
     tags: ['bharati vidyapeeth online mba', 'bharati vidyapeeth online mba fees', 'bharati vidyapeeth mba review', 'bvdu online mba', 'online mba sports management india', 'online mba aicte approved', 'Bharati Vidyapeeth Online MBA Fees 2026'],
@@ -4307,8 +4310,9 @@ export const BLOG_POSTS: BlogPost[] = [
     heroImage: 'https://images.pexels.com/photos/6697368/pexels-photo-6697368.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAlt: 'Person gesturing towards a laptop displaying a video call participant in a cozy room.',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@tim-samuel" target="_blank" rel="noopener nofollow">Tim  Samuel</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
-    title: 'Parul University Online MBA Review 2026: The Real Fee, the NIRF Category Trap, and Who Should Skip It',
-    seoTitle: 'Parul Online MBA Review 2026: The Real Fee and NIRF Truth',
+    title: 'Parul Online MBA Fees 2026: ₹1,50,000 and Review',
+    seoTitle: 'Parul Online MBA Fees 2026: ₹1,50,000 and Review',
+    h1Title: 'Parul University Online MBA Fees 2026: ₹1,50,000, Specialisations and Our Review',
     metaDescription: 'Parul University online MBA fees are Rs 1,50,000 on the official portal, not the Rs 99,000 quoted elsewhere. NAAC A++, 20 specialisations, honest review.',
     category: 'Online MBA Programs',
     tags: ['parul university online mba', 'parul university online mba fees', 'parul online mba review', 'parul university mba pharmaceutical management', 'parul university naac grade', 'online mba forensic accounting india', 'Parul University Online MBA Fees 2026'],
@@ -5565,8 +5569,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'symbiosis-online-mba-review-2026',
-    title: 'Symbiosis Online MBA Fees 2026: ₹3.15L to ₹3.70L SSODL Review and Honest Verdict',
-    seoTitle: 'Symbiosis Online MBA Review 2026: Tier 1 or Tier 2?',
+    title: 'Symbiosis Online MBA Fees 2026: ₹3,15,000–₹3,70,000',
+    seoTitle: 'Symbiosis Online MBA Fees 2026: ₹3,15,000–₹3,70,000',
+    h1Title: 'Symbiosis (SSODL) Online MBA Fees 2026: ₹3,15,000–₹3,70,000, Specialisations and Our Review',
     metaDescription: 'Is Symbiosis Online MBA Tier 1 or Tier 2? Honest review of fees, placements and who it suits. Compared using real student feedback. Zero commission.',
     category: 'University Review',
     tags: ['symbiosis online mba', 'symbiosis university online mba', 'SSODL MBA', 'UGC DEB online MBA', 'Symbiosis Online MBA Fees 2026', 'SSODL MBA Fees', 'Symbiosis Online MBA Review 2026', 'Symbiosis SCDL vs SSODL'],
@@ -5757,8 +5762,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'nmims-online-mba-review-2026',
     updatedAt: '2026-10-26',
-    title: 'NMIMS Online MBA Fees 2026: ₹1.96L to ₹2.2L Review and Honest Verdict',
-    seoTitle: 'NMIMS Online MBA Review 2026: Best for Mumbai BFSI',
+    title: 'NMIMS Online MBA Fees 2026: ₹1,96,000–₹2,20,000 and Review',
+    seoTitle: 'NMIMS Online MBA Fees 2026: ₹1,96,000–₹2,20,000 and Review',
+    h1Title: 'NMIMS Online MBA Fees 2026: ₹1,96,000–₹2,20,000, Specialisations and Our Review',
     metaDescription: 'NMIMS Online MBA honest review: fees, specialisations, placement reality. Based on real student feedback. Zero commission, no sales pitch.',
     category: 'University Reviews',
     tags: ['nmims online mba', 'nmims online mba fees', 'nmims online mba review', 'nmims mba specializations', 'nmims online mba placements', 'nmims cdoe', 'nmims distance mba', 'nmims online mba admission 2026', 'Narsee Monjee Online MBA Fees', 'NMIMS CDOE MBA Review'],
@@ -6034,8 +6040,9 @@ export const BLOG_POSTS: BlogPost[] = [
     updatedAt: '2026-10-26',
     // Sprint 1 revert: title/seoTitle/metaDescription reverted to pre-Sprint values
     // pending a separate A/B test. Cross-link callout at top of content field kept.
-    title: 'IGNOU Online MBA: Is It Still Worth It in 2026?',
-    seoTitle: 'IGNOU Online MBA Review 2026: Rs 66K Fees, Zero Placement Cell',
+    title: 'IGNOU Online MBA Fees 2026: ₹66,000 and Review',
+    seoTitle: 'IGNOU Online MBA Fees 2026: ₹66,000 and Review',
+    h1Title: 'IGNOU Online MBA Fees 2026: ₹66,000, Specialisations and Our Review',
     metaDescription: 'IGNOU Online MBA costs ₹66,000 total. But is it still worth it in 2026? Validity, placement reality, honest verdict.',
     category: 'University Review',
     tags: ['online mba ignou', 'ignou distance mba', 'ignou mba correspondence', 'mba distance learning ignou', 'ignou mbaol', 'ignou mba 2026'],
@@ -6431,8 +6438,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'mahe-online-mba-review-2026',
     updatedAt: '2026-10-26',
-    title: 'MAHE Online MBA: Fees, Specialisations and Review 2026',
-    seoTitle: 'MAHE Online MBA Review 2026: Manipal’s Premium Tier',
+    title: 'MAHE Online MBA Fees 2026: ₹2,92,000 and Review',
+    seoTitle: 'MAHE Online MBA Fees 2026: ₹2,92,000 and Review',
+    h1Title: 'Manipal Academy of Higher Education (MAHE) Online MBA Fees 2026: ₹2,92,000, Specialisations and Our Review',
     metaDescription: 'Manipal Academy of Higher Education (MAHE) Online MBA fees 2026: ₹2,92,000. NIRF Management rank 39, NAAC A++ (3.65), AACSB accredited. Top-tier online MBA.',
     category: 'University Review',
     tags: ['mahe online mba', 'manipal academy online mba', 'mahe mba fees', 'mahe mba review 2026', 'manipal online mba working professionals'],
@@ -6664,9 +6672,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'muj-online-mba-review-2026',
-    updatedAt: '2026-10-26',
-    title: 'MUJ Online MBA: Fees, 13 Specialisations and Review 2026',
-    seoTitle: 'MUJ (Manipal Jaipur) Online MBA Review 2026',
+    updatedAt: '2026-10-28',
+    title: 'MUJ Online MBA Fees 2026: ₹1,84,000 (₹1,56,400 After 15%)',
+    seoTitle: 'MUJ Online MBA Fees 2026: ₹1,84,000 (₹1,56,400 After 15%)',
+    h1Title: 'Manipal University Jaipur (MUJ) Online MBA Fees 2026: ₹1,84,000 List, ₹1,56,400 After the 15% Discount, Specialisations and Our Review',
     metaDescription: 'Manipal University Jaipur (MUJ) Online MBA fees 2026: ₹1,84,000 total (₹46,000 per semester × 4) plus ₹500 application fee. NAAC A+, 13 specialisations.',
     category: 'University Review',
     tags: ['muj online mba', 'manipal university jaipur mba', 'muj mba fees', 'muj mba specialisations', 'online manipal muj 2026'],
@@ -6686,11 +6695,21 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     ctaTitle: '',
     ctaDesc: '',
-    content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 22,000 on MUJ Online MBA.</p><a href="/coupons/manipal-jaipur-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View MUJ Coupon Code</a></div>
+    content: `<div class="callout-key">
+<strong>MUJ Online MBA fees 2026: the short answer</strong>
+<ul>
+<li><strong>₹1,84,000</strong> list fee, or ₹46,000 a semester for four semesters</li>
+<li><strong>₹1,56,400</strong> after the 15% discount</li>
+<li>EMI from ₹6,517 a month</li>
+<li>NAAC A+, UGC-DEB entitled, 13 specialisations</li>
+</ul>
+<p>Fees are for the January 2027 batch, checked against the official Online Manipal portal in late October 2026. They are indicative, so confirm the current figure on onlinemanipal.com before you pay.</p>
+</div>
+<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 22,000 on MUJ Online MBA.</p><a href="/coupons/manipal-jaipur-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View MUJ Coupon Code</a></div>
 
 
 <p>If you search "online MBA India" on any forum, MUJ comes up most often in the comments. It was one of the first universities in India to offer an online MBA with UGC approval, starting its first batch in April 2021. The ₹1,84,000 fee sits in a middle ground between MAHE (Rs 2,92,000) and SMU (Rs 1,20,000), but what really distinguishes it is the range of 13 specialisations, including tracks like IT and FinTech, BFSI, and International Business that the other two campuses do not offer.</p>
-    <p>All program details are sourced from the <a href="https://www.onlinemanipal.com/online-mba-manipal-university-jaipur" target="_blank">official MUJ MBA page on Online Manipal</a>. Student feedback is from Quora, Shiksha, and College Vidya.</p>
+    <p>All program details are sourced from the <a href="https://www.onlinemanipal.com/online-mba-manipal-university-jaipur" target="_blank">official MUJ MBA page on Online Manipal</a>. Student feedback is from public Quora threads.</p>
 
     <h2>About MUJ</h2>
     <p>Manipal University Jaipur was established in 2011 in Rajasthan and is part of the Manipal Group. It received UGC approval for online degree programs in 2021. It holds NAAC A+ accreditation and has entered QS World University Rankings in sustainability and Asia categories. NIRF ranked it 81st in management and 64th in engineering in 2024. The MUJ online MBA is QS-ranked, which is listed on the program page as a distinct feature.</p>
@@ -6801,8 +6820,8 @@ export const BLOG_POSTS: BlogPost[] = [
       <ul class="sources-list">
         <li><a href="https://www.onlinemanipal.com/online-mba-manipal-university-jaipur" target="_blank">MUJ Online MBA Official Page</a> <span class="src-badge">Official</span></li>
         <li><a href="https://www.onlinemanipal.com/institution/manipal-university-jaipur" target="_blank">MUJ Institution Page</a> <span class="src-badge">Official</span></li>
-        <li><a href="https://www.quora.com/How-was-your-experience-with-online-Manipal-University-for-an-MBA" target="_blank">Quora &mdash; MUJ MBA experience</a> <span class="src-badge">Quora</span></li>
-        <li><a href="/universities/manipal-university-jaipur-online/mba" class="ilink">MUJ Online MBA: EdifyEdu Data</a> <span class="src-badge">Shiksha</span></li>
+        <li><a href="https://www.quora.com/How-was-your-experience-with-online-Manipal-University-for-an-MBA" target="_blank">Quora: MUJ MBA experience</a> <span class="src-badge">Quora</span></li>
+        <li><a href="/universities/manipal-university-jaipur-online/mba" class="ilink">MUJ Online MBA: EdifyEdu Data</a> <span class="src-badge">EdifyEdu</span></li>
         <li><a href="https://www.onlinemanipal.com/placements" target="_blank">Online Manipal Placement Cell</a> <span class="src-badge">Official</span></li>
       </ul>
     </div>
@@ -11785,8 +11804,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'online-mba-lpu-review-2026',
     updatedAt: '2026-10-26',
-    title: 'LPU Online MBA Fees 2026: Lovely Professional University Review and Honest Take',
-    seoTitle: 'LPU Online MBA 2026: Rs 1.46L, NAAC A++, Dual Specs',
+    title: 'LPU Online MBA Fees 2026: ₹2,00,000 and Review',
+    seoTitle: 'LPU Online MBA Fees 2026: ₹2,00,000 and Review',
+    h1Title: 'Lovely Professional University (LPU) Online MBA Fees 2026: ₹2,00,000, Specialisations and Our Review',
     metaDescription: 'Lovely Professional University (LPU) online MBA fees ₹1,46,240 lumpsum or ₹40,400/semester. 12 specializations, NAAC A++, NIRF Management #44.',
     category: 'Online MBA University Reviews',
     tags: ['LPU Online MBA', 'LPU MBA Review 2026', 'LPU Online MBA Fees', 'UGC DEB Approved MBA', 'NAAC A++ Online MBA', 'LPU MBA Salary', 'LPU MBA Specialisations', 'Lovely Professional University MBA Fees', 'Lovely Professional University Online MBA'],
@@ -23427,11 +23447,12 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'amity-online-mba-review-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: '2026-10-28',
     // Sprint 1 revert: title/seoTitle/metaDescription reverted to pre-Sprint values
     // pending a separate A/B test. Cross-link callout at top of content field kept.
-    title: 'Amity University Online MBA Fees 2026: ₹2.07L Review and Honest Assessment',
-    seoTitle: 'Amity Online MBA Review 2026: Who It Actually Suits',
+    title: 'Amity Online MBA Fees 2026: ₹2,07,000–₹2,25,000 and Review',
+    seoTitle: 'Amity Online MBA Fees 2026: ₹2,07,000–₹2,25,000 and Review',
+    h1Title: 'Amity University Online MBA Fees 2026: ₹2,07,000 One-Time or ₹2,25,000 Semester-Wise, Specialisations and Our Review',
     metaDescription: 'Amity Online MBA honest review: ₹2.07L to ₹4.49L fees, 14 specialisations, placement reality from real student feedback. Zero commission.',
     category: 'University Reviews',
     tags: ['amity online mba', 'amity online mba review', 'amity mba online fees', 'amity online mba placements', 'amity online mba worth it', 'amity university mba eligibility', 'amity university noida mba fees and placement', 'mba in amity university fees'],
@@ -23449,7 +23470,16 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'What is the difference between Amity Online MBA and distance MBA?', a: 'Amity Online MBA is delivered through live interactive sessions on the AMIGO learning platform with real-time faculty interaction. The earlier distance MBA format used self-study material with limited contact sessions. The current online format is the one Amity offers for 2026 admissions.' },
       { q: 'Which specialisations does Amity Online MBA offer in 2026?', a: 'Amity offers 14 specialisations: Business Analytics, Data Science, Digital Marketing Management, Entrepreneurship and Leadership Management, Finance and Accounting Management, HR Management, IT Management, International Business Management, International Finance (ACCA), Marketing and Sales Management, Production and Operations Management, Hospital and Healthcare Management, Construction Project Management, and General Management.' }
     ],
-    content: `<div style="background:#fef3c7;border-left:4px solid #f97316;border-radius:6px;padding:12px 16px;margin:0 0 20px;font-size:14px;color:#78350f"><strong>Looking for the current fee?</strong> The full verified fee structure, semester-wise breakdown, and EMI options live on the <a href="/universities/amity-university-online/mba" style="color:#0f172a;font-weight:700;text-decoration:underline">Amity Online MBA programme page</a>.</div>
+    content: `<div class="callout-key">
+<strong>Amity Online MBA fees 2026: the short answer</strong>
+<ul>
+<li><strong>₹2,07,000</strong> if you pay the full fee one-time</li>
+<li><strong>₹2,25,000</strong> if you pay semester-wise</li>
+<li><strong>₹4,49,000</strong> for the Construction Management specialisation</li>
+<li>Two years, four semesters. NAAC A+ and UGC-DEB entitled.</li>
+</ul>
+<p>Fees verified against online.amity.edu on 7 August 2026. They are indicative, so confirm the current figure on the official portal before you pay. Specialisations, eligibility and admission steps are on our <a href="/universities/amity-university-online/mba">Amity Online MBA programme page</a>.</p>
+</div>
 <div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Verified coupon: up to Rs 5,000 off Amity Online MBA. Max amount unlocks every Tuesday and Saturday (IST).</p><a href="/coupons/amity-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View Amity Coupon Code</a></div>
 
 
@@ -27674,8 +27704,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'vignan-online-mba-review',
-    title: 'Vignan Online MBA 2026: Fees, Syllabus, Honest Review',
-    seoTitle: 'Vignan Online MBA Fees 2026, Rs. 90,000 Total | Honest Review',
+    title: 'Vignan Online MBA Fees 2026: ₹90,000 and Review',
+    seoTitle: 'Vignan Online MBA Fees 2026: ₹90,000 and Review',
+    h1Title: 'Vignan University Online MBA Fees 2026: ₹90,000, Specialisations and Our Review',
     metaDescription: 'Vignan Online MBA at Rs. 90,000 total. NAAC A+ ranked. Full fee breakdown, semester-wise syllabus, 7 specializations and honest review of who should apply.',
     category: 'Online MBA Programs',
     tags: ['vignan online mba', 'vignan online mba fees', 'vignan university online mba', 'cheapest online mba india', 'online mba naac a plus'],
@@ -28030,8 +28061,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'dsu-online-mba-review',
-    title: 'DSU Online MBA Review 2026: Fees and Honest Rating',
-    seoTitle: 'Dayananda Sagar Online MBA Review 2026: Bangalore Value',
+    title: 'DSU Online MBA Fees 2026: ₹1,30,000 and Review',
+    seoTitle: 'DSU Online MBA Fees 2026: ₹1,30,000 and Review',
+    h1Title: 'Dayananda Sagar University (DSU) Online MBA Fees 2026: ₹1,30,000, Specialisations and Our Review',
     metaDescription: 'DSU Online MBA fees Rs 1,30,000 total (Rs 32,875 first semester). NAAC A++ Bangalore. Fee breakdown, specialisations, syllabus, honest 2026 review.',
     category: 'Online MBA Programs',
     tags: ['dsu online mba', 'dayananda sagar university online mba', 'dayananda sagar online mba fees', 'online mba bangalore', 'dsu online mba review'],
@@ -28369,8 +28401,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'smu-online-mba-review',
     updatedAt: '2026-10-26',
-    title: 'Sikkim Manipal (SMU) Online MBA Review 2026: Fees and Honest Verdict',
-    seoTitle: 'SMU Online MBA Review 2026: Rs 1.2L That Punches Above Its Price',
+    title: 'SMU Online MBA Fees 2026: ₹1,20,000 and Review',
+    seoTitle: 'SMU Online MBA Fees 2026: ₹1,20,000 and Review',
+    h1Title: 'Sikkim Manipal University (SMU) Online MBA Fees 2026: ₹1,20,000, Specialisations and Our Review',
     metaDescription: 'Old SMU reviews say avoid. The 2026 UGC-DEB online MBA is a different programme. ₹1.20L fee, NAAC A+, honest verdict from real student feedback.',
     category: 'Online MBA Programs',
     tags: ['smu online mba', 'sikkim manipal university online mba', 'smu online mba fees', 'manipal online mba', 'dual specialization mba india', 'online mba manipal group', 'Sikkim Manipal University online MBA', 'Manipal online MBA fees'],
@@ -28686,8 +28719,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'uu-doon-online-mba-review',
     updatedAt: '2026-10-26',
-    title: 'Uttaranchal University Online MBA Review 2026: Fees',
-    seoTitle: 'Uttaranchal University Online MBA Review 2026',
+    title: 'Uttaranchal University Online MBA Fees 2026: ₹1,48,000',
+    seoTitle: 'Uttaranchal University Online MBA Fees 2026: ₹1,48,000',
+    h1Title: 'Uttaranchal University Online MBA Fees 2026: ₹1,48,000, Specialisations and Our Review',
     metaDescription: 'UU Doon Online MBA at Rs. 1,03,600 total after the 30% scholarship, or Rs. 99,600 paid upfront. NAAC A+, Dehradun. Full fee breakdown, 8 specializations, syllabus and honest review for 2026.',
     category: 'Online MBA Programs',
     tags: ['uttaranchal university online mba', 'uu doon online mba', 'online mba dehradun', 'uu online mba fees', 'cheapest online mba uttarakhand', 'uu doon mba review'],
@@ -29009,8 +29043,9 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'galgotias-online-mba-review',
     updatedAt: '2026-10-26',
     author: 'Rishi Kumar',
-    title: 'Galgotias University Online MBA Fees 2026: ₹80,200 Review and Honest Rating',
-    seoTitle: 'Galgotias Online MBA Review 2026: Is It Worth ₹80,200?',
+    title: 'Galgotias Online MBA Fees 2026: ₹80,200 and Review',
+    seoTitle: 'Galgotias Online MBA Fees 2026: ₹80,200 and Review',
+    h1Title: 'Galgotias University Online MBA Fees 2026: ₹80,200, Specialisations and Our Review',
     metaDescription: 'Galgotias Online MBA total fee ₹80,200 but the exam fee and one cost most sites skip changes the maths. Full breakdown, honest verdict, zero commission.',
     category: 'Online MBA Programs',
     tags: ['galgotias university mba fees', 'Galgotias University Online MBA', 'Galgotias University Distance Education', 'Galgotias MBA Fees 2026', 'cheapest online mba india', 'galgotias online mba fees', 'online mba greater noida'],
@@ -29349,8 +29384,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'arka-jain-online-mba-review',
     updatedAt: '2026-10-26',
-    title: 'ARKA JAIN Online MBA Review 2026: Fees and GenAI Spec',
-    seoTitle: 'ARKA JAIN Online MBA Fees 2026, Rs. 1,08,500 | GenAI Sem 1 | JGI Group',
+    title: 'ARKA JAIN Online MBA Fees 2026: ₹1,08,500 and Review',
+    seoTitle: 'ARKA JAIN Online MBA Fees 2026: ₹1,08,500 and Review',
+    h1Title: 'ARKA JAIN University Online MBA Fees 2026: ₹1,08,500, Specialisations and Our Review',
     metaDescription: 'ARKA JAIN JGI Online MBA fees Rs 1,08,500 total. Generative AI compulsory in Semester 1. Full syllabus, fee breakdown and honest 2026 review.',
     category: 'Online MBA Programs',
     tags: ['arka jain online mba', 'jgi online mba', 'arka jain university mba', 'generative ai mba india', 'jgi group online mba', 'arka jain mba fees'],
@@ -29679,8 +29715,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'noida-international-university-online-mba-review',
     updatedAt: '2026-10-26',
-    title: 'NIU Online MBA Review 2026: Fees and Honest Rating',
-    seoTitle: 'NIU (Noida International) Online MBA Review 2026',
+    title: 'NIU Online MBA Fees 2026 and Review',
+    seoTitle: 'NIU Online MBA Fees 2026 and Review',
+    h1Title: 'Noida International University (NIU) Online MBA Fees 2026, Specialisations and Our Review',
     metaDescription: 'NIU Online MBA at Rs. 88,500 after early-bird discount. NAAC A+, Greater Noida. 10 specializations, SPSS training, healthcare & agri syllabi.',
     category: 'Online MBA Programs',
     tags: ['noida international university online mba', 'niu online mba', 'niu online mba fees', 'online mba greater noida', 'niu mba review', 'cheapest online mba ncr'],
@@ -29992,8 +30029,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'shoolini-online-mba-review',
-    title: 'Shoolini Online MBA Fees 2026: ₹1.18L Review and Honest Rating',
-    seoTitle: 'Shoolini Online MBA Review 2026: Pharma and Biotech',
+    title: 'Shoolini Online MBA Fees 2026 and Review',
+    seoTitle: 'Shoolini Online MBA Fees 2026 and Review',
+    h1Title: 'Shoolini University Online MBA Fees 2026, Specialisations and Our Review',
     metaDescription: 'Shoolini University online MBA fees ₹1,18,000 to ₹1,30,000. NAAC A+, NIRF University #69, 16 specializations. QS #1 private. Honest review, zero commission.',
     category: 'Online MBA Programs',
     tags: ['shoolini online mba', 'shoolini university online mba', 'shoolini mba fees', 'online mba pharma', 'online mba biotechnology', 'pay after placement mba india', 'Shoolini University MBA Fees', 'Shoolini University Online MBA', 'Shoolini MBA Review 2026'],
@@ -30700,8 +30738,9 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'chandigarh-university-online-mba-review',
     updatedAt: '2026-10-26',
-    title: 'Chandigarh University Online MBA Fees 2026: ₹1.65L Review and Honest Verdict',
-    seoTitle: 'Chandigarh University Online MBA Review 2026: PwC Tie-Up',
+    title: 'Chandigarh University Online MBA Fees 2026 and Review',
+    seoTitle: 'Chandigarh University Online MBA Fees 2026 and Review',
+    h1Title: 'Chandigarh University Online MBA Fees 2026, Specialisations and Our Review',
     metaDescription: 'Chandigarh University Online MBA reviewed: fees after Early Bird scholarship, pros, cons, who it suits. Real student feedback, zero commission.',
     category: 'Online MBA Programs',
     tags: ['chandigarh university online mba', 'cu online mba review', 'online mba with harvard certification india', 'online mba with pwc certification', 'chandigarh university mba fees', 'Chandigarh University MBA Fees 2026', 'CU Online MBA Review'],
@@ -31015,8 +31054,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'jaypee-jiit-online-mba-review',
-    title: 'Jaypee JIIT Online MBA Review 2026: Fees and IT Track',
-    seoTitle: 'JIIT (Jaypee) Online MBA Review 2026: AI and Analytics',
+    title: 'Jaypee JIIT Online MBA Fees 2026: ₹1,75,000 and Review',
+    seoTitle: 'Jaypee JIIT Online MBA Fees 2026: ₹1,75,000 and Review',
+    h1Title: 'Jaypee (JIIT) Online MBA Fees 2026: ₹1,75,000, Specialisations and Our Review',
     metaDescription: 'Jaypee JIIT Online MBA Rs 1,75,000. Built for tech professionals. AI in Business in Semester 3, IT Analytics with Blockchain, mandatory internship included.',
     category: 'Online MBA Programs',
     tags: ['jaypee jiit online mba', 'jiit online mba review', 'online mba for engineers india', 'online mba it business analytics', 'jiit mba fees 2026'],
@@ -38413,8 +38453,9 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   {
     slug: 'jain-online-mba-review-2026',
     updatedAt: '2026-10-26',
-    title: "Jain Online MBA Fees 2026: ₹1.6L to ₹2.98L Review and Honest Take",
-    seoTitle: "Jain University Online MBA Review 2026: NAAC A++, NIRF Mgmt 73",
+    title: 'Jain Online MBA Fees 2026: ₹1,60,000–₹2,98,000 and Review',
+    seoTitle: 'Jain Online MBA Fees 2026: ₹1,60,000–₹2,98,000 and Review',
+    h1Title: 'Jain University Online MBA Fees 2026: ₹1,60,000–₹2,98,000, Specialisations and Our Review',
     metaDescription: "Jain University online MBA fees ₹1,60,000 to ₹2,98,000 by specialization. NAAC A++ (3.71), NIRF Management #73. 19 electives. Honest review.",
     category: 'University Reviews',
     tags: ["jain university mba fees","jain university online mba","jain online mba review","jain online mba fees"],

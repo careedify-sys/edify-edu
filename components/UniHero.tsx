@@ -16,9 +16,10 @@ interface Props {
   cleanName: string
   spec?: string
   customH1?: string
+  h1Variant?: 'admission'
 }
 
-export default function UniHero({ u, program, pd, cleanName, spec, customH1 }: Props) {
+export default function UniHero({ u, program, pd, cleanName, spec, customH1, h1Variant }: Props) {
   const specs  = pd.specs || []
   const level  = getProgramLevel(program)
   const logoPath: string | undefined = (LOGOS_MANIFEST as Record<string, string>)[u.id]
@@ -37,7 +38,9 @@ export default function UniHero({ u, program, pd, cleanName, spec, customH1 }: P
     : cleanName
   const generatedH1 = spec
     ? `${onlinePrefix} ${program} in ${spec}: Syllabus, Fees & Career Outcomes ${year}`
-    : `${onlinePrefix} ${program} ${year}: Fees, Placement, Syllabus & Reviews`
+    : h1Variant === 'admission'
+      ? `${onlinePrefix} ${program}: Specialisations, Eligibility and Admission`
+      : `${onlinePrefix} ${program} ${year}: Fees, Placement, Syllabus & Reviews`
   const h1 = customH1 || generatedH1
 
   const approvalSuffix = modeVerified ? ' · UGC DEB Approved' : ' · Delivery mode unconfirmed'

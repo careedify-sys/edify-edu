@@ -25,6 +25,30 @@ import { resolveProgramme } from '@/lib/seo/resolve-programme'
 import { formatUniversityDisplayName } from '@/lib/format'
 import { naacSuffix, naacSegment, naacAccredited, naacPhrase } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription, onlinePrefix } from '@/lib/seo/mode-unverified'
+import { getProgramLinks } from '@/lib/internal-links'
+
+// The review blog owns "{uni} online mba" and "{uni} online mba fees"
+// (Semrush tracking, 27 Oct 2026: blogs 4-10, hubs 33-54; Aug GSC: the blog
+// beat the hub in all 10 pairs checked). A hub whose links carry a keywordLink
+// to its review stops leading with the fee in title and H1, and links the
+// review instead (ProgramBlogLinks). The fee stays in the body and description.
+function reviewOwnedTitle(u: NonNullable<ReturnType<typeof getUniversityById>>): string | null {
+  const link = getProgramLinks(u.id, 'mba')?.keywordLink
+  if (!link) return null
+  // Short name first, then the name the review anchor uses ("Manipal Univ
+  // Jaipur" does not fit the pattern, "MUJ" does). u.abbr is not usable here:
+  // it holds values like "MUJOM".
+  const anchorName = link.anchor.replace(/ Online MBA fees and review$/, '')
+  const names = [getShortTitleName(u.id, u.shortName, u.name, u.abbr), anchorName]
+    .map(n => `${n} ${onlinePrefix(u.id)}MBA`)
+  const options = names.flatMap(name => [
+    `${name}: Specialisations, Eligibility and Admission | edifyedu.in`,
+    `${name}: Specialisations, Eligibility and Admission`,
+    `${name}: Specialisations and Admission | edifyedu.in`,
+    `${name}: Specialisations and Admission`,
+  ])
+  return options.find(t => t.length <= 60) ?? clampTitle(`${names[0]}: Specialisations and Admission`)
+}
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('MBA')).map(u => ({ id: u.id }))
@@ -53,7 +77,9 @@ export async function generateMetadata(
   // generic template which renders the counsellor-CTA path.
   const feePreCheck = getDisplayFee(u, 'MBA')
   const override = feePreCheck.ok ? MBA_SEO_OVERRIDES[id] : undefined
+  const reviewTitle = reviewOwnedTitle(u)
   if (override) {
+    const otitle = reviewTitle ?? override.title
     const kw = [
       `${u.name} online MBA fees`,
       `${u.name} online MBA syllabus`,
@@ -62,19 +88,19 @@ export async function generateMetadata(
       `${u.abbr} online MBA`,
     ].join(', ')
     return {
-      title: override.title,
+      title: otitle,
       description: override.description,
       keywords: kw,
       alternates: { canonical: `https://edifyedu.in/universities/${u.id}/mba` },
       openGraph: {
-        title: override.title,
+        title: otitle,
         description: override.description,
         type: 'website',
         url: `https://edifyedu.in/universities/${u.id}/mba`,
         siteName: 'edifyedu.in',
         images: [{ url: 'https://edifyedu.in/og.png', width: 1200, height: 630, alt: `${formatUniversityDisplayName(u.name)} ${onlinePrefix(u.id)}MBA | edifyedu.in` }],
       },
-      twitter: { card: 'summary_large_image', title: override.title, description: override.description, images: ['https://edifyedu.in/og.png'] },
+      twitter: { card: 'summary_large_image', title: otitle, description: override.description, images: ['https://edifyedu.in/og.png'] },
       robots: { index: shouldIndexProgrammeHub(u, 'MBA').shouldIndex, follow: true },
     }
   }
@@ -93,13 +119,13 @@ export async function generateMetadata(
   // Sprint 1 FIX 2: fee comes from getDisplayFee (one canonical source).
   // When feeTok === false the fee is suppressed everywhere; user sees
   // "Fee structure verified by our counsellor" and the lead CTA instead.
-  const title = feeTok
+  const title = reviewTitle ?? (feeTok
     ? clampTitleFeeLed(
         `${titleName} ${onlinePrefix(u.id)}MBA Fees ${year}: ${feeTok}${naacSegment(u.naac)} [Review] | edifyedu.in`,
         `${shortName} ${onlinePrefix(u.id)}MBA Fees ${year}: ${feeTok}${naacSegment(u.naac)} [Review] | edifyedu.in`,
         feeTok,
       )
-    : clampTitle(`${titleName} ${onlinePrefix(u.id)}MBA ${year}: ${naacPhrase(u.naac, "UGC-DEB Entitled")} [Review] | edifyedu.in`)
+    : clampTitle(`${titleName} ${onlinePrefix(u.id)}MBA ${year}: ${naacPhrase(u.naac, "UGC-DEB Entitled")} [Review] | edifyedu.in`))
   const baseDescription = feeTok
     ? clampDescription(`${titleName} ${onlinePrefix(u.id)}MBA ${year}: ${feeTok} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. See honest review, syllabus and placement data.`)
     : clampDescription(`${titleName} ${onlinePrefix(u.id)}MBA ${year}: ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`)
@@ -227,6 +253,7 @@ export default async function OnlineMBAPage(
   // generic template rather than displaying an unbacked fee number.
   const bodyFee = getDisplayFee(u, 'MBA')
   const override = bodyFee.ok ? MBA_SEO_OVERRIDES[id] : undefined
+  const reviewOwned = !!getProgramLinks(u.id, 'mba')?.keywordLink
   return (
     <>
       <MBAProgramSchema u={u} pd={pd} />
@@ -235,7 +262,8 @@ export default async function OnlineMBAPage(
         program="MBA"
         programSlug="mba"
         pd={pd}
-        customH1={override?.h1}
+        customH1={reviewOwned ? undefined : override?.h1}
+        h1Variant={reviewOwned ? 'admission' : undefined}
         customIntro={override?.intro}
       />
     </>

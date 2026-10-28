@@ -33,10 +33,11 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Amity University Online',
       shortName: 'Amity',
       programPage: '/universities/amity-university-online/mba',
+      keywordLink: { slug: 'amity-online-mba-review-2026', anchor: 'Amity Online MBA fees and review' },
       comparePage: '/compare?a=amity-university-online&b=nmims-online',
       verifyPage: '/verify/amity-university-online',
       blogs: [
-        { slug: 'amity-online-mba-review-2026', label: 'Amity Online MBA Review 2026: Fees, Specialisations and Honest Verdict' },
+        { slug: 'amity-online-mba-review-2026', label: 'Amity Online MBA Fees 2026: ₹2,07,000–₹2,25,000 and Review' },
         { slug: 'amity-online-mba-hr-worth-it', label: 'Is Amity Online MBA in HR Worth It? Honest Verdict 2026' },
         { slug: 'is-amity-university-online-fake-or-legit-2026', label: 'Is Amity University Online Fake or Legit? 2026' },
       ],
@@ -56,9 +57,10 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'NMIMS Online',
       shortName: 'NMIMS',
       programPage: '/universities/nmims-online/mba',
+      keywordLink: { slug: 'nmims-online-mba-review-2026', anchor: 'NMIMS Online MBA fees and review' },
       comparePage: '/compare?a=nmims-online&b=amity-university-online',
       blogs: [
-        { slug: 'nmims-online-mba-review-2026', label: 'NMIMS Online MBA Review 2026: Fees, Accreditation and Placement Data' },
+        { slug: 'nmims-online-mba-review-2026', label: 'NMIMS Online MBA Fees 2026: ₹1,96,000–₹2,20,000 and Review' },
         { slug: 'is-nmims-online-fake-or-legit-2026', label: 'Is NMIMS Online Fake or Legit? 2026' },
       ],
     },
@@ -77,9 +79,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       shortName: 'Symbiosis',
       programPage: '/universities/symbiosis-university-online/mba',
       // /mba/international-business was ranking 73 for this query.
-      keywordLink: { slug: 'symbiosis-online-mba-review-2026', anchor: 'Symbiosis online MBA' },
+      keywordLink: { slug: 'symbiosis-online-mba-review-2026', anchor: 'Symbiosis Online MBA fees and review' },
       blogs: [
-        { slug: 'symbiosis-online-mba-review-2026', label: 'Symbiosis Online MBA Review 2026: SSODL Fees, Scholarship and Honest Verdict' },
+        { slug: 'symbiosis-online-mba-review-2026', label: 'Symbiosis Online MBA Fees 2026: ₹3,15,000–₹3,70,000' },
       ],
     },
     bba: {
@@ -108,9 +110,10 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'LPU Online',
       shortName: 'LPU',
       programPage: '/universities/lovely-professional-university-online/mba',
+      keywordLink: { slug: 'online-mba-lpu-review-2026', anchor: 'LPU Online MBA fees and review' },
       comparePage: '/compare?a=lovely-professional-university-online&b=amity-university-online',
       blogs: [
-        { slug: 'online-mba-lpu-review-2026', label: 'LPU Online MBA Review 2026: Fees, Specialisations and Student Feedback' },
+        { slug: 'online-mba-lpu-review-2026', label: 'LPU Online MBA Fees 2026: ₹2,00,000 and Review' },
         { slug: 'is-lpu-online-fake-or-legit-2026', label: 'Is LPU Online Fake or Legit? 2026' },
       ],
     },
@@ -120,10 +123,11 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Manipal University Jaipur Online',
       shortName: 'MUJ',
       programPage: '/universities/manipal-university-jaipur-online/mba',
+      keywordLink: { slug: 'muj-online-mba-review-2026', anchor: 'MUJ Online MBA fees and review' },
       comparePage: '/compare?a=manipal-university-jaipur-online&b=amity-university-online',
       blogs: [
         { slug: 'is-manipal-university-jaipur-fake-or-legit-2026', label: 'Is Manipal University Jaipur Fake or Legit? 2026 Fact Check' },
-        { slug: 'muj-online-mba-review-2026', label: 'MUJ Online MBA Review 2026: Fees, NAAC and Honest Verdict' },
+        { slug: 'muj-online-mba-review-2026', label: 'MUJ Online MBA Fees 2026: ₹1,84,000 (₹1,56,400 After 15%)' },
       ],
     },
     bba: {
@@ -140,9 +144,10 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Manipal Academy of Higher Education Online',
       shortName: 'MAHE',
       programPage: '/universities/manipal-academy-higher-education-online/mba',
+      keywordLink: { slug: 'mahe-online-mba-review-2026', anchor: 'MAHE Online MBA fees and review' },
       blogs: [
         { slug: 'online-manipal-mba-review-2026', label: 'Online Manipal MBA Review 2026: Fees, Accreditation and Placement' },
-        { slug: 'mahe-online-mba-review-2026', label: 'MAHE Online MBA Review 2026: Full Programme Details and Honest Verdict' },
+        { slug: 'mahe-online-mba-review-2026', label: 'MAHE Online MBA Fees 2026: ₹2,92,000 and Review' },
       ],
     },
     bba: {
@@ -159,8 +164,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'IGNOU Online',
       shortName: 'IGNOU',
       programPage: '/universities/ignou-online/mba',
+      keywordLink: { slug: 'ignou-online-mba-review-2026', anchor: 'IGNOU Online MBA fees and review' },
       blogs: [
-        { slug: 'ignou-online-mba-review-2026', label: 'IGNOU Online MBA Review 2026: Fees, Admission and Honest Verdict' },
+        { slug: 'ignou-online-mba-review-2026', label: 'IGNOU Online MBA Fees 2026: ₹66,000 and Review' },
         { slug: 'is-ignou-fake-or-legit-2026', label: 'Is IGNOU Fake or Legit? The Real Question Is Not the One You Are Asking' },
       ],
     },
@@ -198,9 +204,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       shortName: 'SMU',
       programPage: '/universities/sikkim-manipal-university-online/mba',
       // Hub ranked 50 for this query, the blog 4.
-      keywordLink: { slug: 'smu-online-mba-review', anchor: 'Sikkim Manipal University MBA fees' },
+      keywordLink: { slug: 'smu-online-mba-review', anchor: 'SMU Online MBA fees and review' },
       blogs: [
-        { slug: 'smu-online-mba-review', label: 'SMU Online MBA Review 2026: Fees, Dual Specialisation and Verdict' },
+        { slug: 'smu-online-mba-review', label: 'SMU Online MBA Fees 2026: ₹1,20,000 and Review' },
       ],
     },
   },
@@ -209,9 +215,10 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Chandigarh University Online',
       shortName: 'CU Online',
       programPage: '/universities/chandigarh-university-online/mba',
+      keywordLink: { slug: 'chandigarh-university-online-mba-review', anchor: 'Chandigarh University Online MBA fees and review' },
       comparePage: '/compare?a=chandigarh-university-online&b=amity-university-online',
       blogs: [
-        { slug: 'chandigarh-university-online-mba-review', label: 'Chandigarh University Online MBA Fees 2026: ₹1.65L Review and Honest Verdict' },
+        { slug: 'chandigarh-university-online-mba-review', label: 'Chandigarh University Online MBA Fees 2026 and Review' },
         { slug: 'is-chandigarh-university-online-fake-or-legit-2026', label: 'Is Chandigarh University Online Fake or Legit? 2026' },
       ],
     },
@@ -229,8 +236,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Jain University Online',
       shortName: 'Jain',
       programPage: '/universities/jain-university-online/mba',
+      keywordLink: { slug: 'jain-online-mba-review-2026', anchor: 'Jain Online MBA fees and review' },
       blogs: [
-        { slug: 'jain-online-mba-review-2026', label: 'Jain Online MBA Fees 2026: ₹1.96L to ₹2.98L Review and Honest Take' },
+        { slug: 'jain-online-mba-review-2026', label: 'Jain Online MBA Fees 2026: ₹1,60,000–₹2,98,000 and Review' },
       ],
     },
   },
@@ -241,9 +249,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       programPage: '/universities/galgotias-university-online/mba',
       // Hub ranked 33 for "galgotia mba fees"; the blog ranks 4 for the
       // "galgotias" spelling. The anchor keeps the no-s spelling on purpose.
-      keywordLink: { slug: 'galgotias-online-mba-review', anchor: 'Galgotia MBA fees' },
+      keywordLink: { slug: 'galgotias-online-mba-review', anchor: 'Galgotias Online MBA fees and review' },
       blogs: [
-        { slug: 'galgotias-online-mba-review', label: 'Galgotias University Online MBA Fees 2026: ₹80,200 Review and Honest Rating' },
+        { slug: 'galgotias-online-mba-review', label: 'Galgotias Online MBA Fees 2026: ₹80,200 and Review' },
         { slug: 'is-galgotias-university-online-fake-or-legit-2026', label: 'Is Galgotias University Online Fake or Legit? 2026' },
       ],
     },
@@ -273,8 +281,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Shoolini University Online',
       shortName: 'Shoolini',
       programPage: '/universities/shoolini-university-online/mba',
+      keywordLink: { slug: 'shoolini-online-mba-review', anchor: 'Shoolini Online MBA fees and review' },
       blogs: [
-        { slug: 'shoolini-online-mba-review', label: 'Shoolini Online MBA Fees 2026: ₹1.18L Review and Honest Rating' },
+        { slug: 'shoolini-online-mba-review', label: 'Shoolini Online MBA Fees 2026 and Review' },
       ],
     },
   },
@@ -310,8 +319,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: "Vignan's Foundation for Science, Technology & Research Online",
       shortName: 'Vignan',
       programPage: '/universities/vignan-university-online/mba',
+      keywordLink: { slug: 'vignan-online-mba-review', anchor: 'Vignan Online MBA fees and review' },
       blogs: [
-        { slug: 'vignan-online-mba-review', label: 'Vignan Online MBA 2026: Fees, Syllabus, Honest Review' },
+        { slug: 'vignan-online-mba-review', label: 'Vignan Online MBA Fees 2026: ₹90,000 and Review' },
       ],
     },
   },
@@ -320,8 +330,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Dayananda Sagar University Online',
       shortName: 'DSU',
       programPage: '/universities/dayananda-sagar-university-online/mba',
+      keywordLink: { slug: 'dsu-online-mba-review', anchor: 'DSU Online MBA fees and review' },
       blogs: [
-        { slug: 'dsu-online-mba-review', label: 'DSU Online MBA Review 2026: Fees and Honest Rating' },
+        { slug: 'dsu-online-mba-review', label: 'DSU Online MBA Fees 2026: ₹1,30,000 and Review' },
       ],
     },
   },
@@ -330,8 +341,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Uttaranchal University Online',
       shortName: 'Uttaranchal',
       programPage: '/universities/uttaranchal-university-online/mba',
+      keywordLink: { slug: 'uu-doon-online-mba-review', anchor: 'Uttaranchal University Online MBA fees and review' },
       blogs: [
-        { slug: 'uu-doon-online-mba-review', label: 'Uttaranchal University Online MBA Review 2026: Fees' },
+        { slug: 'uu-doon-online-mba-review', label: 'Uttaranchal University Online MBA Fees 2026: ₹1,48,000' },
       ],
     },
   },
@@ -340,8 +352,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'ARKA JAIN University Online',
       shortName: 'ARKA JAIN',
       programPage: '/universities/arka-jain-university-online/mba',
+      keywordLink: { slug: 'arka-jain-online-mba-review', anchor: 'ARKA JAIN Online MBA fees and review' },
       blogs: [
-        { slug: 'arka-jain-online-mba-review', label: 'ARKA JAIN Online MBA Review 2026: Fees and GenAI Spec' },
+        { slug: 'arka-jain-online-mba-review', label: 'ARKA JAIN Online MBA Fees 2026: ₹1,08,500 and Review' },
       ],
     },
   },
@@ -350,8 +363,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Noida International University Online',
       shortName: 'NIU',
       programPage: '/universities/noida-international-university-online/mba',
+      keywordLink: { slug: 'noida-international-university-online-mba-review', anchor: 'NIU Online MBA fees and review' },
       blogs: [
-        { slug: 'noida-international-university-online-mba-review', label: 'NIU Online MBA Review 2026: Fees and Honest Rating' },
+        { slug: 'noida-international-university-online-mba-review', label: 'NIU Online MBA Fees 2026 and Review' },
       ],
     },
   },
@@ -360,8 +374,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Jaypee Institute of Information Technology Online',
       shortName: 'Jaypee JIIT',
       programPage: '/universities/jaypee-university-online/mba',
+      keywordLink: { slug: 'jaypee-jiit-online-mba-review', anchor: 'Jaypee JIIT Online MBA fees and review' },
       blogs: [
-        { slug: 'jaypee-jiit-online-mba-review', label: 'Jaypee JIIT Online MBA Review 2026: Fees and IT Track' },
+        { slug: 'jaypee-jiit-online-mba-review', label: 'Jaypee JIIT Online MBA Fees 2026: ₹1,75,000 and Review' },
       ],
     },
   },
@@ -370,9 +385,10 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'DDU Gorakhpur University Online',
       shortName: 'DDU Gorakhpur',
       programPage: '/universities/deen-dayal-upadhyay-gorakhpur-university-online/mba',
+      keywordLink: { slug: 'ddu-gorakhpur-online-mba-review', anchor: 'DDU Gorakhpur Online MBA fees and review' },
       verifyPage: '/verify/deen-dayal-upadhyay-gorakhpur-university-online',
       blogs: [
-        { slug: 'ddu-gorakhpur-online-mba-review', label: 'DDU Gorakhpur Online MBA Review 2026: Rs 52,500 From a NAAC A++ University' },
+        { slug: 'ddu-gorakhpur-online-mba-review', label: 'DDU Gorakhpur Online MBA Fees 2026: ₹52,500 and Review' },
         { slug: 'is-ddu-gorakhpur-online-fake-or-legit-2026', label: 'Is DDU Gorakhpur Online Fake or Legit? A NAAC A++ Degree at a Price That Makes People Doubt It' },
       ],
     },
@@ -382,9 +398,10 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Bharati Vidyapeeth Online',
       shortName: 'Bharati Vidyapeeth',
       programPage: '/universities/bharati-vidyapeeth-university-online/mba',
+      keywordLink: { slug: 'bharati-vidyapeeth-online-mba-review', anchor: 'Bharati Vidyapeeth Online MBA fees and review' },
       verifyPage: '/verify/bharati-vidyapeeth-online',
       blogs: [
-        { slug: 'bharati-vidyapeeth-online-mba-review', label: 'Bharati Vidyapeeth Online MBA Review 2026: Real Fee and the AICTE Advantage' },
+        { slug: 'bharati-vidyapeeth-online-mba-review', label: 'Bharati Vidyapeeth Online MBA Fees 2026: ₹1,76,000' },
       ],
     },
   },
@@ -425,9 +442,10 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Parul University Online',
       shortName: 'Parul',
       programPage: '/universities/parul-university-online/mba',
+      keywordLink: { slug: 'parul-online-mba-review', anchor: 'Parul Online MBA fees and review' },
       verifyPage: '/verify/parul-university-online',
       blogs: [
-        { slug: 'parul-online-mba-review', label: 'Parul University Online MBA Review 2026: Real Fee and the NIRF Category Trap' },
+        { slug: 'parul-online-mba-review', label: 'Parul Online MBA Fees 2026: ₹1,50,000 and Review' },
         { slug: 'is-parul-university-online-fake-or-legit-2026', label: 'Is Parul University Online Fake or Legit? 2026' },
       ],
     },
@@ -441,9 +459,9 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'Amrita Vishwa Vidyapeetham Online',
       shortName: 'Amrita',
       programPage: '/universities/amrita-vishwa-vidyapeetham-online/mba',
-      keywordLink: { slug: 'amrita-online-mba-review', anchor: 'Amrita online MBA' },
+      keywordLink: { slug: 'amrita-online-mba-review', anchor: 'Amrita Online MBA fees and review' },
       blogs: [
-        { slug: 'amrita-online-mba-review', label: 'Amrita Online MBA Review 2026: Is the Premium Worth It?' },
+        { slug: 'amrita-online-mba-review', label: 'Amrita Online MBA Fees 2026: ₹1,76,000–₹2,60,000 and Review' },
       ],
     },
     bba: {
