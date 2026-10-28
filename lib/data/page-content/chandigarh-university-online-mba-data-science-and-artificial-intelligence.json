@@ -106,12 +106,12 @@
       },
       {
         "question": "What career path does MBA in Data Science and AI open versus a standalone Data Science course?",
-        "answer": "A standalone Data Science course builds technical skills. This MBA builds both technical AI literacy and business management capability, opening paths that pure data science roles do not: AI Product Management, AI Strategy Consulting, Head of Data and AI, and transformation programme leadership. Employers hiring for these roles specifically look for business management credentials alongside AI technical knowledge. The NAAC A+ MBA from NIRF #19 CU adds institutional credibility that standalone certificates cannot provide."
+        "answer": "A standalone Data Science course builds technical skills. This MBA builds both technical AI literacy and business management capability, opening paths that pure data science roles do not: AI Product Management, AI Strategy Consulting, Head of Data and AI, and transformation programme leadership. Employers hiring for these roles specifically look for business management credentials alongside AI technical knowledge. The NAAC A+ MBA from NIRF University #19 CU adds institutional credibility that standalone certificates cannot provide."
       }
     ],
     "chooseAlternatives": {
       "chooseIf": [
-        "You want an MBA with GenAI, NLP, RAG, and Agentic AI explicitly in the syllabus at NIRF #19, NAAC A+.",
+        "You want an MBA with GenAI, NLP, RAG, and Agentic AI explicitly in the syllabus at NIRF University #19, NAAC A+.",
         "You want PwC-taught AI advisory and responsible AI governance content (Tier 2).",
         "You are targeting AI Product Management, AI consulting, or enterprise AI transformation roles.",
         "You prefer zero-cost EMI directly through the university."

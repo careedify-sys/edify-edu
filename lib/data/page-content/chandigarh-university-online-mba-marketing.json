@@ -111,13 +111,13 @@
     ],
     "chooseAlternatives": {
       "chooseIf": [
-        "You want a NAAC A+, NIRF #19 credential for Marketing roles at Rs 1,65,000 (Tier 1, 25% EBS).",
+        "You want a NAAC A+, NIRF University #19 credential for Marketing roles at Rs 1,65,000 (Tier 1, 25% EBS).",
         "You want industry-taught content from PwC experts (Tier 2) with Harvard and CAPM certifications.",
         "You prefer zero-cost EMI paid directly to the university with no NBFC intermediary.",
-        "You are in North India and want strong regional employer brand recognition from NIRF #19."
+        "You are in North India and want strong regional employer brand recognition from NIRF University #19."
       ],
       "consider": [
-        "You specifically need a higher NIRF overall rank - Amity (NIRF #22) or LPU (NIRF #23) are close alternatives.",
+        "You specifically need a stronger NIRF Management rank. Symbiosis (NIRF Management #11) is the closer alternative.",
         "Your budget is under Rs 1.2 lakh - LPU's Marketing MBA at a lower fee bracket may suit better.",
         "You are in South India and prefer a regionally stronger brand - Manipal or NMIMS Online carry stronger recognition in that market."
       ]

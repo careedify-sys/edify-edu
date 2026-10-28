@@ -14,6 +14,12 @@
 // Scope: app/, components/, lib/ source, excluding the unused CMS admin, tests
 // and lib/blog.ts (post content is prose and needs its own check).
 //
+// Also scans the spec hub prose in lib/data/page-content/*.json (added
+// 2026-10-28). Those files carried 905 bare "NIRF #19" mentions across 270 of
+// 431 files, written by hand or by generators the template gate never saw. A
+// literal "NIRF #N" must carry a category next to it: "NIRF Management #19",
+// "NIRF #19 University", "NIRF #19 in Management".
+//
 // Run: npx tsx scripts/check-nirf-category.mts
 // Self-test: npx tsx scripts/check-nirf-category.mts --self-test
 import { readdirSync, readFileSync, statSync } from 'fs'
@@ -56,6 +62,23 @@ export function findBare(src: string, rel = ''): string[] {
   return hits
 }
 
+// Prose form for page-content JSON: a literal rank, not a template expression.
+// "NIRF Management #19" never matches PROSE because a word sits between NIRF and #.
+const PROSE_CATS = 'University|Management|Overall|Engineering|Pharmacy|Medical|Dental|Law|Architecture|Research|Agriculture|Innovation|Mgmt|Univ'
+const PROSE = /NIRF\s*(?:rank(?:ing)?\s*)?#\s*\d+/gi
+const PROSE_AFTER = new RegExp(`^\\s*(\\(\\s*)?(${PROSE_CATS}|in (the )?(${PROSE_CATS}))`, 'i')
+const PROSE_BEFORE = new RegExp(`(${PROSE_CATS})\\s*(rank(ing)?)?\\s*[:(]?\\s*$`, 'i')
+
+export function findBareProse(src: string): string[] {
+  const hits: string[] = []
+  for (const m of src.matchAll(PROSE)) {
+    const i = m.index ?? 0, j = i + m[0].length
+    if (PROSE_AFTER.test(src.slice(j, j + 40)) || PROSE_BEFORE.test(src.slice(Math.max(0, i - 30), i))) continue
+    hits.push(src.slice(Math.max(0, i - 30), j + 20).replace(/\s+/g, ' '))
+  }
+  return hits
+}
+
 function walk(dir: string, out: string[] = []): string[] {
   for (const name of readdirSync(dir)) {
     const p = join(dir, name)
@@ -75,7 +98,15 @@ if (process.argv.includes('--self-test')) {
     console.error(`check-nirf-category self-test FAILED: bad=${b.length} (want 3), good=${g.length} (want 0)`, b, g)
     process.exit(1)
   }
-  console.log('check-nirf-category self-test: OK (3 of 3 bare ranks caught, 0 false positives)')
+  // The first two bad prose cases are the exact forms the Chitkara marketing hub shipped.
+  const badProse = '"CU is Rs 35,000 cheaper with NAAC A+ and NIRF #19. CU also", "holds NIRF #78 ranking, and", "NIRF rank #52 provides", "| NIRF #101 |"'
+  const goodProse = '"NIRF Management #19", "NIRF #78 University 2025", "NIRF #12 Medical", "NIRF #41 (University)", "NIRF #49 in Management", "Management rank: NIRF #24"'
+  const bp = findBareProse(badProse), gp = findBareProse(goodProse)
+  if (bp.length !== 4 || gp.length !== 0) {
+    console.error(`check-nirf-category self-test FAILED (prose): bad=${bp.length} (want 4), good=${gp.length} (want 0)`, bp, gp)
+    process.exit(1)
+  }
+  console.log('check-nirf-category self-test: OK (3 of 3 templated and 4 of 4 prose bare ranks caught, 0 false positives)')
   process.exit(0)
 }
 
@@ -91,10 +122,22 @@ for (const root of ROOTS) {
     }
   }
 }
-if (failures.length) {
-  console.error(`check-nirf-category: ${failures.length} NIRF rank(s) rendered without a category:`)
-  console.error(failures.join('\n'))
-  console.error('Use nirfForProgramme(u, programme) or formatNirfBadge(u, ...) from lib/data-slim.ts.')
+const PAGE_CONTENT = join('lib', 'data', 'page-content')
+const proseFailures: string[] = []
+for (const name of readdirSync(PAGE_CONTENT).filter(n => n.endsWith('.json')).sort()) {
+  for (const hit of findBareProse(readFileSync(join(PAGE_CONTENT, name), 'utf8'))) proseFailures.push(`  ${PAGE_CONTENT.replace(/\\/g, '/')}/${name}  ...${hit}...`)
+}
+if (failures.length || proseFailures.length) {
+  if (failures.length) {
+    console.error(`check-nirf-category: ${failures.length} NIRF rank(s) rendered without a category:`)
+    console.error(failures.join('\n'))
+    console.error('Use nirfForProgramme(u, programme) or formatNirfBadge(u, ...) from lib/data-slim.ts.')
+  }
+  if (proseFailures.length) {
+    console.error(`check-nirf-category: ${proseFailures.length} bare "NIRF #N" in spec hub content:`)
+    console.error(proseFailures.join('\n'))
+    console.error('Name the category ("NIRF Management #19") with the rank from Supabase, joined via scripts/lib/supabase-uni-map.mjs. If no category matches, drop the rank.')
+  }
   process.exit(1)
 }
-console.log('check-nirf-category: OK (every templated NIRF rank names its category)')
+console.log('check-nirf-category: OK (every templated NIRF rank and every page-content NIRF rank names its category)')
