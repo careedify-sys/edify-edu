@@ -405,7 +405,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       keywordLink: { slug: 'bharati-vidyapeeth-online-mba-review', anchor: 'Bharati Vidyapeeth Online MBA fees and review' },
       verifyPage: '/verify/bharati-vidyapeeth-online',
       blogs: [
-        { slug: 'bharati-vidyapeeth-online-mba-review', label: 'Bharati Vidyapeeth Online MBA Review 2026: Real Fee and the AICTE Advantage' },
+        { slug: 'bharati-vidyapeeth-online-mba-review', label: 'Bharati Vidyapeeth Online MBA Fees 2026: ₹1,78,000' },
       ],
     },
   },

@@ -4864,7 +4864,13 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'bharati-vidyapeeth-university-online',
-    programFees: { mba: { fee: 176000 } },
+    // MBA verified by Rishi 2026-08-08: ₹1,78,000 total (₹1,76,000 tuition and
+    // exam plus ₹1,000 registration and ₹1,000 admission), ₹10,000 off for a
+    // one-shot full payment, so ₹1,68,000 paid in full.
+    officialUrl: 'https://bharatividyapeethonline.com',
+    feeVerifiedOn: '2026-08-08',
+    programFees: { mba: { fee: 168000, feeMax: 178000 } },
+    feeBreakdown: { mba: { list: 178000, listLabel: 'total', net: { min: 168000, max: 168000, label: 'paid in full upfront' }, source: 'Rishi, verified 2026-08-08' } },
     logo: '/logos/university_logos/bvdu-logo.svg',
     name: 'Bharati Vidyapeeth (Deemed to be University) Online',
     abbr: 'BVUO',
@@ -4879,7 +4885,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     govtRecognised: true,
     psuEligible: true,
     feeMin: 129000,
-    feeMax: 176000,
+    feeMax: 178000,
     emiFrom: 5375,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -4896,7 +4902,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         // plus exam fees. Registration ₹1,000 and admission ₹1,000 are both
         // non-refundable and charged separately, so the all-in figure is
         // ₹1,78,000. Backlog exams are ₹400 per subject. Confirmed by founder.
-        fees: '₹1,76,000',
+        // 2026-10-28: fees now carries the ₹1,78,000 total (Rishi, 8 Aug).
+        fees: '₹1,78,000',
         duration: '2 Yrs',
         roles: ['Management Trainee', 'HR Executive', 'Marketing Executive', 'Operations Analyst'],
         avgSalary: '₹5L – ₹14L per annum',

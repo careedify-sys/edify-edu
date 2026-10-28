@@ -2,10 +2,14 @@
 
 ## 2026-10-28 · Post-merge title fee fixes (on 7d5b96b)
 
-- **Bharati Vidyapeeth review:** title and seoTitle back to their pre-merge text, h1Title removed, hub label back to a
-  no-fee review label. Held until Rishi says which figure is current. lib/data.ts carries ₹1,76,000 (tuition plus
-  exam, per the 23 Aug comment) and the comment gives ₹1,78,000 all-in with ₹2,000 registration and admission. Rishi's
-  8 Aug figures are ₹1,78,000 total and ₹1,68,000 after a ₹10,000 full-payment discount; the discount is not in the record.
+- **Bharati Vidyapeeth MBA, confirmed by Rishi 28 Oct:** ₹1,78,000 total is current (₹1,76,000 tuition and exam plus ₹1,000
+  registration and ₹1,000 admission), ₹1,68,000 paid in full (₹10,000 one-shot discount, verified 8 Aug). Record: feeBreakdown
+  list 178000 / net 168000 "paid in full upfront", programFees 168000-178000, feeMax and pd.fees 1,78,000, officialUrl
+  bharatividyapeethonline.com, feeVerifiedOn 2026-08-08; data-slim and fees-hub-data.json mirrored. Review blog title
+  "Bharati Vidyapeeth Online MBA Fees 2026: ₹1,78,000", H1 and meta carry ₹1,68,000, direct-answer block added, FAQ
+  gains the discount. Three posts that called ₹1,76,000 the total now say ₹1,78,000 (event-management FAQ and prose,
+  hospitality table, Maharashtra table). Lines saying ₹1,76,000 tuition plus exam stay, because that is accurate.
+  Not touched: emiFrom 5375 (origin unknown) and per-semester cells (₹40,000 / ₹44,000) in the event-management tables.
 - **Symbiosis review:** title and H1 now show the ₹3,70,000 sticker. ₹3,15,000 is the price after the ₹55,000
   scholarship, which needs two years' work experience (SSODL fee table); the meta description now says so.
 - **Shoolini review:** title and H1 back to "Shoolini Online MBA Review 2026: Pharma and Biotech". The hub keeps
