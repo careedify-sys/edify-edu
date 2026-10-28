@@ -219,3 +219,4 @@ Decision needed from Rishi: which single URL owns "{uni} online mba fees" (hub o
 
 ## Next gap after the review decision: portal admission guides (parked 28 Oct)
 Admission intent only, no login pages: lpu online admission 590, amity online admission 260, amity online portal 210 (only the admission side), cu online admission 210, nmims online portal 170 (admission side) ≈ 1,400/mo. Read each official admission page first; same pattern as the Amity/LPU portal posts. Do not target "amity online login" (33,100) or "srm online portal" (1,900).
+- 2026-10-28 · Rishi decided: the review blog owns "{uni} online mba" and "{uni} online mba fees"; hubs own BBA/BCA/MCA fee searches. Applied to 22 MBA pairs on branch seo/review-blog-owns-mba-fees (not merged). See FIX-LOG 2026-10-28. Open for Rishi: DY Patil review mapping, Chandigarh and Shoolini review fee bodies.
