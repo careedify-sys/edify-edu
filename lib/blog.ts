@@ -5390,7 +5390,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <thead><tr><th>University</th><th>NAAC plus NIRF</th><th>Fees (2 years)</th><th>Best For (Career Stage)</th></tr></thead>
   <tbody>
     <tr><td>NMIMS Global Online</td><td>NAAC A plus plus, NIRF Mgmt 24</td><td>Rs 1.96-2.20 lakh</td><td>BFSI plus consulting upgrade at 5-10 yrs experience</td></tr>
-    <tr><td><a href="/blog/jain-online-mba-review-2026" class="ilink">Jain online MBA fees breakdown</a></td><td>NAAC A plus plus, NIRF 73</td><td>Rs 1.50 lakh</td><td>Tech plus FinTech career switch</td></tr>
+    <tr><td><a href="/blog/jain-online-mba-review-2026" class="ilink">Jain online MBA fees breakdown</a></td><td>NAAC A plus plus, NIRF 73</td><td>Rs 1.60-2.98 lakh</td><td>Tech plus FinTech career switch</td></tr>
     <tr><td>Manipal University Jaipur Online</td><td>NAAC A plus</td><td>Rs 1.56-1.84 lakh</td><td>HR, Operations, Marketing functional growth</td></tr>
     <tr><td>Amity University Online</td><td>NAAC A plus</td><td>Rs 2.07-2.25 lakh</td><td>19-plus specs, diverse career options</td></tr>
     <tr><td>Symbiosis SCDL (Pune)</td><td>NAAC A plus</td><td>Rs 1.10-1.65 lakh</td><td>Pune plus Mumbai BFSI plus HR</td></tr>
@@ -5997,7 +5997,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <tbody>
     <tr><td>IGNOU MBAOL</td><td>Rs 66,000</td><td>NAAC A plus plus, NIRF Open Uni 1</td><td>Limited</td><td>Govt employees, budget learners</td></tr>
     <tr><td>NMIMS Online MBA</td><td>Rs 1.96-2.20 lakh</td><td>NAAC A plus plus, NIRF Mgmt 24</td><td>Strong career service</td><td>BFSI plus consulting upgrade</td></tr>
-    <tr><td>JAIN Online MBA</td><td>Rs 1.50 lakh</td><td>NAAC A plus plus, NIRF University 73</td><td>Active placement support</td><td>Tech plus FinTech</td></tr>
+    <tr><td>JAIN Online MBA</td><td>Rs 1.60-2.98 lakh</td><td>NAAC A plus plus, NIRF University 73</td><td>Active placement support</td><td>Tech plus FinTech</td></tr>
     <tr><td>Manipal University Jaipur Online</td><td>Rs 1.56-1.84 lakh</td><td>NAAC A plus</td><td>MeritShine career service</td><td>Working professional upgrade</td></tr>
     <tr><td>Amity University Online</td><td>Rs 2.07-2.25 lakh</td><td>NAAC A plus</td><td>Strong career service</td><td>HR, Marketing, IB</td></tr>
     <tr><td>Symbiosis SCDL</td><td>Rs 1.65 lakh</td><td>NAAC A plus</td><td>Active placement</td><td>Pune plus Mumbai BFSI</td></tr>
@@ -6396,7 +6396,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <tbody>
     <tr><td>MAHE Online MBA</td><td>NAAC A plus plus, NIRF University 3, IoE</td><td>Rs 2.92 lakh</td><td>Premier brand, work exp required</td></tr>
     <tr><td>NMIMS Online MBA</td><td>NAAC A plus plus, NIRF Mgmt 24</td><td>Rs 1.96-2.20 lakh</td><td>Strong BFSI plus consulting brand</td></tr>
-    <tr><td>JAIN Online MBA</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.50 lakh</td><td>Cloud, AI, FinTech specs</td></tr>
+    <tr><td>JAIN Online MBA</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.60-2.98 lakh</td><td>Cloud, AI, FinTech specs</td></tr>
     <tr><td>MUJ Online MBA</td><td>NAAC A plus</td><td>Rs 1.56-1.84 lakh</td><td>HR, Operations, Marketing</td></tr>
     <tr><td>Amity Online MBA</td><td>NAAC A plus</td><td>Rs 2.07-2.25 lakh</td><td>19-plus specs, IBM partnership</td></tr>
     <tr><td>DY Patil Pune Online</td><td>NAAC A plus plus, NIRF Uni 41</td><td>Rs 1.89 lakh</td><td>WES plus edX Harvard MIT</td></tr>
@@ -6418,7 +6418,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>MAHE Online MBA Honest Gaps 2026</h2>
 
 <ul>
-  <li><strong>Highest fees among major online MBAs:</strong> Rs 2.92 lakh vs Amity Rs 2.07-2.25 lakh vs JAIN Rs 1.50 lakh. Justify by brand pull plus IoE status.</li>
+  <li><strong>Highest fees among major online MBAs:</strong> Rs 2.92 lakh vs Amity Rs 2.07-2.25 lakh vs JAIN Rs 1.60-2.98 lakh. Justify by brand pull plus IoE status.</li>
   <li><strong>1-year work experience required:</strong> Fresh graduates not eligible. Plan accordingly.</li>
   <li><strong>NIRF Management rank below NMIMS:</strong> MAHE is NIRF University 3 plus Management 39. NMIMS is Management 24. NMIMS stronger for tier-1 management hiring.</li>
   <li><strong>Limited specialisations (9 vs Amity 19):</strong> Fewer choices for niche career tracks.</li>
@@ -8140,7 +8140,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>If you are looking for a credible online MBA that does not require 5 years of experience and costs a fraction of IIM fees, these are the strongest options:</p>
 <h3>NMIMS Online MBA: Rs 1.96 to 2.20 lakh</h3>
 <p>NMIMS (Narsee Monjee Institute) is NAAC A plus plus accredited and NIRF Management ranked 24. Their online MBA is UGC-DEB approved, widely accepted by corporates, and available in Finance, Marketing, HR, Operations, Data Science, and Banking. Considered the closest to a premium brand in the online MBA space.</p>
-<h3>JAIN Online MBA: Rs 1.50 lakh</h3>
+<h3>JAIN Online MBA: Rs 1.60-2.98 lakh</h3>
 <p>JAIN University (Deemed) is NAAC A plus plus accredited and NIRF University ranked 73. Strong specialisation menu including FinTech, Data Science, and Marketing. Best value plus brand combination at Rs 1.50 lakh.</p>
 <h3>Symbiosis SCDL MBA: Rs 1.10 to 1.65 lakh</h3>
 <p>Symbiosis International University is NAAC A plus and one of the most cost-effective online MBAs in India. Strong brand recognition, affordable fees, and fully valid for PSU and government recruitment.</p>
@@ -11071,7 +11071,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <tbody>
     <tr><td>NMIMS Online (Mumbai)</td><td>NAAC A plus plus, NIRF Mgmt 24</td><td>Rs 2.10-2.40 lakh</td><td>Rs 7-15 LPA</td></tr>
     <tr><td>NMIMS Mumbai Campus (Full-Time MBA)</td><td>Same as above</td><td>Rs 8-12 lakh</td><td>Rs 18-28 LPA</td></tr>
-    <tr><td>JAIN Online (Bengaluru)</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.50 lakh</td><td>Rs 5-10 LPA</td></tr>
+    <tr><td>JAIN Online (Bengaluru)</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.60-2.98 lakh</td><td>Rs 5-10 LPA</td></tr>
     <tr><td>Amity University Online</td><td>NAAC A plus</td><td>Rs 1.99 lakh</td><td>Rs 5-10 LPA</td></tr>
     <tr><td>Manipal University Jaipur Online</td><td>NAAC A plus</td><td>Rs 1.56-1.84 lakh</td><td>Rs 5-10 LPA</td></tr>
     <tr><td>Symbiosis SCDL (Pune)</td><td>NAAC A plus plus</td><td>Rs 1.65 lakh</td><td>Rs 5-9 LPA</td></tr>
@@ -12123,7 +12123,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>Symbiosis SCDL PGDBA</td><td>NAAC A plus</td><td>Rs 1.10-1.65 lakh</td><td>Flexible scheduling, PGDBA mode</td></tr>
     <tr><td>NMIMS Online MBA</td><td>NAAC A plus plus, NIRF Mgmt 24</td><td>Rs 1.96-2.20 lakh</td><td>Premium brand for Mumbai-Pune corridor BFSI</td></tr>
     <tr><td>Amity University Online</td><td>NAAC A plus</td><td>Rs 2.07-2.25 lakh</td><td>19-plus specialisations, IBM partnership</td></tr>
-    <tr><td>JAIN Online (Bangalore)</td><td>NAAC A plus plus, NIRF 73</td><td>Rs 1.50 lakh</td><td>FinTech plus Data Science specs</td></tr>
+    <tr><td>JAIN Online (Bangalore)</td><td>NAAC A plus plus, NIRF 73</td><td>Rs 1.60-2.98 lakh</td><td>FinTech plus Data Science specs</td></tr>
     <tr><td>MUJ Online MBA</td><td>NAAC A plus</td><td>Rs 1.56-1.84 lakh</td><td>HR, Marketing, Operations</td></tr>
     <tr><td><a href="/universities/bharati-vidyapeeth-university-online">Bharati Vidyapeeth</a> Online (Pune)</td><td>NAAC A plus</td><td>Rs 1.20-1.50 lakh</td><td>Pune local brand recognition</td></tr>
   </tbody>
@@ -12438,7 +12438,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>IGNOU MBAOL (regional centre Kerala)</td><td>Online (central uni)</td><td>Rs 66,000</td><td>Pan-India and PSU eligibility</td></tr>
     <tr><td>Amrita Online MBA (Coimbatore-Kerala)</td><td>Online (NAAC A++)</td><td>Rs 1.70 lakh</td><td>Strong brand and Kerala alumni network</td></tr>
     <tr><td>NMIMS Online MBA</td><td>Online (NAAC A++)</td><td>Rs 1.96-2.20 lakh</td><td>Banking, consulting and Kerala IT</td></tr>
-    <tr><td>JAIN Online MBA</td><td>Online (NAAC A++)</td><td>Rs 1.50 lakh</td><td>Cloud, AI and FinTech for Kerala tech staff</td></tr>
+    <tr><td>JAIN Online MBA</td><td>Online (NAAC A++)</td><td>Rs 1.60-2.98 lakh</td><td>Cloud, AI and FinTech for Kerala tech staff</td></tr>
     <tr><td>Amity Online MBA</td><td>Online (NAAC A+)</td><td>Rs 2.07-2.25 lakh</td><td>19+ specialisations, known in North and South</td></tr>
   </tbody>
 </table>
@@ -12890,7 +12890,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <thead><tr><th>University</th><th>NAAC / NIRF</th><th>Fees</th><th>USP for Engineers</th></tr></thead>
   <tbody>
     <tr><td>NMIMS Global Online MBA Data Science</td><td>NAAC A plus plus, NIRF 24</td><td>Rs 1.96-2.20 lakh</td><td>Strongest tech analytics curriculum</td></tr>
-    <tr><td>JAIN Online MBA AI plus FinTech</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.50 lakh</td><td>Cloud plus AI specialisations</td></tr>
+    <tr><td>JAIN Online MBA AI plus FinTech</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.60-2.98 lakh</td><td>Cloud plus AI specialisations</td></tr>
     <tr><td>Chandigarh University MBA Data Science and AI</td><td>NAAC A plus</td><td>Rs 1.50 lakh</td><td>AWS plus Azure certifications bundled</td></tr>
     <tr><td>Amity Online MBA IT Management</td><td>NAAC A plus</td><td>Rs 2.07-2.25 lakh</td><td>19-plus specs, IBM SkillsBuild partnership</td></tr>
     <tr><td>Manipal University Jaipur Online MBA Data Science</td><td>NAAC A plus</td><td>Rs 1.56-1.84 lakh</td><td>Tableau plus Power BI projects</td></tr>
@@ -13327,7 +13327,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>NMIMS Global Online (Mumbai)</td><td>NAAC A plus plus, NIRF Management 24</td><td>Rs 1.96 to 2.20 lakh</td><td>Strong HR analytics curriculum, alumni at HUL, ICICI HR functions</td></tr>
     <tr><td>Manipal University Jaipur Online</td><td>NAAC A plus</td><td>Rs 1.56 to 1.84 lakh</td><td>HR Analytics specialisation, MeritShine career service</td></tr>
     <tr><td>Amity University Online</td><td>NAAC A plus</td><td>Rs 2.07-2.25 lakh</td><td>Recognised HR alumni network, corporate HR placement support</td></tr>
-    <tr><td>JAIN Online (Bangalore)</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.50 lakh</td><td>HR plus Talent Analytics specialisation, Bengaluru SaaS network</td></tr>
+    <tr><td>JAIN Online (Bangalore)</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.60-2.98 lakh</td><td>HR plus Talent Analytics specialisation, Bengaluru SaaS network</td></tr>
     <tr><td>Chandigarh University Online</td><td>NAAC A plus</td><td>Rs 1.50 lakh</td><td>Harvard plus PwC HR certifications bundled, North India placement</td></tr>
     <tr><td>Symbiosis SCDL (Pune)</td><td>NAAC A plus</td><td>Rs 1.10 to 1.65 lakh</td><td>Pune corporate placement network, strong industrial relations focus</td></tr>
   </tbody>
@@ -14380,7 +14380,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>NMIMS Global Online (Mumbai)</td><td>NAAC A plus plus, NIRF Management 24</td><td>Rs 2.10 to 2.40 lakh</td><td>Strongest brand for analytics in BFSI, Python plus R curriculum, IBM SkillsBuild access</td></tr>
     <tr><td>Manipal University Jaipur Online</td><td>NAAC A plus</td><td>Rs 1.56 to 1.84 lakh</td><td>Tableau plus Power BI projects, MeritShine career service, industry mentor pairing</td></tr>
     <tr><td>Amity University Online</td><td>NAAC A plus</td><td>Rs 1.99 lakh</td><td>Coursera plus IBM partnership certifications, EMI options from Rs 5,000 per month</td></tr>
-    <tr><td>JAIN Online (Deemed)</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.50 lakh</td><td>Bengaluru tech network, weekend live classes, dedicated capstone</td></tr>
+    <tr><td>JAIN Online (Deemed)</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.60-2.98 lakh</td><td>Bengaluru tech network, weekend live classes, dedicated capstone</td></tr>
     <tr><td>Chandigarh University Online</td><td>NAAC A plus</td><td>Rs 1.50 lakh</td><td>Harvard ManageMentor plus PwC certifications bundled, Career Acceleration Programme</td></tr>
     <tr><td>UPES Online (Dehradun)</td><td>NAAC A plus</td><td>Rs 1.66 lakh</td><td>Energy and Sustainability Analytics electives unique to UPES</td></tr>
   </tbody>
@@ -15731,7 +15731,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <tbody>
     <tr><td>NMIMS Global Online (Mumbai)</td><td>NAAC A plus plus, NIRF Management 24</td><td>Rs 1.96 to 2.20 lakh</td><td>Finance, Banking and Capital Markets</td></tr>
     <tr><td>Manipal University Jaipur Online</td><td>NAAC A plus</td><td>Rs 1.56 to 1.84 lakh</td><td>Finance, Operations, Marketing</td></tr>
-    <tr><td>JAIN Online (Bengaluru)</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.50 lakh</td><td>Finance, FinTech, Business Analytics</td></tr>
+    <tr><td>JAIN Online (Bengaluru)</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.60-2.98 lakh</td><td>Finance, FinTech, Business Analytics</td></tr>
     <tr><td>Amity University Online</td><td>NAAC A plus</td><td>Rs 2.07-2.25 lakh</td><td>Finance, Marketing, HR, IB</td></tr>
     <tr><td>Symbiosis SCDL (Pune)</td><td>NAAC A plus</td><td>Rs 1.10 to 1.65 lakh</td><td>Finance, Banking, HR</td></tr>
     <tr><td>Chandigarh University Online</td><td>NAAC A plus</td><td>Rs 1.50 lakh</td><td>Data Science plus AI, FinTech, Marketing</td></tr>
@@ -24223,7 +24223,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <tbody>
     <tr><td>Manipal University Jaipur Online</td><td>A plus</td><td>Rs 1.56 to 1.84 lakh</td><td>Strong AI plus ML specialisation</td></tr>
     <tr><td>Amity University Online</td><td>A plus</td><td>Rs 1.99 lakh</td><td>Widest specialisations, IBM partnership</td></tr>
-    <tr><td>JAIN Online (Bengaluru)</td><td>A plus plus, NIRF University 73</td><td>Rs 1.50 lakh</td><td>Cloud plus Data Science specs</td></tr>
+    <tr><td>JAIN Online (Bengaluru)</td><td>A plus plus, NIRF University 73</td><td>Rs 1.60-2.98 lakh</td><td>Cloud plus Data Science specs</td></tr>
     <tr><td>Chandigarh University Online</td><td>A plus</td><td>Rs 1.50 lakh</td><td>AWS plus Azure plus Cybersecurity bundles</td></tr>
     <tr><td>LPU Online</td><td>A plus plus</td><td>Rs 1.45 lakh</td><td>Largest tech alumni network</td></tr>
     <tr><td>Sikkim Manipal Online</td><td>A plus</td><td>Rs 1.10 lakh</td><td>Affordable Manipal brand</td></tr>
@@ -29608,7 +29608,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>DY Patil Navi Mumbai Online</td><td>NAAC A plus plus (3.59), NIRF Uni 91</td><td>Rs 1,75,000</td><td>Different university plus brand</td></tr>
     <tr><td>NMIMS Online MBA</td><td>NAAC A plus plus, NIRF Mgmt 24</td><td>Rs 1.96L to Rs 2.20L</td><td>Strongest BFSI plus Mumbai brand</td></tr>
     <tr><td>Amity Online MBA</td><td>NAAC A plus</td><td>Rs 2.07-2.25 lakh</td><td>14 specialisations</td></tr>
-    <tr><td>JAIN Online MBA</td><td>NAAC A plus plus, NIRF Uni 73</td><td>Rs 1.50 lakh</td><td>Cloud plus AI plus FinTech specs</td></tr>
+    <tr><td>JAIN Online MBA</td><td>NAAC A plus plus, NIRF Uni 73</td><td>Rs 1.60-2.98 lakh</td><td>Cloud plus AI plus FinTech specs</td></tr>
     <tr><td>Manipal University Jaipur Online</td><td>NAAC A plus</td><td>Rs 1.56-1.84 lakh</td><td>HR, Marketing, Operations</td></tr>
     <tr><td>Chandigarh University Online</td><td>NAAC A plus</td><td>Rs 1.65 lakh</td><td>Harvard plus PwC plus PMI bundle</td></tr>
   </tbody>
@@ -29930,7 +29930,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <tbody>
     <tr><td>Chandigarh University Online</td><td>NAAC A plus, NIRF University 25</td><td>Rs 1.65 lakh</td><td>Harvard plus PwC plus PMI bundle, 25-plus specs</td></tr>
     <tr><td>NMIMS Online MBA</td><td>NAAC A plus plus, NIRF Mgmt 24</td><td>Rs 1.96-2.20 lakh</td><td>BFSI plus consulting brand pull</td></tr>
-    <tr><td>JAIN Online MBA</td><td>NAAC A plus plus, NIRF Uni 73</td><td>Rs 1.50 lakh</td><td>Bengaluru ecosystem plus AI plus FinTech</td></tr>
+    <tr><td>JAIN Online MBA</td><td>NAAC A plus plus, NIRF Uni 73</td><td>Rs 1.60-2.98 lakh</td><td>Bengaluru ecosystem plus AI plus FinTech</td></tr>
     <tr><td>Amity Online MBA</td><td>NAAC A plus</td><td>Rs 2.07-2.25 lakh</td><td>14 specialisations plus IBM partnership</td></tr>
     <tr><td>Manipal University Jaipur Online</td><td>NAAC A plus</td><td>Rs 1.56-1.84 lakh</td><td>HR plus Operations plus MeritShine</td></tr>
     <tr><td>DY Patil Pune Online</td><td>NAAC A plus plus, NIRF Uni 41</td><td>Rs 1.89 lakh</td><td>WES plus edX Harvard MIT</td></tr>
