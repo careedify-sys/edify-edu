@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-10-28",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 2330,
+  "totalUnverified": 2325,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 0,
@@ -100,7 +100,7 @@
     "smu-online-mba-review": 9,
     "uu-doon-online-mba-review": 7,
     "galgotias-online-mba-review": 13,
-    "arka-jain-online-mba-review": 19,
+    "arka-jain-online-mba-review": 14,
     "noida-international-university-online-mba-review": 14,
     "shoolini-online-mba-review": 12,
     "dy-patil-online-mba-review": 21,
