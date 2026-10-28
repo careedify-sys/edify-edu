@@ -1,5 +1,22 @@
 # Fix log
 
+## 2026-10-29 · Citation readiness: entity-linked schema, stale NMIMS/Amity fees, EEAT appendices merged
+
+- **Why:** the brief was to make the site the source AI engines and Google cite. Crawler access was already fine (robots.txt
+  allows GPTBot, OAI-SearchBot, ChatGPT-User, PerplexityBot, ClaudeBot, Google-Extended; each gets 200 at the edge), and
+  llms.txt is deliberately not expanded (see the 28 Sep entry). What remained were attribution and accuracy.
+- **Entity schema:** blog, guide, best-MBA, online-MCA and about pages declared Rishi Kumar as a fresh unlinked Person with a
+  different job title per template. All now carry @id #rishi-kumar and publisher @id #organization, the entities
+  app/layout.tsx declares, so citations accrue to one author and one publisher.
+- **Stale competitor fees:** Amity at Rs 1,99,000 / 1.99 lakh and NMIMS at Rs 1,76,500, Rs 1,75,000-2,15,000 or Rs 2.10-2.40 lakh
+  appeared in 27 posts, against lib/data.ts (Amity Rs 2,07,000-2,25,000, NMIMS Rs 1,96,000-2,20,000) and the two
+  universities' own review titles. 87 replacements, each checked to be the Amity or NMIMS row. A site that quotes a
+  competitor fee 10-25% off is the one an answer engine stops citing.
+- **EEAT appendices:** branch claude/frosty-greider-fa578e merged (23 templated appendices replaced; see its own entries).
+  Only conflict: data/blog-fee-baseline.json, resolved as the per-slug max and re-ratcheted by the gate.
+- **Result:** fee gate unverified count 2340 at the start of 28 Oct, 2221 now. JAIN appears as Rs 1.50 lakh in several
+  comparison tables against Rs 1,60,000-2,98,000 in lib/data.ts; not changed yet.
+
 ## 2026-10-29 · Spec content JSON: NIRF branch merged, repeated boilerplate in plain words
 
 - **Why:** spec hubs are the bulk of the "low readability" rows. Their copy is 470k words across 431 files in
