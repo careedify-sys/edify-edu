@@ -1508,6 +1508,12 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   {
     id: 'galgotias-university-online',
     shortName: 'Galgotias', // uses "Galgotias" in its own domain galgotias.edu.in
+    // Linked from galgotiasuniversity.edu.in (checked 2026-10-28). Not the
+    // galgotiasuniversityonline.com lookalike. MBA total ₹80,200 verified by
+    // Rishi 2026-08-07; the portal's MBA page printed the same total on
+    // 2026-10-28. The date covers the MBA fee: MCA stays on DRIFT_PAIRS.
+    officialUrl: 'https://galgotiasonline.edu.in',
+    feeVerifiedOn: '2026-08-07',
     programFees: { bba: { fee: 77200 }, bca: { fee: 83200 }, mca: { fee: 74000 } }, // Sprint 2 verified 2026-08-04: BBA 77200 (yearly tuition 21000 + reg 1200 + exam 12000). BCA all-in: 83200 (yearly tuition 23000 + reg 1200 + exam 12000)
     logo: '/logos/university_logos/galgotias-university-logo.svg',
     name: 'Galgotias University Online',
@@ -8900,6 +8906,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   {
     id: 'ignou-online',
     uniType: 'open',
+    // July 2026 session fees: MBAOL Rs 16,000 per semester (Rs 18,000 in
+    // semester 3), read on this portal 2026-10-27 (audits/FIX-LOG.md). The date
+    // covers the MBA fee: BCA and MCA stay on DRIFT_PAIRS.
+    officialUrl: 'https://ignouiop.samarth.edu.in',
+    feeVerifiedOn: '2026-10-27',
     programFees: { bca: { fee: 49800 }, mca: { fee: 50800 } },
     logo: '/logos/university_logos/ignou-logo.svg',
     name: 'Indira Gandhi National Open University (IGNOU) Online',

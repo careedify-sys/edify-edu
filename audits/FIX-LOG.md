@@ -1,5 +1,24 @@
 # Fix log
 
+## 2026-10-28 · Post-merge title fee fixes (on 7d5b96b)
+
+- **Bharati Vidyapeeth review:** title and seoTitle back to their pre-merge text, h1Title removed, hub label back to a
+  no-fee review label. Held until Rishi says which figure is current. lib/data.ts carries ₹1,76,000 (tuition plus
+  exam, per the 23 Aug comment) and the comment gives ₹1,78,000 all-in with ₹2,000 registration and admission. Rishi's
+  8 Aug figures are ₹1,78,000 total and ₹1,68,000 after a ₹10,000 full-payment discount; the discount is not in the record.
+- **Symbiosis review:** title and H1 now show the ₹3,70,000 sticker. ₹3,15,000 is the price after the ₹55,000
+  scholarship, which needs two years' work experience (SSODL fee table); the meta description now says so.
+- **Shoolini review:** title and H1 back to "Shoolini Online MBA Review 2026: Pharma and Biotech". The hub keeps
+  "shoolini university mba fees". The pre-merge `title` field said "₹1.18L", which the body contradicts, so it was
+  not restored.
+- **Galgotias:** officialUrl https://galgotiasonline.edu.in (linked from galgotiasuniversity.edu.in, not the
+  galgotiasuniversityonline.com lookalike), feeVerifiedOn 2026-08-07 (Rishi). Its MBA page printed the same ₹80,200
+  total on 28 Oct.
+- **IGNOU:** officialUrl https://ignouiop.samarth.edu.in, feeVerifiedOn 2026-10-27, the date the July 2026 session
+  MBA fee was read there (d92f9d7). That commit changed blog posts only; the record has said ₹66,000 since 79e26cc.
+- feeVerifiedOn is record-wide, but for Galgotias and IGNOU it covers the MBA fee only: Galgotias MCA and IGNOU
+  BCA/MCA stay on DRIFT_PAIRS. Nothing renders from the field; only check-official-urls reads it.
+
 ## 2026-10-28 · Review blog owns "{uni} online MBA (fees)"; MBA hubs de-targeted; MBA route collision fixed
 
 Rishi's call, from Semrush tracking (27 Oct, mobile: blogs 4-10, hubs 33-54) and Aug GSC (blog beat hub in 10/10 pairs).
