@@ -7,7 +7,7 @@ import { nirfForProgramme } from '@/lib/data-slim'
 import UniversityPageClient from '@/components/UniversityPageClient'
 import { getResolvableProgrammes, getVerifyPage, resolveSpecHref } from '@/lib/seo/safe-internal-links'
 import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
-import { getDisplayFee } from '@/lib/fees'
+import { getExactFee, formatExactFee, formatExactFeeShort } from '@/lib/fees'
 import { getProgramSchemaOffer } from '@/lib/seo/program-schema'
 import { pageKeywords } from '@/lib/page-keywords'
 import { shouldIndexUniversity, onlinePrefix } from '@/lib/seo/mode-unverified'
@@ -52,9 +52,10 @@ export async function generateMetadata(
   // university misstated every non-MBA programme. Show the MBA fee, labelled,
   // from getDisplayFee so a suppressed figure stays suppressed here too.
   // With no MBA hub, getDisplayFee falls back to the record's placeholder range.
-  const mbaFee = liveProgs.includes('MBA') ? getDisplayFee(u, 'MBA') : null
-  const hasFee = !!(mbaFee && mbaFee.ok && mbaFee.compact)
-  const feeStr = hasFee ? `MBA ${mbaFee!.compact}` : ''
+  // Exact rupees via getExactFee (list price where a discount applies).
+  const mbaFee = liveProgs.includes('MBA') ? formatExactFeeShort(getExactFee(u, 'MBA')) : null
+  const hasFee = !!mbaFee
+  const feeStr = hasFee ? `MBA ${mbaFee}` : ''
   const feeSeg = hasFee ? `${feeStr}, ` : ''
   const brandName = SEARCH_BRAND[u.id] || titleName
   // "UGC-DEB Entitled" is the no-NAAC fallback, but for a mode-unverified
@@ -238,8 +239,7 @@ export default async function UniversityPage(
         linkableProgrammes={getResolvableProgrammes(university)}
         verifyHref={getVerifyPage(university.id)}
         programSchema={Object.fromEntries(university.programs.map(p => {
-          const f = getDisplayFee(university, p)
-          return [p, { offer: getProgramSchemaOffer(university, p), feeCompact: f.ok && f.compact ? f.compact : null }]
+          return [p, { offer: getProgramSchemaOffer(university, p), feeCompact: formatExactFee(getExactFee(university, p)), feeShort: formatExactFeeShort(getExactFee(university, p)) }]
         }))}
         specHrefs={Object.fromEntries(university.programs.flatMap(p => {
           // Same slug derivation as the chips in UniversityPageClient.

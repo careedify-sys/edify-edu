@@ -145,10 +145,12 @@ export interface University {
    * "₹1,65,000 - ₹1,80,000". Only figures read from the university's own
    * portal belong here; perSemester only when the university publishes one.
    */
-  feeBreakdown?: Partial<Record<'mba' | 'bba' | 'mca' | 'bca' | 'mcom' | 'bcom', {
+  feeBreakdown?: Partial<Record<'mba' | 'bba' | 'mca' | 'bca' | 'mcom' | 'bcom' | 'ba' | 'ma' | 'msc' | 'bsc', {
     list: number
+    // What the list figure is, where "list" is the wrong word ("before scholarship").
+    listLabel?: string
     net?: { min: number; max: number; label: string }
-    perSemester?: { list: number; net?: number; netLabel?: string }
+    perSemester?: { list: number; listLabel?: string; net?: number; netLabel?: string }
     // Payment modes that are not a discount (one-time vs semester-wise). When
     // set, the table prints these in order instead of "list; net".
     modes?: { amount: number; label: string }[]
@@ -4061,6 +4063,16 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // copy's "Rs 99,600 one-time" and "Rs 1,03,600 semester-wise" both sit
     // inside the range. The other programmes use the after-scholarship total.
     programFees: { mba: { fee: 99600, feeMax: 148000 }, mca: { fee: 102000, feeMax: 120000 }, bba: { fee: 108000, feeMax: 120000 }, bca: { fee: 108000, feeMax: 120000 } },
+    // The chart above, labelled for display: before-scholarship total, then the
+    // after-scholarship range from one-time (full payment) to semester-wise, then
+    // the published semester fee, which is the after-scholarship figure.
+    feeBreakdown: {
+      mba: { list: 148000, listLabel: 'before scholarship', net: { min: 99600, max: 103600, label: 'after 30% scholarship (one-time or semester-wise)' }, perSemester: { list: 25900, listLabel: 'after 30% scholarship' }, source: 'Rishi, Jan 2027 fee chart, entered 2026-10-26' },
+      mca: { list: 120000, listLabel: 'before scholarship', net: { min: 98000, max: 102000, label: 'after 15% scholarship (one-time or semester-wise)' }, perSemester: { list: 25500, listLabel: 'after 15% scholarship' }, source: 'Rishi, Jan 2027 fee chart, entered 2026-10-26' },
+      bba: { list: 120000, listLabel: 'before scholarship', net: { min: 102000, max: 108000, label: 'after 10% scholarship (one-time or semester-wise)' }, perSemester: { list: 18000, listLabel: 'after 10% scholarship' }, source: 'Rishi, Jan 2027 fee chart, entered 2026-10-26' },
+      bca: { list: 120000, listLabel: 'before scholarship', net: { min: 102000, max: 108000, label: 'after 10% scholarship (one-time or semester-wise)' }, perSemester: { list: 18000, listLabel: 'after 10% scholarship' }, source: 'Rishi, Jan 2027 fee chart, entered 2026-10-26' },
+      ba: { list: 75000, listLabel: 'before scholarship', net: { min: 61500, max: 67500, label: 'after 10% scholarship (one-time or semester-wise)' }, perSemester: { list: 11250, listLabel: 'after 10% scholarship' }, source: 'Rishi, Jan 2027 fee chart, entered 2026-10-26' },
+    },
     logo: '/logos/university_logos/uttaranchal-online-university-logo_1.svg',
     name: 'Uttaranchal University Online',
     abbr: 'UUUDO',

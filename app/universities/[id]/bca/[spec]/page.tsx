@@ -5,7 +5,8 @@ import { getUniversityById } from '@/lib/data'
 import { nirfForProgramme } from '@/lib/data-slim'
 import { getProgramSpecParams, resolveSpec } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
-import { getTitleName, getShortTitleName, shortenSpec, clampTitle, clampTitleSpecLed, clampDescription, compactFee } from '@/lib/seo-title'
+import { getTitleName, getShortTitleName, shortenSpec, clampTitle, clampTitleSpecLed, clampDescription } from '@/lib/seo-title'
+import { getExactFee, formatExactFeeShort } from '@/lib/fees'
 import { pageKeywords } from '@/lib/page-keywords'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
@@ -42,7 +43,11 @@ export async function generateMetadata(
   const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
   const shortSpec = shortenSpec(spec)
   const pd = u.programDetails['BCA']
-  const fee = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`)
+  // Exact rupees via getExactFee, list price for a discounted fee. This was
+  // compactFee of raw pd.fees, or of the MBA-led feeMin, with no getDisplayFee
+  // gate, so a suppressed or placeholder fee could still reach the title.
+  const feeExact = formatExactFeeShort(getExactFee(u, 'BCA'))
+  const fee = feeExact ?? 'UGC-DEB Approved'
   const nirfLabel = nirfForProgramme(u, 'BCA')
   const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
   // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
@@ -52,7 +57,7 @@ export async function generateMetadata(
       `${shortName} BCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
       shortSpec,
     ),
-    description: shouldIndexUniversity(u.id) ? clampDescription(`${formatUniversityDisplayName(u.name)} Online BCA in ${spec} ${year}: ${fee} fees${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved 3-year degree. Check syllabus, eligibility & career scope free.`) : unverifiedDescription(u.name, 'BCA'),
+    description: shouldIndexUniversity(u.id) ? clampDescription(`${formatUniversityDisplayName(u.name)} Online BCA in ${spec} ${year}: ${feeExact ? `${feeExact} fees` : 'fees on request'}${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved 3-year degree. Check syllabus, eligibility & career scope free.`) : unverifiedDescription(u.name, 'BCA'),
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/bca/${canonicalSlug}` },
     robots: { index: shouldIndexUniversity(u.id), follow: true },
   }

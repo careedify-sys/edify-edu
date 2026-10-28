@@ -233,7 +233,7 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
           </div>
           <div className="rounded-xl border border-slate-200 bg-white p-4">
             <h3 className="font-bold text-sm mb-1" style={{ color: '#0B1533' }}>2. Compare Total Programme Fees</h3>
-            <p className="text-sm text-slate-600">Always compare total fees, not per-semester. Check for hidden charges: registration, exam, application, and alumni fees. One-time payment discounts can save Rs 10,000-20,000.</p>
+            <p className="text-sm text-slate-600">Always compare total fees, not per-semester. Check for hidden charges: registration, exam, application, and alumni fees.</p>
           </div>
           <div className="rounded-xl border border-slate-200 bg-white p-4">
             <h3 className="font-bold text-sm mb-1" style={{ color: '#0B1533' }}>3. Verify {specName} Syllabus Depth</h3>
@@ -254,7 +254,7 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
         <p className="text-sm text-slate-500 mb-6">Sorted by NIRF 2025 rank. Click any university for detailed fees, syllabus, and programme information.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {mbaUnis.map(u => (
-            <UniversityCard key={u.id} u={u as any} highlightProgram="MBA" specSlug={specSlug} href={cardHrefs?.[u.id]} />
+            <UniversityCard key={u.id} u={u as any} highlightProgram="MBA" specSlug={specSlug} href={cardHrefs?.[u.id]} programFee={mbaFeeText?.[u.id] ?? null} />
           ))}
         </div>
       </section>

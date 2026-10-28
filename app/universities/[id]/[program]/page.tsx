@@ -13,7 +13,7 @@ import { nirfForProgramme } from '@/lib/data-slim'
 import type { Program, ProgramDetail } from '@/lib/data'
 import UniProgramBody from '@/components/UniProgramBody'
 import { getTitleName, getShortTitleName, clampTitle, clampTitleFeeLed, clampDescription } from '@/lib/seo-title'
-import { getDisplayFee } from '@/lib/fees'
+import { getExactFee, formatExactFeeShort } from '@/lib/fees'
 import { shouldIndexProgrammeHub } from '@/lib/seo/should-index'
 import { getProgramSchemaOffer, getProgramSchemaFeeFragment } from '@/lib/seo/program-schema'
 import { pageKeywords } from '@/lib/page-keywords'
@@ -62,22 +62,25 @@ export async function generateMetadata(
   const year = new Date().getFullYear()
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
-  const fee = getDisplayFee(u, program)
+  // Title and description fee: exact rupees from getExactFee, list price for a
+  // list-vs-discount fee. getDisplayFee's compact form was parsed from
+  // abbreviated pd.fees ("₹1.61L" for a ₹1,61,600 fee).
+  const feeTok = formatExactFeeShort(getExactFee(u, program))
   const specCount = pd?.specs?.length || 0
   const nirfLabel = nirfForProgramme(u, program)
   const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
-  const title = fee.ok
+  const title = feeTok
     ? clampTitleFeeLed(
-        `${titleName} Online ${program} Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
-        `${shortName} Online ${program} Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
-        fee.compact ?? null,
+        `${titleName} Online ${program} Fees ${year}: ${feeTok}${naacSegment(u.naac)} [Review] | edifyedu.in`,
+        `${shortName} Online ${program} Fees ${year}: ${feeTok}${naacSegment(u.naac)} [Review] | edifyedu.in`,
+        feeTok,
       )
     : clampTitle(`${titleName} Online ${program} ${year}: ${naacPhrase(u.naac, "UGC-DEB Entitled")} [Review] | edifyedu.in`)
-  let description = fee.ok
-    ? `${titleName} Online ${program} ${year}: ${fee.compact} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. See honest review and syllabus.`
+  let description = feeTok
+    ? `${titleName} Online ${program} ${year}: ${feeTok} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. See honest review and syllabus.`
     : `${titleName} Online ${program} ${year}: ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`
-  if (fee.ok && description.length < 150) {
-    description = `${titleName} Online ${program} ${year}: ${fee.compact} fees, ${specCount}+ specs${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. Check verified syllabus, placement data and honest review free at edifyedu.in.`
+  if (feeTok && description.length < 150) {
+    description = `${titleName} Online ${program} ${year}: ${feeTok} fees, ${specCount}+ specs${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. Check verified syllabus, placement data and honest review free at edifyedu.in.`
   }
   description = clampDescription(description)
 

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { University, ProgramDetail, Program } from '@/lib/data'
 import { formatINR } from '@/lib/format'
-import { getDisplayFee } from '@/lib/fees'
+import { getExactFee, formatExactFee, formatPublishedSemesterFee } from '@/lib/fees'
 import { IndianRupee, AlertTriangle } from 'lucide-react'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
@@ -17,9 +17,15 @@ export default function FeeBreakdown({ u, pd, program, cleanName, headingOverrid
   // Sprint 1 FIX 2: single canonical fee source. When getDisplayFee returns
   // ok:false the numeric range is suppressed and the block renders a
   // counsellor-verification CTA instead of a wrong number.
-  const fee = getDisplayFee(u, program as Program)
+  // 2026-10-27: exact rupees via getExactFee (getDisplayFee still gates). The
+  // total used getDisplayFee's range, parsed from abbreviated pd.fees, and the
+  // per-semester row divided that total by 4 or 6. Now the semester row shows
+  // only a figure the university publishes.
+  const exact = getExactFee(u, program as Program)
+  const totalText = formatExactFee(exact)
+  const semText = formatPublishedSemesterFee(exact)
 
-  if (!fee.ok) {
+  if (!totalText) {
     return (
       <section className="rounded-xl border border-slate-200 bg-white p-6">
         <div className="flex items-center gap-2 mb-1">
@@ -46,19 +52,9 @@ export default function FeeBreakdown({ u, pd, program, cleanName, headingOverrid
     )
   }
 
-  const isPostgrad  = ['MBA', 'MCA', 'M.Com', 'MA', 'MSc'].includes(program)
-  const semesters   = isPostgrad ? 4 : 6
-  const totalMin    = fee.min ?? u.feeMin
-  const perSem      = Math.round(totalMin / semesters)
-  // "From ₹X" framing when only the lower bound is backed by pd.fees; the
-  // per-semester row uses the same "from" language so title, body, and
-  // fee table all speak the same fee.
-  const totalLabel  = fee.mode === 'from' ? 'Total Program Fee (from)' : 'Total Program Fee'
-  const perSemValue = fee.mode === 'from' ? `from ${formatINR(perSem)}` : formatINR(perSem)
-
   const rows = [
-    { label: totalLabel, value: fee.range || fee.compact || '', highlight: true },
-    { label: 'Per Semester (approx.)', value: perSemValue },
+    { label: 'Total Program Fee', value: totalText, highlight: true },
+    ...(semText ? [{ label: 'Per Semester', value: semText }] : []),
     ...(u.emiFrom > 0 ? [{ label: 'EMI starts from', value: `${formatINR(u.emiFrom)}/month` }] : []),
     { label: 'Registration / Admission Fee', value: 'Included in total' },
     { label: 'Exam Fee', value: 'Included in total (usually)' },

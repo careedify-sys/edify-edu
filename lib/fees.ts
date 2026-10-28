@@ -318,7 +318,7 @@ const DRIFT_PAIRS: ReadonlySet<string> = new Set([
   'ignou-online|mca',
 ])
 
-type BreakdownKey = 'mba' | 'bba' | 'mca' | 'bca' | 'mcom' | 'bcom'
+type BreakdownKey = 'mba' | 'bba' | 'mca' | 'bca' | 'mcom' | 'bcom' | 'ba' | 'ma' | 'msc' | 'bsc'
 type Breakdown = NonNullable<NonNullable<University['feeBreakdown']>[BreakdownKey]>
 
 export type ExactFee =
@@ -359,14 +359,45 @@ export function formatExactFee(e: ExactFee): string | null {
   if (e.kind === 'exact') return e.from ? `From ${fmtIndianFull(e.min)}` : rupees(e.min, e.max)
   const b = e.breakdown
   if (b.modes?.length) return b.modes.map(m => `${fmtIndianFull(m.amount)} ${m.label}`).join('; ')
-  return b.net ? `${fmtIndianFull(b.list)} list; ${rupees(b.net.min, b.net.max)} ${b.net.label}` : fmtIndianFull(b.list)
+  const listPart = `${fmtIndianFull(b.list)} ${b.listLabel ?? 'list'}`
+  return b.net ? `${listPart}; ${rupees(b.net.min, b.net.max)} ${b.net.label}` : fmtIndianFull(b.list)
 }
 
 /** Per-semester fee, only where the university publishes one. Never derived from a total. */
 export function formatPublishedSemesterFee(e: ExactFee): string | null {
   if (e.kind !== 'labelled' || !e.breakdown.perSemester) return null
   const s = e.breakdown.perSemester
-  return s.net ? `${fmtIndianFull(s.list)} list; ${fmtIndianFull(s.net)} ${s.netLabel ?? 'after discount'}` : fmtIndianFull(s.list)
+  const listPart = `${fmtIndianFull(s.list)} ${s.listLabel ?? 'list'}`
+  return s.net ? `${listPart}; ${fmtIndianFull(s.net)} ${s.netLabel ?? 'after discount'}` : (s.listLabel ? listPart : fmtIndianFull(s.list))
+}
+
+/**
+ * One fee token for places with no room for a label: titles, badges, card
+ * stat tiles. Exact rupees always. A list-vs-discount fee shows the list (or
+ * before-scholarship) price only, never the net on its own; payment modes,
+ * which are all real prices, show their span.
+ */
+export function formatExactFeeShort(e: ExactFee): string | null {
+  if (e.kind === 'none') return null
+  if (e.kind === 'exact') return formatExactFee(e)
+  const b = e.breakdown
+  if (b.modes?.length) {
+    const a = b.modes.map(m => m.amount)
+    return rupees(Math.min(...a), Math.max(...a))
+  }
+  return fmtIndianFull(b.list)
+}
+
+/**
+ * The label that goes under formatExactFeeShort in a stat tile, so the short
+ * token is never left unlabelled: "list; ₹1,46,240–₹1,61,600 by payment plan".
+ * null for a plain exact fee, which needs no label.
+ */
+export function formatExactFeeDetail(e: ExactFee): string | null {
+  if (e.kind !== 'labelled') return null
+  const b = e.breakdown
+  if (b.modes?.length) return b.modes.map(m => `${fmtIndianFull(m.amount)} ${m.label}`).join('; ')
+  return b.net ? `${b.listLabel ?? 'list'}; ${rupees(b.net.min, b.net.max)} ${b.net.label}` : (b.listLabel ?? null)
 }
 
 /**

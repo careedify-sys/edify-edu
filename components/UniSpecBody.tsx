@@ -50,7 +50,8 @@ import CouponCard         from './CouponCard'
 import QuickFactsCard     from './QuickFactsCard'
 import AssuredMarquee    from './AssuredMarquee'
 import RequestSyllabusCard from './RequestSyllabusCard'
-import { feeSentence, emiSentence, hasRealFee } from '@/lib/seo/display-guards'
+import { getExactFee, formatExactFee } from '@/lib/fees'
+import { feeSentence, emiSentence } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
 // ── Inline bold renderer: converts **text** → <strong> at render time ─────────
@@ -323,9 +324,12 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
   // Spec-specific JSON content (Batch 9+) — takes priority over generic specContent
   const specJson = getSpecPageContent(u.id, program.toLowerCase(), specSlug)
 
+  // Exact rupees via getExactFee; this FAQ printed raw pd.fees ("₹1.61L–₹2.00L")
+  // or a "₹{feeMin/1000}K+" built from the MBA-led feeMin.
+  const specFeeText = formatExactFee(getExactFee(u, program as Program))
   const templateFaqs: { q: string; a: string }[] = [
     { q: `Is ${cleanName} Online ${program} in ${spec} valid for jobs?`, a: `Yes. ${cleanName} is UGC DEB approved${u.naac ? ` and NAAC ${u.naac} accredited` : ''}. The degree is identical to an on-campus degree.` },
-    { q: `What is the fee for ${program} ${spec} at ${cleanName}?`, a: `${hasRealFee(u) ? `Total fee is ${pd.fees || `₹${Math.round(u.feeMin / 1000)}K+`}.` : 'The fee for the current intake is not published on this page yet.'} ${emiSentence(u.emiFrom)}` },
+    { q: `What is the fee for ${program} ${spec} at ${cleanName}?`, a: `${specFeeText ? `Total fee is ${specFeeText}.` : 'The fee for the current intake is not published on this page yet.'} ${emiSentence(u.emiFrom)}` },
     { q: `Can I work while doing ${program} in ${spec} from ${cleanName}?`, a: `Yes. Live sessions on weekends, recordings available 24/7. ${u.examMode} assessments. No campus visits required.` },
     { q: `What career opportunities does ${spec} specialisation offer?`, a: specContent?.careerBeginner?.length ? `${specContent.careerBeginner[0]?.title} and other roles. ${specContent.salaryRange || ''}` : `Graduates typically enter ${spec}-related roles with salary ranges of ${pd.avgSalary || '₹4L–₹12L'} depending on experience.` },
     { q: `What syllabus is covered in ${spec} specialisation?`, a: specContent?.skills?.length ? `Key areas include: ${specContent.skills.slice(0, 5).join(', ')}.` : `The specialisation covers core ${spec} subjects along with project work and industry case studies.` },

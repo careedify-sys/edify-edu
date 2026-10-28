@@ -1,5 +1,5 @@
 import type { University, Program } from '@/lib/data'
-import { getDisplayFee } from '@/lib/fees'
+import { getExactFee, formatExactFee } from '@/lib/fees'
 import { formatNirfBadge } from '@/lib/data-slim'
 import Link from 'next/link'
 import { CheckCircle, XCircle, Minus } from 'lucide-react'
@@ -28,8 +28,8 @@ function nirfCell(uni: University, program: string): string {
 
 // Was uni.feeMin, which is MBA-led, so BBA and BCA pages compared MBA fees.
 function feeCell(uni: University, program: string): string {
-  const f = getDisplayFee(uni, program as Program)
-  return f.ok && f.compact ? f.compact : 'On request'
+  // Exact rupees, discounts labelled (getExactFee), not getDisplayFee's compact form.
+  return formatExactFee(getExactFee(uni, program as Program)) ?? 'Contact our counsellor for current fee details'
 }
 
 function naacWeight(naac: string): number {

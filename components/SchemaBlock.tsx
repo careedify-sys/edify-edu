@@ -1,7 +1,7 @@
 import type { University, ProgramDetail, Program } from '@/lib/data'
 import type { Coupon } from '@/lib/coupons'
 import { formatUniversityDisplayName } from '@/lib/format'
-import { getDisplayFee } from '@/lib/fees'
+import { getProgramSchemaOffer, getProgramSchemaFeeFragment } from '@/lib/seo/program-schema'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
 interface Props {
@@ -42,9 +42,10 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
   // artefacts like "Galgotias University Online Online MBA".
   const brand = formatUniversityDisplayName(u.name)
 
-  // Canonical fee source. When getDisplayFee suppresses (no verified fee), the
-  // schema must not assert a fee fragment or an Offer price. See lib/fees.ts.
-  const fee = getDisplayFee(u, program as Program)
+  // Fee via lib/seo/program-schema.ts (getExactFee): exact rupees, a labelled
+  // breakdown as an AggregateOffer with its label. Suppressed means no price
+  // and no fee fragment; the Offer keeps only its category for Course info.
+  const offer = getProgramSchemaOffer(u, program as Program)
 
   const courseSchema = {
     '@context': 'https://schema.org',
@@ -52,7 +53,7 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
     name: spec ? `${brand} Online ${program}: ${spec} Specialisation` : `${brand} Online ${program}`,
     description: spec
       ? `Online ${program} with ${spec} specialisation from ${brand}.${u.naac ? ` NAAC ${u.naac} accredited,` : ''} UGC DEB approved. Admissions open for ${year}.`
-      : `UGC DEB approved Online ${program} from ${brand}.${u.naac ? ` NAAC ${u.naac} accredited.` : ''} ${pd.specs?.length || 0}+ specialisations${fee.ok ? `, fees ${fee.compact}` : ''}.`,
+      : `UGC DEB approved Online ${program} from ${brand}.${u.naac ? ` NAAC ${u.naac} accredited.` : ''} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, program as Program)}.`,
     provider: {
       '@type': 'CollegeOrUniversity',
       name: u.name,
@@ -63,27 +64,15 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
     // it was the 2,421 "invalid property" errors in the Semrush audit of 27 Oct 2026.
     timeRequired: `P${durationYears}Y`,
     url: pageUrl,
-    offers: (fee.ok && fee.min) ? (fee.max && fee.max !== fee.min ? {
-      '@type': 'AggregateOffer',
-      lowPrice: String(fee.min),
-      highPrice: String(fee.max),
-      priceCurrency: 'INR',
-      offerCount: '2',
-      availability: 'https://schema.org/InStock',
+    offers: {
+      ...(offer ?? { '@type': 'Offer', priceCurrency: 'INR', availability: 'https://schema.org/InStock' }),
       url: pageUrl,
       category: 'Online Education',
-    } : {
-      '@type': 'Offer',
-      price: String(fee.min),
-      priceCurrency: 'INR',
-      availability: 'https://schema.org/InStock',
-      url: pageUrl,
-      category: 'Online Education',
-      ...(coupon ? {
+      ...(offer?.['@type'] === 'Offer' && coupon ? {
         priceValidUntil: `${year}-12-31`,
         description: `EdifyEdu Coupon: ${coupon.code} - ${coupon.savings}`,
       } : {}),
-    }) : undefined,
+    },
     hasCourseInstance: {
       '@type': 'CourseInstance',
       courseMode: 'Online',

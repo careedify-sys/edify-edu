@@ -12,16 +12,16 @@ import type { Program } from '@/lib/data'
 import { formatFeeSlim, UNIS_SLIM, nirfForProgramme } from '@/lib/data-slim'
 import { getSpecFAQs } from '@/lib/specFaqs'
 import { getCanonicalSpec } from '@/lib/specMapping'
-import { shouldIndexProgramsPath } from '@/lib/seo/should-index'
+import { shouldIndexProgramsPath, shouldIndexProgrammeHub } from '@/lib/seo/should-index'
 import { MBA_SPEC_SEO_OVERRIDES } from '@/lib/mba-spec-seo-overrides'
 import { getProgramHubSeo } from '@/lib/program-hub-seo'
 import { SPEC_HUB_EDITORIAL } from '@/lib/data/spec-hub-editorial'
 import ProgrammeComparisonTable from '@/components/ProgrammeComparisonTable'
 import ProgramPageClient from '@/components/ProgramPageClient'
-import MBAHubClient from '@/components/MBAHubClient'
+import MBAHubClient, { type MbaHubFees } from '@/components/MBAHubClient'
 import MBASpecHubClient from '@/components/MBASpecHubClient'
 import ProgramHubClient from '@/components/ProgramHubClient'
-import { getDisplayFee, getExactFee, exactFeeBounds, formatExactFee } from '@/lib/fees'
+import { getExactFee, exactFeeBounds, formatExactFee, formatExactFeeShort } from '@/lib/fees'
 import { formatINR } from '@/lib/format'
 import { resolveSpecHref, hubResolves, isLinkable } from '@/lib/seo/safe-internal-links'
 
@@ -353,17 +353,18 @@ export default async function CatchAllProgramPage(
   const isPgProgram = ['MBA', 'MCA', 'M.Com', 'MA', 'MSc'].includes(program)
   // Client components here only see u.feeMin/feeMax, which are MBA-led, so BBA
   // and MA pages printed MBA fees or "From Rs 0". Resolve this programme's own
-  // fee once, through getDisplayFee; null means suppressed or unknown.
+  // fee once, through getExactFee: exact rupees, discounts labelled; null means
+  // suppressed. Was getDisplayFee's compact form ("₹1.61L").
   const programFees: Record<string, string | null> = {}
   for (const u of universities) {
-    const f = getDisplayFee(u, program as Program)
-    programFees[u.id] = f.ok && f.compact ? f.compact : null
+    programFees[u.id] = formatExactFee(getExactFee(u, program as Program))
   }
   
   const feeMin = universities.length ? Math.min(...universities.map(u => u.feeMin)) : 0
-  const schemaFeeVals = universities.map(u => getDisplayFee(u, program as Program)).filter(f => f.ok && f.min != null)
+  // List-price bounds from getExactFee: a labelled discount never sets the floor.
+  const schemaFeeVals = universities.map(u => exactFeeBounds(getExactFee(u, program as Program))).filter((b): b is { min: number; max: number } => !!b)
   const schemaFeeBounds = schemaFeeVals.length
-    ? { min: Math.min(...schemaFeeVals.map(f => f.min!)), max: Math.max(...schemaFeeVals.map(f => f.max ?? f.min!)) }
+    ? { min: Math.min(...schemaFeeVals.map(b => b.min)), max: Math.max(...schemaFeeVals.map(b => b.max)) }
     : null
   const feeMax = universities.length ? Math.max(...universities.map(u => u.feeMax)) : 0
 
@@ -479,11 +480,14 @@ export default async function CatchAllProgramPage(
     for (const slim of specMbaUnis) {
       const full = getUniversityById(slim.id)
       if (!full) continue
-      const exact = getExactFee(full, 'MBA')
-      const bounds = exactFeeBounds(exact)
-      const text = formatExactFee(exact)
+      const bounds = exactFeeBounds(getExactFee(full, 'MBA'))
       if (bounds) mbaFeeMap[slim.id] = bounds
-      if (text) mbaFeeText[slim.id] = text
+    }
+    // Text for every MBA university, not only specMbaUnis: the client card grid
+    // uses its own matcher and must never fall back to a raw slim fee.
+    for (const u of universities) {
+      const text = formatExactFee(getExactFee(u, 'MBA'))
+      if (text) mbaFeeText[u.id] = text
     }
     const mbaFeeVals = Object.values(mbaFeeMap)
     const specFeeMinVals = mbaFeeVals.map(f => f.min).filter(f => f > 0)
@@ -688,7 +692,7 @@ export default async function CatchAllProgramPage(
                             </div>
                             <div className="flex-1 min-w-0">
                               <div className="text-sm font-bold text-navy group-hover:text-amber transition-colors leading-snug truncate">{getShortUniversityName(u.name)}</div>
-                              <div className="text-xs text-ink-3">NAAC {u.naac}{nirfForProgramme(u, program) ? ` · ${nirfForProgramme(u, program)}` : ''} · {(() => { const f = getDisplayFee(u, program as Program); return f.ok && f.compact ? f.compact : 'Fee on request' })()}</div>
+                              <div className="text-xs text-ink-3">NAAC {u.naac}{nirfForProgramme(u, program) ? ` · ${nirfForProgramme(u, program)}` : ''} · {formatExactFee(getExactFee(u, program as Program)) ?? 'Contact our counsellor for current fee details'}</div>
                             </div>
                             <ChevronRight size={14} className="text-amber shrink-0" />
                           </Link>
@@ -714,6 +718,22 @@ export default async function CatchAllProgramPage(
   // Program hub pages (no spec sub-slug) — redesigned hub components
   if (!activeSpec) {
     if (program === 'MBA') {
+    // Fees for MBAHubClient, all from getExactFee. The FAQ and hero range use
+    // list-price bounds across hubs that are indexable and resolve, so a
+    // discounted net never sets the floor and a noindex page never counts.
+    const mbaHubFees: MbaHubFees = { text: {}, short: {}, floor: {}, range: null }
+    let lo = Infinity, hi = 0, counted = 0
+    for (const u of universities) {
+      const e = getExactFee(u, 'MBA')
+      const text = formatExactFee(e), short = formatExactFeeShort(e), b = exactFeeBounds(e)
+      if (text) mbaHubFees.text[u.id] = text
+      if (short) mbaHubFees.short[u.id] = short
+      if (b) mbaHubFees.floor[u.id] = b.min
+      if (b && hubResolves(u.id, 'MBA') && shouldIndexProgrammeHub(u, 'MBA').shouldIndex) {
+        lo = Math.min(lo, b.min); hi = Math.max(hi, b.max); counted++
+      }
+    }
+    if (counted) mbaHubFees.range = { min: lo, max: hi, count: counted }
     return (
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -743,7 +763,7 @@ export default async function CatchAllProgramPage(
             </Link>
           </div>
         </div>
-        <MBAHubClient />
+        <MBAHubClient fees={mbaHubFees} />
         {/* The canonical machine-readable comparison for this programme. Lives
             on the base hub only: a spec hub is a narrower cut of the same rows,
             and repeating the full table across dozens of them would be

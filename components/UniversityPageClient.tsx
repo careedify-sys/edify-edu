@@ -50,7 +50,9 @@ interface Props {
    * u.feeMin/u.feeMax, which are MBA-led, so a BBA-first university published
    * its MBA price, and it put lowPrice/highPrice on a plain Offer.
    */
-  programSchema: Partial<Record<Program, { offer: SchemaOffer | null; feeCompact: string | null }>>
+  // feeCompact: full exact fee text (getExactFee, discounts labelled); feeShort:
+  // one exact token for tight spots (list price where a discount applies).
+  programSchema: Partial<Record<Program, { offer: SchemaOffer | null; feeCompact: string | null; feeShort: string | null }>>
   /**
    * Specialisation chip hrefs keyed "{programSlug}/{slug}", resolved on the
    * server by resolveSpecHref. Slugifying the display name linked 308 aliases
@@ -68,6 +70,11 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
   const displayProgram: Program = activeProgram || u.programs[0]
+  // Fees for this page come only from the server-resolved getExactFee strings.
+  // The FAQ, stat tile and programme list used u.feeMin/feeMax, which are
+  // MBA-led, so a BCA tab quoted the MBA range.
+  const feeText = (p: Program) => programSchema[p]?.feeCompact ?? null
+  const feeShort = (p: Program) => programSchema[p]?.feeShort ?? null
   const pd = u.programDetails[displayProgram]
   const programContent = getProgramContent(displayProgram)
   const otherUnis = getPeerUniversitiesSlim(displayProgram, u.id, 4)
@@ -98,11 +105,11 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
     },
     {
       q:`What is the total fee for ${u.name} ${displayProgram}?`,
-      a:`${u.feeMin > 0 ? `The total fee for ${u.name} ${displayProgram} ranges from ${formatFee(u.feeMin)} to ${formatFee(u.feeMax)} for the complete program. EMI options start from ₹${u.emiFrom.toLocaleString()} per month.` : `${u.name} has not published a fee for ${displayProgram} on this page yet. Request the current intake fee in writing before you apply.`} Semester-wise payment is available. Scholarships and bank tie-ups may reduce the final cost, so fill the form to check what you qualify for.`
+      a:`${feeText(displayProgram) ? `The total fee for ${u.name} ${displayProgram} is ${feeText(displayProgram)} for the complete program. EMI options start from ₹${u.emiFrom.toLocaleString()} per month.` : `${u.name} has not published a fee for ${displayProgram} on this page yet. Request the current intake fee in writing before you apply.`} Semester-wise payment is available. Scholarships and bank tie-ups may reduce the final cost, so fill the form to check what you qualify for.`
     },
     {
       q:`What programs does ${u.name} offer online?`,
-      a:`${u.name} offers ${u.programs.length} online programs: ${u.programs.join(', ')}. ${displayProgram} is among the most popular. Each program has multiple specialisations.${u.feeMin > 0 ? ` Fees range from ${formatFee(u.feeMin)} to ${formatFee(u.feeMax)}.` : ' Fees for the current intake are not published here yet, so request them before you apply.'}`
+      a:`${u.name} offers ${u.programs.length} online programs: ${u.programs.join(', ')}. ${displayProgram} is among the most popular. Each program has multiple specialisations.${feeText(displayProgram) ? ` The ${displayProgram} fee is ${feeText(displayProgram)}.` : ' Fees for the current intake are not published here yet, so request them before you apply.'}`
     },
     {
       q:`Is ${u.name} ${displayProgram} valid and UGC approved?`,
@@ -263,7 +270,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                 {/* Quick Stats */}
                 <div className="flex flex-wrap gap-3 mb-3">
                   {[
-                    { label: 'Total Fee', value: u.feeMin > 0 ? `${formatFee(u.feeMin)} – ${formatFee(u.feeMax)}` : 'On request' },
+                    { label: 'Total Fee', value: feeShort(displayProgram) ?? 'Contact our counsellor for current fee details' },
                     ...(u.emiFrom > 0 ? [{ label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` }] : []),
                     { label: 'Duration', value: pd?.duration || '2 Years' },
                     { label: 'Exam Mode', value: u.examMode },
@@ -431,7 +438,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                   
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
                     {[
-                      { label: 'Total Fees', value: pd.fees, icon: '💰' },
+                      { label: 'Total Fees', value: feeText(displayProgram) ?? 'Contact our counsellor for current fee details', icon: '💰' },
                       { label: 'Duration', value: pd.duration, icon: '⏱️' },
                       ...(pd.avgSalary ? [{ label: 'Avg Salary', value: pd.avgSalary, icon: '📈' }] : []),
                       { label: 'Specialisations', value: `${pd.specs.length}+`, icon: '🎯' },
@@ -726,7 +733,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     ...([u.city, u.state].filter(Boolean).length ? [{ label: 'Location', value: [u.city, u.state].filter(Boolean).join(', ') }] : []),
                     { label: 'Exam Mode', value: u.examMode },
                     { label: 'Eligibility', value: u.eligibility },
-                    ...(u.feeMin > 0 ? [{ label: 'Fees from', value: formatFee(u.feeMin) }] : []),
+                    ...(feeShort(displayProgram) ? [{ label: `${displayProgram} fee`, value: feeShort(displayProgram)! }] : []),
                     ...(u.emiFrom > 0 ? [{ label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` }] : []),
                   ].map(row => (
                     <div key={row.label} className="flex justify-between py-2 border-b border-border text-xs">
@@ -745,7 +752,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                       className="flex justify-between items-center py-2 border-b border-border text-sm no-underline"
                     >
                       <span className="text-ink-2 font-medium">{prog}</span>
-                      <span className="text-amber text-xs">{u.programDetails[prog]?.fees || formatFee(u.feeMin)}</span>
+                      <span className="text-amber text-xs">{feeShort(prog) ?? 'Contact our counsellor for current fee details'}</span>
                     </Link>
                   ))}
                   {u.comingSoon?.map(prog => (

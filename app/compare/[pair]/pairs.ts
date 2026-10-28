@@ -25,7 +25,7 @@ export const PAIRS: Record<string, PairConfig> = {
       { q: 'Which is better for Pune-based careers?', a: 'Symbiosis carries stronger weight in Pune and Maharashtra. NMIMS carries stronger weight in Mumbai specifically. For broader Maharashtra, both work well.' },
     ],
     verdictA: ['Mumbai BFSI is your target (NMIMS has specific Mumbai connections)', 'Budget matters: save Rs 95,000-1,50,000 vs Symbiosis', 'You prefer standard academic load (6-8 subjects/sem)'],
-    verdictB: ['You want the highest possible NAAC grade (A++) on your degree', 'Pune-region employers are your target', 'You can afford Rs 3.15L and want maximum academic depth per semester'],
+    verdictB: ['You want the highest possible NAAC grade (A++) on your degree', 'Pune-region employers are your target', 'You can afford Rs 3,15,000 and want maximum academic depth per semester'],
   },
   'amity-vs-manipal-jaipur': {
     uniA: 'amity-university-online',
@@ -99,7 +99,7 @@ export const PAIRS: Record<string, PairConfig> = {
       { q: 'Does NMIMS have better brand recognition?', a: 'NMIMS has stronger recognition specifically in Mumbai financial services. MUJ benefits from the Manipal group brand which is stronger in South India and healthcare sectors.' },
       { q: 'Are both UGC-DEB approved?', a: 'Yes. Both are UGC-DEB approved, NAAC accredited, and legally equivalent. Government and private sector employers accept both.' },
     ],
-    verdictA: ['Budget is your priority (save Rs 16K-67K vs NMIMS)', 'Coursera Plus bundled free adds value', 'You want broader spec variety (13 vs 5-6)'],
+    verdictA: ['Budget is your priority: MUJ lists at Rs 1,84,000 (Rs 1,56,400 after the 15% discount) against NMIMS at Rs 1,96,000 to Rs 2,20,000', 'Coursera Plus bundled free adds value', 'You want broader spec variety (13 vs 5-6)'],
     verdictB: ['Mumbai BFSI is your target market', 'NIRF Management #17 rank matters for your employer', 'You prefer deeper curriculum focus over broad choice'],
   },
 
@@ -114,7 +114,7 @@ export const PAIRS: Record<string, PairConfig> = {
       { q: 'Are MUJ and MAHE the same university?', a: 'No. MUJ (Manipal University Jaipur) and MAHE (Manipal Academy of Higher Education, Manipal Karnataka) are separate universities under the same Manipal group. Independently accredited and ranked.' },
       { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,84,000. MAHE costs Rs 2,92,000. MAHE is Rs 1,08,000 more expensive. Both include Coursera Plus.' },
       { q: 'Do both include Coursera Plus?', a: 'Yes. Both MUJ and MAHE bundle free Coursera Plus access. The platform and LMS experience is similar.' },
-      { q: 'Is MAHE worth the extra Rs 1.08L?', a: 'MAHE carries NIRF #3 University rank and Institution of Eminence potential. For employers who specifically value the MAHE flagship brand, the premium may be justified. For employers who treat both as Manipal degrees, MUJ is better value.' },
+      { q: 'Is MAHE worth the extra Rs 1,08,000?', a: 'MAHE carries NIRF #3 University rank and Institution of Eminence potential. For employers who specifically value the MAHE flagship brand, the premium may be justified. For employers who treat both as Manipal degrees, MUJ is better value.' },
     ],
     verdictA: ['Budget matters: save Rs 1,08,000 vs MAHE', 'Your employer treats both as Manipal group degrees', 'You want Coursera Plus at the lowest Manipal fee'],
     verdictB: ['NIRF #3 University rank is a genuine career differentiator for you', 'Your target employers specifically value the MAHE flagship brand', 'You qualify for MAHE scholarships (Defence 20%, Female 15%, etc.)'],
@@ -148,7 +148,7 @@ export const PAIRS: Record<string, PairConfig> = {
       { q: 'Which has a higher NAAC grade?', a: 'LPU has NAAC A++ (highest grade). Amity has NAAC A+. LPU scores higher on NAAC accreditation.' },
     ],
     verdictA: ['You want 19 specialisation options including niche tracks', 'QS Asia-Pacific ranking matters for international recognition', 'Your target is NCR employers or you value WASC/WES portability'],
-    verdictB: ['You want dual specialisation (two specs in one MBA)', 'NAAC A++ is a priority credential', 'Budget matters and you want to save Rs 25,000-45,000'],
+    verdictB: ['You want dual specialisation (two specs in one MBA)', 'NAAC A++ is a priority credential', 'Budget matters: LPU lists at Rs 2,00,000 against Amity at Rs 2,07,000 to Rs 2,25,000'],
   },
   'lpu-vs-manipal-jaipur': {
     uniA: 'lovely-professional-university-online',
@@ -240,7 +240,7 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'BBA',
     defaultSpec: 'general',
     faqs: [
-      { q: 'Is Symbiosis or NMIMS better for online BBA?', a: 'Symbiosis SSODL BBA costs Rs 1,65,000 total (+ Rs 1,000 registration, separate). NMIMS BBA fees should be confirmed with a counsellor. Both are NAAC A++ and UGC-DEB approved. Symbiosis has stronger Pune academic heritage; NMIMS has Mumbai brand value.' },
+      { q: 'Is Symbiosis or NMIMS better for online BBA?', a: 'Symbiosis SSODL BBA costs Rs 1,65,000 total (+ Rs 1,000 registration, separate). NMIMS BBA costs Rs 1,41,000. Both are NAAC A++ and UGC-DEB approved. Symbiosis has stronger Pune academic heritage; NMIMS has Mumbai brand value.' },
       { q: 'What is the Symbiosis SSODL BBA fee?', a: 'Symbiosis SSODL BBA total fee is Rs 1,65,000 across 3 years (6 semesters), plus Rs 1,000 one-time registration billed separately. Fees are indicative and change by intake. Confirm the current fee with our counsellor before enrolling.' },
       { q: 'Does NMIMS offer online BBA?', a: 'Yes. NMIMS offers online BBA. Confirm current fees with our counsellor or the NMIMS online portal directly.' },
       { q: 'Which has a higher NIRF Management rank?', a: 'NMIMS holds NIRF #11 Management and Symbiosis also holds NIRF #11 Management. Both are equally ranked in the Management category.' },
@@ -348,7 +348,7 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'BBA',
     defaultSpec: 'general',
     faqs: [
-      { q: 'Is Amity or LPU better for online BBA?', a: 'Amity BBA costs Rs 1,99,000 with 3 specialisations. LPU BBA offers 14 specialisations at a competitive fee. LPU has NAAC A++ (vs Amitys A+). Both are UGC-DEB approved.' },
+      { q: 'Is Amity or LPU better for online BBA?', a: 'Amity BBA costs Rs 1,75,120 paid one-time or Rs 1,99,000 semester-wise, with 3 specialisations. LPU BBA offers 14 specialisations; contact our counsellor for current LPU BBA fee details. LPU has NAAC A++ (vs Amitys A+). Both are UGC-DEB approved.' },
       { q: 'What is the fee difference for BBA?', a: 'Amity BBA costs Rs 1,99,000. LPU BBA fees vary by specialisation. Confirm current LPU BBA fees with our counsellor for an exact comparison.' },
       { q: 'Which has more BBA specialisations?', a: 'LPU offers 14 BBA specialisations (Entrepreneurship, FinTech, AI, Healthcare, and more). Amity offers 3 (General, Travel & Tourism, Data Analytics). LPU has far broader choice.' },
       { q: 'Which has a higher NAAC grade?', a: 'LPU has NAAC A++ (highest possible). Amity has NAAC A+. LPU scores higher on NAAC accreditation.' },
@@ -362,13 +362,13 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'BBA',
     defaultSpec: 'general',
     faqs: [
-      { q: 'Is Sharda or Galgotias better for online BBA?', a: 'Both are Greater Noida-based, NAAC A+ and UGC-DEB approved. Galgotias BBA costs Rs 77,000 (significantly cheaper). Sharda has NIRF #87 University rank. Both are budget-friendly options for online BBA.' },
+      { q: 'Is Sharda or Galgotias better for online BBA?', a: 'Both are Greater Noida-based, NAAC A+ and UGC-DEB approved. Galgotias BBA costs Rs 77,200 (significantly cheaper). Sharda has NIRF #87 University rank. Both are budget-friendly options for online BBA.' },
       { q: 'What is the fee difference for BBA?', a: 'Galgotias BBA costs Rs 77,000. Sharda BBA fees should be confirmed with our counsellor. Galgotias is one of the most affordable NAAC A+ online BBA programmes in India.' },
       { q: 'Which has more BBA specialisations?', a: 'Galgotias offers 4 BBA specs (Marketing, Finance, HRM, Operations). Sharda offers General Management. Galgotias has broader specialisation choice.' },
       { q: 'Are both valid for government jobs?', a: 'Yes. Both are UGC-DEB approved and NAAC accredited. Both degrees are valid for government jobs, PSU recruitment, and higher education (MBA, M.Com, etc.).' },
     ],
     verdictA: ['You want NIRF-ranked university (Sharda #87) on your degree', 'You prefer a private university with established campus brand', 'Sharda placements network matters for your Greater Noida target market'],
-    verdictB: ['Budget is your top priority (Rs 77,000 is among the lowest BBA fees in India)', 'You want Marketing, Finance, or HRM specialisation in BBA', 'You value 830+ recruiter partnerships that Galgotias reports'],
+    verdictB: ['Budget is your top priority (Rs 77,200 is among the lowest BBA fees in India)', 'You want Marketing, Finance, or HRM specialisation in BBA', 'You value 830+ recruiter partnerships that Galgotias reports'],
   },
   'amity-vs-lpu-bca': {
     uniA: 'amity-university-online',
@@ -390,7 +390,7 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'finance',
     faqs: [
-      { q: 'Is IGNOU or LPU better for online MBA?', a: 'IGNOU is a Central Government university with Rs 66,000 total fee. LPU is a private university with NAAC A++ at Rs 1,61,600 to Rs 2,00,000. IGNOU is by far the most affordable option. LPU offers more specialisations and modern programme delivery.' },
+      { q: 'Is IGNOU or LPU better for online MBA?', a: 'IGNOU is a Central Government university with Rs 66,000 total fee. LPU is a private university with NAAC A++, listing at Rs 2,00,000 (Rs 1,46,240 to Rs 1,61,600 by payment plan). IGNOU is by far the most affordable option. LPU offers more specialisations and modern programme delivery.' },
       { q: 'What is the fee difference?', a: 'IGNOU MBA costs Rs 66,000 total. LPU costs Rs 1,61,600 to Rs 2,00,000. IGNOU saves Rs 95,600-1,34,000. Massive difference.' },
       { q: 'Is IGNOU MBA valid for government jobs?', a: 'Yes. IGNOU is a Central Government institution. Its MBA is valid for all government jobs, PSU recruitment, and higher education. LPU MBA is also valid but IGNOU carries specific advantage for government sector applications.' },
       { q: 'Which has more specialisations?', a: 'LPU offers 12 MBA specialisations with dual-spec option. IGNOU offers 5 (Financial, Marketing, HR, Operations, Services Management). LPU has broader choice.' },

@@ -5,7 +5,8 @@ import { UNIVERSITIES, getUniversityById, specSlug as getSpecSlug, specName as g
 import { nirfForProgramme } from '@/lib/data-slim'
 import type { Program } from '@/lib/data'
 import { resolveSpec } from '@/lib/data/programs'
-import { getTitleName, getShortTitleName, clampTitle, clampTitleSpecLed, clampDescription, compactFee, shortenSpec } from '@/lib/seo-title'
+import { getTitleName, getShortTitleName, clampTitle, clampTitleSpecLed, clampDescription, shortenSpec } from '@/lib/seo-title'
+import { getExactFee, formatExactFeeShort } from '@/lib/fees'
 import UniSpecBody from '@/components/UniSpecBody'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
@@ -45,7 +46,11 @@ export async function generateMetadata(
   const year     = new Date().getFullYear()
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
-  const fees = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`)
+  // Exact rupees via getExactFee, list price for a discounted fee. This was
+  // compactFee of raw pd.fees, or of the MBA-led feeMin, with no getDisplayFee
+  // gate, so a suppressed or placeholder fee could still reach the title.
+  const feeExact = formatExactFeeShort(getExactFee(u, program as Program))
+  const fees = feeExact ?? 'UGC-DEB Approved'
   const nirfLabel = nirfForProgramme(u, program)
   const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
   // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
@@ -55,7 +60,7 @@ export async function generateMetadata(
     `${shortName} ${program} ${shortSpec} ${year}: ${fees}${naacSegment(u.naac)} | EdifyEdu`,
     shortSpec,
   )
-  const baseDescription = clampDescription(`Online ${program} in ${spec} from ${titleName}: ${fees} fees, eligibility, syllabus and admission ${year}.${naacSuffix(u.naac)}${nirfStr}. UGC-DEB approved. Compare before you enrol.`)
+  const baseDescription = clampDescription(`Online ${program} in ${spec} from ${titleName}: ${feeExact ? `${feeExact} fees` : 'fees on request'}, eligibility, syllabus and admission ${year}.${naacSuffix(u.naac)}${nirfStr}. UGC-DEB approved. Compare before you enrol.`)
 
   // Mode-unverified universities: see lib/seo/mode-unverified.ts.
   const description = shouldIndexUniversity(u.id)

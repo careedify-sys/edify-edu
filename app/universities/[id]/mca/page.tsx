@@ -13,7 +13,7 @@ import { UNIVERSITIES, getUniversityById } from '@/lib/data'
 import { nirfForProgramme } from '@/lib/data-slim'
 import type { ProgramDetail } from '@/lib/data'
 import { getTitleName, getShortTitleName, clampTitle, clampTitleFeeLed, clampDescription } from '@/lib/seo-title'
-import { getDisplayFee } from '@/lib/fees'
+import { getExactFee, formatExactFeeShort } from '@/lib/fees'
 import { shouldIndexProgrammeHub } from '@/lib/seo/should-index'
 import { getProgramSchemaOffer, getProgramSchemaFeeFragment } from '@/lib/seo/program-schema'
 import { getMasterSyllabus } from '@/lib/content'
@@ -47,19 +47,22 @@ export async function generateMetadata(
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const shortName = getShortTitleName(u.id, u.shortName, u.name, u.abbr)
   const syllabus = getMasterSyllabus(u.id, 'MCA') as any
-  const fee = getDisplayFee(u, 'MCA')
+  // Title and description fee: exact rupees from getExactFee, list price for a
+  // list-vs-discount fee. getDisplayFee's compact form was parsed from
+  // abbreviated pd.fees ("₹1.61L" for a ₹1,61,600 fee).
+  const feeTok = formatExactFeeShort(getExactFee(u, 'MCA'))
   const specCount = pd?.specs?.length || 3
   const nirfLabel = nirfForProgramme(u, 'MCA')
   const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
-  const title = fee.ok
+  const title = feeTok
     ? clampTitleFeeLed(
-        `${titleName} ${onlinePrefix(u.id)}MCA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
-        `${shortName} ${onlinePrefix(u.id)}MCA Fees ${year}: ${fee.compact}${naacSegment(u.naac)} [Review] | edifyedu.in`,
-        fee.compact ?? null,
+        `${titleName} ${onlinePrefix(u.id)}MCA Fees ${year}: ${feeTok}${naacSegment(u.naac)} [Review] | edifyedu.in`,
+        `${shortName} ${onlinePrefix(u.id)}MCA Fees ${year}: ${feeTok}${naacSegment(u.naac)} [Review] | edifyedu.in`,
+        feeTok,
       )
     : clampTitle(`${titleName} ${onlinePrefix(u.id)}MCA ${year}: ${naacPhrase(u.naac, "UGC-DEB Entitled")} [Review] | edifyedu.in`)
-  const baseDescription = clampDescription(syllabus?.metaDesc || (fee.ok
-    ? `${titleName} ${onlinePrefix(u.id)}MCA ${year}: ${fee.compact} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. Check syllabus and eligibility free.`
+  const baseDescription = clampDescription(syllabus?.metaDesc || (feeTok
+    ? `${titleName} ${onlinePrefix(u.id)}MCA ${year}: ${feeTok} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. Check syllabus and eligibility free.`
     : `${titleName} ${onlinePrefix(u.id)}MCA ${year}: ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`))
 
   const dynamicKw = [

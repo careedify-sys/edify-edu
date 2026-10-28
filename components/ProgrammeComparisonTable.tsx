@@ -20,7 +20,7 @@
 
 import Link from 'next/link'
 import { getUniversitiesByProgram, getSpecs, type Program, type University } from '@/lib/data'
-import { getDisplayFee } from '@/lib/fees'
+import { getExactFee, formatExactFee } from '@/lib/fees'
 import { hubResolves, isLinkable } from '@/lib/seo/safe-internal-links'
 import naacSnapshot from '@/data/naac-verified.json'
 import verifySlugMap from '@/lib/data/verify-slug-map.json'
@@ -58,7 +58,8 @@ export default function ProgrammeComparisonTable({
     .map(u => {
       const naac = verifiedNaac(u.id, today)
       const nirf = nirfCell(u)
-      const fee = getDisplayFee(u, program) as { ok: boolean; compact?: string; range?: string }
+      // Exact rupees with discounts labelled (getExactFee), not the compact form.
+      const fee = formatExactFee(getExactFee(u, program))
       const specs = getSpecs(u, program) || []
       // Absent for a university with no Supabase record, so no verification
       // page exists to link to. Never fall back to a guessed slug: it would
@@ -83,7 +84,7 @@ export default function ProgrammeComparisonTable({
   if (!rows.length) return null
 
   const withNaac = rows.filter(r => r.naac).length
-  const withFee = rows.filter(r => r.fee.ok).length
+  const withFee = rows.filter(r => r.fee).length
 
   return (
     <section className="card p-6 md:p-8 mt-6" id="comparison-table">
@@ -171,9 +172,9 @@ export default function ProgrammeComparisonTable({
                 </td>
                 <td className="px-3 py-3 text-center text-ink-2">{specCount || <span className="text-xs text-ink-3">n/a</span>}</td>
                 <td className="px-3 py-3 text-right">
-                  {fee.ok
-                    ? <span className="font-semibold text-navy">{fee.compact || fee.range}</span>
-                    : <span className="text-xs text-ink-3">Not published</span>}
+                  {fee
+                    ? <span className="font-semibold text-navy">{fee}</span>
+                    : <span className="text-xs text-ink-3">Contact our counsellor for current fee details</span>}
                 </td>
               </tr>
             ))}

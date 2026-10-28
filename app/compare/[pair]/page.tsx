@@ -92,6 +92,15 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
   const feeA = getProgramFee(uA, prog)
   const feeB = getProgramFee(uB, prog)
 
+  // The fee-difference FAQ is generated from the same getExactFee values as the
+  // table below, so the two cannot disagree. The hand-written answers quoted
+  // unlabelled ranges (LPU "Rs 1,61,600 to Rs 2,00,000") and savings derived
+  // from them; a suppressed fee now quotes no number at all.
+  const feeAnswer = `${nameA}: ${formatExactFee(feeA) ?? 'contact our counsellor for current fee details'}. ${nameB}: ${formatExactFee(feeB) ?? 'contact our counsellor for current fee details'}. Fees are indicative, so confirm the current figure on each university's official portal.`
+  const faqs = config.faqs.map(f =>
+    /fee|cost|cheap|expens|price|afford/i.test(f.q) && /(Rs|₹)\s?[\d,.]+/.test(f.a) ? { q: f.q, a: feeAnswer } : f,
+  )
+
   const specCountA = Array.isArray(pdA?.specs) ? pdA.specs.length : 0
   const specCountB = Array.isArray(pdB?.specs) ? pdB.specs.length : 0
 
@@ -105,7 +114,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
   }
   const faqSchema = {
     '@context': 'https://schema.org', '@type': 'FAQPage',
-    mainEntity: config.faqs.map(f => ({
+    mainEntity: faqs.map(f => ({
       '@type': 'Question', name: f.q,
       acceptedAnswer: { '@type': 'Answer', text: f.a },
     })),
@@ -234,7 +243,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
         {/* FAQs */}
         <h2 className="text-xl font-bold mb-4" style={{ color: '#0f172a' }}>Frequently Asked Questions</h2>
         <div className="space-y-3 mb-8">
-          {config.faqs.map((faq, i) => (
+          {faqs.map((faq, i) => (
             <details key={i} className="rounded-xl border border-slate-200 bg-white">
               <summary className="px-5 py-3 text-sm font-semibold cursor-pointer" style={{ color: '#0f172a' }}>{faq.q}</summary>
               <p className="px-5 pb-4 text-sm text-slate-600">{faq.a}</p>

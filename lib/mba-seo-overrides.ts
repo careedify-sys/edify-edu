@@ -21,17 +21,17 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
   // Sprint 1 FIX 5: previous title (87 chars) overflowed SERP cap. Rewritten
   // to the fee-led pattern used for the other Sprint 1 overrides, under 60c.
   'amity-university-online': {
-    title: 'Amity Online MBA Fees 2026: ₹2.07L-₹2.25L | edifyedu.in',
+    title: 'Amity Online MBA 2026: ₹2,07,000–₹2,25,000 | edifyedu.in',
     description: 'Amity University online MBA fees ₹2,07,000 to ₹2,25,000 total (₹8,906/mo EMI). 19 specializations, NAAC A+, WASC and QAA accredited. UGC-DEB approved. Zero-commission, verified fee data.',
     h1: 'Amity University Online MBA 2026: Fees, Specializations, and Honest Review',
     intro: 'The Amity University online MBA costs ₹2,07,000 to ₹2,25,000 in total over two years (four semesters), depending on the specialisation. You need a bachelor\'s degree with 50% marks to apply. Amity holds NAAC A+ accreditation, UGC-DEB approval and a NIRF Management rank of #49, and lists 19 specialisations, from Finance and Accounting to Business Analytics and Data Science. Amity also lists WASC (USA) and QAA (UK) accreditation on its official portal. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Fees are indicative, so confirm the current figure on online.amity.edu before you pay.',
   },
   // Uttaranchal: data.ts feeMin=99600 (one-time), feeMax=148000 (before the 30%
-  // scholarship); 1,03,600 is the semester-track total. The generic template
-  // rendered "₹99.6K-₹1.48L" at 61 chars, one over the cap, so clampTitle
-  // dropped the fee from the title entirely. "From ₹99.6K" keeps it fee-led.
+  // scholarship); 1,03,600 is the semester-track total. Since 2026-10-27 titles
+  // carry exact rupees, and a list-vs-scholarship fee shows the before-
+  // scholarship figure only, never a bare net ("From ₹99.6K" was both).
   'uttaranchal-university-online': {
-    title: 'Uttaranchal Online MBA Fees 2026: From ₹99.6K | edifyedu.in',
+    title: 'Uttaranchal Online MBA Fees 2026: ₹1,48,000 | edifyedu.in',
     description: 'Uttaranchal University online MBA fees: ₹1,03,600 after the 30% scholarship, or ₹99,600 paid upfront. 8 specialisations, NAAC A+, UGC-DEB approved.',
     h1: 'Uttaranchal University Online MBA 2026: Fees, Specialisations and Honest Review',
     intro: 'For the January 2027 batch, the Uttaranchal University online MBA lists at ₹1,48,000. A 30% scholarship brings it to ₹1,03,600, paid as four semester instalments of ₹25,900, and paying the full fee upfront costs ₹99,600. The programme holds NAAC A+ accreditation and UGC-DEB approval, with 8 specialisations including Logistics and Supply Chain, International Business and Digital Marketing. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Confirm the current fee on the official portal before you pay.',
@@ -42,20 +42,20 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
   // clampTitle dropped the fee and rendered "Manipal Univ Jaipur Online MBA
   // Fees 2026". "MUJ" frees enough room to carry the range.
   'manipal-university-jaipur-online': {
-    title: 'MUJ Online MBA Fees 2026: ₹1.56L-₹1.84L | edifyedu.in',
+    title: 'MUJ Online MBA Fees 2026: ₹1,84,000 | edifyedu.in',
     description: 'Manipal University Jaipur online MBA fees: ₹1,84,000 list, ₹1,56,400 after the 15% discount, EMI from ₹6,517. 13 specialisations, NAAC A+, UGC-DEB.',
     h1: 'Manipal University Jaipur (MUJ) Online MBA 2026: Fees, Specialisations and Honest Review',
     intro: 'For the January 2027 batch, the Manipal University Jaipur (MUJ) online MBA lists at ₹1,84,000, or ₹46,000 a semester. A 15% discount brings the total to ₹1,56,400, with EMI from ₹6,517 a month. The programme holds NAAC A+ accreditation, UGC-DEB approval and a NIRF Management rank of #81, with 13 specialisations including Finance, Analytics and Data Science, and BFSI. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Confirm the current fee on onlinemanipal.com before you pay.',
   },
   'lovely-professional-university-online': {
-    title: 'LPU Online MBA Fees 2026: ₹1.61L-₹2L | edifyedu.in',
-    description: 'Lovely Professional University (LPU) online MBA fees ₹1.61L to ₹2L total. NAAC A++, NIRF #44 Management, UGC-DEB approved. Compare with Amity, Chandigarh, NMIMS.',
+    title: 'LPU Online MBA Fees 2026: ₹2,00,000 | edifyedu.in',
+    description: 'LPU online MBA fees: ₹2,00,000 list; ₹1,46,240 to ₹1,61,600 by payment plan. NAAC A++, NIRF #44 Management, UGC-DEB approved. Compare with Amity, CU, NMIMS.',
     h1: 'LPU Online MBA 2026: Fees, Review, and Specialization Guide',
-    intro: 'The LPU (Lovely Professional University) online MBA costs ₹1,61,000 to ₹2,00,000 in total over two years (four semesters), and you can take up to four years to finish. You need a bachelor\'s degree with 50% marks to apply. LPU holds NAAC A++ accreditation, UGC-DEB approval and a NIRF Management rank of #44, and lists 12 specialisations, including Finance, Business Analytics, Data Science, and Banking and Financial Services. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Fees are indicative, so confirm the current figure on the official LPU Online portal before you pay.',
+    intro: 'The LPU (Lovely Professional University) online MBA lists at ₹2,00,000 for two years (four semesters). Paying semester-wise brings it to ₹1,61,600 and a lump sum to ₹1,46,240, and you can take up to four years to finish. You need a bachelor\'s degree with 50% marks to apply. LPU holds NAAC A++ accreditation, UGC-DEB approval and a NIRF Management rank of #44, and lists 12 specialisations, including Finance, Business Analytics, Data Science, and Banking and Financial Services. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Fees are indicative, so confirm the current figure on the official LPU Online portal before you pay.',
   },
   'nmims-online': {
-    title: 'NMIMS Online MBA Fees 2026: ₹1.96L-₹2.2L | edifyedu.in',
-    description: 'NMIMS (Narsee Monjee) online MBA fees ₹1.96L to ₹2.2L total. NAAC A++, NIRF #24 Management, UGC-DEB approved. Compare NMIMS vs Amity vs Symbiosis, zero commission.',
+    title: 'NMIMS Online MBA 2026: ₹1,96,000–₹2,20,000 | edifyedu.in',
+    description: 'NMIMS (Narsee Monjee) online MBA fees ₹1,96,000 to ₹2,20,000 total. NAAC A++, NIRF #24 Management, UGC-DEB approved. Compare NMIMS vs Amity vs Symbiosis, zero commission.',
     h1: 'NMIMS Online MBA 2026: Fees, Specializations, and Independent Review',
     intro: 'The NMIMS (Narsee Monjee Institute of Management Studies) online MBA costs ₹1,96,000 to ₹2,20,000 in total over two years, with up to four years allowed to finish. You need a bachelor\'s degree with 50% marks to apply. NMIMS holds NAAC A++ accreditation, UGC-DEB approval and a NIRF Management rank of #24, and offers 6 specialisations: Business, Financial, Human Resource, IT, Marketing, and Operations and Data Sciences Management. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Fees are indicative, so confirm the current figure on the official NMIMS portal before you pay.',
   },
@@ -87,28 +87,28 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
   // The bigger error was the other end: feeMax was 196000, which silently
   // dropped the ACCA tier and made the ceiling look ₹1L lower than it is.
   'jain-university-online': {
-    title: 'JAIN Online MBA Fees 2026: ₹1.6L-₹2.98L Total | edifyedu.in',
+    title: 'JAIN Online MBA 2026: ₹1,60,000–₹2,98,000 | edifyedu.in',
     description: 'JAIN Deemed University online MBA fees ₹1,60,000 to ₹2,98,000 by elective. NAAC A++, UGC-DEB approved. Zero-commission, verified fee data. Compare vs Amity, LPU, Chandigarh before you enrol.',
     h1: 'Jain University Online MBA 2026: Fees, Review, and Specializations',
     intro: 'Jain (Deemed-to-be) University online MBA has no single fee. It is priced per elective across four tiers, from ₹1,60,000 for Finance, Marketing, HR or General Management, up to ₹2,98,000 for International Finance, which is accredited by ACCA in the UK. Most electives sit at ₹1,75,000 or ₹1,96,000, spread across four semesters with EMI options through NBFC partners. The programme is NAAC A++ accredited with UGC-DEB approval. edifyedu.in reviews Jain University online MBA fees using only public regulatory and NIRF data, with no paid ranking influence. Fees are indicative, so confirm your elective on the official JAIN portal before you pay.',
   },
 
-  // Chandigarh: data.ts:2151 feeMin=165000, data.ts:2152 feeMax=220000.
-  // pd.fees (data.ts:2191) is the narrower "₹1.65L-₹1.80L" — that is the
-  // verified programme range. Reference (feeMax=₹2.2L) is NOT backed by
-  // pd.fees, so we display the narrower BACKED range per rule 3.
-  // NEEDS-VERIFICATION: does the 25% Early Bird apply to MBA, and what is
-  // the correct MBA net?
+  // Chandigarh: feeMin=165000, feeMax=220000. An earlier note here called
+  // pd.fees "₹1.65L-₹1.80L" the verified range; it is not. 1,80,000 is not a
+  // CU figure and both ends are early-bird nets.
+  // Resolved 2026-10-27: Rishi verified on the portal (Aug 2026) list 2,20,000,
+  // early-bird 1,80,400 Standard and 1,65,000 HBP / Business Analytics. The
+  // labelled figures live in lib/data.ts feeBreakdown.mba.
   'chandigarh-university-online': {
-    title: 'Chandigarh MBA Fees 2026: ₹1.65L-₹1.8L | edifyedu.in',
-    description: 'Chandigarh University online MBA fees ₹1,65,000 to ₹1,80,000. NAAC A+, NIRF #32 Management, UGC-DEB approved. 25% Early Bird Scholarship available. Zero-commission, verified fee data.',
+    title: 'Chandigarh MBA Fees 2026: ₹2,20,000 | edifyedu.in',
+    description: 'Chandigarh University online MBA fees: ₹2,20,000 list; ₹1,65,000 to ₹1,80,400 after early-bird. NAAC A+, NIRF #32 Management, UGC-DEB approved.',
     h1: 'Chandigarh University Online MBA 2026: Fees, Scholarships, and Review',
-    intro: 'The Chandigarh University online MBA costs ₹1,65,000 to ₹1,80,000 in total over two years (four semesters). You need a bachelor\'s degree with 50% marks to apply. Chandigarh University holds NAAC A+ accreditation, UGC-DEB approval and a NIRF Management rank of #32 (its NIRF University rank is #19), and lists 26 specialisations, from Finance and Marketing to FinTech and Data Science and AI. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Fees and scholarships change by batch, so confirm both on the official portal before you pay.',
+    intro: 'The Chandigarh University online MBA lists at ₹2,20,000 for two years (four semesters). The early-bird fee is ₹1,80,400 for the Standard programme and ₹1,65,000 for the HBP and Business Analytics variants. You need a bachelor\'s degree with 50% marks to apply. Chandigarh University holds NAAC A+ accreditation, UGC-DEB approval and a NIRF Management rank of #32 (its NIRF University rank is #19), and lists 26 specialisations, from Finance and Marketing to FinTech and Data Science and AI. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Fees and scholarships change by batch, so confirm both on the official portal before you pay.',
   },
 
   'dy-patil-university-online': {
-    title: 'DY Patil Online MBA Fees 2026: ₹1.75L | edifyedu.in',
-    description: 'D.Y. Patil University, Navi Mumbai online MBA fees ₹1.75L total. NAAC A++, UGC-DEB approved. Not the same institution as Dr. D.Y. Patil Vidyapeeth, Pune.',
+    title: 'DY Patil Online MBA Fees 2026: ₹1,75,000 | edifyedu.in',
+    description: 'D.Y. Patil University, Navi Mumbai online MBA fees ₹1,75,000 total. NAAC A++, UGC-DEB approved. Not the same institution as Dr. D.Y. Patil Vidyapeeth, Pune.',
     h1: 'DY Patil Online MBA 2026: Fees, Review, and Specialization Guide',
     intro: 'DY Patil University online MBA from its Navi Mumbai campus carries NAAC A++ accreditation and UGC-DEB approval. DY Patil online MBA fees cover a two-year program spanning Finance, Marketing, HR, and Operations specializations. The university\'s proximity to Mumbai\'s business district gives the degree employer visibility across Maharashtra. edifyedu.in reviews DY Patil online MBA fees against Amity, Symbiosis, and NMIMS using public NAAC and UGC-DEB data. No paid rankings or referral commissions influence this comparison.',
   },
@@ -123,15 +123,15 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
 
   // MAHE: no fee-strip issue on this override, kept intact.
   'manipal-academy-higher-education-online': {
-    title: 'Manipal (MAHE) Online MBA Fees 2026: ₹2.92L | edifyedu.in',
-    description: 'MAHE Manipal online MBA fees ₹2.92L total. NAAC A++, NIRF #39 Management, UGC-DEB approved. Compare MAHE vs Amity, Symbiosis, NMIMS. Zero-commission data.',
+    title: 'MAHE Online MBA Fees 2026: ₹2,92,000 | edifyedu.in',
+    description: 'MAHE Manipal online MBA fees ₹2,92,000 total. NAAC A++, NIRF #39 Management, UGC-DEB approved. Compare MAHE vs Amity, Symbiosis, NMIMS. Zero-commission data.',
     h1: 'MAHE Manipal Online MBA 2026: Fees, Specializations, and Review',
     intro: 'MAHE Manipal online MBA from Manipal Academy of Higher Education carries NAAC A++ accreditation and strong recognition across India\'s IT and consulting sectors. Manipal online MBA fees cover a two-year program with specializations in Finance, Marketing, HR, Business Analytics, and Digital Business. The UGC-DEB approved degree is delivered via the Online Manipal platform, with weekend sessions and on-demand recordings. edifyedu.in compares MAHE online MBA fees against Amity, Symbiosis, and NMIMS using public accreditation and NIRF data.',
   },
 
   // SMU: data.ts:1337 feeMin=120000, data.ts:1338 feeMax=120000
   'sikkim-manipal-university-online': {
-    title: 'SMU Online MBA Fees 2026: ₹1.2L Total | edifyedu.in',
+    title: 'SMU Online MBA Fees 2026: ₹1,20,000 Total | edifyedu.in',
     description: 'Sikkim Manipal (SMU) online MBA total fee ₹1,20,000 for the full 2-year programme. NAAC A+, UGC-DEB approved. Zero-commission, verified fee data. Compare SMU vs Amity, LPU, MAHE.',
     h1: 'Sikkim Manipal University (SMU) Online MBA 2026: Fees and Review',
     intro: 'Sikkim Manipal University online MBA total fee is ₹1,20,000 for the full two-year programme, delivered under the UGC-DEB framework with NAAC A+ accreditation. Specializations cover Marketing, Finance, Human Resource, Systems (IT Management), Operations and Supply Chain, and Healthcare. edifyedu.in reviews SMU online MBA fees using public regulatory data only, without referral commissions.',
@@ -139,7 +139,7 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
 
   // Symbiosis: data.ts:1437 feeMin=315000, data.ts:1438 feeMax=370000
   'symbiosis-university-online': {
-    title: 'Symbiosis SSODL MBA Fees 2026: ₹3.15L-₹3.7L | edifyedu.in',
+    title: 'Symbiosis MBA 2026: ₹3,15,000–₹3,70,000 | edifyedu.in',
     description: 'Symbiosis SSODL online MBA fees ₹3,15,000 to ₹3,70,000 total. NAAC A++, NIRF #11 Management, UGC-DEB approved. Zero-commission, verified fee data. Compare vs NMIMS, Amity, MAHE.',
     h1: 'Symbiosis Online MBA 2026: SSODL Fees, Specializations, and Honest Review',
     intro: 'The Symbiosis online MBA from SSODL (Symbiosis School for Online and Digital Learning, Pune) costs ₹3,15,000 to ₹3,70,000 in total over two years, depending on the specialisation. You need a bachelor\'s degree with 50% marks to apply. Symbiosis holds NAAC A++ accreditation, UGC-DEB approval and a NIRF Management rank of #11, and offers 9 specialisations, including Finance, Business Analytics, Logistics and Supply Chain, and Agri Operations Management. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Fees are indicative, so confirm the current figure on the official SSODL portal before you pay.',

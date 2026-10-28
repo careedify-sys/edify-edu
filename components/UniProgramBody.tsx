@@ -10,7 +10,7 @@ import { getShortUniversityName } from '@/lib/format'
 import { COUPONS } from '@/lib/coupons'
 import type { Program } from '@/lib/data'
 import { getPageContent } from '@/lib/data/page-content'
-import { getDisplayFee } from '@/lib/fees'
+import { getExactFee, formatExactFee, FEE_COUNSELLOR_LINE } from '@/lib/fees'
 import { nirfForProgramme } from '@/lib/data-slim'
 import type { PageContent } from '@/lib/data/page-content-schema'
 
@@ -168,8 +168,9 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
   // printed the MBA fee on every BBA, BCA, MCA and B.Com hub: MUJ BBA said
   // "₹1,56,400 to ₹1,84,000 across 3 Years" in its FAQ and FAQPage schema.
   // getDisplayFee resolves the fee for this programme.
-  const programFee = getDisplayFee(u, program)
-  const feeStr = programFee.ok ? programFee.range : null
+  // Exact rupees via getExactFee. getDisplayFee's range was parsed from
+  // abbreviated pd.fees, so the LPU MBA FAQ said "₹1,61,000 to ₹2,00,000".
+  const feeStr = formatExactFee(getExactFee(u, program))
   // Was "a NIRF rank of #22" from u.nirf on every programme, so the MBA FAQ gave
   // Amity's University rank with no category. Management first for MBA/BBA.
   const nirfLabel = nirfForProgramme(u, program)
@@ -177,7 +178,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
 
   const templateFaqs: { q: string; a: string }[] = [
     { q: `What is the total fee for ${program} at ${cleanName}?`,
-      a: `${feeSentence(feeStr, pd.duration || '2 years', programFee.ok)} ${emiSentence(u.emiFrom)}` },
+      a: `${feeSentence(feeStr, pd.duration || '2 years', !!feeStr)} ${emiSentence(u.emiFrom)}` },
     { q: `Is the ${program} degree from ${cleanName} valid?`,
       a: `Yes. ${cleanName} is UGC-DEB approved. UGC-DEB approved online degrees are recognised as equivalent to on-campus degrees for higher education and government recruitment.` },
     ...(specs.length ? [{ q: `What specialisations does ${cleanName} offer in ${program}?`,
@@ -341,7 +342,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                   universityId={u.id}
                   programSlug={programSlug}
                   program={program}
-                  fees={getDisplayFee(u, program).ok ? (getDisplayFee(u, program).compact || pd.fees) : 'On request'}
+                  fees={formatExactFee(getExactFee(u, program)) ?? FEE_COUNSELLOR_LINE}
                   duration={pd.duration}
                   cleanName={cleanName}
                 />

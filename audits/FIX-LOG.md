@@ -1,5 +1,25 @@
 # Fix log
 
+## 2026-10-28 · Fee display unified on getExactFee: cards, hero, schema, titles, compare FAQs
+
+Rishi's rule from the tech-health review: every fee is exact rupees, labelled list vs discount or payment mode, never
+read from an abbreviated "₹X.XXL" string or raw feeMin/feeMax. Several surfaces broke it.
+- University cards printed raw slim fees ("₹100K" for ₹99,600).
+- The hub hero and spec cards printed getDisplayFee's compact form.
+- Spec-page titles printed compactFee(pd.fees) with no getDisplayFee gate, so suppressed placeholders reached titles.
+- The overview page quoted the MBA-led feeMin–feeMax range for every programme tab.
+- FeeBreakdown divided totals by semesters.
+- Schema used 161000 for LPU.
+- Hand-written compare FAQs quoted unlabelled ranges.
+
+All now route through getExactFee and lib/seo/program-schema.ts. Uttaranchal gets a feeBreakdown from Rishi's
+26 Oct chart. The 22 compare fee FAQs are generated from the table's values, and the /programs/mba fee range is
+generated from data.
+
+Cost, flagged for Rishi: 179 programme fees whose only figure is an abbreviated string now show the counsellor line.
+List-price titles raise the headline figure for discounted universities. Before/after per string:
+audits/fee-display-unify-2026-10-28.csv; summary and remaining surfaces: audits/fee-display-unify-2026-10-28.md.
+
 ## 2026-10-27 · Fee review round 4: Amity BBA payment modes, MUJ/UU checked, two unsourced FAQ claims removed
 
 - Amity BBA gets a `feeBreakdown` with `modes`, a new form for payment options that are not a discount. It renders

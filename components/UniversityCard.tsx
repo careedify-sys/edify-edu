@@ -215,7 +215,7 @@ export default function UniversityCard({ u, highlightProgram, specSlug, programF
               <div className="font-bold text-base" style={{ color:'var(--navy-light)' }}>
                 {programFee === undefined
                   ? <>{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</>
-                  : programFee ?? 'Ask counsellor'}
+                  : programFee ?? 'Contact our counsellor for current fee details'}
               </div>
             </div>
             {/* emiFrom is MBA-derived, so it is hidden when a programme fee is shown */}

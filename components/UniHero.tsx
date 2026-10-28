@@ -2,8 +2,8 @@
 
 import Image from 'next/image'
 import type { University, ProgramDetail, Program } from '@/lib/data'
-import { cleanCareerOutcome, formatINR, getProgramLevel } from '@/lib/format'
-import { getDisplayFee } from '@/lib/fees'
+import { cleanCareerOutcome, getProgramLevel } from '@/lib/format'
+import { getExactFee, formatExactFeeShort, formatExactFeeDetail, FEE_COUNSELLOR_LINE } from '@/lib/fees'
 import { TrendingUp } from 'lucide-react'
 import LOGOS_MANIFEST from '@/lib/data/logos-manifest.json'
 import RankingBadge from './RankingBadge'
@@ -53,13 +53,17 @@ export default function UniHero({ u, program, pd, cleanName, spec, customH1 }: P
 
   const eligibilityLabel = ['MBA', 'MCA'].includes(program) ? 'Grad + 50%' : '10+2 + 50%'
 
-  const feeDisplay = getDisplayFee(u, program as Program)
-  const feeValue = feeDisplay.ok
-    ? (feeDisplay.compact || pd.fees || formatINR(u.feeMin))
-    : 'On request'
+  // Exact rupees, discount or payment mode labelled (getExactFee). This read
+  // getDisplayFee's compact form, so Uttaranchal showed "₹99.6K-₹1.48L", and
+  // fell back to pd.fees or the raw MBA-led feeMin.
+  // The tile shows the short token large and the label small underneath, so
+  // a long labelled fee does not wrap into a column at 22px.
+  const exactFee = getExactFee(u, program as Program)
+  const feeValue = formatExactFeeShort(exactFee) ?? FEE_COUNSELLOR_LINE
+  const feeDetail = formatExactFeeDetail(exactFee)
 
   const stats = [
-    { label: 'Total Fees', value: feeValue, highlight: true },
+    { label: 'Total Fees', value: feeValue, highlight: true, sub: feeDetail },
     { label: 'Duration',   value: pd.duration || '2 Years',       highlight: false },
     { label: 'Eligibility', value: eligibilityLabel,              highlight: false },
     { label: 'NAAC',       value: u.naac,                         highlight: false },
@@ -139,13 +143,16 @@ export default function UniHero({ u, program, pd, cleanName, spec, customH1 }: P
               <div
                 className="font-bold mt-0.5"
                 style={{
-                  fontSize: s.highlight ? 22 : 16,
+                  fontSize: s.highlight ? (s.value === FEE_COUNSELLOR_LINE ? 13 : 22) : 16,
                   color: s.highlight ? '#F4A024' : '#fff',
                   lineHeight: 1.2,
                 }}
               >
                 {s.value}
               </div>
+              {'sub' in s && s.sub && (
+                <div className="text-[11px] text-slate-300 mt-0.5 leading-snug" style={{ maxWidth: 240 }}>{s.sub}</div>
+              )}
             </div>
           ))}
         </div>

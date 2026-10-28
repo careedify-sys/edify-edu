@@ -6,16 +6,13 @@ import type { CanonicalSpec } from '@/lib/specMapping'
 interface Props {
   spec: CanonicalSpec
   uniCount: number
-  feeFloor: number
+  // Exact rupees from getExactFee list-price bounds, or null when none of the
+  // spec's universities has a showable fee. Was a "\u20b91.6L" abbreviation of the
+  // raw slim feeMin.
+  feeFloorText: string | null
 }
 
-function formatFee(n: number): string {
-  if (n >= 100000) return `\u20b9${(n / 100000).toFixed(1)}L`
-  if (n >= 1000) return `\u20b9${Math.round(n / 1000)}K`
-  return `\u20b9${n}`
-}
-
-export default function SpecCard({ spec, uniCount, feeFloor }: Props) {
+export default function SpecCard({ spec, uniCount, feeFloorText }: Props) {
   const Icon = spec.icon
 
   return (
@@ -35,7 +32,7 @@ export default function SpecCard({ spec, uniCount, feeFloor }: Props) {
         </div>
       </div>
       <div className="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-100">
-        <span>{uniCount} universities - from {formatFee(feeFloor)}</span>
+        <span>{uniCount} universities{feeFloorText ? ` - from ${feeFloorText}` : ''}</span>
         <span className="text-amber-600 font-semibold group-hover:underline">View {uniCount} Unis →</span>
       </div>
     </Link>

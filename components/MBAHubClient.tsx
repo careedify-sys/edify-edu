@@ -3,7 +3,8 @@
 import { useMemo } from 'react'
 import Link from 'next/link'
 import { GraduationCap, Layers, Wallet, BadgeCheck, ChevronRight, TrendingUp, Shield, BookOpen } from 'lucide-react'
-import { UNIS_SLIM, formatFeeSlim } from '@/lib/data-slim'
+import { UNIS_SLIM } from '@/lib/data-slim'
+import { formatINR } from '@/lib/format'
 import { CANONICAL_SPECS } from '@/lib/specMapping'
 import UniversityCard from '@/components/UniversityCard'
 import SpecCard from '@/components/SpecCard'
@@ -23,16 +24,16 @@ const TRAFFIC_ORDER = [
 
 // Sorted by NIRF Management rank 2025 (primary sort criterion)
 const TOP_10_PICKS = [
-  { id: 'symbiosis-university-online', bestFor: 'NIRF #11 Management. NAAC A++. Strongest HR and marketing brand among online MBAs. Premium MNC recruiter recall.', fee: '3.15L' },
-  { id: 'nmims-online', bestFor: 'NIRF #17 Management. AACSB member institution. Strongest brand for BFSI, finance, and analytics careers.', fee: '1.96L' },
-  { id: 'amrita-vishwa-vidyapeetham-online', bestFor: 'NIRF #26 Management. NAAC A++. Grant Thornton co-branded Analytics, FinTech, and ESG tracks.', fee: '2.60L' },
-  { id: 'chandigarh-university-online', bestFor: 'NIRF #32 Management. NAAC A+. Bundled Harvard Business Publishing, PwC, and PMI certifications at no extra cost.', fee: '1.65L' },
-  { id: 'upes-online', bestFor: 'NIRF #36 Management. Strong in Oil and Gas, Energy, and Logistics specialisations. Industry-integrated curriculum.', fee: '2.45L' },
-  { id: 'lovely-professional-university-online', bestFor: 'NIRF #44 Management. NAAC A++. Tech-driven LMS at affordable price. Strong North India alumni network.', fee: '1.61L' },
-  { id: 'amity-university-online', bestFor: 'NIRF #49 Management. WASC (USA) + QAA (UK) + WES recognized. Best for international career mobility.', fee: '2.07L' },
-  { id: 'manipal-academy-higher-education-online', bestFor: 'NIRF #4 University. NAAC A++. Strongest Manipal brand prestige. Ideal for South India and healthcare careers.', fee: '2.92L' },
-  { id: 'jain-university-online', bestFor: 'NIRF #73 Management. NAAC A++. 19 specialisations with ACCA integration. Strong Bangalore tech ecosystem.', fee: '1.96L' },
-  { id: 'ignou-online', bestFor: 'Central government university. NAAC A++. Lowest fee at Rs 66,000. Strongest government job eligibility.', fee: '0.66L' },
+  { id: 'symbiosis-university-online', bestFor: 'NIRF #11 Management. NAAC A++. Strongest HR and marketing brand among online MBAs. Premium MNC recruiter recall.' },
+  { id: 'nmims-online', bestFor: 'NIRF #17 Management. AACSB member institution. Strongest brand for BFSI, finance, and analytics careers.' },
+  { id: 'amrita-vishwa-vidyapeetham-online', bestFor: 'NIRF #26 Management. NAAC A++. Grant Thornton co-branded Analytics, FinTech, and ESG tracks.' },
+  { id: 'chandigarh-university-online', bestFor: 'NIRF #32 Management. NAAC A+. Bundled Harvard Business Publishing, PwC, and PMI certifications at no extra cost.' },
+  { id: 'upes-online', bestFor: 'NIRF #36 Management. Strong in Oil and Gas, Energy, and Logistics specialisations. Industry-integrated curriculum.' },
+  { id: 'lovely-professional-university-online', bestFor: 'NIRF #44 Management. NAAC A++. Tech-driven LMS at affordable price. Strong North India alumni network.' },
+  { id: 'amity-university-online', bestFor: 'NIRF #49 Management. WASC (USA) + QAA (UK) + WES recognized. Best for international career mobility.' },
+  { id: 'manipal-academy-higher-education-online', bestFor: 'NIRF #4 University. NAAC A++. Strongest Manipal brand prestige. Ideal for South India and healthcare careers.' },
+  { id: 'jain-university-online', bestFor: 'NIRF #73 Management. NAAC A++. 19 specialisations with ACCA integration. Strong Bangalore tech ecosystem.' },
+  { id: 'ignou-online', bestFor: 'Central government university. NAAC A++. Lowest fee at Rs 66,000. Strongest government job eligibility.' },
 ]
 
 const SALARY_DATA = [
@@ -45,10 +46,28 @@ const SALARY_DATA = [
   { spec: 'Healthcare Mgmt', range: '6-11 LPA', growth: 'Growing' },
 ]
 
+const FEE_FAQ_Q = 'How much does online MBA cost in India in 2026?'
+
+/**
+ * Fee data for the hub, built on the server from getExactFee. text: full
+ * labelled fee per university; short: one token (list price for a discounted
+ * fee); floor: the list-price lower bound used for spec-card floors; range:
+ * list-price bounds across indexable MBA hubs, or null.
+ */
+export interface MbaHubFees {
+  text: Record<string, string>
+  short: Record<string, string>
+  floor: Record<string, number>
+  range: { min: number; max: number; count: number } | null
+}
+
 const FAQS = [
   { q: 'Is online MBA valid for jobs and government recognition?', a: 'Yes. UGC-DEB approved online MBA degrees are legally equivalent to campus degrees under UGC 2020 regulations. Per UGC (Online Programmes) Regulations 2018, the degree certificate clearly identifies the programme as "Online" mode: this is by regulator design and carries full legal validity. Valid for UPSC, IBPS, SBI PO, PSU recruitment, and all private-sector employment. Some government notifications may specifically require "regular mode" degrees, so verify each job posting individually.' },
   { q: 'What is the difference between online MBA and distance MBA?', a: 'Online MBA uses a digital LMS with live weekend sessions, recorded lectures, AI-proctored online exams, and interactive discussion forums. Distance MBA uses printed study material with minimal digital interaction. UGC-DEB 2020 regulations brought online degrees at par with campus degrees in terms of legal validity and employer acceptance.' },
-  { q: 'How much does online MBA cost in India in 2026?', a: 'Total programme fees range from Rs 66,000 (IGNOU) to Rs 3,70,000 (Symbiosis SSODL). Most popular programmes fall between Rs 1,50,000 and Rs 2,25,000. Zero-cost EMI is available at many universities. One-time payment discounts of Rs 10,000-20,000 are common.' },
+  // Answer built from data in the component (feeAnswer). It was hardcoded as
+  // "Rs 66,000 (IGNOU) to Rs 3,70,000 (Symbiosis SSODL)" plus two unsourced
+  // claims (a "most popular" band and "one-time discounts are common").
+  { q: FEE_FAQ_Q, a: '' },
   { q: 'Do online MBAs offer placement support?', a: 'Most online MBA programmes provide career services portals, job boards, and resume review. Active campus-style placement drives are rare for online students. Working professionals typically leverage the degree for internal promotions or self-directed job search through LinkedIn. Mid-career professionals benefit most from online MBA placement support.' },
   { q: 'Which MBA specialisation should I pick?', a: 'Match to your career goal. Finance for banking and investment roles. Marketing for FMCG and digital companies. HR for people management. Business Analytics for data-driven consulting and strategy roles. Healthcare Management for hospital administration. Compare Semester 3-4 subjects across universities before choosing.' },
   { q: 'What is the difference between AICTE approval and UGC-DEB approval for online MBA?', a: 'UGC-DEB (Distance Education Bureau) approves universities to offer online programmes. AICTE approves technical and management programmes at deemed universities. For an online MBA, you need both: UGC-DEB entitlement for the university plus AICTE recognition for the MBA programme (at deemed universities). State universities do not need AICTE approval.' },
@@ -60,7 +79,7 @@ const FAQS = [
   { q: 'Can I switch specialisation during my online MBA?', a: 'Most universities allow specialisation changes before Semester 3 begins, since specialisation subjects start from Semester 3. After Semester 3, switching is difficult. Check with your university admissions office for their specific policy. Some universities charge an administrative fee for late changes.' },
 ]
 
-export default function MBAHubClient() {
+export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
   const mbaUnis = useMemo(() => {
     return UNIS_SLIM
       .filter(u => u.programs.includes('MBA'))
@@ -71,8 +90,13 @@ export default function MBAHubClient() {
       })
   }, [])
 
-  const feeFloor = Math.min(...mbaUnis.map(u => u.feeMin).filter(f => f > 0))
-  const feeCeiling = Math.max(...mbaUnis.map(u => u.feeMax).filter(f => f > 0))
+  // Exact rupees at list price across indexable MBA hubs, never the raw slim
+  // feeMin/feeMax (MBA-led, abbreviated by formatFeeSlim).
+  const rangeText = fees.range ? `${formatINR(fees.range.min)} to ${formatINR(fees.range.max)}` : null
+  const feeAnswer = fees.range
+    ? `Total programme fees range from ${rangeText} at list price across the ${fees.range.count} online MBA programmes we index. Fees are indicative, so confirm the current figure on each university's official portal. Zero-cost EMI is available at many universities.`
+    : 'Contact our counsellor for current fee details.'
+  const faqs = FAQS.map(f => (f.q === FEE_FAQ_Q ? { q: f.q, a: feeAnswer } : f))
 
   const specWithCounts = useMemo(() => {
     return CANONICAL_SPECS.map(spec => {
@@ -90,11 +114,10 @@ export default function MBAHubClient() {
           })
         })
       })
-      const fees = matchingUnis.map(u => u.feeMin).filter(f => f > 0)
-      const feeMin = fees.length > 0 ? Math.min(...fees) : 0
-      return { spec, uniCount: matchingUnis.length, feeFloor: feeMin }
+      const floors = matchingUnis.map(u => fees.floor[u.id]).filter((f): f is number => typeof f === 'number' && f > 0)
+      return { spec, uniCount: matchingUnis.length, feeFloor: floors.length ? Math.min(...floors) : null }
     }).filter(s => s.uniCount > 0).sort((a, b) => b.uniCount - a.uniCount)
-  }, [mbaUnis])
+  }, [mbaUnis, fees.floor])
 
   return (
     <>
@@ -115,7 +138,7 @@ export default function MBAHubClient() {
               <Layers size={14} className="text-amber-400" /> 150+ Specialisations
             </span>
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
-              <Wallet size={14} className="text-amber-400" /> {formatFeeSlim(feeFloor)} - {formatFeeSlim(feeCeiling)}
+              <Wallet size={14} className="text-amber-400" /> {rangeText ?? 'Contact our counsellor for current fee details'}
             </span>
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
               <BadgeCheck size={14} className="text-amber-400" /> NIRF 2025 Verified
@@ -184,7 +207,7 @@ export default function MBAHubClient() {
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-center gap-2 mb-1">
                       <h3 className="font-bold text-base" style={{ color: '#0B1533' }}>{uni.name.replace(/\s+Online$/i, '')}</h3>
-                      <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-green-100 text-green-800">Rs {pick.fee}</span>
+                      <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-green-100 text-green-800">{fees.short[pick.id] ?? 'Contact our counsellor for current fee details'}</span>
                       {uni.naac && <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">NAAC {uni.naac}</span>}
                       {(() => {
                         const mgt = (uni as any).nirfMgt
@@ -233,7 +256,7 @@ export default function MBAHubClient() {
         <p className="text-sm text-slate-500 mb-6">Sorted by popularity. Click any card for full fees, syllabus, and specialisation details.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {mbaUnis.map(u => (
-            <UniversityCard key={u.id} u={u as any} highlightProgram="MBA" />
+            <UniversityCard key={u.id} u={u as any} highlightProgram="MBA" programFee={fees.text[u.id] ?? null} />
           ))}
         </div>
       </section>
@@ -244,7 +267,7 @@ export default function MBAHubClient() {
         <p className="text-sm text-slate-500 mb-6">Dedicated comparison pages for each MBA specialisation with syllabus, career scope, and salary data.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {specWithCounts.map(({ spec, uniCount, feeFloor: sf }) => (
-            <SpecCard key={spec.slug} spec={spec} uniCount={uniCount} feeFloor={sf} />
+            <SpecCard key={spec.slug} spec={spec} uniCount={uniCount} feeFloorText={sf ? formatINR(sf) : null} />
           ))}
         </div>
       </section>
@@ -375,7 +398,7 @@ export default function MBAHubClient() {
       <section className="max-w-3xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold mb-6" style={{ color: '#0B1533' }}>Frequently Asked Questions About Online MBA in India</h2>
         <div className="space-y-3">
-          {FAQS.map((faq, i) => (
+          {faqs.map((faq, i) => (
             <details key={i} className="rounded-xl border border-slate-200 bg-white">
               <summary className="px-5 py-3 text-sm font-semibold cursor-pointer" style={{ color: '#0B1533' }}>{faq.q}</summary>
               <p className="px-5 pb-4 text-sm text-slate-600">{faq.a}</p>
