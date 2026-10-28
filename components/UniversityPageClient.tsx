@@ -105,7 +105,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
     },
     {
       q:`What is the total fee for ${u.name} ${displayProgram}?`,
-      a:`${feeText(displayProgram) ? `The total fee for ${u.name} ${displayProgram} is ${feeText(displayProgram)} for the complete program. EMI options start from ₹${u.emiFrom.toLocaleString()} per month.` : `${u.name} has not published a fee for ${displayProgram} on this page yet. Request the current intake fee in writing before you apply.`} Semester-wise payment is available. Scholarships and bank tie-ups may reduce the final cost, so fill the form to check what you qualify for.`
+      a:`${feeText(displayProgram) ? `The total fee for ${u.name} ${displayProgram} is ${feeText(displayProgram)} for the complete program.${displayProgram === 'MBA' && u.emiFrom > 0 ? ` EMI options start from ₹${u.emiFrom.toLocaleString()} per month.` : ''}` : `${u.name} has not published a fee for ${displayProgram} on this page yet. Request the current intake fee in writing before you apply.`} Semester-wise payment is available. Scholarships and bank tie-ups may reduce the final cost, so fill the form to check what you qualify for.`
     },
     {
       q:`What programs does ${u.name} offer online?`,

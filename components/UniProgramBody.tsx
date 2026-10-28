@@ -48,7 +48,7 @@ import { getProgramLinks } from '@/lib/internal-links'
 import ProgramBlogLinks from './ProgramBlogLinks'
 import SiblingProgrammes from './SiblingProgrammes'
 import { getSiblingProgrammes, getUniversityOverviewLink, getVerifyPage, resolveSpecHref } from '@/lib/seo/safe-internal-links'
-import { feeSentence, emiSentence } from '@/lib/seo/display-guards'
+import { feeSentence, emiSentence, programmeEmiFrom, NO_PROGRAMME_EMI } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 
 interface Props {
@@ -181,7 +181,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
 
   const templateFaqs: { q: string; a: string }[] = [
     { q: `What is the total fee for ${program} at ${cleanName}?`,
-      a: `${feeSentence(feeStr, pd.duration || '2 years', !!feeStr)} ${emiSentence(u.emiFrom)}` },
+      a: `${feeSentence(feeStr, pd.duration || '2 years', !!feeStr)} ${emiSentence(programmeEmiFrom(u, program), program === 'MBA' ? undefined : NO_PROGRAMME_EMI)}` },
     { q: `Is the ${program} degree from ${cleanName} valid?`,
       a: `Yes. ${cleanName} is UGC-DEB approved. UGC-DEB approved online degrees are recognised as equivalent to on-campus degrees for higher education and government recruitment.` },
     ...(specs.length ? [{ q: `What specialisations does ${cleanName} offer in ${program}?`,
@@ -199,7 +199,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
     { q: `What placement support does ${cleanName} provide?`,
       a: `Our counsellor can confirm the current placement support offered by ${cleanName} for this programme.` },
     { q: `What is the EMI for ${cleanName} ${program}?`,
-      a: `${emiSentence(u.emiFrom)} Our counsellor can confirm the current EMI tenure options and lender panel.` },
+      a: `${emiSentence(programmeEmiFrom(u, program), program === 'MBA' ? undefined : NO_PROGRAMME_EMI)} Our counsellor can confirm the current EMI tenure options and lender panel.` },
   ]
 
   // Mode-unverified universities: the template set above asserts a valid online
@@ -376,7 +376,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               />
 
               {/* §11 EMI */}
-              <EMIPlans u={u} pd={pd} />
+              <EMIPlans u={u} pd={pd} program={program} />
 
               {/* §12 Certificate */}
               <SampleCertificate

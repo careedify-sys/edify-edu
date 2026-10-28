@@ -1,5 +1,19 @@
 # Fix log
 
+## 2026-10-28 · MBA EMI no longer printed on non-MBA programme pages
+
+- **Why:** u.emiFrom is entered against the MBA fee and EMI is not stored per programme, but programme hubs and spec
+  pages printed it for every programme. LPU BCA and MCA said "EMI from ₹6,708" (LPU MBA), MUJ BBA ₹6,517 against a
+  ₹4,000 chart. EMIPlans was worse: it split u.feeMin (the MBA fee) into 6/12/24-month plans on every hub.
+- **Fix:** programmeEmiFrom(u, program) in lib/seo/display-guards.ts returns emiFrom for MBA and 0 otherwise. The hub
+  and spec FAQs, the FeeBreakdown EMI row and EMIPlans use it, and the university page FAQ drops the EMI clause for a
+  non-MBA programme. Non-MBA FAQs say "EdifyEdu does not list a verified EMI figure for this programme yet." This
+  follows the existing MBA-only rule in ProgramPageClient and UniversityCard; no EMI is derived from a fee.
+- **Verified in the build:** ₹6,708 is on the LPU MBA hub 4 times and on its BCA, MCA and BBA hubs 0 times; MUJ ₹6,517
+  is on the MBA hub 14 times and on BBA 0 times. EMI Plans renders on the MBA hub only.
+- **Not changed:** compare pages and the university overview still show emiFrom labelled as the university EMI.
+  A real per-programme EMI needs a data field, which only Rishi can fill.
+
 ## 2026-10-28 · LPU BCA fee confirmed
 
 - **Rishi confirmed:** ₹20,400 per semester (6 semesters, ₹1,22,400 semester-wise) or ₹1,11,360 lump sum. The

@@ -2,15 +2,18 @@ import type { University, ProgramDetail } from '@/lib/data'
 import Link from 'next/link'
 import { formatINR } from '@/lib/format'
 import { CreditCard } from 'lucide-react'
+import { programmeEmiFrom } from '@/lib/seo/display-guards'
 
 interface Props {
   u: University
   pd: ProgramDetail
+  program: string
 }
 
-export default function EMIPlans({ u, pd }: Props) {
-  // Don't render EMI section if emiFrom is 0 (uni doesn't offer EMI)
-  if (!u.emiFrom || u.emiFrom <= 0) return null
+export default function EMIPlans({ u, pd, program }: Props) {
+  // Don't render EMI section if emiFrom is 0 (uni doesn't offer EMI). The plans
+  // divide u.feeMin, the MBA fee, so they are MBA-only too.
+  if (programmeEmiFrom(u, program) <= 0) return null
 
   const totalFeeNum = u.feeMin
   const emi6  = Math.round(totalFeeNum / 6)

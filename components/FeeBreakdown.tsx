@@ -4,6 +4,7 @@ import { formatINR } from '@/lib/format'
 import { getExactFee, formatExactFee, formatPublishedSemesterFee } from '@/lib/fees'
 import { IndianRupee, AlertTriangle } from 'lucide-react'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
+import { programmeEmiFrom } from '@/lib/seo/display-guards'
 
 interface Props {
   u: University
@@ -55,7 +56,7 @@ export default function FeeBreakdown({ u, pd, program, cleanName, headingOverrid
   const rows = [
     { label: 'Total Program Fee', value: totalText, highlight: true },
     ...(semText ? [{ label: 'Per Semester', value: semText }] : []),
-    ...(u.emiFrom > 0 ? [{ label: 'EMI starts from', value: `${formatINR(u.emiFrom)}/month` }] : []),
+    ...(programmeEmiFrom(u, program) > 0 ? [{ label: 'EMI starts from', value: `${formatINR(u.emiFrom)}/month` }] : []),
     { label: 'Registration / Admission Fee', value: 'Included in total' },
     { label: 'Exam Fee', value: 'Included in total (usually)' },
     { label: 'Study Material', value: 'Included (digital)' },

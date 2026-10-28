@@ -45,14 +45,28 @@ export function emiPhrase(emiFrom?: number): string | null {
 }
 
 /**
+ * u.emiFrom is the MBA EMI: it was entered against the MBA fee, and EMI is not
+ * stored per programme. LPU BCA and MCA hubs printed the MBA's ₹6,708, and
+ * MUJ BBA ₹6,517 against a ₹4,000 chart. Returns 0 for any other programme so
+ * the guards below fall back to the no-figure line.
+ */
+export function programmeEmiFrom(u: { emiFrom?: number }, program: string): number {
+  return program === 'MBA' ? (u.emiFrom ?? 0) : 0
+}
+
+/** Said instead of an EMI figure when only the MBA one is on record. */
+export const NO_PROGRAMME_EMI = 'EdifyEdu does not list a verified EMI figure for this programme yet.'
+
+/**
  * A whole "EMI starts from X." sentence, or the counsellor line when there is
  * no fee to base an EMI on. Never emits "EMI starts from ₹0/month".
  */
-export function emiSentence(emiFrom?: number): string {
+export function emiSentence(
+  emiFrom?: number,
+  fallback = 'EMI options are confirmed once the university publishes the current intake fee.',
+): string {
   const emi = emiPhrase(emiFrom)
-  return emi
-    ? `EMI starts from ${emi}.`
-    : 'EMI options are confirmed once the university publishes the current intake fee.'
+  return emi ? `EMI starts from ${emi}.` : fallback
 }
 
 /**
