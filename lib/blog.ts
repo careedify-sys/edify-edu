@@ -6204,7 +6204,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'online-manipal-mba-review-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: '2026-10-29',
     title: 'Online Manipal MBA Review 2026: MAHE vs MUJ vs SMU Compared',
     seoTitle: 'Online Manipal MBA 2026: MAHE vs MUJ vs SMU Fees, NIRF, Honest Comparison',
     metaDescription: 'Compare Online Manipal MBA from MAHE, MUJ and SMU on fees, specialisations, rankings and student feedback. Full honest review for 2026.',
@@ -6322,88 +6322,31 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
     </div>
 
-    <h2>Online Manipal MBA 2026 EEAT Notes</h2>
+    <h2>Online Manipal MBA 2026: Summary</h2>
 
-<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Data verified from onlinemanipal.com, UGC-DEB approval list, NAAC plus NIRF databases.</em></p>
+<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Summary updated 29 October 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. It restates the facts in the review above. Verify current fees and entry rules for each university at onlinemanipal.com and the UGC-DEB list.</em></p>
 
-<div class="callout-key"><strong>One-line frame for Online Manipal 2026:</strong> 3 universities (MAHE Rs 2.92L premium, MUJ Rs 1.84L mid-tier, SMU Rs 1.10L budget) plus dual-specialisation. All UGC-DEB approved. Pick MAHE for premium brand, MUJ for working professional flexibility, SMU for budget plus dual spec.</div>
+<div class="callout-key"><strong>Online Manipal in one line:</strong> Three separate universities on one platform, all UGC-DEB entitled. MAHE for the strongest brand (one year of work experience, or an SOP video), MUJ for 13 specialisations (CAT 40 percentile or MUJ's aptitude test), SMU for the lowest fee with dual specialisation built in.</div>
 
-<h2>Online Manipal Sister Comparison Detailed 2026</h2>
-
-<table>
-  <caption>Online Manipal MAHE vs MUJ vs SMU detailed 2026</caption>
-  <thead><tr><th>Aspect</th><th>MAHE</th><th>MUJ</th><th>SMU</th></tr></thead>
-  <tbody>
-    <tr><td>Total Fees</td><td>Rs 2.92 lakh</td><td>Rs 1.84 lakh</td><td>Rs 1.10 lakh</td></tr>
-    <tr><td>NAAC plus NIRF</td><td>A plus plus, NIRF Uni 3, IoE</td><td>A plus</td><td>A plus</td></tr>
-    <tr><td>Work Experience Required</td><td>1 year minimum</td><td>Not required</td><td>Not required</td></tr>
-    <tr><td>Specialisations</td><td>9</td><td>13</td><td>4 plus dual</td></tr>
-    <tr><td>Best Fit</td><td>1-8 yrs exp, premium upgrade</td><td>0-5 yrs exp, flexible</td><td>Budget plus dual spec</td></tr>
-    <tr><td>Brand Pull</td><td>Strongest (IoE)</td><td>Mid-tier</td><td>Affordable Manipal brand</td></tr>
-  </tbody>
-</table>
-
-<h2>Online Manipal Career Outcomes by Sister 2026</h2>
+<h2>Honest Gaps Across Online Manipal 2026</h2>
 
 <ul>
-  <li><strong>MAHE Online MBA graduates:</strong> Rs 8-15 LPA lateral entry. Rs 18-30 LPA at year 5.</li>
-  <li><strong>MUJ Online MBA graduates:</strong> Rs 5-10 LPA lateral entry. Rs 12-22 LPA at year 5.</li>
-  <li><strong>SMU Online MBA graduates:</strong> Rs 4-9 LPA lateral entry. Rs 10-18 LPA at year 5.</li>
+  <li><strong>No guaranteed placement:</strong> all three offer placement assistance, not campus placement drives. Freshers should expect to run their own job search.</li>
+  <li><strong>Not an elite-campus substitute:</strong> for top consulting or investment banking roles, a top campus programme is still the standard.</li>
+  <li><strong>Different entry rules:</strong> MAHE expects work experience, MUJ has an entry test and SMU has none. Check yours before applying.</li>
+  <li><strong>Pick carefully:</strong> the three are separate universities with separate degrees, fees and specialisation lists.</li>
 </ul>
 
-<p>The Online Manipal ecosystem in 2026 delivers credible career upgrade across 3 university tiers. Pick the right tier based on career stage, budget, plus brand pull required. All 3 share common LMS platform, career service team, plus annual Ekam in-person networking event. The Manipal brand combined with disciplined 24-month execution plus active networking together compound career outcomes over the next 5-10 years.</p>
-
-<h2>Online Manipal Application Process Common to All 3 2026</h2>
+<h2>Online Manipal Application Process 2026</h2>
 
 <ol>
-  <li><strong>Step 1:</strong> Visit onlinemanipal.com. Pick MAHE, MUJ, or SMU based on career fit.</li>
-  <li><strong>Step 2:</strong> Submit application form, graduation marksheet, ID, photo.</li>
-  <li><strong>Step 3:</strong> For MAHE: submit SOP video plus work experience proof.</li>
-  <li><strong>Step 4:</strong> Pay registration fee plus first semester fee.</li>
-  <li><strong>Step 5:</strong> Access shared LMS plus career service portal.</li>
-  <li><strong>Step 6:</strong> Attend Ekam annual networking event.</li>
-  <li><strong>Step 7:</strong> Stack one premium certification (CFA, AWS Cloud, Tableau) during programme.</li>
+  <li>Choose MAHE, MUJ or SMU on onlinemanipal.com based on your experience, budget and specialisation.</li>
+  <li>Confirm that university's online MBA on the UGC-DEB list at deb.ugc.ac.in.</li>
+  <li>Submit the application form, degree marksheet, ID and photo.</li>
+  <li>For MAHE, add work experience proof or an SOP video. For MUJ, add a CAT score or take the aptitude test.</li>
+  <li>Pay the registration fee and first semester fee, then get your login for the shared platform.</li>
 </ol>
 
-<h2>Online Manipal 5-Year Career Plan Across Sisters 2026</h2>
-
-<ol>
-  <li><strong>Year 1 (during MBA):</strong> Foundational management. Active LinkedIn plus Manipal alumni engagement.</li>
-  <li><strong>Year 2 (MBA completion):</strong> Internal promotion plus lateral entry at appropriate CTC tier.</li>
-  <li><strong>Year 3:</strong> Specialist senior role plus add senior certifications.</li>
-  <li><strong>Year 4:</strong> Senior manager role at appropriate brand-tier CTC.</li>
-  <li><strong>Year 5:</strong> Functional lead role plus 1.5-2x post-MBA CTC growth.</li>
-</ol>
-
-<p>Online Manipal sister universities create a tiered ecosystem suitable for varied working professional career stages plus budgets plus ambitions. Pick the tier matching your context plus 5-10 year goal. The shared LMS plus career service plus Ekam event create cohort effect across MAHE plus MUJ plus SMU students.</p>
-
-<h2>Online Manipal Career Outcomes Detailed 2026</h2>
-
-<table>
-  <caption>Online Manipal placement outcomes 2026</caption>
-  <thead><tr><th>Sister University</th><th>Average Package</th><th>Highest Package</th><th>Common Hiring Sectors</th></tr></thead>
-  <tbody>
-    <tr><td>MAHE Online MBA</td><td>Rs 5.49 LPA (lateral)</td><td>Rs 14.03 LPA</td><td>BFSI, Healthcare, IT, Consulting</td></tr>
-    <tr><td>MUJ Online MBA</td><td>Rs 4-6 LPA (lateral)</td><td>Rs 12-14 LPA</td><td>IT services, BFSI, FMCG</td></tr>
-    <tr><td>SMU Online MBA</td><td>Rs 3.5-5 LPA (lateral)</td><td>Rs 10-12 LPA</td><td>Mid-tier IT, NBFC, retail</td></tr>
-  </tbody>
-</table>
-
-<p>Online Manipal's tiered ecosystem in 2026 delivers credible career outcomes across all 3 sister universities. The shared career service team plus annual Ekam event plus alumni connections compound career value for working professionals across MAHE, MUJ, plus SMU. Pick the tier matching your career stage plus budget. Then commit to disciplined 24-month execution plus active engagement for accelerated outcomes.</p>
-
-<h2>Online Manipal FAQ 2026</h2>
-
-<ul>
-  <li><strong>Is Online Manipal same as Manipal Hospitals?:</strong> No. Different organisations. Online Manipal is the education platform of Manipal Group.</li>
-  <li><strong>Can I transfer between MAHE, MUJ, SMU midway?:</strong> Generally no. Pick one university at admission time.</li>
-  <li><strong>Is Online Manipal MBA same as on-campus MBA?:</strong> Same legal degree. Different delivery plus placement support.</li>
-  <li><strong>What is Ekam event?:</strong> Annual in-person networking event for Online Manipal students plus alumni.</li>
-  <li><strong>Are all 3 Online Manipal universities UGC-DEB approved?:</strong> Yes. Verify current year status at deb.ugc.ac.in.</li>
-</ul>
-
-<p>Online Manipal's structured tiered ecosystem makes university choice straightforward based on career stage plus budget plus brand pull required. The credential plus your work plus active alumni engagement together drive career outcomes over 5-10 year horizon.</p>
-
-<p>For 2026 working professionals comparing MAHE, MUJ, plus SMU, the decision narrows to: do you want premium brand (MAHE), maximum specialisation flexibility (MUJ), or budget plus dual functional breadth (SMU)? Each tier delivers credible UGC-DEB approved Manipal-branded online MBA. Match to your specific context plus 5-year career goal. The Online Manipal ecosystem at Rs 1.10-2.92 lakh covers most working professional career stages effectively. Pick the tier matched to your specific career needs plus budget plus brand ambitions. Combine credential with disciplined execution plus deliberate networking for outcomes. The Online Manipal sister ecosystem makes credential choice clearer with budget plus brand plus specialisation alignment across MAHE plus MUJ plus SMU. Smart university choice plus active engagement plus 24-month disciplined execution together compound into measurable career outcomes.</p>
     `,
   },
   {
