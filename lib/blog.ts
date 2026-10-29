@@ -6880,6 +6880,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'career-after-bcom-jobs-salary-courses-2026',
     title: 'Career After B.Com 2026: Top Jobs, Salary and Best Courses',
+    h1Title: "Career Options After B.Com: Jobs, Salaries and Courses Worth Considering",
     metaDescription: 'Career after B.Com 2026: top jobs (CA, MBA, banking), salary ₹3L to ₹18L, best courses and which stream builds the fastest career growth for commerce graduates.',
     category: 'Career Guide',
     tags: ['B.Com', 'career after B.Com', 'jobs after B.Com', 'courses after B.Com'],
@@ -8262,6 +8263,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'career-after-12th-arts-courses-jobs-2026',
     title: 'Career After 12th Arts 2026: Best Courses and Jobs',
+    h1Title: "Career Options After 12th Arts: Courses and Jobs Worth Considering",
     metaDescription: 'Career after 12th arts in India 2026: best courses, jobs with high salary, BA, BBA, BCA options, and UGC-approved online degrees.',
     category: 'Career Guides',
     tags: ['career after 12th arts', 'courses after 12th arts', 'best courses after 12th arts', 'jobs after 12th arts', '12th arts career options', 'ba courses after 12th', 'bba after 12th arts'],
@@ -9134,6 +9136,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'career-after-12th-science-courses-jobs-2026',
     title: 'Career After 12th Science 2026: Best Courses and Jobs',
+    h1Title: "Career Options After 12th Science: Courses and Jobs for PCM and PCB",
     metaDescription: 'Career after 12th science 2026: top 15 options, BCA vs B.Sc vs B.Tech comparison, salary data and best degrees for PCM and PCB students.',
     category: 'Career Guides',
     tags: ['career after 12th science', 'courses after 12th science', 'best courses after 12th science without neet', 'career options after 12th science', 'bca after 12th science', 'bsc courses after 12th', 'career after 12th pcm'],
@@ -23567,6 +23570,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: '14-principles-of-management-henri-fayol',
     title: 'Henri Fayol 14 Principles of Management: With Examples',
+    h1Title: "Henri Fayol's 14 Principles of Management Explained With Examples",
     metaDescription: `Henri Fayol's 14 principles of management explained with real examples, the ones most tested in MBA exams and most misunderstood in practice.`,
     category: 'MBA & Management',
     tags: ['14 principles of management', 'henri fayol principles', 'fayol management theory', 'principles of management mba', 'henri fayol 14 principles', 'management principles bba'],
@@ -23945,6 +23949,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'career-objective-for-fresher-resume-examples',
     title: 'Career Objective for Fresher Resume: 15+ Real Examples',
+    h1Title: "Career Objective Examples for a Fresher Resume, and Why Each Works",
     metaDescription: `15+ career objective examples for freshers in India, for MBA, engineering, commerce, arts graduates. Learn what to write and what to avoid.`,
     category: 'Career Guides',
     tags: ['career objective for fresher', 'resume objective fresher', 'career objective resume india', 'fresher resume objective examples', 'career objective for mba fresher', 'resume objective samples'],
@@ -24052,6 +24057,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'best-computer-courses-after-12th-india-2026',
     updatedAt: '2026-10-26',
     title: 'Best Computer Courses After 12th India 2026: Top Picks',
+    h1Title: "Best Computer Courses After 12th in India: Which One Fits Your Goal",
     metaDescription: `Best computer courses after 12th in India 2026: matched to your actual career goal, not just the popular list. BCA, MCA pathway, certifications and more.`,
     category: 'Career Guides',
     tags: ['computer courses after 12th', 'best computer courses after 12th', 'it courses after 12th', 'bca after 12th', 'programming courses after 12th india', 'computer science courses india'],
@@ -24241,6 +24247,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'courses-after-12th-science-complete-list-2026',
     title: 'Courses After 12th Science 2026: PCM and PCB Complete',
+    h1Title: "Courses After 12th Science: The Full List for PCM and PCB Students",
     metaDescription: `Complete guide to courses after 12th Science in India 2026: PCM, PCB, PCMB options, admission routes, fees, and career outcomes explained honestly.`,
     category: 'Career Guides',
     tags: ['courses after 12th science', 'career after 12th pcm', 'career after 12th pcb', 'courses after 12th india', 'science stream career options', 'what to do after 12th science'],
@@ -24690,6 +24697,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'toughest-exams-india-world-2026',
     title: `Toughest Exams India and World 2026: Pass Rates Ranked`,
+    h1Title: "The Toughest Exams in India and the World, Ranked by Pass Rate",
     metaDescription: `Toughest exams in India and world 2026: UPSC, JEE Advanced, CA Final and GATE ranked by pass rate, prep time and career value. Which exam demands the most?`,
     category: 'Exam Guides',
     tags: ['toughest exams in india', 'hardest exams india', 'toughest exam in the world', 'upsc difficulty', 'jee difficulty level', 'cat pass rate india', 'tough competitive exams india'],
@@ -26366,6 +26374,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'gd-topics-for-mba-2026-with-answers',
     title: `GD Topics for MBA 2026: 20+ Topics With Key Points`,
+    h1Title: "GD Topics for MBA Admissions: Topics With Key Points to Make",
     metaDescription: `20+ GD topics for MBA admissions 2026 with key points, balanced arguments, and tips on how to stand out in a group discussion without being loud.`,
     category: 'MBA & Management',
     tags: ['gd topics for mba 2026', 'group discussion topics mba', 'gd topics with answers', 'mba gd preparation', 'best gd topics 2026', 'group discussion topics india 2026'],
@@ -29057,6 +29066,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'shoolini-online-mba-review',
     title: 'Shoolini Online MBA Review 2026: Pharma and Biotech',
+    h1Title: "Shoolini Online MBA Review: Pharma and Biotech Specialisations Explained",
     seoTitle: 'Shoolini Online MBA Review 2026: Pharma and Biotech',
     metaDescription: 'Shoolini University online MBA fees ₹1,18,000 to ₹1,30,000. NAAC A+, NIRF University #69, 16 specializations. QS #1 private. Honest review, zero commission.',
     category: 'Online MBA Programs',
@@ -35281,6 +35291,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   "slug": "amity-online-bba-fees-2026",
   "updatedAt": "2026-10-26",
   "title": "Amity Online BBA: One-Time vs EMI vs Semester Payment",
+  "h1Title": "Amity Online BBA Fee Plans Compared: One-Time, EMI and Semester-Wise",
   "metaDescription": "Amity Online BBA fees 2026: ₹1,75,120 One-Time / ₹7,877/mo 0% EMI / ₹33,200 sem. Scholarships, comparison vs JAIN, NMIMS, Sharda, MUJ. Honest guide.",
   "category": "Fee Guides",
   "tags": [
@@ -35360,6 +35371,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   "slug": "amity-online-bba-review-2026",
   "updatedAt": "2026-10-29",
   "title": "Amity Online BBA Review 2026: Fees, Curriculum & Honest Take",
+  "h1Title": "Amity Online BBA Review: Curriculum, Fees and Who It Suits",
   "metaDescription": "Amity Online BBA review 2026: ₹1,75,120 One-Time / ₹33,200 sem / 0% EMI ₹7,877 monthly. UGC-DEB, NAAC A+, NIRF #49, WASC, QAA, WES. Pros and cons.",
   "category": "University Reviews",
   "tags": [
@@ -35401,6 +35413,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   "slug": "mba-hr-management-online-india-2026",
   "updatedAt": "2026-10-26",
   "title": "MBA HR Management Online India 2026: 25+ Unis Compared",
+  "h1Title": "Online MBA in HR Management: Universities Compared on Fees and Approvals",
   "metaDescription": "MBA HR Management Online 2026: MBA in HR Management online 2026: 25+ UGC-DEB universities compared. Fees ₹80K (Galgotias) to ₹2.92L (MAHE). NMIMS, Symbiosis, Amit...",
   "category": "Online MBA",
   "tags": [
@@ -35474,6 +35487,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   "slug": "mba-pharmaceutical-management-online-india-2026",
   "updatedAt": "2026-10-28",
   "title": "MBA Pharmaceutical Management Online 2026: Fees & Take",
+  "h1Title": "Online MBA in Pharmaceutical Management: Universities, Fees and Our Take",
   "metaDescription": "MBA Pharmaceutical Management online 2026: 3 UGC-DEB universities compared. Shoolini ₹1.3L net, Chitkara ₹2L, MAHE ₹2.92L. Fees, syllabus, salary, careers.",
   "category": "Online MBA",
   "tags": [
@@ -35511,6 +35525,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   "slug": "online-bba-degree-india-validity-2026",
   "updatedAt": "2026-10-29",
   "title": "Online BBA Degree in India 2026: Valid? Recognition & Jobs",
+  "h1Title": "Is an Online BBA Degree Valid in India? Recognition, Jobs and Higher Study",
   "metaDescription": "Online BBA degree in India 2026: Is it valid? UGC-DEB legal status, jobs at TCS/Infosys/Amazon, MBA admissions at IIMs, government recognition. Honest guide.",
   "category": "Degree Validity",
   "tags": [
@@ -35547,6 +35562,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   "slug": "online-bba-programs-india-2026",
   "updatedAt": "2026-10-28",
   "title": "Online BBA Programs 2026: 10+ Specialisations Compared",
+  "h1Title": "Online BBA Programmes in India: Specialisations Compared Side by Side",
   "metaDescription": "Online BBA programs 2026: 10+ specialisations across 20+ UGC-DEB universities. Marketing, Finance, HR, Analytics, Digital Marketing, Hospital Mgmt. Honest guide.",
   "category": "Online BBA",
   "tags": [
@@ -35583,6 +35599,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   {
   "slug": "online-mba-aviation-management-india-2026",
   "title": "MBA in Aviation Management Online India 2026: Fees & Universities",
+  "h1Title": "Online MBA in Aviation Management: Which Universities Offer It",
   "metaDescription": "MBA In Aviation Management Online 2026: Online MBA Aviation Management 2026: Chandigarh Airlines & Airport Mgmt at ₹1.65L net. Syllabus, fees, alternatives & care...",
   "category": "Online MBA",
   "tags": [
@@ -35651,6 +35668,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   {
   "slug": "online-mba-business-data-analytics-india-2026",
   "title": "Online MBA in Business Analytics in India 2026: 16+ Unis",
+  "h1Title": "Online MBA in Business Analytics: Which Universities Offer It in 2026",
   "metaDescription": "Online MBA In Business Analytics In India 2026: Online MBA Business Analytics & Data Analytics India 2026: 16+ UGC-DEB universities. Fees ₹80K (Galgotias) to ₹3.1...",
   "category": "Online MBA",
   "tags": [
@@ -35723,6 +35741,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   {
   "slug": "online-mba-entrepreneurship-india-2026",
   "title": "Online MBA Entrepreneurship India 2026: Fees & Universities",
+  "h1Title": "Online MBA in Entrepreneurship: Universities, Fees and Who Should Enrol",
   "metaDescription": "Online MBA Entrepreneurship 2026, 4 UGC-DEB universities (DSU ₹1.3L, Chandigarh ₹1.65L, JAIN ₹1.75L–1.96L, Amity ₹2.25L), syllabus, founder ROI, who should apply.",
   "category": "Online MBA",
   "tags": [
@@ -35795,6 +35814,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   {
   "slug": "online-mba-event-management-india-2026",
   "title": "MBA in Event Management Online India 2026: Universities & Fees",
+  "h1Title": "Online MBA in Event Management: Universities Offering It and Their Fees",
   "metaDescription": "MBA In Event Management Online 2026: Online MBA in Event Management 2026, fees ₹1.65L–₹1.76L, only 2 UGC-DEB approved universities (BVP, Chandigarh), syllabus, s...",
   "category": "Online MBA",
   "tags": [
@@ -35860,6 +35880,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   "slug": "online-mba-supply-chain-management-india-2026",
   "updatedAt": "2026-10-26",
   "title": "MBA Supply Chain Management Online India 2026: 10 Universities",
+  "h1Title": "Online MBA in Supply Chain Management: Universities Compared",
   "metaDescription": "MBA Supply Chain Management Online 2026: Online MBA Supply Chain Management 2026, 10 UGC-DEB universities. Fees ₹99.6K (UU Doon) to ₹3.7L (Symbiosis). MAHE, JAIN, ...",
   "category": "Online MBA",
   "tags": [
@@ -35933,6 +35954,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   "slug": "upes-online-mba-review-2026",
   "updatedAt": "2026-10-29",
   "title": "UPES Online MBA Review 2026: Fees, 11 Specs & Honest Take",
+  "h1Title": "UPES Online MBA Review: Fees, Specialisations and Our Honest Take",
   "metaDescription": "UPES Online MBA 2026 honest review: ₹1.75L total fee. UGC-DEB, NAAC A, NIRF #36 Management 2025 / #45 University 2025. 11 specs incl. Oil & Gas, Power.",
   "category": "University Reviews",
   "tags": [
@@ -36285,6 +36307,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   {
     slug: 'is-online-mba-valid-india-2026',
     title: 'Is Online MBA Valid in India 2026? UGC and Employers Say Yes',
+    h1Title: "Is an Online MBA Valid in India? What UGC Rules and Employers Accept",
     metaDescription: 'Is online MBA valid in India 2026? Yes, UGC-DEB approved online MBA = on-campus MBA. Government jobs, PSU, MBA at IIMs, court rulings. Honest legal guide.',
     category: 'Online MBA Programs',
     tags: ['is online mba valid in india', 'online mba validity', 'ugc deb mba', 'online mba government jobs', 'online mba acceptance'],
@@ -36504,6 +36527,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     slug: 'online-mba-with-placement-india-2026',
     updatedAt: '2026-10-26',
     title: 'Online MBA with Placement in India 2026: Universities Compared',
+    h1Title: "Online MBA With Placement Support: What Each University Actually Offers",
     metaDescription: 'Online MBA with placement India 2026: NMIMS, Symbiosis, Amity, Chandigarh, MUJ placement reality. Honest take on which universities actually help with jobs.',
     category: 'Online MBA Programs',
     tags: ['online mba with placement', 'online mba placement', 'online mba jobs', 'online mba placement support'],
@@ -36961,6 +36985,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   {
     slug: 'imt-ghaziabad-online-mba-review-2026',
     title: "IMT Ghaziabad Online MBA Review 2026: CDL PGDM Fees & Take",
+    h1Title: "IMT Ghaziabad CDL Online PGDM Review: Fees, Format and Our Take",
     metaDescription: "IMT Ghaziabad CDL Online MBA 2026: ₹2.20L AICTE PGDM (not UGC-DEB). 6 specs, Delhi NCR brand. Honest review: fees, placement, and who should apply.",
     category: 'University Reviews',
     tags: ["imt ghaziabad online mba","imt ghaziabad online pgdm","imt cdl online mba","imt ghaziabad mba online","imt online mba","imt ghaziabad online pgdm fees","imt cdl fees 2026"],
@@ -39601,6 +39626,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     slug: 'online-mba-logistics-management-india-2026',
     updatedAt: '2026-10-28',
     title: 'Online MBA Logistics Management India 2026: Fees, Salary',
+    h1Title: "Online MBA in Logistics Management: Universities, Fees and Career Paths",
     metaDescription: 'Online mba logistics management india 2026: top UGC-DEB approved colleges, verified fee ranges, career outcomes, port and warehouse career paths, honest verdict.',
     category: 'Online MBA Programs',
     tags: ['online mba logistics management india', 'online mba logistics', 'online mba supply chain logistics', 'mba logistics fees india'],
@@ -39813,6 +39839,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     slug: 'online-mba-real-estate-management-india-2026',
     updatedAt: '2026-10-28',
     title: 'Online MBA Real Estate Management India 2026: Fees, Salary',
+    h1Title: "Online MBA in Real Estate Management: Universities, Fees and Career Paths",
     metaDescription: 'Online mba real estate management india 2026: top UGC-DEB approved colleges, verified fee ranges ₹66,000 to ₹2,25,000, RERA compliance careers, salary verdict.',
     category: 'Online MBA Programs',
     tags: ['online mba real estate management india', 'online mba real estate', 'mba real estate fees india', 'online mba real estate jobs'],

@@ -1,5 +1,22 @@
 # Fix log
 
+## 2026-10-29 · Duplicate H1 and title on 28 pages; Course schema GSC report already fixed
+
+- **Why:** an audit flagged 27 blog posts and the NMIMS MBA hub for an H1 that repeated the title tag word for word.
+  The blog template renders `seoTitle || title` as the title and `h1Title || title` as the H1, so a post with neither
+  field gets the same string in both. 98 posts already had an h1Title; these 27 did not (Shoolini had a seoTitle equal
+  to its title). On the hub, UniHero's "admission" H1 and reviewOwnedTitle used the same template, and they matched
+  wherever the short name equalled the H1 brand. Only NMIMS matched.
+- **Fix:** a distinct h1Title on each of the 27 posts. The H1s carry no fee figures, so the fee gate is untouched. The
+  admission H1 is now "{uni} {program} Admission {year}: Specialisations and Eligibility". This changes the H1 on every
+  hub that defers to its review blog, not only NMIMS.
+- **Check:** a script that compares `seoTitle || title` with `h1Title || title` across the 245 published posts found 27
+  before and 0 after. Each new H1 was asserted on its own slug.
+- **Course info (GSC, same day):** the "3 fields" errors on 48 review blogs and the "1 field" errors on 26 compare pairs
+  predate commit 883c0e1 (28 Oct 19:44). Google's crawl times were 26 Oct 04:48 and 28 Oct 07:31. All 74 URLs live, 100
+  Course nodes, carry description, offers.category and hasCourseInstance with mode and workload. No code change; the
+  fix needs Validate Fix in Search Console.
+
 ## 2026-10-29 · Citation readiness: entity-linked schema, stale NMIMS/Amity fees, EEAT appendices merged
 
 - **Why:** the brief was to make the site the source AI engines and Google cite. Crawler access was already fine (robots.txt

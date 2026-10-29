@@ -42,7 +42,10 @@ export default function UniHero({ u, program, pd, cleanName, spec, customH1, h1V
   const generatedH1 = spec
     ? `${onlinePrefix} ${program} in ${spec}: Syllabus, Fees & Career Outcomes ${year}`
     : h1Variant === 'admission'
-      ? `${onlinePrefix} ${program}: Specialisations, Eligibility and Admission`
+      // Worded apart from reviewOwnedTitle in app/universities/[id]/mba/page.tsx:
+      // the same string in both made title and H1 identical wherever the short
+      // name matched the H1 brand (NMIMS, flagged 28 Oct 2026).
+      ? `${onlinePrefix} ${program} Admission ${year}: Specialisations and Eligibility`
       : `${onlinePrefix} ${program} ${year}: Fees, Placement, Syllabus & Reviews`
   const h1 = customH1 || generatedH1
 
