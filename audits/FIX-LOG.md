@@ -1,5 +1,22 @@
 # Fix log
 
+## 2026-10-29 · Title tags over 70 characters: 26 reported, 22 more found by a full-build scan
+
+- **Why:** an audit flagged 26 titles at 76-88 chars. Four causes. 17 blog seoTitles were written long, most with a
+  trailing "| Edify". The compare fallback for titles over 70 was itself 76 on long names. The coupon template stacked the
+  name, the code and "(Up to Rs 5,000 Off)". /coupons and /guides set their own brand suffix and then the root template
+  ('%s | EdifyEdu') added another, which put "EdifyEdu | EdifyEdu" on /guides.
+- **Fix:** each seoTitle was rewritten by hand to 60 chars or fewer, front-loading the keyword. Compare, coupon and MBA
+  spec hub titles now try the longest form first and use the first one that fits 60. /coupons uses an absolute title;
+  /guides drops its own suffix. The Amity verify title loses its suffix (61 chars).
+- **Scan beyond the report:** the full-build scan found 22 more over 70: 14 blogs, 6 spec hubs, the online MCA course
+  page, and verify/amity. All fixed in the same batch to keep it to one deploy.
+- **Dropped claims:** the LPU vs Chandigarh title had "NIRF #19" with no category (house rule), and it is gone. The state
+  list titles (Karnataka Rs 30K floor, Tamil Nadu Rs 20K) and the healthcare and IIM ranges no longer carry fee figures.
+  Those floors were never checked against lib/data.ts, and a range floor is the IGNOU trap.
+- **Open:** the Symbiosis coupon code is SYMB2026-7500 while every page says "up to Rs 5,000". Either the code name or
+  the amount is wrong; it needs Rishi.
+
 ## 2026-10-29 · Duplicate H1 and title on 28 pages; Course schema GSC report already fixed
 
 - **Why:** an audit flagged 27 blog posts and the NMIMS MBA hub for an H1 that repeated the title tag word for word.

@@ -67,7 +67,15 @@ export async function generateMetadata(
   const desc = `${nameA} vs ${nameB} online ${prog} ${year}: NAAC grade, fees${feeStr}, NIRF rank and verdict. Independent, zero-commission comparison at EdifyEdu.`
 
   return {
-    title: { absolute: title.length > 70 ? `${nameA} vs ${nameB}: Online ${prog} Fees & Verdict ${year}` : title },
+    // Longest form that fits 60 chars. The old single fallback still ran to 76
+    // on long names (MUJ vs Chandigarh), flagged as too long on 29 Oct 2026.
+    title: {
+      absolute: [
+        title,
+        `${nameA} vs ${nameB}: Online ${prog} Fees & Verdict ${year}`,
+        `${nameA} vs ${nameB} Online ${prog} ${year}`,
+      ].find(t => t.length <= 60) ?? `${nameA} vs ${nameB} Online ${prog} ${year}`,
+    },
     description: desc.length > 155 ? desc.slice(0, 152) + '...' : desc,
     alternates: { canonical: `https://edifyedu.in/compare/${pair}` },
     openGraph: { title, description: desc.slice(0, 155), url: `https://edifyedu.in/compare/${pair}`, type: 'article' },

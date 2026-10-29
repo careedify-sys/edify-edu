@@ -323,7 +323,12 @@ export async function generateMetadata(
     u.programs.includes('MBA') && (u as any).mbaSpecs?.some((s: string) => def.specVariantMatch(s))
   ).length
 
-  const title = `Online MBA ${def.displayName} 2026: ${uniCount}+ Colleges, Fees and Career | EdifyEdu`
+  // Longest form that fits 60 chars; long spec names ran to 81 with the brand suffix.
+  const title = [
+    `Online MBA ${def.displayName} 2026: ${uniCount}+ Colleges, Fees and Career | EdifyEdu`,
+    `Online MBA ${def.displayName} 2026: ${uniCount}+ Colleges, Fees and Career`,
+    `Online MBA ${def.displayName} 2026: ${uniCount}+ Colleges and Fees`,
+  ].find(t => t.length <= 60) ?? `Online MBA ${def.displayName} 2026: ${uniCount}+ Colleges`
   const description = `${uniCount}+ UGC-DEB approved universities offer online MBA ${def.displayName} in India. Compare fees, curriculum, career outcomes, and NIRF ranks. Verify accreditation free at edifyedu.in.`
   const canonical = `https://edifyedu.in/programs/mba/specializations/${params.spec}`
 

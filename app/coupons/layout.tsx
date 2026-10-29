@@ -4,7 +4,8 @@ import { COUPONS } from '@/lib/coupons'
 const universityCount = new Set(COUPONS.map(c => c.universityId)).size
 
 export const metadata: Metadata = {
-  title: `Online MBA Discount Coupons 2026 - Up to Rs 5,000 Off | ${universityCount} Universities`,
+  // Absolute: the root template's " | EdifyEdu" took this to 82 chars.
+  title: { absolute: `Online MBA Discount Coupons 2026: Up to Rs 5,000 Off` },
   description:
     `Verified online MBA discount coupon codes for ${universityCount} UGC-DEB approved universities. Up to Rs 5,000 off (Tuesday and Saturday IST), Rs 4,000 on other days. No paperwork, applied at enrollment.`,
   keywords: [

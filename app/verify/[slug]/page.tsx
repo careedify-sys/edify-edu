@@ -87,7 +87,7 @@ export async function generateMetadata({ params }: PageProps) {
 
   if (brandSlug) {
     return {
-      title: { absolute: `Is Amity Online MBA / MCA UGC-DEB Approved? Verification ${year} | EdifyEdu` },
+      title: { absolute: `Is Amity Online MBA / MCA UGC-DEB Approved? Verification ${year}` },
       description: `Independent verification of Amity online programmes ${year}. Different programmes are approved through Amity University Uttar Pradesh (Noida) and Amity University Rajasthan (Jaipur), see exactly which entity issues each online degree.`,
       alternates: { canonical: `https://edifyedu.in/verify/${slug}` },
       openGraph: {

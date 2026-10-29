@@ -33,9 +33,14 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
   const year = new Date().getFullYear()
   const tierMax = TIER_AMOUNTS[page.tier].max
   const tierLabel = `Rs ${tierMax.toLocaleString('en-IN')}`
+  // Longest form that fits 60 chars; long names or codes drop words, never the code.
   const title = page.couponCode === 'N/A'
     ? `${page.shortName} Online MBA ${year} - UGC-DEB Approved, NAAC ${page.naac}`
-    : `${page.shortName} Online MBA Discount Coupon ${year} - ${page.couponCode} (Up to ${tierLabel} Off)`
+    : [
+        `${page.shortName} Online MBA Discount Coupon ${year} - ${page.couponCode} (Up to ${tierLabel} Off)`,
+        `${page.shortName} Online MBA Coupon ${year}: ${page.couponCode}, Up to ${tierLabel} Off`,
+        `${page.shortName} Online MBA Coupon ${year}: ${page.couponCode}`,
+      ].find(t => t.length <= 60) ?? `${page.shortName} MBA Coupon ${year}: ${page.couponCode}`
   const description = page.couponCode === 'N/A'
     ? `${page.shortName} Online MBA ${year}: UGC-DEB approved, NAAC ${page.naac} accredited. ${page.nirf}.`
     : `${page.shortName} Online MBA discount coupon ${year}: use code ${page.couponCode} for up to ${tierLabel} off your fees. Max on Tuesday and Saturday IST. NAAC ${page.naac}, UGC-DEB approved.`
