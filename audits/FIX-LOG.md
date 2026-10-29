@@ -1,5 +1,24 @@
 # Fix log
 
+## 2026-10-29 · Click depth: 668 built pages more than 3 clicks from the homepage, now 100
+
+- **Why:** an audit listed 116 pages needing more than 3 clicks. A BFS over the 2,309 built pages from the homepage
+  found 668 at depth 4-5, because the audit's crawl is capped. Two causes. (1) Blog pagination linked only the first
+  page, the last page and two either side, so archive pages 6-8 sat at depth 4 and their posts at 5. (2) The university
+  page renders spec chips for the active programme tab only, and the server HTML shows the first tab. Every other
+  programme's spec pages were reached through their hub, at depth 4 (595 pages).
+- **Fix:** pagination links every page while there are 20 or fewer (11 now). The university page adds "Specialisations
+  in Other Programmes", built from the same server-resolved specHrefs, so an unresolvable slug is never linked.
+- **Measured:** depth 4+ went from 668 to 100. Posts now sit at depth 3 via /blog/page/N, and specs at 3 via the
+  university page.
+- **Left on purpose:** about 89 remaining university pages are spec URLs that lib/data.ts does not list for that
+  university. They are near-duplicates that still return 200: Bharati BBA event-mgmt and event-management, MBA
+  it-management and information-technology-it, CHARUSAT BBA HR. Linking them would promote duplicates. They belong with
+  the split-spec / slug-rescue cleanup. The /compare?a= URLs are robots-blocked (Disallow: /compare?), so they need no
+  fix. 55 "unreached" pages are on-demand routes (/verify, gated hubs) that this crawler cannot follow.
+- **Open:** /tools/salary-calculator hardcodes salary ranges with no source, and /tools/university-comparison duplicates
+  /compare. Both inherit the /tools title, and neither was given more links.
+
 ## 2026-10-29 · Title tags over 70 characters: 26 reported, 22 more found by a full-build scan
 
 - **Why:** an audit flagged 26 titles at 76-88 chars. Four causes. 17 blog seoTitles were written long, most with a

@@ -83,13 +83,16 @@ function PostCard({ post }: { post: BlogListing }) {
 }
 
 // ── Pagination ────────────────────────────────────────────────────────────────
-// Plain <a> links so crawlers can walk from /blog to the oldest post. Shows the
-// first and last page and two either side of the current one, so the bar stays
-// short however many pages the archive grows to.
+// Plain <a> links so crawlers can walk from /blog to the oldest post. Up to
+// ALL_PAGES_MAX pages every page is linked, so each archive page is one click
+// from /blog and each post at most three from the homepage. The windowed bar
+// (first, last, two either side) put pages 6-8 four clicks deep (29 Oct 2026).
+const ALL_PAGES_MAX = 20
 function Pagination({ page, totalPages }: { page: number; totalPages: number }) {
   if (totalPages <= 1) return null
   const shown = new Set([1, totalPages])
   for (let p = page - 2; p <= page + 2; p++) if (p >= 1 && p <= totalPages) shown.add(p)
+  if (totalPages <= ALL_PAGES_MAX) for (let p = 1; p <= totalPages; p++) shown.add(p)
   const pages = Array.from(shown).sort((a, b) => a - b)
 
   const base = 'min-w-[38px] h-[38px] px-3 inline-flex items-center justify-center rounded-lg text-sm font-bold no-underline border'

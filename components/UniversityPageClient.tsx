@@ -489,6 +489,48 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                 </section>
               )}
 
+              {/* Specialisation pages for the programmes whose tab is not open.
+                  The chips above render only the active tab, so the server HTML
+                  linked one programme's specs and left the rest four clicks from
+                  the homepage (29 Oct 2026). Same server-resolved specHrefs. */}
+              {(() => {
+                const groups = u.programs
+                  .filter(p => p !== displayProgram)
+                  .map(p => {
+                    const programSlug = p.toLowerCase().replace(/\./g, '')
+                    const links = Object.entries(specHrefs)
+                      .filter(([key, href]) => href && key.startsWith(`${programSlug}/`))
+                      .map(([key, href]) => {
+                        const slug = key.slice(programSlug.length + 1)
+                        const spec = (u.programDetails[p]?.specs ?? []).find(s =>
+                          (typeof s === 'string' ? s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') : s.slug) === slug)
+                        return { href: href as string, name: spec ? (typeof spec === 'string' ? spec : spec.name) : slug }
+                      })
+                    return { program: p, links }
+                  })
+                  .filter(g => g.links.length > 0)
+                if (groups.length === 0) return null
+                return (
+                  <section className="card-lg p-6">
+                    <h2 className="font-display text-xl font-bold text-navy mb-4">Specialisations in Other Programmes</h2>
+                    <div className="space-y-4">
+                      {groups.map(g => (
+                        <div key={g.program}>
+                          <h3 className="font-semibold text-navy mb-2">{g.program}</h3>
+                          <div className="flex flex-wrap gap-2">
+                            {g.links.map(l => (
+                              <Link key={l.href} href={l.href} className="px-3 py-1.5 bg-surface-2 border border-border rounded-full text-sm text-ink-2 hover:border-amber hover:text-amber transition-colors">
+                                {l.name}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                )
+              })()}
+
               {/* Sample Degree Certificate — only shown for universities with configured SVGs */}
               {SAMPLE_DEGREES[u.id] && (() => {
                 const degreeUrl = getSampleDegree(u.id, displayProgram) ?? undefined
