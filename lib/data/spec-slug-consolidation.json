@@ -1,0 +1,87 @@
+{
+  "alias": {
+    "amity-university-online|bca": {
+      "computer-applications-financial-technology-ai-with-paytm": "computer-applications-financial-technology-ai"
+    },
+    "amrita-vishwa-vidyapeetham-online|mba": {
+      "esg": "environmental-social-and-governance-esg"
+    },
+    "andhra-university-online|ma": {
+      "sociology-education": "sociology",
+      "sociology-environmental": "sociology",
+      "sociology-gender": "sociology",
+      "sociology-health": "sociology",
+      "sociology-industrial": "sociology",
+      "sociology-rural": "sociology",
+      "sociology-urban": "sociology"
+    },
+    "bharati-vidyapeeth-university-online|bba": {
+      "event-management": "event-mgmt",
+      "project-management": "project-mgmt"
+    },
+    "bharati-vidyapeeth-university-online|mba": {
+      "information-technology-it": "it-management"
+    },
+    "bharati-vidyapeeth-university-online|mca": {
+      "dot-net": "dot-net-technologies"
+    },
+    "dy-patil-university-online|mba": {
+      "data-science-abd-business-analytics": "data-science-business-analytics",
+      "event-mgmt": "event-management",
+      "sales-mktg": "sales-marketing"
+    },
+    "gls-university-online|bca": {
+      "artificial-intelligence-machine-learning": "ai-machine-learning"
+    },
+    "guru-nanak-dev-university-online|mca": {
+      "general-computer-applications": "general"
+    },
+    "lovely-professional-university-online|bba": {
+      "fin-tech": "fintech",
+      "retail-and-e-commerce": "retail-e-commerce"
+    },
+    "maharishi-markandeshwar-university-online|bba": {
+      "banking": "banking-and-finance"
+    },
+    "maharishi-markandeshwar-university-online|bcom": {
+      "banking-and-finance": "banking-finance"
+    },
+    "manav-rachna-online|bba": {
+      "digital": "digital-marketing"
+    },
+    "manav-rachna-online|mca": {
+      "cyber-security": "cyber-security-and-block-chain"
+    },
+    "sgt-university-online|bca": {
+      "artificial-intelligence-machine-learning": "ai-machine-learning"
+    },
+    "shobhit-university-online|mba": {
+      "human": "human-resource-management"
+    },
+    "shobhit-university-online|mca": {
+      "artificial-intelligence-machine-learning": "ai-machine-learning"
+    },
+    "shoolini-university-online|bcom": {
+      "bcom-hons": "b-com-hons"
+    },
+    "shoolini-university-online|mba": {
+      "operation-supply-chain-management": "operation-and-supply-chain-management",
+      "pharma-health-care-management": "pharma-and-healthcare-management"
+    },
+    "shoolini-university-online|msc": {
+      "msc-data-science": "m-sc-data-science"
+    },
+    "vignan-university-online|mca": {
+      "computer-science-it": "computer-science-and-it"
+    }
+  },
+  "retired": {
+    "dy-patil-university-online|bca": ["bca"],
+    "gls-university-online|bba": ["public"],
+    "karnataka-state-open-university-online|mcom": ["marketing-management-and-human"],
+    "sharda-university-online|mca": ["ar", "vr-and-information-security"],
+    "shoolini-university-online|bba": ["bba"],
+    "shoolini-university-online|bca": ["bca"],
+    "vivekananda-global-university-online|bca": ["ux-data-science-ctis-cloud-tech-info-security"]
+  }
+}

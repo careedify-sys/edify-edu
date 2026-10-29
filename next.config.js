@@ -148,6 +148,9 @@ const nextConfig = {
       { source: '/universities/nmims-online/mba/fintech',                                           destination: '/universities/nmims-online/mba', permanent: true },  // 1 clicks, 90 impr, pos 9.16
       { source: '/universities/sastra-university-online/mca',                                       destination: '/universities/sastra-university-online', permanent: true },  // 1 clicks, 124 impr, pos 10.8
       { source: '/universities/shoolini-university-online/mba/business-analytics',                  destination: '/universities/shoolini-university-online/mba', permanent: true },  // 1 clicks, 2 impr, pos 5.5
+      // 2026-10-29: "BBA" was a spec row under the BBA hub, a junk page retired
+      // in lib/data/spec-slug-consolidation.json. It ranks, so it lands on the hub.
+      { source: '/universities/shoolini-university-online/bba/bba',                                 destination: '/universities/shoolini-university-online/bba', permanent: true },  // 1 clicks, 49 impr, pos 20.1
 
       // Second batch (2026-08-30). Retiring the 19 sitewide MBA slug wildcards
       // uncovered these four: the wildcard used to carry them to a slug that

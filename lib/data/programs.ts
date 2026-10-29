@@ -9,6 +9,12 @@
 import { readFileSync } from 'fs'
 import { join } from 'path'
 import { UNIVERSITIES, getUniversityById, specSlug as toSlug, specName as toName } from '@/lib/data'
+import SPEC_CONSOLIDATION_RAW from './spec-slug-consolidation.json'
+
+const SPEC_CONSOLIDATION = SPEC_CONSOLIDATION_RAW as {
+  alias: Record<string, Record<string, string>>
+  retired: Record<string, string[]>
+}
 
 export interface ProgramRow {
   university_slug: string
@@ -252,6 +258,20 @@ export function resolveSpec(
   if (!u) return null
   const pd = (u.programDetails as Record<string, { specs?: unknown[] } | undefined>)[programLabel]
   const specs = (pd?.specs ?? []) as Array<string | { slug: string; name: string }>
+
+  // 0. Per-university consolidation (2026-10-29). The manifest-only branch
+  // below served a page for any slug the Programs xlsx carries, so one
+  // specialisation could render at two URLs (Bharati BBA event-mgmt and
+  // event-management) and split-spec fragments rendered as their own pages.
+  // SPEC_ALIASES and the rescue rules are programme-wide and cannot express
+  // "at this university, X is Y". Aliases resolve to their target, so the
+  // allowlist builder puts them in the 2f redirect table; retired slugs
+  // resolve to nothing, so 2f 404s them. Audit:
+  // audits/unlisted-spec-pages-2026-10-29.csv
+  const consolidationKey = `${uniId}|${programSlug.toLowerCase()}`
+  const forced = SPEC_CONSOLIDATION.alias[consolidationKey]?.[specSlug]
+  if (forced) return resolveSpec(uniId, programLabel, programSlug, forced)
+  if (SPEC_CONSOLIDATION.retired[consolidationKey]?.includes(specSlug)) return null
 
   // 1. data.ts programDetails with alias fanout. data.ts is the source of
   // truth for which spec slug the uni actually offers, so we check it first.

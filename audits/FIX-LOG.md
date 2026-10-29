@@ -1,5 +1,32 @@
 # Fix log
 
+## 2026-10-29 · Spec pages served for slugs lib/data.ts does not list: 40 consolidated, 102 listed for Rishi
+
+- **Why:** `resolveSpec` falls back to `programs-manifest.json`, which prebuild rebuilds from the Programs xlsx on
+  every deploy. Any spec slug the xlsx holds therefore rendered a self-canonical, indexable 200 page, even when the
+  university's `lib/data.ts` record lists the same specialisation under another slug. Bharati BBA served both
+  `event-mgmt` and `event-management`, Andhra MA served seven `sociology-*` fragments next to `sociology`, and Shoolini
+  BBA had a spec page called "BBA". These are most of the ~100 pages left at depth 4 by the click-depth fix below.
+  `SPEC_ALIASES` and the rescue rules are programme-wide, so neither could say "at this university, X is Y".
+- **Inventory:** `npx tsx scripts/audit-unlisted-spec-pages.mts` writes `audits/unlisted-spec-pages-2026-10-29.csv`.
+  221 xlsx slugs are missing from their university's list: 141 returned 200 in production, 80 were already 404 or 307
+  because the hub is gated.
+- **Fix:** new `lib/data/spec-slug-consolidation.json`, checked first in `resolveSpec`. 32 aliases resolve to the
+  listed slug, so the allowlist builder adds them to the 2f redirect table and they 308 at the edge. 31 come from the
+  CSV and the 32nd is Bharati MBA `information-technology-it` to `it-management`, the same direction Jagannath already
+  takes. The 8 retired slugs (program names, fragments, multi-name cells) resolve to nothing and 404 at 2f.
+  `shoolini-university-online/bba/bba` ranks (49 impressions), so it gets a 301 to the BBA hub in the next.config
+  soft-404 rescue list. Regenerated `spec-allowlist.json` and `url-canonical-map.json`. Prebuild's
+  `apply-url-canonical-map.js` now drops the 40 from `valid-urls.json` on every deploy (2,887 to 2,847 URLs).
+- **Canonical direction:** the slug `lib/data.ts` lists wins, even when it is the uglier one (`event-mgmt`). Pointing
+  a listed slug at an xlsx-only slug makes the live page depend on the xlsx. The one exception is the MBA IT pair, which
+  follows the sitewide MBA canonical.
+- **Left for Rishi (102, class `needs-portal` in the CSV):** they may be real specialisations missing from
+  `lib/data.ts`. Each needs the official portal, so none were added or removed. Six listed `lib/data.ts` entries are
+  also corrupt and live: "Marke" (MMU B.Com), "Human Re" (MMU MBA, Vels MBA), "Supply" (KSOU BBA), and the single
+  comma entries "Economics, English" (Manav Rachna BA) and "Marketing, Finance, HR" (NorthCap BBA).
+  `check-spec-names` does not catch truncation or comma lists.
+
 ## 2026-10-29 · Click depth: 668 built pages more than 3 clicks from the homepage, now 100
 
 - **Why:** an audit listed 116 pages needing more than 3 clicks. A BFS over the 2,309 built pages from the homepage
