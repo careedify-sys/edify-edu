@@ -6114,7 +6114,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <h2>About Online Manipal</h2>
     <p>Online Manipal is the digital learning platform of the Manipal Group, one of India's oldest education groups. It brings together programs from three universities: Manipal Academy of Higher Education (MAHE) in Karnataka, Manipal University Jaipur (MUJ) in Rajasthan, and Sikkim Manipal University (SMU) in Sikkim. All programs are UGC-DEB entitled and AICTE approved, delivered through the same LMS with live sessions, recorded lectures, remote-proctored exams, and a shared placement portal. The annual Ekam event brings online students together in person for networking, which is unusual for an online program.</p>
 
-    <div class="callout-key">All three Online Manipal MBAs are UGC-DEB entitled, AICTE approved, and fully equivalent to on-campus degrees. The degrees are recognised by WES for use in the US and Canada. Placement data across all three shows an average package of Rs 5.49 LPA and highest package of Rs 14.03 LPA.</div>
+    <div class="callout-key">All three Online Manipal MBAs are UGC-DEB entitled, AICTE approved, and fully equivalent to on-campus degrees. The degrees are recognised by WES for use in the US and Canada. Online Manipal's <a href="https://www.onlinemanipal.com/placements" target="_blank">placements page</a> reports 2,500+ offers and a 6 LPA average package across all its universities, not per programme.</div>
 
     <h2>MAHE: Best Brand, Built for Working Professionals</h2>
 <figure style="margin: 28px 0;">
@@ -6329,7 +6329,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 
     <h2>Placement Support</h2>
-    <p>MAHE learners access Online Manipal's AI-powered placement portal for unlimited mock interviews, resume building, and job applications. The 2025 placement drive included companies like EY, Goldman Sachs, Jio, Adani, NoBroker, PayPal, PepsiCo, and Tata Communications. MAHE's School of Management is ranked 47th among top B-schools in India by The Week magazine. Average package reported: Rs 5.49 LPA. Median: Rs 6.48 LPA.</p>
+    <p>MAHE learners use Online Manipal's AI-powered placement portal, which offers unlimited mock interviews. The MAHE MBA page shows hiring-partner logos including EY, Goldman Sachs, Accenture, Jio and NoBroker. It gives no year, no hire count and no MAHE-only package.</p>
+    <p>The only salary figure Online Manipal publishes is on its <a href="https://www.onlinemanipal.com/placements" target="_blank">placements page</a>: a 6 LPA average across all its universities, which it says depends on work experience and industry. Treat it as a group-wide marketing figure, not a MAHE MBA outcome.</p>
 
     <h2>Who Should Choose MAHE</h2>
     <div class="persona-grid">
@@ -6576,7 +6577,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 
     <h2>Placement at MUJ</h2>
-    <p>MUJ placement data for 2024 shows around 93 percent of students placed, with 1,142 offers extended. Average package for online MBA graduates is reported at Rs 4.2 to Rs 6 LPA. Recruiters include companies like Goldman Sachs, Bajaj Allianz, Infosys, Dell, Flipkart, Amazon, and Wipro. MUJ's placement cell conducts resume workshops, interview mock sessions, and provides access to the AI-powered placement portal with unlimited practice rounds.</p>
+    <p>Online Manipal's <a href="https://www.onlinemanipal.com/placements" target="_blank">placements page</a> reports 2,500+ offers and a 6 LPA average package. Both figures cover all its universities, not MUJ alone, and the page says the package depends on work experience and industry. Online Manipal does not publish an MUJ-only placement rate.</p>
+    <p>Hiring-partner logos on the page include Goldman Sachs, EY, Accenture, Jio and Bajaj. MUJ learners get resume and interview preparation sessions and the AI-powered placement portal with unlimited mock interviews.</p>
 
     <h2>Who Should Choose MUJ</h2>
     <div class="persona-grid">

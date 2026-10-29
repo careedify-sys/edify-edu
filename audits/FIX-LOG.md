@@ -14,9 +14,12 @@
   from the source cited in the MAHE post (Online Manipal report, 6 Jan 2026): 3,300+ learners across MAHE, MUJ and SMU;
   MAHE 92%, MUJ 92%, MAHE mentors 91%. The "LMS and faculty rated highly" and Launchpad lines were dropped. Intro lines no
   longer promise Quora feedback; 3 Quora source entries removed. Div balance checked per post (equal before and after).
-- **Open:** the MAHE and MUJ placement paragraphs name Goldman Sachs among recruiters and claim "93 percent placed, 1,142
-  offers" (MUJ); the placements page shows 2,500+ offers and a 6 LPA average across Online Manipal. Not changed yet.
-  `ignou-online-mba-review-2026` is built around Quora, Reddit (via jumpnetworks.in), PissedConsumer ("216 reviews, 1.8
+- **Placement claims (same day):** none of "93 percent placed, 1,142 offers, Rs 4.2-6 LPA" (MUJ), "Rs 5.49 LPA average,
+  Rs 6.48 LPA median, The Week #47" (MAHE) or "Rs 5.49 LPA average, Rs 14.03 LPA highest" (Online Manipal callout) appears
+  on onlinemanipal.com. Its only figures are Online Manipal-wide: 2,500+ offers and a 6 LPA average, footnoted as
+  depending on work experience and industry. All three now say that, scoped as group-wide. Recruiter lists cut to logos
+  the portal shows (Adani, PayPal, PepsiCo, Tata Communications, Infosys, Dell, Flipkart, Amazon, Wipro are not on it).
+- **Open:** `ignou-online-mba-review-2026` is built around Quora, Reddit (via jumpnetworks.in), PissedConsumer ("216 reviews, 1.8
   stars") and eduverticals.com; it paraphrases rather than quotes, so it is a decision for Rishi, not a silent cut.
 
 ## 2026-10-30 · Software App schema errors on /tools/emi-calculator and /tools/university-comparison
