@@ -2,9 +2,8 @@
 // Each page targets "[uni] online MBA discount coupon" queries.
 //
 // Each entry carries a `tier` that maps to lib/coupons.ts → TIER_AMOUNTS:
-//   premium  → max Rs 7,500 (Tue/Sat) · base Rs 5,000
-//   standard → max Rs 5,000 (Tue/Sat) · base Rs 4,000
-//   budget   → max Rs 4,000 (Tue/Sat) · base Rs 3,000
+//   all tiers → max Rs 5,000 (Tue/Sat) · base Rs 4,000 (flattened; the tier
+//   names remain so the amounts can diverge again)
 //
 // `maxSavings` / `maxSavingsNum` represent the verified discount coupon
 // at the tier's MAX window. University scholarships (merit, defence, lump-sum)
@@ -123,7 +122,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     ],
     peerComparisons: [
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
-      { uni: 'Symbiosis (Rs 3,70,000; Rs 3,15,000 after 2+ yrs exp concession)', savings: 'Up to Rs 5,000 via SYMB2026-7500' },
+      { uni: 'Symbiosis (Rs 3,70,000; Rs 3,15,000 after 2+ yrs exp concession)', savings: 'Up to Rs 5,000 via SYMB2026-5K' },
       { uni: 'JAIN (Rs 1,96,000)', savings: 'Up to Rs 5,000 via JAIN2026-5K' },
       { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
     ],
@@ -167,7 +166,7 @@ export const COUPON_PAGES: CouponPageData[] = [
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
       { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
       { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
-      { uni: 'MAHE (Rs 2,92,000)', savings: 'Up to Rs 5,000 via MAHE2026-7500' },
+      { uni: 'MAHE (Rs 2,92,000)', savings: 'Up to Rs 5,000 via MAHE2026-5K' },
     ],
   },
   {
@@ -291,26 +290,26 @@ export const COUPON_PAGES: CouponPageData[] = [
     finalFee: 'Rs 2,87,000',
     naac: 'A++',
     nirf: '#3 University',
-    couponCode: 'MAHE2026-7500',
+    couponCode: 'MAHE2026-5K',
     couponDiscount: 'Up to Rs 5,000 verified discount coupon (Tue/Sat IST)',
     blogSlug: 'mahe-online-mba-review-2026',
     officialUrl: 'onlinemanipal.com',
     discounts: [
       { type: 'Defence scholarship', eligibility: 'Serving/retired defence', saving: '20% fee waiver', howToApply: 'Submit defence ID' },
       { type: 'Female candidate scholarship', eligibility: 'Female applicants', saving: '15% fee waiver', howToApply: 'Automatic during admission' },
-      { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code MAHE2026-7500 during enrollment call' },
+      { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code MAHE2026-5K during enrollment call' },
     ],
-    stackExample: 'MAHE offers Defence (20%) and Female (15%) scholarships. Combined with the verified discount coupon (up to Rs 7,500 on Tue/Sat), total discount reaches Rs 50,000+ for eligible candidates.',
+    stackExample: 'MAHE offers Defence (20%) and Female (15%) scholarships. Combined with the verified discount coupon (up to Rs 5,000 on Tue/Sat), total discount reaches Rs 50,000+ for eligible candidates.',
     emiCompatible: 'Yes. MAHE offers Coursera-integrated EMI options.',
     exclusions: ['Does not reduce exam fees', 'Premium tracks may have separate pricing'],
     faqs: [
-      { q: 'What is the MAHE online MBA discount coupon code?', a: 'MAHE2026-7500 (premium tier). Up to Rs 5,000 on Tuesday and Saturday in IST, Rs 4,000 on other days.' },
+      { q: 'What is the MAHE online MBA discount coupon code?', a: 'MAHE2026-5K (premium tier). Up to Rs 5,000 on Tuesday and Saturday in IST, Rs 4,000 on other days.' },
       { q: 'Is MAHE worth Rs 2.92L?', a: 'MAHE carries NIRF #3 University rank and NAAC A++. For employers who value the MAHE brand, the premium is justified.' },
-      { q: 'Can I combine the MAHE coupon with university scholarships?', a: 'MAHE runs its own scholarship categories administered directly by the university. Eligibility and combinability with the MAHE2026-7500 coupon depend on current MAHE policy. Confirm with MAHE admissions during enrollment.' },
+      { q: 'Can I combine the MAHE coupon with university scholarships?', a: 'MAHE runs its own scholarship categories administered directly by the university. Eligibility and combinability with the MAHE2026-5K coupon depend on current MAHE policy. Confirm with MAHE admissions during enrollment.' },
       { q: 'Is MAHE the same as MUJ?', a: 'No. MAHE (Karnataka) and MUJ (Jaipur) are separate universities under the Manipal group.' },
     ],
     peerComparisons: [
-      { uni: 'Symbiosis (Rs 3,70,000; Rs 3,15,000 after 2+ yrs exp concession)', savings: 'Up to Rs 5,000 via SYMB2026-7500' },
+      { uni: 'Symbiosis (Rs 3,70,000; Rs 3,15,000 after 2+ yrs exp concession)', savings: 'Up to Rs 5,000 via SYMB2026-5K' },
       { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
     ],
   },
@@ -365,25 +364,25 @@ export const COUPON_PAGES: CouponPageData[] = [
     naac: 'A++',
     // NIRF Management #11 per Supabase and lib/data.ts. #32 matched no category.
     nirf: '#11 Management',
-    couponCode: 'SYMB2026-7500',
+    couponCode: 'SYMB2026-5K',
     couponDiscount: 'Up to Rs 5,000 verified discount coupon (Tue/Sat IST)',
     blogSlug: 'symbiosis-online-mba-review-2026',
     officialUrl: 'ssodl.symbiosis.ac.in',
     discounts: [
       { type: 'Work experience scholarship', eligibility: '2+ years professional experience', saving: 'Rs 50,000-55,000 (fee becomes Rs 2,65,000)', howToApply: 'Submit experience letters during admission' },
-      { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code SYMB2026-7500 during enrollment call' },
+      { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code SYMB2026-5K during enrollment call' },
     ],
-    stackExample: 'The SYMB2026-7500 verified discount coupon saves up to Rs 5,000 on Tuesday and Saturday in IST applied at enrollment. University-administered scholarships are separate and should be verified directly with Symbiosis admissions.',
+    stackExample: 'The SYMB2026-5K verified discount coupon saves up to Rs 5,000 on Tuesday and Saturday in IST applied at enrollment. University-administered scholarships are separate and should be verified directly with Symbiosis admissions.',
     emiCompatible: 'Yes. Symbiosis offers semester-wise payment after the coupon discount is applied.',
     exclusions: ['Does not reduce registration fee', 'Cannot combine with other third-party offers'],
     faqs: [
-      { q: 'What is the Symbiosis online MBA discount coupon code?', a: 'SYMB2026-7500 (premium tier). Up to Rs 5,000 on Tuesday and Saturday in IST, Rs 4,000 on other days.' },
+      { q: 'What is the Symbiosis online MBA discount coupon code?', a: 'SYMB2026-5K (premium tier). Up to Rs 5,000 on Tuesday and Saturday in IST, Rs 4,000 on other days.' },
       { q: 'Does Symbiosis offer scholarships separate from this coupon?', a: 'Symbiosis runs its own scholarship programmes administered directly by the university for the SSODL online MBA. Eligibility, percentages, and documentation are set by Symbiosis. Ask the Symbiosis admissions team directly for current scholarship details.' },
       { q: 'Is Symbiosis the most expensive online MBA in India?', a: 'Symbiosis SSODL is among the most expensive online MBAs in India. The premium price buys NAAC A++ accreditation and NIRF #32 Management ranking. Our admission desk shares the current fee structure on your enrollment call.' },
-      { q: 'Does the SYMB2026-7500 coupon work with EMI?', a: 'Yes. The coupon discount is applied to the total programme fee first, and the reduced fee can then be paid via Symbiosis EMI or semester-wise plan. Confirm specific terms with Symbiosis admissions at enrollment.' },
+      { q: 'Does the SYMB2026-5K coupon work with EMI?', a: 'Yes. The coupon discount is applied to the total programme fee first, and the reduced fee can then be paid via Symbiosis EMI or semester-wise plan. Confirm specific terms with Symbiosis admissions at enrollment.' },
     ],
     peerComparisons: [
-      { uni: 'MAHE (Rs 2,92,000)', savings: 'Up to Rs 5,000 via MAHE2026-7500' },
+      { uni: 'MAHE (Rs 2,92,000)', savings: 'Up to Rs 5,000 via MAHE2026-5K' },
       { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
     ],
   },

@@ -14,8 +14,12 @@
 - **Dropped claims:** the LPU vs Chandigarh title had "NIRF #19" with no category (house rule), and it is gone. The state
   list titles (Karnataka Rs 30K floor, Tamil Nadu Rs 20K) and the healthcare and IIM ranges no longer carry fee figures.
   Those floors were never checked against lib/data.ts, and a range floor is the IGNOU trap.
-- **Open:** the Symbiosis coupon code is SYMB2026-7500 while every page says "up to Rs 5,000". Either the code name or
-  the amount is wrong; it needs Rishi.
+- **Resolved same day:** the Symbiosis code was SYMB2026-7500 while every page said "up to Rs 5,000". Rishi confirmed Rs
+  5,000. The cause was a tier flattening: TIER_AMOUNTS sets every tier to max 5,000 and base 4,000, but the two premium codes
+  kept their Rs 7,500 names. SYMB2026-7500 is now SYMB2026-5K and MAHE2026-7500 is now MAHE2026-5K. MAHE's stackExample
+  still said "up to Rs 7,500" and now says Rs 5,000, and the stale tier comment in lib/coupon-pages.ts is corrected. Anyone
+  who quotes an old code to a counsellor should still be honoured. MUJ2026-4K and SMU2026-4K also advertise up to Rs 5,000;
+  "4K" can be read as the Rs 4,000 base, so they are left as they are.
 
 ## 2026-10-29 · Duplicate H1 and title on 28 pages; Course schema GSC report already fixed
 

@@ -67,7 +67,7 @@ export const COUPONS: Coupon[] = [
   // newly invented. IGNOU's page stays out of the catalogue on purpose: it
   // publishes couponCode 'N/A' because IGNOU carries no coupon.
   {
-    code: 'MAHE2026-7500',
+    code: 'MAHE2026-5K',
     university: 'MAHE Manipal Online',
     universityId: 'manipal-academy-higher-education-online',
     discount: 10,
@@ -133,7 +133,7 @@ export const COUPONS: Coupon[] = [
     featured: true,
   },
   {
-    code: 'SYMB2026-7500',
+    code: 'SYMB2026-5K',
     university: 'Symbiosis SSODL',
     universityId: 'symbiosis-university-online',
     discount: 10,
