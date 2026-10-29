@@ -1,5 +1,20 @@
 # Fix log
 
+## 2026-10-29 · Nofollow on official-source links removed; kept on Pexels photo credits
+
+- **Why:** Semrush flagged 738 nofollow outbound links. Two kinds were mixed together. 764 are Pexels photographer
+  credits from `lib/pexels.ts`. 238 were the regulator and university-portal links the house style tells every post to
+  cite (deb.ugc.ac.in, naac.gov.in, nirfindia.org, ugc.gov.in, aicte-india.org, official portals). The same domains were
+  followed in some posts and nofollowed in others (deb.ugc.ac.in: 153 followed, 92 nofollow), because each batch of
+  posts was generated with a different template. Nofollow on a cited source tells search engines we do not vouch for
+  it, which is backwards for an independent site whose case rests on official UGC/NAAC/NIRF data.
+- **Fix:** removed the `nofollow` token from 236 links in `lib/blog.ts` and 2 in `components/MBAHubClient.tsx`.
+  `noopener` and the other rel tokens stay. A line diff with `rel` stripped shows 0 changes outside the attribute
+  (checker proven on an injected change).
+- **Kept:** Pexels credits stay nofollow. They are attribution, not endorsement, so Semrush will keep reporting about
+  that many. Mark the check as ignored there. Followed links to quora.com (9), ignou.pissedconsumer.com,
+  eduverticals.com and jumpnetworks.in were not touched. They are not approved sources and are worth a separate look.
+
 ## 2026-10-29 · Spec pages served for slugs lib/data.ts does not list: 40 consolidated, 102 listed for Rishi
 
 - **Why:** `resolveSpec` falls back to `programs-manifest.json`, which prebuild rebuilds from the Programs xlsx on

@@ -179,7 +179,7 @@ export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
           <strong>How we rank:</strong> NIRF Management category rank (2025) carries the highest weight, followed by NAAC grade, fee transparency, specialisation breadth, and student-reported placement outcomes. We exclude universities with fabricated placement statistics, unverified NIRF claims, or suspended UGC-DEB status.
         </p>
         <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
-          <strong>Note:</strong> All fees shown are total programme fees (not per-semester) and are indicative. NIRF ranks are from the Management category 2025 unless stated otherwise. Verify current fees and UGC-DEB approval at <a href="https://deb.ugc.ac.in" target="_blank" rel="nofollow" className="text-amber-700 underline">deb.ugc.ac.in</a> and the university portal before applying.
+          <strong>Note:</strong> All fees shown are total programme fees (not per-semester) and are indicative. NIRF ranks are from the Management category 2025 unless stated otherwise. Verify current fees and UGC-DEB approval at <a href="https://deb.ugc.ac.in" target="_blank" className="text-amber-700 underline">deb.ugc.ac.in</a> and the university portal before applying.
         </div>
         <p className="text-sm text-slate-600 mt-4">
           For a side-by-side comparison of the top 15 universities by NIRF, NAAC, and fees, see our{' '}
@@ -357,7 +357,7 @@ export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
 
           <div className="rounded-xl border border-slate-200 bg-white p-5">
             <h3 className="font-bold text-base mb-2" style={{ color: '#0B1533' }}>Step 2: Verify UGC-DEB Approval</h3>
-            <p className="text-sm text-slate-600">Check <a href="https://deb.ugc.ac.in" target="_blank" rel="nofollow" className="text-blue-600 underline">deb.ugc.ac.in</a> for current approval status. Avoid universities suspended in the last 3 years. Confirm AICTE approval for deemed universities. Every university on this page is verified UGC-DEB approved as of April 2026.</p>
+            <p className="text-sm text-slate-600">Check <a href="https://deb.ugc.ac.in" target="_blank" className="text-blue-600 underline">deb.ugc.ac.in</a> for current approval status. Avoid universities suspended in the last 3 years. Confirm AICTE approval for deemed universities. Every university on this page is verified UGC-DEB approved as of April 2026.</p>
           </div>
 
           <div className="rounded-xl border border-slate-200 bg-white p-5">
