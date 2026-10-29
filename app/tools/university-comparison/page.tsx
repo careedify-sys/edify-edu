@@ -32,14 +32,14 @@ export default function UniversityComparisonPage() {
 
   return (
     <div className="min-h-screen bg-surface">
-      {/* Schema */}
+      {/* Schema: WebPage, not WebApplication. Google's Software App result requires
+          aggregateRating or review, and this tool has no collected ratings. */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
         '@context': 'https://schema.org',
-        '@type': 'WebApplication',
+        '@type': 'WebPage',
         name: 'University Comparison Tool',
         description: 'Compare online universities in India by NIRF rank, fees, NAAC grade. Filter MBA, MCA, BBA programs.',
-        applicationCategory: 'EducationalApplication',
-        operatingSystem: 'Web'
+        url: 'https://edifyedu.in/tools/university-comparison'
       })}} />
 
       {/* Breadcrumb */}

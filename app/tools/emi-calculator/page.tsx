@@ -70,14 +70,14 @@ const faqSchema = {
   ],
 }
 
+// WebPage, not SoftwareApplication: Google's Software App result requires
+// aggregateRating or review, and this tool has no collected ratings to give it.
+// Do not add one until real first-party ratings exist (see SchemaBlock.tsx).
 const softwareSchema = {
   '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
+  '@type': 'WebPage',
   name: 'Education Loan EMI Calculator',
-  applicationCategory: 'FinanceApplication',
-  operatingSystem: 'Web',
   url: 'https://edifyedu.in/tools/emi-calculator',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' },
   description: 'Free EMI calculator for education loans on online MBA, MCA, BBA and BCA programs from UGC-DEB approved universities in India.',
   author: { '@type': 'Organization', name: 'edifyedu.in', url: 'https://edifyedu.in' },
 }

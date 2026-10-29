@@ -1,5 +1,16 @@
 # Fix log
 
+## 2026-10-30 · Software App schema errors on /tools/emi-calculator and /tools/university-comparison
+
+- **Why:** GSC wanted `offers` and `aggregateRating` or `review` on both. Google's Software App rich result requires a
+  rating, and neither tool has collected ratings. Adding one would be fabricated markup, the reason `SchemaBlock.tsx`
+  dropped its review schema on 2026-08-07.
+- **Fix:** both pages now emit `WebPage` (name, description, url) in place of `SoftwareApplication` and
+  `WebApplication`. The EMI page keeps its FAQPage block. Built site: 0 pages declare an app type.
+- **Next:** click Validate Fix on the Software App report in GSC. Only re-add an app type if real first-party ratings
+  exist. The open question on whether /tools/university-comparison should exist at all (it duplicates /compare) is
+  unchanged.
+
 ## 2026-10-29 · Nofollow on official-source links removed; kept on Pexels photo credits
 
 - **Why:** Semrush flagged 738 nofollow outbound links. Two kinds were mixed together. 764 are Pexels photographer
