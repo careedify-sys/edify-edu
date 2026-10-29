@@ -44,7 +44,9 @@ const errors: string[] = []
 let withUrl = 0
 let withDate = 0
 
-const today = new Date().toISOString().slice(0, 10)
+// Local date, not UTC: toISOString() is still yesterday in India until 05:30 IST.
+const now = new Date()
+const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`
 
 for (const u of unis) {
   const url = u.officialUrl

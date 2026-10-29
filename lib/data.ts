@@ -269,12 +269,14 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     id: 'jain-university-online',
     // MCA fee read from onlinejain.com/online-mca, priced per elective
     officialUrl: 'https://onlinejain.com',
-    feeVerifiedOn: '2026-10-06',
+    feeVerifiedOn: '2026-10-30',
     // Verified 2026-10-06 against onlinejain.com/online-mca. Priced per
     // elective: Rs 1,30,000 for Computer Science and Information Technology,
     // Rs 1,60,000 for Cyber Security and AI, AI and ML, Data Science and AI,
     // Generative and Agentic AI, Cloud and DevOps, and Full Stack Development.
-    programFees: { mca: { fee: 130000, feeMax: 160000 } },
+    // BBA read from onlinejain.com/online-bba on 2026-10-30: Rs 1,35,000 for Finance, Marketing and
+    // HRM, Rs 1,50,000 for Data Science & AI and Digital Marketing (3 years). 15% off for one-time payment.
+    programFees: { mca: { fee: 130000, feeMax: 160000 }, bba: { fee: 135000, feeMax: 150000 } },
     logo: '/logos/university_logos/jain_university-logo.svg',
     name: 'JAIN (Deemed-to-be University) Online',
     abbr: 'JUJOD',
@@ -353,7 +355,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['Finance', 'Marketing', 'Digital Marketing', 'Data Science', 'Human Resource Management'],
-        fees: '₹0.3L – ₹2.8L',
+        fees: '₹1,35,000–₹1,50,000',
         duration: '3 Yrs',
         roles: ['Finance Assistant', 'Accounts Executive', 'Tax Trainee', 'Investment Analyst Trainee'],
         avgSalary: '₹3L – ₹8L per annum',
@@ -506,7 +508,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     id: 'lovely-professional-university-online',
     // MCA fee read from lpuonline.com/master-of-computer-application
     officialUrl: 'https://www.lpuonline.com',
-    feeVerifiedOn: '2026-10-06',
+    feeVerifiedOn: '2026-10-30',
     uniType: 'private',
     // MCA: Rs 32,500 per semester (4 semesters, so Rs 1,30,000 semester-wise) or
     // Rs 1,17,440 one-time. Confirmed by Rishi 2026-10-28; replaces Rs 1,29,600
@@ -514,11 +516,19 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // BCA: Rs 20,400 per semester (6 semesters, so Rs 1,22,400 semester-wise) or
     // Rs 1,11,360 lump sum. Confirmed by Rishi 2026-10-28; the 10 May 1,22,400 was
     // the semester-wise total only and had never been read from the portal.
-    programFees: { bca: { fee: 111360, feeMax: 122400 }, mca: { fee: 117440, feeMax: 130000 } },
+    // BBA, BA, M.Com, MSc read from lpuonline.com programme pages on 2026-10-30. Actual fee per
+    // semester: BBA/M.Com/MSc Rs 25,000, BA Rs 20,000; 20% Student Grant price Rs 20,400 / Rs 16,400
+    // per semester ("valid until 31st Oct '26", renewed since August). BBA and BA 6 semesters,
+    // M.Com and MSc (Mathematics and Economics alike) 4. Lump-sum amounts are not on the pages.
+    programFees: { bca: { fee: 111360, feeMax: 122400 }, mca: { fee: 117440, feeMax: 130000 }, bba: { fee: 122400, feeMax: 150000 }, mcom: { fee: 81600, feeMax: 100000 } },
     // MBA list Rs 2,00,000; Rs 1,61,600 paid semester-wise; Rs 1,46,240 paid as a
     // lump sum. Official portal, recorded Aug 2026, confirmed by Rishi 2026-10-27.
     // pd.fees "₹1.61L" is a truncation of 1,61,600, not a fee in its own right.
     feeBreakdown: {
+      bba: { list: 150000, net: { min: 122400, max: 122400, label: 'with the 20% Student Grant, semester-wise (₹20,400 × 6)' }, perSemester: { list: 25000, net: 20400, netLabel: 'with Student Grant' }, source: 'lpuonline.com BBA page, 2026-10-30' },
+      ba: { list: 120000, net: { min: 98400, max: 98400, label: 'with the 20% Student Grant, semester-wise (₹16,400 × 6)' }, perSemester: { list: 20000, net: 16400, netLabel: 'with Student Grant' }, source: 'lpuonline.com BA page, 2026-10-30' },
+      mcom: { list: 100000, net: { min: 81600, max: 81600, label: 'with the 20% Student Grant, semester-wise (₹20,400 × 4)' }, perSemester: { list: 25000, net: 20400, netLabel: 'with Student Grant' }, source: 'lpuonline.com M.Com page, 2026-10-30' },
+      msc: { list: 100000, net: { min: 81600, max: 81600, label: 'with the 20% Student Grant, semester-wise (₹20,400 × 4)' }, perSemester: { list: 25000, net: 20400, netLabel: 'with Student Grant' }, source: 'lpuonline.com MSc Mathematics and Economics pages, 2026-10-30' },
       // MBA tiers reconfirmed by Rishi 2026-10-28 (semester-wise 1,61,600; one-time 1,46,240).
       mba: { list: 200000, net: { min: 146240, max: 161600, label: 'by payment plan (lump sum to semester-wise)' }, source: 'lpuonline.com, Aug 2026; reconfirmed by Rishi 2026-10-28' },
       mca: { list: 130000, modes: [{ amount: 117440, label: 'one-time' }, { amount: 130000, label: 'semester-wise (₹32,500 × 4 semesters)' }], perSemester: { list: 32500, listLabel: 'semester-wise' }, source: 'Rishi, 2026-10-28' },
@@ -588,7 +598,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['Entrepreneurship', 'Human Resource Management', 'Marketing', 'International Business', 'Family Business', 'Digital Marketing', 'FinTech', 'Retail & E-Commerce', 'Artificial Intelligence', 'Healthcare Management', 'Logistics & Supply Chain', 'Foreign Exchange Management', 'Travel & Tourism Management', 'Event Management'],
-        fees: '₹0.2L – ₹1.5L',
+        fees: '₹1,22,400–₹1,50,000',
         duration: '3 Years (6 Semesters)',
         roles: ['Business Analyst', 'Marketing Manager', 'HR Executive', 'Operations Manager', 'Sales Manager', 'Entrepreneur'],
         avgSalary: '₹3L – ₹8L per annum',
@@ -608,7 +618,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BA': {
         specs: ['Humanities & Social Sciences'],
-        fees: '₹0.1L – ₹0.9L',
+        fees: '₹98,400–₹1,20,000',
         duration: '3 Years (6 Semesters)',
         roles: ['Content Writer', 'Journalist', 'Social Worker', 'Educator', 'Public Administrator', 'PR Officer'],
         avgSalary: '₹2L – ₹6L per annum',
@@ -618,7 +628,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'M.Com': {
         specs: ['Commerce & Finance'],
-        fees: '₹20K – ₹70K',
+        fees: '₹81,600–₹1,00,000',
         duration: '2 Years (4 Semesters)',
         roles: ['Chartered Accountant support', 'Financial Analyst', 'Tax Consultant', 'Auditor', 'Finance Manager', 'Banking Officer'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -628,7 +638,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MSc': {
         specs: ['Mathematics', 'Economics'],
-        fees: '₹14K – ₹56K',
+        fees: '₹81,600–₹1,00,000',
         duration: '2 Years (4 Semesters)',
         roles: ['Data Analyst', 'Actuary', 'Mathematics Lecturer/Professor', 'Quantitative Analyst', 'Research Scientist', 'Statistician'],
         avgSalary: '₹4L – ₹14L per annum',
