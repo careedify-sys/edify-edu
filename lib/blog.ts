@@ -6109,7 +6109,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `
 <p>Three universities. Three fee points. Three different things they are good at. Online Manipal runs MBA programs through MAHE, MUJ, and SMU, and if you are searching for the right one, the honest answer is that they are not interchangeable. This page covers all three in detail, with fees, specialisations, eligibility, and what students have said, so you can pick the one that fits your situation.</p>
 
-    <p>Program details are sourced from the <a href="https://www.onlinemanipal.com/" target="_blank">official Online Manipal website</a> and individual university pages. Student feedback is drawn from Quora, official testimonials, and independent review platforms.</p>
+    <p>Program details are sourced from the <a href="https://www.onlinemanipal.com/" target="_blank">official Online Manipal website</a> and individual university pages. Student comments are quoted from Online Manipal's own website and labelled as such.</p>
 
     <h2>About Online Manipal</h2>
     <p>Online Manipal is the digital learning platform of the Manipal Group, one of India's oldest education groups. It brings together programs from three universities: Manipal Academy of Higher Education (MAHE) in Karnataka, Manipal University Jaipur (MUJ) in Rajasthan, and Sikkim Manipal University (SMU) in Sikkim. All programs are UGC-DEB entitled and AICTE approved, delivered through the same LMS with live sessions, recorded lectures, remote-proctored exams, and a shared placement portal. The annual Ekam event brings online students together in person for networking, which is unusual for an online program.</p>
@@ -6164,16 +6164,14 @@ export const BLOG_POSTS: BlogPost[] = [
 
     <h2>Student Reviews</h2>
     <div class="platform-section">
-      <div class="platform-label">Official Testimonials and Quora</div>
+      <div class="platform-label">Testimonials on Online Manipal's website</div>
       <div class="voices-grid">
-        <div class="voice-card"><div class="qs">"</div><div class="voice-text">After a 10-year break from academics, I chose to pursue an online MBA to acquire practical skills for my current role at Aditya Birla Group. The flexibility was genuine and the curriculum was practical.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.onlinemanipal.com/" target="_blank">Online Manipal Testimonial</a></span><span class="sent s-pos">Positive</span></div></div>
-        <div class="voice-card"><div class="qs">"</div><div class="voice-text">Weekend classes and recorded sessions help me manage personal life and education in one go. The Ekam annual event was genuinely useful for networking, which I did not expect from an online program.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.onlinemanipal.com/" target="_blank">Online Manipal, MUJ Student</a></span><span class="sent s-pos">Positive</span></div></div>
-        <div class="voice-card"><div class="qs">"</div><div class="voice-text">The MAHE online MBA is in-depth and easy to follow. The LMS lets me revisit lectures and track my progress. The mentorship facility is genuinely accessible, not just a name on a website.</div><div class="voice-footer"><span class="voice-src">Online student review, MAHE</span><span class="sent s-pos">Positive</span></div></div>
-        <div class="voice-card"><div class="qs">"</div><div class="voice-text">I would not recommend any online MBA for job pursuit alone. But among online programs the LMS quality at Online Manipal is genuinely better than most. The Coursera access adds real tangible value.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.quora.com/How-was-your-experience-with-online-Manipal-University-for-an-MBA" target="_blank">Quora</a></span><span class="sent s-mix">Mixed</span></div></div>
+        <div class="voice-card"><div class="qs">"</div><div class="voice-text">...flexibility in terms of online classes and exams were of utmost importance to me.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.onlinemanipal.com/online-mba-degree-working-professionals-mahe" target="_blank">Ashwini S, MBA (MAHE), on onlinemanipal.com</a></span></div></div>
+        <div class="voice-card"><div class="qs">"</div><div class="voice-text">The quality of teaching is excellent.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.onlinemanipal.com/placements" target="_blank">Divyank Nema, MUJ learner, on onlinemanipal.com/placements</a></span></div></div>
       </div>
     </div>
+    <p>These lines come from Online Manipal's own website, so read them as the university's marketing, not independent reviews. We quote only wording we found on the portal, and we found no independent Online Manipal reviews we could verify.</p>
 
-    <div class="pull">Across reviews on Quora, official testimonials, and independent forums: the LMS quality, faculty access, and flexibility are consistently praised. Where students have honest doubts is on placement outcomes for freshers. For working professionals who already have a career to build on, the programs deliver what they advertise.</div>
 
     <h2>Who Should Choose Which</h2>
     <div class="persona-grid">
@@ -6194,7 +6192,6 @@ export const BLOG_POSTS: BlogPost[] = [
         <li><a href="https://www.onlinemanipal.com/online-mba-degree-working-professionals-mahe" target="_blank">MAHE Online MBA Page</a> <span class="src-badge">Official</span></li>
         <li><a href="https://www.onlinemanipal.com/online-mba-manipal-university-jaipur" target="_blank">MUJ Online MBA Page</a> <span class="src-badge">Official</span></li>
         <li><a href="https://www.onlinemanipal.com/online-mba-degree-dual-specialization-smu" target="_blank">SMU Online MBA Page</a> <span class="src-badge">Official</span></li>
-        <li><a href="https://www.quora.com/How-was-your-experience-with-online-Manipal-University-for-an-MBA" target="_blank">Quora: Experience with Online Manipal MBA</a> <span class="src-badge">Quora</span></li>
         <li><a href="/universities/manipal-academy-higher-education-online/mba" class="ilink">MAHE Online MBA: EdifyEdu Comparison</a> <span class="src-badge">Internal</span></li>
         <li><a href="https://www.onlinemanipal.com/blogs/online-mba-programs-at-online-manipal" target="_blank">Online Manipal MBA Comparison Blog</a> <span class="src-badge">Official</span></li>
       </ul>
@@ -6256,7 +6253,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 
 <p>MAHE is the most expensive of the three Online Manipal campuses and the one most people mean when they say "Manipal MBA". NIRF ranked it third in India overall. It has Institution of Eminence status from the Ministry of Education. It is a NAAC A++ university. All of that matters if your goal is a degree that carries premium corporate recognition. Whether the Rs 2,92,000 fee is worth it compared to MUJ at ₹1,84,000 depends entirely on which specialisation you want and what employer you are trying to impress.</p>
-    <p>All program details are sourced from the <a href="https://www.onlinemanipal.com/online-mba-degree-working-professionals-mahe" target="_blank">official MAHE MBA page on Online Manipal</a>. Student feedback is from Quora and Online Manipal's learner surveys.</p>
+    <p>All program details are sourced from the <a href="https://www.onlinemanipal.com/online-mba-degree-working-professionals-mahe" target="_blank">official MAHE MBA page on Online Manipal</a>. Student feedback is from Online Manipal's own testimonials and its January 2026 learner survey.</p>
 
     <h2>About MAHE</h2>
     <p>Manipal Academy of Higher Education was established in 1953 under a public-private partnership model. It received Deemed University status and was recognised as an Institution of Eminence by the Ministry of Education in 2020. NIRF ranked it 3rd in India overall in 2024 and 14th across all institutions. It holds NAAC A++ accreditation and features in QS World University Rankings at 901-950 globally and 197 in Asia.</p>
@@ -6322,16 +6319,14 @@ export const BLOG_POSTS: BlogPost[] = [
     <h2>What Students Say</h2>
 
     <div class="platform-section">
-      <div class="platform-label">Quora and Official Testimonials</div>
+      <div class="platform-label">Testimonial on Online Manipal's website</div>
       <div class="voices-grid">
-        <div class="voice-card"><div class="qs">"</div><div class="voice-text">Being a working professional, flexibility in online classes and exams was most important. I wanted to upskill without quitting my job and this online MBA from MAHE was the best option. Manipal has great brand value.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.onlinemanipal.com/online-mba-degree-working-professionals-mahe" target="_blank">Ashwini S, MAHE MBA</a></span><span class="sent s-pos">Positive</span></div></div>
-        <div class="voice-card"><div class="qs">"</div><div class="voice-text">I currently work in the pharmaceutical domain. I wanted to gain new skills in leadership, communication and teamwork, which are very essential. The Pharmaceutical Management specialisation is exactly what I needed.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.onlinemanipal.com/online-mba-degree-working-professionals-mahe" target="_blank">MAHE Pharma MBA student</a></span><span class="sent s-pos">Positive</span></div></div>
-        <div class="voice-card"><div class="qs">"</div><div class="voice-text">Through MAHE's online MBA, I study anywhere anytime, access recorded classes and get doubts cleared from faculty who are approachable. Free access to Coursera makes upskilling very convenient alongside the degree.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.onlinemanipal.com/online-mba-degree-working-professionals-mahe" target="_blank">Digital marketing professional, MAHE</a></span><span class="sent s-pos">Positive</span></div></div>
-        <div class="voice-card"><div class="qs">"</div><div class="voice-text">I generally don't recommend any online MBA for job pursuit. Regular MBA graduates struggle to get visibility, then comes online from many more institutes. That said, MAHE being an Institute of Eminence does carry real weight.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.quora.com/How-was-your-experience-with-online-Manipal-University-for-an-MBA" target="_blank">Quora</a></span><span class="sent s-mix">Mixed</span></div></div>
+        <div class="voice-card"><div class="qs">"</div><div class="voice-text">...flexibility in terms of online classes and exams were of utmost importance to me.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.onlinemanipal.com/online-mba-degree-working-professionals-mahe" target="_blank">Ashwini S, MBA (MAHE), on onlinemanipal.com</a></span></div></div>
       </div>
     </div>
+    <p>These lines come from Online Manipal's own website, so read them as the university's marketing, not independent reviews. We quote only wording we found on the portal, and we found no independent MAHE reviews we could verify.</p>
+    <div class="pull">Online Manipal's January 2026 learner survey (over 3,300 learners across MAHE, MUJ and SMU) reports 92 percent satisfaction at MAHE, and 91 percent of MAHE students say their mentor gave helpful guidance. It is the university's own survey, not an independent one. Peer networking still takes effort, as in any online MBA.</div>
 
-    <div class="pull">MAHE's internal learner survey of 3,300 students found 92 percent overall satisfaction, with 91 percent saying mentors provided helpful guidance throughout. Faculty engagement and LMS access were both rated highly. The honest gap is the same as any online MBA: peer networking requires effort.</div>
 
     <h2>Placement Support</h2>
     <p>MAHE learners access Online Manipal's AI-powered placement portal for unlimited mock interviews, resume building, and job applications. The 2025 placement drive included companies like EY, Goldman Sachs, Jio, Adani, NoBroker, PayPal, PepsiCo, and Tata Communications. MAHE's School of Management is ranked 47th among top B-schools in India by The Week magazine. Average package reported: Rs 5.49 LPA. Median: Rs 6.48 LPA.</p>
@@ -6361,7 +6356,6 @@ export const BLOG_POSTS: BlogPost[] = [
       <ul class="sources-list">
         <li><a href="https://www.onlinemanipal.com/online-mba-degree-working-professionals-mahe" target="_blank">MAHE Online MBA Official Page</a> <span class="src-badge">Official</span></li>
         <li><a href="https://www.onlinemanipal.com/institution/manipal-academy-of-higher-education" target="_blank">MAHE Institution Page</a> <span class="src-badge">Official</span></li>
-        <li><a href="https://www.quora.com/How-was-your-experience-with-online-Manipal-University-for-an-MBA" target="_blank">Quora &mdash; MAHE MBA experience</a> <span class="src-badge">Quora</span></li>
         <li><a href="https://www.onlinemanipal.com/blogs/a-data-led-report-on-online-manipal-learner-experience" target="_blank">Online Manipal Learner Survey 2026</a> <span class="src-badge">Survey</span></li>
         <li><a href="https://www.onlinemanipal.com/placements" target="_blank">Online Manipal Placement Cell</a> <span class="src-badge">Official</span></li>
       </ul>
@@ -6501,7 +6495,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 
 <p>If you search "online MBA India" on any forum, MUJ comes up most often in the comments. It was one of the first universities in India to offer an online MBA with UGC approval, starting its first batch in April 2021. The ₹1,84,000 fee sits in a middle ground between MAHE (Rs 2,92,000) and SMU (Rs 1,20,000), but what really distinguishes it is the range of 13 specialisations, including tracks like IT and FinTech, BFSI, and International Business that the other two campuses do not offer.</p>
-    <p>All program details are sourced from the <a href="https://www.onlinemanipal.com/online-mba-manipal-university-jaipur" target="_blank">official MUJ MBA page on Online Manipal</a>. Student feedback is from public Quora threads.</p>
+    <p>All program details are sourced from the <a href="https://www.onlinemanipal.com/online-mba-manipal-university-jaipur" target="_blank">official MUJ MBA page on Online Manipal</a>. Student feedback is from Online Manipal's own testimonials and its January 2026 learner survey.</p>
 
     <h2>About MUJ</h2>
     <p>Manipal University Jaipur was established in 2011 in Rajasthan and is part of the Manipal Group. It received UGC approval for online degree programs in 2021. It holds NAAC A+ accreditation and has entered QS World University Rankings in sustainability and Asia categories. NIRF ranked it 81st in management and 64th in engineering in 2024. The MUJ online MBA is QS-ranked, which is listed on the program page as a distinct feature.</p>
@@ -6571,19 +6565,15 @@ export const BLOG_POSTS: BlogPost[] = [
     <h2>What Students Say</h2>
 
     <div class="platform-section">
-      <div class="platform-label">Official Testimonials and Placement Outcomes</div>
+      <div class="platform-label">Testimonials on Online Manipal's placements page</div>
       <div class="voices-grid">
-        <div class="voice-card"><div class="qs">"</div><div class="voice-text">MBA from MUJ helped me land a Specialist role in Asset and Wealth Management at Goldman Sachs. The recorded lectures, study materials, and placement preparation sessions played a crucial role.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.onlinemanipal.com/placements" target="_blank">Online Manipal Placement Cell</a></span><span class="sent s-pos">Positive</span></div></div>
-        <div class="voice-card"><div class="qs">"</div><div class="voice-text">My learning journey with MUJ has been enriching. Courses are taught by experts in a well-structured and practical way. The guidance from mentors has played a key role. I am glad to have chosen MUJ for my MBA.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.onlinemanipal.com/placements" target="_blank">MUJ MBA learner</a></span><span class="sent s-pos">Positive</span></div></div>
-      </div>
-      <div class="platform-label">Quora</div>
-      <div class="voices-grid">
-        <div class="voice-card"><div class="qs">"</div><div class="voice-text">The program is flexible and lets you progress at your own pace. Attendance is measured by how much course content you watch on the LMS, not by live class attendance. This makes it possible for people with jobs to pursue it conveniently.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.quora.com/How-was-your-experience-with-online-Manipal-University-for-an-MBA" target="_blank">Quora, MUJ 2025 graduate</a></span><span class="sent s-pos">Positive</span></div></div>
-        <div class="voice-card"><div class="qs">"</div><div class="voice-text">In online mode you might find it difficult to network or form connections. You need to proactively try and find like-minded batchmates. Conduct online meetings because you don't get to meet batchmates or seniors in person.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.quora.com/How-was-your-experience-with-online-Manipal-University-for-an-MBA" target="_blank">Quora, MUJ BCA graduate</a></span><span class="sent s-mix">Mixed</span></div></div>
+        <div class="voice-card"><div class="qs">"</div><div class="voice-text">The quality of teaching is excellent.</div><div class="voice-footer"><span class="voice-src"><a href="https://www.onlinemanipal.com/placements" target="_blank">Divyank Nema, MUJ learner, on onlinemanipal.com/placements</a></span></div></div>
+        <div class="voice-card"><div class="qs">"</div><div class="voice-text">MBA from Manipal University Jaipur helped me develop a solution-oriented mindset...</div><div class="voice-footer"><span class="voice-src"><a href="https://www.onlinemanipal.com/placements" target="_blank">Hariharan S, MBA (MUJ), on onlinemanipal.com/placements</a></span></div></div>
       </div>
     </div>
+    <p>These lines come from Online Manipal's own website, so read them as the university's marketing, not independent reviews. We quote only wording we found on the portal, and we found no independent MUJ reviews we could verify.</p>
+    <div class="pull">Online Manipal's January 2026 learner survey (over 3,300 learners across MAHE, MUJ and SMU) reports 92 percent satisfaction at MUJ. It is the university's own survey, not an independent one. Networking in online mode still takes personal effort.</div>
 
-    <div class="pull">MUJ scored 92 percent overall learner satisfaction in Online Manipal's survey of 3,300 students. Faculty performance, LMS usability, and assignment quality were all rated highly. The consistent honest note: networking in online mode requires personal effort. The university's in-person job fair (Launchpad 2025) was a positive step toward bridging this gap.</div>
 
     <h2>Placement at MUJ</h2>
     <p>MUJ placement data for 2024 shows around 93 percent of students placed, with 1,142 offers extended. Average package for online MBA graduates is reported at Rs 4.2 to Rs 6 LPA. Recruiters include companies like Goldman Sachs, Bajaj Allianz, Infosys, Dell, Flipkart, Amazon, and Wipro. MUJ's placement cell conducts resume workshops, interview mock sessions, and provides access to the AI-powered placement portal with unlimited practice rounds.</p>
@@ -6612,7 +6602,6 @@ export const BLOG_POSTS: BlogPost[] = [
       <ul class="sources-list">
         <li><a href="https://www.onlinemanipal.com/online-mba-manipal-university-jaipur" target="_blank">MUJ Online MBA Official Page</a> <span class="src-badge">Official</span></li>
         <li><a href="https://www.onlinemanipal.com/institution/manipal-university-jaipur" target="_blank">MUJ Institution Page</a> <span class="src-badge">Official</span></li>
-        <li><a href="https://www.quora.com/How-was-your-experience-with-online-Manipal-University-for-an-MBA" target="_blank">Quora: MUJ MBA experience</a> <span class="src-badge">Quora</span></li>
         <li><a href="/universities/manipal-university-jaipur-online/mba" class="ilink">MUJ Online MBA: EdifyEdu Data</a> <span class="src-badge">EdifyEdu</span></li>
         <li><a href="https://www.onlinemanipal.com/placements" target="_blank">Online Manipal Placement Cell</a> <span class="src-badge">Official</span></li>
       </ul>
