@@ -1,5 +1,30 @@
 # Fix log
 
+## 2026-10-30 · Hidden programme hubs unlocked with portal fees: 106 to 96
+
+- **Why:** scaling, not polish. 106 university programme hubs already render but carry noindex, because
+  `shouldIndexProgrammeHub` wants a content JSON or a fee that passes `getDisplayFee`, and every one of the 106 holds a
+  placeholder range (29 fail rule 4a width, 77 fail rule 4d shared range). A real fee is the honest unlock. A templated
+  content JSON is not: that route produced the fabricated employer lists and reviews fixed on 17 Sep, and 100 templated
+  pages for small universities is the profile the Sep 2026 spam update hit.
+- **Unlocked (10):** LPU BBA, BA, M.Com, MSc (list Rs 25,000/sem, BA Rs 20,000; 20% Student Grant net, recorded like the
+  LPU MBA); JAIN BBA (Rs 1,35,000-1,50,000 by specialisation); Marwadi BBA, B.Com, MSc (one-time vs semester-wise modes);
+  Alliance BBA (Rs 1,39,000) and B.Com (Rs 89,000, Rs 1,18,666 with the Honours year). All read from the university's
+  own portal on 30 Oct. Marwadi and Alliance get `officialUrl`, each linked from the main university domain.
+- **Checked:** each hub renders `index, follow` with the portal fee in the title. Prebuild adds them to valid-urls.json
+  on deploy (verified locally: all 10 appear). `programFees` has no `ba`/`msc` keys, so those live in pd.fees and
+  feeBreakdown only.
+- **Gate fix:** `check-official-urls` compared `feeVerifiedOn` with the UTC date, so a fee verified between midnight
+  and 05:30 IST failed as "in the future". It now uses the local date.
+- **Parser fix:** `prune-noindex-hub-urls.js` read `feeMax` as the first `feeMax:` in the record text. Marwadi's new
+  `programFees` line sits above the top-level field, so it took the BBA's 90,000 as the MBA ceiling and called the
+  (indexed) MBA hub noindex. On deploy, prebuild would have dropped a live hub from the sitemap. Both regexes are now
+  anchored to their own line. Proven by injecting a no-digit fee on LPU BBA: the check fails on it and passes without.
+- **Not unlocked, with reasons:** Chitkara BBA (portal says Rs 4,00,000 "Full Course Fee", nearly double its own MBA;
+  needs a second read); Chandigarh MSc (onlinecu.in shows only "25% Early Bird", no figure); UPES BCA and Christ online
+  (connection refused); KIIT (403); Graphic Era (main site links no online portal); Karunya (no online programmes linked
+  from karunya.edu). The rest are listed for Rishi in `audits/hidden-hub-fees-2026-10-30.csv`.
+
 ## 2026-10-30 · Invented student quotes in the Online Manipal, MAHE and MUJ MBA reviews
 
 - **Why:** the 29 Oct nofollow entry left followed Quora links for a look. All 7 Manipal ones backed "student voice"

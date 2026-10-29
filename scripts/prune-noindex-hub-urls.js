@@ -223,9 +223,11 @@ for (let i = 0; i < idHits.length; i++) {
     ? [...progsMatch[1].matchAll(/['"]([^'"]+)['"]/g)].map(x => x[1])
     : []
 
-  // feeMin / feeMax (numbers)
-  const feeMinMatch = body.match(/feeMin:\s*(\d+)/)
-  const feeMaxMatch = body.match(/feeMax:\s*(\d+)/)
+  // feeMin / feeMax (numbers). Anchored to a line of their own: programFees entries carry
+  // `feeMax:` too, and when programFees sits above the top-level field the first match was
+  // a BBA fee, which marked the MBA hub noindex (Marwadi, 2026-10-30).
+  const feeMinMatch = body.match(/^\s+feeMin:\s*(\d+)/m)
+  const feeMaxMatch = body.match(/^\s+feeMax:\s*(\d+)/m)
   const feeMin = feeMinMatch ? Number(feeMinMatch[1]) : undefined
   const feeMax = feeMaxMatch ? Number(feeMaxMatch[1]) : undefined
 

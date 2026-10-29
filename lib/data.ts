@@ -3206,6 +3206,17 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'marwadi-university-online',
+    // Fees read 2026-10-30 from marwadiuniversity.online (linked from marwadiuniversity.ac.in as
+    // "Apply Online Programs"). Indian students: BBA and B.Com Rs 79,000 one-time or Rs 15,000 x 6
+    // semesters; MSc Mathematics Rs 49,000 one-time or Rs 15,000 x 4. SAARC and USD fees differ.
+    officialUrl: 'https://marwadiuniversity.online',
+    feeVerifiedOn: '2026-10-30',
+    programFees: { bba: { fee: 79000, feeMax: 90000 }, bcom: { fee: 79000, feeMax: 90000 } },
+    feeBreakdown: {
+      bba: { list: 90000, modes: [{ amount: 79000, label: 'one-time' }, { amount: 90000, label: 'semester-wise (₹15,000 × 6 semesters)' }], perSemester: { list: 15000, listLabel: 'semester-wise' }, source: 'marwadiuniversity.online BBA page, 2026-10-30' },
+      bcom: { list: 90000, modes: [{ amount: 79000, label: 'one-time' }, { amount: 90000, label: 'semester-wise (₹15,000 × 6 semesters)' }], perSemester: { list: 15000, listLabel: 'semester-wise' }, source: 'marwadiuniversity.online B.Com page, 2026-10-30' },
+      msc: { list: 60000, modes: [{ amount: 49000, label: 'one-time' }, { amount: 60000, label: 'semester-wise (₹15,000 × 4 semesters)' }], perSemester: { list: 15000, listLabel: 'semester-wise' }, source: 'marwadiuniversity.online MSc Mathematics page, 2026-10-30' },
+    },
     name: 'Marwadi University Online',
     abbr: 'MU',
     city: '',
@@ -3254,7 +3265,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management'],
-        fees: '₹0.2L – ₹1.2L',
+        fees: '₹79,000–₹90,000',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -3274,7 +3285,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'B.Com': {
         specs: ['Commerce'],
-        fees: '₹0.1L – ₹0.6L',
+        fees: '₹79,000–₹90,000',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -3284,7 +3295,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MSc': {
         specs: ['Business Analytics'],
-        fees: '₹25K – ₹100K',
+        fees: '₹49,000–₹60,000',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -5162,6 +5173,15 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'alliance-university-online',
+    // Fees read 2026-10-30 from allianceonline.edu.in (linked from alliance.edu.in as "Alliance
+    // Online"). Domestic full course fee: BBA Rs 1,39,000 (6 semesters); B.Com Rs 89,000 for three
+    // years, plus Rs 29,666 for the Honours fourth year. Rs 1,000 registration on top of both.
+    officialUrl: 'https://allianceonline.edu.in',
+    feeVerifiedOn: '2026-10-30',
+    programFees: { bba: { fee: 139000 }, bcom: { fee: 89000, feeMax: 118666 } },
+    feeBreakdown: {
+      bcom: { list: 118666, modes: [{ amount: 89000, label: 'B.Com, 3 years' }, { amount: 118666, label: 'B.Com (Hons), 4 years' }], source: 'allianceonline.edu.in B.Com page, 2026-10-30' },
+    },
     logo: '/logos/university_logos/alliance-university-logo.svg',
     name: 'Alliance University Online',
     abbr: 'AU',
@@ -5198,7 +5218,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved MBA from Alliance University (Online), recognised for corporate hiring.'},
       'BBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management'],
-        fees: '₹0.2L – ₹1.1L',
+        fees: '₹1,39,000',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -5208,7 +5228,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'B.Com': {
         specs: ['Accounting and Taxation', 'Finance'],
-        fees: '₹0.1L – ₹0.8L',
+        fees: '₹89,000–₹1,18,666',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',

@@ -2,8 +2,8 @@
   "note": "Fee ranges claimed identically by two or more universities. A range is two numbers; identical independent authorship is not plausible, so these are treated as bulk-authored placeholders and suppressed by lib/fees.ts rule 4d. Regenerate with scripts/build-placeholder-fee-ranges.mjs. Single values are deliberately excluded, see that script for why.",
   "generatedAt": "2026-10-29",
   "minUniversities": 2,
-  "rangeCount": 23,
-  "affectedRows": 94,
+  "rangeCount": 20,
+  "affectedRows": 87,
   "ranges": [
     {
       "min": 48000,
@@ -187,18 +187,6 @@
       ]
     },
     {
-      "min": 20000,
-      "max": 120000,
-      "universities": [
-        "jaypee-university-online",
-        "marwadi-university-online",
-        "pp-savani-university-online"
-      ],
-      "programmes": [
-        "BBA"
-      ]
-    },
-    {
       "min": 33000,
       "max": 82000,
       "universities": [
@@ -247,38 +235,14 @@
       ]
     },
     {
-      "min": 10000,
-      "max": 80000,
-      "universities": [
-        "alliance-university-online",
-        "vels-university-online"
-      ],
-      "programmes": [
-        "B.Com",
-        "BBA"
-      ]
-    },
-    {
       "min": 20000,
-      "max": 110000,
+      "max": 120000,
       "universities": [
-        "alliance-university-online",
-        "noida-international-university-online"
-      ],
-      "programmes": [
-        "BBA"
-      ]
-    },
-    {
-      "min": 25000,
-      "max": 100000,
-      "universities": [
-        "marwadi-university-online",
+        "jaypee-university-online",
         "pp-savani-university-online"
       ],
       "programmes": [
-        "M.Com",
-        "MSc"
+        "BBA"
       ]
     },
     {
