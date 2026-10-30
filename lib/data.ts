@@ -799,6 +799,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'upes-online',
+    // BCA read 2026-10-30 from upesonline.ac.in/online-bca-courses (linked from upes.ac.in as
+    // "UPES Online"): Rs 1,50,000, paid Rs 50,000 a year for 3 years. One fee for all specialisations.
+    officialUrl: 'https://upesonline.ac.in',
+    feeVerifiedOn: '2026-10-30',
+    programFees: { bca: { fee: 150000 } },
     logo: '/logos/university_logos/upes-logo-black.svg',
     name: 'University of Petroleum & Energy Studies (UPES) Online',
     abbr: 'UOPES',
@@ -872,7 +877,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['New Age Technology', 'Cloud Computing & Cyber Security', 'Data Analytics'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1,50,000',
         duration: '3 Years',
         roles: ['Software Developer', 'Cloud Support', 'IoT Developer', 'Tech Analyst'],
         avgSalary: '₹3L – ₹8L per annum',
@@ -2454,13 +2459,16 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'chandigarh-university-online',
+    // MSc Data Science read 2026-10-30 from onlinecu.in/msc-data-science.php: Rs 1,70,000, Rs 1,27,500
+    // after the 25% Early Bird Scholarship (Rs 31,875 x 4 semesters). onlinecu.in is not linked from
+    // cuchd.in, so officialUrl stays blank under the confirmation rule.
     shortName: 'Chandigarh', // uses "Chandigarh" in cuchd.in and on its own logo
     programFees: { bca: { fee: 177000 }, mca: { fee: 155000 } },
     // MBA list Rs 2,20,000; after early-bird Rs 1,80,400 (Standard) and Rs 1,65,000
     // (HBP and Business Analytics variants). Official portal, recorded Aug 2026,
     // confirmed by Rishi 2026-10-27. CU publishes no per-semester MBA figure, and
     // pd.fees "₹1.80L" is not a CU number.
-    feeBreakdown: { mba: { list: 220000, net: { min: 165000, max: 180400, label: 'after early-bird' }, source: 'CU Online portal, Aug 2026' } },
+    feeBreakdown: { mba: { list: 220000, net: { min: 165000, max: 180400, label: 'after early-bird' }, source: 'CU Online portal, Aug 2026' }, msc: { list: 170000, net: { min: 127500, max: 127500, label: 'after the 25% early-bird scholarship (₹31,875 × 4 semesters)' }, source: 'onlinecu.in MSc Data Science page, 2026-10-30' } },
     logo: '/logos/university_logos/cu-online.svg',
     name: 'Chandigarh University Online',
     abbr: 'CUO',
@@ -2558,7 +2566,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MSc': {
         specs: ['Data Science'],
-        fees: '₹0.3L – ₹1.5L',
+        fees: '₹1,27,500–₹1,70,000',
         duration: '2 Years (4 Semesters)',
         roles: ['Data Scientist (₹11.57 LPA avg)', 'Data Analyst (₹6.36 LPA avg)', 'BI Manager (₹8–20 LPA)', 'Market Research Analyst (₹4.5–12 LPA)', 'Financial Analyst (₹6–18 LPA)', 'Supply Chain Analyst (₹6–16 LPA)'],
         avgSalary: '₹6L – ₹20L per annum',
@@ -8612,6 +8620,19 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'mats-university-online',
+    // Fees from "Fee Structure for Online Programs (2025-26)", the PDF on matsuniversityonline.com
+    // (linked from matsuniversity.ac.in as the Centre for Online Education), read 2026-10-30. Course fee
+    // per year: MBA Rs 75,000, BBA Rs 40,000, BCA Rs 30,000, B.Com Rs 25,000, plus Rs 1,000 admission
+    // form fee. Totals below are per-year fee x programme length (MBA 2 years, others 3).
+    officialUrl: 'https://matsuniversityonline.com',
+    feeVerifiedOn: '2026-10-30',
+    programFees: { mba: { fee: 150000 }, bba: { fee: 120000 }, bca: { fee: 90000 }, bcom: { fee: 75000 } },
+    feeBreakdown: {
+      mba: { list: 150000, listLabel: 'course fee, ₹75,000 × 2 years (2025-26 fee structure)', source: 'matsuniversityonline.com Online Fee Structure 2025-26 PDF, read 2026-10-30' },
+      bba: { list: 120000, listLabel: 'course fee, ₹40,000 × 3 years (2025-26 fee structure)', source: 'matsuniversityonline.com Online Fee Structure 2025-26 PDF, read 2026-10-30' },
+      bca: { list: 90000, listLabel: 'course fee, ₹30,000 × 3 years (2025-26 fee structure)', source: 'matsuniversityonline.com Online Fee Structure 2025-26 PDF, read 2026-10-30' },
+      bcom: { list: 75000, listLabel: 'course fee, ₹25,000 × 3 years (2025-26 fee structure)', source: 'matsuniversityonline.com Online Fee Structure 2025-26 PDF, read 2026-10-30' },
+    },
     logo: '/logos/university_logos/mats-university.webp',
     name: 'MATS University Online',
     abbr: 'MU',
@@ -8638,7 +8659,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programDetails: {
       'B.Com': {
         specs: ['Finance','Accounting','Taxation','E-Commerce','Banking & Insurance'],
-        fees: '\u20b933K \u2013 \u20b982K',
+        fees: '₹75,000',
         duration: '3 Years',
         roles: ['Accountant','Finance Executive','Tax Analyst','Banking Officer','Audit Associate'],
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
@@ -8648,7 +8669,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
-        fees: '\u20b936K \u2013 \u20b990K',
+        fees: '₹1,20,000',
         duration: '3 Years',
         roles: ['Business Analyst','Sales Executive','Marketing Executive','HR Assistant','Entrepreneur'],
         avgSalary: '\u20b92.5L \u2013 \u20b98L per annum',
@@ -8658,7 +8679,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BCA': {
         specs: ['Data Science','Web Development','Cloud Computing','Cybersecurity','AI & ML','Mobile Development'],
-        fees: '\u20b936K \u2013 \u20b990K',
+        fees: '₹90,000',
         duration: '3 Years',
         roles: ['Junior Developer','Web Developer','Database Administrator','IT Support','QA Tester'],
         avgSalary: '\u20b92.5L \u2013 \u20b910L per annum',
@@ -8668,7 +8689,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management', 'Operations Management', 'Data Science', 'Digital Marketing', 'International Business'],
-        fees: '\u20b960K \u2013 \u20b9150K',
+        fees: '₹1,50,000',
         duration: '2 Years',
         roles: ['Business Manager','Strategy Consultant','Operations Lead','Business Analyst','Product Manager'],
         avgSalary: '\u20b94L \u2013 \u20b914L per annum',

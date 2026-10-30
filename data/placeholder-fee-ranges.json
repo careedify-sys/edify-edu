@@ -2,8 +2,8 @@
   "note": "Fee ranges claimed identically by two or more universities. A range is two numbers; identical independent authorship is not plausible, so these are treated as bulk-authored placeholders and suppressed by lib/fees.ts rule 4d. Regenerate with scripts/build-placeholder-fee-ranges.mjs. Single values are deliberately excluded, see that script for why.",
   "generatedAt": "2026-10-30",
   "minUniversities": 2,
-  "rangeCount": 18,
-  "affectedRows": 82,
+  "rangeCount": 17,
+  "affectedRows": 77,
   "ranges": [
     {
       "min": 48000,
@@ -80,8 +80,7 @@
         "galgotias-university-online",
         "gls-university-online",
         "iift-online",
-        "mahatma-gandhi-university-online",
-        "upes-online"
+        "mahatma-gandhi-university-online"
       ],
       "programmes": [
         "B.Com",
@@ -147,19 +146,6 @@
       ]
     },
     {
-      "min": 60000,
-      "max": 150000,
-      "universities": [
-        "guru-jambheshwar-university-online",
-        "iiit-bangalore-online",
-        "mats-university-online",
-        "sage-university-online"
-      ],
-      "programmes": [
-        "MBA"
-      ]
-    },
-    {
       "min": 62000,
       "max": 140000,
       "universities": [
@@ -186,18 +172,6 @@
       ]
     },
     {
-      "min": 33000,
-      "max": 82000,
-      "universities": [
-        "bangalore-university-online",
-        "guru-jambheshwar-university-online",
-        "mats-university-online"
-      ],
-      "programmes": [
-        "B.Com"
-      ]
-    },
-    {
       "min": 39000,
       "max": 97000,
       "universities": [
@@ -207,6 +181,18 @@
       ],
       "programmes": [
         "MA"
+      ]
+    },
+    {
+      "min": 60000,
+      "max": 150000,
+      "universities": [
+        "guru-jambheshwar-university-online",
+        "iiit-bangalore-online",
+        "sage-university-online"
+      ],
+      "programmes": [
+        "MBA"
       ]
     },
     {
@@ -222,15 +208,14 @@
       ]
     },
     {
-      "min": 36000,
-      "max": 90000,
+      "min": 33000,
+      "max": 82000,
       "universities": [
-        "mats-university-online",
-        "sage-university-online"
+        "bangalore-university-online",
+        "guru-jambheshwar-university-online"
       ],
       "programmes": [
-        "BBA",
-        "BCA"
+        "B.Com"
       ]
     },
     {
