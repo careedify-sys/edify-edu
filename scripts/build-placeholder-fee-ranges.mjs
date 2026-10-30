@@ -61,8 +61,17 @@ for (const u of UNIVERSITIES) {
   }
 }
 
-const ranges = [...byRange.values()]
-  .filter(e => e.unis.size >= MIN_UNIVERSITIES)
+// Ratchet. A range found shared once is a placeholder fingerprint for good. When the other
+// holders get real portal fees, the last holder still carries the copied placeholder, and
+// dropping the range would publish it as that university's price (Sage BBA/BCA "₹36K – ₹90K"
+// went live this way on 2026-10-30 after MATS was fixed). Keep it while anyone still holds it.
+const previous = existsSync(OUT)
+  ? new Set(JSON.parse(readFileSync(OUT, 'utf8')).ranges.map(r => `${r.min}-${r.max}`))
+  : new Set()
+
+const ranges = [...byRange.entries()]
+  .filter(([key, e]) => e.unis.size >= MIN_UNIVERSITIES || previous.has(key))
+  .map(([, e]) => e)
   .map(e => ({
     min: e.min,
     max: e.max,

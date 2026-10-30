@@ -2,8 +2,8 @@
   "note": "Fee ranges claimed identically by two or more universities. A range is two numbers; identical independent authorship is not plausible, so these are treated as bulk-authored placeholders and suppressed by lib/fees.ts rule 4d. Regenerate with scripts/build-placeholder-fee-ranges.mjs. Single values are deliberately excluded, see that script for why.",
   "generatedAt": "2026-10-30",
   "minUniversities": 2,
-  "rangeCount": 17,
-  "affectedRows": 77,
+  "rangeCount": 20,
+  "affectedRows": 78,
   "ranges": [
     {
       "min": 48000,
@@ -133,19 +133,6 @@
       ]
     },
     {
-      "min": 49000,
-      "max": 110000,
-      "universities": [
-        "banasthali-vidyapith-online",
-        "guru-gobind-singh-indraprastha-university-online",
-        "kalinga-institute-industrial-technology-online",
-        "university-of-kerala-online"
-      ],
-      "programmes": [
-        "B.Com"
-      ]
-    },
-    {
       "min": 62000,
       "max": 140000,
       "universities": [
@@ -181,6 +168,18 @@
       ],
       "programmes": [
         "MA"
+      ]
+    },
+    {
+      "min": 49000,
+      "max": 110000,
+      "universities": [
+        "banasthali-vidyapith-online",
+        "kalinga-institute-industrial-technology-online",
+        "university-of-kerala-online"
+      ],
+      "programmes": [
+        "B.Com"
       ]
     },
     {
@@ -230,10 +229,40 @@
       ]
     },
     {
+      "min": 10000,
+      "max": 90000,
+      "universities": [
+        "karunya-university-online"
+      ],
+      "programmes": [
+        "B.Com"
+      ]
+    },
+    {
+      "min": 10000,
+      "max": 80000,
+      "universities": [
+        "vels-university-online"
+      ],
+      "programmes": [
+        "BBA"
+      ]
+    },
+    {
+      "min": 36000,
+      "max": 90000,
+      "universities": [
+        "sage-university-online"
+      ],
+      "programmes": [
+        "BBA",
+        "BCA"
+      ]
+    },
+    {
       "min": 54000,
       "max": 120000,
       "universities": [
-        "guru-gobind-singh-indraprastha-university-online",
         "university-of-kerala-online"
       ],
       "programmes": [

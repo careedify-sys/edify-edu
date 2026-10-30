@@ -7883,6 +7883,17 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'guru-gobind-singh-indraprastha-university-online',
+    // BBA and B.Com (Online Mode) read 2026-10-30 from the CDOE Prospectus 2026-27 (ipu.ac.in/pubinfo2026/
+    // cdoeProspectus240826.pdf, section 4): Rs 15,000 per semester x 6 (tuition 10,000, university
+    // 2,500, exam 1,500, development 1,000), plus Rs 200 alumni and Rs 200 registration, one time.
+    // The prospectus covers only BBA and B.Com; it lists no online MA.
+    officialUrl: 'https://cdoe.ipu.ac.in',
+    feeVerifiedOn: '2026-10-30',
+    programFees: { bba: { fee: 90000 }, bcom: { fee: 90000 } },
+    feeBreakdown: {
+      bba: { list: 90000, listLabel: '₹15,000 × 6 semesters, plus ₹400 one-time charges', perSemester: { list: 15000 }, source: 'GGSIPU CDOE Prospectus 2026-27, section 4, read 2026-10-30' },
+      bcom: { list: 90000, listLabel: '₹15,000 × 6 semesters, plus ₹400 one-time charges', perSemester: { list: 15000 }, source: 'GGSIPU CDOE Prospectus 2026-27, section 4, read 2026-10-30' },
+    },
     logo: '/logos/university_logos/guru-gobind-singhindraprastha-university.svg',
     name: 'Guru Gobind Singh Indraprastha Vishwavidyalaya Online',
     abbr: 'GGSIV',
@@ -7910,7 +7921,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programDetails: {
       'B.Com': {
         specs: ['Finance','Accounting','Taxation','E-Commerce','Banking & Insurance'],
-        fees: '\u20b949K \u2013 \u20b9110K',
+        fees: '₹90,000',
         duration: '3 Years',
         roles: ['Accountant','Finance Executive','Tax Analyst','Banking Officer','Audit Associate'],
         avgSalary: '\u20b92.5L \u2013 \u20b99L per annum',
@@ -7919,7 +7930,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'B.Com from Guru Gobind Singh Indraprastha Vishwavidyalaya is valid for banking, finance and government roles.'},
       'BBA': {
         specs: ['Finance','Marketing','Human Resource Management','Entrepreneurship','Digital Marketing','Retail Management'],
-        fees: '\u20b954K \u2013 \u20b9120K',
+        fees: '₹90,000',
         duration: '3 Years',
         roles: ['Business Analyst','Sales Executive','Marketing Executive','HR Assistant','Entrepreneur'],
         avgSalary: '\u20b92.5L \u2013 \u20b98L per annum',

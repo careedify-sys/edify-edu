@@ -1,5 +1,29 @@
 # Fix log
 
+## 2026-10-30 · Hidden hubs, round 2: 96 to 80, and rule 4d made a ratchet
+
+- **Unlocked (16), each from the university's own portal on 30 Oct:** PP Savani BBA, M.Com, MSc (CDOE fee table on
+  ppsu.ac.in); Desh Bhagat MBA Rs 1,20,000 and B.Com Rs 78,000 (dbuonline.in); JSS BBA Rs 30,000 x 3 years (course
+  finder); NIU BBA Rs 1,08,000 (niuonline.edu.in); JIIT BBA Rs 1,39,000 (jiitonline.com); UPES BCA Rs 1,50,000
+  (upesonline.ac.in, the domain upes.ac.in links, not online.upes.ac.in); MATS MBA/BBA/BCA/B.Com from its 2025-26
+  online fee PDF (vector table, rendered with PyMuPDF); Chandigarh MSc Data Science Rs 1,70,000, Rs 1,27,500 after
+  early bird; GGSIPU BBA and B.Com Rs 15,000 x 6 (scanned CDOE Prospectus 2026-27, page 12).
+- **Rule 4d leak, caught before push:** `build-placeholder-fee-ranges` kept a range only while two universities held
+  it. Fixing MATS left Sage alone on "₹36K – ₹90K", the range fell out of the file on regeneration, and Sage BBA and
+  BCA became indexable with the placeholder printed as their fee. GGSIPU would have done the same to Kerala and
+  Banasthali. The builder now keeps any range it has flagged before while one holder remains. The file was restored from
+  this morning's version and rebuilt (20 ranges). The pushed batches lost ranges too, but every remaining holder was
+  still suppressed by the 3x width rule, so nothing leaked live. Checked: no fee-only indexed hub carries a range from
+  this morning's list.
+- **Not fees, for Rishi (mode questions):** PP Savani BCA is indexed but its CDOE table lists only BBA, M.Com, MSc and
+  MBA online. dbuonline.in lists only MBA and B.Com, yet Desh Bhagat BBA and MCA are indexed. GGSIPU's online
+  prospectus covers only BBA and B.Com, so the GGSIPU MA hub may not be an online programme. Chandigarh also runs an
+  online MSc Mathematics (Rs 1,06,000) that lib/data.ts does not list.
+- **Tried and blocked:** Chitkara BBA (Rs 4,00,000 is the ACCA International Finance BBA, not the specialisations we
+  list); Christ (online portal refuses connections); KIIT (site gives only a phone number); Banasthali (unreachable);
+  Mody and Graphic Era (main sites link no online portal); GJU (fee table is ODL; online codes 81-84 are absent);
+  Kerala (only a 2017 fee PDF); Sage, MMU, Vels, Karunya, KSOU, ADBU (no online portal found or site blocked).
+
 ## 2026-10-30 · Hidden programme hubs unlocked with portal fees: 106 to 96
 
 - **Why:** scaling, not polish. 106 university programme hubs already render but carry noindex, because
