@@ -273,6 +273,27 @@
 - **Measured on the dev server:** 19 flagged blogs went from ~277 paragraphs over 60 words to 55, the spec and coupon
   pages sampled to 0. Coupon reading ease 44 to 60. Blog and spec reading ease is unchanged (splitting does not shorten
   sentences); the remaining long paragraphs are 2-3 very long sentences and need the copy rewrite (batch 2+).
+
+## 2026-10-30 · Categorised NIRF ranks in spec hub content that did not match Supabase
+
+- **Why:** the 28 Oct sweep below left 132 mentions that named a category but were wrong. Most used "overall" for
+  what NIRF publishes as the University table (CU #19, MUJ #58, Sharda #87, Shoolini #69, Bharati #59, UPES #45, VIT
+  #14, MAHE #3), and Supabase's Overall ranks are different numbers (CU 32, MUJ 98, MAHE 14). Others put a University
+  rank under Management (Amity "#22 management", LPU "#31"), or carried a number Supabase does not have: Alliance
+  "Management #25" (Supabase 71), BIT Mesra "Engineering #54" (51), MAHE "Management #14" (39), Vignan "#75" (70).
+  Four institutions had ranks with no Supabase data at all: BITS Pilani "#7 University" (54 mentions), IIFT
+  "Management #17", SASTRA "#29", JIIT "Engineering #83".
+- **Fix:** where Supabase holds the rank under another category, the category was corrected. Where the category
+  exists with a different number, the Supabase number was used and any superlative built on the old number was
+  dropped ("one of the stronger privately-run business schools", "top-15 in management"). The rank was removed for
+  the four institutions with no Supabase NIRF row, and the sentence rewritten so it still reads. 73 exact-text
+  rewrites, 130 edits in 42 files, computed from the original text and written once per file.
+- **Verified:** all 1,775 categorised NIRF ranks in page-content now match a Supabase rank for a university named
+  in the same string. 21 of them sit next to a different university's name (e.g. "vs CU's A+, NIRF #8 University")
+  and match the university the sentence is about. check-nirf-category and check-page-content-json pass.
+- **Still open:** ranks written without "NIRF" ("VIT (#11) or SRM IST (#18)" on the SASTRA hub) are outside both
+  checks. BITS, IIFT, SASTRA and JIIT need a Supabase NIRF backfill before any rank can return to their pages.
+
 ## 2026-10-28 · Bare "NIRF #N" in spec hub content (lib/data/page-content)
 
 - **Why:** NIRF publishes separate tables, so a rank without its category misleads. CU is University #19 but
