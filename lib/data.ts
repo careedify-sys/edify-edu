@@ -3310,6 +3310,17 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'pp-savani-university-online',
+    // Fees read 2026-10-30 from the CDOE fee table at ppsu.ac.in/centre-for-distance-and-online-education.
+    // Online mode: BBA Rs 20,000/sem (6 sem) or Rs 90,000 one-time; M.Com Rs 25,000/sem (4) or Rs 90,000;
+    // MSc Data Science and MBA Rs 32,500/sem (4) or Rs 1,20,000 one-time.
+    officialUrl: 'https://www.ppsu.ac.in',
+    feeVerifiedOn: '2026-10-30',
+    programFees: { bba: { fee: 90000, feeMax: 120000 }, mcom: { fee: 90000, feeMax: 100000 } },
+    feeBreakdown: {
+      bba: { list: 120000, modes: [{ amount: 90000, label: 'one-time' }, { amount: 120000, label: 'semester-wise (₹20,000 × 6 semesters)' }], perSemester: { list: 20000, listLabel: 'semester-wise' }, source: 'ppsu.ac.in CDOE fee table, 2026-10-30' },
+      mcom: { list: 100000, modes: [{ amount: 90000, label: 'one-time' }, { amount: 100000, label: 'semester-wise (₹25,000 × 4 semesters)' }], perSemester: { list: 25000, listLabel: 'semester-wise' }, source: 'ppsu.ac.in CDOE fee table, 2026-10-30' },
+      msc: { list: 130000, modes: [{ amount: 120000, label: 'one-time' }, { amount: 130000, label: 'semester-wise (₹32,500 × 4 semesters)' }], perSemester: { list: 32500, listLabel: 'semester-wise' }, source: 'ppsu.ac.in CDOE fee table, 2026-10-30' },
+    },
     name: 'P P Savani University Online',
     abbr: 'PPSU',
     city: '',
@@ -3345,7 +3356,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BBA': {
         specs: ['General Management'],
-        fees: '₹0.2L – ₹1.2L',
+        fees: '₹90,000–₹1,20,000',
         duration: '3 Years',
         roles: ['Management Trainee', 'Sales Associate', 'HR Assistant.'],
         avgSalary: '₹2.5 LPA -- ₹4.5 LPA',
@@ -3365,7 +3376,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'M.Com': {
         specs: ['General Management'],
-        fees: '₹25K – ₹100K',
+        fees: '₹90,000–₹1,00,000',
         duration: '2 Years',
         roles: ['Senior Accountant', 'Audit Assistant', 'Finance Trainee.'],
         avgSalary: '₹3.5 LPA -- ₹6 LPA',
@@ -3375,7 +3386,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'MSc': {
         specs: ['Data Science'],
-        fees: '₹32K – ₹130K',
+        fees: '₹1,20,000–₹1,30,000',
         duration: '2 Years',
         roles: ['Data Analyst', 'Junior Data Scientist', 'Business'],
         avgSalary: '₹4.5 LPA -- ₹10 LPA',
@@ -5123,6 +5134,15 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'jss-university-online',
+    // BBA (Hospital & Health System Management, OEP) read 2026-10-30 from the JSS AHER course finder
+    // (jssuni.edu.in, Center for Online Learning): Rs 30,000 per year for Indian nationals, 3 years,
+    // examination fees excluded.
+    officialUrl: 'https://jssuni.edu.in',
+    feeVerifiedOn: '2026-10-30',
+    programFees: { bba: { fee: 90000 } },
+    feeBreakdown: {
+      bba: { list: 90000, listLabel: 'tuition, ₹30,000 × 3 years, examination fees extra', source: 'jssuni.edu.in course finder (OBBA), 2026-10-30' },
+    },
     name: 'JSS Academy of Higher Education & Research (JSS AHER) Online',
     abbr: 'JAHER',
     city: '',
@@ -5158,7 +5178,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'BBA': {
         specs: ['Hospital and Health System Management'],
-        fees: '₹0.1L – ₹0.9L',
+        fees: '₹90,000',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -5243,6 +5263,12 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'desh-bhagat-university-online',
+    // Fees read 2026-10-30 from dbuonline.in (linked from deshbhagatuniversity.in as "DBU Online"):
+    // MBA Rs 1,20,000 total (Rs 30,000 x 4 semesters), B.Com Rs 78,000 (Rs 13,000 x 6). Exam fee
+    // Rs 1,500 per semester on top of both.
+    officialUrl: 'https://dbuonline.in',
+    feeVerifiedOn: '2026-10-30',
+    programFees: { mba: { fee: 120000 }, bcom: { fee: 78000 } },
     logo: '/logos/university_logos/desh-bhagat-university.svg',
     name: 'Desh Bhagat University Online',
     abbr: 'DBUO',
@@ -5270,7 +5296,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       
       'MBA': {
         specs: ['General Management', 'Finance'],
-        fees: '₹60K – ₹200K',
+        fees: '₹1,20,000',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -5302,7 +5328,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
       'B.Com': {
         specs: ['General Management'],
-        fees: '₹60K – ₹200K',
+        fees: '₹78,000',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -5501,6 +5527,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'jaypee-university-online',
+    // BBA read 2026-10-30 from jiitonline.com (linked from jiit.ac.in as "Online Education"):
+    // Rs 1,39,000 for 3 years. The same page lists the MBA at Rs 1,75,000, matching pd.fees.
+    officialUrl: 'https://www.jiitonline.com',
+    feeVerifiedOn: '2026-10-30',
+    programFees: { bba: { fee: 139000 } },
     logo: '/logos/university_logos/jaypee-institute-of-information-technology-logo.svg',
     name: 'Jaypee Institute of Information Technology Online',
     abbr: 'JIITO',
@@ -5537,7 +5568,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved MBA from Jaypee Institute of Information Tec, recognised for corporate hiring.'},
       'BBA': {
         specs: ['General Management'],
-        fees: '₹0.2L – ₹1.2L',
+        fees: '₹1,39,000',
         duration: '3 Yrs',
         roles: ['Management Trainee', 'Marketing Executive', 'HR Trainee', 'Finance Trainee'],
         avgSalary: '₹3L – ₹7L per annum',
@@ -5914,7 +5945,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'noida-international-university-online',
-    programFees: { mca: { fee: 118000 } }, // BCA fee deferred — no project source confirms BCA exists; see audits/sprint-2-data-fixes-2026-05-10.md
+    // BBA read 2026-10-30 from niuonline.edu.in/programme-detail/bba (linked from niu.edu.in as
+    // "NIU Online"): Rs 1,08,000 total, Rs 18,000 x 6 semesters; Rs 1,100 application fee.
+    officialUrl: 'https://niuonline.edu.in',
+    feeVerifiedOn: '2026-10-30',
+    programFees: { mca: { fee: 118000 }, bba: { fee: 108000 } }, // BCA fee deferred: no project source confirms BCA exists; see audits/sprint-2-data-fixes-2026-05-10.md
     logo: '/logos/university_logos/noida-international-university.svg',
     name: 'Noida International University Online',
     abbr: 'NIUO',
@@ -5964,7 +5999,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       
       'BBA': {
         specs: ['General Management'],
-        fees: '₹0.2L – ₹1.1L',
+        fees: '₹1,08,000',
         duration: '3 Yrs',
         roles: ['Management Trainee', 'Marketing Executive', 'HR Trainee', 'Finance Trainee'],
         avgSalary: '₹3L – ₹7L per annum',

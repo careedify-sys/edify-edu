@@ -1,9 +1,9 @@
 {
   "note": "Fee ranges claimed identically by two or more universities. A range is two numbers; identical independent authorship is not plausible, so these are treated as bulk-authored placeholders and suppressed by lib/fees.ts rule 4d. Regenerate with scripts/build-placeholder-fee-ranges.mjs. Single values are deliberately excluded, see that script for why.",
-  "generatedAt": "2026-10-29",
+  "generatedAt": "2026-10-30",
   "minUniversities": 2,
-  "rangeCount": 20,
-  "affectedRows": 87,
+  "rangeCount": 18,
+  "affectedRows": 82,
   "ranges": [
     {
       "min": 48000,
@@ -21,27 +21,6 @@
       ],
       "programmes": [
         "MA"
-      ]
-    },
-    {
-      "min": 60000,
-      "max": 200000,
-      "universities": [
-        "assam-don-bosco-university-online",
-        "chitkara-university-online",
-        "desh-bhagat-university-online",
-        "galgotias-university-online",
-        "gls-university-online",
-        "iift-online",
-        "mahatma-gandhi-university-online",
-        "upes-online"
-      ],
-      "programmes": [
-        "B.Com",
-        "BBA",
-        "BCA",
-        "M.Com",
-        "MBA"
       ]
     },
     {
@@ -90,6 +69,26 @@
       ],
       "programmes": [
         "M.Com"
+      ]
+    },
+    {
+      "min": 60000,
+      "max": 200000,
+      "universities": [
+        "assam-don-bosco-university-online",
+        "chitkara-university-online",
+        "galgotias-university-online",
+        "gls-university-online",
+        "iift-online",
+        "mahatma-gandhi-university-online",
+        "upes-online"
+      ],
+      "programmes": [
+        "B.Com",
+        "BBA",
+        "BCA",
+        "M.Com",
+        "MBA"
       ]
     },
     {
@@ -220,29 +219,6 @@
       ],
       "programmes": [
         "MBA"
-      ]
-    },
-    {
-      "min": 10000,
-      "max": 90000,
-      "universities": [
-        "jss-university-online",
-        "karunya-university-online"
-      ],
-      "programmes": [
-        "B.Com",
-        "BBA"
-      ]
-    },
-    {
-      "min": 20000,
-      "max": 120000,
-      "universities": [
-        "jaypee-university-online",
-        "pp-savani-university-online"
-      ],
-      "programmes": [
-        "BBA"
       ]
     },
     {
