@@ -12730,6 +12730,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>What is the difference between deemed-to-be university online plus state university online?:</strong> Both UGC-DEB approved if listed. Deemed has its own degree granting authority. State universities have state government backing.</li>
   <li><strong>Can I do online degree while pursuing another full-time degree?:</strong> Mostly not allowed. UGC 2024 plus 2025 clarifications restrict simultaneous full-time plus online degrees.</li>
   <li><strong>Is online PhD from Indian university recognised?:</strong> No. UGC currently does not allow online PhD programmes. PhD requires campus residency plus active research supervisor engagement.</li>
+  <li><strong>Is a foreign online DBA recognised in India?:</strong> Not automatically. It is not a PhD, and it counts only if UGC grants an equivalence certificate under the 2025 Equivalence Regulations. See <a href="/online-dba">is an online DBA valid in India</a>.</li>
 </ul>
 
 <p>Online degree validity in India 2026 is no longer in question. UGC-DEB approved degrees are fully equivalent to campus degrees. The Supreme Court 2022 ruling provides additional legal backing. The 125-plus UGC-DEB approved universities span every major specialisation. What matters more than validity is which specific programme matches your career target, brand pull required, and 5 to 10 year career goal. Verify approval status, NAAC grade, and NIRF rank before paying. Match programme to your sector, then commit to active certification stacking plus deliberate networking during the 2 to 3 year programme. The credential is valid. Your career outcome depends on how you use the 2 years post-enrolment. Treat the verification as a one-time 10-minute investment that protects your 2-year career investment.</p>
@@ -15978,6 +15979,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>What comes after the MBA ceiling: 1-year residential Executive MBA (IIM PGPX, ISB PGP), <a href="/blog/phd-full-form-doctorate-meaning-india" class="ilink">PhD after MBA</a> for those interested in research or academic careers, foreign top-30 MBA, board-certification programmes (ICA, ICSI for company secretaries), or moving toward an entrepreneurial path.</p>
 
+<p>A foreign online DBA sits in a different category from a PhD. It counts in India only if UGC grants an equivalence certificate, so read our <a href="/online-dba">online DBA validity check</a> before you pay any booking amount.</p>
+
 <h2>What Most "MBA Scope" Articles Miss About Online MBA Returns</h2>
 
 <p>Standard articles compare online MBA scope against full-time MBA scope. The right comparison is online MBA scope against "no MBA at all".</p>
@@ -18388,6 +18391,8 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Many online MBA programmes in India copy the "Executive" label without delivering any of these three. The result: a 2-year MBA from a UGC-DEB approved university at Rs 1.5 to 2 lakh, marketed to working professionals. Useful, valid, recognised, but not the same product as an Executive MBA.</p>
 
 <div class="callout-warning"><strong>Filter rule:</strong> If the admissions page does not require minimum work experience and does not mention "designed for senior professionals", it is an online MBA. Both are fine, but call them by their right names.</div>
+
+<p>The same label trap applies one level up. An "executive DBA" or "executive doctorate" is still a DBA: it is not a PhD, and it counts in India only with a UGC equivalence certificate. Our <a href="/online-dba">executive DBA and online DBA comparison</a> sets out the validity position before any fees.</p>
 
 <h2>The Three Real Tiers of Online Executive MBA in India 2026</h2>
 
@@ -22637,6 +22642,8 @@ export const BLOG_POSTS: BlogPost[] = [
 <p><strong>1. Government job eligibility.</strong> Hundreds of government job notifications require "postgraduate qualification" as the minimum eligibility. Examples: RBI Grade B Officer (PG required), SEBI Grade A, NABARD Grade A, IBPS Specialist Officer (HR / Marketing), PSU Management Trainees at BHEL, NTPC, ONGC, GAIL, SAIL and IOCL, state PCS officer grades, Bank PO at officer level. All accept an MBA from a UGC-recognised university as eligible PG qualification.</p>
 
 <p><strong>2. PhD admission.</strong> <a href="/blog/phd-full-form-doctorate-meaning-india" class="ilink">PhD (Doctor of Philosophy)</a> admissions require a Master\\'s-level credential. An MBA from a UGC-recognised university (including UGC-DEB approved online MBA) qualifies you to apply for PhD in Management, Business Administration, Marketing, Finance, HR, Operations or related interdisciplinary fields. Typical requirements include 55 percent aggregate (50 percent for SC/ST), clearing UGC-NET or a university PhD entrance exam, plus an interview.</p>
+
+<p>A foreign online DBA is not a substitute here. It is not a PhD, and it counts in India only if UGC grants an equivalence certificate. Our <a href="/online-dba">Doctor of Business Administration guide</a> explains the rules and compares six programmes.</p>
 
 <p><strong>3. Education loan eligibility and rates.</strong> Education loans for postgraduate programs typically offer better terms: longer repayment periods (12 to 15 years versus 7 to 10 years for UG), lower interest rates (often 0.5 to 1 percent lower), and higher loan amounts (up to Rs 75 lakh versus Rs 30 to 40 lakh). Most public sector banks (SBI, PNB, Bank of Baroda) and major private banks (HDFC Credila, Axis Bank) have separate PG education loan products with these advantages.</p>
 
