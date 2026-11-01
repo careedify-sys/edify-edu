@@ -10923,6 +10923,8 @@ export const BLOG_POSTS: BlogPost[] = [
   <p>One final note: checking deb.ugc.ac.in takes five minutes. If a university discourages you from checking, or says it is not needed, treat that as a warning. Every genuine online university will encourage you to verify.</p>
 </div>
 
+<p>The same register answers subject-level questions too. Our list of <a href="/blog/online-library-science-course-india">online library science courses</a> shows which universities hold an online BLISc or MLISc for 2026-27.</p>
+
 <div class="internal-links">
   <div class="il-grid">
     <a href="/universities" class="il-card"><div class="il-uni">EXPLORE</div><div class="il-title">All 125+ Universities</div><div class="il-sub">Filter by NAAC, program, fees</div></a>
@@ -12491,6 +12493,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Check UGC-DEB approval, NAAC grade and NIRF rank before you pay. Pair the degree with one strong certificate (CFA, FRM, Tableau or AWS) and active networking for the best results.</p>
 
+<p>Looking beyond the MBA? Our guide to <a href="/blog/online-degree-courses-kerala">online degree courses in Kerala</a> lists every programme Kerala's universities are UGC-entitled to offer online for 2026-27.</p>
+
 <div class="internal-links">
   <div class="il-grid">
     <a href="/blog/ugc-deb-approved-universities-list-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">UGC DEB Approved List 2026</div><div class="il-sub">How to verify before enrolling</div></a>
@@ -13986,6 +13990,8 @@ export const BLOG_POSTS: BlogPost[] = [
   <p style="margin:0 0 16px;font-size:14px;opacity:0.9">We compare UGC-DEB approved online MBA with Bengaluru-specific employer fit. Verified NAAC, NIRF, fees, alumni network data.</p>
   <a href="/compare" class="ilink" style="display:inline-block;background:#f97316;color:#fff;padding:10px 24px;border-radius:8px;font-weight:700;text-decoration:none">Compare All Online MBA</a>
 </div>
+
+<p>For degrees beyond the MBA, our list of <a href="/blog/online-degree-courses-bangalore">online degree courses in Bangalore</a> covers every programme Bengaluru's universities are UGC-entitled to offer online for 2026-27.</p>
 
 <div class="il-grid">
   <a class="il-card" href="/universities/jain-university-online">JAIN University Online Profile</a>
@@ -42198,6 +42204,8 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <p style="margin:0"><a href="/contact" style="background:#f97316;color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">Talk to a Counsellor (Free)</a></p>
 </div>
 
+<p>For degrees other than the MBA, our list of <a href="/blog/online-degree-courses-tamil-nadu">online degree courses in Tamil Nadu</a> covers all 24 universities in the state with an online entitlement for 2026-27.</p>
+
 <h2>Sources</h2>
 <ul>
 <li><a href="https://deb.ugc.ac.in" rel="noopener" target="_blank">deb.ugc.ac.in</a> for UGC-DEB entitlement verification</li>
@@ -47551,6 +47559,8 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 
 <p>If you are still choosing a programme, the exam format is worth comparing alongside fees and accreditation. You can <a href="/compare">compare universities side by side</a> or browse <a href="/programs/mba">online MBA programmes</a>.</p>
 
+<p>Exams are one part of how UGC defines online study. Our explainer on <a href="/blog/what-is-online-education-india">what online education is in India</a> covers the rest, from the four-quadrant course material to how online mode differs from distance learning.</p>
+
 <div class="cta-box">
 <p><strong>Want to know how a particular university runs its exams?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us</a>.</p>
 </div>
@@ -47698,6 +47708,8 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <p>Before enrolment is confirmed, because the university needs it to admit you. Admission windows are fixed by UGC for each session. The DEB portal states that the last date to admit learners in ODL and Online programmes for the August 2026 session was 13 October 2026. If you are aiming for the next intake, create the DEB ID as soon as you shortlist a university, not on the last day.</p>
 
 <p>Once you have the ID, the real decision is which programme to join. You can <a href="/compare">compare universities side by side</a> or start with <a href="/programs/mba">online MBA programmes</a>.</p>
+
+<p>New to online study? Our explainer on <a href="/blog/what-is-online-education-india">what online education means under UGC rules</a> sets out how online, distance and campus modes differ.</p>
 
 <div class="cta-box">
 <p><strong>Got your DEB ID and still unsure about the university?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us to check it</a>.</p>
@@ -48416,6 +48428,8 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <li>Check the exam format. The proctored end-semester exam carries at least 70 per cent of marks; see <a href="/blog/how-online-degree-exams-work-india">how online degree exams work</a>.</li>
 <li>Ask for the fee in writing for your intake. Fees on edifyedu.in are indicative; confirm the current figure on the university's official portal.</li>
 </ol>
+
+<p>Some subjects have only a handful of online options. Our register check of <a href="/blog/online-public-policy-courses-india">online public policy courses in India</a> found two universities entitled for an online MA in public policy for 2026-27.</p>
 
 <div class="cta-box">
 <p><strong>Narrowing down an online master's?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities side by side</a> or <a href="/contact">ask us</a>.</p>
@@ -50220,6 +50234,769 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 </ul>
 
 <p class="disclaimer"><em>Last verified against UGC and UGC-DEB sources on 28 October 2026. Programme counts reflect edifyedu.in records on the same date. Universities set their own documents, tests and fees within these rules, so confirm each on the university's official portal before you apply.</em></p>
+    `,
+  },
+  {
+    slug: 'what-is-online-education-india',
+    title: 'What Is Online Education in India? The UGC Definition, Explained',
+    seoTitle: 'What Is Online Education in India? UGC Rules Explained',
+    h1Title: 'What Is Online Education in India? How UGC Defines It, How It Works and How It Differs From Distance Learning',
+    metaDescription: 'What online education means under UGC rules: full delivery over the internet, online or proctored exams, no territorial limit, and how it differs from distance.',
+    category: 'Online Degree Validity',
+    tags: ['Online Education', 'What Is Online Education', 'Online Mode', 'Online vs Distance Learning', 'UGC-DEB', 'Online Degree Validity'],
+    publishedAt: '2026-11-02',
+    readTime: 8,
+    targetKeyword: 'online education',
+    relatedUniversities: [],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/9159637/pexels-photo-9159637.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Young woman using laptop for studying, displaying focused expression and engaged posture.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'What is online education?', a: 'In India, online education for a degree is a mode that UGC defines in Regulation 2(u) of the UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020: the whole programme is delivered over the internet, using e-learning material, with the teacher and learner in different places. Exams run as secure online tests or proctored exams, and a university needs UGC-DEB entitlement for each programme it offers online.' },
+      { q: 'What is the difference between online and distance education?', a: 'They are two separate UGC modes. Online mode delivers the full programme over the internet and has no territorial limit, so you can enrol from anywhere in India or abroad. Distance (ODL) mode uses printed or digital self-learning material plus occasional face-to-face contact sessions, and the university must run admissions, contact programmes and exams within its territorial jurisdiction.' },
+      { q: 'Is an online degree equal to a regular degree in India?', a: 'Yes, when the university holds UGC entitlement for that programme in online mode for your session. Regulation 22 of the 2020 regulations treats degrees and PG diplomas earned online as equivalent to the same awards earned in conventional (classroom) mode.' },
+      { q: 'How are online classes conducted in an online degree?', a: 'UGC requires e-learning material in four quadrants: recorded video and audio (e-tutorial), reading material (e-content), a discussion forum where coordinators answer doubts, and assessments such as quizzes and assignments. Annexure VI of the 2020 regulations says a four-credit course typically carries 20 hours of video and 20 hours of reading.' },
+      { q: 'Which courses cannot be studied online in India?', a: 'Any programme with a laboratory or practical component is barred from online mode under Regulation 4(C)(ii), except where the practical work is limited to programming and coding. UGC\'s public notice of 11 November 2024 also lists prohibited disciplines, including engineering, medicine, nursing, pharmacy, law, architecture and agriculture.' },
+      { q: 'How many universities offer online degrees in India?', a: 'For the 2026-27 July session, the UGC-DEB programme register lists 986 online programme entries across 145 institutions. For 2025-26 it listed 822 entries across 123 institutions. Entitlement is granted programme by programme and session by session, so check the exact row before you apply.' },
+      { q: 'Can I switch from distance to online mode in the same university?', a: 'Regulation 23(1) of the 2020 regulations allows a learner to move from one mode to another within the same university, as its Act allows and with approval of its statutory authorities. Ask the university in writing before you assume a switch is possible.' },
+    ],
+    ctaTitle: 'Checking an online degree?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">"Online education" covers everything from a free YouTube course to a UGC-recognised MBA. For a degree in India the term has a precise legal meaning, and that meaning decides whether the qualification counts. Here is the definition, how an online programme actually runs, and how it differs from distance learning.</p>
+
+<p><strong>Short answer:</strong> online education in India, for a degree, is a mode of study that UGC defines in the <strong>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020</strong>. The whole programme is delivered over the internet, exams are secure online tests or proctored exams, and you can enrol from anywhere because <strong>no territorial limit applies</strong>. A university needs UGC-DEB entitlement for each programme it runs online. For the 2026-27 July session, the UGC-DEB register lists <strong>986 online programme entries across 145 institutions</strong>.</p>
+
+<div class="callout-key">
+<strong>Online education in one box (checked 2 November 2026)</strong>
+<ul>
+<li><strong>Legal definition:</strong> Regulation 2(u), UGC ODL and Online Regulations, 2020</li>
+<li><strong>Delivery:</strong> full programme over the internet, e-learning material in four quadrants</li>
+<li><strong>Exams:</strong> technology-enabled online test or proctored exam, Regulation 15(C)</li>
+<li><strong>Where you can study from:</strong> anywhere in India or abroad, Regulation 23(4)</li>
+<li><strong>Value:</strong> equal to a campus degree, Regulation 22</li>
+<li><strong>2026-27 July session:</strong> 986 online programme entries, 145 institutions (UGC-DEB register)</li>
+</ul>
+</div>
+
+<h2>What is online education, according to UGC?</h2>
+
+<p>Regulation 2 of the 2020 regulations defines three modes of higher education. Every degree you can earn in India falls into one of them.</p>
+
+<table>
+<thead><tr><th>Mode</th><th>How UGC defines it</th><th>Where you study from</th></tr></thead>
+<tbody>
+<tr><td><strong>Conventional</strong>, Reg 2(f)</td><td>Face-to-face teaching in a regular classroom, with online material allowed as a supplement</td><td>The campus</td></tr>
+<tr><td><strong>Open and Distance Learning (ODL)</strong>, Reg 2(v)</td><td>Print, electronic and online media plus occasional face-to-face meetings or learner support services</td><td>Within the university's territorial jurisdiction</td></tr>
+<tr><td><strong>Online</strong>, Reg 2(u)</td><td>Full programme delivery through the internet, using e-learning material and technology-assisted resources</td><td>Anywhere in India or abroad</td></tr>
+</tbody>
+</table>
+
+<p>The key words in the online definition are "full-fledged programme delivery through the internet." A campus course with some video lectures is still conventional. A distance course with an online portal is still ODL. Only a programme the university is entitled to run in online mode is an online degree.</p>
+
+<p class="pull">The mode is not a marketing label. It is a column in the UGC-DEB register, and it decides what your degree certificate means.</p>
+
+<h2>How does an online degree actually work?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/8640098/pexels-photo-8640098.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Close-up of hands typing on a laptop, surrounded by notes and books." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@pavel-danilyuk" target="_blank" rel="noopener nofollow">Pavel Danilyuk</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+<p>UGC sets a quality standard for online course material in Annexure VI of the 2020 regulations. Every online course must follow the four-quadrant approach used by SWAYAM:</p>
+
+<ol>
+<li><strong>Quadrant I, e-tutorial:</strong> organised video and audio content, animations, simulations and demonstrations, with transcripts.</li>
+<li><strong>Quadrant II, e-content:</strong> digital self-learning material, e-books, case studies and further references.</li>
+<li><strong>Quadrant III, discussion forum:</strong> a place to raise doubts, answered by the course coordinator or the coordinator's team.</li>
+<li><strong>Quadrant IV, assessment:</strong> quizzes, assignments, short and long answer questions, with solutions.</li>
+</ol>
+
+<p>The same annexure says a four-credit course typically carries 20 hours of video and 20 hours of reading. It also allows one mentor per course for every 250 learners, to support the coordinator in the discussion forum. A university may add live sessions on top, but the recorded quadrants are the minimum UGC expects. Ask how many live sessions a programme runs before you enrol.</p>
+
+<h2>How are exams conducted in online education?</h2>
+
+<p>Regulation 15(C) lets a university run exams in one of two ways: a technology-enabled online test with security arrangements, or a proctored exam. Proctoring can be done by an approved person or by software that confirms your identity and watches the test environment. Attendance is authenticated through a biometric or government ID, such as Aadhaar for Indian learners and a passport for international learners.</p>
+
+<p>Our guide on <a href="/blog/how-online-degree-exams-work-india">how online degree exams work</a> covers the exam pattern, the technical checks and what to do if your connection drops.</p>
+
+<h2>Online vs distance learning: what is the difference?</h2>
+
+<p>People often search "online distance learning" as one thing. UGC treats them as two separate entitlements, and a university may hold one, both or neither for a given programme.</p>
+
+<table>
+<thead><tr><th></th><th>Online mode</th><th>Distance (ODL) mode</th></tr></thead>
+<tbody>
+<tr><td>Delivery</td><td>Fully over the internet</td><td>Self-learning material, print or digital, plus contact sessions</td></tr>
+<tr><td>Territorial limit</td><td>None, Reg 4(C)(i)</td><td>Yes, Annexure III</td></tr>
+<tr><td>Who can enrol</td><td>A learner within or outside India, Reg 23(4)</td><td>A learner anywhere in India, but admissions, contact classes and exams stay inside the university's jurisdiction, Reg 23(3)</td></tr>
+<tr><td>Exams</td><td>Online test or proctored exam</td><td>Proctored exam at an exam centre within the jurisdiction</td></tr>
+<tr><td>2026-27 July session</td><td>986 programme entries, 145 institutions</td><td>1,874 programme entries</td></tr>
+</tbody>
+</table>
+
+<p>Both carry the same value under Regulation 22. The practical difference is where you must be for admission, classes and exams. If you live far from the university, online mode is usually the one that works. For the MBA specifically, our <a href="/guides/online-mba-vs-distance-mba">online MBA vs distance MBA guide</a> goes deeper.</p>
+
+<h2>Which courses can you study online in India?</h2>
+
+<p>Regulation 4(C)(ii) sets two conditions. A university can offer a programme online only if it already runs that programme in classroom or distance mode and at least one batch has passed out. Any programme that needs a laboratory or practical course is barred online, unless the practical work is limited to programming and coding. That exception is why an online MCA or BCA is allowed and an online B.Tech is not.</p>
+
+<p>UGC's public notice of 11 November 2024 adds a list of prohibited disciplines, including engineering, medicine, nursing, pharmacy, law, architecture, agriculture and hotel management. Our pillar on <a href="/blog/online-degree-courses-india">online degree courses in India</a> lists what is allowed, programme by programme.</p>
+
+<div class="callout-warning">
+<strong>A free course is not an online degree.</strong> Certificates from course platforms can teach you a skill, but they are not UGC-entitled degrees. If a job, exam or further study needs a degree, check the university and the programme on deb.ugc.ac.in first.
+</div>
+
+<h2>What does the current online education system look like?</h2>
+
+<p>It is growing, and it is regulated programme by programme. The UGC-DEB register lists 986 online programme entries for the 2026-27 July session, up from 822 for 2025-26. The number of institutions entitled for at least one online programme rose from 123 to 145 over the same period.</p>
+
+<p>For 2026-27 the 145 institutions break down as 54 private universities, 44 deemed universities, 33 state universities, 8 central universities, 5 state open universities and 1 central open university. Postgraduate entries outnumber undergraduate ones, 658 to 323.</p>
+
+<p>Two newer rules shape the system. Every learner joining an online or distance programme must create a DEB ID before enrolling, which our <a href="/blog/ugc-deb-id-explained">DEB ID guide</a> explains. And sessions start twice a year, in January/February and July/August, under Regulation 2(b).</p>
+
+<h2>Is online education valid for jobs and government exams?</h2>
+
+<p>Yes, when the entitlement covers your programme, mode and session. Regulation 22 makes an entitled online degree equivalent to the same degree earned on campus. Regulation 23(2) protects you if the university loses entitlement later: an admission taken during a valid recognition period stays recognised until you complete the programme.</p>
+
+<p>The risk sits with unrecognised providers. UGC publishes a list of fake universities, which we track in our <a href="/blog/ugc-fake-universities-list-2026">UGC fake universities list</a>. Our guide on <a href="/guides/is-online-degree-valid-india">whether an online degree is valid in India</a> covers employer and exam acceptance in more detail.</p>
+
+<h2>How to check an online programme before you pay</h2>
+
+<ol>
+<li>Open the HEI programme list on deb.ugc.ac.in.</li>
+<li>Find the university and the exact programme name.</li>
+<li>Check the year (2026-27), the session (July or January) and the mode column. It must read Online.</li>
+<li>Confirm the university is not on UGC's fake university list on ugc.gov.in.</li>
+<li>Create your DEB ID and keep the admission receipt.</li>
+</ol>
+
+<p>Our step-by-step guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> walks through the register field by field.</p>
+
+<div class="cta-box">
+<p><strong>Comparing online universities?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities side by side</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulations 2(b), 2(f), 2(u), 2(v), 4(C), 15(C), 22, 23 and Annexure VI: deb.ugc.ac.in/Regulations</li>
+<li>UGC-DEB HEI programme register (HEI_Prog_List), 2025-26 and 2026-27 entries, read on 2 November 2026: deb.ugc.ac.in</li>
+<li>UGC public notice F.No. 1-34/2024 (DEB-I), 11 November 2024, on DEB ID and programmes prohibited in ODL and Online mode: deb.ugc.ac.in</li>
+<li>UGC list of fake universities: ugc.gov.in</li>
+</ul>
+
+<p class="disclaimer"><em>Last verified against UGC and UGC-DEB sources on 2 November 2026. Register counts are programme entries, not unique programmes, and change each session. Confirm the current position on deb.ugc.ac.in before you enrol.</em></p>
+    `,
+  },
+  {
+    slug: 'online-public-policy-courses-india',
+    title: 'Online Public Policy Courses in India 2026: The UGC-Entitled Options',
+    seoTitle: 'Online Public Policy Courses in India 2026: UGC List',
+    h1Title: 'Online Public Policy Courses in India: Which Universities UGC Entitles for an Online MA in 2026-27',
+    metaDescription: 'Amity and JAIN are UGC-DEB entitled for an online MA in Public Policy for 2026-27. Plus the 7 online MA Public Administration options and how to check.',
+    category: 'Online Degree Validity',
+    tags: ['Online Public Policy', 'MA Public Policy Online', 'Public Administration Online', 'Online Masters', 'UGC-DEB', 'Online Degree Validity'],
+    publishedAt: '2026-11-02',
+    readTime: 6,
+    targetKeyword: 'online public policy courses in india',
+    relatedUniversities: ['amity-university-online', 'jain-university-online', 'vivekananda-global-university-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/33904722/pexels-photo-33904722.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@mba-classroom-2155665220" target="_blank" rel="noopener nofollow">MBA Classroom</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'A young female student reading a research book in a library setting.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'Can I do a master\'s in public policy online in India?', a: 'Yes. For the 2026-27 July session, the UGC-DEB programme register lists two online master\'s degrees in public policy: the Master of Arts in Public Policy and Governance at Amity University and the Master of Arts (Public Policy) at JAIN (Deemed-to-be University). Both were also listed online for 2024-25 and 2025-26.' },
+      { q: 'Is an online MA in Public Policy valid in India?', a: 'Yes, when the university is UGC-DEB entitled for that programme in online mode for your session. Public policy is not on UGC\'s list of disciplines prohibited online, and Regulation 22 of the UGC ODL and Online Regulations, 2020 treats an entitled online degree as equivalent to a campus degree.' },
+      { q: 'Is there an online bachelor\'s degree with public policy?', a: 'Vivekananda Global University is entitled for an online BA (combination of three subjects) whose subject list includes Public Policy and Development, alongside economics, political science and international relations. It is a general BA in which public policy is one subject option, not a single-subject public policy degree.' },
+      { q: 'What is the difference between public policy and public administration?', a: 'Public policy studies how government decisions are designed and evaluated. Public administration studies how government departments are organised and run. In the UGC-DEB register they are separate programmes: two online MAs carry the public policy name for 2026-27, and seven universities are entitled for an online MA in Public Administration.' },
+      { q: 'Which universities offer an online MA in Public Administration?', a: 'For 2026-27 the register lists the online Master of Arts (Public Administration) at Aligarh Muslim University, Assam Don Bosco University, Bharathidasan University, Jamia Millia Islamia, Maharishi Dayanand University, Mangalayatan University and the University of Madras. IGNOU and many state universities offer it in distance (ODL) mode instead.' },
+      { q: 'Who is eligible for an online MA in Public Policy?', a: 'A bachelor\'s degree is the base requirement for a master\'s programme under the UGC UG and PG Regulations, 2025. Each university sets its own minimum marks and any entrance test, so check the admission page of Amity or JAIN for the current session.' },
+    ],
+    ctaTitle: 'Comparing online master\'s programmes?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">Public policy is a small field in online education. Many listings call any politics or governance course a "public policy course." The UGC-DEB register is stricter: only two universities are entitled to award an online master's degree in public policy for 2026-27.</p>
+
+<p><strong>Short answer:</strong> yes, you can study public policy online in India with a UGC-valid degree. For the <strong>2026-27 July session</strong>, the UGC-DEB programme register lists two online master's programmes in public policy: the <strong>MA in Public Policy and Governance at Amity University</strong> and the <strong>MA (Public Policy) at JAIN (Deemed-to-be University)</strong>. Vivekananda Global University offers public policy as one subject in an online BA. If you want the administration side of government, <strong>seven universities</strong> are entitled for an online MA in Public Administration.</p>
+
+<div class="callout-key">
+<strong>Online public policy in one box (checked 2 November 2026)</strong>
+<ul>
+<li><strong>Online MA in public policy, 2026-27:</strong> 2 universities (Amity, JAIN)</li>
+<li><strong>Online BA with a public policy subject:</strong> Vivekananda Global University</li>
+<li><strong>Online MA Public Administration, 2026-27:</strong> 7 universities</li>
+<li><strong>Prohibited online?</strong> No. Public policy is not on UGC's prohibited list</li>
+<li><strong>Same value as campus?</strong> Yes, Regulation 22 of the UGC ODL and Online Regulations, 2020</li>
+</ul>
+</div>
+
+<h2>Which universities offer an online public policy degree for 2026-27?</h2>
+
+<p>The UGC-DEB HEI programme register records each entitlement by year, session and mode. These are the public policy entries marked Online for the 2026-27 July session:</p>
+
+<table>
+<thead><tr><th>University</th><th>Programme (as named in the register)</th><th>Level</th><th>Also online in 2024-25 and 2025-26?</th></tr></thead>
+<tbody>
+<tr><td><a href="/universities/amity-university-online">Amity University</a>, Uttar Pradesh</td><td>Master of Arts Public Policy and Governance</td><td>PG</td><td>Yes</td></tr>
+<tr><td><a href="/universities/jain-university-online">JAIN (Deemed-to-be University)</a>, Karnataka</td><td>Master of Arts (Public Policy)</td><td>PG</td><td>Yes</td></tr>
+<tr><td><a href="/universities/vivekananda-global-university-online">Vivekananda Global University</a>, Rajasthan</td><td>Bachelor of Arts (combination of 3 subjects), subjects include Public Policy and Development</td><td>UG</td><td>Yes</td></tr>
+</tbody>
+</table>
+
+<p>All three entries have appeared online for three sessions in a row. That steadiness matters, because online entitlement is granted session by session. Vivekananda Global University also holds the same BA in distance (ODL) mode, so check which mode your offer letter names.</p>
+
+<p class="pull">A governance certificate or a short course is not a master's degree. Only the register decides which public policy programmes count as UGC-entitled degrees.</p>
+
+<h2>Public policy or public administration: which one do you want?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159384/pexels-photo-9159384.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A woman studying on her bed using a laptop, surrounded by open books." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+<p>The two names are often used as if they mean the same thing. They do not. Public policy looks at how decisions are made, analysed and evaluated. Public administration looks at how the machinery of government runs: departments, budgets, personnel and service delivery.</p>
+
+<p>The register treats them as separate programmes, and far more universities offer public administration. For 2026-27, these seven are entitled for an online Master of Arts (Public Administration):</p>
+
+<table>
+<thead><tr><th>University</th><th>Type</th><th>State</th></tr></thead>
+<tbody>
+<tr><td>Aligarh Muslim University</td><td>Central University</td><td>Uttar Pradesh</td></tr>
+<tr><td>Assam Don Bosco University</td><td>Private University</td><td>Assam</td></tr>
+<tr><td>Bharathidasan University</td><td>State University</td><td>Tamil Nadu</td></tr>
+<tr><td>Jamia Millia Islamia</td><td>Central University</td><td>Delhi</td></tr>
+<tr><td><a href="/universities/maharshi-dayanand-university-online/ma/public-administration">Maharishi Dayanand University</a></td><td>State University</td><td>Haryana</td></tr>
+<tr><td>Mangalayatan University</td><td>Private University</td><td>Uttar Pradesh</td></tr>
+<tr><td>University of Madras</td><td>State University</td><td>Tamil Nadu</td></tr>
+</tbody>
+</table>
+
+<p>IGNOU, Karnataka State Open University, Osmania University and many other state universities offer the MA in Public Administration by distance (ODL) instead. Distance mode ties admissions and exams to the university's territorial jurisdiction, so check that it covers where you live.</p>
+
+<div class="callout-warning">
+<strong>A listing on a course website is not an entitlement.</strong> If a university advertises an online MA in public policy or public administration and it is not in the register for your session and mode, ask the university for its UGC-DEB entitlement letter before you pay.
+</div>
+
+<h2>Is an online public policy degree valid for jobs and further study?</h2>
+
+<p>Yes, when the entitlement covers your session. Public policy is not among the disciplines UGC prohibits in online mode under its public notice of 11 November 2024. Regulation 22 of the 2020 regulations treats an entitled online MA as equivalent to the same MA earned on campus.</p>
+
+<p>That equivalence covers the qualification, not the outcome. No public source reports placement or salary data for online public policy graduates, so treat any such figure from a seller with caution. Our guide to <a href="/blog/online-masters-pg-courses-india">online master's and PG courses in India</a> explains how online PG degrees work in general.</p>
+
+<h2>Who can apply for an online MA in public policy?</h2>
+
+<p>A bachelor's degree is the base requirement for a master's programme under the UGC UG and PG Regulations, 2025. Each university sets its own minimum marks and decides whether it runs an entrance test or interview. Public policy MAs usually accept graduates from any discipline, but confirm this on the Amity or JAIN admission page for your session.</p>
+
+<p>Fees change each session and differ by university. Check the current fee on the official portal, and keep the written fee schedule with your admission receipt.</p>
+
+<h2>How to check a public policy programme yourself</h2>
+
+<ol>
+<li>Open the HEI programme list on deb.ugc.ac.in.</li>
+<li>Search for the university and find the row with the exact programme name.</li>
+<li>Check the year (2026-27), the session (July) and the mode column. It must read Online.</li>
+<li>Create your DEB ID before you enrol.</li>
+</ol>
+
+<p>Our step-by-step guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> walks through the register. If you are new to the difference between online and distance study, start with <a href="/blog/what-is-online-education-india">what online education means under UGC rules</a>. For other humanities options, the <a href="/programs/ma">online MA programme hub</a> lists every university in our records.</p>
+
+<div class="cta-box">
+<p><strong>Choosing between Amity and JAIN?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC-DEB HEI programme register (HEI_Prog_List), public policy and public administration entries for 2024-25, 2025-26 and 2026-27, read on 2 November 2026: deb.ugc.ac.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulation 22: deb.ugc.ac.in/Regulations</li>
+<li>UGC public notice F.No. 1-34/2024 (DEB-I), 11 November 2024, programmes prohibited in ODL and Online mode: deb.ugc.ac.in</li>
+<li>UGC (Minimum Standards of Instruction for the Grant of Undergraduate Degree and Postgraduate Degree) Regulations, 2025: ugc.gov.in</li>
+</ul>
+
+<p class="disclaimer"><em>Checked against the UGC-DEB register on 2 November 2026. Entitlements are granted by session and can change. Confirm the current position on deb.ugc.ac.in before you enrol.</em></p>
+    `,
+  },
+  {
+    slug: 'online-library-science-course-india',
+    title: 'Online Library Science Course in India 2026: BLISc and MLISc List',
+    seoTitle: 'Online Library Science Course India 2026: BLISc, MLISc',
+    h1Title: 'Online Library Science Courses in India: Which Universities UGC Entitles for an Online BLISc or MLISc in 2026-27',
+    metaDescription: 'Nine universities are UGC-DEB entitled for online library science in 2026-27: 3 for the BLISc, 7 for the MLISc. The list, the distance option and how to check.',
+    category: 'Online Degree Validity',
+    tags: ['Library Science Online', 'BLISc Online', 'MLISc Online', 'Librarian Course', 'UGC-DEB', 'Online Degree Validity'],
+    publishedAt: '2026-11-02',
+    readTime: 6,
+    targetKeyword: 'library science online course',
+    relatedUniversities: ['aligarh-muslim-university-online', 'ignou-online', 'guru-ghasidas-vishwavidyalaya-online', 'yenepoya-university-online', 'desh-bhagat-university-online', 'guru-kashi-university-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/33845767/pexels-photo-33845767.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@mba-classroom-2155665220" target="_blank" rel="noopener nofollow">MBA Classroom</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Three students studying in a library, focused on their books.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'Can I do a library science course online in India?', a: 'Yes. For the 2026-27 July session, the UGC-DEB programme register lists online library science degrees at nine universities. Three are entitled for the Bachelor of Library and Information Science (BLISc) online and seven for the Master (MLISc). Choudhary Charan Singh University also offers library science as one subject in an online BA.' },
+      { q: 'Which universities offer an online BLISc?', a: 'For 2026-27 the register lists the BLISc in online mode at Aligarh Muslim University, Indira Gandhi National Open University (IGNOU) and Pt. Sundarlal Sharma (Open) University Chhattisgarh.' },
+      { q: 'Which universities offer an online MLISc?', a: 'For 2026-27 the register lists the MLISc in online mode at Aligarh Muslim University, Desh Bhagat University, Dr. Babasaheb Ambedkar Open University, Guru Ghasidas Vishwavidyalaya, Guru Kashi University, Pt. Sundarlal Sharma (Open) University Chhattisgarh and Yenepoya.' },
+      { q: 'Is an online library science degree valid for a librarian job?', a: 'The degree is valid when the university is UGC-DEB entitled for it in online mode for your session. Regulation 22 of the UGC ODL and Online Regulations, 2020 treats it as equivalent to the campus degree. Each employer sets its own recruitment rules, so read the eligibility clause of the specific post you are applying for.' },
+      { q: 'Is IGNOU BLIS online or distance?', a: 'Both. For 2026-27 the register lists IGNOU\'s Bachelor of Library and Information Science in online mode and in distance (ODL) mode, and its Master of Library and Information Science in ODL mode only. Check which mode your application form names.' },
+      { q: 'How many universities offer library science by distance?', a: 'For 2026-27, 38 institutions hold library science entries in distance (ODL) mode, with 31 offering the BLISc and 31 offering the MLISc. Distance mode ties admissions, contact classes and exams to the university\'s territorial jurisdiction.' },
+    ],
+    ctaTitle: 'Comparing online degree options?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">Library science is one of the few professional subjects that UGC allows fully online. The list of universities entitled to teach it online is short, and it is not the same list as the distance-mode one. Here is the 2026-27 register, level by level.</p>
+
+<p><strong>Short answer:</strong> yes, you can earn a UGC-valid library science degree online in India. For the <strong>2026-27 July session</strong>, the UGC-DEB programme register lists <strong>three universities for an online BLISc</strong> (Aligarh Muslim University, IGNOU and Pt. Sundarlal Sharma (Open) University Chhattisgarh) and <strong>seven for an online MLISc</strong>. Another <strong>38 institutions</strong> offer library science by distance (ODL), which is a different entitlement.</p>
+
+<div class="callout-key">
+<strong>Online library science in one box (checked 2 November 2026)</strong>
+<ul>
+<li><strong>Online BLISc, 2026-27:</strong> 3 universities</li>
+<li><strong>Online MLISc, 2026-27:</strong> 7 universities</li>
+<li><strong>Online BA with library science as a subject:</strong> Choudhary Charan Singh University</li>
+<li><strong>Distance (ODL) library science, 2026-27:</strong> 38 institutions</li>
+<li><strong>Same value as campus?</strong> Yes, Regulation 22 of the UGC ODL and Online Regulations, 2020</li>
+</ul>
+</div>
+
+<h2>Which universities offer an online library science degree for 2026-27?</h2>
+
+<p>The UGC-DEB HEI programme register records each entitlement by year, session and mode. These are the library science entries marked Online for the 2026-27 July session:</p>
+
+<table>
+<thead><tr><th>University</th><th>Type</th><th>Online BLISc</th><th>Online MLISc</th></tr></thead>
+<tbody>
+<tr><td><a href="/universities/aligarh-muslim-university-online">Aligarh Muslim University</a>, Uttar Pradesh</td><td>Central University</td><td>Yes</td><td>Yes</td></tr>
+<tr><td><a href="/universities/ignou-online">IGNOU</a>, Delhi</td><td>Central Open University</td><td>Yes</td><td>No (ODL only)</td></tr>
+<tr><td>Pt. Sundarlal Sharma (Open) University, Chhattisgarh</td><td>State Open University</td><td>Yes</td><td>Yes</td></tr>
+<tr><td><a href="/universities/guru-ghasidas-vishwavidyalaya-online">Guru Ghasidas Vishwavidyalaya</a>, Chhattisgarh</td><td>Central University</td><td>No</td><td>Yes</td></tr>
+<tr><td><a href="/universities/yenepoya-university-online">Yenepoya</a>, Karnataka</td><td>Deemed University</td><td>No</td><td>Yes</td></tr>
+<tr><td><a href="/universities/desh-bhagat-university-online">Desh Bhagat University</a>, Punjab</td><td>Private University</td><td>No</td><td>Yes</td></tr>
+<tr><td><a href="/universities/guru-kashi-university-online">Guru Kashi University</a>, Punjab</td><td>Private University</td><td>No</td><td>Yes</td></tr>
+<tr><td>Dr. Babasaheb Ambedkar Open University, Gujarat</td><td>State Open University</td><td>No</td><td>Yes</td></tr>
+</tbody>
+</table>
+
+<p>Choudhary Charan Singh University is entitled for an online BA (combination of three subjects) in which library science is one subject option. That is a general BA, not a professional BLISc.</p>
+
+<p>Entitlements move between sessions. Guru Ghasidas Vishwavidyalaya was listed for an online BLISc in 2024-25 and 2025-26 but holds only the online MLISc for 2026-27. Check the register for the session you are applying to.</p>
+
+<p class="pull">An MLISc listed for "Open and Distance Learning" is not an online MLISc. The mode column decides it.</p>
+
+<h2>BLISc and MLISc: which one do you need?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+<p>The BLISc (Bachelor of Library and Information Science) is the entry qualification for library work. Universities usually admit graduates to it, so it is not a course straight after Class 12. The MLISc (Master of Library and Information Science) normally follows the BLISc.</p>
+
+<p>Durations vary. The University of Delhi, for example, lists both its distance BLISc and MLISc as one-year programmes in the register. Confirm the duration, the eligibility and whether a BLISc is required for the MLISc on the university's own admission page before you apply.</p>
+
+<h2>Online or distance library science: what is the difference?</h2>
+
+<p>UGC treats them as separate entitlements under the UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020. Online mode is delivered over the internet with online or proctored exams, and you can enrol from anywhere. Distance (ODL) mode uses study material and contact sessions, and the university must run admissions, contact programmes and exams within its territorial jurisdiction.</p>
+
+<p>For 2026-27, 38 institutions hold library science entries in ODL mode: 31 for the BLISc and 31 for the MLISc. They include IGNOU, Karnataka State Open University, Netaji Subhas Open University and several state universities in Tamil Nadu, Punjab and Telangana. Our explainer on <a href="/blog/what-is-online-education-india">what online education means under UGC rules</a> sets out both modes side by side.</p>
+
+<div class="callout-warning">
+<strong>Ask about practical work before you pay.</strong> Library science courses often include practical papers such as cataloguing and classification. The register does not say how each university runs them online, so ask in writing how practicals and any library internship are arranged.
+</div>
+
+<h2>Is an online library science degree valid for jobs?</h2>
+
+<p>The degree is valid when the entitlement covers your session. Library science is not on UGC's list of disciplines prohibited in online mode, and Regulation 22 of the 2020 regulations treats an entitled online degree as equivalent to the campus degree.</p>
+
+<p>Employers set their own recruitment rules for librarian posts. Read the eligibility clause of each advertisement, and keep your DEB ID and the university's entitlement for your session on file. Our guide on <a href="/guides/is-online-degree-valid-india">whether an online degree is valid in India</a> covers acceptance in more detail.</p>
+
+<h2>How to check a library science programme yourself</h2>
+
+<ol>
+<li>Open the HEI programme list on deb.ugc.ac.in.</li>
+<li>Search for the university and find the Library and Information Science row.</li>
+<li>Check the year (2026-27), the session (July) and the mode column: Online or Open and Distance Learning.</li>
+<li>Create your DEB ID before you enrol.</li>
+</ol>
+
+<p>Our step-by-step guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> walks through the register. Fees change each session and differ by university, so check the current fee on the official portal before you apply.</p>
+
+<div class="cta-box">
+<p><strong>Not sure which university fits?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/contact">Ask us</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC-DEB HEI programme register (HEI_Prog_List), library science entries for 2024-25, 2025-26 and 2026-27, read on 2 November 2026: deb.ugc.ac.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulation 22: deb.ugc.ac.in/Regulations</li>
+<li>UGC public notice F.No. 1-34/2024 (DEB-I), 11 November 2024, programmes prohibited in ODL and Online mode: deb.ugc.ac.in</li>
+</ul>
+
+<p class="disclaimer"><em>Checked against the UGC-DEB register on 2 November 2026. Entitlements are granted by session and can change. Confirm the current position on deb.ugc.ac.in before you enrol.</em></p>
+    `,
+  },
+  {
+    slug: 'online-degree-courses-kerala',
+    title: 'Online Degree Courses in Kerala 2026: The UGC-Entitled List',
+    seoTitle: 'Online Degree Courses in Kerala 2026: UGC-Entitled List',
+    h1Title: 'Online Degree Courses in Kerala: What Kerala\'s Universities Are UGC-Entitled to Offer Online in 2026-27',
+    metaDescription: 'MG University, Calicut and Kerala University hold 27 online programme entries for 2026-27. Every programme, the SGOU distance option and how to check.',
+    category: 'Online Degree Validity',
+    tags: ['Online Degree Kerala', 'Online Courses Kerala', 'MG University Online', 'Calicut University Online', 'Kerala University Online', 'UGC-DEB'],
+    publishedAt: '2026-11-02',
+    readTime: 7,
+    targetKeyword: 'online degree courses in kerala',
+    relatedUniversities: ['mahatma-gandhi-university-online', 'university-of-calicut-online', 'university-of-kerala-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/9159283/pexels-photo-9159283.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Woman studying from home on her laptop near a bright window.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'Which universities in Kerala offer online degree courses?', a: 'For the 2026-27 July session, the UGC-DEB programme register lists online programmes at three universities based in Kerala: Mahatma Gandhi University (13 entries), the University of Calicut (10) and the University of Kerala (4).' },
+      { q: 'Does the University of Kerala offer online degrees?', a: 'Yes. For 2026-27 the register lists four online programmes at the University of Kerala: B.Com (Finance), BBA (General), M.Com (Finance) and MBA (General).' },
+      { q: 'Does Calicut University offer online courses?', a: 'Yes. For 2026-27 the register lists ten online programmes at the University of Calicut, including the MBA (Human Resource Management), M.Com (Finance), MA in Economics, History, Political Science, Sociology and Arabic, and four-year honours BA and B.Com degrees. In 2025-26 Calicut\'s entries were all in distance (ODL) mode.' },
+      { q: 'Can a student in Kerala join an online degree from a university in another state?', a: 'Yes. Regulation 4(C)(i) of the UGC ODL and Online Regulations, 2020 says territorial jurisdiction does not apply to online programmes, and Regulation 23(4) lets a learner anywhere in India or abroad enrol. A distance (ODL) programme is different: the university must run admissions, contact classes and exams within its own territorial jurisdiction.' },
+      { q: 'Is Sreenarayanaguru Open University online?', a: 'Not for 2026-27. The register lists Sreenarayanaguru Open University, Kerala\'s state open university, for 30 programme entries in distance (ODL) mode, covering BA, B.Com, BBA, BCA, MA, M.Com, MBA and MCA programmes. None is listed in online mode.' },
+      { q: 'Are online degrees from Kerala universities valid?', a: 'Yes, when the university is UGC-DEB entitled for that programme in online mode for your session. Regulation 22 of the 2020 regulations treats an entitled online degree as equivalent to a campus degree.' },
+    ],
+    ctaTitle: 'Comparing online universities?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">If you live in Kerala, you have two kinds of choice: an online degree from one of Kerala's own universities, or one from any online-entitled university in India. Here is what Kerala's universities are entitled to offer online for 2026-27, programme by programme, from the UGC-DEB register.</p>
+
+<p><strong>Short answer:</strong> for the <strong>2026-27 July session</strong>, the UGC-DEB programme register lists online programmes at <strong>three universities based in Kerala</strong>: <strong>Mahatma Gandhi University</strong> (13 entries), the <strong>University of Calicut</strong> (10) and the <strong>University of Kerala</strong> (4). Sreenarayanaguru Open University offers 30 programmes by distance (ODL), not online. Because online programmes carry no territorial limit, a student in Kerala can also join any online-entitled university elsewhere in India.</p>
+
+<div class="callout-key">
+<strong>Online degrees in Kerala in one box (checked 2 November 2026)</strong>
+<ul>
+<li><strong>Mahatma Gandhi University:</strong> 13 online entries for 2026-27</li>
+<li><strong>University of Calicut:</strong> 10 online entries (all distance mode in 2025-26)</li>
+<li><strong>University of Kerala:</strong> 4 online entries</li>
+<li><strong>Sreenarayanaguru Open University:</strong> 30 distance (ODL) entries, none online</li>
+<li><strong>Studying from Kerala with a university elsewhere:</strong> allowed for online mode, Regulation 23(4)</li>
+</ul>
+</div>
+
+<h2>Which Kerala universities offer online degrees for 2026-27?</h2>
+
+<p>The UGC-DEB HEI programme register records each entitlement by year, session and mode. These are the entries marked Online for universities based in Kerala, as named in the register:</p>
+
+<table>
+<thead><tr><th>University</th><th>Undergraduate (online)</th><th>Postgraduate (online)</th></tr></thead>
+<tbody>
+<tr><td><a href="/universities/mahatma-gandhi-university-online">Mahatma Gandhi University</a>, Kottayam</td><td>B.Com (Hons) General, 4 years; BBA, 4 years; BA (Hons) Political Science, 4 years</td><td>MBA; M.Com (Finance); MA in Economics, English, Sociology, Journalism and Mass Communication, Multimedia, Animation and Graphic Design; M.Sc (Statistics)</td></tr>
+<tr><td><a href="/universities/university-of-calicut-online">University of Calicut</a></td><td>B.Com (Hons), 4 years; BA (Hons) History, 4 years; BA (Hons) Sociology, 4 years</td><td>MBA (Human Resource Management); M.Com (Finance); MA in Economics, History, Political Science, Sociology and Arabic Language and Literature</td></tr>
+<tr><td><a href="/universities/university-of-kerala-online">University of Kerala</a>, Thiruvananthapuram</td><td>B.Com (Finance); BBA (General)</td><td>MBA (General); M.Com (Finance)</td></tr>
+</tbody>
+</table>
+
+<p>Mahatma Gandhi University and the University of Kerala carry the same online programmes as in 2025-26. The University of Calicut is the change: its 2025-26 entries were all in distance (ODL) mode, and for 2026-27 the register lists ten programmes in online mode and none in ODL.</p>
+
+<p class="pull">The same university can hold a programme online one session and by distance the next. The mode column in the register is what counts for your admission.</p>
+
+<h2>What about Sreenarayanaguru Open University?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/8640098/pexels-photo-8640098.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Close-up of hands typing on a laptop, surrounded by notes and books." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@pavel-danilyuk" target="_blank" rel="noopener nofollow">Pavel Danilyuk</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+<p>Sreenarayanaguru Open University (SGOU) is Kerala's state open university. For 2026-27 the register lists it for 30 programme entries, all in distance (ODL) mode. They include BA programmes in English, Malayalam, History, Economics, Sociology, Political Science and other subjects, plus B.Com, BBA, BCA, BSc (Data Science and Analytics), MA, M.Com, MBA and MCA.</p>
+
+<p>Distance mode is not online mode. In ODL, the university runs admissions, contact classes and exams within its territorial jurisdiction, using study material and learner support centres. That suits a student who lives in Kerala and can attend contact sessions and exam centres in the state.</p>
+
+<h2>Can you join an online degree from a university outside Kerala?</h2>
+
+<p>Yes. Regulation 4(C)(i) of the UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020 says territorial jurisdiction does not apply to online programmes. Regulation 23(4) lets a learner residing within or outside India enrol in any online programme from an entitled university.</p>
+
+<p>That widens the choice a lot. For 2026-27 the register lists 986 online programme entries across 145 institutions nationwide. Our pillar on <a href="/blog/online-degree-courses-india">online degree courses in India</a> sorts them by programme, and our explainer on <a href="/blog/what-is-online-education-india">what online education means under UGC rules</a> sets out how online and distance modes differ.</p>
+
+<div class="callout-warning">
+<strong>Check the mode on your offer letter.</strong> A Kerala university may offer the same subject online and by distance in different sessions. If the programme you want is not in the register in online mode for your session, ask the university which mode you are being admitted to before you pay.
+</div>
+
+<h2>Are online degrees from Kerala universities valid?</h2>
+
+<p>Yes, when the entitlement covers your programme and session. Regulation 22 of the 2020 regulations treats an entitled online degree as equivalent to the same degree earned on campus. Regulation 23(2) protects your admission if the university loses entitlement in a later year.</p>
+
+<p>Fees change each session and differ by university. Check the current fee on each university's official portal and keep the written fee schedule with your admission receipt. If you are weighing an MBA specifically, our guide to <a href="/blog/distance-mba-kerala-programs-2026">distance MBA options in Kerala</a> covers that programme in more depth.</p>
+
+<h2>How to check a Kerala university's online programme</h2>
+
+<ol>
+<li>Open the HEI programme list on deb.ugc.ac.in.</li>
+<li>Filter or search for the university.</li>
+<li>Find the exact programme and check the year (2026-27), the session (July) and the mode column.</li>
+<li>Create your DEB ID before you enrol.</li>
+</ol>
+
+<p>Our step-by-step guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> walks through each field of the register.</p>
+
+<div class="cta-box">
+<p><strong>Comparing Kerala universities with the rest of India?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities side by side</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC-DEB HEI programme register (HEI_Prog_List), entries for universities in Kerala for 2025-26 and 2026-27, read on 2 November 2026: deb.ugc.ac.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulations 4(C), 22, 23 and Annexure III: deb.ugc.ac.in/Regulations</li>
+</ul>
+
+<p class="disclaimer"><em>Checked against the UGC-DEB register on 2 November 2026. Programme names are given as the register lists them. Entitlements are granted by session and can change. Confirm the current position on deb.ugc.ac.in before you enrol.</em></p>
+    `,
+  },
+  {
+    slug: 'online-degree-courses-tamil-nadu',
+    title: 'Online Degree Courses in Tamil Nadu 2026: 24 UGC-Entitled Universities',
+    seoTitle: 'Online Degree Courses in Tamil Nadu 2026: 24 Universities',
+    h1Title: 'Online Degree Courses in Tamil Nadu: The 24 Universities UGC Entitles to Teach Online in 2026-27',
+    metaDescription: '24 Tamil Nadu universities hold 147 online programme entries for 2026-27. The full list by university, the most common degrees, and how to check one.',
+    category: 'Online Degree Validity',
+    tags: ['Online Degree Tamil Nadu', 'Online Courses Tamil Nadu', 'Online Degree Chennai', 'Madras University Online', 'UGC-DEB', 'Online Degree Validity'],
+    publishedAt: '2026-11-02',
+    readTime: 7,
+    targetKeyword: 'online degree courses in tamilnadu',
+    relatedUniversities: ['university-of-madras-online', 'amrita-vishwa-vidyapeetham-online', 'hindustan-institute-technology-online', 'bharathiar-university-online', 'srm-institute-science-technology-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/8199160/pexels-photo-8199160.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@yankrukov" target="_blank" rel="noopener nofollow">Yan Krukau</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Group of college students studying together in a classroom with laptops and books.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'Which universities in Tamil Nadu offer online degrees?', a: 'For the 2026-27 July session, the UGC-DEB programme register lists 24 universities based in Tamil Nadu with at least one online programme, holding 147 online programme entries between them. The largest lists belong to Hindustan Institute of Technology and Science (13 entries), SASTRA (12), Bharathiar University (11) and Amrita, Bharathidasan and Manonmaniam Sundaranar (10 each).' },
+      { q: 'Does the University of Madras offer online degrees?', a: 'Yes. For 2026-27 the register lists nine online programme entries at the University of Madras: three undergraduate and six postgraduate.' },
+      { q: 'Which online degree is most common in Tamil Nadu?', a: 'By number of universities, the online MBA: 18 of the 24 Tamil Nadu universities are entitled for at least one online MBA entry for 2026-27. The online B.Com follows at 17 universities and the online BBA at 14.' },
+      { q: 'Can I study an online degree in Tamil Nadu from another state?', a: 'Yes. Territorial jurisdiction does not apply to online programmes under Regulation 4(C)(i) of the UGC ODL and Online Regulations, 2020, and Regulation 23(4) lets a learner anywhere in India or abroad enrol. A student in Tamil Nadu can equally join an online-entitled university based elsewhere.' },
+      { q: 'Is an online degree from a Tamil Nadu university valid?', a: 'Yes, when the university is UGC-DEB entitled for that programme in online mode for your session. Regulation 22 of the 2020 regulations treats an entitled online degree as equivalent to the same degree earned on campus.' },
+      { q: 'How many Tamil Nadu universities offer distance education?', a: 'For 2026-27 the register lists 265 distance (ODL) programme entries at 17 institutions based in Tamil Nadu. Distance mode ties admissions, contact classes and exams to the university\'s territorial jurisdiction, so it is a separate choice from online mode.' },
+    ],
+    ctaTitle: 'Comparing Tamil Nadu universities?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">Tamil Nadu has more universities teaching online than almost any other state, from century-old state universities to private deemed universities. Here is the full 2026-27 list from the UGC-DEB register, and what it tells you about which degrees you can actually take online.</p>
+
+<p><strong>Short answer:</strong> for the <strong>2026-27 July session</strong>, the UGC-DEB programme register lists <strong>24 universities based in Tamil Nadu</strong> with at least one online programme, holding <strong>147 online programme entries</strong> between them. The <strong>online MBA</strong> is the most widely offered (18 universities), followed by the <strong>B.Com</strong> (17) and the <strong>BBA</strong> (14). Online programmes carry no territorial limit, so you can join from anywhere in India.</p>
+
+<div class="callout-key">
+<strong>Online degrees in Tamil Nadu in one box (checked 2 November 2026)</strong>
+<ul>
+<li><strong>Universities with an online entitlement, 2026-27:</strong> 24</li>
+<li><strong>Online programme entries:</strong> 147 (54 undergraduate, 92 postgraduate, 1 unlevelled)</li>
+<li><strong>Most widely offered:</strong> MBA at 18 universities, B.Com at 17, BBA at 14</li>
+<li><strong>Distance (ODL) instead:</strong> 265 entries at 17 institutions</li>
+<li><strong>Same value as campus?</strong> Yes, Regulation 22 of the UGC ODL and Online Regulations, 2020</li>
+</ul>
+</div>
+
+<h2>Which Tamil Nadu universities offer online degrees for 2026-27?</h2>
+
+<p>The UGC-DEB HEI programme register records each entitlement by year, session and mode. These are the universities based in Tamil Nadu with entries marked Online for the 2026-27 July session, by number of entries:</p>
+
+<table>
+<thead><tr><th>University</th><th>Type</th><th>Online UG</th><th>Online PG</th></tr></thead>
+<tbody>
+<tr><td><a href="/universities/hindustan-institute-technology-online">Hindustan Institute of Technology and Science</a></td><td>Deemed</td><td>7</td><td>6</td></tr>
+<tr><td>Shanmugha Arts, Science, Technology and Research Academy (SASTRA)</td><td>Deemed</td><td>5</td><td>7</td></tr>
+<tr><td><a href="/universities/bharathiar-university-online">Bharathiar University</a></td><td>State</td><td>3</td><td>8</td></tr>
+<tr><td><a href="/universities/amrita-vishwa-vidyapeetham-online">Amrita Vishwa Vidyapeetham</a></td><td>Deemed</td><td>3</td><td>7</td></tr>
+<tr><td>Bharathidasan University</td><td>State</td><td>3</td><td>7</td></tr>
+<tr><td>Manonmaniam Sundaranar University</td><td>State</td><td>3</td><td>7</td></tr>
+<tr><td>Madurai Kamaraj University</td><td>State</td><td>3</td><td>6</td></tr>
+<tr><td><a href="/universities/university-of-madras-online">University of Madras</a></td><td>State</td><td>3</td><td>6</td></tr>
+<tr><td>Alagappa University</td><td>State</td><td>3</td><td>5</td></tr>
+<tr><td>Kalasalingam Academy of Research and Higher Education</td><td>Deemed</td><td>3</td><td>4</td></tr>
+<tr><td>Sathyabama Institute of Science and Technology</td><td>Deemed</td><td>3</td><td>3</td></tr>
+<tr><td>Dr. M.G.R. Educational and Research Institute</td><td>Deemed</td><td>1</td><td>5</td></tr>
+<tr><td><a href="/universities/srm-institute-science-technology-online">SRM Institute of Science and Technology</a></td><td>Deemed</td><td>2</td><td>3</td></tr>
+<tr><td>Vellore Institute of Technology</td><td>Deemed</td><td>1</td><td>3</td></tr>
+<tr><td>Central University of Tamil Nadu</td><td>Central</td><td>0</td><td>3</td></tr>
+<tr><td>Vels Institute of Science, Technology and Advanced Studies (VISTAS)</td><td>Deemed</td><td>1</td><td>3</td></tr>
+<tr><td>Meenakshi Academy of Higher Education and Research</td><td>Deemed</td><td>2</td><td>1</td></tr>
+<tr><td>B.S. Abdur Rahman Crescent Institute of Science and Technology</td><td>Deemed</td><td>1</td><td>2</td></tr>
+<tr><td>Bharath Institute of Higher Education and Research</td><td>Deemed</td><td>2</td><td>1</td></tr>
+<tr><td>Academy of Maritime Education and Training</td><td>Deemed</td><td>2</td><td>1</td></tr>
+<tr><td>Sri Ramachandra Institute of Higher Education and Research</td><td>Deemed</td><td>1</td><td>1</td></tr>
+<tr><td>Anna University</td><td>State</td><td>0</td><td>2</td></tr>
+<tr><td>Karunya Institute of Technology and Sciences</td><td>Deemed</td><td>1</td><td>1</td></tr>
+<tr><td>Saveetha Institute of Medical and Technical Sciences</td><td>Deemed</td><td>1</td><td>0</td></tr>
+</tbody>
+</table>
+
+<p>Central University of Tamil Nadu holds four entries in total, one of which has no UG or PG level in the register. Counts are register entries: a university that lists one MBA with three specialisations as three rows counts three times. Open the register row to see exact programme names.</p>
+
+<p class="pull">An engineering-led university can be entitled to teach management or computing online. It cannot teach engineering online.</p>
+
+<h2>Which online degrees can you take in Tamil Nadu?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159637/pexels-photo-9159637.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Young woman using laptop for studying, with a focused expression." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+<p>Counted by universities rather than entries, the 2026-27 register shows this spread across the 24:</p>
+
+<table>
+<thead><tr><th>Programme</th><th>Tamil Nadu universities entitled online</th></tr></thead>
+<tbody>
+<tr><td>MBA</td><td>18</td></tr>
+<tr><td>B.Com</td><td>17</td></tr>
+<tr><td>BBA</td><td>14</td></tr>
+<tr><td>MA</td><td>12</td></tr>
+<tr><td>M.Com</td><td>11</td></tr>
+<tr><td>BA</td><td>10</td></tr>
+<tr><td>MCA</td><td>9</td></tr>
+<tr><td>M.Sc</td><td>9</td></tr>
+<tr><td>BCA</td><td>5</td></tr>
+</tbody>
+</table>
+
+<p>Many of these universities are best known for engineering, medicine or nursing. None of those can be taught online: UGC's public notice of 11 November 2024 prohibits them in online and distance mode, and Regulation 4(C)(ii) bars any programme with laboratory work except where the practicals are coding. Our pillar on <a href="/blog/online-degree-courses-india">online degree courses in India</a> sets out the full allowed and barred list.</p>
+
+<h2>Online or distance: two different choices in Tamil Nadu</h2>
+
+<p>Tamil Nadu also has a large distance education sector. For 2026-27 the register lists 265 distance (ODL) entries at 17 institutions based in the state. ODL is a separate entitlement: the university uses study material and contact sessions, and runs admissions, contact classes and exams within its territorial jurisdiction.</p>
+
+<p>Online mode has no territorial limit under Regulation 4(C)(i) of the UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020. A Tamil Nadu university can enrol you online wherever you live, and a student in Chennai or Coimbatore can join an online programme from a university in another state. Our explainer on <a href="/blog/what-is-online-education-india">what online education means under UGC rules</a> sets out both modes side by side.</p>
+
+<div class="callout-warning">
+<strong>Check the mode on your offer letter.</strong> Several Tamil Nadu state universities hold the same subject online and by distance. If you want an online degree, the register row for your programme and session must read Online, and your admission letter should name the same mode.
+</div>
+
+<h2>Is an online degree from a Tamil Nadu university valid?</h2>
+
+<p>Yes, when the entitlement covers your programme and session. Regulation 22 of the 2020 regulations treats an entitled online degree as equivalent to the same degree earned on campus, and Regulation 23(2) protects your admission if the university loses entitlement in a later year.</p>
+
+<p>Fees change each session and differ by university. Check the current fee on each university's official portal. If you are focused on management, our guide to <a href="/blog/online-mba-tamil-nadu-2026">online MBA options in Tamil Nadu</a> goes deeper on that one programme.</p>
+
+<h2>How to check a Tamil Nadu university's online programme</h2>
+
+<ol>
+<li>Open the HEI programme list on deb.ugc.ac.in.</li>
+<li>Search for the university.</li>
+<li>Find the exact programme and check the year (2026-27), the session (July) and the mode column.</li>
+<li>Create your DEB ID before you enrol.</li>
+</ol>
+
+<p>Our step-by-step guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> walks through each field of the register.</p>
+
+<div class="cta-box">
+<p><strong>Shortlisting from 24 universities?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities side by side</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC-DEB HEI programme register (HEI_Prog_List), entries for universities in Tamil Nadu for 2026-27, read on 2 November 2026: deb.ugc.ac.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulations 4(C), 22 and 23: deb.ugc.ac.in/Regulations</li>
+<li>UGC public notice F.No. 1-34/2024 (DEB-I), 11 November 2024, programmes prohibited in ODL and Online mode: deb.ugc.ac.in</li>
+</ul>
+
+<p class="disclaimer"><em>Checked against the UGC-DEB register on 2 November 2026. Counts are register entries for the 2026-27 July session. Entitlements are granted by session and can change. Confirm the current position on deb.ugc.ac.in before you enrol.</em></p>
+    `,
+  },
+  {
+    slug: 'online-degree-courses-bangalore',
+    title: 'Online Degree Courses in Bangalore 2026: The UGC-Entitled List',
+    seoTitle: 'Online Degree Courses in Bangalore 2026: UGC-Entitled List',
+    h1Title: 'Online Degree Courses in Bangalore: What Bengaluru\'s Universities Are UGC-Entitled to Offer Online in 2026-27',
+    metaDescription: 'Six Bengaluru universities hold 47 online programme entries for 2026-27. Every programme from the UGC-DEB register, the rest of Karnataka, and how to check.',
+    category: 'Online Degree Validity',
+    tags: ['Online Degree Bangalore', 'Online Courses Bangalore', 'Online Degree Karnataka', 'Jain Online', 'Christ Online', 'UGC-DEB'],
+    publishedAt: '2026-11-02',
+    readTime: 7,
+    targetKeyword: 'online degree courses in bangalore',
+    relatedUniversities: ['jain-university-online', 'christ-university-online', 'bangalore-university-online', 'dayananda-sagar-university-online', 'alliance-university-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/8199228/pexels-photo-8199228.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@yankrukov" target="_blank" rel="noopener nofollow">Yan Krukau</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'A group of college students sitting on stairs, studying and socializing indoors.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'Which universities in Bangalore offer online degrees?', a: 'For the 2026-27 July session, the UGC-DEB programme register lists online programmes at six universities based in Bengaluru: JAIN (Deemed-to-be University) with 11 entries, Bangalore University with 10, Christ and REVA University with 9 each, Dayananda Sagar University with 5 and Alliance University with 3.' },
+      { q: 'Does Bangalore University offer online degrees?', a: 'Yes. For 2026-27 the register lists ten online programmes at Bangalore University: the B.Com (General), the M.Com (General), the M.Sc in Mathematics and the MA in Economics, English, History, Sociology, Political Science, Hindi and Kannada.' },
+      { q: 'Does Christ University offer online courses?', a: 'Yes. For 2026-27 the register lists nine online programmes at Christ (Deemed to be University): BBA, BCA, B.Com, MCA, M.Com, MA in Applied Economics, MA in English with Communication Studies, and M.Sc programmes in Data Science and in Artificial Intelligence and Machine Learning.' },
+      { q: 'Can I join an online degree from a university outside Bangalore while living there?', a: 'Yes. Territorial jurisdiction does not apply to online programmes under Regulation 4(C)(i) of the UGC ODL and Online Regulations, 2020, and Regulation 23(4) lets a learner anywhere in India or abroad enrol in an entitled online programme.' },
+      { q: 'How many Karnataka universities offer online degrees?', a: 'For 2026-27 the register lists 15 universities based in Karnataka with online programmes, holding 110 entries. Outside Bengaluru, the largest lists belong to Visvesvaraya Technological University (13), the University of Mysore (12), Manipal Academy of Higher Education (10) and Karnataka State Open University (10).' },
+      { q: 'Are online degrees from Bangalore universities valid?', a: 'Yes, when the university is UGC-DEB entitled for that programme in online mode for your session. Regulation 22 of the 2020 regulations treats an entitled online degree as equivalent to the same degree earned on campus.' },
+    ],
+    ctaTitle: 'Comparing Bangalore universities?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">Bengaluru has more universities than most Indian cities, and several of them now teach online. A working professional in the city can study online with a local university or with any online-entitled university in India. Here is what Bengaluru's universities are entitled to offer online for 2026-27.</p>
+
+<p><strong>Short answer:</strong> for the <strong>2026-27 July session</strong>, the UGC-DEB programme register lists online programmes at <strong>six universities based in Bengaluru</strong>, holding <strong>47 online programme entries</strong> between them: <strong>JAIN</strong> (11), <strong>Bangalore University</strong> (10), <strong>Christ</strong> (9), <strong>REVA University</strong> (9), <strong>Dayananda Sagar University</strong> (5) and <strong>Alliance University</strong> (3). Across Karnataka, 15 universities hold 110 online entries.</p>
+
+<div class="callout-key">
+<strong>Online degrees in Bangalore in one box (checked 2 November 2026)</strong>
+<ul>
+<li><strong>Bengaluru universities with online entitlement, 2026-27:</strong> 6</li>
+<li><strong>Their online programme entries:</strong> 47</li>
+<li><strong>Karnataka as a whole:</strong> 15 universities, 110 online entries</li>
+<li><strong>Studying with a university outside Bengaluru:</strong> allowed for online mode, Regulation 23(4)</li>
+<li><strong>Same value as campus?</strong> Yes, Regulation 22 of the UGC ODL and Online Regulations, 2020</li>
+</ul>
+</div>
+
+<h2>Which Bangalore universities offer online degrees for 2026-27?</h2>
+
+<p>The UGC-DEB HEI programme register records each entitlement by year, session and mode. These are the entries marked Online for universities based in Bengaluru, with programme names shortened from the register:</p>
+
+<table>
+<thead><tr><th>University</th><th>Undergraduate (online)</th><th>Postgraduate (online)</th></tr></thead>
+<tbody>
+<tr><td><a href="/universities/jain-university-online">JAIN (Deemed-to-be University)</a></td><td>BBA, BCA, B.Com</td><td>MBA, MCA, M.Com, MA in English, Economics, Journalism and Mass Communication, Public Policy, and Jainology, Comparative Religion and Philosophy</td></tr>
+<tr><td><a href="/universities/bangalore-university-online">Bangalore University</a></td><td>B.Com (General)</td><td>M.Com (General), M.Sc (Mathematics), MA in Economics, English, History, Sociology, Political Science, Hindi and Kannada</td></tr>
+<tr><td><a href="/universities/christ-university-online">Christ (Deemed to be University)</a></td><td>BBA, BCA, B.Com</td><td>MCA, M.Com, MA (Applied Economics), MA (English with Communication Studies), M.Sc (Data Science), M.Sc (Artificial Intelligence and Machine Learning)</td></tr>
+<tr><td>REVA University</td><td>BCA, BBA (Finance and Banking)</td><td>MCA, MBA in six dual-specialisation combinations (finance with international business, marketing, operations, HR or business analytics; HR with marketing)</td></tr>
+<tr><td><a href="/universities/dayananda-sagar-university-online">Dayananda Sagar University</a></td><td>BBA, BCA, B.Com (General)</td><td>MBA, MCA</td></tr>
+<tr><td><a href="/universities/alliance-university-online">Alliance University</a></td><td>BBA, B.Com (Hons) General, 4 years</td><td>MBA</td></tr>
+</tbody>
+</table>
+
+<p>REVA's MBA appears as six register rows, one per specialisation pair, which is why its entry count is high for two programmes. Count programmes, not rows, when you compare universities.</p>
+
+<p class="pull">An entitlement means a university may admit you online for that session. It does not tell you whether the batch is open, so ask before you plan around a start date.</p>
+
+<h2>What about the rest of Karnataka?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159283/pexels-photo-9159283.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Woman studying from home on her laptop near a bright window." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+<p>Nine more Karnataka universities hold online entries for 2026-27. Visvesvaraya Technological University (13), the University of Mysore (12), Manipal Academy of Higher Education (10) and Karnataka State Open University (10) have the largest lists. Yenepoya (6), Srinivas University (5), JSS Academy of Higher Education and Research (3), St Aloysius (3) and Adichunchanagiri University (1) follow.</p>
+
+<p>Because online mode has no territorial limit, a learner in Bengaluru can join any of these, or any online-entitled university in another state. Our pillar on <a href="/blog/online-degree-courses-india">online degree courses in India</a> sorts the national list by programme.</p>
+
+<h2>Online or distance: which one fits a Bangalore student?</h2>
+
+<p>UGC treats online and distance (ODL) as separate entitlements under the UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020. Online mode is delivered over the internet with online or proctored exams. In distance mode, the university runs admissions, contact classes and exams within its territorial jurisdiction, using study material and learner support centres.</p>
+
+<p>For a working professional with a fixed office schedule, online mode usually removes the need to travel for contact classes. Our explainer on <a href="/blog/what-is-online-education-india">what online education means under UGC rules</a> sets out both modes side by side. If you are looking at the MBA by distance specifically, see our guide to <a href="/blog/distance-mba-bangalore-2026">distance MBA options in Bangalore</a>.</p>
+
+<div class="callout-warning">
+<strong>Engineering and lab-based degrees cannot be taken online.</strong> Several Bengaluru universities are known for engineering. UGC's public notice of 11 November 2024 prohibits engineering in online and distance mode, so an "online B.Tech" offer from any of them is not a UGC-entitled degree.
+</div>
+
+<h2>Are online degrees from Bangalore universities valid?</h2>
+
+<p>Yes, when the entitlement covers your programme and session. Regulation 22 of the 2020 regulations treats an entitled online degree as equivalent to the same degree earned on campus. Regulation 23(2) protects your admission if the university loses entitlement in a later year.</p>
+
+<p>Fees change each session and differ by university. Check the current fee on each university's official portal and keep the written fee schedule with your admission receipt.</p>
+
+<h2>How to check a Bangalore university's online programme</h2>
+
+<ol>
+<li>Open the HEI programme list on deb.ugc.ac.in.</li>
+<li>Search for the university.</li>
+<li>Find the exact programme and check the year (2026-27), the session (July) and the mode column.</li>
+<li>Create your DEB ID before you enrol.</li>
+</ol>
+
+<p>Our step-by-step guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> walks through each field of the register.</p>
+
+<div class="cta-box">
+<p><strong>Deciding between JAIN, Christ and the rest?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities side by side</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>UGC-DEB HEI programme register (HEI_Prog_List), entries for universities in Karnataka for 2026-27, read on 2 November 2026: deb.ugc.ac.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulations 4(C), 22 and 23: deb.ugc.ac.in/Regulations</li>
+<li>UGC public notice F.No. 1-34/2024 (DEB-I), 11 November 2024, programmes prohibited in ODL and Online mode: deb.ugc.ac.in</li>
+</ul>
+
+<p class="disclaimer"><em>Checked against the UGC-DEB register on 2 November 2026. Counts are register entries for the 2026-27 July session. Entitlements are granted by session and can change. Confirm the current position on deb.ugc.ac.in before you enrol.</em></p>
     `,
   },
 ]

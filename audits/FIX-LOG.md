@@ -5188,3 +5188,9 @@ like `onlineuu.in`. The defence stays human, and is written on the field.
 **What:** new post `/blog/online-computer-science-degree-india`.
 
 **Why:** "computer science online course" (2,400/mo), "online cs degree" (1,000), "data science online degree" (880) and "online cyber security degree" (480) were Missing. The answer is regulatory (BCA/MCA allowed under the Reg 4 coding exception, B.Tech prohibited) plus counts. Counts use only programmes whose hub resolves, so they can differ from the hub headline totals, which count membership differently; the post therefore quotes specialisation counts only and no programme totals.
+
+## Keyword-gap batch 3: six register-driven posts (2026-11-02)
+
+**What:** new posts `/blog/what-is-online-education-india`, `/blog/online-public-policy-courses-india`, `/blog/online-library-science-course-india`, `/blog/online-degree-courses-kerala`, `/blog/online-degree-courses-tamil-nadu`, `/blog/online-degree-courses-bangalore`, plus one new link sentence in seven related posts.
+
+**Why:** about 14,400 searches a month in the keyword-gap export had no page aimed at them (queue items 12-17 in audits/keyword-gap-plan-2026-10-26.md). Every count comes from the UGC-DEB HEI programme register read on 2 Nov 2026, and every rule from the UGC ODL and Online Regulations, 2020 by regulation number. The online-vs-distance rows were folded into the online-education post rather than given their own page, because MBA-specific comparison pages already exist and would compete. No fee figure appears in any of the six. Found while writing and NOT fixed (new-content session): 17 of 18 `/ma/public-administration` pages have no online entitlement in the register, and REVA is register-listed for an online MBA despite the mode-unverified gate. Both are in the plan file for Rishi.

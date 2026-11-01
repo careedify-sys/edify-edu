@@ -3,6 +3,48 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'what-is-online-education-india': [
+    { label: 'Definition', value: 'UGC 2020 Regs, Regulation 2(u)', green: true },
+    { label: 'Exams', value: 'Online test or proctored, Reg 15(C)' },
+    { label: 'Territorial limit', value: 'None for online, Reg 4(C)(i)' },
+    { label: 'Equivalence', value: 'Same as campus, Reg 22' },
+    { label: 'Online entries 2026-27', value: '986 at 145 institutions' },
+  ],
+  'online-public-policy-courses-india': [
+    { label: 'Online MA public policy 2026-27', value: 'Amity, JAIN', green: true },
+    { label: 'Online BA with public policy', value: 'Vivekananda Global University' },
+    { label: 'Online MA Public Administration', value: '7 universities' },
+    { label: 'Prohibited online?', value: 'No' },
+    { label: 'Check', value: 'deb.ugc.ac.in HEI programme list' },
+  ],
+  'online-library-science-course-india': [
+    { label: 'Online BLISc 2026-27', value: '3 universities', green: true },
+    { label: 'Online MLISc 2026-27', value: '7 universities' },
+    { label: 'Distance (ODL)', value: '38 institutions' },
+    { label: 'Equivalence', value: 'Same as campus, UGC Reg 22' },
+    { label: 'Check', value: 'deb.ugc.ac.in HEI programme list' },
+  ],
+  'online-degree-courses-kerala': [
+    { label: 'MG University', value: '13 online entries', green: true },
+    { label: 'University of Calicut', value: '10 online entries' },
+    { label: 'University of Kerala', value: '4 online entries' },
+    { label: 'SGOU', value: '30 distance entries, none online' },
+    { label: 'Session', value: '2026-27 July, UGC-DEB register' },
+  ],
+  'online-degree-courses-tamil-nadu': [
+    { label: 'Universities online 2026-27', value: '24', green: true },
+    { label: 'Online entries', value: '147' },
+    { label: 'Most common', value: 'MBA at 18 universities' },
+    { label: 'Distance (ODL)', value: '265 entries, 17 institutions' },
+    { label: 'Check', value: 'deb.ugc.ac.in HEI programme list' },
+  ],
+  'online-degree-courses-bangalore': [
+    { label: 'Bengaluru universities online', value: '6, with 47 entries', green: true },
+    { label: 'Karnataka total', value: '15 universities, 110 entries' },
+    { label: 'Largest Bengaluru list', value: 'JAIN, 11 entries' },
+    { label: 'Territorial limit', value: 'None for online mode' },
+    { label: 'Session', value: '2026-27 July, UGC-DEB register' },
+  ],
   'online-computer-science-degree-india': [
     { label: 'Online BCA / MCA', value: 'Allowed from an entitled university', green: true },
     { label: 'Online B.Tech CSE', value: 'Not allowed (engineering prohibited)' },

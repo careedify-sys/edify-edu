@@ -220,3 +220,48 @@ Decision needed from Rishi: which single URL owns "{uni} online mba fees" (hub o
 ## Next gap after the review decision: portal admission guides (parked 28 Oct)
 Admission intent only, no login pages: lpu online admission 590, amity online admission 260, amity online portal 210 (only the admission side), cu online admission 210, nmims online portal 170 (admission side) ≈ 1,400/mo. Read each official admission page first; same pattern as the Amity/LPU portal posts. Do not target "amity online login" (33,100) or "srm online portal" (1,900).
 - 2026-10-28 · Rishi decided: the review blog owns "{uni} online mba" and "{uni} online mba fees"; hubs own BBA/BCA/MCA fee searches. Applied to 22 MBA pairs on branch seo/review-blog-owns-mba-fees (not merged). See FIX-LOG 2026-10-28. Open for Rishi: DY Patil review mapping, Chandigarh and Shoolini review fee bodies.
+
+---
+
+## Queue round 3 (re-triaged 2 Nov 2026)
+
+Re-read all 378 non-university, non-open-university export rows against the live inventory on 2 Nov 2026:
+239 blog slugs in lib/blog.ts at the start (245 after this batch), 143 universities, the /programs hubs and
+spec pages in valid-urls.json, 8 guides, /compare pairs and /online-dba (9 pages). Most remaining rows are
+Bucket A (a hub, spec page or post already targets them). University-specific rows are all navigational,
+portal or fee rows (Bucket A) or institutions outside lib/data.ts (Bucket D); no new page there.
+
+Source for every item below: the UGC-DEB HEI programme register (deb.ugc.ac.in/Home/HEI_Prog_List, 14,036 rows
+with year, session and mode, read 2 Nov 2026) and the UGC ODL and Online Regulations, 2020 (deb.ugc.ac.in/pdf/20200906.pdf).
+
+| # | Page | Target URL | Keywords (monthly) | Why it is a real gap | Status |
+|---|---|---|---|---|---|
+| 12 | What is online education (UGC definition) + online vs distance | `/blog/what-is-online-education-india` | online education 4,400; online study 1,300; online college classes/courses 960; online education classes/courses 780; describe/current online education system 710; online distance learning 720; online distance education 590; distance learning education online 480; difference between online and distance 420; define online education 320; online mode 320; what is online education 260; introduction of online education 170 ≈ **11,400** | No page defined the mode. Online-vs-distance folded in here, not a separate post: the MBA-specific comparison pages already exist and would compete | SHIPPED (batch 3) |
+| 13 | Online public policy (+ public administration) | `/blog/online-public-policy-courses-india` | online public policy courses in india 390; public policy courses online 320; online master's degree public policy 260; online masters in public policy 260; masters in public administration online 210 ≈ **1,440** | No page. Register: online MA public policy at Amity and JAIN only (3 sessions running) | SHIPPED (batch 3) |
+| 14 | Online library science (BLISc / MLISc) | `/blog/online-library-science-course-india` | librarian course online 260; library science online course 210; library science classes online 210 ≈ **680** | No page. Register: 3 online BLISc, 7 online MLISc, 38 ODL institutions | SHIPPED (batch 3) |
+| 15 | Online degree courses in Kerala | `/blog/online-degree-courses-kerala` | online degree courses in kerala 480 | Only an MBA-specific Kerala post existed. MG 13, Calicut 10 (moved from ODL to online in 2026-27), Kerala 4; SGOU ODL only | SHIPPED (batch 3) |
+| 16 | Online degree courses in Bangalore | `/blog/online-degree-courses-bangalore` | online degree courses bangalore 110; online degree courses in bangalore 110 ≈ **220** | Only MBA-specific Bangalore posts existed. 6 Bengaluru universities, 47 entries; Karnataka 15 / 110 | SHIPPED (batch 3) |
+| 17 | Online degree courses in Tamil Nadu | `/blog/online-degree-courses-tamil-nadu` | online degree courses in tamilnadu 210 | Only MBA-specific TN posts existed. 24 universities, 147 entries | SHIPPED (batch 3) |
+
+### Not written, with the reason
+| Rows (monthly) | Status | Reason |
+|---|---|---|
+| affordable online university 1,300; affordable online degrees 1,300; cheapest online degree in india 140 | BLOCKED (needs Rishi / fee data) | A "cheapest/affordable" page needs a fee ranking, and 63 of 125 fee rows are placeholder ranges (memory: never derive fee superlatives). Unblocks when the cross-programme fee set is verified |
+| online dca course 720 | COVERED, no new page | No HEI is entitled for an online DCA in 2026-27 (only 2 ODL PGDCA). Reg 24 lets an entitled university run certificates/diplomas without a register row; `/blog/online-diploma-courses-india` already answers this. Other DCA awarding bodies are not approved sources |
+| msc finance online 590 | BLOCKED (no programme exists) | No MSc Finance in any mode on the 2026-27 register; the honest answer is "M.Com Finance instead", which the M.Com hub already serves |
+| online masters in ai 390; masters in artificial intelligence online 260 | COVERED | `/blog/online-computer-science-degree-india` has an AI/ML section; a separate post would compete. Register: 4 online PG entries (VTU MCA AI&DS, Amity PGD ML&AI, Christ MSc AI&ML, Dr MGR MSc DS&AI) if Rishi wants it split out |
+| bms online 210 | BLOCKED (no programme exists) | No online BMS on the 2026-27 register (8 ODL rows only) |
+| online courses for housewives 260 | COVERED | `/blog/online-bachelors-ug-courses-india` and `/blog/best-online-mba-for-women-india-2026`; no sourced angle beyond eligibility |
+| online mba in dubai 210; online mba from foreign university 110 | SKIPPED | Foreign degrees outside UGC-DEB; `/blog/mba-international-online-global-programs-2026` exists |
+| naturopathy, foreign language, automotive/civil engineering online, PMP, Six Sigma, CFA/CMA/ACCA/FRM/CPA | OUT OF SCOPE | Bucket E / prohibited (engineering), as before |
+
+### Data finding for Rishi (2 Nov, not fixed: this session is new content only)
+The site serves `/universities/{id}/ma/public-administration` for 18 universities (Banasthali, Bangalore University,
+Dayalbagh, DDU Gorakhpur, DAVV, GGSIPU, GJU, Jamia Hamdard, JNU, KIIT, MKU, MDU, MJPRU, Meenakshi, Mody, SAGE,
+Jammu, Mumbai). The 2026-27 register lists an ONLINE MA Public Administration at only 7 universities (AMU, Assam Don
+Bosco, Bharathidasan, Jamia Millia, MDU, Mangalayatan, Madras). Of the 18, only MDU matches. Same class as the
+spec-slug "needs-portal" rows; worth a register sweep of all MA spec pages before the next GSC read.
+Also: REVA University is listed in the 2026-27 register for an online MBA (6 rows) and online BBA/BCA/MCA, which
+conflicts with memory `project_mode_unverified_gate` (REVA noindexed after saying it has no online MBA).
+
+- 2026-11-02 · #12-#17 · batch 3 (6 posts, ≈14,400/mo) · inbound links added as new sentences in how-online-degree-exams-work-india, ugc-deb-id-explained (→#12), online-masters-pg-courses-india (→#13), ugc-deb-approved-universities-list-2026 (→#14), distance-mba-kerala-programs-2026 (→#15), online-mba-tamil-nadu-2026 (→#17), distance-mba-bangalore-2026 (→#16). No rupee figure in any new post.
