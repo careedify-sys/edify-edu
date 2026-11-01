@@ -66,6 +66,19 @@ const STATIC_URLS = [
   '/compare/sharda-vs-galgotias-bba',
   '/compare/amity-vs-lpu-bca',
   '/compare/ignou-vs-lpu',
+
+  // Added 2026-11-02. The Online DBA section: pillar, two topic pages and one
+  // page per programme in data/dba-programmes.ts. Keep this block equal to
+  // that file's slugs when a programme is added or removed.
+  '/online-dba',
+  '/online-dba/dba-vs-phd',
+  '/online-dba/dba-fees',
+  '/online-dba/golden-gate-university-dba',
+  '/online-dba/rushford-business-school-dba',
+  '/online-dba/ssbm-executive-dba',
+  '/online-dba/esgci-dba',
+  '/online-dba/eimt-dba',
+  '/online-dba/birchwood-university-dba',
 ]
 
 module.exports = { STATIC_URLS }

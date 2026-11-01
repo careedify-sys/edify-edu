@@ -357,12 +357,13 @@ export default function Navbar() {
                 { label: 'Compare', href: '/compare' },
                 { label: 'Fees', href: '/fees' },
                 { label: 'Guides', href: '/guides' },
+                { label: 'Online DBA', href: '/online-dba' },
                 { label: 'Verify', href: '/verify' },
               ].map(item => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="px-3 py-2 rounded-lg text-sm font-semibold text-ink hover:bg-surface-2 transition-colors no-underline"
+                  className="px-3 py-2 rounded-lg text-sm font-semibold text-ink hover:bg-surface-2 transition-colors no-underline whitespace-nowrap"
                 >
                   {item.label}
                 </Link>
@@ -495,6 +496,7 @@ export default function Navbar() {
                 { label: 'Compare Programs', href: '/compare' },
                 { label: 'Fee Comparison', href: '/fees' },
                 { label: 'Guides', href: '/guides' },
+                { label: 'Online DBA', href: '/online-dba' },
                 { label: 'Verify University', href: '/verify' },
               ].map(item => (
                 <Link key={item.href} href={item.href} className="mob-link"

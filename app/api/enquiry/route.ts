@@ -189,7 +189,11 @@ export async function POST(req: NextRequest) {
       const hasUniversity = universityValue !== 'Not specified'
       const wa = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '917061285806'
 
-      const matchedUni = hasUniversity ? matchUniversity(universityValue) : null
+      // DBA providers are foreign and are not in lib/data.ts, so a fuzzy match
+      // can only be wrong: "Rushford Business School" matched Bangalore
+      // University and would have mailed its NAAC grade to a DBA lead.
+      const isDba = programValue === 'DBA'
+      const matchedUni = hasUniversity && !isDba ? matchUniversity(universityValue) : null
       const uniDisplayName = matchedUni ? matchedUni.name.replace(/\s*Online\s*$/i, '') : null
 
       const programAsType = hasProgram ? programValue as Program : null
@@ -213,13 +217,19 @@ export async function POST(req: NextRequest) {
       const programSlug = hasProgram ? programValue.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') : ''
       let compareLink = 'https://edifyedu.in/universities'
       let compareLinkText = 'Compare all universities we track'
-      if (hasProgram) {
+      if (isDba) {
+        // There is no /programs/dba hub; the DBA section lives at /online-dba.
+        compareLink = 'https://edifyedu.in/online-dba'
+        compareLinkText = 'Compare all six online DBA programmes'
+      } else if (hasProgram) {
         compareLink = `https://edifyedu.in/programs/${programSlug}`
         compareLinkText = `Compare ${escHtml(programValue)} programs across universities`
       }
 
       let subjectLine: string
-      if (hasUniversity && hasProgram) {
+      if (isDba) {
+        subjectLine = 'Your free DBA Shortlist and Validity Check: what happens next'
+      } else if (hasUniversity && hasProgram) {
         subjectLine = `${uniDisplayName || universityValue} ${programValue} — verified details and next steps`
       } else if (hasProgram) {
         subjectLine = `Your ${programValue} enquiry — what happens next`
@@ -263,8 +273,7 @@ export async function POST(req: NextRequest) {
         text: [
           `Hi ${firstName},`,
           '',
-          `Here's what you asked about, checked against official records:`,
-          '',
+          ...(isDba ? [] : [`Here's what you asked about, checked against official records:`, '']),
           ...textDataLines,
           `Fee structures change with every admission cycle, so our representative will confirm the current fee with you directly, including the charges that are easy to miss.`,
           '',
@@ -301,7 +310,7 @@ export async function POST(req: NextRequest) {
 
           `<p style="margin:0 0 16px">Hi ${escHtml(firstName)},</p>`,
 
-          `<p style="margin:0 0 20px">Here's what you asked about, checked against official records:</p>`,
+          isDba ? '' : `<p style="margin:0 0 20px">Here's what you asked about, checked against official records:</p>`,
 
           htmlDataBlock,
 

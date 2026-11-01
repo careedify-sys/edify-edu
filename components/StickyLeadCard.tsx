@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useId } from 'react'
 import { CheckCircle, Loader2, Phone, User, Mail, MapPin } from 'lucide-react'
 
-const PROGRAMS = ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'B.Com', 'MA', 'M.Com', 'MSc', 'Not sure yet']
+const PROGRAMS = ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'B.Com', 'MA', 'M.Com', 'MSc', 'DBA', 'Not sure yet']
 
 const STATES = [
   'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chhattisgarh',

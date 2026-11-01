@@ -23485,7 +23485,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>PhD vs doctorate: is there a difference?</h2>
 <p>People use these terms interchangeably, and mostly that is fine. But technically, a doctorate is the category. A PhD is the most common type of doctoral degree. Other doctorates exist:</p>
 <ul>
-<li>DBA, Doctor of Business Administration. More applied, less theoretical. Suited for working professionals in management.</li>
+<li>DBA, Doctor of Business Administration. More applied, less theoretical. Suited for working professionals in management. See <a href="/online-dba">what an online DBA is and whether it counts in India</a>.</li>
 <li>EdD, Doctor of Education. Used in some countries for education practitioners.</li>
 <li>MD, Doctor of Medicine. In India, this is a postgraduate medical specialization, separate from the PhD system.</li>
 </ul>
@@ -48832,6 +48832,8 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <div class="callout-warning">
 <strong>If an Indian employer or university must accept your doctorate, ask before you enrol.</strong> Find out whether they need a UGC equivalence certificate, and apply for one through the UGC equivalence portal only after you finish. Nobody can promise the outcome in advance, because the committee decides each case.
 </div>
+
+<p>We compare six online DBAs on fees, eligibility, refund terms and the franchise question on our <a href="/online-dba">Online DBA page</a>.</p>
 
 <h2>How to spot an "online PhD" that will not hold up</h2>
 

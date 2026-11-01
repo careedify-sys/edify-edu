@@ -24,7 +24,7 @@ interface EnquiryModalProps {
   onSuccess?: () => void
 }
 
-const PROGRAMS = ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'B.Com', 'MA', 'M.Com', 'MSc', 'BSc', 'Not sure yet']
+const PROGRAMS = ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'B.Com', 'MA', 'M.Com', 'MSc', 'BSc', 'DBA', 'Not sure yet']
 
 type Step = 'form' | 'submitting' | 'success' | 'error'
 

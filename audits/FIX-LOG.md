@@ -1,5 +1,20 @@
 # Fix log
 
+## 2026-11-02 · Online DBA section, and a confirmation email that would have mis-sent facts
+
+- **Built:** /online-dba (pillar), /online-dba/dba-vs-phd, /online-dba/dba-fees and six programme pages, all read from
+  data/dba-programmes.ts. Pages read `getPublicDbaProgrammes()`, which nulls fees while `feeConfirmed` is false and the
+  location while `locationConfirmed` is false, so Rushford and SSBM fees never reach a page, title, schema or JS bundle.
+  The finder is a client component and gets prepared props only, because importing the data module there would ship
+  the held-back fees to every browser.
+- **Fixed in /api/enquiry:** the lead confirmation email fuzzy-matches the `university` field against lib/data.ts. Run
+  against the six DBA providers, "Rushford Business School" matched Bangalore University (the abbreviation test hits
+  "bu" inside "business"), so a Rushford lead would have received Bangalore University's NAAC and NIRF facts. DBA
+  leads now skip the match. The email also linked every program to /programs/{program}, a 404 for DBA; it now links
+  /online-dba.
+- **Not built, and why:** the /leads CRM has no program dropdown. `PROG_KEYS` in LeadsClient.tsx is declared and never
+  read; DBA was added to it so a future dropdown inherits it. app/admin is out of scope (CMS not in use).
+
 ## 2026-10-30 · Hidden hubs, round 2: 96 to 80, and rule 4d made a ratchet
 
 - **Unlocked (16), each from the university's own portal on 30 Oct:** PP Savani BBA, M.Com, MSc (CDOE fee table on

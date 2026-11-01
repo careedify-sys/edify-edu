@@ -92,6 +92,7 @@ export default function Footer() {
             ].map(p => (
               <Link key={p.slug} href={`/programs/${p.slug}`} className="footer-link">Online {p.label}</Link>
             ))}
+            <Link href="/online-dba" className="footer-link">Online DBA</Link>
           </div>
 
           {/* Guides + Tools */}

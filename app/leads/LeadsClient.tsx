@@ -204,7 +204,7 @@ type Props = {
   progUnisIndex: Record<string, ProgUni[]>;
 };
 
-const PROG_KEYS: string[] = ['MBA','MCA','BBA','BCA','BA','B.Com','M.Com','MA','MSc','BSc'];
+const PROG_KEYS: string[] = ['MBA','MCA','BBA','BCA','BA','B.Com','M.Com','MA','MSc','BSc','DBA'];
 
 export default function LeadsClient({ initialLeads, initialActivity, progUnisIndex }: Props) {
   const [leads, setLeads] = useState<Lead[]>(initialLeads);
