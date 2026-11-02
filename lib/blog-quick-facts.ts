@@ -3,6 +3,27 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'online-msc-statistics-india': [
+    { label: 'Online MSc statistics 2026-27', value: '5 programmes', green: true },
+    { label: 'Includes', value: 'Applied Statistics, Biostatistics' },
+    { label: 'Online three sessions running', value: '4 of 5' },
+    { label: 'Distance (ODL) MSc Statistics', value: '6 institutions' },
+    { label: 'Check', value: 'deb.ugc.ac.in HEI programme list' },
+  ],
+  'online-bfa-course-india': [
+    { label: 'Online BFA or MFA, 2024-27', value: 'None on the register', green: true },
+    { label: 'Distance BFA', value: 'Yogi Vemana, Annamalai' },
+    { label: 'Distance MFA', value: 'Annamalai, IGNOU (Painting)' },
+    { label: 'Online creative MAs', value: 'MG University, 3 programmes' },
+    { label: 'Rule', value: 'Reg 4(C)(ii), UGC 2020 Regs' },
+  ],
+  'one-year-online-degree-india': [
+    { label: 'UG degree duration', value: '3 or 4 years, clause 11.0', green: true },
+    { label: 'Online duration', value: 'Same as campus, Reg 13(A)(4)' },
+    { label: 'Fastest 3-year degree', value: '5 semesters (ADP)' },
+    { label: 'After one year', value: 'UG certificate, not a degree' },
+    { label: '1-year master\'s', value: 'After a 4-year Honours degree' },
+  ],
   'what-is-online-education-india': [
     { label: 'Definition', value: 'UGC 2020 Regs, Regulation 2(u)', green: true },
     { label: 'Exams', value: 'Online test or proctored, Reg 15(C)' },

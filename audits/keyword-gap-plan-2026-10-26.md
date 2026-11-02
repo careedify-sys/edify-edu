@@ -265,3 +265,17 @@ Also: REVA University is listed in the 2026-27 register for an online MBA (6 row
 conflicts with memory `project_mode_unverified_gate` (REVA noindexed after saying it has no online MBA).
 
 - 2026-11-02 · #12-#17 · batch 3 (6 posts, ≈14,400/mo) · inbound links added as new sentences in how-online-degree-exams-work-india, ugc-deb-id-explained (→#12), online-masters-pg-courses-india (→#13), ugc-deb-approved-universities-list-2026 (→#14), distance-mba-kerala-programs-2026 (→#15), online-mba-tamil-nadu-2026 (→#17), distance-mba-bangalore-2026 (→#16). No rupee figure in any new post.
+
+## Queue round 4 (re-triaged 3 Nov 2026)
+
+Remaining non-university rows checked against the live inventory and the /programs spec hubs. MA English/Economics/Sociology/Political Science/Education and MSc Mathematics rows are Bucket A: /programs/ma/{spec} and /programs/msc/mathematics already target them, so no blog was written (it would compete). Sources: UGC-DEB HEI register (read 2 Nov 2026), UGC ODL and Online Regulations 2020, UGC UG and PG Regulations 2025 (Gazette 2 Apr 2025, ugc.gov.in).
+
+| # | Page | Target URL | Keywords (monthly) | Why it is a real gap | Status |
+|---|---|---|---|---|---|
+| 18 | Online MSc Statistics | `/blog/online-msc-statistics-india` | msc statistics online 260; online masters in statistics 210 ≈ **470** | No statistics page; only /programs/msc/biostatistics. Register: 5 online (Banasthali, Dr MGR, MG University, Symbiosis Applied Stats, MAHE Biostats), 6 ODL | SHIPPED (batch 4) |
+| 19 | Online BFA | `/blog/online-bfa-course-india` | bachelor of fine arts degree online 260; bfa online course 210; online bfa degree 210 ≈ **680** | No page. Register: zero online BFA/MFA in 2024-25, 2025-26, 2026-27; ODL at Yogi Vemana, Annamalai, IGNOU MFA; MG University online MA Animation/Graphic Design/Multimedia | SHIPPED (batch 4) |
+| 20 | One-year online degree | `/blog/one-year-online-degree-india` | online ba degree in one year 480; 1 year bachelor degree online 320 ≈ **800** | No page. UG/PG Regs 2025 cl. 11.0, 11.1, 11.5, Annex I (ADP); 2020 Regs 13(A)(2),(4) | SHIPPED (batch 4) |
+
+Still not written after round 4: msc maths online 880 + msc mathematics online 590 (Bucket A: hub lists 9 of the 29 register universities; widening the hub is an improve task for Rishi), online pgdm (online-pgdm-india exists), online ms courses/ms degree (foreign MS intent, SKIPPED), online doctoral programs 320 (DBA section exists; PhD is a parked validity explainer), online course with placement 210 (online-mba-with-placement-india-2026 exists). The non-university queue is now exhausted; the next real growth is Bucket A improvement, not new posts.
+
+- 2026-11-03 · #18-#20 · batch 4 (3 posts, ≈1,950/mo) · inbound sentences in online-computer-science-degree-india (→#18), career-after-12th-arts-courses-jobs-2026 (→#19), online-bachelors-ug-courses-india and ugc-two-degrees-simultaneously-rules (→#20). No rupee figure in any new post.
