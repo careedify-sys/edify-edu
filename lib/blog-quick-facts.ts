@@ -3,6 +3,27 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'amity-online-admission-guide': [
+    { label: 'Where to apply', value: 'Apply Now on amityonline.com', green: true },
+    { label: 'Session shown', value: 'January 2027' },
+    { label: 'Steps', value: 'Form, documents and fee, enrolment' },
+    { label: 'Eligibility', value: 'Class 12 for UG, degree for PG' },
+    { label: 'Register entries 2026-27', value: 'Amity UP 18, Amity Rajasthan 9' },
+  ],
+  'christ-online-admission-guide': [
+    { label: 'Where to apply', value: 'online.christuniversity.in', green: true },
+    { label: 'Batch shown', value: 'February 2027' },
+    { label: 'Entrance test', value: 'None; Zoom interview' },
+    { label: 'Fee paid', value: 'After selection' },
+    { label: 'UGC-entitled online, 2026-27', value: '9 programmes' },
+  ],
+  'chandigarh-university-online-admission-guide': [
+    { label: 'Where to apply', value: 'apply.onlinecu.in', green: true },
+    { label: 'Steps', value: 'Register, form and fee, documents' },
+    { label: 'Admission status', value: 'Provisional until verified' },
+    { label: 'Eligibility', value: 'Class 12 for UG, degree for PG' },
+    { label: 'UGC-entitled online, 2026-27', value: '10 programmes' },
+  ],
   'srm-online-admission-guide': [
     { label: 'Admission portal', value: 'admissions.srmonline.in', green: true },
     { label: 'Session shown', value: 'January 2027' },

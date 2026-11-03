@@ -23438,6 +23438,8 @@ export const BLOG_POSTS: BlogPost[] = [
 <p style="margin:8px 0 0;font-size:13px;color:#065f46">This ROI only applies if you complete the degree AND actively network for new roles. Passive degree-holders see minimal ROI.</p>
 </div>
 
+<p>Ready to apply? Our <a href="/blog/amity-online-admission-guide">Amity Online admission guide</a> sets out the application steps and the documents Amity asks for.</p>
+
 <div class="il-grid">
   <a class="il-card" href="/universities/amity-university-online">Amity University Online  -- Full Profile & Syllabus</a>
   <a class="il-card" href="/blog/mba-fees-india-complete-guide-2026">Online MBA Fee Comparison India 2026</a>
@@ -46553,6 +46555,8 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 
 <p style="font-size:13px;color:#64748b;margin:24px 0 20px"><em>Last updated 9 August 2026 by Rishi Kumar, Founder, EdifyEdu. Credential status cross-checked against ugc.gov.in, deb.ugc.ac.in, naac.gov.in, and nirfindia.org. Fee data confirmed with Chandigarh University Online admissions for the 2026-27 intake and cross-checked against the onlinecu.in portal. If any figure in this article differs from what Chandigarh University Online confirms in writing on your offer letter, treat the offer letter as authoritative and let us know so we can update the page.</em></p>
 
+<p>Ready to apply? Our <a href="/blog/chandigarh-university-online-admission-guide">CU Online admission guide</a> explains the four steps and why every admission stays provisional until verification.</p>
+
 <div class="internal-links">
   <div class="il-grid">
     <a href="/universities/chandigarh-university-online" class="il-card"><div class="il-uni">CUO</div><div class="il-title">Chandigarh University Online</div><div class="il-sub">Full programme lineup</div></a>
@@ -49875,6 +49879,8 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 
 <p>For the programme itself, see our <a href="/universities/amity-university-online">Amity University Online page</a> and the <a href="/blog/amity-online-mba-review-2026">Amity Online MBA review</a>.</p>
 
+<p>Not enrolled yet? Amigo opens only after admission. Our <a href="/blog/amity-online-admission-guide">Amity Online admission guide</a> covers the three steps, the documents and which Amity campus awards the degree.</p>
+
 <div class="cta-box">
 <p><strong>Comparing Amity with another university?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities</a> or <a href="/contact">ask us</a>.</p>
 </div>
@@ -51001,6 +51007,8 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 
 <p>Our step-by-step guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> walks through each field of the register.</p>
 
+<p>Applying to Christ? Our <a href="/blog/christ-online-admission-guide">Christ University online application guide</a> explains the Zoom interview that replaces an entrance test.</p>
+
 <div class="cta-box">
 <p><strong>Deciding between JAIN, Christ and the rest?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities side by side</a>.</p>
 </div>
@@ -51623,6 +51631,336 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 </ul>
 
 <p class="disclaimer"><em>Checked against LPU Online's official pages and the UGC-DEB register on 4 November 2026. Admission steps, dates and fees can change each session. Confirm them on lpuonline.com before you apply.</em></p>
+    `,
+  },
+  {
+    slug: 'amity-online-admission-guide',
+    title: 'Amity Online Admission 2027: Steps, Eligibility and Documents',
+    seoTitle: 'Amity Online Admission 2027: Steps, Eligibility, Documents',
+    h1Title: 'Amity Online Admission Guide: How to Apply for the January 2027 Session',
+    metaDescription: 'How Amity Online admission works: the three steps, UG and PG eligibility, the documents to keep ready and which Amity campus awards your degree.',
+    category: 'Online Degree Validity',
+    tags: ['Amity Online Admission', 'Amity Online Application', 'Amity University Online', 'Amity Online MBA', 'Online Admission', 'UGC-DEB'],
+    publishedAt: '2026-11-04',
+    readTime: 6,
+    targetKeyword: 'amity online admission',
+    relatedUniversities: ['amity-university-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/8199228/pexels-photo-8199228.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@yankrukov" target="_blank" rel="noopener nofollow">Yan Krukau</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'A group of college students sitting on stairs, studying and socializing indoors.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'How do I apply for Amity Online admission?', a: 'Amity Online lists three steps on amityonline.com: select your programme and complete the online application form; upload the required documents and pay the registration fee; and, once accepted, confirm your enrolment by paying the programme fee.' },
+      { q: 'What is the eligibility for Amity Online?', a: 'Amity Online says undergraduate programmes need Class 12 and postgraduate programmes need a bachelor\'s degree. It adds that some programmes may require additional eligibility tests, so check the programme page before you apply.' },
+      { q: 'Which documents does Amity Online need?', a: 'For domestic students, Amity Online lists certificates from Class 10, Class 12 and graduation, consolidated graduation marksheets and a government ID such as Aadhaar, PAN or passport. International students need O Level and A Level certificates or equivalents, a bachelor\'s degree with marksheets and a passport copy.' },
+      { q: 'Which session is Amity Online admitting for?', a: 'On 4 November 2026 amityonline.com showed admissions open for the January 2027 session.' },
+      { q: 'Which Amity campus awards the online degree?', a: 'The UGC-DEB register lists online programmes under two Amity universities for 2026-27: Amity University, Uttar Pradesh, with 18 entries, and Amity University, Rajasthan, with 9. Check which one your offer letter names, and confirm that exact programme in the register.' },
+      { q: 'Is the Amity Online student portal the same as the admission portal?', a: 'No. Amigo is the student portal you use after enrolment. Admission starts from the Apply Now button on amityonline.com.' },
+    ],
+    ctaTitle: 'Comparing Amity with other online universities?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">Amity Online keeps its admission process short: three steps on amityonline.com. The detail that trips people up is not the form but the campus: two different Amity universities hold online entitlements. This guide covers both, from Amity Online's own pages and the UGC-DEB register.</p>
+
+<p><strong>Short answer:</strong> you apply from the <strong>Apply Now</strong> button on <strong>amityonline.com</strong>. You fill in the application, <strong>upload documents and pay the registration fee</strong>, and after acceptance you <strong>confirm enrolment by paying the programme fee</strong>. On 4 November 2026 the site showed admissions open for the <strong>January 2027 session</strong>.</p>
+
+<div class="callout-key">
+<strong>Amity Online admission in one box (checked 4 November 2026)</strong>
+<ul>
+<li><strong>Where to apply:</strong> Apply Now on amityonline.com</li>
+<li><strong>Session shown:</strong> January 2027</li>
+<li><strong>Steps:</strong> application form, documents and registration fee, programme fee after acceptance</li>
+<li><strong>Eligibility:</strong> Class 12 for UG, a bachelor's degree for PG; some programmes add eligibility tests</li>
+<li><strong>Register entries, 2026-27:</strong> Amity University, Uttar Pradesh (18) and Amity University, Rajasthan (9)</li>
+</ul>
+</div>
+
+<h2>How does Amity Online admission work?</h2>
+
+<p>Amity Online's FAQ on amityonline.com sets out three steps:</p>
+
+<ol>
+<li><strong>Select your programme</strong> and complete the online application form.</li>
+<li><strong>Upload the required documents</strong> and pay the registration fee.</li>
+<li><strong>Confirm your enrolment</strong> by paying the programme fee once your application is accepted.</li>
+</ol>
+
+<p>The FAQ says the admissions team, and an AI assistant on the site, help at each step. Create your DEB ID on the UGC-DEB portal before you enrol. Our explainer on <a href="/blog/ugc-deb-id-explained">the UGC-DEB ID</a> shows how.</p>
+
+<p class="pull">Acceptance comes before the programme fee. Do not pay the full fee until Amity has confirmed in writing that your application is accepted.</p>
+
+<h2>Who is eligible for Amity Online?</h2>
+
+<p>Amity Online's FAQ says requirements vary by programme:</p>
+
+<ul>
+<li><strong>Undergraduate programmes:</strong> completion of Class 12.</li>
+<li><strong>Postgraduate programmes:</strong> a bachelor's degree.</li>
+<li><strong>Additional tests:</strong> some programmes may require an eligibility test.</li>
+</ul>
+
+<p>Minimum marks and subject requirements sit on each programme page, so check the one you want before you apply. For the general rules that apply at every university, see our guide to the <a href="/blog/online-degree-admission-process-india">online degree admission process in India</a>.</p>
+
+<h2>Which documents should you keep ready?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159283/pexels-photo-9159283.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Woman studying from home on her laptop near a bright window." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+<table>
+<thead><tr><th>Applicant</th><th>Documents Amity Online lists</th></tr></thead>
+<tbody>
+<tr><td>Domestic</td><td>Certificates from Class 10, Class 12 and graduation; consolidated graduation marksheets; a government ID such as Aadhaar, PAN or passport</td></tr>
+<tr><td>International</td><td>O Level and A Level certificates or equivalents; bachelor's degree certificate with consolidated marksheets; passport copy (mandatory)</td></tr>
+</tbody>
+</table>
+
+<h2>Which Amity university awards your online degree?</h2>
+
+<p>The UGC-DEB HEI programme register lists online programmes under two separate Amity universities for the 2026-27 July session. Both are private universities.</p>
+
+<ul>
+<li><strong>Amity University, Uttar Pradesh:</strong> 18 entries, including the MBA, MCA, M.Com, MA in English, Economics, Journalism and Mass Communication and Public Policy and Governance, MSW, BBA, BCA, B.Com, BA, BA (Journalism and Mass Communication), BSW and four PG diplomas.</li>
+<li><strong>Amity University, Rajasthan:</strong> 9 entries, including the MBA, MCA, MSc Mathematics, MSc Data Science, MA English, MA (Journalism and Mass Communication), BBA, BCA and B.Com (Hons).</li>
+</ul>
+
+<div class="callout-warning">
+<strong>Match the campus to the register.</strong> Your offer letter names the university that awards the degree. Search for that exact university and programme in the UGC-DEB register, with the session and the Online mode, before you pay the programme fee.
+</div>
+
+<p>Under Regulation 22 of the UGC ODL and Online Regulations, 2020, an entitled online degree is equivalent to the campus degree. Our guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> shows how to search the register.</p>
+
+<h2>What happens after you enrol?</h2>
+
+<p>After enrolment you use Amigo, Amity's student portal, for classes, study material and exams. Our guide to the <a href="/blog/amity-online-student-portal-login">Amity Online student portal and Amigo login</a> covers it. Fees change each session, and on 4 November 2026 the site advertised a scholarship on the first-semester fee. Check the current fee and the scholarship terms on amityonline.com, and keep the written schedule with your receipt. Our guide to the <a href="/blog/ugc-fee-refund-policy">UGC fee refund policy</a> explains what you can claim back if you withdraw.</p>
+
+<p>If you are choosing the MBA, our <a href="/blog/amity-online-mba-review-2026">Amity online MBA review</a> covers the programme in depth, and our <a href="/universities/amity-university-online">Amity Online university page</a> brings together the data we hold.</p>
+
+<div class="cta-box">
+<p><strong>Weighing Amity against other online universities?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities side by side</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>Amity University Online: amityonline.com home page FAQ (admission process, eligibility, documents) and session banner, read on 4 November 2026</li>
+<li>UGC-DEB HEI programme register (HEI_Prog_List), entries for Amity University (Uttar Pradesh and Rajasthan) for 2026-27, read on 2 November 2026: deb.ugc.ac.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulation 22: deb.ugc.ac.in/Regulations</li>
+</ul>
+
+<p class="disclaimer"><em>Checked against Amity Online's official pages and the UGC-DEB register on 4 November 2026. Admission steps, dates and fees can change each session. Confirm them on amityonline.com before you apply.</em></p>
+    `,
+  },
+  {
+    slug: 'christ-online-admission-guide',
+    title: 'Christ University Online Application 2027: Steps and Interview',
+    seoTitle: 'Christ University Online Application 2027: Steps, Interview',
+    h1Title: 'Christ University Online Application Guide: Steps, Interview and Documents for the February 2027 Batch',
+    metaDescription: 'How to apply to CHRIST Online: the seven steps, the Zoom interview that replaces an entrance test, documents, exams and the 9 UGC-entitled programmes.',
+    category: 'Online Degree Validity',
+    tags: ['Christ University Online Application', 'Christ Online Admission', 'CHRIST Online', 'Christ University Online', 'Online Admission', 'UGC-DEB'],
+    publishedAt: '2026-11-04',
+    readTime: 6,
+    targetKeyword: 'christ university online application',
+    relatedUniversities: ['christ-university-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/33845767/pexels-photo-33845767.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@mba-classroom-2155665220" target="_blank" rel="noopener nofollow">MBA Classroom</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Three students studying in a library, focused on their books.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'How do I apply to Christ University Online?', a: 'CHRIST Online lists seven steps: choose your programme, fill out the form, eligibility check by the university, selection process, wait for enrolment details, pay the fees after selection, and receive university credentials and a welcome kit. Its FAQ adds that you upload documents and pay an application fee, then book an interview slot.' },
+      { q: 'Is there an entrance test for Christ University Online?', a: 'No. CHRIST Online\'s FAQ says there is no entrance test, but an online interview held via Zoom is part of the selection process. You receive an email asking you to book a slot.' },
+      { q: 'When do I pay the fees for Christ Online?', a: 'After selection. CHRIST Online\'s process puts fee payment at step six, after the eligibility check and the selection process.' },
+      { q: 'Which Christ online programmes are UGC-entitled?', a: 'For the 2026-27 July session, the UGC-DEB register lists nine online programmes at Christ (Deemed to be University): BBA, BCA, B.Com, MCA, M.Com, MA in Applied Economics, MA in English with Communication Studies, and MSc programmes in Data Science and in Artificial Intelligence and Machine Learning.' },
+      { q: 'How are Christ Online exams conducted?', a: 'CHRIST Online\'s FAQ says exams run online on a secure proctoring system, with continuous internal assessment worth 30% and the end-term exam 70%. You need at least 40% in each subject.' },
+      { q: 'How do I cancel a Christ Online admission?', a: 'CHRIST Online\'s FAQ says you can cancel by emailing cancellation.online@christuniversity.in, and that refunds depend on when you withdraw under its cancellation policy.' },
+    ],
+    ctaTitle: 'Comparing Christ with other online universities?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">Christ (Deemed to be University) runs its online degrees through CHRIST Online, and its admission works differently from most online universities. There is no entrance test, but there is a selection interview, and you pay the fee only after you are selected.</p>
+
+<p><strong>Short answer:</strong> you apply at <strong>online.christuniversity.in</strong>. You fill in the form, upload documents and pay the application fee, then <strong>book a slot for an online interview on Zoom</strong>. The university checks eligibility and selects candidates, and you <strong>pay the programme fee only after selection</strong>. On 4 November 2026 the site showed admissions open for the <strong>February 2027 batch</strong>.</p>
+
+<div class="callout-key">
+<strong>Christ Online application in one box (checked 4 November 2026)</strong>
+<ul>
+<li><strong>Where to apply:</strong> online.christuniversity.in</li>
+<li><strong>Batch shown:</strong> February 2027</li>
+<li><strong>Entrance test:</strong> none; an online interview on Zoom instead</li>
+<li><strong>Fee paid:</strong> after selection</li>
+<li><strong>UGC-entitled online programmes, 2026-27:</strong> 9</li>
+</ul>
+</div>
+
+<h2>What are the steps in the Christ Online application?</h2>
+
+<p>CHRIST Online sets out seven steps on its site:</p>
+
+<ol>
+<li><strong>Choose your programme.</strong></li>
+<li><strong>Fill out the form.</strong> The FAQ says you upload the required documents and pay the application fee at this stage.</li>
+<li><strong>Eligibility check</strong> by the university.</li>
+<li><strong>Selection process.</strong> You get an automated email to book an interview slot, and the date, time and meeting link appear on your student dashboard.</li>
+<li><strong>Wait for enrolment details.</strong></li>
+<li><strong>Pay the fees</strong> after selection.</li>
+<li><strong>Receive your university credentials</strong> and a welcome kit.</li>
+</ol>
+
+<p class="pull">At CHRIST Online the interview replaces the entrance test. Check your inbox and dashboard after you apply, because the slot booking arrives by email.</p>
+
+<div class="callout-warning">
+<strong>Ask for the current deadline.</strong> On 4 November 2026 the CHRIST Online FAQ still said applications close on 31 January 2026, while the banner advertised the February 2027 batch. Email onlinedegrees@christuniversity.in for the deadline that applies to your batch.
+</div>
+
+<h2>Which documents does Christ Online ask for?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+<p>The FAQ says you will typically need ID proof, academic transcripts, a passport-size photograph and any documents specific to your programme. Applicants living outside India can apply if they meet the eligibility criteria. Create your DEB ID on the UGC-DEB portal before you enrol. Our explainer on <a href="/blog/ugc-deb-id-explained">the UGC-DEB ID</a> shows how.</p>
+
+<h2>Which Christ online programmes are UGC-entitled?</h2>
+
+<p>For the 2026-27 July session, the UGC-DEB HEI programme register lists nine online programmes at Christ (Deemed to be University), a deemed university in Karnataka:</p>
+
+<table>
+<thead><tr><th>Level</th><th>Programmes (as named in the register)</th></tr></thead>
+<tbody>
+<tr><td>Undergraduate</td><td><a href="/universities/christ-university-online/bba">BBA</a>, BCA, B.Com</td></tr>
+<tr><td>Postgraduate</td><td><a href="/universities/christ-university-online/mca">MCA</a>, M.Com, MA (Applied Economics), MA (English with Communication Studies), MSc (Data Science), MSc (Artificial Intelligence and Machine Learning)</td></tr>
+</tbody>
+</table>
+
+<p>Christ does not hold an online MBA entitlement on the 2026-27 register. Under Regulation 22 of the UGC ODL and Online Regulations, 2020, an entitled online degree is equivalent to the campus degree. Our guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> shows how to search the register, and our list of <a href="/blog/online-degree-courses-bangalore">online degree courses in Bangalore</a> compares Christ with the other Bengaluru universities.</p>
+
+<h2>How do exams and fees work at Christ Online?</h2>
+
+<p>The FAQ says exams run online on a secure proctoring system, and you need a desktop or laptop with internet and a webcam. Continuous internal assessment carries 30% and the end-term exam 70%, and you need at least 40% in each subject. Certificates are usually issued within 60 days of completing the programme.</p>
+
+<p>Fees vary by programme, and the FAQ also lists a one-time admission fee and an annual examination fee. Check the current figures on each programme page and keep the written schedule with your receipt. To cancel, the FAQ says you email cancellation.online@christuniversity.in, and the refund depends on when you withdraw. Our guide to the <a href="/blog/ugc-fee-refund-policy">UGC fee refund policy</a> explains the national rules. For admission rules common to every university, see our guide to the <a href="/blog/online-degree-admission-process-india">online degree admission process</a>.</p>
+
+<div class="cta-box">
+<p><strong>Weighing Christ against other online universities?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities side by side</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>Christ (Deemed to be University), CHRIST Online: online.christuniversity.in admission process and FAQ, read on 4 November 2026</li>
+<li>UGC-DEB HEI programme register (HEI_Prog_List), entries for Christ for 2026-27, read on 2 November 2026: deb.ugc.ac.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulation 22: deb.ugc.ac.in/Regulations</li>
+</ul>
+
+<p class="disclaimer"><em>Checked against CHRIST Online's official pages and the UGC-DEB register on 4 November 2026. Admission steps, dates and fees can change each batch. Confirm them on online.christuniversity.in before you apply.</em></p>
+    `,
+  },
+  {
+    slug: 'chandigarh-university-online-admission-guide',
+    title: 'Chandigarh University Online Admission 2027: Steps and Documents',
+    seoTitle: 'CU Online Admission 2027: Steps, Documents, Eligibility',
+    h1Title: 'Chandigarh University Online Admission Guide: How to Apply on apply.onlinecu.in',
+    metaDescription: 'How CU Online admission works: the four steps on apply.onlinecu.in, eligibility, documents, why every admission is provisional, refunds and exams.',
+    category: 'Online Degree Validity',
+    tags: ['CU Online Admission', 'Chandigarh University Online Admission', 'CU Online', 'Chandigarh University Online', 'Online Admission', 'UGC-DEB'],
+    publishedAt: '2026-11-04',
+    readTime: 6,
+    targetKeyword: 'cu online admission',
+    relatedUniversities: ['chandigarh-university-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/9159384/pexels-photo-9159384.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'A woman studying on her bed using a laptop, surrounded by open books.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'How do I apply for Chandigarh University Online?', a: 'CU Online lists four steps: visit onlinecu.in and click Apply Now; register with your name, email, mobile number, programme and date of birth; fill in the application form and pay the programme fee; then upload your documents and photograph and submit. You get a confirmation by SMS and email.' },
+      { q: 'Is CU Online admission confirmed when I pay?', a: 'No. CU Online\'s admission guidelines say all admissions are provisional, and an admission stands cancelled if the full fee or the required documents are not submitted in time. Its FAQ says documents are verified and a university enrolment number is then allocated.' },
+      { q: 'What is the eligibility for CU Online?', a: 'CU Online\'s FAQ says postgraduate programmes need a bachelor\'s degree in any discipline from a recognised university, or a professional qualification such as CA or ICWA. Undergraduate programmes need Class 12 or an equivalent in any stream.' },
+      { q: 'Which documents does CU Online need?', a: 'CU Online\'s FAQ lists Aadhaar, PAN, passport or voter ID, a photograph, Class 10 and Class 12 certificates and the graduation degree, and says attested copies must be uploaded.' },
+      { q: 'Which CU Online programmes are UGC-entitled for 2026-27?', a: 'For the 2026-27 July session, the UGC-DEB register lists ten online programmes at Chandigarh University: BBA, BCA, BA (Journalism and Mass Communication), MBA, MCA, MA (Journalism and Mass Communication), MA Economics, MA English, MSc Data Science and MSc Mathematics.' },
+      { q: 'How do I withdraw from CU Online?', a: 'CU Online\'s admission guidelines say you submit a refund or withdrawal application in the prescribed format to the In-Charge, Admission Cell, within the stipulated date. Verbal requests, or requests without the original fee receipts, are not accepted.' },
+    ],
+    ctaTitle: 'Comparing CU with other online universities?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">Chandigarh University runs its online degrees through its Centre for Distance and Online Education, known as CU Online. Its admission has one feature worth knowing before you start: you pay the programme fee before you upload documents, and every admission stays provisional until verification.</p>
+
+<p><strong>Short answer:</strong> you apply at <strong>apply.onlinecu.in</strong>, linked from onlinecu.in. You <strong>register</strong>, fill in the application, <strong>pay the programme fee</strong>, then <strong>upload your documents</strong> and submit. CU Online's guidelines say <strong>all admissions are provisional</strong> until your documents are verified and an enrolment number is allocated.</p>
+
+<div class="callout-key">
+<strong>CU Online admission in one box (checked 4 November 2026)</strong>
+<ul>
+<li><strong>Where to apply:</strong> apply.onlinecu.in, from Apply Now on onlinecu.in</li>
+<li><strong>Order:</strong> register, application form, programme fee, document upload</li>
+<li><strong>Status:</strong> provisional until documents are verified</li>
+<li><strong>Eligibility:</strong> Class 12 for UG; any bachelor's degree, or CA or ICWA, for PG</li>
+<li><strong>UGC-entitled online programmes, 2026-27:</strong> 10</li>
+</ul>
+</div>
+
+<h2>What are the steps in CU Online admission?</h2>
+
+<p>CU Online's How to Apply page lists four steps:</p>
+
+<ol>
+<li><strong>Visit onlinecu.in</strong> and click Apply Now.</li>
+<li><strong>Register</strong> with your full name, email ID, mobile number, programme and date of birth. You get a user ID and password by SMS and email, and you can also log in with your registered email.</li>
+<li><strong>Fill in the application form</strong> with personal, contact and qualification details, and pay the programme fee online. The document upload option opens only after payment.</li>
+<li><strong>Upload your documents</strong> and a recent passport-size photograph, and submit. You get a confirmation on your registered phone number and email.</li>
+</ol>
+
+<p>The FAQ adds the final stages: verification of documents, then allocation of a university enrolment number. The support team then emails you to confirm admission. Create your DEB ID on the UGC-DEB portal before you enrol. Our explainer on <a href="/blog/ugc-deb-id-explained">the UGC-DEB ID</a> shows how.</p>
+
+<p class="pull">At CU Online the fee comes before the documents. Check your eligibility carefully before you pay, because the admission stays provisional until verification.</p>
+
+<div class="callout-warning">
+<strong>Provisional means it can be cancelled.</strong> CU Online's admission guidelines say an admission stands cancelled if the full fee or the required documents are not submitted within the stipulated time, and that the university can change announced dates by notice on onlinecu.in.
+</div>
+
+<h2>Who is eligible, and which documents are needed?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/8640098/pexels-photo-8640098.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Close-up of hands typing on a laptop, surrounded by notes and books." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@pavel-danilyuk" target="_blank" rel="noopener nofollow">Pavel Danilyuk</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+<ul>
+<li><strong>Postgraduate programmes:</strong> a bachelor's degree in any discipline from a recognised university, or a recognised professional qualification such as CA or ICWA.</li>
+<li><strong>Undergraduate programmes:</strong> Class 12 or an equivalent in any stream, from a recognised board, university or council.</li>
+<li><strong>Documents:</strong> Aadhaar, PAN, passport or voter ID; a photograph; Class 10 and Class 12 certificates; the graduation degree. The FAQ says attested copies must be uploaded.</li>
+</ul>
+
+<p>For the general admission rules that apply everywhere, see our guide to the <a href="/blog/online-degree-admission-process-india">online degree admission process in India</a>.</p>
+
+<h2>Which CU Online programmes are UGC-entitled?</h2>
+
+<p>For the 2026-27 July session, the UGC-DEB HEI programme register lists ten online programmes at Chandigarh University, a private university in Punjab:</p>
+
+<table>
+<thead><tr><th>Level</th><th>Programmes (as named in the register)</th></tr></thead>
+<tbody>
+<tr><td>Undergraduate</td><td>BBA, BCA, BA (Journalism and Mass Communication)</td></tr>
+<tr><td>Postgraduate</td><td><a href="/universities/chandigarh-university-online/mba">MBA</a>, MCA, MA (Journalism and Mass Communication), MA Economics, MA English, MSc Data Science, MSc Mathematics</td></tr>
+</tbody>
+</table>
+
+<p>The onlinecu.in menu shows many specialisations under these programmes. The register lists the programme, not each specialisation. Our guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> shows how to search it, and our check on <a href="/blog/is-chandigarh-university-online-fake-or-legit-2026">whether CU Online is legitimate</a> covers its approvals.</p>
+
+<h2>What happens after admission?</h2>
+
+<p>CU Online's FAQ says you get access to CU-VERSE, its learning management system, through your CUIMS account once admission is confirmed. It has one mandatory live session a week per course, and you need 75% participation in all activities. Exams are online and proctored, with the end-term exam worth 70% and internal assessment 30%. A two-year PG programme can run to a maximum of four years, and a three-year UG programme to six.</p>
+
+<p>To withdraw, the admission guidelines say you submit a refund or withdrawal application in the prescribed format to the In-Charge, Admission Cell, within the stipulated date, with the original fee receipts. Fees change each session, so check the current fee on onlinecu.in. Our guide to the <a href="/blog/ugc-fee-refund-policy">UGC fee refund policy</a> explains the national rules. If you are choosing the MBA, our <a href="/blog/chandigarh-university-online-mba-review">CU online MBA review</a> covers it in depth.</p>
+
+<div class="cta-box">
+<p><strong>Weighing CU against other online universities?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities side by side</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>Chandigarh University, Centre for Distance and Online Education: How to Apply, Admission Guideline and FAQ pages on onlinecu.in, read on 4 November 2026</li>
+<li>UGC-DEB HEI programme register (HEI_Prog_List), entries for Chandigarh University for 2026-27, read on 2 November 2026: deb.ugc.ac.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulation 22: deb.ugc.ac.in/Regulations</li>
+</ul>
+
+<p class="disclaimer"><em>Checked against CU Online's official pages and the UGC-DEB register on 4 November 2026. Admission steps, dates and fees can change each session. Confirm them on onlinecu.in before you apply.</em></p>
     `,
   },
 ]

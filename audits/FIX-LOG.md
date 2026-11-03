@@ -5206,3 +5206,9 @@ like `onlineuu.in`. The defence stays human, and is written on the field.
 **What:** new posts `/blog/srm-online-admission-guide` and `/blog/lpu-online-admission-guide`, plus one new link sentence in four related posts.
 
 **Why:** about 2,780 searches a month of admission intent ("srm online admission portal" 1,600, "lpu online admission" 590) had no page; the existing LPU and Amity portal posts target login, not admission. Every process fact comes from the university's own FAQ or admission portal read on 4 Nov 2026, and programme lists from the UGC-DEB register. No rupee figure: SRM publishes per-semester fees on its FAQ, but a new post with a fee figure fails check-blog-fees, so both posts send readers to the official fee page. The SRM site still shows a stale "Last Date of Admission 15/03/2023" beside a January 2027 banner; the post says so instead of quoting either as the deadline.
+
+## Keyword-gap batch 6: Amity, Christ and CU online admission guides (2026-11-04)
+
+**What:** new posts `/blog/amity-online-admission-guide`, `/blog/christ-online-admission-guide`, `/blog/chandigarh-university-online-admission-guide`, plus one new link sentence in four related posts.
+
+**Why:** about 1,190 searches a month of admission intent with no page; the existing Amity post covers Amigo login only. Process facts come from each university's own pages read on 4 Nov 2026 (Amity and Christ render client-side, so the text was read from the page payload); programme lists from the UGC-DEB register. The Amity post tells readers to check which of the two register-listed Amity universities (UP 18 entries, Rajasthan 9) awards their degree. No fee figures; Christ's one-time admission and exam fees are mentioned without amounts.

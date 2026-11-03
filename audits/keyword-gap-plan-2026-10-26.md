@@ -292,3 +292,15 @@ Unparked: Rishi settled the review-vs-hub question on 28 Oct, and the non-univer
 Not written in round 5, with the reason: Amrita (amrita online application portal 590 + 260): onlineamrita.com and admission.onlineamrita.com render client-side and returned no readable admission text; needs a browser read. SASTRA (≈810): online.sastra.edu did not respond and sastra.edu/onlinedodeform returned 500 on 4 Nov. Amity online admission (≈760): check whether /blog/amity-online-student-portal-login already answers the admission side before writing. Christ 260, Jain 140-170, CU 170: same pattern, next. Fee figures deliberately left out of both posts (blog fee gate); both point to the official fee page. LPU prospectus link (lpuonline.com/pdf/prospectus.pdf) returns HTML, not a PDF.
 
 - 2026-11-04 · #21-#22 · batch 5 (2 posts, ≈2,780/mo) · inbound sentences in online-degree-admission-process-india (→both), online-mba-tamil-nadu-2026 (→#21), lpu-online-lms-login and is-lpu-online-fake-or-legit-2026 (→#22).
+
+## Queue round 6: more portal admission guides (4 Nov 2026)
+
+| # | Page | Target URL | Keywords (monthly) | Source | Status |
+|---|---|---|---|---|---|
+| 23 | Amity Online admission | `/blog/amity-online-admission-guide` | amity online admission 260; amity university online admission 140; amity university online portal 140 (admission side); amity online application 110; amity university online application 110 ≈ **760** | amityonline.com FAQ (process, eligibility, documents) read from the page payload; register split UP 18 / Rajasthan 9 | SHIPPED (batch 6) |
+| 24 | Christ online application | `/blog/christ-online-admission-guide` | christ university online application 260 | online.christuniversity.in 7-step process and FAQ (Zoom interview, no entrance test, fee after selection) | SHIPPED (batch 6) |
+| 25 | CU Online admission | `/blog/chandigarh-university-online-admission-guide` | cu online admission 170 | onlinecu.in How to Apply, Admission Guideline and FAQ (fee before documents, all admissions provisional) | SHIPPED (batch 6) |
+
+Not written in round 6: Jain (jain online application 140; jain online student portal 170 is login): onlinejain.com links its admission FAQ to its own blog, not a policy page; read the programme pages before writing. Amrita and SASTRA as in round 5. Not repeated from Amity's page: its "only QS-ranked online MBA" marketing claim (memory project_tagline_120_cut). Christ's FAQ still says applications close 31 January 2026 beside a February 2027 banner; the post flags it. No fee figures in any of the three.
+
+- 2026-11-04 · #23-#25 · batch 6 (3 posts, ≈1,190/mo) · inbound sentences in amity-online-student-portal-login, amity-online-mba-review-2026 (→#23), online-degree-courses-bangalore (→#24), is-chandigarh-university-online-fake-or-legit-2026 (→#25).
