@@ -5200,3 +5200,9 @@ like `onlineuu.in`. The defence stays human, and is written on the field.
 **What:** new posts `/blog/online-msc-statistics-india`, `/blog/online-bfa-course-india`, `/blog/one-year-online-degree-india`, plus one new link sentence in four related posts.
 
 **Why:** the last non-university rows in the keyword-gap export with no page aimed at them (queue items 18-20, about 1,950 searches a month). Statistics and BFA counts come from the UGC-DEB register across three sessions; the BFA post states that no online fine arts entitlement exists rather than inventing one, and gives Reg 4(C)(ii) as the relevant rule without claiming it is UGC's stated reason. The one-year post rests on the UGC UG and PG Regulations, 2025 (clauses 6.0, 11.0-11.5, Annexure I) read from the Gazette PDF on ugc.gov.in, and Reg 13(A) of the 2020 regulations. MSc Maths and MA subject rows were left to their /programs hubs to avoid cannibalisation. No fee figure in any of the three.
+
+## Keyword-gap batch 5: SRM and LPU online admission guides (2026-11-04)
+
+**What:** new posts `/blog/srm-online-admission-guide` and `/blog/lpu-online-admission-guide`, plus one new link sentence in four related posts.
+
+**Why:** about 2,780 searches a month of admission intent ("srm online admission portal" 1,600, "lpu online admission" 590) had no page; the existing LPU and Amity portal posts target login, not admission. Every process fact comes from the university's own FAQ or admission portal read on 4 Nov 2026, and programme lists from the UGC-DEB register. No rupee figure: SRM publishes per-semester fees on its FAQ, but a new post with a fee figure fails check-blog-fees, so both posts send readers to the official fee page. The SRM site still shows a stale "Last Date of Admission 15/03/2023" beside a January 2027 banner; the post says so instead of quoting either as the deadline.

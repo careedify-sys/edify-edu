@@ -279,3 +279,16 @@ Remaining non-university rows checked against the live inventory and the /progra
 Still not written after round 4: msc maths online 880 + msc mathematics online 590 (Bucket A: hub lists 9 of the 29 register universities; widening the hub is an improve task for Rishi), online pgdm (online-pgdm-india exists), online ms courses/ms degree (foreign MS intent, SKIPPED), online doctoral programs 320 (DBA section exists; PhD is a parked validity explainer), online course with placement 210 (online-mba-with-placement-india-2026 exists). The non-university queue is now exhausted; the next real growth is Bucket A improvement, not new posts.
 
 - 2026-11-03 · #18-#20 · batch 4 (3 posts, ≈1,950/mo) · inbound sentences in online-computer-science-degree-india (→#18), career-after-12th-arts-courses-jobs-2026 (→#19), online-bachelors-ug-courses-india and ugc-two-degrees-simultaneously-rules (→#20). No rupee figure in any new post.
+
+## Queue round 5: portal admission guides (4 Nov 2026)
+
+Unparked: Rishi settled the review-vs-hub question on 28 Oct, and the non-university queue was exhausted after round 4. Admission intent only, never login. Sources: each university's own admission portal and FAQ, plus the UGC-DEB register. Aggregator pages (blacklisted) were ignored even where search returned them first.
+
+| # | Page | Target URL | Keywords (monthly) | Source | Status |
+|---|---|---|---|---|---|
+| 21 | SRM online admission | `/blog/srm-online-admission-guide` | srm online admission portal 1,600; srm online application 170; srm university online application 170; srm online admission 140 ≈ **2,080** | srmonline.in/faqs (eligibility, MBA entrance rule, refund schedule, exams) and admissions.srmonline.in | SHIPPED (batch 5) |
+| 22 | LPU Online admission | `/blog/lpu-online-admission-guide` | lpu online admission 590; lpu online application 110 ≈ **700** | admission.lpuonline.com (4 steps, documents) and lpuonline.com/faq | SHIPPED (batch 5) |
+
+Not written in round 5, with the reason: Amrita (amrita online application portal 590 + 260): onlineamrita.com and admission.onlineamrita.com render client-side and returned no readable admission text; needs a browser read. SASTRA (≈810): online.sastra.edu did not respond and sastra.edu/onlinedodeform returned 500 on 4 Nov. Amity online admission (≈760): check whether /blog/amity-online-student-portal-login already answers the admission side before writing. Christ 260, Jain 140-170, CU 170: same pattern, next. Fee figures deliberately left out of both posts (blog fee gate); both point to the official fee page. LPU prospectus link (lpuonline.com/pdf/prospectus.pdf) returns HTML, not a PDF.
+
+- 2026-11-04 · #21-#22 · batch 5 (2 posts, ≈2,780/mo) · inbound sentences in online-degree-admission-process-india (→both), online-mba-tamil-nadu-2026 (→#21), lpu-online-lms-login and is-lpu-online-fake-or-legit-2026 (→#22).

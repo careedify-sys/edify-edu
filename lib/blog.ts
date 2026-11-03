@@ -42208,6 +42208,8 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>For degrees other than the MBA, our list of <a href="/blog/online-degree-courses-tamil-nadu">online degree courses in Tamil Nadu</a> covers all 24 universities in the state with an online entitlement for 2026-27.</p>
 
+<p>Applying to SRM Institute of Science and Technology? Our <a href="/blog/srm-online-admission-guide">SRM online admission guide</a> covers the portal, the MBA entrance rule and the refund schedule from SRM's own FAQ.</p>
+
 <h2>Sources</h2>
 <ul>
 <li><a href="https://deb.ugc.ac.in" rel="noopener" target="_blank">deb.ugc.ac.in</a> for UGC-DEB entitlement verification</li>
@@ -46800,6 +46802,8 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 
 <p style="font-size:13px;color:#64748b;margin:24px 0 20px"><em>Last updated 10 August 2026 by Rishi Kumar, Founder, EdifyEdu. Credential status cross-checked against ugc.gov.in, deb.ugc.ac.in, naac.gov.in, and nirfindia.org. Fee data confirmed against EdifyEdu's LPU Online record for the 2026-27 intake. If any figure in this article differs from what LPU Online admissions confirm in writing on your offer letter, treat the offer letter as authoritative and let us know so we can update the page.</em></p>
 
+<p>Ready to apply? Our <a href="/blog/lpu-online-admission-guide">LPU Online admission guide</a> lists the documents to scan and explains provisional registration and verification.</p>
+
 <div class="internal-links">
   <div class="il-grid">
     <a href="/universities/lovely-professional-university-online" class="il-card"><div class="il-uni">LPU</div><div class="il-title">LPU Online</div><div class="il-sub">Full programme lineup</div></a>
@@ -49968,6 +49972,8 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 
 <p>For the programmes, see our <a href="/universities/lovely-professional-university-online">LPU Online page</a> and the <a href="/blog/online-mba-lpu-review-2026">LPU Online MBA review</a>.</p>
 
+<p>Not enrolled yet? LMS credentials are issued only after admission. Our <a href="/blog/lpu-online-admission-guide">LPU Online admission guide</a> walks through the four steps on the admission portal.</p>
+
 <div class="cta-box">
 <p><strong>Comparing LPU with another university?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities</a> or <a href="/contact">ask us</a>.</p>
 </div>
@@ -50226,6 +50232,8 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <h2>Does IGNOU admission work the same way?</h2>
 
 <p>Mostly. IGNOU follows the same UGC rules, including the DEB ID, but runs separate portals for its ODL and Online programmes. Our <a href="/blog/ignou-online-admission-guide">IGNOU online admission guide</a> covers its portals step by step.</p>
+
+<p>Each university runs its own portal on top of these rules. Our step-by-step guides to <a href="/blog/srm-online-admission-guide">SRM online admission</a> and <a href="/blog/lpu-online-admission-guide">LPU Online admission</a> show how two of them work in practice.</p>
 
 <div class="cta-box">
 <p><strong>Choosing where to apply?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities</a> or <a href="/contact">ask us</a>.</p>
@@ -51342,6 +51350,279 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 </ul>
 
 <p class="disclaimer"><em>Checked against the UGC regulations and the UGC-DEB register on 3 November 2026. Rules can be amended. Confirm the current position on ugc.gov.in and deb.ugc.ac.in before you enrol.</em></p>
+    `,
+  },
+  {
+    slug: 'srm-online-admission-guide',
+    title: 'SRM Online Admission 2027: Portal, Eligibility and Steps',
+    seoTitle: 'SRM Online Admission 2027: Portal, Eligibility, Steps',
+    h1Title: 'SRM Online Admission Guide: How to Apply Through the SRMIST Admission Portal for the January 2027 Session',
+    metaDescription: 'How to apply for SRM IST online degrees: the admission portal, eligibility for MBA, MCA, BBA and BCA, the MBA entrance rule, documents, refunds and exams.',
+    category: 'Online Degree Validity',
+    tags: ['SRM Online Admission', 'SRM Online Admission Portal', 'SRMIST Online', 'SRM Online MBA', 'Online Admission', 'UGC-DEB'],
+    publishedAt: '2026-11-04',
+    readTime: 7,
+    targetKeyword: 'srm online admission portal',
+    relatedUniversities: ['srm-institute-science-technology-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/8640098/pexels-photo-8640098.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@pavel-danilyuk" target="_blank" rel="noopener nofollow">Pavel Danilyuk</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Close-up of hands typing on a laptop, surrounded by notes and books.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'What is the SRM online admission portal?', a: 'SRM Institute of Science and Technology runs online admissions through admissions.srmonline.in, linked from its Directorate of Online Education site, srmonline.in. The portal has separate gateways for domestic and international students. New applicants register, and existing applicants log in to continue.' },
+      { q: 'Is there an entrance test for the SRM online MBA?', a: 'It depends on experience. SRM\'s admission FAQ says working professionals with at least two years of management or professional experience after graduation skip the entrance test but take an online personal interview. Candidates without that experience take the test and the interview, unless they have qualified in CAT, MAT, GMAT or GRE.' },
+      { q: 'What is the eligibility for SRM online MBA?', a: 'SRM\'s admission FAQ asks for a bachelor\'s degree in any discipline from a recognised university with 50% in the qualifying exam, or an equivalent such as CA, CS or ICWA.' },
+      { q: 'When is SRM online admission confirmed?', a: 'According to SRM\'s FAQ, admission is confirmed after document verification, once you pay the first-semester fee. SRM does not keep original certificates; documents are submitted online.' },
+      { q: 'Which SRM online programmes are UGC-entitled for 2026-27?', a: 'For the 2026-27 July session, the UGC-DEB register lists five online programmes at SRM Institute of Science and Technology: the MBA, MCA, M.Com, BBA (Digital Marketing) and BCA (Data Science).' },
+      { q: 'How are SRM online exams conducted?', a: 'SRM\'s FAQ says end-semester exams are taken through the student portal in remote proctored mode, in July and December each year. Each paper runs for two and a half hours, and learners need 75% participation in online activities before the exam.' },
+    ],
+    ctaTitle: 'Comparing SRM with other online universities?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">SRM Institute of Science and Technology runs its online degrees through a Directorate of Online Education with its own admission portal. This guide sets out what that portal asks for, who is eligible and what happens after you apply, from SRM's own admission FAQ.</p>
+
+<p><strong>Short answer:</strong> you apply for an SRM online degree at <strong>admissions.srmonline.in</strong>, the portal linked from srmonline.in. You register, fill in the form, pay the application fee online and upload your documents. SRM confirms admission after <strong>document verification</strong>, once you pay the <strong>first-semester fee</strong>. On 4 November 2026 the site showed admissions open for the <strong>January 2027 session</strong>.</p>
+
+<div class="callout-key">
+<strong>SRM online admission in one box (checked 4 November 2026)</strong>
+<ul>
+<li><strong>Admission portal:</strong> admissions.srmonline.in (domestic and international gateways)</li>
+<li><strong>Session shown:</strong> January 2027</li>
+<li><strong>UGC-entitled online programmes, 2026-27:</strong> MBA, MCA, M.Com, BBA (Digital Marketing), BCA (Data Science)</li>
+<li><strong>MBA entrance test:</strong> waived for two or more years of experience after graduation, or a CAT, MAT, GMAT or GRE score</li>
+<li><strong>Admission confirmed:</strong> after document verification and the first-semester fee</li>
+</ul>
+</div>
+
+<h2>Where is the SRM online admission portal?</h2>
+
+<p>The Directorate of Online Education at SRM Institute of Science and Technology runs srmonline.in. Its Apply Now links lead to the admission portal at admissions.srmonline.in, titled "Online Application Form". The portal has two gateways: one for domestic students and one for international students. New applicants register; applicants who have already started log in to continue.</p>
+
+<p>SRM's FAQ says the application is accepted in online mode only, and payments go through net banking, credit or debit card or UPI. Demand drafts are not accepted. The FAQ also says you get SMS and email reminders after each step of the application.</p>
+
+<div class="callout-warning">
+<strong>Check the last date with SRM directly.</strong> On 4 November 2026 the srmonline.in pages still carried an old "Last Date of Admission 15/03/2023" line next to a banner for the January 2027 session. Ask the admissions team for the current last date in writing before you plan around it.
+</div>
+
+<h2>How does the SRM online admission process work?</h2>
+
+<ol>
+<li><strong>Choose your programme</strong> on srmonline.in and click Apply Now.</li>
+<li><strong>Register</strong> on the admission portal with your basic details.</li>
+<li><strong>Pay the application fee</strong> online. The FAQ lists the amount for Indian and international applicants.</li>
+<li><strong>Upload your documents.</strong> SRM publishes a "Proof of Documents" list on its FAQ page.</li>
+<li><strong>Wait for the eligibility check.</strong> SRM contacts you if you are found eligible.</li>
+<li><strong>Pay the first-semester fee.</strong> Admission is confirmed after document verification and this payment.</li>
+</ol>
+
+<p>SRM's FAQ says it does not keep original certificates, and that an incomplete or incorrectly filled form may be rejected. Before you enrol, create your DEB ID on the UGC-DEB portal. Our explainer on <a href="/blog/ugc-deb-id-explained">the UGC-DEB ID</a> covers how.</p>
+
+<p class="pull">Admission at SRM online is confirmed by two things: verified documents and the first-semester fee. Until both are done, you hold an application, not a seat.</p>
+
+<h2>Who is eligible for SRM online programmes?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+<p>These are the domestic eligibility rules in SRM's admission FAQ, in short form:</p>
+
+<table>
+<thead><tr><th>Programme</th><th>Eligibility (domestic, from SRM's FAQ)</th></tr></thead>
+<tbody>
+<tr><td><a href="/universities/srm-institute-science-technology-online/mba">MBA</a></td><td>Bachelor's degree in any discipline from a recognised university with 50% in the qualifying exam, or an equivalent such as CA, CS or ICWA</td></tr>
+<tr><td>MCA</td><td>Any bachelor's degree with at least 50%, preferably with mathematics or statistics at Class 12 or graduation. Learners without a mathematics background must complete a bridge course</td></tr>
+<tr><td>M.Com</td><td>Listed on SRM's downloadable course eligibility sheet. Check it before you apply</td></tr>
+<tr><td>BBA</td><td>Class 12, or Class 10 plus a 3-year diploma, from a recognised board including NIOS, with 50%</td></tr>
+<tr><td>BCA</td><td>Class 12 with 50% and at least one of mathematics, business mathematics, statistics or allied mathematics, or a 3-year engineering diploma with 50%</td></tr>
+</tbody>
+</table>
+
+<p>The FAQ says there is no age limit. International applicants with foreign qualifications need an equivalence certificate from the Association of Indian Universities.</p>
+
+<h2>Is there an entrance test for the SRM online MBA?</h2>
+
+<p>It depends on your experience. SRM's FAQ sets two routes:</p>
+
+<ul>
+<li><strong>Working professionals</strong> with at least two years of management or professional experience after graduation: no entrance test, but an online personal interview.</li>
+<li><strong>Applicants without that experience:</strong> an entrance test and an online personal interview. A CAT, MAT, GMAT or GRE qualification exempts you from SRM's test.</li>
+</ul>
+
+<p>The FAQ lists eleven MBA specialisations, from finance, marketing and HR to business analytics, logistics, healthcare and hospital management, and pharmaceutical management, with some added from the July 2024, 2025 and 2026 sessions. Confirm the specialisation on your offer letter.</p>
+
+<h2>Which SRM online programmes are UGC-entitled?</h2>
+
+<p>For the 2026-27 July session, the UGC-DEB HEI programme register lists five online programmes at SRM Institute of Science and Technology: the Master of Business Administration, Master of Computer Applications, Master of Commerce, BBA (Digital Marketing) and BCA (Data Science). The diplomas and certificates on srmonline.in are not degree programmes and are not on that register.</p>
+
+<p>Under Regulation 22 of the UGC ODL and Online Regulations, 2020, an entitled online degree is equivalent to the campus degree. SRM's FAQ adds that the degree certificate names the online mode. Our guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> shows how to confirm a programme yourself.</p>
+
+<h2>What is SRM's refund policy for online programmes?</h2>
+
+<p>For UG and PG programmes in the July 2026 session, SRM's FAQ publishes this refund schedule. The application fee is not refunded in any case, and diploma and certificate courses carry no refund.</p>
+
+<table>
+<thead><tr><th>When you withdraw</th><th>Fee refunded</th></tr></thead>
+<tbody>
+<tr><td>15 days or more before the notified last date of admission</td><td>100%</td></tr>
+<tr><td>Less than 15 days before the last date</td><td>90%</td></tr>
+<tr><td>15 days or less after the last date</td><td>80%</td></tr>
+<tr><td>16 to 30 days after the last date</td><td>50%</td></tr>
+<tr><td>More than 30 days after the last date</td><td>0%</td></tr>
+</tbody>
+</table>
+
+<p>The "notified last date" is the date SRM announces for the session, so ask for it in writing when you apply. Our guide to the <a href="/blog/ugc-fee-refund-policy">UGC fee refund policy</a> explains the national rules that sit behind schedules like this one.</p>
+
+<h2>How do SRM online exams work?</h2>
+
+<p>SRM's FAQ says end-semester exams are taken through the student portal in remote proctored mode, twice a year in July and December. Each paper lasts two and a half hours, in a morning or afternoon slot in Indian Standard Time. You need a laptop or desktop with a webcam and microphone, plus a mobile phone to scan and upload answers.</p>
+
+<p>Weekly assessments are compulsory, and you need 75% participation in online activities before the end-semester exam. An examination fee is charged per subject on top of tuition. Our guide on <a href="/blog/how-online-degree-exams-work-india">how online degree exams work in India</a> explains remote proctoring in general.</p>
+
+<h2>Fees and contacts</h2>
+
+<p>SRM publishes per-semester fees on its FAQ page. Fees change each session, so check the current figure on srmonline.in and keep the written fee schedule with your admission receipt. For admission queries, SRM lists admissions.srmonline@srmist.edu.in and the phone numbers +91-044-27455510 and +91-044-47437500 for Indian students.</p>
+
+<p>For the wider admission rules that apply at every university, see our guide to the <a href="/blog/online-degree-admission-process-india">online degree admission process in India</a>. Our <a href="/universities/srm-institute-science-technology-online">SRM online university page</a> brings together the programmes and data we hold.</p>
+
+<div class="cta-box">
+<p><strong>Weighing SRM against other online universities?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities side by side</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>SRM Institute of Science and Technology, Directorate of Online Education: FAQs page and admission portal, srmonline.in and admissions.srmonline.in, read on 4 November 2026</li>
+<li>UGC-DEB HEI programme register (HEI_Prog_List), entries for SRM Institute of Science and Technology for 2026-27, read on 2 November 2026: deb.ugc.ac.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulation 22: deb.ugc.ac.in/Regulations</li>
+</ul>
+
+<p class="disclaimer"><em>Checked against SRM's official pages and the UGC-DEB register on 4 November 2026. Admission rules, dates and fees can change each session. Confirm them on srmonline.in before you apply.</em></p>
+    `,
+  },
+  {
+    slug: 'lpu-online-admission-guide',
+    title: 'LPU Online Admission 2027: Portal, Documents and Steps',
+    seoTitle: 'LPU Online Admission 2027: Portal, Documents, Steps',
+    h1Title: 'LPU Online Admission Guide: How to Apply Through the LPU Online Admission Portal in 2027',
+    metaDescription: 'How LPU Online admission works: the four steps on admission.lpuonline.com, the documents to scan, provisional registration, verification and what to check.',
+    category: 'Online Degree Validity',
+    tags: ['LPU Online Admission', 'LPU Online Application', 'Lovely Professional University Online', 'LPU Online MBA', 'Online Admission', 'UGC-DEB'],
+    publishedAt: '2026-11-04',
+    readTime: 6,
+    targetKeyword: 'lpu online admission',
+    relatedUniversities: ['lovely-professional-university-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/9159283/pexels-photo-9159283.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Woman studying from home on her laptop near a bright window.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'Where do I apply for LPU Online admission?', a: 'Lovely Professional University runs online admissions at admission.lpuonline.com, linked from the Apply Now button on lpuonline.com. International applicants have a separate page on the same portal.' },
+      { q: 'What are the steps in LPU Online admission?', a: 'The admission portal lists four steps: register and pay the registration fee; fill in the application form, upload documents and pay the programme fee; receive provisional registration and LMS access; and get admission confirmed after document verification.' },
+      { q: 'Is the LPU Online registration fee refundable?', a: 'No. The admission portal states that the registration fee is non-refundable and is not part of the programme fee.' },
+      { q: 'Can I apply to LPU Online if my result is awaited?', a: 'Yes. LPU Online\'s FAQ says applicants awaiting their qualifying exam result can apply, provided they submit the result by the last date the university sets. If the proof is not submitted in time, the admission is cancelled.' },
+      { q: 'Is there an age limit for LPU Online admission?', a: 'No. LPU Online\'s FAQ says age is no bar for admission.' },
+      { q: 'Which LPU Online programmes are UGC-entitled for 2026-27?', a: 'For the 2026-27 July session, the UGC-DEB register lists 13 online programmes at Lovely Professional University, including the MBA, MCA, M.Com, BBA, BCA, a BA with eight subject options, MA programmes in English, History, Political Science and Sociology, and MSc programmes in Mathematics, Economics and Data Science.' },
+    ],
+    ctaTitle: 'Comparing LPU with other online universities?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">LPU Online has run online degrees since November 2021, and its admission portal works in four steps. This guide covers each step, the documents to scan and the points to check before you pay, from LPU Online's own admission portal and FAQ.</p>
+
+<p><strong>Short answer:</strong> you apply for LPU Online at <strong>admission.lpuonline.com</strong>. You <strong>register and pay a non-refundable registration fee</strong>, fill in the application, upload scanned documents and pay the programme fee. LPU then gives you <strong>provisional registration and LMS access</strong>, and confirms admission after <strong>document verification</strong>. On 4 November 2026 the portal showed "Admission Open 2027".</p>
+
+<div class="callout-key">
+<strong>LPU Online admission in one box (checked 4 November 2026)</strong>
+<ul>
+<li><strong>Admission portal:</strong> admission.lpuonline.com</li>
+<li><strong>Steps:</strong> register, apply and pay, provisional registration, document verification</li>
+<li><strong>Registration fee:</strong> non-refundable and not part of the programme fee</li>
+<li><strong>UGC-entitled online programmes, 2026-27:</strong> 13 register entries</li>
+<li><strong>Admission helpline:</strong> 01824 520001, admissions@lpuonline.com</li>
+</ul>
+</div>
+
+<h2>Where is the LPU Online admission portal?</h2>
+
+<p>The Apply Now button on lpuonline.com leads to admission.lpuonline.com. International applicants use a separate page on the same portal. On 4 November 2026 the portal headline read "Admission Open 2027", the form listed a session called "2026-2", and a countdown said admissions close on 1 April, without stating a year. Confirm the closing date with the admissions team before you plan around it.</p>
+
+<h2>What are the steps in LPU Online admission?</h2>
+
+<ol>
+<li><strong>Register</strong> on the portal and pay the registration fee. The portal states that this fee is non-refundable and not part of the programme fee.</li>
+<li><strong>Complete the application form</strong>, upload your documents and pay the programme fee. The portal accepts credit card, debit card, net banking and UPI or wallets.</li>
+<li><strong>Get provisional registration and LMS access.</strong> LPU emails your login details for the learning management system.</li>
+<li><strong>Document verification.</strong> The admissions team checks your documents, and admission is confirmed only after successful verification.</li>
+</ol>
+
+<p class="pull">Provisional registration is not admission. LPU confirms your seat only after it has verified your documents.</p>
+
+<div class="callout-warning">
+<strong>Pending documents can cost you the seat.</strong> LPU Online's FAQ says that if you fail to submit proof of eligibility or other documents by the stipulated date, you are not considered eligible, and any admission already granted is cancelled. Read the refund terms before you pay the programme fee.
+</div>
+
+<h2>Which documents does LPU Online ask for?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/33845767/pexels-photo-33845767.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Three students studying in a library, focused on their books." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mba-classroom-2155665220" target="_blank" rel="noopener nofollow">MBA Classroom</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+<p>The admission portal lists these uploads. It asks for scans of the original documents, not photocopies, and the files must not be password-protected.</p>
+
+<ul>
+<li>Passport-size colour photograph and signature</li>
+<li>Qualification documents from Class 10 up to your highest qualification</li>
+<li>Diploma or degree certificate for graduation or post-graduation, where it applies</li>
+<li>Government-issued photo ID, and address proof if it differs from the ID</li>
+<li>Disability certificate, if applicable</li>
+<li>A scanned sample of your handwriting</li>
+</ul>
+
+<p>The form also has fields for your ABC ID and DEB ID. Create your DEB ID on the UGC-DEB portal before you apply. Our explainer on <a href="/blog/ugc-deb-id-explained">the UGC-DEB ID</a> shows how.</p>
+
+<h2>Who is eligible for LPU Online?</h2>
+
+<p>LPU Online's FAQ says eligibility for each programme is printed in the prospectus and on the website, and asks you to read it before filling in the form. You can email your documents to admissions@lpuonline.com or call 01824 520001 to check eligibility first.</p>
+
+<ul>
+<li><strong>Age:</strong> no bar, according to the FAQ.</li>
+<li><strong>Result awaited:</strong> you can apply, provided you submit the qualifying result by the last date the university sets.</li>
+</ul>
+
+<p>For the general eligibility rules that apply across universities, see our guide to the <a href="/blog/online-degree-admission-process-india">online degree admission process in India</a>.</p>
+
+<h2>Which LPU Online programmes are UGC-entitled?</h2>
+
+<p>For the 2026-27 July session, the UGC-DEB HEI programme register lists 13 online programmes at Lovely Professional University:</p>
+
+<table>
+<thead><tr><th>Level</th><th>Programmes (as named in the register)</th></tr></thead>
+<tbody>
+<tr><td>Undergraduate</td><td>BBA; BCA; BA (combination of 3 subjects from economics, computer applications, management, history, political science, sociology, English and Hindi)</td></tr>
+<tr><td>Postgraduate</td><td><a href="/universities/lovely-professional-university-online/mba">MBA</a>; MCA; M.Com; MA in English, History, Political Science and Sociology; MSc in Mathematics, Economics and Data Science</td></tr>
+</tbody>
+</table>
+
+<p>Under Regulation 22 of the UGC ODL and Online Regulations, 2020, an entitled online degree is equivalent to the campus degree. Our guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> shows how to confirm a programme yourself, and our check on <a href="/blog/is-lpu-online-fake-or-legit-2026">whether LPU Online is legitimate</a> covers its approvals.</p>
+
+<h2>What happens after you are admitted?</h2>
+
+<p>LPU emails your learning management system credentials, and study material, recorded lectures and live classes all run through it. Our guide to the <a href="/blog/lpu-online-lms-login">LPU Online LMS login</a> covers the portal. For queries after admission, LPU Online lists a separate helpline, 01824 520500.</p>
+
+<p>Fees change each session. Check the current programme fee on lpuonline.com and keep the written fee schedule with your receipt. Our guide to the <a href="/blog/ugc-fee-refund-policy">UGC fee refund policy</a> explains what you can claim back if you withdraw. If you are choosing the MBA, our <a href="/blog/online-mba-lpu-review-2026">LPU online MBA review</a> covers the programme in depth.</p>
+
+<div class="cta-box">
+<p><strong>Weighing LPU against other online universities?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities side by side</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>Lovely Professional University, LPU Online: admission portal (admission.lpuonline.com) and FAQ page (lpuonline.com/faq), read on 4 November 2026</li>
+<li>UGC-DEB HEI programme register (HEI_Prog_List), entries for Lovely Professional University for 2026-27, read on 2 November 2026: deb.ugc.ac.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulation 22: deb.ugc.ac.in/Regulations</li>
+</ul>
+
+<p class="disclaimer"><em>Checked against LPU Online's official pages and the UGC-DEB register on 4 November 2026. Admission steps, dates and fees can change each session. Confirm them on lpuonline.com before you apply.</em></p>
     `,
   },
 ]

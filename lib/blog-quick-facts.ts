@@ -3,6 +3,20 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'srm-online-admission-guide': [
+    { label: 'Admission portal', value: 'admissions.srmonline.in', green: true },
+    { label: 'Session shown', value: 'January 2027' },
+    { label: 'UGC-entitled online, 2026-27', value: 'MBA, MCA, M.Com, BBA, BCA' },
+    { label: 'MBA entrance test', value: 'Waived with 2+ years experience' },
+    { label: 'Admission confirmed', value: 'After verification and 1st-semester fee' },
+  ],
+  'lpu-online-admission-guide': [
+    { label: 'Admission portal', value: 'admission.lpuonline.com', green: true },
+    { label: 'Steps', value: '4, ending in document verification' },
+    { label: 'Registration fee', value: 'Non-refundable, separate' },
+    { label: 'UGC-entitled online, 2026-27', value: '13 programmes' },
+    { label: 'Age limit', value: 'None' },
+  ],
   'online-msc-statistics-india': [
     { label: 'Online MSc statistics 2026-27', value: '5 programmes', green: true },
     { label: 'Includes', value: 'Applied Statistics, Biostatistics' },
