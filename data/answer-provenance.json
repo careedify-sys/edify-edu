@@ -1,0 +1,198 @@
+{
+  "note": "Every fact in an AI-citation answer section that is not read from lib/data.ts or lib/fees.ts. One row per claim. Allowed sources: the university's own official site (read, never linked), ugc.gov.in, deb.ugc.ac.in, naac.gov.in, nirfindia.org. Official sites fetched only where lib/data.ts records the domain as officialUrl. Rows with kind 'absence' record that the fetched page carried no such statement. See lib/answers/provenance.ts.",
+  "rows": [
+    {
+      "id": "ugc-reg22-equivalence",
+      "kind": "statement",
+      "page": "every Q4 validity section and /blog/is-online-mba-valid-india-2026",
+      "section": "Q4 degree valid",
+      "claim": "Regulation 22 of the UGC (ODL Programmes and Online Programmes) Regulations, 2020 treats UG and PG degrees awarded in online or ODL mode by a recognised HEI as equivalent to the corresponding conventional degrees.",
+      "source_url": "https://deb.ugc.ac.in/FAQ",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "shall be treated as equivalent to the corresponding awards of the Degrees at undergraduate and postgraduate level"
+    },
+    {
+      "id": "amity-placement-assistance",
+      "kind": "statement",
+      "page": "/compare pairs with Amity (placement transparency row)",
+      "section": "Q3 placements",
+      "claim": "Amity University Online states 100% placement assistance on its online MBA page.",
+      "source_url": "https://amityonline.com/master-of-business-administration-online",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "100% Placement Assistance"
+    },
+    {
+      "id": "amity-hiring-partners",
+      "kind": "statement",
+      "page": "/compare pairs with Amity (placement transparency row)",
+      "section": "Q3 placements",
+      "claim": "Amity University Online lists 450+ hiring partners on its online MBA page; no placement rate or package is on that page.",
+      "source_url": "https://amityonline.com/master-of-business-administration-online",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "450+ Hiring Partners"
+    },
+    {
+      "id": "amity-wes",
+      "kind": "statement",
+      "page": "/blog/amity-online-mba-review-2026 (FAQ)",
+      "section": "Q9 approvals (WES)",
+      "claim": "Amity University Online states its degrees are recognised by World Education Services (WES) Canada and USA.",
+      "source_url": "https://amityonline.com/master-of-business-administration-online",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "Degrees recognized by World Education Services (WES) Canada & USA"
+    },
+    {
+      "id": "amity-dual-spec",
+      "kind": "statement",
+      "page": "/blog/amity-online-mba-review-2026 (FAQ)",
+      "section": "Amity dual specialisation",
+      "claim": "Amity University Online's MBA page lists an 'MBA With Dual Specialization' option (link label only, no fee or details on that page).",
+      "source_url": "https://amityonline.com/master-of-business-administration-online",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "MBA With Dual Specialization"
+    },
+    {
+      "id": "lpu-placement-support",
+      "kind": "statement",
+      "page": "/compare pairs with LPU (placement transparency row)",
+      "section": "Q3 placements",
+      "claim": "LPU Online describes a dedicated placement support team; its placement page states no hiring-partner count, placement rate or package.",
+      "source_url": "https://www.lpuonline.com/placement",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "Our dedicated placement support team works tirelessly to bridge the gap between talent and opportunity."
+    },
+    {
+      "id": "ssodl-no-placement-statement",
+      "kind": "absence",
+      "page": "/blog/symbiosis-online-mba-review-2026 and /compare pairs with Symbiosis",
+      "section": "Q3 placements",
+      "claim": "Neither the SSODL home page nor its MBA page carries a placement, hiring-partner or salary statement.",
+      "source_url": "https://ssodl.edu.in/Master-of-business-administration.php",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "(absence) no placement, hiring-partner or salary statement on ssodl.edu.in home page or MBA page"
+    },
+    {
+      "id": "jain-hiring-corporates",
+      "kind": "statement",
+      "page": "/compare pairs with JAIN (placement transparency row)",
+      "section": "Q3 placements",
+      "claim": "JAIN Online states 2000+ hiring corporates on its home page (university-wide, not labelled for the MBA).",
+      "source_url": "https://onlinejain.com/",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "2000+ Hiring Corporates"
+    },
+    {
+      "id": "jain-outcome-figures",
+      "kind": "statement",
+      "page": "/compare pairs with JAIN (placement transparency row)",
+      "section": "Q3 placements",
+      "claim": "JAIN Online publishes a 65% average salary hike, a 78% career success rate and 15,454+ jobs facilitated, university-wide and undefined on the page.",
+      "source_url": "https://onlinejain.com/",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "65% Average Salary Hike; 78% Career Success Rate; 15,454+ Jobs Facilitated"
+    },
+    {
+      "id": "uu-placement-assistance",
+      "kind": "statement",
+      "page": "/blog/uu-doon-online-mba-review",
+      "section": "Q3 placements",
+      "claim": "Uttaranchal University Online lists placement assistance including CV workshops and mock interviews; no hiring-partner count, rate or package is stated.",
+      "source_url": "https://onlineuu.in/",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "Placement assistance including CV workshops & mock interviews"
+    },
+    {
+      "id": "galgotias-hiring-partners",
+      "kind": "statement",
+      "page": "/blog/galgotias-online-mba-review",
+      "section": "Q3 placements",
+      "claim": "Galgotias University Online lists 500+ hiring partners; no placement rate or package is stated.",
+      "source_url": "https://galgotiasonline.edu.in/",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "500+ Hiring Partners"
+    },
+    {
+      "id": "galgotias-career-workshops",
+      "kind": "statement",
+      "page": "/blog/galgotias-online-mba-review",
+      "section": "Q3 placements",
+      "claim": "Galgotias University Online describes career and placement assistance through workshops on resumes, interviews and networking.",
+      "source_url": "https://galgotiasonline.edu.in/",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "Focused workshops on resume building, interview preparedness, and professional networking skills"
+    },
+    {
+      "id": "galgotias-online-exams",
+      "kind": "statement",
+      "page": "/blog/galgotias-online-mba-review",
+      "section": "Q7 exam pattern",
+      "claim": "Galgotias University Online lists online examinations under assessment and evaluation; proctoring is not described.",
+      "source_url": "https://galgotiasonline.edu.in/",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "online examinations"
+    },
+    {
+      "id": "bv-no-placement",
+      "kind": "statement",
+      "page": "/compare and /blog/online-mba-with-placement-india-2026",
+      "section": "Q3 placements",
+      "claim": "Bharati Vidyapeeth's online CDOE states it does not give placement, only assistance.",
+      "source_url": "https://bharatividyapeethonline.com/placement-2/",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "CDOE does not give any placement. We just provide assistance."
+    },
+    {
+      "id": "bv-placement-services",
+      "kind": "statement",
+      "page": "/compare and /blog/online-mba-with-placement-india-2026",
+      "section": "Q3 placements",
+      "claim": "Bharati Vidyapeeth Online lists career counselling, placement training and grooming sessions, online mock tests and virtual placement drives, free to join.",
+      "source_url": "https://bharatividyapeethonline.com/placement-2/",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "Career Counselling; Placement Training & Grooming Sessions; Online Mock Test; Virtual Placement Drive"
+    },
+    {
+      "id": "upes-alumni-employers",
+      "kind": "statement",
+      "page": "/blog/online-mba-with-placement-india-2026",
+      "section": "Q3 placements",
+      "claim": "UPES Online names Amazon, KPMG and Mahindra as employers of alumni from its online MBA, BBA and other programmes (alumni employers, not hiring partners); no rate or package is stated.",
+      "source_url": "https://upesonline.ac.in/",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "Our alumni from online MBA, BBA, and other programs are working with top global companies like Amazon, KPMG, and Mahindra."
+    },
+    {
+      "id": "sharda-recruiter-counts",
+      "kind": "statement",
+      "page": "/universities/sharda-university-online/mba (QuickAnswers)",
+      "section": "Q3 placements",
+      "claim": "Sharda Online's home page states three different recruiter counts: 300+ hiring partners, 450+ recruiters and 600+ recruiters and MNCs.",
+      "source_url": "https://shardaonline.ai/",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "300+ Hiring Partners; 450+ Recruiters; 600+ Recruiters & MNCs"
+    },
+    {
+      "id": "sharda-cohort-labels",
+      "kind": "statement",
+      "page": "/universities/sharda-university-online/mba (QuickAnswers)",
+      "section": "Q3 placements",
+      "claim": "Sharda Online's outcome figures are labelled by UG and PG cohort, not as online MBA outcomes.",
+      "source_url": "https://shardaonline.ai/",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "Median CTC · UG cohort; Highest offer · PG cohort"
+    },
+    {
+      "id": "sharda-placement-support",
+      "kind": "statement",
+      "page": "/universities/sharda-university-online/mba (QuickAnswers)",
+      "section": "Q3 placements",
+      "claim": "Sharda Online describes end-to-end placement support.",
+      "source_url": "https://shardaonline.ai/",
+      "fetched_at": "2026-11-04",
+      "snippet_max_25_words": "with end-to-end placement support"
+    }
+  ],
+  "could_not_fetch": [
+    { "domain": "https://www.onlinemanipal.com", "fetched_at": "2026-11-04", "result": "HTTP 403", "affects": "MUJ, MAHE and Sikkim Manipal placement and exam answers" }
+  ]
+}

@@ -6246,7 +6246,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Is MAHE Online MBA worth the fees?', a: 'MAHE ranks 39 in NIRF Management 2024, holds NAAC A++ with CGPA 3.65, and is AACSB accredited (the global business school accreditation held by less than 5 percent of B-schools worldwide). For an online MBA, this is among the strongest accreditation profiles available in India.' },
       { q: 'What is the difference between MAHE and Manipal University Jaipur online MBA?', a: 'MAHE (Manipal Academy of Higher Education) is the original Manipal university in Karnataka, ranked 39 in NIRF Management. MUJ (Manipal University Jaipur) is a separate university in Rajasthan, ranked 81 in NIRF Management. Different campuses, different rankings, different fees. MAHE Online MBA fees are ₹2,92,000, MUJ is ₹1,84,000.' },
       { q: 'What specialisations does MAHE Online MBA offer?', a: 'MAHE Online MBA offers specialisations including Finance, Marketing, Human Resource, Operations, Business Analytics, Information Systems, Healthcare Management, and Banking and Financial Services. The exact set varies by intake batch.' }
-    ],
+    ,{"q":"Is MAHE Manipal online MBA degree valid?","a":"Yes. The MAHE Manipal online MBA is a valid degree in India when you join a session for which UGC-DEB has entitled the university, and edifyedu.in records it as entitled. Regulation 22 of the UGC ODL and Online Programmes Regulations, 2020 says such degrees \"shall be treated as equivalent\" to campus degrees."},{"q":"What is the eligibility for MAHE Manipal online MBA?","a":"Graduation with 50% marks from recognized university, as recorded on edifyedu.in. No entrance test or work-experience requirement is on record; confirm with our counsellor."},{"q":"How are MAHE Manipal online MBA exams conducted?","a":"edifyedu.in records them as taken online. Ask our counsellor for the current proctoring rules and weighting."},{"q":"What is the MAHE Manipal online MBA syllabus?","a":"Core papers held by edifyedu.in: semester 1: Managing People & Organizations, Financial Reporting & Statement Analysis, Managerial Economics, Business Communication, Business Statistics.; semester 2: Financial Management, Marketing Management, Strategic Management, IT for Business, Business Leadership, Research Methodology.."},{"q":"Is MAHE Manipal online MBA UGC approved?","a":"Yes. edifyedu.in records MAHE Manipal as UGC-DEB entitled to offer online programmes, and the university holds NAAC A++ accreditation. NIRF ranks the parent institution #39 in the NIRF 2025 Management category. Check each claim yourself on the official registers linked below before you pay, because entitlement is granted per programme and per session."}],
     ctaTitle: '',
     ctaDesc: '',
     content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Verified coupon: up to Rs 5,000 off MAHE Online MBA. Max amount unlocks every Tuesday and Saturday (IST).</p><a href="/coupons/mahe-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View MAHE Coupon Code</a></div>
@@ -6455,7 +6455,39 @@ export const BLOG_POSTS: BlogPost[] = [
 </ol>
 
 <p>The MAHE Online MBA programme combined with active 24-month execution plus strategic networking delivers premium career outcomes for committed working professionals. Treat the Rs 2.92 lakh investment as serious 5-year career trajectory accelerator. With right specialisation choice plus disciplined execution, the credential plus brand pull plus learning together deliver measurable career returns over the next decade. The Institution of Eminence status plus NIRF Top 3 University rank place MAHE in India's elite higher education tier. For working professionals targeting senior management plus international career plus healthcare specialisation, MAHE Online MBA is the strongest brand-pull option at the Rs 2.92 lakh price point. Pick deliberately and execute consistently for maximum career impact.</p>
-    `,
+    
+<!-- ai-answers:start -->
+<h2 id="which-manipal">Which Manipal is it? MUJ, MAHE and Sikkim Manipal online MBA</h2>
+<p>Three separate universities sell an online MBA under the Manipal name: Manipal University Jaipur (MUJ), Manipal Academy of Higher Education (MAHE) and Sikkim Manipal University. Each holds its own UGC-DEB entitlement, NAAC grade and NIRF position, and the name on your degree is that university, so check which one you are applying to.</p>
+<table>
+<thead><tr><th>University</th><th>Location</th><th>NAAC</th><th>NIRF 2025</th><th>MBA specialisations</th></tr></thead>
+<tbody><tr><td>Manipal University Jaipur (MUJ)</td><td>Jaipur, Rajasthan</td><td>A+</td><td>#81 Management (parent institution)</td><td>13</td></tr><tr><td>Manipal Academy of Higher Education (MAHE)</td><td>Manipal, Karnataka</td><td>A++</td><td>#39 Management (parent institution)</td><td>9</td></tr><tr><td>Sikkim Manipal University</td><td>Gangtok, Sikkim</td><td>A+</td><td>No NIRF ranking</td><td>6</td></tr></tbody>
+</table>
+<h2 id="degree-valid">Is the MAHE Manipal online MBA degree valid, and does it say "online"?</h2>
+<p>Yes. The MAHE Manipal online MBA is a valid degree in India when you join a session for which UGC-DEB has entitled the university, and edifyedu.in records it as entitled. Regulation 22 of the UGC ODL and Online Programmes Regulations, 2020 says such degrees "shall be treated as equivalent" to campus degrees.</p>
+<ul><li>UGC-DEB entitlement: recorded on edifyedu.in</li><li>Equivalence: UGC Regulation 22, read at <a href="https://deb.ugc.ac.in/FAQ" target="_blank" rel="noopener">deb.ugc.ac.in</a></li><li>Check your programme and intake year on the <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">UGC-DEB register</a> before you pay</li></ul>
+<p class="callout-key">Not verified by edifyedu.in: whether the MAHE Manipal degree certificate states the online mode. Ask the university for a sample in writing, or talk to our counsellor.</p>
+<h2 id="eligibility">What is the eligibility for MAHE Manipal online MBA?</h2>
+<p>The MAHE Manipal online MBA asks for the following, as recorded on edifyedu.in: graduation with 50% marks from recognized university. edifyedu.in has no entrance test or work-experience requirement on record for this programme, so confirm both with our counsellor before you apply. Our counsellor can also tell you which documents to keep ready.</p>
+<ul><li>Qualifying degree: Graduation with 50% marks from recognized university</li><li>Minimum marks on record: 50%</li><li>Entrance test: none on record with edifyedu.in</li><li>Work experience: none on record with edifyedu.in</li></ul>
+<p class="callout-key">Not recorded on edifyedu.in: reserved-category relaxation, and whether final-year students get provisional admission.</p>
+<h2 id="exams">How are MAHE Manipal online MBA exams conducted?</h2>
+<p>edifyedu.in records MAHE Manipal online MBA examinations as taken online. The university sets the exam schedule and proctoring rules each term, so ask our counsellor for the current exam pattern, including how assignments and term-end exams are weighted, before you enrol.</p>
+<ul><li>Exam mode on record: Online</li><li>Proctoring method: not recorded</li><li>Assignment and term-end weighting: not recorded</li></ul>
+<p class="callout-key">Not recorded on edifyedu.in: the proctoring method, the split between assignments and term-end exams, and the passing mark.</p>
+<h2 id="syllabus">What is the MAHE Manipal online MBA syllabus?</h2>
+<p>edifyedu.in holds the core syllabus for 2 semesters of the MAHE Manipal online MBA: 5 in semester 1 and 6 in semester 2, listed below. Semesters 3 and 4 depend on the specialisation you pick, and we do not hold those papers for every track. Confirm the current syllabus with our counsellor before you enrol.</p>
+<table>
+<thead><tr><th>Semester</th><th>Core subjects held by edifyedu.in</th></tr></thead>
+<tbody><tr><td>Semester 1</td><td>Managing People &amp; Organizations, Financial Reporting &amp; Statement Analysis, Managerial Economics, Business Communication, Business Statistics.</td></tr><tr><td>Semester 2</td><td>Financial Management, Marketing Management, Strategic Management, IT for Business, Business Leadership, Research Methodology.</td></tr><tr><td>Semester 3</td><td>Not published on edifyedu.in (varies by specialisation)</td></tr><tr><td>Semester 4</td><td>Not published on edifyedu.in (varies by specialisation)</td></tr></tbody>
+</table>
+<p class="callout-key">Not published on edifyedu.in: the semester 3 and 4 papers for each specialisation.</p>
+<h2 id="approvals">Is MAHE Manipal online MBA UGC approved?</h2>
+<p>Yes. edifyedu.in records MAHE Manipal as UGC-DEB entitled to offer online programmes, and the university holds NAAC A++ accreditation. The parent institution is ranked NIRF #39 Management (2025). Check each claim yourself on the official registers linked below before you pay, because entitlement is granted per programme and per session.</p>
+<ul><li>UGC-DEB: entitled, on record with edifyedu.in (check at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>)</li><li>NAAC: A++ (check at <a href="https://naac.gov.in" target="_blank" rel="noopener">naac.gov.in</a>)</li><li>NIRF 2025: #39 Management (parent institution) (check at <a href="https://www.nirfindia.org" target="_blank" rel="noopener">nirfindia.org</a>)</li><li>AICTE and WES: edifyedu.in has not verified this; talk to our counsellor</li></ul>
+<p class="cta-box">Edify compares public UGC/NAAC/NIRF data, no paid rankings. Talk to our counsellor at <a href="/contact">edifyedu.in/contact</a> before you pay any fee.</p>
+<!-- ai-answers:end -->
+`,
   },
   {
     slug: 'muj-online-mba-review-2026',
@@ -6479,7 +6511,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Is Manipal University Jaipur Online MBA legitimate?', a: 'Yes. Manipal University Jaipur is UGC-DEB approved for online programmes, holds NAAC A+ with CGPA 3.28, ranks 81 in NIRF Management 2024, and is recognised by AIU. The online MBA degree is treated the same as the on-campus MBA degree for employment, government jobs, and further education.' },
       { q: 'How is MUJ different from MAHE and Sikkim Manipal?', a: 'MUJ (Manipal University Jaipur) is in Rajasthan, ranks 81 in NIRF Management. MAHE (Manipal Academy of Higher Education) is the flagship Manipal university in Karnataka, ranks 39 in NIRF Management. SMU (Sikkim Manipal University) is in Sikkim and is not currently in NIRF Management top 100. All three are separate universities.' },
       { q: 'What specialisations does MUJ Online MBA offer?', a: 'MUJ Online MBA offers 13 specialisations including Finance, Marketing, HR, IT, Operations, International Business, Business Analytics, Healthcare Management, Banking and Financial Services, Logistics and Supply Chain, Retail Management, Project Management, and Information Systems.' }
-    ],
+    ,{"q":"Is Manipal University Jaipur online MBA worth it?","a":"The Manipal University Jaipur online MBA is worth it if you need a UGC-DEB entitled degree with NAAC A+ accreditation from a parent institution ranked #81 in the NIRF 2025 Management category. It offers 13 specialisations. edifyedu.in has verified no placement outcome for online graduates, so judge it on cost, approvals and fit."},{"q":"What is the eligibility for Manipal University Jaipur online MBA?","a":"Graduation with 50% marks from recognized university, as recorded on edifyedu.in. No entrance test or work-experience requirement is on record; confirm with our counsellor."},{"q":"How are Manipal University Jaipur online MBA exams conducted?","a":"edifyedu.in records them as taken online. Ask our counsellor for the current proctoring rules and weighting."},{"q":"What is the Manipal University Jaipur online MBA syllabus?","a":"Core papers held by edifyedu.in: semester 1: Entrepreneurial Practice, Business Communication, Managerial Economics, Financial Accounting, Data Visualisation (Excel/Tableau), Organizational Behaviour, Marketing Management.; semester 2: Business Research Methods (R/Python), Advanced Financial Management, Operations Management, Human Resource Management, Strategic Management, Legal Aspects of Business.."},{"q":"Does Manipal University Jaipur online MBA offer healthcare management?","a":"Not on the programme list edifyedu.in holds for the Manipal University Jaipur online MBA, which has 13 specialisations. Talk to our counsellor to confirm before you rule it out."}],
     ctaTitle: '',
     ctaDesc: '',
     content: `<div class="callout-key">
@@ -6634,7 +6666,37 @@ export const BLOG_POSTS: BlogPost[] = [
   <li>Choose super or dual specialisation before semester three.</li>
 </ol>
 
-    `,
+    
+<!-- ai-answers:start -->
+<h2 id="which-manipal">Which Manipal is it? MUJ, MAHE and Sikkim Manipal online MBA</h2>
+<p>Three separate universities sell an online MBA under the Manipal name: Manipal University Jaipur (MUJ), Manipal Academy of Higher Education (MAHE) and Sikkim Manipal University. Each holds its own UGC-DEB entitlement, NAAC grade and NIRF position, and the name on your degree is that university, so check which one you are applying to.</p>
+<table>
+<thead><tr><th>University</th><th>Location</th><th>NAAC</th><th>NIRF 2025</th><th>MBA specialisations</th></tr></thead>
+<tbody><tr><td>Manipal University Jaipur (MUJ)</td><td>Jaipur, Rajasthan</td><td>A+</td><td>#81 Management (parent institution)</td><td>13</td></tr><tr><td>Manipal Academy of Higher Education (MAHE)</td><td>Manipal, Karnataka</td><td>A++</td><td>#39 Management (parent institution)</td><td>9</td></tr><tr><td>Sikkim Manipal University</td><td>Gangtok, Sikkim</td><td>A+</td><td>No NIRF ranking</td><td>6</td></tr></tbody>
+</table>
+<h2 id="worth-it">Is Manipal University Jaipur online MBA worth it?</h2>
+<p>The Manipal University Jaipur online MBA is worth it if you need a UGC-DEB entitled degree with NAAC A+ accreditation from a parent institution ranked NIRF #81 Management (2025). It offers 13 specialisations. edifyedu.in has verified no placement outcome for online graduates, so judge it on cost, approvals and fit. The points below come from data edifyedu.in holds.</p>
+<ul><li>For: UGC-DEB entitled for online delivery, so the degree carries the same standing as a campus MBA under UGC Regulation 22.</li><li>For: NAAC A+ accreditation.</li><li>For: the parent institution is ranked NIRF #81 Management (2025).</li><li>For: 13 specialisations, a wide choice.</li><li>Against: no placement outcome for online graduates verified by edifyedu.in.</li></ul>
+<p class="callout-key">Not used here: student reviews. edifyedu.in does not quote unverified reviews, and none of the points above comes from one.</p>
+<h2 id="eligibility">What is the eligibility for Manipal University Jaipur online MBA?</h2>
+<p>The Manipal University Jaipur online MBA asks for the following, as recorded on edifyedu.in: graduation with 50% marks from recognized university. edifyedu.in has no entrance test or work-experience requirement on record for this programme, so confirm both with our counsellor before you apply. Our counsellor can also tell you which documents to keep ready.</p>
+<ul><li>Qualifying degree: Graduation with 50% marks from recognized university</li><li>Minimum marks on record: 50%</li><li>Entrance test: none on record with edifyedu.in</li><li>Work experience: none on record with edifyedu.in</li></ul>
+<p class="callout-key">Not recorded on edifyedu.in: reserved-category relaxation, and whether final-year students get provisional admission.</p>
+<h2 id="exams">How are Manipal University Jaipur online MBA exams conducted?</h2>
+<p>edifyedu.in records Manipal University Jaipur online MBA examinations as taken online. The university sets the exam schedule and proctoring rules each term, so ask our counsellor for the current exam pattern, including how assignments and term-end exams are weighted, before you enrol.</p>
+<ul><li>Exam mode on record: Online</li><li>Proctoring method: not recorded</li><li>Assignment and term-end weighting: not recorded</li></ul>
+<p class="callout-key">Not recorded on edifyedu.in: the proctoring method, the split between assignments and term-end exams, and the passing mark.</p>
+<h2 id="syllabus">What is the Manipal University Jaipur online MBA syllabus?</h2>
+<p>edifyedu.in holds the core syllabus for 2 semesters of the Manipal University Jaipur online MBA: 7 in semester 1 and 6 in semester 2, listed below. Semesters 3 and 4 depend on the specialisation you pick, and we do not hold those papers for every track. Confirm the current syllabus with our counsellor before you enrol.</p>
+<table>
+<thead><tr><th>Semester</th><th>Core subjects held by edifyedu.in</th></tr></thead>
+<tbody><tr><td>Semester 1</td><td>Entrepreneurial Practice, Business Communication, Managerial Economics, Financial Accounting, Data Visualisation (Excel/Tableau), Organizational Behaviour, Marketing Management.</td></tr><tr><td>Semester 2</td><td>Business Research Methods (R/Python), Advanced Financial Management, Operations Management, Human Resource Management, Strategic Management, Legal Aspects of Business.</td></tr><tr><td>Semester 3</td><td>Not published on edifyedu.in (varies by specialisation)</td></tr><tr><td>Semester 4</td><td>Not published on edifyedu.in (varies by specialisation)</td></tr></tbody>
+</table>
+<p class="callout-key">Not published on edifyedu.in: the semester 3 and 4 papers for each specialisation.</p>
+<p>For the UGC-DEB and NAAC checks on Manipal University Jaipur, read <a href="/blog/is-manipal-university-jaipur-fake-or-legit-2026">Is Manipal University Jaipur Fake or Legit? 2026</a>.</p>
+<p class="cta-box">Edify compares public UGC/NAAC/NIRF data, no paid rankings. Talk to our counsellor at <a href="/contact">edifyedu.in/contact</a> before you pay any fee.</p>
+<!-- ai-answers:end -->
+`,
   },
 
   {
@@ -23050,7 +23112,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Is Amity Online MBA worth it for working professionals?', a: 'Amity Online MBA holds NAAC A+ grade and ranks 49 in NIRF Management 2024. The programme is UGC-DEB approved with 14 specialisations including Finance, Marketing, HR, IT, and Healthcare. Live online classes plus recorded sessions make it workable alongside a full-time job.' },
       { q: 'What is the difference between Amity Online MBA and distance MBA?', a: 'Amity Online MBA is delivered through live interactive sessions on the AMIGO learning platform with real-time faculty interaction. The earlier distance MBA format used self-study material with limited contact sessions. The current online format is the one Amity offers for 2026 admissions.' },
       { q: 'Which specialisations does Amity Online MBA offer in 2026?', a: 'Amity offers 14 specialisations: Business Analytics, Data Science, Digital Marketing Management, Entrepreneurship and Leadership Management, Finance and Accounting Management, HR Management, IT Management, International Business Management, International Finance (ACCA), Marketing and Sales Management, Production and Operations Management, Hospital and Healthcare Management, Construction Project Management, and General Management.' }
-    ],
+    ,{"q":"What is the Amity University online MBA syllabus?","a":"Core papers held by edifyedu.in: semester 1: Accounting for Managers, Managerial Economics, Marketing Management, Statistics for Management, Professional communication; semester 2: Business Research Methods, Financial Management, Human Resource Management, Legal Aspects of Business, Conflict Resolution and Management."},{"q":"Is Amity online MBA good or bad?","a":"The Amity University online MBA is worth it if you need a UGC-DEB entitled degree with NAAC A+ accreditation from a parent institution ranked #49 in the NIRF 2025 Management category. Its specialisations are listed on its programme page. Its placement offer is support, not a published outcome for online graduates, so judge it on cost, approvals and fit."},{"q":"Does Amity online MBA offer dual specialisation?","a":"Amity University Online lists an \"MBA With Dual Specialization\" option on its MBA page. That page gives no separate fee or structure for it, and edifyedu.in holds none, so talk to our counsellor for the dual specialisation fee before you apply."},{"q":"Is Amity online MBA WES approved?","a":"Amity University Online states on its MBA page that its degrees are recognised by World Education Services (WES) Canada and USA. edifyedu.in has not checked this with WES, so confirm the current position with WES before you rely on it for an application abroad."}],
     content: `<div class="callout-key">
 <strong>Amity Online MBA fees 2026: the short answer</strong>
 <ul>
@@ -23460,7 +23522,19 @@ export const BLOG_POSTS: BlogPost[] = [
   <p style="margin:0 0 12px;color:#78350f;font-size:14px">Our independent advisors help match programme to career goal  -- for free. No referral commissions from any university.</p>
   <a href="/compare" style="display:inline-block;background:#f59e0b;color:#fff;padding:8px 20px;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px">Get Free Comparison →</a>
 </div>
-    `,
+    
+<!-- ai-answers:start -->
+<h2 id="syllabus">What is the Amity University online MBA syllabus?</h2>
+<p>edifyedu.in holds the core syllabus for 2 semesters of the Amity University online MBA: 5 in semester 1 and 5 in semester 2, listed below. Semesters 3 and 4 depend on the specialisation you pick, and we do not hold those papers for every track. Confirm the current syllabus with our counsellor before you enrol.</p>
+<table>
+<thead><tr><th>Semester</th><th>Core subjects held by edifyedu.in</th></tr></thead>
+<tbody><tr><td>Semester 1</td><td>Accounting for Managers, Managerial Economics, Marketing Management, Statistics for Management, Professional communication</td></tr><tr><td>Semester 2</td><td>Business Research Methods, Financial Management, Human Resource Management, Legal Aspects of Business, Conflict Resolution and Management</td></tr><tr><td>Semester 3</td><td>Not published on edifyedu.in (varies by specialisation)</td></tr><tr><td>Semester 4</td><td>Not published on edifyedu.in (varies by specialisation)</td></tr></tbody>
+</table>
+<p class="callout-key">Not published on edifyedu.in: the semester 3 and 4 papers for each specialisation.</p>
+<p>For the UGC-DEB and NAAC checks on Amity University, read <a href="/blog/is-amity-university-online-fake-or-legit-2026">Is Amity University Online Fake or Legit? 2026</a>.</p>
+<p class="cta-box">Edify compares public UGC/NAAC/NIRF data, no paid rankings. Talk to our counsellor at <a href="/contact">edifyedu.in/contact</a> before you pay any fee.</p>
+<!-- ai-answers:end -->
+`,
   },
 
   {
@@ -27736,7 +27810,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: "Is Sikkim Manipal Online MBA same as Manipal University Jaipur?", a: "No. Sikkim Manipal University, Manipal University Jaipur, and Manipal Academy of Higher Education (MAHE) are three separate universities. SMU is based in Sikkim, MUJ in Jaipur Rajasthan, MAHE in Karnataka. Each has its own online MBA programme with different fees, specialisations, and rankings." },
       { q: "Why do old SMU MBA reviews say avoid it?", a: "Most negative reviews are about the old distance-learning MBA from a decade ago, which had a different structure and reputation problem. The current SMU online MBA is a UGC-DEB approved programme from a NAAC A+ university and is a different offering. Judge it on 2026 facts, not 2013 forum posts." },
       { q: "Is SMU online MBA degree valid in 2026?", a: "Yes. SMU's online MBA is UGC-DEB approved, so the degree is valid for government jobs, further studies, and private employment throughout India." },
-    ],
+    {"q":"Is Sikkim Manipal University online MBA worth it?","a":"The Sikkim Manipal University online MBA is worth it if you need a UGC-DEB entitled degree with NAAC A+ accreditation. It offers 6 specialisations. edifyedu.in has verified no placement outcome for online graduates, so judge it on cost, approvals and fit. The points below come from data edifyedu.in holds. None of them comes from a student review."}],
     content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 16,000 on SMU Online MBA.</p><a href="/coupons/smu-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View SMU Coupon Code</a></div>
 
 <p>Sikkim Manipal University occupies an interesting position in the online MBA market. It is part of the Manipal Education group, which also offers programs under MAHE (Rs. 2.92 lakhs) and MUJ (Rs. 1.56 to 1.84 lakhs). But SMU sits at Rs. 1,20,000 total and comes with something most programs at this price point do not: a mandatory dual specialization requirement.</p>
@@ -27972,6 +28046,20 @@ export const BLOG_POSTS: BlogPost[] = [
   <strong>Disclaimer:</strong> EdifyEdu is an independent university comparison platform. All fees are indicative based on publicly available data as of early 2026. Please verify all current fees, available specializations, and UGC-DEB approval status at <a href="https://www.onlinemanipal.com/institution/sikkim-manipal-university" target="_blank" rel="noopener">onlinemanipal.com</a> before applying. EdifyEdu does not accept referral commissions from any university.
 </div>
 
+
+<!-- ai-answers:start -->
+<h2 id="which-manipal">Which Manipal is it? MUJ, MAHE and Sikkim Manipal online MBA</h2>
+<p>Three separate universities sell an online MBA under the Manipal name: Manipal University Jaipur (MUJ), Manipal Academy of Higher Education (MAHE) and Sikkim Manipal University. Each holds its own UGC-DEB entitlement, NAAC grade and NIRF position, and the name on your degree is that university, so check which one you are applying to.</p>
+<table>
+<thead><tr><th>University</th><th>Location</th><th>NAAC</th><th>NIRF 2025</th><th>MBA specialisations</th></tr></thead>
+<tbody><tr><td>Manipal University Jaipur (MUJ)</td><td>Jaipur, Rajasthan</td><td>A+</td><td>#81 Management (parent institution)</td><td>13</td></tr><tr><td>Manipal Academy of Higher Education (MAHE)</td><td>Manipal, Karnataka</td><td>A++</td><td>#39 Management (parent institution)</td><td>9</td></tr><tr><td>Sikkim Manipal University</td><td>Gangtok, Sikkim</td><td>A+</td><td>No NIRF ranking</td><td>6</td></tr></tbody>
+</table>
+<h2 id="worth-it">Is Sikkim Manipal University online MBA worth it?</h2>
+<p>The Sikkim Manipal University online MBA is worth it if you need a UGC-DEB entitled degree with NAAC A+ accreditation. It offers 6 specialisations. edifyedu.in has verified no placement outcome for online graduates, so judge it on cost, approvals and fit. The points below come from data edifyedu.in holds. None of them comes from a student review.</p>
+<ul><li>For: UGC-DEB entitled for online delivery, so the degree carries the same standing as a campus MBA under UGC Regulation 22.</li><li>For: NAAC A+ accreditation.</li><li>Against: no NIRF ranking for the parent institution.</li><li>Against: 6 specialisations, a narrow choice.</li><li>Against: no placement outcome for online graduates verified by edifyedu.in.</li></ul>
+<p class="callout-key">Not used here: student reviews. edifyedu.in does not quote unverified reviews, and none of the points above comes from one.</p>
+<p class="cta-box">Edify compares public UGC/NAAC/NIRF data, no paid rankings. Talk to our counsellor at <a href="/contact">edifyedu.in/contact</a> before you pay any fee.</p>
+<!-- ai-answers:end -->
 `,
   },
   {
@@ -29727,7 +29815,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Is Chandigarh University Online MBA UGC approved?', a: 'Yes. Chandigarh University is UGC-DEB approved for online programmes, ranks 32 in NIRF Management 2024 and 19 in NIRF University 2024, and holds NAAC A+ with CGPA 3.28.' },
       { q: 'What is the eligibility for Chandigarh University Online MBA?', a: 'Bachelor\'s degree in any discipline from a recognised university with minimum 50 percent aggregate (45 percent for reserved category). No work experience is mandatory for the regular online MBA.' },
       { q: 'How many specialisations does Chandigarh University Online MBA offer?', a: 'Chandigarh University Online MBA offers 23 specialisations covering Finance, Marketing, HR, Operations, Business Analytics, Data Science and Artificial Intelligence, Healthcare, Logistics, International Business, Banking and Finance, and several emerging domain combinations.' }
-    ],
+    ,{"q":"Is Chandigarh University online MBA worth it?","a":"The Chandigarh University online MBA is worth it if you need a UGC-DEB entitled degree with NAAC A+ accreditation. Its specialisations are listed on its programme page. edifyedu.in has verified no placement outcome for online graduates, so judge it on cost, approvals and fit. The points below come from data edifyedu.in holds. None of them comes from a student review."},{"q":"Does Chandigarh University online MBA offer finance?","a":"Yes. Chandigarh University lists \"Finance\" among its online MBA specialisations on the programme list edifyedu.in holds. edifyedu.in does not hold a separate fee for this track, so talk to our counsellor for it."}],
     content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 12,000 on Chandigarh Online MBA.</p><a href="/coupons/chandigarh-university-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View Chandigarh Coupon Code</a></div>
 
 
@@ -30017,7 +30105,16 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
   <strong>Disclaimer:</strong> EdifyEdu is an independent platform. The Harvard Business Publishing certificate is from Harvard's publishing arm, not Harvard University. Verify all current fees, certification terms, and scholarship availability at onlinecu.in before applying. EdifyEdu does not accept referral commissions from any university.
-</div>`,
+</div>
+<!-- ai-answers:start -->
+<h2 id="worth-it">Is Chandigarh University online MBA worth it?</h2>
+<p>The Chandigarh University online MBA is worth it if you need a UGC-DEB entitled degree with NAAC A+ accreditation. Its specialisations are listed on its programme page. edifyedu.in has verified no placement outcome for online graduates, so judge it on cost, approvals and fit. The points below come from data edifyedu.in holds. None of them comes from a student review.</p>
+<ul><li>For: UGC-DEB entitled for online delivery, so the degree carries the same standing as a campus MBA under UGC Regulation 22.</li><li>For: NAAC A+ accreditation.</li><li>Against: the NAAC cycle on record ran to 2026-09-09; confirm the current status at naac.gov.in.</li><li>Against: no placement outcome for online graduates verified by edifyedu.in.</li></ul>
+<p class="callout-key">Not used here: student reviews. edifyedu.in does not quote unverified reviews, and none of the points above comes from one.</p>
+<p>For the UGC-DEB and NAAC checks on Chandigarh University, read <a href="/blog/is-chandigarh-university-online-fake-or-legit-2026">Is Chandigarh University Online Fake or Legit? 2026</a>.</p>
+<p class="cta-box">Edify compares public UGC/NAAC/NIRF data, no paid rankings. Talk to our counsellor at <a href="/contact">edifyedu.in/contact</a> before you pay any fee.</p>
+<!-- ai-answers:end -->
+`,
   },
   {
     slug: 'jaypee-jiit-online-mba-review',
