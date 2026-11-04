@@ -169,6 +169,7 @@ const plans = [...BLOG_PLAN, ...GENERIC_APPENDICES.map(g => g.plan)].filter(p =>
 for (const plan of plans) {
   const gen = GENERIC_APPENDICES.find(g => g.plan.slug === plan.slug)
   const pl = gen ? gen.build() : payloadFor(plan)
+  if (gen) { checkSections(plan.slug, pl.sections); if (pl.html) checkText(plan.slug, pl.html); for (const f of pl.faqs) checkText(`${plan.slug} faq`, `${f.q} ${f.a}`) }
   const targets = nodes.get(plan.slug) ?? []
   if (!targets.length) throw new Error(`slug not in BLOG_POSTS: ${plan.slug}`)
   if (targets.length > 1) report.push(`  ${plan.slug}: DUPLICATE slug, appending to all ${targets.length} entries`)
