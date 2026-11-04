@@ -460,14 +460,14 @@ export function manipalDisambiguation(): AnswerSection {
   }
 }
 
-export function dyPatilDisambiguation(withFee = true): AnswerSection {
+export function dyPatilDisambiguation(withFee = true, withRegisters = true): AnswerSection {
   const us = DYPATIL.map(id => getUniversityById(id)!).filter(Boolean)
   return {
     key: 'which-dy-patil', q: 'X', heading: 'Which D.Y. Patil? Pune and Navi Mumbai online MBA',
     lead: 'Two different universities run an online MBA under the D.Y. Patil name: Dr. D.Y. Patil Vidyapeeth in Pune and D.Y. Patil University in Navi Mumbai. They hold separate UGC-DEB entitlements, NAAC grades and NIRF positions, so check the city and the legal name on the admission page before you pay.',
     table: {
-      head: ['University', 'City', 'NAAC', 'NIRF 2025', 'MBA specialisations', ...(withFee ? ['Total fee'] : [])],
-      rows: us.map(u => [u.name.replace(/\s+Online$/, ''), u.id === 'dr-dy-patil-vidyapeeth-online' ? 'Pune' : 'Navi Mumbai', naacCell(u), nirfCell(u), String(u.programDetails.MBA?.specs.length ?? 0), ...(withFee ? [formatExactFee(mbaFee(u)) ?? 'Talk to our counsellor'] : [])]),
+      head: ['University', 'City', ...(withRegisters ? ['NAAC', 'NIRF 2025'] : []), 'MBA specialisations', ...(withFee ? ['Total fee'] : [])],
+      rows: us.map(u => [u.name.replace(/\s+Online$/, ''), u.id === 'dr-dy-patil-vidyapeeth-online' ? 'Pune' : 'Navi Mumbai', ...(withRegisters ? [naacCell(u), nirfCell(u)] : []), String(u.programDetails.MBA?.specs.length ?? 0), ...(withFee ? [formatExactFee(mbaFee(u)) ?? 'Talk to our counsellor'] : [])]),
     },
     sources: DYPATIL.map(id => `lib/data.ts ${id} name, naac, nirf, specs; lib/fees.ts getExactFee`),
     backed: true,
@@ -508,7 +508,7 @@ export function buildSections(u: University, want: QId[], opts: BuildOpts = {}):
   const n = displayName(u)
   const out: AnswerSection[] = []
   if (MANIPAL.includes(u.id)) out.push(manipalDisambiguation())
-  if (DYPATIL.includes(u.id)) out.push(dyPatilDisambiguation(!(opts.omit ?? []).includes('fee')))
+  if (DYPATIL.includes(u.id)) out.push(dyPatilDisambiguation(!(opts.omit ?? []).includes('fee'), !(opts.omit ?? []).some(o => o === 'naac' || o === 'nirf')))
   for (const q of want) {
     const s =
       q === 'Q1' ? q1(u, n) :

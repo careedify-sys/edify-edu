@@ -42,6 +42,8 @@ import StickyLeadCard    from './StickyLeadCard'
 import CouponCard        from './CouponCard'
 import QuickFactsCard    from './QuickFactsCard'
 import AssuredMarquee   from './AssuredMarquee'
+import QuickAnswers      from './QuickAnswers'
+import { getHubAnswers } from '@/lib/answers/hub-answers'
 import RequestSyllabusCard from './RequestSyllabusCard'
 import { hasSyllabusData } from '@/lib/syllabus'
 import { getProgramLinks } from '@/lib/internal-links'
@@ -219,6 +221,17 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
   const schemaFaqs = s?.faqs?.length
     ? s.faqs.map(f => ({ q: f.question, a: f.answer }))
     : faqs
+
+  // AI-citation sprint (2026-11-04): answer-first sections on MBA hubs with no
+  // review blog. Their FAQ items go after the existing list (FAQBlock emits the
+  // page's single FAQPage), skipping any question the list already asks.
+  // Selection and the conflict rule: lib/answers/hub-answers.ts.
+  const hubAnswers = program === 'MBA' ? getHubAnswers(u) : null
+  const baseFaqs = s?.faqs?.length ? s.faqs.map(f => ({ q: f.question, a: f.answer })) : faqs
+  const askedQ = new Set(baseFaqs.map(f => f.q.trim().toLowerCase()))
+  const shownFaqs = hubAnswers
+    ? [...baseFaqs, ...hubAnswers.faqs.filter(f => !askedQ.has(f.q.trim().toLowerCase()))]
+    : baseFaqs
 
   return (
     <>
@@ -464,9 +477,12 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                 variant="primary"
               />
 
+              {/* Answer-first sections (AI-citation sprint) */}
+              {hubAnswers && <QuickAnswers answers={hubAnswers} />}
+
               {/* §20 FAQs */}
               <div id="faqs">
-                <FAQBlock faqs={s?.faqs?.length ? s.faqs.map(f => ({ q: f.question, a: f.answer })) : faqs} title={`${cleanName} ${shouldIndexUniversity(u.id) ? 'Online ' : ''}${program} FAQs`} />
+                <FAQBlock faqs={shownFaqs} title={`${cleanName} ${shouldIndexUniversity(u.id) ? 'Online ' : ''}${program} FAQs`} />
               </div>
 
               {/* §21 Last Updated */}
