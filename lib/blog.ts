@@ -5497,7 +5497,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Is Symbiosis Online MBA Tier 1 or Tier 2?', a: 'Tier labels are informal, not official. By the markers students use for tiers, Symbiosis sits in the top bracket of online MBA providers: NAAC A++ accredited Symbiosis International (Deemed University), NIRF Management rank 11, and high industry acceptance. Most counsellors and hiring managers treat it as Tier 1 among online MBAs.' },
       { q: 'Which is better for online MBA: Amity or Symbiosis?', a: 'Depends on budget and goal. Symbiosis costs more (₹3.70L total) but carries stronger brand weight and a NIRF Management rank of 11. Amity is cheaper (₹2.07L onwards), offers 14 specialisations and more flexible entry. For brand value pick Symbiosis; for affordability and specialisation range pick Amity. Talk to our counsellor for a side-by-side sheet.' },
       { q: 'Is Symbiosis online MBA worth it?', a: 'For working professionals who want a recognised brand without leaving their job, yes. The degree is UGC-DEB approved and industry acceptance is high. It is not worth it if your only goal is placement support, as online MBA placements everywhere depend heavily on your own networking.' }
-    ],
+    ,{"q":"Does Symbiosis (SSODL) online MBA provide placements?","a":"Symbiosis (SSODL) makes no placement claim for its online MBA on the pages edifyedu.in checked. Neither the SSODL home page nor its MBA page mentions placement assistance, hiring partners or salary figures, so do not assume placement support is part of the fee. Ask for it in writing."},{"q":"How are Symbiosis (SSODL) online MBA exams conducted?","a":"edifyedu.in records them as taken online. Ask our counsellor for the current proctoring rules and weighting."},{"q":"What is the Symbiosis (SSODL) online MBA syllabus?","a":"Core papers held by edifyedu.in: semester 1: Business Statistics, Marketing Management, Financial Accounting, Operations Management, Legal Aspects of Business, Human Resource Management, Research Methodology, Microeconomics, Technology in Business, Data Driven Decision Making.; semester 2: Organizational Behaviour, Operations Research, Macroeconomics, Financial Management, R Programming, Project Management, Management Information Systems, Business Communication, Consumer Behaviour and Insights, Digital Marketing, Design Thinking, Innovation Management.."},{"q":"Is Symbiosis (SSODL) online MBA UGC approved?","a":"Yes. edifyedu.in records Symbiosis (SSODL) as UGC-DEB entitled to offer online programmes, and the university holds NAAC A++ accreditation. The parent institution is ranked NIRF #11 Management (2025). Check each claim yourself on the official registers linked below before you pay, because entitlement is granted per programme and per session."},{"q":"Does Symbiosis (SSODL) online MBA offer healthcare management?","a":"Yes. Symbiosis (SSODL) lists \"Hospital and Health Care Management\" among its online MBA specialisations on the programme list edifyedu.in holds. edifyedu.in does not hold a separate fee for this track, so talk to our counsellor for it."},{"q":"Does Symbiosis (SSODL) online MBA offer business analytics?","a":"Yes. Symbiosis (SSODL) lists \"Business Analytics\" among its online MBA specialisations on the programme list edifyedu.in holds. edifyedu.in does not hold a separate fee for this track, so talk to our counsellor for it."},{"q":"Is Symbiosis online MBA the same as Symbiosis distance MBA?","a":"No. edifyedu.in lists Symbiosis School for Online and Digital Learning (SSODL) for online programmes and does not list a Symbiosis distance (ODL) MBA. Online and distance are different modes, and the UGC-DEB register records the mode for each entitlement, so check the programme and mode at deb.ugc.ac.in."}],
     ctaTitle: '',
     ctaDesc: '',
     content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Verified coupon: up to Rs 5,000 off Symbiosis Online MBA. Max amount unlocks every Tuesday and Saturday (IST).</p><a href="/coupons/symbiosis-ssodl-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View Symbiosis Coupon Code</a></div>
@@ -5606,7 +5606,29 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Read next: the <a href="/universities/symbiosis-university-online/mba" class="ilink">Symbiosis online MBA fees page</a>, plus our reviews of <a href="/blog/nmims-online-mba-review-2026">NMIMS</a>, <a href="/blog/jain-online-mba-review-2026">JAIN</a> and <a href="/blog/amity-online-mba-review-2026">Amity</a> online MBAs. Or <a href="/compare">compare them side by side</a>. Edify compares public UGC/NAAC/NIRF data, no paid rankings.</p>
 
-    `,
+    
+<!-- ai-answers:start -->
+<h2 id="placements">Does Symbiosis (SSODL) online MBA provide placements? What is the average package?</h2>
+<p>Symbiosis (SSODL) makes no placement claim for its online MBA on the pages edifyedu.in checked. Neither the SSODL home page nor its MBA page mentions placement assistance, hiring partners or salary figures, so do not assume placement support is part of the fee. Ask for it in writing.</p>
+<ul><li>Placement assistance: not mentioned on the home or MBA page</li><li>Hiring partners: not mentioned</li><li>Salary figures: not mentioned</li></ul>
+<p class="callout-key">Not published by the university on the pages checked: any placement service, placed-student count or salary figure for online MBA graduates.</p>
+<h2 id="exams">How are Symbiosis (SSODL) online MBA exams conducted?</h2>
+<p>edifyedu.in records Symbiosis (SSODL) online MBA examinations as taken online. The university sets the exam schedule and proctoring rules each term, so ask our counsellor for the current exam pattern, including how assignments and term-end exams are weighted, before you enrol.</p>
+<ul><li>Exam mode on record: Online</li><li>Proctoring method: not recorded</li><li>Assignment and term-end weighting: not recorded</li></ul>
+<p class="callout-key">Not recorded on edifyedu.in: the proctoring method, the split between assignments and term-end exams, and the passing mark.</p>
+<h2 id="syllabus">What is the Symbiosis (SSODL) online MBA syllabus?</h2>
+<p>edifyedu.in holds the core syllabus for 2 semesters of the Symbiosis (SSODL) online MBA: 10 in semester 1 and 12 in semester 2, listed below. Semesters 3 and 4 depend on the specialisation you pick, and we do not hold those papers for every track. Confirm the current syllabus with our counsellor before you enrol.</p>
+<table>
+<thead><tr><th>Semester</th><th>Core subjects held by edifyedu.in</th></tr></thead>
+<tbody><tr><td>Semester 1</td><td>Business Statistics, Marketing Management, Financial Accounting, Operations Management, Legal Aspects of Business, Human Resource Management, Research Methodology, Microeconomics, Technology in Business, Data Driven Decision Making.</td></tr><tr><td>Semester 2</td><td>Organizational Behaviour, Operations Research, Macroeconomics, Financial Management, R Programming, Project Management, Management Information Systems, Business Communication, Consumer Behaviour and Insights, Digital Marketing, Design Thinking, Innovation Management.</td></tr><tr><td>Semester 3</td><td>Not published on edifyedu.in (varies by specialisation)</td></tr><tr><td>Semester 4</td><td>Not published on edifyedu.in (varies by specialisation)</td></tr></tbody>
+</table>
+<p class="callout-key">Not published on edifyedu.in: the semester 3 and 4 papers for each specialisation.</p>
+<h2 id="approvals">Is Symbiosis (SSODL) online MBA UGC approved?</h2>
+<p>Yes. edifyedu.in records Symbiosis (SSODL) as UGC-DEB entitled to offer online programmes, and the university holds NAAC A++ accreditation. The parent institution is ranked NIRF #11 Management (2025). Check each claim yourself on the official registers linked below before you pay, because entitlement is granted per programme and per session.</p>
+<ul><li>UGC-DEB: entitled, on record with edifyedu.in (check at <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a>)</li><li>NAAC: A++ (check at <a href="https://naac.gov.in" target="_blank" rel="noopener">naac.gov.in</a>)</li><li>NIRF 2025: #11 Management (parent institution) (check at <a href="https://www.nirfindia.org" target="_blank" rel="noopener">nirfindia.org</a>)</li><li>AICTE and WES: edifyedu.in has not verified this; talk to our counsellor</li></ul>
+<p class="cta-box">Edify compares public UGC/NAAC/NIRF data, no paid rankings. Talk to our counsellor at <a href="/contact">edifyedu.in/contact</a> before you pay any fee.</p>
+<!-- ai-answers:end -->
+`,
   },
   {
     slug: 'nmims-online-mba-review-2026',
@@ -5630,7 +5652,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Is NMIMS Online MBA worth the fees?', a: 'NMIMS ranks 24 in NIRF Management 2024 (the highest-ranked NMIMS achievement for management), holds NAAC A++ with CGPA 3.67, and is AACSB accredited. For an online MBA in this fee range, the accreditation profile is exceptional. The brand is well-recognised among Indian recruiters.' },
       { q: 'What is the eligibility for NMIMS Online MBA 2026?', a: 'Bachelor\'s degree in any discipline from a recognised university with minimum 50 percent aggregate (45 percent for reserved category). Working professionals are preferred for some specialisations. NMIMS also offers an Online MBA for Working Executives with a separate eligibility requirement.' },
       { q: 'Does NMIMS Online MBA offer placements?', a: 'NMIMS provides career assistance services for online MBA students through its dedicated career cell, but this is separate from the full-time campus placement programme. Most online MBA students use the degree for promotion or career switch within their current employer.' }
-    ],
+    ,{"q":"Does NMIMS online MBA offer business analytics?","a":"Yes. NMIMS lists \"Operations and Data Sciences Management\" among its online MBA specialisations on the programme list edifyedu.in holds. edifyedu.in does not hold a separate fee for this track, so talk to our counsellor for it."}],
     ctaTitle: '',
     ctaDesc: '',
     content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 24,000 on NMIMS Online MBA.</p><a href="/coupons/nmims-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View NMIMS Coupon Code</a></div>
@@ -5882,7 +5904,12 @@ export const BLOG_POSTS: BlogPost[] = [
   </div>
 </div>
 </div>
-    `,
+    
+<!-- ai-answers:start -->
+<p>For the UGC-DEB and NAAC checks on NMIMS, read <a href="/blog/is-nmims-online-fake-or-legit-2026">Is NMIMS Online Fake or Legit? UGC Did Debar It Once, and That Story Has an Ending</a>.</p>
+<p class="cta-box">Edify compares public UGC/NAAC/NIRF data, no paid rankings. Talk to our counsellor at <a href="/contact">edifyedu.in/contact</a> before you pay any fee.</p>
+<!-- ai-answers:end -->
+`,
   },
   {
     slug: 'ignou-online-mba-review-2026',
@@ -11457,7 +11484,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Is LPU Online MBA UGC approved?', a: 'Yes. Lovely Professional University (LPU) is UGC-DEB approved for online programmes, ranks 44 in NIRF Management 2024 and 31 in NIRF University 2024, holds NAAC A++ with CGPA 3.68. The online MBA is treated equivalent to the on-campus MBA.' },
       { q: 'What specialisations does LPU Online MBA offer?', a: 'LPU Online MBA offers specialisations across Finance, Marketing, HR, Operations, International Business, IT, Business Analytics, Retail, Logistics, and several emerging-area combinations. The exact list updates per intake batch.' },
       { q: 'Are LPU Online MBA placements offered?', a: 'LPU provides career assistance through its dedicated online learners\' career cell. This includes resume reviews, mock interviews, and access to the LPU recruiter network. It is not the same as the campus placement programme reserved for on-campus students.' }
-    ],
+    ,{"q":"What is the eligibility for LPU online MBA?","a":"Graduation with 50% marks from recognized university, as recorded on edifyedu.in. No entrance test or work-experience requirement is on record; confirm with our counsellor."},{"q":"How are LPU online MBA exams conducted?","a":"edifyedu.in records them as taken online. Ask our counsellor for the current proctoring rules and weighting."}],
     ctaTitle: '',
     ctaDesc: '',
     content: `<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Save up to Rs 18,000 on LPU Online MBA.</p><a href="/coupons/lpu-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View LPU Coupon Code</a></div>
@@ -11888,7 +11915,20 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="ilink">📘 Not sure if an online MBA is the right call at all? <a href="/blog/is-online-mba-worth-it-2026">Is Online MBA Worth It in 2026?</a> covers the ROI numbers honestly.</div>
 
 <div class="ilink">💰 Looking at other universities in the same price range? <a href="/blog/affordable-online-mba-india-2026">Best Affordable Online MBA in India 2026</a>, programs from ₹54,000 compared.</div>
-    `,
+    
+<!-- ai-answers:start -->
+<h2 id="eligibility">What is the eligibility for LPU online MBA?</h2>
+<p>The LPU online MBA asks for the following, as recorded on edifyedu.in: graduation with 50% marks from recognized university. edifyedu.in has no entrance test or work-experience requirement on record for this programme, so confirm both with our counsellor before you apply. Our counsellor can also tell you which documents to keep ready.</p>
+<ul><li>Qualifying degree: Graduation with 50% marks from recognized university</li><li>Minimum marks on record: 50%</li><li>Entrance test: none on record with edifyedu.in</li><li>Work experience: none on record with edifyedu.in</li></ul>
+<p class="callout-key">Not recorded on edifyedu.in: reserved-category relaxation, and whether final-year students get provisional admission.</p>
+<h2 id="exams">How are LPU online MBA exams conducted?</h2>
+<p>edifyedu.in records LPU online MBA examinations as taken online. The university sets the exam schedule and proctoring rules each term, so ask our counsellor for the current exam pattern, including how assignments and term-end exams are weighted, before you enrol.</p>
+<ul><li>Exam mode on record: Online</li><li>Proctoring method: not recorded</li><li>Assignment and term-end weighting: not recorded</li></ul>
+<p class="callout-key">Not recorded on edifyedu.in: the proctoring method, the split between assignments and term-end exams, and the passing mark.</p>
+<p>For the UGC-DEB and NAAC checks on LPU, read <a href="/blog/is-lpu-online-fake-or-legit-2026">Is LPU Online Fake or Legit? 2026</a>.</p>
+<p class="cta-box">Edify compares public UGC/NAAC/NIRF data, no paid rankings. Talk to our counsellor at <a href="/contact">edifyedu.in/contact</a> before you pay any fee.</p>
+<!-- ai-answers:end -->
+`,
   },
 
   // ── DISTANCE MBA KOLKATA ───────────────────────────────────────────────────
@@ -28087,7 +28127,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'What is the EMI for UU Doon Online MBA?', a: 'The EMI starts from Rs. 4,317 per month, which is the lowest among comparable accredited online MBA programs in India. Exam fees are already included in the semester fee.' },
       { q: 'What specializations does UU Doon Online MBA offer?', a: '8 specializations: Business Analytics, Digital Marketing, Financial Management, HR Management, Information Technology, International Business, Logistics & Supply Chain Management, and Marketing Management.' },
       { q: 'Who should apply for UU Doon Online MBA?', a: 'Best suited for working professionals in Uttarakhand, UP, and North India, especially government/semi-government employees needing an MBA for promotion, or professionals in marketing who want the formal credential at minimum cost.' }
-    ],
+    ,{"q":"Is Uttaranchal University online MBA worth it?","a":"The Uttaranchal University online MBA is worth it if you need a UGC-DEB entitled degree with NAAC A+ accreditation. It offers 8 specialisations. Its placement offer is support, not a published outcome for online graduates, so judge it on cost, approvals and fit. The points below come from data edifyedu.in holds. None of them comes from a student review."},{"q":"Does Uttaranchal University online MBA provide placements?","a":"Uttaranchal University lists placement assistance for its online MBA, including CV workshops and mock interviews. Its online site states no hiring-partner count, placement rate or package figure for online learners, so treat placement as preparation support rather than a published outcome."},{"q":"Is Uttaranchal University online MBA degree valid?","a":"Yes. The Uttaranchal University online MBA is a valid degree in India when you join a session for which UGC-DEB has entitled the university, and edifyedu.in records it as entitled. Regulation 22 of the UGC ODL and Online Programmes Regulations, 2020 says such degrees \"shall be treated as equivalent\" to campus degrees."},{"q":"How are Uttaranchal University online MBA exams conducted?","a":"edifyedu.in records them as taken online. Ask our counsellor for the current proctoring rules and weighting."}],
     content: `<p><a href="/universities/uttaranchal-university-online">Uttaranchal University Online</a>, or UU Online, does not get nearly as much search traffic as Amity or LPU, and that is precisely why it can rank well for certain searches. The university holds NAAC A+ accreditation, sits in Dehradun, and was the first university in Uttarakhand to receive A+ in the first accreditation cycle. The online MBA at Rs. 1,03,600 total (after the 30% scholarship) is one of the most affordable accredited options in North India.</p>
 
 <p>This review uses publicly available data. EdifyEdu does not take referral fees. All fees should be verified at <a href="https://www.onlineuu.in/mba.php" target="_blank" rel="noopener">onlineuu.in</a>.</p>
@@ -28305,7 +28345,27 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div style="font-size:13px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px;margin-top:32px">
   <strong>Disclaimer:</strong> EdifyEdu is an independent university comparison platform. All fees are indicative based on publicly available data as of early 2026. The 30% scholarship availability should be verified directly at <a href="https://www.onlineuu.in/mba.php" target="_blank" rel="noopener">onlineuu.in</a>. Confirm UGC-DEB approval status on the UGC portal before applying. EdifyEdu does not accept referral commissions from any university.
-</div>`,
+</div>
+<!-- ai-answers:start -->
+<h2 id="worth-it">Is Uttaranchal University online MBA worth it?</h2>
+<p>The Uttaranchal University online MBA is worth it if you need a UGC-DEB entitled degree with NAAC A+ accreditation. It offers 8 specialisations. Its placement offer is support, not a published outcome for online graduates, so judge it on cost, approvals and fit. The points below come from data edifyedu.in holds. None of them comes from a student review.</p>
+<ul><li>For: UGC-DEB entitled for online delivery, so the degree carries the same standing as a campus MBA under UGC Regulation 22.</li><li>For: NAAC A+ accreditation.</li><li>Against: no NIRF ranking for the parent institution.</li><li>Against: placement assistance with CV workshops and mock interviews; no figures.</li></ul>
+<p class="callout-key">Not used here: student reviews. edifyedu.in does not quote unverified reviews, and none of the points above comes from one.</p>
+<h2 id="placements">Does Uttaranchal University online MBA provide placements? What is the average package?</h2>
+<p>Uttaranchal University lists placement assistance for its online MBA, including CV workshops and mock interviews. Its online site states no hiring-partner count, placement rate or package figure for online learners, so treat placement as preparation support rather than a published outcome.</p>
+<ul><li>Placement assistance: stated by the university</li><li>CV workshops and mock interviews: stated</li><li>Hiring-partner count: not stated</li><li>Placement rate and package: not stated</li></ul>
+<p class="callout-key">Not published by the university on its online site: placed-student count, placement rate, median or average salary for online MBA graduates.</p>
+<h2 id="degree-valid">Is the Uttaranchal University online MBA degree valid, and does it say "online"?</h2>
+<p>Yes. The Uttaranchal University online MBA is a valid degree in India when you join a session for which UGC-DEB has entitled the university, and edifyedu.in records it as entitled. Regulation 22 of the UGC ODL and Online Programmes Regulations, 2020 says such degrees "shall be treated as equivalent" to campus degrees.</p>
+<ul><li>UGC-DEB entitlement: recorded on edifyedu.in</li><li>Equivalence: UGC Regulation 22, read at <a href="https://deb.ugc.ac.in/FAQ" target="_blank" rel="noopener">deb.ugc.ac.in</a></li><li>Check your programme and intake year on the <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">UGC-DEB register</a> before you pay</li></ul>
+<p class="callout-key">Not verified by edifyedu.in: whether the Uttaranchal University degree certificate states the online mode. Ask the university for a sample in writing, or talk to our counsellor.</p>
+<h2 id="exams">How are Uttaranchal University online MBA exams conducted?</h2>
+<p>edifyedu.in records Uttaranchal University online MBA examinations as taken online. The university sets the exam schedule and proctoring rules each term, so ask our counsellor for the current exam pattern, including how assignments and term-end exams are weighted, before you enrol.</p>
+<ul><li>Exam mode on record: Online</li><li>Proctoring method: not recorded</li><li>Assignment and term-end weighting: not recorded</li></ul>
+<p class="callout-key">Not recorded on edifyedu.in: the proctoring method, the split between assignments and term-end exams, and the passing mark.</p>
+<p class="cta-box">Edify compares public UGC/NAAC/NIRF data, no paid rankings. Talk to our counsellor at <a href="/contact">edifyedu.in/contact</a> before you pay any fee.</p>
+<!-- ai-answers:end -->
+`,
   },
   {
     slug: 'galgotias-online-mba-review',
@@ -36904,7 +36964,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
       { q: "What is the placement after BITS Pilani WILP MBA?", a: "BITS WILP does not provide on-campus placement drives, the programme is designed for already-employed working professionals. What it provides: 1,40,000+ alumni network access in IT, manufacturing, telecom, pharma; career counselling; resume reviews; networking opportunities. Realistic outcomes: working professionals with 3-5 years prior experience typically see ₹3-7 LPA salary increments through promotions and lateral moves. Senior career trajectories can reach ₹20-40 LPA range over 3-5 years." },
       { q: "Does BITS Pilani WILP have NAAC accreditation?", a: "Yes. BITS Pilani holds NAAC A++ accreditation, the highest possible NAAC grade. The institute also ranks #16 in NIRF Overall 2025 and is a UGC-approved deemed-to-be university under Section 3 of the UGC Act. AICTE approval is also in place for the WILP programmes. Verify the latest details on the official university portal and on UGC-DEB before applying." },
       { q: "Can I do BITS Pilani WILP MBA if I'm sponsored by my company?", a: "Yes, and corporate sponsorship may qualify you for a fee concession or waiver. BITS WILP has Memorandums of Understanding (MoUs) with several Indian and multinational corporates (TCS, Infosys, Wipro, L&T, Tata Motors, and others) where employer-sponsored candidates receive structured fee concessions. Check with your HR or learning and development team whether your employer has an active MoU with BITS Pilani WILP before applying." }
-    ],
+    ,{"q":"Is BITS Pilani WILP online MBA degree valid?","a":"Yes. The BITS Pilani WILP online MBA is a valid degree in India when you join a session for which UGC-DEB has entitled the university, and edifyedu.in records it as entitled. Regulation 22 of the UGC ODL and Online Programmes Regulations, 2020 says such degrees \"shall be treated as equivalent\" to campus degrees."},{"q":"How are BITS Pilani WILP online MBA exams conducted?","a":"edifyedu.in records them as taken online. Ask our counsellor for the current proctoring rules and weighting."},{"q":"Does BITS Pilani offer an online MBA?","a":"Yes. edifyedu.in lists an MBA as the online programme of BITS Pilani Work Integrated Learning Programmes (WILP), with 2 Years on record. BITS Pilani WILP is listed separately from Birla Institute of Technology (BIT) Mesra, so check the full name on the admission page."}],
     author: 'Rishi Kumar',
     content: `
 <p class="byline"><em>By Rishi Kumar, Founder of EdifyEdu • Published 4 May 2026 • Last Updated 4 May 2026</em></p>
@@ -37085,6 +37145,18 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>For applicants comparing the bits pilani online mba options across different price tiers, the comparison table above gives the most accurate snapshot of fees and accreditations as of 4 May 2026. The bits pilani online mba continues to attract applicants from working-professional backgrounds because of its flexibility and lower cost compared to on-campus alternatives. When evaluating any bits pilani online mba programme, the three highest-priority filters are UGC-DEB approval, NAAC grade, and current scholarship eligibility.</p>
 <p class="disclaimer"><em>Disclaimer: All fees, scholarships, NIRF ranks, and specialisation availability are indicative as of the date of this article and subject to revision by the institute each academic year. EdifyEdu does not earn referral commission from any university listed. Always verify current programme details on the official institute portal and on UGC-DEB before payment.</em></p>
+
+<!-- ai-answers:start -->
+<h2 id="degree-valid">Is the BITS Pilani WILP online MBA degree valid, and does it say "online"?</h2>
+<p>Yes. The BITS Pilani WILP online MBA is a valid degree in India when you join a session for which UGC-DEB has entitled the university, and edifyedu.in records it as entitled. Regulation 22 of the UGC ODL and Online Programmes Regulations, 2020 says such degrees "shall be treated as equivalent" to campus degrees.</p>
+<ul><li>UGC-DEB entitlement: recorded on edifyedu.in</li><li>Equivalence: UGC Regulation 22, read at <a href="https://deb.ugc.ac.in/FAQ" target="_blank" rel="noopener">deb.ugc.ac.in</a></li><li>Check your programme and intake year on the <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">UGC-DEB register</a> before you pay</li></ul>
+<p class="callout-key">Not verified by edifyedu.in: whether the BITS Pilani WILP degree certificate states the online mode. Ask the university for a sample in writing, or talk to our counsellor.</p>
+<h2 id="exams">How are BITS Pilani WILP online MBA exams conducted?</h2>
+<p>edifyedu.in records BITS Pilani WILP online MBA examinations as taken online. The university sets the exam schedule and proctoring rules each term, so ask our counsellor for the current exam pattern, including how assignments and term-end exams are weighted, before you enrol.</p>
+<ul><li>Exam mode on record: Online</li><li>Proctoring method: not recorded</li><li>Assignment and term-end weighting: not recorded</li></ul>
+<p class="callout-key">Not recorded on edifyedu.in: the proctoring method, the split between assignments and term-end exams, and the passing mark.</p>
+<p class="cta-box">Edify compares public UGC/NAAC/NIRF data, no paid rankings. Talk to our counsellor at <a href="/contact">edifyedu.in/contact</a> before you pay any fee.</p>
+<!-- ai-answers:end -->
 `,
   },
   {
