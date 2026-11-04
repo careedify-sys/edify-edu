@@ -6,7 +6,7 @@
   `data/naac-official-2025.tsv` where Supabase has no row (BITS and DY Patil Navi Mumbai are ABSENT), and lib/data.ts
   for spec counts and getExactFee. Each flag in audits/ai-citation-flags-2026-11-04.md was re-probed first.
 - **One flag was backwards:** BITS Pilani. The post says NAAC A++ and the official NAAC list agrees (cycle 4, CGPA
-  3.68, declared 29-11-2024). lib/data.ts said A+, so data.ts was fixed (naac and the approvals badge), not the post.
+  3.68, declared 29-11-2024). lib/data.ts said A+, so data.ts was fixed (naac and the approvals badge), not the post. The wrong grade had been copied into data-slim (caught by check-data-slim-drift), all 10 BITS page-content JSONs (59 places) and the AMU hub JSON; all fixed. A blanket swap in the BITS JSONs also hit two peers (DSU, ICFAI are A+, restored) and two "VIT has A++ over BITS's A+" lines, rewritten as "Both hold NAAC A++".
   The post's "NIRF #16 Overall 2025" was left: it states its category and nirfindia.org returned 403, so it could not
   be checked. BITS spec count 8 to 9 (data.ts lists 9).
 - **Vignan:** NAAC A+ to A++ in 11 places across 5 posts (cycle 4, 2024-06-16, CGPA 3.58). The same table had NMIMS
