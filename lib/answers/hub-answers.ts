@@ -64,18 +64,26 @@ export interface HubAnswers {
 const STOP = new Set(['university', 'universities', 'online', 'institute', 'technology', 'science', 'sciences', 'management', 'global', 'deemed', 'higher', 'education', 'academy', 'college', 'open', 'national', 'studies', 'research', 'school', 'business', 'india', 'indian', 'state', 'central', 'centre', 'center', 'distance', 'learning', 'vidyapeeth', 'vishwavidyalaya', 'the', 'and', 'for', 'mba', 'new', 'dr.'])
 const words = (s: string) => s.toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').split(/\s+/).filter(w => w.length >= 3 && !STOP.has(w))
 
+// Abbreviations a university goes by, so its own sentences are not read as a peer's.
+const ABBR: Record<string, string[]> = {
+  'lovely-professional-university-online': ['lpu'], 'manipal-university-jaipur-online': ['muj', 'manipal'], 'manipal-academy-higher-education-online': ['mahe', 'manipal'],
+  'sikkim-manipal-university-online': ['smu', 'manipal'], 'symbiosis-university-online': ['ssodl', 'symbiosis'], 'srm-institute-science-technology-online': ['srmist'],
+  'upes-online': ['upes'], 'jain-university-online': ['jain'], 'bits-pilani-work-integrated-online': ['bits', 'wilp'], 'ignou-online': ['ignou'],
+  'dr-dy-patil-vidyapeeth-online': ['dpu', 'vidyapeeth'], 'dy-patil-university-online': ['dypu'], 'nmims-online': ['nmims'], 'amity-university-online': ['amity'],
+}
+
 let PEER_CACHE: Map<string, string[]> | null = null
 function peerTokens(u: University): string[] {
   PEER_CACHE ??= new Map()
   const hit = PEER_CACHE.get(u.id)
   if (hit) return hit
-  const own = new Set([...words(u.name), ...words(displayName(u)), ...words(u.city ?? ''), ...words(u.state ?? ''), ...words(u.shortName ?? '')])
+  const own = new Set([...words(u.name), ...words(displayName(u)), ...words(u.city ?? ''), ...words(u.state ?? ''), ...words(u.shortName ?? ''), ...(ABBR[u.id] ?? [])])
   const out = new Set<string>()
   for (const p of UNIVERSITIES) {
     if (p.id === u.id) continue
     for (const w of [...words(p.name), ...words(p.shortName ?? '')]) if (!own.has(w)) out.add(w)
   }
-  for (const w of ['nmims', 'symbiosis', 'amity', 'manipal', 'vidyapeeth', 'iift', 'iim']) if (!own.has(w)) out.add(w)
+  for (const w of ['nmims', 'symbiosis', 'amity', 'manipal', 'vidyapeeth', 'iift', 'iim', 'lpu', 'muj', 'mahe', 'smu', 'ssodl', 'scdl', 'srmist', 'upes', 'jain', 'bits', 'wilp', 'ignou', 'dypu', 'dpu']) if (!own.has(w) && !ABBR[u.id]?.includes(w)) out.add(w)
   const arr = Array.from(out)
   PEER_CACHE.set(u.id, arr)
   return arr
@@ -97,8 +105,19 @@ function rupees(num: string, unit?: string): number {
 export function hubConflicts(u: University): HubConflict[] {
   const pc = getPageContent(u.id, 'MBA')
   if (!pc) return []
+  const out = textConflicts(u, jsonStrings(pc))
+  if (pc.sections?.placements?.body || pc.sections?.topHirers?.body) out.push({ kind: 'placements', snippet: 'page-content JSON carries placements/topHirers copy' })
+  return out
+}
+
+/**
+ * Fact types that existing hand-written text states differently from data for
+ * university u. Sentences naming another university are skipped, so a pair
+ * page's "Amity holds NAAC A+" is checked against Amity only.
+ */
+export function textConflicts(u: University, strings: string[]): HubConflict[] {
   const peers = peerTokens(u)
-  const sentences = jsonStrings(pc).flatMap(s => s.split(/\n+|(?<=[a-z0-9)%])[.;]\s+/))
+  const sentences = strings.flatMap(s => s.split(/\n+|(?<=[a-z0-9)%])[.;]\s+/))
   const own = sentences.filter(s => { const w = new Set(words(s)); return !peers.some(t => w.has(t)) })
   const out: HubConflict[] = []
   const add = (kind: ConflictKind, s: string) => { if (!out.some(c => c.kind === kind)) out.push({ kind, snippet: s.trim().slice(0, 160) }) }
@@ -126,7 +145,6 @@ export function hubConflicts(u: University): HubConflict[] {
     }
     if (elig) for (const m of Array.from(s.matchAll(/\b(\d{2})\s*%\s*(?:aggregate|marks|in graduation)/gi))) if (m[1] !== elig) add('eligibility', s)
   }
-  if (pc.sections?.placements?.body || pc.sections?.topHirers?.body) add('placements', 'page-content JSON carries placements/topHirers copy')
   return out
 }
 

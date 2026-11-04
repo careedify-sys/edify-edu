@@ -397,6 +397,12 @@ function q7(u: University, n: string): AnswerSection | null {
   }
 }
 
+/** Core MBA semesters held in the syllabus manifest (_core only), with subjects. */
+export function coreSemesters(u: University): { sem: number; subjects: string[] }[] {
+  const syl = (syllabusManifest as unknown as Record<string, Record<string, Record<string, { semesters?: { sem: number; subjects: string[] }[] }>>>)[u.id]?.mba?._core
+  return syl?.semesters?.filter(s => s.subjects?.length) ?? []
+}
+
 function q8(u: University, n: string): AnswerSection | null {
   // Manifest _core only. getSyllabus() falls back to the legacy MASTER_SYLLABUS
   // in lib/content.ts, which is not university-specific enough to cite.

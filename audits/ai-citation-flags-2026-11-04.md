@@ -57,12 +57,33 @@ New copy was written to avoid each conflict (the `omit` list in `lib/answers/blo
 | `app/compare/[pair]/pairs.ts:21` | "NMIMS has NIRF #17 Management ... Symbiosis (SSODL) has NAAC A++" etc. | same | same |
 | `app/compare/[pair]/pairs.ts` (amrita-vs-nmims) | "Amrita degrees are WES recognised"; "NMIMS also has WES recognition" | no provenance row | not repeated |
 
+### Hub page-content JSON conflicts (QuickAnswers left these facts out)
+
+Full list: `audits/ai-citation-hub-answers-A-2026-11-04.md` (regenerate with `npx tsx scripts/audit-hub-answer-conflicts.mts`). The ones that are real data disagreements:
+
+| Hub JSON (lib/data/page-content) | Existing sentence | Data |
+|---|---|---|
+| dy-patil-university-online MBA | "NAAC A, WES Recognised, 11 Specialisations" (hero headline) | data.ts naac A++; the hub hero badge already prints A++, so the hub contradicts itself |
+| same | "Programme fee ranges from Rs 41,000 to Rs 1,69,000" | getExactFee Rs 1,75,000 (the hub title prints Rs 1,75,000) |
+| same | "does not have a confirmed NIRF rank in standard categories" | data.ts nirf 91 (University) |
+| same | "Dr. DY Patil Vidyapeeth Online (Pune): NAAC A+" | data.ts DPU naac A++ |
+| chitkara-university-online MBA | "ranges from approximately Rs 50,000 to Rs 3,00,000" | getExactFee Rs 2,00,000 |
+| sharda-university-online MBA | "Rs 1,40,000 total fee" | getDisplayFee suppresses the Sharda MBA fee |
+
+### Comparison pairs: existing FAQ and verdict text that disagrees with data
+
+Full list: `audits/ai-citation-pair-omissions-2026-11-04.md`. Beyond the NMIMS #17 rows above, the hand-written pairs also state, among others: MUJ "NIRF #3 University" (manipal-jaipur-vs-manipal-mahe), NMIMS "NIRF #8 University" (amrita-vs-nmims), Amity and JAIN University ranks that differ from data.ts (amity-vs-jain), SMU "effective fee Rs 84,000" (sikkim-manipal-vs-amity). The new sections omit NIRF on every old pair, and omit fee, NAAC or spec count where the scanner found a mismatch.
+
+### Comparison link slot (lib/compare-links.ts)
+
+Letting the 14 new pairs compete for the existing 3 link slots per post would have swapped a link on 82 of 179 posts. Instead the existing 3 are unchanged and a new pair takes a 4th slot (166 new links, 40/40 pages covered). If Rishi prefers the old cap, set `MAX_DERIVED_EXTRA` to 0, but then srm-vs-manipal and nmims-vs-dy-patil have no inbound post link and the gate fails.
+
 ## Not fixable additively, skipped
 
 - Q10 admission dates: no admission_cycles data exists in the repo, so no "when does admission open" section was written for any university.
 - NMIMS "is nmims online mba banned": no ugc.gov.in notice was fetched; skipped.
 - LPU "for defence personnel": lpuonline.com links /jai-jawan-scholarship with no text on the home page; not fetched further; skipped.
 - Manipal (MUJ, MAHE, SMU) placement and exam answers: onlinemanipal.com returned HTTP 403 on 4 Nov 2026.
-- vit-vs-bennett: both exist in lib/data.ts, but Bennett has no MBA fee that passes getExactFee, NAAC blank and 1 spec; see the comparison section of the final report.
+- vit-vs-bennett: verified 4 Nov 2026 by script. Bennett University Online has getExactFee kind "none" for MBA, no NAAC grade in lib/data.ts, no NIRF rank and 1 MBA specialisation, so a comparison page would be a table of blanks on one side. Not built.
 - nmims-online-vs-mba-wx: NMIMS carries no 'MBA (WX)' programme in lib/data.ts. Skipped.
 - "is online mba going to be 3 years from 2027": no UGC notification found; no page.
