@@ -66,6 +66,21 @@ const STATIC_URLS = [
   '/compare/sharda-vs-galgotias-bba',
   '/compare/amity-vs-lpu-bca',
   '/compare/ignou-vs-lpu',
+  // AI-citation sprint pairs (2026-11-04).
+  '/compare/amity-vs-dy-patil',
+  '/compare/amity-vs-srm',
+  '/compare/ignou-vs-amity',
+  '/compare/symbiosis-vs-manipal',
+  '/compare/dy-patil-vs-manipal',
+  '/compare/jain-vs-manipal',
+  '/compare/srm-vs-manipal',
+  '/compare/nmims-vs-dy-patil',
+  '/compare/nmims-vs-jain',
+  '/compare/nmims-vs-mahe',
+  '/compare/bits-pilani-vs-nmims',
+  '/compare/vit-vs-srm',
+  '/compare/jain-vs-amrita',
+  '/compare/dy-patil-vs-symbiosis',
 
   // Added 2026-11-02. The Online DBA section: pillar, two topic pages and one
   // page per programme in data/dba-programmes.ts. Keep this block equal to

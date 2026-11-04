@@ -49,6 +49,20 @@ const MBA_PAIRS = [
   { label: 'Amity vs Symbiosis Online MBA', href: '/compare/amity-vs-symbiosis' },
   { label: 'MUJ vs MAHE Online MBA', href: '/compare/manipal-jaipur-vs-manipal-mahe' },
   { label: 'IGNOU vs LPU Online MBA', href: '/compare/ignou-vs-lpu' },
+  { label: 'Amity vs DY Patil (Pune) Online MBA', href: '/compare/amity-vs-dy-patil' },
+  { label: 'Amity vs SRM Online MBA', href: '/compare/amity-vs-srm' },
+  { label: 'IGNOU vs Amity Online MBA', href: '/compare/ignou-vs-amity' },
+  { label: 'Symbiosis vs Manipal MUJ Online MBA', href: '/compare/symbiosis-vs-manipal' },
+  { label: 'DY Patil (Pune) vs Manipal MUJ Online MBA', href: '/compare/dy-patil-vs-manipal' },
+  { label: 'JAIN vs Manipal MUJ Online MBA', href: '/compare/jain-vs-manipal' },
+  { label: 'SRM vs Manipal MUJ Online MBA', href: '/compare/srm-vs-manipal' },
+  { label: 'NMIMS vs DY Patil (Pune) Online MBA', href: '/compare/nmims-vs-dy-patil' },
+  { label: 'NMIMS vs JAIN Online MBA', href: '/compare/nmims-vs-jain' },
+  { label: 'NMIMS vs MAHE Online MBA', href: '/compare/nmims-vs-mahe' },
+  { label: 'BITS Pilani WILP vs NMIMS Online MBA', href: '/compare/bits-pilani-vs-nmims' },
+  { label: 'VIT vs SRM Online MBA', href: '/compare/vit-vs-srm' },
+  { label: 'JAIN vs Amrita Online MBA', href: '/compare/jain-vs-amrita' },
+  { label: 'DY Patil (Pune) vs Symbiosis Online MBA', href: '/compare/dy-patil-vs-symbiosis' },
 ]
 
 // Popular comparison pairs — MCA

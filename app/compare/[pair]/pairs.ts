@@ -1,5 +1,7 @@
 // app/compare/[pair]/pairs.ts — Static comparison page configs
 
+import { derivedVerdict } from '@/lib/answers/pair-verdict'
+
 export type PairConfig = {
   uniA: string
   uniB: string
@@ -8,7 +10,15 @@ export type PairConfig = {
   faqs: { q: string; a: string }[]
   verdictA: string[]
   verdictB: string[]
+  /** AI-citation sprint pairs (2026-11-04): no hand-written FAQs; verdicts
+   *  derived from lib/data.ts by lib/answers/pair-verdict.ts. */
+  derived?: boolean
 }
+
+// A derived pair: FAQs come from lib/answers/compare-answers.ts at render time.
+const derivedPair = (uniA: string, uniB: string): PairConfig => ({
+  uniA, uniB, program: 'MBA', defaultSpec: 'finance', faqs: [], derived: true, ...derivedVerdict(uniA, uniB),
+})
 
 export const PAIRS: Record<string, PairConfig> = {
   /* ─── PROVEN DEMAND (6) ─── */
@@ -398,6 +408,25 @@ export const PAIRS: Record<string, PairConfig> = {
     verdictA: ['Budget is your absolute priority (Rs 66,000 total is unmatched)', 'Government job or PSU recruitment is your target', 'You want a Central Government university brand on your degree'],
     verdictB: ['You want 12 specialisation options with dual-spec flexibility', 'NAAC A++ and modern LMS platform matter to you', 'Private sector career with recruiter-partner network is your goal'],
   },
+
+  /* ─── AI-CITATION SPRINT (2026-11-04): searched matchups with no page ───
+     "Manipal" alone means MUJ (the page adds the MUJ/MAHE/SMU table).
+     "DY Patil" alone means Dr. D.Y. Patil Vidyapeeth, Pune (the page adds the
+     Pune and Navi Mumbai table). */
+  'amity-vs-dy-patil': derivedPair('amity-university-online', 'dr-dy-patil-vidyapeeth-online'),
+  'amity-vs-srm': derivedPair('amity-university-online', 'srm-institute-science-technology-online'),
+  'ignou-vs-amity': derivedPair('ignou-online', 'amity-university-online'),
+  'symbiosis-vs-manipal': derivedPair('symbiosis-university-online', 'manipal-university-jaipur-online'),
+  'dy-patil-vs-manipal': derivedPair('dr-dy-patil-vidyapeeth-online', 'manipal-university-jaipur-online'),
+  'jain-vs-manipal': derivedPair('jain-university-online', 'manipal-university-jaipur-online'),
+  'srm-vs-manipal': derivedPair('srm-institute-science-technology-online', 'manipal-university-jaipur-online'),
+  'nmims-vs-dy-patil': derivedPair('nmims-online', 'dr-dy-patil-vidyapeeth-online'),
+  'nmims-vs-jain': derivedPair('nmims-online', 'jain-university-online'),
+  'nmims-vs-mahe': derivedPair('nmims-online', 'manipal-academy-higher-education-online'),
+  'bits-pilani-vs-nmims': derivedPair('bits-pilani-work-integrated-online', 'nmims-online'),
+  'vit-vs-srm': derivedPair('vit-university-online', 'srm-institute-science-technology-online'),
+  'jain-vs-amrita': derivedPair('jain-university-online', 'amrita-vishwa-vidyapeetham-online'),
+  'dy-patil-vs-symbiosis': derivedPair('dr-dy-patil-vidyapeeth-online', 'symbiosis-university-online'),
 } as const
 
 export type PairSlug = keyof typeof PAIRS

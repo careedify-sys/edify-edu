@@ -14,6 +14,9 @@ import { PAIRS, PAIR_SLUGS, type PairSlug } from './pairs'
 // produced the 404 wave Search Console reported on 2026-08-23.
 import { hubResolves, getVerifyPage } from '@/lib/seo/safe-internal-links'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
+import { buildPairAnswers } from '@/lib/answers/compare-answers'
+import { sectionHtml } from '@/lib/answers/render-html'
+import { FROZEN_UNIVERSITIES } from '@/lib/answers/targets'
 
 export const revalidate = false
 
@@ -59,12 +62,15 @@ export async function generateMetadata(
   const prog = config.program
   const year = new Date().getFullYear()
 
-  const title = `${nameA} vs ${nameB} Online ${prog} ${year}: Fees and Verdict | EdifyEdu`
+  // Pairs added in the AI-citation sprint carry the brand as "edifyedu.in";
+  // the existing pairs keep their published wording (flagged, not changed).
+  const brand = config.derived ? 'edifyedu.in' : 'EdifyEdu'
+  const title = `${nameA} vs ${nameB} Online ${prog} ${year}: Fees and Verdict | ${brand}`
   const feeA = getProgramFee(uA, prog)
   const feeB = getProgramFee(uB, prog)
   const phraseA = feePhrase(feeA), phraseB = feePhrase(feeB)
   const feeStr = phraseA && phraseB ? ` (${phraseA} vs ${phraseB})` : ''
-  const desc = `${nameA} vs ${nameB} online ${prog} ${year}: NAAC grade, fees${feeStr}, NIRF rank and verdict. Independent, zero-commission comparison at EdifyEdu.`
+  const desc = `${nameA} vs ${nameB} online ${prog} ${year}: NAAC grade, fees${feeStr}, NIRF rank and verdict. Independent, zero-commission comparison at ${brand}.`
 
   return {
     // Longest form that fits 60 chars. The old single fallback still ran to 76
@@ -109,6 +115,15 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
     /fee|cost|cheap|expens|price|afford/i.test(f.q) && /(Rs|₹)\s?[\d,.]+/.test(f.a) ? { q: f.q, a: feeAnswer } : f,
   )
 
+  // AI-citation sprint (2026-11-04): answer-first sections and autocomplete
+  // FAQs for MBA pairs, appended after the existing FAQs (one FAQPage).
+  // Conflict rule and sourcing: lib/answers/compare-answers.ts.
+  const pairAnswers = prog === 'MBA' && !FROZEN_UNIVERSITIES.has(uA.id) && !FROZEN_UNIVERSITIES.has(uB.id)
+    ? buildPairAnswers({ slug: pair, uA, uB, faqs: config.faqs, verdictA: config.verdictA, verdictB: config.verdictB, derived: !!config.derived })
+    : null
+  const askedQ = new Set(faqs.map(f => f.q.trim().toLowerCase()))
+  const allFaqs = [...faqs, ...(pairAnswers?.faqs ?? []).filter(f => !askedQ.has(f.q.trim().toLowerCase()))]
+
   const specCountA = Array.isArray(pdA?.specs) ? pdA.specs.length : 0
   const specCountB = Array.isArray(pdB?.specs) ? pdB.specs.length : 0
 
@@ -122,7 +137,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
   }
   const faqSchema = {
     '@context': 'https://schema.org', '@type': 'FAQPage',
-    mainEntity: faqs.map(f => ({
+    mainEntity: allFaqs.map(f => ({
       '@type': 'Question', name: f.q,
       acceptedAnswer: { '@type': 'Answer', text: f.a },
     })),
@@ -184,9 +199,19 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
           {nameA} vs {nameB} Online {prog} {year}: Fees, Approvals, Verdict
         </h1>
         <p className="text-slate-600 text-sm mb-8 max-w-2xl">
+          {config.derived ? (
+            <>
+              Independent, commission-free comparison of two online {prog} programmes.
+              Edify compares public UGC/NAAC/NIRF data, no paid rankings.
+              edifyedu.in takes no referral commissions from either university.
+            </>
+          ) : (
+            <>
           Independent, commission-free comparison of two popular online {prog} programmes.
           We verified NIRF ranks, NAAC grades, and fee structures directly from official sources.
           EdifyEdu takes no referral commissions from either university.
+            </>
+          )}
         </p>
 
         {/* Verdict Block */}
@@ -233,6 +258,13 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
         </div>
         <p className="text-xs text-slate-400 mb-8">Fees are indicative and change by intake. Confirm the current fee with our counsellor before enrolling.</p>
 
+        {/* Answer-first sections (AI-citation sprint) */}
+        {pairAnswers && (
+          <section id="pair-answers" className="rounded-xl border border-slate-200 bg-white p-6 mb-8">
+            <div className="prose-article" dangerouslySetInnerHTML={{ __html: pairAnswers.sections.map(sectionHtml).join('\n') }} />
+          </section>
+        )}
+
         {/* Who Should Pick Which */}
         <h2 className="text-xl font-bold mb-4" style={{ color: '#0f172a' }}>Who Should Pick Which?</h2>
         <div className="grid md:grid-cols-2 gap-4 mb-8">
@@ -253,7 +285,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
         {/* FAQs */}
         <h2 className="text-xl font-bold mb-4" style={{ color: '#0f172a' }}>Frequently Asked Questions</h2>
         <div className="space-y-3 mb-8">
-          {faqs.map((faq, i) => (
+          {allFaqs.map((faq, i) => (
             <details key={i} className="rounded-xl border border-slate-200 bg-white">
               <summary className="px-5 py-3 text-sm font-semibold cursor-pointer" style={{ color: '#0f172a' }}>{faq.q}</summary>
               <p className="px-5 pb-4 text-sm text-slate-600">{faq.a}</p>

@@ -19,6 +19,8 @@ import { getTitleName } from '@/lib/seo-title'
  *  sprout a dozen links. House style allows 5 to 10 internal links per post and
  *  these sit alongside the ones already in the body. */
 const MAX_PER_POST = 3
+/** Extra slot for the derived pairs added in the AI-citation sprint. */
+const MAX_DERIVED_EXTRA = 1
 
 export interface ComparisonLink {
   href: string
@@ -106,8 +108,21 @@ export function getComparisonsForBlog(post: ComparableBlogPost): ComparisonLink[
     return (a || b) && !(a && b)
   }).sort(byRelevance)
 
-  return [...both, ...oneSide]
-    .slice(0, MAX_PER_POST)
+  // Pairs added on 2026-11-04 (PairConfig.derived) take one extra slot after
+  // the existing ones instead of competing for the first three: competing
+  // would have swapped a link on 82 of 179 posts that carry a block, the same
+  // kind of anchor churn that preceded the 27-29 Oct rank drop.
+  const ranked = [...both, ...oneSide]
+  const legacy = ranked.filter(slug => !PAIRS[slug].derived).slice(0, MAX_PER_POST)
+  // Best tier first; within it, a stable hash of the title picks the pair, so
+  // the extra slot spreads across the new pages instead of always landing on
+  // the alphabetically first one.
+  const derivedTier = (tier: PairSlug[]) => tier.filter(slug => PAIRS[slug].derived)
+  const pool = derivedTier(both).length ? derivedTier(both) : derivedTier(oneSide)
+  const h = Array.from(post.title ?? '').reduce((acc, ch) => (acc * 31 + ch.charCodeAt(0)) >>> 0, 7)
+  const extra = pool.length ? [pool[h % pool.length]].slice(0, MAX_DERIVED_EXTRA) : []
+
+  return [...legacy, ...extra]
     .map((slug): ComparisonLink | null => {
       const text = label(slug)
       return text ? { href: `/compare/${slug}`, label: text, program: PAIRS[slug].program } : null
