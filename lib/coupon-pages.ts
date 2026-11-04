@@ -117,7 +117,7 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Does NMIMS offer scholarships on the online MBA?', a: 'NMIMS runs its own scholarship programmes administered directly by the university. Eligibility, percentages, and documentation requirements are set by NMIMS and may change between batches. Ask the NMIMS admissions team directly for the current scholarship details.' },
       { q: 'Where do I see the official NMIMS Online MBA fee?', a: 'Programme fee details are published on the official NMIMS online portal. Our admission desk will also share the current fee structure on your free enrollment call along with the active coupon discount.' },
       { q: 'Where do I apply the NMIMS code?', a: 'Mention the code to your admission desk during the admissions call. Our admission desk coordinates with NMIMS admissions so the bonus is reflected in your invoice.' },
-      { q: 'Is NMIMS NIRF #17 Management rank verified?', a: 'Yes. NMIMS holds NIRF #17 in the Management category for 2025. Verified from nirfindia.org.' },
+      { q: 'What is the NMIMS NIRF Management rank?', a: 'NMIMS holds NIRF #24 in the Management category for 2025. Check the current table on nirfindia.org.' },
       { q: 'Does NMIMS have AACSB accreditation?', a: 'NMIMS is an AACSB member institution. AACSB is one of the most respected global business school accreditations, held by fewer than 6% of business schools worldwide.' },
     ],
     peerComparisons: [

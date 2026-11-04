@@ -25,7 +25,7 @@ const TRAFFIC_ORDER = [
 // Sorted by NIRF Management rank 2025 (primary sort criterion)
 const TOP_10_PICKS = [
   { id: 'symbiosis-university-online', bestFor: 'NIRF #11 Management. NAAC A++. Strongest HR and marketing brand among online MBAs. Premium MNC recruiter recall.' },
-  { id: 'nmims-online', bestFor: 'NIRF #17 Management. AACSB member institution. Strongest brand for BFSI, finance, and analytics careers.' },
+  { id: 'nmims-online', bestFor: 'NIRF #24 Management. AACSB member institution. Strongest brand for BFSI, finance, and analytics careers.' },
   { id: 'amrita-vishwa-vidyapeetham-online', bestFor: 'NIRF #26 Management. NAAC A++. Grant Thornton co-branded Analytics, FinTech, and ESG tracks.' },
   { id: 'chandigarh-university-online', bestFor: 'NIRF #32 Management. NAAC A+. Bundled Harvard Business Publishing, PwC, and PMI certifications at no extra cost.' },
   { id: 'upes-online', bestFor: 'NIRF #36 Management. Strong in Oil and Gas, Energy, and Logistics specialisations. Industry-integrated curriculum.' },

@@ -1,5 +1,39 @@
 # Fix log
 
+## 2026-11-04 · AI-citation flags: wrong NAAC, NIRF, spec-count and fee claims fixed
+
+- **Source of every corrected value:** Supabase accreditations (joined through scripts/lib/supabase-uni-map.mjs),
+  `data/naac-official-2025.tsv` where Supabase has no row (BITS and DY Patil Navi Mumbai are ABSENT), and lib/data.ts
+  for spec counts and getExactFee. Each flag in audits/ai-citation-flags-2026-11-04.md was re-probed first.
+- **One flag was backwards:** BITS Pilani. The post says NAAC A++ and the official NAAC list agrees (cycle 4, CGPA
+  3.68, declared 29-11-2024). lib/data.ts said A+, so data.ts was fixed (naac and the approvals badge), not the post.
+  The post's "NIRF #16 Overall 2025" was left: it states its category and nirfindia.org returned 403, so it could not
+  be checked. BITS spec count 8 to 9 (data.ts lists 9).
+- **Vignan:** NAAC A+ to A++ in 11 places across 5 posts (cycle 4, 2024-06-16, CGPA 3.58). The same table had NMIMS
+  at A+; NMIMS is A++ (cycle 4).
+- **Chandigarh:** NIRF University 25 to 19 in 4 places. The "NIRF Mgmt rank lower than NMIMS" bullet compared a
+  University rank with a Management rank; it now compares Management 32 with Management 24. Spec count 23 to 26
+  (also in the Sharda hub JSON). The NAAC A+ cycle end (9 Sep 2026) was not added to the post; Rishi decides.
+- **Amity review:** 14 to 19 specialisations in the meta description and FAQ; the FAQ list now matches data.ts
+  (it named Construction Project Management, which data.ts does not carry). NIRF Management 49 labelled 2025, not 2024.
+- **NMIMS NIRF Management #17 to #24** in 7 pairs.ts strings, the NMIMS coupon FAQ (which also said "Verified from
+  nirfindia.org") and the MBA hub card. #17 is IIFT. symbiosis-vs-nmims BBA said both hold #11 and are "equally
+  ranked"; only Symbiosis holds #11. The flag's "NMIMS #8 University" and "MUJ #3 University" were misreads: those
+  sentences are about Amrita and MAHE and both are correct.
+- **Shoolini meta description:** Rs 1,18,000 to Rs 1,30,000, now Rs 1,30,000 to Rs 2,00,000 (Rishi's 4 Nov portal
+  read: opt-out Rs 1,30,000, regular Rs 2,00,000).
+- **Hub JSON:** DY Patil Navi Mumbai NAAC A to A++ (5 places, official list cycle 3), the "no confirmed NIRF rank" lines
+  to NIRF University #91, DPU Pune A+ to A++, and the Rs 41,000 to Rs 1,69,000 range (plus the "Rs 41K-1.69L" form and
+  the Rs 2,500 EMI derived from it) to getExactFee Rs 1,75,000. Chitkara Rs 50,000 to Rs 3,00,000 (and "Rs 50K-3L") to
+  Rs 2,00,000, matching its spec pages. Sharda's unverified Rs 1,40,000 and its derived Rs 35,000 a semester removed;
+  getDisplayFee suppresses that fee.
+- **internal-links:** dy-patil-online-mba-review moved from Navi Mumbai to DPU Pune, the university it reviews, so
+  BlogRelatedLinks and its CollegeOrUniversity JSON-LD point at the right institution.
+- **Effect on the AI-citation sections:** hubConflicts no longer drops the fee on the DY Patil Navi Mumbai and Chitkara
+  hubs, so QuickAnswers now carries a fee section there.
+- **Not fixed (needs Rishi):** fee MISMATCH figures on 24 review posts, SMU "effective fee Rs 84,000", the WES claims
+  in amrita-vs-nmims, the placements/topHirers copy, and the "EdifyEdu" title template.
+
 ## 2026-11-04 · Chandigarh University Online MBA fees, site-wide
 
 - **New figures (Rishi, from CU's online MBA fee page, 4 Nov):** two variants. 1 value-added certificate: Rs 2,33,500

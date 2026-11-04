@@ -9,8 +9,8 @@
 // verdicts. pairConflicts() runs the same sentence scanner the hubs use
 // (textConflicts) over that text for each university and leaves out any fact
 // type stated differently. Any NIRF mention at all in the existing text drops
-// NIRF from the new sections: pairs.ts states NMIMS "NIRF #17 Management"
-// where lib/data.ts holds #24, and the new copy must not add a third figure.
+// NIRF from the new sections. pairs.ts once stated NMIMS "NIRF #17 Management"
+// (fixed 4 Nov 2026); hand-written ranks drift, so the new copy adds none.
 
 import type { University } from '../data'
 import { getExactFee, formatExactFee, type ExactFee } from '../fees'

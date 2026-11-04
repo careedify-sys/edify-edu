@@ -28,7 +28,7 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'finance',
     faqs: [
-      { q: 'Is NMIMS or Symbiosis better for online MBA?', a: 'Both are premium. NMIMS has NIRF #17 Management and Mumbai recruiter network. Symbiosis (SSODL) has NAAC A++ (highest grade) and Pune academic heritage. Choose based on geography and budget.' },
+      { q: 'Is NMIMS or Symbiosis better for online MBA?', a: 'Both are premium. NMIMS has NIRF #24 Management and Mumbai recruiter network. Symbiosis (SSODL) has NAAC A++ (highest grade) and Pune academic heritage. Choose based on geography and budget.' },
       { q: 'What is the fee difference?', a: 'NMIMS costs Rs 1,96,000 to Rs 2,20,000. Symbiosis costs Rs 3,15,000 (Rs 3,70,000 without work-experience scholarship). Symbiosis is significantly more expensive.' },
       { q: 'Which has better NAAC grade?', a: 'Symbiosis holds NAAC A++ (highest possible). NMIMS holds NAAC A++. Both have the highest NAAC grade.' },
       { q: 'Does Symbiosis offer more subjects per semester?', a: 'Yes. Symbiosis is known for 10-12 subjects per semester (higher academic load). NMIMS has a standard 6-8 subject format. Symbiosis demands more study time.' },
@@ -58,14 +58,14 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'marketing',
     faqs: [
-      { q: 'Is Amity or NMIMS better ranked in NIRF 2025?', a: 'NMIMS holds NIRF #17 Management rank. Amity holds NIRF #22 University rank. Both are strong. NMIMS is better positioned in the Management category specifically.' },
+      { q: 'Is Amity or NMIMS better ranked in NIRF 2025?', a: 'NMIMS holds NIRF #24 Management rank. Amity holds NIRF #22 University rank. Both are strong. NMIMS is better positioned in the Management category specifically.' },
       { q: 'What is the fee difference between Amity and NMIMS online MBA?', a: 'Amity standard MBA costs Rs 2,25,000 (semester-wise, Rs 56,300/sem) or Rs 2,07,000 (one-time payment). NMIMS costs Rs 2,20,000 (semester-wise, Rs 55,000/sem) or Rs 1,96,000 (one-time). On a like-for-like semester basis, both are nearly identical. One-time payment saves Rs 18,000 at Amity and Rs 24,000 at NMIMS.' },
       { q: 'Does Amity offer specialisations that NMIMS does not?', a: 'Yes. Amity offers 19 specialisations including Healthcare, Hospitality, Insurance, and Retail. NMIMS offers 5-6 focused tracks. Amity has broader choice; NMIMS has deeper focus.' },
       { q: 'Which has better placements: Amity or NMIMS?', a: 'NMIMS has stronger Mumbai-centric BFSI recruiter connections. Amity has a larger pan-India alumni network. For Mumbai finance roles, NMIMS. For NCR and broad management, Amity.' },
       { q: 'Is Amity MBA valued more than NMIMS by employers?', a: 'Both are well-recognised. NMIMS carries stronger weight specifically in Mumbai financial services. Amity has broader geographic recognition due to 500+ hiring partners across India.' },
     ],
     verdictA: ['You want 19 specialisation options including niche tracks like Healthcare, Insurance, or Retail', 'Your target market is NCR or pan-India (not Mumbai-specific)', 'You value QS Asia-Pacific ranking and WASC/WES international accreditation'],
-    verdictB: ['Your career target is Mumbai-centric BFSI or financial services', 'You prefer a focused 5-spec programme with deeper curriculum per track', 'NIRF Management rank (#17) matters more to your employer than University rank'],
+    verdictB: ['Your career target is Mumbai-centric BFSI or financial services', 'You prefer a focused 5-spec programme with deeper curriculum per track', 'NIRF Management rank (#24) matters more to your employer than University rank'],
   },
   'sikkim-manipal-vs-amity': {
     uniA: 'sikkim-manipal-university-online',
@@ -88,14 +88,14 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'finance',
     faqs: [
-      { q: 'Is Amrita or NMIMS better for online MBA?', a: 'Amrita has NIRF #8 University and NAAC A++. NMIMS has NIRF #17 Management and Mumbai BFSI network. Amrita is stronger on university rank. NMIMS is stronger on management-specific positioning.' },
+      { q: 'Is Amrita or NMIMS better for online MBA?', a: 'Amrita has NIRF #8 University and NAAC A++. NMIMS has NIRF #24 Management and Mumbai BFSI network. Amrita is stronger on university rank. NMIMS is stronger on management-specific positioning.' },
       { q: 'What is the fee difference?', a: 'Amrita costs Rs 1,76,000-2,60,000 depending on specialisation. NMIMS costs Rs 1,96,000 to Rs 2,20,000. Fees overlap in the mid-range but Amrita AI spec (Rs 2,44,000) and IFA (Rs 2,60,000) are premium.' },
       { q: 'Does Amrita include WES recognition?', a: 'Yes. Amrita degrees are WES recognised for USA and Canada credential evaluation. NMIMS also has WES recognition. Both are portable internationally.' },
       { q: 'Which has per-spec fee tiers?', a: 'Amrita has 6 different fee tiers based on specialisation. NMIMS has a more uniform fee structure. Amrita General Management at Rs 1,76,000 is the most affordable entry point.' },
       { q: 'Which has more scholarships?', a: 'Amrita offers 8 scholarship categories (Defence 20%, SAARC 40%, Female 15%, Doctors 15%, etc.). NMIMS offers Armed Forces 20% scholarship. Amrita has broader scholarship access.' },
     ],
     verdictA: ['NIRF #8 University rank is a stronger credential signal for you', 'You qualify for Amritas 8 scholarship categories', 'You want per-spec fee flexibility (General Management from Rs 1,76,000)'],
-    verdictB: ['Mumbai BFSI is your career target', 'NIRF #17 Management rank matters more than University rank', 'You want a simpler, uniform fee structure'],
+    verdictB: ['Mumbai BFSI is your career target', 'NIRF #24 Management rank matters more than University rank', 'You want a simpler, uniform fee structure'],
   },
   'manipal-jaipur-vs-nmims': {
     uniA: 'manipal-university-jaipur-online',
@@ -103,14 +103,14 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'finance',
     faqs: [
-      { q: 'Is MUJ or NMIMS better for online MBA Finance?', a: 'NMIMS has NIRF #17 Management rank and stronger Mumbai BFSI recruiter connections. MUJ is more affordable and includes Coursera Plus. For pure finance careers in Mumbai, NMIMS. For value, MUJ.' },
+      { q: 'Is MUJ or NMIMS better for online MBA Finance?', a: 'NMIMS has NIRF #24 Management rank and stronger Mumbai BFSI recruiter connections. MUJ is more affordable and includes Coursera Plus. For pure finance careers in Mumbai, NMIMS. For value, MUJ.' },
       { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,84,000 (Rs 1,56,400 with upfront discount). NMIMS costs Rs 1,96,000 to Rs 2,20,000. MUJ saves Rs 12,000-63,600 depending on payment track.' },
       { q: 'Which has more specialisations?', a: 'MUJ offers 13 specialisations. NMIMS offers 5-6. MUJ has broader choice; NMIMS is more focused.' },
       { q: 'Does NMIMS have better brand recognition?', a: 'NMIMS has stronger recognition specifically in Mumbai financial services. MUJ benefits from the Manipal group brand which is stronger in South India and healthcare sectors.' },
       { q: 'Are both UGC-DEB approved?', a: 'Yes. Both are UGC-DEB approved, NAAC accredited, and legally equivalent. Government and private sector employers accept both.' },
     ],
     verdictA: ['Budget is your priority: MUJ lists at Rs 1,84,000 (Rs 1,56,400 after the 15% discount) against NMIMS at Rs 1,96,000 to Rs 2,20,000', 'Coursera Plus bundled free adds value', 'You want broader spec variety (13 vs 5-6)'],
-    verdictB: ['Mumbai BFSI is your target market', 'NIRF Management #17 rank matters for your employer', 'You prefer deeper curriculum focus over broad choice'],
+    verdictB: ['Mumbai BFSI is your target market', 'NIRF Management #24 rank matters for your employer', 'You prefer deeper curriculum focus over broad choice'],
   },
 
   /* ─── EXISTING (kept) ─── */
@@ -253,7 +253,7 @@ export const PAIRS: Record<string, PairConfig> = {
       { q: 'Is Symbiosis or NMIMS better for online BBA?', a: 'Symbiosis SSODL BBA costs Rs 1,65,000 total (+ Rs 1,000 registration, separate). NMIMS BBA costs Rs 1,41,000. Both are NAAC A++ and UGC-DEB approved. Symbiosis has stronger Pune academic heritage; NMIMS has Mumbai brand value.' },
       { q: 'What is the Symbiosis SSODL BBA fee?', a: 'Symbiosis SSODL BBA total fee is Rs 1,65,000 across 3 years (6 semesters), plus Rs 1,000 one-time registration billed separately. Fees are indicative and change by intake. Confirm the current fee with our counsellor before enrolling.' },
       { q: 'Does NMIMS offer online BBA?', a: 'Yes. NMIMS offers online BBA. Confirm current fees with our counsellor or the NMIMS online portal directly.' },
-      { q: 'Which has a higher NIRF Management rank?', a: 'NMIMS holds NIRF #11 Management and Symbiosis also holds NIRF #11 Management. Both are equally ranked in the Management category.' },
+      { q: 'Which has a higher NIRF Management rank?', a: 'NMIMS holds NIRF #24 Management and Symbiosis holds NIRF #11 Management in 2025. Symbiosis ranks higher in the Management category.' },
     ],
     verdictA: ['You want the Symbiosis/Pune academic brand at Rs 1,65,000', 'Your career target is Pune or Maharashtra', 'NAAC A++ and deep academic rigour matter most'],
     verdictB: ['Your career target is Mumbai or the BFSI sector', 'You prefer the NMIMS brand for Mumbai financial services', 'Confirm current NMIMS BBA fees with our counsellor before deciding'],

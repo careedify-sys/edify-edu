@@ -3,6 +3,8 @@
 Report only. Every item here touches existing content, so under Rule Zero none
 of it was changed on `feat/ai-citation-answers`. Rishi decides each fix.
 
+**Update 4 Nov 2026 (fix/citation-flags):** FLAG 1 meta description and the FLAG 3 NAAC, NIRF, spec-count, hub-JSON and internal-links rows are fixed; see audits/FIX-LOG.md. BITS NAAC was a data.ts error (A++ is correct). Open: review-post fee MISMATCHes, SMU Rs 84,000, WES claims, FLAG 2 brand string.
+
 Line numbers are `lib/blog.ts` on `origin/main` at `9eea6da` unless stated.
 
 ## FLAG 1: Shoolini (frozen)

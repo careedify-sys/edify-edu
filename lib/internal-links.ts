@@ -106,6 +106,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       verifyPage: '/verify/dr-dy-patil-vidyapeeth-pune-online',
       blogs: [
         { slug: 'is-dy-patil-online-fake-or-legit-2026', label: 'Is DY Patil Online Fake or Legit? 2026 (DPU-COL vs Navi Mumbai)' },
+        { slug: 'dy-patil-online-mba-review', label: 'DY Patil Online MBA Fees 2026: ₹1,89,400 Review and Honest Verdict' },
       ],
     },
   },
@@ -264,9 +265,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       universityName: 'DY Patil University Online',
       shortName: 'DY Patil',
       programPage: '/universities/dy-patil-university-online/mba',
-      blogs: [
-        { slug: 'dy-patil-online-mba-review', label: 'DY Patil Online MBA Fees 2026: ₹1,89,400 Review and Honest Verdict' },
-      ],
+      blogs: [],
     },
   },
   'bits-pilani-work-integrated-online': {
