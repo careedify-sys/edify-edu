@@ -39,7 +39,7 @@ export const HUB_BATCH_A: readonly string[] = [
 ]
 
 /** 'A' renders batch A only; 'D' renders every hub that passes the gates. */
-export const HUB_ROLLOUT: 'A' | 'D' = 'A'
+export const HUB_ROLLOUT: 'A' | 'D' = 'D'
 
 export const MIN_BACKED = 5
 
