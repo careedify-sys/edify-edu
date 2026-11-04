@@ -228,7 +228,9 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
   // Selection and the conflict rule: lib/answers/hub-answers.ts.
   const hubAnswers = program === 'MBA' ? getHubAnswers(u) : null
   const baseFaqs = s?.faqs?.length ? s.faqs.map(f => ({ q: f.question, a: f.answer })) : faqs
-  const askedQ = new Set(baseFaqs.map(f => f.q.trim().toLowerCase()))
+  // Some content-JSON FAQ items have no question; FAQBlock filters them, so
+  // guard here too (f.q can be undefined at runtime despite the type).
+  const askedQ = new Set(baseFaqs.map(f => (f.q ?? '').trim().toLowerCase()))
   const shownFaqs = hubAnswers
     ? [...baseFaqs, ...hubAnswers.faqs.filter(f => !askedQ.has(f.q.trim().toLowerCase()))]
     : baseFaqs
