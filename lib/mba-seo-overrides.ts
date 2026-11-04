@@ -93,17 +93,16 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
     intro: 'Jain (Deemed-to-be) University online MBA has no single fee. It is priced per elective across four tiers, from ₹1,60,000 for Finance, Marketing, HR or General Management, up to ₹2,98,000 for International Finance, which is accredited by ACCA in the UK. Most electives sit at ₹1,75,000 or ₹1,96,000, spread across four semesters with EMI options through NBFC partners. The programme is NAAC A++ accredited with UGC-DEB approval. edifyedu.in reviews Jain University online MBA fees using only public regulatory and NIRF data, with no paid ranking influence. Fees are indicative, so confirm your elective on the official JAIN portal before you pay.',
   },
 
-  // Chandigarh: feeMin=165000, feeMax=220000. An earlier note here called
-  // pd.fees "₹1.65L-₹1.80L" the verified range; it is not. 1,80,000 is not a
-  // CU figure and both ends are early-bird nets.
-  // Resolved 2026-10-27: Rishi verified on the portal (Aug 2026) list 2,20,000,
-  // early-bird 1,80,400 Standard and 1,65,000 HBP / Business Analytics. The
-  // labelled figures live in lib/data.ts feeBreakdown.mba.
+  // Chandigarh: fees from CU's online MBA fee page, supplied by Rishi
+  // 2026-11-04 (replacing the Aug 2026 record). Two variants: 1 value-added
+  // certificate lists at 2,33,500 and is 1,75,125 after the 25% Early Bird
+  // Scholarship; 3 certificates list at 2,38,000 and are 1,90,400 after 20%.
+  // The labelled figures live in lib/data.ts feeBreakdown.mba.
   'chandigarh-university-online': {
-    title: 'Chandigarh MBA Fees 2026: ₹2,20,000 | edifyedu.in',
-    description: 'Chandigarh University online MBA fees: ₹2,20,000 list; ₹1,65,000 to ₹1,80,400 after early-bird. NAAC A+, NIRF #32 Management, UGC-DEB approved.',
+    title: 'Chandigarh MBA Fees 2026: ₹1,75,125-₹2,38,000 | edifyedu.in',
+    description: 'Chandigarh University online MBA fees: ₹2,33,500 to ₹2,38,000 list; ₹1,75,125 to ₹1,90,400 after Early Bird. NAAC A+, NIRF #32 Management.',
     h1: 'Chandigarh University Online MBA 2026: Fees, Scholarships, and Review',
-    intro: 'The Chandigarh University online MBA lists at ₹2,20,000 for two years (four semesters). The early-bird fee is ₹1,80,400 for the Standard programme and ₹1,65,000 for the HBP and Business Analytics variants. You need a bachelor\'s degree with 50% marks to apply. Chandigarh University holds NAAC A+ accreditation, UGC-DEB approval and a NIRF Management rank of #32 (its NIRF University rank is #19), and lists 26 specialisations, from Finance and Marketing to FinTech and Data Science and AI. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Fees and scholarships change by batch, so confirm both on the official portal before you pay.',
+    intro: 'The Chandigarh University online MBA comes in two fee variants for two years (four semesters). With 1 value-added certificate it lists at ₹2,33,500 and costs ₹1,75,125 after the 25% Early Bird Scholarship (₹87,563 a year or ₹43,781 a semester). With 3 value-added certificates it lists at ₹2,38,000 and costs ₹1,90,400 after the 20% Early Bird Scholarship (₹95,200 a year or ₹47,600 a semester). You can pay by year or by semester, and financing options exist. You need a bachelor\x27s degree with 50% marks to apply. Chandigarh University holds NAAC A+ accreditation, UGC-DEB approval and a NIRF Management rank of #32 (its NIRF University rank is #19), and lists 26 specialisations, from Finance and Marketing to FinTech and Data Science and AI. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Fees are indicative and scholarships change by batch, so confirm both on the official portal before you pay.',
   },
 
   'dy-patil-university-online': {

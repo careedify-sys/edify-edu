@@ -21,51 +21,6 @@
       "note": "BBA one-time-payment discounted total. Semester-wise BBA is Rs 1,99,000 (matches lib/data.ts). This 1,75,120 figure is a payment-mode variant not modelled in lib/data.ts."
     },
     {
-      "slug": "is-chandigarh-university-online-fake-or-legit-2026",
-      "figure": 165000,
-      "university": "chandigarh-university-online",
-      "programme": "MBA",
-      "source": "Owner-verified with Chandigarh University Online admissions and cross-checked against onlinecu.in",
-      "verified_date": "2026-08-09",
-      "note": "MBA early-bird price for general specialisations (25% concession off the Rs 2,20,000 list). Matches the lower bound of getDisplayFee range Rs 1.65L-1.80L; allowlisted here to cover prose occurrences whose 200-char attribution window does not attach to CU MBA cleanly."
-    },
-    {
-      "slug": "is-chandigarh-university-online-fake-or-legit-2026",
-      "figure": 180000,
-      "university": "chandigarh-university-online",
-      "programme": "MBA",
-      "source": "Owner-verified with Chandigarh University Online admissions and cross-checked against onlinecu.in",
-      "verified_date": "2026-08-09",
-      "note": "MBA Business Analytics early-bird price (10% concession off the Rs 2,20,000 list). Matches the upper bound of getDisplayFee range Rs 1.65L-1.80L; allowlisted here to cover prose occurrences whose attribution window does not attach to CU MBA cleanly."
-    },
-    {
-      "slug": "is-chandigarh-university-online-fake-or-legit-2026",
-      "figure": 180400,
-      "university": "chandigarh-university-online",
-      "programme": "MBA",
-      "source": "Verbatim from https://www.onlinecu.in/online-mba.php",
-      "verified_date": "2026-08-10",
-      "note": "Standard Online MBA after 18% early-bird concession (Rs 2,20,000 x 0.82). The pd.fees range Rs 1.65L-1.80L in lib/data.ts is a rounded display of this figure alongside the 25% variant at Rs 1,65,000; the exact Rs 1,80,400 is the un-rounded portal figure."
-    },
-    {
-      "slug": "is-chandigarh-university-online-fake-or-legit-2026",
-      "figure": 220000,
-      "university": "chandigarh-university-online",
-      "programme": "MBA",
-      "source": "Owner-verified with Chandigarh University Online admissions and cross-checked against onlinecu.in",
-      "verified_date": "2026-08-09",
-      "note": "MBA list price before the 25% early-bird concession. lib/data.ts pd.fees is Rs 1.65L-1.80L (early-bird range). The Rs 2,20,000 list is the sticker before concession; not a separate programme, just the un-discounted tier."
-    },
-    {
-      "slug": "is-chandigarh-university-online-fake-or-legit-2026",
-      "figure": 55000,
-      "university": "chandigarh-university-online",
-      "programme": "MBA",
-      "source": "Owner-verified with Chandigarh University Online admissions",
-      "verified_date": "2026-08-09",
-      "note": "Delta between the Rs 2,20,000 list fee and the Rs 1,65,000 early-bird fee (25% of 2,20,000). Referenced in prose to explain the aggregator price swing. Not a separate fee, just the arithmetic gap."
-    },
-    {
       "slug": "is-lpu-online-fake-or-legit-2026",
       "figure": 200000,
       "university": "lovely-professional-university-online",
@@ -1387,6 +1342,42 @@
       "source": "Owner-verified by Rishi",
       "verified_date": "2026-10-28",
       "note": "LPU BCA lump sum (semester-wise is Rs 20,400 x 6 = Rs 1,22,400). Matches lib/data.ts feeBreakdown.bca, but this sentence names several universities, so the gate cannot attribute the figure to LPU and counts it UNRESOLVED."
+    },
+    {
+      "slug": "is-chandigarh-university-online-fake-or-legit-2026",
+      "figure": 233500,
+      "university": "chandigarh-university-online",
+      "programme": "MBA",
+      "source": "Rishi, from Chandigarh University's online MBA fee page, supplied 2026-11-04",
+      "verified_date": "2026-11-04",
+      "note": "MBA list price with 1 value-added certificate, before the 25% Early Bird Scholarship (Rs 1,75,125 after). Table cell and prose; table first cell is not a university name, so attribution cannot reach it."
+    },
+    {
+      "slug": "is-chandigarh-university-online-fake-or-legit-2026",
+      "figure": 238000,
+      "university": "chandigarh-university-online",
+      "programme": "MBA",
+      "source": "Rishi, from Chandigarh University's online MBA fee page, supplied 2026-11-04",
+      "verified_date": "2026-11-04",
+      "note": "MBA list price with 3 value-added certificates, before the 20% Early Bird Scholarship (Rs 1,90,400 after). Table cell and prose; equals the upper bound of the getDisplayFee range."
+    },
+    {
+      "slug": "is-chandigarh-university-online-fake-or-legit-2026",
+      "figure": 62875,
+      "university": "chandigarh-university-online",
+      "programme": "MBA",
+      "source": "Rishi, from Chandigarh University's online MBA fee page, supplied 2026-11-04",
+      "verified_date": "2026-11-04",
+      "note": "Arithmetic gap between the highest list price (Rs 2,38,000) and the lowest Early Bird price (Rs 1,75,125), used to explain the aggregator price swing. Not a fee."
+    },
+    {
+      "slug": "lpu-vs-chandigarh-university-online-mba-2026",
+      "figure": 175000,
+      "university": "chandigarh-university-online",
+      "programme": "MBA",
+      "source": "Rishi, from Chandigarh University's online MBA fee page, supplied 2026-11-04",
+      "verified_date": "2026-11-04",
+      "note": "Rounded '₹1.75L – ₹1.90L after Early Bird' (Rs 1,75,125 with 1 certificate, Rs 1,90,400 with 3 certificates) in the comparison table. A sub-range of the getDisplayFee range, so it classifies MISMATCH."
     }
   ]
 }

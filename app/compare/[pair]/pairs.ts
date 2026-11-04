@@ -171,7 +171,7 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'finance',
     faqs: [
       { q: 'Is Chandigarh University or LPU better for online MBA?', a: 'Both are Punjab-based with NAAC A+ (CU) and A++ (LPU). CU has NIRF #19 University and PwC triple certification. LPU has NIRF #31 University and dual-specialisation. CU wins on rank; LPU wins on accreditation grade.' },
-      { q: 'What is the fee difference?', a: 'CU costs Rs 1,65,000 to Rs 2,20,000. LPU costs Rs 1,61,600 to Rs 2,00,000. Both are in the same range. CU can be cheaper at base level or costlier at premium track.' },
+      { q: 'What is the fee difference?', a: 'CU costs Rs 1,75,125 (1 certificate, after the 25% Early Bird) to Rs 2,38,000 (3 certificates, list). LPU costs Rs 1,61,600 to Rs 2,00,000. The lowest LPU fee is Rs 13,525 below the lowest CU fee, and the top CU list price is Rs 38,000 above the top LPU fee. Fees are indicative; confirm on both official portals.' },
       { q: 'Does Chandigarh University offer PwC certification?', a: 'Yes. CU Online MBA includes triple industry certification from PwC India, PMI, and IBM. Two subjects are co-taught by PwC. This is unique among online MBA programmes in India.' },
       { q: 'Which has more specialisations?', a: 'CU offers 26 specialisations (highest count in this tier). LPU offers 12 with dual-spec option. CU wins on variety; LPU wins on combination flexibility.' },
     ],
@@ -185,7 +185,7 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'marketing',
     faqs: [
       { q: 'Is Amity or Chandigarh University better for online MBA?', a: 'Amity has NIRF #22 University and QS ranking. CU has NIRF #19 University and PwC triple certification. Both are NAAC A+ and UGC-DEB approved. CU is slightly cheaper.' },
-      { q: 'What is the fee difference?', a: 'Amity costs Rs 2,07,000 to Rs 2,25,000. CU costs Rs 1,65,000 to Rs 2,20,000. CU saves Rs 5,000-42,000 depending on payment mode.' },
+      { q: 'What is the fee difference?', a: 'Amity costs Rs 2,07,000 to Rs 2,25,000. CU costs Rs 1,75,125 (1 certificate, after the 25% Early Bird) to Rs 2,38,000 (3 certificates, list). The lowest CU fee is Rs 31,875 below the lowest Amity fee, but the top CU list price is Rs 13,000 above the top Amity fee. Fees are indicative; confirm on both official portals.' },
       { q: 'Which has PwC industry certification?', a: 'Only Chandigarh University. CU includes PwC India, PMI, and IBM certifications with its online MBA. Amity does not bundle industry certifications but has WASC (USA) accreditation.' },
       { q: 'Which has more specialisations?', a: 'CU offers 26 specialisations. Amity offers 19. CU has more variety including niche options like Disaster Management and Airlines Management.' },
     ],
@@ -199,7 +199,7 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'finance',
     faqs: [
       { q: 'Is MUJ or Chandigarh University better for online MBA?', a: 'MUJ has Coursera Plus bundled and the Manipal group brand. CU has PwC triple certification and NIRF #19 University. Both are NAAC A+ and UGC-DEB approved.' },
-      { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,56,400 (upfront) to Rs 1,84,000. CU costs Rs 1,65,000 to Rs 2,20,000. MUJ upfront is Rs 8,600 below the lowest CU fee. The full MUJ fee is Rs 36,000 below the top CU track.' },
+      { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,56,400 (upfront) to Rs 1,84,000. CU costs Rs 1,75,125 (1 certificate, after the 25% Early Bird) to Rs 2,38,000 (3 certificates, list). MUJ upfront is Rs 18,725 below the lowest CU fee. The full MUJ fee is Rs 54,000 below the top CU list price. Fees are indicative; confirm on both official portals.' },
       { q: 'Which includes Coursera Plus?', a: 'Only MUJ. MUJ bundles free Coursera Plus access. CU includes PwC/PMI/IBM certifications instead. Different value add-ons for different learning styles.' },
       { q: 'Which has better NIRF rank?', a: 'CU has NIRF #19 University (stronger). MUJ has NIRF #58 University. CU ranks significantly higher in NIRF.' },
     ],

@@ -221,7 +221,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       programPage: '/universities/chandigarh-university-online/mba',
       comparePage: '/compare?a=chandigarh-university-online&b=amity-university-online',
       blogs: [
-        { slug: 'chandigarh-university-online-mba-review', label: 'Chandigarh University Online MBA Fees 2026: ₹1.65L Review and Honest Verdict' },
+        { slug: 'chandigarh-university-online-mba-review', label: 'Chandigarh University Online MBA Fees 2026: ₹1.75L Review and Honest Verdict' },
         { slug: 'is-chandigarh-university-online-fake-or-legit-2026', label: 'Is Chandigarh University Online Fake or Legit? 2026' },
       ],
     },

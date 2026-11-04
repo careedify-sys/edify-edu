@@ -81,8 +81,8 @@ export async function generateMetadata(
   // data as inconsistent. This prevents a static override string from
   // shipping a fee number that the canonical fee source cannot back
   // (e.g. Galgotias MBA override said ₹76K-₹86K while pd.fees only
-  // backs ₹76.2K; Chandigarh MBA override said ₹1.65L-₹2.2L while
-  // pd.fees caps at ₹1.80L). When suppressed we fall through to the
+  // backs ₹76.2K; an Aug 2026 Chandigarh MBA override quoted a list
+  // price above the pd.fees cap). When suppressed we fall through to the
   // generic template which renders the counsellor-CTA path.
   const feePreCheck = getDisplayFee(u, 'MBA')
   const override = feePreCheck.ok ? MBA_SEO_OVERRIDES[id] : undefined

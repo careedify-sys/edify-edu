@@ -1,5 +1,38 @@
 # Fix log
 
+## 2026-11-04 · Chandigarh University Online MBA fees, site-wide
+
+- **New figures (Rishi, from CU's online MBA fee page, 4 Nov):** two variants. 1 value-added certificate: Rs 2,33,500
+  list, Rs 1,75,125 after the 25% Early Bird Scholarship (Rs 87,563 a year, Rs 43,781 a semester). 3 certificates:
+  Rs 2,38,000 list, Rs 1,90,400 after 20% (Rs 95,200 a year, Rs 47,600 a semester). Pay yearly or by semester;
+  financing exists but no EMI is published, so emiFrom is 1,75,125 / 24 = 7,297. Only the MBA changed.
+- **Replaced:** the Aug 2026 record (Rs 2,20,000 list; Rs 1,80,400 "Standard" after 18%; Rs 1,65,000 "HBP / Business
+  Analytics" after 25%) and its derivatives: per-semester 41,250 / 45,100, annual 82,500 / 90,200, savings 55,000 /
+  39,600, EMI 6,875, and the 1.65L / 1.80L / 2.20L / "1.65 lakh" forms. The old variant labels were wrong too: the
+  fee page splits the MBA by certificate count, so the two list prices differ (not one Rs 2,20,000 list).
+- **Data:** programFees.mba {175125, 238000} so pd.fees "₹1,75,125–₹2,38,000" agrees at rule 1 (checked:
+  `getDisplayFee` returns rule 1, not the drift fallback). feeBreakdown.mba uses `modes` with four labelled amounts,
+  because `list` holds one number and there are two list prices. feeMin/feeMax, data-slim and fees-hub-data moved
+  together (verify-fees). officialUrl stays blank: the fee page's domain is not confirmed under the officialUrl rule.
+- **Swept:** mba-seo-overrides (title, description, intro), 3 compare pairs (fee gaps recomputed vs LPU, Amity, MUJ),
+  the CU coupon page (base and final fee, the old "Tier 1/Tier 2" FAQ now names the certificate variants), 27 CU spec
+  JSONs (templated Tier 1/Tier 2 fee block: list, savings, annual, semester, 18% to 20%, "same base fee" claim
+  removed, "full upfront" lines removed because the page publishes no one-time figure), 158 CU mentions in other
+  universities' spec JSONs, and about 170 blog figures across 60+ posts. The CU legit post and LPU vs CU post were
+  rewritten by hand because their prose explained the old single-list-price model.
+- **Derived gaps recomputed, not just the headline:** Chitkara "Rs 35,000 cheaper" to 24,875; NIU "Rs 67,400 more" to
+  77,525; Shoolini 21% to 26%; SMU 27% to 31%; MAHE "Rs 1,27,000 more" to 1,16,875; UU "Rs 65,400 cheaper" to 75,525;
+  Amrita GM "Rs 11,000 more" to 875; Alliance "Rs 10,000 lower" is now "Rs 125 more". Every one was arithmetic on the
+  old Rs 1,65,000 and would have stayed wrong after a headline-only sweep.
+- **Stale CU MBA figures that were never the Aug record:** "Rs 1.50 lakh" (6 posts), "₹1L" (career-after-bcom),
+  "Rs 1.55L to 2.20L" and similar. These now carry the new floor.
+- **Attribution rule used for the blog sweep:** a figure was changed only when Chandigarh/CU was the nearest university
+  named before it in the same row or sentence. "Symbiosis SSODL (₹1,65,000)" and CU's BBA/MCA figures were left alone.
+  No SVG in the site encodes a CU fee (checked every `<text>` naming CU).
+- **Gates:** check-blog-fees regressed on two posts (variant list prices in table cells with no university first cell,
+  plus the Rs 62,875 swing). The legit post's five old allowlist entries were removed and four entries with Rishi's
+  source added. 28 posts' unverified counts fell; the baseline auto-updated.
+
 ## 2026-11-02 · Online DBA section, and a confirmation email that would have mis-sent facts
 
 - **Built:** /online-dba (pillar), /online-dba/dba-vs-phd, /online-dba/dba-fees and six programme pages, all read from

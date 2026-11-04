@@ -142,7 +142,7 @@ export interface University {
    * in lib/fees.ts, which prints "₹list list; ₹net label" and never a bare net.
    * Added 2026-10-27: the compare table showed LPU's ₹1,61,600 semester-wise
    * total as "₹1,61,000" and Chandigarh's early-bird nets as an unlabelled
-   * "₹1,65,000 - ₹1,80,000". Only figures read from the university's own
+   * min-max pair. Only figures read from the university's own
    * portal belong here; perSemester only when the university publishes one.
    */
   feeBreakdown?: Partial<Record<'mba' | 'bba' | 'mca' | 'bca' | 'mcom' | 'bcom' | 'ba' | 'ma' | 'msc' | 'bsc', {
@@ -2463,12 +2463,18 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // after the 25% Early Bird Scholarship (Rs 31,875 x 4 semesters). onlinecu.in is not linked from
     // cuchd.in, so officialUrl stays blank under the confirmation rule.
     shortName: 'Chandigarh', // uses "Chandigarh" in cuchd.in and on its own logo
-    programFees: { bca: { fee: 177000 }, mca: { fee: 155000 } },
-    // MBA list Rs 2,20,000; after early-bird Rs 1,80,400 (Standard) and Rs 1,65,000
-    // (HBP and Business Analytics variants). Official portal, recorded Aug 2026,
-    // confirmed by Rishi 2026-10-27. CU publishes no per-semester MBA figure, and
-    // pd.fees "₹1.80L" is not a CU number.
-    feeBreakdown: { mba: { list: 220000, net: { min: 165000, max: 180400, label: 'after early-bird' }, source: 'CU Online portal, Aug 2026' }, msc: { list: 170000, net: { min: 127500, max: 127500, label: 'after the 25% early-bird scholarship (₹31,875 × 4 semesters)' }, source: 'onlinecu.in MSc Data Science page, 2026-10-30' } },
+    // MBA fees from CU's online MBA fee page, supplied by Rishi 2026-11-04. They
+    // replace the Aug 2026 record. Two variants:
+    //   1 value-added certificate:  list 2,33,500; after 25% Early Bird 1,75,125;
+    //                               annual 87,563; semester 43,781
+    //   3 value-added certificates: list 2,38,000; after 20% Early Bird 1,90,400;
+    //                               annual 95,200; semester 47,600
+    // Pay by year or by semester; financing options exist but no EMI figure is
+    // published, so emiFrom is 1,75,125 / 24. programFees.mba carries {lowest
+    // payable, highest list} so pd.fees agrees at rule 1. officialUrl stays
+    // blank: the fee page's domain is not confirmed under the rule above.
+    programFees: { mba: { fee: 175125, feeMax: 238000 }, bca: { fee: 177000 }, mca: { fee: 155000 } },
+    feeBreakdown: { mba: { list: 233500, modes: [{ amount: 175125, label: 'with 1 certificate after 25% Early Bird' }, { amount: 190400, label: 'with 3 certificates after 20% Early Bird' }, { amount: 233500, label: 'list with 1 certificate' }, { amount: 238000, label: 'list with 3 certificates' }], perSemester: { list: 43781, listLabel: 'with 1 certificate after Early Bird', net: 47600, netLabel: 'with 3 certificates after Early Bird' }, source: 'Rishi, CU online MBA fee page, 2026-11-04' }, msc: { list: 170000, net: { min: 127500, max: 127500, label: 'after the 25% early-bird scholarship (₹31,875 × 4 semesters)' }, source: 'onlinecu.in MSc Data Science page, 2026-10-30' } },
     logo: '/logos/university_logos/cu-online.svg',
     name: 'Chandigarh University Online',
     abbr: 'CUO',
@@ -2484,9 +2490,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 165000,
-    feeMax: 220000,
-    emiFrom: 6875,
+    feeMin: 175125,
+    feeMax: 238000,
+    emiFrom: 7297,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     tagline: 'India\'s ONLY online MBA with Triple Industry Certification — PwC India (2 subjects co-taught + PwC certificates), PMI (',
@@ -2524,7 +2530,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
           { slug: 'family-business', name: 'Family Business' },
           { slug: 'product-management', name: 'Product Management' },
         ],
-        fees: '₹1.65L–₹1.80L',
+        fees: '₹1,75,125–₹2,38,000',
         duration: '2 Years (4 Semesters)',
         roles: ['Marketing Manager (₹7–20 LPA)', 'Business Analyst (₹6–18 LPA)', 'Financial Analyst (₹5–15 LPA)', 'HR Manager (₹6–18 LPA)', 'Operations Manager (₹7–22 LPA)', 'Project Manager (₹8–22 LPA)'],
         avgSalary: '₹5L – ₹22L per annum',
