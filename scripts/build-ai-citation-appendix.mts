@@ -18,6 +18,7 @@
 
 import { readFileSync, writeFileSync } from 'node:fs'
 import ts from 'typescript'
+import { spawnSync } from 'node:child_process'
 import { getUniversityById } from '../lib/data.ts'
 import { BLOG_POSTS } from '../lib/blog.ts'
 import { BLOG_PLAN, type BlogPlan } from '../lib/answers/blog-plan.ts'
@@ -134,6 +135,32 @@ function encodeFor(lit: ts.Node, html: string): string {
   throw new Error('unknown literal style')
 }
 
+// FAQ questions per slug on origin/main: the "existing" set Rule Zero protects.
+const BASELINE_FAQS = (() => {
+  const r = spawnSync('git', ['show', 'origin/main:lib/blog.ts'], { encoding: 'utf8', maxBuffer: 256 * 1024 * 1024 })
+  if (r.status !== 0) throw new Error('git show origin/main:lib/blog.ts failed')
+  const bsf = ts.createSourceFile('base.ts', r.stdout, ts.ScriptTarget.Latest, true)
+  const out = new Map<string, Set<string>>()
+  const pn = (p: ts.ObjectLiteralElementLike) => p.name ? p.name.getText(bsf).replace(/^["'`]|["'`]$/g, '') : ''
+  bsf.forEachChild(function visit(n) {
+    if (ts.isObjectLiteralExpression(n)) {
+      const sp = n.properties.find(p => pn(p) === 'slug') as ts.PropertyAssignment | undefined
+      const fp = n.properties.find(p => pn(p) === 'faqs') as ts.PropertyAssignment | undefined
+      if (sp && fp && ts.isArrayLiteralExpression(fp.initializer)) {
+        const set = out.get((sp.initializer as ts.StringLiteralLike).text) ?? new Set<string>()
+        for (const e of fp.initializer.elements) if (ts.isObjectLiteralExpression(e)) {
+          const qp = e.properties.find(p => pn(p) === 'q') as ts.PropertyAssignment | undefined
+          if (qp) set.add((qp.initializer as ts.StringLiteralLike).text.trim().toLowerCase())
+        }
+        out.set((sp.initializer as ts.StringLiteralLike).text, set)
+        return
+      }
+    }
+    n.forEachChild(visit)
+  })
+  return out
+})()
+
 type Edit = { start: number; end: number; text: string }
 const edits: Edit[] = []
 const report: string[] = []
@@ -162,6 +189,7 @@ for (const plan of plans) {
       const from = rawInner.slice(0, i).endsWith(nlBefore) ? i - nlBefore.length : i
       let to = j + encEndMarker.length
       if (rawInner.slice(to).startsWith(nlBefore)) to += nlBefore.length
+      else if (lit.kind === ts.SyntaxKind.NoSubstitutionTemplateLiteral && rawInner.slice(to).startsWith('\r\n')) to += 2 // CRLF checkout
       edits.push({ start: litStart + 1 + from, end: litStart + 1 + to, text: enc })
     } else if (enc) {
       edits.push({ start: litEnd - 1, end: litEnd - 1, text: enc })
@@ -169,11 +197,23 @@ for (const plan of plans) {
 
     const fp = obj.properties.find(p => propName(p) === 'faqs') as ts.PropertyAssignment
     const fa = fp.initializer as ts.ArrayLiteralExpression
-    const have = new Set(fa.elements.filter(ts.isObjectLiteralExpression).map(e => {
-      const qp = (e as ts.ObjectLiteralExpression).properties.find(p => propName(p) === 'q') as ts.PropertyAssignment
-      return (qp.initializer as ts.StringLiteralLike).text.trim().toLowerCase()
-    }))
-    const add = pl.faqs.filter(f => !have.has(f.q.trim().toLowerCase()))
+    const norm = (q: string) => q.trim().toLowerCase()
+    const original = BASELINE_FAQS.get(plan.slug) ?? new Set<string>()
+    const gen = new Map(pl.faqs.map(f => [norm(f.q), f]))
+    const have = new Set<string>()
+    for (const e of fa.elements.filter(ts.isObjectLiteralExpression)) {
+      const qp = e.properties.find(p => propName(p) === 'q') as ts.PropertyAssignment
+      const aq = e.properties.find(p => propName(p) === 'a') as ts.PropertyAssignment
+      const q = norm((qp.initializer as ts.StringLiteralLike).text)
+      have.add(q)
+      // An item absent from origin/main was added by this script: keep its
+      // answer in step with the builder. An original item is never touched.
+      const g = gen.get(q)
+      if (g && !original.has(q) && (aq.initializer as ts.StringLiteralLike).text !== g.a) {
+        edits.push({ start: e.getStart(sf), end: e.getEnd(), text: JSON.stringify({ q: g.q, a: g.a }) })
+      }
+    }
+    const add = pl.faqs.filter(f => !have.has(norm(f.q)))
     if (add.length) {
       const closeBracket = fa.getEnd() - 1
       const before = src.slice(fa.getStart(sf) + 1, closeBracket).trimEnd()

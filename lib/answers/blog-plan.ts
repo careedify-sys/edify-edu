@@ -43,7 +43,7 @@ export const BLOG_PLAN: BlogPlan[] = [
   { slug: 'uu-doon-online-mba-review', uni: 'uttaranchal-university-online', batch: 'A2', sections: ['Q2', 'Q3', 'Q4', 'Q7'], omit: ['fee'] },
   { slug: 'bits-pilani-online-mba-review-2026', uni: 'bits-pilani-work-integrated-online', batch: 'A2', sections: ['Q4', 'Q7', 'Q8'], omit: ['fee', 'specCount', 'naac', 'nirf'], extraFaqs: ['bits-offers-mba'] },
   // A3
-  { slug: 'srm-online-mba-2026', uni: 'srm-institute-science-technology-online', batch: 'A3', sections: ['Q2', 'Q4', 'Q6'], omit: [] },
+  { slug: 'srm-online-mba-2026', uni: 'srm-institute-science-technology-online', batch: 'A3', sections: ['Q2', 'Q4', 'Q6'], omit: ['fee'] }, // the post covers two SRMs, so a fee figure attributes ambiguously (check-blog-fees)
   { slug: 'jain-online-mba-review-2026', uni: 'jain-university-online', batch: 'A3', sections: ['Q6', 'Q7', 'Q8'], omit: ['fee'] },
   { slug: 'dy-patil-online-mba-review', uni: 'dr-dy-patil-vidyapeeth-online', batch: 'A3', sections: ['Q2', 'Q6'], omit: ['fee'], linkLegit: true },
   { slug: 'galgotias-online-mba-review', uni: 'galgotias-university-online', batch: 'A3', sections: ['Q3'], omit: ['fee'], linkLegit: true },
