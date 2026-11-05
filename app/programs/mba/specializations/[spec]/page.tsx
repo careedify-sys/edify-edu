@@ -325,7 +325,7 @@ export async function generateMetadata(
 
   // Longest form that fits 60 chars; long spec names ran to 81 with the brand suffix.
   const title = [
-    `Online MBA ${def.displayName} 2026: ${uniCount}+ Colleges, Fees and Career | EdifyEdu`,
+    `Online MBA ${def.displayName} 2026: ${uniCount}+ Colleges, Fees and Career | edifyedu.in`,
     `Online MBA ${def.displayName} 2026: ${uniCount}+ Colleges, Fees and Career`,
     `Online MBA ${def.displayName} 2026: ${uniCount}+ Colleges and Fees`,
   ].find(t => t.length <= 60) ?? `Online MBA ${def.displayName} 2026: ${uniCount}+ Colleges`

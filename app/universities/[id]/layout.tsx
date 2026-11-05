@@ -205,7 +205,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   // ── Title: short name + programs in parens — stays within Google's 600px limit ──
   const titleName = getTitleName(u.id, u.name, u.abbr)
   const progStr = (u.programs || []).slice(0, 3).join(', ') || mainProg
-  const title = `${titleName}${shouldIndexUniversity(u.id) ? ' Online' : ''} (${progStr}, Fees 2026) | EdifyEdu`
+  const title = `${titleName}${shouldIndexUniversity(u.id) ? ' Online' : ''} (${progStr}, Fees 2026) | edifyedu.in`
 
   // ── Description: keyword-rich, direct ────────────────────────
   const baseDescription = `Direct Admission 2026 at ${seoName} Online. Get honest faculty reviews, actual package/placement stats${hasFee ? `, and total fees (${feeStr})` : ''}. ${nirf}${nirf.startsWith('NIRF') ? naacSegment(u.naac) : ''}. UGC DEB approved. Compare syllabus and apply today!`

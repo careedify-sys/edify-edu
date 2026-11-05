@@ -19,12 +19,12 @@ import CompareClient from '@/components/CompareClient'
 export function generateMetadata(): Metadata {
   return {
     // CTR-tuned (2026-05-25): no em dash, no "Compare" lead in desc, bracket hook.
-    // absolute disables the root layout "%s | EdifyEdu" template (we already include the suffix).
-    title: { absolute: 'Online MBA vs MCA Comparison 2026: 143 Universities | EdifyEdu' },
-    description: '143 UGC-DEB online MBA & MCA programmes side by side: fees, NAAC grade, NIRF rank, specialisations, syllabus. Pick your fit in 60 seconds, free at EdifyEdu.',
+    // absolute disables the root layout "%s | edifyedu.in" template (we already include the suffix).
+    title: { absolute: 'Online MBA vs MCA Comparison 2026: 143 Universities | edifyedu.in' },
+    description: '143 UGC-DEB online MBA & MCA programmes side by side: fees, NAAC grade, NIRF rank, specialisations, syllabus. Pick your fit in 60 seconds, free at edifyedu.in.',
     alternates: { canonical: 'https://edifyedu.in/compare' },
     openGraph: {
-      title: 'Online MBA vs MCA Comparison 2026: 143 Universities | EdifyEdu',
+      title: 'Online MBA vs MCA Comparison 2026: 143 Universities | edifyedu.in',
       description: '143 UGC-DEB online MBA & MCA programmes side by side: fees, NAAC grade, NIRF rank, syllabus. Pick your fit in 60 seconds, free.',
       type: 'website',
     },

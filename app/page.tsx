@@ -519,7 +519,7 @@ export default function HomePage() {
           'contentUrl': 'https://www.youtube.com/watch?v=Waj6Ph6baVg',
           'publisher': {
             '@type': 'Organization',
-            'name': 'EdifyEdu',
+            'name': 'edifyedu.in',
             'url': 'https://edifyedu.in',
           },
         })}}/>

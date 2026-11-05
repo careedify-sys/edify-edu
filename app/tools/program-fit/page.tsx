@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Will This Program Fit Me?, Program Suitability Guide | EdifyEdu',
+  title: 'Will This Program Fit Me?, Program Suitability Guide | edifyedu.in',
   description: 'Find out if an online MBA, MCA, BBA, or BCA is right for your career goals, eligibility, and budget. Free, unbiased guide by EdifyEdu.',
   robots: { index: true, follow: true },
 }

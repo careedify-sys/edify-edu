@@ -53,8 +53,8 @@ export async function generateMetadata(
   // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
   return {
     title: clampTitleSpecLed(
-      `${titleName} BCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
-      `${shortName} BCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
+      `${titleName} BCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | edifyedu.in`,
+      `${shortName} BCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | edifyedu.in`,
       shortSpec,
     ),
     description: shouldIndexUniversity(u.id) ? clampDescription(`${formatUniversityDisplayName(u.name)} Online BCA in ${spec} ${year}: ${feeExact ? `${feeExact} fees` : 'fees on request'}${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved 3-year degree. Check syllabus, eligibility & career scope free.`) : unverifiedDescription(u.name, 'BCA'),

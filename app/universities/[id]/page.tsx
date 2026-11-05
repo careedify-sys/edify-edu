@@ -70,7 +70,7 @@ export async function generateMetadata(
   const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
   const nirfHook = nirfLabel ? ` ${nirfLabel},` : ''
   // CTR-tuned title (2026-05-25): lead with brand, fee number first, NAAC + bracket year hook.
-  // Pattern: "{Uni} Online: ₹{fee} Fees, NAAC {grade} [{year} Review] | EdifyEdu"
+  // Pattern: "{Uni} Online: ₹{fee} Fees, NAAC {grade} [{year} Review] | edifyedu.in"
   // Facts first: the fee and grade earn the click, the brand suffix does not.
   // clampTitle keeps the suffix and cuts the body, which left "Courses" alone.
   const head = `${brandName} ${onlinePrefix(u.id)}${year}: Courses`

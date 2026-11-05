@@ -54,8 +54,8 @@ export async function generateMetadata(
   const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
   // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
   const title = clampTitleSpecLed(
-      `${titleName} MCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
-      `${shortName} MCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
+      `${titleName} MCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | edifyedu.in`,
+      `${shortName} MCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | edifyedu.in`,
       shortSpec,
     )
   const baseDescription = clampDescription(syllabus?.metaDesc
