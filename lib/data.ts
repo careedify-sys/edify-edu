@@ -1364,7 +1364,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         mba: [
           {
             label: "India's ONLY Pay-After-Placement online MBA",
-            detail: 'Pay 80% of the fee during the course. The final 20%, Rs 31,600, falls due only after you are placed. Opt out of Pay-After-Placement and the total drops to Rs 1.3L. Fees are indicative, so confirm them on the official portal before you pay.',
+            detail: 'Pay 85% of the fee during the course. The final 15%, Rs 23,700, falls due only after you are placed. Opt out of Pay-After-Placement and the total drops to Rs 1.3L. Fees are indicative, so confirm them on the official portal before you pay.',
           },
           {
             label: 'New: 5-day on-campus immersion',

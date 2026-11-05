@@ -29416,7 +29416,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Shoolini Online MBA Fee Structure 2026: All Payment Options</h2>
 
-<p>Shoolini University offers two fee tracks for its online MBA. Offer 1 (Pay After Placement): ₹1,58,000 total after a 21% scholarship on the ₹2,00,000 sticker fee, structured as ₹31,600 per semester x 4 during the course (₹1,26,400) plus ₹31,600 payable after placement. Offer 2 (Opt-out from PAP): ₹1,30,000 total after a 35% scholarship, paid as ₹32,500 x 4 semesters. Application fee is ₹500 (one-time, non-refundable). No-Interest EMI and loan options apply to both tracks. For a wider view of why the same online MBA is quoted at different totals across sites, read <a href="/blog/why-online-mba-fees-differ-india-2026" class="ilink">how online MBA fees get quoted across India</a>. Track the current <a href="/universities/shoolini-university-online/mba" class="ilink">Shoolini University online MBA fees</a> and semester-wise breakdown on the programme page.</p>
+<p>Shoolini University offers two fee tracks for its online MBA. Offer 1 (Pay After Placement): ₹1,58,000 total after a 21% scholarship on the ₹2,00,000 sticker fee, structured as ₹33,575 per semester x 4 during the course (₹1,34,300) plus ₹23,700 payable after placement. Offer 2 (Opt-out from PAP): ₹1,30,000 total after a 35% scholarship, paid as ₹32,500 x 4 semesters. Application fee is ₹500 (one-time, non-refundable). No-Interest EMI and loan options apply to both tracks. For a wider view of why the same online MBA is quoted at different totals across sites, read <a href="/blog/why-online-mba-fees-differ-india-2026" class="ilink">how online MBA fees get quoted across India</a>. Track the current <a href="/universities/shoolini-university-online/mba" class="ilink">Shoolini University online MBA fees</a> and semester-wise breakdown on the programme page.</p>
 
 <p>For context, here is how Shoolini compares to other affordable online MBA programmes:</p>
 
@@ -47424,13 +47424,13 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 <thead><tr><th>Route</th><th>Structure</th><th>Total</th></tr></thead>
 <tbody>
 <tr><td>Full payment</td><td>Rs 32,500 per semester across four semesters</td><td>Rs 1,30,000</td></tr>
-<tr><td>Pay After Placement</td><td>Rs 31,600 four times during the programme, plus Rs 31,600 deferred</td><td>Rs 1,58,000</td></tr>
+<tr><td>Pay After Placement</td><td>Rs 33,575 four times during the programme, plus Rs 23,700 deferred</td><td>Rs 1,58,000</td></tr>
 </tbody>
 </table>
 
-<p>Read the second row carefully. Under the pay-after-placement route, you pay Rs 1,26,400 on the normal semester schedule whether or not you are placed. Only the final Rs 31,600 waits.</p>
+<p>Read the second row carefully. Under the pay-after-placement route, you pay Rs 1,34,300 on the normal semester schedule whether or not you are placed. Only the final Rs 23,700 waits.</p>
 
-<p>So the scheme defers a fifth of the fee, and choosing it costs Rs 28,000 more than simply paying the full-payment amount. You are paying Rs 28,000 to postpone Rs 31,600 by about two years.</p>
+<p>So the scheme defers 15% of the fee, and choosing it costs Rs 28,000 more than simply paying the full-payment amount. You are paying Rs 28,000 to postpone Rs 23,700 by about two years.</p>
 
 <p>Nothing here is concealed. The numbers sit on the university's own page. But "pay after placement" as a phrase suggests you pay nothing until you are placed, and that is not what the structure does. Very few applicants will sit down and do this arithmetic.</p>
 
