@@ -1,5 +1,32 @@
 # Fix log
 
+## 2026-11-05 · AI-citation flags, second pass: the open items
+
+- **Review-post fee MISMATCHes (94 primary figures on 24 posts):** read each one. About 85 are scanner false positives:
+  semester splits that multiply to the data.ts fee, debunked "circulating" figures, campus-MBA prices, coupons, extras,
+  and other universities in link strips. Real errors fixed: JAIN (below), Shoolini PAP split, and the DSU summary card
+  (Rs 1,20,000 to Rs 1,30,000, the May 2026 revision the same post already describes).
+- **JAIN:** onlinejain.com/online-mba read 5 Nov 2026 lists Rs 1,60,000 (Finance, HR, Marketing, General), Rs 1,75,000
+  (6 dual tracks), Rs 1,96,000 (5 analytics and AI tracks), Rs 2,98,000 (ACCA International Finance). The review called
+  Rs 1,96,000 the standard fee and carried a Rs 2,20,000 Banking and Finance track the portal does not list. data.ts
+  (1,60,000 to 2,98,000) was right. Fixed in the review and 4 other posts. NIRF University 68 (2024) to 62 (2025, Supabase).
+  The JAIN spec JSONs say "Rs 1,75,000 to Rs 1,96,000" for AI tracks; not touched.
+- **Shoolini PAP:** Rs 31,600 x 4 + Rs 31,600 (13 Aug read) to Rs 33,575 x 4 + Rs 23,700 (Rishi, 4 Nov). The
+  blog-fee-allowlist entries moved to the 4 Nov read; check-blog-fees counts per-semester figures as unverified otherwise.
+- **Chandigarh review:** NIRF Management "36th" to 32nd (Supabase), FAQ year 2024 to 2025, and a NAAC cycle-end note
+  (cycle 1, valid to 9 Sep 2026) beside both NAAC claims.
+- **SMU "effective fee Rs 84,000":** correct. onlinemanipal.com/smu-scholarship lists 30% for candidates from Sikkim and
+  the Northeast region with address proof; 30% off Rs 1,20,000 leaves Rs 84,000. Answer reworded to state the condition.
+- **amrita-vs-nmims WES:** data.ts lists WES for both, but "portable internationally" was unsourced. The answer now
+  says both list WES and to check the target country's requirements.
+- **BITS "NIRF #16 Overall 2025":** correct, read on nirfindia.org (score 65.06, rank 16) in the browser; plain
+  fetches get 403.
+- **placements/topHirers:** removed from all 44 hub JSONs. Never rendered; unsourced employer lists and the
+  bulk-generated salary sentence. hubConflicts no longer drops Q3 on those hubs, so hubs with PLACEMENT_FACTS gain it.
+- **Brand string:** manifest em dash removed; default meta description no longer claims "real placement data".
+  The " | EdifyEdu" title suffix was NOT changed: it sits on every page title and inside the 60-char trim budget,
+  so it waits for Rishi's call after the 6 Nov rank re-read.
+
 ## 2026-11-04 · AI-citation flags: wrong NAAC, NIRF, spec-count and fee claims fixed
 
 - **Source of every corrected value:** Supabase accreditations (joined through scripts/lib/supabase-uni-map.mjs),
