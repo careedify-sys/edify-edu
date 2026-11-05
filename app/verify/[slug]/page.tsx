@@ -110,7 +110,7 @@ export async function generateMetadata({ params }: PageProps) {
     .eq('slug', slug)
     .single();
 
-  if (!uni) return { title: { absolute: 'University Not Found | edifyedu.in' } };
+  if (!uni) return { title: { absolute: 'University Not Found | EdifyEdu' } };
 
   // 58 of the 124 verify slugs are Supabase slugs that are not lib/data.ts ids
   // (narsee-monjee-institute-of-management-studies-nmims-online vs nmims-online),

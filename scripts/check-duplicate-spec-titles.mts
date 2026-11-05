@@ -74,7 +74,7 @@ for (const u of UNIVERSITIES) {
       // the same title.
       const shortSpec = shortenSpec(r.name)
       const fee = compactFee(pd?.fees || `₹${Math.round(u.feeMin / 1000)}K+`)
-      const tail = `${label} ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | edifyedu.in`
+      const tail = `${label} ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`
       const title = clampTitleSpecLed(
         `${getTitleName(u.id, u.name, u.abbr)} ${tail}`,
         `${getShortTitleName(u.id, u.shortName, u.name, u.abbr)} ${tail}`,

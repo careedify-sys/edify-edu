@@ -52,8 +52,8 @@ export async function generateMetadata(
   const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
   // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
   const title = clampTitleSpecLed(
-      `${titleName} MBA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | edifyedu.in`,
-      `${shortName} MBA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | edifyedu.in`,
+      `${titleName} MBA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
+      `${shortName} MBA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
       shortSpec,
     )
   const baseDescription = clampDescription(`Online MBA in ${spec} from ${titleName}: ${feeExact ? `${feeExact} fees` : 'fees on request'}, eligibility, syllabus and admission ${year}.${naacSuffix(u.naac)}${nirfStr}. UGC-DEB approved. Compare before you enrol.`)

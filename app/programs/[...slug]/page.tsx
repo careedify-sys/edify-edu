@@ -223,18 +223,18 @@ export async function generateMetadata(
 
   // CTR-tuned title pattern (2026-05-25): lead with concrete number, year-in-
   // brackets hook, no em dashes, no "Compare/Explore" lead. clampTitle below
-  // preserves the | edifyedu.in brand suffix and trims the body if it overflows
+  // preserves the | EdifyEdu brand suffix and trims the body if it overflows
   // Google's 60-char SERP cap.
   const rawTitle = hubOverride?.title
     || specOverride?.title
     || specTitle
     || (activeSpec
       ? program === 'MBA'
-        ? `Online MBA ${activeSpec} ${year}: ${uniCount}+ Colleges, Fees | edifyedu.in`
-        : `Online ${program} ${activeSpec} ${year}: ${uniCount}+ Colleges | edifyedu.in`
+        ? `Online MBA ${activeSpec} ${year}: ${uniCount}+ Colleges, Fees | EdifyEdu`
+        : `Online ${program} ${activeSpec} ${year}: ${uniCount}+ Colleges | EdifyEdu`
       : program === 'MBA'
         ? `Online MBA in India ${year}: ${uniCount} Colleges, Fees | edifyedu.in`
-        : `Online ${program} India ${year}: ${hubUniCount} UGC-DEB Colleges | edifyedu.in`)
+        : `Online ${program} India ${year}: ${hubUniCount} UGC-DEB Colleges | EdifyEdu`)
   const title = clampTitle(rawTitle)
 
   // CTR-tuned description: lead with most specific number, micro-CTA at end,

@@ -79,8 +79,8 @@ export default function MethodologyPage() {
       'Where every figure on EdifyEdu comes from, when it was last checked, and what we do when something cannot be verified.',
     url: `${BASE}/methodology`,
     dateModified: asOf,
-    isPartOf: { '@type': 'WebSite', name: 'edifyedu.in', url: BASE },
-    publisher: { '@type': 'Organization', name: 'edifyedu.in', url: BASE },
+    isPartOf: { '@type': 'WebSite', name: 'EdifyEdu', url: BASE },
+    publisher: { '@type': 'Organization', name: 'EdifyEdu', url: BASE },
     breadcrumb,
   }
 

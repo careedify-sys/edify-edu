@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     url: `${BASE}/fees`,
     type: 'website',
     siteName: 'edifyedu.in',
-    images: [{ url: `${BASE}/og.webp`, width: 1200, height: 630, alt: 'Online University Fee Comparison | edifyedu.in' }],
+    images: [{ url: `${BASE}/og.webp`, width: 1200, height: 630, alt: 'Online University Fee Comparison | EdifyEdu' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -140,7 +140,7 @@ function buildSchemas() {
     description: `Compare fees and EMI for ${priced.length} UGC-DEB approved online degree programs`,
     url: `${BASE}/fees`,
     dateModified: new Date().toISOString().slice(0, 10),
-    isPartOf: { '@type': 'WebSite', name: 'edifyedu.in', url: BASE },
+    isPartOf: { '@type': 'WebSite', name: 'EdifyEdu', url: BASE },
     breadcrumb: { '@type': 'BreadcrumbList', itemListElement: breadcrumb.itemListElement },
   }
 

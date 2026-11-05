@@ -7,8 +7,8 @@ import { LoginPlaceholder } from '@/components/verify/LoginPlaceholder';
 
 export const metadata = {
   // CTR-tuned (2026-05-25): no em dash, lead with the count and bracket Free hook.
-  // absolute disables the root layout "%s | edifyedu.in" template (we already include the suffix).
-  title: { absolute: 'UGC-DEB, NAAC, NIRF Approval Checker [Free 2026] | edifyedu.in' },
+  // absolute disables the root layout "%s | EdifyEdu" template (we already include the suffix).
+  title: { absolute: 'UGC-DEB, NAAC, NIRF Approval Checker [Free 2026] | EdifyEdu' },
   description: '122+ online universities cross-checked across 5 official sources (UGC-DEB, NAAC, NIRF, AICTE, AACSB). Verify any approval in 10 seconds. Free, no login at EdifyEdu.',
   keywords: [
     'verify university ugc deb approval',
@@ -21,7 +21,7 @@ export const metadata = {
     'aicte approval check',
   ],
   openGraph: {
-    title: 'UGC-DEB, NAAC, NIRF Approval Checker [Free 2026] | edifyedu.in',
+    title: 'UGC-DEB, NAAC, NIRF Approval Checker [Free 2026] | EdifyEdu',
     description: '122+ online universities cross-checked across 5 official sources (UGC-DEB, NAAC, NIRF, AICTE, AACSB). Verify any approval in 10 seconds. Free, no login.',
     type: 'website',
     url: 'https://edifyedu.in/verify',

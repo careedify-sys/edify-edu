@@ -125,7 +125,7 @@ export async function generateMetadata({ params }: { params: { id: string; progr
   const nirf = nirfLabel ?? `NAAC ${u.naac}`
 
   const titleName = getTitleName(u.id, u.name, u.abbr)
-  const title = `${titleName} ${progTitle}: Fees & Syllabus 2026 | edifyedu.in`
+  const title = `${titleName} ${progTitle}: Fees & Syllabus 2026 | EdifyEdu`
 
   const baseDescription = `January 2027 admissions open till March. Online ${progTitle} at ${seoName}: ${fee} total${naacSegment(u.naac)}${nirfLabel ? `, ${nirfLabel}` : ''}.${specs ? ` Specs: ${specs}.` : ''} UGC DEB approved. Compare & apply!`
 

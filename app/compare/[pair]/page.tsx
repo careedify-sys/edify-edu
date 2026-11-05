@@ -62,8 +62,9 @@ export async function generateMetadata(
   const prog = config.program
   const year = new Date().getFullYear()
 
-  // Brand in titles is "edifyedu.in" sitewide since 5 Nov 2026 (was "EdifyEdu").
-  const brand = 'edifyedu.in'
+  // Pairs added in the AI-citation sprint carry the brand as "edifyedu.in";
+  // the existing pairs keep their published wording (flagged, not changed).
+  const brand = config.derived ? 'edifyedu.in' : 'EdifyEdu'
   const title = `${nameA} vs ${nameB} Online ${prog} ${year}: Fees and Verdict | ${brand}`
   const feeA = getProgramFee(uA, prog)
   const feeB = getProgramFee(uB, prog)

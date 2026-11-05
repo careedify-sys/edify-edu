@@ -11,7 +11,7 @@ export const dynamic = 'force-static'
 
 // Metadata added 2026-09-27. This route exported none, so all 143 pre-rendered
 // /review/* pages inherited the root layout metadata verbatim: the homepage
-// title "Online Universities India 2026: 143 UGC-DEB Ranked | edifyedu.in" and
+// title "Online Universities India 2026: 143 UGC-DEB Ranked | EdifyEdu" and
 // the homepage description, 143 times over.
 //
 // That had a visible cost. On the brand query "edifyedu" the top organic result
@@ -29,7 +29,7 @@ export function generateMetadata({ params }: Props): Metadata {
     return { title: 'Not Found', robots: { index: false, follow: false } }
   }
   return {
-    // Root layout appends " | edifyedu.in" via its title template.
+    // Root layout appends " | EdifyEdu" via its title template.
     title: `Share your review of ${u.name}`,
     description: `Submit a verified student review of ${u.name}. Published only after we confirm you studied the programme. No paid reviews.`,
     alternates: { canonical: `https://edifyedu.in/review/${u.id}` },

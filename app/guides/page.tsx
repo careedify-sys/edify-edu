@@ -6,7 +6,7 @@ import { GUIDES } from '@/lib/guides'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  // The root template appends " | edifyedu.in"; adding it here printed it twice.
+  // The root template appends " | EdifyEdu"; adding it here printed it twice.
   title: 'Online Degree Guides and Honest Answers',
   description: 'No fluff. Straight answers to every question students ask before enrolling in an online degree in India. UGC DEB approval, NIRF rankings, MBA eligibility, and more.',
   alternates: { canonical: 'https://edifyedu.in/guides' },
