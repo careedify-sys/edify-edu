@@ -35,6 +35,16 @@ npx tsx scripts/check-blog-fees.mjs || exit 1
 echo "pre-commit: check-placeholder-fee-ranges"
 npx tsx scripts/build-placeholder-fee-ranges.mjs --check || exit 1
 
+# Protected AI-cited pages. f8d8b5c set the MUJ fake-or-legit post to
+# 'redirected' for 23 days (14 Sep to 7 Oct 2026) and it lost most of its
+# AI-feature visibility; nothing here looked at a post's status. Blocks any
+# staged change that would redirect, noindex, unpublish or rename a path in
+# data/protected-ai-pages.csv, and freezes title/H1/meta on eight review posts
+# until 2026-12-05. Override: ALLOW_PROTECTED_CHANGE=<path> plus a dated line in
+# data/protected-change-log.json. See the header of the script.
+echo "pre-commit: check-protected-pages"
+npx tsx scripts/check-protected-pages.mjs || exit 1
+
 # Duplicate-slug gate. Blocks any commit that introduces a slug collision
 # in BLOG_POSTS. Runtime .find() picks the first match and would render
 # only one of the entries, so a duplicate is always a bug. See

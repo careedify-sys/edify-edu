@@ -1,5 +1,28 @@
 # Fix log
 
+## 2026-11-05 · Gate: protected AI-cited pages, plus a title freeze on eight review posts
+
+- **Why:** f8d8b5c set the MUJ fake-or-legit post to status 'redirected' on 14 Sep; a0ad337 restored it on 7 Oct. It
+  lost most of its AI-feature visibility. Nothing in pre-commit read a post's status, so nothing stopped it.
+- **What:** scripts/check-protected-pages.mjs, wired as the 7th gate in .husky/pre-commit. For each path in
+  data/protected-ai-pages.csv it fails a commit that unpublishes or removes a lib/blog.ts entry (a slug rename counts as
+  removal), removes a /universities id, adds a redirect matching the path (redirects.json and next.config.js evaluated
+  with Next's path-to-regexp; middleware.ts by literal text), or noindexes it (index decision evaluated on the working
+  tree, plus any staged "index: false" line in a route file serving the path).
+- **Freeze to 2026-12-05:** seoTitle, title, h1Title and metaDescription are locked on the MUJ legit, CU, Amity, SMU,
+  IGNOU, Symbiosis, JAIN and BITS reviews. Body edits and FAQ appends pass. f61aed3 (28 Oct) retitled five of them
+  and left the BITS control alone; holding the copy gives a clean read.
+- **Override:** ALLOW_PROTECTED_CHANGE=<path> and a {date, path, reason} line in data/protected-change-log.json dated
+  within 3 days. Either alone fails. Git Bash rewrites "/blog/x" in an env var to "C:/.../Git/blog/x", so the gate
+  matches the value by suffix.
+- **Proved:** a staged 'redirected' status on the MUJ post failed both the script and a real `git commit`, then was
+  reverted. Also fired on: SMU title change, BITS slug rename, a redirects.json source, a next.config.js wildcard, a
+  middleware key, and "robots: { index: false }" in the blog template. Passed on: SMU FAQ append plus body edit, an
+  unprotected title edit, the override with env plus a log line.
+- **OPEN:** data/protected-ai-pages.csv holds only the eight frozen posts. The 176-path AI-feature export was not in the
+  repo; replace the file with it. The gate fails closed if the file is missing or empty.
+- **Side finding:** MODE_UNVERIFIED_UNIS lists 'reva-university-online', which no longer exists in lib/data.ts.
+
 ## 2026-11-05 · Title brand suffix: " | EdifyEdu" to " | edifyedu.in" (REVERTED same day)
 
 - **Reverted (baf64b5):** Rishi pulled it over ranking risk; titles say " | EdifyEdu" again. Do not re-propose a
