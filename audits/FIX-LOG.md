@@ -1,6 +1,9 @@
 # Fix log
 
-## 2026-11-05 · Title brand suffix: " | EdifyEdu" to " | edifyedu.in"
+## 2026-11-05 · Title brand suffix: " | EdifyEdu" to " | edifyedu.in" (REVERTED same day)
+
+- **Reverted (baf64b5):** Rishi pulled it over ranking risk; titles say " | EdifyEdu" again. Do not re-propose a
+  sitewide title suffix change without GSC evidence that the brand label costs clicks.
 
 - **Why:** Rishi chose it after the second flags pass. Schema names and og:site_name already said edifyedu.in; every <title>
   said EdifyEdu, the likely source of the "EdifyEdu" label on AI Overview citations. Done before the 6 Nov rank re-read,
