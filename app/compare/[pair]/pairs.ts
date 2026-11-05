@@ -76,7 +76,7 @@ export const PAIRS: Record<string, PairConfig> = {
       { q: 'Is SMU or Amity better for online MBA?', a: 'Amity has 19 specs and NIRF #22 University. SMU has 5 specs at Rs 1,20,000 (nearly half of Amity). SMU is budget-friendly with Manipal brand. Amity is premium with broader choice.' },
       { q: 'What is the fee difference?', a: 'SMU costs Rs 1,20,000 flat. Amity costs Rs 2,07,000 (one-time). SMU saves Rs 1,05,000. Significant difference.' },
       { q: 'Does SMU have the same brand as MUJ?', a: 'No. SMU (Sikkim Manipal University) is a separate institution from MUJ (Manipal University Jaipur). Both are in the Manipal group but independently governed and accredited.' },
-      { q: 'Does SMU offer Northeast scholarship?', a: 'Yes. SMU offers 30% scholarship for Northeast India and Sikkim residents. This is unique and brings effective fee to Rs 84,000.' },
+      { q: 'Does SMU offer Northeast scholarship?', a: 'Yes. SMU lists a 30% scholarship for candidates from Sikkim and the Northeast region with valid address proof. On the Rs 1,20,000 course fee that brings the fee to Rs 84,000. Fees are indicative, so confirm the scholarship on onlinemanipal.com before you apply.' },
       { q: 'Which has better placement support?', a: 'Amity has a larger placement network with 500+ hiring partners. SMU has placement support but on a smaller scale. For working professionals, self-directed career management is typical for both.' },
     ],
     verdictA: ['Budget is your top priority (Rs 1,20,000 vs Rs 2,25,000)', 'You are from Northeast India (30% scholarship available)', 'Manipal group brand at the lowest price matters'],
@@ -90,7 +90,7 @@ export const PAIRS: Record<string, PairConfig> = {
     faqs: [
       { q: 'Is Amrita or NMIMS better for online MBA?', a: 'Amrita has NIRF #8 University and NAAC A++. NMIMS has NIRF #24 Management and Mumbai BFSI network. Amrita is stronger on university rank. NMIMS is stronger on management-specific positioning.' },
       { q: 'What is the fee difference?', a: 'Amrita costs Rs 1,76,000-2,60,000 depending on specialisation. NMIMS costs Rs 1,96,000 to Rs 2,20,000. Fees overlap in the mid-range but Amrita AI spec (Rs 2,44,000) and IFA (Rs 2,60,000) are premium.' },
-      { q: 'Does Amrita include WES recognition?', a: 'Yes. Amrita degrees are WES recognised for USA and Canada credential evaluation. NMIMS also has WES recognition. Both are portable internationally.' },
+      { q: 'Does Amrita include WES recognition?', a: 'Both universities list WES recognition. WES evaluates the degree for credential purposes in the USA and Canada, so confirm the current WES requirements for your target country before you apply.' },
       { q: 'Which has per-spec fee tiers?', a: 'Amrita has 6 different fee tiers based on specialisation. NMIMS has a more uniform fee structure. Amrita General Management at Rs 1,76,000 is the most affordable entry point.' },
       { q: 'Which has more scholarships?', a: 'Amrita offers 8 scholarship categories (Defence 20%, SAARC 40%, Female 15%, Doctors 15%, etc.). NMIMS offers Armed Forces 20% scholarship. Amrita has broader scholarship access.' },
     ],
