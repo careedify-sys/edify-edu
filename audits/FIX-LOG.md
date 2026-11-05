@@ -1,5 +1,17 @@
 # Fix log
 
+## 2026-11-05 · Title brand suffix: " | EdifyEdu" to " | edifyedu.in"
+
+- **Why:** Rishi chose it after the second flags pass. Schema names and og:site_name already said edifyedu.in; every <title>
+  said EdifyEdu, the likely source of the "EdifyEdu" label on AI Overview citations. Done before the 6 Nov rank re-read,
+  so a title-wide change now sits inside that measurement window: read the 6 Nov numbers with that confound in mind.
+- **Scope:** root template plus 20 app files with hardcoded suffixes; schema WebSite/Organization names on /fees,
+  /methodology and the homepage video publisher. Build: 1,702 titles end " | edifyedu.in", 565 carry no suffix, 1 names
+  EdifyEdu in its body (/methodology). Bylines, alternateName and the author jobTitle unchanged.
+- **Cost:** clampTitle reserves the suffix, so long titles lose 3 body characters (the Amity test fixture drops "2026").
+- **Pre-existing:** the 4th case in lib/seo-title.test.ts (brand drop on an unbreakable token) fails on main before this
+  change too; that test is not in pre-commit.
+
 ## 2026-11-05 · AI-citation flags, second pass: the open items
 
 - **Review-post fee MISMATCHes (94 primary figures on 24 posts):** read each one. About 85 are scanner false positives:
