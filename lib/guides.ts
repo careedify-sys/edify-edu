@@ -39,7 +39,18 @@ export const GUIDES: Guide[] = [
 
 <h2>Is It Equivalent to a Regular Degree?</h2>
 <p>Yes. The UGC circular dated April 2020 explicitly states that online degrees from approved universities are <em>at par</em> with conventional degrees for all purposes — employment, promotion, higher studies, and eligibility for competitive exams including UPSC, state PSCs, and bank exams.</p>
-<p>Per UGC (Online Programmes) Regulations 2018, the degree certificate clearly identifies the programme as Online mode — by regulator design. This does not affect legal validity. It carries the same university seal, Vice-Chancellor signature, and academic structure as a regular degree from that university.</p>
+<p>Whether the certificate or transcript mentions "Online" depends on the university. Ask the admissions team for a sample degree certificate before you enrol if this matters to you. A mention of the mode does not affect legal validity, because the degree comes from the same university as its campus degree.</p>
+
+<h2>What UGC Requires Before a University Can Teach Online</h2>
+<p>UGC first set the rules for full online degrees in the UGC (Online Courses or Programmes) Regulations, 2018, notified on 4 July 2018. These conditions explain why an approved online degree carries weight. A university cannot launch an online programme on its own say-so.</p>
+<ul>
+<li><strong>Proven discipline only.</strong> A university may run a subject online only if it already teaches the same or a similar programme on campus or in distance mode, and at least one batch has graduated from it.</li>
+<li><strong>No lab-based programmes.</strong> Programmes that need practical or laboratory work as part of the curriculum cannot run online. This is why you will not find an online BSc in Chemistry or an online MBBS.</li>
+<li><strong>Proctored exams.</strong> Examinations must run in proctored mode and follow UGC's norms for such exams.</li>
+<li><strong>Four-quadrant teaching.</strong> Every course must offer e-Tutorials (video, audio, simulations), e-Content (e-books, PDFs, demonstrations), Web Resources (case studies, articles, open content) and Self-Assessment (quizzes, assignments, discussion forums).</li>
+<li><strong>Tracked participation.</strong> The university's learning management system must record each learner's activity. The 2018 rules set a floor of at least 2 hours of participation every fortnight.</li>
+</ul>
+<p>UGC later replaced the 2018 text with the UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, which is the version in force today. Read the current notification on <strong>ugc.gov.in</strong> if you need the exact wording for an employer or a recruitment board.</p>
 
 <h2>How to Verify a University is UGC DEB Approved</h2>
 <ol>
@@ -120,12 +131,16 @@ export const GUIDES: Guide[] = [
 </tbody>
 </table>
 
+<h2>Why Online Mode Has Stricter Delivery Rules</h2>
+<p>Online programmes run under a UGC rulebook that first appeared as the UGC (Online Courses or Programmes) Regulations, 2018. A university needs a graduated campus or distance batch in the subject before it can offer that subject online. Exams must be proctored.</p>
+<p>The rules also fix how teaching happens. Each course needs four parts: video tutorials, e-content such as e-books, web resources such as case studies, and self-assessment through quizzes and assignments. The 2018 rules required the LMS to track at least 2 hours of learner participation every fortnight. UGC folded these rules into its 2020 ODL and Online Regulations, so check <strong>ugc.gov.in</strong> for the current text.</p>
+
 <h2>Which One is Better?</h2>
 <p><strong>Online MBA is better if:</strong> you want structured learning with faculty access, you're targeting mid/senior corporate roles, or you want a more recent brand-name university on your CV (Amity, NMIMS, Symbiosis, MAHE).</p>
 <p><strong>Distance MBA is better if:</strong> budget is the primary constraint, you're completing a degree mainly for government job eligibility, or you're self-motivated and don't need live classes (IGNOU MBA is ₹31,500 total and fully valid).</p>
 
 <h2>Does the Degree Certificate Look Different?</h2>
-<p>No. Both modes issue the same degree certificate — it clearly identifies the programme as Online mode (per UGC 2018 Regulations) on it. The mode of study is not printed on the degree.</p>
+<p>It depends on the university. Some print the mode of study on the certificate or transcript and some do not, so ask the admissions team for a sample certificate before you enrol. Either way, an online or distance degree from an approved university is legally valid.</p>
 
 <h2>Can You Switch Between Modes?</h2>
 <p>No. You enrol in one mode and complete it. If you start a distance MBA and want to switch to an online MBA from another university, you'd have to re-enrol (credit transfer between institutions and modes is not standard in India yet).</p>

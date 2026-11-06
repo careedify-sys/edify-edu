@@ -1,5 +1,20 @@
 # Fix log
 
+## 2026-11-06 · Guides: UGC online-programme rules added; certificate-mode claim removed
+
+- **Why:** Rishi asked for the UGC (Online Courses or Programmes) Regulations, 2018 on the site for credibility. The two
+  validity guides were the natural home, and both already cited "the 2018 Regulations" for something the regulation
+  text he supplied never says: that the degree certificate shows "Online mode". The online-vs-distance guide stated it
+  and denied it in consecutive sentences.
+- **What:** /guides/is-online-degree-valid-india gains "What UGC Requires Before a University Can Teach Online" (passed
+  batch in the discipline, no lab programmes, proctored exams, four quadrants, LMS tracking of 2 hours a fortnight).
+  /guides/online-mba-vs-distance-mba gains a shorter "Why Online Mode Has Stricter Delivery Rules". Both paraphrase, quote
+  nothing over 15 words, and say the 2020 ODL and Online Regulations replaced the 2018 text and are in force.
+- **Certificate lines:** both now say it depends on the university and tell readers to ask for a sample certificate. No
+  UGC source in hand settles whether the mode is printed, so no rule is asserted either way.
+- **Not done:** the 2018 rules were not spread onto hub or university pages; they are identical for every university.
+  components/LearningExperience.tsx is imported nowhere, so it was left alone despite its unverified claims.
+
 ## 2026-11-05 · Gate: protected AI-cited pages, plus a title freeze on eight review posts
 
 - **Why:** f8d8b5c set the MUJ fake-or-legit post to status 'redirected' on 14 Sep; a0ad337 restored it on 7 Oct. It
