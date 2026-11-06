@@ -1,5 +1,24 @@
 # Fix log
 
+## 2026-11-06 · September 2026 UGC-DEB lists applied; one university count (125+) sitewide
+
+- **Why:** Rishi supplied the 22 Sep 2026 addendum and main list and asked whether the site reflects them. He also asked
+  for a single university-count claim across the site. The site stated its own total as 143, 128, 130+, 122+, 127+ and
+  50+ in different places.
+- **Recognition:** diff in audits/ugc-deb-2026-08/september-2026-update.md. Text updated in lib/data.ts for Calicut
+  (ten programmes, B.Com Hons added), Silver Oak (second 2026-27 grant of six programmes; the "general only" notFor was
+  now false) and BRAOU (MBA General added; notFor said management was not covered; ODL-mode caution added).
+  No programme arrays changed, so no new URLs.
+- **Count:** 129 replacements across 28 files, all to "125+". Only Edify's own total was changed. Per-programme
+  counts, government-total statements ("over 126 universities approved"), code comments and CMS files were left alone.
+  Changes the default site title, /universities, /compare and homepage titles. Dated measurement citations in posts
+  ("database of 143 universities, 26 October 2026") were kept at 143, since that was the count on that date.
+- **Gate changed:** check-university-count used to demand the exact record count (143). Rishi chose "125+" as the one
+  sitewide number, so the gate now accepts only CLAIM_TEXT from scripts/lib/university-count-claim.mjs, and fails if
+  lib/data.ts drops below the floor. build-llms-txt prints the same constant. Probe: "143 universities" and
+  "125 UGC-DEB universities" both fail, "125+ universities" passes.
+- **Not done:** new programme hubs for the added grants, and six September-list universities with no site record.
+
 ## 2026-11-06 · UGC-DEB officer contacts on /verify and the UGC-DEB check guide
 
 - **Why:** Rishi wanted students able to contact or complain to UGC-DEB directly. Copied from

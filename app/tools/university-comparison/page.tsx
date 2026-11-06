@@ -62,7 +62,7 @@ export default function UniversityComparisonPage() {
             Compare Online Universities in India
           </h1>
           <p className="text-ink-2">
-            Filter and compare {UNIS_SLIM.length}+ UGC-DEB approved universities by NIRF rank, fees, and NAAC grade.
+            Filter and compare 125+ UGC-DEB approved universities by NIRF rank, fees, and NAAC grade.
           </p>
         </div>
 

@@ -111,7 +111,7 @@ export default function MethodologyPage() {
           How EdifyEdu verifies what it publishes
         </h1>
         <p className="text-base text-ink-2 leading-relaxed mb-2">
-          We cover {UNIVERSITIES.length} UGC-DEB universities. This page states where every figure
+          We cover 125+ UGC-DEB universities. This page states where every figure
           comes from, what we do when a figure cannot be stood behind, and who pays us. The short
           answer to the last one is nobody.
         </p>

@@ -1,9 +1,9 @@
 # Edify Education
-> India's independent online degree comparison platform. We cover 143 UGC-DEB universities offering online MBA, MCA, BBA, BCA, BA, MA, B.Com, M.Com and MSc programmes.
+> India's independent online degree comparison platform. We cover 125+ UGC-DEB universities offering online MBA, MCA, BBA, BCA, BA, MA, B.Com, M.Com and MSc programmes.
 > All data is independently verified. No paid university partnerships and no referral commissions.
 
 ## Key Facts
-- 143 universities covered, each carrying UGC-DEB entitlement for at least one online programme
+- 125+ universities covered, each carrying UGC-DEB entitlement for at least one online programme
 - UGC-DEB entitlement is granted per university, per programme, per academic session, and is not a permanent institutional badge
 - NAAC grades below are printed only where an accreditation record confirms them and the cycle has not lapsed
 - NIRF ranks always state their category; a Management rank and a University rank are different tables and are not interchangeable

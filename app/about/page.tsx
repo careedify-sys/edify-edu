@@ -5,12 +5,12 @@ import { Shield, Award, Users, Phone, Mail, CheckCircle, XCircle, Database, BarC
 
 export const metadata: Metadata = {
   title: 'About Edify: India\'s Independent Online Education Guide',
-  description: 'edifyedu.in is India\'s independent guide to UGC DEB approved online degrees. No paid rankings. No university affiliations. We help students compare 143 universities honestly.',
+  description: 'edifyedu.in is India\'s independent guide to UGC DEB approved online degrees. No paid rankings. No university affiliations. We help students compare 125+ universities honestly.',
   keywords: 'about edify, independent education guide india, ugc deb approved universities, honest online degree comparison, best online mba colleges in india, online mba india, nirf ranked online universities, naac a++ online university, online mba for working professionals, top 10 mba colleges in india',
   alternates: { canonical: 'https://edifyedu.in/about' },
   openGraph: {
     title: 'About Edify: India\'s Independent Online Education Guide',
-    description: 'No paid rankings. No university affiliations. We help students compare 143 UGC DEB approved online universities honestly.',
+    description: 'No paid rankings. No university affiliations. We help students compare 125+ UGC DEB approved online universities honestly.',
     url: 'https://edifyedu.in/about',
     type: 'website',
     images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: 'About Edify' }],
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'About Edify: India\'s Independent Online Education Guide',
-    description: 'No paid rankings. No university affiliations. Honest comparison of 143 UGC DEB approved online universities.',
+    description: 'No paid rankings. No university affiliations. Honest comparison of 125+ UGC DEB approved online universities.',
   },
 }
 
@@ -31,7 +31,7 @@ const teamSchema = [
     jobTitle: 'Senior Education Researcher',
     worksFor: { '@id': 'https://edifyedu.in/#organization' },
     url: 'https://edifyedu.in/about#team',
-    description: 'Education researcher and data analyst focused on India\'s online higher education sector. Tracks UGC DEB approvals, NIRF rankings, and fee structures across 143 universities. 7+ years advising students on degree choices.',
+    description: 'Education researcher and data analyst focused on India\'s online higher education sector. Tracks UGC DEB approvals, NIRF rankings, and fee structures across 125+ universities. 7+ years advising students on degree choices.',
     knowsAbout: ['UGC DEB approved universities', 'Online MBA India 2026', 'NIRF rankings', 'NAAC accreditation', 'Online degree validity India'],
   },
 ]
@@ -254,7 +254,7 @@ export default function AboutPage() {
                 initials: 'RK',
                 name: 'Rishi Kumar',
                 title: 'Founder & Lead Researcher',
-                desc: 'Education researcher and data analyst focused on India\'s online higher education sector. Tracks UGC DEB approvals, NIRF rankings, and fee structures across 143 universities.',
+                desc: 'Education researcher and data analyst focused on India\'s online higher education sector. Tracks UGC DEB approvals, NIRF rankings, and fee structures across 125+ universities.',
                 tags: ['UGC DEB', 'NIRF Rankings', 'Fee Structures', '7+ Years'],
               },
             ].map(member => (

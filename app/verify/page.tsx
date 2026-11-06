@@ -10,7 +10,7 @@ export const metadata = {
   // CTR-tuned (2026-05-25): no em dash, lead with the count and bracket Free hook.
   // absolute disables the root layout "%s | EdifyEdu" template (we already include the suffix).
   title: { absolute: 'UGC-DEB, NAAC, NIRF Approval Checker [Free 2026] | EdifyEdu' },
-  description: '122+ online universities cross-checked across 5 official sources (UGC-DEB, NAAC, NIRF, AICTE, AACSB). Verify any approval in 10 seconds. Free, no login at EdifyEdu.',
+  description: '125+ online universities cross-checked across 5 official sources (UGC-DEB, NAAC, NIRF, AICTE, AACSB). Verify any approval in 10 seconds. Free, no login at EdifyEdu.',
   keywords: [
     'verify university ugc deb approval',
     'check naac grade university',
@@ -23,7 +23,7 @@ export const metadata = {
   ],
   openGraph: {
     title: 'UGC-DEB, NAAC, NIRF Approval Checker [Free 2026] | EdifyEdu',
-    description: '122+ online universities cross-checked across 5 official sources (UGC-DEB, NAAC, NIRF, AICTE, AACSB). Verify any approval in 10 seconds. Free, no login.',
+    description: '125+ online universities cross-checked across 5 official sources (UGC-DEB, NAAC, NIRF, AICTE, AACSB). Verify any approval in 10 seconds. Free, no login.',
     type: 'website',
     url: 'https://edifyedu.in/verify',
   },
@@ -102,7 +102,7 @@ export default async function VerifyHomePage() {
       {
         '@type': 'Question',
         name: 'Is the edifyedu.in Verify tool free to use?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Yes. Completely free. No login, no signup, no hidden paywall. You can verify any of the 122+ tracked universities as many times as you want.' },
+        acceptedAnswer: { '@type': 'Answer', text: 'Yes. Completely free. No login, no signup, no hidden paywall. You can verify any of the 125+ tracked universities as many times as you want.' },
       },
       {
         '@type': 'Question',
@@ -314,7 +314,7 @@ export default async function VerifyHomePage() {
               {
                 step: '01',
                 title: 'Search for your university',
-                body: 'Type the university name in the search bar above. We track 143 UGC-DEB approved online universities. Results appear as you type.',
+                body: 'Type the university name in the search bar above. We track 125+ UGC-DEB approved online universities. Results appear as you type.',
                 accent: '#1F6B52',
                 accentBg: '#E4F5EF',
               },

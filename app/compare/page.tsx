@@ -20,12 +20,12 @@ export function generateMetadata(): Metadata {
   return {
     // CTR-tuned (2026-05-25): no em dash, no "Compare" lead in desc, bracket hook.
     // absolute disables the root layout "%s | EdifyEdu" template (we already include the suffix).
-    title: { absolute: 'Online MBA vs MCA Comparison 2026: 143 Universities | EdifyEdu' },
-    description: '143 UGC-DEB online MBA & MCA programmes side by side: fees, NAAC grade, NIRF rank, specialisations, syllabus. Pick your fit in 60 seconds, free at EdifyEdu.',
+    title: { absolute: 'Online MBA vs MCA Comparison 2026: 125+ Universities | EdifyEdu' },
+    description: 'Online MBA & MCA programmes from 125+ UGC-DEB universities side by side: fees, NAAC grade, NIRF rank, specialisations, syllabus. Pick your fit in 60 seconds, free at EdifyEdu.',
     alternates: { canonical: 'https://edifyedu.in/compare' },
     openGraph: {
-      title: 'Online MBA vs MCA Comparison 2026: 143 Universities | EdifyEdu',
-      description: '143 UGC-DEB online MBA & MCA programmes side by side: fees, NAAC grade, NIRF rank, syllabus. Pick your fit in 60 seconds, free.',
+      title: 'Online MBA vs MCA Comparison 2026: 125+ Universities | EdifyEdu',
+      description: 'Online MBA & MCA programmes from 125+ UGC-DEB universities side by side: fees, NAAC grade, NIRF rank, syllabus. Pick your fit in 60 seconds, free.',
       type: 'website',
     },
   }
@@ -144,7 +144,7 @@ export default function ComparePage() {
             Compare Online <em className="italic font-medium" style={{ color: '#d97706' }}>MBAs</em> side-by-side.
           </h1>
           <p className="text-sm sm:text-[15px] leading-relaxed max-w-xl" style={{ color: '#475569' }}>
-            Fees, NIRF rank, NAAC grade and semester-wise syllabus for <strong style={{ color: '#0f2756' }}>143 UGC DEB approved</strong> universities. No guesswork.
+            Fees, NIRF rank, NAAC grade and semester-wise syllabus for <strong style={{ color: '#0f2756' }}>125+ UGC DEB approved</strong> universities. No guesswork.
           </p>
         </div>
       </div>
@@ -248,7 +248,7 @@ export default function ComparePage() {
           <h2 className="text-xl font-semibold mb-8" style={{ fontFamily: 'var(--font-display)', color: '#0f2756' }}>3 steps to a smart pick</h2>
           <div className="grid sm:grid-cols-3 gap-6">
             {[
-              { step: '1', title: 'Select universities', desc: 'Use the 3 slots to pick any universities you want to compare. Search by name. All 143 UGC DEB approved programs are available.' },
+              { step: '1', title: 'Select universities', desc: 'Use the 3 slots to pick any universities you want to compare. Search by name. All 125+ UGC DEB approved universities are available.' },
               { step: '2', title: 'Compare syllabus', desc: 'Pick a specialisation for each university. Green subjects are common to both; amber subjects are unique, so you can see exactly what differs.' },
               { step: '3', title: 'Check rankings & fees', desc: 'Scroll down to see NIRF rank, NAAC grade, total fees, EMI options, average salary, and top hiring companies side by side.' },
             ].map(s => (

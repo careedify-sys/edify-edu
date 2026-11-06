@@ -17,7 +17,7 @@ export default function CouponPageCTA({ page }: { page: CouponPageData }) {
         <Tag className="w-8 h-8 text-slate-400 mx-auto mb-3" />
         {/* No superlative here. "the lowest fee" and "the most affordable online
             MBA from a NAAC A++ university" were both derived claims we cannot
-            verify: we track 143 universities rather than all of India, and a
+            verify: we track 125+ universities rather than all of India, and a
             large share of fee rows are placeholder ranges. State the fee, say
             why there is no coupon, and send the reader to the portal. */}
         <h3 className="text-lg font-bold text-slate-700 mb-2">No coupon on the {page.shortName} online MBA</h3>

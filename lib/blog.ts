@@ -3988,7 +3988,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="cta-box">
   <strong>Comparing DDU against a private online MBA?</strong>
-  <p>Edify compares public UGC and NAAC data across 128 universities. No paid rankings, no referral commissions.</p>
+  <p>Edify compares public UGC and NAAC data across 125+ universities. No paid rankings, no referral commissions.</p>
   <a class="ilink" href="/compare">Compare online MBA programmes</a>
   <a class="ilink" href="/tools/emi-calculator">Work out the monthly cost</a>
 </div>
@@ -4270,7 +4270,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="cta-box">
   <strong>Comparing this against another programme?</strong>
-  <p>Edify compares public UGC, NAAC and NIRF data across 128 universities. No paid rankings, no referral commissions.</p>
+  <p>Edify compares public UGC, NAAC and NIRF data across 125+ universities. No paid rankings, no referral commissions.</p>
   <a class="ilink" href="/compare">Compare online MBA programmes</a>
   <a class="ilink" href="/tools/emi-calculator">Work out the monthly cost</a>
 </div>
@@ -4573,7 +4573,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="cta-box">
   <strong>Not sure Parul is the right fit?</strong>
-  <p>Edify compares public UGC, NAAC and NIRF data across 128 universities. No paid rankings, no referral commissions.</p>
+  <p>Edify compares public UGC, NAAC and NIRF data across 125+ universities. No paid rankings, no referral commissions.</p>
   <a class="ilink" href="/compare">Compare online MBA programmes</a>
   <a class="ilink" href="/tools/emi-calculator">Work out the EMI on Rs 1,50,000</a>
 </div>
@@ -23959,7 +23959,7 @@ export const BLOG_POSTS: BlogPost[] = [
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@yankrukov" target="_blank" rel="noopener nofollow">Yan Krukau</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'Focused woman typing on laptop, surrounded by books in a cozy study spot.',
     ctaTitle: `Ready to Upgrade Your Qualifications?`,
-    ctaDesc: `Compare 50+ UGC DEB approved universities offering online MBA, MCA, BBA, BCA, B.Com all in one place.`,
+    ctaDesc: `Compare 125+ UGC DEB approved universities offering online MBA, MCA, BBA, BCA, B.Com all in one place.`,
     faqs: [
       { q: `What is the CAT 2026 syllabus?`, a: `CAT 2026 covers three sections: VARC (Verbal Ability and Reading Comprehension), DILR (Data Interpretation and Logical Reasoning), and QA (Quantitative Aptitude). The exam has 66 questions in 120 minutes, with 40 minutes per section. The syllabus has remained stable since 2022. The official syllabus and pattern will be confirmed in the CAT 2026 notification expected on the last Sunday of July 2026.` },
       { q: `Which IIM is conducting CAT 2026?`, a: `CAT 2026 is expected to be conducted by IIM Indore based on the rotation pattern among the six oldest IIMs. The convening IIM is officially confirmed only when the CAT 2026 notification is released on iimcat.ac.in, expected in late July 2026. CAT 2025 was conducted by IIM Kozhikode.` },
@@ -24125,7 +24125,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="cta-block">
 <h3>Ready to Upgrade Your Qualifications?</h3>
-<p>Compare 50+ UGC DEB approved universities offering online MBA, MCA, BBA, BCA, B.Com all in one place.</p>
+<p>Compare 125+ UGC DEB approved universities offering online MBA, MCA, BBA, BCA, B.Com all in one place.</p>
 <a href="/universities" style="display:inline-block;background:#f59e0b;color:#000;padding:10px 22px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px">Compare Universities</a>
 </div>`,
   },
@@ -24145,7 +24145,7 @@ export const BLOG_POSTS: BlogPost[] = [
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@rdne" target="_blank" rel="noopener nofollow">RDNE Stock project</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'A diverse team of colleagues discussing business strategies in a modern office environment.',
     ctaTitle: `Ready to Upgrade Your Qualifications?`,
-    ctaDesc: `Compare 50+ UGC DEB approved universities offering online MBA, MCA, BBA, BCA, B.Com, all in one place.`,
+    ctaDesc: `Compare 125+ UGC DEB approved universities offering online MBA, MCA, BBA, BCA, B.Com, all in one place.`,
     faqs: [{ q: `How long should a career objective be?`, a: `2 to 3 sentences, ideally under 60 words. Long objectives lose the reader. Short ones may not say enough. Aim for specific and concise.` },
     { q: `Should I customize my career objective for every job?`, a: `Yes. A customized objective that mentions the specific role and company type performs significantly better than a generic one. It takes 2 minutes and makes a real difference.` },
     { q: `What is the difference between career objective and career summary?`, a: `Career objective is forward-looking (what you want). Career summary is backward-looking (what you have done). Freshers should use objectives. Experienced professionals should use summaries.` }],
@@ -24232,7 +24232,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="cta-block">
 <h3>Ready to Upgrade Your Qualifications?</h3>
-<p>Compare 50+ UGC DEB approved universities offering online MBA, MCA, BBA, BCA, B.Com all in one place.</p>
+<p>Compare 125+ UGC DEB approved universities offering online MBA, MCA, BBA, BCA, B.Com all in one place.</p>
 <a href="/universities" style="display:inline-block;background:#f59e0b;color:#000;padding:10px 22px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px">Compare Universities</a>
 </div>`,
   },
@@ -24253,7 +24253,7 @@ export const BLOG_POSTS: BlogPost[] = [
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@rdne" target="_blank" rel="noopener nofollow">RDNE Stock project</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'Man in an office setting using smartphone and holding coffee, dressed in black shirt.',
     ctaTitle: `Explore Online MCA Programs in 2026`,
-    ctaDesc: `Compare 50+ UGC DEB approved universities offering online MCA: fees, syllabus, specialisations, and career outcomes in one place.`,
+    ctaDesc: `Compare 125+ UGC DEB approved universities offering online MCA: fees, syllabus, specialisations, and career outcomes in one place.`,
     faqs: [{ q: `Which is the best computer course after 12th in India?`, a: `For a full software career: BCA or B.Tech CSE. For quick employment: DCA (6 months to 1 year). For data science: BCA or B.Sc CS plus Python certifications from NPTEL or Coursera. The best course depends entirely on your career goal and time horizon.` },
     { q: `What is DCA course?`, a: `DCA stands for Diploma in Computer Applications. It covers basic computer skills including MS Office, internet, and sometimes Tally ERP. Duration is 6 months to 1 year. It prepares students for administrative and data entry roles in offices.` },
     { q: `Can I do a computer course after 12th arts?`, a: `Yes. DCA, BCA, web design diplomas, and digital marketing courses accept students from all 12th streams (arts, commerce, and science).` }],
@@ -24423,7 +24423,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>The right computer course after 12th depends on your career time horizon, family runway, and target sector. B.Tech CSE from tier-1 is the premium track but not the only path. BCA plus active certifications plus portfolio building produces strong outcomes too. The most important skill to develop in 2026 is continuous learning, because tech changes every 18-24 months. Pick the credential that fits your life plus financial constraints, then commit to active skill-stacking from day 1.</p>
 <div class="cta-block">
 <h3>Explore Online <a href="/programs/mca">MCA program</a> in 2026</h3>
-<p>Compare 50+ UGC DEB approved universities offering online MCA: fees, syllabus, specialisations, and career outcomes in one place.</p>
+<p>Compare 125+ UGC DEB approved universities offering online MCA: fees, syllabus, specialisations, and career outcomes in one place.</p>
 <a href="/programs/mca" style="display:inline-block;background:#f59e0b;color:#000;padding:10px 22px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px">Compare MCA Universities</a>
 </div>`,
   },
@@ -24893,7 +24893,7 @@ export const BLOG_POSTS: BlogPost[] = [
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'A woman studying on her bed using a laptop, surrounded by open books, indoors.',
     ctaTitle: `Ready to Upgrade Your Qualifications?`,
-    ctaDesc: `Compare 50+ UGC DEB approved universities offering online MBA, MCA, BBA, BCA, B.Com, all in one place.`,
+    ctaDesc: `Compare 125+ UGC DEB approved universities offering online MBA, MCA, BBA, BCA, B.Com, all in one place.`,
     faqs: [{ q: `Which is the most toughest exam in India?`, a: `<a href="/blog/ias-officer-salary-india-2026-pay-scale-perks" style="color:inherit;text-decoration:underline;text-underline-offset:2px">IAS officer salary</a> is widely considered India's toughest exam, with a final selection rate of approximately 0.1 to 0.2% across three elimination stages. JEE Advanced and CA Final are close competitors depending on how you measure difficulty.` },
     { q: `Which is the hardest exam in the world?`, a: `The Gaokao in China is widely regarded as the hardest exam by scale, 13+ million candidates for elite university seats with a 0.003% success rate at the top. UPSC and JEE Advanced are in the global top three by selection rate.` },
     { q: `Is IIT JEE harder than UPSC?`, a: `They test different things. JEE Advanced demands extreme analytical depth in PCM. UPSC demands broad knowledge across dozens of subjects plus writing and interview skills. Many people who clear one would struggle with the other.` },
@@ -25039,7 +25039,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="cta-block">
 <h3>Ready to Upgrade Your Qualifications?</h3>
-<p>Compare 50+ UGC DEB approved universities offering online MBA, MCA, BBA, BCA, B.Com all in one place.</p>
+<p>Compare 125+ UGC DEB approved universities offering online MBA, MCA, BBA, BCA, B.Com all in one place.</p>
 <a href="/universities" style="display:inline-block;background:#f59e0b;color:#000;padding:10px 22px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px">Compare Universities</a>
 </div>`,
   },
@@ -25280,7 +25280,7 @@ export const BLOG_POSTS: BlogPost[] = [
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@rdne" target="_blank" rel="noopener nofollow">RDNE Stock project</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'A businessman enjoying a coffee break and smiling while sitting at his desk in a modern office.',
     ctaTitle: `Explore Online MCA Programs in 2026`,
-    ctaDesc: `Compare 50+ UGC DEB approved universities offering online MCA: fees, syllabus, specialisations, and career outcomes in one place.`,
+    ctaDesc: `Compare 125+ UGC DEB approved universities offering online MCA: fees, syllabus, specialisations, and career outcomes in one place.`,
     faqs: [{ q: `What is the starting salary in cyber security in India in 2026?`, a: `Fresh graduates in cyber security typically earn Rs. 3.5 to 6 LPA. Candidates with certifications (CompTIA Security+, CEH) or internship experience start at Rs. 5 to 8 LPA. Metro cities offer higher starting packages.` },
     { q: `Which cyber security certification is best in India?`, a: `For freshers: CompTIA Security+ is the most recognized entry-level certification. For mid-level roles: CISSP adds the most salary premium. For technical cloud roles: <a href="/blog/best-computer-courses-after-12th-india-2026" style="color:inherit;text-decoration:underline;text-underline-offset:2px">cloud certifications</a> Security Specialty is most in demand in 2025-2026.` },
     { q: `Is cyber security a good career in India in 2026?`, a: `Yes. Talent shortage, rising regulatory pressure, and global remote hiring are all pushing salaries up. The field requires continuous learning as threats evolve, both a challenge and a differentiator for those who commit to staying current.` }],
@@ -25442,7 +25442,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="cta-block">
 <h3>Explore Online <a href="/programs/mca">MCA program</a> in 2026</h3>
-<p>Compare 50+ UGC DEB approved universities offering online MCA: fees, syllabus, specialisations, and career outcomes in one place.</p>
+<p>Compare 125+ UGC DEB approved universities offering online MCA: fees, syllabus, specialisations, and career outcomes in one place.</p>
 <a href="/programs/mca" style="display:inline-block;background:#f59e0b;color:#000;padding:10px 22px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px">Compare MCA Universities</a>
 </div>`,
   },
@@ -25462,7 +25462,7 @@ export const BLOG_POSTS: BlogPost[] = [
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@rdne" target="_blank" rel="noopener nofollow">RDNE Stock project</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
     heroImageAlt: 'Professional man organizing office belongings in a cardboard box, preparing for transition.',
     ctaTitle: `Explore Online MCA Programs in 2026`,
-    ctaDesc: `Compare 50+ UGC DEB approved universities offering online MCA, fees, syllabus, specialisations, and career outcomes in one place.`,
+    ctaDesc: `Compare 125+ UGC DEB approved universities offering online MCA, fees, syllabus, specialisations, and career outcomes in one place.`,
     faqs: [
       { q: `What is the average data science salary in India in 2026?`, a: `Median data scientist salary in India 2026 is approximately Rs 11 to 12 LPA. Range: Entry-level data analyst Rs 4 to 8 LPA, fresher data scientist Rs 7 to 12 LPA, mid-level (4 to 6 years) data scientist Rs 14 to 24 LPA, senior data scientist or ML engineer Rs 25 to 50 LPA, GenAI or LLM specialist at top product company Rs 30 to 60 LPA. Outliers at Google India, Microsoft, OpenAI India can exceed Rs 80 LPA.` },
       { q: `What is the difference between data analyst, data scientist, and ML engineer?`, a: `Data analyst: uses existing data to answer business questions via Excel, SQL, Tableau or Power BI. Rs 4 to 8 LPA fresher. Data scientist: builds predictive models using ML and statistics, Python deep work. Rs 7 to 12 LPA fresher. ML engineer: deploys ML models to production at scale, MLOps, cloud platforms. Rs 9 to 15 LPA fresher, the highest-paying of the three. The distinction is blurring but specialisation depth differs sharply.` },
@@ -42109,7 +42109,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <div class="cta-box" style="background:#0f172a;color:#fff;padding:28px 24px;border-radius:12px;margin:32px 0">
 <p style="font-size:18px;font-weight:700;margin:0 0 10px">Need Help Picking the Right UP University?</p>
-<p style="margin:0 0 16px;color:#cbd5e1">Edify compares public UGC, NAAC, and NIRF data across 130+ universities. No paid rankings, no referral commissions. We help you find the fit, not the highest bidder.</p>
+<p style="margin:0 0 16px;color:#cbd5e1">Edify compares public UGC, NAAC, and NIRF data across 125+ universities. No paid rankings, no referral commissions. We help you find the fit, not the highest bidder.</p>
 <p style="margin:0"><a href="/contact" style="background:#f97316;color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">Talk to a Counsellor (Free)</a></p>
 </div>
 
@@ -42439,7 +42439,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <div class="cta-box" style="background:#0f172a;color:#fff;padding:28px 24px;border-radius:12px;margin:32px 0">
 <p style="font-size:18px;font-weight:700;margin:0 0 10px">Not Sure Which TN University Fits Your Profile?</p>
-<p style="margin:0 0 16px;color:#cbd5e1">Edify compares public UGC, NAAC, and NIRF data across 130+ universities. No paid rankings, no referral commissions. We help you find the fit, not the highest bidder.</p>
+<p style="margin:0 0 16px;color:#cbd5e1">Edify compares public UGC, NAAC, and NIRF data across 125+ universities. No paid rankings, no referral commissions. We help you find the fit, not the highest bidder.</p>
 <p style="margin:0"><a href="/contact" style="background:#f97316;color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">Talk to a Counsellor (Free)</a></p>
 </div>
 
@@ -42460,7 +42460,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>SRM and VIT are the brand leaders here. Both are NAAC A++ with NIRF ranks in the top 15. The ₹29,000 premium of SRM over VIT buys you a marginally higher NIRF rank and access to SRM's larger alumni network. AMET belongs in this tier only for maritime sector professionals.</p>
 
-<p>For a detailed fee comparison across all 130+ universities on our platform, visit the <a href="/fees">fees comparison page</a>.</p>
+<p>For a detailed fee comparison across all 125+ universities on our platform, visit the <a href="/fees">fees comparison page</a>.</p>
 
 <h2>State University vs Deemed University: Which Backing Matters?</h2>
 
@@ -42500,7 +42500,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <div class="cta-box" style="background:#0f172a;color:#fff;padding:28px 24px;border-radius:12px;margin:32px 0">
 <p style="font-size:18px;font-weight:700;margin:0 0 10px">Ready to Shortlist?</p>
-<p style="margin:0 0 16px;color:#cbd5e1">Edify compares public UGC, NAAC, and NIRF data across 130+ universities. No paid rankings, no referral commissions. We help you find the fit, not the highest bidder.</p>
+<p style="margin:0 0 16px;color:#cbd5e1">Edify compares public UGC, NAAC, and NIRF data across 125+ universities. No paid rankings, no referral commissions. We help you find the fit, not the highest bidder.</p>
 <p style="margin:0"><a href="/contact" style="background:#f97316;color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">Talk to a Counsellor (Free)</a></p>
 </div>
 
@@ -42686,7 +42686,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <div class="cta-box" style="background:#0f172a;color:#fff;padding:28px 24px;border-radius:12px;margin:32px 0">
 <p style="font-size:18px;font-weight:700;margin:0 0 10px">Ready to Shortlist?</p>
-<p style="margin:0 0 16px;color:#cbd5e1">Edify compares public UGC, NAAC, and NIRF data across 130+ universities. No paid rankings, no referral commissions. We help you find the fit, not the highest bidder.</p>
+<p style="margin:0 0 16px;color:#cbd5e1">Edify compares public UGC, NAAC, and NIRF data across 125+ universities. No paid rankings, no referral commissions. We help you find the fit, not the highest bidder.</p>
 <p style="margin:0"><a href="/contact" style="background:#f97316;color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">Talk to a Counsellor (Free)</a></p>
 </div>
 
@@ -42947,7 +42947,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <div class="cta-box" style="background:#0f172a;color:#fff;padding:28px 24px;border-radius:12px;margin:32px 0">
 <p style="font-size:18px;font-weight:700;margin:0 0 10px">Ready to Shortlist?</p>
-<p style="margin:0 0 16px;color:#cbd5e1">Edify compares public UGC, NAAC, and NIRF data across 130+ universities. No paid rankings, no referral commissions. We help you find the fit, not the highest bidder.</p>
+<p style="margin:0 0 16px;color:#cbd5e1">Edify compares public UGC, NAAC, and NIRF data across 125+ universities. No paid rankings, no referral commissions. We help you find the fit, not the highest bidder.</p>
 <p style="margin:0"><a href="/contact" style="background:#f97316;color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600">Talk to a Counsellor (Free)</a></p>
 </div>
 
@@ -42959,7 +42959,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   <a href="/blog/jain-online-mba-review-2026" class="il-card"><div class="il-uni">REVIEW</div><div class="il-title">JAIN Online MBA Review</div><div class="il-sub">NAAC A++ Bangalore pick</div></a>
   <a href="/compare/manipal-jaipur-vs-manipal-mahe" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">MUJ vs MAHE</div><div class="il-sub">The Manipal confusion cleared</div></a>
   <a href="/blog/online-mba-maharashtra-2026" class="il-card"><div class="il-uni">STATE</div><div class="il-title">Online MBA Maharashtra</div><div class="il-sub">8 universities compared</div></a>
-  <a href="/fees" class="il-card"><div class="il-uni">FEES</div><div class="il-title">Fee Comparison Tool</div><div class="il-sub">130+ universities side-by-side</div></a>
+  <a href="/fees" class="il-card"><div class="il-uni">FEES</div><div class="il-title">Fee Comparison Tool</div><div class="il-sub">125+ universities side-by-side</div></a>
   <a href="/contact" class="il-card"><div class="il-uni">COUNSEL</div><div class="il-title">Talk to a Counsellor</div><div class="il-sub">No paid rankings, no referrals</div></a>
 </div>
 </div>
@@ -43142,7 +43142,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   <a href="/compare/sikkim-manipal-vs-amity" class="il-card"><div class="il-uni">COMPARE</div><div class="il-title">SMU vs Amity</div><div class="il-sub">Head-to-head comparison</div></a>
   <a href="/blog/affordable-online-mba-india-2026" class="il-card"><div class="il-uni">FEES</div><div class="il-title">Affordable Online MBA India</div><div class="il-sub">Programs from ₹54,000</div></a>
   <a href="/blog/is-online-degree-valid-india-2026" class="il-card"><div class="il-uni">GUIDE</div><div class="il-title">Is Online Degree Valid?</div><div class="il-sub">UGC, employers, court rulings</div></a>
-  <a href="/fees" class="il-card"><div class="il-uni">FEES</div><div class="il-title">Fee Comparison Tool</div><div class="il-sub">130+ universities side-by-side</div></a>
+  <a href="/fees" class="il-card"><div class="il-uni">FEES</div><div class="il-title">Fee Comparison Tool</div><div class="il-sub">125+ universities side-by-side</div></a>
   <a href="/contact" class="il-card"><div class="il-uni">COUNSEL</div><div class="il-title">Talk to a Counsellor</div><div class="il-sub">No paid rankings, no referrals</div></a>
 </div>
 </div>
@@ -47558,7 +47558,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'What should I do if I already paid a fake university?', a: 'Stop further payments, keep every receipt and message, and file a police complaint for cheating. Write to your state higher education department and to UGC through the contact details on ugc.gov.in. UGC says it has asked state governments to act against these institutions.' },
     ],
     ctaTitle: 'Check a university before you pay',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">UGC names 32 fake universities in its list dated February 2026. Delhi has 12 of them. A degree from any of these has no legal value, whatever the certificate looks like.</p>
 
 <p><strong>Short answer:</strong> the University Grants Commission (UGC) currently lists <strong>32 fake universities across 12 states and union territories</strong>, in a state-wise list dated February 2026. Delhi has the most (12), followed by Uttar Pradesh (4). These bodies call themselves universities without being set up under any central or state law, so they cannot award a valid degree. The full list is below, grouped by state, with the date we last checked it against <a href="https://www.ugc.gov.in/universitydetails/Fakeuniversity" target="_blank" rel="noopener">the UGC fake universities page</a>.</p>
@@ -47571,7 +47571,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <li><strong>States and UTs covered:</strong> 12</li>
 <li><strong>Highest:</strong> Delhi 12, Uttar Pradesh 4</li>
 <li><strong>Legal basis:</strong> Sections 22 and 23 of the UGC Act, 1956</li>
-<li><strong>Overlap with the 143 universities edifyedu.in tracks:</strong> none</li>
+<li><strong>Overlap with the 125+ universities edifyedu.in tracks:</strong> none</li>
 </ul>
 </div>
 
@@ -47745,7 +47745,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Can a university outsource its online exams?', a: 'No. The regulations say all assessment must be handled directly by the institution and no part of it may be outsourced. Invigilators and observers must be faculty from the university or another UGC-recognised institution.' },
     ],
     ctaTitle: 'Want to know how a specific university runs its exams?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Every UGC-approved online degree ends each semester with a proctored exam. You may write it from home under webcam supervision or at a test centre. The rules on marks and identity checks are the same everywhere.</p>
 
 <p><strong>Short answer:</strong> online degree exams in India are <strong>proctored exams held at the end of every semester</strong>. Under the UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, a university can run them at a designated test centre, on a computer or on paper, or remotely through <strong>technology-mediated proctoring</strong>, where software watches you through your webcam. Assignments and quizzes can carry <strong>at most 30 per cent</strong> of your marks, and the end-semester exam carries <strong>at least 70 per cent</strong>.</p>
@@ -47907,7 +47907,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Does having a DEB ID mean my programme is approved?', a: 'No. A DEB ID identifies you as a learner. It does not approve a university or a programme. You still need to check that your exact programme is entitled for online mode on deb.ugc.ac.in for the session you join.' },
     ],
     ctaTitle: 'Check your programme, not just your ID',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">If you are joining an online or distance degree in India, you need a DEB ID before the university can enrol you. It takes one sitting to create, as long as your ABC ID is correct first.</p>
 
 <p><strong>Short answer:</strong> a <strong>DEB ID</strong> is a unique learner ID issued on the UGC Distance Education Bureau (UGC-DEB) portal. UGC made it <strong>mandatory for every student enrolling in an online or distance (ODL) programme from the academic session beginning October 2024</strong>. You create it on <a href="https://deb.ugc.ac.in" target="_blank" rel="noopener">deb.ugc.ac.in</a> using your Academic Bank of Credits (ABC) ID, also called an APAAR ID. Once created, it stays valid for life.</p>
@@ -48058,7 +48058,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Do I need two DEB IDs for two online programmes?', a: 'No. UGC states that a DEB ID, once generated, stays valid for lifelong ODL and Online learning, so the same ID applies to both enrolments.' },
     ],
     ctaTitle: 'Planning an online degree next to your current one?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Yes, you can study for two degrees at once in India. UGC has allowed it since April 2022, and that includes pairing a regular degree with an online one.</p>
 
 <p><strong>Short answer:</strong> UGC allows a student to pursue <strong>two academic programmes at the same time</strong>. The UGC Guidelines for Pursuing Two Academic Programmes Simultaneously, issued in April 2022 and modified in June 2025, permit three combinations: <strong>two full-time physical programmes</strong> whose class timings do not overlap, <strong>one physical programme plus one ODL or online programme</strong>, or <strong>up to two ODL or online programmes</strong>. The rule does not apply to Ph.D.</p>
@@ -48192,7 +48192,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Does every university offer a January intake for its online MBA?', a: 'No. A university needs recognition or entitlement for that particular session, and some run only one intake a year. Confirm on deb.ugc.ac.in and with the university in writing.' },
     ],
     ctaTitle: 'Aiming for the January intake?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">If you missed the July admissions, you have not lost a year. UGC rules allow a second intake in January and February, and online degrees have used it for years.</p>
 
 <p><strong>Short answer:</strong> UGC allows universities to admit students <strong>twice a year, in July/August and January/February</strong>. For regular degrees this comes from the UGC (Minimum Standards of Instruction for the Grant of Undergraduate Degree and Postgraduate Degree) Regulations, 2025, which make it <strong>optional</strong>: universities "prepared to handle biannual admissions" may use it. For <strong>online and distance degrees</strong>, two sessions a year are older: the UGC ODL and Online regulations of 2020 already define an academic session as starting in January to February or July to August.</p>
@@ -48335,7 +48335,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Is caution money or a security deposit refundable?', a: 'Yes. UGC says caution money and security deposits are not part of the fees and must be refunded in full.' },
     ],
     ctaTitle: 'Check the refund terms before you pay',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Paid a university and changed your mind? UGC rules decide how much you get back and how fast. Most students never read them, and some universities count on that.</p>
 
 <p><strong>Short answer:</strong> UGC requires every university to refund fees when a student cancels or withdraws admission. The current rule is the <strong>UGC Fee Refund Policy 2024-25</strong>, which UGC confirmed on 27 October 2025 stays in force for later sessions until it issues a new one. It gives a full refund up to a cut-off date, a small processing deduction for a short period after, and then the <strong>2018 UGC refund table</strong>, which ties your refund to how close you withdraw to the last date of admission. The university must pay <strong>within 15 days</strong> of your written application.</p>
@@ -48485,7 +48485,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'How are online degree exams conducted?', a: 'Through proctored end-semester exams, either remotely with webcam proctoring or at a designated test centre. Continuous assessment counts for at most 30 per cent of marks and the exam for at least 70 per cent.' },
     ],
     ctaTitle: 'Shortlist an online degree that UGC actually entitles',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">You can earn a valid degree online in India, but only certain degrees, only from certain universities, and only for the session UGC has cleared. Here is the whole map on one page.</p>
 
 <p><strong>Short answer:</strong> an online degree in India is valid when a <strong>UGC-entitled university</strong> offers that <strong>exact programme in Online mode</strong> for the session you join. The degrees available online are mainly <strong>BA, B.Com, BBA, BCA, MA, M.Com, MBA, MCA, and some MSc and BSc programmes</strong>. UGC <strong>bans</strong> engineering, law, medicine, nursing, pharmacy, architecture and several other disciplines online, and bars M.Phil and Ph.D. Under Regulation 22 of the UGC 2020 regulations, a valid online degree is <strong>equivalent to a regular one</strong>.</p>
@@ -48592,10 +48592,10 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 
 <h2>What do online degrees cost?</h2>
 
-<p>Fees vary widely by university and programme, and they change between intakes. We do not quote a single range here, because one number across 143 universities would mislead more than it helps. Each university page on edifyedu.in lists its published fee, and every figure there is indicative. Confirm the current fee on the university's official portal before you pay.</p>
+<p>Fees vary widely by university and programme, and they change between intakes. We do not quote a single range here, because one number across 125+ universities would mislead more than it helps. Each university page on edifyedu.in lists its published fee, and every figure there is indicative. Confirm the current fee on the university's official portal before you pay.</p>
 
 <div class="cta-box">
-<p><strong>Trying to shortlist from 143 universities?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities side by side</a> or <a href="/contact">ask us</a>.</p>
+<p><strong>Trying to shortlist from 125+ universities?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities side by side</a> or <a href="/contact">ask us</a>.</p>
 </div>
 
 <h2>Sources</h2>
@@ -48640,7 +48640,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'How long does an online master\'s take?', a: 'Usually two years. Under the 2020 regulations, online programmes carry the same total credits and minimum duration as the conventional version. The one-year option applies only to four-year Honours graduates.' },
     ],
     ctaTitle: 'Choosing an online master\'s?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">"Online master's" covers five different degrees in India, and they lead to very different places. Pick by the job you want next, then check the programme is entitled for your session.</p>
 
 <p><strong>Short answer:</strong> the online master's degrees available in India are mainly the <strong>MBA, MCA, MA, M.Com and MSc</strong>, offered by universities UGC has recognised or entitled for Online mode. A valid online PG degree is <strong>equivalent to a regular one</strong> under Regulation 22 of the UGC 2020 regulations, usually takes <strong>two years</strong>, and needs a bachelor's degree to enter. Since a UGC circular of 28 July 2026, a <strong>one-year online master's</strong> is also possible, but only for holders of a four-year Honours degree.</p>
@@ -48782,7 +48782,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Does a four-year online bachelor\'s matter?', a: 'It can. Under a UGC circular of 28 July 2026, holders of a four-year Bachelor\'s degree with Honours can take a one-year online master\'s where a university is entitled for it. Check whether your university offers the four-year Honours route online.' },
     ],
     ctaTitle: 'Choosing an online bachelor\'s degree?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">You can earn a valid bachelor's degree online in India after Class 12, while working or from a town with no college nearby. The choice is narrower than ads suggest, and some offers are not degrees at all.</p>
 
 <p><strong>Short answer:</strong> online graduation in India means an <strong>online BA, B.Com, BBA or BCA</strong>, and in a few places a BSc, from a university UGC has entitled for that programme in Online mode. Anyone who has <strong>passed Class 12</strong>, including through open schooling, is eligible under the UGC UG and PG Regulations, 2025. The degree usually takes <strong>three years</strong>, the same as on campus, and a valid online degree is <strong>equivalent to a regular one</strong>. One-year bachelor's "degrees", online B.Tech and online fine arts degrees are not UGC-valid.</p>
@@ -48903,7 +48903,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Can I lose an online degree scholarship after admission?', a: 'Some scholarships carry conditions such as minimum marks, continuous enrolment or paying on time. Ask the university to state in writing whether the scholarship applies to every semester and what ends it, before you pay the first instalment.' },
     ],
     ctaTitle: 'Compare the fee you would actually pay',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">"Scholarship" is the most used word in online degree advertising and the least explained. Here is where the money really comes from, what UGC rules require, and how to test an offer before you pay.</p>
 
 <p><strong>Short answer:</strong> Scholarships for online degrees in India come from three places: the <strong>university itself</strong>, <strong>government fee-waiver schemes</strong> for SC, ST, PwD and economically deprived learners, and <strong>employers</strong> who sponsor staff. UGC rules require universities to publish every fee on their website and to accept payment only directly, and they leave reserved-category waivers to Central and State Government orders. So the test for any offer is simple: get the payable amount in writing, from the university, before you pay.</p>
@@ -49074,7 +49074,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Is M.Phil still offered in India?', a: 'No. Regulation 14 of the UGC PhD Regulations, 2022 says higher education institutions shall not offer the M.Phil programme.' },
     ],
     ctaTitle: 'Check a programme before you pay',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">"Online PhD" ads promise a doctorate without leaving your job. For an Indian university, UGC rules say that cannot happen. Here is the exact rule, the route that is valid, and how foreign online doctorates are treated.</p>
 
 <p><strong>Short answer:</strong> No Indian university can award a valid PhD through online or distance mode. <strong>Regulation 13(3) of the UGC PhD Regulations, 2022</strong> bars it, and UGC's public notice of 11 November 2024 lists PhD in every discipline as prohibited in ODL and online mode. Working professionals can still do a <strong>part-time PhD</strong>, which the same regulations allow with an employer's No Objection Certificate. A foreign online doctorate or DBA is not banned outright, but it is <strong>not automatically equivalent</strong>: UGC assesses each one case by case.</p>
@@ -49223,7 +49223,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'What can a working professional study online instead of law?', a: 'UGC-entitled online MBA, BBA and B.Com programmes often include business and corporate law papers, but they are management or commerce degrees, not law degrees. For a law degree, the route is a regular programme.' },
     ],
     ctaTitle: 'Check a programme before you pay',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Search for "online LLB" and you will find course pages, fee tables and even "UGC-approved" labels. UGC's own notice says law cannot be taught online or by distance at all. Here is the rule, and what to do if you want law while working.</p>
 
 <p><strong>Short answer:</strong> An online or distance <strong>LLB or LLM from an Indian university is not valid</strong>. UGC's public notice <strong>F.No. 1-34/2024 (DEB-I) of 11 November 2024</strong> lists Law, including its allied domains, among the disciplines prohibited in Open and Distance Learning and Online mode. Because a university cannot be entitled for a prohibited programme, any "UGC-approved online LLM" listing is wrong. Law degrees in India come through regular, in-person programmes.</p>
@@ -49320,7 +49320,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Is a distance B.Tech from IGNOU or a state open university valid?', a: 'Engineering is prohibited in Open and Distance Learning mode as well as online mode under the same UGC notice, so a distance B.Tech is not permitted either.' },
     ],
     ctaTitle: 'Check a programme before you pay',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">"Online B.Tech for working professionals" is one of the most advertised courses in India. UGC says engineering cannot be taught online at all. Here is the rule, the reason behind it, and the route that does work if you have a job.</p>
 
 <p><strong>Short answer:</strong> An online or distance <strong>B.Tech or M.Tech is not valid</strong> in India. UGC's public notice <strong>F.No. 1-34/2024 (DEB-I) of 11 November 2024</strong> lists Engineering, including its allied domains, as prohibited in ODL and Online mode. The reason sits in the 2020 regulations: programmes that need laboratory work cannot run online unless the practical work is only <strong>programming and coding</strong>, which is why an online MCA is allowed. If you are working, AICTE provides a <strong>flexible-timings</strong> route at approved institutions. It is classroom study with adjusted timings, not online.</p>
@@ -49461,7 +49461,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Is a free online B.Ed course with a certificate valid?', a: 'A B.Ed is a degree that NCTE regulates, so a free online certificate course is not a B.Ed and does not qualify you as a teacher. Check whether a programme holds NCTE recognition before you enrol.' },
     ],
     ctaTitle: 'Check a programme before you pay',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">"B.Ed online" is searched thousands of times a month, and most results promise a teaching degree from home. The teacher education regulator, NCTE, allows something narrower: a distance B.Ed for teachers who are already teaching or already trained. Here is exactly what it allows.</p>
 
 <p><strong>Short answer:</strong> There is <strong>no valid fully online B.Ed</strong> in India. NCTE's norms provide for a <strong>B.Ed through Open and Distance Learning</strong> (Appendix 10 of the NCTE Regulations, 2014), but only for <strong>trained in-service elementary teachers</strong> and people who have <strong>already completed an NCTE-recognised face-to-face teacher education programme</strong>. It runs for two years in a blended format, with six months of contact sessions and three months of teaching practice. A fresh graduate who wants to become a teacher needs a regular B.Ed.</p>
@@ -49604,7 +49604,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Can I do two ODL courses at once?', a: 'No. Clause 5.3.6 of the AICTE handbook allows a candidate to register for only one course in ODL mode at a time.' },
     ],
     ctaTitle: 'Check a programme before you pay',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Many pages say an online PGDM is "not really valid". That is not what AICTE's own rules say. An online PGDM can be fully valid, but only from an institute that clears a high bar and holds AICTE approval for that mode.</p>
 
 <p><strong>Short answer:</strong> An <strong>online PGDM is valid</strong> when <strong>AICTE has approved the institute to offer it in online or distance mode</strong>. AICTE's <strong>Approval Process Handbook 2024-2027</strong> applies its ODL and online guidelines to standalone institutions for postgraduate diplomas in management, and bars any institution from offering one or admitting students without approval. Only institutes with an <strong>NBA score of 700 out of 1,000</strong> or a <strong>top-200 NIRF rank</strong> in the institution category can apply. Check the approval, not the brochure.</p>
@@ -49740,7 +49740,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'How do I check a university\'s MSW entitlement myself?', a: 'Open the HEI programme list on deb.ugc.ac.in, find the university, and check the row for Master of Social Work: the year, the session and the mode column, which reads Online or Open and Distance Learning.' },
     ],
     ctaTitle: 'Check a programme before you pay',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Searching for an online MSW turns up dozens of colleges. UGC-DEB's own register is much shorter: five universities are entitled to offer the Master of Social Work online for the 2026-27 session. Here they are, and how to check one yourself.</p>
 
 <p><strong>Short answer:</strong> Yes, an online MSW is valid in India when the university is UGC-DEB entitled for it in online mode for your session. For the <strong>2026-27 July session</strong>, the UGC-DEB programme register lists <strong>five</strong> universities entitled for the MSW online: <strong>Guru Ghasidas Vishwavidyalaya, Integral University, Parul University, Amity University and the University of Lucknow</strong>. Another <strong>29 universities</strong>, including IGNOU, offer the MSW by distance (ODL), which is a different entitlement.</p>
@@ -49845,7 +49845,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Are online certificate courses like Six Sigma recognised?', a: 'They are professional certifications, not UGC-entitled degrees or diplomas, so UGC-DEB does not cover them. Their value depends on the body that issues them and how employers in your field view it.' },
     ],
     ctaTitle: 'Check a programme before you pay',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">"Online diploma" covers everything from a two-year postgraduate diploma to a weekend certificate. Only some of them are qualifications UGC or AICTE allow online. Here is which, with the register entries for 2026-27.</p>
 
 <p><strong>Short answer:</strong> UGC's online entitlement covers degrees and <strong>two-year postgraduate diplomas</strong>. For the <strong>2026-27 session</strong>, the UGC-DEB programme register lists <strong>eight online PG diplomas at two universities</strong>, Amity University and Visvesvaraya Technological University. <strong>Engineering diplomas cannot run online or by distance</strong> under AICTE rules. Diplomas after Class 10 and short certificate courses sit outside UGC-DEB entitlement, so check them with the body that awards them.</p>
@@ -49960,7 +49960,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'How do I re-register for the next semester at IGNOU?', a: 'Use the re-registration portal, onlinerr.ignou.ac.in, in each January and July cycle. IGNOU does not refund the re-registration fee in any case, so check the programme and semester before you pay.' },
     ],
     ctaTitle: 'Comparing IGNOU with another university?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">IGNOU does not have one admission form. It has two portals, one for distance learning and one for online programmes, and the form you fill depends on which mode you choose. Here is how each works, from IGNOU's own portals and its July 2026 prospectus.</p>
 
 <p><strong>Short answer:</strong> Apply for a distance (ODL) programme at <strong>ignouadmission.samarth.edu.in</strong> and for an online programme at <strong>ignouiop.samarth.edu.in</strong>. Register with your email, log in again, fill the form, upload a photo, signature and documents, then pay by card or net banking. IGNOU admits in <strong>January and July</strong>. On 27 October 2026 both portals showed the July 2026 registration as closed.</p>
@@ -50107,7 +50107,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Is Amity University Online UGC approved?', a: 'Amity University is UGC-DEB entitled to offer online programmes. Check the specific programme and your admission session on the UGC-DEB register at deb.ugc.ac.in before you enrol.' },
     ],
     ctaTitle: 'Still choosing a university?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Amity University Online has two addresses that students mix up: the public website and the learning portal, Amigo. Here is which one does what, how to get back in when you are locked out, and how Amity says its exams work.</p>
 
 <p><strong>Short answer:</strong> Log in to your classes, assignments and exams at <strong>amigo.amityonline.com</strong>. The main site, <strong>amityonline.com</strong>, covers programmes and admissions. If you cannot log in, use the Forgot your password link on the Amigo page, or call Amity University Online on <strong>1800-102-3434</strong>.</p>
@@ -50216,7 +50216,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Which LPU Online number is for admissions?', a: 'LPU Online lists 01824 520001 for admission queries and admissions@lpuonline.com. The 01824 520500 line is for enrolled students.' },
     ],
     ctaTitle: 'Still choosing a university?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">LPU Online keeps its classes and exams on a separate learning portal with its own login. Here is the address, how the one-time password works, and which LPU number to call for which problem.</p>
 
 <p><strong>Short answer:</strong> Log in at <strong>lms.lpuonline.com</strong>. The page sends a one-time password to the mobile number and email on your record. For LMS, class or exam problems, LPU Online lists <strong>01824 520500</strong>. For admissions it lists 01824 520001.</p>
@@ -50316,7 +50316,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Can I do an online MSc in Computer Science?', a: 'Our records show online MSc programmes mostly in Mathematics and Data Science. Only one university lists an MSc in Computer Applications. Check the UGC-DEB register for the exact programme title and mode before applying.' },
     ],
     ctaTitle: 'Compare online BCA and MCA programmes',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">"Online computer science degree" covers four different things in India: a BCA, an MCA, an MSc, and a B.Tech that UGC does not allow online at all. Here is which is which, why the rule falls where it does, and how many universities teach data science, AI and cyber security inside them.</p>
 
 <p><strong>Short answer:</strong> Yes, you can earn a computing degree online in India. Take a <strong>BCA</strong> after Class 12 or an <strong>MCA</strong> after graduation, from a UGC-DEB entitled university. You cannot take a <strong>B.Tech in Computer Science</strong> online, because UGC prohibits engineering in online and distance mode. Data science, AI and cyber security usually come as specialisations inside the BCA or MCA.</p>
@@ -50433,7 +50433,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Can I apply for an online BSc?', a: 'Only at a few universities. Most science degrees need laboratory work, and UGC does not allow lab-based programmes online. Only 2 of the 143 universities in our records list an online BSc, so check the subject and the DEB entitlement before applying.' },
     ],
     ctaTitle: 'Applying for an online degree?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Online admission takes a few days if you do it in the right order, and weeks of back-and-forth if you do not. The order is the same whether you are applying for a BA, a BCA or an MBA.</p>
 
 <p><strong>Short answer:</strong> to take admission in an online degree in India, first confirm the university is <strong>UGC-entitled for that exact programme in Online mode</strong> for the session you are joining. Then create your <strong>ABC (APAAR) ID</strong> and your <strong>DEB ID</strong>, which UGC has required since October 2024. Apply on the university's own portal, upload your documents, and pay the fee <strong>to the university only</strong>. Undergraduate programmes need a Class 12 pass, and postgraduate programmes need a bachelor's degree.</p>
@@ -50581,7 +50581,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Can I switch from distance to online mode in the same university?', a: 'Regulation 23(1) of the 2020 regulations allows a learner to move from one mode to another within the same university, as its Act allows and with approval of its statutory authorities. Ask the university in writing before you assume a switch is possible.' },
     ],
     ctaTitle: 'Checking an online degree?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">"Online education" covers everything from a free YouTube course to a UGC-recognised MBA. For a degree in India the term has a precise legal meaning, and that meaning decides whether the qualification counts. Here is the definition, how an online programme actually runs, and how it differs from distance learning.</p>
 
 <p><strong>Short answer:</strong> online education in India, for a degree, is a mode of study that UGC defines in the <strong>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020</strong>. The whole programme is delivered over the internet, exams are secure online tests or proctored exams, and you can enrol from anywhere because <strong>no territorial limit applies</strong>. A university needs UGC-DEB entitlement for each programme it runs online. For the 2026-27 July session, the UGC-DEB register lists <strong>986 online programme entries across 145 institutions</strong>.</p>
@@ -50732,7 +50732,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Who is eligible for an online MA in Public Policy?', a: 'A bachelor\'s degree is the base requirement for a master\'s programme under the UGC UG and PG Regulations, 2025. Each university sets its own minimum marks and any entrance test, so check the admission page of Amity or JAIN for the current session.' },
     ],
     ctaTitle: 'Comparing online master\'s programmes?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Public policy is a small field in online education. Many listings call any politics or governance course a "public policy course." The UGC-DEB register is stricter: only two universities are entitled to award an online master's degree in public policy for 2026-27.</p>
 
 <p><strong>Short answer:</strong> yes, you can study public policy online in India with a UGC-valid degree. For the <strong>2026-27 July session</strong>, the UGC-DEB programme register lists two online master's programmes in public policy: the <strong>MA in Public Policy and Governance at Amity University</strong> and the <strong>MA (Public Policy) at JAIN (Deemed-to-be University)</strong>. Vivekananda Global University offers public policy as one subject in an online BA. If you want the administration side of government, <strong>seven universities</strong> are entitled for an online MA in Public Administration.</p>
@@ -50858,7 +50858,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'How many universities offer library science by distance?', a: 'For 2026-27, 38 institutions hold library science entries in distance (ODL) mode, with 31 offering the BLISc and 31 offering the MLISc. Distance mode ties admissions, contact classes and exams to the university\'s territorial jurisdiction.' },
     ],
     ctaTitle: 'Comparing online degree options?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Library science is one of the few professional subjects that UGC allows fully online. The list of universities entitled to teach it online is short, and it is not the same list as the distance-mode one. Here is the 2026-27 register, level by level.</p>
 
 <p><strong>Short answer:</strong> yes, you can earn a UGC-valid library science degree online in India. For the <strong>2026-27 July session</strong>, the UGC-DEB programme register lists <strong>three universities for an online BLISc</strong> (Aligarh Muslim University, IGNOU and Pt. Sundarlal Sharma (Open) University Chhattisgarh) and <strong>seven for an online MLISc</strong>. Another <strong>38 institutions</strong> offer library science by distance (ODL), which is a different entitlement.</p>
@@ -50975,7 +50975,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Are online degrees from Kerala universities valid?', a: 'Yes, when the university is UGC-DEB entitled for that programme in online mode for your session. Regulation 22 of the 2020 regulations treats an entitled online degree as equivalent to a campus degree.' },
     ],
     ctaTitle: 'Comparing online universities?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">If you live in Kerala, you have two kinds of choice: an online degree from one of Kerala's own universities, or one from any online-entitled university in India. Here is what Kerala's universities are entitled to offer online for 2026-27, programme by programme, from the UGC-DEB register.</p>
 
 <p><strong>Short answer:</strong> for the <strong>2026-27 July session</strong>, the UGC-DEB programme register lists online programmes at <strong>three universities based in Kerala</strong>: <strong>Mahatma Gandhi University</strong> (13 entries), the <strong>University of Calicut</strong> (10) and the <strong>University of Kerala</strong> (4). Sreenarayanaguru Open University offers 30 programmes by distance (ODL), not online. Because online programmes carry no territorial limit, a student in Kerala can also join any online-entitled university elsewhere in India.</p>
@@ -51084,7 +51084,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'How many Tamil Nadu universities offer distance education?', a: 'For 2026-27 the register lists 265 distance (ODL) programme entries at 17 institutions based in Tamil Nadu. Distance mode ties admissions, contact classes and exams to the university\'s territorial jurisdiction, so it is a separate choice from online mode.' },
     ],
     ctaTitle: 'Comparing Tamil Nadu universities?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Tamil Nadu has more universities teaching online than almost any other state, from century-old state universities to private deemed universities. Here is the full 2026-27 list from the UGC-DEB register, and what it tells you about which degrees you can actually take online.</p>
 
 <p><strong>Short answer:</strong> for the <strong>2026-27 July session</strong>, the UGC-DEB programme register lists <strong>24 universities based in Tamil Nadu</strong> with at least one online programme, holding <strong>147 online programme entries</strong> between them. The <strong>online MBA</strong> is the most widely offered (18 universities), followed by the <strong>B.Com</strong> (17) and the <strong>BBA</strong> (14). Online programmes carry no territorial limit, so you can join from anywhere in India.</p>
@@ -51230,7 +51230,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Are online degrees from Bangalore universities valid?', a: 'Yes, when the university is UGC-DEB entitled for that programme in online mode for your session. Regulation 22 of the 2020 regulations treats an entitled online degree as equivalent to the same degree earned on campus.' },
     ],
     ctaTitle: 'Comparing Bangalore universities?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Bengaluru has more universities than most Indian cities, and several of them now teach online. A working professional in the city can study online with a local university or with any online-entitled university in India. Here is what Bengaluru's universities are entitled to offer online for 2026-27.</p>
 
 <p><strong>Short answer:</strong> for the <strong>2026-27 July session</strong>, the UGC-DEB programme register lists online programmes at <strong>six universities based in Bengaluru</strong>, holding <strong>47 online programme entries</strong> between them: <strong>JAIN</strong> (11), <strong>Bangalore University</strong> (10), <strong>Christ</strong> (9), <strong>REVA University</strong> (9), <strong>Dayananda Sagar University</strong> (5) and <strong>Alliance University</strong> (3). Across Karnataka, 15 universities hold 110 online entries.</p>
@@ -51345,7 +51345,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'How do practicals work in an online MSc Statistics?', a: 'Regulation 4(C)(ii) of the 2020 regulations prohibits online delivery of a programme that needs practical or laboratory work, unless the practical part is limited to programming and coding, including software tools. Ask the university in writing how its statistics practicals are run online.' },
     ],
     ctaTitle: 'Comparing online master\'s options?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Statistics is a small field in online education. Many universities teach it online as part of an MBA or a data science programme, but only a handful are entitled to award a full master's degree in statistics online. Here is the 2026-27 list from the UGC-DEB register.</p>
 
 <p><strong>Short answer:</strong> yes, you can earn a UGC-valid MSc in statistics online in India. For the <strong>2026-27 July session</strong>, the UGC-DEB programme register lists <strong>five online programmes</strong>: the <strong>MSc Statistics</strong> at Banasthali Vidyapith, Dr. M.G.R. Educational and Research Institute and Mahatma Gandhi University, the <strong>MSc Applied Statistics</strong> at Symbiosis International and the <strong>MSc Biostatistics</strong> at Manipal Academy of Higher Education. Six more institutions offer statistics by distance (ODL), which is a different entitlement.</p>
@@ -51462,7 +51462,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Is an online art certificate the same as a BFA?', a: 'No. Universities may run certificate programmes, but a certificate is not a bachelor\'s degree. Only a programme listed in the UGC-DEB register for your session and mode leads to a UGC-recognised online degree.' },
     ],
     ctaTitle: 'Not sure which creative course is valid?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Search for an online BFA and you will find many course pages. Very few of them are degrees UGC recognises in online mode. Here is what the UGC-DEB register says about fine arts for 2026-27, and the routes that do lead to a valid qualification.</p>
 
 <p><strong>Short answer:</strong> no university is UGC-DEB entitled to award a <strong>BFA or MFA online</strong> for the 2026-27 July session. The register lists none in online mode for <strong>2024-25, 2025-26 or 2026-27</strong>. Fine arts degrees exist only in <strong>distance (ODL) mode</strong>, at Yogi Vemana University, Annamalai University and IGNOU. If you want a creative degree fully online, Mahatma Gandhi University, Kottayam, is entitled for online MAs in <strong>animation, graphic design and multimedia</strong>.</p>
@@ -51571,7 +51571,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Are accelerated degrees treated the same as normal degrees?', a: 'Yes. Annexure I of the 2025 regulations says government departments, private organisations and recruiters such as UPSC and state service commissions should treat ADP and EDP degrees on par with standard-duration degrees. The degree carries a note that the requirements were completed in a shortened or extended duration.' },
     ],
     ctaTitle: 'Want to check a short-duration offer?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">"Graduate in one year" is a common promise in online education ads. UGC's regulations do not allow a one-year bachelor's degree, online or on campus. They do allow a few things that sound similar: a slightly faster degree, a certificate after one year and a one-year master's for some graduates. Here is what each rule says.</p>
 
 <p><strong>Short answer:</strong> no, you cannot earn a UGC-recognised online bachelor's degree in one year. The <strong>UGC UG and PG Regulations, 2025</strong> set an undergraduate degree at <strong>3 or 4 years</strong>, and the <strong>UGC ODL and Online Regulations, 2020</strong> require online programmes to keep the <strong>same credits and minimum duration</strong> as the campus version. The fastest legal route is an <strong>accelerated degree</strong>, which shortens a 3-year degree by at most one semester. One year of study earns an <strong>undergraduate certificate</strong>, not a degree.</p>
@@ -51682,7 +51682,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'How are SRM online exams conducted?', a: 'SRM\'s FAQ says end-semester exams are taken through the student portal in remote proctored mode, in July and December each year. Each paper runs for two and a half hours, and learners need 75% participation in online activities before the exam.' },
     ],
     ctaTitle: 'Comparing SRM with other online universities?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">SRM Institute of Science and Technology runs its online degrees through a Directorate of Online Education with its own admission portal. This guide sets out what that portal asks for, who is eligible and what happens after you apply, from SRM's own admission FAQ.</p>
 
 <p><strong>Short answer:</strong> you apply for an SRM online degree at <strong>admissions.srmonline.in</strong>, the portal linked from srmonline.in. You register, fill in the form, pay the application fee online and upload your documents. SRM confirms admission after <strong>document verification</strong>, once you pay the <strong>first-semester fee</strong>. On 4 November 2026 the site showed admissions open for the <strong>January 2027 session</strong>.</p>
@@ -51830,7 +51830,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Which LPU Online programmes are UGC-entitled for 2026-27?', a: 'For the 2026-27 July session, the UGC-DEB register lists 13 online programmes at Lovely Professional University, including the MBA, MCA, M.Com, BBA, BCA, a BA with eight subject options, MA programmes in English, History, Political Science and Sociology, and MSc programmes in Mathematics, Economics and Data Science.' },
     ],
     ctaTitle: 'Comparing LPU with other online universities?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">LPU Online has run online degrees since November 2021, and its admission portal works in four steps. This guide covers each step, the documents to scan and the points to check before you pay, from LPU Online's own admission portal and FAQ.</p>
 
 <p><strong>Short answer:</strong> you apply for LPU Online at <strong>admission.lpuonline.com</strong>. You <strong>register and pay a non-refundable registration fee</strong>, fill in the application, upload scanned documents and pay the programme fee. LPU then gives you <strong>provisional registration and LMS access</strong>, and confirms admission after <strong>document verification</strong>. On 4 November 2026 the portal showed "Admission Open 2027".</p>
@@ -51955,7 +51955,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'Is the Amity Online student portal the same as the admission portal?', a: 'No. Amigo is the student portal you use after enrolment. Admission starts from the Apply Now button on amityonline.com.' },
     ],
     ctaTitle: 'Comparing Amity with other online universities?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Amity Online keeps its admission process short: three steps on amityonline.com. The detail that trips people up is not the form but the campus: two different Amity universities hold online entitlements. This guide covers both, from Amity Online's own pages and the UGC-DEB register.</p>
 
 <p><strong>Short answer:</strong> you apply from the <strong>Apply Now</strong> button on <strong>amityonline.com</strong>. You fill in the application, <strong>upload documents and pay the registration fee</strong>, and after acceptance you <strong>confirm enrolment by paying the programme fee</strong>. On 4 November 2026 the site showed admissions open for the <strong>January 2027 session</strong>.</p>
@@ -52072,7 +52072,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'How do I cancel a Christ Online admission?', a: 'CHRIST Online\'s FAQ says you can cancel by emailing cancellation.online@christuniversity.in, and that refunds depend on when you withdraw under its cancellation policy.' },
     {"q":"Does Christ University have an online MBA?","a":"edifyedu.in's database lists Christ (Deemed to be University) Online for an online MCA, B.Com, BBA, and no online MBA. Check the current UGC-DEB register at deb.ugc.ac.in before you rely on any list, including ours, and talk to our counsellor for online MBA options in Bengaluru."}],
     ctaTitle: 'Comparing Christ with other online universities?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Christ (Deemed to be University) runs its online degrees through CHRIST Online, and its admission works differently from most online universities. There is no entrance test, but there is a selection interview, and you pay the fee only after you are selected.</p>
 
 <p><strong>Short answer:</strong> you apply at <strong>online.christuniversity.in</strong>. You fill in the form, upload documents and pay the application fee, then <strong>book a slot for an online interview on Zoom</strong>. The university checks eligibility and selects candidates, and you <strong>pay the programme fee only after selection</strong>. On 4 November 2026 the site showed admissions open for the <strong>February 2027 batch</strong>.</p>
@@ -52176,7 +52176,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
       { q: 'How do I withdraw from CU Online?', a: 'CU Online\'s admission guidelines say you submit a refund or withdrawal application in the prescribed format to the In-Charge, Admission Cell, within the stipulated date. Verbal requests, or requests without the original fee receipts, are not accepted.' },
     ],
     ctaTitle: 'Comparing CU with other online universities?',
-    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 143 universities. No paid rankings, no referral commissions.',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
     content: `<p class="subtitle">Chandigarh University runs its online degrees through its Centre for Distance and Online Education, known as CU Online. Its admission has one feature worth knowing before you start: you pay the programme fee before you upload documents, and every admission stays provisional until verification.</p>
 
 <p><strong>Short answer:</strong> you apply at <strong>apply.onlinecu.in</strong>, linked from onlinecu.in. You <strong>register</strong>, fill in the application, <strong>pay the programme fee</strong>, then <strong>upload your documents</strong> and submit. CU Online's guidelines say <strong>all admissions are provisional</strong> until your documents are verified and an enrolment number is allocated.</p>

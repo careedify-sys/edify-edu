@@ -24,7 +24,17 @@ import { dirname, join, relative } from 'node:path'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const { UNIVERSITIES } = await import('../lib/data.ts')
+const { CLAIM_FLOOR, CLAIM_TEXT } = await import('./lib/university-count-claim.mjs')
 const ACTUAL = UNIVERSITIES.length
+
+// Since 2026-11-06 the only accepted claim is CLAIM_TEXT ("125+"), and only
+// while the database actually holds at least that many. Any other number,
+// including the exact count written without "+", fails: the site prints one
+// number, not several. See scripts/lib/university-count-claim.mjs.
+if (ACTUAL < CLAIM_FLOOR) {
+  console.error(`check-university-count: lib/data.ts holds ${ACTUAL} universities, below the claimed ${CLAIM_TEXT}. Lower CLAIM_FLOOR in scripts/lib/university-count-claim.mjs.`)
+  process.exit(1)
+}
 
 const ROOTS = [join(ROOT, 'app'), join(ROOT, 'components')]
 const EXTRA = [join(ROOT, 'lib', 'site-config.ts'), join(ROOT, 'public', 'llms.txt')]
@@ -73,7 +83,8 @@ for (const f of files) {
       const n = Number(m[1])
       if (n >= 1900 && n <= 2100) continue          // a year
       if (isNotACoverageClaim(line, m[0], m.index)) continue
-      if (n !== ACTUAL) {
+      const plus = /^\d+\s*\+/.test(m[0])
+      if (!(n === CLAIM_FLOOR && plus)) {
         bad.push({ file: relative(ROOT, f), line: i + 1, claimed: n, text: line.trim().slice(0, 110) })
       }
     }
@@ -81,10 +92,10 @@ for (const f of files) {
 }
 
 if (bad.length) {
-  console.error(`check-university-count: ${bad.length} stale coverage claim(s). lib/data.ts holds ${ACTUAL} universities.`)
+  console.error(`check-university-count: ${bad.length} coverage claim(s) not written as ${CLAIM_TEXT}. lib/data.ts holds ${ACTUAL} universities.`)
   for (const b of bad) console.error(`  ${b.file}:${b.line}  claims ${b.claimed}\n      ${b.text}`)
-  console.error(`\n  Update them to ${ACTUAL}, then regenerate llms.txt: node scripts/build-llms-txt.mjs`)
+  console.error(`\n  Write them as ${CLAIM_TEXT}, then regenerate llms.txt: node scripts/build-llms-txt.mjs`)
   process.exit(1)
 }
 
-console.log(`check-university-count: OK (${ACTUAL} universities, every coverage claim agrees).`)
+console.log(`check-university-count: OK (${ACTUAL} universities, every coverage claim reads ${CLAIM_TEXT}).`)

@@ -324,14 +324,14 @@ export default function CgpaValuePage({
                 className="bg-white border border-border rounded-xl p-4 hover:border-amber transition-colors"
               >
                 <div className="font-bold text-navy text-sm">Online MBA programmes</div>
-                <div className="text-xs text-ink-3 mt-1">Compare MBAs across 143 UGC-DEB universities</div>
+                <div className="text-xs text-ink-3 mt-1">Compare MBAs across 125+ UGC-DEB universities</div>
               </Link>
               <Link
                 href="/universities"
                 className="bg-white border border-border rounded-xl p-4 hover:border-amber transition-colors"
               >
                 <div className="font-bold text-navy text-sm">Browse universities</div>
-                <div className="text-xs text-ink-3 mt-1">143 universities, NIRF and NAAC data</div>
+                <div className="text-xs text-ink-3 mt-1">125+ universities, NIRF and NAAC data</div>
               </Link>
               <Link
                 href="/tools/emi-calculator"

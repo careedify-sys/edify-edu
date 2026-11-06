@@ -109,6 +109,8 @@ function naacLabel(id) {
 // ── the file ─────────────────────────────────────────────────────────────────
 
 const total = UNIVERSITIES.length
+// Printed count is the sitewide floor claim, not the exact total. See scripts/lib/university-count-claim.mjs.
+const { CLAIM_TEXT } = await import('./lib/university-count-claim.mjs')
 const BASE = 'https://edifyedu.in'
 
 const PROGRAMS = [
@@ -134,11 +136,11 @@ const featured = UNIVERSITIES
 
 const L = []
 L.push('# Edify Education')
-L.push(`> India's independent online degree comparison platform. We cover ${total} UGC-DEB universities offering online MBA, MCA, BBA, BCA, BA, MA, B.Com, M.Com and MSc programmes.`)
+L.push(`> India's independent online degree comparison platform. We cover ${CLAIM_TEXT} UGC-DEB universities offering online MBA, MCA, BBA, BCA, BA, MA, B.Com, M.Com and MSc programmes.`)
 L.push('> All data is independently verified. No paid university partnerships and no referral commissions.')
 L.push('')
 L.push('## Key Facts')
-L.push(`- ${total} universities covered, each carrying UGC-DEB entitlement for at least one online programme`)
+L.push(`- ${CLAIM_TEXT} universities covered, each carrying UGC-DEB entitlement for at least one online programme`)
 L.push('- UGC-DEB entitlement is granted per university, per programme, per academic session, and is not a permanent institutional badge')
 L.push('- NAAC grades below are printed only where an accreditation record confirms them and the cycle has not lapsed')
 L.push('- NIRF ranks always state their category; a Management rank and a University rank are different tables and are not interchangeable')
