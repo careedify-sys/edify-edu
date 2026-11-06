@@ -23,12 +23,14 @@
 
 - **Why:** Rishi wanted students able to contact or complain to UGC-DEB directly. Copied from
   deb.ugc.ac.in/About/Officers on 6 Nov; every name, email and phone matched what he supplied.
-- **What:** components/verify/UgcDebContacts.tsx (data + card grid) on /verify after the helpdesk teaser;
-  a state-by-state section at the end of /guides/how-to-check-ugc-deb-approval.
-- **Stale risk:** officers transfer. Both places print the checked date and send readers to the source page. Re-check
-  the officers page before any edit, and update UGC_DEB_CONTACTS_CHECKED plus the guide date together.
-- **Also shipped:** the pre-existing lib/data/valid-urls.json and programs-manifest.json regeneration (21 hub URLs,
-  Manipal MSc spec rows), on Rishi's go-ahead.
+- **What:** lib/ugc-deb-contacts.ts holds the officers and ugcDebOfficerForState(); components/verify/UgcDebContacts.tsx
+  renders them on /verify (after HowEdifyVerifies) and on every /verify/[slug] page, where the officer for the
+  university's state is shown first. A state-by-state section closes /guides/how-to-check-ugc-deb-approval.
+- **Source trap:** UGC's own /Contact page still names a former Deputy Secretary (Dr. Salil S). Trust /About/Officers.
+- **Stale risk:** officers transfer. Every place prints the checked date and sends readers to the source page. Re-check
+  the officers page before any edit, and update UGC_DEB_CHECKED in lib/ugc-deb-contacts.ts plus the guide date together.
+- **Also shipped (a4a295f):** the pre-existing lib/data/valid-urls.json and programs-manifest.json regeneration
+  (21 hub URLs, Manipal MSc spec rows), on Rishi's go-ahead.
 
 ## 2026-11-06 · Guides: UGC online-programme rules added; certificate-mode claim removed
 
