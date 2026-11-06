@@ -240,6 +240,16 @@ export const GUIDES: Guide[] = [
 
 <h2>If You're Already Enrolled and Unsure</h2>
 <p>Run the UGC DEB check now. If your university is not listed, contact the university directly and ask for their UGC DEB approval letter with the approval number. A legitimate university will provide this immediately. If they cannot, consult UGC directly at ugc.ac.in.</p>
+
+<h2>Who to Contact at UGC-DEB, State by State</h2>
+<p>To confirm an approval or report a university that misleads students, write to the UGC-DEB officer who covers the university's state. Mention the university, the programme and your admission session.</p>
+<ul>
+<li><strong>Tamil Nadu, Kerala, Karnataka, Lakshadweep, Telangana, Andhra Pradesh, Odisha, Chhattisgarh, Puducherry, Gujarat:</strong> Dr. Naresh Pal Meena, Education Officer, nmeena.ugc@gov.in, 011-2360-4694</li>
+<li><strong>Rajasthan, Himachal Pradesh, Maharashtra, Arunachal Pradesh, Manipur, Mizoram, Nagaland, Sikkim, Tripura, Meghalaya, Daman &amp; Diu, Dadra &amp; Nagar Haveli, Ladakh, Andaman &amp; Nicobar:</strong> Sh. Sanjay Kumar, Under Secretary, sanjay.ugc@nic.in, 011-2360-4660</li>
+<li><strong>Uttar Pradesh, Delhi, Uttarakhand, Chandigarh, West Bengal, Jammu &amp; Kashmir, Madhya Pradesh, Jharkhand, Bihar, Punjab, Haryana, Assam, Goa:</strong> Dr. Nand Kishore, Under Secretary, nandkishor.ugc@nic.in, 011-2360-4698</li>
+</ul>
+<p>If the state officer does not respond, escalate to Ms. Neethu S. Thulaseedharan, Deputy Secretary (neethuthulasi.ugc@gov.in, 011-2360-4687) or Dr. Madhukar Maruti Waware, Joint Secretary (mwaware.ugc@gov.in, 011-2360-4678, 674).</p>
+<p>These details come from the officers list on <strong>deb.ugc.ac.in</strong>, checked on 6 November 2026. Officers change, so confirm there before you write. The same list sits on our <a href="/verify" class="ilink">university verification page</a>.</p>
     `,
   },
   {

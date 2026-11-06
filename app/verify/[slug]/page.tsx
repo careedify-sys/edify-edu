@@ -18,6 +18,7 @@ import { getUniversityById, type Program } from '@/lib/data';
 import { getUniversityForVerifySlug, hubResolves, isLinkable } from '@/lib/seo/safe-internal-links';
 import { programmeSlug } from '@/lib/seo/resolve-programme';
 import { VerifyAdvisory } from '@/components/verify/VerifyAdvisory';
+import { UgcDebContacts } from '@/components/verify/UgcDebContacts';
 import advisoryData from '@/lib/data/verify-advisories.json';
 
 const ADVISORIES = (advisoryData as {
@@ -329,6 +330,7 @@ export default async function VerifyPage({ params }: PageProps) {
             <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}` }}>
               <DataFreshnessBadge updatedAt={university.data_updated_at} />
             </div>
+            <UgcDebContacts state={university.state} universityName={university.name} />
             {/* SEO body + FAQ section — adds rich content and FAQPage schema */}
             <VerifyFAQ
               universityName={university.name}

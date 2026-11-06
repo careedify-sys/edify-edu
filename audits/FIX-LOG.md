@@ -1,5 +1,16 @@
 # Fix log
 
+## 2026-11-06 · UGC-DEB officer contacts on /verify and the UGC-DEB check guide
+
+- **Why:** Rishi wanted students able to contact or complain to UGC-DEB directly. Copied from
+  deb.ugc.ac.in/About/Officers on 6 Nov; every name, email and phone matched what he supplied.
+- **What:** components/verify/UgcDebContacts.tsx (data + card grid) on /verify after the helpdesk teaser;
+  a state-by-state section at the end of /guides/how-to-check-ugc-deb-approval.
+- **Stale risk:** officers transfer. Both places print the checked date and send readers to the source page. Re-check
+  the officers page before any edit, and update UGC_DEB_CONTACTS_CHECKED plus the guide date together.
+- **Also shipped:** the pre-existing lib/data/valid-urls.json and programs-manifest.json regeneration (21 hub URLs,
+  Manipal MSc spec rows), on Rishi's go-ahead.
+
 ## 2026-11-06 · Guides: UGC online-programme rules added; certificate-mode claim removed
 
 - **Why:** Rishi asked for the UGC (Online Courses or Programmes) Regulations, 2018 on the site for credibility. The two

@@ -3,6 +3,7 @@ import { HeroSection } from '@/components/verify/HeroSection';
 import { TrustSignalsCards } from '@/components/verify/TrustSignalsCards';
 import { HowEdifyVerifies } from '@/components/verify/HowEdifyVerifies';
 import { HelpdeskTeaser } from '@/components/verify/HelpdeskTeaser';
+import { UgcDebContacts } from '@/components/verify/UgcDebContacts';
 import { LoginPlaceholder } from '@/components/verify/LoginPlaceholder';
 
 export const metadata = {
@@ -350,6 +351,10 @@ export default async function VerifyHomePage() {
         </div>
 
         <HowEdifyVerifies />
+
+        <div style={{ marginBottom: 24 }}>
+          <UgcDebContacts />
+        </div>
 
         <HelpdeskTeaser spotsRemaining={73} />
 

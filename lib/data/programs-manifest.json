@@ -7866,6 +7866,12 @@
     "spec_name": "General Management"
   },
   {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "msc",
+    "spec_slug": "mathematics",
+    "spec_name": "Mathematics"
+  },
+  {
     "university_slug": "galgotias-university-online",
     "program": "mba",
     "spec_slug": "marketing-management",
@@ -8182,6 +8188,30 @@
     "program": "bcom",
     "spec_slug": "general-management",
     "spec_name": "General Management"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "msc",
+    "spec_slug": "biostatistics",
+    "spec_name": "Biostatistics"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "msc",
+    "spec_slug": "financial-economics",
+    "spec_name": "Financial Economics"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "msc",
+    "spec_slug": "data-science",
+    "spec_name": "Data Science"
+  },
+  {
+    "university_slug": "manipal-academy-higher-education-online",
+    "program": "msc",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
   },
   {
     "university_slug": "kl-university-online",
