@@ -1430,6 +1430,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>What I will say is that the record since then is clean, the entitlement is current, the accreditation is the strongest band India awards, and the grounds UGC cited were fixable process failures rather than findings of fraud. Verify your own intake year, get the refund policy in writing, and decide on the fees rather than on the story.</p>
 
+<p>If you decide to apply, our <a href="/blog/nmims-online-admission-guide">NMIMS online admission guide</a> sets out the steps and the dates NMIMS CDOE publishes for January 2027.</p>
+
 <div class="cta-box"><strong>Not sure NMIMS is the right price for what you get?</strong><br>Talk to our counsellor for current fee figures and a like-for-like comparison against other UGC-DEB entitled universities. Edify compares public UGC, NAAC and NIRF data only, no paid rankings and no referral commissions.<br><a class="ilink" href="/contact">Talk to our counsellor</a></div>
 
 <h2>Related reading on edifyedu.in</h2>
@@ -3750,6 +3752,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>The honest caveat is the same one as always. If you will not use the ranking, the AICTE listing or the WES route, you are paying for signals you do not need, and a cheaper A++ degree does the same job. Decide which of the four things above you will actually use, and the price makes sense or it does not. Start with the <a href="/universities/amrita-vishwa-vidyapeetham-online">full Amrita profile</a>, then work the monthly cost before you commit.</p>
 
+<p>Ready to apply? Our <a href="/blog/amrita-online-admission-guide">Amrita online application portal guide</a> covers the DEB ID and ABC ID you need, the refund bands and the Windows-only exam rule.</p>
+
 <div class="cta-box">
   <strong>Not sure the premium is worth it for you?</strong>
   <p>Tell us your goal and budget, and we will compare Amrita against the cheaper A++ options honestly. Edify compares public UGC, NAAC and NIRF data only. No paid rankings, no referral commissions.</p>
@@ -5943,6 +5947,8 @@ export const BLOG_POSTS: BlogPost[] = [
 <div class="cta-box">
 <p><strong>Still deciding? Get a personalised comparison.</strong></p>
 <p>Tell us your budget, target city, and career goal. We will show you which UGC-DEB approved online MBA fits best. No commissions, no affiliate links.</p>
+<p>Ready to apply? Our <a href="/blog/nmims-online-admission-guide">NMIMS online admission guide</a> lists the four steps and the January 2027 last dates for both the MBA (Online) and the MBA (WX).</p>
+
 <div class="cta-box" style="background:#0C2A55;color:#fff;padding:24px;border-radius:16px;margin:20px 0">
 <h4 style="margin:0 0 8px;font-size:16px">Talk to a real counsellor</h4>
 <p style="font-size:13px;color:#94a3b8;margin:0 0 14px">No commissions. No spam. Just honest guidance.</p>
@@ -37672,6 +37678,8 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <p>To summarise the jain university mba fees landscape: this comparison covers UGC-DEB approved options across all major price tiers. The jain university mba fees fee structure varies significantly by university, payment plan, and scholarship eligibility. Applicants choosing the jain university mba fees should compare not just sticker price but also semester-wise versus annual versus one-time payment differences. Most jain university mba fees programmes offer multiple payment options, which can change the effective total fee by ₹15,000 to ₹30,000 across the 2 to 3 year duration.</p>
 
 
+<p>Ready to apply? Our <a href="/blog/jain-online-admission-guide">JAIN Online application guide</a> explains why you pay before uploading documents and how the January 2027 refund window works.</p>
+
 <div class="cta-box">
 <h3>Get a free counsellor call before you pay anyone</h3>
 <p>JAIN Online has 18+ specialisations and tiered pricing that changes between intakes. EdifyEdu does not earn referral commission from any university. Our counsellors compare programmes side by side and tell you which JAIN specialisation genuinely fits your budget, location, and career goals, and how it stacks up against MAHE, NMIMS, Symbiosis, and other UGC-DEB approved options.</p>
@@ -50537,6 +50545,8 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 
 <p>Each university runs its own portal on top of these rules. Our step-by-step guides to <a href="/blog/srm-online-admission-guide">SRM online admission</a> and <a href="/blog/lpu-online-admission-guide">LPU Online admission</a> show how two of them work in practice.</p>
 
+<p>We have mapped the same steps for more universities: <a href="/blog/amrita-online-admission-guide">Amrita Online</a>, <a href="/blog/nmims-online-admission-guide">NMIMS Online</a> and <a href="/blog/jain-online-admission-guide">JAIN Online</a>.</p>
+
 <div class="cta-box">
 <p><strong>Choosing where to apply?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities</a> or <a href="/contact">ask us</a>.</p>
 </div>
@@ -51304,6 +51314,8 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 <p>Our step-by-step guide on <a href="/guides/how-to-check-ugc-deb-approval">how to check UGC-DEB approval</a> walks through each field of the register.</p>
 
 <p>Applying to Christ? Our <a href="/blog/christ-online-admission-guide">Christ University online application guide</a> explains the Zoom interview that replaces an entrance test.</p>
+
+<p>Applying to JAIN? Our <a href="/blog/jain-online-admission-guide">JAIN Online application guide</a> covers the four steps and the refund dates for each intake.</p>
 
 <div class="cta-box">
 <p><strong>Deciding between JAIN, Christ and the rest?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare">Compare universities side by side</a>.</p>
@@ -52257,6 +52269,389 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
 </ul>
 
 <p class="disclaimer"><em>Checked against CU Online's official pages and the UGC-DEB register on 4 November 2026. Admission steps, dates and fees can change each session. Confirm them on onlinecu.in before you apply.</em></p>
+    `,
+  },
+  {
+    slug: 'amrita-online-admission-guide',
+    title: 'Amrita Online Application Portal 2026: How to Apply, Step by Step',
+    seoTitle: 'Amrita Online Application Portal 2026: Steps, Eligibility',
+    h1Title: 'Amrita Online Application Portal Guide: Steps, Eligibility, Documents and Exams',
+    metaDescription: 'How to apply on admission.onlineamrita.com: the steps, the DEB ID and ABC ID you need, eligibility per programme, the refund schedule and the exam rules.',
+    category: 'Online Degree Validity',
+    tags: ['Amrita Online Application Portal', 'Amrita Online Admission', 'Amrita Online', 'Amrita AHEAD', 'Online Admission', 'UGC-DEB'],
+    publishedAt: '2026-11-06',
+    readTime: 6,
+    targetKeyword: 'amrita online application portal',
+    relatedUniversities: ['amrita-vishwa-vidyapeetham-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/30858451/pexels-photo-30858451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@shootsaga" target="_blank" rel="noopener nofollow">Anil  Sharma</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Smiling young girl with headset on a video call, studying online at home.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'What is the Amrita online application portal?', a: 'admission.onlineamrita.com is the official admissions portal of Amrita Online, run by Amrita Vishwa Vidyapeetham. The portal itself says payments are accepted only through the secure link on that website and that no other payment method is accepted.' },
+      { q: 'How do I apply to Amrita Online?', a: 'Amrita Online\'s FAQ says you apply online through the official website or a programme page, then submit the application form with your Aadhaar card, ABC ID and DEB ID on the portal. An admission counsellor guides you through the process, including creating the DEB ID and ABC ID.' },
+      { q: 'Is there an entrance test for the Amrita online MBA?', a: 'No. Amrita Online\'s MBA FAQ says CAT, MAT or XAT scores are not mandatory. Selection is based on academic merit, undergraduate performance and relevant work history during the application review.' },
+      { q: 'What is the eligibility for Amrita Online programmes?', a: 'Amrita Online lists a bachelor\'s degree of at least three years with 50% aggregate for the MBA, and final-year students can apply with their last completed semester results. The BBA, BCA and B.Com need Class 12, or a three-year diploma, with 45% aggregate. The MCA needs any bachelor\'s degree with Mathematics at Class 12 or graduation level.' },
+      { q: 'Can I write Amrita Online exams on a MacBook?', a: 'No. Amrita Online\'s MBA FAQ says semester exams must be taken on a Windows laptop or PC, because macOS devices are not supported for end-semester proctored exams. Exams are fully online with remote proctoring, so you never visit a campus.' },
+      { q: 'What is the Amrita Online refund policy?', a: 'Amrita Online says it follows the UGC refund policy: 100% (less a processing fee) if you withdraw 15 days or more before the admission closing date, 90% within the last 15 days before it, 80% within 15 days after it, 50% after that, and no refund once 30 days have passed. The application fee is not refundable.' },
+    ],
+    ctaTitle: 'Comparing Amrita with other online universities?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">Amrita Vishwa Vidyapeetham runs its online degrees as Amrita Online, which also appears on its pages as Amrita AHEAD. Its application portal opens on an enquiry form, not an application form, and that confuses many first-time applicants.</p>
+
+<p><strong>Short answer:</strong> the official portal is <strong>admission.onlineamrita.com</strong>. You fill in the enquiry form, create a login, then submit the application with your <strong>Aadhaar card, ABC ID and DEB ID</strong>. An admission counsellor helps you create the two IDs. Amrita says the <strong>MBA and BBA take no entrance test</strong>, and every exam is <strong>online and remotely proctored on a Windows computer</strong>.</p>
+
+<div class="callout-key">
+<strong>Amrita Online application in one box (checked 6 November 2026)</strong>
+<ul>
+<li><strong>Official portal:</strong> admission.onlineamrita.com</li>
+<li><strong>IDs needed:</strong> Aadhaar, ABC ID and DEB ID</li>
+<li><strong>Entrance test:</strong> none for the MBA or BBA; merit-based review</li>
+<li><strong>Exams:</strong> online, remote proctoring, Windows only</li>
+<li><strong>UGC-entitled online programmes, 2026-27:</strong> 10</li>
+</ul>
+</div>
+
+<h2>How do you apply on the Amrita Online portal?</h2>
+
+<p>Amrita Online's FAQ describes the process in three moves. The portal home page adds that payments go only through its own secure link.</p>
+
+<ol>
+<li><strong>Start on the portal or a programme page.</strong> admission.onlineamrita.com opens with an enquiry form: your name, phone, email, programme type, course and specialisation. Existing applicants use the Login link under the form.</li>
+<li><strong>Submit the application form</strong> with your Aadhaar card, ABC ID and DEB ID on the portal.</li>
+<li><strong>Work with your admission counsellor.</strong> Amrita says a counsellor guides you through the whole application, including creating the DEB ID and the ABC ID.</li>
+</ol>
+
+<p class="pull">Pay only through admission.onlineamrita.com. The portal itself says no other payment method is accepted.</p>
+
+<p>You can create the DEB ID yourself before the counsellor calls. Our explainer on <a href="/blog/ugc-deb-id-explained">the UGC-DEB ID</a> shows the steps on the DEB portal.</p>
+
+<h2>What is the eligibility for each Amrita online programme?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/9159651/pexels-photo-9159651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young woman focused on studying with her laptop in a modern indoor setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>Amrita Online states eligibility on each programme page. As read on 6 November 2026:</p>
+
+<table>
+<thead><tr><th>Programme</th><th>Eligibility on Amrita Online's pages</th></tr></thead>
+<tbody>
+<tr><td>MBA</td><td>Bachelor's degree of at least 3 years, minimum 50% aggregate; final-year students may apply with their last completed semester results</td></tr>
+<tr><td>MCA</td><td>Any bachelor's degree, with Mathematics at Class 12 or graduation level; final-year students may apply</td></tr>
+<tr><td>BBA, BCA, B.Com</td><td>Class 12 or a 3-year diploma, minimum 45% aggregate</td></tr>
+</tbody>
+</table>
+
+<p>Work experience is not required, though Amrita says it gives an added advantage. Applicants with foreign education need a certificate of equivalence from the Association of Indian Universities. For the BCA, the FAQ lists the Class 10 and Class 12 (or diploma) certificates, a passport-size photograph and the Aadhaar card as uploads.</p>
+
+<h2>Which Amrita online programmes are UGC-entitled?</h2>
+<p>For the 2026-27 July session, the UGC-DEB HEI programme register lists ten online programmes at Amrita Vishwa Vidyapeetham, a deemed university recorded under Tamil Nadu:</p>
+
+<table>
+<thead><tr><th>Level</th><th>Programmes (as named in the register)</th></tr></thead>
+<tbody>
+<tr><td>Undergraduate</td><td>BBA, BCA, B.Com</td></tr>
+<tr><td>Postgraduate</td><td><a href="/universities/amrita-vishwa-vidyapeetham-online/mba">MBA</a>, MCA, M.Com, MSc (Mathematics), MA (Communication), MA (Journalism and Mass Communication), MA (Philosophy)</td></tr>
+</tbody>
+</table>
+
+<p>The admission portal markets six of these: BBA, BCA, B.Com, MBA, MCA and M.Com. If you want one of the four MA or MSc programmes, ask the counsellor in writing whether it is open for your session. Our list of <a href="/blog/online-degree-courses-tamil-nadu">online degree courses in Tamil Nadu</a> compares Amrita with the state's other entitled universities, and the <a href="/universities/amrita-vishwa-vidyapeetham-online">Amrita Online overview</a> collects its accreditation data.</p>
+
+<h2>How do exams and refunds work at Amrita Online?</h2>
+
+<p>Amrita Online's MBA FAQ says every assessment runs online with remote proctoring, so you never visit a campus. Evaluation has two parts: continuous assessment through the semester and an end-semester exam. <strong>End-semester exams need a Windows laptop or PC.</strong> The FAQ says macOS devices are not supported, so a MacBook owner needs a second machine before the first exam.</p>
+
+<div class="callout-warning">
+<strong>Check your computer before you pay.</strong> Amrita Online says macOS is not supported for its proctored end-semester exams. Confirm the current system requirements with online@amrita.edu if you only own a Mac.
+</div>
+
+<p>On refunds, Amrita says it follows the UGC policy:</p>
+
+<ul>
+<li>15 days or more before the admission closing date: 100%, less a processing fee</li>
+<li>Within 15 days before the closing date: 90%</li>
+<li>Within 15 days after the closing date: 80%</li>
+<li>More than 15 days after: 50%</li>
+<li>More than 30 days after: no refund</li>
+</ul>
+
+<p>The application fee is not refundable in any case. Our guide to the <a href="/blog/ugc-fee-refund-policy">UGC fee refund policy</a> explains where these bands come from. Fees differ by programme and specialisation, so read the current schedule on each programme page and keep a copy with your receipt.</p>
+
+<h2>Is Amrita Online the right choice for you?</h2>
+
+<p>Read our <a href="/blog/amrita-online-mba-review">Amrita online MBA review</a> for the programme itself, and our <a href="/blog/amrita-online-bba-review-2026">Amrita online BBA review</a> if you are applying after Class 12. For admission rules common to every UGC-entitled university, see our guide to the <a href="/blog/online-degree-admission-process-india">online degree admission process</a>. Applying to NMIMS as well? Our <a href="/blog/nmims-online-admission-guide">NMIMS online admission guide</a> covers its two separate calendars.</p>
+
+<div class="cta-box">
+<p><strong>Weighing Amrita against NMIMS?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare/amrita-vs-nmims">Compare Amrita and NMIMS side by side</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>Amrita Vishwa Vidyapeetham, Amrita Online: admission.onlineamrita.com, and the MBA, MCA, BBA, BCA and B.Com programme pages and FAQs on onlineamrita.com, read on 6 November 2026</li>
+<li>UGC-DEB HEI programme register (HEI_Prog_List), entries for Amrita Vishwa Vidyapeetham for 2026-27, read on 2 November 2026: deb.ugc.ac.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulation 22: deb.ugc.ac.in/Regulations</li>
+</ul>
+
+<p class="disclaimer"><em>Checked against Amrita Online's official pages and the UGC-DEB register on 6 November 2026. Admission steps, eligibility, dates and fees can change each session. Confirm them on onlineamrita.com before you apply.</em></p>
+    `,
+  },
+  {
+    slug: 'nmims-online-admission-guide',
+    title: 'NMIMS Online Admission 2027: Steps, Dates and Eligibility',
+    seoTitle: 'NMIMS Online Admission 2027: Steps, Last Dates, Eligibility',
+    h1Title: 'NMIMS Online Admission Guide: Four Steps, the January 2027 Calendar and Eligibility',
+    metaDescription: 'How NMIMS CDOE admission works: four steps, the last date of 16 March 2027, the separate MBA (WX) interview calendar, eligibility and documents.',
+    category: 'Online Degree Validity',
+    tags: ['NMIMS Online Admission', 'NMIMS CDOE Admission', 'NMIMS Online', 'NMIMS Online Portal', 'Online Admission', 'UGC-DEB'],
+    publishedAt: '2026-11-06',
+    readTime: 7,
+    targetKeyword: 'nmims online admission',
+    relatedUniversities: ['nmims-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/7102/notes-macbook-study-conference.jpg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@startup-stock-photos" target="_blank" rel="noopener nofollow">Startup Stock Photos</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'A student using a laptop and taking notes in a notebook.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'How do I apply for NMIMS online admission?', a: 'NMIMS CDOE lists four steps: fill in the registration form on online.nmims.edu and pay the admission processing fee; upload gazette-attested copies of your academic documents, photo ID and photograph; pay the programme fee online or by demand draft; then wait for confirmation. Your admission is confirmed and a student number issued only after document approval, payment approval and student verification.' },
+      { q: 'What is the last date for NMIMS online admission?', a: 'For the BBA, B.Com and MBA (Online), NMIMS CDOE shows registration from 24 September 2026, admission without a late fee until 14 February 2027, two late-fee windows after that, and a last date of admission of 16 March 2027. The MBA (WX) runs on its own calendar: applications close on 31 December 2026 and the last date of admission is 15 January 2027.' },
+      { q: 'What is the eligibility for the NMIMS online MBA?', a: 'NMIMS CDOE asks for a bachelor\'s degree (10+2+3) in any discipline from a recognised university, or an AIU-recognised equivalent, with at least 50% at graduation (45% for SC, ST, OBC and PwD candidates). Work experience is not required for the MBA (Online).' },
+      { q: 'What is the eligibility for the NMIMS MBA (WX)?', a: 'The MBA for Working Executives needs a bachelor\'s degree with at least 55% (50% for SC, ST, OBC and PwD candidates) and three or more years of work experience. Its calendar includes an interview, with results declared on 8 January 2027.' },
+      { q: 'What is the eligibility for NMIMS online BBA and B.Com?', a: 'NMIMS CDOE asks for Class 12 (HSC) in any discipline from a recognised board with at least 50% (45% for SC, ST, OBC and PwD candidates). Its FAQ says a student who dropped out of a degree two or more years ago can still apply if they meet this rule.' },
+      { q: 'Where do I check my NMIMS application status?', a: 'NMIMS CDOE links an Application Status page at registration.online.nmims.edu. Continuing students use the re-registration login on the same domain, which has its own deadline of 12 March 2027.' },
+    ],
+    ctaTitle: 'Comparing NMIMS with other online universities?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">NMIMS runs its online degrees through its Centre for Distance and Online Education (NMIMS CDOE). It publishes exact admission dates, which most online universities do not. It also runs two calendars, and applicants who mix them up miss the MBA (WX) deadline by two months.</p>
+
+<p><strong>Short answer:</strong> you register at <strong>online.nmims.edu</strong>, upload your documents, pay the fee, and wait for NMIMS to confirm your admission and issue a student number. For the <strong>BBA, B.Com and MBA (Online)</strong>, the last date of admission is <strong>16 March 2027</strong>, and the no-late-fee window closes on <strong>14 February 2027</strong>. The <strong>MBA (WX)</strong> closes applications on <strong>31 December 2026</strong> and includes an interview.</p>
+
+<div class="callout-key">
+<strong>NMIMS online admission in one box (checked 6 November 2026)</strong>
+<ul>
+<li><strong>Where to apply:</strong> online.nmims.edu</li>
+<li><strong>BBA, B.Com, MBA (Online):</strong> no late fee until 14 Feb 2027; last date 16 Mar 2027</li>
+<li><strong>MBA (WX):</strong> applications close 31 Dec 2026; interview; lectures from 25 Jan 2027</li>
+<li><strong>Entrance test:</strong> none listed for the BBA, B.Com or MBA (Online)</li>
+<li><strong>UGC-entitled online programmes, 2026-27:</strong> 4</li>
+</ul>
+</div>
+
+<h2>What are the steps in NMIMS online admission?</h2>
+
+<p>NMIMS CDOE sets out four steps on each programme page:</p>
+
+<ol>
+<li><strong>Registration.</strong> Fill in the registration form at online.nmims.edu and pay the admission processing fee. NMIMS also collects an initial part of the programme fee at registration.</li>
+<li><strong>Document submission.</strong> Upload gazette-attested copies of your academic documents, a photo ID and a passport-size photograph.</li>
+<li><strong>Fee payment.</strong> Pay online, or by demand draft in favour of "SVKM's NMIMS" payable at Mumbai. Finance options are listed.</li>
+<li><strong>Confirmation.</strong> After document approval, payment approval and student verification, NMIMS confirms your admission and issues a student number.</li>
+</ol>
+
+<p class="pull">Your study kit, student portal and lectures start only after NMIMS confirms the admission. Payment alone does not make you a student.</p>
+
+<p>You also need a DEB ID before enrolment. Our explainer on <a href="/blog/ugc-deb-id-explained">the UGC-DEB ID</a> shows how to create one.</p>
+
+<h2>What are the NMIMS online admission dates for January 2027?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/18067562/pexels-photo-18067562.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A group of young South Asian women working together on a laptop in a Jaipur office." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@biyani-girls-college-701394465" target="_blank" rel="noopener nofollow">Biyani Girls College</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+<p>NMIMS CDOE publishes one schedule for the BBA, B.Com and MBA (Online):</p>
+
+<table>
+<thead><tr><th>Stage</th><th>Dates shown by NMIMS CDOE</th></tr></thead>
+<tbody>
+<tr><td>Registration starts</td><td>24 September 2026</td></tr>
+<tr><td>Admission without late fee</td><td>24 September 2026 to 14 February 2027</td></tr>
+<tr><td>Admission with the first late fee</td><td>15 to 28 February 2027</td></tr>
+<tr><td>Admission with the second, higher late fee</td><td>1 to 16 March 2027</td></tr>
+<tr><td>Last date of admission</td><td>16 March 2027</td></tr>
+<tr><td>Re-registration closes (continuing students)</td><td>12 March 2027</td></tr>
+</tbody>
+</table>
+
+<p>The <strong>MBA (WX)</strong>, the MBA for working executives, runs on a separate and earlier calendar:</p>
+
+<table>
+<thead><tr><th>Stage</th><th>Date</th></tr></thead>
+<tbody>
+<tr><td>Applications and payments open</td><td>19 October 2026</td></tr>
+<tr><td>Last date for application</td><td>31 December 2026</td></tr>
+<tr><td>Last date for interview</td><td>7 January 2027</td></tr>
+<tr><td>Interview result</td><td>8 January 2027</td></tr>
+<tr><td>Last date for document submission</td><td>9 January 2027</td></tr>
+<tr><td>Last date for programme fee payment</td><td>14 January 2027</td></tr>
+<tr><td>Last date of admission</td><td>15 January 2027</td></tr>
+<tr><td>Lectures start</td><td>25 January 2027</td></tr>
+</tbody>
+</table>
+
+<div class="callout-warning">
+<strong>Do not plan an MBA (WX) application around March.</strong> The MBA (WX) closes applications on 31 December 2026, about ten weeks before the MBA (Online) last date. Confirm both calendars on online.nmims.edu, because NMIMS says its fee structure and schedule can change at the university's discretion.
+</div>
+
+<p>These dates fit the January cycle that UGC allows for online programmes. Our explainer on <a href="/blog/ugc-biannual-admissions-january-july-intake">UGC's January and July intakes</a> explains the two-session rule.</p>
+
+<h2>What is the eligibility for each NMIMS online programme?</h2>
+
+<table>
+<thead><tr><th>Programme</th><th>Eligibility on NMIMS CDOE's pages</th></tr></thead>
+<tbody>
+<tr><td>BBA, B.Com</td><td>Class 12 (HSC) in any discipline, minimum 50% (45% for SC, ST, OBC, PwD)</td></tr>
+<tr><td><a href="/universities/nmims-online/mba">MBA (Online)</a></td><td>Bachelor's degree (10+2+3) in any discipline, minimum 50% at graduation (45% for SC, ST, OBC, PwD); work experience not required</td></tr>
+<tr><td>MBA (WX)</td><td>Bachelor's degree with minimum 55% (50% for SC, ST, OBC, PwD) and 3+ years of work experience; interview</td></tr>
+</tbody>
+</table>
+
+<p>For the 2026-27 July session, the UGC-DEB HEI programme register lists four online programmes at SVKM's Narsee Monjee Institute of Management Studies, a deemed university in Maharashtra: BBA, B.Com, MBA and MBA (Working Executive). Under Regulation 22 of the UGC ODL and Online Regulations, 2020, an entitled online degree is equivalent to the campus degree. Our check of <a href="/blog/is-nmims-online-fake-or-legit-2026">whether NMIMS Online is legit</a> goes through the approvals in detail, and the <a href="/universities/nmims-online">NMIMS Online overview</a> collects its accreditation data.</p>
+
+<h2>How do fees, refunds and exams work at NMIMS Online?</h2>
+
+<p>NMIMS CDOE lets you pay semester-wise, yearly or the whole programme at once, plus a one-time admission processing fee and an exam fee for each subject attempt. The amounts differ by programme, so read the current figures on the programme page. NMIMS says it pays no referral fee or reward to anyone for referring students. Anyone who offers you a "referral discount" is not acting for the university.</p>
+
+<p>Evaluation combines internal assessment with a term-end exam. For cancellations, NMIMS links its own terms and conditions from each fee section. Read them alongside our guide to the <a href="/blog/ugc-fee-refund-policy">UGC fee refund policy</a> before you pay a full-programme fee.</p>
+
+<h2>Is NMIMS Online the right choice for you?</h2>
+
+<p>Our <a href="/blog/nmims-online-mba-review-2026">NMIMS online MBA review</a> covers the programme itself. If you are an experienced manager choosing between the MBA (WX) and other executive programmes, our <a href="/blog/online-executive-mba-india-2026">online executive MBA guide</a> compares the options. Applying to Amrita too? Our <a href="/blog/amrita-online-admission-guide">Amrita online application portal guide</a> covers its process.</p>
+
+<div class="cta-box">
+<p><strong>Weighing NMIMS against JAIN?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare/nmims-vs-jain">Compare NMIMS and JAIN side by side</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>SVKM's NMIMS, Centre for Distance and Online Education: online.nmims.edu programme hubs for the MBA (Online), MBA (WX) and bachelor's programmes (admission schedule, eligibility, registration process, fee notes and FAQ), read on 6 November 2026</li>
+<li>UGC-DEB HEI programme register (HEI_Prog_List), entries for SVKM's NMIMS for 2026-27, read on 2 November 2026: deb.ugc.ac.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulation 22: deb.ugc.ac.in/Regulations</li>
+</ul>
+
+<p class="disclaimer"><em>Checked against NMIMS CDOE's official pages and the UGC-DEB register on 6 November 2026. Admission steps, dates and fees can change each session. Confirm them on online.nmims.edu before you apply.</em></p>
+    `,
+  },
+  {
+    slug: 'jain-online-admission-guide',
+    title: 'JAIN Online Application 2027: Steps, Eligibility and Refunds',
+    seoTitle: 'JAIN Online Application 2027: Steps, Eligibility, Refunds',
+    h1Title: 'JAIN Online Application Guide: Four Steps, Eligibility and the January 2027 Refund Window',
+    metaDescription: 'How to apply to JAIN Online: the four steps, why you pay before uploading documents, eligibility, the 11 UGC-entitled programmes and the refund dates.',
+    category: 'Online Degree Validity',
+    tags: ['JAIN Online Application', 'JAIN Online Admission', 'JAIN Online', 'Jain University Online', 'Online Admission', 'UGC-DEB'],
+    publishedAt: '2026-11-06',
+    readTime: 6,
+    targetKeyword: 'jain online application',
+    relatedUniversities: ['jain-university-online'],
+    status: 'published',
+    heroImage: 'https://images.pexels.com/photos/7821577/pexels-photo-7821577.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@rdne" target="_blank" rel="noopener nofollow">RDNE Stock project</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
+    heroImageAlt: 'Two adults filling in an online form together on a laptop.',
+    author: 'Rishi Kumar',
+    faqs: [
+      { q: 'How do I apply to JAIN Online?', a: 'JAIN Online lists four steps: submit the application form, pay the registration fee, pay the programme fee, then enter your education details and upload your documents. It says your seat is then confirmed and you receive your login credentials, onboarding kit and learning-portal access within 48 hours.' },
+      { q: 'Do I pay the JAIN Online fee before uploading documents?', a: 'Yes. On JAIN Online\'s published process, the registration fee and the programme fee come at steps two and three, and the education details and document upload come at step four. Keep your certificates ready so you can finish step four straight after paying.' },
+      { q: 'What is the eligibility for JAIN Online?', a: 'JAIN Online states the basic rule as a pass in Class 12 for undergraduate programmes or a bachelor\'s degree for postgraduate programmes, depending on the programme. Its BBA FAQ asks for Class 12 from a recognised board. Check the programme page for any minimum percentage before you apply.' },
+      { q: 'Can I get a full refund from JAIN Online?', a: 'JAIN Online\'s refund policy gives a full refund of all fees for cancellations or migrations up to 30 March 2027 for the January 2027 intake, and up to 15 September 2026 for the July 2026 intake. After those dates, the refund falls from 100% to 0% depending on how close you are to the notified last admission date.' },
+      { q: 'Which JAIN online programmes are UGC-entitled?', a: 'For the 2026-27 July session, the UGC-DEB register lists eleven online programmes at JAIN (Deemed-to-be University): BBA, BCA, B.Com, MBA, MCA, M.Com, and MA programmes in English, Journalism and Mass Communication, Economics, Public Policy, and Jainology, Comparative Religion and Philosophy.' },
+      { q: 'Is JAIN Online the same as ARKA Jain University?', a: 'No. JAIN (Deemed-to-be University) in Karnataka runs onlinejain.com. ARKA Jain University in Jharkhand is a separate private university with its own UGC-DEB entitlement. Check the university name on your application and on the DEB register before you pay.' },
+    ],
+    ctaTitle: 'Comparing JAIN with other online universities?',
+    ctaDesc: 'edifyedu.in compares public UGC-DEB, NAAC and NIRF data for 125+ universities. No paid rankings, no referral commissions.',
+    content: `<p class="subtitle">JAIN (Deemed-to-be University) runs its online degrees through JAIN Online at onlinejain.com. Its application is short, but the order differs from most universities: you pay before you upload documents. The good news is a refund window that runs well past the start of the session.</p>
+
+<p><strong>Short answer:</strong> you apply at <strong>onlinejain.com</strong> in four steps: <strong>application form, registration fee, programme fee, then education details and document upload</strong>. JAIN Online says your seat is confirmed and your <strong>portal login arrives within 48 hours</strong>. For the January 2027 intake, its refund policy gives a <strong>full refund up to 30 March 2027</strong>.</p>
+
+<div class="callout-key">
+<strong>JAIN Online application in one box (checked 6 November 2026)</strong>
+<ul>
+<li><strong>Where to apply:</strong> onlinejain.com (Apply Now on any programme page)</li>
+<li><strong>Order:</strong> form, registration fee, programme fee, documents</li>
+<li><strong>Login credentials:</strong> within 48 hours of completing the steps</li>
+<li><strong>Full refund, January 2027 intake:</strong> up to 30 March 2027</li>
+<li><strong>UGC-entitled online programmes, 2026-27:</strong> 11</li>
+</ul>
+</div>
+
+<h2>What are the steps in the JAIN Online application?</h2>
+
+<p>JAIN Online's programme pages list four steps under "How to enrol":</p>
+
+<ol>
+<li><strong>Submit the application.</strong> Fill in the JAIN Online application form.</li>
+<li><strong>Pay the registration fee</strong> to move the admission forward.</li>
+<li><strong>Pay the programme fee</strong> with your chosen payment option: semester-wise, yearly or one-time.</li>
+<li><strong>Enter your education details and upload documents.</strong> JAIN Online says your seat is then confirmed, and you receive login credentials, an onboarding kit and learning-portal access within 48 hours.</li>
+</ol>
+
+<p class="pull">At JAIN Online the fee comes before the document upload. Have your marksheets, ID and photograph scanned before you start, so step four takes minutes, not days.</p>
+
+<p>You also need a DEB ID linked to your enrolment. Our explainer on <a href="/blog/ugc-deb-id-explained">the UGC-DEB ID</a> shows how to create one on the DEB portal.</p>
+
+<h2>What is the eligibility for JAIN Online?</h2>
+<figure style="margin: 28px 0;">
+  <img src="https://images.pexels.com/photos/7776433/pexels-photo-7776433.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A young man studying online at home with a laptop and notebook." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
+  <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@mikhail-nilov" target="_blank" rel="noopener nofollow">Mikhail Nilov</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
+</figure>
+
+
+<p>JAIN Online states the basic rule on every programme card as a pass in Class 12, or a bachelor's degree, depending on the programme. In practice that means:</p>
+
+<ul>
+<li><strong>BBA, BCA, B.Com:</strong> Class 12 from a recognised board. The BBA FAQ says so in those words.</li>
+<li><strong>MBA, MCA, M.Com, MA:</strong> a bachelor's degree from a recognised university.</li>
+</ul>
+
+<p>JAIN Online's programme cards do not state a minimum percentage. Ask your counsellor for the programme's exact cut-off in writing, and check the specialisation you want on the <a href="/universities/jain-university-online/mba">JAIN Online MBA page</a> or the <a href="/universities/jain-university-online/mca">JAIN Online MCA page</a>.</p>
+
+<h2>Which JAIN online programmes are UGC-entitled?</h2>
+<p>For the 2026-27 July session, the UGC-DEB HEI programme register lists eleven online programmes at JAIN (Deemed-to-be University), a deemed university in Karnataka:</p>
+
+<table>
+<thead><tr><th>Level</th><th>Programmes (as named in the register)</th></tr></thead>
+<tbody>
+<tr><td>Undergraduate</td><td>BBA, BCA, B.Com</td></tr>
+<tr><td>Postgraduate</td><td>MBA, MCA, M.Com, MA (English), MA (Journalism and Mass Communication), MA (Economics), MA (Public Policy), MA (Jainology, Comparative Religion and Philosophy)</td></tr>
+</tbody>
+</table>
+
+<p>JAIN is one of only two universities with an online MA in Public Policy on the 2026-27 register. Our guide to <a href="/blog/online-public-policy-courses-india">online public policy courses</a> covers that programme. Our list of <a href="/blog/online-degree-courses-bangalore">online degree courses in Bangalore</a> compares JAIN with the other Bengaluru universities, and the <a href="/universities/jain-university-online">JAIN Online overview</a> collects its accreditation data.</p>
+
+<div class="callout-warning">
+<strong>JAIN Online is not ARKA Jain University.</strong> The register lists ARKA Jain University in Jharkhand as a separate private university with its own online BBA, BCA, B.Com, MBA and MCA. Check that the university name on your application matches the one you chose. Our <a href="/blog/arka-jain-online-mba-review">ARKA Jain online MBA review</a> covers the other one.
+</div>
+
+<h2>What is the JAIN Online refund policy?</h2>
+
+<p>JAIN Online's refund policy names a full-refund date for each intake:</p>
+
+<table>
+<thead><tr><th>Intake</th><th>Full refund of all fees for cancellation or migration</th></tr></thead>
+<tbody>
+<tr><td>July 2026</td><td>Up to 15 September 2026</td></tr>
+<tr><td>January 2027</td><td>Up to 30 March 2027</td></tr>
+</tbody>
+</table>
+
+<p>After that date, the refund depends on when you cancel relative to the notified last admission date: 100% if 15 or more days before it, 90% within 15 days before, 80% up to 15 days after, 50% up to 30 days after, and nothing later. The policy also gives no refund if you stop paying semester fees, are detained for backlogs, or paid a yearly or all-year fee. Approved refunds take up to 30 working days. Our guide to the <a href="/blog/ugc-fee-refund-policy">UGC fee refund policy</a> explains the national rules behind these bands.</p>
+
+<p>Read our <a href="/blog/jain-online-mba-review-2026">JAIN online MBA review</a> before you pay for the MBA itself.</p>
+
+<div class="cta-box">
+<p><strong>Weighing JAIN against Amrita?</strong> edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings and no referral commissions. <a href="/compare/jain-vs-amrita">Compare JAIN and Amrita side by side</a>.</p>
+</div>
+
+<h2>Sources</h2>
+<ul>
+<li>JAIN (Deemed-to-be University), JAIN Online: onlinejain.com MBA, BBA, B.Com and MCA programme pages (enrolment steps, eligibility, FAQ) and refund policy, read on 6 November 2026</li>
+<li>UGC-DEB HEI programme register (HEI_Prog_List), entries for JAIN (Deemed-to-be University) and ARKA Jain University for 2026-27, read on 2 November 2026: deb.ugc.ac.in</li>
+<li>UGC (Open and Distance Learning Programmes and Online Programmes) Regulations, 2020, Regulation 22: deb.ugc.ac.in/Regulations</li>
+</ul>
+
+<p class="disclaimer"><em>Checked against JAIN Online's official pages and the UGC-DEB register on 6 November 2026. Admission steps, dates and fees can change each intake. Confirm them on onlinejain.com before you apply.</em></p>
     `,
   },
 ]

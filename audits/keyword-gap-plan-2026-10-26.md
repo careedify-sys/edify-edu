@@ -304,3 +304,15 @@ Not written in round 5, with the reason: Amrita (amrita online application porta
 Not written in round 6: Jain (jain online application 140; jain online student portal 170 is login): onlinejain.com links its admission FAQ to its own blog, not a policy page; read the programme pages before writing. Amrita and SASTRA as in round 5. Not repeated from Amity's page: its "only QS-ranked online MBA" marketing claim (memory project_tagline_120_cut). Christ's FAQ still says applications close 31 January 2026 beside a February 2027 banner; the post flags it. No fee figures in any of the three.
 
 - 2026-11-04 · #23-#25 · batch 6 (3 posts, ≈1,190/mo) · inbound sentences in amity-online-student-portal-login, amity-online-mba-review-2026 (→#23), online-degree-courses-bangalore (→#24), is-chandigarh-university-online-fake-or-legit-2026 (→#25).
+
+## Queue round 7: Amrita, NMIMS, JAIN admission guides (6 Nov 2026)
+
+| # | Page | Target URL | Keywords (monthly) | Source | Status |
+|---|---|---|---|---|---|
+| 26 | Amrita Online application portal | `/blog/amrita-online-admission-guide` | amrita online application portal 590; amrita online application portal 2026 260 = **850** | admission.onlineamrita.com, onlineamrita.com programme FAQs (FAQPage JSON-LD, read in browser) | SHIPPED (batch 7) |
+| 27 | NMIMS online admission | `/blog/nmims-online-admission-guide` | nmims online portal 170 (admission side) | online.nmims.edu MBA, MBA (WX) and bachelors hubs: schedule, eligibility, 4 steps | SHIPPED (batch 7) |
+| 28 | JAIN Online application | `/blog/jain-online-admission-guide` | jain online application 140 | onlinejain.com programme pages (4 steps) and /refund-policy | SHIPPED (batch 7) |
+
+Still open: SASTRA (~810) not retried this round. "jain online student portal" 170 is login intent, not targeted. No rupee figures in any of the three.
+
+- 2026-11-06 · #26-#28 · batch 7 (3 posts, ~1,160/mo) · inbound sentences in amrita-online-mba-review (to #26), nmims-online-mba-review-2026 and is-nmims-online-fake-or-legit-2026 (to #27), jain-online-mba-review-2026 and online-degree-courses-bangalore (to #28), online-degree-admission-process-india (to all three).

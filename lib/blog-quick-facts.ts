@@ -3,6 +3,27 @@
 // CMS sync never touches this file, so data survives every sync.
 
 export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; green?: boolean }[]> = {
+  'amrita-online-admission-guide': [
+    { label: 'Official portal', value: 'admission.onlineamrita.com', green: true },
+    { label: 'IDs needed', value: 'Aadhaar, ABC ID, DEB ID' },
+    { label: 'Entrance test', value: 'None for MBA or BBA' },
+    { label: 'Exams', value: 'Online proctored, Windows only' },
+    { label: 'UGC-entitled online, 2026-27', value: '10 programmes' },
+  ],
+  'nmims-online-admission-guide': [
+    { label: 'Where to apply', value: 'online.nmims.edu', green: true },
+    { label: 'BBA, B.Com, MBA last date', value: '16 March 2027' },
+    { label: 'No late fee until', value: '14 February 2027' },
+    { label: 'MBA (WX) applications close', value: '31 December 2026' },
+    { label: 'UGC-entitled online, 2026-27', value: '4 programmes' },
+  ],
+  'jain-online-admission-guide': [
+    { label: 'Where to apply', value: 'onlinejain.com', green: true },
+    { label: 'Order', value: 'Form, fees, then documents' },
+    { label: 'Login credentials', value: 'Within 48 hours' },
+    { label: 'Full refund, Jan 2027 intake', value: 'Up to 30 March 2027' },
+    { label: 'UGC-entitled online, 2026-27', value: '11 programmes' },
+  ],
   'amity-online-admission-guide': [
     { label: 'Where to apply', value: 'Apply Now on amityonline.com', green: true },
     { label: 'Session shown', value: 'January 2027' },
