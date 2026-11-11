@@ -22,9 +22,37 @@ export const VIDEOS: Record<string, SiteVideo> = {
   },
 }
 
-// Blog slug -> video key
+// Blog slug -> video key. The blog template injects the embed before the
+// post's first <h2> and emits VideoObject schema (app/blog/[slug]/page.tsx).
 export const VIDEO_BY_BLOG: Record<string, string> = {
   'amity-online-mba-review-2026': 'amity-online-mba-review-2026',
+  'amity-online-mba-hr-worth-it': 'amity-online-mba-review-2026',
+  'amity-online-mca-fees-review': 'amity-online-mba-review-2026',
+  'online-mca-amity-vs-lpu-2026': 'amity-online-mba-review-2026',
+  'amity-vs-manipal-online-mba-2026': 'amity-online-mba-review-2026',
+  'jain-vs-amity-online-mba-2026': 'amity-online-mba-review-2026',
+  'is-amity-university-online-fake-or-legit-2026': 'amity-online-mba-review-2026',
+  'amity-online-student-portal-login': 'amity-online-mba-review-2026',
+  'amity-online-admission-guide': 'amity-online-mba-review-2026',
+}
+
+const escapeHtml = (s: string) =>
+  s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+
+// Embed block for blog HTML content.
+export function videoEmbedHtml(v: SiteVideo, heading: string, caption: string) {
+  return `<h2 id="video-review">${escapeHtml(heading)}</h2>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;margin:0 0 8px"><iframe src="https://www.youtube.com/embed/${v.youtubeId}" title="${escapeHtml(v.title)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"></iframe></div>
+<p style="font-size:12px;color:#64748b;margin:0 0 28px">${escapeHtml(caption)}</p>
+`
+}
+
+// Per-video heading and caption used in blog posts.
+export const VIDEO_BLOG_COPY: Record<string, { heading: string; caption: string }> = {
+  'amity-online-mba-review-2026': {
+    heading: 'Watch: Our Amity Online MBA Video Review',
+    caption: 'Our three-minute review of the Amity Online MBA. Fees shown are indicative, so confirm them on online.amity.edu before you pay.',
+  },
 }
 
 // University id -> video key (shown on /universities/{id})

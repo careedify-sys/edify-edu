@@ -23230,9 +23230,6 @@ export const BLOG_POSTS: BlogPost[] = [
 </ul>
 <p>Fees verified against online.amity.edu on 7 August 2026. They are indicative, so confirm the current figure on the official portal before you pay. Specialisations, eligibility and admission steps are on our <a href="/universities/amity-university-online/mba">Amity Online MBA programme page</a>.</p>
 </div>
-<h2 id="video-review">Watch: Our Amity Online MBA Video Review</h2>
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;margin:0 0 8px"><iframe src="https://www.youtube.com/embed/M-6oy3W34oM" title="Amity Online MBA Review 2026: Fees, Exams and Real Student Problems" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"></iframe></div>
-<p style="font-size:12px;color:#64748b;margin:0 0 28px">A three-minute summary of this review. Fees shown are indicative, so confirm them on online.amity.edu before you pay.</p>
 <div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Verified coupon: up to Rs 5,000 off Amity Online MBA. Max amount unlocks every Tuesday and Saturday (IST).</p><a href="/coupons/amity-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View Amity Coupon Code</a></div>
 
 
