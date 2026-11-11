@@ -48,8 +48,7 @@ import RequestSyllabusCard from './RequestSyllabusCard'
 import { hasSyllabusData } from '@/lib/syllabus'
 import { getProgramLinks } from '@/lib/internal-links'
 import ProgramBlogLinks from './ProgramBlogLinks'
-import YouTubeVideo from './YouTubeVideo'
-import { VIDEOS, VIDEO_BY_PROGRAMME } from '@/lib/videos'
+import { UniversityVideo } from './YouTubeVideo'
 import SiblingProgrammes from './SiblingProgrammes'
 import { getSiblingProgrammes, getUniversityOverviewLink, getVerifyPage, resolveSpecHref } from '@/lib/seo/safe-internal-links'
 import { feeSentence, emiSentence, programmeEmiFrom, NO_PROGRAMME_EMI } from '@/lib/seo/display-guards'
@@ -335,13 +334,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               </div>
 
               {/* §4A Our video review (lib/videos.ts) */}
-              {VIDEO_BY_PROGRAMME[`${u.id}/${program}`] && (
-                <YouTubeVideo
-                  video={VIDEOS[VIDEO_BY_PROGRAMME[`${u.id}/${program}`]]}
-                  pageUrl={`https://edifyedu.in/universities/${u.id}/${programSlug}`}
-                  heading={`Watch: Our ${cleanName} ${program} Video Review`}
-                />
-              )}
+              <UniversityVideo ids={[u.id]} pageUrl={`https://edifyedu.in/universities/${u.id}/${programSlug}`} />
 
               {/* §4B Fees first for fee-intent search pages */}
               {feeProminent && (

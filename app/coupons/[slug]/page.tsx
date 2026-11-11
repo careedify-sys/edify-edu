@@ -11,6 +11,7 @@ import CouponScarcityBanner from '@/components/CouponScarcityBanner'
 import MujCouponTopUrgency from '@/components/coupons/MujCouponTopUrgency'
 import MujCouponMidReassurance from '@/components/coupons/MujCouponMidReassurance'
 import MujCouponEndCta from '@/components/coupons/MujCouponEndCta'
+import { UniversityVideo } from '@/components/YouTubeVideo'
 
 // Slug-conditional CTAs for high-CTR coupon pages. Component-injected so
 // the data layer in lib/coupon-pages.ts stays clean.
@@ -308,6 +309,11 @@ export default async function CouponDetailPage({ params }: { params: any }) {
             <p className="text-xs text-amber-800 mt-2">It comes off your fee when you enroll with code <strong>{page.couponCode}</strong>. The top of this page shows today&apos;s amount and a countdown to the next Tuesday or Saturday.</p>
           </div>
         </section>
+
+        {/* Our video review (lib/videos.ts) */}
+        <div className="mb-8 empty:hidden">
+          <UniversityVideo ids={[page.universityId]} pageUrl={`https://edifyedu.in/coupons/${page.slug}`} />
+        </div>
 
         {/* Why discounts matter */}
         <section className="mb-8">

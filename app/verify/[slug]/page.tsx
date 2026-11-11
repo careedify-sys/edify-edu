@@ -20,6 +20,7 @@ import { programmeSlug } from '@/lib/seo/resolve-programme';
 import { VerifyAdvisory } from '@/components/verify/VerifyAdvisory';
 import { UgcDebContacts } from '@/components/verify/UgcDebContacts';
 import advisoryData from '@/lib/data/verify-advisories.json';
+import { UniversityVideo } from '@/components/YouTubeVideo'
 
 const ADVISORIES = (advisoryData as {
   advisories: Record<string, {
@@ -315,6 +316,7 @@ export default async function VerifyPage({ params }: PageProps) {
                 />
               </div>
             )}
+            <UniversityVideo ids={[siteUni?.id]} pageUrl={`https://edifyedu.in/verify/${slug}`} />
             {programmes.length > 0 && (
               <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}`, padding: '22px 0 6px' }}>
                 <ProgrammeFinder universityHref={profileHref} programmes={programmes} />
@@ -417,6 +419,8 @@ function BrandMergedPage({ slug, brandSlug, universities, programmes, accreditat
                 />
               </div>
             )}
+
+            <UniversityVideo ids={[siteLinksForVerifySlug(slug).siteUni?.id, ...universities.map((x: any) => siteLinksForVerifySlug(x.slug).siteUni?.id)]} pageUrl={`https://edifyedu.in/verify/${slug}`} />
 
             {/* Approving entities */}
             <div style={{ background: '#FFFFFF', borderRadius: 16, padding: '22px 28px', border: `1px solid ${brand.creamBorder}` }}>

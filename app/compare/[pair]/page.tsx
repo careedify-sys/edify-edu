@@ -17,6 +17,7 @@ import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { buildPairAnswers } from '@/lib/answers/compare-answers'
 import { sectionHtml } from '@/lib/answers/render-html'
 import { FROZEN_UNIVERSITIES } from '@/lib/answers/targets'
+import { UniversityVideo } from '@/components/YouTubeVideo'
 
 export const revalidate = false
 
@@ -223,6 +224,11 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
             {feePhrase(feeA) && feePhrase(feeB) ? ` ${nameA} costs ${feePhrase(feeA)}; ${nameB} costs ${feePhrase(feeB)}.` : ''}
             {' '}Scroll down for a side-by-side breakdown and our pick-by-profile recommendation.
           </p>
+        </div>
+
+        {/* Our video review of either university (lib/videos.ts) */}
+        <div className="mb-8 empty:hidden">
+          <UniversityVideo ids={[uA.id, uB.id]} pageUrl={`https://edifyedu.in/compare/${pair}`} />
         </div>
 
         {/* At-a-Glance Table */}

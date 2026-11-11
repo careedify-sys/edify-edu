@@ -25,7 +25,7 @@ import { getUniversityById, type Program } from '@/lib/data'
 import { getProgramSchemaOffer } from '@/lib/seo/program-schema'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { splitLongParagraphsHtml } from '@/lib/split-paragraphs'
-import { VIDEOS, VIDEO_BY_BLOG, VIDEO_BLOG_COPY, videoSchema, videoEmbedHtml } from '@/lib/videos'
+import { VIDEOS, VIDEO_BY_BLOG, VIDEO_COPY, videoSchema, videoEmbedHtml } from '@/lib/videos'
 
 // Inject a mid-article CTA marker right before the next <h2> after a given
 // heading ID. BlogContentWithCTAs picks up the marker and renders the right
@@ -175,8 +175,8 @@ export default async function BlogPostPage({ params }: Props) {
 
   // Video embed (lib/videos.ts): before the first <h2>, or at the top if none.
   const videoKey = VIDEO_BY_BLOG[slug]
-  if (videoKey && VIDEOS[videoKey] && VIDEO_BLOG_COPY[videoKey]) {
-    const { heading, caption } = VIDEO_BLOG_COPY[videoKey]
+  if (videoKey && VIDEOS[videoKey] && VIDEO_COPY[videoKey]) {
+    const { heading, caption } = VIDEO_COPY[videoKey]
     const embed = videoEmbedHtml(VIDEOS[videoKey], heading, caption)
     const at = contentWithIds.indexOf('<h2')
     contentWithIds = at >= 0 ? contentWithIds.slice(0, at) + embed + contentWithIds.slice(at) : embed + contentWithIds

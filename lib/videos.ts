@@ -47,22 +47,27 @@ export function videoEmbedHtml(v: SiteVideo, heading: string, caption: string) {
 `
 }
 
-// Per-video heading and caption used in blog posts.
-export const VIDEO_BLOG_COPY: Record<string, { heading: string; caption: string }> = {
+// Per-video heading and caption, used wherever the video is shown.
+export const VIDEO_COPY:Record<string, { heading: string; caption: string }> = {
   'amity-online-mba-review-2026': {
     heading: 'Watch: Our Amity Online MBA Video Review',
     caption: 'Our three-minute review of the Amity Online MBA. Fees shown are indicative, so confirm them on online.amity.edu before you pay.',
   },
 }
 
-// University id -> video key (shown on /universities/{id})
+// University id -> video key. Shown on every page about that university:
+// /universities/{id}, all programme hubs and spec pages, its coupon page,
+// its /verify page and every /compare pair that includes it.
 export const VIDEO_BY_UNIVERSITY: Record<string, string> = {
   'amity-university-online': 'amity-online-mba-review-2026',
 }
 
-// "{universityId}/{program}" -> video key (shown on programme hubs)
-export const VIDEO_BY_PROGRAMME: Record<string, string> = {
-  'amity-university-online/MBA': 'amity-online-mba-review-2026',
+export function videoForUniversity(...ids: (string | null | undefined)[]) {
+  for (const id of ids) {
+    const key = id ? VIDEO_BY_UNIVERSITY[id] : undefined
+    if (key && VIDEOS[key] && VIDEO_COPY[key]) return { video: VIDEOS[key], ...VIDEO_COPY[key] }
+  }
+  return null
 }
 
 export function videoSchema(v: SiteVideo, pageUrl: string) {

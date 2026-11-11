@@ -50,6 +50,7 @@ import CouponCard         from './CouponCard'
 import QuickFactsCard     from './QuickFactsCard'
 import AssuredMarquee    from './AssuredMarquee'
 import RequestSyllabusCard from './RequestSyllabusCard'
+import { UniversityVideo } from './YouTubeVideo'
 import { getExactFee, formatExactFee } from '@/lib/fees'
 import { feeSentence, emiSentence, programmeEmiFrom, NO_PROGRAMME_EMI } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
@@ -506,6 +507,9 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                     </section>
                   )}
 
+                  {/* §3A Our video review (lib/videos.ts) */}
+                  <UniversityVideo ids={[u.id]} pageUrl={`https://edifyedu.in/universities/${u.id}/${programSlug}/${specSlug}`} />
+
                   {/* §4 Syllabus */}
                   {specJson.sections.syllabus && (
                     <SpecSyllabusSection
@@ -645,6 +649,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                   </div>
                   <UniHighlights u={u} program={program} cleanName={cleanName} />
                   <SectionAbout u={u} program={program} pd={pd} cleanName={cleanName} spec={spec} />
+                  <UniversityVideo ids={[u.id]} pageUrl={`https://edifyedu.in/universities/${u.id}/${programSlug}/${specSlug}`} />
                   <SectionWhoCanApply u={u} program={program} cleanName={cleanName} />
                   {/* Suppressed for mode-unverified universities: both sections
                       assert online delivery. See lib/seo/should-index.ts. */}
