@@ -23,6 +23,8 @@ import AssuredMarquee from '@/components/AssuredMarquee'
 import PreAdmissionTools from '@/components/PreAdmissionTools'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import type { SchemaOffer } from '@/lib/seo/program-schema'
+import YouTubeVideo from '@/components/YouTubeVideo'
+import { VIDEOS, VIDEO_BY_UNIVERSITY } from '@/lib/videos'
 
 const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')
 
@@ -424,7 +426,16 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                   ) : null}
                 </div>
               </section>
-              
+
+              {/* Our video review (lib/videos.ts) */}
+              {VIDEO_BY_UNIVERSITY[u.id] && (
+                <YouTubeVideo
+                  video={VIDEOS[VIDEO_BY_UNIVERSITY[u.id]]}
+                  pageUrl={`https://edifyedu.in/universities/${u.id}`}
+                  heading={`Watch: Our ${cleanName} Video Review`}
+                />
+              )}
+
               {/* Highlights. Tracks the programme tab, so the MBA-only
                   immersion line shows on MBA and stays hidden on the rest. */}
               <UniHighlights u={u} program={displayProgram} cleanName={u.name} />

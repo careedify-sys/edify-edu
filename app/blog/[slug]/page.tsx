@@ -25,6 +25,7 @@ import { getUniversityById, type Program } from '@/lib/data'
 import { getProgramSchemaOffer } from '@/lib/seo/program-schema'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { splitLongParagraphsHtml } from '@/lib/split-paragraphs'
+import { VIDEOS, VIDEO_BY_BLOG, videoSchema } from '@/lib/videos'
 
 // Inject a mid-article CTA marker right before the next <h2> after a given
 // heading ID. BlogContentWithCTAs picks up the marker and renders the right
@@ -330,6 +331,12 @@ export default async function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {VIDEO_BY_BLOG[post.slug] && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema(VIDEOS[VIDEO_BY_BLOG[post.slug]], postUrl)) }}
+        />
+      )}
 
       <div className="min-h-screen" style={{ background: '#F7F8FA' }}>
 
