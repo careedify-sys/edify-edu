@@ -316,7 +316,7 @@ export default async function VerifyPage({ params }: PageProps) {
                 />
               </div>
             )}
-            <UniversityVideo ids={[siteUni?.id]} pageUrl={`https://edifyedu.in/verify/${slug}`} />
+            <UniversityVideo ids={[siteUni?.id, slug]} pageUrl={`https://edifyedu.in/verify/${slug}`} />
             {programmes.length > 0 && (
               <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}`, padding: '22px 0 6px' }}>
                 <ProgrammeFinder universityHref={profileHref} programmes={programmes} />

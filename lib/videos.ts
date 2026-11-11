@@ -62,8 +62,40 @@ export const VIDEO_BY_UNIVERSITY: Record<string, string> = {
   'amity-university-online': 'amity-online-mba-review-2026',
 }
 
+// Other ids (e.g. /verify slugs with no site record) that should show a
+// university's video. Amity University Rajasthan awards some Amity Online degrees.
+export const VIDEO_UNI_ALIASES: Record<string, string> = {
+  'amity-university-rajasthan-online': 'amity-university-online',
+}
+
+// Posts that discuss a university without being about it: the video goes at
+// the end of the section where the university is first named in body text.
+// Skips posts about another single university (its review, a vs-page that
+// excludes this one, a legitimacy check), where the video would be off-topic.
+export const VIDEO_MENTION_RULES: { video: string; text: RegExp; slug: RegExp; skipSlug: RegExp }[] = [
+  {
+    video: 'amity-online-mba-review-2026',
+    text: />[^<]*\bAmity\b/,
+    slug: /mba/,
+    skipSlug: /review|fake-or-legit|^(imt|jamia|icfai|nmims|noida-international|lpu|bits|jain|du-online|xlri|mahe|upes|dy-patil|chandigarh|symbiosis|ignou|uu-doon|galgotias|shoolini|jaypee|iim)-/,
+  },
+]
+
+// Returns [videoKey, insertAt] for a post with no VIDEO_BY_BLOG entry, or null.
+export function videoMentionPlacement(slug: string, html: string): [string, number] | null {
+  for (const r of VIDEO_MENTION_RULES) {
+    if (!r.slug.test(slug) || r.skipSlug.test(slug)) continue
+    const m = r.text.exec(html)
+    if (!m) continue
+    const next = html.indexOf('<h2', m.index)
+    return [r.video, next >= 0 ? next : html.length]
+  }
+  return null
+}
+
 export function videoForUniversity(...ids: (string | null | undefined)[]) {
-  for (const id of ids) {
+  for (const raw of ids) {
+    const id = raw ? VIDEO_UNI_ALIASES[raw] ?? raw : undefined
     const key = id ? VIDEO_BY_UNIVERSITY[id] : undefined
     if (key && VIDEOS[key] && VIDEO_COPY[key]) return { video: VIDEOS[key], ...VIDEO_COPY[key] }
   }

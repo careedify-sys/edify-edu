@@ -25,7 +25,7 @@ import { getUniversityById, type Program } from '@/lib/data'
 import { getProgramSchemaOffer } from '@/lib/seo/program-schema'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { splitLongParagraphsHtml } from '@/lib/split-paragraphs'
-import { VIDEOS, VIDEO_BY_BLOG, VIDEO_COPY, videoSchema, videoEmbedHtml } from '@/lib/videos'
+import { VIDEOS, VIDEO_BY_BLOG, VIDEO_COPY, videoSchema, videoEmbedHtml, videoMentionPlacement } from '@/lib/videos'
 
 // Inject a mid-article CTA marker right before the next <h2> after a given
 // heading ID. BlogContentWithCTAs picks up the marker and renders the right
@@ -174,12 +174,22 @@ export default async function BlogPostPage({ params }: Props) {
   let contentWithIds = splitLongParagraphsHtml(addHeadingIds(post.content))
 
   // Video embed (lib/videos.ts): before the first <h2>, or at the top if none.
-  const videoKey = VIDEO_BY_BLOG[slug]
+  // Posts about the university: before the first <h2>. Posts that discuss it:
+  // at the end of the section where it is first named (videoMentionPlacement).
+  let videoKey: string | undefined = VIDEO_BY_BLOG[slug]
+  let videoAt = -1
+  if (videoKey) {
+    videoAt = Math.max(0, contentWithIds.indexOf('<h2'))
+  } else {
+    const placed = videoMentionPlacement(slug, contentWithIds)
+    if (placed) [videoKey, videoAt] = placed
+  }
   if (videoKey && VIDEOS[videoKey] && VIDEO_COPY[videoKey]) {
     const { heading, caption } = VIDEO_COPY[videoKey]
     const embed = videoEmbedHtml(VIDEOS[videoKey], heading, caption)
-    const at = contentWithIds.indexOf('<h2')
-    contentWithIds = at >= 0 ? contentWithIds.slice(0, at) + embed + contentWithIds.slice(at) : embed + contentWithIds
+    contentWithIds = contentWithIds.slice(0, videoAt) + embed + contentWithIds.slice(videoAt)
+  } else {
+    videoKey = undefined
   }
   const headings = extractHeadings(post.content)
 
@@ -340,10 +350,10 @@ export default async function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      {VIDEO_BY_BLOG[post.slug] && (
+      {videoKey && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema(VIDEOS[VIDEO_BY_BLOG[post.slug]], postUrl)) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema(VIDEOS[videoKey], postUrl)) }}
         />
       )}
 
