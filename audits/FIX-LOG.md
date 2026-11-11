@@ -1,5 +1,15 @@
 # Fix log
 
+## 2026-11-11 · Course schema on /online-dba pages: offers and hasCourseInstance
+
+- **Why:** Semrush flagged all 6 DBA programme pages for invalid Course structured data, with two required fields
+  missing: hasCourseInstance and offers. Without them the pages cannot get Google's Course info rich result.
+- **What:** app/online-dba/[slug]/page.tsx now adds hasCourseInstance (courseMode Online, courseWorkload
+  P{durationYears}Y, the same pattern as /programs) and offers with category Paid. The price comes only from the
+  public, feeConfirmed fields: single fee gives Offer.price, an immersion split gives AggregateOffer low/high.
+  Rushford and SSBM (feeConfirmed false) get a priceless Offer, so no held-back fee leaks into the schema.
+- **Verified:** rendered JSON-LD for all 6 slugs on the dev server. Not yet run through the Rich Results Test live.
+
 ## 2026-11-06 · September 2026 UGC-DEB lists applied; one university count (125+) sitewide
 
 - **Why:** Rishi supplied the 22 Sep 2026 addendum and main list and asked whether the site reflects them. He also asked

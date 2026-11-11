@@ -157,6 +157,28 @@ export default function DbaProgrammePage({ params }: Props) {
           description: `${p.durationYears}-year online ${p.programmeName} from ${p.provider}. Eligibility: ${p.eligibilityText}.`,
           url: `${DBA_BASE}${path}`,
           provider: { '@type': 'Organization', name: p.provider },
+          // Google's Course info result requires offers and hasCourseInstance.
+          // Price only from the public (feeConfirmed) fields; held-back fees
+          // ship as a priceless Paid offer so no unconfirmed figure leaks.
+          offers: p.feeConfirmed && p.singleFee == null
+            ? {
+                '@type': 'AggregateOffer',
+                category: 'Paid',
+                lowPrice: String(p.feeWithoutImmersion),
+                highPrice: String(p.feeWithImmersion),
+                priceCurrency: 'INR',
+              }
+            : {
+                '@type': 'Offer',
+                category: 'Paid',
+                ...(p.feeConfirmed && p.singleFee != null ? { price: String(p.singleFee) } : {}),
+                priceCurrency: 'INR',
+              },
+          hasCourseInstance: {
+            '@type': 'CourseInstance',
+            courseMode: 'Online',
+            courseWorkload: `P${p.durationYears}Y`,
+          },
         }}
       />
       <DbaBreadcrumbs crumbs={[{ name: 'Online DBA', path: '/online-dba' }, { name, path }]} />
