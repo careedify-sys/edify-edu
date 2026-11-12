@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { Phone, Mail, MapPin, CheckCircle, Send } from 'lucide-react'
+import { submitEnquiry } from '@/lib/submitEnquiry'
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })
@@ -10,17 +11,13 @@ export default function ContactPage() {
     e.preventDefault()
     setStatus('sending')
     try {
-      const res = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: form.name,
-          phone: form.phone,
-          email: form.email,
-          sourcePage: '/contact',
-          source: 'contact_page',
-          preferredUniversity: `Contact Form: ${form.message.slice(0, 100)}`,
-        }),
+      const res = await submitEnquiry({
+        name: form.name,
+        phone: form.phone,
+        email: form.email,
+        sourcePage: '/contact',
+        source: 'contact_page',
+        preferredUniversity: `Contact Form: ${form.message.slice(0, 100)}`,
       })
       if (res.ok) setStatus('sent')
       else setStatus('error')

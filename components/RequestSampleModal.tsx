@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import { CheckCircle, Loader2, X, Phone, User, Mail } from 'lucide-react'
+import { submitEnquiry } from '@/lib/submitEnquiry'
 
 interface Props {
   universityId: string
@@ -54,21 +55,17 @@ export default function RequestSampleModal({ universityId, universityName, progr
     setLoading(true)
 
     try {
-      const res = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: n,
-          phone: p,
-          email: em,
-          universityId,
-          preferredUniversity: universityName,
-          program: program || 'General',
-          notes: `Sample degree request for ${universityName}`,
-          sourcePage: typeof window !== 'undefined' ? window.location.pathname : '',
-          source: 'sample_cert_request',
-          timestamp: new Date().toISOString(),
-        }),
+      const res = await submitEnquiry({
+        name: n,
+        phone: p,
+        email: em,
+        universityId,
+        preferredUniversity: universityName,
+        program: program || 'General',
+        notes: `Sample degree request for ${universityName}`,
+        sourcePage: typeof window !== 'undefined' ? window.location.pathname : '',
+        source: 'sample_cert_request',
+        timestamp: new Date().toISOString(),
       })
       if (!res.ok) {
         setLoading(false)

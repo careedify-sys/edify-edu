@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { CheckCircle2, Send, MessageCircle } from 'lucide-react'
 import type { UniversityBlogCtaConfig } from '@/lib/university-blog-cta'
 import { trackEvent } from '@/lib/analytics'
+import { submitEnquiry } from '@/lib/submitEnquiry'
 
 export default function UniversityEndCta({ config }: { config: UniversityBlogCtaConfig }) {
   const [name, setName] = useState('')
@@ -35,29 +36,18 @@ export default function UniversityEndCta({ config }: { config: UniversityBlogCta
     if (!name.trim() || !/^[6-9]\d{9}$/.test(phone)) return
     setStatus('submitting')
     try {
-      const res = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: name.trim(),
-          phone: phone.trim(),
-          program: 'MBA',
-          preferredUniversity: config.universityName,
-          sourcePage: tagBase,
-          source: tagBase,
-        }),
-      })
+      const res = await submitEnquiry({
+        name: name.trim(),
+        phone: phone.trim(),
+        program: 'MBA',
+        preferredUniversity: config.universityName,
+        sourcePage: tagBase,
+        source: tagBase,
+      }, { university: config.universityName })
       if (!res.ok) {
         setStatus('error')
         trackEvent('form_error', { form_component: 'UniversityEndCta' })
         return
-      }
-      if (typeof window !== 'undefined' && (window as any).gtag) {
-        (window as any).gtag('event', 'generate_lead', {
-          university: config.universityName,
-          program: 'MBA',
-          source: tagBase,
-        })
       }
       trackEvent('form_submit', { form_component: 'UniversityEndCta' })
       setStatus('success')

@@ -2,6 +2,7 @@
 
 import { useState, useId } from 'react'
 import { CheckCircle2, Send, MessageCircle, Clock } from 'lucide-react'
+import { submitEnquiry } from '@/lib/submitEnquiry'
 
 const PROGRAMS = ['Online MBA', 'Online MCA', 'Online BBA', 'Online BCA', 'Other Courses']
 
@@ -49,18 +50,14 @@ export default function BlogLeadForm({
     setStatus('submitting')
 
     try {
-      const res = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: form.name,
-          phone: form.phone,
-          program: form.program,
-          sourcePage: typeof window !== 'undefined' ? window.location.pathname : 'blog',
-          source: source || 'blog_lead_form',
-          ...(bestTimeField && form.bestTime ? { bestTimeToCall: form.bestTime } : {}),
-          ...(couponCode ? { couponCode } : {}),
-        }),
+      const res = await submitEnquiry({
+        name: form.name,
+        phone: form.phone,
+        program: form.program,
+        sourcePage: typeof window !== 'undefined' ? window.location.pathname : 'blog',
+        source: source || 'blog_lead_form',
+        ...(bestTimeField && form.bestTime ? { bestTimeToCall: form.bestTime } : {}),
+        ...(couponCode ? { couponCode } : {}),
       })
       if (!res.ok) { setStatus('error'); return }
       setStatus('success')

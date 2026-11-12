@@ -4,6 +4,7 @@ import { useState } from 'react'
 import BlogCTACard from './BlogCTACard'
 import UniversityMidCompare from './blog-cta/UniversityMidCompare'
 import type { UniversityBlogCtaConfig } from '@/lib/university-blog-cta'
+import { submitEnquiry } from '@/lib/submitEnquiry'
 
 type Variant = 'compare' | 'counsel' | 'verify' | 'shortlist'
 type MidVariant = 'university-mid-cta'
@@ -23,16 +24,12 @@ function InlineLeadForm() {
     if (!name.trim() || !phone.trim()) return
     setStatus('sending')
     try {
-      const res = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: name.trim(),
-          phone: phone.trim(),
-          program: program || 'Not specified',
-          sourcePage: window.location.pathname,
-          source: 'blog_inline_form',
-        }),
+      const res = await submitEnquiry({
+        name: name.trim(),
+        phone: phone.trim(),
+        program: program || 'Not specified',
+        sourcePage: window.location.pathname,
+        source: 'blog_inline_form',
       })
       if (!res.ok) { setStatus('error'); return }
       setStatus('done')

@@ -1,6 +1,7 @@
 'use client'
 import { useState, useId, useRef, useEffect } from 'react'
 import { trackEvent } from '@/lib/analytics'
+import { submitEnquiry } from '@/lib/submitEnquiry'
 
 const SPECIALISATIONS = [
   'Marketing',
@@ -72,16 +73,12 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
     setAlumniError(false)
 
     try {
-      const res = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: n,
-          phone: p,
-          sourcePage: typeof window !== 'undefined' ? window.location.pathname : 'blog',
-          source: 'blog_sidebar_alumni',
-          preferredUniversity: postTitle ? `Talk to Alumni: ${postTitle}` : 'Talk to Alumni',
-        }),
+      const res = await submitEnquiry({
+        name: n,
+        phone: p,
+        sourcePage: typeof window !== 'undefined' ? window.location.pathname : 'blog',
+        source: 'blog_sidebar_alumni',
+        preferredUniversity: postTitle ? `Talk to Alumni: ${postTitle}` : 'Talk to Alumni',
       })
       setAlumniLoading(false)
       if (!res.ok) { setAlumniError(true); return }
@@ -102,17 +99,13 @@ export default function BlogSidebarWidgets({ postTitle, specialisations, quickFa
     setFormError(false)
 
     try {
-      const res = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: n,
-          phone: p,
-          program: formSpec || 'General',
-          sourcePage: typeof window !== 'undefined' ? window.location.pathname : 'blog',
-          source: 'blog_sidebar_details',
-          preferredUniversity: postTitle ? `Program Details: ${postTitle}` : 'Program Details',
-        }),
+      const res = await submitEnquiry({
+        name: n,
+        phone: p,
+        program: formSpec || 'General',
+        sourcePage: typeof window !== 'undefined' ? window.location.pathname : 'blog',
+        source: 'blog_sidebar_details',
+        preferredUniversity: postTitle ? `Program Details: ${postTitle}` : 'Program Details',
       })
       setFormLoading(false)
       if (!res.ok) { setFormError(true); trackEvent('form_error', { form_component: 'BlogSidebarWidgets' }); return }

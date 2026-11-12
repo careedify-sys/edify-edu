@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { createPortal } from 'react-dom'
 import { X, Loader2, Phone, User, Mail, MapPin, Copy, Check } from 'lucide-react'
 import type { Coupon } from '@/lib/coupons'
+import { submitEnquiry } from '@/lib/submitEnquiry'
 
 const STATES = [
   'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chhattisgarh',
@@ -156,17 +157,13 @@ function UnlockModal({
     setLoading(true)
 
     try {
-      const res = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: n, phone: p, email: em, state,
-          program: prog,
-          preferredUniversity: universityName,
-          universityId,
-          source: 'coupon_unlock',
-          timestamp: new Date().toISOString(),
-        }),
+      const res = await submitEnquiry({
+        name: n, phone: p, email: em, state,
+        program: prog,
+        preferredUniversity: universityName,
+        universityId,
+        source: 'coupon_unlock',
+        timestamp: new Date().toISOString(),
       })
       if (!res.ok) {
         setLoading(false)

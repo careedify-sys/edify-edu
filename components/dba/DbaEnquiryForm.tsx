@@ -13,6 +13,7 @@
 import { useRef, useState } from 'react'
 import { CheckCircle, Loader2 } from 'lucide-react'
 import { trackEvent } from '@/lib/analytics'
+import { submitEnquiry } from '@/lib/submitEnquiry'
 
 const QUALIFICATIONS = ["Bachelor's", "Master's", '2-year PGDM', 'Diploma']
 const EXPERIENCE = ['0-2', '3-4', '5-7', '8+']
@@ -76,31 +77,20 @@ export default function DbaEnquiryForm({ source, university, extraNote, id }: Pr
     ].join(' | ')
 
     try {
-      const res = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: n,
-          phone: p,
-          email: email.trim(),
-          program: 'DBA',
-          university: university || '',
-          sourcePage: typeof window !== 'undefined' ? window.location.pathname : '/online-dba',
-          source,
-          notes,
-        }),
-      })
+      const res = await submitEnquiry({
+        name: n,
+        phone: p,
+        email: email.trim(),
+        program: 'DBA',
+        university: university || '',
+        sourcePage: typeof window !== 'undefined' ? window.location.pathname : '/online-dba',
+        source,
+        notes,
+      }, { university: university || 'Not specified' })
       if (!res.ok) {
         setStatus('error')
         trackEvent('form_error', { form_component: 'DbaEnquiryForm' })
         return
-      }
-      const w = window as any
-      if (typeof w.gtag === 'function') {
-        w.gtag('event', 'generate_lead', { university: university || 'Not specified', program: 'DBA', source })
-      }
-      if (typeof w.fbq === 'function') {
-        w.fbq('track', 'Lead', { content_name: 'DBA', content_category: source })
       }
       trackEvent('form_submit', { form_component: 'DbaEnquiryForm' })
       setStatus('done')

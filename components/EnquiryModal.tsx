@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import { X, Send, MessageCircle, CheckCircle, Loader2, Mail, User, BookOpen, Building2, Tag } from 'lucide-react'
 import { trackEvent } from '@/lib/analytics'
+import { submitEnquiry } from '@/lib/submitEnquiry'
 
 interface EnquiryModalProps {
   isOpen: boolean
@@ -107,32 +108,20 @@ export default function EnquiryModal({
     const sourceFinal = sourcePage || (typeof window !== 'undefined' ? window.location.pathname : 'website')
 
     try {
-      const res = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: form.name,
-          phone: form.phone,
-          email: form.email,
-          program: form.program,
-          preferredUniversity: form.preferredUniversity || universityName || 'Not specified',
-          sourcePage: sourceFinal,
-          source: sourcePage || 'enquiry_modal',
-          ...(form.couponCode.trim() ? { couponCode: form.couponCode.trim().toUpperCase() } : {}),
-        }),
-      })
+      const res = await submitEnquiry({
+        name: form.name,
+        phone: form.phone,
+        email: form.email,
+        program: form.program,
+        preferredUniversity: form.preferredUniversity || universityName || 'Not specified',
+        sourcePage: sourceFinal,
+        source: sourcePage || 'enquiry_modal',
+        ...(form.couponCode.trim() ? { couponCode: form.couponCode.trim().toUpperCase() } : {}),
+      }, { university: form.preferredUniversity || universityName || 'Not specified' })
       if (!res.ok) {
         setStep('error')
         trackEvent('form_error', { form_component: 'EnquiryModal' })
         return
-      }
-
-      if (typeof window !== 'undefined' && (window as any).gtag) {
-        ;(window as any).gtag('event', 'generate_lead', {
-          university: form.preferredUniversity || universityName || 'Not specified',
-          program: form.program,
-          source: 'enquiry_form',
-        })
       }
 
       trackEvent('form_submit', { form_component: 'EnquiryModal' })

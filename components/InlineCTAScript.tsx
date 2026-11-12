@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
+import { submitEnquiry } from '@/lib/submitEnquiry'
 
 export default function InlineCTAScript() {
   useEffect(() => {
@@ -31,18 +32,14 @@ export default function InlineCTAScript() {
       }
 
       try {
-        const res = await fetch('/api/enquiry', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            name: name,
-            phone: phone,
-            email: email || '',
-            sourcePage: window.location.pathname,
-            source: 'blog_inline',
-            preferredUniversity: 'Inline Blog CTA: ' + source,
-          }),
-        })
+        const res = await submitEnquiry({
+          name: name,
+          phone: phone,
+          email: email || '',
+          sourcePage: window.location.pathname,
+          source: 'blog_inline',
+          preferredUniversity: 'Inline Blog CTA: ' + source,
+        }, { form_type: 'inline_blog_cta', cta_slot: source })
         if (!res.ok) throw new Error('API error')
       } catch (e) {
         if (btn) { btn.textContent = 'Try Again'; btn.disabled = false }
@@ -69,13 +66,6 @@ export default function InlineCTAScript() {
       const successEl = document.getElementById('cta-' + source + '-success')
       if (formEl) formEl.style.display = 'none'
       if (successEl) successEl.style.display = 'block'
-
-      if (typeof (window as any).gtag === 'function') {
-        (window as any).gtag('event', 'generate_lead', {
-          source: source,
-          form_type: 'inline_blog_cta',
-        })
-      }
     }
   }, [])
 

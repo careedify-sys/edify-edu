@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Lock, Unlock, Shield, Tag, ChevronRight } from 'lucide-react'
+import { submitEnquiry } from '@/lib/submitEnquiry'
 
 interface GatedContentProps {
   universityName: string
@@ -47,14 +48,10 @@ export default function GatedContent({
     if (Object.keys(e).length) { setErrors(e); return }
     setSubmitting(true); setErrors({}); setSubmitError(false)
     try {
-      const res = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...form, university: universityName,
-          program: programName, source: 'gated_scholarship',
-          sourcePage: typeof window !== 'undefined' ? window.location.pathname : '',
-        }),
+      const res = await submitEnquiry({
+        ...form, university: universityName,
+        program: programName, source: 'gated_scholarship',
+        sourcePage: typeof window !== 'undefined' ? window.location.pathname : '',
       })
       if (!res.ok) { setSubmitting(false); setSubmitError(true); return }
       setSubmitting(false)

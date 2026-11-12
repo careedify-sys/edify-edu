@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { submitEnquiry } from '@/lib/submitEnquiry'
 
 interface Props {
   universityName: string
@@ -20,16 +21,12 @@ export function VerifyLeadForm({ universityName, universitySlug }: Props) {
     setStatus('sending')
 
     try {
-      const res = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: n,
-          phone: p,
-          preferredUniversity: universityName,
-          sourcePage: `/verify/${universitySlug}`,
-          source: 'verify_page_form',
-        }),
+      const res = await submitEnquiry({
+        name: n,
+        phone: p,
+        preferredUniversity: universityName,
+        sourcePage: `/verify/${universitySlug}`,
+        source: 'verify_page_form',
       })
       if (!res.ok) { setStatus('error'); return }
       setStatus('done')

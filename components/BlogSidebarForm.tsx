@@ -1,6 +1,7 @@
 'use client'
 import { useState, useId } from 'react'
 import { CheckCircle, Phone, User, BookOpen, MessageCircle } from 'lucide-react'
+import { submitEnquiry } from '@/lib/submitEnquiry'
 
 const WA_NUMBER = '917061285806'
 
@@ -33,17 +34,13 @@ export default function BlogSidebarForm({ postTitle, compact = false }: Props) {
 
     const sourcePage = typeof window !== 'undefined' ? window.location.pathname : 'blog'
     try {
-      const res = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: n,
-          phone: p,
-          program: program || 'General',
-          sourcePage,
-          source: 'blog_sidebar_form',
-          preferredUniversity: postTitle ? `Blog: ${postTitle}` : '',
-        }),
+      const res = await submitEnquiry({
+        name: n,
+        phone: p,
+        program: program || 'General',
+        sourcePage,
+        source: 'blog_sidebar_form',
+        preferredUniversity: postTitle ? `Blog: ${postTitle}` : '',
       })
       if (!res.ok) { setStatus('error'); return }
       setStatus('success')

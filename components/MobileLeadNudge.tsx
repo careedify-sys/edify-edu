@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { X, Phone, User, MessageCircle } from 'lucide-react'
+import { submitEnquiry } from '@/lib/submitEnquiry'
 
 const SESSION_KEY = 'edify_nudge_shown'
 const DISMISS_KEY = 'edify_nudge_dismissed'
@@ -116,25 +117,17 @@ export default function MobileLeadNudge() {
     setLoading(true)
 
     try {
-      const res = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: n,
-          phone: p,
-          program: context.program || undefined,
-          preferredUniversity: context.university || undefined,
-          sourcePage: window.location.pathname,
-          source: 'mobile_nudge',
-        }),
+      const res = await submitEnquiry({
+        name: n,
+        phone: p,
+        program: context.program || undefined,
+        preferredUniversity: context.university || undefined,
+        sourcePage: window.location.pathname,
+        source: 'mobile_nudge',
       })
       if (!res.ok) { setLoading(false); setSubmitError(true); return }
     } catch {
       setLoading(false); setSubmitError(true); return
-    }
-
-    if (typeof (window as any).gtag === 'function') {
-      (window as any).gtag('event', 'generate_lead', { source: 'mobile_nudge' })
     }
 
     setLoading(false)

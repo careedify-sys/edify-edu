@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useId } from 'react'
 import { CheckCircle, Loader2, Phone, User, Mail, MapPin } from 'lucide-react'
+import { submitEnquiry } from '@/lib/submitEnquiry'
 
 const PROGRAMS = ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'B.Com', 'MA', 'M.Com', 'MSc', 'DBA', 'Not sure yet']
 
@@ -65,22 +66,18 @@ export default function StickyLeadCard({ universityName, universityId, defaultPr
     setLoading(true)
 
     try {
-      const res = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: n,
-          phone: p,
-          email: em,
-          state,
-          program: program || defaultProgram || 'General',
-          preferredUniversity: universityName,
-          universityId,
-          notes: notes.trim() || undefined,
-          sourcePage: typeof window !== 'undefined' ? window.location.pathname : '',
-          source: 'sticky_card',
-          timestamp: new Date().toISOString(),
-        }),
+      const res = await submitEnquiry({
+        name: n,
+        phone: p,
+        email: em,
+        state,
+        program: program || defaultProgram || 'General',
+        preferredUniversity: universityName,
+        universityId,
+        notes: notes.trim() || undefined,
+        sourcePage: typeof window !== 'undefined' ? window.location.pathname : '',
+        source: 'sticky_card',
+        timestamp: new Date().toISOString(),
       })
       if (!res.ok) {
         setLoading(false)
