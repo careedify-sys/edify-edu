@@ -56,6 +56,7 @@ async function main() {
 
   const a = firstBySlug(head).bySlug
   const b = firstBySlug(next).bySlug
+  const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata' }).format(new Date())
   const stale: string[] = []
   let changed = 0
   for (const [slug, post] of b) {
@@ -63,11 +64,12 @@ async function main() {
     if (!prev) continue // a new post is dated by publishedAt
     if (contentText(prev) === contentText(post)) continue
     changed++
-    if ((prev.updatedAt ?? '') === (post.updatedAt ?? '')) stale.push(`${slug} (updatedAt still ${post.updatedAt ?? `unset, publishedAt ${post.publishedAt}`})`)
+    // A post already dated today (IST) is current: a second edit the same day
+    // cannot change the date, and blocking it would force a wrong one.
+    if ((prev.updatedAt ?? '') === (post.updatedAt ?? '') && post.updatedAt !== today) stale.push(`${slug} (updatedAt still ${post.updatedAt ?? `unset, publishedAt ${post.publishedAt}`})`)
   }
 
   if (stale.length) {
-    const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata' }).format(new Date())
     console.error(`check-blog-updated-at: ${stale.length} post(s) changed content without changing updatedAt:`)
     for (const s of stale) console.error('  ' + s)
     console.error(`Set updatedAt: "${today}" on each. Title, meta, H1, link-only and video edits do not need it.`)

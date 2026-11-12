@@ -1,5 +1,20 @@
 # Fix log
 
+## 2026-11-12 · Competitor names removed from two blog posts
+
+- **Why:** CLAUDE.md bars any citation of blacklisted competitors. Found while merging /best-online-mba-india: the
+  best-online-MBA post named CollegeVidya and Shiksha twice, and the MAHE BBA review named CollegeVidya, Shiksha and
+  Careers360. Rishi asked for them removed.
+- **What:** best-online-mba-colleges-india-2026: the FAQ sentence "Ranking by paid platforms like CollegeVidya or
+  Shiksha ..." deleted; the "Trusting paid comparison portals" mistake now says "Some comparison platforms" with no
+  names. mahe-online-bba-review-2026: the closing sentence about "competitor reviews on CollegeVidya, Shiksha,
+  Careers360" deleted. updatedAt bumped on both. Title, H1 and meta unchanged.
+- **Left alone:** five "Shiksha" hits that are fake-university names on the UGC list (Bhartiya Shiksha Parishad,
+  Sarva Bharatiya Shiksha Peeth). No competitor name remains in lib/blog.ts; app/admin (CMS, unused) not touched.
+- **Gate fix:** check-blog-updated-at blocked this commit because the best-online-MBA post was already dated
+  2026-11-12 from the morning's merge, so a second same-day edit could not change its updatedAt. The gate now also
+  accepts a post whose updatedAt is already today (IST).
+
 ## 2026-11-12 · Unsourced salary figures removed from MBA specialisation hubs
 
 - **Why:** every /programs/mba/{spec} hub printed "Salary: Rs 3-6 LPA" and "Rs 8-18 LPA" under its career cards, and
