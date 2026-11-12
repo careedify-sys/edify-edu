@@ -83,7 +83,16 @@ function toTenDigits(raw: string): string {
   return d.length > 10 ? d.slice(-10) : d
 }
 
-type Mode = 'auto' | 'link'
+type Mode = 'auto' | 'link' | 'nudge'
+type Variant = 'fees' | 'eligibility'
+
+// After a close, one quiet chip later in the visit with a different offer.
+const NUDGE_SHOWN_KEY = 'edify_nudge_shown' // session: at most one chip per visit
+const CLOSED_AT_KEY = 'edify_prompt_closed_at' // session: survives a full reload
+const NUDGE_DISMISS_KEY = 'edify_nudge_dismissed'
+const NUDGE_DELAY_MS = 60_000
+const NUDGE_DISMISS_DAYS = 14
+const QUALIFICATIONS = ['12th pass', 'Diploma', 'Graduate', 'Final-year student', 'Postgraduate']
 
 export default function LeadPrompt() {
   const [open, setOpen] = useState(false)
@@ -96,16 +105,22 @@ export default function LeadPrompt() {
   const [program, setProgram] = useState('')
   const [status, setStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle')
   const [phoneError, setPhoneError] = useState(false)
+  const [variant, setVariant] = useState<Variant>('fees')
+  const [qualification, setQualification] = useState('')
+  const [chip, setChip] = useState(false)
   const openRef = useRef(false)
   const nameRef = useRef<HTMLInputElement>(null)
+  const nudgeTimer = useRef<ReturnType<typeof setTimeout>>()
 
-  const show = useCallback((m: Mode) => {
+  const show = useCallback((m: Mode, v: Variant = 'fees') => {
     if (openRef.current) return
     openRef.current = true
+    setChip(false)
     const c = pageContext(window.location.pathname)
     setCtx(c)
     setProgram(p => p || c.program)
     setMode(m)
+    setVariant(v)
     setStatus(s => (s === 'done' ? 'done' : 'idle'))
     setOpen(true)
     store.set(SESSION_KEY, '1', true)
@@ -125,7 +140,8 @@ export default function LeadPrompt() {
       if (!(timeMet && scrollMet)) return
       if (document.body.style.overflow === 'hidden') return // another modal is open
       if (store.get(EXIT_POPUP_KEY, true)) return
-      show('auto')
+      // Someone who closed the fee-sheet form before gets the eligibility angle next visit.
+      show('auto', store.get(DISMISS_KEY) ? 'eligibility' : 'fees')
       cleanup()
     }
     const onScroll = () => {
@@ -163,11 +179,35 @@ export default function LeadPrompt() {
     return () => document.removeEventListener('click', onClick, true)
   }, [show])
 
+  const scheduleNudge = useCallback((delay: number) => {
+    if (store.get(NUDGE_SHOWN_KEY, true) || within(NUDGE_DISMISS_KEY, NUDGE_DISMISS_DAYS) || within(DONE_KEY, DONE_DAYS)) return
+    if (NO_AUTO_PATHS.test(window.location.pathname)) return
+    clearTimeout(nudgeTimer.current)
+    nudgeTimer.current = setTimeout(() => {
+      if (openRef.current || document.body.style.overflow === 'hidden') return
+      store.set(NUDGE_SHOWN_KEY, '1', true)
+      setChip(true)
+    }, Math.max(delay, 0))
+  }, [])
+
+  // A full reload after a close still gets the chip, on the original timetable.
+  useEffect(() => {
+    const at = parseInt(store.get(CLOSED_AT_KEY, true) || '', 10)
+    if (Number.isFinite(at)) scheduleNudge(NUDGE_DELAY_MS - (Date.now() - at))
+    return () => clearTimeout(nudgeTimer.current)
+  }, [scheduleNudge])
+
   const close = useCallback((remember: boolean) => {
     openRef.current = false
     setOpen(false)
-    if (remember && status !== 'done') store.set(DISMISS_KEY, String(Date.now()))
-  }, [status])
+    if (remember && status !== 'done') {
+      store.set(DISMISS_KEY, String(Date.now()))
+      if (mode !== 'nudge') {
+        store.set(CLOSED_AT_KEY, String(Date.now()), true)
+        scheduleNudge(NUDGE_DELAY_MS)
+      }
+    }
+  }, [status, mode, scheduleNudge])
 
   useEffect(() => {
     if (!open) return
@@ -203,7 +243,10 @@ export default function LeadPrompt() {
         program: program || undefined,
         preferredUniversity: ctx.university || undefined,
         sourcePage: window.location.pathname,
-        source: mode === 'link' ? 'lead_prompt_link' : 'lead_prompt_auto',
+        source: `lead_prompt_${mode}${variant === 'eligibility' ? '_eligibility' : ''}`,
+        notes: variant === 'eligibility'
+          ? `Eligibility check requested. Highest qualification: ${qualification || 'not given'}`
+          : undefined,
       })
       if (!res.ok) { setStatus('error'); return }
       setStatus('done')
@@ -213,10 +256,42 @@ export default function LeadPrompt() {
     }
   }
 
-  if (!open) return null
+  if (!open) {
+    if (!chip) return null
+    const c = pageContext(window.location.pathname)
+    const what = [c.university, c.program].filter(Boolean).join(' ') || 'an online degree'
+    return (
+      <div className="lp-chip" role="complementary" aria-label="Eligibility check">
+        <button className="lp-chip-main" onClick={() => show('nudge', 'eligibility')}>
+          <Check size={15} />
+          <span>Check if you&apos;re eligible for {what}. Free, 30 seconds</span>
+        </button>
+        <button
+          className="lp-chip-x" aria-label="Dismiss"
+          onClick={() => { setChip(false); store.set(NUDGE_DISMISS_KEY, String(Date.now())) }}
+        >
+          <X size={14} />
+        </button>
+        <style jsx global>{`
+          .lp-chip{position:fixed;left:12px;right:84px;bottom:calc(72px + env(safe-area-inset-bottom));z-index:290;
+            display:flex;align-items:center;background:#0f172a;color:#fff;border-radius:14px;
+            box-shadow:0 8px 24px rgba(15,23,42,.25);animation:lpUp .3s ease-out;font-family:var(--font-body), system-ui, sans-serif}
+          @media (min-width:1024px){.lp-chip{left:24px;right:auto;bottom:24px;max-width:420px}}
+          .lp-chip-main{flex:1;display:flex;align-items:center;gap:8px;border:0;background:none;color:inherit;
+            font:inherit;font-size:13.5px;font-weight:600;text-align:left;padding:12px 4px 12px 14px;cursor:pointer}
+          .lp-chip-main svg{color:#f97316;flex-shrink:0}
+          .lp-chip-x{border:0;background:none;color:#94a3b8;padding:12px;cursor:pointer;display:flex}
+          @keyframes lpUp{from{transform:translateY(24px)}to{transform:none}}
+        `}</style>
+      </div>
+    )
+  }
 
+  const elig = variant === 'eligibility'
   const subject = [ctx.university, program || ctx.program].filter(Boolean).join(' ')
-  const headline = subject ? `Get the latest ${subject} fee sheet` : 'Get the latest fee sheet for your course'
+  const headline = elig
+    ? (subject ? `Check if you're eligible for ${subject}` : 'Check your eligibility for an online degree')
+    : (subject ? `Get the latest ${subject} fee sheet` : 'Get the latest fee sheet for your course')
   const firstName = name.trim().split(' ')[0]
 
   return (
@@ -243,15 +318,27 @@ export default function LeadPrompt() {
           </div>
         ) : (
           <>
-            <div className="lp-eyebrow">Free · 2026 admissions</div>
+            <div className="lp-eyebrow">{elig ? 'Free check · 2026 admissions' : 'Free · 2026 admissions'}</div>
             <h2 id="lp-title" className="lp-h">{headline}</h2>
-            <p className="lp-sub">Sent to your WhatsApp, checked against the university&apos;s official portal.</p>
+            <p className="lp-sub">
+              {elig
+                ? 'A counsellor checks your profile against the university’s published entry rules and tells you on WhatsApp.'
+                : 'Sent to your WhatsApp, checked against the university’s official portal.'}
+            </p>
 
-            <ul className="lp-points">
-              <li><Check size={14} /> Current semester fees and EMI options</li>
-              <li><Check size={14} /> Scholarships or discounts open right now</li>
-              <li><Check size={14} /> One message, no repeated sales calls</li>
-            </ul>
+            {elig ? (
+              <ul className="lp-points">
+                <li><Check size={14} /> Minimum marks and work experience asked for</li>
+                <li><Check size={14} /> Whether your stream or degree counts</li>
+                <li><Check size={14} /> Fees and EMI options if you qualify</li>
+              </ul>
+            ) : (
+              <ul className="lp-points">
+                <li><Check size={14} /> Current semester fees and EMI options</li>
+                <li><Check size={14} /> Scholarships or discounts open right now</li>
+                <li><Check size={14} /> One message, no repeated sales calls</li>
+              </ul>
+            )}
 
             <form onSubmit={submit} className="lp-form" noValidate>
               <label className="lp-field">
@@ -289,6 +376,15 @@ export default function LeadPrompt() {
                   {PROGRAMS.map(([v, l]) => <option key={v} value={v}>{l}</option>)}
                 </select>
               </label>
+              {elig && (
+                <label className="lp-field">
+                  <span>Highest qualification</span>
+                  <select value={qualification} onChange={e => setQualification(e.target.value)}>
+                    <option value="">Select</option>
+                    {QUALIFICATIONS.map(q => <option key={q} value={q}>{q}</option>)}
+                  </select>
+                </label>
+              )}
 
               {status === 'error' && (
                 <p className="lp-err">
@@ -300,7 +396,7 @@ export default function LeadPrompt() {
               )}
 
               <button type="submit" className="lp-cta" disabled={status === 'sending'}>
-                {status === 'sending' ? 'Sending…' : 'Send me the fee sheet'}
+                {status === 'sending' ? 'Sending…' : elig ? 'Check my eligibility' : 'Send me the fee sheet'}
               </button>
             </form>
 
