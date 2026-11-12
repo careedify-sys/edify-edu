@@ -441,10 +441,11 @@ export async function POST(req: NextRequest) {
           .insert({ ...leadPayload, ...attr })
           .select('id')
           .single()
-        // PGRST204 = a column the API does not know. If the attribution
-        // migration has not been run yet, keep the lead and drop the
-        // attribution rather than losing both.
-        if (insErr && (insErr as { code?: string }).code === 'PGRST204') {
+        // PGRST204 (PostgREST) or 42703 (Postgres) = a column that does not
+        // exist. If the attribution migration has not been run yet, keep the
+        // lead and drop the attribution rather than losing both.
+        const insCode = (insErr as { code?: string } | null)?.code
+        if (insErr && (insCode === 'PGRST204' || insCode === '42703')) {
           console.error('Attribution columns missing, run the lead_attribution migration:', insErr.message)
           ;({ data: inserted, error: insErr } = await sb
             .from('leads')
