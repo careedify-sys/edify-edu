@@ -18,7 +18,7 @@
 //                                         EXCEPTION: RESCUED_PROGRAM_PATHS are force-added
 
 import { MetadataRoute } from 'next'
-import { readFileSync, statSync } from 'fs'
+import { readFileSync } from 'fs'
 import { join } from 'path'
 import { getPublishedPosts } from '@/lib/blog'
 import { GUIDES } from '@/lib/guides'
@@ -57,19 +57,25 @@ function loadVerifySlugs(): string[] {
   }
 }
 
-// Returns undefined, not today's date, when there is no content file to date
-// the page by. Google's guidance is to omit lastmod rather than supply one it
-// can show to be wrong, and it says an inaccurate lastmod can make it ignore
-// the value across the whole site. Every URL here used to carry the build
-// timestamp, which would have devalued the dates that ARE real: the content
-// files below and the blog's publishedAt.
-function getContentLastMod(...parts: string[]): Date | undefined {
-  const filePath = join(process.cwd(), 'lib', 'data', 'page-content', `${parts.join('-')}.json`)
-  try {
-    return statSync(filePath).mtime
-  } catch {
-    return undefined
+// lastmod for university hub and spec URLs comes from data/sitemap-lastmod.json,
+// built from git history by scripts/build-sitemap-lastmod.mjs and kept current
+// by its --check mode in .husky/pre-commit. It used to read statSync().mtime of
+// the page-content JSON, but Vercel builds from a fresh checkout, so every file
+// carried the build time: on 2026-11-12 all 330 dated university URLs said
+// 2026-11-12. Google says an inaccurate lastmod can make it ignore lastmod
+// across the whole site. A URL with no manifest entry gets no lastmod, which is
+// correct; never fall back to today.
+let LASTMOD: Record<string, string> | null = null
+function getContentLastMod(path: string): string | undefined {
+  if (LASTMOD === null) {
+    try {
+      LASTMOD = JSON.parse(readFileSync(join(process.cwd(), 'data', 'sitemap-lastmod.json'), 'utf8')) as Record<string, string>
+    } catch {
+      LASTMOD = {}
+    }
   }
+  const d = LASTMOD[path]
+  return d || undefined
 }
 
 
@@ -171,16 +177,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .map(path => {
       const { priority, freq } = urlMeta(path)
 
-      // Date the page by its content file when one exists, for hubs and for
-      // specialisation pages alike. Was MBA hubs only, so everything else
-      // carried the build time.
-      const hub = path.match(/^\/universities\/([^/]+)\/([^/]+)$/)
-      const spec = path.match(/^\/universities\/([^/]+)\/([^/]+)\/([^/]+)$/)
-      const lastModified = spec
-        ? getContentLastMod(spec[1], spec[2], spec[3])
-        : hub
-          ? getContentLastMod(hub[1], hub[2])
-          : undefined
+      const lastModified = getContentLastMod(path)
 
       return {
         url: `${BASE}${path}`,

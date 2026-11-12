@@ -1,5 +1,22 @@
 # Fix log
 
+## 2026-11-12 · Sitemap lastmod for university URLs from git history, not file mtime
+
+- **Why:** the live sitemap gave all 330 dated university URLs a lastmod of 2026-11-12, the build day, while no
+  page-content JSON changed that day. app/sitemap.ts read statSync().mtime, and Vercel's fresh checkout stamps every
+  file with the checkout time. Google says an inaccurate lastmod can make it ignore lastmod site-wide, which would
+  also devalue the real blog dates.
+- **What:** scripts/build-sitemap-lastmod.mjs writes data/sitemap-lastmod.json from one `git log --name-only` over
+  lib/data/page-content: each URL gets the date of the last commit touching its JSON. MBA hubs where getHubAnswers()
+  returns sections (the call UniProgramBody makes) get max(JSON date, 2026-11-04), the QuickAnswers rollout day; 80
+  hubs, 63 lifted. URLs with neither get no entry. app/sitemap.ts reads the manifest; the statSync path is gone.
+  377 entries, 7 distinct dates (2026-08-24 to 2026-11-05).
+- **Gate:** `--check` in .husky/pre-commit dates the URL of any staged page-content JSON to today (IST) and re-stages
+  the manifest, then fails on a future date or a URL the sitemap does not emit. Probed: an injected 2027 date and a
+  fake URL both failed; staging the Amity MBA JSON moved its entry to today.
+- **Trap:** the build refuses a shallow clone (dates would all collapse to the graft commit). If a URL leaves the
+  sitemap, the check fails until the manifest is rebuilt.
+
 ## 2026-11-11 · Course schema on /online-dba pages: offers and hasCourseInstance
 
 - **Why:** Semrush flagged all 6 DBA programme pages for invalid Course structured data, with two required fields

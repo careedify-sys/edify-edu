@@ -138,6 +138,15 @@ npx tsx scripts/build-verify-slug-map.mjs --check || exit 1
 echo "pre-commit: check-page-content-json"
 node scripts/check-page-content-json.mjs || exit 1
 
+# Sitemap lastmod for university hub and spec URLs comes from
+# data/sitemap-lastmod.json (git commit dates), not file mtime: Vercel's fresh
+# checkout stamped all 330 dated URLs with the build day on 2026-11-12. Dates any
+# staged page-content JSON's URL to today (IST) and re-stages the manifest; fails
+# on a future date or a URL the sitemap does not emit.
+# Rebuild from history: npx tsx scripts/build-sitemap-lastmod.mjs
+echo "pre-commit: check-sitemap-lastmod"
+npx tsx scripts/build-sitemap-lastmod.mjs --check || exit 1
+
 echo "pre-commit: check-duplicate-slugs"
 npx tsx scripts/check-duplicate-slugs.mjs || exit 1
 
