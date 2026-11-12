@@ -20,7 +20,7 @@
 export const pageKeywords: Record<string, string[]> = {
 
   // ── Blog posts (7) ──────────────────────────────────────────────────────────
-  'best-online-mba-india': [
+  'best-online-mba-colleges-india-2026': [
     'best online MBA India 2026',
     'UGC approved online MBA',
     'online MBA ranking India',

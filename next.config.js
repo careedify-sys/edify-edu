@@ -719,6 +719,15 @@ const nextConfig = {
       { source: '/universities/lovely-professional-university-online/mcom/commerce--finance-focus-no-separate-sub-speciali', destination: '/universities/lovely-professional-university-online/mcom', permanent: true },
       { source: '/universities/jain-university-online/mcom/accounting--finance', destination: '/universities/jain-university-online/mcom', permanent: true },
 
+      // ── Best-online-MBA consolidation (2026-11-12) ───────────────────────
+      // Two pages split "best online MBA": the blog post averaged position 5.91
+      // (2,844 impressions) and the route 30.2 (5,618), 11 Aug to 10 Nov; the
+      // blog was named the primary for this intent on 5 Nov. The route's one
+      // section the blog lacked, the full NIRF Management order, now sits in
+      // the post. To undo: delete this rule and restore app/best-online-mba-india
+      // and lib/best-mba-ranking.ts from the parent of the commit adding this.
+      { source: '/best-online-mba-india', destination: '/blog/best-online-mba-colleges-india-2026', permanent: true },
+
       // ── /blog/is-{uni}-fake-or-legit → /verify/{uni}  (2026-09-14) ──────
       // REVERTED 2026-10-07. The 14 entries that were here are gone and all
       // 14 posts are status:'published' again. The reasoning below is kept

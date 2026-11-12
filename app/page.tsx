@@ -557,7 +557,7 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { icon:'🏆', title:'Best Online MBA in India 2026', desc:'Top 10 online MBAs ranked by NIRF & NAAC with fees, specializations, and honest picks by use case.', href:'/best-online-mba-india' },
+              { icon:'🏆', title:'Best Online MBA in India 2026', desc:'Top 15 online MBAs ranked by NIRF & NAAC with fees, specializations, and honest picks by use case.', href:'/blog/best-online-mba-colleges-india-2026' },
               { icon:'🏛️', title:'Is Online Degree Valid in India?', desc:'UGC 2020 notification, government job eligibility, what DEB approval means.', href:'/guides/is-online-degree-valid-india' },
               { icon:'📋', title:'Online MBA for Government Jobs', desc:'Which online MBAs count for UPSC, SSC, banking and state PSC exams.', href:'/guides/online-mba-for-government-jobs' },
               { icon:'🔍', title:'How to Check UGC DEB Approval', desc:'Step-by-step: verify any university\'s online degree approval in 2 minutes.', href:'/guides/how-to-check-ugc-deb-approval' },

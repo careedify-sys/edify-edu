@@ -1,5 +1,29 @@
 # Fix log
 
+## 2026-11-12 · /best-online-mba-india merged into the best-online-MBA blog post
+
+- **Why:** two pages split "best online MBA". /blog/best-online-mba-colleges-india-2026 averaged position 5.91 (2,844
+  impressions), /best-online-mba-india 30.2 (5,618), 11 Aug to 10 Nov; AI-feature impressions 2,883 vs 2,563 (18 May
+  to 2 Nov). The blog was named the primary for this intent on 5 Nov.
+- **Moved:** the one thing the route had and the blog lacked: the full NIRF Management order of all 23 online MBA
+  universities holding a Management rank (of 121 offering an online MBA), with the University rank beside it, the
+  count sitting 20+ places apart, and the strongest across both tables. Generated once from lib/best-mba-ranking.ts,
+  so no rank was typed by hand. Ranks are attributed to the parent institution: Amity's Management 49 to Amity
+  University Uttar Pradesh, Noida; Symbiosis's 11 to Symbiosis International (Deemed University), Pune (both names
+  from lib/data.ts). New H2 "Full NIRF Management Order of All Ranked Online MBAs" before the specialisation section.
+  Title, H1, meta unchanged; updatedAt 2026-11-12.
+- **Left behind, and why:** the NAAC column (Supabase gate shows Chandigarh's cycle expired 2026-09-09; the post says
+  NAAC A+, so it would contradict the post), the fee column and budget bands (fees would need MATCH; the post has its
+  own fee tiers), the "no audited online placement data" warning (contradicts the post's placements FAQ, which quotes
+  package ranges), use-case picks, specialisation links, how-to-choose steps and FAQs (the post covers each).
+- **Redirect:** permanent /best-online-mba-india -> the post in next.config.js. Removed from app/sitemap.ts (it was a
+  hardcoded entry; not in static-urls.js or valid-urls.json). app/best-online-mba-india/ and lib/best-mba-ranking.ts
+  deleted (nothing else imported it). The table is now static: refresh it by hand when NIRF publishes.
+- **Links repointed straight to the post:** Footer, homepage card (its "Top 10" blurb corrected to "Top 15", the post's
+  own count), four in-body links in lib/blog.ts, the page-keywords key, and scripts/live-verify-production.mjs.
+  mba-after-engineering-india-2026 already linked the post, so its duplicate card was removed and updatedAt bumped.
+- **Checks:** check-gsc-404s, check-sitemap-vs-404, check-nirf-category, check-blog-fees, check-university-count pass.
+
 ## 2026-11-12 · /fees H1 now matches its title
 
 - **Why:** the title read "Online MBA & Degree Fees 2026: 125 Universities Compared" while the H1 still said "Online

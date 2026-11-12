@@ -4,7 +4,7 @@
 //
 // Priority tiers (post-indexation-cleanup 2026-05-25, crawl-fix 2026-06-10):
 //   1.0  /                               (homepage)
-//   0.92 /universities, /programs, /compare, /best-online-mba-india
+//   0.92 /universities, /programs, /compare
 //   0.90 /programs/{prog}               (program hub pages — 100% indexed)
 //   0.85 /blog/{slug}, /coupons/{slug}, /fees
 //   0.80 /universities/{slug}            (uni hubs — 64.9% indexed, need enrichment)
@@ -194,7 +194,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/tools/emi-calculator`,    changeFrequency: 'monthly', priority: 0.78 },
     { url: `${BASE}/tools/cgpa-calculator`,   changeFrequency: 'monthly', priority: 0.75 },
     { url: `${BASE}/tools/percentage-to-gpa`, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/best-online-mba-india`,   changeFrequency: 'monthly', priority: 0.90 },
     // CGPA value pages: long-tail "X.X cgpa in percentage" search targets.
     ...CGPA_VALUES.map(entry => ({
       url: `${BASE}/tools/cgpa-calculator/${entry.slug}`,

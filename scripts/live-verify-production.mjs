@@ -117,7 +117,7 @@ await pool(dests, async (d) => {
 // ── 5. Core pages ────────────────────────────────────────────────────────────
 const core = ['/', '/universities', '/programs', '/compare', '/fees', '/blog', '/guides',
   '/tools', '/coupons', '/verify', '/contact', '/about', '/privacy-policy',
-  '/best-online-mba-india', '/sitemap.xml', '/robots.txt',
+  '/blog/best-online-mba-colleges-india-2026', '/sitemap.xml', '/robots.txt',
   '/tools/emi-calculator', '/tools/cgpa-calculator', '/tools/percentage-to-gpa']
 console.log(`5. core pages (${core.length}) — expect 200`)
 await pool(core, async (u) => {

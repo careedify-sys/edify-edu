@@ -99,7 +99,7 @@ export default function Footer() {
           <div>
             <h4 className="text-xs font-bold uppercase tracking-widest mb-5 text-amber">Guides</h4>
             {[
-              { label:'Best Online MBA in India 2026',         href:'/best-online-mba-india' },
+              { label:'Best Online MBA in India 2026',         href:'/blog/best-online-mba-colleges-india-2026' },
             { label:'Is Online Degree Valid in India?',     href:'/guides/is-online-degree-valid-india' },
               { label:'Online MBA for Government Jobs',        href:'/guides/online-mba-for-government-jobs' },
               { label:'Online MBA vs Distance MBA',           href:'/guides/online-mba-vs-distance-mba' },

@@ -5076,7 +5076,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>A Few Universities Worth Looking At by Budget</h2>
 
-<p>This isn't an endorsement of any particular program, it's a starting point for your own research. For a fully ranked, data-verified view, see <a href="/best-online-mba-india" class="ilink">our curated MBA comparison guide</a> with NAAC, NIRF, and fee data across all major programmes.</p>
+<p>This isn't an endorsement of any particular program, it's a starting point for your own research. For a fully ranked, data-verified view, see <a href="/blog/best-online-mba-colleges-india-2026" class="ilink">our curated MBA comparison guide</a> with NAAC, NIRF, and fee data across all major programmes.</p>
 
 <table>
   <thead>
@@ -5322,7 +5322,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Brand and network:</strong> the costlier programmes buy stronger alumni networks, which matter in some industries.</li>
 </ul>
 
-<p>For a closer look at one budget option, read our <a href="/blog/jamia-hamdard-mba-2026">Jamia Hamdard online MBA review</a>. For a ranked view built from public data, see the <a href="/best-online-mba-india">best online MBA comparison</a>. Edify compares public UGC/NAAC/NIRF data, no paid rankings.</p>
+<p>For a closer look at one budget option, read our <a href="/blog/jamia-hamdard-mba-2026">Jamia Hamdard online MBA review</a>. For a ranked view built from public data, see the <a href="/blog/best-online-mba-colleges-india-2026">best online MBA comparison</a>. Edify compares public UGC/NAAC/NIRF data, no paid rankings.</p>
 
     `,
   },
@@ -6988,7 +6988,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Career After MBA for Working Professionals</h2>
 
-<p>Working professionals form the largest group enrolling in online MBA programmes. Before choosing a programme, it helps to <a href="/best-online-mba-india" class="ilink">compare online MBA programs</a> across verified NAAC, NIRF, and fee data on EdifyEdu. Here's what typically happens to their careers.</p>
+<p>Working professionals form the largest group enrolling in online MBA programmes. Before choosing a programme, it helps to <a href="/blog/best-online-mba-colleges-india-2026" class="ilink">compare online MBA programs</a> across verified NAAC, NIRF, and fee data on EdifyEdu. Here's what typically happens to their careers.</p>
 
 <p><strong>Year 1-2 (during MBA):</strong> Most professionals stay in their current job and apply MBA concepts immediately. Some get promoted during the programme itself based on improved skill application.</p>
 
@@ -9991,7 +9991,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <a class="il-card" href="/blog/mba-after-bca-is-it-good-career-2026">MBA After BCA Path</a>
   <a class="il-card" href="/blog/data-science-salary-india-2026-scope-jobs">Data Science Salary 2026</a>
   <a class="il-card" href="/blog/affordable-online-mba-india-2026">Affordable Online MBA</a>
-  <a class="il-card" href="/best-online-mba-india">Compare online MBA programs for science graduates</a>
+  <a class="il-card" href="/blog/best-online-mba-colleges-india-2026">Compare online MBA programs for science graduates</a>
 </div>`,
   },
 
@@ -12938,7 +12938,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-after-engineering-india-2026',
-    updatedAt: "2026-11-04",
+    updatedAt: "2026-11-12",
     title: 'MBA After Engineering India 2026: Worth It? Best Specs',
     seoTitle: 'MBA After Engineering India 2026: Worth It? Best Specialisations',
     metaDescription: 'MBA after engineering in India 2026: is it worth it, best specialisations for engineers, salary jump, and top colleges to consider.',
@@ -13152,7 +13152,6 @@ export const BLOG_POSTS: BlogPost[] = [
   <a href="/programs/mba/data-science-analytics" class="il-card"><div class="il-uni">SPEC</div><div class="il-title">MBA Data Science</div><div class="il-sub">Top programs and fees</div></a>
   <a href="/programs/mba/operations-management" class="il-card"><div class="il-uni">SPEC</div><div class="il-title">MBA Operations</div><div class="il-sub">Best for engineers</div></a>
   <a href="/blog/online-mba-salary-india-2026" class="il-card"><div class="il-uni">SALARY</div><div class="il-title">Online MBA Salary Guide</div><div class="il-sub">2026 data</div></a>
-  <a href="/best-online-mba-india" class="il-card"><div class="il-uni">TOP</div><div class="il-title">Best Online MBA India</div><div class="il-sub">Best online MBA options for engineers</div></a>
 </div>
 </div>
     `,
@@ -36302,7 +36301,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'best-online-mba-colleges-india-2026',
-    updatedAt: "2026-11-04",
+    updatedAt: "2026-11-12",
     title: 'Best Online MBA Colleges in India 2026: Top 15 UGC-DEB Ranked',
     seoTitle: 'Best Online MBA Colleges in India 2026: Top 15 NIRF Ranked',
     metaDescription: 'Best online MBA colleges in India 2026: top 15 UGC-DEB universities ranked by NIRF, NAAC, fees ₹66K to ₹3.15L. Honest comparison, zero commission.',
@@ -36501,6 +36500,50 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <p>NAAC A++, government public university brand. The cheapest credible UGC-DEB online MBA in India. The programme has 4 specialisation tracks (Banking and Finance, Marketing, HR, Operations). Best fit for cost-conscious working professionals who value the government university brand. The trade-off is fewer specialisations and a more bureaucratic admission process.</p>
 
 <div class="ilink">Delhi NCR professionals comparing budget options should also read the <a href="/blog/jamia-hamdard-mba-2026" class="ilink">Jamia Hamdard MBA review</a>. NAAC A+, Rs 1.03 lakh, with a healthcare management edge at a fee no other A+ accredited online MBA matches in that region.</div>
+
+<h2>Full NIRF Management Order of All Ranked Online MBAs</h2>
+
+<p>The Top 15 above weighs six criteria at once. This table isolates one of them: NIRF's Management category, the table that ranks management schools rather than whole institutions.</p>
+
+<p>It lists every university in our database that offers an online MBA and holds a Management placement, best rank first. That is 23 of the 121 online MBA universities we track. The other 98 hold no Management rank, which is a gap in the data rather than a verdict on them.</p>
+
+<div class="callout-key"><strong>Read each rank as the parent university's.</strong> NIRF ranks the institution, not its online arm. Amity's Management #49 belongs to Amity University Uttar Pradesh, Noida, and Symbiosis's Management #11 belongs to Symbiosis International (Deemed University), Pune.</div>
+
+<div style="overflow-x:auto;margin:1.5rem 0">
+<table>
+<thead><tr><th>#</th><th>Institution holding the rank</th><th>NIRF Management</th><th>NIRF University</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Symbiosis International (Deemed University), Pune</td><td>Management #11</td><td>University #24</td></tr>
+<tr><td>2</td><td>Indian Institute of Foreign Trade (IIFT)</td><td>Management #17</td><td>Not ranked in University</td></tr>
+<tr><td>3</td><td>NMIMS (Narsee Monjee Institute of Management Studies)</td><td>Management #24</td><td>University #52</td></tr>
+<tr><td>4</td><td>Amrita Vishwa Vidyapeetham</td><td>Management #26</td><td>University #8</td></tr>
+<tr><td>5</td><td>Jamia Millia Islamia (JMI)</td><td>Management #28</td><td>University #4</td></tr>
+<tr><td>6</td><td>Chandigarh University</td><td>Management #32</td><td>University #19</td></tr>
+<tr><td>7</td><td>University of Petroleum &amp; Energy Studies (UPES)</td><td>Management #36</td><td>University #45</td></tr>
+<tr><td>8</td><td>Manipal Academy of Higher Education (MAHE)</td><td>Management #39</td><td>University #3</td></tr>
+<tr><td>9</td><td>Lovely Professional University</td><td>Management #44</td><td>University #31</td></tr>
+<tr><td>10</td><td>ICFAI Foundation for Higher Education</td><td>Management #46</td><td>Not ranked in University</td></tr>
+<tr><td>11</td><td>Amity University Uttar Pradesh, Noida</td><td>Management #49</td><td>University #22</td></tr>
+<tr><td>12</td><td>Graphic Era University</td><td>Management #52</td><td>University #48</td></tr>
+<tr><td>13</td><td>SRM Institute of Science and Technology</td><td>Management #56</td><td>University #11</td></tr>
+<tr><td>14</td><td>Aligarh Muslim University</td><td>Management #69</td><td>University #10</td></tr>
+<tr><td>15</td><td>Koneru Lakshmaiah Education Foundation (KL University)</td><td>Management #70</td><td>University #26</td></tr>
+<tr><td>16</td><td>Alliance University</td><td>Management #71</td><td>Not ranked in University</td></tr>
+<tr><td>17</td><td>JAIN (Deemed-to-be University)</td><td>Management #73</td><td>University #62</td></tr>
+<tr><td>18</td><td>Chitkara University</td><td>Management #78</td><td>University #78</td></tr>
+<tr><td>19</td><td>Manipal University Jaipur (MUJ)</td><td>Management #81</td><td>University #58</td></tr>
+<tr><td>20</td><td>Jamia Hamdard</td><td>Management #87</td><td>University #47</td></tr>
+<tr><td>21</td><td>Anna University</td><td>Management #88</td><td>University #20</td></tr>
+<tr><td>22</td><td>Birla Institute of Technology (BIT) Mesra</td><td>Management #97</td><td>University #92</td></tr>
+<tr><td>23</td><td>University of Lucknow</td><td>Management #100</td><td>University #98</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>The two NIRF tables disagree more than most lists admit. 10 of these 23 universities sit at least 20 places apart between the Management and University tables. Symbiosis International (Deemed University), Pune leads on Management at #11 but ranks #24 in the University category.</p>
+
+<p>Taken across both tables at once, Jamia Millia Islamia (JMI) is the strongest: Management #28 and University #4. When anyone quotes you a NIRF rank, ask which category it comes from, then check it yourself on <a href="https://nirfindia.org" target="_blank" rel="noopener">nirfindia.org</a>.</p>
+
 
 <h2>Best Online MBA Programs India by Specialisation Strength</h2>
 
