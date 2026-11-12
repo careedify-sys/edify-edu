@@ -1,5 +1,14 @@
 # Fix log
 
+## 2026-11-12 · /fees H1 now matches its title
+
+- **Why:** the title read "Online MBA & Degree Fees 2026: 125 Universities Compared" while the H1 still said "Online
+  University Fees Comparison 2026". The page sits at position 12.08 (2,185 impressions, 11 Aug to 10 Nov) and
+  "online mba fees" gets 3,600 searches a month; the H1 did not contain the query.
+- **What:** app/fees/page.tsx H1 is built from the same `year` and `priced.length` as the title. No other copy changed;
+  the WebPage/ItemList schema names were left alone.
+- **Checks:** check-hub-blog-title-collision and check-university-count pass.
+
 ## 2026-11-12 · Blog updatedAt backfilled from git history; gate added
 
 - **Why:** updatedAt feeds both sitemap lastmod and Article dateModified, and nobody bumped it. The BITS Pilani review

@@ -173,7 +173,7 @@ export default function FeesPage() {
         <div className="bg-white border-b border-border">
           <div className="max-w-7xl mx-auto px-4 py-8 md:py-10">
             <h1 className="font-display text-2xl md:text-3xl font-bold text-navy mb-2">
-              Online University Fees Comparison {year}
+              Online MBA &amp; Degree Fees {year}: {priced.length} Universities Compared
             </h1>
             <p className="text-ink-2 text-sm md:text-base max-w-2xl">
               Total fee and EMI for <strong>{priced.length}+</strong> UGC-DEB approved online degrees.
