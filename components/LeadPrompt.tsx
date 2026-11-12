@@ -73,6 +73,16 @@ function pageContext(path: string): { university: string; program: string } {
   return { university, program }
 }
 
+/**
+ * Browser autofill and paste give "+91 98765 43210", "09876543210" or
+ * "919876543210". Keep the last 10 digits once there are more than 10, so the
+ * country code or trunk 0 is dropped instead of the end of the number.
+ */
+function toTenDigits(raw: string): string {
+  const d = raw.replace(/\D/g, '')
+  return d.length > 10 ? d.slice(-10) : d
+}
+
 type Mode = 'auto' | 'link'
 
 export default function LeadPrompt() {
@@ -81,6 +91,8 @@ export default function LeadPrompt() {
   const [ctx, setCtx] = useState({ university: '', program: '' })
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
+  const [email, setEmail] = useState('')
+  const [emailError, setEmailError] = useState(false)
   const [program, setProgram] = useState('')
   const [status, setStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle')
   const [phoneError, setPhoneError] = useState(false)
@@ -179,12 +191,15 @@ export default function LeadPrompt() {
     const n = name.trim()
     const p = phone.replace(/\D/g, '').slice(-10)
     if (!/^[6-9]\d{9}$/.test(p)) { setPhoneError(true); return }
+    const em = email.trim()
+    if (em && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) { setEmailError(true); return }
     if (!n) return
     setStatus('sending')
     try {
       const res = await submitEnquiry({
         name: n,
         phone: p,
+        email: em || undefined,
         program: program || undefined,
         preferredUniversity: ctx.university || undefined,
         sourcePage: window.location.pathname,
@@ -242,7 +257,7 @@ export default function LeadPrompt() {
               <label className="lp-field">
                 <span>Your name</span>
                 <input
-                  ref={nameRef} type="text" autoComplete="name" required
+                  ref={nameRef} type="text" name="name" autoComplete="name" required
                   value={name} onChange={e => setName(e.target.value)} placeholder="e.g. Priya Sharma"
                 />
               </label>
@@ -251,12 +266,21 @@ export default function LeadPrompt() {
                 <div className="lp-phone">
                   <em>+91</em>
                   <input
-                    type="tel" inputMode="numeric" autoComplete="tel-national" required maxLength={10}
+                    type="tel" name="phone" inputMode="tel" autoComplete="tel" required
                     value={phone} placeholder="10-digit mobile"
-                    onChange={e => { setPhone(e.target.value.replace(/\D/g, '').slice(0, 10)); setPhoneError(false) }}
+                    onChange={e => { setPhone(toTenDigits(e.target.value)); setPhoneError(false) }}
                   />
                 </div>
                 {phoneError && <small>Enter a 10-digit Indian mobile number</small>}
+              </label>
+              <label className={`lp-field${emailError ? ' lp-bad' : ''}`}>
+                <span>Email <i>(optional, for a copy)</i></span>
+                <input
+                  type="email" name="email" inputMode="email" autoComplete="email"
+                  value={email} placeholder="you@example.com"
+                  onChange={e => { setEmail(e.target.value); setEmailError(false) }}
+                />
+                {emailError && <small>Check the email address, or leave it blank</small>}
               </label>
               <label className="lp-field">
                 <span>Course</span>
@@ -320,7 +344,8 @@ export default function LeadPrompt() {
         .lp-phone em{font-style:normal;font-size:15px;font-weight:600;color:#64748b;padding:11px 10px;background:#f8fafc;
           border-right:1px solid #e2e8f0}
         .lp-phone input{border:0;border-radius:0;box-shadow:none !important}
-        .lp-bad .lp-phone{border-color:#ef4444}
+        .lp-bad .lp-phone,.lp-bad>input{border-color:#ef4444}
+        .lp-field>span i{font-style:normal;font-weight:400;color:#94a3b8}
         .lp-field small{font-size:12px;color:#ef4444}
         .lp-cta{margin-top:4px;width:100%;border:0;border-radius:12px;padding:14px;font:inherit;font-size:16px;font-weight:700;
           color:#fff;background:#f97316;cursor:pointer;box-shadow:0 6px 16px rgba(249,115,22,.3)}
