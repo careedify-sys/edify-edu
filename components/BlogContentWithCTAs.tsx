@@ -12,44 +12,8 @@ type MidVariant = 'university-mid-cta'
 const CTA_TOKEN_RE = /<div class="blog-cta-spot" data-variant="(\w+)"><\/div>/g
 const CTA_BOX_RE = /<div class="cta-box"[\s\S]*?<\/div>/g
 const MID_CTA_RE = /<div class="blog-mid-cta-spot" data-variant="([\w-]+)"><\/div>/g
-// Inserted by addEarlyFormSpot, never written in post HTML by hand.
-const EARLY_FORM_TOKEN = '<div class="blog-early-form-spot"></div>'
-const EARLY_FORM_RE = /<div class="blog-early-form-spot"><\/div>/g
 
-// Most readers, and nearly all phone readers, never reach the bottom of a long
-// post. On 12 Nov 2026, 77 of 261 posts had no form in the body at all and
-// where one existed it sat on average 81% of the way down. So: when the post
-// has no inline form in its first 35%, put one just before the third H2 (the
-// second when the post has only two). Posts with fewer than two H2s are left
-// alone.
-export function addEarlyFormSpot(html: string): string {
-  const firstBox = html.search(/<div class="cta-box"/)
-  if (firstBox !== -1 && firstBox < html.length * 0.35) return html
-  const h2s: number[] = []
-  const re = /<h2[\s>]/g
-  let m: RegExpExecArray | null
-  while ((m = re.exec(html)) !== null) h2s.push(m.index)
-  if (h2s.length < 2) return html
-  // The page renders each piece between tokens as its own element, so the
-  // spot must sit at the top level of the post, not inside a box or table.
-  const candidates = h2s.slice(h2s.length >= 3 ? 2 : 1)
-  const at = candidates.find(i => i < html.length * 0.6 && isTopLevel(html, i))
-  if (at === undefined) return html
-  if (firstBox !== -1 && firstBox < at) return html
-  return html.slice(0, at) + EARLY_FORM_TOKEN + html.slice(at)
-}
-
-const CONTAINER_TAGS = ['div', 'section', 'article', 'aside', 'table', 'ul', 'ol', 'details', 'figure', 'blockquote']
-function isTopLevel(html: string, index: number): boolean {
-  const before = html.slice(0, index).toLowerCase()
-  return CONTAINER_TAGS.every(t => {
-    const open = (before.match(new RegExp(`<${t}[\\s>]`, 'g')) || []).length
-    const close = (before.match(new RegExp(`</${t}>`, 'g')) || []).length
-    return open === close
-  })
-}
-
-function InlineLeadForm({ source = 'blog_inline_form' }: { source?: string }) {
+function InlineLeadForm() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle')
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
@@ -65,7 +29,7 @@ function InlineLeadForm({ source = 'blog_inline_form' }: { source?: string }) {
         phone: phone.trim(),
         program: program || 'Not specified',
         sourcePage: window.location.pathname,
-        source,
+        source: 'blog_inline_form',
       })
       if (!res.ok) { setStatus('error'); return }
       setStatus('done')
@@ -179,18 +143,17 @@ export default function BlogContentWithCTAs({
 }) {
   // Split HTML at CTA tokens AND cta-box divs
   type Part = {
-    type: 'html' | 'cta' | 'inline-form' | 'early-form' | 'mid-cta'
+    type: 'html' | 'cta' | 'inline-form' | 'mid-cta'
     content: string
     variant?: Variant
     midVariant?: MidVariant
   }
   const parts: Part[] = []
   let lastIndex = 0
-  html = addEarlyFormSpot(html)
 
   // Combine all three patterns: blog-cta-spot tokens, cta-box divs, mid-cta tokens
   const combined = new RegExp(
-    `${CTA_TOKEN_RE.source}|${CTA_BOX_RE.source}|${MID_CTA_RE.source}|${EARLY_FORM_RE.source}`,
+    `${CTA_TOKEN_RE.source}|${CTA_BOX_RE.source}|${MID_CTA_RE.source}`,
     'g'
   )
   let match: RegExpExecArray | null
@@ -205,8 +168,6 @@ export default function BlogContentWithCTAs({
     } else if (match[2]) {
       // blog-mid-cta-spot token (slug-conditional mid-article CTAs)
       parts.push({ type: 'mid-cta', content: '', midVariant: match[2] as MidVariant })
-    } else if (match[0] === EARLY_FORM_TOKEN) {
-      parts.push({ type: 'early-form', content: '' })
     } else {
       // cta-box div — replace with inline form
       parts.push({ type: 'inline-form', content: '' })
@@ -229,8 +190,6 @@ export default function BlogContentWithCTAs({
           <div key={i} dangerouslySetInnerHTML={{ __html: part.content }} />
         ) : part.type === 'inline-form' ? (
           <InlineLeadForm key={i} />
-        ) : part.type === 'early-form' ? (
-          <InlineLeadForm key={i} source="blog_early_form" />
         ) : part.type === 'mid-cta' ? (
           part.midVariant === 'university-mid-cta' && midCtaConfig
             ? <UniversityMidCompare key={i} config={midCtaConfig} />

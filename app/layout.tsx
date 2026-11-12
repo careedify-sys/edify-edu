@@ -6,7 +6,7 @@ import { EntryPopup, ExitIntentPopup } from '@/components/LeadCapture'
 import Footer from '@/components/Footer'
 import EmailOff from '@/components/EmailOff'
 import BottomNav from '@/components/BottomNav'
-import MobileLeadNudge from '@/components/MobileLeadNudge'
+import LeadPrompt from '@/components/LeadPrompt'
 import AttributionCapture from '@/components/AttributionCapture'
 
 // ── Fonts, self-hosted (auto-optimised, no layout shift) ─────────────────
@@ -278,7 +278,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
         <Footer />
         <BottomNav />
-        <MobileLeadNudge />
+        {/* The on-screen fee-sheet form; also opens on counsellor links to /contact */}
+        <LeadPrompt />
         <AttributionCapture />
         </EmailOff>
       </body>

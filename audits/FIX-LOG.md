@@ -1,5 +1,21 @@
 # Fix log
 
+## 2026-11-12 · One on-screen fee-sheet form site-wide (replaces the in-article early form)
+
+- **Why:** Rishi found the early in-article form (3455f72) looked out of place and asked for a form that appears on
+  screen with professional, trustworthy wording. A live audit of 25 page types at phone width also found "Talk to
+  counsellor" / "Get free counselling" links to /contact on university, programme, spec, compare and fees pages (up to
+  4 per page), and no form at all on guides, verify, coupon detail, EMI tool and programme hubs.
+- **What:** components/LeadPrompt.tsx, mounted in app/layout.tsx in place of MobileLeadNudge (deleted). Opens (a)
+  automatically at 35% scroll after 12s or at 45s, once per session, 3 days after "No thanks", 60 days after a submit,
+  never on /contact, /leads, admin or legal pages, never stacked with ExitIntentPopup; (b) on any plain click on a
+  /contact link inside main, on every page (capture phase, because next/link would otherwise navigate). Course and
+  university are pre-filled from the URL. Copy promises only what the follow-up does: latest fee sheet on WhatsApp,
+  EMI options, scholarships or discounts open now, one message. Sources: lead_prompt_auto, lead_prompt_link. The
+  3455f72 early form and BlogContactIntercept are removed. Tawk chat is hidden while the form is open.
+- **Not verified:** the scroll trigger, because the test browser pane was hidden (no layout); the 45s fallback, the
+  link intercept, validation and the stubbed submit were checked.
+
 ## 2026-11-12 · Blog lead capture: early form in every post, counsellor links open the form in place
 
 - **Why:** Rishi saw blog posts with no lead form and CTAs that took him to another page. Audit
