@@ -1,5 +1,30 @@
 # Fix log
 
+## 2026-11-12 · Lead attribution: channel, landing page, referrer and UTM on every lead
+
+- **Why:** all 493 rows in the lead Sheet (2 Apr to 12 Nov) say Source = "website", so no page, video or channel could
+  be credited with a lead. The site has sent the page as `sourcePage` since 359028d (13 Sep), but the Apps Script read
+  `data.source`; it also read `callTime` and `message` while the route sends `bestTimeToCall` and `notes`, so those two
+  Sheet columns were blank too. Nothing captured UTM, referrer or landing page anywhere. Only the DBA form fired the
+  Meta Pixel Lead event.
+- **What:** branch feat/lead-attribution, one commit per part. (A) lib/attribution.ts + components/AttributionCapture.tsx
+  write an `edify_attr` cookie on a full page load that has a UTM or an external referrer (last non-direct touch, 30
+  days, no personal data); deriveChannel checks AI hosts before Google. Test: npx tsx lib/attribution.test.ts.
+  (B) /api/enquiry writes channel, landing_page, referrer and utm_* (migration
+  supabase/migrations/20261112120000_lead_attribution.sql), fills them only where null on a repeat submission, adds
+  Channel and Landing page to the owner email and sends channel/landingPage/utmCampaign to the Sheet. (C)
+  scripts/google-apps-script.js reads sourcePage first and appends Channel, Landing Page, UTM Campaign after the last
+  header, found by name. (D) /leads shows the attribution in the detail panel, a Channel filter and a 7-day count by
+  channel. (E) lib/submitEnquiry.ts is now the only way forms POST to /api/enquiry (17 calls in 16 components); it
+  fires fbq Lead and gtag generate_lead once on success, and the five per-form gtag calls were removed.
+- **Safety nets:** until the migration runs, the insert retries without attribution (PGRST204/42703) and /leads falls
+  back to the old column list. A read-only probe on 12 Nov returned 42703 "column leads.channel does not exist", so
+  the migration was NOT yet applied.
+- **Manual steps left:** run the migration in the Supabase SQL editor before deploy; paste the updated Apps Script and
+  deploy a new version of the existing deployment. The repo copy of the script may differ from the live one.
+- **Not covered:** the 493 historical Sheet rows stay "website". The CRM has no "add lead" form, so phone and WhatsApp
+  leads (Step 3 of the doc) cannot yet be entered with a channel.
+
 ## 2026-11-12 · Competitor names removed from two blog posts
 
 - **Why:** CLAUDE.md bars any citation of blacklisted competitors. Found while merging /best-online-mba-india: the
