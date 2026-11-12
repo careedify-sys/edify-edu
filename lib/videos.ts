@@ -28,6 +28,30 @@ export const VIDEOS: Record<string, SiteVideo> = {
     uploadDate: '2026-11-11T03:52:11-08:00',
     duration: 'PT3M38S',
   },
+  'symbiosis-online-mba-review-2026': {
+    youtubeId: '1nFgU_narc4',
+    title: 'Symbiosis Online MBA Review 2026 (SSODL): Fees, Placements & Student Problems',
+    description:
+      'EdifyEdu reviews the Symbiosis (SSODL) Online MBA: fees, placements and what real students report. Commission-free, no paid rankings.',
+    uploadDate: '2026-11-12T00:01:36-08:00',
+    duration: 'PT3M46S',
+  },
+  'muj-online-mba-review-2026': {
+    youtubeId: '3hCv0Xyg_fI',
+    title: 'Manipal University Jaipur Online MBA Review 2026: Honest Fees, Exams & Student Problems',
+    description:
+      'EdifyEdu reviews the Manipal University Jaipur Online MBA: fees, exams and what real students report. Commission-free, no paid rankings.',
+    uploadDate: '2026-11-12T00:09:25-08:00',
+    duration: 'PT5M28S',
+  },
+  'smu-online-mba-review-2026': {
+    youtubeId: 'YiWCd7R5o88',
+    title: 'Sikkim Manipal University Online MBA Review 2026: Fees, Placements & Student Problems',
+    description:
+      'EdifyEdu reviews the Sikkim Manipal University Online MBA: fees, placements and what real students report. Commission-free, no paid rankings.',
+    uploadDate: '2026-11-12T00:12:52-08:00',
+    duration: 'PT4M9S',
+  },
 }
 
 // Blog slug -> video key. The blog template injects the embed before the
@@ -47,6 +71,13 @@ export const VIDEO_BY_BLOG: Record<string, string> = {
   'nmims-vs-symbiosis-online-mba-2026': 'nmims-online-mba-review-2026',
   'is-nmims-online-fake-or-legit-2026': 'nmims-online-mba-review-2026',
   'nmims-online-admission-guide': 'nmims-online-mba-review-2026',
+  'symbiosis-online-mba-review-2026': 'symbiosis-online-mba-review-2026',
+  'symbiosis-online-bba-review-2026': 'symbiosis-online-mba-review-2026',
+  'muj-online-mba-review-2026': 'muj-online-mba-review-2026',
+  'muj-online-bba-review-2026': 'muj-online-mba-review-2026',
+  'is-manipal-university-jaipur-fake-or-legit-2026': 'muj-online-mba-review-2026',
+  'online-manipal-mba-review-2026': 'muj-online-mba-review-2026',
+  'smu-online-mba-review': 'smu-online-mba-review-2026',
 }
 
 const escapeHtml = (s: string) =>
@@ -70,6 +101,18 @@ export const VIDEO_COPY:Record<string, { heading: string; caption: string }> = {
     heading: 'Watch: Our NMIMS Online MBA Video Review',
     caption: 'Our review of the NMIMS Online MBA. Fees shown are indicative, so confirm them on the official NMIMS online portal before you pay.',
   },
+  'symbiosis-online-mba-review-2026': {
+    heading: 'Watch: Our Symbiosis Online MBA Video Review',
+    caption: 'Our review of the Symbiosis (SSODL) Online MBA. Fees shown are indicative, so confirm them on the official Symbiosis portal before you pay.',
+  },
+  'muj-online-mba-review-2026': {
+    heading: 'Watch: Our Manipal University Jaipur Online MBA Video Review',
+    caption: 'Our review of the Manipal University Jaipur Online MBA. Fees shown are indicative, so confirm them on onlinemanipal.com before you pay.',
+  },
+  'smu-online-mba-review-2026': {
+    heading: 'Watch: Our Sikkim Manipal University Online MBA Video Review',
+    caption: 'Our review of the Sikkim Manipal University Online MBA. Fees shown are indicative, so confirm them on onlinemanipal.com before you pay.',
+  },
 }
 
 // University id -> video key. Shown on every page about that university:
@@ -78,6 +121,9 @@ export const VIDEO_COPY:Record<string, { heading: string; caption: string }> = {
 export const VIDEO_BY_UNIVERSITY: Record<string, string> = {
   'amity-university-online': 'amity-online-mba-review-2026',
   'nmims-online': 'nmims-online-mba-review-2026',
+  'symbiosis-university-online': 'symbiosis-online-mba-review-2026',
+  'manipal-university-jaipur-online': 'muj-online-mba-review-2026',
+  'sikkim-manipal-university-online': 'smu-online-mba-review-2026',
 }
 
 // Other ids (e.g. /verify slugs with no site record) that should show a
@@ -85,19 +131,29 @@ export const VIDEO_BY_UNIVERSITY: Record<string, string> = {
 export const VIDEO_UNI_ALIASES: Record<string, string> = {
   'amity-university-rajasthan-online': 'amity-university-online',
   'narsee-monjee-institute-of-management-studies-nmims-online': 'nmims-online',
+  'symbiosis-international-online': 'symbiosis-university-online',
+  'manipal-university-online': 'manipal-university-jaipur-online',
 }
 
 // Posts that discuss a university without being about it: the video goes at
 // the end of the section where the university is first named in body text.
 // Skips posts about another single university (its review, a vs-page that
 // excludes this one, a legitimacy check), where the video would be off-topic.
+//
+// Slug prefixes of posts about one specific university. A mention rule
+// skips these, except the prefixes of its own university.
+const UNI_PREFIXES = ['imt', 'jamia', 'icfai', 'amity', 'nmims', 'noida-international', 'lpu', 'bits', 'jain', 'du-online', 'xlri', 'mahe', 'upes', 'dy-patil', 'chandigarh', 'symbiosis', 'ignou', 'uu-doon', 'galgotias', 'shoolini', 'jaypee', 'iim', 'srm', 'muj', 'smu', 'online-manipal']
+const skipOthers = (...own: string[]) =>
+  new RegExp(`review|fake-or-legit|^(${UNI_PREFIXES.filter(p => !own.includes(p)).join('|')})-`)
+
+// Rules are first-match: a post that names two of these universities shows
+// the video of the earlier rule (Amity, then NMIMS, Symbiosis, MUJ, SMU).
 export const VIDEO_MENTION_RULES: { video: string; text: RegExp; slug: RegExp; skipSlug: RegExp }[] = [
-  {
-    video: 'amity-online-mba-review-2026',
-    text: />[^<]*\bAmity\b/,
-    slug: /mba/,
-    skipSlug: /review|fake-or-legit|^(imt|jamia|icfai|nmims|noida-international|lpu|bits|jain|du-online|xlri|mahe|upes|dy-patil|chandigarh|symbiosis|ignou|uu-doon|galgotias|shoolini|jaypee|iim)-/,
-  },
+  { video: 'amity-online-mba-review-2026', text: />[^<]*\bAmity\b/, slug: /mba/, skipSlug: skipOthers('amity') },
+  { video: 'nmims-online-mba-review-2026', text: />[^<]*\bNMIMS\b/, slug: /mba/, skipSlug: skipOthers('nmims') },
+  { video: 'symbiosis-online-mba-review-2026', text: />[^<]*\b(Symbiosis|SSODL)\b/, slug: /mba/, skipSlug: skipOthers('symbiosis') },
+  { video: 'muj-online-mba-review-2026', text: />[^<]*\b(Manipal University Jaipur|MUJ)\b/, slug: /mba/, skipSlug: skipOthers('muj') },
+  { video: 'smu-online-mba-review-2026', text: />[^<]*\b(Sikkim Manipal|SMU)\b/, slug: /mba/, skipSlug: skipOthers('smu') },
 ]
 
 // Returns [videoKey, insertAt] for a post with no VIDEO_BY_BLOG entry, or null.
