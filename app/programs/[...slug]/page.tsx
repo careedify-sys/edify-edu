@@ -12,6 +12,7 @@ import type { Program } from '@/lib/data'
 import { formatFeeSlim, UNIS_SLIM, nirfForProgramme } from '@/lib/data-slim'
 import { getSpecFAQs } from '@/lib/specFaqs'
 import { getCanonicalSpec } from '@/lib/specMapping'
+import { getMbaSpecHubUniIds, mbaSpecVariants, specNameMatches } from '@/lib/seo/mba-spec-hub-unis'
 import { shouldIndexProgramsPath, shouldIndexProgrammeHub } from '@/lib/seo/should-index'
 import { MBA_SPEC_SEO_OVERRIDES } from '@/lib/mba-spec-seo-overrides'
 import { getProgramHubSeo } from '@/lib/program-hub-seo'
@@ -293,20 +294,7 @@ export async function generateMetadata(
       if (!shouldIndexProgramsPath(pathname)) return { index: false, follow: true }
       // Guard: an allowlisted MBA spec still noindexes when 0 universities match
       if (subSlug && program === 'MBA') {
-        const specCanonical = getCanonicalSpec(subSlug)
-        const variants = specCanonical?.variants || [activeSpec || subSlug]
-        const specUniCount = UNIS_SLIM.filter(u => {
-          if (!u.programs.includes('MBA')) return false
-          const uniSpecs = (u as any).mbaSpecs as string[] | undefined
-          if (!uniSpecs?.length) return false
-          return uniSpecs.some(s => {
-            const sn = s.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim()
-            return variants.some(v => {
-              const vn = v.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim()
-              return sn === vn || sn.startsWith(vn + ' ') || sn.startsWith(vn + 's') || vn.startsWith(sn + ' ') || vn.startsWith(sn + 's')
-            })
-          })
-        }).length
+        const specUniCount = getMbaSpecHubUniIds(subSlug, activeSpec || subSlug).length
         if (specUniCount === 0) return { index: false, follow: true }
       }
       // Must be explicit: the /programs layout sets index:false, and Next
@@ -437,37 +425,28 @@ export default async function CatchAllProgramPage(
     // Compute spec FAQ schema so Google can pull rich results. The same
     // getSpecFAQs() drives the visual accordion inside MBASpecHubClient.
     const specCanonical = getCanonicalSpec(subSlug)
-    const variants = specCanonical?.variants || [activeSpec]
-    const specMbaUnis = UNIS_SLIM.filter(u => {
-      if (!u.programs.includes('MBA')) return false
-      const uniSpecs = (u as any).mbaSpecs as string[] | undefined
-      if (!uniSpecs?.length) return false
-      return uniSpecs.some(s => {
-        const sn = s.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim()
-        return variants.some(v => {
-          const vn = v.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim()
-          return sn === vn || sn.startsWith(vn + ' ') || vn.startsWith(sn + ' ')
-        })
-      })
-    })
+    // Membership comes from lib/data.ts (lib/seo/mba-spec-hub-unis.ts), not the
+    // UNIS_SLIM mirror: on 2026-11-12 the mirror put two universities with no
+    // MBA specialisations on /programs/mba/finance.
+    const specUniIds = getMbaSpecHubUniIds(subSlug, activeSpec)
+    const specUniIdSet = new Set(specUniIds)
+    const specMbaUnis = UNIS_SLIM.filter(u => specUniIdSet.has(u.id))
     // Card hrefs for MBASpecHubClient. The cards used to append this hub's slug
     // to every university, so a university calling the spec "Human Resource
     // Management" got a 308 and one with no page under that slug got a 404:
     // 172 and 63 links on the local crawl of 27 Oct 2026. Same matcher as the
     // client list; each university's own spec slug first, then the hub slug,
     // then its MBA hub, then its overview.
-    const cardVariants = (specCanonical?.variants || [subSlug]).map(v => v.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim())
+    const cardVariants = mbaSpecVariants(subSlug, activeSpec)
     const specCardHrefs: Record<string, string> = {}
-    for (const u of UNIS_SLIM) {
-      if (!u.programs.includes('MBA')) continue
-      const own = (((u as any).mbaSpecs as string[] | undefined) ?? []).filter(s => {
-        const sn = s.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim()
-        return cardVariants.some(vn => sn === vn || sn.startsWith(vn + ' ') || sn.startsWith(vn + 's') || vn.startsWith(sn + ' ') || vn.startsWith(sn + 's'))
-      })
+    for (const id of specUniIds) {
+      const full = getUniversityById(id)
+      if (!full) continue
+      const own = (full.programDetails?.MBA?.specs ?? []).map(s => getSpecName(s as any)).filter(n => specNameMatches(n, cardVariants))
       if (!own.length) continue
-      const spec = [...own.map(s => getSpecSlug(s)), subSlug].map(s => resolveSpecHref(u.id, 'mba', s)).find(Boolean)
-      const hub = `/universities/${u.id}/mba`
-      specCardHrefs[u.id] = spec ?? (hubResolves(u.id, 'MBA') && isLinkable(hub) ? hub : `/universities/${u.id}`)
+      const spec = [...own.map(n => getSpecSlug(n)), subSlug].map(sl => resolveSpecHref(id, 'mba', sl)).find(Boolean)
+      const hub = `/universities/${id}/mba`
+      specCardHrefs[id] = spec ?? (hubResolves(id, 'MBA') && isLinkable(hub) ? hub : `/universities/${id}`)
     }
 
     // MBA fee per university for the spec hub's range, FAQ and table, from
@@ -538,6 +517,7 @@ export default async function CatchAllProgramPage(
           mbaFeeMap={mbaFeeMap}
           mbaFeeText={mbaFeeText}
           cardHrefs={specCardHrefs}
+          uniIds={specUniIds}
           mbaHubIds={Object.keys(specCardHrefs).filter(id => hubResolves(id, 'MBA') && isLinkable(`/universities/${id}/mba`))}
         />
       </>

@@ -1,5 +1,26 @@
 # Fix log
 
+## 2026-11-12 · MBA spec hubs list universities from lib/data.ts; /programs/mba/finance indexed
+
+- **Why:** /programs/mba/finance had been noindex since ef63fa7 (19 Aug) and no other indexable page targets "online
+  MBA in finance" (720/mo) or "mba finance online" (720/mo). The first attempt to index it (same day) was skipped
+  because its list came from the UNIS_SLIM mirror: Madurai Kamaraj and University of Mumbai appeared with no MBA
+  specialisations in lib/data.ts, and MATS matched on a malformed mirror string.
+- **Fix:** lib/seo/mba-spec-hub-unis.ts decides hub membership from lib/data.ts programDetails.MBA.specs with the
+  matcher the client used. The route uses it for the robots guard, the server list, card hrefs (now from the
+  master's own spec names) and passes the ids to MBASpecHubClient, which no longer re-matches the mirror. Applies to
+  every /programs/mba/{spec} hub.
+- **Result on finance:** 91 universities, not 71. The two unbacked ones are gone; 22 that offer Finance in lib/data.ts
+  but were missing from the mirror's mbaSpecs now appear (Shoolini, SMU, Chitkara, Sharda, ICFAI and others). Every
+  matched name is a finance specialisation (Finance 74, Financial Management 11, Finance Management 3, five single
+  variants). The H2 count and the cards come from the same array. GLS and SGT are included: both carry Finance in
+  lib/data.ts, but they are the known clone pair (see project_gls_sgt_clone).
+- **Fees:** unchanged path, getExactFee (gated by getDisplayFee); 42 of 91 show the counsellor line.
+- **Indexing:** '/programs/mba/finance' added to PROGRAMS_INDEX_ALLOWLIST on a content basis; RESCUED_PROGRAM_PATHS
+  derives from that list, so the sitemap picks it up. Links: the post already linked the hub; the hub's career
+  section now links /blog/mba-finance-career-salary-scope-2026 (CAREER_GUIDE in MBASpecHubClient).
+- **Not touched:** the template's unsourced "Salary: Rs 3-6 LPA / Rs 8-18 LPA" lines on every spec hub.
+
 ## 2026-11-12 · Online executive MBA post merged into the top-executive-MBA post
 
 - **Why:** /blog/online-executive-mba-india-2026 averaged position 25.66 (584 impressions, 2 clicks);

@@ -76,6 +76,14 @@ export const PROGRAMS_INDEX_ALLOWLIST: readonly string[] = [
   // admits on a single click, renders 2. Indexing the 2-row page and hiding
   // the 27-row one is not a position the content supports.
   '/programs/ba',
+  // Added 2026-11-12 on content, the /programs/ba basis. Noindexed since
+  // ef63fa7 (19 Aug) when spec hubs were thin; it now renders 3,700+ words and
+  // a card per university. No other indexable page targets "online MBA in
+  // finance" (720/mo, "mba finance online" 720/mo). Admitted only after the
+  // list moved off the UNIS_SLIM mirror onto lib/data.ts
+  // (lib/seo/mba-spec-hub-unis.ts): the mirror listed two universities with no
+  // MBA specialisations and missed 22 that offer Finance. 91 listed, all backed.
+  '/programs/mba/finance',
 ]
 
 export function shouldIndexProgramsPath(pathname: string): boolean {

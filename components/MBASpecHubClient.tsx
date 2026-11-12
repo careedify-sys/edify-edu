@@ -10,6 +10,13 @@ import { getSpecFAQs } from '@/lib/specFaqs'
 import UniversityCard from '@/components/UniversityCard'
 import { SPEC_HUB_EDITORIAL } from '@/lib/data/spec-hub-editorial'
 
+// One contextual link from a spec hub to the blog post that covers its career
+// side, for hubs without an editorial entry. Added 2026-11-12 with finance's
+// move into the index; the post links back to the hub.
+const CAREER_GUIDE: Record<string, { slug: string; label: string }> = {
+  finance: { slug: 'mba-finance-career-salary-scope-2026', label: 'MBA finance career and salary guide' },
+}
+
 interface Props {
   specSlug: string
   specName: string
@@ -22,37 +29,27 @@ interface Props {
   cardHrefs?: Record<string, string>
   /** University ids whose MBA hub resolves and is indexable (hubResolves + isLinkable). */
   mbaHubIds?: string[]
+  /** Universities to list, decided on the server from lib/data.ts (lib/seo/mba-spec-hub-unis.ts). */
+  uniIds: string[]
 }
 
-export default function MBASpecHubClient({ specSlug, specName, customH1, customIntro, mbaFeeMap, mbaFeeText, cardHrefs, mbaHubIds }: Props) {
+export default function MBASpecHubClient({ specSlug, specName, customH1, customIntro, mbaFeeMap, mbaFeeText, cardHrefs, mbaHubIds, uniIds }: Props) {
   const canonical = getCanonicalSpec(specSlug)
   const editorial = SPEC_HUB_EDITORIAL[specSlug]
 
+  // Membership is the server's, from lib/data.ts. This used to re-match
+  // UNIS_SLIM.mbaSpecs here, and the mirror listed two universities on the
+  // finance hub that have no MBA specialisations in the master.
   const mbaUnis = useMemo(() => {
-    const canonical = getCanonicalSpec(specSlug)
-    const variants = canonical?.variants || [specSlug]
+    const ids = new Set(uniIds)
     return UNIS_SLIM
-      .filter(u => {
-        if (!u.programs.includes('MBA')) return false
-        const uniSpecs = (u as any).mbaSpecs as string[] | undefined
-        if (!uniSpecs || uniSpecs.length === 0) return false
-        return uniSpecs.some(s => {
-          const sn = s.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim()
-          return variants.some(v => {
-            const vn = v.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim()
-            if (sn === vn) return true
-            if (sn.startsWith(vn + ' ') || sn.startsWith(vn + 's')) return true
-            if (vn.startsWith(sn + ' ') || vn.startsWith(sn + 's')) return true
-            return false
-          })
-        })
-      })
+      .filter(u => ids.has(u.id))
       .sort((a, b) => {
         const ar = (a.nirfMgt && a.nirfMgt < 500) ? a.nirfMgt : (a.nirf > 0 && a.nirf < 500) ? a.nirf : 9999
         const br = (b.nirfMgt && b.nirfMgt < 500) ? b.nirfMgt : (b.nirf > 0 && b.nirf < 500) ? b.nirf : 9999
         return ar - br
       })
-  }, [specSlug])
+  }, [uniIds])
 
   // getExactFee bounds only. No fallback to the slim u.feeMin/feeMax, which are
   // MBA-led raw values that never passed getDisplayFee.
@@ -215,6 +212,7 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
           ) : (
             <p className="text-sm text-slate-600 leading-relaxed">
               Salary growth after an online MBA in {specName} depends on your prior experience, target industry, and active career management. Most online MBA graduates advance through internal promotions or self-directed job search rather than university placement cells. LinkedIn networking and domain-specific certifications amplify the MBA credential significantly.
+              {CAREER_GUIDE[specSlug] && <> For the roles and sectors in more depth, read our <Link href={`/blog/${CAREER_GUIDE[specSlug].slug}`} className="text-blue-700 underline">{CAREER_GUIDE[specSlug].label}</Link>.</>}
             </p>
           )}
         </section>
