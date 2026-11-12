@@ -111,26 +111,66 @@ function handleLead(data) {
   var sheet = ss.getSheetByName(CONFIG.LEADS_SHEET || TABS.leads)
   if (!sheet) {
     sheet = ss.insertSheet(TABS.leads)
-    var hdrs = ['Timestamp','Name','Phone','Email','Program','University','Source','Call Time','Message','Submitted At']
+    var hdrs = LEAD_BASE_HEADERS.concat(LEAD_ATTR_HEADERS)
     sheet.appendRow(hdrs)
     formatHeader(sheet, hdrs.length)
   }
+  // /api/enquiry sends the page as sourcePage, the call time as bestTimeToCall
+  // and the message as notes. This script used to read only source, callTime
+  // and message, so every row said "website" and the other two were blank.
+  var source = data.sourcePage || data.source || 'website'
+  var callTime = data.callTime || data.bestTimeToCall || ''
+  var message = data.message || data.notes || ''
   sheet.appendRow([
     new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
     data.name || '', data.phone || '', data.email || '',
-    data.program || '', data.university || '', data.source || 'website',
-    data.callTime || '', data.message || '', data.submittedAt || '',
+    data.program || '', data.university || '', source,
+    callTime, message, data.submittedAt || '',
   ])
+  // Attribution columns sit at the END of the header and are found by name,
+  // so existing columns are never reordered and a sheet with extra columns
+  // still gets the values under the right heading.
+  try {
+    var row = sheet.getLastRow()
+    var cols = ensureLeadAttrHeaders(sheet)
+    var vals = { 'Channel': data.channel || '', 'Landing Page': data.landingPage || '', 'UTM Campaign': data.utmCampaign || '' }
+    LEAD_ATTR_HEADERS.forEach(function(h) { sheet.getRange(row, cols[h]).setValue(vals[h]) })
+  } catch(e) { /* attribution is best effort; the lead row is already saved */ }
   try {
     MailApp.sendEmail({
       to: CONFIG.ALERT_EMAIL,
       subject: '🎓 New Lead — ' + (data.name || '?') + ' | ' + (data.program || 'General'),
       body: 'Name: ' + data.name + '\nPhone: ' + data.phone + '\nEmail: ' + data.email +
             '\nProgram: ' + (data.program || '—') + '\nUniversity: ' + (data.university || '—') +
-            '\nSource: ' + (data.source || 'website') + '\n\nSubmitted: ' + new Date().toLocaleString('en-IN'),
+            '\nSource: ' + source +
+            '\nChannel: ' + (data.channel || 'not captured') + '\nLanding page: ' + (data.landingPage || 'not captured') +
+            '\n\nSubmitted: ' + new Date().toLocaleString('en-IN'),
     })
   } catch(e) { /* email failure is non-blocking */ }
   return { success: true }
+}
+
+var LEAD_BASE_HEADERS = ['Timestamp','Name','Phone','Email','Program','University','Source','Call Time','Message','Submitted At']
+var LEAD_ATTR_HEADERS = ['Channel','Landing Page','UTM Campaign']
+
+// Returns { header: 1-based column } for the attribution headers, appending
+// any that are missing after the last used column.
+function ensureLeadAttrHeaders(sheet) {
+  var lastCol = Math.max(sheet.getLastColumn(), 1)
+  var header = sheet.getRange(1, 1, 1, lastCol).getValues()[0].map(function(h) { return String(h).trim() })
+  var cols = {}
+  LEAD_ATTR_HEADERS.forEach(function(h) {
+    var i = header.indexOf(h)
+    if (i === -1) {
+      lastCol = lastCol + (header[lastCol - 1] === '' && lastCol === 1 ? 0 : 1)
+      sheet.getRange(1, lastCol).setValue(h).setFontWeight('bold')
+      header[lastCol - 1] = h
+      cols[h] = lastCol
+    } else {
+      cols[h] = i + 1
+    }
+  })
+  return cols
 }
 
 function handleLogPage(data) {
@@ -263,7 +303,7 @@ function buildCMSTemplate() {
 
   var REG_HEADERS = ['Page ID','Page Type','URL','University / Title','Program','Status','Created At','Last Updated']
 
-  var LEAD_HEADERS = ['Timestamp','Name','Phone','Email','Program','University','Source','Call Time','Message','Submitted At']
+  var LEAD_HEADERS = LEAD_BASE_HEADERS.concat(LEAD_ATTR_HEADERS)
 
   var sheets = [
     [TABS.universities, UNI_HEADERS, [UNI_SAMPLE]],
