@@ -13,6 +13,8 @@ interface EnquiryModalProps {
   universityId?: string
   defaultProgram?: string
   sourcePage?: string
+  /** Widget tag stored after the page in leads.source, e.g. "blog_contact_link". */
+  source?: string
   /** Pre-fill and lock a coupon code (e.g. from the /coupons page) */
   couponCode?: string
   /** Human-readable discount label shown in the applied badge (e.g. "25% off") */
@@ -36,6 +38,7 @@ export default function EnquiryModal({
   universityId,
   defaultProgram,
   sourcePage,
+  source,
   couponCode,
   couponDiscount,
   onSuccess,
@@ -115,7 +118,7 @@ export default function EnquiryModal({
         program: form.program,
         preferredUniversity: form.preferredUniversity || universityName || 'Not specified',
         sourcePage: sourceFinal,
-        source: sourcePage || 'enquiry_modal',
+        source: source || sourcePage || 'enquiry_modal',
         ...(form.couponCode.trim() ? { couponCode: form.couponCode.trim().toUpperCase() } : {}),
       }, { university: form.preferredUniversity || universityName || 'Not specified' })
       if (!res.ok) {

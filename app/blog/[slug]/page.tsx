@@ -20,6 +20,7 @@ import { getRelatedPosts } from '@/lib/blog-related'
 import BlogComparisonLinks from '@/components/BlogComparisonLinks'
 import { getComparisonsForBlog } from '@/lib/compare-links'
 import WhatsAppSticky from '@/components/WhatsAppSticky'
+import BlogContactIntercept from '@/components/BlogContactIntercept'
 import { pageKeywords } from '@/lib/page-keywords'
 import { getUniversityById, type Program } from '@/lib/data'
 import { getProgramSchemaOffer } from '@/lib/seo/program-schema'
@@ -748,6 +749,8 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* WhatsApp sticky on review pages */}
         {ctaConfig && <WhatsAppSticky universityName={ctaConfig.universityName} />}
+        {/* Counsellor links open the enquiry form in place instead of leaving for /contact */}
+        <BlogContactIntercept universityName={ctaConfig?.universityName} defaultProgram={ctaConfig ? 'MBA' : undefined} />
 
         {/* ── Footer CTA ────────────────────────────────────────────────── */}
         <footer className="bg-white border-t border-border mt-8">
