@@ -20,6 +20,14 @@ export const VIDEOS: Record<string, SiteVideo> = {
     uploadDate: '2026-11-11T00:17:34-08:00',
     duration: 'PT2M54S',
   },
+  'nmims-online-mba-review-2026': {
+    youtubeId: 'sNp-Lk88FMQ',
+    title: 'NMIMS Online MBA Review 2026: UGC Debar, Fees, Exam Fees & Student Problems',
+    description:
+      'EdifyEdu reviews the NMIMS Online MBA: the past UGC debarment, fees, exam fees and what real students report. Commission-free, no paid rankings.',
+    uploadDate: '2026-11-11T03:52:11-08:00',
+    duration: 'PT3M38S',
+  },
 }
 
 // Blog slug -> video key. The blog template injects the embed before the
@@ -34,6 +42,11 @@ export const VIDEO_BY_BLOG: Record<string, string> = {
   'is-amity-university-online-fake-or-legit-2026': 'amity-online-mba-review-2026',
   'amity-online-student-portal-login': 'amity-online-mba-review-2026',
   'amity-online-admission-guide': 'amity-online-mba-review-2026',
+  'nmims-online-mba-review-2026': 'nmims-online-mba-review-2026',
+  'nmims-online-bba-review-2026': 'nmims-online-mba-review-2026',
+  'nmims-vs-symbiosis-online-mba-2026': 'nmims-online-mba-review-2026',
+  'is-nmims-online-fake-or-legit-2026': 'nmims-online-mba-review-2026',
+  'nmims-online-admission-guide': 'nmims-online-mba-review-2026',
 }
 
 const escapeHtml = (s: string) =>
@@ -53,6 +66,10 @@ export const VIDEO_COPY:Record<string, { heading: string; caption: string }> = {
     heading: 'Watch: Our Amity Online MBA Video Review',
     caption: 'Our three-minute review of the Amity Online MBA. Fees shown are indicative, so confirm them on online.amity.edu before you pay.',
   },
+  'nmims-online-mba-review-2026': {
+    heading: 'Watch: Our NMIMS Online MBA Video Review',
+    caption: 'Our review of the NMIMS Online MBA. Fees shown are indicative, so confirm them on the official NMIMS online portal before you pay.',
+  },
 }
 
 // University id -> video key. Shown on every page about that university:
@@ -60,12 +77,14 @@ export const VIDEO_COPY:Record<string, { heading: string; caption: string }> = {
 // its /verify page and every /compare pair that includes it.
 export const VIDEO_BY_UNIVERSITY: Record<string, string> = {
   'amity-university-online': 'amity-online-mba-review-2026',
+  'nmims-online': 'nmims-online-mba-review-2026',
 }
 
 // Other ids (e.g. /verify slugs with no site record) that should show a
 // university's video. Amity University Rajasthan awards some Amity Online degrees.
 export const VIDEO_UNI_ALIASES: Record<string, string> = {
   'amity-university-rajasthan-online': 'amity-university-online',
+  'narsee-monjee-institute-of-management-studies-nmims-online': 'nmims-online',
 }
 
 // Posts that discuss a university without being about it: the video goes at
