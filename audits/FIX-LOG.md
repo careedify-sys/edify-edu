@@ -1,5 +1,20 @@
 # Fix log
 
+## 2026-11-12 · Eligibility follow-up after the fee-sheet form is closed
+
+- **Why:** Rishi asked how to win back readers who close the form without it feeling spammy. Re-opening the same
+  popup in the same visit is the spammy version, so the second ask is smaller, later and a different offer.
+- **What:** components/LeadPrompt.tsx. After a close (not a submit), one dark chip appears 60s later, at most once per
+  session (sessionStorage edify_nudge_shown; edify_prompt_closed_at keeps the timer across a reload), and leaves on
+  its own after 25s. Its X stops chips for 14 days. Tapping it opens the form in an "eligibility" variant (new
+  headline, points, CTA and thank-you copy, plus a Highest qualification select sent as notes). On a later visit the
+  automatic form uses the eligibility variant for anyone who closed it before. Source tags:
+  lead_prompt_nudge_eligibility and lead_prompt_auto_eligibility; the fee-sheet ones are unchanged.
+- **Trap:** the Tawk greeting popped up over the chip on a phone and swallowed the tap. Tawk is hidden only while the
+  chip is up, which is why the chip times out rather than staying for the whole visit.
+- **Verified:** dev server at 375x812, chip shown, form opened from a real tap, submit payload captured with fetch
+  stubbed (no test lead written).
+
 ## 2026-11-12 · One on-screen fee-sheet form site-wide (replaces the in-article early form)
 
 - **Why:** Rishi found the early in-article form (3455f72) looked out of place and asked for a form that appears on

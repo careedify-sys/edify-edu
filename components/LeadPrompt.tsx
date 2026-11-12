@@ -92,6 +92,7 @@ const CLOSED_AT_KEY = 'edify_prompt_closed_at' // session: survives a full reloa
 const NUDGE_DISMISS_KEY = 'edify_nudge_dismissed'
 const NUDGE_DELAY_MS = 60_000
 const NUDGE_DISMISS_DAYS = 14
+const NUDGE_VISIBLE_MS = 25_000
 const QUALIFICATIONS = ['12th pass', 'Diploma', 'Graduate', 'Final-year student', 'Postgraduate']
 
 export default function LeadPrompt() {
@@ -197,6 +198,19 @@ export default function LeadPrompt() {
     return () => clearTimeout(nudgeTimer.current)
   }, [scheduleNudge])
 
+  // While the chip is up, the Tawk greeting would cover it on phones; hide the
+  // chat for those seconds only. The chip leaves on its own so it never lingers.
+  useEffect(() => {
+    if (!chip) return
+    const tawk = (window as unknown as { Tawk_API?: { hideWidget?: () => void; showWidget?: () => void } }).Tawk_API
+    try { tawk?.hideWidget?.() } catch { /* chat not loaded */ }
+    const t = setTimeout(() => setChip(false), NUDGE_VISIBLE_MS)
+    return () => {
+      clearTimeout(t)
+      try { tawk?.showWidget?.() } catch { /* chat not loaded */ }
+    }
+  }, [chip])
+
   const close = useCallback((remember: boolean) => {
     openRef.current = false
     setOpen(false)
@@ -273,7 +287,7 @@ export default function LeadPrompt() {
           <X size={14} />
         </button>
         <style jsx global>{`
-          .lp-chip{position:fixed;left:12px;right:84px;bottom:calc(72px + env(safe-area-inset-bottom));z-index:290;
+          .lp-chip{position:fixed;left:12px;right:12px;bottom:calc(72px + env(safe-area-inset-bottom));z-index:290;
             display:flex;align-items:center;background:#0f172a;color:#fff;border-radius:14px;
             box-shadow:0 8px 24px rgba(15,23,42,.25);animation:lpUp .3s ease-out;font-family:var(--font-body), system-ui, sans-serif}
           @media (min-width:1024px){.lp-chip{left:24px;right:auto;bottom:24px;max-width:420px}}
@@ -305,11 +319,19 @@ export default function LeadPrompt() {
         {status === 'done' ? (
           <div className="lp-done">
             <div className="lp-done-icon"><Check size={22} /></div>
-            <h2 id="lp-title" className="lp-h">Thanks{firstName ? `, ${firstName}` : ''}. It&apos;s on its way.</h2>
-            <p className="lp-sub">Our team will WhatsApp you the fee sheet, usually within an hour.</p>
+            <h2 id="lp-title" className="lp-h">
+              Thanks{firstName ? `, ${firstName}` : ''}. {elig ? 'We’re checking it.' : 'It’s on its way.'}
+            </h2>
+            <p className="lp-sub">
+              {elig
+                ? 'A counsellor will WhatsApp you what you qualify for, usually within an hour.'
+                : 'Our team will WhatsApp you the fee sheet, usually within an hour.'}
+            </p>
             <a
               className="lp-wa"
-              href={`https://wa.me/${WA}?text=${encodeURIComponent(`Hi, I just asked for the ${subject || 'online degree'} fee sheet on edifyedu.in.`)}`}
+              href={`https://wa.me/${WA}?text=${encodeURIComponent(elig
+                ? `Hi, I just asked for an eligibility check for ${subject || 'an online degree'} on edifyedu.in.`
+                : `Hi, I just asked for the ${subject || 'online degree'} fee sheet on edifyedu.in.`)}`}
               target="_blank" rel="noopener noreferrer"
             >
               <MessageCircle size={16} /> Want it sooner? Message us on WhatsApp
