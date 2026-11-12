@@ -313,10 +313,11 @@ export default function LeadPrompt() {
       </div>
 
       <style jsx global>{`
-        .lp-root{position:fixed;inset:0;z-index:400;display:flex;align-items:flex-end;justify-content:center}
-        .lp-backdrop{position:absolute;inset:0;background:rgba(15,23,42,.45);animation:lpFade .2s ease-out}
-        .lp-card{position:relative;width:100%;max-width:440px;max-height:92vh;overflow:auto;background:#fff;
-          border-radius:20px 20px 0 0;padding:22px 20px calc(18px + env(safe-area-inset-bottom));
+        /* Above the sticky header (z 9990) and bottom nav (z 300); the Tawk bubble is hidden while open. */
+        .lp-root{position:fixed;inset:0;z-index:10050;display:flex;align-items:flex-end;justify-content:center}
+        .lp-backdrop{position:absolute;inset:0;background:rgba(15,23,42,.5)}
+        .lp-card{position:relative;width:100%;max-width:440px;max-height:92vh;max-height:92dvh;overflow:auto;overscroll-behavior:contain;background:#fff;
+          border-radius:20px 20px 0 0;padding:18px 18px calc(14px + env(safe-area-inset-bottom));
           box-shadow:0 -8px 40px rgba(15,23,42,.18);animation:lpUp .28s ease-out;color:#0f172a;
           font-family:var(--font-body), system-ui, sans-serif}
         @media (min-width:768px){
@@ -327,21 +328,21 @@ export default function LeadPrompt() {
           background:#f1f5f9;color:#64748b;display:flex;align-items:center;justify-content:center;cursor:pointer}
         .lp-eyebrow{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
           color:#10b981;background:#ecfdf5;border-radius:999px;padding:4px 10px;margin-bottom:10px}
-        .lp-h{font-family:var(--font-display), var(--font-body), system-ui, sans-serif;font-size:21px;line-height:1.25;
+        .lp-h{font-family:var(--font-display), var(--font-body), system-ui, sans-serif;font-size:20px;line-height:1.25;
           font-weight:800;margin:0 36px 6px 0;color:#0f172a}
-        .lp-sub{font-size:14px;line-height:1.5;color:#64748b;margin:0 0 12px}
-        .lp-points{list-style:none;margin:0 0 14px;padding:0;display:grid;gap:6px}
+        .lp-sub{font-size:14px;line-height:1.45;color:#64748b;margin:0 0 10px}
+        .lp-points{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:4px}
         .lp-points li{display:flex;align-items:center;gap:8px;font-size:13.5px;color:#334155}
         .lp-points svg{color:#10b981;flex-shrink:0}
-        .lp-form{display:grid;gap:10px}
+        .lp-form{display:grid;gap:8px}
         .lp-field{display:grid;gap:4px}
         .lp-field>span{font-size:12px;font-weight:600;color:#334155}
-        .lp-field input,.lp-field select{width:100%;font:inherit;font-size:16px;padding:11px 12px;border:1px solid #cbd5e1;
+        .lp-field input,.lp-field select{width:100%;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cbd5e1;
           border-radius:12px;background:#fff;color:#0f172a;outline:none}
         .lp-field input:focus,.lp-field select:focus{border-color:#f97316;box-shadow:0 0 0 3px rgba(249,115,22,.15)}
         .lp-phone{display:flex;align-items:stretch;border:1px solid #cbd5e1;border-radius:12px;overflow:hidden}
         .lp-phone:focus-within{border-color:#f97316;box-shadow:0 0 0 3px rgba(249,115,22,.15)}
-        .lp-phone em{font-style:normal;font-size:15px;font-weight:600;color:#64748b;padding:11px 10px;background:#f8fafc;
+        .lp-phone em{font-style:normal;font-size:15px;font-weight:600;color:#64748b;padding:10px;background:#f8fafc;
           border-right:1px solid #e2e8f0}
         .lp-phone input{border:0;border-radius:0;box-shadow:none !important}
         .lp-bad .lp-phone,.lp-bad>input{border-color:#ef4444}
@@ -352,7 +353,7 @@ export default function LeadPrompt() {
         .lp-cta:disabled{opacity:.7;cursor:default}
         .lp-err{font-size:13px;color:#ef4444;margin:0}
         .lp-err a{color:#0f172a;font-weight:700;text-decoration:underline}
-        .lp-trust{display:flex;align-items:center;justify-content:center;gap:6px;font-size:12px;color:#64748b;margin:12px 0 4px;text-align:center}
+        .lp-trust{display:flex;align-items:center;justify-content:center;gap:6px;font-size:12px;color:#64748b;margin:10px 0 2px;text-align:center}
         .lp-skip{display:block;margin:4px auto 0;border:0;background:none;font:inherit;font-size:13px;color:#94a3b8;
           text-decoration:underline;cursor:pointer;padding:6px}
         .lp-done{text-align:center;padding:8px 0 0}
@@ -361,8 +362,7 @@ export default function LeadPrompt() {
           display:flex;align-items:center;justify-content:center}
         .lp-wa{display:inline-flex;align-items:center;gap:8px;margin:6px 0 4px;padding:11px 16px;border-radius:12px;
           background:#25D366;color:#fff;font-weight:700;font-size:14px;text-decoration:none}
-        @keyframes lpUp{from{transform:translateY(24px);opacity:0}to{transform:none;opacity:1}}
-        @keyframes lpFade{from{opacity:0}to{opacity:1}}
+        @keyframes lpUp{from{transform:translateY(24px)}to{transform:none}}
       `}</style>
     </div>
   )
