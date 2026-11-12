@@ -4,6 +4,7 @@ import { validateBody } from '@/lib/validate-body'
 import { UNIVERSITIES } from '@/lib/data'
 import type { University, Program } from '@/lib/data'
 import { createSupabaseServiceClient } from '@/lib/supabase/service'
+import { ATTR_COOKIE, ATTRIBUTION_COLUMN_NAMES, attributionColumns, parseAttribution } from '@/lib/attribution'
 
 const escHtml = (s: string = '') => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')
 
@@ -124,6 +125,14 @@ export async function POST(req: NextRequest) {
         : sourcePage || source || 'website'
     const stateValue = state || 'Not specified'
 
+    // Where the visitor came from (lib/attribution.ts). A missing or broken
+    // cookie parses to null and the lead is recorded as direct; it never
+    // fails the request.
+    let attr = attributionColumns(null)
+    try {
+      attr = attributionColumns(parseAttribution(req.cookies.get(ATTR_COOKIE)?.value))
+    } catch { /* keep direct */ }
+
     // ── 1. EMAIL via Resend ─────────────────────────────────────────────────
     const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
 
@@ -172,6 +181,8 @@ export async function POST(req: NextRequest) {
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Interested In</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(programValue)}</td></tr>
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600">University</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(universityValue)}</td></tr>
               <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Source</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(sourceValue)}</td></tr>
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Channel</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(attr.channel)}${attr.utm_campaign ? ` (${escHtml(attr.utm_campaign)})` : ''}</td></tr>
+              <tr><td style="padding:8px;background:#f8fafc;font-weight:600">Landing page</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(attr.landing_page || 'Not captured')}</td></tr>
               ${couponCode ? `<tr><td style="padding:8px;background:#f8fafc;font-weight:600">Coupon</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(couponCode)}</td></tr>` : ''}
               ${bestTimeToCall ? `<tr><td style="padding:8px;background:#f8fafc;font-weight:600">Best Time</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(bestTimeToCall)}</td></tr>` : ''}
               ${notes ? `<tr><td style="padding:8px;background:#f8fafc;font-weight:600">Notes</td><td style="padding:8px;border-bottom:1px solid #e2e8f0">${escHtml(notes)}</td></tr>` : ''}
@@ -403,12 +414,44 @@ export async function POST(req: NextRequest) {
         // Refresh mutable fields on repeat submission. Don't touch stage,
         // next_call_date, or created_at — those belong to the CRM operator.
         await sb.from('leads').update(leadPayload).eq('id', existing.id)
+        // Attribution: fill only the columns that are still null, so the
+        // first known channel is kept. Separate and best effort, so a missing
+        // migration cannot block the refresh above.
+        try {
+          const { data: cur, error: curErr } = await sb
+            .from('leads')
+            .select(ATTRIBUTION_COLUMN_NAMES.join(','))
+            .eq('id', existing.id)
+            .single()
+          if (!curErr && cur) {
+            const row = cur as unknown as Record<string, string | null>
+            const patch: Record<string, string> = {}
+            for (const col of ATTRIBUTION_COLUMN_NAMES) {
+              const next = attr[col]
+              if (row[col] == null && next) patch[col] = next
+            }
+            if (Object.keys(patch).length) await sb.from('leads').update(patch).eq('id', existing.id)
+          }
+        } catch (attrErr) {
+          console.error('Supabase attribution fill failed:', attrErr)
+        }
       } else {
-        const { data: inserted, error: insErr } = await sb
+        let { data: inserted, error: insErr } = await sb
           .from('leads')
-          .insert(leadPayload)
+          .insert({ ...leadPayload, ...attr })
           .select('id')
           .single()
+        // PGRST204 = a column the API does not know. If the attribution
+        // migration has not been run yet, keep the lead and drop the
+        // attribution rather than losing both.
+        if (insErr && (insErr as { code?: string }).code === 'PGRST204') {
+          console.error('Attribution columns missing, run the lead_attribution migration:', insErr.message)
+          ;({ data: inserted, error: insErr } = await sb
+            .from('leads')
+            .insert(leadPayload)
+            .select('id')
+            .single())
+        }
         if (insErr) {
           // 23505 = unique_violation from the phone-digits index — a row
           // with a differently formatted phone already exists.
@@ -447,6 +490,9 @@ export async function POST(req: NextRequest) {
           program: programValue,
           university: universityValue,
           sourcePage: sourceValue,
+          channel: attr.channel,
+          landingPage: attr.landing_page || '',
+          utmCampaign: attr.utm_campaign || '',
           couponCode: couponCode || '',
           bestTimeToCall: bestTimeToCall || '',
           notes: notes || '',
