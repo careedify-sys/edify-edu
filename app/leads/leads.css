@@ -230,3 +230,17 @@
   .leads-scope .lhead .c-prog,.leads-scope .row .c-prog{display:none}
   .leads-scope .secure{order:9;margin-left:0}
 }
+
+/* Lead attribution: channel filter, 7-day channel counts, detail rows */
+.leads-scope .chan-bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--text-2);margin:0 0 12px}
+.leads-scope .chan-filter{display:flex;align-items:center;gap:6px;font-weight:600}
+.leads-scope .chan-filter select{font:inherit;font-weight:400;padding:4px 8px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text)}
+.leads-scope .chan-week{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.leads-scope .chan-week-lbl{color:var(--text-3)}
+.leads-scope .chan-none{color:var(--text-3)}
+.leads-scope .chan-chip{font:inherit;font-size:12px;padding:3px 9px;border:1px solid var(--border);border-radius:999px;background:var(--surface);color:var(--text-2);cursor:pointer}
+.leads-scope .chan-chip.on{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.leads-scope .attr{display:grid;gap:3px;font-size:12px;color:var(--text-2);margin:8px 0 2px}
+.leads-scope .attr-k{display:inline-block;min-width:96px;color:var(--text-3)}
+.leads-scope .attr-v{word-break:break-all}
+.leads-scope .attr-sub{color:var(--text-3)}

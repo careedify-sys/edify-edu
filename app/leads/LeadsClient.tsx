@@ -7,6 +7,12 @@ import { quickSchedule, saveOutcome, setNextCall, updateLeadFields } from './act
 const WD = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const MO = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
+// Leads with no channel recorded: everything before attribution shipped
+// (12 Nov 2026), the CSV import, and any lead whose migration-time insert
+// fell back. Shown as its own bucket, never folded into "direct".
+const NO_CHANNEL = 'not captured';
+function channelOf(l: Lead): string { return l.channel || NO_CHANNEL; }
+
 function todayISO() { return new Date().toISOString().slice(0, 10); }
 function parseISO(s: string) { const [y,m,d] = s.split('-').map(Number); return new Date(y, m-1, d); }
 function daysUntil(s: string): number {
@@ -215,6 +221,9 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
   });
   const [filter, setFilter] = useState<'new' | 'today' | 'all' | 'backlog' | Stage>('new');
   const [search, setSearch] = useState('');
+  // Channel filter: '' = any channel, NO_CHANNEL = leads with no channel
+  // recorded (everything before attribution shipped, and imports).
+  const [channelFilter, setChannelFilter] = useState<string>('');
   const [page, setPage] = useState(0);
   const [selId, setSelId] = useState<string | null>(initialLeads[0]?.id ?? null);
   const [waMode, setWaMode] = useState<TplKey | null>(null);
@@ -272,6 +281,7 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
     else if (filter === 'backlog') v = v.filter(l => l.imported);
     else if (filter === 'Fresh')   v = v.filter(l => l.stage === 'Fresh' && !l.imported);
     else if (filter !== 'all')     v = v.filter(l => l.stage === filter);
+    if (channelFilter) v = v.filter(l => channelOf(l) === channelFilter);
     const q = search.trim().toLowerCase();
     if (q) {
       v = v.filter(l =>
@@ -287,12 +297,12 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
       v.sort((a, b) => sortKey(a) - sortKey(b));
     }
     return v;
-  }, [leads, filter, search, isTodayLead, isNewLead]);
+  }, [leads, filter, channelFilter, search, isTodayLead, isNewLead]);
 
   // Pagination: 50 per page. Reset to page 0 whenever the filter or search
   // changes so we don't show an empty page after narrowing the list.
   const PAGE_SIZE = 50;
-  useEffect(() => { setPage(0); }, [filter, search]);
+  useEffect(() => { setPage(0); }, [filter, channelFilter, search]);
   const totalPages = Math.max(1, Math.ceil(visible.length / PAGE_SIZE));
   const currentPage = Math.min(page, totalPages - 1);
   const pageStart = currentPage * PAGE_SIZE;
@@ -311,6 +321,23 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
   const todayCount   = useMemo(() => leads.filter(isTodayLead).length, [leads, isTodayLead]);
   const newCount     = useMemo(() => leads.filter(isNewLead).length, [leads, isNewLead]);
   const backlogCount = useMemo(() => leads.filter(l => l.imported).length, [leads]);
+
+  // Channel options for the filter, and the "last 7 days by channel" counts
+  // (by last submission, imports excluded: the same window as the New tab).
+  const channelOptions = useMemo(() => {
+    const set = new Set<string>();
+    for (const l of leads) set.add(channelOf(l));
+    return Array.from(set).sort((a, b) => (a === NO_CHANNEL ? 1 : b === NO_CHANNEL ? -1 : a.localeCompare(b)));
+  }, [leads]);
+  const channelWeek = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const l of leads) {
+      if (!isNewLead(l)) continue;
+      const c = channelOf(l);
+      counts.set(c, (counts.get(c) || 0) + 1);
+    }
+    return Array.from(counts.entries()).sort((a, b) => b[1] - a[1]);
+  }, [leads, isNewLead]);
   // "Conversion" is fees-paid = Enrolled. Registered doesn't count — that's
   // deliberate; the tab count next to Registered surfaces the partial-win
   // pipeline separately.
@@ -446,6 +473,29 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
         <TabBtn label="Not interested" count={stageCount('Not interested')} on={filter==='Not interested'} onClick={()=>setFilter('Not interested')} />
         <span className="tab-sep" aria-hidden />
         <TabBtn label="Backlog"        count={backlogCount}              on={filter==='backlog'}       onClick={()=>setFilter('backlog')} muted />
+      </div>
+
+      <div className="chan-bar">
+        <label className="chan-filter">
+          Channel
+          <select value={channelFilter} onChange={e => setChannelFilter(e.target.value)}>
+            <option value="">All channels</option>
+            {channelOptions.map(c => <option key={c} value={c}>{c}</option>)}
+          </select>
+        </label>
+        <span className="chan-week">
+          <span className="chan-week-lbl">Last 7 days:</span>
+          {channelWeek.length === 0
+            ? <span className="chan-none">no leads</span>
+            : channelWeek.map(([c, n]) => (
+                <button
+                  key={c}
+                  className={`chan-chip${channelFilter === c ? ' on' : ''}`}
+                  onClick={() => setChannelFilter(channelFilter === c ? '' : c)}
+                  title={`Filter to ${c}`}
+                >{c} <b className="num">{n}</b></button>
+              ))}
+        </span>
       </div>
 
       <div className="main">
@@ -611,6 +661,13 @@ function DetailPane(props: {
         {iMail}<span>{l.email || '—'}</span>
         <span style={{ color: 'var(--text-3)' }}>·</span>
         {iPin}<span>{l.city || '—'}</span>
+      </div>
+
+      <div className="attr">
+        <div><span className="attr-k">Channel</span><b>{l.channel || 'not captured'}</b>{l.utm_campaign ? <span className="attr-sub"> · {l.utm_campaign}</span> : null}</div>
+        <div><span className="attr-k">Landing page</span><span className="attr-v">{l.landing_page || 'not captured'}</span></div>
+        <div><span className="attr-k">Form page</span><span className="attr-v">{l.source || 'not captured'}</span></div>
+        {l.referrer ? <div><span className="attr-k">Referrer</span><span className="attr-v">{l.referrer}</span></div> : null}
       </div>
 
       <div className="strip">

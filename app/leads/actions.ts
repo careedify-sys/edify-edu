@@ -63,6 +63,16 @@ export type Lead = {
   updated_at: string;
   last_submitted_at: string;
   imported: boolean;
+  // Attribution (supabase/migrations/20261112120000_lead_attribution.sql).
+  // Optional because the CRM falls back to the old select until that
+  // migration has run.
+  channel?: string | null;
+  landing_page?: string | null;
+  referrer?: string | null;
+  utm_source?: string | null;
+  utm_medium?: string | null;
+  utm_campaign?: string | null;
+  utm_content?: string | null;
 };
 
 // ── saveOutcome ────────────────────────────────────────────────────────────
