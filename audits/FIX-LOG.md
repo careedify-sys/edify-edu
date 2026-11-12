@@ -1,5 +1,20 @@
 # Fix log
 
+## 2026-11-12 · Unsourced salary figures removed from MBA specialisation hubs
+
+- **Why:** every /programs/mba/{spec} hub printed "Salary: Rs 3-6 LPA" and "Rs 8-18 LPA" under its career cards, and
+  a template FAQ answered "What is the salary after online MBA in X?" with Rs 3-6 / 6-12 / 10-25 LPA, which also went
+  into FAQPage schema. None of these bands has a source. Seven editorial hubs repeated similar bands in prose, and the
+  data-science hub had a salary-only FAQ. Rishi asked for them removed once /programs/mba/finance went into the index.
+- **What:** components/MBASpecHubClient.tsx: the two salary lines deleted. lib/specFaqs.ts: the salary FAQ deleted (so
+  every spec hub's FAQPage loses that question). lib/data/spec-hub-editorial.ts: the opening salary sentence removed
+  from the careerOutcomes paragraph on operations-management, marketing, artificial-intelligence,
+  human-resource-management, business-analytics, project-management and data-science (plus the "differentiator" and
+  "premium" sentences that only made sense after it), and the data-science salary FAQ deleted. No LPA figure remains in
+  these three files.
+- **Not touched:** app/programs/mba/specializations/[spec]/page.tsx still carries salary copy, but every path under it
+  301s via next.config.js, so it never renders.
+
 ## 2026-11-12 · MBA spec hubs list universities from lib/data.ts; /programs/mba/finance indexed
 
 - **Why:** /programs/mba/finance had been noindex since ef63fa7 (19 Aug) and no other indexable page targets "online

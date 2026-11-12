@@ -18,7 +18,7 @@ export const SPEC_HUB_EDITORIAL: Record<string, SpecHubEditorial> = {
     ],
     careerOutcomes: [
       "The typical trajectory runs from operations executive to operations manager, and then to plant head, city head, or supply chain lead roles. Common job titles after this MBA include supply chain analyst, procurement specialist, production planner, quality manager, logistics manager, and inventory controller. Manufacturing, e-commerce logistics, retail, FMCG, pharma, and third-party logistics firms hire for these roles across India.",
-      "Salary bands mirror the wider online MBA market: entry roles around Rs 3-6 LPA and mid-career roles around Rs 8-18 LPA, with plant-head and supply-chain-lead positions above that. Certifications stack well with this specialisation. Six Sigma (Green or Black Belt), PMP, and APICS CSCP are the three employers cite most often in operations job listings.",
+      "Certifications stack well with this specialisation. Six Sigma (Green or Black Belt), PMP, and APICS CSCP are the three employers cite most often in operations job listings.",
     ],
     faqs: [
       {
@@ -60,7 +60,7 @@ export const SPEC_HUB_EDITORIAL: Record<string, SpecHubEditorial> = {
     ],
     careerOutcomes: [
       "The career path typically moves from marketing executive to brand or product manager, and then to marketing head, VP marketing, or CMO roles. Common job titles include brand manager, product marketing manager, trade marketing manager, category manager, regional sales manager, and market research manager. FMCG, e-commerce, retail, telecom, banking, and media companies hire for these roles.",
-      "Salary growth follows the wider online MBA pattern: Rs 3-6 LPA at entry, Rs 8-18 LPA at mid-career, and higher for VP and CMO positions. What sets marketing apart is the breadth of industries that recruit. Almost every company with a consumer-facing product needs marketing managers. Google Ads, Meta Blueprint, and HubSpot certifications stack well for digital-leaning roles within this specialisation.",
+      "What sets marketing apart is the breadth of industries that recruit. Almost every company with a consumer-facing product needs marketing managers. Google Ads, Meta Blueprint, and HubSpot certifications stack well for digital-leaning roles within this specialisation.",
     ],
     faqs: [
       {
@@ -98,7 +98,7 @@ export const SPEC_HUB_EDITORIAL: Record<string, SpecHubEditorial> = {
     ],
     careerOutcomes: [
       "The career path runs from AI business analyst or ML product associate to AI product manager, AI transformation lead, and eventually Chief AI Officer or VP of AI strategy. Organizations hiring for these roles include IT services companies running AI practices, banks automating credit and risk, e-commerce firms building recommendation engines, healthcare companies deploying diagnostic AI, and consulting firms with AI advisory teams.",
-      "Salary expectations align with the tech-adjacent MBA market: Rs 4-7 LPA at entry, Rs 10-20 LPA at mid-career for AI product and strategy roles. The differentiator is that AI management roles are newer, so fewer candidates compete for them. AWS Machine Learning Specialty, Google Cloud Professional ML Engineer, and Stanford HAI certificates complement this MBA for employers who value technical fluency alongside business acumen.",
+      "AWS Machine Learning Specialty, Google Cloud Professional ML Engineer, and Stanford HAI certificates complement this MBA for employers who value technical fluency alongside business acumen.",
     ],
     faqs: [
       {
@@ -136,7 +136,7 @@ export const SPEC_HUB_EDITORIAL: Record<string, SpecHubEditorial> = {
     ],
     careerOutcomes: [
       "The career path runs from HR executive to HR manager or HRBP, and then to talent acquisition head, compensation and benefits head, L&D head, or CHRO. Job titles include HR generalist, recruitment manager, employee engagement manager, compensation analyst, HRIS specialist, and HR analytics manager. IT services, manufacturing, banking, FMCG, consulting, and healthcare are the top hiring industries.",
-      "Salary growth follows the standard online MBA band: Rs 3-6 LPA at entry and Rs 8-18 LPA at mid-career, with CHRO and VP-HR roles going higher. What makes HR distinctive is that every company above 200 employees needs a structured HR team, so the job market is wide and recession-resistant. SHRM-CP, SHRM-SCP, and HRCI PHR certifications are the most valued add-ons for this specialisation.",
+      "What makes HR distinctive is that every company above 200 employees needs a structured HR team, so the job market is wide and recession-resistant. SHRM-CP, SHRM-SCP, and HRCI PHR certifications are the most valued add-ons for this specialisation.",
     ],
     faqs: [
       {
@@ -178,7 +178,7 @@ export const SPEC_HUB_EDITORIAL: Record<string, SpecHubEditorial> = {
     ],
     careerOutcomes: [
       "The career trajectory moves from business analyst or data analyst to analytics manager, BI manager, and then head of analytics or data strategy lead. Common job titles include BI analyst, MIS manager, marketing analytics manager, risk analytics manager, pricing analyst, and customer insights manager. IT services, banking, e-commerce, retail, telecom, and consulting firms are the largest recruiters.",
-      "Salary growth is slightly above the general MBA average because analytics roles command a premium: Rs 4-7 LPA at entry and Rs 10-20 LPA at mid-career. The advantage of Business Analytics over Data Science is breadth. Analytics managers work across every business function, while data scientists are often concentrated in engineering teams. Tableau, Power BI, SQL, and Google Data Analytics certifications are the most useful add-ons.",
+      "The advantage of Business Analytics over Data Science is breadth. Analytics managers work across every business function, while data scientists are often concentrated in engineering teams. Tableau, Power BI, SQL, and Google Data Analytics certifications are the most useful add-ons.",
     ],
     faqs: [
       {
@@ -216,7 +216,7 @@ export const SPEC_HUB_EDITORIAL: Record<string, SpecHubEditorial> = {
     ],
     careerOutcomes: [
       "The career path moves from project coordinator or PMO analyst to project manager, delivery manager, programme manager, and then VP of delivery or chief of staff roles. Industries hiring project management MBAs include IT services (the single largest recruiter), construction and infrastructure, consulting, banking transformation programmes, defence and government projects, and manufacturing capital projects.",
-      "Salary expectations track slightly above the average online MBA because PMP-certified project managers command a premium: Rs 4-7 LPA at entry and Rs 10-22 LPA at mid-career, with programme director roles above that. The PMP certification from PMI is the single most valuable add-on. PRINCE2 Foundation, Certified ScrumMaster (CSM), and SAFe Agilist are also commonly stacked with this MBA for IT delivery roles.",
+      "The PMP certification from PMI is the single most valuable add-on. PRINCE2 Foundation, Certified ScrumMaster (CSM), and SAFe Agilist are also commonly stacked with this MBA for IT delivery roles.",
     ],
     faqs: [
       {
@@ -253,7 +253,7 @@ export const SPEC_HUB_EDITORIAL: Record<string, SpecHubEditorial> = {
     ],
     careerOutcomes: [
       "The career path runs from data analyst or ML associate to data science manager, ML engineering manager, head of analytics, and Chief Data Officer. Industries hiring include IT services, banking and financial services (credit scoring, fraud detection), e-commerce (recommendation engines, demand forecasting), fintech, healthtech, and consulting. Data science management roles sit at the intersection of engineering and business, which is exactly where this MBA positions you.",
-      "Salary growth is among the highest across MBA specialisations: Rs 5-8 LPA at entry and Rs 12-25 LPA at mid-career for data science manager roles. The premium exists because demand for data-literate managers outstrips supply. AWS Certified Machine Learning, Google Professional ML Engineer, and TensorFlow Developer certifications complement this MBA for professionals who want to signal technical depth alongside management credibility.",
+      "AWS Certified Machine Learning, Google Professional ML Engineer, and TensorFlow Developer certifications complement this MBA for professionals who want to signal technical depth alongside management credibility.",
     ],
     faqs: [
       {
@@ -271,10 +271,6 @@ export const SPEC_HUB_EDITORIAL: Record<string, SpecHubEditorial> = {
       {
         q: "Is an online MBA in Data Science valued by employers?",
         a: "Yes, if from a UGC-DEB approved university. Employers in India increasingly value the MBA plus data science combination because it produces managers who can talk to both engineering teams and business stakeholders. Your portfolio of projects and certifications will matter as much as the degree itself.",
-      },
-      {
-        q: "What is the salary after an MBA in Data Science?",
-        a: "Entry-level data analyst and ML associate roles pay Rs 5-8 LPA. Mid-career data science manager and ML engineering manager roles pay Rs 12-25 LPA. Senior roles like Head of Data Science and CDO can go significantly higher. The premium is driven by the shortage of professionals who combine data science depth with management breadth.",
       },
       {
         q: "Which tools should I learn alongside this MBA?",

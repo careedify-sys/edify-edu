@@ -189,14 +189,12 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
               <ul className="text-sm text-slate-600 space-y-1">
                 {canonical.typicalRoles.entry.map((r, i) => <li key={i}>- {r}</li>)}
               </ul>
-              <p className="text-xs text-slate-400 mt-2">Salary: Rs 3-6 LPA</p>
             </div>
             <div className="rounded-xl border border-slate-200 bg-white p-5">
               <h3 className="text-sm font-bold mb-2 text-amber-600">Mid to Senior Roles (3-8 yr)</h3>
               <ul className="text-sm text-slate-600 space-y-1">
                 {canonical.typicalRoles.mid.map((r, i) => <li key={i}>- {r}</li>)}
               </ul>
-              <p className="text-xs text-slate-400 mt-2">Salary: Rs 8-18 LPA</p>
             </div>
             <div className="rounded-xl border border-slate-200 bg-white p-5">
               <h3 className="text-sm font-bold mb-2 text-amber-600">Industries Hiring</h3>
