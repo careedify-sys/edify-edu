@@ -1,5 +1,27 @@
 # Fix log
 
+## 2026-11-12 · Online executive MBA post merged into the top-executive-MBA post
+
+- **Why:** /blog/online-executive-mba-india-2026 averaged position 25.66 (584 impressions, 2 clicks);
+  /blog/top-executive-mba-programs-india-2026 averaged 10.05 (4,644 impressions, 32 clicks) and already had Tier 3
+  "Online Executive" and Tier 4 "Upgraded Online MBA" sections on the same ground. The 1-year MBA and IIM executive
+  posts serve other searches and stay.
+- **Moved** (as H3s under Tier 3, before Tier 4): the "Executive" label trap, the IIT Roorkee EMBA on Coursera, sponsor
+  route vs self-pay, negotiating employer sponsorship, and the industry-by-industry acceptance picture. Rewritten for
+  flow; only claims already in the source. Title, H1, meta unchanged; updatedAt 2026-11-12. The template-injected Amity
+  video is not duplicated (no Amity mention in the moved copy).
+- **Left behind, and why:** every rupee figure (the "Rs 1.5 to 2 lakh" online MBA band, IIM B EPGP Rs 33.71 lakh;
+  none would pass check-blog-fees as MATCH); "UGC-recognised IIT degree" and "Public Institute of National Importance"
+  (not in lib/data.ts; the target already states the first); the executive-DBA "only with a UGC equivalence
+  certificate" line (a UGC claim with no source in the repo); "tax-deductible" and "CSR" in the sponsor route (tax
+  claims, and CSR cannot fund employee benefit); the 3-to-10-from-30-plus shortlist and "above Rs 500 Cr revenue"
+  figures; and the sector acceptance percentages attributed to "2025 Naukri.com and LinkedIn Talent Insights
+  surveys" (no source in hand, not an approved source). The sector section keeps the order, without numbers.
+- **Retired:** source set to status 'redirected' and a permanent redirect added in next.config.js, the same pattern
+  as the verify consolidations. Links repointed straight to the target: nmims-online-admission-guide. The target's own
+  card to the source and the IIM executive post's card were removed (each post already links the target), with
+  updatedAt bumped on the IIM post. The 1-year MBA and IIM executive posts already link the target, so no link added.
+
 ## 2026-11-12 · /best-online-mba-india merged into the best-online-MBA blog post
 
 - **Why:** two pages split "best online MBA". /blog/best-online-mba-colleges-india-2026 averaged position 5.91 (2,844

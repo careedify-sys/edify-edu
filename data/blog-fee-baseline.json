@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-05",
+  "updatedAt": "2026-11-12",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 2164,
+  "totalUnverified": 2144,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 0,
@@ -61,7 +61,7 @@
     "distance-mba-hyderabad-2026": 12,
     "online-mba-ahmedabad-gujarat-2026": 14,
     "top-free-online-mba-courses-2026": 7,
-    "online-executive-mba-india-2026": 20,
+    "online-executive-mba-india-2026": 0,
     "online-executive-mba-iim-2026": 18,
     "distance-mba-colleges-mumbai-2026": 15,
     "du-online-mba-delhi-university-2026": 9,

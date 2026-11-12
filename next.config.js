@@ -728,6 +728,15 @@ const nextConfig = {
       // and lib/best-mba-ranking.ts from the parent of the commit adding this.
       { source: '/best-online-mba-india', destination: '/blog/best-online-mba-colleges-india-2026', permanent: true },
 
+      // ── Executive MBA consolidation (2026-11-12) ─────────────────────────
+      // /blog/online-executive-mba-india-2026 averaged position 25.66 (584
+      // impressions, 2 clicks) while the top-executive post averaged 10.05
+      // (4,644, 32 clicks) and already covered the same tiers. Five sections
+      // moved into the target's Tier 3 area; the source is status:'redirected'
+      // in lib/blog.ts, the same pattern as the verify consolidations below. To
+      // undo: delete this rule and set the source back to 'published'.
+      { source: '/blog/online-executive-mba-india-2026', destination: '/blog/top-executive-mba-programs-india-2026', permanent: true },
+
       // ── /blog/is-{uni}-fake-or-legit → /verify/{uni}  (2026-09-14) ──────
       // REVERTED 2026-10-07. The 14 entries that were here are gone and all
       // 14 posts are status:'published' again. The reasoning below is kept
