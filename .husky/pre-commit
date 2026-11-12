@@ -147,6 +147,15 @@ node scripts/check-page-content-json.mjs || exit 1
 echo "pre-commit: check-sitemap-lastmod"
 npx tsx scripts/build-sitemap-lastmod.mjs --check || exit 1
 
+# A blog post's updatedAt drives its sitemap lastmod and Article dateModified,
+# and it was not bumped when content changed (BITS review said 2026-05-04 after
+# a 4 Nov rewrite). Blocks a staged lib/blog.ts where a post's rendered content
+# (body, tables, answer sections, FAQs) changed but updatedAt did not. Title,
+# meta, H1, link-only and video edits are exempt. Never edits lib/blog.ts.
+# See scripts/lib/blog-content-text.mjs for the definition.
+echo "pre-commit: check-blog-updated-at"
+npx tsx scripts/check-blog-updated-at.mts || exit 1
+
 echo "pre-commit: check-duplicate-slugs"
 npx tsx scripts/check-duplicate-slugs.mjs || exit 1
 

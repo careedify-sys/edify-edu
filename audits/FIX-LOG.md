@@ -1,5 +1,25 @@
 # Fix log
 
+## 2026-11-12 · Blog updatedAt backfilled from git history; gate added
+
+- **Why:** updatedAt feeds both sitemap lastmod and Article dateModified, and nobody bumped it. The BITS Pilani review
+  showed 2026-05-04 although its answer sections landed on 4 Nov (333bbf6); the Amity review showed 2026-10-28 after a
+  4 Nov edit.
+- **Definition:** scripts/lib/blog-content-text.mjs. The page renders post.content (through addHeadingIds and
+  splitLongParagraphsHtml, markup-only) plus post.faqs; lib/answers/* reaches readers only through sections written
+  into post.content, so comparing post.content covers it. Counts: visible body text, tables, answer sections, FAQs.
+  Exempt: title, seoTitle, meta, H1 (not in content), link-only edits (tags are stripped), and the hand-pasted YouTube
+  block 7c2e0c5 added and a488015 moved to the template.
+- **Backfill:** scripts/backfill-blog-updated-at.mts walked 192 non-merge commits since 2026-08-01 that touched
+  lib/blog.ts, evaluated BLOG_POSTS before and after each, and took the first .find() entry per slug. 125 commits
+  changed some post's content. 164 posts moved forward (none back). Creation of a post is not a change.
+  BITS lands on 2026-11-05, not 11-04: c9b0c94 changed the JAIN fee cell in its comparison table that day.
+  No duplicate slugs. Merge commits were skipped (none resolved content conflicts in this range, not proven).
+- **Caveat:** bulk sweeps count. 8359b5b (MUJ/UU fee charts, 88 posts), 9eea6da (CU fee, 53) and f72bf60 (125+ count,
+  15) all changed visible body text, so the posts they touched carry those dates.
+- **Gate:** scripts/check-blog-updated-at.mts in pre-commit loads BLOG_POSTS from HEAD and from the index (git show to a
+  temp file), and fails with the slug list when content changed and updatedAt did not. It never edits lib/blog.ts.
+
 ## 2026-11-12 · Sitemap lastmod for university URLs from git history, not file mtime
 
 - **Why:** the live sitemap gave all 330 dated university URLs a lastmod of 2026-11-12, the build day, while no

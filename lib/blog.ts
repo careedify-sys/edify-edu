@@ -66,6 +66,7 @@ export const getBlogPost = getPostBySlug
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "srm-online-mba-2026",
+    updatedAt: "2026-11-04",
     heroImage: "https://images.pexels.com/photos/37145891/pexels-photo-37145891.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     heroImageAlt: "Modern red-brick university campus building in India under daylight.",
     heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@mohammad-rashid-raza-439663678\" target=\"_blank\" rel=\"noopener nofollow\">Mohammad Rashid Raza</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
@@ -88,6 +89,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-supply-chain-logistics-professionals-india-2026",
+    updatedAt: "2026-09-29",
     heroImage: "https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     heroImageAlt: "Team working in an industrial warehouse discussing and organizing inventory with pallets.",
     heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@tiger-lily\" target=\"_blank\" rel=\"noopener nofollow\">Tiger Lily</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
@@ -134,6 +136,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-doctors-mbbs-india-2026",
+    updatedAt: "2026-09-29",
     heroImage: "https://images.pexels.com/photos/6129112/pexels-photo-6129112.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     heroImageAlt: "A doctor in a lab coat reviews a medical chart in a hospital hallway.",
     heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@rdne\" target=\"_blank\" rel=\"noopener nofollow\">RDNE Stock project</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
@@ -157,6 +160,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-retail-professionals-india-2026",
+    updatedAt: "2026-09-29",
     heroImage: "https://images.pexels.com/photos/5864244/pexels-photo-5864244.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     heroImageAlt: "Customers browsing clothing in a stylish boutique store with elegant interior design.",
     heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@rachel-claire\" target=\"_blank\" rel=\"noopener nofollow\">Rachel Claire</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
@@ -226,6 +230,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-insurance-professionals-india-2026",
+    updatedAt: "2026-09-29",
     heroImage: "https://images.pexels.com/photos/7734574/pexels-photo-7734574.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     heroImageAlt: "Close-up image of two people signing an insurance policy document on a wooden desk.",
     heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@mikhail-nilov\" target=\"_blank\" rel=\"noopener nofollow\">Mikhail Nilov</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
@@ -272,6 +277,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-business-analysts-india-2026",
+    updatedAt: "2026-09-29",
     heroImage: "https://images.pexels.com/photos/3183131/pexels-photo-3183131.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     heroImageAlt: "Coworkers analyzing data charts on laptops during a team meeting.",
     heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@fauxels\" target=\"_blank\" rel=\"noopener nofollow\">fauxels</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
@@ -318,6 +324,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-medical-representatives-pharma-2026",
+    updatedAt: "2026-09-29",
     heroImage: "https://images.pexels.com/photos/9155927/pexels-photo-9155927.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     heroImageAlt: "Close-up of doctor writing prescription with medicines and stethoscope on desk.",
     heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@towfiqu-barbhuiya-3440682\" target=\"_blank\" rel=\"noopener nofollow\">Towfiqu barbhuiya</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
@@ -341,6 +348,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-hr-executives-india-2026",
+    updatedAt: "2026-09-29",
     heroImage: "https://images.pexels.com/photos/36733328/pexels-photo-36733328.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     heroImageAlt: "Confident woman interviewing candidate in a modern office.",
     heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@silverkblack\" target=\"_blank\" rel=\"noopener nofollow\">Vitaly Gariev</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
@@ -387,6 +395,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mba-nurses-healthcare-professionals-india-2026",
+    updatedAt: "2026-09-29",
     heroImage: "https://images.pexels.com/photos/6129194/pexels-photo-6129194.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     heroImageAlt: "A nurse in blue scrubs reads a folder near an emergency room sign in a hospital.",
     heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@rdne\" target=\"_blank\" rel=\"noopener nofollow\">RDNE Stock project</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
@@ -1310,6 +1319,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "is-nmims-online-fake-or-legit-2026",
+    updatedAt: "2026-11-06",
     title: "Is NMIMS Online Fake or Legit? UGC Did Debar It Once, and That Story Has an Ending",
     seoTitle: "Is NMIMS Online Fake? No. But Read the 2023 UGC Notice",
     metaDescription: "NMIMS online is UGC-DEB entitled, NAAC A++ and AICTE approved. UGC did debar it from online programmes for three sessions in 2023. Here is what changed since.",
@@ -2103,6 +2113,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "is-ignou-fake-or-legit-2026",
+    updatedAt: "2026-09-15",
     title: "Is IGNOU Fake or Legit? The Real Question Is Not the One You Are Asking",
     seoTitle: "Is IGNOU Fake? No. Central University by Act of Parliament",
     metaDescription: "IGNOU: a central university created by Act of Parliament in 1985, with 141 programmes on the UGC-DEB register for 2025-26. Not fake. The question is respect.",
@@ -2656,7 +2667,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-mca-fees-india-2026-compared",
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-28",
     heroImage: "https://images.pexels.com/photos/6424583/pexels-photo-6424583.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     heroImageAlt: "Close-up of colorful programming code displayed on a computer monitor with a dark background.",
     heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@nemuel\" target=\"_blank\" rel=\"noopener nofollow\">Nemuel Sereti</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
@@ -2850,7 +2861,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-bca-fees-india-2026-compared",
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-28",
     heroImage: "https://images.pexels.com/photos/3776136/pexels-photo-3776136.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     heroImageAlt: "A woman sits on a desk in a university hallway, studying on a laptop.",
     heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@olly\" target=\"_blank\" rel=\"noopener nofollow\">Andrea Piacquadio</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
@@ -3508,6 +3519,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "amrita-online-mba-review",
+    updatedAt: "2026-11-06",
     heroImage: "https://images.pexels.com/photos/5538322/pexels-photo-5538322.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     heroImageAlt: "Concentrated Asian female in black blouse watching video lecture at laptop and taking notes sitting at table in cafe.",
     heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@zen-chung\" target=\"_blank\" rel=\"noopener nofollow\">Zen Chung</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
@@ -3794,6 +3806,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'ddu-gorakhpur-online-mba-review',
+    updatedAt: "2026-11-06",
     heroImage: 'https://images.pexels.com/photos/32662455/pexels-photo-32662455.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAlt: 'Young male student explores bookshelves in university library for research.',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@jatin-chaudhary-820545799" target="_blank" rel="noopener nofollow">Jatin  Chaudhary</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
@@ -4070,7 +4083,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'bharati-vidyapeeth-online-mba-review',
-    updatedAt: '2026-10-28',
+    updatedAt: "2026-11-06",
     heroImage: 'https://images.pexels.com/photos/6549598/pexels-photo-6549598.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAlt: 'A young adult studying with books and a laptop, focused on taking notes at a desk under a lamp.',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@tima-miroshnichenko" target="_blank" rel="noopener nofollow">Tima Miroshnichenko</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
@@ -4374,6 +4387,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'parul-online-mba-review',
+    updatedAt: "2026-11-06",
     heroImage: 'https://images.pexels.com/photos/6697368/pexels-photo-6697368.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAlt: 'Person gesturing towards a laptop displaying a video call participant in a cozy room.',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@tim-samuel" target="_blank" rel="noopener nofollow">Tim  Samuel</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
@@ -4828,6 +4842,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'is-online-mba-worth-it-2026',
+    updatedAt: "2026-10-27",
     title: 'Is Online MBA Worth It in 2026? The Honest Truth',
     seoTitle: 'Is Online MBA Worth It in 2026? Honest Truth',
     metaDescription: 'Is an online MBA worth it in 2026? Yes, if the university is UGC-DEB entitled for your session and you need the degree while working. The checks that decide it.',
@@ -5129,6 +5144,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'affordable-online-mba-india-2026',
+    updatedAt: "2026-11-04",
     title: 'Affordable Online MBA in India 2026: Cheapest Programs Ranked by Fee',
     seoTitle: 'Cheapest Online MBA in India 2026: NAAC Accredited Options',
     metaDescription: 'Looking for an affordable online MBA in India in 2026? Compare fees from ₹54K to ₹1.5L, check UGC approvals, and find the cheapest programs worth your money.',
@@ -5312,7 +5328,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'online-mba-for-working-professionals-india',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'Online MBA for Working Professionals India 2026: Guide',
     seoTitle: 'Online MBA for Working Professionals 2026: How to Choose',
     metaDescription: 'An online MBA suits working professionals when the university is UGC-DEB entitled for your session. How to choose one around a full-time job.',
@@ -5527,6 +5543,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'symbiosis-online-mba-review-2026',
+    updatedAt: "2026-11-04",
     title: 'Symbiosis Online MBA Fees 2026: ₹3,70,000 and Review',
     seoTitle: 'Symbiosis Online MBA Fees 2026: ₹3,70,000 and Review',
     h1Title: 'Symbiosis (SSODL) Online MBA Fees 2026: ₹3,70,000, or ₹3,15,000 With the Work-Experience Scholarship',
@@ -5684,7 +5701,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'nmims-online-mba-review-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-06",
     title: 'NMIMS Online MBA Fees 2026: ₹1,96,000–₹2,20,000 and Review',
     seoTitle: 'NMIMS Online MBA Fees 2026: ₹1,96,000–₹2,20,000 and Review',
     h1Title: 'NMIMS Online MBA Fees 2026: ₹1,96,000–₹2,20,000, Specialisations and Our Review',
@@ -5967,7 +5984,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'ignou-online-mba-review-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-29",
     // Sprint 1 revert: title/seoTitle/metaDescription reverted to pre-Sprint values
     // pending a separate A/B test. Cross-link callout at top of content field kept.
     title: 'IGNOU Online MBA Fees 2026: ₹66,000 and Review',
@@ -6163,7 +6180,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'online-manipal-mba-review-2026',
-    updatedAt: '2026-10-29',
+    updatedAt: "2026-10-30",
     title: 'Online Manipal MBA Review 2026: MAHE vs MUJ vs SMU Compared',
     seoTitle: 'Online Manipal MBA 2026: MAHE vs MUJ vs SMU Fees and NIRF',
     metaDescription: 'Compare Online Manipal MBA from MAHE, MUJ and SMU on fees, specialisations, rankings and student feedback. Full honest review for 2026.',
@@ -6307,7 +6324,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'mahe-online-mba-review-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'MAHE Online MBA Fees 2026: ₹2,92,000 and Review',
     seoTitle: 'MAHE Online MBA Fees 2026: ₹2,92,000 and Review',
     h1Title: 'Manipal Academy of Higher Education (MAHE) Online MBA Fees 2026: ₹2,92,000, Specialisations and Our Review',
@@ -6572,7 +6589,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'muj-online-mba-review-2026',
-    updatedAt: '2026-10-29',
+    updatedAt: "2026-11-04",
     title: 'MUJ Online MBA Fees 2026: ₹1,84,000 (₹1,56,400 After 15%)',
     seoTitle: 'MUJ Online MBA Fees 2026: ₹1,84,000 (₹1,56,400 After 15%)',
     h1Title: 'Manipal University Jaipur (MUJ) Online MBA Fees 2026: ₹1,84,000 List, ₹1,56,400 After the 15% Discount, Specialisations and Our Review',
@@ -6782,6 +6799,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'career-after-mba-jobs-salary-scope-2026',
+    updatedAt: "2026-10-29",
     title: 'Career After MBA 2026: Top Jobs and Salary in India',
     h1Title: 'Career After MBA: Top Jobs and Salaries in India',
     metaDescription: 'Career after MBA India 2026: top 10 highest-paying jobs, salary by specialisation, online MBA career outcomes and ROI analysis for working professionals.',
@@ -7013,6 +7031,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'career-after-bcom-jobs-salary-courses-2026',
+    updatedAt: "2026-11-04",
     title: 'Career After B.Com 2026: Top Jobs, Salary and Best Courses',
     h1Title: "Career Options After B.Com: Jobs, Salaries and Courses Worth Considering",
     metaDescription: 'Career after B.Com 2026: top jobs (CA, MBA, banking), salary ₹3L to ₹18L, best courses and which stream builds the fastest career growth for commerce graduates.',
@@ -7245,7 +7264,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: '1-year-mba-india-executive-mba-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: '1 Year MBA India 2026: Degree vs Diploma Compared',
     seoTitle: '1 Year MBA India 2026: PGPX vs PGP vs Online, Real Tier Picker | Edify',
     metaDescription: '1 year MBA India 2026: IIMA PGPX Rs 35L, ISB Rs 38L, IIMB EPGP Rs 33.71L, BITS WILP Rs 3.5L, JGU 1-year online MBA Rs 2L (AACSB, IoE).',
@@ -7795,7 +7814,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-fees-india-complete-guide-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'MBA Fees India 2026: All Programs Compared with Costs',
     seoTitle: 'MBA Fees India 2026: Rs 31K Online to Rs 27L at IIM',
     metaDescription: 'MBA fees India 2026 complete guide: IIM Rs 27L, ISB Rs 45L, private Rs 8-25L, online Rs 31K-2.25L. Hidden costs, ROI math, payback timelines, EMI options.',
@@ -8184,6 +8203,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'iim-online-mba-india-2026',
+    updatedAt: "2026-10-29",
     title: 'IIM Online MBA 2026: Fees, Eligibility and Honest Verdict',
     seoTitle: 'IIM Online MBA 2026: Ahmedabad, Bangalore, Kozhikode Fees',
     h1Title: 'IIM Online MBA: Fees, Eligibility and an Honest Verdict',
@@ -8396,6 +8416,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'career-after-12th-arts-courses-jobs-2026',
+    updatedAt: "2026-11-03",
     title: 'Career After 12th Arts 2026: Best Courses and Jobs',
     h1Title: "Career Options After 12th Arts: Courses and Jobs Worth Considering",
     metaDescription: 'Career after 12th arts in India 2026: best courses, jobs with high salary, BA, BBA, BCA options, and UGC-approved online degrees.',
@@ -8603,7 +8624,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-after-bca-is-it-good-career-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'MBA After BCA 2026: Is It Worth It? Salary and Jobs',
     seoTitle: 'MBA After BCA 2026: Is It Worth It, Best Spec, Salary Curve | Edify',
     metaDescription: 'MBA after BCA 2026: yes, with conditions. Best specs (Business Analytics, IT Mgmt), 10-year salary curve, MCA vs MBA decision, top online MBA picks.',
@@ -8854,6 +8875,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'govt-jobs-after-mba-india-2026',
+    updatedAt: "2026-08-13",
     title: 'Government Jobs After MBA 2026: PSU, Bank PO and UPSC',
     h1Title: 'Government Jobs After MBA: PSU, Bank PO and UPSC Paths',
     metaDescription: 'Govt jobs after MBA in India 2026: PSU, UPSC, banking, and government sector roles available to MBA graduates with salary details.',
@@ -9066,6 +9088,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'best-mba-specialization-india-2026',
+    updatedAt: "2026-10-27",
     title: 'Best MBA Specialisation India 2026: Salary by Spec',
     h1Title: 'Best MBA Specialisation in India: Salary by Specialisation',
     metaDescription: 'Complete guide to best MBA specialization in India 2026. Compare MBA Finance vs Marketing vs Data Science vs HR by salary, demand, difficulty, and career outcomes.',
@@ -9271,6 +9294,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'career-after-12th-science-courses-jobs-2026',
+    updatedAt: "2026-10-29",
     title: 'Career After 12th Science 2026: Best Courses and Jobs',
     h1Title: "Career Options After 12th Science: Courses and Jobs for PCM and PCB",
     metaDescription: 'Career after 12th science 2026: top 15 options, BCA vs B.Sc vs B.Tech comparison, salary data and best degrees for PCM and PCB students.',
@@ -9498,6 +9522,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'career-after-12th-commerce-courses-jobs-2026',
+    updatedAt: "2026-10-27",
     title: 'Career After 12th Commerce 2026: Best Courses and Jobs',
     seoTitle: 'Career After 12th Commerce 2026: Exam vs Degree Path',
     metaDescription: 'Career after 12th commerce 2026: CA vs BBA vs ACCA vs CS decision framework, Maths vs no-Maths impact, real 5-year salary outcomes by path.',
@@ -9737,7 +9762,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-after-bsc-is-it-good-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'MBA After BSc 2026: Is It Good? Salary and Career Guide',
     seoTitle: 'MBA After BSc India 2026: Spec by Stream and Salary Curve',
     metaDescription: 'MBA after BSc India 2026: BSc CS to Data Science Rs 10-18L, BSc Maths to Analytics, BSc Bio to Healthcare Mgmt. Real salary curve, MBA vs MSc decision.',
@@ -9972,7 +9997,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'online-mba-without-entrance-exam-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'Online MBA Without Entrance Exam India 2026: Guide',
     seoTitle: 'Online MBA Without Entrance Exam 2026: Direct Admission',
     metaDescription: 'Online MBA without entrance exam India 2026: UGC-DEB direct admission options, why exam-less programmes exist, and when you actually need an entrance exam.',
@@ -10869,7 +10894,7 @@ export const BLOG_POSTS: BlogPost[] = [
   // ── UGC DEB APPROVED UNIVERSITIES LIST ────────────────────────────────────
   {
     slug: 'ugc-deb-approved-universities-list-2026',
-    updatedAt: '2026-10-29',
+    updatedAt: "2026-11-02",
     title: 'UGC-DEB Approved Universities List 2026: How to Verify',
     seoTitle: 'UGC DEB Approved Universities List 2026: Verified and How to Check',
     metaDescription: 'Complete guide to UGC DEB approved universities for online degrees in India 2026. What approval means, how to verify on the official portal, and red flags to avoid.',
@@ -11084,7 +11109,7 @@ export const BLOG_POSTS: BlogPost[] = [
   // ── MBA VS PGDM ────────────────────────────────────────────────────────────
   {
     slug: 'mba-vs-pgdm-online-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-29",
     title: 'MBA vs PGDM India 2026: Differences and Which Is Better',
     seoTitle: 'PGDM vs MBA in India 2026: Which One Is Better?',
     metaDescription: 'PGDM vs MBA in India 2026: difference between AICTE diploma and UGC degree, fees, salary, government job validity, and which one employers prefer.',
@@ -11290,6 +11315,7 @@ export const BLOG_POSTS: BlogPost[] = [
   // ── ONLINE MBA SALARY INDIA ────────────────────────────────────────────────
   {
     slug: 'online-mba-salary-india-2026',
+    updatedAt: "2026-10-27",
     title: 'Online MBA Salary in India 2026: What to Expect',
     seoTitle: 'Online MBA Salary India 2026: Average, Specialization-wise, ROI',
     metaDescription: 'Online MBA salary in India 2026: average packages by specialisation, university, and experience. What you can realistically expect.',
@@ -11518,7 +11544,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'online-mba-lpu-review-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'LPU Online MBA Fees 2026: ₹2,00,000 and Review',
     seoTitle: 'LPU Online MBA Fees 2026: ₹2,00,000 and Review',
     h1Title: 'Lovely Professional University (LPU) Online MBA Fees 2026: ₹2,00,000, Specialisations and Our Review',
@@ -11988,7 +12014,7 @@ export const BLOG_POSTS: BlogPost[] = [
   // ── DISTANCE MBA KOLKATA ───────────────────────────────────────────────────
   {
     slug: 'distance-mba-kolkata-top-programs-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-27",
     title: 'Best Distance MBA in Kolkata 2026: Top Programs, Fees and Tips',
     seoTitle: 'Best Distance MBA in Kolkata: Top Programs and Tips',
     metaDescription: 'Distance MBA in Kolkata 2026: top UGC-approved programs, fees, colleges, and how to choose the right option for your career.',
@@ -12221,7 +12247,7 @@ export const BLOG_POSTS: BlogPost[] = [
   // ── ONLINE MBA PUNE ────────────────────────────────────────────────────────
   {
     slug: 'online-mba-pune-university-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-29",
     title: 'Online MBA Pune 2026: SPPU, Symbiosis and Top Programs',
     seoTitle: 'Online MBA Pune University 2026: SPPU vs SCDL, Fees, Admission',
     metaDescription: 'Online MBA Pune university 2026: UGC-approved programs, fees, Symbiosis SSODL, Parul, and top options for Pune-based professionals.',
@@ -12470,7 +12496,7 @@ export const BLOG_POSTS: BlogPost[] = [
   // ── DISTANCE MBA KERALA ───────────────────────────────────────────────────
   {
     slug: 'distance-mba-kerala-programs-2026',
-    updatedAt: '2026-10-29',
+    updatedAt: "2026-11-02",
     title: 'Distance MBA Kerala 2026: Top Colleges and Fees',
     seoTitle: 'Distance MBA in Kerala 2026, Top Programs, Fees & Admission Guide',
     metaDescription: 'Distance MBA in Kerala 2026, UGC-approved programs, fees, top colleges, and how Kerala professionals can earn a recognised degree.',
@@ -12666,7 +12692,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'is-online-degree-valid-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'Is Online Degree Valid in India 2026? UGC Says Yes',
     seoTitle: 'Is Online Degree Valid in India 2026? UGC Recognition Explained',
     metaDescription: 'Is online degree valid in India 2026? UGC-DEB approved degrees, government job eligibility, PSU rules, and what the law actually says.',
@@ -12912,7 +12938,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-after-engineering-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'MBA After Engineering India 2026: Worth It? Best Specs',
     seoTitle: 'MBA After Engineering India 2026: Worth It? Best Specialisations',
     metaDescription: 'MBA after engineering in India 2026: is it worth it, best specialisations for engineers, salary jump, and top colleges to consider.',
@@ -13134,7 +13160,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-finance-career-salary-scope-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-29",
     title: 'MBA Finance Career 2026: Salary and Scope in India',
     seoTitle: 'MBA Finance Career, Salary & Scope India 2026 | Edify',
     metaDescription: 'MBA Finance career India 2026: salary Rs 6L to Rs 22L, top jobs in investment banking, NBFC and fintech. Best universities for the Finance specialisation compared.',
@@ -13385,7 +13411,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-hr-career-salary-scope-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'MBA HR Career 2026: Salary and Scope in India',
     seoTitle: 'MBA HR Career, Salary & Scope India 2026 | Human Resource Management',
     metaDescription: 'MBA HR career salary and scope 2026, roles, average packages, top companies hiring MBA HR graduates, and how to choose the right college.',
@@ -13632,7 +13658,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-marketing-career-salary-jobs-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'MBA Marketing Career 2026: Salary and Jobs in India',
     seoTitle: 'MBA Marketing Career India 2026: Salary, Jobs, Digital Roles',
     metaDescription: 'MBA Marketing career India 2026: Rs 12.2 LPA median, 20% digital premium, D2C track, FMCG vs SaaS path, real salary by role and company tier.',
@@ -13892,7 +13918,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'distance-mba-bangalore-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'Distance MBA Bangalore 2026: Top Colleges and Fees',
     seoTitle: 'Distance MBA Bangalore 2026: JAIN vs Christ vs Manipal',
     metaDescription: 'Distance MBA Bangalore 2026: Whitefield vs Koramangala vs ORR job market map, JAIN A++ vs Christ vs Manipal vs Dayananda Sagar comparison.',
@@ -14163,7 +14189,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'online-mba-delhi-ncr-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'Online MBA Delhi NCR 2026: The Sub-Region Job Market Picker',
     seoTitle: 'Online MBA Delhi NCR 2026: Noida vs Delhi vs Gurgaon Picker | Edify',
     metaDescription: 'Online MBA Delhi NCR 2026: Noida vs Delhi vs Gurgaon vs Faridabad job market mapping, NAAC A+ options under Rs 2 lakh, Jamia Hamdard pick decoded.',
@@ -14428,7 +14454,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-data-science-analytics-career-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'MBA Data Science and Analytics Career and Salary India 2026',
     seoTitle: 'MBA Data Science & Analytics Career, Salary India 2026 | Edify',
     metaDescription: 'MBA Data Science and Analytics career India 2026: top jobs, salary data, which companies hire, best universities and MBA vs M.Sc comparison.',
@@ -14675,7 +14701,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'online-mba-for-freshers-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'Online MBA for Freshers India 2026: Is It Worth It?',
     seoTitle: 'Online MBA for Freshers India 2026: Real ROI vs Work-Ex Wait | Edify',
     metaDescription: 'Online MBA for freshers India 2026: 5-situation test for fresher MBA decision, ROI math vs waiting, specialisation by stream, NAAC A+ options.',
@@ -14917,7 +14943,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'online-mba-eligibility-criteria-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-27",
     title: 'Online MBA Eligibility India 2026: Criteria and Steps',
     seoTitle: 'Online MBA Eligibility India 2026: Cutoffs and Work-Ex Rules',
     metaDescription: 'Online MBA eligibility India 2026: 50% UGC norm, 45% reserved relaxation, 40% Amity exception, work-ex by university, what to do if you fall short.',
@@ -15171,7 +15197,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-or-mca-which-is-better-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'MBA or MCA: Which Is Better in 2026? Salary and Career',
     seoTitle: 'MBA or MCA Which Is Better 2026: Salary Curve, Career Path | Edify',
     metaDescription: 'MBA or MCA 2026: management vs technical career, Rs 6-25 LPA vs Rs 4-30 LPA salary curve, MCA plus MBA combo, online options compared.',
@@ -15464,7 +15490,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'online-mba-admission-process-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'Online MBA Admission Process India 2026: Month-by-Month',
     seoTitle: 'Online MBA Admission Process 2026: Timeline and Documents',
     metaDescription: 'Online MBA admission process India 2026: 8 steps, month-by-month timeline, document checklist, common rejection causes, early-bird fee waivers.',
@@ -15747,7 +15773,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-for-commerce-students-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'MBA for Commerce Students India 2026: Best Specs',
     seoTitle: 'MBA for Commerce Students India 2026: Best Specialisations & Careers',
     metaDescription: 'MBA for commerce students in India 2026, best specialisations after B.Com, fees, top colleges, and career outcomes for commerce graduates.',
@@ -15973,7 +15999,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-scope-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'MBA Scope in India 2026: Hiring Data Nobody Publishes',
     seoTitle: 'MBA Scope India 2026: Sector Hiring Data and Brand x Spec Salary Map',
     metaDescription: 'MBA scope India 2026: actual FY26 sector hiring numbers, growing vs shrinking industries, brand x specialisation salary matrix, online MBA outcomes.',
@@ -16446,6 +16472,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'online-mba-government-employees-india-2026',
+    updatedAt: "2026-11-04",
     title: 'Online MBA for Government Employees India: NOC + Promotion',
     seoTitle: 'Online MBA for Government Employees India 2026',
     metaDescription: 'Online MBA for government employees India 2026: CCS NOC rules, four promotion paths, UGC-DEB universities ranked, and how IGNOU compares to NMIMS or Symbiosis.',
@@ -16688,6 +16715,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-operations-management-career-2026',
+    updatedAt: "2026-11-04",
     title: 'MBA Operations Management Career 2026: Honest Salary Guide',
     seoTitle: 'MBA Operations Management Career 2026: Salary & Roles',
     metaDescription: 'MBA Operations Management career 2026: four career tracks, real Amazon and Flipkart salaries, UGC-DEB universities mapped to each track, and red flags.',
@@ -16915,7 +16943,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-international-business-career-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'MBA International Business Career 2026: Salary, Jobs & Truth',
     seoTitle: 'MBA International Business Career 2026: Salary & Roles',
     metaDescription: 'MBA International Business career India 2026: five career tracks, real salaries up to Rs 60L, UGC-DEB universities mapped to each track, and red flags.',
@@ -17170,7 +17198,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-digital-marketing-career-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'MBA Digital Marketing Career 2026: Salary & 5 Tracks',
     seoTitle: 'MBA Digital Marketing Career 2026: Salary & Roles',
     metaDescription: 'MBA Digital Marketing career 2026: five career tracks, real salaries up to Rs 60L, UGC-DEB universities ranked by NIRF, and when a short course beats an MBA.',
@@ -17718,7 +17746,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'distance-mba-hyderabad-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-27",
     title: 'Distance MBA Hyderabad 2026: Fees, Universities & ROI Truth',
     seoTitle: 'Distance MBA Hyderabad 2026: Best Programs & Fees',
     metaDescription: 'Distance MBA Hyderabad 2026: ICFAI, BRAOU and national UGC-DEB options for HITEC City IT, pharma and BFSI roles. Salaries, four career tracks, and red flags.',
@@ -18280,7 +18308,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'top-free-online-mba-courses-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'Free Online MBA Courses 2026: What Is Free vs Paid',
     seoTitle: 'Free Online MBA Courses 2026: SWAYAM and Self-Study Path',
     metaDescription: 'Free online MBA courses 2026: build a 12-month self-directed MBA from Wharton, MIT, Harvard, IIM SWAYAM. The "free certificate" trap explained.',
@@ -18506,7 +18534,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'online-executive-mba-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'Online Executive MBA India 2026: Real Programs and Fees',
     seoTitle: 'Online Executive MBA India 2026: Real Options, Trade-offs',
     metaDescription: 'Online executive MBA India 2026: which programs are real exec MBAs vs rebranded online MBAs, sponsor route, IIT Roorkee on Coursera, eligibility filters.',
@@ -18948,7 +18976,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'is-distance-mba-worth-it-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'Is Distance MBA Worth It in India 2026? Honest Answer',
     seoTitle: 'Is Distance MBA Worth It India 2026: 5 Situations, Real ROI Data | Edify',
     metaDescription: 'Is distance MBA worth it India 2026? ROI by career stage, salary uplift data, when distance vs online makes sense, employer acceptance by industry.',
@@ -19167,7 +19195,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'distance-mba-colleges-mumbai-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-29",
     title: 'Distance MBA Mumbai 2026: Top Colleges, Fees and Guide',
     seoTitle: 'Distance MBA Colleges in Mumbai 2026: NMIMS, Welingkar, MU | Edify',
     metaDescription: 'Distance MBA colleges in Mumbai 2026: UGC-approved programs, fees, top institutions, and how to shortlist the right college.',
@@ -19400,6 +19428,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'du-online-mba-delhi-university-2026',
+    updatedAt: "2026-10-29",
     title: 'DU Online MBA 2026: SOL Fees, Eligibility and Process',
     seoTitle: 'DU Online MBA 2026: Delhi University SOL MBA Guide | Edify',
     metaDescription: 'Delhi University online MBA 2026: DU SOL MBA program, fees, eligibility, recognition, and how it compares to other online MBA options.',
@@ -19670,6 +19699,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-international-online-global-programs-2026',
+    updatedAt: "2026-10-29",
     title: 'International MBA Online India 2026: Top Programs',
     seoTitle: 'MBA International Online 2026: AACSB, EQUIS, AMBA Programs',
     metaDescription: 'International online MBA 2026 for Indian students: UWA Global MBA Rs 5.95L with IIMK, Paris School Rs 12.5L, AACSB tier, real ROI vs Indian online MBA.',
@@ -19932,7 +19962,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'distance-mba-meaning-what-is-it-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'Distance MBA 2026: What It Is, Fees, and Complete Guide',
     seoTitle: 'Distance MBA 2026: Fees, Top Universities, Validity and How It Works',
     metaDescription: 'Distance MBA in India 2026: fees ₹66,000 to ₹2.25L. UGC-DEB validity, top universities, how exams work, online vs distance vs correspondence. Zero commission guide.',
@@ -20260,7 +20290,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'ma-distance-learning-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-27",
     title: 'MA Distance Learning India 2026: IGNOU and Top Programs',
     seoTitle: 'MA Distance Learning India 2026: IGNOU vs Private, Spec Picker | Edify',
     metaDescription: 'MA distance learning India 2026: IGNOU 43 specialisations Rs 8K-27K, private online MA, specialisation-by-career picker, UGC validity check.',
@@ -20542,7 +20572,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'online-mba-courses-chennai-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-27",
     title: 'Online MBA Chennai 2026: Top Programs, Fees and UGC',
     seoTitle: 'Online MBA Courses in Chennai 2026: Programmes and Fees',
     metaDescription: 'Online MBA Chennai 2026: Annamalai, Madras University, IGNOU and Amrita compared. UGC-DEB approved fees and specialisations for Tamil Nadu students.',
@@ -20774,7 +20804,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'top-correspondence-mba-colleges-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'MBA Correspondence Fees 2026: IGNOU to NMIMS, Complete Fee Guide',
     seoTitle: 'Correspondence MBA Fees 2026: Universities Compared',
     metaDescription: 'Top correspondence MBA colleges India 2026: 3-tier picker (premium, mid, budget), IGNOU to NMIMS, NAAC + UGC-DEB verified.',
@@ -21079,7 +21109,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'online-mba-vs-distance-mba-difference-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'Online MBA vs Distance MBA 2026: Key Differences',
     seoTitle: 'Online MBA vs Distance MBA Difference India 2026: 11 Factors Compared | Edify',
     metaDescription: 'Online MBA vs distance MBA difference 2026: regulatory split (Online vs ODL Regulations), live class hours gap, real fees, completion rates by mode.',
@@ -21345,7 +21375,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'correspondence-mba-meaning-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-27",
     title: 'Correspondence MBA Meaning 2026: What It Is Now Called',
     seoTitle: 'Correspondence MBA Meaning 2026: ODL, Validity and Options',
     metaDescription: 'Correspondence MBA meaning India 2026: the old name for ODL/distance MBA, why UGC retired the term, and which 2026 programmes still use it.',
@@ -21577,7 +21607,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'top-executive-mba-programs-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'Top Executive MBA Programs India 2026: 4-Tier Guide',
     seoTitle: 'Top Executive MBA Programs India 2026: 4 Tiers, Real Fees',
     metaDescription: 'Top Executive MBA programs India 2026: tier-by-tier picker (Rs 33L IIM B EPGP to Rs 1.5L online), sector fit, real 2026 fees, eligibility filters.',
@@ -21786,7 +21816,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'icfai-online-mba-fees-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'ICFAI Online MBA Fees: What to Verify Before You Apply in 2026',
     seoTitle: 'ICFAI Online MBA Fees 2026, Approval and Alternatives',
     metaDescription: 'ICFAI online MBA fees, specialisations, UGC approval status, and how it compares to JAIN Online, Chandigarh University, and NMIMS. What to verify before paying.',
@@ -21999,7 +22029,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'icfai-distance-mba-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'ICFAI Distance MBA 2026: The Self-Paced Model and Who It Suits',
     seoTitle: 'ICFAI Distance MBA 2026: Self-Paced Model and Approval',
     metaDescription: 'ICFAI distance MBA 2026: the self-paced workbook model, UGC-DEB approval check, ODL alternatives like IGNOU and NMIMS CDOE, sector fit.',
@@ -22247,7 +22277,7 @@ export const BLOG_POSTS: BlogPost[] = [
   // 301 redirect configured in next.config.js
   {
     slug: 'online-mba-fee-comparison-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-05",
     title: 'Online MBA Courses Fees 2026: Complete Fee Comparison Across India',
     seoTitle: 'Online MBA Courses Fees 2026: All Universities Compared, ₹80K to ₹3.7L',
     metaDescription: 'Online MBA courses fees 2026: all UGC-DEB universities compared. From ₹80,200 (Galgotias) to ₹3,70,000 (Symbiosis). Semester-wise, EMI, lumpsum breakdowns. Zero commission.',
@@ -22485,7 +22515,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'jamia-hamdard-mba-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     // Sprint 1 Task 5: blog owns the "review" intent, hub page owns "fees" intent.
     // Word "Fees" removed from title/seoTitle; verified fee data lives on the hub page.
     title: 'Jamia Hamdard Online MBA Review 2026: Worth It or Skip It?',
@@ -22759,6 +22789,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'is-mba-post-graduation-india-2026',
+    updatedAt: "2026-11-02",
     title: 'Is MBA Post Graduation India 2026? Yes, Here is Why',
     seoTitle: 'Is MBA Post Graduation India 2026? PG Status',
     metaDescription: 'Is MBA post graduation in India 2026? Yes, what it means for government jobs, UPSC eligibility, PhD admission, MBA vs PGDM, and online MBA PG status.',
@@ -22996,6 +23027,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'mba-course-duration-india-2026',
+    updatedAt: "2026-10-27",
     title: 'MBA Course Duration India 2026: All Formats Compared',
     seoTitle: 'MBA Course Duration India 2026: 1, 2 and 5 Year Formats',
     metaDescription: 'MBA course duration India 2026: full-time 2 years, executive 12-18 months, online 2 years, distance up to 5 years. All formats and eligibility compared.',
@@ -23197,7 +23229,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'amity-online-mba-review-2026',
-    updatedAt: '2026-10-28',
+    updatedAt: "2026-11-04",
     // Sprint 1 revert: title/seoTitle/metaDescription reverted to pre-Sprint values
     // pending a separate A/B test. Cross-link callout at top of content field kept.
     title: 'Amity Online MBA Fees 2026: ₹2,07,000–₹2,25,000 and Review',
@@ -23646,6 +23678,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'phd-full-form-doctorate-meaning-india',
+    updatedAt: "2026-11-02",
     title: 'PhD Full Form India 2026: Duration, Fees and Who Should Apply',
     seoTitle: 'PhD Full Form 2026: Doctor of Philosophy, Fees, Duration',
     metaDescription: `PhD full form is Doctor of Philosophy. Check 2026 duration, eligibility, fees, JRF stipend and whether online PhD is valid in India before you apply.`,
@@ -23951,6 +23984,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'cat-exam-syllabus-2026-complete-guide',
+    updatedAt: "2026-11-06",
     title: 'CAT Exam Syllabus 2026: Honest Section-by-Section Guide',
     seoTitle: `CAT 2026 Syllabus: Sections, Pattern and Prep Plan`,
     metaDescription: `CAT 2026 syllabus: VARC, DILR, QA section-wise topics, 66-question pattern, marking scheme, and prep plan. Notification expected end of July 2026.`,
@@ -24137,6 +24171,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'career-objective-for-fresher-resume-examples',
+    updatedAt: "2026-11-06",
     title: 'Career Objective for Fresher Resume: 15+ Real Examples',
     h1Title: "Career Objective Examples for a Fresher Resume, and Why Each Works",
     metaDescription: `15+ career objective examples for freshers in India, for MBA, engineering, commerce, arts graduates. Learn what to write and what to avoid.`,
@@ -24244,7 +24279,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'best-computer-courses-after-12th-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-06",
     title: 'Best Computer Courses After 12th India 2026: Top Picks',
     h1Title: "Best Computer Courses After 12th in India: Which One Fits Your Goal",
     metaDescription: `Best computer courses after 12th in India 2026: matched to your actual career goal, not just the popular list. BCA, MCA pathway, certifications and more.`,
@@ -24435,6 +24470,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'courses-after-12th-science-complete-list-2026',
+    updatedAt: "2026-10-27",
     title: 'Courses After 12th Science 2026: PCM and PCB Complete',
     h1Title: "Courses After 12th Science: The Full List for PCM and PCB Students",
     metaDescription: `Complete guide to courses after 12th Science in India 2026: PCM, PCB, PCMB options, admission routes, fees, and career outcomes explained honestly.`,
@@ -24617,7 +24653,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'iim-ranking-india-2026-all-iims-list',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-27",
     title: 'IIM Ranking India 2026: All 22 IIMs Compared by NIRF',
     seoTitle: `IIM Ranking India 2026: All 22 IIMs Ranked by NIRF`,
     metaDescription: `IIM ranking India 2026: all 22 IIMs ranked by NIRF Management 2025, fees, CAT cutoffs, and sector specialisation (finance, tech, consulting, FMCG).`,
@@ -24885,6 +24921,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'toughest-exams-india-world-2026',
+    updatedAt: "2026-11-06",
     title: `Toughest Exams India and World 2026: Pass Rates Ranked`,
     h1Title: "The Toughest Exams in India and the World, Ranked by Pass Rate",
     metaDescription: `Toughest exams in India and world 2026: UPSC, JEE Advanced, CA Final and GATE ranked by pass rate, prep time and career value. Which exam demands the most?`,
@@ -25272,6 +25309,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'cyber-security-salary-india-2026-career-guide',
+    updatedAt: "2026-11-06",
     title: `Cyber Security Salary India 2026: What Each Role Actually Pays`,
     h1Title: 'Cyber Security Salaries in India: What Each Role Actually Pays',
     metaDescription: `Cyber security salary in India 2026: role-by-role breakdown from SOC analyst to CISO, what skills actually move the needle, and honest career advice.`,
@@ -25454,6 +25492,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'data-science-salary-india-2026-scope-jobs',
+    updatedAt: "2026-11-04",
     title: 'Data Science Salary India 2026: Role-by-Role Breakdown',
     seoTitle: `Data Science Salary India 2026: The GenAI Premium`,
     metaDescription: `Data science salary India 2026: analyst vs scientist vs ML engineer, 25-40% GenAI/LLM premium, 2-3x product company gap, city multiplier, certifications.`,
@@ -25698,6 +25737,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'investment-banking-career-india-salary-qualification',
+    updatedAt: "2026-10-27",
     title: 'Investment Banking Career India 2026: Salary and Entry',
     seoTitle: `Investment Banking Career India 2026: Real Tiers and Salary`,
     metaDescription: `Investment banking career India 2026: which colleges feed IB analyst roles, MBA vs CFA path, operations back-door entry, real salary by level.`,
@@ -26348,7 +26388,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'bsc-career-options-scope-salary-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'B.Sc Career Options India 2026: Scope and Salary Guide',
     seoTitle: `B.Sc Career Options India 2026: Scope, Salary and Next Steps`,
     metaDescription: `B.Sc career options India 2026: stream-by-stream salary curve (CS, Biotech, Nursing, Stats), certification stacking, international Nursing path, online MBA.`,
@@ -26718,6 +26758,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'llm-course-duration-fees-scope-india-2026',
+    updatedAt: "2026-10-27",
     title: 'LLM Course India 2026: Duration, Fees and Career Scope',
     seoTitle: `LLM Course Duration Fees Scope India 2026: Corporate Law Track | Edify`,
     metaDescription: `LLM India 2026: 1-year vs 2-year, fees Rs 1L-5L, corporate law Rs 12L+ start, NLU top colleges, BCI plus UGC validity, online options decoded.`,
@@ -26927,6 +26968,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'online-mca-course-india',
+    updatedAt: "2026-10-29",
     title: 'Online MCA Course in India 2026: Fees, Colleges, Careers',
     seoTitle: 'Online MCA Course India 2026: Fees, Top Colleges, Scope',
     metaDescription: 'Online MCA course in India 2026, fees from Rs.50,000 to Rs.2.2L, top UGC-approved colleges, specialisation guide, and realistic salary data for working professionals.',
@@ -27059,7 +27101,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'amity-online-mca-fees-review',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'Amity Online MCA: Fees, Specialisations and Honest Review 2026',
     seoTitle: 'Amity Online MCA Review 2026: FinTech and Cyber Tracks',
     metaDescription: 'Amity Online MCA fees Rs 1.99L total (Rs 49,800 per semester). Review of all 6 specialisations, HCLTech and Paytm tie-ups and comparison with alternatives.',
@@ -27253,6 +27295,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'vignan-online-mba-review',
+    updatedAt: "2026-11-04",
     title: 'Vignan Online MBA Fees 2026: ₹90,000 and Review',
     seoTitle: 'Vignan Online MBA Fees 2026: ₹90,000 and Review',
     h1Title: 'Vignan University Online MBA Fees 2026: ₹90,000, Specialisations and Our Review',
@@ -27563,6 +27606,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'dsu-online-mba-review',
+    updatedAt: "2026-11-05",
     title: 'DSU Online MBA Fees 2026: ₹1,30,000 and Review',
     seoTitle: 'DSU Online MBA Fees 2026: ₹1,30,000 and Review',
     h1Title: 'Dayananda Sagar University (DSU) Online MBA Fees 2026: ₹1,30,000, Specialisations and Our Review',
@@ -27893,7 +27937,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'smu-online-mba-review',
-    updatedAt: '2026-10-29',
+    updatedAt: "2026-11-04",
     title: 'SMU Online MBA Fees 2026: ₹1,20,000 and Review',
     seoTitle: 'SMU Online MBA Fees 2026: ₹1,20,000 and Review',
     h1Title: 'Sikkim Manipal University (SMU) Online MBA Fees 2026: ₹1,20,000, Specialisations and Our Review',
@@ -28171,7 +28215,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'uu-doon-online-mba-review',
-    updatedAt: '2026-10-29',
+    updatedAt: "2026-11-04",
     title: 'Uttaranchal University Online MBA Fees 2026: ₹1,48,000',
     seoTitle: 'Uttaranchal University Online MBA Fees 2026: ₹1,48,000',
     h1Title: 'Uttaranchal University Online (UU Online) MBA Fees 2026: ₹1,48,000, Specialisations and Our Review',
@@ -28436,7 +28480,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'galgotias-online-mba-review',
-    updatedAt: '2026-10-29',
+    updatedAt: "2026-11-04",
     author: 'Rishi Kumar',
     title: 'Galgotias Online MBA Fees 2026: ₹80,200 and Review',
     seoTitle: 'Galgotias Online MBA Fees 2026: ₹80,200 and Review',
@@ -28703,7 +28747,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'arka-jain-online-mba-review',
-    updatedAt: '2026-10-29',
+    updatedAt: "2026-11-05",
     title: 'ARKA JAIN Online MBA Fees 2026: ₹1,08,500 and Review',
     seoTitle: 'ARKA JAIN Online MBA Fees 2026: ₹1,08,500 and Review',
     h1Title: 'ARKA JAIN University Online MBA Fees 2026: ₹1,08,500, Specialisations and Our Review',
@@ -29297,6 +29341,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'shoolini-online-mba-review',
+    updatedAt: "2026-11-05",
     title: 'Shoolini Online MBA Review 2026: Pharma and Biotech',
     h1Title: "Shoolini Online MBA Review: Pharma and Biotech Specialisations Explained",
     seoTitle: 'Shoolini Online MBA Review 2026: Pharma and Biotech',
@@ -29644,7 +29689,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'dy-patil-online-mba-review',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'DY Patil Online MBA Fees 2026: ₹1,89,400 Review and Honest Verdict',
     seoTitle: 'DY Patil Online MBA Review 2026: WES-Recognised',
     metaDescription: 'DY Patil Online MBA reviewed: ₹1,89,400 total fee, most affordable WES-recognised online MBA. Real student feedback, pros, cons. Zero commission.',
@@ -29948,7 +29993,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'chandigarh-university-online-mba-review',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-05",
     title: 'Chandigarh University Online MBA Fees 2026: ₹1.75L Review and Honest Verdict',
     seoTitle: 'Chandigarh University Online MBA Review 2026: PwC Tie-Up',
     metaDescription: 'Chandigarh University Online MBA reviewed: fees after Early Bird scholarship, pros, cons, who it suits. Real student feedback, zero commission.',
@@ -30273,7 +30318,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'jaypee-jiit-online-mba-review',
-    updatedAt: '2026-10-29',
+    updatedAt: "2026-11-04",
     title: 'Jaypee JIIT Online MBA Fees 2026: ₹1,75,000 and Review',
     seoTitle: 'Jaypee JIIT Online MBA Fees 2026: ₹1,75,000 and Review',
     h1Title: 'Jaypee (JIIT) Online MBA Fees 2026: ₹1,75,000, Specialisations and Our Review',
@@ -31713,6 +31758,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'bba-full-form-course-details-eligibility-fees-2026',
+    updatedAt: "2026-10-27",
     title: 'BBA Full Form 2026: Course, Subjects, Fees and Salary',
     seoTitle: 'BBA Full Form, Course, Fees, Eligibility, Salary [2026]',
     metaDescription: 'BBA stands for Bachelor of Business Administration. Full guide on BBA course, subjects, fees (50K-5L), eligibility, salary, and career scope in India 2026.',
@@ -35671,7 +35717,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
   "slug": "mba-hr-management-online-india-2026",
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-11-04",
   "title": "MBA HR Management Online India 2026: 25+ Unis Compared",
   "h1Title": "Online MBA in HR Management: Universities Compared on Fees and Approvals",
   "metaDescription": "MBA HR Management Online 2026: MBA in HR Management online 2026: 25+ UGC-DEB universities compared. Fees ₹80K (Galgotias) to ₹2.92L (MAHE). NMIMS, Symbiosis, Amit...",
@@ -35858,6 +35904,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
   "slug": "online-mba-aviation-management-india-2026",
+  "updatedAt": "2026-11-04",
   "title": "MBA in Aviation Management Online India 2026: Fees & Universities",
   "h1Title": "Online MBA in Aviation Management: Which Universities Offer It",
   "metaDescription": "MBA In Aviation Management Online 2026: Online MBA Aviation Management 2026: Chandigarh Airlines & Airport Mgmt at ₹1.75L net. Syllabus, fees, alternatives & care...",
@@ -35927,6 +35974,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
   "slug": "online-mba-business-data-analytics-india-2026",
+  "updatedAt": "2026-11-04",
   "title": "Online MBA in Business Analytics in India 2026: 16+ Unis",
   "h1Title": "Online MBA in Business Analytics: Which Universities Offer It in 2026",
   "metaDescription": "Online MBA In Business Analytics In India 2026: Online MBA Business Analytics & Data Analytics India 2026: 16+ UGC-DEB universities. Fees ₹80K (Galgotias) to ₹3.1...",
@@ -36000,6 +36048,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
   "slug": "online-mba-entrepreneurship-india-2026",
+  "updatedAt": "2026-11-04",
   "title": "Online MBA Entrepreneurship India 2026: Fees & Universities",
   "h1Title": "Online MBA in Entrepreneurship: Universities, Fees and Who Should Enrol",
   "metaDescription": "Online MBA Entrepreneurship 2026, 4 UGC-DEB universities (DSU ₹1.3L, Chandigarh ₹1.75L, JAIN ₹1.75L–1.96L, Amity ₹2.25L), syllabus, founder ROI, who should apply.",
@@ -36073,6 +36122,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
   "slug": "online-mba-event-management-india-2026",
+  "updatedAt": "2026-11-04",
   "title": "MBA in Event Management Online India 2026: Universities & Fees",
   "h1Title": "Online MBA in Event Management: Universities Offering It and Their Fees",
   "metaDescription": "MBA In Event Management Online 2026: Online MBA in Event Management 2026, fees ₹1.65L–₹1.76L, only 2 UGC-DEB approved universities (BVP, Chandigarh), syllabus, s...",
@@ -36138,7 +36188,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
   "slug": "online-mba-supply-chain-management-india-2026",
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-11-04",
   "title": "MBA Supply Chain Management Online India 2026: 10 Universities",
   "h1Title": "Online MBA in Supply Chain Management: Universities Compared",
   "metaDescription": "MBA Supply Chain Management Online 2026: Online MBA Supply Chain Management 2026, 10 UGC-DEB universities. Fees ₹99.6K (UU Doon) to ₹3.7L (Symbiosis). MAHE, JAIN, ...",
@@ -36212,7 +36262,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
   "slug": "upes-online-mba-review-2026",
-  "updatedAt": "2026-10-29",
+  "updatedAt": "2026-11-05",
   "title": "UPES Online MBA Review 2026: Fees, 11 Specs & Honest Take",
   "h1Title": "UPES Online MBA Review: Fees, Specialisations and Our Honest Take",
   "metaDescription": "UPES Online MBA 2026 honest review: ₹1.75L total fee. UGC-DEB, NAAC A, NIRF #36 Management 2025 / #45 University 2025. 11 specs incl. Oil & Gas, Power.",
@@ -36252,7 +36302,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'best-online-mba-colleges-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'Best Online MBA Colleges in India 2026: Top 15 UGC-DEB Ranked',
     seoTitle: 'Best Online MBA Colleges in India 2026: Top 15 NIRF Ranked',
     metaDescription: 'Best online MBA colleges in India 2026: top 15 UGC-DEB universities ranked by NIRF, NAAC, fees ₹66K to ₹3.15L. Honest comparison, zero commission.',
@@ -36566,6 +36616,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'is-online-mba-valid-india-2026',
+    updatedAt: "2026-11-04",
     title: 'Is Online MBA Valid in India 2026? UGC and Employers Say Yes',
     h1Title: "Is an Online MBA Valid in India? What UGC Rules and Employers Accept",
     metaDescription: 'Is online MBA valid in India 2026? Yes, UGC-DEB approved online MBA = on-campus MBA. Government jobs, PSU, MBA at IIMs, court rulings. Honest legal guide.',
@@ -36793,7 +36844,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'online-mba-with-placement-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-04",
     title: 'Online MBA with Placement in India 2026: Universities Compared',
     h1Title: "Online MBA With Placement Support: What Each University Actually Offers",
     metaDescription: 'Online MBA with placement India 2026: NMIMS, Symbiosis, Amity, Chandigarh, MUJ placement reality. Honest take on which universities actually help with jobs.',
@@ -37052,6 +37103,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'bits-pilani-online-mba-review-2026',
+    updatedAt: "2026-11-05",
     title: "BITS Pilani Online MBA Review 2026: WILP Fees & Honest Take",
     seoTitle: "BITS Pilani WILP Online MBA Review 2026: Is It Worth ₹3.12L?",
     metaDescription: "BITS Pilani WILP Online MBA 2026 review: ₹3.12L total fee. NAAC A++, NIRF #16 Overall 2025, 8 specs incl. FinTech, Analytics, Manufacturing.",
@@ -37275,6 +37327,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'imt-ghaziabad-online-mba-review-2026',
+    updatedAt: "2026-10-29",
     title: "IMT Ghaziabad Online MBA Review 2026: CDL PGDM Fees & Take",
     h1Title: "IMT Ghaziabad CDL Online PGDM Review: Fees, Format and Our Take",
     metaDescription: "IMT Ghaziabad CDL Online MBA 2026: ₹2.20L AICTE PGDM (not UGC-DEB). 6 specs, Delhi NCR brand. Honest review: fees, placement, and who should apply.",
@@ -37505,7 +37558,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'jain-online-mba-review-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-06",
     title: 'Jain Online MBA Fees 2026: ₹1,60,000–₹2,98,000 and Review',
     seoTitle: 'Jain Online MBA Fees 2026: ₹1,60,000–₹2,98,000 and Review',
     h1Title: 'Jain University Online MBA Fees 2026: ₹1,60,000–₹2,98,000, Specialisations and Our Review',
@@ -37732,7 +37785,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'online-mba-hospital-healthcare-management-india-2026',
-    updatedAt: '2026-10-28',
+    updatedAt: "2026-11-04",
     title: "Online MBA Hospital Administration and Healthcare Management India 2026",
     seoTitle: "Online MBA Healthcare Management 2026: 9 Universities",
     h1Title: 'Online MBA in Hospital Administration and Healthcare Management',
@@ -37939,6 +37992,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'xlri-online-mba-review-2026',
+    updatedAt: "2026-09-14",
     title: "XLRI Online MBA Review 2026: ₹14.4L Worth It? Honest Take",
     seoTitle: "XLRI Online MBA 2026: ₹14.4L PGDM Review, NIRF #9 Management",
     metaDescription: "XLRI Online MBA 2026: ₹14.4L PGDM (not UGC-DEB MBA). 3+ yrs exp required, AACSB/AMBA accredited, NIRF #9 mgmt. Worth it? Honest review by EdifyEdu.",
@@ -38155,6 +38209,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'amrita-online-bba-review-2026',
+    updatedAt: "2026-10-27",
     title: 'Amrita Online BBA Review 2026: AHEAD Fees, Honest Take',
     h1Title: 'Amrita AHEAD Online BBA: Fees and an Honest Take',
     metaDescription: 'Amrita online BBA review 2026: AHEAD programme ₹1,41,000 fees, NIRF top tier, NAAC A++, Amrita Vishwa Vidyapeetham brand at structurally accessible online tier.',
@@ -38365,7 +38420,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'best-online-bba-colleges-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-27",
     title: 'Best Online BBA Colleges India 2026: NIRF Rank, Tier Verdict',
     h1Title: 'Best Online BBA Colleges in India: NIRF Rank and Tier Verdict',
     metaDescription: 'Best online bba colleges india 2026: 11 UGC-DEB approved universities ranked across Tier 1 (Symbiosis, MAHE, Amrita, NMIMS), Tier 2, Tier 3 with verified fees.',
@@ -38849,7 +38904,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'mahe-online-bba-review-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-27",
     title: 'MAHE Online BBA Review 2026: Fees, Honors Track, Honest Take',
     h1Title: 'MAHE Online BBA: Fees, Honors Track and Honest Take',
     metaDescription: 'MAHE online BBA review 2026: ₹1,80,000 fees, NIRF #3 University, NAAC A++, BBA Honors 4-year track at CGPA 8, 5 specialisations, 15% first-sem scholarship.',
@@ -39081,6 +39136,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'nmims-online-bba-review-2026',
+    updatedAt: "2026-10-27",
     title: 'NMIMS Online BBA Review 2026: Fees and Honest Take',
     h1Title: 'NMIMS Online BBA: Fees, BA Electives and Honest Take',
     metaDescription: 'NMIMS online BBA review 2026: ₹1,50,000 standard or ₹1,80,000 BA electives, NIRF top 100, NAAC A++, NMIMS deemed university Mumbai BFSI corridor brand.',
@@ -39297,7 +39353,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'online-bba-fees-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-27",
     title: 'Online BBA Fees India 2026: 11 University Comparison, EMI Guide',
     h1Title: 'Online BBA Fees in India: 11 Universities Compared with EMI Guide',
     metaDescription: 'Online bba fees india 2026: verified fee comparison across 11 UGC-DEB approved universities (₹30,900 to ₹1,99,000), EMI options, scholarship validity dates.',
@@ -39500,7 +39556,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'online-mba-fintech-india-2026',
-    updatedAt: '2026-10-28',
+    updatedAt: "2026-10-29",
     title: 'Online MBA Fintech India 2026: Fees, Colleges, Verdict',
     h1Title: 'Online MBA in Fintech: Fees, Colleges and Our Verdict',
     metaDescription: 'Online mba fintech india 2026: top UGC-DEB approved colleges, fee ranges ₹66,000 to ₹2,25,000, UPI payments career, Razorpay PhonePe Paytm hiring, salary guide.',
@@ -39716,7 +39772,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'online-mba-hospitality-management-india-2026',
-    updatedAt: '2026-10-28',
+    updatedAt: "2026-10-29",
     title: 'Online MBA Hospitality Management India 2026: Fees, Salary',
     h1Title: 'Online MBA in Hospitality Management: Fees and Salary Guide',
     metaDescription: 'Online mba hospitality management india 2026: top UGC-DEB approved colleges, fee ranges ₹66,000 to ₹2,25,000, hotel and tourism career outcomes, salary verdict.',
@@ -39936,7 +39992,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'online-mba-logistics-management-india-2026',
-    updatedAt: '2026-10-28',
+    updatedAt: "2026-10-29",
     title: 'Online MBA Logistics Management India 2026: Fees, Salary',
     h1Title: "Online MBA in Logistics Management: Universities, Fees and Career Paths",
     metaDescription: 'Online mba logistics management india 2026: top UGC-DEB approved colleges, verified fee ranges, career outcomes, port and warehouse career paths, honest verdict.',
@@ -40149,7 +40205,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'online-mba-real-estate-management-india-2026',
-    updatedAt: '2026-10-28',
+    updatedAt: "2026-10-29",
     title: 'Online MBA Real Estate Management India 2026: Fees, Salary',
     h1Title: "Online MBA in Real Estate Management: Universities, Fees and Career Paths",
     metaDescription: 'Online mba real estate management india 2026: top UGC-DEB approved colleges, verified fee ranges ₹66,000 to ₹2,25,000, RERA compliance careers, salary verdict.',
@@ -40592,7 +40648,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'online-mca-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-28",
     title: 'Best Online MCA Programs India 2026: Fees, Colleges, Careers',
     seoTitle: 'Best Online MCA India 2026: Fees, Colleges and Careers',
     metaDescription: 'Compare the best online MCA programs in India 2026. Fees, NAAC grades, eligibility, and career scope for top universities including Manipal, Amity, LPU and more.',
@@ -40730,6 +40786,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'mca-after-bca-is-it-good-2026',
+    updatedAt: "2026-10-28",
     title: 'MCA After BCA 2026: Is It Worth It? Scope and Salary',
     seoTitle: 'MCA After BCA 2026: Is It Worth It? Scope, Salary and Top Colleges',
     metaDescription: 'Should BCA graduates do MCA in 2026? Honest look at career outcomes, salary comparison, top online MCA picks after BCA, and who should skip the degree.',
@@ -41037,6 +41094,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'online-mca-amity-vs-lpu-2026',
+    updatedAt: "2026-10-28",
     title: 'Amity Online MCA vs LPU Online MCA 2026: Honest Comparison',
     seoTitle: 'Amity vs LPU Online MCA 2026: Fees, Placement and Honest Verdict',
     metaDescription: 'Amity Online MCA vs LPU Online MCA 2026 honest comparison. Fees, NAAC grades, curriculum, placements, and who should choose which university.',
@@ -41802,6 +41860,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'online-mba-uttar-pradesh-2026',
+    updatedAt: "2026-11-06",
     title: 'Best Online MBA Universities in Uttar Pradesh 2026',
     h1Title: 'Best Online MBA in Uttar Pradesh: 14 Universities Compared',
     seoTitle: 'Best Online MBA in UP 2026: 14 Universities, Fees ₹28K to ₹5L | Edify',
@@ -42134,6 +42193,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'online-mba-tamil-nadu-2026',
+    updatedAt: "2026-11-06",
     title: 'Best Online MBA Universities in Tamil Nadu 2026',
     h1Title: 'Best Online MBA in Tamil Nadu: 16 Universities Compared',
     seoTitle: 'Best Online MBA in Tamil Nadu 2026: 16 Universities Compared',
@@ -42529,6 +42589,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'online-mba-maharashtra-2026',
+    updatedAt: "2026-11-06",
     title: 'Best Online MBA Universities in Maharashtra 2026',
     h1Title: 'Best Online MBA in Maharashtra: 8 Universities Compared',
     seoTitle: 'Online MBA Maharashtra 2026: Fees ₹80K to ₹3.70L | Edify',
@@ -42712,7 +42773,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'online-mba-karnataka-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-06",
     title: 'Best Online MBA Universities in Karnataka 2026',
     h1Title: 'Best Online MBA in Karnataka: 12 Universities Compared',
     seoTitle: 'Best Online MBA in Karnataka 2026: 12 Universities Compared',
@@ -42984,7 +43045,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'online-mba-northeast-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-11-06",
     title: 'Best Online MBA Universities in Northeast India 2026',
     h1Title: 'Best Online MBA in Northeast India: 4 Universities Across 3 States Compared',
     seoTitle: 'Best Online MBA in NE India 2026: 4 Unis, Fees ₹54K to ₹1.20L | Edify',
@@ -43167,6 +43228,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'naac-accreditation-explained-grades-india-2026',
+    updatedAt: "2026-10-27",
     title: 'NAAC Accreditation Explained: A++, A+, A, B++ and What They Mean for Your Degree',
     seoTitle: 'NAAC Grades Explained: What A++, A+ and B++ Mean',
     metaDescription: 'NAAC accreditation grades A++ to B++ explained with official CGPA ranges. What each grade means for your online degree, UGC-DEB approval, and employer acceptance.',
@@ -44384,6 +44446,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'lpu-vs-chandigarh-university-online-mba-2026',
+    updatedAt: "2026-11-04",
     title: 'LPU vs Chandigarh University Online MBA 2026: Fees, NAAC, Syllabus Compared',
     seoTitle: 'LPU vs Chandigarh University Online MBA 2026: NAAC and Fees',
     metaDescription: 'LPU vs Chandigarh University online MBA compared: fees ₹1.61L to ₹2.38L, NAAC A++ vs A+, NIRF Management #44 vs #32, 12 vs 26 specialisations, syllabus, honest verdict.',
@@ -45016,7 +45079,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
   },
   {
     slug: 'best-online-bca-colleges-india-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: "2026-10-28",
     title: 'Best Online BCA Colleges in India 2026: Fees, UGC Approved, Ranked',
     seoTitle: 'Best Online BCA Colleges India 2026: Fees, UGC Approved, NAAC Ranked',
     metaDescription: 'Best online BCA colleges in India 2026: 14 UGC-DEB approved universities ranked by NAAC, NIRF, and verified fees from ₹49,800 to ₹1.77L. Independent, zero-commission guide.',
@@ -45293,6 +45356,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
   },
   {
     slug: 'online-mba-after-career-break-2026',
+    updatedAt: "2026-11-04",
     title: 'Online MBA After a Career Break: How to Restart Your Career in 2026',
     seoTitle: 'Online MBA After Career Break India 2026: Honest Comeback Guide',
     metaDescription: 'Online MBA after a career break in India: which specialisations support a real comeback, how employers view gaps, and a practical re-entry plan grounded in research.',
@@ -45758,6 +45822,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
   },
   {
     slug: 'online-mba-scholarship-india-2026',
+    updatedAt: "2026-10-26",
     heroImage: 'https://images.pexels.com/photos/7972735/pexels-photo-7972735.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAlt: 'Group of graduates holding diplomas with red ribbons during a ceremony outdoors.',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@george-pak" target="_blank" rel="noopener nofollow">George Pak</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
@@ -46403,6 +46468,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 
   {
     slug: 'is-amity-university-online-fake-or-legit-2026',
+    updatedAt: "2026-08-09",
     title: 'Is Amity University Online Fake or Legit? 2026',
     seoTitle: 'Is Amity University Online Fake? No. NAAC A+, UGC Approved',
     metaDescription: 'Amity University Online is not fake. UGC-DEB approved, NAAC A+ accredited. Degrees valid for PSU and government jobs. Five Amity Online fee quotes explained.',
@@ -46636,6 +46702,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
   },
   {
     slug: 'is-chandigarh-university-online-fake-or-legit-2026',
+    updatedAt: "2026-11-04",
     title: 'Is Chandigarh University Online Fake or Legit? 2026',
     seoTitle: 'Is Chandigarh University Online Fake? No, NAAC A+ UGC-DEB',
     metaDescription: 'Chandigarh University Online is not fake. UGC-DEB, NAAC A+. MBA list price Rs 2.34L to Rs 2.38L; Early Bird price from Rs 1.75L (25% scholarship). Degrees are PSU-valid.',
@@ -46875,6 +46942,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
   },
   {
     slug: 'is-lpu-online-fake-or-legit-2026',
+    updatedAt: "2026-11-04",
     title: 'Is LPU Online Fake or Legit? 2026',
     seoTitle: 'Is LPU Online Fake? No, NAAC A++ UGC-DEB Approved',
     metaDescription: 'LPU Online is not fake. NAAC A++, UGC-DEB entitled online mode from a Punjab Act 2005 university. Online MBA list Rs 2,00,000; current portal grants apply.',
@@ -47356,6 +47424,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
   },
   {
     slug: 'why-online-mba-fees-differ-india-2026',
+    updatedAt: "2026-11-05",
     heroImage: 'https://images.pexels.com/photos/14907377/pexels-photo-14907377.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     heroImageAlt: 'A detailed close-up of Indian currency notes and coins, highlighting financial themes.',
     heroImageAttribution: 'Photo by <a href="https://www.pexels.com/@ravi-roshan-2875998" target="_blank" rel="noopener nofollow">Ravi Roshan</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a>',
@@ -47541,6 +47610,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
   },
   {
     slug: 'ugc-fake-universities-list-2026',
+    updatedAt: "2026-11-06",
     title: 'UGC Fake Universities List 2026: All 32 Names by State',
     seoTitle: 'UGC Fake Universities List 2026: All 32 Names by State',
     h1Title: 'UGC Fake Universities List 2026: All 32 Institutions, State by State',
@@ -47728,6 +47798,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
   },
   {
     slug: 'how-online-degree-exams-work-india',
+    updatedAt: "2026-11-02",
     title: 'How Do Online Degree Exams Work in India? UGC Rules 2026',
     seoTitle: 'How Do Online Degree Exams Work in India? UGC Rules 2026',
     h1Title: 'How Online Degree Exams Work in India: Proctoring, Marks and UGC Rules',
@@ -47890,6 +47961,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
   },
   {
     slug: 'ugc-deb-id-explained',
+    updatedAt: "2026-11-02",
     title: 'UGC DEB ID 2026: What It Is and How to Create It',
     seoTitle: 'UGC DEB ID 2026: What It Is and How to Create It',
     h1Title: 'UGC DEB ID Explained: What UGC-DEB Is, Why You Need a DEB ID, and How to Create One',
@@ -48041,6 +48113,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
   },
   {
     slug: 'ugc-two-degrees-simultaneously-rules',
+    updatedAt: "2026-11-03",
     title: 'Can You Do Two Degrees at Once? UGC Rules 2026',
     seoTitle: 'Can You Do Two Degrees at Once? UGC Rules 2026',
     h1Title: 'Two Degrees at the Same Time: What UGC Allows, Including Online Degrees',
@@ -48468,6 +48541,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
   },
   {
     slug: 'online-degree-courses-india',
+    updatedAt: "2026-11-06",
     title: 'Online Degree Courses in India 2026: What UGC Allows',
     seoTitle: 'Online Degree Courses in India 2026: What UGC Allows',
     h1Title: 'Online Degree Courses in India 2026: Every Degree UGC Allows Online, and the Ones It Bans',
@@ -48623,6 +48697,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
   },
   {
     slug: 'online-masters-pg-courses-india',
+    updatedAt: "2026-11-02",
     title: 'Online Master\'s Degree in India 2026: PG Courses Compared',
     seoTitle: 'Online Master\'s Degree in India 2026: PG Courses Compared',
     h1Title: 'Online Master\'s and PG Courses in India 2026: Which One Fits Your Goal',
@@ -48765,6 +48840,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
   },
   {
     slug: 'online-bachelors-ug-courses-india',
+    updatedAt: "2026-11-03",
     title: 'Online Bachelor\'s Degree in India 2026: UG Courses Explained',
     seoTitle: 'Online Bachelor\'s Degree in India 2026: UG Courses Explained',
     h1Title: 'Online Bachelor\'s and Graduation Courses in India 2026: BA, B.Com, BBA, BCA and What UGC Allows',
@@ -49058,6 +49134,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
   },
   {
     slug: 'online-phd-in-india',
+    updatedAt: "2026-11-02",
     title: 'Online PhD in India 2026: Is It Valid? What UGC Rules Say',
     seoTitle: 'Online PhD in India 2026: Is It Valid? UGC Rules',
     h1Title: 'Online PhD in India: Why UGC Does Not Allow It, and the Part-Time Route That Is Valid',
@@ -50092,6 +50169,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
   },
   {
     slug: 'amity-online-student-portal-login',
+    updatedAt: "2026-11-04",
     title: 'Amity Online Student Portal: Amigo Login, Exams and Support',
     seoTitle: 'Amity Online Login: Amigo Portal, Exams and Support 2026',
     h1Title: 'Amity University Online Student Portal: Where Amigo Is, How to Log In and Who to Call',
@@ -50201,6 +50279,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
   },
   {
     slug: 'lpu-online-lms-login',
+    updatedAt: "2026-11-04",
     title: 'LPU Online LMS Login: The Student Portal, OTP and Helpline',
     seoTitle: 'LPU Online LMS Login 2026: Student Portal, OTP, Helpline',
     h1Title: 'LPU Online LMS: How to Log In, Reset Your Password and Reach Student Support',
@@ -50300,6 +50379,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
   },
   {
     slug: 'online-computer-science-degree-india',
+    updatedAt: "2026-11-03",
     title: 'Online Computer Science Degree in India 2026: What UGC Allows',
     seoTitle: 'Online Computer Science Degree India 2026: BCA, MCA, MSc',
     h1Title: 'Online Computer Science Degree in India: BCA, MCA, Data Science and Cyber Security',
@@ -50416,6 +50496,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
   },
   {
     slug: 'online-degree-admission-process-india',
+    updatedAt: "2026-11-06",
     title: 'Online Degree Admission 2026: How to Apply for BA, BBA, BCA, BSc',
     seoTitle: 'Online Degree Admission 2026: How to Apply for BA, BBA, BCA, BSc',
     h1Title: 'Online Degree Admission in India 2026: How to Apply for an Online BA, B.Com, BBA, BCA, BSc or MBA',
@@ -51216,6 +51297,7 @@ Ask both for the total payable from enrolment to degree assuming you qualify for
   },
   {
     slug: 'online-degree-courses-bangalore',
+    updatedAt: "2026-11-06",
     title: 'Online Degree Courses in Bangalore 2026: The UGC-Entitled List',
     seoTitle: 'Online Degree Courses in Bangalore 2026: UGC-Entitled List',
     h1Title: 'Online Degree Courses in Bangalore: What Bengaluru\'s Universities Are UGC-Entitled to Offer Online in 2026-27',
