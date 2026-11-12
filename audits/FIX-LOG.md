@@ -1,5 +1,17 @@
 # Fix log
 
+## 2026-11-12 · Blog lead capture: early form in every post, counsellor links open the form in place
+
+- **Why:** Rishi saw blog posts with no lead form and CTAs that took him to another page. Audit
+  (npx tsx scripts/audit-blog-lead-capture.mts): 77 of 261 published posts had no form in the body; where one existed
+  it sat on average 81% down; 101 "talk to a counsellor" links in 59 posts went to /contact, off the article. On phones
+  the sidebar forms are hidden, and posts with a university CTA bundle also hide BlogLeadForm.
+- **What:** BlogContentWithCTAs inserts an inline form (source blog_early_form) before the third H2 when no form sits
+  in the first 35%, only at the top level of the HTML. BlogContactIntercept on the blog template turns a plain click on
+  any /contact link into the enquiry modal (source blog_contact_link). Result: 251 posts gain a form at ~30% down, 0
+  posts without one. Pushed as 3455f72.
+- **Measure:** in /leads, Source ending "· blog_early_form" or "· blog_contact_link" counts what this added.
+
 ## 2026-11-12 · Lead attribution: channel, landing page, referrer and UTM on every lead
 
 - **Why:** all 493 rows in the lead Sheet (2 Apr to 12 Nov) say Source = "website", so no page, video or channel could
