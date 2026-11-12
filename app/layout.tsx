@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import EmailOff from '@/components/EmailOff'
 import BottomNav from '@/components/BottomNav'
 import MobileLeadNudge from '@/components/MobileLeadNudge'
+import AttributionCapture from '@/components/AttributionCapture'
 
 // ── Fonts, self-hosted (auto-optimised, no layout shift) ─────────────────
 //
@@ -278,6 +279,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <BottomNav />
         <MobileLeadNudge />
+        <AttributionCapture />
         </EmailOff>
       </body>
     </html>
