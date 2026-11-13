@@ -269,8 +269,9 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
         {config.syllabus && prog === 'MBA' && (() => {
           const semA = coreSemesters(uA), semB = coreSemesters(uB)
           const sems = Array.from(new Set([...semA, ...semB].map(s => s.sem))).sort((a, b) => a - b)
-          // TODO(syllabus): semesters 3 and 4 are specialisation papers that the
-          // manifest does not hold for either university; add them when we do.
+          // Only semesters the manifest holds get a row. Semesters 3 and 4 are
+          // specialisation papers we do not hold for either university, so no
+          // row is shown for them until the data exists (no placeholder row).
           const cell = (list: { sem: number; subjects: string[] }[], n: number) =>
             list.find(s => s.sem === n)?.subjects.join(', ') || 'Not published on edifyedu.in'
           return (
@@ -288,7 +289,6 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
                       {sems.map(n => (
                         <tr key={n} className="border-t border-slate-100 align-top"><td className="px-4 py-3 font-semibold">Semester {n}</td><td className="px-4 py-3">{cell(semA, n)}</td><td className="px-4 py-3">{cell(semB, n)}</td></tr>
                       ))}
-                      <tr className="border-t border-slate-100 align-top"><td className="px-4 py-3 font-semibold">Semesters 3 and 4</td><td className="px-4 py-3" colSpan={2}>Specialisation papers, which depend on the track you pick. Not published on edifyedu.in.</td></tr>
                     </tbody>
                   </table>
                 </div>
