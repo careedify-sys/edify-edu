@@ -130,7 +130,7 @@ export default function MethodologyPage() {
           </p>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
-              <caption className="sr-only">The four official sources EdifyEdu cites and what each is used for</caption>
+              <caption className="sr-only">The four official sources edifyedu.in cites and what each is used for</caption>
               <thead>
                 <tr className="bg-bg">
                   <th scope="col" className="text-left px-3 py-3 font-semibold text-navy">Source</th>

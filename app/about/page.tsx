@@ -42,22 +42,22 @@ const aboutFaqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Is Edify affiliated with any university?',
+      name: 'Is edifyedu.in affiliated with any university?',
       acceptedAnswer: { '@type': 'Answer', text: 'No. Edify is fully independent. We are not affiliated with, commissioned by, or paid by any university. All rankings and comparisons are based solely on official NIRF and NAAC data.' },
     },
     {
       '@type': 'Question',
-      name: 'Where does Edify get its university data from?',
+      name: 'Where does edifyedu.in get its university data from?',
       acceptedAnswer: { '@type': 'Answer', text: 'All university data is sourced from official government sources: NIRF rankings (Ministry of Education), NAAC grades (naac.gov.in), UGC DEB approved list (ugc.ac.in), and official university websites for fee structures.' },
     },
     {
       '@type': 'Question',
-      name: 'Does Edify take money from universities for placement or ranking?',
+      name: 'Does edifyedu.in take money from universities for placement or ranking?',
       acceptedAnswer: { '@type': 'Answer', text: 'No. Edify maintains a strict zero-paid-ranking policy. Universities cannot pay to be ranked higher, featured prominently, or recommended. All placements are purely based on NIRF rank and NAAC grade.' },
     },
     {
       '@type': 'Question',
-      name: 'How accurate is the fee data on Edify?',
+      name: 'How accurate is the fee data on edifyedu.in?',
       acceptedAnswer: { '@type': 'Answer', text: 'Fee data is sourced from official university websites and is the most accurate publicly available information at time of publishing. Fees can change each academic year. Students must verify current fees directly on the official university website before enrolling. Last updated: March 2026.' },
     },
   ],
@@ -102,7 +102,7 @@ export default function AboutPage() {
 
         {/* What makes us different */}
         <div className="card p-8 mb-8">
-          <h2 className="text-2xl font-bold text-navy mb-6">What Makes Edify Different</h2>
+          <h2 className="text-2xl font-bold text-navy mb-6">What Makes edifyedu.in Different</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { icon: Shield, title: 'Zero Paid Rankings', desc: 'No university pays to appear higher in our rankings. Our order is based purely on NIRF, NAAC, and student outcomes data.' },
@@ -247,7 +247,7 @@ export default function AboutPage() {
         {/* Research Team */}
         <div id="team" className="card p-8 mb-8">
           <h2 className="text-2xl font-bold text-navy mb-2">Research Team</h2>
-          <p className="text-sm text-ink-2 mb-6">Every university review, ranking, and comparison on Edify is authored or verified in-house.</p>
+          <p className="text-sm text-ink-2 mb-6">Every university review, ranking, and comparison on edifyedu.in is authored or verified in-house.</p>
           <div className="grid grid-cols-1 gap-6">
             {[
               {

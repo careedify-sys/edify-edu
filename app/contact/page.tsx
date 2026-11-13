@@ -147,7 +147,7 @@ export default function ContactPage() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <h2 className="text-lg font-bold text-navy mb-3">How EdifyEdu Helps You Choose</h2>
+            <h2 className="text-lg font-bold text-navy mb-3">How edifyedu.in Helps You Choose</h2>
             <p className="text-ink-2 text-sm leading-relaxed mb-4">
               Picking an online degree is not simple. Fees vary, NAAC grades differ, and not every UGC approved program carries the same employer recognition. EdifyEdu compares 125+ universities on verified data so you can make a confident decision without spending weeks on research.
             </p>

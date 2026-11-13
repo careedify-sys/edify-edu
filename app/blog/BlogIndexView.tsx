@@ -118,7 +118,7 @@ function Pagination({ page, totalPages }: { page: number; totalPages: number }) 
 function TrustStrip() {
   return (
     <div className="rounded-2xl border border-border bg-white p-5">
-      <div className="text-[10px] font-bold text-ink-3 uppercase tracking-widest mb-4">Why Trust Edify?</div>
+      <div className="text-[10px] font-bold text-ink-3 uppercase tracking-widest mb-4">Why Trust edifyedu.in?</div>
       {[
         { icon: '✅', text: 'Every post fact-checked against UGC DEB & NIRF data' },
         { icon: '🔒', text: 'Zero paid university partnerships: 100% independent' },

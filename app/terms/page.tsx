@@ -29,7 +29,7 @@ export default function TermsPage() {
             These Terms of Use govern your access to and use of <strong>edifyedu.in</strong>, operated by Edify Education ("we", "our", or "us"). By visiting or using this website, you agree to these terms. If you do not agree, please stop using the site.
           </p>
 
-          <h2 className="font-bold text-navy mt-8 mb-3">1. About EdifyEdu</h2>
+          <h2 className="font-bold text-navy mt-8 mb-3">1. About edifyedu.in</h2>
           <p className="text-ink-2">
             EdifyEdu.in is an independent online education comparison platform. We publish fee data, accreditation information, and programme details sourced from official portals (UGC-DEB, NAAC, NIRF, and university websites) to help students make informed decisions. We do not receive commissions, referral fees, or payments from any university to rank them higher.
           </p>

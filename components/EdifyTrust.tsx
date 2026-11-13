@@ -26,7 +26,7 @@ const STAGES = [
     num: '04',
     icon: '🏆',
     title: 'University Shortlist',
-    desc: 'Only after stages 1–3 do we recommend. Your list is sorted by NIRF rank. Zero paid placements, if a university pays, they don\'t appear on Edify.',
+    desc: 'Only after stages 1–3 do we recommend. Your list is sorted by NIRF rank. Zero paid placements, if a university pays, they don\'t appear on edifyedu.in.',
   },
 ]
 
@@ -42,7 +42,7 @@ export default function EdifyTrust({ compact = false }: { compact?: boolean }) {
               🛡️
             </div>
             <div>
-              <div className="text-[13px] font-bold text-navy">How Edify Works</div>
+              <div className="text-[13px] font-bold text-navy">How edifyedu.in Works</div>
               <div className="text-[11px] text-ink-3">3–4 stage evaluation before any recommendation</div>
             </div>
           </div>

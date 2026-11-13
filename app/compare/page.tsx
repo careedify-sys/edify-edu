@@ -213,7 +213,7 @@ export default function ComparePage() {
       {/* ── TRUST STATS — static, server-rendered ─────────────────────────── */}
       <div style={{ background: 'linear-gradient(135deg, #0d2240 0%, #1e3a5f 100%)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
-          <p className="text-center text-amber-400 text-xs font-semibold uppercase tracking-widest mb-6">Why students trust EdifyEdu</p>
+          <p className="text-center text-amber-400 text-xs font-semibold uppercase tracking-widest mb-6">Why students trust edifyedu.in</p>
           <div className="grid grid-cols-3 gap-4 sm:gap-8 mb-8">
             {[
               { icon: Award, stat: '143', label: 'Universities Verified', sub: 'UGC DEB approved' },

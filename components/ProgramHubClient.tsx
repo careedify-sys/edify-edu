@@ -186,7 +186,7 @@ export default function ProgramHubClient({ program, programFees }: Props) {
       </section>
       <section className="py-10 px-4 text-center">
         <h2 className="text-xl font-bold mb-2" style={{ color: '#0B1533' }}>Need help choosing?</h2>
-        <p className="text-slate-500 text-sm mb-4 max-w-lg mx-auto">Free 20-minute call with an EdifyEdu counsellor. No pressure, no paid recommendations.</p>
+        <p className="text-slate-500 text-sm mb-4 max-w-lg mx-auto">Free 20-minute call with an edifyedu.in counsellor. No pressure, no paid recommendations.</p>
         <Link href="/contact" className="inline-block px-8 py-3 bg-amber-500 text-white font-bold rounded-xl hover:bg-amber-600 transition-colors no-underline">
           Book Free Counselling →
         </Link>

@@ -55,7 +55,7 @@ export default function UniHero({ u, program, pd, cleanName, spec, customH1, h1V
     : `${level} · ${specs.length > 0 ? `${specs.length} Specialisations · ` : ''}${pd.duration || '2 Years'}${approvalSuffix}`
 
   const sub = !modeVerified
-    ? `EdifyEdu cannot confirm that ${cleanName} runs this programme online. Check deb.ugc.ac.in and contact the university directly.`
+    ? `edifyedu.in cannot confirm that ${cleanName} runs this programme online. Check deb.ugc.ac.in and contact the university directly.`
     : spec
     ? `${program} with ${spec} specialisation from ${cleanName}. UGC DEB approved.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}`
     : (cleanCareerOutcome(pd.careerOutcome || '') || `Advance your career with an Online ${program} from ${cleanName}. Choose from ${specs.length}+ industry-relevant specialisations. Study while working.`)
@@ -169,14 +169,14 @@ export default function UniHero({ u, program, pd, cleanName, spec, customH1, h1V
         {/* Trust line + desktop CTA */}
         <div className="flex flex-wrap items-center gap-4">
           <p className="text-xs text-slate-500">
-            500+ students guided by EdifyEdu this year · {intakeLine}
+            500+ students guided by edifyedu.in this year · {intakeLine}
           </p>
           <button
             onClick={scrollToLead}
             className="hidden lg:inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-bold transition-opacity hover:opacity-90"
             style={{ background: '#F4A024', color: '#0B1533' }}
           >
-            Talk to EdifyEdu Counsellor →
+            Talk to our counsellor →
           </button>
         </div>
       </div>

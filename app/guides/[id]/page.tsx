@@ -3,6 +3,10 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getGuideById, GUIDES, type Guide } from '@/lib/guides'
 
+// One date drives both the Article schema dateModified and the visible line.
+const GUIDE_DATE_MODIFIED = '2026-04-01'
+const GUIDE_UPDATED_LABEL = new Date(GUIDE_DATE_MODIFIED).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })
+
 type Props = { params: Promise<{ id: string }> | { id: string } }
 
 export async function generateStaticParams() {
@@ -83,7 +87,7 @@ export default async function GuidePage({ params }: Props) {
     headline: guide.title,
     description: guide.metaDescription,
     datePublished: '2026-01-15',
-    dateModified: '2026-04-01',
+    dateModified: GUIDE_DATE_MODIFIED,
     image: {
       '@type': 'ImageObject',
       url: 'https://edifyedu.in/og.webp',
@@ -155,7 +159,7 @@ export default async function GuidePage({ params }: Props) {
               </div>
               <div>
                 <div className="text-sm font-semibold text-navy leading-none mb-0.5">Rishi Kumar</div>
-                <div className="text-xs text-ink-3">edifyedu.in Admissions Research · {guide.readTime} · Updated April 2026</div>
+                <div className="text-xs text-ink-3">edifyedu.in Admissions Research · {guide.readTime} · Last updated {GUIDE_UPDATED_LABEL}</div>
               </div>
             </div>
           </div>

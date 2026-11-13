@@ -938,7 +938,7 @@ function CompareContent() {
                     <Award size={16} className="text-white" />
                   </div>
                   <div>
-                    <p className="text-sm font-bold text-slate-800">The Edify Verdict</p>
+                    <p className="text-sm font-bold text-slate-800">The edifyedu.in Verdict</p>
                     <p className="text-[11px] text-slate-500">Based on rankings and placement data for Online {program}</p>
                   </div>
                 </div>
