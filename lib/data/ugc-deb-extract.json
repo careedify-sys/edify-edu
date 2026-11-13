@@ -1,0 +1,162 @@
+{
+  "amity-university-online": {
+    "universityName": "Amity University",
+    "state": "Uttar Pradesh",
+    "programmes": [
+      {
+        "name": "Bachelor of Computer Applications (General)",
+        "category": "BCA",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Bachelor of Business Administration (General)",
+        "category": "BBA",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Bachelor of Arts (Pol Sci/Eco/English/Sociology)",
+        "category": "BA",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Master of Arts (Journalism & Mass Communication)",
+        "category": "MA",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Master of Commerce (Financial Management/Financial Technology)",
+        "category": "M.Com",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Master of Arts (Economics)",
+        "category": "MA",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Master of Computer Applications",
+        "category": "MCA",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Master of Business Administration",
+        "category": "MBA",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Post Graduate Diploma (Management)",
+        "category": "PG Diploma",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Post Graduate Diploma (Logistics)",
+        "category": "PG Diploma",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Post Graduate Diploma (Data Science)",
+        "category": "PG Diploma",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Post Graduate Diploma (Machine Learning and AI)",
+        "category": "PG Diploma",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Bachelor of Social Work",
+        "category": "BSW",
+        "notice": "Notice 2 (Dec 2025)",
+        "period": "2022-23 to 2026-27 (Sep 2022 to Jan 2027)"
+      },
+      {
+        "name": "Bachelor of Commerce (General)",
+        "category": "B.Com",
+        "notice": "Notice 2 (Dec 2025)",
+        "period": "2022-23 to 2026-27 (Sep 2022 to Jan 2027)"
+      },
+      {
+        "name": "Bachelor of Arts (Journalism and Mass Communication)",
+        "category": "BA",
+        "notice": "Notice 2 (Dec 2025)",
+        "period": "2022-23 to 2026-27 (Sep 2022 to Jan 2027)"
+      },
+      {
+        "name": "Master of Arts (Public Policy & Governance)",
+        "category": "MA",
+        "notice": "Notice 2 (Dec 2025)",
+        "period": "2022-23 to 2026-27 (Sep 2022 to Jan 2027)"
+      },
+      {
+        "name": "Master of Social Work",
+        "category": "MSW",
+        "notice": "Notice 2 (Dec 2025)",
+        "period": "2022-23 to 2026-27 (Sep 2022 to Jan 2027)"
+      },
+      {
+        "name": "Master of Arts (English)",
+        "category": "MA",
+        "notice": "Notice 2 (Dec 2025)",
+        "period": "2022-23 to 2026-27 (Sep 2022 to Jan 2027)"
+      }
+    ],
+    "naac": null,
+    "nirf": {
+      "overall": 37,
+      "university": 22,
+      "management": 49
+    }
+  },
+  "nmims-online": {
+    "universityName": "Narsee Monjee Institute of Management Studies (NMIMS)",
+    "state": "Maharashtra",
+    "programmes": [
+      {
+        "name": "Bachelor of Business Administration",
+        "category": "BBA",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Bachelor of Commerce",
+        "category": "B.Com",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Master of Business Administration (Working Executive)",
+        "category": "MBA",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Master of Business Administration",
+        "category": "MBA",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      }
+    ],
+    "naac": {
+      "grade": "A++",
+      "cgpa": 3.67,
+      "declaredOn": "2025-06-28"
+    },
+    "nirf": {
+      "overall": 95,
+      "university": 52,
+      "management": 24
+    }
+  }
+}

@@ -2,7 +2,7 @@
   "uniSlug": "amity-university-online",
   "program": "mba",
   "sections": {
-    "tldr": "Amity University Online MBA at a glance: UGC-DEB approved, 2 Years (4-year max validity), Rs 2,25,000 to Rs 3,29,000, NIRF #22 University 2025, 19 specialisations. Best for graduates wanting maximum specialisation choice from a well-known QS-ranked university.",
+    "tldr": "Amity's 2-year online MBA is offered by Amity University Uttar Pradesh (Noida) under UGC-DEB entitlement, with 40% eligibility and 19 specialisations. It suits working professionals who want a well-known, internationally accredited degree. It does not suit freshers looking for placements.",
     "hero": {
       "body": "Amity University Online MBA is UGC-DEB approved and NAAC A+ accredited. The 2-year programme runs entirely online with proctored exams, covers 19 specialisations, and carries the same degree wording as the on-campus programme. Fees start at Rs 2,25,000 to Rs 3,29,000 (NIRF University #22, Noida). This page covers the exact syllabus, all fee slabs, admission steps, placement data, and four honest red flags so you can decide without talking to a salesperson first."
     },
@@ -76,34 +76,37 @@
     },
     "redFlags": {
       "heading": "Red Flags to Know Before Enrolling",
-      "intro": "The following red flags are based on monitoring of student forums including Reddit r/indianeducation, Trustpilot reviews, and Consumer Complaints India.",
       "flags": [
         {
-          "sentence1": "With 19 specialisations available, the depth of elective content in less-popular tracks is uneven.",
-          "sentence2": "Business Analytics, Data Science, and Finance tracks have stronger content density than some niche tracks like Insurance Management."
+          "sentence1": "Support is weakest when you need it most.",
+          "sentence2": "Around exams, many students log in at once, things stop working, and the support number often goes unanswered."
         },
         {
-          "sentence1": "Placement support for online students is materially weaker than for Amity Noida campus students.",
-          "sentence2": "The Amity brand helps with HR recognition, but you should expect to drive your own job search rather than rely on the online placement cell."
+          "sentence1": "Lectures may not match what you were promised.",
+          "sentence2": "Several of my students said lecture quality was below what they were told at admission."
         },
         {
-          "sentence1": "The AMIGO LMS has had documented downtime during exam periods, reported by students on Reddit and public forums.",
-          "sentence2": "Download all study materials locally at the start of each semester. Do not rely entirely on online access near exam dates."
+          "sentence1": "Placement support rarely leads to jobs.",
+          "sentence2": "I have not seen a student I enrolled get placed through it."
         },
         {
-          "sentence1": "Amity's fee range of Rs 2,25,000 to Rs 3,29,000 depends on specialisation.",
-          "sentence2": "Dual and triple specialisation options cost more and the ROI calculation changes significantly. Single specialisation at Rs.2.25L is the standard path. Dual specialisation at Rs.3L+ may not deliver proportionate career benefit for all profiles."
+          "sentence1": "You pay extra for the brand.",
+          "sentence2": "Compare the teaching and support you will get against other universities before you pay."
         }
       ]
     },
     "faqs": [
+      {
+        "question": "Will the Amity online MBA get me a job?",
+        "answer": "Amity advertises 100% placement assistance and 450+ hiring partners, and job openings do get shared. But I have not seen a single student I enrolled at Amity Online get placed through it. Use this MBA to grow in your current career and run your own job search."
+      },
       {
         "question": "Is the Amity Online MBA approved by UGC?",
         "answer": "Yes. Amity University Online MBA is UGC-DEB approved and the institution appears on the entitled list at deb.ugc.ac.in. Amity was among the first universities to receive UGC-DEB approval in India. The degree is legally equivalent to a regular MBA."
       },
       {
         "question": "What is the total fee for Amity Online MBA?",
-        "answer": "Standard single-specialisation Online MBA costs Rs 2,25,000 to Rs 3,29,000 for the 2-year programme. Dual and triple specialisation options are priced higher. Fees can change between intakes. Confirm current fees with our counsellor before paying."
+        "answer": "On the standard tracks the fee is {{fee:mba/standard/one-time}} paid one-time or {{fee:mba/standard/semester}} paid by semester. On the premium tracks (Hospital and Healthcare Management, International Finance (ACCA) and Dual Specialisation) it is {{fee:mba/premium/one-time}} paid one-time or {{fee:mba/premium/semester}} paid by semester."
       },
       {
         "question": "What is the eligibility for Amity Online MBA?",
@@ -111,11 +114,11 @@
       },
       {
         "question": "How does Amity conduct online MBA exams?",
-        "answer": "All exams are conducted online via proctored browser on the AMIGO LMS. Grading: 30 percent internal assessment and 70 percent end-semester examination. A working webcam and stable internet are required. Exams run in May-June and November-December."
+        "answer": "Exams are online and slot-based. Amity releases a date sheet, and you pick the date and the time slot that suit you: morning, afternoon or evening. That makes it easier to fit exams around a job."
       },
       {
         "question": "How many specialisations does Amity Online MBA offer?",
-        "answer": "Amity Online MBA offers 19 specialisations, the highest count among UGC-DEB approved Indian online MBAs. Specialisation choice is made at admission. The core curriculum in Semesters 1 and 2 is shared across all specialisations."
+        "answer": "Amity Online MBA offers 19 specialisations. Specialisation choice is made at admission. The core curriculum in Semesters 1 and 2 is shared across all specialisations."
       },
       {
         "question": "Is Amity Online MBA ACCA-accredited?",
@@ -127,11 +130,11 @@
       },
       {
         "question": "What placement support does Amity provide for online MBA students?",
-        "answer": "Amity provides resume guidance, mock interviews, and virtual placement events. Reported average salary range is Rs.5L to Rs.12L per annum. Placement support for online students is less intensive than for Noida campus students. Independent job search in parallel is strongly recommended."
+        "answer": "Job openings do get shared with students. But I have not seen a single student I enrolled at Amity Online get placed through Amity's placement support. Online programmes are not built for placements, whatever any university or counsellor tells you. Use this MBA to grow in your current career, and run your own job search."
       },
       {
         "question": "What is Amity University's NIRF ranking?",
-        "answer": "NIRF 2025: #22 Overall University, #49 Management category. Amity Noida campus is ranked separately. Always cite the correct NIRF category when discussing your credential with employers."
+        "answer": "NIRF 2025 ranks Amity University Uttar Pradesh, Noida, at #22 in the University category, #49 in Management and #37 Overall. These are the parent university's ranks. NIRF does not rank online programmes separately."
       },
       {
         "question": "Can I use Amity Online MBA for government jobs?",

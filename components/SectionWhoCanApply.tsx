@@ -5,6 +5,8 @@ interface Props {
   u: University
   program: string
   cleanName: string
+  // First-hand hubs show Rishi's lists instead (components/FirstHandMbaSections.tsx).
+  hideLists?: boolean
 }
 
 const PROGRAM_DEFAULTS: Record<string, { eligibility: string; forWho: string[]; notFor: string[] }> = {
@@ -30,7 +32,7 @@ const PROGRAM_DEFAULTS: Record<string, { eligibility: string; forWho: string[]; 
   },
 }
 
-export default function SectionWhoCanApply({ u, program, cleanName }: Props) {
+export default function SectionWhoCanApply({ u, program, cleanName, hideLists = false }: Props) {
   const defaults = PROGRAM_DEFAULTS[program] || PROGRAM_DEFAULTS['MBA']
   const eligibility = u.eligibility || defaults.eligibility
   const forWho = u.forWho?.length ? u.forWho : defaults.forWho
@@ -40,11 +42,11 @@ export default function SectionWhoCanApply({ u, program, cleanName }: Props) {
     <section className="rounded-xl border border-slate-200 bg-white p-6">
       <h2 className="text-lg font-bold mb-4" style={{ color: '#0B1533' }}>{cleanName} Online {program} Eligibility 2026</h2>
 
-      <div className="p-3 rounded-lg bg-blue-50 border border-blue-100 text-sm text-blue-800 mb-5">
+      <div className={`p-3 rounded-lg bg-blue-50 border border-blue-100 text-sm text-blue-800${hideLists ? '' : ' mb-5'}`}>
         <strong>Eligibility:</strong> {eligibility}
       </div>
 
-      <div className="grid sm:grid-cols-2 gap-4">
+      {!hideLists && <div className="grid sm:grid-cols-2 gap-4">
         <div>
           <h3 className="text-sm font-bold text-green-700 mb-2 flex items-center gap-1.5">
             <CheckCircle size={14} className="text-green-500" /> Good fit for
@@ -71,7 +73,7 @@ export default function SectionWhoCanApply({ u, program, cleanName }: Props) {
             ))}
           </ul>
         </div>
-      </div>
+      </div>}
     </section>
   )
 }

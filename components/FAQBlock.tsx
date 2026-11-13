@@ -3,15 +3,20 @@
 import { useState } from 'react'
 import { ChevronDown, HelpCircle } from 'lucide-react'
 import { splitParagraph } from '@/lib/split-paragraphs'
+import { stripLinks } from '@/lib/link-markup'
+import { FirstHandText } from './FirstHandShared'
 
 interface FAQ { q: string; a: string }
 
 interface Props {
   faqs: FAQ[]
   title?: string
+  // Render "[text](/path)" as links and strip it from the schema. Opt-in: some
+  // page-content JSON already carries that markup and prints it as-is.
+  linkMarkup?: boolean
 }
 
-export default function FAQBlock({ faqs, title = 'Frequently Asked Questions' }: Props) {
+export default function FAQBlock({ faqs, title = 'Frequently Asked Questions', linkMarkup = false }: Props) {
   const [open, setOpen] = useState<number | null>(0)
 
   const validFaqs = faqs.filter(f => f.q?.trim() && f.a?.trim())
@@ -21,7 +26,7 @@ export default function FAQBlock({ faqs, title = 'Frequently Asked Questions' }:
     mainEntity: validFaqs.map(f => ({
       '@type': 'Question',
       name: f.q.trim(),
-      acceptedAnswer: { '@type': 'Answer', text: f.a.trim() },
+      acceptedAnswer: { '@type': 'Answer', text: linkMarkup ? stripLinks(f.a.trim()) : f.a.trim() },
     })),
   } : null
 
@@ -53,7 +58,7 @@ export default function FAQBlock({ faqs, title = 'Frequently Asked Questions' }:
             {open === i && (
               <div className="px-4 pb-4 pt-1 bg-slate-50 border-t border-slate-100">
                 <div className="text-sm text-slate-600 leading-relaxed space-y-2">
-                  {splitParagraph(faq.a).map((para, pi) => <p key={pi}>{para}</p>)}
+                  {splitParagraph(faq.a).map((para, pi) => <p key={pi}>{linkMarkup ? <FirstHandText text={para} /> : para}</p>)}
                 </div>
               </div>
             )}

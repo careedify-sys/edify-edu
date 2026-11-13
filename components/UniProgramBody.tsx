@@ -54,6 +54,8 @@ import SiblingProgrammes from './SiblingProgrammes'
 import { getSiblingProgrammes, getUniversityOverviewLink, getVerifyPage, resolveSpecHref } from '@/lib/seo/safe-internal-links'
 import { feeSentence, emiSentence, programmeEmiFrom, NO_PROGRAMME_EMI } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
+import { resolveFirstHand, fillFeeTokens } from '@/lib/first-hand'
+import FirstHandMbaSections from './FirstHandMbaSections'
 
 interface Props {
   u: University
@@ -140,6 +142,9 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
   const coupon     = COUPONS.find(c => c.universityId === u.id && (c.program === program || c.program === 'All')) || null
 
   const content = getPageContent(u.id, program.toLowerCase())
+  // Rishi's first-hand content (lib/data/first-hand/). MBA hub only; every
+  // other university and programme renders exactly as before.
+  const fh = program === 'MBA' ? resolveFirstHand(u) : undefined
   const s = content?.sections
   const programBlogLinks = getProgramLinks(u.id, program.toLowerCase())
 
@@ -220,16 +225,27 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
   ]
 
   // Use content JSON FAQs for schema when available — keeps visible content and structured data in sync
-  const schemaFaqs = s?.faqs?.length
+  const jsonFaqs = s?.faqs?.length
     ? s.faqs.map(f => ({ q: f.question, a: f.answer }))
-    : faqs
+    : null
+  // First-hand hubs: fee tokens in the JSON ({{fee:mba/standard/one-time}}) are
+  // filled from lib/data.ts, and Rishi's questions go first.
+  const fhFaqs = fh && jsonFaqs
+    ? [
+        ...fh.faqsMbaHub,
+        ...jsonFaqs
+          .filter(f => !fh.faqsMbaHub.some(x => x.q.trim().toLowerCase() === (f.q ?? '').trim().toLowerCase()))
+          .map(f => ({ q: f.q, a: f.a ? fillFeeTokens(f.a, u) : f.a })),
+      ]
+    : null
+  const schemaFaqs = fhFaqs ?? jsonFaqs ?? faqs
 
   // AI-citation sprint (2026-11-04): answer-first sections on MBA hubs with no
   // review blog. Their FAQ items go after the existing list (FAQBlock emits the
   // page's single FAQPage), skipping any question the list already asks.
   // Selection and the conflict rule: lib/answers/hub-answers.ts.
   const hubAnswers = program === 'MBA' ? getHubAnswers(u) : null
-  const baseFaqs = s?.faqs?.length ? s.faqs.map(f => ({ q: f.question, a: f.answer })) : faqs
+  const baseFaqs = fhFaqs ?? (s?.faqs?.length ? s.faqs.map(f => ({ q: f.question, a: f.answer })) : faqs)
   // Some content-JSON FAQ items have no question; FAQBlock filters them, so
   // guard here too (f.q can be undefined at runtime despite the type).
   const askedQ = new Set(baseFaqs.map(f => (f.q ?? '').trim().toLowerCase()))
@@ -347,12 +363,15 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               )}
 
               {/* §5 Who Can Apply */}
-              <SectionWhoCanApply u={u} program={program} cleanName={cleanName} />
+              <SectionWhoCanApply u={u} program={program} cleanName={cleanName} hideLists={!!fh} />
+              {fh && <FirstHandMbaSections fh={fh} part="who" />}
 
               {/* §6 Class Schedule and §7 Exams describe online delivery, so they
                   are suppressed for universities whose delivery mode is unverified.
                   See MODE_UNVERIFIED_UNIS in lib/seo/should-index.ts. */}
-              {shouldIndexUniversity(u.id) && (
+              {fh ? (
+                <FirstHandMbaSections fh={fh} part="classes" />
+              ) : shouldIndexUniversity(u.id) && (
                 <>
                   <SectionClasses u={u} program={program} cleanName={cleanName} />
                   <SectionExams u={u} program={program} cleanName={cleanName} />
@@ -373,6 +392,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                 />
                 </div>
               )}
+              {fh && <FirstHandMbaSections fh={fh} part="specAdvice" />}
 
               {/* §9 Core Subjects */}
               <SectionCoreSubjects program={program} cleanName={cleanName} />
@@ -409,7 +429,9 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
 
               {/* §13 Admission */}
               <div id="admission">
-                <AdmissionSteps />
+                {fh
+                  ? <FirstHandMbaSections fh={fh} part="admission" eligibility={u.eligibility} />
+                  : <AdmissionSteps />}
               </div>
 
               {/* §13B ABC ID (generated content only) */}
@@ -424,14 +446,17 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
 
               {/* §14 Placements */}
               <div id="placement">
-                <SectionPlacements pd={pd} cleanName={cleanName} program={program} />
+                {fh
+                  ? <FirstHandMbaSections fh={fh} part="placements" />
+                  : <SectionPlacements pd={pd} cleanName={cleanName} program={program} />}
               </div>
 
-              {/* §14b Beyond Admission */}
-              <BeyondAdmissionSection cleanName={cleanName} />
-
-              {/* §15 Top Hirers */}
-              <TopHirers pd={pd} program={program} cleanName={cleanName} />
+              {/* §14b Beyond Admission and §15 Top Hirers. Hidden on first-hand
+                  hubs: Rishi is confirming whether the Beyond Admission service
+                  exists, and the hirer lists have no source. */}
+              {!fh && <BeyondAdmissionSection cleanName={cleanName} />}
+              {!fh && <TopHirers pd={pd} program={program} cleanName={cleanName} />}
+              {fh && <FirstHandMbaSections fh={fh} part="notice" />}
 
               {/* §16 Reviews. CTA only until first-party rows exist. */}
               <div id="reviews">
@@ -451,7 +476,12 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               </div>
 
               {/* §17 Red Flags. Skipped entirely when the JSON sets hidden */}
-              {s?.redFlags?.hidden ? null : s?.redFlags?.flags?.length ? (
+              {fh ? (
+                <>
+                  <FirstHandMbaSections fh={fh} part="redFlags" />
+                  <FirstHandMbaSections fh={fh} part="verdict" />
+                </>
+              ) : s?.redFlags?.hidden ? null : s?.redFlags?.flags?.length ? (
                 <GeneratedRedFlagsBlock redFlags={s.redFlags} />
               ) : (
                 <RedFlagsBlock u={u} program={program} cleanName={cleanName} />
@@ -476,7 +506,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               )}
 
               {/* §19 Honest Verdict */}
-              <HonestVerdict u={u} program={program} cleanName={cleanName} />
+              {!fh && <HonestVerdict u={u} program={program} cleanName={cleanName} />}
 
               {/* CTA before FAQ */}
               <InlineCTA
@@ -491,7 +521,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
 
               {/* §20 FAQs */}
               <div id="faqs">
-                <FAQBlock faqs={shownFaqs} title={`${cleanName} ${shouldIndexUniversity(u.id) ? 'Online ' : ''}${program} FAQs`} />
+                <FAQBlock faqs={shownFaqs} linkMarkup={!!fh} title={`${cleanName} ${shouldIndexUniversity(u.id) ? 'Online ' : ''}${program} FAQs`} />
               </div>
 
               {/* §21 Last Updated */}

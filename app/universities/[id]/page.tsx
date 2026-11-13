@@ -7,6 +7,7 @@ import { nirfForProgramme } from '@/lib/data-slim'
 import UniversityPageClient from '@/components/UniversityPageClient'
 import { getResolvableProgrammes, getVerifyPage, resolveSpecHref } from '@/lib/seo/safe-internal-links'
 import { getTitleName, clampTitle, clampDescription } from '@/lib/seo-title'
+import { resolveFirstHand } from '@/lib/first-hand'
 import { getExactFee, formatExactFee, formatExactFeeShort } from '@/lib/fees'
 import { getProgramSchemaOffer } from '@/lib/seo/program-schema'
 import { pageKeywords } from '@/lib/page-keywords'
@@ -244,6 +245,7 @@ export default async function UniversityPage(
         programSchema={Object.fromEntries(university.programs.map(p => {
           return [p, { offer: getProgramSchemaOffer(university, p), feeCompact: formatExactFee(getExactFee(university, p)), feeShort: formatExactFeeShort(getExactFee(university, p)) }]
         }))}
+        firstHand={resolveFirstHand(university)}
         specHrefs={Object.fromEntries(university.programs.flatMap(p => {
           // Same slug derivation as the chips in UniversityPageClient.
           const progSlug = p.toLowerCase().replace(/\./g, '')

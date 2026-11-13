@@ -24,6 +24,10 @@ import PreAdmissionTools from '@/components/PreAdmissionTools'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import type { SchemaOffer } from '@/lib/seo/program-schema'
 import { UniversityVideo } from '@/components/YouTubeVideo'
+import type { ResolvedFirstHand } from '@/lib/first-hand'
+import { stripLinks } from '@/lib/link-markup'
+import FirstHandUniversitySections from '@/components/FirstHandUniversitySections'
+import { FirstHandText } from '@/components/FirstHandShared'
 
 const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')
 
@@ -65,9 +69,11 @@ interface Props {
    * null renders the chip without a link.
    */
   specHrefs: Record<string, string | null>
+  /** Rishi's first-hand content, resolved on the server (lib/first-hand.ts). */
+  firstHand?: ResolvedFirstHand
 }
 
-export default function UniversityPageClient({ university: u, linkableProgrammes, verifyHref, programSchema, specHrefs, answerHtml, feePlanHtml }: Props) {
+export default function UniversityPageClient({ university: u, linkableProgrammes, verifyHref, programSchema, specHrefs, answerHtml, feePlanHtml, firstHand: fh }: Props) {
   const [enquiryOpen, setEnquiryOpen] = useState(false)
   const [activeProgram, setActiveProgram] = useState<Program | null>(null)
   const [compareList, setCompareList] = useState<string[]>([])
@@ -150,7 +156,13 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
   // lists online programmes and describes an exam mode, and it is serialised
   // into the FAQPage JSON-LD below. None of that is established for these
   // records. See lib/seo/mode-unverified.ts.
-  const faqs = shouldIndexUniversity(u.id) ? templateFaqs : [
+  const firstHandFaqs = fh ? [
+    ...templateFaqs
+      .filter(f => !/^How are exams conducted at /.test(f.q))
+      .map(f => /^What jobs can I get after /.test(f.q) ? { q: f.q, a: fh.placements.universityPageFaq } : f),
+    ...fh.faqsUniversityPage,
+  ] : null
+  const faqs = firstHandFaqs ?? (shouldIndexUniversity(u.id) ? templateFaqs : [
     {
       q:`Does ${u.name} offer online programmes?`,
       a:`edifyedu.in cannot confirm that it does. ${u.name} appears in the UGC Distance Education Bureau recognition list of August 2026, but that document names programmes without stating a delivery mode. The UGC DEB programme register, which does state the mode, does not list ${u.name}, and the university advertises on-campus programmes only on its own website.`
@@ -163,7 +175,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
       q:`What should I do if I want to study at ${u.name}?`,
       a:`Approach the university directly for its current programme options and admission process. Confirm the delivery mode and the UGC position in writing at deb.ugc.ac.in before you pay anything.`
     },
-  ]
+  ])
 
   return (
     <>
@@ -171,7 +183,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
         '@context':'https://schema.org','@type':'FAQPage',
-        mainEntity:faqs.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))
+        mainEntity:faqs.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:fh ? stripLinks(f.a) : f.a}}))
       })}}/>
       {/* Mode-unverified universities: this node asserts a Course exists, calls it
           UGC DEB approved and stamps courseMode 'online' on its CourseInstance.
@@ -388,6 +400,9 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
             {/* Left Column - Main Content */}
             <div className="flex-1 flex flex-col gap-8">
 
+              {/* First-hand: byline, what it is, approvals (lib/data/first-hand/) */}
+              {fh && <FirstHandUniversitySections fh={fh} part="intro" />}
+
               {/* About University */}
               <section className="card-lg p-6">
                 <h2 className="font-display text-xl font-bold text-navy mb-4">
@@ -544,6 +559,9 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                 )
               })()}
 
+              {/* First-hand: classes, exams, student tools, what students say, admission */}
+              {fh && <FirstHandUniversitySections fh={fh} part="life" />}
+
               {/* Sample Degree Certificate — only shown for universities with configured SVGs */}
               {SAMPLE_DEGREES[u.id] && (() => {
                 const degreeUrl = getSampleDegree(u.id, displayProgram) ?? undefined
@@ -604,7 +622,8 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                 </div>
               </section>
 
-              {/* Who Should Apply */}
+              {/* Who Should Apply. First-hand pages show Rishi's lists instead. */}
+              {fh ? <FirstHandUniversitySections fh={fh} part="fit" /> : (
               <section className="card-lg p-6">
                 <h2 className="font-display text-xl font-bold text-navy mb-4">Who Should Apply to {cleanName} Online Programs?</h2>
                 <div className="text-sm font-bold text-green-600 uppercase tracking-wider mb-3">✓ Best For</div>
@@ -617,6 +636,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                   ))}
                 </ul>
               </section>
+              )}
 
               {/* edifyedu.in Recommends - Skills & Projects */}
               <section className="card-lg p-6" style={{background:'linear-gradient(135deg, rgba(31,107,82,0.05), rgba(31,107,82,0.02))', border:'1px solid rgba(31,107,82,0.15)'}}>
@@ -715,7 +735,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                       </button>
                       {openFaq === i && (
                         <div className="px-5 pb-4 text-sm text-ink-2 leading-relaxed border-t border-border pt-3">
-                          {faq.a}
+                          {fh ? <FirstHandText text={faq.a} /> : faq.a}
                         </div>
                       )}
                     </div>
