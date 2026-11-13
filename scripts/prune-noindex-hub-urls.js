@@ -138,6 +138,15 @@ function getReference(u, program) {
 // Mirrors MIN_CREDIBLE_FEE in lib/fees.ts.
 const MIN_CREDIBLE_FEE = 5000
 
+// Mirrors SHARED_RANGES in lib/fees.ts (rule 4d). MISSING here until
+// 2026-11-14: rule 4d shipped in lib/fees.ts on 2026-10-30 and this port was
+// not updated, so 71 hubs at 23 universities sat in the sitemap while their
+// pages emitted noindex. Found by audits/spec-page-inventory-2026-11-14.md.
+const SHARED_RANGES = new Set(
+  JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'placeholder-fee-ranges.json'), 'utf8'))
+    .ranges.map(r => `${r.min}-${r.max}`),
+)
+
 function feeOk(u, program) {
   const pd = u.programDetails && u.programDetails[program]
   const parsed = pd && pd.fees ? parseFeeStr(pd.fees) : null
@@ -153,6 +162,10 @@ function feeOk(u, program) {
   }
   // Rule 4a: width sanity, pd.fees range spans > 3x → suppress.
   if (parsed && parsed.min > 0 && parsed.max / parsed.min > SUSPICIOUS_RANGE_RATIO) {
+    return false
+  }
+  // Rule 4d: a range claimed identically by another university is a placeholder.
+  if (parsed && parsed.min !== parsed.max && SHARED_RANGES.has(`${parsed.min}-${parsed.max}`)) {
     return false
   }
   const ref = getReference(u, program)
