@@ -1342,6 +1342,98 @@ export const BLOG_POSTS: BlogPost[] = [
 <p style="font-size:13px;color:#64748b;margin:24px 0 0"><em>Disclaimer: accreditation status, UGC-DEB entitlement and ranking data change between assessment cycles and admission sessions. Every figure here was checked against UGC, NAAC and NIRF records on 29 August 2026. Verify current status against the official sources above before making any payment. EdifyEdu is independent, takes no referral commission and does not sell rankings.</em></p>`
   },
   {
+    // Ranking plan batch 1.5 (14 Nov 2026): answer post for "is nmims online
+    // mba worth it" / "nmims online mba good or bad". Built only from Rishi's
+    // first-hand file (lib/data/first-hand/nmims-online.ts, reviewed 13 Nov)
+    // and lib/data.ts. Fees and admission amounts render from data through
+    // the data-edify markers; no typed rupee figures.
+    slug: "is-nmims-online-mba-worth-it-2026",
+    title: "Is the NMIMS Online MBA Worth It? An Honest 2026 Verdict",
+    metaDescription: "Yes, at NMIMS's fee, for most working professionals. What works, what to be ready for (the 75% exam rule, extra career services, the 2023 debarment) and who should skip it.",
+    category: "University Reviews",
+    tags: ["is nmims online mba worth it", "nmims online mba good or bad", "nmims online mba review", "nmims cdoe mba worth it", "nmims online mba value"],
+    publishedAt: "2026-11-14",
+    readTime: 6,
+    targetKeyword: "is nmims online mba worth it",
+    relatedUniversities: ["nmims-online"],
+    status: "published",
+    author: "Rishi Kumar",
+    ctaTitle: "Talk to Our Counsellor About NMIMS",
+    ctaDesc: "Edify compares public UGC/NAAC/NIRF data, no paid rankings.",
+    faqs: [
+      { q: "Is the NMIMS online MBA worth it?", a: "Yes, at NMIMS's fee, for a working professional who wants a reputed business school name, whose field is one of NMIMS's specialisations, and who can complete 75% of the content in every subject." },
+      { q: "Does the NMIMS online MBA fee include placement support?", a: "No. Placement and career services cost extra. They are not part of the programme fee, and most students only find this out after joining." },
+      { q: "Does the 2023 UGC debarment affect students joining now?", a: "No. The debarment covered three sessions, January to February 2023, July to August 2023 and January to February 2024. NMIMS is back on UGC-DEB's list (Notice 1, January 2026) for the online MBA." },
+    ],
+    content: `<h2>Short answer</h2>
+<p>Yes, it is worth it at NMIMS's fee. For the price, you get a strong brand, better faculty than most online MBAs in the same range, and a strong peer group. The one condition: be comfortable answering questions about the 2023 debarment.</p>
+<p>By Rishi Kumar, founder of edifyedu.in, based on conversations with NMIMS online MBA students. edifyedu.in compares public UGC/NAAC/NIRF data, no paid rankings.</p>
+
+<h2>What you pay</h2>
+<p>These are NMIMS's current payment plans for the online MBA, from our database. Our review sets out the <a href="/blog/nmims-online-mba-review-2026">NMIMS online MBA fees</a> plan by plan, with every instalment.</p>
+<div data-edify="fee-plans" data-uni="nmims-online" data-program="MBA"></div>
+
+<h2>What works well</h2>
+<ul>
+<li><strong>Faculty.</strong> Online students are not taught by the same faculty as campus students, so the quality is never identical. But among online MBAs in the same price range, such as Amity, Manipal and LPU, NMIMS's teaching is clearly better.</li>
+<li><strong>The peer group.</strong> After Symbiosis and BITS Pilani, NMIMS has the strongest peer group I have seen in an online MBA.</li>
+<li><strong>Support.</strong> It is better than any other university's support I have dealt with.</li>
+<li><strong>Flexible batches and exam slots.</strong> Even within one intake, say January, NMIMS starts separate batches: a weekend batch, a weekday batch and an alternate-days batch. If you work on weekdays, pick the weekend batch. If you work on weekends, pick the weekday batch.</li>
+</ul>
+
+<h2>How the exams work</h2>
+<p>Before each exam, you must complete at least 75% of that subject's track on the student portal, by going through the content, the recorded sessions or the live lectures. Only then is your admit card generated. After that, NMIMS gives you about a month to choose your exam date, and you pick the slot that suits you. It is one of the most flexible exam systems I have seen.</p>
+
+<h2>What to be ready for</h2>
+<ul>
+<li><strong>75% of every subject before each exam.</strong> If you fall behind on the content, your admit card is not generated.</li>
+<li><strong>Career services cost extra.</strong> Placement and career services are not part of the programme fee, and most students only find this out after joining. Budget for them if you want them.</li>
+<li><strong>Networking happens only on the portal.</strong> There are no WhatsApp groups, so you have to make the effort there.</li>
+<li><strong>Document verification can be slow.</strong> Students tell me approval can be slow, so submit your self-attested documents early.</li>
+<li><strong>The 2023 debarment will come up.</strong> It is over, but be ready to explain it to an employer.</li>
+</ul>
+
+<h2>About the 2023 UGC debarment</h2>
+<p>Yes, UGC did debar NMIMS. Under an April 2023 notice, NMIMS could not admit students to online or distance programmes for three sessions: January to February 2023, July to August 2023 and January to February 2024. NMIMS is back on UGC-DEB's list (Notice 1, January 2026) for the online MBA, MBA (Working Executive), BBA and B.Com. If you join now, the debarment does not apply to you. <a href="/blog/is-nmims-online-fake-or-legit-2026">Read the full timeline</a>.</p>
+
+<h2>What NMIMS's counsellors won't tell you</h2>
+<p>NMIMS's own admission counsellors won't tell you about the rule that you must complete 75% of every subject before its exam. They won't tell you that placement and career services cost extra; you find that out later in the programme. And they won't really discuss the debarment. They will say it happened and move the conversation somewhere else.</p>
+
+<h2>Placements</h2>
+<p>NMIMS says its online MBA students get access to 500+ hiring partners, and career services with coaching, CV help and practice interviews. It also says 82,000+ CDOE alumni work at 8,000+ companies. These are NMIMS's own figures, as published on its site on 13 November 2026; edifyedu.in has not verified them.</p>
+<p>What I have seen: placement and career services cost extra. They are not part of the programme fee, and most students only find this out after joining.</p>
+
+<h2>Who should choose it</h2>
+<ul>
+<li>Working professionals who want a reputed business school name. Compared with Amity, NMIMS carries more weight as a brand.</li>
+<li>Professionals in and around Maharashtra in particular. NMIMS is a national brand, but its hold is strongest in Maharashtra.</li>
+<li>Anyone whose work hours need a flexible batch: weekday, weekend or alternate days.</li>
+</ul>
+
+<h2>Who should not</h2>
+<ul>
+<li>Anyone who needs a specialisation outside NMIMS's list. If your field is not on it, look elsewhere. The full list is on our <a href="/universities/nmims-online/mba">NMIMS online MBA admission and specialisations</a> page.</li>
+<li>Anyone who cannot keep up with the content. You must complete 75% of every subject's track before you can sit its exam.</li>
+<li>Anyone who does not want to answer questions about the 2023 debarment. People will ask, so know the answer.</li>
+</ul>
+
+<h2>How admission works</h2>
+<div data-edify="first-hand-admission" data-uni="nmims-online"></div>
+
+<h2>My verdict</h2>
+<p><strong>Worth it if</strong> you are a working professional who wants a reputed business school name, your field is one of NMIMS's specialisations, and you can complete 75% of the content in every subject.</p>
+<p><strong>Not worth it if</strong> you need a specialisation NMIMS does not offer, you cannot commit time every week, or you do not want to explain the 2023 debarment to anyone who asks.</p>
+<p>Not sure which side you are on? Talk to our counsellor. edifyedu.in takes no referral commission from NMIMS or any other university.</p>
+
+<h2>Related reading</h2>
+<ul>
+<li><a href="/blog/is-nmims-government-or-private">Is NMIMS government or private?</a></li>
+<li><a href="/blog/what-is-nmims-cdoe">What is NMIMS CDOE?</a></li>
+<li><a href="/universities/nmims-online">NMIMS Online: approvals, programmes and fees</a></li>
+<li><a href="/compare/nmims-vs-symbiosis">NMIMS vs Symbiosis online MBA</a></li>
+</ul>`,
+  },
+  {
     // Round 2, part 2 (13 Nov 2026): answer post for "nmims deemed to be
     // university" and "nmims is private or government". Copy from Rishi.
     slug: "is-nmims-government-or-private",

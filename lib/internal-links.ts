@@ -68,6 +68,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
         { slug: 'is-nmims-online-fake-or-legit-2026', label: 'Is NMIMS Online Fake or Legit? 2026' },
         { slug: 'is-nmims-government-or-private', label: 'Is NMIMS Government or Private?' },
         { slug: 'what-is-nmims-cdoe', label: 'What Is NMIMS CDOE?' },
+        { slug: 'is-nmims-online-mba-worth-it-2026', label: 'Is the NMIMS Online MBA Worth It?' },
       ],
     },
     bba: {
