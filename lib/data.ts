@@ -204,6 +204,13 @@ export interface University {
    */
   admissionPayments?: Partial<Record<'registration' | 'initial', { amount: number; adjustedInProgrammeFee: true; source: string }>>
   /**
+   * Optional paid extras that are NOT part of the programme fee (e.g. MUJ's
+   * Coursera access). Never add one to a fee total.
+   */
+  addOns?: { id: string; label: string; amount: number; per: string; note: string; source: string }[]
+  /** MBA scholarships as the university publishes them. Rendered from data, never typed in copy. */
+  mbaScholarships?: { items: { category: string; discountPct: number; need: string }[]; note?: string; source: string }
+  /**
    * NIRF ranks held by a constituent school of this university's umbrella
    * institution, never by the online school itself. Display only with the
    * school's name. Source: NIRF_Constituent_Schools sheet of
@@ -1490,7 +1497,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // The Manipal group's own portal, serving MUJ, SMU and MAHE as separate
     // entities with entity-suffixed programme URLs.
     officialUrl: 'https://www.onlinemanipal.com',
-    feeVerifiedOn: '2026-10-26',
+    feeVerifiedOn: '2026-11-13',
     // January 2027 fee chart, owner supplied 2026-10-26. It replaces the
     // 2026-10-07 panel (MBA Rs 1,80,000 list, Rs 1,53,000 after 15 percent).
     // Full fee, semester fee and EMI; Rs 500 application fee is additional.
@@ -1510,17 +1517,28 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         id: 'standard', label: 'Online MBA', list: 184000, discountLabel: 'After 15% discount',
         rows: [
           { mode: 'Full fee', total: 184000, discounted: 156400 },
+          { mode: 'Annual', instalment: 92000, count: 2, total: 184000, discounted: 156400 },
           { mode: 'Semester', instalment: 46000, count: 4, total: 184000, discounted: 156400 },
           { mode: 'EMI (per month)', instalment: 7667 },
         ],
         extras: [{ label: 'Application', amount: 500 }],
-        notes: ['EMI after the 15% discount is ₹6,517 a month.'],
-        source: 'Rishi, Jan 2027 fee chart, entered 2026-10-26', checkedOn: '2026-10-26',
+        notes: ['No-cost EMI from ₹6,517 a month after the 15% discount, with 6, 12 or 18-month tenures.'],
+        source: 'Online Manipal MUJ MBA page, checked 2026-11-13; Rishi, confirmed 2026-11-13', checkedOn: '2026-11-13',
       }],
     },
     feeBreakdown: {
       mba: { list: 184000, net: { min: 156400, max: 156400, label: 'after 15% discount' }, perSemester: { list: 46000, net: 39100, netLabel: 'after 15% discount' }, source: 'Rishi, Jan 2027 fee chart, entered 2026-10-26' },
       mca: { list: 164000, net: { min: 147600, max: 147600, label: 'after 10% discount' }, perSemester: { list: 41000, net: 36900, netLabel: 'after 10% discount' }, source: 'Rishi, Jan 2027 fee chart, entered 2026-10-26' },
+    },
+    addOns: [{ id: 'coursera', label: 'Coursera access', amount: 3999, per: 'for one year', note: 'Optional, not included in the programme fee. Bought after admission is confirmed.', source: 'Online Manipal MUJ MBA page, checked 2026-11-13; Rishi, confirmed 2026-11-13' }],
+    mbaScholarships: {
+      items: [
+        { category: 'Divyaang', discountPct: 20, need: 'Divyaang certificate' },
+        { category: 'Defence personnel', discountPct: 20, need: 'Service or IC number' },
+        { category: 'Merit', discountPct: 10, need: '80% or more in your bachelor\'s degree (mark sheet)' },
+      ],
+      note: 'Only one scholarship can be used at a time.',
+      source: 'Online Manipal MUJ MBA page and MUJ scholarship page, checked 2026-11-13',
     },
     logo: '/logos/university_logos/muj-logo.svg',
     name: 'Manipal University Jaipur (MUJ) Online',
@@ -1541,10 +1559,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 6517,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'NAAC A+ | NIRF #58 University | MUJ Online MBA at ₹46,000 a semester, or ₹1,56,400 total after the 15% discount',
+    tagline: 'Online MBA from Manipal University Jaipur with super or dual specialisation',
     description: 'UGC DEB approved online programs from Manipal University Jaipur (MUJ). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['Graduates seeking management credentials', 'working professionals targeting leadership', 'those wanting NAAC A+ MBA at affordable fees'],
-    notFor: ['Those seeking only offline/on-campus experience', 'students not meeting UG eligibility', 'those needing highly personalized offline mentoring'],
+    // Rishi's whoShouldChoose item 1, without the fee (fees render from feePlans).
+    forWho: ['Working professionals who need an MBA at MUJ\'s fee and want a known university name. At this price, MUJ is a very good option.'],
+    notFor: ['Anyone expecting B-school quality teaching. At this fee, the programme is good value, but the education is not what you would get at a B-school.'],
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com', 'M.Com', 'MSc', 'MA'],
     programDetails: {
       'MBA': {
@@ -1562,12 +1581,12 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
           { slug: 'it-fintech', name: 'IT and FinTech' },
           { slug: 'bfsi-banking-financial-services-and-insurance', name: 'BFSI (Banking, Financial Services and Insurance)' },
           { slug: 'retail-management', name: 'Retail Management' },
+          // Online Manipal MUJ MBA page and Rishi's MUJ Batch 13 chart, 2026-11-13: new in October 2026.
+          { slug: 'ai-for-business', name: 'Artificial Intelligence for Business' },
         ],
         fees: '₹1,56,400–₹1,84,000',
         duration: '2 Years (4 Semesters)',
         roles: ['Management Trainee', 'Business Analyst', 'Marketing Manager', 'HR Executive', 'Operations Manager', 'Financial Analyst'],
-        avgSalary: '₹4L – ₹15L per annum',
-        topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Manipal University Jaipur (MUJ), recognised for corporate hiring.'},
       'MCA': {
@@ -1575,8 +1594,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹1,47,600–₹1,64,000',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
-        avgSalary: '₹4L – ₹14L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Manipal University Jaipur (MUJ), recognised for corporate hiring.',
       },
@@ -1588,8 +1605,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹1.44L',
         duration: '3 Years (6 Semesters)',
         roles: ['Management Trainee', 'Sales Executive', 'Marketing Executive', 'HR Executive', 'Operations Coordinator'],
-        avgSalary: '₹3L – ₹7L per annum',
-        topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BBA from Manipal University Jaipur (MUJ), recognised for corporate hiring.',
       },
@@ -1598,8 +1613,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹1.44L',
         duration: '3 Years (6 Semesters)',
         roles: ['Software Developer', 'Web Developer', 'Systems Administrator', 'Data Analyst', 'IT Support Engineer'],
-        avgSalary: '₹3L – ₹7L per annum',
-        topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BCA from Manipal University Jaipur (MUJ), recognised for corporate hiring.',
       },
@@ -1608,8 +1621,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹1,05,000',
         duration: '3 Years (6 Semesters)',
         roles: ['Accountant', 'Tax Assistant', 'Financial Analyst', 'Auditor', 'Banking Officer', 'Commerce Executive'],
-        avgSalary: '₹3L – ₹6L per annum',
-        topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from Manipal University Jaipur (MUJ), recognised for corporate hiring.',
       },
@@ -1622,8 +1633,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹1.08L',
         duration: '2 Years (4 Semesters)',
         roles: ['Senior Accountant', 'Tax Consultant', 'Finance Manager', 'Auditor', 'Commerce Lecturer'],
-        avgSalary: '₹4L – ₹9L per annum',
-        topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved M.Com from Manipal University Jaipur (MUJ), recognised for corporate hiring.',
       },
@@ -1636,8 +1645,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹84K',
         duration: '2 Years (4 Semesters)',
         roles: ['Mathematics Lecturer', 'Data Analyst', 'Statistical Analyst', 'Research Associate', 'Actuarial Analyst'],
-        avgSalary: '₹3L – ₹8L per annum',
-        topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MSc in Mathematics from Manipal University Jaipur (MUJ), recognised for corporate hiring.',
       }
