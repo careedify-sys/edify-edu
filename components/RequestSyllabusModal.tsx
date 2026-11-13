@@ -214,7 +214,7 @@ export default function RequestSyllabusModal({ universityId, universityName, pro
             </form>
 
             <p style={{ fontSize: 11, color: '#94a3b8', marginTop: 14, textAlign: 'center', lineHeight: 1.5 }}>
-              EdifyEdu verifies the syllabus with the university portal. Single email, no spam.
+              edifyedu.in verifies the syllabus with the university portal. Single email, no spam.
             </p>
           </>
         )}

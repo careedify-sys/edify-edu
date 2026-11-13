@@ -21,13 +21,13 @@ export default function ProgramFitPage() {
           Will This Program Fit Me?
         </h1>
         <p className="text-slate-600 text-base leading-relaxed mb-4">
-          Not every online degree suits every person. EdifyEdu is building a structured suitability checker that asks you 8 key questions and maps your answers to the programs and universities where you are most likely to succeed.
+          Not every online degree suits every person. edifyedu.in is building a structured suitability checker that asks you 8 key questions and maps your answers to the programs and universities where you are most likely to succeed.
         </p>
         <p className="text-slate-600 text-base leading-relaxed mb-4">
           The tool checks four factors: your eligibility (marks, stream, current qualification), your career goal (sector, seniority target), your budget range (total cost + EMI tolerance), and your study style (self-paced, weekend live, or blended). Based on your answers, it gives you a shortlist of 3 to 5 programs with honest match scores.
         </p>
         <p className="text-slate-600 text-base leading-relaxed mb-4">
-          Until the interactive tool launches, you can speak directly with an EdifyEdu counsellor who uses the same framework manually. The counsellor call is free, takes about 20 minutes, and results in a written recommendation you can take to any university you choose.
+          Until the interactive tool launches, you can speak directly with an edifyedu.in counsellor who uses the same framework manually. The counsellor call is free, takes about 20 minutes, and results in a written recommendation you can take to any university you choose.
         </p>
         <p className="text-slate-600 text-base leading-relaxed mb-6">
           EdifyEdu earns zero commission from universities. Our incentive is to give you the right answer, not the most expensive one.

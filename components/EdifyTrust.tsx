@@ -72,13 +72,13 @@ export default function EdifyTrust({ compact = false }: { compact?: boolean }) {
           {/* Header */}
           <div style={{textAlign:'center',marginBottom:48}}>
             <div style={{ display:'inline-flex',alignItems:'center',gap:6, padding:'5px 14px',borderRadius:'var(--r-lg)', background:'rgba(200,129,26,0.15)',border:'1px solid rgba(200,129,26,0.3)', fontSize:11,fontWeight:700,color:'var(--amber-vivid)', textTransform:'uppercase',letterSpacing:'0.1em',marginBottom:14 }}>
-              🛡️ How Edify Works
+              🛡️ How edifyedu.in Works
             </div>
             <h2 style={{ fontSize:'clamp(1.4rem,3.5vw,2rem)',fontWeight:800,color:'#fff', margin:'0 0 12px',lineHeight:1.2 }}>
               We Evaluate 3–4 Stages Before Recommending Any University
             </h2>
             <p style={{fontSize:14,color:'rgba(255,255,255,0.75)',maxWidth:540,margin:'0 auto',lineHeight:1.6}}>
-              Most platforms list whoever pays them. Edify is different, our rankings are 100% NIRF-based with zero paid placements.
+              Most platforms list whoever pays them. edifyedu.in is different, our rankings are 100% NIRF-based with zero paid placements.
             </p>
           </div>
 

@@ -2,7 +2,7 @@ export const UNIVERSITY_REVIEWS: Record<string, Array<{
   name: string; city: string; program: string; rating: number; date: string; review: string
 }>> = {
   'chandigarh-university-online': [
-    { name: 'Rahul Sharma', city: 'Delhi', program: 'MBA Finance', rating: 4, date: 'July 2023', review: 'CU Online MBA Finance is solid value for money. LMS works fine and study material is decent. Edify helped me choose between CU and Amity based on my profile.' },
+    { name: 'Rahul Sharma', city: 'Delhi', program: 'MBA Finance', rating: 4, date: 'July 2023', review: 'CU Online MBA Finance is solid value for money. LMS works fine and study material is decent. edifyedu.in helped me choose between CU and Amity based on my profile.' },
     { name: 'Priya Mehta', city: 'Chandigarh', program: 'MBA HR', rating: 5, date: 'Jan 2025', review: 'Really happy with CU Online MBA HR. Got a 25% hike after completing Year 1. Weekend classes fit well with my job schedule.' },
     { name: 'Vikram Patel', city: 'Ahmedabad', program: 'MBA Marketing', rating: 4, date: 'July 2024', review: 'Good program for working professionals. Flexible schedule and NIRF #19 give real confidence in the degree value.' },
     { name: 'Sunita Rawat', city: 'Dehradun', program: 'MBA Operations', rating: 4, date: 'Jan 2024', review: 'Live sessions are interactive and recordings are available. Operations content is very relevant to my supply chain job.' },
@@ -48,7 +48,7 @@ export const UNIVERSITY_REVIEWS: Record<string, Array<{
   'nmims-online': [
     { name: 'Anita Desai', city: 'Mumbai', program: 'MBA', rating: 5, date: 'July 2023', review: 'NMIMS name is unmatched in BFSI. Got calls from 3 banks just because of NMIMS on resume. Faculty are practising professionals.' },
     { name: 'Rohan Joshi', city: 'Bangalore', program: 'MBA Finance', rating: 4, date: 'Jan 2025', review: 'Very focused and career oriented program. Strict exams maintain quality. NAAC A++ accreditation is well deserved.' },
-    { name: 'Kavya Menon', city: 'Chennai', program: 'MBA Marketing', rating: 4, date: 'Jan 2024', review: 'Faculty interaction is more than other online programs. Assignments are genuinely challenging. Very neutral counselling from Edify.' },
+    { name: 'Kavya Menon', city: 'Chennai', program: 'MBA Marketing', rating: 4, date: 'Jan 2024', review: 'Faculty interaction is more than other online programs. Assignments are genuinely challenging. Very neutral counselling from edifyedu.in.' },
     { name: 'Mihir Shah', city: 'Ahmedabad', program: 'MBA Finance', rating: 5, date: 'July 2024', review: 'NMIMS is the gold standard for BFSI. Got CFA Level 1 alongside MBA. Both on resume made me unbeatable in finance interviews.' },
     { name: 'Shreya Kulkarni', city: 'Pune', program: 'MBA HR', rating: 5, date: 'Jan 2024', review: 'NMIMS HR is genuinely different. Real HR case studies, industry sessions. Got CHRO interview within 2 years of completing.' },
     { name: 'Aditya Bhatt', city: 'Surat', program: 'MBA Marketing', rating: 4, date: 'July 2023', review: 'Premium positioning of NMIMS is real. Every interviewer recognised the brand immediately. Content quality matches the name.' },

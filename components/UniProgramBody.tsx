@@ -212,7 +212,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
   // whole set. See MODE_UNVERIFIED_UNIS in lib/seo/should-index.ts.
   const faqs: { q: string; a: string }[] = shouldIndexUniversity(u.id) ? templateFaqs : [
     { q: `Does ${cleanName} offer an online ${program}?`,
-      a: `EdifyEdu cannot confirm that it does. The UGC DEB programme register does not list ${cleanName}, and the university advertises on-campus programmes only on its own website. Contact the university directly and check deb.ugc.ac.in.` },
+      a: `edifyedu.in cannot confirm that it does. The UGC DEB programme register does not list ${cleanName}, and the university advertises on-campus programmes only on its own website. Contact the university directly and check deb.ugc.ac.in.` },
     { q: `Why does ${cleanName} appear in the UGC list of August 2026?`,
       a: `That list names the programmes granted to each institution but records no delivery mode, so it does not separate Online mode from Open and Distance Learning.` },
     { q: `What should I do if I want to study at ${cleanName}?`,

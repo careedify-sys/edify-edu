@@ -50,7 +50,7 @@ export default function SectionExams({ u, program, cleanName }: Props) {
         ))}
       </div>
       <p className="text-[11px] text-slate-400 mt-4">
-        Exam schedules are announced by the university each semester. Edify recommends confirming exact exam mode directly with the university before applying.
+        Exam schedules are announced by the university each semester. edifyedu.in recommends confirming exact exam mode directly with the university before applying.
       </p>
     </section>
   )

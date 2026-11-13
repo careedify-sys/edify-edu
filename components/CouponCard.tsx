@@ -279,7 +279,7 @@ function UnlockModal({
         </form>
 
         <p style={{ fontSize: 11, color: '#94a3b8', textAlign: 'center', marginTop: 12 }}>
-          EdifyEdu never sells your data. One call, no spam.
+          edifyedu.in never sells your data. One call, no spam.
         </p>
       </div>
     </div>
@@ -397,7 +397,7 @@ export default function CouponCard({ coupon, universityId, program, universityNa
         <div style={{ textAlign: 'center', marginBottom: 14 }}>
           <div style={{ fontSize: 32, marginBottom: 6 }}>🎁</div>
           <div style={{ fontSize: 14, fontWeight: 800, color: '#0B1533', lineHeight: 1.3 }}>
-            Unlock Your EdifyEdu Coupon
+            Unlock Your edifyedu.in Coupon
           </div>
           <div style={{ fontSize: 12, color: '#64748b', marginTop: 5, lineHeight: 1.5 }}>
             Save up to {maxDiscount} on your {program} admission at {universityName}

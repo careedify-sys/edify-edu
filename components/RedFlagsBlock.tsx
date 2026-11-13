@@ -12,7 +12,7 @@ function getMBAFlags(cleanName: string): string[] {
     `An online MBA from ${cleanName} does not replace offline IIM, XLRI, or ISB brand equity for roles in investment banking or top-tier strategy consulting. For those specific recruiters and roles, a residential MBA from a top-10 institution is the better fit. For most corporate, operations, and functional roles across 80% of the Indian job market, an online UGC-DEB approved MBA is perfectly valid.`,
     `Placement assistance is not a placement guarantee. ${cleanName} provides career portal access, resume workshops, mock interviews, and drive notifications. Final offers depend on your profile, interview performance, and market conditions.`,
     `Online learning requires self-discipline. Without daily campus structure, online MBAs reward learners who build their own study rhythm. If you have historically struggled with self-paced work, consider a hybrid or weekend program with more external structure.`,
-    `Campus networking looks different online. You will build connections through LMS forums, virtual events, WhatsApp groups, and EdifyEdu alumni intros rather than daily hostel life. For students who value deep in-person peer bonds, this is a genuine trade-off worth considering.`,
+    `Campus networking looks different online. You will build connections through LMS forums, virtual events, WhatsApp groups, and edifyedu.in alumni intros rather than daily hostel life. For students who value deep in-person peer bonds, this is a genuine trade-off worth considering.`,
   ]
 }
 
@@ -65,7 +65,7 @@ export default function RedFlagsBlock({ u, program, cleanName }: Props) {
         <h2 className="text-lg font-bold text-red-800">Red Flags: Be Honest With Yourself</h2>
       </div>
       <p className="text-sm text-red-600 mb-4">
-        Edify gives you the honest picture. Read these before you decide.
+        edifyedu.in gives you the honest picture. Read these before you decide.
       </p>
       <ul className="space-y-4">
         {flags.map((flag, i) => (
@@ -76,7 +76,7 @@ export default function RedFlagsBlock({ u, program, cleanName }: Props) {
         ))}
       </ul>
       <p className="text-xs text-red-500 mt-4">
-        This section is Edify&apos;s independent editorial. No university pays us to omit red flags.
+        This section is edifyedu.in&apos;s independent editorial. No university pays us to omit red flags.
       </p>
     </section>
   )

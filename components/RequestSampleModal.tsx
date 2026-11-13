@@ -216,7 +216,7 @@ export default function RequestSampleModal({ universityId, universityName, progr
             </form>
 
             <p style={{ fontSize: 11, color: '#94a3b8', marginTop: 14, textAlign: 'center', lineHeight: 1.5 }}>
-              EdifyEdu never sells your data. Single email, no spam.
+              edifyedu.in never sells your data. Single email, no spam.
             </p>
           </>
         )}

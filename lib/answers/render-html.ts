@@ -40,5 +40,5 @@ export const APPENDIX_END = '<!-- ai-answers:end -->'
 
 export function appendixHtml(sections: AnswerSection[], extra: string[] = []): string {
   const body = [...sections.map(sectionHtml), ...extra].join('\n')
-  return `\n${APPENDIX_START}\n${body}\n<p class="cta-box">Edify compares public UGC/NAAC/NIRF data, no paid rankings. Talk to our counsellor at <a href="/contact">edifyedu.in/contact</a> before you pay any fee.</p>\n${APPENDIX_END}\n`
+  return `\n${APPENDIX_START}\n${body}\n<p class="cta-box">edifyedu.in compares public UGC/NAAC/NIRF data, no paid rankings. Talk to our counsellor at <a href="/contact">edifyedu.in/contact</a> before you pay any fee.</p>\n${APPENDIX_END}\n`
 }

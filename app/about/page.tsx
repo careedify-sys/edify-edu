@@ -96,7 +96,7 @@ export default function AboutPage() {
             Thousands of students in India search for online degrees every month, but most information they find is either paid content disguised as reviews, or outdated university brochures. Students end up spending ₹1–3 lakhs on degrees without understanding what they&apos;re paying for.
           </p>
           <p className="text-ink-2 leading-relaxed">
-            Edify was built to fix that. We independently research every UGC DEB approved university using public NAAC, NIRF, and UGC data, then present it clearly, so you can compare universities on facts, not marketing.
+            edifyedu.in was built to fix that. We independently research every UGC DEB approved university using public NAAC, NIRF, and UGC data, then present it clearly, so you can compare universities on facts, not marketing.
           </p>
         </div>
 

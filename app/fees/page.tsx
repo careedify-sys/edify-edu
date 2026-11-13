@@ -91,7 +91,7 @@ const faqs: { q: string; a: string }[] = [
   },
   {
     q: 'Does a higher fee mean better placement outcomes?',
-    a: 'No. Fee and outcome are set independently, and this comparison shows NAAC grade and NIRF rank next to fee precisely so the two can be weighed separately. Edify compares public UGC, NAAC and NIRF data, with no paid rankings.',
+    a: 'No. Fee and outcome are set independently, and this comparison shows NAAC grade and NIRF rank next to fee precisely so the two can be weighed separately. edifyedu.in compares public UGC, NAAC and NIRF data, with no paid rankings.',
   },
 ]
 
@@ -227,7 +227,7 @@ export default function FeesPage() {
             </p>
             <p className="text-sm text-ink-2 max-w-3xl">
               Fee and outcome are set independently. NAAC grade and NIRF rank sit next to the fee
-              in this table so you can weigh them separately. Edify compares public UGC, NAAC and
+              in this table so you can weigh them separately. edifyedu.in compares public UGC, NAAC and
               NIRF data, with no paid rankings and no referral commissions.
             </p>
           </section>

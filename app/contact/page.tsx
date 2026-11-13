@@ -149,7 +149,7 @@ export default function ContactPage() {
           <div>
             <h2 className="text-lg font-bold text-navy mb-3">How edifyedu.in Helps You Choose</h2>
             <p className="text-ink-2 text-sm leading-relaxed mb-4">
-              Picking an online degree is not simple. Fees vary, NAAC grades differ, and not every UGC approved program carries the same employer recognition. EdifyEdu compares 125+ universities on verified data so you can make a confident decision without spending weeks on research.
+              Picking an online degree is not simple. Fees vary, NAAC grades differ, and not every UGC approved program carries the same employer recognition. edifyedu.in compares 125+ universities on verified data so you can make a confident decision without spending weeks on research.
             </p>
             <p className="text-ink-2 text-sm leading-relaxed">
               Our team has personally reviewed admission processes, syllabus structures, and placement records at each institution. When you contact us, you get a straightforward conversation focused on your budget, your current qualification, and your career target. We do not push you toward any particular university.

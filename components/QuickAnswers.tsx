@@ -20,7 +20,7 @@ export default function QuickAnswers({ answers }: { answers: HubAnswers }) {
         </p>
       )}
       <p className="text-sm text-slate-600 mt-4">
-        Edify compares public UGC/NAAC/NIRF data, no paid rankings. Talk to our counsellor before you pay any fee.
+        edifyedu.in compares public UGC/NAAC/NIRF data, no paid rankings. Talk to our counsellor before you pay any fee.
       </p>
     </section>
   )

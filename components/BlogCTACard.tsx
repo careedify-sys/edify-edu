@@ -69,7 +69,7 @@ export default function BlogCTACard({ variant = 'counsel' }: { variant?: Variant
           {v.buttonLabel}
         </button>
         <p className="text-[12px] text-slate-500 mt-4">
-          edifyedu.in earns zero commissions. Independent advice only.
+          EdifyEdu earns zero commissions. Independent advice only.
         </p>
       </div>
 

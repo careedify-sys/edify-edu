@@ -60,7 +60,7 @@ export default function EdifyRecommends({ program, currentId, programSlug }: Pro
       <div className="flex items-center gap-2 mb-4">
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-widest"
           style={{ background: 'rgba(212,146,42,0.12)', color: 'var(--amber-text)', border: '1px solid rgba(212,146,42,0.3)' }}>
-          ✦ Edify Recommends
+          ✦ edifyedu.in recommends
         </span>
         <span className="text-xs text-ink-3">Top picks for {program}</span>
       </div>

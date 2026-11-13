@@ -109,7 +109,7 @@ export default function StickyLeadCard({ universityName, universityId, defaultPr
       <div className="mb-4">
         <div className="text-[10px] font-black uppercase tracking-widest text-amber-600 mb-1">Free Counselling</div>
         <h2 className="text-base font-bold leading-snug" style={{ color: '#0B1533' }}>
-          Get an EdifyEdu counsellor call
+          Get an edifyedu.in counsellor call
         </h2>
         <p className="text-xs text-slate-500 mt-1">Free · No commission · Honest comparison</p>
       </div>
@@ -234,7 +234,7 @@ export default function StickyLeadCard({ universityName, universityId, defaultPr
       </form>
 
       <p className="text-[10px] text-slate-400 mt-3 text-center leading-relaxed">
-        By submitting, you agree to receive a counsellor call within 24 hours. EdifyEdu never sells your data.
+        By submitting, you agree to receive a counsellor call within 24 hours. edifyedu.in never sells your data.
       </p>
     </div>
   )

@@ -55,7 +55,7 @@ export function programmeEmiFrom(u: { emiFrom?: number }, program: string): numb
 }
 
 /** Said instead of an EMI figure when only the MBA one is on record. */
-export const NO_PROGRAMME_EMI = 'EdifyEdu does not list a verified EMI figure for this programme yet.'
+export const NO_PROGRAMME_EMI = 'edifyedu.in does not list a verified EMI figure for this programme yet.'
 
 /**
  * A whole "EMI starts from X." sentence, or the counsellor line when there is

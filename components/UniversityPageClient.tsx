@@ -141,8 +141,8 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
       a:`After completing ${displayProgram} from ${u.name}, typical roles include ${pd?.roles?.slice(0,4).join(', ') || 'Management Trainee, Business Analyst, Operations Executive'}. ${pd?.avgSalary ? `Average salaries range from ${pd.avgSalary}. ` : ''}${pd?.topCompanies?.length ? `Top hiring companies include ${pd.topCompanies.slice(0,5).join(', ')}.` : ''}`
     },
     {
-      q:`Should I apply through Edify for ${u.name}?`,
-      a:`Edify is a free, independent guidance platform. We do a 3–4 stage evaluation covering your career goals, eligibility, budget, and ROI before recommending any university. Our rankings use only NIRF rank with zero paid placements. You can apply directly to the university, Edify is here if you want unbiased advice at no cost.`
+      q:`Should I apply through edifyedu.in for ${u.name}?`,
+      a:`edifyedu.in is a free, independent guidance platform. We do a 3–4 stage evaluation covering your career goals, eligibility, budget, and ROI before recommending any university. Our rankings use only NIRF rank with zero paid placements. You can apply directly to the university, Edify is here if you want unbiased advice at no cost.`
     },
   ]
 
@@ -153,7 +153,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
   const faqs = shouldIndexUniversity(u.id) ? templateFaqs : [
     {
       q:`Does ${u.name} offer online programmes?`,
-      a:`EdifyEdu cannot confirm that it does. ${u.name} appears in the UGC Distance Education Bureau recognition list of August 2026, but that document names programmes without stating a delivery mode. The UGC DEB programme register, which does state the mode, does not list ${u.name}, and the university advertises on-campus programmes only on its own website.`
+      a:`edifyedu.in cannot confirm that it does. ${u.name} appears in the UGC Distance Education Bureau recognition list of August 2026, but that document names programmes without stating a delivery mode. The UGC DEB programme register, which does state the mode, does not list ${u.name}, and the university advertises on-campus programmes only on its own website.`
     },
     {
       q:`What does the August 2026 UGC list actually say?`,
@@ -238,7 +238,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     {(u as any).enrollments && (
                       <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/20 text-slate-200 text-xs font-semibold">
                         <Users className="w-3.5 h-3.5 text-amber-400" />
-                        {(u as any).enrollments}+ students guided by Edify
+                        {(u as any).enrollments}+ students guided by edifyedu.in
                       </span>
                     )}
                   </div>

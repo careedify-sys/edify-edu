@@ -73,7 +73,7 @@ export function VerifyFAQ(props: Props) {
       </div>
 
       <p style={{ fontSize: 13, color: brand.textBody, lineHeight: 1.6, margin: '0 0 12px' }}>
-        {universityName} is one of the Indian online universities tracked by EdifyEdu. This page consolidates approval, accreditation, and ranking data from the UGC Distance Education Bureau (deb.ugc.ac.in), AICTE, NAAC (naac.gov.in), and NIRF (nirfindia.org) so you can verify the legal validity of any online degree from {universityName} before paying admission fees.
+        {universityName} is one of the Indian online universities tracked by edifyedu.in. This page consolidates approval, accreditation, and ranking data from the UGC Distance Education Bureau (deb.ugc.ac.in), AICTE, NAAC (naac.gov.in), and NIRF (nirfindia.org) so you can verify the legal validity of any online degree from {universityName} before paying admission fees.
       </p>
       <p style={{ fontSize: 13, color: brand.textBody, lineHeight: 1.6, margin: '0 0 18px' }}>
         Online degrees from UGC-DEB approved universities are legally equivalent to on-campus degrees under the UGC public notice of April 2020. They are accepted for UPSC, banking exams, PSU recruitment, state government jobs, private-sector employment, and PhD admissions. Per UGC (Online Programmes) Regulations 2018, the degree certificate clearly identifies the programme as "Online" mode: this is by design and does not affect legal validity. EdifyEdu earns zero referral commissions from {universityName}, which is why this verification page presents both strengths and gaps without favouritism.

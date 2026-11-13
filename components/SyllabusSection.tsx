@@ -210,7 +210,7 @@ export default function SyllabusSection({ syllabus, program, universityName, act
       {(syllabus.edifySkills?.length || syllabus.edifyProjects?.length || syllabus.edifyInternships?.length) ? (
         <div style={{ padding: '14px 20px', borderTop: '1px solid #F1F5F9', background: 'rgba(31,107,82,0.03)', }}>
           <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--sage)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 12 }}>
-            ✦ Edify Recommends: do these alongside the program
+            ✦ edifyedu.in recommends: do these alongside the program
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 14 }}>
             {syllabus.edifySkills && syllabus.edifySkills.length > 0 && (

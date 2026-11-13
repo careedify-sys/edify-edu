@@ -84,7 +84,7 @@ export default function ApprovalsRow({ u }: Props) {
         )}
       </div>
       <p className="text-[11px] text-slate-400 mt-2.5">
-        Source: UGC DEB, NAAC, NIRF India Rankings. Verified by Edify research team.
+        Source: UGC DEB, NAAC, NIRF India Rankings. Verified by the edifyedu.in research team.
       </p>
     </section>
   )

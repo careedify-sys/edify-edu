@@ -204,7 +204,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
           {config.derived ? (
             <>
               Independent, commission-free comparison of two online {prog} programmes.
-              Edify compares public UGC/NAAC/NIRF data, no paid rankings.
+              edifyedu.in compares public UGC/NAAC/NIRF data, no paid rankings.
               edifyedu.in takes no referral commissions from either university.
             </>
           ) : (

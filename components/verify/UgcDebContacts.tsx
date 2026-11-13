@@ -71,7 +71,7 @@ export function UgcDebContacts({ state, universityName }: Props) {
       </p>
       <p style={{ fontSize: 13, color: SLATE, lineHeight: 1.6, margin: '0 0 16px' }}>
         Include the university name, the programme, your admission session and screenshots of any advertisement.
-        Edify is not part of UGC. We list these details so you can reach the regulator without going through anyone.
+        edifyedu.in is not part of UGC. We list these details so you can reach the regulator without going through anyone.
       </p>
 
       <div style={{ display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>

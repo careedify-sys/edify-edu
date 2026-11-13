@@ -195,7 +195,7 @@ export default function BlogIndexView({ page }: { page: number }) {
 
           {/* Label */}
           <div className="text-[10px] font-bold text-amber uppercase tracking-widest mb-3">
-            Edify Blog · Online Degree Guides India{page > 1 ? ` · Page ${page} of ${totalPages}` : ''}
+            edifyedu.in blog · Online Degree Guides India{page > 1 ? ` · Page ${page} of ${totalPages}` : ''}
           </div>
 
           {/* Heading */}

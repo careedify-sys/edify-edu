@@ -34,7 +34,7 @@ export default function SectionAbout({ u, program, pd, cleanName, spec, customIn
           <p>
             The UGC DEB programme register, which does state the mode against each entry,
             does not list {cleanName}, and the university advertises on-campus programmes
-            only on its own website. EdifyEdu cannot confirm that this programme runs online.
+            only on its own website. edifyedu.in cannot confirm that this programme runs online.
           </p>
           <p>
             Contact {cleanName} directly and check deb.ugc.ac.in for the position that applies

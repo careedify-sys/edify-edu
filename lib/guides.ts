@@ -59,7 +59,7 @@ export const GUIDES: Guide[] = [
 <li>Search for the university name and check that your specific program is listed</li>
 <li>Confirm the approval covers the current academic year</li>
 </ol>
-<p>You can also check on Edify — every university listed on this site has been verified against the UGC DEB database.</p>
+<p>You can also check on edifyedu.in. Every university listed on this site has been verified against the UGC DEB database.</p>
 
 <h2>Common Concerns Answered</h2>
 <p><strong>Will my employer accept it?</strong> Yes. Large private sector employers (Infosys, TCS, Deloitte, HDFC) have been accepting UGC DEB approved online degrees for years. If an HR asks, you can cite the UGC circular directly.</p>
@@ -219,8 +219,8 @@ export const GUIDES: Guide[] = [
 </ol>
 <p>If the university is not on this list, its online programs are not recognised by UGC regardless of what their marketing material says.</p>
 
-<h2>Method 2: Check on Edify</h2>
-<p>Every university listed on Edify has been verified against the UGC DEB database. If a university is on our <a href="/universities">universities page</a>, it is UGC DEB approved. We check this before listing any institution.</p>
+<h2>Method 2: Check on edifyedu.in</h2>
+<p>Every university listed on edifyedu.in has been verified against the UGC DEB database. If a university is on our <a href="/universities">universities page</a>, it is UGC DEB approved. We check this before listing any institution.</p>
 
 <h2>What to Look for Beyond UGC DEB</h2>
 <p>UGC DEB approval is the minimum. After confirming it, check:</p>
@@ -441,7 +441,7 @@ export const GUIDES: Guide[] = [
 
 <div class="cta-box">
   <p style="font-size:18px;font-weight:700;margin:0 0 8px">Compare MBA programs before you enrol</p>
-  <p style="margin:0 0 16px;font-size:14px;opacity:0.9">Every UGC-DEB approved online MBA on Edify shows NAAC grade, NIRF rank, fees, and placement data. No paid rankings.</p>
+  <p style="margin:0 0 16px;font-size:14px;opacity:0.9">Every UGC-DEB approved online MBA on edifyedu.in shows NAAC grade, NIRF rank, fees, and placement data. No paid rankings.</p>
   <a href="/compare" class="ilink" style="display:inline-block;background:#f97316;color:#fff;padding:10px 24px;border-radius:8px;font-weight:700;text-decoration:none">Compare All Online MBA</a>
 </div>
     `,

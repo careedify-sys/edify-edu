@@ -114,7 +114,7 @@ export default function ProgrammeComparisonTable({
           <caption className="sr-only">
             Comparison of {rows.length} UGC-DEB entitled universities offering an online {program} in
             India, listing NAAC grade with validity, NIRF rank with category, number of
-            specialisations and indicative fee. Data as of {asOf} from EdifyEdu.
+            specialisations and indicative fee. Data as of {asOf} from edifyedu.in.
           </caption>
           <thead>
             <tr className="bg-bg">

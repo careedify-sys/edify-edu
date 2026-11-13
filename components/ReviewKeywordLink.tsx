@@ -16,7 +16,7 @@ export default function ReviewKeywordLink({ link }: { link: KeywordLink }) {
       >
         {link.anchor}
       </Link>
-      , with the fee breakdown, accreditation checks and our verdict. Edify compares public UGC/NAAC/NIRF data, no paid rankings.
+      , with the fee breakdown, accreditation checks and our verdict. edifyedu.in compares public UGC/NAAC/NIRF data, no paid rankings.
     </p>
   )
 }

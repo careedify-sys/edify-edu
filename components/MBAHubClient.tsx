@@ -381,7 +381,7 @@ export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
       <section className="max-w-3xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold mb-4" style={{ color: '#0B1533' }}>
           <Shield size={22} className="inline-block mr-2 text-amber-500" />
-          Why Trust EdifyEdu for Online MBA Comparison?
+          Why Trust edifyedu.in for Online MBA Comparison?
         </h2>
         <p className="text-sm text-slate-600 leading-relaxed mb-4">
           Most online MBA comparison platforms earn referral commissions from the universities they recommend. This creates conflicts of interest that affect which universities they highlight, how they describe placement support, whether they share negative student feedback, and how they build their "top 10" rankings.

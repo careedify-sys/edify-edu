@@ -56,5 +56,5 @@ export function onlinePrefix(uniId: string): string {
  */
 export function unverifiedDescription(uniName: string, program?: string): string {
   const what = program ? `an online ${program}` : 'online programmes'
-  return `EdifyEdu cannot confirm that ${uniName} offers ${what}. The UGC DEB programme register does not list it, and the university advertises on-campus programmes only. Check deb.ugc.ac.in and contact the university directly.`
+  return `edifyedu.in cannot confirm that ${uniName} offers ${what}. The UGC DEB programme register does not list it, and the university advertises on-campus programmes only. Check deb.ugc.ac.in and contact the university directly.`
 }

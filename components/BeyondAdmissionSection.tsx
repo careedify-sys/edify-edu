@@ -21,7 +21,7 @@ const OFFERS = [
     Icon: Network,
     title: 'Community Access',
     body: () =>
-      'Invite to the EdifyEdu alumni LinkedIn circle, monthly virtual events with industry speakers, and niche WhatsApp groups for your chosen stream.',
+      'Invite to the edifyedu.in alumni LinkedIn circle, monthly virtual events with industry speakers, and niche WhatsApp groups for your chosen stream.',
   },
   {
     Icon: Briefcase,
@@ -35,13 +35,13 @@ export default function BeyondAdmissionSection({ cleanName }: Props) {
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-6">
       <div className="text-[10px] font-black uppercase tracking-widest mb-1" style={{ color: '#F4A024' }}>
-        EdifyEdu Network
+        edifyedu.in Network
       </div>
       <h2 className="text-lg font-bold mb-1" style={{ color: '#0B1533' }}>
-        Beyond Admission: Your EdifyEdu Network
+        Beyond Admission: Your edifyedu.in Network
       </h2>
       <p className="text-sm text-slate-500 mb-5">
-        What you get from EdifyEdu after you enrol. This is where we go beyond comparison.
+        What you get from edifyedu.in after you enrol. This is where we go beyond comparison.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

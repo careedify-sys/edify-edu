@@ -27,7 +27,7 @@ export function VerifyTrustSignals() {
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 18 }}>
         <div style={{ width: 4, height: 16, background: brand.gold, borderRadius: 2 }} />
         <h2 style={{ fontSize: 15, fontWeight: 500, margin: 0, color: brand.textPrimary }}>
-          Why students trust Edify
+          Why students trust edifyedu.in
         </h2>
       </div>
       <div style={{

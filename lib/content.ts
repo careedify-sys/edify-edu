@@ -120,7 +120,7 @@ export const PROGRAM_CONTENT: Partial<Record<string, ProgramContent>> = {
       { q: 'Is an online MBA as good as a regular MBA?', a: 'From a UGC DEB-approved university, the degree is legally identical. For private sector roles, employers increasingly do not distinguish between online and regular MBA from the same university.' },
       { q: 'Can I do an online MBA while working full-time?', a: 'Yes, it is specifically designed for working professionals. Classes run on weekday evenings (7–9 PM) and Saturday mornings. All sessions are recorded. Most students manage 12–15 hours/week including class and study.' },
       { q: 'Which specialisation has the best salary?', a: 'Finance and Data Science consistently have the highest average starting salaries (₹8–15L range). Marketing and Operations are close behind. HR tends to have lower starting salaries but strong CHRO-track long-term growth.' },
-      { q: 'How do I choose between specialisations?', a: 'Match your specialisation to your current experience or target industry. IT professionals: Operations or Data Science. Sales professionals: Marketing or General Management. Talk to an Edify counsellor for a personalised shortlist.' },
+      { q: 'How do I choose between specialisations?', a: 'Match your specialisation to your current experience or target industry. IT professionals: Operations or Data Science. Sales professionals: Marketing or General Management. Talk to an edifyedu.in counsellor for a personalised shortlist.' },
     ],
     editorialGuide: `
 # Choosing an Online MBA in India 2026: The Ultimate Professional's Guide
@@ -131,7 +131,7 @@ Choosing an **online MBA in India 2026** is not just about getting a degree; it'
 The Indian corporate sector has undergone a massive transformation. Digital-first businesses, FinTech, and D2C brands are the largest employers in 2026, and they value one thing above all: the ability to manage and scale in a digital environment. An online MBA is uniquely structured to allow you to apply management frameworks to your current job in real-time. Whether you are an engineer looking to move into product management or a sales professional eye-ing a leadership role, 2026 is the year to formalize your skills.
 
 ## The 3 Pillars of a Great Online MBA
-1. **UGC DEB Approval:** Never settle for a "Distance" degree without verifying it against the latest UGC DEB list. In 2026, the parity between online and regular degrees is absolute, but only if the university has the correct license. Every university on Edify is 100% verified for **UGC DEB approved online degree** status.
+1. **UGC DEB Approval:** Never settle for a "Distance" degree without verifying it against the latest UGC DEB list. In 2026, the parity between online and regular degrees is absolute, but only if the university has the correct license. Every university on edifyedu.in is 100% verified for **UGC DEB approved online degree** status.
 2. **NIRF Ranking:** Don't trust private "Best University" awards that are often bought. Only look at the National Institutional Ranking Framework (NIRF) from the Ministry of Education. We recommend focusing on NIRF Top-100 universities for the best long-term credibility.
 3. **NAAC Accreditation:** An 'A++' or 'A+' grade from NAAC is a signal of high institutional quality. In 2026, most top-tier online MBA providers in India hold at least an 'A+' grade.
 
@@ -154,7 +154,7 @@ While General Management is a safe bet, specialisations like **MBA in Data Scien
 Yes, but with caveats. As of 2026, **UGC DEB approved online degrees** are legally equivalent to regular degrees for all government jobs. However, certain PSU-based technical roles still prefer regular mode. For 90% of banking, civil services, and corporate roles, the online MBA is a perfect choice.
 
 ## Conclusion: How to Choose?
-Don't choose based on a Facebook ad. Use Edify's independent data to compare fees, faculty, and real NIRF rankings. Our mission is to ensure that your **online mba india 2026** journey is a profitable investment, not just an expense.
+Don't choose based on a Facebook ad. Use edifyedu.in's independent data to compare fees, faculty, and real NIRF rankings. Our mission is to ensure that your **online mba india 2026** journey is a profitable investment, not just an expense.
     `,
   },
 
@@ -267,7 +267,7 @@ An online MCA cost averages between **₹70,000 to ₹1.8 Lakh** for the full tw
 Compared to the cost of the degree, the return on investment for an online MCA is arguably the highest in the education sector today.
 
 ## Is Online MCA valid for IT Placements?
-Absolutely. As long as the university is **UGC DEB approved**, your degree is a valid credential. At Edify, we help you filter universities that offer dedicated placement assistance and virtual hiring fairs, Ensuring that your **best online mca india** search leads to a real job offer.
+Absolutely. As long as the university is **UGC DEB approved**, your degree is a valid credential. At edifyedu.in, we help you filter universities that offer dedicated placement assistance and virtual hiring fairs, Ensuring that your **best online mca india** search leads to a real job offer.
     `,
   },
 

@@ -67,7 +67,7 @@ export function VerifyAdvisory({ advisory }: { advisory: Advisory }) {
       )}
 
       <p className="text-xs text-ink-3 mt-4">
-        Recorded by EdifyEdu on{' '}
+        Recorded by edifyedu.in on{' '}
         <time dateTime={advisory.addedAt}>{advisory.addedAt}</time>. Tell us at hello@edifyedu.in if
         this is out of date and we will correct it with the reason.
       </p>
