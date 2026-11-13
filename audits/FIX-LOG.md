@@ -1,5 +1,22 @@
 # Fix log
 
+## 2026-11-13 · AI-visibility fixes, round 1 (NMIMS, Amity, SSODL, BVU, Manipal trio)
+
+- **Why:** AI answers quoted stale or wrong facts about these universities: fees that were never charged, typed dates,
+  "indicative, verify on the portal" wording that tells a model our number is not the number, AACSB and NIRF ranks
+  credited to the parent university instead of the school that holds them, and SSODL confused with SCDL.
+- **What:** branch feat/ai-visibility-r1, one commit per task. Payment-mode fee tables from `feePlans` (each row
+  dated) expanded from `data-edify` markers in posts; peer table; dated fee line in video captions; "Last updated"
+  line and og:site_name on posts; constituent-school NIRF/AACSB overlay on /verify plus gate 9c; review content fixes;
+  MUJ vs SMU compare page; visible brand "edifyedu.in"; warn-only check-fee-wording gate.
+- **Trap:** fee fields feed derived titles and metas. Adding `feeBreakdown.mba` (Amity, SSODL, NMIMS), widening
+  Amity feeMax to the premium track, and widening Amity `pd.fees` moved four frozen titles/metas: the 4b rule then
+  suppressed Amity's fee entirely, which also dropped ", NAAC A+" from its title. All three were reverted; premium
+  tracks and payment modes live only in `feePlans`, which no title or meta reads. Diff the built head tags against
+  live before committing any fee-field change.
+- **Known meta change:** the Symbiosis finance spec meta tail moves from "NIRF #11 Management" to "NIRF #24
+  University", because #11 belongs to SIBM Pune and was removed from SSODL's nirfMgt (rule 9 beats rule 1 here).
+
 ## 2026-11-12 · Eligibility follow-up after the fee-sheet form is closed
 
 - **Why:** Rishi asked how to win back readers who close the form without it feeling spammy. Re-opening the same

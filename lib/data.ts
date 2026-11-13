@@ -470,8 +470,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // modes, not a discount. Verified by Rishi on the portal 2026-08-07.
     feeBreakdown: {
       bba: { list: 199000, modes: [{ amount: 175120, label: 'one-time' }, { amount: 199000, label: 'semester-wise total' }], source: 'Rishi, amity.edu portal, 2026-08-07' },
-      // MBA, two tracks. Never show ₹1,99,000: that was the July 2026 session price.
-      mba: { list: 225000, modes: [{ amount: 207000, label: 'one-time, standard tracks' }, { amount: 225200, label: 'by semester, standard tracks (₹56,300 × 4)' }, { amount: 302680, label: 'one-time, premium tracks' }, { amount: 329200, label: 'by semester, premium tracks (₹82,300 × 4)' }], source: 'Rishi, confirmed 2026-11-13 (Amity MBA and International Finance fee pages agree)' },
+      // MBA: two tracks, modelled in feePlans below. Never show ₹1,99,000: that was the July 2026 session price.
     },
     // Registration is included in the programme fee (Amity's own statement),
     // so no separate registration row. Construction Project Management keeps
@@ -521,7 +520,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     psuEligible: true,
     feeMin: 207000,
     // Upper bound is the premium-track semester total (₹82,300 × 4), 2026-11-13.
-    feeMax: 329200,
+    feeMax: 225000, // MBA range stays standard-track; premium tracks live in feePlans so derived titles/metas do not move (rule 1, 2026-11-13)
     emiFrom: 8906,
     eligibility: 'Graduation with 40% marks (below 40%, Amity’s internal eligibility test)',
     eligibilityPct: 40,
@@ -554,7 +553,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
           { slug: 'retail-management', name: 'Retail Management' },
           { slug: 'international-finance-acca', name: 'International Finance (ACCA)' },
         ],
-        fees: '₹2.07L–₹3.29L',
+        fees: '₹2.07L–₹2.25L',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Executive'],
         avgSalary: '₹5L – ₹12L per annum',
@@ -1855,7 +1854,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // MBA: ₹3,70,000 programme fee, ₹1,000 registration, ₹55,000 concession
     // with 2+ years of work experience. There is no separate ₹10,000
     // registration fee (removed 2026-11-13).
-    feeBreakdown: { mba: { list: 370000, listLabel: 'programme fee', net: { min: 315000, max: 315000, label: 'with 2+ years of work experience (₹55,000 concession)' }, source: 'Rishi, confirmed 2026-11-13' } },
     feePlans: {
       mba: [{
         id: 'standard', label: 'Online MBA', list: 370000,
@@ -2362,7 +2360,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // MBA payment modes, Rishi + NMIMS CDOE MBA page, 2026-11-13. Payment
     // modes, not a discount: 1,96,000 one-time, 1,05,000 x 2 annual,
     // 55,000 x 4 by semester.
-    feeBreakdown: { mba: { list: 220000, modes: [{ amount: 196000, label: 'one-time payment' }, { amount: 210000, label: 'paid annually (₹1,05,000 × 2)' }, { amount: 220000, label: 'paid by semester (₹55,000 × 4)' }], source: 'Rishi, confirmed 2026-11-13, NMIMS CDOE MBA page' } },
     feePlans: {
       mba: [
         {

@@ -8142,6 +8142,12 @@
     "spec_name": "Marketing Management"
   },
   {
+    "university_slug": "nmims-online",
+    "program": "mba",
+    "spec_slug": "business-analytics",
+    "spec_name": "Business Analytics"
+  },
+  {
     "university_slug": "manipal-academy-higher-education-online",
     "program": "mba",
     "spec_slug": "human-resource-management",

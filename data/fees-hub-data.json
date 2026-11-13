@@ -29,9 +29,9 @@
     "nirf": 22,
     "nirfMgt": 49,
     "feeMin": 207000,
-    "feeMax": 329200,
+    "feeMax": 225000,
     "emiFrom": 8906,
-    "feeStr": "₹2.07L – ₹3.29L",
+    "feeStr": "₹2.07L – ₹2.25L",
     "emiStr": "₹9K/mo",
     "programs": [
       "MBA",
