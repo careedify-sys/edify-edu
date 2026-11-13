@@ -7,7 +7,16 @@ const STEPS = [
   { icon: BookOpen, label: 'Attend Class', desc: 'LMS access, live sessions start within 7 days', color: '#10b981' },
 ]
 
-export default function AdmissionSteps() {
+// The eligibility line used to be hard-coded ("any Bachelor's degree, 50%
+// aggregate for most; some accept 45%"): wrong for Amity (40%) and unchecked
+// for everyone else. It now prints the university's own eligibility string
+// from lib/data.ts. That string describes postgraduate entry (a graduation
+// requirement), so undergraduate pages, and universities without one, get
+// no eligibility sentence rather than a wrong one.
+const POSTGRADUATE = new Set(['MBA', 'MCA', 'M.Com', 'MA', 'MSc', 'MBA (WX)'])
+
+export default function AdmissionSteps({ program, eligibility }: { program?: string; eligibility?: string } = {}) {
+  const elig = program && POSTGRADUATE.has(program) ? eligibility?.trim() : undefined
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-6">
       <h2 className="text-lg font-bold text-navy mb-5" style={{ color: '#0B1533' }}>Admission Process</h2>
@@ -34,7 +43,7 @@ export default function AdmissionSteps() {
         ))}
       </div>
       <p className="text-xs text-slate-400 mt-4 text-center">
-        No entrance exam required for most programs. Eligibility: any Bachelor&apos;s degree (50% aggregate for most; some accept 45%).
+        No entrance exam required for most programs.{elig ? ` Eligibility: ${elig}${/[.)]$/.test(elig) ? '' : '.'}` : ''}
       </p>
     </section>
   )

@@ -692,7 +692,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
 
                   <EMIPlans u={u} pd={pd} program={program} />
                   <SampleCertificate universityId={u.id} program={program} universityName={cleanName} />
-                  <AdmissionSteps />
+                  <AdmissionSteps program={program} eligibility={u.eligibility} />
                   <SectionPlacements pd={pd} cleanName={cleanName} program={program} />
                   <BeyondAdmissionSection cleanName={cleanName} />
                   <TopHirers pd={pd} program={program} cleanName={cleanName} />

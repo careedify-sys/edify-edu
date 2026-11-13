@@ -431,7 +431,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               <div id="admission">
                 {fh
                   ? <FirstHandMbaSections fh={fh} part="admission" eligibility={u.eligibility} />
-                  : <AdmissionSteps />}
+                  : <AdmissionSteps program={program} eligibility={u.eligibility} />}
               </div>
 
               {/* §13B ABC ID (generated content only) */}
