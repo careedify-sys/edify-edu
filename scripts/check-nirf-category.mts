@@ -127,6 +127,49 @@ const proseFailures: string[] = []
 for (const name of readdirSync(PAGE_CONTENT).filter(n => n.endsWith('.json')).sort()) {
   for (const hit of findBareProse(readFileSync(join(PAGE_CONTENT, name), 'utf8'))) proseFailures.push(`  ${PAGE_CONTENT.replace(/\\/g, '/')}/${name}  ...${hit}...`)
 }
+// Constituent-school ranks (added 2026-11-13). A rank in the UGC file's
+// NIRF_Constituent_Schools sheet (SIBM Pune Management #11, Symbiosis Law School
+// Law #7, TAPMI Management #39, ...) can never be shown as the online
+// university's own rank: it must name the school. Scans source, page-content
+// JSON, every blog post, the coupon/compare data and public/llms.txt. See
+// scripts/lib/nirf-constituent.mts and data/nirf-constituent-schools.json.
+const constituentFailures: string[] = []
+{
+  const { findConstituentMisattribution, selfTest } = await import('./lib/nirf-constituent.mts')
+  if (!selfTest()) { console.error('check-nirf-category: constituent self-test FAILED'); process.exit(1) }
+  const { BLOG_POSTS } = await import('../lib/blog')
+  const ctxOf = (s: string) => /symbiosis|ssodl/i.test(s) ? 'symbiosis-university-online' : /\bmahe\b|manipal-academy/i.test(s) ? 'manipal-academy-higher-education-online' : /\bjss\b/i.test(s) ? 'jss-university-online' : undefined
+  for (const root of ROOTS) {
+    for (const f of walk(root)) {
+      const rel = f.replace(/\\/g, '/')
+      if (/^app\/admin|^lib\/blog\.ts$|^lib\/data\/page-content\//.test(rel)) continue
+      for (const h of findConstituentMisattribution(readFileSync(f, 'utf8'))) constituentFailures.push(`  ${rel}  ${h}`)
+    }
+  }
+  for (const name of readdirSync(PAGE_CONTENT).filter(n => n.endsWith('.json'))) {
+    const ctx = ctxOf(name.replace(/-(mba|bba|bca|mca)\b.*$/, ''))
+    for (const h of findConstituentMisattribution(readFileSync(join(PAGE_CONTENT, name), 'utf8'), ctx)) constituentFailures.push(`  ${PAGE_CONTENT}/${name}  ${h}`)
+  }
+  for (const p of BLOG_POSTS) {
+    if (p.status !== 'published') continue
+    const text = [p.content, ...(p.faqs ?? []).flatMap(f => [f.q, f.a])].join('\n')
+    for (const h of findConstituentMisattribution(text, ctxOf(p.slug))) constituentFailures.push(`  blog/${p.slug}  ${h}`)
+    // Titles, H1s and meta descriptions are frozen by Rishi's decision
+    // (2026-11-13) and eight reviews by check-protected-pages to 2026-12-05.
+    // A wrong rank there is reported for him to decide, never blocked, because
+    // the only fix is a change this gate must not force.
+    const frozen = [p.title, (p as { seoTitle?: string }).seoTitle ?? '', (p as { h1Title?: string }).h1Title ?? '', p.metaDescription].join('\n')
+    for (const h of findConstituentMisattribution(frozen, ctxOf(p.slug))) console.log(`check-nirf-category: NOTE frozen title/meta, blog/${p.slug}  ${h}`)
+  }
+  for (const h of findConstituentMisattribution(readFileSync('public/llms.txt', 'utf8'))) constituentFailures.push(`  public/llms.txt  ${h}`)
+}
+if (constituentFailures.length) {
+  console.error(`check-nirf-category: ${constituentFailures.length} constituent-school rank(s) credited to the online university:`)
+  console.error(constituentFailures.join('\n'))
+  console.error('Name the school that holds the rank ("NIRF Management #11 is SIBM Pune\'s rank, a constituent school, not SSODL\'s"), or use the university\'s own rank.')
+  process.exit(1)
+}
+
 if (failures.length || proseFailures.length) {
   if (failures.length) {
     console.error(`check-nirf-category: ${failures.length} NIRF rank(s) rendered without a category:`)

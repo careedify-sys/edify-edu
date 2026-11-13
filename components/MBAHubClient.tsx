@@ -24,7 +24,7 @@ const TRAFFIC_ORDER = [
 
 // Sorted by NIRF Management rank 2025 (primary sort criterion)
 const TOP_10_PICKS = [
-  { id: 'symbiosis-university-online', bestFor: 'NIRF #11 Management. NAAC A++. Strongest HR and marketing brand among online MBAs. Premium MNC recruiter recall.' },
+  { id: 'symbiosis-university-online', bestFor: 'NAAC A++. Symbiosis International holds NIRF #24 University. Strong HR and marketing brand among online MBAs. Premium MNC recruiter recall.' },
   { id: 'nmims-online', bestFor: 'NIRF #24 Management. AACSB member institution. Strongest brand for BFSI, finance, and analytics careers.' },
   { id: 'amrita-vishwa-vidyapeetham-online', bestFor: 'NIRF #26 Management. NAAC A++. Grant Thornton co-branded Analytics, FinTech, and ESG tracks.' },
   { id: 'chandigarh-university-online', bestFor: 'NIRF #32 Management. NAAC A+. Bundled Harvard Business Publishing, PwC, and PMI certifications at no extra cost.' },
@@ -428,7 +428,7 @@ export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
       </section>
       <section className="py-10 px-4 text-center">
         <h2 className="text-xl font-bold mb-2" style={{ color: '#0B1533' }}>Not Sure Which Online MBA Is Right for You?</h2>
-        <p className="text-slate-500 text-sm mb-4 max-w-lg mx-auto">Free 20-minute call with an EdifyEdu counsellor. We help match your career goal to the right programme. No pressure, no paid recommendations.</p>
+        <p className="text-slate-500 text-sm mb-4 max-w-lg mx-auto">Free 20-minute call with an edifyedu.in counsellor. We help match your career goal to the right programme. No pressure, no paid recommendations.</p>
         <Link href="/contact" className="inline-block px-8 py-3 bg-amber-500 text-white font-bold rounded-xl hover:bg-amber-600 transition-colors no-underline">
           Book Free Counselling
         </Link>

@@ -7,6 +7,7 @@ import { ProReportCTAPlaceholder } from '@/components/verify/ProReportCTAPlaceho
 import { ProgrammeFinder } from '@/components/verify/ProgrammeFinder';
 import { ApprovalsCard } from '@/components/verify/ApprovalsCard';
 import { naacCycle } from '@/lib/verify/naac-validity';
+import { applyConstituentOverlay } from '@/lib/verify/constituent-overlay';
 import { NIRFStrip } from '@/components/verify/NIRFStrip';
 import { DataFreshnessBadge } from '@/components/verify/DataFreshnessBadge';
 import { TrackPageView } from '@/components/verify/TrackPageView';
@@ -217,7 +218,7 @@ export default async function VerifyPage({ params }: PageProps) {
       brandSlug={brandSlug}
       universities={brandUnis}
       programmes={progRes.data || []}
-      accreditations={accRes.data || []}
+      accreditations={(accRes.data || []).map((a: any) => applyConstituentOverlay(brandUnis.find(u => u.id === a.university_id)?.name ?? '', [a])[0])}
     />;
   }
 
@@ -236,7 +237,7 @@ export default async function VerifyPage({ params }: PageProps) {
   ]);
 
   const programmes = progRes.data || [];
-  const accreditations = accRes.data || [];
+  const accreditations = applyConstituentOverlay(university.name, accRes.data || []);
 
   const verifyFaqs = getVerifyFAQs({
     universityName: university.name,

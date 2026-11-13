@@ -281,7 +281,7 @@ export function isRankedNirf(rank: number | null | undefined): rank is number {
  *
  * `prefer` must match whatever the surrounding list is sorted by. A badge that
  * shows a Management rank inside a list ordered by University rank reads as a
- * sorting bug: MAHE (#39 Management, #3 University) would sit above BITS
+ * sorting bug: MAHE (#3 University; its Management #39 is TAPMI's) would sit above BITS
  * Pilani (#7 University) while displaying the larger number.
  */
 export function formatNirfBadge(
