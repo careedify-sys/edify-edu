@@ -1,5 +1,22 @@
 # Fix log
 
+## 2026-11-13 · AI-visibility round 1 cleanup (5 misses and 3 leftovers)
+
+- **Why:** the round-1 report left Amity premium pages showing the standard fee in the header tile and FAQ, the
+  eligibility tile at 50% against a 40% body, the Amity registration line three times, ~14,300 visible "EdifyEdu"/
+  "Edify" strings, ~200 "verify on the official portal" directives and a placeholder syllabus row. 16f1268 (another
+  session) had also rewritten "EdifyEdu earns zero commissions" against rule 3 and read eligibility from
+  eligibilityPct, which says 40% for IGNOU whose text says "Varies by program".
+- **What:** tile and FAQ read the track's feePlan; eligibility tile reads u.eligibility; shared feePlan notes print
+  once; brand sweep in body text only; counsellor wording for every university-portal directive; "indicative"
+  dropped only for CU, Uttaranchal and LPU MBA fee sections whose figures match a dated source.
+- **Trap:** splitting a mixed working tree into per-task commits with `git apply --cached --unidiff-zero` put two
+  inserted declarations after their first use (ReferenceError on every university page in the intermediate
+  commit). Diff the final tree against the working copy before pushing. Also: a sweep that rewrites strings must
+  skip metaDescription keys; one blog meta changed and was caught only by the rendered head diff.
+- **Open:** LPU MBA hub JSON prints Rs 1,82,800 full fee vs Rs 2,00,000 list in lib/data.ts. 522 "indicative" fee
+  sentences stay where no dated source exists (check-fee-wording 793 -> 624).
+
 ## 2026-11-13 · Coupon card invented a code on pages without a coupon
 
 - **Why:** CouponCard sits in the sidebar of every hub and spec page. With no lib/coupons.ts entry (90 of 118
