@@ -6281,7 +6281,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <div class="ilink">Read our <a href="/blog/muj-online-mba-review-2026">MUJ online MBA review</a></div>
 
     <h2>SMU: Lowest Fee, Dual Specialisation Built In</h2>
-    <p>Sikkim Manipal University was established in 1995 and holds NAAC A+ accreditation with NIRF university rank 64 for 2024. At Rs 1,20,000 total, it is the most affordable, and it is the only program where dual specialisation is built into the structure at no extra cost.</p>
+    <p>Sikkim Manipal University was established in 1995 and holds NAAC A+ accreditation and has no NIRF ranking. At Rs 1,20,000 total, it is the most affordable, and it is the only program where dual specialisation is built into the structure at no extra cost.</p>
 
     <p>Marketing is compulsory as the first specialisation. For the second, students choose from Finance, HR, Systems, or Operations and Supply Chain Management. Healthcare is also available. Assessment is 30 percent continuous and 70 percent term-end. Students need at least 40 percent in each part independently.</p>
 
