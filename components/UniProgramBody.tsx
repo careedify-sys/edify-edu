@@ -428,6 +428,8 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                 universityName={cleanName}
               />
 
+              {fh && <FirstHandMbaSections fh={fh} part="scholarships" />}
+
               {/* §13 Admission */}
               <div id="admission">
                 {fh

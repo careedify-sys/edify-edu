@@ -63,6 +63,9 @@ export default function FirstHandUniversitySections({ fh, part }: { fh: Resolved
             </tbody>
           </table>
         </div>
+        {fh.approvalsFooter ? (
+          <p className="text-ink-2 text-sm leading-relaxed mt-4 mb-0"><FirstHandText text={fh.approvalsFooter} /></p>
+        ) : null}
       </section>
 
       {fh.noticeBox ? (
@@ -83,16 +86,30 @@ export default function FirstHandUniversitySections({ fh, part }: { fh: Resolved
         </section>
       ) : null}
 
-      <section className="card-lg p-6" id="exams">
-        <h2 className={H2}>How {fh.subject} exams work</h2>
-        <p className="text-ink-2 text-[15px] leading-relaxed m-0">{fh.exams}</p>
-      </section>
+      {fh.studyingAt ? (
+        <section className="card-lg p-6" id="studying">
+          <h2 className={H2}>How studying at {fh.subject} works</h2>
+          <p className="text-ink-2 text-[15px] leading-relaxed m-0"><FirstHandText text={fh.studyingAt.text} /></p>
+          {fh.studyingAt.more ? (
+            <p className="text-ink-2 text-[15px] leading-relaxed mt-3 mb-0"><FirstHandText text={fh.studyingAt.more} /></p>
+          ) : null}
+        </section>
+      ) : null}
 
-      <section className="card-lg p-6">
-        <h2 className={H2}>What you get as an {fh.subject} student</h2>
-        {fh.studentToolsIntro ? <p className="text-ink-2 text-[15px] leading-relaxed mb-3">{fh.studentToolsIntro}</p> : null}
-        <BulletList items={fh.studentTools} sep=": " />
-      </section>
+      {fh.exams ? (
+        <section className="card-lg p-6" id="exams">
+          <h2 className={H2}>How {fh.subject} exams work</h2>
+          <p className="text-ink-2 text-[15px] leading-relaxed m-0">{fh.exams}</p>
+        </section>
+      ) : null}
+
+      {fh.studentTools?.length ? (
+        <section className="card-lg p-6">
+          <h2 className={H2}>What you get as an {fh.subject} student</h2>
+          {fh.studentToolsIntro ? <p className="text-ink-2 text-[15px] leading-relaxed mb-3">{fh.studentToolsIntro}</p> : null}
+          <BulletList items={fh.studentTools} sep=": " />
+        </section>
+      ) : null}
 
       <section className="card-lg p-6">
         <h2 className={H2}>What students tell me after they join</h2>

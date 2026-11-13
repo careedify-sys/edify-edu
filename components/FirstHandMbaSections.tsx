@@ -13,7 +13,7 @@ import Link from 'next/link'
 import type { ResolvedFirstHand } from '@/lib/first-hand'
 import { FirstHandByline, FirstHandText, BulletList } from './FirstHandShared'
 
-type Part = 'who' | 'classes' | 'specAdvice' | 'admission' | 'placements' | 'notice' | 'redFlags' | 'verdict'
+type Part = 'who' | 'classes' | 'specAdvice' | 'scholarships' | 'admission' | 'placements' | 'notice' | 'redFlags' | 'verdict'
 
 const CARD = 'rounded-xl border border-slate-200 bg-white p-6'
 const H2 = 'text-lg font-bold mb-3'
@@ -34,7 +34,13 @@ export default function FirstHandMbaSections({ fh, part, eligibility }: { fh: Re
     )
 
     case 'classes': {
-      const app = fh.studentTools[0]
+      // No exams copy: one line to the university page's "How studying at X works".
+      if (!fh.exams) return fh.studyingAt ? (
+        <p className="text-sm text-slate-700 m-0">
+          <Link href={`/universities/${fh.universityId}#studying`} className="font-semibold underline" style={{ color: '#0f172a' }}>How studying at {fh.subject} works</Link>
+        </p>
+      ) : null
+      const app = fh.studentTools?.[0]
       return (
         <section className={CARD}>
           {fh.batches ? (
@@ -82,9 +88,9 @@ export default function FirstHandMbaSections({ fh, part, eligibility }: { fh: Re
 
     case 'placements': return (
       <section className={CARD}>
-        <h2 className={H2} style={NAVY}>Placements: what {fh.shortName} says and what I have seen</h2>
+        <h2 className={H2} style={NAVY}>Placements: what {fh.placements.saysName ?? fh.shortName} says and what I have seen</h2>
         <div className="p-4 rounded-lg bg-slate-50 border border-slate-200 mb-3">
-          <div className="text-xs font-bold uppercase tracking-wide text-slate-500 mb-1">What {fh.shortName} says (checked {fh.universitySaysCheckedOnText})</div>
+          <div className="text-xs font-bold uppercase tracking-wide text-slate-500 mb-1">What {fh.placements.saysName ?? fh.shortName} says (checked {fh.universitySaysCheckedOnText})</div>
           <p className="text-sm text-slate-700 leading-relaxed m-0">{fh.placements.universitySays}</p>
         </div>
         <div className="p-4 rounded-lg border" style={{ background: '#fff7ed', borderColor: '#fed7aa' }}>
@@ -93,6 +99,33 @@ export default function FirstHandMbaSections({ fh, part, eligibility }: { fh: Re
         </div>
       </section>
     )
+
+    case 'scholarships': return fh.scholarships?.items.length ? (
+      <section className={CARD}>
+        <h2 className={H2} style={NAVY}>Scholarships</h2>
+        <div style={{ overflowX: 'auto' }}>
+          <table className="w-full text-sm" style={{ borderCollapse: 'collapse', minWidth: 420 }}>
+            <thead>
+              <tr>
+                {['Category', 'Discount', 'What you need'].map(h => (
+                  <th key={h} className="text-left font-semibold text-white" style={{ background: '#0f172a', padding: '8px 10px' }}>{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {fh.scholarships.items.map(s => (
+                <tr key={s.category}>
+                  <td className="font-semibold" style={{ padding: '8px 10px', borderBottom: '1px solid #e2e8f0', color: '#0f172a' }}>{s.category}</td>
+                  <td className="text-slate-700" style={{ padding: '8px 10px', borderBottom: '1px solid #e2e8f0' }}>{s.discountPct}%</td>
+                  <td className="text-slate-700" style={{ padding: '8px 10px', borderBottom: '1px solid #e2e8f0' }}>{s.need}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        {fh.scholarships.note ? <p className="text-sm text-slate-700 mt-3 mb-0">{fh.scholarships.note}</p> : null}
+      </section>
+    ) : null
 
     case 'notice': return fh.noticeBox ? (
       <section className={CARD} style={{ borderColor: '#B8892A' }}>

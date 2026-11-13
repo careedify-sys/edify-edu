@@ -29,6 +29,8 @@ export interface ResolvedFirstHand extends Omit<FirstHandUniversity, 'approvals'
   universitySaysCheckedOnText: string
   /** getDisplayFee range for the MBA, or null when suppressed. */
   mbaFee: string | null
+  /** University.mbaScholarships, for the hub's scholarships table. */
+  scholarships?: University['mbaScholarships']
 }
 
 type Extract = {
@@ -52,12 +54,20 @@ function tokenValues(u: University): Record<string, string | undefined> {
   const sem = plan?.rows.find(r => /semester/i.test(r.mode))?.instalment
   const initial = u.admissionPayments?.initial?.amount
   const processing = plan?.extras?.find(e => /admission processing/i.test(e.label))?.amount
+  const application = plan?.extras?.find(e => /^application/i.test(e.label))?.amount
+  const coursera = u.addOns?.find(a => a.id === 'coursera')?.amount
+  const fee = getDisplayFee(u, 'MBA')
   return {
     registration: u.admissionPayments?.registration ? rupees(u.admissionPayments.registration.amount) : undefined,
     initial: initial != null ? rupees(initial) : undefined,
     admissionProcessing: processing != null ? rupees(processing) : undefined,
     semester1Balance: sem != null && initial != null ? rupees(sem - initial) : undefined,
     mbaSpecCount: mbaSpecCount(u),
+    mbaFee: fee.ok && fee.range ? fee.range : undefined,
+    applicationFee: application != null ? rupees(application) : undefined,
+    courseraPrice: coursera != null ? rupees(coursera) : undefined,
+    naac: u.naac || undefined,
+    nirfUniversity: u.nirf != null ? String(u.nirf) : undefined,
   }
 }
 
@@ -65,6 +75,28 @@ function tokenValues(u: University): Record<string, string | undefined> {
 function mbaSpecCount(u: University): string | undefined {
   const n = u.programDetails?.MBA?.specs?.length
   return n ? String(n) : undefined
+}
+
+/**
+ * One plan's rows as text, e.g. "full fee ₹1,84,000 (₹1,56,400 after 15%
+ * discount); semester ₹46,000 x 4 (₹39,100 each after 15% discount); no-cost
+ * EMI from ₹6,517 a month". EMI uses University.emiFrom when set.
+ */
+function feePlanSummary(u: University, prog: string, planId: string): string | undefined {
+  const plan = u.feePlans?.[prog as 'mba']?.find(p => p.id === planId)
+  if (!plan?.rows.length) return undefined
+  const after = (plan.discountLabel ?? 'after discount').toLowerCase()
+  const parts = plan.rows.map(r => {
+    const mode = r.mode.replace(/\s*\(.*\)$/, '').toLowerCase()
+    if (/emi/i.test(r.mode)) return `no-cost EMI from ${rupees(u.emiFrom ?? r.instalment ?? 0)} a month`
+    if (r.instalment != null && r.count) {
+      const d = r.discounted != null ? ` (${rupees(Math.round(r.discounted / r.count))} each ${after})` : ''
+      return `${mode} ${rupees(r.instalment)} x ${r.count}${d}`
+    }
+    if (r.total == null) return null
+    return `${mode} ${rupees(r.total)}${r.discounted != null ? ` (${rupees(r.discounted)} ${after})` : ''}`
+  }).filter(Boolean)
+  return parts.length ? parts.join('; ') : undefined
 }
 
 /** MBA specialisation names from lib/data.ts, joined "A, B and C". */
@@ -113,8 +145,10 @@ function approvalRows(u: University, fh: FirstHandUniversity): ApprovalRow[] {
         if (fromFile && fromFile.grade !== u.naac) {
           throw new Error(`first-hand ${u.id}: NAAC ${u.naac} in lib/data.ts, ${fromFile.grade} in the UGC file`)
         }
-        const detail = fromFile?.cgpa != null && fromFile.declaredOn ? ` (CGPA ${fromFile.cgpa}, declared ${longDate(fromFile.declaredOn)})` : ''
-        return { body: 'NAAC', holds: `NAAC ${u.naac}${detail}`, source: 'NAAC record', link: NAAC }
+        const detail = fromFile?.cgpa == null ? ''
+          : a.hideDeclared || !fromFile.declaredOn ? ` (CGPA ${fromFile.cgpa})`
+          : ` (CGPA ${fromFile.cgpa}, declared ${longDate(fromFile.declaredOn)})`
+        return { body: 'NAAC', holds: `NAAC ${u.naac}${detail}${a.extra ? `. ${a.extra}` : ''}`, source: 'NAAC record', link: NAAC }
       }
       case 'nirf': {
         const n = ex?.nirf
@@ -152,6 +186,7 @@ export function resolveFirstHand(u: University): ResolvedFirstHand | undefined {
     reviewedOnText: longDate(fh.reviewedOn),
     universitySaysCheckedOnText: longDate(fh.placements.universitySaysCheckedOn),
     mbaFee: fee.ok ? fee.range ?? null : null,
+    scholarships: u.mbaScholarships,
   }
 }
 
@@ -169,6 +204,18 @@ export function fillFeeTokens(text: string, u: University): string {
   text = text.replace(/\{\{(mbaSpecCount|mbaSpecList|eligibility)\}\}/g, (_m, k: string) => {
     const v = k === 'mbaSpecCount' ? mbaSpecCount(u) : k === 'mbaSpecList' ? mbaSpecList(u) : u.eligibility
     if (!v) throw new Error(`page-content ${u.id}: {{${k}}} has no value in lib/data.ts`)
+    return v
+  })
+  // {{addOn:coursera}}: price of that University.addOns entry.
+  text = text.replace(/\{\{addOn:([\w-]+)\}\}/g, (_m, id: string) => {
+    const a = u.addOns?.find(x => x.id === id)
+    if (!a) throw new Error(`page-content ${u.id}: {{addOn:${id}}} has no value in lib/data.ts`)
+    return rupees(a.amount)
+  })
+  // {{feePlanSummary:mba/standard}}: every row of that plan in one sentence.
+  text = text.replace(/\{\{feePlanSummary:(\w+)\/([\w-]+)\}\}/g, (_m, prog: string, planId: string) => {
+    const v = feePlanSummary(u, prog, planId)
+    if (!v) throw new Error(`page-content ${u.id}: {{feePlanSummary:${prog}/${planId}}} has no value in lib/data.ts`)
     return v
   })
   return text.replace(/\{\{fee:(\w+)\/([\w-]+)\/([\w-]+)\}\}/g, (_m, prog: string, planId: string, mode: string) => {

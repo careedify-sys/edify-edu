@@ -158,7 +158,8 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
   // records. See lib/seo/mode-unverified.ts.
   const firstHandFaqs = fh ? [
     ...templateFaqs
-      .filter(f => !/^How are exams conducted at /.test(f.q))
+      // Dropped only when the first-hand file answers exams itself.
+      .filter(f => !(fh.exams && /^How are exams conducted at /.test(f.q)))
       .map(f => /^What jobs can I get after /.test(f.q) ? { q: f.q, a: fh.placements.universityPageFaq } : f),
     ...fh.faqsUniversityPage,
   ] : null

@@ -1,5 +1,6 @@
 import type { University } from '@/lib/data'
 import { CheckCircle, XCircle } from 'lucide-react'
+import { getFirstHand } from '@/lib/data/first-hand'
 
 interface Props {
   u: University
@@ -35,8 +36,12 @@ const PROGRAM_DEFAULTS: Record<string, { eligibility: string; forWho: string[]; 
 export default function SectionWhoCanApply({ u, program, cleanName, hideLists = false }: Props) {
   const defaults = PROGRAM_DEFAULTS[program] || PROGRAM_DEFAULTS['MBA']
   const eligibility = u.eligibility || defaults.eligibility
-  const forWho = u.forWho?.length ? u.forWho : defaults.forWho
-  const notFor = u.notFor?.length ? u.notFor : defaults.notFor
+  // A university with a first-hand file carries Rishi's MBA wording in
+  // forWho/notFor, so its other programme hubs use the programme defaults
+  // rather than print MBA copy on, say, the MCA page.
+  const ownLists = program === 'MBA' || !getFirstHand(u.id)
+  const forWho = ownLists && u.forWho?.length ? u.forWho : defaults.forWho
+  const notFor = ownLists && u.notFor?.length ? u.notFor : defaults.notFor
 
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-6">

@@ -21,7 +21,9 @@ export type FirstHandApproval =
   // Built from lib/data/ugc-deb-extract.json (UGC-DEB online programme list).
   | { kind: 'ugc-deb'; holds?: string }
   // Built from University.naac, plus the UGC file's CGPA and date when it has them.
-  | { kind: 'naac' }
+  // extra: one more line of Rishi's wording under the grade.
+  // hideDeclared: print the CGPA without the UGC file's declared date.
+  | { kind: 'naac'; extra?: string; hideDeclared?: true }
   // Built from University.nirf / nirfMgt and the UGC file's NIRF columns.
   // Fails the build when the two disagree.
   | { kind: 'nirf'; body: string }
@@ -48,15 +50,20 @@ export interface FirstHandUniversity {
   whatItIs: string
   approvalsIntro: string
   approvals: FirstHandApproval[]
+  /** One line under the approvals table, link markup allowed. */
+  approvalsFooter?: string
   /** Section "How X Online classes work". Optional. */
   batches?: string
-  exams: string
+  /** Section "How X Online exams work". Optional; when absent the hub links studyingAt instead. */
+  exams?: string
+  /** Section "How studying at X works" (id="studying"), with an optional second paragraph. */
+  studyingAt?: { text: string; more?: string }
   studentToolsIntro?: string
-  studentTools: { name: string; text: string }[]
-  worksWell: { name: string; text: string }[]
+  studentTools?: { name: string; text: string }[]
+  worksWell: { name?: string; text: string }[]
   /** Heading of the second list. Defaults to "What students complain about". */
   complaintsHeading?: string
-  complaints: { name: string; text: string }[]
+  complaints: { name?: string; text: string }[]
   whoShouldChoose: string[]
   whoShouldNot: string[]
   admissionSteps: string[]
@@ -64,6 +71,8 @@ export interface FirstHandUniversity {
   documentsNote?: string
   specialisationAdvice: string
   placements: {
+    /** Who "says" in the placements heading. Defaults to shortName. */
+    saysName?: string
     universitySays: string
     /** YYYY-MM-DD */
     universitySaysCheckedOn: string
