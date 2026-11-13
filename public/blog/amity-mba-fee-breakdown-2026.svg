@@ -26,7 +26,7 @@
   <rect width="660" height="380" fill="#f8fafc"/>
   <rect width="660" height="74" fill="url(#amty-navy)"/>
   <text x="24" y="32" class="h">Amity Online MBA 2026: Complete Fee Breakdown</text>
-  <text x="24" y="54" class="sub">List price, discount applied, and the four payment options. Indicative figures.</text>
+  <text x="24" y="54" class="sub">List price, discount applied, and the four payment options. Fees checked on 13 Nov 2026.</text>
 
   <!-- Headline waterfall: list price - discount = final -->
   <g transform="translate(24, 96)">
