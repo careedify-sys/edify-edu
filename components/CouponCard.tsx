@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { createPortal } from 'react-dom'
 import { X, Loader2, Phone, User, Mail, MapPin, Copy, Check } from 'lucide-react'
-import type { Coupon } from '@/lib/coupons'
+import { TIER_AMOUNTS, type Coupon } from '@/lib/coupons'
 import { submitEnquiry } from '@/lib/submitEnquiry'
 
 const STATES = [
@@ -18,7 +18,9 @@ const STATES = [
 ]
 
 interface Props {
-  coupon: Coupon | null | undefined
+  // Required: callers render this card only when lib/coupons.ts holds a real
+  // coupon for the university and programme. There is no fallback code.
+  coupon: Coupon
   universityId: string
   program: string
   universityName: string
@@ -287,10 +289,14 @@ function UnlockModal({
 }
 
 export default function CouponCard({ coupon, universityId, program, universityName }: Props) {
-  const code        = coupon?.code || `EDIFY-${universityId.slice(0, 4).toUpperCase()}-${program}`
-  const savings     = coupon?.savings || 'Save up to ₹10,000'
-  const expiry      = coupon?.expiry  || '30 Jun 2026'
-  const maxDiscount = savings.match(/₹[\d,]+/)?.[0] || '₹10,000'
+  // Until 2026-11-13 this fell back to an invented EDIFY-XXXX code, "Save up to
+  // ₹10,000" and a 30 Jun 2026 expiry on every page without a coupon, and the ₹
+  // regex never matched the real "Rs 5,000" label, so real coupons showed
+  // ₹10,000 too. The amount now comes from the coupon's tier.
+  const code        = coupon.code
+  const savings     = coupon.savings
+  const expiry      = coupon.expiry === 'rolling' ? 'Rolling offer, no fixed end date' : `Expires ${coupon.expiry}`
+  const maxDiscount = `₹${TIER_AMOUNTS[coupon.tier].max.toLocaleString('en-IN')}`
 
   const storageKey = `edify_coupon_${universityId}_${program}`
 
@@ -347,7 +353,7 @@ export default function CouponCard({ coupon, universityId, program, universityNa
           marginBottom: 12,
         }}>
           {mounted && <SlotReveal code={code} />}
-          <div style={{ fontSize: 11, color: '#78350f', marginTop: 4 }}>Expires {expiry}</div>
+          <div style={{ fontSize: 11, color: '#78350f', marginTop: 4 }}>{expiry}</div>
         </div>
 
         {/* Copy button */}
@@ -414,7 +420,7 @@ export default function CouponCard({ coupon, universityId, program, universityNa
             filter: 'blur(6px)',
             userSelect: 'none',
           }}>
-            EDIFY-███████████
+            ███████████
           </div>
         </div>
 

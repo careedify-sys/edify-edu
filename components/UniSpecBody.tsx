@@ -747,7 +747,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
             <aside className="lg:w-72 xl:w-80 shrink-0">
               <div className="sticky top-4 space-y-4">
                 <StickyLeadCard universityName={u.name} universityId={u.id} defaultProgram={program} />
-                <CouponCard coupon={coupon} universityId={u.id} program={program} universityName={cleanName} />
+                {coupon && <CouponCard coupon={coupon} universityId={u.id} program={program} universityName={cleanName} />}
                 <QuickFactsCard u={u} pd={pd} program={program} />
               </div>
             </aside>

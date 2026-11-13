@@ -526,7 +526,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                   universityId={u.id}
                   defaultProgram={program}
                 />
-                <CouponCard coupon={coupon} universityId={u.id} program={program} universityName={cleanName} />
+                {coupon && <CouponCard coupon={coupon} universityId={u.id} program={program} universityName={cleanName} />}
                 <QuickFactsCard u={u} pd={pd} program={program} />
               </div>
             </aside>
