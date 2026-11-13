@@ -105,6 +105,12 @@ npx tsx scripts/check-duplicate-tagline.mts || exit 1
 echo "pre-commit: check-naac-consistency"
 npx tsx scripts/check-naac-consistency.mts || exit 1
 
+# Warn-only: fee copy that says "indicative", points to an "official portal"
+# or names a university domain. Round 1 (2026-11-13) cleared it from the five
+# universities' pages; the rest of the site still carries it. Never blocks.
+echo "pre-commit: check-fee-wording (warn-only)"
+npx tsx scripts/check-fee-wording.mts
+
 echo "pre-commit: check-string-truncation"
 npx tsx scripts/check-string-truncation.mts || exit 1
 
