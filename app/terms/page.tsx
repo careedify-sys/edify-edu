@@ -36,7 +36,7 @@ export default function TermsPage() {
 
           <h2 className="font-bold text-navy mt-8 mb-3">2. Informational Purpose Only</h2>
           <p className="text-ink-2">
-            All content on edifyedu.in is for general informational purposes only. It does not constitute academic, financial, or legal advice. Fee figures are indicative and may change. Always verify current fees and programme details directly on the official university portal before making any admission decision.
+            All content on edifyedu.in is for general informational purposes only. It does not constitute academic, financial, or legal advice. Fee figures are indicative and may change. Talk to our counsellor for current fees and programme details before making any admission decision.
           </p>
 
           <h2 className="font-bold text-navy mt-8 mb-3">3. Accuracy of Information</h2>

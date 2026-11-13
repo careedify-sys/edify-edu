@@ -295,7 +295,7 @@ const SPECS: Record<string, SpecDef> = {
     careerBlogSlug: 'online-mba-hospitality-management-india-2026',
     faqs: [
       { q: 'Is Online MBA Hospitality Management valid for hotel chain jobs?', a: 'Yes. UGC-DEB approved online MBA degrees are accepted by hotel chains, F&B companies, and hospitality groups across India. Taj, ITC, Oberoi, and Marriott India have hired online MBA graduates for operations and management roles.' },
-      { q: 'Which online universities offer MBA Hospitality Management?', a: 'Parul University, Chandigarh University, Galgotias University, Jain University, and select UGC-DEB approved universities offer MBA with Hospitality or Tourism Management specialisation. Always verify the specialisation name on the official portal.' },
+      { q: 'Which online universities offer MBA Hospitality Management?', a: 'Parul University, Chandigarh University, Galgotias University, Jain University, and select UGC-DEB approved universities offer MBA with Hospitality or Tourism Management specialisation. Talk to our counsellor for the specialisation name.' },
       { q: 'What is the salary after an Online MBA Hospitality Management?', a: 'Entry-level hotel management roles pay ₹4L to ₹7L per annum. Hotel Managers and F&B Directors with 3-5 years of experience earn ₹9L to ₹15L. Area Operations Managers and GMs at premium properties command ₹18L to ₹28L.' },
       { q: 'Can I do an MBA Hospitality Management without a hotel management degree?', a: 'Yes. Most universities accept graduates from any stream. A background in commerce, BBA, or even engineering is acceptable. Prior work experience in any service industry (retail, aviation, events) is treated favourably.' },
       { q: 'MBA Hospitality Management vs MBA Healthcare Management: which is better?', a: 'Both are niche MBA tracks with strong career paths. Hospitality suits you if your career is in hotels, F&B, or tourism. Healthcare suits you if you are in hospitals, pharma, or health insurance. Both have similar salary ranges at entry level; healthcare mid-tier salaries are slightly higher.' },
@@ -456,7 +456,7 @@ export default function MBASpecialisationHubPage(
               <h2 className="text-xl font-bold text-navy mb-1">Top Universities Offering MBA {def.displayName}</h2>
               <p className="text-sm text-ink-3 mb-5">
                 UGC-DEB approved universities sorted by NIRF rank. Fees shown are indicative total programme fees.
-                Verify the current fee at the official university portal before enrolling.
+                Talk to our counsellor for the current fee before enrolling.
               </p>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border-collapse">
@@ -491,7 +491,7 @@ export default function MBASpecialisationHubPage(
                 </table>
               </div>
               <p className="mt-3 text-xs text-slate-500">
-                Fees are sourced from university portals as of 2026. Always verify the current fee at the official portal.
+                Fees are sourced from university portals as of 2026. Talk to our counsellor for the current fee.
                 Edify presents public data with no referral fees or paid rankings.
               </p>
               <div className="mt-4 pt-4 border-t border-border flex flex-wrap gap-3">

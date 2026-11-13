@@ -71,7 +71,7 @@ export const metadata: Metadata = {
 const faqs: { q: string; a: string }[] = [
   {
     q: 'How do I find the lowest fee for the programme I want?',
-    a: 'Filter the table by programme first, then sort by fee. A figure that looks unusually low is often the floor of a range covering several programmes at that university rather than the price of the one you want. Open the university page to see the fee for your specific programme, then confirm it on the official portal.',
+    a: 'Filter the table by programme first, then sort by fee. A figure that looks unusually low is often the floor of a range covering several programmes at that university rather than the price of the one you want. Open the university page to see the fee for your specific programme, then talk to our counsellor about it.',
   },
   {
     q: 'How many NAAC A++ universities offer online degrees?',
@@ -177,7 +177,7 @@ export default function FeesPage() {
             </h1>
             <p className="text-ink-2 text-sm md:text-base max-w-2xl">
               Total fee and EMI for <strong>{priced.length}+</strong> UGC-DEB approved online degrees.
-              Filter by program, NAAC grade, or region. Fees are indicative. Verify with the official portal before applying.
+              Filter by program, NAAC grade, or region. Fees are indicative. Talk to our counsellor before applying.
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
               <div className="bg-surface-2 rounded-lg px-3 py-2 text-xs text-ink-2">

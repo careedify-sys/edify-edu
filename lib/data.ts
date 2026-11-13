@@ -1469,7 +1469,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         mba: [
           {
             label: "India's ONLY Pay-After-Placement online MBA",
-            detail: 'Pay 85% of the fee during the course. The final 15%, Rs 23,700, falls due only after you are placed. Opt out of Pay-After-Placement and the total drops to Rs 1.3L. Fees are indicative, so confirm them on the official portal before you pay.',
+            detail: 'Pay 85% of the fee during the course. The final 15%, Rs 23,700, falls due only after you are placed. Opt out of Pay-After-Placement and the total drops to Rs 1.3L. Fees are indicative, so talk to our counsellor about them before you pay.',
           },
           {
             label: 'New: 5-day on-campus immersion',
@@ -1477,7 +1477,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
           },
         ],
       },
-      verifyNote: 'Rankings are as published by QS and Times Higher Education for the editions named. Inclusions and platform access are as stated by Shoolini. Confirm what applies to your intake on the official portal before you pay. Edify earns no commission on this listing.',
+      verifyNote: 'Rankings are as published by QS and Times Higher Education for the editions named. Inclusions and platform access are as stated by Shoolini. Talk to our counsellor for what applies to your intake before you pay. Edify earns no commission on this listing.',
     },
       rankingBadge: 'NIRF #69 (University 2025)',
   color: '#2563EB',

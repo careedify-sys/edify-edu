@@ -58,7 +58,7 @@ const aboutFaqSchema = {
     {
       '@type': 'Question',
       name: 'How accurate is the fee data on edifyedu.in?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Fee data is sourced from official university websites and is the most accurate publicly available information at time of publishing. Fees can change each academic year. Students must verify current fees directly on the official university website before enrolling. Last updated: March 2026.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Fee data is sourced from official university websites and is the most accurate publicly available information at time of publishing. Fees can change each academic year. Students must talk to our counsellor for current fees before enrolling. Last updated: March 2026.' },
     },
   ],
 }
@@ -176,7 +176,7 @@ export default function AboutPage() {
                   'Not an enrollment portal',
                   'Not affiliated with any university',
                   'Not earning money from student enrollments',
-                  'Not the final authority on fees, always verify on the official university website',
+                  'Not the final authority on fees, talk to our counsellor',
                 ].map(item => (
                   <li key={item} className="flex items-start gap-2">
                     <XCircle className="w-3.5 h-3.5 text-red-400 shrink-0 mt-0.5" />
@@ -231,7 +231,7 @@ export default function AboutPage() {
           </ul>
           <div className="mt-5 p-4 rounded-xl bg-amber/5 border border-amber/20">
             <p className="text-xs text-ink-2 leading-relaxed">
-              <strong className="text-amber-text">Fee Data Note:</strong> Fee data shown on this site is sourced from official university fee structures and is the most accurate publicly available information at time of publishing. Fees can change each academic year. <strong>Students must verify current fees directly on the official university website before enrolling.</strong> Last updated: March 2026.
+              <strong className="text-amber-text">Fee Data Note:</strong> Fee data shown on this site is sourced from official university fee structures and is the most accurate publicly available information at time of publishing. Fees can change each academic year. <strong>Students must talk to our counsellor for current fees before enrolling.</strong> Last updated: March 2026.
             </p>
           </div>
         </div>

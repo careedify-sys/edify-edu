@@ -94,7 +94,7 @@ export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
   // feeMin/feeMax (MBA-led, abbreviated by formatFeeSlim).
   const rangeText = fees.range ? `${formatINR(fees.range.min)} to ${formatINR(fees.range.max)}` : null
   const feeAnswer = fees.range
-    ? `Total programme fees range from ${rangeText} at list price across the ${fees.range.count} online MBA programmes we index. Fees are indicative, so confirm the current figure on each university's official portal. Zero-cost EMI is available at many universities.`
+    ? `Total programme fees range from ${rangeText} at list price across the ${fees.range.count} online MBA programmes we index. Fees are indicative, so talk to our counsellor for the current figure. Zero-cost EMI is available at many universities.`
     : 'Contact our counsellor for current fee details.'
   const faqs = FAQS.map(f => (f.q === FEE_FAQ_Q ? { q: f.q, a: feeAnswer } : f))
 

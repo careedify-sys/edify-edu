@@ -367,7 +367,7 @@ export const GUIDES: Guide[] = [
     targetKeyword: 'mba salary india 2026',
     content: `
 <div class="callout-key">
-  <strong>Key figures (indicative):</strong> Online MBA freshers typically start at Rs 5-10 LPA. With 5 years of experience, the range widens to Rs 12-25 LPA. Verify current placement data on each university's official portal before making financial decisions.
+  <strong>Key figures (indicative):</strong> Online MBA freshers typically start at Rs 5-10 LPA. With 5 years of experience, the range widens to Rs 12-25 LPA. Talk to our counsellor for current placement data before making financial decisions.
 </div>
 
 <h2>Average MBA Salary in India in 2026</h2>
