@@ -66,6 +66,8 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       blogs: [
         { slug: 'nmims-online-mba-review-2026', label: 'NMIMS Online MBA Fees 2026: ₹1,96,000–₹2,20,000 and Review' },
         { slug: 'is-nmims-online-fake-or-legit-2026', label: 'Is NMIMS Online Fake or Legit? 2026' },
+        { slug: 'is-nmims-government-or-private', label: 'Is NMIMS Government or Private?' },
+        { slug: 'what-is-nmims-cdoe', label: 'What Is NMIMS CDOE?' },
       ],
     },
     bba: {

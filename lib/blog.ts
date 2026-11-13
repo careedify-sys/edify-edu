@@ -1342,6 +1342,141 @@ export const BLOG_POSTS: BlogPost[] = [
 <p style="font-size:13px;color:#64748b;margin:24px 0 0"><em>Disclaimer: accreditation status, UGC-DEB entitlement and ranking data change between assessment cycles and admission sessions. Every figure here was checked against UGC, NAAC and NIRF records on 29 August 2026. Verify current status against the official sources above before making any payment. EdifyEdu is independent, takes no referral commission and does not sell rankings.</em></p>`
   },
   {
+    // Round 2, part 2 (13 Nov 2026): answer post for "nmims deemed to be
+    // university" and "nmims is private or government". Copy from Rishi.
+    slug: "is-nmims-government-or-private",
+    title: "Is NMIMS Government or Private? NMIMS Deemed University Status Explained",
+    metaDescription: "NMIMS is a private deemed-to-be university, set up by the SVKM trust and granted deemed status under Section 3 of the UGC Act in 2003. What that means for your degree.",
+    category: "University Reviews",
+    tags: ["nmims deemed to be university", "nmims is private or government", "is nmims government", "nmims deemed university status", "svkm nmims"],
+    publishedAt: "2026-11-13",
+    readTime: 4,
+    targetKeyword: "nmims deemed to be university",
+    relatedUniversities: ["nmims-online"],
+    status: "published",
+    author: "Rishi Kumar",
+    ctaTitle: "Compare NMIMS Against Other Online Universities",
+    ctaDesc: "Edify compares public UGC/NAAC/NIRF data, no paid rankings.",
+    faqs: [
+      { q: "Is NMIMS a deemed university?", a: "Yes. It has been a deemed-to-be university under Section 3 of the UGC Act, 1956, since 13 January 2003." },
+      { q: "Who runs NMIMS?", a: "Shri Vile Parle Kelavani Mandal (SVKM), a charitable trust in Mumbai, which set NMIMS up in 1981." },
+      { q: "Is the NMIMS online MBA from the same university?", a: "Yes. It is run by NMIMS CDOE, NMIMS's Centre for Distance and Online Education, and UGC-DEB lists it under NMIMS." },
+    ],
+    content: `<h2>Short answer</h2>
+<p>NMIMS is not a government university. It is a private deemed-to-be university in Mumbai, set up by Shri Vile Parle Kelavani Mandal (SVKM), a charitable trust. The Government of India granted it deemed-to-be university status under Section 3 of the UGC Act in 2003.</p>
+
+<h2>What "deemed-to-be university" means</h2>
+<p>A deemed-to-be university is an institution that the central government, on the UGC's advice, declares a university under Section 3 of the UGC Act, 1956. It can then design its own programmes and award its own degrees, like any other UGC-recognised university.</p>
+<p>"Deemed" describes how the institution became a university. It says nothing about whether it is government or private: some deemed universities are run by the government, and many are private. NMIMS is private.</p>
+
+<h2>NMIMS timeline</h2>
+<table>
+<thead><tr><th>Year</th><th>What happened</th></tr></thead>
+<tbody>
+<tr><td>1981</td><td>SVKM sets up NMIMS as a management institute affiliated with the University of Mumbai.</td></tr>
+<tr><td>1994</td><td>NMIMS starts distance education through its School of Distance Learning.</td></tr>
+<tr><td>13 January 2003</td><td>NMIMS is declared a deemed-to-be university under Section 3 of the UGC Act.</td></tr>
+<tr><td>15 October 2007</td><td>The Government of India makes the deemed status permanent.</td></tr>
+<tr><td>2023</td><td>NMIMS Global Access, its distance and online arm, is renamed NMIMS CDOE.</td></tr>
+<tr><td>28 June 2025</td><td>NAAC grades NMIMS A++ (CGPA 3.67).</td></tr>
+</tbody>
+</table>
+<p style="font-size:13px;color:#64748b">Sources: NMIMS self-study report for NAAC (2024), NMIMS NAAC reaccreditation report (2017), NAAC record (naac.gov.in).</p>
+
+<h2>What NMIMS holds today</h2>
+<ul>
+<li>NAAC A++ (CGPA 3.67). <a href="https://naac.gov.in" rel="noopener" target="_blank">naac.gov.in</a></li>
+<li>NIRF 2025 for SVKM's NMIMS: Management #24, University #52, Overall #95. <a href="https://www.nirfindia.org" rel="noopener" target="_blank">nirfindia.org</a></li>
+<li>UGC-DEB entitlement for its online MBA, MBA (Working Executive), BBA and B.Com (Notice 1, January 2026). <a href="https://deb.ugc.ac.in" rel="noopener" target="_blank">deb.ugc.ac.in</a></li>
+<li>AACSB accreditation, held by its School of Business Management, the campus business school. It does not cover the online programmes.</li>
+</ul>
+
+<h2>Does "private" make the degree less valid?</h2>
+<p>No. For an online degree, what matters is whether that programme is on UGC-DEB's list for your session, not whether the university is government or private. NMIMS's online MBA is on the list for the January to February 2026 session. Check any university on deb.ugc.ac.in before you pay.</p>
+
+<h2>The 2023 debarment</h2>
+<p>Yes, UGC did debar NMIMS. Under an April 2023 notice, NMIMS could not admit students to online or distance programmes for three sessions: January to February 2023, July to August 2023 and January to February 2024. NMIMS is back on UGC-DEB's list (Notice 1, January 2026) for the online MBA, MBA (Working Executive), BBA and B.Com. If you join now, the debarment does not apply to you. <a href="/blog/is-nmims-online-fake-or-legit-2026">Read the full timeline</a>.</p>
+
+<h2>My take</h2>
+<p>NMIMS is one of the most reputed business school names you can get in an online MBA. It is a national brand, but its hold is strongest in Maharashtra. If brand value matters to you, it is a strong choice.</p>
+
+<h2>Related reading</h2>
+<ul>
+<li><a href="/universities/nmims-online">NMIMS Online: approvals, programmes and fees</a></li>
+<li><a href="/universities/nmims-online/mba">NMIMS online MBA</a></li>
+<li><a href="/blog/what-is-nmims-cdoe">What is NMIMS CDOE?</a></li>
+<li><a href="/blog/nmims-online-mba-review-2026">NMIMS online MBA review</a></li>
+</ul>`,
+  },
+  {
+    // Round 2, part 2 (13 Nov 2026): answer post for "nmims cdoe" and
+    // "nmims global access". Copy from Rishi. Amounts and the UGC-DEB rows
+    // come from data through the data-edify markers.
+    slug: "what-is-nmims-cdoe",
+    title: "What Is NMIMS CDOE? NMIMS's Online Arm Explained",
+    metaDescription: "NMIMS CDOE is the Centre for Distance and Online Education of SVKM's NMIMS, Mumbai. It runs the online MBA, MBA (WX), BBA and B.Com. How it works and what it costs.",
+    category: "University Reviews",
+    tags: ["nmims cdoe", "nmims global access", "nmims cdoe full form", "nmims centre for distance and online education", "nmims cdoe mba"],
+    publishedAt: "2026-11-13",
+    readTime: 5,
+    targetKeyword: "nmims cdoe",
+    relatedUniversities: ["nmims-online"],
+    status: "published",
+    author: "Rishi Kumar",
+    ctaTitle: "Compare NMIMS Against Other Online Universities",
+    ctaDesc: "Edify compares public UGC/NAAC/NIRF data, no paid rankings.",
+    faqs: [
+      { q: "Is NMIMS CDOE the same as NMIMS Global Access?", a: "Yes. NMIMS Global Access (NGA-SCE) was renamed NMIMS CDOE in 2023." },
+      { q: "Is an NMIMS CDOE degree valid?", a: "Yes, for programmes and sessions on UGC-DEB's list. NMIMS's online MBA, MBA (Working Executive), BBA and B.Com are on the list for the January to February 2026 session." },
+      { q: "Does NMIMS CDOE offer a distance MBA?", a: "No. NMIMS offers its MBA online and does not run a separate distance MBA." },
+    ],
+    content: `<h2>Short answer</h2>
+<p>NMIMS CDOE stands for the Centre for Distance and Online Education. It is the online learning arm of SVKM's NMIMS, the Mumbai deemed-to-be university. It runs NMIMS's UGC-DEB entitled online degrees: the MBA, MBA (Working Executive), BBA and B.Com.</p>
+
+<h2>Where CDOE came from</h2>
+<p>NMIMS started distance education in 1994 through its School of Distance Learning. That school later became NMIMS Global Access School for Continuing Education (NGA-SCE), and in 2023 it was renamed NMIMS CDOE. NMIMS has since moved its MBA to online mode and does not run a separate distance MBA.</p>
+
+<h2>What CDOE offers</h2>
+<p>Degrees on UGC-DEB's 2025-26 list (Notice 1, January 2026):</p>
+<div data-edify="ugc-deb-programmes" data-uni="nmims-online"></div>
+<p>CDOE also runs diplomas and certificate programmes. These are not degrees, so check which one you are signing up for.</p>
+
+<h2>How studying with NMIMS CDOE works</h2>
+<h3>Classes</h3>
+<p>Even within one intake, say January, NMIMS starts separate batches: a weekend batch, a weekday batch and an alternate-days batch, where lectures fall on alternate days. If you work on weekdays, pick the weekend batch. If you work on weekends, pick the weekday batch. That flexibility makes a real difference for working people.</p>
+<h3>Exams</h3>
+<p>Before each exam, you must complete at least 75% of that subject's track on the student portal, by going through the content, the recorded sessions or the live lectures. Only then is your admit card generated. After that, NMIMS gives you about a month to choose your exam date, and you pick the slot that suits you. It is one of the most flexible exam systems I have seen.</p>
+<h3>What you get as a student</h3>
+<ul>
+<li><strong>Printed books:</strong> NMIMS sends printed study material to your home address.</li>
+<li><strong>Student portal:</strong> easy to use, with the e-library and everything else you need for the MBA in one place.</li>
+<li><strong>Support:</strong> a support portal where you can raise a ticket or ask for a callback.</li>
+<li><strong>Campus immersion:</strong> NMIMS says online MBA students get a 2-day visit to the NMIMS CDOE campus in Mumbai.</li>
+<li><strong>Career services:</strong> coaching, CV help and practice interviews. In my experience you pay extra for these; they are not part of the programme fee.</li>
+</ul>
+<h3>Admission</h3>
+<div data-edify="first-hand-admission" data-uni="nmims-online"></div>
+
+<h2>Fees</h2>
+<p>Here is the current NMIMS online MBA fee by payment plan:</p>
+<div data-edify="fee-plans" data-uni="nmims-online" data-program="MBA"></div>
+<p>For the full breakdown, read our <a href="/blog/nmims-online-mba-review-2026">NMIMS online MBA review</a>.</p>
+
+<h2>Is NMIMS CDOE approved?</h2>
+<p>Yes, for the programmes and session on UGC-DEB's list (Notice 1, January 2026).</p>
+<p>Yes, UGC did debar NMIMS. Under an April 2023 notice, NMIMS could not admit students to online or distance programmes for three sessions: January to February 2023, July to August 2023 and January to February 2024. NMIMS is back on UGC-DEB's list (Notice 1, January 2026) for the online MBA, MBA (Working Executive), BBA and B.Com. If you join now, the debarment does not apply to you. <a href="/blog/is-nmims-online-fake-or-legit-2026">Read the full timeline</a>.</p>
+
+<h2>My take</h2>
+<p>Yes, it is worth it at NMIMS's fee. For the price, you get a strong brand, better faculty than most online MBAs in the same range, and a strong peer group. The one condition: be comfortable answering questions about the 2023 debarment.</p>
+
+<h2>Related reading</h2>
+<ul>
+<li><a href="/universities/nmims-online">NMIMS Online: approvals, programmes and fees</a></li>
+<li><a href="/universities/nmims-online/mba">NMIMS online MBA</a></li>
+<li><a href="/blog/is-nmims-government-or-private">Is NMIMS government or private?</a></li>
+</ul>`,
+  },
+  {
     slug: "is-nmims-online-fake-or-legit-2026",
     updatedAt: "2026-11-13",
     title: "Is NMIMS Online Fake or Legit? UGC Did Debar It Once, and That Story Has an Ending",
@@ -1418,6 +1553,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>It is AICTE approved. It also holds AACSB accreditation through its School of Business Management, which is a business-school accreditation rather than a university-wide one. That distinction matters if someone quotes AACSB at you as though it covers every programme.</p>
 
 <p>The university was founded in Mumbai in 1981 and was granted deemed-to-be university status in 2003. It operates under the Shri Vile Parle Kelavani Mandal trust.</p>
+<p>That makes NMIMS a private university, not a government one. Our answer to <a href="/blog/is-nmims-government-or-private">whether NMIMS is government or private</a> explains what deemed status means.</p>
 
 <div class="callout-warning"><strong>Verify before you pay.</strong> Accreditation grades and entitlement windows both expire. Confirm the NAAC grade and its validity at naac.gov.in, and confirm that your specific programme and intake year appear on the UGC-DEB list at deb.ugc.ac.in. Do not accept a screenshot from a counsellor as proof of either.</div>
 
@@ -1434,6 +1570,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Three names, one university</h2>
 
 <p>A quiet reason people end up googling whether NMIMS is fake is that the online operation has been presented under more than one name. You will see NMIMS Global Access School, you will see NMIMS Centre for Distance and Online Education, and you will see SVKM's NMIMS on the formal paperwork.</p>
+<p>For how those names fit together, read <a href="/blog/what-is-nmims-cdoe">what NMIMS CDOE is</a>.</p>
 
 <p>They point at the same institution. But if an agent sends you to a portal branded with a name you have never heard, the instinct that something is off is a reasonable instinct. Act on it the right way.</p>
 
@@ -6033,6 +6170,7 @@ export const BLOG_POSTS: BlogPost[] = [
     
 <!-- ai-answers:start -->
 <p>For the UGC-DEB and NAAC checks on NMIMS, read <a href="/blog/is-nmims-online-fake-or-legit-2026">Is NMIMS Online Fake or Legit? UGC Did Debar It Once, and That Story Has an Ending</a>.</p>
+<p>Two shorter answers cover the questions students ask most about NMIMS itself: <a href="/blog/is-nmims-government-or-private">is NMIMS government or private?</a> and <a href="/blog/what-is-nmims-cdoe">what is NMIMS CDOE?</a></p>
 <p class="cta-box">edifyedu.in compares public UGC/NAAC/NIRF data, no paid rankings. Talk to our counsellor at <a href="/contact">edifyedu.in/contact</a> before you pay any fee.</p>
 <!-- ai-answers:end -->
 `,

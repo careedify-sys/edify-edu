@@ -15,6 +15,8 @@
 
 import { UNIVERSITIES, getUniversityById, SCDL_PGDBA, type FeePlan, type University, type Program } from './data'
 import { getDisplayFee } from './fees'
+import { resolveFirstHand } from './first-hand'
+import ugcExtract from './data/ugc-deb-extract.json'
 
 const rupees = (n: number) => `₹${n.toLocaleString('en-IN')}`
 
@@ -215,6 +217,28 @@ export function nmimsNoDistanceHtml(): string {
   return `<p class="answer-first" style="${ANSWER}"><strong>NMIMS does not run a separate distance MBA.</strong> Its MBA is offered online through NMIMS CDOE.</p>`
 }
 
+/** "[text](/path)" link markup from first-hand copy, as HTML. Internal paths only. */
+const linkHtml = (t: string) => esc(t).replace(/\[([^\]]+)\]\((\/[^)\s]*)\)/g, '<a href="$2">$1</a>')
+
+/**
+ * Rishi's admission steps from lib/data/first-hand/, amounts filled from
+ * lib/data.ts, as an ordered list. Empty for a university with no first-hand file.
+ */
+export function firstHandAdmissionHtml(u: University): string {
+  const fh = resolveFirstHand(u)
+  if (!fh) return ''
+  return `<ol>${fh.admissionSteps.map(s => `<li>${linkHtml(s)}</li>`).join('')}</ol>`
+}
+
+/** The university's rows in lib/data/ugc-deb-extract.json (UGC-DEB online list, AY 2025-26), as a table. */
+export function ugcDebProgrammesHtml(id: string): string {
+  const ex = (ugcExtract as Record<string, { programmes: { name: string; notice: string; period: string }[] }>)[id]
+  if (!ex) return ''
+  const rows = ex.programmes.map(p => `<tr><td>${esc(p.name)}</td><td>${esc(p.notice)}</td><td>${esc(p.period)}</td></tr>`).join('')
+  return `<table><thead><tr><th>Programme</th><th>UGC-DEB notice</th><th>Session</th></tr></thead><tbody>${rows}</tbody></table>` +
+    `<p style="font-size:13px;color:#64748b">Source: UGC-DEB online programme list, AY 2025-26 (<a href="https://deb.ugc.ac.in" rel="noopener" target="_blank">deb.ugc.ac.in</a>).</p>`
+}
+
 // ── Blog marker expansion ───────────────────────────────────────────────────
 
 /**
@@ -224,6 +248,8 @@ export function nmimsNoDistanceHtml(): string {
  *   <div data-edify="manipal-trio"></div>
  *   <div data-edify="symbiosis-distance"></div>
  *   <div data-edify="nmims-no-distance"></div>
+ *   <div data-edify="first-hand-admission" data-uni="nmims-online"></div>
+ *   <div data-edify="ugc-deb-programmes" data-uni="nmims-online"></div>
  * An unknown university or a missing plan expands to nothing.
  */
 export function expandFeeMarkers(html: string): string {
@@ -245,6 +271,8 @@ export function expandFeeMarkers(html: string): string {
       case 'manipal-trio': return manipalTrioHtml()
       case 'symbiosis-distance': return symbiosisDistanceAnswerHtml()
       case 'nmims-no-distance': return nmimsNoDistanceHtml()
+      case 'first-hand-admission': return u ? firstHandAdmissionHtml(u) : ''
+      case 'ugc-deb-programmes': return u ? ugcDebProgrammesHtml(u.id) : ''
       default: return ''
     }
   })
