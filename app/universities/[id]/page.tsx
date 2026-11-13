@@ -12,6 +12,7 @@ import { getProgramSchemaOffer } from '@/lib/seo/program-schema'
 import { pageKeywords } from '@/lib/page-keywords'
 import { shouldIndexUniversity, onlinePrefix } from '@/lib/seo/mode-unverified'
 import { formatUniversityDisplayName } from '@/lib/format'
+import { feePlanTableHtml, nmimsNoDistanceHtml, symbiosisDistanceAnswerHtml } from '@/lib/fee-plans'
 
 // The phrase people type for a university's online arm, where it differs from
 // the short title name. Amity's short name is "Amity", but the searches are
@@ -236,6 +237,8 @@ export default async function UniversityPage(
       <UniversitySchema u={university} />
       <UniversityPageClient
         university={university}
+        answerHtml={university.id === 'nmims-online' ? nmimsNoDistanceHtml() : university.id === 'symbiosis-university-online' ? symbiosisDistanceAnswerHtml() : undefined}
+        feePlanHtml={{ MBA: feePlanTableHtml(university, 'MBA') }}
         linkableProgrammes={getResolvableProgrammes(university)}
         verifyHref={getVerifyPage(university.id)}
         programSchema={Object.fromEntries(university.programs.map(p => {

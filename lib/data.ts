@@ -217,7 +217,11 @@ export interface FeePlanRow {
   // Per-instalment amount and how many, when the mode is paid in parts.
   instalment?: number
   count?: number
-  total: number
+  // Omitted where the university publishes the instalment but not the total
+  // (MUJ's EMI). Never derive one.
+  total?: number
+  // The amount after a published discount, shown in its own column.
+  discounted?: number
 }
 
 export interface FeePlan {
@@ -226,6 +230,8 @@ export interface FeePlan {
   specs?: string[]
   // The undiscounted list price, where the university states one.
   list?: number
+  // Label for the discounted column, e.g. 'After 15% discount'.
+  discountLabel?: string
   rows: FeePlanRow[]
   extras?: { label: string; amount: number; per?: string }[]
   notes?: string[]
@@ -1495,6 +1501,20 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // tolerance and only passes via the drift fallback in lib/fees.ts.
     programFees: { mba: { fee: 156400, feeMax: 184000 }, mca: { fee: 147600, feeMax: 164000 }, bba: { fee: 144000 }, bca: { fee: 144000 } },
     // The same portal figures as the comment above, labelled for tables.
+    // Payment-mode table, the same chart figures as the comment above.
+    feePlans: {
+      mba: [{
+        id: 'standard', label: 'Online MBA', list: 184000, discountLabel: 'After 15% discount',
+        rows: [
+          { mode: 'Full fee', total: 184000, discounted: 156400 },
+          { mode: 'Semester', instalment: 46000, count: 4, total: 184000, discounted: 156400 },
+          { mode: 'EMI (per month)', instalment: 7667 },
+        ],
+        extras: [{ label: 'Application', amount: 500 }],
+        notes: ['EMI after the 15% discount is ₹6,517 a month.'],
+        source: 'Rishi, Jan 2027 fee chart, entered 2026-10-26', checkedOn: '2026-10-26',
+      }],
+    },
     feeBreakdown: {
       mba: { list: 184000, net: { min: 156400, max: 156400, label: 'after 15% discount' }, perSemester: { list: 46000, net: 39100, netLabel: 'after 15% discount' }, source: 'Rishi, Jan 2027 fee chart, entered 2026-10-26' },
       mca: { list: 164000, net: { min: 147600, max: 147600, label: 'after 10% discount' }, perSemester: { list: 41000, net: 36900, netLabel: 'after 10% discount' }, source: 'Rishi, Jan 2027 fee chart, entered 2026-10-26' },
@@ -1723,6 +1743,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     feeVerifiedOn: '2026-10-06',
     uniType: 'state-private',
     programFees: { mca: { fee: 110000 } },
+    // MBA total as read from the portal on feeVerifiedOn. No payment-mode split on record.
+    feePlans: { mba: [{ id: 'standard', label: 'Online MBA', rows: [{ mode: 'Programme fee', total: 120000 }], source: 'onlinemanipal.com, read 2026-10-06', checkedOn: '2026-10-06' }] },
     logo: '/logos/university_logos/sikkim-manipal-university-logo.svg',
     name: 'Sikkim Manipal University Online',
     abbr: 'SMUOM',
@@ -2451,6 +2473,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     feeVerifiedOn: '2026-10-06',
     uniType: 'deemed',
     programFees: { mca: { fee: 220000 } },
+    // MBA total as read from the portal on feeVerifiedOn. No payment-mode split on record.
+    feePlans: { mba: [{ id: 'standard', label: 'Online MBA', rows: [{ mode: 'Programme fee', total: 292000 }], source: 'onlinemanipal.com, read 2026-10-06', checkedOn: '2026-10-06' }] },
     logo: '/logos/university_logos/mahe-manipal-online-logo.svg',
     name: 'Manipal Academy of Higher Education (MAHE) Online',
     abbr: 'MAHEO',

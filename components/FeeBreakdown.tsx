@@ -5,6 +5,8 @@ import { getExactFee, formatExactFee, formatPublishedSemesterFee } from '@/lib/f
 import { IndianRupee, AlertTriangle } from 'lucide-react'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { programmeEmiFrom } from '@/lib/seo/display-guards'
+import { getFeePlans } from '@/lib/fee-plans'
+import { FeePlanTable } from './FeePlanTable'
 
 interface Props {
   u: University
@@ -12,9 +14,30 @@ interface Props {
   program: string
   cleanName: string
   headingOverride?: string
+  // Specialisation slug on a spec page, so a priced track (Amity premium) shows.
+  spec?: string
 }
 
-export default function FeeBreakdown({ u, pd, program, cleanName, headingOverride }: Props) {
+export default function FeeBreakdown({ u, pd, program, cleanName, headingOverride, spec }: Props) {
+  // 2026-11-13: a university with a payment-mode fee plan (lib/data.ts
+  // feePlans) gets that table, its "Fees checked on" date and the counsellor
+  // line, and none of the generic rows below, which asserted "Included in
+  // total (usually)" for charges we never checked.
+  if (getFeePlans(u, program, spec).length) {
+    return (
+      <section className="rounded-xl border border-slate-200 bg-white p-6">
+        <div className="flex items-center gap-2 mb-1">
+          <IndianRupee size={16} className="text-slate-400" />
+          <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>{headingOverride || `${cleanName} ${shouldIndexUniversity(u.id) ? 'Online ' : ''}${program} Fees 2026`}</h2>
+        </div>
+        <FeePlanTable u={u} program={program} spec={spec} title="" />
+        <Link href="/contact" className="inline-block mt-2 bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold px-4 py-2 rounded-lg no-underline">
+          Talk to our counsellor
+        </Link>
+      </section>
+    )
+  }
+
   // Sprint 1 FIX 2: single canonical fee source. When getDisplayFee returns
   // ok:false the numeric range is suppressed and the block renders a
   // counsellor-verification CTA instead of a wrong number.
@@ -40,7 +63,7 @@ export default function FeeBreakdown({ u, pd, program, cleanName, headingOverrid
             Fee structure verified by our counsellor.
           </p>
           <p className="text-xs text-amber-800 mb-3">
-            Our published data for this programme is being cross-checked against the official portal. Speak with a counsellor for the current confirmed fee and EMI options.
+            Our published data for this programme is being cross-checked. Talk to our counsellor for the current confirmed fee and EMI options.
           </p>
           <Link
             href="/contact"
@@ -90,7 +113,7 @@ export default function FeeBreakdown({ u, pd, program, cleanName, headingOverrid
       <div className="flex items-start gap-2 mt-3 p-3 rounded-lg bg-amber-50 border border-amber-100">
         <AlertTriangle size={14} className="text-amber-500 shrink-0 mt-0.5" />
         <p className="text-xs text-amber-800">
-          Fees are indicative and subject to change. Always verify the exact fee on the official university portal before paying. Edify does not collect any fees directly.
+          Fees can change between intakes. Talk to our counsellor for your intake’s fee. edifyedu.in does not collect any fees.
         </p>
       </div>
     </section>

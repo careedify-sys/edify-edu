@@ -25,7 +25,8 @@ import { getUniversityById, type Program } from '@/lib/data'
 import { getProgramSchemaOffer } from '@/lib/seo/program-schema'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { splitLongParagraphsHtml } from '@/lib/split-paragraphs'
-import { VIDEOS, VIDEO_BY_BLOG, VIDEO_COPY, videoSchema, videoEmbedHtml, videoMentionPlacement } from '@/lib/videos'
+import { expandFeeMarkers } from '@/lib/fee-plans'
+import { VIDEOS, VIDEO_BY_BLOG, VIDEO_COPY, videoSchema, videoEmbedHtml, videoMentionPlacement, videoCaption } from '@/lib/videos'
 
 // Inject a mid-article CTA marker right before the next <h2> after a given
 // heading ID. BlogContentWithCTAs picks up the marker and renders the right
@@ -114,8 +115,9 @@ export async function generateMetadata(
       title: post.title,
       description: post.metaDescription,
       type: 'article',
+      siteName: 'edifyedu.in',
       publishedTime: post.publishedAt,
-      modifiedTime: post.publishedAt,
+      modifiedTime: post.updatedAt || post.publishedAt,
       authors: [post.author || 'Rishi Kumar'],
       images: [
         heroImage
@@ -171,7 +173,9 @@ export default async function BlogPostPage({ params }: Props) {
   // Relevance-picked and spread across the archive. See lib/blog-related.ts.
   const otherPosts = getRelatedPosts(slug)
 
-  let contentWithIds = splitLongParagraphsHtml(addHeadingIds(post.content))
+  // data-edify markers (fee tables, peer table, Manipal trio, answer-first
+  // blocks) expand from lib/data.ts so blog copy never carries a typed fee.
+  let contentWithIds = splitLongParagraphsHtml(addHeadingIds(expandFeeMarkers(post.content)))
 
   // Video embed (lib/videos.ts): before the first <h2>, or at the top if none.
   // Posts about the university: before the first <h2>. Posts that discuss it:
@@ -185,7 +189,8 @@ export default async function BlogPostPage({ params }: Props) {
     if (placed) [videoKey, videoAt] = placed
   }
   if (videoKey && VIDEOS[videoKey] && VIDEO_COPY[videoKey]) {
-    const { heading, caption } = VIDEO_COPY[videoKey]
+    const { heading } = VIDEO_COPY[videoKey]
+    const caption = videoCaption(videoKey)
     const embed = videoEmbedHtml(VIDEOS[videoKey], heading, caption)
     contentWithIds = contentWithIds.slice(0, videoAt) + embed + contentWithIds.slice(videoAt)
   } else {
@@ -213,6 +218,12 @@ export default async function BlogPostPage({ params }: Props) {
   const postUrl = `https://edifyedu.in/blog/${post.slug}`
 
   const publishedLabel = new Date(post.publishedAt).toLocaleDateString('en-IN', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+  })
+  // Same date as the Article schema dateModified.
+  const updatedLabel = new Date(post.updatedAt || post.publishedAt).toLocaleDateString('en-IN', {
     month: 'long',
     day: 'numeric',
     year: 'numeric',
@@ -430,7 +441,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <div>
                   <Link href="/about#team" className="text-sm font-bold no-underline hover:underline" style={{ color: '#0B1D35' }}>{post.author || 'Rishi Kumar'}</Link>
                   <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#D4922A' }}>
-                    Senior Education Researcher
+                    {(post.author || 'Rishi Kumar') === 'Rishi Kumar' ? 'Senior Education Researcher · Founder, edifyedu.in' : 'Senior Education Researcher'}
                   </div>
                 </div>
               </div>
@@ -442,6 +453,11 @@ export default async function BlogPostPage({ params }: Props) {
               <div className="flex items-center gap-1.5 text-xs font-medium" style={{ color: '#64788A' }}>
                 <Calendar size={13} style={{ color: '#D4922A' }} />
                 <span>Published {publishedLabel}</span>
+              </div>
+
+              {/* Last updated: equals dateModified in the Article schema */}
+              <div className="flex items-center gap-1.5 text-xs font-medium" style={{ color: '#64788A' }}>
+                <span>Last updated {updatedLabel}</span>
               </div>
 
               {/* Read time */}

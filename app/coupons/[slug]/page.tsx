@@ -402,7 +402,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
             If you think you qualify, ask {page.shortName} admissions when you enroll. They will tell you if the scholarship is open for the {year} batch, what documents you need, and whether it works with the {page.couponCode} coupon.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            Check scholarship details on {page.officialUrl} or with {page.shortName} admissions.
+            Talk to our counsellor for current {page.shortName} scholarship details.
           </p>
         </section>
 

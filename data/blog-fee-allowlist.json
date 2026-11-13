@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05",
+  "updatedAt": "2026-11-13",
   "note": "Owner-verified fee figures that have no counterpart in lib/data.ts and therefore cannot resolve to MATCH via getDisplayFee. Only for figures a university's admissions team has confirmed in writing for a specific specialisation-tier or payment-mode variant that the fees hub does not model yet. Prefer the FeeVariant schema when implemented (see audits/fee-model-proposal-2026-08-07.md). Adding an entry here is a source-of-truth commitment: someone will re-verify at each intake.",
   "entries": [
     {
@@ -1396,6 +1396,15 @@
       "source": "Rishi, from Chandigarh University's online MBA fee page, supplied 2026-11-04",
       "verified_date": "2026-11-04",
       "note": "Rounded '₹1.75L – ₹1.90L after Early Bird' (Rs 1,75,125 with 1 certificate, Rs 1,90,400 with 3 certificates) in the comparison table. A sub-range of the getDisplayFee range, so it classifies MISMATCH."
+    },
+    {
+      "slug": "nmims-online-mba-review-2026",
+      "figure": 800,
+      "university": "nmims-online",
+      "programme": "MBA",
+      "source": "Rishi, AI-visibility round 1 confirmed facts",
+      "verified_date": "2026-11-13",
+      "note": "NMIMS exam fee Rs 800 per subject per attempt and project fee Rs 800 per attempt. Not a programme fee, so it cannot resolve via getDisplayFee."
     }
   ]
 }

@@ -1,7 +1,10 @@
 // lib/videos.ts
-// EdifyEdu's own YouTube reviews, and the pages each one is embedded on.
+// edifyedu.in's own YouTube reviews, and the pages each one is embedded on.
 // Facts below come from the public YouTube watch page of each video
 // (title, upload date, duration). Add a video here, then list the pages.
+
+import { getUniversityById } from './data'
+import { feeCheckedOn, formatIsoDate, COUNSELLOR_FEE_LINE } from './fee-plans'
 
 export interface SiteVideo {
   youtubeId: string
@@ -16,7 +19,7 @@ export const VIDEOS: Record<string, SiteVideo> = {
     youtubeId: 'M-6oy3W34oM',
     title: 'Amity Online MBA Review 2026: Fees, Exams & Real Student Problems',
     description:
-      'EdifyEdu reviews the Amity University Online MBA: fees, exams, approvals and what real students report. Commission-free, no paid rankings.',
+      'edifyedu.in reviews the Amity University Online MBA: fees, exams, approvals and what real students report. Commission-free, no paid rankings.',
     uploadDate: '2026-11-11T00:17:34-08:00',
     duration: 'PT2M54S',
   },
@@ -24,7 +27,7 @@ export const VIDEOS: Record<string, SiteVideo> = {
     youtubeId: 'sNp-Lk88FMQ',
     title: 'NMIMS Online MBA Review 2026: UGC Debar, Fees, Exam Fees & Student Problems',
     description:
-      'EdifyEdu reviews the NMIMS Online MBA: the past UGC debarment, fees, exam fees and what real students report. Commission-free, no paid rankings.',
+      'edifyedu.in reviews the NMIMS Online MBA: the past UGC debarment, fees, exam fees and what real students report. Commission-free, no paid rankings.',
     uploadDate: '2026-11-11T03:52:11-08:00',
     duration: 'PT3M38S',
   },
@@ -32,7 +35,7 @@ export const VIDEOS: Record<string, SiteVideo> = {
     youtubeId: '1nFgU_narc4',
     title: 'Symbiosis Online MBA Review 2026 (SSODL): Fees, Placements & Student Problems',
     description:
-      'EdifyEdu reviews the Symbiosis (SSODL) Online MBA: fees, placements and what real students report. Commission-free, no paid rankings.',
+      'edifyedu.in reviews the Symbiosis (SSODL) Online MBA: fees, placements and what real students report. Commission-free, no paid rankings.',
     uploadDate: '2026-11-12T00:01:36-08:00',
     duration: 'PT3M46S',
   },
@@ -40,7 +43,7 @@ export const VIDEOS: Record<string, SiteVideo> = {
     youtubeId: '3hCv0Xyg_fI',
     title: 'Manipal University Jaipur Online MBA Review 2026: Honest Fees, Exams & Student Problems',
     description:
-      'EdifyEdu reviews the Manipal University Jaipur Online MBA: fees, exams and what real students report. Commission-free, no paid rankings.',
+      'edifyedu.in reviews the Manipal University Jaipur Online MBA: fees, exams and what real students report. Commission-free, no paid rankings.',
     uploadDate: '2026-11-12T00:09:25-08:00',
     duration: 'PT5M28S',
   },
@@ -48,7 +51,7 @@ export const VIDEOS: Record<string, SiteVideo> = {
     youtubeId: 'YiWCd7R5o88',
     title: 'Sikkim Manipal University Online MBA Review 2026: Fees, Placements & Student Problems',
     description:
-      'EdifyEdu reviews the Sikkim Manipal University Online MBA: fees, placements and what real students report. Commission-free, no paid rankings.',
+      'edifyedu.in reviews the Sikkim Manipal University Online MBA: fees, placements and what real students report. Commission-free, no paid rankings.',
     uploadDate: '2026-11-12T00:12:52-08:00',
     duration: 'PT4M9S',
   },
@@ -95,23 +98,23 @@ export function videoEmbedHtml(v: SiteVideo, heading: string, caption: string) {
 export const VIDEO_COPY:Record<string, { heading: string; caption: string }> = {
   'amity-online-mba-review-2026': {
     heading: 'Watch: Our Amity Online MBA Video Review',
-    caption: 'Our three-minute review of the Amity Online MBA. Fees shown are indicative, so confirm them on online.amity.edu before you pay.',
+    caption: 'Our three-minute review of the Amity Online MBA.',
   },
   'nmims-online-mba-review-2026': {
     heading: 'Watch: Our NMIMS Online MBA Video Review',
-    caption: 'Our review of the NMIMS Online MBA. Fees shown are indicative, so confirm them on the official NMIMS online portal before you pay.',
+    caption: 'Our review of the NMIMS Online MBA.',
   },
   'symbiosis-online-mba-review-2026': {
     heading: 'Watch: Our Symbiosis Online MBA Video Review',
-    caption: 'Our review of the Symbiosis (SSODL) Online MBA. Fees shown are indicative, so confirm them on the official Symbiosis portal before you pay.',
+    caption: 'Our review of the Symbiosis (SSODL) Online MBA.',
   },
   'muj-online-mba-review-2026': {
     heading: 'Watch: Our Manipal University Jaipur Online MBA Video Review',
-    caption: 'Our review of the Manipal University Jaipur Online MBA. Fees shown are indicative, so confirm them on onlinemanipal.com before you pay.',
+    caption: 'Our review of the Manipal University Jaipur Online MBA.',
   },
   'smu-online-mba-review-2026': {
     heading: 'Watch: Our Sikkim Manipal University Online MBA Video Review',
-    caption: 'Our review of the Sikkim Manipal University Online MBA. Fees shown are indicative, so confirm them on onlinemanipal.com before you pay.',
+    caption: 'Our review of the Sikkim Manipal University Online MBA.',
   },
 }
 
@@ -168,11 +171,22 @@ export function videoMentionPlacement(slug: string, html: string): [string, numb
   return null
 }
 
+// Caption = the per-video line plus the dated fee line from lib/data.ts
+// (the university's fee plan checkedOn). No date is shown when the fee
+// source is undated.
+export function videoCaption(key: string): string {
+  const base = VIDEO_COPY[key]?.caption ?? ''
+  const uniId = Object.keys(VIDEO_BY_UNIVERSITY).find(id => VIDEO_BY_UNIVERSITY[id] === key)
+  const u = uniId ? getUniversityById(uniId) : undefined
+  const checked = u ? feeCheckedOn(u, 'MBA') : null
+  return [base, checked ? `Fees checked on ${formatIsoDate(checked)}.` : '', COUNSELLOR_FEE_LINE].filter(Boolean).join(' ')
+}
+
 export function videoForUniversity(...ids: (string | null | undefined)[]) {
   for (const raw of ids) {
     const id = raw ? VIDEO_UNI_ALIASES[raw] ?? raw : undefined
     const key = id ? VIDEO_BY_UNIVERSITY[id] : undefined
-    if (key && VIDEOS[key] && VIDEO_COPY[key]) return { video: VIDEOS[key], ...VIDEO_COPY[key] }
+    if (key && VIDEOS[key] && VIDEO_COPY[key]) return { video: VIDEOS[key], ...VIDEO_COPY[key], caption: videoCaption(key) }
   }
   return null
 }

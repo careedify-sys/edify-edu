@@ -19,11 +19,11 @@ export default function CouponPageCTA({ page }: { page: CouponPageData }) {
             MBA from a NAAC A++ university" were both derived claims we cannot
             verify: we track 125+ universities rather than all of India, and a
             large share of fee rows are placeholder ranges. State the fee, say
-            why there is no coupon, and send the reader to the portal. */}
+            why there is no coupon, and send the reader to our counsellor. */}
         <h3 className="text-lg font-bold text-slate-700 mb-2">No coupon on the {page.shortName} online MBA</h3>
-        <p className="text-sm text-slate-500 mb-4">{page.shortName} lists its online MBA at {page.totalFee} and runs no coupon through our admission desk, so there is nothing for us to add. That figure is indicative. Confirm the current fee on {page.officialUrl} before you pay.</p>
-        <a href={`https://${page.officialUrl}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors no-underline">
-          Apply on {page.officialUrl}
+        <p className="text-sm text-slate-500 mb-4">{page.shortName} lists its online MBA at {page.totalFee} and runs no coupon through our admission desk, so there is nothing for us to add. Fees can change between intakes. Talk to our counsellor for your intake’s fee.</p>
+        <a href="/contact" className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors no-underline">
+          Talk to our counsellor
         </a>
       </div>
     )

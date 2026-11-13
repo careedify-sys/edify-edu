@@ -27,6 +27,7 @@ import SectionClasses     from './SectionClasses'
 import SectionExams       from './SectionExams'
 import SectionSyllabus    from './SectionSyllabus'
 import FeeBreakdown       from './FeeBreakdown'
+import { getFeePlans }    from '@/lib/fee-plans'
 import EMIPlans           from './EMIPlans'
 import InlineCTA          from './InlineCTA'
 import SampleCertificate  from './SampleCertificate'
@@ -350,7 +351,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
   const faqs: { q: string; a: string }[] = shouldIndexUniversity(u.id) ? templateFaqs : [
     { q: `Does ${cleanName} offer an online ${program} in ${spec}?`,
       a: `EdifyEdu cannot confirm that it does. The UGC DEB programme register does not list ${cleanName}, and the university advertises on-campus programmes only on its own website. Contact the university directly and check deb.ugc.ac.in.` },
-    { q: `Why does this specialisation appear on EdifyEdu?`,
+    { q: `Why does this specialisation appear on edifyedu.in?`,
       a: `The UGC list of August 2026 names ${spec} among the programmes granted to ${cleanName}. That list records no delivery mode, so it does not establish that the programme runs online.` },
     { q: `What should I do if I want to study at ${cleanName}?`,
       a: `Approach the university directly for its current programme options and admission process. Confirm the delivery mode and the UGC position in writing before you pay anything.` },
@@ -557,8 +558,12 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                     </section>
                   )}
 
-                  {/* §8 Fees */}
-                  {specJson.sections.fees?.body && (
+                  {/* §8 Fees. A university with a payment-mode fee plan shows that
+                      table from lib/data.ts, not the JSON prose, which carries typed
+                      fees that drift (Amity Healthcare said ₹3,29,000 for ₹3,29,200). */}
+                  {getFeePlans(u, program, specSlug).length > 0 ? (
+                    <FeeBreakdown u={u} pd={pd} program={program} cleanName={cleanName} spec={specSlug} />
+                  ) : specJson.sections.fees?.body && (
                     <section className="rounded-xl border border-slate-200 bg-white p-6">
                       <h2 className="text-lg font-bold mb-3" style={{ color: '#0B1533' }}>
                         Fees and Payment
@@ -669,7 +674,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                     <RequestSyllabusCard uniId={u.id} uniName={cleanName} program={program} />
                   )}
 
-                  <FeeBreakdown u={u} pd={pd} program={program} cleanName={cleanName} />
+                  <FeeBreakdown u={u} pd={pd} program={program} cleanName={cleanName} spec={specSlug} />
 
                   <InlineCTA
                     text="Not sure if this fits your budget? Our counsellor compares EMI plans across universities for free."

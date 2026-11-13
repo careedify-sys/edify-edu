@@ -25,6 +25,7 @@ import SectionExams      from './SectionExams'
 import SpecializationGrid from './SpecializationGrid'
 import SectionCoreSubjects from './SectionCoreSubjects'
 import FeeBreakdown      from './FeeBreakdown'
+import { NmimsNoDistance, SymbiosisDistanceAnswer } from './FeePlanTable'
 import EMIPlans          from './EMIPlans'
 import InlineCTA         from './InlineCTA'
 import SampleCertificate from './SampleCertificate'
@@ -331,6 +332,8 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               {/* §4 About */}
               <div id="about">
                 <SectionAbout u={u} program={program} pd={pd} cleanName={cleanName} customIntro={customIntro} />
+                {program === 'MBA' && u.id === 'nmims-online' && <NmimsNoDistance />}
+                {program === 'MBA' && u.id === 'symbiosis-university-online' && <SymbiosisDistanceAnswer />}
               </div>
 
               {/* §4A Our video review (lib/videos.ts) */}

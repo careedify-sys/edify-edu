@@ -29,6 +29,10 @@ const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g,'-').replace(/[^
 
 interface Props {
   university: University
+  /** Answer-first block from lib/fee-plans.ts (built on the server, data only). */
+  answerHtml?: string
+  /** Payment-mode fee table per programme from lib/fee-plans.ts, server-built. */
+  feePlanHtml?: Partial<Record<Program, string>>
   /**
    * Programmes whose hub URL actually returns 200, computed on the server by
    * getResolvableProgrammes(). Rendering links straight from u.programs used
@@ -63,7 +67,7 @@ interface Props {
   specHrefs: Record<string, string | null>
 }
 
-export default function UniversityPageClient({ university: u, linkableProgrammes, verifyHref, programSchema, specHrefs }: Props) {
+export default function UniversityPageClient({ university: u, linkableProgrammes, verifyHref, programSchema, specHrefs, answerHtml, feePlanHtml }: Props) {
   const [enquiryOpen, setEnquiryOpen] = useState(false)
   const [activeProgram, setActiveProgram] = useState<Program | null>(null)
   const [compareList, setCompareList] = useState<string[]>([])
@@ -392,6 +396,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                 <p className="text-ink-2 text-[15px] leading-relaxed mb-4">
                   {u.description}
                 </p>
+                {answerHtml ? <div dangerouslySetInnerHTML={{ __html: answerHtml }} /> : null}
                 <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 mt-6">
                   <div className="bg-surface-2 rounded-lg p-4 text-center">
                     <div className="text-2xl mb-2">🏛️</div>
@@ -454,6 +459,10 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                       </div>
                     ))}
                   </div>
+
+                  {feePlanHtml?.[displayProgram] ? (
+                    <div className="mb-6" dangerouslySetInnerHTML={{ __html: feePlanHtml[displayProgram]! }} />
+                  ) : null}
 
                   {/* Specialisations */}
                   <div className="mb-6">
