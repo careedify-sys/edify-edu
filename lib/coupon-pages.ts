@@ -362,14 +362,16 @@ export const COUPON_PAGES: CouponPageData[] = [
     maxSavingsNum: 5000,
     finalFee: 'Rs 3,10,000',
     naac: 'A++',
-    // NIRF Management #11 per Supabase and lib/data.ts. #32 matched no category.
-    nirf: '#11 Management',
+    // NIRF 2025 University #24 is Symbiosis International (Deemed University).
+    // Management #11 is SIBM Pune's rank, a constituent school, not SSODL's
+    // (corrected 2026-11-13; #32 before that matched no category).
+    nirf: '#24 University',
     couponCode: 'SYMB2026-5K',
     couponDiscount: 'Up to Rs 5,000 verified discount coupon (Tue/Sat IST)',
     blogSlug: 'symbiosis-online-mba-review-2026',
     officialUrl: 'ssodl.symbiosis.ac.in',
     discounts: [
-      { type: 'Work experience scholarship', eligibility: '2+ years professional experience', saving: 'Rs 50,000-55,000 (fee becomes Rs 2,65,000)', howToApply: 'Submit experience letters during admission' },
+      { type: 'Work experience scholarship', eligibility: '2+ years professional experience', saving: 'Rs 55,000 (the Rs 3,70,000 programme fee becomes Rs 3,15,000, the figure shown above)', howToApply: 'Submit experience letters during admission' },
       { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code SYMB2026-5K during enrollment call' },
     ],
     stackExample: 'The SYMB2026-5K verified discount coupon saves up to Rs 5,000 on Tuesday and Saturday in IST applied at enrollment. University-administered scholarships are separate and should be verified directly with Symbiosis admissions.',
@@ -378,7 +380,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     faqs: [
       { q: 'What is the Symbiosis online MBA discount coupon code?', a: 'SYMB2026-5K (premium tier). Up to Rs 5,000 on Tuesday and Saturday in IST, Rs 4,000 on other days.' },
       { q: 'Does Symbiosis offer scholarships separate from this coupon?', a: 'Symbiosis runs its own scholarship programmes administered directly by the university for the SSODL online MBA. Eligibility, percentages, and documentation are set by Symbiosis. Ask the Symbiosis admissions team directly for current scholarship details.' },
-      { q: 'Is Symbiosis the most expensive online MBA in India?', a: 'Symbiosis SSODL is among the most expensive online MBAs in India. The premium price buys NAAC A++ accreditation and NIRF #32 Management ranking. Our admission desk shares the current fee structure on your enrollment call.' },
+      { q: 'Is Symbiosis the most expensive online MBA in India?', a: 'Symbiosis SSODL is among the most expensive online MBAs in India. The premium price buys NAAC A++ accreditation and the Symbiosis name: Symbiosis International (Deemed University) holds NIRF 2025 University #24. NIRF Management #11 is SIBM Pune’s rank, a constituent school, not SSODL’s. Our admission desk shares the current fee structure on your enrollment call.' },
       { q: 'Does the SYMB2026-5K coupon work with EMI?', a: 'Yes. The coupon discount is applied to the total programme fee first, and the reduced fee can then be paid via Symbiosis EMI or semester-wise plan. Confirm specific terms with Symbiosis admissions at enrollment.' },
     ],
     peerComparisons: [

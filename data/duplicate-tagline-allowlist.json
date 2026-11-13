@@ -8,7 +8,7 @@
         "gls-university-online",
         "sgt-university-online"
       ],
-      "value": "Minor in AI in Business (GenAI for Finance) in every MBA; EY DS track available as upgrade; 500+ recruiters incl. Google",
+      "value": "Minor in AI in Business (GenAI for Finance) in every MBA; EY DS track available as upgrade",
       "reason": "UNRESOLVED DEFECT, NOT AN EXEMPTION. One of these two records was cloned from the other and the duplication is not limited to the tagline: both carry the identical MBA block, the same eight specialisations, the same topCompanies list ending \"500+ recruiters\", and both have city and state set to the string \"Online\". GLS University is in Ahmedabad, Gujarat and SGT University is in Gurugram, Haryana, so they are plainly different institutions. Nothing in lib/data.ts indicates which one the EY and Google claims belong to, and guessing would put a false claim on a real university, which is what the GLA copy of Amity\u2019s tagline already did. Raised with Rishi 2026-10-03: one record needs rebuilding from the university\u2019s own portal, not editing."
     }
   ]

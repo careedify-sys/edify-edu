@@ -99,6 +99,12 @@ npx tsx scripts/check-cloned-programme-block.mts || exit 1
 echo "pre-commit: check-duplicate-tagline"
 npx tsx scripts/check-duplicate-tagline.mts || exit 1
 
+# A NAAC grade in a university string that disagrees with the record's naac
+# field. 25 descriptions did on 2026-11-13; Bharati Vidyapeeth printed "NAAC A+
+# accredited" beside an A++ badge. See scripts/check-naac-consistency.mts.
+echo "pre-commit: check-naac-consistency"
+npx tsx scripts/check-naac-consistency.mts || exit 1
+
 echo "pre-commit: check-string-truncation"
 npx tsx scripts/check-string-truncation.mts || exit 1
 

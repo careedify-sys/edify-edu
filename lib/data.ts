@@ -179,6 +179,30 @@ export interface University {
    * so a record may carry officialUrl and no date.
    */
   feeVerifiedOn?: string
+  /**
+   * Payment-mode fee table, one entry per fee track. Read only by
+   * lib/fee-plans.ts, which renders the "Fees checked on" table on reviews,
+   * hubs and the university page. Added 2026-11-13: every AI answer states an
+   * online MBA fee as one row per payment mode (one-time, annual, semester,
+   * EMI) plus the extra charges, and our pages printed a single range.
+   *
+   * Deliberately NOT a feeBreakdown key: nothing here creates a route, a
+   * sitemap entry or a getDisplayFee input. NMIMS's MBA (Working Executive)
+   * lives here as a track for that reason; it has no page of its own.
+   *
+   * specs: the specialisation slugs a track applies to. A track with no specs
+   * is the default. checkedOn is the date the figures were confirmed, and is
+   * the only date the "Fees checked on" line may print.
+   */
+  feePlans?: Partial<Record<'mba', FeePlan[]>>
+  /**
+   * NIRF ranks held by a constituent school of this university's umbrella
+   * institution, never by the online school itself. Display only with the
+   * school's name. Source: NIRF_Constituent_Schools sheet of
+   * UGC_DEB_Online_Programmes_AY2025-26.xlsx, mirrored in
+   * data/nirf-constituent-schools.json and enforced by check-nirf-category.
+   */
+  nirfConstituent?: { category: string; rank: number; year: number; school: string; schoolShort: string }[]
   programDetails: Partial<Record<Program, ProgramDetail>>
   specialFeatures?: UniFeature[]
   highlights?: UniHighlights
@@ -186,6 +210,46 @@ export interface University {
   enrollments?: number
   rankingBadge?: string
 }
+
+export interface FeePlanRow {
+  // 'One-time payment' | 'Annual' | 'Semester' | 'EMI' | 'Year 1' ...
+  mode: string
+  // Per-instalment amount and how many, when the mode is paid in parts.
+  instalment?: number
+  count?: number
+  total: number
+}
+
+export interface FeePlan {
+  id: string
+  label: string
+  specs?: string[]
+  // The undiscounted list price, where the university states one.
+  list?: number
+  rows: FeePlanRow[]
+  extras?: { label: string; amount: number; per?: string }[]
+  notes?: string[]
+  source: string
+  checkedOn: string
+}
+
+/**
+ * Non-degree programmes named on our pages only to tell a reader what they are
+ * NOT. SCDL's PGDBA is a diploma (AICTE-approved, not UGC-DEB entitled) and is
+ * often confused with SSODL's UGC-DEB online MBA. Stored here, dated, so no
+ * page types the figure. Not a University record and never routed.
+ */
+export const SCDL_PGDBA = {
+  name: 'SCDL PGDBA',
+  kind: 'Post Graduate Diploma in Business Administration (AICTE-approved, not UGC-DEB entitled)',
+  fee: 81000,
+  instalments: [49000, 32000],
+  oneTime: 76000,
+  application: 1200,
+  session: 'January 2027',
+  source: 'Rishi, SCDL fees page',
+  checkedOn: '2026-11-13',
+} as const
 
 // Helper
 export function specSlug(s: SpecValue): string {
@@ -296,7 +360,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 6667,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'Rare dual HR+Finance MBA; Employee Negotiation Skills as dedicated subject; Gen AI in Sem 1 core; Business Analytics & A',
+    tagline: 'Rare dual HR+Finance MBA; Employee Negotiation Skills as dedicated subject; Gen AI in Sem 1 core',
     description: 'UGC DEB approved online programs from JAIN (Deemed-to-be University) – JAIN Online. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Professionals wanting combined HR + Finance expertise', 'BFSI HR aspirants', 'Dual-skill career builders'],
     notFor: ['Those seeking an on-campus residential experience', 'Students needing a guaranteed placement offer'],
@@ -330,7 +394,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹5L – ₹18L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank', 'ICICI Bank', 'Reliance', 'Accenture', 'EY', 'KPMG', 'Amazon'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from JAIN (Deemed-to-be University) – JA, recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from JAIN (Deemed-to-be University), recognised for corporate hiring.'},
       'MCA': {
         specs: ['Artificial Intelligence and Machine Learning', 'Cybersecurity', 'Data Science', 'Internet of Things (IoT)', 'Full Stack Development', 'Cloud Computing', 'General', 'Blockchain Technology'],
         // Verified 2026-10-06 on onlinejain.com/online-mca. Priced per elective:
@@ -361,7 +425,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹8L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank', 'ICICI Bank', 'Reliance', 'Accenture', 'EY', 'KPMG', 'Amazon'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from JAIN (Deemed-to-be University) – JA, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from JAIN (Deemed-to-be University), recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['Computer Science & IT', 'Data Science', 'Cyber Security', 'Artificial Intelligence', 'Cloud Computing'],
@@ -371,7 +435,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹10L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank', 'ICICI Bank', 'Reliance', 'Accenture', 'EY', 'KPMG', 'Amazon'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from JAIN (Deemed-to-be University) – JA, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from JAIN (Deemed-to-be University), recognised for corporate hiring.',
       },
       'M.Com': {
         specs: ['Accounting & Finance', 'Professional Accounting & Finance (CPA US)', 'International Finance & Accounting (ACCA)'],
@@ -381,7 +445,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank', 'ICICI Bank', 'Reliance', 'Accenture', 'EY', 'KPMG', 'Amazon'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved M.Com from JAIN (Deemed-to-be University) – JA, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved M.Com from JAIN (Deemed-to-be University), recognised for corporate hiring.',
       }
     },
     color: '#1B4FBE',
@@ -392,13 +456,47 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     id: 'amity-university-online',
     // MCA fee read from amityonline.com/master-of-computer-applications-online
     officialUrl: 'https://amityonline.com',
-    feeVerifiedOn: '2026-10-06',
+    feeVerifiedOn: '2026-11-13',
     uniType: 'private',
     // MCA Rs 1,99,000 confirmed by Rishi 2026-10-28 (the Aug audit's Rs 1,70,000 is superseded).
     programFees: { bca: { fee: 175000 }, mca: { fee: 199000 } },
     // BBA: Rs 1,75,120 paid one-time, Rs 1,99,000 paid semester-wise. Payment
     // modes, not a discount. Verified by Rishi on the portal 2026-08-07.
-    feeBreakdown: { bba: { list: 199000, modes: [{ amount: 175120, label: 'one-time' }, { amount: 199000, label: 'semester-wise total' }], source: 'Rishi, amity.edu portal, 2026-08-07' } },
+    feeBreakdown: {
+      bba: { list: 199000, modes: [{ amount: 175120, label: 'one-time' }, { amount: 199000, label: 'semester-wise total' }], source: 'Rishi, amity.edu portal, 2026-08-07' },
+      // MBA, two tracks. Never show ₹1,99,000: that was the July 2026 session price.
+      mba: { list: 225000, modes: [{ amount: 207000, label: 'one-time, standard tracks' }, { amount: 225200, label: 'by semester, standard tracks (₹56,300 × 4)' }, { amount: 302680, label: 'one-time, premium tracks' }, { amount: 329200, label: 'by semester, premium tracks (₹82,300 × 4)' }], source: 'Rishi, confirmed 2026-11-13 (Amity MBA and International Finance fee pages agree)' },
+    },
+    // Registration is included in the programme fee (Amity's own statement),
+    // so no separate registration row. Construction Project Management keeps
+    // the figures in the review post and has no page or track here.
+    feePlans: {
+      mba: [
+        {
+          id: 'standard', label: 'Standard tracks', list: 225000,
+          rows: [
+            { mode: 'One-time payment', total: 207000 },
+            { mode: 'Annual', instalment: 106880, count: 2, total: 213760 },
+            { mode: 'Semester', instalment: 56300, count: 4, total: 225200 },
+            { mode: 'EMI', instalment: 8906, count: 24, total: 213744 },
+          ],
+          notes: ['Amity says the registration fee is included in the programme fee.'],
+          source: 'Rishi, confirmed 2026-11-13 (Amity MBA and International Finance fee pages agree)', checkedOn: '2026-11-13',
+        },
+        {
+          id: 'premium', label: 'Premium tracks (Hospital and Healthcare Management, International Finance (ACCA), Dual Specialisation)',
+          specs: ['hospital-healthcare-management', 'international-finance-acca'],
+          rows: [
+            { mode: 'One-time payment', total: 302680 },
+            { mode: 'Annual', instalment: 156280, count: 2, total: 312560 },
+            { mode: 'Semester', instalment: 82300, count: 4, total: 329200 },
+            { mode: 'EMI', instalment: 13023, count: 24, total: 312552 },
+          ],
+          notes: ['Amity says the registration fee is included in the programme fee.'],
+          source: 'Rishi, confirmed 2026-11-13 (Amity MBA and International Finance fee pages agree)', checkedOn: '2026-11-13',
+        },
+      ],
+    },
     logo: '/logos/university_logos/amity-online-university-logo_2.svg',
     name: 'Amity University Online',
     abbr: 'AUO',
@@ -416,13 +514,14 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     govtRecognised: true,
     psuEligible: true,
     feeMin: 207000,
-    feeMax: 225000,
-    emiFrom: 8625,
-    eligibility: 'Graduation with 50% marks from recognized university',
-    eligibilityPct: 50,
-    tagline: 'ONLY QS-ranked online MBA in India offering 19 specialisations – highest count nationally; WASC (USA) + WES (Canada) + Q',
+    // Upper bound is the premium-track semester total (₹82,300 × 4), 2026-11-13.
+    feeMax: 329200,
+    emiFrom: 8906,
+    eligibility: 'Graduation with 40% marks (below 40%, Amity’s internal eligibility test)',
+    eligibilityPct: 40,
+    tagline: 'ONLY QS-ranked online MBA in India offering 19 specialisations – highest count nationally; WASC (USA) + WES',
     description: 'UGC DEB approved online programs from Amity University Online. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['Working professionals or graduates wanting domain flexibility with 19 choices in'],
+    forWho: ['Working professionals or graduates wanting domain flexibility across 19 specialisations'],
     notFor: ['Those who want a very deep niche curriculum', 'prefer breadth over depth'],
     qsRank: 45,
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com'],
@@ -449,7 +548,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
           { slug: 'retail-management', name: 'Retail Management' },
           { slug: 'international-finance-acca', name: 'International Finance (ACCA)' },
         ],
-        fees: '₹2.07L–₹2.25L',
+        fees: '₹2.07L–₹3.29L',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Executive'],
         avgSalary: '₹5L – ₹12L per annum',
@@ -672,7 +771,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     tagline: 'Focus on \\\"Talent Sustainability\\\" and practical',
-    description: 'UGC DEB approved online programs from Dayananda Sagar University (DSU) Online. NAAC A accredited. Valid for corporate hiring and higher education across India.',
+    description: 'UGC DEB approved online programs from Dayananda Sagar University (DSU) Online. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
     programs: ['MBA', 'MCA', 'BCA', 'B.Com', 'BBA'],
@@ -756,7 +855,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     tagline: 'DYPU Online — India\'s 1st Flagship DY Patil University (est. 2002, Navi Mumbai); edX subject integration; strong Navi M',
-    description: 'UGC DEB approved online programs from D.Y. Patil University, Navi Mumbai. NAAC A accredited. Valid for corporate hiring and higher education across India.',
+    description: 'UGC DEB approved online programs from D.Y. Patil University, Navi Mumbai. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Graduates targeting sales/marketing careers', 'working professionals in sales/marketing', 'brand professionals'],
     notFor: ['Students needing fully on-campus experience', 'those requiring entrance exam pathway', 'students below 50% UG marks (general category)'],
     programs: ['MBA', 'BBA', 'BCA'],
@@ -911,7 +1010,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 1667,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'Digital Marketing + Strategic Brand Management + Services Marketing + Sales & Distribution Management + Consumer Behavio',
+    tagline: 'Digital Marketing + Strategic Brand Management + Services Marketing + Sales & Distribution Management',
     description: 'UGC DEB approved online programs from Parul University. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Marketing professionals targeting brand, digital & sales roles', 'MBA aspirants wanting Digital Marketing + Brand Mgmt combo'],
     notFor: ['Non-analytical backgrounds', 'Deep tech aspirants'],
@@ -1145,7 +1244,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibilityPct: 50,
     tagline: 'Negotiation & Counseling + Industrial Relations & Labour Enactments + Global HRM + Organization Development + Group and',
     description: 'UGC DEB approved online programs from Mangalayatan University. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['HR professionals targeting industrial relations, global HRM, OD, negotiation rol'],
+    forWho: ['HR professionals targeting industrial relations, global HRM, OD and negotiation roles'],
     notFor: ['Deep tech/finance seekers', 'Non-HR backgrounds'],
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'M.Com', 'MSc', 'BA'],
     programDetails: {
@@ -1447,7 +1546,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹15L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Manipal University Jaipur (MUJ) – O, recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from Manipal University Jaipur (MUJ), recognised for corporate hiring.'},
       'MCA': {
         specs: ['AI & Data Science', 'Comprehensive Emerging Technologies', 'Artificial Intelligence & Machine Learning', 'Cloud Computing', 'Cybersecurity'],
         fees: '₹1,47,600–₹1,64,000',
@@ -1456,7 +1555,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Manipal University Jaipur, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Manipal University Jaipur (MUJ), recognised for corporate hiring.',
       },
       
       
@@ -1469,7 +1568,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹7L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Manipal University Jaipur (MUJ) – O, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Manipal University Jaipur (MUJ), recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['General Management'],
@@ -1479,7 +1578,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹7L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Manipal University Jaipur (MUJ) – O, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Manipal University Jaipur (MUJ), recognised for corporate hiring.',
       },
       'B.Com': {
         specs: ['General Management'],
@@ -1489,7 +1588,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹6L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from Manipal University Jaipur (MUJ) – O, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved B.Com from Manipal University Jaipur (MUJ), recognised for corporate hiring.',
       },
       'M.Com': {
         specs: ['General Management'],
@@ -1503,7 +1602,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹9L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved M.Com from Manipal University Jaipur (MUJ) – O, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved M.Com from Manipal University Jaipur (MUJ), recognised for corporate hiring.',
       },
       'MSc': {
         specs: ['Mathematics'],
@@ -1553,7 +1652,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 3342,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'Financial Technologies as dedicated Sem 3 subject + Financial Modelling & Valuation in Sem 4; Digital Marketing in Sem 2',
+    tagline: 'Financial Technologies as dedicated Sem 3 subject + Financial Modelling & Valuation in Sem 4',
     description: 'UGC DEB approved online programs from Galgotias University. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Finance professionals targeting management', 'IB & FinTech aspirants'],
     notFor: ['Non-quantitative learners', 'Campus placement seekers'],
@@ -1644,7 +1743,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibilityPct: 50,
     tagline: 'LOWEST FEES among all 3 Manipal MBA programs – ₹1.1L for UGC-entitled Manipal MBA; ONLY Manipal MBA with Mandatory Dual',
     description: 'UGC DEB approved online programs from Sikkim Manipal University. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['Students wanting most affordable Manipal MBA (₹1.1L vs ₹1.75L at MUJ and ₹2.92L', 'Those wanting dual expertise – Marketing mandatory gives all-round commercial sk', 'Healthcare professionals wanting MBA'],
+    forWho: ['Students wanting the lowest-fee Manipal MBA', 'Those wanting dual expertise with Marketing as a mandatory specialisation', 'Healthcare professionals wanting MBA'],
     notFor: ['Students wanting highly specialised single-domain MBA', 'Those needing strongest NIRF ranking (MAHE or MUJ rank higher)'],
     programs: ['MBA', 'MCA', 'BBA', 'B.Com', 'BA', 'M.Com', 'MA'],
     programDetails: {
@@ -1663,7 +1762,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹5L – ₹9L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'HDFC Bank', 'ICICI Bank', 'Axis Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Sikkim Manipal University (SMU) – O, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Sikkim Manipal University (SMU), recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['General'],
@@ -1694,7 +1793,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹2.5L – ₹5L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from Sikkim Manipal University (SMU) – O, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved B.Com from Sikkim Manipal University (SMU), recognised for corporate hiring.',
       },
       'BA': {
         specs: ['General Management'],
@@ -1706,7 +1805,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹2L – ₹5L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BA from Sikkim Manipal University (SMU) – O, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BA from Sikkim Manipal University (SMU), recognised for corporate hiring.',
       },
       'M.Com': {
         specs: ['General Management'],
@@ -1719,7 +1818,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3.5L – ₹8L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved M.Com from Sikkim Manipal University (SMU) – O, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved M.Com from Sikkim Manipal University (SMU), recognised for corporate hiring.',
       }
     },
     color: '#2563EB',
@@ -1729,20 +1828,38 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // SSODL's own portal. siu.edu.in links to it from
     // /programmes/online-education.
     officialUrl: 'https://ssodl.edu.in',
-    feeVerifiedOn: '2026-10-06',
+    feeVerifiedOn: '2026-11-13',
     programFees: { bca: { fee: 157500 } }, // MCA not offered online by SSODL
+    // MBA: ₹3,70,000 programme fee, ₹1,000 registration, ₹55,000 concession
+    // with 2+ years of work experience. There is no separate ₹10,000
+    // registration fee (removed 2026-11-13).
+    feeBreakdown: { mba: { list: 370000, listLabel: 'programme fee', net: { min: 315000, max: 315000, label: 'with 2+ years of work experience (₹55,000 concession)' }, source: 'Rishi, confirmed 2026-11-13' } },
+    feePlans: {
+      mba: [{
+        id: 'standard', label: 'Online MBA', list: 370000,
+        rows: [
+          { mode: 'Programme fee', total: 370000 },
+          { mode: 'With 2+ years of work experience (₹55,000 concession)', total: 315000 },
+        ],
+        extras: [{ label: 'Registration', amount: 1000 }],
+        source: 'Rishi, confirmed 2026-11-13', checkedOn: '2026-11-13',
+      }],
+    },
     logo: '/logos/university_logos/SSODL.svg',
     name: 'Symbiosis School for Online and Digital Learning (SSODL), Pune Online',
     abbr: 'SSODL',
     city: 'Pune',
     state: 'Maharashtra',
     region: 'West',
+    // NIRF 2025 University #24 is Symbiosis International (Deemed University),
+    // the umbrella SSODL belongs to. Management #11 is SIBM Pune's rank and was
+    // removed from nirfMgt 2026-11-13 so no badge credits it to SSODL.
     nirf: 24,
-    nirfMgt: 11,
+    nirfConstituent: [{ category: 'Management', rank: 11, year: 2025, school: 'Symbiosis Institute of Business Management, Pune', schoolShort: 'SIBM Pune' }],
     nirfEng: 46,
     naac: 'A++',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #24 (University)', 'NIRF #11 (Management)', 'AICTE', 'WES Recognised'],
+    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #24 (University)', 'AICTE', 'WES Recognised'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -1751,9 +1868,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 13125,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'AI and ML for Business Management + R Programming + Design Thinking + Digital Marketing all in CORE Sem 1-2 curriculum (',
+    tagline: 'AI and ML for Business Management + R Programming + Design Thinking',
     description: 'UGC DEB approved online programs from Symbiosis School for Online and Digital Learning (SSODL), Pune. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['Working professionals, freshers seeking premium brand, students wanting high-tec'],
+    forWho: ['Working professionals and freshers seeking a premium brand'],
     notFor: ['Students seeking low-cost distance diploma (SCDL PGDBA is cheaper alternative)', 'Students needing physical campus'],
     programs: ['MBA', 'BBA', 'BCA', 'MSc', 'BSc', 'MA'],
     programDetails: {
@@ -1775,7 +1892,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹6L – ₹10L per annum',
         topCompanies: ['IBM', 'TAFE', 'Airtel', 'SBI General Insurance', 'Vodafone', 'Deloitte', 'Infosys', 'TCS', 'Cognizant', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Symbiosis School for Online and Dig, recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from Symbiosis School for Online and Digital Learning (SSODL), Pune, recognised for corporate hiring.'},
       'BBA': {
         specs: ['General Management'],
         fees: '₹1,65,000',
@@ -1784,7 +1901,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹8L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Symbiosis School for Online and Dig, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Symbiosis School for Online and Digital Learning (SSODL), Pune, recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['General Management'],
@@ -1794,7 +1911,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹7L per annum',
         topCompanies: ['Infosys', 'TCS', 'HCL', 'IBM', 'Cognizant', 'Wipro', 'Amazon', 'Microsoft', 'JP Morgan', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Symbiosis School for Online and Dig, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Symbiosis School for Online and Digital Learning (SSODL), Pune, recognised for corporate hiring.',
       },
       'MSc': {
         specs: ['Data Science', 'Computer Applications', 'Economics'],
@@ -1808,7 +1925,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹6L – ₹25L per annum',
         topCompanies: ['Deloitte', 'KPMG', 'Accenture', 'American Express', 'DHL Logistics', 'Johnson Controls', 'Schneider Electric', 'Sterlite Power', 'Asian Paints', 'Forbes Marshall'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MSc from Symbiosis School for Online and Dig, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MSc from Symbiosis School for Online and Digital Learning (SSODL), Pune, recognised for corporate hiring.',
       },
       'BSc': {
         specs: ['Economics', 'Social Sciences'],
@@ -1821,7 +1938,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹9L per annum',
         topCompanies: ['Deloitte', 'KPMG', 'Accenture', 'American Express', 'DHL Logistics', 'Johnson Controls', 'Schneider Electric', 'Sterlite Power', 'Asian Paints', 'Forbes Marshall'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BSc from Symbiosis School for Online and Dig, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BSc from Symbiosis School for Online and Digital Learning (SSODL), Pune, recognised for corporate hiring.',
       },
       'MA': {
         specs: ['Mass Communication'],
@@ -1834,7 +1951,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '',
         topCompanies: [],
         internshipType: 'Not published by the university',
-        careerOutcome: 'UGC DEB approved MA from Symbiosis School for Online and Digital Learning, recognised for corporate hiring and higher study.',
+        careerOutcome: 'UGC DEB approved MA from Symbiosis School for Online and Digital Learning (SSODL), Pune, recognised for corporate hiring and higher study.',
       },
     },
     color: '#1B4FBE',
@@ -1911,9 +2028,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'Brand Management + Retail Management + International Marketing + IMC + Services Marketing + Digital Marketing + Consumer',
+    tagline: 'Brand Management + Retail Management + International Marketing + IMC + Services Marketing',
     description: 'UGC DEB approved online programs from Yenepoya (Deemed to be University) – Online. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['Marketing professionals targeting brand, digital, IMC, international marketing c'],
+    forWho: ['Marketing professionals targeting brand, digital, IMC and international marketing roles'],
     notFor: ['Deep tech seekers', 'Pure finance aspirants'],
     programs: ['MBA', 'MCA', 'B.Com', 'BBA', 'BCA'],
     programDetails: {
@@ -2095,8 +2212,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 3750,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: '₹90,000 MBA from NAAC A+ deemed university — among India\'s most affordable; 7 specialisations with zero-cost direct EMI',
-    description: 'UGC DEB approved online programs from Vignan\'s Foundation for Science, Technology &. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
+    tagline: '₹90,000 MBA from NAAC A++ deemed university; among India\'s most affordable; 7 specialisations with zero-cost direct EMI',
+    description: 'UGC DEB approved online programs from Vignan\'s Foundation for Science, Technology &. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Finance professionals targeting senior roles', 'FinTech aspirants', 'BFSI career seekers'],
     notFor: ['Non-quantitative learners', 'Campus experience seekers'],
     programs: ['MBA', 'MCA', 'BBA', 'BCA'],
@@ -2109,7 +2226,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['foundit', 'Google Cloud', 'AWS', 'HDFC Bank', 'ICICI Bank', 'Amazon', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Vignan\'s Foundation for Science, Te, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Vignan\'s Foundation for Science, Technology & Research, recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['Artificial Intelligence & Machine Learning', 'Data Science'],
@@ -2131,7 +2248,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹9L per annum',
         topCompanies: ['foundit', 'Google Cloud', 'AWS', 'HDFC Bank', 'ICICI Bank', 'Amazon', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Vignan\'s Foundation for Science, Te, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Vignan\'s Foundation for Science, Technology & Research, recognised for corporate hiring.',
       }
     },
       rankingBadge: 'NIRF #70 (University 2025)',
@@ -2156,8 +2273,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'NAAC A accredited · UGC DEB approved online programs',
-    description: 'UGC DEB approved online programs from Manonmaniam Sundaranar University. NAAC A accredited. Valid for corporate hiring and higher education across India.',
+    tagline: 'NAAC A+ accredited · UGC DEB approved online programs',
+    description: 'UGC DEB approved online programs from Manonmaniam Sundaranar University. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
     programs: ['MBA', 'BA', 'B.Com', 'BBA', 'MA', 'M.Com'],
@@ -2217,6 +2334,45 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'nmims-online',
+    // NMIMS CDOE. Same domain as lib/coupon-pages.ts.
+    officialUrl: 'https://online.nmims.edu',
+    feeVerifiedOn: '2026-11-13',
+    // MBA payment modes, Rishi + NMIMS CDOE MBA page, 2026-11-13. Payment
+    // modes, not a discount: 1,96,000 one-time, 1,05,000 x 2 annual,
+    // 55,000 x 4 by semester.
+    feeBreakdown: { mba: { list: 220000, modes: [{ amount: 196000, label: 'one-time payment' }, { amount: 210000, label: 'paid annually (₹1,05,000 × 2)' }, { amount: 220000, label: 'paid by semester (₹55,000 × 4)' }], source: 'Rishi, confirmed 2026-11-13, NMIMS CDOE MBA page' } },
+    feePlans: {
+      mba: [
+        {
+          id: 'standard', label: 'Online MBA',
+          rows: [
+            { mode: 'One-time payment', total: 196000 },
+            { mode: 'Annual', instalment: 105000, count: 2, total: 210000 },
+            { mode: 'Semester', instalment: 55000, count: 4, total: 220000 },
+          ],
+          extras: [
+            { label: 'Admission processing', amount: 1200 },
+            { label: 'Exam', amount: 800, per: 'per subject per attempt' },
+            { label: 'Project', amount: 800, per: 'per attempt' },
+          ],
+          source: 'Rishi, confirmed 2026-11-13, NMIMS CDOE MBA page', checkedOn: '2026-11-13',
+        },
+        {
+          // No route. Shown on the NMIMS MBA hub and review only.
+          id: 'wx', label: 'MBA (Working Executive)',
+          rows: [
+            { mode: 'Year-wise (Year 1 ₹2,50,000 + Year 2 ₹2,00,000)', total: 450000 },
+            { mode: 'One-time payment (optional)', total: 400000 },
+          ],
+          extras: [
+            { label: 'Admission processing', amount: 1500 },
+            { label: 'Re-exam', amount: 2500, per: 'per subject' },
+          ],
+          notes: ['₹20,000 of the programme fee is collected at registration.'],
+          source: 'Rishi, NMIMS CDOE WX fee page', checkedOn: '2026-11-13',
+        },
+      ],
+    },
     uniType: 'deemed',
     logo: '/logos/university_logos/nmims-online-logo.svg',
     name: 'NMIMS (Narsee Monjee Institute of Management Studies) Online',
@@ -2238,7 +2394,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 8167,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'Most generalist program – uniquely covers Entrepreneurship + Venture Capital, Org Theory & Design, SCM, IS for Managemen',
+    tagline: 'Most generalist program – uniquely covers Entrepreneurship + Venture Capital, Org Theory & Design, SCM',
     description: 'UGC DEB approved online programs from NMIMS (Narsee Monjee Institute of Management Studies). NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Graduates seeking a broad management MBA without committing to one domain', 'career switchers wanting flexibility'],
     notFor: ['Those needing deep domain-specific expertise from Day 1'],
@@ -2252,6 +2408,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
           { slug: 'information-technology-management', name: 'Information Technology Management' },
           { slug: 'marketing-management', name: 'Marketing Management' },
           { slug: 'operations-and-data-sciences-management', name: 'Operations and Data Sciences Management' },
+          // Confirmed by Rishi 2026-11-13 as the seventh NMIMS online MBA specialisation.
+          { slug: 'business-analytics', name: 'Business Analytics' },
         ],
         fees: '₹1.96L–₹2.20L',
         duration: '2 Years (4-year max validity)',
@@ -2300,10 +2458,13 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     state: 'Karnataka',
     region: 'South',
     nirf: 3,
-    nirfMgt: 39,
+    // NIRF Management #39 is T. A. Pai Management Institute's rank, a
+    // constituent school of MAHE, not MAHE Online's (NIRF_Constituent_Schools
+    // sheet of the UGC file). Moved out of nirfMgt 2026-11-13.
+    nirfConstituent: [{ category: 'Management', rank: 39, year: 2025, school: 'T. A. Pai Management Institute, Manipal', schoolShort: 'TAPMI' }],
     naac: 'A++',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #3 (University)', 'NIRF #39 (Management)', 'AICTE', 'WES Recognised'],
+    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #3 (University)', 'AICTE', 'WES Recognised'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -2327,7 +2488,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹5L – ₹18L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Manipal Academy of Higher Education, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Manipal Academy of Higher Education (MAHE), recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['Artificial Intelligence and Machine Learning', 'Cybersecurity', 'Data Science', 'General'],
@@ -2337,7 +2498,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Manipal Academy of Higher Education, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Manipal Academy of Higher Education (MAHE), recognised for corporate hiring.',
       },
       
       
@@ -2350,7 +2511,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'HDFC Bank', 'ICICI Bank', 'Axis Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Manipal Academy of Higher Education, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Manipal Academy of Higher Education (MAHE), recognised for corporate hiring.',
       },
       'B.Com': {
         specs: ['General Management'],
@@ -2360,7 +2521,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹15L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'HDFC Bank', 'ICICI Bank', 'Axis Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved B.Com from Manipal Academy of Higher Education, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved B.Com from Manipal Academy of Higher Education (MAHE), recognised for corporate hiring.',
       },
       'MSc': {
         specs: ['Biostatistics', 'Financial Economics', 'Data Science', 'Business Analytics'],
@@ -2374,7 +2535,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹8L – ₹30L per annum',
         topCompanies: ['Infosys', 'TCS', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'Amazon', 'Microsoft', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MSc from Manipal Academy of Higher Education, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MSc from Manipal Academy of Higher Education (MAHE), recognised for corporate hiring.',
       }
     },
     color: '#1B4FBE',
@@ -2404,9 +2565,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 3063,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'UGC Category-1 institution — one of highest autonomy status | Design Thinking & Innovation across multiple semesters (un',
+    tagline: 'UGC Category-1 institution: one of highest autonomy status',
     description: 'UGC DEB approved online programs from Koneru Lakshmaiah Education Foundation (KL University). NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['Finance professionals targeting investment analysis, financial services, corpora', 'NAAC A++ degree seekers'],
+    forWho: ['Finance professionals targeting investment analysis and financial services', 'NAAC A++ degree seekers'],
     notFor: ['Non-quantitative learners'],
     programs: ['MBA', 'MCA', 'BBA', 'BCA'],
     programDetails: {
@@ -2427,7 +2588,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Koneru Lakshmaiah Education Foundation, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Koneru Lakshmaiah Education Foundation (KL University), recognised for corporate hiring.',
       },
       
       
@@ -2605,8 +2766,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'NAAC A+ accredited · UGC DEB approved online programs',
-    description: 'UGC DEB approved online programs from Visvesvaraya Technological University (VTU). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
+    tagline: 'NAAC B+ accredited · UGC DEB approved online programs',
+    description: 'UGC DEB approved online programs from Visvesvaraya Technological University (VTU). NAAC B+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
     programs: ['MBA', 'MCA', 'BBA', 'BCA'],
@@ -2869,8 +3030,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'NAAC A++ accredited · UGC DEB approved online programs',
-    description: 'UGC DEB approved online programs from Karnataka State Open University (KSOU). NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
+    tagline: 'NAAC A+ accredited · UGC DEB approved online programs',
+    description: 'UGC DEB approved online programs from Karnataka State Open University (KSOU). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
     programs: ['MBA', 'B.Com', 'BA', 'BBA', 'BCA', 'MA', 'M.Com', 'MCA'],
@@ -2938,7 +3099,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       }
     },
     color: '#1B4FBE',
-  rankingBadge: 'NAAC A++ accredited',
+  rankingBadge: 'NAAC A+ accredited',
   enrollments: 500,
   },
   {
@@ -3096,7 +3257,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Guru Ghasidas Vishwavidyalaya, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Guru Ghasidas Vishwavidyalaya (GGU), recognised for corporate hiring.',
       },
       
       
@@ -3749,7 +3910,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'Minor in AI in Business (GenAI for Finance) in every MBA; EY DS track available as upgrade; 500+ recruiters incl. Google',
+    tagline: 'Minor in AI in Business (GenAI for Finance) in every MBA; EY DS track available as upgrade',
     description: 'UGC DEB approved online programs from GLS University. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Finance professionals targeting senior roles', 'BFSI aspirants', 'CFA/CFP study'],
     notFor: ['Non-quantitative learners', 'Campus experience seekers'],
@@ -3852,7 +4013,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Maharishi Markandeshwar, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Maharishi Markandeshwar (Deemed to be University), recognised for corporate hiring.',
       },
       
       
@@ -3921,8 +4082,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'NAAC A accredited · UGC DEB approved online programs',
-    description: 'UGC DEB approved online programs from Mizoram University (MZU). NAAC A accredited. Valid for corporate hiring and higher education across India.',
+    tagline: 'NAAC A+ accredited · UGC DEB approved online programs',
+    description: 'UGC DEB approved online programs from Mizoram University (MZU). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
     programs: ['MBA', 'MA'],
@@ -4245,7 +4406,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'NAAC A++ government state university MBA at just ₹62,200 total — one of the cheapest NAAC A++ MBAs in India | Establishe',
+    tagline: 'NAAC A++ government state university MBA at just ₹62,200 total',
     description: 'UGC DEB approved online programs from Andhra University. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals targeting marketing, brand, CRM careers', 'PSU aspirants (GMR, LIC placements)'],
     notFor: ['Deep tech seekers', 'Pure finance aspirants'],
@@ -4298,7 +4459,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'Minor in AI in Business (GenAI for Finance) in every MBA; EY DS track available as upgrade; 500+ recruiters incl. Google',
+    tagline: 'Minor in AI in Business (GenAI for Finance) in every MBA; EY DS track available as upgrade',
     description: 'UGC DEB approved online programs from SGT University. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Finance professionals targeting senior roles', 'BFSI aspirants', 'CFA/CFP study'],
     notFor: ['Non-quantitative learners', 'Campus experience seekers'],
@@ -4415,8 +4576,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'NAAC A accredited · UGC DEB approved online programs',
-    description: 'UGC DEB approved online programs from Mahatma Gandhi University. NAAC A accredited. Valid for corporate hiring and higher education across India.',
+    tagline: 'NAAC A++ accredited · UGC DEB approved online programs',
+    description: 'UGC DEB approved online programs from Mahatma Gandhi University. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
     programs: ['MBA'],
@@ -4481,7 +4642,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Vellore Institute of Science and Te, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Vellore Institute of Technology (VIT), recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['Artificial Intelligence and Machine Learning', 'Cybersecurity', 'Data Science', 'Internet of Things (IoT)', 'Full Stack Development', 'Cloud Computing', 'Blockchain Technology', 'Data Analytics', 'Software Engineering', 'Game Development', 'General'],
@@ -4491,7 +4652,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Vellore Institute of Technology, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Vellore Institute of Technology (VIT), recognised for corporate hiring.',
       },
       
       
@@ -4571,9 +4732,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 4250,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'Rural and Agri-Business Marketing (unique Marketing spec) | Private Equity & Wealth Management + Financial Engineering +',
+    tagline: 'Rural and Agri-Business Marketing (unique Marketing spec) | Private Equity & Wealth Management',
     description: 'UGC DEB approved online programs from Kurukshetra University. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['Students wanting NAAC A++ Central University MBA with Rural & Agri-Business Mark'],
+    forWho: ['Students wanting a NAAC A++ MBA with Rural & Agri-Business Marketing'],
     notFor: ['Students wanting campus life', 'Deep tech seekers'],
     programs: ['MBA', 'MCA', 'BBA', 'B.Com', 'M.Com'],
     programDetails: {
@@ -4656,9 +4817,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'Phygital Retailing (unique subject — no other MBA has this term) | Startup Marketing in Sem 4 | Master Class series by s',
+    tagline: 'Phygital Retailing (unique subject: no other MBA has this term) | Startup Marketing in Sem 4',
     description: 'UGC DEB approved online programs from SASTRA Deemed University. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['Marketing aspirants targeting Phygital Retailing, Startup Marketing, Digital Soc'],
+    forWho: ['Marketing aspirants targeting Phygital Retailing and Startup Marketing'],
     notFor: ['Deep finance/tech seekers'],
     programs: ['MBA'],
     programFees: { mba: { fee: 180000 } },
@@ -4698,7 +4859,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 7892,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'PMI/PMBOK-aligned curriculum + PwC Data module from NAAC A++ university; growing demand for certified project managers i',
+    tagline: 'PMI/PMBOK-aligned curriculum + PwC Data module from NAAC A++ university',
     description: 'UGC DEB approved online programs from Dr. D.Y. Patil Vidyapeeth, Pune – Centre for Online Learning (DPU-COL). NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals targeting project management roles', 'engineers wanting PMP-aligned MBA', 'IT professionals managing projects'],
     notFor: ['Those wanting fully on-campus experience', 'students not meeting 50% UG marks', 'those requiring entrance exam pathway'],
@@ -4713,7 +4874,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹5L – ₹18L per annum',
         topCompanies: ['ITC', 'HDFC Bank', 'Capgemini', 'Infosys', 'TCS', 'Wipro', 'Accenture', 'IBM', 'HCL', 'Cognizant'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Dr. D.Y. Patil Vidyapeeth, Pune – C, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Dr. D.Y. Patil Vidyapeeth, Pune, recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['General', 'Artificial Intelligence & Machine Learning', 'Blockchain Technology', 'Business Analytics', 'Digital Marketing Management', 'FinTech Management'],
@@ -4793,8 +4954,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'NAAC A++ accredited · UGC DEB approved online programs',
-    description: 'UGC DEB approved online programs from Christ (Deemed to be University) Online. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
+    tagline: 'NAAC A+ accredited · UGC DEB approved online programs',
+    description: 'UGC DEB approved online programs from Christ (Deemed to be University) Online. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
     programs: ['MCA', 'B.Com', 'BBA'],
@@ -4872,7 +5033,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Shobhit Institute of Engineering &, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Shobhit Institute of Engineering & Technology, recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['Cloud Computing', 'AI & Machine Learning', 'Full Stack Development', 'Cyber Security', 'Data Science'],
@@ -4895,7 +5056,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Shobhit Institute of Engineering &, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Shobhit Institute of Engineering & Technology, recognised for corporate hiring.',
       },
       'BCA': {
         specs: ['General Management'],
@@ -4905,7 +5066,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BCA from Shobhit Institute of Engineering &, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BCA from Shobhit Institute of Engineering & Technology, recognised for corporate hiring.',
       }
     },
     color: '#0891B2',
@@ -4918,9 +5079,21 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // exam plus ₹1,000 registration and ₹1,000 admission), ₹10,000 off for a
     // one-shot full payment, so ₹1,68,000 paid in full.
     officialUrl: 'https://bharatividyapeethonline.com',
-    feeVerifiedOn: '2026-08-08',
+    // Same figures re-confirmed by Rishi 2026-11-13.
+    feeVerifiedOn: '2026-11-13',
     programFees: { mba: { fee: 168000, feeMax: 178000 } },
-    feeBreakdown: { mba: { list: 178000, listLabel: 'total', net: { min: 168000, max: 168000, label: 'paid in full upfront' }, source: 'Rishi, verified 2026-08-08' } },
+    feeBreakdown: { mba: { list: 178000, listLabel: 'total', net: { min: 168000, max: 168000, label: 'paid in full upfront' }, source: 'Rishi, confirmed 2026-11-13' } },
+    feePlans: {
+      mba: [{
+        id: 'standard', label: 'Online MBA',
+        rows: [
+          { mode: 'Standard (₹1,76,000 + ₹2,000)', total: 178000 },
+          { mode: 'One-time payment (₹1,66,000 + ₹2,000)', total: 168000 },
+        ],
+        extras: [{ label: 'Registration and admission (included in the totals above)', amount: 2000 }],
+        source: 'Rishi, confirmed 2026-11-13', checkedOn: '2026-11-13',
+      }],
+    },
     logo: '/logos/university_logos/bvdu-logo.svg',
     name: 'Bharati Vidyapeeth (Deemed to be University) Online',
     abbr: 'BVUO',
@@ -4939,9 +5112,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 5375,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: '14 MBA specialisation groups — unique niche tracks: Sports Management, Agribusiness, Event Management, Infrastructure Ma',
-    description: 'UGC DEB approved online programs from Bharati Vidyapeeth (Deemed to be University). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['Students wanting a wide dual-spec MBA with niche tracks like Sports, Agribusines'],
+    tagline: '14 MBA specialisation groups with niche tracks: Sports Management, Agribusiness, Event Management',
+    description: 'UGC DEB approved online programs from Bharati Vidyapeeth (Deemed to be University). NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
+    forWho: ['Students wanting a wide dual-spec MBA with niche tracks like Sports and Agribusiness'],
     notFor: ['Students wanting a single focused specialisation', 'Pure campus seekers'],
     programs: ['MBA', 'MCA', 'BBA', 'BCA'],
     programDetails: {
@@ -4971,7 +5144,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Bharati Vidyapeeth, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Bharati Vidyapeeth (Deemed to be University), recognised for corporate hiring.',
       },
       
       
@@ -5026,10 +5199,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'Startup Management as dedicated subject in Sem 3 core (very rare) | Computer Applications in Business in Sem 4 | Busines',
+    tagline: 'Startup Management as dedicated subject in Sem 3 core (very rare)',
     description: 'UGC DEB approved online programs from Assam Don Bosco University. NAAC A accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['Working professionals, entrepreneurs, graduates seeking flexible leadership trai'],
-    notFor: ['Students seeking purely academic/theoretical research without industrial applica'],
+    forWho: ['Working professionals, entrepreneurs and graduates seeking flexible leadership training'],
+    notFor: ['Students seeking purely academic or theoretical research without industrial applications'],
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'MA'],
     programDetails: {
       'MBA': {
@@ -5098,9 +5271,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: '₹80,000 total — extremely affordable NAAC A++ UGC Category-1 dual-spec MBA | Dual specialisation model (any 2 from Marke',
+    tagline: '₹80,000 total: extremely affordable NAAC A++ UGC Category-1 dual-spec MBA | Dual specialisation model',
     description: 'UGC DEB approved online programs from University of Lucknow. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['MBA aspirants wanting NAAC A++ Central University affordable dual-spec MBA from'],
+    forWho: ['MBA aspirants wanting an affordable NAAC A++ dual-spec MBA'],
     notFor: ['Students wanting niche specialisations beyond Marketing/Finance/HR'],
     programs: ['MBA', 'BBA', 'B.Com', 'M.Com'],
     programDetails: {
@@ -5188,7 +5361,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from JSS Academy of Higher Education & R, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from JSS Academy of Higher Education & Research (JSS AHER), recognised for corporate hiring.',
       },
       'BBA': {
         specs: ['Hospital and Health System Management'],
@@ -5198,7 +5371,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from JSS Academy of Higher Education & R, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from JSS Academy of Higher Education & Research (JSS AHER), recognised for corporate hiring.',
       }
     },
     color: '#1B4FBE',
@@ -5301,8 +5474,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'NAAC A accredited · UGC DEB approved online programs',
-    description: 'UGC DEB approved online programs from Desh Bhagat University (DBU Online). NAAC A accredited. Valid for corporate hiring and higher education across India.',
+    tagline: 'NAAC A+ accredited · UGC DEB approved online programs',
+    description: 'UGC DEB approved online programs from Desh Bhagat University (DBU Online). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
     programs: ['MBA', 'MCA', 'BBA', 'B.Com'],
@@ -5497,7 +5670,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'Dual Degree option simultaneously (one Degree + one Certificate/Diploma, max 40 credits/sem) | ₹55,600 total — one of mo',
+    tagline: 'Dual Degree option simultaneously (one Degree + one Certificate/Diploma, max 40 credits/sem) | ₹55,600 total',
     description: 'UGC DEB approved online programs from Guru Nanak Dev University – ODL (gndu.ac.in). NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['MBA aspirants wanting affordable NAAC A++ Central University degree from Punjab'],
     notFor: ['Students wanting highly specialised tracks'],
@@ -5554,9 +5727,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     region: 'North',
     nirf: 999,
     nirfEng: 83,
-    naac: 'A+',
+    naac: 'A', // A per UGC file; no official NAAC page found 2026-11-13; recheck on naac.gov.in
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A+', 'AICTE', 'WES Recognised'],
+    approvals: ['UGC DEB', 'NAAC A', 'AICTE', 'WES Recognised'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -5565,7 +5738,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 7292,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'Professional Ethics as standalone subject (Sem 3) | Quantitative Methods for Business + MIS in Sem 1-2 core (JIIT tech D',
+    tagline: 'Professional Ethics as standalone subject (Sem 3) | Quantitative Methods for Business + MIS in Sem 1-2 core',
     description: 'UGC DEB approved online programs from Jaypee Institute of Information Technology. NAAC A accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Marketing professionals at NAAC A tech-focused institution', 'MIS + Quantitative Methods + Digital Marketing seekers'],
     notFor: ['Deep finance/analytics seekers'],
@@ -5579,7 +5752,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹5L – ₹12L per annum',
         topCompanies: ['JIIT placement partners', 'Industry MNCs'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Jaypee Institute of Information Tec, recognised for corporate hiring.'},
+        careerOutcome: 'UGC DEB approved MBA from Jaypee Institute of Information Technology, recognised for corporate hiring.'},
       'BBA': {
         specs: ['General Management'],
         fees: '₹1,39,000',
@@ -5588,7 +5761,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹3L – ₹7L per annum',
         topCompanies: ['JIIT placement partners'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BBA from Jaypee Institute of Information Tec, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BBA from Jaypee Institute of Information Technology, recognised for corporate hiring.',
       }
     },
     color: '#0891B2',
@@ -5638,7 +5811,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹14L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MCA from Savitribai Phule Pune University, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MCA from Savitribai Phule Pune University (SPPU), recognised for corporate hiring.',
       },
       
       
@@ -5879,8 +6052,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'NAAC A accredited · UGC DEB approved online programs',
-    description: 'UGC DEB approved online programs from Vels Institute of Science, Technology & Advanced. NAAC A accredited. Valid for corporate hiring and higher education across India.',
+    tagline: 'NAAC A++ accredited · UGC DEB approved online programs',
+    description: 'UGC DEB approved online programs from Vels Institute of Science, Technology & Advanced. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
     programs: ['MBA', 'BBA'],
@@ -5982,7 +6155,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 3688,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'Agri Business specialisation (very rare in online MBA) | BMW Management & Environmental Health in Healthcare track (uniq',
+    tagline: 'Agri Business specialisation (very rare in online MBA)',
     description: 'UGC DEB approved online programs from Noida International University. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['MBA aspirants wanting Dual Specialisation across diverse domains including rare'],
     notFor: ['Students wanting a single-focus specialisation program'],
@@ -6023,7 +6196,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       }
     },
     color: '#0891B2',
-  rankingBadge: 'NAAC A accredited',
+  rankingBadge: 'NAAC A+ accredited',
   enrollments: 500,
   },
   {
@@ -6143,7 +6316,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Birla Institute of Technology (BIT), recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Birla Institute of Technology (BIT) Mesra, recognised for corporate hiring.',
       },
     },
     color: '#0891B2',
@@ -6223,7 +6396,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Datta Meghe Institute of Higher Edu, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Datta Meghe Institute of Higher Education & Research, recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['General'],
@@ -6277,7 +6450,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved MBA from Centurion University of Technology, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved MBA from Centurion University of Technology and Management, recognised for corporate hiring.',
       },
       'MCA': {
         specs: ['General'],
@@ -6313,8 +6486,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'NAAC A accredited · UGC DEB approved online programs',
-    description: 'UGC DEB approved online programs from Guru Kashi University (GKU Online). NAAC A accredited. Valid for corporate hiring and higher education across India.',
+    tagline: 'NAAC A++ accredited · UGC DEB approved online programs',
+    description: 'UGC DEB approved online programs from Guru Kashi University (GKU Online). NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
     programs: ['MCA'],
@@ -6670,8 +6843,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'NAAC A accredited · UGC DEB approved online programs',
-    description: 'UGC DEB approved online programs from Alagappa University. NAAC A accredited. Valid for corporate hiring and higher education across India.',
+    tagline: 'NAAC A++ accredited · UGC DEB approved online programs',
+    description: 'UGC DEB approved online programs from Alagappa University. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Working professionals seeking management qualification', 'Graduates targeting corporate careers'],
     notFor: ['Those needing on-campus experience', 'Students below minimum eligibility marks'],
     programs: ['B.Com'],
@@ -6760,7 +6933,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         avgSalary: '₹4L – ₹12L per annum',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
         internshipType: 'Industry project and virtual internship',
-        careerOutcome: 'UGC DEB approved BSc from Sri Ramachandra Institute of Higher, recognised for corporate hiring.',
+        careerOutcome: 'UGC DEB approved BSc from Sri Ramachandra Institute of Higher Education and Research, recognised for corporate hiring.',
       }
     },
     color: '#1B4FBE',
@@ -6869,7 +7042,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibilityPct: 50,
     tagline: 'NAAC A+ accredited · UGC DEB approved online programs',
     description: 'UGC DEB approved online programs from GLA University (GLA Online). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['Working professionals or graduates wanting domain flexibility with 19 choices in'],
+    forWho: ['Working professionals or graduates wanting domain flexibility'],
     notFor: ['Those who want a very deep niche curriculum', 'prefer breadth over depth'],
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com'],
     programDetails: {
@@ -7064,7 +7237,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibilityPct: 50,
     tagline: 'First NAAC A-Grade State Private University in Bihar AND Jharkhand | Generative AI for Online Learners in Sem 1 core',
     description: 'UGC DEB approved online programs from ARKA JAIN University – JGI Online (arkajain.edu.in). NAAC A accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['Industry professionals, working class, business executives, academicians, entrep'],
+    forWho: ['Industry professionals, business executives, academicians and entrepreneurs'],
     notFor: ['Students seeking high-intensity research environment without flexibility'],
     programs: ['MBA'],
     programDetails: {
@@ -7381,7 +7554,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Goa university with online programs',
-    description: 'BITS Pilani Work Integrated Learning Programmes (WILP) offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
+    description: 'BITS Pilani Work Integrated Learning Programmes (WILP) offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in India and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     qsRank: 40,
@@ -7608,7 +7781,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Tamil Nadu university with online programs',
-    description: 'Madurai Kamaraj University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
+    description: 'Madurai Kamaraj University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Chennai and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['BA', 'B.Com', 'BBA', 'MA', 'M.Com', 'BCA', 'MBA', 'MCA'],
@@ -7728,7 +7901,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Jammu & Kashmir university with online programs',
-    description: 'University of Jammu offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
+    description: 'University of Jammu offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in India and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['MA', 'M.Com'],
@@ -7980,7 +8153,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Karnataka university with online programs',
-    description: 'Bangalore University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
+    description: 'Bangalore University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Bengaluru and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['B.Com', 'MA', 'M.Com'],
@@ -8029,9 +8202,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     region: 'South',
     nirf: 999,
     nirfEng: 38,
-    naac: 'A++',
+    naac: 'A+', // NAAC A+ (CGPA 3.37, valid to 20 Dec 2026), checked 2026-11-13. Was A++.
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A++', 'AICTE'],
+    approvals: ['UGC DEB', 'NAAC A+', 'AICTE'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
@@ -8041,7 +8214,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Telangana university with online programs',
-    description: 'International Institute of Information Technology Hyderabad offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
+    description: 'International Institute of Information Technology Hyderabad offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Hyderabad and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['MBA'],
@@ -8259,7 +8432,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Uttar Pradesh university with online programs',
-    description: 'Chhatrapati Shahu Ji Maharaj University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC B++ accredited.',
+    description: 'Chhatrapati Shahu Ji Maharaj University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Lucknow and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['B.Com', 'BBA', 'BCA', 'M.Com', 'MBA', 'MCA'],
@@ -8329,7 +8502,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
     },
     color: '#0e7490',
-  rankingBadge: 'NAAC B++ accredited',
+  rankingBadge: 'NAAC A++ accredited',
   enrollments: 500,
   },
   {
@@ -8360,7 +8533,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Uttar Pradesh university with online programs',
-    description: 'Deen Dayal Upadhyaya Gorakhpur University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
+    description: 'Deen Dayal Upadhyaya Gorakhpur University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Lucknow and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['B.Com', 'BBA', 'MA', 'M.Com', 'MBA', 'MSc'],
@@ -8467,7 +8640,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Haryana university with online programs',
-    description: 'Guru Jambheshwar University of Science and Technology offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
+    description: 'Guru Jambheshwar University of Science and Technology offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Rohtak and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['B.Com', 'MA', 'M.Com', 'MBA'],
@@ -8596,7 +8769,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Uttar Pradesh university with online programs',
-    description: 'Mahatma Jyotiba Phule Rohilkhand University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
+    description: 'Mahatma Jyotiba Phule Rohilkhand University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Lucknow and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['BA', 'MA', 'M.Com'],
@@ -8669,7 +8842,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Chhattisgarh university with online programs',
-    description: 'MATS University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
+    description: 'MATS University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Raipur and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['B.Com', 'BBA', 'BCA', 'MBA', 'MCA'],
@@ -8729,7 +8902,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
     },
     color: '#b45309',
-  rankingBadge: 'NAAC A accredited',
+  rankingBadge: 'NAAC A+ accredited',
   enrollments: 500,
   },
   {
@@ -8914,7 +9087,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     eligibility: '50% in graduation',
     eligibilityPct: 50,
     tagline: 'Madhya Pradesh university with online programs',
-    description: 'SAGE University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A accredited.',
+    description: 'SAGE University offers UGC DEB approved online programs recognised for government jobs and corporate hiring across India. NAAC A+ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in Bhopal and nearby cities', 'Those targeting government jobs needing a UGC DEB approved degree'],
     notFor: ['Students needing premium B-school brand', 'Those needing IIM-level placement support'],
     programs: ['BBA', 'BCA', 'MA', 'M.Com', 'MBA'],
@@ -8972,7 +9145,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
     },
     color: '#0f766e',
-  rankingBadge: 'NAAC A accredited',
+  rankingBadge: 'NAAC A+ accredited',
   enrollments: 500,
   },
   {

@@ -552,6 +552,26 @@ function getAcceptableIntervals(u, program) {
   // Placeholder for feeVariants (schema not yet implemented — see
   // audits/fee-model-proposal-2026-08-07.md). When added, each variant
   // becomes an interval with tolerance ±2%.
+  // Verified fee tracks (2026-11-13). A university can price one programme in
+  // tiers: Amity's standard MBA is ₹2,07,000 to ₹2,25,200 and its premium
+  // tracks ₹3,02,680 to ₹3,29,200, so the hub range widened to ₹3,29,200 and
+  // every correct "₹2,07,000 to ₹2,25,000" in the blog stopped matching. Each
+  // track is its own interval, and each figure in it is accepted on its own.
+  const key = program.toLowerCase().replace(/\./g, '')
+  for (const plan of u.feePlans?.[key] ?? []) {
+    const amts = [...plan.rows.map(r => r.total), ...(plan.list ? [plan.list] : [])]
+    intervals.push({ min: Math.min(...amts), max: Math.max(...amts), source: `feePlans:${plan.id}` })
+    for (const r of plan.rows) {
+      intervals.push({ min: r.total, max: r.total, source: `feePlans:${plan.id}:${r.mode}` })
+      if (r.instalment) intervals.push({ min: r.instalment, max: r.instalment, source: `feePlans:${plan.id}:${r.mode}:instalment` })
+    }
+  }
+  const bd = u.feeBreakdown?.[key]
+  if (bd) {
+    const amts = [bd.list, ...(bd.modes ?? []).map(m => m.amount), ...(bd.net ? [bd.net.min, bd.net.max] : [])]
+    for (const a of amts) intervals.push({ min: a, max: a, source: 'feeBreakdown' })
+    intervals.push({ min: Math.min(...amts), max: Math.max(...amts), source: 'feeBreakdown-span' })
+  }
   const variants = pd?.feeVariants
   if (Array.isArray(variants)) {
     for (const v of variants) {

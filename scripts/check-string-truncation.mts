@@ -34,6 +34,13 @@
 //   R3 stub ending. The value ends, with no closing punctuation, on a token of
 //      one or two letters. Catches "...Business Analytics & A".
 //
+//   R5 import limit. The importer cut forWho/notFor items at 80 characters and
+//      taglines at 120. A value of exactly that length that ends on a letter or
+//      digit was cut, whatever the word looks like: "...19 choices in" (Amity)
+//      and "...students wanting high-tec" (SSODL) both slipped past R1-R4 until
+//      2026-11-13 because forWho was not scanned at all. A value that is
+//      complete at exactly the limit goes in the allowlist with that reason.
+//
 //   R4 unbalanced bracket. An opening bracket with no closing one means the cut
 //      landed inside a parenthetical. Catches "UGC DEB approved MBA from SGT
 //      University (Centre for Distance", then a dash, then "recognised for
@@ -79,6 +86,11 @@ const CHECKED_KEYS = new Set([
   'rankingBadge',
 ])
 
+// Array-of-string fields that render as bullet lists on the university page.
+const CHECKED_ARRAY_KEYS = new Set(['forWho', 'notFor'])
+// Hard cut lengths of the original importer, per key (R5).
+const IMPORT_LIMIT: Record<string, number> = { tagline: 120, forWho: 80, notFor: 80 }
+
 const DANGLING = new Set([
   'and', 'of', 'the', 'a', 'an', 'for', 'with', 'to', 'from',
   'at', 'in', 'on', 'or', 'by', 'as', 'its', 'their',
@@ -106,11 +118,26 @@ function allStrings(blk: string): { key: string; value: string }[] {
     if (!CHECKED_KEYS.has(x[1])) continue
     out.push({ key: x[1], value: x[2].slice(1, -1) })
   }
+  const arr = /(\w+)\s*:\s*\[([^\]]*)\]/g
+  while ((x = arr.exec(blk))) {
+    if (!CHECKED_ARRAY_KEYS.has(x[1])) continue
+    const item = /'(?:[^'\\]|\\.)*'|"(?:[^"\\]|\\.)*"/g
+    let y: RegExpExecArray | null
+    while ((y = item.exec(x[2]))) out.push({ key: x[1], value: y[0].slice(1, -1) })
+  }
   return out
 }
 
-function inspect(value: string, nameWords: string[]): { rule: string; detail: string } | null {
+// Length as rendered: a source escape such as \' is one character on the page.
+const renderedLength = (v: string) => v.replace(/\\(.)/g, '$1').length
+
+function inspect(value: string, nameWords: string[], key = ''): { rule: string; detail: string } | null {
   if (value.length < 20) return null
+
+  const limit = IMPORT_LIMIT[key]
+  if (limit && renderedLength(value) === limit && /[A-Za-z0-9]$/.test(value)) {
+    return { rule: 'R5', detail: `exactly ${limit} characters and ends on a letter, the importer's cut length for .${key}` }
+  }
 
   for (const m of value.matchAll(TERMINATED)) {
     if (m[1] === '.') continue                       // dotted token: deb.ugc.ac.in
@@ -160,7 +187,7 @@ for (let i = 0; i < marks.length; i++) {
     const fingerprint = s.key + '::' + s.value
     if (seen.has(fingerprint)) continue
     seen.add(fingerprint)
-    const hit = inspect(s.value, nameWords)
+    const hit = inspect(s.value, nameWords, s.key)
     if (hit) findings.push({ id: marks[i].id, key: s.key, value: s.value, ...hit })
   }
 }

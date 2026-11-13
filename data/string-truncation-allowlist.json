@@ -1,19 +1,7 @@
 {
   "note": "Strings that scripts/check-string-truncation.mts correctly identifies as truncated, but which cannot be repaired from the record. Every entry is live text awaiting an editorial rewrite. This is a to-do list, not a set of exceptions: remove an entry as soon as the string is fixed, and the gate reports entries that no longer match so they do not linger. Non-ASCII characters are written as \\uXXXX escapes on purpose, because several of these taglines contain an em dash and check-em-dash scans staged lines for the literal character. JSON.parse restores them exactly, so matching is unaffected. Do not replace the escapes with literal characters.",
-  "updatedAt": "2026-10-03",
+  "updatedAt": "2026-11-13",
   "entries": [
-    {
-      "id": "jain-university-online",
-      "key": "tagline",
-      "value": "Rare dual HR+Finance MBA; Employee Negotiation Skills as dedicated subject; Gen AI in Sem 1 core; Business Analytics & A",
-      "reason": "Tagline cut by the 120-character import limit. The text is editorial, so the missing half cannot be reconstructed from the record, only invented. Raised with Rishi 2026-10-02 to be rewritten or shortened to a complete clause."
-    },
-    {
-      "id": "amity-university-online",
-      "key": "tagline",
-      "value": "ONLY QS-ranked online MBA in India offering 19 specialisations \u2013 highest count nationally; WASC (USA) + WES (Canada) + Q",
-      "reason": "Tagline cut by the 120-character import limit. The text is editorial, so the missing half cannot be reconstructed from the record, only invented. Raised with Rishi 2026-10-02 to be rewritten or shortened to a complete clause. SEPARATE ISSUE: this tagline also claims \"ONLY QS-ranked online MBA in India\", which lib/data.ts contradicts, since 36 universities carry a qsRank. The superlative needs removing whoever rewrites it."
-    },
     {
       "id": "dy-patil-university-online",
       "key": "tagline",
@@ -33,70 +21,28 @@
       "reason": "Tagline cut by the 120-character import limit. The text is editorial, so the missing half cannot be reconstructed from the record, only invented. Raised with Rishi 2026-10-02 to be rewritten or shortened to a complete clause."
     },
     {
-      "id": "nmims-online",
-      "key": "tagline",
-      "value": "Most generalist program \u2013 uniquely covers Entrepreneurship + Venture Capital, Org Theory & Design, SCM, IS for Managemen",
-      "reason": "Tagline cut by the 120-character import limit. The text is editorial, so the missing half cannot be reconstructed from the record, only invented. Raised with Rishi 2026-10-02 to be rewritten or shortened to a complete clause."
-    },
-    {
-      "id": "sastra-university-online",
-      "key": "tagline",
-      "value": "Phygital Retailing (unique subject \u2014 no other MBA has this term) | Startup Marketing in Sem 4 | Master Class series by s",
-      "reason": "Tagline cut by the 120-character import limit. The text is editorial, so the missing half cannot be reconstructed from the record, only invented. Raised with Rishi 2026-10-02 to be rewritten or shortened to a complete clause."
-    },
-    {
-      "id": "dr-dy-patil-vidyapeeth-online",
-      "key": "tagline",
-      "value": "PMI/PMBOK-aligned curriculum + PwC Data module from NAAC A++ university; growing demand for certified project managers i",
-      "reason": "Tagline cut by the 120-character import limit. The text is editorial, so the missing half cannot be reconstructed from the record, only invented. Raised with Rishi 2026-10-02 to be rewritten or shortened to a complete clause."
-    },
-    {
-      "id": "bharati-vidyapeeth-university-online",
-      "key": "tagline",
-      "value": "14 MBA specialisation groups \u2014 unique niche tracks: Sports Management, Agribusiness, Event Management, Infrastructure Ma",
-      "reason": "Tagline cut by the 120-character import limit. The text is editorial, so the missing half cannot be reconstructed from the record, only invented. Raised with Rishi 2026-10-02 to be rewritten or shortened to a complete clause."
-    },
-    {
-      "id": "guru-nanak-dev-university-online",
-      "key": "tagline",
-      "value": "Dual Degree option simultaneously (one Degree + one Certificate/Diploma, max 40 credits/sem) | \u20b955,600 total \u2014 one of mo",
-      "reason": "Tagline cut by the 120-character import limit. The text is editorial, so the missing half cannot be reconstructed from the record, only invented. Raised with Rishi 2026-10-02 to be rewritten or shortened to a complete clause."
-    },
-    {
-      "id": "jaypee-university-online",
-      "key": "tagline",
-      "value": "Professional Ethics as standalone subject (Sem 3) | Quantitative Methods for Business + MIS in Sem 1-2 core (JIIT tech D",
-      "reason": "Tagline cut by the 120-character import limit. The text is editorial, so the missing half cannot be reconstructed from the record, only invented. Raised with Rishi 2026-10-02 to be rewritten or shortened to a complete clause."
-    },
-    {
-      "id": "symbiosis-university-online",
-      "key": "tagline",
-      "value": "AI and ML for Business Management + R Programming + Design Thinking + Digital Marketing all in CORE Sem 1-2 curriculum (",
-      "reason": "Tagline cut by the 120-character import limit. The text is editorial, so the missing half cannot be reconstructed from the record, only invented. Raised with Rishi 2026-10-02 to be rewritten or shortened to a complete clause."
-    },
-    {
-      "id": "kl-university-online",
-      "key": "tagline",
-      "value": "UGC Category-1 institution \u2014 one of highest autonomy status | Design Thinking & Innovation across multiple semesters (un",
-      "reason": "Tagline cut by the 120-character import limit. The text is editorial, so the missing half cannot be reconstructed from the record, only invented. Raised with Rishi 2026-10-02 to be rewritten or shortened to a complete clause."
-    },
-    {
       "id": "chandigarh-university-online",
       "key": "tagline",
       "value": "India\\'s ONLY online MBA with Triple Industry Certification \u2014 PwC India (2 subjects co-taught + PwC certificates), PMI (",
       "reason": "Tagline cut by the 120-character import limit. The text is editorial, so the missing half cannot be reconstructed from the record, only invented. Raised with Rishi 2026-10-02 to be rewritten or shortened to a complete clause. SEPARATE ISSUE: this tagline also claims \"India's ONLY online MBA with Triple Industry Certification\". Nothing in lib/data.ts supports an exclusivity claim of that shape, so it needs evidence or removal when the line is rewritten."
     },
     {
-      "id": "university-of-lucknow-online",
+      "id": "ignou-online",
       "key": "tagline",
-      "value": "\u20b980,000 total \u2014 extremely affordable NAAC A++ UGC Category-1 dual-spec MBA | Dual specialisation model (any 2 from Marke",
-      "reason": "Tagline cut by the 120-character import limit. The text is editorial, so the missing half cannot be reconstructed from the record, only invented. Raised with Rishi 2026-10-02 to be rewritten or shortened to a complete clause."
+      "value": "Central government open university; most affordable online degrees in India; valid for all govt jobs and PSU recruitment",
+      "reason": "R5 false positive: a complete sentence that happens to be exactly 120 characters. Checked 2026-11-13."
     },
     {
-      "id": "noida-international-university-online",
-      "key": "tagline",
-      "value": "Agri Business specialisation (very rare in online MBA) | BMW Management & Environmental Health in Healthcare track (uniq",
-      "reason": "Tagline cut by the 120-character import limit. The text is editorial, so the missing half cannot be reconstructed from the record, only invented. Raised with Rishi 2026-10-02 to be rewritten or shortened to a complete clause."
+      "id": "silver-oak-university-online",
+      "key": "forWho",
+      "value": "Applicants in Gujarat who want a wide choice of degree types from one university",
+      "reason": "R5 false positive: a complete clause that happens to be exactly 80 characters. Checked 2026-11-13."
+    },
+    {
+      "id": "university-of-lucknow-online",
+      "key": "notFor",
+      "value": "Students wanting niche specialisations beyond Marketing/Finance/HR",
+      "reason": "R3 false positive: ends on the acronym HR, a complete word. Checked 2026-11-13."
     }
   ]
 }

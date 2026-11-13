@@ -34,12 +34,10 @@
 
 ## Universities with a current verified NAAC grade
 > Ordered by NIRF Management rank where one is on record. A university absent from this list is still covered on the site; it simply has no current verified grade to quote.
-- Symbiosis School for Online and Digital Learning (SSODL), Pune Online (NAAC A++, NIRF Management #11): https://edifyedu.in/universities/symbiosis-university-online
 - NMIMS (Narsee Monjee Institute of Management Studies) Online (NAAC A++, NIRF Management #24): https://edifyedu.in/universities/nmims-online
 - Amrita Vishwa Vidyapeetham Online (NAAC A++, NIRF Management #26): https://edifyedu.in/universities/amrita-vishwa-vidyapeetham-online
 - Jamia Millia Islamia (JMI) Online (NAAC A++, NIRF Management #28): https://edifyedu.in/universities/jamia-millia-islamia-online
 - University of Petroleum & Energy Studies (UPES) Online (NAAC A, NIRF Management #36): https://edifyedu.in/universities/upes-online
-- Manipal Academy of Higher Education (MAHE) Online (NAAC A++, NIRF Management #39): https://edifyedu.in/universities/manipal-academy-higher-education-online
 - Lovely Professional University Online (NAAC A++, NIRF Management #44): https://edifyedu.in/universities/lovely-professional-university-online
 - ICFAI Foundation for Higher Education Online (NAAC A++, NIRF Management #46): https://edifyedu.in/universities/icfai-university-online
 - Amity University Online (NAAC A+, NIRF Management #49): https://edifyedu.in/universities/amity-university-online
@@ -59,6 +57,8 @@
 - Alagappa University Online (NAAC A++): https://edifyedu.in/universities/alagappa-university-online
 - Andhra University Online (NAAC A++): https://edifyedu.in/universities/andhra-university-online
 - ARKA JAIN University – JGI Online (arkajain.edu.in) Online (NAAC A): https://edifyedu.in/universities/arka-jain-university-online
+- Assam Don Bosco University Online (NAAC A): https://edifyedu.in/universities/assam-don-bosco-university-online
+- Assam Down Town University Online (NAAC A+): https://edifyedu.in/universities/assam-down-town-university-online
 
 ## Verification and methodology
 - How to check UGC-DEB approval yourself: https://edifyedu.in/guides/how-to-check-ugc-deb-approval
