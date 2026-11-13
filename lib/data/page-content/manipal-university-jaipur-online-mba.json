@@ -2,7 +2,7 @@
   "uniSlug": "manipal-university-jaipur-online",
   "program": "mba",
   "sections": {
-    "tldr": "Manipal University Jaipur (MUJ) Online MBA at a glance: UGC-DEB approved, 2 years, Rs.1,84,000 total, NAAC A+, NIRF University #58, 12 specialisations, Coursera integration. Best for working professionals in South and West India who want an affordable NAAC A+ MBA with a recognised national brand and flexible scheduling.",
+    "tldr": "MUJ's 2-year online MBA comes from Manipal University Jaipur, a private university in Rajasthan, under UGC-DEB entitlement, with {{mbaSpecCount}} specialisations and the choice of a super or dual specialisation. It suits working professionals who want a known name at a moderate fee. It is not for anyone expecting B-school teaching or placements.",
     "hero": {
       "body": "Manipal University Jaipur (MUJ) runs an online MBA through the university's digital platform, priced at Rs.1,84,000 for two years with no entrance exam required. The programme carries NAAC A+ accreditation and sits at NIRF University #58 (2025). It integrates Coursera content into the curriculum, which is unusual for an Indian open university MBA. No CAT, MAT, or any aptitude test is needed for admission. If you want an affordable, flexibility-first MBA from a NAAC A+ university without the entrance exam barrier, MUJ is one of the clearest choices in its tier."
     },
@@ -31,7 +31,7 @@
       "heading": "Exams and Evaluation"
     },
     "specializationsOverview": {
-      "body": "MUJ Online MBA offers 12 specialisations: Marketing, Finance, Human Resource Management, Operations Management, Business Analytics and Data Science, Information System Management, International Business, BFSI (Banking Financial Services and Insurance), Digital Marketing, IT and FinTech, Project Management, Retail Management, and Supply Chain Management. Semesters 1 and 2 are identical across all specialisations. Students select their specialisation before Semester 3. The BFSI and IT and FinTech tracks are among the few in Indian online MBAs that offer a combined business-tech curriculum. See individual specialisation pages for subject-wise detail.",
+      "body": "MUJ Online MBA offers {{mbaSpecCount}} specialisations: {{mbaSpecList}}. Semesters 1 and 2 are identical across all specialisations. Students select their specialisation before Semester 3. The BFSI and IT and FinTech tracks are among the few in Indian online MBAs that offer a combined business-tech curriculum. See individual specialisation pages for subject-wise detail.",
       "heading": "Specialisations Available"
     },
     "syllabusNote": {
@@ -70,20 +70,20 @@
       "heading": "Red Flags to Know Before Enrolling",
       "flags": [
         {
-          "sentence1": "LMS instability reported during exam periods.",
-          "sentence2": "Multiple students have flagged MUJ's LMS slowdowns during peak exam windows, with occasional session timeouts. This is a platform-level issue not unique to MUJ, but worth knowing before you sign up. Keep a desktop backup browser and test your setup well before any exam."
+          "sentence1": "Placements rarely happen.",
+          "sentence2": "Opportunities get shared, but in my experience they do not lead to real placements."
         },
         {
-          "sentence1": "Career services quality is inconsistent outside metros.",
-          "sentence2": "Students in Tier 2 and Tier 3 cities report minimal proactive outreach from the placement cell. The placement support that MUJ advertises is noticeably stronger for candidates already in Bengaluru, Hyderabad, Pune, and NCR. Build your own LinkedIn and job portal strategy in parallel."
+          "sentence1": "The peer group is weaker than promised.",
+          "sentence2": "Batches are large, and students tell me the batch quality is below what they were told."
         },
         {
-          "sentence1": "Peer interaction in the programme is weak.",
-          "sentence2": "Unlike campus MBAs where cohort bonds form naturally, online MBA students at MUJ report little spontaneous peer engagement on the official platform. Most peer networks form through student-created WhatsApp groups, not the LMS discussion boards. If peer learning is important to you, set this expectation early."
+          "sentence1": "Extras cost extra.",
+          "sentence2": "Coursera access and campus immersions are paid add-ons."
         },
         {
-          "sentence1": "Coursera integration does not guarantee certification.",
-          "sentence2": "MUJ includes Coursera access as part of the programme, but completing a Coursera course and earning the certificate requires separate effort. Students who assume the Coursera certificates are automatically awarded often miss them. Set aside time specifically for Coursera completion alongside the MUJ curriculum."
+          "sentence1": "Three Manipal universities, one platform.",
+          "sentence2": "MAHE, MUJ and SMU are separate universities. Check which one your degree comes from."
         }
       ]
     },
@@ -102,31 +102,31 @@
       },
       {
         "question": "What is the total fee for MUJ Online MBA in 2026?",
-        "answer": "Rs.1,84,000 total for 2 years (April 2026 revision), paid in 4 semester instalments of Rs.46,000 each. An early-payment discount of approximately 15% may reduce total fees. Talk to our counsellor for your intake’s fee."
+        "answer": "MUJ's online MBA fee by payment plan: {{feePlanSummary:mba/standard}}. Talk to our counsellor for your intake’s fee."
       },
       {
         "question": "Does MUJ Online MBA require any entrance exam?",
-        "answer": "No. Admission requires only a bachelors degree with minimum 50% marks. No CAT, MAT, XAT, or any other entrance test is required. Candidates with less than 50% but with relevant work experience should confirm eligibility directly with the university."
+        "answer": "No. Admission requires only a bachelors degree with minimum 50% marks. No CAT, MAT, XAT, or any other entrance test is required."
       },
       {
-        "question": "What is the Coursera integration in MUJ MBA?",
-        "answer": "Enrolled students get access to selected Coursera specialisations alongside their MBA curriculum. This allows students to earn internationally recognised certifications from providers like Google, IBM, and Meta at no additional cost. Completing the Coursera courses requires separate effort; they are not automatically awarded."
+        "question": "Is Coursera included in the MUJ online MBA?",
+        "answer": "No. It is an optional add-on at {{addOn:coursera}} for one year, which you can buy after your admission is confirmed."
       },
       {
         "question": "Does MUJ Online MBA offer placements?",
-        "answer": "Yes, through MUJ's online placement cell. Services include resume review, mock interviews, LinkedIn optimisation, and access to a 3 lakh+ alumni network. Placement support is stronger for candidates in metros. Salary range cited is Rs.4-15 LPA (verify independently with MUJ)."
+        "answer": "Online Manipal says: placement assistance, upskilling and certification modules, industry interaction sessions, self-paced learning, an employability skill assessment and an AI-powered placement portal. Online Manipal says placement assistance is free and that it does not guarantee placements. What I have seen: everyone talks about placements and average packages. In my experience, placements through the programme don't really happen, and the opportunities that do get shared are not strong. Online programmes are not built for placements."
       },
       {
         "question": "Is MUJ Online MBA equivalent to a regular MBA?",
-        "answer": "Yes. Under UGC-DEB 2020 regulations, the MUJ online MBA is legally equivalent to the on-campus MBA from the same institution. The certificate does not distinguish online from on-campus. It is accepted for government jobs, PSU recruitment, and higher studies."
+        "answer": "Yes. Under UGC-DEB 2020 regulations, the MUJ online MBA is legally equivalent to the on-campus MBA from the same institution."
       },
       {
         "question": "How many specialisations does MUJ Online MBA offer?",
-        "answer": "12 specialisations: Marketing, Finance, HRM, Operations, Business Analytics, Information System Management, International Business, BFSI, Digital Marketing, IT and FinTech, Project Management, and Supply Chain Management. Specialisation choice is made before Semester 3; the first two semesters are common across all tracks."
+        "answer": "{{mbaSpecCount}} specialisations: {{mbaSpecList}}. Specialisation choice is made before Semester 3; the first two semesters are common across all tracks."
       },
       {
         "question": "How do I apply for MUJ Online MBA?",
-        "answer": "Open the Online Manipal application, fill the form, upload documents (graduation certificate, photo ID, passport photo), pay the processing fee, and await document verification. No entrance exam required. Intakes are in January and July, with rolling admission possible. Enrolment completes within 7-10 business days after payment."
+        "answer": "Apply on Online Manipal and pay the application fee, then submit your documents by upload or through DigiLocker, with your UGC-DEB ID. Choose how to pay: the full fee, yearly, by semester, or no-cost EMI. [See how admission works](#admission)."
       },
       {
         "question": "What is the duration of MUJ Online MBA?",

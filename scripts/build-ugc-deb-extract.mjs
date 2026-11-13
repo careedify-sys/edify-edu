@@ -27,6 +27,8 @@ const SOURCES = {
   // Noida. Amity University Rajasthan is a separate university.
   'amity-university-online': { name: 'Amity University', state: 'Uttar Pradesh' },
   'nmims-online': { name: 'Narsee Monjee Institute of Management Studies (NMIMS)' },
+  // "Manipal University" in Rajasthan is Manipal University Jaipur.
+  'manipal-university-jaipur-online': { name: 'Manipal University', state: 'Rajasthan' },
 }
 
 const wb = XLSX.read(readFileSync(BOOK), { type: 'buffer', cellDates: false })

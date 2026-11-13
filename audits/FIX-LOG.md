@@ -1,5 +1,24 @@
 # Fix log
 
+## 2026-11-13 · AI-visibility round 2: first-hand layer for Amity, NMIMS and MUJ
+
+- **Why:** CollegeSathi held page 1 for ~45K Amity, ~34K NMIMS and the "manipal online" searches with short
+  first-hand pages; ours carried template blocks nobody had checked (NMIMS "5 specialisations" next to 7, a 30/70
+  exam split, "Mumbai campus ranked separately"; MUJ "12 specialisations", Coursera "included", "does not
+  distinguish online", "3 lakh+ alumni"; salary bands and hirer lists with no source on all three).
+- **What:** lib/data/first-hand/ holds Rishi's copy per university; lib/first-hand.ts fills every amount, count,
+  NAAC and NIRF value from lib/data.ts and the UGC file extract (scripts/build-ugc-deb-extract.mjs), and throws on
+  an unfilled token or a NIRF/NAAC disagreement. Page-content JSON tokens ({{fee:..}}, {{mbaSpecCount}},
+  {{mbaSpecList}}, {{eligibility}}, {{addOn:..}}, {{feePlanSummary:..}}) are filled in getPageContent for every
+  reader. Template hides (Beyond Admission, Top Hirers, salary line) key off the file's existence. DebIdBlock on
+  all 317 hubs. Two NMIMS answer posts. MUJ gained its 14th MBA spec (AI for Business, Oct 2026).
+- **Trap:** getPageContent used to swallow any read error and fall back to the generic template; a token error
+  would have shipped a thin page silently, so `page-content ...` errors now rethrow. The MUJ hub JSON still holds
+  wrong copy in sections the hub no longer renders (fees.body says Coursera is included; comparisons gives NMIMS
+  Management #15 and "Overall #58" for a University rank). Rendering any of those again re-ships them.
+- **Open:** MUJ BCA, MCA, M.Com and MA spec lists changed for October 2026 (Rishi's Batch 13 chart) and are not in
+  lib/data.ts yet. NMIMS spec names in data differ from the portal's short names (Financial vs Finance).
+
 ## 2026-11-13 · AI-visibility round 1 cleanup (5 misses and 3 leftovers)
 
 - **Why:** the round-1 report left Amity premium pages showing the standard fee in the header tile and FAQ, the

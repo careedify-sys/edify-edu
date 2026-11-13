@@ -158,5 +158,69 @@
       "university": 52,
       "management": 24
     }
+  },
+  "manipal-university-jaipur-online": {
+    "universityName": "Manipal University",
+    "state": "Rajasthan",
+    "programmes": [
+      {
+        "name": "Bachelor of Computer Applications",
+        "category": "BCA",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Bachelor of Business Administration",
+        "category": "BBA",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Bachelor of Commerce (General)",
+        "category": "B.Com",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Master of Arts (Economics)",
+        "category": "MA",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Master of Computer Applications",
+        "category": "MCA",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Master of Commerce (General)",
+        "category": "M.Com",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Master of Arts (Journalism & Mass Communication)",
+        "category": "MA",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      },
+      {
+        "name": "Master of Business Administration",
+        "category": "MBA",
+        "notice": "Notice 1 (Jan 2026)",
+        "period": "AY 2025-26, Jan-Feb 2026 session"
+      }
+    ],
+    "naac": {
+      "grade": "A+",
+      "cgpa": 3.28,
+      "declaredOn": "2020-02-14"
+    },
+    "nirf": {
+      "overall": 98,
+      "university": 58,
+      "management": 81
+    }
   }
 }
