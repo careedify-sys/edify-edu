@@ -2396,6 +2396,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         },
       ],
     },
+    // MBA initial amount, collected at registration, part of the programme fee.
+    admissionPayments: { initial: { amount: 10000, adjustedInProgrammeFee: true, source: 'NMIMS CDOE MBA admission page, checked 2026-11-13; Rishi, confirmed 2026-11-13' } },
     uniType: 'deemed',
     logo: '/logos/university_logos/nmims-online-logo.svg',
     name: 'NMIMS (Narsee Monjee Institute of Management Studies) Online',
@@ -2415,11 +2417,12 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     feeMin: 196000,
     feeMax: 220000,
     emiFrom: 8167,
-    eligibility: 'Graduation with 50% marks from recognized university',
+    // NMIMS CDOE MBA page, checked 2026-11-13.
+    eligibility: 'Graduation in any discipline with 50% marks (45% for SC/ST/OBC/PwD)',
     eligibilityPct: 50,
-    tagline: 'Most generalist program – uniquely covers Entrepreneurship + Venture Capital, Org Theory & Design, SCM',
+    tagline: 'Online MBA from SVKM\'s NMIMS, Mumbai, with 7 specialisations and slot-based online exams',
     description: 'UGC DEB approved online programs from NMIMS (Narsee Monjee Institute of Management Studies). NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['Graduates seeking a broad management MBA without committing to one domain', 'career switchers wanting flexibility'],
+    forWho: ['Working professionals who want a reputed business school name. Compared with Amity, NMIMS carries more weight as a brand.'],
     notFor: ['Those needing deep domain-specific expertise from Day 1'],
     programs: ['MBA', 'BBA', 'B.Com'],
     programDetails: {
@@ -2437,8 +2440,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹1.96L–₹2.20L',
         duration: '2 Years (4-year max validity)',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Analyst'],
-        avgSalary: '₹5L – ₹10L per annum',
-        topCompanies: ['Helix Tech', 'Tata', 'ShopX', 'HSBC', 'Mindteck', 'RBS', 'Teleperformance'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from NMIMS (Narsee Monjee Institute of Management Studies), recognised for corporate hiring.'},
       'BBA': {
@@ -2446,8 +2447,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹1,41,000',
         duration: '3 Years (6-year max validity)',
         roles: ['Sales Executive', 'Marketing Trainee', 'Business Analyst Trainee'],
-        avgSalary: '₹3L – ₹6L per annum',
-        topCompanies: ['Helix Tech', 'Wockhardt', 'Bajaj Electricals', 'Michelin'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BBA from NMIMS (Narsee Monjee Institute of Management Studies), recognised for corporate hiring.',
       },
@@ -2456,8 +2455,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹99,000',
         duration: '3 Years (6-year max validity)',
         roles: ['Accounts Executive', 'Accounts Process Executive', 'Junior Financial Analyst'],
-        avgSalary: '₹3L – ₹6L per annum',
-        topCompanies: ['Milkbasket', 'Mindteck', 'Lakeshore', 'Bajaj Electricals', 'Essel', 'Michelin'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from NMIMS (Narsee Monjee Institute of Management Studies), recognised for corporate hiring.',
       }
