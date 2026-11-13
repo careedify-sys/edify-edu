@@ -7286,7 +7286,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: '1-year-mba-india-executive-mba-2026',
-    updatedAt: "2026-11-04",
+    updatedAt: "2026-11-13",
     title: '1 Year MBA India 2026: Degree vs Diploma Compared',
     seoTitle: '1 Year MBA India 2026: PGPX vs PGP vs Online, Real Tier Picker | Edify',
     metaDescription: '1 year MBA India 2026: IIMA PGPX Rs 35L, ISB Rs 38L, IIMB EPGP Rs 33.71L, BITS WILP Rs 3.5L, JGU 1-year online MBA Rs 2L (AACSB, IoE).',
@@ -7316,7 +7316,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Written for: senior professionals 5-plus years into career evaluating IIM PGPX or ISB PGP, mid-career professionals weighing executive MBA tier, working professionals confused by online MBA marketing as "fast-track".</p>
 
-<div class="callout-key"><strong>One-line frame for 1-year MBA India 2026:</strong> Real 1-year residential MBAs are premium at IIM A PGPX, IIM B EPGP, ISB PGP, XLRI 1-year EMBA, all costing Rs 30 lakh-plus and requiring 5-plus years of work experience. The only 1-year fully online UGC-recognised MBA is O.P. Jindal Global University (Rs 2 lakh, AACSB accredited, Institution of Eminence). For working professionals not chasing IIM brand, 2-year online MBAs from NAAC A+ universities (Rs 2 lakh) are the practical alternative.</div>
+<div class="callout-key"><strong>One-line frame for 1-year MBA India 2026:</strong> Real 1-year residential MBAs are premium at IIM A PGPX, IIM B EPGP, ISB PGP, XLRI 1-year EMBA, all costing Rs 30 lakh-plus and requiring 5-plus years of work experience. The only 1-year fully online UGC-recognised MBA is O.P. Jindal Global University (Rs 2 lakh, Institution of Eminence, with an AACSB-accredited business school). For working professionals not chasing IIM brand, 2-year online MBAs from NAAC A+ universities (Rs 2 lakh) are the practical alternative.</div>
 
 <h2>What "1 Year MBA" Actually Means in India 2026</h2>
 
@@ -7408,7 +7408,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="callout-key"><strong>A 12-month online MBA with degree status.</strong> O.P. Jindal Global University (JGU), Sonipat, offers it as an Institution of Eminence. AACSB accredited, NAAC A, QS 5 Star rated. Total fee Rs 2,00,000 (indicative). JGU does not appear on the UGC-DEB entitlement list of August 2026, so confirm with JGU which approval the programme rests on.</div>
 
-<p>This is the structural gap-filler in the 1-year MBA market. Every other 1-year programme above is residential, requires 4 to 5 years of work experience, and costs Rs 25 to 45 lakh. JGU offers a 12-month online MBA at Rs 2 lakh, and the degree carries the JGU brand of an Institution of Eminence with AACSB accreditation. Under the UGC circular of 28 July 2026, one-year online postgraduate programmes admit four-year Honours graduates, so check your eligibility with JGU first.</p>
+<p>This is the structural gap-filler in the 1-year MBA market. Every other 1-year programme above is residential, requires 4 to 5 years of work experience, and costs Rs 25 to 45 lakh. JGU offers a 12-month online MBA at Rs 2 lakh, and the degree carries the JGU brand of an Institution of Eminence whose business school, Jindal Global Business School, holds AACSB accreditation. Under the UGC circular of 28 July 2026, one-year online postgraduate programmes admit four-year Honours graduates, so check your eligibility with JGU first.</p>
 
 <p>Verify the live programme details at <a href="https://jgu.edu.in" target="_blank" rel="noopener">jgu.edu.in</a> and the current Edify university page at <a href="/universities/op-jindal-global-university-online" class="ilink">edifyedu.in/universities/op-jindal-global-university-online</a>.</p>
 
@@ -7494,7 +7494,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td><a href="/universities/amity-university-online" class="ilink">Amity University Online</a></td><td>A+</td><td>49</td><td>Rs 2.07L to 2.25L</td></tr>
     <tr><td><a href="/universities/manipal-university-jaipur-online" class="ilink">Manipal University Jaipur Online</a></td><td>A+</td><td>81</td><td>Rs 1.56L to 1.84L</td></tr>
     <tr><td><a href="/universities/chandigarh-university-online" class="ilink">Chandigarh University Online</a></td><td>A+</td><td>32</td><td>Rs 1.75L to 2.38L</td></tr>
-    <tr><td><a href="/universities/op-jindal-global-university-online" class="ilink">O.P. Jindal Global Online (1 year)</a></td><td>A</td><td>IoE · AACSB</td><td>Rs 2,00,000</td></tr>
+    <tr><td><a href="/universities/op-jindal-global-university-online" class="ilink">O.P. Jindal Global Online (1 year)</a></td><td>A</td><td>IoE · AACSB (business school)</td><td>Rs 2,00,000</td></tr>
   </tbody>
 </table>
 
@@ -20844,7 +20844,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Which correspondence MBA has the best placement support?', a: 'NMIMS Online has the strongest BFSI recruiter pipeline (HDFC, ICICI, Axis, Kotak) plus structured career service team. Symbiosis SCDL and SSODL have pan-India recruiter access. Amity Online provides resume building plus virtual job fairs. MAHE has 1:1 industry mentorship. IGNOU has limited placement; primarily a credentialing programme. Cross-check current placement claims via LinkedIn alumni searches in your target sector.' },
       { q: 'Can I pursue correspondence MBA without entrance exam?', a: 'Yes. Most UGC-DEB approved correspondence and online MBA programmes do not require CAT, MAT, GMAT, XAT, or CMAT. Standard eligibility: Bachelor degree with 50 percent aggregate (45 percent SC, ST, PwD). Exceptions: NMIMS may require NMAT for select tracks, Symbiosis SSODL may require SNAP, IIM Mumbai Online has own admission. For pure direct admission: JAIN, Amity, Manipal Jaipur, Chandigarh University, LPU, DY Patil.' },
       { q: 'What is the cheapest credible correspondence MBA in India?', a: 'IGNOU MBA at Rs 66,000 total fee. Central University, NAAC A++, UGC-DEB approved. Strongest government job recognition among budget options. Galgotias University Online at Rs 80,200 is the next cheapest UGC-DEB credible option. State open universities (BRAOU, KSOU) are even cheaper but with weaker pan-India brand.' },
-      { q: 'Premium NMIMS vs mid-tier JAIN vs budget IGNOU: which to pick?', a: 'Match by goal. Government job eligibility plus budget: IGNOU (Rs 66,000, A++). BFSI lateral career or corporate role: NMIMS Online (Rs 1.96L to 2.20L, AACSB). Tech analytics career: JAIN Online (Rs 1.60L to 1.96L, A++, 20-plus specs). All three are UGC-DEB approved and legally equivalent; brand value and career service differ sharply.' },
+      { q: 'Premium NMIMS vs mid-tier JAIN vs budget IGNOU: which to pick?', a: 'Match by goal. Government job eligibility plus budget: IGNOU (Rs 66,000, A++). BFSI lateral career or corporate role: NMIMS Online (Rs 1.96L to 2.20L). Tech analytics career: JAIN Online (Rs 1.60L to 1.96L, A++, 20-plus specs). All three are UGC-DEB approved and legally equivalent; brand value and career service differ sharply.' },
       { q: 'How long does correspondence MBA take in India?', a: 'Standard 2 years (4 semesters) per UGC ODL Regulations 2018. Maximum allowed period 4 to 5 years for working professionals needing extension. IGNOU specifically allows up to 5 years. Online MBA programmes allow up to 4 years extension. No university publishes on-time completion rates, but distance programmes with less scheduled structure demand more self-discipline to finish on time.' }
     ],
     content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, EdifyEdu. Programme data live from current edifyedu.in university profiles. UGC-DEB approval status verified at deb.ugc.ac.in May 2026.</em></p>
@@ -36371,7 +36371,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     heroImageAlt: 'Smiling young adult using a laptop while sitting on a park bench outdoors.',
     faqs: [
       { q: 'Which is the best online MBA college in India in 2026?', a: 'There is no single best online MBA college because best depends on what you optimise for. NMIMS Online (NIRF #24 Management 2025, NAAC A++) is strongest for finance, marketing, and analytics careers in India at ₹1.96L to ₹2.20L. Symbiosis SSODL (Symbiosis International NIRF #24 University 2025, NAAC A++) at ₹3.15 lakh is best for general management and consulting. Amity Online (WASC, QAA, WES global accreditations) at ₹2.07L to ₹2.25L is best for international career mobility. Pick based on your specific career path.' },
-      { q: 'What are the top 5 best online MBA colleges in India?', a: 'Based on NIRF rank, NAAC grade, UGC-DEB approval, and fee-to-brand ratio: 1) BITS Pilani WILP MBA at Rs 3.12 lakh (NIRF #7 University 2025), 2) Symbiosis SSODL Online MBA at ₹3.15 lakh net (Symbiosis International NIRF #24 University 2025, NAAC A++), 3) Chandigarh University Online MBA at ₹1.75 lakh (NIRF #19 University 2025 / #32 Management 2025), 4) NMIMS Online MBA at ₹1.96L to ₹2.20L (NIRF #52 University 2025 / #24 Management 2025, NAAC A++, AACSB), 5) Amity Online MBA at ₹2.07L to ₹2.25L (NIRF #22 University 2025 / #49 Management 2025, WASC/QAA/WES).' },
+      { q: 'What are the top 5 best online MBA colleges in India?', a: 'Based on NIRF rank, NAAC grade, UGC-DEB approval, and fee-to-brand ratio: 1) BITS Pilani WILP MBA at Rs 3.12 lakh (NIRF #7 University 2025), 2) Symbiosis SSODL Online MBA at ₹3.15 lakh net (Symbiosis International NIRF #24 University 2025, NAAC A++), 3) Chandigarh University Online MBA at ₹1.75 lakh (NIRF #19 University 2025 / #32 Management 2025), 4) NMIMS Online MBA at ₹1.96L to ₹2.20L (NIRF #52 University 2025 / #24 Management 2025, NAAC A++), 5) Amity Online MBA at ₹2.07L to ₹2.25L (NIRF #22 University 2025 / #49 Management 2025, WASC/QAA/WES).' },
       { q: 'How much does an MBA from the best online colleges in India cost in 2026?', a: 'Top 15 best online MBA colleges range from ₹66,000 (IGNOU) to ₹3.15 lakh (Symbiosis SSODL net). Most premium private universities (NMIMS, Amity, BITS Pilani, Chandigarh) sit at ₹1.75 lakh to ₹3 lakh. MAHE Manipal at ₹2.92 lakh is the highest-priced Manipal option. SRM at ₹1.45 lakh, LPU at Rs 1.61L sem-wise (Rs 1.46L one-time), MUJ at ₹1.56-1.84 lakh, JAIN at ₹1.96 lakh, and Sharda at ₹1.50 lakh fill the mid-range. Fees are indicative and require verification on official portals.' },
       { q: 'Are these online MBA colleges UGC-DEB approved?', a: 'Yes. Every university listed in the top 15 best online MBA colleges in India 2026 is UGC-DEB entitled for the academic year. UGC-DEB approval means the online MBA degree is legally identical to an on-campus MBA from the same university for jobs, government recruitment, and higher education. Verify the current approval status on deb.ugc.ac.in before paying any fees, since approval is granted programme-by-programme each academic year and can change.' },
       { q: 'Which online MBA college has the best placements in India?', a: 'NMIMS Online and Symbiosis SSODL report the strongest placement support among UGC-DEB online MBA programmes, with average packages in the ₹6-12 LPA range and highest packages reaching ₹16-20 LPA at top recruiters. Amity Online has industry partnerships with 500+ companies, with highest packages reaching ₹16 LPA. However, online MBA placements are generally weaker than on-campus equivalents at the same universities. Realistic expectation for most graduates is ₹4-8 LPA at first placement.' },
@@ -36608,7 +36608,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <tr><th>Specialisation</th><th>Strongest Programme</th><th>Why</th></tr>
 </thead>
 <tbody>
-<tr><td>Finance</td><td>NMIMS, Symbiosis SSODL</td><td>AACSB and NAAC A++ brands resonate with BFSI hiring</td></tr>
+<tr><td>Finance</td><td>NMIMS, Symbiosis SSODL</td><td>NAAC A++ brands resonate with BFSI hiring</td></tr>
 <tr><td>Marketing</td><td>NMIMS, MICA-equivalent at Symbiosis</td><td>Strong agency and FMCG hiring track record</td></tr>
 <tr><td>Business Analytics</td><td>BITS Pilani WILP, NMIMS</td><td>Strongest quantitative depth among online programmes</td></tr>
 <tr><td>HR</td><td>NMIMS, Symbiosis, <a href="/blog/xlri-online-mba-review-2026" class="ilink">XLRI Online PGDM review</a></td><td>HR specialisation with established track record</td></tr>
@@ -36627,7 +36627,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   <caption>Best online MBA by target use case India 2026</caption>
   <thead><tr><th>Your use case</th><th>Best pick</th><th>Backup option</th><th>Why</th></tr></thead>
   <tbody>
-    <tr><td>BFSI lateral move</td><td>NMIMS Online</td><td>JAIN Online</td><td>NAAC A++, NIRF Mgmt 24, AACSB, BFSI brand pipeline</td></tr>
+    <tr><td>BFSI lateral move</td><td>NMIMS Online</td><td>JAIN Online</td><td>NAAC A++, NIRF Mgmt 24, BFSI brand pipeline</td></tr>
     <tr><td>Tech and product management</td><td>JAIN Online</td><td>Chandigarh University Online</td><td>A++ NAAC, Bengaluru tech network, analytics specs</td></tr>
     <tr><td>Pan-India brand and 19 specs</td><td>Amity University Online</td><td>JAIN Online</td><td>Highest spec count, QS-ranked, strong NCR brand</td></tr>
     <tr><td>Affordable NAAC A+</td><td>Manipal University Jaipur</td><td>LPU Online</td><td>Lowest fee A+ option, dual specialisation</td></tr>
@@ -43709,7 +43709,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'amity-vs-manipal-online-mba-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: '2026-11-13',
     title: 'Amity vs Manipal Online MBA 2026: Fees, NAAC, Placements Compared',
     seoTitle: 'Amity vs Manipal (MUJ) Online MBA 2026: Fees and Placement',
     metaDescription: 'Amity vs Manipal University Jaipur online MBA compared: fees ₹2.07L vs ₹1.56L, both NAAC A+, NIRF ranks, specialisations, placements. Commission-free verdict.',
@@ -43931,7 +43931,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>If your budget is under ₹1.5L and you want an A++ grade, look at <a href="/blog/best-online-mba-colleges-india-2026">our full ranking of India's best online MBA programmes</a>. Options like IGNOU (₹66K, NAAC A++) or Sikkim Manipal (₹1.20L, NAAC A+) cost significantly less.</p>
 
-<p>If your priority is the absolute highest accreditation available online, MAHE (₹2.92L, NAAC A++, NIRF #3) or NMIMS (₹1.96L, NAAC A++, AACSB) sit above both Amity and MUJ.</p>
+<p>If your priority is the absolute highest accreditation available online, MAHE (₹2.92L, NAAC A++, NIRF #3) or NMIMS (₹1.96L, NAAC A++) sit above both Amity and MUJ.</p>
 
 <p>There is no single "best" online MBA. There is only the best fit for your career stage, budget, and specialisation need. Use the <a href="/compare" class="ilink">Edify comparison tool</a> to compare any two universities side by side on accreditation, fees, and programme details.</p>
 
@@ -43980,7 +43980,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'jain-vs-amity-online-mba-2026',
-    updatedAt: '2026-10-26',
+    updatedAt: '2026-11-13',
     title: 'JAIN vs Amity Online MBA 2026: Does A++ Beat A+ for Your Career?',
     seoTitle: 'JAIN vs Amity Online MBA 2026: NAAC A++ vs A+ and Fees',
     metaDescription: 'JAIN (NAAC A++) vs Amity (NAAC A+) online MBA compared: fees ₹1.96L vs ₹2.25L, NIRF ranks, 19 specialisations each, placements. Commission-free honest verdict.',
@@ -44218,7 +44218,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <h2 id="neither">When Neither Is the Right Fit</h2>
 
-<p>If you want both A++ accreditation and a top-25 NIRF Management rank, look at <a href="/blog/best-online-mba-colleges-india-2026">NMIMS online MBA</a> (NAAC A++, NIRF #24 Management, AACSB). It sits above both JAIN and Amity on those two metrics, though at a different price point (₹1.96L).</p>
+<p>If you want both A++ accreditation and a top-25 NIRF Management rank, look at <a href="/blog/best-online-mba-colleges-india-2026">NMIMS online MBA</a> (NAAC A++, NIRF #24 Management). It sits above both JAIN and Amity on those two metrics, though at a different price point (₹1.96L).</p>
 
 <p>If budget is your primary constraint and you need fees under ₹1.5L, neither JAIN nor Amity fits. Consider MUJ (₹1.56L, NAAC A+) or SMU Sikkim (₹1.20L, NAAC A+). Read our <a href="/blog/is-online-mba-worth-it-2026">guide on whether online MBA is worth it</a> to frame the investment against expected returns.</p>
 
