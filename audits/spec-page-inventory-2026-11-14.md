@@ -107,6 +107,14 @@ Not computable as specified: there is no 3-month export. As a stand-in, these ar
 | /universities/maharshi-dayanand-university-online/ma/english | 1 | 216 | 10.19 | 88.5 |
 | /universities/guru-gobind-singh-indraprastha-university-online/ma/psychology | 3 | 215 | 7.55 | 89.2 |
 
+## Update, 14 Nov: 3-month Search Console join
+
+Rishi supplied a 3-month Pages export (11 Aug to 10 Nov 2026, web). The CSV's gsc_clicks, gsc_impressions and gsc_position columns are now filled for the 388 spec URLs that appear in it. The export stops at 999 rows, so a blank means "not in the export", which is a floor, not proof of zero.
+
+- Near-copies (no JSON, overlap >= 60): 1,483. With at least one click: 284 (564 clicks). With zero clicks: 1,199. None of the 1,199 has 100 or more impressions, so the plan's GSC filter (zero clicks and under 100 impressions) excludes exactly the 284 with clicks.
+- The plan's middle path splits the 1,199 into 767 to noindex and 432 to keep and improve "at universities you recommend". That list is not recorded in the repo. lib/data.ts uniType is unset for 1,060 of the 1,199, so "state and open universities" cannot reproduce it either.
+- Draft in audits/spec-middle-path-draft-2026-11-14.csv uses the 29 universities with a review blog (UNIVERSITY_PROGRAM_LINKS) as the keep list: **793 noindex, 406 keep and improve, 284 keep (have clicks).** Using the 24 coupon universities instead gives 784 / 415. Rishi to confirm the keep list before anything is noindexed.
+
 ## Other findings (not acted on)
 
 - **71 programme hubs are in the sitemap but serve `noindex, follow`**, across 23 universities (Banasthali, Dayalbagh, Madurai Kamaraj and Mody have 5 or 6 each). Confirmed on the live site for /universities/banasthali-vidyapith-online/mba. check-sitemap-noindex-drift passes, so the noindex comes from a gate it does not model (the mode-unverified university gate is the likely source; not yet traced). The spec pages under these hubs are all `index, follow`.
