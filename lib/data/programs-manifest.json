@@ -7843,6 +7843,24 @@
   },
   {
     "university_slug": "manipal-university-jaipur-online",
+    "program": "mba",
+    "spec_slug": "ai-for-business",
+    "spec_name": "Artificial Intelligence for Business"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mca",
+    "spec_slug": "generative-ai-agentic-systems",
+    "spec_name": "Generative AI & Agentic Systems"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mca",
+    "spec_slug": "business-analysis-erp-digital-transformation",
+    "spec_name": "Business Analysis, ERP & Digital Transformation"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
     "program": "bba",
     "spec_slug": "general-management",
     "spec_name": "General Management"
@@ -7855,6 +7873,42 @@
   },
   {
     "university_slug": "manipal-university-jaipur-online",
+    "program": "bca",
+    "spec_slug": "data-science-and-analytics",
+    "spec_name": "Data Science and Analytics"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "bca",
+    "spec_slug": "cloud-computing",
+    "spec_name": "Cloud Computing"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "bca",
+    "spec_slug": "cyber-security",
+    "spec_name": "Cyber Security"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "bca",
+    "spec_slug": "full-stack-software-development",
+    "spec_name": "Full Stack Software Development"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "bca",
+    "spec_slug": "agentic-ai-intelligent-systems",
+    "spec_name": "Agentic AI & Intelligent Systems"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "bca",
+    "spec_slug": "generative-ai-and-intelligent-application",
+    "spec_name": "Generative AI and Intelligent Application"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
     "program": "bcom",
     "spec_slug": "general-management",
     "spec_name": "General Management"
@@ -7864,6 +7918,24 @@
     "program": "mcom",
     "spec_slug": "general-management",
     "spec_name": "General Management"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mcom",
+    "spec_slug": "accounting-taxation-and-global-financial-reporting",
+    "spec_name": "Accounting, Taxation, and Global Financial Reporting"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mcom",
+    "spec_slug": "financial-analytics-ai-and-decision-science",
+    "spec_name": "Financial Analytics, AI and Decision Science"
+  },
+  {
+    "university_slug": "manipal-university-jaipur-online",
+    "program": "mcom",
+    "spec_slug": "banking-fintech-and-digital-financial-services",
+    "spec_name": "Banking, Fintech and Digital Financial Services"
   },
   {
     "university_slug": "manipal-university-jaipur-online",

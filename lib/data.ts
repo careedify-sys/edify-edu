@@ -1590,7 +1590,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Manipal University Jaipur (MUJ), recognised for corporate hiring.'},
       'MCA': {
-        specs: ['AI & Data Science', 'Comprehensive Emerging Technologies', 'Artificial Intelligence & Machine Learning', 'Cloud Computing', 'Cybersecurity'],
+        // Batch 13 specialisations, effective October 2026 (Rishi's MUJ chart, 2026-11-13).
+        // Renamed from Comprehensive Emerging Technologies; slug kept so the live URL holds.
+        specs: ['AI & Data Science', { slug: 'comprehensive-emerging-technologies', name: 'Next-Gen Technologies & Digital Intelligence' }, 'Artificial Intelligence & Machine Learning', 'Cloud Computing', 'Cybersecurity', 'Generative AI & Agentic Systems', 'Business Analysis, ERP & Digital Transformation'],
         fees: '₹1,47,600–₹1,64,000',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
@@ -1609,7 +1611,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved BBA from Manipal University Jaipur (MUJ), recognised for corporate hiring.',
       },
       'BCA': {
-        specs: ['General Management'],
+        // Batch 13 specialisations, effective October 2026 (Rishi's MUJ chart, 2026-11-13).
+        specs: ['General Management', 'Data Science and Analytics', 'Cloud Computing', 'Cyber Security', 'Full Stack Software Development', 'Agentic AI & Intelligent Systems', 'Generative AI and Intelligent Application'],
         fees: '₹1.44L',
         duration: '3 Years (6 Semesters)',
         roles: ['Software Developer', 'Web Developer', 'Systems Administrator', 'Data Analyst', 'IT Support Engineer'],
@@ -1625,7 +1628,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         careerOutcome: 'UGC DEB approved B.Com from Manipal University Jaipur (MUJ), recognised for corporate hiring.',
       },
       'M.Com': {
-        specs: ['General Management'],
+        // Batch 13 specialisations, effective October 2026 (Rishi's MUJ chart, 2026-11-13).
+        specs: ['General Management', 'Accounting, Taxation, and Global Financial Reporting', 'Financial Analytics, AI and Decision Science', 'Banking, Fintech and Digital Financial Services'],
         // Verified 2026-10-06 on onlinemanipal.com/online-mcom-degree-muj:
         // semester fee 27,000, course fee 1,08,000. The 97,200 also shown
         // is a 10 per cent full-payment discount, not the price. Unchanged
