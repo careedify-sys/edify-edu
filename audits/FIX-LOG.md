@@ -1,5 +1,27 @@
 # Fix log
 
+## 2026-11-13 · Coupon card invented a code on pages without a coupon
+
+- **Why:** CouponCard sits in the sidebar of every hub and spec page. With no lib/coupons.ts entry (90 of 118
+  indexed MBA hubs) it showed "Save up to ₹10,000", revealed an invented EDIFY-XXXX code after the lead form and
+  gave a 30 Jun 2026 expiry. Pages with a real coupon also showed ₹10,000, because the ₹ regex never matched the
+  "Rs 5,000" label. The MUJ and JAIN hub content JSONs carried dead `coupon` blocks with invented Rs 10,000 / Rs
+  8,000 "negotiated" codes (no template reads them).
+- **What:** card renders only with a real coupon; amount from TIER_AMOUNTS; JSON blocks rewritten to the register
+  codes; MUJ/SMU stackExample amounts made consistent.
+- **Trap:** check-coupon-claims reads lib/coupon-pages.ts only. Content JSON and component fallbacks are invisible
+  to it. Grep for `||` defaults in any component that prints a code, fee or rank.
+
+## 2026-11-13 · SMU NIRF, NMIMS and Jindal AACSB attribution
+
+- **Why:** the Online Manipal review gave SMU "NIRF university rank 64 for 2024"; Supabase has no NIRF row for SMU.
+  About 25 NMIMS sentences and 108 Jindal phrases credited AACSB to the university or the online programme.
+- **What:** SMU now "has no NIRF ranking". NMIMS AACSB goes to the campus School of Business Management. Jindal
+  AACSB goes to Jindal Global Business School (AACSB initial accreditation, Nov 2025); copy does not claim the
+  online MBA is inside or outside its scope. Amity holds no AACSB and no copy claimed it.
+- **Trap:** list-style claims ("NAAC A++, AACSB" in parentheses or table cells) escaped two sentence-level sweeps.
+  Search for AACSB within ~70 characters of the university name, not per sentence.
+
 ## 2026-11-13 · AI-visibility fixes, round 1 (NMIMS, Amity, SSODL, BVU, Manipal trio)
 
 - **Why:** AI answers quoted stale or wrong facts about these universities: fees that were never charged, typed dates,
