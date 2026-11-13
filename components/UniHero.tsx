@@ -84,16 +84,16 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
   const specPlan = specSlug
     ? u.feePlans?.[program.toLowerCase() as 'mba']?.find(p => p.specs?.includes(specSlug))
     : undefined
+  // Only the tile reads the plan. Titles and metas keep reading feeMin/feeMax.
+  const inr = (n: number) => `₹${n.toLocaleString('en-IN')}`
   const specOneTime = specPlan?.rows.find(r => /one-time/i.test(r.mode))?.total
+  const specSemester = specPlan?.rows.find(r => /semester/i.test(r.mode))?.total
   const feeValue = specOneTime
     ? inr(specOneTime)
     : formatExactFeeShort(exactFee) ?? FEE_COUNSELLOR_LINE
-  // Only the tile reads the plan. Titles and metas keep reading feeMin/feeMax.
-  const inr = (n: number) => `₹${n.toLocaleString('en-IN')}`
   const feeDetail = specOneTime
     ? `one-time payment, this track${specSemester ? `; ${inr(specSemester)} paid by semester` : ''}`
     : formatExactFeeDetail(exactFee)
-  const specSemester = specPlan?.rows.find(r => /semester/i.test(r.mode))?.total
 
   const stats = [
     { label: 'Total Fees', value: feeValue, highlight: true, sub: feeDetail },
