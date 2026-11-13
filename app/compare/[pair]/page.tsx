@@ -18,6 +18,7 @@ import { buildPairAnswers } from '@/lib/answers/compare-answers'
 import { sectionHtml } from '@/lib/answers/render-html'
 import { FROZEN_UNIVERSITIES } from '@/lib/answers/targets'
 import { UniversityVideo } from '@/components/YouTubeVideo'
+import { coreSemesters } from '@/lib/answers/university-answers'
 
 export const revalidate = false
 
@@ -65,7 +66,7 @@ export async function generateMetadata(
 
   // Pairs added in the AI-citation sprint carry the brand as "edifyedu.in";
   // the existing pairs keep their published wording (flagged, not changed).
-  const brand = config.derived ? 'edifyedu.in' : 'EdifyEdu'
+  const brand = config.derived || config.brandEdifyeduIn ? 'edifyedu.in' : 'EdifyEdu'
   const title = `${nameA} vs ${nameB} Online ${prog} ${year}: Fees and Verdict | ${brand}`
   const feeA = getProgramFee(uA, prog)
   const feeB = getProgramFee(uB, prog)
@@ -262,7 +263,39 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
             ))}
           </div>
         </div>
-        <p className="text-xs text-slate-400 mb-8">Fees are indicative and change by intake. Confirm the current fee with our counsellor before enrolling.</p>
+        <p className="text-xs text-slate-400 mb-8">Fees change by intake. Talk to our counsellor for your intake’s fee.</p>
+
+        {/* Core syllabus side by side (pairs with syllabus: true) */}
+        {config.syllabus && prog === 'MBA' && (() => {
+          const semA = coreSemesters(uA), semB = coreSemesters(uB)
+          const sems = Array.from(new Set([...semA, ...semB].map(s => s.sem))).sort((a, b) => a - b)
+          // TODO(syllabus): semesters 3 and 4 are specialisation papers that the
+          // manifest does not hold for either university; add them when we do.
+          const cell = (list: { sem: number; subjects: string[] }[], n: number) =>
+            list.find(s => s.sem === n)?.subjects.join(', ') || 'Not published on edifyedu.in'
+          return (
+            <div className="rounded-xl border border-slate-200 bg-white overflow-hidden mb-8">
+              <div className="bg-gradient-to-r from-slate-900 to-slate-700 text-white px-5 py-3">
+                <h2 className="text-lg font-bold">Core Syllabus: {nameA} vs {nameB}</h2>
+              </div>
+              {sems.length === 0 ? (
+                <p className="px-5 py-4 text-sm text-slate-600">edifyedu.in does not yet hold the core syllabus for either programme. Talk to our counsellor for the current syllabus.</p>
+              ) : (
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead><tr className="bg-slate-50 text-left"><th className="px-4 py-2 w-28">Semester</th><th className="px-4 py-2">{nameA}</th><th className="px-4 py-2">{nameB}</th></tr></thead>
+                    <tbody>
+                      {sems.map(n => (
+                        <tr key={n} className="border-t border-slate-100 align-top"><td className="px-4 py-3 font-semibold">Semester {n}</td><td className="px-4 py-3">{cell(semA, n)}</td><td className="px-4 py-3">{cell(semB, n)}</td></tr>
+                      ))}
+                      <tr className="border-t border-slate-100 align-top"><td className="px-4 py-3 font-semibold">Semesters 3 and 4</td><td className="px-4 py-3" colSpan={2}>Specialisation papers, which depend on the track you pick. Not published on edifyedu.in.</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </div>
+          )
+        })()}
 
         {/* Answer-first sections (AI-citation sprint) */}
         {pairAnswers && (
@@ -319,6 +352,10 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
             </div>
           </div>
         </div>
+
+        {config.relatedBlog && (
+          <p className="text-sm mb-8">Read our <Link href={config.relatedBlog.href} className="text-amber-700 font-semibold">{config.relatedBlog.label}</Link>.</p>
+        )}
 
         {/* Related Comparisons */}
         {relatedPairs.length > 0 && (

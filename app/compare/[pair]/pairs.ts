@@ -13,6 +13,12 @@ export type PairConfig = {
   /** AI-citation sprint pairs (2026-11-04): no hand-written FAQs; verdicts
    *  derived from lib/data.ts by lib/answers/pair-verdict.ts. */
   derived?: boolean
+  /** Show the core-semester syllabus side by side (lib/data/syllabus-manifest.json). */
+  syllabus?: boolean
+  /** A review post that covers both universities, linked from the page. */
+  relatedBlog?: { href: string; label: string }
+  /** Newer pairs carry the brand as "edifyedu.in" in their title. */
+  brandEdifyeduIn?: boolean
 }
 
 // A derived pair: FAQs come from lib/answers/compare-answers.ts at render time.
@@ -76,7 +82,7 @@ export const PAIRS: Record<string, PairConfig> = {
       { q: 'Is SMU or Amity better for online MBA?', a: 'Amity has 19 specs and NIRF #22 University. SMU has 5 specs at Rs 1,20,000 (nearly half of Amity). SMU is budget-friendly with Manipal brand. Amity is premium with broader choice.' },
       { q: 'What is the fee difference?', a: 'SMU costs Rs 1,20,000 flat. Amity costs Rs 2,07,000 (one-time). SMU saves Rs 1,05,000. Significant difference.' },
       { q: 'Does SMU have the same brand as MUJ?', a: 'No. SMU (Sikkim Manipal University) is a separate institution from MUJ (Manipal University Jaipur). Both are in the Manipal group but independently governed and accredited.' },
-      { q: 'Does SMU offer Northeast scholarship?', a: 'Yes. SMU lists a 30% scholarship for candidates from Sikkim and the Northeast region with valid address proof. On the Rs 1,20,000 course fee that brings the fee to Rs 84,000. Fees are indicative, so confirm the scholarship on onlinemanipal.com before you apply.' },
+      { q: 'Does SMU offer Northeast scholarship?', a: 'Yes. SMU lists a 30% scholarship for candidates from Sikkim and the Northeast region with valid address proof. On the Rs 1,20,000 course fee that brings the fee to Rs 84,000. Talk to our counsellor to confirm the scholarship before you apply.' },
       { q: 'Which has better placement support?', a: 'Amity has a larger placement network with 500+ hiring partners. SMU has placement support but on a smaller scale. For working professionals, self-directed career management is typical for both.' },
     ],
     verdictA: ['Budget is your top priority (Rs 1,20,000 vs Rs 2,25,000)', 'You are from Northeast India (30% scholarship available)', 'Manipal group brand at the lowest price matters'],
@@ -253,7 +259,7 @@ export const PAIRS: Record<string, PairConfig> = {
       { q: 'Is Symbiosis or NMIMS better for online BBA?', a: 'Symbiosis SSODL BBA costs Rs 1,65,000 total (+ Rs 1,000 registration, separate). NMIMS BBA costs Rs 1,41,000. Both are NAAC A++ and UGC-DEB approved. Symbiosis has stronger Pune academic heritage; NMIMS has Mumbai brand value.' },
       { q: 'What is the Symbiosis SSODL BBA fee?', a: 'Symbiosis SSODL BBA total fee is Rs 1,65,000 across 3 years (6 semesters), plus Rs 1,000 one-time registration billed separately. Fees are indicative and change by intake. Confirm the current fee with our counsellor before enrolling.' },
       { q: 'Does NMIMS offer online BBA?', a: 'Yes. NMIMS offers online BBA. Confirm current fees with our counsellor or the NMIMS online portal directly.' },
-      { q: 'Which has a higher NIRF Management rank?', a: 'NMIMS holds NIRF #24 Management and Symbiosis holds NIRF #11 Management in 2025. Symbiosis ranks higher in the Management category.' },
+      { q: 'Which has a higher NIRF Management rank?', a: 'NMIMS holds NIRF #24 Management in 2025 in its own name. SSODL holds no NIRF Management rank: Management #11 is the rank of SIBM Pune, a constituent school of Symbiosis International, which itself holds NIRF 2025 University #24.' },
     ],
     verdictA: ['You want the Symbiosis/Pune academic brand at Rs 1,65,000', 'Your career target is Pune or Maharashtra', 'NAAC A++ and deep academic rigour matter most'],
     verdictB: ['Your career target is Mumbai or the BFSI sector', 'You prefer the NMIMS brand for Mumbai financial services', 'Confirm current NMIMS BBA fees with our counsellor before deciding'],
@@ -323,6 +329,24 @@ export const PAIRS: Record<string, PairConfig> = {
     ],
     verdictA: ['You want a named specialisation on your transcript rather than a general MCA', 'Cloud computing or cybersecurity is the field you are aiming at', 'NIRF University rank matters to you, and of the two only MUJ holds one'],
     verdictB: ['A general MCA meets your goal and the fee in the table above decides it', 'You want the Manipal group name on a shorter and simpler programme', 'You do not need a named track to reach the role you are targeting'],
+  },
+  'manipal-jaipur-vs-sikkim-manipal': {
+    uniA: 'manipal-university-jaipur-online',
+    uniB: 'sikkim-manipal-university-online',
+    program: 'MBA',
+    defaultSpec: 'finance',
+    syllabus: true,
+    brandEdifyeduIn: true,
+    relatedBlog: { href: '/blog/online-manipal-mba-review-2026', label: 'Online Manipal MBA review: MAHE vs MUJ vs SMU' },
+    faqs: [
+      { q: 'Are MUJ and Sikkim Manipal the same university?', a: 'No. Manipal University Jaipur and Sikkim Manipal University are separate universities. Both sit in the Manipal group and both run their online MBA on Online Manipal, but each is accredited separately and each issues its own degree. Both hold NAAC A+ and both are UGC-DEB entitled for online delivery.' },
+      { q: 'Which online MBA costs less, MUJ or SMU?', a: 'SMU costs less. The Side-by-Side table above shows both programme fees from our data, and the MUJ fee table on its review page shows the 15% discount MUJ offers. Talk to our counsellor for your intake’s fee.' },
+      { q: 'Which has more MBA specialisations?', a: 'MUJ lists 13 specialisations, including Analytics and Data Science, Digital Marketing and Project Management. SMU lists 6: Marketing, Finance, Human Resource Management, Systems (IT Management), Operations and Supply Chain Management, and Healthcare.' },
+      { q: 'Does either hold a NIRF rank?', a: 'Manipal University Jaipur holds NIRF 2025 University #58 and Management #81 in its own name. Sikkim Manipal University holds no NIRF rank in 2025. Check both on nirfindia.org.' },
+      { q: 'How different is the syllabus?', a: 'The syllabus table on this page lists the core papers we hold for semesters 1 and 2 at each university. Semesters 3 and 4 depend on the specialisation you pick at either university.' },
+    ],
+    verdictA: ['You want a wider choice of specialisations (13 against 6)', 'A NIRF rank in the university’s own name matters to you (MUJ: University #58, Management #81)', 'Analytics, digital marketing or project management is the track you want'],
+    verdictB: ['The lower fee decides it', 'One of SMU’s six tracks, such as Healthcare or Systems (IT Management), covers your goal', 'You want the Manipal group name at the lowest fee in the group'],
   },
   'amity-vs-manipal-jaipur-mca': {
     uniA: 'amity-university-online',
