@@ -10,6 +10,7 @@ import { getExactFee, formatExactFeeShort } from '@/lib/fees'
 import { pageKeywords } from '@/lib/page-keywords'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
+import { isSpecNoindexed } from '@/lib/seo/spec-noindex'
 import { formatUniversityDisplayName } from '@/lib/format'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
@@ -59,7 +60,7 @@ export async function generateMetadata(
     ),
     description: shouldIndexUniversity(u.id) ? clampDescription(`${formatUniversityDisplayName(u.name)} Online BCA in ${spec} ${year}: ${feeExact ? `${feeExact} fees` : 'fees on request'}${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved 3-year degree. Check syllabus, eligibility & career scope free.`) : unverifiedDescription(u.name, 'BCA'),
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/bca/${canonicalSlug}` },
-    robots: { index: shouldIndexUniversity(u.id), follow: true },
+    robots: { index: shouldIndexUniversity(u.id) && !isSpecNoindexed(u.id, 'bca', canonicalSlug), follow: true },
   }
 }
 

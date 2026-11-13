@@ -11,6 +11,7 @@ import { getExactFee, formatExactFeeShort } from '@/lib/fees'
 import { pageKeywords } from '@/lib/page-keywords'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
+import { isSpecNoindexed } from '@/lib/seo/spec-noindex'
 import { formatUniversityDisplayName } from '@/lib/format'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
@@ -73,7 +74,7 @@ export async function generateMetadata(
     keywords: syllabus?.metaKeywords || undefined,
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/mca/${canonicalSlug}` },
     openGraph: { title, description, type: 'website' },
-    robots: { index: shouldIndexUniversity(u.id), follow: true },
+    robots: { index: shouldIndexUniversity(u.id) && !isSpecNoindexed(u.id, 'mca', canonicalSlug), follow: true },
   }
 }
 

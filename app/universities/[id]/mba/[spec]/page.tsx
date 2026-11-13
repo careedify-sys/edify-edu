@@ -11,6 +11,7 @@ import { getExactFee, formatExactFeeShort } from '@/lib/fees'
 import { pageKeywords } from '@/lib/page-keywords'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
+import { isSpecNoindexed } from '@/lib/seo/spec-noindex'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
 export async function generateStaticParams() {
@@ -77,7 +78,7 @@ export async function generateMetadata(
       images: [{ url: '/og.webp', width: 1200, height: 630 }],
     },
     twitter: { card: 'summary_large_image', title, description },
-    robots: { index: shouldIndexUniversity(u.id), follow: true },
+    robots: { index: shouldIndexUniversity(u.id) && !isSpecNoindexed(u.id, 'mba', canonicalSlug), follow: true },
   }
 }
 

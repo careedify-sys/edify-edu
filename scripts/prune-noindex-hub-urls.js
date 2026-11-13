@@ -202,6 +202,14 @@ function hasContentJson(uniId, program) {
   return fs.existsSync(path.join(PAGE_CONTENT_DIR, `${key}.json`))
 }
 
+// Invariant (c), 2026-11-14: specialisation pages listed in
+// lib/data/spec-noindex-urls.json emit noindex (app/universities/[id]/[program]/[spec]/page.tsx),
+// so they must never be in valid-urls.json. build-valid-urls.js regenerates the
+// file on every build, so the removal has to live here, not as a one-off edit.
+const SPEC_NOINDEX = new Set(
+  JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'lib', 'data', 'spec-noindex-urls.json'), 'utf8')).urls,
+)
+
 function shouldIndexHub(u, program) {
   return hasContentJson(u.id, program) || feeOk(u, program)
 }
@@ -302,6 +310,8 @@ for (const u of universities) {
     }
   }
 }
+// Invariant (c): the noindexed spec pages join the same never-both set.
+for (const u of SPEC_NOINDEX) noindexHubUrls.add(u)
 
 // Load programme allowlists, the middleware-404 truth. (Invariant b) Empty
 // map if any allowlist is missing; the prebuild chain (package.json) runs

@@ -16,7 +16,7 @@ Source plan: "edifyedu.in ranking and scaling plan, with check log" (Rishi, 14 N
 
 | # | Item | Waiting on |
 |---|---|---|
-| 2.1 | Noindex the zero-click near-copy spec pages (draft: 793) and remove them from valid-urls.json together | Rishi confirms the keep list (draft uses the 29 universities with a review blog) |
+| 2.1 | Noindex the zero-click near-copy spec pages and remove them from valid-urls.json together | Done on the branch, 14 Nov. Keep list (Rishi): every universityId in lib/coupons.ts (29) plus Mody and Sathyabama = 31. 686 noindexed (lib/data/spec-noindex-urls.json), 513 to improve (audits/spec-improve-worklist-2026-11-14.csv). Live once 2.2 merges |
 | 2.2 | Merge `feat/branded-sprint-1` to main (one deploy) | Rishi |
 | 2.3 | Programme-basics posts: course guide, fees, admission process, salary for MBA, BBA, BCA, MCA (16) | "Approve going deep" box |
 | 2.4 | /programs/mba answers fees, cheapest, one-year, best, with a fee table from lib/data.ts | Same |
@@ -45,7 +45,7 @@ Source plan: "edifyedu.in ranking and scaling plan, with check log" (Rishi, 14 N
 | 5 Dec 2026 | Title freeze on the eight review posts ends | Search Console Queries for the eight reviews, 28 days | Change a review title only if its target query sits at 8 to 20 with CTR under 1% | Not checked |
 | 7 Dec 2026 | Brand searches, monthly | Queries containing "edify", last 28 days | Baseline about 13 a month. Track the trend | Not checked |
 | 12 Dec 2026 | Owner pages: is Google ranking the right page? NMIMS worth-it post | Semrush Organic Positions for edifyedu.in by university name, Search Console Queries and Pages | Pass: review ranks for "[university] online mba fees" better than baseline, repeat owner links for the next 10 universities; worth-it post at 20 or better, write Amity and MUJ. Fail: bring the data before any merge, redirect or more posts | Not checked |
-| 26 Dec 2026 | Specialisation batch 1 (the 432 kept pages) | Worklist CSV and Search Console Pages | Universities not improved by now get noindexed; improved pages kept if they gained impressions | Not checked |
+| 26 Dec 2026 | Specialisation batch 1 (the 513 kept pages) | audits/spec-improve-worklist-2026-11-14.csv and Search Console Pages | Universities not improved by now get noindexed; improved pages kept if they gained impressions | Not checked |
 | 9 Jan 2027 | Full re-test against the baseline | Same Semrush exports (edifyedu.in, CollegeVidya, CollegeSathi) and Search Console 3 months | Scale the page types that moved; stop the ones that did not | Not checked |
 
 ## Baseline (from the plan, for every check)
@@ -56,3 +56,4 @@ Search Console 11 Aug to 10 Nov: 12,855 clicks, 2,663,474 impressions; tools 8,2
 
 - 14 Nov: tracker created; reminders set for all seven check dates.
 - 14 Nov: Batch 1 done on feat/branded-sprint-1 (a2f3806, 7a4ed72, adb2848, 3311957, caff545); build passes; branch pushed, not merged.
+- 14 Nov: 2.1 applied on the branch: 686 spec pages noindex, out of valid-urls.json (2,153 URLs) and the sitemap; 513 on the improve worklist. Verified on a local build: 686/686 noindex, 513/513 index.
