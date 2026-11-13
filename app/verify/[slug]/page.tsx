@@ -22,6 +22,13 @@ import { VerifyAdvisory } from '@/components/verify/VerifyAdvisory';
 import { UgcDebContacts } from '@/components/verify/UgcDebContacts';
 import advisoryData from '@/lib/data/verify-advisories.json';
 import { UniversityVideo } from '@/components/YouTubeVideo'
+import OwnerMbaSentence from '@/components/OwnerMbaSentence'
+import verifySlugMap from '@/lib/data/verify-slug-map.json'
+
+// lib/data.ts id for a verify slug, from the committed map (scripts/build-verify-slug-map.mjs).
+// getUniversityForVerifySlug only knows the override list, which misses NMIMS, MUJ and Symbiosis.
+const siteIdForVerifySlug = (slug: string): string | undefined =>
+  Object.entries(verifySlugMap as Record<string, string>).find(([, v]) => v === slug)?.[0]
 
 const ADVISORIES = (advisoryData as {
   advisories: Record<string, {
@@ -311,6 +318,7 @@ export default async function VerifyPage({ params }: PageProps) {
               <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: `1px solid ${brand.creamBorder}` }}>
                 <AboutUniversity
                   universityName={university.name}
+                  extra={<OwnerMbaSentence id={siteUni?.id ?? siteIdForVerifySlug(slug)} />}
                   description={university.description}
                   knownFor={university.known_for}
                   historySummary={university.history_summary}

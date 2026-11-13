@@ -5,9 +5,11 @@ type Props = {
   knownFor: string | null;
   historySummary: string | null;
   universityName: string;
+  // A sentence appended to the overview paragraph (OwnerMbaSentence).
+  extra?: React.ReactNode;
 };
 
-export function AboutUniversity({ description, knownFor, historySummary, universityName }: Props) {
+export function AboutUniversity({ description, knownFor, historySummary, universityName, extra }: Props) {
   if (!description && !knownFor && !historySummary) return null;
 
   return (
@@ -26,7 +28,7 @@ export function AboutUniversity({ description, knownFor, historySummary, univers
               OVERVIEW
             </div>
             <p style={{ fontSize: 14, color: brand.textBody, lineHeight: 1.65, margin: 0 }}>
-              {description}
+              {description}{extra ? <> {extra}</> : null}
             </p>
           </div>
         )}
