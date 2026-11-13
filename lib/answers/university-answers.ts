@@ -270,7 +270,7 @@ function q1(u: University, n: string): AnswerSection {
     table: { head: ['Fee item', 'Amount'], rows },
     notPublished: 'Not recorded on edifyedu.in: registration, examination or alumni charges outside the programme fee.',
     footnote: checked ? `Fee data last checked: ${checked}` : undefined,
-    faq: { q: `What is the total fee of ${n} online MBA?`, a: `${n} online MBA: ${total}. Fees are indicative, so confirm the current figure with our counsellor before you pay.` },
+    faq: { q: `What is the total fee of ${n} online MBA?`, a: `${n} online MBA: ${total}. Fees change by intake. Talk to our counsellor for your intake’s fee.` },
     sources: [`lib/fees.ts getExactFee kind=${fee.kind}`], backed: true,
   }
 }

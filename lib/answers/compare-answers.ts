@@ -132,7 +132,7 @@ export function buildPairAnswers(p: PairInput): PairAnswers {
   const facts = factList.slice(0, -1).join(', ') + ' and ' + factList[factList.length - 1]
   sections.push({
     key: 'side-by-side', q: 'X', heading: `${nA} vs ${nB} online MBA: fees, approvals and exams side by side`,
-    lead: fitLead([`The table compares the ${nA} and ${nB} online MBA on ${facts}, the points edifyedu.in holds a source for.`, 'A "Not published" cell means we hold no figure, not that the university lacks one.'], ['Fees are indicative, so confirm them with our counsellor before you pay.', 'Check approvals on the official registers.', 'Nothing here is a paid ranking.']),
+    lead: fitLead([`The table compares the ${nA} and ${nB} online MBA on ${facts}, the points edifyedu.in holds a source for.`, 'A "Not published" cell means we hold no figure, not that the university lacks one.'], ['Fees change by intake, so talk to our counsellor for your intake’s fee.', 'Check approvals on the official registers.', 'Nothing here is a paid ranking.']),
     table: { head: ['', nA, nB], rows },
     notPublished: (PLACEMENT_FACTS[uA.id]?.status === 'outcomes-unlabelled' || PLACEMENT_FACTS[uB.id]?.status === 'outcomes-unlabelled')
       ? 'Not published by either university for its online MBA specifically: a placement rate or median salary for online MBA graduates.'

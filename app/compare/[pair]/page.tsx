@@ -112,7 +112,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
   // table below, so the two cannot disagree. The hand-written answers quoted
   // unlabelled ranges (LPU "Rs 1,61,600 to Rs 2,00,000") and savings derived
   // from them; a suppressed fee now quotes no number at all.
-  const feeAnswer = `${nameA}: ${formatExactFee(feeA) ?? 'contact our counsellor for current fee details'}. ${nameB}: ${formatExactFee(feeB) ?? 'contact our counsellor for current fee details'}. Fees are indicative, so confirm the current figure on each university's official portal.`
+  const feeAnswer = `${nameA}: ${formatExactFee(feeA) ?? 'contact our counsellor for current fee details'}. ${nameB}: ${formatExactFee(feeB) ?? 'contact our counsellor for current fee details'}. Fees change by intake. Talk to our counsellor for your intake’s fee.`
   const faqs = config.faqs.map(f =>
     /fee|cost|cheap|expens|price|afford/i.test(f.q) && /(Rs|₹)\s?[\d,.]+/.test(f.a) ? { q: f.q, a: feeAnswer } : f,
   )
@@ -149,7 +149,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
   const courseSchemaA = {
     '@context': 'https://schema.org', '@type': 'Course',
     name: `Online ${prog} - ${uA.name}`,
-    description: `Online ${prog} from ${uA.name}, compared with ${uB.name} on fees, specialisations and approvals. Fees are indicative, so confirm them on the official portal.`,
+    description: `Online ${prog} from ${uA.name}, compared with ${uB.name} on fees, specialisations and approvals. Talk to our counsellor for your intake’s fee.`,
     provider: { '@type': 'Organization', name: uA.name, sameAs: `https://edifyedu.in/universities/${uA.id}` },
     educationalCredentialAwarded: prog,
     // Schema fees go through getProgramSchemaOffer (getDisplayFee). Course info needs offers.category and
@@ -160,7 +160,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
   const courseSchemaB = {
     '@context': 'https://schema.org', '@type': 'Course',
     name: `Online ${prog} - ${uB.name}`,
-    description: `Online ${prog} from ${uB.name}, compared with ${uA.name} on fees, specialisations and approvals. Fees are indicative, so confirm them on the official portal.`,
+    description: `Online ${prog} from ${uB.name}, compared with ${uA.name} on fees, specialisations and approvals. Talk to our counsellor for your intake’s fee.`,
     provider: { '@type': 'Organization', name: uB.name, sameAs: `https://edifyedu.in/universities/${uB.id}` },
     educationalCredentialAwarded: prog,
     offers: { category: 'Online Education', ...(getProgramSchemaOffer(uB, prog as Program) ?? { '@type': 'Offer', priceCurrency: 'INR' }) },
