@@ -27,8 +27,10 @@ export interface ProgramDetail {
   specs: SpecValue[]
   fees: string
   roles: string[]
-  avgSalary: string
-  topCompanies: string[]
+  // Optional: removed where nobody has a source (Amity, 2026-11-13). Every
+  // reader skips the line or tile when it is missing.
+  avgSalary?: string
+  topCompanies?: string[]
   internshipType: string
   careerOutcome: string
   syllabus?: any
@@ -195,6 +197,12 @@ export interface University {
    * the only date the "Fees checked on" line may print.
    */
   feePlans?: Partial<Record<'mba', FeePlan[]>>
+  /**
+   * Amounts paid at admission that are part of the programme fee, not on top
+   * of it. Read by lib/first-hand.ts to fill {{registration}} / {{initial}} in
+   * the admission steps. Never add one to a fee total.
+   */
+  admissionPayments?: Partial<Record<'registration' | 'initial', { amount: number; adjustedInProgrammeFee: true; source: string }>>
   /**
    * NIRF ranks held by a constituent school of this university's umbrella
    * institution, never by the online school itself. Display only with the
@@ -475,6 +483,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // Registration is included in the programme fee (Amity's own statement),
     // so no separate registration row. Construction Project Management keeps
     // the figures in the review post and has no page or track here.
+    // Registration ₹1,100, adjusted in the programme fee (Amity's own
+    // statement, kept in the plan notes). Rendered in the MBA hub's admission steps.
+    admissionPayments: { registration: { amount: 1100, adjustedInProgrammeFee: true, source: 'Rishi, confirmed 2026-11-13' } },
     feePlans: {
       mba: [
         {
@@ -525,13 +536,15 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 8906,
     eligibility: 'Graduation with 40% marks (below 40%, Amity’s internal eligibility test)',
     eligibilityPct: 40,
-    tagline: 'ONLY QS-ranked online MBA in India offering 19 specialisations – highest count nationally; WASC (USA) + WES',
+    tagline: 'Online MBA with 19 specialisations from Amity University Uttar Pradesh, accredited by WASC (USA) and QAA (UK)',
     description: 'UGC DEB approved online programs from Amity University Online. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
-    forWho: ['Working professionals or graduates wanting domain flexibility across 19 specialisations'],
+    forWho: ['Working professionals who want a well-known degree that is recognised in India and abroad. If your goal is a promotion, a move to a better role, or a degree that holds up overseas, Amity\'s brand and international accreditations help.'],
     notFor: ['Those who want a very deep niche curriculum', 'prefer breadth over depth'],
     qsRank: 45,
     programs: ['MBA', 'MCA', 'BBA', 'BCA', 'B.Com'],
     programDetails: {
+      // avgSalary and topCompanies removed 2026-11-13 for every Amity programme:
+      // Amity's own site names different hiring partners and nobody has a source.
       'MBA': {
         specs: [
           { slug: 'business-analytics', name: 'Business Analytics' },
@@ -557,8 +570,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹2.07L–₹2.25L',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Executive'],
-        avgSalary: '₹5L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'HCL Tech', 'Reliance', 'Accenture', 'PwC', 'EY', 'HDFC Bank', 'SBI', 'Tech Mahindra'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Amity University Online, recognised for corporate hiring.'},
       'MCA': {
@@ -566,8 +577,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹1.99L',
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
-        avgSalary: '₹4L – ₹14L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Amity University, recognised for corporate hiring.',
       },
@@ -579,8 +588,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹1.99L',
         duration: '3 Years',
         roles: ['Sales Executive', 'Marketing Trainee', 'Business Development Executive'],
-        avgSalary: '₹3L – ₹6L per annum',
-        topCompanies: ['TCS', 'Infosys', 'HCL Tech', 'Reliance', 'Accenture', 'PwC', 'EY', 'HDFC Bank', 'SBI', 'Tech Mahindra'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BBA from Amity University Online, recognised for corporate hiring.',
       },
@@ -589,8 +596,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹1.75L',
         duration: '3 Years',
         roles: ['Junior Developer', 'Software Trainee', 'IT Support'],
-        avgSalary: '₹3L – ₹7L per annum',
-        topCompanies: ['TCS', 'Infosys', 'HCL Tech', 'Reliance', 'Accenture', 'PwC', 'EY', 'HDFC Bank', 'SBI', 'Tech Mahindra'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BCA from Amity University Online, recognised for corporate hiring.',
       },
@@ -599,8 +604,6 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹1.15L',
         duration: '3 Years',
         roles: ['Accounts Executive', 'Tax Assistant', 'Audit Trainee'],
-        avgSalary: '₹3L – ₹6L per annum',
-        topCompanies: ['TCS', 'Infosys', 'HCL Tech', 'Reliance', 'Accenture', 'PwC', 'EY', 'HDFC Bank', 'SBI', 'Tech Mahindra'],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved B.Com from Amity University Online, recognised for corporate hiring.',
       }

@@ -597,7 +597,8 @@ function UniCard({
   const pd = u.programDetails?.[program]
   const specs = pd?.specs || []
   const companies = pd?.topCompanies || []
-  const salary = pd?.avgSalary || (program === 'MCA' ? '₹4L – ₹10L' : '₹5L – ₹12L')
+  // No invented fallback range: a university without a sourced salary shows no salary row.
+  const salary = pd?.avgSalary
   const color = SLOT_COLORS[idx]
 
   return (
@@ -634,6 +635,7 @@ function UniCard({
           <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider block mb-2">Approvals</span>
           <ApprovalBadges approvals={u.approvals} />
         </div>
+        {salary && (
         <div className="px-4 py-3 flex items-center justify-between gap-2">
           <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Avg Salary</span>
           <span className="text-sm font-bold text-slate-800 flex items-center gap-1">
@@ -641,6 +643,7 @@ function UniCard({
             {salary}
           </span>
         </div>
+        )}
         {specs.length > 0 && (
           <div className="px-4 py-3">
             <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider block mb-2">{specs.length} Specialisations</span>
@@ -818,7 +821,8 @@ function CompareContent() {
   }
 
   function SalaryDisplay({ u }: { u: University }) {
-    const salary = u.programDetails?.[program]?.avgSalary || (program === 'MCA' ? '₹4L – ₹10L' : '₹5L – ₹12L')
+    const salary = u.programDetails?.[program]?.avgSalary
+    if (!salary) return <span className="text-slate-400 text-xs">Not published</span>
     return (
       <span className="text-sm font-bold text-slate-800 flex items-center gap-1">
         <ArrowUp size={13} className="text-green-500" />
