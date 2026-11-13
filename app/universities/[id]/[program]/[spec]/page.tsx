@@ -10,6 +10,7 @@ import { getExactFee, formatExactFeeShort } from '@/lib/fees'
 import UniSpecBody from '@/components/UniSpecBody'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
+import { isSpecNoindexed } from '@/lib/seo/spec-noindex'
 
 const PM: Record<string, Program> = {
   'mba': 'MBA', 'mca': 'MCA', 'bba': 'BBA', 'bca': 'BCA', 'ba': 'BA',
@@ -81,7 +82,10 @@ export async function generateMetadata(
       title, description, type: 'website',
       images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630 }],
     },
-    robots: { index: shouldIndexUniversity(u.id), follow: true },
+    robots: {
+      index: shouldIndexUniversity(u.id) && !isSpecNoindexed(u.id, programSlug, canonicalSlug),
+      follow: true,
+    },
   }
 }
 

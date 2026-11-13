@@ -12,6 +12,7 @@ import MujCouponTopUrgency from '@/components/coupons/MujCouponTopUrgency'
 import MujCouponMidReassurance from '@/components/coupons/MujCouponMidReassurance'
 import MujCouponEndCta from '@/components/coupons/MujCouponEndCta'
 import { UniversityVideo } from '@/components/YouTubeVideo'
+import OwnerMbaSentence from '@/components/OwnerMbaSentence'
 
 // Slug-conditional CTAs for high-CTR coupon pages. Component-injected so
 // the data layer in lib/coupon-pages.ts stays clean.
@@ -302,7 +303,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
             Many &quot;{page.shortName} online MBA coupon code&quot; or &quot;{page.shortName} MBA discount {year}&quot; offers are really scholarships. Those come with their own rules and documents. This page lists only the coupon of up to Rs {tierMax.toLocaleString('en-IN')}, with no paperwork.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            For fee details and university scholarships, contact {page.universityName} admissions directly.
+            For fee details and university scholarships, contact {page.universityName} admissions directly.{' '}<OwnerMbaSentence id={page.universityId} />
           </p>
           <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 mb-4">
             <p className="text-xs text-amber-800"><strong>How the coupon works:</strong> the amount depends on the day. On Tuesday and Saturday (IST) it is Rs {tierMax.toLocaleString('en-IN')}. On other days it is Rs {tierBase.toLocaleString('en-IN')}.</p>

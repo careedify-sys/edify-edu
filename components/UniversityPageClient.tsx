@@ -28,6 +28,7 @@ import type { ResolvedFirstHand } from '@/lib/first-hand'
 import { stripLinks } from '@/lib/link-markup'
 import FirstHandUniversitySections from '@/components/FirstHandUniversitySections'
 import { FirstHandText } from '@/components/FirstHandShared'
+import OwnerMbaSentence from '@/components/OwnerMbaSentence'
 
 const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')
 
@@ -410,7 +411,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                   {cleanName} Online Programs: Fees & Reviews 2026
                 </h2>
                 <p className="text-ink-2 text-[15px] leading-relaxed mb-4">
-                  {u.description}
+                  {u.description}{' '}<OwnerMbaSentence id={u.id} />
                 </p>
                 {answerHtml ? <div dangerouslySetInnerHTML={{ __html: answerHtml }} /> : null}
                 <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 mt-6">

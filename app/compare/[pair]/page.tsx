@@ -18,6 +18,8 @@ import { buildPairAnswers } from '@/lib/answers/compare-answers'
 import { sectionHtml } from '@/lib/answers/render-html'
 import { FROZEN_UNIVERSITIES } from '@/lib/answers/targets'
 import { UniversityVideo } from '@/components/YouTubeVideo'
+import OwnerMbaSentence from '@/components/OwnerMbaSentence'
+import { MBA_OWNER_LINKS } from '@/lib/mba-owner-links'
 import { coreSemesters } from '@/lib/answers/university-answers'
 
 export const revalidate = false
@@ -223,6 +225,8 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
             {nameA} ({uA.naac}, NIRF {nirfDisplay(uA, prog)}) and {nameB} ({uB.naac}, NIRF {nirfDisplay(uB, prog)}) are
             both UGC-DEB approved for online {prog}.
             {feePhrase(feeA) && feePhrase(feeB) ? ` ${nameA} costs ${feePhrase(feeA)}; ${nameB} costs ${feePhrase(feeB)}.` : ''}
+            {prog === 'MBA' && MBA_OWNER_LINKS[uA.id] && <>{' '}<OwnerMbaSentence id={uA.id} /></>}
+            {prog === 'MBA' && MBA_OWNER_LINKS[uB.id] && <>{' '}<OwnerMbaSentence id={uB.id} second={!!MBA_OWNER_LINKS[uA.id]} /></>}
             {' '}Scroll down for a side-by-side breakdown and our pick-by-profile recommendation.
           </p>
         </div>
