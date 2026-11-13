@@ -56,6 +56,7 @@ import { feeSentence, emiSentence, programmeEmiFrom, NO_PROGRAMME_EMI } from '@/
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { resolveFirstHand, fillFeeTokens } from '@/lib/first-hand'
 import FirstHandMbaSections from './FirstHandMbaSections'
+import DebIdBlock from './DebIdBlock'
 
 interface Props {
   u: University
@@ -443,6 +444,9 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                   <div className="text-sm text-slate-600 leading-relaxed whitespace-pre-line">{s.abcId.body}</div>
                 </section>
               )}
+
+              {/* §13C UGC-DEB ID, every hub */}
+              <DebIdBlock />
 
               {/* §14 Placements */}
               <div id="placement">
