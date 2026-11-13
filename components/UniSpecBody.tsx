@@ -332,10 +332,17 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
 
   // Exact rupees via getExactFee; this FAQ printed raw pd.fees ("₹1.61L–₹2.00L")
   // or a "₹{feeMin/1000}K+" built from the MBA-led feeMin.
-  const specFeeText = formatExactFee(getExactFee(u, program as Program))
+  // A track priced apart from the programme (Amity premium tracks) answers with
+  // its own plan, the same rows the fee table and the hero tile show.
+  const ownPlan = getFeePlans(u, program, specSlug).find(p => p.specs?.includes(specSlug))
+  const ownOneTime = ownPlan?.rows.find(r => /one-time/i.test(r.mode))?.total
+  const ownSemester = ownPlan?.rows.find(r => /semester/i.test(r.mode))?.total
+  const specFeeText = ownOneTime
+    ? `₹${ownOneTime.toLocaleString('en-IN')} paid one-time${ownSemester ? `, or ₹${ownSemester.toLocaleString('en-IN')} paid by semester` : ''}`
+    : formatExactFee(getExactFee(u, program as Program))
   const templateFaqs: { q: string; a: string }[] = [
     { q: `Is ${cleanName} Online ${program} in ${spec} valid for jobs?`, a: `Yes. ${cleanName} is UGC DEB approved${u.naac ? ` and NAAC ${u.naac} accredited` : ''}. The degree is identical to an on-campus degree.` },
-    { q: `What is the fee for ${program} ${spec} at ${cleanName}?`, a: `${specFeeText ? `Total fee is ${specFeeText}.` : 'The fee for the current intake is not published on this page yet.'} ${emiSentence(programmeEmiFrom(u, program), program === 'MBA' ? undefined : NO_PROGRAMME_EMI)}` },
+    { q: `What is the fee for ${program} ${spec} at ${cleanName}?`, a: `${specFeeText ? `Total fee is ${specFeeText}.` : 'The fee for the current intake is not published on this page yet.'} ${emiSentence(ownPlan?.rows.find(r => /emi/i.test(r.mode))?.instalment ?? programmeEmiFrom(u, program), program === 'MBA' ? undefined : NO_PROGRAMME_EMI)}` },
     { q: `Can I work while doing ${program} in ${spec} from ${cleanName}?`, a: `Yes. Live sessions on weekends, recordings available 24/7. ${u.examMode} assessments. No campus visits required.` },
     { q: `What career opportunities does ${spec} specialisation offer?`, a: specContent?.careerBeginner?.length ? `${specContent.careerBeginner[0]?.title} and other roles. ${specContent.salaryRange || ''}` : `Graduates typically enter ${spec}-related roles with salary ranges of ${pd.avgSalary || '₹4L–₹12L'} depending on experience.` },
     { q: `What syllabus is covered in ${spec} specialisation?`, a: specContent?.skills?.length ? `Key areas include: ${specContent.skills.slice(0, 5).join(', ')}.` : `The specialisation covers core ${spec} subjects along with project work and industry case studies.` },
