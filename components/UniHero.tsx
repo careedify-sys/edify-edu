@@ -15,6 +15,9 @@ interface Props {
   pd: ProgramDetail
   cleanName: string
   spec?: string
+  // URL slug of the specialisation. A fee plan that names this slug (Amity's
+  // premium tracks) replaces the programme-wide fee in the Total Fees tile.
+  specSlug?: string
   customH1?: string
   h1Variant?: 'admission'
   // Brand segment for the generated H1 when u.name drops the searched form
@@ -22,7 +25,7 @@ interface Props {
   h1Name?: string
 }
 
-export default function UniHero({ u, program, pd, cleanName, spec, customH1, h1Variant, h1Name }: Props) {
+export default function UniHero({ u, program, pd, cleanName, spec, specSlug, customH1, h1Variant, h1Name }: Props) {
   const specs  = pd.specs || []
   const level  = getProgramLevel(program)
   const logoPath: string | undefined = (LOGOS_MANIFEST as Record<string, string>)[u.id]
@@ -60,7 +63,12 @@ export default function UniHero({ u, program, pd, cleanName, spec, customH1, h1V
     ? `${program} with ${spec} specialisation from ${cleanName}. UGC DEB approved.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}`
     : (cleanCareerOutcome(pd.careerOutcome || '') || `Advance your career with an Online ${program} from ${cleanName}. Choose from ${specs.length}+ industry-relevant specialisations. Study while working.`)
 
-  const eligibilityLabel = ['MBA', 'MCA'].includes(program) ? 'Grad + 50%' : '10+2 + 50%'
+  // MBA reads u.eligibilityPct (Amity is 40%, not the 50% this tile printed
+  // for every university). 0 means we hold no figure, so no percentage is shown.
+  // MCA and UG programmes keep the old labels until their own data exists.
+  const eligibilityLabel = program === 'MBA'
+    ? (u.eligibilityPct > 0 ? `Grad + ${u.eligibilityPct}%` : 'Graduation')
+    : program === 'MCA' ? 'Grad + 50%' : '10+2 + 50%'
 
   // Exact rupees, discount or payment mode labelled (getExactFee). This read
   // getDisplayFee's compact form, so Uttaranchal showed "₹99.6K-₹1.48L", and
@@ -68,8 +76,15 @@ export default function UniHero({ u, program, pd, cleanName, spec, customH1, h1V
   // The tile shows the short token large and the label small underneath, so
   // a long labelled fee does not wrap into a column at 22px.
   const exactFee = getExactFee(u, program as Program)
-  const feeValue = formatExactFeeShort(exactFee) ?? FEE_COUNSELLOR_LINE
-  const feeDetail = formatExactFeeDetail(exactFee)
+  // Same plan getFeePlans picks for the page's fee table, so tile and table agree.
+  const specPlan = specSlug
+    ? u.feePlans?.[program.toLowerCase() as 'mba']?.find(p => p.specs?.includes(specSlug))
+    : undefined
+  const specOneTime = specPlan?.rows.find(r => /one-time/i.test(r.mode))?.total
+  const feeValue = specOneTime
+    ? `₹${specOneTime.toLocaleString('en-IN')}`
+    : formatExactFeeShort(exactFee) ?? FEE_COUNSELLOR_LINE
+  const feeDetail = specOneTime ? 'one-time payment, this track' : formatExactFeeDetail(exactFee)
 
   const stats = [
     { label: 'Total Fees', value: feeValue, highlight: true, sub: feeDetail },

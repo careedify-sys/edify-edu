@@ -5661,7 +5661,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Degree Recognition</h2>
 
-<p>The Symbiosis university online MBA from SSODL is UGC-DEB entitled. Under the 2020 UGC notification, degrees from UGC-DEB approved universities are legally equivalent to regular campus degrees. The degree is valid for government job applications including UPSC, SSC, state PSC exams, banking, and railways. It is also valid for PhD admission in India and recognised abroad for further study, subject to the requirements of each institution. Verify current approval status and accreditation details on the <a href="/verify" class="ilink">EdifyEdu UGC-DEB verification tool</a>.</p>
+<p>The Symbiosis university online MBA from SSODL is UGC-DEB entitled. Under the 2020 UGC notification, degrees from UGC-DEB approved universities are legally equivalent to regular campus degrees. The degree is valid for government job applications including UPSC, SSC, state PSC exams, banking, and railways. It is also valid for PhD admission in India and recognised abroad for further study, subject to the requirements of each institution. Verify current approval status and accreditation details on the <a href="/verify" class="ilink">edifyedu.in UGC-DEB verification tool</a>.</p>
 
 <h2>Who This Program Tends to Suit</h2>
 
@@ -5824,7 +5824,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <li><strong>Manipal University Jaipur:</strong> Rs 1.84L</li>
 </ul>
 
-<p>NMIMS sits in the mid-range. Cheaper than Symbiosis and Amity, slightly more expensive than MUJ. For the NIRF #24 Management 2025 rank, the pricing is competitive. You can estimate your monthly outflow using the <a href="/tools/emi-calculator">EdifyEdu EMI calculator</a>.</p>
+<p>NMIMS sits in the mid-range. Cheaper than Symbiosis and Amity, slightly more expensive than MUJ. For the NIRF #24 Management 2025 rank, the pricing is competitive. You can estimate your monthly outflow using the <a href="/tools/emi-calculator">edifyedu.in EMI calculator</a>.</p>
 
 <h2>The 7 Specialisations: Which One Fits You?</h2>
 
@@ -5927,7 +5927,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="cta-box">
 <p><strong>Want an unbiased second opinion before you commit Rs 2L?</strong></p>
-<p>EdifyEdu is not an admission partner for any university. We compare public data. That is it.</p>
+<p>edifyedu.in is not an admission partner for any university. We compare public data. That is it.</p>
 <div class="cta-box" style="background:#0C2A55;color:#fff;padding:24px;border-radius:16px;margin:20px 0">
 <h4 style="margin:0 0 8px;font-size:16px">Talk to a real counsellor</h4>
 <p style="font-size:13px;color:#94a3b8;margin:0 0 14px">No commissions. No spam. Just honest guidance.</p>

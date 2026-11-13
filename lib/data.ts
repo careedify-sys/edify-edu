@@ -490,7 +490,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         },
         {
           id: 'premium', label: 'Premium tracks (Hospital and Healthcare Management, International Finance (ACCA), Dual Specialisation)',
-          specs: ['hospital-healthcare-management', 'international-finance-acca'],
+          // healthcare-management is the indexed URL; hospital-healthcare-management 308s to it.
+          specs: ['healthcare-management', 'hospital-healthcare-management', 'international-finance-acca'],
           rows: [
             { mode: 'One-time payment', total: 302680 },
             { mode: 'Annual', instalment: 156280, count: 2, total: 312560 },

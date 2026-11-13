@@ -451,7 +451,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
         </nav>
 
         {/* Hero */}
-        <UniHero u={u} program={program} pd={pd} cleanName={cleanName} spec={spec} />
+        <UniHero u={u} program={program} pd={pd} cleanName={cleanName} spec={spec} specSlug={specSlug} />
 
         {/* Sticky section navigation */}
         <StickySectionNav items={[
