@@ -10216,6 +10216,51 @@
             ]
           }
         ]
+      },
+      "business-analytics": {
+        "semesters": [
+          {
+            "sem": 1,
+            "subjects": [
+              "Business Communication",
+              "Financial Accounting",
+              "Marketing Management",
+              "Micro Economics & Macro Economics",
+              "Organisational Behaviour",
+              "Quantitative Methods – I"
+            ]
+          },
+          {
+            "sem": 2,
+            "subjects": [
+              "Business Analytics",
+              "Cost & Management Accounting",
+              "Legal Aspect of Business",
+              "Strategic Management",
+              "Human Resource Management",
+              "Operations Management"
+            ]
+          },
+          {
+            "sem": 3,
+            "subjects": [
+              "Corporate Finance",
+              "Research Methodology",
+              "Electives 1 to 4 (Data Analytics for Business / Machine Learning for Managers / Business Process Modelling and Management / Visual Analytics / Operational and Supply Chain Analytics / Digital Leadership in the Age of Industry 5.0 / Consumer Data Analytics)"
+            ]
+          },
+          {
+            "sem": 4,
+            "subjects": [
+              "Corporate Sustainability",
+              "Indian Ethos & Ethics",
+              "International Business",
+              "Project",
+              "Electives 5 to 7 (from the same list)"
+            ]
+          }
+        ],
+        "source": "NMIMS CDOE MBA Business Analytics page, sent by Rishi 2026-11-13"
       }
     }
   },
