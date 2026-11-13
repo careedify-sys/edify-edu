@@ -24,6 +24,12 @@ node scripts/check-fee-baseline.mjs || exit 1
 
 # Blog fee ratchet. Blocks any per-slug increase in unverified blog fee
 # figures and any fee figure in a brand-new post. See scripts/check-blog-fees.mjs.
+# First-hand copy (lib/data/first-hand/): no typed rupee figures, no em
+# dashes, and the UGC-DEB extract behind the approvals table matches the
+# workbook. See scripts/check-first-hand.mjs.
+echo "pre-commit: check-first-hand"
+node scripts/check-first-hand.mjs || exit 1
+
 echo "pre-commit: check-blog-fees"
 npx tsx scripts/check-blog-fees.mjs || exit 1
 

@@ -63,7 +63,8 @@ for (const [id, src] of Object.entries(SOURCES)) {
 
 const text = JSON.stringify(out, null, 2) + '\n'
 if (process.argv.includes('--check')) {
-  if (!existsSync(OUT) || readFileSync(OUT, 'utf8') !== text) {
+  // Compare without line endings: a CRLF checkout of the same JSON is not stale.
+  if (!existsSync(OUT) || readFileSync(OUT, 'utf8').split('\r\n').join('\n') !== text) {
     console.error('ugc-deb-extract: lib/data/ugc-deb-extract.json is stale. Run node scripts/build-ugc-deb-extract.mjs')
     process.exit(1)
   }
