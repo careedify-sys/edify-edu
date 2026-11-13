@@ -105,7 +105,9 @@ export function feePlanTableHtml(u: University, program: Program | string = 'MBA
   const title = opts.title ?? `${name} ${program} fees by payment mode`
   return `<div class="fee-plan-table" data-uni="${esc(u.id)}" style="margin:16px 0">` +
     (title ? `<p style="margin:0 0 6px;font-weight:700;font-size:15px;color:#0f172a">${esc(title)}</p>` : '') +
-    plans.map(p => planTable(u, p, many ? p.label : null)).join('') +
+    // A note shared by every track (Amity's "registration fee is included")
+    // prints once, under the first table, not once per table.
+    plans.map((p, i) => planTable(u, i === 0 ? p : { ...p, notes: (p.notes ?? []).filter(n => !plans.slice(0, i).some(q => q.notes?.includes(n))) }, many ? p.label : null)).join('') +
     '</div>'
 }
 

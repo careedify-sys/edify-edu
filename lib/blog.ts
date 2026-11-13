@@ -23365,7 +23365,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Amity Online MBA standard-track fee by payment mode. Talk to our counsellor for your intake’s fee.</figcaption>
 </figure>
 
-<p>Amity offers four payment options for the online MBA. The most affordable is the <strong>one-time payment at ₹2,07,000</strong> (down from the standard ₹2,25,000  -- a self-pay discount of ₹18,000). Other options: annual payment at ₹1,06,880/year, per-semester at ₹56,300, or a <strong>24-month no-cost EMI at ₹8,906/month</strong>. Amity says the registration fee is included in the programme fee.</p>
+<p>Amity offers four payment options for the online MBA. The most affordable is the <strong>one-time payment at ₹2,07,000</strong> (down from the standard ₹2,25,000  -- a self-pay discount of ₹18,000). Other options: annual payment at ₹1,06,880/year, per-semester at ₹56,300, or a <strong>24-month no-cost EMI at ₹8,906/month</strong>.</p>
 
 <div data-edify="fee-plans" data-uni="amity-university-online"></div>
 
