@@ -63,12 +63,16 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
     ? `${program} with ${spec} specialisation from ${cleanName}. UGC DEB approved.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}`
     : (cleanCareerOutcome(pd.careerOutcome || '') || `Advance your career with an Online ${program} from ${cleanName}. Choose from ${specs.length}+ industry-relevant specialisations. Study while working.`)
 
-  // MBA reads u.eligibilityPct (Amity is 40%, not the 50% this tile printed
-  // for every university). 0 means we hold no figure, so no percentage is shown.
-  // MCA and UG programmes keep the old labels until their own data exists.
-  const eligibilityLabel = program === 'MBA'
-    ? (u.eligibilityPct > 0 ? `Grad + ${u.eligibilityPct}%` : 'Graduation')
-    : program === 'MCA' ? 'Grad + 50%' : '10+2 + 50%'
+  // MBA reads u.eligibility, the string the body and FAQ print, so the tile
+  // cannot disagree with them (Amity said "Grad + 50%" here and 40% below).
+  // The bracketed note becomes the small line under the value. A record with
+  // no percentage in u.eligibility keeps the old label: this round fixes
+  // disagreement, it does not re-source eligibility for every university.
+  const eligPct = program === 'MBA' ? u.eligibility?.match(/(\d{2})%/)?.[1] : undefined
+  const eligibilityLabel = eligPct
+    ? `Grad + ${eligPct}%`
+    : ['MBA', 'MCA'].includes(program) ? 'Grad + 50%' : '10+2 + 50%'
+  const eligibilityNote = eligPct ? u.eligibility.match(/\(([^)]+)\)/)?.[1] : undefined
 
   // Exact rupees, discount or payment mode labelled (getExactFee). This read
   // getDisplayFee's compact form, so Uttaranchal showed "₹99.6K-₹1.48L", and
@@ -94,7 +98,7 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
   const stats = [
     { label: 'Total Fees', value: feeValue, highlight: true, sub: feeDetail },
     { label: 'Duration',   value: pd.duration || '2 Years',       highlight: false },
-    { label: 'Eligibility', value: eligibilityLabel,              highlight: false },
+    { label: 'Eligibility', value: eligibilityLabel,              highlight: false, sub: eligibilityNote },
     { label: 'NAAC',       value: u.naac,                         highlight: false },
     ...((u as any).nirfMgt && (u as any).nirfMgt < 200
       ? [{ label: 'NIRF Mgmt', value: `#${(u as any).nirfMgt}`, highlight: false }]
