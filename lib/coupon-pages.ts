@@ -151,7 +151,7 @@ export const COUPON_PAGES: CouponPageData[] = [
       { type: 'Merit scholarship', eligibility: '60%+ graduation marks', saving: '5-15%', howToApply: 'Automatic during admission' },
       { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code MUJ2026-4K during enrollment call' },
     ],
-    stackExample: 'MUJ offers a strong 15% upfront payment discount that brings the fee from Rs 1,84,000 to Rs 1,56,400. Stack with the coupon discount (up to Rs 4,000 on Tue/Sat) for additional savings.',
+    stackExample: 'MUJ offers a strong 15% upfront payment discount that brings the fee from Rs 1,84,000 to Rs 1,56,400. Stack with the coupon discount (up to Rs 5,000 on Tue/Sat, Rs 4,000 on other days) for additional savings.',
     emiCompatible: 'Yes. MUJ offers EMI options. The coupon discount is applied to the total fee first.',
     exclusions: ['Does not apply to dual specialisation upgrade fees', 'Does not reduce exam or registration fees', 'Cannot combine with other third-party coupons'],
     faqs: [
@@ -263,7 +263,7 @@ export const COUPON_PAGES: CouponPageData[] = [
       { type: 'Northeast India scholarship', eligibility: 'Northeast India and Sikkim residents', saving: '30% fee waiver', howToApply: 'Submit domicile certificate' },
       { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code SMU2026-4K during enrollment call' },
     ],
-    stackExample: 'SMU is the most affordable Manipal-group MBA. Northeast residents save 30% automatically, bringing effective fee to Rs 84,000. Add the coupon discount (up to Rs 4,000 on Tue/Sat) on top.',
+    stackExample: 'SMU is the most affordable Manipal-group MBA. Northeast residents save 30% automatically, bringing effective fee to Rs 84,000. Add the coupon discount (up to Rs 5,000 on Tue/Sat, Rs 4,000 on other days) on top.',
     emiCompatible: 'Yes. SMU offers EMI on the reduced fee amount.',
     exclusions: ['Does not apply to executive MBA tracks', 'Cannot combine with other third-party offers'],
     faqs: [
