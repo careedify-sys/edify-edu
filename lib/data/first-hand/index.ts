@@ -2,9 +2,11 @@
 // One file per university. Add a university by importing its file here.
 import type { FirstHandUniversity } from './types'
 import { AMITY_FIRST_HAND } from './amity-university-online'
+import { NMIMS_FIRST_HAND } from './nmims-online'
 
 const FIRST_HAND: Record<string, FirstHandUniversity> = {
   [AMITY_FIRST_HAND.universityId]: AMITY_FIRST_HAND,
+  [NMIMS_FIRST_HAND.universityId]: NMIMS_FIRST_HAND,
 }
 
 /** Rishi's first-hand content for this university, or undefined when there is none. */

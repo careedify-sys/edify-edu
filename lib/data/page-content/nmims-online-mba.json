@@ -2,13 +2,13 @@
   "uniSlug": "nmims-online",
   "program": "mba",
   "sections": {
-    "tldr": "NMIMS (Narsee Monjee Institute of Management Studies) Online MBA at a glance: UGC-DEB approved, 2 Years (4-year max validity), Rs.1.96L, NIRF #24 Management, 5 specialisations. Best for finance or marketing professionals targeting a NMIMS brand name at an accessible fee.",
+    "tldr": "NMIMS's 2-year online MBA is offered by SVKM's NMIMS, a Mumbai deemed-to-be university, under UGC-DEB entitlement, with {{mbaSpecCount}} specialisations. It suits working professionals who want a reputed business school name. You must complete 75% of each subject's content before you can sit its exam.",
     "hero": {
-      "body": "NMIMS (Narsee Monjee Institute of Management Studies) Online MBA is UGC-DEB approved and NAAC A++ accredited. The 2-year programme runs entirely online with proctored exams, covers 5 specialisations, and carries the same degree wording as the on-campus programme. Fees start at Rs.1.96L (NIRF #24 Management, Mumbai). This page covers the exact syllabus, all fee slabs, admission steps, placement data, and four honest red flags so you can decide without talking to a salesperson first."
+      "body": "NMIMS (Narsee Monjee Institute of Management Studies) Online MBA is UGC-DEB approved and NAAC A++ accredited. The 2-year programme runs entirely online with proctored exams, covers {{mbaSpecCount}} specialisations, and carries the same degree wording as the on-campus programme. Fees start at Rs.1.96L (NIRF #24 Management, Mumbai). This page covers the exact syllabus, all fee slabs, admission steps, placement data, and four honest red flags so you can decide without talking to a salesperson first."
     },
     "about": {
       "heading": "About the NMIMS Online MBA",
-      "body": "NMIMS (Narsee Monjee Institute of Management Studies) Online holds the highest possible NAAC A++ grade and has been delivering education since its establishment. The online MBA programme is approved by UGC-DEB, which means the degree is legally equivalent to a regular MBA for corporate hiring and for pursuing higher education in India. The programme spans 2 Years (4-year max validity), divided into four semesters, and offers 5 specialisations. Fees are Rs.1.96L and EMI starts at Rs.2,500 per month. This page verifies figures independently. No commission is taken from NMIMS (Narsee Monjee Institute of Management Studies) Online, which means the numbers here reflect data we can actually stand behind."
+      "body": "NMIMS (Narsee Monjee Institute of Management Studies) Online holds the highest possible NAAC A++ grade and has been delivering education since its establishment. The online MBA programme is approved by UGC-DEB, which means the degree is legally equivalent to a regular MBA for corporate hiring and for pursuing higher education in India. The programme spans 2 Years (4-year max validity), divided into four semesters, and offers {{mbaSpecCount}} specialisations. Fees are Rs.1.96L and EMI starts at Rs.2,500 per month. This page verifies figures independently. No commission is taken from NMIMS (Narsee Monjee Institute of Management Studies) Online, which means the numbers here reflect data we can actually stand behind."
     },
     "approvals": {
       "heading": "Approvals, Rankings and Accreditations",
@@ -28,11 +28,11 @@
     },
     "exams": {
       "heading": "Exams and Evaluation",
-      "body": "Grading uses two components: internal assessment (assignments, quizzes, participation) and end-semester examination. The typical split is 30 percent internal and 70 percent end-semester, though this varies by subject. End-semester exams are Online proctored. Students need a laptop or desktop with a working webcam and stable internet. Exams are usually held in May-June (Semester 1 and 2) and November-December (Semester 3 and 4). A passing grade is typically 40 percent per subject, with no back-logs carried beyond one semester."
+      "body": "Grading uses two components: internal assessment (assignments, quizzes, participation) and end-semester examination. End-semester exams are Online proctored. Students need a laptop or desktop with a working webcam and stable internet. Exams are usually held in May-June (Semester 1 and 2) and November-December (Semester 3 and 4). A passing grade is typically 40 percent per subject, with no back-logs carried beyond one semester."
     },
     "specializationsOverview": {
       "heading": "Available Specialisations",
-      "body": "NMIMS Online MBA offers 5 specialisations: Business Administration, Finance, Marketing, Human Resource Management, Operations & Data Sciences Management. Students choose their specialisation at the time of admission. The first two semesters cover a shared core curriculum across all specialisations. Semesters three and four carry specialisation-specific subjects. Each specialisation detail page at /universities/nmims-online/mba/[spec-slug] lists the full semester-wise syllabus."
+      "body": "NMIMS Online MBA offers {{mbaSpecCount}} specialisations: {{mbaSpecList}}. Students choose their specialisation at the time of admission. The first two semesters cover a shared core curriculum across all specialisations. Semesters three and four carry specialisation-specific subjects. Each specialisation detail page at /universities/nmims-online/mba/[spec-slug] lists the full semester-wise syllabus."
     },
     "syllabusNote": {
       "heading": "Syllabus and Curriculum Semester-Wise",
@@ -68,31 +68,34 @@
     },
     "comparisons": {
       "heading": "How NMIMS Compares with Peers",
-      "body": "NMIMS (Narsee Monjee Institute of Management Studies) Online vs peers comparison:\nAmity University Online MBA: Fees Rs.2.25L, NIRF University #22, NAAC A+, 18 specialisations. Amity has 18 specs vs NMIMS 5, costs slightly more, and has WES recognition for Canada.\nDPU-COL Online MBA: Fees Rs.1.89L, NIRF University #41, NAAC A++, 15 specialisations. DPU-COL is NAAC A++ like NMIMS but at a lower fee with 15 specialisations.\nSymbiosis SSODL Online MBA: Fees Rs.3.15L, NIRF University #24, NAAC A++, 9 specialisations. Symbiosis costs significantly more but has strong Pune brand recognition.\nNMIMS is best when brand recognition in Mumbai BFSI is the primary goal and 5 specialisations fit your plan."
+      "body": "NMIMS (Narsee Monjee Institute of Management Studies) Online vs peers comparison:\nAmity University Online MBA: Fees Rs.2.25L, NIRF University #22, NAAC A+, 18 specialisations. Amity has 18 specs vs NMIMS {{mbaSpecCount}}, costs slightly more, and has WES recognition for Canada.\nDPU-COL Online MBA: Fees Rs.1.89L, NIRF University #41, NAAC A++, 15 specialisations. DPU-COL is NAAC A++ like NMIMS but at a lower fee with 15 specialisations.\nSymbiosis SSODL Online MBA: Fees Rs.3.15L, NIRF University #24, NAAC A++, 9 specialisations. Symbiosis costs significantly more but has strong Pune brand recognition.\nNMIMS is best when brand recognition in Mumbai BFSI is the primary goal and 5 specialisations fit your plan."
     },
     "honestVerdict": {
       "heading": "Honest Verdict: Who Should Enroll, Who Should Look Elsewhere",
-      "body": "Choose NMIMS Online MBA if: you are targeting BFSI, consulting, or FMCG roles in Mumbai and Western India; your preferred specialisation is among Finance, Marketing, HRM, or Business Administration; faculty quality and academic rigour matter more to you than specialisation variety; or the NMIMS brand name is specifically recognised by your target employer's HR team.\n\nLook elsewhere if: you need a specialisation outside the 5 available tracks; you require NIRF Management rank in the top 40; placement support is a primary decision factor; or you are targeting roles in energy, logistics, or agri sectors where UPES or DPU-COL offer more relevant specialisations.\n\nIf you are still undecided, our counsellor call is free. No commission, no pressure."
+      "body": "Choose NMIMS Online MBA if: you are targeting BFSI, consulting, or FMCG roles in Mumbai and Western India; your preferred specialisation is among Finance, Marketing, HRM, or Business Management; faculty quality and academic rigour matter more to you than specialisation variety; or the NMIMS brand name is specifically recognised by your target employer's HR team.\n\nLook elsewhere if: you need a specialisation outside the 5 available tracks; you require NIRF Management rank in the top 40; placement support is a primary decision factor; or you are targeting roles in energy, logistics, or agri sectors where UPES or DPU-COL offer more relevant specialisations.\n\nIf you are still undecided, our counsellor call is free. No commission, no pressure."
     },
     "redFlags": {
       "heading": "Red Flags to Know Before Enrolling",
-      "intro": "The following red flags are based on monitoring of student forums including Reddit r/indianeducation, Trustpilot reviews, and Consumer Complaints India.",
       "flags": [
         {
-          "sentence1": "Only 5 specialisations limits your choice significantly compared to peers offering 10-18 tracks.",
-          "sentence2": "If your target domain is not among Business Administration, Finance, Marketing, HRM, or Operations and Data Sciences, NMIMS is not the right fit."
+          "sentence1": "75% of every subject before each exam.",
+          "sentence2": "If you fall behind on the content, your admit card is not generated."
         },
         {
-          "sentence1": "The placement cell for online students is significantly less active than for NMIMS Mumbai campus students.",
-          "sentence2": "NMIMS brand name does open doors, but you need to network actively on LinkedIn and apply independently rather than waiting for placement notifications."
+          "sentence1": "Career services cost extra.",
+          "sentence2": "Budget for them if you want them."
         },
         {
-          "sentence1": "Exam schedule notifications are sometimes released very late, leaving students with under 2 weeks to prepare.",
-          "sentence2": "Monitor the NMIMS student portal and NMIMS student communication groups on Telegram from Sem 2 onwards to avoid last-minute surprises."
+          "sentence1": "The 2023 debarment will come up.",
+          "sentence2": "It is over, but be ready to explain it to an employer."
         },
         {
-          "sentence1": "The NIRF #24 Management rank applies to the institution overall.",
-          "sentence2": "NMIMS Mumbai campus is ranked separately and higher, which can cause confusion during job applications. When sharing your credential, specify 'NMIMS Global Access School for Continuing Education' or the exact degree-issuing entity as it appears on your certificate."
+          "sentence1": "Networking happens only on the portal.",
+          "sentence2": "There are no WhatsApp groups, so you have to make the effort there."
+        },
+        {
+          "sentence1": "Document verification can be slow.",
+          "sentence2": "Submit your self-attested documents early."
         }
       ]
     },
@@ -107,15 +110,15 @@
       },
       {
         "question": "What are the eligibility requirements for NMIMS Online MBA?",
-        "answer": "Graduation (any discipline) with 50% marks from a recognised university. No entrance exam like CAT or MAT is required. Working professionals at any experience level may apply."
+        "answer": "{{eligibility}}. No entrance exam like CAT or MAT is required. Working professionals at any experience level may apply."
       },
       {
         "question": "How does NMIMS conduct online MBA exams?",
-        "answer": "Exams are Online proctored. Grading uses 30 percent internal assessment (assignments, quizzes) and 70 percent end-semester exam. A working webcam and stable internet connection are required for the end-semester examination."
+        "answer": "Before each exam, you must complete at least 75% of that subject's track on the student portal, by going through the content, the recorded sessions or the live lectures. Only then is your admit card generated. After that, NMIMS gives you about a month to choose your exam date, and you pick the slot that suits you. It is one of the most flexible exam systems I have seen."
       },
       {
         "question": "Which specialisations does NMIMS Online MBA offer?",
-        "answer": "NMIMS Online MBA offers 5 specialisations: Business Administration, Finance, Marketing, Human Resource Management, Operations & Data Sciences Management. The first two semesters cover a shared core. Students choose specialisation at admission. If your target domain is outside these 5 tracks, consider a peer university with more specialisation options."
+        "answer": "NMIMS Online MBA offers {{mbaSpecCount}} specialisations: {{mbaSpecList}}."
       },
       {
         "question": "Is the NMIMS Online MBA degree equivalent to a regular MBA?",
@@ -123,15 +126,15 @@
       },
       {
         "question": "What placement support does NMIMS provide for online MBA students?",
-        "answer": "NMIMS provides placement support including resume guidance and virtual recruitment events. Placement support for online students is less active than for Mumbai campus students. The NMIMS brand name is well recognised in BFSI and consulting, which helps in self-led job search."
+        "answer": "NMIMS says: access to 500+ hiring partners, and career services with coaching, CV help and practice interviews. NMIMS also says 82,000+ CDOE alumni work at 8,000+ companies. What I have seen: placement and career services cost extra. They are not part of the programme fee, and most students only find this out after joining."
       },
       {
         "question": "What is the NMIMS University NIRF ranking?",
-        "answer": "NMIMS is NIRF #24 Management in NIRF overall rankings. The Mumbai campus is ranked separately and scores higher. When sharing your credential, ensure you specify the exact degree-issuing entity as it appears on your certificate."
+        "answer": "NIRF 2025 ranks SVKM's NMIMS at #24 in Management, #52 in the University category and #95 Overall. These are the parent university's ranks. NIRF does not rank online programmes separately."
       },
       {
         "question": "What is the admission process for NMIMS Online MBA?",
-        "answer": "Apply online with NMIMS, upload documents, pay the registration fee, and confirm enrollment by paying the first semester fee. The process is entirely online. No campus visit or entrance exam is required for most applicants."
+        "answer": "Register on NMIMS CDOE's site, pay the admission processing fee and the initial amount, then pay the rest of your first instalment. Submit your self-attested documents, complete a video-call verification and get your student portal access. [See how admission works](#admission)."
       },
       {
         "question": "Can I use NMIMS Online MBA for government jobs?",
