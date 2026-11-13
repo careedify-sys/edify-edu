@@ -14,7 +14,9 @@ export function FirstHandText({ text }: { text: string }) {
     const href = m[2]
     parts.push(href.startsWith('/')
       ? <Link key={m.index} href={href} className="font-semibold underline" style={{ color: '#0f172a' }}>{m[1]}</Link>
-      : <a key={m.index} href={href} rel="noopener" target="_blank" className="font-semibold underline">{m[1]}</a>)
+      : href.startsWith('#')
+        ? <a key={m.index} href={href} className="font-semibold underline" style={{ color: '#0f172a' }}>{m[1]}</a>
+        : <a key={m.index} href={href} rel="noopener" target="_blank" className="font-semibold underline">{m[1]}</a>)
     last = m.index + m[0].length
   }
   if (last < text.length) parts.push(text.slice(last))

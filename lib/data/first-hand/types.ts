@@ -26,7 +26,8 @@ export type FirstHandApproval =
   // Fails the build when the two disagree.
   | { kind: 'nirf'; body: string }
   // Text row, wording given by Rishi. link only for deb/naac/nirf or an internal path.
-  | { kind: 'text'; body: string; holds: string; source?: string; link?: string }
+  // linkLabel replaces the bare path as the link text for an internal link.
+  | { kind: 'text'; body: string; holds: string; source?: string; link?: string; linkLabel?: string }
 
 export interface FirstHandFaq {
   q: string
@@ -71,7 +72,8 @@ export interface FirstHandUniversity {
     universityPageFaq: string
   }
   /** Short box, heading "About the 2023 UGC debarment" and similar. Optional. */
-  noticeBox?: { heading: string; text: string }
+  /** related: one line of internal links shown under the box on the MBA hub only. */
+  noticeBox?: { heading: string; text: string; related?: string }
   redFlags: { title: string; text: string }[]
   verdict: {
     oneLine: string

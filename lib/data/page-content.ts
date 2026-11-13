@@ -3,6 +3,8 @@
 import fs from 'fs'
 import path from 'path'
 import type { PageContent, SpecPageContent } from './page-content-schema'
+import { getUniversityById } from '../data'
+import { fillFeeTokens } from '../first-hand'
 
 const cache = new Map<string, PageContent | null>()
 const specCache = new Map<string, SpecPageContent | null>()
@@ -19,10 +21,16 @@ export function getPageContent(uniSlug: string, program: string): PageContent | 
 
   try {
     const raw = fs.readFileSync(filePath, 'utf-8')
-    const content = JSON.parse(raw) as PageContent
+    // {{fee:...}}, {{mbaSpecCount}} and {{mbaSpecList}} are filled here from
+    // lib/data.ts, so every reader gets data values and a count can never
+    // drift from the specialisation list. An unfillable token throws.
+    const u = raw.includes('{{') ? getUniversityById(uniSlug) : undefined
+    const content = JSON.parse(raw, (_k, v) => (u && typeof v === 'string' && v.includes('{{') ? fillFeeTokens(v, u) : v)) as PageContent
     cache.set(key, content)
     return content
   } catch (err) {
+    // An unfilled token fails the build rather than shipping "{{...}}".
+    if (err instanceof Error && err.message.startsWith('page-content ')) throw err
     // Never swallow this silently. A null return here is indistinguishable from
     // "no content file exists", so the page quietly renders the thin fallback
     // while the file sits on disk looking complete. That hid 35 broken files

@@ -98,6 +98,9 @@ export default function FirstHandMbaSections({ fh, part, eligibility }: { fh: Re
       <section className={CARD} style={{ borderColor: '#B8892A' }}>
         <h2 className={H2} style={NAVY}>{fh.noticeBox.heading}</h2>
         <p className="text-sm text-slate-700 leading-relaxed m-0"><FirstHandText text={fh.noticeBox.text} /></p>
+        {fh.noticeBox.related ? (
+          <p className="text-sm text-slate-700 leading-relaxed mt-3 mb-0"><FirstHandText text={fh.noticeBox.related} /></p>
+        ) : null}
       </section>
     ) : null
 

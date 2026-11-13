@@ -57,7 +57,21 @@ function tokenValues(u: University): Record<string, string | undefined> {
     initial: initial != null ? rupees(initial) : undefined,
     admissionProcessing: processing != null ? rupees(processing) : undefined,
     semester1Balance: sem != null && initial != null ? rupees(sem - initial) : undefined,
+    mbaSpecCount: mbaSpecCount(u),
   }
+}
+
+/** Length of the MBA specialisation list in lib/data.ts, as text. Every count on a first-hand page comes from here. */
+function mbaSpecCount(u: University): string | undefined {
+  const n = u.programDetails?.MBA?.specs?.length
+  return n ? String(n) : undefined
+}
+
+/** MBA specialisation names from lib/data.ts, joined "A, B and C". */
+function mbaSpecList(u: University): string | undefined {
+  const names = (u.programDetails?.MBA?.specs ?? []).map(s => (typeof s === 'string' ? s : s.name))
+  if (!names.length) return undefined
+  return names.length === 1 ? names[0] : `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`
 }
 
 function fillTokens<T>(value: T, vals: Record<string, string | undefined>, id: string): T {
@@ -120,7 +134,7 @@ function approvalRows(u: University, fh: FirstHandUniversity): ApprovalRow[] {
           body: a.body,
           holds: a.holds,
           source: a.source ?? '',
-          link: a.link ? (LINKS[a.link] ?? (a.link.startsWith('/') ? { href: a.link, label: a.link } : undefined)) : undefined,
+          link: a.link ? (LINKS[a.link] ?? (a.link.startsWith('/') ? { href: a.link, label: a.linkLabel ?? a.link } : undefined)) : undefined,
         }
     }
   })
@@ -150,6 +164,13 @@ export { stripLinks } from './link-markup'
  * Throws on a token with no value, so an unfilled token cannot ship.
  */
 export function fillFeeTokens(text: string, u: University): string {
+  // {{mbaSpecCount}} and {{mbaSpecList}}: the MBA specialisation list in lib/data.ts.
+  // {{eligibility}}: University.eligibility.
+  text = text.replace(/\{\{(mbaSpecCount|mbaSpecList|eligibility)\}\}/g, (_m, k: string) => {
+    const v = k === 'mbaSpecCount' ? mbaSpecCount(u) : k === 'mbaSpecList' ? mbaSpecList(u) : u.eligibility
+    if (!v) throw new Error(`page-content ${u.id}: {{${k}}} has no value in lib/data.ts`)
+    return v
+  })
   return text.replace(/\{\{fee:(\w+)\/([\w-]+)\/([\w-]+)\}\}/g, (_m, prog: string, planId: string, mode: string) => {
     const plan = u.feePlans?.[prog as 'mba']?.find(p => p.id === planId)
     const row = plan?.rows.find(r => r.mode.toLowerCase().replace(/\s+/g, '-').includes(mode))
