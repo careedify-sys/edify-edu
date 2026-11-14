@@ -21,6 +21,7 @@
   graduates. The hub answer, the duration post's direct answer and first FAQ, and the 1-year MBA post's "Can I do a
   one-year online MBA" FAQ (which contradicted its own JGU section) now name both. The 1-year post's updatedAt moves to
   14 Nov: check-blog-updated-at counts FAQ text (Rishi chose the bump over an exemption). JGU's hub is linked only when it resolves and is indexable.
+- **Live:** merged 54bf3ac, verified 14 Nov (tables 41/25/23, BBA 56 rows, -compared 308, sitemap 2,301).
 - **Held:** BBA, BCA and MCA admission guides. lib/ has no per-programme eligibility for them, and the first-hand
   admission steps are MBA-framed ({{eligibility}} fills the MBA graduation rule). Salary posts held on Rishi's call.
 
