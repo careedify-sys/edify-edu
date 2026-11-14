@@ -1,5 +1,65 @@
 # Fix log
 
+## 2026-11-14 · Batch 3.3: BITS WILP and Bharati Vidyapeeth MBA fees (live); hub fee contradiction audit (branch only)
+
+- **Why:** the 3.2 audit traced 108 MISMATCH figures to two universities whose data Rishi had already
+  confirmed. BITS pages typed Rs 2,98,400, a total derived from stale parts (Rs 70,100 a semester,
+  Rs 16,500 admission) that was never on the portal (lib/data.ts comment, 14 Sep). The BITS hub typed a
+  templated "Rs 75,000 to Rs 1,80,000". Bharati pages typed Rs 1,60,000 and the hub "Rs 1,34,000 to
+  Rs 1,60,000". The hub TL;DR therefore disagreed with the fee printed above it.
+- **What (f637cd2, merged 3b1b1ab):**
+  - BITS, 10 JSONs plus the Aligarh hub: every total set to Rs 3,12,400. lib/data.ts has no BITS fee
+    plan, so the stale part-fee lists and the "This includes ..." FAQ sentences were removed rather than
+    rewritten with the portal's Rs 1,500 / 18,500 / 73,100 parts.
+  - Price gaps worked out from the old total ("about Rs 78,000", "Rs 1,09,000 cheaper", "Rs 73,000
+    cheaper") lost their numbers. On the hub, the Rs 4,000 EMI built on the fake range lost its figure,
+    and "similar fee range" with VIT now reads "at a lower fee".
+  - BITS in blogs: the 1-year MBA post's "Rs 3.5 to 5 lakh" (meta, FAQ, table, list) became Rs 3.12 lakh,
+    and BITS left the "₹1.75 to ₹3 lakh" list in best-online-mba-colleges.
+  - BITS review post: the wrong "effective total of ₹3,15,000" now reads ₹3,12,400. The unsourced fee
+    history (₹2,84,000 in 2024, ₹2,97,000 in 2025) and the "2027 cohort will pay ₹3.10 lakh+" forecast
+    were removed. The post's own ₹73,100 / ₹18,500 / ₹1,500 breakdown matches the portal and stays.
+    updatedAt was bumped to 14 Nov.
+  - Bharati, 14 JSONs plus Amet, Chitkara and Integral: Rs 1,78,000, with "Rs 1,68,000 if paid in full
+    upfront" on fee lines (feePlans rows).
+  - Claims the new total made false were rewritten: "Rs 15,000 cheaper than Alliance / UPES", "wins on
+    fee", "below premium peers like Alliance". Derived gaps lost their numbers. The hub's Rs 2,500 EMI
+    (data emiFrom is 5,375) lost its figure.
+  - The Pune post's "Rs 1.20-1.50 lakh" became Rs 1.68-1.78 lakh. That post and
+    best-online-mba-colleges got updatedAt 14 Nov; check-blog-updated-at required the second.
+  - NIU, Sharda, Alliance and JIIT figures were not touched (Rishi is confirming their all-in fees).
+- **Re-run of the 3.2 spec audit on the 23 touched spec pages:** MISMATCH dropped from 141 to 33, and
+  MATCH rose from 110 to 253.
+  - Across all 219 pages, BITS- or Bharati-attributed MISMATCH went from 108 to 1, and that one is DPU's
+    Rs 1,89,400 misattributed to BITS.
+  - Of the 33 left in touched files, 30 are NIU, Alliance and Sharda figures, held for Rishi. The other 3
+    are attribution misreads.
+  - All-page MISMATCH: 371 before, 263 after.
+- **Live (deploy q0hwv709w, Ready 12:08 UTC, ?cb=):**
+  - The BITS hub's top fee and TL;DR both read Rs 3,12,400. The Bharati hub's top and TL;DR both read
+    Rs 1,78,000 / Rs 1,68,000.
+  - 3 spec pages each (BITS finance, business-analytics, fintech; Bharati marketing,
+    international-business, infrastructure) plus Chitkara pharma carry the new figure and no stale one.
+  - BITS review: no ₹2,97,000 / ₹2,84,000 / ₹3.10 lakh, and dateModified is 2026-11-14.
+  - Sitemap 2,301.
+  - The checker flagged two figures, and both belong to other universities: ₹1,60,000 on the Bharati hub
+    is the start of JAIN's ₹1,60,000–₹2,98,000 column in the peer table, and ₹3,15,000 on the review is
+    Symbiosis's range.
+- **Part B (audit only, 8450e54):** scripts/audit-hub-fees.mjs covers 126 indexed hubs with a JSON (290
+  of the 416 sitemap hubs have none). 97 of the 126 tops show the counsellor line.
+  - Own-university figures: 209 AGREE and **22 CONTRADICT on 6 hubs** (7 rendered, on 5 hubs). Andhra,
+    SASTRA and IGNOU carry placeholder ranges, Amity has Rs 2.25-3.29L, LPU's Rs 1,82,800 no-grant fee
+    is not shown at the top, and Shoolini's Rs 2,00,000 sticker fee is not shown either.
+  - **14 hubs hide the fee at the top but type one** (106 figures, 18 of them rendered).
+  - Hand check: the first run's 39 CONTRADICTS were all read. The 17 false ones (instalment amounts,
+    pipe-table competitor columns, a concession) became overrides.
+  - Clicks come from the GSC 3-month Pages export (11 Aug to 10 Nov). It now sits in
+    audit-data/gsc-3m-2026-11-10/, which is gitignored.
+  - Found on the way: 10 hub JSONs use q/a FAQ keys and 10 use redFlags.items. The hub renders neither,
+    so those FAQs and red flags never reach the page.
+- **Record:** feat/batch-3-2 (the 3.2 spec audit record) is merged into feat/batch-3-3, so this branch
+  carries both batches' records.
+
 ## 2026-11-14 · Batch 3.2: CU MCA subject names joined (live); spec fee audit (branch only)
 
 - **Part A, why:** CU's full-stack MCA semester 3 was split at commas without brackets, so the MCA
