@@ -4466,11 +4466,8 @@
           {
             "sem": 3,
             "subjects": [
-              "HTML",
-              "CSS and Javascript",
-              "User Interface",
-              "Experience",
-              "Design",
+              "HTML, CSS and Javascript",
+              "User Interface, Experience, Design",
               "DevOps -1 (GIT, Jenkins, Docker)",
               "Software Architecture",
               "Prototyping"
