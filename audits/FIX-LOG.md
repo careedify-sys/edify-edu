@@ -19,6 +19,12 @@
   (audits/spec-improve-batch-1-2026-11-14.csv).
 - **Skipped:** 8 files pointing at noindexed pages (Assam Don Bosco marketing/operations, Dr MGR HR/marketing/
   operations, IGNOU finance/marketing/operations), the 26 duplicates and the hub-level file. Nothing deleted.
+- **Live (merge d1d899e, deploy Ready 09:34 UTC, checked with ?cb=):** 10 samples (NMIMS finance, Amity
+  digital-marketing, MUJ operations, Amrita ESG, CU IT, DPU supply chain, Shoolini retail, Jaypee HR, ARKA JAIN HR,
+  MAHE operations) all 200, index, follow, file text present, every NAAC/NIRF on the page matches lib/data.ts, no
+  salary figure, no rupee figure from the file. The only rupee figure on 4 of them is the site-wide coupon card
+  ("up to Rs 5,000", lib/coupons.ts), which predates this batch. IGNOU finance and Assam Don Bosco marketing are
+  still noindex, follow. Sitemap: 2,301 locs, unchanged.
 
 ## 2026-11-14 · Programme-basics batch: subject posts, BBA fees merge, BCA retarget, /programs/mba answers
 

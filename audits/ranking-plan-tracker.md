@@ -25,7 +25,7 @@ Source plan: "edifyedu.in ranking and scaling plan, with check log" (Rishi, 14 N
 
 | # | Item | Status |
 |---|---|---|
-| 3.1 | Fix facts in the 59 orphan spec JSON files against lib/data.ts, then rename them to the live slugs | Done on feat/spec-json-facts: 51 fixed and renamed (35 worklist, 16 other), 8 skipped (noindexed pages). Worklist overlap 86.3% to 41.1%, 35/35 marked improved for 26 Dec |
+| 3.1 | Fix facts in the 59 orphan spec JSON files against lib/data.ts, then rename them to the live slugs | Done, live 14 Nov (merge d1d899e; 10 samples verified, 2 skipped still noindex, sitemap 2,301): 51 fixed and renamed (35 worklist, 16 other), 8 skipped (noindexed pages). Worklist overlap 86.3% to 41.1%, 35/35 marked improved for 26 Dec |
 | 3.2 | Hub link from the MUJ review: needs a sentence in the post, so it waits for the next real MUJ review update | Pending |
 
 ## Rishi-only (Claude cannot do these)
@@ -63,4 +63,4 @@ Search Console 11 Aug to 10 Nov: 12,855 clicks, 2,663,474 impressions; tools 8,2
 - 14 Nov: feat/programme-basics: 3 subject posts (MCA 41, MBA 25, MBA finance 24 universities), BBA fees merged with 301, BCA fees post aimed at "bca course fees", MBA duration post improved, /programs/mba answers. Not merged.
 - 14 Nov: feat/programme-basics fixes (e164f5f): one-year MBA answer names both routes on /programs/mba, the duration post and the 1-year MBA FAQ (its updatedAt bumped, the date gate counts FAQs); MCA tables use _core/general only if it covers semesters 1-4, all 41 now reach semester 4; MBA finance drops Amity (23). Build and gates pass.
 - 14 Nov: programme-basics merged (54bf3ac), one deploy, production ready (edify-edu-dh2m). Live: the 3 subject posts and online-bba-fees-india-2026 serve 200, index, follow, in the sitemap; tables 41 / 25 / 23, BBA fee table 56 rows; -compared returns 308 to the survivor and is not in the sitemap; sitemap 2,301 <loc>; /programs/mba shows both one-year routes with JGU linked, old wording gone; MUJ MCA table runs Semester 1 to 4; duration and 1-year posts carry the circular. Cloudflare purge of /sitemap.xml not done (no Cloudflare access): Rishi. Bare sitemap was a cache MISS, so it is already fresh.
-- 14 Nov: batch 3.1 on feat/spec-json-facts: 51 spec JSON files fixed (NAAC/NIRF from lib/data.ts, no typed fees, no salary or placement figures, syllabus from the manifest) and renamed to their live slugs; fee renders from data. 35 worklist pages re-measured: mean max sibling overlap 86.3% to 41.1% (audits/spec-improve-batch-1-2026-11-14.csv).
+- 14 Nov: batch 3.1 on feat/spec-json-facts: 51 spec JSON files fixed (NAAC/NIRF from lib/data.ts, no typed fees, no salary or placement figures, syllabus from the manifest) and renamed to their live slugs; fee renders from data. 35 worklist pages re-measured: mean max sibling overlap 86.3% to 41.1% (audits/spec-improve-batch-1-2026-11-14.csv). Merged to main as d1d899e and verified live the same day.

@@ -156,6 +156,19 @@ npx tsx scripts/build-verify-slug-map.mjs --check || exit 1
 echo "pre-commit: check-page-content-json"
 node scripts/check-page-content-json.mjs || exit 1
 
+# Fact-sweep leftovers: broken "**...):**" role labels, unbalanced whoHires
+# lines, typed "N% cheaper" fee comparisons. Batch 3.1 shipped 103 broken
+# labels to 51 live pages. See scripts/check-page-content-facts.mjs.
+echo "pre-commit: check-page-content-facts"
+node scripts/check-page-content-facts.mjs --self-test || exit 1
+node scripts/check-page-content-facts.mjs || exit 1
+
+# Manifest subject names split at commas inside brackets ("DevOps -1 (GIT",
+# "Jenkins", "Docker)"). See scripts/check-syllabus-manifest-brackets.mjs.
+echo "pre-commit: check-syllabus-manifest-brackets"
+node scripts/check-syllabus-manifest-brackets.mjs --self-test || exit 1
+node scripts/check-syllabus-manifest-brackets.mjs || exit 1
+
 # Sitemap lastmod for university hub and spec URLs comes from
 # data/sitemap-lastmod.json (git commit dates), not file mtime: Vercel's fresh
 # checkout stamped all 330 dated URLs with the build day on 2026-11-12. Dates any

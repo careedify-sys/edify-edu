@@ -70,15 +70,7 @@
               "description": "Contract law, consumer protection, intellectual property, company law basics, and regulatory compliance."
             },
             {
-              "name": "Minor Project + Electives (Enterprise Resource Planning"
-            },
-            {
-              "name": "Total Quality Management",
-              "description": "Six Sigma basics (DMAIC), ISO 9001 quality management systems, Kaizen methodology, statistical process control (SPC), and quality cost analysis."
-            },
-            {
-              "name": "Supply Chain Management)",
-              "description": "Demand forecasting methods, inventory optimisation (EOQ, safety stock), vendor management and evaluation, bullwhip effect, and supply chain network design."
+              "name": "Minor Project + Electives (Enterprise Resource Planning, Total Quality Management, Supply Chain Management)"
             }
           ]
         },
@@ -94,15 +86,7 @@
               "description": "Sustainable business models, ESG frameworks, and CSR strategy."
             },
             {
-              "name": "Capstone Project + Electives (Project Management"
-            },
-            {
-              "name": "Services Operations Management",
-              "description": "Service blueprint design, capacity planning for service industries, queue management theory, service quality measurement (SERVQUAL), and service recovery strategies."
-            },
-            {
-              "name": "Operations Research)",
-              "description": "Linear programming (graphical and simplex methods), transportation and assignment models, simulation basics, decision analysis, and game theory introduction."
+              "name": "Capstone Project + Electives (Project Management, Services Operations Management, Operations Research)"
             }
           ]
         }
@@ -110,7 +94,7 @@
       "note": "Subjects as listed in the university syllabus we hold. Universities revise subjects between intakes."
     },
     "whoHires": {
-      "body": "**Industries:** Manufacturing (auto, FMCG, pharma, electronics), logistics, e-commerce operations, consulting, IT services delivery, and infrastructure\n\n**Entry-level roles:** Operations Executive, Supply Chain Analyst, Production Planning Associate, Quality Analyst, Project Coordinator, Process Associate\n\n**Mid-level roles:** 5 years experience):** Operations Manager, Supply Chain Manager, Production Manager, Quality Manager, Project Manager (PMP track), Process Excellence Lead\n\n**Senior roles:**  years):** COO, VP Operations, Head of Supply Chain, Director of Manufacturing, Chief Quality Officer, Head of Project Management Office\n\n**How to check placement claims:** ask Manipal Academy of Higher Education (MAHE) Online for its latest placement report in writing, for your programme and mode. Online batches are often reported apart from campus ones, or not at all. edifyedu.in does not publish employer lists it cannot source. Treat the roles above as the kinds of jobs this syllabus prepares you for, not as a list of who has hired from this batch."
+      "body": "**Industries:** Manufacturing (auto, FMCG, pharma, electronics), logistics, e-commerce operations, consulting, IT services delivery, and infrastructure\n\n**Entry-level roles:** Operations Executive, Supply Chain Analyst, Production Planning Associate, Quality Analyst, Project Coordinator, Process Associate\n\n**Mid-level roles:** Operations Manager, Supply Chain Manager, Production Manager, Quality Manager, Project Manager (PMP track), Process Excellence Lead\n\n**Senior roles:** COO, VP Operations, Head of Supply Chain, Director of Manufacturing, Chief Quality Officer, Head of Project Management Office\n\n**How to check placement claims:** ask Manipal Academy of Higher Education (MAHE) Online for its latest placement report in writing, for your programme and mode. Online batches are often reported apart from campus ones, or not at all. edifyedu.in does not publish employer lists it cannot source. Treat the roles above as the kinds of jobs this syllabus prepares you for, not as a list of who has hired from this batch."
     },
     "skills": {
       "body": "The Operations Management specialisation builds skills across process optimisation, quality, and project management:\n\n- ERP: SAP module navigation, MRP calculation, production planning integration, and ERP implementation methodology\n- Quality Management: Six Sigma DMAIC application, SPC chart construction, ISO 9001 audit preparation, and quality cost calculation\n- Supply Chain: demand forecasting (moving average, exponential smoothing), EOQ/safety stock calculation, and vendor scorecard design\n- Operations Research: LP formulation and solution, transportation model optimisation, and simulation model design\n\n- Project Management: CPM/PERT network construction, Agile sprint planning, earned value metrics, and risk register development\n- Services Operations: service blueprint mapping, capacity utilisation calculation, and queue analysis\n\n**Soft skills:** Managing cross-functional production teams, negotiating with vendors, presenting process improvement ROI to leadership, and leading quality culture change."
