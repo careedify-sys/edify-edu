@@ -1,5 +1,45 @@
 # Fix log
 
+## 2026-11-14 · Batch 3.1b: four defects batch 3.1 left live
+
+- **Why:** the 3.1 fixer cut fact-bearing parentheticals out of labels but kept the tail, so 51 live
+  pages read "**Senior roles:**  years):**". Its first-hand rule for Amity, MUJ and NMIMS also dropped the
+  placement-check paragraph, which makes no claim. The JGU files (6 of 7 outside 3.1) still called the
+  programme "India's only 1-year fully online MBA" and "valid ... in India and internationally", which
+  contradicts /programs/mba (JGU is not on the August 2026 UGC-DEB entitlement list). The syllabus manifest
+  had names split at commas inside brackets, so the MCA subjects post and three MAHE spec pages printed
+  "DevOps -1 (GIT" / "Jenkins" / "Docker)" as three subjects and the shared-subjects table over-counted.
+- **What (commit a6a8923):**
+  1. Role labels: 103 fragments in 51 files cut back to the plain label (102 role labels plus one
+     "**AI skills:** m 1):**" in ARKA JAIN HR). Balanced labels such as "**Senior roles (7+ years):**" in
+     other files are well formed and stay.
+  2. JGU, all 7 files: "India's only 1-year" removed (hero and about, 14), the certificate-section
+     validity claim removed (7), "Is JGU's 1-year MBA valid?" rewritten to the /programs/mba wording (7; the
+     FAQ schema reads the same array), "72 credits in 12 months" attributed to JGU (14). Repo-wide grep
+     also hit the JGU tagline and description in lib/data.ts and the callout in
+     1-year-mba-india-executive-mba-2026 ("The only 1-year fully online UGC-recognised MBA"); all three
+     fixed the same way. "meeting UGC norms": 0 left.
+  3. Manifest: 12 semesters re-joined with ", " (Chandigarh MCA 2, MAHE MCA 4, MAHE MBA 6), nothing else
+     changed. MAHE HR, supply chain and operations spec syllabi rebuilt from it (6 semesters). MCA post:
+     6 unbalanced names to 0; shared-subjects table recounts (Artificial Intelligence 9 to 8 of 41).
+     Unbracketed splits ("User Interface", "Experience", "Design") are a separate defect, not touched.
+  4. 35 "N% cheaper" sentences removed from 25 lines in 12 files (Jaypee marketing, 5 Shoolini, 6 SMU),
+     one list item dropped whole, plus 9 "Is X cheaper than Y?" FAQs whose answers were left as a bare
+     "Yes.". Placement-check paragraph restored verbatim from the pre-3.1 files on 11 files (5 Amity,
+     3 MUJ, 3 NMIMS).
+- **Gates:** scripts/check-page-content-facts.mjs (broken "):**" labels, unbalanced whoHires lines,
+  "% cheaper") and scripts/check-syllabus-manifest-brackets.mjs, both with a self-test, wired into
+  pre-commit. Against the pre-fix tree they report 179 and 24 findings.
+- **Live (merge ee33c0b, deploy Ready 10:07 UTC, ?cb= on every fetch):** NMIMS finance and JGU HR show
+  plain "Mid-level roles:" / "Senior roles:" labels and the placement-check paragraph. JGU's FAQ shows the
+  new answer when expanded (the accordion renders answers on click, so it was read in a browser) and the
+  FAQPage JSON-LD carries it. No "India's only 1-year", "meeting UGC norms" or validity claim. MCA post:
+  0 unbalanced subject names across 1,355 cells, Artificial Intelligence 8 of 41. MAHE HR: 0 split
+  subject names, joined semester 3 name present. Shoolini HR: no "% cheaper". All 200, index, follow.
+  Sitemap 2,301, unchanged. The same check run against the old build first failed on all five pages.
+- **Not touched:** the coupon card ("up to Rs 5,000", Rishi's offer). The 12 "% cheaper" files outside
+  3.1 still carry typed rupee fees in their comparisons; that is the wider fee sweep, not this batch.
+
 ## 2026-11-14 · Batch 3.1: facts fixed in 51 orphan spec JSON files, renamed to their live pages
 
 - **Why:** 59 page-content files mapped to a live spec page but sat under the xlsx slug, so the loader never read them
