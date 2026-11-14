@@ -17,10 +17,13 @@ export default function MbaHubAnswers({
   range,
   cheapest,
   topNirf,
+  jguHref,
 }: {
   range: { min: string; max: string; count: number } | null
   cheapest: MbaAnswerFee[]
   topNirf: MbaAnswerRank[]
+  /** JGU's MBA hub, passed only when it resolves and is indexable. */
+  jguHref: string | null
 }) {
   return (
     <section className="max-w-7xl mx-auto px-4 pt-10 pb-2" aria-labelledby="mba-answers">
@@ -56,9 +59,22 @@ export default function MbaHubAnswers({
 
         <div>
           <h3 className="text-lg font-bold text-navy mb-2">Is there a one-year online MBA?</h3>
+          <p className="text-sm text-slate-700 leading-relaxed mb-2">
+            The standard UGC-entitled online MBA runs two years, in four semesters. A one-year online MBA exists in two cases:
+          </p>
+          <ul className="text-sm text-slate-700 list-disc pl-5 space-y-1 mb-2">
+            <li>
+              Institutions of Eminence can run online programmes without prior UGC approval.{' '}
+              {jguHref
+                ? <Link href={jguHref} className="text-amber-700 underline">O.P. Jindal Global University</Link>
+                : <>O.P. Jindal Global University</>}{' '}
+              runs a one-year online MBA open to any graduate with 50%. JGU does not appear on the UGC-DEB entitlement list of August 2026, so confirm with JGU which approval the programme rests on.
+            </li>
+            <li>
+              Under UGC circular F.No. 7-2/2026 (DEB-NWR) of 28 July 2026, universities entitled for the two-year online MBA can offer a one-year version, but only to four-year Honours graduates.
+            </li>
+          </ul>
           <p className="text-sm text-slate-700 leading-relaxed">
-            Not as a UGC-recognised degree. An online MBA from a UGC-DEB entitled university runs for two years, in four semesters.
-            Programmes sold as one-year MBAs are postgraduate certificates or executive programmes, not the MBA degree.
             See <Link href="/blog/1-year-mba-india-executive-mba-2026" className="text-amber-700 underline">one-year MBA options in India</Link> and{' '}
             <Link href="/blog/mba-course-duration-india-2026" className="text-amber-700 underline">MBA course duration</Link>.
           </p>

@@ -728,6 +728,10 @@ export default async function CatchAllProgramPage(
       .sort((a, b) => (a.nirfMgt as number) - (b.nirfMgt as number))
       .slice(0, 3)
       .map(u => ({ id: u.id, name: formatUniversityDisplayName(u.name), rank: u.nirfMgt as number }))
+    // The one-year answer links JGU's MBA hub only when it lands on an indexable page.
+    const jgu = universities.find(u => u.id === 'op-jindal-global-university-online')
+    const jguHref = jgu && hubResolves(jgu.id, 'MBA') && shouldIndexProgrammeHub(jgu, 'MBA').shouldIndex
+      ? `/universities/${jgu.id}/mba` : null
     return (
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -762,6 +766,7 @@ export default async function CatchAllProgramPage(
           range={mbaHubFees.range ? { min: formatINR(mbaHubFees.range.min), max: formatINR(mbaHubFees.range.max), count: mbaHubFees.range.count } : null}
           cheapest={cheapest}
           topNirf={topNirf}
+          jguHref={jguHref}
         />
         {/* The canonical machine-readable comparison for this programme. Lives
             on the base hub only: a spec hub is a narrower cut of the same rows,

@@ -7,12 +7,20 @@
   fees" (6,600). Two BBA fee posts targeted the same query (483 vs 105 impressions in 3 months), and the survivor carried
   48 typed fees including a grant that expired 9 May.
 - **What:** lib/syllabus-tables.ts renders semester tables and shared-subject counts from syllabus-manifest.json only
-  (MCA 41, MBA core 25, MBA finance 24; fuller of _core/general, VTU id aliased to vtu-online, Jain and UPES shown by
-  named track). New marker programme-fee-table lists every university whose fee survives getDisplayFee (4a/4c/4d),
+  (MCA 41, MBA core 25, MBA finance 23; VTU id aliased to vtu-online). MCA uses _core/general only when it covers
+  semesters 1 to 4, otherwise the fullest track, named (13 of 41: Jain, UPES, and MUJ, MAHE, Chandigarh, LPU, Sharda,
+  Shoolini, Vignan, KL, Mody, SRM Sikkim, SASTRA, whose _core stopped at semester 1 to 3); all 41 now reach semester
+  4. A finance track without semesters 3 and 4 is left out (Amity, whose only finance track was the first-year core). New marker programme-fee-table lists every university whose fee survives getDisplayFee (4a/4c/4d),
   cheapest first, NAAC only (no NIRF without a category). Three subject posts; the BBA survivor rewritten around the
   table with no typed fee and the -compared post 301d (next.config.js, status redirected); BCA -compared aimed at
   "bca course fees" (URL kept); MBA course-duration post given a direct answer and a how-many-years H1; /programs/mba
   gets MbaHubAnswers (range and cheapest from the same vetted set as the hero, NIRF Management rank with category).
+- **One-year MBA correction:** the first hub draft said no one-year online MBA exists as a UGC-recognised degree. Out
+  of date: two routes exist, JGU as an Institution of Eminence (not on the August 2026 UGC-DEB list, so students
+  confirm the approval with JGU) and UGC circular F.No. 7-2/2026 (DEB-NWR) of 28 July 2026 for four-year Honours
+  graduates. The hub answer, the duration post's direct answer and first FAQ, and the 1-year MBA post's "Can I do a
+  one-year online MBA" FAQ (which contradicted its own JGU section) now name both. The 1-year post's updatedAt moves to
+  14 Nov: check-blog-updated-at counts FAQ text (Rishi chose the bump over an exemption). JGU's hub is linked only when it resolves and is indexable.
 - **Held:** BBA, BCA and MCA admission guides. lib/ has no per-programme eligibility for them, and the first-hand
   admission steps are MBA-framed ({{eligibility}} fills the MBA graduation rule). Salary posts held on Rishi's call.
 

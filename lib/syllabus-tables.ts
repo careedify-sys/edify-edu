@@ -62,11 +62,15 @@ function pick(uniId: string, track: SyllabusTrack): { key: string; semesters: Se
     // _core and general are the same full syllabus at 16 of 18 universities
     // that carry both; where they differ, one is a stub. Take the fuller one.
     const size = (e?: Entry) => (e?.semesters ?? []).reduce((n, s) => n + s.subjects.length, 0)
-    const cands = (['_core', 'general'] as const).filter(k => size(p[k]) > 0)
+    // _core/general is used only when it covers semesters 1 to 4 (fix
+    // 2026-11-14: MUJ printed Semester 1 alone, MAHE stopped at 3 and nine
+    // more at 2, while their specialisation tracks ran to 4).
+    const cands = (['_core', 'general'] as const).filter(k => size(p[k]) > 0 && covers(p[k], [1, 2, 3, 4]))
     if (!cands.length) {
-      // Jain and UPES publish only specialisation syllabi: show the fullest
-      // track, named as that track.
-      const spec = Object.keys(p).filter(k => size(p[k]) > 0).sort((a, b) => size(p[b]) - size(p[a]) || a.localeCompare(b))[0]
+      // Otherwise the fullest track, named as that track (Jain and UPES
+      // publish only specialisation syllabi). A track covering 1 to 4 wins.
+      const spec = Object.keys(p).filter(k => size(p[k]) > 0)
+        .sort((a, b) => Number(covers(p[b], [1, 2, 3, 4])) - Number(covers(p[a], [1, 2, 3, 4])) || size(p[b]) - size(p[a]) || a.localeCompare(b))[0]
       return spec ? { key: spec, semesters: p[spec].semesters! } : null
     }
     const key = cands.reduce((a, b) => (size(p[b]) > size(p[a]) ? b : a))
@@ -75,8 +79,16 @@ function pick(uniId: string, track: SyllabusTrack): { key: string; semesters: Se
   const p = prog?.mba
   if (!p) return null
   if (track === 'mba-core') return p._core?.semesters?.length ? { key: '_core', semesters: p._core.semesters } : null
-  const key = FINANCE_KEYS.find(k => p[k]?.semesters?.length)
+  // A finance track without semesters 3 and 4 is only the common core under a
+  // finance heading (Amity, 2026-11-14), so it is left out.
+  const key = FINANCE_KEYS.find(k => covers(p[k], [3, 4]))
   return key ? { key, semesters: p[key].semesters! } : null
+}
+
+/** True when every listed semester is present with at least one subject. */
+function covers(e: Entry | undefined, sems: number[]): boolean {
+  const have = new Set((e?.semesters ?? []).filter(s => s.subjects.length).map(s => s.sem))
+  return sems.every(n => have.has(n))
 }
 
 export interface SyllabusRow { uniId: string; name: string; key: string; semesters: Sem[] }
