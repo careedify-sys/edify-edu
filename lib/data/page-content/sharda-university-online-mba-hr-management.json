@@ -1,0 +1,177 @@
+{
+  "uniSlug": "sharda-university-online",
+  "program": "mba",
+  "specSlug": "hr-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "SHARDA ONLINE MBA",
+      "headline": "Sharda Online MBA in Human Resource Management: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A+ | NIRF University #87 | UGC-DEB Approved | WES Recognised"
+    },
+    "tldr": "Sharda Online MBA in Human Resource Management covers Talent Acquisition and Retention, International HRM, Performance and Compensation Management, HR Analytics, Industrial Relations and Labour Legislation, and Organizational Change and Development across Sem 3-4. NAAC A+, NIRF University #87, UGC-DEB approved.",
+    "about": {
+      "body": "Sharda University, Greater Noida offers an Online MBA with Human Resource Management specialisation. The programme is UGC-DEB approved and holds NAAC A+ accreditation with NIRF University #87. WES recognised for international credential evaluation.\n\nThe HRM specialisation covers six dedicated subjects across Sem 3-4: Talent Acquisition and Retention, International HRM, Performance and Compensation Management in Sem 3, and HR Analytics, Industrial Relations and Labour Legislation, Organizational Change and Development in Sem 4. Common subjects include Entrepreneurship and Startup Ideation, Production and Operations Management, Cross Functional Elective (Sem 3), Strategic Management, and Research Project (Sem 4).\n\nThis is the operational HRM spec at Sharda, covering execution-level HR functions: recruitment, compensation, employee relations, and labour law. Choose regular HRM for day-to-day HR management roles. Choose Strategic HRM for CHRO-track roles.\n\nConfirm interest structure with admissions.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "semesters": [
+        {
+          "sem": 1,
+          "subjects": [
+            {
+              "name": "Management Processes & Organizational Behaviour"
+            },
+            {
+              "name": "Financial Accounting"
+            },
+            {
+              "name": "Reporting and Analysis"
+            },
+            {
+              "name": "Economic Analysis for Business Decision"
+            },
+            {
+              "name": "Quantitative Techniques for Business Decision"
+            },
+            {
+              "name": "Managerial Communication"
+            },
+            {
+              "name": "Governance"
+            },
+            {
+              "name": "Ethics & Sustainability"
+            }
+          ]
+        },
+        {
+          "sem": 2,
+          "subjects": [
+            {
+              "name": "Marketing Management"
+            },
+            {
+              "name": "Human Resource Management"
+            },
+            {
+              "name": "Business Research Methods"
+            },
+            {
+              "name": "Corporate Finance & Financial Markets"
+            },
+            {
+              "name": "Technology and Analytics for Business"
+            },
+            {
+              "name": "Legal Aspects in Business"
+            }
+          ]
+        },
+        {
+          "sem": 3,
+          "subjects": [
+            {
+              "name": "Entrepreneurship & Startup Ideation",
+              "description": "Business ideation frameworks, lean startup methodology, business model canvas, venture feasibility, and funding landscape for new ventures."
+            },
+            {
+              "name": "Production & Ops Management"
+            },
+            {
+              "name": "Talent Acquisition and Retention",
+              "description": "Recruitment strategy design, employer branding, ATS platforms, candidate screening methods, onboarding programme design, retention analytics, and exit interview analysis."
+            },
+            {
+              "name": "International HRM",
+              "description": "Cross-cultural HR management, expatriate assignment management, global mobility programmes, international labour law basics, and MNC HR policy localisation."
+            },
+            {
+              "name": "Performance and Compensation Management",
+              "description": "Performance appraisal systems (OKR, balanced scorecard, 360-degree), compensation structure design, variable pay, ESOPs, and statutory compliance (PF, ESI, gratuity)."
+            },
+            {
+              "name": "Cross Functional Elective",
+              "description": "Elective subject from another specialisation domain. Broadens management perspective beyond the core HRM track."
+            }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            {
+              "name": "Strategic Management",
+              "description": "Corporate strategy, competitive advantage frameworks, strategic planning models, and business model analysis."
+            },
+            {
+              "name": "HR Analytics",
+              "description": "People analytics fundamentals, attrition prediction models, HR dashboards, workforce planning data, recruitment funnel analytics, and data-driven talent decisions."
+            },
+            {
+              "name": "Industrial Relations and Labour Legislation",
+              "description": "Indian labour law framework (Industrial Disputes Act, Factories Act, new Labour Codes), trade union management, collective bargaining, and compliance requirements."
+            },
+            {
+              "name": "Organizational Change and Development",
+              "description": "OD intervention models, change management frameworks (Kotter, ADKAR), resistance management, culture transformation, and organizational diagnostics."
+            },
+            {
+              "name": "Research Project",
+              "description": "Faculty-supervised research project applying HRM concepts and methods to a real organizational HR problem."
+            }
+          ]
+        }
+      ],
+      "note": "Subjects as listed in the university syllabus we hold. Universities revise subjects between intakes."
+    },
+    "whoHires": {
+      "body": "**Industries:** IT services, manufacturing, banking, FMCG, retail, consulting (HR advisory), healthcare, and logistics\n\n**Entry-level roles:** HR Executive, Talent Acquisition Specialist, Compensation Analyst, HR Generalist, Employee Relations Executive\n\n**Mid-level roles:** 5 years experience):** HR Manager, Senior Talent Acquisition Manager, Compensation and Benefits Manager, HR Business Partner, Employee Relations Manager, Learning and Development Manager\n\n**Senior roles:**  years):** VP HR, Director of HR, CHRO, Head of Talent Acquisition, Head of Total Rewards, Head of Employee Relations\n\n**How to check placement claims:** ask Sharda University Online for its latest placement report in writing, for your programme and mode. Online batches are often reported apart from campus ones, or not at all. edifyedu.in does not publish employer lists it cannot source. Treat the roles above as the kinds of jobs this syllabus prepares you for, not as a list of who has hired from this batch."
+    },
+    "skills": {
+      "body": "The Human Resource Management specialisation builds operational HR skills:\n\n- Talent Acquisition: recruitment funnel design, ATS configuration, employer branding strategy, interview process design, and onboarding programme management\n- Compensation: salary structure design, pay equity analysis, variable pay programme management, ESOP basics, and statutory compliance (PF, ESI, gratuity, new Labour Codes)\n- HR Analytics: attrition prediction models, HR dashboard creation, workforce planning data analysis, and recruitment funnel metrics\n- Labour Law: Industrial Disputes Act, Factories Act, new Labour Codes, collective bargaining protocols, and compliance audit preparation\n\n- International HRM: expatriate policy design, global mobility programme management, and cross-cultural team management\n- OD and Change: organizational diagnostics, change management intervention design, culture survey analysis, and resistance management\n\n**Soft skills:** Employee counselling, disciplinary hearing facilitation, union negotiation, management coaching on people decisions, and cross-functional HR-business collaboration."
+    },
+    "comparisons": {
+      "body": "**vs Sharda's own Strategic HRM spec:** Regular HRM covers operational HR (talent acquisition, compensation, IR, OD). Choose regular HRM for execution-level HR roles."
+    },
+    "fees": {
+      "body": "Fees listed are indicative. edifyedu.in rechecks fees with Sharda every quarter. Please check with our counsellor before you pay."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Human Resource Management as the specialisation, issued by Sharda University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation, NIRF University #87, UGC-DEB approval, and WES recognition. Valid for corporate HR hiring, PSU applications, and higher education admission. DigiLocker issuance is standard."
+    },
+    "faqs": [
+      {
+        "question": "What is the difference between Sharda's HRM and Strategic HRM specs?",
+        "answer": "Regular HRM covers Talent Acquisition, International HRM, Compensation, HR Analytics, IR/Labour Legislation, and OD. Choose regular HRM for operational HR roles. Choose Strategic HRM for CHRO-track roles."
+      },
+      {
+        "question": "Does the programme cover HR Analytics?",
+        "answer": "Yes. HR Analytics is a Sem 4 subject covering people analytics fundamentals, attrition prediction models, HR dashboards, workforce planning data, and recruitment funnel analytics."
+      },
+      {
+        "question": "Does the programme cover Indian labour law?",
+        "answer": "Yes. Industrial Relations and Labour Legislation is a Sem 4 subject covering the Industrial Disputes Act, Factories Act, new Labour Codes, trade union management, collective bargaining, and compliance requirements."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want an operational HRM MBA with Talent Acquisition, Compensation, HR Analytics, and Labour Law subjects backed by NAAC A+ and NIRF University #87.",
+        "You work in NCR IT services or manufacturing and want a credentialed MBA for HR manager progression.",
+        "You want both International HRM and IR/Labour Legislation as dedicated subjects in one programme."
+      ],
+      "consider": [
+        "Brand recognition is a gap.",
+        "Budget is the priority."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2050,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 27,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-14",
+    "renamedFrom": "sharda-university-online-mba-human-resource-management.json"
+  }
+}

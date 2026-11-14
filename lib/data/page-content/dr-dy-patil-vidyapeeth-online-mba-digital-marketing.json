@@ -1,0 +1,149 @@
+{
+  "uniSlug": "dr-dy-patil-vidyapeeth-online",
+  "program": "mba",
+  "specSlug": "digital-marketing",
+  "sections": {
+    "hero": {
+      "eyebrow": "DPU-COL ONLINE MBA",
+      "headline": "DPU-COL Online MBA in Digital Marketing Management: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A++ | NIRF University #41 | UGC-DEB Approved"
+    },
+    "tldr": "NAAC A++ NIRF University #41.",
+    "about": {
+      "body": "The programme bridges the gap between digital marketing certifications (which teach platform skills) and traditional marketing MBAs (which lack digital depth).\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "semesters": [
+        {
+          "sem": 1,
+          "subjects": [
+            {
+              "name": "Principles & Practices of Management"
+            },
+            {
+              "name": "Organisational Behaviour"
+            },
+            {
+              "name": "Management Accounting"
+            },
+            {
+              "name": "Managerial Economics"
+            },
+            {
+              "name": "Business Communication"
+            },
+            {
+              "name": "Research Methodology"
+            },
+            {
+              "name": "Environment Awareness and Disaster Management"
+            }
+          ]
+        },
+        {
+          "sem": 2,
+          "subjects": [
+            {
+              "name": "Human Resource Management"
+            },
+            {
+              "name": "Marketing Management"
+            },
+            {
+              "name": "Financial Management"
+            },
+            {
+              "name": "Operations Management"
+            },
+            {
+              "name": "Management Information System"
+            },
+            {
+              "name": "Strategic Management & Business Policy"
+            },
+            {
+              "name": "Entrepreneurship Development"
+            }
+          ]
+        },
+        {
+          "sem": 3,
+          "subjects": [
+            {
+              "name": "SEO & SEM"
+            },
+            {
+              "name": "Social Media Marketing",
+              "description": "Platform strategy (Instagram, LinkedIn, X, YouTube), content calendar design, community management, influencer marketing frameworks, and social media analytics and reporting."
+            },
+            {
+              "name": "Content & Email Marketing"
+            },
+            {
+              "name": "Mobile Marketing"
+            }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            {
+              "name": "Digital Marketing Analytics"
+            },
+            {
+              "name": "Strategic Digital Marketing"
+            },
+            {
+              "name": "Project Work"
+            }
+          ]
+        }
+      ],
+      "note": "Subjects as listed in the university syllabus we hold. Universities revise subjects between intakes."
+    },
+    "whoHires": {
+      "body": "**Industries:** Digital marketing agencies, e-commerce, FMCG (digital marketing divisions), banking (digital acquisition), media and entertainment, edtech, healthtech, and SaaS companies\n\n**Entry-level roles:** Digital Marketing Executive, SEO Analyst, Social Media Executive, Content Marketing Coordinator, Performance Marketing Analyst, Email Marketing Specialist\n\n**Mid-level roles:** 5 years experience):** Digital Marketing Manager, SEO Manager, Social Media Manager, Performance Marketing Manager, Brand Manager (digital), Content Strategy Lead\n\n**Senior roles:**  years):** Head of Digital Marketing, VP Marketing (digital-first companies), CMO (D2C and e-commerce), Director of Growth, Head of Performance Marketing\n\n**How to check placement claims:** ask Dr. D.Y. Patil Vidyapeeth, Pune - Centre for Online Learning (DPU-COL) Online for its latest placement report in writing, for your programme and mode. Online batches are often reported apart from campus ones, or not at all. edifyedu.in does not publish employer lists it cannot source. Treat the roles above as the kinds of jobs this syllabus prepares you for, not as a list of who has hired from this batch."
+    },
+    "skills": {
+      "body": "The Digital Marketing Management specialisation builds both execution and strategic marketing skills:\n\n- SEO: keyword research, on-page optimisation, technical audit, backlink analysis, Google Search Console and Analytics interpretation\n- Social Media: platform-specific content strategy, paid social campaign setup, community management protocols, influencer outreach and contract basics\n- Performance Marketing: Google Ads campaign structure, Meta Ads Manager basics, attribution modelling, and ROAS calculation\n- Web and Content: CMS management, landing page A/B testing, content calendar planning, and email marketing automation setup\n\n- Brand Management: brand equity frameworks (Keller's CBBE model), positioning strategy, brand architecture for multi-product companies\n- IMC Planning: media mix modelling, budget allocation across digital channels, and campaign measurement frameworks\n- International Digital Marketing: cross-border advertising compliance, multi-language content strategy, and global platform differences\n\n**Soft skills:** Presenting digital campaign ROI to C-suite, managing creative and technical teams, negotiating with media vendors and influencers, and leading digital transformation initiatives in traditional marketing organisations."
+    },
+    "fees": {
+      "body": "Fees are indicative. Reconfirm at dypatilonline.com before payment."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Digital Marketing Management as the specialisation, issued by Dr. D.Y. Patil Vidyapeeth, Pune (DPU-COL) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation and NIRF University #41. It is valid for government and private sector recruitment. edX certifications supplement the MBA credential. DigiLocker issuance is standard."
+    },
+    "faqs": [
+      {
+        "question": "Is this MBA only about digital marketing execution or does it cover marketing strategy?",
+        "answer": "It covers both. Semester 3 focuses on digital marketing execution: SEO, social media, content management, and emerging digital trends. The management core in Semesters 1-2 covers finance, strategy, and organisational behaviour. Graduates are positioned for both execution leadership and marketing strategy roles."
+      },
+      {
+        "question": "Does the programme teach Google Ads and Meta Ads?",
+        "answer": "Google Ads and Meta Ads campaign setup is covered at a management level (campaign structure, budget allocation, ROAS measurement) rather than at a platform-certification level. Candidates needing deep platform-specific skills should supplement with Google Ads certification or Meta Blueprint."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a dedicated Digital Marketing Management MBA from a NAAC A++ NIRF University #41 with edX certifications.",
+        "Your target is digital marketing leadership, agency head, brand manager, head of digital, where an MBA credential adds weight beyond certifications.",
+        "You need both execution skills (SEO, social, content) and strategy (brand management, IMC, international marketing) in one programme."
+      ],
+      "consider": [
+        "You only need digital marketing execution skills without the full MBA, a Google Digital Marketing certificate or platform-specific certification is faster and cheaper.",
+        "You want broader marketing management (not digital-specific), consider DPU's Marketing Management or Amrita's Marketing spec."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 1950,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 21,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-14",
+    "renamedFrom": "dr-dy-patil-vidyapeeth-online-mba-digital-marketing-management.json"
+  }
+}

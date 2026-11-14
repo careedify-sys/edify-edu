@@ -1,5 +1,25 @@
 # Fix log
 
+## 2026-11-14 · Batch 3.1: facts fixed in 51 orphan spec JSON files, renamed to their live pages
+
+- **Why:** 59 page-content files mapped to a live spec page but sat under the xlsx slug, so the loader never read them
+  (audits/orphan-spec-json-2026-11-14.csv). They carried wrong NAAC grades (Amity A++ for A+), NIRF ranks with the
+  wrong number or none of the category in lib/data.ts, about 800 typed fee sentences, salary and placement claims,
+  employer lists, subjects not in the syllabus manifest, and an ARKA JAIN line crediting it with JAIN Bengaluru's A++.
+- **What:** the 51 whose live URL is indexed (35 on the improve worklist, 16 other) were fixed sentence by sentence
+  and renamed with git mv. Fees: every sentence with a rupee figure, EMI, discount or payment-plan claim removed; the
+  JSON fee section keeps only the counsellor line, and a file with metadata.factSweep renders FeeBreakdown from
+  lib/data.ts (UniSpecBody). NAAC and NIRF: set from lib/data.ts for the university the sentence names; a sentence
+  naming two universities, an unknown one or an ambiguous "Manipal" was dropped; 381 values left, all verified
+  against the named university. Salary/placement figures, employer lists and placement-support claims removed.
+  Syllabus rebuilt from syllabus-manifest.json (38 files; 144 non-manifest subjects removed), 13 files with no
+  manifest entry show no subject list. First-hand: MUJ Coursera/immersion only as paid add-ons, no placement claims
+  for Amity, MUJ, NMIMS. Amrita ESG: Grant Thornton co-branding, "only ESG MBA" and direct EMI removed (not in
+  lib/data.ts). Overlap on the 35 worklist pages: mean 86.3% to 41.1%, all 35 under 60%
+  (audits/spec-improve-batch-1-2026-11-14.csv).
+- **Skipped:** 8 files pointing at noindexed pages (Assam Don Bosco marketing/operations, Dr MGR HR/marketing/
+  operations, IGNOU finance/marketing/operations), the 26 duplicates and the hub-level file. Nothing deleted.
+
 ## 2026-11-14 · Programme-basics batch: subject posts, BBA fees merge, BCA retarget, /programs/mba answers
 
 - **Why:** 10 of the 16 planned programme posts already existed; writing them again would have split rankings. The
@@ -21,6 +41,7 @@
   graduates. The hub answer, the duration post's direct answer and first FAQ, and the 1-year MBA post's "Can I do a
   one-year online MBA" FAQ (which contradicted its own JGU section) now name both. The 1-year post's updatedAt moves to
   14 Nov: check-blog-updated-at counts FAQ text (Rishi chose the bump over an exemption). JGU's hub is linked only when it resolves and is indexable.
+- **Live:** merged 54bf3ac, verified 14 Nov (tables 41/25/23, BBA 56 rows, -compared 308, sitemap 2,301).
 - **Held:** BBA, BCA and MCA admission guides. lib/ has no per-programme eligibility for them, and the first-hand
   admission steps are MBA-framed ({{eligibility}} fills the MBA graduation rule). Salary posts held on Rishi's call.
 

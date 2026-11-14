@@ -25,7 +25,7 @@ Source plan: "edifyedu.in ranking and scaling plan, with check log" (Rishi, 14 N
 
 | # | Item | Status |
 |---|---|---|
-| 3.1 | Fix facts in the 59 orphan spec JSON files against lib/data.ts, then rename them to the live slugs | Pending |
+| 3.1 | Fix facts in the 59 orphan spec JSON files against lib/data.ts, then rename them to the live slugs | Done on feat/spec-json-facts: 51 fixed and renamed (35 worklist, 16 other), 8 skipped (noindexed pages). Worklist overlap 86.3% to 41.1%, 35/35 marked improved for 26 Dec |
 | 3.2 | Hub link from the MUJ review: needs a sentence in the post, so it waits for the next real MUJ review update | Pending |
 
 ## Rishi-only (Claude cannot do these)
@@ -35,7 +35,8 @@ Source plan: "edifyedu.in ranking and scaling plan, with check log" (Rishi, 14 N
 - Ask enrolled students for a short verified review.
 - Brand work: LinkedIn article per university, YouTube, Quora and Reddit answers as Rishi, HARO.
 - Top up Semrush API units if Claude should pull Position Tracking directly.
-- After merge: Cloudflare purge /sitemap.xml and /blog/is-nmims-online-mba-worth-it-2026 (its bare URL is serving a cached 404 from a fetch about a minute before the deploy finished; the cache expires on its own by about 05:40 IST on 14 Nov); Search Console resubmit sitemap.xml; Request indexing in this order: /blog/is-nmims-online-mba-worth-it-2026, the 5 reviews (NMIMS, Amity, MUJ, SMU, Symbiosis), the NMIMS, Amity and MUJ MBA hubs.
+- After programme-basics merge: Search Console request indexing for the 3 subject posts and online-bba-fees-india-2026; Cloudflare purge /sitemap.xml optional (served fresh, MISS, at check).
+- After merge: Search Console resubmit sitemap.xml; Request indexing in this order: /blog/is-nmims-online-mba-worth-it-2026, the 5 reviews (NMIMS, Amity, MUJ, SMU, Symbiosis), the NMIMS, Amity and MUJ MBA hubs.
 
 ## Check calendar (reminders are set for each date at 10:00 IST)
 
@@ -61,3 +62,5 @@ Search Console 11 Aug to 10 Nov: 12,855 clicks, 2,663,474 impressions; tools 8,2
 - 14 Nov: 2.2 merged (f78e93a) and live. Gates and build passed on the merge; build: valid-urls.json 2,153, spec-noindex 686, sitemap 2,299 with none of the 686. Live, 3 passes at 20:38, 20:43, 20:47 UTC: 5/5 noindex samples "noindex, follow", 5/5 worklist samples "index, follow", owner links present on online-manipal-mba-review-2026 and is-mba-post-graduation-india-2026, live sitemap 2,299 <loc> with 0 of the 686 and the worth-it post in it. Worth-it bare URL: cached 404 at Cloudflare (cf HIT, cached 20:09:55 UTC, before the deploy was ready); origin with a cache-busting query serves 200 "index, follow". Needs a Cloudflare purge or waits out the cache.
 - 14 Nov: feat/programme-basics: 3 subject posts (MCA 41, MBA 25, MBA finance 24 universities), BBA fees merged with 301, BCA fees post aimed at "bca course fees", MBA duration post improved, /programs/mba answers. Not merged.
 - 14 Nov: feat/programme-basics fixes (e164f5f): one-year MBA answer names both routes on /programs/mba, the duration post and the 1-year MBA FAQ (its updatedAt bumped, the date gate counts FAQs); MCA tables use _core/general only if it covers semesters 1-4, all 41 now reach semester 4; MBA finance drops Amity (23). Build and gates pass.
+- 14 Nov: programme-basics merged (54bf3ac), one deploy, production ready (edify-edu-dh2m). Live: the 3 subject posts and online-bba-fees-india-2026 serve 200, index, follow, in the sitemap; tables 41 / 25 / 23, BBA fee table 56 rows; -compared returns 308 to the survivor and is not in the sitemap; sitemap 2,301 <loc>; /programs/mba shows both one-year routes with JGU linked, old wording gone; MUJ MCA table runs Semester 1 to 4; duration and 1-year posts carry the circular. Cloudflare purge of /sitemap.xml not done (no Cloudflare access): Rishi. Bare sitemap was a cache MISS, so it is already fresh.
+- 14 Nov: batch 3.1 on feat/spec-json-facts: 51 spec JSON files fixed (NAAC/NIRF from lib/data.ts, no typed fees, no salary or placement figures, syllabus from the manifest) and renamed to their live slugs; fee renders from data. 35 worklist pages re-measured: mean max sibling overlap 86.3% to 41.1% (audits/spec-improve-batch-1-2026-11-14.csv).
