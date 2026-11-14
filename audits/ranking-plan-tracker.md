@@ -18,8 +18,8 @@ Source plan: "edifyedu.in ranking and scaling plan, with check log" (Rishi, 14 N
 |---|---|---|
 | 2.1 | Noindex the zero-click near-copy spec pages and remove them from valid-urls.json together | Done on the branch, 14 Nov. Keep list (Rishi): every universityId in lib/coupons.ts (29) plus Mody and Sathyabama = 31. 686 noindexed (lib/data/spec-noindex-urls.json), 513 to improve (audits/spec-improve-worklist-2026-11-14.csv). Live once 2.2 merges |
 | 2.2 | Merge `feat/branded-sprint-1` to main (one deploy) | Done: merge f78e93a, pushed 14 Nov 01:37 IST, production deploy ready about 01:41 IST (edify-edu-dh2m). Live checks in the batch log |
-| 2.3 | Programme-basics posts: course guide, fees, admission process, salary for MBA, BBA, BCA, MCA (16) | "Approve going deep" box |
-| 2.4 | /programs/mba answers fees, cheapest, one-year, best, with a fee table from lib/data.ts | Same |
+| 2.3 | Programme-basics posts: course guide, fees, admission process, salary for MBA, BBA, BCA, MCA (16) | Approved 14 Nov, reshaped to the gaps: on branch feat/programme-basics. Admission guides and salary posts held |
+| 2.4 | /programs/mba answers fees, cheapest, one-year, best, with a fee table from lib/data.ts | Done on feat/programme-basics (fee table already there: ProgrammeComparisonTable) |
 
 ## Batch 3: next, no approval needed
 
@@ -59,3 +59,4 @@ Search Console 11 Aug to 10 Nov: 12,855 clicks, 2,663,474 impressions; tools 8,2
 - 14 Nov: Batch 1 done on feat/branded-sprint-1 (a2f3806, 7a4ed72, adb2848, 3311957, caff545); build passes; branch pushed, not merged.
 - 14 Nov: 2.1 applied on the branch: 686 spec pages noindex, out of valid-urls.json (2,153 URLs) and the sitemap; 513 on the improve worklist. Verified on a local build: 686/686 noindex, 513/513 index.
 - 14 Nov: 2.2 merged (f78e93a) and live. Gates and build passed on the merge; build: valid-urls.json 2,153, spec-noindex 686, sitemap 2,299 with none of the 686. Live, 3 passes at 20:38, 20:43, 20:47 UTC: 5/5 noindex samples "noindex, follow", 5/5 worklist samples "index, follow", owner links present on online-manipal-mba-review-2026 and is-mba-post-graduation-india-2026, live sitemap 2,299 <loc> with 0 of the 686 and the worth-it post in it. Worth-it bare URL: cached 404 at Cloudflare (cf HIT, cached 20:09:55 UTC, before the deploy was ready); origin with a cache-busting query serves 200 "index, follow". Needs a Cloudflare purge or waits out the cache.
+- 14 Nov: feat/programme-basics: 3 subject posts (MCA 41, MBA 25, MBA finance 24 universities), BBA fees merged with 301, BCA fees post aimed at "bca course fees", MBA duration post improved, /programs/mba answers. Not merged.

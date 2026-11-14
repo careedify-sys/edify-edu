@@ -737,6 +737,14 @@ const nextConfig = {
       // undo: delete this rule and set the source back to 'published'.
       { source: '/blog/online-executive-mba-india-2026', destination: '/blog/top-executive-mba-programs-india-2026', permanent: true },
 
+      // ── Online BBA fees consolidation (2026-11-14) ───────────────────────
+      // Two posts targeted "online bba fees india": 483 vs 105 impressions in
+      // 3 months. The -compared post's university table now renders from
+      // lib/data.ts in the survivor (programme-fee-table marker); the source is
+      // status:'redirected' in lib/blog.ts. To undo: delete this rule and set
+      // the source back to 'published'.
+      { source: '/blog/online-bba-fees-india-2026-compared', destination: '/blog/online-bba-fees-india-2026', permanent: true },
+
       // ── /blog/is-{uni}-fake-or-legit → /verify/{uni}  (2026-09-14) ──────
       // REVERTED 2026-10-07. The 14 entries that were here are gone and all
       // 14 posts are status:'published' again. The reasoning below is kept

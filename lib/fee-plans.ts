@@ -17,6 +17,8 @@ import { UNIVERSITIES, getUniversityById, SCDL_PGDBA, type FeePlan, type Univers
 import { getDisplayFee } from './fees'
 import { resolveFirstHand } from './first-hand'
 import ugcExtract from './data/ugc-deb-extract.json'
+import { shouldIndexUniversity } from './seo/mode-unverified'
+import { syllabusTablesHtml, commonSubjectsHtml, type SyllabusTrack } from './syllabus-tables'
 
 const rupees = (n: number) => `₹${n.toLocaleString('en-IN')}`
 
@@ -239,6 +241,36 @@ export function ugcDebProgrammesHtml(id: string): string {
     `<p style="font-size:13px;color:#64748b">Source: UGC-DEB online programme list, AY 2025-26 (<a href="https://deb.ugc.ac.in" rel="noopener" target="_blank">deb.ugc.ac.in</a>).</p>`
 }
 
+// ── Programme fee table (all universities) ───────────────────────────────────
+
+/**
+ * Every university offering the programme whose fee survives getDisplayFee
+ * (rules 4a, 4c and 4d), cheapest first. Universities held back from the index
+ * (mode unverified, advisories) are left out. NIRF is not printed: a rank here
+ * would need its category on every row, and the table is about fees.
+ */
+export function programmeFeeTableHtml(program: string): string {
+  const prog = program.toUpperCase() as Program
+  const rows = UNIVERSITIES
+    .filter(u => (u.programs ?? []).includes(prog) && shouldIndexUniversity(u.id))
+    .map(u => ({ u, f: getDisplayFee(u, prog) }))
+    .filter(r => r.f.ok && typeof r.f.min === 'number' && !!r.f.range)
+    .sort((a, b) => (a.f.min! - b.f.min!) || a.u.name.localeCompare(b.u.name))
+  if (!rows.length) return ''
+  const body = rows.map(({ u, f }) => {
+    // Plain names: a post carries 5 to 10 internal links (house rule).
+    const name = esc(u.name)
+    return `<tr><td style="${TD}">${name}</td><td style="${TD}">${esc(f.range!)}</td><td style="${TD}">${esc(String(u.naac || 'Not accredited'))}</td></tr>`
+  }).join('')
+  return `<div class="programme-fee-table" style="margin:16px 0">` +
+    `<p style="margin:0 0 8px;font-size:13px;color:#64748b">Total programme fee from our database, ${rows.length} universities, cheapest first. A range means the university prices by plan or batch. Fees are indicative. ${COUNSELLOR_FEE_LINE}</p>` +
+    `<div style="overflow-x:auto"><table style="${TABLE}"><thead><tr>` +
+    `<th style="${TH}">University</th><th style="${TH}">Total fee</th><th style="${TH}">NAAC</th>` +
+    `</tr></thead><tbody>${body}</tbody></table></div></div>`
+}
+
+const TRACKS = new Set(['mca', 'mba-core', 'mba-finance'])
+
 // ── Blog marker expansion ───────────────────────────────────────────────────
 
 /**
@@ -250,6 +282,9 @@ export function ugcDebProgrammesHtml(id: string): string {
  *   <div data-edify="nmims-no-distance"></div>
  *   <div data-edify="first-hand-admission" data-uni="nmims-online"></div>
  *   <div data-edify="ugc-deb-programmes" data-uni="nmims-online"></div>
+ *   <div data-edify="syllabus-tables" data-track="mca"></div>       (mca | mba-core | mba-finance)
+ *   <div data-edify="syllabus-common" data-track="mca"></div>
+ *   <div data-edify="programme-fee-table" data-program="BBA"></div>
  * An unknown university or a missing plan expands to nothing.
  */
 export function expandFeeMarkers(html: string): string {
@@ -273,6 +308,9 @@ export function expandFeeMarkers(html: string): string {
       case 'nmims-no-distance': return nmimsNoDistanceHtml()
       case 'first-hand-admission': return u ? firstHandAdmissionHtml(u) : ''
       case 'ugc-deb-programmes': return u ? ugcDebProgrammesHtml(u.id) : ''
+      case 'syllabus-tables': return TRACKS.has(attr('track') ?? '') ? syllabusTablesHtml(attr('track') as SyllabusTrack) : ''
+      case 'syllabus-common': return TRACKS.has(attr('track') ?? '') ? commonSubjectsHtml(attr('track') as SyllabusTrack) : ''
+      case 'programme-fee-table': return programmeFeeTableHtml(attr('program') ?? '')
       default: return ''
     }
   })

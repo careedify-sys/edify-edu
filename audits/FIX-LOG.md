@@ -1,5 +1,21 @@
 # Fix log
 
+## 2026-11-14 · Programme-basics batch: subject posts, BBA fees merge, BCA retarget, /programs/mba answers
+
+- **Why:** 10 of the 16 planned programme posts already existed; writing them again would have split rankings. The
+  gap-sheet holes with no page of ours were "mca subjects" (4,400/mo), "mba finance subjects" (3,600) and "bba course
+  fees" (6,600). Two BBA fee posts targeted the same query (483 vs 105 impressions in 3 months), and the survivor carried
+  48 typed fees including a grant that expired 9 May.
+- **What:** lib/syllabus-tables.ts renders semester tables and shared-subject counts from syllabus-manifest.json only
+  (MCA 41, MBA core 25, MBA finance 24; fuller of _core/general, VTU id aliased to vtu-online, Jain and UPES shown by
+  named track). New marker programme-fee-table lists every university whose fee survives getDisplayFee (4a/4c/4d),
+  cheapest first, NAAC only (no NIRF without a category). Three subject posts; the BBA survivor rewritten around the
+  table with no typed fee and the -compared post 301d (next.config.js, status redirected); BCA -compared aimed at
+  "bca course fees" (URL kept); MBA course-duration post given a direct answer and a how-many-years H1; /programs/mba
+  gets MbaHubAnswers (range and cheapest from the same vetted set as the hero, NIRF Management rank with category).
+- **Held:** BBA, BCA and MCA admission guides. lib/ has no per-programme eligibility for them, and the first-hand
+  admission steps are MBA-framed ({{eligibility}} fills the MBA graduation rule). Salary posts held on Rishi's call.
+
 ## 2026-11-13 · AI-visibility round 2: first-hand layer for Amity, NMIMS and MUJ
 
 - **Why:** CollegeSathi held page 1 for ~45K Amity, ~34K NMIMS and the "manipal online" searches with short
