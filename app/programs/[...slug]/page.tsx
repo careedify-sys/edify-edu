@@ -20,6 +20,7 @@ import { SPEC_HUB_EDITORIAL } from '@/lib/data/spec-hub-editorial'
 import ProgrammeComparisonTable from '@/components/ProgrammeComparisonTable'
 import ProgramPageClient from '@/components/ProgramPageClient'
 import MBAHubClient, { type MbaHubFees } from '@/components/MBAHubClient'
+import MbaHubAnswers from '@/components/MbaHubAnswers'
 import MBASpecHubClient from '@/components/MBASpecHubClient'
 import ProgramHubClient from '@/components/ProgramHubClient'
 import { getExactFee, exactFeeBounds, formatExactFee, formatExactFeeShort } from '@/lib/fees'
@@ -703,6 +704,9 @@ export default async function CatchAllProgramPage(
     // discounted net never sets the floor and a noindex page never counts.
     const mbaHubFees: MbaHubFees = { text: {}, short: {}, floor: {}, range: null }
     let lo = Infinity, hi = 0, counted = 0
+    // Same vetted set as the range: the cheapest answer never comes from a
+    // placeholder fee or a noindexed hub.
+    const vetted: { id: string; name: string; min: number; fee: string }[] = []
     for (const u of universities) {
       const e = getExactFee(u, 'MBA')
       const text = formatExactFee(e), short = formatExactFeeShort(e), b = exactFeeBounds(e)
@@ -711,9 +715,23 @@ export default async function CatchAllProgramPage(
       if (b) mbaHubFees.floor[u.id] = b.min
       if (b && hubResolves(u.id, 'MBA') && shouldIndexProgrammeHub(u, 'MBA').shouldIndex) {
         lo = Math.min(lo, b.min); hi = Math.max(hi, b.max); counted++
+        if (text) vetted.push({ id: u.id, name: formatUniversityDisplayName(u.name), min: b.min, fee: text })
       }
     }
     if (counted) mbaHubFees.range = { min: lo, max: hi, count: counted }
+    const cheapest = [...vetted].sort((a, b) => a.min - b.min || a.name.localeCompare(b.name)).slice(0, 3)
+      .map(({ id, name, fee }) => ({ id, name, fee }))
+    // NIRF Management rank, category always printed. Only universities whose
+    // MBA hub resolves and is indexable, so every link lands.
+    const topNirf = universities
+      .filter(u => typeof u.nirfMgt === 'number' && u.nirfMgt > 0 && hubResolves(u.id, 'MBA') && shouldIndexProgrammeHub(u, 'MBA').shouldIndex)
+      .sort((a, b) => (a.nirfMgt as number) - (b.nirfMgt as number))
+      .slice(0, 3)
+      .map(u => ({ id: u.id, name: formatUniversityDisplayName(u.name), rank: u.nirfMgt as number }))
+    // The one-year answer links JGU's MBA hub only when it lands on an indexable page.
+    const jgu = universities.find(u => u.id === 'op-jindal-global-university-online')
+    const jguHref = jgu && hubResolves(jgu.id, 'MBA') && shouldIndexProgrammeHub(jgu, 'MBA').shouldIndex
+      ? `/universities/${jgu.id}/mba` : null
     return (
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -744,6 +762,12 @@ export default async function CatchAllProgramPage(
           </div>
         </div>
         <MBAHubClient fees={mbaHubFees} />
+        <MbaHubAnswers
+          range={mbaHubFees.range ? { min: formatINR(mbaHubFees.range.min), max: formatINR(mbaHubFees.range.max), count: mbaHubFees.range.count } : null}
+          cheapest={cheapest}
+          topNirf={topNirf}
+          jguHref={jguHref}
+        />
         {/* The canonical machine-readable comparison for this programme. Lives
             on the base hub only: a spec hub is a narrower cut of the same rows,
             and repeating the full table across dozens of them would be
