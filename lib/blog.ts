@@ -7716,7 +7716,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Written for: senior professionals 5-plus years into career evaluating IIM PGPX or ISB PGP, mid-career professionals weighing executive MBA tier, working professionals confused by online MBA marketing as "fast-track".</p>
 
-<div class="callout-key"><strong>One-line frame for 1-year MBA India 2026:</strong> Real 1-year residential MBAs are premium at IIM A PGPX, IIM B EPGP, ISB PGP, XLRI 1-year EMBA, all costing Rs 30 lakh-plus and requiring 5-plus years of work experience. The only 1-year fully online UGC-recognised MBA is O.P. Jindal Global University (Rs 2 lakh, Institution of Eminence, with an AACSB-accredited business school). For working professionals not chasing IIM brand, 2-year online MBAs from NAAC A+ universities (Rs 2 lakh) are the practical alternative.</div>
+<div class="callout-key"><strong>One-line frame for 1-year MBA India 2026:</strong> Real 1-year residential MBAs are premium at IIM A PGPX, IIM B EPGP, ISB PGP, XLRI 1-year EMBA, all costing Rs 30 lakh-plus and requiring 5-plus years of work experience. O.P. Jindal Global University runs a 1-year fully online MBA under its Institution of Eminence status, but JGU does not appear on the UGC-DEB entitlement list of August 2026, so confirm with JGU which approval the programme rests on. For working professionals not chasing IIM brand, 2-year online MBAs from NAAC A+ universities (Rs 2 lakh) are the practical alternative.</div>
 
 <h2>What "1 Year MBA" Actually Means in India 2026</h2>
 

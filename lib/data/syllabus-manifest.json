@@ -4471,9 +4471,7 @@
               "User Interface",
               "Experience",
               "Design",
-              "DevOps -1 (GIT",
-              "Jenkins",
-              "Docker)",
+              "DevOps -1 (GIT, Jenkins, Docker)",
               "Software Architecture",
               "Prototyping"
             ]
@@ -4484,9 +4482,7 @@
               "Web Services- Rest API",
               "ReactJS",
               "NodeJS Development",
-              "DevOps-2 (Ansible",
-              "Puppet",
-              "Nagios)",
+              "DevOps-2 (Ansible, Puppet, Nagios)",
               "Major Project"
             ]
           }
@@ -16284,9 +16280,7 @@
             "subjects": [
               "Management Accounting",
               "Legal Aspects of Business",
-              "Minor Project + Electives (Enterprise Resource Planning",
-              "Total Quality Management",
-              "Supply Chain Management)."
+              "Minor Project + Electives (Enterprise Resource Planning, Total Quality Management, Supply Chain Management)."
             ]
           },
           {
@@ -16294,9 +16288,7 @@
             "subjects": [
               "Entrepreneurship and Innovation",
               "Sustainability",
-              "Capstone Project + Electives (Project Management",
-              "Services Operations Management",
-              "Operations Research)"
+              "Capstone Project + Electives (Project Management, Services Operations Management, Operations Research)"
             ]
           }
         ],
@@ -16332,9 +16324,7 @@
             "subjects": [
               "Management Accounting",
               "Legal Aspects of Business",
-              "Minor Project + Electives (Compensation and Benefits",
-              "Performance Management and Appraisal",
-              "International HRM)"
+              "Minor Project + Electives (Compensation and Benefits, Performance Management and Appraisal, International HRM)"
             ]
           },
           {
@@ -16342,9 +16332,7 @@
             "subjects": [
               "Entrepreneurship and Innovation",
               "Sustainability",
-              "Capstone Project + Electives (Training and Development",
-              "Talent Management and Employee Retention",
-              "HR Analytics)"
+              "Capstone Project + Electives (Training and Development, Talent Management and Employee Retention, HR Analytics)"
             ]
           }
         ],
@@ -16380,9 +16368,7 @@
             "subjects": [
               "Management Accounting",
               "Legal Aspects of Business",
-              "Minor Project + Electives (Supply Chain Management",
-              "Fundamentals of Logistics Management",
-              "Operations Management)."
+              "Minor Project + Electives (Supply Chain Management, Fundamentals of Logistics Management, Operations Management)."
             ]
           },
           {
@@ -16390,9 +16376,7 @@
             "subjects": [
               "Entrepreneurship and Innovation",
               "Sustainability",
-              "Capstone Project + Electives (Quality Management in Logistics & Supply Chain",
-              "Procurement and Purchasing",
-              "Logistics and Distribution Management)"
+              "Capstone Project + Electives (Quality Management in Logistics & Supply Chain, Procurement and Purchasing, Logistics and Distribution Management)"
             ]
           }
         ],
@@ -16474,10 +16458,7 @@
               "Cloud Computing",
               "Cybersecurity",
               "Full Stack Development",
-              "Electives/Specializations (Deep Learning Principles and Applications",
-              "Artificial Intelligence",
-              "Big Data Analytics",
-              "Computer Vision)"
+              "Electives/Specializations (Deep Learning Principles and Applications, Artificial Intelligence, Big Data Analytics, Computer Vision)"
             ]
           }
         ],
@@ -16524,10 +16505,7 @@
               "Cloud Computing",
               "Cybersecurity",
               "Full Stack Development",
-              "Electives/Specializations (Cloud Architecture and Management",
-              "Cloud DevOps",
-              "Cloud Application and Database with Java",
-              "Cloud Security Essentials)"
+              "Electives/Specializations (Cloud Architecture and Management, Cloud DevOps, Cloud Application and Database with Java, Cloud Security Essentials)"
             ]
           }
         ],
@@ -16574,10 +16552,7 @@
               "Cloud Computing",
               "Cybersecurity",
               "Full Stack Development",
-              "Electives/Specializations (Basics in Information Security",
-              "Forensic Investigation",
-              "Cyber Crime Intervention",
-              "Cloud Security Essentials)"
+              "Electives/Specializations (Basics in Information Security, Forensic Investigation, Cyber Crime Intervention, Cloud Security Essentials)"
             ]
           }
         ],
@@ -16624,10 +16599,7 @@
               "Cloud Computing",
               "Cybersecurity",
               "Full Stack Development",
-              "Electives/Specializations (Back-end Web Development",
-              "Front-end Web Development",
-              "Human-Computer Interaction",
-              "Cloud Security Essentials)"
+              "Electives/Specializations (Back-end Web Development, Front-end Web Development, Human-Computer Interaction, Cloud Security Essentials)"
             ]
           }
         ],
