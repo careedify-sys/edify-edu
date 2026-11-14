@@ -1,0 +1,65 @@
+{
+  "uniSlug": "chitkara-university-online",
+  "program": "mba",
+  "specSlug": "hr-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "CHITKARA UNIVERSITY ONLINE MBA",
+      "headline": "Chitkara Online MBA in Human Resource Management: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A+ | NIRF University #78 | UGC-DEB Approved"
+    },
+    "tldr": "NAAC A+, NIRF University #78, UGC-DEB approved. Solid choice for HR professionals in the Punjab/Chandigarh region seeking an accredited management credential.",
+    "about": {
+      "body": "Chitkara University, Rajpura (Punjab) offers an Online MBA with Human Resource Management specialisation. The programme holds NAAC A+ accreditation, NIRF University #78, and full UGC-DEB approval.\n\nHRM is among the top three MBA specialisations by enrollment across Indian online universities. The market is well-served by strong competitors, and Chitkara enters with its NAAC A+ credential and Punjab campus brand.\n\nThe fee positions it as a mid-tier NAAC A+ option.\n\nChitkara's location in Punjab's industrial belt gives it connections with manufacturing, pharma, and IT companies in the Chandigarh-Mohali-Rajpura corridor. HR roles in these industries, from factory-floor labour relations to tech company talent acquisition, are well-served by this MBA.\n\nEdifyEdu verifies data independently from official portals and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": false,
+      "emptyFallback": "We do not yet hold a semester-wise syllabus for this specialisation at Chitkara University. Talk to our counsellor for the current subject list."
+    },
+    "whoHires": {
+      "body": "**Industries:** IT services, banking, manufacturing, pharma, FMCG, consulting (HR advisory), retail, telecom, and healthcare\n\n**Entry-level roles:** HR Executive, Talent Acquisition Associate, HR Operations Coordinator, Payroll Executive, Employee Engagement Associate\n\n**Mid-level roles:** 5 years experience):** HR Manager, Talent Acquisition Manager, Compensation & Benefits Manager, HRBP (HR Business Partner), L&D Manager\n\n**Senior roles:**  years):** CHRO, VP Human Resources, Head of Talent, Director HR Operations, HR Transformation Lead\n\n**How to check placement claims:** ask Chitkara University Online for its latest placement report in writing, for your programme and mode. Online batches are often reported apart from campus ones, or not at all. edifyedu.in does not publish employer lists it cannot source. Treat the roles above as the kinds of jobs this syllabus prepares you for, not as a list of who has hired from this batch."
+    },
+    "skills": {
+      "body": "The HRM specialisation builds people management skills tested by employers at HRBP and HR Manager levels:\n\n- Talent Acquisition: sourcing strategy design, employer branding, candidate experience optimisation, and recruitment analytics\n- Compensation & Benefits: salary benchmarking, incentive plan design, ESOP structuring, and total rewards framework\n- Labour Law: Industrial Disputes Act, Factories Act, Code on Wages 2019, Code on Social Security 2020, and POSH Act compliance\n- HR Analytics: attrition prediction models, engagement survey analysis, workforce planning metrics, and HR dashboard design\n\n- Performance Management: OKR and KRA frameworks, 360-degree feedback systems, bell curve calibration, and PIP (Performance Improvement Plan) structuring\n- Organisational Development: change management models, culture assessment, organisation restructuring, and M&A people integration\n\n**Soft skills:** Conducting difficult conversations (termination, PIP), facilitating leadership team alignment, mediating employee-manager conflicts, presenting people strategy to the board, and coaching managers on team effectiveness."
+    },
+    "comparisons": {
+      "body": "**vs JAIN Online MBA HRM:** JAIN has NAAC A++ with a well-established online brand and a larger HRM alumni network. Fee is competitive at a similar or slightly lower range. For pan-India HR career value, JAIN is the safer pick. Chitkara competes on Punjab regional strength."
+    },
+    "fees": {
+      "body": "Contact our counsellor for EMI terms (zero-cost vs interest-bearing), scholarships, and any additional charges. edifyedu.in rechecks fees with Chitkara every quarter. Please check with our counsellor before you pay. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Human Resource Management noted as the specialisation, issued by Chitkara University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation and NIRF University #78. Valid for government hiring, corporate promotions, and higher education applications. DigiLocker digital verification is available for employer background checks."
+    },
+    "faqs": [
+      {
+        "question": "What makes Chitkara MBA in HRM different from other online MBAs?",
+        "answer": "Chitkara offers a broader specialisation portfolio including niche specs like Cyber Security and Pharmaceutical Management. The Punjab campus brand adds regional hiring value in the Chandigarh-Mohali corridor."
+      },
+      {
+        "question": "What HR roles can I target after this MBA?",
+        "answer": "Entry-level: HR Executive, Talent Acquisition Associate, HR Operations Coordinator. Mid-level (3-5 years): HR Manager, HRBP, Compensation & Benefits Manager, L&D Manager. Senior (7+ years): CHRO, VP HR, Head of Talent. The MBA is most valuable for mid-career professionals seeking HRBP or HR Manager-level promotions."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want an HRM MBA from a NAAC A+, NIRF University #78 with strong Punjab regional brand.",
+        "You are based in the Punjab/Chandigarh industrial corridor and value local employer familiarity.",
+        "You work in manufacturing, pharma, or IT in Punjab where Chitkara's campus brand is well-known."
+      ],
+      "consider": [
+        "Chitkara's online brand is newer. Brand recognition outside Punjab is still developing."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 1300,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 35,
+    "hasSyllabusData": false,
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-14",
+    "renamedFrom": "chitkara-university-online-mba-human-resource-management.json"
+  }
+}

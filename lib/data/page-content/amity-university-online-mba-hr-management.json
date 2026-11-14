@@ -1,0 +1,115 @@
+{
+  "uniSlug": "amity-university-online",
+  "program": "mba",
+  "specSlug": "hr-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "AMITY UNIVERSITY ONLINE MBA",
+      "headline": "Amity Online MBA in Human Resource Management: Syllabus, Fees and Career Outcomes",
+      "sub": "UGC-DEB approved specialisation. NAAC A+, NIRF University #22. QS ranked. WES recognised."
+    },
+    "tldr": "Amity University Online MBA in Human Resource Management suits professionals targeting HR generalist, HRBP, or talent acquisition leadership roles. Sem 3-4 spec subjects confirmed each cycle - our counsellor shares them within 24 hours.",
+    "about": {
+      "body": "Human Resource Management is the third most common MBA specialisation choice in India, driven by steady demand for HRBP, talent acquisition, and HR operations professionals across sectors. The Amity Online MBA in HR Management builds depth in talent management, performance systems, labour law, compensation and benefits, training and development, and organisational behaviour.\n\nThe specialisation suits professionals currently working in HR executive or coordinator roles who want to transition into managerial positions, as well as professionals from non-HR backgrounds seeking a formal HR qualification for lateral moves. Amity University Online is NAAC A+ accredited with NIRF University #22 for 2025. The HR MBA carries the Amity University name on the final certificate, identical in format to the campus HR MBA.\n\nUGC-DEB entitlement makes the degree valid for private sector hiring and government notifications where online degrees are accepted. EdifyEdu verifies these accreditation figures independently and does not receive commission from Amity. Programme duration is 2 years across 4 semesters. For the full programme overview, visit /universities/amity-university-online/mba."
+    },
+    "syllabus": {
+      "hasData": true,
+      "semesters": [
+        {
+          "sem": 1,
+          "subjects": [
+            {
+              "name": "Accounting for Managers"
+            },
+            {
+              "name": "Managerial Economics"
+            },
+            {
+              "name": "Marketing Management"
+            },
+            {
+              "name": "Statistics for Management"
+            },
+            {
+              "name": "Professional communication"
+            }
+          ]
+        },
+        {
+          "sem": 2,
+          "subjects": [
+            {
+              "name": "Business Research Methods"
+            },
+            {
+              "name": "Financial Management"
+            },
+            {
+              "name": "Human Resource Management"
+            },
+            {
+              "name": "Legal Aspects of Business"
+            },
+            {
+              "name": "Conflict Resolution and Management"
+            }
+          ]
+        }
+      ],
+      "note": "Our syllabus data for this specialisation covers semesters 1 to 2. Talk to our counsellor for the later semesters."
+    },
+    "whoHires": {
+      "body": "**Industries:** Manufacturing, BFSI, IT services, FMCG, Management consulting and staffing, Professional services\n\n**Entry-level roles:** HR Generalist, Recruitment Manager, HR Operations Manager, Compensation Analyst\n\n**Mid-level roles:** 5 years experience):** HR Business Partner, HR Manager, Talent Acquisition Manager, L&D Manager, Industrial Relations Manager\n\n**Senior roles:**  years):** HR Head, CHRO, VP Human Resources, Head of Talent Management"
+    },
+    "skills": {
+      "body": "The Human Resource Management specialisation builds skills tested at HRBP and HR head level by large corporate and BFSI employers:\n\n- Compensation Design: salary grading, variable pay programme design, and benefits benchmarking against market data\n- Industrial Relations: union management, standing orders, disciplinary inquiry, and collective bargaining in Indian contexts\n- Recruitment and Selection: structured interview design, assessment centre management, and hiring decision quality improvement\n\n- Organisational Development: change management models, culture assessment tools, and OD intervention design\n- Manpower Planning: workforce demand forecasting, succession pipeline management, and skill gap closure strategy\n\n**Soft skills:** Managing unionised shop-floor workforces, presenting HR metrics to board and CHRO, navigating industrial disputes without production disruption."
+    },
+    "comparisons": {
+      "body": "**vs Chandigarh University HR MBA:** CU is NAAC A+ and NIRF University #19. Fee is similar. CU has strong HR hiring in manufacturing sector employers in north India. Amity is stronger for Delhi NCR IT and consulting sector HR hiring. Both are comparable at this price tier.\n\n**vs Symbiosis Online HR MBA:** Symbiosis carries significantly stronger brand in HR circles, particularly for Pune and Mumbai-based companies. Fees are higher. For candidates targeting senior HR roles at premium companies, Symbiosis brand premium is real."
+    },
+    "fees": {
+      "body": "EdifyEdu rechecks fees with Amity University Online every quarter. Please reconfirm current fees with our counsellor before any payment. Fees can change between intakes."
+    },
+    "certificate": {
+      "body": "The Amity University degree certificate carries the Amity University name, the MBA designation, and identifies the online learning mode per UGC-DEB 2020 regulations. The Human Resource Management specialisation is noted on the marksheet and transcript. The certificate names the online mode, as UGC-DEB rules require. It counts the same as a regular MBA for jobs, promotions and further study."
+    },
+    "faqs": [
+      {
+        "question": "Can I switch from HR Management to HR Analytics specialisation after enrolling?",
+        "answer": "Specialisation changes are typically not permitted after the first semester per Amity's academic policy. If HR Analytics is your primary interest, confirm at admission whether it is available in your intake and enrol directly in that specialisation. Both specs share the Sem 1-2 core curriculum."
+      },
+      {
+        "question": "What is the difference between Amity HR Management MBA and Amity HR Analytics MBA?",
+        "answer": "HR Analytics focuses specifically on data-driven HR: people analytics, HR technology, attrition modelling, and workforce planning using data tools. HR Management suits generalist HRBP careers; HR Analytics suits specialist roles in HR tech companies and large analytics-driven organisations."
+      },
+      {
+        "question": "Does Amity HR MBA cover POSH Act and recent labour code compliance?",
+        "answer": "The programme covers compliance frameworks including the POSH Act and key labour regulations. However, given rapid legislative changes in India, always verify with the course coordinator whether the latest labour code consolidation is covered in the current curriculum. Dedicated POSH certification courses are recommended alongside the degree for specialists."
+      },
+      {
+        "question": "Is prior HR experience required to enrol?",
+        "answer": "No prior HR experience is required. Sem 1-2 covers HRM fundamentals. Freshers are advised to pair the degree with an internship or entry-level HR role during study."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You are working in HR executive or coordinator roles and want a NIRF-ranked credential to qualify for HRBP or HR Manager positions.",
+        "You are targeting IT services, BFSI, or consulting HR roles in Delhi NCR or Hyderabad where Amity brand is well recognised."
+      ],
+      "consider": [
+        "You are targeting senior HR leadership roles at premium companies - Symbiosis Online HR carries significantly stronger brand in those circles despite higher fees.",
+        "You are in Mumbai targeting BFSI or consulting HR - NMIMS Online carries stronger brand premium for those roles."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2050,
+    "generatedAt": "2026-04-21",
+    "batchNumber": 9,
+    "hasSyllabusData": false,
+    "phase71Updated": "2026-04-21",
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-14",
+    "renamedFrom": "amity-university-online-mba-human-resource-management.json"
+  }
+}

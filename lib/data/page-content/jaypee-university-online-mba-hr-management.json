@@ -1,0 +1,60 @@
+{
+  "uniSlug": "jaypee-university-online",
+  "program": "mba",
+  "specSlug": "hr-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "JIIT ONLINE MBA",
+      "headline": "JIIT Online MBA in Human Resource Management: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A | UGC-DEB Approved | Deemed University est. 2001"
+    },
+    "tldr": "",
+    "about": {
+      "body": "JIIT Noida is a deemed university established in 2001 with a tech-adjacent identity. NAAC A accredited, UGC-DEB approved.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": false,
+      "emptyFallback": "We do not yet hold a semester-wise syllabus for this specialisation at Jaypee Institute of Information Technology. Talk to our counsellor for the current subject list."
+    },
+    "whoHires": {
+      "body": "**Industries:** IT services, manufacturing, banking, FMCG, retail, healthcare, consulting (HR advisory), and government enterprises\n\n**Entry-level roles:** HR Executive, Recruitment Executive, Compensation Analyst, L&D Coordinator, Employee Relations Executive, DEI Coordinator\n\n**Mid-level roles:** 5 years experience):** HR Manager, Talent Acquisition Manager, Compensation Manager, HR Business Partner, L&D Manager, OD Manager\n\n**Senior roles:**  years):** HR Director, CHRO, VP HR, Head of Talent Management, Head of DEI, Head of OD\n\n**How to check placement claims:** ask Jaypee Institute of Information Technology Online for its latest placement report in writing, for your programme and mode. Online batches are often reported apart from campus ones, or not at all. edifyedu.in does not publish employer lists it cannot source. Treat the roles above as the kinds of jobs this syllabus prepares you for, not as a list of who has hired from this batch."
+    },
+    "skills": {
+      "body": "The HR specialisation builds skills across people management, compliance, and talent strategy:\n\n- Employment Law: Industrial Disputes Act interpretation, new labour code implementation, statutory compliance filing, and disciplinary proceeding documentation\n- Compensation Design: job evaluation, pay band construction, variable pay structure, ESOP administration, and PF/ESI/gratuity compliance\n- Assessment Centre: competency framework construction, BEI (Behavioural Event Interview) design, assessment centre exercise design, and calibration methodology\n- DEI: inclusive hiring audit, unconscious bias training design, DEI dashboard metrics, and accessibility compliance assessment\n\n- L&D: training needs analysis, learning path design, e-learning evaluation, and ROI calculation for training spend\n- Talent Management: succession planning grid, high-potential identification criteria, EVP design, and attrition root cause analysis\n\n**Soft skills:** Handling sensitive employee relations cases, facilitating OD interventions, presenting HR strategy to boards, coaching managers on performance conversations, and leading DEI culture change."
+    },
+    "fees": {
+      "body": "Fees listed are indicative. edifyedu.in rechecks fees with Jaypee JIIT every quarter. Please check with our counsellor before you pay."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Human Resource Management as the specialisation, issued by Jaypee Institute of Information Technology (JIIT), Noida under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A accreditation and UGC-DEB approval. Valid for government HR officer recruitment, PSU applications, and private-sector HR roles. WES recognised. DigiLocker issuance is standard."
+    },
+    "faqs": [
+      {
+        "question": "Is the Internship/OJT mandatory?",
+        "answer": "Yes. Working professionals typically align it with an HR project at their current employer using the OJT option."
+      },
+      {
+        "question": "How does JIIT HR compare to DPU Pune HR?",
+        "answer": "JIIT competes on curriculum breadth and fee."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "Mandatory internship adds experiential value to your HR MBA."
+      ],
+      "consider": [
+        "Brand recognition matters for HR leadership roles. Amity, MAHE, and NMIMS have stronger MBA brand positioning."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2100,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 23,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-14",
+    "renamedFrom": "jaypee-university-online-mba-human-resource-management.json"
+  }
+}

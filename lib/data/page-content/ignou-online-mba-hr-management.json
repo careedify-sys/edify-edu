@@ -1,0 +1,62 @@
+{
+  "uniSlug": "ignou-online",
+  "program": "mba",
+  "specSlug": "hr-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "IGNOU ONLINE MBA",
+      "headline": "IGNOU Online MBA in Human Resource Management: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A++ | Central Government University est. 1985 | UGC-DEB approved"
+    },
+    "tldr": "",
+    "about": {
+      "body": "The degree is issued by a NAAC A++ central government university. It is valid for government recruitment requiring an MBA, PSU HR officer applications, and private sector roles where UGC-DEB entitlement is the credential standard.\n\nThe programme runs over 2 years, extendable to 5 years. Admission is direct, no entrance exam required. EdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": false,
+      "emptyFallback": "We do not yet hold a semester-wise syllabus for this specialisation at Indira Gandhi National Open University (IGNOU). Talk to our counsellor for the current subject list."
+    },
+    "whoHires": {
+      "body": "**Industries:** Manufacturing HR, government enterprise HR, banking HR, insurance HR, IT services HR (shared services level), healthcare HR, and central government HR departments\n\n**Entry-level roles:** HR Executive, Personnel Officer, Labour Welfare Officer, Training Coordinator, Recruitment Executive, HR Compliance Officer\n\n**Mid-level roles:** 5 years experience):** HR Manager, Industrial Relations Manager, Compensation Manager, HR Business Partner (mid-market), Training and Development Manager\n\n**Senior roles:**  years):** HR Director, Chief People Officer (mid-market), Head of Industrial Relations, VP HR, Head of Talent Management\n\n**How to check placement claims:** ask Indira Gandhi National Open University (IGNOU) Online for its latest placement report in writing, for your programme and mode. Online batches are often reported apart from campus ones, or not at all. edifyedu.in does not publish employer lists it cannot source. Treat the roles above as the kinds of jobs this syllabus prepares you for, not as a list of who has hired from this batch."
+    },
+    "skills": {
+      "body": "The Human Resource Management specialisation builds skills across organisational HR, industrial relations, and international people management:\n\n- Industrial Relations and Labour Law: Industrial Disputes Act interpretation, standing orders application, trade union negotiation process, grievance procedure design, and statutory filing compliance\n- Compensation Design: job evaluation methodology (point-factor, ranking), pay band design, variable pay plan structure, statutory minimum wage compliance, and benefits benchmarking\n- HR Planning: workforce gap analysis, skills inventory design, succession planning grid, headcount modelling, and manpower planning integration with business planning cycles\n- Organisational Development: OD diagnosis framework, change readiness assessment, intervention selection (process consultation, team building, structural change), and change measurement\n\n- HR Development: training needs analysis framework, learning programme design, ROI evaluation for training spend, and career development planning for different employee segments\n- International HRM: expatriate assignment management, cross-cultural team facilitation, global HR policy design, and host-country employment law navigation basics\n\n**Soft skills:** Managing sensitive employee relations cases, presenting HR strategy to boards, communicating change to resistant organisational populations, building HR credibility with operational line managers, and handling labour disputes with union representatives."
+    },
+    "fees": {
+      "body": "Fees listed are indicative. IGNOU fees are notified by the university at the start of each academic session. edifyedu.in reconfirms fees each quarter. Please check with our counsellor before you pay."
+    },
+    "certificate": {
+      "body": "Graduates receive an IGNOU MBA degree certificate with Human Resource Management as the specialisation, issued by Indira Gandhi National Open University under UGC-DEB 2020 online mode standards.\n\nIGNOU's degree carries NAAC A++ accreditation and UGC-DEB entitlement. It is valid for all central government recruitment requiring an MBA, PSU HR officer applications, and private sector roles where UGC-DEB entitlement is the credential standard. DigiLocker issuance is available."
+    },
+    "faqs": [
+      {
+        "question": "Is IGNOU MBA HRM valid for government HR officer roles?",
+        "answer": "Yes. IGNOU's MBA is a UGC-DEB entitled degree from a NAAC A++ central government university. It is valid for central and state government HR officer recruitment, PSU HR officer applications, bank HR promotions, and all roles specifying a UGC-recognised post-graduate management degree."
+      },
+      {
+        "question": "How does IGNOU HRM compare to Amity Online HRM on employer recognition?",
+        "answer": "Both carry UGC-DEB entitlement. IGNOU holds NAAC A++, the same grade as the most premium private online universities. For government jobs and PSU applications, IGNOU's central government university status is often a stronger signal than any private university. For premium private sector employers and multinational companies where brand name carries weight, Amity at NIRF University #22. Both are fully valid credentials."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "Government HR officer eligibility, PSU recruitment, or government enterprise industrial relations roles require a recognised MBA.",
+        "You work in manufacturing or a unionised sector where industrial relations and labour law depth is more valuable than digital HR tools."
+      ],
+      "consider": [
+        "Your target employer values contemporary HR analytics and HRMS platform skills over labour law depth.",
+        "Your target employer filters by NIRF rank rather than NAAC grade or UGC-DEB entitlement."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 1900,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 20,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22",
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-14",
+    "renamedFrom": "ignou-online-mba-human-resource-management.json"
+  }
+}

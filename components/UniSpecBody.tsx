@@ -568,7 +568,9 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                   {/* §8 Fees. A university with a payment-mode fee plan shows that
                       table from lib/data.ts, not the JSON prose, which carries typed
                       fees that drift (Amity Healthcare said ₹3,29,000 for ₹3,29,200). */}
-                  {getFeePlans(u, program, specSlug).length > 0 ? (
+                  {/* A file swept of typed fees (metadata.factSweep, batch 3.1,
+                      2026-11-14) also renders the fee from lib/data.ts. */}
+                  {getFeePlans(u, program, specSlug).length > 0 || specJson.metadata?.factSweep ? (
                     <FeeBreakdown u={u} pd={pd} program={program} cleanName={cleanName} spec={specSlug} />
                   ) : specJson.sections.fees?.body && (
                     <section className="rounded-xl border border-slate-200 bg-white p-6">

@@ -1,0 +1,192 @@
+{
+  "uniSlug": "assam-don-bosco-university-online",
+  "program": "mba",
+  "specSlug": "hr-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "ADB ONLINE MBA",
+      "headline": "Assam Don Bosco University Online MBA in Human Resource Management: Fees, Syllabus and Career Scope",
+      "sub": "UGC-DEB approved 2-year programme | NAAC A accredited | Don Bosco/Salesian educational network"
+    },
+    "tldr": "Assam Don Bosco University Online MBA in Human Resource Management covers Applied Psychology in Personnel Administration, Compensation Management, Training and Development, Team Dynamics and Leadership, and Transformational Leadership in Sem 3. Sem 4 includes Organizational Staffing and HR Analytics, Performance Management, Organizational Change and Development, Strategic Human Resource Management, and Cross Cultural Management. NAAC A accredited, UGC-DEB approved. Part of the Don Bosco/Salesian educational network. Startup Management is a common Sem 3 core.",
+    "about": {
+      "body": "Assam Don Bosco University (CDOE) is a private university in Guwahati, Assam, operating under the globally recognized Don Bosco/Salesian educational network. The Salesian order runs more than 1,500 educational institutions across 130+ countries. ADB holds NAAC A accreditation and UGC-DEB approval for its online programmes.\n\nThe HRM specialisation is one of the most subject-dense among ADB's MBA offerings. Sem 3 places five dedicated HR subjects: Applied Psychology in Personnel Administration, Compensation Management, Training and Development, Team Dynamics and Leadership, and Transformational Leadership. Sem 4 continues with five more: Organizational Staffing and HR Analytics, Performance Management, Organizational Change and Development, Strategic Human Resource Management, and Cross Cultural Management.\n\nThe inclusion of both Team Dynamics and Leadership alongside Transformational Leadership in Sem 3 shows a strong leadership development focus. Cross Cultural Management in Sem 4 is relevant for professionals working with diverse Northeast Indian communities or in multinational contexts.\n\nStartup Management appears as a common Sem 3 core subject. This is uncommon at the NAAC A tier and useful for HR professionals advising early-stage companies on people strategy.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "semesters": [
+        {
+          "sem": 1,
+          "subjects": [
+            {
+              "name": "Principles of Management"
+            },
+            {
+              "name": "Managerial Economics"
+            },
+            {
+              "name": "Management Communication"
+            },
+            {
+              "name": "Marketing Management"
+            },
+            {
+              "name": "Business Ethics and CSR"
+            },
+            {
+              "name": "Financial Accounting"
+            }
+          ]
+        },
+        {
+          "sem": 2,
+          "subjects": [
+            {
+              "name": "Financial Management"
+            },
+            {
+              "name": "Quantitative Methods"
+            },
+            {
+              "name": "Entrepreneurship Development"
+            },
+            {
+              "name": "Market Research"
+            },
+            {
+              "name": "Human Resource Management"
+            },
+            {
+              "name": "Organizational Behaviour"
+            }
+          ]
+        },
+        {
+          "sem": 3,
+          "subjects": [
+            {
+              "name": "Minor Project",
+              "description": "Guided research project on an HR-related topic. Problem identification, methodology design, and initial findings."
+            },
+            {
+              "name": "Startup Management",
+              "description": "Startup ecosystem, business model canvas, funding stages (seed, angel, VC), lean startup methodology, and go-to-market strategy."
+            },
+            {
+              "name": "Operations Management",
+              "description": "Production planning, quality management, supply chain basics, inventory control, and process optimization."
+            },
+            {
+              "name": "Applied Psychology in Personnel Administration",
+              "description": "Psychological principles in HR, employee motivation theories, workplace behaviour analysis, and psychometric assessment in hiring."
+            },
+            {
+              "name": "Compensation Management",
+              "description": "Salary structuring, pay-for-performance systems, benefits administration, executive compensation, and compensation benchmarking."
+            },
+            {
+              "name": "Training and Development",
+              "description": "Training needs analysis, programme design and delivery, e-learning methods, ROI of training, and employee development plans."
+            },
+            {
+              "name": "Team Dynamics and Leadership",
+              "description": "Group behaviour, team formation stages, conflict resolution, leadership styles, situational leadership, and high-performance team building."
+            },
+            {
+              "name": "Transformational Leadership",
+              "description": "Transformational vs transactional leadership, vision-driven management, change leadership, inspirational motivation, and intellectual stimulation."
+            }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            {
+              "name": "Business Policy and Strategic Management",
+              "description": "Strategic analysis frameworks, competitive positioning, corporate-level strategy, and strategic implementation and control."
+            },
+            {
+              "name": "Research Project/Dissertation",
+              "description": "Full research dissertation on an HR topic. Data collection, analysis, findings, and structured thesis presentation."
+            },
+            {
+              "name": "Computer Applications in Business",
+              "description": "Business software tools, data analysis using spreadsheets, MIS reporting, and technology-driven decision support systems."
+            },
+            {
+              "name": "Organizational Staffing and HR Analytics",
+              "description": "Recruitment strategy, workforce planning, talent acquisition metrics, HR data analysis, and predictive analytics for attrition and engagement."
+            },
+            {
+              "name": "Performance Management",
+              "description": "Performance appraisal systems, KPI design, 360-degree feedback, balanced scorecard approach, and performance improvement plans."
+            },
+            {
+              "name": "Organizational Change and Development",
+              "description": "Change management frameworks, OD interventions, organizational culture transformation, resistance management, and planned change processes."
+            },
+            {
+              "name": "Strategic Human Resource Management",
+              "description": "HR as a strategic partner, workforce strategy alignment with business goals, HR scorecard, and evidence-based HR decision making."
+            },
+            {
+              "name": "Cross Cultural Management",
+              "description": "Cultural dimensions (Hofstede, Trompenaars), managing diverse teams, cross-cultural communication, expatriate management, and global HR practices."
+            }
+          ]
+        }
+      ],
+      "note": "Subjects as listed in the university syllabus we hold. Universities revise subjects between intakes."
+    },
+    "whoHires": {
+      "body": "**Industries:** IT/ITES, manufacturing, BFSI, healthcare, hospitality, government and PSU HR departments, NGOs, and development sector organizations\n\n**Entry-level roles:** HR Executive, Recruitment Coordinator, Training Coordinator, Payroll Officer, HR Analyst, Employee Engagement Associate\n\n**Mid-level roles:** 5 years):** HR Manager, Talent Acquisition Manager, L&D Manager, Compensation and Benefits Manager, HR Business Partner, OD Specialist\n\n**Senior roles:**  years):** CHRO, VP Human Resources, Director of Talent, Head of L&D, Director of Organizational Development, Head of HR Strategy\n\n**Note:** NE India's growing service sector and development organizations create steady HR demand. Cross Cultural Management skills are directly relevant to the region's diverse ethnic and linguistic landscape.\n\n**How to check placement claims:** ask Assam Don Bosco University Online for its latest placement report in writing, for your programme and mode. Online batches are often reported apart from campus ones, or not at all. edifyedu.in does not publish employer lists it cannot source. Treat the roles above as the kinds of jobs this syllabus prepares you for, not as a list of who has hired from this batch."
+    },
+    "skills": {
+      "body": "The HRM specialisation builds skills across people management, analytics, and organizational development:\n\n- HR Analytics: workforce data analysis, attrition prediction models, recruitment funnel metrics, and HR dashboard creation\n- Compensation Design: salary benchmarking, pay band structuring, CTC computation, benefits package design, and executive compensation frameworks\n- Performance Systems: KPI framework design, 360-degree feedback implementation, PIP documentation, and balanced scorecard metrics\n- Training and Development: TNA methodology, training programme ROI calculation, e-learning platform evaluation, and competency mapping\n\n- Organizational Development: change management project execution, culture assessment surveys, OD intervention design, and restructuring support\n- Cross Cultural Management: cultural assessment tools, expatriate onboarding programme design, and diverse team facilitation\n\n**Soft skills:** Conducting difficult conversations (PIPs, exits), facilitating leadership workshops, presenting HR metrics to C-suite, and mediating workplace conflicts across cultural contexts."
+    },
+    "fees": {
+      "body": "Please reconfirm current fees, payment options, and any applicable charges with our counsellor before enrolment.\n\nEdifyEdu rechecks fees with ADB University every quarter. Fees listed on our pages are indicative pending verification each admission cycle."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Human Resource Management as the specialisation, issued by Assam Don Bosco University under UGC-DEB online mode standards.\n\nThe degree carries NAAC A accreditation and UGC-DEB approval. The university is part of the Don Bosco/Salesian educational network with global recognition across 130+ countries. Valid for government recruitment, PSU HR roles, corporate HR positions, and professional HR certifications (SHRM, HRCI) eligibility support."
+    },
+    "faqs": [
+      {
+        "question": "What is Assam Don Bosco University's affiliation?",
+        "answer": "Assam Don Bosco University is part of the Don Bosco/Salesian educational network, a globally recognized Catholic educational order operating 1,500+ institutions across 130+ countries. The university is a private institution in Guwahati, Assam."
+      },
+      {
+        "question": "Is ADB Online MBA UGC-DEB approved?",
+        "answer": "Yes. Assam Don Bosco University holds UGC-DEB approval for its online programmes. The MBA degree is legally equivalent to a campus MBA under UGC 2020 guidelines."
+      },
+      {
+        "question": "How many dedicated HR subjects does this programme include?",
+        "answer": "Ten dedicated HRM subjects across Sem 3 and Sem 4 (five per semester). This is one of the highest HR subject counts among online MBA HRM programmes. Subjects range from Applied Psychology to Cross Cultural Management."
+      },
+      {
+        "question": "Is Cross Cultural Management relevant for NE India professionals?",
+        "answer": "Yes. NE India has diverse ethnic, linguistic, and cultural communities. Cross Cultural Management covers cultural dimensions, diverse team management, and cross-cultural communication. Directly applicable to workplaces in Assam, Meghalaya, Manipur, and other NE states."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "Don Bosco/Salesian educational heritage and global network recognition matter to you.",
+        "You want 10 dedicated HRM subjects including Applied Psychology, Transformational Leadership, and Cross Cultural Management.",
+        "You are based in NE India and want a NAAC A accredited local university with UGC-DEB approval.",
+        "Cross Cultural Management as a standalone subject adds value for your multi-ethnic work environment."
+      ],
+      "consider": [
+        "If national brand recognition is your top priority, Amity, NMIMS, or MUJ have stronger pan-India positioning."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 1980,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 33,
+    "hasSyllabusData": true,
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-14",
+    "renamedFrom": "assam-don-bosco-university-online-mba-human-resource-management.json"
+  }
+}

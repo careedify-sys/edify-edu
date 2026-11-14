@@ -1,0 +1,64 @@
+{
+  "uniSlug": "kurukshetra-university-online",
+  "program": "mba",
+  "specSlug": "hr-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "KURUKSHETRA UNIVERSITY ONLINE MBA",
+      "headline": "Kurukshetra University Online MBA in Human Resource Management: Syllabus, Fees and Career Outcomes",
+      "sub": "UGC-DEB approved 2-year programme | NAAC A++ accredited | Public state university"
+    },
+    "tldr": "NAAC A++ accredited public state university.",
+    "about": {
+      "body": "Kurukshetra University's Online MBA in Human Resource Management combines traditional HR (industrial relations, labour legislation, compensation management) with modern HR practice (HR analytics, talent acquisition, global HRM, counseling skills).\n\nThe curriculum stands out in two ways. For candidates in manufacturing, government, or unionized sectors, this is directly applicable.\n\nKurukshetra University is a state university established in 1956 under the Haryana government. NAAC A++ (the highest possible grade), UGC-DEB approved for online programmes. As a public university, tuition is government-subsidized, which explains the lower fee compared to private online MBA providers.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": false,
+      "emptyFallback": "We do not yet hold a semester-wise syllabus for this specialisation at Kurukshetra University. Talk to our counsellor for the current subject list."
+    },
+    "whoHires": {
+      "body": "**Industries:** IT/ITES, manufacturing, banking, FMCG, consulting, government HR departments, PSUs, healthcare, and logistics\n\n**Entry-level roles:** HR Executive, Talent Acquisition Specialist, Payroll Executive, Employee Engagement Coordinator, HR Compliance Officer, Training Coordinator\n\n**Mid-level roles:** 5 years experience):** HR Manager, HR Business Partner, Compensation and Benefits Manager, Learning and Development Manager, IR Manager, Talent Acquisition Lead\n\n**Senior roles:**  years):** CHRO (mid-market), VP HR, Head of Talent, Director of Employee Relations, Head of HR Operations, Head of L&D\n\n**Note:** As a public state university with NAAC A++, the Kurukshetra MBA degree carries strong credibility for government HR, PSU HR departments, and IR roles in manufacturing.\n\n**How to check placement claims:** ask Kurukshetra University Online for its latest placement report in writing, for your programme and mode. Online batches are often reported apart from campus ones, or not at all. edifyedu.in does not publish employer lists it cannot source. Treat the roles above as the kinds of jobs this syllabus prepares you for, not as a list of who has hired from this batch."
+    },
+    "skills": {
+      "body": "The Human Resource specialisation builds skills across talent management, analytics, IR/compliance, and strategic HR:\n\n- HR Analytics: dashboard creation, attrition prediction, cost-per-hire analysis, engagement survey interpretation, and workforce optimization models\n- Compensation Management: salary structure design, CTC calculation, variable pay plan creation, benefits benchmarking, and total rewards modelling\n- Labour Law Compliance: Factories Act application, PF/ESI calculation, Industrial Disputes Act procedures, and new Labour Codes implementation\n- Talent Acquisition: competency framework design, structured interview scorecards, employer branding strategy, and ATS workflow management\n\n- Industrial Relations: collective bargaining preparation, dispute resolution documentation, union negotiation, and IR audit processes\n- Global HRM: expatriate compensation design, cross-cultural training programme creation, and international mobility policy drafting\n\n**Soft skills:** Employee counseling, active listening in grievance handling, conflict mediation, performance conversation delivery, and presenting HR strategy to business leadership."
+    },
+    "comparisons": {
+      "body": "**Key differentiator:** Kurukshetra is the only NAAC A++ public university in this fee tier."
+    },
+    "fees": {
+      "body": "EdifyEdu rechecks fees with Kurukshetra University every quarter. Please reconfirm current fees and all applicable charges with our counsellor before any payment. Fees listed are indicative."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Human Resource Management as the specialisation, issued by Kurukshetra University under UGC-DEB online mode standards.\n\nThe degree carries NAAC A++ accreditation (the highest possible grade) and UGC-DEB approval. As a public state university degree, it holds strong validity for government recruitment, PSU HR roles, and private-sector HR management positions. DigiLocker issuance is standard."
+    },
+    "faqs": [
+      {
+        "question": "Is Kurukshetra a public or private university?",
+        "answer": "Kurukshetra University is a public state university established under the Haryana government. Public universities receive government funding, which keeps tuition lower than private institutions. This also means the degree carries state university recognition for government and PSU recruitment."
+      },
+      {
+        "question": "Why is the Kurukshetra Online MBA cheaper than Amity or NMIMS?",
+        "answer": "Because Kurukshetra is a government-funded public state university. Public universities receive state subsidies that keep tuition significantly lower."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You want a NAAC A++ public state university degree. No other online MBA at this fee tier matches this combination.",
+        "Government job eligibility and PSU recruitment credibility are priorities. Public university degrees carry inherent weight."
+      ],
+      "consider": [
+        "National brand recognition matters more than accreditation grade. Amity, NMIMS, and MUJ have stronger pan-India MBA brand positioning."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2000,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 30,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-14",
+    "renamedFrom": "kurukshetra-university-online-mba-human-resource-management.json"
+  }
+}

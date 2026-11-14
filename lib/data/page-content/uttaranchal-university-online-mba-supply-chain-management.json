@@ -1,0 +1,149 @@
+{
+  "uniSlug": "uttaranchal-university-online",
+  "program": "mba",
+  "specSlug": "supply-chain-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "UTTARANCHAL ONLINE MBA",
+      "headline": "Uttaranchal University Online MBA in Logistics and Supply Chain Management: Syllabus, Fees and Career Outcomes",
+      "sub": "NAAC A+ | UGC-DEB Approved"
+    },
+    "tldr": "Uttaranchal University Online MBA in Logistics and Supply Chain Management covers International Logistics, Supply Chain Modelling Design and Simulation, Supply Chain Analytics, and Sustainability in Logistics and Supply Chain. One of the few budget-tier online MBAs with supply chain modelling and sustainability as standalone subjects.",
+    "about": {
+      "body": "Uttaranchal University's Online MBA in Logistics and Supply Chain Management includes Supply Chain Modelling Design and Simulation and Sustainability in Logistics and Supply Chain as standalone subjects.\n\nSemester 3 covers International Logistics (global freight, Incoterms, customs, cross-border trade) and Supply Chain Modelling Design and Simulation (network design, simulation techniques, scenario analysis for supply chain decisions). Semester 4 adds Supply Chain Analytics (demand sensing, inventory analytics, performance dashboards) and Sustainability in Logistics and Supply Chain (green logistics, carbon footprint measurement, circular economy, ESG reporting for supply chains).\n\nThe sustainability subject is forward-looking. With SEBI-mandated BRSR reporting and growing ESG compliance requirements, supply chain professionals who understand sustainability metrics are in demand.\n\nUttaranchal University, Dehradun holds NAAC A+ and UGC-DEB approval. Exam fees included in quoted figures.\n\nEdifyEdu verifies data independently and takes no commission from any university."
+    },
+    "syllabus": {
+      "hasData": true,
+      "semesters": [
+        {
+          "sem": 1,
+          "subjects": [
+            {
+              "name": "Principles and Practices of Management"
+            },
+            {
+              "name": "Accounting for Managerial Decisions"
+            },
+            {
+              "name": "Economics for Managers"
+            },
+            {
+              "name": "Business Environment"
+            },
+            {
+              "name": "E-Commerce"
+            }
+          ]
+        },
+        {
+          "sem": 2,
+          "subjects": [
+            {
+              "name": "Emerging Business Law"
+            },
+            {
+              "name": "Business Research Methods"
+            },
+            {
+              "name": "Marketing Management"
+            },
+            {
+              "name": "Business Analytics"
+            },
+            {
+              "name": "Operations Management"
+            }
+          ]
+        },
+        {
+          "sem": 3,
+          "subjects": [
+            {
+              "name": "Strategic Management",
+              "description": "Corporate strategy frameworks, competitive advantage, strategic planning, and business model analysis."
+            },
+            {
+              "name": "Supply Chain Management",
+              "description": "Supply chain design, demand planning, inventory management, supplier relationship management, and 3PL coordination."
+            },
+            {
+              "name": "Financial Statement Analysis",
+              "description": "Ratio analysis, DuPont decomposition, cash flow analysis, and financial health assessment."
+            },
+            {
+              "name": "International Logistics",
+              "description": "Global freight forwarding, Incoterms 2020, customs clearance procedures, cross-border trade documentation, containerisation, and free trade zone operations."
+            },
+            {
+              "name": "Supply Chain Modelling Design & Simulation",
+              "description": "Network design optimisation, simulation techniques for supply chain decisions, scenario analysis, demand variability modelling, and facility location planning."
+            }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            {
+              "name": "Entrepreneurship Development",
+              "description": "Startup ideation, business plan development, and entrepreneurial risk management."
+            },
+            {
+              "name": "Corporate Governance",
+              "description": "Board structure, shareholder rights, corporate ethics, and governance frameworks."
+            },
+            {
+              "name": "Project Work",
+              "description": "Applied logistics/SCM project. Typically a supply chain optimisation study, logistics cost analysis, or sustainability audit."
+            },
+            {
+              "name": "Supply Chain Analytics",
+              "description": "Demand sensing, inventory analytics, supply chain KPI dashboards, predictive analytics for logistics, and performance benchmarking."
+            },
+            {
+              "name": "Sustainability in Logistics & Supply Chain",
+              "description": "Green logistics, carbon footprint measurement per unit shipped, reverse logistics, circular economy models, BRSR supply chain disclosure, and sustainable procurement."
+            }
+          ]
+        }
+      ],
+      "note": "Subjects as listed in the university syllabus we hold. Universities revise subjects between intakes."
+    },
+    "whoHires": {
+      "body": "**Industries:** E-commerce fulfilment, 3PL/4PL providers, FMCG distribution, manufacturing supply chain, pharmaceutical logistics, cold chain, freight forwarding, and government logistics\n\n**Entry-level roles:** Supply Chain Coordinator, Warehouse Executive, Logistics Executive, Procurement Officer, Distribution Executive, Transportation Planner\n\n**Mid-level roles:** 5 years experience):** Supply Chain Manager, Logistics Manager, Procurement Manager, Warehouse Manager, Distribution Manager, S&OP Manager\n\n**Senior roles:**  years):** VP Supply Chain, Head of Logistics, Chief Supply Chain Officer, Director of Procurement, Head of Sustainability (supply chain)\n\n**How to check placement claims:** ask Uttaranchal University Online for its latest placement report in writing, for your programme and mode. Online batches are often reported apart from campus ones, or not at all. edifyedu.in does not publish employer lists it cannot source. Treat the roles above as the kinds of jobs this syllabus prepares you for, not as a list of who has hired from this batch."
+    },
+    "skills": {
+      "body": "The Logistics and SCM specialisation builds skills across supply chain design, analytics, and sustainability:\n\n- Supply Chain Modelling: network design optimisation, facility location analysis, demand variability simulation, and scenario planning\n- International Logistics: Incoterms application, customs documentation, freight rate comparison (FCL vs LCL), and cross-border compliance\n- Supply Chain Analytics: demand forecast accuracy tracking, inventory turnover analysis, OTIF measurement, and supply chain KPI dashboard design\n- Sustainability: Scope 1/2/3 emissions accounting for logistics, carbon footprint per unit calculation, reverse logistics programme design, and BRSR disclosure\n\n- Procurement: vendor scorecard design, RFP process, supplier relationship management, and purchase order automation\n- Warehouse: layout optimisation, WMS concepts, cycle count methodology, and warehouse KPI tracking\n\n**Soft skills:** Managing multi-site logistics teams, negotiating freight rates with carriers, presenting supply chain performance to leadership, and coordinating cross-functional S&OP meetings."
+    },
+    "fees": {
+      "body": "EdifyEdu rechecks fees with Uttaranchal University every quarter. Please check with our counsellor before you pay."
+    },
+    "certificate": {
+      "body": "Graduates receive an MBA degree certificate with Logistics and Supply Chain Management as the specialisation, issued by Uttaranchal University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation and UGC-DEB approval. Valid for government logistics roles, PSU supply chain positions, railways/port authority management, and private-sector logistics employers. WES recognised. DigiLocker issuance is standard."
+    },
+    "faqs": [
+      {
+        "question": "Does the programme cover supply chain sustainability?",
+        "answer": "Yes. Sustainability in Logistics and Supply Chain (Sem 4) covers green logistics, carbon footprint measurement, reverse logistics, circular economy, and BRSR supply chain disclosure. This is a standalone subject, not a module."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "Exam fee included in semester fee (no hidden charges) matters to you.",
+        "You target logistics roles in North India/Uttarakhand where UU has regional recognition."
+      ],
+      "consider": [
+        "National brand recognition matters. LPU, DPU, and UPES have stronger logistics/SCM positioning."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2100,
+    "generatedAt": "2026-04-23",
+    "batchNumber": 25,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-23",
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-14",
+    "renamedFrom": "uttaranchal-university-online-mba-logistics-supply-chain-management.json"
+  }
+}

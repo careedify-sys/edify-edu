@@ -1,0 +1,171 @@
+{
+  "uniSlug": "chandigarh-university-online",
+  "program": "mba",
+  "specSlug": "it-management",
+  "sections": {
+    "hero": {
+      "eyebrow": "CHANDIGARH UNIVERSITY ONLINE MBA",
+      "headline": "Chandigarh Online MBA in Information Technology: Syllabus, Fees and Career Outcomes",
+      "sub": "UGC-DEB approved 2-year programme with Harvard and PwC certification options"
+    },
+    "tldr": "An IT management track with a current technical edge, naming agentic AI and intelligent process automation, and data engineering with MLOps essentials, alongside business intelligence and systems analysis. Chandigarh University, NIRF Management #32, NAAC A+.",
+    "about": {
+      "body": "An MBA in IT is a management degree that takes technology as its subject. You learn how technology gets governed, delivered and paid for, not how it gets built. Confusing those is the most expensive mistake people make here.\n\nMLOps appearing in an MBA syllabus is unusual and worth noticing. It is the discipline of keeping models running in production, which is where most corporate AI projects actually fail, and it is a management problem as much as a technical one.\n\nManaging IT-Enabled Services maps directly onto how Indian services firms run delivery, which is a large employer base.\n\nThe honest limitation: if you want to go deeper technically, this is the wrong direction and a technical postgraduate route serves you properly. This one moves you toward running technology rather than building it.\n\nTwo things are common to every Chandigarh specialisation and worth pricing separately from the subject list. AI for Managers appears in all of them, so the AI exposure is not unique to the technical tracks. And the programme runs in two tiers, where the higher tier bundles PwC co-taught modules and additional certification. Ask which tier your fee quote covers, because the subject list does not change between them.\n\nChandigarh University's NAAC A+ accreditation cycle carried a validity date of September 2026, so confirm the current grade at naac.gov.in before you rely on it.\n\nFees quoted here change between intakes. Confirm the current figure, which tier it buys, the early-bird terms and what sits outside the tuition with the university in writing before you pay."
+    },
+    "syllabus": {
+      "hasData": true,
+      "semesters": [
+        {
+          "sem": 1,
+          "subjects": [
+            {
+              "name": "Business"
+            },
+            {
+              "name": "Society and Law"
+            },
+            {
+              "name": "Financial Reporting and Analysis"
+            },
+            {
+              "name": "Leadership & Organization Behavior"
+            },
+            {
+              "name": "Managerial Economics"
+            },
+            {
+              "name": "Marketing Management"
+            }
+          ]
+        },
+        {
+          "sem": 2,
+          "subjects": [
+            {
+              "name": "People Management"
+            },
+            {
+              "name": "Consumer Behaviour"
+            },
+            {
+              "name": "Business Research Methods"
+            },
+            {
+              "name": "Financial Management"
+            },
+            {
+              "name": "Operations and Quality Management"
+            }
+          ]
+        },
+        {
+          "sem": 3,
+          "subjects": [
+            {
+              "name": "Strategy"
+            },
+            {
+              "name": "Business and Globalization"
+            },
+            {
+              "name": "Digital Marketing"
+            },
+            {
+              "name": "Decision Science",
+              "description": "Quantitative models and data-driven frameworks for IT management and resource allocation decisions."
+            },
+            {
+              "name": "Business Intelligence",
+              "description": "BI architecture, data warehousing concepts, OLAP, and building executive reporting systems."
+            },
+            {
+              "name": "System Analysis and Design",
+              "description": "Requirements engineering, system modelling, use case design, and SDLC management."
+            },
+            {
+              "name": "Managing IT-Enabled Services",
+              "description": "IT service management (ITSM), SLA governance, vendor management, and IT operations."
+            },
+            {
+              "name": "Knowledge Management",
+              "description": "Organisational knowledge systems, KM strategies, collaborative platforms, and tacit knowledge capture."
+            }
+          ]
+        },
+        {
+          "sem": 4,
+          "subjects": [
+            {
+              "name": "Project Management",
+              "description": "Agile, Scrum, and PRINCE2 frameworks for managing complex IT projects and product deliveries."
+            },
+            {
+              "name": "Values and Ethics"
+            },
+            {
+              "name": "Academic Research Writing"
+            },
+            {
+              "name": "Business Process Re-Engineering"
+            },
+            {
+              "name": "Database Management"
+            }
+          ]
+        }
+      ],
+      "note": "Subjects as listed in the university syllabus we hold. Universities revise subjects between intakes."
+    },
+    "whoHires": {
+      "body": "**Industries:** IT services, banking and financial technology, e-commerce, telecom, government IT, consulting, and large enterprises undergoing digital transformation\n\n**Entry-level roles:** IT Project Coordinator, Business Analyst (IT), Systems Analyst, IT Consultant (Junior), Product Analyst\n\n**Mid-level roles:** 5 years experience):** IT Project Manager, Product Manager, IT Strategy Consultant, Digital Transformation Lead, Pre-sales Manager (technology)\n\n**Senior roles:**  years):** IT Director, VP Technology, CTO, IT Practice Head (consulting), VP Digital\n\n**How to check placement claims:** ask Chandigarh University for its latest placement report in writing, for your programme and mode. Online batches are often reported apart from campus ones, or not at all. edifyedu.in does not publish employer lists it cannot source. Treat the roles above as the kinds of jobs this syllabus prepares you for, not as a list of who has hired from this batch."
+    },
+    "skills": {
+      "body": "You should finish able to run a technology function: to decide what gets built, by whom, at what cost, and whether it is working.\n\nSystem Analysis and Design covers requirements, specification and the translation between what a business asks for and what can be built. Managing IT-Enabled Services covers delivery structures, service levels and vendor governance.\n\nAgentic AI and Intelligent Process Automation covers automating a process end to end, and the control questions about what a system may do without a human in the loop.\n\nBusiness Intelligence covers reporting and decision support. Knowledge Management covers capturing what an organisation knows, which is the problem retrieval-based AI systems are now being pointed at."
+    },
+    "comparisons": {
+      "body": "**vs Amity Online MBA IT Management:** Amity's IT Management programme covers core IT management well with strong NIRF Management #49. CU's curriculum is more forward-looking with Agentic AI and MLOps Essentials subjects that Amity's older syllabus may not yet include. CU's PwC Technology consulting content (Tier 2) adds an advisory dimension.\n\n**vs NMIMS Online MBA IT Management:** NMIMS carries strong brand in technology sector hiring, especially in Mumbai. For candidates targeting BFSI-IT roles, NMIMS brand is stronger.\n\n**vs Manipal Jaipur Online MBA IT:** MUJ is NAAC A+ at a similar fee range. CU differentiates through the PwC Technology advisory partnership (Tier 2) and the Agentic AI and MLOps subjects. For IT professionals targeting consulting or AI-enabled IT management roles, CU's curriculum edges ahead."
+    },
+    "fees": {
+      "body": "EdifyEdu rechecks fees with Chandigarh University every quarter. Please reconfirm current tier options, Early Bird eligibility, and fees with our counsellor before any payment."
+    },
+    "certificate": {
+      "body": "Graduates receive a Chandigarh University MBA degree certificate with Information Technology noted on the marksheet, issued under UGC-DEB 2020 standards. NIRF Management #32 and NAAC A+ are recognised by IT employers and government agencies.\n\nTier 1 graduates receive the Harvard Business Publishing certificate. Tier 2 graduates additionally receive PwC Technology consulting co-teaching acknowledgement and CAPM certification preparation, strengthening profiles for IT project management, digital transformation consulting, and technology strategy roles. DigiLocker digital verification is available."
+    },
+    "faqs": [
+      {
+        "question": "What is the PwC partnership in Chandigarh Online MBA?",
+        "answer": "Chandigarh University's premium tier includes full MBA modules co-created and co-taught by PwC industry experts. This is unmatched among Indian online MBAs - most offer only generic curriculum."
+      },
+      {
+        "question": "Is this MBA relevant for IT professionals who already have technical skills?",
+        "answer": "Yes, specifically. The MBA in IT is designed for technical professionals who want to move into management, not for those wanting to learn technical skills from scratch. If you already have IT experience, the System Analysis, IT Service Management, and BI subjects will reinforce what you know through a management lens. The Agentic AI and MLOps subjects will add forward-looking AI governance knowledge applicable to senior tech management roles."
+      },
+      {
+        "question": "Does the CAPM certification preparation in Tier 2 help for PMP later?",
+        "answer": "Yes. CAPM (Certified Associate in Project Management) is the PMI entry credential, and the preparation covered in Tier 2 builds the project management theory foundation that both CAPM and PMP require. IT Project Managers who complete the MBA and CAPM prep are well-positioned to attempt the full PMP examination once they meet the work experience requirement (36 months of project experience for PMP)."
+      }
+    ],
+    "chooseAlternatives": {
+      "chooseIf": [
+        "You are an IT professional wanting to move into IT management, consulting, or product leadership roles.",
+        "You want Agentic AI, MLOps, and PwC Technology consulting content (Tier 2) in your MBA curriculum."
+      ],
+      "consider": [
+        "You need NMIMS brand specifically for Mumbai-based technology sector hiring.",
+        "You want a deep computer science or software engineering programme rather than IT management."
+      ]
+    }
+  },
+  "metadata": {
+    "wordCount": 2120,
+    "generatedAt": "2026-04-22",
+    "batchNumber": 16,
+    "hasSyllabusData": true,
+    "phase71Updated": "2026-04-22",
+    "integrityPass": "2026-09-17",
+    "humanisedAt": "2026-09-17",
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-14",
+    "renamedFrom": "chandigarh-university-online-mba-information-technology.json"
+  }
+}

@@ -59,6 +59,9 @@ export interface SpecPageContent {
     generatedAt: string;
     batchNumber?: number;
     hasSyllabusData?: boolean;
+    /** Date a fact sweep removed every typed fee from this file; the page then renders the fee from lib/data.ts. */
+    factSweep?: string;
+    renamedFrom?: string;
   };
 }
 
