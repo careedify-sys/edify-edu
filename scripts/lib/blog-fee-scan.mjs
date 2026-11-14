@@ -768,3 +768,8 @@ export function perSlugUnverifiedCounts(rows, allowSet = new Set()) {
   }
   return counts
 }
+
+// Building blocks for other scanners (scripts/audit-spec-fees.mjs reads
+// spec page-content JSON with the same extractor and intervals). Exported
+// as-is; scanAllPosts above is unchanged.
+export { RUPEE_RE, RANGE_TAIL_RE, normalise, isNonFee, findAllUnis, getAcceptableIntervals, TOL }
