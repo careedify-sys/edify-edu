@@ -1,5 +1,29 @@
 # Fix log
 
+## 2026-11-14 · Batch 3.2: CU MCA subject names joined (live); spec fee audit (branch only)
+
+- **Part A, why:** CU's full-stack MCA semester 3 was split at commas without brackets, so the MCA
+  subjects post listed "User Interface", "Experience" and "Design" as three subjects. CU's own page
+  (onlinecu.in/online-mca/full-stack-development) lists "HTML, CSS and Javascript" and "User Interface,
+  Experience, Design". The bracket gate from 3.1b cannot see this shape.
+- **Part A, what (7a12ea9, merged 00120f5):** those two joins only. The shared-subjects table recounts
+  unchanged (it lists names at 3+ universities; the pieces were CU-only). 2,512 candidate rows (906 runs of
+  adjacent 1-2 word subjects, 186 runs with a one-word subject, 43 universities) are listed in
+  audits/manifest-split-candidates-2026-11-14.csv for Rishi to confirm against each portal; none changed.
+- **Part A, live (deploy Ready 10:24 UTC, ?cb=):** MCA post 200, index, follow; CU semester 3 cell reads
+  the five subjects with both joins; "Experience", "Design", "User Interface" are not separate names
+  anywhere on the post; the shared table matches the build-time recount row for row; sitemap 2,301.
+- **Part B (audit only, no page content changed):** scripts/audit-spec-fees.mjs classifies every typed fee
+  in the 219 indexed non-fact-swept spec JSON files, reusing the blog fee scanner (its building blocks are
+  now exported; scanAllPosts unchanged). 4,318 figures: MATCH 2,441, MISMATCH 371, SUPPRESSED 0,
+  UNRESOLVED 1,506; 88 salary figures excluded. 36 (university, figure) pairs make up all 371 MISMATCH,
+  so the fix is about a dozen portal checks, not 371 edits. Removing every non-MATCH sentence would cut
+  5.8% of the words and drop no page below 495. See audits/spec-fee-audit-summary-2026-11-14.md.
+- **Why the classifier took six passes:** the first run reported 1,018 MISMATCH at roughly 40% precision
+  (semester line items, exam fees, Coursera add-ons, budgets and differences compared with the programme
+  fee; CU/DPU/JIIT/NIU not resolved). Each pass was checked on a fresh random sample; the final one is
+  39 of 40.
+
 ## 2026-11-14 · Batch 3.1b: four defects batch 3.1 left live
 
 - **Why:** the 3.1 fixer cut fact-bearing parentheticals out of labels but kept the tail, so 51 live
