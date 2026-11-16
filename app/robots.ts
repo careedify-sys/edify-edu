@@ -10,9 +10,10 @@ import { MetadataRoute } from 'next'
 
 // /compare? blocks all /compare?a=X&b=Y query-param variants from crawling.
 // The canonical for /compare is always https://edifyedu.in/compare (no params).
+// Every group gets the same list. Googlebot and other named bots obey only
+// their own group, so a shorter list there silently dropped disallows that
+// the * group had (audit T2, 2026-11-16).
 const BLOCKED = ['/admin/', '/api/', '/blog/write', '/blog/new', '/admin/excel-import/', '/university-data/', '/compare?', '/dashboard/']
-const ADMIN_BLOCKED = ['/admin/', '/api/', '/admin/excel-import/', '/compare?']
-const API_BLOCKED = ['/admin/', '/api/', '/compare?']
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -24,52 +25,52 @@ export default function robots(): MetadataRoute.Robots {
         disallow: BLOCKED,
       },
       {
-        // Google — full access, tightest admin block
+        // Google
         userAgent: 'Googlebot',
         allow: '/',
-        disallow: ADMIN_BLOCKED,
+        disallow: BLOCKED,
       },
       {
         // Google Image crawler
         userAgent: 'Googlebot-Image',
         allow: '/',
-        disallow: ADMIN_BLOCKED,
+        disallow: BLOCKED,
       },
       {
         // Bing / Perplexity AEO
         userAgent: 'Bingbot',
         allow: '/',
-        disallow: API_BLOCKED,
+        disallow: BLOCKED,
       },
       {
         // GPTBot (OpenAI / ChatGPT citations)
         userAgent: 'GPTBot',
         allow: '/',
-        disallow: API_BLOCKED,
+        disallow: BLOCKED,
       },
       {
         // Claude / Anthropic
         userAgent: 'ClaudeBot',
         allow: '/',
-        disallow: API_BLOCKED,
+        disallow: BLOCKED,
       },
       {
         // Perplexity AI
         userAgent: 'PerplexityBot',
         allow: '/',
-        disallow: API_BLOCKED,
+        disallow: BLOCKED,
       },
       {
         // Common Crawl (used by many AI training datasets)
         userAgent: 'CCBot',
         allow: '/',
-        disallow: API_BLOCKED,
+        disallow: BLOCKED,
       },
       {
         // Meta AI / Llama
         userAgent: 'FacebookBot',
         allow: '/',
-        disallow: API_BLOCKED,
+        disallow: BLOCKED,
       },
     ],
     sitemap: 'https://edifyedu.in/sitemap.xml',

@@ -131,19 +131,8 @@ export async function generateMetadata(
   }
 }
 
-// NAAC letter grade → numeric score on NAAC 4-point scale (midpoint of each band)
-const NAAC_SCORE_MAP: Record<string, string> = {
-  'A++': '3.88', 'A+': '3.63', 'A': '3.38',
-  'B++': '3.13', 'B+': '2.88', 'B': '2.63', 'C': '2.26',
-}
-function naacRatingValue(naac: string, naacScore?: string): string {
-  if (naacScore && parseFloat(naacScore) > 0) return naacScore
-  return NAAC_SCORE_MAP[naac] || '3.0'
-}
-
 // ── JSON-LD Structured Data ──
 function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversityById>> }) {
-  const ratingValue = naacRatingValue(u.naac, u.naacScore)
   const kw = pageKeywords[u.id]?.join(', ') || ''
   const schema = {
     '@context': 'https://schema.org',
@@ -153,7 +142,10 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
         '@id': `https://edifyedu.in/universities/${u.id}#university`,
         name: u.name,
         url: `https://edifyedu.in/universities/${u.id}`,
-        telephone: '+91-7061285806',
+        // No telephone here: the only number we have is Edify's own, and on
+        // this node it would merge into the university entity (audit S2,
+        // 2026-11-16). sameAs points at the official portal where we hold one.
+        ...(u.officialUrl ? { sameAs: [u.officialUrl] } : {}),
         description: `${u.name} is a UGC DEB approved university offering online degrees.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}${u.nirf < 200 ? ` NIRF #${u.nirf} University.` : ''}`,
         ...(kw ? { keywords: kw } : {}),
         // Omit a field we do not have rather than inventing one. This used to
@@ -168,21 +160,6 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
           ...(u.city ? { addressLocality: u.city } : {}),
           ...(u.state ? { addressRegion: u.state } : {}),
           addressCountry: 'IN',
-        },
-        review: {
-          '@type': 'Review',
-          author: {
-            '@type': 'Organization',
-            name: 'National Assessment and Accreditation Council (NAAC)',
-            url: 'https://naac.gov.in',
-          },
-          reviewRating: {
-            '@type': 'Rating',
-            ratingValue,
-            bestRating: '4',
-            worstRating: '1',
-          },
-          reviewBody: `${u.name} has been accredited by NAAC with Grade ${u.naac}.${u.naacScore ? ` Institutional score: ${u.naacScore}/4.` : ''}`,
         },
         hasOfferCatalog: {
           '@type': 'OfferCatalog',

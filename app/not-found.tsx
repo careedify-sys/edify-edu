@@ -1,4 +1,14 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+// Next already emits <meta name="robots" content="noindex"> on a 404. Without
+// this, the root layout also added "index, follow" and a canonical to the
+// homepage, so a 404 carried two contradicting robots metas (audit T3,
+// 2026-11-16). null clears the inherited values for this boundary only.
+export const metadata: Metadata = {
+  robots: null,
+  alternates: { canonical: null },
+}
 
 export default function NotFound() {
   return (

@@ -111,6 +111,14 @@ npx tsx scripts/check-duplicate-tagline.mts || exit 1
 echo "pre-commit: check-naac-consistency"
 npx tsx scripts/check-naac-consistency.mts || exit 1
 
+# Schema claims. Every university profile emitted a schema.org Review authored
+# by NAAC with a ratingValue Edify computed (a band midpoint, or "3.0" on a
+# blank grade), and put Edify's own telephone on the CollegeOrUniversity node.
+# Both removed 2026-11-16 (audit S1, S2). Blocks either coming back in app/ or
+# components/. See the header of scripts/check-schema-claims.mjs.
+echo "pre-commit: check-schema-claims"
+node scripts/check-schema-claims.mjs || exit 1
+
 # Warn-only: fee copy that says "indicative", points to an "official portal"
 # or names a university domain. Round 1 (2026-11-13) cleared it from the five
 # universities' pages; the rest of the site still carries it. Never blocks.
