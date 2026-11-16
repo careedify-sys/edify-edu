@@ -1,5 +1,22 @@
 # Fix log
 
+## 2026-11-16 · VIT Online exams at centres (live)
+
+- **Why:** the exam-mode verification (audits/exam-mode-verified-2026-11-16.csv) found VIT's own MBA page
+  says "The Final Assessment Test (End term examination) will be conducted in centres in offline mode" and
+  that learners "may be required to travel to the examination centre allotted to them". Every VIT page told
+  readers exams were "from home, no exam centre visit", the same error BITS had.
+- **What (cf47775, merged a6d3771, own deploy):** lib/data.ts vit-university-online examMode 'Online' to
+  'Exam Centre'; the templates already branch on it (lib/exam-mode.ts). The MBA hub's FAQ 5 typed "All exams
+  are online and proctored. No mandatory campus visits are required." and now says end-semester exams are
+  in person at designated centres. exams.body and classes.body in the same JSON say online, but the hub
+  never renders them; left alone. VIT has no spec JSONs.
+- **Live (ij0gbcu2d):** the VIT MBA hub shows the in-person line 6 times (FAQ 5, exam section, assessments
+  tile, template FAQs) across three fresh fetches; the university page FAQ says the same; neither page has
+  "from home", "No exam centre visit", "No travel to exam centre" or "All exams are online". The About
+  sentence "delivered ... with no mandatory campus visits" is about teaching and stays. UPES control still
+  shows the Online template; sitemap 2,301.
+
 ## 2026-11-16 · Batch 3.4: hub fee text matches the top fee, BITS exams at centres (live); red flags (branch only); exam-mode audit
 
 - **Why:** the 3.3 audit found programme hubs whose TL;DR and FAQs typed a fee the top section did not
