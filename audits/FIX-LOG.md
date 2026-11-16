@@ -28,13 +28,21 @@
   unchanged; BITS hub and university page show "in person at designated exam centres", BITS finance
   spec shows its own in-person FAQ, no "from home" line on any of the three; UPES control still shows
   the Online template; sitemap 2,301.
-- **Found by the live check, fixed on the branch only (66df939, not deployed):** fee ranges were still
+- **Found by the live check (66df939, merged 9a5f2e8 as its own deploy, live 16 Nov):** fee ranges were still
   rendered in hub red flags (SASTRA, Alliance, Assam Don Bosco, JMI, SRM IST, JAIN). Rewritten, and the
   gate now covers redFlags.flags, ugcDeb.body and abcId.body. JIIT's red flag allowlisted (part C).
 - **Part B (audit only):** audits/exam-mode-audit-2026-11-16.md and .csv. None of the 17 flagged
   universities has an own-exam in-person claim: 20 hits are a templated "in-person teaching" red flag,
   5 are "Psychology in Personnel". The 9 own-exam claims (Assam Don Bosco, UPES) say online proctored;
   Assam Don Bosco's is the same template that was wrong for BITS, and no portal confirms either.
+- **Red flags live (9a5f2e8):** on the SASTRA, Alliance, Assam Don Bosco, Jamia Millia, SRM IST and JAIN
+  MBA hubs every figure in the Red Flags block equals the hub's top fee, or there is none (counsellor-line
+  hubs); the rewritten sentences are on each page; Shoolini unchanged; sitemap 2,301.
+- **Exam-mode verification, 31 serviced universities (audit only):** audits/exam-mode-verified-2026-11-16.md
+  and .csv. VIT's own MBA page says the end-term exam is "conducted in centres in offline mode", so its
+  'Online' is wrong the same way BITS's was (not changed yet). 22 confirm online, 1 ambiguous (Shoolini), 7
+  state nothing. Draft "talk to our counsellor for how and where exams are held" wording for unverified
+  universities is in the summary; it ships after the 28 Nov check.
 - **Lesson:** "rendered" was defined from the 3.3 audit (TL;DR and FAQs) and the live check found a
   third rendered block. Verify the page, not the field list.
 
