@@ -95,3 +95,30 @@ Author avatar: `/public/authors/rishi-avatar-sm.svg` (also `-md`, `-card`, `-xl`
 - `/university-review` — generate a full university programme review blog
 - `/seo-blog` — generate a general SEO blog on any topic
 - `/humanize` — remove AI writing patterns from existing text
+
+## Autonomy rules (Rishi, 16 Nov 2026)
+Rishi does not want to be asked for permission. Work the plan continuously.
+
+1. audits/OPERATING-PLAN.md is the work list.
+   - Take the top item that is neither BLOCKED nor date-locked, and give it to its owner agent.
+   - Have qa-checker verify it.
+   - Log it in the tracker and the fix log, tick it off, and take the next item.
+   - Keep going until no unblocked item is left.
+2. Never use AskUserQuestion. Never end a turn on a question while unblocked work remains.
+   - A question only Rishi can answer goes in audits/QUESTIONS-FOR-RISHI.md.
+   - Mark that item BLOCKED and move on.
+3. Rishi's decisions in OPERATING-PLAN.md are final. Never ask them again.
+4. Stop and tell Rishi only in these cases:
+   - (a) the 28 Nov guard fails;
+   - (b) a gate can only pass by weakening it;
+   - (c) a live check fails and git revert doesn't fix it;
+   - (d) the action can't be undone with git revert: a force push, a history rewrite, a Vercel, DNS, env or Cloudflare change, or deleting URLs without redirects.
+   For anything else, decide using the plan, the playbook rules and this file, and note the decision in the fix log.
+5. Deploys:
+   - Batch them as the plan says.
+   - Merge to main and push only after the gates and qa-checker pass.
+   - Run the live check after each deploy. If it fails, git revert, push, log it, and continue with the next item.
+6. Date-locked items wait for their date: the 28 Nov guard, the 26 Dec spec decision and the 9 Jan re-test. Never pull them forward.
+7. Content freeze until 9 Jan 2027: no new blog, coupon, DBA, compare, programme or Q&A pages.
+8. At the end of every session, put a 5-line status at the top of OPERATING-PLAN.md: done, in progress, blocked, waiting on Rishi, next.
+9. Start every session by reading that status and audits/QUESTIONS-FOR-RISHI.md. Apply any answers Rishi has written, then continue the loop.
