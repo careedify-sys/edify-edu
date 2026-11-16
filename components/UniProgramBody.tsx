@@ -57,6 +57,7 @@ import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { resolveFirstHand, fillFeeTokens } from '@/lib/first-hand'
 import FirstHandMbaSections from './FirstHandMbaSections'
 import DebIdBlock from './DebIdBlock'
+import { isExamCentre, EXAM_CENTRE_LINE } from '@/lib/exam-mode'
 
 interface Props {
   u: University
@@ -201,7 +202,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
     { q: `What is the eligibility for ${program} at ${cleanName}?`,
       a: u.eligibility || `Any Bachelor's degree with minimum 50% aggregate marks. Final year students may apply.` },
     { q: `What exam mode does ${cleanName} use?`,
-      a: `${u.examMode} examinations.` },
+      a: isExamCentre(u) ? EXAM_CENTRE_LINE : `${u.examMode} examinations.` },
     { q: `How long does the ${program} program take at ${cleanName}?`,
       a: `${pd.duration || '2 years'}.` },
     { q: `Can I study ${program} at ${cleanName} while working full-time?`,
