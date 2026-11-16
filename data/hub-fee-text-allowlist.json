@@ -3,5 +3,10 @@
     "file": "shoolini-university-online-mba.json",
     "contains": "Sticker programme fee Rs 2,00,000; two scholarship offers apply",
     "reason": "Matches shoolini.online: a Rs 2,00,000 sticker fee with two scholarship tracks (Rs 1,58,000 pay-after-placement and Rs 1,30,000 full payment, with their per-semester and scholarship figures). The top shows the two tracks; the TL;DR explains where they come from. Rishi, batch 3.4, 2026-11-16."
+  },
+  {
+    "file": "jaypee-university-online-mba.json",
+    "contains": "If you are comparing this against NAAC A+ options at Rs 1.4 lakh or less",
+    "reason": "JIIT fees are on hold (batch 3.4 part C): Rishi is confirming the all-in fee, so its typed fee text is left as is. Remove this entry when JIIT is fixed."
   }
 ]

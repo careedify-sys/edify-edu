@@ -10,8 +10,9 @@
 // emiFrom is not 2,500, invented "instalments of approximately Rs X each",
 // "under Rs 1.5 lakh" beside a Rs 2,00,000 list price.
 //
-// Rule: every rupee figure in a field the hub renders from the JSON (tldr, and
-// faqs items with question/answer keys) must equal one of that hub's getExactFee
+// Rule: every rupee figure in a field the hub renders from the JSON (tldr,
+// faqs items with question/answer keys, redFlags.flags unless hidden, ugcDeb.body
+// and abcId.body) must equal one of that hub's getExactFee
 // values: exact min/max, or the labelled list, net min/max, mode amounts and
 // published per-semester figures. A range passes only when both ends do. A hub
 // whose top shows the counsellor line may type no figure of its own. A figure
@@ -94,6 +95,13 @@ export function scanHub(file: string, j: any, allowed: number[], ownId: string, 
   const s = j.sections ?? {}
   const hits: Hit[] = []
   if (typeof s.tldr === 'string') hits.push(...scanText(file, 'tldr', s.tldr, allowed, ownId, program))
+  // Also rendered: the generated red flags (unless hidden) and the UGC-DEB and
+  // ABC ID bodies. The batch 3.4 live check found fee ranges in red flags after
+  // the TL;DR and FAQs had been fixed.
+  if (!s.redFlags?.hidden) (s.redFlags?.flags ?? []).forEach((f: any, i: number) => {
+    for (const k of ['sentence1', 'sentence2']) if (typeof f?.[k] === 'string') hits.push(...scanText(file, `redFlags.flags[${i}].${k}`, f[k], allowed, ownId, program))
+  })
+  for (const k of ['ugcDeb', 'abcId']) if (typeof s[k]?.body === 'string') hits.push(...scanText(file, `${k}.body`, s[k].body, allowed, ownId, program))
   ;(s.faqs ?? []).forEach((f: any, i: number) => {
     if (typeof f?.question !== 'string' || typeof f?.answer !== 'string') return
     hits.push(...scanText(file, `faqs[${i}].question`, f.question, allowed, ownId, program))
