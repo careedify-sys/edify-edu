@@ -1,5 +1,43 @@
 # Fix log
 
+## 2026-11-16 · Batch 3.4: hub fee text matches the top fee, BITS exams at centres (live); red flags (branch only); exam-mode audit
+
+- **Why:** the 3.3 audit found programme hubs whose TL;DR and FAQs typed a fee the top section did not
+  show: placeholder ranges beside an exact fee (Andhra, SASTRA, IGNOU), LPU's ungranted Rs 1,82,800, and
+  fees typed on 14 hubs whose top hides the fee because it is unverified. A reader saw two prices on one
+  page. Separately, BITS WILP carried examMode 'Online' (the importer's default for all 143 records), so
+  the templates told BITS readers exams were "from home, no exam centre visit". BITS's exam-centre page
+  lists centres across India and allows online exams only outside India.
+- **What (d55afb9, merged 1a2dcb0, live):**
+  - 28 hub JSONs, TL;DR and FAQs only: every figure is now the hub's getExactFee value, or "talk to our
+    counsellor for the current fee" where the top hides it (Alliance and NIU included; their lib/data.ts
+    entries untouched). Unrendered fields (about, fees, comparisons, hero, exams) left alone.
+  - The 25 visible audit figures plus 40 more the gate found: the templated "EMI starts from Rs 2,500
+    per month" on 9 hubs (their emiFrom is not 2,500), "instalments of approximately Rs X each" derived
+    from totals, "under Rs 1.5 lakh" style budget claims (false for LPU and Amrita), JAIN's unlisted
+    slabs and Rs 12,781 EMI, Symbiosis's semester split and Rs 55,000 concession, DPU's Rs.1.89L, and
+    Amity's Rs 1.15L-2.25L in two comparison FAQs (now lib/data.ts: Rs 2,07,000 to Rs 2,25,000).
+  - Shoolini left as is and allowlisted: its sticker-plus-scholarship TL;DR matches shoolini.online.
+  - New pre-commit gate scripts/check-hub-fee-text.mts. A figure in another university's comparison
+    passes only when it equals that university's own getExactFee values. Its self-test replays the 25
+    audit figures (25/25 caught). Its salary skip is narrower than the audit's SALARY rule, which also
+    skipped "starts from Rs" and so let the Rs 2,500 EMI line through.
+  - BITS examMode 'Exam Centre'. lib/exam-mode.ts; SectionExams, SectionClasses, the hub FAQ, the spec
+    FAQs and the university FAQ branch on it instead of printing "from home" for every university.
+- **Live (1a2dcb0):** AMU, JMI, SASTRA, IGNOU, LPU and Alliance TL;DR and FAQs read correctly; Shoolini
+  unchanged; BITS hub and university page show "in person at designated exam centres", BITS finance
+  spec shows its own in-person FAQ, no "from home" line on any of the three; UPES control still shows
+  the Online template; sitemap 2,301.
+- **Found by the live check, fixed on the branch only (66df939, not deployed):** fee ranges were still
+  rendered in hub red flags (SASTRA, Alliance, Assam Don Bosco, JMI, SRM IST, JAIN). Rewritten, and the
+  gate now covers redFlags.flags, ugcDeb.body and abcId.body. JIIT's red flag allowlisted (part C).
+- **Part B (audit only):** audits/exam-mode-audit-2026-11-16.md and .csv. None of the 17 flagged
+  universities has an own-exam in-person claim: 20 hits are a templated "in-person teaching" red flag,
+  5 are "Psychology in Personnel". The 9 own-exam claims (Assam Don Bosco, UPES) say online proctored;
+  Assam Don Bosco's is the same template that was wrong for BITS, and no portal confirms either.
+- **Lesson:** "rendered" was defined from the 3.3 audit (TL;DR and FAQs) and the live check found a
+  third rendered block. Verify the page, not the field list.
+
 ## 2026-11-14 · Batch 3.3: BITS WILP and Bharati Vidyapeeth MBA fees (live); hub fee contradiction audit (branch only)
 
 - **Why:** the 3.2 audit traced 108 MISMATCH figures to two universities whose data Rishi had already
