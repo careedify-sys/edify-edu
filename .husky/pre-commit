@@ -163,6 +163,15 @@ echo "pre-commit: check-page-content-facts"
 node scripts/check-page-content-facts.mjs --self-test || exit 1
 node scripts/check-page-content-facts.mjs || exit 1
 
+# Hub fee text. A programme hub's TL;DR and FAQs typed fees its top section
+# did not show: 25 visible figures on 2026-11-14, placeholder ranges beside an
+# exact fee and fees on hubs whose top hides an unverified fee. Every rupee
+# figure in a rendered hub field must equal that hub's getExactFee values.
+# Exceptions: data/hub-fee-text-allowlist.json. See scripts/check-hub-fee-text.mts.
+echo "pre-commit: check-hub-fee-text"
+npx tsx scripts/check-hub-fee-text.mts --self-test || exit 1
+npx tsx scripts/check-hub-fee-text.mts || exit 1
+
 # Manifest subject names split at commas inside brackets ("DevOps -1 (GIT",
 # "Jenkins", "Docker)"). See scripts/check-syllabus-manifest-brackets.mjs.
 echo "pre-commit: check-syllabus-manifest-brackets"

@@ -1,5 +1,6 @@
 import type { University } from '@/lib/data'
 import { ClipboardList, BookOpen, Briefcase } from 'lucide-react'
+import { isExamCentre, EXAM_CENTRE_LINE } from '@/lib/exam-mode'
 
 interface Props {
   u: University
@@ -17,7 +18,9 @@ export default function SectionExams({ u, program, cleanName }: Props) {
       label: 'Exam Mode',
       desc: isOnline
         ? 'Online proctored examinations from home. No exam centre visit required.'
-        : isAssignment
+        : isExamCentre(u)
+          ? `${EXAM_CENTRE_LINE} Confirm your nearest centre with the university before enrolling.`
+          : isAssignment
           ? 'Assignment and project-based evaluation. No written end-semester exams.'
           : `${u.examMode}. Confirm exact format with the university before enrolling.`,
     },

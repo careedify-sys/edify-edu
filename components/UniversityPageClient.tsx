@@ -29,6 +29,7 @@ import { stripLinks } from '@/lib/link-markup'
 import FirstHandUniversitySections from '@/components/FirstHandUniversitySections'
 import { FirstHandText } from '@/components/FirstHandShared'
 import OwnerMbaSentence from '@/components/OwnerMbaSentence'
+import { isExamCentre, EXAM_CENTRE_LINE } from '@/lib/exam-mode'
 
 const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')
 
@@ -133,7 +134,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
     },
     {
       q:`How are exams conducted at ${u.name}?`,
-      a:`${u.name} uses ${u.examMode} mode. No travel to exam centre is required. Assessments include internal assignments, projects, and online proctored exams via webcam from home or office. Exam schedule is communicated through the university LMS.`
+      a: isExamCentre(u) ? `${EXAM_CENTRE_LINE} Internal assessment runs through assignments and quizzes, and the exam schedule is communicated through the university LMS.` : `${u.name} uses ${u.examMode} mode. No travel to exam centre is required. Assessments include internal assignments, projects, and online proctored exams via webcam from home or office. Exam schedule is communicated through the university LMS.`
     },
     {
       q:`Is ${u.name} ${displayProgram} valid for government jobs?`,
