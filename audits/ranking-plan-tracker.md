@@ -31,6 +31,10 @@ Source plan: "edifyedu.in ranking and scaling plan, with check log" (Rishi, 14 N
 | 3.2B | Batch 3.2 part B: audit typed fees in the 219 indexed non-fact-swept spec JSON files (audit only) | Done on feat/batch-3-2, not deployed: 4,318 figures, MATCH 2,441 / MISMATCH 371 / SUPPRESSED 0 / UNRESOLVED 1,506; 36 (university, figure) pairs drive all MISMATCH; 0 pages fall below 495 words if non-MATCH sentences go. audits/spec-fee-audit-summary-2026-11-14.md |
 | 3.3A | Batch 3.3 part A: BITS WILP (Rs 3,12,400) and Bharati Vidyapeeth (Rs 1,78,000 / 1,68,000 paid in full) MBA fees in JSONs, hubs and blogs | Done, live 14 Nov (merge 3b1b1ab): both hubs' top and TL;DR agree; touched spec pages MISMATCH 141 to 33 (30 left are NIU/Alliance/Sharda, held for Rishi); all-page MISMATCH 371 to 263 |
 | 3.3B | Batch 3.3 part B: hub fee contradiction audit (audit only) | Done on feat/batch-3-3, not deployed: 126 hubs; 22 CONTRADICTS on 6 hubs; 14 hubs hide the fee but type one (106 figures). audits/hub-fee-contradictions-summary-2026-11-14.md |
+| 3.4A | Batch 3.4 part A: hub TL;DR/FAQ fees match the top fee (28 hubs, 65 figures), check-hub-fee-text gate, BITS examMode Exam Centre | Done, live 16 Nov (merge 1a2dcb0): AMU, JMI, SASTRA, IGNOU, LPU, Alliance correct; Shoolini unchanged; BITS shows in-person exams; sitemap 2,301 |
+| 3.4A2 | Batch 3.4 follow-up: hub red flags still typed fee ranges (6 hubs); gate extended to red flags, UGC-DEB and ABC blocks | Done, live 16 Nov (merge 9a5f2e8, own deploy): Red Flags on SASTRA, Alliance, Assam Don Bosco, JMI, SRM IST, JAIN carry no figure off the top fee; Shoolini unchanged; sitemap 2,301 |
+| 3.4C | Exam-mode verification of 31 serviced universities (audit only) | Done on feat/batch-3-4: VIT should be Exam Centre (not changed); 22 confirm Online, 1 ambiguous, 7 unverified; counsellor wording drafted, ships after the 28 Nov check. audits/exam-mode-verified-2026-11-16.md |
+| 3.4B | Batch 3.4 part B: exam-mode audit of 17 universities (audit only) | Done on feat/batch-3-4: 0 own-exam in-person claims; 9 online claims unconfirmed by any portal. audits/exam-mode-audit-2026-11-16.md |
 | 3.2 | Hub link from the MUJ review: needs a sentence in the post, so it waits for the next real MUJ review update | Pending |
 
 ## Rishi-only (Claude cannot do these)
@@ -61,6 +65,8 @@ Search Console 11 Aug to 10 Nov: 12,855 clicks, 2,663,474 impressions; tools 8,2
 
 ## Batch log
 
+- 16 Nov: red-flag follow-up 66df939 merged as 9a5f2e8 (own deploy) and verified live on 6 hubs; exam-mode verification of 31 serviced universities committed to feat/batch-3-4 (VIT is exam-centre; nothing changed).
+- 16 Nov: batch 3.4 on feat/batch-3-4: part A merged as 1a2dcb0 and verified live (hub fee text, new check-hub-fee-text gate, BITS exams at centres); red-flag follow-up 66df939 on the branch, not deployed; part B exam-mode audit committed to the branch only.
 - 14 Nov: tracker created; reminders set for all seven check dates.
 - 14 Nov: Batch 1 done on feat/branded-sprint-1 (a2f3806, 7a4ed72, adb2848, 3311957, caff545); build passes; branch pushed, not merged.
 - 14 Nov: 2.1 applied on the branch: 686 spec pages noindex, out of valid-urls.json (2,153 URLs) and the sitemap; 513 on the improve worklist. Verified on a local build: 686/686 noindex, 513/513 index.
