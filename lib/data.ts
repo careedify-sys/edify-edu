@@ -2129,9 +2129,29 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   {
     id: 'sharda-university-online',
     // own .ac.in domain, outbound links stay in-house
+    // MBA read 2026-11-16 from shardaonline.ai/programs/sharda/mba/ ("Curriculum and fees last
+    // reviewed: 5 November 2026"; audits/verify/sharda-university-online-2026-11-16.md) and
+    // confirmed by Rishi 2026-11-18 (Q3): "Total Program Fee ₹1,50,000", Rs 37,500 a semester,
+    // Rs 75,000 a year (Indian nationals). Registration Rs 500 one-time and exam Rs 3,500 a year
+    // are separate published lines, never added into the total. The page says only "No Cost EMI
+    // available on education loans", with no monthly figure, so emiFrom is 0. The separate
+    // campus-immersion variant (Rs 3,20,000) is not this programme's fee.
     officialUrl: 'https://shardaonline.ai',
-    feeVerifiedOn: '2026-10-06',
-    programFees: { bca: { fee: 120000 }, mca: { fee: 120000 } },
+    feeVerifiedOn: '2026-11-18',
+    programFees: { mba: { fee: 150000 }, bca: { fee: 120000 }, mca: { fee: 120000 } },
+    feePlans: {
+      mba: [{
+        id: 'standard', label: 'Online MBA',
+        rows: [
+          { mode: 'Total programme fee', total: 150000 },
+          { mode: 'Annual', instalment: 75000, count: 2, total: 150000 },
+          { mode: 'Semester', instalment: 37500, count: 4, total: 150000 },
+        ],
+        extras: [{ label: 'Registration', amount: 500, per: 'one-time' }, { label: 'Examination', amount: 3500, per: 'a year' }],
+        notes: ['Fees for Indian nationals. Registration and examination fees are charged separately and are not in the total.'],
+        source: 'shardaonline.ai MBA page, read 2026-11-16; Rishi, confirmed 2026-11-18', checkedOn: '2026-11-18',
+      }],
+    },
     logo: '/logos/university_logos/sharda-university.svg',
     name: 'Sharda University Online',
     abbr: 'SUO',
@@ -2146,9 +2166,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 140000,
-    feeMax: 154500,
-    emiFrom: 5833,
+    feeMin: 150000,
+    feeMax: 150000,
+    emiFrom: 0,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     tagline: 'NAAC A+ accredited · UGC DEB approved online programs',
@@ -2159,7 +2179,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programDetails: {
       'MBA': {
         specs: ['Marketing', 'Finance', 'Human Resource Management', 'Data Science and Analytics', 'Healthcare and Hospital Administration', 'Strategic Human Resource Management'],
-        fees: '\u20b91.4L',
+        fees: '\u20b91,50,000',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: 'Not Mentioned',
@@ -5416,9 +5436,27 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // Fees read 2026-10-30 from allianceonline.edu.in (linked from alliance.edu.in as "Alliance
     // Online"). Domestic full course fee: BBA Rs 1,39,000 (6 semesters); B.Com Rs 89,000 for three
     // years, plus Rs 29,666 for the Honours fourth year. Rs 1,000 registration on top of both.
+    // MBA read 2026-11-16 from allianceonline.edu.in/mba/ (audits/verify/
+    // alliance-university-online-2026-11-16.md): domestic "Full Course Fee INR 1,74,000",
+    // semester fee Rs 43,500 (inclusive of all taxes), Rs 1,000 one-time registration on top,
+    // no-cost EMI from Rs 8,700 a month for 20 months. The old 1,60,000 / 1,75,000 pair was
+    // never on the page. A "Semester fees 12,667" block sits inside an HTML comment; ignored.
     officialUrl: 'https://allianceonline.edu.in',
-    feeVerifiedOn: '2026-10-30',
-    programFees: { bba: { fee: 139000 }, bcom: { fee: 89000, feeMax: 118666 } },
+    feeVerifiedOn: '2026-11-16',
+    programFees: { mba: { fee: 174000 }, bba: { fee: 139000 }, bcom: { fee: 89000, feeMax: 118666 } },
+    feePlans: {
+      mba: [{
+        id: 'standard', label: 'Online MBA',
+        rows: [
+          { mode: 'Full course fee', total: 174000 },
+          { mode: 'Semester', instalment: 43500, count: 4, total: 174000 },
+          { mode: 'No-cost EMI (per month, 20 months)', instalment: 8700 },
+        ],
+        extras: [{ label: 'Registration (one-time)', amount: 1000 }],
+        notes: ['Domestic fees. The semester fee is shown inclusive of all taxes.'],
+        source: 'allianceonline.edu.in MBA page, checked 2026-11-16', checkedOn: '2026-11-16',
+      }],
+    },
     feeBreakdown: {
       bcom: { list: 118666, modes: [{ amount: 89000, label: 'B.Com, 3 years' }, { amount: 118666, label: 'B.Com (Hons), 4 years' }], source: 'allianceonline.edu.in B.Com page, 2026-10-30' },
     },
@@ -5436,9 +5474,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 160000,
-    feeMax: 175000,
-    emiFrom: 6667,
+    feeMin: 174000,
+    feeMax: 174000,
+    emiFrom: 8700,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     tagline: 'AI-integrated curriculum across all specs · Design Thinking core · Bangalore-based UGC-DEB approved',
@@ -5449,7 +5487,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programDetails: {
       'MBA': {
         specs: ['Finance', 'Human Resource Management', 'Marketing', 'Operations', 'Business Analytics & AI'],
-        fees: '\u20b91.6L',
+        fees: '\u20b91,74,000',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '₹4L – ₹12L per annum',
@@ -5749,9 +5787,26 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     id: 'jaypee-university-online',
     // BBA read 2026-10-30 from jiitonline.com (linked from jiit.ac.in as "Online Education"):
     // Rs 1,39,000 for 3 years. The same page lists the MBA at Rs 1,75,000, matching pd.fees.
+    // MBA re-read 2026-11-16 (audits/verify/jaypee-university-online-2026-11-16.md) and
+    // confirmed by Rishi 2026-11-18 (Q4, Q5): "Total Program Investment ₹1,75,000/-" covers
+    // tuition, all examination fees and admission processing; no separate exam line. The
+    // programme-page FAQ range (Rs 1,50,000 to Rs 2,50,000) is stale. EMI: the August 2026
+    // brochure, p. 31, says "EMI Starts at: ₹5,850/- Per Month" (no tenure stated); the old
+    // 7,292 was 1,75,000 / 24, our own arithmetic.
     officialUrl: 'https://www.jiitonline.com',
-    feeVerifiedOn: '2026-10-30',
-    programFees: { bba: { fee: 139000 } },
+    feeVerifiedOn: '2026-11-18',
+    programFees: { mba: { fee: 175000 }, bba: { fee: 139000 } },
+    feePlans: {
+      mba: [{
+        id: 'standard', label: 'Online MBA',
+        rows: [
+          { mode: 'Total programme fee', total: 175000 },
+          { mode: 'EMI (per month)', instalment: 5850 },
+        ],
+        notes: ['The total covers tuition, all examination fees and admission processing. EMI tenure is not stated in the brochure.'],
+        source: 'jiitonline.com MBA page and August 2026 brochure p. 31, read 2026-11-16; Rishi, confirmed 2026-11-18', checkedOn: '2026-11-18',
+      }],
+    },
     logo: '/logos/university_logos/jaypee-institute-of-information-technology-logo.svg',
     name: 'Jaypee Institute of Information Technology Online',
     abbr: 'JIITO',
@@ -5768,7 +5823,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     psuEligible: true,
     feeMin: 175000,
     feeMax: 175000,
-    emiFrom: 7292,
+    emiFrom: 5850,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     tagline: 'Professional Ethics as standalone subject (Sem 3) | Quantitative Methods for Business + MIS in Sem 1-2 core',
@@ -6167,9 +6222,27 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     id: 'noida-international-university-online',
     // BBA read 2026-10-30 from niuonline.edu.in/programme-detail/bba (linked from niu.edu.in as
     // "NIU Online"): Rs 1,08,000 total, Rs 18,000 x 6 semesters; Rs 1,100 application fee.
+    // MBA read 2026-11-16 from niuonline.edu.in/programme-detail/mba (audits/verify/
+    // noida-international-university-online-2026-11-16.md): "MBA Total Fees INR 118000",
+    // Rs 29,500 x 4 semesters or Rs 59,000 x 2 years; Rs 1,100 non-refundable application fee
+    // paid separately; regular exam fees "Included in fees" (niuonline.edu.in/additional-fees).
+    // No EMI is published, so emiFrom is 0. The old 88,500 / 97,600 pair was never on the page.
     officialUrl: 'https://niuonline.edu.in',
-    feeVerifiedOn: '2026-10-30',
-    programFees: { mca: { fee: 118000 }, bba: { fee: 108000 } }, // BCA fee deferred: no project source confirms BCA exists; see audits/sprint-2-data-fixes-2026-05-10.md
+    feeVerifiedOn: '2026-11-16',
+    programFees: { mba: { fee: 118000 }, mca: { fee: 118000 }, bba: { fee: 108000 } }, // BCA fee deferred: no project source confirms BCA exists; see audits/sprint-2-data-fixes-2026-05-10.md
+    feePlans: {
+      mba: [{
+        id: 'standard', label: 'Online MBA',
+        rows: [
+          { mode: 'Full programme', total: 118000 },
+          { mode: 'Annual', instalment: 59000, count: 2, total: 118000 },
+          { mode: 'Semester', instalment: 29500, count: 4, total: 118000 },
+        ],
+        extras: [{ label: 'Application (non-refundable, one-time)', amount: 1100 }],
+        notes: ['Regular semester exam fees are included in the programme fee.'],
+        source: 'niuonline.edu.in MBA and additional-fees pages, checked 2026-11-16', checkedOn: '2026-11-16',
+      }],
+    },
     logo: '/logos/university_logos/noida-international-university.svg',
     name: 'Noida International University Online',
     abbr: 'NIUO',
@@ -6183,9 +6256,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 88500,
-    feeMax: 97600,
-    emiFrom: 3688,
+    feeMin: 118000,
+    feeMax: 118000,
+    emiFrom: 0,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     tagline: 'Agri Business specialisation (very rare in online MBA)',
@@ -6197,7 +6270,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       
       'MBA': {
         specs: ['Marketing Management', 'Finance', 'Human Resource Management', 'Production & Operations Management', 'Business Analytics', 'International Business', 'Hospital & Health Care Management', 'Information Technology', 'Agri Business', 'Retail Management'],
-        fees: '₹88.5K',
+        fees: '₹1,18,000',
         duration: '2 Yrs',
         roles: ['Management Trainee', 'Analyst', 'Operations Trainee', 'Healthcare Admin Trainee'],
         avgSalary: '₹5L – ₹14L per annum',

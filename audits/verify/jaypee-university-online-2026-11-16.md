@@ -19,3 +19,15 @@
 - The data record's total is right. The mismatch driver named in `audits/spec-fee-audit-summary-2026-11-14.md` is typed copy: Rs 1,82,000 appears in 3 JIIT spec JSONs (finance 11, IT and business analytics 9, marketing 7 hits). No official source publishes Rs 1,82,000, so those belong to the B6 sweep.
 - The brochure also says scholarships and early-bird offers apply via the counsellor, with no rupee figure. Nothing recorded.
 - The older brochure `/wp-content/uploads/2026/05/JIIT-Online-MBA-BBA-Combine-Brochure.pdf` was not opened; the August 2026 one is newer.
+
+## Resolution (2026-11-18)
+
+- **Rishi's answer, 2026-11-18:** the MBA total is Rs 1,75,000 and covers tuition, all examinations and admission processing. There is no separate exam line. The official FAQ range of Rs 1,50,000 to Rs 2,50,000 is stale and is not used.
+- The Exam fee row moves from UNCLEAR to settled: included in the total (programme page wording). The Official FAQ range row is settled: stale, not used.
+- EMI: this sheet records the brochure figure with its source (brochure p. 31, "EMI Starts at: ₹5,850/- Per Month", no tenure), so emiFrom is set to 5,850 rather than removed.
+- **Applied on branch `fix/d4-fees-niu-alliance`:**
+  - `lib/data.ts`: `programFees.mba` 1,75,000, `feePlans.mba` (total row and an EMI-per-month row of 5,850; note says exams and admission processing are inside the total and the tenure is not stated), emiFrom 5,850 (was 7,292, Edify's own 1,75,000 / 24), feeVerifiedOn 2026-11-18.
+  - Mirrors: `lib/data-slim.ts`, `data/fees-hub-data.json`.
+  - Hub and spec page-content JSONs: Rs 1,82,000, Rs 7,292 / 7,417, the Rs 43,750 derived instalment and the Rs 2,500 template EMI removed; peer pages that quote JIIT now say Rs 1,75,000, with derived rupee gaps dropped.
+  - Blog `jaypee-jiit-online-mba-review`: the unpublished semester split (Rs 43,000 + Rs 1,500 exam), the Rs 1,500 exam column and the separate Rs 1,000 registration line removed; the table now lists tuition, exams and admission processing as included in Rs 1,75,000.
+- Logged in `audits/FIX-LOG.md` (2026-11-18, D4 Sharda/JIIT).

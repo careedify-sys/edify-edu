@@ -1,5 +1,53 @@
 # Fix log
 
+## 2026-11-18 · D4: MBA fees for NIU, Alliance, Sharda and JIIT (branch only)
+
+- **Why:** the D4 verify sheets (audits/verify/*-2026-11-16.md) found four MBA records out of line with the
+  universities' own pages. NIU and Alliance hubs showed the counsellor line because getExactFee had no
+  exact figure (no programFees, no feePlans), while their spec JSONs and blogs typed old prices (NIU's
+  unverified Rs 88,500 early-bird; Alliance Rs 1,75,000 and a Rs 37K-1.5L range). Sharda carried
+  1,40,000-1,54,500 and an EMI of 5,833 derived from the wrong fee; the university publishes Rs 1,50,000.
+  JIIT's total was right, but copy typed Rs 1,82,000, a Rs 1,500 exam fee and an EMI of 7,292 that was
+  Edify's own 1,75,000 / 24, not the published Rs 5,850. Readers saw two or three prices for one programme.
+- **Sources:** NIU and Alliance from the D4 brief (16 Nov); Sharda and JIIT from Rishi's answer on 18 Nov
+  (QUESTIONS-FOR-RISHI Q3-Q5), shardaonline.ai/programs/sharda/mba/ and the JIIT brochure p. 31.
+- **What:**
+  - lib/data.ts: NIU MBA 1,18,000 (29,500 a semester, 59,000 a year, Rs 1,100 application separate, exams
+    included, EMI 0); Alliance 1,74,000 (43,500 a semester, Rs 1,000 registration separate, no-cost EMI
+    8,700 x 20 months); Sharda 1,50,000 (37,500 / 75,000; Rs 500 registration and Rs 3,500 a year exam as
+    separate extras, never added; EMI 0); JIIT 1,75,000 all-inclusive, EMI 5,850 (tenure not stated).
+    Each has programFees.mba and feePlans.mba, so the hubs print the exact fee and the plan table.
+    feeVerifiedOn 2026-11-16 (NIU, Alliance) and 2026-11-18 (Sharda, JIIT). NIU programFees.mca untouched.
+  - Mirrors: lib/data-slim.ts and data/fees-hub-data.json. The Sharda drift entry left
+    data/fee-verification-allowlist.json (tightening; verify-fees passes without it).
+  - Page-content JSONs: own spec pages swept the batch 3.1 way (typed fees, EMI, discounts and derived
+    gaps out; fees.body is the standard reconfirm line). Hubs rewritten to the new totals; Sharda and JIIT
+    hubs lost the Rs 2,500 template EMI, the Rs 43,750 instalment and the "highest fee in this batch"
+    superlative. 44 peer spec/hub JSONs that quoted these four now carry the new figure (Sharda 1,50,000,
+    JIIT 1,75,000, Alliance 1,74,000), matched only when the nearest preceding university name in the
+    sentence is the target. Rupee gaps derived from the old figures (e.g. "Sharda is Rs 45,500 cheaper",
+    "Rs 36,400 premium", "nearly 2x") were reworded without a number rather than recomputed.
+  - lib/blog.ts: 13 posts. NIU review moved off the 88,500 price onto 1,18,000; JIIT review lost the
+    unpublished semester split and Rs 1,500 exam column; Sharda MBA figures corrected in 7 posts (two
+    "NAAC A++" for Sharda corrected to A+ per lib/data.ts; Sharda dropped from the JAIN review's "under
+    Rs 1,50,000" list). Lists that the fee scanner could not attribute now name "Noida International
+    University" and "Alliance University". updatedAt bumped on every touched post.
+  - data/blog-fee-baseline.json ratcheted down by the gate (2040 to 2026). No allowlist entries added.
+- **Gates:** pre-commit hook, tsc and next build all pass; no gate weakened.
+- **Left open:** Alliance spec JSONs say NAAC A in places while lib/data.ts says A+; the JIIT hub says
+  NAAC A in the TL;DR and A+ in about/comparisons; BVP Rs 1,60,000 in the HR blog lists is unverified;
+  "Chandigarh and NIU both offer 25% Early Bird" in the HR blog FAQ is unverified; Chitkara finance says it
+  "sits between" Sharda and MUJ at Rs 2,00,000, which was already false. UniversityPageClient prints a
+  generic EMI line when emiFrom is 0. Alliance's EMIPlans card adds template 6/12/24-month figures.
+  JIIT's EMIPlans card likewise prints 29,167 / 14,583 / 7,292 (fee / 6, 12, 24, labelled indicative) under
+  the published Rs 5,850; that is the shared template, not changed here.
+- **Titles (decision, flagged):** the hub, university and spec templates put the exact fee in the title
+  once getExactFee returns one (the 2026-10-27 fee-led rule). So NIU, Alliance and Sharda pages change
+  title on deploy: Alliance and Sharda MBA hubs to "... Online MBA Fees 2026: Rs X", the three university
+  pages to "... Courses, MBA Rs X", and their spec pages gain ": Rs X". JIIT titles do not change; the
+  NIU and JIIT hubs keep review-owned titles. No title was edited by hand and no hold was added; this
+  conflicts with the site-engineer "no title changes" rule, so the merge decision is left to QA/coordinator.
+
 ## 2026-11-16 · VIT Online exams at centres (live)
 
 - **Why:** the exam-mode verification (audits/exam-mode-verified-2026-11-16.csv) found VIT's own MBA page

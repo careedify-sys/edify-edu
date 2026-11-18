@@ -23,3 +23,14 @@
 - The precedent at `lib/data.ts:2194-2196` (BCA, same domain) records the total programme fee with registration and exam as separate published lines. The MBA row follows the same shape.
 - The official page lists seven MBA tracks; `lib/data.ts:2161` lists six specs. Not part of D4; flagged for the spec owner.
 - 5 of 7 Sharda MBA spec JSONs carry the old figures (51 hits). That sweep belongs to B6.
+
+## Resolution (2026-11-18)
+
+- **Rishi's answer, 2026-11-18:** the MBA total is Rs 1,50,000 (Rs 37,500 a semester, Rs 75,000 a year). The Rs 500 one-time registration fee and the Rs 3,500 yearly exam fee are separate lines and are never added into the total. Use https://shardaonline.ai/programs/sharda/mba/ as the source. No EMI figure is published, so none is shown.
+- The "Is Rs 1,50,000 the all-in amount?" row moves from UNCLEAR to settled: not all-in; registration and exam stay as separate lines.
+- **Applied on branch `fix/d4-fees-niu-alliance`:**
+  - `lib/data.ts`: feeMin/feeMax 1,50,000, `programFees.mba` 1,50,000, `feePlans.mba` (total, 2 yearly, 4 semester rows, registration and exam as extras), emiFrom 0, programDetails.MBA.fees "₹1,50,000", feeVerifiedOn 2026-11-18.
+  - Mirrors: `lib/data-slim.ts`, `data/fees-hub-data.json` (EMI "Not published"). The Sharda drift entry in `data/fee-verification-allowlist.json` was removed because the data now matches.
+  - Hub and spec page-content JSONs: typed Rs 1,40,000 / Rs 1,54,500 figures, derived gaps and the Rs 2,500 template EMI removed or corrected; peer pages that quote Sharda now say Rs 1,50,000.
+  - Blogs: Rs 1,40,000 / ₹1.4L / ₹1.4 lakh for the Sharda MBA corrected to Rs 1,50,000 (Rs 37,500 a semester) in 7 posts. Sharda BBA figures were not touched.
+- Logged in `audits/FIX-LOG.md` (2026-11-18, D4 Sharda/JIIT).
