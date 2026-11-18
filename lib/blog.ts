@@ -29659,7 +29659,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <ul>
 <li><strong>Wide specialization choice for the fee.</strong> 10 specializations at Rs. 1,18,000. Most programs at this price offer 5-7 tracks.</li>
 <li><strong>SPSS Training is compulsory, not optional.</strong> Every student learns statistical analysis in Semester 2 regardless of specialization. This is practically useful for research, analytics, and data-driven decision making in any industry.</li>
-<li><strong>Healthcare MBA syllabus depth is exceptional.</strong> With 15+ subjects covering Quality Management, NABH Accreditation, Health Insurance, Medical Tourism, and Disaster Management, NIU offers the most detailed healthcare MBA at the lowest price in the market.</li>
+<li><strong>Healthcare MBA syllabus depth is exceptional.</strong> With 15+ subjects covering Quality Management, NABH Accreditation, Health Insurance, Medical Tourism, and Disaster Management, NIU offers one of the most detailed healthcare MBA syllabi among budget programmes.</li>
 <li><strong>Niche tracks nobody else offers at this price.</strong> Agribusiness, Retail Management, and Hospital Management are all dedicated specialization tracks with full syllabi, not just elective modules.</li>
 <li><strong>NAAC A+ accreditation is genuine.</strong> Verify at naac.gov.in. Combined with UGC-DEB recognition, the degree is legally equivalent to a regular MBA.</li>
 <li><strong>Business Analytics track includes AI, ML, Python, and Blockchain.</strong> At Rs. 1,18,000, this tech-forward curriculum is hard to find.</li>
