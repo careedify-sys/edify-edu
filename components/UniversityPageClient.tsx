@@ -731,7 +731,10 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     // were template text with no source. Only a scholarship the
                     // university publishes (u.mbaScholarships) is named here.
                     ...(scholarshipMaxPct ? [`🎓 Published MBA scholarships: up to ${scholarshipMaxPct}% for listed categories at ${u.abbr}`] : []),
-                    u.emiFrom > 0 ? `🏦 No-cost EMI, 12 to 24 months, from ₹${u.emiFrom.toLocaleString()}/month` : '🏦 No-cost EMI, 12 to 24 month plans via partner banks',
+                    // B3: with emiFrom 0 the university publishes no EMI figure,
+                    // so no EMI line is printed; a neutral line keeps the card
+                    // from rendering empty.
+                    u.emiFrom > 0 ? `🏦 No-cost EMI, 12 to 24 months, from ₹${u.emiFrom.toLocaleString()}/month` : `📋 Current fee breakdown and payment options for ${u.abbr}, confirmed with the university`,
                   ]}
                 />
               )}

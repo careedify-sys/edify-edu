@@ -44,7 +44,8 @@
     - Eligibility now reads "Graduation pass".
     - Not applied: the spec rename to "Business Analytics & IT". check-string-truncation flags a name
       ending in "IT" (rule R3). Passing it needs an allowlist entry, which only Rishi can approve, so the
-      rename waits for him.
+      rename waits for him. The hub JSON text that 0703326 changed to "Business Analytics & IT" was
+      reverted to "Business Analytics" in the QA fixes, so the page matches the current spec name (Q33).
     - The EMI is removed from the review blog and from the mba-seo-overrides meta description and intro.
       The title is unchanged.
 - **JAIN:**
@@ -66,7 +67,9 @@
     unchanged.
   - Not done:
     - The fee range is unchanged (Q13).
-    - The AI spec pages still resolve from the manifest. They are not noindexed or redirected (Q25/Q32).
+    - The AI spec pages still resolve from the manifest. They are not noindexed or redirected (Q35).
+      Their names are pinned by WITHDRAWN_SPEC_NAMES in lib/data/programs.ts, so title, H1 and meta stay
+      as live, and getAllSpecsForProgram filters them out of the hub tiles and related-spec links.
 - **Symbiosis SSODL:**
   - Why: the ranking badge "NIRF #11 (Management)" is SIBM Pune's rank, not SSODL's. An FAQ called
     University #24 a Management rank, and "WES Recognised" is not on the SSODL record.
@@ -122,8 +125,49 @@
 - **Blog fee gate:** removing the EMI wording uncovered two figures that the scanner had been reading as
   non-fee only because "EMI" sat next to them. The Maharashtra Symbiosis sentence now names SSODL, so
   ₹3,15,000 to ₹3,70,000 is checked against lib/data.ts and passes as MATCH. In nmims-vs-symbiosis, the
-  derived ₹1.19L gap (3.15L minus 1.96L) is reworded without a number. The baseline only went down, by
-  the gate's own auto-update.
+  derived ₹1.19L gap (3.15L minus 1.96L) is reworded without a number; 0703326 left 8 more instances,
+  which the QA fixes below removed. The baseline only went down, by the gate's own auto-update.
+
+## 2026-11-18 · B3 batch 1 addendum: QA fixes on 0703326 (branch fix/b3-batch-1)
+
+- **Source:** audits/qa/2026-11-18-b3-batch-1-premerge.md (FAIL on F1, F2, F3).
+- **F1 JAIN AI pages:**
+  - Why: removing the three AI specs from lib/data.ts made resolveSpec fall through to titleCaseSlug, so
+    the frozen-in-practice pages renamed themselves ("AI For Marketing"). The hub also still showed 19
+    tiles under a "16" header, because tiles come from the manifest, not data.ts.
+  - What: WITHDRAWN_SPEC_NAMES in lib/data/programs.ts pins the three live names, and
+    getAllSpecsForProgram skips them, so hub tiles and related-spec links show only the 16 data.ts specs.
+    The pages are not noindexed or redirected; that waits on Q35.
+- **F2 sweep (claims the six sheets mark false, left in other files by 0703326):**
+  - DSU NAAC A++ / "highest grade" is A+ in 8 DSU spec JSONs and 5 blog posts. Group lines like "All are
+    NAAC A or A++" now include A+. Galgotias "NAAC B++" in DSU spec JSONs is A+, per data.ts.
+  - DSU invented EMI (Rs 5,000-6,000) and Rs 32,500/sem are gone from spec JSONs and the review. The
+    review hero shows the published Semester 1 Rs 32,875, and the count is the sheet's 8 electives. The
+    "thin syllabus" claims were removed. A second "Per Semester Rs 30,000" hit QA listed is in the SMU
+    review, where it is correct, so it was left.
+  - SSODL "NIRF Management 11" (SIBM Pune's rank) is now University #24 in 7 places across 6 posts.
+  - nmims-vs-symbiosis: the SSODL salary and WES claims are removed; online-mba-with-placement salary
+    cells for Symbiosis and BITS read "Not published".
+  - DPU: derived EMI ~7,890, per-semester 47,350 in the fee guides, the 11-14% interest row, and the
+    ₹2,500/month EMI in every DPU spec JSON are removed. DPU offers No Cost EMI with no monthly figure.
+  - JAIN "20-plus", "20+", "18 (highest in India)", "19" and "17+" counts are 16. The removed AI tracks
+    are gone from pairs.ts and 6 peer JSONs.
+  - The BITS review FAQ no longer sums semesters into ₹2,92,400; it gives the published per-semester
+    lines.
+  - Galgotias finance JSON: WES removed.
+- **F3:** the profile and gated fee card printed "EMI ... partner banks" text when emiFrom is 0. They now
+  print a counsellor line with no EMI figure, so the card is never empty and no EMI is implied.
+- **Advisory:** the gated Total Fee prints one figure when min equals max (was "₹80K – ₹80K").
+- **Left in place (advisory, not on any sheet):** ₹47,350 in the dy-patil review and programme guides,
+  BITS review sums outside the FAQ, DPU "effective fee ₹1,79,400", and derived rupee gaps in DSU spec
+  JSONs. A fee-comparison interest row names an ambiguous "DY Patil University"; that post 308-redirects.
+- **Blog fee gate (QA round):** two posts went up by one loose figure. Both were fixed by correcting
+  copy, not by touching the baseline or allowlist:
+  - mba-hr-management: the tier line now reads "NAAC A or above". ARKA JAIN is NAAC A, so "A+ or A++"
+    would have been false. The rewording also lets the scanner see the next "MBA" again.
+  - online-mba-entrepreneurship: removed the unsourced "₹1,65,000 to ₹1,96,000" mid-range, because no
+    listed university charges ₹1,65,000. It passed before only because a nearby "per semester" hid it.
+- **Frozen:** jain-online-mba-review metaDescription still says "19 electives" (protected to 5 Dec).
 
 ## 2026-11-18 · D4 addendum: QA fixes on ccf74ce (branch only)
 

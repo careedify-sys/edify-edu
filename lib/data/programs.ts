@@ -194,7 +194,24 @@ export function getAllSpecsForProgram(slug: string, program: string): ProgramRow
   const prog = program.toLowerCase()
   return loadManifest().filter(
     r => r.university_slug === slug && r.program === prog && r.spec_slug !== ''
+      && !(`${slug}|${prog}|${r.spec_slug}` in WITHDRAWN_SPEC_NAMES)
   )
+}
+
+/**
+ * Specialisations a university no longer offers, keyed "uniId|program|specSlug".
+ * The value is the display name the page carried while the spec was in
+ * lib/data.ts. B3 (2026-11-18) removed these from lib/data.ts: JAIN lists 16
+ * electives and the three portal pages return 404. Their spec URLs still
+ * resolve from the manifest and are neither noindexed nor redirected (Q35), so
+ * resolveSpec keeps the old name here instead of title-casing the slug ("AI For
+ * Marketing"), and getAllSpecsForProgram leaves them out of the hub tiles and
+ * related-spec links.
+ */
+const WITHDRAWN_SPEC_NAMES: Record<string, string> = {
+  'jain-university-online|mba|ai-for-marketing': 'AI for Marketing',
+  'jain-university-online|mba|ai-for-human-resources': 'AI for Human Resources',
+  'jain-university-online|mba|ai-for-international-finance': 'AI for International Finance',
 }
 
 /**
@@ -319,7 +336,7 @@ export function resolveSpec(
   // and audits/empty-spec-names-2026-08-17.csv. Any slug with no manifest row
   // returns null so the page 404s. The manifest is the allowlist.
   if (loadManifest().some(r => r.university_slug === uniId && r.program === prog && r.spec_slug === specSlug)) {
-    return { slug: specSlug, name: titleCaseSlug(specSlug) }
+    return { slug: specSlug, name: WITHDRAWN_SPEC_NAMES[`${uniId}|${prog}|${specSlug}`] ?? titleCaseSlug(specSlug) }
   }
   return null
 }

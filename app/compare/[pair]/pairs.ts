@@ -230,7 +230,7 @@ export const PAIRS: Record<string, PairConfig> = {
     faqs: [
       { q: 'Is JAIN or LPU better for online MBA?', a: 'Both have NAAC A++. JAIN has 19 specialisations including AI-focused dual specs. LPU has 12 specs with a dual-specialisation format. JAIN is Bangalore-based; LPU is Punjab-based. Fee range overlaps significantly.' },
       { q: 'What is the fee difference?', a: 'JAIN costs Rs 1,60,000 to Rs 1,96,000. LPU costs Rs 1,61,600 to Rs 2,00,000. Nearly identical fee range. Choose on programme features, not price.' },
-      { q: 'Does JAIN offer AI-specific MBA specialisations?', a: 'Yes. JAIN offers AI for Finance, AI for Marketing, AI for HR, and AI for International Finance. LPU offers Data Science and Business Analytics but not AI-specific dual-domain specs.' },
+      { q: 'Does JAIN offer AI-specific MBA specialisations?', a: 'Yes. JAIN offers AI for Finance, and Data Science and Artificial Intelligence. LPU offers Data Science and Business Analytics but not AI-specific dual-domain specs.' },
       { q: 'Which is better for Bangalore-based careers?', a: 'JAIN carries stronger recognition in Bangalore and Karnataka. LPU has broader pan-India recognition. For South India tech and startup roles, JAIN. For North India corporate roles, LPU.' },
     ],
     verdictA: ['You want AI-specific MBA specialisations (AI for Finance, Marketing, HR)', 'Your career target is Bangalore or South India', 'You want 19 specialisations including dual-domain AI specs'],

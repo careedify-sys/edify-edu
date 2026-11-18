@@ -336,7 +336,7 @@ export const COUPON_PAGES: CouponPageData[] = [
       { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code JAIN2026-5K during enrollment call' },
       { type: 'Merit scholarship', eligibility: '60%+ graduation', saving: '10-20%', howToApply: 'Automatic during admission' },
     ],
-    stackExample: 'JAIN offers NAAC A++ at Rs 1,96,000 with 19 specializations and ACCA integration. The coupon discount adds up to Rs 5,000 on Tue/Sat on top of any merit scholarship.',
+    stackExample: 'JAIN offers NAAC A++ at Rs 1,96,000 with 16 specializations and ACCA integration. The coupon discount adds up to Rs 5,000 on Tue/Sat on top of any merit scholarship.',
     emiCompatible: 'Yes. JAIN offers EMI options on the reduced fee.',
     exclusions: ['Does not reduce ACCA track premium', 'Cannot combine with other third-party offers'],
     faqs: [

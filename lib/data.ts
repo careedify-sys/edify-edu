@@ -431,7 +431,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
           // B3 (2026-11-18): AI for Marketing, AI for Human Resources and AI for
           // International Finance removed. JAIN lists 16 electives and those three
           // pages on onlinejain.com return 404. Their spec URLs still resolve from
-          // the manifest; noindex or redirect is Q25/Q32 territory, not done here.
+          // the manifest (name kept by WITHDRAWN_SPEC_NAMES in lib/data/programs.ts);
+          // noindex or redirect waits on Q35, not done here.
           { slug: 'digital-marketing-and-e-commerce', name: 'Digital Marketing and E-Commerce' },
           { slug: 'finance-marketing', name: 'Finance and Marketing' },
           { slug: 'marketing-and-business-analytics', name: 'Marketing and Business Analytics' },

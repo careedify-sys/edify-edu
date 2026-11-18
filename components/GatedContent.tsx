@@ -15,8 +15,9 @@ interface GatedContentProps {
 
 // A9 (2026-11-18): the 25% merit waiver and ₹8,000 referral lines had no
 // source for any university. Callers pass hints built from their own data.
+// B3: the default no longer asserts an EMI scheme no university record backs.
 const DEFAULT_HINTS = [
-  '🏦 No-cost EMI: 12 to 24 month plans via partner banks',
+  '📋 Current fee breakdown and payment options, confirmed with the university',
 ]
 
 function formatFeeLocal(n?: number) {
@@ -82,7 +83,7 @@ export default function GatedContent({
       {(feeMin || feeMax) && (
         <div style={{ padding: '12px 20px', display: 'flex', gap: 20, flexWrap: 'wrap', borderBottom: '1px solid #F1F5F9', background: 'var(--surface-2)', }}>
           {[
-            { icon: '💰', label: 'Total Fee', value: feeMin && feeMax ? `${formatFeeLocal(feeMin)} – ${formatFeeLocal(feeMax)}` : formatFeeLocal(feeMin || feeMax) },
+            { icon: '💰', label: 'Total Fee', value: feeMin && feeMax && formatFeeLocal(feeMin) !== formatFeeLocal(feeMax) ? `${formatFeeLocal(feeMin)} – ${formatFeeLocal(feeMax)}` : formatFeeLocal(feeMin || feeMax) },
             emiFrom ? { icon: '🏦', label: 'EMI from', value: `₹${emiFrom.toLocaleString()}/mo` } : null,
             { icon: '🔒', label: 'Details', value: 'See below' },
           ].filter(Boolean).map((s: any) => (
