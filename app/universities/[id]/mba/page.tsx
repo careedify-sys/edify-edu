@@ -26,6 +26,7 @@ import { formatUniversityDisplayName } from '@/lib/format'
 import { naacSuffix, naacSegment, naacAccredited, naacPhrase } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription, onlinePrefix } from '@/lib/seo/mode-unverified'
 import { getProgramLinks } from '@/lib/internal-links'
+import { debApprovedSentence, debBasis } from '@/lib/seo/deb-basis'
 
 // The review blog owns "{uni} online mba" and "{uni} online mba fees"
 // (Semrush tracking, 27 Oct 2026: blogs 4-10, hubs 33-54; Aug GSC: the blog
@@ -136,8 +137,8 @@ export async function generateMetadata(
       )
     : clampTitle(`${titleName} ${onlinePrefix(u.id)}MBA ${year}: ${naacPhrase(u.naac, "UGC-DEB Entitled")} [Review] | edifyedu.in`))
   const baseDescription = feeTok
-    ? clampDescription(`${titleName} ${onlinePrefix(u.id)}MBA ${year}: ${feeTok} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved. See honest review, syllabus and placement data.`)
-    : clampDescription(`${titleName} ${onlinePrefix(u.id)}MBA ${year}: ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. Fee structure verified by our counsellor. UGC-DEB approved.`)
+    ? clampDescription(`${titleName} ${onlinePrefix(u.id)}MBA ${year}: ${feeTok} fees, ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. ${debApprovedSentence(u.id)} See honest review, syllabus and placement data.`)
+    : clampDescription(`${titleName} ${onlinePrefix(u.id)}MBA ${year}: ${specCount}+ specialisations${naacSegment(u.naac)}${nirfStr}. Fee structure verified by our counsellor. ${debApprovedSentence(u.id)}`)
 
   const keywords = [
     `${u.name} online MBA fees`,
@@ -207,7 +208,7 @@ function MBAProgramSchema({
     '@context': 'https://schema.org',
     '@type': 'EducationalOccupationalProgram',
     name: `${brand} ${onlinePrefix(u.id)}MBA`,
-    description: `UGC-DEB approved ${onlinePrefix(u.id)}MBA from ${brand}.${naacAccredited(u.naac)} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'MBA')}.`,
+    description: `${debBasis(u.id) ? '' : 'UGC-DEB approved '}${onlinePrefix(u.id)}MBA from ${brand}.${debBasis(u.id) ? ` ${debBasis(u.id)!.metaSentence}` : ''}${naacAccredited(u.naac)} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, 'MBA')}.`,
     url: pageUrl,
     provider: {
       '@type': 'CollegeOrUniversity',

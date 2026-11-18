@@ -4,6 +4,7 @@ import { nirfForProgramme } from '@/lib/data-slim'
 import { getTitleName } from '@/lib/seo-title'
 import { naacSuffix, naacSegment, naacAccredited, naacPhrase } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
+import { debApprovedSentence } from '@/lib/seo/deb-basis'
 
 // ─── Canonical SEO name per university ID (from keyword research doc) ───
 const SEO_NAME: Record<string, string> = {
@@ -208,7 +209,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   const title = `${titleName}${shouldIndexUniversity(u.id) ? ' Online' : ''} (${progStr}, Fees 2026) | EdifyEdu`
 
   // ── Description: keyword-rich, direct ────────────────────────
-  const baseDescription = `Direct Admission 2026 at ${seoName} Online. Get honest faculty reviews, actual package/placement stats${hasFee ? `, and total fees (${feeStr})` : ''}. ${nirf}${nirf.startsWith('NIRF') ? naacSegment(u.naac) : ''}. UGC DEB approved. Compare syllabus and apply today!`
+  const baseDescription = `Direct Admission 2026 at ${seoName} Online. Get honest faculty reviews, actual package/placement stats${hasFee ? `, and total fees (${feeStr})` : ''}. ${nirf}${nirf.startsWith('NIRF') ? naacSegment(u.naac) : ''}. ${debApprovedSentence(u.id, 'UGC DEB approved.')} Compare syllabus and apply today!`
 
   const sn = seoName.toLowerCase()
 

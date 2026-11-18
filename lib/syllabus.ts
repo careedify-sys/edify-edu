@@ -167,3 +167,36 @@ export function getSyllabus(
 export function hasSyllabusData(uniId: string, program: string, spec?: string): boolean {
   return getSyllabus(uniId, program, spec) !== null
 }
+
+/**
+ * A subject string that looks cut off by the importer: it ends on a joining
+ * word or punctuation ("Management Information and", "Business Ethics,"), or
+ * still carries UTF-8 mojibake ("â€"). Detection only; text is never repaired.
+ */
+export function looksTruncatedSubject(s: string): boolean {
+  const t = s.trim()
+  if (!t) return true
+  if (/â€|Ã|Â/.test(t)) return true
+  return /(\s(of|and|or|in|for|the|&)|[,/\-–(])$/i.test(t)
+}
+
+/**
+ * getManifestCoreSyllabus(uniId, program)
+ *
+ * Hub syllabus for /universities/{id}/{program}: ONLY the `_core` entry of
+ * lib/data/syllabus-manifest.json for this university and programme. No
+ * first-spec, MASTER_SYLLABUS or UNIVERSITY_SYLLABUS fallback: those carry
+ * importer-truncated cells (BITS rendered "Management Principles & Practices,
+ * Organizational"), and PAGE-STANDARDS M7 says "or no syllabus". Returns null
+ * when there is no `_core`, or when any `_core` subject looks truncated
+ * (the whole syllabus is withheld, not patched). A9 QA F1, 2026-11-18.
+ */
+export function getManifestCoreSyllabus(uniId: string, program: string): SyllabusData | null {
+  const manifest = syllabusManifest as Record<string, Record<string, any>>
+  const core = manifest[uniId]?.[program.toLowerCase()]?._core
+  const semesters: Array<{ sem: number; subjects: string[] }> | undefined = core?.semesters
+  if (!semesters?.length) return null
+  if (semesters.some(s => !s.subjects?.length || s.subjects.some(looksTruncatedSubject))) return null
+  const data = semestersToData(semesters)
+  return Object.values(data).some(Boolean) ? data : null
+}

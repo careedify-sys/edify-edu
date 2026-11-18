@@ -29,7 +29,8 @@ import { stripLinks } from '@/lib/link-markup'
 import FirstHandUniversitySections from '@/components/FirstHandUniversitySections'
 import { FirstHandText } from '@/components/FirstHandShared'
 import OwnerMbaSentence from '@/components/OwnerMbaSentence'
-import { isExamCentre, EXAM_CENTRE_LINE } from '@/lib/exam-mode'
+import { isExamCentre, EXAM_CENTRE_LINE, isExamModeConfirmed } from '@/lib/exam-mode'
+import { debBasis } from '@/lib/seo/deb-basis'
 
 const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')
 
@@ -93,6 +94,18 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
   const otherUnis = getPeerUniversitiesSlim(displayProgram, u.id, 4)
   const compareUrl = `/compare?a=${u.id}${compareList.map(i=>`&b=${i}`).join('')}`
   const cleanName = getShortUniversityName(u.name)
+  // Not on the UGC-DEB register (lib/seo/deb-basis.ts): every "UGC DEB
+  // approved" line below prints the recorded basis instead. A8, 2026-11-18.
+  const basis = debBasis(u.id)
+  // A9 (2026-11-18): the scholarship card said "Save up to ₹20,000 - ₹40,000"
+  // on every university. Only u.mbaScholarships (published, with a source)
+  // may name a figure; otherwise the card asks rather than claims.
+  const scholarshipMaxPct = u.mbaScholarships?.items.length
+    ? Math.max(...u.mbaScholarships.items.map(i => i.discountPct))
+    : 0
+  const scholarshipLine = scholarshipMaxPct
+    ? `${cleanName} publishes MBA scholarships of up to ${scholarshipMaxPct}% for listed categories.`
+    : `Ask whether ${cleanName} publishes a scholarship you qualify for.`
 
   // Match this university to its tiered edifyedu.in enrollment bonus.
   // Falls back to "standard" tier amounts when the uni is on /coupons but
@@ -114,7 +127,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
   const templateFaqs = [
     {
       q:`Is ${u.name} a good university for online degrees?`,
-      a:`${u.name} is ${u.nirf > 0 && u.nirf < 200 ? `ranked NIRF #${u.nirf} in the University category` : 'a UGC DEB approved university'}${u.nirfMgt && u.nirfMgt < 200 ?` and NIRF #${u.nirfMgt} in Management`:''}. ${u.naac ? `It holds NAAC ${u.naac} accreditation and is` : 'It is'} UGC DEB approved. For private sector careers and corporate hiring it is a strong choice. Always verify specific job notifications for government roles.`
+      a:`${u.name} is ${u.nirf > 0 && u.nirf < 200 ? `ranked NIRF #${u.nirf} in the University category` : basis ? 'a university' : 'a UGC DEB approved university'}${u.nirfMgt && u.nirfMgt < 200 ?` and NIRF #${u.nirfMgt} in Management`:''}. ${basis ? `${u.naac ? `It holds NAAC ${u.naac} accreditation. ` : ''}${basis.sentence}` : `${u.naac ? `It holds NAAC ${u.naac} accreditation and is` : 'It is'} UGC DEB approved.`} For private sector careers and corporate hiring it is a strong choice. Always verify specific job notifications for government roles.`
     },
     {
       q:`What is the total fee for ${u.name} ${displayProgram}?`,
@@ -126,7 +139,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
     },
     {
       q:`Is ${u.name} ${displayProgram} valid and UGC approved?`,
-      a:`Yes. ${u.name} is UGC DEB approved${u.naac ? ` and NAAC ${u.naac} accredited` : ''}. The ${displayProgram} degree is fully valid for private sector employment, higher education, and banking sector jobs. ${u.govtRecognised ? 'It is also recognised for government recruitment as per UGC 2020 guidelines.' : 'Check specific government job notifications. Some central PSU roles may have restrictions on online degrees.'}`
+      a: basis ? `${basis.sentence}${u.naac ? ` It is NAAC ${u.naac} accredited.` : ''} Confirm in writing that the ${displayProgram} meets the recognition your employer or recruiter asks for before you enrol.` : `Yes. ${u.name} is UGC DEB approved${u.naac ? ` and NAAC ${u.naac} accredited` : ''}. The ${displayProgram} degree is fully valid for private sector employment, higher education, and banking sector jobs. ${u.govtRecognised ? 'It is also recognised for government recruitment as per UGC 2020 guidelines.' : 'Check specific government job notifications. Some central PSU roles may have restrictions on online degrees.'}`
     },
     {
       q:`What is the eligibility for ${u.name} ${displayProgram}?`,
@@ -138,7 +151,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
     },
     {
       q:`Is ${u.name} ${displayProgram} valid for government jobs?`,
-      a:`${u.name} is UGC DEB approved, and the Ministry of Education confirmed parity of online and regular degrees in 2020. ${u.psuEligible ? `${u.name} degrees are accepted for PSU and government applications. Always verify the specific recruitment notification.` : 'Most central government and PSU jobs may not accept online degrees, check the specific notification before applying.'}`
+      a: basis ? `${basis.sentence} Check the specific recruitment notification before you apply.` : `${u.name} is UGC DEB approved, and the Ministry of Education confirmed parity of online and regular degrees in 2020. ${u.psuEligible ? `${u.name} degrees are accepted for PSU and government applications. Always verify the specific recruitment notification.` : 'Most central government and PSU jobs may not accept online degrees, check the specific notification before applying.'}`
     },
     {
       q:`What specialisations are available in ${u.name} ${displayProgram}?`,
@@ -195,7 +208,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
         '@context':'https://schema.org','@type':'Course',
         name:`${u.name} ${displayProgram}`,
-        description:`UGC DEB approved ${displayProgram} from ${u.name}.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}${u.nirf > 0 && u.nirf < 200 ? ` NIRF #${u.nirf} University.` : ''}${programSchema[displayProgram]?.feeCompact ? ` Total fee ${programSchema[displayProgram]!.feeCompact}.` : ''}`,
+        description:`${basis ? `${displayProgram} from ${u.name}. ${basis.metaSentence}` : `UGC DEB approved ${displayProgram} from ${u.name}.`}${u.naac ? ` NAAC ${u.naac} accredited.` : ''}${u.nirf > 0 && u.nirf < 200 ? ` NIRF #${u.nirf} University.` : ''}${programSchema[displayProgram]?.feeCompact ? ` Total fee ${programSchema[displayProgram]!.feeCompact}.` : ''}`,
         url:`https://edifyedu.in/universities/${u.id}`,
         provider:{'@type':'EducationalOrganization',name:u.name},
         educationalLevel:['MBA','MCA','M.Com','MA','MSc'].includes(displayProgram)?'Postgraduate':'Undergraduate',
@@ -334,7 +347,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     ✓ Approvals &amp; Rankings
                   </div>
                   <ApprovalBadges
-                    approvals={u.approvals || []}
+                    approvals={u.approvals || []} universityId={u.id}
                     naac={u.naac}
                     nirf={u.nirf}
                     highlight={u.highlight}
@@ -342,8 +355,8 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                   />
                   <div style={{marginTop:16,paddingTop:14,borderTop:'1px solid rgba(255,255,255,0.08)'}}>
                     <div style={{fontSize:11,color:'#94A3B8',marginBottom:4}}>Govt Job Valid?</div>
-                    <div style={{fontSize:13,fontWeight:700,color: u.govtRecognised ? '#4ADE80' : '#FBBF24'}}>
-                      {u.govtRecognised ? '✓ Yes: UGC DEB Approved' : '⚠️ Check specific notification'}
+                    <div style={{fontSize:13,fontWeight:700,color: u.govtRecognised && !basis ? '#4ADE80' : '#FBBF24'}}>
+                      {basis ? '⚠️ Not on the UGC-DEB register: check the specific notification' : u.govtRecognised ? '✓ Yes: UGC DEB Approved' : '⚠️ Check specific notification'}
                     </div>
                   </div>
                 </div>
@@ -356,9 +369,9 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                       <Award style={{color: '#93c5fd', width: 20, height: 20}} />
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-bold text-[15px] mb-1 group-hover:text-white transition-colors" style={{color: '#dbeafe'}}>Scholarship Alert</h4>
+                      <h4 className="font-bold text-[15px] mb-1 group-hover:text-white transition-colors" style={{color: '#dbeafe'}}>Scholarships</h4>
                       <p className="text-[13px] font-medium leading-relaxed mb-3 pr-2" style={{color: '#bfdbfe'}}>
-                        Save up to <strong style={{color: '#93c5fd'}}>₹20,000 - ₹40,000</strong> on your total fees.
+                        {scholarshipLine}
                       </p>
                       <span className="text-[12px] font-bold flex items-center gap-1 uppercase tracking-wider" style={{color: '#fbbf24'}}>
                         Check Eligibility <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform"/>
@@ -384,9 +397,9 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                   <Award style={{color: '#93c5fd', width: 22, height: 22}} />
                 </div>
                 <div className="flex-1">
-                  <h4 className="font-bold text-[15px] mb-0.5" style={{color: '#dbeafe'}}>Scholarship Alert</h4>
+                  <h4 className="font-bold text-[15px] mb-0.5" style={{color: '#dbeafe'}}>Scholarships</h4>
                   <p className="text-[12px] font-medium leading-relaxed mb-1 pr-2" style={{color: '#bfdbfe'}}>
-                    Save up to <strong style={{color: '#93c5fd'}}>₹20,000 - ₹40,000</strong>
+                    {scholarshipLine}
                   </p>
                   <span className="text-[11px] font-black flex items-center gap-1 uppercase tracking-wider" style={{color: '#fbbf24'}}>
                     Check Eligibility <ChevronRight size={14}/>
@@ -611,7 +624,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     <h2 className="font-display text-xl font-bold text-white mb-2">Admissions Open: January 2027 Batch</h2>
                     <ul className="flex flex-col gap-1.5">
                       <li className="text-sm text-slate-300">📅 Last date to apply: <strong className="text-white">March 2027</strong></li>
-                      <li className="text-sm text-slate-300">💻 Mode: <strong className="text-white">100% Online: apply from anywhere in India</strong></li>
+                      <li className="text-sm text-slate-300">💻 Mode: <strong className="text-white">Online classes{isExamModeConfirmed(u) ? (isExamCentre(u) ? '; exams in person at designated centres' : `; ${u.examMode} exams`) : ''}</strong></li>
                       <li className="text-sm text-slate-300">✅ Eligibility: <strong className="text-white">{u.eligibility}</strong></li>
                     </ul>
                   </div>
@@ -714,9 +727,11 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                   feeMax={u.feeMax}
                   emiFrom={u.emiFrom}
                   hints={[
-                    `🎓 Merit scholarship: up to 25% fee waiver for eligible profiles at ${u.abbr}`,
+                    // A9: the 25% merit waiver and the referral/early-bird line
+                    // were template text with no source. Only a scholarship the
+                    // university publishes (u.mbaScholarships) is named here.
+                    ...(scholarshipMaxPct ? [`🎓 Published MBA scholarships: up to ${scholarshipMaxPct}% for listed categories at ${u.abbr}`] : []),
                     u.emiFrom > 0 ? `🏦 No-cost EMI, 12 to 24 months, from ₹${u.emiFrom.toLocaleString()}/month` : '🏦 No-cost EMI, 12 to 24 month plans via partner banks',
-                    `💼 Alumni referral & early-bird discounts available this admission cycle`,
                   ]}
                 />
               )}

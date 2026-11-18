@@ -18,7 +18,11 @@ export default function SectionPlacements({ pd, cleanName, program }: Props) {
       </div>
 
       <p className="text-sm text-slate-500 mb-4">
-        {cleanName} provides placement assistance through career workshops, resume building sessions, mock interviews, and access to a job portal with active listings.
+        {/* A9 (2026-11-18): this said every university "provides placement
+            assistance through career workshops ... job portal". BITS WILP says
+            it offers no campus placements. No record carries a sourced
+            placement-service field, so the line asks instead of claiming. */}
+        Placement support for online learners differs by university. Ask {cleanName} in writing which career services it offers on the online {program}.
         {pd.avgSalary ? ` Alumni report salaries in the range of ${pd.avgSalary}.` : ''}
       </p>
 

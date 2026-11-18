@@ -12,6 +12,7 @@ import { pageKeywords } from '@/lib/page-keywords'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
 import { isSpecNoindexed } from '@/lib/seo/spec-noindex'
+import { debApprovedSentence } from '@/lib/seo/deb-basis'
 
 // ── Static Params — sourced from Excel manifest ───────────────────────────────
 export async function generateStaticParams() {
@@ -57,7 +58,7 @@ export async function generateMetadata(
       `${shortName} MBA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
       shortSpec,
     )
-  const baseDescription = clampDescription(`Online MBA in ${spec} from ${titleName}: ${feeExact ? `${feeExact} fees` : 'fees on request'}, eligibility, syllabus and admission ${year}.${naacSuffix(u.naac)}${nirfStr}. UGC-DEB approved. Compare before you enrol.`)
+  const baseDescription = clampDescription(`Online MBA in ${spec} from ${titleName}: ${feeExact ? `${feeExact} fees` : 'fees on request'}, eligibility, syllabus and admission ${year}.${naacSuffix(u.naac)}${nirfStr}. ${debApprovedSentence(u.id)} Compare before you enrol.`)
 
   // Mode-unverified universities: see lib/seo/mode-unverified.ts.
   const description = shouldIndexUniversity(u.id)

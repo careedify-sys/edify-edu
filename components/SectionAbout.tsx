@@ -2,6 +2,8 @@ import type { University, ProgramDetail } from '@/lib/data'
 import { formatSpecList } from '@/lib/data'
 import { formatRank, preferForProgram } from '@/lib/highlight'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
+import { debBasis } from '@/lib/seo/deb-basis'
+import { isExamCentre } from '@/lib/exam-mode'
 
 interface Props {
   u: University
@@ -49,6 +51,9 @@ export default function SectionAbout({ u, program, pd, cleanName, spec, customIn
     ? `${cleanName} Online ${program} in ${spec}: Programme Overview`
     : `${cleanName} Online ${program}: Programme Overview`
 
+  // A8: a university not on the UGC-DEB register states its recorded basis.
+  const basis = debBasis(u.id)
+
   const isPostgrad = ['MBA', 'MCA', 'M.Com', 'MA', 'MSc'].includes(program)
   const isIT       = ['MCA', 'BCA'].includes(program)
   const yearsText  = pd.duration || (isPostgrad ? '2 years' : '3 years')
@@ -60,10 +65,12 @@ export default function SectionAbout({ u, program, pd, cleanName, spec, customIn
         {spec ? (
           <>
             <p>
-              {cleanName} offers an Online {program} with {spec} specialisation, approved by UGC DEB and accredited NAAC {u.naac}. The {yearsText} program is designed for working professionals and fresh graduates who want to build expertise in {spec.toLowerCase()} without stepping away from work.
+              {cleanName} offers an Online {program} with {spec} specialisation, {basis ? 'run under UGC approval as an Institution of Eminence' : 'approved by UGC DEB'} and accredited NAAC {u.naac}. The {yearsText} program is designed for working professionals and fresh graduates who want to build expertise in {spec.toLowerCase()} without stepping away from work.
             </p>
             <p>
-              The degree carries the same institutional weight as an on-campus {program} and is valid for private sector employers, government recruitment portals, and further postgraduate studies. UGC DEB approval means the degree meets Indian regulatory standards for distance and online education.
+              {basis
+                ? basis.sentence
+                : `The degree carries the same institutional weight as an on-campus ${program} and is valid for private sector employers, government recruitment portals, and further postgraduate studies. UGC DEB approval means the degree meets Indian regulatory standards for distance and online education.`}
             </p>
           </>
         ) : (
@@ -72,7 +79,7 @@ export default function SectionAbout({ u, program, pd, cleanName, spec, customIn
               <p>{customIntro}</p>
             ) : (
               <p>
-                {cleanName} runs an Online {program} program recognised by UGC DEB, designed for working professionals and fresh graduates aiming for careers in {isIT ? 'software development, data science, and IT management' : 'business management, finance, and leadership'}. The {yearsText} program is delivered through live and recorded sessions on an online platform, with no mandatory campus visits.
+                {cleanName} runs an Online {program} program {basis ? 'under UGC approval as an Institution of Eminence' : 'recognised by UGC DEB'}, designed for working professionals and fresh graduates aiming for careers in {isIT ? 'software development, data science, and IT management' : 'business management, finance, and leadership'}. The {yearsText} program is delivered through live and recorded sessions on an online platform, {isExamCentre(u) ? 'with end-semester exams taken in person at designated centres' : 'with no mandatory campus visits'}.
               </p>
             )}
             <p>

@@ -1,4 +1,5 @@
 import type { University, ProgramDetail, Program } from '@/lib/data'
+import { debApprovedSentence, isOnDebRegister } from '@/lib/seo/deb-basis'
 import type { Coupon } from '@/lib/coupons'
 import { formatUniversityDisplayName } from '@/lib/format'
 import { getProgramSchemaOffer, getProgramSchemaFeeFragment } from '@/lib/seo/program-schema'
@@ -52,8 +53,8 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
     '@type': 'Course',
     name: spec ? `${brand} Online ${program}: ${spec} Specialisation` : `${brand} Online ${program}`,
     description: spec
-      ? `Online ${program} with ${spec} specialisation from ${brand}.${u.naac ? ` NAAC ${u.naac} accredited,` : ''} UGC DEB approved. Admissions open for ${year}.`
-      : `UGC DEB approved Online ${program} from ${brand}.${u.naac ? ` NAAC ${u.naac} accredited.` : ''} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, program as Program)}.`,
+      ? `Online ${program} with ${spec} specialisation from ${brand}.${u.naac ? ` NAAC ${u.naac} accredited,` : ''} ${debApprovedSentence(u.id, 'UGC DEB approved.')} Admissions open for ${year}.`
+      : `${isOnDebRegister(u.id) ? 'UGC DEB approved ' : ''}Online ${program} from ${brand}.${isOnDebRegister(u.id) ? '' : ` ${debApprovedSentence(u.id)}`}${u.naac ? ` NAAC ${u.naac} accredited.` : ''} ${pd.specs?.length || 0}+ specialisations${getProgramSchemaFeeFragment(u, program as Program)}.`,
     provider: {
       '@type': 'CollegeOrUniversity',
       name: u.name,

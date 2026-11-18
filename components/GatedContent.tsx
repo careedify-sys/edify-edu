@@ -13,10 +13,10 @@ interface GatedContentProps {
   emiFrom?: number
 }
 
+// A9 (2026-11-18): the 25% merit waiver and ₹8,000 referral lines had no
+// source for any university. Callers pass hints built from their own data.
 const DEFAULT_HINTS = [
-  '🎓 Merit scholarship: up to 25% fee waiver for eligible profiles',
   '🏦 No-cost EMI: 12 to 24 month plans via partner banks',
-  '💼 Alumni referral discount: ₹8,000 off on verified referral',
 ]
 
 function formatFeeLocal(n?: number) {
@@ -71,10 +71,10 @@ export default function GatedContent({
           ? <Unlock size={13} color="var(--sage)" />
           : <Lock size={13} color="var(--amber-text)" />}
         <span style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: unlocked ? 'var(--sage)' : 'var(--amber-text)' }}>
-          {unlocked ? 'Scholarship Details Unlocked' : 'Scholarships & Fee Discounts Available'}
+          {unlocked ? 'Fee Details Unlocked' : 'Fee, EMI and Scholarship Details'}
         </span>
         <span style={{ marginLeft: 'auto', fontSize: 10, padding: '2px 8px', borderRadius: 'var(--r-lg)', fontWeight: 700, background: unlocked ? 'rgba(31,107,82,0.1)' : 'rgba(200,129,26,0.1)', color: unlocked ? 'var(--sage)' : 'var(--amber-text)' }}>
-          {hints.length} offers
+          {hints.length} {hints.length === 1 ? 'item' : 'items'}
         </span>
       </div>
 
@@ -84,7 +84,7 @@ export default function GatedContent({
           {[
             { icon: '💰', label: 'Total Fee', value: feeMin && feeMax ? `${formatFeeLocal(feeMin)} – ${formatFeeLocal(feeMax)}` : formatFeeLocal(feeMin || feeMax) },
             emiFrom ? { icon: '🏦', label: 'EMI from', value: `₹${emiFrom.toLocaleString()}/mo` } : null,
-            { icon: '🔒', label: 'Discounts', value: 'See below' },
+            { icon: '🔒', label: 'Details', value: 'See below' },
           ].filter(Boolean).map((s: any) => (
             <div key={s.label} style={{ display: 'flex', alignItems: 'center', gap: 7 }}>
               <span className="text-base">{s.icon}</span>
