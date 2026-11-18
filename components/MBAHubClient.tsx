@@ -32,7 +32,7 @@ const TOP_10_PICKS = [
   { id: 'lovely-professional-university-online', bestFor: 'NIRF #44 Management. NAAC A++. Tech-driven LMS at affordable price. Strong North India alumni network.' },
   { id: 'amity-university-online', bestFor: 'NIRF #49 Management. WASC (USA) + QAA (UK) + WES recognized. Best for international career mobility.' },
   { id: 'manipal-academy-higher-education-online', bestFor: 'NIRF #4 University. NAAC A++. Strongest Manipal brand prestige. Ideal for South India and healthcare careers.' },
-  { id: 'jain-university-online', bestFor: 'NIRF #73 Management. NAAC A++. 19 specialisations with ACCA integration. Strong Bangalore tech ecosystem.' },
+  { id: 'jain-university-online', bestFor: 'NIRF #73 Management. NAAC A++. 16 specialisations with ACCA integration. Strong Bangalore tech ecosystem.' },
   { id: 'ignou-online', bestFor: 'Central government university. NAAC A++. Lowest fee at Rs 66,000. Strongest government job eligibility.' },
 ]
 

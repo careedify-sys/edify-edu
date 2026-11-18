@@ -185,7 +185,9 @@ export default function UniversityCard({ u, highlightProgram, specSlug, programF
               <div className="text-xs mb-0.5 text-[var(--ink-3)]">{programFee !== undefined && highlightProgram ? `${highlightProgram} total fees` : 'Total fees'}</div>
               <div className="uc-fee font-bold text-base">
                 {programFee === undefined
-                  ? <>{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</>
+                  ? (formatFee(u.feeMin) === formatFee(u.feeMax)
+                    ? <>{formatFee(u.feeMin)}</>
+                    : <>{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</>)
                   : programFee ?? 'Contact our counsellor for current fee details'}
               </div>
             </div>

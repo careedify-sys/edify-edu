@@ -125,8 +125,12 @@
 - **Blog fee gate:** removing the EMI wording uncovered two figures that the scanner had been reading as
   non-fee only because "EMI" sat next to them. The Maharashtra Symbiosis sentence now names SSODL, so
   ₹3,15,000 to ₹3,70,000 is checked against lib/data.ts and passes as MATCH. In nmims-vs-symbiosis, the
-  derived ₹1.19L gap (3.15L minus 1.96L) is reworded without a number; 0703326 left 8 more instances,
-  which the QA fixes below removed. The baseline only went down, by the gate's own auto-update.
+  derived ₹1.19L gap (3.15L minus 1.96L) is reworded without a number. 0703326 left more instances in
+  that post: 6dc820d removed the 8 the first QA report listed, and the QA rerun fix removed the last, the
+  "Fees Breakdown" H2. The same
+  derived gap still appears in nmims-online-mba-review and in a Symbiosis peer line in
+  symbiosis-university-online-mba.json; those are advisory and were not changed. The baseline only went
+  down, by the gate's own auto-update.
 
 ## 2026-11-18 · B3 batch 1 addendum: QA fixes on 0703326 (branch fix/b3-batch-1)
 
@@ -139,8 +143,9 @@
     getAllSpecsForProgram skips them, so hub tiles and related-spec links show only the 16 data.ts specs.
     The pages are not noindexed or redirected; that waits on Q35.
 - **F2 sweep (claims the six sheets mark false, left in other files by 0703326):**
-  - DSU NAAC A++ / "highest grade" is A+ in 8 DSU spec JSONs and 5 blog posts. Group lines like "All are
-    NAAC A or A++" now include A+. Galgotias "NAAC B++" in DSU spec JSONs is A+, per data.ts.
+  - DSU NAAC A++ / "highest grade" is A+ in 8 DSU spec JSONs and 5 blog posts (6dc820d), plus 3 more posts
+    and 1 BITS spec JSON in the rerun fix (see below). Group lines like "All are NAAC A or A++" now
+    include A+. Galgotias "NAAC B++" in DSU spec JSONs is A+, per data.ts.
   - DSU invented EMI (Rs 5,000-6,000) and Rs 32,500/sem are gone from spec JSONs and the review. The
     review hero shows the published Semester 1 Rs 32,875, and the count is the sheet's 8 electives. The
     "thin syllabus" claims were removed. A second "Per Semester Rs 30,000" hit QA listed is in the SMU
@@ -150,17 +155,18 @@
     cells for Symbiosis and BITS read "Not published".
   - DPU: derived EMI ~7,890, per-semester 47,350 in the fee guides, the 11-14% interest row, and the
     ₹2,500/month EMI in every DPU spec JSON are removed. DPU offers No Cost EMI with no monthly figure.
-  - JAIN "20-plus", "20+", "18 (highest in India)", "19" and "17+" counts are 16. The removed AI tracks
-    are gone from pairs.ts and 6 peer JSONs.
-  - The BITS review FAQ no longer sums semesters into ₹2,92,400; it gives the published per-semester
-    lines.
+  - JAIN "20-plus", "20+", "18 (highest in India)", "17+" and the coupon "19" counts are 16, and the
+    removed AI tracks are gone from 6 peer JSONs. In 6dc820d only the third jain-vs-lpu FAQ in pairs.ts
+    was fixed; the other pairs.ts lines and the /programs/mba "19" were fixed in the rerun fix (below).
+  - The BITS review FAQ no longer sums semesters into ₹2,92,400. The 6dc820d wording added the one-time
+    fees with "plus" and double counted them; the rerun fix gives only the published semester lines.
   - Galgotias finance JSON: WES removed.
 - **F3:** the profile and gated fee card printed "EMI ... partner banks" text when emiFrom is 0. They now
   print a counsellor line with no EMI figure, so the card is never empty and no EMI is implied.
 - **Advisory:** the gated Total Fee prints one figure when min equals max (was "₹80K – ₹80K").
-- **Left in place (advisory, not on any sheet):** ₹47,350 in the dy-patil review and programme guides,
-  BITS review sums outside the FAQ, DPU "effective fee ₹1,79,400", and derived rupee gaps in DSU spec
-  JSONs. A fee-comparison interest row names an ambiguous "DY Patil University"; that post 308-redirects.
+- **Left in place (advisory, not on any sheet):** BITS review sums outside the FAQ, DPU "effective fee
+  ₹1,79,400", and derived rupee gaps in DSU spec JSONs. A fee-comparison interest row names an ambiguous
+  "DY Patil University"; that post 308-redirects. (₹47,350 was fixed in the rerun fix below.)
 - **Blog fee gate (QA round):** two posts went up by one loose figure. Both were fixed by correcting
   copy, not by touching the baseline or allowlist:
   - mba-hr-management: the tier line now reads "NAAC A or above". ARKA JAIN is NAAC A, so "A+ or A++"
@@ -168,6 +174,43 @@
   - online-mba-entrepreneurship: removed the unsourced "₹1,65,000 to ₹1,96,000" mid-range, because no
     listed university charges ₹1,65,000. It passed before only because a nearby "per semester" hid it.
 - **Frozen:** jain-online-mba-review metaDescription still says "19 electives" (protected to 5 Dec).
+
+## 2026-11-18 · B3 batch 1 addendum 2: QA rerun fixes on 6dc820d (branch fix/b3-batch-1)
+
+- **Source:** audits/qa/2026-11-18-b3-batch-1-premerge-rerun.md (FAIL on R1, R2, R3 and the BITS FAQ).
+- **R1 DSU A+:**
+  - Why: DSU is A+ in lib/data.ts and on the sheet. Four rendered places still said A++, and my first
+    sweep's needles did not catch table cells.
+  - What: A++ is now A+ in mba-fees-india-complete-guide (only "A++" changed, so the fee sentence stays
+    verbatim), and in the DSU rows of the galgotias and shoolini review tables. In the BITS
+    digital-transformation spec JSON, "DSU Digital Marketing MBA ... (NAAC A++)" named a track DSU does
+    not offer. It now names a real elective from the sheet (Marketing Management) with A+ and drops the
+    derived "less than half the cost".
+- **R2 JAIN:**
+  - Why: the jain-vs-lpu and amity-vs-jain compare pages and /programs/mba still said 19 and named AI for
+    Marketing and HR, which JAIN no longer offers.
+  - What: pairs.ts and MBAHubClient say 16 and name only AI for Finance and Data Science and Artificial
+    Intelligence. "Both offer 19" was true for neither side as written; the line now states JAIN's 16 and
+    keeps Amity's Insurance and Hospitality tracks, which are in lib/data.ts. It no longer gives an Amity
+    count, because none was verified in this batch.
+- **BITS FAQ:**
+  - Why: Semester 1 (₹93,100) already contains the one-time fees, so adding them with "plus"
+    contradicted the ₹3,12,400 total.
+  - What: the FAQ now lists only Semester 1 ₹93,100 and Semesters 2 to 4 ₹73,100 each. The same post's
+    quick-answer line said "₹73,100 per semester across four semesters, plus" the one-time fees. That
+    adds up, but it contradicts the published Semester 1 figure, so it now gives the same semester lines.
+- **R3:** the nmims-vs-symbiosis H2 now reads "What Does the Higher Symbiosis Fee Buy You?" The post is
+  not protected, and no title, H1 or meta changed.
+- **Advisories:**
+  - The profile no-EMI line printed internal abbreviations (BPWIL, DDPVP, GUO). It now omits the name.
+  - The /universities listing card (UniversityCard) prints one figure when min equals max.
+  - DPU ₹47,350 was an average of the published semesters (1,89,400 / 4). The 4 spec-roundup tables now
+    show "₹44,400 to ₹50,000". In the dy-patil review, the table shows 50,000 / 50,000 / 45,000 / 44,400
+    and the admission step shows Semester 1 at ₹50,000, all as published.
+  - Not changed: lib/data/syllabus-manifest.json still holds a DPU "Semester ₹47,350; EMI ~₹7,890" string
+    in 15 records. It is not rendered, and the file is generated.
+- online-mba-supply-chain-management updatedAt was bumped to 2026-11-18. check-blog-fees is unchanged at
+  2024.
 
 ## 2026-11-18 · D4 addendum: QA fixes on ccf74ce (branch only)
 

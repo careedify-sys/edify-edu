@@ -734,7 +734,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     // B3: with emiFrom 0 the university publishes no EMI figure,
                     // so no EMI line is printed; a neutral line keeps the card
                     // from rendering empty.
-                    u.emiFrom > 0 ? `🏦 No-cost EMI, 12 to 24 months, from ₹${u.emiFrom.toLocaleString()}/month` : `📋 Current fee breakdown and payment options for ${u.abbr}, confirmed with the university`,
+                    u.emiFrom > 0 ? `🏦 No-cost EMI, 12 to 24 months, from ₹${u.emiFrom.toLocaleString()}/month` : '📋 Current fee breakdown and payment options, confirmed with the university',
                   ]}
                 />
               )}
