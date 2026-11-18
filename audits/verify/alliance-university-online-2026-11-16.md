@@ -20,3 +20,14 @@
 - The page source also holds a "Semester fees ₹12,667/-" block, but it sits inside an HTML comment and is not displayed. It is ignored here.
 - The typed blog figure Rs 1,75,000 in `audits/spec-fee-audit-summary-2026-11-14.md` is also off: the published figure is Rs 1,74,000.
 - 5 of 6 Alliance MBA spec JSONs carry 1,60,000 or 1,75,000 style figures (51 hits). That sweep belongs to B6.
+
+## Resolution (2026-11-18)
+
+- **Decision (D4 brief, 16 Nov):** use the published full course fee of Rs 1,74,000 (domestic), Rs 43,500 a semester, a Rs 1,000 one-time registration fee as a separate line, and no-cost EMI from Rs 8,700 a month over 20 months.
+- **Applied on branch `fix/d4-fees-niu-alliance` (ccf74ce, follow-up commit after QA):**
+  - `lib/data.ts`: feeMin/feeMax 1,74,000, `programFees.mba` 1,74,000, `feePlans.mba` (full course, 4 semester rows, and an EMI row of 8,700 a month for 20 months; registration as an extra), emiFrom 8,700 (was 6,667), programDetails.MBA.fees "₹1,74,000", feeVerifiedOn 2026-11-16.
+  - Mirrors: `lib/data-slim.ts`, `data/fees-hub-data.json` (EMI "₹8,700/mo").
+  - Alliance hub and 5 spec page-content JSONs swept; peer JSONs that typed Alliance at Rs 1,75,000 now say Rs 1,74,000, with derived gaps reworded without a number.
+  - The MBA hub's EMI card no longer prints Edify's fee / 6, 12, 24 grid (it showed Rs 7,250 for 24 months, below the published minimum), because a published plan table exists.
+  - Blogs: Alliance figures corrected in 3 posts.
+- Logged in `audits/FIX-LOG.md` (2026-11-18, D4).

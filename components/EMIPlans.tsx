@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { formatINR } from '@/lib/format'
 import { CreditCard } from 'lucide-react'
 import { programmeEmiFrom } from '@/lib/seo/display-guards'
+import { getFeePlans } from '@/lib/fee-plans'
 
 interface Props {
   u: University
@@ -15,6 +16,11 @@ export default function EMIPlans({ u, pd, program }: Props) {
   // divide u.feeMin, the MBA fee, so they are MBA-only too.
   if (programmeEmiFrom(u, program) <= 0) return null
 
+  // A published plan table (feePlans) already carries the university's own
+  // instalments and EMI. The fee / 6, 12, 24 grid below is Edify arithmetic and
+  // contradicted it (Alliance 7,250 under a published 8,700 minimum over 20
+  // months; JIIT 7,292 beside a published 5,850), so it is skipped there.
+  const hasPublishedPlan = getFeePlans(u, program).length > 0
   const totalFeeNum = u.feeMin
   const emi6  = Math.round(totalFeeNum / 6)
   const emi12 = Math.round(totalFeeNum / 12)
@@ -36,6 +42,7 @@ export default function EMIPlans({ u, pd, program }: Props) {
         Starting at {formatINR(u.emiFrom)}/month. EMI options available through the university or education lending partners. Confirm interest structure with counsellor.
       </p>
 
+      {!hasPublishedPlan && (<>
       <div className="grid grid-cols-3 gap-3 mb-5">
         {plans.map(p => (
           <div key={p.label} className="rounded-lg border border-slate-200 p-3 text-center bg-slate-50">
@@ -49,6 +56,7 @@ export default function EMIPlans({ u, pd, program }: Props) {
       <p className="text-[11px] text-slate-400 mt-4">
         EMI figures are indicative. Final EMI depends on loan tenure, lender, and credit score. Confirm exact amounts with the counsellor.
       </p>
+      </>)}
       <Link
         href="/tools/emi-calculator"
         className="mt-3 inline-flex text-sm font-semibold no-underline"

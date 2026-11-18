@@ -1,5 +1,46 @@
 # Fix log
 
+## 2026-11-18 · D4 addendum: QA fixes on ccf74ce (branch only)
+
+- **Why:** pre-merge QA (audits/qa/2026-11-18-d4-fees-premerge.md) failed ccf74ce. The peer sweep had
+  covered Sharda, JIIT and Alliance but not NIU, so 25 typed "Rs 97,600" claims for NIU still rendered
+  on 11 peer spec pages. Some gaps derived from old figures survived. Two posts printed a JIIT semester
+  split the university never published. One post gave NIU a 25% early-bird scholarship with no source.
+  The shared EMI card printed fee / 6, 12, 24 next to the published EMI: Alliance Rs 7,250 under a
+  published Rs 8,700 minimum over 20 months, and JIIT the Rs 7,292 this item set out to remove.
+- **What:**
+  - 11 peer JSONs: NIU Rs 97,600 to Rs 1,18,000, applied only where NIU or Noida International is the
+    nearest preceding university name in the sentence (25 replacements). Claims derived from 97,600 were
+    reworded without a number:
+    - "NIU is Rs 7,600 more" and "NIU at Rs 97,600 is Rs 4,400 cheaper" (Kurukshetra is Rs 1,02,000)
+      now read "NIU costs more".
+    - "Rs 38,400 to Rs 43,400 cheaper" now reads "NIU is cheaper".
+    - "sub-Rs 1 lakh option", "under Rs 1 lakh" and "nearly half the fee" were removed.
+    - Integral: NIU now costs more than Integral (Rs 1,10,000), so NIU left the two "lowest cost" budget
+      sentences.
+  - Derived gaps:
+    - DSU AI "At Rs 1,75,000, it costs Rs 55,000 more than DSU" and DSU BA "Rs 55,000 cheaper": number
+      removed.
+    - Vignan HRM and healthcare "Rs 64,500 less": number removed.
+    - Uttaranchal digital marketing and HR "nearly 2x" for JIIT: reworded to "a higher fee". The DPU
+      "nearly 2x" lines are not D4 and stay.
+  - lib/blog.ts:
+    - The JIIT per-semester cell "₹43,500–44,500" in the HR and data-analytics posts now reads
+      "Not published".
+    - "Chandigarh and NIU both offer 25% Early Bird scholarships" now reads "Chandigarh offers an Early
+      Bird scholarship". CU's early bird is sourced in lib/data.ts feeBreakdown; the percentage was
+      dropped as the coordinator directed.
+  - components/EMIPlans.tsx: the fee / 6, 12, 24 grid and its "indicative" line are skipped when the
+    programme has a published feePlans table. The "Starting at" line and the calculator link stay, so
+    the card is never empty. 9 MBA hubs lose the grid: Amity, MUJ, SMU, Symbiosis, NMIMS, MAHE, Bharati
+    Vidyapeeth, Alliance and JIIT.
+  - lib/fee-plans.ts: an EMI row (instalment, no total) shows a blank Total cell instead of "Not
+    published", matching the discount column. This affects the MUJ, Alliance and JIIT EMI rows.
+  - data/fees-hub-data.json: Alliance "₹9K/mo" became "₹8,700/mo" and JIIT "₹6K/mo" became "₹5,850/mo".
+    The file is hand-maintained, with no generator.
+  - The NIU and Alliance verify sheets gained Resolution sections. The profile discount block in
+    UniversityPageClient.tsx was left alone, as another branch changes it.
+
 ## 2026-11-18 · D4: MBA fees for NIU, Alliance, Sharda and JIIT (branch only)
 
 - **Why:** the D4 verify sheets (audits/verify/*-2026-11-16.md) found four MBA records out of line with the
@@ -6002,3 +6043,8 @@ like `onlineuu.in`. The defence stays human, and is written on the field.
 - **F2:** `sameAs` asserts "same entity", so a URL several records share merges distinct universities. MUJ, SMU and MAHE all carry https://www.onlinemanipal.com, and IGNOU's officialUrl is its admission portal on the shared Samarth ERP (ignouiop.samarth.edu.in), not IGNOU's own site. Decision: emit `sameAs` only when the officialUrl host belongs to exactly one record in UNIVERSITIES and is not on the explicit third-party list (`samarth.edu.in`). Computed at module level in `app/universities/[id]/page.tsx`; lib/data.ts is unchanged. 19 profiles now carry sameAs, down from 23.
 
 QA rerun addendum (2026-11-18): the llms.txt line "Where a page shows a checked date" was still too broad, because verify pages, accreditation notes and first-hand blocks also print "checked" dates that are not fee checks. Narrowed to "Where a fee table shows a 'Fees checked' date", the only label that sits beside a fee table.
+
+## 18 Nov 2026: decision, fee-led titles on NIU, Alliance and Sharda pages (D4, ccf74ce)
+- **What:** correcting the four MBA fees makes the existing fee-led title rule (27 Oct, `getExactFee`) put the verified fee into the titles of the Alliance and Sharda MBA hubs, the NIU, Alliance and Sharda university pages, and their prebuilt spec pages. No title was edited by hand.
+- **Decision (lead, under autonomy rule 4):** allow it. The plan's title freeze (OPERATING-PLAN.md line 170, to 5 Dec) covers review posts, not hubs or profiles. These titles are derived from a published, verified fee, exactly as on every other fee-verified hub. They also match the "X mba fees" query gap (2,216 impressions a week). Holding them would need special cases in three templates.
+- **Undo:** git revert ccf74ce restores the old titles. Rishi can overrule this in QUESTIONS-FOR-RISHI.md (FYI row Q-T1).

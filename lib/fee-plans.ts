@@ -80,7 +80,10 @@ function planTable(u: University, plan: FeePlan, heading: string | null): string
     return '<tr>' +
       `<td style="${TD}">${esc(r.mode)}</td>` +
       (hasInst ? `<td style="${TD}">${inst}</td>` : '') +
-      `<td style="${TD};font-weight:600">${r.total != null ? rupees(r.total) : 'Not published'}</td>` +
+      // An EMI row has a monthly instalment and no programme total; a blank cell
+      // (as in the discount column) reads better than "Not published", which
+      // looked as if the EMI itself were unpublished.
+      `<td style="${TD};font-weight:600">${r.total != null ? rupees(r.total) : r.instalment ? '' : 'Not published'}</td>` +
       (hasDisc ? `<td style="${TD}">${r.discounted != null ? rupees(r.discounted) : ''}</td>` : '') +
       '</tr>'
   }).join('')

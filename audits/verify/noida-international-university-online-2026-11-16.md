@@ -23,3 +23,14 @@
 - All 11 NIU MBA spec JSONs in `lib/data/page-content/` carry 88,500 or 97,600 figures (92 hits). That sweep belongs to B6, after the record changes.
 - The prospectus linked from the MBA page (https://niuonline.edu.in/wp-content/uploads/2025/06/NIU-Online-All-Prospectus-2025.pdf, June 2025) has a fee table whose text layout does not extract cleanly; it does contain 1,18,000 among the postgraduate rows and no 88,500 or 97,600. The programme page, which advertises the January 2027 session, is the primary source here. The prospectus also markets a scholarship as a percentage; not recorded, per the fee rule.
 - The official site also says "Admissions are Open for January 2027 Session!" and mentions scholarships with no rupee amount; no scholarship figure is recorded.
+
+## Resolution (2026-11-18)
+
+- **Decision (D4 brief, 16 Nov):** use the published total of Rs 1,18,000 (Rs 29,500 a semester, Rs 59,000 a year). The Rs 1,100 application fee is separate and exam fees are included. No EMI figure is published, so none is shown. NIU `programFees.mca` is not touched.
+- **Applied on branch `fix/d4-fees-niu-alliance` (ccf74ce, follow-up commit after QA):**
+  - `lib/data.ts`: feeMin/feeMax 1,18,000, `programFees.mba` 1,18,000, `feePlans.mba` (full, 2 yearly and 4 semester rows; application as an extra; note that exams are included), emiFrom 0 (was 3,688), programDetails.MBA.fees "₹1,18,000", feeVerifiedOn 2026-11-16.
+  - Mirrors: `lib/data-slim.ts`, `data/fees-hub-data.json` (EMI "Not published").
+  - NIU hub and 10 spec page-content JSONs swept; 11 peer spec JSONs that typed NIU at Rs 97,600 now say Rs 1,18,000, with gaps derived from 97,600 reworded without a number.
+  - Blogs: the NIU review moved off the unverified Rs 88,500 price; cross-links and lists in 6 other posts carry Rs 1,18,000. The unsourced "NIU ... 25% Early Bird" claim was removed from the HR post.
+  - The Rs 3,000 degree fee is mentioned in the NIU review only; it is not added to the data or the total.
+- Logged in `audits/FIX-LOG.md` (2026-11-18, D4).
