@@ -31,8 +31,13 @@
   Sri Siddhartha MCA, Saveetha B.Com). Galgotias non-MBA "Graduation pass" 14 hits / 11 files to 0
   (the one remaining hit is an MBA spec page). Known gap: the UniHero non-MBA tile still prints the typed
   defaults ("Grad + 50%" / "10+2 + 50%").
-- **NIRF year on badges** (Amity sheet row 20): ApprovalBadges, UniHero, QuickFactsCard, ApprovalsRow and
-  RankingBadge append `nirfYear`. Set to 2025 for Amity and Shoolini.
+- **NIRF year on badges** (Amity sheet row 20): ApprovalBadges prints "(Uni 2025) #22" and
+  "(Mgt 2025) #49", the same form as batch 1's Eng label. UniHero, QuickFactsCard and the profile tiles
+  keep the category label and print the year after the rank ("#49 (2025)"). ApprovalsRow and
+  RankingBadge print "NIRF #49 Management 2025". The year is set to 2025 for Amity and Shoolini. The
+  label-and-value forms were placed so that check-nirf-category still sees the category beside the rank.
+  The profile FAQ line "ranked NIRF #N in the University category" now reads "ranked at NIRF University
+  rank #N" for the same reason. Before, that gate flagged it once the file was staged.
 - **Amity:**
   - Why: the hub and profile printed our own products of the instalments (₹2,13,760, ₹2,25,200,
     ₹2,13,744, ₹3,29,200, ₹3,12,552). Amity publishes effective totals of ₹2,13,750, ₹2,25,000,
@@ -78,7 +83,7 @@
     ACU does not have.
 - **Batch-1 leftovers:**
   - DSU spec JSONs: the derived gaps (Rs 30,000, 55,000, 80,000, 18,000, 69,400) now read without a
-    number, as does "Amity costs approx Rs 69,400 more" in the Amity-vs-LPU MCA blog.
+    number. One table cell in the Amity-vs-LPU MCA blog ("Amity costs approx Rs 69,400 more") lost its number too, but that post still carries the gap in four other places (MCA, outside these sheets; left for a later pass).
   - nmims-online-mba-review "SSODL costs Rs 1.19L more" and the Symbiosis JSON "Rs.1.19L less" now read
     without a number. The same review sentence also said Amity has no Management NIRF rank, which
     contradicts the sheet's MATCH row (#49 Management 2025). It now states both 2025 ranks.
@@ -90,10 +95,18 @@
     total ₹3,12,400, admission ₹18,500, application ₹1,500). BITS 2,92,400 3 hits to 0.
 - **Titles:** 0 `<title>` changes across 2,335 built pages (diffed against the 1ed2ea6 build). 3 meta
   descriptions changed (UU review, Amity hub, UU hub), all by dropping "30%" or "19".
-- **Detector:** a visible-text detector (scripts, styles and comments stripped) was run on both builds.
-  Each needle was first proven on the 1ed2ea6 build, where every one fired. Three small blog edits were
-  made after the measured build (Amity "widest" in 2 posts and the Rs 69,400 MCA line), with the
-  build and gates rerun after them.
+- **Detector:** a visible-text detector (scripts, styles and comments stripped) was run on the 1ed2ea6
+  build and on the final build of this commit. Each removal needle was proven on the 1ed2ea6 build, where
+  it fired. "widest specialisation" fell from 8 to 4 files, none of them Amity. "DSU gaps" fell from 8 to
+  4 files: the 4 left are 3 Kurukshetra and Vignan spec pages and the Amity-vs-LPU MCA blog, none of them
+  DSU pages.
+- **Gates:**
+  - check-blog-fees: the BITS review table first raised its loose count from 4 to 5. The table's
+    "Total Programme Fee" row was dropped, since the total is stated twice in the prose above it. The
+    unverified count then fell from 2024 to 2023, and the gate lowered its own baseline.
+  - check-blog-updated-at: updatedAt was set to 2026-11-19 on the 45 posts whose content changed.
+    updatedAt is not a frozen field.
+  - Every gate passed without --no-verify.
 
 ## 2026-11-18 · B3 batch 1: verify-sheet FIX and REMOVE rows for six universities (branch fix/b3-batch-1)
 
