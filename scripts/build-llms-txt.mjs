@@ -137,7 +137,7 @@ const featured = UNIVERSITIES
 const L = []
 L.push('# Edify Education')
 L.push(`> India's independent online degree comparison platform. We cover ${CLAIM_TEXT} UGC-DEB universities offering online MBA, MCA, BBA, BCA, BA, MA, B.Com, M.Com and MSc programmes.`)
-L.push('> Fees and approvals are checked against university portals and the UGC-DEB register; each page shows when it was last updated. No paid university partnerships and no referral commissions.')
+L.push('> Where a page shows a checked date, that is when the fee was compared with the university\'s own fee page. No paid university partnerships and no referral commissions.')
 L.push('')
 L.push('## Key Facts')
 L.push(`- ${CLAIM_TEXT} universities covered, each carrying UGC-DEB entitlement for at least one online programme`)

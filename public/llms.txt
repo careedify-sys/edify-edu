@@ -1,6 +1,6 @@
 # Edify Education
 > India's independent online degree comparison platform. We cover 125+ UGC-DEB universities offering online MBA, MCA, BBA, BCA, BA, MA, B.Com, M.Com and MSc programmes.
-> Fees and approvals are checked against university portals and the UGC-DEB register; each page shows when it was last updated. No paid university partnerships and no referral commissions.
+> Where a page shows a checked date, that is when the fee was compared with the university's own fee page. No paid university partnerships and no referral commissions.
 
 ## Key Facts
 - 125+ universities covered, each carrying UGC-DEB entitlement for at least one online programme

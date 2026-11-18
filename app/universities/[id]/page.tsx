@@ -131,6 +131,33 @@ export async function generateMetadata(
   }
 }
 
+// sameAs says "this is the same entity". It is emitted only when officialUrl is
+// the university's own site and no other record uses the same host. MUJ, SMU
+// and MAHE all point at onlinemanipal.com, so sameAs there would merge three
+// universities into one entity (QA F2, 2026-11-16).
+function urlHost(url: string): string | null {
+  try { return new URL(url).host.toLowerCase().replace(/^www\./, '') } catch { return null }
+}
+// Third-party admission or ERP platforms, not a university's own site.
+// samarth.edu.in is the Ministry of Education's shared Samarth ERP; IGNOU's
+// officialUrl (ignouiop.samarth.edu.in) is its admission portal on it.
+const NON_UNIVERSITY_HOST_SUFFIXES = ['samarth.edu.in']
+const SHARED_OFFICIAL_HOSTS: Set<string> = (() => {
+  const counts = new Map<string, number>()
+  for (const uni of UNIVERSITIES) {
+    const h = uni.officialUrl ? urlHost(uni.officialUrl) : null
+    if (h) counts.set(h, (counts.get(h) || 0) + 1)
+  }
+  return new Set(Array.from(counts).filter(([, n]) => n > 1).map(([h]) => h))
+})()
+function schemaSameAs(officialUrl?: string): string[] | null {
+  if (!officialUrl) return null
+  const h = urlHost(officialUrl)
+  if (!h || SHARED_OFFICIAL_HOSTS.has(h)) return null
+  if (NON_UNIVERSITY_HOST_SUFFIXES.some(s => h === s || h.endsWith('.' + s))) return null
+  return [officialUrl]
+}
+
 // ── JSON-LD Structured Data ──
 function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversityById>> }) {
   const kw = pageKeywords[u.id]?.join(', ') || ''
@@ -144,8 +171,9 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
         url: `https://edifyedu.in/universities/${u.id}`,
         // No telephone here: the only number we have is Edify's own, and on
         // this node it would merge into the university entity (audit S2,
-        // 2026-11-16). sameAs points at the official portal where we hold one.
-        ...(u.officialUrl ? { sameAs: [u.officialUrl] } : {}),
+        // 2026-11-16). sameAs points at the official portal where we hold one
+        // that belongs to this university alone (see schemaSameAs).
+        ...(schemaSameAs(u.officialUrl) ? { sameAs: schemaSameAs(u.officialUrl) } : {}),
         description: `${u.name} is a UGC DEB approved university offering online degrees.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}${u.nirf < 200 ? ` NIRF #${u.nirf} University.` : ''}`,
         ...(kw ? { keywords: kw } : {}),
         // Omit a field we do not have rather than inventing one. This used to
