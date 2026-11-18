@@ -324,6 +324,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                   nirf={u.nirf}
                   nirfMgt={u.nirfMgt}
                   nirfEng={u.nirfEng}
+                  nirfEngYear={u.nirfEngYear}
                   highlight={u.highlight}
                   layout="row"
                 />

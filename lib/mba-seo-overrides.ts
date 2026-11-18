@@ -65,15 +65,14 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
 
   // Galgotias: data.ts:1261 feeMin=80200 (backed by pd.fees "₹80,200",
   // 2026-27 revised fee confirmed by Rishi against galgotiasonline.edu.in).
-  // feeMax=86400 is the wider uni-range upper bound; getDisplayFee rule 1
-  // fires with parsed 80,200 single vs ref 80,200-86,400 (7.17% max drift,
-  // within the 10% tolerance), producing compact "₹80,200".
+  // feeMax is 80,200 since B3 (2026-11-18, Galgotias verify sheet), so the
+  // parsed 80,200 single matches the record exactly.
   // Description clamped to ~155 chars so Google does not truncate.
   'galgotias-university-online': {
     title: 'Galgotias Online MBA Fees 2026: ₹80,200 Total | edifyedu.in',
-    description: 'Galgotias University online MBA fees ₹80,200 total (₹3,342/mo EMI). NAAC A+, UGC-DEB approved. Zero commission, verified data. Compare vs Sharda, LPU, CU.',
+    description: 'Galgotias University online MBA fees ₹80,200 total. NAAC A+, UGC-DEB approved. Zero commission, verified data. Compare vs Sharda, LPU, CU.',
     h1: 'Galgotias University Online MBA 2026: Fees, Review, and Specializations',
-    intro: 'Galgotias University online MBA total fees are ₹80,200 for the two-year programme, one of the more affordable options for candidates comparing online MBA programs in North India. The programme is UGC-DEB approved and NAAC A+ accredited, delivered from Greater Noida with EMI plans from ₹3,342 per month. Specialisations span Finance, Marketing, HR, Operations, and Business Analytics. edifyedu.in compares Galgotias MBA fees and accreditation status against Sharda, LPU, and Chandigarh University using public UGC-DEB data only.',
+    intro: 'Galgotias University online MBA total fees are ₹80,200 for the two-year programme, one of the more affordable options for candidates comparing online MBA programs in North India. The programme is UGC-DEB approved and NAAC A+ accredited, delivered from Greater Noida. Specialisations span Finance, Marketing, HR, Operations, and Business Analytics. edifyedu.in compares Galgotias MBA fees and accreditation status against Sharda, LPU, and Chandigarh University using public UGC-DEB data only.',
   },
 
   // JAIN: VERIFIED 2026-09-14 against onlinejain.com/online-mba. The page

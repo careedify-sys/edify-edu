@@ -95,7 +95,16 @@ export interface University {
   nirf: number           // University Rank (or overall)
   nirfMgt?: number         // Management Rank
   nirfEng?: number         // Engineering Rank
+  // NIRF ranking year of nirfEng, from a verify sheet. The Engineering badge
+  // prints the year only when this is set (B3, 2026-11-18).
+  nirfEngYear?: number
   nirfCategory?: string    // e.g. "Management"
+  /**
+   * Internal and end-semester weighting as the university publishes it, or
+   * 'not-published' when its programme page states none. Absent: the generic
+   * template line still renders (B3, 2026-11-18).
+   */
+  assessmentWeighting?: { internal: number; external: number; source: string; checkedOn: string } | 'not-published'
   qsRank?: number
   naac: string
   naacScore?: string  // e.g. "3.77"
@@ -362,6 +371,27 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // BBA read from onlinejain.com/online-bba on 2026-10-30: Rs 1,35,000 for Finance, Marketing and
     // HRM, Rs 1,50,000 for Data Science & AI and Digital Marketing (3 years). 15% off for one-time payment.
     programFees: { mca: { fee: 130000, feeMax: 160000 }, bba: { fee: 135000, feeMax: 150000 } },
+    // B3 (2026-11-18): MBA per-elective programme fees re-read, unchanged (FIX-LOG 5 Nov
+    // tiers). Registration and examination are charged on top of the programme fee
+    // (onlinejain.com/online-mba/finance, "Additional Fees"); never added in here.
+    // The finance page publishes "₹6,917 per month". feeMin/feeMax are unchanged
+    // while Q13 (the Rs 1,96,000 landing-page figure) is open.
+    // audits/verify/jain-university-online-2026-11-18.md
+    feePlans: {
+      mba: [{
+        id: 'standard', label: 'Online MBA',
+        rows: [
+          { mode: 'Finance, Marketing, Human Resource Management, General Management', total: 160000 },
+          { mode: 'Dual tracks and Supply Chain, Production and Operations Management', total: 175000 },
+          { mode: 'Analytics, AI and Digital Marketing tracks', total: 196000 },
+          { mode: 'International Finance (ACCA)', total: 298000 },
+          { mode: 'EMI, as published on the Finance elective page', instalment: 6917 },
+        ],
+        extras: [{ label: 'Registration', amount: 2500, per: 'one-time' }, { label: 'Examination', amount: 3000, per: 'a year' }],
+        notes: ['Programme fee by elective, for students in India. Registration and examination fees are charged separately and are not in the programme fee.'],
+        source: 'onlinejain.com/online-mba and /online-mba/finance, read 2026-11-18', checkedOn: '2026-11-18',
+      }],
+    },
     logo: '/logos/university_logos/jain_university-logo.svg',
     name: 'JAIN (Deemed-to-be University) Online',
     abbr: 'JUJOD',
@@ -378,7 +408,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     psuEligible: true,
     feeMin: 160000,
     feeMax: 298000,
-    emiFrom: 6667,
+    // B3: was 6667, the low fee / 24. JAIN publishes Rs 6,917 a month.
+    emiFrom: 6917,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     tagline: 'Rare dual HR+Finance MBA; Employee Negotiation Skills as dedicated subject; Gen AI in Sem 1 core',
@@ -397,9 +428,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
           { slug: 'international-finance-acca', name: 'International Finance (ACCA)' },
           { slug: 'data-science-and-artificial-intelligence', name: 'Data Science and Artificial Intelligence' },
           { slug: 'ai-for-finance', name: 'AI for Finance' },
-          { slug: 'ai-for-marketing', name: 'AI for Marketing' },
-          { slug: 'ai-for-human-resources', name: 'AI for Human Resources' },
-          { slug: 'ai-for-international-finance', name: 'AI for International Finance' },
+          // B3 (2026-11-18): AI for Marketing, AI for Human Resources and AI for
+          // International Finance removed. JAIN lists 16 electives and those three
+          // pages on onlinejain.com return 404. Their spec URLs still resolve from
+          // the manifest; noindex or redirect is Q25/Q32 territory, not done here.
           { slug: 'digital-marketing-and-e-commerce', name: 'Digital Marketing and E-Commerce' },
           { slug: 'finance-marketing', name: 'Finance and Marketing' },
           { slug: 'marketing-and-business-analytics', name: 'Marketing and Business Analytics' },
@@ -412,8 +444,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹1.6L–₹2.98L',
         duration: '2 Yrs',
         roles: ['HR Executive', 'Finance Analyst', 'Talent Acquisition Specialist', 'Investment Analyst Trainee'],
-        avgSalary: '₹5L – ₹18L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank', 'ICICI Bank', 'Reliance', 'Accenture', 'EY', 'KPMG', 'Amazon'],
+        // B3: salary and hirer list removed; JAIN publishes only a "target" range.
+        avgSalary: '',
+        topCompanies: [],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from JAIN (Deemed-to-be University), recognised for corporate hiring.'},
       'MCA': {
@@ -768,6 +801,33 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'dayananda-sagar-university-online',
+    // B3 (2026-11-18): MBA fee table, application fee, CIA:SEE weighting and
+    // electives read from dsuonline.com. audits/verify/dayananda-sagar-university-online-2026-11-18.md
+    officialUrl: 'https://dsuonline.com',
+    feeVerifiedOn: '2026-11-18',
+    // Every line below is printed by DSU; the published Rs 1,30,000 is DSU's own
+    // total, not a sum made here. The exam and processing fees sit inside the
+    // semester amounts. The Rs 1,000 application fee is a separate admission step.
+    feePlans: {
+      mba: [{
+        id: 'standard', label: 'Online MBA',
+        rows: [
+          { mode: 'Total fees', total: 130000 },
+          { mode: 'Semester 1', instalment: 32875 },
+          { mode: 'Semesters 2, 3 and 4, each', instalment: 32375 },
+          { mode: 'Annual option: Year 1', instalment: 65250 },
+          { mode: 'Annual option: Year 2', instalment: 64750 },
+          { mode: 'Tuition, per semester', instalment: 30500 },
+          { mode: 'Examination fee, per semester (inside each semester amount)', instalment: 1875 },
+          { mode: 'Processing fee (one-time, non-refundable, inside Semester 1)', instalment: 500 },
+        ],
+        extras: [{ label: 'Application fee (non-refundable)', amount: 1000, per: 'one-time' }],
+        notes: ['The application fee is paid at the application step and is not part of the total fees. DSU publishes no EMI figure for the MBA.'],
+        source: 'dsuonline.com/online-mba/, read 2026-11-18', checkedOn: '2026-11-18',
+      }],
+    },
+    // B3: DSU home-page FAQ, CIA and SEE weighted 30:70.
+    assessmentWeighting: { internal: 30, external: 70, source: 'dsuonline.com home page FAQ', checkedOn: '2026-11-18' },
     logo: '/logos/university_logos/dsuonline-newlogo.svg',
     name: 'Dayananda Sagar University Online',
     abbr: 'DSUO',
@@ -777,13 +837,15 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     nirf: 999,
     naac: 'A+',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A+', 'WES Recognised'],
+    // B3: 'WES Recognised' removed; DSU's pages say only "Global Recognition: Yes".
+    approvals: ['UGC DEB', 'NAAC A+'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
     feeMin: 130000,
     feeMax: 130000,
-    emiFrom: 5000,
+    // B3: was 5000, not a DSU figure. DSU publishes no EMI for the MBA.
+    emiFrom: 0,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     tagline: 'Focus on \\\"Talent Sustainability\\\" and practical',
@@ -797,8 +859,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹1.3L',
         duration: '2 Years',
         roles: ['HR Executive', 'Recruiter', 'Training Coordinator.'],
-        avgSalary: '₹4L – ₹12L per annum',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HDFC Bank'],
+        // B3: salary and hirer list removed; DSU's MBA and placements pages publish neither.
+        avgSalary: '',
+        topCompanies: [],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Dayananda Sagar University, recognised for corporate hiring.',
       },
@@ -1665,7 +1728,23 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     // Rishi 2026-08-07; the portal's MBA page printed the same total on
     // 2026-10-28. The date covers the MBA fee: MCA stays on DRIFT_PAIRS.
     officialUrl: 'https://galgotiasonline.edu.in',
-    feeVerifiedOn: '2026-08-07',
+    // B3 (2026-11-18): MBA total re-read, unchanged at Rs 80,200, with its
+    // published lines. audits/verify/galgotias-university-online-2026-11-18.md
+    feeVerifiedOn: '2026-11-18',
+    feePlans: {
+      mba: [{
+        id: 'standard', label: 'Online MBA',
+        rows: [
+          { mode: 'Total course fee', total: 80200 },
+          { mode: 'Tuition, per year', instalment: 35000 },
+          { mode: 'Examination fee, per year', instalment: 4000 },
+          { mode: 'Registration fee (one-time)', instalment: 1200 },
+          { mode: 'Alumni fee (one-time)', instalment: 1000 },
+        ],
+        notes: ['Galgotias publishes these lines beside its total course fee. Tuition is stated per year, not per semester. No EMI figure is published for the MBA.'],
+        source: 'galgotiasonline.edu.in/online-mba-programs-india.php, read 2026-11-18', checkedOn: '2026-11-18',
+      }],
+    },
     programFees: { bba: { fee: 77200 }, bca: { fee: 83200 }, mca: { fee: 74000 } }, // Sprint 2 verified 2026-08-04: BBA 77200 (yearly tuition 21000 + reg 1200 + exam 12000). BCA all-in: 83200 (yearly tuition 23000 + reg 1200 + exam 12000)
     logo: '/logos/university_logos/galgotias-university-logo.svg',
     name: 'Galgotias University Online',
@@ -1682,10 +1761,13 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     govtRecognised: true,
     psuEligible: true,
     feeMin: 80200,
-    feeMax: 86400,
-    emiFrom: 3342,
-    eligibility: 'Graduation with 50% marks from recognized university',
-    eligibilityPct: 50,
+    // B3: the MBA page publishes one total, Rs 80,200 (was feeMax 86400).
+    feeMax: 80200,
+    // B3: was 3342, the total / 24. No EMI figure is published for the MBA.
+    emiFrom: 0,
+    // B3: the MBA page states eligibility as "Graduation Pass", no percentage.
+    eligibility: 'Graduation pass from a recognised university (no minimum percentage published)',
+    eligibilityPct: 0,
     tagline: 'Financial Technologies as dedicated Sem 3 subject + Financial Modelling & Valuation in Sem 4',
     description: 'UGC DEB approved online programs from Galgotias University. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Finance professionals targeting management', 'IB & FinTech aspirants'],
@@ -1697,8 +1779,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹80,200',
         duration: '2 Yrs',
         roles: ['Financial Analyst', 'Investment Analyst Trainee', 'Credit Analyst'],
-        avgSalary: '₹5L – ₹15L per annum',
-        topCompanies: ['Accenture', 'Amazon', 'Cognizant', 'Deloitte', 'Facebook (Meta)', 'IBM', 'Infosys', 'Microsoft', 'TCS', '830+ recruiters'],
+        // B3: salary and recruiter list removed; the MBA page publishes neither.
+        avgSalary: '',
+        topCompanies: [],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Galgotias University, recognised for corporate hiring.'},
       'MCA': {
@@ -1746,7 +1829,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       }
     },
     color: '#2563EB',
-  rankingBadge: 'NIRF 101-125 (Management 2025 band — no individual rank)',
+  rankingBadge: 'NIRF 101-125 (Management 2025 band, no individual rank)',
   enrollments: 500,
   },
   {
@@ -1892,15 +1975,23 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     nirf: 24,
     nirfConstituent: [{ category: 'Management', rank: 11, year: 2025, school: 'Symbiosis Institute of Business Management, Pune', schoolShort: 'SIBM Pune' }],
     nirfEng: 46,
+    // B3: NIRF 2025 Engineering rank 46 (Symbiosis International, IR-E-U-0329).
+    nirfEngYear: 2025,
     naac: 'A++',
     ugc: true,
-    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #24 (University)', 'AICTE', 'WES Recognised'],
+    // B3 (2026-11-18): 'WES Recognised' removed; no WES statement on the SSODL
+    // pages read. audits/verify/symbiosis-university-online-2026-11-18.md
+    approvals: ['UGC DEB', 'NAAC A++', 'NIRF #24 (University)', 'AICTE'],
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
     feeMin: 315000,
     feeMax: 370000,
-    emiFrom: 13125,
+    // B3: was 13125, the Rs 3,15,000 plan / 24. SSODL's "EMI" plan publishes
+    // semester instalments only, no monthly figure.
+    emiFrom: 0,
+    // B3: SSODL MBA page, 30% internal and 70% external examination.
+    assessmentWeighting: { internal: 30, external: 70, source: 'ssodl.edu.in/master-of-business-administration', checkedOn: '2026-11-18' },
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     tagline: 'AI and ML for Business Management + R Programming + Design Thinking',
@@ -1924,8 +2015,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '₹3.15L–₹3.70L',
         duration: '2 Years',
         roles: ['Business Analyst', 'HR Executive', 'Marketing Coordinator', 'Operations Associate', 'Supply Chain Analyst'],
-        avgSalary: '₹6L – ₹10L per annum',
-        topCompanies: ['IBM', 'TAFE', 'Airtel', 'SBI General Insurance', 'Vodafone', 'Deloitte', 'Infosys', 'TCS', 'Cognizant', 'Accenture'],
+        // B3: salary and recruiter names removed; none is on SSODL's home, MBA or alumni pages.
+        avgSalary: '',
+        topCompanies: [],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Symbiosis School for Online and Digital Learning (SSODL), Pune, recognised for corporate hiring.'},
       'BBA': {
@@ -1990,7 +2082,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       },
     },
     color: '#1B4FBE',
-  rankingBadge: 'NIRF #11 (Management)',
+  // B3 (2026-11-18): was 'NIRF #11 (Management)', SIBM Pune's rank, not SSODL's
+  // or SIU's. #24 is Symbiosis International's University 2025 rank.
+  rankingBadge: 'NIRF #24 (University 2025)',
   enrollments: 500,
   },
   {
@@ -4894,10 +4988,37 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'dr-dy-patil-vidyapeeth-online',
+    // B3 (2026-11-18): MBA fee table, scholarship and exam facts read from
+    // dypatilonline.com/mba.aspx. audits/verify/dr-dy-patil-vidyapeeth-online-2026-11-18.md
+    officialUrl: 'https://www.dypatilonline.com',
+    feeVerifiedOn: '2026-11-18',
+    // DPU prints the four semester amounts and the Rs 1,89,400 total itself;
+    // nothing is summed here. The Rs 2,19,400 edX variant waits on Q21.
+    feePlans: {
+      mba: [{
+        id: 'standard', label: 'Online MBA',
+        rows: [
+          { mode: 'Total programme fee', total: 189400 },
+          { mode: 'Semester I', instalment: 50000 },
+          { mode: 'Semester II', instalment: 50000 },
+          { mode: 'Semester III', instalment: 45000 },
+          { mode: 'Semester IV', instalment: 44400 },
+        ],
+        notes: [
+          'Fee for Indian learners. DPU publishes one fee for all specialisations and no separate registration or exam fee.',
+          'DPU publishes one MBA scholarship: ₹10,000 for students who pay the full fee in one or two transactions within 15 days.',
+          'DPU says No Cost EMI is available and publishes no monthly figure.',
+        ],
+        source: 'dypatilonline.com/mba.aspx, read 2026-11-18', checkedOn: '2026-11-18',
+      }],
+    },
+    // B3: DPU's MBA page publishes no internal / end-semester weighting.
+    assessmentWeighting: 'not-published',
     logo: '/logos/university_logos/dpu-online.svg',
     name: 'Dr. D.Y. Patil Vidyapeeth, Pune – Centre for Online Learning (DPU-COL) Online',
     abbr: 'DDPVP',
-    city: 'Sant Tukaram Nagar',
+    // B3: Sant Tukaram Nagar is a locality of Pimpri, Pune (NAAC row 229; NIRF city Pune).
+    city: 'Pune',
     state: 'Maharashtra',
     region: 'West',
     nirf: 41,
@@ -4909,7 +5030,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     psuEligible: true,
     feeMin: 189400,
     feeMax: 189400,
-    emiFrom: 7892,
+    // B3: was 7892, the total / 24. DPU offers No Cost EMI with no published figure.
+    emiFrom: 0,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     tagline: 'PMI/PMBOK-aligned curriculum + PwC Data module from NAAC A++ university',
@@ -4925,7 +5047,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         duration: '2 Years (4 Semesters)',
         roles: ['Project Coordinator', 'Project Manager', 'Scrum Master', 'PMO Analyst'],
         avgSalary: '₹5L – ₹18L per annum',
-        topCompanies: ['ITC', 'HDFC Bank', 'Capgemini', 'Infosys', 'TCS', 'Wipro', 'Accenture', 'IBM', 'HCL', 'Cognizant'],
+        // B3: hirer list removed; none of these ten is among the hiring partners DPU's
+        // placement page names. The salary line stays until Q22 is answered.
+        topCompanies: [],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Dr. D.Y. Patil Vidyapeeth, Pune, recognised for corporate hiring.',
       },
@@ -7641,6 +7765,29 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'bits-pilani-work-integrated-online',
+    // B3 (2026-11-18): fee, components, eligibility and EMI read from
+    // bits-pilani-wilp.ac.in/mba/finance.php. audits/verify/bits-pilani-work-integrated-online-2026-11-18.md
+    officialUrl: 'https://bits-pilani-wilp.ac.in',
+    feeVerifiedOn: '2026-11-18',
+    // The page prints these lines itself; none is summed here. It offers an EMI
+    // option "with 0% interest" but prints no monthly figure, so emiFrom is 0.
+    feePlans: {
+      mba: [{
+        id: 'standard', label: 'Online MBA',
+        rows: [
+          { mode: 'Total programme fee', total: 312400 },
+          { mode: 'Semester 1', instalment: 93100 },
+          { mode: 'Semesters 2, 3 and 4, each', instalment: 73100 },
+          { mode: 'Application fee (one-time, non-refundable)', instalment: 1500 },
+          { mode: 'Admission fee (one-time)', instalment: 18500 },
+        ],
+        notes: [
+          'The semester fee is payable at the start of each semester. BITS Pilani publishes no separate exam fee for the MBA.',
+          'BITS Pilani offers an EMI option with 0% interest and publishes no monthly figure.',
+        ],
+        source: 'bits-pilani-wilp.ac.in/mba/finance.php, read 2026-11-18', checkedOn: '2026-11-18',
+      }],
+    },
     name: 'BITS Pilani Work Integrated Learning Programmes (WILP) Online',
     abbr: 'BPWIL',
     // A8 (2026-11-18): Pilani, Rajasthan per NAAC xlsx row 314 and NIRF 2025.
@@ -7650,6 +7797,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     region: 'North',
     nirf: 7,
     nirfEng: 11,
+    nirfEngYear: 2025,
     naac: 'A++',
     ugc: true,
     // A8: no 'UGC DEB'. BITS has zero rows in the DEB register 2020-27; its
@@ -7661,9 +7809,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     psuEligible: true,
     feeMin: 312400,
     feeMax: 312400,
-    emiFrom: 13017,
-    eligibility: '50% in graduation',
-    eligibilityPct: 50,
+    // B3: was 13017, the total / 24. BITS publishes no monthly EMI figure.
+    emiFrom: 0,
+    // B3: as published on the MBA finance page (was '50% in graduation').
+    eligibility: 'B.E./B.Tech./M.Sc./Integrated First Degree, or a 3-year degree in Maths, Statistics, Science, Economics, Commerce or Business Management, with at least 60% aggregate (1 year of work experience, or 2 years with a 3-year degree, and in employment when applying)',
+    eligibilityPct: 60,
     tagline: 'BITS Pilani work-integrated programmes for working professionals',
     description: 'BITS Pilani Work Integrated Learning Programmes (WILP) run for working professionals under UGC approval, and BITS Pilani holds Institution of Eminence status. BITS Pilani is not on the UGC-DEB programme register. NAAC A++ accredited.',
     forWho: ['Working professionals wanting a recognised degree', 'Students in India and nearby cities', 'Employed graduates, since WILP admission requires current employment'],
@@ -7686,8 +7836,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         fees: '\u20b93,12,400',
         duration: '2 Years',
         roles: ['Business Manager','Strategy Consultant','Operations Lead','Business Analyst','Product Manager'],
-        avgSalary: '\u20b94L \u2013 \u20b914L per annum',
-        topCompanies: ['TCS','Infosys','Wipro','HDFC Bank','Deloitte','Amazon'],
+        // B3 (2026-11-18): salary and hirer list removed. BITS publishes neither
+        // on its MBA pages and says WILP has no traditional campus placements.
+        avgSalary: '',
+        topCompanies: [],
         internshipType: 'Virtual industry project',
         careerOutcome: 'MBA from BITS Pilani Work Integrated Learning Programmes (WILP), run under UGC approval as an Institution of Eminence, for professionals who stay in employment while they study.',
       },

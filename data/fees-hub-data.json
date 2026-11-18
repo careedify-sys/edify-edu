@@ -8,9 +8,9 @@
     "nirfMgt": 73,
     "feeMin": 160000,
     "feeMax": 298000,
-    "emiFrom": 6667,
+    "emiFrom": 6917,
     "feeStr": "₹1.60L – ₹2.98L",
-    "emiStr": "₹7K/mo",
+    "emiStr": "₹6,917/mo",
     "programs": [
       "MBA",
       "MCA",
@@ -118,16 +118,16 @@
     "nirfMgt": null,
     "feeMin": 130000,
     "feeMax": 130000,
-    "emiFrom": 5000,
+    "emiFrom": 0,
     "feeStr": "₹1.30L",
-    "emiStr": "₹5K/mo",
+    "emiStr": "Not published",
     "programs": [
       "MBA",
       "BCA",
       "B.Com",
       "BBA"
     ],
-    "region": "Central"
+    "region": "South"
   },
   {
     "id": "dy-patil-university-online",
@@ -293,10 +293,10 @@
     "nirf": 999,
     "nirfMgt": 999,
     "feeMin": 80200,
-    "feeMax": 86400,
-    "emiFrom": 3342,
-    "feeStr": "₹80K – ₹86K",
-    "emiStr": "₹3.3K/mo",
+    "feeMax": 80200,
+    "emiFrom": 0,
+    "feeStr": "₹80.2K",
+    "emiStr": "Not published",
     "programs": [
       "MBA",
       "MCA",
@@ -337,9 +337,9 @@
     "nirf": 24,
     "feeMin": 315000,
     "feeMax": 370000,
-    "emiFrom": 13125,
+    "emiFrom": 0,
     "feeStr": "₹3.15L – ₹3.70L",
-    "emiStr": "₹13K/mo",
+    "emiStr": "Not published",
     "programs": [
       "MBA",
       "BBA",
@@ -1101,9 +1101,9 @@
     "nirfMgt": null,
     "feeMin": 189400,
     "feeMax": 189400,
-    "emiFrom": 7892,
+    "emiFrom": 0,
     "feeStr": "₹1.89L",
-    "emiStr": "₹8K/mo",
+    "emiStr": "Not published",
     "programs": [
       "MBA"
     ],
@@ -1951,18 +1951,18 @@
     "id": "bits-pilani-work-integrated-online",
     "name": "BITS Pilani Work Integrated Learning Programmes (WILP) Online",
     "abbr": "BPWIL",
-    "naac": "A+",
+    "naac": "A++",
     "nirf": 7,
     "nirfMgt": null,
     "feeMin": 312400,
     "feeMax": 312400,
-    "emiFrom": 13017,
+    "emiFrom": 0,
     "feeStr": "₹3.12L",
-    "emiStr": "₹13K/mo",
+    "emiStr": "Not published",
     "programs": [
       "MBA"
     ],
-    "region": "South"
+    "region": "North"
   },
   {
     "id": "graphic-era-university-online",

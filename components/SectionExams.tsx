@@ -27,7 +27,14 @@ export default function SectionExams({ u, program, cleanName }: Props) {
     {
       icon: BookOpen,
       label: 'Assessment Pattern',
-      desc: 'Internal assessment (assignments, quizzes, participation) contributes 30–40%. End-semester exam contributes 60–70%.',
+      // B3 (2026-11-18): the university's published weighting where a verify
+      // sheet records it; a plain "not published" line where its page states
+      // none. Other universities keep the generic line until checked.
+      desc: u.assessmentWeighting === 'not-published'
+        ? `${cleanName} does not publish the internal and end-semester weighting on its ${program} page. Ask the university for it in writing.`
+        : u.assessmentWeighting
+          ? `Internal assessment contributes ${u.assessmentWeighting.internal}% and the end-semester examination ${u.assessmentWeighting.external}%, as the university publishes it.`
+          : 'Internal assessment (assignments, quizzes, participation) contributes 30–40%. End-semester exam contributes 60–70%.',
     },
     {
       icon: Briefcase,

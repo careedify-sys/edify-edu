@@ -72,8 +72,12 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
   // no percentage in u.eligibility keeps the old label: this round fixes
   // disagreement, it does not re-source eligibility for every university.
   const eligPct = program === 'MBA' ? u.eligibility?.match(/(\d{2})%/)?.[1] : undefined
+  // B3 (2026-11-18): a university that publishes "Graduation pass" with no
+  // percentage (Galgotias MBA) must not get the 50% default.
+  const gradPass = program === 'MBA' && !eligPct && /graduation pass/i.test(u.eligibility ?? '')
   const eligibilityLabel = eligPct
     ? `Grad + ${eligPct}%`
+    : gradPass ? 'Grad (pass)'
     : ['MBA', 'MCA'].includes(program) ? 'Grad + 50%' : '10+2 + 50%'
   const eligibilityNote = eligPct ? u.eligibility.match(/\(([^)]+)\)/)?.[1] : undefined
 

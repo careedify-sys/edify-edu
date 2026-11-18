@@ -497,6 +497,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                       nirf={u.nirf}
                       nirfMgt={u.nirfMgt}
                       nirfEng={u.nirfEng}
+                      nirfEngYear={u.nirfEngYear}
                       highlight={u.highlight}
                       layout="row"
                     />
@@ -659,6 +660,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                       nirf={u.nirf}
                       nirfMgt={u.nirfMgt}
                       nirfEng={u.nirfEng}
+                      nirfEngYear={u.nirfEngYear}
                       highlight={u.highlight}
                       layout="row"
                     />
