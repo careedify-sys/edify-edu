@@ -185,7 +185,11 @@
     verbatim), and in the DSU rows of the galgotias and shoolini review tables. In the BITS
     digital-transformation spec JSON, "DSU Digital Marketing MBA ... (NAAC A++)" named a track DSU does
     not offer. It now names a real elective from the sheet (Marketing Management) with A+ and drops the
-    derived "less than half the cost".
+    derived "less than half the cost". QA rerun 2 found the same claim in the peer-comparison body
+    (line 58, "vs DSU Online MBA Digital Marketing ... DSU focuses specifically on digital marketing"),
+    which this addendum had missed; the lead fixed it the same day to name the Marketing Management
+    elective, dropped the "focuses on digital marketing" and "better pure value pick" lines, and
+    corrected Alliance from NAAC A to A+ in the next paragraph to match lib/data.ts.
 - **R2 JAIN:**
   - Why: the jain-vs-lpu and amity-vs-jain compare pages and /programs/mba still said 19 and named AI for
     Marketing and HR, which JAIN no longer offers.
