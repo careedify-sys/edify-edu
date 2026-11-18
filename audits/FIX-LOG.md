@@ -1,5 +1,76 @@
 # Fix log
 
+## 2026-11-19 · B3 batch 3: Vignan verify sheet and NAAC snapshot (branch fix/b3-batch-3)
+
+- **Sources:** audits/verify/vignan-university-online-2026-11-18.md (Vignan FIX and REMOVE rows) and
+  audits/naac-audit-2026-11-19.md (snapshot rows for Vignan, SRM and Jaypee). Rows tied to Q37-Q41 were
+  left alone. The Vignan MBA fee stays Rs 90,000 until Q38 is answered.
+- **Vignan NAAC A+ (was A++):**
+  - Why: the sheet and the NAAC audit both record A+. Every page printed A++, and the /programs tables
+    printed "A++ valid to 2031-06-16", a validity date the snapshot does not support.
+  - What: lib/data.ts naac, approvals, tagline and description; lib/data-slim.ts; data/fees-hub-data.json;
+    data/naac-verified.json is now {A+, null}; the hub JSON, the 7 Vignan spec JSONs, peer spec JSONs that
+    named Vignan A++ (Bharati Vidyapeeth finance and marketing, Kurukshetra x4), and the Vignan review, fee
+    guides and BCA guides in lib/blog.ts. public/llms.txt was regenerated and has no content change: Vignan
+    falls outside its top 25.
+- **Derived EMI and fee arithmetic removed:**
+  - Why: Rs 3,750 is Rs 90,000 / 24, the spec pages' "Rs 5,700 zero-cost EMI" and the hub's Rs 15,000 /
+    Rs 7,500 lines are also Edify arithmetic on an unverified fee, and none is a Vignan offer.
+  - What: emiFrom is 0 in lib/data.ts and lib/data-slim.ts. The portal's "EMI starting ₹2,900" is not shown
+    on the profile because the shared EMI card and profile line would print fee / 6, 12, 24 and "no-cost"
+    terms beside it. fees-hub-data carries emiFrom 2900 / "₹2,900/mo", which the sheet sources. The hub
+    and spec EMI text now say "EMI starting ₹2,900" and that tenure, lender and no-cost terms are not
+    published.
+  - Peer gap figures computed from Rs 90,000 were removed (Arka Jain 18,500; Kurukshetra 12,000; Dr MGR
+    46,000-51,000 and DSU 30,000 now read "cheaper"; Galgotias, SMU, IGNOU and Uttaranchal gaps and the
+    1.7x/2x/2.1x/half-fee ratios on the Vignan spec pages). A direction was kept only where it holds at
+    both Rs 90,000 and Rs 1,10,000.
+- **Superlatives removed:** "cheapest", "most affordable", "lowest fee", "rare at this fee level" and sub-Rs 1
+  lakh claims about Vignan in the hub, spec JSONs, Bharati Vidyapeeth peers and the Vignan, DSU and BCA blog
+  posts. Why: they rest on the Rs 90,000 figure, which is not verified (Q38).
+- **REMOVE rows applied:** WES recognition (hub JSON: tldr, about, approvals, sample certificate, comparisons, verdict); QS 151 (qsRank in lib/data-slim.ts); the
+  Rs 4L-12L MBA salary and the hirer list (lib/data.ts avgSalary and topCompanies, spec JSON hirer lines);
+  hub red flags 2-4; the hub coupon/scholarship text (now says the pages list no scholarship, commission
+  sentence kept verbatim); the false "no NIRF Management rank" claim. Why: the sheet found none of these on
+  the portal or the NIRF tables. The sheet sources NIRF 2025 Management 101-125, so the hub's one red flag
+  and the ICFAI finance peer page now state that band, not a rank.
+- **FIX rows applied:** officialUrl https://vignanonline.com (lib/data.ts only, not printed);
+  assessmentWeighting 'not-published' (the exam split is not published); SC/ST 5% relaxation replaces the
+  OBC wording; the delivery wording; the registration and yearly examination fee note under the fee plans;
+  Kurukshetra peer pages now name Vignan's published BA and IT subjects instead of machine learning, big
+  data, cloud and AI/ML; online.vignan.ac.in removed from the hub. The DEB line reads "Online mode, session
+  2026-27" as plain text.
+- **NAAC snapshot (Part B):**
+  - SRM {A++, null} and Jaypee {A, null} in data/naac-verified.json. Why: the stored validity dates were not
+    in the snapshot, so /programs printed "valid to" dates nobody verified, and JIIT showed A+.
+  - Checked on next start: /programs/mba, bba, mca and bca now print Vignan A+, JIIT A and SRM A++ with no
+    validity date.
+  - lib/data.ts Jaypee comment updated to the NAAC list row (14-08-2025 r472, cycle 2, CGPA 3.10).
+  - Blog copy that called JIIT A+ was corrected: the JIIT review one-line callout and the UP online MBA
+    post (FAQ and table). The UP FAQ's "Seven"/"Four" counts were replaced with "These", because the A+ list
+    already named eight universities and moving Jaypee changes both counts.
+  - Not run: --refresh-naac, Supabase, scripts/sync-naac-from-official.js (Q48). Q42-Q47 stay open.
+- **Not applied, and why:**
+  - Elective renames (Information Technology; Healthcare and Hospital Management): spec names come from the
+    xlsx via programs-manifest, prebuild would overwrite a manifest edit, and a lib/data.ts rename changes
+    the URL. Needs a workbook edit.
+  - MCA and BCA fee changes, fee components, feeVerifiedOn (Q38; the BCA figure on the sheet is a sum).
+  - Spec count and missing electives (Q41), per-elective DEB (Q39), intake and last date (Q40), NAAC
+    validity (Q37).
+  - A visible DEB link on the hub needs a template change.
+  - MCA and BCA salaries and hirers: outside this batch.
+- **Detector (full static build, 2,335 pages; base 1ed2ea6 vs this branch):** Rs 3,750 114 hits on 33 pages
+  to 95 on 29, none on Vignan pages (the rest are other universities' own figures); Vignan A++ 218 to 19, all
+  19 attribute A++ to another university; Vignan cheapest 33 to 9, all naming Galgotias, IGNOU or Shoolini;
+  Vignan Rs 5,700 25 to 0; Vignan WES 2 to 1 (Bharati Vidyapeeth's own WES FAQ); Vignan salary 11 to 0;
+  "no NIRF Management rank" 1 to 0; JIIT A+ 14 to 13, every remaining hit attributes A+ to another
+  university or is the JIIT hub saying its grade "is A, not A+". QS beside Vignan was 0 in base and is 0
+  now (the qsRank field was not rendered in visible text).
+- **Derived title change:** /universities/vignan-university-online "Vignan University Online 2026: Courses,
+  MBA ₹90,000" to "...MBA ₹90,000, NAAC A+" (the template appends the grade when it fits). Meta
+  descriptions changed A++ to A+ on 13 Vignan pages. No H1 changed. updatedAt bumped to 2026-11-19 on the
+  10 posts whose content changed.
+
 ## 2026-11-18 · B3 batch 1: verify-sheet FIX and REMOVE rows for six universities (branch fix/b3-batch-1)
 
 - **Sources:** audits/verify/{bits-pilani-work-integrated-online, galgotias-university-online,

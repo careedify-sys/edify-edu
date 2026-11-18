@@ -67,8 +67,8 @@
       "validTill": "2030-01-17"
     },
     "vignan-university-online": {
-      "grade": "A++",
-      "validTill": "2031-06-16"
+      "grade": "A+",
+      "validTill": null
     },
     "manonmaniam-sundaranar-university-online": {
       "grade": "A+",
@@ -223,8 +223,8 @@
       "validTill": "2029-12-20"
     },
     "jaypee-university-online": {
-      "grade": "A+",
-      "validTill": "2031-04-25"
+      "grade": "A",
+      "validTill": null
     },
     "sathyabama-university-online": {
       "grade": "A++",
@@ -264,7 +264,7 @@
     },
     "srm-institute-science-technology-online": {
       "grade": "A++",
-      "validTill": "2029-08-16"
+      "validTill": null
     },
     "university-of-madras-online": {
       "grade": "A++",
