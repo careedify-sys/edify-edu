@@ -1,5 +1,6 @@
 import type { University } from '@/lib/data'
 import { AlertCircle } from 'lucide-react'
+import { isOnDebRegister } from '@/lib/seo/deb-basis'
 
 interface Props {
   u: University
@@ -10,7 +11,7 @@ interface Props {
 function getMBAFlags(cleanName: string): string[] {
   return [
     `An online MBA from ${cleanName} does not replace offline IIM, XLRI, or ISB brand equity for roles in investment banking or top-tier strategy consulting. For those specific recruiters and roles, a residential MBA from a top-10 institution is the better fit. For most corporate, operations, and functional roles across 80% of the Indian job market, an online UGC-DEB approved MBA is perfectly valid.`,
-    `Placement assistance is not a placement guarantee. ${cleanName} provides career portal access, resume workshops, mock interviews, and drive notifications. Final offers depend on your profile, interview performance, and market conditions.`,
+    `Placement assistance is not a placement guarantee. Ask ${cleanName} in writing which career services it offers online learners. Final offers depend on your profile, interview performance, and market conditions.`,
     `Online learning requires self-discipline. Without daily campus structure, online MBAs reward learners who build their own study rhythm. If you have historically struggled with self-paced work, consider a hybrid or weekend program with more external structure.`,
     `Campus networking looks different online. You will build connections through LMS forums, virtual events, WhatsApp groups, and edifyedu.in alumni intros rather than daily hostel life. For students who value deep in-person peer bonds, this is a genuine trade-off worth considering.`,
   ]
@@ -19,7 +20,7 @@ function getMBAFlags(cleanName: string): string[] {
 function getMCAFlags(cleanName: string): string[] {
   return [
     `An online MCA from ${cleanName} alone will not land you a product role at FAANG-tier tech companies. These roles require a strong portfolio, consistent DSA performance, and open-source contributions alongside the degree.`,
-    `Placement assistance is not a placement guarantee. ${cleanName} provides career portal access and industry connections. Final placement depends on your technical skills, project work, and interview readiness.`,
+    `Placement assistance is not a placement guarantee. Ask ${cleanName} in writing which career services it offers online learners. Final placement depends on your technical skills, project work, and interview readiness.`,
     `Online MCA lab work intensity is lower than an on-campus program. Self-discipline to build projects, contribute to GitHub, and do mock coding interviews is essential to bridge this gap.`,
     `An online MCA is not a direct substitute for a B.Tech in Computer Science for core software engineering roles at top product firms. It works best as a career accelerator for working professionals or a lateral entry into IT from other fields.`,
   ]
@@ -52,11 +53,16 @@ const FLAG_GENERATORS: Record<string, (name: string) => string[]> = {
 
 export default function RedFlagsBlock({ u, program, cleanName }: Props) {
   const generator = FLAG_GENERATORS[program]
-  const flags = generator ? generator(cleanName).slice(0, 4) : [
-    `Placement assistance is not a placement guarantee. ${cleanName} provides career support and networking introductions. Final employment outcomes depend on your skills, preparation, and market conditions.`,
+  const rawFlags = generator ? generator(cleanName).slice(0, 4) : [
+    `Placement assistance is not a placement guarantee. Ask ${cleanName} in writing which career services it offers online learners. Final employment outcomes depend on your skills, preparation, and market conditions.`,
     `Online programs require self-discipline. Without campus structure, results are directly proportional to the consistency and initiative you bring to your studies.`,
     `Verify overseas recognition separately if you plan to work or study abroad. UGC-DEB approval covers Indian employment and higher education. International recognition varies by country.`,
   ]
+  // A8: a university not on the UGC-DEB register (lib/seo/deb-basis.ts) must
+  // not read "UGC-DEB approved" on its own page, even in a generic flag.
+  const flags = isOnDebRegister(u.id)
+    ? rawFlags
+    : rawFlags.map(f => f.replace('an online UGC-DEB approved MBA', 'a recognised online MBA').replace('UGC-DEB approval covers', 'UGC recognition covers'))
 
   return (
     <section className="rounded-xl border border-red-100 bg-red-50 p-6">

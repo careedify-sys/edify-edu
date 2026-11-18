@@ -23,7 +23,7 @@ import SectionWhoCanApply from './SectionWhoCanApply'
 import SectionClasses    from './SectionClasses'
 import SectionExams      from './SectionExams'
 import SpecializationGrid from './SpecializationGrid'
-import SectionCoreSubjects from './SectionCoreSubjects'
+import SectionSyllabus   from './SectionSyllabus'
 import FeeBreakdown      from './FeeBreakdown'
 import { NmimsNoDistance, SymbiosisDistanceAnswer } from './FeePlanTable'
 import EMIPlans          from './EMIPlans'
@@ -46,7 +46,8 @@ import AssuredMarquee   from './AssuredMarquee'
 import QuickAnswers      from './QuickAnswers'
 import { getHubAnswers } from '@/lib/answers/hub-answers'
 import RequestSyllabusCard from './RequestSyllabusCard'
-import { hasSyllabusData } from '@/lib/syllabus'
+import { getSyllabus } from '@/lib/syllabus'
+import { debBasis, isOnDebRegister } from '@/lib/seo/deb-basis'
 import { getProgramLinks } from '@/lib/internal-links'
 import ProgramBlogLinks from './ProgramBlogLinks'
 import { UniversityVideo } from './YouTubeVideo'
@@ -166,6 +167,8 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
   // approvals block is the honest place for the link, because that is where the
   // UGC-DEB and NAAC claims are made. See audits/topical-authority-2026-09-13.md.
   const verifyHref = getVerifyPage(u.id)
+  const rawHubSyllabus = getSyllabus(u.id, program)
+  const hubSyllabus = rawHubSyllabus && Object.values(rawHubSyllabus).some(Boolean) ? rawHubSyllabus : null
   const overviewHref      = getUniversityOverviewLink(u)
 
   // Sprint 1 Task 2 (revised): fact-scrubbed FAQ set. Every factual claim below
@@ -194,7 +197,10 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
     { q: `What is the total fee for ${program} at ${cleanName}?`,
       a: `${feeSentence(feeStr, pd.duration || '2 years', !!feeStr)} ${emiSentence(programmeEmiFrom(u, program), program === 'MBA' ? undefined : NO_PROGRAMME_EMI)}` },
     { q: `Is the ${program} degree from ${cleanName} valid?`,
-      a: `Yes. ${cleanName} is UGC-DEB approved. UGC-DEB approved online degrees are recognised as equivalent to on-campus degrees for higher education and government recruitment.` },
+      // A8: a university not on the UGC-DEB register states its recorded basis.
+      a: debBasis(u.id)
+        ? `${debBasis(u.id)!.sentence} Confirm in writing that the ${program} meets the recognition your employer or recruiter asks for.`
+        : `Yes. ${cleanName} is UGC-DEB approved. UGC-DEB approved online degrees are recognised as equivalent to on-campus degrees for higher education and government recruitment.` },
     ...(specs.length ? [{ q: `What specialisations does ${cleanName} offer in ${program}?`,
       a: `${specs.length} specialisations: ${formatSpecList(specs)}.` }] : []),
     { q: `Is ${cleanName} NAAC accredited?`,
@@ -313,7 +319,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               {/* §3 Approvals */}
               <div className="rounded-xl border border-slate-200 bg-white p-5">
                 <ApprovalBadges
-                  approvals={u.approvals}
+                  approvals={u.approvals} universityId={u.id}
                   naac={u.naac}
                   nirf={u.nirf}
                   nirfMgt={u.nirfMgt}
@@ -328,7 +334,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                       className="text-sm font-semibold no-underline hover:underline"
                       style={{ color: '#3B5068' }}
                     >
-                      Verify {cleanName} UGC-DEB approval and NAAC grade
+                      {isOnDebRegister(u.id) ? `Verify ${cleanName} UGC-DEB approval and NAAC grade` : `Verify ${cleanName} approvals and NAAC grade`}
                     </Link>
                   </div>
                 )}
@@ -396,13 +402,16 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               )}
               {fh && <FirstHandMbaSections fh={fh} part="specAdvice" />}
 
-              {/* §9 Core Subjects */}
-              <SectionCoreSubjects program={program} cleanName={cleanName} />
-
-              {/* §9b Syllabus request — only when no manifest data is available */}
-              {!hasSyllabusData(u.id, program) ? (
+              {/* §9 Syllabus. A9 (2026-11-18): this was SectionCoreSubjects, one
+                  generic six-subject list per programme printed for every
+                  university (BITS teaches neither Business Law nor that order).
+                  Now only this university's own syllabus data renders
+                  (lib/syllabus.ts); with none, the request card shows instead. */}
+              {hubSyllabus ? (
+                <SectionSyllabus syllabus={hubSyllabus} program={program} universityName={cleanName} />
+              ) : (
                 <RequestSyllabusCard uniId={u.id} uniName={cleanName} program={program} />
-              ) : null}
+              )}
 
               {/* §10 Fees (skipped when already shown above) */}
               {!feeProminent && (
@@ -448,8 +457,9 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                 </section>
               )}
 
-              {/* §13C UGC-DEB ID, every hub */}
-              <DebIdBlock />
+              {/* §13C UGC-DEB ID, every hub on the DEB register (A8: not for a
+                  university whose basis is recorded in lib/seo/deb-basis.ts) */}
+              {isOnDebRegister(u.id) && <DebIdBlock />}
 
               {/* §14 Placements */}
               <div id="placement">

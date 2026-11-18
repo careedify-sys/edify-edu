@@ -6,6 +6,8 @@
  * Used across University detail page sidebar, Specialization page header, and University cards.
  */
 
+import { debBasis } from '@/lib/seo/deb-basis'
+
 interface ApprovalBadgesProps {
   approvals?: string[]
   naac?: string
@@ -14,6 +16,9 @@ interface ApprovalBadgesProps {
   nirfEng?: number
   highlight?: string
   layout?: 'row' | 'column'  // row = horizontal (cards/spec page), column = vertical (sidebar)
+  // When set and the university is in NOT_ON_DEB_REGISTER, the UGC DEB pill is
+  // replaced by its recorded basis. Omitted: unchanged behaviour.
+  universityId?: string
 }
 
 interface BadgeDef {
@@ -113,12 +118,14 @@ function ApprovalPill({
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           flexShrink: 0,
         }}>
-          <img
-            src={def.logo}
-            alt={def.name}
-            style={{ maxWidth: 32, maxHeight: 32, objectFit: 'contain' }}
-            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
-          />
+          {def.logo ? (
+            <img
+              src={def.logo}
+              alt={def.name}
+              style={{ maxWidth: 32, maxHeight: 32, objectFit: 'contain' }}
+              onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+            />
+          ) : <span style={{ fontSize: 18, color: def.accentColor }}>✓</span>}
         </div>
         {/* Text */}
         <div style={{ minWidth: 0 }}>
@@ -159,12 +166,14 @@ function ApprovalPill({
         display: 'flex', alignItems: 'center', justifyContent: 'center',
         flexShrink: 0,
       }}>
-        <img
-          src={def.logo}
-          alt={def.name}
-          style={{ maxWidth: 22, maxHeight: 22, objectFit: 'contain' }}
-          onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
-        />
+        {def.logo ? (
+          <img
+            src={def.logo}
+            alt={def.name}
+            style={{ maxWidth: 22, maxHeight: 22, objectFit: 'contain' }}
+            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+          />
+        ) : <span style={{ fontSize: 14, color: def.accentColor }}>✓</span>}
       </div>
       <div style={{ minWidth: 0 }}>
         <div style={{ fontSize: 11, fontWeight: 800, color: '#0B1D35', lineHeight: 1.1 }}>
@@ -186,6 +195,7 @@ export default function ApprovalBadges({
   nirfEng,
   highlight,
   layout = 'row',
+  universityId,
 }: ApprovalBadgesProps) {
   const isColumn = layout === 'column'
 
@@ -208,6 +218,7 @@ export default function ApprovalBadges({
     : { display: 'flex', flexWrap: 'wrap', gap: 8, alignItems: 'center' }
 
   const ugcDef = BADGE_DEFS.find(d => d.key === 'UGC DEB')!
+  const basis = debBasis(universityId)
   const aicteDef = BADGE_DEFS.find(d => d.key === 'AICTE')!
   const naacDef = BADGE_DEFS.find(d => d.key === 'NAAC')!
   const nirfDef = BADGE_DEFS.find(d => d.key === 'NIRF')!
@@ -217,8 +228,11 @@ export default function ApprovalBadges({
 
   return (
     <div style={container}>
-      {/* Always: UGC DEB */}
-      <ApprovalPill def={ugcDef} column={isColumn} />
+      {/* UGC DEB, unless the university is recorded as not on the DEB register
+          (lib/seo/deb-basis.ts), in which case its stated UGC basis shows. */}
+      {basis
+        ? <ApprovalPill def={{ ...ugcDef, key: 'UGC basis', logo: '', name: basis.badge, sub: basis.badgeSub }} column={isColumn} />
+        : <ApprovalPill def={ugcDef} column={isColumn} />}
 
       {/* AICTE — only if explicitly approved (deemed-to-be unis with AICTE oversight) */}
       {hasAICTE && <ApprovalPill def={aicteDef} column={isColumn} />}

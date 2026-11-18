@@ -81,7 +81,9 @@ export default function FeeBreakdown({ u, pd, program, cleanName, headingOverrid
     ...(semText ? [{ label: 'Per Semester', value: semText }] : []),
     ...(programmeEmiFrom(u, program) > 0 ? [{ label: 'EMI starts from', value: `${formatINR(u.emiFrom)}/month` }] : []),
     { label: 'Registration / Admission Fee', value: 'Included in total' },
-    { label: 'Exam Fee', value: 'Included in total (usually)' },
+    // A9 (2026-11-18): an "Exam Fee: Included in total (usually)" row was
+    // printed for every university. No record carries an exam-fee field, so
+    // the row is gone rather than guessed.
     { label: 'Study Material', value: 'Included (digital)' },
   ]
 

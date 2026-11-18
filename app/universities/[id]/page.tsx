@@ -14,6 +14,7 @@ import { pageKeywords } from '@/lib/page-keywords'
 import { shouldIndexUniversity, onlinePrefix } from '@/lib/seo/mode-unverified'
 import { formatUniversityDisplayName } from '@/lib/format'
 import { feePlanTableHtml, nmimsNoDistanceHtml, symbiosisDistanceAnswerHtml } from '@/lib/fee-plans'
+import { debApprovedSentence, debBasis } from '@/lib/seo/deb-basis'
 
 // The phrase people type for a university's online arm, where it differs from
 // the short title name. Amity's short name is "Amity", but the searches are
@@ -85,7 +86,7 @@ export async function generateMetadata(
   const specStr = specCount > 3 ? ` ${specCount}+ specialisations.` : ''
   const cityStr = u.city && u.city !== 'Online' ? ` Based in ${u.city}.` : ''
   // CTR-tuned description: numeric facts first, no "Compare/Explore" lead, micro-CTA at end.
-  let description = `${cleanName} online courses: ${progStr}.${hasFee ? ` ${feeStr} fees.` : ''}${nirfHook} ${naacSeg}. UGC-DEB approved.${specStr}${cityStr} Check ${year} eligibility, syllabus & placement data free.`
+  let description = `${cleanName} online courses: ${progStr}.${hasFee ? ` ${feeStr} fees.` : ''}${nirfHook} ${naacSeg}. ${debApprovedSentence(u.id)}${specStr}${cityStr} Check ${year} eligibility, syllabus & placement data free.`
   if (description.length < 150) {
     // Same guards as the primary description. A record with few programmes and
     // no city produces a short primary string and falls through to here, which
@@ -174,7 +175,7 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
         // 2026-11-16). sameAs points at the official portal where we hold one
         // that belongs to this university alone (see schemaSameAs).
         ...(schemaSameAs(u.officialUrl) ? { sameAs: schemaSameAs(u.officialUrl) } : {}),
-        description: `${u.name} is a UGC DEB approved university offering online degrees.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}${u.nirf < 200 ? ` NIRF #${u.nirf} University.` : ''}`,
+        description: `${u.name} ${debBasis(u.id) ? `offers work-integrated online programmes. ${debBasis(u.id)!.metaSentence}` : 'is a UGC DEB approved university offering online degrees.'}${u.naac ? ` NAAC ${u.naac} accredited.` : ''}${u.nirf < 200 ? ` NIRF #${u.nirf} University.` : ''}`,
         ...(kw ? { keywords: kw } : {}),
         // Omit a field we do not have rather than inventing one. This used to
         // read `u.city !== 'Online' ? u.city : u.name.split(' ')[0]`, which

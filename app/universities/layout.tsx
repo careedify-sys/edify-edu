@@ -2,6 +2,7 @@
 // SEO metadata for the Universities Listing page
 import type { Metadata } from 'next'
 import { UNIVERSITIES } from '@/lib/data'
+import { isOnDebRegister } from '@/lib/seo/deb-basis'
 
 export const metadata: Metadata = {
   title: '125+ UGC Approved Online Universities India 2026',
@@ -28,9 +29,11 @@ const itemListSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
   name: 'UGC DEB Approved Online Universities in India 2026',
-  numberOfItems: UNIVERSITIES.length,
+  // A8 (2026-11-18): a list named "UGC DEB Approved" must not include a
+  // university recorded as not on the DEB register (lib/seo/deb-basis.ts).
+  numberOfItems: UNIVERSITIES.filter(u => isOnDebRegister(u.id)).length,
   itemListElement: UNIVERSITIES
-    .filter(u => u.nirf < 200)
+    .filter(u => u.nirf < 200 && isOnDebRegister(u.id))
     .sort((a, b) => a.nirf - b.nirf)
     .slice(0, 30)
     .map((u, i) => ({

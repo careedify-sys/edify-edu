@@ -1,5 +1,7 @@
 import type { University, ProgramDetail } from '@/lib/data'
-import { Clock, Monitor, Award, BarChart2, GraduationCap, CheckCircle } from 'lucide-react'
+import { Clock, Monitor, Award, BarChart2, GraduationCap, CheckCircle, FileText } from 'lucide-react'
+import { isExamCentre } from '@/lib/exam-mode'
+import { debBasis } from '@/lib/seo/deb-basis'
 
 interface Props {
   u: University
@@ -7,14 +9,21 @@ interface Props {
   program: string
 }
 
+// A9 (2026-11-18): Mode was "100% Online" and Degree "{program} (Regular)" for
+// every university. Neither came from any record, and "100% Online" is false
+// for an Exam Centre university. Mode now says what we know (online classes)
+// and exams come from u.examMode. The Approval row prints the recorded basis
+// for a university that is not on the UGC-DEB register (A8).
 export default function QuickFactsCard({ u, pd, program }: Props) {
+  const basis = debBasis(u.id)
   const facts = [
     { icon: Clock, label: 'Duration', value: pd.duration || '2 Years' },
-    { icon: Monitor, label: 'Mode', value: '100% Online' },
+    { icon: Monitor, label: 'Classes', value: 'Online' },
+    ...(u.examMode ? [{ icon: FileText, label: 'Exams', value: isExamCentre(u) ? 'At exam centres' : u.examMode }] : []),
     ...(u.naac ? [{ icon: Award, label: 'NAAC Grade', value: u.naac }] : []),
     ...((u as any).nirfMgt && (u as any).nirfMgt > 0 && (u as any).nirfMgt < 200 ? [{ icon: BarChart2, label: 'NIRF Management', value: `#${(u as any).nirfMgt}` }] : u.nirf > 0 && u.nirf < 500 ? [{ icon: BarChart2, label: 'NIRF University', value: `#${u.nirf}` }] : []),
-    { icon: GraduationCap, label: 'Degree', value: `${program} (Regular)` },
-    { icon: CheckCircle, label: 'Approval', value: 'UGC DEB' },
+    { icon: GraduationCap, label: 'Degree', value: program },
+    { icon: CheckCircle, label: 'Approval', value: basis ? `${basis.badge} (${basis.badgeSub})` : 'UGC DEB' },
   ]
 
   return (

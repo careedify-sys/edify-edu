@@ -10,6 +10,7 @@ import { getUniversitiesByProgram, getPeerUniversities } from '@/lib/data'
 import { getShortUniversityName } from '@/lib/format'
 import { getSpecContent, getSpecFallback } from '@/lib/content'
 import { getSyllabus } from '@/lib/syllabus'
+import { debBasis } from '@/lib/seo/deb-basis'
 import { COUPONS } from '@/lib/coupons'
 import type { Program } from '@/lib/data'
 import { formatRank, preferForProgram } from '@/lib/highlight'
@@ -342,7 +343,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
     ? `₹${ownOneTime.toLocaleString('en-IN')} paid one-time${ownSemester ? `, or ₹${ownSemester.toLocaleString('en-IN')} paid by semester` : ''}`
     : formatExactFee(getExactFee(u, program as Program))
   const templateFaqs: { q: string; a: string }[] = [
-    { q: `Is ${cleanName} Online ${program} in ${spec} valid for jobs?`, a: `Yes. ${cleanName} is UGC DEB approved${u.naac ? ` and NAAC ${u.naac} accredited` : ''}. The degree is identical to an on-campus degree.` },
+    { q: `Is ${cleanName} Online ${program} in ${spec} valid for jobs?`, a: debBasis(u.id) ? `${debBasis(u.id)!.sentence}${u.naac ? ` It is NAAC ${u.naac} accredited.` : ''} Confirm in writing that the degree meets the recognition your employer asks for.` : `Yes. ${cleanName} is UGC DEB approved${u.naac ? ` and NAAC ${u.naac} accredited` : ''}. The degree is identical to an on-campus degree.` },
     { q: `What is the fee for ${program} ${spec} at ${cleanName}?`, a: `${specFeeText ? `Total fee is ${specFeeText}.` : 'The fee for the current intake is not published on this page yet.'} ${emiSentence(ownPlan?.rows.find(r => /emi/i.test(r.mode))?.instalment ?? programmeEmiFrom(u, program), program === 'MBA' ? undefined : NO_PROGRAMME_EMI)}` },
     { q: `Can I work while doing ${program} in ${spec} from ${cleanName}?`, a: `Yes. Live sessions on weekends, recordings available 24/7. ${isExamCentre(u) ? EXAM_CENTRE_LINE : `${u.examMode} assessments. No campus visits required.`}` },
     { q: `What career opportunities does ${spec} specialisation offer?`, a: specContent?.careerBeginner?.length ? `${specContent.careerBeginner[0]?.title} and other roles. ${specContent.salaryRange || ''}` : pd.avgSalary ? `Graduates typically enter ${spec}-related roles with salary ranges of ${pd.avgSalary} depending on experience.` : `Graduates typically enter ${spec}-related roles.` },
@@ -491,7 +492,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                   {/* Approvals */}
                   <div className="rounded-xl border border-slate-200 bg-white p-5">
                     <ApprovalBadges
-                      approvals={u.approvals}
+                      approvals={u.approvals} universityId={u.id}
                       naac={u.naac}
                       nirf={u.nirf}
                       nirfMgt={u.nirfMgt}
@@ -653,7 +654,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                 <>
                   <div className="rounded-xl border border-slate-200 bg-white p-5">
                     <ApprovalBadges
-                      approvals={u.approvals}
+                      approvals={u.approvals} universityId={u.id}
                       naac={u.naac}
                       nirf={u.nirf}
                       nirfMgt={u.nirfMgt}

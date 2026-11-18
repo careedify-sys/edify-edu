@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { FileText, CheckCircle } from 'lucide-react'
 import RequestSampleModal from './RequestSampleModal'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
+import { isOnDebRegister } from '@/lib/seo/deb-basis'
 
 interface Props {
   universityName: string
@@ -57,7 +58,9 @@ export default function RequestSampleCertCard({ universityName, universityId, pr
         </div>
 
         <p style={{ fontSize: 13, color: '#475569', lineHeight: 1.65, marginBottom: 18 }}>
-          {shouldIndexUniversity(universityId)
+          {shouldIndexUniversity(universityId) && !isOnDebRegister(universityId)
+            ? 'Request a sample and our counsellor will share what we can verify within 24 hours.'
+            : shouldIndexUniversity(universityId)
             ? 'Every UGC DEB approved online degree is legally identical to an on-campus degree. Request a sample and our counsellor will share a verified image within 24 hours.'
             : 'Our counsellor can confirm what this university currently awards and in which mode. Request a sample and we will share what we can verify within 24 hours.'}
         </p>

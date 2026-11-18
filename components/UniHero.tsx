@@ -8,6 +8,7 @@ import { TrendingUp } from 'lucide-react'
 import LOGOS_MANIFEST from '@/lib/data/logos-manifest.json'
 import RankingBadge from './RankingBadge'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
+import { debBasis } from '@/lib/seo/deb-basis'
 
 interface Props {
   u: University
@@ -52,7 +53,9 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
       : `${onlinePrefix} ${program} ${year}: Fees, Placement, Syllabus & Reviews`
   const h1 = customH1 || generatedH1
 
-  const approvalSuffix = modeVerified ? ' · UGC DEB Approved' : ' · Delivery mode unconfirmed'
+  // A8: a university not on the UGC-DEB register shows its recorded UGC basis.
+  const basis = debBasis(u.id)
+  const approvalSuffix = !modeVerified ? ' · Delivery mode unconfirmed' : basis ? ` · ${basis.badge} (${basis.badgeSub})` : ' · UGC DEB Approved'
   const eyebrow = spec
     ? `${level} · ${pd.duration || '2 Years'}${approvalSuffix}`
     : `${level} · ${specs.length > 0 ? `${specs.length} Specialisations · ` : ''}${pd.duration || '2 Years'}${approvalSuffix}`
@@ -60,7 +63,7 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
   const sub = !modeVerified
     ? `edifyedu.in cannot confirm that ${cleanName} runs this programme online. Check deb.ugc.ac.in and contact the university directly.`
     : spec
-    ? `${program} with ${spec} specialisation from ${cleanName}. UGC DEB approved.${u.naac ? ` NAAC ${u.naac} accredited.` : ''}`
+    ? `${program} with ${spec} specialisation from ${cleanName}. ${basis ? basis.metaSentence : 'UGC DEB approved.'}${u.naac ? ` NAAC ${u.naac} accredited.` : ''}`
     : (cleanCareerOutcome(pd.careerOutcome || '') || `Advance your career with an Online ${program} from ${cleanName}. Choose from ${specs.length}+ industry-relevant specialisations. Study while working.`)
 
   // MBA reads u.eligibility, the string the body and FAQ print, so the tile
