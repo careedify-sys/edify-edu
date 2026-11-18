@@ -46,7 +46,7 @@ import AssuredMarquee   from './AssuredMarquee'
 import QuickAnswers      from './QuickAnswers'
 import { getHubAnswers } from '@/lib/answers/hub-answers'
 import RequestSyllabusCard from './RequestSyllabusCard'
-import { getSyllabus } from '@/lib/syllabus'
+import { getManifestCoreSyllabus } from '@/lib/syllabus'
 import { debBasis, isOnDebRegister } from '@/lib/seo/deb-basis'
 import { getProgramLinks } from '@/lib/internal-links'
 import ProgramBlogLinks from './ProgramBlogLinks'
@@ -167,8 +167,8 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
   // approvals block is the honest place for the link, because that is where the
   // UGC-DEB and NAAC claims are made. See audits/topical-authority-2026-09-13.md.
   const verifyHref = getVerifyPage(u.id)
-  const rawHubSyllabus = getSyllabus(u.id, program)
-  const hubSyllabus = rawHubSyllabus && Object.values(rawHubSyllabus).some(Boolean) ? rawHubSyllabus : null
+  // Manifest _core only; see getManifestCoreSyllabus (A9 QA F1).
+  const hubSyllabus = getManifestCoreSyllabus(u.id, program)
   const overviewHref      = getUniversityOverviewLink(u)
 
   // Sprint 1 Task 2 (revised): fact-scrubbed FAQ set. Every factual claim below

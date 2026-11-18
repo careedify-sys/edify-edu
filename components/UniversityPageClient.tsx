@@ -29,7 +29,7 @@ import { stripLinks } from '@/lib/link-markup'
 import FirstHandUniversitySections from '@/components/FirstHandUniversitySections'
 import { FirstHandText } from '@/components/FirstHandShared'
 import OwnerMbaSentence from '@/components/OwnerMbaSentence'
-import { isExamCentre, EXAM_CENTRE_LINE } from '@/lib/exam-mode'
+import { isExamCentre, EXAM_CENTRE_LINE, isExamModeConfirmed } from '@/lib/exam-mode'
 import { debBasis } from '@/lib/seo/deb-basis'
 
 const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')
@@ -624,7 +624,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     <h2 className="font-display text-xl font-bold text-white mb-2">Admissions Open: January 2027 Batch</h2>
                     <ul className="flex flex-col gap-1.5">
                       <li className="text-sm text-slate-300">📅 Last date to apply: <strong className="text-white">March 2027</strong></li>
-                      <li className="text-sm text-slate-300">💻 Mode: <strong className="text-white">Online classes; {isExamCentre(u) ? 'exams in person at designated centres' : `${u.examMode} exams`}</strong></li>
+                      <li className="text-sm text-slate-300">💻 Mode: <strong className="text-white">Online classes{isExamModeConfirmed(u) ? (isExamCentre(u) ? '; exams in person at designated centres' : `; ${u.examMode} exams`) : ''}</strong></li>
                       <li className="text-sm text-slate-300">✅ Eligibility: <strong className="text-white">{u.eligibility}</strong></li>
                     </ul>
                   </div>
