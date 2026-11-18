@@ -183,7 +183,21 @@ One record, done properly, beats ten touched.
 
 **Deploys:** one merge per batch of 3 to 5 universities, not one per university (every push is a paid Vercel deploy).
 
-**Queue (proposed; confirm the order against GSC impressions in the first Monday review):**
+**Working queue (data-led, 16 Nov; `audits/queue-ranking-2026-11-16.md`).** Ranked by October 2026 impressions on the MBA cluster (profile + MBA hub + MBA spec pages + MBA review post), kept only if also top 10 for Sep-Oct. Q1 (the Phase A prompt's D3) overrides this if it arrives.
+1. BITS Pilani WILP (8,748 impr / 45 clicks, Oct; fee never checked)
+2. Galgotias (3,934 / 5)
+3. JAIN (2,743 / 6)
+4. Dayananda Sagar (1,857 / 16; fee never checked)
+5. Symbiosis (1,866 / 8)
+6. Dr. D.Y. Patil Vidyapeeth (1,784 / 1; fee never checked)
+7. Amity (1,343 / 4)
+8. Uttaranchal (1,172 / 7)
+9. Shoolini (1,084 / 9; fee never checked)
+10. Adichunchanagiri (841 / 9; MBA hub at position 5.2)
+
+NMIMS, MUJ, SMU, LPU, Chandigarh, Amrita and UPES dropped out: each under 900 Oct cluster impressions, or a hub at position 49+ with 0 clicks. Searches for brand MBAs land on the review posts, not the hubs, which is the B4 answer-first problem.
+
+**Original proposal (superseded):**
 1. NMIMS
 2. Amity
 3. Manipal University Jaipur
@@ -244,7 +258,13 @@ A page "meets standard" only when every line is true on the rendered page.
 
 | Week | Critical open | Sitemap URLs | Clicks (non-tools) | Impr hubs/day | Universities at standard | Facts with `checkedOn` | Prompts cited / run | Leads |
 |---|---|---|---|---|---|---|---|---|
-| 16 Nov (baseline) | 1 (S1) | 2,301 | ~350/wk | 554 (Oct) | 0 | 26 fee dates, unrendered | not run | from Sheets |
+| 16 Nov (baseline) | 1 (S1) | 2,301 | ~350/wk (Aug-Nov avg) | 554 (Oct) | 0 | 26 fee dates, unrendered | not run | from Sheets |
+| W43 19-25 Oct (Windsor) | | | 212 (tools 573) | univ. section 9,532 impr/wk | | | | |
+| W44 26 Oct-1 Nov | | | 194 (tools 725) | 11,121 | | | | |
+| W45 2-8 Nov | | | 144 (tools 630) | 8,496 | | | | |
+| W46 9-15 Nov (noindex live 14 Nov) | 1 (S1) | 2,301 | 151 (tools 436) | 8,861 | 0 | 26 | not run | |
+
+Weekly source from 16 Nov: Windsor.ai, Search Console connector, property `sc-domain:edifyedu.in`, ISO weeks. Site totals: W43 784 clicks / 148,597 impr; W44 919 / 172,800; W45 774 / 139,896; W46 587 / 117,132. The 350 guard baseline is questioned in Q7.
 
 Rules: GSC trend from Chart.csv; page segments from Pages.csv only (Queries.csv is capped); never subtract two Pages exports.
 
