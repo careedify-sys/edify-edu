@@ -54,7 +54,7 @@ import AssuredMarquee    from './AssuredMarquee'
 import RequestSyllabusCard from './RequestSyllabusCard'
 import { UniversityVideo } from './YouTubeVideo'
 import { getExactFee, formatExactFee } from '@/lib/fees'
-import { feeSentence, emiSentence, programmeEmiFrom, NO_PROGRAMME_EMI } from '@/lib/seo/display-guards'
+import { feeSentence, emiSentence, programmeEmiFrom, NO_PROGRAMME_EMI, programmeEligibility } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { splitParagraph } from '@/lib/split-paragraphs'
 import { isExamCentre, EXAM_CENTRE_LINE } from '@/lib/exam-mode'
@@ -498,6 +498,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                       nirfMgt={u.nirfMgt}
                       nirfEng={u.nirfEng}
                       nirfEngYear={u.nirfEngYear}
+                  nirfYear={u.nirfYear}
                       highlight={u.highlight}
                       layout="row"
                     />
@@ -661,6 +662,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
                       nirfMgt={u.nirfMgt}
                       nirfEng={u.nirfEng}
                       nirfEngYear={u.nirfEngYear}
+                  nirfYear={u.nirfYear}
                       highlight={u.highlight}
                       layout="row"
                     />
@@ -698,7 +700,7 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
 
                   <EMIPlans u={u} pd={pd} program={program} />
                   <SampleCertificate universityId={u.id} program={program} universityName={cleanName} />
-                  <AdmissionSteps program={program} eligibility={u.eligibility} />
+                  <AdmissionSteps program={program} eligibility={programmeEligibility(u, program)} />
                   <SectionPlacements pd={pd} cleanName={cleanName} program={program} />
                   <BeyondAdmissionSection cleanName={cleanName} />
                   <TopHirers pd={pd} program={program} cleanName={cleanName} />

@@ -49,7 +49,7 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'marketing',
     faqs: [
-      { q: 'Is Amity or MUJ better for online MBA?', a: 'Both are NAAC A+ and UGC-DEB approved. Amity has 19 specialisations and QS ranking. MUJ has Coursera Plus bundled and Manipal group brand. Choose based on spec variety vs platform perks.' },
+      { q: 'Is Amity or MUJ better for online MBA?', a: 'Both are NAAC A+ and UGC-DEB approved. Amity has many specialisations and a QS ranking. MUJ has Coursera Plus bundled and Manipal group brand. Choose based on spec variety vs platform perks.' },
       { q: 'What is the fee difference between Amity and MUJ?', a: 'Amity costs Rs 2,07,000 (one-time) to Rs 2,25,000 (standard). MUJ costs Rs 1,84,000 (or Rs 1,56,400 with 15% upfront discount). MUJ is more affordable.' },
       { q: 'Does MUJ include Coursera Plus?', a: 'Yes. MUJ bundles free Coursera Plus access throughout the programme. Amity does not include Coursera but offers broader specialisation options.' },
       { q: 'Which university has better NIRF rank?', a: 'Amity holds NIRF #22 University. MUJ holds NIRF rank in the University category as well. Both are comparable in NIRF positioning.' },
@@ -66,7 +66,7 @@ export const PAIRS: Record<string, PairConfig> = {
     faqs: [
       { q: 'Is Amity or NMIMS better ranked in NIRF 2025?', a: 'NMIMS holds NIRF #24 Management rank. Amity holds NIRF #22 University rank. Both are strong. NMIMS is better positioned in the Management category specifically.' },
       { q: 'What is the fee difference between Amity and NMIMS online MBA?', a: 'Amity standard MBA costs Rs 2,25,000 (semester-wise, Rs 56,300/sem) or Rs 2,07,000 (one-time payment). NMIMS costs Rs 2,20,000 (semester-wise, Rs 55,000/sem) or Rs 1,96,000 (one-time). On a like-for-like semester basis, both are nearly identical. One-time payment saves Rs 18,000 at Amity and Rs 24,000 at NMIMS.' },
-      { q: 'Does Amity offer specialisations that NMIMS does not?', a: 'Yes. Amity offers 19 specialisations including Healthcare, Hospitality, Insurance, and Retail. NMIMS offers 5-6 focused tracks. Amity has broader choice; NMIMS has deeper focus.' },
+      { q: 'Does Amity offer specialisations that NMIMS does not?', a: 'Yes. Amity offers many specialisations including Healthcare, Hospitality, Insurance, and Retail. NMIMS offers 5-6 focused tracks. Amity has broader choice; NMIMS has deeper focus.' },
       { q: 'Which has better placements: Amity or NMIMS?', a: 'NMIMS has stronger Mumbai-centric BFSI recruiter connections. Amity has a larger pan-India alumni network. For Mumbai finance roles, NMIMS. For NCR and broad management, Amity.' },
       { q: 'Is Amity MBA valued more than NMIMS by employers?', a: 'Both are well-recognised. NMIMS carries stronger weight specifically in Mumbai financial services. Amity has broader geographic recognition due to 500+ hiring partners across India.' },
     ],
@@ -79,7 +79,7 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'finance',
     faqs: [
-      { q: 'Is SMU or Amity better for online MBA?', a: 'Amity has 19 specs and NIRF #22 University. SMU has 5 specs at Rs 1,20,000 (nearly half of Amity). SMU is budget-friendly with Manipal brand. Amity is premium with broader choice.' },
+      { q: 'Is SMU or Amity better for online MBA?', a: 'Amity has many specs and NIRF #22 University. SMU has 5 specs at Rs 1,20,000 (nearly half of Amity). SMU is budget-friendly with Manipal brand. Amity is premium with broader choice.' },
       { q: 'What is the fee difference?', a: 'SMU costs Rs 1,20,000 flat. Amity costs Rs 2,07,000 (one-time). SMU saves Rs 1,05,000. Significant difference.' },
       { q: 'Does SMU have the same brand as MUJ?', a: 'No. SMU (Sikkim Manipal University) is a separate institution from MUJ (Manipal University Jaipur). Both are in the Manipal group but independently governed and accredited.' },
       { q: 'Does SMU offer Northeast scholarship?', a: 'Yes. SMU lists a 30% scholarship for candidates from Sikkim and the Northeast region with valid address proof. On the Rs 1,20,000 course fee that brings the fee to Rs 84,000. Talk to our counsellor to confirm the scholarship before you apply.' },
@@ -141,9 +141,9 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'marketing',
     faqs: [
-      { q: 'Is Amity or Symbiosis better for online MBA?', a: 'Symbiosis has NAAC A++ and deeper academic rigour. Amity has 19 specialisations and QS ranking. Symbiosis costs Rs 1,45,000 more at sticker (Rs 90,000 more after Symbiosis 2+ years experience concession). Choose based on budget and spec variety needs.' },
+      { q: 'Is Amity or Symbiosis better for online MBA?', a: 'Symbiosis has NAAC A++ and deeper academic rigour. Amity has many specialisations and a QS ranking. Symbiosis costs Rs 1,45,000 more at sticker (Rs 90,000 more after Symbiosis 2+ years experience concession). Choose based on budget and spec variety needs.' },
       { q: 'What is the fee difference?', a: 'Amity costs Rs 2,07,000 (one-time) to Rs 2,25,000 (standard). Symbiosis costs Rs 3,70,000 sticker (Rs 3,15,000 after the 2+ years experience concession). Difference: Rs 1,45,000 at sticker, or Rs 90,000 after the concession.' },
-      { q: 'Which has more specialisations?', a: 'Amity offers 19 specialisations. Symbiosis offers 9. Amity has broader choice including niche tracks.' },
+      { q: 'Which has more specialisations?', a: 'Amity offers more specialisations. Symbiosis offers 9. Amity has broader choice including niche tracks.' },
       { q: 'Is Symbiosis worth the premium?', a: 'If NAAC A++ and Pune academic heritage matter for your career, yes. If you want broader spec choice at lower fee, Amity wins on value.' },
       { q: 'Do both offer scholarships?', a: 'Amity offers Defence, Divyaang, Alumni, Merit, and Sports scholarships. Symbiosis offers a work-experience scholarship (Rs 55,000 off for 2+ years experience).' },
     ],
@@ -158,7 +158,7 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'marketing',
     faqs: [
-      { q: 'Is Amity or LPU better for online MBA?', a: 'Amity has NIRF #22 University and QS Asia-Pacific ranking. LPU has NAAC A++ and NIRF #31 University. Both are UGC-DEB approved. Amity offers 19 specialisations; LPU offers 12 with a dual-specialisation option.' },
+      { q: 'Is Amity or LPU better for online MBA?', a: 'Amity has NIRF #22 University and QS Asia-Pacific ranking. LPU has NAAC A++ and NIRF #31 University. Both are UGC-DEB approved. Amity offers many specialisations; LPU offers 12 with a dual-specialisation option.' },
       { q: 'What is the fee difference between Amity and LPU?', a: 'Amity costs Rs 2,07,000 (one-time) to Rs 2,25,000. LPU costs Rs 1,61,600 to Rs 2,00,000. LPU is Rs 25,000-45,000 cheaper depending on payment mode.' },
       { q: 'Does LPU offer dual specialisation?', a: 'Yes. LPU is one of the few online MBA programmes that lets you pick two specialisations (e.g. Marketing + Digital Marketing). Amity offers single specialisation per enrollment.' },
       { q: 'Which has a higher NAAC grade?', a: 'LPU has NAAC A++ (highest grade). Amity has NAAC A+. LPU scores higher on NAAC accreditation.' },

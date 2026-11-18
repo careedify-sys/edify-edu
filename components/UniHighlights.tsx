@@ -122,7 +122,7 @@ export default function UniHighlights({ u, program, cleanName }: Props) {
           <div className="flex items-center gap-1.5 mb-2.5">
             <Gift size={14} style={{ color: '#10b981' }} />
             <h3 className="text-xs font-black uppercase tracking-wide text-slate-500">
-              Included at no extra cost
+              {h.valueAddsHeading ?? 'Included at no extra cost'}
             </h3>
           </div>
           <ul className="grid gap-2 sm:grid-cols-2">

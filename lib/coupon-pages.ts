@@ -419,7 +419,7 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Is there an IGNOU online MBA coupon code?', a: 'No. IGNOU is a central government university with one of the lowest online MBA fees in India. No coupon code is needed or applicable.' },
       { q: 'Why is IGNOU MBA so cheap?', a: 'IGNOU is funded by the Government of India and operates as a not-for-profit institution. The low fee reflects government subsidization, not lower quality.' },
       { q: 'Is IGNOU MBA valid for government jobs?', a: 'Yes. IGNOU holds NAAC A++ and is arguably the strongest online MBA for government job eligibility as a central university.' },
-      { q: 'Should I choose IGNOU or Amity?', a: 'IGNOU for pure affordability and government job eligibility. Amity for structured LMS, live sessions, international accreditation (WASC+QAA), and 19 specialisations.' },
+      { q: 'Should I choose IGNOU or Amity?', a: 'IGNOU for pure affordability and government job eligibility. Amity for structured LMS, live sessions, international accreditation (WASC+QAA), and many specialisations.' },
     ],
     peerComparisons: [
       { uni: 'Galgotias (Rs 80,200)', savings: 'Up to Rs 5,000 via GALG2026-5K' },

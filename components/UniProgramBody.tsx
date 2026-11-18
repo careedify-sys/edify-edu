@@ -53,7 +53,7 @@ import ProgramBlogLinks from './ProgramBlogLinks'
 import { UniversityVideo } from './YouTubeVideo'
 import SiblingProgrammes from './SiblingProgrammes'
 import { getSiblingProgrammes, getUniversityOverviewLink, getVerifyPage, resolveSpecHref } from '@/lib/seo/safe-internal-links'
-import { feeSentence, emiSentence, programmeEmiFrom, NO_PROGRAMME_EMI } from '@/lib/seo/display-guards'
+import { feeSentence, emiSentence, programmeEmiFrom, NO_PROGRAMME_EMI, programmeEligibility } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { resolveFirstHand, fillFeeTokens } from '@/lib/first-hand'
 import FirstHandMbaSections from './FirstHandMbaSections'
@@ -205,8 +205,14 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
       a: `${specs.length} specialisations: ${formatSpecList(specs)}.` }] : []),
     { q: `Is ${cleanName} NAAC accredited?`,
       a: u.naac ? `Yes. ${cleanName} holds NAAC ${u.naac} accreditation${nirfSuffix}.` : `${cleanName} is UGC-DEB entitled for online delivery. No NAAC grade is published on this page yet, so confirm the current grade at naac.gov.in.` },
-    { q: `What is the eligibility for ${program} at ${cleanName}?`,
-      a: u.eligibility || `Any Bachelor's degree with minimum 50% aggregate marks. Final year students may apply.` },
+    // B3 batch 2: non-MBA pages printed the MBA rule (u.eligibility). They now
+    // print a programme-level rule or drop the question.
+    ...(program === 'MBA'
+      ? [{ q: `What is the eligibility for ${program} at ${cleanName}?`,
+          a: u.eligibility || `Any Bachelor's degree with minimum 50% aggregate marks. Final year students may apply.` }]
+      : programmeEligibility(u, program)
+        ? [{ q: `What is the eligibility for ${program} at ${cleanName}?`, a: programmeEligibility(u, program)! }]
+        : []),
     { q: `What exam mode does ${cleanName} use?`,
       a: isExamCentre(u) ? EXAM_CENTRE_LINE : `${u.examMode} examinations.` },
     { q: `How long does the ${program} program take at ${cleanName}?`,
@@ -325,6 +331,7 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                   nirfMgt={u.nirfMgt}
                   nirfEng={u.nirfEng}
                   nirfEngYear={u.nirfEngYear}
+                  nirfYear={u.nirfYear}
                   highlight={u.highlight}
                   layout="row"
                 />
@@ -348,6 +355,12 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
                     {s.ugcDeb.heading || `${cleanName} Online ${program}: UGC-DEB Approval Status`}
                   </h2>
                   <div className="text-sm text-slate-600 leading-relaxed whitespace-pre-line">{s.ugcDeb.body}</div>
+                  {/* B3 batch 2 (PAGE-STANDARDS M4): the register itself, a regulator link. */}
+                  {isOnDebRegister(u.id) && (
+                    <a href="https://deb.ugc.ac.in/Home/HEI_Prog_List" target="_blank" rel="noopener noreferrer" className="inline-block mt-3 text-sm font-semibold underline" style={{ color: '#0f172a' }}>
+                      Check the UGC-DEB programme register
+                    </a>
+                  )}
                 </section>
               )}
 
@@ -444,8 +457,8 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
               {/* §13 Admission */}
               <div id="admission">
                 {fh
-                  ? <FirstHandMbaSections fh={fh} part="admission" eligibility={u.eligibility} />
-                  : <AdmissionSteps program={program} eligibility={u.eligibility} />}
+                  ? <FirstHandMbaSections fh={fh} part="admission" eligibility={programmeEligibility(u, program)} />
+                  : <AdmissionSteps program={program} eligibility={programmeEligibility(u, program)} />}
               </div>
 
               {/* §13B ABC ID (generated content only) */}

@@ -22,7 +22,7 @@ export default function QuickFactsCard({ u, pd, program }: Props) {
     { icon: Monitor, label: 'Classes', value: 'Online' },
     ...(isExamModeConfirmed(u) ? [{ icon: FileText, label: 'Exams', value: isExamCentre(u) ? 'At exam centres' : u.examMode }] : []),
     ...(u.naac ? [{ icon: Award, label: 'NAAC Grade', value: u.naac }] : []),
-    ...((u as any).nirfMgt && (u as any).nirfMgt > 0 && (u as any).nirfMgt < 200 ? [{ icon: BarChart2, label: 'NIRF Management', value: `#${(u as any).nirfMgt}` }] : u.nirf > 0 && u.nirf < 500 ? [{ icon: BarChart2, label: 'NIRF University', value: `#${u.nirf}` }] : []),
+    ...((u as any).nirfMgt && (u as any).nirfMgt > 0 && (u as any).nirfMgt < 200 ? [{ icon: BarChart2, label: 'NIRF Management', value: `#${(u as any).nirfMgt}${u.nirfYear ? ` (${u.nirfYear})` : ''}` }] : u.nirf > 0 && u.nirf < 500 ? [{ icon: BarChart2, label: 'NIRF University', value: `#${u.nirf}${u.nirfYear ? ` (${u.nirfYear})` : ''}` }] : []),
     { icon: GraduationCap, label: 'Degree', value: program },
     { icon: CheckCircle, label: 'Approval', value: basis ? `${basis.badge} (${basis.badgeSub})` : 'UGC DEB' },
   ]

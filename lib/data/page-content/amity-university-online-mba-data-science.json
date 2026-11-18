@@ -97,10 +97,6 @@
         "answer": "Yes. Advanced Deep Learning is a dedicated Sem 4 subject covering CNNs and RNNs. The depth is at MBA level, conceptually and applied, not at a pure computer science research level. Candidates targeting AI engineering roles should supplement with TensorFlow or PyTorch self-study alongside the degree."
       },
       {
-        "question": "What salary can Data Science MBA graduates from Amity expect?",
-        "answer": "Data scientists with 3-5 years of experience who complete this MBA and transition to manager roles typically see packages of Rs 18-30 lakh at mid-size technology companies. Senior data science managers at scale-up firms see Rs 25-45 lakh. Fresher data science graduates typically start at Rs 6-10 lakh and grow significantly with project experience."
-      },
-      {
         "question": "Can I work full-time as a data engineer or ML engineer while doing this MBA?",
         "answer": "Yes. The programme is designed for working professionals. Weekend live sessions, 24/7 recordings, and online proctored exams mean no campus visits. The Sem 3-4 ML content will be directly applicable to your day-to-day work if you are in a technical data role, which reinforces learning. Most technical data professionals manage this schedule alongside 40-50 hour work weeks."
       }
@@ -108,7 +104,7 @@
     "chooseAlternatives": {
       "chooseIf": [
         "You are a data analyst, ML engineer, or software professional with 2+ years experience targeting data science management or ML product roles.",
-        "You want one of the most technically rigorous MBA specialisations available online in India with deep learning and data engineering at under Rs 2 lakh.",
+        "You want one of the most technically rigorous MBA specialisations available online in India with deep learning and data engineering.",
         "You want a NIRF University #22, NAAC A+ management credential to add business depth to your technical data science profile."
       ],
       "consider": [
