@@ -184,7 +184,10 @@ export default function UniversityCard({ u, highlightProgram, specSlug, programF
             <div>
               <div className="text-xs mb-0.5 text-[var(--ink-3)]">{programFee !== undefined && highlightProgram ? `${highlightProgram} total fees` : 'Total fees'}</div>
               <div className="uc-fee font-bold text-base">
-                {programFee === undefined
+                {/* B3 batch 4: feeMin 0 means no fee on record; never print "₹0". */}
+                {programFee === undefined && !(u.feeMin > 0)
+                  ? 'Contact our counsellor for current fee details'
+                  : programFee === undefined
                   ? (formatFee(u.feeMin) === formatFee(u.feeMax)
                     ? <>{formatFee(u.feeMin)}</>
                     : <>{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</>)
@@ -192,7 +195,7 @@ export default function UniversityCard({ u, highlightProgram, specSlug, programF
               </div>
             </div>
             {/* emiFrom is MBA-derived, so it is hidden when a programme fee is shown */}
-            {programFee === undefined && u.emiFrom > 0 && (
+            {programFee === undefined && u.emiFrom > 0 && u.feeMin > 0 && (
             <div className="text-right">
               <div className="text-xs mb-0.5 text-[var(--ink-3)]">EMI from</div>
               <div className="uc-emi font-semibold text-sm">{u.emiFrom > 0 ? `₹${u.emiFrom.toLocaleString()}/mo` : 'On request'}</div>

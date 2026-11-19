@@ -49,11 +49,16 @@
     "uniquely offers" reads "offers". lib/blog.ts: the "Only programme with Data Science in the title" list
     item is deleted and two "(the only programme with ... title)" parentheticals are cut. pairs.ts had none.
 - **7. QS World on Amity BBA/MCA posts:**
-  - Why: lib/data.ts qsRank is the QS Asia rank (Amity 45, LPU 51). "QS World" was a different, unsourced claim.
-  - What: 17 "QS World" occurrences in amity-online-bba-fees-2026, amity-online-bba-review-2026,
-    online-bba-degree-india-validity-2026, online-bba-programs-india-2026 and online-mca-amity-vs-lpu-2026
-    now say "QS Asia". No title, seoTitle or metaDescription line was touched. Out of scope and left: the MUJ,
-    MAHE and Shoolini (Q30) QS lines.
+  - Why: "QS World" had no source. The Amity verify sheet (rows 21-22) says remove the QS claim; qsRank 45
+    itself has no approved source (Q26 open), and LPU has no verify sheet at all.
+  - What: the first commit (5182f3f) relabelled the 17 occurrences "QS Asia". QA rejected that as a new
+    unsourced claim, so the round-2 commit removes the QS item entirely: ", QS Asia" tokens are deleted from
+    each accreditation list (inside fee sentences only the token goes), the "QS ... Rankings: Amity appears
+    in ..." paragraph and the Approvals-table item are deleted, and the MCA table reads "WASC (USA), QAA
+    (UK), WES" for Amity and "Not listed" for LPU. 0 QS mentions remain in amity-online-bba-fees-2026,
+    amity-online-bba-review-2026, online-bba-degree-india-validity-2026, online-bba-programs-india-2026 and
+    online-mca-amity-vs-lpu-2026. No title, seoTitle or metaDescription line was touched. Out of scope and
+    left: the MUJ, MAHE and Shoolini (Q30) QS lines.
 - **8. Derived fee gaps:**
   - Why: Rs 69,400 is Rs 1,99,000 minus an old LPU fee; "Rs 69,000 to Rs 81,560", "Rs 6,500", "Rs 34,000 to
     Rs 39,000" and "Rs 25,800" are also our subtraction, not a published figure.
@@ -76,6 +81,31 @@
   - What: the con is deleted. The tile reads "NIRF Management: 101-125 band (2025)" and the sentence reads
     "NIRF 2025 places it at #70 in the University category and in the 101-125 band in Management", both from
     the sheet's NIRF rows. Title, seoTitle, h1Title and metaDescription untouched.
+- **Side effect of item 8 (noted per QA A4):** removing "Rs 25,800" from the Kurukshetra hub JSON cleared the
+  hub fee conflict, so the Kurukshetra MBA hub now renders QuickAnswers fee content ("costs ₹1,02,000 in
+  total", a fee table, "5 specialisations for ₹1,02,000"). That figure comes from lib/data.ts through
+  getExactFee, not from new copy. sitemap-lastmod was bumped by the gate.
+- **Round 2 (QA report audits/qa/2026-11-19-b3-batch-4-premerge.md, FAILs T6, T7, T9 plus advisories):**
+  - T9 regression: UniHero tested the 10+2 pattern before graduation, so records written for both levels
+    ("Graduation for PG, 10+2 for UG") showed "10+2" on 37 MBA/MCA heroes. The level now comes from the
+    programme: PG (M*/PG*) shows "Grad" only when the record mentions graduation/bachelor/degree, UG shows
+    "10+2" only when it mentions 10+2/12th/class 12/higher or senior secondary; otherwise no tile. A record
+    that names both UG and PG shows no percentage, because it does not say which level the figure is for.
+  - T6: six more Shoolini exclusivity phrases in shoolini-online-mba-review body and FAQ answer ("unique to
+    Shoolini", "unavailable at other UGC-DEB online MBAs", "the only affordable accredited online MBA", "No
+    other accredited online MBA ... offers these combinations", "incl. unique", "tracks unavailable at any
+    other UGC-DEB approved online MBA") were removed or reworded neutrally. Title and meta untouched.
+  - T7: see item 7.
+  - Dr MGR finance, HRM and marketing JSONs: "SMU is Rs 16,000 to Rs 21,000 cheaper" was our subtraction;
+    the figure is gone and the sentence keeps the Manipal brand point.
+  - Shoolini direct selling: the FAQ naming "MCA Direct Selling Guidelines 2021" and SEBI CIS rules as course
+    content was deleted. The 2021 rules came from Consumer Affairs, and the Shoolini sheet records only
+    subject-area names.
+  - "₹0" on /universities cards (UniversityCard) and "From ₹0" on /programs: feeMin 0 now shows the counsellor
+    line on the card (and no EMI), and /programs takes its "From" figure only from fees above 0, or shows none.
+  - Profile EMI: the top Quick Stats tile and the Quick Facts row printed u.emiFrom on non-MBA tabs (33
+    profiles), and the strip, tile and hint printed it beside the counsellor fee line (41 profiles). All four
+    now use emiShown(): MBA tab only, and only when the profile shows an MBA fee.
 
 ## 2026-11-19 · B3 batch 3: Vignan verify sheet and NAAC snapshot (branch fix/b3-batch-3)
 

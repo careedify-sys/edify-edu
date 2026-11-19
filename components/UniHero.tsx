@@ -76,12 +76,21 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
   // programme (programmeEligibility: pd.eligibility, or u.eligibility for MBA).
   // It used to type "Grad + 50%" / "10+2 + 50%" for every programme with no
   // record, 378 non-MBA heroes and 17 MBA heroes. No record, no tile.
+  // B3 batch 4 QA F1: the level comes from the programme, not from whichever
+  // pattern matches first. Records written for both levels ("Graduation for
+  // PG, 10+2 for UG") resolved to "10+2" on 37 MBA/MCA heroes.
   const eligSource = programmeEligibility(u, program)
-  const eligPct = eligSource?.match(/(\d{2})%/)?.[1]
+  const isPG = /^(M|PG)/.test(program)
+  const UG_RE = /10\s*\+\s*2|12th|class 12|higher secondary|senior secondary/i
+  const PG_RE = /grad|bachelor|degree/i
   const eligLevel = !eligSource ? undefined
-    : /10\s*\+\s*2|12th|class 12|higher secondary|senior secondary/i.test(eligSource) ? '10+2'
-    : /grad|bachelor|degree/i.test(eligSource) ? 'Grad'
-    : undefined
+    : isPG ? (PG_RE.test(eligSource) ? 'Grad' : undefined)
+    : (UG_RE.test(eligSource) ? '10+2' : undefined)
+  // A record naming both levels does not say which one a percentage belongs
+  // to, so no percentage is shown for it.
+  const mixedLevels = !!eligSource && UG_RE.test(eligSource) && PG_RE.test(eligSource.replace(UG_RE, ''))
+    && /\b(UG|PG|undergraduate|postgraduate)\b/i.test(eligSource)
+  const eligPct = mixedLevels ? undefined : eligSource?.match(/(\d{2})%/)?.[1]
   // B3 (2026-11-18): a university that publishes "Graduation pass" with no
   // percentage (Galgotias MBA) must not get the 50% default.
   const eligPass = !eligPct && /\bpass\b/i.test(eligSource ?? '')

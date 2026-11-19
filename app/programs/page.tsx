@@ -26,7 +26,9 @@ export default function ProgramsPage() {
             const meta = PROGRAM_META[prog]
             const unis = UNIS_SLIM.filter(u => u.programs.includes(prog)).sort((a, b) => getSortRank(a) - getSortRank(b))
             if (unis.length === 0) return null
-            const minFee = Math.min(...unis.map(u => u.feeMin))
+            // B3 batch 4: records with feeMin 0 have no fee; they printed "From ₹0".
+            const priced = unis.map(u => u.feeMin).filter(f => f > 0)
+            const minFee = priced.length ? Math.min(...priced) : 0
             return (
               <Link
                 key={prog}
@@ -64,7 +66,7 @@ export default function ProgramsPage() {
 
                 <div className="flex justify-between items-center pt-3 border-t border-slate-100 text-sm">
                   <span className="text-slate-500 font-medium">{unis.length} universities</span>
-                  <span className="font-bold text-orange-500">From {formatFee(minFee)}</span>
+                  {minFee > 0 ? <span className="font-bold text-orange-500">From {formatFee(minFee)}</span> : <span />}
                 </div>
               </Link>
             )

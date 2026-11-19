@@ -90,6 +90,9 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
   // MBA-led, so a BCA tab quoted the MBA range.
   const feeText = (p: Program) => programSchema[p]?.feeCompact ?? null
   const feeShort = (p: Program) => programSchema[p]?.feeShort ?? null
+  // B3 batch 4: u.emiFrom is the MBA EMI. Show it only on the MBA tab, and only
+  // when the page also shows that fee; beside the counsellor line it had no fee behind it.
+  const emiShown = (p: Program) => p === 'MBA' && u.emiFrom > 0 && !!feeText(p)
   const pd = u.programDetails[displayProgram]
   const programContent = getProgramContent(displayProgram)
   const otherUnis = getPeerUniversitiesSlim(displayProgram, u.id, 4)
@@ -306,7 +309,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                 <div className="flex flex-wrap gap-3 mb-3">
                   {[
                     { label: 'Total Fee', value: feeShort(displayProgram) ?? 'Contact our counsellor for current fee details' },
-                    ...(u.emiFrom > 0 ? [{ label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` }] : []),
+                    ...(emiShown(displayProgram) ? [{ label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` }] : []),
                     { label: 'Duration', value: pd?.duration || '2 Years' },
                     { label: 'Exam Mode', value: u.examMode },
                   ].map(stat => (
@@ -730,7 +733,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                   universityName={u.name}
                   programName={displayProgram}
                   feeLabel={feeText(displayProgram)}
-                  emiFrom={displayProgram === 'MBA' ? u.emiFrom : 0}
+                  emiFrom={emiShown(displayProgram) ? u.emiFrom : 0}
                   hints={[
                     // A9: the 25% merit waiver and the referral/early-bird line
                     // were template text with no source. Only a scholarship the
@@ -739,7 +742,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     // B3: with emiFrom 0 the university publishes no EMI figure,
                     // so no EMI line is printed; a neutral line keeps the card
                     // from rendering empty.
-                    u.emiFrom > 0 ? `🏦 No-cost EMI, 12 to 24 months, from ₹${u.emiFrom.toLocaleString()}/month` : '📋 Current fee breakdown and payment options, confirmed with the university',
+                    emiShown(displayProgram) ? `🏦 No-cost EMI, 12 to 24 months, from ₹${u.emiFrom.toLocaleString()}/month` : '📋 Current fee breakdown and payment options, confirmed with the university',
                   ]}
                 />
               )}
@@ -836,7 +839,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     { label: 'Exam Mode', value: u.examMode },
                     ...(programmeEligibility(u, displayProgram) ? [{ label: 'Eligibility', value: programmeEligibility(u, displayProgram)! }] : []),
                     ...(feeShort(displayProgram) ? [{ label: `${displayProgram} fee`, value: feeShort(displayProgram)! }] : []),
-                    ...(u.emiFrom > 0 ? [{ label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` }] : []),
+                    ...(emiShown(displayProgram) ? [{ label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` }] : []),
                   ].map(row => (
                     <div key={row.label} className="flex justify-between py-2 border-b border-border text-xs">
                       <span className="text-ink-3">{row.label}</span>
