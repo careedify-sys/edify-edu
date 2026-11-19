@@ -9,6 +9,7 @@ import LOGOS_MANIFEST from '@/lib/data/logos-manifest.json'
 import RankingBadge from './RankingBadge'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { debBasis } from '@/lib/seo/deb-basis'
+import { programmeEligibility } from '@/lib/seo/display-guards'
 
 interface Props {
   u: University
@@ -71,15 +72,24 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
   // The bracketed note becomes the small line under the value. A record with
   // no percentage in u.eligibility keeps the old label: this round fixes
   // disagreement, it does not re-source eligibility for every university.
-  const eligPct = program === 'MBA' ? u.eligibility?.match(/(\d{2})%/)?.[1] : undefined
+  // B3 batch 4: the tile reads only the eligibility recorded for THIS
+  // programme (programmeEligibility: pd.eligibility, or u.eligibility for MBA).
+  // It used to type "Grad + 50%" / "10+2 + 50%" for every programme with no
+  // record, 378 non-MBA heroes and 17 MBA heroes. No record, no tile.
+  const eligSource = programmeEligibility(u, program)
+  const eligPct = eligSource?.match(/(\d{2})%/)?.[1]
+  const eligLevel = !eligSource ? undefined
+    : /10\s*\+\s*2|12th|class 12|higher secondary|senior secondary/i.test(eligSource) ? '10+2'
+    : /grad|bachelor|degree/i.test(eligSource) ? 'Grad'
+    : undefined
   // B3 (2026-11-18): a university that publishes "Graduation pass" with no
   // percentage (Galgotias MBA) must not get the 50% default.
-  const gradPass = program === 'MBA' && !eligPct && /graduation pass/i.test(u.eligibility ?? '')
-  const eligibilityLabel = eligPct
-    ? `Grad + ${eligPct}%`
-    : gradPass ? 'Grad (pass)'
-    : ['MBA', 'MCA'].includes(program) ? 'Grad + 50%' : '10+2 + 50%'
-  const eligibilityNote = eligPct ? u.eligibility.match(/\(([^)]+)\)/)?.[1] : undefined
+  const eligPass = !eligPct && /\bpass\b/i.test(eligSource ?? '')
+  const eligibilityLabel = !eligLevel ? undefined
+    : eligPct ? `${eligLevel} + ${eligPct}%`
+    : eligPass ? `${eligLevel} (pass)`
+    : eligLevel === 'Grad' ? 'Graduation' : '10+2'
+  const eligibilityNote = eligPct ? eligSource?.match(/\(([^)]+)\)/)?.[1] : undefined
 
   // Exact rupees, discount or payment mode labelled (getExactFee). This read
   // getDisplayFee's compact form, so Uttaranchal showed "₹99.6K-₹1.48L", and
@@ -105,7 +115,7 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
   const stats = [
     { label: 'Total Fees', value: feeValue, highlight: true, sub: feeDetail },
     { label: 'Duration',   value: pd.duration || '2 Years',       highlight: false },
-    { label: 'Eligibility', value: eligibilityLabel,              highlight: false, sub: eligibilityNote },
+    ...(eligibilityLabel ? [{ label: 'Eligibility', value: eligibilityLabel, highlight: false, sub: eligibilityNote }] : []),
     { label: 'NAAC',       value: u.naac,                         highlight: false },
     ...((u as any).nirfMgt && (u as any).nirfMgt < 200
       ? [{ label: 'NIRF Mgmt', value: `#${(u as any).nirfMgt}${u.nirfYear ? ` (${u.nirfYear})` : ''}`, highlight: false }]

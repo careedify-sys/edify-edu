@@ -729,9 +729,8 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                 <GatedContent
                   universityName={u.name}
                   programName={displayProgram}
-                  feeMin={u.feeMin}
-                  feeMax={u.feeMax}
-                  emiFrom={u.emiFrom}
+                  feeLabel={feeText(displayProgram)}
+                  emiFrom={displayProgram === 'MBA' ? u.emiFrom : 0}
                   hints={[
                     // A9: the 25% merit waiver and the referral/early-bird line
                     // were template text with no source. Only a scholarship the
@@ -805,7 +804,8 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                           {ou.nirfMgt && ou.nirfMgt > 0 && ou.nirfMgt < 200 ? `NIRF #${ou.nirfMgt} Mgmt · ` : ou.nirf > 0 && ou.nirf < 100 ? `NIRF #${ou.nirf} Univ · ` : ''}{ou.naac}
                         </div>
                         <div className="flex justify-between text-sm">
-                          <span className="text-ink-2">Fees: <strong>{formatFee(ou.feeMin)}+</strong></span>
+                          {/* B3 batch 4: 18 records have no fee (feeMin 0), which printed "Fees: ₹0+". No fee line when there is no fee. */}
+                          {ou.feeMin > 0 ? <span className="text-ink-2">Fees: <strong>{formatFee(ou.feeMin)}+</strong></span> : <span />}
                           <span className="text-amber font-semibold">View →</span>
                         </div>
                       </Link>

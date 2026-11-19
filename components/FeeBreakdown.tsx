@@ -18,6 +18,12 @@ interface Props {
   spec?: string
 }
 
+// B3 batch 4: universities whose verify sheet says not to publish lender or
+// fee-component claims we hold no source for. For these the block drops the
+// "EMI available through lending partners" sentence and the "Study Material:
+// Included (digital)" row instead of asserting them.
+const NO_UNSOURCED_FEE_COMPONENTS = new Set(['vignan-university-online'])
+
 export default function FeeBreakdown({ u, pd, program, cleanName, headingOverride, spec }: Props) {
   // 2026-11-13: a university with a payment-mode fee plan (lib/data.ts
   // feePlans) gets that table, its "Fees checked on" date and the counsellor
@@ -90,8 +96,9 @@ export default function FeeBreakdown({ u, pd, program, cleanName, headingOverrid
       label: e.label,
       value: `${formatINR(e.amount)}${e.per ? ` ${e.per}` : ''}, charged separately`,
     })),
-    { label: 'Study Material', value: 'Included (digital)' },
+    ...(NO_UNSOURCED_FEE_COMPONENTS.has(u.id) ? [] : [{ label: 'Study Material', value: 'Included (digital)' }]),
   ]
+  const unsourcedOk = !NO_UNSOURCED_FEE_COMPONENTS.has(u.id)
 
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-6">
@@ -100,7 +107,9 @@ export default function FeeBreakdown({ u, pd, program, cleanName, headingOverrid
         <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>{headingOverride || `${cleanName} ${shouldIndexUniversity(u.id) ? 'Online ' : ''}${program} Fees 2026`}</h2>
       </div>
       <p className="text-sm text-slate-500 mb-4">
-        Fee structure for {program}. Payment is accepted semester-wise or in full. EMI available through lending partners.
+        {unsourcedOk
+          ? <>Fee structure for {program}. Payment is accepted semester-wise or in full. EMI available through lending partners.</>
+          : <>Fee structure for {program}. Confirm the payment schedule with our counsellor before you pay.</>}
       </p>
 
       <div className="rounded-lg overflow-hidden border border-slate-200">

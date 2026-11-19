@@ -1,5 +1,82 @@
 # Fix log
 
+## 2026-11-19 · B3 batch 4: QA advisory leftovers from batches 1-3 (branch fix/b3-batch-4)
+
+- **Sources:** audits/qa/2026-11-19-b3-batch-2-premerge.md and -batch-3-premerge.md (advisories),
+  audits/verify/vignan-university-online-2026-11-18.md, audits/verify/uttaranchal-university-online-2026-11-18.md,
+  audits/verify/adichunchanagiri-university-online-2026-11-18.md, and lib/data.ts. No fee, rank, grade,
+  salary or eligibility value was added. Every fix is a removal, a neutral rewording, or a switch to a value
+  lib/data.ts or a verify sheet already holds.
+- **1. Spec salary line:**
+  - Why: every spec page printed "Salary: ₹6L – ₹25L per annum" (or the fallback "₹4L – ₹15L ... (experience-dependent)")
+    from the per-spec salaryRange map in lib/content.ts and lib/improved-specs.ts. None of the 29 values has a
+    source, and about 1,014 spec pages carried one.
+  - What: components/UniSpecBody.tsx no longer renders specContent.salaryRange in the Curriculum block or in
+    the "What career opportunities" FAQ (which also feeds FAQ schema). app/programs/[...slug]/page.tsx no
+    longer renders salaryRange or salaryGrowth ("Source: AmbitionBox 2024" was typed, not checked). The data
+    stays in lib/content.ts; nothing reads it on those pages now. Not touched: the hand-written
+    /programs/mba/specializations/[spec] page, which has its own salary copy (separate item if wanted).
+- **2. GatedContent fee strip:**
+  - Why: the card printed u.feeMin/u.feeMax directly, so 59 profiles showed the shared placeholder
+    "₹60,000 – ₹2,00,000" as an exact fee, plus 11 x 75,000-1,80,000 and 7 x 90,000-2,00,000. On 70 of 143
+    profiles the rest of the page (getExactFee, which gates on getDisplayFee) suppresses that fee.
+  - What: GatedContent takes feeLabel, the profile's own feeText(displayProgram) from programSchema, and shows
+    "Contact our counsellor for current fee details" when it is null, the same line as the Total Fees tile.
+    Its EMI strip now gets u.emiFrom only on the MBA tab, matching programmeEmiFrom and the profile FAQ.
+- **3. "Fees: ₹0+" cards:**
+  - Why: 18 universities have feeMin 0, and the "Other Universities Offering X" cards printed "Fees: ₹0+" for
+    them (56 profiles have such a peer on some tab). /programs had the same fallback.
+  - What: components/UniversityPageClient.tsx and app/programs/page.tsx print no fee line when feeMin is 0.
+- **4. Vignan FeeBreakdown:**
+  - Why: the generic block said "EMI available through lending partners" and "Study Material: Included
+    (digital)". The Vignan sheet records no lender and no inclusion list (fee components are Q38).
+  - What: FeeBreakdown.tsx has a NO_UNSOURCED_FEE_COMPONENTS set (Vignan only). For it the sentence becomes
+    "Confirm the payment schedule with our counsellor before you pay." and the Study Material row is dropped.
+    Other universities are unchanged (advisory A1 still stands for them).
+- **5. Vignan MCA and BCA hirers and salary:**
+  - Why: same as the MBA list removed in batch 3. The MCA list (TCS, Infosys, Wipro ...) and the BCA list
+    (foundit, Google Cloud, AWS ...) have no source. avgSalary was already '' on both, so the "₹3L-₹9L" /
+    "₹4L-₹14L" lines in the QA note came from an older build; the per-spec salary lines go with item 1.
+  - What: lib/data.ts Vignan MCA and BCA topCompanies are []. TopHirers renders nothing for an empty list.
+- **6. Shoolini "only" claims:**
+  - Why: "the only UGC-DEB online MBA with Biotechnology / Food Technology / Real Estate / Direct Selling
+    Management", "no other UGC-DEB online MBA offers this", "rarest", "one of only a handful" and "uniquely
+    offers PAP". Nobody checked every other university's list, and the Shoolini sheet says Shoolini itself
+    claims "first" for PAP, not "only".
+  - What: 7 Shoolini spec JSONs (biotechnology, direct selling, food technology, marketing, real estate,
+    retail, tourism): the "No direct peer" comparison paragraphs, the claim sentences, three "Is Shoolini the
+    only ...?" FAQs and one chooseIf item are gone; two chooseIf items read "a UGC-DEB online MBA with X";
+    "uniquely offers" reads "offers". lib/blog.ts: the "Only programme with Data Science in the title" list
+    item is deleted and two "(the only programme with ... title)" parentheticals are cut. pairs.ts had none.
+- **7. QS World on Amity BBA/MCA posts:**
+  - Why: lib/data.ts qsRank is the QS Asia rank (Amity 45, LPU 51). "QS World" was a different, unsourced claim.
+  - What: 17 "QS World" occurrences in amity-online-bba-fees-2026, amity-online-bba-review-2026,
+    online-bba-degree-india-validity-2026, online-bba-programs-india-2026 and online-mca-amity-vs-lpu-2026
+    now say "QS Asia". No title, seoTitle or metaDescription line was touched. Out of scope and left: the MUJ,
+    MAHE and Shoolini (Q30) QS lines.
+- **8. Derived fee gaps:**
+  - Why: Rs 69,400 is Rs 1,99,000 minus an old LPU fee; "Rs 69,000 to Rs 81,560", "Rs 6,500", "Rs 34,000 to
+    Rs 39,000" and "Rs 25,800" are also our subtraction, not a published figure.
+  - What: online-mca-amity-vs-lpu-2026 (6 places: two FAQs, verdict, body, list item, closing FAQ) keeps the
+    direction "lower fee" from lib/data.ts and drops the numbers; the list item is deleted. The "What is the
+    fee difference?" FAQ keeps both published fees and loses only our "Difference: Rs 69,000 to Rs 81,560". Peer JSONs:
+    arka-jain finance, dr-mgr finance and information-systems, kurukshetra hub comparisons.
+- **9. UniHero eligibility tile:**
+  - Why: every non-MBA hero typed "Grad + 50%" (MCA) or "10+2 + 50%" (UG), and MBA records with no
+    percentage got "Grad + 50%": 395 hero tiles (378 non-MBA, 17 MBA) printed an eligibility no record holds.
+  - What: UniHero reads programmeEligibility(u, program) (lib/seo/display-guards.ts). The tile shows "Grad +
+    N%", "10+2 + N%", "(pass)" or "Graduation" only from that string, and is omitted when there is no record.
+- **10. Generic Core Subjects on Uttaranchal and ACU:** no change needed. On base the hub renders only the
+  syllabus-manifest _core (A9 removed SectionCoreSubjects). Uttaranchal's _core is its own published list
+  (matches the sheet's OMBA-111 to 115 row), and ACU has no syllabus record, so its pages show the request
+  card, which no longer says ACU "updates its curriculum each admission cycle". Confirmed in the build.
+- **11. Vignan review:**
+  - Why: "Physical exam centre may be required" contradicts the sheet (online proctored, MATCH). "NIRF 2024
+    ... top 75" and the "Top 75 (2024)" tile are stale and name no category.
+  - What: the con is deleted. The tile reads "NIRF Management: 101-125 band (2025)" and the sentence reads
+    "NIRF 2025 places it at #70 in the University category and in the 101-125 band in Management", both from
+    the sheet's NIRF rows. Title, seoTitle, h1Title and metaDescription untouched.
+
 ## 2026-11-19 · B3 batch 3: Vignan verify sheet and NAAC snapshot (branch fix/b3-batch-3)
 
 - **Sources:** audits/verify/vignan-university-online-2026-11-18.md (Vignan FIX and REMOVE rows) and

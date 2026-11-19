@@ -953,12 +953,6 @@ export default async function CatchAllProgramPage(
                           </div>
                         ) : null)}
                       </div>
-                      {sc.salaryRange && (
-                        <div className="mt-5 pt-4 border-t border-border flex flex-wrap gap-6 text-sm">
-                          <div><span className="font-bold text-navy">Salary range: </span><span className="text-ink-2">{sc.salaryRange}</span></div>
-                          {sc.salaryGrowth && <div className="text-ink-3">{sc.salaryGrowth}</div>}
-                        </div>
-                      )}
                     </section>
                   )}
 

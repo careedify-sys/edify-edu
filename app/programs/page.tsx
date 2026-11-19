@@ -54,7 +54,7 @@ export default function ProgramsPage() {
                           ? <span className="text-orange-400 font-semibold">{formatNirfBadge(u, { prefer: 'university' })}</span>
                           : <span className="text-slate-400">Unranked</span>}
                       </div>
-                      <span className="text-slate-500">{u.programDetails?.[prog]?.fees || `${formatFee(u.feeMin)}+`}</span>
+                      <span className="text-slate-500">{u.programDetails?.[prog]?.fees || (u.feeMin > 0 ? `${formatFee(u.feeMin)}+` : '')}</span>
                     </div>
                   ))}
                   {unis.length > 3 && (

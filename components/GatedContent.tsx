@@ -8,8 +8,13 @@ interface GatedContentProps {
   universityName: string
   programName?: string
   hints?: string[]
-  feeMin?: number
-  feeMax?: number
+  /**
+   * B3 batch 4: the fee text the rest of the profile prints, resolved on the
+   * server through getExactFee/getDisplayFee. null means the fee is suppressed
+   * (placeholder, shared range or no record) and the card shows the same
+   * counsellor fallback as the profile's Total Fees tile.
+   */
+  feeLabel?: string | null
   emiFrom?: number
 }
 
@@ -20,16 +25,14 @@ const DEFAULT_HINTS = [
   '📋 Current fee breakdown and payment options, confirmed with the university',
 ]
 
-// B3 batch 2: exact rupees. The rounded form printed Uttaranchal's published
-// ₹99,600 to ₹1,48,000 as "₹100K – ₹1.5L".
-function formatFeeLocal(n?: number) {
-  if (!n) return ''
-  return `₹${n.toLocaleString('en-IN')}`
-}
+// B3 batch 4: the card used to print u.feeMin/u.feeMax directly, which put the
+// shared placeholder range "₹60,000 – ₹2,00,000" on 59 profiles as if exact.
+// It now takes the profile's own gated fee text (feeLabel).
+const FEE_FALLBACK = 'Contact our counsellor for current fee details'
 
 export default function GatedContent({
   universityName, programName = 'MBA',
-  hints = DEFAULT_HINTS, feeMin, feeMax, emiFrom,
+  hints = DEFAULT_HINTS, feeLabel, emiFrom,
 }: GatedContentProps) {
   const [unlocked, setUnlocked] = useState(false)
   const [submitError, setSubmitError] = useState(false)
@@ -82,10 +85,11 @@ export default function GatedContent({
       </div>
 
       {/* ── Fee overview strip (always visible) ── */}
-      {(feeMin || feeMax) && (
+      {(
+
         <div style={{ padding: '12px 20px', display: 'flex', gap: 20, flexWrap: 'wrap', borderBottom: '1px solid #F1F5F9', background: 'var(--surface-2)', }}>
           {[
-            { icon: '💰', label: 'Total Fee', value: feeMin && feeMax && formatFeeLocal(feeMin) !== formatFeeLocal(feeMax) ? `${formatFeeLocal(feeMin)} – ${formatFeeLocal(feeMax)}` : formatFeeLocal(feeMin || feeMax) },
+            { icon: '💰', label: 'Total Fee', value: feeLabel || FEE_FALLBACK },
             emiFrom ? { icon: '🏦', label: 'EMI from', value: `₹${emiFrom.toLocaleString()}/mo` } : null,
             { icon: '🔒', label: 'Details', value: 'See below' },
           ].filter(Boolean).map((s: any) => (

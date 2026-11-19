@@ -2428,7 +2428,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         duration: '2 Yrs',
         roles: ['Software Developer', 'Web Developer', 'Data Analyst', 'System Analyst', 'Software Engineer'],
         avgSalary: '',
-        topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Tech Mahindra', 'Cognizant', 'Capgemini', 'Accenture'],
+        // B3 batch 4: the hirer list had no source (same as the MBA list removed in batch 3).
+        topCompanies: [],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MCA from Vignan\'s Foundation for Science, Technology and Research, recognised for corporate hiring.',
       },
@@ -2440,7 +2441,8 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         duration: '3 Years',
         roles: ['Data Analyst Trainee', 'Python Developer Trainee', 'ML Analyst Trainee', 'Cloud Support Trainee'],
         avgSalary: '',
-        topCompanies: ['foundit', 'Google Cloud', 'AWS', 'HDFC Bank', 'ICICI Bank', 'Amazon', 'Accenture'],
+        // B3 batch 4: the hirer list had no source (same as the MBA list removed in batch 3).
+        topCompanies: [],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved BCA from Vignan\'s Foundation for Science, Technology & Research, recognised for corporate hiring.',
       }
