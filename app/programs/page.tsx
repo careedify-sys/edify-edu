@@ -2,7 +2,7 @@
 import { getSortRank } from '@/lib/data-slim'
 
 import Link from 'next/link'
-import { UNIS_SLIM, formatFeeSlim as formatFee, formatNirfBadge } from '@/lib/data-slim'
+import { UNIS_SLIM, formatNirfBadge } from '@/lib/data-slim'
 import { PROGRAM_META } from '@/lib/data-client'
 import type { Program } from '@/lib/data'
 
@@ -26,9 +26,9 @@ export default function ProgramsPage() {
             const meta = PROGRAM_META[prog]
             const unis = UNIS_SLIM.filter(u => u.programs.includes(prog)).sort((a, b) => getSortRank(a) - getSortRank(b))
             if (unis.length === 0) return null
-            // B3 batch 4: records with feeMin 0 have no fee; they printed "From ₹0".
-            const priced = unis.map(u => u.feeMin).filter(f => f > 0)
-            const minFee = priced.length ? Math.min(...priced) : 0
+            // B3 batch 4: no "From" fee on these cards. A cheapest-fee floor across
+            // universities printed raw feeMin values that the profiles suppress
+            // (CCSU Rs 28,200, DDU range floor). Fees show on each programme page.
             return (
               <Link
                 key={prog}
@@ -56,7 +56,7 @@ export default function ProgramsPage() {
                           ? <span className="text-orange-400 font-semibold">{formatNirfBadge(u, { prefer: 'university' })}</span>
                           : <span className="text-slate-400">Unranked</span>}
                       </div>
-                      <span className="text-slate-500">{u.programDetails?.[prog]?.fees || (u.feeMin > 0 ? `${formatFee(u.feeMin)}+` : '')}</span>
+                      <span className="text-slate-500">{u.programDetails?.[prog]?.fees || ''}</span>
                     </div>
                   ))}
                   {unis.length > 3 && (
@@ -66,7 +66,7 @@ export default function ProgramsPage() {
 
                 <div className="flex justify-between items-center pt-3 border-t border-slate-100 text-sm">
                   <span className="text-slate-500 font-medium">{unis.length} universities</span>
-                  {minFee > 0 ? <span className="font-bold text-orange-500">From {formatFee(minFee)}</span> : <span />}
+                  <span />
                 </div>
               </Link>
             )

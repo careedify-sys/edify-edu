@@ -106,6 +106,11 @@
   - Profile EMI: the top Quick Stats tile and the Quick Facts row printed u.emiFrom on non-MBA tabs (33
     profiles), and the strip, tile and hint printed it beside the counsellor fee line (41 profiles). All four
     now use emiShown(): MBA tab only, and only when the profile shows an MBA fee.
+- Round 3 (lead, after QA rerun FAIL): the /programs "From" figure is removed, not filtered. Taking the lowest
+  non-zero feeMin printed "From ₹28K" on 6 cards, which is CCSU's fee that CCSU's own profile suppresses, and
+  "From ₹31K", DDU's range floor. A cross-university cheapest figure is a derived superlative over raw fields
+  that bypass getExactFee, so the card shows none. The per-university rows on the same cards also fell back to
+  raw `feeMin+` when programDetails had no fee; that fallback is removed for the same reason.
 
 ## 2026-11-19 · B3 batch 3: Vignan verify sheet and NAAC snapshot (branch fix/b3-batch-3)
 
