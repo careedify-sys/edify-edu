@@ -1,8 +1,8 @@
 # EdifyEdu Operating Plan
 
 ## Status (updated end of every session)
-- **Done:** Phase A (f2f80c5), A5, A8 + A9 (35ffee3), D4 fees for NIU, Alliance, Sharda, JIIT (1021c26), B3 batch 1 (1ed2ea6, 18 Nov), B3 batches 2 and 3 (b9e18b2, 19 Nov), all live and checked; verify sheets for the 10 queue universities plus Vignan; NAAC audit of all 143 (audits/naac-audit-2026-11-19.md).
-- **In progress:** none. Next fix batch (B3 batch 4) to be cut from the QA advisories: spec-page salary line (~1,014 pages), placeholder fee ranges shown as exact on 59 profiles, "Fees: ₹0+" cards, Vignan MCA/BCA hirers and salary, Shoolini "only UGC-DEB" claims, Amity BBA/MCA "QS World".
+- **Done:** Phase A (f2f80c5), A5, A8 + A9 (35ffee3), D4 fees for NIU, Alliance, Sharda, JIIT (1021c26), B3 batch 1 (1ed2ea6, 18 Nov), B3 batches 2 and 3 (b9e18b2) and B3 batch 4 (b3b04f8), 19 Nov, all live and checked; verify sheets for the 10 queue universities plus Vignan; NAAC audit of all 143 (audits/naac-audit-2026-11-19.md).
+- **In progress:** B3 batch 5: QA advisories left after batch 4 (raw fee ranges on /universities cards, Shoolini QS #1 FAQ and SEBI/MCA skills line, Dr MGR fee range, Kurukshetra "central university", non-Shoolini uniqueness claims checked against the DEB register, 7 hand-written specialisation salary pages wait on Q52).
 - **Blocked:** none in D4.
 - **Waiting on Rishi:** Q1, Q2, Q7 (28 Nov guard baseline), Q8-Q51. Urgent: NAAC (Q20 DY Patil, Q24/Q43 Amity, Q28 Uttaranchal, Q42 nine ungraded, Q46 end dates, Q47 lapsed cycles). One answer settles many: Q27 (Jan 2027 intake), Q46 (NAAC end dates). See audits/QUESTIONS-FOR-RISHI.md.
 - **Next:** B1 provenance fields, then B4 answer-first block.
