@@ -1,11 +1,11 @@
 # EdifyEdu Operating Plan
 
 ## Status (updated end of every session)
-- **Done:** agent team set up (16 Nov); see the tracker batch log for shipped items.
-- **In progress:** Phase A (A1 to A4, D5 in one deploy; D4 fee checks).
-- **Blocked:** none.
-- **Waiting on Rishi:** Q1 (Phase A prompt file), Q2 (user settings auto mode). See audits/QUESTIONS-FOR-RISHI.md.
-- **Next:** A5 page standards, then B1 provenance fields.
+- **Done:** Phase A (f2f80c5), A5, A8 + A9 (35ffee3), D4 fees for NIU, Alliance, Sharda, JIIT (1021c26), B3 batch 1 (1ed2ea6, 18 Nov), B3 batches 2 and 3 (b9e18b2, 19 Nov), all live and checked; verify sheets for the 10 queue universities plus Vignan; NAAC audit of all 143 (audits/naac-audit-2026-11-19.md).
+- **In progress:** none. Next fix batch (B3 batch 4) to be cut from the QA advisories: spec-page salary line (~1,014 pages), placeholder fee ranges shown as exact on 59 profiles, "Fees: ₹0+" cards, Vignan MCA/BCA hirers and salary, Shoolini "only UGC-DEB" claims, Amity BBA/MCA "QS World".
+- **Blocked:** none in D4.
+- **Waiting on Rishi:** Q1, Q2, Q7 (28 Nov guard baseline), Q8-Q51. Urgent: NAAC (Q20 DY Patil, Q24/Q43 Amity, Q28 Uttaranchal, Q42 nine ungraded, Q46 end dates, Q47 lapsed cycles). One answer settles many: Q27 (Jan 2027 intake), Q46 (NAAC end dates). See audits/QUESTIONS-FOR-RISHI.md.
+- **Next:** B1 provenance fields, then B4 answer-first block.
 
 **Created:** 16 Nov 2026 · **Owner:** Rishi Kumar · **Review:** every Monday
 **Built from:** the First Priorities & Daily Improvement Playbook (16 Nov), the SEO + AEO + GEO audit (`audits/seo-aeo-geo-audit-2026-11-16.md`), the ranking plan tracker (`audits/ranking-plan-tracker.md`) and `audits/FIX-LOG.md`.
@@ -143,14 +143,16 @@ Order = priority. Effort: XS under 1h · S half a day · M 1-2 days · L 3+ days
 
 | ID | Pri | Item | Owner | Phase | Effort | Status | Acceptance test |
 |---|---|---|---|---|---|---|---|
-| A1 | **Critical** | Remove the invented NAAC `Review` from university schema (audit S1) | site-engineer | A | XS | Approved (D2), in progress | `curl` all 143 profiles: 0 `"@type":"Review"`, 0 `ratingValue` |
-| A2 | High | Remove Edify's phone from the university entity; `sameAs` to the official site where `officialUrl` exists (S2) | site-engineer | A | S | Approved (D2), in progress | NMIMS and Calicut JSON-LD: no `telephone` on the university node |
-| A3 | Low | Batch: `/admin-login` noindex, one robots disallow list, clean 404 meta, prune CSP origins (T1, T2, T3, T5) | site-engineer | A | S | Approved (D2), in progress | probes in the audit return the expected values |
-| A4 | Medium | `llms.txt`: replace "all data is independently verified" with a claim that is true | site-engineer | A | XS | Approved (D2), in progress | text matches what pages show |
-| A4b | Low | D5 spelling fix in `BlogCTACard.tsx:72` | site-engineer | A | XS | Approved (D5), in progress | rendered line reads "edifyedu.in earns zero commissions" |
-| A5 | High | Write 3 page standards as `audits/PAGE-STANDARDS.md` (from Section 6) | site-engineer | A | S | Open | file exists; every line is checkable on a rendered page |
+| A1 | **Critical** | Remove the invented NAAC `Review` from university schema (audit S1) | site-engineer | A | XS | Done 18 Nov (live f2f80c5) | `curl` all 143 profiles: 0 `"@type":"Review"`, 0 `ratingValue` |
+| A2 | High | Remove Edify's phone from the university entity; `sameAs` to the official site where `officialUrl` exists (S2) | site-engineer | A | S | Done 18 Nov (live f2f80c5) | NMIMS and Calicut JSON-LD: no `telephone` on the university node |
+| A3 | Low | Batch: `/admin-login` noindex, one robots disallow list, clean 404 meta, prune CSP origins (T1, T2, T3, T5) | site-engineer | A | S | Done 18 Nov (live f2f80c5) | probes in the audit return the expected values |
+| A4 | Medium | `llms.txt`: replace "all data is independently verified" with a claim that is true | site-engineer | A | XS | Done 18 Nov (live f2f80c5) | text matches what pages show |
+| A4b | Low | D5 spelling fix in `BlogCTACard.tsx:72` | site-engineer | A | XS | Done 18 Nov (live f2f80c5) | rendered line reads "edifyedu.in earns zero commissions" |
+| A8 | **Critical** | BITS WILP is labelled UGC-DEB entitled (lib/data.ts:7580, its MBA JSON :21 and :103) but has zero rows in the DEB register 2020-27; its basis is Institution of Eminence status (UGC 548th meeting, 09.09.2020). State the true basis. Also fix location (Pilani, Rajasthan), the fake specs in its TL;DR, and the "QS World" wording on a QS Asia rank | site-engineer | A | S | Done 18 Nov (live 35ffee3) | BITS pages carry no "UGC-DEB" approval claim; register basis shown |
+| A9 | **High** | Unsourced claims in shared components on every university page: scholarship "Save up to Rs 20,000-40,000" and 25% merit/early-bird (UniversityPageClient.tsx:361,389,717-719); "100% Online" (QuickFactsCard.tsx:13, UniversityPageClient.tsx:614); "MBA (Regular)" (QuickFactsCard.tsx:16); class hours and "replay within 48 hours" (SectionClasses.tsx:12,21); placement assistance (SectionPlacements.tsx:21); generic syllabus (SectionCoreSubjects.tsx:10-17); "Included in total (usually)" exam fee (FeeBreakdown.tsx:84). Remove, or render only from a sourced per-university field | site-engineer | A | M | Done 18 Nov (live 35ffee3) | grep of all built university pages finds none of these strings unless the record carries a sourced field |
+| A5 | High | Write 3 page standards as `audits/PAGE-STANDARDS.md` (from Section 6) | site-engineer | A | S | Done 16 Nov (audits/PAGE-STANDARDS.md) | file exists; every line is checkable on a rendered page |
 | A6 | High | 21 Nov and 28 Nov checks | seo-analyst | A | XS | Date-locked | results written into the tracker |
-| D4 | Medium | Fee pages for NIU, Sharda, Alliance, JIIT (D4 rule) | fact-checker, then site-engineer | A/B | S | In progress | one sheet per university in audits/verify/; data changed only on a published total |
+| D4 | Medium | Fee pages for NIU, Sharda, Alliance, JIIT (D4 rule) | fact-checker, then site-engineer | A/B | S | Done 18 Nov (live 1021c26) | one sheet per university in audits/verify/; data changed only on a published total |
 | B1 | High | Provenance fields in `lib/data.ts` and their rendering; fee gate requires `checkedOn` | site-engineer | B | M | Open | gate fails on an injected missing date, passes after |
 | B2 | Medium | Official site in schema `sameAs` only (D6: no visible links); fill `officialUrl` for the top 10 | fact-checker, then site-engineer | B | S | Open | top 10 profiles carry `sameAs` to their own domain |
 | B3 | High | Top 10 universities to the standard (daily routine) | fact-checker, then site-engineer | B | L | Open | 10/10 pass the checklist |
@@ -160,7 +162,7 @@ Order = priority. Effort: XS under 1h · S half a day · M 1-2 days · L 3+ days
 | B7 | Medium | 7 unverified exam modes; counsellor wording after 28 Nov | fact-checker | B | S | Date-locked (28 Nov) | each has a source or the counsellor line |
 | C1 | Medium | AI prompt panel: build 25 prompts, run the baseline | seo-analyst | C | S | Open | dated CSV with cited URLs and fidelity |
 | C2 | Medium | 9 Jan re-test and scale decision | seo-analyst | C | S | Date-locked (9 Jan) | scorecard written |
-| C3 | Medium | Regression gate: schema claims (no NAAC review, no phone on the university) | site-engineer | A/B | S | Open | fails on an injected defect |
+| C3 | Medium | Regression gate: schema claims (no NAAC review, no phone on the university) | site-engineer | A/B | S | Done 18 Nov (check-schema-claims gate in pre-commit) | fails on an injected defect |
 | C4 | Low | Placeholder fee cluster (125 rows): unlock hubs one portal check at a time | fact-checker | ongoing | daily | Ongoing | each unlocked hub has `checkedOn` |
 | QA | n/a | Every item above is checked by qa-checker before merge and after deploy | qa-checker | all | n/a | Standing | audits/qa/{date}-{item}.md says PASS |
 | P1 | Rishi | Request indexing, first-hand notes, student reviews, LinkedIn/Quora/HARO | Rishi | ongoing | n/a | Rishi only | logged in the tracker |
