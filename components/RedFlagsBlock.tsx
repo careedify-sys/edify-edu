@@ -10,7 +10,7 @@ interface Props {
 
 function getMBAFlags(cleanName: string): string[] {
   return [
-    `An online MBA from ${cleanName} does not replace offline IIM, XLRI, or ISB brand equity for roles in investment banking or top-tier strategy consulting. For those specific recruiters and roles, a residential MBA from a top-10 institution is the better fit. For most corporate, operations, and functional roles across 80% of the Indian job market, an online UGC-DEB approved MBA is perfectly valid.`,
+    `An online MBA from ${cleanName} does not replace offline IIM, XLRI, or ISB brand equity for roles in investment banking or top-tier strategy consulting. For those specific recruiters and roles, a residential MBA from a top-10 institution is the better fit. For most corporate, operations, and functional roles, an online UGC-DEB approved MBA is valid.`,
     `Placement assistance is not a placement guarantee. Ask ${cleanName} in writing which career services it offers online learners. Final offers depend on your profile, interview performance, and market conditions.`,
     `Online learning requires self-discipline. Without daily campus structure, online MBAs reward learners who build their own study rhythm. If you have historically struggled with self-paced work, consider a hybrid or weekend program with more external structure.`,
     `Campus networking looks different online. You will build connections through LMS forums, virtual events, WhatsApp groups, and edifyedu.in alumni intros rather than daily hostel life. For students who value deep in-person peer bonds, this is a genuine trade-off worth considering.`,

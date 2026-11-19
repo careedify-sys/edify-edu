@@ -20,9 +20,11 @@ const DEFAULT_HINTS = [
   '📋 Current fee breakdown and payment options, confirmed with the university',
 ]
 
+// B3 batch 2: exact rupees. The rounded form printed Uttaranchal's published
+// ₹99,600 to ₹1,48,000 as "₹100K – ₹1.5L".
 function formatFeeLocal(n?: number) {
   if (!n) return ''
-  return n >= 100000 ? `₹${(n/100000).toFixed(1)}L` : `₹${Math.round(n/1000)}K`
+  return `₹${n.toLocaleString('en-IN')}`
 }
 
 export default function GatedContent({

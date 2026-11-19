@@ -42,10 +42,6 @@
         "answer": "The project management module covers PMI-aligned frameworks and is conceptually aligned with PMP preparation. However, the MBA does not provide PMP certification itself. Candidates should pursue PMP separately after the degree. The MBA provides the management foundation; PMP certification adds the globally recognised PM credential for project management roles."
       },
       {
-        "question": "What is the salary jump expected for IT professionals after this MBA?",
-        "answer": "Software engineers and IT professionals with 3-5 years experience typically see 25-45% salary jumps when transitioning to product analyst, IT project manager, or business analyst roles post-MBA. Senior IT professionals transitioning to IT Management or Director roles see larger jumps. Salary outcomes are strongly dependent on pre-MBA experience and target role."
-      },
-      {
         "question": "Does the IT Management MBA include programming or technical coursework?",
         "answer": "No. The MBA IT Management is a management degree, not a technical programme. It does not include programming, software development, or data science coursework. Technical skills remain the candidate's responsibility. The degree builds management, strategy, and governance skills layered on top of existing technical expertise."
       },
@@ -57,7 +53,7 @@
     "chooseAlternatives": {
       "chooseIf": [
         "You are an IT professional with 2+ years of technical experience wanting to move into product management, IT consulting, or technology leadership.",
-        "You want a NIRF University #22, NAAC A+ management credential at under Rs 2 lakh to complement your technical qualifications.",
+        "You want a NIRF University #22, NAAC A+ management credential to complement your technical qualifications.",
         "You are targeting IT Manager, Product Analyst, or Digital Transformation roles at large IT companies or MNC clients."
       ],
       "consider": [

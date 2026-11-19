@@ -80,10 +80,16 @@ export default function FeeBreakdown({ u, pd, program, cleanName, headingOverrid
     { label: 'Total Program Fee', value: totalText, highlight: true },
     ...(semText ? [{ label: 'Per Semester', value: semText }] : []),
     ...(programmeEmiFrom(u, program) > 0 ? [{ label: 'EMI starts from', value: `${formatINR(u.emiFrom)}/month` }] : []),
-    { label: 'Registration / Admission Fee', value: 'Included in total' },
     // A9 (2026-11-18): an "Exam Fee: Included in total (usually)" row was
     // printed for every university. No record carries an exam-fee field, so
-    // the row is gone rather than guessed.
+    // the row is gone rather than guessed. B3 batch 2: the same for the
+    // "Registration / Admission Fee: Included in total" row, which was false
+    // for Adichunchanagiri and Shoolini. Charges a verify sheet records as
+    // separate (u.feeExtras) print as their own rows, never added in.
+    ...(program === 'MBA' ? (u.feeExtras?.mba ?? []) : []).map(e => ({
+      label: e.label,
+      value: `${formatINR(e.amount)}${e.per ? ` ${e.per}` : ''}, charged separately`,
+    })),
     { label: 'Study Material', value: 'Included (digital)' },
   ]
 

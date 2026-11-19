@@ -97,10 +97,6 @@
         "answer": "The Employee Data Visualisation module uses data visualisation tools. The HR Technology module covers major HRIS platforms conceptually. The programme does not guarantee hands-on access to enterprise systems like Workday or SAP SuccessFactors. Those require employer or sandbox access. Confirm tool access with the programme coordinator before enrolling."
       },
       {
-        "question": "What is the salary difference between HR Analytics MBA and HR Management MBA graduates?",
-        "answer": "HR Analytics specialists with 3-5 years of experience typically earn 15-25% more than HR Generalists at the same level. People Analytics Manager roles at technology companies pay Rs 12-22 lakh, compared to Rs 8-15 lakh for HR Generalist Manager roles. The premium reflects the combination of HR domain knowledge and data analytics capability that is still rare in the market."
-      },
-      {
         "question": "Is this spec suitable for HR professionals wanting to learn Python for analytics?",
         "answer": "The programme is not a programming degree. If learning Python for HR analytics is a primary goal, supplement with a Python for Data Analysis course on Coursera or DataCamp alongside the MBA. The degree provides HR analytics frameworks and strategic context; Python skills require separate learning. The combination of MBA analytics frameworks and Python tool skills is a strong market position."
       },
@@ -113,7 +109,7 @@
       "chooseIf": [
         "You are an HR professional targeting People Analytics, Workforce Intelligence, or HR Technology Manager roles and want a formal credential that combines HR management with data analytics.",
         "You are a data professional wanting to specialise in the HR domain with management credentials for HR analytics consulting or HRIS implementation roles.",
-        "You want the most analytically differentiated HR MBA available at a NIRF #22 university under Rs 2 lakh."
+        "You want the most analytically differentiated HR MBA available at a NIRF #22 university."
       ],
       "consider": [
         "You want broad HR management coverage, talent acquisition, compensation, L&D, and IR without the analytics intensity, choose the Amity HR Management spec instead.",

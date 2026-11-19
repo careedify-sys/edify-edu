@@ -47,10 +47,6 @@
         "answer": "Detailed subject information for this specialisation has not yet been published on the edifyedu.in platform. Talk to our counsellor for the current Sem 3-4 curriculum before enrolling. Verify whether subjects cover underwriting, claims, product management, and reinsurance at the depth relevant to your target role."
       },
       {
-        "question": "What salary can Insurance Management MBA graduates expect?",
-        "answer": "Branch managers at insurance companies with 3-5 years of experience typically earn Rs 8-15 lakh. Product managers at health and life insurance companies earn Rs 10-20 lakh. Zonal manager and VP Operations roles at large insurance companies pay Rs 18-35 lakh. Outcomes depend heavily on company type (LIC vs private), insurance segment (life vs health), and the size of the agency network or operations managed."
-      },
-      {
         "question": "Can professionals from non-insurance backgrounds use this MBA to enter the insurance sector?",
         "answer": "The specialisation is most effective for professionals already in the insurance sector who want to formalise their knowledge and qualify for management roles. For career changers entering insurance, the management degree is useful but building sectoral knowledge through an entry-level insurance role first is important, most senior insurance hiring values sector experience above the degree credential alone."
       }
@@ -58,7 +54,7 @@
     "chooseAlternatives": {
       "chooseIf": [
         "You are an insurance professional, underwriter, claims manager, agent, or branch operations executive, targeting branch management, product management, or zonal management roles.",
-        "You want a dedicated insurance sector MBA at a NIRF #22 university covering IRDAI-regulated sector management at under Rs 2 lakh.",
+        "You want a dedicated insurance sector MBA at a NIRF #22 university covering IRDAI-regulated sector management.",
         "You are in bancassurance, health insurance, or general insurance and need a formal management credential to qualify for supervisory and leadership roles."
       ],
       "consider": [

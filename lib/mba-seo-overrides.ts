@@ -22,9 +22,9 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
   // to the fee-led pattern used for the other Sprint 1 overrides, under 60c.
   'amity-university-online': {
     title: 'Amity Online MBA 2026: ₹2,07,000–₹2,25,000 | edifyedu.in',
-    description: 'Amity University online MBA fees ₹2,07,000 to ₹2,25,000 total (₹8,906/mo EMI). 19 specializations, NAAC A+, WASC and QAA accredited. UGC-DEB approved. Zero-commission, verified fee data.',
+    description: 'Amity University online MBA fees ₹2,07,000 to ₹2,25,000 total (₹8,906/mo EMI). Many specializations, NAAC A+, WASC and QAA accredited. UGC-DEB approved. Zero-commission, verified fee data.',
     h1: 'Amity University Online MBA 2026: Fees, Specializations, and Honest Review',
-    intro: 'The Amity University online MBA costs ₹2,07,000 to ₹3,29,200 in total over two years (four semesters). The standard tracks cost ₹2,07,000 paid one-time against a ₹2,25,000 list fee, and the premium tracks (Hospital and Healthcare Management, International Finance (ACCA) and Dual Specialisation) cost ₹3,02,680 one-time or ₹3,29,200 by semester. You need a bachelor’s degree with 40% marks to apply, and below 40% Amity runs its own eligibility test. Amity holds NAAC A+ accreditation, UGC-DEB approval and a NIRF Management rank of #49, and lists 19 specialisations, from Finance and Accounting to Business Analytics and Data Science. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Talk to our counsellor for your intake’s fee.',
+    intro: 'The Amity University online MBA costs ₹2,07,000 to ₹3,29,000 in total over two years (four semesters). The standard tracks cost ₹2,07,000 paid one-time against a ₹2,25,000 list fee, and the premium tracks (Hospital and Healthcare Management, International Finance (ACCA) and Dual Specialisation) cost ₹3,02,680 one-time or ₹3,29,000 by semester. You need a bachelor’s degree with 40% marks to apply, and below 40% Amity runs its own eligibility test. Amity holds NAAC A+ accreditation, UGC-DEB approval and a NIRF Management rank of #49, and lists many specialisations, from Finance and Accounting to Business Analytics and Data Science. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Talk to our counsellor for your intake’s fee.',
   },
   // Uttaranchal: data.ts feeMin=99600 (one-time), feeMax=148000 (before the 30%
   // scholarship); 1,03,600 is the semester-track total. Since 2026-10-27 titles
@@ -32,9 +32,9 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
   // scholarship figure only, never a bare net ("From ₹99.6K" was both).
   'uttaranchal-university-online': {
     title: 'Uttaranchal Online MBA Fees 2026: ₹1,48,000 | edifyedu.in',
-    description: 'Uttaranchal University online MBA fees: ₹1,03,600 after the 30% scholarship, or ₹99,600 paid upfront. 8 specialisations, NAAC A+, UGC-DEB approved.',
+    description: 'Uttaranchal University online MBA fees: ₹1,03,600 after scholarship, or ₹99,600 paid upfront. 8 specialisations, NAAC A+, UGC-DEB approved.',
     h1: 'Uttaranchal University Online MBA 2026: Fees, Specialisations and Honest Review',
-    intro: 'For the January 2027 batch, the Uttaranchal University Online (UU Online) MBA lists at ₹1,48,000. A 30% scholarship brings it to ₹1,03,600, paid as four semester instalments of ₹25,900, and paying the full fee upfront costs ₹99,600. The programme holds NAAC A+ accreditation and UGC-DEB approval, with 8 specialisations including Logistics and Supply Chain, International Business and Digital Marketing. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Talk to our counsellor for your intake’s fee.',
+    intro: 'For the January 2027 batch, the Uttaranchal University Online (UU Online) MBA lists at ₹1,48,000. UU’s early bird scholarship brings it to ₹1,03,600, paid as four semester instalments of ₹25,900, and paying the full fee upfront costs ₹99,600. The programme holds NAAC A+ accreditation and UGC-DEB approval, with 8 specialisations including Logistics and Supply Chain, International Business and Digital Marketing. edifyedu.in compares public UGC/NAAC/NIRF data, with no paid rankings. Talk to our counsellor for your intake’s fee.',
   },
   // MUJ: data.ts feeMin=156400 (after the 15% discount), feeMax=184000 (list),
   // emiFrom=6517, January 2027 chart. The generic template opens with the full

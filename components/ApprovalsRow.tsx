@@ -55,7 +55,7 @@ export default function ApprovalsRow({ u }: Props) {
             className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-bold border no-underline"
             style={{ background: '#F0FDF4', borderColor: '#BBF7D0', color: '#14532D' }}
           >
-            {(u as any).nirfMgt && (u as any).nirfMgt > 0 && (u as any).nirfMgt < 200 ? `NIRF #${(u as any).nirfMgt} Management` : `NIRF #${u.nirf} University`}
+            {(u as any).nirfMgt && (u as any).nirfMgt > 0 && (u as any).nirfMgt < 200 ? `NIRF #${(u as any).nirfMgt} Management${u.nirfYear ? ` ${u.nirfYear}` : ''}` : `NIRF #${u.nirf} University${u.nirfYear ? ` ${u.nirfYear}` : ''}`}
             <ExternalLink size={10} className="opacity-50" />
           </a>
         )}

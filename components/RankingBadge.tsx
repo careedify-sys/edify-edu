@@ -14,9 +14,9 @@ export default function RankingBadge({ u }: Props) {
 
   // NIRF Management (preferred over University for MBA)
   if ((u as any).nirfMgt && (u as any).nirfMgt < 200) {
-    badges.push({ label: `NIRF #${(u as any).nirfMgt} Management`, color: 'bg-blue-50 text-blue-700 border-blue-200' })
+    badges.push({ label: `NIRF #${(u as any).nirfMgt} Management${u.nirfYear ? ` ${u.nirfYear}` : ''}`, color: 'bg-blue-50 text-blue-700 border-blue-200' })
   } else if (u.nirf > 0 && u.nirf < 200) {
-    badges.push({ label: `NIRF #${u.nirf} University`, color: 'bg-blue-50 text-blue-700 border-blue-200' })
+    badges.push({ label: `NIRF #${u.nirf} University${u.nirfYear ? ` ${u.nirfYear}` : ''}`, color: 'bg-blue-50 text-blue-700 border-blue-200' })
   }
 
   // NAAC

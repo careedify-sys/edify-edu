@@ -247,9 +247,9 @@
     "nirfMgt": null,
     "feeMin": 130000,
     "feeMax": 158000,
-    "emiFrom": 5417,
+    "emiFrom": 0,
     "feeStr": "₹1.3L–₹1.58L",
-    "emiStr": "₹5.4K/mo",
+    "emiStr": "Not published",
     "programs": [
       "MBA",
       "MCA",
@@ -929,9 +929,9 @@
     "nirfMgt": null,
     "feeMin": 99600,
     "feeMax": 148000,
-    "emiFrom": 4317,
+    "emiFrom": 3733,
     "feeStr": "₹99.6K – ₹1.48L",
-    "emiStr": "₹4K/mo",
+    "emiStr": "₹3,733/mo",
     "programs": [
       "MBA",
       "MCA",
@@ -2191,9 +2191,9 @@
     "nirfMgt": null,
     "feeMin": 140000,
     "feeMax": 140000,
-    "emiFrom": 6187,
+    "emiFrom": 4417,
     "feeStr": "₹1,40,000",
-    "emiStr": "₹6,187/mo",
+    "emiStr": "₹4,417/mo",
     "programs": [
       "MBA"
     ],

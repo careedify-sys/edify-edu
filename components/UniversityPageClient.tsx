@@ -31,6 +31,7 @@ import { FirstHandText } from '@/components/FirstHandShared'
 import OwnerMbaSentence from '@/components/OwnerMbaSentence'
 import { isExamCentre, EXAM_CENTRE_LINE, isExamModeConfirmed } from '@/lib/exam-mode'
 import { debBasis } from '@/lib/seo/deb-basis'
+import { programmeEligibility } from '@/lib/seo/display-guards'
 
 const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')
 
@@ -127,7 +128,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
   const templateFaqs = [
     {
       q:`Is ${u.name} a good university for online degrees?`,
-      a:`${u.name} is ${u.nirf > 0 && u.nirf < 200 ? `ranked NIRF #${u.nirf} in the University category` : basis ? 'a university' : 'a UGC DEB approved university'}${u.nirfMgt && u.nirfMgt < 200 ?` and NIRF #${u.nirfMgt} in Management`:''}. ${basis ? `${u.naac ? `It holds NAAC ${u.naac} accreditation. ` : ''}${basis.sentence}` : `${u.naac ? `It holds NAAC ${u.naac} accreditation and is` : 'It is'} UGC DEB approved.`} For private sector careers and corporate hiring it is a strong choice. Always verify specific job notifications for government roles.`
+      a:`${u.name} is ${u.nirf > 0 && u.nirf < 200 ? `ranked at NIRF University rank #${u.nirf}` : basis ? 'a university' : 'a UGC DEB approved university'}${u.nirfMgt && u.nirfMgt < 200 ?` and NIRF Management rank #${u.nirfMgt}`:''}. ${basis ? `${u.naac ? `It holds NAAC ${u.naac} accreditation. ` : ''}${basis.sentence}` : `${u.naac ? `It holds NAAC ${u.naac} accreditation and is` : 'It is'} UGC DEB approved.`} For private sector careers and corporate hiring it is a strong choice. Always verify specific job notifications for government roles.`
     },
     {
       q:`What is the total fee for ${u.name} ${displayProgram}?`,
@@ -141,10 +142,11 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
       q:`Is ${u.name} ${displayProgram} valid and UGC approved?`,
       a: basis ? `${basis.sentence}${u.naac ? ` It is NAAC ${u.naac} accredited.` : ''} Confirm in writing that the ${displayProgram} meets the recognition your employer or recruiter asks for before you enrol.` : `Yes. ${u.name} is UGC DEB approved${u.naac ? ` and NAAC ${u.naac} accredited` : ''}. The ${displayProgram} degree is fully valid for private sector employment, higher education, and banking sector jobs. ${u.govtRecognised ? 'It is also recognised for government recruitment as per UGC 2020 guidelines.' : 'Check specific government job notifications. Some central PSU roles may have restrictions on online degrees.'}`
     },
-    {
+    // B3 batch 2: only the programme's own rule (MBA: u.eligibility).
+    ...(programmeEligibility(u, displayProgram) ? [{
       q:`What is the eligibility for ${u.name} ${displayProgram}?`,
-      a:`${u.eligibility}. No entrance exam is required for online admission. Admission is based on merit and online application. Mark sheets and degree certificate are required at enrolment.`
-    },
+      a:`${programmeEligibility(u, displayProgram)}. No entrance exam is required for online admission. Admission is based on merit and online application. Mark sheets and degree certificate are required at enrolment.`
+    }] : []),
     {
       q:`How are exams conducted at ${u.name}?`,
       a: isExamCentre(u) ? `${EXAM_CENTRE_LINE} Internal assessment runs through assignments and quizzes, and the exam schedule is communicated through the university LMS.` : `${u.name} uses ${u.examMode} mode. No travel to exam centre is required. Assessments include internal assignments, projects, and online proctored exams via webcam from home or office. Exam schedule is communicated through the university LMS.`
@@ -350,6 +352,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     approvals={u.approvals || []} universityId={u.id}
                     naac={u.naac}
                     nirf={u.nirf}
+                    nirfYear={u.nirfYear}
                     highlight={u.highlight}
                     layout="column"
                   />
@@ -429,11 +432,14 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                 </p>
                 {answerHtml ? <div dangerouslySetInnerHTML={{ __html: answerHtml }} /> : null}
                 <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                  {/* B3 batch 2: the tile printed "N/A" for every record without a year. */}
+                  {u.established && (
                   <div className="bg-surface-2 rounded-lg p-4 text-center">
                     <div className="text-2xl mb-2">🏛️</div>
                     <div className="text-xs text-ink-3 uppercase tracking-wider">Established</div>
-                    <div className="font-bold text-navy">{u.established || 'N/A'}</div>
+                    <div className="font-bold text-navy">{u.established}</div>
                   </div>
+                  )}
                   {[u.city, u.state].filter(Boolean).length > 0 && (
                     <div className="bg-surface-2 rounded-lg p-4 text-center">
                       <div className="text-2xl mb-2">📍</div>
@@ -449,13 +455,13 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                   {u.nirfMgt && u.nirfMgt > 0 && u.nirfMgt < 200 ? (
                     <div className="bg-surface-2 rounded-lg p-4 text-center">
                       <div className="text-2xl mb-2">🏆</div>
-                      <div className="text-xs text-ink-3 uppercase tracking-wider">NIRF Management</div>
+                      <div className="text-xs text-ink-3 uppercase tracking-wider">NIRF Management{u.nirfYear ? ` ${u.nirfYear}` : ''}</div>
                       <div className="font-bold text-navy">#{u.nirfMgt}</div>
                     </div>
                   ) : u.nirf > 0 && u.nirf < 200 ? (
                     <div className="bg-surface-2 rounded-lg p-4 text-center">
                       <div className="text-2xl mb-2">🏆</div>
-                      <div className="text-xs text-ink-3 uppercase tracking-wider">NIRF University</div>
+                      <div className="text-xs text-ink-3 uppercase tracking-wider">NIRF University{u.nirfYear ? ` ${u.nirfYear}` : ''}</div>
                       <div className="font-bold text-navy">#{u.nirf}</div>
                     </div>
                   ) : null}
@@ -625,7 +631,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     <ul className="flex flex-col gap-1.5">
                       <li className="text-sm text-slate-300">📅 Last date to apply: <strong className="text-white">March 2027</strong></li>
                       <li className="text-sm text-slate-300">💻 Mode: <strong className="text-white">Online classes{isExamModeConfirmed(u) ? (isExamCentre(u) ? '; exams in person at designated centres' : `; ${u.examMode} exams`) : ''}</strong></li>
-                      <li className="text-sm text-slate-300">✅ Eligibility: <strong className="text-white">{u.eligibility}</strong></li>
+                      {programmeEligibility(u, displayProgram) && <li className="text-sm text-slate-300">✅ Eligibility: <strong className="text-white">{programmeEligibility(u, displayProgram)}</strong></li>}
                     </ul>
                   </div>
                   <button
@@ -823,12 +829,12 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                 <div className="bg-white border border-border rounded-xl p-4">
                   <div className="font-bold text-navy text-sm mb-3">Quick Facts</div>
                   {[
-                    ...(u.nirf < 100 ? [{ label: 'NIRF University', value: `#${u.nirf}` }] : []),
-                    ...(u.nirfMgt && u.nirfMgt < 100 ? [{ label: 'NIRF Management', value: `#${u.nirfMgt}` }] : []),
+                    ...(u.nirf < 100 ? [{ label: 'NIRF University', value: `#${u.nirf}${u.nirfYear ? ` (${u.nirfYear})` : ''}` }] : []),
+                    ...(u.nirfMgt && u.nirfMgt < 100 ? [{ label: 'NIRF Management', value: `#${u.nirfMgt}${u.nirfYear ? ` (${u.nirfYear})` : ''}` }] : []),
                     ...(u.naac ? [{ label: 'NAAC Grade', value: u.naacScore ? `${u.naac} (${u.naacScore})` : u.naac }] : []),
                     ...([u.city, u.state].filter(Boolean).length ? [{ label: 'Location', value: [u.city, u.state].filter(Boolean).join(', ') }] : []),
                     { label: 'Exam Mode', value: u.examMode },
-                    { label: 'Eligibility', value: u.eligibility },
+                    ...(programmeEligibility(u, displayProgram) ? [{ label: 'Eligibility', value: programmeEligibility(u, displayProgram)! }] : []),
                     ...(feeShort(displayProgram) ? [{ label: `${displayProgram} fee`, value: feeShort(displayProgram)! }] : []),
                     ...(u.emiFrom > 0 ? [{ label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` }] : []),
                   ].map(row => (

@@ -78,3 +78,20 @@ export function feeSentence(feeStr: string | null | undefined, duration: string,
     ? `Total programme fee is ${feeStr} across ${duration}.`
     : 'The fee for the current intake is not published on this page yet, so request it in writing before you apply.'
 }
+
+/**
+ * Eligibility for one programme page. University.eligibility is the MBA's
+ * entry rule, so MBA pages print it and every other programme prints only a
+ * programme-level ProgramDetail.eligibility. With neither, undefined: the
+ * caller omits the line rather than print the MBA rule on a BBA, BCA or MCA
+ * page (B3 batch 2, 2026-11-18; Galgotias "Graduation pass" on its BBA page).
+ */
+export function programmeEligibility(
+  u: { eligibility?: string; programDetails?: Record<string, { eligibility?: string } | undefined> },
+  program: string,
+): string | undefined {
+  const own = u.programDetails?.[program]?.eligibility?.trim()
+  if (own) return own
+  if (/^MBA\b/.test(program)) return u.eligibility?.trim() || undefined
+  return undefined
+}

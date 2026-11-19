@@ -97,10 +97,6 @@
         "answer": "The programme teaches Power BI as a tool but does not include a Microsoft Power BI certification. Candidates should pursue the PL-300 (Power BI Data Analyst) certification separately. It is widely recognised by employers. The MBA provides the business and management context; certifications validate the tool proficiency."
       },
       {
-        "question": "What salary can Business Analytics MBA graduates expect?",
-        "answer": "Analytics professionals with 2-5 years of experience who complete this MBA typically target Analytics Manager roles paying Rs 10-20 lakh. BI Analysts and Business Analysts at entry level see Rs 5-9 lakh. Analytics consulting roles at Tiger Analytics, Fractal, or ZS Associates typically start at Rs 8-14 lakh for candidates with 2+ years of relevant experience."
-      },
-      {
         "question": "Is the Major Project in Sem 4 done independently or with employer data?",
         "answer": "Amity allows major projects using real organisational data with appropriate confidentiality protocols, or using publicly available datasets. Working professionals typically use data from their current employer, which significantly strengthens the project quality and real-world applicability. The project is independently evaluated by the programme faculty."
       }
@@ -109,7 +105,7 @@
       "chooseIf": [
         "You are in a data, analytics, or BI role and want a management credential that covers Power BI, forecasting, and ML at a NIRF-ranked university.",
         "You want to move from data analyst into analytics management or BI strategy roles and need both the degree and the technical content.",
-        "You need a credential under Rs 2 lakh that signals both management and analytics capability to employers screening for manager-level roles."
+        "You need a credential that signals both management and analytics capability to employers screening for manager-level roles."
       ],
       "consider": [
         "You need deep ML or AI engineering skills. The Amity Data Science spec covers advanced deep learning and is more technically intensive.",

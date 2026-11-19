@@ -47,10 +47,6 @@
         "answer": "Yes, provided the specific notification accepts UGC-DEB online degrees. Central government PSU recruitment for management roles has increasingly accepted UGC-DEB online degrees. Production and Operations Management is specifically relevant for manufacturing PSU roles in BHEL, BEML, HAL, and similar organisations. Always verify the specific notification's eligibility criteria before applying."
       },
       {
-        "question": "What is the salary range for Operations Management MBA graduates?",
-        "answer": "Plant managers and operations heads with 5-10 years of manufacturing experience who complete this MBA typically see packages of Rs 14-28 lakh. VP Operations and COO roles at mid-size manufacturing companies pay Rs 22-45 lakh. The degree most significantly impacts earning potential when it qualifies a technical specialist for the formal management track that their company's HR policy requires for senior operations leadership roles."
-      },
-      {
         "question": "Can I pursue this MBA alongside a Six Sigma certification?",
         "answer": "Yes. Pursuing Six Sigma Green Belt or Black Belt alongside this MBA is a common strategy for quality and operations professionals. The MBA provides the management and strategic context; the Six Sigma certification validates process improvement methodology proficiency. Together, they create a strong credentials combination for quality head and operations director roles at manufacturing companies that require both management qualifications and quality certifications."
       }
@@ -59,7 +55,7 @@
       "chooseIf": [
         "You are a production engineer, plant manager, or operations professional in manufacturing and need a formal management credential covering supply chain, quality, and production planning.",
         "You are targeting Plant Director, VP Operations, or COO roles at manufacturing companies that require a management degree alongside operational experience.",
-        "You want a dedicated manufacturing operations MBA at a NIRF #22 university under Rs 2 lakh."
+        "You want a dedicated manufacturing operations MBA at a NIRF #22 university."
       ],
       "consider": [
         "You need cross-functional management breadth beyond operations, General Management covers operations planning alongside finance, HR, and marketing.",

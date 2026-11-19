@@ -1,6 +1,7 @@
 import type { University } from '@/lib/data'
 import { CheckCircle, XCircle } from 'lucide-react'
 import { getFirstHand } from '@/lib/data/first-hand'
+import { programmeEligibility } from '@/lib/seo/display-guards'
 
 interface Props {
   u: University
@@ -35,7 +36,12 @@ const PROGRAM_DEFAULTS: Record<string, { eligibility: string; forWho: string[]; 
 
 export default function SectionWhoCanApply({ u, program, cleanName, hideLists = false }: Props) {
   const defaults = PROGRAM_DEFAULTS[program] || PROGRAM_DEFAULTS['MBA']
-  const eligibility = u.eligibility || defaults.eligibility
+  // B3 batch 2: u.eligibility is the MBA rule. Other programmes print only a
+  // programme-level field, else no eligibility line (the typed defaults below
+  // are not sourced either).
+  const eligibility = program === 'MBA'
+    ? (u.eligibility || defaults.eligibility)
+    : programmeEligibility(u, program)
   // A university with a first-hand file carries Rishi's MBA wording in
   // forWho/notFor, so its other programme hubs use the programme defaults
   // rather than print MBA copy on, say, the MCA page.
@@ -43,13 +49,18 @@ export default function SectionWhoCanApply({ u, program, cleanName, hideLists = 
   const forWho = ownLists && u.forWho?.length ? u.forWho : defaults.forWho
   const notFor = ownLists && u.notFor?.length ? u.notFor : defaults.notFor
 
+  // No eligibility and no lists would leave an empty card.
+  if (!eligibility && hideLists) return null
+
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-6">
       <h2 className="text-lg font-bold mb-4" style={{ color: '#0B1533' }}>{cleanName} Online {program} Eligibility 2026</h2>
 
+      {eligibility && (
       <div className={`p-3 rounded-lg bg-blue-50 border border-blue-100 text-sm text-blue-800${hideLists ? '' : ' mb-5'}`}>
         <strong>Eligibility:</strong> {eligibility}
       </div>
+      )}
 
       {!hideLists && <div className="grid sm:grid-cols-2 gap-4">
         <div>

@@ -56,7 +56,7 @@ export default function RequestSyllabusCard({ uniId, uniName, program }: Props) 
         </div>
 
         <p style={{ fontSize: 13, color: '#475569', lineHeight: 1.65, marginBottom: 6 }}>
-          {uniName} updates its {program} curriculum each admission cycle. For the current semester-wise subjects, exam pattern, and elective options, request the official syllabus.
+          For the current {uniName} {program} semester-wise subjects, exam pattern, and elective options, request the official syllabus.
         </p>
 
         <p style={{ fontSize: 11, color: '#94a3b8', marginBottom: 18 }}>

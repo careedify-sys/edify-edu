@@ -108,9 +108,9 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
     { label: 'Eligibility', value: eligibilityLabel,              highlight: false, sub: eligibilityNote },
     { label: 'NAAC',       value: u.naac,                         highlight: false },
     ...((u as any).nirfMgt && (u as any).nirfMgt < 200
-      ? [{ label: 'NIRF Mgmt', value: `#${(u as any).nirfMgt}`, highlight: false }]
+      ? [{ label: 'NIRF Mgmt', value: `#${(u as any).nirfMgt}${u.nirfYear ? ` (${u.nirfYear})` : ''}`, highlight: false }]
       : u.nirf > 0 && u.nirf < 500
-        ? [{ label: 'NIRF Univ', value: `#${u.nirf}`, highlight: false }]
+        ? [{ label: 'NIRF Univ', value: `#${u.nirf}${u.nirfYear ? ` (${u.nirfYear})` : ''}`, highlight: false }]
         : []),
   ]
 

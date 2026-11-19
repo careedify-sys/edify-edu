@@ -16,6 +16,8 @@ interface ApprovalBadgesProps {
   nirfEng?: number
   // Year of the Engineering rank; printed in the pill when set (B3).
   nirfEngYear?: number
+  // Edition of nirf and nirfMgt (B3 batch 2). Printed only when set.
+  nirfYear?: number
   highlight?: string
   layout?: 'row' | 'column'  // row = horizontal (cards/spec page), column = vertical (sidebar)
   // When set and the university is in NOT_ON_DEB_REGISTER, the UGC DEB pill is
@@ -196,6 +198,7 @@ export default function ApprovalBadges({
   nirfMgt,
   nirfEng,
   nirfEngYear,
+  nirfYear,
   highlight,
   layout = 'row',
   universityId,
@@ -216,6 +219,8 @@ export default function ApprovalBadges({
   const hasNIRFE = nirfEng !== undefined && nirfEng > 0 && nirfEng < 200
   // "Eng 2025" when the rank year is known, else "Eng" (B3).
   const engCategoryLabel = nirfEngYear ? `Eng ${nirfEngYear}` : 'Eng'
+  const uniCategoryLabel = nirfYear ? `Uni ${nirfYear}` : 'Uni'
+  const mgtCategoryLabel = nirfYear ? `Mgt ${nirfYear}` : 'Mgt'
   const hasNAAC  = naac && naac !== 'NA' && naac !== ''
 
   const container: React.CSSProperties = isColumn
@@ -246,8 +251,8 @@ export default function ApprovalBadges({
       {hasNAAC && <ApprovalPill def={naacDef} extraText={naac} column={isColumn} />}
 
       {/* NIRF with rank */}
-      {hasNIRF && <ApprovalPill def={nirfDef} extraText={`(Uni) #${nirf}`} column={isColumn} />}
-      {hasNIRFM && <ApprovalPill def={nirfDef} extraText={`(Mgt) #${nirfMgt}`} column={isColumn} />}
+      {hasNIRF && <ApprovalPill def={nirfDef} extraText={`(${uniCategoryLabel}) #${nirf}`} column={isColumn} />}
+      {hasNIRFM && <ApprovalPill def={nirfDef} extraText={`(${mgtCategoryLabel}) #${nirfMgt}`} column={isColumn} />}
       {hasNIRFE && <ApprovalPill def={nirfDef} extraText={`(${engCategoryLabel}) #${nirfEng}`} column={isColumn} />}
 
       {/* WES */}

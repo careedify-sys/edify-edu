@@ -24,18 +24,17 @@ export default function SectionExams({ u, program, cleanName }: Props) {
           ? 'Assignment and project-based evaluation. No written end-semester exams.'
           : `${u.examMode}. Confirm exact format with the university before enrolling.`,
     },
-    {
+    // B3 (2026-11-18): the university's published weighting where a verify
+    // sheet records it; a plain "not published" line where its page states
+    // none. B3 batch 2: universities with no sourced field get no weighting
+    // row at all. The generic "30–40% / 60–70%" line was typed, not sourced.
+    ...(u.assessmentWeighting ? [{
       icon: BookOpen,
       label: 'Assessment Pattern',
-      // B3 (2026-11-18): the university's published weighting where a verify
-      // sheet records it; a plain "not published" line where its page states
-      // none. Other universities keep the generic line until checked.
       desc: u.assessmentWeighting === 'not-published'
         ? `${cleanName} does not publish the internal and end-semester weighting on its ${program} page. Ask the university for it in writing.`
-        : u.assessmentWeighting
-          ? `Internal assessment contributes ${u.assessmentWeighting.internal}% and the end-semester examination ${u.assessmentWeighting.external}%, as the university publishes it.`
-          : 'Internal assessment (assignments, quizzes, participation) contributes 30–40%. End-semester exam contributes 60–70%.',
-    },
+        : `Internal assessment contributes ${u.assessmentWeighting.internal}% and the end-semester examination ${u.assessmentWeighting.external}%, as the university publishes it.`,
+    }] : []),
     {
       icon: Briefcase,
       label: 'Capstone / Project',

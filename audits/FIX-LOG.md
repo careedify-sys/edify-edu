@@ -71,6 +71,114 @@
   descriptions changed A++ to A+ on 13 Vignan pages. No H1 changed. updatedAt bumped to 2026-11-19 on the
   10 posts whose content changed.
 
+## 2026-11-19 · B3 batch 2: verify-sheet FIX and REMOVE rows for Amity, Uttaranchal, Shoolini, Adichunchanagiri, plus batch-1 leftovers (branch fix/b3-batch-2)
+
+- **Sources:** audits/verify/{amity-university-online, uttaranchal-university-online, shoolini-university-online,
+  adichunchanagiri-university-online}-2026-11-18.md (committed with this batch). Only FIX and REMOVE rows
+  were applied. UNCLEAR rows and rows tied to Q24-Q32 were left alone (Amity NAAC, Amity spec pages and the
+  "19" spec count that comes from them, QS Asia #45, the January 2027 intake, UU NAAC validity, Shoolini exam
+  mode, Shoolini QS/THE, the ACU fee total, ACU spec pages).
+- **Shared template claims removed for every university (A9 precedent).** Each was printed on every hub
+  whatever the university publishes:
+  - EMI plan cards (fee ÷ 6, 12, 24): our arithmetic shown as the university's offer. "Low monthly" card
+    480 files to 0. The "Starting at" figure and the calculator link stay.
+  - "Registration / Admission Fee: Included in total": 543 files to 0. ACU charges registration separately.
+    ACU's published Rs 500 registration and Rs 3,000 a year exam fee now print as separate lines
+    (`feeExtras`), never added to a total.
+  - "80% of the Indian job market" red flag: 506 to 0. No source.
+  - Generic "30–40% / 60–70%" assessment weighting: 1,304 to 0. It now renders only from a sourced
+    `assessmentWeighting`, and the card is omitted otherwise.
+  - "updates its MBA curriculum each admission cycle": 966 to 0. No university says this.
+  - "Established N/A": 142 to 0. The tile is omitted when there is no year.
+- **Salary (Part B item 7).** Every programme `avgSalary` in lib/data.ts was blanked: 407 non-empty values, 61
+  distinct strings (QA count on the 1ed2ea6 base; the first draft of this entry said 252 and 57). The most common, "₹4L – ₹12L per annum", is the Excel importer's default
+  (app/admin/excel-import/page.tsx). The rest are repeated templated ranges with no source on any record,
+  and none of the four sheets found a salary on a portal. "Alumni report salaries" 1,207 files to 0;
+  "₹4L – ₹12L" 1,069 hits to 0. Every renderer was already conditional on a value.
+- **Non-MBA eligibility (Part B item 6).** New `programmeEligibility()` in lib/seo/display-guards.ts.
+  A non-MBA page prints its own `programDetails[p].eligibility` or nothing. Before, the MBA line printed
+  everywhere, so Galgotias BBA/BCA/MCA pages said "Graduation pass", which is false for a BBA. Programme
+  eligibility was copied verbatim where a record already held it in text (Dr BR Ambedkar M.Com/MA/B.Com,
+  Sri Siddhartha MCA, Saveetha B.Com). Galgotias non-MBA "Graduation pass" 14 hits / 11 files to 0
+  (the one remaining hit is an MBA spec page). Known gap: the UniHero non-MBA tile still prints the typed
+  defaults ("Grad + 50%" / "10+2 + 50%").
+- **NIRF year on badges** (Amity sheet row 20): ApprovalBadges prints "(Uni 2025) #22" and
+  "(Mgt 2025) #49", the same form as batch 1's Eng label. UniHero, QuickFactsCard and the profile tiles
+  keep the category label and print the year after the rank ("#49 (2025)"). ApprovalsRow and
+  RankingBadge print "NIRF #49 Management 2025". The year is set to 2025 for Amity and Shoolini. The
+  label-and-value forms were placed so that check-nirf-category still sees the category beside the rank.
+  The profile FAQ line "ranked NIRF #N in the University category" now reads "ranked at NIRF University
+  rank #N" for the same reason. Before, that gate flagged it once the file was staged.
+- **Amity:**
+  - Why: the hub and profile printed our own products of the instalments (₹2,13,760, ₹2,25,200,
+    ₹2,13,744, ₹3,29,200, ₹3,12,552). Amity publishes effective totals of ₹2,13,750, ₹2,25,000,
+    ₹2,13,750, ₹3,29,000 and ₹3,12,560.
+  - What: the feePlans totals now match; the review blog tables and mba-seo-overrides intro too. All five
+    derived figures went from 20 files to 0. "under Rs 2 lakh" was removed from 8 spec JSONs (13 files to
+    5; the 5 left are generic blog phrases not about Amity). "QS World" was removed from 2 spec JSONs and
+    one blog line ("QS World rank #45"). 13 spec salary FAQs went. The hub JSON: no "19", no duplicate
+    General Management, fees as published, the session line for 2026-27 (July session), no
+    "among the first", ACCA as "9 ACCA paper exemptions", and Express Entry replaced with Amity's WES
+    wording. "19 specialisations" was dropped from the tagline, blogs, compare FAQs, coupon page and peer
+    JSONs (prose says "many", spec-count columns say 14, the count on Amity's specialisation tab).
+  - Not done: the review metaDescription still says "19 specialisations". It is frozen to 2026-12-05 by
+    check-protected-pages. The hub pill and compare tables count `specs` (19), which Q25 decides. The
+    profile DEB table comes from the generated lib/data/ugc-deb-extract.json; a 2026-27 row needs the
+    extract script, not a hand edit.
+- **Uttaranchal:**
+  - Why: "30% scholarship" is a marketed percentage. The EMI ₹4,317 was ₹1,03,600 / 24, and UU publishes
+    ₹3,733. The forWho WES line, "est. 2011", red flags 2 to 4, and the weekend/48-hour line had no source.
+  - What: labels now say "after scholarship". emiFrom 3733 in data.ts, data-slim and fees-hub. MBA feePlans
+    adds the published annual ₹49,800 line and the ₹2,500 per semester exam fee note. established 2013,
+    feeVerifiedOn 2026-11-18. The 9 JSONs, review blog and seo overrides were swept. The hub ugcDeb names
+    the 2026-27 (July session) register row. The /universities profile card fee printed "₹100K – ₹1.5L";
+    GatedContent now prints exact rupees. "UU 30%" 84 hits / 27 files to 17 / 8: every hit left is SMU's
+    own Northeast scholarship or a generic sentence. 4,317 35 hits to 0.
+- **Shoolini:**
+  - Why: the spec JSONs said PAP was Rs 1,20,000 before placement plus Rs 30,000 after. Shoolini publishes
+    Rs 1,34,300 during the course and Rs 23,700 after. They also said "India's only" where Shoolini says
+    "first", printed 25%/35%/21% savings, and said "no exam fees". Blogs said the PAP fee was Rs 1,50,000.
+    The EMI Rs 5,417 was Rs 1,30,000 / 24, and Shoolini publishes no amount. The 5-day immersion belongs to
+    MBA Premium. The value add-ons are "any one", not all included.
+  - What: the 9 full fee blocks were rewritten from the sheet. The split, "only", the percentages, and
+    "Rs 1,30,000 with PAP" were fixed across 16 JSONs and 3 blogs. emiFrom 0. feePlans as published. The
+    highlights heading reads "One free value add-on, as Shoolini describes it". The immersion item was
+    removed, and the PAP item is now MBA only. The hub ugcDeb names the 2026-27 (July session) row.
+  - Not done: "the only UGC-DEB online MBA with <specialisation>" claims (not sheet rows); QS lines (Q30);
+    the spec rename Finance to Financial Management (it would move a derived title).
+- **Adichunchanagiri:** emiFrom 4417 (published; was 6,187 with no source) in data.ts, data-slim,
+  fees-hub and the review blog. feeExtras carries the registration and exam fees. Salary and hirers were
+  removed.
+  - Not done: the review blog's "₹1,50,000 all-in" sum uses Rs 2,000 / Rs 4,000 components (the sheet says
+    Rs 500 / Rs 3,000). It is the post's premise and waits on Q31. The session line needs a content JSON
+    ACU does not have.
+- **Batch-1 leftovers:**
+  - DSU spec JSONs: the derived gaps (Rs 30,000, 55,000, 80,000, 18,000, 69,400) now read without a
+    number. One table cell in the Amity-vs-LPU MCA blog ("Amity costs approx Rs 69,400 more") lost its number too, but that post still carries the gap in four other places (MCA, outside these sheets; left for a later pass).
+  - nmims-online-mba-review "SSODL costs Rs 1.19L more" and the Symbiosis JSON "Rs.1.19L less" now read
+    without a number. The same review sentence also said Amity has no Management NIRF rank, which
+    contradicts the sheet's MATCH row (#49 Management 2025). It now states both 2025 ranks.
+  - BITS "0% interest": the BITS sheet row 27 does source it on bits-pilani-wilp.ac.in/mba/finance.php, so
+    the fact was kept and the percentage dropped ("interest-free EMI option") in data.ts, the hub JSON and
+    the review FAQ.
+  - BITS review: "₹2,92,400 + ₹18,500 + ₹1,500 = ₹3,12,400" and the table rows ₹2,92,400, ₹3,10,900 and
+    ₹1,66,200 were our sums. They were replaced by the published lines (Sem 1 ₹93,100, Sem 2-4 ₹73,100 each,
+    total ₹3,12,400, admission ₹18,500, application ₹1,500). BITS 2,92,400 3 hits to 0.
+- **Titles:** 0 `<title>` changes across 2,335 built pages (diffed against the 1ed2ea6 build). 3 meta
+  descriptions changed (UU review, Amity hub, UU hub), all by dropping "30%" or "19".
+- **Detector:** a visible-text detector (scripts, styles and comments stripped) was run on the 1ed2ea6
+  build and on the final build of this commit. Each removal needle was proven on the 1ed2ea6 build, where
+  it fired. "widest specialisation" fell from 8 to 4 files, none of them Amity. "DSU gaps" fell from 8 to
+  4 files: the 4 left are 3 Kurukshetra and Vignan spec pages and the Amity-vs-LPU MCA blog, none of them
+  DSU pages.
+- **Gates:**
+  - check-blog-fees: the BITS review table first raised its loose count from 4 to 5. The table's
+    "Total Programme Fee" row was dropped, since the total is stated twice in the prose above it. The
+    unverified count then fell from 2024 to 2023, and the gate lowered its own baseline.
+  - check-blog-updated-at: updatedAt was set to 2026-11-19 on the 45 posts whose content changed.
+    updatedAt is not a frozen field.
+  - Every gate passed without --no-verify.
+
 ## 2026-11-18 · B3 batch 1: verify-sheet FIX and REMOVE rows for six universities (branch fix/b3-batch-1)
 
 - **Sources:** audits/verify/{bits-pilani-work-integrated-online, galgotias-university-online,
