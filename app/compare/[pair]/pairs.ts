@@ -203,7 +203,7 @@ export const PAIRS: Record<string, PairConfig> = {
       { q: 'Is Amity or Chandigarh University better for online MBA?', a: 'Amity has NIRF #22 University and QS ranking. CU has NIRF #19 University and PwC triple certification. Both are NAAC A+ and UGC-DEB approved. CU is slightly cheaper.' },
       { q: 'What is the fee difference?', a: 'Amity costs Rs 2,07,000 to Rs 2,25,000. CU costs Rs 1,75,125 (1 certificate, after the 25% Early Bird) to Rs 2,38,000 (3 certificates, list). The lowest CU fee is Rs 31,875 below the lowest Amity fee, but the top CU list price is Rs 13,000 above the top Amity fee. Fees are indicative; confirm on both official portals.' },
       { q: 'Which has PwC industry certification?', a: 'Only Chandigarh University. CU includes PwC India, PMI, and IBM certifications with its online MBA. Amity does not bundle industry certifications but has WASC (USA) accreditation.' },
-      { q: 'Which has more specialisations?', a: 'CU offers 26 specialisations. Amity offers 19. CU has more variety including niche options like Disaster Management and Airlines Management.' },
+      { q: 'Which has more specialisations?', a: 'CU offers 26 specialisations. Amity offers fewer. CU has more variety including niche options like Disaster Management and Airlines Management.' },
     ],
     verdictA: ['QS Asia-Pacific ranking matters for international portability', 'WASC (USA) accreditation is important for global career plans', 'Your target is NCR-region employers with Amity brand recognition'],
     verdictB: ['PwC/PMI/IBM triple certification is a resume differentiator', 'You want 26 specialisation options', 'NIRF #19 University rank edges Amitys #22'],

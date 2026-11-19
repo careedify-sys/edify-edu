@@ -5111,7 +5111,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         roles: ['Project Coordinator', 'Project Manager', 'Scrum Master', 'PMO Analyst'],
         avgSalary: '',
         // B3: hirer list removed; none of these ten is among the hiring partners DPU's
-        // placement page names. The salary line stays until Q22 is answered.
+        // placement page names. avgSalary is blank like every other record (B3 batch 2).
         topCompanies: [],
         internshipType: 'Industry project and virtual internship',
         careerOutcome: 'UGC DEB approved MBA from Dr. D.Y. Patil Vidyapeeth, Pune, recognised for corporate hiring.',

@@ -19,8 +19,8 @@
     `assessmentWeighting`, and the card is omitted otherwise.
   - "updates its MBA curriculum each admission cycle": 966 to 0. No university says this.
   - "Established N/A": 142 to 0. The tile is omitted when there is no year.
-- **Salary (Part B item 7).** Every programme `avgSalary` in lib/data.ts was blanked: 252 values, 57
-  distinct strings. The most common, "₹4L – ₹12L per annum", is the Excel importer's default
+- **Salary (Part B item 7).** Every programme `avgSalary` in lib/data.ts was blanked: 407 non-empty values, 61
+  distinct strings (QA count on the 1ed2ea6 base; the first draft of this entry said 252 and 57). The most common, "₹4L – ₹12L per annum", is the Excel importer's default
   (app/admin/excel-import/page.tsx). The rest are repeated templated ranges with no source on any record,
   and none of the four sheets found a salary on a portal. "Alumni report salaries" 1,207 files to 0;
   "₹4L – ₹12L" 1,069 hits to 0. Every renderer was already conditional on a value.
