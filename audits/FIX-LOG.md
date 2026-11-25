@@ -78,6 +78,14 @@
     "Rs 1-3Cr+" comp in a role description. Left: salaryGrowth/salaryRange strings, which no component renders.
   - Gate tightened: the stale "ignou-online .tagline" entry was removed from data/string-truncation-allowlist.json.
     Round 1 shortened that tagline to 79 characters, so the entry matched nothing; removing it tightens the gate.
+- Round 3 (lead, QA re-run FAIL at 6d228c8, audits/qa/2026-11-25-b3-batch-6-premerge-rerun.md): pairs.ts still had the derived
+  "extra Rs 1,08,000" in an FAQ question and "(nearly half of Amity)"; deleted. "LPU is slightly cheaper" (MUJ is lower at both ends),
+  "CU is slightly cheaper" (CU tops out at 2,38,000 above Amity 2,25,000) and "JAIN is more affordable" (JAIN runs to 2,98,000)
+  are false on lib/data.ts; deleted. Every "MUJ bundles free Coursera Plus" line in pairs.ts contradicted lib/data.ts MUJ addOns
+  (Coursera access is optional, Rs 3,999 a year, not in the fee; Rishi confirmed 13 Nov): the answers now state that, and the
+  Coursera verdict items are dropped. MAHE Coursera claims dropped too (no record). Comma splice in lib/content.ts Digital Marketing
+  overview fixed. 34 more "bundled/free Coursera" lines in lib/blog.ts and page-content remain for the next batch.
+
 ## 2026-11-25 · Vercel build cost: main-only builds and docs-only skip (branch chore/vercel-build-cost)
 
 - **Source:** audits/vercel-build-cost-audit-2026-11-25.md. Build CPU was $8.23 of $11.51 this cycle (71.5%).
