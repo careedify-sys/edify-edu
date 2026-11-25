@@ -81,7 +81,10 @@ or neutral rewording only, no value added.
   section renders from lib/data.ts (counsellor line), and their fees.body no longer types Rs 1,36,000 to Rs 1,41,000;
   the "fee difference between Rs 1.36L and Rs 1.41L" FAQ and the hero fee segment are gone. The main hub's fees.body
   sentence with Rs 1,41,000 and Rs 35,250 was deleted whole. Also "(higher accreditation)" and "wins on
-  accreditation" against NIU (NIU is A+, same as Dr MGR).
+  accreditation" against NIU (NIU is A+, same as Dr MGR). The built profile and MBA hub still printed the fee from
+  lib/data.ts (description "Total fees: ₹1.41L.", forWho "an affordable NAAC A+ MBA (₹1.41L total)", tagline
+  "| Total fees ₹1.41L"); those text fragments were removed too. The structured fee fields (feeMin/feeMax, the
+  programDetails fees value) are untouched; they are the suppressed source the gates read and only reach the RSC payload.
 - **4. Kurukshetra "a central government university", 1 -> 0:** Why: Kurukshetra is a state university and there is
   no type field or verify sheet for it. QA's wording ("at Kurukshetra University Online").
 - **5. Broken rewrites from round 1, 2 -> 0:** BVP infrastructure "Bharati Vidyapeeth is one of them." lost its
@@ -115,7 +118,8 @@ or neutral rewording only, no value added.
   is never removed by the slider.
 - **9. DPU Agri Business vs Symbiosis, 2 -> 0:** "Symbiosis at approximately ₹1,70,000 with NAAC A" and "DPU wins on
   NAAC grade (A++ vs A)" contradict lib/data.ts (Symbiosis A++, gated MBA fee ₹3,15,000-₹3,70,000). Figures and grade
-  deleted, nothing substituted.
+  deleted, nothing substituted. The build showed the same defect on two sibling DPU pages (AI-ML and Business
+  Analytics: "DPU holds stronger NAAC (A++ vs A)" against JAIN, which is A++ in lib/data.ts); deleted there too.
 - **10. SMU Finance "most affordable", 6 -> 0:** Why: false on our own data (Galgotias A+ ₹80,200, Vignan A+
   ₹90,000). Superlative removed from tldr, about, comparisons, fees, FAQ and chooseIf; the Rs 1,20,000 and Rs 84,000
   figures stay as written. Same pass: Amrita AI "the strongest credential available in the online MBA space", "only 4

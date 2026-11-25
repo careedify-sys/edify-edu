@@ -4410,12 +4410,12 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 5667,
     eligibility: 'Any graduation with minimum 50% marks from a UGC-recognised university',
     eligibilityPct: 50,
-    tagline: 'One of Chennai\'s top NAAC A+ deemed universities — MBA with 6 specialisations including Hospital & Healthcare Management and Strategic HRM | Mandatory 8-week industry field project | Total fees ₹1.41L',
-    description: 'Dr. MGR Educational and Research Institute (Deemed University), Chennai, is a NAAC A+ accredited deemed university established in 1988 and named after legendary Tamil Nadu Chief Minister Dr. M.G. Ramachandran. Its UGC DEB approved online MBA spans 6 specialisations — with particular depth in Hospital & Healthcare Management, Human Resource Management, and Information Systems. The 4-semester program includes an 8-week mandatory field project, making it one of the more practically oriented online MBAs from a South Indian deemed university. Total fees: ₹1.41L. Recognised by UGC DEB for corporate hiring, PSU jobs, and higher education admissions across India.',
+    tagline: 'Chennai NAAC A+ deemed university: MBA with 6 specialisations including Hospital & Healthcare Management and Strategic HRM | Mandatory 8-week industry field project',
+    description: 'Dr. MGR Educational and Research Institute (Deemed University), Chennai, is a NAAC A+ accredited deemed university established in 1988 and named after legendary Tamil Nadu Chief Minister Dr. M.G. Ramachandran. Its UGC DEB approved online MBA spans 6 specialisations, with particular depth in Hospital & Healthcare Management, Human Resource Management, and Information Systems. The 4-semester program includes an 8-week mandatory field project, making it one of the more practically oriented online MBAs from a South Indian deemed university. Recognised by UGC DEB for corporate hiring, PSU jobs, and higher education admissions across India.',
     forWho: [
       'Healthcare and hospital administration professionals seeking an MBA with a healthcare specialisation',
       'HR professionals in Tamil Nadu and South India targeting strategic HRM, IR, or talent management roles',
-      'Working professionals wanting an affordable NAAC A+ MBA (₹1.41L total) from a Chennai institution',
+      'Working professionals wanting a NAAC A+ MBA from a Chennai institution',
       'Graduates in any discipline seeking a recognised online MBA with practical project experience',
     ],
     notFor: [
