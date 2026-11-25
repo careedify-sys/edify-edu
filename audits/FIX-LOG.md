@@ -85,6 +85,8 @@ or neutral rewording only, no value added.
   lib/data.ts (description "Total fees: ₹1.41L.", forWho "an affordable NAAC A+ MBA (₹1.41L total)", tagline
   "| Total fees ₹1.41L"); those text fragments were removed too. The structured fee fields (feeMin/feeMax, the
   programDetails fees value) are untouched; they are the suppressed source the gates read and only reach the RSC payload.
+  Touching those lines made check-em-dash see their two existing em dashes (tagline, description); both became
+  a colon and a comma, and the tagline lost the unscoped "One of Chennai's top" (now "Chennai NAAC A+ deemed university").
 - **4. Kurukshetra "a central government university", 1 -> 0:** Why: Kurukshetra is a state university and there is
   no type field or verify sheet for it. QA's wording ("at Kurukshetra University Online").
 - **5. Broken rewrites from round 1, 2 -> 0:** BVP infrastructure "Bharati Vidyapeeth is one of them." lost its
