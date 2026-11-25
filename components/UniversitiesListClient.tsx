@@ -27,19 +27,30 @@ export default function UniversitiesListClient({ cardFees }: { cardFees: CardFee
     setArr(arr.includes(val) ? arr.filter(x => x !== val) : [...arr, val])
   }
 
+  // The programme whose gated fee a card shows: the first selected programme, else MBA.
+  const feeProgFor = (u: { programs: Program[] }) => (programs[0] ?? (u.programs.includes('MBA') ? 'MBA' : undefined)) as Program | undefined
+  const cardFee = (u: { id: string; programs: Program[] }) => { const p = feeProgFor(u); return p ? cardFees[u.id]?.[p] : undefined }
+
+  // Equal values (including two missing fees) compare as 0, never NaN.
+  const byNum = (x: number, y: number) => (x === y ? 0 : x - y)
+
   const filtered = useMemo(() => {
     let res = UNIS_SLIM.filter(u => {
       if (search && !u.name.toLowerCase().includes(search.toLowerCase()) && !u.abbr.toLowerCase().includes(search.toLowerCase()) && !u.city.toLowerCase().includes(search.toLowerCase())) return false
       if (programs.length && !programs.some(p => u.programs.includes(p as Program))) return false
       if (regions.length && !regions.includes(u.region)) return false
       if (naacFilter.length && !naacFilter.includes(u.naac)) return false
-      if (u.feeMin > maxFee) return false
+      // B3 batch 5 round 2: filter on the gated card fee. A card with no
+      // published fee is never excluded by the slider.
+      const cf = cardFee(u)
+      if (cf && cf.min > maxFee) return false
       return true
     })
     if (sort === 'nirf')    res.sort((a,b) => getSortRank(a) - getSortRank(b))
     else if (sort === 'nirfm') res.sort((a,b) => (a.nirfMgt||999) - (b.nirfMgt||999))
-    else if (sort === 'feeAsc')  res.sort((a,b) => a.feeMin - b.feeMin)
-    else if (sort === 'feeDesc') res.sort((a,b) => b.feeMax - a.feeMax)
+    // Sort on the gated card fee; cards with no published fee sort last either way.
+    else if (sort === 'feeAsc')  res.sort((a,b) => byNum(cardFee(a)?.min ?? Infinity, cardFee(b)?.min ?? Infinity))
+    else if (sort === 'feeDesc') res.sort((a,b) => byNum(cardFee(b)?.max ?? -Infinity, cardFee(a)?.max ?? -Infinity))
     else if (sort === 'name')    res.sort((a,b) => a.name.localeCompare(b.name))
     return res
   }, [search, programs, regions, naacFilter, maxFee, sort])
@@ -181,8 +192,8 @@ export default function UniversitiesListClient({ cardFees }: { cardFees: CardFee
             {filtered.map((u, idx) => (
               <li key={u.id}>
                 {(() => {
-                  const feeProg = (programs[0] ?? (u.programs.includes('MBA') ? 'MBA' : undefined)) as Program | undefined
-                  const fee = feeProg ? cardFees[u.id]?.[feeProg] ?? null : null
+                  const feeProg = feeProgFor(u)
+                  const fee = cardFee(u)?.text ?? null
                   return <UniversityCard u={u} highlightProgram={programs[0]} programFee={fee} feeProgram={fee ? feeProg : undefined} />
                 })()}
               </li>

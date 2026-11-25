@@ -55,7 +55,7 @@ export default function AnimatedUniGrid({ unis, cardFees }: Props) {
             }}
           >
             {(() => {
-              const fee = cardFees?.[u.id]?.MBA ?? null
+              const fee = cardFees?.[u.id]?.MBA?.text ?? null
               return <UniversityCard u={u} programFee={fee} feeProgram={fee ? 'MBA' : undefined} />
             })()}
           </div>

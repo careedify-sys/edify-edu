@@ -823,7 +823,7 @@ export const SPEC_CONTENT: Record<string, SpecContent> = {
     metaDesc: 'MBA Finance online. Master financial modelling, investment analysis, corporate finance and banking. Salary ₹6L–₹25L. HDFC, Goldman Sachs, Deloitte hiring. UGC approved.',
     heroHeadline: 'MBA Finance Online: Build a Career at the Intersection of Money and Strategy.',
     heroSub: 'Master financial analysis, investment, corporate finance, and banking from India\'s top NIRF-ranked universities.',
-    overview: 'Finance is consistently India\'s highest-paying MBA specialisation. It prepares you for roles across banking, investment, corporate treasury, fintech, and financial advisory, sectors that employ over 35% of all MBA graduates in India.',
+    overview: 'Finance prepares you for roles across banking, investment, corporate treasury, fintech, and financial advisory, sectors that employ over 35% of all MBA graduates in India.',
     whyChoose: ['BFSI sector: India\'s largest MBA employer at 35%+ share','Fintech: India\'s fastest-growing finance sub-sector, 10× job growth since 2018','Finance skills transfer across industries','Clear career ladder: Analyst → Manager → CFO'],
     skills: ['Financial Modelling & DCF Valuation','Corporate Finance & Capital Budgeting','Investment Analysis & Portfolio Management','Risk Management & Derivatives','Banking Operations & Credit Analysis','Financial Reporting (Ind AS / IFRS)','Bloomberg Terminal basics','Excel + Power BI for finance dashboards'],
     certifications: ['CFA (Chartered Financial Analyst): exam prep in Semester 3','FRM (Financial Risk Manager): niche but premium','NISM Series VIII (Equity Derivatives): for capital market roles','Bloomberg Market Concepts: free, valuable for finance resume'],
@@ -839,7 +839,7 @@ export const SPEC_CONTENT: Record<string, SpecContent> = {
     editorialGuide: `
 # Online MBA Finance India 2026: Your Path to Financial Leadership
 
-An **online MBA in Finance** remains the most popular and highest-paying management specialisation in India. In 2026, the intersection of traditional banking and aggressive FinTech growth has created a unique "Super-Cycle" of hiring for finance professionals.
+An **online MBA in Finance** remains the most popular management specialisation in India. In 2026, the intersection of traditional banking and aggressive FinTech growth has created a unique "Super-Cycle" of hiring for finance professionals.
 
 ## Why 2026 is High-Growth for Finance
 India's financial sector is digitizing at a breakneck pace. From UPI-based lending to AI-driven wealth management, companies need leaders who understand both the "Money" and the "Tech." An **online mba finance india 2026** equips you with advanced financial modelling, risk management, and strategic investment skills.
@@ -927,7 +927,7 @@ The salary premium for Data Science MBAs is the highest of any specialisation in
     heroHeadline: 'MBA HR Online: Lead People. Drive Culture. Shape Organisations.',
     heroSub: 'Develop talent management, HR analytics, and organisational development skills valued by India\'s top companies.',
     overview: 'Human Resource Management has evolved from administrative support to a strategic business partner. An MBA in HR equips you to attract, develop, and retain talent, and increasingly to use HR analytics and technology to drive business outcomes.',
-    whyChoose: ['Every organisation needs HR: uniquely stable across economic cycles','HR Analytics and HR Technology are the highest-paying HR sub-functions','CHRO is now a C-suite role at most Fortune 500 companies in India','Remote work culture has permanently elevated HR\'s strategic importance'],
+    whyChoose: ['Every organisation needs HR: uniquely stable across economic cycles','CHRO is now a C-suite role at most Fortune 500 companies in India','Remote work culture has permanently elevated HR\'s strategic importance'],
     skills: ['Talent Acquisition & Employer Branding','Performance Management Systems (OKR, KPI, 360°)','HR Analytics: workforce planning, attrition prediction, HRIS data','Learning & Development: training needs analysis, program design','Compensation & Benefits: benchmarking, pay bands, incentive design','Labour Law & Compliance: POSH, CLRA, ESI, PF','HR Technology: SAP SuccessFactors, Darwinbox, Workday basics','Change Management & Organisation Design'],
     certifications: ['SHRM-CP: globally recognised HR certification','HRCI PHR (Professional in Human Resources), valued at MNCs','People Analytics Course (AIHR/Coursera): fastest-growing HR sub-skill','POSH Certification: mandatory compliance cert valued by all corporates'],
     careerBeginner: [{title:'HR Generalist',desc:'Handles recruitment, onboarding, employee queries, and basic compliance'},{title:'Talent Acquisition Executive',desc:'Manages hiring across job portals, LinkedIn, and campus placements'},{title:'HR Operations Analyst',desc:'Manages HRIS data, payroll processing, and compliance documentation'}],

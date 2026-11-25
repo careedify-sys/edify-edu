@@ -64,6 +64,63 @@
   /programs/mba/specializations/* (Q52), metaDesc strings that mention salary data (meta freeze), and the MBA hub
   line that links to those 7 Q52 pages, which still carry salary ranges.
 
+### Round 2 (QA FAIL at eff1c32, audits/qa/2026-11-25-b3-batch-5-premerge.md)
+
+Counts are source-level, eff1c32 vs the round 2 commit (scratchpad r2count.mjs). Same rule as round 1: removal
+or neutral rewording only, no value added.
+- **1. Card fee programme list, Mumbai and Madurai Kamaraj cards:** lib/card-fees.ts looped `u.programs`, which
+  still lists MBA for two universities whose profile does not show an MBA tab, so their cards printed an MBA fee and
+  EMI that the profile never shows. Why: the card must equal the profile. Now it loops
+  `getResolvableProgrammes(u)` (lib/seo/safe-internal-links.ts), the list the profile renders. Loop on u.programs 1 -> 0.
+- **2. Shoolini direct selling "DSA regulatory compliance (MCA 2021)", 1 -> 0:** Why: the 2021 direct selling rules
+  are Consumer Affairs, not MCA, and the verify sheet has subject names only. QA's wording used.
+- **3. Dr MGR fee leftovers, own fee 76 -> 0, fee-direction phrases 40 -> 0 (7 JSONs):** Why: Dr MGR's own fee is
+  suppressed (getExactFee none), so any "cheaper / at a lower fee / wins on fee" line compares against a fee the
+  page cannot show, and round 1's "X is cheaper." lines were the same claim without the number. Fee-direction
+  sentences and clauses deleted, curriculum comparisons kept. The 6 spec pages get `metadata.factSweep` so the fee
+  section renders from lib/data.ts (counsellor line), and their fees.body no longer types Rs 1,36,000 to Rs 1,41,000;
+  the "fee difference between Rs 1.36L and Rs 1.41L" FAQ and the hero fee segment are gone. The main hub's fees.body
+  sentence with Rs 1,41,000 and Rs 35,250 was deleted whole. Also "(higher accreditation)" and "wins on
+  accreditation" against NIU (NIU is A+, same as Dr MGR).
+- **4. Kurukshetra "a central government university", 1 -> 0:** Why: Kurukshetra is a state university and there is
+  no type field or verify sheet for it. QA's wording ("at Kurukshetra University Online").
+- **5. Broken rewrites from round 1, 2 -> 0:** BVP infrastructure "Bharati Vidyapeeth is one of them." lost its
+  antecedent in round 1 and was deleted. The Jamia Hamdard bullet "If budget is below Rs 1.20 lakh:" was left empty
+  when its fee was removed and Jamia's MBA fee is suppressed, so the whole line was deleted.
+- **6. Unscoped exclusivity, QA set in the 7 listed files 30 -> 0; "extremely rare / no direct peer / no comparable
+  peer / virtually no" across all page-content JSON 16 -> 1 (the 1 is Integral's "extremely rare on edifyedu.in",
+  scoped to our index):** Why: we cannot prove a negative across the DEB register, and two of these contradicted our
+  own pages (Symbiosis agri-ops "no direct peer" vs DPU Agri Business; UPES "Energy and Oil & Gas unique to UPES" vs
+  BVP Infrastructure). Cut back to the factual part in BVP event, infrastructure and sports, Symbiosis agri-ops, UPES
+  oil-gas and power, BITS strategy-consulting. Broadened sweep (QA list plus "central government university",
+  "MCA 2021", "India's only") over all page-content JSON, lib/blog.ts, lib/content.ts and pairs.ts also fixed: ADB,
+  BVP main hub, IIFT ("India's only Government of India institute"), Integral, JAIN AI-finance, HR-finance and ACCA,
+  Kurukshetra, SASTRA ("not found in other online MBAs"), SMU healthcare and 5 SMU "(unique regional scholarship)",
+  UPES main hub, Sharda SHRM, CU family business and CU marketing; 13 blog lines (UPES/NMIMS/Symbiosis "unique"
+  table cells and list items, NIU SPSS, DY Patil WES "one of very few", MUJ BBA, GLA, Jamia Hamdard body); 2 pairs.ts
+  FAQ answers. Also removed with them: BITS "one of India's top-5 engineering and science universities" (an unscoped
+  rank) and "Consulting professionals earn among the highest salaries" (pay claim, item 7 class). Left as is:
+  "central government university" for AMU, JMI and IGNOU (true, Acts of Parliament), generic uses ("unique ID",
+  "not unique to the technical tracks", NE India "unique geography"), claims scoped to our index or to two
+  universities, and the frozen Jamia Hamdard metaDescription "edge nobody else offers online".
+- **7. Pay claims in lib/content.ts, 5 -> 2:** HR whyChoose "HR Analytics and HR Technology are the highest-paying HR
+  sub-functions" and the Finance overview "Finance is consistently India's highest-paying MBA specialisation"
+  removed, plus the same claim in the Finance hub intro ("the most popular and highest-paying" -> "the most
+  popular"). Why: no source. The 2 left are BBA and B.Com lines (line ~345, ~619), outside the MBA scope; listed for
+  the next batch.
+- **8. /universities fee sort and Max Fees slider, raw feeMin/feeMax 5 -> 0:** Why: the list sorted and filtered on
+  the ungated UNIS_SLIM range while the card printed the gated fee, so a card saying "Contact our counsellor" could
+  be sorted as the cheapest or hidden by the slider. lib/card-fees.ts now also returns the gated rupees (min/max of
+  the same ExactFee the card prints); sort and filter use them. A card with no published fee sorts last both ways and
+  is never removed by the slider.
+- **9. DPU Agri Business vs Symbiosis, 2 -> 0:** "Symbiosis at approximately ₹1,70,000 with NAAC A" and "DPU wins on
+  NAAC grade (A++ vs A)" contradict lib/data.ts (Symbiosis A++, gated MBA fee ₹3,15,000-₹3,70,000). Figures and grade
+  deleted, nothing substituted.
+- **10. SMU Finance "most affordable", 6 -> 0:** Why: false on our own data (Galgotias A+ ₹80,200, Vignan A+
+  ₹90,000). Superlative removed from tldr, about, comparisons, fees, FAQ and chooseIf; the Rs 1,20,000 and Rs 84,000
+  figures stay as written. Same pass: Amrita AI "the strongest credential available in the online MBA space", "only 4
+  central universities ... hold it" and "highest-demand MBA specialisation" removed, as QA advised.
+
 ## 2026-11-19 · B3 batch 4: QA advisory leftovers from batches 1-3 (branch fix/b3-batch-4)
 
 - **Sources:** audits/qa/2026-11-19-b3-batch-2-premerge.md and -batch-3-premerge.md (advisories),
