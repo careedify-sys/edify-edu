@@ -1903,7 +1903,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 5000,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'LOWEST FEES among all 3 Manipal MBA programs – ₹1.1L for UGC-entitled Manipal MBA; ONLY Manipal MBA with Mandatory Dual',
+    tagline: 'LOWEST FEES among all 3 Manipal MBA programs; ONLY Manipal MBA with Mandatory Dual',
     description: 'UGC DEB approved online programs from Sikkim Manipal University. NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Students wanting the lowest-fee Manipal MBA', 'Those wanting dual expertise with Marketing as a mandatory specialisation', 'Healthcare professionals wanting MBA'],
     notFor: ['Students wanting highly specialised single-domain MBA', 'Those needing strongest NIRF ranking (MAHE or MUJ rank higher)'],

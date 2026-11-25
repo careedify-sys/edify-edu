@@ -1,5 +1,74 @@
 # Fix log
 
+## 2026-11-25 · B3 batch 7: MUJ Coursera, /fees floor chip, guide pay claims, stale SMU fee, ad-spend stat, Galgotias URL (branch fix/b3-batch-7)
+
+- **Source:** audits/OPERATING-PLAN.md status line "Next (B3 batch 7)". Facts checked only against lib/data.ts. No
+  fee, rank, grade, salary, date or eligibility value was added; every fix is a removal or a rewording that keeps a
+  fact the page already stated or that lib/data.ts holds. Bulk edits ran as single-pass scripts (all positions
+  computed on the original text, one write per file). No title, seoTitle, metaDescription, tags or targetKeyword
+  changed. 16 blog posts changed body text and all carry updatedAt 2026-11-25 (5 bumped here, 11 already dated today).
+- **1. MUJ Coursera "bundled / included / free / integrated":**
+  - Why: lib/data.ts MUJ addOns (Rishi, confirmed 2026-11-13) says Coursera access is an optional add-on at Rs 3,999
+    for one year, not included in the programme fee, bought after admission. The MUJ hub FAQ and first-hand copy
+    already said so, while the spec pages, the coupon page and 30 peer pages said the opposite. "Coursera Plus",
+    "Rs 13,999 standard" and "70% off" are not in lib/data.ts either.
+  - What: MUJ spec page TL;DRs now say "Coursera access is an optional paid add-on, not part of the programme fee";
+    "Coursera Plus bundle" paragraphs, "bundled access (MUJ differentiator)" blocks, "You value Coursera Plus" choose-if
+    items and Coursera clauses in comparisons removed; the "included or charged separately?" FAQ now asks "Is Coursera
+    access included in the MUJ MBA fee?" and answers no. MUJ hub JSON: curriculum-integration, "Included for the
+    programme duration", "Coursera account linked", "free certifications included" and the "Coursera Integration | Yes"
+    table row removed. Coupon FAQ now says No. lib/content.ts MUJ syllabus highlight "Powered by Coursera
+    integration" removed (optional field). Five blog lines (two MUJ semester cards, the MUJ sem card "Exclusive to MUJ
+    Learners / Free access ... included", the SMU review table cell, the LPU vs CU list item) fixed. 30 peer JSON files
+    (LPU, JAIN, Symbiosis, ICFAI, JIIT, BIT Mesra, UPES, SMU, Galgotias) dropped "MUJ ... with Coursera Plus", "MUJ has
+    Coursera Plus bundled", "perks" verdicts and Coursera-led choose-if items. /compare: "Which includes Coursera Plus?"
+    is now "What add-on learning does each offer?"; amity-vs-manipal-jaipur "spec variety vs platform perks" now reads
+    "spec variety vs the Manipal group brand" (the earlier sentence names that brand).
+  - Counts: MUJ page-content Coursera mentions not saying optional/paid 94 -> 11 (the 11 are the "Is Coursera access
+    included...?" FAQ questions, answered No); peer JSON sentences pairing MUJ with Coursera 56 -> 1 (kept: a MAHE claim
+    in the Amity BA file, MUJ part makes no Coursera claim); blog MUJ lines 5 -> 0; coupon 1 -> 0; content.ts 1 -> 0;
+    pairs question 1 -> 0, "platform perks" 1 -> 0.
+  - Not changed (other universities, no contradicting lib/data.ts record, listed for Rishi): MAHE "Coursera Plus bundled
+    free" in its page-content, blog (MAHE review semester card, online-manipal review, correspondence-MBA table),
+    lib/content.ts MAHE highlight, lib/coupon-pages.ts MAHE "Coursera-integrated EMI options", lib/reviews-data.ts MAHE
+    reviews; SMU page-content "Coursera free access"; SRM Sikkim "Coursera certifications bundled" (lib/data.ts
+    description and northeast blog); Amity "Coursera plus IBM" table cells. lib/content.ts MUJ MCA "Access to Coursera
+    Certifications (Rs 3,999)" kept: it states a paid price and agrees with the add-on.
+- **2. /fees summary chips:**
+  - Why: "Rs 60K lowest fee" was false. fees-hub-data.json lists DDU at Rs 30,500 to 57,500, and the Rs 60K figure is
+    IGNOU's, so the chip presented IGNOU as the fee floor. "Rs 3.70L highest fee" is the same typed-superlative shape.
+  - What: both chips removed; the NAAC A++ count chip and counselling link stay. The FAQ "How do I find the lowest fee"
+    is process advice with no figure and stays. Counts: 2 -> 0. No other IGNOU-as-floor FAQ exists in app/fees or
+    components/FeesTableClient.tsx (searched); site-wide "fees from Rs X" floors elsewhere are listed in the report.
+- **3. lib/guides.ts pay claims (salary-after-mba-india, career-after-mba-india):**
+  - Why: every LPA range, the crore ceiling, the government Rs 50,000 to 1.5 lakh band and the "highest salary
+    ceilings" / "highest-growth" / "salary premium" lines were unsourced. "Drawn from university placement disclosures
+    and NIRF data" was not true: NIRF does not publish online-vs-campus or per-specialisation pay.
+  - What: salary columns dropped from both tables (the specialisation and job-title columns and growth paths stay),
+    figures and superlatives deleted from prose, FAQ answers rewritten without figures (the H3 "Can an online MBA
+    fresher earn Rs 10 LPA?" is now "...earn a strong starting salary?"). The salary guide desc card no longer promises
+    numbers. Also removed: "typically Rs 80,000 to Rs 3 lakh" (a fee floor IGNOU and DDU sit under). Counts: LPA 54 ->
+    2, superlatives 5 -> 0, other pay figures 3 -> 0. The 2 left are the salary guide's metaDescription, not edited
+    (meta change), listed for Rishi.
+- **4. Stale SMU MBA fee:**
+  - Why: lib/data.ts SMU feePlans.mba is Rs 1,20,000 (portal, 2026-10-06). Rs 1.1L / 1.10 lakh / 1,10,000 is the old
+    MBA figure. SMU MCA is 1,10,000 in programFees, so MCA mentions were left alone.
+  - What: tagline figure deleted ("LOWEST FEES among all 3 Manipal MBA programs; ONLY Manipal MBA with Mandatory
+    Dual"; LOWEST holds: SMU 1,20,000 < MUJ 1,84,000 < MAHE 2,92,000). Blog: figure tokens deleted from two il-sub
+    cards, the fee-comparison line, the best-colleges ROI line and the Karnataka line; the correspondence-MBA table row
+    and five SMU rows in other reviews' comparison tables (UU, Galgotias, Arka Jain, NIU, Shoolini) deleted whole
+    rather than printing a new figure in a blog table. Counts: data.ts 1 -> 0, blog 11 -> 0. Kept: MCA tables and
+    sentences (amity-online-mca-fees-review, best-computer-courses, online-mca-india), and "Rs 1.10 to 1.65 lakh" tier
+    range in a mid-tier band that SMU's 1,20,000 sits inside.
+- **5. "Rs 60,000 Cr" digital ad spend (mba-marketing-career-salary-jobs-2026):** no approved source; the Dentsu
+  attribution was unchecked. The FAQ sentence and the bullet (with its "every company is increasing budgets") deleted.
+  Counts: 2 -> 0.
+- **6. Visible galgotiasonline.edu.in:** house rule, no official university URLs in visible copy. Removed from the
+  Galgotias review (6 places, including 3 outbound links), the business/data analytics post, 7 Galgotias spec JSONs and
+  the Galgotias MBA hub admission step 1 ("Open the university's online admissions portal"). Counts: 20 -> 0. Not
+  changed: lib/data.ts officialUrl and feePlans source (data, schema sameAs), syllabus-manifest.json (not rendered),
+  and the coupon template line that prints page.officialUrl on every coupon page (site-wide, listed for Rishi).
+
 ## 2026-11-25 · B3 batch 6: superlatives, pay claims and market stats (branch fix/b3-batch-6)
 
 - **Source:** audits/qa/2026-11-25-b3-batch-5-premerge-rerun.md, items 1-8. Facts checked only against lib/data.ts

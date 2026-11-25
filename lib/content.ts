@@ -3603,7 +3603,6 @@ export const MASTER_SYLLABUS: Record<string, MasterSyllabus> = {
   'manipal-university-jaipur-online||MBA': {
     sem1: 'Entrepreneurial Practice | Business Communication | Managerial Economics | Financial Accounting | Data Visualisation (Excel/Tableau) | Organizational Behaviour | Marketing Management.',
     sem2: 'Business Research Methods (R/Python) | Advanced Financial Management | Operations Management | Human Resource Management | Strategic Management | Legal Aspects of Business.',
-    highlight: 'Powered by Coursera integration',
     specSyllabus: {
       'Finance': {
         sem3: 'Strategic Management | Term Paper | Security Analysis and Portfolio Management | Mergers and Acquisitions | Taxation Management | Internal Audit and Control.',

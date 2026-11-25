@@ -157,7 +157,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     faqs: [
       { q: 'What is the MUJ online MBA discount coupon code?', a: 'The verified discount coupon code is MUJ2026-4K. It carries up to Rs 5,000 on Tuesday and Saturday in IST, and Rs 4,000 on other days.' },
       { q: 'How much can I save with the MUJ coupon code?', a: 'The MUJ2026-4K coupon saves up to Rs 5,000 on Tuesday or Saturday in IST, and Rs 4,000 on other days. The discount is applied at enrollment with no eligibility check. Programme fee details are confirmed by our admission desk on the enrollment call.' },
-      { q: 'Does MUJ include Coursera Plus?', a: 'Yes. MUJ bundles free Coursera Plus access throughout the programme. This is included in the fee and is not affected by the bonus.' },
+      { q: 'Does the MUJ fee include Coursera access?', a: 'No. Coursera access is an optional paid add-on at MUJ, not part of the programme fee.' },
       { q: 'Is there a separate MCA code for MUJ?', a: 'Yes. MUJMCA2026-4K applies to MUJ Online MCA with the same budget-tier amounts.' },
       { q: 'Is MUJ the same as MAHE Manipal?', a: 'No. MUJ (Manipal University Jaipur) and MAHE (Manipal Academy of Higher Education, Karnataka) are separate universities under the Manipal group. MUJ is more affordable; MAHE has higher NIRF rank.' },
       { q: 'Can I switch from semester payment to one-time after enrollment?', a: 'Typically no. The 15% upfront discount applies only if you choose one-time payment at the start. Confirm with the MUJ admissions team before enrolling.' },

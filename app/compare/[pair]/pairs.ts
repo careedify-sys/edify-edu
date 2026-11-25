@@ -49,7 +49,7 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'marketing',
     faqs: [
-      { q: 'Is Amity or MUJ better for online MBA?', a: 'Both are NAAC A+ and UGC-DEB approved. Amity has many specialisations and a QS ranking. MUJ has the Manipal group brand. Choose based on spec variety vs platform perks.' },
+      { q: 'Is Amity or MUJ better for online MBA?', a: 'Both are NAAC A+ and UGC-DEB approved. Amity has many specialisations and a QS ranking. MUJ has the Manipal group brand. Choose based on spec variety vs the Manipal group brand.' },
       { q: 'What is the fee difference between Amity and MUJ?', a: 'Amity costs Rs 2,07,000 (one-time) to Rs 2,25,000 (standard). MUJ costs Rs 1,84,000 (or Rs 1,56,400 with 15% upfront discount). MUJ is more affordable.' },
       { q: 'Does MUJ include Coursera Plus?', a: 'MUJ lists Coursera access as an optional add-on, not included in the programme fee. Amity offers broader specialisation options.' },
       { q: 'Which university has better NIRF rank?', a: 'Amity holds NIRF #22 University. MUJ holds NIRF rank in the University category as well. Both are comparable in NIRF positioning.' },
@@ -216,7 +216,7 @@ export const PAIRS: Record<string, PairConfig> = {
     faqs: [
       { q: 'Is MUJ or Chandigarh University better for online MBA?', a: 'MUJ has the Manipal group brand. CU has PwC triple certification and NIRF #19 University. Both are NAAC A+ and UGC-DEB approved.' },
       { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,56,400 (upfront) to Rs 1,84,000. CU costs Rs 1,75,125 (1 certificate, after the 25% Early Bird) to Rs 2,38,000 (3 certificates, list). Fees are indicative; confirm on both official portals.' },
-      { q: 'Which includes Coursera Plus?', a: 'MUJ lists Coursera access as an optional add-on, not included in the programme fee. CU includes PwC/PMI/IBM certifications.' },
+      { q: 'What add-on learning does each offer?', a: 'MUJ lists Coursera access as an optional add-on, not included in the programme fee. CU includes PwC/PMI/IBM certifications.' },
       { q: 'Which has better NIRF rank?', a: 'CU has NIRF #19 University (stronger). MUJ has NIRF #58 University. CU ranks significantly higher in NIRF.' },
     ],
     verdictA: ['Budget matters', 'You value the Manipal group brand for recruiter recognition'],

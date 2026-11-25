@@ -9,8 +9,11 @@ const BASE = 'https://edifyedu.in'
 const year = new Date().getFullYear()
 
 // ── Summary figures ──────────────────────────────────────────────────────────
-// The two fee chips stay literals ON PURPOSE. Deriving them from feesData was
-// tried on 2026-09-13 and reverted the same day: min(feeMin) returned IGNOU at
+// No lowest-fee or highest-fee chip. The literal "₹60K lowest fee" chip was
+// removed on 2026-11-25 (B3 batch 7) because it was false: DDU lists a lower
+// fee, and a typed floor goes stale the day any university is added or repriced.
+// The "₹3.70L highest fee" chip went with it for the same reason. Deriving
+// either from feesData was tried on 2026-09-13 and reverted the same day: min(feeMin) returned IGNOU at
 // ₹9,600, which is the floor of a ₹9,600 to ₹66,000 row spanning seven
 // programmes, not a total fee anyone pays. 63 of the 125 priced rows exceed the
 // SUSPICIOUS_RANGE_RATIO of 3.0 that lib/fees.ts already uses to reject exactly
@@ -180,12 +183,6 @@ export default function FeesPage() {
               Filter by program, NAAC grade, or region. Fees are indicative. Talk to our counsellor before applying.
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
-              <div className="bg-surface-2 rounded-lg px-3 py-2 text-xs text-ink-2">
-                <span className="font-bold text-navy">₹60K</span> lowest fee
-              </div>
-              <div className="bg-surface-2 rounded-lg px-3 py-2 text-xs text-ink-2">
-                <span className="font-bold text-navy">₹3.70L</span> highest fee
-              </div>
               <div className="bg-surface-2 rounded-lg px-3 py-2 text-xs text-ink-2">
                 <span className="font-bold text-navy">{naacAPlusPlus}</span> NAAC A++ universities
               </div>
