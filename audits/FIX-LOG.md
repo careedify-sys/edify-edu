@@ -6,7 +6,8 @@
   (getExactFee / formatExactFeeShort, spec counts, naac). No fee, rank, grade, salary, date or eligibility value was
   added. Every fix is a removal, or a neutral rewording that keeps only a fact the page already stated. Bulk edits ran
   as single-pass scripts (read all files, write once). Titles, seoTitle, metaDescription, tags, targetKeyword and the
-  dead quickFacts field were not touched. 106 blog posts changed body text and carry updatedAt 2026-11-25.
+  dead quickFacts field were not touched. 114 blog posts changed body text (110 published, 1 redirected, 3 drafts)
+  and all carry updatedAt 2026-11-25 (corrected in round 2; round 1 said 106, a miscount).
 - **1. Fee and spec superlatives ("cheapest", "most affordable", "lowest fee", "best value", "widest"):**
   - Why: most were false or unprovable. lib/data.ts publishes DDU Rs 52,500, Andhra 62,200, IGNOU 66,000 and
     Mangalayatan 67,000 (NAAC A+) below Galgotias 80,200, so "Galgotias is the cheapest NAAC A+ MBA" and "IGNOU is
@@ -46,6 +47,37 @@
   fee, so the whole sentence and the new "Rs 1,41,000 total fee" bullet were deleted. Cyber security: renaming the
   "by Salary Premium" heading re-classed "Rs 250 Cr per violation" as a fee; the unsourced figure was deleted.
   Baseline only went down.
+- **Round 2 (QA FAIL F1-F10, audits/qa/2026-11-25-b3-batch-6-premerge.md):** all removals or one-token grade fixes.
+  - F1 BVP self-grade, 11 -> 0 (12 strings across the 11 lines QA listed): "NAAC A+" -> "NAAC A++" where the
+    sentence describes BVP. Why: lib/data.ts and the NAAC audit give BVP A++; round 1 fixed only some lines. Peer
+    grades in the same files (Vignan, Galgotias, NIU, Sharda, Amity, Kurukshetra, Uttaranchal) are untouched.
+  - F2 DPU fintech FAQ "Choose DPU if fee saving with NAAC A++ is the priority." deleted, 1 -> 0. Why: the saving is
+    a derived gap, and it shipped in FAQPage JSON-LD after round 1 removed it from the body.
+  - F3 lib/mba-seo-overrides.ts IGNOU intro: "most affordable UGC-DEB approved management degree in India" clause
+    deleted, 1 -> 0; the sentence now ends at the fee. Why: DDU Rs 52,500 and Andhra Rs 62,200 are below IGNOU
+    Rs 66,000 in lib/data.ts.
+  - F4 Galgotias "second only to IGNOU" deleted from 4 MBA spec JSONs, 4 -> 0. Why: DDU, Andhra and Mangalayatan
+    (A+, Rs 67,000) are all below Rs 80,200.
+  - F5 best-online-bba-colleges FAQ "cheapest UGC-DEB valid BBA" deleted, 1 -> 0. Why: IGNOU has no BBA fee in
+    lib/data.ts.
+  - F6 mba-after-bsc-is-it-good-2026 FAQs: "(Rs 18-42 LPA range)", the "27 percent CAGR, USD 27 billion" stat and
+    three role LPA parentheticals removed, 5 -> 0. Why: the same unsourced figures round 1 removed from the DS post.
+  - F7 career-after-bcom FAQ "CA offers the highest salary ceiling" -> "CA has a very low pass rate", 1 -> 0.
+  - F8 online-mba-salary-india-2026: the emptied CFA list item deleted, and the 7 sibling "Adds Rs X to Y LPA"
+    figures in the same list removed (each item keeps its role target); H2 "Certifications That Add Premium"
+    renamed. 8 -> 0. Why: no source for the premiums.
+  - F9 pairs.ts derived savings and fee gaps, 23 -> 0: every "saves Rs X", "save Rs X", "Rs X more/cheaper",
+    "below/above the lowest fee" and "Difference:" sentence deleted; verdicts now read "Budget matters". The
+    published fees stay. Two were arithmetically wrong (SMU vs Amity, Amity vs LPU). Also two MUJ verdicts said
+    "the lowest Manipal fee", false because SMU Rs 1,20,000 < MUJ Rs 1,56,400; reworded to "Budget matters" and
+    "a lower fee than MAHE". Round 1 had wrongly kept the floor gaps.
+  - F10 lib/content.ts, rendered fields, 13 -> 0: "35% of all MBA graduates", "Rs 60,000 Cr+ digital ad spend",
+    "AI job postings grew 60% YoY", "Rs 10,000 Cr AI Mission", plus the one-pass sweep: "Roles grew 45% YoY",
+    "45% YoY job growth" whyChoose item, "cyber attacks growing 60% YoY", "salary bump of 30-50%", "40% higher
+    demand in 2026", "30-40% higher salaries", "40% more interview calls", "90% of banking ... roles", and the
+    "Rs 1-3Cr+" comp in a role description. Left: salaryGrowth/salaryRange strings, which no component renders.
+  - Gate tightened: the stale "ignou-online .tagline" entry was removed from data/string-truncation-allowlist.json.
+    Round 1 shortened that tagline to 79 characters, so the entry matched nothing; removing it tightens the gate.
 
 ## 2026-11-25 · B3 batch 5: QA advisories after batch 4 (branch fix/b3-batch-5)
 

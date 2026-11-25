@@ -116,7 +116,7 @@ export const MBA_SEO_OVERRIDES: Record<string, MBASeoOverride> = {
     title: 'IGNOU Online MBA Fees 2026: ₹66,000 Total | edifyedu.in',
     description: 'IGNOU online MBA total fee ₹66,000 for the full 2-year programme. NAAC A++, UGC-DEB approved central open university. Zero-commission, verified fee data. Compare IGNOU vs Amity, LPU, Galgotias.',
     h1: 'IGNOU Online MBA 2026: Fees, Admission Process, and Review',
-    intro: 'IGNOU online MBA total fee is ₹66,000 for the full two-year programme, making it the most affordable UGC-DEB approved management degree in India from a NAAC A++ accredited central open university. Specializations cover Financial, Marketing, Human Resource, Operations, and Services Management. Admissions run in January and July cycles. edifyedu.in compares IGNOU online MBA fees and programme structure against private university options like Amity and LPU using public data only.',
+    intro: 'IGNOU online MBA total fee is ₹66,000 for the full two-year programme. Specializations cover Financial, Marketing, Human Resource, Operations, and Services Management. Admissions run in January and July cycles. edifyedu.in compares IGNOU online MBA fees and programme structure against private university options like Amity and LPU using public data only.',
   },
 
   // MAHE: no fee-strip issue on this override, kept intact.

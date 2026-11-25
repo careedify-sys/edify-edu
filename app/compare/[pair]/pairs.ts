@@ -40,7 +40,7 @@ export const PAIRS: Record<string, PairConfig> = {
       { q: 'Does Symbiosis offer more subjects per semester?', a: 'Yes. Symbiosis is known for 10-12 subjects per semester (higher academic load). NMIMS has a standard 6-8 subject format. Symbiosis demands more study time.' },
       { q: 'Which is better for Pune-based careers?', a: 'Symbiosis carries stronger weight in Pune and Maharashtra. NMIMS carries stronger weight in Mumbai specifically. For broader Maharashtra, both work well.' },
     ],
-    verdictA: ['Mumbai BFSI is your target (NMIMS has specific Mumbai connections)', 'Budget matters: save Rs 95,000-1,50,000 vs Symbiosis', 'You prefer standard academic load (6-8 subjects/sem)'],
+    verdictA: ['Mumbai BFSI is your target (NMIMS has specific Mumbai connections)', 'Budget matters', 'You prefer standard academic load (6-8 subjects/sem)'],
     verdictB: ['You want the highest possible NAAC grade (A++) on your degree', 'Pune-region employers are your target', 'You can afford Rs 3,15,000 and want maximum academic depth per semester'],
   },
   'amity-vs-manipal-jaipur': {
@@ -56,7 +56,7 @@ export const PAIRS: Record<string, PairConfig> = {
       { q: 'Can I get scholarships at both universities?', a: 'MUJ offers 5 scholarship categories including Defence, Divyaang, and Merit. Amity offers Defence, Divyaang, Alumni, Merit, and Sports scholarships. Both have multiple discount options.' },
     ],
     verdictA: ['You want 19 specialisation options', 'QS Asia-Pacific ranking matters for international portability', 'Your target is NCR-region employers'],
-    verdictB: ['Coursera Plus free access adds genuine value to your learning', 'You want the Manipal group brand at a lower fee', 'You qualify for MUJs 15% upfront discount (saves Rs 27,600)'],
+    verdictB: ['Coursera Plus free access adds genuine value to your learning', 'You want the Manipal group brand at a lower fee', 'You qualify for MUJs 15% upfront discount'],
   },
   'amity-vs-nmims': {
     uniA: 'amity-university-online',
@@ -65,7 +65,7 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'marketing',
     faqs: [
       { q: 'Is Amity or NMIMS better ranked in NIRF 2025?', a: 'NMIMS holds NIRF #24 Management rank. Amity holds NIRF #22 University rank. Both are strong. NMIMS is better positioned in the Management category specifically.' },
-      { q: 'What is the fee difference between Amity and NMIMS online MBA?', a: 'Amity standard MBA costs Rs 2,25,000 (semester-wise, Rs 56,300/sem) or Rs 2,07,000 (one-time payment). NMIMS costs Rs 2,20,000 (semester-wise, Rs 55,000/sem) or Rs 1,96,000 (one-time). On a like-for-like semester basis, both are nearly identical. One-time payment saves Rs 18,000 at Amity and Rs 24,000 at NMIMS.' },
+      { q: 'What is the fee difference between Amity and NMIMS online MBA?', a: 'Amity standard MBA costs Rs 2,25,000 (semester-wise, Rs 56,300/sem) or Rs 2,07,000 (one-time payment). NMIMS costs Rs 2,20,000 (semester-wise, Rs 55,000/sem) or Rs 1,96,000 (one-time). On a like-for-like semester basis, both are nearly identical.' },
       { q: 'Does Amity offer specialisations that NMIMS does not?', a: 'Yes. Amity offers many specialisations including Healthcare, Hospitality, Insurance, and Retail. NMIMS offers 5-6 focused tracks. Amity has broader choice; NMIMS has deeper focus.' },
       { q: 'Which has better placements: Amity or NMIMS?', a: 'NMIMS has stronger Mumbai-centric BFSI recruiter connections. Amity has a larger pan-India alumni network. For Mumbai finance roles, NMIMS. For NCR and broad management, Amity.' },
       { q: 'Is Amity MBA valued more than NMIMS by employers?', a: 'Both are well-recognised. NMIMS carries stronger weight specifically in Mumbai financial services. Amity has broader geographic recognition due to 500+ hiring partners across India.' },
@@ -80,7 +80,7 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'finance',
     faqs: [
       { q: 'Is SMU or Amity better for online MBA?', a: 'Amity has many specs and NIRF #22 University. SMU has 5 specs at Rs 1,20,000 (nearly half of Amity). SMU is budget-friendly with Manipal brand. Amity is premium with broader choice.' },
-      { q: 'What is the fee difference?', a: 'SMU costs Rs 1,20,000 flat. Amity costs Rs 2,07,000 (one-time). SMU saves Rs 1,05,000. Significant difference.' },
+      { q: 'What is the fee difference?', a: 'SMU costs Rs 1,20,000 flat. Amity costs Rs 2,07,000 (one-time).' },
       { q: 'Does SMU have the same brand as MUJ?', a: 'No. SMU (Sikkim Manipal University) is a separate institution from MUJ (Manipal University Jaipur). Both are in the Manipal group but independently governed and accredited.' },
       { q: 'Does SMU offer Northeast scholarship?', a: 'Yes. SMU lists a 30% scholarship for candidates from Sikkim and the Northeast region with valid address proof. On the Rs 1,20,000 course fee that brings the fee to Rs 84,000. Talk to our counsellor to confirm the scholarship before you apply.' },
       { q: 'Which has better placement support?', a: 'Amity has a larger placement network with 500+ hiring partners. SMU has placement support but on a smaller scale. For working professionals, self-directed career management is typical for both.' },
@@ -110,7 +110,7 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'finance',
     faqs: [
       { q: 'Is MUJ or NMIMS better for online MBA Finance?', a: 'NMIMS has NIRF #24 Management rank and stronger Mumbai BFSI recruiter connections. MUJ is more affordable and includes Coursera Plus. For pure finance careers in Mumbai, NMIMS. For value, MUJ.' },
-      { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,84,000 (Rs 1,56,400 with upfront discount). NMIMS costs Rs 1,96,000 to Rs 2,20,000. MUJ saves Rs 12,000-63,600 depending on payment track.' },
+      { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,84,000 (Rs 1,56,400 with upfront discount). NMIMS costs Rs 1,96,000 to Rs 2,20,000.' },
       { q: 'Which has more specialisations?', a: 'MUJ offers 13 specialisations. NMIMS offers 5-6. MUJ has broader choice; NMIMS is more focused.' },
       { q: 'Does NMIMS have better brand recognition?', a: 'NMIMS has stronger recognition specifically in Mumbai financial services. MUJ benefits from the Manipal group brand which is stronger in South India and healthcare sectors.' },
       { q: 'Are both UGC-DEB approved?', a: 'Yes. Both are UGC-DEB approved, NAAC accredited, and legally equivalent. Government and private sector employers accept both.' },
@@ -126,13 +126,13 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'finance',
     faqs: [
-      { q: 'Is MUJ or MAHE better for online MBA?', a: 'MAHE is the flagship Manipal entity (NIRF #3 University, NAAC A++). MUJ is the Jaipur campus (NAAC A+). Both run on the same platform. MAHE costs Rs 1,08,000 more but carries stronger brand weight.' },
+      { q: 'Is MUJ or MAHE better for online MBA?', a: 'MAHE is the flagship Manipal entity (NIRF #3 University, NAAC A++). MUJ is the Jaipur campus (NAAC A+). Both run on the same platform. MAHE carries stronger brand weight.' },
       { q: 'Are MUJ and MAHE the same university?', a: 'No. MUJ (Manipal University Jaipur) and MAHE (Manipal Academy of Higher Education, Manipal Karnataka) are separate universities under the same Manipal group. Independently accredited and ranked.' },
-      { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,84,000. MAHE costs Rs 2,92,000. MAHE is Rs 1,08,000 more expensive. Both include Coursera Plus.' },
+      { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,84,000. MAHE costs Rs 2,92,000. Both include Coursera Plus.' },
       { q: 'Do both include Coursera Plus?', a: 'Yes. Both MUJ and MAHE bundle free Coursera Plus access. The platform and LMS experience is similar.' },
       { q: 'Is MAHE worth the extra Rs 1,08,000?', a: 'MAHE carries NIRF #3 University rank and Institution of Eminence potential. For employers who specifically value the MAHE flagship brand, the premium may be justified. For employers who treat both as Manipal degrees, MUJ is better value.' },
     ],
-    verdictA: ['Budget matters: save Rs 1,08,000 vs MAHE', 'Your employer treats both as Manipal group degrees', 'You want Coursera Plus at the lowest Manipal fee'],
+    verdictA: ['Budget matters', 'Your employer treats both as Manipal group degrees', 'You want Coursera Plus at a lower fee than MAHE'],
     verdictB: ['NIRF #3 University rank is a genuine career differentiator for you', 'Your target employers specifically value the MAHE flagship brand', 'You qualify for MAHE scholarships (Defence 20%, Female 15%, etc.)'],
   },
   'amity-vs-symbiosis': {
@@ -141,13 +141,13 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'marketing',
     faqs: [
-      { q: 'Is Amity or Symbiosis better for online MBA?', a: 'Symbiosis has NAAC A++ and deeper academic rigour. Amity has many specialisations and a QS ranking. Symbiosis costs Rs 1,45,000 more at sticker (Rs 90,000 more after Symbiosis 2+ years experience concession). Choose based on budget and spec variety needs.' },
-      { q: 'What is the fee difference?', a: 'Amity costs Rs 2,07,000 (one-time) to Rs 2,25,000 (standard). Symbiosis costs Rs 3,70,000 sticker (Rs 3,15,000 after the 2+ years experience concession). Difference: Rs 1,45,000 at sticker, or Rs 90,000 after the concession.' },
+      { q: 'Is Amity or Symbiosis better for online MBA?', a: 'Symbiosis has NAAC A++ and deeper academic rigour. Amity has many specialisations and a QS ranking. Choose based on budget and spec variety needs.' },
+      { q: 'What is the fee difference?', a: 'Amity costs Rs 2,07,000 (one-time) to Rs 2,25,000 (standard). Symbiosis costs Rs 3,70,000 sticker (Rs 3,15,000 after the 2+ years experience concession).' },
       { q: 'Which has more specialisations?', a: 'Amity offers more specialisations. Symbiosis offers 9. Amity has broader choice including niche tracks.' },
       { q: 'Is Symbiosis worth the premium?', a: 'If NAAC A++ and Pune academic heritage matter for your career, yes. If you want broader spec choice at lower fee, Amity wins on value.' },
       { q: 'Do both offer scholarships?', a: 'Amity offers Defence, Divyaang, Alumni, Merit, and Sports scholarships. Symbiosis offers a work-experience scholarship (Rs 55,000 off for 2+ years experience).' },
     ],
-    verdictA: ['You want 19 specialisation options vs 9', 'Budget matters: save Rs 90,000', 'QS Asia-Pacific ranking adds international portability'],
+    verdictA: ['You want 19 specialisation options vs 9', 'Budget matters', 'QS Asia-Pacific ranking adds international portability'],
     verdictB: ['NAAC A++ is your primary credential priority', 'Pune academic brand carries weight for your employer', 'You want deeper academic load (10-12 subjects per semester)'],
   },
 
@@ -159,7 +159,7 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'marketing',
     faqs: [
       { q: 'Is Amity or LPU better for online MBA?', a: 'Amity has NIRF #22 University and QS Asia-Pacific ranking. LPU has NAAC A++ and NIRF #31 University. Both are UGC-DEB approved. Amity offers many specialisations; LPU offers 12 with a dual-specialisation option.' },
-      { q: 'What is the fee difference between Amity and LPU?', a: 'Amity costs Rs 2,07,000 (one-time) to Rs 2,25,000. LPU costs Rs 1,61,600 to Rs 2,00,000. LPU is Rs 25,000-45,000 cheaper depending on payment mode.' },
+      { q: 'What is the fee difference between Amity and LPU?', a: 'Amity costs Rs 2,07,000 (one-time) to Rs 2,25,000. LPU costs Rs 1,61,600 to Rs 2,00,000.' },
       { q: 'Does LPU offer dual specialisation?', a: 'Yes. LPU is one of the few online MBA programmes that lets you pick two specialisations (e.g. Marketing + Digital Marketing). Amity offers single specialisation per enrollment.' },
       { q: 'Which has a higher NAAC grade?', a: 'LPU has NAAC A++ (highest grade). Amity has NAAC A+. LPU scores higher on NAAC accreditation.' },
     ],
@@ -173,7 +173,7 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'finance',
     faqs: [
       { q: 'Is LPU or MUJ better for online MBA?', a: 'LPU has NAAC A++ and dual-specialisation option. MUJ has Coursera Plus bundled and the Manipal group brand. LPU is slightly cheaper. Both are UGC-DEB approved and AICTE recognised.' },
-      { q: 'What is the fee difference?', a: 'LPU costs Rs 1,61,600 to Rs 2,00,000. MUJ costs Rs 1,56,400 (upfront) to Rs 1,84,000. MUJ upfront is Rs 5,200 below the lowest LPU fee; the full MUJ fee is Rs 22,400 above it.' },
+      { q: 'What is the fee difference?', a: 'LPU costs Rs 1,61,600 to Rs 2,00,000. MUJ costs Rs 1,56,400 (upfront) to Rs 1,84,000.' },
       { q: 'Does MUJ include Coursera Plus with online MBA?', a: 'Yes. MUJ bundles free Coursera Plus access. LPU does not include Coursera. This is a genuine learning add-on at MUJ.' },
       { q: 'Which has more specialisations?', a: 'MUJ offers 13 specialisations. LPU offers 12 specialisations but allows dual-spec combinations. For unique spec count, MUJ leads slightly. For combination flexibility, LPU leads.' },
     ],
@@ -187,7 +187,7 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'finance',
     faqs: [
       { q: 'Is Chandigarh University or LPU better for online MBA?', a: 'Both are Punjab-based with NAAC A+ (CU) and A++ (LPU). CU has NIRF #19 University and PwC triple certification. LPU has NIRF #31 University and dual-specialisation. CU wins on rank; LPU wins on accreditation grade.' },
-      { q: 'What is the fee difference?', a: 'CU costs Rs 1,75,125 (1 certificate, after the 25% Early Bird) to Rs 2,38,000 (3 certificates, list). LPU costs Rs 1,61,600 to Rs 2,00,000. The lowest LPU fee is Rs 13,525 below the lowest CU fee, and the top CU list price is Rs 38,000 above the top LPU fee. Fees are indicative; confirm on both official portals.' },
+      { q: 'What is the fee difference?', a: 'CU costs Rs 1,75,125 (1 certificate, after the 25% Early Bird) to Rs 2,38,000 (3 certificates, list). LPU costs Rs 1,61,600 to Rs 2,00,000. Fees are indicative; confirm on both official portals.' },
       { q: 'Does Chandigarh University offer PwC certification?', a: 'Yes. CU Online MBA includes triple industry certification from PwC India, PMI, and IBM. Two subjects are co-taught by PwC.' },
       { q: 'Which has more specialisations?', a: 'CU offers 26 specialisations (highest count in this tier). LPU offers 12 with dual-spec option. CU wins on variety; LPU wins on combination flexibility.' },
     ],
@@ -201,7 +201,7 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'marketing',
     faqs: [
       { q: 'Is Amity or Chandigarh University better for online MBA?', a: 'Amity has NIRF #22 University and QS ranking. CU has NIRF #19 University and PwC triple certification. Both are NAAC A+ and UGC-DEB approved. CU is slightly cheaper.' },
-      { q: 'What is the fee difference?', a: 'Amity costs Rs 2,07,000 to Rs 2,25,000. CU costs Rs 1,75,125 (1 certificate, after the 25% Early Bird) to Rs 2,38,000 (3 certificates, list). The lowest CU fee is Rs 31,875 below the lowest Amity fee, but the top CU list price is Rs 13,000 above the top Amity fee. Fees are indicative; confirm on both official portals.' },
+      { q: 'What is the fee difference?', a: 'Amity costs Rs 2,07,000 to Rs 2,25,000. CU costs Rs 1,75,125 (1 certificate, after the 25% Early Bird) to Rs 2,38,000 (3 certificates, list). Fees are indicative; confirm on both official portals.' },
       { q: 'Which has PwC industry certification?', a: 'Only Chandigarh University. CU includes PwC India, PMI, and IBM certifications with its online MBA. Amity does not bundle industry certifications but has WASC (USA) accreditation.' },
       { q: 'Which has more specialisations?', a: 'CU offers 26 specialisations. Amity offers fewer. CU has more variety including niche options like Disaster Management and Airlines Management.' },
     ],
@@ -215,11 +215,11 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'finance',
     faqs: [
       { q: 'Is MUJ or Chandigarh University better for online MBA?', a: 'MUJ has Coursera Plus bundled and the Manipal group brand. CU has PwC triple certification and NIRF #19 University. Both are NAAC A+ and UGC-DEB approved.' },
-      { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,56,400 (upfront) to Rs 1,84,000. CU costs Rs 1,75,125 (1 certificate, after the 25% Early Bird) to Rs 2,38,000 (3 certificates, list). MUJ upfront is Rs 18,725 below the lowest CU fee. The full MUJ fee is Rs 54,000 below the top CU list price. Fees are indicative; confirm on both official portals.' },
+      { q: 'What is the fee difference?', a: 'MUJ costs Rs 1,56,400 (upfront) to Rs 1,84,000. CU costs Rs 1,75,125 (1 certificate, after the 25% Early Bird) to Rs 2,38,000 (3 certificates, list). Fees are indicative; confirm on both official portals.' },
       { q: 'Which includes Coursera Plus?', a: 'Only MUJ. MUJ bundles free Coursera Plus access. CU includes PwC/PMI/IBM certifications instead. Different value add-ons for different learning styles.' },
       { q: 'Which has better NIRF rank?', a: 'CU has NIRF #19 University (stronger). MUJ has NIRF #58 University. CU ranks significantly higher in NIRF.' },
     ],
-    verdictA: ['Coursera Plus free access adds value to your learning', 'Budget matters and you want the lowest Manipal fee', 'You value the Manipal group brand for recruiter recognition'],
+    verdictA: ['Coursera Plus free access adds value to your learning', 'Budget matters', 'You value the Manipal group brand for recruiter recognition'],
     verdictB: ['PwC/PMI/IBM triple certification matters for your resume', 'NIRF #19 University rank is a strong credential signal', 'You want 26 specialisation options vs 13'],
   },
   'jain-vs-lpu': {
@@ -243,12 +243,12 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'marketing',
     faqs: [
       { q: 'Is Amity or JAIN better for online MBA?', a: 'Amity has NIRF #22 University and QS ranking. JAIN has NAAC A++ and NIRF #62 University. Amity costs more but has international accreditation (WASC). JAIN is more affordable.' },
-      { q: 'What is the fee difference?', a: 'Amity costs Rs 2,07,000 to Rs 2,25,000. JAIN costs Rs 1,60,000 to Rs 1,96,000. JAIN saves Rs 11,000-65,000 depending on spec and payment mode.' },
+      { q: 'What is the fee difference?', a: 'Amity costs Rs 2,07,000 to Rs 2,25,000. JAIN costs Rs 1,60,000 to Rs 1,96,000.' },
       { q: 'Which has more specialisations?', a: 'JAIN offers 16 specialisations, including AI for Finance, and Data Science and Artificial Intelligence. Amity includes niche tracks like Insurance and Hospitality. Different strengths in variety.' },
       { q: 'Which has higher NAAC grade?', a: 'JAIN has NAAC A++ (highest). Amity has NAAC A+. JAIN scores higher on NAAC accreditation.' },
     ],
     verdictA: ['QS Asia-Pacific ranking matters for international recognition', 'WASC (USA) accreditation is important for global career plans', 'Your target is NCR employers or you value Amitys 500+ hiring partners'],
-    verdictB: ['NAAC A++ is a priority credential', 'AI-linked MBA specs (AI for Finance, Data Science and AI) match your goals', 'Budget matters and you want to save Rs 11,000-65,000'],
+    verdictB: ['NAAC A++ is a priority credential', 'AI-linked MBA specs (AI for Finance, Data Science and AI) match your goals', 'Budget matters'],
   },
   'symbiosis-vs-nmims-bba': {
     uniA: 'symbiosis-university-online',
@@ -287,7 +287,7 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'general',
     faqs: [
       { q: 'Is MUJ or Chandigarh University better for online MCA?', a: 'MUJ MCA costs Rs 1,64,000 (Rs 1,47,600 with the 10% discount) with 5 specs (AI/Data Science, Emerging Tech, AI/ML, Cloud, Cybersecurity). CU MCA costs Rs 1,55,000 with 4 specs (Cloud, Full Stack, Data Analytics, AI/ML). The two fees sit within Rs 10,000 of each other.' },
-      { q: 'What is the fee difference for MCA?', a: 'MUJ MCA costs Rs 1,64,000, or Rs 1,47,600 with the 10% discount. CU MCA costs Rs 1,55,000. The gap is under Rs 10,000 either way. Choose on programme features, not price.' },
+      { q: 'What is the fee difference for MCA?', a: 'MUJ MCA costs Rs 1,64,000, or Rs 1,47,600 with the 10% discount. CU MCA costs Rs 1,55,000. Choose on programme features, not price.' },
       { q: 'Does MUJ include Coursera Plus with MCA?', a: 'Yes. MUJ bundles free Coursera Plus access for MCA students as well. CU does not include Coursera but has industry tie-ups with IBM and PwC.' },
       { q: 'Which has better NIRF rank?', a: 'CU has NIRF #19 University. MUJ has NIRF #58 University. CU ranks significantly higher. Both are NAAC A+ and UGC-DEB approved.' },
     ],
@@ -410,13 +410,13 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'BCA',
     defaultSpec: 'general',
     faqs: [
-      { q: 'Is Amity or LPU better for online BCA?', a: 'Amity BCA costs Rs 1,75,000 with 3 specialisations (General, Data Science, FinTech & AI). LPU BCA costs Rs 1,22,400 with 3 specs (Cyber Security, Data Science, Full Stack). LPU is Rs 52,600 cheaper.' },
-      { q: 'What is the fee difference for BCA?', a: 'Amity BCA costs Rs 1,75,000. LPU BCA costs Rs 1,22,400. LPU saves Rs 52,600 for the same 3-year UGC-DEB approved BCA programme.' },
+      { q: 'Is Amity or LPU better for online BCA?', a: 'Amity BCA costs Rs 1,75,000 with 3 specialisations (General, Data Science, FinTech & AI). LPU BCA costs Rs 1,22,400 with 3 specs (Cyber Security, Data Science, Full Stack).' },
+      { q: 'What is the fee difference for BCA?', a: 'Amity BCA costs Rs 1,75,000. LPU BCA costs Rs 1,22,400.' },
       { q: 'Which has better NAAC grade?', a: 'LPU has NAAC A++ (highest). Amity has NAAC A+. LPU scores higher on NAAC accreditation.' },
       { q: 'Does Amity BCA offer FinTech specialisation?', a: 'Yes. Amity is one of the few online BCA programmes offering Financial Technology and AI as a specialisation. LPU does not offer FinTech in BCA but has Cyber Security and Full Stack Web Development.' },
     ],
     verdictA: ['You want FinTech and AI specialisation in BCA', 'QS ranking and WASC (USA) accreditation matter for global IT careers', 'Your target is NCR-based IT employers'],
-    verdictB: ['Budget matters (save Rs 52,600 vs Amity)', 'NAAC A++ is a priority credential for IT sector jobs', 'You want Cyber Security or Full Stack Web Development specialisation'],
+    verdictB: ['Budget matters', 'NAAC A++ is a priority credential for IT sector jobs', 'You want Cyber Security or Full Stack Web Development specialisation'],
   },
   'ignou-vs-lpu': {
     uniA: 'ignou-online',
@@ -425,7 +425,7 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'finance',
     faqs: [
       { q: 'Is IGNOU or LPU better for online MBA?', a: 'IGNOU is a Central Government university with Rs 66,000 total fee. LPU is a private university with NAAC A++, listing at Rs 2,00,000 (Rs 1,46,240 to Rs 1,61,600 by payment plan). LPU offers more specialisations and modern programme delivery.' },
-      { q: 'What is the fee difference?', a: 'IGNOU MBA costs Rs 66,000 total. LPU costs Rs 1,61,600 to Rs 2,00,000. IGNOU saves Rs 95,600-1,34,000. Massive difference.' },
+      { q: 'What is the fee difference?', a: 'IGNOU MBA costs Rs 66,000 total. LPU costs Rs 1,61,600 to Rs 2,00,000.' },
       { q: 'Is IGNOU MBA valid for government jobs?', a: 'Yes. IGNOU is a Central Government institution. Its MBA is valid for all government jobs, PSU recruitment, and higher education. LPU MBA is also valid but IGNOU carries specific advantage for government sector applications.' },
       { q: 'Which has more specialisations?', a: 'LPU offers 12 MBA specialisations with dual-spec option. IGNOU offers 5 (Financial, Marketing, HR, Operations, Services Management). LPU has broader choice.' },
     ],
