@@ -78,6 +78,28 @@
     "Rs 1-3Cr+" comp in a role description. Left: salaryGrowth/salaryRange strings, which no component renders.
   - Gate tightened: the stale "ignou-online .tagline" entry was removed from data/string-truncation-allowlist.json.
     Round 1 shortened that tagline to 79 characters, so the entry matched nothing; removing it tightens the gate.
+## 2026-11-25 · Vercel build cost: main-only builds and docs-only skip (branch chore/vercel-build-cost)
+
+- **Source:** audits/vercel-build-cost-audit-2026-11-25.md. Build CPU was $8.23 of $11.51 this cycle (71.5%).
+  Rishi approved both repo changes on 25 Nov.
+- **1. Preview builds off:** vercel.json git.deploymentEnabled is now {"**": false, "main": true}. "**", not "*": the keys are minimatch globs and "*" does not match a slash, so "*" would miss every feat/ fix/ seo/ branch (QA F1).
+  - Why: 7 of 19 builds in 11 days were Preview builds of work branches, on all three projects. Nobody uses
+    preview URLs: qa-checker builds locally before merge and checks edifyedu.in after deploy.
+  - Effect: pushing a feat/fix/seo branch no longer builds. Pushing main still builds production as before.
+- **2. Docs-only pushes skip the build:** vercel.json ignoreCommand runs scripts/vercel-ignore-build.sh.
+  - Why: 12 of 111 main commits since 8 Nov touched only audits/ or root .md files; when one was the push tip,
+    Vercel rebuilt all ~2,338 pages to ship nothing.
+  - Uses git diff --no-renames: with rename detection, moving a site file into audits/ listed only the new path and skipped the build (QA F2).
+  - Rule: skip only if every file changed since VERCEL_GIT_PREVIOUS_SHA is under audits/, docs/, reports/,
+    .claude/ or is a root-level .md. Any doubt builds (no previous SHA, SHA missing from the shallow clone,
+    diff error, empty diff). Not a global *.md, because content/blogs/ holds .md files. Grep confirmed no
+    build-path code reads audits/, docs/, reports/, .claude/ or a root .md.
+  - Tested on real ranges: e5c612c..9f95f7a and b3b04f8 (docs-only) skip; 9a66f49..e5c612c, 9a66f49..9f95f7a,
+    736d63e..199d859, empty SHA, unknown SHA and same-commit all build. content/blogs/*.md, scripts/README.md,
+    public/llms.txt, package.json and vercel.json count as site files.
+- **Still open (Rishi, Vercel dashboard):** disconnect Git from duplicate projects edify-next and edify-edu (~67%
+  of Build CPU), and confirm edify-edu-dh2m uses the Standard build machine. Both are Vercel settings (rule 4d).
+- **Undo:** git revert this commit.
 
 ## 2026-11-25 · B3 batch 5: QA advisories after batch 4 (branch fix/b3-batch-5)
 
