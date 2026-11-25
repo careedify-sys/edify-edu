@@ -1,8 +1,8 @@
 # EdifyEdu Operating Plan
 
 ## Status (updated end of every session)
-- **Done:** Phase A (f2f80c5), A5, A8 + A9 (35ffee3), D4 fees for NIU, Alliance, Sharda, JIIT (1021c26), B3 batch 1 (1ed2ea6, 18 Nov), B3 batches 2 and 3 (b9e18b2) and B3 batch 4 (b3b04f8), 19 Nov, all live and checked; verify sheets for the 10 queue universities plus Vignan; NAAC audit of all 143 (audits/naac-audit-2026-11-19.md).
-- **In progress:** B3 batch 5: QA advisories left after batch 4 (raw fee ranges on /universities cards, Shoolini QS #1 FAQ and SEBI/MCA skills line, Dr MGR fee range, Kurukshetra "central university", non-Shoolini uniqueness claims checked against the DEB register, 7 hand-written specialisation salary pages wait on Q52).
+- **Done:** Phase A (f2f80c5), A5, A8 + A9 (35ffee3), D4 fees for NIU, Alliance, Sharda, JIIT (1021c26), B3 batch 1 (1ed2ea6, 18 Nov), B3 batches 2 and 3 (b9e18b2) and B3 batch 4 (b3b04f8, 19 Nov), B3 batch 5 (9e76268, 25 Nov), all live and checked; verify sheets for the 10 queue universities plus Vignan; NAAC audit of all 143 (audits/naac-audit-2026-11-19.md).
+- **In progress:** none. Next fix batch (B3 batch 6) from the batch 5 QA advisories: ~116 "most affordable" and 65 "widest" fee superlatives, blog pay claims ("highest-paying", Rs 18-42 LPA), BBA/B.Com pay lines in lib/content.ts, BITS "top-5 engineering" on 5 spec pages, BVP NAAC A+ vs A++ mismatch, unsourced market stats (BVP sports, UPES power), DPU fintech "fee saving", Dr MGR row on /fees (Q55).
 - **Blocked:** none in D4.
 - **Waiting on Rishi:** Q1, Q2, Q7 (28 Nov guard baseline), Q8-Q51. Urgent: NAAC (Q20 DY Patil, Q24/Q43 Amity, Q28 Uttaranchal, Q42 nine ungraded, Q46 end dates, Q47 lapsed cycles). One answer settles many: Q27 (Jan 2027 intake), Q46 (NAAC end dates). See audits/QUESTIONS-FOR-RISHI.md.
 - **Next:** B1 provenance fields, then B4 answer-first block.
