@@ -1,5 +1,52 @@
 # Fix log
 
+## 2026-11-25 · B3 batch 6: superlatives, pay claims and market stats (branch fix/b3-batch-6)
+
+- **Source:** audits/qa/2026-11-25-b3-batch-5-premerge-rerun.md, items 1-8. Facts checked only against lib/data.ts
+  (getExactFee / formatExactFeeShort, spec counts, naac). No fee, rank, grade, salary, date or eligibility value was
+  added. Every fix is a removal, or a neutral rewording that keeps only a fact the page already stated. Bulk edits ran
+  as single-pass scripts (read all files, write once). Titles, seoTitle, metaDescription, tags, targetKeyword and the
+  dead quickFacts field were not touched. 106 blog posts changed body text and carry updatedAt 2026-11-25.
+- **1. Fee and spec superlatives ("cheapest", "most affordable", "lowest fee", "best value", "widest"):**
+  - Why: most were false or unprovable. lib/data.ts publishes DDU Rs 52,500, Andhra 62,200, IGNOU 66,000 and
+    Mangalayatan 67,000 (NAAC A+) below Galgotias 80,200, so "Galgotias is the cheapest NAAC A+ MBA" and "IGNOU is
+    the cheapest" are wrong; CU BBA 1,31,250 < MUJ 1,44,000 < LPU 1,50,000, so "LPU is the cheapest of the three" is
+    wrong; 65 MBAs, IGNOU BBA/BCA/MCA and Amrita BBA have no published fee, so any India-wide superlative over them
+    is unprovable. State-level and category claims (Madras, Alva's, KSOU, Datta Meghe, Mizoram) have no fee in
+    lib/data.ts to back them.
+  - What: superlative dropped, the factual part kept (fee, grade, spec count). FAQs whose question was the
+    superlative ("What is the cheapest online MBA/BBA/MCA/BCA/B.Com...") were deleted whole.
+  - Counts: non-blog (page-content JSON, lib/content.ts, lib/data.ts, pairs.ts) 137 -> 8; lib/blog.ts 416 -> 129,
+    of which 89 are in published body/FAQ text and every one is on the kept list below.
+  - Kept (provable within a named set on the same page, or not a superlative claim): the Manipal trio (SMU Rs
+    1,20,000 < MUJ 1,84,000 < MAHE 2,92,000; MUJ 14 specs > MAHE 9 > SMU 6); within-programme payment-mode
+    "cheapest" (Amity BBA one-time 1,75,120 vs 1,99,000; Amity MBA one-time 2,07,000); generic advice naming no
+    university ("the cheapest programme is rarely the best ROI"); "cheapest first" table sort labels;
+    label-breadth "widest" (entrepreneurship labels, Finance label, General Management coverage, CU GM/Finance
+    JSON); negations ("not the cheapest").
+- **2. Pay claims:** blog pay superlatives 90 -> 24; non-blog 6 -> 0; non-blog LPA 15 -> 0.
+  - Why: no approved source ranks careers by pay, and "salary premium" percentages had no source.
+  - What: 9 pay-superlative FAQs, 4 in-body Q&A items, a details block and two schema FAQ blocks deleted;
+    "highest-paying / highest salary / best-paid / salary premium" phrases removed from 30+ posts; two unsourced
+    premium sections (marketing "Digital Premium", data science "GenAI and LLM Premium") removed whole.
+    mba-finance-career-salary-scope-2026 and mba-data-science-analytics-career-2026: every LPA/CTC figure removed
+    from body and FAQs (salary table columns dropped, figure sentences deleted, two FAQs emptied and removed,
+    USD 2.6/27 billion, "grew 18 percent", "11M-plus data professionals" and "highest fintech adoption" dropped).
+  - Left: 24 "highest package" lines are university-reported placement figures (Amity Rs 16 LPA, LPU 11.6 LPA,
+    XLRI, IGNOU drive); they need a portal check, not a deletion, and are listed for a fact-check batch.
+- **3. BITS:** "top-5 engineering" 5 -> 0 on the BITS spec JSONs. Why: no NIRF citation states it.
+- **4. BVP:** NAAC grade in BVP JSONs A+ -> A++ to match lib/data.ts.
+- **5. Market stats:** 16 -> 3 (IPL $10B, UPES Rs 2.5 lakh crore, CAGR and growth % removed). Why: unsourced. The 3
+  left are detector hits with no number ("fastest-growing", "premium for senior BA roles", "most
+  employer-recognised") in lib/content.ts certification lists.
+- **6. DPU fintech:** "Choose DPU for the fee saving with NAAC A++" deleted (fee saving derived, not published).
+- **7. Dr MGR HR:** Uttaranchal Rs 99,600 comparison figure removed from the heading.
+- **8. Shoolini agri JSON:** "unique" removed.
+- **Gate note:** check-blog-fees rose on two slugs after the edits. Amrita BBA: a reworded sentence had doubled the
+  fee, so the whole sentence and the new "Rs 1,41,000 total fee" bullet were deleted. Cyber security: renaming the
+  "by Salary Premium" heading re-classed "Rs 250 Cr per violation" as a fee; the unsourced figure was deleted.
+  Baseline only went down.
+
 ## 2026-11-25 · B3 batch 5: QA advisories after batch 4 (branch fix/b3-batch-5)
 
 - **Housekeeping:** work started 19 Nov and was committed 25 Nov after a usage-limit pause. The 27 blog posts

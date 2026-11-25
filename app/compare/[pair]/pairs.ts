@@ -97,7 +97,7 @@ export const PAIRS: Record<string, PairConfig> = {
       { q: 'Is Amrita or NMIMS better for online MBA?', a: 'Amrita has NIRF #8 University and NAAC A++. NMIMS has NIRF #24 Management and Mumbai BFSI network. Amrita is stronger on university rank. NMIMS is stronger on management-specific positioning.' },
       { q: 'What is the fee difference?', a: 'Amrita costs Rs 1,76,000-2,60,000 depending on specialisation. NMIMS costs Rs 1,96,000 to Rs 2,20,000. Fees overlap in the mid-range but Amrita AI spec (Rs 2,44,000) and IFA (Rs 2,60,000) are premium.' },
       { q: 'Does Amrita include WES recognition?', a: 'Both universities list WES recognition. WES evaluates the degree for credential purposes in the USA and Canada, so confirm the current WES requirements for your target country before you apply.' },
-      { q: 'Which has per-spec fee tiers?', a: 'Amrita has 6 different fee tiers based on specialisation. NMIMS has a more uniform fee structure. Amrita General Management at Rs 1,76,000 is the most affordable entry point.' },
+      { q: 'Which has per-spec fee tiers?', a: 'Amrita has 6 different fee tiers based on specialisation. NMIMS has a more uniform fee structure.' },
       { q: 'Which has more scholarships?', a: 'Amrita offers 8 scholarship categories (Defence 20%, SAARC 40%, Female 15%, Doctors 15%, etc.). NMIMS offers Armed Forces 20% scholarship. Amrita has broader scholarship access.' },
     ],
     verdictA: ['NIRF #8 University rank is a stronger credential signal for you', 'You qualify for Amritas 8 scholarship categories', 'You want per-spec fee flexibility (General Management from Rs 1,76,000)'],
@@ -397,12 +397,12 @@ export const PAIRS: Record<string, PairConfig> = {
     defaultSpec: 'general',
     faqs: [
       { q: 'Is Sharda or Galgotias better for online BBA?', a: 'Both are Greater Noida-based, NAAC A+ and UGC-DEB approved. Galgotias BBA costs Rs 77,200 (significantly cheaper). Sharda has NIRF #87 University rank. Both are budget-friendly options for online BBA.' },
-      { q: 'What is the fee difference for BBA?', a: 'Galgotias BBA costs Rs 77,000. Sharda BBA fees should be confirmed with our counsellor. Galgotias is one of the most affordable NAAC A+ online BBA programmes in India.' },
+      { q: 'What is the fee difference for BBA?', a: 'Galgotias BBA costs Rs 77,000. Sharda BBA fees should be confirmed with our counsellor.' },
       { q: 'Which has more BBA specialisations?', a: 'Galgotias offers 4 BBA specs (Marketing, Finance, HRM, Operations). Sharda offers General Management. Galgotias has broader specialisation choice.' },
       { q: 'Are both valid for government jobs?', a: 'Yes. Both are UGC-DEB approved and NAAC accredited. Both degrees are valid for government jobs, PSU recruitment, and higher education (MBA, M.Com, etc.).' },
     ],
     verdictA: ['You want NIRF-ranked university (Sharda #87) on your degree', 'You prefer a private university with established campus brand', 'Sharda placements network matters for your Greater Noida target market'],
-    verdictB: ['Budget is your top priority (Rs 77,200 is among the lowest BBA fees in India)', 'You want Marketing, Finance, or HRM specialisation in BBA', 'You value 830+ recruiter partnerships that Galgotias reports'],
+    verdictB: ['Budget is your top priority (Rs 77,200)', 'You want Marketing, Finance, or HRM specialisation in BBA', 'You value 830+ recruiter partnerships that Galgotias reports'],
   },
   'amity-vs-lpu-bca': {
     uniA: 'amity-university-online',
@@ -424,7 +424,7 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'finance',
     faqs: [
-      { q: 'Is IGNOU or LPU better for online MBA?', a: 'IGNOU is a Central Government university with Rs 66,000 total fee. LPU is a private university with NAAC A++, listing at Rs 2,00,000 (Rs 1,46,240 to Rs 1,61,600 by payment plan). IGNOU is by far the most affordable option. LPU offers more specialisations and modern programme delivery.' },
+      { q: 'Is IGNOU or LPU better for online MBA?', a: 'IGNOU is a Central Government university with Rs 66,000 total fee. LPU is a private university with NAAC A++, listing at Rs 2,00,000 (Rs 1,46,240 to Rs 1,61,600 by payment plan). LPU offers more specialisations and modern programme delivery.' },
       { q: 'What is the fee difference?', a: 'IGNOU MBA costs Rs 66,000 total. LPU costs Rs 1,61,600 to Rs 2,00,000. IGNOU saves Rs 95,600-1,34,000. Massive difference.' },
       { q: 'Is IGNOU MBA valid for government jobs?', a: 'Yes. IGNOU is a Central Government institution. Its MBA is valid for all government jobs, PSU recruitment, and higher education. LPU MBA is also valid but IGNOU carries specific advantage for government sector applications.' },
       { q: 'Which has more specialisations?', a: 'LPU offers 12 MBA specialisations with dual-spec option. IGNOU offers 5 (Financial, Marketing, HR, Operations, Services Management). LPU has broader choice.' },
