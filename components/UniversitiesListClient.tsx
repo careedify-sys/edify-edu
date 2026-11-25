@@ -28,8 +28,8 @@ export default function UniversitiesListClient({ cardFees }: { cardFees: CardFee
   }
 
   // The programme whose gated fee a card shows: the first selected programme, else MBA.
-  const feeProgFor = (u: { programs: Program[] }) => (programs[0] ?? (u.programs.includes('MBA') ? 'MBA' : undefined)) as Program | undefined
-  const cardFee = (u: { id: string; programs: Program[] }) => { const p = feeProgFor(u); return p ? cardFees[u.id]?.[p] : undefined }
+  const feeProgFor = (u: { programs: readonly string[] }) => (programs[0] ?? (u.programs.includes('MBA') ? 'MBA' : undefined)) as Program | undefined
+  const cardFee = (u: { id: string; programs: readonly string[] }) => { const p = feeProgFor(u); return p ? cardFees[u.id]?.[p] : undefined }
 
   // Equal values (including two missing fees) compare as 0, never NaN.
   const byNum = (x: number, y: number) => (x === y ? 0 : x - y)
