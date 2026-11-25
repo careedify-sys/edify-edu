@@ -127,6 +127,19 @@ or neutral rewording only, no value added.
   figures stay as written. Same pass: Amrita AI "the strongest credential available in the online MBA space", "only 4
   central universities ... hold it" and "highest-demand MBA specialisation" removed, as QA advised.
 
+### Round 3 (lead, QA re-run FAIL at 9f95f7a, audits/qa/2026-11-25-b3-batch-5-premerge-rerun.md)
+
+- DY Patil spec pages compared DPU with LPU as "stronger NAAC (A++ vs A+)" and "NIRF #41 vs unranked". lib/data.ts holds LPU at NAAC A++,
+  NIRF 31 and NIRF Management 44, so both claims were false. The "saves Rs 10,600 / 30,600 / 34,600 / 54,600" lines were gaps we
+  computed ourselves. Each now states DPU at Rs 1,89,400 (its published total in lib/data.ts) and the shared grade, nothing more.
+- The DPU finance page said NMIMS "does not hold NIRF rank", charged "approximately Rs 1,80,000" and lost to DPU on NAAC. lib/data.ts has
+  NMIMS at NAAC A++, NIRF 52 and Rs 1,96,000 to Rs 2,20,000. Those sentences are cut to the brand point and "Both hold NAAC A++".
+  JAIN "approximately Rs 1,80,000" and "slightly cheaper" are dropped too (JAIN is Rs 1,60,000 to Rs 2,98,000 in lib/data.ts).
+- Sikkim Manipal spec pages called SMU "the most affordable NAAC A+ ... MBA in India". Galgotias (Rs 80,200) and Vignan (Rs 90,000) are
+  A+ and cheaper on our own data, so the superlative goes. "Rs 84,000 net" was our own 70% of Rs 1,20,000, so it goes as well. The
+  30% Northeast scholarship description itself stays; only the computed net figure and the superlative were removed. The two
+  "most affordable ... from a Manipal Group institution" lines are scoped to three universities and stay.
+
 ## 2026-11-19 · B3 batch 4: QA advisory leftovers from batches 1-3 (branch fix/b3-batch-4)
 
 - **Sources:** audits/qa/2026-11-19-b3-batch-2-premerge.md and -batch-3-premerge.md (advisories),
