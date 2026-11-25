@@ -5,7 +5,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { MapPin } from 'lucide-react'
 import type { UniSlim } from '@/lib/data-slim'
-import { formatFeeSlim as formatFee } from '@/lib/data-slim'
 import { getUniversityLogo } from '@/lib/content'
 import { buildHighlight, preferForProgram } from '@/lib/highlight'
 import EnquiryModal from './EnquiryModalDynamic'
@@ -72,7 +71,9 @@ function getApprovalEntry(tag: string) {
 // href, when given, wins over the specSlug-built URL. Pass one whenever the
 // card is spec-scoped: specSlug is the hub's slug, not necessarily this
 // university's, and the built URL 308s or 404s when they differ.
-export default function UniversityCard({ u, highlightProgram, specSlug, programFee, href }: { u: UniversityCardData; highlightProgram?: string; specSlug?: string; programFee?: string | null; href?: string }) {
+// feeProgram names the programme programFee belongs to on listing cards, where
+// no programme chip is highlighted; it also gates the MBA-only EMI line.
+export default function UniversityCard({ u, highlightProgram, specSlug, programFee, feeProgram, href }: { u: UniversityCardData; highlightProgram?: string; specSlug?: string; programFee?: string | null; feeProgram?: string; href?: string }) {
   const cardHref = href ?? (specSlug ? `/universities/${u.id}/mba/${specSlug}` : `/universities/${u.id}`)
   const [enquiryOpen, setEnquiryOpen] = useState(false)
 
@@ -182,20 +183,17 @@ export default function UniversityCard({ u, highlightProgram, specSlug, programF
           {/* Fees */}
           <div className="flex items-end justify-between pt-3 border-t border-slate-100">
             <div>
-              <div className="text-xs mb-0.5 text-[var(--ink-3)]">{programFee !== undefined && highlightProgram ? `${highlightProgram} total fees` : 'Total fees'}</div>
+              <div className="text-xs mb-0.5 text-[var(--ink-3)]">{programFee !== undefined && (feeProgram ?? highlightProgram) ? `${feeProgram ?? highlightProgram} total fees` : 'Total fees'}</div>
               <div className="uc-fee font-bold text-base">
-                {/* B3 batch 4: feeMin 0 means no fee on record; never print "₹0". */}
-                {programFee === undefined && !(u.feeMin > 0)
-                  ? 'Contact our counsellor for current fee details'
-                  : programFee === undefined
-                  ? (formatFee(u.feeMin) === formatFee(u.feeMax)
-                    ? <>{formatFee(u.feeMin)}</>
-                    : <>{formatFee(u.feeMin)} – {formatFee(u.feeMax)}</>)
-                  : programFee ?? 'Contact our counsellor for current fee details'}
+                {/* B3 batch 5: only a gated fee string from the server
+                    (getExactFee, the profile's source) is printed. The raw
+                    UNIS_SLIM feeMin/feeMax range is ungated and MBA-led, so
+                    a missing programFee means the counsellor line. */}
+                {programFee || 'Contact our counsellor for current fee details'}
               </div>
             </div>
-            {/* emiFrom is MBA-derived, so it is hidden when a programme fee is shown */}
-            {programFee === undefined && u.emiFrom > 0 && u.feeMin > 0 && (
+            {/* emiFrom is MBA-derived: shown only beside a gated MBA fee, as on the profile's MBA tab */}
+            {programFee && feeProgram === 'MBA' && u.emiFrom > 0 && (
             <div className="text-right">
               <div className="text-xs mb-0.5 text-[var(--ink-3)]">EMI from</div>
               <div className="uc-emi font-semibold text-sm">{u.emiFrom > 0 ? `₹${u.emiFrom.toLocaleString()}/mo` : 'On request'}</div>

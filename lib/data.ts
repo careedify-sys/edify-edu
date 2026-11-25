@@ -5031,7 +5031,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 2500,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'Phygital Retailing (unique subject: no other MBA has this term) | Startup Marketing in Sem 4',
+    tagline: 'Phygital Retailing | Startup Marketing in Sem 4',
     description: 'UGC DEB approved online programs from SASTRA Deemed University. NAAC A++ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Marketing aspirants targeting Phygital Retailing and Startup Marketing'],
     notFor: ['Deep finance/tech seekers'],

@@ -86,7 +86,7 @@
     "faqs": [
       {
         "question": "What distinguishes Amrita Finance MBA from standard online Finance MBAs?",
-        "answer": "Three factors distinguish Amrita's Finance MBA: NAAC A++ (India's highest accreditation, no other online MBA holds it), NIRF #8 University 2025, and WES recognition for USA and Canada. The curriculum adds FinTech foundations and Treasury and Bank Management alongside standard financial modelling and strategic finance - covering BFSI digital transformation alongside traditional corporate finance tracks."
+        "answer": "Three factors distinguish Amrita's Finance MBA: NAAC A++ (India's highest accreditation), NIRF #8 University 2025, and WES recognition for USA and Canada. The curriculum adds FinTech foundations and Treasury and Bank Management alongside standard financial modelling and strategic finance - covering BFSI digital transformation alongside traditional corporate finance tracks."
       },
       {
         "question": "Does the Finance MBA cover financial modelling in practical depth?",
@@ -107,7 +107,7 @@
     ],
     "chooseAlternatives": {
       "chooseIf": [
-        "You want a Finance MBA from India's only NAAC A++ online university with NIRF University #8 ranking.",
+        "You want a Finance MBA from a NAAC A++ online university with NIRF University #8 ranking.",
         "WES recognition for USA and Canada BFSI career applications or Canadian PR is a priority.",
         "You want FinTech Foundations, Financial Modelling, and Treasury and Bank Management in one Finance curriculum.",
         "Your target BFSI employers filter by NAAC grade or NIRF rank for management degree quality."

@@ -25,7 +25,7 @@ export default function SpecializationGrid({ specs, universityId, programSlug, p
         {cleanName} Online {program} Specialisations 2026
       </h2>
       <p className="text-sm text-slate-500 mb-5">
-        Select a specialisation below for detailed syllabus, career scope, and salary data.
+        Select a specialisation below for detailed syllabus and career scope.
       </p>
       <div className="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3">
         {specs.map(({ slug, name }) => {

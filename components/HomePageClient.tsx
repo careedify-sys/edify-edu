@@ -1,0 +1,633 @@
+'use client'
+import { getSortRank } from '@/lib/data-slim'
+import { useState, useEffect } from 'react'
+import type { CSSProperties } from 'react'
+import EdifyTrust from '@/components/EdifyTrust'
+import EnquiryModal from '@/components/EnquiryModalDynamic'
+import PressStrip from '@/components/PressStrip'
+
+import Link from 'next/link'
+import { ArrowRight, CheckCircle, XCircle, Shield, TrendingUp, Star, Award, BookOpen } from 'lucide-react'
+import { UNIS_SLIM } from '@/lib/data-slim'
+import UniversityCard from '@/components/UniversityCard'
+import FeaturedUniversitiesMarquee from '@/components/FeaturedUniversitiesMarquee'
+import AnimatedUniGrid from '@/components/AnimatedUniGrid'
+import type { CardFees } from '@/lib/card-fees'
+import AnimatedProgramsStrip from '@/components/AnimatedProgramsStrip'
+
+const PROGRAMS_SHOWCASE = [
+  { key:'MBA',   label:'MBA',   icon:'💼', desc:'2 yrs · PG' },
+  { key:'MCA',   label:'MCA',   icon:'💻', desc:'2 yrs · PG' },
+  { key:'BBA',   label:'BBA',   icon:'🎓', desc:'3 yrs · UG' },
+  { key:'BCA',   label:'BCA',   icon:'🖥️', desc:'3 yrs · UG' },
+  { key:'B.Com', label:'B.Com', icon:'📊', desc:'3 yrs · UG' },
+  { key:'MA',    label:'MA',    icon:'📖', desc:'2 yrs · PG' },
+  { key:'M.Com', label:'M.Com', icon:'📈', desc:'2 yrs · PG' },
+  { key:'BA',    label:'BA',    icon:'📚', desc:'3 yrs · UG' },
+]
+
+const FEATURED_BRANDS = [
+  { name:'JAIN Online',    color:'#1B4FBE', tag:'NIRF #62 Univ · NAAC A++',   id:'jain-university-online' },
+  { name:'Symbiosis',     color:'#D4922A', tag:'NIRF #24 Univ · NAAC A++',   id:'symbiosis-university-online' },
+  { name:'Manipal (MAHE)', color:'#C0392B', tag:'NIRF #3 Univ · NAAC A++',   id:'manipal-academy-higher-education-online' },
+  { name:'Amity',         color:'#1E6FBB', tag:'NAAC A+ · QS Ranked',   id:'amity-university-online' },
+  { name:'Chandigarh U.', color:'#0E8A78', tag:'NAAC A+ · QS Ranked',   id:'chandigarh-university-online' },
+  { name:'LPU',           color:'var(--warning)', tag:'NAAC A++ · THE Ranked', id:'lovely-professional-university-online' },
+  { name:'Shoolini',      color:'#2563EB', tag:'NAAC A+',   id:'shoolini-university-online' },
+  { name:'NMIMS',         color:'var(--purple)', tag:'NAAC A++ · UGC DEB',   id:'nmims-online' },
+]
+
+export default function HomePageClient({ cardFees }: { cardFees: CardFees }) {
+  const topUnis = [...UNIS_SLIM].sort((a, b) => getSortRank(a) - getSortRank(b)).slice(0, 6)
+  const totalUnis = 125
+  const [enquiryOpen, setEnquiryOpen] = useState(false)
+
+  // Listen for openEnquiry event from buttons
+  useEffect(() => {
+    const handler = () => setEnquiryOpen(true)
+    document.addEventListener('openEnquiry', handler)
+    return () => document.removeEventListener('openEnquiry', handler)
+  }, [])
+
+  return (
+    <>
+      {/* ── January 2027 Admission Banner ── */}
+      <div style={{ background: 'linear-gradient(135deg, #0B1D35, #1a3a5c)', borderBottom: '3px solid #C8811A', padding: '10px 0', textAlign: 'center', }}>
+        <div className="max-w-7xl mx-auto px-4 flex items-center justify-center gap-3 flex-wrap">
+          <span style={{fontSize:12,fontWeight:800,color:'var(--amber-vivid)',letterSpacing:'0.05em',textTransform:'uppercase'}}>
+            🎓 Admissions Open
+          </span>
+          <span className="text-xs text-white font-medium">
+            January 2027 batch. Admissions open now and close in March 2027.
+          </span>
+          <a href="#enquire" onClick={(e)=>{e.preventDefault();document.dispatchEvent(new CustomEvent('openEnquiry'))}}
+            style={{fontSize:11,fontWeight:700,padding:'4px 14px',borderRadius:'var(--r-lg)',background:'var(--amber-text)',color:'#fff',textDecoration:'none',whiteSpace:'nowrap'}}>
+            Check Eligibility →
+          </a>
+        </div>
+      </div>
+
+      <div style={{ background:'var(--bg)' }}>
+      {/* ── Schema: FAQPage for homepage ── */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
+        '@context':'https://schema.org','@type':'FAQPage',
+        mainEntity:[
+          {
+            '@type':'Question',
+            name:'Are online degrees valid for government jobs?',
+            acceptedAnswer:{'@type':'Answer',text:'Yes, all UGC DEB approved degrees are valid for government recruitment. Every university on edifyedu.in is verified UGC DEB approved. The Ministry of Education confirmed parity of online and regular degrees in 2020.'}
+          },
+          {
+            '@type':'Question',
+            name:'What is UGC DEB approval and why does it matter?',
+            acceptedAnswer:{'@type':'Answer',text:'UGC DEB (Distance Education Bureau) licenses universities to offer online degrees. Only UGC DEB approved degrees are accepted for government jobs, corporate hiring, and further studies. Never join without verifying at ugc.ac.in.'}
+          },
+          {
+            '@type':'Question',
+            name:'Is an online MBA worth it for working professionals?',
+            acceptedAnswer:{'@type':'Answer',text:'Yes, especially from NIRF top-50 universities. Most professionals see a 30-50% salary jump within 2 years of completing an online MBA. Budget ₹1.5L–₹4L total. Pick NAAC A+ or A++ universities with placement support for best ROI.'}
+          },
+          {
+            '@type':'Question',
+            name:'What is the difference between NIRF Overall and NIRF Management rank?',
+            acceptedAnswer:{'@type':'Answer',text:'NIRF Overall ranks universities across all disciplines. NIRF Management specifically ranks MBA and BBA programs. A university can rank #50 overall but #8 in management, meaning its business school is far stronger than the overall rank suggests. For MBA decisions, always check the NIRF Management rank.'}
+          },
+          {
+            '@type':'Question',
+            name:'Which is better: Finance MBA or Marketing MBA?',
+            acceptedAnswer:{'@type':'Answer',text:'Finance MBA is stronger for BFSI sector careers with a higher salary ceiling of ₹8L–₹25L, and suits analytical profiles. Marketing MBA is stronger for FMCG, D2C, and tech roles with salaries of ₹7L–₹20L, and suits communication-oriented profiles. The right choice depends on your career target industry.'}
+          },
+        ]
+      })}}/>
+
+      {/* HERO */}
+      <section style={{ background:'linear-gradient(160deg,#0B1D35 0%,#142540 60%,#1C3252 100%)', position:'relative', overflow:'hidden' }}>
+        <div style={{ position:'absolute', top:'-80px', right:'-80px', width:'500px', height:'500px', borderRadius:'var(--r-pill)', background:'radial-gradient(circle,rgba(212,146,42,0.07) 0%,transparent 70%)', pointerEvents:'none' }} />
+        <div style={{ position:'absolute', bottom:'-60px', left:'-40px', width:'360px', height:'360px', borderRadius:'var(--r-pill)', background:'radial-gradient(circle,rgba(46,125,100,0.05) 0%,transparent 70%)', pointerEvents:'none' }} />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24 relative">
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 text-xs font-bold px-4 py-2 rounded-full mb-8"
+              style={{ background:'rgba(212,146,42,0.12)', color:'var(--amber-bright)', border:'1px solid rgba(212,146,42,0.2)' }}>
+              <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background:'var(--amber-bright)' }} />
+              India's Only Unbiased Online Education Platform
+            </div>
+
+            <h1 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(2rem,5vw,3.5rem)', fontWeight:800, color:'#fff', lineHeight:1.12, marginBottom:'20px', letterSpacing:'-0.02em' }}>
+              Compare 125+ <span style={{ color:'var(--amber-bright)' }}>UGC Approved</span><br />
+              Online Universities India 2026
+            </h1>
+
+            <p style={{ fontSize:'16px', lineHeight:'1.75', color:'rgba(255,255,255,0.75)', maxWidth:'560px', margin:'0 auto 36px' }}>
+              We don't accept payments from universities. All rankings based on official NIRF data only. {totalUnis}+ UGC DEB approved universities compared honestly.
+            </p>
+
+            <div style={{ display:'flex', flexWrap:'wrap', justifyContent:'center', gap:'24px', marginBottom:'36px' }}>
+              {[
+                { n:`${totalUnis}+`, label:'UGC Universities' },
+                { n:'8+',            label:'Programs' },
+                { n:'100+',          label:'Specialisations' },
+                { n:'₹0',            label:'Paid Rankings' },
+              ].map(s => (
+                <div key={s.n} className="text-center">
+                  <div style={{ fontFamily: 'var(--font-display)', fontSize:'26px', fontWeight:800, color:'#fff', lineHeight:1 }}>{s.n}</div>
+                  <div style={{ fontSize:'11px', color:'rgba(255,255,255,0.65)', marginTop:'4px' }}>{s.label}</div>
+                </div>
+              ))}
+            </div>
+
+            <div style={{ display:'flex', flexWrap:'wrap', gap:'12px', justifyContent:'center' }}>
+              <Link href="/universities" className="btn-primary"
+                style={{ padding:'14px 28px', borderRadius:'var(--r-sm)', fontSize:'15px', gap:'8px', display:'inline-flex', alignItems:'center', textDecoration:'none' }}>
+                Browse {totalUnis}+ Universities <ArrowRight style={{ width:'18px', height:'18px' }} />
+              </Link>
+              <button onClick={() => setEnquiryOpen(true)}
+                style={{ display:'inline-flex', alignItems:'center', gap:'8px', padding:'14px 28px', borderRadius:'var(--r-sm)', fontSize:'15px', fontWeight:'700', textDecoration:'none', background:'rgba(255,255,255,0.08)', color:'#fff', border:'1.5px solid rgba(255,255,255,0.15)', cursor:'pointer' }}>
+                Speak with an Advisor
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PRESS & MENTIONS: credibility strip */}
+      <PressStrip />
+
+      {/* FEATURED BRANDS: social proof */}
+      <FeaturedUniversitiesMarquee brands={FEATURED_BRANDS} totalUnis={totalUnis} />
+
+      {/* PROGRAMS STRIP */}
+      <AnimatedProgramsStrip programs={PROGRAMS_SHOWCASE} />
+
+    {/* WHY EDIFY */}
+    <section className="py-20 relative overflow-hidden" style={{ background:'var(--bg)' }}>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[300px] bg-blue-500/5 blur-[120px] rounded-full pointer-events-none"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div style={{ textAlign:'center', marginBottom:'56px' }}>
+          <div className="section-label">Why edifyedu.in?</div>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(2rem,4vw,3rem)', fontWeight:900, color:'var(--navy)', lineHeight:1.2, marginTop:'8px', letterSpacing:'-0.02em' }}>
+            Honest, by design. <span style={{ fontStyle:'italic', color:'var(--amber)' }}>Always.</span>
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+          
+          {/* Other Portals */}
+          <div className="p-7 rounded-[var(--r-md)] relative overflow-hidden transition-transform hover:-translate-y-1" style={{ background:'var(--surface)', border:'1px solid var(--border)', boxShadow:'var(--shadow-sm)' }}>
+            <div className="absolute top-0 left-0 w-full h-1" style={{ background:'var(--red)' }}></div>
+            <div className="flex items-center gap-3 mb-6">
+              <span className="text-[18px]">😕</span>
+              <span className="font-bold text-[14px]" style={{ color:'var(--red)' }}>Other Portals</span>
+            </div>
+            {['Rank universities who pay them more','Show fees that are wrong or incomplete','Claim "best" with zero criteria','Spam your number after enquiry','Never mention govt job validity'].map(item => (
+              <div key={item} className="flex items-start gap-3 mb-4">
+                <XCircle style={{ width:'16px', height:'16px', color:'var(--red)', flexShrink:0, marginTop:'2px' }} />
+                <span className="text-[13.5px] font-medium leading-relaxed text-ink-2">{item}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Edify - The Hero Card */}
+          <div className="p-8 rounded-[var(--r-md)] relative overflow-hidden transform md:-translate-y-4 transition-all hover:-translate-y-6" style={{ background:'var(--navy)', border:'none', boxShadow:'var(--shadow-md)' }}>
+            <div className="absolute -right-12 -top-12 w-40 h-40 bg-blue-500 rounded-full blur-[60px] opacity-20"></div>
+            <div className="flex items-center gap-3 mb-8 relative z-10">
+              <span className="text-[18px]">✅</span>
+              <span className="font-extrabold text-[16px] tracking-wide" style={{ color:'var(--amber-bright)' }}>edifyedu.in</span>
+            </div>
+            <div className="relative z-10">
+            {['Sorted by NIRF rank only: zero paid placement','Exact fees from official university brochures','Explain NAAC/NIRF/UGC DEB in plain language','One advisor: you will never be spammed','Govt job validity verified for every degree'].map(item => (
+              <div key={item} className="flex items-start gap-3 mb-5">
+                <CheckCircle style={{ width:'16px', height:'16px', color:'var(--sage-bright)', flexShrink:0, marginTop:'2px' }} />
+                <span className="text-[13.5px] font-medium leading-relaxed" style={{ color:'rgba(255,255,255,0.7)' }}>{item}</span>
+              </div>
+            ))}
+            </div>
+          </div>
+
+          {/* What We Cover */}
+          <div className="p-7 rounded-[var(--r-md)] relative overflow-hidden transition-transform hover:-translate-y-1" style={{ background:'var(--amber-light)', border:'1px solid rgba(212,146,42,0.2)', boxShadow:'var(--shadow-sm)' }}>
+            <div className="absolute top-0 left-0 w-full h-1" style={{ background:'var(--amber)' }}></div>
+            <div className="flex items-center gap-3 mb-6">
+              <BookOpen style={{ width:'18px', height:'18px', color:'var(--amber)' }} />
+              <span className="font-bold text-[14px]" style={{ color:'var(--navy)' }}>What We Cover</span>
+            </div>
+            {['Skills taught per specialisation','Job roles and real salary packages','Which companies hire from each university','Is it valid for PSU / government jobs?','Honest pros & cons, no sugar-coating'].map(item => (
+              <div key={item} className="flex items-start gap-3 mb-4">
+                <div style={{ width:'6px', height:'6px', borderRadius:'var(--r-pill)', background:'var(--amber)', flexShrink:0, marginTop:'7px' }} />
+                <span className="text-[13.5px] font-medium leading-relaxed text-ink-2">{item}</span>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+      {/* TOP UNIVERSITIES */}
+      <section style={{ padding:'64px 0', background:'var(--surface)' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div style={{ display:'flex', alignItems:'flex-end', justifyContent:'space-between', marginBottom:'40px', flexWrap:'wrap', gap:'12px' }}>
+            <div>
+              <div className="section-label">Sorted by NIRF Rank</div>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(1.6rem,4vw,2.2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
+                Top Rated Universities
+              </h2>
+            </div>
+            <Link href="/universities" className="btn-outline"
+              style={{ padding:'10px 20px', borderRadius:'var(--r-sm)', fontSize:'13px', display:'inline-flex', alignItems:'center', gap:'6px', textDecoration:'none' }}>
+              View All {totalUnis}+ <ArrowRight style={{ width:'15px', height:'15px' }} />
+            </Link>
+          </div>
+          <AnimatedUniGrid unis={topUnis} cardFees={cardFees} />
+        </div>
+      </section>
+
+      {/* ── SEO EDITORIAL SECTION ── */}
+      <section style={{ padding: '80px 0', background: '#fff' }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+
+          {/* Header */}
+          <div style={{ marginBottom: '48px' }}>
+            <div className="section-label" style={{ marginBottom: '12px' }}>Why edifyedu.in exists</div>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.8rem,4vw,2.4rem)', fontWeight: 800, color: 'var(--navy)', lineHeight: 1.2, marginBottom: '16px' }}>
+              Most online MBA guides are ads.<br />We built the one that isn't.
+            </h2>
+            <p style={{ fontSize: '16px', color: 'var(--ink-2)', lineHeight: 1.8, maxWidth: '600px' }}>
+              The university that pays more gets the "Best MBA" badge everywhere else. We got tired of it, so every ranking on edifyedu.in comes from <strong style={{ color: 'var(--navy)' }}>official NIRF data</strong>, not who paid us. That's literally how the code works.
+            </p>
+          </div>
+
+          {/* 4 principles */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginBottom: '40px' }}>
+            {[
+              {
+                icon: <Shield size={20} />,
+                label: 'DEB approval first, always',
+                body: 'The Distance Education Bureau is the only body that can authorise an online degree in India. Without it, your degree may not count for jobs, govt exams, or PhD admission. We verify every university before listing, you can always double-check at ugc.ac.in.',
+              },
+              {
+                icon: <Award size={20} />,
+                label: 'Government rankings, not ours',
+                body: 'We sort by NIRF rank: published by the Ministry of Education, not sold to us. If Amity is #62 overall but #24 in management, you see both numbers. That gap matters more than most people realise for an MBA decision.',
+              },
+              {
+                icon: <CheckCircle size={20} />,
+                label: 'Total fee. No hidden line items.',
+                body: 'Other portals show the semester fee and bury exam fees and study material costs in the fine print. Every number on edifyedu.in is total programme cost, what you pay from day one to graduation day. Online MBAs run ₹60,000 to ₹3,00,000. You\'ll know exactly where each option lands.',
+              },
+              {
+                icon: <BookOpen size={20} />,
+                label: 'Online degrees and govt jobs: the real answer',
+                body: 'Per the 2020 UGC notification, an online degree from a DEB-approved university is legally equivalent to a campus degree. Valid for UPSC, SSC, banking, and state recruitment. One catch: the university must have been DEB-approved during your study period. We flag this clearly on each page.',
+              },
+            ].map((item, i) => (
+              <div key={i} style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '14px', padding: '24px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <div style={{ width: 38, height: 38, borderRadius: 10, background: 'rgba(212,146,42,0.1)', border: '1px solid rgba(212,146,42,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--amber-bright)', flexShrink: 0 }}>
+                  {item.icon}
+                </div>
+                <div style={{ fontWeight: 700, fontSize: '15px', color: 'var(--navy)', lineHeight: 1.4 }}>{item.label}</div>
+                <p style={{ fontSize: '13.5px', color: 'var(--ink-2)', lineHeight: 1.75, margin: 0 }}>{item.body}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Pledge */}
+          <div style={{ padding: '22px 28px', background: 'var(--navy)', borderRadius: '14px', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+            <div style={{ fontSize: '22px', flexShrink: 0, marginTop: '2px' }}>🤝</div>
+            <p style={{ fontSize: '14.5px', color: 'rgba(255,255,255,0.85)', lineHeight: 1.8, margin: 0 }}>
+              <strong style={{ color: '#fff' }}>Our promise:</strong> We don't take money to rank universities. We don't spam your phone. If you ask an advisor to compare two options, they'll tell you honestly: even if that means recommending the cheaper one.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* TRUST STATS */}
+      <section className="py-20 relative overflow-hidden" style={{ background:'linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%)' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 text-center">
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(1.5rem,4vw,2.2rem)', fontWeight:800, color:'#fff', marginBottom:'12px' }}>
+            India&apos;s Most Trusted Online Degree Guide
+          </h2>
+          <p style={{ color:'rgba(255,255,255,0.7)', maxWidth:'480px', margin:'0 auto 48px', fontSize:'14px', lineHeight:'1.7' }}>
+            All data verified from official UGC, NAAC, and NIRF portals. Updated quarterly.
+          </p>
+          <div style={{ display:'flex', flexWrap:'wrap', justifyContent:'center', gap:'24px', maxWidth:'800px', margin:'0 auto' }}>
+            {[
+              { n:`${totalUnis}+`, label:'UGC DEB Universities', icon:<Award className="w-5 h-5" /> },
+              { n:'100%',         label:'Officially verified',   icon:<Shield className="w-5 h-5" /> },
+              { n:'₹0',           label:'Paid rankings',         icon:<Star className="w-5 h-5" /> },
+              { n:'2026',         label:'Latest NIRF/NAAC data', icon:<TrendingUp className="w-5 h-5" /> },
+            ].map((s, idx) => (
+              <div key={s.n} className="flex flex-col items-center p-6 rounded-2xl bg-white/5 border border-white/10 transition-transform hover:-translate-y-2 relative group">
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+                <div style={{ width:'46px', height:'46px', borderRadius:'var(--r-sm)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 12px', background:'rgba(212,146,42,0.12)', color:'var(--amber-bright)', border:'1px solid rgba(212,146,42,0.2)' }}>
+                  {s.icon}
+                </div>
+                <div style={{ fontFamily: 'var(--font-display)', fontSize:'2.5rem', fontWeight:800, color:'#fff', lineHeight:1.1, marginBottom:'4px' }}>
+                  {s.n}
+                </div>
+                <div style={{ fontSize:'12px', color:'rgba(255,255,255,0.7)', fontWeight:600 }}>
+                  {s.label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── VERIFY UNIVERSITY: Only on edifyedu.in ── */}
+      <section className="py-16 relative overflow-hidden" style={{ background: '#f0fdf4', borderTop: '1px solid rgba(16,185,129,0.15)', borderBottom: '1px solid rgba(16,185,129,0.15)' }}>
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(16,185,129,0.08) 0%, transparent 70%)' }} />
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="flex flex-col md:flex-row items-start gap-10">
+
+            {/* Left: text */}
+            <div className="flex-1">
+              <div className="inline-flex items-center gap-2 text-xs font-bold px-3 py-1.5 rounded-full mb-5"
+                style={{ background: 'rgba(16,185,129,0.12)', color: '#059669', border: '1px solid rgba(16,185,129,0.25)' }}>
+                <Shield style={{ width: 13, height: 13 }} />
+                Only on edifyedu.in
+              </div>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.6rem,3.5vw,2.2rem)', fontWeight: 800, color: 'var(--navy)', lineHeight: 1.2, marginBottom: 14 }}>
+                Verify any university's approvals.<br />Before you pay a single rupee.
+              </h2>
+              <p style={{ fontSize: 15, color: 'var(--ink-2)', lineHeight: 1.75, maxWidth: 520, marginBottom: 24 }}>
+                No other platform lets you cross-check a university's latest UGC-DEB, NAAC, NIRF, AICTE and AACSB status from official sources in one place. We built it because students kept getting misled by outdated claims.
+              </p>
+
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 12, marginBottom: 28 }}>
+                {[
+                  { icon: '🏛️', label: 'UGC-DEB Status', desc: 'Is the university actually approved to offer online degrees right now?' },
+                  { icon: '⭐', label: 'NAAC Grade', desc: 'Current accreditation grade and validity period from naac.gov.in' },
+                  { icon: '📊', label: 'NIRF Rank', desc: 'Latest rank in Overall, University, and Management categories' },
+                  { icon: '🔒', label: 'AICTE / AACSB', desc: 'Professional body approvals that matter for MBA and tech programs' },
+                ].map(item => (
+                  <div key={item.label} style={{ background: '#fff', border: '1px solid rgba(16,185,129,0.15)', borderRadius: 12, padding: '14px 16px' }}>
+                    <div style={{ fontSize: 20, marginBottom: 6 }}>{item.icon}</div>
+                    <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--navy)', marginBottom: 4 }}>{item.label}</div>
+                    <p style={{ fontSize: 12, color: 'var(--ink-3)', lineHeight: 1.55, margin: 0 }}>{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              <Link href="/verify"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '13px 28px', borderRadius: 12, fontSize: 15, fontWeight: 700, background: '#10b981', color: '#fff', textDecoration: 'none' }}>
+                <Shield style={{ width: 16, height: 16 }} />
+                Verify a University Now
+                <ArrowRight style={{ width: 16, height: 16 }} />
+              </Link>
+              <p style={{ fontSize: 11, color: 'var(--ink-3)', marginTop: 10 }}>
+                Free. No login needed. Data refreshed every 45 days from official portals.
+              </p>
+            </div>
+
+            {/* Right: mini preview card */}
+            <div className="w-full md:w-[300px] shrink-0">
+              <div style={{ background: '#fff', border: '1px solid rgba(16,185,129,0.2)', borderRadius: 16, padding: 24, boxShadow: '0 4px 20px rgba(16,185,129,0.08)' }}>
+                <div style={{ fontSize: 11, fontWeight: 700, color: '#059669', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 16 }}>Sample Verification</div>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16, paddingBottom: 16, borderBottom: '1px solid #f1f5f9' }}>
+                  <div style={{ width: 36, height: 36, borderRadius: 8, background: '#f1f5f9', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 16 }}>🎓</div>
+                  <div>
+                    <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--navy)' }}>Amity University Online</div>
+                    <div style={{ fontSize: 11, color: 'var(--ink-3)' }}>Noida, Uttar Pradesh</div>
+                  </div>
+                </div>
+
+                {[
+                  { label: 'UGC-DEB', value: 'Approved', ok: true },
+                  { label: 'NAAC', value: 'A+', ok: true },
+                  { label: 'NIRF 2025', value: '#28 Overall', ok: true },
+                  { label: 'AICTE', value: 'Not Required', ok: null },
+                  { label: 'Govt Job Valid', value: 'Yes', ok: true },
+                ].map(row => (
+                  <div key={row.label} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '8px 0', borderBottom: '1px solid #f8fafc' }}>
+                    <span style={{ fontSize: 12, color: 'var(--ink-3)' }}>{row.label}</span>
+                    <span style={{ fontSize: 12, fontWeight: 700, color: row.ok === true ? '#059669' : row.ok === false ? '#ef4444' : '#64748b' }}>
+                      {row.ok === true && <CheckCircle style={{ width: 12, height: 12, display: 'inline', marginRight: 4, verticalAlign: '-2px' }} />}
+                      {row.value}
+                    </span>
+                  </div>
+                ))}
+
+                <div style={{ marginTop: 16, padding: '10px 14px', background: '#f0fdf4', borderRadius: 10, border: '1px solid rgba(16,185,129,0.15)' }}>
+                  <p style={{ fontSize: 11, color: '#059669', margin: 0, lineHeight: 1.5, fontWeight: 600 }}>
+                    All data sourced from ugc.ac.in, naac.gov.in and nirfindia.org. Last verified: June 2026.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Edify Trust Section ── */}
+      <section style={{ padding:'0 0 64px', background:'var(--bg)' }}>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <EdifyTrust />
+        </div>
+      </section>
+
+      {/* ── Trustpilot Reviews ── */}
+      <section style={{ padding:'64px 0', background:'var(--bg)' }}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div style={{ textAlign:'center', marginBottom:'40px' }}>
+            <div style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'6px 16px', borderRadius:'var(--r-pill)', background:'#00b67a', marginBottom:14 }}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <span style={{ fontSize:12, fontWeight:800, color:'#fff', letterSpacing:'0.04em' }}>TRUSTPILOT · Verified Reviews</span>
+            </div>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(1.4rem,3vw,2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
+              Students Who Found the Right University
+            </h2>
+            <p style={{ fontSize:'14px', color:'var(--ink-3)', marginTop:10, lineHeight:1.7 }}>
+              Real reviews from students edifyedu.in guided to UGC DEB approved programmes. No incentives, no edits.
+            </p>
+          </div>
+
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(300px,1fr))', gap:20 }}>
+            {[
+              {
+                name:'Sejal Agarwal',
+                program:'BBA · DY Patil University Pune · 2026',
+                review:'Thank you for your constant support and guidance throughout the admission process. You explained every detail clearly, helped us analyze the best college options, and made the whole journey much easier. Your patience, honest advice, and dedication truly meant a lot.',
+              },
+              {
+                name:'Subham Rana',
+                program:'Online MBA',
+                review:'My experience was outstanding with Edify Learning. They provide the best college options and mentorship to help you make the right decision.',
+              },
+              {
+                name:'Sree Vardhan',
+                program:'Online Programme',
+                review:'My experience with Edify Learning was excellent and fully transparent. There was no bias toward any university, ensuring honest guidance. The team provided clear, personalized support throughout the process. Their interview preparation significantly boosted my confidence.',
+              },
+              {
+                name:'AD Photography',
+                program:'Online Programme',
+                review:'Got almost all the major information on the website itself. When I connected with them, they also shared all the details very transparently.',
+              },
+              {
+                name:'Kanishka Kumari',
+                program:'MBA · Symbiosis SSODL',
+                review:'They are truly an outstanding mentor and guide. I was very confused about college selection and they made it stress-free. Truly grateful. Should definitely go for it.',
+              },
+              {
+                name:'Deepak Chauhan',
+                program:'Online Programme',
+                review:'Got the right information I needed, and the overall support experience was very good.',
+              },
+              {
+                name:'Gargee Sharma',
+                program:'MBA · NMIMS Online · 2025',
+                review:'Your support was part of the equation. You helped me a lot.',
+              },
+            ].map((r) => (
+              <div key={r.name} style={{ background:'var(--surface)', border:'1px solid var(--border)', borderRadius:'var(--r-md)', padding:'22px 24px', boxShadow:'var(--shadow-sm)', display:'flex', flexDirection:'column', gap:12 }}>
+                <div style={{ display:'flex', gap:3 }}>
+                  {[1,2,3,4,5].map(i => (
+                    <svg key={i} width="14" height="14" viewBox="0 0 24 24" fill="#00b67a"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  ))}
+                </div>
+                <p style={{ fontSize:'13.5px', color:'var(--ink-2)', lineHeight:1.75, margin:0, fontStyle:'italic' }}>
+                  &ldquo;{r.review}&rdquo;
+                </p>
+                <div style={{ marginTop:'auto', paddingTop:10, borderTop:'1px solid var(--border-light)' }}>
+                  <div style={{ fontSize:13, fontWeight:700, color:'var(--navy)' }}>{r.name}</div>
+                  <div style={{ fontSize:11, color:'var(--ink-3)', marginTop:2 }}>{r.program}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ textAlign:'center', marginTop:32 }}>
+            <a href="https://www.trustpilot.com/review/edifyedu.in" target="_blank" rel="noopener noreferrer"
+              style={{ fontSize:13, fontWeight:600, color:'#00b67a', textDecoration:'none' }}>
+              Read all reviews on Trustpilot →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── YouTube Intro Video ── */}
+      <section style={{ padding:'64px 0', background:'var(--surface)' }}>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'VideoObject',
+          'name': 'What is EdifyEdu.in? Compare 125+ UGC Approved Online Universities India 2026',
+          'description': 'EdifyEdu compares 125+ UGC DEB approved online universities in India. No paid rankings. All data sourced from official NIRF, NAAC, and UGC portals.',
+          'thumbnailUrl': 'https://img.youtube.com/vi/Waj6Ph6baVg/maxresdefault.jpg',
+          'uploadDate': '2026-05-27T00:00:00+05:30',
+          'embedUrl': 'https://www.youtube.com/embed/Waj6Ph6baVg',
+          'contentUrl': 'https://www.youtube.com/watch?v=Waj6Ph6baVg',
+          'publisher': {
+            '@type': 'Organization',
+            'name': 'EdifyEdu',
+            'url': 'https://edifyedu.in',
+          },
+        })}}/>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div style={{ textAlign:'center', marginBottom:'32px' }}>
+            <div className="section-label">Watch First</div>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(1.4rem,3vw,2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
+              What is edifyedu.in? Watch the Explainer
+            </h2>
+            <p style={{ fontSize:'14px', color:'var(--ink-3)', marginTop:'10px', lineHeight:1.7 }}>
+              Compare 125+ UGC approved online universities honestly. No paid rankings. No referral commissions.
+            </p>
+          </div>
+          <div style={{ position:'relative', paddingBottom:'56.25%', height:0, borderRadius:'var(--r-md)', overflow:'hidden', boxShadow:'0 8px 32px rgba(15,23,42,0.12)', border:'1px solid var(--border)' }}>
+            <iframe
+              src="https://www.youtube.com/embed/Waj6Ph6baVg?si=6Ih8EfV5jUTEH6X9"
+              title="What is edifyedu.in? Compare 125+ UGC Approved Online Universities India 2026"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              style={{ position:'absolute', top:0, left:0, width:'100%', height:'100%', border:'none' }}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ── Popular Guides ── */}
+      <section style={{ padding:'64px 0', background:'var(--surface)' }}>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div style={{ textAlign:'center', marginBottom:'40px' }}>
+            <div className="section-label">Free Guides</div>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(1.4rem,3vw,2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
+              Honest Answers Before You Enrol
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { icon:'🏆', title:'Best Online MBA in India 2026', desc:'Top 15 online MBAs ranked by NIRF & NAAC with fees, specializations, and honest picks by use case.', href:'/blog/best-online-mba-colleges-india-2026' },
+              { icon:'🏛️', title:'Is Online Degree Valid in India?', desc:'UGC 2020 notification, government job eligibility, what DEB approval means.', href:'/guides/is-online-degree-valid-india' },
+              { icon:'📋', title:'Online MBA for Government Jobs', desc:'Which online MBAs count for UPSC, SSC, banking and state PSC exams.', href:'/guides/online-mba-for-government-jobs' },
+              { icon:'🔍', title:'How to Check UGC DEB Approval', desc:'Step-by-step: verify any university\'s online degree approval in 2 minutes.', href:'/guides/how-to-check-ugc-deb-approval' },
+              { icon:'🎓', title:'Online MBA vs Distance MBA', desc:'Key differences, validity, fee range, and which suits working professionals.', href:'/guides/online-mba-vs-distance-mba' },
+              { icon:'📊', title:'NAAC & NIRF Rankings Explained', desc:'What NAAC grades and NIRF ranks actually mean for your MBA choice.', href:'/guides/naac-nirf-rankings-explained' },
+            ].map(g => (
+              <Link key={g.href} href={g.href} className="no-underline group">
+                <div style={{ background:'var(--bg)', border:'1px solid var(--border)', borderRadius:'var(--r-sm)', padding:'20px', height:'100%', transition:'var(--t-base)' }}
+                  className="group-hover:border-amber/40 group-hover:shadow-sm transition-all">
+                  <div style={{ fontSize:'24px', marginBottom:'10px' }}>{g.icon}</div>
+                  <div style={{ fontWeight:700, fontSize:'14px', color:'var(--navy)', lineHeight:1.4, marginBottom:'6px' }}>{g.title}</div>
+                  <p style={{ fontSize:'12.5px', color:'var(--ink-3)', lineHeight:1.6, margin:0 }}>{g.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div style={{ textAlign:'center', marginTop:'32px' }}>
+            <Link href="/guides" style={{ fontSize:'13px', fontWeight:600, color:'var(--amber-text)', textDecoration:'none' }}>
+              View all guides →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-bg">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div style={{ textAlign:'center', marginBottom:'40px' }}>
+            <div className="section-label">Common Questions</div>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(1.6rem,4vw,2.2rem)', fontWeight:800, color:'var(--navy)', marginTop:'8px' }}>
+              What Working Professionals Ask
+            </h2>
+          </div>
+          {[
+            { q:'Are online degrees valid for government jobs?', a:'Yes, all UGC DEB approved degrees are valid for government recruitment. Every university on edifyedu.in is verified UGC DEB approved. The Ministry of Education confirmed parity in 2020.' },
+            { q:'NIRF Overall vs NIRF Management rank, what is the difference?', a:'NIRF Overall ranks across all disciplines. NIRF Management specifically ranks MBA/BBA programs. A university can rank #50 overall but #8 in management, meaning its business school is far stronger than the overall rank suggests.' },
+            { q:'Is an online MBA worth it for working professionals?', a:'Yes, especially from NIRF top-50 universities. Most professionals see 30–50% salary jump within 2 years. Budget ₹1.5L–₹4L total. Pick NAAC A+ or A++ with placement support for best ROI.' },
+            { q:'What is UGC DEB approval and why does it matter?', a:'UGC DEB (Distance Education Bureau) licenses universities to offer online degrees. Only UGC DEB approved degrees are accepted for government jobs, corporate hiring, and further studies. Never join without verifying this, check ugc.ac.in.' },
+            { q:'Finance MBA vs Marketing MBA: which is better?', a:'Finance: stronger for BFSI sector, higher salary ceiling (₹8L–₹25L), suits analytical profiles. Marketing: stronger for FMCG/D2C/tech (₹7L–₹20L), suits communicators. Check job roles on each university page for exact company names.' },
+          ].map((faq, i) => (
+            <details key={i} style={{ marginBottom:'10px', borderRadius:'var(--r-sm)', overflow:'hidden', background:'var(--surface)', border:'1px solid var(--border)' }}>
+              <summary style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'16px 20px', cursor:'pointer', fontWeight:'600', fontSize:'14px', color:'var(--navy)', listStyle:'none' }}>
+                <span>{faq.q}</span>
+                <span style={{ marginLeft:'16px', fontSize:'18px', color:'var(--amber)', flexShrink:0, userSelect:'none' }}>+</span>
+              </summary>
+              <div style={{ padding:'0 20px 18px', fontSize:'13px', lineHeight:'1.75', color:'var(--ink-2)', borderTop:'1px solid var(--border-light)' }}>
+                <p style={{ paddingTop:'14px' }}>{faq.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      {/* BOTTOM CTA */}
+      <section style={{ background:'var(--amber)', padding:'56px 24px', textAlign:'center' }}>
+        <h2 style={{ fontFamily: 'var(--font-display)', fontSize:'clamp(1.5rem,4vw,2.2rem)', fontWeight:800, color:'var(--navy)', marginBottom:'12px' }}>
+          Still unsure which university to choose?
+        </h2>
+        <p style={{ fontSize:'15px', color:'rgba(11,29,53,0.6)', marginBottom:'28px', maxWidth:'480px', margin:'0 auto 28px', lineHeight:'1.7' }}>
+          Speak with an advisor who has zero incentive to push any particular university.
+        </p>
+        <button onClick={() => setEnquiryOpen(true)}
+          style={{ display:'inline-flex', alignItems:'center', gap:'8px', padding:'14px 28px', borderRadius:'var(--r-sm)', background:'var(--navy)', color:'#fff', fontWeight:'700', fontSize:'15px', textDecoration:'none', border:'none', cursor:'pointer' }}>
+          Speak with an Advisor <ArrowRight style={{ width:'18px', height:'18px' }} />
+        </button>
+      </section>
+
+    </div>
+    <EnquiryModal isOpen={enquiryOpen} onClose={() => setEnquiryOpen(false)} />
+     </>
+  )
+}

@@ -86,7 +86,7 @@
     "faqs": [
       {
         "question": "What makes Amrita Marketing MBA different from standard online marketing programmes?",
-        "answer": "The combination of NAAC A++ (India's highest accreditation grade), NIRF #8 University 2025, and WES recognition differentiates Amrita from all other online marketing MBA options. The curriculum covers digital marketing, retail, data-driven analytics, marketing research, and CRM in one specialisation - a practical mix for brand management, agency, and marketing analytics careers. No other online MBA university in India holds NAAC A++."
+        "answer": "The combination of NAAC A++ (India's highest accreditation grade), NIRF #8 University 2025, and WES recognition differentiates Amrita from all other online marketing MBA options. The curriculum covers digital marketing, retail, data-driven analytics, marketing research, and CRM in one specialisation - a practical mix for brand management, agency, and marketing analytics careers."
       },
       {
         "question": "Does the Marketing MBA cover digital marketing tools and platforms?",
@@ -107,7 +107,7 @@
     ],
     "chooseAlternatives": {
       "chooseIf": [
-        "You want a Marketing MBA from India's only NAAC A++ online university with NIRF University #8 ranking.",
+        "You want a Marketing MBA from a NAAC A++ online university with NIRF University #8 ranking.",
         "WES recognition for USA and Canada career applications or Canadian PR is a priority.",
         "Your target employers in FMCG, e-commerce, or digital agencies filter by NAAC grade or NIRF rank.",
         "You want digital marketing, retail, data-driven analytics, and CRM in one marketing specialisation."

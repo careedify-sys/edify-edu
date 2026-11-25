@@ -1,5 +1,69 @@
 # Fix log
 
+## 2026-11-25 · B3 batch 5: QA advisories after batch 4 (branch fix/b3-batch-5)
+
+- **Housekeeping:** work started 19 Nov and was committed 25 Nov after a usage-limit pause. The 27 blog posts
+  whose body changed carry updatedAt 2026-11-25 (check-blog-updated-at); titles and metas are unchanged.
+
+- **Sources:** audits/qa/2026-11-19-b3-batch-4-premerge.md and -premerge-rerun.md (advisories A1-A7),
+  audits/verify/shoolini-university-online-2026-11-18.md, Q30/Q53/Q54 in QUESTIONS-FOR-RISHI.md, and lib/data.ts.
+  No fee, rank, grade, salary, date or eligibility value was added. Every fix is a removal or a neutral
+  rewording that keeps only a fact the page already stated. Counts are source-level, base 8af7d35 vs this branch.
+- **1. /universities and homepage cards (A1 of the re-run), 125 cards printed raw ranges, 69 of them suppressed on the profile -> 0:**
+  - Why: UniversityCard printed UNIS_SLIM feeMin-feeMax (MBA-led, ungated) whenever no programFee was passed.
+    69 universities whose own profile says "Contact our counsellor" still showed a placeholder price on
+    /universities and could on the homepage grid (59 of them the shared 60,000-2,00,000 placeholder).
+  - What: new lib/card-fees.ts computes, on the server, formatExactFeeShort(getExactFee(u, programme)), the
+    exact string the profile prints. app/universities/page.tsx and app/page.tsx became server wrappers; their
+    client code moved unchanged to components/UniversitiesListClient.tsx and components/HomePageClient.tsx
+    (5 em dashes in JSX comments became colons so the moved file passes the em-dash gate; no visible text).
+    The card now prints only programFee and otherwise the counsellor line; the raw-range branch is gone, so
+    no caller can print it. Listing default is the MBA fee (labelled "MBA total fees"); with a programme filter
+    it is that programme's gated fee. EMI shows only beside a gated MBA fee, as on the profile's MBA tab.
+    Hub callers (MBAHubClient, MBASpecHubClient, ProgramHubClient) already passed programFee and are unchanged.
+- **2. Shoolini:**
+  - QS claims, 22 -> 0 outside Q30 scope. Why: no approved source, and the blog lines said "QS 2025 #1",
+    an edition that is not even Shoolini's own claim (its page says 2023-24, verify sheet row "QS and THE").
+    What: removed from the review FAQ (lib/blog.ts ~29826, A2), the review body (stat tile, 3 sentences, a
+    paragraph, a list item, a table cell, the Final Word line), 4 other posts, the pharma and business-analytics
+    posts, the hub JSON (about, honestVerdict bullets), lib/content.ts MCA highlight, and the homepage brand tag
+    ("NAAC A+ · QS #1 Pvt" -> "NAAC A+"). NOT touched: lib/data.ts highlights.rankings and the 'QS Ranked'
+    approvals chip, because Q30 asks Rishi exactly that and its default is "lines and chip stay"; and the review's
+    metaDescription ("QS #1 private"), frozen to 5 Dec.
+  - Direct selling (A3/A5), 9 -> 0: "SEBI Collective Investment Scheme regulations, MCA direct selling
+    guidelines 2021" (skills block), "SEBI and MCA regulations" (tldr, overview) and "regulatory framework
+    under SEBI and MCA guidelines" (syllabus desc) removed; the 2021 rules are Consumer Affairs, not MCA, and the
+    sheet records only subject-area names. Also removed the FAQ sentence claiming IRDAI/SEBI MFD rules are in a
+    "core" Banking and Insurance subject (Banking and Insurance is a pickable subject area, not core).
+  - Real estate RERA FAQ (A5), 1 -> 0: the answer listed legal course content not on the verify sheet. FAQ removed.
+    The "\n\n\n\n" in about.body (A7) is now "\n\n".
+- **3. Dr MGR derived ranges and gaps (A4, A6), 10 -> 0:** "Rs 1.36-1.41L" (7 places in 6 spec JSONs) is the
+  feeMin-feeMax pair, which the profile does not print (getDisplayFee shows the programme fee only). Gaps
+  "Rs 49,600 to Rs 54,600 cheaper" (HRM, marketing) and "Rs 36,400 to Rs 41,400 cheaper" (HRM) are derived. All
+  deleted; the sentences now read "X is cheaper."
+- **4. Kurukshetra "central university" (A6, Q54), 5 -> 0:** lib/data.ts has no type field and no verify sheet
+  exists, so per the rule the word "central" was deleted, not replaced. "a state central university" now reads
+  "a state university" (the word "state" was already there). The scholarship sentence ("state scholarship
+  schemes applicable to central university online programmes") was deleted as unsourced, and "unique Rural
+  Agribusiness" lost "unique".
+- **5. Exclusivity claims (Q53), 139 -> 0 on the curated pattern set:** we cannot prove a negative across the DEB
+  register, so "the only", "no other", "one of the rarest/only", "India's only", "nobody else offers", "fewer than
+  five" claims were cut back to the factual part. Includes the named ones: Alliance ("a Business Analytics & AI
+  track"; "Explicit AI focus"), JAIN/Amity (JAIN sentence deleted, since Q35 says JAIN does not offer the AI tracks;
+  "Amity offers them"), CU aviation (FAQ, Quick Answer and the "Single university monopoly" paragraph), Amrita
+  ("rarest thing on the list" and the false "almost no online-MBA provider carries a NIRF rank", 2 posts; 5 Amrita
+  spec JSONs said "India's only NAAC A++ online university", false on our own data). 3 FAQs whose whole answer was
+  the negative claim were removed (BVP Event, BVP Sports, IGNOU Services) and 1 "How rare is" FAQ (BVP Infrastructure).
+  Left as is: claims scoped to a set we list ("in our index", "of the two", "in this grant"), and claims inside
+  frozen metaDescriptions (insurance post "Only one Indian online MBA carries an insurance-only label"; Jamia
+  Hamdard review "edge nobody else offers online"; Shoolini review "QS #1 private").
+- **6. Salary premium wording (A3), 13 -> 0 plus the promise:** 12 whyChoose items in lib/content.ts SPEC_CONTENT
+  (e.g. "Highest salary premium over general graduates, typically 2-3x", "command 25-40% salary premiums",
+  "Entry-level cloud engineers earn ₹5-9L") and the Amrita AI JSON sentence "command significant salary premiums"
+  removed. SpecializationGrid no longer promises "salary data" (salary was removed in batches 2 and 4). Not touched:
+  /programs/mba/specializations/* (Q52), metaDesc strings that mention salary data (meta freeze), and the MBA hub
+  line that links to those 7 Q52 pages, which still carry salary ranges.
+
 ## 2026-11-19 · B3 batch 4: QA advisory leftovers from batches 1-3 (branch fix/b3-batch-4)
 
 - **Sources:** audits/qa/2026-11-19-b3-batch-2-premerge.md and -batch-3-premerge.md (advisories),

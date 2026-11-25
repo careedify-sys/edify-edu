@@ -3,12 +3,15 @@
 import { useEffect, useRef, useState } from 'react'
 import type { UniSlim } from '@/lib/data-slim'
 import UniversityCard from './UniversityCard'
+import type { CardFees } from '@/lib/card-fees'
 
 interface Props {
   unis: UniSlim[]
+  // Gated fee strings from lib/card-fees.ts; MBA is the card's headline fee.
+  cardFees?: CardFees
 }
 
-export default function AnimatedUniGrid({ unis }: Props) {
+export default function AnimatedUniGrid({ unis, cardFees }: Props) {
   const [visible, setVisible] = useState<boolean[]>(() => Array(unis.length).fill(false))
   const cardRefs = useRef<(HTMLDivElement | null)[]>([])
 
@@ -51,7 +54,10 @@ export default function AnimatedUniGrid({ unis }: Props) {
               transition: 'opacity 400ms ease-out, transform 400ms ease-out',
             }}
           >
-            <UniversityCard u={u} />
+            {(() => {
+              const fee = cardFees?.[u.id]?.MBA ?? null
+              return <UniversityCard u={u} programFee={fee} feeProgram={fee ? 'MBA' : undefined} />
+            })()}
           </div>
         ))}
       </div>
