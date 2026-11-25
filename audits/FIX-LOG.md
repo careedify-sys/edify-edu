@@ -139,6 +139,9 @@ or neutral rewording only, no value added.
   A+ and cheaper on our own data, so the superlative goes. "Rs 84,000 net" was our own 70% of Rs 1,20,000, so it goes as well. The
   30% Northeast scholarship description itself stays; only the computed net figure and the superlative were removed. The two
   "most affordable ... from a Manipal Group institution" lines are scoped to three universities and stay.
+- Lead, after the round-3 QA PASS: QA advisory A1 found one more "Rs 54,600 less than Amrita's AI MBA" on the DPU AI page,
+  a gap we computed; deleted. SMU healthcare said "significantly cheaper for comparable NAAC A+ credentials" against Symbiosis,
+  which is A++ in lib/data.ts; deleted.
 
 ## 2026-11-19 · B3 batch 4: QA advisory leftovers from batches 1-3 (branch fix/b3-batch-4)
 
