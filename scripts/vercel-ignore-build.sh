@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # Vercel "Ignored Build Step" (vercel.json ignoreCommand).
 # Exit 0 = SKIP the build. Exit 1 = BUILD.
+# --no-renames: a site file moved into audits/ must list its old path too,
+# or the move would look docs-only and the removal would never ship.
 #
 # Why: every push to main rebuilds ~2,338 pages. A push that only changes
 # audit notes or root-level docs ships nothing to users, so it should not
@@ -25,7 +27,7 @@ if ! git cat-file -e "${prev}^{commit}" 2>/dev/null; then
   exit 1
 fi
 
-if ! changed="$(git diff --name-only "$prev" "$head" 2>/dev/null)"; then
+if ! changed="$(git diff --no-renames --name-only "$prev" "$head" 2>/dev/null)"; then
   echo "ignore-build: git diff failed, building"
   exit 1
 fi

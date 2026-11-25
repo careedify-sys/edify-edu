@@ -1,7 +1,7 @@
 # Vercel build-cost audit, 25 Nov 2026
 
 Cycle so far: $11.51 of $20. Build CPU: $8.23 (71.5%). 13 days left.
-Status: report only. No settings, config or code changed.
+Status: repo changes #2 and #3 shipped on branch chore/vercel-build-cost (25 Nov). #1 and #4 are Vercel settings and wait on Rishi.
 
 ## Bottom line
 
@@ -72,7 +72,7 @@ Not verified. `vercel project inspect` does not print the machine type. Builds o
 | # | Change | Est. Build CPU cut | SEO / site risk | Who | Undo |
 |---|---|---|---|---|---|
 | 1 | Disconnect Git (or delete) `edify-next` and `edify-edu` | **~67%** | None. Neither serves edifyedu.in | Rishi, Vercel dashboard | Reconnect Git |
-| 2 | Build `main` only: `"git": {"deploymentEnabled": {"*": false, "main": true}}` in `vercel.json` | ~37% of what is left | None. Previews are not indexed or used | Code, 1 commit | `git revert` |
+| 2 | Build `main` only: `"git": {"deploymentEnabled": {"**": false, "main": true}}` in `vercel.json` | ~37% of what is left | None. Previews are not indexed or used | Code, 1 commit | `git revert` |
 | 3 | Skip docs-only pushes with an `ignoreCommand` that compares `$VERCEL_GIT_PREVIOUS_SHA..HEAD` and skips only when every changed file is under `audits/`, `docs/`, `reports/`, `.claude/` or a root-level `.md` | ~5-10% | None if the path list stays narrow. Never skip on a global `*.md`: `content/blogs/*` holds `.md` files | Code, 1 commit | `git revert` |
 | 4 | Confirm the build machine is Standard on `edify-edu-dh2m` | 0% or large | None | Rishi, dashboard | Toggle back |
 | 5 | Keep batching: one push per finished batch, as the plan says | Ongoing | None | Process | n/a |

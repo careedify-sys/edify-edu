@@ -4,13 +4,14 @@
 
 - **Source:** audits/vercel-build-cost-audit-2026-11-25.md. Build CPU was $8.23 of $11.51 this cycle (71.5%).
   Rishi approved both repo changes on 25 Nov.
-- **1. Preview builds off:** vercel.json git.deploymentEnabled is now {"*": false, "main": true}.
+- **1. Preview builds off:** vercel.json git.deploymentEnabled is now {"**": false, "main": true}. "**", not "*": the keys are minimatch globs and "*" does not match a slash, so "*" would miss every feat/ fix/ seo/ branch (QA F1).
   - Why: 7 of 19 builds in 11 days were Preview builds of work branches, on all three projects. Nobody uses
     preview URLs: qa-checker builds locally before merge and checks edifyedu.in after deploy.
   - Effect: pushing a feat/fix/seo branch no longer builds. Pushing main still builds production as before.
 - **2. Docs-only pushes skip the build:** vercel.json ignoreCommand runs scripts/vercel-ignore-build.sh.
   - Why: 12 of 111 main commits since 8 Nov touched only audits/ or root .md files; when one was the push tip,
     Vercel rebuilt all ~2,338 pages to ship nothing.
+  - Uses git diff --no-renames: with rename detection, moving a site file into audits/ listed only the new path and skipped the build (QA F2).
   - Rule: skip only if every file changed since VERCEL_GIT_PREVIOUS_SHA is under audits/, docs/, reports/,
     .claude/ or is a root-level .md. Any doubt builds (no previous SHA, SHA missing from the shallow clone,
     diff error, empty diff). Not a global *.md, because content/blogs/ holds .md files. Grep confirmed no
