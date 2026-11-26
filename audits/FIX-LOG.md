@@ -1,5 +1,85 @@
 # Fix log
 
+## 2026-11-26 · B3 batch 11: highest-package claims, IGNOU EMI, stale JAIN and LPU coupon fees (branch fix/b3-batch-11)
+
+- **Source:** audits/verify/highest-package-2026-11-26.md (committed with this fix). It checked 28 highest-package
+  statements in lib/blog.ts against official portals on 2026-11-26: 0 MATCH, 4 CAMPUS-ONLY, 2 MISMATCH, 22 NOT FOUND.
+  Fees come only from lib/data.ts (getDisplayFee, getExactFee). No fee, package, rank or statistic was added. One
+  single-pass script edited 5 files and kept CRLF. No title, seoTitle or metaDescription changed.
+- **1. Highest-package claims (lib/blog.ts, 9 posts):**
+  - Why: 22 of 28 figures have no official source, and the rest were campus or out-of-date figures read as online
+    outcomes. 11 of the 22 were one recycled claim, "Amity Online highest ₹16 LPA", which no Amity page states (the
+    old job-placements page now returns HTTP 410).
+  - Deleted (NOT FOUND): IGNOU Rs 15 LPA drive, LPU online ₹11.6 LPA, every Amity ₹16 LPA and ₹12-16 LPA, NMIMS
+    ₹16-20 LPA (x2), the "Highest packages Rs 30-50 / Rs 14-20 LPA" campus vs online row, and the "own published data"
+    attribution on the Amity BBA review (FAQ, intro and body).
+  - Deleted (row 26): JAIN ₹42 LPA. It is a campus B.Tech figure, so scoping it would still mislead.
+  - Deleted (rows 27-28): both XLRI ₹75 LPA statements and the ₹29-31 LPA averages beside them. The FAQ now says the
+    placement reports cover the residential PGDM. The 2026 figures were not added, per the batch instruction.
+  - Kept, LPU ₹49.4 LPA (campus, already labelled). The "₹10.23 LPA top 25%" half was deleted, because lpu.in gives it
+    university-wide, not for the campus MBA.
+  - Kept, Amity ₹26.30 LPA: the table row and the sentence now say "Amity Business School Noida campus, class of
+    2022-24", the scope of the official placement report.
+  - online-mba-with-placement-india-2026 ranking table: the "Avg Package" and "Highest Reported" columns were removed.
+    Nothing sources either: the verify sheet found no package figure on any of the 8 portals, and JAIN's "₹8-25 LPA" is
+    a target range. The "Total Fee" column also went. With the LPA cells gone, check-blog-fees saw its 10 cells for
+    the first time: the LPA text beside them had marked them NON_FEE. Because the Rank column comes first, the
+    scanner cannot tie a cell to a university, so the slug went from 2 to 12 unverified. JAIN's cell was also wrong:
+    "Rs 1.96-2.98 lakh" against lib/data.ts ₹1,60,000-₹2,98,000. Every fee still appears in its H3 below, where it
+    resolves as MATCH, so the slug is back at 2. Rank and Placement Tier stay. The tier is the post's own Tier 1-4
+    support-type framework, defined above the table, not a package figure, so the table stays. QA: if you read
+    "nothing sourced" to cover the editorial tier, deleting the table is the alternative. The callout under it said "Figures
+    above are based on publicly reported placement data", which no longer pointed at anything. It now tells the reader
+    to ask for an outcome figure in writing. The same unsourced NMIMS and Amity average-package sentences were deleted
+    from the two placement FAQs and the Amity section, so the post no longer repeats the dropped column.
+  - Amity "500+ companies / industry partners": both Amity portal pages say "450+ Top hiring partners". Changed to
+    "450+ hiring partners" in the MBA review, the BBA review (FAQ and body), best-online-mba-colleges (FAQ) and
+    online-mba-with-placement (FAQ, TL;DR, Amity section). In online-mca-amity-vs-lpu-2026 the count was deleted,
+    because the MCA page was not checked.
+  - HTML balance per post is unchanged (tag open/close diff checked for p, tr, td, th, table, ul, li, div and strong).
+    updatedAt was bumped to 2026-11-26 on: ignou-online-mba-review-2026, online-mba-lpu-review-2026,
+    amity-online-mba-review-2026, amity-online-bba-review-2026, best-online-mba-colleges-india-2026,
+    online-mba-with-placement-india-2026, jain-online-mba-review-2026, xlri-online-mba-review-2026,
+    online-mca-amity-vs-lpu-2026.
+  - Counts in lib/blog.ts, before -> after: "Rs/₹ 16 LPA" 11 -> 2 (left: a Chennai cost-of-living example and another
+    university's median, not highest-package claims); "16-20 LPA" 3 -> 0; "11.6 LPA" 1 -> 0; "10.23" 1 -> 0; "75 LPA"
+    2 -> 0; "Highest Reported" 1 -> 0; "Avg Package" header 1 -> 0; "own published data" 3 -> 0; Amity "500+" 8 -> 0
+    (5 "500+" left, all NMIMS, Galgotias or a generic quote); "class of 2022-24" 0 -> 2. "Rs 15 LPA" 8 -> 7 and "42 LPA"
+    12 -> 11: the rest are generic salary tables, not university claims.
+  - Not done, for a later batch: the remaining average-package figures in these posts (for example the Quick Answer's
+    "Rs 4-12 LPA" and the Amity Noida ₹7.35/₹6.50 LPA rows) were outside this verify sheet. The IGNOU "Rs 2 to 3.4 LPA"
+    drive roles have the same missing source as the deleted Rs 15 LPA.
+- **2. IGNOU emiFrom 400:**
+  - Why: 400 is 9,600/24, from commit 689a642 (feeMin/24) when IGNOU's feeMin was the placeholder ₹9,600. The fee is
+    now ₹66,000, so "EMI from ₹400/mo" was a stale derivation on 10 pages (/fees, /universities, the IGNOU profile, its
+    MBA hub, 4 MBA spec pages, ignou-vs-amity and ignou-vs-lpu).
+  - Fix: emiFrom 0 in lib/data.ts and lib/data-slim.ts, and emiFrom 0 / emiStr "Not published" in
+    data/fees-hub-data.json. 0 is the existing "no EMI" path (26 other hub rows use it): EMIPlans, FeeBreakdown,
+    UniversityCard, CompareClient, the compare pair page and the profile all hide the figure or print "On request". The
+    type needs a number, so the field stays. No new figure.
+  - Not fixed, for the next batch. /fees still shows IGNOU as "₹10K – ₹66K"; ₹10K is the same placeholder floor.
+    Other records whose emiFrom is stale:
+    - (A) emiFrom = feeMin/24, but feeMin is a placeholder or is not the fee shown:
+      - Fee shown differs from feeMin: parul (1667; shown ₹1,50,000), dr-mgr (5667), bharati-vidyapeeth (5375),
+        gla (5833), arka-jain (4521), deen-dayal-upadhyay-gorakhpur (1271; shown ₹52,500),
+        choudhary-charan-singh (1175).
+      - Fee suppressed by rule 4d: jamia-hamdard, university-of-kerala, graphic-era, devi-ahilya, shivaji,
+        banasthali, mody.
+    - (B) emiFrom is not feeMin/24 of the current feeMin:
+      - jain (6917), amity (8906), lpu (6708), uttaranchal (3733), alliance (8700), jaypee (5850).
+      - jnu, kiit and ggsipu (4500 each).
+      - university-of-jammu, dayalbagh, bharath, mdu, rohilkhand and meenakshi (4000 each).
+      - bangalore (3000), adichunchanagiri (4417), assam-down-town (2000).
+      - Some of these may be portal figures, so check each before changing it.
+- **3. JAIN and LPU coupon records:**
+  - Why: these are hidden (they reach only the RSC payload) but stale. 'Rs 1,96,000' and 'Rs 1,61,000' match neither
+    lib/data.ts nor the peer rows fixed in batch 10.
+  - Fix: same approach as Manav Rachna and VGU in batch 9.
+    - JAIN: totalFee '₹1,60,000–₹2,98,000', totalFeeNum 160000, finalFee '... less up to Rs 5,000'.
+    - LPU: '₹2,00,000 list', totalFeeNum 200000. LPU uses the getExactFee list figure rather than getDisplayFee's
+      "₹1,61,000 to ₹2,00,000", because that range rounds the portal's ₹1,61,600 (lib/fees.ts says so).
+  - No visible change: CouponPageCTA prints totalFee only for IGNOU.
+
 ## 2026-11-26 · B3 batch 10: spec-table fees through getExactFee, MAHE NIRF card, coupon peer fees, last pay and market claims (branch fix/b3-batch-10)
 
 - **Source:** the "Listed, not changed" items from B3 batch 9 and its QA. Facts come only from lib/data.ts

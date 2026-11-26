@@ -9555,7 +9555,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     psuEligible: true,
     feeMin: 66000,
     feeMax: 66000,
-    emiFrom: 400,
+    emiFrom: 0,
     eligibility: "Varies by program (10+2 for UG, Graduation for PG)",
     eligibilityPct: 40,
     tagline: "Central government open university; valid for all govt jobs and PSU recruitment",

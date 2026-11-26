@@ -2414,9 +2414,9 @@
     "nirfMgt": null,
     "feeMin": 9600,
     "feeMax": 66000,
-    "emiFrom": 400,
+    "emiFrom": 0,
     "feeStr": "₹10K – ₹66K",
-    "emiStr": "₹400/mo",
+    "emiStr": "Not published",
     "programs": [
       "MBA",
       "MCA",
