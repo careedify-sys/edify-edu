@@ -488,7 +488,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
                 </tr>
                 {page.peerComparisons.map((p, i) => (
                   <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
-                    <td className="px-4 py-2 text-slate-700">{p.uni.replace(/\s*\(Rs\s*[\d,.+L]+\)/, '')}</td>
+                    <td className="px-4 py-2 text-slate-700">{p.uni.replace(/\s*\((?:Rs|₹)[^)]*\)/, '')}</td>
                     <td className="px-4 py-2 text-slate-600">{p.savings}</td>
                   </tr>
                 ))}

@@ -74,6 +74,13 @@
 - **Note for the tracker:** Q52 (spec-page salary ranges) was effectively decided by batch 9 (218303f), which removed
   them. Its "stays as-is" column is now stale.
 
+- **Round 2 (QA F1, audits/qa/2026-11-26-b3-batch-10-premerge.md):**
+  - Why: app/coupons/[slug]/page.tsx strips fees from peer-table names (decided in cbfc5c9, 14 May: no programme fees on
+    rendered coupon pages). Its regex only matched "(Rs 1,23,000)", so the corrected "(₹2,07,000–₹2,25,000)" strings
+    would have shown 49 fee figures on 20 coupon pages that showed bare names before.
+  - What: the strip regex now matches any "(Rs …)" or "(₹…)" suffix. The corrected data strings stay. Visible coupon
+    tables match base, except the 2 Symbiosis rows, which lose the unsourced "2+ yrs exp concession" label.
+
 ## 2026-11-26 · B3 batch 9: unsourced pay claims, coupon fee strings, UPES NIRF category, hub superlatives, dead editorialGuide (branch fix/b3-batch-9)
 
 - **Source:** the "Listed, not changed" items in the B3 batch 8 entry below. Facts checked only against lib/data.ts
