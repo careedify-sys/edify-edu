@@ -14093,7 +14093,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Written for: BBA, BCom, or BA graduates evaluating MBA Marketing, working professionals 2 to 5 years in marketing executive roles planning the next step, and family business successors considering marketing leadership track.</p>
 
-<div class="callout-key"><strong>One-line frame for MBA Marketing 2026:</strong> Median Rs 12.2 LPA, digital roles 20 percent above traditional, D2C and SaaS hiring growing 18 to 25 percent YoY, FMCG remains the gold standard for brand career. Pick specialisation based on target sector, not generic prestige.</div>
+<div class="callout-key"><strong>One-line frame for MBA Marketing 2026:</strong> FMCG remains the gold standard for brand career. Pick specialisation based on target sector, not generic prestige.</div>
 
 <h2>Why MBA Marketing Is a Strong 2026 Choice</h2>
 

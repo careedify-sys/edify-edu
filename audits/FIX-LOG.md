@@ -95,6 +95,12 @@
     carries "Median Rs 12.2 LPA", "20 percent above" and "18 to 25 percent". Those are left for the blog pay-claims batch.
   - 5 posts changed body text and carry updatedAt 2026-11-26.
 
+- Round 3 (lead, QA round-2 FAIL at e041035): six more LPU Coursera claims were missed. Two Uttaranchal "consider" items that
+  rested on LPU Coursera are deleted, one is cut to the CU half, and three Galgotias "lacks EMI, Coursera, and placement support"
+  lines read "lacks EMI and placement support" so they no longer imply LPU has Coursera. The NIU marketing "consider" list was
+  left with one item naming no alternative; it now uses the NIU IT wording (CU PwC certifications). The mba-marketing callout
+  lost its unsourced "Median Rs 12.2 LPA", "20 percent above" and "18 to 25 percent YoY" stats.
+
 ## 2026-11-25 · B3 batch 6: superlatives, pay claims and market stats (branch fix/b3-batch-6)
 
 - **Source:** audits/qa/2026-11-25-b3-batch-5-premerge-rerun.md, items 1-8. Facts checked only against lib/data.ts
