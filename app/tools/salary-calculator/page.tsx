@@ -172,7 +172,7 @@ export default function SalaryCalculatorPage() {
               {hasMBA && (
                 <div className="mt-3 pt-3 border-t border-white/20 text-sm">
                   <span className="text-white/60">MBA Premium:</span>{' '}
-                  <span className="font-bold text-amber-light">+30% higher salary</span>
+                  <span className="font-bold text-amber-light">included in this estimate</span>
                 </div>
               )}
             </div>
@@ -212,7 +212,7 @@ export default function SalaryCalculatorPage() {
                   <h3 className="font-bold text-navy">Boost Your Salary with MBA</h3>
                 </div>
                 <p className="text-sm text-ink-2 mb-4">
-                  An MBA from a top university can increase your salary by 30-50%. 
+                  Compare NIRF-ranked online MBA options below.
                 </p>
                 <div className="space-y-2">
                   {topUnis.map(u => (
@@ -241,18 +241,8 @@ export default function SalaryCalculatorPage() {
           </h2>
           <div className="prose prose-sm max-w-none text-ink-2">
             <p>
-              The average MBA salary in India ranges from ₹6 LPA to ₹25 LPA depending on the university tier, 
-              specialization, experience, and location. Online MBA graduates from NIRF-ranked universities 
-              typically earn 20-30% more than non-MBA professionals in similar roles.
+              MBA salary in India depends on the university, specialization, experience, and location.
             </p>
-            <h3 className="text-navy font-semibold mt-6 mb-2">Salary by MBA Specialization</h3>
-            <ul>
-              <li><strong>Finance MBA:</strong> ₹8-25 LPA - Highest paying specialization</li>
-              <li><strong>Marketing MBA:</strong> ₹6-20 LPA - Best for creative professionals</li>
-              <li><strong>HR MBA:</strong> ₹5-15 LPA - Stable career growth</li>
-              <li><strong>Operations MBA:</strong> ₹6-18 LPA - Manufacturing & logistics focus</li>
-              <li><strong>Business Analytics:</strong> ₹8-22 LPA - Fastest growing specialization</li>
-            </ul>
             <h3 className="text-navy font-semibold mt-6 mb-2">Online MBA vs Regular MBA Salary</h3>
             <p>
               According to industry data, online MBA graduates from top universities (NIRF Top 50) earn comparable 

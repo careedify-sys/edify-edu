@@ -32,7 +32,6 @@ interface SpecDef {
   targetKeyword: string
   intro: string
   why2026: string[]
-  salaryRange: string
   entryRoles: string[]
   midRoles: string[]
   industries: string[]
@@ -53,10 +52,8 @@ const SPECS: Record<string, SpecDef> = {
     why2026: [
       'India added over 1.2 crore new organised-sector jobs in 2023-24, creating sustained demand for HR professionals.',
       'HR analytics and HRIS tools are now core hiring criteria, and an MBA bridges the skill gap faster than a certificate course.',
-      'Remote and hybrid work has made HR strategy a board-level priority, lifting average HR Manager salaries by 18% since 2022.',
       'PSU and government sector roles increasingly require a full MBA degree, not a diploma, for HR cadre positions.',
     ],
-    salaryRange: '₹4L to ₹18L per annum depending on sector and seniority',
     entryRoles: ['HR Executive', 'Recruitment Executive', 'Compensation Analyst', 'L&D Coordinator'],
     midRoles: ['HR Manager', 'HRBP', 'Talent Acquisition Head', 'Compensation Manager'],
     industries: ['IT Services', 'Manufacturing', 'Banking', 'FMCG', 'Healthcare', 'Consulting'],
@@ -74,7 +71,6 @@ const SPECS: Record<string, SpecDef> = {
     faqs: [
       { q: 'Is an Online MBA HR Management degree valid in India?', a: 'Yes. UGC-DEB approved online MBA degrees carry the same legal standing as regular on-campus MBA degrees. They are accepted by government and private employers.' },
       { q: 'Which online universities offer MBA HR Management?', a: 'MAHE, NMIMS, Amrita, JAIN, Chandigarh University, LPU, and over 20 other UGC-DEB approved universities offer MBA with HR Management specialisation.' },
-      { q: 'What is the salary after an Online MBA HR Management?', a: 'Entry-level HR roles pay ₹4L to ₹7L per annum. HR Managers with 3-5 years of experience earn ₹8L to ₹14L. Senior HRBP and CHRO-track roles command ₹15L to ₹25L.' },
       { q: 'Do I need work experience to join an Online MBA HR Management?', a: 'Most online programmes do not require prior work experience. However, universities like NMIMS and Symbiosis may prefer candidates with 1-2 years of experience.' },
       { q: 'How is Online MBA HR different from a PGDM in HR?', a: 'An Online MBA is a full degree awarded by a UGC-recognised university. A PGDM is a diploma, typically awarded by AICTE-approved autonomous institutes. For PSU recruitment and government jobs, a degree is generally preferred over a diploma.' },
       { q: 'Can I switch from a non-HR background to HR via an online MBA?', a: 'Yes. An online MBA HR is regularly chosen by professionals from IT, sales, operations, and finance who want to pivot into people management. The curriculum starts from fundamentals.' },
@@ -91,9 +87,7 @@ const SPECS: Record<string, SpecDef> = {
       'India\'s e-commerce sector is expected to reach $150B by 2027, creating over 5 lakh new supply chain jobs annually.',
       'Government PLI schemes for manufacturing and the PM Gati Shakti logistics plan are expanding formal SCM hiring at scale.',
       'Supply chain disruptions post-COVID made risk management and digital SCM skills board-level priorities.',
-      'Average SCM Manager salaries grew by 22% between 2022 and 2025 due to talent shortages at the mid-management level.',
     ],
-    salaryRange: '₹5L to ₹20L per annum depending on sector and seniority',
     entryRoles: ['Supply Chain Coordinator', 'Logistics Executive', 'Procurement Officer', 'Inventory Analyst'],
     midRoles: ['Supply Chain Manager', 'Logistics Manager', 'VP Supply Chain', 'CSCO track'],
     industries: ['E-commerce', '3PL', 'FMCG', 'Auto', 'Pharma', 'Government Logistics'],
@@ -111,7 +105,6 @@ const SPECS: Record<string, SpecDef> = {
     faqs: [
       { q: 'Is Online MBA Supply Chain Management UGC approved?', a: 'Yes, when offered by a UGC-DEB approved university. Always verify the university\'s approval status on deb.ugc.ac.in before enrolling.' },
       { q: 'Which online universities offer MBA Supply Chain Management?', a: 'Chandigarh University, MAHE, UPES, Parul University, Symbiosis SSODL, MUJ, JAIN, and LPU are among the leading options.' },
-      { q: 'What is the salary after an Online MBA SCM?', a: 'Entry-level supply chain roles pay ₹5L to ₹8L per annum. SCM Managers with 3-5 years\' experience earn ₹10L to ₹15L. Senior VP and CSCO roles command ₹18L to ₹30L.' },
       { q: 'Is MBA Operations Management the same as MBA SCM?', a: 'They overlap significantly but are not identical. Operations focuses on internal process management while SCM includes external vendor, logistics, and distribution networks. Some universities offer a combined Operations and Supply Chain specialisation.' },
       { q: 'What certifications complement an Online MBA SCM?', a: 'APICS CSCP, APICS CPIM, and Lean Six Sigma (Green Belt or Black Belt) are valued by recruiters in manufacturing, FMCG, and e-commerce fulfilment roles.' },
       { q: 'Can online MBA SCM graduates get PSU jobs?', a: 'Yes. UGC-DEB approved online MBA degrees are eligible for PSU recruitment. Government logistics and infrastructure roles often accept online MBA candidates.' },
@@ -126,11 +119,9 @@ const SPECS: Record<string, SpecDef> = {
     intro: `An Online MBA in Business Analytics combines management fundamentals with data skills including statistical modelling, data visualisation, Python/R, predictive analytics, and business intelligence tools. The UGC-DEB approved 2-year programme suits analysts, MIS executives, and mid-career professionals who want to move into analytics leadership and data strategy roles.`,
     why2026: [
       'India\'s analytics market is projected to reach $16B by 2027. Demand for analytics managers is growing at 28% CAGR.',
-      'Business Analyst and Data Strategy Manager roles now command 35-40% salary premiums over equivalent general management positions.',
       'Banking, telecom, e-commerce, and FMCG are investing in analytics infrastructure, creating sustained mid-management demand.',
       'An MBA in Business Analytics is preferred over a standalone data science course for managerial and strategy roles.',
     ],
-    salaryRange: '₹6L to ₹22L per annum depending on sector and seniority',
     entryRoles: ['Business Analyst', 'Data Analyst', 'BI Analyst', 'MIS Executive'],
     midRoles: ['Analytics Manager', 'BI Manager', 'Data Strategy Manager', 'Head of Analytics'],
     industries: ['IT Services', 'Banking', 'E-commerce', 'Retail', 'Telecom', 'Consulting'],
@@ -150,7 +141,6 @@ const SPECS: Record<string, SpecDef> = {
       { q: 'Which online universities offer MBA Business Analytics?', a: 'MAHE, JAIN, Amrita, Chandigarh University, UPES, Parul University, Symbiosis SSODL, MUJ, SRM, and DSU are among the leading options.' },
       { q: 'What tools are taught in MBA Business Analytics?', a: 'Most curricula include Python, R, Tableau, Power BI, SQL, Excel advanced modelling, and SPSS. MAHE and JAIN also include machine learning fundamentals in their analytics syllabi.' },
       { q: 'MBA Business Analytics vs MBA Data Science: which is better?', a: 'MBA Business Analytics focuses on using data for business decisions (BI, strategy, reporting). MBA Data Science goes deeper into ML model building. If you want to lead analytics teams, Business Analytics is usually sufficient. If you plan to build models, Data Science is better.' },
-      { q: 'What salary can I expect after an Online MBA Business Analytics?', a: 'Entry-level business analysts earn ₹6L to ₹9L per annum. Analytics managers with 3-5 years\' experience earn ₹12L to ₹18L. Head of Analytics and CDO-track roles pay ₹20L and above.' },
       { q: 'Do I need a technical background for MBA Business Analytics?', a: 'No. Most universities design the curriculum for non-technical managers. Quantitative aptitude and Excel proficiency are helpful, but prior coding experience is not required.' },
       { q: 'Is NMIMS good for MBA Business Analytics?', a: 'NMIMS (NIRF #24 Management, NAAC A++, WES recognised) offers "Operations and Data Sciences Management" which is its analytics-focused MBA track. The programme has strong Mumbai-based industry connections in BFSI, FMCG, and consulting sectors.' },
     ],
@@ -167,7 +157,6 @@ const SPECS: Record<string, SpecDef> = {
       'NABH accreditation has become mandatory for government empanelment, creating demand for quality managers with formal training.',
       'Pharma and health insurance sectors are growing at 12-15% CAGR, opening lateral management roles for MBA Healthcare graduates.',
     ],
-    salaryRange: '₹4L to ₹18L per annum depending on role and hospital tier',
     entryRoles: ['Hospital Administrator (Junior)', 'Healthcare Operations Executive', 'Quality Coordinator', 'Medical Records Manager'],
     midRoles: ['Hospital Administrator', 'Operations Manager', 'Quality Manager (NABH)', 'Healthcare Cluster Head'],
     industries: ['Hospitals', 'Healthcare Chains', 'Pharma', 'Health Insurance', 'Government Health'],
@@ -186,7 +175,6 @@ const SPECS: Record<string, SpecDef> = {
       { q: 'Is Online MBA Healthcare Management valid for hospital jobs?', a: 'Yes. UGC-DEB approved online MBA degrees are recognised by hospitals, healthcare chains, and government health organisations across India.' },
       { q: 'Which online universities offer MBA Healthcare Management?', a: 'MAHE, Parul University, Chandigarh University, Galgotias University, Symbiosis SSODL, and DY Patil University are among the leading options.' },
       { q: 'Can a non-medical graduate do an MBA Healthcare Management?', a: 'Yes. Most universities accept graduates from any stream including commerce, science, engineering, and arts. A non-medical background is no barrier for hospital administration roles.' },
-      { q: 'What is the salary after an Online MBA Healthcare Management?', a: 'Entry-level hospital administration roles pay ₹4L to ₹7L per annum. Operations managers earn ₹8L to ₹13L. CEO-track and cluster head roles in large hospital chains pay ₹15L to ₹25L.' },
       { q: 'Is MBA Healthcare Management the same as MHA (Masters in Hospital Administration)?', a: 'They are different. MHA is a specialised programme focused entirely on healthcare. MBA Healthcare Management is a general management degree with a healthcare specialisation. MBA has broader applicability across sectors if you later change direction.' },
       { q: 'What certifications support MBA Healthcare Management?', a: 'NABH Lead Assessor certification, CPHIMS (healthcare informatics), and Six Sigma (Green Belt) are valued in hospital quality and operations roles. Pharma sector roles benefit from Regulatory Affairs certifications.' },
       { q: 'Does MAHE offer MBA Healthcare Management online?', a: 'Yes. MAHE (NIRF #3 overall, NAAC A++) offers MBA with Healthcare Management specialisation through its online platform. It also offers Pharmaceutical Management as a distinct track.' },
@@ -204,7 +192,6 @@ const SPECS: Record<string, SpecDef> = {
       'Global FinTech investment in India exceeded $2B in 2024, generating senior management openings at payments, lending-tech, and neo-bank firms.',
       'PSU banks and NBFCs are hiring digital transformation managers with formal MBA FinTech or Finance credentials at premium packages.',
     ],
-    salaryRange: '₹8L to ₹25L per annum depending on role and sector',
     entryRoles: ['FinTech Analyst', 'Payments Operations Executive', 'BFSI Tech Analyst', 'Digital Banking Associate'],
     midRoles: ['FinTech Product Manager', 'Digital Payments Manager', 'BFSI Risk Manager', 'Digital Transformation Lead'],
     industries: ['Payments', 'Neo-banks', 'NBFC', 'PSU Banks', 'Insurance-Tech', 'Lending-Tech'],
@@ -222,7 +209,6 @@ const SPECS: Record<string, SpecDef> = {
     faqs: [
       { q: 'Is an Online MBA FinTech degree valid in India?', a: 'Yes. UGC-DEB approved online MBA degrees carry the same legal standing as on-campus MBA degrees and are accepted by banks, NBFCs, and FinTech companies.' },
       { q: 'Which online universities offer MBA FinTech?', a: 'MAHE, Amrita, UPES, and select UGC-DEB approved universities offer MBA with FinTech or Digital Finance tracks. Always verify the specialisation name and UGC-DEB approval status before enrolling.' },
-      { q: 'What is the salary after an Online MBA FinTech?', a: 'Entry-level FinTech roles pay ₹8L to ₹12L per annum. Mid-level product and risk managers earn ₹14L to ₹20L. Senior digital transformation and BFSI leadership roles command ₹22L to ₹35L.' },
       { q: 'Do I need a tech background for MBA FinTech?', a: 'No. MBA FinTech is designed for finance professionals who want technology fluency, not deep engineering. You will learn product thinking, digital payments architecture, and data-driven decision-making at the business level.' },
       { q: 'MBA FinTech vs MBA Finance: which is better?', a: 'MBA Finance is broader and opens more roles across banking, investment, and corporate finance. MBA FinTech is more specialised for digital payments, neo-banking, and lending-tech roles. Choose based on your 5-year target sector.' },
       { q: 'What certifications complement MBA FinTech?', a: 'CFA Level 1, FRM, AWS Cloud Practitioner, and Certified FinTech Professional (ICICI Academy) are valued by payments and BFSI tech employers. Python for finance certification also strengthens analytics-track profiles.' },
@@ -241,7 +227,6 @@ const SPECS: Record<string, SpecDef> = {
       'E-commerce same-day and next-day delivery requirements have created a tier of logistics operations management roles that did not exist before 2020.',
       'DPIIT Logistics Division and port authorities are hiring logistics managers with formal MBA credentials at scale through structured recruitment.',
     ],
-    salaryRange: '₹5L to ₹22L per annum depending on sector and seniority',
     entryRoles: ['Logistics Executive', 'Transport Coordinator', 'Warehouse Operations Executive', 'Fleet Coordinator'],
     midRoles: ['Logistics Manager', 'Transport Manager', 'Warehouse Manager', 'Regional Logistics Head'],
     industries: ['3PL', 'E-commerce', 'FMCG', 'Auto', 'Pharma Cold Chain', 'Government Logistics'],
@@ -258,8 +243,7 @@ const SPECS: Record<string, SpecDef> = {
     careerBlogSlug: 'online-mba-logistics-management-india-2026',
     faqs: [
       { q: 'Is Online MBA Logistics Management different from MBA Supply Chain Management?', a: 'Yes. Logistics Management focuses on the physical movement of goods: transport, warehousing, last-mile delivery, and fleet operations. Supply Chain Management covers the broader network including procurement, vendor management, and inventory strategy. Both are complementary but target different job roles.' },
-      { q: 'Which online universities offer MBA Logistics Management?', a: 'UPES (ranked #45 NIRF, NAAC A), Chandigarh University, MUJ, Parul University, and select UGC-DEB approved universities offer MBA with Logistics or Transport Management specialisation. Always verify the exact specialisation name on the university portal.' },
-      { q: 'What is the salary after an Online MBA Logistics Management?', a: 'Entry-level logistics roles pay ₹5L to ₹8L per annum. Logistics Managers with 3-5 years of experience earn ₹10L to ₹15L. Regional Heads and VP Logistics roles at large 3PL and e-commerce firms command ₹18L to ₹28L.' },
+      { q: 'Which online universities offer MBA Logistics Management?', a: 'UPES (NIRF #45 University, NAAC A), Chandigarh University, MUJ, Parul University, and select UGC-DEB approved universities offer MBA with Logistics or Transport Management specialisation. Always verify the exact specialisation name on the university portal.' },
       { q: 'Is UPES good for MBA Logistics Management?', a: 'UPES has a domain specialisation in energy, logistics, and infrastructure. Its MBA Logistics curriculum integrates petroleum logistics, port operations, and cold-chain management, making it distinct from generalist logistics programmes. NIRF #36 Management, NAAC A, WES approved.' },
       { q: 'What certifications complement MBA Logistics Management?', a: 'APICS CSCP, Certified Logistics Professional (CLP), Six Sigma Green Belt, and AWS supply chain certifications are valued by 3PL, FMCG, and e-commerce logistics recruiters.' },
       { q: 'Can I get government logistics jobs with an Online MBA Logistics Management?', a: 'Yes. UGC-DEB approved online MBA degrees qualify candidates for DPIIT logistics roles, port authority management positions, and PSU infrastructure management cadres.' },
@@ -278,7 +262,6 @@ const SPECS: Record<string, SpecDef> = {
       'The rise of experience tourism, MICE, and branded service apartments is creating hybrid hospitality-management roles that require formal MBA credentials.',
       'Quick-service restaurant (QSR) chains are expanding aggressively in tier-2 and tier-3 cities, generating cluster and regional manager openings.',
     ],
-    salaryRange: '₹4L to ₹20L per annum depending on role and property tier',
     entryRoles: ['Hotel Operations Executive', 'F&B Manager (Junior)', 'Guest Relations Manager', 'Revenue Analyst'],
     midRoles: ['Hotel Manager', 'F&B Director', 'Revenue Manager', 'Area Operations Manager'],
     industries: ['Hotels', 'F&B Chains', 'Aviation Ground Services', 'Event Management', 'Tourism'],
@@ -296,7 +279,6 @@ const SPECS: Record<string, SpecDef> = {
     faqs: [
       { q: 'Is Online MBA Hospitality Management valid for hotel chain jobs?', a: 'Yes. UGC-DEB approved online MBA degrees are accepted by hotel chains, F&B companies, and hospitality groups across India. Taj, ITC, Oberoi, and Marriott India have hired online MBA graduates for operations and management roles.' },
       { q: 'Which online universities offer MBA Hospitality Management?', a: 'Parul University, Chandigarh University, Galgotias University, Jain University, and select UGC-DEB approved universities offer MBA with Hospitality or Tourism Management specialisation. Talk to our counsellor for the specialisation name.' },
-      { q: 'What is the salary after an Online MBA Hospitality Management?', a: 'Entry-level hotel management roles pay ₹4L to ₹7L per annum. Hotel Managers and F&B Directors with 3-5 years of experience earn ₹9L to ₹15L. Area Operations Managers and GMs at premium properties command ₹18L to ₹28L.' },
       { q: 'Can I do an MBA Hospitality Management without a hotel management degree?', a: 'Yes. Most universities accept graduates from any stream. A background in commerce, BBA, or even engineering is acceptable. Prior work experience in any service industry (retail, aviation, events) is treated favourably.' },
       { q: 'MBA Hospitality Management vs MBA Healthcare Management: which is better?', a: 'Both are niche MBA tracks with strong career paths. Hospitality suits you if your career is in hotels, F&B, or tourism. Healthcare suits you if you are in hospitals, pharma, or health insurance. Both have similar salary ranges at entry level; healthcare mid-tier salaries are slightly higher.' },
       { q: 'What certifications complement MBA Hospitality Management?', a: 'Certified Hotel Administrator (CHA), Revenue Management Certification (Cornell), and Google Digital Marketing certification are valued by hotel chains and hospitality groups for management roles.' },
@@ -367,8 +349,6 @@ export default function MBASpecialisationHubPage(
     .sort((a, b) => (a.nirf < 500 ? a.nirf : 999) - (b.nirf < 500 ? b.nirf : 999))
     .slice(0, 10)
 
-  const feeMin = unis.length ? Math.min(...unis.map(u => u.feeMin).filter(f => f > 0)) : 0
-  const feeMax = unis.length ? Math.max(...unis.map(u => u.feeMax).filter(f => f > 0)) : 0
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -422,12 +402,10 @@ export default function MBASpecialisationHubPage(
             </h1>
             <p className="mt-5 text-lg text-ink-2 max-w-2xl leading-relaxed">{def.intro}</p>
 
-            <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="mt-6 grid grid-cols-2 gap-4">
               {[
                 { label: 'Universities', value: `${unis.length}+` },
-                { label: 'Fee Range', value: `${formatFeeSlim(feeMin)} to ${formatFeeSlim(feeMax)}` },
                 { label: 'Duration', value: '2 Years' },
-                { label: 'Salary Range', value: def.salaryRange.split(' ')[0] + '...' },
               ].map(stat => (
                 <div key={stat.label} className="bg-white rounded-xl p-4 border border-slate-200">
                   <div className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1">{stat.label}</div>
@@ -536,10 +514,6 @@ export default function MBASpecialisationHubPage(
               <div className="text-sm text-ink-2">
                 <span className="font-bold text-navy">Key industries: </span>
                 {def.industries.join(', ')}
-              </div>
-              <div className="mt-2 text-sm text-ink-2">
-                <span className="font-bold text-navy">Salary range: </span>
-                {def.salaryRange}
               </div>
             </div>
             <div className="mt-4">

@@ -90,7 +90,9 @@ const CHECKED_SUPERLATIVES: string[] = [
   // < MAHE Rs 2,92,000. Re-verified 2026-11-13: SMU Rs 1,20,000 < MUJ Rs 1,56,400
   // (after 15%; list Rs 1,84,000) < MAHE Rs 2,92,000. Bounded to the three named
   // Manipal-group programmes. The coupon amount was corrected to match the record.
-  'SMU is the most affordable Manipal-group MBA. Northeast residents save 30% automatically, bringing effective fee to Rs 84,000. Add the coupon discount (up to Rs 5,000 on Tue/Sat, Rs 4,000 on other days) on top.',
+  // 2026-11-26 (B3 batch 9): the derived "effective fee to Rs 84,000" clause was
+  // deleted from the string below; the superlative itself is unchanged.
+  'SMU is the most affordable Manipal-group MBA. Northeast India and Sikkim residents can claim a 30% fee waiver with a domicile certificate. Add the coupon discount (up to Rs 5,000 on Tue/Sat, Rs 4,000 on other days) on top.',
   'Is SMU the most affordable Manipal-group online MBA?',
   'Yes. SMU is the most affordable of the three Manipal-group online MBA programmes (SMU, MUJ, MAHE). Confirm the current fee structure with our admission desk on your enrollment call.',
 ]

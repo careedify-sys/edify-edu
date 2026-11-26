@@ -1,5 +1,80 @@
 # Fix log
 
+## 2026-11-26 · B3 batch 9: unsourced pay claims, coupon fee strings, UPES NIRF category, hub superlatives, dead editorialGuide (branch fix/b3-batch-9)
+
+- **Source:** the "Listed, not changed" items in the B3 batch 8 entry below. Facts checked only against lib/data.ts
+  (getExactFee / getDisplayFee, nirf fields). No fee, rank, salary or statistic was added. Every fix deletes a figure
+  or swaps it for neutral wording. One single-pass script edited 7 files and kept CRLF. No title, seoTitle,
+  metaDescription, blog post or protected page changed, so no updatedAt bump was needed.
+- **1. Unsourced pay claims:**
+  - Why: no file in the repo, no verify sheet and no approved source backs any of these salary ranges, "salary
+    jump" percentages or pay-growth stats. The /programs/mba copy called them "realistic numbers based on industry
+    surveys and our student feedback", but no survey or feedback dataset exists.
+  - MBAHubClient: the three LPA cards, the SALARY_DATA table and its heading, and the "realistic numbers" sentence
+    are deleted. The section keeps its qualitative paragraph and the honest disclaimer. The spec-cards blurb no longer
+    promises "salary data", because the spec pages no longer carry it.
+  - HomePageClient: "Most professionals see a 30-50% salary jump within 2 years" is deleted from the visible FAQ and
+    from FAQPage LD. The Finance vs Marketing answer keeps its sector and profile advice but loses the Rs 8L-25L and
+    Rs 7L-20L figures and "higher salary ceiling".
+  - Salary calculator:
+    - Static copy fixed: "30-50%" line, SEO paragraph (Rs 6-25 LPA, "20-30% more") and the per-specialisation LPA list
+      with its "Highest paying" and "Fastest growing" superlatives.
+    - The "+30% higher salary" label now reads "included in this estimate". It describes the calculator's 1.3 mbaBonus
+      multiplier, so the arithmetic was left as it is.
+    - Not touched, listed for Rishi: the ROLES min/max salaries, growth % and the EXPERIENCE and CITY multipliers are
+      typed with no source, and the calculator prints figures computed from them. Only Rishi can source or retire the
+      tool.
+  - /programs/mba/specializations/[spec]:
+    - The salaryRange field and both places it rendered (the stat card and the "Salary range:" line) are removed.
+    - Seven salary FAQs are deleted. They also leave FAQPage LD.
+    - Three why-2026 pay stats are deleted: HR "salaries by 18% since 2022", SCM "grew by 22%" and analytics "35-40%
+      salary premiums".
+- **2. coupon-pages.ts:**
+  - Why: IGNOU "Rs 14,000-16,000 per semester" matches no lib/data.ts field. lib/data.ts publishes only the Rs
+    66,000 total, and its code comment says 16,000 a semester (18,000 in semester 3), so the string was wrong as
+    well as unsourced. SMU "effective fee to Rs 84,000" was derived (1,20,000 less 30%). "Rs 160K - Rs 160K" and
+    "Rs 150K - Rs 150K" (Manav Rachna, VGU) were malformed single values and sat in the client payload of 2 coupon
+    pages.
+  - What:
+    - The IGNOU per-semester figure is deleted; the line reads "Fee is paid semester-wise."
+    - SMU now says Northeast India and Sikkim residents can claim a 30% fee waiver with a domicile certificate, the
+      eligibility and how-to-apply already in its discounts row.
+    - Manav Rachna and VGU now carry Rs 1,60,000 and Rs 1,50,000: the same numbers, as getDisplayFee formats them.
+      totalFeeNum moved from the placeholder 60000 to the same values. getExactFee returns none for both, but these
+      fields render only on couponCode "N/A" pages, which neither is.
+  - scripts/check-coupon-claims.mts: its CHECKED_SUPERLATIVES held the SMU string verbatim, so the entry now holds
+    the edited text, with a dated comment. The superlative is unchanged and still true (SMU 1,20,000 < MUJ
+    1,56,400-1,84,000 < MAHE 2,92,000). The gate is not loosened: it still allows exactly one SMU string.
+- **3. UPES NIRF on the Logistics spec FAQ:** "ranked #45 NIRF" had no category. lib/data.ts nirf=45 is the
+  University rank, and its approvals list "NIRF #45 (University)", so the FAQ now reads "NIRF #45 University". No
+  nirfYear is held for UPES, so no year was added.
+- **4. MBAHubClient top-10 cards:** IGNOU "Strongest government job eligibility" and LPU "at affordable price" are
+  deleted. Neither is provable: every UGC-DEB degree carries the same government-job standing, and LPU's 1,61,600 to
+  2,00,000 sits mid-table.
+- **5. editorialGuide:** grep over the repo (ts, tsx, js, mjs, mts, json) finds the name only in lib/content.ts, and
+  the base build HTML had 0 hits for its text. All 10 template literals and both interface fields are deleted (186
+  lines), including the "Rs 1.5 Lakh to Rs 4 Lakh" and "Rs 70,000 to Rs 1.8 Lakh" ranges.
+- **6. Batch 8 misses, same defect class (cross-university fee floors):**
+  - MBAHubClient intro: "fees ranging from Rs 10,000 to Rs 3.70 lakh" was written as HTML entities, which the batch 8
+    detector missed. It was false: the getExactFee floor is Rs 50,000. Deleted.
+  - The spec pages' "Fee Range" stat card printed min(feeMin) to max(feeMax) over UNIS_SLIM, a derived floor that
+    includes the 60,000 placeholder. The card is deleted, along with the two consts that fed it.
+- **Counts** (source, then prerendered HTML; /programs/mba is on-demand and was fetched from next start before and after):
+  - Pay claims: hub cards, table and survey sentence 12/12 -> 0/0; home 6/6 -> 0/0; salary calculator 9/8 -> 0/0 (the "30-50%" line
+    renders only after a toggle); spec salaryRange, FAQs and stats 19/83 -> 0/0.
+  - Coupon strings 6/6 -> 0/0. UPES 1/4 -> 0/0. Hub superlatives 2/2 -> 0/0. editorialGuide 14/0 -> 0/0.
+  - Batch 8 misses 2/8 -> 0/0.
+- **Listed, not changed:**
+  - The spec page university table prints raw UNIS_SLIM feeMin/feeMax per university (formatFeeSlim), bypassing
+    getExactFee. This needs template wiring, not a deletion.
+  - Other spec why-2026 market stats (CAGR, market size, UPI volume, GDP share) and the FinTech "premium packages"
+    line.
+  - The Business Analytics admission line "EMI options of Rs 5,000 to Rs 13,000".
+  - MBAHubClient FAQ "Merit-based scholarships (5-25% fee waiver)".
+  - The IGNOU coupon "does not offer formal EMI", which contradicts lib/data.ts emiFrom 400.
+  - Coupon peerComparisons figures that differ from getExactFee, for example "LPU (Rs 1,61,000)" against 1,61,600.
+  - The salary calculator's typed ROLES data and multipliers (see item 1).
+
 ## 2026-11-26 · B3 batch 8: site-wide fee floors and "lowest/cheapest" claims outside the blog body (branch fix/b3-batch-8)
 
 - **Source:** audits/OPERATING-PLAN.md status line "Next (B3 batch 8)" and the batch 7 QA. Facts checked only against

@@ -29,21 +29,11 @@ const TOP_10_PICKS = [
   { id: 'amrita-vishwa-vidyapeetham-online', bestFor: 'NIRF #26 Management. NAAC A++. Grant Thornton co-branded Analytics, FinTech, and ESG tracks.' },
   { id: 'chandigarh-university-online', bestFor: 'NIRF #32 Management. NAAC A+. Bundled Harvard Business Publishing, PwC, and PMI certifications at no extra cost.' },
   { id: 'upes-online', bestFor: 'NIRF #36 Management. Strong in Oil and Gas, Energy, and Logistics specialisations. Industry-integrated curriculum.' },
-  { id: 'lovely-professional-university-online', bestFor: 'NIRF #44 Management. NAAC A++. Tech-driven LMS at affordable price. Strong North India alumni network.' },
+  { id: 'lovely-professional-university-online', bestFor: 'NIRF #44 Management. NAAC A++. Tech-driven LMS. Strong North India alumni network.' },
   { id: 'amity-university-online', bestFor: 'NIRF #49 Management. WASC (USA) + QAA (UK) + WES recognized. Best for international career mobility.' },
   { id: 'manipal-academy-higher-education-online', bestFor: 'NIRF #4 University. NAAC A++. Strongest Manipal brand prestige. Ideal for South India and healthcare careers.' },
   { id: 'jain-university-online', bestFor: 'NIRF #73 Management. NAAC A++. 16 specialisations with ACCA integration. Strong Bangalore tech ecosystem.' },
-  { id: 'ignou-online', bestFor: 'Central government university. NAAC A++. Strongest government job eligibility.' },
-]
-
-const SALARY_DATA = [
-  { spec: 'Finance', range: '6-15 LPA', growth: 'High' },
-  { spec: 'Business Analytics', range: '7-14 LPA', growth: 'High' },
-  { spec: 'IT / Tech-MBA', range: '8-18 LPA', growth: 'High' },
-  { spec: 'Marketing', range: '6-12 LPA', growth: 'Medium' },
-  { spec: 'Operations', range: '6-12 LPA', growth: 'Medium' },
-  { spec: 'HR Management', range: '5-10 LPA', growth: 'Stable' },
-  { spec: 'Healthcare Mgmt', range: '6-11 LPA', growth: 'Growing' },
+  { id: 'ignou-online', bestFor: 'Central government university. NAAC A++.' },
 ]
 
 const FEE_FAQ_Q = 'How much does online MBA cost in India in 2026?'
@@ -161,8 +151,8 @@ export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
       {/* Editorial Intro */}
       <section className="max-w-3xl mx-auto px-4 py-10">
         <p className="text-base text-slate-700 leading-relaxed mb-6">
-          Choosing an online MBA in India means navigating {mbaUnis.length}+ UGC-DEB approved universities with fees ranging from
-          {' '}&#8377;10,000 to &#8377;3.70 lakh. This page compares every approved online MBA programme by NIRF rank, NAAC grade,
+          Choosing an online MBA in India means navigating {mbaUnis.length}+ UGC-DEB approved universities.
+          This page compares every approved online MBA programme by NIRF rank, NAAC grade,
           total fees, specializations offered, and student reviews. Whether you are looking for the cheapest online MBA, the
           highest-ranked option, or a specific specialization like Finance or Healthcare, use the filters below to narrow your
           search. edifyedu.in earns zero commissions from any university. Our rankings are based on verified data from UGC-DEB,
@@ -264,7 +254,7 @@ export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
       {/* Specialisations Grid */}
       <section id="specialisations" className="max-w-6xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold mb-1" style={{ color: '#0B1533' }}>Browse by Specialisation</h2>
-        <p className="text-sm text-slate-500 mb-6">Dedicated comparison pages for each MBA specialisation with syllabus, career scope, and salary data.</p>
+        <p className="text-sm text-slate-500 mb-6">Dedicated comparison pages for each MBA specialisation with syllabus and career scope.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {specWithCounts.map(({ spec, uniCount, feeFloor: sf }) => (
             <SpecCard key={spec.slug} spec={spec} uniCount={uniCount} feeFloorText={sf ? formatINR(sf) : null} />
@@ -279,46 +269,8 @@ export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
           Online MBA Salary in India 2026 -- What Can You Expect?
         </h2>
         <p className="text-sm text-slate-600 leading-relaxed mb-4">
-          Salary after an online MBA depends on three factors: your prior work experience, the specialisation you choose, and how actively you pursue new opportunities. The degree itself does not guarantee a salary jump. Here are realistic numbers based on industry surveys and our student feedback.
+          Salary after an online MBA depends on three factors: your prior work experience, the specialisation you choose, and how actively you pursue new opportunities. The degree itself does not guarantee a salary jump.
         </p>
-
-        <div className="grid md:grid-cols-3 gap-4 mb-6">
-          <div className="rounded-xl border border-slate-200 bg-white p-5">
-            <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Freshers (0-1 yr)</p>
-            <p className="text-2xl font-extrabold" style={{ color: '#0B1533' }}>Rs 3-6 LPA</p>
-            <p className="text-xs text-slate-500 mt-1">Entry-level management trainee, business analyst, or executive roles</p>
-          </div>
-          <div className="rounded-xl border border-amber-200 bg-amber-50 p-5">
-            <p className="text-xs font-bold text-amber-600 uppercase tracking-wider mb-2">Mid-Career (2-5 yr)</p>
-            <p className="text-2xl font-extrabold" style={{ color: '#0B1533' }}>Rs 6-12 LPA</p>
-            <p className="text-xs text-slate-600 mt-1">Career switch or promotion to manager, team lead, or senior analyst</p>
-          </div>
-          <div className="rounded-xl border border-slate-200 bg-white p-5">
-            <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Senior (5+ yr)</p>
-            <p className="text-2xl font-extrabold" style={{ color: '#0B1533' }}>Rs 10-25 LPA</p>
-            <p className="text-xs text-slate-500 mt-1">Director, VP, or senior management roles leveraging MBA credential</p>
-          </div>
-        </div>
-
-        <h3 className="text-lg font-bold mb-3" style={{ color: '#0B1533' }}>Salary by Specialisation</h3>
-        <div className="rounded-xl border border-slate-200 overflow-hidden mb-6">
-          <table className="w-full text-sm">
-            <thead><tr className="bg-slate-50"><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Specialisation</th><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Salary Range</th><th className="px-4 py-2.5 text-left font-semibold text-slate-700">Demand</th></tr></thead>
-            <tbody>
-              {SALARY_DATA.map((s, i) => (
-                <tr key={s.spec} className={i % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
-                  <td className="px-4 py-2 text-slate-700 font-medium">{s.spec}</td>
-                  <td className="px-4 py-2 text-slate-600">Rs {s.range}</td>
-                  <td className="px-4 py-2">
-                    <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${s.growth === 'High' ? 'bg-green-100 text-green-800' : s.growth === 'Growing' ? 'bg-blue-100 text-blue-800' : 'bg-slate-100 text-slate-600'}`}>
-                      {s.growth}
-                    </span>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
 
         <p className="text-sm text-slate-600 leading-relaxed">
           <strong>Honest disclaimer:</strong> Online MBA placement assistance varies by university. Most salary growth comes from internal promotions or self-directed job search via LinkedIn and professional networks, not university placement cells. Universities that claim "100% placement" for online programmes should be treated with scepticism.

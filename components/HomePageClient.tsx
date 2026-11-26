@@ -85,7 +85,7 @@ export default function HomePageClient({ cardFees }: { cardFees: CardFees }) {
           {
             '@type':'Question',
             name:'Is an online MBA worth it for working professionals?',
-            acceptedAnswer:{'@type':'Answer',text:'Yes, especially from NIRF top-50 universities. Most professionals see a 30-50% salary jump within 2 years of completing an online MBA. Pick NAAC A+ or A++ universities with placement support for best ROI.'}
+            acceptedAnswer:{'@type':'Answer',text:'Yes, especially from NIRF top-50 universities. Pick NAAC A+ or A++ universities with placement support for best ROI.'}
           },
           {
             '@type':'Question',
@@ -95,7 +95,7 @@ export default function HomePageClient({ cardFees }: { cardFees: CardFees }) {
           {
             '@type':'Question',
             name:'Which is better: Finance MBA or Marketing MBA?',
-            acceptedAnswer:{'@type':'Answer',text:'Finance MBA is stronger for BFSI sector careers with a higher salary ceiling of ₹8L–₹25L, and suits analytical profiles. Marketing MBA is stronger for FMCG, D2C, and tech roles with salaries of ₹7L–₹20L, and suits communication-oriented profiles. The right choice depends on your career target industry.'}
+            acceptedAnswer:{'@type':'Answer',text:'Finance MBA is stronger for BFSI sector careers and suits analytical profiles. Marketing MBA is stronger for FMCG, D2C, and tech roles and suits communication-oriented profiles. The right choice depends on your career target industry.'}
           },
         ]
       })}}/>
@@ -595,9 +595,9 @@ export default function HomePageClient({ cardFees }: { cardFees: CardFees }) {
           {[
             { q:'Are online degrees valid for government jobs?', a:'Yes, all UGC DEB approved degrees are valid for government recruitment. Every university on edifyedu.in is verified UGC DEB approved. The Ministry of Education confirmed parity in 2020.' },
             { q:'NIRF Overall vs NIRF Management rank, what is the difference?', a:'NIRF Overall ranks across all disciplines. NIRF Management specifically ranks MBA/BBA programs. A university can rank #50 overall but #8 in management, meaning its business school is far stronger than the overall rank suggests.' },
-            { q:'Is an online MBA worth it for working professionals?', a:'Yes, especially from NIRF top-50 universities. Most professionals see 30–50% salary jump within 2 years. Pick NAAC A+ or A++ with placement support for best ROI.' },
+            { q:'Is an online MBA worth it for working professionals?', a:'Yes, especially from NIRF top-50 universities. Pick NAAC A+ or A++ with placement support for best ROI.' },
             { q:'What is UGC DEB approval and why does it matter?', a:'UGC DEB (Distance Education Bureau) licenses universities to offer online degrees. Only UGC DEB approved degrees are accepted for government jobs, corporate hiring, and further studies. Never join without verifying this, check ugc.ac.in.' },
-            { q:'Finance MBA vs Marketing MBA: which is better?', a:'Finance: stronger for BFSI sector, higher salary ceiling (₹8L–₹25L), suits analytical profiles. Marketing: stronger for FMCG/D2C/tech (₹7L–₹20L), suits communicators. Check job roles on each university page for exact company names.' },
+            { q:'Finance MBA vs Marketing MBA: which is better?', a:'Finance: stronger for BFSI sector, suits analytical profiles. Marketing: stronger for FMCG/D2C/tech, suits communicators. Check job roles on each university page for exact company names.' },
           ].map((faq, i) => (
             <details key={i} style={{ marginBottom:'10px', borderRadius:'var(--r-sm)', overflow:'hidden', background:'var(--surface)', border:'1px solid var(--border)' }}>
               <summary style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'16px 20px', cursor:'pointer', fontWeight:'600', fontSize:'14px', color:'var(--navy)', listStyle:'none' }}>
