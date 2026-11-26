@@ -84,6 +84,15 @@
   online-mba-with-placement-india-2026 (already 2026-11-26 from batch 11). Tag open/close counts are unchanged in all
   five.
 
+- **Round 2 (QA F1, audits/qa/2026-11-26-b3-batch-12-premerge.md):**
+  - Why: /fees descriptions, lede and WebPage schema still said "fees ... for 125 universities, with NAAC grade and EMI"
+    and "Total fee and EMI for 125+", counted from raw feeMin, while the rebuilt table shows a fee in 59 rows and an EMI
+    in 7. The copy contradicted the cells.
+  - What: new `published` count (rows whose cell is not "On request"). Meta, OG and Twitter descriptions now read "fees
+    across 143 UGC-DEB universities, with a published total fee for 59"; the lede reads "Published total fee for 59 of
+    143 ... the rest show On request"; the schema name and description use the same counts. EMI is no longer claimed.
+  - Kept: the title and H1 "125 Universities Compared" (title freeze). They still hold: the table compares all 143 rows.
+
 ## 2026-11-26 · B3 batch 11: highest-package claims, IGNOU EMI, stale JAIN and LPU coupon fees (branch fix/b3-batch-11)
 
 - **Source:** audits/verify/highest-package-2026-11-26.md (committed with this fix). It checked 28 highest-package

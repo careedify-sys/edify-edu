@@ -71,6 +71,11 @@ const feeCells: Record<string, FeeCell> = (() => {
   return out
 })()
 
+// B3 batch 12 QA F1: the descriptions, lede and schema count rows that actually show a
+// publishable fee, not rows with a raw feeMin. The title/H1 count is left as it was
+// (title freeze); it still holds because the table compares every row.
+const published = feesData.filter(u => feeCells[u.id].fee !== 'On request').length
+
 const programCounts = (() => {
   const counts: Record<string, number> = {}
   for (const u of feesData) for (const p of (u.programs || [])) counts[p] = (counts[p] || 0) + 1
@@ -83,7 +88,7 @@ const programCounts = (() => {
 // said MBA. The table is MBA-led but lists every university, hence "& Degree".
 export const metadata: Metadata = {
   title: { absolute: `Online MBA & Degree Fees ${year}: ${priced.length} Universities Compared` },
-  description: `Total online MBA and degree fees for ${priced.length} UGC-DEB universities in one table, with NAAC grade and EMI. Filter by programme and region. Fees are indicative.`,
+  description: `Online MBA and degree fees across ${feesData.length} UGC-DEB universities in one table, with a published total fee for ${published}. Filter by programme and region. Fees are indicative.`,
   keywords: [
     'online mba fees india 2026',
     'online degree fees comparison',
@@ -99,7 +104,7 @@ export const metadata: Metadata = {
   alternates: { canonical: `${BASE}/fees` },
   openGraph: {
     title: `Online MBA & Degree Fees ${year}: ${priced.length} Universities Compared`,
-    description: `Total online MBA and degree fees for ${priced.length} UGC-DEB universities, with NAAC grade and EMI. Fees are indicative.`,
+    description: `Online MBA and degree fees across ${feesData.length} UGC-DEB universities, with a published total fee for ${published}. Fees are indicative.`,
     url: `${BASE}/fees`,
     type: 'website',
     siteName: 'edifyedu.in',
@@ -108,7 +113,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: `Online MBA & Degree Fees ${year} | edifyedu.in`,
-    description: `Total online MBA and degree fees for ${priced.length} UGC-DEB universities, with NAAC grade and EMI. Fees are indicative.`,
+    description: `Online MBA and degree fees across ${feesData.length} UGC-DEB universities, with a published total fee for ${published}. Fees are indicative.`,
   },
   robots: { index: true, follow: true },
 }
@@ -183,8 +188,8 @@ function buildSchemas() {
   const webpage = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: `Online University Fees ${year}: Compare ${priced.length}+ Programs`,
-    description: `Compare fees and EMI for ${priced.length} UGC-DEB approved online degree programs`,
+    name: `Online University Fees ${year}: Compare ${feesData.length} Universities`,
+    description: `Published total fees for ${published} of ${feesData.length} UGC-DEB approved online universities`,
     url: `${BASE}/fees`,
     dateModified: new Date().toISOString().slice(0, 10),
     isPartOf: { '@type': 'WebSite', name: 'EdifyEdu', url: BASE },
@@ -223,7 +228,7 @@ export default function FeesPage() {
               Online MBA &amp; Degree Fees {year}: {priced.length} Universities Compared
             </h1>
             <p className="text-ink-2 text-sm md:text-base max-w-2xl">
-              Total fee and EMI for <strong>{priced.length}+</strong> UGC-DEB approved online degrees.
+              Published total fee for <strong>{published}</strong> of {feesData.length} UGC-DEB approved universities; the rest show "On request".
               Filter by program, NAAC grade, or region. Fees are indicative. Talk to our counsellor before applying.
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
