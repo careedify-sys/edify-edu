@@ -77,6 +77,12 @@
   - The UPES "#45 NIRF" FAQ on the Logistics spec page has no category.
   - The dead editorialGuide fields hold "Rs 1.5 to 4 Lakh" and "Rs 70,000 to 1.8 Lakh".
   - "Strongest government job eligibility" (IGNOU) and "at affordable price" (LPU) in MBAHubClient.
+- **Round 2 (QA F1, audits/qa/2026-11-26-b3-batch-8-premerge.md):**
+  - Why: the /programs/mba hero chip printed "Rs 50,000 to Rs 3,70,000" next to "121 Universities", so it read as
+    the floor and ceiling for all 121, but it only covers the MBAs we index that have a published fee. The FAQ and
+    answers block already scope the same range; the chip did not.
+  - What: the chip now reads "{range} across {N} MBAs we index", where N is fees.range.count, the same count the FAQ
+    uses. No figure was added or changed.
 
 ## 2026-11-25 · B3 batch 7: MUJ Coursera, /fees floor chip, guide pay claims, stale SMU fee, ad-spend stat, Galgotias URL (branch fix/b3-batch-7)
 

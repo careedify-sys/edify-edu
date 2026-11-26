@@ -138,7 +138,7 @@ export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
               <Layers size={14} className="text-amber-400" /> 150+ Specialisations
             </span>
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
-              <Wallet size={14} className="text-amber-400" /> {rangeText ?? 'Contact our counsellor for current fee details'}
+              <Wallet size={14} className="text-amber-400" /> {rangeText && fees.range ? `${rangeText} across ${fees.range.count} MBAs we index` : 'Contact our counsellor for current fee details'}
             </span>
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
               <BadgeCheck size={14} className="text-amber-400" /> NIRF 2025 Verified
