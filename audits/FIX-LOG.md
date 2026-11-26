@@ -78,6 +78,10 @@
     - JAIN: totalFee '₹1,60,000–₹2,98,000', totalFeeNum 160000, finalFee '... less up to Rs 5,000'.
     - LPU: '₹2,00,000 list', totalFeeNum 200000. LPU uses the getExactFee list figure rather than getDisplayFee's
       "₹1,61,000 to ₹2,00,000", because that range rounds the portal's ₹1,61,600 (lib/fees.ts says so).
+  - The stackExample strings on the same two records had the same stale fees, and nothing renders them either.
+    JAIN's "at Rs 1,96,000" now reads "at ₹1,60,000–₹2,98,000". LPU's "bring effective fee close to Rs 1,56,000"
+    was the stale 1,61,000 minus the coupon, so that clause is gone: "The coupon discount adds up to Rs 5,000 on
+    Tue/Sat."
   - No visible change: CouponPageCTA prints totalFee only for IGNOU.
 
 ## 2026-11-26 · B3 batch 10: spec-table fees through getExactFee, MAHE NIRF card, coupon peer fees, last pay and market claims (branch fix/b3-batch-10)

@@ -190,7 +190,7 @@ export const COUPON_PAGES: CouponPageData[] = [
       { type: '20% placement-linked grant', eligibility: 'All students', saving: 'Built into fee structure', howToApply: 'Automatic - included in advertised fee' },
       { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code LPU2026-5K during enrollment call' },
     ],
-    stackExample: 'LPU already includes a 20% placement-linked grant in its advertised fee. Additional savings through the coupon discount (up to Rs 5,000 on Tue/Sat) bring effective fee close to Rs 1,56,000.',
+    stackExample: 'LPU already includes a 20% placement-linked grant in its advertised fee. The coupon discount adds up to Rs 5,000 on Tue/Sat.',
     emiCompatible: 'Yes. LPU offers semester-wise and EMI payment options after the coupon discount is applied.',
     exclusions: ['Does not reduce exam fees', 'Cannot combine with other third-party offers'],
     faqs: [
@@ -336,7 +336,7 @@ export const COUPON_PAGES: CouponPageData[] = [
       { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code JAIN2026-5K during enrollment call' },
       { type: 'Merit scholarship', eligibility: '60%+ graduation', saving: '10-20%', howToApply: 'Automatic during admission' },
     ],
-    stackExample: 'JAIN offers NAAC A++ at Rs 1,96,000 with 16 specializations and ACCA integration. The coupon discount adds up to Rs 5,000 on Tue/Sat on top of any merit scholarship.',
+    stackExample: 'JAIN offers NAAC A++ at ₹1,60,000–₹2,98,000 with 16 specializations and ACCA integration. The coupon discount adds up to Rs 5,000 on Tue/Sat on top of any merit scholarship.',
     emiCompatible: 'Yes. JAIN offers EMI options on the reduced fee.',
     exclusions: ['Does not reduce ACCA track premium', 'Cannot combine with other third-party offers'],
     faqs: [
