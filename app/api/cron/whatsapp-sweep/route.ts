@@ -13,7 +13,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { timingSafeEqual } from 'crypto'
 import { errorClass } from '@/lib/whatsapp/ingest'
 import {
-  supabaseEventStore, retryIds, purgeRawBodies, exhaustedCount, whatsappServiceClient,
+  supabaseEventStore, retryIds, purgeRawBodies, exhaustedCount, whatsappServiceClient, recordSweep,
 } from '@/lib/whatsapp/store'
 
 export const dynamic = 'force-dynamic'
@@ -66,11 +66,13 @@ export async function GET(req: NextRequest) {
     counts.exhausted = await exhaustedCount(sb)
   } catch (err) {
     console.error('[whatsapp-sweep] failed', errorClass(err))
+    await recordSweep(sb, { at: new Date().toISOString(), ok: false, ms: Date.now() - started, ...counts })
     return NextResponse.json({ error: 'Sweep failed', ...counts }, { status: 500 })
   }
 
   if (counts.retried || counts.purged || counts.exhausted) {
     console.info('[whatsapp-sweep]', JSON.stringify(counts))
   }
+  await recordSweep(sb, { at: new Date().toISOString(), ok: true, ms: Date.now() - started, ...counts })
   return NextResponse.json(counts, { headers: { 'Cache-Control': 'no-store' } })
 }

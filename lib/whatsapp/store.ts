@@ -60,3 +60,12 @@ export async function exhaustedCount(sb: Sb): Promise<number> {
 }
 
 export { client as whatsappServiceClient }
+
+// Requirement 8: the sweeper records each run so the inbox can show when it
+// last ran without anyone opening Vercel logs. Counts only. Best effort: a
+// failed write never fails the sweep.
+export async function recordSweep(sb: Sb, value: Record<string, unknown>): Promise<void> {
+  try {
+    await sb.from('wa_settings').upsert({ key: 'last_sweep', value, updated_at: new Date().toISOString() })
+  } catch { /* the next run tries again */ }
+}

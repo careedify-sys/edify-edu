@@ -501,8 +501,8 @@ Manual end-to-end test after deploy: Rishi's own second phone only. No student i
 
 | # | Blocker | Why | Rishi's action |
 |---|---|---|---|
-| B1 | Link `CRON_SECRET` to edify-edu-dh2m | The sweeper cron needs it, and the existing daily call-list email has been failing with 401 because of it | Vercel, team env vars, `CRON_SECRET`, link to edify-edu-dh2m, Production. Redeploy comes with the next merge. |
-| B2 | Confirm WhatsApp env vars | I could not read env state from this session | In Vercel, edify-edu-dh2m, Settings, Environment Variables, confirm `WHATSAPP_ACCESS_TOKEN`, `WHATSAPP_PHONE_NUMBER_ID`, `WHATSAPP_BUSINESS_ACCOUNT_ID` are present for Production, linked to this project (not only shared), and Sensitive. |
+| B1 | Link `CRON_SECRET` to edify-edu-dh2m | The sweeper cron needs it | **DONE 26 Nov.** Rishi linked it and redeployed; the sweep answers 401 without the secret. |
+| B2 | Confirm WhatsApp env vars | I could not read env state from this session | **APPROVED 26 Nov, Option A plus deployment verification.** Phase 2 adds an authenticated, read-only connection test in the inbox settings panel. It reports each of `WHATSAPP_ACCESS_TOKEN`, `WHATSAPP_PHONE_NUMBER_ID` and `WHATSAPP_BUSINESS_ACCOUNT_ID` as present, missing or wrong, without printing any value. |
 | B3 | Supabase plan and size | Sizing and retention assume the free tier's 500 MB | Tell me the plan, or paste the database size from Supabase, Settings, Usage. |
 | B4 | Test database | Tests must never touch production | No longer blocking: Phase 1 SQL is tested on PGlite (Postgres in WebAssembly, single connection, installed outside the repo). A multi-connection concurrency test still needs a non-production Postgres: approve a free second Supabase project before Phase 2. |
 | B5 | Meta billing currency | Meta: eligible Indian customers must move messaging accounts to INR by 31 Dec 2026, or messages stop from 1 Jan 2027 | Check WhatsApp Manager, billing, for an INR notice and migrate if shown. |
@@ -514,13 +514,13 @@ Manual end-to-end test after deploy: Rishi's own second phone only. No student i
 | # | Decision | Recommendation |
 |---|---|---|
 | D1 | Where the inbox lives: `/admin/whatsapp` (your brief) or `/leads/whatsapp` | **APPROVED 26 Nov (Rishi, in chat): `/leads/whatsapp`.** `app/admin/` is the retired CMS that CLAUDE.md says not to touch, and its layout would wrap our pages. `/leads/` already has the guard, noindex headers and CRM styling. |
-| D2 | Who uses the inbox | If only you: keep the shared login for Phases 1 and 2. If counsellors will log in: add per-user accounts (email + OTP, a `admin_users` table, signed per-user session) as a small Phase 2a, so every send is attributed. |
+| D2 | Who uses the inbox | **APPROVED 26 Nov, Option A.** Rishi counsels alone for now. Keep the existing CRM login; no rewrite. Phase 2 records `sent_by`, `actor` on notes and the audit log, and routes every permission check through one `can(actor, action)` helper, so per-counsellor accounts and roles can be added later without touching each action. |
 | D3 | Lead auto-linking | Auto-link a contact to a lead when the phone digits match exactly; everything else manual. |
-| D4 | Access token type | System User token with only `whatsapp_business_messaging` and `whatsapp_business_management`. Confirm the token in Vercel is that kind and not a 24-hour or personal token. |
+| D4 | Access token type | **APPROVED 26 Nov, Option C.** Use a restricted System User token. First validate the existing token through `debug_token` (type, expiry, scopes, granted WABA and phone number) without revealing it. Rotate only if it fails those checks. |
 | D5 | Deploy batching | Ship Phases 1 and 2 together as one deploy, so the inbox arrives with the storage it reads. |
-| D6 | Spend controls for replies | Set a monthly cap for billed service messages (for example "stop sending after 1,000 free + N billed"), and enter INR rates from Meta's rate card in settings. I will not hardcode rates. |
+| D6 | Spend controls for replies | **APPROVED 26 Nov, Option C, cap ₹500 a month.** The cap is a setting; only the owner can override it, and every override goes to the audit log. The inbox shows free messages, paid messages, estimated charges and remaining budget. Rates verified 26 Nov from Meta's official INR rate card, effective 1 Oct 2026, India row: Service ₹0.115, Utility ₹0.115, Authentication ₹0.115, Authentication-International ₹2.4971, Marketing ₹0.8631 per delivered message. They are stored as settings with source and effective date, not in code. The 1,000 free service messages per number per month is also a setting, because Meta can change pricing on the first day of any quarter. |
 | D7 | Retention | As in Section 3: raw payloads 30 days, messages 24 months, consent while the contact exists + 3 years, audit 3 years. |
-| D8 | Privacy policy and consent wording | Approve an edit to `/privacy-policy` describing WhatsApp message storage, purpose, retention and opt-out, and confirm the lead-form wording counts as consent for service replies and counselling calls only. |
+| D8 | Privacy policy and consent wording | **APPROVED 26 Nov, Option A with consent safeguards.** Update `/privacy-policy` for WhatsApp storage, retention, phone collection, counselling, opt-out, deletion and third-party processors. Lead forms stay unchanged for now; their consent wording is reviewed and reported. Starting a chat is NOT treated as promotional or calling consent: call consent is recorded explicitly, with source and evidence, per contact. |
 | D9 | Media archiving | Off. Fetch media on demand only; revisit Supabase Storage if counsellors need documents kept. |
 | D10 | Read receipts to students | Do not send blue ticks automatically when an admin opens a thread; add a "Mark read on WhatsApp" button instead. |
 | D11 | Campaign approvals | Phase 5 launch requires two clicks with the recipient count and estimated cost on screen, plus a typed confirmation for any campaign above a threshold you choose. |
@@ -528,7 +528,7 @@ Manual end-to-end test after deploy: Rishi's own second phone only. No student i
 
 ### Not blocked, ready to start on approval
 
-Phase 1 code and tests can start as soon as D1 and B4 are answered. Nothing touches production until the migration is run and the branch passes QA.
+Phase 1 is live (dcbf994). Phase 2 started 26 Nov on `feat/wa-2-inbox` after D2, D4, D6, D8 and B2 were approved. Rishi's 10 mandatory Phase 2 requirements: full phone shown whenever Meta provides it; Call Now and Copy Number; voluntary phone sharing for username or BSUID contacts; link conversations to CRM leads; create a lead from the inbox; call reminders, outcomes and follow-up notes; exact edifyedu.in branding; verify the retry cron actually runs; minimise hosting and database use; no automated replies or bulk campaigns. Nothing ships until QA passes, Rishi runs the Phase 2 migration and pastes a verification query result, and Rishi approves the deploy.
 
 ---
 
@@ -537,6 +537,7 @@ Phase 1 code and tests can start as soon as D1 and B4 are answered. Nothing touc
 - Meta, Business-scoped user IDs: https://developers.facebook.com/documentation/business-messaging/whatsapp/business-scoped-user-ids/
 - Meta, WhatsApp pricing: https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing
 - Meta, non-template message pricing (1 Oct 2026): https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/non-template-messages
+- Meta, INR list rates (effective 1 Oct 2026), linked from the pricing page as "INR list rates"; India row read 26 Nov 2026.
 - Meta, Cloud API changelog: https://developers.facebook.com/documentation/business-messaging/whatsapp/changelog
 - Meta, Graph API v26.0: https://developers.facebook.com/docs/graph-api/changelog/version26.0
 - Meta, Cloud API Calling: https://developers.facebook.com/documentation/business-messaging/whatsapp/calling

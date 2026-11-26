@@ -255,7 +255,7 @@ await test('RLS: anon and authenticated see no rows and cannot call functions', 
 })
 
 await test('kill switches seeded off', async () => {
-  const r = (await db.query<any>(`select key, value from wa_settings order by key`)).rows
+  const r = (await db.query<any>(`select key, value from wa_settings where key like '%\\_enabled' order by key`)).rows
   assert.deepEqual(r.map((x: any) => [x.key, x.value]), [['automation_enabled', false], ['campaigns_enabled', false], ['sending_enabled', false]])
 })
 
@@ -378,8 +378,132 @@ await test('end to end: signed POST through handleWebhookPost into the real sche
   assert.equal(bad.status, 401)
 })
 
+// ── Phase 2: inbox migration (20261202120000_whatsapp_inbox.sql) ─────────────
+
+await test('P2: inbox migration is idempotent and seeds verified settings', async () => {
+  await db.exec(readFileSync(join(MIG_DIR, readdirSync(MIG_DIR).find(f => f.endsWith('whatsapp_inbox.sql'))!), 'utf8'))
+  const keys = (await db.query<{ key: string }>('select key from wa_settings order by key')).rows.map(r => r.key)
+  assert.deepEqual(keys, ['automation_enabled', 'billing_timezone', 'campaigns_enabled', 'cap_override', 'free_service_allowance', 'last_sweep', 'monthly_cap_inr', 'rates', 'sending_enabled'])
+  const rates = (await one<{ value: any }>(`select value from wa_settings where key = 'rates'`)).value
+  assert.equal(rates.service, 0.115)
+  assert.equal(rates.marketing, 0.8631)
+  assert.equal(rates.effective_from, '2026-10-01')
+  assert.equal((await one<{ value: any }>(`select value from wa_settings where key = 'monthly_cap_inr'`)).value, 500)
+})
+
+await test('P2: list searches name, username, phone digits and lead name; % is literal', async () => {
+  await deliver(buildPayload({ messages: [inboundText({ id: 'wamid.L1', from: '919800000101', text: 'fees 50% off?', name: 'Kavya Rao' })] }))
+  await deliver(buildPayload({ messages: [inboundText({ id: 'wamid.L2', fromUserId: 'IN.LISTUSER2', text: 'hi', name: 'Zed', username: 'zed_learns' })] }))
+  const lead = await one<{ id: string }>(`insert into leads (name, phone) values ('Meera Lead', '919800000102') returning id`)
+  await deliver(buildPayload({ messages: [inboundText({ id: 'wamid.L3', from: '919800000102', text: 'call me', name: 'M' })] }))
+  await db.query(`update wa_contacts set lead_id = $1, lead_link_method = 'manual' where phone_e164 = '+919800000102'`, [lead.id])
+  const search = async (s: string) => (await db.query<any>('select * from wa_list_conversations(null, $1, false, null, null, 50)', [s])).rows
+  assert.equal((await search('kavya'))[0].profile_name, 'Kavya Rao')
+  assert.equal((await search('zed_l'))[0].username, 'zed_learns')
+  assert.equal((await search('0000101'))[0].phone_e164, '+919800000101')
+  assert.equal((await search('meera'))[0].lead_name, 'Meera Lead')
+  assert.equal((await search('%')).length, 0, 'a bare % must not match everything')
+  assert.equal((await search('z_d')).length, 0, '_ must not act as a wildcard')
+})
+
+await test('P2: unread filter and keyset paging return each row once', async () => {
+  const all = (await db.query<any>('select * from wa_list_conversations(null, null, false, null, null, 50)')).rows
+  assert.ok(all.length >= 3)
+  const seen: string[] = []
+  let at: string | null = null, id: string | null = null
+  for (;;) {
+    const page = (await db.query<any>('select * from wa_list_conversations(null, null, false, $1, $2, 2)', [at, id])).rows
+    if (!page.length) break
+    for (const r of page) seen.push(r.id)
+    const last = page[page.length - 1]
+    at = last.last_message_at; id = last.id
+  }
+  assert.deepEqual(seen, all.map((r: any) => r.id))
+  await db.query(`update wa_conversations set unread_count = 0`)
+  await db.query(`update wa_conversations set unread_count = 2 where id = $1`, [all[0].id])
+  const unread = (await db.query<any>('select * from wa_list_conversations(null, null, true, null, null, 50)')).rows
+  assert.deepEqual(unread.map((r: any) => r.id), [all[0].id])
+})
+
+await test('P2: lead lookup matches 91-prefixed and bare 10-digit phones only', async () => {
+  await db.query(`insert into leads (name, phone) values ('Bare Ten', '9800000199')`)
+  const a = (await db.query<any>('select * from wa_leads_by_digits($1)', ['919800000199'])).rows
+  assert.deepEqual(a.map((r: any) => r.name), ['Bare Ten'])
+  const b = (await db.query<any>('select * from wa_leads_by_digits($1)', ['919800000102'])).rows
+  assert.deepEqual(b.map((r: any) => r.name), ['Meera Lead'])
+  assert.equal((await db.query<any>('select * from wa_leads_by_digits($1)', ['9800000'])).rows.length, 0)
+})
+
+await test('P2: outbound is idempotent on client_ref and a status that arrives first is kept', async () => {
+  const conv = (await one<{ id: string }>(`select cv.id from wa_conversations cv join wa_contacts c on c.id = cv.contact_id where c.phone_e164 = '+919800000101'`)).id
+  const ref = '00000000-0000-4000-8000-000000000001'
+  const first = await one<any>('select * from wa_begin_outbound($1, $2, $3, $4, $5, $6)', [conv, ref, 'text', 'Fee details below', null, 'owner'])
+  const again = await one<any>('select * from wa_begin_outbound($1, $2, $3, $4, $5, $6)', [conv, ref, 'text', 'Fee details below', null, 'owner'])
+  assert.equal(first.is_new, true)
+  assert.equal(again.is_new, false)
+  assert.equal(again.message_id, first.message_id)
+  // Meta's 'delivered' webhook lands before our own call returns.
+  await deliver(buildPayload({ statuses: [statusEvent({ id: 'wamid.P2OUT1', status: 'delivered', recipient: '919800000101',
+    pricing: { billable: false, pricing_model: 'PMP', category: 'service', type: 'free_customer_service' } })] }))
+  await db.query('select wa_finish_outbound($1, $2, $3, null, null)', [ref, 'wamid.P2OUT1', 'accepted'])
+  const m = await one<any>('select status, status_rank, send_state from wa_messages where client_ref = $1', [ref])
+  assert.equal(m.status, 'delivered')
+  assert.equal(m.send_state, 'accepted')
+  assert.equal(await count(`select count(*) n from wa_messages where client_ref = $1`, [ref]), 1)
+  const cv = await one<any>('select last_message_preview from wa_conversations where id = $1', [conv])
+  assert.equal(cv.last_message_preview, 'Fee details below')
+  await assert.rejects(db.query('select wa_finish_outbound($1, null, $2, null, null)', [ref, 'sending']))
+})
+
+await test('P2: month usage counts delivered, in flight, failed and Meta billable', async () => {
+  const conv = (await one<{ id: string }>(`select cv.id from wa_conversations cv join wa_contacts c on c.id = cv.contact_id where c.phone_e164 = '+919800000101'`)).id
+  const mk = async (n: number, state: string, wamid: string | null) => {
+    const ref = `00000000-0000-4000-8000-0000000001${String(n).padStart(2, '0')}`
+    await db.query('select * from wa_begin_outbound($1, $2, $3, $4, null, $5)', [conv, ref, 'text', 'x', 'owner'])
+    await db.query('select wa_finish_outbound($1, $2, $3, null, null)', [ref, wamid, state])
+  }
+  const usage = async () => (await one<any>(`select wa_month_usage('Asia/Kolkata') as u`)).u
+  const before = await usage()
+  await mk(1, 'accepted', 'wamid.P2U1')     // in flight until a status arrives
+  await mk(2, 'failed', null)
+  await mk(3, 'unknown', null)            // timed out: may or may not have gone
+  await mk(4, 'accepted', 'wamid.P2U4')     // delivered below
+  await mk(5, 'accepted', 'wamid.P2U5')     // delivered, but last month
+  await db.query(`update wa_messages set created_at = now() - interval '40 days' where wamid = 'wamid.P2U5'`)
+  await db.query(`update wa_messages set type = 'template' where client_ref = '00000000-0000-4000-8000-000000000102'`)
+  for (const w of ['wamid.P2U4', 'wamid.P2U5']) {
+    await deliver(buildPayload({ statuses: [statusEvent({ id: w, status: 'delivered', recipient: '919800000101',
+      pricing: { billable: true, pricing_model: 'PMP', category: 'service', type: 'regular' } })] }))
+  }
+  const u = await usage()
+  const d = (k: string) => u[k] - before[k]
+  assert.equal(d('service_delivered'), 1, 'only this month, P2U4')
+  assert.equal(d('service_in_flight'), 2, 'P2U1 accepted + the unknown one')
+  assert.equal(d('service_failed'), 0, 'the failed one was turned into a template')
+  assert.equal(d('meta_billable'), 2, 'Meta status rows count by when they arrived')
+  assert.equal(d('meta_free'), 0)
+})
+
+await test('P2: anon and authenticated cannot call inbox functions; new tables have RLS', async () => {
+  for (const role of ['anon', 'authenticated']) {
+    await db.exec(`set role ${role}`)
+    try {
+      await assert.rejects(db.query(`select * from wa_list_conversations(null, null, false, null, null, 5)`))
+      await assert.rejects(db.query(`select wa_month_usage('Asia/Kolkata')`))
+      await assert.rejects(db.query(`select * from wa_leads_by_digits('919800000101')`))
+    } finally { await db.exec('reset role') }
+  }
+  for (const t of ['wa_notes', 'wa_consent', 'wa_audit_log']) {
+    const r = await one<{ rls: boolean }>(`select relrowsecurity rls from pg_class where relname = $1`, [t])
+    assert.equal(r.rls, true, t)
+  }
+})
+
 await test('down migration removes everything it added and nothing else', async () => {
   const before = await count(`select count(*) n from information_schema.tables where table_schema = 'public' and table_name not like 'wa\\_%'`)
+  // Real rollback order: Phase 2 first, because its tables reference Phase 1.
+  await db.exec(readFileSync(join(MIG_DIR, readdirSync(MIG_DIR).find(f => f.endsWith('whatsapp_inbox.down.sql'))!), 'utf8'))
+  assert.equal(await count(`select count(*) n from wa_settings`), 3, 'Phase 1 settings stay')
   await db.exec(readFileSync(join(MIG_DIR, readdirSync(MIG_DIR).find(f => f.endsWith('whatsapp_core.down.sql'))!), 'utf8'))
   assert.equal(await count(`select count(*) n from information_schema.tables where table_schema = 'public' and table_name like 'wa\\_%'`), 0)
   assert.equal(await count(`select count(*) n from pg_proc where proname like 'wa\\_%'`), 0)
