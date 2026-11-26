@@ -35,7 +35,7 @@ export interface UniProgramContent {
 export const PROGRAM_CONTENT: Partial<Record<string, ProgramContent>> = {
   'MBA': {
     metaTitle: 'Online MBA in India 2026: Specialisations, Careers & Salary | Edify',
-    metaDesc: 'Explore online MBA programs from NIRF-ranked universities. Finance, Marketing, HR, Data Science specialisations. UGC approved. Fees from ₹40K. Honest comparison, salary data and career outcomes.',
+    metaDesc: 'Explore online MBA programs from NIRF-ranked universities. Finance, Marketing, HR, Data Science specialisations. UGC approved. Honest comparison, salary data and career outcomes.',
     heroHeadline: 'Online MBA in India: Lead, Manage, Grow.',
     heroSubheadline: 'Earn a UGC-approved MBA from NIRF-ranked universities. Study finance, marketing, HR, operations or data science, without quitting your job.',
     overview: 'An online MBA lets you pick up a postgraduate management degree without quitting your job or relocating. In India, this used to mean distance learning, but UGC DEB-approved online MBA programs now carry the same legal standing as a regular campus degree. You get the credential, the skills, and the network. You keep your income.',
@@ -159,7 +159,7 @@ Don't choose based on a Facebook ad. Use edifyedu.in's independent data to compa
 
   'MCA': {
     metaTitle: 'Online MCA in India 2026: IT Careers, Skills & Salary | Edify',
-    metaDesc: 'Earn an online MCA from NIRF-ranked universities. Master software development, data science, cloud computing or cybersecurity. UGC approved. Fees from ₹35K. Launch or advance your IT career.',
+    metaDesc: 'Earn an online MCA from NIRF-ranked universities. Master software development, data science, cloud computing or cybersecurity. UGC approved. Launch or advance your IT career.',
     heroHeadline: 'Online MCA: Your Gateway to India\'s IT Industry.',
     heroSubheadline: 'Earn a UGC-approved Master of Computer Applications from top universities. Software, cloud, AI, cybersecurity, choose your specialisation. No engineering degree required.',
     overview: 'A Master of Computer Applications (MCA) is a two-year postgraduate degree training you in software development, system design, database management, and emerging technologies. It is the most direct path for BCA, BSc, BCom or BA graduates to enter India\'s IT sector, and for working IT professionals to formalise and advance their skills.',
@@ -272,7 +272,7 @@ Absolutely. As long as the university is **UGC DEB approved**, your degree is a 
 
   'BBA': {
     metaTitle: 'Online BBA in India 2026: Admissions, Careers & Salary | Edify',
-    metaDesc: 'Start your management journey with an online BBA from UGC-approved universities. Learn finance, marketing, HR and business fundamentals. 3-year degree. Fees from ₹28K. Build a business career from day one.',
+    metaDesc: 'Start your management journey with an online BBA from UGC-approved universities. Learn finance, marketing, HR and business fundamentals. 3-year degree. Build a business career from day one.',
     heroHeadline: 'Online BBA: Start Your Business Career Now.',
     heroSubheadline: 'Earn a UGC-approved Bachelor of Business Administration. Learn management, marketing, finance and leadership, while building real industry skills from Year 1.',
     overview: 'A Bachelor of Business Administration (BBA) is a 3-year undergraduate degree that gives you a structured foundation in business management, marketing, finance, and organisational behaviour. The online BBA is ideal for students who want to combine study with work, internships, or entrepreneurship, and for working professionals who want a formal degree to back their experience.',
@@ -373,7 +373,7 @@ BBA graduates in 2026 are entering roles like Business Development Executive, Ma
 
   'BCA': {
     metaTitle: 'Online BCA in India 2026: IT Skills, Careers & Salary | Edify',
-    metaDesc: 'Earn an online BCA from UGC-approved universities. Learn programming, web development, databases and networking. 3-year degree. Fees from ₹28K. Launch your IT career or prepare for MCA.',
+    metaDesc: 'Earn an online BCA from UGC-approved universities. Learn programming, web development, databases and networking. 3-year degree. Launch your IT career or prepare for MCA.',
     heroHeadline: 'Online BCA: Build Your IT Career from Scratch.',
     heroSubheadline: 'Learn programming, web development, databases, and networking through a UGC-approved BCA degree. No prior coding experience needed to apply.',
     overview: 'A Bachelor of Computer Applications (BCA) is a 3-year undergraduate IT degree open to students from any Class 12 stream. The online BCA gives you the flexibility to learn and build projects at your own schedule while earning a degree that IT companies recognise for entry-level developer, analyst, and support roles.',
@@ -474,7 +474,7 @@ BCA graduates in 2026 are highly sought after by IT giants like TCS and Wipro fo
 
   'BA': {
     metaTitle: 'Online BA in India 2026: Subjects, Careers & UPSC Guide | Edify',
-    metaDesc: 'Earn an online BA from UGC-approved universities. Study English, Psychology, Political Science, History, Journalism. 3-year degree. Fees from ₹18K. UPSC-eligible. Government-job valid options available.',
+    metaDesc: 'Earn an online BA from UGC-approved universities. Study English, Psychology, Political Science, History, Journalism. 3-year degree. UPSC-eligible. Government-job valid options available.',
     heroHeadline: 'Online BA: Knowledge That Opens Every Door.',
     heroSubheadline: 'UGC-approved Bachelor of Arts in English, Psychology, Political Science, History, Sociology and more, with full flexibility for UPSC preparation.',
     overview: 'A Bachelor of Arts (BA) is a 3-year undergraduate degree in humanities, social sciences, and liberal arts, one of the most flexible degrees in India. It qualifies you for UPSC civil services, teaching, journalism, public administration, law, MBA, and countless other career paths. The online BA gives you flexibility to study while pursuing work or competitive exam coaching.',
@@ -554,7 +554,7 @@ BCA graduates in 2026 are highly sought after by IT giants like TCS and Wipro fo
 
   'B.Com': {
     metaTitle: 'Online B.Com in India 2026: Accounting, Finance & Career Guide | Edify',
-    metaDesc: 'Earn an online B.Com from UGC-approved universities. Learn accounting, taxation, financial management and business law. 3-year degree. Fees from ₹20K. CA/CMA pathway. Government-job eligible options.',
+    metaDesc: 'Earn an online B.Com from UGC-approved universities. Learn accounting, taxation, financial management and business law. 3-year degree. CA/CMA pathway. Government-job eligible options.',
     heroHeadline: 'Online B.Com: Your Commerce and Finance Foundation.',
     heroSubheadline: 'Build expertise in accounting, taxation, financial management, and commerce, the foundation for CA, CMA, MBA, banking and finance careers.',
     overview: 'A Bachelor of Commerce (B.Com) is a 3-year undergraduate degree in accounting, taxation, finance, business law, and commercial economics. It is the most common path for commerce students in India, and a direct prerequisite for CA, CMA, CS, and commerce-focused MBA programs. The online B.Com is ideal for working professionals, school graduates, and career changers.',
@@ -648,7 +648,7 @@ Universities like **IGNOU (Online)**, **Amity**, and **Manipal** offer structure
 
   'M.Com': {
     metaTitle: 'Online M.Com in India 2026: Finance Careers, Skills & Salary | Edify',
-    metaDesc: 'Earn an online M.Com from UGC-approved universities. Specialise in accounting, taxation, financial management or banking. 2-year degree. Fees from ₹25K. UGC NET eligible. Advance your finance career.',
+    metaDesc: 'Earn an online M.Com from UGC-approved universities. Specialise in accounting, taxation, financial management or banking. 2-year degree. UGC NET eligible. Advance your finance career.',
     heroHeadline: 'Online M.Com: Master Commerce. Advance Your Finance Career.',
     heroSubheadline: 'Deepen your expertise in taxation, accounting, financial management and business economics with a UGC-approved Master of Commerce degree.',
     overview: 'A Master of Commerce (M.Com) is a 2-year postgraduate degree that deepens expertise in accounting, financial management, taxation, auditing, and business economics. It is the natural next step after B.Com for commerce professionals targeting lecturer/professor roles, senior accounting positions, or government finance services.',
@@ -739,7 +739,7 @@ In 2026, M.Com is no longer just "Higher Accounting." You can specialize in **Fi
 
   'MA': {
     metaTitle: 'Online MA in India 2026: Subjects, Careers & UGC NET Guide | Edify',
-    metaDesc: 'Earn an online MA from UGC-approved universities. Study English, Psychology, Political Science, History, Sociology or Journalism. 2-year PG degree. Fees from ₹18K. UGC NET eligible. UPSC career path.',
+    metaDesc: 'Earn an online MA from UGC-approved universities. Study English, Psychology, Political Science, History, Sociology or Journalism. 2-year PG degree. UGC NET eligible. UPSC career path.',
     heroHeadline: 'Online MA: Deepen Your Expertise. Open Doors to Teaching, Research & Public Service.',
     heroSubheadline: 'UGC-approved Master of Arts in English, Psychology, Political Science, History, Sociology, Public Administration and more. Study fully online at your own pace.',
     overview: 'A Master of Arts (MA) is a 2-year postgraduate degree in humanities, social sciences, and liberal arts. It deepens subject expertise and qualifies you for UGC NET (government college teaching), PhD programs, government administrative services, and specialised roles in journalism, counselling, policy, and research.',

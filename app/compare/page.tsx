@@ -86,7 +86,7 @@ const BBA_BCA_PAIRS = [
 const FAQS = [
   {
     q: 'Which online MBA is best in India in 2026?',
-    a: 'There is no single best: it depends on your budget, current qualification, and career goal. NMIMS and Symbiosis are premium options (₹1.5L–₹2.5L) with strong brand value. Amity, JAIN, and LPU offer good programs in the ₹60K–₹1.2L range. Use the comparison tool above to evaluate NIRF rank, NAAC grade, and specialisations side by side.',
+    a: 'There is no single best: it depends on your budget, current qualification, and career goal. NMIMS and Symbiosis are premium options with strong brand value. Use the comparison tool above to evaluate NIRF rank, NAAC grade, and specialisations side by side.',
   },
   {
     q: 'Is an online MBA valid for PSU and government jobs?',
@@ -102,7 +102,7 @@ const FAQS = [
   },
   {
     q: 'How much does an online MBA cost in India?',
-    a: 'Online MBA fees range from ₹40,000 (Kurukshetra, VTU) to ₹2.5L+ (NMIMS, Symbiosis). Most UGC DEB approved programs fall in the ₹70,000–₹1.5L range. Almost all universities offer semester-wise EMI plans starting from ₹4,000–₹8,000 per month, making the degree manageable even for working professionals. Use the EMI calculator in our tools section to estimate monthly outgo.',
+    a: 'Fees vary by university and specialisation, so compare total programme fees side by side in the tool above. Fees are indicative, so confirm the current figure with our counsellor. Many universities accept semester-wise payment or offer EMI plans. Use the EMI calculator in our tools section to estimate monthly outgo.',
   },
   {
     q: 'Can I compare more than two universities at once?',

@@ -249,7 +249,7 @@ export async function generateMetadata(
         ? `${uniCount}+ UGC-DEB online MBAs offer ${activeSpec}: ${topBrands || 'top NIRF-ranked colleges'}. Fees, syllabus, salary data, placements. Check eligibility free.`
         : `${uniCount}+ UGC-DEB online ${program} programs in ${activeSpec} ${year}. NIRF ranks, fees, syllabus, career outcomes and salary data. Check eligibility free.`
       : program === 'MBA'
-        ? `Compare ${uniCount} UGC-DEB approved online MBA universities in India. Fees from ₹10K to ₹3.7L. NIRF ranked. NAAC graded. Filter by specialization, fee, location. Zero-commission comparison by edifyedu.in.`
+        ? `Compare ${uniCount} UGC-DEB approved online MBA universities in India. NIRF ranked. NAAC graded. Filter by specialization, fee, location. Zero-commission comparison by edifyedu.in.`
         : `${hubUniCount} UGC-DEB approved online ${program} programs in India: real NIRF ranks, NAAC grades, verified fees, syllabus. Admissions ${year} open. Check eligibility.`)
   const description = clampDescription(rawDescription)
 

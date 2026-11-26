@@ -536,7 +536,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
             <div className="rounded-xl border border-red-200 bg-red-50 p-4">
               <p className="text-sm font-bold text-red-800 mb-2">Consider alternatives if:</p>
               <ul className="text-sm text-red-700 space-y-1">
-                <li>- You need the most budget-friendly option (<Link href="/coupons/ignou-online-mba-discount-coupon-2026" className="underline">explore IGNOU</Link>)</li>
+                {page.slug !== 'ignou-online-mba-discount-coupon-2026' && <li>- You prefer a central government university (<Link href="/coupons/ignou-online-mba-discount-coupon-2026" className="underline">explore IGNOU</Link>)</li>}
                 <li>- You need campus-style placement drives</li>
                 <li>- You want a specific specialisation not offered by {page.shortName}</li>
                 <li>- You need a physical campus experience</li>

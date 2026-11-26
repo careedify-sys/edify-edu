@@ -412,11 +412,11 @@ export const COUPON_PAGES: CouponPageData[] = [
       { type: 'No coupon', eligibility: 'All students', saving: 'Rs 66,000 total, no coupon runs on this programme', howToApply: 'Apply directly on ignou.ac.in' },
       { type: 'SC/ST fee concession', eligibility: 'SC/ST category candidates', saving: 'Reduced fee structure', howToApply: 'Submit caste certificate during admission' },
     ],
-    stackExample: 'IGNOU at Rs 66,000 is already the lowest-priced online MBA from a NAAC A++ university. No coupons are needed. The fee itself is the discount.',
+    stackExample: 'No coupons are needed.',
     emiCompatible: 'IGNOU does not offer formal EMI. Fee is paid semester-wise (Rs 14,000-16,000 per semester).',
     exclusions: ['No coupon system - IGNOU is a central government university with fixed fees'],
     faqs: [
-      { q: 'Is there an IGNOU online MBA coupon code?', a: 'No. IGNOU is a central government university with one of the lowest online MBA fees in India. No coupon code is needed or applicable.' },
+      { q: 'Is there an IGNOU online MBA coupon code?', a: 'No. IGNOU is a central government university. No coupon code is needed or applicable.' },
       { q: 'Why is IGNOU MBA so cheap?', a: 'IGNOU is funded by the Government of India and operates as a not-for-profit institution. The low fee reflects government subsidization, not lower quality.' },
       { q: 'Is IGNOU MBA valid for government jobs?', a: 'Yes. IGNOU holds NAAC A++ and is arguably the strongest online MBA for government job eligibility as a central university.' },
       { q: 'Should I choose IGNOU or Amity?', a: 'IGNOU for pure affordability and government job eligibility. Amity for structured LMS, live sessions, international accreditation (WASC+QAA), and many specialisations.' },
@@ -1029,7 +1029,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     peerComparisons: [
       { uni: 'IGNOU (Rs 66,000)', savings: 'No coupon, lower base fee' },
       { uni: 'Chandigarh (from Rs 1,75,125)', savings: 'Up to Rs 5,000 via CU2026-5K' },
-      { uni: 'JAIN (from Rs 1,75,000)', savings: 'Up to Rs 5,000 via JAIN2026-5K' },
+      { uni: 'JAIN', savings: 'Up to Rs 5,000 via JAIN2026-5K' },
       { uni: 'Amity (from Rs 2,07,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
     ],
   },

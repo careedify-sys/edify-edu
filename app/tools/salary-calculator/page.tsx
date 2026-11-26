@@ -213,7 +213,6 @@ export default function SalaryCalculatorPage() {
                 </div>
                 <p className="text-sm text-ink-2 mb-4">
                   An MBA from a top university can increase your salary by 30-50%. 
-                  Online MBA fees start from just ₹40,000.
                 </p>
                 <div className="space-y-2">
                   {topUnis.map(u => (

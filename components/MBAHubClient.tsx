@@ -33,7 +33,7 @@ const TOP_10_PICKS = [
   { id: 'amity-university-online', bestFor: 'NIRF #49 Management. WASC (USA) + QAA (UK) + WES recognized. Best for international career mobility.' },
   { id: 'manipal-academy-higher-education-online', bestFor: 'NIRF #4 University. NAAC A++. Strongest Manipal brand prestige. Ideal for South India and healthcare careers.' },
   { id: 'jain-university-online', bestFor: 'NIRF #73 Management. NAAC A++. 16 specialisations with ACCA integration. Strong Bangalore tech ecosystem.' },
-  { id: 'ignou-online', bestFor: 'Central government university. NAAC A++. Lowest fee at Rs 66,000. Strongest government job eligibility.' },
+  { id: 'ignou-online', bestFor: 'Central government university. NAAC A++. Strongest government job eligibility.' },
 ]
 
 const SALARY_DATA = [
@@ -318,18 +318,6 @@ export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
               ))}
             </tbody>
           </table>
-        </div>
-
-        <div className="rounded-xl border border-green-200 bg-green-50 p-5 mb-4">
-          <h4 className="font-bold text-green-900 mb-2">ROI Math Example</h4>
-          <ul className="text-sm text-green-800 space-y-1 list-none pl-0">
-            <li>Average mid-career fee: Rs 2,00,000</li>
-            <li>Pre-MBA salary: Rs 6 LPA</li>
-            <li>Post-MBA salary: Rs 8 LPA (33% increase)</li>
-            <li>Breakeven on fees: 12-18 months</li>
-            <li>5-year net ROI: Rs 8-12 lakh gain</li>
-          </ul>
-          <p className="text-xs text-green-700 mt-2">This ROI only applies if you actively pursue career growth post-MBA. Passive degree-holders see minimal returns.</p>
         </div>
 
         <p className="text-sm text-slate-600 leading-relaxed">

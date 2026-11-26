@@ -262,7 +262,7 @@ export default function UniversityComparisonPage() {
             </p>
             <h3 className="text-navy font-semibold mt-6 mb-2">4. Fee Structure</h3>
             <p>
-              Online {program} fees in India range from ₹40,000 to ₹4,00,000. Higher fees don't always mean 
+              Online {program} fees vary by university. Higher fees don't always mean 
               better quality. Compare the fee-to-ranking ratio for best value.
             </p>
           </div>

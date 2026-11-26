@@ -162,7 +162,7 @@ export default function EMICalculatorClient() {
                 <h3 className="font-bold text-navy">Compare University Fees</h3>
               </div>
               <p className="text-sm text-ink-2 mb-4">
-                Online MBA fees range from ₹40,000 to ₹4,00,000 depending on the university.
+                Online MBA fees vary by university and specialisation.
               </p>
               <div className="space-y-2">
                 {topUnis.slice(0, 4).map(u => (
@@ -191,7 +191,7 @@ export default function EMICalculatorClient() {
           <div className="prose prose-sm max-w-none text-ink-2">
             <p>
               Online degrees from UGC-DEB approved universities are eligible for education loans from all major banks.
-              With fees ranging from ₹40,000 to ₹4,00,000 for a complete program, most students can comfortably finance
+              Many students finance
               their education through EMI options.
             </p>
             <h3 className="text-navy font-semibold mt-6 mb-2">Lending Partners for Online Education</h3>

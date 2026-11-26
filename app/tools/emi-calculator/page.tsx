@@ -64,7 +64,7 @@ const faqSchema = {
       name: 'Is collateral required for an online MBA education loan?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'For loan amounts up to Rs 7.5 lakh, most banks do not require collateral. Loans above Rs 7.5 lakh may require collateral or a co-applicant guarantee. Since most online MBA programs cost between Rs 1-4 lakh, collateral is rarely needed.',
+        text: 'For loan amounts up to Rs 7.5 lakh, most banks do not require collateral. Loans above Rs 7.5 lakh may require collateral or a co-applicant guarantee.',
       },
     },
   ],

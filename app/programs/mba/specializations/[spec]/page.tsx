@@ -73,7 +73,7 @@ const SPECS: Record<string, SpecDef> = {
     careerBlogSlug: 'mba-hr-career-salary-scope-2026',
     faqs: [
       { q: 'Is an Online MBA HR Management degree valid in India?', a: 'Yes. UGC-DEB approved online MBA degrees carry the same legal standing as regular on-campus MBA degrees. They are accepted by government and private employers.' },
-      { q: 'Which online universities offer MBA HR Management?', a: 'MAHE, NMIMS, Amrita, JAIN, Chandigarh University, LPU, and over 20 other UGC-DEB approved universities offer MBA with HR Management specialisation. Fees range from ₹65K to ₹3.7L for the full programme.' },
+      { q: 'Which online universities offer MBA HR Management?', a: 'MAHE, NMIMS, Amrita, JAIN, Chandigarh University, LPU, and over 20 other UGC-DEB approved universities offer MBA with HR Management specialisation.' },
       { q: 'What is the salary after an Online MBA HR Management?', a: 'Entry-level HR roles pay ₹4L to ₹7L per annum. HR Managers with 3-5 years of experience earn ₹8L to ₹14L. Senior HRBP and CHRO-track roles command ₹15L to ₹25L.' },
       { q: 'Do I need work experience to join an Online MBA HR Management?', a: 'Most online programmes do not require prior work experience. However, universities like NMIMS and Symbiosis may prefer candidates with 1-2 years of experience.' },
       { q: 'How is Online MBA HR different from a PGDM in HR?', a: 'An Online MBA is a full degree awarded by a UGC-recognised university. A PGDM is a diploma, typically awarded by AICTE-approved autonomous institutes. For PSU recruitment and government jobs, a degree is generally preferred over a diploma.' },
@@ -110,7 +110,7 @@ const SPECS: Record<string, SpecDef> = {
     careerBlogSlug: 'mba-operations-management-career-2026',
     faqs: [
       { q: 'Is Online MBA Supply Chain Management UGC approved?', a: 'Yes, when offered by a UGC-DEB approved university. Always verify the university\'s approval status on deb.ugc.ac.in before enrolling.' },
-      { q: 'Which online universities offer MBA Supply Chain Management?', a: 'Chandigarh University, MAHE, UPES, Parul University, Symbiosis SSODL, MUJ, JAIN, and LPU are among the leading options. Fees range from ₹1.5L to ₹3.7L for the full 2-year programme.' },
+      { q: 'Which online universities offer MBA Supply Chain Management?', a: 'Chandigarh University, MAHE, UPES, Parul University, Symbiosis SSODL, MUJ, JAIN, and LPU are among the leading options.' },
       { q: 'What is the salary after an Online MBA SCM?', a: 'Entry-level supply chain roles pay ₹5L to ₹8L per annum. SCM Managers with 3-5 years\' experience earn ₹10L to ₹15L. Senior VP and CSCO roles command ₹18L to ₹30L.' },
       { q: 'Is MBA Operations Management the same as MBA SCM?', a: 'They overlap significantly but are not identical. Operations focuses on internal process management while SCM includes external vendor, logistics, and distribution networks. Some universities offer a combined Operations and Supply Chain specialisation.' },
       { q: 'What certifications complement an Online MBA SCM?', a: 'APICS CSCP, APICS CPIM, and Lean Six Sigma (Green Belt or Black Belt) are valued by recruiters in manufacturing, FMCG, and e-commerce fulfilment roles.' },
@@ -184,7 +184,7 @@ const SPECS: Record<string, SpecDef> = {
     careerBlogSlug: 'online-mba-hospital-healthcare-management-india-2026',
     faqs: [
       { q: 'Is Online MBA Healthcare Management valid for hospital jobs?', a: 'Yes. UGC-DEB approved online MBA degrees are recognised by hospitals, healthcare chains, and government health organisations across India.' },
-      { q: 'Which online universities offer MBA Healthcare Management?', a: 'MAHE, Parul University, Chandigarh University, Galgotias University, Symbiosis SSODL, and DY Patil University are among the leading options. Fees range from ₹60K to ₹3.7L for the full 2-year programme.' },
+      { q: 'Which online universities offer MBA Healthcare Management?', a: 'MAHE, Parul University, Chandigarh University, Galgotias University, Symbiosis SSODL, and DY Patil University are among the leading options.' },
       { q: 'Can a non-medical graduate do an MBA Healthcare Management?', a: 'Yes. Most universities accept graduates from any stream including commerce, science, engineering, and arts. A non-medical background is no barrier for hospital administration roles.' },
       { q: 'What is the salary after an Online MBA Healthcare Management?', a: 'Entry-level hospital administration roles pay ₹4L to ₹7L per annum. Operations managers earn ₹8L to ₹13L. CEO-track and cluster head roles in large hospital chains pay ₹15L to ₹25L.' },
       { q: 'Is MBA Healthcare Management the same as MHA (Masters in Hospital Administration)?', a: 'They are different. MHA is a specialised programme focused entirely on healthcare. MBA Healthcare Management is a general management degree with a healthcare specialisation. MBA has broader applicability across sectors if you later change direction.' },

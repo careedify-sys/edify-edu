@@ -124,7 +124,6 @@ export const GUIDES: Guide[] = [
 <tr><td style="padding:8px;border:1px solid #e0e0e0">Live classes</td><td style="padding:8px;border:1px solid #e0e0e0">Yes — weekend Zoom/Teams sessions</td><td style="padding:8px;border:1px solid #e0e0e0">Rarely — mostly self-study from printed/digital material</td></tr>
 <tr style="background:#fafafa"><td style="padding:8px;border:1px solid #e0e0e0">Faculty interaction</td><td style="padding:8px;border:1px solid #e0e0e0">Regular, via LMS and live sessions</td><td style="padding:8px;border:1px solid #e0e0e0">Minimal — contact programs 1–2x per semester</td></tr>
 <tr><td style="padding:8px;border:1px solid #e0e0e0">Exam mode</td><td style="padding:8px;border:1px solid #e0e0e0">Online proctored or exam centres</td><td style="padding:8px;border:1px solid #e0e0e0">Physical exam centres only</td></tr>
-<tr style="background:#fafafa"><td style="padding:8px;border:1px solid #e0e0e0">Fees</td><td style="padding:8px;border:1px solid #e0e0e0">₹1L–₹3L total</td><td style="padding:8px;border:1px solid #e0e0e0">₹30K–₹1L total (often cheaper)</td></tr>
 <tr><td style="padding:8px;border:1px solid #e0e0e0">UGC regulation</td><td style="padding:8px;border:1px solid #e0e0e0">UGC DEB Online mode</td><td style="padding:8px;border:1px solid #e0e0e0">UGC DEB ODL mode</td></tr>
 <tr style="background:#fafafa"><td style="padding:8px;border:1px solid #e0e0e0">Employer perception</td><td style="padding:8px;border:1px solid #e0e0e0">Generally better — seen as more rigorous</td><td style="padding:8px;border:1px solid #e0e0e0">Accepted but older stigma persists in some sectors</td></tr>
 <tr><td style="padding:8px;border:1px solid #e0e0e0">IGNOU, NMIMS DDE</td><td style="padding:8px;border:1px solid #e0e0e0">Not offered in distance mode</td><td style="padding:8px;border:1px solid #e0e0e0">Yes — these are classic distance programs</td></tr>
@@ -137,7 +136,7 @@ export const GUIDES: Guide[] = [
 
 <h2>Which One is Better?</h2>
 <p><strong>Online MBA is better if:</strong> you want structured learning with faculty access, you're targeting mid/senior corporate roles, or you want a more recent brand-name university on your CV (Amity, NMIMS, Symbiosis, MAHE).</p>
-<p><strong>Distance MBA is better if:</strong> budget is the primary constraint, you're completing a degree mainly for government job eligibility, or you're self-motivated and don't need live classes (IGNOU MBA is ₹31,500 total and fully valid).</p>
+<p><strong>Distance MBA is better if:</strong> budget is the primary constraint, you're completing a degree mainly for government job eligibility, or you're self-motivated and don't need live classes.</p>
 
 <h2>Does the Degree Certificate Look Different?</h2>
 <p>It depends on the university. Some print the mode of study on the certificate or transcript and some do not, so ask the admissions team for a sample certificate before you enrol. Either way, an online or distance degree from an approved university is legally valid.</p>
@@ -163,7 +162,7 @@ export const GUIDES: Guide[] = [
 <table style="width:100%;border-collapse:collapse;font-size:13px">
 <thead><tr style="background:#f5f5f5"><th style="padding:8px;text-align:left;border:1px solid #e0e0e0">Career goal</th><th style="padding:8px;text-align:left;border:1px solid #e0e0e0">Better mode</th><th style="padding:8px;text-align:left;border:1px solid #e0e0e0">Why</th></tr></thead>
 <tbody>
-<tr><td style="padding:8px;border:1px solid #e0e0e0">Government job eligibility (Bank PO, SSC CGL)</td><td style="padding:8px;border:1px solid #e0e0e0">Distance (IGNOU)</td><td style="padding:8px;border:1px solid #e0e0e0">Cheapest credential satisfying eligibility</td></tr>
+<tr><td style="padding:8px;border:1px solid #e0e0e0">Government job eligibility (Bank PO, SSC CGL)</td><td style="padding:8px;border:1px solid #e0e0e0">Distance (IGNOU)</td><td style="padding:8px;border:1px solid #e0e0e0">Meets eligibility when the university is UGC-approved</td></tr>
 <tr style="background:#fafafa"><td style="padding:8px;border:1px solid #e0e0e0">Internal promotion</td><td style="padding:8px;border:1px solid #e0e0e0">Either; choose by budget</td><td style="padding:8px;border:1px solid #e0e0e0">Both recognised</td></tr>
 <tr><td style="padding:8px;border:1px solid #e0e0e0">BFSI lateral move (mid-career)</td><td style="padding:8px;border:1px solid #e0e0e0">Online (NMIMS Online)</td><td style="padding:8px;border:1px solid #e0e0e0">Stronger brand signal for BFSI</td></tr>
 <tr style="background:#fafafa"><td style="padding:8px;border:1px solid #e0e0e0">Tech product or analytics pivot</td><td style="padding:8px;border:1px solid #e0e0e0">Online (JAIN or Chandigarh)</td><td style="padding:8px;border:1px solid #e0e0e0">Live classes plus specialisation depth</td></tr>

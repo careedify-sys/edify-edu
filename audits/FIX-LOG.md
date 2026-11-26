@@ -1,5 +1,83 @@
 # Fix log
 
+## 2026-11-26 · B3 batch 8: site-wide fee floors and "lowest/cheapest" claims outside the blog body (branch fix/b3-batch-8)
+
+- **Source:** audits/OPERATING-PLAN.md status line "Next (B3 batch 8)" and the batch 7 QA. Facts checked only against
+  lib/data.ts through getExactFee. No fee, rank, grade, salary, date or eligibility value was added; every fix deletes a
+  figure or a superlative, or swaps it for neutral wording. One single-pass script wrote all 17 files (CRLF kept).
+  On 26 Nov getExactFee publishes 56 MBA fees (65 have none): CSJMU Rs 50,000 to 1,20,000, DDU 52,500, Andhra 62,200,
+  IGNOU 66,000, Mangalayatan 67,000 at the bottom, and Symbiosis 3,15,000 to 3,70,000 at the top. Any typed "from Rs X",
+  "Rs X to Rs Y" or "lowest" across universities is therefore either false or unprovable over the 65 with no fee.
+  No blog post, title, seoTitle or protected page changed.
+- **1. MBAHubClient:**
+  - Why: "IGNOU ... Lowest fee at Rs 66,000" is false (CSJMU and DDU sit lower, Andhra too). The "ROI Math Example" box
+    printed a typed "Average mid-career fee: Rs 2,00,000" (a cross-university average with no source) and built invented
+    salary math on it.
+  - What: the lowest-fee sentence was deleted, and IGNOU keeps "Central government university. NAAC A++." The ROI box
+    was deleted whole, because the breakeven line made no sense without the fee line.
+  - Counts: source 2 -> 0; /programs/mba HTML (on-demand, fetched from next start) 2 -> 0.
+- **2. HomePageClient:**
+  - Why: "Online MBAs run Rs 60,000 to Rs 3,00,000" is false at both ends. "Budget Rs 1.5L to Rs 4L total" is a
+    derived range that the published fees contradict.
+  - What: both sentences deleted (visible FAQ and FAQPage LD).
+  - Counts: source 3 -> 0; index.html 3 -> 0.
+- **3. Typed floors in metadata, calculators and FAQs:**
+  - Why: each was a cross-university floor or range typed by hand, and none matched the published fees: Rs 60,000,
+    Rs 40K, Rs 10K to 3.7L, Rs 35K to 5L, Rs 40,000 to 4,00,000, Rs 1 to 4 lakh, and the spec FAQ Rs 65K, 1.5L or 60K
+    to 3.7L. Each is either below the real floor (Rs 50,000) or ignores the 65 MBAs with no fee.
+  - What: app/layout.tsx default description, OG and Twitter descriptions lost ": verified fees Rs 35K-5L" (this
+    reaches 147 pages that set no description of their own). The /compare layout description and OG lost "Total fees
+    from / Fees from Rs 60,000"; the page metadata overrides these, so the change is not visible in HTML. The
+    /universities description and OG lost " from Rs 40K". The /programs MBA fallback description lost "Fees from Rs 10K
+    to Rs 3.7L"; getProgramHubSeo overrides it, so it is not rendered. The 8 PROGRAM_CONTENT metaDesc strings in
+    lib/content.ts lost "Fees from Rs XK."; nothing reads that field, so this was a dead-field cleanup.
+  - What (tools): the EMI calculator side card and copy, the university-comparison fee paragraph, the EMI collateral
+    FAQ and the salary calculator "fees start from just Rs 40,000" line now carry no figure.
+  - What (spec FAQs): the "Fees range from ..." sentences were deleted from the HR, Supply Chain and Healthcare FAQs.
+  - Counts: source 24 -> 0; prerendered HTML 843 -> 0 (822 of them the root default description).
+- **4. Other cross-university fee claims:**
+  - Why: IGNOU "already the lowest-priced online MBA from a NAAC A++ university" and "one of the lowest online MBA fees
+    in India" are false: DDU 52,500, Andhra 62,200 and CSJMU are all NAAC A++ and below 66,000. The coupon template
+    "Consider alternatives if you need the most budget-friendly option (explore IGNOU)" made the same claim on 24 coupon
+    pages. Several other claims had no source:
+    - the /compare FAQ ranges ("Rs 40,000 (Kurukshetra, VTU)"; Kurukshetra publishes 1,02,000);
+    - "Amity, JAIN, and LPU ... Rs 60K to Rs 1.2L" (Amity publishes 2,07,000);
+    - "NMIMS and Symbiosis Rs 1.5L to 2.5L" (Symbiosis publishes 3,15,000);
+    - "EMI from Rs 4,000 to 8,000";
+    - the vs-distance guide's "Rs 1L to 3L / Rs 30K to 1L" fee row, "IGNOU MBA is Rs 31,500" (not in lib/data.ts) and
+      "Cheapest credential";
+    - the Galgotias MBA override "one of the more affordable options ... in North India".
+    The Galgotias coupon also printed "JAIN (from Rs 1,75,000)", but getExactFee publishes JAIN at 1,60,000 to 2,98,000.
+  - What: superlatives and figures deleted. The IGNOU stackExample is now "No coupons are needed." The coupon template
+    line reads "You prefer a central government university (explore IGNOU)" (lib/data.ts approvals list "Central
+    University") and is hidden on IGNOU's own coupon page. The compare FAQ now says fees vary, are indicative and
+    should be compared in the tool. The guide fee row was deleted, and the eligibility cell now reads "Meets
+    eligibility when the university is UGC-approved". JAIN's coupon row now shows the name only. Galgotias keeps its
+    Rs 80,200, which getExactFee publishes.
+  - Counts: source 14 -> 0; prerendered HTML 77 -> 0.
+- **Kept, with the reason:**
+  - The /programs/mba fee FAQ, hero chip and MbaHubAnswers "cheapest" list. Each is computed at build time from
+    getExactFee over indexable MBA hubs, and the FAQ and answers say "across the N online MBA programmes we index".
+  - The online DBA "lowest fee" answer. It is scoped "in our data" to the six DBAs with confirmed fees.
+  - The Manipal trio claims in pairs.ts and coupon-pages.ts: SMU 1,20,000 < MUJ 1,84,000 < MAHE 2,92,000.
+  - Pair-page "more affordable" claims where both fees are published: MUJ < Amity, MUJ < NMIMS, Galgotias BBA 77,200 <
+    Sharda 1,35,000.
+  - Per-university published fees: "IGNOU at Rs 66,000 over Amity at Rs 2.07L" in MBAHubClient, the Rs 66,000 IGNOU
+    line in MBASpecHubClient, and the coupon rows for CU from 1,75,125 (a payment mode), Amity from 2,07,000 and MUJ
+    1,84,000 to 1,56,400.
+  - "Lowest Fees" sort label, the "cheapest online MBA" search-intent phrase in hub copy, and the "under Rs 20,000"
+    red-flag heuristic in the UGC guide.
+- **Listed, not changed (out of this batch's scope):**
+  - Unsourced pay claims: MBAHubClient salary cards and table, HomePageClient Finance vs Marketing salary FAQ, the
+    salary-calculator "30-50%" line, and the spec page salary FAQs and salaryRange.
+  - The lib/content.ts MCA syllabus metaDesc "Rs. X total" figures. These are per-university, not floors, and some
+    differ from getExactFee (for example Amity "Rs. 170K" against 1,99,000).
+  - In coupon-pages.ts: IGNOU "Rs 14,000-16,000 per semester" (lib/data.ts says 16,000, or 18,000 in semester 3); SMU
+    "effective fee Rs 84,000" (derived); and the malformed "Rs 160K - Rs 160K" totals.
+  - The UPES "#45 NIRF" FAQ on the Logistics spec page has no category.
+  - The dead editorialGuide fields hold "Rs 1.5 to 4 Lakh" and "Rs 70,000 to 1.8 Lakh".
+  - "Strongest government job eligibility" (IGNOU) and "at affordable price" (LPU) in MBAHubClient.
+
 ## 2026-11-25 · B3 batch 7: MUJ Coursera, /fees floor chip, guide pay claims, stale SMU fee, ad-spend stat, Galgotias URL (branch fix/b3-batch-7)
 
 - **Source:** audits/OPERATING-PLAN.md status line "Next (B3 batch 7)". Facts checked only against lib/data.ts. No
