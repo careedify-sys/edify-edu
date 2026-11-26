@@ -423,10 +423,10 @@ export const GUIDES: Guide[] = [
 <h2>Frequently Asked Questions</h2>
 
 <h3>What is the highest MBA salary in India in 2026?</h3>
-<p>The IIMs publish the most detailed MBA placement reports. Those figures are for full-time, two-year campus programs and change every year, so read each school's current report rather than a figure quoted secondhand.</p>
+<p>IIM placement figures are for full-time, two-year campus programs and change every year, so read each school's current report rather than a figure quoted secondhand.</p>
 
 <h3>Can an online MBA fresher earn a strong starting salary?</h3>
-<p>It depends on the role and on prior experience. Candidates with prior technical experience (IT, engineering) and an online MBA in <a href="/blog/data-science-salary-india-2026-scope-jobs" class="ilink">data science or analytics</a> have the stronger case in analytics, FinTech, and e-commerce roles. This is not typical for all online MBA graduates without technical backgrounds.</p>
+<p>It depends on the role and on prior experience. Candidates with prior technical experience (IT, engineering) and an online MBA in <a href="/blog/data-science-salary-india-2026-scope-jobs" class="ilink">data science or analytics</a> have the stronger case in analytics, FinTech, and e-commerce roles.</p>
 
 <h3>Does NMIMS online MBA salary match the campus MBA?</h3>
 <p>No, not at entry level. NMIMS campus MBA (Mumbai) has a significantly higher median placement salary than the online program. The online program offers schedule flexibility and brand recognition but operates with different placement infrastructure. Check the NMIMS official placement reports for current figures before comparing.</p>

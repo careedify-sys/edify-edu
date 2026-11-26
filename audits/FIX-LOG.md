@@ -68,6 +68,32 @@
   the Galgotias MBA hub admission step 1 ("Open the university's online admissions portal"). Counts: 20 -> 0. Not
   changed: lib/data.ts officialUrl and feePlans source (data, schema sameAs), syllabus-manifest.json (not rendered),
   and the coupon template line that prints page.officialUrl on every coupon page (site-wide, listed for Rishi).
+- **Round 2 (2026-11-26, after audits/qa/2026-11-25-b3-batch-7-premerge.md failed F1 and F2):**
+  - **F1, SMU MBA 1,10,000 still on 4 posts.** Why: round 1 searched three notations but missed "Rs 1.10L" in a FAQ
+    and the "Rs. 1,10,000" also-read strips, and its detector did not see the JSON-style mba-hr-management record.
+    The round 1 count "11 -> 0" was wrong: the base held 19 SMU MBA hits, round 1 removed 11 and left 8. What: online-manipal
+    FAQ "SMU (Rs 1.10L) is most affordable" now "SMU is the lowest-fee of the three" (true on lib/data.ts: 1,20,000 <
+    1,84,000 < 2,92,000); figure tokens deleted from the UU and Galgotias also-read strips and from three
+    mba-hr-management lists; its SMU table row deleted. Re-swept every form (1,10,000 / 1.10L / 1.10 lakh / 1.1L /
+    1.1 lakh / 110000) within 80 characters of SMU or Sikkim Manipal in lib/blog.ts, page-content, lib/content.ts,
+    lib/guides.ts, pairs.ts, coupon-pages.ts and lib/data.ts: 8 -> 0. Kept: 4 SMU MCA mentions (programFees.mca 110000)
+    and 3 SRM University Sikkim lines the sweep matches on "Sikkim".
+  - **F2, five orphaned MUJ "global certification" sentences.** Why: each only made sense after the Coursera clause
+    round 1 deleted, and so read as an unsourced claim. The two LPU ones also said "LPU is more affordable", which is
+    false at both ends (LPU 1,61,600-2,00,000 vs MUJ 1,56,400-1,84,000). What: three deleted; the two LPU sentences now
+    read "Both are comparable options." Counts 5 -> 0.
+  - **LPU Coursera claims (QA advisory A2, same class).** Why: lib/data.ts has no LPU Coursera record, and LPU's own
+    page-content never mentions Coursera. What: "includes / offers Coursera Plus", "Coursera Plus bundle", "Coursera
+    access / bundled access" removed from 3 DPU, 6 Uttaranchal, 6 Galgotias, 3 IGNOU and 2 NIU spec JSONs (QA found the DPU
+    and UU ones; the sweep found the rest). The LPU fee, zero-cost EMI, NIRF and placement clauses stay. Counts 26 -> 0.
+  - **/compare (A3).** The four "Does MUJ include Coursera Plus...?" / "Do both include Coursera Plus?" questions are now
+    "Is Coursera access included in the MUJ fee?"; answers unchanged. Counts 4 -> 0.
+  - **Salary guide (A5, A6).** The orphaned "This is not typical..." sentence deleted; the new superlative "The IIMs
+    publish the most detailed MBA placement reports" deleted and the next sentence starts "IIM placement figures...".
+  - **mba-marketing FAQ (A8).** "growing 18 to 25 percent YoY per LinkedIn India Hiring Index" and "which have created
+    50K-plus marketing jobs in last 3 years" deleted: no approved source. The callout-key in the same post still
+    carries "Median Rs 12.2 LPA", "20 percent above" and "18 to 25 percent". Those are left for the blog pay-claims batch.
+  - 5 posts changed body text and carry updatedAt 2026-11-26.
 
 ## 2026-11-25 · B3 batch 6: superlatives, pay claims and market stats (branch fix/b3-batch-6)
 
