@@ -84,6 +84,23 @@
     Tue/Sat."
   - No visible change: CouponPageCTA prints totalFee only for IGNOU.
 
+- **Round 2 (QA, audits/qa/2026-11-26-b3-batch-11-premerge.md):**
+  - F1: imt-ghaziabad-online-mba-review-2026 printed "average package around Rs 17.35 LPA and median around Rs 16 LPA"
+    (body and FAQ/FAQ schema) and "campus PGDM ... average packages Rs 16+ LPA and top recruiters like McKinsey, Bain,
+    BCG, Deloitte". No verify row sources any of it, and the first two present a residential figure as the online
+    programme`s, the same defect as XLRI rows 27-28. Deleted; the campus clause now reads "runs on-campus placements";
+    "The reported salary figures likely reflect" became "Salary outcomes likely reflect". updatedAt bumped (10 posts now).
+  - F2: the Amity MBA review said the portal`s 450+ / 1,00,000+ figures are "university-wide figures that include campus
+    programmes". The amityonline.com MBA page does not say that. Now: the numbers on Amity Online`s MBA page do not say
+    which programmes or years they cover ("job offers lifetime" corrected to the portal`s "job opportunities created").
+  - F3: the online-mba-with-placement FAQ still said Amity`s "500+ industry partner network"; now "450+ hiring partners".
+    Correction to round 1: "Amity 500+ 8 -> 0" was wrong, this one was missed. amity-online-mca-fees-review still says
+    "500+ claimed hiring partners" (MCA page not checked; next batch).
+  - A5: best-online-mba-colleges-india-2026 FAQ "NMIMS Online reports the strongest placement support among UGC-DEB online
+    MBA programmes" lost its support when the package figures went; sentence deleted (post already bumped in round 1).
+  - N1 correction: only 5 of the 10 placement-table universities (NMIMS, Symbiosis, Amity, CU, MUJ) have an H3 carrying
+    their fee, each matching getExactFee. BITS, MAHE, JAIN, LPU and UPES fees no longer appear in that post. Nothing invented.
+
 ## 2026-11-26 · B3 batch 10: spec-table fees through getExactFee, MAHE NIRF card, coupon peer fees, last pay and market claims (branch fix/b3-batch-10)
 
 - **Source:** the "Listed, not changed" items from B3 batch 9 and its QA. Facts come only from lib/data.ts
