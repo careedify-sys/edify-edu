@@ -1,5 +1,89 @@
 # Fix log
 
+## 2026-11-26 · B3 batch 12: derived EMIs, /fees through getExactFee, last unsourced averages, placement table rank (branch fix/b3-batch-12)
+
+- **Source:** the "Not done" list in B3 batch 11 and the batch 11 QA. Facts come only from lib/data.ts (getExactFee,
+  emiFrom) and the EMI figures already recorded with a portal source in lib/data.ts comments, audits/verify sheets and
+  this log. No fee, EMI, salary or percentage was added. No title, seoTitle or metaDescription changed. The /fees title
+  still counts `priced` rows from fees-hub-data.json feeMin, which this batch did not touch.
+- **1. emiFrom set to 0 on 108 universities (lib/data.ts, lib/data-slim.ts, data/fees-hub-data.json):**
+  - Why: every one was a derivation, and the rule is never to derive a fee.
+    - 63 were 2,500, which is the 60,000 placeholder floor divided by 24.
+    - The other 45 were feeMin / 24 of a current, old or placeholder feeMin, for example LPU 6,708 = 1,61,000 / 24,
+      NMIMS 8,167 = 1,96,000 / 24, IGNOU 400 (batch 11) and CU 7,297 = 1,75,125 / 24. The CU record comment said so
+      itself, and now says 0.
+  - The batch 11 list of 34 was a subset. The coordinator's rule ("every university whose emiFrom is a feeMin/24
+    derivation") also covers the derived values that happened to match a real fee (UPES, NMIMS, MAHE, SMU and others)
+    and the 2,500 defaults, so all of them went.
+  - fees-hub-data.json: 109 rows now read 0 / "Not published". The extra row is Vignan's ₹2,900, which lib/data.ts
+    already holds at 0 by decision (see its comment).
+  - Kept, 7, each with a portal source recorded in the repo:
+    - JAIN 6,917: lib/data.ts comment, "The finance page publishes ₹6,917 per month", and
+      audits/verify/jain-university-online-2026-11-18.md.
+    - Amity 8,906: feePlans EMI row and audits/verify/amity-university-online-2026-11-18.md, "24-month no-cost EMI
+      ₹8,906/month".
+    - MUJ 6,517: lib/data.ts fee-chart comment, "15% discount 1,56,400 / 39,100 / 6,517".
+    - Uttaranchal 3,733: comment, "UU publishes No-Cost EMI: Starting at INR 3,733", and
+      audits/verify/uttaranchal-university-online-2026-11-18.md.
+    - Alliance 8,700: comment and audits/verify/alliance-university-online-2026-11-16.md, "No-cost EMI plans from Rs
+      8,700 for 20 months".
+    - Jaypee 5,850: comment and audits/verify/jaypee-university-online-2026-11-16.md, brochure p. 31.
+    - Adichunchanagiri 4,417: comment, "ACU publishes No Cost EMI Starting from ₹4,417/month", and
+      audits/verify/adichunchanagiri-university-online-2026-11-18.md.
+  - 0 is the existing "not published" path. EMIPlans (including its fee / 6, 12 and 24 cards), FeeBreakdown,
+    UniversityCard, CompareClient, the compare pair page and the profile all hide the figure or print "On request".
+  - lib/first-hand.ts printed `u.emiFrom ?? r.instalment`, which would print ₹0 for a zero emiFrom with an EMI plan
+    row. It now uses `||`, so the plan's own published instalment shows. No current record hits this path.
+  - The fees-hub emiStr for Amity and MUJ was rounded ("₹9K/mo", "₹7K/mo"). It is now ₹8,906/mo and ₹6,517/mo, though
+    /fees no longer prints emiStr.
+- **2. /fees fee and EMI cells (app/fees/page.tsx, components/FeesTableClient.tsx):**
+  - Why: the table printed fees-hub-data.json feeStr and emiStr, which format the raw feeMin/feeMax and emiFrom. 60
+    rows showed the "₹60K – ₹2L" placeholder, IGNOU showed "₹10K – ₹66K" (a ₹9,600 range floor), and others showed
+    placeholder ranges such as "₹90K – ₹2L" and "₹75K – ₹1.80L".
+  - Fix: the page builds each cell on the server through getExactFee and formatExactFeeShort, the gate every other
+    fee table uses:
+    - MBA when the row lists one. Otherwise the first programme with a publishable fee, named in brackets (3 rows:
+      SPPU BBA, Alagappa B.Com, GGSIPU B.Com).
+    - "On request" when there is none.
+    - EMI is the lib/data.ts MBA emiFrom, shown only when above 0.
+    - Fee sort uses the same exact figures, and rows with no fee sort last.
+    - The ItemList JSON-LD description uses the same cell.
+  - Result: 142 of 143 cells changed text, mostly from the "₹2.07L" short form to full rupees. 84 rows now read "On
+    request": 44 of the 60 "₹60K – ₹2L" rows, 18 that already said "Not published", and 22 whose range was a
+    placeholder or was suppressed. The other 16 "₹60K – ₹2L" rows now show a real fee.
+    - IGNOU now shows ₹66,000.
+    - Other floors corrected: Parul ₹40K to ₹1,50,000, DDU ₹31K–₹58K to ₹52,500, Mangalayatan to ₹67,000, Vignan
+      ₹1.10L to ₹90,000.
+    - Labelled fees now show their list price: LPU ₹2,00,000 and MUJ ₹1,84,000.
+    - The full list is in .b8tmp/fees12b.txt on the batch worktree. It is reproducible from the getExactFee loop.
+  - For QA: getExactFee passes Madurai Kamaraj ₹75,000–₹1,80,000 and Mumbai ₹90,000–₹2,00,000, and those widths match
+    the shared placeholder ranges that rule 4d suppresses for other universities. The gate is the site's own, so I did
+    not override it. Worth a portal check.
+- **3. amity-online-mca-fees-review:** "500+ claimed hiring partners" lost its count, because the MCA page was not
+  checked. It now reads "Claimed hiring partners include TCS, Infosys, HCL, Accenture and Amazon."
+- **4. Unsourced averages:**
+  - Deleted: the LPU online-cohort "₹4–7 LPA" paragraph; Amity's ₹7.35 LPA average and ₹6.50 LPA median rows; the
+    "plan around the median of ₹6.50 LPA" clause, which now reads "but it is the top offer, not a typical outcome".
+  - Deleted from mba-international-online-global-programs-2026: the "Career Outcomes by Programme Tier 2026" H2 and its
+    6-item salary list (UWA, Paris, Edinburgh, IE, Warwick, Imperial), plus the per-programme "Career outcomes" bullets
+    repeating the UWA and Paris figures.
+  - No audits/verify row sources any of them.
+  - Kept: the "Assume"-framed IIM A PGPX ROI scenario.
+  - Not done, for a later batch: the "Best International Online MBA Specialisations 2026" list in the same post still
+    carries generic year-5 salary ranges.
+- **5. online-mba-with-placement-india-2026 table and tier text:**
+  - The post states no basis for order within a tier, so the Rank column went. Rows are now grouped by tier (1, 2,
+    2-3, 3) and alphabetical within each.
+  - The tier text lost its offer percentages: Tier 1 "30-50 percent of students participating in drives receive
+    offers within 6 months" and Tier 2 "about 40-60 percent of motivated students use this network successfully".
+  - Not done, for a later batch: other unsourced percentages in the same post ("30-40 percent of online MBA placements
+    happen through alumni", "top 5-10 percent", "top 1-2 percent", "30-50 percent higher" in the campus vs online
+    table).
+- **Posts with updatedAt bumped to 2026-11-26:** amity-online-mca-fees-review, mba-international-online-global-programs-2026
+  (both from 2026-11-25), and online-mba-lpu-review-2026, amity-online-mba-review-2026,
+  online-mba-with-placement-india-2026 (already 2026-11-26 from batch 11). Tag open/close counts are unchanged in all
+  five.
+
 ## 2026-11-26 · B3 batch 11: highest-package claims, IGNOU EMI, stale JAIN and LPU coupon fees (branch fix/b3-batch-11)
 
 - **Source:** audits/verify/highest-package-2026-11-26.md (committed with this fix). It checked 28 highest-package

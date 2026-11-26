@@ -55,7 +55,16 @@ function ViewLink({ u, className, label }: { u: University; className: string; l
 
 type Sort = 'fee-asc' | 'fee-desc' | 'nirf' | 'naac'
 
-export default function FeesTableClient() {
+/** Fee and EMI cell text, built on the server by app/fees/page.tsx through
+ * getExactFee (B3 batch 12). The JSON feeStr/emiStr are no longer printed:
+ * they formatted the raw feeMin/feeMax placeholders. A row with no
+ * publishable fee sorts last. */
+export type FeeCell = { fee: string; emi: string; sortMin: number | null; sortMax: number | null }
+
+const LAST = Number.MAX_SAFE_INTEGER
+
+export default function FeesTableClient({ cells }: { cells: Record<string, FeeCell> }) {
+  const cell = (id: string): FeeCell => cells[id] ?? { fee: 'On request', emi: 'Not published', sortMin: null, sortMax: null }
   const [prog, setProg] = useState('All')
   const [naacFilter, setNaacFilter] = useState('All')
   const [region, setRegion] = useState('All')
@@ -67,15 +76,15 @@ export default function FeesTableClient() {
     if (naacFilter !== 'All') rows = rows.filter(u => u.naac === naacFilter)
     if (region !== 'All') rows = rows.filter(u => u.region === region)
     return [...rows].sort((a, b) => {
-      if (sort === 'fee-asc') return a.feeMin - b.feeMin
-      if (sort === 'fee-desc') return b.feeMax - a.feeMax
+      if (sort === 'fee-asc') return (cell(a.id).sortMin ?? LAST) - (cell(b.id).sortMin ?? LAST)
+      if (sort === 'fee-desc') return (cell(b.id).sortMax ?? -1) - (cell(a.id).sortMax ?? -1)
       if (sort === 'naac') return (NAAC_ORDER[a.naac] ?? 9) - (NAAC_ORDER[b.naac] ?? 9)
       // nirf: treat 999 as last
       const an = a.nirf >= 999 ? 9999 : a.nirf
       const bn = b.nirf >= 999 ? 9999 : b.nirf
       return an - bn
     })
-  }, [prog, naacFilter, region, sort])
+  }, [prog, naacFilter, region, sort, cells])
 
   function SortBtn({ label, value }: { label: string; value: Sort }) {
     const active = sort === value
@@ -195,8 +204,8 @@ export default function FeesTableClient() {
                       )}
                     </div>
                   </td>
-                  <td className="px-3 py-3 text-right font-semibold text-navy">{u.feeStr}</td>
-                  <td className="px-3 py-3 text-right text-ink-2">{u.emiStr}</td>
+                  <td className="px-3 py-3 text-right font-semibold text-navy">{cell(u.id).fee}</td>
+                  <td className="px-3 py-3 text-right text-ink-2">{cell(u.id).emi}</td>
                   <td className="px-3 py-3 text-right">
                     <ViewLink
                       u={u}
@@ -229,8 +238,8 @@ export default function FeesTableClient() {
             </div>
             <div className="flex items-center justify-between text-sm">
               <div>
-                <div className="font-bold text-navy">{u.feeStr}</div>
-                <div className="text-xs text-ink-3">EMI from {u.emiStr}</div>
+                <div className="font-bold text-navy">{cell(u.id).fee}</div>
+                <div className="text-xs text-ink-3">{cell(u.id).emi === 'Not published' ? 'EMI not published' : `EMI from ${cell(u.id).emi}`}</div>
               </div>
               <div className="text-right">
                 {u.nirf < 999 && <div className="text-xs text-ink-2">NIRF #{u.nirf}</div>}

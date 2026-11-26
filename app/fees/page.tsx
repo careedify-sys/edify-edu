@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
-import FeesTableClient from '@/components/FeesTableClient'
+import FeesTableClient, { type FeeCell } from '@/components/FeesTableClient'
 import feesData from '@/data/fees-hub-data.json'
-import { naacPhrase } from '@/lib/seo/display-guards'
+import { naacPhrase, programmeEmiFrom } from '@/lib/seo/display-guards'
+import { getUniversityById, type Program } from '@/lib/data'
+import { getExactFee, formatExactFeeShort, type ExactFee } from '@/lib/fees'
 
 const BASE = 'https://edifyedu.in'
 const year = new Date().getFullYear()
@@ -26,6 +28,48 @@ const year = new Date().getFullYear()
 const priced = feesData.filter(u => typeof u.feeMin === 'number' && u.feeMin > 0)
 const naacAPlusPlus = feesData.filter(u => u.naac === 'A++').length
 const naacAPlus = feesData.filter(u => u.naac === 'A+').length
+
+// ── Fee and EMI cells ────────────────────────────────────────────────────────
+// B3 batch 12 (2026-11-26): the table printed feeStr and emiStr from
+// fees-hub-data.json, which format the raw feeMin/feeMax and emiFrom. 60 rows
+// showed the "₹60K – ₹2L" placeholder and IGNOU "₹10K – ₹66K" (a ₹9,600 range
+// floor). Each cell now goes through getExactFee, the same gate as every other
+// fee table: MBA when the university lists one, otherwise the first programme
+// with a publishable fee, named in brackets. No publishable fee prints
+// "On request". EMI is the MBA emiFrom from lib/data.ts, shown only when > 0.
+function sortBounds(e: ExactFee): [number | null, number | null] {
+  if (e.kind === 'exact') return [e.min, e.max]
+  if (e.kind === 'labelled') {
+    const m = e.breakdown.modes?.map(x => x.amount)
+    return m?.length ? [Math.min(...m), Math.max(...m)] : [e.breakdown.list, e.breakdown.list]
+  }
+  return [null, null]
+}
+
+const feeCells: Record<string, FeeCell> = (() => {
+  const out: Record<string, FeeCell> = {}
+  for (const row of feesData) {
+    const u = getUniversityById(row.id)
+    const cell: FeeCell = { fee: 'On request', emi: 'Not published', sortMin: null, sortMax: null }
+    if (u) {
+      const progs = (row.programs as string[]).includes('MBA')
+        ? ['MBA']
+        : (row.programs as string[])
+      for (const p of progs) {
+        const e = getExactFee(u, p as Program)
+        const text = formatExactFeeShort(e)
+        if (!text) continue
+        cell.fee = p === 'MBA' ? text : `${text} (${p})`
+        ;[cell.sortMin, cell.sortMax] = sortBounds(e)
+        break
+      }
+      const emi = programmeEmiFrom(u, 'MBA')
+      if (emi > 0 && (row.programs as string[]).includes('MBA')) cell.emi = `₹${emi.toLocaleString('en-IN')}/mo`
+    }
+    out[row.id] = cell
+  }
+  return out
+})()
 
 const programCounts = (() => {
   const counts: Record<string, number> = {}
@@ -119,7 +163,7 @@ function buildSchemas() {
       position: i + 1,
       name: u.name,
       url: `${BASE}/universities/${u.id}`,
-      description: `${u.name}: ${u.feeStr} total fee, ${naacPhrase(u.naac)}`,
+      description: `${u.name}: ${feeCells[u.id].fee === 'On request' ? 'fee on request' : `${feeCells[u.id].fee} total fee`}, ${naacPhrase(u.naac)}`,
     })),
   }
 
@@ -198,7 +242,7 @@ export default function FeesPage() {
 
         {/* Table + filters (client) */}
         <div className="pb-6">
-          <FeesTableClient />
+          <FeesTableClient cells={feeCells} />
         </div>
 
         {/* ── Supporting content ──────────────────────────────────────────────

@@ -12316,7 +12316,6 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>For online MBA students, placement support means resume assistance, virtual placement drives, access to job portals, and placement notifications. It is support, not a placement guarantee or a campus recruitment cycle. If you are already employed and doing this program for a promotion or credential upgrade, this is exactly what you need and nothing is missing. If you are expecting campus-style placements from an online program, that expectation needs adjusting before you enrol.</p>
 
-<p>For the online cohort specifically, average salary packages range between ₹4–7 LPA, with higher outcomes for candidates with prior work experience and strong specialisations.</p>
 
 <h2>Job Roles and Salary After LPU Online MBA</h2>
 
@@ -20079,7 +20078,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-international-online-global-programs-2026',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-26',
     title: 'International MBA Online India 2026: Top Programs',
     seoTitle: 'MBA International Online 2026: AACSB, EQUIS, AMBA Programs',
     metaDescription: 'International online MBA 2026 for Indian students: UWA Global MBA Rs 5.95L with IIMK, Paris School Rs 12.5L, AACSB tier, real ROI vs Indian online MBA.',
@@ -20245,17 +20244,6 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>September 2026:</strong> Live cohort starts. Build study cadence early.</li>
 </ol>
 
-<h2>Career Outcomes by Programme Tier 2026</h2>
-
-<ul>
-  <li><strong>UWA Global MBA:</strong> Rs 18 to 28 LPA at Indian MNCs, Rs 22 to 32 LPA if relocating to Australia. Strong for APAC supply chain plus operations roles.</li>
-  <li><strong>Paris School of Business Online MBA:</strong> Rs 22 to 30 LPA in India at French MNCs. Rs 28 to 38 LPA at top European brands. Useful for French market entry.</li>
-  <li><strong>Edinburgh Business School Online MBA:</strong> Rs 25 to 35 LPA at Big 4 plus management consulting plus MNC senior leadership roles in India.</li>
-  <li><strong>IE Global Online MBA:</strong> Rs 35 to 50 LPA at top consulting, banking, premium MNCs. Used for senior leadership pivot.</li>
-  <li><strong>Warwick Distance Learning MBA:</strong> Rs 28 to 42 LPA at consulting, banking, IT MNCs in India.</li>
-  <li><strong>Imperial Global Online MBA:</strong> Rs 35 to 50 LPA at tech-led roles, growing AI plus product leadership scope.</li>
-</ul>
-
 <h2>Best International Online MBA Specialisations 2026</h2>
 
 <ul>
@@ -20297,7 +20285,6 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Total fees:</strong> Rs 5.95 lakh (one of the lowest globally-accredited online MBA fees worldwide).</li>
   <li><strong>Accreditations:</strong> AACSB (UWA), AMBA, IIM Kozhikode AICTE.</li>
   <li><strong>Eligibility:</strong> 3-year graduation degree plus 3-plus years work experience preferred.</li>
-  <li><strong>Career outcomes:</strong> Rs 18 to 28 LPA at year 1 post-MBA at Indian MNCs.</li>
   <li><strong>Strongest fit:</strong> 5 to 12 years experienced professionals seeking global brand at low cost without leaving job.</li>
 </ul>
 
@@ -20310,7 +20297,6 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Total fees:</strong> Rs 12.5 lakh (EUR-based, currency-adjusted).</li>
   <li><strong>Accreditation:</strong> EQUIS plus AACSB (in progress).</li>
   <li><strong>French language requirement:</strong> None for online MBA. English-medium.</li>
-  <li><strong>Career outcomes:</strong> Rs 22 to 35 LPA at French MNCs in India (Total, Dassault, Sodexo, BNP Paribas, Capgemini).</li>
   <li><strong>Strongest fit:</strong> Professionals targeting French or European MNC careers within India.</li>
 </ul>
 
@@ -23840,13 +23826,11 @@ export const BLOG_POSTS: BlogPost[] = [
   <thead><tr style="background:#1a1a2e;color:#fff"><th style="padding:10px 14px;text-align:left">Component</th><th style="padding:10px 14px;text-align:left">Amount</th><th style="padding:10px 14px;text-align:left">Notes</th></tr></thead>
   <tbody>
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">Total Tuition (full-time MBA)</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹6.4L – ₹15.8L</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">Varies by specialization</td></tr>
-    <tr style="background:#fef9c3;font-weight:700"><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">MBA Average Package (2024)</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹7.35 LPA</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">202 recruiters, 105 new</td></tr>
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">MBA Highest Package (Amity Business School Noida campus, class of 2022-24)</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹26.30 LPA</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">Finance domain; not representative</td></tr>
-    <tr style="background:#f9fafb"><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">Median Package</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹6.50 LPA</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">More representative figure</td></tr>
     <tr><td style="padding:10px 14px">NIRF Management Rank</td><td style="padding:10px 14px">~#49 (2025)</td><td style="padding:10px 14px">National Institutional Ranking Framework</td></tr>
   </tbody>
 </table>
-<p>The ₹26.30 LPA highest CTC (Amity Business School Noida campus MBA, class of 2022-24) gets quoted everywhere  -- plan around the median of ₹6.50 LPA for ROI calculations. For <strong>Amity University Delhi MBA fees</strong>  -- the main management campus is in Noida; online programme fees are the same regardless of campus.</p>
+<p>The ₹26.30 LPA highest CTC (Amity Business School Noida campus MBA, class of 2022-24) gets quoted everywhere, but it is the top offer, not a typical outcome. For <strong>Amity University Delhi MBA fees</strong>  -- the main management campus is in Noida; online programme fees are the same regardless of campus.</p>
 
 <h2 id="comparison">How Amity Compares: Fee vs Brand vs Accreditation</h2>
 <div data-edify="fee-peers" data-uni="amity-university-online"></div>
@@ -27498,7 +27482,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'amity-online-mca-fees-review',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-26',
     title: 'Amity Online MCA: Fees, Specialisations and Honest Review 2026',
     seoTitle: 'Amity Online MCA Review 2026: FinTech and Cyber Tracks',
     metaDescription: 'Amity Online MCA fees Rs 1.99L total (Rs 49,800 per semester). Review of all 6 specialisations, HCLTech and Paytm tie-ups and comparison with alternatives.',
@@ -27537,7 +27521,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
             "q": "What is the placement support for Amity online MCA?",
-            "a": "500+ claimed hiring partners including TCS, Infosys, HCL, Accenture, Amazon. Guaranteed internship and minimum 3 interview opportunities in select programs (eligibility-based). Ask for specific last-year placement numbers before enrolling."
+            "a": "Claimed hiring partners include TCS, Infosys, HCL, Accenture and Amazon. Guaranteed internship and minimum 3 interview opportunities in select programs (eligibility-based). Ask for specific last-year placement numbers before enrolling."
       }
 ],
     content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, edifyedu.in. Amity Online MCA programme data verified from amityonline.com, UGC-DEB approved list (deb.ugc.ac.in), NAAC database (naac.gov.in), and live edifyedu.in profile.</em></p>
@@ -37294,11 +37278,11 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <h3>Tier 1: Active placement drives with industry partners</h3>
 
-<p>Universities like NMIMS, Symbiosis SSODL, Amity, and Chandigarh organise virtual placement drives where multiple companies interview online MBA students in structured sessions. Companies that participate include IT services (TCS, Infosys, Wipro, Cognizant), BFSI (HDFC Bank, ICICI, Axis Bank), FMCG, retail chains, and mid-tier consulting firms. Realistic expectation: 30-50 percent of students participating in drives receive offers within 6 months of programme completion.</p>
+<p>Universities like NMIMS, Symbiosis SSODL, Amity, and Chandigarh organise virtual placement drives where multiple companies interview online MBA students in structured sessions. Companies that participate include IT services (TCS, Infosys, Wipro, Cognizant), BFSI (HDFC Bank, ICICI, Axis Bank), FMCG, retail chains, and mid-tier consulting firms.</p>
 
 <h3>Tier 2: Recruiter network and referral access</h3>
 
-<p>Universities like MUJ Online Manipal, MAHE, BITS Pilani, and JAIN provide access to their broader recruiter network through alumni groups and career portals. They do not always organise structured drives but enable referrals and direct applications. Realistic expectation: depends on student initiative; about 40-60 percent of motivated students use this network successfully.</p>
+<p>Universities like MUJ Online Manipal, MAHE, BITS Pilani, and JAIN provide access to their broader recruiter network through alumni groups and career portals. They do not always organise structured drives but enable referrals and direct applications. Realistic expectation: depends on student initiative.</p>
 
 <h3>Tier 3: Career services and skill development only</h3>
 
@@ -37317,19 +37301,19 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <table>
 <thead>
-<tr><th>Rank</th><th>University</th><th>Placement Tier</th></tr>
+<tr><th>University</th><th>Placement Tier</th></tr>
 </thead>
 <tbody>
-<tr><td>1</td><td>NMIMS Online MBA</td><td>Tier 1</td></tr>
-<tr><td>2</td><td>Symbiosis SSODL Online MBA</td><td>Tier 1</td></tr>
-<tr><td>3</td><td>Amity Online MBA</td><td>Tier 1</td></tr>
-<tr><td>4</td><td>Chandigarh University Online MBA</td><td>Tier 1</td></tr>
-<tr><td>5</td><td>MUJ Online Manipal MBA</td><td>Tier 2</td></tr>
-<tr><td>6</td><td>BITS Pilani Online MBA</td><td>Tier 2</td></tr>
-<tr><td>7</td><td>MAHE Online MBA</td><td>Tier 2</td></tr>
-<tr><td>8</td><td>JAIN Online MBA</td><td>Tier 2-3</td></tr>
-<tr><td>9</td><td>LPU Online MBA</td><td>Tier 3</td></tr>
-<tr><td>10</td><td>UPES Online MBA</td><td>Tier 3</td></tr>
+<tr><td>Amity Online MBA</td><td>Tier 1</td></tr>
+<tr><td>Chandigarh University Online MBA</td><td>Tier 1</td></tr>
+<tr><td>NMIMS Online MBA</td><td>Tier 1</td></tr>
+<tr><td>Symbiosis SSODL Online MBA</td><td>Tier 1</td></tr>
+<tr><td>BITS Pilani Online MBA</td><td>Tier 2</td></tr>
+<tr><td>MAHE Online MBA</td><td>Tier 2</td></tr>
+<tr><td>MUJ Online Manipal MBA</td><td>Tier 2</td></tr>
+<tr><td>JAIN Online MBA</td><td>Tier 2-3</td></tr>
+<tr><td>LPU Online MBA</td><td>Tier 3</td></tr>
+<tr><td>UPES Online MBA</td><td>Tier 3</td></tr>
 </tbody>
 </table>
 

@@ -88,7 +88,7 @@ function feePlanSummary(u: University, prog: string, planId: string): string | u
   const after = (plan.discountLabel ?? 'after discount').toLowerCase()
   const parts = plan.rows.map(r => {
     const mode = r.mode.replace(/\s*\(.*\)$/, '').toLowerCase()
-    if (/emi/i.test(r.mode)) return `no-cost EMI from ${rupees(u.emiFrom ?? r.instalment ?? 0)} a month`
+    if (/emi/i.test(r.mode)) return `no-cost EMI from ${rupees(u.emiFrom || r.instalment || 0)} a month`
     if (r.instalment != null && r.count) {
       const d = r.discounted != null ? ` (${rupees(Math.round(r.discounted / r.count))} each ${after})` : ''
       return `${mode} ${rupees(r.instalment)} x ${r.count}${d}`
