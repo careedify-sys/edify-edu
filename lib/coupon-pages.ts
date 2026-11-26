@@ -78,8 +78,8 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Can I combine the coupon with Amity scholarships?', a: 'Amity runs its own scholarship programmes administered directly by the university. Whether they can be combined with the AMTY2026-5K coupon depends on the specific scholarship and current Amity policy. Confirm during enrollment with the Amity admissions team.' },
     ],
     peerComparisons: [
-      { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
-      { uni: 'JAIN (Rs 1,96,000)', savings: 'Up to Rs 5,000 via JAIN2026-5K' },
+      { uni: 'NMIMS (₹1,96,000–₹2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
+      { uni: 'JAIN (₹1,60,000–₹2,98,000)', savings: 'Up to Rs 5,000 via JAIN2026-5K' },
       { uni: 'Chandigarh (from Rs 1,75,125)', savings: 'Up to Rs 5,000 via CU2026-5K' },
       { uni: 'IGNOU (Rs 66,000)', savings: 'No coupon, lower base fee' },
     ],
@@ -121,9 +121,9 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Does NMIMS have AACSB accreditation?', a: 'AACSB accreditation is held by the NMIMS School of Business Management on campus. It does not extend to the NMIMS online MBA, which runs under UGC-DEB entitlement.' },
     ],
     peerComparisons: [
-      { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
-      { uni: 'Symbiosis (Rs 3,70,000; Rs 3,15,000 after 2+ yrs exp concession)', savings: 'Up to Rs 5,000 via SYMB2026-5K' },
-      { uni: 'JAIN (Rs 1,96,000)', savings: 'Up to Rs 5,000 via JAIN2026-5K' },
+      { uni: 'Amity (₹2,07,000–₹2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
+      { uni: 'Symbiosis (₹3,15,000–₹3,70,000)', savings: 'Up to Rs 5,000 via SYMB2026-5K' },
+      { uni: 'JAIN (₹1,60,000–₹2,98,000)', savings: 'Up to Rs 5,000 via JAIN2026-5K' },
       { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
     ],
   },
@@ -163,9 +163,9 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Can I switch from semester payment to one-time after enrollment?', a: 'Typically no. The 15% upfront discount applies only if you choose one-time payment at the start. Confirm with the MUJ admissions team before enrolling.' },
     ],
     peerComparisons: [
-      { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
-      { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
-      { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
+      { uni: 'Amity (₹2,07,000–₹2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
+      { uni: 'NMIMS (₹1,96,000–₹2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
+      { uni: 'LPU (₹2,00,000 list)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
       { uni: 'MAHE (Rs 2,92,000)', savings: 'Up to Rs 5,000 via MAHE2026-5K' },
     ],
   },
@@ -237,9 +237,9 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'What is the difference between the two CU online MBA fee variants?', a: 'CU prices the online MBA by the number of value-added certificates. With 1 certificate the list fee is Rs 2,33,500, or Rs 1,75,125 after the 25% Early Bird Scholarship. With 3 certificates the list fee is Rs 2,38,000, or Rs 1,90,400 after the 20% Early Bird Scholarship. You can pay by year or by semester. Talk to our counsellor for the current figures before you pay.' },
     ],
     peerComparisons: [
-      { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
+      { uni: 'LPU (₹2,00,000 list)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
       { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
-      { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
+      { uni: 'Amity (₹2,07,000–₹2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
     ],
   },
   {
@@ -309,8 +309,8 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Is MAHE the same as MUJ?', a: 'No. MAHE (Karnataka) and MUJ (Jaipur) are separate universities under the Manipal group.' },
     ],
     peerComparisons: [
-      { uni: 'Symbiosis (Rs 3,70,000; Rs 3,15,000 after 2+ yrs exp concession)', savings: 'Up to Rs 5,000 via SYMB2026-5K' },
-      { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
+      { uni: 'Symbiosis (₹3,15,000–₹3,70,000)', savings: 'Up to Rs 5,000 via SYMB2026-5K' },
+      { uni: 'Amity (₹2,07,000–₹2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
     ],
   },
   {
@@ -346,8 +346,8 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Does JAIN offer ACCA integration?', a: 'Yes. JAIN Online offers ACCA-integrated International Finance specialisation.' },
     ],
     peerComparisons: [
-      { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
-      { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
+      { uni: 'NMIMS (₹1,96,000–₹2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
+      { uni: 'Amity (₹2,07,000–₹2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
     ],
   },
   {
@@ -385,7 +385,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     ],
     peerComparisons: [
       { uni: 'MAHE (Rs 2,92,000)', savings: 'Up to Rs 5,000 via MAHE2026-5K' },
-      { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
+      { uni: 'NMIMS (₹1,96,000–₹2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
     ],
   },
   {
@@ -459,7 +459,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     ],
     peerComparisons: [
       { uni: 'SMU (Rs 1,20,000)', savings: 'Up to Rs 5,000 via SMU2026-4K' },
-      { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
+      { uni: 'LPU (₹2,00,000 list)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
   {
@@ -496,8 +496,8 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Is Amrita ranked NIRF #8 in the University category?', a: 'Yes. Amrita holds NIRF #8 in the University category for 2025.' },
     ],
     peerComparisons: [
-      { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
-      { uni: 'JAIN (Rs 1,96,000)', savings: 'Up to Rs 5,000 via JAIN2026-5K' },
+      { uni: 'NMIMS (₹1,96,000–₹2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
+      { uni: 'JAIN (₹1,60,000–₹2,98,000)', savings: 'Up to Rs 5,000 via JAIN2026-5K' },
     ],
   },
 
@@ -550,10 +550,10 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Does the coupon reduce exam or registration fees?', a: 'No. The coupon applies to the programme fee only. Examination, registration and any re-attempt charges are billed separately by the university.' },
     ],
     peerComparisons: [
-      { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
-      { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
+      { uni: 'Amity (₹2,07,000–₹2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
+      { uni: 'NMIMS (₹1,96,000–₹2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
       { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
-      { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
+      { uni: 'LPU (₹2,00,000 list)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
   {
@@ -592,10 +592,10 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Does the coupon reduce exam or registration fees?', a: 'No. The coupon applies to the programme fee only. Examination, registration and any re-attempt charges are billed separately by the university.' },
     ],
     peerComparisons: [
-      { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
-      { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
+      { uni: 'Amity (₹2,07,000–₹2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
+      { uni: 'NMIMS (₹1,96,000–₹2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
       { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
-      { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
+      { uni: 'LPU (₹2,00,000 list)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
   {
@@ -635,10 +635,10 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Does the coupon reduce exam or registration fees?', a: 'No. The coupon applies to the programme fee only. Examination, registration and any re-attempt charges are billed separately by the university.' },
     ],
     peerComparisons: [
-      { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
-      { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
+      { uni: 'Amity (₹2,07,000–₹2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
+      { uni: 'NMIMS (₹1,96,000–₹2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
       { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
-      { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
+      { uni: 'LPU (₹2,00,000 list)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
   {
@@ -678,10 +678,10 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Does the coupon reduce exam or registration fees?', a: 'No. The coupon applies to the programme fee only. Examination, registration and any re-attempt charges are billed separately by the university.' },
     ],
     peerComparisons: [
-      { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
-      { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
+      { uni: 'Amity (₹2,07,000–₹2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
+      { uni: 'NMIMS (₹1,96,000–₹2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
       { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
-      { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
+      { uni: 'LPU (₹2,00,000 list)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
   {
@@ -721,10 +721,10 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Does the coupon reduce exam or registration fees?', a: 'No. The coupon applies to the programme fee only. Examination, registration and any re-attempt charges are billed separately by the university.' },
     ],
     peerComparisons: [
-      { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
-      { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
+      { uni: 'Amity (₹2,07,000–₹2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
+      { uni: 'NMIMS (₹1,96,000–₹2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
       { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
-      { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
+      { uni: 'LPU (₹2,00,000 list)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
   {
@@ -764,10 +764,10 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Does the coupon reduce exam or registration fees?', a: 'No. The coupon applies to the programme fee only. Examination, registration and any re-attempt charges are billed separately by the university.' },
     ],
     peerComparisons: [
-      { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
-      { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
+      { uni: 'Amity (₹2,07,000–₹2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
+      { uni: 'NMIMS (₹1,96,000–₹2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
       { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
-      { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
+      { uni: 'LPU (₹2,00,000 list)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
   {
@@ -806,10 +806,10 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Does the coupon reduce exam or registration fees?', a: 'No. The coupon applies to the programme fee only. Examination, registration and any re-attempt charges are billed separately by the university.' },
     ],
     peerComparisons: [
-      { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
-      { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
+      { uni: 'Amity (₹2,07,000–₹2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
+      { uni: 'NMIMS (₹1,96,000–₹2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
       { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
-      { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
+      { uni: 'LPU (₹2,00,000 list)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
   {
@@ -848,10 +848,10 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Does the coupon reduce exam or registration fees?', a: 'No. The coupon applies to the programme fee only. Examination, registration and any re-attempt charges are billed separately by the university.' },
     ],
     peerComparisons: [
-      { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
-      { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
+      { uni: 'Amity (₹2,07,000–₹2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
+      { uni: 'NMIMS (₹1,96,000–₹2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
       { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
-      { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
+      { uni: 'LPU (₹2,00,000 list)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
   {
@@ -891,10 +891,10 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Does the coupon reduce exam or registration fees?', a: 'No. The coupon applies to the programme fee only. Examination, registration and any re-attempt charges are billed separately by the university.' },
     ],
     peerComparisons: [
-      { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
-      { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
+      { uni: 'Amity (₹2,07,000–₹2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
+      { uni: 'NMIMS (₹1,96,000–₹2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
       { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
-      { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
+      { uni: 'LPU (₹2,00,000 list)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
   {
@@ -933,10 +933,10 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Does the coupon reduce exam or registration fees?', a: 'No. The coupon applies to the programme fee only. Examination, registration and any re-attempt charges are billed separately by the university.' },
     ],
     peerComparisons: [
-      { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
-      { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
+      { uni: 'Amity (₹2,07,000–₹2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
+      { uni: 'NMIMS (₹1,96,000–₹2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
       { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
-      { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
+      { uni: 'LPU (₹2,00,000 list)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
   {
@@ -975,10 +975,10 @@ export const COUPON_PAGES: CouponPageData[] = [
       { q: 'Does the coupon reduce exam or registration fees?', a: 'No. The coupon applies to the programme fee only. Examination, registration and any re-attempt charges are billed separately by the university.' },
     ],
     peerComparisons: [
-      { uni: 'Amity (Rs 2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
-      { uni: 'NMIMS (Rs 2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
+      { uni: 'Amity (₹2,07,000–₹2,25,000)', savings: 'Up to Rs 5,000 via AMTY2026-5K' },
+      { uni: 'NMIMS (₹1,96,000–₹2,20,000)', savings: 'Up to Rs 5,000 via NMIMS2026-5K' },
       { uni: 'MUJ (Rs 1,84,000)', savings: 'Up to Rs 5,000 via MUJ2026-4K' },
-      { uni: 'LPU (Rs 1,61,000)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
+      { uni: 'LPU (₹2,00,000 list)', savings: 'Up to Rs 5,000 via LPU2026-5K' },
     ],
   },
   {

@@ -1,5 +1,79 @@
 # Fix log
 
+## 2026-11-26 · B3 batch 10: spec-table fees through getExactFee, MAHE NIRF card, coupon peer fees, last pay and market claims (branch fix/b3-batch-10)
+
+- **Source:** the "Listed, not changed" items from B3 batch 9 and its QA. Facts come only from lib/data.ts
+  (getExactFee, nirf). No fee, rank, salary or statistic was added. The MAHE rank and the coupon peer fees were
+  replaced with the lib/data.ts values. One single-pass script edited 4 files and kept CRLF. No title, seoTitle,
+  metaDescription, blog post or protected page changed.
+- **1. Hospitality vs Healthcare FAQ:** "similar salary ranges at entry level; healthcare mid-tier salaries are
+  slightly higher" has no source. Deleted. The rest of the answer (fit by sector) stays.
+- **2. Salary calculator:**
+  - "According to industry data, online MBA graduates ... earn comparable salaries" named no data. Deleted; the
+    qualitative sentence on what drives salary stays.
+  - "Boost Your Salary with MBA" was itself the unsourced claim, so the heading now reads "Explore Online MBA
+    Programmes".
+  - The list under it printed "NIRF #{nirf}" with no category. It now prints "NIRF #X University" (lib/data.ts nirf is
+    the University rank), and nothing for an unranked record.
+- **3. /programs/mba intro:** "navigating" is a banned house-style word, so it now reads "comparing". No title or meta
+  changed.
+- **4. MAHE NIRF:**
+  - Why: the hub card typed "NIRF #4 University" on 2026-05-05 (00f4cbb). lib/data.ts has nirf 3, synced from Supabase
+    in ab12d9f, and its approvals list "NIRF #3 (University)"; lib/data-slim.ts also has 3. The card was the stale
+    copy, not data-slim.
+  - What: the card now says #3. The other nine top-10 card ranks were checked against lib/data.ts and all match.
+    lib/data.ts holds no nirfYear for MAHE, so no year was added.
+- **5. Spec-page university table:**
+  - Why: it printed UNIS_SLIM feeMin/feeMax through formatFeeSlim, bypassing getExactFee, so the 60000-200000
+    placeholder showed as "₹60K to ₹2.0L" on 4 pages.
+  - What: each cell is now formatExactFee(getExactFee(u, 'MBA')), with FEE_COUNSELLOR_LINE where nothing is
+    publishable. This is the same pattern as the /compare pair table. The route is 301-redirected in production, but
+    the pages still prerender.
+- **6. Figures not in lib/data.ts:**
+  - "EMI options of ₹5,000 to ₹13,000 per month" (Business Analytics admission) is now "Most universities offer EMI
+    options."
+  - "(5-25% fee waiver)" in the hub scholarship FAQ is deleted. No lib/data.ts field holds either range.
+- **7. IGNOU "does not offer formal EMI" vs emiFrom 400:** not changed, listed.
+  - emiFrom is derived: 689a642 "EMI fix (feeMin/24)" set it from feeMin, and 400 is 9,600 / 24, the old IGNOU range
+    floor. IGNOU's feeMin is now 66,000. So 400 is a stale derived figure, not EMI data, and does not contradict the
+    coupon line.
+  - It still renders "₹400/mo" on 10 prerendered pages (IGNOU profile, MBA hub and 4 spec pages, /fees, /universities,
+    2 compare pairs). Clearing it is a lib/data.ts change for Rishi to approve.
+- **8. Coupon peer-comparison fees:**
+  - Every distinct peer row was matched to formatExactFeeShort(getExactFee(u, 'MBA')). Five did not match:
+    - Amity "Rs 2,25,000" (16 rows) is now ₹2,07,000–₹2,25,000.
+    - JAIN "Rs 1,96,000" (3) is now ₹1,60,000–₹2,98,000.
+    - LPU "Rs 1,61,000" (14) is now "₹2,00,000 list", the label formatExactFee uses.
+    - NMIMS "Rs 2,20,000" (16) is now ₹1,96,000–₹2,20,000.
+    - Symbiosis "Rs 3,70,000; Rs 3,15,000 after 2+ yrs exp concession" (2) is now ₹3,15,000–₹3,70,000. No record backs
+      the concession label.
+  - Unchanged because they match: Galgotias 80,200, IGNOU 66,000, MAHE 2,92,000, MUJ 1,84,000, SMU 1,20,000,
+    "Chandigarh (from Rs 1,75,125)" (the lowest payment mode) and "Amity (from Rs 2,07,000)" (the range floor). The
+    bare "JAIN" row has no figure.
+- **9. why-2026 market stats:** 11 bullets were deleted. Their numbers appear nowhere else in the repo with a source;
+  the only other hit is the batch 6 QA note listing them as unsourced. The deleted figures are:
+  - HR: 1.2 crore jobs.
+  - SCM: $150B and 5 lakh jobs.
+  - Analytics: $16B, 28% CAGR.
+  - Healthcare: $638B, 50,000 beds, 12-15% CAGR.
+  - FinTech: 13,000 crore UPI, 35% CAGR, $2B.
+  - Logistics: ₹100 lakh crore, 14% toward 8% of GDP.
+  - Hospitality: 100,000 rooms.
+  Kept, because they carry no figure: the qualitative bullets (PLI and Gati Shakti hiring, NABH, RBI/SEBI, the
+  RevPAR "all-time highs", QSR expansion, the FinTech "premium packages", the DPIIT hiring line). They are listed
+  for a source decision.
+- **Counts** (source / prerendered HTML; /programs/mba fetched from next start; every detector found hits on the base):
+  - 1: 1/4 -> 0/0.
+  - 2: 3/1 -> 0/0. The heading and NIRF list render only after a toggle.
+  - 3: 1/1 -> 0/0.
+  - 4: 1/1 -> 0/0.
+  - 5: 3/54 -> 0/0, of which placeholder cells 0/14 -> 0/0.
+  - 6: 2/3 -> 0/0.
+  - 8: 51/55 -> 0/0.
+  - 9: 13/26 -> 0/0.
+- **Note for the tracker:** Q52 (spec-page salary ranges) was effectively decided by batch 9 (218303f), which removed
+  them. Its "stays as-is" column is now stale.
+
 ## 2026-11-26 · B3 batch 9: unsourced pay claims, coupon fee strings, UPES NIRF category, hub superlatives, dead editorialGuide (branch fix/b3-batch-9)
 
 - **Source:** the "Listed, not changed" items in the B3 batch 8 entry below. Facts checked only against lib/data.ts

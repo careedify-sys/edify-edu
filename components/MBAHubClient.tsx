@@ -31,7 +31,7 @@ const TOP_10_PICKS = [
   { id: 'upes-online', bestFor: 'NIRF #36 Management. Strong in Oil and Gas, Energy, and Logistics specialisations. Industry-integrated curriculum.' },
   { id: 'lovely-professional-university-online', bestFor: 'NIRF #44 Management. NAAC A++. Tech-driven LMS. Strong North India alumni network.' },
   { id: 'amity-university-online', bestFor: 'NIRF #49 Management. WASC (USA) + QAA (UK) + WES recognized. Best for international career mobility.' },
-  { id: 'manipal-academy-higher-education-online', bestFor: 'NIRF #4 University. NAAC A++. Strongest Manipal brand prestige. Ideal for South India and healthcare careers.' },
+  { id: 'manipal-academy-higher-education-online', bestFor: 'NIRF #3 University. NAAC A++. Strongest Manipal brand prestige. Ideal for South India and healthcare careers.' },
   { id: 'jain-university-online', bestFor: 'NIRF #73 Management. NAAC A++. 16 specialisations with ACCA integration. Strong Bangalore tech ecosystem.' },
   { id: 'ignou-online', bestFor: 'Central government university. NAAC A++.' },
 ]
@@ -63,7 +63,7 @@ const FAQS = [
   { q: 'What is the difference between AICTE approval and UGC-DEB approval for online MBA?', a: 'UGC-DEB (Distance Education Bureau) approves universities to offer online programmes. AICTE approves technical and management programmes at deemed universities. For an online MBA, you need both: UGC-DEB entitlement for the university plus AICTE recognition for the MBA programme (at deemed universities). State universities do not need AICTE approval.' },
   { q: 'Can I do an online MBA without work experience?', a: 'Yes. Most online MBA programmes accept fresh graduates with a bachelor degree and 40-50% aggregate marks. No work experience is required for standard online MBA admission. Executive MBA tracks typically require 2-5 years of professional experience. No entrance exam (CAT/MAT/XAT) is required at most universities.' },
   { q: 'How long is an online MBA programme in India?', a: 'Standard duration is 2 years (4 semesters). Some universities allow completion in up to 4-5 years for working professionals. IGNOU allows up to 4 years. Most students complete within the standard 2-year window while working full-time.' },
-  { q: 'Are scholarships available for online MBA programmes?', a: 'Yes. Merit-based scholarships (5-25% fee waiver) are available at Amity, JAIN, Chandigarh, LPU, and several other universities. Defence personnel, divyaang candidates, and alumni often receive additional concessions. Some universities offer early-bird discounts for first-week enrollment.' },
+  { q: 'Are scholarships available for online MBA programmes?', a: 'Yes. Merit-based scholarships are available at Amity, JAIN, Chandigarh, LPU, and several other universities. Defence personnel, divyaang candidates, and alumni often receive additional concessions. Some universities offer early-bird discounts for first-week enrollment.' },
   { q: 'Is online MBA accepted for PhD admission in India?', a: 'Yes. UGC-DEB approved online MBA degrees are recognized for PhD admissions at any UGC-approved university. You will need to clear NET/JRF or the university entrance exam. WES-evaluated online MBAs are also accepted for doctoral programmes at international universities.' },
   { q: 'What documents are required for online MBA admission?', a: 'Standard requirements: 10th and 12th mark sheets, graduation degree and mark sheets, passport-size photograph, government ID proof (Aadhaar or Passport), and sometimes a statement of purpose. International students may need passport copy and equivalence certificate.' },
   { q: 'Can I switch specialisation during my online MBA?', a: 'Most universities allow specialisation changes before Semester 3 begins, since specialisation subjects start from Semester 3. After Semester 3, switching is difficult. Check with your university admissions office for their specific policy. Some universities charge an administrative fee for late changes.' },
@@ -151,7 +151,7 @@ export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
       {/* Editorial Intro */}
       <section className="max-w-3xl mx-auto px-4 py-10">
         <p className="text-base text-slate-700 leading-relaxed mb-6">
-          Choosing an online MBA in India means navigating {mbaUnis.length}+ UGC-DEB approved universities.
+          Choosing an online MBA in India means comparing {mbaUnis.length}+ UGC-DEB approved universities.
           This page compares every approved online MBA programme by NIRF rank, NAAC grade,
           total fees, specializations offered, and student reviews. Whether you are looking for the cheapest online MBA, the
           highest-ranked option, or a specific specialization like Finance or Healthcare, use the filters below to narrow your

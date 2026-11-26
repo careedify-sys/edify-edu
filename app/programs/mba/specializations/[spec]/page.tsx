@@ -21,8 +21,18 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ChevronRight } from 'lucide-react'
-import { UNIS_SLIM, formatFeeSlim } from '@/lib/data-slim'
+import { UNIS_SLIM } from '@/lib/data-slim'
+import { getUniversityById } from '@/lib/data'
+import { getExactFee, formatExactFee, FEE_COUNSELLOR_LINE } from '@/lib/fees'
 import { getShortUniversityName } from '@/lib/format'
+
+// Fee cell: getExactFee is the gate, so a placeholder or suppressed fee prints
+// the counsellor line. UNIS_SLIM feeMin/feeMax printed the 60000-200000 placeholder
+// here as real fees (B3 batch 10, 2026-11-26).
+function tableFee(id: string): string {
+  const full = getUniversityById(id)
+  return (full && formatExactFee(getExactFee(full, 'MBA'))) || FEE_COUNSELLOR_LINE
+}
 
 // ── Spec definitions ────────────────────────────────────────────────────────
 
@@ -50,7 +60,6 @@ const SPECS: Record<string, SpecDef> = {
     targetKeyword: 'online MBA HR management India 2026',
     intro: `An Online MBA in HR Management prepares professionals for strategic people-management roles in any industry. The 2-year UGC-DEB approved programme covers talent acquisition, performance management, compensation design, labour law, organisational development, and HR analytics. It is designed for working HR executives, recruiters, and L&D professionals who want to move into HRBP or CHRO-track positions without leaving their current jobs.`,
     why2026: [
-      'India added over 1.2 crore new organised-sector jobs in 2023-24, creating sustained demand for HR professionals.',
       'HR analytics and HRIS tools are now core hiring criteria, and an MBA bridges the skill gap faster than a certificate course.',
       'PSU and government sector roles increasingly require a full MBA degree, not a diploma, for HR cadre positions.',
     ],
@@ -84,7 +93,6 @@ const SPECS: Record<string, SpecDef> = {
     targetKeyword: 'online MBA supply chain management India 2026',
     intro: `An Online MBA in Supply Chain Management covers procurement, warehouse management, global logistics, supply chain analytics, and green supply chain practices. The UGC-DEB approved 2-year programme suits professionals in e-commerce fulfilment, 3PL, FMCG distribution, and manufacturing supply chain who want to move into managerial and leadership roles without pausing their careers.`,
     why2026: [
-      'India\'s e-commerce sector is expected to reach $150B by 2027, creating over 5 lakh new supply chain jobs annually.',
       'Government PLI schemes for manufacturing and the PM Gati Shakti logistics plan are expanding formal SCM hiring at scale.',
       'Supply chain disruptions post-COVID made risk management and digital SCM skills board-level priorities.',
     ],
@@ -118,7 +126,6 @@ const SPECS: Record<string, SpecDef> = {
     targetKeyword: 'online MBA business analytics India 2026',
     intro: `An Online MBA in Business Analytics combines management fundamentals with data skills including statistical modelling, data visualisation, Python/R, predictive analytics, and business intelligence tools. The UGC-DEB approved 2-year programme suits analysts, MIS executives, and mid-career professionals who want to move into analytics leadership and data strategy roles.`,
     why2026: [
-      'India\'s analytics market is projected to reach $16B by 2027. Demand for analytics managers is growing at 28% CAGR.',
       'Banking, telecom, e-commerce, and FMCG are investing in analytics infrastructure, creating sustained mid-management demand.',
       'An MBA in Business Analytics is preferred over a standalone data science course for managerial and strategy roles.',
     ],
@@ -126,7 +133,7 @@ const SPECS: Record<string, SpecDef> = {
     midRoles: ['Analytics Manager', 'BI Manager', 'Data Strategy Manager', 'Head of Analytics'],
     industries: ['IT Services', 'Banking', 'E-commerce', 'Retail', 'Telecom', 'Consulting'],
     eligibility: `Minimum 50% marks in any bachelor's degree. Math or statistics background is an advantage but not mandatory. Work experience in analytics, MIS, or data roles strengthens the application. No entrance exam required at most UGC-DEB approved online programmes.`,
-    admission: `Applications open January-February and July-August. Key documents are graduation marksheets, ID proof, and a statement of purpose. Seat allocation is done on a rolling basis. Most universities offer EMI options of ₹5,000 to ₹13,000 per month.`,
+    admission: `Applications open January-February and July-August. Key documents are graduation marksheets, ID proof, and a statement of purpose. Seat allocation is done on a rolling basis. Most universities offer EMI options.`,
     specVariantMatch: (s: string) => {
       const n = s.toLowerCase()
       return n.includes('business analytics') || n.includes('business intelligence') || n.includes('analytics and data science')
@@ -152,10 +159,7 @@ const SPECS: Record<string, SpecDef> = {
     targetKeyword: 'online MBA healthcare management India 2026',
     intro: `An Online MBA in Healthcare Management prepares professionals for administrative and strategic roles in hospitals, healthcare chains, pharma companies, and health insurance organisations. The UGC-DEB approved 2-year programme covers hospital operations, health informatics, quality management (NABH), healthcare finance, medical records management, and public health policy.`,
     why2026: [
-      'India\'s healthcare market is expected to reach $638B by 2025. Hospital administrators and health managers are in sustained demand.',
-      'The Ayushman Bharat expansion and 50,000 new hospital beds being added across tier-2 and tier-3 cities require qualified healthcare managers.',
       'NABH accreditation has become mandatory for government empanelment, creating demand for quality managers with formal training.',
-      'Pharma and health insurance sectors are growing at 12-15% CAGR, opening lateral management roles for MBA Healthcare graduates.',
     ],
     entryRoles: ['Hospital Administrator (Junior)', 'Healthcare Operations Executive', 'Quality Coordinator', 'Medical Records Manager'],
     midRoles: ['Hospital Administrator', 'Operations Manager', 'Quality Manager (NABH)', 'Healthcare Cluster Head'],
@@ -187,9 +191,7 @@ const SPECS: Record<string, SpecDef> = {
     targetKeyword: 'online MBA fintech India 2026',
     intro: `An Online MBA in FinTech prepares professionals for leadership roles at the intersection of finance and technology. The UGC-DEB approved 2-year programme covers digital payments, blockchain fundamentals, lending-tech, BFSI regulation, risk analytics, and product management for financial services. It suits banking executives, payments professionals, and finance graduates who want to move into digital finance leadership without pausing their careers.`,
     why2026: [
-      'India processed over 13,000 crore UPI transactions in 2024-25. FinTech product and operations roles are growing at 35% CAGR.',
       'RBI and SEBI digital regulation frameworks are creating sustained demand for professionals with both finance and technology fluency.',
-      'Global FinTech investment in India exceeded $2B in 2024, generating senior management openings at payments, lending-tech, and neo-bank firms.',
       'PSU banks and NBFCs are hiring digital transformation managers with formal MBA FinTech or Finance credentials at premium packages.',
     ],
     entryRoles: ['FinTech Analyst', 'Payments Operations Executive', 'BFSI Tech Analyst', 'Digital Banking Associate'],
@@ -222,8 +224,6 @@ const SPECS: Record<string, SpecDef> = {
     targetKeyword: 'online MBA logistics management India 2026',
     intro: `An Online MBA in Logistics Management develops expertise in transport network design, last-mile execution, warehouse operations, fleet management, and freight costing. The UGC-DEB approved 2-year programme suits professionals in 3PL companies, e-commerce fulfilment, port operations, and cold-chain logistics who want to move into operations leadership without pausing their careers. It is distinct from Supply Chain Management, which focuses on upstream procurement and vendor networks; Logistics Management addresses the physical movement and storage layer.`,
     why2026: [
-      'PM Gati Shakti National Master Plan is investing over ₹100 lakh crore in logistics infrastructure, generating large-scale management hiring.',
-      'India\'s logistics cost as a share of GDP is dropping from 14% toward 8%, driven by formalisation that demands qualified logistics managers.',
       'E-commerce same-day and next-day delivery requirements have created a tier of logistics operations management roles that did not exist before 2020.',
       'DPIIT Logistics Division and port authorities are hiring logistics managers with formal MBA credentials at scale through structured recruitment.',
     ],
@@ -257,7 +257,6 @@ const SPECS: Record<string, SpecDef> = {
     targetKeyword: 'online MBA hospitality management India 2026',
     intro: `An Online MBA in Hospitality Management prepares professionals for leadership roles in hotels, food and beverage chains, event management companies, aviation ground services, and tourism organisations. The UGC-DEB approved 2-year programme covers hotel operations, revenue management, food and beverage cost control, guest experience design, and hospitality marketing. It suits working professionals in hotel operations, F&B, and travel who want to transition into general management without taking a career break.`,
     why2026: [
-      'India\'s hospitality sector is adding over 100,000 hotel rooms between 2024 and 2027 across mid-scale and budget categories, creating sustained GM and operations management demand.',
       'Post-COVID travel recovery pushed RevPAR (revenue per available room) to all-time highs in 2024, prompting chains to invest in trained operations managers.',
       'The rise of experience tourism, MICE, and branded service apartments is creating hybrid hospitality-management roles that require formal MBA credentials.',
       'Quick-service restaurant (QSR) chains are expanding aggressively in tier-2 and tier-3 cities, generating cluster and regional manager openings.',
@@ -280,7 +279,7 @@ const SPECS: Record<string, SpecDef> = {
       { q: 'Is Online MBA Hospitality Management valid for hotel chain jobs?', a: 'Yes. UGC-DEB approved online MBA degrees are accepted by hotel chains, F&B companies, and hospitality groups across India. Taj, ITC, Oberoi, and Marriott India have hired online MBA graduates for operations and management roles.' },
       { q: 'Which online universities offer MBA Hospitality Management?', a: 'Parul University, Chandigarh University, Galgotias University, Jain University, and select UGC-DEB approved universities offer MBA with Hospitality or Tourism Management specialisation. Talk to our counsellor for the specialisation name.' },
       { q: 'Can I do an MBA Hospitality Management without a hotel management degree?', a: 'Yes. Most universities accept graduates from any stream. A background in commerce, BBA, or even engineering is acceptable. Prior work experience in any service industry (retail, aviation, events) is treated favourably.' },
-      { q: 'MBA Hospitality Management vs MBA Healthcare Management: which is better?', a: 'Both are niche MBA tracks with strong career paths. Hospitality suits you if your career is in hotels, F&B, or tourism. Healthcare suits you if you are in hospitals, pharma, or health insurance. Both have similar salary ranges at entry level; healthcare mid-tier salaries are slightly higher.' },
+      { q: 'MBA Hospitality Management vs MBA Healthcare Management: which is better?', a: 'Both are niche MBA tracks with strong career paths. Hospitality suits you if your career is in hotels, F&B, or tourism. Healthcare suits you if you are in hospitals, pharma, or health insurance.' },
       { q: 'What certifications complement MBA Hospitality Management?', a: 'Certified Hotel Administrator (CHA), Revenue Management Certification (Cornell), and Google Digital Marketing certification are valued by hotel chains and hospitality groups for management roles.' },
       { q: 'Is MBA Hospitality Management useful for QSR and F&B chains?', a: 'Yes. Quick-service restaurant chains and organised F&B businesses actively hire cluster managers and area operations executives with MBA credentials. The curriculum covers F&B cost control, quality management, and multi-outlet operations.' },
     ],
@@ -459,9 +458,7 @@ export default function MBASpecialisationHubPage(
                         </td>
                         <td className="p-3 text-center text-ink-2">{u.naac}</td>
                         <td className="p-3 text-right font-semibold text-navy">
-                          {u.feeMin === u.feeMax
-                            ? formatFeeSlim(u.feeMin)
-                            : `${formatFeeSlim(u.feeMin)} to ${formatFeeSlim(u.feeMax)}`}
+                          {tableFee(u.id)}
                         </td>
                       </tr>
                     ))}

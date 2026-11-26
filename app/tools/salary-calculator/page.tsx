@@ -209,7 +209,7 @@ export default function SalaryCalculatorPage() {
               <div className="bg-amber/5 border border-amber/20 rounded-2xl p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <GraduationCap size={18} className="text-amber" />
-                  <h3 className="font-bold text-navy">Boost Your Salary with MBA</h3>
+                  <h3 className="font-bold text-navy">Explore Online MBA Programmes</h3>
                 </div>
                 <p className="text-sm text-ink-2 mb-4">
                   Compare NIRF-ranked online MBA options below.
@@ -222,7 +222,7 @@ export default function SalaryCalculatorPage() {
                       className="flex justify-between items-center text-sm p-2 rounded-lg hover:bg-white transition-colors"
                     >
                       <span className="font-medium text-navy">{u.abbr}</span>
-                      <span className="text-ink-3">NIRF #{u.nirf}</span>
+                      {u.nirf < 500 ? <span className="text-ink-3">NIRF #{u.nirf} University</span> : null}
                     </Link>
                   ))}
                 </div>
@@ -245,8 +245,7 @@ export default function SalaryCalculatorPage() {
             </p>
             <h3 className="text-navy font-semibold mt-6 mb-2">Online MBA vs Regular MBA Salary</h3>
             <p>
-              According to industry data, online MBA graduates from top universities (NIRF Top 50) earn comparable 
-              salaries to regular MBA graduates. The key factors affecting salary are university ranking, 
+              The key factors affecting salary are university ranking, 
               specialization, and prior work experience rather than the mode of learning.
             </p>
           </div>
