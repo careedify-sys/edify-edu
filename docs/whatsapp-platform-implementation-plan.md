@@ -88,7 +88,7 @@ Meta Cloud API ──POST──> /api/whatsapp/webhook  (verify HMAC on raw body
                               │      upsert contact (phone / BSUID / username)
                               │      upsert conversation, insert message (wamid UNIQUE)
                               │      insert status (wamid+status UNIQUE), recompute rollup
-                              │      mark completed  | on error: failed, attempts+1
+                              │      mark completed  | on error: failed (attempt counted beforehand by wa_begin_attempt)
                               └─ 200 EVENT_RECEIVED (even if processing failed: the row is stored)
 
 /api/cron/whatsapp-sweep (every 5 min, Phase 1)  → re-runs pending/failed events (attempts < 5),
@@ -275,7 +275,7 @@ Later phases add (separate migrations):
 - **Phase 4:** `wa_templates` (name, language, category, components jsonb, status, rejection reason, synced_at).
 - **Phase 5:** `wa_campaigns`, `wa_campaign_recipients` (`unique (campaign_id, contact_id)`, state, wamid, attempt, error), `wa_spend_ledger`.
 
-Processing functions (Phase 1, same migration): `wa_process_event(event_id bigint)`, `wa_claim_events(limit int)` (uses `for update skip locked` so two sweeper runs never take the same row), and `wa_status_rank(text)`. All are `security definer` with `search_path` pinned and `execute` revoked from `anon` and `authenticated`.
+Processing functions (as built in Phase 1): `wa_ingest_event`, `wa_begin_attempt` (counts an attempt in its own transaction), `wa_process_event` (row lock with `for update skip locked`), `wa_events_to_retry`, `wa_purge_raw_bodies`, `wa_exhausted_count` and helpers. All are `security invoker` (the service role already has the rights) with `search_path` pinned and `execute` revoked from `public`, `anon` and `authenticated`.
 
 Phone normalisation: `phone_e164` is `+` plus Meta's digits. Linking to a lead compares `regexp_replace(leads.phone,'[^0-9]','','g')` with the digits, which matches the existing unique index on `leads`. Numbers typed by admins go through one validator (`lib/whatsapp/phone.ts`): strip non-digits, 10 digits starting 6 to 9 become `+91...`, otherwise require a country code and 8 to 15 digits.
 
@@ -504,7 +504,7 @@ Manual end-to-end test after deploy: Rishi's own second phone only. No student i
 | B1 | Link `CRON_SECRET` to edify-edu-dh2m | The sweeper cron needs it, and the existing daily call-list email has been failing with 401 because of it | Vercel, team env vars, `CRON_SECRET`, link to edify-edu-dh2m, Production. Redeploy comes with the next merge. |
 | B2 | Confirm WhatsApp env vars | I could not read env state from this session | In Vercel, edify-edu-dh2m, Settings, Environment Variables, confirm `WHATSAPP_ACCESS_TOKEN`, `WHATSAPP_PHONE_NUMBER_ID`, `WHATSAPP_BUSINESS_ACCOUNT_ID` are present for Production, linked to this project (not only shared), and Sensitive. |
 | B3 | Supabase plan and size | Sizing and retention assume the free tier's 500 MB | Tell me the plan, or paste the database size from Supabase, Settings, Usage. |
-| B4 | Test database | Tests must never touch production | Approve creating a free second Supabase project for development, or I use a local Postgres in Docker. |
+| B4 | Test database | Tests must never touch production | No longer blocking: Phase 1 SQL is tested on PGlite (Postgres in WebAssembly, single connection, installed outside the repo). A multi-connection concurrency test still needs a non-production Postgres: approve a free second Supabase project before Phase 2. |
 | B5 | Meta billing currency | Meta: eligible Indian customers must move messaging accounts to INR by 31 Dec 2026, or messages stop from 1 Jan 2027 | Check WhatsApp Manager, billing, for an INR notice and migrate if shown. |
 | B6 | Payment method on the WhatsApp account | Meta stopped delivering service messages from 1 Oct 2026 for integrations without one | Your outbound test suggests it is fine; confirm a card or prepaid UPI balance is set. |
 | B7 | Confirm real messages reach the webhook | Section 1.2 | Vercel Logs: one `[whatsapp-webhook] received` line with `"messages":` above 0. |
@@ -513,7 +513,7 @@ Manual end-to-end test after deploy: Rishi's own second phone only. No student i
 
 | # | Decision | Recommendation |
 |---|---|---|
-| D1 | Where the inbox lives: `/admin/whatsapp` (your brief) or `/leads/whatsapp` | **`/leads/whatsapp`.** `app/admin/` is the retired CMS that CLAUDE.md says not to touch, and its layout would wrap our pages. `/leads/` already has the guard, noindex headers and CRM styling. |
+| D1 | Where the inbox lives: `/admin/whatsapp` (your brief) or `/leads/whatsapp` | **APPROVED 26 Nov (Rishi, in chat): `/leads/whatsapp`.** `app/admin/` is the retired CMS that CLAUDE.md says not to touch, and its layout would wrap our pages. `/leads/` already has the guard, noindex headers and CRM styling. |
 | D2 | Who uses the inbox | If only you: keep the shared login for Phases 1 and 2. If counsellors will log in: add per-user accounts (email + OTP, a `admin_users` table, signed per-user session) as a small Phase 2a, so every send is attributed. |
 | D3 | Lead auto-linking | Auto-link a contact to a lead when the phone digits match exactly; everything else manual. |
 | D4 | Access token type | System User token with only `whatsapp_business_messaging` and `whatsapp_business_management`. Confirm the token in Vercel is that kind and not a 24-hour or personal token. |

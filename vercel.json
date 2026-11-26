@@ -10,6 +10,10 @@
     {
       "path": "/api/cron/due-calls",
       "schedule": "30 2 * * *"
+    },
+    {
+      "path": "/api/cron/whatsapp-sweep",
+      "schedule": "*/5 * * * *"
     }
   ]
 }

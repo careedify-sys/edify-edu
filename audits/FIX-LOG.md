@@ -7293,4 +7293,31 @@ QA rerun addendum (2026-11-18): the llms.txt line "Where a page shows a checked 
 
 **What:** `docs/whatsapp-platform-implementation-plan.md`. Findings that shape the design: `app/admin/` is the retired CMS, so the plan puts the inbox at `/leads/whatsapp` (already auth-guarded and noindexed); admin auth is one shared static session token with no per-user identity; `/api/*` is not covered by middleware so every new route needs its own guard; Meta bills service replies per message since 1 Oct 2026 after 1,000 free a month; `CRON_SECRET` is still unlinked. No code, migration, env or Meta change was made.
 
-**Decisions made here:** none applied. Twelve decisions (D1-D12) and seven Rishi actions (B1-B7) are in section 12 of the plan; Q24 in QUESTIONS-FOR-RISHI.md points there.
+**Decisions made here:** none applied. Twelve decisions (D1-D12) and seven Rishi actions (B1-B7) are in section 12 of the plan; Q-WA1 in QUESTIONS-FOR-RISHI.md points there (renumbered from Q24, which another branch also used).
+
+## WhatsApp Phase 1: durable webhook storage (2026-11-26, branch feat/wa-1-durable-webhook)
+
+**Why:** the live webhook (199d859) answered 200 and threw every message away, and its in-memory dedupe did not hold across Vercel instances. Rishi approved D1 (inbox at /leads/whatsapp) on 26 Nov; Phase 1 is the storage the inbox will read.
+
+**What:**
+- `supabase/migrations/20261201120000_whatsapp_core.sql` (+ `.down.sql`): wa_contacts (phone, BSUID, username), wa_contact_identity_history, wa_conversations, wa_messages, wa_message_statuses, wa_webhook_events, wa_settings (kill switches seeded off). RLS on, no policies, functions revoked from public/anon/authenticated. Additive: no existing table changed.
+- Processing is SQL: `wa_ingest_event` (store raw body, unique on SHA-256), `wa_begin_attempt` (counts the attempt in its own transaction), `wa_process_event` (row lock with SKIP LOCKED, projects messages and statuses, catches errors and records SQLSTATE only). Duplicates stop on body hash, wamid and wamid+status. Statuses never downgrade (read beats a late delivered).
+- `lib/whatsapp/ingest.ts`: verify signature, store, then process; 500 only if storing fails (Meta retries), 200 once stored. `lib/whatsapp/store.ts`: Supabase RPC calls. Route rewritten to use them; `lib/whatsapp/dedupe.ts` deleted.
+- `app/api/cron/whatsapp-sweep`: every 5 min (vercel.json), retries stored events under 5 attempts and up to 7 days old, nulls raw bodies after 30 days.
+- Still receive-only. Nothing sends a WhatsApp message.
+
+**Check:** `lib/whatsapp/ingest.test.mts` 14 pass; `lib/whatsapp/sql.test.mts` 25 pass on PGlite (migrations run in order, end-to-end signed POST, down migration). tsc and lint clean; production build exit 0 before the QA fixes.
+
+**QA round 1 (audits/qa/2026-11-26-whatsapp-phase1-premerge.md) FAIL, fixed:**
+- F1: `jsonb_typeof(x) <> 'string'` is NULL for a missing id, so the skip never fired; a status without an id failed the whole delivery. Now `is distinct from`.
+- F2: a statement timeout rolls back the whole transaction including `attempts + 1`, so a poison event could retry forever and crowd the sweep. Attempts now counted by `wa_begin_attempt` in a separate request; retry list capped at 7 days, fewest attempts first.
+- F3: `wa_digits` turned a BSUID like 'IN.1349...' into a phone. Now only phone-shaped input (8 to 15 digits) yields digits.
+- F4: failed status without `errors` left status NULL; a non-numeric code failed the delivery. Fixed with an existence flag and a guarded cast.
+- F5: a number change to a phone owned by another contact still wrote a history row. History now records only what was applied.
+- F6: retention kept raw bodies of failed events forever. Now purges any state after 30 days.
+- F7: Q24 was used twice; ours is now Q-WA1.
+Each fix has a regression test.
+
+**Not verified:** multi-connection concurrency on real Postgres (PGlite is single-connection); live PostgREST RPC shapes; that the Vercel plan accepts a */5 cron (Pro does; ~Rs 2,300/month matches Pro). Production migration and deploy wait for Rishi.
+
+**QA round 2 (audits/qa/2026-11-26-whatsapp-phase1-premerge-rerun.md) PASS with 4 Low notes, all fixed:** R1 events aged past the 7-day retry window now count in `wa_exhausted_count` so they cannot vanish silently; R2 the F5 test now also asserts the delivery completed and the system message is stored (it passed with the guard deleted before); R3 stale comments in the sweep route and plan corrected; R4 `wa_begin_attempt` uses SKIP LOCKED so a duplicate request does not wait on a row being processed. Tests 14 + 26 pass; production build exit 0 on the final code.

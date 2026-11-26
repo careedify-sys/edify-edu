@@ -5,13 +5,22 @@ Endpoint: `https://edifyedu.in/api/whatsapp/webhook`
 Receive-only. It verifies Meta's subscription check (GET) and accepts signed
 message and delivery-status events (POST). It sends no WhatsApp messages.
 
+Since Phase 1 (docs/whatsapp-platform-implementation-plan.md) every signed
+delivery is stored in Supabase before the 200 and projected into contacts,
+conversations, messages and statuses. Run
+`supabase/migrations/20261201120000_whatsapp_core.sql` BEFORE deploying it,
+or the webhook answers 500 (Meta retries).
+
 ## Files
 
 | File | Role |
 |---|---|
 | `app/api/whatsapp/webhook/route.ts` | GET verification, POST events, logging |
 | `lib/whatsapp/signature.ts` | `X-Hub-Signature-256` HMAC check, constant-time token compare |
-| `lib/whatsapp/dedupe.ts` | Duplicate-event guard (per-instance, 24h TTL) |
+| `lib/whatsapp/ingest.ts` | POST handling: verify, store, process (testable, no framework imports) |
+| `lib/whatsapp/store.ts` | Supabase RPC calls (service role) |
+| `app/api/cron/whatsapp-sweep/route.ts` | Every 5 min: retries stored events that did not complete, purges raw bodies after 30 days |
+| `supabase/migrations/20261201120000_whatsapp_core.sql` | Tables and the processing functions (`.down.sql` undoes it) |
 
 ## Environment variables (server-only)
 
@@ -38,23 +47,29 @@ Never prefix either with `NEXT_PUBLIC_`. That would ship it to the browser.
 | POST, body over 1 MB | 413 |
 | POST, signed, invalid JSON | 400 |
 | POST, signed, not `whatsapp_business_account` | 200, ignored |
-| POST, signed, valid | 200 `EVENT_RECEIVED` |
+| POST, signed, valid, stored | 200 `EVENT_RECEIVED` (even if processing failed: the sweeper retries) |
+| POST, signed, valid, database write failed | 500 (Meta retries) |
 | Either, env var missing | 500 `Not configured` |
 
-Dedupe keys: `msg:<wamid>` for messages, `status:<wamid>:<status>` for status
-updates, so `sent`, `delivered` and `read` each count once.
+Duplicates are stopped by unique keys in Postgres: the SHA-256 of the raw body
+(whole-delivery retries), the message wamid, and wamid+status for statuses.
+This holds across Vercel instances.
 
 Logs show counts and types only, for example
-`{"messages":1,"statuses":0,"duplicates":0,"messageTypes":{"text":1}}`.
-No phone numbers, names, text, media ids, tokens or payloads.
+`{"event":12,"state":"completed","messages":1,"duplicates":0,"statuses":0,...,"messageTypes":{"text":1}}`.
+No phone numbers, names, text, media ids, tokens, payloads or error messages.
 
-## Known limit: dedupe is per instance
+## Tests
 
-The in-memory cache catches a fast retry on the same warm Vercel instance, not a
-retry that lands on another instance. That is harmless while the handlers do
-nothing. Before adding a side effect (saving a lead, replying), add a table with
-a UNIQUE key column and insert-on-conflict-do-nothing, and only act when the
-insert created a row.
+```
+npx tsx lib/whatsapp/ingest.test.mts
+PGLITE_MODULE=file:///<dir>/node_modules/@electric-sql/pglite/dist/index.js npx tsx lib/whatsapp/sql.test.mts
+```
+
+The SQL suite runs the migrations on PGlite (Postgres in WebAssembly); install
+PGlite outside the repo (`npm i --prefix <dir> @electric-sql/pglite@0.3`). It is
+single-connection, so multi-connection concurrency needs a real non-production
+Postgres.
 
 ## Vercel deploy
 
