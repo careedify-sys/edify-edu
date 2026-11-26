@@ -22,6 +22,15 @@
       ],
       "port": 3100,
       "autoPort": true
+    },
+    {
+      "name": "wa-inbox-mock",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "set WA_INBOX_MOCK=1&& set ADMIN_SESSION_TOKEN=local-mock-session&& npx next dev -p 3107"
+      ],
+      "port": 3107
     }
   ]
 }

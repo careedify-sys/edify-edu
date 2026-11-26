@@ -484,6 +484,19 @@ await test('P2: month usage counts delivered, in flight, failed and Meta billabl
   assert.equal(d('meta_free'), 0)
 })
 
+await test('P2: deleting a contact removes its chat, notes and consent but keeps the lead', async () => {
+  const c = await one<{ id: string; lead_id: string }>(`select id, lead_id from wa_contacts where phone_e164 = '+919800000102'`)
+  const conv = await one<{ id: string }>(`select id from wa_conversations where contact_id = $1`, [c.id])
+  await db.query(`insert into wa_notes (conversation_id, actor, body) values ($1, 'owner', 'n')`, [conv.id])
+  await db.query(`insert into wa_consent (contact_id, purpose, granted, source, evidence, recorded_by) values ($1, 'counselling_call', true, 'whatsapp_message', 'e', 'owner')`, [c.id])
+  await db.query(`delete from wa_contacts where id = $1`, [c.id])
+  assert.equal(await count(`select count(*) n from wa_conversations where id = $1`, [conv.id]), 0)
+  assert.equal(await count(`select count(*) n from wa_messages where conversation_id = $1`, [conv.id]), 0)
+  assert.equal(await count(`select count(*) n from wa_notes where conversation_id = $1`, [conv.id]), 0)
+  assert.equal(await count(`select count(*) n from wa_consent where contact_id = $1`, [c.id]), 0)
+  assert.equal(await count(`select count(*) n from leads where id = $1`, [c.lead_id]), 1)
+})
+
 await test('P2: anon and authenticated cannot call inbox functions; new tables have RLS', async () => {
   for (const role of ['anon', 'authenticated']) {
     await db.exec(`set role ${role}`)

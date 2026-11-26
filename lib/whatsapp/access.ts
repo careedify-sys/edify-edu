@@ -12,9 +12,9 @@ export type Actor = { id: string; role: Role }
 export type Action =
   | 'view' | 'send' | 'request_phone' | 'note' | 'link_lead' | 'create_lead'
   | 'record_call' | 'record_consent' | 'archive'
-  | 'edit_settings' | 'toggle_sending' | 'override_cap' | 'connection_check'
+  | 'edit_settings' | 'toggle_sending' | 'override_cap' | 'connection_check' | 'delete_contact'
 
-const OWNER_ONLY: ReadonlySet<Action> = new Set(['edit_settings', 'toggle_sending', 'override_cap', 'connection_check'])
+const OWNER_ONLY: ReadonlySet<Action> = new Set<Action>(['edit_settings', 'toggle_sending', 'override_cap', 'connection_check', 'delete_contact'])
 
 export function can(actor: Actor | null, action: Action): boolean {
   if (!actor) return false

@@ -43,6 +43,7 @@ export type SpendInput = {
 export type SpendSummary = {
   monthStart: string
   freePerMonth: number | null
+  serviceSent: number            // delivered + in flight this month
   freeUsed: number
   freeLeft: number | null
   paidMessages: number
@@ -132,7 +133,7 @@ export function summariseSpend(i: SpendInput): SpendSummary {
   }
 
   return {
-    monthStart: i.usage.month_start, freePerMonth: free, freeUsed, freeLeft, paidMessages, metaBillable,
+    monthStart: i.usage.month_start, freePerMonth: free, serviceSent: sent, freeUsed, freeLeft, paidMessages, metaBillable,
     chargesInr, budgetInr, remainingInr, overrideActive, next,
   }
 }

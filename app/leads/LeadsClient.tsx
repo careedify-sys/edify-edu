@@ -448,6 +448,7 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
             autoComplete="off"
           />
         </div>
+        <a className="logout-btn" href="/leads/whatsapp" style={{ textDecoration: 'none' }}>WhatsApp inbox</a>
         <span className="secure">{iLock} Secure · Rishi</span>
         <button
           className="logout-btn"
