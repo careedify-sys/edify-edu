@@ -234,3 +234,7 @@
 .leads-scope .wa .phonebox .wimgph { display: flex; align-items: center; justify-content: center; height: 140px; border-radius: 8px; background: #d9d3ca; color: var(--slate); font-size: 13px; }
 .leads-scope .wa .phonebox .wdoc { display: flex; gap: 8px; align-items: center; padding: 10px; border-radius: 8px; background: #f3f0eb; font-size: 13px; }
 .leads-scope .wa .phonebox .wbtn .wico { margin-right: 6px; }
+/* Phase 4 referrals */
+.leads-scope .wa .chipbtn.on { background: var(--navy); color: var(--white); border-color: var(--navy); }
+.leads-scope .wa .linklike { font: inherit; background: none; border: 0; padding: 0; color: var(--navy); text-decoration: underline; cursor: pointer; }
+.leads-scope .wa .tbl tbody tr:hover td { background: #f8fafc; }

@@ -213,6 +213,14 @@ export default function InboxClient(props: {
     }
   }
 
+  // Deep link from the referrals screen: /leads/whatsapp?c=<conversation id>.
+  // The id is an opaque uuid, never a phone number.
+  useEffect(() => {
+    const c = new URLSearchParams(window.location.search).get('c') ?? ''
+    if (/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(c)) { setSelectedId(c); reloadThread(c) }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   const unreadTotal = useMemo(() => rows.reduce((n, r) => n + (r.unread_count > 0 ? 1 : 0), 0), [rows])
   const sweepStale = settings?.lastSweep ? now - Date.parse(settings.lastSweep.at) > 15 * 60_000 || !settings.lastSweep.ok : true
 

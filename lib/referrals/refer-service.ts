@@ -2,6 +2,7 @@
 // The store is passed in so tests and mock mode run without Supabase.
 import { randomInt, createHmac } from 'crypto'
 import { REF_CODE_ALPHABET, TERMS_VERSION, FLAG_TEXT, type CleanReferral } from './refer-rules'
+import type { ReferralRow } from './referral-types'
 
 export type SubmitOutcome = 'created' | 'repeat' | 'rate_limited' | 'code_taken'
 export type SubmitRow = { ref_code: string | null; outcome: SubmitOutcome; referral_id: string | null }
@@ -70,7 +71,7 @@ export function notificationEmail(code: string, r: CleanReferral, d: { flags: st
 }
 
 // ── Mock store (WA_INBOX_MOCK=1, never in production) ──────────────────────
-type MockRow = { id: string; code: string; r: CleanReferral; at: number; flags: string[]; campaign: string | null; attribution: string }
+export type MockRow = { id: string; code: string; r: CleanReferral; at: number; flags: string[]; campaign: string | null; attribution: string; row: ReferralRow }
 export function mockReferralStore(disclosure = 'Mock disclosure. The real sentence goes here once Rishi approves it (Q55).'): ReferralStore & { rows: MockRow[]; opens: Map<string, number> } {
   const rows: MockRow[] = []
   const opens = new Map<string, number>()
@@ -89,7 +90,18 @@ export function mockReferralStore(disclosure = 'Mock disclosure. The real senten
       if (rows.some(x => x.r.referredPhone === r.referredPhone)) flags.push('already_referred')
       if (rows.some(x => x.r.referrerPhone === r.referrerPhone && now - x.at < 864e5)) flags.push('many_from_referrer')
       const id = `00000000-0000-4000-8000-${String(rows.length + 1).padStart(12, '0')}`
-      rows.push({ id, code, r, at: now, flags, campaign: r.campaign ? 'Mock campaign' : null, attribution: r.campaign ? 'link' : 'none' })
+      const campaign = r.campaign ? 'Mock campaign' : null
+      const attribution: ReferralRow['attribution'] = r.campaign ? 'link' : 'none'
+      const iso = new Date(now).toISOString()
+      const row: ReferralRow = {
+        id, ref_code: code, referrer_name: r.referrerName, referrer_phone: r.referrerPhone, referred_name: r.referredName, referred_phone: r.referredPhone,
+        programme: r.programme, preferred_university_id: r.universityId, preferred_university: r.university, final_university: null, referrer_note: r.note,
+        referrer_wa_optin: r.waOptin, terms_version: TERMS_VERSION, campaign_id: campaign ? '00000000-0000-4000-8000-00000000c001' : null, campaign_name: campaign,
+        attribution, lead_id: null, stage: 'new', flags, review_state: flags.length ? 'needs_review' : 'clear', next_follow_up: null,
+        admission_confirmed_on: null, reward_rule_id: null, reward_amount_inr: null, reward_due_on: null, reward_approved_at: null, reward_approved_by: null,
+        reward_paid_on: null, payment_ref: null, closed_reason: null, created_at: iso, updated_at: iso,
+      }
+      rows.push({ id, code, r, at: now, flags, campaign, attribution, row })
       hits.push({ b: `ph:${r.referrerPhone}`, at: now })
       if (ipHash) hits.push({ b: `ip:${ipHash}`, at: now })
       return { ref_code: code, outcome: 'created', referral_id: id }

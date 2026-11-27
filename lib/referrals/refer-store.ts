@@ -39,6 +39,7 @@ export function supabaseReferralStore(): ReferralStore {
 
 const g = globalThis as unknown as { __referMock?: ReturnType<typeof mockReferralStore> }
 export const referMockMode = () => process.env.WA_INBOX_MOCK === '1' && process.env.NODE_ENV !== 'production'
+export const referMockStore = () => (g.__referMock ??= mockReferralStore())
 export function referralStore(): ReferralStore {
-  return referMockMode() ? (g.__referMock ??= mockReferralStore()) : supabaseReferralStore()
+  return referMockMode() ? referMockStore() : supabaseReferralStore()
 }
