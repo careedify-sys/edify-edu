@@ -36366,7 +36366,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
   "slug": "online-mba-entrepreneurship-india-2026",
-  "updatedAt": "2026-11-25",
+  "updatedAt": "2026-11-27",
   "title": "Online MBA Entrepreneurship India 2026: Fees & Universities",
   "h1Title": "Online MBA in Entrepreneurship: Universities, Fees and Who Should Enrol",
   "metaDescription": "Online MBA Entrepreneurship 2026, 4 UGC-DEB universities (DSU ₹1.3L, Chandigarh ₹1.75L, JAIN ₹1.75L–1.96L, Amity ₹2.25L), syllabus, founder ROI, who should apply.",
@@ -36421,7 +36421,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     },
     {
       "q": "Does Chandigarh University offer scholarships on the online MBA in Entrepreneurship?",
-      "a": "Yes. Chandigarh offers a 25% Early Bird scholarship that brings the standard tier from ₹2,33,500 down to ₹1,75,125 net (saving ₹58,375). The Premium 3-certificate tier (Harvard, PwC, PMI CAPM) gets a 20% scholarship to ₹1,90,400 net. Both tiers include the Entrepreneurship specialisation. Talk to our counsellor for the latest details and check UGC-DEB before applying."
+      "a": "Yes. Chandigarh offers a 25% Early Bird scholarship that brings the MBA plan from ₹2,33,500 down to ₹1,75,125 net (saving ₹58,375). The Triple Industry Certified MBA plan (Harvard, PwC India, PMI CAPM) gets a 20% scholarship to ₹1,90,400 net. Both plans include the Entrepreneurship specialisation. Talk to our counsellor for the latest details and check UGC-DEB before applying."
     },
     {
       "q": "Which is better for entrepreneurship: online MBA or PGDM?",
@@ -36436,7 +36436,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
   "slug": "online-mba-event-management-india-2026",
-  "updatedAt": "2026-11-25",
+  "updatedAt": "2026-11-27",
   "title": "MBA in Event Management Online India 2026: Universities & Fees",
   "h1Title": "Online MBA in Event Management: Universities Offering It and Their Fees",
   "metaDescription": "MBA In Event Management Online 2026: Online MBA in Event Management 2026, fees ₹1.65L–₹1.76L, only 2 UGC-DEB approved universities (BVP, Chandigarh), syllabus, s...",
@@ -36487,7 +36487,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     },
     {
       "q": "Are there scholarships available for online MBA in Event Management?",
-      "a": "Chandigarh University offers a 25% Early Bird scholarship on the standard tier (saving ₹58,375) and a 20% scholarship on the Premium 3-certificate tier. BVP currently does not publish a structured scholarship scheme online; contact admissions for any available concessions. Talk to our counsellor for the latest details and check UGC-DEB before applying."
+      "a": "Chandigarh University offers a 25% Early Bird scholarship on the MBA plan (saving ₹58,375) and a 20% scholarship on the Triple Industry Certified MBA plan. BVP currently does not publish a structured scholarship scheme online; contact admissions for any available concessions. Talk to our counsellor for the latest details and check UGC-DEB before applying."
     },
     {
       "q": "Can I do an online MBA in Event Management without work experience?",
@@ -47020,17 +47020,17 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 <tbody>
 <tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>MBA plan, list price (full 2-year programme)</strong></td><td style="padding:10px">Rs 2,33,500</td><td style="padding:10px">Published programme fee before the Early Bird Scholarship applies</td></tr>
 <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>MBA plan, Early Bird price</strong></td><td style="padding:10px">Rs 1,75,125</td><td style="padding:10px">25 percent Early Bird Scholarship; Rs 87,562 a year or Rs 43,781 a semester</td></tr>
-<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>Online MBA with 3 certificates, list price (full 2-year programme)</strong></td><td style="padding:10px">Rs 2,38,000</td><td style="padding:10px">Published programme fee before the Early Bird Scholarship applies</td></tr>
-<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>Online MBA with 3 certificates, Early Bird price</strong></td><td style="padding:10px">Rs 1,90,400</td><td style="padding:10px">20 percent Early Bird Scholarship; Rs 95,200 a year or Rs 47,600 a semester</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>Triple Industry Certified MBA plan, list price (full 2-year programme)</strong></td><td style="padding:10px">Rs 2,38,000</td><td style="padding:10px">Published programme fee before the Early Bird Scholarship applies</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>Triple Industry Certified MBA plan, Early Bird price</strong></td><td style="padding:10px">Rs 1,90,400</td><td style="padding:10px">20 percent Early Bird Scholarship; Rs 95,200 a year or Rs 47,600 a semester</td></tr>
 <tr><td style="padding:10px"><strong>Booking amount at admission</strong></td><td style="padding:10px">Rs 10,000</td><td style="padding:10px">One-time deposit to secure the seat, adjusted against total fee</td></tr>
 </tbody>
 </table>
 
-<p>Read the table again. The two MBA variants differ by certificate count, list price and Early Bird rate: 25 percent off Rs 2,33,500 for the 1-certificate MBA, 20 percent off Rs 2,38,000 for the 3-certificate MBA. Aggregator sites quote whichever variant matches their table and whichever price mode (list or Early Bird) they prefer. That is why the number swings by roughly Rs 62,875 across sites even though nothing is hidden. The Rs 1.75L to Rs 2.38L range you will see on edifyedu.in's own MBA page runs from the lowest Early Bird price to the highest list price, not a fee spread across specialisations.</p>
+<p>Read the table again. The two MBA variants differ by certificate count, list price and Early Bird rate: 25 percent off Rs 2,33,500 for the MBA plan, 20 percent off Rs 2,38,000 for the Triple Industry Certified MBA plan. Aggregator sites quote whichever variant matches their table and whichever price mode (list or Early Bird) they prefer. That is why the number swings by roughly Rs 62,875 across sites even though nothing is hidden. The Rs 1.75L to Rs 2.38L range you will see on edifyedu.in's own MBA page runs from the lowest Early Bird price to the highest list price, not a fee spread across specialisations.</p>
 
 <p><strong>What triggers each concession.</strong> Both early-bird tiers apply to students who complete admission within the current-year enrolment window. Chandigarh University Online typically opens two intakes per year. If you enrol inside the window, you pay the concession-adjusted total for your variant. If you enrol after the window closes, the scholarship does not apply and the fee reverts to the list price for your variant (Rs 2,33,500 or Rs 2,38,000). There is no counsellor negotiation involved; each concession is a published tier and either you qualify or you do not.</p>
 
-<p><strong>What a student actually pays.</strong> A student on the 3-certificate MBA in the current window pays Rs 1,90,400. A student on the 1-certificate MBA in the same window pays Rs 1,75,125. Both variants can be paid by year or by semester, and financing options exist. The Rs 10,000 booking amount is charged at admission and adjusted against the total. All variants include the two-year semester structure with four semesters of coursework. If you enrol outside the concession window, the early-bird rate does not apply, so verify the enrolment cut-off with an independent counsellor before you pay.</p>
+<p><strong>What a student actually pays.</strong> A student on the Triple Industry Certified MBA plan in the current window pays Rs 1,90,400. A student on the MBA plan in the same window pays Rs 1,75,125. Both variants can be paid by year or by semester, and financing options exist. The Rs 10,000 booking amount is charged at admission and adjusted against the total. All variants include the two-year semester structure with four semesters of coursework. If you enrol outside the concession window, the early-bird rate does not apply, so verify the enrolment cut-off with an independent counsellor before you pay.</p>
 
 <p>For a full side-by-side against other UGC-DEB approved online MBAs, the <a href="/universities/chandigarh-university-online/mba">Chandigarh University Online MBA programme page</a> shows the fee, specialisation lineup, and eligibility in the same table format used across every university on edifyedu.in.</p>
 

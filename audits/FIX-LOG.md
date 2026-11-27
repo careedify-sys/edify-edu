@@ -1,8 +1,39 @@
 # Fix log
 
+## 2026-11-27 B3 batch 19 round 2: Christ FeeBreakdown lines, Q60 row, rendered head changes, CU plan names
+
+Branch fix/b3-batch-19, on e857e46. Answers QA pre-merge audits/qa/2026-11-27-b3-batch-19-premerge.md (FAIL on F1 and F2, C1 for the coordinator, advisory A2).
+
+**F1. Christ BBA FeeBreakdown printed three unsourced lines (components/FeeBreakdown.tsx).**
+- Why: once getExactFee returned Christ's ₹3,00,000, FeeBreakdown rendered its generic block on the BBA hub and /bba/general-management: "Payment is accepted semester-wise or in full", "EMI available through lending partners" and "Study Material / Included (digital)". Christ prints the BBA fee per year (sheet row 1c), its EMI line names no lending partner (row 1f), and no row covers study material.
+- What changed: christ-university-online joins NO_UNSOURCED_FEE_COMPONENTS, the B3 batch 4 list for exactly this case. Those pages now print "Confirm the payment schedule with our counsellor before you pay." and no Study Material row. The ₹3,00,000 total is unchanged.
+
+**F2. Q60 row had 7 cells (audits/QUESTIONS-FOR-RISHI.md).**
+- Why: a stray "||" put the note in an extra cell, which GFM drops, so the "Rishi's answer" column rendered empty.
+- What changed: the note is now the 6th cell, starting "RESOLVED 27 Nov (answered from the source, not by Rishi)", following the Q6 convention. The row has 6 cells like the header.
+
+**C1. Six rendered titles and metas changed through templates (accepted by the coordinator, 27 Nov).**
+- Why it happened: the templates print a sourced fee and the feeBreakdown labels once they exist, the same treatment every hub with a published fee gets. No source title, seoTitle, h1Title or metaDescription field was edited in batch 19; its entry now says so.
+- The six:
+  - /universities/christ-university-online/bba: title "Christ University Online BBA 2026 | edifyedu.in" became "Christ Online BBA Fees 2026: ₹3,00,000 | edifyedu.in".
+  - The same hub's description, og and twitter tags now carry the fee.
+  - /universities/christ-university-online/bba/general-management: description "fees on request" became "₹3,00,000 fees". Title unchanged.
+  - /compare/chandigarh-vs-lpu, /compare/amity-vs-chandigarh and /compare/manipal-jaipur-vs-chandigarh: description and og:description read "MBA plan ... Triple Industry Certified MBA plan" instead of "with 1 certificate ... with 3 certificates", from the feeBreakdown labels.
+  - /fees: description "published total fee for 60" became "61".
+- Checked against scripts/check-protected-pages.mjs: none of these paths is in FREEZE_SLUGS (8 review posts) or in data/protected-ai-pages.csv. The gate passes.
+
+**A2. Leftover CU certificate wording (lib/blog.ts, lib/coupon-pages.ts).**
+- Why: CU names its plans "MBA" and "Triple Industry Certified MBA" (batch19 sheet 2a and 2e; batch20 sheet item 3). Rows 1-2 of the fake-or-legit table already used the plan names, rows 3-4 and the coupon did not, so one table used two vocabularies.
+- What changed:
+  - is-chandigarh-university-online-fake-or-legit-2026: table rows 3-4 and the two paragraphs below ("1-certificate MBA", "3-certificate MBA") now use "MBA plan" / "Triple Industry Certified MBA plan". updatedAt was already 2026-11-27.
+  - online-mba-entrepreneurship-india-2026 and online-mba-event-management-india-2026 FAQs: "standard tier" / "Premium 3-certificate tier (Harvard, PwC, PMI CAPM)" become the two plan names, with "PwC India" as CU prints it (batch20 sheet 3e). updatedAt 2026-11-25 to 2026-11-27.
+  - CU coupon: the certifications row, the exclusion and the FAQ use the plan names. The FAQ says what each plan carries (Harvard; Harvard plus PwC India and PMI), per batch20 sheet 3d-3e.
+- Fee figures and fee sentences are otherwise verbatim. Gates: fee 205, blog-fees 1950, em-dash 227, all unchanged.
+- Left: lpu-vs-chandigarh-university-online-mba-2026 still says "₹2.38L (3-certificate list price)" in one table cell. Outside this list; batch 20 can pick it up.
+
 ## 2026-11-27 B3 batch 19: Christ BBA fee, CU plan labels and annual fee, Amrita per-specialisation tuition, Mysore MBA (stop-case)
 
-Branch fix/b3-batch-19, on the batch 18 round 2 tip (02552a9). Source: audits/verify/batch19-facts-2026-11-27.md (fact-checker, 27 Nov), committed with this batch. It reads online.christuniversity.in, www.cuonlineedu.in/mba, www.uni-mysore.in, onlineamrita.com and the deb.ugc.ac.in register. Nothing is summed: separate registration, admission and exam fees stay separate lines. No title, seoTitle or metaDescription changed.
+Branch fix/b3-batch-19, on the batch 18 round 2 tip (02552a9). Source: audits/verify/batch19-facts-2026-11-27.md (fact-checker, 27 Nov), committed with this batch. It reads online.christuniversity.in, www.cuonlineedu.in/mba, www.uni-mysore.in, onlineamrita.com and the deb.ugc.ac.in register. Nothing is summed: separate registration, admission and exam fees stay separate lines. No title, seoTitle or metaDescription source field changed. Six rendered heads changed through templates; round 2 (above) lists them.
 
 **1. Christ online BBA fee (lib/data.ts, lib/blog.ts).**
 - Why: the site showed ₹175K / Rs 1,75,000. Christ's BBA fee tab prints "For Indian Students ... Total- Rs.3,00,000" (Rs 1,00,000 a year for 3 years, as printed). Sheet row 1c is a CONFLICT. Application (INR 1,500 + GST), admission (INR 5,000) and exam (INR 3,000 a year) fees are listed separately and are not added in.
