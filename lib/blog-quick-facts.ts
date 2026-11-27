@@ -147,7 +147,7 @@ export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; gr
     { label: 'ODL portal', value: 'ignouadmission.samarth.edu.in' },
     { label: 'Online portal', value: 'ignouiop.samarth.edu.in' },
     { label: 'Cycles', value: 'January and July' },
-    { label: 'MBA programme fee', value: 'Rs 66,000 (4 semesters)', green: true },
+    { label: 'MBA programme fee', value: 'Rs 16,000 per semester (Rs 18,000 for the 3rd)', green: true },
     { label: 'MBA eligibility', value: 'Bachelor degree, 50% (45% reserved)' },
     { label: 'Re-registration', value: 'onlinerr.ignou.ac.in' },
   ],

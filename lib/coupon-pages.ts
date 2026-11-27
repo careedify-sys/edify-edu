@@ -395,7 +395,8 @@ export const COUPON_PAGES: CouponPageData[] = [
     shortName: 'IGNOU',
     tier: 'budget',
     totalFee: 'Rs 16,000 per semester (Rs 18,000 for the 3rd) plus registration and development fees',
-    totalFeeNum: 66000,
+    // IGNOU publishes per-semester fees, not a total; nothing reads totalFeeNum.
+    totalFeeNum: 0,
     maxSavings: 'Rs 0',
     maxSavingsNum: 0,
     finalFee: 'Rs 16,000 per semester (Rs 18,000 for the 3rd) plus registration and development fees',
