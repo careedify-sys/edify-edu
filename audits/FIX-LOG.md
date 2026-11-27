@@ -1,5 +1,24 @@
 # Fix log
 
+## 2026-11-27 B3 batch 20 round 2: QA fixes (audits/qa/2026-11-27-b3-batch-20-premerge.md)
+
+Branch fix/b3-batch-20, new commit on b7c902c. Source for every salary figure kept or added: audits/verify/batch20a-salary-facts-2026-11-27.md (S2, S3, S7). No title, seoTitle, h1Title or metaDescription changed. No allowlist entry added.
+
+- **F1, same-page table leftovers.** Why: batch 20 said in prose that these universities publish no online-MBA salary range, but comparison tables on the same pages still printed the old unsourced ranges, so each page contradicted itself.
+  - amity-vs-manipal: the "Avg Salary Range" row (₹5L – ₹12L / ₹4L – ₹15L, sheet A7/A8 CONFLICT) is now "Published salary figure": Amity "Highest package Rs 18 LPA (all programmes, no year given)" (S3), Manipal "About 5.5 LPA MBA average, group-wide across Online Manipal universities (no year given)" (S2).
+  - jain-vs-amity: the row (₹5L - ₹18L / ₹5L - ₹12L, A11/A12) is now JAIN "Not published", Amity "Highest package Rs 18 LPA (all programmes, no year given)".
+  - nmims-vs-symbiosis: the NMIMS "₹5L - ₹10L" (A14) is now "Not published", matching the Symbiosis cell.
+  - online-mba-pune: the "NMIMS Online MBA" column is gone from the Pune sector table (header and 5 cells). The SPPU column is left for the generic-salary chunk.
+  - mba-vs-pgdm: handled in batch 21 (column removed, NMIMS online range deleted from the one-line frame in round 2).
+  - Sweep: .b8tmp/sweep20.cjs takes every post batch 20 touched, finds each "does not publish / publishes no / not published" sentence, and lists any other segment or table cell on the page that pairs the named university with an LPA or lakh p.a. figure. Table cells are attributed through their column header and row label; the first version matched sentences only and missed all four known rows, so it was fixed and re-run until it caught them. After the edits the only hits are the two labelled sheet figures above and mba-vs-pgdm, which batch 21 removes.
+  - check-blog-fees stays 1948: no fee figure was exposed.
+- **F2, IGNOU coupon page (app/coupons/[slug]/page.tsx).** Why: IGNOU runs no coupon (couponCode 'N/A'), but the EMI section printed "The N/A coupon is applied at enrollment". Checking every other couponCode sentence found the same defect throughout: the intro said "The verified IGNOU online MBA discount coupon for 2026 is N/A" with a Rs amount, and the "Why the coupon matters", "at a Glance", "How to Apply" (and its HowTo JSON-LD), buyer's guide, EMI, "Best Time to Apply" sections, the peer-table first row ("via N/A"), the Course schema description and the disclaimer's amount line all described a coupon that does not exist. What changed: one hasCoupon flag (couponCode !== 'N/A'), the same test the hero, countdown and Offer schema already used, now gates all of those. The peer-table row shows page.couponDiscount ("No coupon on this programme") instead, and the scholarships sentence drops its "works with the N/A coupon" clause. Only the IGNOU page is affected; the other 23 render as before. check-coupon-claims passes (24 pages).
+- **F3, UPES.** Why: "UPES does not publish online-MBA salary outcomes" overstated sheet S7/A18: UPES Online prints an "Average Salary Hike" percentage from an alumni survey, just no rupee figure. What changed: FAQ answer (which feeds the FAQPage JSON-LD) and body now say "UPES publishes no rupee salary figure for its online MBA (it reports an alumni-survey salary-hike percentage)". The percentage itself is not quoted.
+- **A4 wording.**
+  - best-online-mba-colleges FAQ: "Amity does not publish online-MBA salary outcomes" now reads "Amity Online publishes only a highest package (Rs 18 LPA, no year given)", consistent with the other posts (S3). This added one LPA figure to a post the salary ratchet counts, so one unsourced generic figure in the same post was removed to pay for it: the fresher row of the career-goal table, "Rs 4 to 7 LPA at junior management", is now "Junior management role". Salary baseline 2353 -> 2346 (this swap plus the deleted table cells).
+  - mba-vs-bba: the sentence no longer starts lowercase ("Edify counsellor interviews (2025 to 2026) give the following pattern."). QA's point that this attributes the whole table to counsellor interviews is not addressed here; that table belongs to a later salary chunk.
+- updatedAt: all 7 edited posts already carry 2026-11-27.
+
 ## 2026-11-27 B3 batch 20: coupon EMI claims, CU plan names and PwC claims, salary ratchet gate, university salary figures
 
 Branch fix/b3-batch-20, rebased onto the batch 19 round 2 tip (674fb42). Sources: audits/verify/batch20-facts-2026-11-27.md (EMI, CU plans) and audits/verify/batch20a-salary-facts-2026-11-27.md (salaries), both fact-checker 27 Nov and committed with this batch. Nothing is summed. No title, seoTitle, h1Title or metaDescription source field changed, and none of the 5 frozen review posts was edited.

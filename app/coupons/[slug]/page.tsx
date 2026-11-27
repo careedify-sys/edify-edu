@@ -91,6 +91,9 @@ export default async function CouponDetailPage({ params }: { params: any }) {
   const expiryISO = expiryDate.toISOString().split('T')[0]
   const tierMax = TIER_AMOUNTS[page.tier].max
   const tierBase = TIER_AMOUNTS[page.tier].base
+  // B3 batch 20 round 2: a page with couponCode 'N/A' (IGNOU) runs no coupon, so every
+  // section that describes the coupon is gated on this, as the hero and countdown already were.
+  const hasCoupon = page.couponCode !== 'N/A'
   const liveBonus = getTodaysBonus(page.tier)
 
   // Every universityName in COUPON_PAGES ends in "Online", and this template
@@ -162,7 +165,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
     '@context': 'https://schema.org',
     '@type': 'Course',
     name: `${uniDisplay} Online MBA`,
-    description: `UGC-DEB approved 2-year online MBA from ${page.universityName} (NAAC ${page.naac}). Verified discount coupon ${page.couponCode} saves up to ${page.maxSavings} at enrollment.`,
+    description: `UGC-DEB approved 2-year online MBA from ${page.universityName} (NAAC ${page.naac}).${hasCoupon ? ` Verified discount coupon ${page.couponCode} saves up to ${page.maxSavings} at enrollment.` : ''}`,
     // B3 batch 18: officialUrl is a bare host in lib/coupon-pages.ts; schema sameAs needs an absolute URL.
     provider: { '@type': 'CollegeOrUniversity', name: page.universityName, sameAs: page.officialUrl.startsWith('http') ? page.officialUrl : `https://${page.officialUrl}` },
     offers: {
@@ -186,7 +189,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {offerSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerSchema) }} />}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      {hasCoupon && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
 
       <div className="max-w-4xl mx-auto px-4 py-8">
@@ -295,6 +298,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         )}
 
         {/* Editorial intro - substantial for SEO */}
+        {hasCoupon && (<>
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>{page.shortName} Online MBA Discount Coupon {year}: What You Get</h2>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
@@ -320,6 +324,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
             <p className="text-xs text-amber-800 mt-2">It comes off your fee when you enroll with code <strong>{page.couponCode}</strong>. The top of this page shows today&apos;s amount and a countdown to the next Tuesday or Saturday.</p>
           </div>
         </section>
+        </>)}
 
         {/* Our video review (lib/videos.ts) */}
         <div className="mb-8 empty:hidden">
@@ -327,6 +332,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         </div>
 
         {/* Why discounts matter */}
+        {hasCoupon && (<>
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Why the {page.couponCode} Coupon Code Matters</h2>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
@@ -385,11 +391,13 @@ export default async function CouponDetailPage({ params }: { params: any }) {
             </table>
           </div>
         </section>
+        </>)}
 
         {/* Slug-conditional mid-page reassurance CTA — MUJ coupon */}
         {slug === MUJ_COUPON_SLUG && <MujCouponMidReassurance />}
 
         {/* Application steps */}
+        {hasCoupon && (
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>How to Apply the {page.couponCode} Coupon Code</h2>
           <p className="text-sm text-slate-600 mb-4">Apply the {page.couponCode} discount to your {page.shortName} Online MBA admission in six steps. Average time: 1-3 working days from first call to discounted invoice.</p>
@@ -402,6 +410,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
             ))}
           </div>
         </section>
+        )}
 
         {/* University scholarships note */}
         <section className="mb-8">
@@ -410,7 +419,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
             {page.universityName} runs its own scholarships for merit, defence staff, divyaang students, sports winners, alumni and others. The university sets the rules, amounts and documents for each, and they change between batches. We do not run these scholarships, so we cannot quote their current values here.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            If you think you qualify, ask {page.shortName} admissions when you enroll. They will tell you if the scholarship is open for the {year} batch, what documents you need, and whether it works with the {page.couponCode} coupon.
+            If you think you qualify, ask {page.shortName} admissions when you enroll. They will tell you if the scholarship is open for the {year} batch, what documents you need{hasCoupon ? <>, and whether it works with the {page.couponCode} coupon</> : null}.
           </p>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
             Talk to our counsellor for current {page.shortName} scholarship details.
@@ -418,6 +427,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         </section>
 
         {/* SEO content section - targets all "online mba discount coupon" intent keywords */}
+        {hasCoupon && (<>
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Online MBA Discount Coupons in India {year}: Buyer&apos;s Guide</h2>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
@@ -475,6 +485,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
             Verify the specific EMI terms with {page.shortName} admissions before enrolling. Some universities apply coupon discounts to lump-sum payment only, not to semester-wise or EMI plans. Our admission desk will clarify the exact terms for the {year} batch during your free enrollment call.
           </p>
         </section>
+        </>)}
 
         {/* What this coupon does NOT include */}
         <section className="mb-8">
@@ -496,7 +507,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
               <tbody>
                 <tr className="bg-amber-50">
                   <td className="px-4 py-2 font-bold text-amber-700">{page.shortName}</td>
-                  <td className="px-4 py-2 font-bold text-amber-700">{page.maxSavings} via {page.couponCode}</td>
+                  <td className="px-4 py-2 font-bold text-amber-700">{hasCoupon ? <>{page.maxSavings} via {page.couponCode}</> : page.couponDiscount}</td>
                 </tr>
                 {page.peerComparisons.map((p, i) => (
                   <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
@@ -510,6 +521,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         </section>
 
         {/* When to apply */}
+        {hasCoupon && (
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>Best Time to Apply the {page.couponCode} Coupon Code</h2>
 
@@ -528,6 +540,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
             The single most actionable timing tip: schedule the final fee invoice generation on a Tuesday or Saturday in IST. That single decision moves the coupon value from Rs {tierBase.toLocaleString('en-IN')} to Rs {tierMax.toLocaleString('en-IN')} - a difference of Rs {(tierMax - tierBase).toLocaleString('en-IN')} for zero extra effort. The countdown at the top of this page shows the next max window.
           </p>
         </section>
+        )}
 
         {/* Who should and shouldn't use this coupon */}
         <section className="mb-8">
@@ -613,7 +626,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
           </p>
           <ul className="text-[10px] text-slate-400 leading-relaxed list-disc pl-4 mt-1 space-y-0.5">
             <li>The coupon codes on this page are fee adjustments our admission desk arranges at enrollment for the {year} batch. They are not official offers from {page.universityName} or its affiliates, and the university does not issue, endorse, sponsor or run them.</li>
-            <li>The amounts (Rs {tierMax.toLocaleString('en-IN')} on Tuesday and Saturday IST, Rs {tierBase.toLocaleString('en-IN')} on other days) are indicative for this month. They may change, pause or end at any time without notice.</li>
+            {hasCoupon && <li>The amounts (Rs {tierMax.toLocaleString('en-IN')} on Tuesday and Saturday IST, Rs {tierBase.toLocaleString('en-IN')} on other days) are indicative for this month. They may change, pause or end at any time without notice.</li>}
             <li>{page.universityName} admissions decide whether the discount applies and how much it is. That depends on your details, programme seats, batch quotas and university policy at the time you enroll.</li>
             <li>University scholarships (merit, defence, divyaang, sports, alumni and similar) are separate from this coupon and run by {page.universityName}. Check them with the university at {page.officialUrl}.</li>
             <li>Coupons cannot be transferred or cashed, and cannot be combined with other third-party coupon codes for the same programme.</li>
