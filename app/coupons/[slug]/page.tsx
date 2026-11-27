@@ -154,7 +154,8 @@ export default async function CouponDetailPage({ params }: { params: any }) {
     '@type': 'Course',
     name: `${uniDisplay} Online MBA`,
     description: `UGC-DEB approved 2-year online MBA from ${page.universityName} (NAAC ${page.naac}). Verified discount coupon ${page.couponCode} saves up to ${page.maxSavings} at enrollment.`,
-    provider: { '@type': 'CollegeOrUniversity', name: page.universityName, sameAs: page.officialUrl },
+    // B3 batch 18: officialUrl is a bare host in lib/coupon-pages.ts; schema sameAs needs an absolute URL.
+    provider: { '@type': 'CollegeOrUniversity', name: page.universityName, sameAs: page.officialUrl.startsWith('http') ? page.officialUrl : `https://${page.officialUrl}` },
     offers: {
       '@type': 'Offer',
       category: 'Online Education',

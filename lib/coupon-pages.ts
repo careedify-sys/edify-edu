@@ -185,7 +185,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     couponCode: 'LPU2026-5K',
     couponDiscount: 'Up to Rs 5,000 verified discount coupon (Tue/Sat IST)',
     blogSlug: 'online-mba-lpu-review-2026',
-    officialUrl: 'online.lpu.in',
+    officialUrl: 'www.lpuonline.com',
     discounts: [
       { type: '20% placement-linked grant', eligibility: 'All students', saving: 'Built into fee structure', howToApply: 'Automatic - included in advertised fee' },
       { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code LPU2026-5K during enrollment call' },
@@ -258,7 +258,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     couponCode: 'SMU2026-4K',
     couponDiscount: 'Up to Rs 5,000 verified discount coupon (Tue/Sat IST)',
     blogSlug: 'smu-online-mba-review',
-    officialUrl: 'onlinesmu.com',
+    officialUrl: 'www.onlinemanipal.com',
     discounts: [
       { type: 'Northeast India scholarship', eligibility: 'Northeast India and Sikkim residents', saving: '30% fee waiver', howToApply: 'Submit domicile certificate' },
       { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code SMU2026-4K during enrollment call' },
@@ -369,7 +369,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     couponCode: 'SYMB2026-5K',
     couponDiscount: 'Up to Rs 5,000 verified discount coupon (Tue/Sat IST)',
     blogSlug: 'symbiosis-online-mba-review-2026',
-    officialUrl: 'ssodl.symbiosis.ac.in',
+    officialUrl: 'ssodl.edu.in',
     discounts: [
       { type: 'Work experience scholarship', eligibility: '2+ years professional experience', saving: 'Rs 55,000 (the Rs 3,70,000 programme fee becomes Rs 3,15,000, the figure shown above)', howToApply: 'Submit experience letters during admission' },
       { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code SYMB2026-5K during enrollment call' },
@@ -407,7 +407,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     couponCode: 'N/A',
     couponDiscount: 'No coupon on this programme',
     blogSlug: 'ignou-online-mba-review-2026',
-    officialUrl: 'ignou.ac.in',
+    officialUrl: 'www.ignou.ac.in',
     discounts: [
       { type: 'No coupon', eligibility: 'All students', saving: 'Rs 66,000 total, no coupon runs on this programme', howToApply: 'Apply directly on ignou.ac.in' },
       { type: 'SC/ST fee concession', eligibility: 'SC/ST category candidates', saving: 'Reduced fee structure', howToApply: 'Submit caste certificate during admission' },
@@ -571,7 +571,7 @@ export const COUPON_PAGES: CouponPageData[] = [
     nirf: 'Not ranked in NIRF 2025',
     couponCode: 'DSU2026-5K',
     couponDiscount: 'Up to Rs 5,000 verified discount coupon (Tue/Sat IST)',
-    officialUrl: 'dsu.edu.in',
+    officialUrl: 'dsuonline.com',
     discounts: [
       { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code DSU2026-5K during the enrollment call' },
     ],

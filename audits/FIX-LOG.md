@@ -1,5 +1,71 @@
 # Fix log
 
+## 2026-11-27 B3 batch 18 part B: Symbiosis EMI wording, JMI fee and specialisations, Christ MBA JSON, coupon officialUrl
+
+Branch fix/b3-batch-18, rebased onto origin/main (a1b5368) after part A. Source: audits/verify/batch18-facts-2026-11-27.md (fact-checker, 27 Nov). It cites ssodl.edu.in, the JMI CDOE prospectus 2026-27, the deb.ugc.ac.in register, the naac.gov.in xlsx and the nirfindia.org 2025 tables. No title or meta changed, and no total was computed.
+
+**B1. Symbiosis SSODL EMI (9 spec JSONs, 36 edits).**
+- Why: the spec pages said SSODL EMI is "interest-bearing, not zero-cost" and runs through "the university's marketing partner". They also said "MUJ publishes a no-cost EMI; SSODL does not." The SSODL fee table names only an "EMI" plan paid in semester instalments and an "EMI With Scholarship" plan, with no interest rate or lender, so neither claim has a source.
+- What changed:
+  - fees.body and the FAQ now state only the published plans and that no interest rate or lender is stated.
+  - The FAQ question is now "Does SSODL offer EMI?".
+  - The chooseAlternatives line comparing SSODL with MUJ is removed.
+- Profile "No-cost EMI" card: Symbiosis emiFrom is already 0 in lib/data.ts (an earlier B3 batch removed the derived 13,125). The card is gated on emiFrom > 0, so it cannot render and lib/data.ts needed no change.
+- No protected or frozen title or meta quotes 13,125 or "No-cost EMI" for Symbiosis (grep of lib, app, data and scripts).
+
+**B2. Jamia Millia Islamia.**
+- Fee: the CDOE Prospectus 2026-27, s.4.3.1, gives "Programme Fee (Annually) Rs 35,000" plus Rs 1,500 one-time registration. The site's Rs 50,000 is wrong.
+  - Part A already removed every page-content and blog Rs 50,000 JMI quote, and the JMI JSON's own fee lines were already the counsellor line.
+  - fees.body now gives the prospectus fee, "Rs 35,000 a year programme fee plus Rs 1,500 one-time registration (JMI CDOE prospectus 2026-27)", and says JMI publishes no programme total.
+  - The tldr and the fee FAQ keep the counsellor line. The hub's top fee is the counsellor line because getExactFee is 'none', and check-hub-fee-text blocks any typed figure in a rendered hub field (tldr, FAQs) while the top hides the fee. An allowlist entry would weaken that gate, so I did not add one.
+- lib/data.ts JMI MBA `fees: '₹50K – ₹50K'` is left as it is.
+  - The field holds a programme total.
+  - A per-year figure would print as "Total Program Fee" through getExactFee and FeeBreakdown.
+  - getExactFee already suppresses the placeholder, so it renders nowhere visible.
+  - It still sits in the RSC payload. Publishing the per-year fee properly needs a per-year fee field or label, which is a data-model decision.
+- Specialisations and EMI: the prospectus lists no specialisations and no EMI for the online MBA, so every "4 specialisations" claim and the four named tracks are gone. This removed the specialisation FAQ, the specialisation red flag, the second-year track descriptions and the honest-verdict line. The EMI section now says the prospectus describes no EMI plan.
+- The about text now says the online MBA is on the UGC-DEB register in online mode from the 2026-27 July session. The register lists the JMI MBA as ODL only for 2023-24 to 2025-26, and as Online(OL) only from 2026-27 July (row 13499).
+- lib/data.ts JMI emiFrom 2500 and its specs list are unchanged. They need a data decision; EMI does not render, because the fee is 'none'.
+
+**B3. Christ MBA JSON (latent: the hub 307s and MBA stays in comingSoon).**
+- Why: no Christ online MBA exists on the UGC-DEB register in any year or mode, and online.christuniversity.in lists none. The JSON described an entitled online MBA with one Business Analytics specialisation, 50% eligibility, WES and AICTE recognition, 30-40/60-70 assessment weighting, a January/July intake, an EMI and a "clearly erroneous" fee record.
+- What changed (35 path edits):
+  - NAAC A++ is now A+ (CGPA 3.42).
+  - NIRF always names its category: Management #57 (2025) and University #63 (2025). The "categoryy" typo is fixed.
+  - The UGC-DEB entitlement claims are replaced by what the register shows: other Christ online programmes, no MBA.
+  - Deleted: the specialisation, eligibility, WES, AICTE, weighting, intake and EMI claims, and the erroneous-fee red flag and FAQ text. Removing these took out 5 FAQs and 1 red flag.
+  - The first red flag now warns not to pay for a Christ online MBA until it appears on the register for the admission session.
+- Out of scope, for batch 19: the Christ portal lists BBA at Rs 1,00,000 against lib/data.ts ₹175K, and MCA at Rs 1,09,250 against ₹2.3L. The portal does not say whether these are totals or annual figures.
+
+**B4. Coupon officialUrl (lib/coupon-pages.ts).**
+- Replaced:
+  - LPU: online.lpu.in (NXDOMAIN) is now www.lpuonline.com, from lib/data.ts.
+  - Symbiosis: ssodl.symbiosis.ac.in (NXDOMAIN) is now ssodl.edu.in.
+  - IGNOU: the bare ignou.ac.in (connection reset) is now www.ignou.ac.in.
+  - SMU: onlinesmu.com (TLS failure) is now www.onlinemanipal.com, the lib/data.ts SMU officialUrl.
+  - DSU: dsu.edu.in (campus site, 522) is now dsuonline.com. The sheet listed DSU's lib/data.ts officialUrl as missing, but the record carries https://dsuonline.com.
+- Kurukshetra is unchanged (kuk.ac.in, blocked by Cloudflare; Q63).
+- app/coupons/[slug]/page.tsx :157: schema provider.sameAs now prefixes https:// to the bare host, so it is absolute on all 24 coupon pages.
+- :606 prints officialUrl as plain text ("Check them with the university at {host}"), not a link. It was left in this batch and listed for a decision, because the house rule bars links to official university sites in visible copy.
+
+**B5.** Q62 (Christ MBA keep or drop), Q63 (Kurukshetra URL) and Q64 (Symbiosis EMI) were appended to audits/QUESTIONS-FOR-RISHI.md. The SMU question was not needed, because onlinesmu.com is no longer referenced.
+
+**Counts (built HTML, part A build vs this build).**
+
+| Check | Before | After |
+|---|---|---|
+| SSODL MBA pages (9), "interest-bearing" | 16 | 0 |
+| SSODL MBA pages, "marketing partner" | 16 | 0 |
+| SSODL MBA pages, "no-cost EMI"/"zero-cost", page text and payload | 56 | 0 |
+| SSODL MBA pages, published-plan line | 0 | 16 |
+| Symbiosis profile, "No-cost EMI" | 0 | 0 |
+| Coupon pages (24), sameAs absolute | 0 | 24 |
+| JMI hub, "4 specialisations" | 14 | 8 |
+
+- The 8 JMI "4 specialisations" left come from templates, not the JSON: the generated QuickAnswers ("It offers 4 specialisations", "Against: 4 specialisations, a narrow choice") and the AI-answer block both count lib/data.ts programDetails.MBA.specs.
+- The JMI hub's 15 "₹50K" hits are lib/data.ts pd.fees in the RSC payload; none is visible.
+- Both need lib/data.ts changes. Emptying the specs list could remove spec URLs, so it is listed for a decision rather than done here.
+
 ## 2026-11-27 B3 batch 18 part A: JMI fee quotes, bare fee renders in templates, 404-shell OG check
 
 Branch fix/b3-batch-18, cut from 23da39d (batch 17 round 2). Every figure comes from getExactFee in lib/fees.ts (lib/data.ts). No new fact, no title or meta change, and no fee, gap or EMI computed. Part B waits for the fact-checker sheet (audits/verify/batch18-facts-2026-11-27.md).
