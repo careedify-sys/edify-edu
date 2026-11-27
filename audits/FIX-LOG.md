@@ -7573,3 +7573,13 @@ The owner gets settings for the ₹500 monthly cap, the rates, a read-only conne
 **Next phase decided 27 Nov.** Student referral campaigns from Rishi's Excel come after this deploy. Each campaign needs his approval, uploading never sends, and there is no paid platform. See plan section 12. Q-WA4 asks for the opt-in source.
 
 After deploy, run the connection check (B2/D4) and confirm Health shows `last_sweep` within 5 minutes.
+
+**DEPLOYED 27 Nov 2026 (f0f6866, Rishi approved the single deploy).** main fast-forwarded dc0cb35 to f0f6866, live at 13:53 IST, confirmed by a phrase only the new privacy policy carries (fetched with `?cb=`). The Vercel API returned 403 for this team, so the deploy was verified on the site, not in the dashboard.
+
+Live checks I ran:
+- `/leads/whatsapp` and `/leads` without a session return 307 to `/admin-login?from=...` with a 15-byte body, so no inbox content leaks. Both send `x-robots-tag: noindex, nofollow, noarchive`.
+- `/api/cron/whatsapp-sweep` and `/api/cron/due-calls` return 401 without the cron secret.
+- 12 public URLs return 200 (home, universities, a profile, blog, compare, contact, programs/mba, verify, privacy-policy, sitemap, robots, admin-login).
+- Third-party tags, browser probe with a control: on `/admin-login`, clarity, fbq and Tawk_API are undefined and 0 tag resources load. On `/contact` (the control), all four load and the enquiry form still has its name, phone and email fields. The control proves the probe can see tags when they are there.
+
+Left for Rishi, because each step needs his login, his phone or his own test number: the connection check, Health `last_sweep`, an inbound message from his test number, a manual reply, phone visibility and Call now, and the CRM lead link. Sending stays off until he switches it on to test a reply. Campaigns and automation stay off.
