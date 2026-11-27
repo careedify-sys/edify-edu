@@ -60,18 +60,24 @@ export default async function ReportsPage() {
       </section>
 
       <section className="card">
-        <h2 className="big">Referral funnel and cost</h2>
+        <div className="btn-row" style={{ justifyContent: 'space-between', alignItems: 'center' }}>
+          <h2 className="big">Referral funnel and cost</h2>
+          <a className="btn btn-ghost" href="/leads/whatsapp/reports/funnel-export">Download funnel CSV</a>
+        </div>
         <p className="small muted">
           Form opens are /refer page loads from the campaign link (Meta does not report button clicks). A referral counts for a campaign through its link, or when the referrer is a number that campaign messaged in the last 30 days.
           Message spend is an <strong>estimate</strong>: Meta-billable messages × the marketing rate in Settings{rate == null ? ' (not set)' : ` (₹${rate})`} + {tax}% tax. Meta&apos;s invoice is the actual figure. Rewards are the payments you recorded.
           {!fr.ok && <> <span style={{ color: '#ef4444' }}>{fr.error}</span></>}
+        </p>
+        <p className="small muted">
+          How the estimates are worked out: Meta-billable messages × marketing rate × (1 + GST %). Est. cost per referral divides that by unique valid referrals; Est. cost per admission divides it by admissions; the all-in figure adds rewards approved and paid before dividing by admissions.
         </p>
         <div className="tblwrap">
           <table className="tbl">
             <thead><tr>
               <th>Campaign</th><th className="num">Form opens</th><th className="num">Referrals</th><th className="num">Unique valid</th><th className="num">Contacted</th>
               <th className="num">Applications</th><th className="num">Admissions</th><th className="num">Rewards pending</th><th className="num">Rewards paid</th>
-              <th className="num">Est. spend</th><th className="num">Per referral</th><th className="num">Per admission</th><th className="num">All-in per admission</th>
+              <th className="num">Est. message spend</th><th className="num">Est. cost per referral</th><th className="num">Est. cost per admission</th><th className="num">Est. all-in cost per admission</th>
             </tr></thead>
             <tbody>
               {withStats.map(c => {

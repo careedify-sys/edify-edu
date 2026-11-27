@@ -357,18 +357,27 @@ begin
   -- both miss each other.
   perform pg_advisory_xact_lock(hashtext('referral_submit:' || p_referred_phone));
 
+  -- Limits run before the repeat check, so probing known pairs for their
+  -- referral id costs the same as a submission.
+  delete from referral_rate_hits where at < now() - interval '2 days';
+  if p_ip_hash is not null and (select count(*) from referral_rate_hits where bucket = 'ip:' || p_ip_hash and at > now() - interval '1 hour') >= 5 then
+    return query select null::text, 'rate_limited'::text, null::uuid; return;
+  end if;
+  -- Site-wide ceiling: the honeypot, timing and origin checks are client-side
+  -- and the IP can be spoofed off the main domain, so a flood stops here.
+  if (select count(*) from referrals where created_at > now() - interval '1 hour') >= 200 then
+    return query select null::text, 'rate_limited'::text, null::uuid; return;
+  end if;
+
   select r.id, r.ref_code into v_prev from referrals r
    where r.referrer_phone = p_referrer_phone and r.referred_phone = p_referred_phone
      and r.created_at > now() - interval '24 hours'
    order by r.created_at desc limit 1;
   if found then
+    if p_ip_hash is not null then insert into referral_rate_hits (bucket) values ('ip:' || p_ip_hash); end if;
     return query select v_prev.ref_code, 'repeat'::text, v_prev.id; return;
   end if;
 
-  delete from referral_rate_hits where at < now() - interval '2 days';
-  if p_ip_hash is not null and (select count(*) from referral_rate_hits where bucket = 'ip:' || p_ip_hash and at > now() - interval '1 hour') >= 5 then
-    return query select null::text, 'rate_limited'::text, null::uuid; return;
-  end if;
   if (select count(*) from referral_rate_hits where bucket = 'ph:' || p_referrer_phone and at > now() - interval '1 day') >= 10 then
     return query select null::text, 'rate_limited'::text, null::uuid; return;
   end if;

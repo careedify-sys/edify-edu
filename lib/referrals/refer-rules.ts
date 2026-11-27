@@ -27,6 +27,7 @@ export type ReferInput = {
   universityId: string
   note: string
   permission: boolean
+  termsAccepted: boolean
   waOptin: boolean
   campaign: string
   website: string // honeypot: people never see it, so it stays empty
@@ -46,7 +47,7 @@ export type CleanReferral = {
   campaign: string | null
 }
 
-export type FieldErrors = Partial<Record<'referrerName' | 'referrerPhone' | 'referredName' | 'referredPhone' | 'programme' | 'universityId' | 'note' | 'permission', string>>
+export type FieldErrors = Partial<Record<'referrerName' | 'referrerPhone' | 'referredName' | 'referredPhone' | 'programme' | 'universityId' | 'note' | 'permission' | 'termsAccepted', string>>
 
 const cleanText = (v: unknown, max: number) =>
   typeof v === 'string' ? v.replace(/[\u0000-\u001f\u007f<>]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, max) : ''
@@ -84,6 +85,7 @@ export function validateReferral(raw: Partial<ReferInput>, unis: UniOption[]):
 
   const note = cleanText(raw.note, 1000)
   if (raw.permission !== true) errors.permission = 'Please confirm your friend agreed to be contacted.'
+  if (raw.termsAccepted !== true) errors.termsAccepted = 'Please read and accept the referral terms.'
 
   if (Object.keys(errors).length) return { ok: false, errors }
   const campaign = cleanText(raw.campaign, 16)

@@ -12,7 +12,7 @@ async function test(name: string, fn: () => Promise<void> | void) {
 const UNIS = [{ id: 'amity-university-online', name: 'Amity University Online' }]
 const base: ReferInput = {
   referrerName: 'Asha Rao', referrerPhone: '98765 43210', referredName: 'Vikram Singh', referredPhone: '+91 91234 56789',
-  programme: 'MBA', universityId: 'amity-university-online', note: 'Call after 6 pm', permission: true, waOptin: false,
+  programme: 'MBA', universityId: 'amity-university-online', note: 'Call after 6 pm', permission: true, termsAccepted: true, waOptin: false,
   campaign: '', website: '', elapsedMs: MIN_FILL_MS + 1,
 }
 const ok = (r: Partial<ReferInput> = {}) => {
@@ -39,6 +39,13 @@ await test('programme and university are optional; "not decided" keeps no id', (
 await test('a university or programme not on the list is refused', () => {
   const v = validateReferral({ ...base, universityId: 'made-up-uni', programme: 'PhD' }, UNIS)
   assert.ok(!v.ok); assert.ok(v.errors.universityId); assert.ok(v.errors.programme)
+})
+
+await test('terms must be accepted explicitly (QA F5)', () => {
+  const v = validateReferral({ ...base, termsAccepted: false }, UNIS)
+  assert.ok(!v.ok && !v.bot); assert.deepEqual(Object.keys(v.errors), ['termsAccepted'])
+  const w = validateReferral({ ...base, termsAccepted: 'yes' as unknown as boolean }, UNIS)
+  assert.ok(!w.ok)
 })
 
 await test('missing permission, bad names and bad numbers give field errors', () => {

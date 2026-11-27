@@ -158,6 +158,20 @@ await test('referral: rate limit of 5 per IP per hour', async () => {
   assert.equal((await submit({ code: 'EDU-REF-FNFFFFFF', referrer: P(30), referred: P(50), ip })).outcome, 'rate_limited')
 })
 
+await test('referral: a repeat counts toward the IP limit; site-wide ceiling of 200 an hour', async () => {
+  const ip = '7'.repeat(64)
+  const first = await submit({ code: 'EDU-REF-RPRPRPRP', referrer: P(70), referred: P(71), ip })
+  assert.equal(first.outcome, 'created')
+  for (let i = 0; i < 4; i++) assert.equal((await submit({ code: 'EDU-REF-RQRQRQRQ', referrer: P(70), referred: P(71), ip })).outcome, 'repeat')
+  assert.equal((await submit({ code: 'EDU-REF-RQRQRQRQ', referrer: P(70), referred: P(71), ip })).outcome, 'rate_limited')
+  const before = await num(`select count(*) from referrals where created_at > now() - interval '1 hour'`)
+  await db.query(`insert into referrals (ref_code, referrer_name, referrer_phone, referred_name, referred_phone, referred_permission, terms_version)
+    select 'EDU-REF-Z' || translate(lpad(g::text, 7, '0'), '01', 'XY'), 'Bulk Test', '+919811100000', 'Bulk Test', '+919811100001', true, 't'
+    from generate_series(1, $1::int) g`, [200 - before])
+  assert.equal((await submit({ code: 'EDU-REF-CXCXCXCX', referrer: P(72), referred: P(73), ip: '8'.repeat(64) })).outcome, 'rate_limited')
+  await db.query(`delete from referrals where referrer_name = 'Bulk Test'`)
+})
+
 await test('referral: attribution by link token, then by phone match', async () => {
   const a = await reached(P(60))
   assert.match(a.token, /^[0-9a-f]{16}$/)

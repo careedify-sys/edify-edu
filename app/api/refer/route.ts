@@ -3,7 +3,6 @@
 // referral id and nothing about anyone else.
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
-import { clientIP } from '@/lib/rate-limit'
 import { validateReferral, type ReferInput } from '@/lib/referrals/refer-rules'
 import { submitReferral, hashIp, notificationEmail } from '@/lib/referrals/refer-service'
 import { referralStore, referMockMode } from '@/lib/referrals/refer-store'
@@ -17,16 +16,31 @@ const reply = (body: unknown, status = 200) => NextResponse.json(body, { status,
 const MAX_BODY = 8 * 1024
 
 // Only the site's own pages may post here.
+// The host must be the real site (or localhost in development), so a script
+// pointed at the *.vercel.app address cannot pass by sending matching headers.
+const SITE_HOSTS = new Set(['edifyedu.in', 'www.edifyedu.in'])
 function sameOrigin(req: NextRequest): boolean {
   const origin = req.headers.get('origin')
   const host = req.headers.get('x-forwarded-host') ?? req.headers.get('host')
   if (!origin || !host) return false
+  const dev = process.env.NODE_ENV !== 'production' && /^localhost(:\d+)?$/.test(host)
+  if (!SITE_HOSTS.has(host) && !dev) return false
   try { return new URL(origin).host === host } catch { return false }
+}
+
+// Cloudflare sets cf-connecting-ip and overwrites any value the client sent;
+// the first x-forwarded-for entry is client-controlled, so it is never used.
+function clientIp(req: NextRequest): string {
+  return req.headers.get('cf-connecting-ip')?.trim() || req.headers.get('x-real-ip')?.trim() || 'unknown'
 }
 
 export async function POST(req: NextRequest) {
   if (!sameOrigin(req)) return reply({ ok: false, error: 'Please submit the form on edifyedu.in/refer.' }, 403)
-  if (Number(req.headers.get('content-length') ?? 0) > MAX_BODY) return reply({ ok: false, error: 'The form is too long.' }, 413)
+  // Browsers always send Content-Length for this form; without it the body
+  // would be read in full before the size check.
+  const len = Number(req.headers.get('content-length') ?? NaN)
+  if (!Number.isFinite(len)) return reply({ ok: false, error: 'Could not read the form. Please try again.' }, 411)
+  if (len > MAX_BODY) return reply({ ok: false, error: 'The form is too long.' }, 413)
   let raw: Partial<ReferInput>
   try {
     const text = await req.text()
@@ -46,7 +60,7 @@ export async function POST(req: NextRequest) {
     const store = referralStore()
     if (!(await store.disclosure())) return reply({ ok: false, error: 'Referrals are not open yet.' }, 503)
     const key = process.env.SUPABASE_SERVICE_ROLE_KEY ?? (referMockMode() ? 'mock' : '')
-    const r = await submitReferral(store, v.value, hashIp(clientIP(req), key))
+    const r = await submitReferral(store, v.value, hashIp(clientIp(req), key))
     if (!r.ok) return reply({ ok: false, error: r.error }, r.status)
 
     if (r.outcome === 'created') {

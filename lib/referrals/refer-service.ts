@@ -81,8 +81,9 @@ export function mockReferralStore(disclosure = 'Mock disclosure. The real senten
     async submit(code, r, ipHash) {
       const now = Date.now()
       const prev = [...rows].reverse().find(x => x.r.referrerPhone === r.referrerPhone && x.r.referredPhone === r.referredPhone && now - x.at < 864e5)
-      if (prev) return { ref_code: prev.code, outcome: 'repeat', referral_id: prev.id }
       if (ipHash && hits.filter(h => h.b === `ip:${ipHash}` && now - h.at < 36e5).length >= 5) return { ref_code: null, outcome: 'rate_limited', referral_id: null }
+      if (rows.filter(x => now - x.at < 36e5).length >= 200) return { ref_code: null, outcome: 'rate_limited', referral_id: null }
+      if (prev) { if (ipHash) hits.push({ b: `ip:${ipHash}`, at: now }); return { ref_code: prev.code, outcome: 'repeat', referral_id: prev.id } }
       if (hits.filter(h => h.b === `ph:${r.referrerPhone}` && now - h.at < 864e5).length >= 10) return { ref_code: null, outcome: 'rate_limited', referral_id: null }
       if (rows.some(x => x.code === code)) return { ref_code: null, outcome: 'code_taken', referral_id: null }
       const flags: string[] = []

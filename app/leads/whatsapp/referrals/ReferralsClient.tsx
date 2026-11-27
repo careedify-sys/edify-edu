@@ -79,6 +79,13 @@ export default function ReferralsClient({ mode, initial, initialFilter, initialO
             <option value="">Any campaign</option>
             {(data?.campaigns ?? []).map(x => <option key={x.id} value={x.id}>{x.name}</option>)}
           </select>
+          <input className="field" style={{ minWidth: 180, width: 'auto' }} placeholder="University" value={f.university ?? ''} onChange={e => setF(p => ({ ...p, university: e.target.value }))} aria-label="University (preferred or final)" />
+          <label className="small muted" style={{ display: 'flex', alignItems: 'center', gap: 4 }}>From
+            <input type="date" className="field" style={{ width: 'auto' }} value={f.from ?? ''} max={f.to || undefined} onChange={e => setF(p => ({ ...p, from: e.target.value }))} aria-label="Submitted from (IST)" />
+          </label>
+          <label className="small muted" style={{ display: 'flex', alignItems: 'center', gap: 4 }}>To
+            <input type="date" className="field" style={{ width: 'auto' }} value={f.to ?? ''} min={f.from || undefined} onChange={e => setF(p => ({ ...p, to: e.target.value }))} aria-label="Submitted to (IST)" />
+          </label>
           {owner && <a className="btn btn-ghost" href={exportHref}>Export CSV</a>}
         </div>
         <div className="btn-row" style={{ flexWrap: 'wrap', gap: 6, marginTop: 8 }}>
@@ -113,7 +120,8 @@ export default function ReferralsClient({ mode, initial, initialFilter, initialO
             </tbody>
           </table>
         </div>
-        <p className="small muted" style={{ marginTop: 6 }}>Showing up to 500. Narrow with search or filters.</p>
+        {f.from && f.to && f.from > f.to && <p className="small" style={{ marginTop: 6, color: '#ef4444' }}>The From date is after the To date, so the date range is ignored.</p>}
+        <p className="small muted" style={{ marginTop: 6 }}>Showing up to 500. Narrow with search or filters. Dates are submission dates in India time (IST).</p>
       </section>
 
       {owner && <RulesCard rules={data?.rules ?? []} programmes={programmes} universities={universities} busy={busy} setBusy={setBusy}

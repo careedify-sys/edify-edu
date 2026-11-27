@@ -11,7 +11,7 @@ type Props = {
   termsVersion: string
 }
 
-const EMPTY = { referrerName: '', referrerPhone: '', referredName: '', referredPhone: '', programme: '', universityId: '', note: '', permission: false, waOptin: false, website: '' }
+const EMPTY = { referrerName: '', referrerPhone: '', referredName: '', referredPhone: '', programme: '', universityId: '', note: '', permission: false, termsAccepted: false, waOptin: false, website: '' }
 
 export default function ReferForm({ programmes, universities, disclosure, terms, privacy, termsVersion }: Props) {
   const [f, setF] = useState(EMPTY)
@@ -154,11 +154,15 @@ export default function ReferForm({ programmes, universities, disclosure, terms,
         </details>
       </div>
 
+      <label className="flex gap-3 items-start text-sm text-navy">
+        <input type="checkbox" className="mt-1 w-4 h-4 accent-[#B8892A]" checked={f.termsAccepted} onChange={set('termsAccepted')} {...aria('termsAccepted')} />
+        <span>I have read and accept the referral terms (version {termsVersion}).</span>
+      </label>{err('termsAccepted')}
+
       {message && <p className="text-sm text-[#ef4444]" role="alert">{message}</p>}
       <button type="submit" disabled={status === 'sending'} className="w-full sm:w-auto bg-[#f97316] hover:bg-orange-600 disabled:opacity-60 text-white font-bold rounded-xl px-8 py-3">
         {status === 'sending' ? 'Sending...' : 'Submit referral'}
       </button>
-      <p className="text-xs text-slate-500">By submitting you accept the referral terms above.</p>
     </form>
   )
 }

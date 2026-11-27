@@ -21,7 +21,7 @@ async function setup(extra: Record<string, unknown> = {}) {
   const store = mockReferralStore()
   const repo = mockReferralRepo(store)
   const v = validateReferral({ referrerName: 'Asha Rao', referrerPhone: '9876543210', referredName: 'Vikram Singh', referredPhone: '9123456789',
-    programme: 'MBA', universityId: '', note: '', permission: true, waOptin: false, campaign: '', website: '', elapsedMs: MIN_FILL_MS + 1, ...extra }, [])
+    programme: 'MBA', universityId: '', note: '', permission: true, termsAccepted: true, waOptin: false, campaign: '', website: '', elapsedMs: MIN_FILL_MS + 1, ...extra }, [])
   assert.ok(v.ok)
   const s = await submitReferral(store, v.value, null)
   assert.ok(s.ok)
@@ -134,6 +134,45 @@ await test('search, follow-up due filter, note and CSV export', async () => {
   okr(await svc.addNote(repo, OWNER, id, 'call', 'No answer'))
   const csv = okr(await svc.exportReferrals(repo, OWNER, {}))
   assert.equal(csv.rows.length, 1); assert.equal(csv.header[0], 'Referral ID')
+})
+
+await test('university filter matches preferred or final university, case-insensitive', async () => {
+  const { store, repo, id } = await setup()
+  store.rows[0].row.preferred_university = 'Amity University Online'
+  assert.equal(okr(await svc.listReferrals(repo, OWNER, { stage: '', university: 'amity' })).rows.length, 1)
+  assert.equal(okr(await svc.listReferrals(repo, OWNER, { stage: '', university: 'manipal' })).rows.length, 0)
+  okr(await svc.confirmAdmission(repo, OWNER, id, daysAgo(1), 'Manipal University Jaipur'))
+  assert.equal(okr(await svc.listReferrals(repo, OWNER, { stage: '', university: 'Manipal' })).rows.length, 1)
+  // PostgREST operators are stripped, so the text cannot break the or() filter.
+  assert.equal(svc.cleanFilter({ university: 'Amity),stage.eq.(closed' }).university, 'Amity stage eq closed')
+  const csv = okr(await svc.exportReferrals(repo, OWNER, { university: 'manipal' }))
+  assert.equal(csv.rows.length, 1)
+})
+
+await test('created-date range is inclusive and read in IST', async () => {
+  const { store, repo } = await setup()
+  // 2026-11-10 23:30 IST is 18:00 UTC on the 10th; 2026-11-11 00:30 IST is 19:00 UTC on the 10th.
+  store.rows[0].row.created_at = '2026-11-10T18:00:00.000Z'
+  const n = async (from?: string, to?: string) => okr(await svc.listReferrals(repo, OWNER, { stage: '', from, to })).rows.length
+  assert.equal(await n('2026-11-10', '2026-11-10'), 1)
+  assert.equal(await n('2026-11-11', undefined), 0)
+  assert.equal(await n(undefined, '2026-11-09'), 0)
+  store.rows[0].row.created_at = '2026-11-10T19:00:00.000Z'
+  assert.equal(await n('2026-11-11', '2026-11-11'), 1)
+  assert.equal(await n(undefined, '2026-11-10'), 0)
+  const csv = okr(await svc.exportReferrals(repo, OWNER, { from: '2026-11-11', to: '2026-11-11' }))
+  assert.equal(csv.rows.length, 1)
+})
+
+await test('bad dates are ignored, and a range with from after to is dropped', async () => {
+  const { store, repo } = await setup()
+  store.rows[0].row.created_at = '2026-11-10T06:00:00.000Z'
+  assert.deepEqual([svc.cleanFilter({ from: '2026-02-30' }).from, svc.cleanFilter({ to: '10/11/2026' }).to], ['', ''])
+  assert.deepEqual([svc.cleanFilter({ from: '2026-11-12', to: '2026-11-01' }).from, svc.cleanFilter({ from: '2026-11-12', to: '2026-11-01' }).to], ['', ''])
+  const f = svc.cleanFilter({ from: '2026-11-01', to: '2026-11-30' })
+  assert.equal(f.from, '2026-11-01'); assert.equal(f.to, '2026-11-30')
+  assert.equal(okr(await svc.listReferrals(repo, OWNER, { stage: '', from: '2026-13-01' })).rows.length, 1)
+  assert.equal(okr(await svc.listReferrals(repo, OWNER, { stage: '', from: '2026-11-12', to: '2026-11-01' })).rows.length, 1)
 })
 
 await test('funnel costs: estimate from billable x rate x tax; null when rate or denominator missing', async () => {

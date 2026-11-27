@@ -76,6 +76,19 @@ export type ReferralFilter = {
   review?: 'needs_review' | ''
   due?: 'pending' | 'overdue' | 'followup_due' | ''
   campaignId?: string
+  university?: string // free text, matches preferred or final university
+  from?: string // created on or after, YYYY-MM-DD in IST
+  to?: string // created on or before, YYYY-MM-DD in IST
+}
+
+// Start of an IST calendar day (YYYY-MM-DD) as a UTC ISO timestamp, for
+// created_at range filters. Callers validate the date first.
+export function istDayStartUtc(d: string): string {
+  return new Date(Date.parse(`${d}T00:00:00+05:30`)).toISOString()
+}
+// Start of the IST day after d, so a "to" date includes the whole day.
+export function istNextDayStartUtc(d: string): string {
+  return new Date(Date.parse(`${d}T00:00:00+05:30`) + 864e5).toISOString()
 }
 
 // Today in India, as YYYY-MM-DD. Due dates and overdue checks use IST.

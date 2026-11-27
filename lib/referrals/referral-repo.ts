@@ -1,6 +1,6 @@
 // Data access for the referrals dashboard. Server only (service-role client).
 import type { SupabaseClient } from '@supabase/supabase-js'
-import type { ActivityRow, ReferralFilter, ReferralRow, RewardRule, Stage } from './referral-types'
+import { istDayStartUtc, istNextDayStartUtc, type ActivityRow, type ReferralFilter, type ReferralRow, type RewardRule, type Stage } from './referral-types'
 import { toFunnel, type Funnel } from './funnel'
 
 export type ReferralPatch = Partial<Pick<ReferralRow,
@@ -47,13 +47,22 @@ export function supabaseReferralRepo(sb: SupabaseClient): ReferralRepo {
       if (f.due === 'pending') q = q.in('stage', ['admission_confirmed', 'reward_approved']).gte('reward_due_on', today)
       if (f.due === 'overdue') q = q.in('stage', ['admission_confirmed', 'reward_approved']).lt('reward_due_on', today)
       if (f.due === 'followup_due') q = q.lte('next_follow_up', today).not('stage', 'in', '(reward_paid,closed)')
+      // Dates arrive validated (cleanFilter); IST day bounds, "to" inclusive.
+      if (f.from) q = q.gte('created_at', istDayStartUtc(f.from))
+      if (f.to) q = q.lt('created_at', istNextDayStartUtc(f.to))
+      const groups: string[] = []
       const s = cleanSearch(f.q ?? '')
       if (s) {
         const digits = s.replace(/\D/g, '')
         const ors = [`ref_code.ilike.*${s}*`, `referrer_name.ilike.*${s}*`, `referred_name.ilike.*${s}*`]
         if (digits.length >= 4) ors.push(`referrer_phone.ilike.*${digits}*`, `referred_phone.ilike.*${digits}*`)
-        q = q.or(ors.join(','))
+        groups.push(ors.join(','))
       }
+      const u = cleanSearch(f.university ?? '')
+      if (u) groups.push(`preferred_university.ilike.*${u}*,final_university.ilike.*${u}*`)
+      // Search and university must both match: one or() holding and(or(..),or(..)).
+      if (groups.length === 1) q = q.or(groups[0])
+      else if (groups.length === 2) q = q.or(`and(or(${groups[0]}),or(${groups[1]}))`)
       return (must(await q) as Record<string, unknown>[]).map(flatten)
     },
     async get(id) {

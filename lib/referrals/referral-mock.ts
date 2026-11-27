@@ -1,7 +1,7 @@
 // In-memory referrals for WA_INBOX_MOCK=1 and tests. Shares rows with the
 // /refer mock store, so a test submission appears on the dashboard.
 import type { ReferralRepo } from './referral-repo'
-import type { ActivityRow, ReferralRow, RewardRule } from './referral-types'
+import { istDayStartUtc, istNextDayStartUtc, type ActivityRow, type ReferralRow, type RewardRule } from './referral-types'
 import { cleanSearch } from './referral-repo'
 import type { mockReferralStore } from './refer-service'
 
@@ -19,6 +19,9 @@ export function mockReferralRepo(store: Store): ReferralRepo & { activityLog: Ac
     async list(f, today, limit = 500) {
       const s = cleanSearch(f.q ?? '').toLowerCase()
       const digits = s.replace(/\D/g, '')
+      const uni = cleanSearch(f.university ?? '').toLowerCase()
+      const fromMs = f.from ? Date.parse(istDayStartUtc(f.from)) : null
+      const toMs = f.to ? Date.parse(istNextDayStartUtc(f.to)) : null
       return rows().filter(r => {
         if (f.stage === 'open' && (r.stage === 'reward_paid' || r.stage === 'closed')) return false
         if (f.stage && f.stage !== 'open' && r.stage !== f.stage) return false
@@ -28,6 +31,9 @@ export function mockReferralRepo(store: Store): ReferralRepo & { activityLog: Ac
         if (f.due === 'pending' && !(dueStage && r.reward_due_on && r.reward_due_on >= today)) return false
         if (f.due === 'overdue' && !(dueStage && r.reward_due_on && r.reward_due_on < today)) return false
         if (f.due === 'followup_due' && !(r.next_follow_up && r.next_follow_up <= today && r.stage !== 'reward_paid' && r.stage !== 'closed')) return false
+        if (uni && !`${r.preferred_university ?? ''} ${r.final_university ?? ''}`.toLowerCase().includes(uni)) return false
+        if (fromMs != null && Date.parse(r.created_at) < fromMs) return false
+        if (toMs != null && Date.parse(r.created_at) >= toMs) return false
         if (s) {
           const hay = `${r.ref_code} ${r.referrer_name} ${r.referred_name}`.toLowerCase()
           const ph = digits.length >= 4 && (r.referrer_phone.includes(digits) || r.referred_phone.includes(digits))

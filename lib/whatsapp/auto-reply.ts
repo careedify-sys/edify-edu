@@ -28,13 +28,19 @@ export const normalise = (s: string | null | undefined) =>
 export const isStop = (body: string | null | undefined) =>
   isOptOutText(body) || /^\s*stop promotions\s*[.!]*\s*$/i.test(body ?? '')
 
+// A negation flips the meaning ("not interested", "dont call me"), so any
+// message containing one goes to a person, never to a keyword reply.
+// English and common Hinglish forms, after normalise() drops apostrophes.
+const NEGATIONS = new Set(['no', 'not', 'nope', 'never', 'dont', 'didnt', 'cant', 'cannot', 'wont', 'isnt', 'nahi', 'nahin', 'nai', 'mat', 'na', 'without', 'stop'])
+const hasNegation = (text: string) => text.split(' ').some(w => NEGATIONS.has(w))
+
 // A keyword matches the whole message, or appears as whole words in a short
 // message (at most 6 words). Longer messages go to a person: they usually
-// say more than a keyword reply can answer.
+// say more than a keyword reply can answer. So does any message with a negation.
 export function matchRule(body: string | null | undefined, rules: AutoRule[]): { kind: 'stop' } | { kind: 'rule'; key: AutoRuleKey } | null {
   if (isStop(body)) return { kind: 'stop' }
   const text = normalise(body)
-  if (!text) return null
+  if (!text || hasNegation(text)) return null
   const words = text.split(' ').length
   for (const key of RULE_ORDER) {
     const r = rules.find(x => x.key === key)

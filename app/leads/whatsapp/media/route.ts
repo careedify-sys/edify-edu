@@ -88,7 +88,7 @@ export async function GET(req: NextRequest) {
       const d = await downloadMedia(readGraphEnv(), mediaId)
       if (!d.ok) return err(d.error, 502)
       const name = typeof media?.filename === 'string' ? media.filename : `${type}-${messageId.slice(0, 8)}`
-      return new NextResponse(d.bytes as unknown as BodyInit, { headers: { ...NO_STORE, ...sandbox(d.mime), 'Content-Type': d.mime, 'Content-Disposition': disposition(name, !download && INLINE.has(d.mime)) } })
+      return new NextResponse(d.bytes as unknown as BodyInit, { headers: { ...NO_STORE, ...sandbox(d.mime), 'Content-Type': d.mime, 'Content-Disposition': disposition(name, !download && INLINE.has(d.mime) && d.mime !== 'application/pdf') } })
     }
     return err('Nothing to show.', 400)
   } catch (e) {

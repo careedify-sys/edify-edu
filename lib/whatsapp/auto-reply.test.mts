@@ -37,6 +37,14 @@ await test('STOP and Stop Promotions are opt-outs, never a rule', () => {
   assert.equal(isStop('please stop calling me about details'), false)
 })
 
+await test('negated replies are left for a person (QA F1)', () => {
+  for (const b of ['not interested', 'no not interested', 'dont call me', "don't call me", 'do not call', 'Never call me', 'nahi chahiye', 'mat call karo', 'no reward needed'])
+    assert.equal(key(b), null, b)
+  // Control: the same keywords without a negation still match.
+  assert.equal(key('interested'), 'interested')
+  assert.equal(key('please call me'), 'call_me')
+})
+
 await test('long or unrecognised messages are left for a person', () => {
   assert.equal(key('Hi, my cousin wants an MBA but she works nights, can you share details for weekend batches'), null)
   assert.equal(key('Thanks'), null)

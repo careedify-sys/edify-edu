@@ -5,6 +5,7 @@ import { can, type Actor } from '@/lib/whatsapp/access'
 import type { ReferralRepo, ReferralPatch } from './referral-repo'
 import { FREE_STAGES, STAGES, STAGE_LABEL, todayIST, suggestRule, rewardStatus, type ReferralFilter, type ReferralRow, type RewardRule, type Stage } from './referral-types'
 import { FLAG_TEXT } from './refer-rules'
+import { cleanSearch } from './referral-repo'
 
 type Fail = { ok: false; error: string }
 const deny: Fail = { ok: false, error: 'You do not have permission for this.' }
@@ -22,7 +23,18 @@ export function cleanFilter(f: ReferralFilter): ReferralFilter {
     review: f?.review === 'needs_review' ? 'needs_review' : '',
     due: f?.due === 'pending' || f?.due === 'overdue' || f?.due === 'followup_due' ? f.due : '',
     campaignId: typeof f?.campaignId === 'string' && UUID.test(f.campaignId) ? f.campaignId : undefined,
+    ...cleanDates(f?.from, f?.to),
+    university: cleanSearch(text(f?.university, 120)),
   }
+}
+
+// Created-date range in IST. A date that is not real is dropped; when both
+// are real but from is after to, the range is dropped rather than guessed.
+function cleanDates(from: unknown, to: unknown): Pick<ReferralFilter, 'from' | 'to'> {
+  const a = typeof from === 'string' && validDate(from) ? from : ''
+  const b = typeof to === 'string' && validDate(to) ? to : ''
+  if (a && b && a > b) return { from: '', to: '' }
+  return { from: a, to: b }
 }
 
 export async function listReferrals(repo: ReferralRepo, actor: Actor, f: ReferralFilter) {
@@ -30,7 +42,7 @@ export async function listReferrals(repo: ReferralRepo, actor: Actor, f: Referra
   const filter = cleanFilter(f)
   const today = todayIST()
   const [rows, campaigns, rules] = await Promise.all([repo.list(filter, today), repo.campaigns(), repo.rules()])
-  const all = filter.q || filter.stage || filter.review || filter.due || filter.campaignId ? await repo.list({}, today, 2000) : rows
+  const all = filter.q || filter.stage || filter.review || filter.due || filter.campaignId || filter.university || filter.from || filter.to ? await repo.list({}, today, 2000) : rows
   const counts = {
     total: all.length,
     needsReview: all.filter(r => r.review_state === 'needs_review').length,
