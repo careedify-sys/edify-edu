@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
 import Navbar from '@/components/Navbar'
+import { pickFeeShortMap } from '@/lib/fee-short-map'
+import { TRAFFIC_ORDER } from '@/lib/nav-traffic-order'
 import { EntryPopup, ExitIntentPopup } from '@/components/LeadCapture'
 import Footer from '@/components/Footer'
 import EmailOff from '@/components/EmailOff'
@@ -276,7 +278,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         {/* EntryPopup removed — fires before user sees content, hurts UX */}
         <ExitIntentPopup />
-        <Navbar />
+        <Navbar feeShort={pickFeeShortMap(TRAFFIC_ORDER)} />
         <main
           id="main-content"
           style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}

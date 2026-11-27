@@ -22,7 +22,6 @@
     "app/programs/layout.tsx": 1,
     "app/tools/cgpa-calculator/CgpaCalculatorClient.tsx": 4,
     "app/tools/page.tsx": 7,
-    "app/tools/university-comparison/page.tsx": 1,
     "app/universities/[id]/[program]/layout.tsx": 2,
     "app/universities/[id]/bba/[spec]/page.tsx": 1,
     "app/universities/[id]/bca/[spec]/page.tsx": 1,

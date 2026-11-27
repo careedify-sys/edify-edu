@@ -2834,16 +2834,16 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     shortName: 'Chandigarh', // uses "Chandigarh" in cuchd.in and on its own logo
     // MBA fees from CU's online MBA fee page, supplied by Rishi 2026-11-04. They
     // replace the Aug 2026 record. Two variants:
-    //   1 value-added certificate:  list 2,33,500; after 25% Early Bird 1,75,125;
-    //                               annual 87,563; semester 43,781
-    //   3 value-added certificates: list 2,38,000; after 20% Early Bird 1,90,400;
+    //   plan "MBA" (1 value-added certificate):  list 2,33,500; after 25% Early Bird 1,75,125;
+    //                               annual 87,562; semester 43,781
+    //   plan "Triple Industry Certified MBA" (3 certificates): list 2,38,000; after 20% Early Bird 1,90,400;
     //                               annual 95,200; semester 47,600
     // Pay by year or by semester; financing options exist but no EMI figure is
     // published, so emiFrom is 0 (B3 batch 12; it was 1,75,125 / 24). programFees.mba carries {lowest
     // payable, highest list} so pd.fees agrees at rule 1. officialUrl stays
     // blank: the fee page's domain is not confirmed under the rule above.
     programFees: { mba: { fee: 175125, feeMax: 238000 }, bca: { fee: 177000 }, mca: { fee: 155000 } },
-    feeBreakdown: { mba: { list: 233500, modes: [{ amount: 175125, label: 'with 1 certificate after 25% Early Bird' }, { amount: 190400, label: 'with 3 certificates after 20% Early Bird' }, { amount: 233500, label: 'list with 1 certificate' }, { amount: 238000, label: 'list with 3 certificates' }], perSemester: { list: 43781, listLabel: 'with 1 certificate after Early Bird', net: 47600, netLabel: 'with 3 certificates after Early Bird' }, source: 'Rishi, CU online MBA fee page, 2026-11-04' }, msc: { list: 170000, net: { min: 127500, max: 127500, label: 'after the 25% early-bird scholarship (₹31,875 × 4 semesters)' }, source: 'onlinecu.in MSc Data Science page, 2026-10-30' } },
+    feeBreakdown: { mba: { list: 233500, modes: [{ amount: 175125, label: 'MBA plan after 25% Early Bird' }, { amount: 190400, label: 'Triple Industry Certified MBA plan after 20% Early Bird' }, { amount: 233500, label: 'MBA plan list' }, { amount: 238000, label: 'Triple Industry Certified MBA plan list' }], perSemester: { list: 43781, listLabel: 'MBA plan after Early Bird', net: 47600, netLabel: 'Triple Industry Certified MBA plan after Early Bird' }, source: 'Rishi, CU online MBA fee page, 2026-11-04' }, msc: { list: 170000, net: { min: 127500, max: 127500, label: 'after the 25% early-bird scholarship (₹31,875 × 4 semesters)' }, source: 'onlinecu.in MSc Data Science page, 2026-10-30' } },
     logo: '/logos/university_logos/cu-online.svg',
     name: 'Chandigarh University Online',
     abbr: 'CUO',
@@ -2864,7 +2864,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 0,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'India\'s ONLY online MBA with Triple Industry Certification — PwC India (2 subjects co-taught + PwC certificates), PMI (',
+    tagline: 'Triple Industry Certified MBA plan: two subjects taught by PwC India experts, plus PMI and Harvard certificates',
     description: 'UGC DEB approved online programs from Chandigarh University (CU Online). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Graduates seeking management careers', 'working professionals wanting MBA without career break', 'CA/CS/CMA seeking MBA upgrade'],
     notFor: ['Those not meeting eligibility criteria', 'those requiring only on-campus experience', 'students needing highly personalized offline mentoring'],
@@ -5251,7 +5251,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['General Management'],
-        fees: '₹175K – ₹175K',
+        // Christ online BBA fee tab, "For Indian Students ... Total- Rs.3,00,000"
+        // (Rs 1,00,000 a year x 3 years as printed), online.christuniversity.in/courses/MTA=,
+        // fetched 2026-11-27 (audits/verify/batch19-facts-2026-11-27.md 1c). Application,
+        // admission and exam fees are listed separately and are not added in.
+        fees: '₹3,00,000',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '',

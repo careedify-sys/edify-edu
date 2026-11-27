@@ -3,6 +3,7 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { UNIVERSITIES, getUniversityById } from '@/lib/data'
+import { getPeerUniversitiesSlim } from '@/lib/data-slim'
 import { nirfForProgramme } from '@/lib/data-slim'
 import UniversityPageClient from '@/components/UniversityPageClient'
 import { getResolvableProgrammes, getVerifyPage, resolveSpecHref } from '@/lib/seo/safe-internal-links'
@@ -252,6 +253,13 @@ export default async function UniversityPage(
         programSchema={Object.fromEntries(university.programs.map(p => {
           return [p, { offer: getProgramSchemaOffer(university, p), feeCompact: formatExactFee(getExactFee(university, p)), feeShort: formatExactFeeShort(getExactFee(university, p)) }]
         }))}
+        peerFees={Object.fromEntries(university.programs.map(p => [p, Object.fromEntries(
+          // Same peer pick as the client's "Other universities" card (getPeerUniversitiesSlim is deterministic).
+          getPeerUniversitiesSlim(p, university.id, 4).map(ou => {
+            const full = getUniversityById(ou.id)
+            return [ou.id, full ? formatExactFeeShort(getExactFee(full, p)) : null]
+          }),
+        )]))}
         firstHand={resolveFirstHand(university)}
         cover={getUniversityCover(university.id)}
         specHrefs={Object.fromEntries(university.programs.flatMap(p => {

@@ -373,7 +373,7 @@ export default function ProgramPageClient({ program, programSlug, universities, 
                 <tr key={u.id} className="border-b border-border-light hover:bg-surface-1 transition-colors">
                   <td className="py-3 font-semibold text-navy">{u.name}</td>
                   <td className="py-3 text-right font-bold text-amber-text">{programFees[u.id] ?? 'On request'}</td>
-                  <td className="py-3 text-right text-ink-2">{program === 'MBA' && u.emiFrom > 0 ? `₹${u.emiFrom.toLocaleString()}` : 'On request'}</td>
+                  <td className="py-3 text-right text-ink-2">{/* B3 batch 18: EMI only beside a published fee (programFees is getExactFee). */}{program === 'MBA' && u.emiFrom > 0 && programFees[u.id] ? `₹${u.emiFrom.toLocaleString()}` : 'On request'}</td>
                   <td className="py-3 text-right text-ink-3">{u.programDetails?.[program]?.specs?.length || '—'}</td>
                 </tr>
               ))}

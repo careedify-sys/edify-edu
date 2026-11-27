@@ -6,7 +6,7 @@
     "hero": {
       "headline": "Devi Ahilya Vishwavidyalaya Online MBA, NAAC A+, AICTE Approved, Indore MP State University",
       "body": "Devi Ahilya Vishwavidyalaya (DAVV) Online MBA is UGC-DEB approved, NAAC A+ accredited, and AICTE approved. DAVV, also known as Indore University, is a Madhya Pradesh state government university established in 1964 and named after Rajmata Ahilya Bai Holkar. The online MBA offers 7 specialisations targeting working professionals across Central India. DAVV does not appear in the NIRF 2025 University or Management rankings, the credential case rests on NAAC A+ accreditation, AICTE approval, and the university's established state government recognition.",
-      "sub": "NAAC A+ · AICTE Approved · UGC-DEB · MP State University est. 1964 · Rs 75K-1.80L indicative fee"
+      "sub": "NAAC A+ · AICTE Approved · UGC-DEB · MP State University est. 1964"
     },
     "about": {
       "heading": "About Devi Ahilya Vishwavidyalaya Online MBA",
@@ -42,7 +42,7 @@
     },
     "fees": {
       "heading": "Fee Structure, Devi Ahilya Vishwavidyalaya Online MBA",
-      "body": "The total programme fee for the Devi Ahilya Vishwavidyalaya Online MBA is approximately Rs 75,000 to Rs 1,80,000 (indicative), depending on the specialisation. Additional charges may include registration fee and examination fee per semester. Always confirm the exact fee in writing at the offer letter stage before making any payment. Fees listed are indicative and edifyedu.in reconfirms fees each quarter. Talk to our counsellor for current fees before enrolling."
+      "body": "EdifyEdu rechecks fees with Devi Ahilya Vishwavidyalaya Online every quarter. Please reconfirm current fees with our counsellor before any payment. Fees can change between intakes."
     },
     "coupon": {
       "heading": "Scholarships and Fee Concessions",
@@ -70,7 +70,7 @@
     },
     "comparisons": {
       "heading": "Devi Ahilya Vishwavidyalaya vs Peer Online MBA Universities",
-      "body": "Devi Ahilya Vishwavidyalaya Online: NAAC A+, no NIRF 2025 rank, AICTE approved, ~Rs 75K-1.80L fee, 7 specialisations, MP state university.\n\nSRM University Sikkim Online: NAAC A+, no NIRF 2025 rank, AICTE and WES recognised, 7 specialisations, SRM Group brand. Similar NAAC grade and specialisation count, both unranked NIRF. Choose SRM Sikkim for SRM Group brand or WES recognition.\n\nGalgotias University Online: NAAC A+, WES Recognised, NIRF band 101-150 (Management), ~Rs 80,200 fee, 7 specialisations, Delhi-NCR. Choose Galgotias for WES recognition and Management NIRF band.\n\nUse the compare tool at /compare to evaluate side by side."
+      "body": "Devi Ahilya Vishwavidyalaya Online: NAAC A+, no NIRF 2025 rank, AICTE approved, 7 specialisations, MP state university.\n\nSRM University Sikkim Online: NAAC A+, no NIRF 2025 rank, AICTE and WES recognised, 7 specialisations, SRM Group brand. Similar NAAC grade and specialisation count, both unranked NIRF. Choose SRM Sikkim for SRM Group brand or WES recognition.\n\nGalgotias University Online: NAAC A+, WES Recognised, NIRF band 101-150 (Management), ~Rs 80,200 fee, 7 specialisations, Delhi-NCR. Choose Galgotias for WES recognition and Management NIRF band.\n\nUse the compare tool at /compare to evaluate side by side."
     },
     "honestVerdict": {
       "heading": "Honest Verdict, Devi Ahilya Vishwavidyalaya Online MBA",
@@ -89,7 +89,7 @@
         },
         {
           "flag": "Confirm exact fee for your specialisation",
-          "detail": "The fee range of Rs 75,000 to Rs 1,80,000 varies by specialisation and intake. Confirm the specific total fee for your chosen track in writing from the DAVV admissions team before making any payment."
+          "detail": "The fee varies by specialisation and intake. Confirm the specific total fee for your chosen track in writing from the DAVV admissions team before making any payment."
         },
         {
           "flag": "UGC-DEB listing must be verified for your admission year",
@@ -116,7 +116,7 @@
       },
       {
         "q": "What is the total fee for the DAVV Online MBA?",
-        "a": "The indicative total fee is approximately Rs 75,000 to Rs 1,80,000 depending on the specialisation and intake. Confirm the exact total fee for your chosen specialisation in writing from the admissions team before making any payment."
+        "a": "EdifyEdu does not yet hold a verified fee for this programme. Please confirm the current fee with our counsellor before any payment. Confirm the exact total fee for your chosen specialisation in writing from the admissions team before making any payment."
       },
       {
         "q": "Is DAVV AICTE approved for the MBA programme?",
@@ -136,11 +136,12 @@
       },
       {
         "q": "How does DAVV Online MBA compare to SRM University Sikkim Online MBA?",
-        "a": "Devi Ahilya Vishwavidyalaya Online: NAAC A+, no NIRF 2025 rank, AICTE approved, ~Rs 75K-1.80L fee, 7 specialisations, MP state university. SRM University Sikkim Online: NAAC A+, no NIRF 2025 rank, AICTE and WES recognised, 7 specialisations, SRM Group brand. Both list seven specialisations. SRM Sikkim offers WES recognition and SRM Group brand. Compare at /compare."
+        "a": "Devi Ahilya Vishwavidyalaya Online: NAAC A+, no NIRF 2025 rank, AICTE approved, 7 specialisations, MP state university. SRM University Sikkim Online: NAAC A+, no NIRF 2025 rank, AICTE and WES recognised, 7 specialisations, SRM Group brand. Both list seven specialisations. SRM Sikkim offers WES recognition and SRM Group brand. Compare at /compare."
       }
     ]
   },
   "metadata": {
-    "claimSweep": "2026-09-17"
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-27"
   }
 }

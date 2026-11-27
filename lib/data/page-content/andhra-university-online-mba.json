@@ -6,7 +6,7 @@
     "hero": {
       "headline": "Andhra University Online MBA, NAAC A++, NIRF #23 University 2025 (University 2025), WES Recognised, Heritage State University",
       "body": "Andhra University Online MBA is UGC-DEB approved, NAAC A++ accredited, WES recognised, and AICTE approved. Andhra University, established in 1926 in Visakhapatnam, is one of India's oldest state universities and ranks NIRF #23 University 2025 in the University category of NIRF 2025. As a state government university, fees are among the lowest for a NAAC A++ programme in India. The 2-year online MBA is delivered through AUSDE (Andhra University School of Distance Education) and offers 3 specialisations: Marketing, Finance, and Human Resource Management.",
-      "sub": "NAAC A++ · NIRF #23 University 2025 (University 2025) · WES Recognised · AICTE · UGC-DEB · Rs 14K-62K indicative fee"
+      "sub": "NAAC A++ · NIRF #23 University 2025 (University 2025) · WES Recognised · AICTE · UGC-DEB · Rs 62,200 indicative fee"
     },
     "about": {
       "heading": "About Andhra University Online MBA",
@@ -42,7 +42,7 @@
     },
     "fees": {
       "heading": "Fee Structure, Andhra University Online MBA",
-      "body": "The total programme fee for the Andhra University Online MBA is approximately Rs 14,000 to Rs 62,200 (indicative). This reflects the state government university subsidised fee model. Additional charges may include registration fee and examination fee per semester. Always confirm the exact fee in writing at the offer letter stage before making any payment. Fees listed are indicative and edifyedu.in reconfirms fees each quarter."
+      "body": "EdifyEdu rechecks fees with Andhra University Online every quarter. Please reconfirm current fees with our counsellor before any payment. Fees can change between intakes."
     },
     "coupon": {
       "heading": "Scholarships and Fee Concessions",
@@ -50,7 +50,7 @@
     },
     "emi": {
       "heading": "EMI Options",
-      "body": "EMI options for the Andhra University Online MBA may be available. Given the very low total fee of Rs 14,000 to Rs 62,200, most students manage semester fees without external EMI arrangements. Confirm current fee payment options and any instalment schedules with the university finance team before selecting a plan."
+      "body": "EMI options for the Andhra University Online MBA may be available. Given the total fee of Rs 62,200, most students manage semester fees without external EMI arrangements. Confirm current fee payment options and any instalment schedules with the university finance team before selecting a plan."
     },
     "sampleCert": {
       "heading": "Degree Certificate",
@@ -70,7 +70,7 @@
     },
     "comparisons": {
       "heading": "Andhra University vs Peer Online MBA Universities",
-      "body": "Andhra University Online: NAAC A++, NIRF #23 University 2025 (University 2025), WES Recognised, ~Rs 14K-62K fee, 3 specialisations, heritage state university est. 1926.\n\nAnna University Online: NAAC A++, NIRF #20 (University 2025), Tamil Nadu state university, ~Rs 1,50,000 fee, General Management. Slightly higher NIRF rank but much higher fee and fewer specialisation options. Choose Anna University for higher NIRF rank.\n\nUniversity of Madras Online: NAAC A++, NIRF #38 (University 2025), 6 specialisations. Similar fee but lower NIRF rank and different South India state. Choose U Madras for broader specialisation choice.\n\nUse the compare tool at /compare to evaluate side by side."
+      "body": "Andhra University Online: NAAC A++, NIRF #23 University 2025 (University 2025), WES Recognised, Rs 62,200 fee, 3 specialisations, heritage state university est. 1926.\n\nAnna University Online: NAAC A++, NIRF #20 (University 2025), Tamil Nadu state university, ~Rs 1,50,000 fee, General Management. Slightly higher NIRF rank but much higher fee and fewer specialisation options. Choose Anna University for higher NIRF rank.\n\nUniversity of Madras Online: NAAC A++, NIRF #38 (University 2025), 6 specialisations. Similar fee but lower NIRF rank and different South India state. Choose U Madras for broader specialisation choice.\n\nUse the compare tool at /compare to evaluate side by side."
     },
     "honestVerdict": {
       "heading": "Honest Verdict, Andhra University Online MBA",
@@ -112,7 +112,7 @@
       },
       {
         "q": "What is the total fee for the Andhra University Online MBA?",
-        "a": "The indicative total fee is approximately Rs 14,000 to Rs 62,200. Talk to our counsellor for the exact fee before paying any amount, as fees may vary by semester and intake cycle."
+        "a": "The indicative total fee is Rs 62,200. Talk to our counsellor for the exact fee before paying any amount, as fees may vary by semester and intake cycle."
       },
       {
         "q": "What MBA specialisations does Andhra University Online offer?",
@@ -136,11 +136,12 @@
       },
       {
         "q": "How does Andhra University Online MBA compare to Anna University Online MBA?",
-        "a": "Andhra University Online: NAAC A++, NIRF #23 University 2025 (University 2025), WES Recognised, ~Rs 14K-62K fee, 3 specialisations, AP state university est. 1926. Anna University Online: NAAC A++, NIRF #20 (University 2025), ~Rs 1,50,000 fee, General Management only. Andhra University has lower fee, WES recognition, and 3 specialisations. Anna University has marginally higher NIRF rank. Compare at /compare."
+        "a": "Andhra University Online: NAAC A++, NIRF #23 University 2025 (University 2025), WES Recognised, Rs 62,200 fee, 3 specialisations, AP state university est. 1926. Anna University Online: NAAC A++, NIRF #20 (University 2025), ~Rs 1,50,000 fee, General Management only. Andhra University has lower fee, WES recognition, and 3 specialisations. Anna University has marginally higher NIRF rank. Compare at /compare."
       }
     ]
   },
   "metadata": {
-    "claimSweep": "2026-09-17"
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-27"
   }
 }

@@ -42,7 +42,7 @@
     },
     "fees": {
       "heading": "Fee Structure, VIT Online MBA",
-      "body": "The total programme fee for the VIT Online MBA is Rs 1,60,000 (indicative). This is a fixed fee structure applicable across all 5 specialisations. Fees are paid in four semester instalments of approximately Rs 40,000 each. Additional charges may include registration fee and examination fee per semester. Always confirm the exact fee in writing at the offer letter stage before making any payment. edifyedu.in rechecks fees with VIT every quarter. Fees listed are indicative."
+      "body": "EdifyEdu rechecks fees with Vellore Institute of Technology (VIT) Online every quarter. Please reconfirm current fees with our counsellor before any payment. Fees can change between intakes."
     },
     "coupon": {
       "heading": "Scholarships and Fee Concessions",
@@ -70,7 +70,7 @@
     },
     "comparisons": {
       "heading": "VIT Online vs Peer Online MBA Universities",
-      "body": "VIT Online: NAAC A++, NIRF #14 (University 2025), Rs 1,60,000 fixed fee, 5 specialisations, WES Recognised. Highest NIRF rank in this comparison set.\n\nSRM IST Online: NAAC A++, NIRF #56 (Management 2025), Rs 1.89L fixed fee, 5 specialisations, Category 1 university. Category 1 status is a differentiator. Slightly higher fee vs VIT. Choose SRM IST if Category 1 credential matters more than NIRF rank.\n\nChrist University Online: NAAC A++, NIRF #57 (Management 2025), 1 specialisation (Business Analytics). Lower NIRF rank, more affordable, but only Business Analytics. Choose Christ if Business Analytics is the specific target.\n\nUse the compare tool at /compare to evaluate side by side."
+      "body": "VIT Online: NAAC A++, NIRF #14 (University 2025), Rs 1,60,000 fixed fee, 5 specialisations, WES Recognised. Highest NIRF rank in this comparison set.\n\nSRM IST Online: NAAC A++, NIRF #56 (Management 2025), Rs 1,50,000 to Rs 1,89,000 fee, 5 specialisations, Category 1 university. Category 1 status is a differentiator. Slightly higher fee vs VIT. Choose SRM IST if Category 1 credential matters more than NIRF rank.\n\nChrist University Online: NAAC A++, NIRF #57 (Management 2025), 1 specialisation (Business Analytics). Lower NIRF rank, more affordable, but only Business Analytics. Choose Christ if Business Analytics is the specific target.\n\nUse the compare tool at /compare to evaluate side by side."
     },
     "honestVerdict": {
       "heading": "Honest Verdict, VIT Online MBA",
@@ -133,6 +133,7 @@
     ]
   },
   "metadata": {
-    "claimSweep": "2026-09-17"
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-27"
   }
 }
