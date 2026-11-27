@@ -985,7 +985,7 @@ function CompareContent() {
                     ) : (
                       <>
                         <p className="text-sm font-bold text-slate-900 leading-snug mb-1">Not enough published fees</p>
-                        <p className="text-xs font-semibold text-slate-500">Fewer than two of these universities publish an {program} fee.</p>
+                        <p className="text-xs font-semibold text-slate-500">Fewer than two of these universities publish {program.startsWith('M') ? 'an' : 'a'} {program} fee.</p>
                       </>
                     )}
                   </div>

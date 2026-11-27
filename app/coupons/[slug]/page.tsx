@@ -13,6 +13,15 @@ import MujCouponMidReassurance from '@/components/coupons/MujCouponMidReassuranc
 import MujCouponEndCta from '@/components/coupons/MujCouponEndCta'
 import { UniversityVideo } from '@/components/YouTubeVideo'
 import OwnerMbaSentence from '@/components/OwnerMbaSentence'
+import { getUniversityById } from '@/lib/data'
+
+// "no-cost EMI window" prints only where lib/data.ts carries a sourced MBA fee plan that
+// names a no-cost EMI (feePlans rows or notes). Elsewhere the shared copy implied a
+// window the university never publishes (B3 batch 18 round 2, Symbiosis QA advisory).
+function hasSourcedNoCostEmi(universityId: string): boolean {
+  const plans = getUniversityById(universityId)?.feePlans?.mba ?? []
+  return plans.some(p => p.source && [...p.rows.map(r => r.mode), ...(p.notes ?? [])].some(t => /no-cost emi/i.test(t)))
+}
 
 // Slug-conditional CTAs for high-CTR coupon pages. Component-injected so
 // the data layer in lib/coupon-pages.ts stays clean.
@@ -458,7 +467,9 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>EMI and Coupon Discount Compatibility at {page.shortName}</h2>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            The {page.couponCode} coupon discount works with EMI payment plans at {page.shortName}. The coupon is applied at enrollment and the resulting balance can then be split into monthly EMI instalments. Whether the no-cost EMI window applies to the reduced balance is set by the university and confirmed at enrollment.
+            The {page.couponCode} coupon discount works with EMI payment plans at {page.shortName}. The coupon is applied at enrollment and the resulting balance can then be split into monthly EMI instalments. {hasSourcedNoCostEmi(page.universityId)
+              ? 'Whether the no-cost EMI window applies to the reduced balance is set by the university and confirmed at enrollment.'
+              : 'Whether an EMI plan applies to the reduced balance is set by the university and confirmed at enrollment.'}
           </p>
           <p className="text-sm text-slate-600 leading-relaxed">
             Verify the specific EMI terms with {page.shortName} admissions before enrolling. Some universities apply coupon discounts to lump-sum payment only, not to semester-wise or EMI plans. Our admission desk will clarify the exact terms for the {year} batch during your free enrollment call.

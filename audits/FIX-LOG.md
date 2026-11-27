@@ -1,5 +1,39 @@
 # Fix log
 
+## 2026-11-27 B3 batch 18 round 2: Christ MBA JSON leftovers, JMI peer sentences, facts sheet, QA advisories
+
+Branch fix/b3-batch-18, new commit on a5d0268. Trigger: audits/qa/2026-11-27-b3-batch-18-premerge.md (FAIL on F1 and F2, condition C1, six advisories). App results from that QA stand; the only app edits here are the advisories below.
+
+**F1. Christ MBA JSON (lib/data/page-content/christ-university-online-mba.json, 5 ops).**
+- Why: the facts sheet (rows 3j, 3k, 3n) found no Christ online MBA, so exam mode, intake and certificate are UNVERIFIABLE. The classes, exams and admission sections still described how the programme runs, and admission step 6 ("confirm admission by paying the first semester fee") contradicted redFlags[0] ("Do not pay any fee ...").
+- What changed:
+  - classes, exams and admission now carry the same "Christ has not published ... for an online MBA" line used in whoCanApply and sampleCert. Admission also repeats the do-not-pay warning.
+  - abcId no longer says ABC is mandatory for a Christ MBA enrolment; it says there is no MBA enrolment to link one to yet.
+  - The FAQ "Does Christ University Online MBA require an ABC ID?" (answer "Yes") is deleted, because it presumed the programme. 3 FAQs remain.
+- Not rendered: MBA stays in comingSoon and the hub 307s to the profile.
+
+**F2. JMI in peer JSONs (3 edits).**
+- Why: sheet row 2e has JMI at NAAC A++ (naac.gov.in xlsx, Sl 66), and row 2h finds no specialisations in the CDOE prospectus 2026-27. The JMI JSON itself now says the prospectus lists none.
+- What changed:
+  - jamia-hamdard-online-mba.json comparisons: "NAAC A+" becomes "NAAC A++", and ", 4 specialisations" is removed.
+  - jamia-hamdard-online-mba.json FAQ: ", 4 specialisations" is removed.
+  - srm-institute-science-technology-online-mba.json comparisons: ", 4 specialisations" is removed.
+- Sweep: .b8tmp/jmiseg.cjs (clause-level: a JMI mention followed by a specialisation count or a non-A++ NAAC grade) over lib/blog.ts, every page-content JSON, lib/*.ts, lib/data/*.json, components/*.tsx and data/fees-hub-data.json. It found exactly these 3 before the fix and 0 after.
+
+**C1.** audits/verify/batch18-facts-2026-11-27.md is copied from the main checkout and committed, because part A and part B cite it.
+
+**Advisories.**
+- Coupon EMI copy (app/coupons/[slug]/page.tsx). Why: the shared paragraph said "Whether the no-cost EMI window applies to the reduced balance ..." on all 24 coupon pages, including Symbiosis, whose fee table names no no-cost plan (Q64). Now the sentence names a no-cost window only when lib/data.ts carries a sourced MBA feePlan whose rows or notes say "No-cost EMI". Elsewhere it reads "Whether an EMI plan applies ...". It still prints for 1 of 24: Manipal University Jaipur (feePlans note "No-cost EMI from ₹6,517 a month ...", source "Online Manipal MUJ MBA page, checked 2026-11-13; Rishi, confirmed 2026-11-13"). Left: the per-page emiCompatible strings and FAQs in lib/coupon-pages.ts for Amity ("24-month no-cost EMI") and NMIMS ("3, 6, 9, and 12-month no-cost EMI through education lending partners") have no source on file; they need a fee-sheet check in a later batch.
+- Grammar (components/CompareClient.tsx). Why: "publish an {program} fee" read "an BBA", "an BCA", "an B.Com" and "an BSc". The article is now "an" for M-programmes (MBA, MCA, MA, M.Com, MSc) and "a" for the rest.
+- Navbar payload. Why: the root layout sent the whole fee map (143 universities, 5,083 bytes) on every page, but the mega menu reads feeShort only for the 35 TRAFFIC_ORDER universities. TRAFFIC_ORDER moved unchanged to lib/nav-traffic-order.ts, a plain module, so the server layout can use it. The layout now passes pickFeeShortMap(TRAFFIC_ORDER): 31 universities (4 have no published fee), 2,654 bytes. Check (.b8tmp/navchk18.ts): all 148 menu cards across the 10 programme tabs resolve the same fee from the picked map as from the full map, 0 differences.
+- QA advisory 6: the batch 18 sheet's draft Q61 (onlinesmu.com) is moot, because part B set the SMU coupon host to www.onlinemanipal.com, the lib/data.ts officialUrl host. Not filed.
+
+**JMI hub "4 specialisations": BLOCKED (Q65).**
+- The indexed hub /universities/jamia-millia-islamia-online/mba prints "4 Specialisations" in the hero badge, "offers 4 specialisations" in QuickAnswers and "Against: 4 specialisations". All three come from lib/data.ts programDetails.MBA.specs. That field also drives the spec URLs (finance, hr-management and marketing are indexed), so it is not changed here.
+- Q65 asks Rishi whether the specs list and the '₹50K – ₹50K' fee field should change, citing the prospectus.
+
+Baselines: fee 205, blog-fees 1950, em-dash 227, all unchanged.
+
 ## 2026-11-27 B3 batch 18 part B: Symbiosis EMI wording, JMI fee and specialisations, Christ MBA JSON, coupon officialUrl
 
 Branch fix/b3-batch-18, rebased onto origin/main (a1b5368) after part A. Source: audits/verify/batch18-facts-2026-11-27.md (fact-checker, 27 Nov). It cites ssodl.edu.in, the JMI CDOE prospectus 2026-27, the deb.ugc.ac.in register, the naac.gov.in xlsx and the nirfindia.org 2025 tables. No title or meta changed, and no total was computed.

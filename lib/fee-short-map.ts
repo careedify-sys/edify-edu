@@ -26,6 +26,14 @@ export function getFeeShortMap(): FeeShortMap {
   return m
 }
 
+/** The getFeeShortMap entries for the given universities only, e.g. the Navbar's TRAFFIC_ORDER. */
+export function pickFeeShortMap(ids: readonly string[]): FeeShortMap {
+  const all = getFeeShortMap()
+  const m: FeeShortMap = {}
+  for (const id of ids) if (all[id]) m[id] = all[id]
+  return m
+}
+
 /** exactFeeBounds per university and programme, for client-side sort and filter. Published fees only. */
 export function getFeeBoundsMap(): FeeBoundsMap {
   if (boundsCache) return boundsCache
