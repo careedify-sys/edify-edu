@@ -39,7 +39,7 @@ export function supabaseReferralRepo(sb: SupabaseClient): ReferralRepo {
   }
   return {
     async list(f, today, limit = 500) {
-      let q = sb.from('referrals').select(SELECT).order('created_at', { ascending: false }).limit(limit)
+      let q = sb.from('wa_referrals').select(SELECT).order('created_at', { ascending: false }).limit(limit)
       if (f.stage === 'open') q = q.not('stage', 'in', '(reward_paid,closed)')
       else if (f.stage) q = q.eq('stage', f.stage)
       if (f.review === 'needs_review') q = q.eq('review_state', 'needs_review')
@@ -66,14 +66,14 @@ export function supabaseReferralRepo(sb: SupabaseClient): ReferralRepo {
       return (must(await q) as Record<string, unknown>[]).map(flatten)
     },
     async get(id) {
-      const r = must(await sb.from('referrals').select(SELECT).eq('id', id).maybeSingle())
+      const r = must(await sb.from('wa_referrals').select(SELECT).eq('id', id).maybeSingle())
       return r ? flatten(r as Record<string, unknown>) : null
     },
     async activity(id) {
       return must(await sb.from('referral_activity').select('*').eq('referral_id', id).order('created_at', { ascending: false }).limit(200)) as ActivityRow[]
     },
     async update(id, expectStage, patch) {
-      const r = must(await sb.from('referrals').update(patch).eq('id', id).eq('stage', expectStage).select(SELECT).maybeSingle())
+      const r = must(await sb.from('wa_referrals').update(patch).eq('id', id).eq('stage', expectStage).select(SELECT).maybeSingle())
       return r ? flatten(r as Record<string, unknown>) : null
     },
     async addActivity(id, kind, body, actor) {

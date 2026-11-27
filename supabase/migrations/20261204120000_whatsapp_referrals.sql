@@ -249,7 +249,7 @@ create table if not exists referral_reward_rules (
   updated_at  timestamptz not null default now()
 );
 
-create table if not exists referrals (
+create table if not exists wa_referrals (
   id                      uuid primary key default gen_random_uuid(),
   ref_code                text not null unique check (ref_code ~ '^EDU-REF-[23456789ABCDEFGHJKMNPQRSTUVWXYZ]{8}$'),
   referrer_name           text not null check (char_length(btrim(referrer_name)) between 2 and 80),
@@ -290,24 +290,24 @@ create table if not exists referrals (
   ip_hash                 text check (ip_hash is null or ip_hash ~ '^[0-9a-f]{64}$'),
   created_at              timestamptz not null default now(),
   updated_at              timestamptz not null default now(),
-  constraint referrals_admission_needs_date check (stage not in ('admission_confirmed','reward_approved','reward_paid') or admission_confirmed_on is not null),
-  constraint referrals_approved_needs_amount check (stage not in ('reward_approved','reward_paid') or (reward_amount_inr is not null and reward_approved_at is not null)),
-  constraint referrals_paid_needs_ref check (stage <> 'reward_paid' or (reward_paid_on is not null and payment_ref is not null)),
-  constraint referrals_paid_after_admission check (reward_paid_on is null or reward_paid_on >= admission_confirmed_on),
-  constraint referrals_review_before_reward check (stage not in ('reward_approved','reward_paid') or review_state <> 'needs_review')
+  constraint wa_referrals_admission_needs_date check (stage not in ('admission_confirmed','reward_approved','reward_paid') or admission_confirmed_on is not null),
+  constraint wa_referrals_approved_needs_amount check (stage not in ('reward_approved','reward_paid') or (reward_amount_inr is not null and reward_approved_at is not null)),
+  constraint wa_referrals_paid_needs_ref check (stage <> 'reward_paid' or (reward_paid_on is not null and payment_ref is not null)),
+  constraint wa_referrals_paid_after_admission check (reward_paid_on is null or reward_paid_on >= admission_confirmed_on),
+  constraint wa_referrals_review_before_reward check (stage not in ('reward_approved','reward_paid') or review_state <> 'needs_review')
 );
-create index if not exists referrals_created_idx  on referrals (created_at desc);
-create index if not exists referrals_stage_idx    on referrals (stage);
-create index if not exists referrals_referred_idx on referrals (referred_phone);
-create index if not exists referrals_referrer_idx on referrals (referrer_phone);
-create index if not exists referrals_campaign_idx on referrals (campaign_id);
-create index if not exists referrals_due_idx      on referrals (reward_due_on) where stage in ('admission_confirmed','reward_approved');
+create index if not exists wa_referrals_created_idx  on wa_referrals (created_at desc);
+create index if not exists wa_referrals_stage_idx    on wa_referrals (stage);
+create index if not exists wa_referrals_referred_idx on wa_referrals (referred_phone);
+create index if not exists wa_referrals_referrer_idx on wa_referrals (referrer_phone);
+create index if not exists wa_referrals_campaign_idx on wa_referrals (campaign_id);
+create index if not exists wa_referrals_due_idx      on wa_referrals (reward_due_on) where stage in ('admission_confirmed','reward_approved');
 -- One reward per referred student.
-create unique index if not exists referrals_one_reward_uidx on referrals (referred_phone) where stage in ('reward_approved','reward_paid');
+create unique index if not exists wa_referrals_one_reward_uidx on wa_referrals (referred_phone) where stage in ('reward_approved','reward_paid');
 
 create table if not exists referral_activity (
   id          uuid primary key default gen_random_uuid(),
-  referral_id uuid not null references referrals(id) on delete cascade,
+  referral_id uuid not null references wa_referrals(id) on delete cascade,
   kind        text not null check (kind in ('system','note','call','stage','reward','whatsapp')),
   body        text not null check (char_length(body) between 1 and 2000),
   actor       text,
@@ -328,8 +328,8 @@ create table if not exists referral_form_opens (
   primary key (campaign_id, day)
 );
 
-drop trigger if exists referrals_set_updated_at on referrals;
-create trigger referrals_set_updated_at before update on referrals for each row execute function set_updated_at();
+drop trigger if exists wa_referrals_set_updated_at on wa_referrals;
+create trigger wa_referrals_set_updated_at before update on wa_referrals for each row execute function set_updated_at();
 drop trigger if exists referral_reward_rules_set_updated_at on referral_reward_rules;
 create trigger referral_reward_rules_set_updated_at before update on referral_reward_rules for each row execute function set_updated_at();
 
@@ -365,11 +365,11 @@ begin
   end if;
   -- Site-wide ceiling: the honeypot, timing and origin checks are client-side
   -- and the IP can be spoofed off the main domain, so a flood stops here.
-  if (select count(*) from referrals where created_at > now() - interval '1 hour') >= 200 then
+  if (select count(*) from wa_referrals where created_at > now() - interval '1 hour') >= 200 then
     return query select null::text, 'rate_limited'::text, null::uuid; return;
   end if;
 
-  select r.id, r.ref_code into v_prev from referrals r
+  select r.id, r.ref_code into v_prev from wa_referrals r
    where r.referrer_phone = p_referrer_phone and r.referred_phone = p_referred_phone
      and r.created_at > now() - interval '24 hours'
    order by r.created_at desc limit 1;
@@ -381,15 +381,15 @@ begin
   if (select count(*) from referral_rate_hits where bucket = 'ph:' || p_referrer_phone and at > now() - interval '1 day') >= 10 then
     return query select null::text, 'rate_limited'::text, null::uuid; return;
   end if;
-  if exists (select 1 from referrals r where r.ref_code = p_code) then
+  if exists (select 1 from wa_referrals r where r.ref_code = p_code) then
     return query select null::text, 'code_taken'::text, null::uuid; return;
   end if;
 
   if p_referrer_phone = p_referred_phone then v_flags := array_append(v_flags, 'self_referral'); end if;
-  if exists (select 1 from referrals r where r.referred_phone = p_referred_phone) then v_flags := array_append(v_flags, 'already_referred'); end if;
+  if exists (select 1 from wa_referrals r where r.referred_phone = p_referred_phone) then v_flags := array_append(v_flags, 'already_referred'); end if;
   select l.id into v_lead from leads l where regexp_replace(l.phone, '[^0-9]', '', 'g') = v_digits limit 1;
   if v_lead is not null then v_flags := array_append(v_flags, 'existing_lead'); end if;
-  if exists (select 1 from referrals r where r.referrer_phone = p_referrer_phone and r.created_at > now() - interval '24 hours') then
+  if exists (select 1 from wa_referrals r where r.referrer_phone = p_referrer_phone and r.created_at > now() - interval '24 hours') then
     v_flags := array_append(v_flags, 'many_from_referrer');
   end if;
 
@@ -415,7 +415,7 @@ begin
     end if;
   end if;
 
-  insert into referrals (ref_code, referrer_name, referrer_phone, referred_name, referred_phone, programme,
+  insert into wa_referrals (ref_code, referrer_name, referrer_phone, referred_name, referred_phone, programme,
                          preferred_university_id, preferred_university, referrer_note, referred_permission, terms_version,
                          referrer_wa_optin, campaign_id, attribution, lead_id, flags, review_state, ip_hash)
   values (p_code, btrim(p_referrer_name), p_referrer_phone, btrim(p_referred_name), p_referred_phone, nullif(p_programme, ''),
@@ -453,7 +453,7 @@ end $$;
 -- The referral half of a campaign report.
 create or replace function wa_campaign_referral_stats(p_campaign uuid)
 returns jsonb language sql stable set search_path = public as $$
-  with r as (select * from referrals where campaign_id = p_campaign)
+  with r as (select * from wa_referrals where campaign_id = p_campaign)
   select jsonb_build_object(
     'form_opens',        coalesce((select sum(opens) from referral_form_opens where campaign_id = p_campaign), 0),
     'submitted',         (select count(*) from r),
@@ -588,7 +588,7 @@ end $$;
 -- ── Access ──────────────────────────────────────────────────────────────────
 alter table wa_media_files        enable row level security;
 alter table referral_reward_rules enable row level security;
-alter table referrals             enable row level security;
+alter table wa_referrals             enable row level security;
 alter table referral_activity     enable row level security;
 alter table referral_rate_hits    enable row level security;
 alter table referral_form_opens   enable row level security;
@@ -597,11 +597,11 @@ alter table wa_auto_replies       enable row level security;
 do $$
 begin
   if exists (select 1 from pg_roles where rolname = 'anon') then
-    revoke all on table wa_media_files, referral_reward_rules, referrals, referral_activity, referral_rate_hits,
+    revoke all on table wa_media_files, referral_reward_rules, wa_referrals, referral_activity, referral_rate_hits,
                         referral_form_opens, wa_auto_rules, wa_auto_replies from anon;
   end if;
   if exists (select 1 from pg_roles where rolname = 'authenticated') then
-    revoke all on table wa_media_files, referral_reward_rules, referrals, referral_activity, referral_rate_hits,
+    revoke all on table wa_media_files, referral_reward_rules, wa_referrals, referral_activity, referral_rate_hits,
                         referral_form_opens, wa_auto_rules, wa_auto_replies from authenticated;
   end if;
 end $$;

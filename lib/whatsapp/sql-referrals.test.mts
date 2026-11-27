@@ -42,8 +42,20 @@ function button(o: { id: string; from: string; text: string }) {
 
 await db.exec(`create role anon; create role authenticated; create role service_role;`)
 const UP = readdirSync(MIG_DIR).filter(f => f.endsWith('.sql') && !f.endsWith('.down.sql')).sort()
+// Production already has an unrelated public.referrals table (seen 27 Nov,
+// 0 rows). Phase 4 must never touch it: recreate its shape before Phase 4 runs.
+const LEGACY = `create table referrals (id uuid primary key default gen_random_uuid(), referrer_id uuid, referred_id uuid,
+  referral_code text, status text, signed_up_at timestamptz, created_at timestamptz default now());
+  insert into referrals (referral_code, status) values ('LEGACY1', 'pending');`
 for (const f of UP) {
+  if (f === '20261204120000_whatsapp_referrals.sql') await db.exec(LEGACY)
   try { await db.exec(migFile(f)) } catch (e) { throw new Error(`migration ${f}: ${(e as Error).message}`) }
+}
+const legacyIntact = async () => {
+  assert.equal(await num(`select count(*) from information_schema.columns where table_schema = 'public' and table_name = 'referrals'`), 7)
+  assert.equal(await num(`select count(*) from referrals where referral_code = 'LEGACY1'`), 1)
+  assert.equal((await one(`select relrowsecurity from pg_class where relname = 'referrals'`)).relrowsecurity, false)
+  assert.equal(await num(`select count(*) from pg_trigger where tgrelid = 'public.referrals'::regclass and not tgisinternal`), 0)
 }
 assert.equal(UP.at(-1), '20261204120000_whatsapp_referrals.sql')
 
@@ -75,6 +87,8 @@ const submit = (o: Partial<Record<string, unknown>> = {}) => one<{ ref_code: str
   [o.code ?? 'EDU-REF-AAAAAAAA', o.referrerName ?? 'Asha Rao', o.referrer ?? P(1), o.referredName ?? 'Ravi Kumar', o.referred ?? P(2),
    o.programme ?? 'MBA', o.uniId ?? null, o.uni ?? null, o.note ?? null, '2026-11-27', o.optin ?? false, o.token ?? null, o.ip ?? 'a'.repeat(64)])
 
+await test('the unrelated legacy referrals table is left exactly as it was', legacyIntact)
+
 await test('new switches start off and settings exist', async () => {
   assert.equal((await one(`select value from wa_settings where key = 'automation_enabled'`)).value, false)
   assert.equal((await one(`select value from wa_settings where key = 'referral_confirm_whatsapp'`)).value, false)
@@ -83,7 +97,7 @@ await test('new switches start off and settings exist', async () => {
 })
 
 await test('RLS on and no API grants on every new table', async () => {
-  const t = ['wa_media_files', 'referral_reward_rules', 'referrals', 'referral_activity', 'referral_rate_hits', 'referral_form_opens', 'wa_auto_rules', 'wa_auto_replies']
+  const t = ['wa_media_files', 'referral_reward_rules', 'wa_referrals', 'referral_activity', 'referral_rate_hits', 'referral_form_opens', 'wa_auto_rules', 'wa_auto_replies']
   assert.equal(await num(`select count(*) from pg_class where relname = any($1) and relrowsecurity`, [t]), t.length)
   assert.equal(await num(`select count(*) from information_schema.role_table_grants where table_name = any($1) and grantee in ('anon','authenticated')`, [t]), 0)
   assert.equal(await num(`select count(*) from information_schema.routine_privileges where routine_name like 'referral_%' and grantee in ('anon','authenticated','PUBLIC')`), 0)
@@ -114,7 +128,7 @@ await test('message webhooks still project as before', async () => {
 await test('referral: created with id, lead created once, activity written', async () => {
   const r = await submit()
   assert.deepEqual([r.ref_code, r.outcome], ['EDU-REF-AAAAAAAA', 'created'])
-  const row = await one(`select * from referrals where ref_code = 'EDU-REF-AAAAAAAA'`)
+  const row = await one(`select * from wa_referrals where ref_code = 'EDU-REF-AAAAAAAA'`)
   assert.equal(row.stage, 'new'); assert.equal(row.review_state, 'clear'); assert.deepEqual(row.flags, [])
   const lead = await one(`select name, phone, source from leads where id = $1`, [row.lead_id])
   assert.deepEqual([lead.name, lead.phone, lead.source], ['Ravi Kumar', P(2).slice(1), 'referral'])
@@ -126,22 +140,22 @@ await test('referral: created with id, lead created once, activity written', asy
 await test('referral: same pair within 24 hours returns the first id, stores nothing new', async () => {
   const r = await submit({ code: 'EDU-REF-BBBBBBBB' })
   assert.deepEqual([r.ref_code, r.outcome], ['EDU-REF-AAAAAAAA', 'repeat'])
-  assert.equal(await num(`select count(*) from referrals`), 1)
+  assert.equal(await num(`select count(*) from wa_referrals`), 1)
 })
 
 await test('referral: flags self, already referred, existing lead, many from referrer', async () => {
   const self = await submit({ code: 'EDU-REF-CCCCCCCC', referrer: P(3), referred: P(3), ip: 'b'.repeat(64) })
   assert.equal(self.outcome, 'created')
-  const s = await one(`select flags, review_state from referrals where ref_code = 'EDU-REF-CCCCCCCC'`)
+  const s = await one(`select flags, review_state from wa_referrals where ref_code = 'EDU-REF-CCCCCCCC'`)
   assert.ok(s.flags.includes('self_referral')); assert.equal(s.review_state, 'needs_review')
   // P(2) was referred by P(1) and is a lead now.
   const again = await submit({ code: 'EDU-REF-DDDDDDDD', referrer: P(4), referred: P(2), ip: 'c'.repeat(64) })
   assert.equal(again.outcome, 'created')
-  const a = await one(`select flags, lead_id from referrals where ref_code = 'EDU-REF-DDDDDDDD'`)
+  const a = await one(`select flags, lead_id from wa_referrals where ref_code = 'EDU-REF-DDDDDDDD'`)
   assert.ok(a.flags.includes('already_referred') && a.flags.includes('existing_lead'))
   assert.equal(await num(`select count(*) from leads where phone = $1`, [P(2).slice(1)]), 1)
   const more = await submit({ code: 'EDU-REF-EEEEEEEE', referrer: P(4), referred: P(5), ip: 'c'.repeat(64) })
-  assert.ok((await one(`select flags from referrals where ref_code = $1`, [more.ref_code])).flags.includes('many_from_referrer'))
+  assert.ok((await one(`select flags from wa_referrals where ref_code = $1`, [more.ref_code])).flags.includes('many_from_referrer'))
 })
 
 await test('referral: code collision asks for another code', async () => {
@@ -164,22 +178,22 @@ await test('referral: a repeat counts toward the IP limit; site-wide ceiling of 
   assert.equal(first.outcome, 'created')
   for (let i = 0; i < 4; i++) assert.equal((await submit({ code: 'EDU-REF-RQRQRQRQ', referrer: P(70), referred: P(71), ip })).outcome, 'repeat')
   assert.equal((await submit({ code: 'EDU-REF-RQRQRQRQ', referrer: P(70), referred: P(71), ip })).outcome, 'rate_limited')
-  const before = await num(`select count(*) from referrals where created_at > now() - interval '1 hour'`)
-  await db.query(`insert into referrals (ref_code, referrer_name, referrer_phone, referred_name, referred_phone, referred_permission, terms_version)
+  const before = await num(`select count(*) from wa_referrals where created_at > now() - interval '1 hour'`)
+  await db.query(`insert into wa_referrals (ref_code, referrer_name, referrer_phone, referred_name, referred_phone, referred_permission, terms_version)
     select 'EDU-REF-Z' || translate(lpad(g::text, 7, '0'), '01', 'XY'), 'Bulk Test', '+919811100000', 'Bulk Test', '+919811100001', true, 't'
     from generate_series(1, $1::int) g`, [200 - before])
   assert.equal((await submit({ code: 'EDU-REF-CXCXCXCX', referrer: P(72), referred: P(73), ip: '8'.repeat(64) })).outcome, 'rate_limited')
-  await db.query(`delete from referrals where referrer_name = 'Bulk Test'`)
+  await db.query(`delete from wa_referrals where referrer_name = 'Bulk Test'`)
 })
 
 await test('referral: attribution by link token, then by phone match', async () => {
   const a = await reached(P(60))
   assert.match(a.token, /^[0-9a-f]{16}$/)
   const byLink = await submit({ code: 'EDU-REF-HHHHHHHH', referrer: P(61), referred: P(62), token: a.token, ip: 'f'.repeat(64) })
-  const l = await one(`select campaign_id, attribution from referrals where id = $1`, [byLink.referral_id])
+  const l = await one(`select campaign_id, attribution from wa_referrals where id = $1`, [byLink.referral_id])
   assert.deepEqual([l.campaign_id, l.attribution], [a.campaign, 'link'])
   const byPhone = await submit({ code: 'EDU-REF-JJJJJJJJ', referrer: P(60), referred: P(63), token: 'nottoken', ip: '1'.repeat(64) })
-  const p = await one(`select campaign_id, attribution from referrals where id = $1`, [byPhone.referral_id])
+  const p = await one(`select campaign_id, attribution from wa_referrals where id = $1`, [byPhone.referral_id])
   assert.deepEqual([p.campaign_id, p.attribution], [a.campaign, 'phone_match'])
   assert.equal(await one(`select referral_count_open($1) as r`, [a.token]).then(x => x.r), true)
   await db.query(`select referral_count_open($1)`, [a.token])
@@ -189,21 +203,21 @@ await test('referral: attribution by link token, then by phone match', async () 
 })
 
 await test('rewards: due date is admission + 7, stage rules enforced, one reward per student', async () => {
-  const id = (await one(`select id from referrals where ref_code = 'EDU-REF-HHHHHHHH'`)).id
-  await assert.rejects(db.query(`update referrals set stage = 'admission_confirmed' where id = $1`, [id]), /referrals_admission_needs_date/)
-  await db.query(`update referrals set stage = 'admission_confirmed', admission_confirmed_on = '2026-12-01' where id = $1`, [id])
-  assert.equal((await one(`select to_char(reward_due_on, 'YYYY-MM-DD') as d from referrals where id = $1`, [id])).d, '2026-12-08')
-  await assert.rejects(db.query(`update referrals set stage = 'reward_approved' where id = $1`, [id]), /referrals_approved_needs_amount/)
-  await db.query(`update referrals set stage = 'reward_approved', reward_amount_inr = 1000, reward_approved_at = now() where id = $1`, [id])
-  await assert.rejects(db.query(`update referrals set stage = 'reward_paid' where id = $1`, [id]), /referrals_paid_needs_ref/)
-  await assert.rejects(db.query(`update referrals set stage = 'reward_paid', reward_paid_on = '2026-11-30', payment_ref = 'UTR1' where id = $1`, [id]), /referrals_paid_after_admission/)
-  await db.query(`update referrals set stage = 'reward_paid', reward_paid_on = '2026-12-05', payment_ref = 'UTR1' where id = $1`, [id])
+  const id = (await one(`select id from wa_referrals where ref_code = 'EDU-REF-HHHHHHHH'`)).id
+  await assert.rejects(db.query(`update wa_referrals set stage = 'admission_confirmed' where id = $1`, [id]), /wa_referrals_admission_needs_date/)
+  await db.query(`update wa_referrals set stage = 'admission_confirmed', admission_confirmed_on = '2026-12-01' where id = $1`, [id])
+  assert.equal((await one(`select to_char(reward_due_on, 'YYYY-MM-DD') as d from wa_referrals where id = $1`, [id])).d, '2026-12-08')
+  await assert.rejects(db.query(`update wa_referrals set stage = 'reward_approved' where id = $1`, [id]), /wa_referrals_approved_needs_amount/)
+  await db.query(`update wa_referrals set stage = 'reward_approved', reward_amount_inr = 1000, reward_approved_at = now() where id = $1`, [id])
+  await assert.rejects(db.query(`update wa_referrals set stage = 'reward_paid' where id = $1`, [id]), /wa_referrals_paid_needs_ref/)
+  await assert.rejects(db.query(`update wa_referrals set stage = 'reward_paid', reward_paid_on = '2026-11-30', payment_ref = 'UTR1' where id = $1`, [id]), /wa_referrals_paid_after_admission/)
+  await db.query(`update wa_referrals set stage = 'reward_paid', reward_paid_on = '2026-12-05', payment_ref = 'UTR1' where id = $1`, [id])
   // A flagged referral cannot be rewarded until resolved.
-  const flagged = (await one(`select id from referrals where ref_code = 'EDU-REF-CCCCCCCC'`)).id
-  await assert.rejects(db.query(`update referrals set stage = 'reward_approved', admission_confirmed_on = current_date, reward_amount_inr = 1, reward_approved_at = now() where id = $1`, [flagged]), /referrals_review_before_reward/)
+  const flagged = (await one(`select id from wa_referrals where ref_code = 'EDU-REF-CCCCCCCC'`)).id
+  await assert.rejects(db.query(`update wa_referrals set stage = 'reward_approved', admission_confirmed_on = current_date, reward_amount_inr = 1, reward_approved_at = now() where id = $1`, [flagged]), /wa_referrals_review_before_reward/)
   // Second reward for the same referred phone (P(62)) is refused.
   const dup = await submit({ code: 'EDU-REF-KKKKKKKK', referrer: P(64), referred: P(62), ip: '2'.repeat(64) })
-  await assert.rejects(db.query(`update referrals set review_state = 'resolved', stage = 'reward_approved', admission_confirmed_on = '2026-12-01', reward_amount_inr = 1000, reward_approved_at = now() where id = $1`, [dup.referral_id]), /referrals_one_reward_uidx/)
+  await assert.rejects(db.query(`update wa_referrals set review_state = 'resolved', stage = 'reward_approved', admission_confirmed_on = '2026-12-01', reward_amount_inr = 1000, reward_approved_at = now() where id = $1`, [dup.referral_id]), /wa_referrals_one_reward_uidx/)
 })
 
 await test('automation: off by default, candidates are campaign recipients only', async () => {
@@ -269,12 +283,14 @@ await test('inbox template send: allowed after the window, needs consent for mar
 
 await test('down file undoes Phase 4 and restores the Phase 1 event processor; up re-applies', async () => {
   await db.exec(migFile('20261204120000_whatsapp_referrals.down.sql'))
-  assert.equal(await num(`select count(*) from pg_class where relname in ('referrals','wa_auto_rules','wa_media_files')`), 0)
+  assert.equal(await num(`select count(*) from pg_class where relname in ('wa_referrals','wa_auto_rules','wa_media_files')`), 0)
+  await legacyIntact()
   assert.equal(await num(`select count(*) from information_schema.columns where table_name = 'wa_campaigns' and column_name = 'ref_token'`), 0)
   const r = await deliver(buildPayload({ messages: [inboundText({ id: 'wamid.afterdown', from: '919810088888', text: 'hi' })] }))
   assert.equal(r.state, 'completed'); assert.equal(r.templates, undefined)
   await db.exec(migFile('20261204120000_whatsapp_referrals.sql'))
-  assert.equal(await num(`select count(*) from pg_class where relname = 'referrals'`), 1)
+  assert.equal(await num(`select count(*) from pg_class where relname = 'wa_referrals'`), 1)
+  await legacyIntact()
 })
 
 console.log(`\n${passed} passed`)

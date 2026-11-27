@@ -67,7 +67,7 @@ alter table wa_conversations drop column if exists auto_off;
 drop table if exists referral_form_opens;
 drop table if exists referral_rate_hits;
 drop table if exists referral_activity;
-drop table if exists referrals;
+drop table if exists wa_referrals;
 drop table if exists referral_reward_rules;
 drop index if exists wa_campaigns_ref_token_uidx;
 alter table wa_campaigns drop column if exists ref_token;

@@ -157,7 +157,7 @@ export function supabaseExtrasStore(sb: SupabaseClient): ExtrasStore {
       if (!cv) return null
       const phone: string | null = cv.wa_contacts?.phone_e164 ?? null
       const refs = phone
-        ? must(await sb.from('referrals').select('id,ref_code,stage,referrer_phone,referred_phone').or(`referrer_phone.eq."${phone}",referred_phone.eq."${phone}"`).order('created_at', { ascending: false }).limit(20)) as Array<Record<string, string>>
+        ? must(await sb.from('wa_referrals').select('id,ref_code,stage,referrer_phone,referred_phone').or(`referrer_phone.eq."${phone}",referred_phone.eq."${phone}"`).order('created_at', { ascending: false }).limit(20)) as Array<Record<string, string>>
         : []
       const camps = must(await sb.from('wa_campaign_recipients').select('claimed_at,state,wa_campaigns(id,name)').eq('contact_id', cv.contact_id).order('claimed_at', { ascending: false, nullsFirst: false }).limit(10)) as Array<Record<string, any>>
       return {

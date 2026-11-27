@@ -29,7 +29,7 @@ export function supabaseReferralStore(): ReferralStore {
       return typeof data.value === 'string' ? data.value.trim() : ''
     },
     async details(id) {
-      const { data, error } = await sb.from('referrals').select('flags,attribution,campaign_id,wa_campaigns(name)').eq('id', id).maybeSingle()
+      const { data, error } = await sb.from('wa_referrals').select('flags,attribution,campaign_id,wa_campaigns(name)').eq('id', id).maybeSingle()
       if (error || !data) return null
       const c = (data as { wa_campaigns?: { name?: string } | null }).wa_campaigns
       return { flags: (data.flags as string[]) ?? [], attribution: String(data.attribution), campaign: c?.name ?? null }
