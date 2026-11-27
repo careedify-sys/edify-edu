@@ -72,7 +72,7 @@ export function notificationEmail(code: string, r: CleanReferral, d: { flags: st
 
 // ── Mock store (WA_INBOX_MOCK=1, never in production) ──────────────────────
 export type MockRow = { id: string; code: string; r: CleanReferral; at: number; flags: string[]; campaign: string | null; attribution: string; row: ReferralRow }
-export function mockReferralStore(disclosure = 'Mock disclosure. The real sentence goes here once Rishi approves it (Q55).'): ReferralStore & { rows: MockRow[]; opens: Map<string, number> } {
+export function mockReferralStore(disclosure = 'Know someone planning to pursue an online degree? Share their details with us, and our education counsellor will help them explore suitable universities and programmes. Our team will also connect with you to explain the referral programme and its benefits.'): ReferralStore & { rows: MockRow[]; opens: Map<string, number> } {
   const rows: MockRow[] = []
   const opens = new Map<string, number>()
   const hits: Array<{ b: string; at: number }> = []
