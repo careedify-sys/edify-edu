@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-11-27",
   "note": "Per-slug count of LPA / lakh-per-annum salary figures in lib/blog.ts (content, FAQs, title, seoTitle, h1Title, metaDescription). Ratchet: a count may only go down; a slug not listed must be 0. See scripts/check-blog-salaries.mjs.",
-  "total": 1915,
+  "total": 1913,
   "perSlug": {
     "1-year-mba-india-executive-mba-2026": 27,
     "affordable-online-mba-india-2026": 1,
@@ -73,7 +73,7 @@
     "mba-operations-management-career-2026": 20,
     "mba-or-mca-which-is-better-2026": 46,
     "mba-pharmaceutical-management-online-india-2026": 9,
-    "mba-scope-india-2026": 24,
+    "mba-scope-india-2026": 22,
     "mba-vs-bba-which-is-better-2026": 26,
     "mba-vs-pgdm-online-india-2026": 8,
     "mca-after-bca-is-it-good-2026": 18,

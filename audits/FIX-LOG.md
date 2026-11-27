@@ -1,5 +1,54 @@
 # Fix log
 
+## 2026-11-27 B3 batch 22 round 3: stale salary-source callouts, source-claim sweep, ICAI figures, headings that name removed salary content
+
+Branch fix/b3-batch-22, new commit on 7efc2cc. This fixes F2 and the advisories in audits/qa/2026-11-27-b3-batch-22-premerge-rerun.md. No title, seoTitle, h1Title or metaDescription changed, and no allowlist entry was added. updatedAt was already 2026-11-27 on every edited post.
+
+**F2. Three callouts credited a source for salary figures that batch 22 removed.**
+- Why: each sat under a table whose salary column is gone. Each also named NIRF, NASSCOM, AICTE or "tier-1 MBA placements" as the source, and none of those is a sheet we hold.
+- courses-after-12th-science and mba-after-engineering: the source clause is deleted. The callout now keeps only "Verify before applying: Actual outcomes depend on ...".
+- best-computer-courses: the salary-source half is replaced with the fee line "Talk to our counsellor for your intake’s fee."
+
+**Source-claim sweep across the 20 batch 22 posts.** Detector: .b8tmp/src24.cjs. It looks for NIRF, NASSCOM, AICTE, LinkedIn, Naukri, survey, "placement reports/data/disclosures", "hiring data", "medians from", ICAI and "sourced" next to a salary word.
+- Why: same rule as A3. A post may not credit a source for salary figures unless the source is an approved one we hold.
+- online-mba-salary: "Salary ranges indicative based on placement data plus Naukri analytics" now reads "Salary ranges are indicative."
+- distance-mba-meaning: "These figures are from university career services data and LinkedIn salary reports" now reads "These figures are indicative, not guaranteed outcomes." The lead-in "Here is what the data shows" now reads "Here are indicative ranges".
+- online-mba-for-working-professionals: the byline sentence crediting university placement reports, Naukri Job Speak and alumni data is deleted.
+- mba-scope:
+  - The byline sentence crediting NIRF, NASSCOM, LinkedIn and Naukri is deleted.
+  - The FAQ sentences "NIRF 2024 placement data ... median salary of Rs 16.5 LPA ... Rs 6.5 LPA" and "NIRF data showing 35 percent year-on-year growth" are deleted.
+  - "with sourced 2026 hiring data" is deleted from the intro.
+  - The intro also pointed at "the brand-versus-specialisation matrix", which round 1 removed. It now asks "does brand or specialisation matter more".
+- Left on purpose:
+  - Method pointers with no figure: "NIRF publishes a median graduate salary for each ranked institute", "NIRF placement reports apply mostly to campus PGP cohorts", and "Use Glassdoor, Naukri, AmbitionBox" as advice.
+  - Fee "indicative" lines.
+  - The MAHE learner survey line (satisfaction, not salary).
+  - mba-scope's hiring statistics credited in the body to NASSCOM, the LinkedIn index and a Naukri HR survey (18 percent YoY, 28 vs 3 percent, 78 percent acceptance). These are hiring claims, not salary claims, and are listed in the hand-back as an advisory.
+
+**career-after-12th-commerce ICAI figures and medians claim.**
+- Why: ICAI is not an approved source, and the repo has no ICAI verify sheet. Batch 22 round 2 removed the same figures from commerce-jobs (A3).
+- The FAQ's "roughly 10 to 15 percent per attempt", "4.5 to 5 years" and "About 60 percent ... drop out" now read "CA takes several years to qualify and many students drop out before Final."
+- The coaching reality-check list of CA, CS and CMA pass and conversion rates is deleted. Its intro now tells the reader to check the latest pass rates on the institute's own results page.
+- In Honest Gaps:
+  - The "ICAI 2025 Final pass rate was approximately 12 percent" and "8 to 18 percent" sentences are gone.
+  - "Salary ranges shown are medians from 2024-25 data" now reads "Salary ranges are indicative, and individual pay varies widely."
+
+**Headings that name removed salary content.**
+- Why: the batch 22 tables under these headings lost their salary column, so each heading named something no longer on the page.
+- commerce-jobs: "MBA Finance: The Brand Multiplier" is now "MBA Finance: Why the Brand Matters". "The City Multiplier Nobody Models" is now "How Your City Changes the Picture".
+- best-computer-courses: "Detailed Salary Map" is now "Duration and Fees".
+- mahe: "Specialisation Salary Map" is now "Specialisations and Recruiters".
+- online-mba-salary:
+  - "Salary by City" is now "Hiring Sectors by City".
+  - "10-Year ... Salary Trajectory" is now "Role Trajectory".
+- distance-mba-bangalore: "Realistic Salary Uplift" is now "Realistic Role Moves".
+- mba-entrance-exams: "Career Outcome Map" is now "Exam to College Tier Map".
+- online-mba-pune: "Sector-Wise Salary Map" is now "Sector-Wise Employer Map".
+- best-mba-specialization: "Ranked by Average Salary" is now "Ranked by Demand".
+- Checked: no FAQ question repeats these headings, and nothing in lib/, app/, components/, data/ or scripts/ links to their fragments.
+
+Gates: check-blog-fees 1945 (unchanged). Salary 1915 -> 1913 (the mba-scope FAQ medians). Em-dash 227. Fee 205.
+
 ## 2026-11-27 B3 batch 22 round 2: orphaned headings, renamed H2s, unsourced multipliers, commerce-jobs source claim, mba-full-form table
 
 Branch fix/b3-batch-22, new commit on 3bc34bc. Fixes from audits/qa/2026-11-27-b3-batch-22-premerge.md (F1, C1, A1, A3, A4). A6, the online-mba-salary Mumbai/Hyderabad medians, stays in batch 23 item 5. No title, seoTitle, h1Title or metaDescription changed. updatedAt was already 2026-11-27 on every edited post.
