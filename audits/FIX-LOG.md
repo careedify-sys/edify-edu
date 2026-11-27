@@ -1,5 +1,168 @@
 # Fix log
 
+## 2026-11-27 · B3 batch 15: Yenepoya MBA fee from the portal, Mysore 1,60,000 removed, derived fee comparisons in spec JSON, UPES spec fee range, Q59 rewritten as a mode question (branch fix/b3-batch-15)
+
+- **Source:** the B3 batch 15 brief and audits/verify/fees-mku-mumbai-mysore-yenepoya-amitymca-2026-11-27.md (portal
+  pages read 27 Nov, each with URL and date). No fee, EMI, gap or saving was computed or added. No title, seoTitle or
+  metaDescription changed.
+- **1. Yenepoya MBA fee (lib/data.ts, lib/data-slim.ts, data/fees-hub-data.json, lib/blog.ts):**
+  - Why: the site said Rs 1,20,000. The verify sheet shows every Yenepoya MBA page states "Total Fee Plan ₹ 50,000"
+    (Rs 25,000 a year), from onlineyenepoya.com/programs/online-mba-finance and /online-mba-marketing. The 1,20,000 sits
+    in the portal's JS bundle for a different programme, so the site figure had no MBA source.
+  - What: MBA pd.fees '₹50,000', programFees.mba 50000, officialUrl https://onlineyenepoya.com, feeVerifiedOn
+    2026-11-27, and a source comment. feeMin/feeMax were the 60000/200000 MBA placeholder; they now carry 50000 as on
+    the Sharda record, mirrored in data-slim and fees-hub-data (feeStr ₹50K). Registration Rs 1,500 and exam Rs 3,000 a
+    year are noted in the comment, not added into the total. The International Finance (ACCA) variant is not carried,
+    since no field exists for it.
+  - getExactFee(Yenepoya, MBA): before {kind: none} (getDisplayFee printed ₹1,20,000 by rule 1); after
+    {kind: exact, min 50000, max 50000}. Rule 4d does not touch it; check-placeholder-fee-ranges OK.
+  - Blog: online-mba-karnataka-2026 table cell and "Yenepoya total fee" line now say ₹50,000. The other Yenepoya
+    figures in lib/blog.ts (BCA ₹1.05L-₹1.20L) are a different programme and were left.
+- **2. University of Mysore MBA Rs 1,60,000:**
+  - Why: no portal page shows it. On 27 Nov the portal printed INR 62,625 / 92,625 / 2,02,940 with no label, under a
+    "fee revision is currently in process" banner.
+  - What: in online-mba-karnataka-2026 the table cell reads "Under revision" and the prose says the portal shows the
+    fee as under revision, so no figure is quoted. "At a fair price", "uncommon in this price range" and the FAQ's
+    "at lower fees" / "budget is the primary constraint, pick ... University of Mysore" went with it, since they
+    rested on the 1,60,000. No new figure was added.
+  - lib/data.ts: the pd.fees field stays (getExactFee already returns none, and the hubs print "On request"); a comment
+    records the 27 Nov portal state.
+- **3. Derived fee comparisons in lib/data/page-content/*.json (60 files, 91 strings):**
+  - Why: spec pages stated arithmetic between universities that no source publishes: "MAHE at ₹X costs ₹Y more",
+    "Galgotias roughly half the price", "2.7x the cost", "30% lower", "saves ₹43,800", "Fee difference is Rs N", and
+    an intra-CU "(Rs 58,375 savings)" parenthetical in 22 Chandigarh files. Several were computed from fees that have
+    since changed.
+  - What: each sentence that only stated the gap was deleted; clauses were cut so the sentence still reads (for
+    example "is ₹N cheaper with" became "has"). No new figure. Quoted fees stay as written where no arithmetic is
+    applied to them.
+  - NMIMS was quoted as "Rs 1,60,000-1,95,000" in 12 peer spec files; getExactFee(NMIMS, MBA) is exact 1,96,000 to
+    2,20,000, so the quote now reads "Rs 1,96,000 to Rs 2,20,000".
+  - Same post as item 2: "JAIN is roughly ₹1 lakh cheaper than MAHE" in online-mba-karnataka-2026 became "JAIN holds
+    the same NAAC A++ grade as MAHE".
+- **4. UPES spec pages (11 upes-online-mba-*.json):**
+  - Why: each printed one total with a Year 1 / Year 2 split (1,75,000, 1,95,000 or 2,20,000) and a per-specialisation
+    fee tier. lib/data.ts holds only the range getExactFee returns, 1,75,000 to 2,20,000, with no split and no
+    per-specialisation fee. The "3 to 36 months" tenure and "UPES NBFC lending tie-ups" lines have no source.
+  - What: tldr, fees body and fee FAQ now give "Rs 1,75,000 to Rs 2,20,000"; the year-wise block, tenure line and NBFC
+    line are gone (a neutral "contact our counsellor for current EMI options" line remains). Tier claims ("priced at
+    Rs 1,95,000, slightly above the standard tier", "Both are at the Rs 2,20,000 tier", "at a fraction of the cost",
+    "Rs 5,00,000-15,00,000" for executive programmes) were removed or neutralised. The Logistics FAQ "Why is ... priced
+    higher" now asks what it costs and answers with the range.
+- **5. audits/QUESTIONS-FOR-RISHI.md Q59:** rewritten. MKU's MBA is ODL only on the DEB register and Mumbai has no MBA
+  in any DEB mode (MMS by distance), so the fee question is moot and the question is mode: noindex via
+  MODE_UNVERIFIED_UNIS (university-wide), drop MBA with redirects, or something else. Neither university was changed.
+- **Counts** (source: git archive of 28cbba1 vs working tree; build: batch 14 build vs fresh build):
+  - derived-comparison detector (.b8tmp/cmp15.mjs) on page-content JSON 229 -> 2 (both false positives: "lower end of
+    the fee range", "lower cost").
+  - UPES Year 1/Year 2, tenure, NBFC, 1,95,000 and tier phrases in spec JSON 103 -> 0; range present 0 -> 62.
+  - NMIMS "1,60,000-1,95,000" in page-content 12 -> 0.
+  - Mysore 1,60,000 near "Mysore" in lib/blog.ts 2 -> 0; Yenepoya MBA 1,20,000 in lib/blog.ts 2 -> 0.
+- **Gates:** verify-fees, check-data-slim-drift, check-official-urls (29 portals, 28 verified), check-fee-baseline
+  (205, unchanged), check-placeholder-fee-ranges and check-blog-fees (1950, unchanged) pass. Tag balance unchanged.
+  online-mba-karnataka-2026 updatedAt is 2026-11-27.
+- **Open:** the Karnataka post H2 still reads "Mid-Range Tier: DSU, Christ, Alliance, and University of Mysore"; JAIN
+  "~Rs 1,75,000" and LPU "approximately ₹1,60,000" peer quotes in some spec JSON differ from lib/data.ts and were not in
+  this brief.
+
+- **Round 2 (QA, audits/qa/2026-11-27-b3-batch-15-premerge.md):**
+  - F1: online-mba-karnataka-2026 now shows Yenepoya at Rs 50,000 (NAAC A+) but the copy still called KSOU "the most
+    credible budget online MBA in Karnataka" with "A+ at this price point is rare nationally" and "best NAAC-to-fee ratio
+    on a budget, KSOU", and the under-Rs 1L tier line left Yenepoya out. Superlatives deleted (Alva`s is also A+ from
+    Rs 30K, so they were shaky before); Yenepoya added to the under-Rs 1L line. Fee sentences kept verbatim.
+  - F2: with a fee now published, FeeBreakdown printed its generic "semester-wise or in full", "EMI available through
+    lending partners" and "Study Material Included (digital)" lines on 4 Yenepoya pages; the portal states none of
+    them. Yenepoya added to NO_UNSOURCED_FEE_COMPONENTS, the Vignan precedent.
+  - F3: jain-university-online-mba-ai-for-finance.json still quoted NMIMS "at Rs 1.6L-1.95L" in lakh notation, missed by
+    the rupee-format sweep. Now Rs 1.96L-2.20L (getExactFee 1,96,000-2,20,000).
+  - Noted, not changed: titles and OG text on Yenepoya pages and /fees now carry the verified Rs 50,000 through the
+    existing fee templates (no protected or frozen page). Yenepoya BBA/BCA/MCA OG descriptions show the MBA range
+    "Rs 50K-Rs 50K" from app/universities/[id]/layout.tsx:202, a template issue shared by 17 universities at base.
+
+## 2026-11-27 · B3 batch 14: derived EMIs in spec page-content JSON, Amity MCA FAQ fee, a stale MUJ gap, UPES fee range, placement package ranges (branch fix/b3-batch-14)
+
+- **Source:** the B3 batch 14 brief. Facts come only from lib/data.ts (getExactFee, getDisplayFee), audits/verify
+  sheets and this log. No fee, EMI, salary or gap was computed or added. No title, seoTitle or metaDescription changed.
+- **1. Monthly EMI figures in lib/data/page-content/*.json (77 files, 182 strings):**
+  - Why: batch 12 cleared derived emiFrom values in lib/data.ts and batch 13 cleared the blog, but the spec-page JSON
+    still printed the same derivations: LPU 6,733 (1,61,600 / 24), MAHE 12,167 (2,92,000 / 24), UPES 7,292 / 8,125 /
+    9,167 (fee / 24), Jindal 6,319, SRM Sikkim 4,584 (1,10,000 / 24), the 2,500 and 4,000 template defaults, plus
+    Amrita 9,792, Dr MGR 5,700, Chitkara 6,000 and SMU 5,000, none of which has a repo source.
+  - Kept, because each has a source: JAIN 6,917; Amity 8,906 / 13,023 / 9,375; MUJ 6,517 / 7,667; UU 3,733;
+    Alliance 8,700; Jaypee 5,850; Adichunchanagiri 4,417; Vignan "EMI starting ₹2,900" (verify sheet).
+  - Method: a script parsed each JSON, edited strings and wrote them back with JSON.stringify(o, null, 2) (all 431
+    files round-trip byte-exact, checked before and after). EMI-only list lines and sentences were deleted; "EMI
+    options for X start from Rs N" became "EMI options for X may be available"; "You want ... EMI at Rs N per month"
+    became "You want an EMI option"; elsewhere only the figure clause was cut. The LPU hub's "among the lowest monthly
+    EMI rates for an online MBA in the NAAC A++ tier" went with the 6,733 it rested on.
+  - Result: unkept monthly EMI figures in the JSON 182 to 0 (77 files to 0); "lowest monthly EMI" 1 to 0. Base build:
+    58 such figures on 36 university pages. check-page-content-json and check-page-content-facts pass.
+- **2. amity-online-mca-fees-review FAQ:** "Rs.42,500 per semester, Rs.1,70,000 total" became "Rs 1,99,000 total for
+  4 semesters". Why: getExactFee(Amity, MCA) is exact ₹1,99,000 (programFees.mca); the FAQ was the only place in the
+  post still on the old fee. The frozen metaDescription and body say "Rs 49,800 per semester", which lib/data.ts does
+  not hold; left for a fact-checker, since the meta cannot change.
+- **3. amity-vs-manipal-online-mba-2026:** deleted "Budget matters. ₹54,000 saved (one-time) adds up". Why: the gap
+  came from MUJ's old ₹1,53,000 fee. No new gap was computed. The post's ₹50,600 and ₹41,000 gaps are differences of
+  the current lib/data.ts figures (2,07,000 minus 1,56,400; 2,25,000 minus 1,84,000) and were left.
+- **4. UPES ₹1,75,000 (5 posts, 19 edits):** getExactFee(UPES, MBA) is ₹1,75,000 to ₹2,20,000 and lib/data.ts holds no
+  per-specialisation or per-plan split, so every unscoped UPES total now prints the full range. Where a post lists
+  "UPES and JIIT (₹1,75,000)", the two were split so JIIT keeps its own figure. The "(Y1: ₹95,000 / Y2: ₹80,000)"
+  parentheticals in three spec tables went (the split is not in lib/data.ts, and it does not sum to the range). The
+  UPES review keeps its yearly table, now introduced as "the split below is for a ₹1,75,000 total". "UPES costs less
+  than NMIMS" became "overlap on fee", because the upper ends are now both ₹2,20,000.
+  - Not changed: the frozen metaDescription "₹1.75L total fee"; the review's verify callout links upesonline.ac.in in
+    visible copy (pre-existing, out of this brief's scope).
+- **5. online-mba-with-placement-india-2026:** deleted all 7 package ranges (Rs 4-12 LPA twice, and the IT, BFSI,
+  FMCG, manufacturing and healthcare sector ranges). Why: no source, and the post's own table says none of the 8
+  universities publishes an online MBA package. The FAQ answer now says that instead.
+- **6. nmims-vs-symbiosis-online-mba-2026:** "the monthly difference may be manageable" became "the fee difference may
+  be manageable", since the post no longer prints monthly figures.
+- **7. Karnataka post, University of Mysore ₹1,60,000 and Yenepoya ₹1,20,000:** getExactFee returns none for both; their
+  pd.fees are "₹160K – ₹160K" and "₹120K – ₹120K" with no source comment, feeVerifiedOn or verify sheet. Not changed
+  (both pass the fee gate). Listed for a fact-checker portal check.
+- **Gates:** check-blog-fees unverified count 1,955 to 1,951 (mba-hr-management 41 to 39, business-data-analytics 39
+  to 37); baseline went down only. Tag balance unchanged in all 9 edited posts; no em dashes added.
+- **updatedAt 2026-11-27 (9 posts):** amity-online-mca-fees-review, mba-hr-management-online-india-2026,
+  online-mba-business-data-analytics-india-2026, online-mba-supply-chain-management-india-2026,
+  upes-online-mba-review-2026, best-online-mba-colleges-india-2026, online-mba-with-placement-india-2026,
+  amity-vs-manipal-online-mba-2026, nmims-vs-symbiosis-online-mba-2026.
+- **Round 2 (QA audits/qa/2026-11-27-b3-batch-14-premerge.md, F1-F3 and A1):**
+  - **F1, page-content JSON:** the round 1 detector's lookbehind stopped at the "." in "Rs.", so "Rs.N" EMIs with no
+    month word were invisible to it. That is how the JAIN hub row "Monthly EMI | Rs.6,917 | Rs.6,111 | Rs.7,500" got
+    through (NMIMS 6,111 is 1,96,000 / 32; MUJ 7,500 is unsourced). With the fixed lookbehind, the pre-batch JSON
+    shows 184 unkept figures in 78 files (round 1 reported 182 in 77); after round 2 it shows 0.
+    - jain-university-online-mba.json: the whole comparisons section went. Besides the EMI row, it gave NMIMS NAAC
+      "A+" (lib/data.ts A++), NIRF Management #15 (lib/data.ts #24) and 5 specialisations (7), MUJ 12 specialisations
+      (14) and JAIN "NIRF listed" (#62). Too much was wrong to patch row by row, and the section is optional in the
+      schema.
+    - nmims-online-mba.json about.body: "Fees are Rs.1.96L and EMI starts." became "Fees are Rs.1.96L." The same
+      broken sentence in upes-online-mba.json became "Fees are Rs.1.75L to Rs.2.20L." (getExactFee range).
+  - **F2, amity-vs-manipal-online-mba-2026:** MUJ's ₹1,56,400 is "after 15% discount" in every payment mode
+    (feeBreakdown.mba.net), not a one-time price, so the "paid in full upfront" like-for-like comparison was wrong as
+    well as derived.
+    - Deleted: both "Gap:" paragraphs (₹50,600 and ₹41,000), both FAQ gap clauses (FAQ list and body copy), and the
+      "₹18,000 saved" and "₹27,600 saved" cells with their "Savings vs Semester" column.
+    - The snapshot table carried the Oct 2026 chart (MUJ ₹1,53,000 one-time, ₹1,80,000 semester-wise). Its rows are now
+      "lowest published" (Amity ₹2,07,000 one-time, MUJ ₹1,56,400 after 15% discount) and "list" (Amity ₹2,25,000
+      semester-wise, MUJ ₹1,84,000).
+    - "₹1.56L (one-time)" (3 places) now reads "₹1.84L list, or ₹1.56L after its 15% discount".
+    - The ₹50,600 gap paragraph is replaced by a sentence saying the discounted MUJ price does not line up with
+      Amity's one-time fee. No gap was computed.
+    - This corrects round 1, which kept the ₹50,600 and ₹41,000 gaps as current-figure arithmetic. A difference no
+      source states is still derived.
+  - **F3:** the placement FAQ now says no university in the guide publishes a "university-specific" average package.
+    That matches the post's table caption; the verify file shows the Online Manipal portal prints a pooled
+    "Average Salary Package 6 LPA*".
+  - **A1:** six SMU spec JSONs now say "Contact our counsellor for current EMI tenure options." The EMI line that
+    "tenure" referred to went in round 1. Chandigarh, Chitkara, Kurukshetra and UPES were not changed, because their
+    bodies still name the EMI tenures.
+  - **Gates:** check-blog-fees 1,951 to 1,950 (amity-vs-manipal 14 to 13); the baseline went down only. Tag balance is
+    unchanged and no em dashes were added. All 431 JSON files round-trip.
+  - **updatedAt** was already 2026-11-27 on both edited posts.
+  - **Follow-up commit:** the fresh build still printed "MUJ Fee ₹1.56L (one-time)" in the post's Quick Facts card. The
+    card reads lib/blog-quick-facts.ts, not the post, so it now says "₹1.56L (after 15% discount)".
+    - The H2 "Fees Breakdown: Comparing Like for Like" was kept. It now introduces mode-by-mode tables, and the text
+      under it says the discounted MUJ price does not line up with Amity's one-time fee.
+
 ## 2026-11-26 · B3 batch 13: derived EMIs in blog copy, dead EdifyRecommends, placement percentages, international salary list; rule 4d fallback held (branch fix/b3-batch-13)
 
 - **Source:** the B3 batch 13 brief. Facts come only from lib/data.ts (getDisplayFee, getExactFee, feePlans, emiFrom

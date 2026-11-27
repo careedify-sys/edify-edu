@@ -377,10 +377,10 @@
     "naac": "A+",
     "nirf": 999,
     "nirfMgt": null,
-    "feeMin": 60000,
-    "feeMax": 200000,
+    "feeMin": 50000,
+    "feeMax": 50000,
     "emiFrom": 0,
-    "feeStr": "₹60K – ₹2L",
+    "feeStr": "₹50K",
     "emiStr": "Not published",
     "programs": [
       "MBA",
