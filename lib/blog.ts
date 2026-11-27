@@ -5896,10 +5896,6 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>This is a template, not a total. Ask the specific university for their own weekly time estimate, and ask two current students in your target programme for their honest one. The realistic commitment varies by programme and by your baseline (job intensity, family responsibilities, prior study habits).</p>
 
-<h2>Working Professional Online MBA ROI Calculation 2026</h2>
-
-<p>Salaries vary by employer, city and experience; check current postings and the employer's own pay data.</p>
-
 <h2>Working Professional Online MBA Sector Recommendations 2026</h2>
 
 <ol>
@@ -9937,7 +9933,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Which is the best course after 12th commerce in 2026?', a: 'Depends on aptitude and goals. By long-term salary ceiling: CA (Rs 25 to 60 LPA at year 10 for top performers). By 5-year ROI: BBA plus MBA from tier-1 institute. By global mobility: ACCA (UK qualification, US, UK, Middle East roles). By stability plus pension: B.Com plus government exam (SSC CGL, Bank PO). The right pick depends on whether you tolerate exam-heavy study (CA, CS, CMA) or prefer classroom-style learning (BBA, B.Com).' },
       { q: 'Is BBA better than B.Com after 12th commerce?', a: 'For most students not doing CA: yes. BBA has stronger direct placement outcomes for management, marketing, sales, and operations roles. B.Com is the traditional accounting-focused degree and is only the better pick if you specifically plan CA afterwards (B.Com plus CA is classic) or MBA Finance from a top tier-1 institute. BBA plus MBA produces broader career options than B.Com plus MBA.' },
       { q: 'Can commerce students do BCA without Maths?', a: 'BCA without Maths is possible at some universities (LPU, Chandigarh University, Amity, Manipal Jaipur) which accept commerce-without-Maths students. UGC norms allow this but individual universities can be more restrictive. With Maths in 12th, BCA admission is universally accepted. Commerce-plus-Maths students have a stronger BCA pathway.' },
-      { q: 'What is the salary after B.Com alone vs B.Com plus PG?', a: 'B.Com alone: Rs 2.5 to 4 LPA fresher, capping at Rs 6 to 9 LPA by year 8. B.Com plus MBA Finance: Rs 6 to 12 LPA fresher post-MBA, Rs 18 to 28 LPA by year 8. B.Com plus CA: Rs 7 to 12 LPA at Big 4, Rs 25 to 50 LPA by year 10. B.Com plus CMA: Rs 5 to 8 LPA fresher, manufacturing sector strength. B.Com plus CFA: Rs 7 to 12 LPA in financial analyst roles. The PG qualification or certification adds 2x to 3x to the year-10 salary.' },
+      { q: 'What is the salary after B.Com alone vs B.Com plus PG?', a: 'B.Com alone: Rs 2.5 to 4 LPA fresher, capping at Rs 6 to 9 LPA by year 8. B.Com plus MBA Finance: Rs 6 to 12 LPA fresher post-MBA, Rs 18 to 28 LPA by year 8. B.Com plus CA: Rs 7 to 12 LPA at Big 4, Rs 25 to 50 LPA by year 10. B.Com plus CMA: Rs 5 to 8 LPA fresher, manufacturing sector strength. B.Com plus CFA: Rs 7 to 12 LPA in financial analyst roles.' },
       { q: 'Is CA still a good career after 12th commerce in 2026?', a: 'Yes, for the right aptitude. CA remains the highest commerce salary ceiling in India: Rs 7 to 12 LPA fresher at Big 4 (Deloitte, EY, KPMG, PwC), Rs 25 to 50 LPA at year 10, partner-level Rs 50 LPA to Rs 2 Cr at large firms. ICAI Final pass rate is roughly 10 to 15 percent per attempt. Median time to qualify is 4.5 to 5 years from CA Foundation. About 60 percent of CA Foundation enrollees drop out before Final. If you tolerate exam-heavy multi-year study, CA is the highest ROI commerce qualification.' },
       { q: 'What is ACCA and is it worth doing after 12th commerce?', a: 'ACCA is a UK-issued globally recognised accounting qualification from the Association of Chartered Certified Accountants. 13 exams across 3 levels, can complete in 2 to 3 years alongside graduation. Total cost Rs 3 to 4 lakh including exam fees. Recognised in 180-plus countries. Strong for Indian aspirants targeting Big 4 international rotations, Middle East finance roles (UAE, Saudi), or UK and Australia migration. Often combined with B.Com (B.Com plus ACCA is the global path).' },
       { q: 'Can I get a government job after just 12th commerce?', a: 'Limited options. SSC CHSL (Lower Division Clerk, Postal Assistant), some bank clerk-cadre exams, and railways Group D accept 12th pass candidates. Starting salary Rs 18,000 to Rs 25,000 per month. For better government roles (Bank PO at SBI or IBPS, SSC CGL, RBI Grade B, UPSC), graduation is the minimum eligibility. Plan to combine B.Com or BBA with government exam preparation in parallel.' }
@@ -11018,7 +11014,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>CMAT is a viable national MBA entrance for candidates targeting AICTE-approved colleges below IIM tier. Its single annual window plus moderate difficulty makes it accessible for working professionals plus students who do not have CAT-level intensity. Top CMAT colleges like JBIMS produce strong placement outcomes at Rs 20 to 30 LPA. For UGC-DEB online MBA aspirants, CMAT is not required. Match the exam plus path to your career target plus realistic preparation timeline. The right choice depends on your current academic profile, target college brand, plus 5-year career goal.</p>
 
-<h2>CMAT Career Outcomes by College Tier 2026</h2>
+<h2>Making CMAT Count for Your Career 2026</h2>
 
 <p>Salaries vary by employer, city and experience; check current postings and the employer's own pay data.</p>
 
@@ -11740,7 +11736,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>If you are Type 2, the salary question is really "how much faster does this accelerate what was already happening?" rather than "what will my new salary be?"</p>
 
-<h2>Salary By Specialization</h2>
+<h2>Why Pay Differs by City and Employer</h2>
 <figure style="margin: 28px 0;">
   <img src="https://images.pexels.com/photos/7580995/pexels-photo-7580995.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Serious businessman reviewing a document while sitting in a modern office." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
   <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@rdne" target="_blank" rel="noopener nofollow">RDNE Stock project</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
@@ -13472,7 +13468,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Honest Gaps in MBA After Engineering 2026</h2>
 
 <ul>
-  <li><strong>Tier-1 IIM premium is real:</strong> IIM A, B, C, L, K, I place at Rs 25-40 LPA. Online MBA places at Rs 8-18 LPA lateral. The 2x to 3x gap reflects brand pull plus campus placement.</li>
+  <li><strong>Tier-1 IIM premium is real:</strong> IIM A, B, C, L, K, I place at Rs 25-40 LPA. Online MBA places at Rs 8-18 LPA lateral. The gap reflects brand pull plus campus placement.</li>
   <li><strong>Engineering background does not automatically open consulting doors:</strong> MBB plus Big 4 strategy prefer tier-1 IIM full-time MBA. Online MBA places at Big 4 advisory, not strategy practice.</li>
   <li><strong>Product Management requires portfolio plus side projects:</strong> MBA alone is insufficient for top PM roles. Build product portfolio (case studies, mock product designs) during MBA.</li>
   <li><strong>Online MBA placement is lateral:</strong> No mass campus placement. Self-driven via LinkedIn plus referrals plus active job search.</li>
@@ -14471,10 +14467,6 @@ export const BLOG_POSTS: BlogPost[] = [
   <li>Tech Lead at services to Engineering Manager at product: Rs 12 to 22 LPA uplift.</li>
 </ul>
 
-<h2>Bengaluru Specific Salary Uplift Data Across Industries</h2>
-
-<p>Salaries vary by employer, city and experience; check current postings and the employer's own pay data.</p>
-
 <h2>The Bengaluru Online MBA Plus Certification Stack</h2>
 
 <p>Standalone online MBA produces moderate outcomes. Online MBA plus specific certifications produces strong outcomes for Bengaluru tech professionals.</p>
@@ -15081,11 +15073,11 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p><em>Takeaway: fresher online MBA works for 3 of 5 situations. Wait or work-first works for the other 2. Match your situation honestly.</em></p>
 
-<h2>The Realistic ROI Math: Fresher MBA vs Wait for Tier-1</h2>
+<h2>Fresher MBA vs Wait for Tier-1: The Cost Trade-off</h2>
 
 <p>Salaries vary by employer, city and experience; check current postings and the employer's own pay data.</p>
 
-<p>The tier-1 paths can produce higher absolute year-10 outcomes. But the upfront capital required is 15x to 25x higher. For most freshers without family financial backing, the fresher online MBA path is the practical default.</p>
+<p>The tier-1 paths can produce higher absolute year-10 outcomes. But the upfront capital required is far higher. For most freshers without family financial backing, the fresher online MBA path is the practical default.</p>
 
 <h2>UGC-DEB Approved Online MBA Options for Freshers (Live Data)</h2>
 
@@ -16329,9 +16321,9 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'What is the scope of MBA in India in 2026?', a: 'MBA graduates in India have job opportunities across 7 main sectors: BFSI (largest hirer), consulting, IT and product management, FMCG, e-commerce, healthcare, and manufacturing. NIRF 2024 placement data across 70 top management institutes shows median salary of Rs 16.5 LPA for top tier-1 brands and Rs 6.5 LPA at tier-3. The scope is widening for online MBA graduates from UGC-DEB approved universities, with NIRF data showing 35 percent year-on-year growth in online MBA placement reporting.' },
       { q: 'Which MBA specialisation has the best scope in India in 2026?', a: 'By 2026 NASSCOM and LinkedIn India hiring index: Business Analytics and Data Science MBA tops on demand (28 percent YoY growth), followed by Finance (BFSI hiring strong post RBI rate cuts), Product Management (15 percent YoY), Marketing with Digital focus, and Pharmaceutical and Healthcare Management. Operations MBA is stable. HR MBA is the slowest growing in 2026. Sector demand changes faster than degree duration, so verify hiring data within 6 months of enrollment.' },
       { q: 'Is online MBA scope good in India in 2026?', a: 'Yes for working professionals with 2-plus years of experience. The legal validity is identical to campus MBA when the programme is UGC-DEB approved. Employer perception has shifted significantly since 2022: 78 percent of HR managers surveyed by Naukri.com in 2025 said they accept online MBA from NAAC A or A+ universities for promotion eligibility. The remaining 22 percent still prefer campus MBA, mostly for fresher hiring. For mid-career professionals, the mode of MBA matters less than the brand and your existing track record.' },
-      { q: 'What salary can I expect after MBA in India in 2026?', a: 'Freshers from tier-1 IIMs and ISB: Rs 25 to 35 LPA median. Tier-1 private (IIFT, SP Jain): Rs 12 to 18 LPA. Tier-2 government and private B-schools: Rs 6 to 10 LPA. UGC-DEB approved online MBA (with prior work experience): Rs 4 to 9 LPA for first role post-MBA, but typically used for promotion rather than fresh placement. Salary scales 8 to 12 percent annually with strong execution. 5-year post-MBA salary typically 2.5-3x the starting CTC.' },
+      { q: 'What salary can I expect after MBA in India in 2026?', a: 'Freshers from tier-1 IIMs and ISB: Rs 25 to 35 LPA median. Tier-1 private (IIFT, SP Jain): Rs 12 to 18 LPA. Tier-2 government and private B-schools: Rs 6 to 10 LPA. UGC-DEB approved online MBA (with prior work experience): Rs 4 to 9 LPA for first role post-MBA, but typically used for promotion rather than fresh placement. Salary scales 8 to 12 percent annually with strong execution.' },
       { q: 'Which sectors are SHRINKING for MBA hires in 2026?', a: 'Traditional IT services (TCS, Infosys, Wipro) MBA hiring is down 18 percent YoY according to NASSCOM 2025 Q4 data. Telecom MBA hiring has flattened post-Jio consolidation. Print media and traditional advertising MBA roles have shrunk 25 percent over 3 years. Pure consulting (McKinsey, BCG, Bain) hiring is stable but more competitive. The growth sectors are SaaS product, BFSI digital banking, climate and ESG, and pharma-tech.' },
-      { q: 'Does the mode of MBA (online, campus, executive) affect long-term salary?', a: 'Yes for the first 3 years post-MBA, then it diverges by performance not by mode. Tier-1 campus MBA freshers earn 2-4x more than online MBA freshers in year 1. By year 5, the gap halves. By year 10, role and skill outweigh original MBA mode. Performance reviews and lateral moves are what compound. The exception is consulting (McKinsey, BCG) and IB roles, where tier-1 campus MBA remains a near-mandatory filter even at senior levels.' },
+      { q: 'Does the mode of MBA (online, campus, executive) affect long-term salary?', a: 'Yes for the first 3 years post-MBA, then it diverges by performance not by mode. Tier-1 campus MBA freshers earn more than online MBA freshers in year 1, and the gap narrows over time. By year 10, role and skill outweigh original MBA mode. Performance reviews and lateral moves are what compound. The exception is consulting (McKinsey, BCG) and IB roles, where tier-1 campus MBA remains a near-mandatory filter even at senior levels.' },
       { q: 'What are the emerging MBA career paths in India 2026 that nobody talks about?', a: 'Three under-reported tracks. First, ESG and Climate Tech roles at corporates and ratings agencies (Rs 12 to 25 LPA mid-career, growing 40 percent YoY). Second, AI Operations Manager roles at SaaS companies (translating AI capabilities into business workflows, Rs 18 to 35 LPA). Third, D2C brand operator roles at consumer startups (Mamaearth, boAt, Nykaa-type companies, Rs 14 to 28 LPA with equity). These rarely show up in standard MBA scope articles.' }
     ],
     content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, edifyedu.in. Hiring data sourced from NIRF 2024 placement reports across 70 management institutes, NASSCOM Q1 2026 sector tracker, LinkedIn India Hiring Index April 2026, and Naukri.com Job Speak January 2026.</em></p>
@@ -16382,13 +16374,13 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p><em>Takeaway: pick your specialisation to match growth sectors. Analytics, BFSI, and pharma are where the next 3 years of hiring expansion will sit.</em></p>
 
-<h2>The Brand x Specialisation Matrix Most Blogs Skip</h2>
+<h2>Brand or Specialisation: Which Matters More</h2>
 
 <p>Salary depends on the interaction of brand and specialisation, not just one of them. A Finance specialisation at IIM A is not the same career as Finance at a tier-3 college. The combination matters more than either factor alone.</p>
 
 <p>Salaries vary by employer, city and experience; check current postings and the employer's own pay data.</p>
 
-<p>The honest read: brand is a 2-3x multiplier. Specialisation is a 1.3-1.5x multiplier. If you have to pick, prioritise brand. If brand is locked (you got into a tier-2 not a tier-1), pick the specialisation with the strongest growth tailwind. Use the <a href="/tools/salary-calculator" class="ilink">salary estimator</a> on edifyedu.in to model your expected CTC by specialisation and experience.</p>
+<p>The honest read: brand usually moves pay more than specialisation does. If you have to pick, prioritise brand. If brand is locked (you got into a tier-2 not a tier-1), pick the specialisation with the strongest growth tailwind. Use the <a href="/tools/salary-calculator" class="ilink">salary estimator</a> on edifyedu.in to model your expected CTC by specialisation and experience.</p>
 
 <h2>The Three Emerging MBA Careers Nobody Talks About</h2>
 
@@ -20466,10 +20458,6 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Step 4: Complete admission interview (if required):</strong> NMIMS, JAIN, Symbiosis conduct online admission interviews. MUJ, Amity, Chandigarh use profile-based admission.</li>
   <li><strong>Step 5: Pay first instalment plus begin programme:</strong> First semester payment (Rs 25K to 60K typical). LMS access activated. Onboarding webinar plus orientation begin.</li>
 </ol>
-
-<h2>Distance MBA Salary Outcomes by University Tier 2026</h2>
-
-<p>Salaries vary by employer, city and experience; check current postings and the employer's own pay data.</p>
 
 <h2>Best Distance MBA for Specific Career Goals 2026</h2>
 
@@ -24870,7 +24858,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <a href="/universities" style="display:inline-block;background:#f59e0b;color:#000;padding:10px 22px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px">Explore All Programs</a>
 </div>
 
-<h2>Top Engineering Branches Salary Map India 2026 (PCM)</h2>
+<h2>Top Engineering Branches and Recruiters India 2026 (PCM)</h2>
 
 <table>
   <caption>B.Tech branches and top recruiters India 2026 (tier-1 college)</caption>
@@ -26492,15 +26480,15 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaDesc: `Explore all UGC DEB approved online degrees, MBA, MCA, BBA, BCA, <a href="/blog/career-after-bcom-jobs-salary-courses-2026" style="color:inherit;text-decoration:underline;text-underline-offset:2px">career after B.Com</a>, and find the right fit for your goals and budget.`,
     faqs: [
       { q: `What is the best job after B.Com in India in 2026?`, a: `By 10-year earnings, Chartered Accountant in audit/tax practice or as a corporate CFO is the highest commerce path (Rs 25 to 60 LPA by year 10). MBA Finance from a tier-1 institute is the second strongest (Rs 30 to 50 LPA by year 10). RBI Grade B Officer wins on stability plus pension. For B.Com graduates who do not want a postgraduate qualification, Bank PO or SSC CGL plateau around Rs 12 to 18 LPA by year 10. The right pick depends on whether you can invest 2-5 more years in a CA or MBA after graduation.` },
-      { q: `What is the realistic salary for a fresh B.Com graduate?`, a: `Rs 2.5 to 4 LPA in tier-2 cities for accounts assistant, junior auditor, or sales associate roles. Rs 3 to 5 LPA in metros for the same roles. Rs 4 to 7 LPA if you have additional certifications (Tally with GST, Advanced Excel, basic SQL) or join a Big 4 audit firm at the entry level. The Indian Staffing Federation 2026 report shows the median fresher B.Com salary at Rs 3.6 LPA.` },
+      { q: `What is the realistic salary for a fresh B.Com graduate?`, a: `Rs 2.5 to 4 LPA in tier-2 cities for accounts assistant, junior auditor, or sales associate roles. Rs 3 to 5 LPA in metros for the same roles. Rs 4 to 7 LPA if you have additional certifications (Tally with GST, Advanced Excel, basic SQL) or join a Big 4 audit firm at the entry level.` },
       { q: `Which is better after B.Com, CA or MBA?`, a: `CA wins on depth, lower upfront fees (Rs 1.5 to 2 lakh total), and corporate finance career ceiling. MBA wins on speed (2 years versus 4-5 for CA), broader role options, and lateral movement into consulting or product management. Both can be combined. The right pick depends on three things: whether you tolerate exam-heavy multi-year study (CA), whether you can afford Rs 15-30 LPA opportunity cost (full-time MBA), and whether your target role is in numbers (CA) or general management (MBA).` },
       { q: `Can commerce students become IAS officers in 2026?`, a: `Yes. UPSC Civil Services is open to graduates from any stream. Commerce graduates have a slight edge in the optional papers Public Administration, Commerce and Accountancy, or Economics. The UPSC topper analysis for 2024-25 shows 18 percent of successful candidates had a commerce background. The bigger lever is preparation hours and a coaching strategy, not stream.` },
       { q: `Are commerce jobs better in metros or tier-2 cities?`, a: `Metros pay 30 to 50 percent more in absolute numbers but cost of living eats most of the difference. A Rs 6 LPA accountant in Bengaluru takes home roughly the same as a Rs 4 LPA accountant in Indore once rent, transport, and food are accounted for. The real metro advantage is career velocity, not salary: faster promotions, more job-changing options, exposure to MNC processes. For long-term wealth, the Tier-2 path with disciplined saving often outperforms.` },
       { q: `Which commerce career has the highest 10-year salary ceiling?`, a: `Chartered Accountant in CFO track at a listed company can reach Rs 80 LPA to Rs 2 Cr by year 12-15. Investment banking with an MBA Finance from IIM or ISB tops out at Rs 1.5 to 4 Cr at Director level. Both are outliers. The realistic top quartile for commerce graduates with full investment in a postgraduate qualification is Rs 35 to 60 LPA at year 10, across CA, MBA Finance, and senior PSU bank roles.` }
     ],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, edifyedu.in. Salary ranges sourced from Indian Staffing Federation 2026 report, NIRF 2024 placement disclosures, IBPS and RBI 2025 notifications, and ICAI member survey 2025.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, edifyedu.in.</em></p>
 
-<p>Most "commerce jobs" lists give you starting salaries and stop there. That is the wrong number to optimise for. The right number is what each career pays at year 1, year 5, and year 10, and where it hits a ceiling without a postgraduate qualifier. This guide answers that for the 14 most common commerce career paths in India for 2026, with sourced salary data and the trade-offs nobody else tells you about.</p>
+<p>Most "commerce jobs" lists give you starting salaries and stop there. That is the wrong number to optimise for. The right number is what each career pays at year 1, year 5, and year 10, and where it hits a ceiling without a postgraduate qualifier. This guide answers that for the 14 most common commerce career paths in India for 2026, with the trade-offs nobody else tells you about.</p>
 
 <p>Written for: Class 12 commerce students choosing a career direction, B.Com final-year students deciding next steps, and parents trying to sanity-check what they hear from coaching centres.</p>
 
@@ -26526,13 +26514,13 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p><em>Takeaway: pick your stream first, then pick the role. Most career mistakes happen when a student joins a Tier 2 role and discovers the ceiling at year 5.</em></p>
 
-<h2>Chartered Accountant: The Real 10-Year Curve</h2>
+<h2>Chartered Accountant: The Path and the Trade-offs</h2>
 
 <p>CA is the highest commerce ceiling in India, but the average reality is more pedestrian than coaching centres advertise. Pay depends heavily on where a CA works and for how long.</p>
 
 
 
-<p>The path looks straightforward but isn't. CA Foundation to Final takes a median of 4.5 years according to ICAI 2024 pass rate data. About 60 percent of students drop out at the Intermediate stage. The opportunity cost during those 4 to 5 years (when peers are earning) is real.</p>
+<p>The path looks straightforward but isn't. CA Foundation to Final takes several years, and many students drop out at the Intermediate stage. The opportunity cost during those years (when peers are earning) is real.</p>
 
 <p>What nobody tells you: CA in private practice and CA in corporate are two different careers. Practice partners earn more after year 10 but build slowly. Corporate CAs hit Rs 20 LPA faster but plateau unless they move to CFO track. Pick deliberately, not by default.</p>
 
@@ -26540,7 +26528,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>MBA Finance: The Brand Multiplier</h2>
 
-<p>MBA Finance salary depends almost entirely on which MBA. The gap between an IIM-A Finance MBA and a Tier-3 MBA can be 5x at year 1 and 8x by year 5. NIRF publishes a median graduate salary for each ranked institute, so compare those figures for the institutes on your list.</p>
+<p>MBA Finance salary depends almost entirely on which MBA. The gap between an IIM-A Finance MBA and a Tier-3 MBA can be wide at year 1, and it often grows with experience. NIRF publishes a median graduate salary for each ranked institute, so compare those figures for the institutes on your list.</p>
 
 
 
@@ -26567,7 +26555,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p><strong>UPSC Civil Services for commerce graduates:</strong> Indian Revenue Service (IRS) is the natural commerce-aligned posting. IRS officers handle Income Tax and GST departments. Starting pay (after probation) is Rs 56,100 plus allowances, roughly Rs 12 to 14 LPA total. Year 10 (Joint Commissioner) is Rs 25 to 30 LPA. The non-monetary perks (housing, transport, social standing) are the real return.</p>
 
-<p><strong>SSC CGL for commerce graduates:</strong> Tax Assistant, Auditor, Junior Accountant, and Income Tax Inspector are the four commerce-aligned posts. Starting pay Rs 5 to 6 LPA in metro postings. The career grows to Rs 12 to 16 LPA by year 15 with internal promotions to Assistant Commissioner-grade roles. Lower ceiling than UPSC, but the entry exam is 4x more accessible.</p>
+<p><strong>SSC CGL for commerce graduates:</strong> Tax Assistant, Auditor, Junior Accountant, and Income Tax Inspector are the four commerce-aligned posts. Starting pay Rs 5 to 6 LPA in metro postings. The career grows to Rs 12 to 16 LPA by year 15 with internal promotions to Assistant Commissioner-grade roles. Lower ceiling than UPSC, but the entry exam is more accessible.</p>
 
 <p><strong>Specialist cadres (RBI Grade B, SEBI Grade A, NABARD Grade A, IBPS SO):</strong> RBI Grade B in particular is often called "the IAS of finance" among coaching circles. The 2025 RBI notification had 222 vacancies against 2.3 lakh applicants, but the recruitment is annual and cumulative.</p>
 
@@ -26591,14 +26579,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>The City Multiplier Nobody Models</h2>
 
-<p>The same job pays different amounts in different cities. The Indian Staffing Federation 2026 data shows the actual multiplier.</p>
-
-<ul>
-  <li>Bengaluru, Mumbai, Gurgaon: 1.4x base salary, but 1.5x cost of living. Real wealth gain: about the same or slightly lower than Tier 2.</li>
-  <li>Hyderabad, Pune, Chennai: 1.2x base salary, 1.2x cost of living. Net wash, but better career velocity.</li>
-  <li>Tier-2 (Indore, Jaipur, Lucknow, Coimbatore, Vadodara): 1.0x base, 0.7x cost. Highest real saving rate, slower career growth.</li>
-  <li>Tier-3 and remote roles: 0.8x base, 0.5x cost. Best for early-career savings if remote work is available.</li>
-</ul>
+<p>The same job pays different amounts in different cities, and living costs differ just as much. A metro salary premium is often offset by rent, so compare take-home pay after housing, not the headline figure.</p>
 
 <p>For a B.Com graduate optimising for long-term wealth (down payment on a house, FIRE target), starting in a Tier-2 city for 5 years and moving to a metro later is often the right play. The metro premium is mostly absorbed by rent.</p>
 
@@ -26639,7 +26620,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Three things to verify before acting on any salary number above.</p>
 
 <ul>
-  <li>City-level variance is wider than the table averages. Mumbai BFSI roles often pay 20 percent more than the Indian Staffing Federation median; Tier-3 government roles may pay less in early years before regularisation.</li>
+  <li>City-level variance is wide. Metro BFSI roles often pay more than the same role elsewhere; Tier-3 government roles may pay less in early years before regularisation.</li>
   <li>The 2026 fee figures for CA, MBA, and certifications are current as of May 2026. Talk to our counsellor (icai.org, target university portal) before paying.</li>
   <li>NPS versus OPS distinctions in government jobs depend on your specific recruitment year. Confirm at the time of joining.</li>
 </ul>
@@ -31172,44 +31153,6 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Let me set realistic expectations. The INR 1 crore salary packages you see in news headlines represent the top 1% of IIM graduates. The reality for most MBA holders looks quite different.</p>
 
 <p>Salaries vary by employer, city and experience; check current postings and the employer's own pay data.</p>
-
-<h3>Salary by Specialization</h3>
-<table>
-  <thead>
-    <tr>
-      <th>Specialization</th>
-      <th>Entry Level (LPA)</th>
-      <th>Mid-Career (LPA)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Finance</td>
-      <td>5 - 8</td>
-      <td>12 - 25</td>
-    </tr>
-    <tr>
-      <td>Data Science/AI</td>
-      <td>6 - 10</td>
-      <td>15 - 28</td>
-    </tr>
-    <tr>
-      <td>Marketing</td>
-      <td>4 - 7</td>
-      <td>10 - 20</td>
-    </tr>
-    <tr>
-      <td>HR</td>
-      <td>3.5 - 6</td>
-      <td>8 - 15</td>
-    </tr>
-    <tr>
-      <td>Operations</td>
-      <td>4 - 7</td>
-      <td>10 - 18</td>
-    </tr>
-  </tbody>
-</table>
 
 <p>Your salary after MBA depends on three things: the college brand, your specialization, and your prior work experience. An online MBA will not give you an IIM-level starting package. But if you already have 3-5 years of work experience and add an MBA, you become eligible for managerial roles that pay significantly more.</p>
 

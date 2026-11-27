@@ -1,5 +1,31 @@
 # Fix log
 
+## 2026-11-27 B3 batch 22 round 2: orphaned headings, renamed H2s, unsourced multipliers, commerce-jobs source claim, mba-full-form table
+
+Branch fix/b3-batch-22, new commit on 3bc34bc. Fixes from audits/qa/2026-11-27-b3-batch-22-premerge.md (F1, C1, A1, A3, A4). A6, the online-mba-salary Mumbai/Hyderabad medians, stays in batch 23 item 5. No title, seoTitle, h1Title or metaDescription changed. updatedAt was already 2026-11-27 on every edited post.
+
+**F1. Three orphaned H2s deleted with their line.**
+- Why: the removed table was the whole section, so each heading promised a calculation or data set that no longer exists, followed only by the neutral line.
+- What changed: the heading and the neutral line are gone in online-mba-for-working-professionals-india ("Working Professional Online MBA ROI Calculation 2026"), distance-mba-bangalore-2026 ("Bengaluru Specific Salary Uplift Data Across Industries") and distance-mba-meaning-what-is-it-2026 ("Distance MBA Salary Outcomes by University Tier 2026").
+
+**C1. Six H2s renamed to describe what is left.**
+- Why: each named an object the batch removed (a matrix, a salary map, a curve, ROI maths, a tier table). H2 text is not title or meta.
+- What changed: mba-scope "Brand or Specialisation: Which Matters More"; online-mba-salary "Why Pay Differs by City and Employer"; courses-after-12th-science "Top Engineering Branches and Recruiters India 2026 (PCM)"; commerce-jobs "Chartered Accountant: The Path and the Trade-offs"; freshers "Fresher MBA vs Wait for Tier-1: The Cost Trade-off"; cmat "Making CMAT Count for Your Career 2026".
+- Checked: none is a FAQ question, and no internal link in lib/, app/, components/ or data/ points at a #fragment on any of these posts, so no anchor needed updating.
+
+**A1. Unsourced multipliers deleted in the batch 22 posts.**
+- Why: a multiplier is a statistic, and none of these names an approved source (house rule 7).
+- What changed: mba-scope "brand is a 2-3x multiplier. Specialisation is a 1.3-1.5x multiplier" (now: brand usually moves pay more than specialisation), FAQ "2.5-3x the starting CTC" (deleted) and FAQ "2-4x more ... the gap halves" (now: earn more, gap narrows); freshers "15x to 25x higher" (now "far higher"); commerce-jobs "5x at year 1 and 8x by year 5", "4x more accessible" and the four-row city multiplier list (1.4x/1.5x and so on, attributed to an ISF report); mba-after-engineering "2x to 3x gap"; career-after-12th-commerce FAQ "adds 2x to 3x to the year-10 salary". The sweep script found further multipliers in posts outside batch 22; those are left for their own chunk.
+
+**A3. commerce-jobs source claims removed.**
+- Why: the byline credited the salary ranges to the Indian Staffing Federation 2026 report, NIRF 2024 placement disclosures, IBPS/RBI 2025 notifications and an ICAI 2025 survey, and the intro promised "sourced salary data". Batch 22 removed those tables because they did not match any such source, so the claim was unsupported.
+- What changed: the source list in the byline, "with sourced salary data" in the intro, the FAQ sentence "The Indian Staffing Federation 2026 report shows the median fresher B.Com salary at Rs 3.6 LPA", the ISF attribution in the city section and in the Honest Gaps list ("20 percent more than the Indian Staffing Federation median"), and the "median of 4.5 years according to ICAI 2024 pass rate data" and "About 60 percent ... drop out" statistics. Each sentence was reworded without a figure.
+
+**A4. mba-full-form "Salary by Specialization" table removed.**
+- Why: its two data columns were "Entry Level (LPA)" and "Mid-Career (LPA)" with 10 bare figures and no source. With both salary columns dropped only the specialisation names were left, and the prose below already discusses each one, so the H3 and the table went together. The salary gate never counted these bare cells (unit only in the header); batch 23 item 4 extends the detector.
+
+Gates: check-blog-fees 1945 (unchanged). Salary baseline 1916 -> 1915 (the ISF FAQ sentence). Em-dash and fee baselines unchanged.
+
 ## 2026-11-27 B3 batch 22: salary chunk 20c, generic role-salary tables in 20 posts
 
 Branch fix/b3-batch-22, from b90b5e9, rebased onto the batch 21 round 2 tip (33bae44). Scope: the 20 posts in the 20c chunk (the 8 frozen posts and 14 salary-meta posts excluded, re-checked against the refreshed scope file), ordered by GSC impressions. No title, seoTitle, h1Title or metaDescription changed. No allowlist entry added. updatedAt is 2026-11-27 on all 20.

@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-11-27",
   "note": "Per-slug count of LPA / lakh-per-annum salary figures in lib/blog.ts (content, FAQs, title, seoTitle, h1Title, metaDescription). Ratchet: a count may only go down; a slug not listed must be 0. See scripts/check-blog-salaries.mjs.",
-  "total": 1916,
+  "total": 1915,
   "perSlug": {
     "1-year-mba-india-executive-mba-2026": 27,
     "affordable-online-mba-india-2026": 1,
@@ -29,7 +29,7 @@
     "cat-exam-syllabus-2026-complete-guide": 1,
     "chandigarh-university-online-mba-review": 18,
     "cmat-exam-2026-guide-eligibility-pattern": 4,
-    "commerce-jobs-list-salary-india-2026": 36,
+    "commerce-jobs-list-salary-india-2026": 35,
     "courses-after-12th-science-complete-list-2026": 14,
     "cyber-security-salary-india-2026-career-guide": 57,
     "data-science-salary-india-2026-scope-jobs": 62,
