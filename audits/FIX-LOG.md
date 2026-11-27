@@ -1,8 +1,47 @@
 # Fix log
 
+## 2026-11-28 B3 batch 25 round 2: QA F1-F8 (scanner exemptions, BVP revert, wrong and derived fees)
+
+Branch fix/b3-batch-25, on top of the origin/main merge 3efb19b. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. data-science-salary-india-2026-scope-jobs not touched. updatedAt 2026-11-28 on all 22 edited posts.
+
+**F1, scanner (scripts/lib/blog-fee-scan.mjs).** Why: v4 let figures through that the old rule would never have exempted ("fee difference of Rs X", "Rs X higher", "Rs X less"), because AMOUNT_BEFORE_RE and AMOUNT_AFTER_RE accepted label words outside the 10 discount words, and a table row could borrow a discount word from the next cell. Now:
+- Both patterns accept only the 10 DISCOUNT_SOURCES words (gap, save, saving, discount, off, cashback, scholarship, waiver, cheaper, lower). So a figure is exempt only when the old rule would also exempt it AND it is the amount that word names.
+- The look-behind and look-ahead stop at the nearest td/th edge, so a cell cannot borrow a word from its neighbour.
+- Self-test: QA's injected cases are added (fee difference, higher, more expensive, less, concession, and two table rows with "Higher rate" and "Discount" in the next cell must be checked; "Rs 10,000 off the online MBA" stays exempt). The gate fails before scanning if any case flips.
+
+**F1, figures the fixed scanner exposed (8).** Each one is a derived gap or an unsourced total, so it is deleted, not reworded around:
+- online-manipal-mba-review-2026: "fee difference of Rs 1.17 lakh over MUJ and Rs 1.82 lakh over SMU" deleted (a subtraction of our own).
+- du-online-mba-delhi-university-2026: "Total (approx 2 years) Rs 20,000-25,000" goes to the counsellor. DU SOL has no exact fee in lib/data.ts.
+- dy-patil-online-mba-review: "Rs 1.89 lakh higher than JAIN (Rs 1.50 lakh)" was wrong twice (DPU is Rs 1,89,400 total, not a gap; JAIN is not Rs 1.50 lakh). Now "DPU (Rs 1.89 lakh) costs more than MUJ".
+- amity-online-bba-fees-2026: "₹55,120 less" and "saves ₹40,120" deleted. Sharda was also wrong at ₹1,20,000; lib/data.ts gives ₹1,35,000.
+- amity-online-bba-review-2026: "₹31,120 less" deleted.
+- online-bba-programs-india-2026: "a difference of ₹23,880" deleted. "NMIMS Standard ₹1,50,000 sem-wise" was unsourced; NMIMS lists ₹1,41,000.
+- muj-online-bba-review-2026: "₹36,000 less than MAHE" (MAHE BBA has no exact fee), "saves ₹21,600" and "₹31,120 premium" deleted. MUJ ₹1,44,000, LPU ₹1,22,400 and Amity ₹1,75,120 kept; each is in lib/data.ts.
+- why-online-mba-fees-differ-india-2026: "a Rs 55,000 concession" deleted from that sentence.
+
+**F2, Bharati Vidyapeeth.** Why: round 1 reworded "Backlog exams cost Rs 400" to "The backlog exam fee is Rs 400" and that wording happened to change the figure's class. A reword made to change a gate result is gaming, so it is reverted to the original wording. The figures are then handled on their merits: ₹400 has no source in lib/data.ts or a verify sheet, so both mentions go to the counsellor; "listing sites quote Rs 1,60,000" goes to "a lower figure", because repeating an unsourced number to rebut it still prints it. Rs 1,68,000 stays (feePlans one-time figure).
+
+**F3, wrong fees beside round 1 edits.**
+- Shoolini (pharma, analytics FAQ): "standard ₹1,50,000" was wrong. Rishi confirmed Rs 1,58,000 / Rs 1,30,000 in chat, 28 Nov, matching lib/data.ts feePlans and the 18 Nov verify sheet. Both posts now name each figure: ₹1,30,000 without Pay-After-Placement and ₹1,58,000 with it, after scholarship, and ₹2,00,000 where the sentence is about the regular fee. No new "standard" figure. The pharma per-semester line "₹30,000 to ₹32,500" had an unsourced floor; it now gives Shoolini's own printed ₹32,500 (without PAP) and ₹33,575 (with PAP), and the one-time charge is called the ₹500 application fee. lib/data.ts and its checkedOn are unchanged (checkedOn stays the 18 Nov portal read).
+- mba-hr: "BVP (₹1,60,000)" x2 becomes "Bharati Vidyapeeth (₹1,78,000)", the lib/data.ts total. The ₹43,781 CU column stays (verify sheet per-semester-fees-2026-11-27, section A row 11).
+- CU rows in fintech, hospitality, logistics, real-estate: "₹1,16,250 net / ₹29,063 net" did not match the prose or lib/data.ts. Now ₹1,75,125 net (after up to 25% Early Bird) and ₹43,781 (section A row 11). ₹29,063 was our own division (section B).
+- jain-vs-amity: the ₹8,500 add-on (no source), the sums ₹2,04,500 and ₹1,83,500, and the gaps ₹20,500 and ₹29,000 are deleted; the add-on cells and totals go to the counsellor. ₹1.96L stays because the metaDescription quotes it; added to Q71 as item 7.
+
+**F4, derived figures.** lpu-bba "saves ₹27,600" x2, muj-bba "saves ₹21,600" and symbiosis-bba "MAHE at ₹1,80,000 commands ₹15,000 premium" deleted. Each was our own subtraction, and MAHE BBA has no exact fee.
+
+**F5, unbacked comparisons.** amrita-bba (4 places) and symbiosis-bba claimed Amrita costs less than MAHE and Symbiosis. Amrita BBA has no exact fee in lib/data.ts, so nothing backs the ordering; all five lose the comparison. The pharma H3 "lowest fee after scholarship" superlative is deleted.
+
+**F6, MATCH moves reviewed.** The 4 wrong moves are gone (Shoolini ₹1,50,000 x2 deleted, JAIN ₹2,04,500 and ₹1,83,500 deleted). integral-university-online-review: the "semester fee x semesters" products (₹33,000, ₹39,000, ₹76,800, ₹68,000, ₹36,000) and the "₹1,500 / ₹500 lower" differences were our own arithmetic, so they are deleted; the table now shows only the portal's semester fee, semester count and stated total. The other round 1 MATCH moves are figures for universities whose lib/data.ts record has a range, not an exact fee; they match the range and are left as they are.
+
+**F7, hold tied to the freeze.** check-blog-fees now fails unless EXEMPTION_HOLD_UNTIL equals FREEZE_UNTIL in check-protected-pages.mjs, the date is on or before 2026-12-05, and every held slug is in FREEZE_SLUGS. check-protected-pages runs its gate on import, so the constants are read from its file text. Proved: FREEZE_UNTIL set to 2026-12-04 gave FAIL; one frozen slug renamed gave FAIL "held slug smu-online-mba-review is not in FREEZE_SLUGS"; both restored.
+
+**F8.** The round 1 entry now names its base as 341f986 and lists the three missing moves. 1-year-mba "IIM Executive programmes (Rs 25 lakh-plus)" figure deleted (no source).
+
+**Counts.** check-blog-fees 1800 -> 1792 with the fixed scanner (it first rose to 1808 from the 8 exposed figures). No slug above its baseline; the gate lowered and staged the baseline.
+
 ## 2026-11-28 B3 batch 25: discount-word narrowing in check-blog-fees, exposed figures fixed
 
-Branch fix/b3-batch-25, on top of batch 24 round 3 (b34594c). Option (a) as chosen by the coordinator. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. data-science-salary-india-2026-scope-jobs not touched. updatedAt 2026-11-28 on all 64 edited posts.
+Branch fix/b3-batch-25, on top of batch 24 round 4 (341f986; corrected in round 2, this line first said b34594c). Option (a) as chosen by the coordinator. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. data-science-salary-india-2026-scope-jobs not touched. updatedAt 2026-11-28 on all 64 edited posts.
 
 **Why.** The old scanner treated any figure within reach of a discount word (scholarship, discount, saves, off, waiver, grant and four more) as NON_FEE. That exempted real fees that only sat near the word: "MUJ costs Rs 1,56,400 after the 15% discount" was never checked against lib/data.ts. The narrowing makes the gate check every fee and exempt only the discount amount itself.
 
@@ -18,8 +57,8 @@ Branch fix/b3-batch-25, on top of batch 24 round 3 (b34594c). Option (a) as chos
 - Self-test before the scan: six discount-rule cases (a fee near a discount word must be checked; a discount amount must stay exempt) and two feePlans cases (the Shoolini list fee is MATCH; Rs 2,45,000 for the same plan is MISMATCH).
 
 **Counts.**
-- Unverified total: 1861 at b34594c (old rule) to 1800 (new rule). Every slug is at or below its baseline, and the gate lowered the baseline itself.
-- On the same tree, the old rule gives 1843 and the new rule 1800. Moves: 236 NON_FEE to MATCH, 38 UNRESOLVED to MATCH, 15 NON_FEE to MISMATCH, 5 NON_FEE to UNRESOLVED, 3 MISMATCH to NON_FEE, 8 UNRESOLVED to NON_FEE.
+- Unverified total: 1861 at 341f986 (old rule) to 1800 (new rule). Every slug is at or below its baseline, and the gate lowered the baseline itself.
+- On the same tree, the old rule gives 1843 and the new rule 1800. Moves: 236 NON_FEE to MATCH, 38 UNRESOLVED to MATCH, 15 NON_FEE to MISMATCH, 5 NON_FEE to UNRESOLVED, 3 MISMATCH to NON_FEE, 8 UNRESOLVED to NON_FEE, 7 UNRESOLVED to MISMATCH, 1 UNRESOLVED to ORPHAN, 1 MISMATCH to MATCH (the last three added in round 2; QA found them missing).
 
 **Content fixes (64 posts), by the batch rules.**
 - MATCH figures kept verbatim.

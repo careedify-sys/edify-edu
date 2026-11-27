@@ -39,6 +39,26 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
     console.error('Fix their newly exposed figures and remove them from EXEMPTION_HOLD_SLUGS in scripts/lib/blog-fee-scan.mjs.')
     process.exit(1)
   }
+  // Round 2 (QA F7): the hold is tied to the title freeze. Its date must equal
+  // FREEZE_UNTIL in check-protected-pages.mjs and never pass 2026-12-05, and
+  // every held slug must be a frozen slug. check-protected-pages runs its gate
+  // on import, so its constants are read from the file text.
+  const pp = readFileSync(join(ROOT, 'scripts', 'check-protected-pages.mjs'), 'utf8')
+  const fu = pp.match(/const FREEZE_UNTIL = '(\d{4}-\d{2}-\d{2})'/)
+  const fsBlock = pp.match(/const FREEZE_SLUGS = \[([\s\S]*?)\]/)
+  const holdErr = []
+  if (!fu || !fsBlock) holdErr.push('could not read FREEZE_UNTIL / FREEZE_SLUGS from scripts/check-protected-pages.mjs')
+  else {
+    const freezeSlugs = new Set([...fsBlock[1].matchAll(/'([^']+)'/g)].map(m => m[1]))
+    if (freezeSlugs.size === 0) holdErr.push('FREEZE_SLUGS parsed as empty')
+    if (EXEMPTION_HOLD_UNTIL !== fu[1]) holdErr.push(`EXEMPTION_HOLD_UNTIL ${EXEMPTION_HOLD_UNTIL} differs from FREEZE_UNTIL ${fu[1]}`)
+    for (const s of EXEMPTION_HOLD_SLUGS) if (!freezeSlugs.has(s)) holdErr.push(`held slug ${s} is not in FREEZE_SLUGS`)
+  }
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(EXEMPTION_HOLD_UNTIL) || EXEMPTION_HOLD_UNTIL > '2026-12-05') holdErr.push(`EXEMPTION_HOLD_UNTIL ${EXEMPTION_HOLD_UNTIL} is after 2026-12-05`)
+  if (holdErr.length) {
+    for (const e of holdErr) console.error(`check-blog-fees: FAIL. ${e}`)
+    process.exit(1)
+  }
 }
 
 // Self-test: the narrowed rule must catch a fee that only sits near a
@@ -49,6 +69,15 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
     ['MUJ online MBA costs Rs 9,99,000 after the 15% discount.', false],
     ['Pay upfront and save Rs 27,600 on the MUJ online MBA.', true],
     ['Amity gives Rs 10,000 off the online MBA.', true],
+    // Round 2 (QA F1): words outside the 10 discount words never exempt a
+    // figure, and a word in another table cell never exempts it either.
+    ['NMIMS online MBA has a fee difference of Rs 1,17,000 over the MUJ online MBA.', false],
+    ['NMIMS online MBA is Rs 1,89,000 higher than the MUJ online MBA.', false],
+    ['NMIMS online MBA is Rs 64,000 more expensive than the MUJ online MBA.', false],
+    ['MUJ online BBA costs Rs 36,000 less than the NMIMS online BBA.', false],
+    ['NMIMS online MBA: Rs 9,99,000 concession-free for all.', false],
+    ['NMIMS online MBA</p><table><tr><td>Total</td><td>Rs 9,99,000</td><td>Higher rate</td></tr></table><p>', false],
+    ['NMIMS online MBA</p><table><tr><td>Total</td><td>Rs 9,99,000</td><td>Discount</td></tr></table><p>', false],
     ['NMIMS offers a Rs 20,000 scholarship on the online MBA.', true],
     ['LPU online MBA is Rs 40,000 cheaper than Amity online MBA.', true],
     ['The gap of Rs 50,000 matters for the online MBA.', true],

@@ -283,11 +283,27 @@ if (PROXIMITY_PATTERNS.length !== NON_FEE_PATTERNS.length - DISCOUNT_SOURCES.siz
   throw new Error(`blog-fee-scan: discount-word split drifted (${PROXIMITY_PATTERNS.length} of ${NON_FEE_PATTERNS.length})`)
 }
 
-const AMOUNT_BEFORE_RE = /\b(?:save[sd]?|saving[s]?(?:\s+of)?|discount(?:ed)?\s+(?:of|by)|(?:scholarship|waiver|cashback|concession|rebate)\s+(?:of|worth)|gap\s+(?:of|is|was)|gap\s*:|difference\s+(?:of|is)|cheaper\s+by|lower\s+by|less\s+by|reduced?\s+by|reduction\s+of|knocks?\s+off|takes?\s+off)\s+(?:up\s*to\s+|upto\s+|about\s+|around\s+|roughly\s+|nearly\s+|almost\s+|over\s+|a\s+further\s+|an?\s+(?:extra|additional)\s+)?$/i
-const AMOUNT_AFTER_RE = /^\s*(?:off\b|(?:in\s+)?savings?\b|discount\b|scholarship\b|waiver\b|cashback\b|concession\b|rebate\b|cheaper\b|lower\b|less\b|gap\b|more\s+expensive\b|costlier\b|higher\b)/i
+// Round 2 (QA F1): the label words are only the 10 DISCOUNT_SOURCES words.
+// v4 round 1 also let "difference of", "higher", "less", "more expensive",
+// "costlier", "concession", "rebate", "reduced by" and "knocks off" exempt a
+// figure, which the old rule never did, so 11 live figures dropped out. Every
+// label word left in these two patterns is one of the 10 discount words, so a
+// figure is exempt only when the old rule would also have exempted it AND it
+// is the amount that word names.
+const AMOUNT_BEFORE_RE = /\b(?:save[sd]?|saving[s]?(?:\s+of)?|discount(?:ed)?\s+(?:of|by)|(?:scholarship|waiver|cashback)\s+(?:of|worth)|gap\s+(?:of|is|was)|gap\s*:|cheaper\s+by|lower\s+by)\s+(?:up\s*to\s+|upto\s+|about\s+|around\s+|roughly\s+|nearly\s+|almost\s+|over\s+|a\s+further\s+|an?\s+(?:extra|additional)\s+)?$/i
+const AMOUNT_AFTER_RE = /^\s*(?:off\b|(?:in\s+)?savings?\b|discount\b|scholarship\b|waiver\b|cashback\b|cheaper\b|lower\b|gap\b)/i
+// A table cell boundary between the figure and the word ends the search, so
+// a word in the next cell ("Higher rate", "Discount") never exempts a total.
+const CELL_EDGE_RE = /<\/?t[dh]\b[^>]*>/i
 function isDiscountAmount(combined, start, len) {
-  const before = stripTags(combined.slice(Math.max(0, start - 50), start)).replace(/\s+/g, ' ')
-  const after = stripTags(combined.slice(start + len, start + len + 30)).replace(/\s+/g, ' ')
+  let rawBefore = combined.slice(Math.max(0, start - 50), start)
+  const edges = [...rawBefore.matchAll(/<\/?t[dh]\b[^>]*>/gi)]
+  if (edges.length) { const last = edges[edges.length - 1]; rawBefore = rawBefore.slice(last.index + last[0].length) }
+  let rawAfter = combined.slice(start + len, start + len + 30)
+  const cut = rawAfter.search(CELL_EDGE_RE)
+  if (cut >= 0) rawAfter = rawAfter.slice(0, cut)
+  const before = stripTags(rawBefore).replace(/\s+/g, ' ')
+  const after = stripTags(rawAfter).replace(/\s+/g, ' ')
   return AMOUNT_BEFORE_RE.test(before) || AMOUNT_AFTER_RE.test(after)
 }
 
