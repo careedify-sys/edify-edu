@@ -53,6 +53,21 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
     if (freezeSlugs.size === 0) holdErr.push('FREEZE_SLUGS parsed as empty')
     if (EXEMPTION_HOLD_UNTIL !== fu[1]) holdErr.push(`EXEMPTION_HOLD_UNTIL ${EXEMPTION_HOLD_UNTIL} differs from FREEZE_UNTIL ${fu[1]}`)
     for (const s of EXEMPTION_HOLD_SLUGS) if (!freezeSlugs.has(s)) holdErr.push(`held slug ${s} is not in FREEZE_SLUGS`)
+    // Round 3 (QA R5): both lists must be exactly the 8 posts frozen on
+    // 6 Nov, so adding a slug to both files at once also fails.
+    const FROZEN_8 = [
+      'is-manipal-university-jaipur-fake-or-legit-2026',
+      'chandigarh-university-online-mba-review',
+      'amity-online-mba-review-2026',
+      'smu-online-mba-review',
+      'ignou-online-mba-review-2026',
+      'symbiosis-online-mba-review-2026',
+      'jain-online-mba-review-2026',
+      'bits-pilani-online-mba-review-2026',
+    ]
+    const same = (list) => list.length === FROZEN_8.length && FROZEN_8.every(s => list.includes(s))
+    if (!same([...freezeSlugs])) holdErr.push('FREEZE_SLUGS is not exactly the 8 frozen posts')
+    if (!same(EXEMPTION_HOLD_SLUGS) || new Set(EXEMPTION_HOLD_SLUGS).size !== EXEMPTION_HOLD_SLUGS.length) holdErr.push('EXEMPTION_HOLD_SLUGS is not exactly the 8 frozen posts')
   }
   if (!/^\d{4}-\d{2}-\d{2}$/.test(EXEMPTION_HOLD_UNTIL) || EXEMPTION_HOLD_UNTIL > '2026-12-05') holdErr.push(`EXEMPTION_HOLD_UNTIL ${EXEMPTION_HOLD_UNTIL} is after 2026-12-05`)
   if (holdErr.length) {
@@ -68,7 +83,12 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
   const CASES = [
     ['MUJ online MBA costs Rs 9,99,000 after the 15% discount.', false],
     ['Pay upfront and save Rs 27,600 on the MUJ online MBA.', true],
-    ['Amity gives Rs 10,000 off the online MBA.', true],
+    // Round 3 (QA R1): "off" with no punctuation after it never exempted a
+    // figure under the old rule, so it must be checked now too.
+    ['Amity gives Rs 10,000 off the online MBA.', false],
+    ['The NMIMS online MBA costs Rs 9,99,000 off-campus.', false],
+    ['The NMIMS online MBA costs Rs 9,99,000 off the bat.', false],
+    ['Amity online MBA: Rs 10,000 off, for early applicants.', true],
     // Round 2 (QA F1): words outside the 10 discount words never exempt a
     // figure, and a word in another table cell never exempts it either.
     ['NMIMS online MBA has a fee difference of Rs 1,17,000 over the MUJ online MBA.', false],

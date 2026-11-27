@@ -6640,7 +6640,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
     <p>Fee: Rs 2,92,000 total. Rs 73,000 per semester. Scholarships up to 20% available.</p>
 
-    <div class="callout-warning">MAHE is the only campus that requires work experience. If you are a fresh graduate without an SOP video ready, MUJ or SMU is a better starting point. The brand premium is real, and so is the higher fee than MUJ and SMU.</div>
+    <div class="callout-warning">MAHE is the only campus that requires work experience. If you are a fresh graduate without an SOP video ready, MUJ or SMU is a better starting point. The brand premium is real, and MAHE charges more than MUJ and SMU.</div>
 
     <div class="ilink">Explore the MAHE online MBA in detail on our <a href="/universities/manipal-academy-higher-education-online/mba">MAHE online MBA page</a></div>
 
@@ -6753,7 +6753,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaTitle: '',
     ctaDesc: '',
     content: `<div data-edify="manipal-trio"></div>
-<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Verified coupon: up to Rs 5,000 off MAHE Online MBA. Max amount unlocks every Tuesday and Saturday (IST).</p><a href="/coupons/mahe-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View MAHE Coupon Code</a></div>
+<div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Verified coupon for the MAHE Online MBA. The maximum amount unlocks every Tuesday and Saturday (IST).</p><a href="/coupons/mahe-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View MAHE Coupon Code</a></div>
 
 
 <p>MAHE is the most expensive of the three Online Manipal campuses and the one most people mean when they say "Manipal MBA". It holds rank 3 in the NIRF 2025 University category. It has Institution of Eminence status from the Ministry of Education. It is a NAAC A++ university. All of that matters if your goal is a degree that carries premium corporate recognition. Whether the Rs 2,92,000 fee is worth it compared to <a href="/universities/manipal-university-jaipur-online/mba">MUJ</a> at ₹1,84,000 depends entirely on which specialisation you want and what employer you are trying to impress.</p>
@@ -29965,7 +29965,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>NMIMS Online MBA</td><td>NAAC A plus plus, NIRF Mgmt 24</td><td>Rs 1.96L to Rs 2.20L</td><td>Strongest BFSI plus Mumbai brand</td></tr>
     <tr><td>Amity Online MBA</td><td>NAAC A plus</td><td>Rs 2.07-2.25 lakh</td><td>14 specialisations</td></tr>
     <tr><td>JAIN Online MBA</td><td>NAAC A plus plus, NIRF 2025 Management 73</td><td>Rs 1.60-2.98 lakh</td><td>Cloud plus AI plus FinTech specs</td></tr>
-    <tr><td>Manipal University Jaipur Online</td><td>NAAC A plus</td><td>Rs 1.56-1.84 lakh</td><td>HR, Marketing, Operations</td></tr>
+    <tr><td>Manipal University Jaipur Online</td><td>NAAC A plus</td><td>Rs 1.84 lakh list, Rs 1.56 lakh after 15%</td><td>HR, Marketing, Operations</td></tr>
     <tr><td>Chandigarh University Online</td><td>NAAC A plus</td><td>Rs 1.75 lakh</td><td>Harvard plus PwC plus PMI bundle</td></tr>
   </tbody>
 </table>
@@ -30002,7 +30002,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Honest Gaps in DY Patil Online MBA 2026</h2>
 
 <ul>
-  <li><strong>Premium fees vs competition:</strong> DPU (Rs 1.89 lakh) costs more than MUJ (Rs 1.56-1.84 lakh). Justify by WES plus edX value for your specific career goal.</li>
+  <li><strong>Premium fees vs competition:</strong> DPU (Rs 1.89 lakh) costs more than MUJ (Rs 1.84 lakh list, Rs 1.56 lakh after 15%). Justify by WES plus edX value for your specific career goal.</li>
   <li><strong>Brand pull is regional:</strong> Stronger in Pune plus Mumbai. Less recognition outside Western India.</li>
   <li><strong>NIRF rank below NMIMS:</strong> NIRF University 41 vs NMIMS Management 24. NMIMS has stronger brand for consulting plus banking placement.</li>
   <li><strong>edX access is supplementary, not core:</strong> Harvard plus MIT modules are elective add-ons, not core DY Patil curriculum. Set expectations correctly.</li>
@@ -38053,7 +38053,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 </tbody>
 </table>
 
-<p>The Amrita Online BBA programme fee at ₹1,41,000 is structurally the most accessible among Tier 1 Premium online BBA programmes in India. Its fee tier sits alongside MAHE Online BBA and Symbiosis SSODL (₹1,65,000) while delivering equivalent institutional credentialling through NAAC A++ and NIRF top tier rank. EMI options available through institutional finance partners. Registration fee, examination fee, specialisation track availability, and limited-period scholarship details vary by intake; talk to our counsellor on edifyedu.in to confirm current fee structure for your chosen intake.</p>
+<p>The Amrita Online BBA programme fee is ₹1,41,000. Amrita holds NAAC A++ and a top-tier NIRF rank. EMI options available through institutional finance partners. Registration fee, examination fee, specialisation track availability, and limited-period scholarship details vary by intake; talk to our counsellor on edifyedu.in to confirm current fee structure for your chosen intake.</p>
 
 <p class="callout-warning"><strong>Verify before paying:</strong> All fees verified as of May 2026 and indicative subject to revision. Registration fee, examination fee, and specialisation track availability vary by intake (January or July session); talk to our counsellor on edifyedu.in to confirm current fee structure for your chosen intake before paying. Verify UGC-DEB entitlement on deb.ugc.ac.in for the 2026 intake. Do not pay any agent extra processing fees, commissions, or referral charges. edifyedu.in does not earn referral commission from any university listed.</p>
 
@@ -40183,7 +40183,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 </tbody>
 </table>
 
-<p>Among Tier 1 Premium online BBA programmes, Symbiosis sits structurally in the middle of the fee range. MAHE costs more than Symbiosis, for the highest NIRF rank and IoE status.</p>
+<p>Among Tier 1 Premium online BBA programmes, MAHE holds the highest NIRF rank and IoE status.</p>
 
 <p>NMIMS (₹1,41,000) costs less than Symbiosis, with a similar Mumbai BFSI corridor focus. Amrita offers Tier 1 brand recall.</p>
 

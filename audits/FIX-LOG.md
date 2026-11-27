@@ -1,11 +1,33 @@
 # Fix log
 
+## 2026-11-28 B3 batch 25 round 3: QA rerun R1-R5, origin/main brand rename merged
+
+Branch fix/b3-batch-25. First a merge of origin/main 7c867dd (it contains the brand rename 615c7d2 and 5b67ad9) as ba5e73b, then this commit. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt 2026-11-28 on the 5 edited posts.
+
+**Merge (R3).** lib/blog.ts had 10 conflicts, all in posts batch 25 edited, and in each one main's only change was the brand name. Resolution: the batch side, then main's rule on those lines (EdifyEdu, Edify Education and Edify become edifyedu.in, 21 strings). lib/blog.ts now has no "Edify" string, the same as main. data/blog-fee-allowlist.json is main's, unchanged. check-blog-fees stayed at 1792 after the merge.
+
+**R1, the "off" exemption (scripts/lib/blog-fee-scan.mjs).** Why: round 2's AMOUNT_AFTER_RE accepted "off" with nothing after it, so "Rs 9,99,000 off-campus", "off the bat" and "Rs 10,000 off the online MBA" became exempt, though the old rule checked them (its "off" needs punctuation right after it). A figure is now exempt as a discount amount only when the label test passes AND one of the old rule's 10 discount patterns is in the same 80-character window (DISCOUNT_PATTERNS). So the exemption is a strict subset of the old one. Self-test: the Amity "off the online MBA" case now must be checked, "off-campus" and "off the bat" are added as must-check cases, and "Rs 10,000 off," (with punctuation) stays exempt.
+
+**R1, the MAHE coupon figure.** mahe-online-mba-review-2026 went from 7 to 8: "up to Rs 5,000 off MAHE Online MBA" is now checked. Its only source is lib/coupon-pages.ts (maxSavings), which is not lib/data.ts or a verify sheet, so the figure is deleted from the callout. The callout still links to the MAHE coupon page, which carries the amount. No baseline rise, no allowlist entry.
+
+**R2, unbacked comparisons.** MAHE and Amrita BBA have no exact fee in lib/data.ts, so nothing backs an ordering against them:
+- symbiosis-online-bba-review-2026: "Symbiosis sits structurally in the middle of the fee range. MAHE costs more than Symbiosis" is deleted. The NIRF and IoE reason stays.
+- amrita-online-bba-review-2026: "Its fee tier sits alongside MAHE Online BBA and Symbiosis SSODL (₹1,65,000)" is deleted, and so is "structurally the most accessible among Tier 1 Premium", the same kind of claim in the same sentence. ₹1,41,000 stays; it is the Amrita BBA total in audits/verify/per-semester-fees-2026-11-27.md section A row 29.
+
+**Low items.**
+- dy-patil-online-mba-review: MUJ "Rs 1.56-1.84 lakh" (body and table) now reads "Rs 1.84 lakh list, Rs 1.56 lakh after 15%", the lib/data.ts labels (₹1,84,000 list, ₹1,56,400 after 15%).
+- online-manipal-mba-review-2026: "and so is the higher fee than MUJ and SMU" now reads "and MAHE charges more than MUJ and SMU". No new fact: the getExactFee values back it (QA checked them).
+- check-blog-fees (R5): FREEZE_SLUGS and EXEMPTION_HOLD_SLUGS must each be exactly the 8 frozen posts, so adding a slug to both files fails. Proved: one slug added to both lists gave FAIL on both checks; restored.
+- The round 2 FIX-LOG sentence "only when the old rule would also exempt it" is corrected in place, and so is the matching scanner comment.
+
+**Counts.** check-blog-fees 1792 after the merge, 1791 after this commit (amrita-online-bba-review-2026 18 to 17; MAHE back to 7). No slug above its baseline.
+
 ## 2026-11-28 B3 batch 25 round 2: QA F1-F8 (scanner exemptions, BVP revert, wrong and derived fees)
 
 Branch fix/b3-batch-25, on top of the origin/main merge 3efb19b. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. data-science-salary-india-2026-scope-jobs not touched. updatedAt 2026-11-28 on all 22 edited posts.
 
 **F1, scanner (scripts/lib/blog-fee-scan.mjs).** Why: v4 let figures through that the old rule would never have exempted ("fee difference of Rs X", "Rs X higher", "Rs X less"), because AMOUNT_BEFORE_RE and AMOUNT_AFTER_RE accepted label words outside the 10 discount words, and a table row could borrow a discount word from the next cell. Now:
-- Both patterns accept only the 10 DISCOUNT_SOURCES words (gap, save, saving, discount, off, cashback, scholarship, waiver, cheaper, lower). So a figure is exempt only when the old rule would also exempt it AND it is the amount that word names.
+- Both patterns accept only the 10 DISCOUNT_SOURCES words (gap, save, saving, discount, off, cashback, scholarship, waiver, cheaper, lower). Correction (round 3): this sentence first said that a figure was exempt only when the old rule would also exempt it. That was false for "off": the AFTER pattern took "off" with nothing after it, so "Rs X off-campus" and "Rs X off the bat" became exempt although the old rule (which needs punctuation right after "off") checked them. Round 3 closes this.
 - The look-behind and look-ahead stop at the nearest td/th edge, so a cell cannot borrow a word from its neighbour.
 - Self-test: QA's injected cases are added (fee difference, higher, more expensive, less, concession, and two table rows with "Higher rate" and "Discount" in the next cell must be checked; "Rs 10,000 off the online MBA" stays exempt). The gate fails before scanning if any case flips.
 

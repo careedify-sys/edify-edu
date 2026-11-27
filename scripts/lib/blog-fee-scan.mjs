@@ -279,6 +279,13 @@ const DISCOUNT_SOURCES = new Set([
   /\bscholarship\b/i, /\bwaiver\b/i, /\bcheaper\b/i, /\blower\b/i,
 ].map(r => r.source))
 const PROXIMITY_PATTERNS = NON_FEE_PATTERNS.filter(re => !DISCOUNT_SOURCES.has(re.source))
+// Round 3 (QA R1): the label test alone let "Rs X off-campus" and "Rs X off
+// the bat" through, which the old rule checked (its "off" needs punctuation
+// right after it). A figure is now exempt as a discount amount only when the
+// label test passes AND the old rule's own discount pattern is in the same
+// 80-character window, so the exemption is a strict subset of the old one.
+const DISCOUNT_PATTERNS = NON_FEE_PATTERNS.filter(re => DISCOUNT_SOURCES.has(re.source))
+if (DISCOUNT_PATTERNS.length !== DISCOUNT_SOURCES.size) throw new Error('blog-fee-scan: discount patterns drifted')
 if (PROXIMITY_PATTERNS.length !== NON_FEE_PATTERNS.length - DISCOUNT_SOURCES.size) {
   throw new Error(`blog-fee-scan: discount-word split drifted (${PROXIMITY_PATTERNS.length} of ${NON_FEE_PATTERNS.length})`)
 }
@@ -287,9 +294,10 @@ if (PROXIMITY_PATTERNS.length !== NON_FEE_PATTERNS.length - DISCOUNT_SOURCES.siz
 // v4 round 1 also let "difference of", "higher", "less", "more expensive",
 // "costlier", "concession", "rebate", "reduced by" and "knocks off" exempt a
 // figure, which the old rule never did, so 11 live figures dropped out. Every
-// label word left in these two patterns is one of the 10 discount words, so a
-// figure is exempt only when the old rule would also have exempted it AND it
-// is the amount that word names.
+// label word left in these two patterns is one of the 10 discount words. These
+// patterns alone are not a subset of the old rule ("off" here needs no
+// punctuation after it); the call site also requires the old rule's own
+// discount pattern in the window (round 3, DISCOUNT_PATTERNS).
 const AMOUNT_BEFORE_RE = /\b(?:save[sd]?|saving[s]?(?:\s+of)?|discount(?:ed)?\s+(?:of|by)|(?:scholarship|waiver|cashback)\s+(?:of|worth)|gap\s+(?:of|is|was)|gap\s*:|cheaper\s+by|lower\s+by)\s+(?:up\s*to\s+|upto\s+|about\s+|around\s+|roughly\s+|nearly\s+|almost\s+|over\s+|a\s+further\s+|an?\s+(?:extra|additional)\s+)?$/i
 const AMOUNT_AFTER_RE = /^\s*(?:off\b|(?:in\s+)?savings?\b|discount\b|scholarship\b|waiver\b|cashback\b|cheaper\b|lower\b|gap\b)/i
 // A table cell boundary between the figure and the word ends the search, so
@@ -802,7 +810,7 @@ export function scanPost(post, rows = []) {
       const nonFee = held
         ? (isNonFee(tightCtx) || isRowHeaderNonFee(rowLabel) || isRowHeaderNonFee(colHeader))
         : (PROXIMITY_PATTERNS.some(re => re.test(tightCtx)) ||
-            isDiscountAmount(combined, matchStart, consumedLen) ||
+            (isDiscountAmount(combined, matchStart, consumedLen) && DISCOUNT_PATTERNS.some(re => re.test(tightCtx))) ||
             isRowHeaderNonFeeNarrow(rowLabel) || isRowHeaderNonFeeNarrow(colHeader))
       if (nonFee || isBucketRange(combined, matchStart, consumedLen)) {
         rows.push({
