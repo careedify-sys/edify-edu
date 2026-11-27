@@ -1,5 +1,96 @@
 # Fix log
 
+## 2026-11-27 · B3 batch 17: own-page fee drift, unsourced zero-cost EMI, partial peer quotes (branch fix/b3-batch-17)
+
+- **Source:** the B3 batch 17 brief. Every fee written comes from getExactFee in lib/fees.ts (lib/data.ts feePlans,
+  feeBreakdown, programFees), a lib/data.ts comment or an audits/verify sheet. No fee, gap, per-semester split or EMI
+  was computed. No title, seoTitle or metaDescription changed. No blog post changed. Detectors: .b8tmp/own17.ts (own
+  figures), .b8tmp/emi17.cjs (zero/no-cost EMI sentences), .b8tmp/peer17p.ts (partial peer quotes), each run on the
+  78b2b7b source and on the a764bab build (same page-content, data and templates as 78b2b7b) before any edit, and
+  .b8tmp/rendered17.cjs, which counts how many flagged sentences actually render in a build.
+- **1. Own-university fee figures in spec and hub page-content JSON:**
+  - Why: pages quoted their own university at figures lib/data.ts does not hold: JAIN at "Rs 1.75L-1.96L" on every
+    elective although feePlans prices Finance, Marketing, HRM and General Management at Rs 1,60,000; Amrita at
+    per-specialisation fees, registration and exam fees and "annual fee with 5% discount" figures that data has no
+    row for; MAHE, Chitkara, Kurukshetra, LPU and CU per-semester or per-year splits derived from the total; UU
+    "under Rs 1 lakh", true only after scholarship; LPU "under/below Rs 1.5 lakh", false for semester-wise (Rs 1,61,600)
+    and list (Rs 2,00,000); DPU "brings this to Rs 1,79,400", which is arithmetic; IGNOU Rs 45,000-60,000 and
+    Rs 68,000-70,000 against a published Rs 66,000; and 11 universities with no publishable fee (AMU, JMI, Jamia
+    Hamdard, Shiv Nadar, Madras, Anna, MGU, DAVV, ADB, Christ, SRM Sikkim) quoting ranges from third-party sites.
+  - Detector: 2,655 own figures at base, 602 flagged (365 of them in sections.fees.body across 117 files). The brief's
+    ~1,128 came from the first detector version, which counted salary sentences and figures that match a feePlans
+    row or extra as drift. By university at base: JAIN 215, Amrita 103, CU 46, MAHE 40, LPU 30, Chitkara 14,
+    Kurukshetra 14, IGNOU 13, DPU 12, UU 10, ARKA 8, Jamia Hamdard 8, Shiv Nadar 8, SMU 8, AMU 7, JMI 7, SRM Sikkim 7,
+    Andhra 6, Anna 6, DAVV 6, Christ 5, MGU 5, ADB 4, Madras 4, Galgotias 3, SASTRA 3, BV 2, MUJ 2, Symbiosis 2, NIU 1,
+    Shoolini 1, SRM IST 1, VIT 1.
+  - sections.fees.body (117 files): replaced with the standard factSweep line ("EdifyEdu rechecks fees with
+    {u.name} every quarter...") and metadata.factSweep = 2026-11-27, the batch 3.1 / batch 7 convention. 53 of these
+    bodies rendered on spec pages (CU 22, LPU 12, Chitkara 7, Amrita 6, Kurukshetra 4, ARKA 2); those pages now render
+    FeeBreakdown from lib/data.ts instead. The other 64 bodies were unrendered (feePlans track or hub).
+  - Other sections, sentence rules (.b8tmp/fix17b.cjs):
+    - JAIN: each elective now carries its feePlans row (Rs 1,60,000, Rs 1,75,000, Rs 1,96,000 or Rs 2,98,000) in tldr,
+      hero, chooseIf, comparisons and the pricing FAQ, which now gives registration Rs 2,500 one-time and examination
+      Rs 3,000 a year (the old "Rs 6,000 examination fees" was 3,000 x 2). Six electives match two rows or none (the
+      three dual analytics tracks and the three withdrawn AI tracks); they print the programme range "Rs 1,60,000 to
+      Rs 2,98,000 by elective" and are Q61.
+    - Amrita: no per-specialisation data, so every spec-level figure is now the programme range "Rs 1,76,000 to
+      Rs 2,60,000 by specialisation"; derived totals, registration, exam, semester and annual-discount figures are
+      deleted; "under Rs 2 lakh" and four "budget is under Rs 2,00,000" items are deleted (the range starts below
+      2 lakh). Per-specialisation fees are Q60.
+    - No publishable fee: the figure is deleted, and a fee FAQ answer now says EdifyEdu holds no verified fee and
+      points to the counsellor.
+    - Andhra, SASTRA, IGNOU, NIU (DPU-COL Rs 1,89,400), BV (labelled total), UU (labelled before/after scholarship),
+      LPU, MUJ and IGNOU comparison tables: set to the getExactFee figure with its label.
+  - After: 1,835 own figures, 18 flagged, all reviewed and left: 6 true thresholds (Galgotias Rs 80,200 under
+    Rs 90,000 / Rs 1L / Rs 1.5L, ARKA Rs 1,08,500 under Rs 1.1L, Kurukshetra Rs 1,02,000 under Rs 1.2L, BV between
+    Rs 1L and Rs 2L), 1 budget statement (Amrita "budget above Rs 2.5 lakh"), 9 peer cells in the IGNOU, LPU and MUJ
+    comparison tables that the detector attributes to the page's own university, and 2 peer quotes (NIU's DPU-COL
+    figure, Shoolini's SMU figure). In the build, 294 of the 602 base sentences rendered (a764bab build); in the fresh build 6 of the 18 render, all in the
+    reviewed list.
+- **2. Zero-cost / no-cost EMI claims:**
+  - Why: pages promised zero-cost EMI for universities with no source in the repo. There is no LPU verify sheet and the
+    LPU record carries no EMI comment (emiFrom 0), so "24-month zero-cost EMI" and every other LPU claim had nothing
+    behind it.
+  - Kept, each with a repo source: Amity (verify sheet, "24-month no-cost EMI"; MCA, commit 87ecb86), MUJ (feePlans
+    note, no-cost EMI from Rs 6,517, 6/12/18 months), UU (comment, "No-Cost EMI: Starting at INR 3,733"), Alliance
+    (verify sheet), Adichunchanagiri (comment), DPU (feePlans note, "No Cost EMI", no figure), BITS (comment,
+    interest-free option), Sharda and Jaypee (verify sheets). This is the batch 12 kept list plus the three no-figure
+    sources batch 12 did not need.
+  - Deleted or reworded: Amrita, ARKA, ADB, BV, BIT Mesra, CU, Dr MGR, Galgotias (LPU claims), JAIN (LPU claims and
+    the hub's "0% interest claim"), Jamia Hamdard, Kurukshetra, LPU, MAHE, NMIMS, Shiv Nadar, SMU, UPES and the
+    Symbiosis pages' "MUJ and NMIMS offer zero-cost EMI" (now MUJ only). FAQs whose question was the claim are
+    removed whole (CU 22, LPU 12, Kurukshetra 4, SMU 6, ARKA 2). MUJ's "24-month ... Rs 7,667" is now the feePlans
+    note (Rs 6,517, 6/12/18 months).
+  - Counts (sentences): 519 in 200 files at base -> 160 in 76 files. The 160 are the kept universities, Vignan's and
+    SSODL's "no no-cost terms published" sentences, and four Chitkara lines asking the reader to confirm whether the
+    EMI is zero-cost. Rendered: 240 in the a764bab build, 63 in the fresh build, all from kept universities.
+- **3. Partial and unlabelled peer quotes:**
+  - Why: a peer quoted at one end of its range ("Amity at Rs 2,25,000", "NMIMS at Rs 1,96,000") or at its list price
+    with no label ("MUJ ~Rs 1,84,000", CU "Rs 1,75,125 (Tier 1)", LPU "approximately Rs 2,00,000") reads as the fee.
+    Chitkara's MUJ quotes were in this class.
+  - What: .b8tmp/fix17p.ts rewrote each to the full getExactFee form: Amity Rs 2,07,000 to Rs 2,25,000; NMIMS
+    Rs 1,96,000 to Rs 2,20,000; UPES Rs 1,75,000 to Rs 2,20,000; SRM IST Rs 1,50,000 to Rs 1,89,000; Symbiosis
+    Rs 3,15,000 to Rs 3,70,000; Amrita Rs 1,76,000 to Rs 2,60,000; CU Rs 1,75,125 to Rs 2,38,000 by certificate option
+    and Early Bird discount; MUJ Rs 1,84,000 list, Rs 1,56,400 after 15% discount; LPU Rs 2,00,000 list, Rs 1,46,240 to
+    Rs 1,61,600 by payment plan; BV Rs 1,78,000 total, Rs 1,68,000 paid in full upfront. A quote already labelled
+    ("Rs 3,15,000 with work-experience scholarship") is left.
+  - Two comparatives stopped being true once CU carries its full range and were reworded: Chitkara marketing "above CU"
+    (now "inside CU's range") and DPU business analytics "stronger option on NIRF rank and fee" (now "on NIRF rank").
+    Three MAHE pages called Amity NAAC A++; lib/data.ts has A+.
+  - Counts: 282 at base (Amity 142, CU 76, MUJ 22, NMIMS 13, Symbiosis 8, UPES 6, LPU 6, BV 4, SRM IST 3, Amrita 2)
+    -> 0. In rendered page text: 203 in the a764bab build (Amity 108, CU 55, MUJ 20, NMIMS 7, Symbiosis 4,
+    UPES 3, LPU 3, BV 3) -> 0 in the fresh build.
+- **4. MBA fee in OG on the three noindex 404 shells (andhra/mca, integral/mca, vignan/bba): not done, listed.**
+  - Why not: generateMetadata in app/universities/[id]/layout.tsx receives only { id }. The child segment (mca, bba)
+    is not available to it without reading request headers, which would make every /universities/[id]/* route
+    dynamic. The page's own generateMetadata calls notFound() first, so it cannot supply metadata either. Not a small,
+    safe change. The layout description reaches only these shells, because the profile and every child route set their
+    own description, openGraph and twitter. Dropping the fee clause from the layout is the simple fix, but it changes
+    metaDescription text, so it waits for a decision.
+- **Gates:** round trip 431 files OK; verify-fees, check-em-dash and its baseline (228), check-fee-baseline (205),
+  check-first-hand, check-blog-fees (1950), placeholder ranges, check-protected-pages, quick-facts, cloned block,
+  tagline, NAAC consistency, schema claims and string truncation all pass unchanged. No baseline moved.
+
 ## 2026-11-27 · B3 batch 16: university-layout OG/Twitter fee clause, peer fee quotes in spec JSON, Karnataka H2, UPES unrendered JSON (branch fix/b3-batch-16)
 
 - **Source:** the B3 batch 16 brief. Every figure written comes from getExactFee in lib/fees.ts (lib/data.ts). No fee,

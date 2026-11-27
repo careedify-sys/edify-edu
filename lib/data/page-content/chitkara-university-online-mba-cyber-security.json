@@ -6,7 +6,7 @@
     "hero": {
       "eyebrow": "CHITKARA UNIVERSITY ONLINE MBA",
       "headline": "Chitkara Online MBA in Cyber Security: Syllabus, Fees and Career Outcomes",
-      "sub": "NAAC A+ | NIRF #78 University 2025 | UGC-DEB Approved | Rs 2,00,000 total (Rs 50,000/sem)"
+      "sub": "NAAC A+ | NIRF #78 University 2025 | UGC-DEB Approved | Rs 2,00,000 total"
     },
     "tldr": "Chitkara offers an online MBA in Cyber Security. Most universities offer Cyber Security only as an MCA or M.Tech track, not as an MBA. At Rs 2,00,000 across 4 semesters, Chitkara combines management fundamentals with cyber risk governance, information security policy, and digital forensics. NAAC A+, NIRF University #78, UGC-DEB approved. Strong option for IT professionals who want to move from technical cyber roles into CISO, security governance, or risk management leadership.",
     "about": {
@@ -27,7 +27,7 @@
       "body": "Comparing Chitkara Online MBA Cyber Security against alternative programmes:\n\n**vs JAIN Online MBA Data Science (Rs 1,60,000 to Rs 2,98,000):** JAIN does not offer a dedicated Cyber Security MBA. Data Science is the closest tech-management spec at JAIN. If your career goal is specifically cyber risk and security governance, Chitkara's dedicated Cyber Security track is more aligned than a Data Science degree.\n\n**vs CU Online MBA Data Science & AI (Rs 1,75,125):** Chandigarh University offers Data Science & AI but not Cyber Security as a standalone MBA. CU has NAAC A+ and NIRF University #19. If you want general tech-management, CU wins on brand and price.\n\n**vs M.Tech/MCA Cyber Security programmes:** Technical master's degrees cover coding, ethical hacking, and hands-on security engineering. The MBA covers governance, risk management, compliance, and leadership. Choose MBA if you want CISO or GRC leadership. Choose M.Tech if you want penetration testing or SOC analyst depth.\n\n**vs CISSP/CISM certifications:** Industry certifications (CISSP, CISM) are essential for security leadership and complement, not replace, the MBA. The MBA adds management breadth and a UGC-recognised degree. Many CISOs hold both an MBA and CISSP/CISM."
     },
     "fees": {
-      "body": "Chitkara Online MBA in Cyber Security is Rs 2,00,000 total tuition across 4 semesters (Rs 50,000 per semester). Rs 1,000 one-time registration fee. Contact our counsellor for EMI terms (zero-cost vs interest-bearing), scholarships, and any additional charges. edifyedu.in rechecks fees with Chitkara every quarter. Please check with our counsellor before you pay. Fees listed are indicative."
+      "body": "EdifyEdu rechecks fees with Chitkara University Online every quarter. Please reconfirm current fees with our counsellor before any payment. Fees can change between intakes."
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Cyber Security noted as the specialisation, issued by Chitkara University under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A+ accreditation and NIRF University #78 ranking. Valid for government and PSU hiring, corporate promotions, and higher education applications. DigiLocker digital verification is available for employer background checks. The Cyber Security MBA credential is particularly valued for CISO-track roles where a management degree alongside technical certifications (CISSP, CISM) is the standard expectation."
@@ -43,7 +43,7 @@
       },
       {
         "question": "How does the fee compare to other online MBA programmes?",
-        "answer": "Rs 2,00,000 total across 4 semesters places Chitkara in the mid-tier range. Chandigarh University's Data Science & AI MBA is Rs 1,75,125 and JAIN's Data Science MBA is Rs 1,60,000 to Rs 2,98,000, but neither offers a dedicated Cyber Security specialisation. The pricing reflects the niche nature of the programme."
+        "answer": "Rs 2,00,000 total across 4 semesters places Chitkara in the mid-tier range. Chandigarh University's Data Science & AI MBA is Rs 1,75,125 to Rs 2,38,000 by certificate option and Early Bird discount and JAIN's Data Science MBA is Rs 1,60,000 to Rs 2,98,000, but neither offers a dedicated Cyber Security specialisation. The pricing reflects the niche nature of the programme."
       },
       {
         "question": "Do I need a technical background for this MBA?",
@@ -64,7 +64,7 @@
       "consider": [
         "Chitkara's online brand is newer compared to Amity, Manipal, or NMIMS. Brand recognition outside Punjab is still developing.",
         "Rs 2,00,000 is mid-tier pricing without bundled certifications or industry partnerships.",
-        "If you want a broader tech-management MBA (not security-specific), CU Data Science & AI at Rs 1,75,125 or JAIN Data Science at Rs 1,60,000 to Rs 2,98,000 may fit better.",
+        "If you want a broader tech-management MBA (not security-specific), CU Data Science & AI at Rs 1,75,125 to Rs 2,38,000 by certificate option and Early Bird discount or JAIN Data Science at Rs 1,60,000 to Rs 2,98,000 may fit better.",
         "Career support for online students is still evolving. Self-driven job search is necessary."
       ]
     }
@@ -75,6 +75,7 @@
     "batchNumber": 35,
     "hasSyllabusData": false,
     "phase71Updated": "2026-04-23",
-    "claimSweep": "2026-09-17"
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-27"
   }
 }

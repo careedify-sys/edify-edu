@@ -42,7 +42,7 @@
     },
     "fees": {
       "heading": "Fee Structure, SRM IST Online MBA",
-      "body": "The total programme fee for the SRM IST Online MBA ranges from Rs 1,50,000 to Rs 1,89,000 (indicative). The standard fee structure is Rs 47,250 per semester across 4 semesters totalling Rs 1,89,000. Scholarship or early payment plans may reduce the total outflow. Fees are paid in four semester instalments. Additional charges may include registration and examination fees per semester. Always confirm the exact fee in writing at the offer letter stage before making any payment. edifyedu.in rechecks fees with SRM IST every quarter. Fees listed are indicative."
+      "body": "EdifyEdu rechecks fees with SRM Institute of Science and Technology Online every quarter. Please reconfirm current fees with our counsellor before any payment. Fees can change between intakes."
     },
     "coupon": {
       "heading": "Scholarships and Fee Concessions",
@@ -133,6 +133,7 @@
     ]
   },
   "metadata": {
-    "claimSweep": "2026-09-17"
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-27"
   }
 }

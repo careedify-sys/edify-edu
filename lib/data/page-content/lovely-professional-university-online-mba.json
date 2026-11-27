@@ -39,7 +39,7 @@
       "heading": "Syllabus (2025-26 Cycle)"
     },
     "fees": {
-      "body": "LPU Online MBA fee structure (indicative; talk to our counsellor for your intake’s fee):\n\nTotal fee (lumpsum with 20% institutional grant): Rs.1,46,240\nStandard semester fee (with grant applied): Rs.40,400\nWithout grant applied (full fee): Rs.1,82,800 approx.\nRegistration fee: Rs.600 (one-time)\nExam fee: Rs.2,000 per semester (included in semester fee above)\n\nThe 20% institutional grant is applied at the time of admission. Talk to our counsellor about grant eligibility and the current fee before applying.\n\nEducation loan transfers from SBI, HDFC Credila, and Axis Bank are accepted.\n\nFees listed are indicative. edifyedu.in rechecks fees with Lovely Professional University every quarter. Please reconfirm current fees with our counsellor before any payment.",
+      "body": "EdifyEdu rechecks fees with Lovely Professional University Online every quarter. Please reconfirm current fees with our counsellor before any payment. Fees can change between intakes.",
       "heading": "Course Fees and Payment Options"
     },
     "coupon": {
@@ -47,7 +47,7 @@
       "heading": "edifyedu.in LPU MBA Fee Guidance"
     },
     "emi": {
-      "body": "LPU Online offers no-cost EMI through NBFC partners. Education loans from SBI, HDFC Credila, and Axis Bank are accepted at standard education loan interest rates between 9% and 11% for secured loans. Semester-wise payment is also available for students who prefer not to pay lump-sum. Confirm current EMI terms at lpuonline.com before signing.",
+      "body": "Education loans from SBI, HDFC Credila, and Axis Bank are accepted at standard education loan interest rates between 9% and 11% for secured loans. Semester-wise payment is also available for students who prefer not to pay lump-sum. Confirm current EMI terms at lpuonline.com before signing.",
       "heading": "EMI and Education Loan Options"
     },
     "sampleCert": {
@@ -88,11 +88,11 @@
       ]
     },
     "comparisons": {
-      "body": "Parameter | LPU Online MBA | IGNOU MBA | MUJ Online MBA\nTotal Fees | Rs.1,46,240 (with grant) | Rs.45,000-60,000 | Rs.1,84,000\nNIRF Rank | NIRF listed university category | NIRF listed university | Overall #58\nNAAC Grade | A++ | A++ | A+\nEntrance Required | None | OPENMAT mandatory | None\nSpecialisations | 12 | 4 | 12\nLive Sessions | Yes (twice weekly) | No (PCP only) | Yes (twice weekly)\nPlacement Support | Moderate (North India focus) | Minimal self-driven | Moderate\n\nBottom line: LPU sits between IGNOU and MUJ on cost. For candidates who want no entrance exam, NAAC A++, live sessions, and 12 specialisations at below Rs.1.5 lakh, LPU is the strongest option. IGNOU (Rs 66,000) wins only on price.",
+      "body": "Parameter | LPU Online MBA | IGNOU MBA | MUJ Online MBA\nTotal Fees | Rs.2,00,000 list, Rs.1,46,240 to Rs.1,61,600 by payment plan | Rs.66,000 | Rs.1,84,000 list, Rs.1,56,400 after 15% discount\nNIRF Rank | NIRF listed university category | NIRF listed university | Overall #58\nNAAC Grade | A++ | A++ | A+\nEntrance Required | None | OPENMAT mandatory | None\nSpecialisations | 12 | 4 | 12\nLive Sessions | Yes (twice weekly) | No (PCP only) | Yes (twice weekly)\nPlacement Support | Moderate (North India focus) | Minimal self-driven | Moderate\n\nBottom line: for candidates who want no entrance exam, NAAC A++, live sessions, and 12 specialisations, LPU is the strongest option. IGNOU (Rs 66,000) wins only on price.",
       "heading": "How LPU Compares with IGNOU and MUJ"
     },
     "honestVerdict": {
-      "body": "Enrol in LPU Online MBA if:\nBudget is a primary constraint and you want NAAC A++ with live sessions at under Rs.1.5 lakh total.\nYou are in North India and want strong brand recognition in the Punjab, Delhi NCR, and adjacent job markets.\nYou want 12 specialisations including niche tracks like Healthcare Management and Logistics at this price point.\nYou prefer no entrance exam and want to start quickly after deciding.\n\nLook elsewhere if:\nYou want the strongest NIRF Management rank at this fee level: NMIMS at Rs.1,96,000 ranks #15 Management, a significant jump.\nYou need South India or Maharashtra-focused placement support: MUJ or NMIMS serve those markets better.\nYou are targeting government/PSU roles at low cost: IGNOU is cheaper.\n\nThis is our honest editorial view. We are not paid by Lovely Professional University.",
+      "body": "Enrol in LPU Online MBA if:\nBudget is a primary constraint and you want NAAC A++ with live sessions.\nYou are in North India and want strong brand recognition in the Punjab, Delhi NCR, and adjacent job markets.\nYou want 12 specialisations including niche tracks like Healthcare Management and Logistics at this price point.\nYou prefer no entrance exam and want to start quickly after deciding.\n\nLook elsewhere if:\nYou want the strongest NIRF Management rank at this fee level: NMIMS at Rs.1,96,000 to Rs.2,20,000 ranks #15 Management, a significant jump.\nYou need South India or Maharashtra-focused placement support: MUJ or NMIMS serve those markets better.\nYou are targeting government/PSU roles at low cost: IGNOU is cheaper.\n\nThis is our honest editorial view. We are not paid by Lovely Professional University.",
       "heading": "Honest Verdict: Who Should Enrol, Who Should Look Elsewhere"
     },
     "faqs": [
@@ -102,7 +102,7 @@
       },
       {
         "question": "What is the total fee for LPU Online MBA?",
-        "answer": "Rs.1,46,240 lumpsum with the 20% institutional grant applied. The list fee is Rs.2,00,000, and paying semester-wise instead of lump sum comes to Rs.1,61,600. No-cost EMI is available. Talk to our counsellor for your intake’s fee."
+        "answer": "Rs.1,46,240 lumpsum with the 20% institutional grant applied. The list fee is Rs.2,00,000, and paying semester-wise instead of lump sum comes to Rs.1,61,600. Talk to our counsellor for your intake’s fee."
       },
       {
         "question": "Does LPU Online MBA require an entrance exam?",
@@ -142,6 +142,7 @@
     "generatedAt": "2026-04-20T18:52:48.986Z",
     "sheetName": "lpu-online_MBA",
     "format": "numbered",
-    "claimSweep": "2026-09-17"
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-27"
   }
 }

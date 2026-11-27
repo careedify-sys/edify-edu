@@ -8,7 +8,7 @@
       "headline": "LPU Online MBA in Data Science: Syllabus, Fees and Career Outcomes",
       "sub": "Lovely Professional University's UGC-DEB approved online MBA with a Data Science specialisation. NIRF #31 University, NAAC A+. Rs 2,00,000 standard fee, Rs 1,61,600 with 20% Student Grant. Statistical Methods, Machine Learning, Deep Learning, Natural Language Processing, and Data Science Project Management in Sem 3-4."
     },
-    "tldr": "LPU Online MBA Data Science: NIRF University #31, NAAC A+, UGC-DEB approved, Rs 2L standard or Rs 1.61L with 20% grant, zero-cost 24-month EMI. Data science depth with Statistical Methods, Machine Learning, Deep Learning, Natural Language Processing, and Data Science Project Management. Strong for data science, AI/ML, and analytics management careers.",
+    "tldr": "LPU Online MBA Data Science: NIRF University #31, NAAC A+, UGC-DEB approved, Rs 2,00,000 list, Rs 1,46,240 to Rs 1,61,600 by payment plan. Data science depth with Statistical Methods, Machine Learning, Deep Learning, Natural Language Processing, and Data Science Project Management. Strong for data science, AI/ML, and analytics management careers.",
     "about": {
       "body": "The LPU Online MBA in Data Science is offered by Lovely Professional University's online division. LPU holds NAAC A+ accreditation, NIRF #31 University ranking (2025), and NIRF #44 in Management. The online programme is UGC-DEB approved.\n\nThe Data Science specialisation delivers dedicated Sem 3-4 subjects covering Statistical Methods for Data Science, Machine Learning, Deep Learning and Neural Networks, Natural Language Processing, and Data Science Project Management. This specialisation is designed for professionals targeting AI/ML, data science, and analytics leadership roles.\n\nLPU's strong technology orientation and campus-to-industry connect with North India's IT services hub make Data Science a high-demand track."
     },
@@ -67,10 +67,10 @@
       "body": "The LPU Data Science specialisation builds skills that IT and analytics employers test at data scientist and ML manager levels:\n\n**Technical skills:**\n- Machine Learning: supervised and unsupervised learning algorithm implementation, model evaluation, and production ML pipeline design for data scientist and ML engineer roles\n- Deep Learning and Neural Networks: CNN and RNN architecture design, transfer learning application, and neural network training for computer vision and NLP roles\n- Statistical Methods for Data Science: hypothesis testing, regression modelling, multivariate analysis, and experimental design for data analyst and research roles\n- Natural Language Processing: text classification, sentiment analysis, NER, and LLM application for NLP engineer and conversational AI roles\n\n**Applied skills:**\n- Data Science Project Management: MLOps framework application, data governance, model deployment management, and data science team leadership for data science manager roles\n\n**Soft skills:** Translating model outputs into business recommendations for C-suite, managing data science project delivery across cross-functional teams, communicating model uncertainty to non-technical stakeholders, and building business cases for AI investment."
     },
     "comparisons": {
-      "body": "Comparing LPU Online MBA Data Science against peers:\n\n**vs Amity Online MBA Data Science:** Amity is NAAC A+ and NIRF University #22 at Rs 2,25,000. Amity Data Science is a strong all-India brand. LPU Data Science at Rs 1,61,600 with grant is significantly more affordable with zero-cost EMI. For North India IT analytics professionals on a budget, LPU Data Science offers strong value.\n\n**vs MUJ Online MBA Business Analytics (Data Science track):** LPU Data Science includes dedicated Deep Learning, Neural Networks, and NLP subjects as distinct Sem 3-4 subjects. For deeper technical AI/ML content, LPU Data Science is more comprehensive.\n\n**vs NMIMS Online MBA Operations and Data Sciences Management:** NMIMS Operations and Data Sciences covers data science with quantitative management orientation and carries strong Mumbai brand recognition. For Mumbai IT product and analytics management roles, NMIMS carries stronger brand weight. For North India IT services data science careers with zero-cost EMI, LPU Data Science is the accessible alternative."
+      "body": "Comparing LPU Online MBA Data Science against peers:\n\n**vs Amity Online MBA Data Science:** Amity is NAAC A+ and NIRF University #22 at Rs 2,07,000 to Rs 2,25,000. Amity Data Science is a strong all-India brand. For North India IT analytics professionals on a budget, LPU Data Science offers strong value.\n\n**vs MUJ Online MBA Business Analytics (Data Science track):** LPU Data Science includes dedicated Deep Learning, Neural Networks, and NLP subjects as distinct Sem 3-4 subjects. For deeper technical AI/ML content, LPU Data Science is more comprehensive.\n\n**vs NMIMS Online MBA Operations and Data Sciences Management:** NMIMS Operations and Data Sciences covers data science with quantitative management orientation and carries strong Mumbai brand recognition. For Mumbai IT product and analytics management roles, NMIMS carries stronger brand weight. For North India IT services data science careers, LPU Data Science is the accessible alternative."
     },
     "fees": {
-      "body": "The LPU Online MBA in Data Science offers 2 fee tracks:\n\n**Track 1 - Standard Fee**:\n- Registration fee: Rs 1,000 (one-time)\n- Total program fee: Rs 2,00,000\n- Semester fee: Rs 50,000 per semester across 4 semesters\n\n**Track 2 - With 20% Student Grant**:\n- Registration fee: Rs 1,000 (one-time)\n- Total program fee: Rs 1,61,600 after 20% Student Grant\n- Semester fee: Rs 40,400 per semester\n\n**Zero-Cost EMI option (Track 2)**:\n- No interest charged. No processing fee from the university.\n- EMI is routed through the university's marketing partner.\n\nThe 20% Student Grant is applied at admission. Confirm current grant eligibility and applicable conditions with our counsellor before applying.\n\nEdifyEdu rechecks fees with LPU every quarter. Please reconfirm current fees and grant eligibility with our counsellor before any payment."
+      "body": "EdifyEdu rechecks fees with Lovely Professional University Online every quarter. Please reconfirm current fees with our counsellor before any payment. Fees can change between intakes."
     },
     "certificate": {
       "body": "The degree certificate is issued by Lovely Professional University (LPU) and carries the LPU name with the MBA designation. The Data Science specialisation is noted on the marksheet and transcript. UGC-DEB 2020 rules require the certificate to name the online mode. The certificate is valid for corporate hiring, PSU eligibility, and higher education admission across India."
@@ -79,10 +79,6 @@
       {
         "question": "How does the LPU 20% Student Grant work?",
         "answer": "The 20% Student Grant reduces the standard Rs 2,00,000 fee to Rs 1,61,600. It is applied at admission. Confirm current grant eligibility conditions with our counsellor before applying, as grant availability may vary by intake cycle."
-      },
-      {
-        "question": "Is LPU Online MBA zero-cost EMI genuinely interest-free?",
-        "answer": "Yes. The zero-cost EMI carries no interest charge and no processing fee from the university. It is routed through the university's marketing partner. Confirm current EMI terms before committing."
       },
       {
         "question": "What programming languages are taught in LPU Data Science MBA?",
@@ -114,6 +110,7 @@
     "generatedAt": "2026-04-21",
     "batchNumber": "Phase7-Batch13",
     "hasSyllabusData": true,
-    "claimSweep": "2026-09-17"
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-27"
   }
 }

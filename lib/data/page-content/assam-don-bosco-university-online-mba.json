@@ -10,7 +10,7 @@
     },
     "about": {
       "heading": "About Assam Don Bosco University Online MBA",
-      "body": "Assam Don Bosco University (ADBU), located in Guwahati, Assam, is a UGC-recognised private university established by the Salesian Society. It holds NAAC A accreditation and Assam Don Bosco University is not listed in NIRF 2025 rankings. EdifyEdu verifies these accreditation figures independently and does not receive commission from this university. The online MBA is delivered through ADBU's Centre for Distance and Open Education (CDOE) under UGC-DEB entitlement. Six specialisations are available: Finance Management, Marketing Management, Human Resource Management, Operations Management, Project Management, and Logistics and Supply Chain Management. The programme fee ranges from Rs 60,000 to Rs 2,00,000 depending on specialisation and payment plan. The maximum programme validity is 4 years from enrolment."
+      "body": "Assam Don Bosco University (ADBU), located in Guwahati, Assam, is a UGC-recognised private university established by the Salesian Society. It holds NAAC A accreditation and Assam Don Bosco University is not listed in NIRF 2025 rankings. EdifyEdu verifies these accreditation figures independently and does not receive commission from this university. The online MBA is delivered through ADBU's Centre for Distance and Open Education (CDOE) under UGC-DEB entitlement. Six specialisations are available: Finance Management, Marketing Management, Human Resource Management, Operations Management, Project Management, and Logistics and Supply Chain Management. EdifyEdu does not yet hold a verified fee for this programme. Please confirm the current fee with our counsellor before any payment. The maximum programme validity is 4 years from enrolment."
     },
     "approvals": {
       "heading": "UGC-DEB Approval and Accreditations",
@@ -42,7 +42,7 @@
     },
     "fees": {
       "heading": "Fee Structure, Assam Don Bosco University Online MBA",
-      "body": "The total programme fee for the Assam Don Bosco University Online MBA ranges from Rs 60,000 to Rs 2,00,000 depending on specialisation and applicable scholarships. Fees are typically paid in four semester instalments. Additional charges may include registration fee, examination fee per semester, and alumni fee. Fee amounts differ between specialisations, confirm the exact fee for your chosen track in writing at the offer letter stage before making any payment. Fees listed are indicative. edifyedu.in rechecks fees with Assam Don Bosco University Online every quarter. Reconfirm current fees with our counsellor before any payment to the university."
+      "body": "EdifyEdu rechecks fees with Assam Don Bosco University Online every quarter. Please reconfirm current fees with our counsellor before any payment. Fees can change between intakes."
     },
     "coupon": {
       "heading": "Scholarships and Fee Concessions",
@@ -70,11 +70,11 @@
     },
     "comparisons": {
       "heading": "Assam Don Bosco University vs Peer Online MBA Universities",
-      "body": "Assam Don Bosco University Online: NAAC A, Not listed in NIRF 2025, Rs 60K-2L fee range, 6 specialisations including SCM and Project Management, Startup Management in Sem 3 core, Northeast India alumni network.\n\nARKA JAIN University Online: NAAC A, NAAC A, Rs 1,08,500, 3 specialisations. Stronger NIRF rank but fewer specialisations. Choose ARKA JAIN if NIRF top-100 is required and 3 tracks meet your need.\n\nDayananda Sagar University Online: NAAC A+, not listed in NIRF 2025, Rs 1,30,000, 8 specialisations, WES recognised. Stronger NIRF rank and more specialisations at a fixed fee. Choose DSU if NIRF top-50 and broader tracks are priorities.\n\nUse the compare tool at /compare to evaluate side by side."
+      "body": "Assam Don Bosco University Online: NAAC A, Not listed in NIRF 2025, 6 specialisations including SCM and Project Management, Startup Management in Sem 3 core, Northeast India alumni network.\n\nARKA JAIN University Online: NAAC A, NAAC A, Rs 1,08,500, 3 specialisations. Stronger NIRF rank but fewer specialisations. Choose ARKA JAIN if NIRF top-100 is required and 3 tracks meet your need.\n\nDayananda Sagar University Online: NAAC A+, not listed in NIRF 2025, Rs 1,30,000, 8 specialisations, WES recognised. Stronger NIRF rank and more specialisations at a fixed fee. Choose DSU if NIRF top-50 and broader tracks are priorities.\n\nUse the compare tool at /compare to evaluate side by side."
     },
     "honestVerdict": {
       "heading": "Honest Verdict, Assam Don Bosco University Online MBA",
-      "body": "This verdict is based on publicly available data from UGC-DEB, NAAC, and NIRF portals, cross-referenced with student feedback from verified sources.\n\nChoose this if:\n- You are in Northeast India or East India and the ADBU brand carries regional employer recognition\n- Logistics and Supply Chain Management or Project Management tracks aligned to Northeast India's Act East Policy-driven logistics boom match your career direction\n- Startup Management in Sem 3 as a core subject adds entrepreneurship orientation you value\n- Affordability at the Rs 60,000 lower end of the fee range (with scholarship) is the primary filter\n\nLook elsewhere if:\n- You need NIRF top-100 and your employer enforces this threshold (Not listed in NIRF 2025 is below that)\n- National employer recognition outside Northeast India is critical to your placement target\n- Salary data and named placement partners are non-negotiable before enrolment\n- Syllabus for Operations, Project Management, or SCM Sem 3-4 tracks need full verified subject lists before you enrol\n\nIf you are undecided, our counsellor call is free at /contact."
+      "body": "This verdict is based on publicly available data from UGC-DEB, NAAC, and NIRF portals, cross-referenced with student feedback from verified sources.\n\nChoose this if:\n- You are in Northeast India or East India and the ADBU brand carries regional employer recognition\n- Logistics and Supply Chain Management or Project Management tracks aligned to Northeast India's Act East Policy-driven logistics boom match your career direction\n- Startup Management in Sem 3 as a core subject adds entrepreneurship orientation you value\n\nLook elsewhere if:\n- You need NIRF top-100 and your employer enforces this threshold (Not listed in NIRF 2025 is below that)\n- National employer recognition outside Northeast India is critical to your placement target\n- Salary data and named placement partners are non-negotiable before enrolment\n- Syllabus for Operations, Project Management, or SCM Sem 3-4 tracks need full verified subject lists before you enrol\n\nIf you are undecided, our counsellor call is free at /contact."
     },
     "redFlags": {
       "heading": "Red Flags to Know Before You Enrol",
@@ -146,6 +146,7 @@
     "batchNumber": 6,
     "rubricPassed": true,
     "sheetName": "assam-don-bosco-online_MBA",
-    "claimSweep": "2026-09-17"
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-27"
   }
 }

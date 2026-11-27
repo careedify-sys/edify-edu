@@ -40,7 +40,7 @@
     },
     "fees": {
       "heading": "Course Fees and Payment Options",
-      "body": "The Symbiosis SSODL Online MBA sticker programme fee is Rs 3,70,000 for the full 2-year programme, billed across four semesters (Sem 1 and 2: Rs 92,500 each; Sem 3 and 4: Rs 87,500 each). A concession of Rs 55,000 reduces the programme fee to Rs 3,15,000, but this applies only to candidates with 2 or more years of full-time work experience at the time of admission. Registration is Rs 1,000, billed separately from the programme fee. International-student fee is US$2,150 per annum plus a US$65 first-year deposit. Please reconfirm current fees with our counsellor before any payment."
+      "body": "EdifyEdu rechecks fees with Symbiosis School for Online and Digital Learning (SSODL), Pune Online every quarter. Please reconfirm current fees with our counsellor before any payment. Fees can change between intakes."
     },
     "coupon": {
       "heading": "Exclusive SSODL MBA Discount (via our counsellor)",
@@ -68,7 +68,7 @@
     },
     "comparisons": {
       "heading": "How SSODL Compares with Peers",
-      "body": "Symbiosis School for Online and Digital Learning (SSODL), Pune vs peers comparison:\nNMIMS Online MBA: Fees Rs.1.96L, NIRF University #52, NAAC A++, 5 specialisations. NMIMS is NAAC A++ like SSODL but costs less and has 5 specialisations.\nAmity University Online MBA: Fees Rs.2.25L, NIRF University #22, NAAC A+. Amity has more specs and costs significantly less, but NAAC A+ vs Symbiosis A++ is one grade lower.\nDPU-COL Online MBA: Fees Rs.1.89L, NIRF University #41, NAAC A++, 15 specialisations. DPU-COL is NAAC A++ at Rs 1,89,400, making Symbiosis the premium option by a wide margin.\nSymbiosis is best when the Rs.3.15L fee is affordable and the Pune academic brand is directly relevant to hiring targets."
+      "body": "Symbiosis School for Online and Digital Learning (SSODL), Pune vs peers comparison:\nNMIMS Online MBA: Fees Rs.1,96,000 to Rs.2,20,000, NIRF University #52, NAAC A++, 5 specialisations. NMIMS is NAAC A++ like SSODL but costs less and has 5 specialisations.\nAmity University Online MBA: Fees Rs.2,07,000 to Rs.2,25,000, NIRF University #22, NAAC A+. Amity has more specs and costs significantly less, but NAAC A+ vs Symbiosis A++ is one grade lower.\nDPU-COL Online MBA: Fees Rs.1.89L, NIRF University #41, NAAC A++, 15 specialisations. DPU-COL is NAAC A++ at Rs 1,89,400, making Symbiosis the premium option by a wide margin.\nSymbiosis is best when the Rs.3.15L fee is affordable and the Pune academic brand is directly relevant to hiring targets."
     },
     "honestVerdict": {
       "heading": "Honest Verdict: Who Should Enroll, Who Should Look Elsewhere",
@@ -139,6 +139,7 @@
     "generatedAt": "2026-04-20T18:52:48.998Z",
     "sheetName": "symbiosis-university-online_MBA",
     "format": "named",
-    "claimSweep": "2026-09-17"
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-27"
   }
 }

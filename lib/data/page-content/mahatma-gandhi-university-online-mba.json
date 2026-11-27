@@ -42,7 +42,7 @@
     },
     "fees": {
       "heading": "Fee Structure, Mahatma Gandhi University Online MBA",
-      "body": "The total programme fee for the Mahatma Gandhi University Online MBA is approximately Rs 60,000 to Rs 2,00,000 (indicative), depending on the specialisation and intake. Additional charges may include registration fee and examination fee per semester. Always confirm the exact fee in writing at the offer letter stage before making any payment. Fees listed are indicative and edifyedu.in reconfirms fees each quarter. Talk to our counsellor for current fees before enrolling."
+      "body": "EdifyEdu rechecks fees with Mahatma Gandhi University Online every quarter. Please reconfirm current fees with our counsellor before any payment. Fees can change between intakes."
     },
     "coupon": {
       "heading": "Scholarships and Fee Concessions",
@@ -70,7 +70,7 @@
     },
     "comparisons": {
       "heading": "Mahatma Gandhi University vs Peer Online MBA Universities",
-      "body": "Mahatma Gandhi University Online: NAAC A++, NIRF #43 University 2025 (University 2025), WES Recognised, ~Rs 60K-2L fee, 5 specialisations, Kerala state university.\n\nAnna University Online: NAAC A++, NIRF #20 (University 2025), Tamil Nadu state university, ~Rs 1,50,000 fee, General Management. Higher NAAC grade and NIRF rank. Choose Anna University for NAAC A++ requirement.\n\nAndhra University Online: NAAC A++, NIRF #23 (University 2025), WES Recognised, Rs 62,200 fee, 3 specialisations. Higher NAAC grade, higher NIRF rank, lower fee, WES also recognised. Choose Andhra University for NAAC A++.\n\nUse the compare tool at /compare to evaluate side by side."
+      "body": "Mahatma Gandhi University Online: NAAC A++, NIRF #43 University 2025 (University 2025), WES Recognised, 5 specialisations, Kerala state university.\n\nAnna University Online: NAAC A++, NIRF #20 (University 2025), Tamil Nadu state university, ~Rs 1,50,000 fee, General Management. Higher NAAC grade and NIRF rank. Choose Anna University for NAAC A++ requirement.\n\nAndhra University Online: NAAC A++, NIRF #23 (University 2025), WES Recognised, Rs 62,200 fee, 3 specialisations. Higher NAAC grade, higher NIRF rank, lower fee, WES also recognised. Choose Andhra University for NAAC A++.\n\nUse the compare tool at /compare to evaluate side by side."
     },
     "honestVerdict": {
       "heading": "Honest Verdict, Mahatma Gandhi University Online MBA",
@@ -89,7 +89,7 @@
         },
         {
           "flag": "Wide fee range, confirm exact amount before paying",
-          "detail": "The cited fee range of Rs 60,000 to Rs 2,00,000 is wide. The exact total depends on your chosen specialisation and intake cycle. Confirm the specific total fee for your track in writing from the CDOE admissions team before making any payment."
+          "detail": "The exact total depends on your chosen specialisation and intake cycle. Confirm the specific total fee for your track in writing from the CDOE admissions team before making any payment."
         },
         {
           "flag": "NIRF Management rank not available",
@@ -116,7 +116,7 @@
       },
       {
         "q": "What is the total fee for the Mahatma Gandhi University Online MBA?",
-        "a": "The indicative fee is approximately Rs 60,000 to Rs 2,00,000 depending on the specialisation and intake. The range is wide, confirm the exact total fee for your chosen specialisation in writing from the CDOE admissions team before paying any amount."
+        "a": "EdifyEdu does not yet hold a verified fee for this programme. Confirm the exact total fee for your chosen specialisation in writing from the CDOE admissions team before paying any amount."
       },
       {
         "q": "Is Mahatma Gandhi University a government university?",
@@ -136,11 +136,12 @@
       },
       {
         "q": "How does MGU Online MBA compare to Andhra University Online MBA?",
-        "a": "Mahatma Gandhi University Online: NAAC A++, NIRF #43 University 2025 (University 2025), WES Recognised, ~Rs 60K-2L fee, 5 specialisations, Kerala state university. Andhra University Online: NAAC A++, NIRF #23 (University 2025), WES Recognised, Rs 62,200 fee, 3 specialisations, AP state university. Andhra University has higher NAAC grade and higher NIRF rank. MGU offers more specialisations. Compare at /compare."
+        "a": "Mahatma Gandhi University Online: NAAC A++, NIRF #43 University 2025 (University 2025), WES Recognised, 5 specialisations, Kerala state university. Andhra University Online: NAAC A++, NIRF #23 (University 2025), WES Recognised, Rs 62,200 fee, 3 specialisations, AP state university. Andhra University has higher NAAC grade and higher NIRF rank. MGU offers more specialisations. Compare at /compare."
       }
     ]
   },
   "metadata": {
-    "claimSweep": "2026-09-17"
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-27"
   }
 }

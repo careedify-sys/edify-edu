@@ -6,7 +6,7 @@
     "hero": {
       "headline": "SRM University Sikkim Online MBA, NAAC A+, WES Recognised, SRM Group, AI-Enhanced Learning",
       "body": "SRM University Sikkim Online MBA is UGC-DEB approved, NAAC A+ accredited, WES recognised, and AICTE approved. SRM University Sikkim is a Sikkim-based university under the SRM Group, offering an AI-driven online learning platform with Coursera certifications embedded in the curriculum. WES recognition enables international degree verification for Gulf employment, Canada PR applications, and other overseas credential assessments. The 2-year online MBA provides 7 specialisations and a structured 4-semester curriculum with a project component in Semester 4.",
-      "sub": "NAAC A+ · WES Recognised · AICTE · SRM Group · UGC-DEB · AI-Driven Platform · Rs 1,10,000 indicative fee"
+      "sub": "NAAC A+ · WES Recognised · AICTE · SRM Group · UGC-DEB · AI-Driven Platform"
     },
     "about": {
       "heading": "About SRM University Sikkim Online MBA",
@@ -42,7 +42,7 @@
     },
     "fees": {
       "heading": "Fee Structure, SRM University Sikkim Online MBA",
-      "body": "The total programme fee for the SRM University Sikkim Online MBA is approximately Rs 1,10,000 (indicative), billed as Rs 27,500 a semester. Additional charges may include registration fee and examination fee per semester. Always confirm the exact fee in writing at the offer letter stage before making any payment. Fees listed are indicative and edifyedu.in reconfirms fees each quarter. Talk to our counsellor for current fees before enrolling."
+      "body": "EdifyEdu rechecks fees with SRM University Sikkim Online every quarter. Please reconfirm current fees with our counsellor before any payment. Fees can change between intakes."
     },
     "coupon": {
       "heading": "Scholarships and Fee Concessions",
@@ -50,7 +50,7 @@
     },
     "emi": {
       "heading": "EMI Options",
-      "body": "At a total fee of Rs 1,10,000, most students spread costs across 12-24 monthly instalments. The university also advertises a 5 percent waiver for paying a year at a time and 10 percent for paying the full programme upfront. Confirm current EMI options, interest rates, and eligibility with the university finance team before selecting a plan."
+      "body": "The university also advertises a 5 percent waiver for paying a year at a time and 10 percent for paying the full programme upfront. Confirm current EMI options, interest rates, and eligibility with the university finance team before selecting a plan."
     },
     "sampleCert": {
       "heading": "Degree Certificate",
@@ -70,7 +70,7 @@
     },
     "comparisons": {
       "heading": "SRM University Sikkim vs Peer Online MBA Universities",
-      "body": "SRM University Sikkim Online: NAAC A+, no NIRF 2025 rank, WES Recognised, AICTE, 7 specialisations, SRM Group, AI-driven platform, Coursera certs.\n\nDevi Ahilya Vishwavidyalaya Online: NAAC A+, no NIRF 2025 rank, AICTE, ~Rs 75K-1.80L fee, 7 specialisations, MP state university. Matching specialisation count, state university status. Choose DAVV for the state university credential.\n\nGalgotias University Online: NAAC A+, WES Recognised, NIRF band 101-150 (Management), ~Rs 80,200 fee, 7 specialisations, Delhi-NCR. Lower fee, NIRF presence, Delhi-NCR location. Choose Galgotias for NIRF rank.\n\nUse the compare tool at /compare to evaluate side by side."
+      "body": "SRM University Sikkim Online: NAAC A+, no NIRF 2025 rank, WES Recognised, AICTE, 7 specialisations, SRM Group, AI-driven platform, Coursera certs.\n\nDevi Ahilya Vishwavidyalaya Online: NAAC A+, no NIRF 2025 rank, AICTE, 7 specialisations, MP state university. Matching specialisation count, state university status. Choose DAVV for the state university credential.\n\nGalgotias University Online: NAAC A+, WES Recognised, NIRF band 101-150 (Management), ~Rs 80,200 fee, 7 specialisations, Delhi-NCR. Lower fee, NIRF presence, Delhi-NCR location. Choose Galgotias for NIRF rank.\n\nUse the compare tool at /compare to evaluate side by side."
     },
     "honestVerdict": {
       "heading": "Honest Verdict, SRM University Sikkim Online MBA",
@@ -120,7 +120,7 @@
       },
       {
         "q": "What is the total fee for the SRM University Sikkim Online MBA?",
-        "a": "The indicative total fee is approximately Rs 1,10,000, billed as Rs 27,500 a semester. Talk to our counsellor for the exact total fee before paying any amount."
+        "a": "EdifyEdu does not yet hold a verified fee for this programme. Please confirm the current fee with our counsellor before any payment. Talk to our counsellor for the exact total fee before paying any amount."
       },
       {
         "q": "Is SRM University Sikkim ranked in NIRF 2025?",
@@ -136,11 +136,12 @@
       },
       {
         "q": "How does SRM University Sikkim Online MBA compare to Devi Ahilya Vishwavidyalaya Online MBA?",
-        "a": "SRM University Sikkim Online: NAAC A+, no NIRF rank, WES Recognised, AICTE, 7 specialisations, AI-driven platform, Coursera certs. Devi Ahilya Vishwavidyalaya Online: NAAC A+, no NIRF rank, AICTE, ~Rs 75K-1.80L fee, 7 specialisations, MP state university. SRM Sikkim has WES recognition and AI platform. Both list seven specialisations, and DAVV adds state university status. Compare at /compare."
+        "a": "SRM University Sikkim Online: NAAC A+, no NIRF rank, WES Recognised, AICTE, 7 specialisations, AI-driven platform, Coursera certs. Devi Ahilya Vishwavidyalaya Online: NAAC A+, no NIRF rank, AICTE, 7 specialisations, MP state university. SRM Sikkim has WES recognition and AI platform. Both list seven specialisations, and DAVV adds state university status. Compare at /compare."
       }
     ]
   },
   "metadata": {
-    "claimSweep": "2026-09-17"
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-27"
   }
 }
