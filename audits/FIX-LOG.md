@@ -7474,8 +7474,8 @@ The owner gets settings for the ₹500 monthly cap, the rates, a read-only conne
 **Tests.** graph/spend 21, inbox service 18, ingest 14, SQL (PGlite) 42, real-Postgres race PASS. `npm run build` exit 0; `/leads/whatsapp` is 10.5 kB.
 
 **Not deployed.** Before deploy:
-- Rishi runs `20261202120000_whatsapp_inbox.sql` and pastes `select key from wa_settings order by key;`, which should return 10 rows.
-- Rishi confirms the cron is running: the Vercel cron logs were unreadable from this session (403, CLI read denied).
+- DONE 27 Nov: Rishi ran `20261202120000_whatsapp_inbox.sql` on production Supabase and pasted the result of `select key from wa_settings order by key;`. All 10 expected keys are present (automation_enabled through sending_enabled). The live Phase 1 webhook is unaffected because the migration only adds objects. The inbox code is still undeployed, so nothing calls the new functions yet. The sweep on main does not know about them.
+- Cron, 27 Nov: Rishi's Vercel Logs screenshot (edify-edu-dh2m) shows `GET /api/cron/whatsapp-sweep` 200 at 13:25:40. That proves the sweep runs and succeeds. The 5-minute cadence is not shown by one row; the post-deploy Health panel (`last_sweep` within 5 minutes) is the second check. The logs were unreadable from this session (403, CLI read denied).
 
 **Next phase decided 27 Nov.** Student referral campaigns from Rishi's Excel come after this deploy. Each campaign needs his approval, uploading never sends, and there is no paid platform. See plan section 12. Q-WA4 asks for the opt-in source.
 
