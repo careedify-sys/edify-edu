@@ -30,6 +30,9 @@ const NO_UNSOURCED_FEE_COMPONENTS = new Set([
   'chitkara-university-online', 'kurukshetra-university-online', 'lovely-professional-university-online',
   // B3 batch 19 round 2: Christ prints its BBA fee per year and names no lending partner or study material.
   'christ-university-online',
+  // 2026-11-28: MAHE's BBA page publishes semester, annual and full payment and a
+  // no-cost EMI, but names no lending partner and no study-material inclusion.
+  'manipal-academy-higher-education-online',
 ])
 
 export default function FeeBreakdown({ u, pd, program, cleanName, headingOverride, spec }: Props) {
@@ -100,7 +103,9 @@ export default function FeeBreakdown({ u, pd, program, cleanName, headingOverrid
     // "Registration / Admission Fee: Included in total" row, which was false
     // for Adichunchanagiri and Shoolini. Charges a verify sheet records as
     // separate (u.feeExtras) print as their own rows, never added in.
-    ...(program === 'MBA' ? (u.feeExtras?.mba ?? []) : []).map(e => ({
+    // 2026-11-28: keyed by programme (BBA extras for MAHE and Amrita), so an
+    // MBA charge still never prints on another programme's hub.
+    ...((program === 'MBA' ? u.feeExtras?.mba : program === 'BBA' ? u.feeExtras?.bba : undefined) ?? []).map(e => ({
       label: e.label,
       value: `${formatINR(e.amount)}${e.per ? ` ${e.per}` : ''}, charged separately`,
     })),

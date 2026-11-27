@@ -21,6 +21,7 @@ import { resolveProgramme } from '@/lib/seo/resolve-programme'
 import { naacSuffix, naacSegment, naacAccredited, naacPhrase } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription, onlinePrefix } from '@/lib/seo/mode-unverified'
 import { formatUniversityDisplayName } from '@/lib/format'
+import { BBA_HEAD_FROZEN_FEELESS } from '@/lib/seo/bba-fee-title-freeze'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('BBA')).map(u => ({ id: u.id }))
@@ -47,7 +48,8 @@ export async function generateMetadata(
   // Title and description fee: exact rupees from getExactFee, list price for a
   // list-vs-discount fee. getDisplayFee's compact form was parsed from
   // abbreviated pd.fees ("₹1.61L" for a ₹1,61,600 fee).
-  const feeTok = formatExactFeeShort(getExactFee(u, 'BBA'))
+  // Head freeze for two corrected fees: see lib/seo/bba-fee-title-freeze.ts.
+  const feeTok = BBA_HEAD_FROZEN_FEELESS.has(u.id) ? null : formatExactFeeShort(getExactFee(u, 'BBA'))
   const specCount = pd?.specs?.length || 4
   const nirfLabel = nirfForProgramme(u, 'BBA')
   const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
