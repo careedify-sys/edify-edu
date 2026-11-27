@@ -1,5 +1,29 @@
 # Fix log
 
+## 2026-11-27 B3 batch 21: batch 20 stop-case resolved, MCA Payscale source, CU tagline
+
+Branch fix/b3-batch-21, from b7c902c, rebased onto the batch 20 round 2 tip (bc888b8). Coordinator decision on the batch 20 stop-case: deleting unverified figures does not weaken check-blog-fees, so delete, never allowlist. No title, seoTitle, h1Title or metaDescription changed. No allowlist entry added.
+
+**1. mba-vs-pgdm-online-india-2026 table and bba-full-form scenario 4 (lib/blog.ts).**
+- Why: the "Year 1 CTC (online)" column mixed unsourced online ranges with NMIMS Mumbai and Symbiosis Pune campus rows under an online header (salary sheet B5, X1-X6), and the BBA "INR 6-8 LPA" conflicted with NIRF UG medians (B7). Deleting them in batch 20 exposed fee figures the scanner had treated as salary context.
+- What changed:
+  - The CTC column is gone (header and all 8 cells).
+  - Each Total Fees cell was then checked against getExactFee through the check-blog-fees scanner. JAIN Online "Rs 1.60-2.98 lakh" and MUJ Online "Rs 1.56-1.84 lakh" resolve MATCH and stay verbatim.
+  - Not MATCH, now "Contact our counsellor": NMIMS Online "Rs 2.10-2.40 lakh" (unresolved), Amity "Rs 1.99 lakh" (MISMATCH), Symbiosis SCDL "Rs 1.65 lakh" (MISMATCH). Campus fees with no approved source, same treatment: NMIMS Mumbai campus "Rs 8-12 lakh", Symbiosis Pune campus "Rs 16-18 lakh", SCMHRD "Rs 18-22 lakh".
+  - bba-full-form: "You spend INR 10-15 lakh on BBA" (campus BBA fee, no source) and "INR 6-8 LPA" are deleted; the sentence now says neither publishes a BBA-only placement figure and NIRF reports campus medians for all undergraduate programmes together. updatedAt 2026-11-25 to 2026-11-27 (mba-vs-pgdm was already 27 Nov).
+- Gates: check-blog-fees 1948, unchanged (both posts back at their baseline counts). Salary baseline 2353 -> 2344 on b7c902c; 2346 -> 2337 after the rebase onto batch 20 round 2.
+
+**2. amity-online-mca-fees-review sources line (lib/blog.ts).**
+- Why: Payscale is not an approved source (salary sheet section D).
+- What changed: "Payscale India (2026)" removed from the sources line. No figure in the post names Payscale. The post's "Amity Online MCA salary outcomes by specialisation" table and year-by-year pay ladder are university-attributed and unsourced; they are left for the next salary chunk. updatedAt was already 2026-11-27.
+
+**3. CU tagline (lib/data.ts, data/string-truncation-allowlist.json).**
+- Why: "India's ONLY online MBA with Triple Industry Certification" has no source, "2 subjects co-taught" overstates CU's "taught by PwC India experts" (batch20 sheet 3f), the string was cut at 120 characters ("PMI ("), and it carried an em dash.
+- Checked first: no title, meta or OG reads tagline. Nothing in app/ or components/ reads it outside app/admin; it reaches the RSC payload and /api/universities with the whole record. So it was rewritten rather than filed for Rishi.
+- What changed: tagline is now "Triple Industry Certified MBA plan: two subjects taught by PwC India experts, plus PMI and Harvard certificates" (111 characters, CU plan name and wording, no superlative, no em dash). The string-truncation allowlist entry for the old text was removed, as that file requires once a string is fixed. check-string-truncation, check-duplicate-tagline, check-llms-txt and check-data-slim-drift pass.
+
+**4. Salary chunk 20c scope.** Read-only; written to .b8tmp/batch21-20c-chunk.md (not committed).
+
 ## 2026-11-27 B3 batch 20 round 2: QA fixes (audits/qa/2026-11-27-b3-batch-20-premerge.md)
 
 Branch fix/b3-batch-20, new commit on b7c902c. Source for every salary figure kept or added: audits/verify/batch20a-salary-facts-2026-11-27.md (S2, S3, S7). No title, seoTitle, h1Title or metaDescription changed. No allowlist entry added.

@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-11-27",
   "note": "Per-slug count of LPA / lakh-per-annum salary figures in lib/blog.ts (content, FAQs, title, seoTitle, h1Title, metaDescription). Ratchet: a count may only go down; a slug not listed must be 0. See scripts/check-blog-salaries.mjs.",
-  "total": 2346,
+  "total": 2337,
   "perSlug": {
     "1-year-mba-india-executive-mba-2026": 27,
     "affordable-online-mba-india-2026": 1,
@@ -10,7 +10,7 @@
     "amity-online-mca-fees-review": 17,
     "amity-vs-manipal-online-mba-2026": 4,
     "arts-stream-jobs-career-options-salary-india": 84,
-    "bba-full-form-course-details-eligibility-fees-2026": 16,
+    "bba-full-form-course-details-eligibility-fees-2026": 15,
     "bca-full-form-course-details-eligibility-fees-2026": 21,
     "bcom-full-form-course-details-eligibility-fees-2026": 12,
     "best-computer-courses-after-12th-india-2026": 32,
@@ -76,7 +76,7 @@
     "mba-pharmaceutical-management-online-india-2026": 9,
     "mba-scope-india-2026": 69,
     "mba-vs-bba-which-is-better-2026": 26,
-    "mba-vs-pgdm-online-india-2026": 27,
+    "mba-vs-pgdm-online-india-2026": 19,
     "mca-after-bca-is-it-good-2026": 18,
     "mca-full-form-course-details-eligibility-fees-2026": 22,
     "mca-vs-btech-which-is-better-2026": 13,

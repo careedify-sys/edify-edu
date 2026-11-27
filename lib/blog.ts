@@ -11642,16 +11642,16 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <table>
   <caption>Top online plus campus MBA universities 2026</caption>
-  <thead><tr><th>University</th><th>NAAC plus NIRF</th><th>Total Fees</th><th>Year 1 CTC (online)</th></tr></thead>
+  <thead><tr><th>University</th><th>NAAC plus NIRF</th><th>Total Fees</th></tr></thead>
   <tbody>
-    <tr><td>NMIMS Online (Mumbai)</td><td>NAAC A plus plus, NIRF Mgmt 24</td><td>Rs 2.10-2.40 lakh</td><td>Rs 7-15 LPA</td></tr>
-    <tr><td>NMIMS Mumbai Campus (Full-Time MBA)</td><td>Same as above</td><td>Rs 8-12 lakh</td><td>Rs 18-28 LPA</td></tr>
-    <tr><td>JAIN Online (Bengaluru)</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.60-2.98 lakh</td><td>Rs 5-10 LPA</td></tr>
-    <tr><td>Amity University Online</td><td>NAAC A plus</td><td>Rs 1.99 lakh</td><td>Rs 5-10 LPA</td></tr>
-    <tr><td>Manipal University Jaipur Online</td><td>NAAC A plus</td><td>Rs 1.56-1.84 lakh</td><td>Rs 5-10 LPA</td></tr>
-    <tr><td>Symbiosis SCDL (Pune)</td><td>NAAC A plus plus</td><td>Rs 1.65 lakh</td><td>Rs 5-9 LPA</td></tr>
-    <tr><td>Symbiosis Pune Campus (Full-Time MBA)</td><td>Same as above</td><td>Rs 16-18 lakh</td><td>Rs 16-22 LPA</td></tr>
-    <tr><td>SCMHRD Pune</td><td>NAAC A plus plus</td><td>Rs 18-22 lakh</td><td>Rs 18-25 LPA</td></tr>
+    <tr><td>NMIMS Online (Mumbai)</td><td>NAAC A plus plus, NIRF Mgmt 24</td><td>Contact our counsellor</td></tr>
+    <tr><td>NMIMS Mumbai Campus (Full-Time MBA)</td><td>Same as above</td><td>Contact our counsellor</td></tr>
+    <tr><td>JAIN Online (Bengaluru)</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.60-2.98 lakh</td></tr>
+    <tr><td>Amity University Online</td><td>NAAC A plus</td><td>Contact our counsellor</td></tr>
+    <tr><td>Manipal University Jaipur Online</td><td>NAAC A plus</td><td>Rs 1.56-1.84 lakh</td></tr>
+    <tr><td>Symbiosis SCDL (Pune)</td><td>NAAC A plus plus</td><td>Contact our counsellor</td></tr>
+    <tr><td>Symbiosis Pune Campus (Full-Time MBA)</td><td>Same as above</td><td>Contact our counsellor</td></tr>
+    <tr><td>SCMHRD Pune</td><td>NAAC A plus plus</td><td>Contact our counsellor</td></tr>
   </tbody>
 </table>
 
@@ -27660,7 +27660,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <div style="background:rgba(212,146,42,0.07);border:1.5px solid rgba(212,146,42,0.22);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0"><p style="margin:0 0 0.5rem;font-weight:700;color:#0B1D35">💡 Want the full comparison?</p><p style="margin:0;color:#3B5068">edifyedu.in has a neutral side-by-side of 30+ online MCA universities (fees, syllabus, accreditation, and specialisations) without any referral commissions.</p></div>
 <h2>How to Apply</h2>
 <p>Applications go through amityonline.com. Fill an online form, submit graduation marksheets and ID proof, pay the registration fee. No entrance exam for the online program. Amity runs July-August and January-February batches, both are equally valid.</p>
-<p><strong>Sources:</strong> Amity University Online (official website, 2026), UGC-DEB approved institution list, NAAC accreditation database, Payscale India (2026), edifyedu.in university data (2026)</p>`,
+<p><strong>Sources:</strong> Amity University Online (official website, 2026), UGC-DEB approved institution list, NAAC accreditation database, edifyedu.in university data (2026)</p>`,
   },
   {
     slug: 'vignan-online-mba-review',
@@ -32087,7 +32087,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'bba-full-form-course-details-eligibility-fees-2026',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     title: 'BBA Full Form 2026: Course, Subjects, Fees and Salary',
     seoTitle: 'BBA Full Form, Course, Fees, Eligibility, Salary [2026]',
     metaDescription: 'BBA stands for Bachelor of Business Administration. Full guide on BBA course, subjects, fees (50K-5L), eligibility, salary, and career scope in India 2026.',
@@ -32637,7 +32637,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 </p>
 
 <p>
-  <strong>Scenario 4: BBA from a premium private college (like NMIMS or Symbiosis).</strong> You spend INR 10-15 lakh on BBA. But campus placements at these colleges often start at INR 6-8 LPA for freshers. The brand name of the college does a lot of heavy lifting in your first job search.
+  <strong>Scenario 4: BBA from a premium private college (like NMIMS or Symbiosis).</strong> Neither publishes a BBA-only placement figure: NIRF reports their campus medians for all undergraduate programmes together. The brand name of the college does a lot of heavy lifting in your first job search.
 </p>
 
 <p class="ilink">

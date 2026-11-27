@@ -2862,7 +2862,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     emiFrom: 0,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
-    tagline: 'India\'s ONLY online MBA with Triple Industry Certification — PwC India (2 subjects co-taught + PwC certificates), PMI (',
+    tagline: 'Triple Industry Certified MBA plan: two subjects taught by PwC India experts, plus PMI and Harvard certificates',
     description: 'UGC DEB approved online programs from Chandigarh University (CU Online). NAAC A+ accredited. Valid for corporate hiring and higher education across India.',
     forWho: ['Graduates seeking management careers', 'working professionals wanting MBA without career break', 'CA/CS/CMA seeking MBA upgrade'],
     notFor: ['Those not meeting eligibility criteria', 'those requiring only on-campus experience', 'students needing highly personalized offline mentoring'],

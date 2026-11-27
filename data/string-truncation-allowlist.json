@@ -21,12 +21,6 @@
       "reason": "Tagline cut by the 120-character import limit. The text is editorial, so the missing half cannot be reconstructed from the record, only invented. Raised with Rishi 2026-10-02 to be rewritten or shortened to a complete clause."
     },
     {
-      "id": "chandigarh-university-online",
-      "key": "tagline",
-      "value": "India\\'s ONLY online MBA with Triple Industry Certification \u2014 PwC India (2 subjects co-taught + PwC certificates), PMI (",
-      "reason": "Tagline cut by the 120-character import limit. The text is editorial, so the missing half cannot be reconstructed from the record, only invented. Raised with Rishi 2026-10-02 to be rewritten or shortened to a complete clause. SEPARATE ISSUE: this tagline also claims \"India's ONLY online MBA with Triple Industry Certification\". Nothing in lib/data.ts supports an exclusivity claim of that shape, so it needs evidence or removal when the line is rewritten."
-    },
-    {
       "id": "silver-oak-university-online",
       "key": "forWho",
       "value": "Applicants in Gujarat who want a wide choice of degree types from one university",
