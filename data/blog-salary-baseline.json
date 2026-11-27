@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-11-27",
   "note": "Per-slug count of LPA / lakh-per-annum salary figures in lib/blog.ts (content, FAQs, title, seoTitle, h1Title, metaDescription). Ratchet: a count may only go down; a slug not listed must be 0. See scripts/check-blog-salaries.mjs.",
-  "total": 1550,
+  "total": 1549,
   "perSlug": {
     "1-year-mba-india-executive-mba-2026": 27,
     "affordable-online-mba-india-2026": 1,
@@ -43,7 +43,7 @@
     "govt-jobs-after-mba-india-2026": 13,
     "ias-officer-salary-india-2026-pay-scale-perks": 10,
     "ignou-online-mba-review-2026": 10,
-    "iim-online-mba-india-2026": 8,
+    "iim-online-mba-india-2026": 7,
     "iim-ranking-india-2026-all-iims-list": 29,
     "imt-ghaziabad-online-mba-review-2026": 6,
     "investment-banking-career-india-salary-qualification": 22,

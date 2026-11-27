@@ -13692,7 +13692,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-hr-career-salary-scope-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'MBA HR Career 2026: Salary and Scope in India',
     seoTitle: 'MBA HR Career, Salary & Scope India 2026 | Human Resource Management',
     metaDescription: 'MBA HR career salary and scope 2026, roles, average packages, top companies hiring MBA HR graduates, and how to choose the right college.',
@@ -13938,7 +13938,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-marketing-career-salary-jobs-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'MBA Marketing Career 2026: Salary and Jobs in India',
     seoTitle: 'MBA Marketing Career India 2026: Salary, Jobs, Digital Roles',
     metaDescription: 'MBA Marketing career India 2026: Rs 12.2 LPA median, 20% digital premium, D2C track, FMCG vs SaaS path, real salary by role and company tier.',
@@ -16005,7 +16005,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-for-commerce-students-india-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'MBA for Commerce Students India 2026: Best Specs',
     seoTitle: 'MBA for Commerce Students India 2026: Best Specialisations & Careers',
     metaDescription: 'MBA for commerce students in India 2026, best specialisations after B.Com, fees, top colleges, and career outcomes for commerce graduates.',
@@ -16936,7 +16936,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-operations-management-career-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'MBA Operations Management Career 2026: Honest Salary Guide',
     seoTitle: 'MBA Operations Management Career 2026: Salary & Roles',
     metaDescription: 'MBA Operations Management career 2026: four career tracks, real Amazon and Flipkart salaries, UGC-DEB universities mapped to each track, and red flags.',
@@ -36059,7 +36059,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'best-online-mba-colleges-india-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'Best Online MBA Colleges in India 2026: Top 15 UGC-DEB Ranked',
     seoTitle: 'Best Online MBA Colleges in India 2026: Top 15 NIRF Ranked',
     metaDescription: 'Best online MBA colleges in India 2026: top 15 UGC-DEB universities ranked by NIRF, NAAC, fees ₹66K to ₹3.15L. Honest comparison, zero commission.',
