@@ -467,7 +467,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-3" style={{ color: '#0f2756' }}>EMI and Coupon Discount Compatibility at {page.shortName}</h2>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">
-            The {page.couponCode} coupon discount works with EMI payment plans at {page.shortName}. The coupon is applied at enrollment and the resulting balance can then be split into monthly EMI instalments. {hasSourcedNoCostEmi(page.universityId)
+            The {page.couponCode} coupon is applied at enrollment. {hasSourcedNoCostEmi(page.universityId)
               ? 'Whether the no-cost EMI window applies to the reduced balance is set by the university and confirmed at enrollment.'
               : 'Whether an EMI plan applies to the reduced balance is set by the university and confirmed at enrollment.'}
           </p>
