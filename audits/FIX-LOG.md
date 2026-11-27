@@ -1,5 +1,78 @@
 # Fix log
 
+## 2026-11-28 · B7 round 2: QA F1, F5 and F15 (branch fix/b7-exam-mode, not pushed)
+
+QA report: audits/qa/2026-11-28-b7-exam-mode-premerge.md. Merged origin/main (0a8999e) first: FIX-LOG kept both
+sides; lib/specFaqs.ts kept main's IGNOU "Rs 16,000 per semester" line and this branch's exam sentence.
+- **F1, why:** examSentenceForUniversities added "Exam format differs by university." whenever an unconfirmed
+  university was listed. That is false on its face on the 12 single-university spec hubs, and nothing on record shows
+  the formats differ on the others. **What:** the sentence is gone. "Each university sets its own exam format." is used
+  only where 2 or more universities are listed, before the counsellor or neutral line. A single confirmed-Online hub
+  now reads "Exams are online." instead of "at every university listed here".
+- **F5, why:** the earlier entry said DSU's wording was unchanged. It is corrected in place below, with the Q80
+  dependency.
+- **F15, why:** the /programs/mba FAQ (components/MBAHubClient.tsx) defined online MBA as having "AI-proctored online
+  exams", false for VIT and BITS. **What:** it now says "exam format varies by university, so ask our counsellor". That
+  holds on this page, which lists VIT and BITS (exam centres) beside confirmed online-proctored universities.
+- **Q29:** the "what stays" column now records that the Shoolini hub shows the counsellor line and its exams body
+  follows the methodology PDF.
+
+## 2026-11-28 · B7 follow-up: spec-hub FAQ exam sentence from lib/exam-mode.ts (branch fix/b7-exam-mode, not pushed)
+
+- **Why:** lib/specFaqs.ts answered "Can I do online MBA in X while working full-time?" with "Exams are online and
+  AI-proctored from home" on every /programs/mba/{spec} hub, for every university listed. VIT and BITS hold end-semester
+  exams at centres (CONFIRMED_EXAM_MODE 'Exam Centre'), 7 universities have no sourced mode, and about 111 records have
+  no exam-mode record at all, so the sentence was false or a guess on every hub that listed them.
+- **What:** getSpecFAQs takes the listed universities (server page and MBASpecHubClient pass the same uniIds set) and
+  the sentence comes from examSentenceForUniversities in lib/exam-mode.ts. It may only claim what holds for every
+  university on the page: "from home" when all are in the new CONFIRMED_FROM_HOME set (the audit's 11 "from home or
+  anywhere" rows), "online" when all are confirmed 'Online'. Otherwise it names the confirmed Exam Centre universities
+  ("... hold end-semester exams in person at designated exam centres.") and ends with the counsellor line when an
+  UNVERIFIED_EXAM_MODE university is listed, or "Check the exam format with our counsellor before you enrol." when only
+  unrecorded ones are. No mode is invented. The "AI-proctored" claim is dropped: no sheet sources it for all.
+- **Other shared templates checked:** no other live template hard-codes "from home" for every university.
+  components/LearningExperience.tsx does ("from the absolute comfort of your home") but nothing imports it. The
+  per-university templates (SectionExams, UniversityPageClient FAQ) branch on examMode and are deferred item 4 below.
+- **Deferred, logged for later (coordinator, 28 Nov):** (1) the 30-40% / 60-70% weighting sentences in the DY Patil,
+  Sharda and Shoolini exams bodies, likely templated; (3) the NMIMS tagline "slot-based online exams" in lib/data.ts,
+  not rendered; (4) about 111 records with no exam-mode record still get the default "from home" wording in
+  SectionExams and the profile FAQ.
+
+## 2026-11-28 · B7 exam mode: counsellor line for 7 universities with no sourced mode (branch fix/b7-exam-mode, not pushed)
+
+- **Why:** every hub, spec page, profile FAQ and AI-answer block printed "Online proctored examinations from home. No
+  exam centre visit required." (or "Online examinations", "No campus visits required") for every record carrying the
+  importer default examMode 'Online'. For these universities nobody had read the mode on the university's own pages
+  (audits/exam-mode-verified-2026-11-16.md, "Not stated or conflicting", plus Shoolini as ambiguous), so the line was a
+  guess presented as fact. VIT showed the same error and was in person; Graphic Era's old guidelines and Shoolini's
+  methodology PDF both mention exam centres or campus invigilation. Date-locked to after the 28 Nov guard (passed today).
+- **Who gets the counsellor line (UNVERIFIED_EXAM_MODE, lib/exam-mode.ts):** dy-patil-university-online,
+  graphic-era-university-online, nmims-online, sharda-university-online, mody-university-online,
+  sathyabama-university-online (6 still unverified) and shoolini-university-online (ambiguous; Q29 still open).
+  Line: "Talk to our counsellor for how and where exams are held." No mode is invented; examMode in lib/data.ts is unchanged.
+- **DSU is not in that set.** The 16 Nov audit listed it as unverified, but audits/verify/dayananda-sagar-university-online-2026-11-18.md
+  row M6 is a MATCH ("Online Examination" on dsuonline.com/online-mba/, plus a "Remote Proctored Online Examination"
+  disclosure). DSU was added to CONFIRMED_EXAM_MODE as 'Online' with that citation, so 6 + DSU = the brief's 7.
+  Corrected in round 2 (QA F5): this is not wording-neutral. Confirming DSU adds two rendered facts, both backed by
+  M6: "Exams: Online" in the DSU hub Quick Facts, and "Online classes; Online exams" on the DSU profile. The
+  confirmation depends on Q80: B2 (audits/verify/b2-official-urls-2026-11-28.md) still holds dsuonline.com UNVERIFIED as
+  DSU's official site. If Q80 comes back "no", remove DSU from CONFIRMED_EXAM_MODE. DSU's older "from home" and
+  "via webcam from home or office" lines, which M6 does not support, belong to deferred item (4).
+- **VIT:** already 'Exam Centre' since 3.4C1 (live 16 Nov, a6d3771), sourced to registration.vitonline.in in the audit
+  CSV. Nothing to change. The 22 confirmed rows are untouched.
+- **Where it renders, what changed:** SectionExams "Exam Mode", SectionClasses "Assessments", SectionAbout intro (the
+  "with no mandatory campus visits" clause is dropped for the set), UniProgramBody FAQ, UniSpecBody two FAQs,
+  UniversityPageClient FAQ "How are exams conducted" and both "Exam Mode" stat cells ("Ask our counsellor"),
+  ComparisonTable "Online Exam" (neutral dash, not a green tick), compare-answers row and FAQ, university-answers Q7.
+- **Page-content JSON:** mode, proctoring, webcam and ID-for-proctoring sentences removed from the exams sections of
+  dy-patil, nmims, sharda and shoolini MBA hubs, the DY Patil work-while-studying FAQ, the NMIMS hero ("runs entirely
+  online with proctored exams") and the Shoolini classes body ("no mandatory campus visit"). Shoolini's exams body now
+  states what its methodology PDF says (both modes described). Graphic Era, Mody and Sathyabama JSON had no exam claim.
+- **Left alone, flagged:** the 30-40% / 60-70% weighting sentences in the DY Patil, Sharda and Shoolini exams bodies
+  look templated (B3 batch 2 called the same split typed, not sourced); out of B7 scope. lib/specFaqs.ts says "Exams are
+  online and AI-proctored from home" for all universities on /programs and MBA spec hubs; generic, also false for VIT and
+  BITS. The NMIMS tagline "slot-based online exams" in lib/data.ts is not rendered by any page. The other ~111 records
+  with no examModeSource still print the default wording, as the audit's draft notes; that widening is a separate decision.
 ## 2026-11-28 · A6: 28 Nov guard check, clicks half PASS
 
 - **What:** weekly Search Console clicks on pages not containing /tools (Windsor, ISO weeks): W45 144, W46 187, W47 308, W48 partial 165 (23-25 Nov).

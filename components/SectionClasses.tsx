@@ -1,6 +1,6 @@
 import type { University } from '@/lib/data'
 import { Wifi, Video, Clock, Monitor, FileText } from 'lucide-react'
-import { isExamCentre, EXAM_CENTRE_LINE } from '@/lib/exam-mode'
+import { isExamCentre, EXAM_CENTRE_LINE, isExamModeUnverified, EXAM_MODE_COUNSELLOR_LINE } from '@/lib/exam-mode'
 
 interface Props {
   u: University
@@ -17,7 +17,7 @@ export default function SectionClasses({ u, program, cleanName }: Props) {
     { icon: Video, label: 'Live Sessions', desc: 'Live online sessions with faculty. Timings and recording access are set by the university, so confirm both before you enrol.' },
     { icon: Clock, label: 'Weekly Time', desc: `${cleanName} sets the weekly study load for its ${program}. Ask for the expected hours per week in writing if you work full-time.` },
     { icon: Monitor, label: 'LMS Access', desc: 'Lecture recordings, study materials, assignments, and discussion forums on the university LMS portal.' },
-    { icon: FileText, label: 'Assessments', desc: isExamCentre(u) ? EXAM_CENTRE_LINE : `${u.examMode} assessments. No mandatory campus visits for exams in most semesters.` },
+    { icon: FileText, label: 'Assessments', desc: isExamModeUnverified(u) ? EXAM_MODE_COUNSELLOR_LINE : isExamCentre(u) ? EXAM_CENTRE_LINE : `${u.examMode} assessments. No mandatory campus visits for exams in most semesters.` },
     { icon: Wifi, label: 'Connectivity', desc: 'Any device with a stable internet connection. Mobile apps available for on-the-go learning.' },
   ]
 

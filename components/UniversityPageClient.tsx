@@ -29,7 +29,7 @@ import { stripLinks } from '@/lib/link-markup'
 import FirstHandUniversitySections from '@/components/FirstHandUniversitySections'
 import { FirstHandText } from '@/components/FirstHandShared'
 import OwnerMbaSentence from '@/components/OwnerMbaSentence'
-import { isExamCentre, EXAM_CENTRE_LINE, isExamModeConfirmed } from '@/lib/exam-mode'
+import { isExamCentre, EXAM_CENTRE_LINE, isExamModeConfirmed, isExamModeUnverified, EXAM_MODE_COUNSELLOR_LINE } from '@/lib/exam-mode'
 import { debBasis } from '@/lib/seo/deb-basis'
 import { programmeEligibility } from '@/lib/seo/display-guards'
 import UniversityCover from '@/components/UniversityCover'
@@ -162,7 +162,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
     }] : []),
     {
       q:`How are exams conducted at ${u.name}?`,
-      a: isExamCentre(u) ? `${EXAM_CENTRE_LINE} Internal assessment runs through assignments and quizzes, and the exam schedule is communicated through the university LMS.` : `${u.name} uses ${u.examMode} mode. No travel to exam centre is required. Assessments include internal assignments, projects, and online proctored exams via webcam from home or office. Exam schedule is communicated through the university LMS.`
+      a: isExamModeUnverified(u) ? `Assessments include internal assignments and end-semester exams. ${EXAM_MODE_COUNSELLOR_LINE}` : isExamCentre(u) ? `${EXAM_CENTRE_LINE} Internal assessment runs through assignments and quizzes, and the exam schedule is communicated through the university LMS.` : `${u.name} uses ${u.examMode} mode. No travel to exam centre is required. Assessments include internal assignments, projects, and online proctored exams via webcam from home or office. Exam schedule is communicated through the university LMS.`
     },
     {
       q:`Is ${u.name} ${displayProgram} valid for government jobs?`,
@@ -322,7 +322,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     { label: 'Total Fee', value: feeShort(displayProgram) ?? 'Contact our counsellor for current fee details' },
                     ...(emiShown(displayProgram) ? [{ label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` }] : []),
                     { label: 'Duration', value: pd?.duration || '2 Years' },
-                    { label: 'Exam Mode', value: u.examMode },
+                    { label: 'Exam Mode', value: isExamModeUnverified(u) ? 'Ask our counsellor' : u.examMode },
                   ].map(stat => (
                     <div key={stat.label} style={{padding:'10px 16px',background:'rgba(255,255,255,0.06)',border:'1px solid #1e2f45',borderRadius:'var(--r-sm)'}}>
                       <div className="text-[10px] text-ink-3 uppercase tracking-wider">{stat.label}</div>
@@ -847,7 +847,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     ...(u.nirfMgt && u.nirfMgt < 100 ? [{ label: 'NIRF Management', value: `#${u.nirfMgt}${u.nirfYear ? ` (${u.nirfYear})` : ''}` }] : []),
                     ...(u.naac ? [{ label: 'NAAC Grade', value: u.naacScore ? `${u.naac} (${u.naacScore})` : u.naac }] : []),
                     ...([u.city, u.state].filter(Boolean).length ? [{ label: 'Location', value: [u.city, u.state].filter(Boolean).join(', ') }] : []),
-                    { label: 'Exam Mode', value: u.examMode },
+                    { label: 'Exam Mode', value: isExamModeUnverified(u) ? 'Ask our counsellor' : u.examMode },
                     ...(programmeEligibility(u, displayProgram) ? [{ label: 'Eligibility', value: programmeEligibility(u, displayProgram)! }] : []),
                     ...(feeShort(displayProgram) ? [{ label: `${displayProgram} fee`, value: feeShort(displayProgram)! }] : []),
                     ...(emiShown(displayProgram) ? [{ label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` }] : []),
