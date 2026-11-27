@@ -43,9 +43,17 @@ select
   (select count(*) from information_schema.columns where table_name = 'wa_campaigns' and column_name = 'resumed_at') as resumed_at_col,
   (select count(*) from information_schema.columns where table_name = 'wa_consent' and column_name = 'obtained_on') as obtained_on_col,
   (select position('wa_campaign_recipients' in prosrc) > 0 from pg_proc where proname = 'wa_month_usage') as inbox_cap_separated,
-  (select bool_and(relrowsecurity) from pg_class where relname in ('wa_lists','wa_list_members','wa_templates','wa_campaigns','wa_campaign_recipients')) as rls_on;
--- expect 1, 1, true, true
+  (select bool_and(relrowsecurity) from pg_class where relname in ('wa_lists','wa_list_members','wa_templates','wa_campaigns','wa_campaign_recipients')) as rls_on,
+  (select count(*) from pg_class where relname in ('wa_lists','wa_list_members','wa_templates','wa_campaigns','wa_campaign_recipients')) as new_tables,
+  (select count(*) from information_schema.role_table_grants
+    where table_name in ('wa_lists','wa_list_members','wa_templates','wa_campaigns','wa_campaign_recipients')
+      and grantee in ('anon','authenticated')) as api_grants;
+-- expect 1, 1, true, true, 5, 0
 ```
+
+The 16 includes `wa_list_conversations`, which existed before. The other checks in the third query catch a run that stopped halfway.
+
+Never re-run the Phase 2 file (`20261202120000_whatsapp_inbox.sql`) after this one. It would put back the old inbox spend function, and campaign messages would count against the ₹500 cap again.
 
 If `campaigns_enabled` shows `true`, stop and tell me before anything else.
 
