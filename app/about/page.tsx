@@ -4,12 +4,12 @@ import Image from 'next/image'
 import { Shield, Award, Users, Phone, Mail, CheckCircle, XCircle, Database, BarChart2 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About edifyedu.in: India\'s Independent Online Education Guide',
+  title: { absolute: 'About edifyedu.in: Independent Online Degree Comparison' },
   description: 'edifyedu.in is India\'s independent guide to UGC DEB approved online degrees. No paid rankings. No university affiliations. We help students compare 125+ universities honestly.',
-  keywords: 'about edify, independent education guide india, ugc deb approved universities, honest online degree comparison, best online mba colleges in india, online mba india, nirf ranked online universities, naac a++ online university, online mba for working professionals, top 10 mba colleges in india',
+  keywords: 'about edifyedu.in, independent education guide india, ugc deb approved universities, honest online degree comparison, best online mba colleges in india, online mba india, nirf ranked online universities, naac a++ online university, online mba for working professionals, top 10 mba colleges in india',
   alternates: { canonical: 'https://edifyedu.in/about' },
   openGraph: {
-    title: 'About edifyedu.in: India\'s Independent Online Education Guide',
+    title: 'About edifyedu.in: Independent Online Degree Comparison',
     description: 'No paid rankings. No university affiliations. We help students compare 125+ UGC DEB approved online universities honestly.',
     url: 'https://edifyedu.in/about',
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About edifyedu.in: India\'s Independent Online Education Guide',
+    title: 'About edifyedu.in: Independent Online Degree Comparison',
     description: 'No paid rankings. No university affiliations. Honest comparison of 125+ UGC DEB approved online universities.',
   },
 }
