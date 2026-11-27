@@ -8,9 +8,12 @@ export const CAMPAIGN_TOKEN_RE = /^[0-9a-f]{16}$/
 
 // The version of the terms text in lib/referrals/terms.ts. Stored with each
 // referral so a later change to the terms never rewrites an earlier promise.
-export const TERMS_VERSION = '2026-11-27'
+export const TERMS_VERSION = '2026-11-27.2'
 
-export const PROGRAMME_OPTIONS = ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'B.Com', 'MA', 'M.Com', 'MSc', 'BSc', 'DBA', 'Other', 'Not decided yet'] as const
+// Always offered after the programmes read from lib/data.ts (programme-options.ts).
+export const PROGRAMME_EXTRAS = ['Other', 'Not decided yet'] as const
+// Fallback when no list is passed (tests). The live form passes programmeOptions().
+export const PROGRAMME_OPTIONS = ['MBA', 'MCA', 'BBA', 'BCA', 'BA', 'B.Com', 'MA', 'M.Com', 'MSc', 'BSc', ...PROGRAMME_EXTRAS] as const
 export const UNI_UNDECIDED = 'Not decided yet, need guidance'
 
 // The form must be open this long before a submit counts as human.
@@ -27,7 +30,6 @@ export type ReferInput = {
   universityId: string
   note: string
   permission: boolean
-  termsAccepted: boolean
   waOptin: boolean
   campaign: string
   website: string // honeypot: people never see it, so it stays empty
@@ -47,7 +49,7 @@ export type CleanReferral = {
   campaign: string | null
 }
 
-export type FieldErrors = Partial<Record<'referrerName' | 'referrerPhone' | 'referredName' | 'referredPhone' | 'programme' | 'universityId' | 'note' | 'permission' | 'termsAccepted', string>>
+export type FieldErrors = Partial<Record<'referrerName' | 'referrerPhone' | 'referredName' | 'referredPhone' | 'programme' | 'universityId' | 'note' | 'permission', string>>
 
 const cleanText = (v: unknown, max: number) =>
   typeof v === 'string' ? v.replace(/[\u0000-\u001f\u007f<>]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, max) : ''
@@ -55,7 +57,7 @@ const cleanText = (v: unknown, max: number) =>
 // Letters in any script, spaces, dots, apostrophes and hyphens.
 const NAME_RE = new RegExp("^[\\p{L}\\p{M} .'-]{2,80}$", 'u')
 
-export function validateReferral(raw: Partial<ReferInput>, unis: UniOption[]):
+export function validateReferral(raw: Partial<ReferInput>, unis: UniOption[], programmes: readonly string[] = PROGRAMME_OPTIONS):
   { ok: true; value: CleanReferral } | { ok: false; errors: FieldErrors; bot?: boolean } {
   if (typeof raw.website === 'string' && raw.website.trim() !== '') return { ok: false, errors: {}, bot: true }
   if (typeof raw.elapsedMs !== 'number' || !(raw.elapsedMs >= MIN_FILL_MS)) return { ok: false, errors: {}, bot: true }
@@ -72,7 +74,7 @@ export function validateReferral(raw: Partial<ReferInput>, unis: UniOption[]):
   if (p2.kind !== 'valid') errors.referredPhone = 'Enter a 10-digit Indian mobile number.'
 
   const programme = cleanText(raw.programme, 40)
-  if (programme && !(PROGRAMME_OPTIONS as readonly string[]).includes(programme)) errors.programme = 'Choose a programme from the list.'
+  if (programme && !programmes.includes(programme)) errors.programme = 'Choose a programme from the list.'
 
   const uniId = cleanText(raw.universityId, 80)
   let university: string | null = null
@@ -85,7 +87,6 @@ export function validateReferral(raw: Partial<ReferInput>, unis: UniOption[]):
 
   const note = cleanText(raw.note, 1000)
   if (raw.permission !== true) errors.permission = 'Please confirm your friend agreed to be contacted.'
-  if (raw.termsAccepted !== true) errors.termsAccepted = 'Please read and accept the referral terms.'
 
   if (Object.keys(errors).length) return { ok: false, errors }
   const campaign = cleanText(raw.campaign, 16)

@@ -7,6 +7,7 @@ import { validateReferral, type ReferInput } from '@/lib/referrals/refer-rules'
 import { submitReferral, hashIp, notificationEmail } from '@/lib/referrals/refer-service'
 import { referralStore, referMockMode } from '@/lib/referrals/refer-store'
 import { universityOptions } from '@/lib/referrals/uni-options'
+import { programmeOptions } from '@/lib/referrals/programme-options'
 
 export const dynamic = 'force-dynamic'
 export const runtime = 'nodejs'
@@ -49,7 +50,7 @@ export async function POST(req: NextRequest) {
     if (!raw || typeof raw !== 'object') throw new Error('not an object')
   } catch { return reply({ ok: false, error: 'Could not read the form. Please try again.' }, 400) }
 
-  const v = validateReferral(raw, universityOptions())
+  const v = validateReferral(raw, universityOptions(), programmeOptions())
   if (!v.ok) {
     // A bot gets a plain refusal with nothing it can tune against.
     if (v.bot) return reply({ ok: false, error: 'Please wait a moment and submit again.' }, 400)

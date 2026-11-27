@@ -21,7 +21,7 @@ async function setup(extra: Record<string, unknown> = {}) {
   const store = mockReferralStore()
   const repo = mockReferralRepo(store)
   const v = validateReferral({ referrerName: 'Asha Rao', referrerPhone: '9876543210', referredName: 'Vikram Singh', referredPhone: '9123456789',
-    programme: 'MBA', universityId: '', note: '', permission: true, termsAccepted: true, waOptin: false, campaign: '', website: '', elapsedMs: MIN_FILL_MS + 1, ...extra }, [])
+    programme: 'MBA', universityId: '', note: '', permission: true, waOptin: false, campaign: '', website: '', elapsedMs: MIN_FILL_MS + 1, ...extra }, [])
   assert.ok(v.ok)
   const s = await submitReferral(store, v.value, null)
   assert.ok(s.ok)

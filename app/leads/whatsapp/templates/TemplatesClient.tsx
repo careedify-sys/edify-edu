@@ -64,7 +64,7 @@ function parts(t: TemplateRow) {
 // A neutral starting point: Edify as an independent comparison and counselling
 // service, no university named, no reward amount (none is configured).
 const STARTER = {
-  body: 'Know someone planning an online degree?\n\nedifyedu.in helps students compare online universities using public UGC, NAAC and NIRF data, and our counsellors help them choose a suitable programme.\n\nRefer a friend, colleague or family member. If they complete an eligible admission, you can receive a referral reward, paid within 7 days of confirmed admission. Terms apply.',
+  body: 'Know someone planning an online degree?\n\nedifyedu.in helps students compare online universities using public UGC, NAAC and NIRF data, and our counsellors help them choose a suitable programme.\n\nRefer a friend, colleague or family member. Our team will connect with you to explain the referral programme and its benefits. Terms apply.',
   footer: 'edifyedu.in · Tap Stop Promotions to opt out',
   buttons: [
     { type: 'URL', text: 'Refer a Friend', url: REFER_URL_VAR },

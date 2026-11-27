@@ -173,7 +173,7 @@ await test('4c. STOP records an opt-out and sends nothing', async () => {
 
 // ── 5. Referral with the campaign token ────────────────────────────────────
 const referInput = () => ({ referrerName: 'Asha Rao', referrerPhone: '98765 43210', referredName: 'Vikram Singh', referredPhone: '9123456789',
-  programme: 'MBA', universityId: '', note: 'Works weekdays, call after 6', permission: true, termsAccepted: true, waOptin: false, campaign: refToken, website: '', elapsedMs: MIN_FILL_MS + 1 })
+  programme: 'MBA', universityId: '', note: 'Works weekdays, call after 6', permission: true, waOptin: false, campaign: refToken, website: '', elapsedMs: MIN_FILL_MS + 1 })
 
 await test('5. referral with the campaign token gets an EDU-REF code; the same pair repeats the code', async () => {
   const v = validateReferral(referInput(), [])

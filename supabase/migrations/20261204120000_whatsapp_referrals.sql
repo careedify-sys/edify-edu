@@ -335,7 +335,7 @@ create trigger referral_reward_rules_set_updated_at before update on referral_re
 
 insert into wa_settings (key, value) values
   ('referral_disclosure',       '""'::jsonb),
-  ('referral_terms_version',    '"2026-11-27"'::jsonb),
+  ('referral_terms_version',    '"2026-11-27.2"'::jsonb),
   ('referral_confirm_whatsapp', 'false'::jsonb)
 on conflict (key) do nothing;
 
@@ -486,9 +486,9 @@ insert into wa_auto_rules (key, keywords, reply) values
   ('interested', array['yes','interested','i am interested','refer','i want to refer','refer a friend'],
    E'Thank you for your interest in our referral programme!\n\nYou can submit your friend''s details using the link below:\nhttps://edifyedu.in/refer\n\nAfter submitting the form, you will receive a unique referral ID for future communication.'),
   ('know_more', array['know more','more details','details','how does it work','info','tell me more'],
-   E'How the edifyedu.in referral programme works:\n\n1. Refer someone interested in pursuing an online degree.\n2. Our team provides education counselling and university comparison guidance.\n3. If the referred student completes an eligible admission, you qualify for the applicable referral reward.\n4. The reward is disbursed within 7 days of confirmed admission, subject to programme terms.\n\nSubmit a referral: https://edifyedu.in/refer'),
+   E'How the edifyedu.in referral programme works:\n\n1. Refer someone planning to pursue an online degree.\n2. Our education counsellor helps them explore suitable universities and programmes.\n3. Our team connects with you to explain the referral process, applicable benefits and eligibility details.\n\nSubmit a referral: https://edifyedu.in/refer'),
   ('reward', array['reward','payment','money','cash','how much','when will i get paid','amount'],
-   E'Eligible referral rewards are paid within 7 calendar days of a confirmed admission, subject to the referral programme terms. The amount depends on the programme, the university and the eligibility conditions, and our team confirms it with you after admission.\n\nTerms: https://edifyedu.in/refer#terms'),
+   E'Thank you for your interest in our referral programme. Our education counsellor will connect with you shortly to explain the referral process, applicable benefits and eligibility details.'),
   ('call_me', array['call me','call','callback','call back','please call','call me back'],
    E'Thank you. Our team will call you on this number soon.')
 on conflict (key) do nothing;

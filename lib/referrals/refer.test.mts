@@ -12,7 +12,7 @@ async function test(name: string, fn: () => Promise<void> | void) {
 const UNIS = [{ id: 'amity-university-online', name: 'Amity University Online' }]
 const base: ReferInput = {
   referrerName: 'Asha Rao', referrerPhone: '98765 43210', referredName: 'Vikram Singh', referredPhone: '+91 91234 56789',
-  programme: 'MBA', universityId: 'amity-university-online', note: 'Call after 6 pm', permission: true, termsAccepted: true, waOptin: false,
+  programme: 'MBA', universityId: 'amity-university-online', note: 'Call after 6 pm', permission: true, waOptin: false,
   campaign: '', website: '', elapsedMs: MIN_FILL_MS + 1,
 }
 const ok = (r: Partial<ReferInput> = {}) => {
@@ -41,11 +41,28 @@ await test('a university or programme not on the list is refused', () => {
   assert.ok(!v.ok); assert.ok(v.errors.universityId); assert.ok(v.errors.programme)
 })
 
-await test('terms must be accepted explicitly (QA F5)', () => {
-  const v = validateReferral({ ...base, termsAccepted: false }, UNIS)
-  assert.ok(!v.ok && !v.bot); assert.deepEqual(Object.keys(v.errors), ['termsAccepted'])
-  const w = validateReferral({ ...base, termsAccepted: 'yes' as unknown as boolean }, UNIS)
-  assert.ok(!w.ok)
+await test('programme must come from the list passed in (Q56: options read from lib/data.ts)', () => {
+  const list = ['MBA', 'BBA', 'Other', 'Not decided yet']
+  assert.ok(validateReferral({ ...base, programme: 'BBA' }, UNIS, list).ok)
+  const v = validateReferral({ ...base, programme: 'MCA' }, UNIS, list)
+  assert.ok(!v.ok); assert.deepEqual(Object.keys((v as { errors: object }).errors), ['programme'])
+})
+
+await test('no terms or WhatsApp tick is required (Q56 field list)', () => {
+  const { waOptin: _w, ...rest } = base as typeof base & { waOptin?: boolean }
+  assert.ok(validateReferral(rest, UNIS).ok)
+})
+
+await test('public referral text names no amount and no payment deadline (Q55/Q56)', async () => {
+  const { REFERRAL_TERMS, REFERRAL_PRIVACY } = await import('./terms')
+  const fs = await import('node:fs')
+  const sql = fs.readFileSync('supabase/migrations/20261204120000_whatsapp_referrals.sql', 'utf8')
+  const seeds = sql.slice(sql.indexOf('insert into wa_auto_rules'), sql.indexOf('on conflict (key) do nothing;', sql.indexOf('insert into wa_auto_rules')))
+  const page = fs.readFileSync('app/refer/page.tsx', 'utf8') + fs.readFileSync('app/refer/ReferForm.tsx', 'utf8')
+  for (const [name, text] of [['terms', [...REFERRAL_TERMS, ...REFERRAL_PRIVACY].join(' ')], ['auto-reply seeds', seeds], ['refer page', page]] as const) {
+    assert.doesNotMatch(text, /(₹|Rs\.?\s?\d|INR\s?\d|\b\d+\s*(calendar\s+)?days?\b)/i, name)
+  }
+  assert.ok(seeds.includes("Thank you for your interest in our referral programme. Our education counsellor will connect with you shortly to explain the referral process, applicable benefits and eligibility details."))
 })
 
 await test('missing permission, bad names and bad numbers give field errors', () => {

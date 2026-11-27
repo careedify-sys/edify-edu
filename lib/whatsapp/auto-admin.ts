@@ -108,8 +108,8 @@ export function mockAutoAdminRepo(): AutoAdminRepo & { state: { enabled: boolean
     enabled: false, off: new Set<string>(),
     rules: [
       { key: 'interested', enabled: true, keywords: ['yes', 'interested', 'i am interested', 'refer', 'i want to refer', 'refer a friend'], reply: "Thank you for your interest in our referral programme!\n\nYou can submit your friend's details using the link below:\nhttps://edifyedu.in/refer\n\nAfter submitting the form, you will receive a unique referral ID for future communication." },
-      { key: 'know_more', enabled: true, keywords: ['know more', 'more details', 'details', 'how does it work', 'info', 'tell me more'], reply: 'How the edifyedu.in referral programme works: (mock text)' },
-      { key: 'reward', enabled: true, keywords: ['reward', 'payment', 'money', 'cash', 'how much', 'when will i get paid', 'amount'], reply: 'Eligible referral rewards are paid within 7 calendar days of a confirmed admission. (mock text)' },
+      { key: 'know_more', enabled: true, keywords: ['know more', 'more details', 'details', 'how does it work', 'info', 'tell me more'], reply: 'How the edifyedu.in referral programme works:\n\n1. Refer someone planning to pursue an online degree.\n2. Our education counsellor helps them explore suitable universities and programmes.\n3. Our team connects with you to explain the referral process, applicable benefits and eligibility details.\n\nSubmit a referral: https://edifyedu.in/refer' },
+      { key: 'reward', enabled: true, keywords: ['reward', 'payment', 'money', 'cash', 'how much', 'when will i get paid', 'amount'], reply: 'Thank you for your interest in our referral programme. Our education counsellor will connect with you shortly to explain the referral process, applicable benefits and eligibility details.' },
       { key: 'call_me', enabled: true, keywords: ['call me', 'call', 'callback', 'call back', 'please call', 'call me back'], reply: 'Thank you. Our team will call you on this number soon.' },
     ] as AutoRule[],
   }

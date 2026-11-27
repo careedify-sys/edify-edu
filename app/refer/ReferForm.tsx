@@ -5,15 +5,14 @@ import { UNI_UNDECIDED, CAMPAIGN_TOKEN_RE, type UniOption, type FieldErrors } fr
 type Props = {
   programmes: string[]
   universities: UniOption[]
-  disclosure: string
   terms: string[]
   privacy: string[]
   termsVersion: string
 }
 
-const EMPTY = { referrerName: '', referrerPhone: '', referredName: '', referredPhone: '', programme: '', universityId: '', note: '', permission: false, termsAccepted: false, waOptin: false, website: '' }
+const EMPTY = { referrerName: '', referrerPhone: '', referredName: '', referredPhone: '', programme: '', universityId: '', note: '', permission: false, waOptin: false, website: '' }
 
-export default function ReferForm({ programmes, universities, disclosure, terms, privacy, termsVersion }: Props) {
+export default function ReferForm({ programmes, universities, terms, privacy, termsVersion }: Props) {
   const [f, setF] = useState(EMPTY)
   const [errors, setErrors] = useState<FieldErrors>({})
   const [status, setStatus] = useState<'idle' | 'sending' | 'error'>('idle')
@@ -101,11 +100,11 @@ export default function ReferForm({ programmes, universities, disclosure, terms,
       </fieldset>
 
       <fieldset className="space-y-4">
-        <legend className="text-lg font-bold text-navy mb-1">Your friend&apos;s details</legend>
+        <legend className="text-lg font-bold text-navy mb-1">Who are you referring?</legend>
         <div className="grid sm:grid-cols-2 gap-4">
-          <div><label className={label} htmlFor="referredName">Friend&apos;s name</label>
+          <div><label className={label} htmlFor="referredName">Their name</label>
             <input id="referredName" className={input} value={f.referredName} onChange={set('referredName')} maxLength={80} autoComplete="off" required {...aria('referredName')} />{err('referredName')}</div>
-          <div><label className={label} htmlFor="referredPhone">Friend&apos;s mobile number</label>
+          <div><label className={label} htmlFor="referredPhone">Their mobile number</label>
             <input id="referredPhone" className={input} value={f.referredPhone} onChange={set('referredPhone')} maxLength={16} inputMode="tel" autoComplete="off" placeholder="10-digit mobile" required {...aria('referredPhone')} />{err('referredPhone')}</div>
           <div><label className={label} htmlFor="programme">Programme <span className="font-normal text-slate-500">(optional)</span></label>
             <select id="programme" className={input} value={f.programme} onChange={set('programme')} {...aria('programme')}>
@@ -119,9 +118,7 @@ export default function ReferForm({ programmes, universities, disclosure, terms,
               {universities.map(u => <option key={u.id} value={u.id}>{u.name}</option>)}
             </select>{err('universityId')}</div>
         </div>
-        <div><label className={label} htmlFor="note">Anything else we should know <span className="font-normal text-slate-500">(optional)</span></label>
-          <textarea id="note" className={input} rows={3} value={f.note} onChange={set('note')} maxLength={1000} placeholder="For example, the best time to call" /></div>
-        <p className="text-xs text-slate-500">A preferred university helps the counsellor prepare. Your friend still compares options and makes their own choice.</p>
+        <p className="text-xs text-slate-500">A preferred university helps the counsellor prepare. They still compare options and make their own choice.</p>
       </fieldset>
 
       {/* Honeypot: hidden from people and screen readers. */}
@@ -133,16 +130,11 @@ export default function ReferForm({ programmes, universities, disclosure, terms,
       <div className="space-y-3">
         <label className="flex gap-3 items-start text-sm text-navy">
           <input type="checkbox" className="mt-1 w-4 h-4 accent-[#B8892A]" checked={f.permission} onChange={set('permission')} {...aria('permission')} />
-          <span>My friend agreed that I can share their name and number with Edify, and that Edify can contact them about education guidance.</span>
+          <span>The person I am referring agreed that I can share their name and number with Edify, and that Edify can contact them about education guidance.</span>
         </label>{err('permission')}
-        <label className="flex gap-3 items-start text-sm text-slate-700">
-          <input type="checkbox" className="mt-1 w-4 h-4 accent-[#B8892A]" checked={f.waOptin} onChange={set('waOptin')} />
-          <span>Send me a WhatsApp message confirming my referral ID (optional).</span>
-        </label>
       </div>
 
       <div className="bg-[#f1f5f9] rounded-xl p-4 text-sm text-slate-700 space-y-3">
-        <p>{disclosure}</p>
         <details id="terms">
           <summary className="cursor-pointer font-semibold text-navy">Referral terms (version {termsVersion})</summary>
           <ul className="list-disc pl-5 mt-2 space-y-1">{terms.map((t, i) => <li key={i}>{t}</li>)}</ul>
@@ -153,11 +145,6 @@ export default function ReferForm({ programmes, universities, disclosure, terms,
           <p className="mt-2">Read the full <a href="/privacy-policy" className="text-[#f97316] underline">privacy policy</a>.</p>
         </details>
       </div>
-
-      <label className="flex gap-3 items-start text-sm text-navy">
-        <input type="checkbox" className="mt-1 w-4 h-4 accent-[#B8892A]" checked={f.termsAccepted} onChange={set('termsAccepted')} {...aria('termsAccepted')} />
-        <span>I have read and accept the referral terms (version {termsVersion}).</span>
-      </label>{err('termsAccepted')}
 
       {message && <p className="text-sm text-[#ef4444]" role="alert">{message}</p>}
       <button type="submit" disabled={status === 'sending'} className="w-full sm:w-auto bg-[#f97316] hover:bg-orange-600 disabled:opacity-60 text-white font-bold rounded-xl px-8 py-3">
