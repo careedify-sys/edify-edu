@@ -254,7 +254,8 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
                 { label: 'Per Semester', vA: formatPublishedSemesterFee(feeA) ?? '', vB: formatPublishedSemesterFee(feeB) ?? '' },
               ] : []),
               ...(prog === 'MBA' ? [
-                { label: 'EMI from', vA: uA.emiFrom > 0 ? formatINR(uA.emiFrom) + '/mo' : 'On request', vB: uB.emiFrom > 0 ? formatINR(uB.emiFrom) + '/mo' : 'On request' },
+                // B3 batch 18: an EMI figure only beside a published fee (feeA/feeB from getExactFee).
+                { label: 'EMI from', vA: uA.emiFrom > 0 && feeA.kind !== 'none' ? formatINR(uA.emiFrom) + '/mo' : 'On request', vB: uB.emiFrom > 0 && feeB.kind !== 'none' ? formatINR(uB.emiFrom) + '/mo' : 'On request' },
               ] : []),
               { label: 'Duration', vA: pdA?.duration || (prog === 'MBA' || prog === 'MCA' ? '2 Years' : '3 Years'), vB: pdB?.duration || (prog === 'MBA' || prog === 'MCA' ? '2 Years' : '3 Years') },
               { label: 'Specialisations', vA: `${specCountA}`, vB: `${specCountB}` },

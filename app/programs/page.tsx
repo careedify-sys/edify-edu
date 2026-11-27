@@ -1,5 +1,7 @@
-'use client'
+// B3 batch 18: now a server component (it used no client hooks), so the cards read getExactFee through
+// lib/fee-short-map.ts. They printed the slim pd.fees string, often a placeholder range.
 import { getSortRank } from '@/lib/data-slim'
+import { getFeeShortMap } from '@/lib/fee-short-map'
 
 import Link from 'next/link'
 import { UNIS_SLIM, formatNirfBadge } from '@/lib/data-slim'
@@ -56,7 +58,7 @@ export default function ProgramsPage() {
                           ? <span className="text-orange-400 font-semibold">{formatNirfBadge(u, { prefer: 'university' })}</span>
                           : <span className="text-slate-400">Unranked</span>}
                       </div>
-                      <span className="text-slate-500">{u.programDetails?.[prog]?.fees || ''}</span>
+                      <span className="text-slate-500">{getFeeShortMap()[u.id]?.[prog] ?? 'Fee not published'}</span>
                     </div>
                   ))}
                   {unis.length > 3 && (

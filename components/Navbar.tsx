@@ -8,53 +8,8 @@ import { UNIS_SLIM } from '@/lib/data-slim'
 import { PROGRAM_META } from '@/lib/data-client'
 import type { Program } from '@/lib/data-client'
 
-/* ─── Shipped universities sorted by traffic rank (GSC-curated) ────────────
-   // trafficRank manually curated. Update monthly from GSC.
-   // See scripts/phase-5-rules-memo.md Rule #14.
-   ─────────────────────────────────────────────────────────────────────────── */
-const TRAFFIC_ORDER: string[] = [
-  'amity-university-online',                    // 1
-  'nmims-online',                               // 2
-  'manipal-university-jaipur-online',           // 3
-  'symbiosis-university-online',                // 4
-  'lovely-professional-university-online',      // 5
-  'jain-university-online',                     // 6
-  'upes-online',                                // 7
-  'chandigarh-university-online',               // 8
-  'sikkim-manipal-university-online',           // 9
-  'shoolini-university-online',                 // 10
-  'amrita-vishwa-vidyapeetham-online',          // 11
-  'ignou-online',                               // 12
-  'dr-dy-patil-vidyapeeth-online',              // 13
-  'manipal-academy-higher-education-online',    // 14
-  'jaypee-university-online',                   // 15
-  'galgotias-university-online',                // 16
-  'uttaranchal-university-online',              // 17
-  'noida-international-university-online',      // 18
-  'sharda-university-online',                   // 19
-  'vignan-university-online',                   // 20
-  'alliance-university-online',                 // 21
-  'kurukshetra-university-online',              // 22
-  'dr-mgr-educational-research-institute-online', // 23
-  'arka-jain-university-online',                // 24
-  'assam-don-bosco-university-online',          // 25
-  'bharati-vidyapeeth-university-online',       // 26
-  'chitkara-university-online',                 // 27
-  'dayananda-sagar-university-online',          // 28
-  'amet-university-online',                     // 29
-  'bit-mesra-online',                         // 30
-  'icfai-university-online',                    // 31
-  'iift-online',                                // 32
-  'integral-university-online',                 // 33
-  'bits-pilani-work-integrated-online',         // 34
-  'op-jindal-global-university-online',         // 35
-]
-
-function formatFeeLakh(n: number): string {
-  if (n >= 100000) return `\u20b9${(n / 100000).toFixed(1)}L`
-  if (n >= 1000) return `\u20b9${Math.round(n / 1000)}K`
-  return `\u20b9${n}`
-}
+// TRAFFIC_ORDER lives in lib/nav-traffic-order.ts so the root layout can filter the fee map to it.
+import { TRAFFIC_ORDER } from '@/lib/nav-traffic-order'
 
 function nirfBadge(u: { nirf: number; nirfMgt?: number; naac: string }): { label: string; color: string } {
   const mgt = (u as any).nirfMgt
@@ -75,7 +30,10 @@ const PROGRAM_CATEGORIES = {
 }
 // TRENDING_SPECS removed in Phase 7.4 — replaced by full university scroll grid
 
-export default function Navbar() {
+// B3 batch 18: feeShort comes from the root layout (lib/fee-short-map.ts, getExactFee per programme). The
+// mega-menu cards printed the slim feeMin/feeMax in lakh, the MBA-led figure on every programme tab and a
+// placeholder range for many universities. A card with no published fee for the tab prints no fee.
+export default function Navbar({ feeShort = {} }: { feeShort?: Record<string, Partial<Record<string, string>>> }) {
   const [megaOpen, setMegaOpen]             = useState(false)
   const [activeProgram, setActiveProgram]   = useState('MBA')
   const [searchQuery, setSearchQuery]       = useState('')
@@ -297,9 +255,7 @@ export default function Navbar() {
                           {featuredForActive.map(u => {
                             const badge = nirfBadge(u)
                             const specCount = (u as any).specCount || 0
-                            const feeRange = u.feeMin === u.feeMax
-                              ? formatFeeLakh(u.feeMin)
-                              : `${formatFeeLakh(u.feeMin)} - ${formatFeeLakh(u.feeMax)}`
+                            const feeRange = feeShort[u.id]?.[activeProgram] ?? null
                             return (
                               <Link
                                 key={u.id}
@@ -308,7 +264,7 @@ export default function Navbar() {
                                 style={{ cursor: 'pointer' }}
                                 onClick={() => setMegaOpen(false)}
                                 role="link"
-                                aria-label={`${u.name} - ${badge.label} - ${feeRange}`}
+                                aria-label={`${u.name} - ${badge.label}${feeRange ? ` - ${feeRange}` : ''}`}
                               >
                                 <div className="flex items-start gap-2.5 mb-2">
                                   {u.logo ? (
@@ -330,7 +286,7 @@ export default function Navbar() {
                                   <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold text-white" style={{ backgroundColor: badge.color }}>
                                     {badge.label}
                                   </span>
-                                  {u.feeMin > 0 && (
+                                  {feeRange && (
                                     <span className="text-[10px] text-slate-500">{feeRange}</span>
                                   )}
                                 </div>

@@ -1010,7 +1010,8 @@ export default async function CatchAllProgramPage(
                   </p>
                   <div className="grid sm:grid-cols-2 gap-3">
                     {unisWithSpec.map(u => {
-                      const pd = u.programDetails[program]
+                      // B3 batch 18: was pd.fees || u.feeMin, raw strings that carry placeholder ranges.
+                      const feeShort = formatExactFeeShort(getExactFee(u, program as Program)) ?? 'Fee not published'
                       return (
                         <Link
                           key={u.id}
@@ -1028,7 +1029,7 @@ export default async function CatchAllProgramPage(
                               {getShortUniversityName(u.name)}
                             </div>
                             <div className="text-xs text-ink-3">
-                              NAAC {u.naac}{nirfForProgramme(u, program) ? ` · ${nirfForProgramme(u, program)}` : ''} · {pd?.fees || formatFee(u.feeMin)}
+                              NAAC {u.naac}{nirfForProgramme(u, program) ? ` · ${nirfForProgramme(u, program)}` : ''} · {feeShort}
                             </div>
                           </div>
                           <ChevronRight size={14} className="text-amber shrink-0" />

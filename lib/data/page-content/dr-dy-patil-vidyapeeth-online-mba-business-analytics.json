@@ -63,10 +63,10 @@
       "body": "The Business Analytics specialisation builds both analytical and management skills:\n\n**Technical skills:**\n- Statistical Modelling: regression model specification, hypothesis test interpretation, time series decomposition, and ANOVA for A/B test analysis\n- Python Analytics: pandas data wrangling, NumPy calculations, matplotlib/seaborn visualisation, and scikit-learn model training basics\n- Predictive Analytics: classification model evaluation (confusion matrix, ROC), regression model accuracy assessment, and feature importance interpretation\n- Big Data: Hadoop/Spark architecture understanding, data lake vs data warehouse trade-offs, and ETL pipeline design at conceptual level\n\n**Applied skills:**\n- Data Visualization: executive dashboard design, KPI selection for different business functions, and data storytelling for board presentations\n- Optimization: LP model formulation for production planning, inventory optimisation model setup, and simulation-based decision analysis\n\n**Soft skills:** Translating analytics outputs into business recommendations, presenting statistical findings to non-technical stakeholders, managing analytics team sprint cycles, and negotiating data access with IT and compliance teams."
     },
     "comparisons": {
-      "body": "Comparing DPU-COL Online MBA Business Analytics against peer programmes:\n\n**vs Chandigarh University Online MBA Business Analytics:** CU at ₹1,75,125 with NIRF University #19 and PwC co-teaching is the strongest-ranked business analytics MBA online. CU wins on NIRF rank and fee. DPU at ₹1,89,400 holds NAAC A++ (vs CU A+) and includes edX certifications. For NIRF-sensitive employers, CU is the better choice. For candidates valuing NAAC A++ and edX bundling, DPU competes.\n\n**vs Amrita Online MBA Business Analytics:** Amrita at ₹1,76,000 to ₹2,60,000 with NIRF University #8 and NAAC A++ is the alternative. Amrita includes Grant Thornton co-branding on business analytics. Amrita wins on NIRF rank and industry co-branding.\n\n**vs LPU Online MBA Business Analytics:** LPU at approximately ₹2,00,000 includes placement assistance. DPU is at ₹1,89,400. Both hold NAAC A++.\n\n**vs JAIN University Online MBA Business Analytics:** Both are competitive in this segment."
+      "body": "Comparing DPU-COL Online MBA Business Analytics against peer programmes:\n\n**vs Chandigarh University Online MBA Business Analytics:** CU at ₹1,75,125 to ₹2,38,000 by certificate option and Early Bird discount with NIRF University #19 and PwC co-teaching is the strongest-ranked business analytics MBA online. CU wins on NIRF rank and fee. DPU at ₹1,89,400 holds NAAC A++ (vs CU A+) and includes edX certifications. For NIRF-sensitive employers, CU is the better choice. For candidates valuing NAAC A++ and edX bundling, DPU competes.\n\n**vs Amrita Online MBA Business Analytics:** Amrita at ₹1,76,000 to ₹2,60,000 with NIRF University #8 and NAAC A++ is the alternative. Amrita includes Grant Thornton co-branding on business analytics. Amrita wins on NIRF rank and industry co-branding.\n\n**vs LPU Online MBA Business Analytics:** LPU at ₹2,00,000 list, ₹1,46,240 to ₹1,61,600 by payment plan (lump sum to semester-wise) includes placement assistance. DPU is at ₹1,89,400. Both hold NAAC A++.\n\n**vs JAIN University Online MBA Business Analytics:** Both are competitive in this segment."
     },
     "fees": {
-      "body": "The DPU-COL Online MBA in Business Analytics has a total programme fee of ₹1,89,400 for Indian students (USD 3,600 for international students).\n\n**Semester-wise fee breakdown:**\n- Semester 1: ₹50,000\n- Semester 2: ₹50,000\n- Semester 3: ₹45,000\n- Semester 4: ₹44,400\n- **Total: ₹1,89,400**\n\n**Scholarship:** ₹10,000 off for full payment in one or two transactions within 15 days (effective fee ₹1,79,400).\n\n**Payment options:**\n- No Cost EMI: offered, no monthly figure published\n- Semester-wise payments as above\n- No application fee\n\n**Bundled:** edX certifications included at no extra cost.\n\nFees are indicative. Reconfirm at dypatilonline.com before payment."
+      "body": "EdifyEdu rechecks fees with Dr. D.Y. Patil Vidyapeeth, Pune – Centre for Online Learning (DPU-COL) Online every quarter. Please reconfirm current fees with our counsellor before any payment. Fees can change between intakes."
     },
     "certificate": {
       "body": "Graduates receive an MBA degree certificate with Business Analytics as the specialisation, issued by Dr. D.Y. Patil Vidyapeeth, Pune (DPU-COL) under UGC-DEB 2020 online mode standards.\n\nThe degree carries NAAC A++ accreditation and NIRF #41 University rank. It is valid for government and private sector recruitment. edX certifications supplement the MBA credential. DigiLocker issuance is standard."
@@ -78,7 +78,7 @@
       },
       {
         "question": "How does DPU Business Analytics compare to CU's analytics MBA?",
-        "answer": "CU at ₹1,75,125 with NIRF University #19 and PwC co-teaching is the stronger option on NIRF rank and fee. DPU at ₹1,89,400 holds NAAC A++ (vs CU A+) and includes edX certifications. Both are UGC-DEB approved. Choose CU if NIRF rank is the primary filter. Choose DPU if NAAC A++ and edX bundling matter more."
+        "answer": "CU at ₹1,75,125 to ₹2,38,000 by certificate option and Early Bird discount with NIRF University #19 and PwC co-teaching is the stronger option on NIRF rank. DPU at ₹1,89,400 holds NAAC A++ (vs CU A+) and includes edX certifications. Both are UGC-DEB approved. Choose CU if NIRF rank is the primary filter. Choose DPU if NAAC A++ and edX bundling matter more."
       },
       {
         "question": "Does the programme teach Python coding?",
@@ -101,7 +101,7 @@
         "You work in banking, retail, or IT consulting where analytics management roles are growing."
       ],
       "consider": [
-        "Your employer filters by NIRF top 20, CU (NIRF University #19) with PwC co-teaching at ₹1,75,125 is the stronger option.",
+        "Your employer filters by NIRF top 20, CU (NIRF University #19) with PwC co-teaching at ₹1,75,125 to ₹2,38,000 by certificate option and Early Bird discount is the stronger option.",
         "You need deep data engineering or ML engineering skills, a dedicated data science programme is more appropriate.",
         "Grant Thornton co-branding matters for your consulting context, Amrita's business analytics MBA at ₹1,76,000 to ₹2,60,000 includes this."
       ]
@@ -113,6 +113,7 @@
     "batchNumber": 21,
     "hasSyllabusData": true,
     "phase71Updated": "2026-04-22",
-    "claimSweep": "2026-09-17"
+    "claimSweep": "2026-09-17",
+    "factSweep": "2026-11-27"
   }
 }

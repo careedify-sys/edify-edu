@@ -5,7 +5,7 @@ import {
   MapPin, CheckCircle, BarChart2, ChevronRight, Award,
   Briefcase, TrendingUp, Building2, Plus, BookOpen, Users
 } from 'lucide-react'
-import { getUniversitiesByProgram, getPeerUniversitiesSlim, formatFeeSlim as formatFee } from '@/lib/data-slim'
+import { getUniversitiesByProgram, getPeerUniversitiesSlim } from '@/lib/data-slim'
 import { cleanCareerOutcome, getShortUniversityName } from '@/lib/format'
 import { getProgramContent } from '@/lib/content'
 import { SAMPLE_DEGREES, getSampleDegree } from '@/lib/sample-degrees'
@@ -75,9 +75,15 @@ interface Props {
   specHrefs: Record<string, string | null>
   /** Rishi's first-hand content, resolved on the server (lib/first-hand.ts). */
   firstHand?: ResolvedFirstHand
+  /**
+   * B3 batch 18: "Other universities" card fees per programme, keyed by peer id, from getExactFee on the
+   * server. The card printed the slim u.feeMin ("₹X+"), the MBA-led floor, on every programme tab.
+   * null or a missing entry prints no fee line.
+   */
+  peerFees?: Partial<Record<Program, Record<string, string | null>>>
 }
 
-export default function UniversityPageClient({ university: u, linkableProgrammes, verifyHref, programSchema, specHrefs, answerHtml, feePlanHtml, firstHand: fh }: Props) {
+export default function UniversityPageClient({ university: u, linkableProgrammes, verifyHref, programSchema, specHrefs, answerHtml, feePlanHtml, firstHand: fh, peerFees }: Props) {
   const [enquiryOpen, setEnquiryOpen] = useState(false)
   const [activeProgram, setActiveProgram] = useState<Program | null>(null)
   const [compareList, setCompareList] = useState<string[]>([])
@@ -807,8 +813,8 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                           {ou.nirfMgt && ou.nirfMgt > 0 && ou.nirfMgt < 200 ? `NIRF #${ou.nirfMgt} Mgmt · ` : ou.nirf > 0 && ou.nirf < 100 ? `NIRF #${ou.nirf} Univ · ` : ''}{ou.naac}
                         </div>
                         <div className="flex justify-between text-sm">
-                          {/* B3 batch 4: 18 records have no fee (feeMin 0), which printed "Fees: ₹0+". No fee line when there is no fee. */}
-                          {ou.feeMin > 0 ? <span className="text-ink-2">Fees: <strong>{formatFee(ou.feeMin)}+</strong></span> : <span />}
+                          {/* B3 batch 4 dropped "Fees: ₹0+"; batch 18 reads the server-built getExactFee figure (peerFees). */}
+                          {peerFees?.[displayProgram]?.[ou.id] ? <span className="text-ink-2">Fees: <strong>{peerFees[displayProgram]![ou.id]}</strong></span> : <span className="text-ink-3">Fee not published</span>}
                           <span className="text-amber font-semibold">View →</span>
                         </div>
                       </Link>
