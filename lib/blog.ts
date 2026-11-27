@@ -5738,7 +5738,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'online-mba-for-working-professionals-india',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'Online MBA for Working Professionals India 2026: Guide',
     seoTitle: 'Online MBA for Working Professionals 2026: How to Choose',
     metaDescription: 'An online MBA suits working professionals when the university is UGC-DEB entitled for your session. How to choose one around a full-time job.',
@@ -5868,7 +5868,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <thead><tr><th>University</th><th>NAAC plus NIRF</th><th>Fees (2 years)</th><th>Best For (Career Stage)</th></tr></thead>
   <tbody>
     <tr><td>NMIMS Global Online</td><td>NAAC A plus plus, NIRF Mgmt 24</td><td>Rs 1.96-2.20 lakh</td><td>BFSI plus consulting upgrade at 5-10 yrs experience</td></tr>
-    <tr><td><a href="/blog/jain-online-mba-review-2026" class="ilink">Jain online MBA fees breakdown</a></td><td>NAAC A plus plus, NIRF 73</td><td>Rs 1.60-2.98 lakh</td><td>Tech plus FinTech career switch</td></tr>
+    <tr><td><a href="/blog/jain-online-mba-review-2026" class="ilink">Jain online MBA fees breakdown</a></td><td>NAAC A plus plus, NIRF 2025 Management 73</td><td>Rs 1.60-2.98 lakh</td><td>Tech plus FinTech career switch</td></tr>
     <tr><td>Manipal University Jaipur Online</td><td>NAAC A plus</td><td>Rs 1.56-1.84 lakh</td><td>HR, Operations, Marketing functional growth</td></tr>
     <tr><td>Amity University Online</td><td>NAAC A plus</td><td>Rs 2.07-2.25 lakh</td><td>many specs, diverse career options</td></tr>
     <tr><td>Symbiosis SCDL (Pune)</td><td>NAAC A plus</td><td>Rs 1.10-1.65 lakh</td><td>Pune plus Mumbai BFSI plus HR</td></tr>
@@ -6756,15 +6756,15 @@ export const BLOG_POSTS: BlogPost[] = [
 <div style="background:linear-gradient(135deg,#fef3c7,#fff7ed);border:2px solid #f59e0b;border-radius:16px;padding:20px 24px;margin:0 0 28px;text-align:center"><p style="font-size:13px;font-weight:700;color:#92400e;margin:0 0 6px">DISCOUNT AVAILABLE</p><p style="font-size:15px;color:#78350f;margin:0 0 12px">Verified coupon: up to Rs 5,000 off MAHE Online MBA. Max amount unlocks every Tuesday and Saturday (IST).</p><a href="/coupons/mahe-online-mba-discount-coupon-2026" style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:14px;padding:10px 24px;border-radius:10px;text-decoration:none">View MAHE Coupon Code</a></div>
 
 
-<p>MAHE is the most expensive of the three Online Manipal campuses and the one most people mean when they say "Manipal MBA". NIRF ranked it third in India overall. It has Institution of Eminence status from the Ministry of Education. It is a NAAC A++ university. All of that matters if your goal is a degree that carries premium corporate recognition. Whether the Rs 2,92,000 fee is worth it compared to <a href="/universities/manipal-university-jaipur-online/mba">MUJ</a> at ₹1,84,000 depends entirely on which specialisation you want and what employer you are trying to impress.</p>
+<p>MAHE is the most expensive of the three Online Manipal campuses and the one most people mean when they say "Manipal MBA". It holds rank 3 in the NIRF 2025 University category. It has Institution of Eminence status from the Ministry of Education. It is a NAAC A++ university. All of that matters if your goal is a degree that carries premium corporate recognition. Whether the Rs 2,92,000 fee is worth it compared to <a href="/universities/manipal-university-jaipur-online/mba">MUJ</a> at ₹1,84,000 depends entirely on which specialisation you want and what employer you are trying to impress.</p>
     <p>All program details are sourced from the official MAHE MBA page on Online Manipal. Student feedback is from Online Manipal's own testimonials and its January 2026 learner survey.</p>
 
     <h2>About MAHE</h2>
-    <p>Manipal Academy of Higher Education was established in 1953 under a public-private partnership model. It received Deemed University status and was recognised as an Institution of Eminence by the Ministry of Education in 2020. NIRF ranked it 3rd in India overall in 2024 and 14th across all institutions. It holds NAAC A++ accreditation and features in QS World University Rankings at 901-950 globally and 197 in Asia.</p>
+    <p>Manipal Academy of Higher Education was established in 1953 under a public-private partnership model. It received Deemed University status and was recognised as an Institution of Eminence by the Ministry of Education in 2020. It holds rank 3 in the NIRF 2025 University category. It holds NAAC A++ accreditation and features in QS World University Rankings at 901-950 globally and 197 in Asia.</p>
 
     <div class="accred-grid">
       <div class="accred-pill"><div class="accred-name">NAAC A++</div><div class="accred-desc">Highest grade</div></div>
-      <div class="accred-pill"><div class="accred-name">NIRF #3</div><div class="accred-desc">India overall</div></div>
+      <div class="accred-pill"><div class="accred-name">NIRF #3</div><div class="accred-desc">University category, 2025</div></div>
       <div class="accred-pill"><div class="accred-name">IoE Status</div><div class="accred-desc">Ministry of Education</div></div>
       <div class="accred-pill"><div class="accred-name">QS Ranked</div><div class="accred-desc">Top 1000 globally</div></div>
     </div>
@@ -6839,7 +6839,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <h2>Who Should Choose MAHE</h2>
     <div class="persona-grid">
       <div class="persona-card yes"><div class="p-icon">&#128138;</div><div class="p-type">Healthcare or Pharma Professional</div><div class="p-desc">MAHE is the only campus offering Healthcare and Pharmaceutical Management specialisations. If you work in these sectors, the brand and specialisation combination is hard to match.</div></div>
-      <div class="persona-card yes"><div class="p-icon">&#127963;</div><div class="p-type">Seeking Premium Brand Recognition</div><div class="p-desc">NIRF #3, NAAC A++, Institution of Eminence. If your employer specifically values MAHE's name, the Rs 2,92,000 fee is the price of that premium.</div></div>
+      <div class="persona-card yes"><div class="p-icon">&#127963;</div><div class="p-type">Seeking Premium Brand Recognition</div><div class="p-desc">NIRF 2025 University #3, NAAC A++, Institution of Eminence. If your employer specifically values MAHE's name, the Rs 2,92,000 fee is the price of that premium.</div></div>
       <div class="persona-card yes"><div class="p-icon">&#128200;</div><div class="p-type">Working Professional with Experience</div><div class="p-desc">MAHE requires work experience or SOP video. The program is genuinely built around professionals who already have industry context to apply to coursework.</div></div>
       <div class="persona-card no"><div class="p-icon">&#9888;</div><div class="p-type">Fresh Graduate on a Budget</div><div class="p-desc">At Rs 2,92,000, MAHE is the priciest option. MUJ (₹1,84,000 list) or SMU (Rs 1,20,000) offer similar UGC recognition at lower cost if budget is a constraint.</div></div>
     </div>
@@ -8763,7 +8763,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'career-after-12th-arts-courses-jobs-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'Career After 12th Arts 2026: Best Courses and Jobs',
     h1Title: "Career Options After 12th Arts: Courses and Jobs Worth Considering",
     metaDescription: 'Career after 12th arts in India 2026: best courses, jobs with high salary, BA, BBA, BCA options, and UGC-approved online degrees.',
@@ -9423,7 +9423,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'best-mba-specialization-india-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'Best MBA Specialisation India 2026: Salary by Spec',
     h1Title: 'Best MBA Specialisation in India: Salary by Specialisation',
     metaDescription: 'Complete guide to best MBA specialization in India 2026. Compare MBA Finance vs Marketing vs Data Science vs HR by salary, demand, difficulty, and career outcomes.',
@@ -9451,7 +9451,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="callout-key"><strong>One-line frame for MBA specialisation choice 2026:</strong> Data Science (Rs 7-12 LPA fresher), Finance (Rs 6-11 LPA fresher), and Business Analytics (Rs 6-10 LPA fresher) lead at entry. Operations, International Business, and HR pay less at start but offer specific career advantages. Match specialisation to personality, target sector, and 10-year career goal, not just year-1 salary.</div>
 
-<h2>MBA Specialisations Ranked by Demand 2026</h2>
+<h2>MBA Specialisations and Demand Levels 2026</h2>
 <figure style="margin: 28px 0;">
   <img src="https://images.pexels.com/photos/7580710/pexels-photo-7580710.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Business professional writing notes at desk with multiple monitors in a modern office setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
   <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@rdne" target="_blank" rel="noopener nofollow">RDNE Stock project</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
@@ -9511,7 +9511,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <caption>Best online MBA programmes by specialisation May 2026</caption>
   <thead><tr><th>Specialisation</th><th>Best Online University</th><th>Fees (2 years)</th><th>USP</th></tr></thead>
   <tbody>
-    <tr><td>Data Science and Analytics</td><td>NMIMS Global Online</td><td>Rs 2.10 to 2.40 lakh</td><td>NIRF 24, Python plus R curriculum, IBM SkillsBuild access</td></tr>
+    <tr><td>Data Science and Analytics</td><td>NMIMS Global Online</td><td>Rs 2.10 to 2.40 lakh</td><td>NIRF 2025 Management 24, Python plus R curriculum, IBM SkillsBuild access</td></tr>
     <tr><td>Finance</td><td>NMIMS Global Online or MUJ Online</td><td>Rs 1.53 to 2.40 lakh</td><td>Strong CFA-aligned curriculum, BFSI placement network</td></tr>
     <tr><td>Marketing</td><td>JAIN Online or NMIMS Online</td><td>Rs 1.50 to 2.40 lakh</td><td>Brand management plus digital integrated, FMCG focus</td></tr>
     <tr><td>Digital Marketing</td><td>Amity Online or LPU Online</td><td>Rs 1.45 to 1.99 lakh</td><td>HubSpot plus Google Ads certification bundled</td></tr>
@@ -11630,7 +11630,7 @@ export const BLOG_POSTS: BlogPost[] = [
   // ── ONLINE MBA SALARY INDIA ────────────────────────────────────────────────
   {
     slug: 'online-mba-salary-india-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'Online MBA Salary in India 2026: What to Expect',
     seoTitle: 'Online MBA Salary India 2026: Average, Specialization-wise, ROI',
     metaDescription: 'Online MBA salary in India 2026: average packages by specialisation, university, and experience. What you can realistically expect.',
@@ -11701,8 +11701,8 @@ export const BLOG_POSTS: BlogPost[] = [
   <caption>Top online MBA university year-1 CTC outcomes 2026</caption>
   <thead><tr><th>University</th><th>Year 1 CTC (lateral)</th><th>Year 5 CTC</th><th>Best Sector</th></tr></thead>
   <tbody>
-    <tr><td>NMIMS Global Online (NIRF 24)</td><td>Rs 7 to 15 LPA</td><td>Rs 18 to 28 LPA</td><td>BFSI, Finance, Consulting</td></tr>
-    <tr><td>JAIN Online (NIRF 73)</td><td>Rs 5 to 10 LPA</td><td>Rs 12 to 22 LPA</td><td>Tech, FinTech, Analytics</td></tr>
+    <tr><td>NMIMS Global Online (NIRF 2025 Management 24)</td><td>Rs 7 to 15 LPA</td><td>Rs 18 to 28 LPA</td><td>BFSI, Finance, Consulting</td></tr>
+    <tr><td>JAIN Online (NIRF 2025 Management 73)</td><td>Rs 5 to 10 LPA</td><td>Rs 12 to 22 LPA</td><td>Tech, FinTech, Analytics</td></tr>
     <tr><td>Amity University Online</td><td>Rs 5 to 10 LPA</td><td>Rs 12 to 22 LPA</td><td>HR, Marketing, IB</td></tr>
     <tr><td>Manipal University Jaipur Online</td><td>Rs 5 to 10 LPA</td><td>Rs 12 to 20 LPA</td><td>Operations, Healthcare, Analytics</td></tr>
     <tr><td>Symbiosis SCDL</td><td>Rs 5 to 9 LPA</td><td>Rs 12 to 20 LPA</td><td>HR, Marketing, Finance</td></tr>
@@ -12538,7 +12538,7 @@ export const BLOG_POSTS: BlogPost[] = [
   // ── ONLINE MBA PUNE ────────────────────────────────────────────────────────
   {
     slug: 'online-mba-pune-university-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'Online MBA Pune 2026: SPPU, Symbiosis and Top Programs',
     seoTitle: 'Online MBA Pune University 2026: SPPU vs SCDL, Fees, Admission',
     metaDescription: 'Online MBA Pune university 2026: UGC-approved programs, fees, Symbiosis SSODL, Parul, and top options for Pune-based professionals.',
@@ -12594,7 +12594,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>Symbiosis SCDL PGDBA</td><td>NAAC A plus</td><td>Rs 1.10-1.65 lakh</td><td>Flexible scheduling, PGDBA mode</td></tr>
     <tr><td>NMIMS Online MBA</td><td>NAAC A plus plus, NIRF Mgmt 24</td><td>Rs 1.96-2.20 lakh</td><td>Premium brand for Mumbai-Pune corridor BFSI</td></tr>
     <tr><td>Amity University Online</td><td>NAAC A plus</td><td>Rs 2.07-2.25 lakh</td><td>many specialisations, IBM partnership</td></tr>
-    <tr><td>JAIN Online (Bangalore)</td><td>NAAC A plus plus, NIRF 73</td><td>Rs 1.60-2.98 lakh</td><td>FinTech plus Data Science specs</td></tr>
+    <tr><td>JAIN Online (Bangalore)</td><td>NAAC A plus plus, NIRF 2025 Management 73</td><td>Rs 1.60-2.98 lakh</td><td>FinTech plus Data Science specs</td></tr>
     <tr><td>MUJ Online MBA</td><td>NAAC A plus</td><td>Rs 1.56-1.84 lakh</td><td>HR, Marketing, Operations</td></tr>
     <tr><td><a href="/universities/bharati-vidyapeeth-university-online">Bharati Vidyapeeth</a> Online (Pune)</td><td>NAAC A plus</td><td>Rs 1.68-1.78 lakh</td><td>Pune local brand recognition</td></tr>
   </tbody>
@@ -13222,7 +13222,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-after-engineering-india-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'MBA After Engineering India 2026: Worth It? Best Specs',
     seoTitle: 'MBA After Engineering India 2026: Worth It? Best Specialisations',
     metaDescription: 'MBA after engineering in India 2026: is it worth it, best specialisations for engineers, salary jump, and top colleges to consider.',
@@ -13356,7 +13356,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <caption>Best online MBA programmes for engineers May 2026</caption>
   <thead><tr><th>University</th><th>NAAC / NIRF</th><th>Fees</th><th>USP for Engineers</th></tr></thead>
   <tbody>
-    <tr><td>NMIMS Global Online MBA Data Science</td><td>NAAC A plus plus, NIRF 24</td><td>Rs 1.96-2.20 lakh</td><td>Strongest tech analytics curriculum</td></tr>
+    <tr><td>NMIMS Global Online MBA Data Science</td><td>NAAC A plus plus, NIRF 2025 Management 24</td><td>Rs 1.96-2.20 lakh</td><td>Strongest tech analytics curriculum</td></tr>
     <tr><td>JAIN Online MBA AI plus FinTech</td><td>NAAC A plus plus, NIRF 2025 Management 73</td><td>Rs 1.60-2.98 lakh</td><td>Cloud plus AI specialisations</td></tr>
     <tr><td>Chandigarh University MBA Data Science and AI</td><td>NAAC A plus</td><td>Rs 1.75 lakh</td><td>AWS plus Azure certifications bundled</td></tr>
     <tr><td>Amity Online MBA IT Management</td><td>NAAC A plus</td><td>Rs 2.07-2.25 lakh</td><td>many specs, IBM SkillsBuild partnership</td></tr>
@@ -16231,7 +16231,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-scope-india-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'MBA Scope in India 2026: Hiring Data Nobody Publishes',
     seoTitle: 'MBA Scope India 2026: Sector Hiring Data and Brand x Spec Salary Map',
     metaDescription: 'MBA scope India 2026: actual FY26 sector hiring numbers, growing vs shrinking industries, brand x specialisation salary matrix, online MBA outcomes.',
@@ -16247,12 +16247,12 @@ export const BLOG_POSTS: BlogPost[] = [
     relatedUniversities: ["nmims-online","amity-university-online","jain-university-online","manipal-university-jaipur-online","chandigarh-university-online"],
     faqs: [
       { q: 'What is the scope of MBA in India in 2026?', a: 'MBA graduates in India have job opportunities across 7 main sectors: BFSI (largest hirer), consulting, IT and product management, FMCG, e-commerce, healthcare, and manufacturing. The scope is widening for online MBA graduates from UGC-DEB approved universities.' },
-      { q: 'Which MBA specialisation has the best scope in India in 2026?', a: 'By 2026 NASSCOM and LinkedIn India hiring index: Business Analytics and Data Science MBA tops on demand (28 percent YoY growth), followed by Finance (BFSI hiring strong post RBI rate cuts), Product Management (15 percent YoY), Marketing with Digital focus, and Pharmaceutical and Healthcare Management. Operations MBA is stable. HR MBA is the slowest growing in 2026. Sector demand changes faster than degree duration, so verify hiring data within 6 months of enrollment.' },
-      { q: 'Is online MBA scope good in India in 2026?', a: 'Yes for working professionals with 2-plus years of experience. The legal validity is identical to campus MBA when the programme is UGC-DEB approved. Employer perception has shifted significantly since 2022: 78 percent of HR managers surveyed by Naukri.com in 2025 said they accept online MBA from NAAC A or A+ universities for promotion eligibility. The remaining 22 percent still prefer campus MBA, mostly for fresher hiring. For mid-career professionals, the mode of MBA matters less than the brand and your existing track record.' },
+      { q: 'Which MBA specialisation has the best scope in India in 2026?', a: 'Business Analytics and Data Science MBA tops on demand, followed by Finance (BFSI hiring strong post RBI rate cuts), Product Management, Marketing with Digital focus, and Pharmaceutical and Healthcare Management. Operations MBA is stable. HR MBA is the slowest growing in 2026. Sector demand changes faster than degree duration, so verify hiring data within 6 months of enrollment.' },
+      { q: 'Is online MBA scope good in India in 2026?', a: 'Yes for working professionals with 2-plus years of experience. The legal validity is identical to campus MBA when the programme is UGC-DEB approved. For mid-career professionals, the mode of MBA matters less than the brand and your existing track record.' },
       { q: 'What salary can I expect after MBA in India in 2026?', a: 'Freshers from tier-1 IIMs and ISB: Rs 25 to 35 LPA median. Tier-1 private (IIFT, SP Jain): Rs 12 to 18 LPA. Tier-2 government and private B-schools: Rs 6 to 10 LPA. UGC-DEB approved online MBA (with prior work experience): Rs 4 to 9 LPA for first role post-MBA, but typically used for promotion rather than fresh placement. Salary scales 8 to 12 percent annually with strong execution.' },
-      { q: 'Which sectors are SHRINKING for MBA hires in 2026?', a: 'Traditional IT services (TCS, Infosys, Wipro) MBA hiring is down 18 percent YoY according to NASSCOM 2025 Q4 data. Telecom MBA hiring has flattened post-Jio consolidation. Print media and traditional advertising MBA roles have shrunk 25 percent over 3 years. Pure consulting (McKinsey, BCG, Bain) hiring is stable but more competitive. The growth sectors are SaaS product, BFSI digital banking, climate and ESG, and pharma-tech.' },
+      { q: 'Which sectors are SHRINKING for MBA hires in 2026?', a: 'Traditional IT services (TCS, Infosys, Wipro) MBA hiring is shrinking. Telecom MBA hiring has flattened post-Jio consolidation. Print media and traditional advertising MBA roles have shrunk. Pure consulting (McKinsey, BCG, Bain) hiring is stable but more competitive. The growth sectors are SaaS product, BFSI digital banking, climate and ESG, and pharma-tech.' },
       { q: 'Does the mode of MBA (online, campus, executive) affect long-term salary?', a: 'Yes for the first 3 years post-MBA, then it diverges by performance not by mode. Tier-1 campus MBA freshers earn more than online MBA freshers in year 1, and the gap narrows over time. By year 10, role and skill outweigh original MBA mode. Performance reviews and lateral moves are what compound. The exception is consulting (McKinsey, BCG) and IB roles, where tier-1 campus MBA remains a near-mandatory filter even at senior levels.' },
-      { q: 'What are the emerging MBA career paths in India 2026 that nobody talks about?', a: 'Three under-reported tracks. First, ESG and Climate Tech roles at corporates and ratings agencies (Rs 12 to 25 LPA mid-career, growing 40 percent YoY). Second, AI Operations Manager roles at SaaS companies (translating AI capabilities into business workflows, Rs 18 to 35 LPA). Third, D2C brand operator roles at consumer startups (Mamaearth, boAt, Nykaa-type companies, Rs 14 to 28 LPA with equity). These rarely show up in standard MBA scope articles.' }
+      { q: 'What are the emerging MBA career paths in India 2026 that nobody talks about?', a: 'Three under-reported tracks. First, ESG and Climate Tech roles at corporates and ratings agencies (Rs 12 to 25 LPA mid-career). Second, AI Operations Manager roles at SaaS companies (translating AI capabilities into business workflows, Rs 18 to 35 LPA). Third, D2C brand operator roles at consumer startups (Mamaearth, boAt, Nykaa-type companies, Rs 14 to 28 LPA with equity). These rarely show up in standard MBA scope articles.' }
     ],
     content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, edifyedu.in.</em></p>
 
@@ -16279,24 +16279,24 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Standard scope articles only cover the first two and treat them as one number. We separate them below.</p>
 
-<h2>Sector-by-Sector Hiring Data: What FY26 Actually Looks Like</h2>
+<h2>Sector-by-Sector Hiring Direction in 2026</h2>
 
-<p>The NASSCOM Q1 2026 tracker, LinkedIn India Hiring Index (April 2026), and NIRF 2024 placement data combine to give the clearest sector picture available outside private B-school placement reports.</p>
+<p>The table gives the direction of MBA hiring by sector, not a measured growth rate.</p>
 
 <table>
-  <caption>MBA hiring growth by sector in India 2026</caption>
-  <thead><tr><th>Sector</th><th>YoY hiring growth</th><th>Demand direction</th></tr></thead>
+  <caption>MBA hiring direction by sector in India 2026</caption>
+  <thead><tr><th>Sector</th><th>Demand direction</th></tr></thead>
   <tbody>
-    <tr><td>BFSI (banking, NBFCs, insurance)</td><td>+12 percent</td><td>Growing</td></tr>
-    <tr><td>Business analytics and AI ops</td><td>+28 percent</td><td>Fastest growing</td></tr>
-    <tr><td>Product management (SaaS, B2B tech)</td><td>+15 percent</td><td>Growing</td></tr>
-    <tr><td>Pharma and healthcare management</td><td>+10 percent</td><td>Growing</td></tr>
-    <tr><td>FMCG (brand, sales, supply chain)</td><td>+4 percent</td><td>Stable</td></tr>
-    <tr><td>E-commerce and quick commerce</td><td>+8 percent</td><td>Growing</td></tr>
-    <tr><td>Consulting (Big 4 plus MBB)</td><td>0 percent</td><td>Flat</td></tr>
-    <tr><td>Traditional IT services</td><td>-18 percent</td><td>Shrinking</td></tr>
-    <tr><td>Telecom</td><td>-3 percent</td><td>Flat to declining</td></tr>
-    <tr><td>Media, print, traditional advertising</td><td>-12 percent</td><td>Shrinking</td></tr>
+    <tr><td>BFSI (banking, NBFCs, insurance)</td><td>Growing</td></tr>
+    <tr><td>Business analytics and AI ops</td><td>Growing</td></tr>
+    <tr><td>Product management (SaaS, B2B tech)</td><td>Growing</td></tr>
+    <tr><td>Pharma and healthcare management</td><td>Growing</td></tr>
+    <tr><td>FMCG (brand, sales, supply chain)</td><td>Stable</td></tr>
+    <tr><td>E-commerce and quick commerce</td><td>Growing</td></tr>
+    <tr><td>Consulting (Big 4 plus MBB)</td><td>Flat</td></tr>
+    <tr><td>Traditional IT services</td><td>Shrinking</td></tr>
+    <tr><td>Telecom</td><td>Flat to declining</td></tr>
+    <tr><td>Media, print, traditional advertising</td><td>Shrinking</td></tr>
   </tbody>
 </table>
 
@@ -16316,11 +16316,11 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h3>ESG and Climate Finance roles</h3>
 
-<p>Indian corporates above Rs 1,000 Cr turnover are now legally required to file Business Responsibility and Sustainability Reports (SEBI mandate, 2023). This created a hiring boom for ESG analysts, climate finance specialists, and sustainability strategists. Banks, ratings agencies (CRISIL, ICRA), and consulting arms are the biggest hirers. Mid-career salary: Rs 12 to 25 LPA. Growth: 40 percent YoY. Skills needed: MBA Finance or MBA Sustainability plus GRI Standards or CFA ESG certificate.</p>
+<p>Indian corporates above Rs 1,000 Cr turnover are now legally required to file Business Responsibility and Sustainability Reports (SEBI mandate, 2023). This created a hiring boom for ESG analysts, climate finance specialists, and sustainability strategists. Banks, ratings agencies (CRISIL, ICRA), and consulting arms are the biggest hirers. Mid-career salary: Rs 12 to 25 LPA. Skills needed: MBA Finance or MBA Sustainability plus GRI Standards or CFA ESG certificate.</p>
 
 <h3>AI Operations Manager roles at SaaS companies</h3>
 
-<p>SaaS and product companies hire MBAs to bridge the AI capability layer with business workflows. Not a data science role, not a product role. Sits in between. Companies actively hiring: Freshworks, Postman, Razorpay, BrowserStack, Innovaccer, Darwinbox. Salary: Rs 18 to 35 LPA. Growth: very new, 80 percent YoY in 2025-26 from a small base. Skills needed: MBA plus exposure to LLMs, Python at intermediate level, and product management fundamentals.</p>
+<p>SaaS and product companies hire MBAs to bridge the AI capability layer with business workflows. Not a data science role, not a product role. Sits in between. Companies actively hiring: Freshworks, Postman, Razorpay, BrowserStack, Innovaccer, Darwinbox. Salary: Rs 18 to 35 LPA. Skills needed: MBA plus exposure to LLMs, Python at intermediate level, and product management fundamentals.</p>
 
 <h3>D2C brand operator roles</h3>
 
@@ -16330,14 +16330,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Online MBA Scope: The Honest 2026 Read</h2>
 
-<p>The Naukri.com 2025 HR survey of 1,200 hiring managers gave the clearest signal we have on online MBA acceptance.</p>
-
-<ul>
-  <li><strong>78 percent</strong> accept online MBA from NAAC A or A+ UGC-DEB approved universities for promotion eligibility.</li>
-  <li><strong>63 percent</strong> accept online MBA for lateral hires with 3-plus years of work experience.</li>
-  <li><strong>41 percent</strong> accept online MBA for fresher hiring (this is where the bias persists).</li>
-  <li><strong>22 percent</strong> require campus MBA across all hiring decisions. These are mostly traditional consulting firms and tier-1 BFSI fresher tracks.</li>
-</ul>
+<p>Employer acceptance of an online MBA depends on why you need the degree.</p>
 
 <p>The practical implication: for working professionals using MBA for in-place promotion or a lateral move with 2-plus years of experience, online MBA from a recognised university is broadly accepted. For freshers aiming at investment banking, McKinsey/BCG/Bain, or campus placement at HUL/P&amp;G, only a tier-1 campus MBA is reliable.</p>
 
@@ -16362,8 +16355,8 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Three claims to question.</p>
 
 <ol>
-  <li><strong>"MBA scope is always growing."</strong> Aggregated MBA hiring is growing 6-8 percent YoY in 2026, but the distribution is bimodal. Tier-1 and growth-sector hiring is up. Tier-3 college and old-economy hiring is flat or declining. The "always growing" claim hides this.</li>
-  <li><strong>"All MBA specialisations have equal scope."</strong> No. The 2026 difference between Business Analytics and HR specialisation hiring growth is 28 percent vs 3 percent according to LinkedIn data. Specialisation choice is not cosmetic.</li>
+  <li><strong>"MBA scope is always growing."</strong> The aggregate hides an uneven distribution. Tier-1 and growth-sector hiring is up. Tier-3 college and old-economy hiring is flat or declining. The "always growing" claim hides this.</li>
+  <li><strong>"All MBA specialisations have equal scope."</strong> No. Hiring demand for Business Analytics and for HR is not the same. Specialisation choice is not cosmetic.</li>
   <li><strong>"Online MBA is fully equivalent to campus."</strong> Legally yes (UGC-DEB confirms this). Practically no, for fresher campus placement at top consulting and BFSI. For mid-career promotions and lateral moves, mostly yes. The framing matters.</li>
 </ol>
 
@@ -16409,7 +16402,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Honest Gaps in This Guide</h2>
 
 <ul>
-  <li>Sector hiring data is FY25-Q4 to FY26-Q1. Q4 placements at IIMs typically conclude later in the year, so the year-end numbers may differ.</li>
+  <li>The sector table gives a direction only, not a measured growth rate.</li>
   <li>Online MBA acceptance varies sharply by industry. BFSI and IT are most accepting. Manufacturing and traditional consulting are least accepting.</li>
   <li>Tier-1 fresher salaries shown reflect campus placement averages, not 100 percent of graduates. The bottom decile at IIM-A is closer to Rs 18 LPA than the median Rs 28 LPA.</li>
 </ul>
@@ -20159,7 +20152,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'distance-mba-meaning-what-is-it-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'Distance MBA 2026: What It Is, Fees, and Complete Guide',
     seoTitle: 'Distance MBA 2026: Fees, Top Universities, Validity and How It Works',
     metaDescription: 'Distance MBA in India 2026: fees ₹66,000 to ₹2.25L. UGC-DEB validity, top universities, how exams work, online vs distance vs correspondence. Zero commission guide.',
@@ -22499,7 +22492,7 @@ export const BLOG_POSTS: BlogPost[] = [
   // 301 redirect configured in next.config.js
   {
     slug: 'online-mba-fee-comparison-india-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'Online MBA Courses Fees 2026: Complete Fee Comparison Across India',
     seoTitle: 'Online MBA Courses Fees 2026: All Universities Compared, ₹80K to ₹3.7L',
     metaDescription: 'Online MBA courses fees 2026: all UGC-DEB universities compared. From ₹80,200 (Galgotias) to ₹3,70,000 (Symbiosis). Semester-wise, EMI, lumpsum breakdowns. Zero commission.',
@@ -24661,7 +24654,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'courses-after-12th-science-complete-list-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'Courses After 12th Science 2026: PCM and PCB Complete',
     h1Title: "Courses After 12th Science: The Full List for PCM and PCB Students",
     metaDescription: `Complete guide to courses after 12th Science in India 2026: PCM, PCB, PCMB options, admission routes, fees, and career outcomes explained honestly.`,
@@ -24716,7 +24709,7 @@ export const BLOG_POSTS: BlogPost[] = [
   </tbody>
 </table>
 
-<p>One thing worth knowing: <a href="/blog/mba-after-engineering-india-2026" style="color:inherit;text-decoration:underline;text-underline-offset:2px">MBA after engineering</a> in India work in roles that do not require engineering skills, according to NASSCOM reports. Engineering is a solid degree, but it is not the only path. And it is not always the fastest path to a good income.</p>
+<p>One thing worth knowing: many engineering graduates in India move into roles that do not require engineering skills, and an <a href="/blog/mba-after-engineering-india-2026" style="color:inherit;text-decoration:underline;text-underline-offset:2px">MBA after engineering</a> is one common route. Engineering is a solid degree, but it is not the only path. And it is not always the fastest path to a good income.</p>
 <h2>PCB: Medicine and Life Sciences</h2>
 <p>NEET is the central entrance exam for all medical courses. With over 23 lakh candidates competing for roughly 1.09 lakh MBBS seats in 2024, the stakes are real.</p>
 <div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog06_pcb_courses_list.svg" alt="PCB courses after 12th: MBBS, BDS, Pharmacy, Nursing duration, entrance, salary" loading="lazy" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
@@ -39236,7 +39229,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <tr><th>University Tier</th><th>University Name</th><th>Total Fee (2-year)</th><th>Per Semester</th><th>Specialisation Type</th></tr>
 </thead>
 <tbody>
-<tr><td>UGC-valid</td><td>IGNOU</td><td>No total published</td><td>₹16,000 to ₹18,000</td><td>Finance electives, self-selected fintech focus</td></tr>
+<tr><td>UGC-valid</td><td>IGNOU</td><td>₹16,000 per semester (₹18,000 for the 3rd)</td><td>₹16,000 to ₹18,000</td><td>Finance electives, self-selected fintech focus</td></tr>
 <tr><td>Value tier</td><td>Chandigarh University</td><td>₹1,16,250 net</td><td>₹29,063 net</td><td>Fintech focus within finance</td></tr>
 <tr><td>Value tier</td><td>LPU Online</td><td>₹1,30,600 net</td><td>₹32,400 net</td><td>Fintech electives</td></tr>
 <tr><td>Mid tier</td><td>Symbiosis</td><td>₹1,57,500</td><td>Per AICTE structure</td><td>Fintech electives within finance</td></tr>
@@ -39452,7 +39445,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <tr><th>University Tier</th><th>University Name</th><th>Total Fee (2-year)</th><th>Per Semester</th><th>Specialisation Type</th></tr>
 </thead>
 <tbody>
-<tr><td>UGC-valid</td><td>IGNOU</td><td>No total published</td><td>₹16,000 to ₹18,000</td><td>Hospitality and tourism electives</td></tr>
+<tr><td>UGC-valid</td><td>IGNOU</td><td>₹16,000 per semester (₹18,000 for the 3rd)</td><td>₹16,000 to ₹18,000</td><td>Hospitality and tourism electives</td></tr>
 <tr><td>Value tier</td><td>Chandigarh University</td><td>₹1,16,250 net</td><td>₹29,063 net</td><td>Hospitality management focus</td></tr>
 <tr><td>Value tier</td><td>LPU Online</td><td>₹1,30,600 net</td><td>₹32,400 net</td><td>Hospitality electives</td></tr>
 <tr><td>Mid tier</td><td>MUJ Online Manipal</td><td>₹1,84,000</td><td>₹46,000</td><td>Services management</td></tr>
@@ -39615,7 +39608,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
   {
     slug: 'online-mba-logistics-management-india-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'Online MBA Logistics Management India 2026: Fees, Salary',
     h1Title: "Online MBA in Logistics Management: Universities, Fees and Career Paths",
     metaDescription: 'Online mba logistics management india 2026: top UGC-DEB approved colleges, verified fee ranges, career outcomes, port and warehouse career paths, honest verdict.',
@@ -39672,7 +39665,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <tr><th>University Tier</th><th>University Name</th><th>Total Fee (2-year)</th><th>Per Semester</th><th>Specialisation Type</th></tr>
 </thead>
 <tbody>
-<tr><td>UGC-valid</td><td>IGNOU</td><td>No total published</td><td>₹16,000 to ₹18,000</td><td>Operations and SCM electives</td></tr>
+<tr><td>UGC-valid</td><td>IGNOU</td><td>₹16,000 per semester (₹18,000 for the 3rd)</td><td>₹16,000 to ₹18,000</td><td>Operations and SCM electives</td></tr>
 <tr><td>Value tier</td><td>LPU Online</td><td>₹1,30,600 net</td><td>₹32,400 net</td><td>Logistics and SCM electives</td></tr>
 <tr><td>Value tier</td><td>Chandigarh University</td><td>₹1,16,250 net</td><td>₹29,063 net</td><td>Operations focus</td></tr>
 <tr><td>Mid tier</td><td>MUJ Online Manipal</td><td>₹1,84,000</td><td>₹46,000</td><td>Operations and supply chain</td></tr>
@@ -39885,7 +39878,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <tr><th>University Tier</th><th>University Name</th><th>Total Fee (2-year)</th><th>Per Semester</th><th>Specialisation Type</th></tr>
 </thead>
 <tbody>
-<tr><td>UGC-valid</td><td>IGNOU</td><td>No total published</td><td>₹16,000 to ₹18,000</td><td>Real estate electives within MBA</td></tr>
+<tr><td>UGC-valid</td><td>IGNOU</td><td>₹16,000 per semester (₹18,000 for the 3rd)</td><td>₹16,000 to ₹18,000</td><td>Real estate electives within MBA</td></tr>
 <tr><td>Value tier</td><td>Chandigarh University</td><td>₹1,16,250 net</td><td>₹29,063 net</td><td>Real estate management focus</td></tr>
 <tr><td>Value tier</td><td>LPU Online</td><td>₹1,30,600 net</td><td>₹32,400 net</td><td>Real estate specialisation</td></tr>
 <tr><td>Mid tier</td><td>MUJ Online Manipal</td><td>₹1,84,000</td><td>₹46,000</td><td>Real estate finance electives</td></tr>
@@ -43222,7 +43215,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'amity-vs-manipal-online-mba-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'Amity vs Manipal Online MBA 2026: Fees, NAAC, Placements Compared',
     seoTitle: 'Amity vs Manipal (MUJ) Online MBA 2026: Fees and Placement',
     metaDescription: 'Amity vs Manipal University Jaipur online MBA compared: fees ₹2.07L vs ₹1.56L, both NAAC A+, NIRF ranks, specialisations, placements. Commission-free verdict.',
@@ -43777,7 +43770,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
   },
   {
     slug: 'nmims-vs-symbiosis-online-mba-2026',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-28',
     title: 'NMIMS vs Symbiosis Online MBA 2026: Premium Programs Compared',
     seoTitle: 'NMIMS vs Symbiosis SSODL Online MBA 2026: Honest Comparison',
     metaDescription: 'NMIMS vs Symbiosis SSODL online MBA compared: fees ₹1.96L vs ₹3.15L, both NAAC A++, NIRF Management #24 vs University #24, specialisations, placements. Commission-free verdict.',

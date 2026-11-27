@@ -383,8 +383,8 @@ await test('end to end: signed POST through handleWebhookPost into the real sche
 
 await test('P2: inbox migration is idempotent and seeds verified settings', async () => {
   await db.exec(readFileSync(join(MIG_DIR, readdirSync(MIG_DIR).find(f => f.endsWith('whatsapp_inbox.sql'))!), 'utf8'))
-  // Phase 3 adds campaign_* keys; this test is about the Phase 2 set.
-  const keys = (await db.query<{ key: string }>(`select key from wa_settings where key not like 'campaign\\_%' order by key`)).rows.map(r => r.key)
+  // Phase 3 adds campaign_* keys and Phase 4 referral_* keys; this test is about the Phase 2 set.
+  const keys = (await db.query<{ key: string }>(`select key from wa_settings where key not like 'campaign\\_%' and key not like 'referral\\_%' order by key`)).rows.map(r => r.key)
   assert.deepEqual(keys, ['automation_enabled', 'billing_timezone', 'campaigns_enabled', 'cap_override', 'free_service_allowance', 'last_retention', 'last_sweep', 'monthly_cap_inr', 'rates', 'sending_enabled'])
   const rates = (await one<{ value: any }>(`select value from wa_settings where key = 'rates'`)).value
   assert.equal(rates.service, 0.115)
@@ -693,6 +693,9 @@ await test('QA R1: CRM blocks calls and messages from WhatsApp consent; enquiry-
 })
 
 await test('down migration removes everything it added and nothing else', async () => {
+  // Phase 4 first: its tables reference Phase 3's campaigns.
+  await db.exec(readFileSync(join(MIG_DIR, readdirSync(MIG_DIR).find(f => f.endsWith('whatsapp_referrals.down.sql'))!), 'utf8'))
+  assert.equal(await count(`select count(*) n from information_schema.tables where table_schema = 'public' and table_name like 'referral%'`), 0, 'Phase 4 tables removed')
   const before = await count(`select count(*) n from information_schema.tables where table_schema = 'public' and table_name not like 'wa\\_%'`)
   // Earlier tests re-run the Phase 2 file, which puts back its own function
   // bodies; re-apply Phase 3 so the rollback starts from the real end state.

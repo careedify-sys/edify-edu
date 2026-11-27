@@ -16,6 +16,10 @@
 //    batch per approved campaign. It does nothing unless the owner switched
 //    campaigns on and approved a campaign. Campaign recipient rows follow the
 //    same 24-month retention.
+// 6. Template status (Phase 4): reads every template's status from Meta once
+//    an hour while one is pending review, and once a day otherwise. The
+//    status webhook does this instantly once its field is subscribed (Q57);
+//    this keeps statuses right if it is not. Read-only at Meta, no cost.
 //
 // Auth: Vercel Cron sends `Authorization: Bearer $CRON_SECRET`. Anything else
 // gets 401. Responses and logs carry counts only.
@@ -28,6 +32,8 @@ import {
 } from '@/lib/whatsapp/store'
 import { supabaseCampaignRepo } from '@/lib/whatsapp/campaign-repo'
 import { runCampaignWorker } from '@/lib/whatsapp/campaign-worker'
+import { syncTemplates } from '@/lib/whatsapp/campaign-service'
+import type { Actor } from '@/lib/whatsapp/access'
 import { readGraphEnv } from '@/lib/whatsapp/graph'
 
 export const dynamic = 'force-dynamic'
@@ -65,7 +71,7 @@ export async function GET(req: NextRequest) {
   const started = Date.now()
   const counts = {
     retried: 0, completed: 0, failed: 0, busy: 0, errors: 0, purged: 0, exhausted: 0, optOuts: -1, retention: 'skipped',
-    marketingOptOuts: -1, campaign: 'skipped' as string, campaignSent: 0, campaignFailed: 0, campaignUnknown: 0, campaignRetention: -1,
+    marketingOptOuts: -1, templateSync: 'skipped' as string | number, campaign: 'skipped' as string, campaignSent: 0, campaignFailed: 0, campaignUnknown: 0, campaignRetention: -1,
   }
   try {
     const ids = await retryIds(sb, BATCH)
@@ -112,6 +118,7 @@ async function runCampaigns(sb: NonNullable<ReturnType<typeof whatsappServiceCli
   try {
     counts.marketingOptOuts = await repo.recordMarketingOptOuts()
     if (counts.retention === 'ran') counts.campaignRetention = await repo.retention()
+    await syncTemplateStatus(repo, counts, started)
     const w = await runCampaignWorker(repo, readGraphEnv(), fetch, started + CAMPAIGN_DEADLINE_MS)
     counts.campaign = w.blocked.length ? `${w.state}:${w.blocked.join(',')}` : w.state
     counts.campaignSent = w.sent
@@ -121,5 +128,22 @@ async function runCampaigns(sb: NonNullable<ReturnType<typeof whatsappServiceCli
     // 42883 / PGRST202: the Phase 3 migration has not run. Not an error for the sweep.
     counts.campaign = `error:${errorClass(err)}`
     console.warn('[whatsapp-sweep] campaign step failed', errorClass(err))
+  }
+}
+
+// The sweep runs every 5 minutes; the first run of each hour is the hourly slot.
+const SYSTEM: Actor = { id: 'system:sweep', role: 'owner' }
+const UNDER_REVIEW = new Set(['PENDING', 'IN_APPEAL', 'PENDING_DELETION'])
+async function syncTemplateStatus(repo: ReturnType<typeof supabaseCampaignRepo>, counts: Record<string, unknown>, started: number) {
+  try {
+    const env = readGraphEnv()
+    if (!env.token || !env.wabaId) { counts.templateSync = 'not_configured'; return }
+    const pending = (await repo.templates()).some(t => UNDER_REVIEW.has(t.status))
+    const hourly = new Date(started).getUTCMinutes() < 5
+    if (!(counts.retention === 'ran' || (pending && hourly))) { counts.templateSync = 'not_due'; return }
+    const r = await syncTemplates(repo, SYSTEM, env, fetch)
+    counts.templateSync = r.ok ? r.synced : 'error'
+  } catch (err) {
+    counts.templateSync = `error:${errorClass(err)}`
   }
 }

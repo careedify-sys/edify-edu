@@ -848,7 +848,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     },
     // B3: DSU home-page FAQ, CIA and SEE weighted 30:70.
     assessmentWeighting: { internal: 30, external: 70, source: 'dsuonline.com home page FAQ', checkedOn: '2026-11-18' },
-    logo: '/logos/university_logos/dsuonline-newlogo.svg',
+    logo: '/logos/university_logos/dayananda-sagar-university-online.webp',
     name: 'Dayananda Sagar University Online',
     abbr: 'DSUO',
     city: 'Bangalore',
@@ -1646,7 +1646,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       note: 'Only one scholarship can be used at a time.',
       source: 'Online Manipal MUJ MBA page and MUJ scholarship page, checked 2026-11-13',
     },
-    logo: '/logos/university_logos/muj-logo.svg',
+    logo: '/logos/university_logos/manipal-university-jaipur-online.webp',
     name: 'Manipal University Jaipur (MUJ) Online',
     abbr: 'MUJOM',
     city: 'Jaipur',
@@ -1789,7 +1789,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       }],
     },
     programFees: { bba: { fee: 77200 }, bca: { fee: 83200 }, mca: { fee: 74000 } }, // Sprint 2 verified 2026-08-04: BBA 77200 (yearly tuition 21000 + reg 1200 + exam 12000). BCA all-in: 83200 (yearly tuition 23000 + reg 1200 + exam 12000)
-    logo: '/logos/university_logos/galgotias-university-logo.svg',
+    logo: '/logos/university_logos/galgotias-university-online.webp',
     name: 'Galgotias University Online',
     abbr: 'GUO',
     city: 'Greater Noida',
@@ -2398,6 +2398,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'vignan-university-online',
+    logo: '/logos/university_logos/vignan-university-online.webp',
     programFees: { bca: { fee: 121000 }, mca: { fee: 90000 } }, // Sprint 2 verified 2026-08-04: BCA 121000 (tuition 108000 + 3 yrs x 4000 exam + reg 1000)
     name: "Vignan's Foundation for Science, Technology & Research Online",
     abbr: 'VFSTR',
@@ -2464,6 +2465,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'manonmaniam-sundaranar-university-online',
+    logo: '/logos/university_logos/manonmaniam-sundaranar-university-online.webp',
     name: 'Manonmaniam Sundaranar University Online',
     abbr: 'MSUO',
     city: 'Tirunelveli',
@@ -2954,7 +2956,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'vtu-online',
-    logo: '/logos/university_logos/visvesvaraya-tchnological-university.webp',
+    logo: '/logos/university_logos/vtu-online.webp',
     name: 'Visvesvaraya Technological University (VTU) Online',
     abbr: 'VTU',
     city: '',
@@ -3219,6 +3221,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'karnataka-state-open-university-online',
+    logo: '/logos/university_logos/karnataka-state-open-university-online.webp',
     name: 'Karnataka State Open University (KSOU) Online',
     abbr: 'KSOU',
     city: '',
@@ -3310,6 +3313,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'bharathidasan-university-online',
+    logo: '/logos/university_logos/bharathidasan-university-online.webp',
     name: 'Bharathidasan University Online',
     abbr: 'BUO',
     city: 'Tiruchirappalli',
@@ -3368,6 +3372,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'hindustan-institute-technology-online',
+    logo: '/logos/university_logos/hindustan-institute-technology-online.webp',
     name: 'Hindustan Institute of Technology and Science (CODE) Online',
     abbr: 'HITS',
     city: 'Chennai',
@@ -3422,6 +3427,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'guru-ghasidas-vishwavidyalaya-online',
+    logo: '/logos/university_logos/guru-ghasidas-vishwavidyalaya-online.webp',
     name: 'Guru Ghasidas Vishwavidyalaya (GGU) Online',
     abbr: 'GGV',
     city: '',
@@ -3587,6 +3593,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'marwadi-university-online',
+    logo: '/logos/university_logos/marwadi-university-online.svg',
     // Fees read 2026-10-30 from marwadiuniversity.online (linked from marwadiuniversity.ac.in as
     // "Apply Online Programs"). Indian students: BBA and B.Com Rs 79,000 one-time or Rs 15,000 x 6
     // semesters; MSc Mathematics Rs 49,000 one-time or Rs 15,000 x 4. SAARC and USD fees differ.
@@ -3691,6 +3698,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'pp-savani-university-online',
+    logo: '/logos/university_logos/pp-savani-university-online.webp',
     // Fees read 2026-10-30 from the CDOE fee table at ppsu.ac.in/centre-for-distance-and-online-education.
     // Online mode: BBA Rs 20,000/sem (6 sem) or Rs 90,000 one-time; M.Com Rs 25,000/sem (4) or Rs 90,000;
     // MSc Data Science and MBA Rs 32,500/sem (4) or Rs 1,20,000 one-time.
@@ -3881,6 +3889,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'aligarh-muslim-university-online',
+    logo: '/logos/university_logos/aligarh-muslim-university-online.webp',
     name: 'Aligarh Muslim University Online',
     abbr: 'AMUD',
     city: 'Aligarh',
@@ -4276,6 +4285,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'mizoram-university-online',
+    logo: '/logos/university_logos/mizoram-university-online.webp',
     name: 'Mizoram University (MZU) Online',
     abbr: 'MU',
     city: 'Aizawl',
@@ -4751,6 +4761,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'central-university-himachal-pradesh-online',
+    logo: '/logos/university_logos/central-university-himachal-pradesh-online.webp',
     name: 'Central University of Himachal Pradesh Online',
     abbr: 'CUHP',
     city: '',
@@ -4790,6 +4801,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'mahatma-gandhi-university-online',
+    logo: '/logos/university_logos/mahatma-gandhi-university-online.webp',
     name: 'Mahatma Gandhi University Online',
     abbr: 'MGU',
     city: 'Kottayam',
@@ -4894,6 +4906,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'karunya-university-online',
+    logo: '/logos/university_logos/karunya-university-online.webp',
     name: 'Karunya Institute of Technology and Sciences (KCODE) Online',
     abbr: 'KITS',
     city: 'Coimbatore',
@@ -5154,6 +5167,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'jamia-millia-islamia-online',
+    logo: '/logos/university_logos/jamia-millia-islamia-online.svg',
     name: 'Jamia Millia Islamia (JMI) Online',
     abbr: 'JMI',
     city: '',
@@ -5359,7 +5373,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         source: 'Rishi, confirmed 2026-11-13', checkedOn: '2026-11-13',
       }],
     },
-    logo: '/logos/university_logos/bvdu-logo.svg',
+    logo: '/logos/university_logos/bharati-vidyapeeth-university-online.webp',
     name: 'Bharati Vidyapeeth (Deemed to be University) Online',
     abbr: 'BVUO',
     city: 'Pune',
@@ -5518,6 +5532,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'university-of-lucknow-online',
+    logo: '/logos/university_logos/university-of-lucknow-online.webp',
     name: "University of Lucknow Online",
     abbr: 'ULCDO',
     city: 'Lucknow',
@@ -5586,6 +5601,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'jss-university-online',
+    logo: '/logos/university_logos/jss-university-online.webp',
     // BBA (Hospital & Health System Management, OEP) read 2026-10-30 from the JSS AHER course finder
     // (jssuni.edu.in, Center for Online Learning): Rs 30,000 per year for Indian nationals, 3 years,
     // examination fees excluded.
@@ -5739,7 +5755,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     officialUrl: 'https://dbuonline.in',
     feeVerifiedOn: '2026-10-30',
     programFees: { mba: { fee: 120000 }, bcom: { fee: 78000 } },
-    logo: '/logos/university_logos/desh-bhagat-university.svg',
+    logo: '/logos/university_logos/desh-bhagat-university-online.webp',
     name: 'Desh Bhagat University Online',
     abbr: 'DBUO',
     city: 'Mandi Gobindgarh',
@@ -5875,6 +5891,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'amet-university-online',
+    logo: '/logos/university_logos/amet-university-online.webp',
     name: 'AMET University (Academy of Maritime Education and Training) Online',
     abbr: 'AUME',
     city: 'Chennai',
@@ -5935,7 +5952,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'guru-nanak-dev-university-online',
-    logo: '/logos/university_logos/guru-nanak-dev-logo.png',
+    logo: '/logos/university_logos/guru-nanak-dev-university-online.webp',
     name: 'Guru Nanak Dev University Online',
     abbr: 'GNDUO',
     city: 'Amritsar',
@@ -6070,6 +6087,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'savitribai-phule-pune-university-online',
+    logo: '/logos/university_logos/savitribai-phule-pune-university-online.webp',
     name: 'Savitribai Phule Pune University (SPPU) Online',
     abbr: 'SPPUC',
     city: 'Ganeshkhind',
@@ -6294,6 +6312,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'anna-university-online',
+    logo: '/logos/university_logos/anna-university-online.webp',
     name: 'Anna University Online',
     abbr: 'AUDE',
     city: 'Chennai',
@@ -6335,6 +6354,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'vels-university-online',
+    logo: '/logos/university_logos/vels-university-online.webp',
     name: 'Vels Institute of Science, Technology & Advanced Online',
     abbr: 'VISTA',
     city: 'Pallavaram',
@@ -6384,6 +6404,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'northcap-university-online',
+    logo: '/logos/university_logos/northcap-university-online.svg',
     name: 'The NorthCap University Online',
     abbr: 'TNUO',
     city: 'Gurugram',
@@ -6519,6 +6540,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'iift-online',
+    logo: '/logos/university_logos/iift-online.webp',
     name: 'Indian Institute of Foreign Trade (IIFT) Online',
     abbr: 'IIFT',
     city: 'New Delhi',
@@ -6561,6 +6583,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'gujarat-technological-university-online',
+    logo: '/logos/university_logos/gujarat-technological-university-online.webp',
     name: 'Gujarat Technological University (GTU) Online',
     abbr: 'GTU',
     city: '',
@@ -6601,6 +6624,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'bit-mesra-online',
+    logo: '/logos/university_logos/bit-mesra-online.webp',
     name: 'Birla Institute of Technology (BIT) Mesra Online',
     abbr: 'BITM',
     city: 'Ranchi',
@@ -6643,6 +6667,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'alvas-college-online',
+    logo: '/logos/university_logos/alvas-college-online.webp',
     name: "Alva's College (Autonomous) - ACU Online",
     abbr: 'ACAO',
     city: '',
@@ -7103,6 +7128,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'kalasalingam-university-online',
+    logo: '/logos/university_logos/kalasalingam-university-online.webp',
     name: 'Kalasalingam Academy of Research and Education (KARE) Online',
     abbr: 'KARE',
     city: 'Krishnankoil',
@@ -7144,6 +7170,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'alagappa-university-online',
+    logo: '/logos/university_logos/alagappa-university-online.webp',
     name: 'Alagappa University Online',
     abbr: 'AUOP',
     city: '',
@@ -7182,6 +7209,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'bharathiar-university-online',
+    logo: '/logos/university_logos/bharathiar-university-online.webp',
     name: 'Bharathiar University Online',
     abbr: 'BUDE',
     city: 'Coimbatore',
@@ -7220,6 +7248,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'sri-ramachandra-university-online',
+    logo: '/logos/university_logos/sri-ramachandra-university-online.webp',
     name: 'Sri Ramachandra Institute of Higher Education and Research Online',
     abbr: 'SRIHE',
     city: 'Chennai',
@@ -7260,6 +7289,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'icfai-university-online',
+    logo: '/logos/university_logos/icfai-university-online.svg',
     name: 'ICFAI Foundation for Higher Education Online',
     abbr: 'IFHEO',
     city: 'Hyderabad',
@@ -7299,6 +7329,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'shiv-nadar-university-online',
+    logo: '/logos/university_logos/shiv-nadar-university-online.svg',
     name: 'Shiv Nadar University Online',
     abbr: 'SNUE',
     city: 'Greater Noida',
@@ -7421,6 +7452,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'jagannath-university-online',
+    logo: '/logos/university_logos/jagannath-university-online.webp',
     name: 'Jagan Nath University Online',
     abbr: 'JNU',
     city: 'Jaipur',
@@ -7498,6 +7530,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'subharti-university-online',
+    logo: '/logos/university_logos/subharti-university-online.webp',
     name: 'Swami Vivekanand Subharti University Online',
     abbr: 'SVSUO',
     city: 'Meerut',
@@ -7536,6 +7569,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'arka-jain-university-online',
+    logo: '/logos/university_logos/arka-jain-university-online.webp',
     name: 'ARKA JAIN University – JGI Online (arkajain.edu.in) Online',
     abbr: 'AJUJO',
     city: 'Jamshedpur',
@@ -7576,7 +7610,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'jawaharlal-nehru-university-online',
-    logo: '/logos/university_logos/jnu-logo-final.webp',
+    logo: '/logos/university_logos/jawaharlal-nehru-university-online.webp',
     name: 'Jawaharlal Nehru University Online',
     abbr: 'JNU',
     city: 'New Delhi',
@@ -7711,6 +7745,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'kalinga-institute-industrial-technology-online',
+    logo: '/logos/university_logos/kalinga-institute-industrial-technology-online.webp',
     name: 'Kalinga Institute of Industrial Technology Online',
     abbr: 'KIOIT',
     city: 'Bhubaneswar',
@@ -7783,6 +7818,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'university-of-kerala-online',
+    logo: '/logos/university_logos/university-of-kerala-online.webp',
     name: 'University of Kerala Online',
     abbr: 'UOK',
     city: 'Thiruvananthapuram',
@@ -7853,6 +7889,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'bits-pilani-work-integrated-online',
+    logo: '/logos/university_logos/bits-pilani-work-integrated-online.webp',
     // B3 (2026-11-18): fee, components, eligibility and EMI read from
     // bits-pilani-wilp.ac.in/mba/finance.php. audits/verify/bits-pilani-work-integrated-online-2026-11-18.md
     officialUrl: 'https://bits-pilani-wilp.ac.in',
@@ -7938,7 +7975,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'op-jindal-global-university-online',
-    logo: undefined,
+    logo: '/logos/university_logos/op-jindal-global-university-online.webp',
     name: 'O.P. Jindal Global University Online',
     abbr: 'JGU',
     city: 'Sonipat',
@@ -7980,7 +8017,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'graphic-era-university-online',
-    logo: '/logos/university_logos/graphic-era-university.svg',
+    logo: '/logos/university_logos/graphic-era-university-online.svg',
     name: 'Graphic Era University Online',
     abbr: 'GEU',
     city: 'Dehradun',
@@ -8065,6 +8102,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'devi-ahilya-vishwavidyalaya-online',
+    logo: '/logos/university_logos/devi-ahilya-vishwavidyalaya-online.webp',
     name: 'Devi Ahilya Vishwavidyalaya Online',
     abbr: 'DAV',
     city: 'Indore',
@@ -8114,6 +8152,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'madurai-kamaraj-university-online',
+    logo: '/logos/university_logos/madurai-kamaraj-university-online.webp',
     name: 'Madurai Kamaraj University Online',
     abbr: 'MKU',
     city: 'Madurai',
@@ -8194,6 +8233,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'university-of-mumbai-online',
+    logo: '/logos/university_logos/university-of-mumbai-online.webp',
     name: 'University of Mumbai Online',
     abbr: 'UOM',
     city: 'Mumbai',
@@ -8234,6 +8274,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'university-of-jammu-online',
+    logo: '/logos/university_logos/university-of-jammu-online.webp',
     name: 'University of Jammu Online',
     abbr: 'UOJ',
     city: '',
@@ -8284,6 +8325,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'shivaji-university-online',
+    logo: '/logos/university_logos/shivaji-university-online.webp',
     name: 'Shivaji University Online',
     abbr: 'SU',
     city: 'Kolhapur',
@@ -8333,6 +8375,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'banasthali-vidyapith-online',
+    logo: '/logos/university_logos/banasthali-vidyapith-online.webp',
     name: 'Banasthali Vidyapith Online',
     abbr: 'BV',
     city: 'Jaipur',
@@ -8486,6 +8529,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'bangalore-university-online',
+    logo: '/logos/university_logos/bangalore-university-online.webp',
     name: 'Bangalore University Online',
     abbr: 'BU',
     city: 'Bengaluru',
@@ -8546,6 +8590,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'iiit-bangalore-online',
+    logo: '/logos/university_logos/iiit-bangalore-online.webp',
     name: 'International Institute of Information Technology Hyderabad Online',
     abbr: 'IIOIT',
     city: 'Hyderabad',
@@ -8665,6 +8710,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'adichunchanagiri-university-online',
+    logo: '/logos/university_logos/adichunchanagiri-university-online.webp',
     name: 'Adichunchanagiri University Online',
     abbr: 'AU',
     city: 'B G Nagara',
@@ -8715,6 +8761,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'bharath-university-online',
+    logo: '/logos/university_logos/bharath-university-online.svg',
     name: 'Bharath Institute of Higher Education and Research Online',
     abbr: 'BIOHE',
     city: 'Chennai',
@@ -8775,6 +8822,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'chhatrapati-shahu-ji-maharaj-university-online',
+    logo: '/logos/university_logos/chhatrapati-shahu-ji-maharaj-university-online.webp',
     name: 'Chhatrapati Shahu Ji Maharaj University Online',
     abbr: 'CSMU',
     city: 'Kanpur',
@@ -8868,6 +8916,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'deen-dayal-upadhyay-gorakhpur-university-online',
+    logo: '/logos/university_logos/deen-dayal-upadhyay-gorakhpur-university-online.webp',
     // 2026-08-23: programFees gives getDisplayFee a per-programme reference.
     // Without it, getReference() falls back to university-wide feeMin/feeMax
     // for MBA, and DDU's catalogue spans Rs 30,500 (MA) to Rs 57,500 (BBA), so
@@ -8981,7 +9030,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'guru-jambheshwar-university-online',
-    logo: '/logos/university_logos/guru-jambeshwar-university-of-science-and-technology.webp',
+    logo: '/logos/university_logos/guru-jambheshwar-university-online.webp',
     name: 'Guru Jambheshwar University of Science and Technology Online',
     abbr: 'GJUOS',
     city: 'Hisar',
@@ -9052,6 +9101,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'maharshi-dayanand-university-online',
+    logo: '/logos/university_logos/maharshi-dayanand-university-online.webp',
     name: 'Maharshi Dayanand University Online',
     abbr: 'MDU',
     city: 'Rohtak',
@@ -9184,7 +9234,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       bca: { list: 90000, listLabel: 'course fee, ₹30,000 × 3 years (2025-26 fee structure)', source: 'matsuniversityonline.com Online Fee Structure 2025-26 PDF, read 2026-10-30' },
       bcom: { list: 75000, listLabel: 'course fee, ₹25,000 × 3 years (2025-26 fee structure)', source: 'matsuniversityonline.com Online Fee Structure 2025-26 PDF, read 2026-10-30' },
     },
-    logo: '/logos/university_logos/mats-university.webp',
+    logo: '/logos/university_logos/mats-university-online.webp',
     name: 'MATS University Online',
     abbr: 'MU',
     city: 'Raipur',
@@ -9268,6 +9318,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'meenakshi-academy-higher-education-online',
+    logo: '/logos/university_logos/meenakshi-academy-higher-education-online.webp',
     name: 'Meenakshi Academy of Higher Education and Research Online',
     abbr: 'MAOHE',
     city: 'Chennai',
@@ -9429,7 +9480,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'sage-university-online',
-    logo: '/logos/university_logos/sage-university-logo.webp',
+    logo: '/logos/university_logos/sage-university-online.webp',
     name: 'SAGE University Online',
     abbr: 'SU',
     city: 'Bhopal',
@@ -9511,6 +9562,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'assam-down-town-university-online',
+    logo: '/logos/university_logos/assam-down-town-university-online.webp',
     name: 'Assam Down Town University Online',
     abbr: 'ADTU',
     city: 'Guwahati',
@@ -9660,6 +9712,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'choudhary-charan-singh-university-online',
+    logo: '/logos/university_logos/choudhary-charan-singh-university-online.webp',
     name: 'Choudhary Charan Singh University Online',
     abbr: 'CCSU',
     city: 'Meerut',
@@ -9751,6 +9804,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
   {
     id: 'pt-sundarlal-sharma-open-university-online',
+    logo: '/logos/university_logos/pt-sundarlal-sharma-open-university-online.webp',
     name: 'Pt. Sundarlal Sharma (Open) University Online',
     abbr: 'PSSOU',
     city: '',
@@ -9830,6 +9884,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'university-of-calicut-online',
+    logo: '/logos/university_logos/university-of-calicut-online.webp',
     name: 'University of Calicut Online',
     abbr: 'UOC',
     city: '',
@@ -9899,6 +9954,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'dr-br-ambedkar-university-online',
+    logo: '/logos/university_logos/dr-br-ambedkar-university-online.webp',
     name: 'Dr. B.R. Ambedkar University Online',
     abbr: 'DBRAU',
     city: '',
@@ -9998,6 +10054,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'mohan-babu-university-online',
+    logo: '/logos/university_logos/mohan-babu-university-online.webp',
     name: 'Mohan Babu University Online',
     abbr: 'MBU',
     city: '',
@@ -10077,6 +10134,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'sri-venkateswara-university-online',
+    logo: '/logos/university_logos/sri-venkateswara-university-online.webp',
     name: 'Sri Venkateswara University Online',
     abbr: 'SVU',
     city: '',
@@ -10146,6 +10204,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'swami-rama-himalayan-university-online',
+    logo: '/logos/university_logos/swami-rama-himalayan-university-online.webp',
     name: 'Swami Rama Himalayan University Online',
     abbr: 'SRHU',
     city: '',
@@ -10225,6 +10284,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'central-university-tamil-nadu-online',
+    logo: '/logos/university_logos/central-university-tamil-nadu-online.webp',
     name: 'Central University of Tamil Nadu Online',
     abbr: 'CUTN',
     city: '',
@@ -10284,6 +10344,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'ajeenkya-dy-patil-university-online',
+    logo: '/logos/university_logos/ajeenkya-dy-patil-university-online.webp',
     name: 'Ajeenkya D.Y. Patil University Online',
     abbr: 'ADYPU',
     city: '',
@@ -10353,6 +10414,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'dr-br-ambedkar-open-university-online',
+    logo: '/logos/university_logos/dr-br-ambedkar-open-university-online.webp',
     name: 'Dr. B.R. Ambedkar Open University Online',
     abbr: 'BRAOU',
     city: '',
@@ -10418,6 +10480,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'silver-oak-university-online',
+    logo: '/logos/university_logos/silver-oak-university-online.svg',
     name: 'Silver Oak University Online',
     abbr: 'SOU',
     city: '',
@@ -10507,6 +10570,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'srinivas-university-online',
+    logo: '/logos/university_logos/srinivas-university-online.webp',
     name: 'Srinivas University Online',
     abbr: 'SRINIVAS',
     city: '',
@@ -10586,6 +10650,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'st-aloysius-university-online',
+    logo: '/logos/university_logos/st-aloysius-university-online.webp',
     name: 'St Aloysius (Deemed to be University) Online',
     abbr: 'ALOYSIUS',
     city: '',
@@ -10645,6 +10710,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'bennett-university-online',
+    logo: '/logos/university_logos/bennett-university-online.webp',
     name: 'Bennett University Online',
     abbr: 'BENNETT',
     city: '',
@@ -10694,6 +10760,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'sandip-university-online',
+    logo: '/logos/university_logos/sandip-university-online.webp',
     name: 'Sandip University Online',
     abbr: 'SANDIP',
     city: '',
@@ -10743,6 +10810,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'atlas-skilltech-university-online',
+    logo: '/logos/university_logos/atlas-skilltech-university-online.svg',
     name: 'Atlas SkillTech University Online',
     abbr: 'ATLAS',
     city: '',
@@ -10792,6 +10860,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'sri-siddhartha-academy-online',
+    logo: '/logos/university_logos/sri-siddhartha-academy-online.webp',
     name: 'Sri Siddhartha Academy of Higher Education Online',
     abbr: 'SSAHE',
     city: '',
@@ -10833,6 +10902,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'saveetha-university-online',
+    logo: '/logos/university_logos/saveetha-university-online.webp',
     name: 'Saveetha Institute of Medical and Technical Sciences Online',
     abbr: 'SIMATS',
     city: '',
@@ -10874,6 +10944,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
   },
   {
     id: 'bml-munjal-university-online',
+    logo: '/logos/university_logos/bml-munjal-university-online.webp',
     name: 'BML Munjal University Online',
     abbr: 'BMU',
     city: '',
