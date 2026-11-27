@@ -224,11 +224,11 @@ const authorSchema = {
   ],
 }
 
-// Paths where no third-party tag may load: the CRM, the WhatsApp inbox and
-// the login page in front of them. A JS expression, because it is written
+// Paths where no third-party tag may load: the CRM, the WhatsApp inbox, the
+// login page in front of them, and /refer (it holds a third party's number). A JS expression, because it is written
 // into the inline tag scripts below.
 const IS_PRIVATE_PATH =
-  "(function(p){return p==='/leads'||p.indexOf('/leads/')===0||p==='/admin-login'||p.indexOf('/admin-login/')===0})(location.pathname)"
+  "(function(p){return p==='/leads'||p.indexOf('/leads/')===0||p==='/admin-login'||p.indexOf('/admin-login/')===0||p==='/refer'||p.indexOf('/refer/')===0})(location.pathname)"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

@@ -32,6 +32,8 @@ import OwnerMbaSentence from '@/components/OwnerMbaSentence'
 import { isExamCentre, EXAM_CENTRE_LINE, isExamModeConfirmed } from '@/lib/exam-mode'
 import { debBasis } from '@/lib/seo/deb-basis'
 import { programmeEligibility } from '@/lib/seo/display-guards'
+import UniversityCover from '@/components/UniversityCover'
+import type { UniversityCover as UniversityCoverData } from '@/lib/university-covers'
 
 const progSlug = (p: Program) => p.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')
 
@@ -81,9 +83,11 @@ interface Props {
    * null or a missing entry prints no fee line.
    */
   peerFees?: Partial<Record<Program, Record<string, string | null>>>
+  /** Campus photo for the hero (lib/university-covers.ts), or null when none. */
+  cover?: UniversityCoverData | null
 }
 
-export default function UniversityPageClient({ university: u, linkableProgrammes, verifyHref, programSchema, specHrefs, answerHtml, feePlanHtml, firstHand: fh, peerFees }: Props) {
+export default function UniversityPageClient({ university: u, linkableProgrammes, verifyHref, programSchema, specHrefs, answerHtml, feePlanHtml, firstHand: fh, peerFees, cover }: Props) {
   const [enquiryOpen, setEnquiryOpen] = useState(false)
   const [activeProgram, setActiveProgram] = useState<Program | null>(null)
   const [compareList, setCompareList] = useState<string[]>([])
@@ -250,6 +254,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
         {/* Hero Section */}
         <div style={{background:'linear-gradient(180deg,#0a1220 0%,#0f1b2d 100%)',borderBottom:'1px solid #1e2f45'}}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 lg:py-14">
+            {cover && <UniversityCover cover={cover} name={cleanName} />}
             <div className="flex flex-col lg:flex-row gap-8 items-start">
               <div className="flex-1">
                 <div className="flex items-center gap-5 mb-6">

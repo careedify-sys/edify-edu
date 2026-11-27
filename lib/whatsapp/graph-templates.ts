@@ -5,6 +5,7 @@
 // recipient gets the same text. Errors keep Meta's code and a redacted
 // title, never the token.
 import { graphCall, safeErrorTitle, type GraphEnv } from './graph'
+import { checkButtons, REFER_URL_EXAMPLE, REFER_URL_VAR } from './template-rules'
 
 type Fetch = typeof fetch
 
@@ -15,6 +16,8 @@ export type TemplateDraft = {
   language: string
   category: TemplateCategory
   header?: string
+  // An image or PDF header: the handle comes from uploadHeaderSample.
+  headerMedia?: { kind: 'image' | 'document'; handle: string }
   body: string
   footer?: string
   buttons?: TemplateButton[]
@@ -48,34 +51,32 @@ export function validateDraft(d: TemplateDraft): string | null {
   for (const t of [d.header, body, d.footer]) {
     if (t && /\{\{/.test(t)) return 'Personalised fields like {{1}} are not supported: your list holds phone numbers only, so every student gets the same text.'
   }
-  const buttons = d.buttons ?? []
-  if (buttons.length > 10) return 'At most 10 buttons.'
-  if (buttons.filter(b => b.type === 'URL').length > 2) return 'At most 2 website buttons.'
-  for (const b of buttons) {
-    if (!b.text.trim() || b.text.trim().length > 25) return 'Button text must be 1 to 25 characters.'
-    if (b.type === 'URL' && !/^https:\/\/[^\s{}]+$/.test(b.url)) return 'Website buttons need a full https:// link.'
-  }
-  return null
+  if (d.headerMedia && d.header?.trim()) return 'Choose a text header or an image/PDF header, not both.'
+  if (d.headerMedia && !/^[\w:.=+/-]{4,2000}$/.test(d.headerMedia.handle)) return 'The header file was not uploaded to Meta.'
+  return checkButtons(d.buttons ?? [])
 }
 
 export function draftComponents(d: TemplateDraft): unknown[] {
   const c: unknown[] = []
-  if (d.header?.trim()) c.push({ type: 'HEADER', format: 'TEXT', text: d.header.trim() })
+  if (d.headerMedia) c.push({ type: 'HEADER', format: d.headerMedia.kind === 'image' ? 'IMAGE' : 'DOCUMENT', example: { header_handle: [d.headerMedia.handle] } })
+  else if (d.header?.trim()) c.push({ type: 'HEADER', format: 'TEXT', text: d.header.trim() })
   c.push({ type: 'BODY', text: d.body.trim() })
   if (d.footer?.trim()) c.push({ type: 'FOOTER', text: d.footer.trim() })
   if (d.buttons?.length) {
     c.push({ type: 'BUTTONS', buttons: d.buttons.map(b => b.type === 'URL'
-      ? { type: 'URL', text: b.text.trim(), url: b.url }
+      ? (b.url === REFER_URL_VAR ? { type: 'URL', text: b.text.trim(), url: b.url, example: [REFER_URL_EXAMPLE] } : { type: 'URL', text: b.text.trim(), url: b.url })
       : { type: 'QUICK_REPLY', text: b.text.trim() }) })
   }
   return c
 }
 
 // What a recipient sees, for previews. Same text order as WhatsApp shows it.
-export function previewText(components: unknown[]): { header: string | null; body: string; footer: string | null; buttons: string[] } {
+export function previewText(components: unknown[]): { header: string | null; headerKind: 'image' | 'document' | null; body: string; footer: string | null; buttons: string[] } {
   const get = (type: string) => (components as any[]).find(c => c?.type === type)
+  const fmt = String(get('HEADER')?.format ?? '').toUpperCase()
   return {
     header: get('HEADER')?.format === 'TEXT' || get('HEADER')?.text ? get('HEADER')?.text ?? null : null,
+    headerKind: fmt === 'IMAGE' ? 'image' : fmt === 'DOCUMENT' ? 'document' : null,
     body: get('BODY')?.text ?? '',
     footer: get('FOOTER')?.text ?? null,
     buttons: ((get('BUTTONS')?.buttons ?? []) as any[]).map(b => String(b?.text ?? '')),
@@ -185,5 +186,119 @@ export async function accountLimits(env: GraphEnv, f: Fetch = fetch): Promise<Ac
     quality: typeof q === 'string' ? q : null,
     messagingLimit: limit,
     error: q === undefined && l === undefined ? 'Meta did not return the quality rating or the messaging limit.' : null,
+  }
+}
+
+// ── Header samples, edit and delete (Phase 4) ───────────────────────────────
+
+// Meta's Resumable Upload API, used only for a template's example image or
+// PDF: start a session on the app, upload the bytes, get a handle.
+// https://developers.facebook.com/docs/graph-api/guides/upload
+export async function uploadHeaderSample(env: GraphEnv, bytes: Uint8Array, mime: string, fileName: string, f: Fetch = fetch): Promise<{ ok: true; handle: string } | GraphFail> {
+  if (!env.token || !env.appId) return { ok: false, code: null, error: 'WhatsApp is not configured (app id or token missing).' }
+  if (!['image/jpeg', 'image/png', 'application/pdf'].includes(mime)) return { ok: false, code: null, error: 'Header files must be JPEG, PNG or PDF.' }
+  try {
+    const q = new URLSearchParams({ file_name: fileName.slice(0, 100), file_length: String(bytes.byteLength), file_type: mime })
+    const start = await graphCall(f, `https://graph.facebook.com/${env.version}/${encodeURIComponent(env.appId)}/uploads?${q}`, {
+      method: 'POST', headers: { Authorization: `Bearer ${env.token}` },
+    })
+    const session = start.json?.id
+    if (start.status < 200 || start.status >= 300 || typeof session !== 'string' || !/^upload:[\w=:.-]+$/.test(session)) return fail(start)
+    const up = await graphCall(f, `https://graph.facebook.com/${env.version}/${session}`, {
+      method: 'POST',
+      headers: { Authorization: `OAuth ${env.token}`, file_offset: '0', 'Content-Type': mime },
+      body: bytes as unknown as BodyInit,
+    }, 30_000)
+    if (up.status >= 200 && up.status < 300 && typeof up.json?.h === 'string') return { ok: true, handle: up.json.h }
+    return fail(up)
+  } catch {
+    return { ok: false, code: null, error: 'Meta did not answer the upload. Try again.' }
+  }
+}
+
+// Edit: POST /{template-id} with the new components. Meta allows it for
+// APPROVED (once a day, 10 times in 30 days), REJECTED and PAUSED templates.
+// The category is never sent: Meta's pages disagree on whether it may change.
+export async function editTemplate(env: GraphEnv, metaId: string, components: unknown[], f: Fetch = fetch): Promise<{ ok: true } | GraphFail> {
+  if (!env.token) return { ok: false, code: null, error: 'WhatsApp is not configured.' }
+  if (!/^\d{1,30}$/.test(metaId)) return { ok: false, code: null, error: 'Unknown template.' }
+  try {
+    const r = await graphCall(f, `https://graph.facebook.com/${env.version}/${metaId}`, {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${env.token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ components }),
+    })
+    if (r.status >= 200 && r.status < 300 && r.json?.success !== false) return { ok: true }
+    return fail(r)
+  } catch {
+    return { ok: false, code: null, error: 'Meta did not answer. Sync templates before trying again.' }
+  }
+}
+
+// Delete one language of a template: DELETE /{WABA}/message_templates with
+// name and hsm_id. A deleted approved name cannot be reused for 30 days.
+export async function deleteTemplate(env: GraphEnv, name: string, metaId: string, f: Fetch = fetch): Promise<{ ok: true } | GraphFail> {
+  if (!env.token || !env.wabaId) return { ok: false, code: null, error: 'WhatsApp is not configured.' }
+  if (!/^[a-z0-9_]{1,512}$/.test(name) || !/^\d{1,30}$/.test(metaId)) return { ok: false, code: null, error: 'Unknown template.' }
+  try {
+    const q = new URLSearchParams({ name, hsm_id: metaId })
+    const r = await graphCall(f, `https://graph.facebook.com/${env.version}/${encodeURIComponent(env.wabaId)}/message_templates?${q}`, {
+      method: 'DELETE', headers: { Authorization: `Bearer ${env.token}` },
+    })
+    if (r.status >= 200 && r.status < 300 && r.json?.success !== false) return { ok: true }
+    return fail(r)
+  } catch {
+    return { ok: false, code: null, error: 'Meta did not answer. Sync templates to see whether it was removed.' }
+  }
+}
+
+// ── Media for sending (Phase 4) ─────────────────────────────────────────────
+// POST /{phone-number-id}/media returns an id usable in messages for 30 days.
+export async function uploadMedia(env: GraphEnv, bytes: Uint8Array, mime: string, fileName: string, f: Fetch = fetch): Promise<{ ok: true; id: string } | GraphFail> {
+  if (!env.token || !env.phoneNumberId) return { ok: false, code: null, error: 'WhatsApp is not configured.' }
+  try {
+    const form = new FormData()
+    form.append('messaging_product', 'whatsapp')
+    form.append('type', mime)
+    form.append('file', new Blob([bytes as unknown as BlobPart], { type: mime }), fileName.slice(0, 100) || 'file')
+    const r = await graphCall(f, `https://graph.facebook.com/${env.version}/${encodeURIComponent(env.phoneNumberId)}/media`, {
+      method: 'POST', headers: { Authorization: `Bearer ${env.token}` }, body: form,
+    }, 30_000)
+    if (r.status >= 200 && r.status < 300 && typeof r.json?.id === 'string') return { ok: true, id: r.json.id }
+    return fail(r)
+  } catch {
+    return { ok: false, code: null, error: 'Meta did not answer the upload. Try again.' }
+  }
+}
+
+// A received file: GET /{media-id} gives a URL valid for 5 minutes that
+// needs the token; the bytes are fetched and handed back, never stored.
+// Meta keeps webhook media for 7 days.
+export const MAX_DOWNLOAD_BYTES = 25 * 1024 * 1024
+export async function downloadMedia(env: GraphEnv, mediaId: string, f: Fetch = fetch): Promise<{ ok: true; mime: string; bytes: Uint8Array } | GraphFail> {
+  if (!env.token) return { ok: false, code: null, error: 'WhatsApp is not configured.' }
+  if (!/^\d{1,40}$/.test(mediaId)) return { ok: false, code: null, error: 'Unknown file.' }
+  try {
+    const meta = await graphCall(f, `https://graph.facebook.com/${env.version}/${mediaId}`, { headers: { Authorization: `Bearer ${env.token}` } })
+    const url = meta.json?.url
+    if (meta.status < 200 || meta.status >= 300 || typeof url !== 'string') return fail(meta)
+    let host = ''
+    try { host = new URL(url).hostname } catch { /* bad url */ }
+    // Only Meta's own media hosts ever receive the token.
+    if (!url.startsWith('https://') || !/(^|\.)(fbsbx\.com|facebook\.com|whatsapp\.net|fbcdn\.net)$/.test(host)) {
+      return { ok: false, code: null, error: 'Meta returned an unexpected file address.' }
+    }
+    if (Number(meta.json?.file_size) > MAX_DOWNLOAD_BYTES) return { ok: false, code: null, error: 'This file is larger than 25 MB. Open it in WhatsApp on the phone.' }
+    const ctl = new AbortController()
+    const t = setTimeout(() => ctl.abort(), 20_000)
+    try {
+      const res = await f(url, { headers: { Authorization: `Bearer ${env.token}` }, signal: ctl.signal, cache: 'no-store', redirect: 'error' })
+      if (!res.ok) return { ok: false, code: null, error: `Meta returned ${res.status} for the file. Files older than 7 days are no longer available.` }
+      const buf = new Uint8Array(await res.arrayBuffer())
+      if (buf.byteLength > MAX_DOWNLOAD_BYTES) return { ok: false, code: null, error: 'This file is larger than 25 MB.' }
+      return { ok: true, mime: String(meta.json?.mime_type ?? res.headers.get('content-type') ?? 'application/octet-stream').split(';')[0], bytes: buf }
+    } finally { clearTimeout(t) }
+  } catch {
+    return { ok: false, code: null, error: 'Meta did not answer. Try again.' }
   }
 }

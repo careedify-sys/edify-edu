@@ -1,5 +1,37 @@
 # Fix log
 
+## 2026-11-28 B3 batch 23 round 4: merge of origin/main, updatedAt on 20 posts, MAHE NIRF category, mba-scope leftovers
+
+Branch fix/b3-batch-23r3: a merge commit of origin/main (f0c1fda: WA Phase 4, university logos, Q72-Q78) into 2a8e9df. Fixes F1 and F2 in audits/qa/2026-11-27-b3-batch-23-premerge-rerun2.md plus advisory 5. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry.
+
+**Merge conflicts.**
+- audits/QUESTIONS-FOR-RISHI.md: both sides kept, in number order Q69, Q70, Q71, Q72 to Q78. Git put main's block first; keeping that order would have put Q70 and Q71 after Q78. Each of Q69 to Q78 has 6 cells (counted by unescaped pipes).
+- audits/FIX-LOG.md: all entries kept, the three batch 23 entries first, then main's university-logos entry, each separated by a blank line.
+
+**F1. updatedAt "2026-11-28" on the 20 posts batch 23 touched.**
+- Why: check-blog-updated-at accepts an unchanged updatedAt only if it is today (IST). Round 3 passed on 27 Nov and fails on 28 Nov. Against main, 20 posts changed rendered content while keeping main's 2026-11-27 date. The list comes from the gate's own rule (contentText from scripts/lib/blog-content-text.mjs) run with origin/main as the base. It matches the QA list.
+- Posts: online-mba-for-working-professionals-india, mahe-online-mba-review-2026, mba-fees-india-complete-guide-2026, career-after-12th-arts-courses-jobs-2026, best-mba-specialization-india-2026, online-mba-salary-india-2026, online-mba-pune-university-2026, mba-after-engineering-india-2026, mba-data-science-analytics-career-2026, online-mba-for-freshers-india-2026, mba-scope-india-2026, distance-mba-meaning-what-is-it-2026, online-mba-courses-chennai-2026, top-correspondence-mba-colleges-india-2026, online-mba-fee-comparison-india-2026, best-computer-courses-after-12th-india-2026, courses-after-12th-science-complete-list-2026, best-online-mba-colleges-india-2026, amity-vs-manipal-online-mba-2026, nmims-vs-symbiosis-online-mba-2026.
+- The other 29 posts batch 23 changed carry a date that differs from main's, so the gate already accepts them.
+
+**F2. MAHE review body: "India overall" was the wrong NIRF category.**
+- Why: lib/data.ts nirf 3 is the University category, and the FIX-LOG 2026-10-27 entry confirms NIRF 2025 University MAHE 3. "Overall" is a different NIRF table. No verify sheet or FIX-LOG entry holds a 2024 MAHE rank or a "14th across all institutions" figure.
+- What changed (mahe-online-mba-review-2026): "NIRF ranked it third in India overall." and "NIRF ranked it 3rd in India overall in 2024 and 14th across all institutions." both now read "It holds rank 3 in the NIRF 2025 University category." The 2024 year and the 14th claim are deleted.
+- Left: online-manipal-mba-review-2026 has the same pill ("NIRF #3 / India overall 2024"). That post is not part of batch 23, so it goes to a later NIRF sweep.
+
+**Advisory 5. mba-scope leftovers.**
+- Why: two sentences survived the round 3 statistic deletions. "Employers accept an online MBA from a NAAC A or A+ university most readily for promotion. Campus MBA is still preferred mostly for fresher hiring." was a qualitative restatement of the deleted Naukri survey, so it still leaned on that survey. "Growth: very new, from a small base." read awkwardly once its figure was gone.
+- What changed: both sentences are deleted, with nothing added in their place.
+
+**Logged, not fixed (QA item 13; pre-existing unsourced percentages in the batch 23 posts, for a later batch):**
+- mba-after-engineering: "Real data from hiring platforms" with a 60-80% salary increase, "40 to 80 percent", and the FAQ "40-80% more".
+- online-mba-salary: 20-40%, 25-40%, 30-50% and 25-35%, and the 25/40/15% ROI split. "Use Glassdoor, Naukri, AmbitionBox" is advice only.
+- mba-scope: "8 to 10 percent" and "8 to 12 percent annually".
+- mahe: "25-40 percent upgrade".
+- working-professionals: "20-40 percent salary upgrade".
+- fintech: the Fintech Foundation, NASSCOM and RBI pointer (no figure).
+
+Gates on the merge commit: fee 205, blog-fees 1889 (main 1945), em-dash 227, salary 1902 (main 1913), salary-ext 65 (main has no ext baseline yet), check-blog-updated-at ok, check-nirf-category OK. The merge adds no figure above main's own levels.
+
 ## 2026-11-27 B3 batch 23 round 3: IGNOU cells beside a ₹66,000 meta, Q70 cells and scope, Q71, mba-scope hiring statistics, NIRF categories
 
 Branch fix/b3-batch-23r3, one commit on 24663a8 (fix/b3-batch-23 was checked out in another worktree, so the fallback branch name was used). Fixes F1 and F2 in audits/qa/2026-11-27-b3-batch-23-premerge-rerun.md plus the round 3 brief. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt was already 2026-11-27 on all 12 edited posts.
@@ -140,6 +172,52 @@ Also corrected: the batch 21 round 2 gates line said "salary 2344 or lower"; the
 
 Gates: fee 205, blog-fees 1889, em-dash 227, salary 1902 (after the round 3 rebase), salary-ext 65.
 
+## 2026-11-27 · University logos (138 of 143) and campus covers on 105 profiles (branch feat/university-logos-covers, shipped to main on Rishi's "Yes, ship it")
+
+- **Why logos:** 75 records showed no logo, and the 66 existing ones had defects. jawaharlal-nehru-university-online
+  showed the Jaipur National University logo (jnu-logo-final.webp was the wrong file). Several were white-on-transparent,
+  which is invisible on the white logo box. The DY Patil Navi Mumbai slim card showed the DPU Pune logo. The three logo
+  sources (lib/data.ts logo, lib/data/logos-manifest.json, lib/data-slim.ts) disagreed on 4 records.
+- **What:** 72 logos added, 12 replaced (sage, mats, guru-jambheshwar, graphic-era, jawaharlal-nehru, guru-nanak-dev,
+  desh-bhagat, bharati-vidyapeeth, vtu, galgotias, manipal-university-jaipur, dayananda-sagar), and OP Jindal's
+  `logo: undefined` removed. All three sources now agree on all 143 ids. Manifest keys went from 54 to 141, with
+  none removed. Every SVG passed the script/foreignObject/handler/external-href check and the 300 KB cap. Three unsafe or
+  heavy sources (Hindustan 2.1 MB SVG, MUJ SVG with foreignObject, Subharti PNG unreadable by PIL) were rendered to WebP
+  in a browser instead. Only logo lines changed in data.ts and data-slim.ts.
+- **Why covers:** a campus photo at the top of /universities/[id]. Only photos under a verified free licence
+  (Wikimedia Commons, CC BY / BY-SA / CC0 / PD) went in, with the credit, licence link and cropped that CC BY-SA
+  requires. 74 photos from university websites are held out until rights are confirmed (Q-LC1). 4 were excluded because
+  they showed the wrong institution: Lucknow (Maharishi Univ), Mysore (CAVA), Graphic Era (Graphic Era Hill), and
+  iiit-bangalore (record identity, Q-LC2).
+- **Code:** lib/data/university-covers.json, lib/university-covers.ts, components/UniversityCover.tsx, a cover prop in
+  UniversityPageClient, and getUniversityCover in app/universities/[id]/page.tsx. The box reserves space with
+  aspect-ratio 2.2/1 and is capped at 360px. It needs width:100%, because max-height transfers through aspect-ratio
+  to width and shrank the cover to about 750px on desktop in the first build. The image uses srcset 800w/1600w, eager,
+  fetchpriority high, and is the LCP element.
+- **Checks:** tsc 0; npm run build 0 (2367 pages); all 46 pre-commit gates pass (audit-data/ copied into the worktree).
+  Local prod on 5 pages, desktop and mobile: 200, no console errors, CLS at most 0.03, no horizontal overflow, mobile
+  serves the 800w file. qa-checker report: audits/qa/2026-11-27-logos-covers-premerge.md.
+- **Open:** 5 records without a logo (Q-LC3). The VIT cover may be a render and is flagged in the dashboard. Deploy
+  waits on Rishi (Q-LC4).
+- **27 Nov, later: official-site covers added (Rishi in chat: "upload the 74 held covers too").** 70 of the 74 added
+  with origin "official" and the caption "Photo: <University> website", linking the university homepage. No written
+  permission is on file, and the code comment says to remove an entry if a university objects. 4 left out: Silver Oak
+  and Maharishi Markandeshwar are text/ad banners, Jammu is 350x200, and Alliance's file is named ChatGPT-Image (an AI
+  image, not the campus). Ganpat letterbox bars trimmed; the burned-in caption on Uttaranchal cropped off. Photos taller than
+  2.2:1 were pre-cropped. Campus notes: Amity Noida, NMIMS Chandigarh, Crescent Madurai. Atlas flagged for review
+  (website hero PNG). Covers live: 106 of 143.
+- **QA fixes (qa-checker 27 Nov; its blocker 1 predates Rishi's instruction to add the website photos):** the CSJMU PD
+  photo lives on en.wikipedia.org, so the caption now names the real host instead of always saying "Wikimedia Commons".
+  Caption text went from slate-500 to slate-400, about 3.9:1 to about 7:1 on the navy hero. 34 covers at 1600px over 200 KB were
+  re-encoded (average 172 to 147 KB, max 577 to 425 KB). Rebuild 0, 46 gates 0, all 212 cover files 200 on local prod.
+- **27 Nov, Rishi's review:** VIT cover removed (the photo shows nothing useful); 105 covers live. Captions dropped
+  ("just put the photo, no credits"): official-site, CC0 and public-domain covers now render no figcaption and no link to
+  the university site. The 29 CC BY / CC BY-SA covers keep a one-line credit, because those licences permit use only with
+  author, licence and source shown; dropping it would breach the licence. Rishi can instead drop those 29 covers.
+- **27 Nov, Rishi follow-up ("remove the credits, not the logo or the cover image"):** all captions removed, the 29
+  CC BY / CC BY-SA covers included; every photo stays. WHY recorded: Rishi's call after being told the licence terms.
+  Risk accepted: those 29 are used without the credit their licence asks for. Author and licence remain in
+  university-covers.json and COVER-LICENSING.md, so a credit can be restored per photo if an author objects.
 ## 2026-11-27 B3 batch 22 round 3: stale salary-source callouts, source-claim sweep, ICAI figures, headings that name removed salary content
 
 Branch fix/b3-batch-22, new commit on 7efc2cc. This fixes F2 and the advisories in audits/qa/2026-11-27-b3-batch-22-premerge-rerun.md. No title, seoTitle, h1Title or metaDescription changed, and no allowlist entry was added. updatedAt was already 2026-11-27 on every edited post.

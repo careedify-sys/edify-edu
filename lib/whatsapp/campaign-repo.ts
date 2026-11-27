@@ -17,14 +17,21 @@ export type MemberRow = { contact_id: string; phone: string | null; profile_name
 export type TemplateRow = {
   id: string; meta_id: string | null; name: string; language: string; category: string; status: string
   components: unknown[]; reason: string | null; quality: string | null; synced_at: string | null; created_at: string
+  header_file_id: string | null
 }
+export type MediaRow = {
+  id: string; purpose: 'template_header' | 'outbound'; kind: 'image' | 'document'; file_name: string; mime: string
+  size_bytes: number; sha256: string; storage_path: string; meta_media_id: string | null; meta_media_expires: string | null
+  created_by: string | null; created_at: string
+}
+export type NewMedia = Pick<MediaRow, 'purpose' | 'kind' | 'file_name' | 'mime' | 'size_bytes' | 'sha256' | 'created_by'>
 export type CampaignStatus = 'draft' | 'approved' | 'sending' | 'paused' | 'completed' | 'cancelled'
 export type CampaignRow = {
   id: string; name: string; status: CampaignStatus; template_id: string | null; scheduled_at: string | null
   batch_size: number; daily_max: number; budget_inr: number | null; approval: Preview | null
   approved_by: string | null; approved_at: string | null; paused_reason: string | null
   duplicated_from: string | null; created_by: string; created_at: string; updated_at: string
-  started_at: string | null; completed_at: string | null
+  started_at: string | null; completed_at: string | null; ref_token: string
 }
 export type RecipientState = 'queued' | 'sending' | 'accepted' | 'failed' | 'unknown' | 'skipped' | 'cancelled'
 export type RecipientRow = {
@@ -68,8 +75,16 @@ export interface CampaignRepo {
 
   templates(): Promise<TemplateRow[]>
   getTemplate(id: string): Promise<TemplateRow | null>
-  saveTemplate(t: Omit<TemplateRow, 'id' | 'created_at' | 'synced_at'> & { submitted_by: string | null }): Promise<void>
+  saveTemplate(t: Omit<TemplateRow, 'id' | 'created_at' | 'synced_at' | 'header_file_id'> & { submitted_by: string | null; header_file_id?: string | null }): Promise<void>
   setTemplateStatus(id: string, status: string, category: string | null): Promise<void>
+  updateTemplate(id: string, patch: { components?: unknown[]; status?: string; reason?: string | null; header_file_id?: string | null }): Promise<void>
+  activeCampaignsUsing(templateId: string): Promise<number>
+
+  saveMedia(m: NewMedia, bytes: Uint8Array): Promise<{ id: string }>
+  getMedia(id: string): Promise<MediaRow | null>
+  mediaBytes(id: string): Promise<Uint8Array | null>
+  setMediaMetaId(id: string, mediaId: string, expiresIso: string): Promise<void>
+  mediaFiles(purpose: MediaRow['purpose']): Promise<MediaRow[]>
 
   campaigns(): Promise<CampaignRow[]>
   getCampaign(id: string): Promise<CampaignRow | null>
@@ -84,7 +99,7 @@ export interface CampaignRepo {
   stats(campaignId: string): Promise<Stats>
   spend(tz: string): Promise<Spend>
 
-  dueCampaigns(nowIso: string, limit: number): Promise<Array<Pick<CampaignRow, 'id' | 'template_id' | 'batch_size'>>>
+  dueCampaigns(nowIso: string, limit: number): Promise<Array<Pick<CampaignRow, 'id' | 'template_id' | 'batch_size' | 'ref_token'>>>
   claim(campaignId: string, limit: number, phoneNumberId: string): Promise<ClaimRow[]>
   finish(clientRef: string, wamid: string | null, state: 'accepted' | 'failed' | 'unknown', code: number | null, title: string | null): Promise<void>
   release(clientRefs: string[]): Promise<number>
@@ -105,8 +120,10 @@ function fail(what: string, e: { code?: string } | null): never {
 
 const CHUNK = 5000
 const chunks = <T,>(a: T[], n = CHUNK) => Array.from({ length: Math.ceil(a.length / n) }, (_, i) => a.slice(i * n, i * n + n))
-const CAMPAIGN_COLS = 'id,name,status,template_id,scheduled_at,batch_size,daily_max,budget_inr,approval,approved_by,approved_at,paused_reason,duplicated_from,created_by,created_at,updated_at,started_at,completed_at'
-const TEMPLATE_COLS = 'id,meta_id,name,language,category,status,components,reason,quality,synced_at,created_at'
+const CAMPAIGN_COLS = 'id,name,status,template_id,scheduled_at,batch_size,daily_max,budget_inr,approval,approved_by,approved_at,paused_reason,duplicated_from,created_by,created_at,updated_at,started_at,completed_at,ref_token'
+const TEMPLATE_COLS = 'id,meta_id,name,language,category,status,components,reason,quality,synced_at,created_at,header_file_id'
+const MEDIA_COLS = 'id,purpose,kind,file_name,mime,size_bytes,sha256,storage_path,meta_media_id,meta_media_expires,created_by,created_at'
+export const MEDIA_BUCKET = 'wa-media'
 const one = <T,>(x: T | T[] | null | undefined): T | null => (Array.isArray(x) ? x[0] ?? null : x ?? null)
 
 export function supabaseCampaignRepo(sb: Sb): CampaignRepo {
@@ -240,6 +257,50 @@ export function supabaseCampaignRepo(sb: Sb): CampaignRepo {
       const { error } = await sb.from('wa_templates').update(patch).eq('id', id)
       if (error) fail('template status', error)
     },
+    async updateTemplate(id, patch) {
+      const { error } = await sb.from('wa_templates').update({ ...patch, synced_at: new Date().toISOString() }).eq('id', id)
+      if (error) fail('template update', error)
+    },
+    async activeCampaignsUsing(templateId) {
+      const { count, error } = await sb.from('wa_campaigns').select('id', { count: 'exact', head: true })
+        .eq('template_id', templateId).in('status', ['draft', 'approved', 'sending', 'paused'])
+      if (error) fail('campaigns using template', error)
+      return count ?? 0
+    },
+
+    // Bytes go to the private Storage bucket under a random path (no file
+    // name, no phone number); the row records what Meta needs.
+    async saveMedia(m, bytes) {
+      const path = `${m.purpose}/${crypto.randomUUID()}`
+      const up = await sb.storage.from(MEDIA_BUCKET).upload(path, bytes, { contentType: m.mime, upsert: false })
+      if (up.error) fail('media upload', { code: 'storage' })
+      const { data, error } = await sb.from('wa_media_files').insert({ ...m, storage_path: path }).select('id').single()
+      if (error) { await sb.storage.from(MEDIA_BUCKET).remove([path]); fail('media row', error) }
+      return { id: (data as { id: string }).id }
+    },
+    async getMedia(id) {
+      const { data, error } = await sb.from('wa_media_files').select(MEDIA_COLS).eq('id', id).is('deleted_at', null).maybeSingle()
+      if (error) fail('media', error)
+      return (data ?? null) as MediaRow | null
+    },
+    async mediaBytes(id) {
+      const { data: row, error: e1 } = await sb.from('wa_media_files').select('storage_path').eq('id', id).is('deleted_at', null).maybeSingle()
+      if (e1) fail('media', e1)
+      if (!row) return null
+      const { data, error } = await sb.storage.from(MEDIA_BUCKET).download((row as { storage_path: string }).storage_path)
+      if (error || !data) return null
+      return new Uint8Array(await data.arrayBuffer())
+    },
+    async setMediaMetaId(id, mediaId, expiresIso) {
+      const { error } = await sb.from('wa_media_files').update({ meta_media_id: mediaId, meta_media_expires: expiresIso }).eq('id', id)
+      if (error) fail('media meta id', error)
+    },
+    async mediaFiles(purpose) {
+      const { data, error } = await sb.from('wa_media_files').select(MEDIA_COLS).eq('purpose', purpose).is('deleted_at', null)
+        .order('created_at', { ascending: false }).limit(200)
+      if (error) fail('media files', error)
+      return (data ?? []) as MediaRow[]
+    },
 
     async campaigns() {
       const { data, error } = await sb.from('wa_campaigns').select(CAMPAIGN_COLS).order('created_at', { ascending: false }).limit(200)
@@ -325,11 +386,11 @@ export function supabaseCampaignRepo(sb: Sb): CampaignRepo {
     },
 
     async dueCampaigns(nowIso, limit) {
-      const { data, error } = await sb.from('wa_campaigns').select('id,template_id,batch_size')
+      const { data, error } = await sb.from('wa_campaigns').select('id,template_id,batch_size,ref_token')
         .or(`status.eq.sending,and(status.eq.approved,or(scheduled_at.is.null,scheduled_at.lte.${nowIso}))`)
         .order('approved_at', { ascending: true }).limit(limit)
       if (error) fail('due campaigns', error)
-      return (data ?? []) as Array<Pick<CampaignRow, 'id' | 'template_id' | 'batch_size'>>
+      return (data ?? []) as Array<Pick<CampaignRow, 'id' | 'template_id' | 'batch_size' | 'ref_token'>>
     },
     async claim(campaignId, limit, phoneNumberId) {
       const { data, error } = await sb.rpc('wa_campaign_claim', { p_campaign: campaignId, p_limit: limit, p_pnid: phoneNumberId })

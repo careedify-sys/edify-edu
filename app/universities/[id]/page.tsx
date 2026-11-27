@@ -16,6 +16,7 @@ import { shouldIndexUniversity, onlinePrefix } from '@/lib/seo/mode-unverified'
 import { formatUniversityDisplayName } from '@/lib/format'
 import { feePlanTableHtml, nmimsNoDistanceHtml, symbiosisDistanceAnswerHtml } from '@/lib/fee-plans'
 import { debApprovedSentence, debBasis } from '@/lib/seo/deb-basis'
+import { getUniversityCover } from '@/lib/university-covers'
 
 // The phrase people type for a university's online arm, where it differs from
 // the short title name. Amity's short name is "Amity", but the searches are
@@ -260,6 +261,7 @@ export default async function UniversityPage(
           }),
         )]))}
         firstHand={resolveFirstHand(university)}
+        cover={getUniversityCover(university.id)}
         specHrefs={Object.fromEntries(university.programs.flatMap(p => {
           // Same slug derivation as the chips in UniversityPageClient.
           const progSlug = p.toLowerCase().replace(/\./g, '')

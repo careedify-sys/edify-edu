@@ -5,8 +5,9 @@
 import { randomUUID } from 'node:crypto'
 import type {
   CampaignRepo, CampaignRow, ClaimRow, ConsentInput, HistoryRow, ListRow, Marketing, NumberStatus, Preview,
-  RecipientRow, RecipientState, Stats, TemplateRow,
+  RecipientRow, RecipientState, Stats, TemplateRow, MediaRow,
 } from './campaign-repo'
+import { randomBytes } from 'node:crypto'
 
 type Contact = { id: string; phone: string; profile_name: string | null; consent: Array<{ granted: boolean; at: number }>; optedOut: boolean }
 type Member = { list_id: string; contact_id: string; source: string; added_at: string }
@@ -21,6 +22,7 @@ export function mockCampaignRepo(): CampaignRepo {
   const lists = new Map<string, { id: string; name: string; created_at: string; updated_at: string; archived: boolean }>()
   let members: Member[] = []
   const templates = new Map<string, TemplateRow>()
+  const media = new Map<string, { row: MediaRow; bytes: Uint8Array }>()
   const campaigns = new Map<string, CampaignRow>()
   let recips: Recip[] = []
   let rid = 1
@@ -54,14 +56,14 @@ export function mockCampaignRepo(): CampaignRepo {
   }
   const approvedTpl = randomUUID()
   templates.set(approvedTpl, {
-    id: approvedTpl, meta_id: 'mock_1', name: 'referral_invite_mock', language: 'en', category: 'MARKETING', status: 'APPROVED',
+    id: approvedTpl, meta_id: '1001', name: 'referral_invite_mock', language: 'en', category: 'MARKETING', status: 'APPROVED',
     components: [{ type: 'BODY', text: 'Mock text. Know someone looking at an online degree? Reply YES and we will call them. Reply STOP to opt out.' }, { type: 'FOOTER', text: 'edifyedu.in' }, { type: 'BUTTONS', buttons: [{ type: 'QUICK_REPLY', text: 'Yes, refer someone' }, { type: 'QUICK_REPLY', text: 'Stop promotions' }] }],
-    reason: null, quality: 'UNKNOWN', synced_at: iso(), created_at: iso(4 * DAY),
+    reason: null, quality: 'UNKNOWN', synced_at: iso(), created_at: iso(4 * DAY), header_file_id: null,
   })
   const pendingTpl = randomUUID()
-  templates.set(pendingTpl, { id: pendingTpl, meta_id: 'mock_2', name: 'referral_reminder_mock', language: 'en', category: 'MARKETING', status: 'PENDING', components: [{ type: 'BODY', text: 'Mock pending template.' }], reason: null, quality: null, synced_at: iso(), created_at: iso(DAY) })
+  templates.set(pendingTpl, { id: pendingTpl, meta_id: '1002', name: 'referral_reminder_mock', language: 'en', category: 'MARKETING', status: 'PENDING', components: [{ type: 'BODY', text: 'Mock pending template.' }], reason: null, quality: null, synced_at: iso(), created_at: iso(DAY), header_file_id: null })
   const rejTpl = randomUUID()
-  templates.set(rejTpl, { id: rejTpl, meta_id: 'mock_3', name: 'referral_offer_mock', language: 'en', category: 'MARKETING', status: 'REJECTED', components: [{ type: 'BODY', text: 'Mock rejected template.' }], reason: 'INVALID_FORMAT', quality: null, synced_at: iso(), created_at: iso(2 * DAY) })
+  templates.set(rejTpl, { id: rejTpl, meta_id: '1003', name: 'referral_offer_mock', language: 'en', category: 'MARKETING', status: 'REJECTED', components: [{ type: 'BODY', text: 'Mock rejected template.' }], reason: 'INVALID_FORMAT', quality: null, synced_at: iso(), created_at: iso(2 * DAY), header_file_id: null })
 
   function preview(id: string): Preview {
     const c = campaigns.get(id)
@@ -140,15 +142,27 @@ export function mockCampaignRepo(): CampaignRepo {
     async saveTemplate(t) {
       const existing = Array.from(templates.values()).find(x => x.name === t.name && x.language === t.language)
       const id = existing?.id ?? randomUUID()
-      templates.set(id, { id, meta_id: t.meta_id, name: t.name, language: t.language, category: t.category, status: t.status, components: t.components, reason: t.reason, quality: t.quality, synced_at: iso(), created_at: existing?.created_at ?? iso() })
+      templates.set(id, { id, meta_id: t.meta_id, name: t.name, language: t.language, category: t.category, status: t.status, components: t.components, reason: t.reason, quality: t.quality, synced_at: iso(), created_at: existing?.created_at ?? iso(), header_file_id: t.header_file_id !== undefined ? t.header_file_id : existing?.header_file_id ?? null })
     },
     async setTemplateStatus(id, status, category) { const t = templates.get(id); if (t) { t.status = status; if (category) t.category = category } },
+    async updateTemplate(id, patch) { const t = templates.get(id); if (t) Object.assign(t, patch, { synced_at: iso() }) },
+    async activeCampaignsUsing(templateId) { return Array.from(campaigns.values()).filter(c => c.template_id === templateId && ['draft', 'approved', 'sending', 'paused'].includes(c.status)).length },
+
+    async saveMedia(m, bytes) {
+      const id = randomUUID()
+      media.set(id, { row: { ...m, id, storage_path: `${m.purpose}/${id}`, meta_media_id: null, meta_media_expires: null, created_at: iso() }, bytes })
+      return { id }
+    },
+    async getMedia(id) { return media.get(id)?.row ?? null },
+    async mediaBytes(id) { return media.get(id)?.bytes ?? null },
+    async setMediaMetaId(id, mediaId, expires) { const x = media.get(id); if (x) { x.row.meta_media_id = mediaId; x.row.meta_media_expires = expires } },
+    async mediaFiles(purpose) { return Array.from(media.values()).map(x => x.row).filter(r => r.purpose === purpose).sort((a, b) => b.created_at.localeCompare(a.created_at)) },
 
     async campaigns() { return Array.from(campaigns.values()).sort((a, b) => b.created_at.localeCompare(a.created_at)) },
     async getCampaign(id) { return campaigns.get(id) ?? null },
     async createCampaign(c) {
       const id = randomUUID()
-      campaigns.set(id, { id, status: 'draft', scheduled_at: null, approval: null, approved_by: null, approved_at: null, paused_reason: null, created_at: iso(), updated_at: iso(), started_at: null, completed_at: null, ...c })
+      campaigns.set(id, { id, status: 'draft', scheduled_at: null, approval: null, approved_by: null, approved_at: null, paused_reason: null, created_at: iso(), updated_at: iso(), started_at: null, completed_at: null, ref_token: randomBytes(8).toString('hex'), ...c })
       return { id }
     },
     async updateDraft(id, patch) { const c = campaigns.get(id); if (c && c.status === 'draft') Object.assign(c, patch, { updated_at: iso() }) },
