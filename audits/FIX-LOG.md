@@ -1,20 +1,29 @@
 # Fix log
 
-## 2026-11-28 · B4: answer-first block on the 10 queue MBA hubs (branch fix/b4-answer-first, not pushed)
+## 2026-11-28 · B4: answer-first block on 8 of the 10 queue MBA hubs (branch fix/b4-answer-first, not pushed)
 
 - **Why:** OPERATING-PLAN B4 asks for total fee, eligibility and exam mode, each with its date, above the fold on the top 10
   hubs (audits/queue-ranking-2026-11-16.md). Those three answers were spread over the stat grid and the FAQ further down,
   and the eligibility line on the hub came from lib/data.ts strings that predate the 18 Nov sheets.
 - **What:** lib/answer-first.ts builds three rows; components/UniHero.tsx renders them as a `<dl id="answer-first">` right
-  after the H1, only on the MBA hub (no spec) of the 10 ids. No heading element, no link, small "Checked {date} by
+  after the H1, only on the MBA hub (no spec) of the 8 ids. No heading element, no link, small "Checked {date} by
   edifyedu.in" text under each sourced value.
 - **Sources:** fee = University.provenance.fee value and checkedOn (B1). Eligibility = row M3 of
   audits/verify/{id}-2026-11-18.md, reworded only for length; every number and condition kept. Exam mode = examTier
   (B7/B7b), dated by the sheet's M6 row; centre and from-home and online tiers print a mode, unverified and unrecorded
   print the existing counsellor or neutral line with no date.
-- **Gaps (counsellor line shown):** DSU fee and eligibility (Q80: no provenance, dsuonline.com not confirmed as
-  official). ACU fee (Q81, Q31: which of Rs 1,40,000 or Rs 1,00,000 is payable). Shoolini exam mode (unverified tier,
-  sheet M6 UNCLEAR, Q29). ACU exam mode (unrecorded tier, sheet M6 UNCLEAR): neutral line.
+- **Round 2 (QA 2026-11-28-b4-answer-first-premerge.md, coordinator decision F2 option a):**
+  - DSU and ACU are out of the block, which now covers 8 hubs. Their fee had no dated source (Q80, Q81), so the block
+    said "Ask our counsellor" about 250px above the stat grid's ₹1,30,000 and ₹1,40,000 on the same screen. DSU's
+    sheet is also read from dsuonline.com, which is not confirmed as DSU's official site, so its dated "Online" exam
+    row broke the block's own rule (F3). They return when Q80 and Q81 are answered.
+  - BITS eligibility now carries sheet M3 verbatim. Round 1 dropped "Integrated First Degree" and the Maths or
+    Statistics at school level requirement for 3-year degree holders (F1).
+  - JAIN's row is labelled "Programme fee" with "plus registration and exam fees", because sheet M5 says registration
+    and the yearly exam fee sit outside the programme fee (F4). Not summed into a total.
+  - The assert script now checks the full value of every cell and was shown to fail on an injected defect.
+- **Gaps:** B4 is partly blocked on Q80 (DSU) and Q81 (ACU). Shoolini exam mode prints the counsellor line
+  (unverified tier, sheet M6 UNCLEAR, Q29).
 - **FAQPage:** not extended. The hub FAQ already asks the fee, eligibility and exam-mode questions, so a copy would
   duplicate them.
 - **Unchanged:** titles, seoTitle, meta, the stat grid, the FAQ, lib/data.ts.
