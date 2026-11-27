@@ -227,14 +227,14 @@ export const COUPON_PAGES: CouponPageData[] = [
       { type: 'Harvard/PwC/PMI certifications', eligibility: 'All students', saving: 'Part of the programme fee (1 or 3 certificates by fee variant)', howToApply: 'Included automatically in programme' },
       { type: 'verified discount coupon', eligibility: 'All students via admission desk', saving: 'Up to Rs 5,000 on Tue/Sat IST, Rs 4,000 other days', howToApply: 'Mention code CU2026-5K during enrollment call' },
     ],
-    stackExample: 'Chandigarh includes value-added certificates in the programme fee: 1 certificate at Rs 1,75,125 or 3 certificates at Rs 1,90,400 after the Early Bird Scholarship. The coupon (up to Rs 5,000 on Tue/Sat) comes off that fee. Talk to our counsellor for your intake’s fee.',
+    stackExample: 'Chandigarh publishes two MBA plans: the MBA plan at Rs 1,75,125 or the Triple Industry Certified MBA plan at Rs 1,90,400 after the Early Bird Scholarship. The coupon (up to Rs 5,000 on Tue/Sat) comes off that fee. Talk to our counsellor for your intake’s fee.',
     emiCompatible: 'Yes. CU offers EMI options on the reduced fee.',
     exclusions: ['Does not reduce the 3-certificate variant fee (Rs 1,90,400 after Early Bird)', 'Cannot combine with other third-party offers'],
     faqs: [
       { q: 'What is the Chandigarh University online MBA discount coupon code?', a: 'CU2026-5K. Up to Rs 5,000 on Tuesday and Saturday in IST. Mention to your admission desk.' },
       { q: 'What certifications does CU bundle for free?', a: 'CU sells the online MBA with either 1 or 3 value-added certificates, and the certificates are part of the programme fee. The 3-certificate variant costs Rs 1,90,400 after the Early Bird Scholarship, against Rs 1,75,125 for the 1-certificate variant. Talk to our counsellor for which certificates each variant includes.' },
       { q: 'Is there a separate CU MCA code?', a: 'Yes. CUMCA2026-5K applies to CU Online MCA with the same standard-tier amounts.' },
-      { q: 'What is the difference between the two CU online MBA fee variants?', a: 'CU prices the online MBA by the number of value-added certificates. With 1 certificate the list fee is Rs 2,33,500, or Rs 1,75,125 after the 25% Early Bird Scholarship. With 3 certificates the list fee is Rs 2,38,000, or Rs 1,90,400 after the 20% Early Bird Scholarship. You can pay by year or by semester. Talk to our counsellor for the current figures before you pay.' },
+      { q: 'What is the difference between the two CU online MBA fee variants?', a: 'CU prices the online MBA in two plans, "MBA" and "Triple Industry Certified MBA". On the MBA plan the list fee is Rs 2,33,500, or Rs 1,75,125 after the 25% Early Bird Scholarship. On the Triple Industry Certified MBA plan the list fee is Rs 2,38,000, or Rs 1,90,400 after the 20% Early Bird Scholarship. You can pay by year or by semester. Talk to our counsellor for the current figures before you pay.' },
     ],
     peerComparisons: [
       { uni: 'LPU (₹2,00,000 list)', savings: 'Up to Rs 5,000 via LPU2026-5K' },

@@ -2862,7 +2862,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "online-bba-fees-india-2026-compared",
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     heroImage: "https://images.pexels.com/photos/7054801/pexels-photo-7054801.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     heroImageAlt: "Calculator, coins, and stationery symbolize budgeting and finance on a pastel purple backdrop.",
     heroImageAttribution: "Photo by <a href=\"https://www.pexels.com/@kindelmedia\" target=\"_blank\" rel=\"noopener nofollow\">Kindel Media</a> on <a href=\"https://pexels.com\" target=\"_blank\" rel=\"noopener nofollow\">Pexels</a>",
@@ -2881,8 +2881,8 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaDesc: "See fees, NAAC grades and NIRF ranks for every UGC-DEB approved online BBA. Public data only, no paid rankings, no referral commissions.",
     faqs: [
       { q: "What is the cheapest online BBA in India?", a: "Karnataka State Open University at Rs 39,000 is the cheapest verified figure in our records, followed by Bharathiar University at Rs 43,000. Bharathiar is the stronger pick of the two because it holds NAAC A++ and an NIRF University rank of 46. Confirm the current fee with the university before you pay." },
-      { q: "Can I get a NAAC A++ online BBA cheaply?", a: "Yes. Five universities in our comparison hold NAAC A++ and charge under Rs 80,000: Bharathiar at Rs 43,000, DDU Gorakhpur at Rs 57,500, University of Lucknow at Rs 60,000, Kurukshetra at Rs 72,661 and Koneru Lakshmaiah at Rs 79,000. The most expensive BBA on the table costs Rs 1,99,000 and is graded A+, one band lower." },
-      { q: "How much does an online BBA cost in India?", a: "Verified fees run from Rs 39,000 to Rs 1,99,000 for the full three-year programme. State and central universities dominate the value end, while private universities cluster above Rs 1,00,000 and charge for ranking, specialisation breadth and student support." },
+      { q: "Can I get a NAAC A++ online BBA cheaply?", a: "Yes. Five universities in our comparison hold NAAC A++ and charge under Rs 80,000: Bharathiar at Rs 43,000, DDU Gorakhpur at Rs 57,500, University of Lucknow at Rs 60,000, Kurukshetra at Rs 72,661 and Koneru Lakshmaiah at Rs 79,000. The most expensive BBA on the table, Christ University at Rs 3,00,000, is graded A+, one band lower." },
+      { q: "How much does an online BBA cost in India?", a: "Verified fees run from Rs 39,000 to Christ University's Rs 3,00,000 for the full three-year programme. State and central universities dominate the value end, while private universities cluster above Rs 1,00,000 and charge for ranking, specialisation breadth and student support." },
       { q: "Why are state university online BBA fees so much lower?", a: "State and central universities price online degrees on a public-funding basis rather than a market one. Their NAAC grade reflects decades of conventional teaching, research and infrastructure, and that does not change because the delivery moved online. What you trade is service: fewer live sessions, lighter placement support and slower admissions." },
       { q: "Is an expensive online BBA better?", a: "Not in accreditation terms. The premium buys a higher NIRF position, a wider specialisation menu and more structured support, which are real things if you will use them. It does not buy a more valid degree, and on our table it does not reliably buy a better NAAC grade either." },
       { q: "Is an online BBA valid in India?", a: "Yes, provided the university is UGC-DEB entitled for online delivery in your admission year. UGC rules treat an online degree from an entitled university as equivalent to a conventional one for employment, government recruitment and postgraduate study. Check the current list at deb.ugc.ac.in before enrolling." },
@@ -2891,14 +2891,14 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 26 August 2026 by Rishi Kumar, Senior Education Researcher and Founder, edifyedu.in. Every fee below was checked against our verified university records on 26 August 2026. Universities that publish only a broad range, rather than a single confirmed figure, were left out rather than estimated. Accreditation reflects our NAAC and NIRF records. EdifyEdu accepts no referral commission from any university.</em></p>
 
-<p>Five universities on this page offer a NAAC A++ online BBA for under Rs 80,000. The most expensive BBA in the comparison costs Rs 1,99,000 and is graded A+.</p>
+<p>Five universities on this page offer a NAAC A++ online BBA for under Rs 80,000. The most expensive BBA in the comparison, Christ University at Rs 3,00,000, is graded A+.</p>
 
 <p>That is worth sitting with before you shortlist anything. NAAC A++ is the top accreditation band in India, and in the online BBA market it is concentrated at the cheap end of the table rather than the expensive one.</p>
 
 <div class="callout-key">
   <strong>Online BBA fees in India 2026, at a glance</strong>
   <ul>
-    <li><strong>Most expensive:</strong> Amity University, graded NAAC A+</li>
+    <li><strong>Most expensive:</strong> Christ University, graded NAAC A+</li>
     <li><strong>NAAC A++ under Rs 80,000:</strong> five universities</li>
     <li><strong>Duration:</strong> 3 years, 6 semesters, at every university listed</li>
     <li><strong>Validity:</strong> every university here is UGC-DEB approved for online delivery</li>
@@ -2940,7 +2940,7 @@ export const BLOG_POSTS: BlogPost[] = [
   </g>
 
   <line x1="26" y1="218" x2="694" y2="218" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="26" y="238" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11">For comparison, the most expensive BBA in this review costs Rs 1,99,000 and holds NAAC A+, one band lower.</text>
+  <text x="26" y="238" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11">For comparison, the most expensive BBA in this review, Christ at Rs 3,00,000, holds NAAC A+, one band lower.</text>
 </svg>
 <p class="svg-caption">Verified against our university records, August 2026. NIRF positions are University category and belong to the institution, not to the online programme specifically.</p>
 </div>
@@ -2988,9 +2988,9 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>Amrita Vishwa Vidyapeetham</td><td>Rs 1,65,000</td><td>A++</td><td>#8</td></tr>
     <tr><td>Symbiosis School for Online and Digital Learning</td><td>Rs 1,65,000</td><td>A++</td><td>#24</td></tr>
     <tr><td>University of Petroleum and Energy Studies</td><td>Rs 1,69,000</td><td>A</td><td>#45</td></tr>
-    <tr><td>Christ University</td><td>Rs 1,75,000</td><td>A+</td><td>#63</td></tr>
     <tr><td>Manav Rachna University</td><td>Rs 1,80,000</td><td>A++</td><td>#96</td></tr>
     <tr><td>Amity University</td><td>Rs 1,99,000</td><td>A+</td><td>#22</td></tr>
+    <tr><td>Christ University</td><td>Rs 3,00,000</td><td>A+</td><td>#63</td></tr>
   </tbody>
 </table>
 
@@ -30333,7 +30333,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'chandigarh-university-online-mba-review',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     title: 'Chandigarh University Online MBA Fees 2026: ₹1.75L Review and Honest Verdict',
     seoTitle: 'Chandigarh University Online MBA Review 2026: PwC Tie-Up',
     metaDescription: 'Chandigarh University Online MBA reviewed: fees after Early Bird scholarship, pros, cons, who it suits. Real student feedback, zero commission.',
@@ -30351,7 +30351,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaTitle: 'Comparing CU Online MBA with NMIMS, JAIN, or Symbiosis?',
     ctaDesc: 'edifyedu.in covers all major programs with fee, certification, and syllabus comparisons. No paid rankings.',
     faqs: [
-      { q: 'What are Chandigarh University Online MBA fees 2026?', a: 'Chandigarh University Online MBA total fee for 2026 is ₹1,75,125 for the full 2-year programme with 1 value-added certificate, after the 25% Early Bird Scholarship on a ₹2,33,500 list fee. With 3 value-added certificates it is ₹1,90,400 after the 20% Early Bird Scholarship on a ₹2,38,000 list fee. You can pay by year or by semester, and financing options exist. Talk to our counsellor for your intake’s fee before you pay.' },
+      { q: 'What are Chandigarh University Online MBA fees 2026?', a: 'Chandigarh University Online MBA total fee for 2026 is ₹1,75,125 for the full 2-year programme on CU’s MBA plan, after the 25% Early Bird Scholarship on a ₹2,33,500 list fee. On the Triple Industry Certified MBA plan it is ₹1,90,400 after the 20% Early Bird Scholarship on a ₹2,38,000 list fee. You can pay by year or by semester, and financing options exist. Talk to our counsellor for your intake’s fee before you pay.' },
       { q: 'Is Chandigarh University Online MBA UGC approved?', a: 'Yes. Chandigarh University is UGC-DEB approved for online programmes, ranks 32 in NIRF Management 2025 and 19 in NIRF University 2025, and holds NAAC A+ with CGPA 3.28 (cycle valid to 9 September 2026; check naac.gov.in for the current status).' },
       { q: 'What is the eligibility for Chandigarh University Online MBA?', a: 'Bachelor\'s degree in any discipline from a recognised university with minimum 50 percent aggregate (45 percent for reserved category). No work experience is mandatory for the regular online MBA.' },
       { q: 'How many specialisations does Chandigarh University Online MBA offer?', a: 'Chandigarh University Online MBA offers 26 specialisations covering Finance, Marketing, HR, Operations, Business Analytics, Data Science and Artificial Intelligence, Healthcare, Logistics, International Business, Banking and Finance, and several emerging domain combinations.' }
@@ -30416,10 +30416,10 @@ export const BLOG_POSTS: BlogPost[] = [
 <table style="width:100%;border-collapse:collapse;margin:20px 0 32px;font-size:15px">
   <thead><tr><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Fee Component</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Amount</th><th style="background:#0f172a;color:#fff;padding:10px 14px;text-align:left;font-size:13px">Notes</th></tr></thead>
   <tbody>
-    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Semester Fee x4</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 43,781/sem</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">1 certificate, after 25% Early Bird (Rs. 47,600/sem with 3 certificates)</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Semester Fee x4</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 43,781/sem</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">MBA plan, after 25% Early Bird (Rs. 47,600/sem on the Triple Industry Certified MBA plan)</td></tr>
     <tr style="background:#f8fafc"><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Registration Fee</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 1,000</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">One-time</td></tr>
-    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Without Scholarship</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 2,33,500</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">List fee with 1 certificate (Rs. 2,38,000 with 3 certificates)</td></tr>
-    <tr style="font-weight:700;background:#fef9f0;color:#0f172a"><td style="padding:10px 14px">Total (After Scholarship)</td><td style="padding:10px 14px">Rs. 1,75,125</td><td style="padding:10px 14px">1 certificate; Rs. 1,90,400 with 3 certificates. Pay yearly or by semester</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Without Scholarship</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">Rs. 2,33,500</td><td style="padding:10px 14px;border-bottom:1px solid #e2e8f0">List fee, MBA plan (Rs. 2,38,000 on the Triple Industry Certified MBA plan)</td></tr>
+    <tr style="font-weight:700;background:#fef9f0;color:#0f172a"><td style="padding:10px 14px">Total (After Scholarship)</td><td style="padding:10px 14px">Rs. 1,75,125</td><td style="padding:10px 14px">MBA plan; Rs. 1,90,400 on the Triple Industry Certified MBA plan. Pay yearly or by semester</td></tr>
   </tbody>
 </table>
 
@@ -46882,7 +46882,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
   },
   {
     slug: 'is-chandigarh-university-online-fake-or-legit-2026',
-    updatedAt: '2026-11-13',
+    updatedAt: '2026-11-27',
     title: 'Is Chandigarh University Online Fake or Legit? 2026',
     seoTitle: 'Is Chandigarh University Online Fake? No, NAAC A+ UGC-DEB',
     metaDescription: 'Chandigarh University Online is not fake. UGC-DEB, NAAC A+. MBA list price Rs 2.34L to Rs 2.38L; Early Bird price from Rs 1.75L (25% scholarship). Degrees are PSU-valid.',
@@ -46906,7 +46906,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
       { q: 'Is Chandigarh University Online the same as Panjab University?', a: 'No. These are two entirely separate institutions. Panjab University in Chandigarh city is a public university established in 1882 and reconstituted in 1947 after partition. Chandigarh University at Gharuan, Mohali is a private state university established in 2012 under Punjab State Legislature Act No. 15 of 2012. The two are roughly 27 kilometres apart and run by different governing bodies. Both offer their own online and distance programmes through separate directorates (Chandigarh University Online at onlinecu.in and Panjab University CDOE at cdoe.puchd.ac.in), which is why misreading the name can put a student in the wrong programme at the wrong university.' },
       { q: 'Is Chandigarh University Online degree valid for government jobs?', a: 'Yes. UGC notification dated 4 September 2020 (D.O. No. F.1-1/2020) confirms that degrees awarded through online mode by UGC-DEB entitled institutions are equivalent to conventional-mode degrees. Central PSUs such as BHEL, ONGC, SAIL, NTPC, and IOCL accept Chandigarh University Online degrees for management trainee and officer-level recruitment. UPSC eligibility requires a UGC recognised degree, which Chandigarh Online meets through Punjab State Legislature Act No. 15 of 2012 and Section 2(f) recognition. Some state PSCs still specify regular-mode degrees, so verify with your target commission before enrolling.' },
       { q: 'Is Chandigarh University Online UGC approved?', a: 'Yes. Chandigarh University is recognised by UGC under Section 2(f). For online programmes specifically, the university holds UGC-DEB entitlement for the current academic year. You can verify the current status at deb.ugc.ac.in by searching Chandigarh University.' },
-      { q: 'Why do I see different MBA fees quoted for Chandigarh University?', a: 'Chandigarh University Online prices the MBA in two variants by the number of value-added certificates. The Online MBA with 1 certificate lists at Rs 2,33,500 and drops to Rs 1,75,125 with a 25 percent Early Bird Scholarship. The Online MBA with 3 certificates lists at Rs 2,38,000 and drops to Rs 1,90,400 with a 20 percent Early Bird Scholarship. Aggregator sites quote whichever variant and price mode they picked, which creates the impression of hidden pricing. There is no hidden fee, only two documented variants with their own Early Bird rates. Fees are indicative, so talk to our counsellor for the current figures.' },
+      { q: 'Why do I see different MBA fees quoted for Chandigarh University?', a: 'Chandigarh University Online prices the MBA in two plans, named "MBA" and "Triple Industry Certified MBA". The MBA plan lists at Rs 2,33,500 and drops to Rs 1,75,125 with a 25 percent Early Bird Scholarship. The Triple Industry Certified MBA plan lists at Rs 2,38,000 and drops to Rs 1,90,400 with a 20 percent Early Bird Scholarship. Aggregator sites quote whichever variant and price mode they picked, which creates the impression of hidden pricing. There is no hidden fee, only two documented variants with their own Early Bird rates. Fees are indicative, so talk to our counsellor for the current figures.' },
       { q: 'Is Chandigarh University blacklisted?', a: 'No. Chandigarh University at Gharuan, Mohali is not on the UGC list of fake universities. It appears on the UGC recognised universities list under Section 2(f) and on the UGC-DEB entitled institutions list for online mode. You can confirm both at ugc.gov.in and deb.ugc.ac.in.' },
       { q: 'Can I pursue PhD after Chandigarh University Online MBA?', a: 'Yes. A UGC-DEB entitled Chandigarh University Online MBA is eligible for PhD admissions in India. Most Indian universities require a post-graduate degree from a UGC recognised institution, which Chandigarh Online MBA satisfies. Individual programmes may have additional entrance test and interview requirements.' }
     ],
@@ -47007,7 +47007,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 
 <p>Search "Chandigarh University Online MBA fee" and three very different numbers come back. One site says Rs 1,75,125. Another says Rs 1,90,400. A third quotes the Rs 2,38,000 list price. That is roughly a Rs 62,875 swing across the same programme, and it is the second-most-common reason people suspect something shady.</p>
 
-<p>Nothing is shady. Chandigarh University Online prices the MBA in two variants, set by how many value-added certificates come with it. The Online MBA with 1 certificate lists at Rs 2,33,500, and a 25 percent Early Bird Scholarship brings the total to Rs 1,75,125. The Online MBA with 3 certificates lists at Rs 2,38,000, and a 20 percent Early Bird Scholarship brings the total to Rs 1,90,400. Two variants, two list prices, two scholarship rates. Whichever number an aggregator quotes depends on which variant they show and whether they show the list or the Early Bird figure.</p>
+<p>Nothing is shady. Chandigarh University Online prices the MBA in two plans, named "MBA" and "Triple Industry Certified MBA". The MBA plan lists at Rs 2,33,500, and a 25 percent Early Bird Scholarship brings the total to Rs 1,75,125. The Triple Industry Certified MBA plan lists at Rs 2,38,000, and a 20 percent Early Bird Scholarship brings the total to Rs 1,90,400. Two variants, two list prices, two scholarship rates. Whichever number an aggregator quotes depends on which variant they show and whether they show the list or the Early Bird figure.</p>
 
 <div class="callout-warning"><strong>Verify before you pay:</strong> the numbers below reflect the 2026 intake as recorded against the onlinecu.in portal at the time of writing. Fees are indicative and can change intake to intake. Confirm the current fee for your specific variant and payment plan by asking an independent counsellor first: <a href="/contact">speak to an edifyedu.in counsellor</a> before you make any payment.</div>
 
@@ -47018,8 +47018,8 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 <th style="padding:10px;text-align:left">What it covers</th>
 </tr></thead>
 <tbody>
-<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>Online MBA with 1 certificate, list price (full 2-year programme)</strong></td><td style="padding:10px">Rs 2,33,500</td><td style="padding:10px">Published programme fee before the Early Bird Scholarship applies</td></tr>
-<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>Online MBA with 1 certificate, Early Bird price</strong></td><td style="padding:10px">Rs 1,75,125</td><td style="padding:10px">25 percent Early Bird Scholarship; Rs 87,563 a year or Rs 43,781 a semester</td></tr>
+<tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>MBA plan, list price (full 2-year programme)</strong></td><td style="padding:10px">Rs 2,33,500</td><td style="padding:10px">Published programme fee before the Early Bird Scholarship applies</td></tr>
+<tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>MBA plan, Early Bird price</strong></td><td style="padding:10px">Rs 1,75,125</td><td style="padding:10px">25 percent Early Bird Scholarship; Rs 87,562 a year or Rs 43,781 a semester</td></tr>
 <tr style="border-bottom:1px solid #eee"><td style="padding:10px"><strong>Online MBA with 3 certificates, list price (full 2-year programme)</strong></td><td style="padding:10px">Rs 2,38,000</td><td style="padding:10px">Published programme fee before the Early Bird Scholarship applies</td></tr>
 <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:10px"><strong>Online MBA with 3 certificates, Early Bird price</strong></td><td style="padding:10px">Rs 1,90,400</td><td style="padding:10px">20 percent Early Bird Scholarship; Rs 95,200 a year or Rs 47,600 a semester</td></tr>
 <tr><td style="padding:10px"><strong>Booking amount at admission</strong></td><td style="padding:10px">Rs 10,000</td><td style="padding:10px">One-time deposit to secure the seat, adjusted against total fee</td></tr>
@@ -47092,7 +47092,7 @@ B.E., Mechanical Engineering | BITS Pilani | 2017-2021
 
 <p>It is not the same institution as Panjab University in Chandigarh city. Panjab University is a separate older public university that runs its own online and distance courses through its Centre for Distance and Online Education at cdoe.puchd.ac.in. Both institutions run online programmes under separate directorates, which is exactly why misreading the name can land a student at the wrong university, and why "is Chandigarh University fake" gets typed into search boxes at all.</p>
 
-<p>The MBA comes in two variants. The Online MBA with 3 certificates drops from Rs 2,38,000 to Rs 1,90,400 with a 20 percent Early Bird Scholarship applied at enrolment. The Online MBA with 1 certificate drops from Rs 2,33,500 to Rs 1,75,125 with a 25 percent Early Bird Scholarship. Fees are indicative, so talk to our counsellor for your intake’s fee. That is the whole picture. If someone told you Chandigarh University Online is fake, they were wrong. Use the five verification steps above, and read the fee-price section the next time an aggregator quotes a number you do not recognise. For the same fake-or-legit treatment on peer institutions, edifyedu.in's <a href="/blog/is-manipal-university-jaipur-fake-or-legit-2026">MUJ fake or legit review</a> and <a href="/blog/is-amity-university-online-fake-or-legit-2026">Amity Online fake or legit review</a> use the same government-portal method.</p>
+<p>The MBA comes in two variants. The Triple Industry Certified MBA plan drops from Rs 2,38,000 to Rs 1,90,400 with a 20 percent Early Bird Scholarship applied at enrolment. The MBA plan drops from Rs 2,33,500 to Rs 1,75,125 with a 25 percent Early Bird Scholarship. Fees are indicative, so talk to our counsellor for your intake’s fee. That is the whole picture. If someone told you Chandigarh University Online is fake, they were wrong. Use the five verification steps above, and read the fee-price section the next time an aggregator quotes a number you do not recognise. For the same fake-or-legit treatment on peer institutions, edifyedu.in's <a href="/blog/is-manipal-university-jaipur-fake-or-legit-2026">MUJ fake or legit review</a> and <a href="/blog/is-amity-university-online-fake-or-legit-2026">Amity Online fake or legit review</a> use the same government-portal method.</p>
 
 <h2>Sources to Consult</h2>
 

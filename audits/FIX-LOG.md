@@ -1,5 +1,65 @@
 # Fix log
 
+## 2026-11-27 B3 batch 19: Christ BBA fee, CU plan labels and annual fee, Amrita per-specialisation tuition, Mysore MBA (stop-case)
+
+Branch fix/b3-batch-19, on the batch 18 round 2 tip (02552a9). Source: audits/verify/batch19-facts-2026-11-27.md (fact-checker, 27 Nov), committed with this batch. It reads online.christuniversity.in, www.cuonlineedu.in/mba, www.uni-mysore.in, onlineamrita.com and the deb.ugc.ac.in register. Nothing is summed: separate registration, admission and exam fees stay separate lines. No title, seoTitle or metaDescription changed.
+
+**1. Christ online BBA fee (lib/data.ts, lib/blog.ts).**
+- Why: the site showed ₹175K / Rs 1,75,000. Christ's BBA fee tab prints "For Indian Students ... Total- Rs.3,00,000" (Rs 1,00,000 a year for 3 years, as printed). Sheet row 1c is a CONFLICT. Application (INR 1,500 + GST), admission (INR 5,000) and exam (INR 3,000 a year) fees are listed separately and are not added in.
+- What changed:
+  - lib/data.ts Christ programDetails.BBA.fees: '₹175K – ₹175K' becomes '₹3,00,000', with a source comment. getExactFee goes from none to exact 3,00,000, so the BBA hub can print Christ's own total.
+  - lib/blog.ts online-bba-fees-india-2026-compared (status redirected, 8 edits): the Christ row is now Rs 3,00,000 and moves to the bottom of the cheapest-first table. The four "most expensive" lines (intro, at-a-glance callout, FAQ and SVG footnote) and the FAQ range now name Christ at Rs 3,00,000. Christ is NAAC A+, so the "graded A+, one band lower" point still holds. updatedAt 2026-11-27.
+- Left:
+  - Christ MCA ₹2.3L matches the portal's "Total- Rs.2,30,000" (row 1a).
+  - data/fees-hub-data.json, lib/content.ts and lib/data-slim.ts carry no Christ BBA figure. data/blog-fee-allowlist.json has no Christ BBA entry; its Christ entry is MCA 230000, which is correct.
+  - Uni-level feeMin 60000 / feeMax 200000 (lib/data.ts, data-slim, fees-hub "₹60K – ₹2L") is a placeholder that the BBA total now exceeds. Not changed: no source gives a uni-level range, and changing it touches the fee gates.
+- Post-5-Dec item (frozen meta): the metaDescription of online-bba-fees-india-2026-compared says "Rs 39,000 to Rs 1,99,000", and the top is now Rs 3,00,000. The post is status redirected, so the meta is not served, but change it when the freeze lifts.
+
+**2. Mysore online MBA ₹160K: STOP-CASE (b), left.**
+- Why it should go: no official Mysore page states ₹1,60,000 (sheet item 3). The portal prints 62,625 / 92,625 / 2,02,940 "Fees" with no stated basis, under a revision banner.
+- What happened: setting lib/data.ts programDetails.MBA.fees to 'Not published' makes check-fee-baseline fail at 205 -> 206. Per the coordinator, the baseline is not raised and the change is reverted. getExactFee is already none for this row, so no hub, profile or EMI card prints it.
+- Already done on the branch: lib/blog.ts online-mba-karnataka-2026 shows "Under revision" and does not quote a Mysore fee. The sheet's lines 43219 and 43277 came from the main checkout, which is behind the branch. Sweep: 0 Mysore lines with 1,60,000, 1.6L, 160K or 6,667 in lib/blog.ts, lib/content.ts, page-content or the coupon and fees-hub data.
+- Q68 asks Rishi.
+
+**3. Amrita per-specialisation fees (4 spec JSONs).**
+- 3a, derived "Total cost of programme" sums (1,87,700 / 2,31,700 / 2,35,700 / 2,55,700): already 0 on the branch. B3 batch 17 replaced them with the programme range (see Q60). The sheet read the main checkout, which still has them.
+- 3b, why: Amrita publishes a Total Tuition Fee (Indian students) for HR, Operations, ESG and IFA, but those four pages printed no fee (rows 4h-4k).
+- 3b, what changed: each fees.body now opens with the published figure, then says registration Rs 700 and examination Rs 2,750 per semester are listed separately and not included:
+  - HR Rs 2,20,000;
+  - Operations Rs 2,24,000;
+  - ESG Rs 1,96,000;
+  - IFA (ACCA) Rs 2,60,000.
+- The source is named in text ("Amrita Online programme page, read 27 November 2026"), with no link to the university site.
+- Q60 is marked ANSWERED, with a pointer to the sheet.
+
+**4. Chandigarh University MBA plan labels and annual fee.**
+- Why: CU's MBA page labels the Rs 1,75,125 / 43,781 a semester / 87,562 a year plan "MBA" and the Rs 1,90,400 / 47,600 / 95,200 plan "Triple Industry Certified MBA" (rows 2a, 2c, 2e). The site called them "with 1 certificate" and "with 3 certificates", and printed 87,563 where CU prints 87,562 (row 2d).
+- What changed (18 edits):
+  - lib/data.ts feeBreakdown.mba mode and perSemester labels are now "MBA plan ..." and "Triple Industry Certified MBA plan ...", and the comment says annual 87,562.
+  - lib/blog.ts: chandigarh-university-online-mba-review (FAQ and 3 table cells) and is-chandigarh-university-online-fake-or-legit-2026 (FAQ, 2 paragraphs, 2 table labels, 87,563 -> 87,562). updatedAt is 2026-11-27 on both.
+  - lib/mba-seo-overrides.ts CU intro (not title or description): the plan names are used and 87,563 becomes 87,562.
+  - lib/coupon-pages.ts CU stackExample and the variants FAQ.
+  - app/compare/[pair]/pairs.ts: 3 FAQ answers.
+  - The CU business-analytics JSON budget line now reads "Rs 1,75,125 (CU's MBA plan, after the 25% Early Bird Scholarship)".
+- getExactFee for CU still returns the same four amounts with the new labels.
+- emiFrom stays 0. The plan card says "Starts at Just RS 7,512/-" with no per-month label in the sheet. The 7,297 the sheet cites was already zeroed in B3 batch 12.
+- 87,563 count: 3 -> 0. The sheet's "about 27 places" came from the main checkout; the branch spec JSONs already carried none.
+- Left, for a later batch:
+  - 24 CU spec JSONs still use the site's own "Tier 1" / "Tier 2" names for the two plans (about 45 segments).
+  - Several of them say Tier 2 carries "PwC" content. The sheet lists CAPM/PMI and Harvard certificates for the Triple plan and does not mention PwC, so the PwC claims need a source check before any rename.
+  - data/blog-fee-allowlist.json notes still say "1 value-added certificate". They are notes, not rendered, and pin only figures.
+
+**5. Questions.**
+- Q66: Christ February 2027 intake against the July-only DEB rows (draft D2).
+- Q67: CU officialUrl confirmation rule (D4).
+- Q68: Mysore fee basis and the baseline stop (D5).
+- Q69: Amrita "General Management" page name (D7).
+- Not filed:
+  - D1 and D3: decided by the coordinator and applied above.
+  - D6: same as Q60, now answered.
+
+Baselines: fee 205, blog-fees 1950, em-dash 227, all unchanged.
+
 ## 2026-11-27 B3 batch 18 round 2: Christ MBA JSON leftovers, JMI peer sentences, facts sheet, QA advisories
 
 Branch fix/b3-batch-18, new commit on a5d0268. Trigger: audits/qa/2026-11-27-b3-batch-18-premerge.md (FAIL on F1 and F2, condition C1, six advisories). App results from that QA stand; the only app edits here are the advisories below.
