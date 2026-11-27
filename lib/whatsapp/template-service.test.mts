@@ -113,15 +113,13 @@ await test('edit: only approved, rejected or paused; refused while a campaign us
   const tpls = await repo.templates()
   const pending = tpls.find(t => t.status === 'PENDING')!
   const rejected = tpls.find(t => t.status === 'REJECTED')!
-  const { f, calls } = fakeMeta([
-    c => c.method === 'POST' && /\/mock_3$/.test(c.url) ? [200, { success: true }] : null,
-    c => c.url.includes('/mock_3?fields=status') ? [200, { status: 'PENDING', category: 'MARKETING' }] : null,
-  ])
+  const { f, calls } = fakeMeta([])
   assert.match((await ts.editTemplateDraft(repo, OWNER, env, f, pending.id, { name: '', language: '', category: 'MARKETING', body: 'New text' }) as any).error, /pending/)
-  // mock_3 is not numeric; the graph call refuses it before any request.
+  // A meta id that is not numeric is refused before any request.
+  ;(rejected as any).meta_id = 'mock_3'
   const r = await ts.editTemplateDraft(repo, OWNER, env, f, rejected.id, { name: '', language: '', category: 'MARKETING', body: 'New text' })
   assert.equal(r.ok, false); assert.equal(calls.length, 0)
-  await repo.updateTemplate(rejected.id, {}); (rejected as any).meta_id = '12345'
+  ;(rejected as any).meta_id = '12345'
   const { f: f2, calls: c2 } = fakeMeta([
     c => c.method === 'POST' && c.url.endsWith('/12345') ? [200, { success: true }] : null,
     c => c.url.includes('/12345?fields=status') ? [200, { status: 'PENDING', category: 'MARKETING' }] : null,

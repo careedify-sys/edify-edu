@@ -56,14 +56,14 @@ export function mockCampaignRepo(): CampaignRepo {
   }
   const approvedTpl = randomUUID()
   templates.set(approvedTpl, {
-    id: approvedTpl, meta_id: 'mock_1', name: 'referral_invite_mock', language: 'en', category: 'MARKETING', status: 'APPROVED',
+    id: approvedTpl, meta_id: '1001', name: 'referral_invite_mock', language: 'en', category: 'MARKETING', status: 'APPROVED',
     components: [{ type: 'BODY', text: 'Mock text. Know someone looking at an online degree? Reply YES and we will call them. Reply STOP to opt out.' }, { type: 'FOOTER', text: 'edifyedu.in' }, { type: 'BUTTONS', buttons: [{ type: 'QUICK_REPLY', text: 'Yes, refer someone' }, { type: 'QUICK_REPLY', text: 'Stop promotions' }] }],
     reason: null, quality: 'UNKNOWN', synced_at: iso(), created_at: iso(4 * DAY), header_file_id: null,
   })
   const pendingTpl = randomUUID()
-  templates.set(pendingTpl, { id: pendingTpl, meta_id: 'mock_2', name: 'referral_reminder_mock', language: 'en', category: 'MARKETING', status: 'PENDING', components: [{ type: 'BODY', text: 'Mock pending template.' }], reason: null, quality: null, synced_at: iso(), created_at: iso(DAY), header_file_id: null })
+  templates.set(pendingTpl, { id: pendingTpl, meta_id: '1002', name: 'referral_reminder_mock', language: 'en', category: 'MARKETING', status: 'PENDING', components: [{ type: 'BODY', text: 'Mock pending template.' }], reason: null, quality: null, synced_at: iso(), created_at: iso(DAY), header_file_id: null })
   const rejTpl = randomUUID()
-  templates.set(rejTpl, { id: rejTpl, meta_id: 'mock_3', name: 'referral_offer_mock', language: 'en', category: 'MARKETING', status: 'REJECTED', components: [{ type: 'BODY', text: 'Mock rejected template.' }], reason: 'INVALID_FORMAT', quality: null, synced_at: iso(), created_at: iso(2 * DAY), header_file_id: null })
+  templates.set(rejTpl, { id: rejTpl, meta_id: '1003', name: 'referral_offer_mock', language: 'en', category: 'MARKETING', status: 'REJECTED', components: [{ type: 'BODY', text: 'Mock rejected template.' }], reason: 'INVALID_FORMAT', quality: null, synced_at: iso(), created_at: iso(2 * DAY), header_file_id: null })
 
   function preview(id: string): Preview {
     const c = campaigns.get(id)

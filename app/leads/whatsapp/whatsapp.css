@@ -228,3 +228,9 @@
 /* Tick-box cells: the whole cell toggles, an easier target on a phone. */
 .leads-scope .wa .tbl td.pick { padding: 0; width: 36px; }
 .leads-scope .wa .tbl td.pick label { display: flex; align-items: center; justify-content: center; padding: 8px 10px; cursor: pointer; min-height: 36px; }
+
+/* Phase 4: media headers in the WhatsApp-style preview */
+.leads-scope .wa .phonebox .wimg { display: block; width: 100%; max-height: 220px; object-fit: cover; border-radius: 8px; background: #d9d3ca; }
+.leads-scope .wa .phonebox .wimgph { display: flex; align-items: center; justify-content: center; height: 140px; border-radius: 8px; background: #d9d3ca; color: var(--slate); font-size: 13px; }
+.leads-scope .wa .phonebox .wdoc { display: flex; gap: 8px; align-items: center; padding: 10px; border-radius: 8px; background: #f3f0eb; font-size: 13px; }
+.leads-scope .wa .phonebox .wbtn .wico { margin-right: 6px; }

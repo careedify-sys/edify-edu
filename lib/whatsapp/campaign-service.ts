@@ -350,7 +350,7 @@ async function allRecipients(repo: CampaignRepo, id: string, state: RecipientSta
 
 export type CampaignView = {
   campaign: CampaignRow; preview: Preview; stats: Stats; settings: CampaignSettings
-  template: { name: string; language: string; status: string; category: string; header: string | null; body: string; footer: string | null; buttons: string[] } | null
+  template: { name: string; language: string; status: string; category: string; header: string | null; headerKind: "image" | "document" | null; headerFileId: string | null; body: string; footer: string | null; buttons: string[] } | null
   budgetLeft: { today: number | null; month: number | null; unitCost: number | null; messagesToday: number; messagesMonth: number }
   recipients: { rows: Array<Awaited<ReturnType<CampaignRepo['recipients']>>['rows'][number] & { marketing: string; opted_out: boolean }>; total: number }
 }
@@ -372,7 +372,7 @@ export async function loadCampaign(repo: CampaignRepo, actor: Actor | null, id: 
   const st = new Map((await repo.numbersStatus(page.rows.map(r => r.phone).filter((p): p is string => !!p))).map(x => [x.phone, x]))
   const unit = settings.marketingRate == null ? null : settings.marketingRate * (1 + settings.taxPct / 100)
   const round2 = (n: number) => Math.round(n * 100) / 100
-  const t = tpl ? { name: tpl.name, language: tpl.language, status: tpl.status, category: tpl.category, ...previewText(tpl.components) } : null
+  const t = tpl ? { name: tpl.name, language: tpl.language, status: tpl.status, category: tpl.category, headerFileId: tpl.header_file_id ?? null, ...previewText(tpl.components) } : null
   return {
     ok: true,
     view: {
