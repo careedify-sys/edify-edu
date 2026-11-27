@@ -19,10 +19,10 @@ import {
   coreSemesters, fitLead, manipalDisambiguation, dyPatilDisambiguation, PLACEMENT_FACTS, type AnswerSection,
 } from './university-answers'
 import { textConflicts, type HubConflict } from './hub-answers'
-import { isExamModeUnverified } from '../exam-mode'
+import { isExamModeUnverified, isExamModeUnknown } from '../exam-mode'
 
-// B7 (2026-11-28): no exam mode is stated for a university in UNVERIFIED_EXAM_MODE.
-const examModeCell = (u: University) => isExamModeUnverified(u) ? 'Not confirmed; ask our counsellor' : (u.examMode || 'Not recorded')
+// B7 / B7b (2026-11-28): no exam mode is stated without a confirmed record (lib/exam-mode.ts).
+const examModeCell = (u: University) => isExamModeUnknown(u) ? 'Not confirmed; ask our counsellor' : (u.examMode || 'Not recorded')
 
 const MANIPAL = new Set(['manipal-university-jaipur-online', 'manipal-academy-higher-education-online', 'sikkim-manipal-university-online'])
 const DYPATIL = new Set(['dr-dy-patil-vidyapeeth-online', 'dy-patil-university-online'])
@@ -177,8 +177,8 @@ export function buildPairAnswers(p: PairInput): PairAnswers {
     faqs.push({ q: `Which has more specialisations, ${nA} or ${nB} online MBA?`, a: `On the programme lists edifyedu.in holds, the ${nA} online MBA has ${uA.programDetails.MBA?.specs.length ?? 0} specialisations and the ${nB} online MBA has ${uB.programDetails.MBA?.specs.length ?? 0}. Check that the one you need is on the current list before you apply.` })
   }
   faqs.push({ q: `Do ${nA} and ${nB} online MBA have the same syllabus?`, a: sylLead })
-  if (!has(/exam/)) faqs.push({ q: `How are ${nA} and ${nB} online MBA exams conducted?`, a: (isExamModeUnverified(uA) || isExamModeUnverified(uB))
-    ? `${[uA, uB].map((u, i) => { const n = i === 0 ? nA : nB; return isExamModeUnverified(u) ? `${n} has not published how and where its online MBA exams are held.` : `edifyedu.in records ${n} exams as ${u.examMode || 'not recorded'}.` }).join(' ')} Talk to our counsellor for how and where exams are held at both.`
+  if (!has(/exam/)) faqs.push({ q: `How are ${nA} and ${nB} online MBA exams conducted?`, a: (isExamModeUnknown(uA) || isExamModeUnknown(uB))
+    ? `${[uA, uB].map((u, i) => { const n = i === 0 ? nA : nB; return isExamModeUnverified(u) ? `${n} has not published how and where its online MBA exams are held.` : isExamModeUnknown(u) ? `edifyedu.in has not confirmed how and where ${n} holds its online MBA exams.` : `edifyedu.in records ${n} exams as ${u.examMode || 'not recorded'}.` }).join(' ')} Talk to our counsellor for how and where exams are held at both.`
     : `edifyedu.in records ${nA} exams as ${uA.examMode || 'not recorded'} and ${nB} exams as ${uB.examMode || 'not recorded'}. Neither proctoring method is recorded, so ask our counsellor for the current exam pattern at both.` })
   if (!has(/placement|career|recruit/)) faqs.push({ q: `Which gives better placements, ${nA} or ${nB} online MBA?`, a: `edifyedu.in cannot rank them on placements, because neither publishes a placement rate or median salary for online MBA graduates on the record we hold. ${nA}: ${placementCell(uA)}. ${nB}: ${placementCell(uB)}.` })
 
