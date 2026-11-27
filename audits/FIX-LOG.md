@@ -1,5 +1,204 @@
 # Fix log
 
+## 2026-11-27 B3 batch 21 round 2: QA fixes (audits/qa/2026-11-27-b3-batch-21-premerge.md)
+
+Branch fix/b3-batch-21, new commit on b90b5e9. No title, seoTitle, h1Title or metaDescription changed. No allowlist entry added.
+
+- **F1, bba-full-form scenario 4.** Why: "Neither publishes a BBA-only placement figure" claimed more than the batch20a sheet shows. Row B7 (S13, S14) only shows that NIRF 2025 gives NMIMS and Symbiosis International a university-wide UG 3-year median, not a BBA-only figure. What changed: the sentence is now the coordinator's wording, "NIRF does not report a BBA-only figure for either: their NIRF medians cover all three-year undergraduate programmes together." updatedAt already 2026-11-27.
+- **C1, mba-vs-pgdm MUJ fee cell.** Why: a bare "Rs 1.56-1.84 lakh" under "Total Fees" had no label, and its floor is the discounted net: 1.84 lakh is the list fee and 1.56 lakh is the price after MUJ's 15% discount (FIX-LOG MUJ Jan 2027 entry). What changed: the cell reads "Rs 1.84 lakh list (Rs 1.56 lakh after 15% discount)". check-blog-fees stays 1948 with the first wording, so MUJ was not named in the cell. Note for QA: the scanner now classes both figures NON_FEE (discount context), not MATCH, so the gate no longer checks this cell against getExactFee.
+- **JAIN rank, same table.** Why: "NIRF University 73" is wrong. lib/data.ts (jain-university-online) holds nirf: 62 (University) and nirfMgt: 73 (Management). What changed: "NIRF Management 73". The same wrong "NIRF University 73" string sits in 10 rows on 8 other posts; those are outside this fix and are listed in the hand-back for a later batch.
+- **Campus rows.** Why: Edify does not track NMIMS Mumbai campus, Symbiosis Pune campus or SCMHRD fees, so "Contact our counsellor" implied a service Edify does not offer. What changed: those three fee cells read "Not tracked (campus programme)".
+- **S1, mba-vs-pgdm one-line frame.** Why: "Online MBA from NMIMS plus JAIN plus Amity is widely accepted at Rs 6-15 LPA lateral" is a university-attributed online outcome with no source row. What changed: the range is gone; the sentence ends "is widely accepted for lateral moves."
+- **FIX-LOG.** The batch 21 CU tagline line overstated the truncation gate; corrected in place.
+- Gates: fee 205, blog-fees 1948, em-dash 227, salary 2344 or lower.
+
+## 2026-11-27 B3 batch 21: batch 20 stop-case resolved, MCA Payscale source, CU tagline
+
+Branch fix/b3-batch-21, from b7c902c, rebased onto the batch 20 round 2 tip (bc888b8). Coordinator decision on the batch 20 stop-case: deleting unverified figures does not weaken check-blog-fees, so delete, never allowlist. No title, seoTitle, h1Title or metaDescription changed. No allowlist entry added.
+
+**1. mba-vs-pgdm-online-india-2026 table and bba-full-form scenario 4 (lib/blog.ts).**
+- Why: the "Year 1 CTC (online)" column mixed unsourced online ranges with NMIMS Mumbai and Symbiosis Pune campus rows under an online header (salary sheet B5, X1-X6), and the BBA "INR 6-8 LPA" conflicted with NIRF UG medians (B7). Deleting them in batch 20 exposed fee figures the scanner had treated as salary context.
+- What changed:
+  - The CTC column is gone (header and all 8 cells).
+  - Each Total Fees cell was then checked against getExactFee through the check-blog-fees scanner. JAIN Online "Rs 1.60-2.98 lakh" and MUJ Online "Rs 1.56-1.84 lakh" resolve MATCH and stay verbatim.
+  - Not MATCH, now "Contact our counsellor": NMIMS Online "Rs 2.10-2.40 lakh" (unresolved), Amity "Rs 1.99 lakh" (MISMATCH), Symbiosis SCDL "Rs 1.65 lakh" (MISMATCH). Campus fees with no approved source, same treatment: NMIMS Mumbai campus "Rs 8-12 lakh", Symbiosis Pune campus "Rs 16-18 lakh", SCMHRD "Rs 18-22 lakh".
+  - bba-full-form: "You spend INR 10-15 lakh on BBA" (campus BBA fee, no source) and "INR 6-8 LPA" are deleted; the sentence now says neither publishes a BBA-only placement figure and NIRF reports campus medians for all undergraduate programmes together. updatedAt 2026-11-25 to 2026-11-27 (mba-vs-pgdm was already 27 Nov).
+- Gates: check-blog-fees 1948, unchanged (both posts back at their baseline counts). Salary baseline 2353 -> 2344 on b7c902c; 2346 -> 2337 after the rebase onto batch 20 round 2.
+
+**2. amity-online-mca-fees-review sources line (lib/blog.ts).**
+- Why: Payscale is not an approved source (salary sheet section D).
+- What changed: "Payscale India (2026)" removed from the sources line. No figure in the post names Payscale. The post's "Amity Online MCA salary outcomes by specialisation" table and year-by-year pay ladder are university-attributed and unsourced; they are left for the next salary chunk. updatedAt was already 2026-11-27.
+
+**3. CU tagline (lib/data.ts, data/string-truncation-allowlist.json).**
+- Why: "India's ONLY online MBA with Triple Industry Certification" has no source, "2 subjects co-taught" overstates CU's "taught by PwC India experts" (batch20 sheet 3f), the string was cut at 120 characters ("PMI ("), and it carried an em dash.
+- Checked first: no title, meta or OG reads tagline. Nothing in app/ or components/ reads it outside app/admin; it reaches the RSC payload and /api/universities with the whole record. So it was rewritten rather than filed for Rishi.
+- What changed: tagline is now "Triple Industry Certified MBA plan: two subjects taught by PwC India experts, plus PMI and Harvard certificates" (111 characters, CU plan name and wording, no superlative, no em dash). The string-truncation allowlist entry for the old text was removed as a tidy-up. (Corrected in round 2: check-string-truncation only notes stale entries, it does not require removing them.) check-string-truncation, check-duplicate-tagline, check-llms-txt and check-data-slim-drift pass.
+
+**4. Salary chunk 20c scope.** Read-only; written to .b8tmp/batch21-20c-chunk.md (not committed).
+
+## 2026-11-27 B3 batch 20 round 2: QA fixes (audits/qa/2026-11-27-b3-batch-20-premerge.md)
+
+Branch fix/b3-batch-20, new commit on b7c902c. Source for every salary figure kept or added: audits/verify/batch20a-salary-facts-2026-11-27.md (S2, S3, S7). No title, seoTitle, h1Title or metaDescription changed. No allowlist entry added.
+
+- **F1, same-page table leftovers.** Why: batch 20 said in prose that these universities publish no online-MBA salary range, but comparison tables on the same pages still printed the old unsourced ranges, so each page contradicted itself.
+  - amity-vs-manipal: the "Avg Salary Range" row (₹5L – ₹12L / ₹4L – ₹15L, sheet A7/A8 CONFLICT) is now "Published salary figure": Amity "Highest package Rs 18 LPA (all programmes, no year given)" (S3), Manipal "About 5.5 LPA MBA average, group-wide across Online Manipal universities (no year given)" (S2).
+  - jain-vs-amity: the row (₹5L - ₹18L / ₹5L - ₹12L, A11/A12) is now JAIN "Not published", Amity "Highest package Rs 18 LPA (all programmes, no year given)".
+  - nmims-vs-symbiosis: the NMIMS "₹5L - ₹10L" (A14) is now "Not published", matching the Symbiosis cell.
+  - online-mba-pune: the "NMIMS Online MBA" column is gone from the Pune sector table (header and 5 cells). The SPPU column is left for the generic-salary chunk.
+  - mba-vs-pgdm: handled in batch 21 (column removed, NMIMS online range deleted from the one-line frame in round 2).
+  - Sweep: .b8tmp/sweep20.cjs takes every post batch 20 touched, finds each "does not publish / publishes no / not published" sentence, and lists any other segment or table cell on the page that pairs the named university with an LPA or lakh p.a. figure. Table cells are attributed through their column header and row label; the first version matched sentences only and missed all four known rows, so it was fixed and re-run until it caught them. After the edits the only hits are the two labelled sheet figures above and mba-vs-pgdm, which batch 21 removes.
+  - check-blog-fees stays 1948: no fee figure was exposed.
+- **F2, IGNOU coupon page (app/coupons/[slug]/page.tsx).** Why: IGNOU runs no coupon (couponCode 'N/A'), but the EMI section printed "The N/A coupon is applied at enrollment". Checking every other couponCode sentence found the same defect throughout: the intro said "The verified IGNOU online MBA discount coupon for 2026 is N/A" with a Rs amount, and the "Why the coupon matters", "at a Glance", "How to Apply" (and its HowTo JSON-LD), buyer's guide, EMI, "Best Time to Apply" sections, the peer-table first row ("via N/A"), the Course schema description and the disclaimer's amount line all described a coupon that does not exist. What changed: one hasCoupon flag (couponCode !== 'N/A'), the same test the hero, countdown and Offer schema already used, now gates all of those. The peer-table row shows page.couponDiscount ("No coupon on this programme") instead, and the scholarships sentence drops its "works with the N/A coupon" clause. Only the IGNOU page is affected; the other 23 render as before. check-coupon-claims passes (24 pages).
+- **F3, UPES.** Why: "UPES does not publish online-MBA salary outcomes" overstated sheet S7/A18: UPES Online prints an "Average Salary Hike" percentage from an alumni survey, just no rupee figure. What changed: FAQ answer (which feeds the FAQPage JSON-LD) and body now say "UPES publishes no rupee salary figure for its online MBA (it reports an alumni-survey salary-hike percentage)". The percentage itself is not quoted.
+- **A4 wording.**
+  - best-online-mba-colleges FAQ: "Amity does not publish online-MBA salary outcomes" now reads "Amity Online publishes only a highest package (Rs 18 LPA, no year given)", consistent with the other posts (S3). This added one LPA figure to a post the salary ratchet counts, so one unsourced generic figure in the same post was removed to pay for it: the fresher row of the career-goal table, "Rs 4 to 7 LPA at junior management", is now "Junior management role". Salary baseline 2353 -> 2346 (this swap plus the deleted table cells).
+  - mba-vs-bba: the sentence no longer starts lowercase ("Edify counsellor interviews (2025 to 2026) give the following pattern."). QA's point that this attributes the whole table to counsellor interviews is not addressed here; that table belongs to a later salary chunk.
+- updatedAt: all 7 edited posts already carry 2026-11-27.
+
+## 2026-11-27 B3 batch 20: coupon EMI claims, CU plan names and PwC claims, salary ratchet gate, university salary figures
+
+Branch fix/b3-batch-20, rebased onto the batch 19 round 2 tip (674fb42). Sources: audits/verify/batch20-facts-2026-11-27.md (EMI, CU plans) and audits/verify/batch20a-salary-facts-2026-11-27.md (salaries), both fact-checker 27 Nov and committed with this batch. Nothing is summed. No title, seoTitle, h1Title or metaDescription source field changed, and none of the 5 frozen review posts was edited.
+
+**Part A. EMI and coupon claims (lib/coupon-pages.ts, app/coupons/[slug]/page.tsx).**
+- Why: no university portal says how an Edify coupon interacts with its EMI plan (sheet 4n), so every "coupon applied first" / "on the reduced fee" line was our claim, not theirs. Several EMI lines also misstated the portal.
+- What changed:
+  - NMIMS: the "3, 6, 9, and 12-month no-cost EMI through education lending partners" claim is gone (sheet 2a UNVERIFIABLE, 2b CONFLICT: NMIMS disclaims any lender). It now says what NMIMS publishes: annual or semester-wise payment, a full-fee option and "Finance options available", and that NMIMS does not recommend or endorse a loan provider. No total.
+  - Amity: keeps the sourced 24-month no-cost EMI from Rs 8,906/month (1a, 1b); the coupon-first sequencing is deleted (1c).
+  - SMU: adds the official condition, zero-cost EMI only on payment of the annual fee (4d).
+  - Symbiosis: EMI described as a four-instalment semester plan, not a monthly EMI (4g, 4h).
+  - MAHE: "Coursera-integrated EMI" becomes no-cost EMI, with Coursera named as a separate benefit (4e).
+  - Galgotias: the implied instalment plan is gone; Galgotias has not published one (4l).
+  - IGNOU: "no formal EMI" removed (4i, portal silent). Rs 66,000 was our own sum of the semester fees, so totalFee, finalFee, the discounts row, emiCompatible and both "IGNOU (Rs 66,000)" peer cells now read "Rs 16,000 per semester (Rs 18,000 for the 3rd) plus registration and development fees", as IGNOU publishes it. totalFee renders through CouponPageCTA, so it was changed too. totalFeeNum 66000 is not rendered anywhere and is left; lib/data.ts IGNOU feeMin/fees are unchanged.
+  - MUJ, LPU, CU, JAIN, Amrita: sourced EMI kept, sequencing removed. DPU unchanged (no sequencing).
+  - Coupon template: "The coupon discount works with EMI payment plans ... the resulting balance can then be split into monthly EMI instalments" printed on every coupon page, including Galgotias and IGNOU. It now says only that the coupon is applied at enrollment; the existing "whether ... is set by the university" sentence stays.
+- Gates: coupon-claims OK, fee 205, blog-fees unchanged by Part A.
+- Not set: MAHE emiFrom 12,167 and SMU emiFrom 4,500. The sheet records them as "EMI from" / "EMI starts at" figures without saying monthly, and SMU's applies only on the annual fee, so neither meets the "monthly EMI starting figure" bar. Listed in the batch report.
+- Note: emiCompatible, stackExample and discounts are not rendered by any page today (FAQs, peerComparisons and totalFee are). Fixed at source anyway.
+
+**Part B. CU certificate plans (26 CU MBA spec JSONs, hub JSON).**
+- Why: CU names its plans "MBA" and "Triple Industry Certified MBA"; "Tier" never appears (sheet 3a). It offers "Upto" 25% / 20% (3c), says PwC India experts teach two MBA subjects with PwC India-branded certificates (3f, 3j), and says PwC-led courses do not lead to jobs (3k). The JSONs said "full MBA modules co-created and co-taught", "unmatched among Indian online MBAs", "identical curriculum", attached a PwC sector practice to each spec, and framed PwC content as a route to Big 4 roles.
+- What changed: "Tier 1" is "MBA plan"; "Tier 2", "premium tier" and "higher tier" are "Triple Industry Certified MBA plan"; "applies a 25%/20%" and every flat "25% early-bird" are "up to 25%/20%". The PwC FAQ now says two subjects taught by PwC India experts with PwC India-branded certificates, plus CU's own no-job-guarantee line. Deleted: "unmatched", "identical curriculum" / "subject list does not change", every PwC sector-practice name, every PwC-to-Big-4 career sentence, and comparison clauses built on PwC co-teaching. The it-management CAPM FAQ is relabelled. Hub honestVerdict: the triple certifications are tied to the Triple Industry Certified MBA plan.
+- Fees are verbatim (1,75,125 / 1,90,400 / 2,33,500 / 2,38,000), matching feeBreakdown. All 26 spec JSONs carry metadata.factSweep, so their fees.body is not rendered (FeeBreakdown is); every other edited section renders.
+- Checks: 0 "Tier 1/Tier 2", "premium tier", "co-taught", "co-created", "unmatched", "identical" left in CU spec JSONs; remaining "tier" hits are "top-tier" / "Tier 1 brand universities (IIM, ISB)", not CU plans. JSON round-trip 431 ok.
+
+**Part C. Salary ratchet gate (scripts/check-blog-salaries.mjs, data/blog-salary-baseline.json, .husky/pre-commit).**
+- Why: check-blog-fees exempts LPA / CTC / per-annum text, so nothing counted salary claims. The batch 20 scope found 2,388 LPA figures across 112 posts, and the ones checked had no official source.
+- What: per-post count of LPA / lakh-per-annum figures (content, FAQs, title, seoTitle, h1Title, metaDescription). A rise fails; a drop lowers and stages the baseline; a slug not in the baseline must be 0; a missing baseline fails (seeding is a manual --seed that refuses to overwrite). A --self-test of 7 cases runs first in the hook. This adds a gate and weakens none.
+- Proof it catches something: injected "<p>Graduates report Rs 9-15 LPA.</p>" into lib/blog.ts; the gate printed "srm-online-mba-2026: 0 -> 1 (+1) (not in baseline, must be 0)" and exited 1. lib/blog.ts was restored with git checkout.
+- Note: core.hooksPath points at the main checkout's .husky, so the gate runs on commits only after this file reaches main.
+
+**Part D. University-attributed and aggregator salary figures (lib/blog.ts, 18 posts plus one label fix).**
+- Why: not one online-programme salary range in scope is published by its university (salary sheet summary). "As reported by the university" ranges were CONFLICTs, and aggregator figures (Kraftshala, 6figr, PayScale, Levels.fyi, Glassdoor) are not approved sources.
+- What changed:
+  - Pune and Mumbai Year 1 / Year 5 ladders deleted (A1-A6). Pune now says Symbiosis, NMIMS and JAIN publish none and Amity Online states only a highest of Rs 18 LPA (no year given). Mumbai lists DY Patil Online's 5.5 to 20 LPA across all online programmes and Amity's Rs 18 LPA, both labelled, and NMIMS publishes none. The SPPU, Welingkar and IDOL rungs went with their ladders: same unsourced pattern, no source.
+  - amity-vs-manipal (A7-A10): Amity Rs 18 LPA highest; MUJ has no MUJ-only figure, Online Manipal's about 5.5 LPA MBA average is labelled group-wide. FAQ and body say neither publishes a range.
+  - jain-vs-amity (A11-A13): JAIN's ₹8-25 LPA is a target, not an outcome, so nothing is quoted; Amity Rs 18 LPA; the false "per official data" median line is gone.
+  - nmims-vs-symbiosis (A14-A15): NMIMS range deleted; the orphan "Symbiosis's floor is ₹1L higher" paragraph and the two blank lines before it deleted.
+  - best-online-mba (A17), UPES review (A18-A19), MAT (A28): figures deleted, standard "does not publish" sentence where one is needed. UPES also loses "pays off over 5-10 years through PSU promotions" (unsourced).
+  - mba-scope (A29): NMIMS removed from the "Rs 12 to 18 LPA" tier list (NIRF median is Rs 20,00,000).
+  - LPU review (B3): the "on-campus cohort" inference is gone; "LPU states packages of up to ₹49.4 LPA for its MBA class of 2025" and does not say it covers online. LPA form kept so check-blog-fees reads it as salary, not fee.
+  - mba-vs-pgdm (B4, B6, X7): NMIMS Mumbai "Rs 18-30 LPA" cell becomes "not published as a range"; the NMIMS campus and online list items lose their ranges.
+  - Aggregators (D1, D3-D15): every figure attributed to an aggregator deleted; caveats and source lines no longer name aggregators (the remaining generic ranges are now described as indicative or from counsellor interviews). D11's Kraftshala market size and growth figures deleted too.
+  - Batch 19 QA A2 leftover: lpu-vs-chandigarh "3-certificate list price" is now "Triple Industry Certified MBA plan list price".
+- updatedAt bumped to 2026-11-27 on every edited post (several were already 27 Nov). check-blog-updated-at: 19 posts changed, all dated.
+- STOP-CASE, not applied: the mba-vs-pgdm "Year 1 CTC (online)" table (B5, X1-X6) and the bba-full-form "INR 6-8 LPA" sentence (B7). Deleting those salary figures exposed fee figures in the same row or sentence that the scanner had treated as salary context: check-blog-fees rose 5 -> 11 for mba-vs-pgdm and 9 -> 10 for bba-full-form. Both edits were reverted (the bba post keeps updatedAt 2026-11-25). Reported to the coordinator.
+- Left for after 5 Dec (frozen posts and metas): Amity review A16 and B1-B2 (add the ABS Noida class of 2022-24 label/source), BITS A20-A21, JAIN A22-A23, IGNOU A24-A25, CU review A26-A27, and the mba-marketing metaDescription (D2).
+- Gates: fee 205 unchanged; blog-fees ratcheted down 1950 -> 1948; em-dash 227 unchanged; salary baseline ratcheted down 2388 -> 2353.
+
+## 2026-11-27 B3 batch 19 round 2: Christ FeeBreakdown lines, Q60 row, rendered head changes, CU plan names
+
+Branch fix/b3-batch-19, on e857e46. Answers QA pre-merge audits/qa/2026-11-27-b3-batch-19-premerge.md (FAIL on F1 and F2, C1 for the coordinator, advisory A2).
+
+**F1. Christ BBA FeeBreakdown printed three unsourced lines (components/FeeBreakdown.tsx).**
+- Why: once getExactFee returned Christ's ₹3,00,000, FeeBreakdown rendered its generic block on the BBA hub and /bba/general-management: "Payment is accepted semester-wise or in full", "EMI available through lending partners" and "Study Material / Included (digital)". Christ prints the BBA fee per year (sheet row 1c), its EMI line names no lending partner (row 1f), and no row covers study material.
+- What changed: christ-university-online joins NO_UNSOURCED_FEE_COMPONENTS, the B3 batch 4 list for exactly this case. Those pages now print "Confirm the payment schedule with our counsellor before you pay." and no Study Material row. The ₹3,00,000 total is unchanged.
+
+**F2. Q60 row had 7 cells (audits/QUESTIONS-FOR-RISHI.md).**
+- Why: a stray "||" put the note in an extra cell, which GFM drops, so the "Rishi's answer" column rendered empty.
+- What changed: the note is now the 6th cell, starting "RESOLVED 27 Nov (answered from the source, not by Rishi)", following the Q6 convention. The row has 6 cells like the header.
+
+**C1. Six rendered titles and metas changed through templates (accepted by the coordinator, 27 Nov).**
+- Why it happened: the templates print a sourced fee and the feeBreakdown labels once they exist, the same treatment every hub with a published fee gets. No source title, seoTitle, h1Title or metaDescription field was edited in batch 19; its entry now says so.
+- The six:
+  - /universities/christ-university-online/bba: title "Christ University Online BBA 2026 | edifyedu.in" became "Christ Online BBA Fees 2026: ₹3,00,000 | edifyedu.in".
+  - The same hub's description, og and twitter tags now carry the fee.
+  - /universities/christ-university-online/bba/general-management: description "fees on request" became "₹3,00,000 fees". Title unchanged.
+  - /compare/chandigarh-vs-lpu, /compare/amity-vs-chandigarh and /compare/manipal-jaipur-vs-chandigarh: description and og:description read "MBA plan ... Triple Industry Certified MBA plan" instead of "with 1 certificate ... with 3 certificates", from the feeBreakdown labels.
+  - /fees: description "published total fee for 60" became "61".
+- Checked against scripts/check-protected-pages.mjs: none of these paths is in FREEZE_SLUGS (8 review posts) or in data/protected-ai-pages.csv. The gate passes.
+
+**A2. Leftover CU certificate wording (lib/blog.ts, lib/coupon-pages.ts).**
+- Why: CU names its plans "MBA" and "Triple Industry Certified MBA" (batch19 sheet 2a and 2e; batch20 sheet item 3). Rows 1-2 of the fake-or-legit table already used the plan names, rows 3-4 and the coupon did not, so one table used two vocabularies.
+- What changed:
+  - is-chandigarh-university-online-fake-or-legit-2026: table rows 3-4 and the two paragraphs below ("1-certificate MBA", "3-certificate MBA") now use "MBA plan" / "Triple Industry Certified MBA plan". updatedAt was already 2026-11-27.
+  - online-mba-entrepreneurship-india-2026 and online-mba-event-management-india-2026 FAQs: "standard tier" / "Premium 3-certificate tier (Harvard, PwC, PMI CAPM)" become the two plan names, with "PwC India" as CU prints it (batch20 sheet 3e). updatedAt 2026-11-25 to 2026-11-27.
+  - CU coupon: the certifications row, the exclusion and the FAQ use the plan names. The FAQ says what each plan carries (Harvard; Harvard plus PwC India and PMI), per batch20 sheet 3d-3e.
+- Fee figures and fee sentences are otherwise verbatim. Gates: fee 205, blog-fees 1950, em-dash 227, all unchanged.
+- Left: lpu-vs-chandigarh-university-online-mba-2026 still says "₹2.38L (3-certificate list price)" in one table cell. Outside this list; batch 20 can pick it up.
+
+## 2026-11-27 B3 batch 19: Christ BBA fee, CU plan labels and annual fee, Amrita per-specialisation tuition, Mysore MBA (stop-case)
+
+Branch fix/b3-batch-19, on the batch 18 round 2 tip (02552a9). Source: audits/verify/batch19-facts-2026-11-27.md (fact-checker, 27 Nov), committed with this batch. It reads online.christuniversity.in, www.cuonlineedu.in/mba, www.uni-mysore.in, onlineamrita.com and the deb.ugc.ac.in register. Nothing is summed: separate registration, admission and exam fees stay separate lines. No title, seoTitle or metaDescription source field changed. Six rendered heads changed through templates; round 2 (above) lists them.
+
+**1. Christ online BBA fee (lib/data.ts, lib/blog.ts).**
+- Why: the site showed ₹175K / Rs 1,75,000. Christ's BBA fee tab prints "For Indian Students ... Total- Rs.3,00,000" (Rs 1,00,000 a year for 3 years, as printed). Sheet row 1c is a CONFLICT. Application (INR 1,500 + GST), admission (INR 5,000) and exam (INR 3,000 a year) fees are listed separately and are not added in.
+- What changed:
+  - lib/data.ts Christ programDetails.BBA.fees: '₹175K – ₹175K' becomes '₹3,00,000', with a source comment. getExactFee goes from none to exact 3,00,000, so the BBA hub can print Christ's own total.
+  - lib/blog.ts online-bba-fees-india-2026-compared (status redirected, 8 edits): the Christ row is now Rs 3,00,000 and moves to the bottom of the cheapest-first table. The four "most expensive" lines (intro, at-a-glance callout, FAQ and SVG footnote) and the FAQ range now name Christ at Rs 3,00,000. Christ is NAAC A+, so the "graded A+, one band lower" point still holds. updatedAt 2026-11-27.
+- Left:
+  - Christ MCA ₹2.3L matches the portal's "Total- Rs.2,30,000" (row 1a).
+  - data/fees-hub-data.json, lib/content.ts and lib/data-slim.ts carry no Christ BBA figure. data/blog-fee-allowlist.json has no Christ BBA entry; its Christ entry is MCA 230000, which is correct.
+  - Uni-level feeMin 60000 / feeMax 200000 (lib/data.ts, data-slim, fees-hub "₹60K – ₹2L") is a placeholder that the BBA total now exceeds. Not changed: no source gives a uni-level range, and changing it touches the fee gates.
+- Post-5-Dec item (frozen meta): the metaDescription of online-bba-fees-india-2026-compared says "Rs 39,000 to Rs 1,99,000", and the top is now Rs 3,00,000. The post is status redirected, so the meta is not served, but change it when the freeze lifts.
+
+**2. Mysore online MBA ₹160K: STOP-CASE (b), left.**
+- Why it should go: no official Mysore page states ₹1,60,000 (sheet item 3). The portal prints 62,625 / 92,625 / 2,02,940 "Fees" with no stated basis, under a revision banner.
+- What happened: setting lib/data.ts programDetails.MBA.fees to 'Not published' makes check-fee-baseline fail at 205 -> 206. Per the coordinator, the baseline is not raised and the change is reverted. getExactFee is already none for this row, so no hub, profile or EMI card prints it.
+- Already done on the branch: lib/blog.ts online-mba-karnataka-2026 shows "Under revision" and does not quote a Mysore fee. The sheet's lines 43219 and 43277 came from the main checkout, which is behind the branch. Sweep: 0 Mysore lines with 1,60,000, 1.6L, 160K or 6,667 in lib/blog.ts, lib/content.ts, page-content or the coupon and fees-hub data.
+- Q68 asks Rishi.
+
+**3. Amrita per-specialisation fees (4 spec JSONs).**
+- 3a, derived "Total cost of programme" sums (1,87,700 / 2,31,700 / 2,35,700 / 2,55,700): already 0 on the branch. B3 batch 17 replaced them with the programme range (see Q60). The sheet read the main checkout, which still has them.
+- 3b, why: Amrita publishes a Total Tuition Fee (Indian students) for HR, Operations, ESG and IFA, but those four pages printed no fee (rows 4h-4k).
+- 3b, what changed: each fees.body now opens with the published figure, then says registration Rs 700 and examination Rs 2,750 per semester are listed separately and not included:
+  - HR Rs 2,20,000;
+  - Operations Rs 2,24,000;
+  - ESG Rs 1,96,000;
+  - IFA (ACCA) Rs 2,60,000.
+- The source is named in text ("Amrita Online programme page, read 27 November 2026"), with no link to the university site.
+- Q60 is marked ANSWERED, with a pointer to the sheet.
+- Latent, found in the post-commit build:
+  - The four bodies do not render. All Amrita spec JSONs carry metadata.factSweep, so components/UniSpecBody.tsx renders FeeBreakdown from lib/data.ts instead of fees.body. 0 of the 4 built pages contain "Total Tuition Fee".
+  - Showing the figures needs Amrita feePlans in lib/data.ts with a specs list per plan (lib/fee-plans.ts getFeePlans picks a plan by spec). That also puts a plan table on the hub and the other spec pages, so it is left for a decision, not done here.
+
+**4. Chandigarh University MBA plan labels and annual fee.**
+- Why: CU's MBA page labels the Rs 1,75,125 / 43,781 a semester / 87,562 a year plan "MBA" and the Rs 1,90,400 / 47,600 / 95,200 plan "Triple Industry Certified MBA" (rows 2a, 2c, 2e). The site called them "with 1 certificate" and "with 3 certificates", and printed 87,563 where CU prints 87,562 (row 2d).
+- What changed (18 edits):
+  - lib/data.ts feeBreakdown.mba mode and perSemester labels are now "MBA plan ..." and "Triple Industry Certified MBA plan ...", and the comment says annual 87,562.
+  - lib/blog.ts: chandigarh-university-online-mba-review (FAQ and 3 table cells) and is-chandigarh-university-online-fake-or-legit-2026 (FAQ, 2 paragraphs, 2 table labels, 87,563 -> 87,562). updatedAt is 2026-11-27 on both.
+  - lib/mba-seo-overrides.ts CU intro (not title or description): the plan names are used and 87,563 becomes 87,562.
+  - lib/coupon-pages.ts CU stackExample and the variants FAQ.
+  - app/compare/[pair]/pairs.ts: 3 FAQ answers.
+  - The CU business-analytics JSON budget line now reads "Rs 1,75,125 (CU's MBA plan, after the 25% Early Bird Scholarship)".
+- getExactFee for CU still returns the same four amounts with the new labels.
+- emiFrom stays 0. The plan card says "Starts at Just RS 7,512/-" with no per-month label in the sheet. The 7,297 the sheet cites was already zeroed in B3 batch 12.
+- 87,563 count: 3 -> 0. The sheet's "about 27 places" came from the main checkout; the branch spec JSONs already carried none.
+- Left, for a later batch:
+  - 24 CU spec JSONs still use the site's own "Tier 1" / "Tier 2" names for the two plans (about 45 segments).
+  - Several of them say Tier 2 carries "PwC" content. The sheet lists CAPM/PMI and Harvard certificates for the Triple plan and does not mention PwC, so the PwC claims need a source check before any rename.
+  - data/blog-fee-allowlist.json notes still say "1 value-added certificate". They are notes, not rendered, and pin only figures.
+
+**5. Questions.**
+- Q66: Christ February 2027 intake against the July-only DEB rows (draft D2).
+- Q67: CU officialUrl confirmation rule (D4).
+- Q68: Mysore fee basis and the baseline stop (D5).
+- Q69: Amrita "General Management" page name (D7).
+- Not filed:
+  - D1 and D3: decided by the coordinator and applied above.
+  - D6: same as Q60, now answered.
+
+Baselines: fee 205, blog-fees 1950, em-dash 227, all unchanged.
+
 ## 2026-11-27 B3 batch 18 round 2: Christ MBA JSON leftovers, JMI peer sentences, facts sheet, QA advisories
 
 Branch fix/b3-batch-18, new commit on a5d0268. Trigger: audits/qa/2026-11-27-b3-batch-18-premerge.md (FAIL on F1 and F2, condition C1, six advisories). App results from that QA stand; the only app edits here are the advisories below.

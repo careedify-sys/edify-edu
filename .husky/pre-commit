@@ -33,6 +33,15 @@ node scripts/check-first-hand.mjs || exit 1
 echo "pre-commit: check-blog-fees"
 npx tsx scripts/check-blog-fees.mjs || exit 1
 
+# Salary ratchet. check-blog-fees exempts LPA / CTC / per-annum text, so no
+# gate counted salary claims: 2,388 LPA figures across 112 posts on 2026-11-27,
+# and the "reported salary ranges" checked in B3 batch 20 had no official
+# source. Blocks any per-post rise; counts may only go down. Baseline:
+# data/blog-salary-baseline.json. See scripts/check-blog-salaries.mjs.
+echo "pre-commit: check-blog-salaries"
+npx tsx scripts/check-blog-salaries.mjs --self-test || exit 1
+npx tsx scripts/check-blog-salaries.mjs || exit 1
+
 # Rule 4d's input. A fee RANGE claimed identically by two or more universities
 # is one placeholder copied, not a price: nine universities carry the
 # byte-identical "₹48K – ₹117K" for MA. Rule 4a measures width and cannot see

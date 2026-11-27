@@ -28,6 +28,8 @@ const NO_UNSOURCED_FEE_COMPONENTS = new Set([
   'vignan-university-online', 'yenepoya-university-online',
   'amrita-vishwa-vidyapeetham-online', 'arka-jain-university-online', 'chandigarh-university-online',
   'chitkara-university-online', 'kurukshetra-university-online', 'lovely-professional-university-online',
+  // B3 batch 19 round 2: Christ prints its BBA fee per year and names no lending partner or study material.
+  'christ-university-online',
 ])
 
 export default function FeeBreakdown({ u, pd, program, cleanName, headingOverride, spec }: Props) {
