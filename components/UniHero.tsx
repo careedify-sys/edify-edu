@@ -126,7 +126,7 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
   // page can print a track fee, which provenance.fee does not cover.
   const feeChecked = !spec && feeValue !== FEE_COUNSELLOR_LINE ? feeCheckedLine(u, program) : null
   // B1: DEB session beside the approval, only where the eyebrow claims it.
-  const debLine = modeVerified && !basis ? debSessionLine(u) : null
+  const debLine = modeVerified && !basis ? debSessionLine(u, program) : null
 
   const stats = [
     { label: 'Total Fees', value: feeValue, highlight: true, sub: feeDetail, checked: feeChecked },

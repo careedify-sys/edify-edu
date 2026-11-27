@@ -33,10 +33,16 @@ export function feeCheckedLine(u: Pick<University, 'provenance'>, program: strin
   return d ? `Fee checked ${d} on the university portal` : null
 }
 
-/** "UGC-DEB entitled, Online mode, 2026-27 session. Register checked 18 Nov 2026" */
-export function debSessionLine(u: Pick<University, 'provenance'>): string | null {
+/**
+ * "UGC-DEB entitled, Online mode, 2026-27 session. Register checked 18 Nov 2026",
+ * for the MBA only: provenance.deb records the register's MBA row, and the
+ * sheets checked no other programme (B1 QA F1: it printed on 92 BBA/BCA/MCA
+ * pages). named: prefix "Online MBA: " where the page covers several programmes.
+ */
+export function debSessionLine(u: Pick<University, 'provenance'>, program: string, named = false): string | null {
+  if (program !== 'MBA') return null
   const deb = u.provenance?.deb
   const d = formatCheckedDate(deb?.checkedOn)
   if (!deb || !d || !deb.session) return null
-  return `UGC-DEB entitled, ${deb.value} mode, ${deb.session} session. Register checked ${d}`
+  return `${named ? 'Online MBA: ' : ''}UGC-DEB entitled, ${deb.value} mode, ${deb.session} session. Register checked ${d}`
 }

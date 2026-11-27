@@ -376,8 +376,8 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     layout="column"
                   />
                   {/* B1: DEB session beside the approval, only where the page claims DEB approval. */}
-                  {!basis && debSessionLine(u) && (
-                    <p className="deb-session" style={{fontSize:11,color:'#94A3B8',marginTop:10,lineHeight:1.4}}>{debSessionLine(u)}</p>
+                  {!basis && u.programs.includes('MBA') && debSessionLine(u, 'MBA', true) && (
+                    <p className="deb-session" style={{fontSize:11,color:'#94A3B8',marginTop:10,lineHeight:1.4}}>{debSessionLine(u, 'MBA', true)}</p>
                   )}
                   <div style={{marginTop:16,paddingTop:14,borderTop:'1px solid rgba(255,255,255,0.08)'}}>
                     <div style={{fontSize:11,color:'#94A3B8',marginBottom:4}}>Govt Job Valid?</div>

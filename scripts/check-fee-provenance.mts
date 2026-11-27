@@ -15,9 +15,12 @@
 //      plus every record in UNIVERSITY_PROVENANCE. Each must carry
 //      provenance.fee with value, sourceUrl and checkedOn.
 //   2. KNOWN_GAPS holds the queue universities with no dated portal check of
-//      their printed fee, each with its question number. It is a ratchet: a
-//      gap that gains provenance fails until it is removed, and no id may be
-//      added without a QUESTIONS-FOR-RISHI row.
+//      their printed fee, each with its question number. It is a ratchet:
+//      every id must be in ALLOWED_GAP_IDS, a frozen set that may only lose
+//      entries (QA round 1 swapped BITS's dated fee for an invented "Q999" gap
+//      and the gate passed); every cited Q number must be a row in
+//      audits/QUESTIONS-FOR-RISHI.md; and a gap that gains provenance fails
+//      until it is removed from both lists.
 //   3. Every provenance entry, in or out of scope, is complete: value,
 //      https sourceUrl on the fact's own authority, checkedOn as YYYY-MM-DD and
 //      not in the future, and a sheet that exists in the repo.
@@ -30,7 +33,7 @@
 //
 // Run: npx tsx scripts/check-fee-provenance.mts [--self-test]
 
-import { existsSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { UNIVERSITIES, UNIVERSITY_PROVENANCE, type UniProvenance, type University } from '../lib/data'
@@ -50,6 +53,13 @@ const QUEUE_10 = [
   'shoolini-university-online',
   'adichunchanagiri-university-online',
 ]
+
+// Frozen at B1 round 2 (2026-11-28). Remove an id when its fee is dated; never
+// add one. Adding a gap is how a dated fee could quietly become undated.
+const ALLOWED_GAP_IDS: ReadonlySet<string> = new Set([
+  'dayananda-sagar-university-online',
+  'adichunchanagiri-university-online',
+])
 
 // Only shrinks. Each entry names the question that unblocks it.
 const KNOWN_GAPS: Record<string, string> = {
@@ -72,20 +82,38 @@ function localToday(): string {
   return `${n.getFullYear()}-${String(n.getMonth() + 1).padStart(2, '0')}-${String(n.getDate()).padStart(2, '0')}`
 }
 
+/** Q numbers that exist as rows ("| Q81 | ...") in audits/QUESTIONS-FOR-RISHI.md. */
+function questionRows(): Set<string> {
+  const p = join(ROOT, 'audits', 'QUESTIONS-FOR-RISHI.md')
+  if (!existsSync(p)) return new Set()
+  return new Set([...readFileSync(p, 'utf8').matchAll(/^\|\s*(Q\d+[a-z]?)\s*\|/gm)].map(m => m[1]))
+}
+
 export function validate(
   unis: University[],
   prov: Record<string, UniProvenance>,
   gaps: Record<string, string>,
   today: string,
+  allowedGaps: ReadonlySet<string> = ALLOWED_GAP_IDS,
+  questions: Set<string> = questionRows(),
 ): string[] {
   const errors: string[] = []
   const byId = new Map(unis.map(u => [u.id, u]))
+
+  if (questions.size === 0) errors.push('audits/QUESTIONS-FOR-RISHI.md has no Q rows; cannot check gap questions')
+  for (const id of allowedGaps) {
+    if (prov[id]?.fee) errors.push(`${id}: now carries fee provenance; remove it from ALLOWED_GAP_IDS and KNOWN_GAPS (both only shrink)`)
+  }
 
   for (const id of Object.keys(prov)) {
     if (!byId.has(id)) errors.push(`${id}: UNIVERSITY_PROVENANCE names an id that is not in UNIVERSITIES`)
   }
   for (const id of Object.keys(gaps)) {
     if (!QUEUE_10.includes(id)) errors.push(`${id}: KNOWN_GAPS may only hold queue universities`)
+    if (!allowedGaps.has(id)) errors.push(`${id}: not in ALLOWED_GAP_IDS. The gap list is frozen; date the fee instead of adding a gap`)
+    const q = gaps[id].match(/^(Q\d+[a-z]?):/)?.[1]
+    if (!q) errors.push(`${id}: gap reason must start with its question number, e.g. "Q81: ..."`)
+    else if (!questions.has(q)) errors.push(`${id}: cites ${q}, which is not a row in audits/QUESTIONS-FOR-RISHI.md`)
     if (prov[id]?.fee) errors.push(`${id}: now carries fee provenance; remove it from KNOWN_GAPS (the list only shrinks)`)
   }
 
@@ -114,6 +142,10 @@ export function validate(
         else if (!onHost(f.sourceUrl, bare(host(u.officialUrl)))) errors.push(`${at}: sourceUrl ${f.sourceUrl} is not on the officialUrl host ${u.officialUrl}`)
       } else if (!onHost(f.sourceUrl, AUTHORITY[key])) {
         errors.push(`${at}: sourceUrl must be on ${AUTHORITY[key]}: ${f.sourceUrl}`)
+      }
+      for (const extra of f.alsoSourceUrls ?? []) {
+        const want = key === 'fee' ? (u.officialUrl ? bare(host(u.officialUrl)) : '') : AUTHORITY[key]
+        if (!/^https:\/\//i.test(extra) || !want || !onHost(extra, want)) errors.push(`${at}: alsoSourceUrls entry must be https on ${want || 'the officialUrl host'}: ${extra}`)
       }
       if (!f.sheet) errors.push(`${at}: missing sheet (audits/verify/... or audits/FIX-LOG.md)`)
       else if (!/^audits\/(verify\/[^/]+\.md|FIX-LOG\.md)$/.test(f.sheet)) errors.push(`${at}: sheet must be an audits/verify/*.md file or audits/FIX-LOG.md: ${f.sheet}`)
@@ -159,13 +191,16 @@ function selfTest(): void {
     { name: 'fee source off the portal', mutate: p => { p[id].fee!.sourceUrl = 'https://collegebandhu.com/x' }, expect: /not on the officialUrl host/ },
     { name: 'queue university loses its provenance', mutate: p => { delete p[id] }, expect: new RegExp(`${id}: no provenance.fee`) },
     { name: 'gap gains provenance but stays listed', mutate: p => { p['adichunchanagiri-university-online'] = { fee: p[id].fee } }, expect: /remove it from KNOWN_GAPS/ },
+    { name: 'new gap added (dated fee swapped for a gap)', mutate: p => { delete p['bits-pilani-work-integrated-online'].fee; return { ...KNOWN_GAPS, 'bits-pilani-work-integrated-online': 'Q81: reused question' } }, expect: /bits-pilani-work-integrated-online: not in ALLOWED_GAP_IDS/ },
+    { name: 'gap cites a question with no row', mutate: () => ({ ...KNOWN_GAPS, 'adichunchanagiri-university-online': 'Q999: no such question' }), expect: /cites Q999, which is not a row/ },
+    { name: 'gap with no question number', mutate: () => ({ ...KNOWN_GAPS, 'adichunchanagiri-university-online': 'payable total unclear' }), expect: /must start with its question number/ },
     { name: 'deb without session', mutate: p => { const k = Object.keys(p).find(x => p[x].deb)!; delete (p[k].deb as Partial<NonNullable<UniProvenance['deb']>>).session }, expect: /deb: missing session/ },
   ]
   let failed = 0
   for (const c of cases) {
     const p = clone()
-    c.mutate(p)
-    const errs = validate(UNIVERSITIES, p, KNOWN_GAPS, today)
+    const gaps = c.mutate(p) ?? KNOWN_GAPS
+    const errs = validate(UNIVERSITIES, p, gaps, today)
     const caught = errs.some(e => c.expect.test(e))
     console.log(`  ${caught ? 'caught' : 'MISSED'}: ${c.name}`)
     if (!caught) failed++

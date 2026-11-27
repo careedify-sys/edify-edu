@@ -263,6 +263,8 @@ export interface FactProvenance<T = string> {
   sourceUrl: string
   checkedOn: string
   session?: string
+  /** Further pages on the same authority, when one value spans two tables. */
+  alsoSourceUrls?: string[]
   sheet: string
 }
 
@@ -582,7 +584,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
             { mode: 'EMI', instalment: 8906, count: 24, total: 213750 },
           ],
           notes: ['Amity says the registration fee is included in the programme fee.'],
-          source: 'Rishi, confirmed 2026-11-13 (Amity MBA and International Finance fee pages agree)', checkedOn: '2026-11-13',
+          source: 'Rishi, confirmed 2026-11-13 (Amity MBA and International Finance fee pages agree); re-read on amityonline.com 2026-11-18 (audits/verify/amity-university-online-2026-11-18.md)', checkedOn: '2026-11-18',
         },
         {
           id: 'premium', label: 'Premium tracks (Hospital and Healthcare Management, International Finance (ACCA), Dual Specialisation)',
@@ -595,7 +597,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
             { mode: 'EMI', instalment: 13023, count: 24, total: 312560 },
           ],
           notes: ['Amity says the registration fee is included in the programme fee.'],
-          source: 'Rishi, confirmed 2026-11-13 (Amity MBA and International Finance fee pages agree)', checkedOn: '2026-11-13',
+          source: 'Rishi, confirmed 2026-11-13 (Amity MBA and International Finance fee pages agree); re-read on amityonline.com 2026-11-18 (audits/verify/amity-university-online-2026-11-18.md)', checkedOn: '2026-11-18',
         },
       ],
     },
@@ -2031,7 +2033,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
           { mode: 'With 2+ years of work experience (₹55,000 concession)', total: 315000 },
         ],
         extras: [{ label: 'Registration', amount: 1000 }],
-        source: 'Rishi, confirmed 2026-11-13', checkedOn: '2026-11-13',
+        source: 'Rishi, confirmed 2026-11-13; both totals re-read on ssodl.edu.in/ug-pg-fees 2026-11-18 (audits/verify/symbiosis-university-online-2026-11-18.md)', checkedOn: '2026-11-18',
       }],
     },
     logo: '/logos/university_logos/SSODL.svg',
@@ -11058,7 +11060,7 @@ export const UNIVERSITY_PROVENANCE: Record<string, UniProvenance> = {
     fee: { value: '₹1,60,000–₹2,98,000', sourceUrl: 'https://onlinejain.com/online-mba', checkedOn: '2026-11-18', sheet: 'audits/verify/jain-university-online-2026-11-18.md' },
     deb: deb2627('audits/verify/jain-university-online-2026-11-18.md'),
     naac: { value: 'A++', sourceUrl: NAAC_LIST, checkedOn: '2026-11-18', session: 'Cycle 2, declared 2021-12-06', sheet: 'audits/verify/jain-university-online-2026-11-18.md' },
-    nirf: { value: 'University #62, Management #73', sourceUrl: NIRF_UNIVERSITY_2025, checkedOn: '2026-11-18', session: '2025', sheet: 'audits/verify/jain-university-online-2026-11-18.md' },
+    nirf: { value: 'University #62, Management #73', sourceUrl: NIRF_UNIVERSITY_2025, alsoSourceUrls: ['https://www.nirfindia.org/Rankings/2025/ManagementRanking.html'], checkedOn: '2026-11-18', session: '2025', sheet: 'audits/verify/jain-university-online-2026-11-18.md' },
   },
   'symbiosis-university-online': {
     fee: { value: '₹3,15,000–₹3,70,000', sourceUrl: 'https://ssodl.edu.in/ug-pg-fees', checkedOn: '2026-11-18', sheet: 'audits/verify/symbiosis-university-online-2026-11-18.md' },

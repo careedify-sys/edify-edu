@@ -1,5 +1,13 @@
 # Fix log
 
+## 2026-11-28 · B1 round 2: QA F1 and F2, Amity and Symbiosis fee dates, JAIN NIRF source (branch fix/b1-provenance)
+
+QA report: audits/qa/2026-11-28-b1-provenance-premerge.md (FAIL, two blockers). Merged origin/main (0a8999e) first; QUESTIONS conflict resolved as Q80 then Q81.
+- **F1, DEB line on non-MBA pages.** Why: every `deb` entry rests on the register's MBA row, but `debSessionLine(u)` had no programme, so the line claimed a 2026-27 Online entitlement on 92 BBA/BCA/MCA pages that no sheet checked. Now `debSessionLine(u, program, named)` returns null unless program is MBA. The hub passes its programme. The profile names it: "Online MBA: UGC-DEB entitled, Online mode, 2026-27 session. Register checked 18 Nov 2026".
+- **F2, KNOWN_GAPS could grow.** Why: QA swapped BITS's dated fee for a "Q999" gap and the gate passed. Now `ALLOWED_GAP_IDS` is a frozen set (DSU, ACU) that may only lose entries, any gap outside it fails, each gap must start with a Q number that is a row in audits/QUESTIONS-FOR-RISHI.md, and an allowed id that gains fee provenance fails until removed. Self-test went from 8 to 11 cases (new gap added, missing question row, no question number); all caught.
+- **Advisory 7, two fee dates on Amity and Symbiosis.** Why: the payment-mode table said "Fees checked on 13 November 2026" beside the new 18 Nov line. Both 18 Nov sheets re-read the same figures on the portal (Amity standard rows MATCH, premium one-time/annual MATCH and the batch-2/17 corrected semester and EMI totals equal the published ones; Symbiosis both totals MATCH). `feePlans.checkedOn` is now 2026-11-18 on Amity's two tracks and Symbiosis's one, with the sheet named in `source`. `feeVerifiedOn` is left at 2026-11-13: it is not rendered, and it describes the whole record's fees, which the MBA-only sheets did not re-read. The Symbiosis "Registration" label question (Q16) is unchanged.
+- **Advisory 4, JAIN NIRF.** Why: the value names Management #73 but cited only the University table. Added `alsoSourceUrls: ['https://www.nirfindia.org/Rankings/2025/ManagementRanking.html']` (the sheet's Management row source); the gate checks every extra URL is on nirfindia.org.
+
 ## 2026-11-28 · B1: fee, DEB, NAAC and NIRF provenance; fee date and DEB session rendered; check-fee-provenance gate (branch fix/b1-provenance)
 
 - **Why:** Phase B's exit gate is "checkedOn present on every fee for those 10". Before this, 26 records carried a `feeVerifiedOn` that no page rendered, and nothing tied a date to a figure: JAIN's 30 Oct date was a BBA/MCA read, and a fee could change while keeping its old date. A reader (or a model) had no way to see when a fee was last true.
