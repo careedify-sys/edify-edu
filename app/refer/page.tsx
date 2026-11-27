@@ -14,8 +14,8 @@ import { REFERRAL_TERMS, REFERRAL_PRIVACY } from '@/lib/referrals/terms'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Refer a friend',
-  description: 'Refer a friend, family member or colleague to Edify for independent guidance on online degrees.',
+  title: { absolute: 'Refer a friend | edifyedu.in' },
+  description: 'Refer a friend, family member or colleague to edifyedu.in for independent guidance on online degrees.',
   robots: { index: false, follow: false, nocache: true, googleBot: { index: false, follow: false } },
   alternates: { canonical: null },
 }
@@ -29,10 +29,10 @@ export default async function ReferPage() {
     <div className="bg-[#f1f5f9] min-h-screen">
       <div className="bg-navy text-white py-12 border-b-4 border-[#B8892A]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <p className="text-[#B8892A] font-semibold tracking-wide uppercase text-xs mb-3">Edify referral</p>
+          <p className="text-[#B8892A] font-semibold tracking-wide uppercase text-xs mb-3">edifyedu.in referral</p>
           <h1 className="text-3xl md:text-4xl font-extrabold mb-3">Refer a friend, family member or colleague</h1>
           <p className="text-base md:text-lg text-white/80">{disclosure}</p>
-          <p className="text-sm text-white/60 mt-3">Edify compares public UGC-DEB, NAAC and NIRF data, with no paid rankings.</p>
+          <p className="text-sm text-white/60 mt-3">edifyedu.in compares public UGC-DEB, NAAC and NIRF data, with no paid rankings.</p>
         </div>
       </div>
 

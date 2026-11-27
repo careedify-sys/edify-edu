@@ -73,7 +73,7 @@ export default function ReferForm({ programmes, universities, terms, privacy, te
           </button>
         </div>
         <p className="text-slate-600 text-sm max-w-md mx-auto">
-          Keep this ID. Quote it if you contact Edify about this referral. An Edify counsellor will call your friend soon.
+          Keep this ID. Quote it if you contact edifyedu.in about this referral. An edifyedu.in counsellor will call your friend soon.
         </p>
         <button type="button" onClick={() => { setDone(null); setF(EMPTY); opened.current = Date.now() }} className="mt-5 text-sm font-semibold text-[#f97316] underline">
           Refer another friend
@@ -130,7 +130,7 @@ export default function ReferForm({ programmes, universities, terms, privacy, te
       <div className="space-y-3">
         <label className="flex gap-3 items-start text-sm text-navy">
           <input type="checkbox" className="mt-1 w-4 h-4 accent-[#B8892A]" checked={f.permission} onChange={set('permission')} {...aria('permission')} />
-          <span>The person I am referring agreed that I can share their name and number with Edify, and that Edify can contact them about education guidance.</span>
+          <span>The person I am referring agreed that I can share their name and number with edifyedu.in, and that edifyedu.in can contact them about education guidance.</span>
         </label>{err('permission')}
       </div>
 
