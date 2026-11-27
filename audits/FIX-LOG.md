@@ -1,5 +1,38 @@
 # Fix log
 
+## 2026-11-28 B3 batch 25: discount-word narrowing in check-blog-fees, exposed figures fixed
+
+Branch fix/b3-batch-25, on top of batch 24 round 3 (b34594c). Option (a) as chosen by the coordinator. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. data-science-salary-india-2026-scope-jobs not touched. updatedAt 2026-11-28 on all 64 edited posts.
+
+**Why.** The old scanner treated any figure within reach of a discount word (scholarship, discount, saves, off, waiver, grant and four more) as NON_FEE. That exempted real fees that only sat near the word: "MUJ costs Rs 1,56,400 after the 15% discount" was never checked against lib/data.ts. The narrowing makes the gate check every fee and exempt only the discount amount itself.
+
+**Scanner v4 (scripts/lib/blog-fee-scan.mjs).**
+- The ten discount sources leave the proximity list. A figure is exempt as a discount only when it is the amount of the discount ("save Rs X", "Rs X off", "Rs X scholarship", "Rs X cheaper", "gap of Rs X"), via AMOUNT_BEFORE_RE and AMOUNT_AFTER_RE. The row-header rule is narrowed the same way.
+- Every other proximity pattern is unchanged, including the per-semester rule (kept as it is today, by decision).
+- Table hits are de-duplicated (uniqueByUid), and a table caption now feeds programme detection.
+- feePlans: a plan's list fee is accepted as its own exact interval, and a row interval is built only when the row has a numeric total. Why: Shoolini's MBA plan has a row with an instalment and no total, so the plan span was NaN and the published Rs 2,00,000 list fee failed. The plan span itself is unchanged. Dropping the NaN instead would have widened the span to Rs 23,700 to Rs 2,00,000 and accepted wrong figures.
+- Hold list: the 8 posts under the 5 Dec title freeze keep the pre-v4 exemption until EXEMPTION_HOLD_UNTIL = 2026-12-05, because their bodies cannot be edited before then. Measured now, the hold covers a net 9 figures (chandigarh-mba +2, amity-mba +5, bits +3, symbiosis -1; the first estimate was about 28 gross).
+
+**Gate (scripts/check-blog-fees.mjs).**
+- Fails after 2026-12-05 while any post is still on the hold list. The date is never moved forward. I proved this with the clock set to 2026-12-06: FAIL, listing the 8 posts.
+- Self-test before the scan: six discount-rule cases (a fee near a discount word must be checked; a discount amount must stay exempt) and two feePlans cases (the Shoolini list fee is MATCH; Rs 2,45,000 for the same plan is MISMATCH).
+
+**Counts.**
+- Unverified total: 1861 at b34594c (old rule) to 1800 (new rule). Every slug is at or below its baseline, and the gate lowered the baseline itself.
+- On the same tree, the old rule gives 1843 and the new rule 1800. Moves: 236 NON_FEE to MATCH, 38 UNRESOLVED to MATCH, 15 NON_FEE to MISMATCH, 5 NON_FEE to UNRESOLVED, 3 MISMATCH to NON_FEE, 8 UNRESOLVED to NON_FEE.
+
+**Content fixes (64 posts), by the batch rules.**
+- MATCH figures kept verbatim.
+- A figure in a sentence about a named online programme is now attributed: a multi-university sentence "Uni at Rs X" became "Uni (Rs X)", or the university name went into the sentence or the table's first cell. Wrong values were corrected to the labelled getExactFee value. Examples: Sharda BBA Rs 1,20,000 is now Rs 1,35,000; NMIMS BBA Rs 1,50,000 is now Rs 1,41,000; CU BBA Rs 1,40,000 is now Rs 1,31,250, and the CU BBA "sticker Rs 1,75,000" is gone; CU Triple plan Rs 1,80,400 "after 18%" is now Rs 1,90,400 after up to 20% Early Bird; BVP Rs 1,60,000 is now Rs 1,78,000; CU MBA Rs 1,16,250 and Rs 1.65 lakh / Rs 2.20 lakh are now Rs 1,75,125 / Rs 2,33,500.
+- Derived figures deleted, never recomputed: "saves Rs X versus", "commands Rs X premium", price gaps, net differences, scholarship savings, effective-fee bands, per-year and per-semester splits of the CU plans, and MAHE BBA first-semester scholarship maths. MAHE BBA and Amrita BBA have no exact fee in lib/data.ts, so their comparison figures went and the sentences now compare without numbers.
+- Campus, state and generic figures with no data behind them (AMU, TMU, MGR, Madras, MZU, Sathyabama, campus MBA and BCA ranges, budget brackets) deleted, or the sentence now points to our counsellor.
+
+**Plan for the next batches.**
+- Batch 26 (option b): a gate-only data file, data/per-semester-fees.json. It is seeded only from audits/verify/per-semester-fees-2026-11-27.md section E, array 1: the 40 rows where the blog figure matches the portal, each with its source URL and date. Array 2 is left out. Only check-blog-fees reads the file.
+- Before the gate's university matching changes, fix the section C misattributions: UU fees shown as SMU or MAHE, ARKA JAIN fees shown as JAIN, the LPU MBA tagged "MA", DPU Pune tagged Navi Mumbai, and IGNOU's annual Rs 10,300 shown per semester.
+- Batches 27 and later: turn on the per-semester rule post by post, with a flat ratchet. Delete the derived per-semester columns, the "x 6" lines and the 22 section B figures that are our own divisions.
+- 5 Dec: when the title freeze lifts, fix the 8 held posts and empty EXEMPTION_HOLD_SLUGS. The gate fails from 6 Dec until that is done.
+
 ## 2026-11-28 B3 batch 24 round 3: mba-fees campus FAQs, three leftover multipliers, wider sweep
 
 Branch fix/b3-batch-24, on top of round 2 (84e09b0). QA findings R1-R2 and advisories A1-A2 (audits/qa/2026-11-27-b3-batch-24-premerge-rerun.md). No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. data-science-salary-india-2026-scope-jobs not touched. updatedAt 2026-11-28 on every edited post (the date rolled over during the round).

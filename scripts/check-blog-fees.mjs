@@ -21,9 +21,60 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { spawnSync } from 'node:child_process'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
-import { scanAllPosts, perSlugUnverifiedCounts } from './lib/blog-fee-scan.mjs'
+import { scanAllPosts, scanPost, perSlugUnverifiedCounts, EXEMPTION_HOLD_UNTIL, EXEMPTION_HOLD_SLUGS } from './lib/blog-fee-scan.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
+
+// Time-boxed hold on the v4 discount-word narrowing (B3 batch 25). The listed
+// posts keep the pre-v4 exemption only until EXEMPTION_HOLD_UNTIL. After that
+// date the gate fails while any post is still listed: fix its figures, then
+// remove it from EXEMPTION_HOLD_SLUGS in scripts/lib/blog-fee-scan.mjs. The
+// date is never moved forward to make this pass.
+{
+  const d = new Date()
+  const today = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+  if (today > EXEMPTION_HOLD_UNTIL && EXEMPTION_HOLD_SLUGS.length > 0) {
+    console.error(`check-blog-fees: FAIL. The discount-word exemption hold expired on ${EXEMPTION_HOLD_UNTIL} and ${EXEMPTION_HOLD_SLUGS.length} post(s) are still listed:`)
+    for (const s of EXEMPTION_HOLD_SLUGS) console.error(`  ${s}`)
+    console.error('Fix their newly exposed figures and remove them from EXEMPTION_HOLD_SLUGS in scripts/lib/blog-fee-scan.mjs.')
+    process.exit(1)
+  }
+}
+
+// Self-test: the narrowed rule must catch a fee that only sits near a
+// discount word, and must still exempt a figure that is the discount amount.
+// A detector that cannot fail is not a gate (FIX-LOG, feedback 2026-09).
+{
+  const CASES = [
+    ['MUJ online MBA costs Rs 9,99,000 after the 15% discount.', false],
+    ['Pay upfront and save Rs 27,600 on the MUJ online MBA.', true],
+    ['Amity gives Rs 10,000 off the online MBA.', true],
+    ['NMIMS offers a Rs 20,000 scholarship on the online MBA.', true],
+    ['LPU online MBA is Rs 40,000 cheaper than Amity online MBA.', true],
+    ['The gap of Rs 50,000 matters for the online MBA.', true],
+  ]
+  const bad = []
+  for (const [text, wantNonFee] of CASES) {
+    const r = scanPost({ slug: '__selftest__', status: 'published', title: 'self-test', content: `<p>${text}</p>` })[0]
+    const isNonFeeRow = r?.klass === 'NON_FEE'
+    if (!r || isNonFeeRow !== wantNonFee) bad.push(`${text} -> ${r ? r.klass : 'no figure'}`)
+  }
+  // v4 feePlans list interval: a plan whose rows lack a total must still
+  // accept its own list fee, and must not widen to accept an unrelated figure.
+  const KLASS_CASES = [
+    ['Shoolini University online MBA list fee is Rs 2,00,000.', 'MATCH'],
+    ['Shoolini University online MBA list fee is Rs 2,45,000.', 'MISMATCH'],
+  ]
+  for (const [text, want] of KLASS_CASES) {
+    const r = scanPost({ slug: '__selftest__', status: 'published', title: 'self-test', content: `<p>${text}</p>` })[0]
+    if (!r || r.klass !== want) bad.push(`${text} -> ${r ? r.klass : 'no figure'} (want ${want})`)
+  }
+  if (bad.length) {
+    console.error('check-blog-fees: FAIL (self-test). The discount-word rule did not behave as specified:')
+    for (const b of bad) console.error(`  ${b}`)
+    process.exit(1)
+  }
+}
 const BASELINE_PATH = join(ROOT, 'data', 'blog-fee-baseline.json')
 const ALLOWLIST_PATH = join(ROOT, 'data', 'blog-fee-allowlist.json')
 

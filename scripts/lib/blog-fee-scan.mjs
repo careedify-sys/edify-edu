@@ -185,6 +185,11 @@ function findAllUnis(text) {
   return hits.filter(h => h.uid !== '__REJECT__').sort((a, b) => a.index - b.index)
 }
 
+function uniqueByUid(hits) {
+  const seen = new Set()
+  return hits.filter(h => (seen.has(h.uid) ? false : (seen.add(h.uid), true)))
+}
+
 function firstUniInText(text) {
   const hits = findAllUnis(text)
   return hits[0]?.uid || null
@@ -254,6 +259,67 @@ function isNonFee(context) {
   for (const re of NON_FEE_PATTERNS) if (re.test(context)) return true
   return false
 }
+
+// -- v4 (2026-11-27, B3 batch 25): discount words exempt by label only ------
+//
+// isNonFee() above exempts any figure within 80 characters of a discount
+// word. QA (batches 22 and 23) showed what that hides: "MUJ online MBA costs
+// Rs 9,99,000 after the 15% discount" passed as NON_FEE. Blog scanning now
+// lets gap, save, saving, discount, "off", cashback, scholarship, waiver,
+// cheaper and lower exempt a figure only when the figure IS that amount:
+// "save Rs X", "Rs X off", "a Rs X scholarship", "Rs X cheaper", "gap of
+// Rs X". A programme fee that merely sits near those words is checked.
+// The "per semester" proximity rule is unchanged in v4; batch 26 adds a
+// verify-sheet-backed per-semester table and batches 27+ narrow it post by
+// post (FIX-LOG 2026-11-27, B3 batch 25).
+// isNonFee() itself is unchanged: scripts/audit-spec-fees.mjs imports it.
+const DISCOUNT_SOURCES = new Set([
+  /\bgap\b\s*:?/i, /\bsave(?:s|d)?\b/i, /\bsaving(?:s)?\b/i,
+  /\bdiscount(?:ed)?\b/i, /\boff\b\s*[,.)]/i, /\bcashback\b/i,
+  /\bscholarship\b/i, /\bwaiver\b/i, /\bcheaper\b/i, /\blower\b/i,
+].map(r => r.source))
+const PROXIMITY_PATTERNS = NON_FEE_PATTERNS.filter(re => !DISCOUNT_SOURCES.has(re.source))
+if (PROXIMITY_PATTERNS.length !== NON_FEE_PATTERNS.length - DISCOUNT_SOURCES.size) {
+  throw new Error(`blog-fee-scan: discount-word split drifted (${PROXIMITY_PATTERNS.length} of ${NON_FEE_PATTERNS.length})`)
+}
+
+const AMOUNT_BEFORE_RE = /\b(?:save[sd]?|saving[s]?(?:\s+of)?|discount(?:ed)?\s+(?:of|by)|(?:scholarship|waiver|cashback|concession|rebate)\s+(?:of|worth)|gap\s+(?:of|is|was)|gap\s*:|difference\s+(?:of|is)|cheaper\s+by|lower\s+by|less\s+by|reduced?\s+by|reduction\s+of|knocks?\s+off|takes?\s+off)\s+(?:up\s*to\s+|upto\s+|about\s+|around\s+|roughly\s+|nearly\s+|almost\s+|over\s+|a\s+further\s+|an?\s+(?:extra|additional)\s+)?$/i
+const AMOUNT_AFTER_RE = /^\s*(?:off\b|(?:in\s+)?savings?\b|discount\b|scholarship\b|waiver\b|cashback\b|concession\b|rebate\b|cheaper\b|lower\b|less\b|gap\b|more\s+expensive\b|costlier\b|higher\b)/i
+function isDiscountAmount(combined, start, len) {
+  const before = stripTags(combined.slice(Math.max(0, start - 50), start)).replace(/\s+/g, ' ')
+  const after = stripTags(combined.slice(start + len, start + len + 30)).replace(/\s+/g, ' ')
+  return AMOUNT_BEFORE_RE.test(before) || AMOUNT_AFTER_RE.test(after)
+}
+
+// Row and column labels: discount words exempt only a label that names the
+// amount itself ("Discount", "Savings", "Scholarship amount"), not a fee
+// after it ("Fee after discount", "Effective total after discount").
+function isRowHeaderNonFeeNarrow(label) {
+  if (!label) return false
+  if (/\bafter\b|\bnet\b|\btotal\b|\bfee\b|\bcost\b|\bprice\b/i.test(label) && /discount|savings|scholarship|waiver|effective|discounted|net\s+of/i.test(label)) {
+    const rest = label.replace(/discount(?:ed)?|savings|scholarship|waiver|effective|net\s+of|inclusive\s+of|exclusive\s+of/gi, '')
+    return ROW_HEADER_NON_FEE.test(rest)
+  }
+  return ROW_HEADER_NON_FEE.test(label)
+}
+
+// Time-boxed hold (Rishi's title freeze, check-protected-pages FREEZE_SLUGS):
+// these posts keep the pre-v4 discount-word exemption until their freeze ends, so
+// their bodies are not edited while their titles are held still. This is
+// not a weakening: their figures were already exempt before v4. After
+// EXEMPTION_HOLD_UNTIL, check-blog-fees fails while any slug is still listed.
+export const EXEMPTION_HOLD_UNTIL = '2026-12-05'
+export const EXEMPTION_HOLD_SLUGS = [
+  'is-manipal-university-jaipur-fake-or-legit-2026',
+  'chandigarh-university-online-mba-review',
+  'amity-online-mba-review-2026',
+  'smu-online-mba-review',
+  'ignou-online-mba-review-2026',
+  'symbiosis-online-mba-review-2026',
+  'jain-online-mba-review-2026',
+  'bits-pilani-online-mba-review-2026',
+]
+const HOLD = new Set(EXEMPTION_HOLD_SLUGS)
 
 // A table row's first cell often labels the whole row ("Add-on Charges",
 // "Per-Semester Fee", "Registration Fee", "Effective Total after Discount").
@@ -383,7 +449,8 @@ function indexTables(html) {
       if (r.cells.length && r.cells.every(c => c.isHeader)) { headerCells = r.cells; break }
     }
     if (!headerCells && rows[0]) headerCells = rows[0].cells
-    tables.push({ start: tStart, end: tEnd, rows, headerCells: headerCells || [] })
+    const caption = stripTags((tHtml.match(/<caption\b[^>]*>([\s\S]*?)<\/caption>/i) || [])[1] || '').trim()
+    tables.push({ start: tStart, end: tEnd, rows, headerCells: headerCells || [], caption })
   }
   return tables
 }
@@ -468,21 +535,23 @@ function attribute(post, html, tables, pos, rawLen) {
   // 2. Table cell
   const cell = findRow(tables, pos)
   if (cell && cell.row) {
-    const rowHits = findAllUnis(cell.row.firstText)
+    // Dedupe by university: "Symbiosis SSODL Pune" is two aliases of one
+    // university and must attribute, not fall through as ambiguous (v4).
+    const rowHits = uniqueByUid(findAllUnis(cell.row.firstText))
     if (rowHits.length === 1) {
       return { uid: rowHits[0].uid, confidence: 'high', rule: 'table-first-cell' }
     }
     // Table's header row may name a university (uni-as-column layout).
     // Check the column header text of THIS cell first (most specific).
     if (cell.columnHeader) {
-      const colHits = findAllUnis(cell.columnHeader)
+      const colHits = uniqueByUid(findAllUnis(cell.columnHeader))
       if (colHits.length === 1) {
         return { uid: colHits[0].uid, confidence: 'high', rule: 'table-column-header' }
       }
     }
     // Fall back to the full concatenated header row.
     const allHeaderText = (cell.table.headerCells || []).map(h => h.text).join(' | ')
-    const headerHits = findAllUnis(allHeaderText)
+    const headerHits = uniqueByUid(findAllUnis(allHeaderText))
     if (headerHits.length === 1) {
       return { uid: headerHits[0].uid, confidence: 'medium', rule: 'table-header' }
     }
@@ -561,8 +630,12 @@ function getAcceptableIntervals(u, program) {
   for (const plan of u.feePlans?.[key] ?? []) {
     const amts = [...plan.rows.map(r => r.total), ...(plan.list ? [plan.list] : [])]
     intervals.push({ min: Math.min(...amts), max: Math.max(...amts), source: `feePlans:${plan.id}` })
+    // v4: the plan's list fee is accepted on its own. A row that carries only an
+    // instalment (Shoolini "Offer 2: per semester") leaves the span above NaN, so
+    // the list fee never matched; the span itself stays as it was.
+    if (plan.list) intervals.push({ min: plan.list, max: plan.list, source: `feePlans:${plan.id}:list` })
     for (const r of plan.rows) {
-      intervals.push({ min: r.total, max: r.total, source: `feePlans:${plan.id}:${r.mode}` })
+      if (typeof r.total === 'number') intervals.push({ min: r.total, max: r.total, source: `feePlans:${plan.id}:${r.mode}` })
       if (r.instalment) intervals.push({ min: r.instalment, max: r.instalment, source: `feePlans:${plan.id}:${r.mode}:instalment` })
     }
   }
@@ -631,6 +704,15 @@ export function scanAllPosts() {
   const rows = []
   for (const post of BLOG_POSTS) {
     if (post.status !== 'published') continue
+    scanPost(post, rows)
+  }
+  return rows
+}
+
+// One post's figures, appended to rows. Exported for the gate's self-test,
+// which scans injected text without touching lib/blog.ts.
+export function scanPost(post, rows = []) {
+  {
     const html = post.content || ''
     const faqBlob = (post.faqs || []).map(f => `${f.q}\n${f.a}`).join('\n')
     const combined = html + '\n' + faqBlob
@@ -700,7 +782,13 @@ export function scanAllPosts() {
       const cellForNonFee = findRow(tables, matchStart)
       const rowLabel = cellForNonFee?.row?.firstText || ''
       const colHeader = cellForNonFee?.columnHeader || ''
-      if (isNonFee(tightCtx) || isRowHeaderNonFee(rowLabel) || isRowHeaderNonFee(colHeader) || isBucketRange(combined, matchStart, consumedLen)) {
+      const held = HOLD.has(post.slug)
+      const nonFee = held
+        ? (isNonFee(tightCtx) || isRowHeaderNonFee(rowLabel) || isRowHeaderNonFee(colHeader))
+        : (PROXIMITY_PATTERNS.some(re => re.test(tightCtx)) ||
+            isDiscountAmount(combined, matchStart, consumedLen) ||
+            isRowHeaderNonFeeNarrow(rowLabel) || isRowHeaderNonFeeNarrow(colHeader))
+      if (nonFee || isBucketRange(combined, matchStart, consumedLen)) {
         rows.push({
           slug: post.slug, publishedAt: post.publishedAt, raw: rawFull,
           value, valueMin: vMin, valueMax: vMax,
@@ -712,6 +800,9 @@ export function scanAllPosts() {
 
       const attr = attribute(post, combined, tables, matchStart, consumedLen)
       let prog = detectProgramme(combined.slice(Math.max(0, matchStart - 200), matchStart + consumedLen + 200))
+      // v4: a table caption names the programme of every row ("Top online MCA
+      // programmes") when the 200-character window does not.
+      if (!prog && cellForNonFee?.table?.caption) prog = detectProgramme(cellForNonFee.table.caption)
       if (!prog) prog = detectProgramme(`${post.slug.replace(/-/g, ' ')} ${post.title}`)
 
       const cls = classify({
@@ -746,6 +837,7 @@ export function scanAllPosts() {
   }
   return rows
 }
+
 
 // Per-slug count of NON-verified fee figures. Verified = MATCH or
 // allowlisted. NON_FEE is excluded. UNRESOLVED, MISMATCH, SUPPRESSED,
