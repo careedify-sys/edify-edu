@@ -17,5 +17,11 @@ export function createSupabaseServiceClient() {
   }
   return createClient(url, key, {
     auth: { persistSession: false, autoRefreshToken: false },
+    // Next 14.2 stores GET fetches in its Data Cache with no expiry unless the
+    // render already went dynamic (cookies(), a POST route). `force-dynamic`
+    // alone does not stop it: /refer served the empty disclosure read on
+    // 28 Nov after the setting was filled, and the cron sweep's settings read
+    // could miss a switch change. Service-role reads are never cacheable.
+    global: { fetch: (input, init) => fetch(input, { ...init, cache: 'no-store' }) },
   });
 }

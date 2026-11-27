@@ -174,7 +174,7 @@ export const UNIVERSITY_PROGRAM_LINKS: Record<string, Partial<Record<string, Pro
       programPage: '/universities/ignou-online/mba',
       keywordLink: { slug: 'ignou-online-mba-review-2026', anchor: 'IGNOU Online MBA fees and review' },
       blogs: [
-        { slug: 'ignou-online-mba-review-2026', label: 'IGNOU Online MBA Fees 2026: ₹66,000 and Review' },
+        { slug: 'ignou-online-mba-review-2026', label: 'IGNOU Online MBA Fees 2026 and Review' },
         { slug: 'is-ignou-fake-or-legit-2026', label: 'Is IGNOU Fake or Legit? The Real Question Is Not the One You Are Asking' },
       ],
     },

@@ -424,12 +424,12 @@ export const PAIRS: Record<string, PairConfig> = {
     program: 'MBA',
     defaultSpec: 'finance',
     faqs: [
-      { q: 'Is IGNOU or LPU better for online MBA?', a: 'IGNOU is a Central Government university with Rs 66,000 total fee. LPU is a private university with NAAC A++, listing at Rs 2,00,000 (Rs 1,46,240 to Rs 1,61,600 by payment plan). LPU offers more specialisations and modern programme delivery.' },
+      { q: 'Is IGNOU or LPU better for online MBA?', a: 'IGNOU is a Central Government university charging Rs 16,000 per semester (Rs 18,000 for the 3rd) plus registration and development fees. LPU is a private university with NAAC A++, listing at Rs 2,00,000 (Rs 1,46,240 to Rs 1,61,600 by payment plan). LPU offers more specialisations and modern programme delivery.' },
       { q: 'What is the fee difference?', a: 'IGNOU MBA costs Rs 66,000 total. LPU costs Rs 1,61,600 to Rs 2,00,000.' },
       { q: 'Is IGNOU MBA valid for government jobs?', a: 'Yes. IGNOU is a Central Government institution. Its MBA is valid for all government jobs, PSU recruitment, and higher education. LPU MBA is also valid but IGNOU carries specific advantage for government sector applications.' },
       { q: 'Which has more specialisations?', a: 'LPU offers 12 MBA specialisations with dual-spec option. IGNOU offers 5 (Financial, Marketing, HR, Operations, Services Management). LPU has broader choice.' },
     ],
-    verdictA: ['Budget is your absolute priority (Rs 66,000 total is unmatched)', 'Government job or PSU recruitment is your target', 'You want a Central Government university brand on your degree'],
+    verdictA: ['Budget is your absolute priority', 'Government job or PSU recruitment is your target', 'You want a Central Government university brand on your degree'],
     verdictB: ['You want 12 specialisation options with dual-spec flexibility', 'NAAC A++ and modern LMS platform matter to you', 'Private sector career with recruiter-partner network is your goal'],
   },
 
