@@ -478,6 +478,7 @@ export default async function CatchAllProgramPage(
       specMbaUnis.length || universities.length,
       hasSpecFees ? formatINR(Math.min(...specFeeMinVals)) : null,
       hasSpecFees ? formatINR(Math.max(...specFeeMaxVals)) : null,
+      specMbaUnis.map(u => ({ id: u.id, name: u.name })),
     )
     const specEditorial = SPEC_HUB_EDITORIAL[subSlug]
     const allSpecFAQs = specEditorial ? [...specEditorial.faqs, ...specFAQs] : specFAQs

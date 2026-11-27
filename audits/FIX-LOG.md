@@ -1,5 +1,26 @@
 # Fix log
 
+## 2026-11-28 · B7 follow-up: spec-hub FAQ exam sentence from lib/exam-mode.ts (branch fix/b7-exam-mode, not pushed)
+
+- **Why:** lib/specFaqs.ts answered "Can I do online MBA in X while working full-time?" with "Exams are online and
+  AI-proctored from home" on every /programs/mba/{spec} hub, for every university listed. VIT and BITS hold end-semester
+  exams at centres (CONFIRMED_EXAM_MODE 'Exam Centre'), 7 universities have no sourced mode, and about 111 records have
+  no exam-mode record at all, so the sentence was false or a guess on every hub that listed them.
+- **What:** getSpecFAQs takes the listed universities (server page and MBASpecHubClient pass the same uniIds set) and
+  the sentence comes from examSentenceForUniversities in lib/exam-mode.ts. It may only claim what holds for every
+  university on the page: "from home" when all are in the new CONFIRMED_FROM_HOME set (the audit's 11 "from home or
+  anywhere" rows), "online" when all are confirmed 'Online'. Otherwise it names the confirmed Exam Centre universities
+  ("... hold end-semester exams in person at designated exam centres.") and ends with the counsellor line when an
+  UNVERIFIED_EXAM_MODE university is listed, or "Check the exam format with our counsellor before you enrol." when only
+  unrecorded ones are. No mode is invented. The "AI-proctored" claim is dropped: no sheet sources it for all.
+- **Other shared templates checked:** no other live template hard-codes "from home" for every university.
+  components/LearningExperience.tsx does ("from the absolute comfort of your home") but nothing imports it. The
+  per-university templates (SectionExams, UniversityPageClient FAQ) branch on examMode and are deferred item 4 below.
+- **Deferred, logged for later (coordinator, 28 Nov):** (1) the 30-40% / 60-70% weighting sentences in the DY Patil,
+  Sharda and Shoolini exams bodies, likely templated; (3) the NMIMS tagline "slot-based online exams" in lib/data.ts,
+  not rendered; (4) about 111 records with no exam-mode record still get the default "from home" wording in
+  SectionExams and the profile FAQ.
+
 ## 2026-11-28 · B7 exam mode: counsellor line for 7 universities with no sourced mode (branch fix/b7-exam-mode, not pushed)
 
 - **Why:** every hub, spec page, profile FAQ and AI-answer block printed "Online proctored examinations from home. No

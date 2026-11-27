@@ -77,6 +77,56 @@ export const isExamModeUnverified = (u: Pick<University, 'id'>) => UNVERIFIED_EX
 
 export const EXAM_MODE_COUNSELLOR_LINE = 'Talk to our counsellor for how and where exams are held.'
 
+/** For a page that covers universities with no exam-mode record: states no mode. */
+export const EXAM_MODE_NEUTRAL_LINE = 'Check the exam format with our counsellor before you enrol.'
+
+/**
+ * Confirmed 'Online' universities whose own page says exams are taken from home
+ * or from anywhere (audits/exam-mode-verified-2026-11-16.md, "From home or
+ * anywhere (11)"). The other confirmed 'Online' universities state online
+ * proctoring but not the location, so "from home" is not said for them.
+ */
+export const CONFIRMED_FROM_HOME: ReadonlySet<string> = new Set([
+  'amity-university-online',
+  'amrita-vishwa-vidyapeetham-online',
+  'bharati-vidyapeeth-university-online',
+  'dr-dy-patil-vidyapeeth-online',
+  'lovely-professional-university-online',
+  'mangalayatan-university-online',
+  'manipal-academy-higher-education-online',
+  'manipal-university-jaipur-online',
+  'sikkim-manipal-university-online',
+  'parul-university-online',
+  'uttaranchal-university-online',
+])
+
+/**
+ * B7 follow-up (2026-11-28). One exam sentence for a page that lists several
+ * universities (the /programs/mba/{spec} FAQ). It may only claim what holds for
+ * every university listed: "from home" when all are in CONFIRMED_FROM_HOME,
+ * "online" when all are confirmed 'Online'. Otherwise it names the confirmed
+ * Exam Centre universities and sends the reader to the counsellor for the rest.
+ */
+export function examSentenceForUniversities(unis: ReadonlyArray<{ id: string; name: string }>): string {
+  if (!unis.length) return EXAM_MODE_NEUTRAL_LINE
+  const modes = unis.map(u => CONFIRMED_EXAM_MODE[u.id])
+  if (unis.every(u => CONFIRMED_FROM_HOME.has(u.id) && CONFIRMED_EXAM_MODE[u.id] === 'Online')) {
+    return 'Exams are online and proctored, and can be taken from home.'
+  }
+  if (modes.every(m => m === 'Online')) return 'Exams are online at every university listed here.'
+  const centres = unis.filter(u => CONFIRMED_EXAM_MODE[u.id] === 'Exam Centre').map(u => u.name).sort()
+  const parts: string[] = []
+  if (centres.length) {
+    const list = centres.length === 1 ? centres[0] : `${centres.slice(0, -1).join(', ')} and ${centres[centres.length - 1]}`
+    parts.push(`${list} ${centres.length === 1 ? 'holds' : 'hold'} end-semester exams in person at designated exam centres.`)
+  }
+  const unconfirmed = unis.filter(u => CONFIRMED_EXAM_MODE[u.id] === undefined)
+  if (unconfirmed.length) {
+    parts.push(unconfirmed.some(u => UNVERIFIED_EXAM_MODE.has(u.id)) ? `Exam format differs by university. ${EXAM_MODE_COUNSELLOR_LINE}` : `Exam format differs by university. ${EXAM_MODE_NEUTRAL_LINE}`)
+  }
+  return parts.join(' ')
+}
+
 /** True only when the record's examMode equals the confirmed value for that university. */
 export const isExamModeConfirmed = (u: Pick<University, 'id' | 'examMode'>) =>
   CONFIRMED_EXAM_MODE[u.id] !== undefined && CONFIRMED_EXAM_MODE[u.id] === u.examMode
