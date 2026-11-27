@@ -2195,8 +2195,20 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     examMode: 'Online',
     govtRecognised: true,
     psuEligible: true,
-    feeMin: 60000,
-    feeMax: 200000,
+    // MBA read 2026-11-27 from onlineyenepoya.com/programs/online-mba-finance and
+    // /online-mba-marketing ("Yearly Fee Plan ₹ 25,000 | Total Fee Plan ₹ 50,000";
+    // audits/verify/fees-mku-mumbai-mysore-yenepoya-amitymca-2026-11-27.md). Registration
+    // Rs 1,500 one-time and exam Rs 3,000 a year are separate published lines, never added
+    // into the total. The International Finance (ACCA) variant ("₹50,000 + ₹54,000*" plus an
+    // affiliation fee) is a different programme fee and is not carried here. The earlier
+    // Rs 1,20,000 had no portal source; that figure sits in the portal's JS bundle for
+    // another programme. feeMin/feeMax were the 60000/200000 placeholder and now carry the
+    // MBA fee, as on the Sharda record.
+    officialUrl: 'https://onlineyenepoya.com',
+    feeVerifiedOn: '2026-11-27',
+    programFees: { mba: { fee: 50000 } },
+    feeMin: 50000,
+    feeMax: 50000,
     emiFrom: 0,
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
@@ -2209,7 +2221,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       
       'MBA': {
         specs: ['Finance', 'Marketing', 'Human Resource Management'],
-        fees: '₹120K – ₹120K',
+        fees: '₹50,000',
         duration: '2 Yrs',
         roles: ['Marketing Executive', 'Brand Trainee', 'Digital Marketing Executive', 'Sales Trainee'],
         avgSalary: '',
@@ -3796,6 +3808,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programDetails: {
       'MBA': {
         specs: ['Logistics & Supply Chain Management', 'Operations Management', 'Human Resource Management', 'Finance', 'Marketing Management', 'Project Management'],
+        // Portal state 2026-11-27 (uni-mysore.in/online-mba-degree-program;
+        // audits/verify/fees-mku-mumbai-mysore-yenepoya-amitymca-2026-11-27.md): INR 62,625,
+        // 92,625 and 2,02,940 with no label, under a "fee revision is currently in process"
+        // banner. No page shows 1,60,000. getExactFee returns none for this row, so the figure
+        // is not published; it stays here until a labelled portal fee replaces it.
         fees: '₹160K – ₹160K',
         duration: '2 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],

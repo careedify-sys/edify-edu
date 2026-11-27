@@ -1,5 +1,69 @@
 # Fix log
 
+## 2026-11-27 · B3 batch 15: Yenepoya MBA fee from the portal, Mysore 1,60,000 removed, derived fee comparisons in spec JSON, UPES spec fee range, Q59 rewritten as a mode question (branch fix/b3-batch-15)
+
+- **Source:** the B3 batch 15 brief and audits/verify/fees-mku-mumbai-mysore-yenepoya-amitymca-2026-11-27.md (portal
+  pages read 27 Nov, each with URL and date). No fee, EMI, gap or saving was computed or added. No title, seoTitle or
+  metaDescription changed.
+- **1. Yenepoya MBA fee (lib/data.ts, lib/data-slim.ts, data/fees-hub-data.json, lib/blog.ts):**
+  - Why: the site said Rs 1,20,000. The verify sheet shows every Yenepoya MBA page states "Total Fee Plan ₹ 50,000"
+    (Rs 25,000 a year), from onlineyenepoya.com/programs/online-mba-finance and /online-mba-marketing. The 1,20,000 sits
+    in the portal's JS bundle for a different programme, so the site figure had no MBA source.
+  - What: MBA pd.fees '₹50,000', programFees.mba 50000, officialUrl https://onlineyenepoya.com, feeVerifiedOn
+    2026-11-27, and a source comment. feeMin/feeMax were the 60000/200000 MBA placeholder; they now carry 50000 as on
+    the Sharda record, mirrored in data-slim and fees-hub-data (feeStr ₹50K). Registration Rs 1,500 and exam Rs 3,000 a
+    year are noted in the comment, not added into the total. The International Finance (ACCA) variant is not carried,
+    since no field exists for it.
+  - getExactFee(Yenepoya, MBA): before {kind: none} (getDisplayFee printed ₹1,20,000 by rule 1); after
+    {kind: exact, min 50000, max 50000}. Rule 4d does not touch it; check-placeholder-fee-ranges OK.
+  - Blog: online-mba-karnataka-2026 table cell and "Yenepoya total fee" line now say ₹50,000. The other Yenepoya
+    figures in lib/blog.ts (BCA ₹1.05L-₹1.20L) are a different programme and were left.
+- **2. University of Mysore MBA Rs 1,60,000:**
+  - Why: no portal page shows it. On 27 Nov the portal printed INR 62,625 / 92,625 / 2,02,940 with no label, under a
+    "fee revision is currently in process" banner.
+  - What: in online-mba-karnataka-2026 the table cell reads "Under revision" and the prose says the portal shows the
+    fee as under revision, so no figure is quoted. "At a fair price", "uncommon in this price range" and the FAQ's
+    "at lower fees" / "budget is the primary constraint, pick ... University of Mysore" went with it, since they
+    rested on the 1,60,000. No new figure was added.
+  - lib/data.ts: the pd.fees field stays (getExactFee already returns none, and the hubs print "On request"); a comment
+    records the 27 Nov portal state.
+- **3. Derived fee comparisons in lib/data/page-content/*.json (60 files, 91 strings):**
+  - Why: spec pages stated arithmetic between universities that no source publishes: "MAHE at ₹X costs ₹Y more",
+    "Galgotias roughly half the price", "2.7x the cost", "30% lower", "saves ₹43,800", "Fee difference is Rs N", and
+    an intra-CU "(Rs 58,375 savings)" parenthetical in 22 Chandigarh files. Several were computed from fees that have
+    since changed.
+  - What: each sentence that only stated the gap was deleted; clauses were cut so the sentence still reads (for
+    example "is ₹N cheaper with" became "has"). No new figure. Quoted fees stay as written where no arithmetic is
+    applied to them.
+  - NMIMS was quoted as "Rs 1,60,000-1,95,000" in 12 peer spec files; getExactFee(NMIMS, MBA) is exact 1,96,000 to
+    2,20,000, so the quote now reads "Rs 1,96,000 to Rs 2,20,000".
+  - Same post as item 2: "JAIN is roughly ₹1 lakh cheaper than MAHE" in online-mba-karnataka-2026 became "JAIN holds
+    the same NAAC A++ grade as MAHE".
+- **4. UPES spec pages (11 upes-online-mba-*.json):**
+  - Why: each printed one total with a Year 1 / Year 2 split (1,75,000, 1,95,000 or 2,20,000) and a per-specialisation
+    fee tier. lib/data.ts holds only the range getExactFee returns, 1,75,000 to 2,20,000, with no split and no
+    per-specialisation fee. The "3 to 36 months" tenure and "UPES NBFC lending tie-ups" lines have no source.
+  - What: tldr, fees body and fee FAQ now give "Rs 1,75,000 to Rs 2,20,000"; the year-wise block, tenure line and NBFC
+    line are gone (a neutral "contact our counsellor for current EMI options" line remains). Tier claims ("priced at
+    Rs 1,95,000, slightly above the standard tier", "Both are at the Rs 2,20,000 tier", "at a fraction of the cost",
+    "Rs 5,00,000-15,00,000" for executive programmes) were removed or neutralised. The Logistics FAQ "Why is ... priced
+    higher" now asks what it costs and answers with the range.
+- **5. audits/QUESTIONS-FOR-RISHI.md Q59:** rewritten. MKU's MBA is ODL only on the DEB register and Mumbai has no MBA
+  in any DEB mode (MMS by distance), so the fee question is moot and the question is mode: noindex via
+  MODE_UNVERIFIED_UNIS (university-wide), drop MBA with redirects, or something else. Neither university was changed.
+- **Counts** (source: git archive of 28cbba1 vs working tree; build: batch 14 build vs fresh build):
+  - derived-comparison detector (.b8tmp/cmp15.mjs) on page-content JSON 229 -> 2 (both false positives: "lower end of
+    the fee range", "lower cost").
+  - UPES Year 1/Year 2, tenure, NBFC, 1,95,000 and tier phrases in spec JSON 103 -> 0; range present 0 -> 62.
+  - NMIMS "1,60,000-1,95,000" in page-content 12 -> 0.
+  - Mysore 1,60,000 near "Mysore" in lib/blog.ts 2 -> 0; Yenepoya MBA 1,20,000 in lib/blog.ts 2 -> 0.
+- **Gates:** verify-fees, check-data-slim-drift, check-official-urls (29 portals, 28 verified), check-fee-baseline
+  (205, unchanged), check-placeholder-fee-ranges and check-blog-fees (1950, unchanged) pass. Tag balance unchanged.
+  online-mba-karnataka-2026 updatedAt is 2026-11-27.
+- **Open:** the Karnataka post H2 still reads "Mid-Range Tier: DSU, Christ, Alliance, and University of Mysore"; JAIN
+  "~Rs 1,75,000" and LPU "approximately ₹1,60,000" peer quotes in some spec JSON differ from lib/data.ts and were not in
+  this brief.
+
 ## 2026-11-27 · B3 batch 14: derived EMIs in spec page-content JSON, Amity MCA FAQ fee, a stale MUJ gap, UPES fee range, placement package ranges (branch fix/b3-batch-14)
 
 - **Source:** the B3 batch 14 brief. Facts come only from lib/data.ts (getExactFee, getDisplayFee), audits/verify
