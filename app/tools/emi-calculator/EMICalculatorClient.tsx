@@ -6,7 +6,9 @@ import { Calculator, ChevronRight, GraduationCap, TrendingUp, CheckCircle } from
 import { UNIS_SLIM } from '@/lib/data-slim'
 import { formatINR, formatNumber } from '@/lib/format'
 
-export default function EMICalculatorClient() {
+// B3 batch 18: mbaFees comes from the server (lib/fee-short-map.ts, getExactFee MBA). The card printed the
+// slim feeMin/feeMax as "₹XK - ₹YK", often a placeholder range.
+export default function EMICalculatorClient({ mbaFees = {} }: { mbaFees?: Record<string, string> }) {
   const [principal, setPrincipal] = useState(150000)
   const [rate, setRate] = useState(10)
   const [tenure, setTenure] = useState(24)
@@ -172,7 +174,7 @@ export default function EMICalculatorClient() {
                     className="flex justify-between items-center text-sm p-2 rounded-lg hover:bg-white transition-colors"
                   >
                     <span className="font-medium text-navy">{u.abbr}</span>
-                    <span className="text-ink-3">₹{(u.feeMin/1000).toFixed(0)}K - ₹{(u.feeMax/1000).toFixed(0)}K</span>
+                    <span className="text-ink-3">{mbaFees[u.id] ?? 'Not published'}</span>
                   </Link>
                 ))}
               </div>

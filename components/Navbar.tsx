@@ -50,12 +50,6 @@ const TRAFFIC_ORDER: string[] = [
   'op-jindal-global-university-online',         // 35
 ]
 
-function formatFeeLakh(n: number): string {
-  if (n >= 100000) return `\u20b9${(n / 100000).toFixed(1)}L`
-  if (n >= 1000) return `\u20b9${Math.round(n / 1000)}K`
-  return `\u20b9${n}`
-}
-
 function nirfBadge(u: { nirf: number; nirfMgt?: number; naac: string }): { label: string; color: string } {
   const mgt = (u as any).nirfMgt
   if (mgt && mgt < 200) {
@@ -75,7 +69,10 @@ const PROGRAM_CATEGORIES = {
 }
 // TRENDING_SPECS removed in Phase 7.4 — replaced by full university scroll grid
 
-export default function Navbar() {
+// B3 batch 18: feeShort comes from the root layout (lib/fee-short-map.ts, getExactFee per programme). The
+// mega-menu cards printed the slim feeMin/feeMax in lakh, the MBA-led figure on every programme tab and a
+// placeholder range for many universities. A card with no published fee for the tab prints no fee.
+export default function Navbar({ feeShort = {} }: { feeShort?: Record<string, Partial<Record<string, string>>> }) {
   const [megaOpen, setMegaOpen]             = useState(false)
   const [activeProgram, setActiveProgram]   = useState('MBA')
   const [searchQuery, setSearchQuery]       = useState('')
@@ -297,9 +294,7 @@ export default function Navbar() {
                           {featuredForActive.map(u => {
                             const badge = nirfBadge(u)
                             const specCount = (u as any).specCount || 0
-                            const feeRange = u.feeMin === u.feeMax
-                              ? formatFeeLakh(u.feeMin)
-                              : `${formatFeeLakh(u.feeMin)} - ${formatFeeLakh(u.feeMax)}`
+                            const feeRange = feeShort[u.id]?.[activeProgram] ?? null
                             return (
                               <Link
                                 key={u.id}
@@ -308,7 +303,7 @@ export default function Navbar() {
                                 style={{ cursor: 'pointer' }}
                                 onClick={() => setMegaOpen(false)}
                                 role="link"
-                                aria-label={`${u.name} - ${badge.label} - ${feeRange}`}
+                                aria-label={`${u.name} - ${badge.label}${feeRange ? ` - ${feeRange}` : ''}`}
                               >
                                 <div className="flex items-start gap-2.5 mb-2">
                                   {u.logo ? (
@@ -330,7 +325,7 @@ export default function Navbar() {
                                   <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold text-white" style={{ backgroundColor: badge.color }}>
                                     {badge.label}
                                   </span>
-                                  {u.feeMin > 0 && (
+                                  {feeRange && (
                                     <span className="text-[10px] text-slate-500">{feeRange}</span>
                                   )}
                                 </div>

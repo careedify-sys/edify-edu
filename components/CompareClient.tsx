@@ -11,8 +11,9 @@ import {
   ShieldCheck, Zap, Search, X, Star, Users,
   Calendar, ArrowUp
 } from 'lucide-react'
-import { UNIS_SLIM, formatFeeSlim as formatFee } from '@/lib/data-slim'
+import { UNIS_SLIM } from '@/lib/data-slim'
 import { getUniversityById, specName as getSpecName } from '@/lib/data'
+import { getExactFee, formatExactFeeShort, exactFeeBounds } from '@/lib/fees'
 import { formatRank, preferForProgram } from '@/lib/highlight'
 import { NIRF_EDITION_YEAR } from '@/lib/constants'
 import { getUniversityLogo, getMasterSyllabus } from '@/lib/content'
@@ -20,6 +21,12 @@ import type { University, Program } from '@/lib/data'
 import EnquiryModal from '@/components/EnquiryModal'
 import SyllabusComparisonNew from '@/components/SyllabusComparison'
 import { clsx } from 'clsx'
+
+// B3 batch 18: the fee cells printed u.feeMin/feeMax, which are MBA-led (and a placeholder range for many
+// universities), on the MCA tab too. They now print the programme's getExactFee figure, or "Not published".
+const feeShort = (u: University, p: Program) => formatExactFeeShort(getExactFee(u, p)) ?? 'Not published'
+// The EMI figure is the MBA one, so it shows only on the MBA tab and only beside a published fee.
+const emiShown = (u: University, p: Program) => p === 'MBA' && u.emiFrom > 0 && getExactFee(u, p).kind !== 'none'
 
 // Universities that have actual MBA syllabus data in MASTER_SYLLABUS
 const MBA_UNIS_WITH_DATA = [
@@ -175,7 +182,7 @@ function UniSlot({
         <div className="px-4 py-3 flex items-center justify-between">
           <div>
             <p className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mb-0.5">Fees</p>
-            <p className="text-sm font-bold text-slate-800">{fullU.feeMin === fullU.feeMax ? formatFee(fullU.feeMin) : `${formatFee(fullU.feeMin)} – ${formatFee(fullU.feeMax)}`}</p>
+            <p className="text-sm font-bold text-slate-800">{feeShort(fullU, program)}</p>
           </div>
           {pd?.avgSalary && (
             <div className="text-right">
@@ -627,8 +634,8 @@ function UniCard({
         <div className="px-4 py-3 flex items-center justify-between gap-2">
           <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Course Fees</span>
           <div className="text-right">
-            <span className="text-sm font-bold text-slate-800">{u.feeMin === u.feeMax ? formatFee(u.feeMin) : `${formatFee(u.feeMin)} – ${formatFee(u.feeMax)}`}</span>
-            {u.emiFrom > 0 && <p className="text-[11px] text-slate-500 mt-0.5">EMI from ₹{u.emiFrom.toLocaleString()}/mo</p>}
+            <span className="text-sm font-bold text-slate-800">{feeShort(u, program)}</span>
+            {emiShown(u, program) && <p className="text-[11px] text-slate-500 mt-0.5">EMI from ₹{u.emiFrom.toLocaleString()}/mo</p>}
           </div>
         </div>
         <div className="px-4 py-3">
@@ -772,7 +779,13 @@ function CompareContent() {
     const sorted = [...universities].sort((a, b) => getSortRank(a) - getSortRank(b))
     return {
       bestNirf: sorted[0],
-      cheapest: [...universities].sort((a, b) => a.feeMin - b.feeMin)[0],
+      // B3 batch 18: was the lowest u.feeMin, a placeholder floor for many universities. Only universities with a
+      // published fee for this programme take part, compared by their getExactFee lower bound, and the card is
+      // dropped unless at least two have one.
+      cheapest: (() => {
+        const priced = universities.map(u => ({ u, b: exactFeeBounds(getExactFee(u, program)) })).filter(x => x.b)
+        return priced.length >= 2 ? priced.sort((x, y) => x.b!.min - y.b!.min)[0].u : null
+      })(),
       bestSalary: universities.reduce((best, u) => {
         const salary = u.programDetails?.[program]?.avgSalary || ''
         const bestSalary = best.programDetails?.[program]?.avgSalary || ''
@@ -787,7 +800,7 @@ function CompareContent() {
   function FeeDisplay({ u }: { u: University }) {
     return (
       <div className="text-center">
-        <p className="text-sm font-bold text-slate-800">{u.feeMin === u.feeMax ? formatFee(u.feeMin) : `${formatFee(u.feeMin)} – ${formatFee(u.feeMax)}`}</p>
+        <p className="text-sm font-bold text-slate-800">{feeShort(u, program)}</p>
         <p className="text-[11px] text-slate-500 mt-0.5">Total program fee</p>
       </div>
     )
@@ -797,7 +810,7 @@ function CompareContent() {
     return (
       <div className="flex items-center gap-1.5 text-sm">
         <Calendar size={13} className="text-amber-500" />
-        <span className="font-bold text-slate-800">{u.emiFrom > 0 ? `₹${u.emiFrom.toLocaleString()}/mo` : "On request"}</span>
+        <span className="font-bold text-slate-800">{emiShown(u, program) ? `₹${u.emiFrom.toLocaleString()}/mo` : "On request"}</span>
       </div>
     )
   }
@@ -964,8 +977,17 @@ function CompareContent() {
                       </div>
                       <p className="text-[10px] font-bold text-green-600 uppercase tracking-wider">Best Value</p>
                     </div>
-                    <p className="text-sm font-bold text-slate-900 leading-snug mb-1">{verdict.cheapest.name}</p>
-                    <p className="text-xs font-semibold text-slate-500">From {formatFee(verdict.cheapest.feeMin)}</p>
+                    {verdict.cheapest ? (
+                      <>
+                        <p className="text-sm font-bold text-slate-900 leading-snug mb-1">{verdict.cheapest.name}</p>
+                        <p className="text-xs font-semibold text-slate-500">{feeShort(verdict.cheapest, program)}</p>
+                      </>
+                    ) : (
+                      <>
+                        <p className="text-sm font-bold text-slate-900 leading-snug mb-1">Not enough published fees</p>
+                        <p className="text-xs font-semibold text-slate-500">Fewer than two of these universities publish an {program} fee.</p>
+                      </>
+                    )}
                   </div>
                   <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-sm" style={{ borderTop: '3px solid #d97706' }}>
                     <div className="flex items-center gap-2 mb-2">

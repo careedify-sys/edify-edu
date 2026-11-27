@@ -8827,7 +8827,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'career-after-12th-arts-courses-jobs-2026',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     title: 'Career After 12th Arts 2026: Best Courses and Jobs',
     h1Title: "Career Options After 12th Arts: Courses and Jobs Worth Considering",
     metaDescription: 'Career after 12th arts in India 2026: best courses, jobs with high salary, BA, BBA, BCA options, and UGC-approved online degrees.',
@@ -8939,7 +8939,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Symbiosis Institute of Media and Communication (SIMC), Pune:</strong> Rs 8 to 10 lakh total. Premium private. Strong corporate plus media placement.</li>
   <li><strong>Xavier Institute of Communications (XIC), Mumbai:</strong> Rs 4 to 6 lakh total. Strong Mumbai media network.</li>
   <li><strong>MICA Ahmedabad:</strong> Premium private. Strong advertising plus marketing communication track.</li>
-  <li><strong><a href="/universities/jamia-millia-islamia-online">Jamia Millia Islamia</a> AJK MCRC:</strong> Public university, Rs 70K to 1.5 lakh fees.</li>
+  <li><strong><a href="/universities/jamia-millia-islamia-online">Jamia Millia Islamia</a> AJK MCRC:</strong> Public university.</li>
 </ul>
 
 <p>Year-1 salary post-mass comm: Rs 3 to 6 LPA at mainstream media (Times of India, NDTV, India Today). Senior journalism plus content roles: Rs 12 to 25 LPA at year 7-10.</p>

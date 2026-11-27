@@ -1,5 +1,65 @@
 # Fix log
 
+## 2026-11-27 B3 batch 18 part A: JMI fee quotes, bare fee renders in templates, 404-shell OG check
+
+Branch fix/b3-batch-18, cut from 23da39d (batch 17 round 2). Every figure comes from getExactFee in lib/fees.ts (lib/data.ts). No new fact, no title or meta change, and no fee, gap or EMI computed. Part B waits for the fact-checker sheet (audits/verify/batch18-facts-2026-11-27.md).
+
+**A1. Jamia Millia Islamia fee quotes.**
+- Why: getExactFee gives JMI kind 'none'. The "Rs 50,000" in comparison copy matched only the lib/data.ts pd.fees placeholder "₹50K – ₹50K" (feeMin/feeMax 60000/200000 disagree with it), and nothing publishes it. Comparisons that depend on the figure ("lower fee", "minimum cost", "a fraction of the cost") have nothing behind them either.
+- Page-content: 17 edits in 4 JSONs (AMU, BITS, Jamia Hamdard and SRM IST MBA).
+  - Each figure clause is deleted, and each fee comparison is cut to its rank or status half, so the sentences still read.
+  - The AMU FAQ also loses "AMU has lower fee". AMU's own fee was withdrawn in batch 17, so neither side of that comparison has a source.
+- lib/blog.ts, career-after-12th-arts: the JMI AJK MCRC list item "Rs 70K to 1.5 lakh fees" now reads "Public university." The figure is for an on-campus course that lib/data.ts does not hold.
+- Detector .b8tmp/jmi18.cjs (sentences naming JMI or Jamia Millia):
+  - figure segments: 8 → 0
+  - fee-comparison segments: 3 → 0
+  - 6 more fee comparisons sat in the sentence after the one naming JMI, so they were removed by hand.
+
+**A2. Template fee renders that bypassed getExactFee.**
+- New lib/fee-short-map.ts. It is server-only and builds formatExactFeeShort and exactFeeBounds per university and programme, so client components get published figures as props instead of the slim, MBA-led feeMin/feeMax.
+- Changed:
+  - CompareClient (selector card, column card and side-by-side fee): feeMin/feeMax ranges, MBA-led on the MCA tab, became getExactFee per programme or "Not published".
+  - CompareClient EMI: shown only on the MBA tab beside a published fee.
+  - CompareClient "Best Value": the lowest feeMin, a placeholder floor for many universities, became the lowest getExactFee lower bound among universities with a published fee. With fewer than two such universities the card says so.
+  - app/compare/[pair]: the EMI row needs a published fee (feeA/feeB).
+  - UniversityPageClient "Other universities" cards: the slim "Fees: ₹X+" floor on every programme tab is now a server-built peerFees map (getExactFee for the tab's programme) or "Fee not published".
+  - Navbar mega-menu cards: the slim lakh range (MBA-led on every tab) now uses the root layout's getFeeShortMap for the active programme. No published fee means no fee is shown.
+  - EMI calculator "Compare University Fees" card: "₹XK - ₹YK" from slim fields became getExactFee MBA or "Not published".
+  - tools/university-comparison:
+    - The route's client page.tsx moved to UniversityComparisonClient.tsx behind a new server page.tsx. The route had no metadata before and still has none, so its title is unchanged.
+    - "₹XK onwards" is now the programme's published fee or "Not published".
+    - The max-fee filter and fee sort use the published lower bound. Universities with no fee sort last and are hidden only once the slider moves below its top value.
+    - The unranked NIRF cell's em dash, which the move turned into an added line, now reads "Not ranked" (house style; check-em-dash blocks added em dashes).
+  - /programs index: it used no client hooks, so it is now a server component. Cards print getFeeShortMap per programme or "Fee not published" instead of the slim pd.fees string.
+  - programs/[...slug] "Top Universities" sibling cards: `pd.fees || formatFee(u.feeMin)` (raw placeholder strings) became getExactFee or "Fee not published".
+  - ProgramPageClient EMI column: shows a figure only beside a published fee.
+- Left, with reasons:
+  - Sort and filter logic only, nothing rendered: CompareClient fee sorting (now bounds), ProgramPageClient's fee sort, and app/programs/[...slug] feeMin/feeMax at the top of the page, which are computed but no longer rendered.
+  - app/programs/[...slug] "Min Fee" tile: it already formats exactFeeBounds from getExactFee.
+  - app/fees: the title and H1 count rows with a raw feeMin, but the title is frozen and the cells already use getExactFee.
+  - UniversitiesListClient and university-comparison "Max Fee" labels: they show the user's slider value, not a university fee.
+  - Salary figures in app/tools and the salary calculator: not fees.
+  - FeeBreakdown, UniversityCard and UniversityPageClient EMI lines: already gated on a published fee.
+  - EMIPlans "lending partners" sentence and UniversityPageClient "No-cost EMI, 12 to 24 months" line: these are EMI wording claims, not fee figures. They wait for the part B EMI wording check.
+  - app/universities/[id]/[program]/layout.tsx `pd?.fees || feeMin–feeMax` in the description: the [program] page sets its own metadata, so this reaches only 404 shells, and changing it would change a meta description.
+
+**A3. The three noindex 404 shells (andhra/mca, integral/mca, vignan/bba).**
+- Their og:description fee clause comes from app/universities/[id]/layout.tsx, which has used formatExactFeeShort(getExactFee(u, mainProg)) since batch 16. The figures are ₹62,200, ₹1,10,000 and ₹90,000, which equal getExactFee for the MBA, each university's first programme.
+- The remaining problem is the programme, not the helper. The layout receives only { id }, so it cannot know mca or bba without reading headers, which would make every /universities/[id]/* route dynamic.
+- Listed and left. A fix needs either that change or a metaDescription edit, and the brief allows neither.
+
+**Counts (built HTML, base 23da39d build compared with this branch).**
+
+| Render site | Base | After |
+|---|---|---|
+| Profile "Other universities" cards, "Fees: ₹X+" | 511 on 131 pages | 0 |
+| Profile cards, "Fee not published" | 0 | 331 |
+| tools/university-comparison, "onwards" | 50 | 0 (18 "Not published", the rest exact) |
+| /programs cards, empty fee cell | 27 | 0 (12 exact, 30 "Fee not published") |
+| EMI calculator card, "₹XK - ₹YK" | 4 | 0 (4 exact) |
+
+- The 404 shells are unchanged.
+
 ## 2026-11-27 B3 batch 17 round 2: unsourced FeeBreakdown lines, peer quotes in headers, Amity premium tier
 
 Branch fix/b3-batch-17, on top of 6e30448. Pre-merge QA (audits/qa/2026-11-27-b3-batch-17-premerge.md) failed batch 17 on three findings. This round fixes them and takes the content-only advisories that lib/data.ts can source.

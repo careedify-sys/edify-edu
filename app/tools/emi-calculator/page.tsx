@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import EMICalculatorClient from './EMICalculatorClient'
+import { getFeeShortMap } from '@/lib/fee-short-map'
 
 export const metadata: Metadata = {
   title: { absolute: 'Education Loan EMI Calculator 2026: Online MBA, MCA, BBA | Edify' },
@@ -87,7 +88,7 @@ export default function EMICalculatorPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
-      <EMICalculatorClient />
+      <EMICalculatorClient mbaFees={Object.fromEntries(Object.entries(getFeeShortMap()).flatMap(([id, m]) => m.MBA ? [[id, m.MBA]] : []))} />
     </>
   )
 }
