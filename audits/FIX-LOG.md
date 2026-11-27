@@ -1,16 +1,52 @@
 # Fix log
 
+## 2026-11-28 B3 batch 26 round 2: QA N1 to N4 (audits/qa/2026-11-28-b3-batch-25r3-26-premerge.md)
+
+Branch fix/b3-batch-26. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt 2026-11-28 on all 5 edited posts.
+
+**N1. amrita-online-bba-review-2026.**
+- **Why.** Section A row 29 records ₹1,41,000 as the Total Tuition Fee for Indian students, with registration and examination fees charged on top. The post called it "Total fee" and "Total programme fee", so the page claimed a total that nobody publishes.
+- **Labels.** The quick facts, the fee table, the fee FAQ and the fee sentence now say "total tuition for Indian students", and add that registration and exam fees are charged on top. The parts are never added together. The peer table column is now "Listed Fee", and the Amrita cell says "tuition (Indian students)".
+- **Ordering claims deleted.** MAHE's ₹1,80,000 includes taxes and NMIMS lists the same ₹1,41,000, so a lower or higher fee ordering is not like-for-like. Deleted:
+  - "Peer Tier 1 Premium programmes list higher fees (MAHE ..., Symbiosis ...)".
+  - "Amrita differentiates through a lower fee".
+  - "Despite the lower fee tier" and "The accessible fee does not reflect lower brand quality ...".
+  - "structurally lower fee" (pros list) and "without a higher Tier 1 fee commitment".
+- **Derived savings deleted.** Part B missed two of these: "saves ₹39,000 versus MAHE Online BBA and ₹24,000 versus Symbiosis SSODL BBA" (fee FAQ) and the "Saves ₹39,000 versus MAHE" pros item. Both are our own subtractions.
+- **FIX-LOG correction.** The part B entry below calls ₹1,41,000 "the Amrita BBA total" and keeps the "list higher fees" sentence as backed. Both are wrong. The figure is tuition, and that sentence is now deleted.
+
+**N2. amity-online-bba-fees-2026.**
+- **Why.** lib/data.ts holds two Amity BBA modes: ₹1,75,120 one-time and ₹1,99,000 semester-wise. ₹33,200 per semester is section A row 15. No source backs the Annual and EMI figures (₹1,89,050, ₹63,020, ₹66,333, ₹7,877, ₹8,292), the "0% interest" claim, or the gaps built from them (₹13,930, ₹9,950). The row arithmetic does not reproduce either.
+- **Removed.** Every one of those figures in the FAQs, the quick answer, the fee table, the comparison table, the EMI section and the recommendation. Each now points to the counsellor. The comparison table keeps One-Time ("Baseline") and Semester-wise ("Costs more"), and "Higher" and "Highest" are gone. The ₹23,880 figures inside the rewritten sentences went with them.
+- **Not edited.** The metaDescription still carries "₹7,877/mo 0% EMI", because metadata is frozen; this needs Rishi or a later title batch. Four other ₹23,880 figures stay for batch 27: the self-pay reduction FAQ (which also still names a "24-month 0% EMI"), the two "saves ₹23,880" callouts and the sticker table note.
+
+**N3. lpu-online-bba-review-2026.** "saving ₹27,600" is our own subtraction (1,50,000 minus 1,22,400), so all 4 instances are deleted, including the "Total saving" table row.
+
+**N4.**
+- **symbiosis-online-bba-review-2026.** The sheet's excludes list names the ₹1,000 as the application fee (registration is ₹5,000, in its own column). So all 7 "registration ₹1,000" mentions now say "application fee". The summed "₹1,65,000 + ₹1,000 registration = ₹1,66,000" is gone too. The amrita-bba peer line uses the same label.
+- **mba-hr-management-online-india-2026.** The BVP table cell ₹1,76,000 becomes ₹1,78,000. That matches lib/data.ts (Standard ₹1,76,000 + ₹2,000, total 178000) and the prose.
+
+**Counts.** check-blog-fees 1785 -> 1784 (amrita-online-bba-review-2026 13 to 12).
+
+**Left for batch 27.**
+- amity-bba: the remaining ₹23,880 figures and the metaDescription EMI figure.
+- IGNOU "~₹30,900".
+- JAIN ₹49,000 in the HR note (J1).
+- amrita-bba: the NMIMS "₹1,50,000 / ₹1,80,000" cell.
+- nmims-bba: ₹1,80,000.
+- supply-chain: the "lowest semester fee" superlative.
+
 ## 2026-11-28 B3 batch 26 part B: Amrita BBA fee in two posts, derived peer gaps
 
 Branch fix/b3-batch-26. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt 2026-11-28 on both posts.
 
-**Why.** The coordinator flagged these figures ahead of fix/bba-fees-mahe-amrita, which corrects MAHE and Amrita BBA in lib/data.ts. The figures used here already have a source with a URL and a date: audits/verify/per-semester-fees-2026-11-27.md section A row 29 (Amrita BBA, Total Tuition Fee Rs. 1,41,000) and row 9 (MAHE BBA course fee INR 1,80,000; INR 2,40,000 for Honours). Symbiosis BBA ₹1,65,000 and NMIMS BBA ₹1,41,000 are lib/data.ts exact fees.
+**Why.** The coordinator flagged these figures ahead of fix/bba-fees-mahe-amrita, which corrects MAHE and Amrita BBA in lib/data.ts. The figures used here already have a source with a URL and a date: audits/verify/per-semester-fees-2026-11-27.md section A row 29 (Amrita BBA, Total Tuition Fee Rs. 1,41,000; tuition only, registration and exam fees on top. Correction (round 2): this entry first called it the total) and row 9 (MAHE BBA course fee INR 1,80,000; INR 2,40,000 for Honours). Symbiosis BBA ₹1,65,000 and NMIMS BBA ₹1,41,000 are lib/data.ts exact fees.
 - online-bba-fees-india-2026-compared: Amrita "Rs 1,65,000" (table and link text) becomes Rs 1,41,000.
 - amrita-online-bba-review-2026:
   - "Tier 1 fee commitment of ₹1,65,000-2,40,000" loses the range.
   - The derived premiums "₹9,000", "₹24,000" and "₹39,000 over Amrita" and "Amrita saves ₹9,000 to ₹39,000" are deleted (our subtractions). The peer sentences keep each university's own fee and reason.
   - NMIMS "₹1,50,000 standard" was wrong twice; lib/data.ts gives ₹1,41,000. The NMIMS sentence no longer claims a premium over Amrita, since the two fees are equal.
-  - "the highest value-to-fee ratio" (x2) and "structurally strongest pick" superlatives are deleted. "Peer Tier 1 Premium programmes list higher fees (MAHE ₹1,80,000, Symbiosis ₹1,65,000)" stays, backed by the sources above.
+  - "the highest value-to-fee ratio" (x2) and "structurally strongest pick" superlatives are deleted. "Peer Tier 1 Premium programmes list higher fees (MAHE ₹1,80,000, Symbiosis ₹1,65,000)" stays, backed by the sources above. Correction (round 2): that sentence compares tuition with a tax-inclusive fee and is now deleted.
 - Left for batch 27: the NMIMS "₹1,50,000 / ₹1,80,000 (BA electives)" table cell in amrita-online-bba-review-2026 and Amrita BCA figures elsewhere (BCA fee unverified).
 
 **Counts.** check-blog-fees 1789 -> 1785 (amrita-online-bba-review-2026 17 to 13).
