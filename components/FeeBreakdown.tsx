@@ -22,7 +22,13 @@ interface Props {
 // fee-component claims we hold no source for. For these the block drops the
 // "EMI available through lending partners" sentence and the "Study Material:
 // Included (digital)" row instead of asserting them.
-const NO_UNSOURCED_FEE_COMPONENTS = new Set(['vignan-university-online', 'yenepoya-university-online'])
+// B3 batch 17 round 2: the six universities whose spec fees.body was swept to the factSweep line render this
+// component on those pages, and none has a source for "lending partners" or "Study Material included".
+const NO_UNSOURCED_FEE_COMPONENTS = new Set([
+  'vignan-university-online', 'yenepoya-university-online',
+  'amrita-vishwa-vidyapeetham-online', 'arka-jain-university-online', 'chandigarh-university-online',
+  'chitkara-university-online', 'kurukshetra-university-online', 'lovely-professional-university-online',
+])
 
 export default function FeeBreakdown({ u, pd, program, cleanName, headingOverride, spec }: Props) {
   // 2026-11-13: a university with a payment-mode fee plan (lib/data.ts

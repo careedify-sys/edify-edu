@@ -1,5 +1,64 @@
 # Fix log
 
+## 2026-11-27 B3 batch 17 round 2: unsourced FeeBreakdown lines, peer quotes in headers, Amity premium tier
+
+Branch fix/b3-batch-17, on top of 6e30448. Pre-merge QA (audits/qa/2026-11-27-b3-batch-17-premerge.md) failed batch 17 on three findings. This round fixes them and takes the content-only advisories that lib/data.ts can source.
+
+**F1. Six universities added to NO_UNSOURCED_FEE_COMPONENTS (components/FeeBreakdown.tsx).** The ones added are Amrita, ARKA JAIN, Chandigarh, Chitkara, Kurukshetra and LPU.
+- Why: batch 17 swept their spec fees.body to the factSweep line. That switched 49 spec pages to FeeBreakdown, and its generic branch prints "Payment is accepted semester-wise or in full. EMI available through lending partners." plus a "Study Material: Included (digital)" row. No verify sheet sources either claim for these six, and 15 of their pages already showed the lines at base.
+- Result: the block now says "Confirm the payment schedule with our counsellor before you pay." and drops the Study Material row.
+- Check: on the fresh build, 0 of 135 built pages for the six universities carry any of the three strings. 109 pages show a Total Program Fee row, and every row is the getExactFee figure: Amrita ₹1,76,000 to ₹2,60,000, ARKA ₹1,08,500, Chitkara ₹2,00,000, Kurukshetra ₹1,02,000, CU's four labelled options, and LPU's labelled list and net.
+
+**F2. Fee figures inside "vs X (Rs ...):" comparison headers.**
+- Why: the batch 17 peer detector and fixer split each comparison chunk after its bold header, so a header figure was never scanned. QA counted 51 header quotes (26 Amity, 17 CU, 5 MUJ, 2 Bharati Vidyapeeth, 1 UPES) quoted one end of a range or an unlabelled list price.
+- Fix: the round 2 detector and fixer scan the header as a segment of its own and apply the batch 17 canon from getExactFee:
+  - Amity: Rs 2,07,000 to Rs 2,25,000.
+  - CU: Rs 1,75,125 to Rs 2,38,000 by certificate option and Early Bird discount.
+  - MUJ: Rs 1,84,000 list, Rs 1,56,400 after 15% discount.
+  - Bharati Vidyapeeth: Rs 1,78,000 total, Rs 1,68,000 paid in full upfront.
+  - UPES: Rs 1,75,000 to Rs 2,20,000.
+- A "~" before a figure is dropped.
+- Exception: on Chitkara international-finance-accounting, the header named two labelled fees and read as a run-on, so it now says "(CU, MUJ)". Deleting a figure is allowed, and the body already gives both fees.
+
+**F3. Amity's premium feePlans track on healthcare and hospital pages.**
+- Why: lib/data.ts gives Amity healthcare-management, hospital-healthcare-management and international-finance-acca their own track, ₹3,02,680 one-time to ₹3,29,000 semester-wise. Peer quotes of Amity's hospital and healthcare MBA used the standard track, Rs 2,07,000 to Rs 2,25,000.
+- Fix: 9 quotes now carry the premium figures with their mode labels, read from getFeePlans at run time. They are on:
+  - galgotias healthcare-management (header and body)
+  - LPU healthcare-management (2)
+  - MAHE healthcare-management
+  - SMU healthcare
+  - Symbiosis hospital-and-health-care-management (2)
+  - CU hospital-management
+- Left on the standard track, because their premium context matched by mistake:
+  - "Hospitality" pages (the tier regex now excludes "hospitality").
+  - JAIN ACCA's quote of Amity Finance, a standard-track specialisation.
+- Symbiosis: three sentences claimed Amity was cheaper. Symbiosis is Rs 3,15,000 to Rs 3,70,000 and the Amity premium track is Rs 3,02,680 to Rs 3,29,000, so the ranges overlap and no cost claim holds. The removed phrases are "If fee is the primary concern," "at a significantly lower cost", "at a lower fee" and "at lower cost". No gap was derived.
+- JAIN international-finance-acca: the header said Amity Finance had "(no ACCA pathway)". Amity lists an ACCA specialisation in its premium track, so the parenthesis is gone (QA advisory 6).
+
+**Advisories taken (content only, sourced from lib/data.ts).**
+1. "Fixed fee" became "fee" for SRM IST, which publishes a range, Rs 1,50,000 to Rs 1,89,000.
+   - Pages: Christ, JMI and VIT.
+   - SRM's own "Rs 1.89L fixed fee" now gives the full range.
+2. NIU: "a stronger credential at modest additional cost" now reads "at a higher fee". UPES is Rs 1,75,000 to Rs 2,20,000 and NIU is Rs 1,18,000, so the gap is not modest.
+3. SMU finance and ops/SCM: CU "Tier 2" was quoted at the full CU range. It is now Rs 1,90,400 to Rs 2,38,000 with 3 certificates, the two 3-certificate modes in feeBreakdown.
+
+**Skipped:** advisory 3 (BITS and UU "directly") and advisory 5 (CU "under Rs 1.2 lakh", which QA said to leave).
+
+**Counts.** These are source page-content figures from the round 2 peer detector, which scans headers and bodies.
+
+| Detector result | Base 78b2b7b | After |
+|---|---|---|
+| Body PARTIAL | 166 | 0 |
+| Body UNLABELLED | 108 | 0 |
+| Body TIER | 8 | 0 |
+| Header PARTIAL | 26 | 0 |
+| Header UNLABELLED | 24 | 0 |
+| Header TIER | 1 | 0 |
+
+- On the built HTML, PARTIAL, UNLABELLED and TIER are all 0.
+- The remaining 3 peer DIFF rows are alias misattributions that predate this batch: BITS's own Rs 3,12,400, CU's own Rs 1,75,125, and DY Patil Navi Mumbai's title.
+- Own-page flags stay at 18 and EMI sentences at 160.
+
 ## 2026-11-27 · B3 batch 17: own-page fee drift, unsourced zero-cost EMI, partial peer quotes (branch fix/b3-batch-17)
 
 - **Source:** the B3 batch 17 brief. Every fee written comes from getExactFee in lib/fees.ts (lib/data.ts feePlans,
