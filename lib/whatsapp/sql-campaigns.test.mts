@@ -309,9 +309,21 @@ await test('a Meta stop error pauses at once; template no longer approved pauses
   await finish(rows[0].client_ref, 'failed', null, 131048)                   // spam rate limit
   assert.equal((await one('select status, paused_reason from wa_campaigns where id = $1', [s.c])).paused_reason, 'meta_error_131048')
   assert.equal((await claim(s.c))[0].blocked, 'not_sending')
+  // A stop error reported later by a status webhook (accepted, then failed).
+  await finish(rows[1].client_ref, 'accepted', 'wamid.STOP1')
+  assert.equal((await one('select wa_campaign_control($1, $2) r', [s.c, 'resume'])).r, null)
+  await db.query(`update wa_messages set status = 'failed', error_code = 131048 where wamid = 'wamid.STOP1'`)
+  await db.query(`insert into wa_message_statuses (wamid, status, received_at) values ('wamid.STOP1', 'failed', now() + interval '1 second')`)
+  assert.equal((await claim(s.c))[0].blocked, 'meta_error')
+  // The owner resumes: that old error must not pause it again (it did before resumed_at).
+  await db.query(`update wa_campaigns set resumed_at = null where id = $1`, [s.c])
+  assert.equal((await one('select wa_campaign_control($1, $2) r', [s.c, 'resume'])).r, null)
+  await db.query(`update wa_campaigns set resumed_at = now() + interval '2 seconds' where id = $1`, [s.c])
+  const again = await claim(s.c)
+  assert.ok(again.length >= 1 && again[0].blocked === null, 'resume after a stop error sends again')
 
   await resetSpend()
-  const t = await campaignFor(list, { budget: 100, batch: 1 })
+  const t =await campaignFor(list, { budget: 100, batch: 1 })
   await claim(t.c)
   await db.query(`update wa_templates set status = 'PAUSED' where name = 'referral_invite'`)
   assert.equal((await claim(t.c))[0].blocked, 'template_not_approved')

@@ -82,6 +82,7 @@ create table if not exists wa_campaigns (
   approved_by     text,
   approved_at     timestamptz,
   paused_reason   text,
+  resumed_at      timestamptz,    -- Meta stop errors before this were seen by the owner, who resumed
   duplicated_from uuid references wa_campaigns(id) on delete set null,
   created_by      text not null,
   created_at      timestamptz not null default now(),
@@ -395,7 +396,7 @@ begin
   elsif p_action = 'resume' then
     if v_c.status <> 'paused' then return 'bad_state'; end if;
     update wa_campaigns set status = case when v_c.started_at is null then 'approved' else 'sending' end,
-                            paused_reason = null where id = p_campaign;
+                            paused_reason = null, resumed_at = now() where id = p_campaign;
   elsif p_action = 'cancel' then
     if v_c.status in ('completed','cancelled') then return 'bad_state'; end if;
     update wa_campaign_recipients set state = 'cancelled', finished_at = now()
@@ -460,7 +461,11 @@ begin
   -- A Meta error that means "stop" on any message of this campaign pauses it.
   if exists (select 1 from wa_campaign_recipients r join wa_messages m on m.id = r.message_id
               where r.campaign_id = p_campaign and m.status = 'failed'
-                and m.error_code = any (wa_campaign_stop_codes())) then
+                and m.error_code = any (wa_campaign_stop_codes())
+                -- Only errors after the owner last resumed, or resuming could never work.
+                and greatest(r.finished_at, (select max(s.received_at) from wa_message_statuses s
+                                              where s.wamid = m.wamid and s.status = 'failed'))
+                    > coalesce(v_c.resumed_at, '-infinity'::timestamptz)) then
     update wa_campaigns set status = 'paused', paused_reason = 'meta_error' where id = p_campaign;
     return query select null::bigint, null::uuid, null::text, 'meta_error'; return;
   end if;
