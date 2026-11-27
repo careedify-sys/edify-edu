@@ -1,5 +1,20 @@
 # Fix log
 
+## 2026-11-28 B3 batch 26 part B: Amrita BBA fee in two posts, derived peer gaps
+
+Branch fix/b3-batch-26. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt 2026-11-28 on both posts.
+
+**Why.** The coordinator flagged these figures ahead of fix/bba-fees-mahe-amrita, which corrects MAHE and Amrita BBA in lib/data.ts. The figures used here already have a source with a URL and a date: audits/verify/per-semester-fees-2026-11-27.md section A row 29 (Amrita BBA, Total Tuition Fee Rs. 1,41,000) and row 9 (MAHE BBA course fee INR 1,80,000; INR 2,40,000 for Honours). Symbiosis BBA ₹1,65,000 and NMIMS BBA ₹1,41,000 are lib/data.ts exact fees.
+- online-bba-fees-india-2026-compared: Amrita "Rs 1,65,000" (table and link text) becomes Rs 1,41,000.
+- amrita-online-bba-review-2026:
+  - "Tier 1 fee commitment of ₹1,65,000-2,40,000" loses the range.
+  - The derived premiums "₹9,000", "₹24,000" and "₹39,000 over Amrita" and "Amrita saves ₹9,000 to ₹39,000" are deleted (our subtractions). The peer sentences keep each university's own fee and reason.
+  - NMIMS "₹1,50,000 standard" was wrong twice; lib/data.ts gives ₹1,41,000. The NMIMS sentence no longer claims a premium over Amrita, since the two fees are equal.
+  - "the highest value-to-fee ratio" (x2) and "structurally strongest pick" superlatives are deleted. "Peer Tier 1 Premium programmes list higher fees (MAHE ₹1,80,000, Symbiosis ₹1,65,000)" stays, backed by the sources above.
+- Left for batch 27: the NMIMS "₹1,50,000 / ₹1,80,000 (BA electives)" table cell in amrita-online-bba-review-2026 and Amrita BCA figures elsewhere (BCA fee unverified).
+
+**Counts.** check-blog-fees 1789 -> 1785 (amrita-online-bba-review-2026 17 to 13).
+
 ## 2026-11-28 B3 batch 26: per-semester fee table in the blog fee gate, section C misattributions, exposed mismatches
 
 Branch fix/b3-batch-26, stacked on batch 25 round 2 (10ffd3c). Source: audits/verify/per-semester-fees-2026-11-27.md, sections A, B, C and E. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt 2026-11-28 on all 13 edited posts.
