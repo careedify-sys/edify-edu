@@ -1,5 +1,98 @@
 # Fix log
 
+## 2026-11-26 · B3 batch 13: derived EMIs in blog copy, dead EdifyRecommends, placement percentages, international salary list; rule 4d fallback held (branch fix/b3-batch-13)
+
+- **Source:** the B3 batch 13 brief. Facts come only from lib/data.ts (getDisplayFee, getExactFee, feePlans, emiFrom
+  and its comments), audits/verify sheets and this log. No EMI, salary or percentage was added. No title, seoTitle or
+  metaDescription changed. Where a fee sentence had to change, the new figure is the lib/data.ts figure.
+- **1. Monthly EMI figures in lib/blog.ts tied to a university (24 posts):**
+  - Why: batch 12 zeroed 108 derived emiFrom values, but the posts had typed the same derivations into body text
+    (MAHE 12,167 = 2,92,000 / 24, NMIMS 8,167 = 1,96,000 / 24, LPU 6,733 = 1,61,600 / 24, the old JAIN 6,667, the
+    2,500 placeholder default and so on). The data said "not published" while the posts still printed a number.
+  - Method: listed every "₹X/month", "per month", "a month" or "EMI ... ₹X" in lib/blog.ts (212 matches in 55 posts),
+    dropped salaries, stipends and generic arithmetic not tied to a university, and checked each remaining figure
+    against the 7 kept emiFrom values, lib/data.ts, audits/verify and this log.
+  - Kept because a repo source states them: the 7 emiFrom values; MUJ list EMI 7,667 (lib/data.ts fee chart and
+    feePlans row); Amity premium EMI 13,023 (feePlans and the Amity verify sheet); Amity list EMI 9,375 (Amity verify
+    sheet, "list ₹9,375"); Amity MCA 7,877 in amity-online-mca-fees-review. That last one is recorded here as its
+    source: commit 87ecb86 (Rishi, 6 Oct 2026, "Checked the portals") reads the MCA portal as "zero-cost EMI from
+    Rs 7,877/month".
+  - Deleted, or replaced with the university's kept figure where a comparison cell needs one:
+    - online-mba-karnataka-2026: MAHE 12,167, Mysore 6,667, Yenepoya 2,500.
+    - online-mba-maharashtra-2026: NMIMS 8,167, Bharati Vidyapeeth 7,333.
+    - online-manipal-mba-review-2026: MAHE 12,167.
+    - 1-year-mba-india-executive-mba-2026: Jindal 6,319 (x2).
+    - mba-fees-india-complete-guide-2026 and online-mba-fee-comparison-india-2026: CU 7,297, NMIMS 6,111, and the
+      LPU 6,733 and NMIMS 16,333 cells of the 24-month EMI column (now "On request").
+    - online-mba-lpu-review-2026: LPU 6,733 in the FAQ, fee table, hero SVG, prose, callout and payment-mode table.
+    - mba-data-science-analytics-career-2026: Amity 5,000.
+    - distance-mba-colleges-mumbai-2026: NMIMS 8,000 and 6,500, Amity/DY Patil 6,000 to 8,000.
+    - online-mba-courses-chennai-2026: Amity 8,000, Amrita 7,500, NMIMS 8,000.
+    - top-correspondence-mba-colleges-india-2026: CU 6,875, MUJ 6,375 (the old Oct chart, replaced by the Jan 2027
+      chart).
+    - jamia-hamdard-mba-2026: 3,125 (x2).
+    - amity-online-mba-review-2026: the Construction Project Management 17,750 EMI row; that tier is not on the
+      verify sheet.
+    - online-mca-course-india: SMU 4,583, Amrita 6,250.
+    - amity-online-mca-fees-review: the stale FAQ "approximately Rs.6,729/month".
+    - uu-doon-online-mba-review: the whole "EMI Comparison with Similar Programs" SVG. Four of its five bars had no
+      source, and the Vignan 5,700 and DSU 5,000-6,000 bars are FIX rows in the Vignan sheet and this log. UU's own
+      3,733 is still in the post.
+    - mba-pharmaceutical-management-online-india-2026: Chitkara 6,000.
+    - online-mba-aviation-management-india-2026: CU 7,297.
+    - upes-online-mba-review-2026: UPES 7,955 (FAQ, prose, fee-table row).
+    - amity-vs-manipal-online-mba-2026 and jain-vs-amity-online-mba-2026: Amity 8,625 (2,07,000 / 24) is now the
+      published 8,906, MUJ 6,375 is now 6,517, and the derived 2,250 "monthly saving" is gone.
+    - nmims-vs-symbiosis-online-mba-2026: NMIMS 8,167 cell is "On request"; the EMI comparison box held only that
+      figure, so it went.
+    - lpu-vs-chandigarh-university-online-mba-2026: both EMI rows (LPU 6,708, CU 7,297). CU publishes no EMI (CU entry,
+      4 Nov).
+    - online-mba-after-career-break-2026: JAIN 7,292 is now 6,917; LPU 6,875, MAHE 12,167 and CU 7,297 are "On request";
+      the FAQ and body "starting from Rs 6,875" lost the figure.
+  - check-blog-fees: removing an EMI took the word "EMI" out of the 80-character window around the fee beside it, so
+    five posts regressed (the batch 11 pattern). Each was fixed by verification or removal, not by keeping a keyword:
+    - The sentence now names the university so the fee resolves as MATCH: MAHE (x3), University of Mysore, Yenepoya,
+      NMIMS.
+    - Corrected from lib/data.ts: Bharati Vidyapeeth ₹1,76,000 is now "₹1,78,000, or ₹1,68,000 paid in full upfront"
+      (Rishi, confirmed 13 Nov, feeBreakdown); Amity MBA "Rs 1.99 lakh" in the data-science table is now "Rs 2.07 to
+      2.25 lakh" (getDisplayFee).
+    - Removed: the derived NMIMS-to-Symbiosis gap "₹1.2 to ₹1.5 lakh"; the UPES "(Year 1: ₹95,000 + Year 2: ₹80,000)"
+      parenthetical (the split stays in the fee table below it).
+    - Result: unverified count 1,956 to 1,955 (Karnataka 18 to 17, the other four back at baseline); the baseline
+      went down only.
+  - Not done, and asked as Q58: the BBA cluster. Amity BBA 7,877 / 8,292, MUJ BBA 4,000, MAHE BBA 5,000, Amrita BBA
+    4,375 and LPU BBA 4,080 run through about 65 sentences in amity-online-bba-fees-2026, amity-online-bba-review-2026,
+    muj-online-bba-review-2026, mahe-online-bba-review-2026, best-online-bba-colleges-india-2026 and
+    chandigarh-online-bba-review-2026. None has a repo source, but three are in frozen metaDescriptions, so deleting the
+    body figures would leave the meta quoting a number the page no longer has. Generic examples not tied to a university
+    ("a ₹1.5L program splits into roughly ₹6,000-8,000", "typically Rs 7,000 to Rs 9,500") were left.
+- **2. Rule 4d on the fallback range: built, simulated, NOT committed (asked as Q59):**
+  - Why it is a gap: 4d only looks at pd.fees. With no parseable pd.fees, getDisplayFee prints the reference range
+    (programFees or MBA feeMin/feeMax) at rule 1, so a shared placeholder range stored there is never checked. Madurai
+    Kamaraj (75,000-1,80,000) and Mumbai (90,000-2,00,000) MBA get through this way, on /fees and in peer tables such
+    as the IGNOU MBA hub.
+  - The change (apply 4d to the fallback reference range when it is a range in data/placeholder-fee-ranges.json) was
+    simulated over all 537 university x programme rows, getDisplayFee and getExactFee old vs new: exactly 2 rows
+    change, both MBA. Madurai Kamaraj ₹75,000 to ₹1,80,000 and Mumbai ₹90,000 to ₹2,00,000 become suppressed (4d),
+    getExactFee "none". No other row moves.
+  - Why it is held: check-fee-baseline counts every suppressed row as drift, so the 2 new suppressions take it from 205
+    to 207 and the hook blocks. Passing would mean raising that ratchet, which is not allowed, so lib/fees.ts is
+    unchanged in this commit. The maharashtra Mumbai follow-through was dropped with it, so the blog still matches
+    what /fees prints.
+- **3. components/EdifyRecommends.tsx deleted:**
+  - Why: line 96 printed emiFrom unguarded. Nothing imports it: no static import, no dynamic import(), no string
+    reference in app/, components/, lib/ or scripts/, and no barrel file. A dead file with an unguarded printer is a
+    trap for whoever re-imports it.
+- **4. online-mba-with-placement-india-2026 percentages:** removed or reworded without the figure: "30-40 percent ...
+  through alumni", "top 5-10 percent" (the whole "What I have learnt from alumni feedback" paragraph, which also held
+  25-35 percent and two LPA ranges), "top 1-2 percent" (x2), "30-50 percent higher" (the Average packages table row),
+  "30-50 percent of motivated students", "25-40 percent salary uplift" and "80-90 percent of mid-tier hiring doors".
+  None had a source.
+- **5. mba-international-online-global-programs-2026:** the six "Rs X to Y LPA at year 5" clauses in "Best International
+  Online MBA Specialisations 2026" are gone; the list keeps the specialisation names and school notes.
+- **updatedAt:** bumped to 2026-11-27 on the 26 posts whose body changed (the date rolled over during the batch;
+  check-blog-updated-at needs a new date on the 7 posts already at 2026-11-26).
+
 ## 2026-11-26 · B3 batch 12: derived EMIs, /fees through getExactFee, last unsourced averages, placement table rank (branch fix/b3-batch-12)
 
 - **Source:** the "Not done" list in B3 batch 11 and the batch 11 QA. Facts come only from lib/data.ts (getExactFee,
