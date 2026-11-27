@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import type { University, ProgramDetail, Program } from '@/lib/data'
 import { cleanCareerOutcome, getProgramLevel } from '@/lib/format'
-import { getExactFee, formatExactFeeShort, formatExactFeeDetail, FEE_COUNSELLOR_LINE } from '@/lib/fees'
+import { getExactFee, formatExactFeeShort, formatExactFeeDetail, isLabelledFee, FEE_COUNSELLOR_LINE } from '@/lib/fees'
 import { TrendingUp } from 'lucide-react'
 import LOGOS_MANIFEST from '@/lib/data/logos-manifest.json'
 import RankingBadge from './RankingBadge'
@@ -128,8 +128,10 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
   // B1: DEB session beside the approval, only where the eyebrow claims it.
   const debLine = modeVerified && !basis ? debSessionLine(u, program) : null
 
+  // QA 2026-11-28 (F1): a labelled fee (tuition only, routes, list vs net) is
+  // not a total, so the tile says "Programme fee"; the label sits underneath.
   const stats = [
-    { label: 'Total Fees', value: feeValue, highlight: true, sub: feeDetail, checked: feeChecked },
+    { label: !specOneTime && isLabelledFee(exactFee) ? 'Programme fee' : 'Total Fees', value: feeValue, highlight: true, sub: feeDetail, checked: feeChecked },
     { label: 'Duration',   value: pd.duration || '2 Years',       highlight: false },
     ...(eligibilityLabel ? [{ label: 'Eligibility', value: eligibilityLabel, highlight: false, sub: eligibilityNote }] : []),
     { label: 'NAAC',       value: u.naac,                         highlight: false },
