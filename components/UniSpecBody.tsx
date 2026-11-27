@@ -57,7 +57,7 @@ import { getExactFee, formatExactFee } from '@/lib/fees'
 import { feeSentence, emiSentence, programmeEmiFrom, NO_PROGRAMME_EMI, programmeEligibility } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { splitParagraph } from '@/lib/split-paragraphs'
-import { isExamCentre, EXAM_CENTRE_LINE } from '@/lib/exam-mode'
+import { isExamCentre, EXAM_CENTRE_LINE, isExamModeUnverified, EXAM_MODE_COUNSELLOR_LINE } from '@/lib/exam-mode'
 
 // ── Inline bold renderer: converts **text** → <strong> at render time ─────────
 
@@ -345,11 +345,11 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
   const templateFaqs: { q: string; a: string }[] = [
     { q: `Is ${cleanName} Online ${program} in ${spec} valid for jobs?`, a: debBasis(u.id) ? `${debBasis(u.id)!.sentence}${u.naac ? ` It is NAAC ${u.naac} accredited.` : ''} Confirm in writing that the degree meets the recognition your employer asks for.` : `Yes. ${cleanName} is UGC DEB approved${u.naac ? ` and NAAC ${u.naac} accredited` : ''}. The degree is identical to an on-campus degree.` },
     { q: `What is the fee for ${program} ${spec} at ${cleanName}?`, a: `${specFeeText ? `Total fee is ${specFeeText}.` : 'The fee for the current intake is not published on this page yet.'} ${emiSentence(ownPlan?.rows.find(r => /emi/i.test(r.mode))?.instalment ?? programmeEmiFrom(u, program), program === 'MBA' ? undefined : NO_PROGRAMME_EMI)}` },
-    { q: `Can I work while doing ${program} in ${spec} from ${cleanName}?`, a: `Yes. Live sessions on weekends, recordings available 24/7. ${isExamCentre(u) ? EXAM_CENTRE_LINE : `${u.examMode} assessments. No campus visits required.`}` },
+    { q: `Can I work while doing ${program} in ${spec} from ${cleanName}?`, a: `Yes. Live sessions on weekends, recordings available 24/7. ${isExamModeUnverified(u) ? EXAM_MODE_COUNSELLOR_LINE : isExamCentre(u) ? EXAM_CENTRE_LINE : `${u.examMode} assessments. No campus visits required.`}` },
     { q: `What career opportunities does ${spec} specialisation offer?`, a: specContent?.careerBeginner?.length ? `${specContent.careerBeginner[0]?.title} and other roles.` : pd.avgSalary ? `Graduates typically enter ${spec}-related roles with salary ranges of ${pd.avgSalary} depending on experience.` : `Graduates typically enter ${spec}-related roles.` },
     { q: `What syllabus is covered in ${spec} specialisation?`, a: specContent?.skills?.length ? `Key areas include: ${specContent.skills.slice(0, 5).join(', ')}.` : `The specialisation covers core ${spec} subjects along with project work and industry case studies.` },
     { q: `Is ${cleanName} NAAC accredited?`, a: (() => { const r = formatRank(u, preferForProgram(program)); return u.naac ? `Yes. ${cleanName} is NAAC ${u.naac} accredited${r.rank !== null ? ` with a ${r.label} rank` : ''}.` : `No NAAC grade is published on this page yet. Check the current grade at naac.gov.in.` })() },
-    { q: `What is the exam mode for ${cleanName} ${program}?`, a: isExamCentre(u) ? EXAM_CENTRE_LINE : `${u.examMode} assessments.` },
+    { q: `What is the exam mode for ${cleanName} ${program}?`, a: isExamModeUnverified(u) ? EXAM_MODE_COUNSELLOR_LINE : isExamCentre(u) ? EXAM_CENTRE_LINE : `${u.examMode} assessments.` },
     { q: `How long is the ${program} ${spec} program at ${cleanName}?`, a: `${pd.duration || '2 years'}.` },
   ]
 

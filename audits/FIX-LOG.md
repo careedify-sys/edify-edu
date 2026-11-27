@@ -1,5 +1,36 @@
 # Fix log
 
+## 2026-11-28 · B7 exam mode: counsellor line for 7 universities with no sourced mode (branch fix/b7-exam-mode, not pushed)
+
+- **Why:** every hub, spec page, profile FAQ and AI-answer block printed "Online proctored examinations from home. No
+  exam centre visit required." (or "Online examinations", "No campus visits required") for every record carrying the
+  importer default examMode 'Online'. For these universities nobody had read the mode on the university's own pages
+  (audits/exam-mode-verified-2026-11-16.md, "Not stated or conflicting", plus Shoolini as ambiguous), so the line was a
+  guess presented as fact. VIT showed the same error and was in person; Graphic Era's old guidelines and Shoolini's
+  methodology PDF both mention exam centres or campus invigilation. Date-locked to after the 28 Nov guard (passed today).
+- **Who gets the counsellor line (UNVERIFIED_EXAM_MODE, lib/exam-mode.ts):** dy-patil-university-online,
+  graphic-era-university-online, nmims-online, sharda-university-online, mody-university-online,
+  sathyabama-university-online (6 still unverified) and shoolini-university-online (ambiguous; Q29 still open).
+  Line: "Talk to our counsellor for how and where exams are held." No mode is invented; examMode in lib/data.ts is unchanged.
+- **DSU is not in that set.** The 16 Nov audit listed it as unverified, but audits/verify/dayananda-sagar-university-online-2026-11-18.md
+  row M6 is a MATCH ("Online Examination" on dsuonline.com/online-mba/, plus a "Remote Proctored Online Examination"
+  disclosure). DSU was added to CONFIRMED_EXAM_MODE as 'Online' with that citation, so 6 + DSU = the brief's 7. Its wording is unchanged.
+- **VIT:** already 'Exam Centre' since 3.4C1 (live 16 Nov, a6d3771), sourced to registration.vitonline.in in the audit
+  CSV. Nothing to change. The 22 confirmed rows are untouched.
+- **Where it renders, what changed:** SectionExams "Exam Mode", SectionClasses "Assessments", SectionAbout intro (the
+  "with no mandatory campus visits" clause is dropped for the set), UniProgramBody FAQ, UniSpecBody two FAQs,
+  UniversityPageClient FAQ "How are exams conducted" and both "Exam Mode" stat cells ("Ask our counsellor"),
+  ComparisonTable "Online Exam" (neutral dash, not a green tick), compare-answers row and FAQ, university-answers Q7.
+- **Page-content JSON:** mode, proctoring, webcam and ID-for-proctoring sentences removed from the exams sections of
+  dy-patil, nmims, sharda and shoolini MBA hubs, the DY Patil work-while-studying FAQ, the NMIMS hero ("runs entirely
+  online with proctored exams") and the Shoolini classes body ("no mandatory campus visit"). Shoolini's exams body now
+  states what its methodology PDF says (both modes described). Graphic Era, Mody and Sathyabama JSON had no exam claim.
+- **Left alone, flagged:** the 30-40% / 60-70% weighting sentences in the DY Patil, Sharda and Shoolini exams bodies
+  look templated (B3 batch 2 called the same split typed, not sourced); out of B7 scope. lib/specFaqs.ts says "Exams are
+  online and AI-proctored from home" for all universities on /programs and MBA spec hubs; generic, also false for VIT and
+  BITS. The NMIMS tagline "slot-based online exams" in lib/data.ts is not rendered by any page. The other ~111 records
+  with no examModeSource still print the default wording, as the audit's draft notes; that widening is a separate decision.
+
 ## 2026-11-27 · University logos (138 of 143) and campus covers on 105 profiles (branch feat/university-logos-covers, shipped to main on Rishi's "Yes, ship it")
 
 - **Why logos:** 75 records showed no logo, and the 66 existing ones had defects. jawaharlal-nehru-university-online

@@ -3,6 +3,7 @@ import { getExactFee, formatExactFee } from '@/lib/fees'
 import { formatNirfBadge } from '@/lib/data-slim'
 import Link from 'next/link'
 import { CheckCircle, XCircle, Minus } from 'lucide-react'
+import { isExamModeUnverified } from '@/lib/exam-mode'
 
 interface Props {
   current: University
@@ -92,7 +93,7 @@ export default function ComparisonTable({ current: u, peers, program, programSlu
               {
                 label: 'Online Exam',
                 render: (uni: University) => (
-                  <td className="px-3 py-2 text-center">{cell(uni.examMode === 'Online' || uni.examMode === 'Assignment-based' ? 'yes' : 'mid')}</td>
+                  <td className="px-3 py-2 text-center">{cell(!isExamModeUnverified(uni) && (uni.examMode === 'Online' || uni.examMode === 'Assignment-based') ? 'yes' : 'mid')}</td>
                 ),
               },
               {

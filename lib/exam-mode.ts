@@ -44,7 +44,38 @@ export const CONFIRMED_EXAM_MODE: Readonly<Record<string, University['examMode']
   'vivekananda-global-university-online': 'Online',
   'vit-university-online': 'Exam Centre',
   'bits-pilani-work-integrated-online': 'Exam Centre',
+  // B7 (2026-11-28): the 16 Nov audit had DSU "not stated". The 18 Nov sheet
+  // audits/verify/dayananda-sagar-university-online-2026-11-18.md (row M6,
+  // MATCH) reads "Online Examination" on https://dsuonline.com/online-mba/ and a
+  // "Remote Proctored Online Examination" document on its mandatory disclosures.
+  'dayananda-sagar-university-online': 'Online',
 }
+
+/**
+ * B7 (2026-11-28). Serviced universities whose exam mode the university's own
+ * pages do not state, or state in conflicting ways
+ * (audits/exam-mode-verified-2026-11-16.md, "Not stated or conflicting"), plus
+ * Shoolini, whose methodology PDF describes both online-proctored and
+ * campus-invigilated exams (ambiguous; Q29 open). Their record keeps the
+ * importer default examMode 'Online', but no template may print an exam mode,
+ * "from home", "proctored" or "no campus visit" line for them. They get
+ * EXAM_MODE_COUNSELLOR_LINE instead. Remove an id only when a fact-checker
+ * sheet with a source URL and date confirms its mode, and add it to
+ * CONFIRMED_EXAM_MODE at the same time.
+ */
+export const UNVERIFIED_EXAM_MODE: ReadonlySet<string> = new Set([
+  'dy-patil-university-online',
+  'graphic-era-university-online',
+  'nmims-online',
+  'sharda-university-online',
+  'mody-university-online',
+  'sathyabama-university-online',
+  'shoolini-university-online',
+])
+
+export const isExamModeUnverified = (u: Pick<University, 'id'>) => UNVERIFIED_EXAM_MODE.has(u.id)
+
+export const EXAM_MODE_COUNSELLOR_LINE = 'Talk to our counsellor for how and where exams are held.'
 
 /** True only when the record's examMode equals the confirmed value for that university. */
 export const isExamModeConfirmed = (u: Pick<University, 'id' | 'examMode'>) =>

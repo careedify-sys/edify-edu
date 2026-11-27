@@ -3,7 +3,7 @@ import { formatSpecList } from '@/lib/data'
 import { formatRank, preferForProgram } from '@/lib/highlight'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { debBasis } from '@/lib/seo/deb-basis'
-import { isExamCentre } from '@/lib/exam-mode'
+import { isExamCentre, isExamModeUnverified } from '@/lib/exam-mode'
 
 interface Props {
   u: University
@@ -79,7 +79,7 @@ export default function SectionAbout({ u, program, pd, cleanName, spec, customIn
               <p>{customIntro}</p>
             ) : (
               <p>
-                {cleanName} runs an Online {program} program {basis ? 'under UGC approval as an Institution of Eminence' : 'recognised by UGC DEB'}, designed for working professionals and fresh graduates aiming for careers in {isIT ? 'software development, data science, and IT management' : 'business management, finance, and leadership'}. The {yearsText} program is delivered through live and recorded sessions on an online platform, {isExamCentre(u) ? 'with end-semester exams taken in person at designated centres' : 'with no mandatory campus visits'}.
+                {cleanName} runs an Online {program} program {basis ? 'under UGC approval as an Institution of Eminence' : 'recognised by UGC DEB'}, designed for working professionals and fresh graduates aiming for careers in {isIT ? 'software development, data science, and IT management' : 'business management, finance, and leadership'}. The {yearsText} program is delivered through live and recorded sessions on an online platform{isExamModeUnverified(u) ? '' : isExamCentre(u) ? ', with end-semester exams taken in person at designated centres' : ', with no mandatory campus visits'}.
               </p>
             )}
             <p>
