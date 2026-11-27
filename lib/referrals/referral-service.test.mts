@@ -136,4 +136,19 @@ await test('search, follow-up due filter, note and CSV export', async () => {
   assert.equal(csv.rows.length, 1); assert.equal(csv.header[0], 'Referral ID')
 })
 
+await test('funnel costs: estimate from billable x rate x tax; null when rate or denominator missing', async () => {
+  const { funnelCosts, EMPTY_FUNNEL, toFunnel } = await import('./funnel')
+  const f = { ...EMPTY_FUNNEL, unique_valid: 4, admissions: 2, rewards_paid_inr: 1000, rewards_pending_inr: 500 }
+  const k = funnelCosts(f, 100, 0.8631, 18)
+  assert.equal(k.estSpendInr, 101.85)
+  assert.equal(k.perReferralInr, 25.46)
+  assert.equal(k.perAdmissionInr, 50.93)
+  assert.equal(k.allInPerAdmissionInr, 800.93)
+  assert.equal(k.rewardSpendInr, 1000)
+  assert.equal(funnelCosts(f, 100, null, 18).estSpendInr, null)
+  assert.equal(funnelCosts(EMPTY_FUNNEL, 100, 0.8631, 18).perAdmissionInr, null)
+  assert.equal(toFunnel({ submitted: '3', admissions: -1, junk: 9 }).submitted, 3)
+  assert.equal(toFunnel(null).admissions, 0)
+})
+
 console.log(`\n${passed} passed`)

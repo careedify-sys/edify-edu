@@ -57,5 +57,21 @@ export function mockReferralRepo(store: Store): ReferralRepo & { activityLog: Ac
     },
     async campaigns() { return [{ id: '00000000-0000-4000-8000-00000000c001', name: 'Mock campaign' }] },
     async conversationFor() { return null },
+    async funnel(campaignId) {
+      const r = rows().filter(x => x.campaign_id === campaignId)
+      const adm = r.filter(x => ['admission_confirmed', 'reward_approved', 'reward_paid'].includes(x.stage))
+      return {
+        form_opens: store.opens.size ? Array.from(store.opens.values()).reduce((a, b) => a + b, 0) : 0,
+        submitted: r.length, by_link: r.filter(x => x.attribution === 'link').length, by_phone_match: r.filter(x => x.attribution === 'phone_match').length,
+        unique_valid: new Set(r.filter(x => x.stage !== 'closed' && !x.flags.includes('self_referral')).map(x => x.referred_phone)).size,
+        contacted: r.filter(x => !['new', 'contact_attempted', 'closed'].includes(x.stage)).length,
+        applications: r.filter(x => ['application_started', 'admission_confirmed', 'reward_approved', 'reward_paid'].includes(x.stage)).length,
+        admissions: adm.length,
+        rewards_pending_n: r.filter(x => x.stage === 'reward_approved').length,
+        rewards_pending_inr: r.filter(x => x.stage === 'reward_approved').reduce((a, x) => a + (x.reward_amount_inr ?? 0), 0),
+        rewards_paid_n: r.filter(x => x.stage === 'reward_paid').length,
+        rewards_paid_inr: r.filter(x => x.stage === 'reward_paid').reduce((a, x) => a + (x.reward_amount_inr ?? 0), 0),
+      }
+    },
   }
 }

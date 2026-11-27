@@ -20,13 +20,13 @@ const STAGE_PILL: Record<Stage, string> = {
 const rupees = (n: number | null | undefined) => (n == null ? '' : `₹${n.toLocaleString('en-IN')}`)
 const ATTR: Record<string, string> = { link: 'from the link', phone_match: 'matched by phone', none: 'no campaign' }
 
-export default function ReferralsClient({ mode, initial, error, owner, universities, programmes }: {
-  mode: 'mock' | 'live'; initial: ListData | null; error: string | null; owner: boolean; universities: UniOption[]; programmes: string[]
+export default function ReferralsClient({ mode, initial, initialFilter, initialOpenId, error, owner, universities, programmes }: {
+  mode: 'mock' | 'live'; initial: ListData | null; initialFilter: ReferralFilter; initialOpenId?: string | null; error: string | null; owner: boolean; universities: UniOption[]; programmes: string[]
 }) {
   const { show, node } = useToast()
   const [data, setData] = useState<ListData | null>(initial)
-  const [f, setF] = useState<ReferralFilter>({ stage: 'open' })
-  const [openId, setOpenId] = useState<string | null>(null)
+  const [f, setF] = useState<ReferralFilter>(initialFilter)
+  const [openId, setOpenId] = useState<string | null>(initialOpenId ?? null)
   const [busy, setBusy] = useState(false)
 
   const reload = useCallback(async (filter: ReferralFilter) => {

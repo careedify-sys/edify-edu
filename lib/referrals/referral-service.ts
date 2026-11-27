@@ -193,6 +193,15 @@ export async function saveRewardRule(repo: ReferralRepo, actor: Actor, input: Pa
   return { ok: true as const, rule }
 }
 
+// Referral half of the campaign reports, for up to 20 campaigns.
+export async function campaignFunnels(repo: ReferralRepo, actor: Actor, ids: string[]) {
+  if (!can(actor, 'campaign_view')) return deny
+  const list = (Array.isArray(ids) ? ids : []).filter(x => typeof x === 'string' && UUID.test(x)).slice(0, 20)
+  const out: Record<string, Awaited<ReturnType<ReferralRepo['funnel']>>> = {}
+  await Promise.all(list.map(async id => { out[id] = await repo.funnel(id) }))
+  return { ok: true as const, funnels: out }
+}
+
 // CSV rows for the owner. Phone numbers are personal data, so export is owner-only.
 export async function exportReferrals(repo: ReferralRepo, actor: Actor, f: ReferralFilter) {
   if (!can(actor, 'export')) return deny

@@ -1,6 +1,7 @@
 // Data access for the referrals dashboard. Server only (service-role client).
 import type { SupabaseClient } from '@supabase/supabase-js'
 import type { ActivityRow, ReferralFilter, ReferralRow, RewardRule, Stage } from './referral-types'
+import { toFunnel, type Funnel } from './funnel'
 
 export type ReferralPatch = Partial<Pick<ReferralRow,
   'stage' | 'review_state' | 'next_follow_up' | 'final_university' | 'admission_confirmed_on' | 'reward_rule_id' |
@@ -19,6 +20,7 @@ export interface ReferralRepo {
   saveRule(r: Omit<RewardRule, 'id'> & { id?: string }): Promise<RewardRule>
   campaigns(): Promise<Array<{ id: string; name: string }>>
   conversationFor(phone: string): Promise<string | null>
+  funnel(campaignId: string): Promise<Funnel>
 }
 
 const SELECT = '*, wa_campaigns(name)'
@@ -89,6 +91,9 @@ export function supabaseReferralRepo(sb: SupabaseClient): ReferralRepo {
       if (!c) return null
       const conv = must(await sb.from('wa_conversations').select('id').eq('contact_id', c.id).order('last_message_at', { ascending: false, nullsFirst: false }).limit(1).maybeSingle()) as { id: string } | null
       return conv?.id ?? null
+    },
+    async funnel(campaignId) {
+      return toFunnel(must(await sb.rpc('wa_campaign_referral_stats', { p_campaign: campaignId })))
     },
   }
 }

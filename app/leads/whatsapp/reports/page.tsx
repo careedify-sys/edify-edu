@@ -2,7 +2,9 @@ import type { Metadata } from 'next'
 import '../whatsapp.css'
 import { WaShell } from '../WaShell'
 import { fmt, pct, when } from '../format'
-import { waCampaigns } from '../campaign-actions'
+import { waCampaigns, waCampaignSettings } from '../campaign-actions'
+import { refFunnels } from '../referral-actions'
+import { funnelCosts, EMPTY_FUNNEL } from '@/lib/referrals/funnel'
 import { waMode } from '../mode'
 import { STATUS_TEXT } from '@/lib/whatsapp/campaign-text'
 
@@ -15,6 +17,12 @@ export const metadata: Metadata = { title: 'Reports · WhatsApp · edifyedu.in',
 export default async function ReportsPage() {
   const r = await waCampaigns()
   const rows = r.ok ? r.campaigns.filter(c => c.status !== 'draft') : []
+  const withStats = rows.filter(c => c.stats)
+  const [fr, st] = await Promise.all([refFunnels(withStats.map(c => c.id)), waCampaignSettings()])
+  const funnels = fr.ok ? fr.funnels : {}
+  const rate = st.ok ? st.settings.marketingRate : null
+  const tax = st.ok ? st.settings.taxPct : 18
+  const rs = (n: number | null) => (n == null ? 'n/a' : `₹${n.toLocaleString('en-IN', { maximumFractionDigits: 2 })}`)
   return (
     <WaShell active="reports" title="Campaign reports" mode={waMode()} error={r.ok ? null : r.error}>
       <div className="notice notice-amber">
@@ -46,6 +54,41 @@ export default async function ReportsPage() {
                 )
               })}
               {!rows.length && <tr><td colSpan={14} className="muted">No approved campaigns yet.</td></tr>}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className="card">
+        <h2 className="big">Referral funnel and cost</h2>
+        <p className="small muted">
+          Form opens are /refer page loads from the campaign link (Meta does not report button clicks). A referral counts for a campaign through its link, or when the referrer is a number that campaign messaged in the last 30 days.
+          Message spend is an <strong>estimate</strong>: Meta-billable messages × the marketing rate in Settings{rate == null ? ' (not set)' : ` (₹${rate})`} + {tax}% tax. Meta&apos;s invoice is the actual figure. Rewards are the payments you recorded.
+          {!fr.ok && <> <span style={{ color: '#ef4444' }}>{fr.error}</span></>}
+        </p>
+        <div className="tblwrap">
+          <table className="tbl">
+            <thead><tr>
+              <th>Campaign</th><th className="num">Form opens</th><th className="num">Referrals</th><th className="num">Unique valid</th><th className="num">Contacted</th>
+              <th className="num">Applications</th><th className="num">Admissions</th><th className="num">Rewards pending</th><th className="num">Rewards paid</th>
+              <th className="num">Est. spend</th><th className="num">Per referral</th><th className="num">Per admission</th><th className="num">All-in per admission</th>
+            </tr></thead>
+            <tbody>
+              {withStats.map(c => {
+                const f = funnels[c.id] ?? EMPTY_FUNNEL
+                const k = funnelCosts(f, c.stats!.meta_billable, rate, tax)
+                return (
+                  <tr key={c.id}>
+                    <td><a href={`/leads/whatsapp/referrals?campaign=${c.id}`}>{c.name}</a></td>
+                    <td className="num">{fmt(f.form_opens)}</td><td className="num">{fmt(f.submitted)}<div className="small muted">{f.by_link} link · {f.by_phone_match} phone</div></td>
+                    <td className="num">{fmt(f.unique_valid)}</td><td className="num">{fmt(f.contacted)}</td><td className="num">{fmt(f.applications)}</td><td className="num">{fmt(f.admissions)}</td>
+                    <td className="num">{fmt(f.rewards_pending_n)}<div className="small muted">{rs(f.rewards_pending_inr)}</div></td>
+                    <td className="num">{fmt(f.rewards_paid_n)}<div className="small muted">{rs(f.rewards_paid_inr)}</div></td>
+                    <td className="num">{rs(k.estSpendInr)}</td><td className="num">{rs(k.perReferralInr)}</td><td className="num">{rs(k.perAdmissionInr)}</td><td className="num">{rs(k.allInPerAdmissionInr)}</td>
+                  </tr>
+                )
+              })}
+              {!withStats.length && <tr><td colSpan={13} className="muted">No campaign figures yet.</td></tr>}
             </tbody>
           </table>
         </div>

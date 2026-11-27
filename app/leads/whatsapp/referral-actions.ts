@@ -49,3 +49,4 @@ export async function refResolveReview(id: string, note: string) { return run((r
 export async function refFollowUp(id: string, date: string | null) { return run((r, a) => svc.setFollowUp(r, a, str(id, 40), date ? str(date, 10) : null)) }
 export async function refNote(id: string, kind: 'note' | 'call', body: string) { return run((r, a) => svc.addNote(r, a, str(id, 40), kind === 'call' ? 'call' : 'note', str(body, 2000))) }
 export async function refSaveRule(rule: Partial<RewardRule>) { return run((r, a) => svc.saveRewardRule(r, a, rule)) }
+export async function refFunnels(ids: string[]) { return run((r, a) => svc.campaignFunnels(r, a, Array.isArray(ids) ? ids.map(x => str(x, 40)) : [])) }

@@ -7,6 +7,8 @@ import type { ConvRow, MessageRow } from '@/lib/whatsapp/inbox-repo'
 import type { ThreadView, SettingsView } from '@/lib/whatsapp/inbox-service'
 import type { ConnectionReport } from '@/lib/whatsapp/graph'
 import { WaTabs } from './WaShell'
+import { ThreadExtras, StartChat } from './InboxExtras'
+import { errorText } from '@/lib/whatsapp/template-rules'
 import {
   inboxList, inboxPoll, inboxThread, inboxSend, inboxMarkRead, inboxNote, inboxConsent, inboxArchive,
   inboxLinkLead, inboxCreateLead, inboxCallOutcome, inboxSchedule, inboxSettings, inboxSetSending,
@@ -83,6 +85,8 @@ function Tick({ m }: { m: MessageRow }) {
   return null
 }
 
+const FILE_TYPES = new Set(['image', 'document', 'audio', 'video', 'sticker'])
+
 function MessageBubble({ m }: { m: MessageRow }) {
   const text = m.body ?? `[${m.type}]`
   return (
@@ -90,11 +94,18 @@ function MessageBubble({ m }: { m: MessageRow }) {
       <div className="bubble">
         {m.type !== 'text' && m.type !== 'interactive' && <span className="mtype">{m.type}</span>}
         <span className="mtext">{text}</span>
+        {m.direction === 'inbound' && FILE_TYPES.has(m.type) && (
+          <span className="small">
+            <a href={`/leads/whatsapp/media?message=${m.id}`} target="_blank" rel="noopener noreferrer">View file</a>
+            {' · '}<a href={`/leads/whatsapp/media?message=${m.id}&download=1`}>Download</a>
+          </span>
+        )}
+        {m.direction === 'outbound' && m.sent_by === 'automation' && <span className="mtype">auto-reply</span>}
         <span className="mmeta">
           {fmtTime(m.meta_timestamp ?? m.created_at)} <Tick m={m} />
         </span>
         {m.direction === 'outbound' && (m.status === 'failed' || m.send_state === 'failed') && (
-          <span className="merr">{m.error_title ?? 'Not delivered'}{m.error_code ? ` (code ${m.error_code})` : ''}</span>
+          <span className="merr">{errorText(m.error_code) ?? m.error_title ?? 'Not delivered'}{m.error_code ? ` (code ${m.error_code})` : ''}</span>
         )}
         {m.direction === 'outbound' && m.send_state === 'unknown' && m.status_rank === 0 && (
           <span className="merr">Not confirmed by Meta. Check before sending it again.</span>
@@ -245,6 +256,7 @@ export default function InboxClient(props: {
             </span>
           )}
           {settings && sweepStale && <span className="pill pill-red" title="The retry job has not reported recently">Retry job: check</span>}
+          <StartChat say={say} onStarted={async id => { setSelectedId(id); setThread(null); await reloadThread(id); await reloadList() }} />
           <button className="btn btn-ghost" onClick={() => { setShowSettings(true); reloadSettings() }}>Settings</button>
         </nav>
       </header>
@@ -344,7 +356,7 @@ function Thread({ thread, settings, now, say, onChanged, onBack }: {
     !settings ? 'Settings could not be loaded'
     : !settings.migrationReady ? 'Run the Phase 2 migration first'
     : !settings.sendingEnabled ? 'Sending is switched off (Settings)'
-    : !w.open ? 'The 24-hour window is closed. A reply needs an approved template, which comes in a later phase.'
+    : !w.open ? 'The 24-hour window is closed. Free text is not allowed; send an approved template below.'
     : optedOut ? 'The student asked not to be messaged. Sending is blocked until they agree again and you record it under Consent.'
     : spend && !spend.next.allowed ? spend.next.reason
     : null
@@ -404,6 +416,7 @@ function Thread({ thread, settings, now, say, onChanged, onBack }: {
             <button className="btn btn-orange" disabled={!!blocked || busy || !text.trim()} onClick={() => send('text')}>{busy ? 'Sending…' : 'Send'}</button>
           </div>
         </div>
+        <ThreadExtras convId={conv.id} windowOpen={w.open && !optedOut} say={say} onChanged={onChanged} />
       </div>
       <ContactPanel thread={thread} canMessage={!blocked} busy={busy} say={say} onChanged={onChanged} onRequestPhone={() => send('request_phone')} />
     </div>
