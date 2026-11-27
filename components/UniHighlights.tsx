@@ -47,7 +47,7 @@ export default function UniHighlights({ u, program, cleanName }: Props) {
         <h2 className="text-lg font-bold" style={{ color: '#0B1533' }}>{heading}</h2>
       </div>
       <p className="text-sm text-slate-500 mb-5">
-        Independent summary. Edify takes no commission and runs no paid rankings.
+        Independent summary. edifyedu.in takes no commission and runs no paid rankings.
       </p>
 
       {/* Programme-scoped extra first: it is the newest thing on the page. */}

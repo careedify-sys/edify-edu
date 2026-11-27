@@ -16,7 +16,7 @@
 // components such as UniHero need the gate too, so the set lives here on its
 // own and should-index re-exports it.
 //
-// reva-university-online (2026-08-31): REVA contacted EdifyEdu to say it runs
+// reva-university-online (2026-08-31): REVA contacted edifyedu.in to say it runs
 // no MBA in online mode. The DEB portal does not list REVA, and reva.edu.in
 // advertises on-campus programmes only. The record was added from main-list
 // PDF row #48 in commit a4ed233 three days earlier.

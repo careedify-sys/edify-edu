@@ -178,7 +178,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
     },
     {
       q:`Should I apply through edifyedu.in for ${u.name}?`,
-      a:`edifyedu.in is a free, independent guidance platform. We do a 3–4 stage evaluation covering your career goals, eligibility, budget, and ROI before recommending any university. Our rankings use only NIRF rank with zero paid placements. You can apply directly to the university, Edify is here if you want unbiased advice at no cost.`
+      a:`edifyedu.in is a free, independent guidance platform. We do a 3–4 stage evaluation covering your career goals, eligibility, budget, and ROI before recommending any university. Our rankings use only NIRF rank with zero paid placements. You can apply directly to the university, edifyedu.in is here if you want unbiased advice at no cost.`
     },
   ]
 
@@ -735,7 +735,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                 </div>
               </section>
 
-              {/* Edify Trust */}
+              {/* edifyedu.in Trust */}
               <EdifyTrust compact />
 
               {/* Gated Content */}

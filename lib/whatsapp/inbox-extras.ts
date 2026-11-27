@@ -108,11 +108,11 @@ export async function sendTemplateMessage(c: Ctx, actor: Actor | null, i: { conv
 }
 
 // A new chat with a typed number. The person must already have agreed to hear
-// from Edify on WhatsApp (Meta's rule for business-initiated messages); the
+// from edifyedu.in on WhatsApp (Meta's rule for business-initiated messages); the
 // user confirms that, and it is written to the audit log.
 export async function startChat(c: Ctx, actor: Actor | null, i: { phone: string; templateId: string; clientRef: string; confirmOptIn: boolean }): Promise<SendResult> {
   if (!can(actor, 'send')) return bad('You do not have permission for this')
-  if (i.confirmOptIn !== true) return bad('Confirm that this person agreed to receive WhatsApp messages from Edify.')
+  if (i.confirmOptIn !== true) return bad('Confirm that this person agreed to receive WhatsApp messages from edifyedu.in.')
   const p = normaliseIndianMobile(String(i.phone ?? '').slice(0, 30))
   if (p.kind !== 'valid') return bad('Enter a 10-digit Indian mobile number.')
   if (!c.env.phoneNumberId) return bad('WhatsApp is not configured.')

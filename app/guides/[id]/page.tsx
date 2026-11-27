@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: { canonical: `https://edifyedu.in/guides/${guide.id}` },
     robots: { index: true, follow: true },
     openGraph: {
-      title: `${guide.seoTitle} | Edify`,
+      title: `${guide.seoTitle} | edifyedu.in`,
       description: guide.metaDescription,
       url: `https://edifyedu.in/guides/${guide.id}`,
       type: 'article',
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${guide.seoTitle} | Edify`,
+      title: `${guide.seoTitle} | edifyedu.in`,
       description: guide.metaDescription,
       images: ['https://edifyedu.in/og.webp'],
     },

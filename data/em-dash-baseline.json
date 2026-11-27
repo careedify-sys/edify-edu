@@ -2,7 +2,7 @@
   "updatedAt": "2026-11-27",
   "note": "Per-file em-dash baseline for app/**/*.tsx and components/**/*.tsx. Mirrors data/fee-mismatch-baseline.json: check-em-dash-baseline.mjs blocks any commit that raises a file above its allowed count. Files not listed are allowed zero. Count can only ratchet DOWN. See audits/em-dash-cleanup-components-2026-08-05.md for the planned cleanup.",
   "files": {
-    "app/admin-login/page.tsx": 3,
+    "app/admin-login/page.tsx": 2,
     "app/admin/audit/page.tsx": 14,
     "app/admin/blog-import/page.tsx": 5,
     "app/admin/cms/page.tsx": 9,
@@ -19,7 +19,6 @@
     "app/layout.tsx": 2,
     "app/leads/LeadsClient.tsx": 24,
     "app/programs/[...slug]/page.tsx": 9,
-    "app/programs/layout.tsx": 1,
     "app/tools/cgpa-calculator/CgpaCalculatorClient.tsx": 4,
     "app/tools/page.tsx": 7,
     "app/universities/[id]/[program]/layout.tsx": 2,

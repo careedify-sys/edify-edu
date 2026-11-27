@@ -423,7 +423,7 @@ export default function LeadPrompt() {
             </form>
 
             <p className="lp-trust">
-              <Lock size={12} /> Used only to send you this. Edify takes no commission from any university.
+              <Lock size={12} /> Used only to send you this. edifyedu.in takes no commission from any university.
             </p>
             <button className="lp-skip" onClick={() => close(true)}>No thanks, I&apos;m just reading</button>
           </>

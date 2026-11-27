@@ -1,4 +1,4 @@
-// lib/content.ts — Edify Content Blueprint
+// lib/content.ts: edifyedu.in Content Blueprint
 // Blueprint-aligned content for all programs, specializations, and university pages
 
 export interface ProgramContent {
@@ -32,7 +32,7 @@ export interface UniProgramContent {
 
 export const PROGRAM_CONTENT: Partial<Record<string, ProgramContent>> = {
   'MBA': {
-    metaTitle: 'Online MBA in India 2026: Specialisations, Careers & Salary | Edify',
+    metaTitle: 'Online MBA in India 2026: Specialisations, Careers & Salary | edifyedu.in',
     metaDesc: 'Explore online MBA programs from NIRF-ranked universities. Finance, Marketing, HR, Data Science specialisations. UGC approved. Honest comparison, salary data and career outcomes.',
     heroHeadline: 'Online MBA in India: Lead, Manage, Grow.',
     heroSubheadline: 'Earn a UGC-approved MBA from NIRF-ranked universities. Study finance, marketing, HR, operations or data science, without quitting your job.',
@@ -123,7 +123,7 @@ export const PROGRAM_CONTENT: Partial<Record<string, ProgramContent>> = {
   },
 
   'MCA': {
-    metaTitle: 'Online MCA in India 2026: IT Careers, Skills & Salary | Edify',
+    metaTitle: 'Online MCA in India 2026: IT Careers, Skills & Salary | edifyedu.in',
     metaDesc: 'Earn an online MCA from NIRF-ranked universities. Master software development, data science, cloud computing or cybersecurity. UGC approved. Launch or advance your IT career.',
     heroHeadline: 'Online MCA: Your Gateway to India\'s IT Industry.',
     heroSubheadline: 'Earn a UGC-approved Master of Computer Applications from top universities. Software, cloud, AI, cybersecurity, choose your specialisation. No engineering degree required.',
@@ -211,7 +211,7 @@ export const PROGRAM_CONTENT: Partial<Record<string, ProgramContent>> = {
   },
 
   'BBA': {
-    metaTitle: 'Online BBA in India 2026: Admissions, Careers & Salary | Edify',
+    metaTitle: 'Online BBA in India 2026: Admissions, Careers & Salary | edifyedu.in',
     metaDesc: 'Start your management journey with an online BBA from UGC-approved universities. Learn finance, marketing, HR and business fundamentals. 3-year degree. Build a business career from day one.',
     heroHeadline: 'Online BBA: Start Your Business Career Now.',
     heroSubheadline: 'Earn a UGC-approved Bachelor of Business Administration. Learn management, marketing, finance and leadership, while building real industry skills from Year 1.',
@@ -291,7 +291,7 @@ export const PROGRAM_CONTENT: Partial<Record<string, ProgramContent>> = {
   },
 
   'BCA': {
-    metaTitle: 'Online BCA in India 2026: IT Skills, Careers & Salary | Edify',
+    metaTitle: 'Online BCA in India 2026: IT Skills, Careers & Salary | edifyedu.in',
     metaDesc: 'Earn an online BCA from UGC-approved universities. Learn programming, web development, databases and networking. 3-year degree. Launch your IT career or prepare for MCA.',
     heroHeadline: 'Online BCA: Build Your IT Career from Scratch.',
     heroSubheadline: 'Learn programming, web development, databases, and networking through a UGC-approved BCA degree. No prior coding experience needed to apply.',
@@ -371,7 +371,7 @@ export const PROGRAM_CONTENT: Partial<Record<string, ProgramContent>> = {
   },
 
   'BA': {
-    metaTitle: 'Online BA in India 2026: Subjects, Careers & UPSC Guide | Edify',
+    metaTitle: 'Online BA in India 2026: Subjects, Careers & UPSC Guide | edifyedu.in',
     metaDesc: 'Earn an online BA from UGC-approved universities. Study English, Psychology, Political Science, History, Journalism. 3-year degree. UPSC-eligible. Government-job valid options available.',
     heroHeadline: 'Online BA: Knowledge That Opens Every Door.',
     heroSubheadline: 'UGC-approved Bachelor of Arts in English, Psychology, Political Science, History, Sociology and more, with full flexibility for UPSC preparation.',
@@ -451,7 +451,7 @@ export const PROGRAM_CONTENT: Partial<Record<string, ProgramContent>> = {
   },
 
   'B.Com': {
-    metaTitle: 'Online B.Com in India 2026: Accounting, Finance & Career Guide | Edify',
+    metaTitle: 'Online B.Com in India 2026: Accounting, Finance & Career Guide | edifyedu.in',
     metaDesc: 'Earn an online B.Com from UGC-approved universities. Learn accounting, taxation, financial management and business law. 3-year degree. CA/CMA pathway. Government-job eligible options.',
     heroHeadline: 'Online B.Com: Your Commerce and Finance Foundation.',
     heroSubheadline: 'Build expertise in accounting, taxation, financial management, and commerce, the foundation for CA, CMA, MBA, banking and finance careers.',
@@ -531,7 +531,7 @@ export const PROGRAM_CONTENT: Partial<Record<string, ProgramContent>> = {
   },
 
   'M.Com': {
-    metaTitle: 'Online M.Com in India 2026: Finance Careers, Skills & Salary | Edify',
+    metaTitle: 'Online M.Com in India 2026: Finance Careers, Skills & Salary | edifyedu.in',
     metaDesc: 'Earn an online M.Com from UGC-approved universities. Specialise in accounting, taxation, financial management or banking. 2-year degree. UGC NET eligible. Advance your finance career.',
     heroHeadline: 'Online M.Com: Master Commerce. Advance Your Finance Career.',
     heroSubheadline: 'Deepen your expertise in taxation, accounting, financial management and business economics with a UGC-approved Master of Commerce degree.',
@@ -608,7 +608,7 @@ export const PROGRAM_CONTENT: Partial<Record<string, ProgramContent>> = {
   },
 
   'MA': {
-    metaTitle: 'Online MA in India 2026: Subjects, Careers & UGC NET Guide | Edify',
+    metaTitle: 'Online MA in India 2026: Subjects, Careers & UGC NET Guide | edifyedu.in',
     metaDesc: 'Earn an online MA from UGC-approved universities. Study English, Psychology, Political Science, History, Sociology or Journalism. 2-year PG degree. UGC NET eligible. UPSC career path.',
     heroHeadline: 'Online MA: Deepen Your Expertise. Open Doors to Teaching, Research & Public Service.',
     heroSubheadline: 'UGC-approved Master of Arts in English, Psychology, Political Science, History, Sociology, Public Administration and more. Study fully online at your own pace.',
@@ -688,7 +688,7 @@ export const PROGRAM_CONTENT: Partial<Record<string, ProgramContent>> = {
 
 export const SPEC_CONTENT: Record<string, SpecContent> = {
   'finance': {
-    metaTitle: 'Online MBA Finance: Careers, Skills & Salary India 2026 | Edify',
+    metaTitle: 'Online MBA Finance: Careers, Skills & Salary India 2026 | edifyedu.in',
     metaDesc: 'MBA Finance online. Master financial modelling, investment analysis, corporate finance and banking. Salary ₹6L–₹25L. HDFC, Goldman Sachs, Deloitte hiring. UGC approved.',
     heroHeadline: 'MBA Finance Online: Build a Career at the Intersection of Money and Strategy.',
     heroSub: 'Master financial analysis, investment, corporate finance, and banking from India\'s top NIRF-ranked universities.',
@@ -707,7 +707,7 @@ export const SPEC_CONTENT: Record<string, SpecContent> = {
     faqs: [{q:'Should I pursue CFA alongside MBA Finance?',a:'If targeting investment banking, portfolio management, or equity research, yes. Begin CFA Level 1 in Semester 2. Many students clear Level 1 before graduation.'}],
   },
   'marketing': {
-    metaTitle: 'Online MBA Marketing: Careers, Skills & Salary India 2026 | Edify',
+    metaTitle: 'Online MBA Marketing: Careers, Skills & Salary India 2026 | edifyedu.in',
     metaDesc: 'MBA Marketing online. Brand strategy, digital marketing, consumer behaviour, product management. Salary ₹5L–₹20L. HUL, Amazon, Nestlé hiring. UGC approved.',
     heroHeadline: 'MBA Marketing Online: Build Brands, Drive Growth, Lead Markets.',
     heroSub: 'From brand strategy to digital performance marketing, learn what top companies actually pay for.',
@@ -726,7 +726,7 @@ export const SPEC_CONTENT: Record<string, SpecContent> = {
     faqs: [{q:'Is marketing a good MBA specialisation in 2026?',a:'Yes, especially digital, performance, and product marketing. The shift to data-driven marketing has made quantitative marketing skills highly valuable alongside traditional brand skills.'}],
   },
   'data science': {
-    metaTitle: 'Online Data Science Specialisation: Careers, Skills & Salary 2026 | Edify',
+    metaTitle: 'Online Data Science Specialisation: Careers, Skills & Salary 2026 | edifyedu.in',
     metaDesc: 'Study Data Science online. Python, machine learning, AI, SQL and analytics. Salary ₹7L–₹30L+. Google, Amazon, Flipkart, Mu Sigma hiring. UGC approved programs.',
     heroHeadline: 'Data Science: India\'s Highest-Growth Tech Career.',
     heroSub: 'Master Python, machine learning, AI, SQL, and data visualisation, the skill stack reshaping every industry in India.',
@@ -745,7 +745,7 @@ export const SPEC_CONTENT: Record<string, SpecContent> = {
     faqs: [{q:'Is Kaggle important for a data science career?',a:'Very. Kaggle is where employers validate skills beyond certificates. Even one well-documented Kaggle notebook can generate interview invitations.'}],
   },
   'human resource management': {
-    metaTitle: 'Online MBA HR Management: Careers, Skills & Salary 2026 | Edify',
+    metaTitle: 'Online MBA HR Management: Careers, Skills & Salary 2026 | edifyedu.in',
     metaDesc: 'MBA HR Management online. Master talent acquisition, HR analytics, performance management and labour law. Salary ₹4.5L–₹18L. Infosys, Deloitte, Aon hiring. UGC approved.',
     heroHeadline: 'MBA HR Online: Lead People. Drive Culture. Shape Organisations.',
     heroSub: 'Develop talent management, HR analytics, and organisational development skills valued by India\'s top companies.',
@@ -764,7 +764,7 @@ export const SPEC_CONTENT: Record<string, SpecContent> = {
     faqs: [{q:'What skills matter most for HR roles at top companies?',a:'HR Analytics, Talent Acquisition, HR Business Partnering, and L&D, in order of market demand. Traditional admin HR skills are commoditised; differentiate with analytics and tech.'}],
   },
   'digital marketing': {
-    metaTitle: 'Online MBA Digital Marketing: Careers, Skills & Salary 2026 | Edify',
+    metaTitle: 'Online MBA Digital Marketing: Careers, Skills & Salary 2026 | edifyedu.in',
     metaDesc: 'MBA Digital Marketing online. SEO, performance marketing, social media, Google Ads and analytics. Salary ₹4L–₹18L. D2C and e-commerce brands hiring fast. UGC approved.',
     heroHeadline: 'MBA Digital Marketing Online: Grow Brands in the Digital Age.',
     heroSub: 'Master SEO, performance marketing, social media, content strategy and analytics, skills every brand and startup recruits for.',
@@ -783,7 +783,7 @@ export const SPEC_CONTENT: Record<string, SpecContent> = {
     faqs: [{q:'Can I freelance after an MBA in Digital Marketing?',a:'Absolutely: this is one of the few MBA specialisations with strong freelance potential. Build your portfolio, get certified, and start with small clients. Many digital marketers earn ₹1–3L/month freelancing alongside jobs.'}],
   },
   'operations & supply chain': {
-    metaTitle: 'Online MBA Operations & Supply Chain, Careers & Salary 2026 | Edify',
+    metaTitle: 'Online MBA Operations & Supply Chain, Careers & Salary 2026 | edifyedu.in',
     metaDesc: 'MBA Operations online. Supply chain management, logistics, lean operations and ERP systems. Salary ₹6L–₹20L. TCS, Amazon, L&T hiring. UGC approved.',
     heroHeadline: 'MBA Operations & Supply Chain: Run the Machines That Run the World.',
     heroSub: 'Master supply chain, logistics, lean management, and ERP systems, the skills that keep global businesses moving.',
@@ -802,7 +802,7 @@ export const SPEC_CONTENT: Record<string, SpecContent> = {
     faqs: [{q:'Is MBA Operations a good specialisation for engineers?',a:'Excellent. Engineers with MBA Operations are among the most sought-after at manufacturing companies, e-commerce logistics, and operations consulting. Technical + management combination is highly valued.'}],
   },
   'business analytics': {
-    metaTitle: 'Online MBA Business Analytics: Careers & Salary 2026 | Edify',
+    metaTitle: 'Online MBA Business Analytics: Careers & Salary 2026 | edifyedu.in',
     metaDesc: 'MBA Business Analytics online. SQL, Power BI, Tableau, A/B testing and business case writing. Salary Rs 6L to 15L. McKinsey, Deloitte, ZS Associates, LatentView hiring. UGC approved.',
     heroHeadline: 'MBA Business Analytics: Turn Business Questions Into Decisions.',
     heroSub: 'Master SQL, Power BI, A/B testing, and KPI design. The skills strategy, operations, and marketing leaders need from their analytics teams.',
@@ -865,7 +865,7 @@ export const SPEC_CONTENT: Record<string, SpecContent> = {
     ],
   },
   'international business': {
-    metaTitle: 'Online MBA International Business: Careers & Salary 2026 | Edify',
+    metaTitle: 'Online MBA International Business: Careers & Salary 2026 | edifyedu.in',
     metaDesc: 'MBA International Business online. Global trade, forex management, international marketing and cross-cultural management. Salary ₹6L–₹22L. EXIM, MNCs, consulting hiring. UGC approved.',
     heroHeadline: 'MBA International Business: Think Global. Work Global.',
     heroSub: 'Master global trade, international marketing, forex management, and cross-cultural business, skills multinationals and export companies actively recruit for.',
@@ -884,7 +884,7 @@ export const SPEC_CONTENT: Record<string, SpecContent> = {
     faqs: [{q:'Is MBA International Business a good choice in India?',a:'Yes, for specific paths: export-import companies, international banking, MNC roles with global responsibilities, or government/diplomatic trade careers. Less useful for domestic-focused careers.'}],
   },
   'healthcare management': {
-    metaTitle: 'Online MBA Healthcare Management: Careers & Salary 2026 | Edify',
+    metaTitle: 'Online MBA Healthcare Management: Careers & Salary 2026 | edifyedu.in',
     metaDesc: 'MBA Healthcare Management online. Hospital administration, pharma management and health policy. Salary ₹5L–₹16L. Apollo, Fortis, Cipla, Sun Pharma hiring. UGC approved.',
     heroHeadline: 'MBA Healthcare Management: Lead India\'s Fastest-Growing Sector.',
     heroSub: 'Manage hospitals, pharma companies, health insurance firms, or public health programmes with business + healthcare expertise.',
@@ -903,7 +903,7 @@ export const SPEC_CONTENT: Record<string, SpecContent> = {
     faqs: [{q:'Do I need a medical background for MBA Healthcare Management?',a:'No, MBA Healthcare Management is for people without clinical backgrounds who want to manage healthcare organisations. Business administration skills are the primary focus.'}],
   },
   'cloud computing': {
-    metaTitle: 'Online MCA Cloud Computing: Careers, Skills & Salary 2026 | Edify',
+    metaTitle: 'Online MCA Cloud Computing: Careers, Skills & Salary 2026 | edifyedu.in',
     metaDesc: 'MCA Cloud Computing online. Master AWS, Azure, GCP, DevOps and cloud architecture. Salary ₹6L–₹22L. TCS, Infosys, Amazon, Microsoft hiring. UGC approved.',
     heroHeadline: 'MCA Cloud Computing: Build the Infrastructure the World Runs On.',
     heroSub: 'Master AWS, Azure, GCP, DevOps and cloud architecture, the fastest-growing IT specialisation in India.',
@@ -922,7 +922,7 @@ export const SPEC_CONTENT: Record<string, SpecContent> = {
     faqs: [{q:'Which cloud certification should I start with?',a:'AWS Solutions Architect Associate (SAA-C03) is the most widely recognised and employer-valued starting certification in India. Complete it during Semester 2 or 3. Follow with AZ-104 or CKA depending on your target role.'}],
   },
   'cybersecurity': {
-    metaTitle: 'Online MCA Cybersecurity: Careers, Skills & Salary 2026 | Edify',
+    metaTitle: 'Online MCA Cybersecurity: Careers, Skills & Salary 2026 | edifyedu.in',
     metaDesc: 'MCA Cybersecurity online. Ethical hacking, VAPT, network security and compliance. Salary ₹5L–₹20L. Growing fast. UGC approved programs.',
     heroHeadline: 'MCA Cybersecurity: Defend the Digital World.',
     heroSub: 'India faces 14 million+ cyber attacks annually. Learn ethical hacking, VAPT, network security, and incident response.',
@@ -941,7 +941,7 @@ export const SPEC_CONTENT: Record<string, SpecContent> = {
     faqs: [{q:'Is cybersecurity a good MCA specialisation?',a:'Excellent: India\'s most undersupplied IT skill. Every sector needs it. Strong starting salaries, fast growth, and globally portable skills. The caveat: it requires genuine dedication to ethical hacking labs and certifications beyond coursework.'}],
   },
   'artificial intelligence': {
-    metaTitle: 'Online MCA Artificial Intelligence: Careers, Skills & Salary 2026 | Edify',
+    metaTitle: 'Online MCA Artificial Intelligence: Careers, Skills & Salary 2026 | edifyedu.in',
     metaDesc: 'MCA Artificial Intelligence online. Machine learning, deep learning, NLP and AI applications. Salary ₹7L–₹30L. Google, Microsoft, Amazon, TCS hiring. UGC approved.',
     heroHeadline: 'MCA Artificial Intelligence: Build the Technology That\'s Changing Everything.',
     heroSub: 'Deep learning, NLP, computer vision, and AI systems, the skills that will define the next decade of technology.',
@@ -960,7 +960,7 @@ export const SPEC_CONTENT: Record<string, SpecContent> = {
     faqs: [{q:'Do I need a PhD for an AI career?',a:'Not for most roles. Research scientist positions at Google, DeepMind, or academic labs require or strongly prefer a PhD. ML Engineer, AI Engineer, and data scientist roles, the vast majority of AI jobs, are accessible with a strong MCA + certifications + project portfolio.'}],
   },
   'general management': {
-    metaTitle: 'Online MBA General Management: Careers & Salary 2026 | Edify',
+    metaTitle: 'Online MBA General Management: Careers & Salary 2026 | edifyedu.in',
     metaDesc: 'MBA General Management online. Broad business skills across finance, marketing, HR and strategy. Salary ₹5L–₹18L. Flexible career paths. UGC approved universities.',
     heroHeadline: 'MBA General Management Online: The All-Round Business Leader.',
     heroSub: 'Build a broad base of management skills, finance, marketing, HR, strategy, and operations, for flexible career paths across every industry.',
@@ -979,7 +979,7 @@ export const SPEC_CONTENT: Record<string, SpecContent> = {
     faqs: [{q:'Is MBA General Management a good choice?',a:'Yes, if you want flexibility or are pursuing entrepreneurship, family business, or a rotational career path. If you have a clear target function (finance, marketing, tech), a functional specialisation will give you a stronger early career advantage.'}],
   },
   'entrepreneurship': {
-    metaTitle: 'Online MBA Entrepreneurship: Careers & Startup Skills 2026 | Edify',
+    metaTitle: 'Online MBA Entrepreneurship: Careers & Startup Skills 2026 | edifyedu.in',
     metaDesc: 'MBA Entrepreneurship online. Business model design, startup funding, venture capital, innovation management. Build and launch your own business with structured skills.',
     heroHeadline: 'MBA Entrepreneurship Online: Build What Doesn\'t Exist Yet.',
     heroSub: 'From idea to launch to scale, master the business models, funding, and management skills that turn entrepreneurs into business builders.',
@@ -998,7 +998,7 @@ export const SPEC_CONTENT: Record<string, SpecContent> = {
     faqs: [{q:'Is MBA Entrepreneurship worth it if I already have a business idea?',a:'Yes, it gives you the structured toolkit (financial modelling, legal basics, fundraising, hiring) that prevents the most common and costly startup mistakes. The network access to mentors and investors is often the highest-value component.'}],
   },
   'logistics & supply chain': {
-    metaTitle: 'Online MBA Logistics & Supply Chain, Careers & Salary 2026 | Edify',
+    metaTitle: 'Online MBA Logistics & Supply Chain, Careers & Salary 2026 | edifyedu.in',
     metaDesc: 'MBA Logistics & Supply Chain online. Manage freight, warehousing, customs and last-mile delivery. Salary ₹5L–₹18L. Delhivery, Amazon, Blue Dart, L&T hiring. UGC approved.',
     heroHeadline: 'MBA Logistics & Supply Chain Online, Move the World Forward.',
     heroSub: 'Master freight management, warehouse operations, customs compliance, and supply chain strategy for India\'s booming logistics sector.',
@@ -1164,7 +1164,7 @@ export function getSpecContent(spec: string): SpecContent | null {
     || null
   if (!result && process.env.NODE_ENV === 'development') {
     console.warn(
-      `[EdifyEdu] getSpecContent miss: spec="${spec}" key="${key}", no match in SPEC_CONTENT or SPEC_ALIASES. Page will show generic fallback content. Add an alias or new SPEC_CONTENT entry to fix.`
+      `[edifyedu.in] getSpecContent miss: spec="${spec}" key="${key}", no match in SPEC_CONTENT or SPEC_ALIASES. Page will show generic fallback content. Add an alias or new SPEC_CONTENT entry to fix.`
     )
   }
   return result
@@ -1175,8 +1175,8 @@ export function getProgramContent(program: string): ProgramContent | null {
 // Fallback spec content for specs without dedicated pages
 export function getSpecFallback(spec: string, program: string): SpecContent {
   return {
-    metaTitle: `Online ${program} in ${spec}: Careers, Skills & Salary | Edify`,
-    metaDesc: `Study ${program} with ${spec} specialisation online from UGC-approved NIRF-ranked universities. Career paths, salary data, certifications, and honest university comparison on Edify.`,
+    metaTitle: `Online ${program} in ${spec}: Careers, Skills & Salary | edifyedu.in`,
+    metaDesc: `Study ${program} with ${spec} specialisation online from UGC-approved NIRF-ranked universities. Career paths, salary data, certifications, and honest university comparison on edifyedu.in.`,
     heroHeadline: `${program} in ${spec}: Build Expertise. Advance Your Career.`,
     heroSub: `Earn a UGC-approved ${program} with ${spec} specialisation from India\'s top NIRF-ranked universities.`,
     overview: `An online ${program} with ${spec} specialisation gives you both the broad management/technical foundation of the degree and deep expertise in ${spec}, one of the growing areas in India\'s job market.`,
@@ -1195,7 +1195,7 @@ export function getSpecFallback(spec: string, program: string): SpecContent {
   }
 }
 
-// ── Edify Recommends: Skills & Internships per SPECIALISATION ──────────────
+// ── edifyedu.in Recommends: Skills & Internships per SPECIALISATION ──────────────
 // These are shown on university pages when a specialisation is selected.
 // Each entry is researched and specific, not generic filler.
 // Source: industry role requirements, placement data, job description analysis.

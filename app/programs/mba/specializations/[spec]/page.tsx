@@ -306,7 +306,7 @@ export async function generateMetadata(
 
   // Longest form that fits 60 chars; long spec names ran to 81 with the brand suffix.
   const title = [
-    `Online MBA ${def.displayName} 2026: ${uniCount}+ Colleges, Fees and Career | EdifyEdu`,
+    `Online MBA ${def.displayName} 2026: ${uniCount}+ Colleges, Fees and Career | edifyedu.in`,
     `Online MBA ${def.displayName} 2026: ${uniCount}+ Colleges, Fees and Career`,
     `Online MBA ${def.displayName} 2026: ${uniCount}+ Colleges and Fees`,
   ].find(t => t.length <= 60) ?? `Online MBA ${def.displayName} 2026: ${uniCount}+ Colleges`
@@ -467,7 +467,7 @@ export default function MBASpecialisationHubPage(
               </div>
               <p className="mt-3 text-xs text-slate-500">
                 Fees are sourced from university portals as of 2026. Talk to our counsellor for the current fee.
-                Edify presents public data with no referral fees or paid rankings.
+                edifyedu.in presents public data with no referral fees or paid rankings.
               </p>
               <div className="mt-4 pt-4 border-t border-border flex flex-wrap gap-3">
                 <Link href="/compare" className="text-sm font-semibold text-amber hover:underline">
@@ -561,7 +561,7 @@ export default function MBASpecialisationHubPage(
               Not Sure Which University to Choose?
             </h2>
             <p className="text-slate-300 mb-6 max-w-xl mx-auto text-sm leading-relaxed">
-              Edify compares public UGC, NAAC, and NIRF data with no paid rankings and no referral commissions.
+              edifyedu.in compares public UGC, NAAC, and NIRF data with no paid rankings and no referral commissions.
               Talk to our team for a free, unbiased shortlist.
             </p>
             <Link

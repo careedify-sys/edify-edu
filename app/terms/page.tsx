@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Terms of Use: Edify | edifyedu.in' },
-  description: 'Terms of Use for EdifyEdu.in: the rules governing your use of India\'s independent online university comparison platform.',
+  title: { absolute: 'Terms of Use: edifyedu.in | edifyedu.in' },
+  description: 'Terms of Use for edifyedu.in: the rules governing your use of India\'s independent online university comparison platform.',
   alternates: { canonical: 'https://edifyedu.in/terms' },
   robots: { index: true, follow: true },
 }
@@ -31,7 +31,7 @@ export default function TermsPage() {
 
           <h2 className="font-bold text-navy mt-8 mb-3">1. About edifyedu.in</h2>
           <p className="text-ink-2">
-            EdifyEdu.in is an independent online education comparison platform. We publish fee data, accreditation information, and programme details sourced from official portals (UGC-DEB, NAAC, NIRF, and university websites) to help students make informed decisions. We do not receive commissions, referral fees, or payments from any university to rank them higher.
+            edifyedu.in is an independent online education comparison platform. We publish fee data, accreditation information, and programme details sourced from official portals (UGC-DEB, NAAC, NIRF, and university websites) to help students make informed decisions. We do not receive commissions, referral fees, or payments from any university to rank them higher.
           </p>
 
           <h2 className="font-bold text-navy mt-8 mb-3">2. Informational Purpose Only</h2>

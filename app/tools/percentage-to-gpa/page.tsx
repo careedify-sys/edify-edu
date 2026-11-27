@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Percentage to GPA Calculator 2026 | Edify',
+    title: 'Percentage to GPA Calculator 2026 | edifyedu.in',
     description: 'Convert Indian percentage to 4.0 GPA or 10-point CGPA. Free, instant, no login required.',
   },
 }

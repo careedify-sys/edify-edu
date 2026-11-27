@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: 'Speak with an education advisor for free. Unbiased guidance on online MBA, MCA, BBA and BCA from 125+ UGC-DEB approved universities.',
     url: 'https://edifyedu.in/contact',
     type: 'website',
-    images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: 'Contact EdifyEdu' }],
+    images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: 'Contact edifyedu.in' }],
   },
   twitter: {
     card: 'summary_large_image',

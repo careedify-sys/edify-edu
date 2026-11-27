@@ -71,7 +71,7 @@ export default function BlogRelatedLinks({ links, program }: Props) {
           className="text-[11px] mt-4 pt-3"
           style={{ color: 'rgba(255,255,255,0.3)', borderTop: '1px solid rgba(255,255,255,0.08)' }}
         >
-          Edify compares public UGC/NAAC/NIRF data. No paid rankings, no commission.
+          edifyedu.in compares public UGC/NAAC/NIRF data. No paid rankings, no commission.
         </p>
       </div>
     </div>

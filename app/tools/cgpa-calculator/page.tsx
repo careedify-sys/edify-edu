@@ -153,7 +153,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://edifyedu.in/tools/cgpa-calculator' },
   openGraph: {
-    title: 'CGPA to Percentage Calculator (UGC ×9.5): Free 2026 | EdifyEdu',
+    title: 'CGPA to Percentage Calculator (UGC ×9.5): Free 2026 | edifyedu.in',
     description:
       '1 click: enter CGPA, get percentage via UGC formula (×9.5). Free, no login. 6.0-10.0 grade table, SGPA conversion & Mumbai Univ variant. Check eligibility.',
     url: 'https://edifyedu.in/tools/cgpa-calculator',
@@ -163,13 +163,13 @@ export const metadata: Metadata = {
         url: 'https://edifyedu.in/og.webp',
         width: 1200,
         height: 630,
-        alt: 'CGPA to Percentage Calculator | EdifyEdu',
+        alt: 'CGPA to Percentage Calculator | edifyedu.in',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CGPA to Percentage Calculator (UGC ×9.5) 2026 | EdifyEdu',
+    title: 'CGPA to Percentage Calculator (UGC ×9.5) 2026 | edifyedu.in',
     description:
       'Free CGPA to percentage converter. UGC formula (×9.5), instant result, no login. Includes 6.0-10.0 grade table and Mumbai University variant.',
   },

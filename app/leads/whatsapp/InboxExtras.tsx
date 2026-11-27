@@ -162,7 +162,7 @@ export function StartChat({ say, onStarted }: { say: (t: string, bad?: boolean) 
           <TemplatePreview t={t} />
           <label className="small" style={{ display: 'flex', gap: 8, alignItems: 'flex-start' }}>
             <input type="checkbox" checked={optIn} onChange={e => setOptIn(e.target.checked)} style={{ marginTop: 3 }} />
-            <span>This person agreed to receive WhatsApp messages from Edify (Meta requires this before a business messages first).</span></label>
+            <span>This person agreed to receive WhatsApp messages from edifyedu.in (Meta requires this before a business messages first).</span></label>
           <div className="btn-row"><button className="btn btn-orange" disabled={busy || !phone.trim() || !tplId || !optIn || !t?.usable} onClick={go}>{busy ? 'Sending…' : 'Send template'}</button></div>
         </div>
       </div>

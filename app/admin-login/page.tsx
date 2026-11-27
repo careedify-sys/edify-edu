@@ -105,7 +105,7 @@ function LoginForm() {
         </h1>
         <p style={{ fontSize: 13, color: 'var(--ink-3)', marginBottom: 24 }}>
           {step === 'password'
-            ? 'Edify admin area — authorised access only'
+            ? 'edifyedu.in admin area: authorised access only'
             : `A 6-digit code was sent to ${maskedEmail || 'your email'}. Enter it below.`}
         </p>
 

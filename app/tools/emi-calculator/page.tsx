@@ -3,7 +3,7 @@ import EMICalculatorClient from './EMICalculatorClient'
 import { getFeeShortMap } from '@/lib/fee-short-map'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Education Loan EMI Calculator 2026: Online MBA, MCA, BBA | Edify' },
+  title: { absolute: 'Education Loan EMI Calculator 2026: Online MBA, MCA, BBA | edifyedu.in' },
   description:
     'Free education loan EMI calculator for online MBA, MCA, BBA courses. Calculate monthly EMI at 8-12% interest. UGC-DEB approved universities eligible for SBI, HDFC & Axis bank loans.',
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://edifyedu.in/tools/emi-calculator' },
   openGraph: {
-    title: 'Education Loan EMI Calculator: Online MBA, MCA, BBA 2026 | Edify',
+    title: 'Education Loan EMI Calculator: Online MBA, MCA, BBA 2026 | edifyedu.in',
     description:
       'Free EMI calculator for online degree education loans. Calculate monthly payments at 8-12% interest for UGC-DEB approved programs.',
     url: 'https://edifyedu.in/tools/emi-calculator',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Education Loan EMI Calculator: Online MBA, MCA 2026 | Edify',
+    title: 'Education Loan EMI Calculator: Online MBA, MCA 2026 | edifyedu.in',
     description: 'Free EMI calculator for online degree education loans. UGC-DEB approved universities.',
   },
 }
