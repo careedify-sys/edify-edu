@@ -7585,3 +7585,27 @@ Live checks I ran:
 Rishi's own tests, reported 27 Nov (his words, not re-run by me): an inbound message from his test number appeared in the inbox; an outbound reply arrived and showed double ticks (delivered); full phone numbers show; conversation history works; the spend counter moves; CRM lead suggestions show. Still UNTESTED at this point: connection check and token expiry, cron cadence in Health, Call now after a recorded call Yes, CRM lead linking (link or create), and a real enquiry-form submission. My curl checks cover only page loads and the form fields, not a submission.
 
 Left for Rishi, because each step needs his login, his phone or his own test number: the connection check, Health `last_sweep`, an inbound message from his test number, a manual reply, phone visibility and Call now, and the CRM lead link. Sending stays off until he switches it on to test a reply. Campaigns and automation stay off.
+
+## WhatsApp Phase 3: referral campaigns, in progress (2026-11-27, branch feat/wa-3-campaigns)
+
+Rishi's goal: send referral messages to previously enrolled students from an Excel file that holds mobile numbers only, without a paid WhatsApp platform. The plan, with every decision and its reason, is `docs/whatsapp-campaigns-plan.md`. Nothing is pushed, migrated or deployed.
+
+**M1 (d5cf290): phone parsing and file reading.**
+- Phone is the only required field. Numbers normalise to +91 and 10 mobile digits.
+- Excel's shortened scientific notation (9.19877E+11) is flagged, not repaired. WHY: the missing digits cannot be recovered, and guessing would message a stranger.
+- The .xlsx reader is our own and runs in the browser with built-in decompression and zip-bomb limits. WHY: the repo's xlsx 0.18.5 has published advisories for reading untrusted files, and the student file then never reaches the server.
+- CSV export guards formula injection.
+
+**M2 (507605f): migration `20261203120000_whatsapp_campaigns.sql`** (additive, with a down file). It adds lists, marketing consent with date and source, a template cache, campaigns, a recipient queue, budgets and stats.
+- Unknown consent is not consent. WHY: Rishi's file has no consent column and he ruled that enrolment is not permission.
+- Eligibility is checked again inside the locked claim at the moment of sending, so a STOP after approval still stops the message.
+- Approval stores a recounted, priced snapshot and refuses when the cost exceeds the budget; a trigger locks approved campaigns.
+- The campaign, daily and monthly budgets and Meta's 24-hour limit are enforced in one locked step, the Phase 2 pattern.
+- Sends that never came back become "unknown" and are never resent. WHY: Meta may have delivered them.
+- A reply counts for a campaign only when it quotes the message or presses its button (context.id).
+- The inbox now lists only conversations with an inbound message, so 5,000 sends do not bury real chats. WHY this is safe before deploy: every Phase 2 conversation starts inbound.
+- A test caught a real bug: Postgres caps regex repeats at 255, so the template-name check `{1,512}` failed every insert.
+
+Tests: 16 phone/sheet tests, 18 campaign SQL tests, and the Phase 1/2 SQL suite still 42/42 with Phase 3 applied. On real Postgres, 20 concurrent claims reserved exactly 5 against a 5-message daily budget; the copy with the locks removed reserved 6.
+
+Next: Contacts and Lists pages, templates via the Graph API, the campaign wizard, the worker in the existing sweep, reports, then qa-checker. Blocked on Rishi before any real send: Q-WA4 (what students agreed to) and Q-WA5 (budgets, Meta tier, GST).
