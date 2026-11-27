@@ -164,3 +164,67 @@
   .leads-scope .wa .grid2 { grid-template-columns: 1fr; }
   .leads-scope .wa .grid2 .span2 { grid-column: auto; }
 }
+
+/* ── Phase 3: campaign screens ─────────────────────────────────────────── */
+.leads-scope .wa-tabsbar { display: flex; gap: 4px; padding: 6px 18px; background: var(--white); border-bottom: 1px solid var(--line); overflow-x: auto; flex-shrink: 0; }
+.leads-scope .wa-tabsbar a { padding: 6px 12px; border-radius: 999px; color: var(--slate); font-weight: 600; font-size: 13px; text-decoration: none; white-space: nowrap; }
+.leads-scope .wa-tabsbar a:hover { color: var(--navy); background: var(--bg); }
+.leads-scope .wa-tabsbar a.on { background: var(--navy); color: var(--white); }
+.leads-scope .wa-page { flex: 1; overflow-y: auto; padding: 18px; min-height: 0; }
+.leads-scope .wa-page .wrap { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+.leads-scope .wa .card h2.big { font-size: 16px; text-transform: none; letter-spacing: 0; color: var(--navy); }
+.leads-scope .wa .lead { color: var(--slate); }
+.leads-scope .wa .stepno { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 999px; background: var(--amber); color: var(--white); font-size: 12px; font-weight: 700; margin-right: 8px; }
+.leads-scope .wa .card.done .stepno { background: var(--green); }
+.leads-scope .wa .card.locked { opacity: .6; }
+.leads-scope .wa .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 2px; background: var(--white); gap: 2px; flex-wrap: wrap; }
+.leads-scope .wa .seg button { font: inherit; font-size: 13px; font-weight: 600; border: 0; background: transparent; color: var(--slate); padding: 6px 12px; border-radius: 999px; cursor: pointer; }
+.leads-scope .wa .seg button.on { background: var(--navy); color: var(--white); }
+.leads-scope .wa .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 8px; }
+.leads-scope .wa .tile { background: var(--white); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; }
+.leads-scope .wa .tile b { font-size: 20px; font-variant-numeric: tabular-nums; }
+.leads-scope .wa .tile span { font-size: 12px; color: var(--slate); }
+.leads-scope .wa .tile.good { border-color: #a7f3d0; background: #ecfdf5; }
+.leads-scope .wa .tile.good b { color: #047857; }
+.leads-scope .wa .tile.warn { border-color: #ecd9a8; background: #fdf6e7; }
+.leads-scope .wa .tile.warn b { color: var(--amber); }
+.leads-scope .wa .tile.badt { border-color: #fecaca; background: #fef2f2; }
+.leads-scope .wa .tile.badt b { color: var(--red); }
+.leads-scope .wa .tblwrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--white); }
+.leads-scope .wa table.tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
+.leads-scope .wa .tbl th, .leads-scope .wa .tbl td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.leads-scope .wa .tbl th { font-size: 12px; color: var(--slate); font-weight: 700; background: #f8fafc; white-space: nowrap; }
+.leads-scope .wa .tbl tr:last-child td { border-bottom: 0; }
+.leads-scope .wa .tbl td.num, .leads-scope .wa .tbl th.num { text-align: right; }
+.leads-scope .wa .tbl tr.sel { background: #fff7ed; }
+.leads-scope .wa .notice { border-radius: 10px; padding: 10px 12px; font-size: 13px; border: 1px solid; }
+.leads-scope .wa .notice-amber { background: #fdf6e7; border-color: #ecd9a8; color: #6b4f12; }
+.leads-scope .wa .notice-red { background: #fef2f2; border-color: #fecaca; color: #991b1b; }
+.leads-scope .wa .notice-green { background: #ecfdf5; border-color: #a7f3d0; color: #065f46; }
+.leads-scope .wa .notice-navy { background: var(--navy); border-color: var(--navy); color: var(--white); }
+.leads-scope .wa .drop { border: 2px dashed var(--line); border-radius: 12px; padding: 18px; text-align: center; background: var(--white); cursor: pointer; }
+.leads-scope .wa .drop.over { border-color: var(--orange); background: #fff7ed; }
+.leads-scope .wa .phonebox { background: #e9e4dc; border-radius: 14px; padding: 14px; max-width: 380px; }
+.leads-scope .wa .phonebox .wbubble { background: var(--white); border-radius: 10px; padding: 8px 10px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 1px 1px rgba(0,0,0,.08); }
+.leads-scope .wa .phonebox .whead { font-weight: 700; }
+.leads-scope .wa .phonebox .wbody { white-space: pre-wrap; overflow-wrap: anywhere; }
+.leads-scope .wa .phonebox .wfoot { font-size: 12px; color: var(--slate); }
+.leads-scope .wa .phonebox .wbtn { background: var(--white); border-radius: 10px; margin-top: 4px; padding: 8px; text-align: center; color: #0284c7; font-weight: 600; box-shadow: 0 1px 1px rgba(0,0,0,.08); }
+.leads-scope .wa .formgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+.leads-scope .wa .formgrid label, .leads-scope .wa label.field { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--slate); font-weight: 600; }
+.leads-scope .wa .check { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: var(--navy); }
+.leads-scope .wa .check input { width: auto; margin-top: 2px; }
+.leads-scope .wa input[type=checkbox] { width: auto; }
+.leads-scope .wa .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; }
+.leads-scope .wa .split.side { grid-template-columns: minmax(0, 280px) minmax(0, 1fr); }
+.leads-scope .wa .bar { height: 10px; border-radius: 999px; background: var(--bg); overflow: hidden; display: flex; }
+.leads-scope .wa .bar > span { display: block; height: 100%; }
+.leads-scope .wa ul.plain { list-style: none; display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+@media (max-width: 760px) {
+  .leads-scope .wa-page { padding: 12px; overflow: visible; }
+  .leads-scope .wa .split, .leads-scope .wa .split.side { grid-template-columns: minmax(0, 1fr); }
+  .leads-scope .wa .tbl th, .leads-scope .wa .tbl td { padding: 6px 8px; }
+}
+/* Tick-box cells: the whole cell toggles, an easier target on a phone. */
+.leads-scope .wa .tbl td.pick { padding: 0; width: 36px; }
+.leads-scope .wa .tbl td.pick label { display: flex; align-items: center; justify-content: center; padding: 8px 10px; cursor: pointer; min-height: 36px; }

@@ -69,6 +69,12 @@ await test('pasted text: spaces that could be one number or two are flagged', ()
   assert.equal(s.ambiguous[0].reason, 'spaced_digits'); assert.equal(s.valid, 0)
 })
 
+await test('pasted text: a +91 number with spaces and a dash or brackets is one number (found in the browser check)', () => {
+  const s = summarise(splitPasted('+91 98765-43210\n+91 (98765) 43211\n0 98765 43212'))
+  assert.deepEqual(s.numbers, ['+919876543210', '+919876543211', '+919876543212'])
+  assert.equal(s.ambiguous.length, 0)
+})
+
 await test('pasted Excel cells (tabs between columns, headings) keep only digits-bearing values', () => {
   const s = summarise(splitPasted('Name\tPhone\nAsha\t9876543210\nRavi\t+91 91234 56789\n'))
   assert.equal(s.ignored, 4)            // Name, Phone, Asha, Ravi

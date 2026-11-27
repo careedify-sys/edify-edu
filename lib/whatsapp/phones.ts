@@ -105,7 +105,8 @@ export function splitPasted(text: string): Token[] {
     const p = piece.trim()
     if (!p) continue
     if (!/\s/.test(p)) { out.push({ raw: p }); continue }
-    const compact = p.replace(/\s+/g, '')
+    // Dashes and brackets are formatting too: "+91 98765-43210" is one number.
+    const compact = p.replace(/[\s()-]+/g, '')
     if (/^\+?\d{10,14}$/.test(compact) && normaliseIndianMobile(compact).kind === 'valid') {
       // One number written with spaces, unless the pieces are each whole numbers.
       const words = p.split(/\s+/)

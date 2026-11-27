@@ -6,6 +6,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { ConvRow, MessageRow } from '@/lib/whatsapp/inbox-repo'
 import type { ThreadView, SettingsView } from '@/lib/whatsapp/inbox-service'
 import type { ConnectionReport } from '@/lib/whatsapp/graph'
+import { WaTabs } from './WaShell'
 import {
   inboxList, inboxPoll, inboxThread, inboxSend, inboxMarkRead, inboxNote, inboxConsent, inboxArchive,
   inboxLinkLead, inboxCreateLead, inboxCallOutcome, inboxSchedule, inboxSettings, inboxSetSending,
@@ -239,6 +240,7 @@ export default function InboxClient(props: {
           <button className="btn btn-ghost" onClick={() => { setShowSettings(true); reloadSettings() }}>Settings</button>
         </nav>
       </header>
+      <WaTabs active="inbox" />
 
       {settings && !settings.migrationReady && (
         <div className="banner banner-red">The Phase 2 database migration has not been run, so spend limits and settings are missing. Sending stays blocked.</div>

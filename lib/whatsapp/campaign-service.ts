@@ -21,23 +21,10 @@ const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
 const E164 = /^\+91[6-9]\d{9}$/
 export const MAX_NUMBERS = 20000
 
-export const CONSENT_SOURCES = ['enrolment_record', 'lead_form', 'whatsapp_message', 'phone_call', 'referral_reply', 'admin_entry', 'other'] as const
-export const CONSENT_SOURCE_TEXT: Record<(typeof CONSENT_SOURCES)[number], string> = {
-  enrolment_record: 'Admission or enrolment form with a WhatsApp opt-in',
-  lead_form: 'Website enquiry form with a WhatsApp opt-in',
-  whatsapp_message: 'They asked on WhatsApp',
-  phone_call: 'They agreed on a phone call',
-  referral_reply: 'They replied to a referral message',
-  admin_entry: 'Written record held by edifyedu.in',
-  other: 'Other written record',
-}
+export { CONSENT_SOURCES, CONSENT_SOURCE_TEXT } from './consent-sources'
+import { CONSENT_SOURCES } from './consent-sources'
 
-export const SKIP_TEXT: Record<string, string> = {
-  no_consent: 'No recorded marketing consent',
-  marketing_no: 'Said no to marketing',
-  opted_out: 'Opted out (STOP)',
-  no_phone: 'No phone number',
-}
+export { SKIP_TEXT } from './campaign-text'
 
 export const BLOCK_TEXT: Record<string, string> = {
   no_campaign: 'Campaign not found.',
