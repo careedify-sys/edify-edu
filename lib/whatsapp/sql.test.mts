@@ -694,9 +694,17 @@ await test('QA R1: CRM blocks calls and messages from WhatsApp consent; enquiry-
 
 await test('down migration removes everything it added and nothing else', async () => {
   const before = await count(`select count(*) n from information_schema.tables where table_schema = 'public' and table_name not like 'wa\\_%'`)
+  // Earlier tests re-run the Phase 2 file, which puts back its own function
+  // bodies; re-apply Phase 3 so the rollback starts from the real end state.
+  await db.exec(readFileSync(join(MIG_DIR, readdirSync(MIG_DIR).find(f => f.endsWith('whatsapp_campaigns.sql'))!), 'utf8'))
+  assert.equal(await count(`select count(*) n from pg_proc where proname = 'wa_month_usage' and prosrc like '%wa_campaign_recipients%'`), 1, 'Phase 3 body in place')
   // Real rollback order: newest first, because each phase references the one before.
   await db.exec(readFileSync(join(MIG_DIR, readdirSync(MIG_DIR).find(f => f.endsWith('whatsapp_campaigns.down.sql'))!), 'utf8'))
   assert.equal(await count(`select count(*) n from wa_settings where key like 'campaign\\_%'`), 0, 'Phase 3 settings removed')
+  // Phase 3 redefines wa_month_usage to skip campaign messages; the rollback
+  // must restore the Phase 2 body, or the inbox cap breaks once the table is gone.
+  assert.ok((await db.query(`select wa_month_usage('Asia/Kolkata') u`)).rows.length === 1, 'inbox usage still works after rollback')
+  assert.equal(await count(`select count(*) n from pg_proc where proname = 'wa_month_usage' and prosrc like '%wa_campaign_recipients%'`), 0)
   await db.exec(readFileSync(join(MIG_DIR, readdirSync(MIG_DIR).find(f => f.endsWith('whatsapp_inbox.down.sql'))!), 'utf8'))
   assert.equal(await count(`select count(*) n from wa_settings`), 3, 'Phase 1 settings stay')
   await db.exec(readFileSync(join(MIG_DIR, readdirSync(MIG_DIR).find(f => f.endsWith('whatsapp_core.down.sql'))!), 'utf8'))

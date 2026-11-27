@@ -1,7 +1,9 @@
 -- WhatsApp Phase 3: contact lists, marketing consent, templates and campaigns.
 --
--- Additive. Phase 1 and Phase 2 tables keep every column and row. Two Phase 2
--- objects change in a compatible way, and the down file restores both:
+-- Additive. Phase 1 and Phase 2 tables keep every column and row. Three Phase 2
+-- objects change in a compatible way, and the down file restores the functions:
+--  - wa_month_usage leaves campaign messages out, so they never count
+--    against the Rs 500 inbox cap (campaigns have their own budgets);
 --  - wa_consent gains an optional obtained_on date and three more sources;
 --  - wa_list_conversations lists only conversations with an inbound message,
 --    so campaign sends never bury real chats. Before this release every
@@ -116,6 +118,9 @@ alter table wa_list_members        enable row level security;
 alter table wa_templates           enable row level security;
 alter table wa_campaigns           enable row level security;
 alter table wa_campaign_recipients enable row level security;
+-- RLS with no policies already denies the API roles; revoking the grants too
+-- means a policy added by mistake later still exposes nothing.
+revoke all on table wa_lists, wa_list_members, wa_templates, wa_campaigns, wa_campaign_recipients from anon, authenticated;
 
 drop trigger if exists wa_lists_set_updated_at on wa_lists;
 create trigger wa_lists_set_updated_at before update on wa_lists for each row execute function set_updated_at();
@@ -144,7 +149,9 @@ create trigger wa_campaigns_guard before update on wa_campaigns for each row exe
 create or replace function wa_campaign_recipients_guard()
 returns trigger language plpgsql set search_path = public as $$
 begin
-  if (select status from wa_campaigns where id = new.campaign_id) <> 'draft' then
+  -- FOR SHARE waits for an approval in progress (it holds FOR UPDATE), so a
+  -- row cannot slip in between the approval snapshot and the status change.
+  if (select status from wa_campaigns where id = new.campaign_id for share) <> 'draft' then
     raise exception 'campaign_locked' using errcode = 'P0001';
   end if;
   return new;
@@ -213,18 +220,29 @@ $$;
 create or replace function wa_campaign_ineligible(p_contact uuid)
 returns text language sql stable set search_path = public as $$
   with c as (
-    select granted, recorded_at from wa_consent
+    select granted, recorded_at, obtained_on from wa_consent
      where contact_id = p_contact and purpose = 'marketing' order by recorded_at desc limit 1
   )
+  -- A STOP wins over a Yes recorded later unless the Yes was OBTAINED after
+  -- the STOP: an old admission form typed in today must not undo last
+  -- week's STOP. Same-day counts as after the STOP (conservative).
   select case
     when (select phone_e164 from wa_contacts where id = p_contact) is null then 'no_phone'
     when wa_contact_opted_out(p_contact) then 'opted_out'
     when exists (select 1 from wa_messages m join wa_conversations cv on cv.id = m.conversation_id
                   where cv.contact_id = p_contact and m.direction = 'inbound'
                     and wa_is_marketing_opt_out(m.type, m.body)
-                    and m.created_at > coalesce((select recorded_at from c), '-infinity'::timestamptz)) then 'opted_out'
+                    and (m.created_at > coalesce((select recorded_at from c), '-infinity'::timestamptz)
+                         or (m.created_at at time zone 'Asia/Kolkata')::date
+                            >= coalesce((select obtained_on from c), ((select recorded_at from c) at time zone 'Asia/Kolkata')::date))) then 'opted_out'
     when not exists (select 1 from c) then 'no_consent'
     when exists (select 1 from c where not granted) then 'marketing_no'
+    -- Same rule for a recorded No (the sweep writes one for every STOP): a
+    -- later-entered Yes must have been obtained after it.
+    when exists (select 1 from wa_consent n, c
+                  where n.contact_id = p_contact and n.purpose = 'marketing' and not n.granted
+                    and (n.recorded_at at time zone 'Asia/Kolkata')::date
+                        >= coalesce(c.obtained_on, (c.recorded_at at time zone 'Asia/Kolkata')::date)) then 'marketing_no'
     else null end
 $$;
 
@@ -318,7 +336,7 @@ returns jsonb language sql stable set search_path = public as $$
 $$;
 
 -- Meta error codes that mean "stop the whole campaign", not "this number
--- failed". Kept in step with STOP_CODES in lib/whatsapp/campaigns.ts.
+-- failed". Kept in step with STOP_CODES in lib/whatsapp/campaign-worker.ts.
 --   190 token expired · 4 / 80007 / 130429 rate limits · 368 policy block
 --   131031 account locked · 131042 payment problem · 131048 spam rate limit
 --   132000 / 132012 template parameters · 132001 template missing
@@ -378,6 +396,11 @@ begin
   if (v_p->>'eligible')::int = 0 then return 'no_eligible_recipients'; end if;
   if (v_p->>'eligible')::int <> p_seen_eligible or (v_p->>'template_id')::uuid is distinct from p_seen_template then return 'preview_changed'; end if;
   if (v_p->>'budget_inr') is null or (v_p->>'cost_with_tax')::numeric > (v_p->>'budget_inr')::numeric then return 'over_budget'; end if;
+  -- Only the people counted as eligible in the approval can be messaged:
+  -- the rest are skipped now, so consent recorded later cannot grow the
+  -- campaign past what was approved. Back to draft puts them back.
+  update wa_campaign_recipients set state = 'skipped', skip_reason = wa_campaign_ineligible(contact_id), finished_at = now()
+   where campaign_id = p_campaign and state = 'queued' and wa_campaign_ineligible(contact_id) is not null;
   update wa_campaigns set status = 'approved', approval = v_p, approved_by = p_actor, approved_at = now(), paused_reason = null
    where id = p_campaign;
   return null;
@@ -407,6 +430,9 @@ begin
     if exists (select 1 from wa_campaign_recipients where campaign_id = p_campaign and claimed_at is not null) then
       return 'already_sending';
     end if;
+    -- Nothing was claimed, so every skipped row was skipped at approval.
+    update wa_campaign_recipients set state = 'queued', skip_reason = null, finished_at = null
+     where campaign_id = p_campaign and state = 'skipped' and claimed_at is null;
     update wa_campaigns set status = 'draft', paused_reason = null where id = p_campaign;
   else
     return 'bad_action';
@@ -627,6 +653,42 @@ returns jsonb language sql stable set search_path = public as $$
     'opt_outs',   (select count(*) from optouts),
     'meta_billable', (select billable from billed)
   )
+$$;
+
+-- ── Inbox spend: campaigns are not inbox messages ──────────────────────────
+-- Phase 2's wa_month_usage counted every billable Meta status, so marketing
+-- messages sent by campaigns would have been charged against the Rs 500
+-- inbox cap (wa_reserve_outbound reads meta_billable). Campaign messages
+-- are left out here; they have their own budgets (wa_campaign_spend).
+create index if not exists wa_campaign_recipients_message_idx on wa_campaign_recipients (message_id) where message_id is not null;
+create or replace function wa_month_usage(p_tz text)
+returns jsonb language sql stable set search_path = public as $$
+  with b as (
+    select (date_trunc('month', now() at time zone p_tz)) at time zone p_tz as start_at
+  ), o as (
+    select m.* from wa_messages m, b
+     where m.direction = 'outbound' and m.created_at >= b.start_at
+       and not exists (select 1 from wa_campaign_recipients r where r.message_id = m.id)
+  ), st as (
+    select s.wamid,
+           bool_or(s.pricing->>'billable' = 'true')  as billable,
+           bool_or(s.pricing->>'billable' = 'false') as free
+      from wa_message_statuses s, b
+     where s.received_at >= b.start_at and s.pricing is not null
+       and not exists (select 1 from wa_messages m join wa_campaign_recipients r on r.message_id = m.id
+                        where m.wamid = s.wamid)
+     group by s.wamid
+  )
+  select jsonb_build_object(
+    'month_start',       (select start_at from b),
+    'service_delivered', (select count(*) from o where type <> 'template' and status_rank >= 2),
+    'service_in_flight', (select count(*) from o where type <> 'template' and status_rank < 2
+                            and send_state in ('sending','accepted','unknown') and coalesce(status, '') <> 'failed'),
+    'service_failed',    (select count(*) from o where type <> 'template' and (send_state = 'failed' or status = 'failed')),
+    'templates_sent',    (select count(*) from o where type = 'template' and send_state = 'accepted'),
+    'meta_billable',     (select count(*) from st where billable),
+    'meta_free',         (select count(*) from st where free and not billable)
+  );
 $$;
 
 -- ── Inbox list: real chats only ─────────────────────────────────────────────

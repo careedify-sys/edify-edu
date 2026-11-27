@@ -13,7 +13,7 @@
 // is safe because no request was made for them.
 import type { CampaignRepo } from './campaign-repo'
 import { sendMessage, type GraphEnv } from './graph'
-import { accountLimits, templateSendPayload, templateStatus } from './graph-templates'
+import { accountLimits, needsParameters, templateSendPayload, templateStatus } from './graph-templates'
 import { readCampaignSettings } from './campaign-service'
 
 // Same list as wa_campaign_stop_codes() in the migration.
@@ -47,6 +47,7 @@ export async function runCampaignWorker(repo: CampaignRepo, env: GraphEnv, f: ty
     rep.campaigns++
     const tpl = c.template_id ? await repo.getTemplate(c.template_id) : null
     if (!tpl?.meta_id) { rep.blocked.push('template_missing'); continue }
+    if (needsParameters(tpl.components)) { rep.blocked.push('template_needs_parameters'); continue }
     const live = await templateStatus(env, tpl.meta_id, f)
     if (!live) { rep.blocked.push('template_unreadable'); continue }
     if (live.status !== tpl.status || (live.category && live.category !== tpl.category)) {

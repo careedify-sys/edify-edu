@@ -82,6 +82,8 @@ export function previewText(components: unknown[]): { header: string | null; bod
   }
 }
 
+export { needsParameters } from './campaign-text'
+
 export function templateSendPayload(name: string, language: string) {
   return { type: 'template', template: { name, language: { code: language } } }
 }

@@ -106,6 +106,8 @@ export async function GET(req: NextRequest) {
 // Separate try: a campaign problem must never stop the webhook retries above
 // from being recorded, and the reverse. Counts only in logs.
 async function runCampaigns(sb: NonNullable<ReturnType<typeof whatsappServiceClient>>, counts: Record<string, unknown>, started: number) {
+  // A developer machine in mock mode never sends, even with real keys loaded.
+  if (process.env.WA_INBOX_MOCK === '1') { counts.campaign = 'mock_mode'; return }
   const repo = supabaseCampaignRepo(sb)
   try {
     counts.marketingOptOuts = await repo.recordMarketingOptOuts()

@@ -7,7 +7,7 @@ import {
   waCampaign, waUpdateDraft, waAddRecipients, waRemoveRecipients, waKeepEligible, waApprove, waControl, waDuplicate,
 } from '../../campaign-actions'
 import { splitPasted, summarise } from '@/lib/whatsapp/phones'
-import { SKIP_TEXT, STATUS_TEXT, pauseText } from '@/lib/whatsapp/campaign-text'
+import { SKIP_TEXT, STATUS_TEXT, pauseText, needsParameters } from '@/lib/whatsapp/campaign-text'
 import type { CampaignView } from '@/lib/whatsapp/campaign-service'
 import type { ListRow, TemplateRow } from '@/lib/whatsapp/campaign-repo'
 
@@ -31,7 +31,7 @@ export default function CampaignClient({ mode, initial, lists, templates }: { mo
   const [agree, setAgree] = useState(false)
   const c = v.campaign
   const draft = c.status === 'draft'
-  const usable = templates.filter(t => t.category === 'MARKETING' && t.status === 'APPROVED')
+  const usable = templates.filter(t => t.category === 'MARKETING' && t.status === 'APPROVED' && !needsParameters(t.components))
   const p = v.preview
   const s = v.stats
 

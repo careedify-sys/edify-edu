@@ -145,6 +145,8 @@ audits/mba-specs-list.json
 audits/new-blogs-priority-*.md
 audits/orphan-and-duplicate-flags-*.md
 reports/
+# The WhatsApp Reports screen is a route, not a scratch report folder.
+!app/leads/whatsapp/reports/
 edifyedu-*.csv
 edifyedu-*.md
 edifyedu-*.xlsx

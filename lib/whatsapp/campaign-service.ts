@@ -9,7 +9,7 @@
 // Audit entries carry ids and counts, never phone numbers or message text.
 import { can, type Action, type Actor } from './access'
 import type { CampaignRepo, CampaignRow, DraftPatch, NumberStatus, Preview, RecipientState, Stats } from './campaign-repo'
-import { createTemplate, draftComponents, listTemplates, previewText, validateDraft, accountLimits, type TemplateDraft, type AccountLimits } from './graph-templates'
+import { createTemplate, draftComponents, listTemplates, previewText, validateDraft, accountLimits, needsParameters, type TemplateDraft, type AccountLimits } from './graph-templates'
 import type { GraphEnv } from './graph'
 import { parseRates } from './spend'
 
@@ -291,6 +291,7 @@ export async function updateDraft(repo: CampaignRepo, actor: Actor | null, id: s
       if (!t) return bad('Unknown template.')
       if (t.category !== 'MARKETING') return bad('Referral messages are marketing. Choose a Marketing template.')
       if (t.status !== 'APPROVED') return bad('Meta has not approved this template yet.')
+      const np = needsParameters(t.components); if (np) return bad(np)
       patch.template_id = t.id
     }
   }
@@ -411,6 +412,7 @@ export async function approveCampaign(repo: CampaignRepo, actor: Actor | null, i
   if (!c) return bad('Campaign not found.')
   const t = c.template_id ? await repo.getTemplate(c.template_id) : null
   if (!t || t.category !== 'MARKETING') return bad('Referral messages are marketing. Choose a Marketing template.')
+  const np = needsParameters(t.components); if (np) return bad(np)
   const why = await repo.approve(id, actor!.id, Math.floor(Number(i.seenEligible)), i.seenTemplate)
   if (why) return bad(BLOCK_TEXT[why] ?? why)
   await repo.audit(actor!.id, 'campaign_approve', id, { eligible: Math.floor(Number(i.seenEligible)), template_id: i.seenTemplate })

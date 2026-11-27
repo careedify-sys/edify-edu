@@ -436,5 +436,68 @@ await test('retention removes recipient rows after 24 months', async () => {
   assert.equal(await num(`select count(*) from wa_campaign_recipients`), n - 1)
 })
 
+// ── Review findings, 27 Nov ─────────────────────────────────────────────────
+await test('a STOP beats a Yes typed in later unless the Yes was obtained after the STOP (QA 4, security 1)', async () => {
+  await db.query('select wa_import_numbers($1, null, $2, $3)', [[P(700), P(701), P(702)], 'paste', 'owner'])
+  const why = async (p: string) => (await one<{ w: string | null }>('select wa_campaign_ineligible($1) w', [await contactId(p)])).w
+  // Two students pressed "Stop promotions" ten days ago (marketing-only; a
+  // plain STOP is a full opt-out that a marketing Yes never undoes); the
+  // sweep records their marketing No.
+  for (const [i, p] of [[0, P(700)], [1, P(701)]] as const) {
+    await deliver(buildPayload({ messages: [button({ id: 'wamid.OLDSTOP' + i, from: p.slice(1), text: 'Stop promotions' })] }))
+  }
+  await db.query('select wa_record_marketing_opt_outs()')
+  await db.query(`update wa_messages set created_at = now() - interval '10 days' where wamid like 'wamid.OLDSTOP%'`)
+  await db.query(`update wa_consent set recorded_at = now() - interval '10 days' where recorded_by = 'system' and contact_id in (select id from wa_contacts where phone_e164 = any($1))`, [[P(700), P(701)]])
+  // Today the owner enters Yes from admission forms signed a month ago: still out.
+  const yes = (p: string, obtained: string) => db.query(`insert into wa_consent (contact_id, purpose, granted, source, evidence, recorded_by, obtained_on)
+    select id, 'marketing', true, 'enrolment_record', 'admission form', 'owner', ${obtained} from wa_contacts where phone_e164 = $1`, [p])
+  await yes(P(700), `current_date - 30`)
+  assert.notEqual(await why(P(700)), null, 'old evidence must not undo a newer STOP')
+  // A fresh Yes the student gave two days ago (after the STOP) counts.
+  await yes(P(701), `current_date - 2`)
+  assert.equal(await why(P(701)), null, 'consent obtained after the STOP is valid')
+  // Control: a student with no STOP and the same old-evidence Yes is eligible.
+  await yes(P(702), `current_date - 30`)
+  assert.equal(await why(P(702)), null)
+})
+
+await test('approval freezes who can be messaged; back to draft restores them (security 4)', async () => {
+  await resetSpend()
+  const list = await consented(2, 720)
+  await db.query('select wa_import_numbers($1, $2, $3, $4)', [[P(722)], list, 'paste', 'owner'])   // no consent yet
+  const { c, r } = await campaignFor(list)
+  assert.equal(r, null)
+  const st = async (id: string) => (await all<{ state: string; n: number }>(`select state, count(*)::int n from wa_campaign_recipients where campaign_id = $1 group by 1 order by 1`, [id])).map(x => `${x.state}:${x.n}`)
+  assert.deepEqual(await st(c), ['queued:2', 'skipped:1'])
+  await consent(P(722), true)                                   // consent arrives after approval
+  assert.deepEqual((await claim(c)).map(x => x.phone).sort(), [P(720), P(721)], 'only the 2 approved people')
+  // A second campaign, never claimed: back to draft puts the skipped row back.
+  await consent(P(722), false)
+  const second = await campaignFor(list)
+  assert.deepEqual(await st(second.c), ['queued:2', 'skipped:1'])
+  assert.equal((await one('select wa_campaign_control($1, $2) r', [second.c, 'unapprove'])).r, null)
+  assert.deepEqual(await st(second.c), ['queued:3'])
+})
+
+await test('campaign messages are not counted against the inbox cap (QA 5)', async () => {
+  await resetSpend()
+  const usage = async () => (await one<{ u: any }>(`select wa_month_usage('Asia/Kolkata') as u`)).u
+  const before = await usage()
+  const list = await consented(2, 740)
+  const { c } = await campaignFor(list)
+  const rows = await claim(c)
+  const bill = { billable: true, pricing_model: 'PMP', category: 'marketing' }
+  for (let i = 0; i < rows.length; i++) {
+    await finish(rows[i].client_ref, 'accepted', 'wamid.CAP' + i)
+    await deliver(buildPayload({ statuses: [statusEvent({ id: 'wamid.CAP' + i, status: 'delivered', pricing: bill })] }))
+  }
+  const after = await usage()
+  assert.equal(after.meta_billable, before.meta_billable, 'inbox billable unchanged')
+  assert.equal(after.templates_sent, before.templates_sent, 'inbox templates unchanged')
+  // Control: the campaign itself sees both billed.
+  assert.equal((await one<{ s: any }>('select wa_campaign_stats($1) s', [c])).s.meta_billable, 2)
+})
+
 console.log(`\n${passed} campaign SQL tests passed`)
 await db.close()

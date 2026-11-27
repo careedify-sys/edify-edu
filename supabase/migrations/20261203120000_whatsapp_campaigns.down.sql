@@ -24,6 +24,35 @@ drop function if exists wa_campaign_ineligible(uuid);
 drop function if exists wa_is_marketing_opt_out(text, text);
 drop function if exists wa_import_numbers(text[], uuid, text, text);
 
+-- Phase 2 wa_month_usage, exactly as 20261202120000 created it (it must not
+-- reference wa_campaign_recipients once that table is gone).
+create or replace function wa_month_usage(p_tz text)
+returns jsonb language sql stable set search_path = public as $$
+  with b as (
+    select (date_trunc('month', now() at time zone p_tz)) at time zone p_tz as start_at
+  ), o as (
+    select m.* from wa_messages m, b
+     where m.direction = 'outbound' and m.created_at >= b.start_at
+  ), st as (
+    select s.wamid,
+           bool_or(s.pricing->>'billable' = 'true')  as billable,
+           bool_or(s.pricing->>'billable' = 'false') as free
+      from wa_message_statuses s, b
+     where s.received_at >= b.start_at and s.pricing is not null
+     group by s.wamid
+  )
+  select jsonb_build_object(
+    'month_start',       (select start_at from b),
+    'service_delivered', (select count(*) from o where type <> 'template' and status_rank >= 2),
+    'service_in_flight', (select count(*) from o where type <> 'template' and status_rank < 2
+                            and send_state in ('sending','accepted','unknown') and coalesce(status, '') <> 'failed'),
+    'service_failed',    (select count(*) from o where type <> 'template' and (send_state = 'failed' or status = 'failed')),
+    'templates_sent',    (select count(*) from o where type = 'template' and send_state = 'accepted'),
+    'meta_billable',     (select count(*) from st where billable),
+    'meta_free',         (select count(*) from st where free and not billable)
+  );
+$$;
+
 drop table if exists wa_campaign_recipients;
 drop table if exists wa_campaigns;
 drop function if exists wa_campaign_recipients_guard();

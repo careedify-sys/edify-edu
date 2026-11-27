@@ -234,4 +234,22 @@ await test('export: phones and states only, owner only', async () => {
   assert.equal(r.rows.filter(x => x[3] === 'yes').length, 5)
 })
 
+await test('a synced template that needs parameters cannot be chosen (QA 3)', async () => {
+  const { needsParameters } = await import('./campaign-text')
+  const body = (text: string) => ({ type: 'BODY', text })
+  assert.equal(needsParameters([body('Refer a friend. Reply STOP to opt out.'), { type: 'BUTTONS', buttons: [{ type: 'QUICK_REPLY', text: 'Yes' }, { type: 'URL', text: 'Visit', url: 'https://edifyedu.in' }] }]), null)
+  assert.match(needsParameters([body('Hi {{1}}, refer a friend')])!, /personalised/)
+  assert.match(needsParameters([body('Hi {{name}}')])!, /personalised/)
+  assert.match(needsParameters([{ type: 'HEADER', format: 'IMAGE' }, body('x')])!, /image/)
+  assert.match(needsParameters([body('x'), { type: 'BUTTONS', buttons: [{ type: 'URL', text: 'Go', url: 'https://edifyedu.in/{{1}}' }] }])!, /variable/)
+  assert.match(needsParameters([body('x'), { type: 'BUTTONS', buttons: [{ type: 'COPY_CODE', example: 'X' }] }])!, /copy code/)
+  assert.match(needsParameters([])!, /Sync/)
+
+  const repo = mockCampaignRepo()
+  const { id } = await readyCampaign(repo)
+  await repo.saveTemplate({ meta_id: 'v1', name: 'with_var', language: 'en', category: 'MARKETING', status: 'APPROVED', components: [body('Hi {{1}}')], reason: null, quality: null, submitted_by: null })
+  const withVar = (await repo.templates()).find(t => t.name === 'with_var')!
+  err(await svc.updateDraft(repo, OWNER, id, { templateId: withVar.id }), /personalised/)
+})
+
 console.log(`\n${passed} campaign service tests passed`)
