@@ -153,6 +153,145 @@ Branch fix/b3-batch-25, on top of batch 24 round 4 (341f986; corrected in round 
 - Batches 27 and later: turn on the per-semester rule post by post, with a flat ratchet. Delete the derived per-semester columns, the "x 6" lines and the 22 section B figures that are our own divisions.
 - 5 Dec: when the title freeze lifts, fix the 8 held posts and empty EXEMPTION_HOLD_SLUGS. The gate fails from 6 Dec until that is done.
 
+## 2026-11-28 · B7b: no exam mode without a confirmed record; "from home" only for the 11 (branch fix/b7b-default-exam-mode, stacked on fix/b7-exam-mode b677143, not pushed)
+
+- **Why:** B7 deferred item (4). 111 records (143 minus 25 confirmed minus B7's 7) carry the importer default examMode 'Online' that nobody has
+  checked, and every template turned that default into "Online proctored examinations from home. No exam centre visit
+  required.", "No campus visits required", "via webcam from home or office", a green tick in the compare table's Online
+  Exam column and "edifyedu.in records X exams as Online". The same text also printed for confirmed universities whose
+  source says online but not from home (CHRIST, CU, Galgotias, GLA, JAIN, KL, Manav Rachna, UPES, VGU, Symbiosis,
+  Kurukshetra, DSU). VIT showed this wording while holding exams at centres, so the default is not safe to print.
+- **Rule (lib/exam-mode.ts examTier):** 'centre' (VIT, BITS) unchanged; 'fromHome' (CONFIRMED_FROM_HOME, the 11) keeps
+  the from-home wording; 'online' (confirmed, location not stated) gets "Exams are online." and no from-home, webcam or
+  campus-visit claim; 'unverified' (B7's 7) keeps the counsellor line; 'unrecorded' (everyone else) gets "Check the exam
+  format with our counsellor before you enrol.", a neutral dash in the compare table and "Ask our counsellor" in the stat
+  cells. examMode in lib/data.ts is unchanged for every record.
+- **Templates:** SectionExams, SectionClasses, SectionAbout ("no mandatory campus visits" now only for the 11),
+  UniProgramBody FAQ, UniSpecBody two FAQs, UniversityPageClient FAQ and both stat cells, ComparisonTable,
+  compare-answers row and FAQ, university-answers Q7 ("edifyedu.in has not confirmed how and where X holds its online
+  MBA exams."). The Galgotias BCA custom intro lost "with no mandatory campus visits" (Galgotias source: online
+  proctored, location not stated).
+- **Page-content JSON (28 files, 60 strings):** for unrecorded universities, sentences claiming online, proctored,
+  webcam, photo-ID-for-proctoring, "no mandatory campus visits" or exam centres were deleted, and exam sections and
+  exam FAQs that lost a sentence start or end with the neutral line. "Proctored" was dropped from the weighting
+  sentences, whose 30-40 / 60-70 splits stay (deferred item 1 applies to them too). For confirmed 'online'
+  universities, webcam, Aadhaar and "no mandatory campus visit" sentences were deleted; "proctored" stays where the
+  source says proctored and was removed for Kurukshetra and Symbiosis, whose sources do not. JAIN's and UPES's sources
+  do mention a webcam, but the webcam lines went too, per the tier rule; they can come back from those sources. One
+  Jaypee red flag ("Proctoring software has reported rejecting Voter ID ...") was removed: nothing sources it.
+  IGNOU's "TEE are held twice a year at 800+ exam centres" and "Online TEE options" went too: no sheet sources them.
+- **Kept on purpose:** "No campus visit is required for admission" (admission, not exams), "study from anywhere"
+  (study, not exams), DSU's optional networking visits, Shoolini's methodology-PDF sentence (sourced in B7).
+- **Not touched:** lib/blog.ts (out of bounds), lib/content.ts programme `format` strings (not rendered),
+  components/LearningExperience.tsx (not imported).
+- **Proof (next start on the build, all 2,150 valid-urls fetched, 0 failures; JSON-LD kept, RSC payload ignored):**
+  "from home" is on 285 pages: 278 belong to the 11 CONFIRMED_FROM_HOME universities, and 7 are /programs/mba/{spec}
+  hubs that list only universities from the 11 (agribusiness, analytics-and-data-science, digital-entrepreneurship,
+  environmental-social-and-governance-esg, global-finance-market, hospitality-management,
+  international-finance-and-accounting). "No exam centre visit required": 268 pages, all the 11. "via webcam": 11
+  pages, all the 11. Page checks: noida-international-university-online/mba shows the neutral line and no mode;
+  its profile stat cell reads "Ask our counsellor"; lovely-professional-university-online/mba keeps the from-home line;
+  upes-online/mba and its profile read "Exams are online." with no from-home, webcam or campus-visit claim. On the 41
+  compare pages, every "edifyedu.in records X exams as Online" names a confirmed university.
+
+## 2026-11-28 · B7 round 2: QA F1, F5 and F15 (branch fix/b7-exam-mode, not pushed)
+
+QA report: audits/qa/2026-11-28-b7-exam-mode-premerge.md. Merged origin/main (0a8999e) first: FIX-LOG kept both
+sides; lib/specFaqs.ts kept main's IGNOU "Rs 16,000 per semester" line and this branch's exam sentence.
+- **F1, why:** examSentenceForUniversities added "Exam format differs by university." whenever an unconfirmed
+  university was listed. That is false on its face on the 12 single-university spec hubs, and nothing on record shows
+  the formats differ on the others. **What:** the sentence is gone. "Each university sets its own exam format." is used
+  only where 2 or more universities are listed, before the counsellor or neutral line. A single confirmed-Online hub
+  now reads "Exams are online." instead of "at every university listed here".
+- **F5, why:** the earlier entry said DSU's wording was unchanged. It is corrected in place below, with the Q80
+  dependency.
+- **F15, why:** the /programs/mba FAQ (components/MBAHubClient.tsx) defined online MBA as having "AI-proctored online
+  exams", false for VIT and BITS. **What:** it now says "exam format varies by university, so ask our counsellor". That
+  holds on this page, which lists VIT and BITS (exam centres) beside confirmed online-proctored universities.
+- **Q29:** the "what stays" column now records that the Shoolini hub shows the counsellor line and its exams body
+  follows the methodology PDF.
+
+## 2026-11-28 · B7 follow-up: spec-hub FAQ exam sentence from lib/exam-mode.ts (branch fix/b7-exam-mode, not pushed)
+
+- **Why:** lib/specFaqs.ts answered "Can I do online MBA in X while working full-time?" with "Exams are online and
+  AI-proctored from home" on every /programs/mba/{spec} hub, for every university listed. VIT and BITS hold end-semester
+  exams at centres (CONFIRMED_EXAM_MODE 'Exam Centre'), 7 universities have no sourced mode, and about 111 records have
+  no exam-mode record at all, so the sentence was false or a guess on every hub that listed them.
+- **What:** getSpecFAQs takes the listed universities (server page and MBASpecHubClient pass the same uniIds set) and
+  the sentence comes from examSentenceForUniversities in lib/exam-mode.ts. It may only claim what holds for every
+  university on the page: "from home" when all are in the new CONFIRMED_FROM_HOME set (the audit's 11 "from home or
+  anywhere" rows), "online" when all are confirmed 'Online'. Otherwise it names the confirmed Exam Centre universities
+  ("... hold end-semester exams in person at designated exam centres.") and ends with the counsellor line when an
+  UNVERIFIED_EXAM_MODE university is listed, or "Check the exam format with our counsellor before you enrol." when only
+  unrecorded ones are. No mode is invented. The "AI-proctored" claim is dropped: no sheet sources it for all.
+- **Other shared templates checked:** no other live template hard-codes "from home" for every university.
+  components/LearningExperience.tsx does ("from the absolute comfort of your home") but nothing imports it. The
+  per-university templates (SectionExams, UniversityPageClient FAQ) branch on examMode and are deferred item 4 below.
+- **Deferred, logged for later (coordinator, 28 Nov):** (1) the 30-40% / 60-70% weighting sentences in the DY Patil,
+  Sharda and Shoolini exams bodies, likely templated; (3) the NMIMS tagline "slot-based online exams" in lib/data.ts,
+  not rendered; (4) about 111 records with no exam-mode record still get the default "from home" wording in
+  SectionExams and the profile FAQ.
+
+## 2026-11-28 · B7 exam mode: counsellor line for 7 universities with no sourced mode (branch fix/b7-exam-mode, not pushed)
+
+- **Why:** every hub, spec page, profile FAQ and AI-answer block printed "Online proctored examinations from home. No
+  exam centre visit required." (or "Online examinations", "No campus visits required") for every record carrying the
+  importer default examMode 'Online'. For these universities nobody had read the mode on the university's own pages
+  (audits/exam-mode-verified-2026-11-16.md, "Not stated or conflicting", plus Shoolini as ambiguous), so the line was a
+  guess presented as fact. VIT showed the same error and was in person; Graphic Era's old guidelines and Shoolini's
+  methodology PDF both mention exam centres or campus invigilation. Date-locked to after the 28 Nov guard (passed today).
+- **Who gets the counsellor line (UNVERIFIED_EXAM_MODE, lib/exam-mode.ts):** dy-patil-university-online,
+  graphic-era-university-online, nmims-online, sharda-university-online, mody-university-online,
+  sathyabama-university-online (6 still unverified) and shoolini-university-online (ambiguous; Q29 still open).
+  Line: "Talk to our counsellor for how and where exams are held." No mode is invented; examMode in lib/data.ts is unchanged.
+- **DSU is not in that set.** The 16 Nov audit listed it as unverified, but audits/verify/dayananda-sagar-university-online-2026-11-18.md
+  row M6 is a MATCH ("Online Examination" on dsuonline.com/online-mba/, plus a "Remote Proctored Online Examination"
+  disclosure). DSU was added to CONFIRMED_EXAM_MODE as 'Online' with that citation, so 6 + DSU = the brief's 7.
+  Corrected in round 2 (QA F5): this is not wording-neutral. Confirming DSU adds two rendered facts, both backed by
+  M6: "Exams: Online" in the DSU hub Quick Facts, and "Online classes; Online exams" on the DSU profile. The
+  confirmation depends on Q80: B2 (audits/verify/b2-official-urls-2026-11-28.md) still holds dsuonline.com UNVERIFIED as
+  DSU's official site. If Q80 comes back "no", remove DSU from CONFIRMED_EXAM_MODE. DSU's older "from home" and
+  "via webcam from home or office" lines, which M6 does not support, belong to deferred item (4).
+- **VIT:** already 'Exam Centre' since 3.4C1 (live 16 Nov, a6d3771), sourced to registration.vitonline.in in the audit
+  CSV. Nothing to change. The 22 confirmed rows are untouched.
+- **Where it renders, what changed:** SectionExams "Exam Mode", SectionClasses "Assessments", SectionAbout intro (the
+  "with no mandatory campus visits" clause is dropped for the set), UniProgramBody FAQ, UniSpecBody two FAQs,
+  UniversityPageClient FAQ "How are exams conducted" and both "Exam Mode" stat cells ("Ask our counsellor"),
+  ComparisonTable "Online Exam" (neutral dash, not a green tick), compare-answers row and FAQ, university-answers Q7.
+- **Page-content JSON:** mode, proctoring, webcam and ID-for-proctoring sentences removed from the exams sections of
+  dy-patil, nmims, sharda and shoolini MBA hubs, the DY Patil work-while-studying FAQ, the NMIMS hero ("runs entirely
+  online with proctored exams") and the Shoolini classes body ("no mandatory campus visit"). Shoolini's exams body now
+  states what its methodology PDF says (both modes described). Graphic Era, Mody and Sathyabama JSON had no exam claim.
+- **Left alone, flagged:** the 30-40% / 60-70% weighting sentences in the DY Patil, Sharda and Shoolini exams bodies
+  look templated (B3 batch 2 called the same split typed, not sourced); out of B7 scope. lib/specFaqs.ts says "Exams are
+  online and AI-proctored from home" for all universities on /programs and MBA spec hubs; generic, also false for VIT and
+  BITS. The NMIMS tagline "slot-based online exams" in lib/data.ts is not rendered by any page. The other ~111 records
+  with no examModeSource still print the default wording, as the audit's draft notes; that widening is a separate decision.
+
+## 2026-11-28 · B1 round 2: QA F1 and F2, Amity and Symbiosis fee dates, JAIN NIRF source (branch fix/b1-provenance)
+
+QA report: audits/qa/2026-11-28-b1-provenance-premerge.md (FAIL, two blockers). Merged origin/main (0a8999e) first; QUESTIONS conflict resolved as Q80 then Q81.
+- **F1, DEB line on non-MBA pages.** Why: every `deb` entry rests on the register's MBA row, but `debSessionLine(u)` had no programme, so the line claimed a 2026-27 Online entitlement on 92 BBA/BCA/MCA pages that no sheet checked. Now `debSessionLine(u, program, named)` returns null unless program is MBA. The hub passes its programme. The profile names it: "Online MBA: UGC-DEB entitled, Online mode, 2026-27 session. Register checked 18 Nov 2026".
+- **F2, KNOWN_GAPS could grow.** Why: QA swapped BITS's dated fee for a "Q999" gap and the gate passed. Now `ALLOWED_GAP_IDS` is a frozen set (DSU, ACU) that may only lose entries, any gap outside it fails, each gap must start with a Q number that is a row in audits/QUESTIONS-FOR-RISHI.md, and an allowed id that gains fee provenance fails until removed. Self-test went from 8 to 11 cases (new gap added, missing question row, no question number); all caught.
+- **Advisory 7, two fee dates on Amity and Symbiosis.** Why: the payment-mode table said "Fees checked on 13 November 2026" beside the new 18 Nov line. Both 18 Nov sheets re-read the same figures on the portal (Amity standard rows MATCH, premium one-time/annual MATCH and the batch-2/17 corrected semester and EMI totals equal the published ones; Symbiosis both totals MATCH). `feePlans.checkedOn` is now 2026-11-18 on Amity's two tracks and Symbiosis's one, with the sheet named in `source`. `feeVerifiedOn` is left at 2026-11-13: it is not rendered, and it describes the whole record's fees, which the MBA-only sheets did not re-read. The Symbiosis "Registration" label question (Q16) is unchanged.
+- **Advisory 4, JAIN NIRF.** Why: the value names Management #73 but cited only the University table. Added `alsoSourceUrls: ['https://www.nirfindia.org/Rankings/2025/ManagementRanking.html']` (the sheet's Management row source); the gate checks every extra URL is on nirfindia.org.
+
+## 2026-11-28 · B1: fee, DEB, NAAC and NIRF provenance; fee date and DEB session rendered; check-fee-provenance gate (branch fix/b1-provenance)
+
+- **Why:** Phase B's exit gate is "checkedOn present on every fee for those 10". Before this, 26 records carried a `feeVerifiedOn` that no page rendered, and nothing tied a date to a figure: JAIN's 30 Oct date was a BBA/MCA read, and a fee could change while keeping its old date. A reader (or a model) had no way to see when a fee was last true.
+- **What:** `UNIVERSITY_PROVENANCE` in `lib/data.ts` with `{ value, sourceUrl, checkedOn, session, sheet }` for fee, DEB, NAAC and NIRF, attached to records as the optional `provenance` field. getExactFee, titles and metas never read it. Every value comes from the 18 Nov verify sheets, which record a portal (or register) read of that exact figure that day. Rendered: "Fee checked 18 Nov 2026 on the university portal" under the fee tile on the MBA hub and under the Quick Stats on the profile (MBA tab only); "UGC-DEB entitled, Online mode, 2026-27 session. Register checked 18 Nov 2026" under the hub eyebrow and in the profile's Approvals card. Small muted text, no link; sourceUrl stays in data.
+- **Covered (8):** BITS WILP, Galgotias, JAIN, Symbiosis, Dr. D.Y. Patil Vidyapeeth, Amity, Uttaranchal, Shoolini. Left out on purpose: Amity NAAC (AUUP absent from NAAC's valid list, Q24); BITS DEB (no register rows); DSU and Uttaranchal NIRF (not ranked, nothing to source).
+- **Gaps (2):** dayananda-sagar-university-online (Q80: B2 could not confirm dsuonline.com is DSU's own domain, so the fee source fails rule 5) and adichunchanagiri-university-online (Q81: payable MBA total unclear since Q31). Neither got a date.
+- **Gate:** `scripts/check-fee-provenance.mts`, run after check-fee-baseline with `--self-test`. Scope is the 10 queue universities plus any record with provenance. Fails on a missing or future `checkedOn`, a missing value, sourceUrl or sheet, a fee source off the record's officialUrl host, DEB/NAAC/NIRF sources off deb.ugc.ac.in / naac.gov.in / nirfindia.org, a DEB entry without a session, NAAC or NIRF disagreeing with the record, and a fee value that is not what the page prints (so a changed fee cannot keep an old date). KNOWN_GAPS only shrinks: a gap that gains provenance fails until it is removed. Acceptance: deleting Galgotias' `checkedOn` in lib/data.ts printed `galgotias-university-online.fee: missing checkedOn` and exit 1; restored, exit 0. Self-test injects 8 defects and catches all 8.
+- **Known wrinkle:** Amity and Symbiosis also show the older "Fees checked on 13 November 2026" line in their payment-mode tables (`feePlans.checkedOn`, Rishi's 13 Nov confirmation). Both dates are true, but a page now shows two. Not changed here, because B1 was scoped to add lines only; bringing those two `feePlans.checkedOn` to 18 Nov (the sheet re-read them, MATCH) is a one-line follow-up each.
+
+## 2026-11-28 · B2: Adichunchanagiri officialUrl for schema sameAs (branch fix/b1-provenance)
+
+- **What:** `officialUrl: 'https://acuonline.edu.in'` on adichunchanagiri-university-online, from `audits/verify/b2-official-urls-2026-11-28.md` (CONFIRMED: acu.edu.in links its "Online Programmes" to the portal). No `feeVerifiedOn`: B2 checked the domain, not the fee, and Q31 still holds the fee open.
+- **Why:** the profile's CollegeOrUniversity JSON-LD emits `sameAs` only from `officialUrl` (A2), so ACU had no entity link. The value is used by schema only; no template renders `University.officialUrl` as visible copy.
+- **Sheet was stale on 3 of 4:** B2 marked BITS WILP, Dr. D.Y. Patil Vidyapeeth and Shoolini "absent", but origin/main already carries the same three URLs (BITS in B3 batch 1, 0703326, 18 Nov; Shoolini in B3 batch 2, 0a33af4, 19 Nov; all from the 18 Nov verify sheets). They were left unchanged. check-official-urls moves 29 to 30 portals, not 23 to 27: the sheet's 23 predates those additions.
+- **DSU left as is:** B2 marks dsuonline.com UNVERIFIED (Cloudflare blocked the main-domain check). The record already carries it from the 18 Nov sheet; not removed here, filed by the coordinator as Q80.
+
 ## 2026-11-28 · A6: 28 Nov guard check, clicks half PASS
 
 - **What:** weekly Search Console clicks on pages not containing /tools (Windsor, ISO weeks): W45 144, W46 187, W47 308, W48 partial 165 (23-25 Nov).

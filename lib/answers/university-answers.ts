@@ -18,6 +18,7 @@
 // bullets; a plain "not recorded / not published" line where we lack data.
 
 import type { University } from '../data'
+import { isExamModeUnverified, isExamModeUnknown, EXAM_MODE_COUNSELLOR_LINE, EXAM_MODE_NEUTRAL_LINE } from '../exam-mode'
 import { specName, getUniversityById } from '../data'
 import { getExactFee, formatExactFee, formatExactFeeShort, formatPublishedSemesterFee, type ExactFee } from '../fees'
 import syllabusManifest from '../data/syllabus-manifest.json'
@@ -384,6 +385,24 @@ function q6(u: University, n: string): AnswerSection | null {
 
 function q7(u: University, n: string): AnswerSection | null {
   if (!u.examMode) return null
+  // B7 (2026-11-28): the university's own pages do not state the mode, so none is stated here.
+  if (isExamModeUnverified(u)) return {
+    key: 'exams', q: 'Q7', heading: `How are ${n} online MBA exams conducted?`,
+    lead: `${n} has not published how and where its online MBA exams are held. Talk to our counsellor for how and where exams are held, and for how assignments and term-end exams are weighted, before you enrol.`,
+    bullets: ['Exam mode: not confirmed from the university\'s own pages', 'Proctoring method: not recorded', 'Assignment and term-end weighting: not recorded'],
+    notPublished: 'Not recorded on edifyedu.in: the exam mode, the proctoring method, the split between assignments and term-end exams, and the passing mark.',
+    faq: { q: `How are ${n} online MBA exams conducted?`, a: `${n} has not published how and where its online MBA exams are held. ${EXAM_MODE_COUNSELLOR_LINE}` },
+    sources: ['lib/exam-mode.ts UNVERIFIED_EXAM_MODE', 'audits/exam-mode-verified-2026-11-16.md'], backed: true,
+  }
+  // B7b (2026-11-28): no confirmed record, so the importer default 'Online' is not stated as a fact.
+  if (isExamModeUnknown(u)) return {
+    key: 'exams', q: 'Q7', heading: `How are ${n} online MBA exams conducted?`,
+    lead: `edifyedu.in has not confirmed how and where ${n} holds its online MBA exams. ${EXAM_MODE_NEUTRAL_LINE} Ask how assignments and term-end exams are weighted at the same time.`,
+    bullets: ['Exam mode: not confirmed by edifyedu.in', 'Proctoring method: not recorded', 'Assignment and term-end weighting: not recorded'],
+    notPublished: 'Not recorded on edifyedu.in: the exam mode, the proctoring method, the split between assignments and term-end exams, and the passing mark.',
+    faq: { q: `How are ${n} online MBA exams conducted?`, a: `edifyedu.in has not confirmed how and where ${n} holds its online MBA exams. ${EXAM_MODE_NEUTRAL_LINE}` },
+    sources: ['lib/exam-mode.ts examTier (unrecorded)'], backed: true,
+  }
   const gal = u.id === 'galgotias-university-online'
   const mode = u.examMode === 'Online' ? 'taken online' : u.examMode === 'Exam Centre' ? 'held at exam centres' : u.examMode === 'Hybrid' ? 'held in a hybrid format' : 'assignment-based'
   const lead = `edifyedu.in records ${n} online MBA examinations as ${mode}${gal ? ', and the university lists online examinations under assessment and evaluation' : ''}. The university sets the exam schedule and proctoring rules each term, so ask our counsellor for the current exam pattern, including how assignments and term-end exams are weighted, before you enrol.`

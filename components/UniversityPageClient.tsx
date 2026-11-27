@@ -29,9 +29,10 @@ import { stripLinks } from '@/lib/link-markup'
 import FirstHandUniversitySections from '@/components/FirstHandUniversitySections'
 import { FirstHandText } from '@/components/FirstHandShared'
 import OwnerMbaSentence from '@/components/OwnerMbaSentence'
-import { isExamCentre, EXAM_CENTRE_LINE, isExamModeConfirmed } from '@/lib/exam-mode'
+import { isExamCentre, EXAM_CENTRE_LINE, isExamModeConfirmed, isExamModeUnknown, examUnknownLine, isExamFromHome, EXAM_ONLINE_LINE } from '@/lib/exam-mode'
 import { debBasis } from '@/lib/seo/deb-basis'
 import { programmeEligibility } from '@/lib/seo/display-guards'
+import { feeCheckedLine, debSessionLine } from '@/lib/provenance'
 import UniversityCover from '@/components/UniversityCover'
 import type { UniversityCover as UniversityCoverData } from '@/lib/university-covers'
 
@@ -162,7 +163,8 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
     }] : []),
     {
       q:`How are exams conducted at ${u.name}?`,
-      a: isExamCentre(u) ? `${EXAM_CENTRE_LINE} Internal assessment runs through assignments and quizzes, and the exam schedule is communicated through the university LMS.` : `${u.name} uses ${u.examMode} mode. No travel to exam centre is required. Assessments include internal assignments, projects, and online proctored exams via webcam from home or office. Exam schedule is communicated through the university LMS.`
+      // B7b: "from home", "webcam" and "no travel" only for the from-home tier.
+      a: isExamModeUnknown(u) ? `Assessments include internal assignments and end-semester exams. ${examUnknownLine(u)}` : isExamCentre(u) ? `${EXAM_CENTRE_LINE} Internal assessment runs through assignments and quizzes, and the exam schedule is communicated through the university LMS.` : !isExamFromHome(u) ? `${EXAM_ONLINE_LINE} Assessments include internal assignments, projects and end-semester exams, and the exam schedule is communicated through the university LMS.` : `${u.name} uses ${u.examMode} mode. No travel to exam centre is required. Assessments include internal assignments, projects, and online proctored exams via webcam from home or office. Exam schedule is communicated through the university LMS.`
     },
     {
       q:`Is ${u.name} ${displayProgram} valid for government jobs?`,
@@ -322,7 +324,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     { label: 'Total Fee', value: feeShort(displayProgram) ?? 'Contact our counsellor for current fee details' },
                     ...(emiShown(displayProgram) ? [{ label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` }] : []),
                     { label: 'Duration', value: pd?.duration || '2 Years' },
-                    { label: 'Exam Mode', value: u.examMode },
+                    { label: 'Exam Mode', value: isExamModeUnknown(u) ? 'Ask our counsellor' : u.examMode },
                   ].map(stat => (
                     <div key={stat.label} style={{padding:'10px 16px',background:'rgba(255,255,255,0.06)',border:'1px solid #1e2f45',borderRadius:'var(--r-sm)'}}>
                       <div className="text-[10px] text-ink-3 uppercase tracking-wider">{stat.label}</div>
@@ -330,6 +332,10 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     </div>
                   ))}
                 </div>
+                {/* B1: the date the shown MBA fee was read on the portal (lib/provenance.ts). */}
+                {feeShort(displayProgram) && feeCheckedLine(u, displayProgram) && (
+                  <p className="fee-checked-date text-[11px] text-slate-400 mb-2">{feeCheckedLine(u, displayProgram)}</p>
+                )}
                 <div className="mb-6">
                   <Link href="/tools/emi-calculator" className="text-[12px] text-amber no-underline hover:underline font-semibold">
                     Calculate your exact monthly EMI →
@@ -370,6 +376,10 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     highlight={u.highlight}
                     layout="column"
                   />
+                  {/* B1: DEB session beside the approval, only where the page claims DEB approval. */}
+                  {!basis && u.programs.includes('MBA') && debSessionLine(u, 'MBA', true) && (
+                    <p className="deb-session" style={{fontSize:11,color:'#94A3B8',marginTop:10,lineHeight:1.4}}>{debSessionLine(u, 'MBA', true)}</p>
+                  )}
                   <div style={{marginTop:16,paddingTop:14,borderTop:'1px solid rgba(255,255,255,0.08)'}}>
                     <div style={{fontSize:11,color:'#94A3B8',marginBottom:4}}>Govt Job Valid?</div>
                     <div style={{fontSize:13,fontWeight:700,color: u.govtRecognised && !basis ? '#4ADE80' : '#FBBF24'}}>
@@ -847,7 +857,7 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     ...(u.nirfMgt && u.nirfMgt < 100 ? [{ label: 'NIRF Management', value: `#${u.nirfMgt}${u.nirfYear ? ` (${u.nirfYear})` : ''}` }] : []),
                     ...(u.naac ? [{ label: 'NAAC Grade', value: u.naacScore ? `${u.naac} (${u.naacScore})` : u.naac }] : []),
                     ...([u.city, u.state].filter(Boolean).length ? [{ label: 'Location', value: [u.city, u.state].filter(Boolean).join(', ') }] : []),
-                    { label: 'Exam Mode', value: u.examMode },
+                    { label: 'Exam Mode', value: isExamModeUnknown(u) ? 'Ask our counsellor' : u.examMode },
                     ...(programmeEligibility(u, displayProgram) ? [{ label: 'Eligibility', value: programmeEligibility(u, displayProgram)! }] : []),
                     ...(feeShort(displayProgram) ? [{ label: `${displayProgram} fee`, value: feeShort(displayProgram)! }] : []),
                     ...(emiShown(displayProgram) ? [{ label: 'EMI from', value: `₹${u.emiFrom.toLocaleString()}/mo` }] : []),
