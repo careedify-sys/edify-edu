@@ -8231,7 +8231,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'What is the IIM MBA fee in 2026?', a: 'IIM Ahmedabad PGP: Rs 30 lakh approximately. IIM Bangalore PGP: Rs 27 lakh. IIM Calcutta PGP: Rs 28 lakh. IIM Lucknow, Kozhikode, Indore PGP: Rs 20 to 24 lakh. New IIMs (Shillong, Rohtak, Ranchi, Raipur, etc.): Rs 15 to 22 lakh. Baby IIMs (Sambalpur, Sirmaur, Mumbai NITIE): Rs 14 to 18 lakh. IIM A PGPX (1-year Executive): Rs 35 lakh. IIM B EPGP (1-year Executive): Rs 33.71 lakh single accommodation per 2026-27.' },
       { q: 'Is online MBA cheaper than regular MBA?', a: 'Yes, significantly. Online MBA from NAAC A+ university (NMIMS, JAIN, Amity, Manipal Jaipur): Rs 1.56L to 2.25L. Regular campus tier-1 (IIM, ISB): Rs 28 to 45 lakh. The cost gap is large. Online MBA additionally saves opportunity cost (you keep working) of Rs 10 to 25 lakh over 2 years. Net difference often Rs 35 to 55 lakh in your favour for online MBA route.' },
       { q: 'What are the hidden costs of campus MBA?', a: 'Hostel and accommodation Rs 1.5 to 3 lakh per year. Mess and food Rs 50K to 1 lakh per year. Books, study materials Rs 30K to 60K. Travel and miscellaneous Rs 30K. Lost salary and PF contributions during 2-year programme Rs 10 to 25 lakh. International immersion (some IIMs) Rs 1.5 to 3 lakh. Total hidden costs add Rs 5 to 8 lakh on top of the headline tuition fee.' },
-      { q: 'What is the MBA fee payback period in 2026?', a: 'Online MBA (Rs 1.5 to 2.2 lakh): 6 to 14 months from salary increase. Tier-2 private MBA (Rs 8 to 15 lakh including hidden costs Rs 12 to 22 lakh real total): 3 to 5 years. Tier-1 private MBA (Rs 18 to 25 lakh, real Rs 30 to 40 lakh): 3 to 6 years. IIM A/B/C (Rs 30 lakh, real Rs 45 to 55 lakh): 2 to 4 years given high placement salaries. ISB PGP: 3 to 5 years.' },
+      { q: 'What is the MBA fee payback period in 2026?', a: 'Work it out from your own numbers. Payback period in months = total real MBA cost divided by the post-MBA monthly salary increase. No single figure fits every programme or every learner.' },
       { q: 'What is the MBA fee in government colleges in 2026?', a: 'FMS Delhi (University of Delhi): Rs 2.32 lakh for 2-year MBA - the highest ROI MBA in India. JBIMS Mumbai (Mumbai University): Rs 7 to 9 lakh approximately. IIT DMS (IIT Delhi MBA): Rs 8 to 11 lakh. IIM, despite being government institutions, charge Rs 20 to 30 lakh. State university MBA (Mumbai, Pune, Anna): Rs 50K to Rs 2 lakh range. IGNOU distance MBA: Rs 16,000 per semester (Rs 18,000 for the 3rd).' },
       { q: 'Which online MBA has the best fee-to-quality ratio in India?', a: 'Dayananda Sagar (Rs 1,30,000, NAAC A+) and JAIN Online (Rs 1,75,000 to Rs 1,96,000, NAAC A++, 16 specialisations with 0% EMI) offer the strongest credential-to-cost ratios. Galgotias (Rs 80,200) is the strongest pure-budget option.' },
       { q: 'Do online MBA fees increase between semesters?', a: 'Some universities have uniform semester fees; others vary. UPES Online charges Rs 95,000 in Year 1 and Rs 80,000 in Year 2. Confirm the per-semester breakdown before enrolling.' },
@@ -8273,42 +8273,37 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>IIM Fees: Worth the Investment?</h2>
 
-<p>For IIM Ahmedabad, Bangalore, Calcutta: yes, the fees are worth it if you clear CAT 99-plus, get selected, and land a top-tier consulting or finance placement. Median placement Rs 28 to 35 LPA. ROI breakeven within 2 to 4 years given high starting salary.</p>
+<p>For IIM Ahmedabad, Bangalore, Calcutta: yes, the fees are worth it if you clear CAT 99-plus, get selected, and land a top-tier consulting or finance placement. Median placement Rs 28 to 35 LPA.</p>
 
-<p>For IIM Old tier (Lucknow, Kozhikode, Indore): yes, with strong sector match. Fees Rs 20 to 24 lakh, placement Rs 22 to 28 LPA. Breakeven 3 to 5 years.</p>
+<p>For IIM Old tier (Lucknow, Kozhikode, Indore): yes, with strong sector match. Placement Rs 22 to 28 LPA.</p>
 
-<p>For New and Baby IIMs (Rohtak, Kashipur, Bodh Gaya, Sambalpur): mixed. Fees Rs 14 to 22 lakh, placement Rs 14 to 22 LPA. Breakeven 4 to 6 years. Sector-specific outcomes vary widely.</p>
+<p>For New and Baby IIMs (Rohtak, Kashipur, Bodh Gaya, Sambalpur): mixed. Placement Rs 14 to 22 LPA. Sector-specific outcomes vary widely.</p>
 
-<h2>ISB MBA Fees Deep Dive: Rs 38 to 45 Lakh Real Cost</h2>
+<h2>ISB MBA: What to Check</h2>
 
 <p>ISB Hyderabad PGP for 2026-27.</p>
 
 <ul>
-  <li><strong>Tuition fee:</strong> Rs 38,67,160 including GST and admission components.</li>
-  <li><strong>Living expenses:</strong> Approximately Rs 6,45,000 across 1-year programme.</li>
-  <li><strong>Total cost:</strong> Rs 45 lakh approximately.</li>
+  <li><strong>Fees:</strong> Not tracked (campus programme). Check tuition and living costs with ISB admissions for your intake.</li>
   <li><strong>Median placement:</strong> Rs 35 to 40 LPA.</li>
-  <li><strong>ROI breakeven:</strong> 3 to 5 years given high starting salary and 1-year format saves opportunity cost vs 2-year programmes.</li>
+  <li><strong>Format:</strong> the 1-year programme takes one year out of work rather than two.</li>
 </ul>
 
-<h2>FMS Delhi: The Highest-ROI MBA in India</h2>
+<h2>FMS Delhi: A Government Campus MBA</h2>
 
-<p>Faculty of Management Studies, University of Delhi. Total fee approximately Rs 2.32 lakh for 2-year MBA. CAT 99-plus required, less than 200 seats annually.</p>
+<p>Faculty of Management Studies, University of Delhi. Fee: not tracked (campus programme). CAT 99-plus required, less than 200 seats annually.</p>
 
 <ul>
-  <li>Median placement Rs 32 to 38 LPA (FT 2024 reports).</li>
-  <li>ROI breakeven within 9 to 14 months of first salary.</li>
-  <li>Strongest fee-to-placement ratio in Indian MBA landscape.</li>
   <li>The catch: extreme admission competition (CAT 99-plus equivalent to top 0.5 percent of test takers).</li>
 </ul>
 
 <h2>Private B-School Campus MBA: The Middle Trap</h2>
 
-<p>Tier-2 private MBA at Rs 8 to 15 lakh tuition (Rs 16 to 25 lakh real total) with median placement Rs 6 to 12 LPA is where most students lose ROI.</p>
+<p>Tier-2 private MBA with median placement Rs 6 to 12 LPA is where most students lose ROI.</p>
 
-<p>Before paying any private campus MBA fee above Rs 8 lakh, demand verified placement data: median salary not "highest package", placement percentage by 6 months and 12 months post-graduation, and 2024-25 cohort data rather than older.</p>
+<p>Before paying any private campus MBA fee, demand verified placement data: median salary not "highest package", placement percentage by 6 months and 12 months post-graduation, and 2024-25 cohort data rather than older.</p>
 
-<p>If the median placement is Rs 8 to 10 LPA and your real total cost is Rs 18 to 22 lakh, you are looking at 4 to 6 years just to break even. Compare carefully against online MBA from NAAC A+ university where the real total is Rs 1.5 to 2.5 lakh.</p>
+<p>Compare the real total carefully against an online MBA from a NAAC A+ university.</p>
 
 
 
@@ -8328,26 +8323,19 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Convocation fees:</strong> Rs 10K to 25K typically.</li>
 </ul>
 
-<p>For a working professional earning Rs 8 to 10 LPA, a "Rs 15 lakh campus MBA" often costs Rs 28 to 35 lakh in real terms. Online MBA has zero hidden costs because you continue working.</p>
+<p>For a working professional, the real cost of a campus MBA is the fee plus every line above. Online MBA has zero hidden costs because you continue working.</p>
 
 <h2>The Payback Period Calculator</h2>
 
 <p>Use this simple formula. Payback period in months = (Total real MBA cost) / (Post-MBA monthly salary increase). To <a href="/tools/emi-calculator" class="ilink">calculate your monthly EMI</a> for an online MBA, use the free calculator on edifyedu.in.</p>
 
-<ul>
-  <li><strong>Online MBA Rs 2 lakh, salary increases by Rs 3 LPA (Rs 25,000 per month):</strong> 8 months breakeven.</li>
-  <li><strong>Tier-2 private MBA Rs 20 lakh real, salary increase Rs 4 LPA (Rs 33,000 per month):</strong> 60 months breakeven.</li>
-  <li><strong>IIM PGP Rs 45 lakh real, salary increase Rs 15 LPA (Rs 1.25 lakh per month):</strong> 36 months breakeven.</li>
-  <li><strong>ISB Rs 45 lakh, salary increase Rs 20 LPA (Rs 1.7 lakh per month):</strong> 27 months breakeven.</li>
-</ul>
-
 <h2>Low-Fee Credible MBA Options in India 2026</h2>
 
 <ol>
   <li><strong>IGNOU MBA distance:</strong> Rs 16,000 per semester (Rs 18,000 for the 3rd). NAAC A++. Best for government job eligibility, credential-only path.</li>
-  <li><strong>FMS Delhi:</strong> Rs 2.32 lakh. Highest ROI tier-1 if you can get in (CAT 99-plus).</li>
+  <li><strong>FMS Delhi:</strong> Fee not tracked (campus programme). A government tier-1 option if you can get in (CAT 99-plus).</li>
   <li><strong>Galgotias University Online:</strong> Rs 80,200. UGC-DEB approved. Affordable private online MBA.</li>
-  <li><strong>Mumbai University, Anna University campus MBA:</strong> Rs 50K to 2 lakh. Strong regional brand.</li>
+  <li><strong>Mumbai University, Anna University campus MBA:</strong> Fee not tracked (campus programme). Strong regional brand.</li>
   <li><strong>JAIN Online plus other NAAC A++ online:</strong> Rs 1.75L to 1.96L.</li>
 </ol>
 
@@ -8358,7 +8346,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Education loan from public sector banks:</strong> SBI, BOB, Canara at 8.5 to 11 percent interest. Tenure up to 15 years. Best for tier-1 campus MBA.</li>
   <li><strong>Education loan from private banks:</strong> ICICI, Axis at 10 to 13 percent. Faster processing but higher interest.</li>
   <li><strong>NBFC education loans:</strong> Avanse, GrayQuest at 12 to 16 percent. Use only if banks reject.</li>
-  <li><strong>Scholarships:</strong> Merit-based at IIMs, ISB, top private. Need-based at FMS, JBIMS. Worth Rs 2 to 8 lakh waiver if eligible.</li>
+  <li><strong>Scholarships:</strong> Merit-based at IIMs, ISB, top private. Need-based at FMS, JBIMS.</li>
 </ul>
 
 <h2>Government Subsidies and Special MBA Fee Discounts</h2>
@@ -10282,7 +10270,7 @@ export const BLOG_POSTS: BlogPost[] = [
   </tbody>
 </table>
 
-<h2>BSc Plus MBA Salary Compounding Year-by-Year (edifyedu.in Cohort Data)</h2>
+<h2>BSc Plus MBA Salary Compounding Year-by-Year</h2>
 
 <ul>
   <li><strong>Year 0 (immediately post-BSc):</strong> Rs 3 to 5 LPA (entry tech support, lab assistant, BPO).</li>
@@ -13918,7 +13906,6 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Is MBA HR easier than MBA Finance?:</strong> Different difficulty type. MBA HR has lighter quantitative load but heavier qualitative analysis, case study writing, and people-strategy depth. MBA Finance is technically harder but more structured.</li>
   <li><strong>Is HR a slow career growth track?:</strong> Slower CTC growth than tier-1 Finance or Consulting in years 1-5. Comparable or faster from year 6 onwards as HRBP plus People Analytics roles open up.</li>
   <li><strong>Can I switch to MBA Marketing or Finance after MBA HR?:</strong> Yes through additional certifications plus 2-3 years operational experience in target stream. Common at consulting plus FMCG.</li>
-  <li><strong>What is the gender split in MBA HR?:</strong> Approximately 50-55 percent women in MBA HR cohorts vs 25-30 percent in MBA Finance. HR functions historically attract more female senior leadership.</li>
   <li><strong>Is MBA HR worth it for working professionals?:</strong> Yes. Online MBA HR at NMIMS, MUJ, JAIN, Amity provides credential plus structured framework for HR Generalist to HRBP transition. Common career pivot for HR Executives with 3 to 7 years experience.</li>
   <li><strong>Can non-HR backgrounds do MBA HR?:</strong> Yes. Engineers, BCom graduates, and BA graduates all enter MBA HR. The MBA itself provides the foundation. Add HR-specific certifications for credibility.</li>
 </ul>
@@ -14151,7 +14138,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Notion plus Asana plus Slack:</strong> Modern marketing team workflow tools.</li>
 </ul>
 
-<p>Building 3 to 4 platform certifications alongside MBA Marketing produces 15 to 25 percent better placement outcomes per recent cohort data. Most successful MBA Marketing graduates spend 10 to 15 hours per week on platform certifications during their MBA programme, building immediate hands-on credibility that case studies alone do not deliver. The combination of theoretical MBA foundation plus practical platform fluency is what employers actively look for in 2026 hiring rounds. Start with the free certifications first and pay only for those that match your specific target sector. Document each completed certification on your LinkedIn profile to build search visibility for recruiters.</p>
+<p>Building 3 to 4 platform certifications alongside MBA Marketing strengthens your placement profile. Certifications completed during the MBA programme build hands-on credibility that case studies alone do not deliver. The combination of theoretical MBA foundation plus practical platform fluency is what employers actively look for in 2026 hiring rounds. Start with the free certifications first and pay only for those that match your specific target sector. Document each completed certification on your LinkedIn profile to build search visibility for recruiters.</p>
 
 <h2>Top Recruiter Pipeline Map for MBA Marketing</h2>
 
@@ -15696,8 +15683,8 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Industry Demand: MBA vs MCA in 2026</h2>
 
 <ul>
-  <li><strong>MBA demand 2026:</strong> 78 percent of MBA graduates secured employment per NIRF 2024 placement data. Growing 6 to 8 percent YoY in tier-1 placements. Strongest demand in BFSI, consulting, product management, analytics.</li>
-  <li><strong>MCA demand 2026:</strong> 7.7 percent annual growth per NASSCOM Tech Hiring Report. 2,05,000 new tech jobs annually in India. Strongest in cloud, ML, full-stack, cybersecurity, data engineering.</li>
+  <li><strong>MBA demand 2026:</strong> Strongest demand in BFSI, consulting, product management, analytics.</li>
+  <li><strong>MCA demand 2026:</strong> Strongest in cloud, ML, full-stack, cybersecurity, data engineering.</li>
   <li><strong>Combined MCA plus MBA demand:</strong> Highest at tech management roles. Engineering Manager, VP Engineering, Director of Product, CTO track.</li>
 </ul>
 
@@ -17536,7 +17523,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p><strong>Agencies and consulting (Madison, WPP India, Publicis, GroupM, Dentsu, Deloitte Digital).</strong> Account Directors earn Rs 15 to 25 LPA at 5 to 7 years, Senior Directors at Rs 30 to 45 LPA at 8 to 12 years. The role is broader (multiple clients, multiple campaigns), the brand of the agency carries weight.</p>
 
-<div class="callout-warning"><strong>Honest caveat:</strong> Every salary range above is a 2025 to 2026 snapshot from edifyedu.in counsellor interviews. Your actual offer depends on your prior experience, the specific role, your portfolio evidence, the hiring quarter, and where the company sits in its funding cycle. Treat as a sanity check, not a forecast.</div>
+<div class="callout-warning"><strong>Honest caveat:</strong> Every salary range above is indicative. Your actual offer depends on your prior experience, the specific role, your portfolio evidence, the hiring quarter, and where the company sits in its funding cycle. Treat as a sanity check, not a forecast.</div>
 
 <h2>What MBA Digital Marketing is NOT (clearing the big confusions)</h2>
 
@@ -20893,15 +20880,6 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Amrita Online:</strong> Eduvanz, Bajaj.</li>
   <li><strong>NMIMS Online:</strong> Eduvanz, Bajaj plus direct semester.</li>
   <li><strong>Chandigarh University Online:</strong> Eduvanz plus Bajaj. 0 percent EMI on select offers.</li>
-</ul>
-
-<h2>Calculating ROI for Chennai MBA Aspirants</h2>
-
-<p>The break-even point for a distance/online MBA in Chennai is faster than most people expect. If your MBA leads to a Rs 2.5L annual salary increase:</p>
-<ul>
-  <li>Annamalai (Rs 30,000 fee) → break-even in under 2 months</li>
-  <li>Amity Online (Rs 1,99,000 fee) → break-even in under 10 months</li>
-  <li>NMIMS Online (Rs 2,20,000 fee) → break-even under 11 months</li>
 </ul>
 
 <h2>5-Step MBA Admission Blueprint for Chennai</h2>
@@ -25674,10 +25652,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Bug Bounty Income Reality India 2026</h2>
 
-<p>Top Indian bug bounty hunters on HackerOne plus Bugcrowd report Rs 40 lakh to 2 crore annual earnings. However:</p>
+<p>Bug bounty earnings are uneven, and a small group of top hunters takes most of the payouts.</p>
 
 <ul>
-  <li><strong>Top 1 percent of hunters earn this:</strong> Most active bug hunters earn Rs 1 to 8 lakh per year as side income.</li>
+  <li><strong>Large payouts go to a small group:</strong> Most active bug hunters earn Rs 1 to 8 lakh per year as side income.</li>
   <li><strong>It is not a stable monthly income:</strong> Payouts cluster around critical CVEs found. Some months zero, some months Rs 5 lakh.</li>
   <li><strong>Career value is high even at lower earnings:</strong> Active bug bounty participation creates strong portfolio for full-time security engineering roles.</li>
   <li><strong>Best as parallel income:</strong> Pair full-time security engineering job with weekend bug bounty practice. Best of both worlds.</li>
@@ -25706,7 +25684,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'data-science-salary-india-2026-scope-jobs',
-    updatedAt: '2026-11-27',
+    updatedAt: '2026-11-25',
     title: 'Data Science Salary India 2026: Role-by-Role Breakdown',
     seoTitle: `Data Science Salary India 2026: The GenAI Premium`,
     metaDescription: `Data science salary India 2026: analyst vs scientist vs ML engineer, 25-40% GenAI/LLM premium, 2-3x product company gap, city multiplier, certifications.`,
@@ -25727,16 +25705,16 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: `What is the difference between data analyst, data scientist, and ML engineer?`, a: `Data analyst: uses existing data to answer business questions via Excel, SQL, Tableau or Power BI. Rs 4 to 8 LPA fresher. Data scientist: builds predictive models using ML and statistics, Python deep work. Rs 7 to 12 LPA fresher. ML engineer: deploys ML models to production at scale, MLOps, cloud platforms. The distinction is blurring but specialisation depth differs sharply.` },
       { q: `Can commerce students or non-CS graduates do data science?`, a: `Yes for analyst roles, harder for scientist or ML engineer roles. BCom plus SQL plus Power BI plus advanced Excel gets you to junior analyst at Rs 4 to 7 LPA. Data scientist needs Python plus statistics plus calculus, which most commerce students must build separately. 6 to 12 months of bootcamp or self-study covers the gap. ML engineer is hardest without CS or engineering foundation.` },
       { q: `Is MBA in data science worth it?`, a: `Worth it if you want to move toward management or business decision roles in analytics. Tier-1 campus MBA Business Analytics (IIM A, IIM B, ISB) post-MBA salary Rs 18 to 30 LPA. Does NOT make you a better technical data scientist or ML engineer. For pure technical roles, MSc Data Science, online MCA with analytics, or domain certifications (AWS ML, Azure AI) produce better ROI than MBA.` },
-      { q: `What is the product company vs services company salary gap in data science?`, a: `Product companies usually pay more at similar experience. Data scientist year 3: services company (TCS, Infosys, Wipro) Rs 8 to 12 LPA. Product company (Flipkart, Razorpay, Meesho) Rs 18 to 28 LPA. Big Tech (Google India, Microsoft, Amazon) Rs 25 to 40 LPA. The gap reflects deeper technical work, equity components, and revenue-per-engineer differences. Plan your career to move from services to product by year 3-4.` },
-      { q: `Which Indian cities pay the highest data science salaries in 2026?`, a: `Bengaluru leads other metros. Mumbai second (BFSI premium). Delhi NCR third (mixed product-services). Hyderabad fourth (rising fast on product company hiring). Pune fifth. Chennai sixth. Tier-2 cities pay less but cost of living offsets much of the gap. For maximum salary growth, Bengaluru product companies remain the strongest market.` }
+      { q: `What is the product company vs services company salary gap in data science?`, a: `2x to 3x at similar experience. Data scientist year 3: services company (TCS, Infosys, Wipro) Rs 8 to 12 LPA. Product company (Flipkart, Razorpay, Meesho) Rs 18 to 28 LPA. Big Tech (Google India, Microsoft, Amazon) Rs 25 to 40 LPA. The gap reflects deeper technical work, equity components, and revenue-per-engineer differences. Plan your career to move from services to product by year 3-4.` },
+      { q: `Which Indian cities pay the highest data science salaries in 2026?`, a: `Bengaluru leads by 15 to 25 percent over other metros. Mumbai second (BFSI premium). Delhi NCR third (mixed product-services). Hyderabad fourth (rising fast on product company hiring). Pune fifth. Chennai sixth. Tier-2 cities pay 30 to 50 percent less but cost of living offsets most of the gap. For maximum salary growth, Bengaluru product companies remain the strongest market.` }
     ],
     content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, edifyedu.in. Salary figures are indicative ranges, not survey results; confirm current pay for a specific role with employers and job listings.</em></p>
 
-<p>"Data science salary" articles mix three different roles into one number and call it a guide. The reality: data analyst, data scientist, and ML engineer are different jobs with different pay structures that also vary by company type. This guide separates them and covers the product vs services gap and the certifications worth considering.</p>
+<p>"Data science salary" articles mix three different roles into one number and call it a guide. The reality: data analyst, data scientist, and ML engineer are different jobs with different pay structures and 2x to 3x gaps based on company type. This guide separates them with current GenAI premium data, product vs services gap, city multiplier, and the certifications that actually compound salary growth.</p>
 
 <p>Written for: BSc Maths or Stats or CS graduates evaluating data career entry, BTech graduates choosing between SDE and data science track, and working professionals planning a data career pivot.</p>
 
-<div class="callout-key"><strong>One-line frame for data science salaries 2026:</strong> The role you pick and the company type both move pay. ML engineers usually earn more than data scientists, GenAI specialists more than generalists, product companies more than services companies, and Bengaluru more than other metros.</div>
+<div class="callout-key"><strong>One-line frame for data science salaries 2026:</strong> The role you pick matters more than the company you join. ML engineer pays 30 to 40 percent more than data scientist. GenAI specialist pays 25 to 40 percent more than generalist. Product company pays 2x to 3x services company. Bengaluru pays 15 to 25 percent more than other metros.</div>
 
 <h2>The Three Roles That Get Confused</h2>
 
@@ -25755,10 +25733,13 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>Core tools</td><td>Excel, SQL, Tableau, Power BI</td><td>Python, R, SQL, ML libraries</td><td>Python, MLOps, AWS, Kubernetes</td></tr>
     <tr><td>Maths required</td><td>Basic statistics</td><td>Statistics, calculus, linear algebra</td><td>Same as DS plus systems engineering</td></tr>
     <tr><td>Typical education</td><td>BCom, BBA, BSc, BTech</td><td>BTech, BSc Maths or Stats, MSc</td><td>BTech CS, MTech, advanced certifications</td></tr>
+    <tr><td>Year 1 salary</td><td>Rs 4 to 8 LPA</td><td>Rs 7 to 12 LPA</td><td>Rs 9 to 15 LPA</td></tr>
+    <tr><td>Year 5 salary</td><td>Rs 12 to 18 LPA</td><td>Rs 18 to 28 LPA</td><td>Rs 22 to 35 LPA</td></tr>
+    <tr><td>Year 10 ceiling</td><td>Rs 20 to 30 LPA</td><td>Rs 30 to 60 LPA</td><td>Rs 40 to 80 LPA</td></tr>
   </tbody>
 </table>
 
-<h2>Analyst or Scientist: Where the Gap Opens</h2>
+<h2>Salary by Role and Experience (Detailed)</h2>
 
 <div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog11_data_science_salary.svg" alt="Data science salary India by role and experience: analyst, scientist, ML engineer" loading="lazy" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 
@@ -25769,23 +25750,36 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Where you work matters as much as what you do. Same role title, very different pay.</p>
 
 <table>
-  <caption>Data science employers by company tier India 2026</caption>
-  <thead><tr><th>Company tier</th><th>Examples</th></tr></thead>
+  <caption>Data scientist year 3 salary: product vs services company India 2026</caption>
+  <thead><tr><th>Company tier</th><th>Examples</th><th>Year 3 data scientist CTC</th></tr></thead>
   <tbody>
-    <tr><td>Big Tech (FAANG plus tier)</td><td>Google India, Microsoft, Amazon, Meta, Apple India</td></tr>
-    <tr><td>Indian unicorn product</td><td>Razorpay, Flipkart, Meesho, Swiggy, Zomato</td></tr>
-    <tr><td>Mid-stage Indian product</td><td>Freshworks, Postman, Innovaccer, Druva</td></tr>
-    <tr><td>BFSI digital banking and fintech</td><td>HDFC Bank Digital, Paytm, PhonePe, BharatPe</td></tr>
-    <tr><td>Consulting Analytics</td><td>McKinsey QuantumBlack, BCG Gamma, Deloitte Analytics</td></tr>
-    <tr><td>Indian IT services</td><td>TCS, Infosys, Wipro, HCL, Tech Mahindra</td></tr>
-    <tr><td>Captive R&amp;D centres (non-FAANG)</td><td>Samsung R&amp;D, Adobe India, Salesforce, Oracle</td></tr>
+    <tr><td>Big Tech (FAANG plus tier)</td><td>Google India, Microsoft, Amazon, Meta, Apple India</td><td>Rs 30 to 55 LPA (incl equity)</td></tr>
+    <tr><td>Indian unicorn product</td><td>Razorpay, Flipkart, Meesho, Swiggy, Zomato</td><td>Rs 22 to 38 LPA</td></tr>
+    <tr><td>Mid-stage Indian product</td><td>Freshworks, Postman, Innovaccer, Druva</td><td>Rs 18 to 30 LPA</td></tr>
+    <tr><td>BFSI digital banking and fintech</td><td>HDFC Bank Digital, Paytm, PhonePe, BharatPe</td><td>Rs 15 to 25 LPA</td></tr>
+    <tr><td>Consulting Analytics</td><td>McKinsey QuantumBlack, BCG Gamma, Deloitte Analytics</td><td>Rs 22 to 36 LPA</td></tr>
+    <tr><td>Indian IT services</td><td>TCS, Infosys, Wipro, HCL, Tech Mahindra</td><td>Rs 9 to 15 LPA</td></tr>
+    <tr><td>Captive R&amp;D centres (non-FAANG)</td><td>Samsung R&amp;D, Adobe India, Salesforce, Oracle</td><td>Rs 16 to 28 LPA</td></tr>
   </tbody>
 </table>
 
-<p><em>Takeaway: a year-3 data scientist at an IT services firm and one at a product company often do similar work for very different pay. Plan your career to move services-to-product by year 3.</em></p>
+<p><em>Takeaway: a year-3 data scientist at TCS earning Rs 12 LPA and a year-3 data scientist at Razorpay earning Rs 28 LPA do similar work. The 2.3x gap is real. Plan your career to move services-to-product by year 3.</em></p>
 
+<h2>The Indian City Multiplier</h2>
 
-
+<table>
+  <caption>Data science salary city multiplier India 2026 (relative to Bengaluru baseline)</caption>
+  <thead><tr><th>City</th><th>Salary multiplier vs Bengaluru</th><th>Cost of living multiplier</th><th>Net wealth gain</th></tr></thead>
+  <tbody>
+    <tr><td>Bengaluru</td><td>1.00x (baseline)</td><td>1.00x</td><td>Baseline</td></tr>
+    <tr><td>Mumbai</td><td>0.95 to 1.05x</td><td>1.10x (rent higher)</td><td>Marginally lower than Bengaluru</td></tr>
+    <tr><td>Delhi NCR (Gurgaon, Noida)</td><td>0.90 to 1.00x</td><td>0.95x</td><td>Roughly same as Bengaluru</td></tr>
+    <tr><td>Hyderabad</td><td>0.85 to 0.95x</td><td>0.75x</td><td>10 to 15 percent higher net savings</td></tr>
+    <tr><td>Pune</td><td>0.80 to 0.90x</td><td>0.85x</td><td>Roughly same as Bengaluru</td></tr>
+    <tr><td>Chennai</td><td>0.75 to 0.85x</td><td>0.75x</td><td>Roughly same as Bengaluru</td></tr>
+    <tr><td>Tier-2 cities (Indore, Jaipur, Kochi)</td><td>0.60 to 0.75x</td><td>0.55x</td><td>15 to 25 percent higher net savings</td></tr>
+  </tbody>
+</table>
 
 <h2>Skills That Actually Move Salary</h2>
 
@@ -25794,27 +25788,27 @@ export const BLOG_POSTS: BlogPost[] = [
 <ul>
   <li><strong>Python:</strong> Mandatory for data scientist and ML engineer roles. Not knowing it closes those doors.</li>
   <li><strong>SQL:</strong> Universal requirement across all 3 roles. Often tested in interviews. Window functions, CTEs, query optimisation.</li>
-  <li><strong>Cloud ML platforms:</strong> AWS SageMaker, Azure ML, Google Vertex AI. Valued at mid-senior levels.</li>
-  <li><strong>MLOps:</strong> Docker, Kubernetes, MLflow, Airflow, Kubeflow. Valued at senior levels.</li>
-  <li><strong>NLP and LLMs:</strong> Hugging Face, LangChain, vector databases, fine-tuning.</li>
+  <li><strong>Cloud ML platforms:</strong> AWS SageMaker, Azure ML, Google Vertex AI. 20 to 30 percent premium at mid-senior levels.</li>
+  <li><strong>MLOps:</strong> Docker, Kubernetes, MLflow, Airflow, Kubeflow. 25 to 40 percent premium at senior levels.</li>
+  <li><strong>NLP and LLMs:</strong> GenAI premium 25 to 40 percent. Hugging Face, LangChain, vector databases, fine-tuning.</li>
   <li><strong>Deep Learning frameworks:</strong> PyTorch, TensorFlow. Premium at product company and research roles.</li>
-  <li><strong>Business communication:</strong> Translating model output to business impact. Matters most at senior levels.</li>
-  <li><strong>Domain expertise (BFSI, healthcare, supply chain):</strong> Specialised data scientists with deep domain knowledge are in demand.</li>
+  <li><strong>Business communication:</strong> Translating model output to business impact. Senior salary multiplier.</li>
+  <li><strong>Domain expertise (BFSI, healthcare, supply chain):</strong> Specialised data scientists with deep domain knowledge earn 15 to 25 percent more.</li>
 </ul>
 
-<h2>Certifications Worth Considering</h2>
+<h2>Certifications That Actually Compound Salary</h2>
 
 <table>
-  <caption>Data science certifications by career stage 2026</caption>
-  <thead><tr><th>Certification</th><th>Cost</th><th>Best stage</th></tr></thead>
+  <caption>Data science certifications ranked by salary impact 2026</caption>
+  <thead><tr><th>Certification</th><th>Cost</th><th>Salary impact</th><th>Best stage</th></tr></thead>
   <tbody>
-    <tr><td>AWS Certified Machine Learning Specialty</td><td>USD 300 exam</td><td>Year 2 onwards</td></tr>
-    <tr><td>Google Cloud Professional ML Engineer</td><td>USD 200 exam</td><td>Year 2 onwards</td></tr>
-    <tr><td>Microsoft Azure AI Engineer Associate</td><td>USD 165 exam</td><td>Year 2 onwards</td></tr>
-    <tr><td>Coursera Deep Learning Specialization (Andrew Ng)</td><td>USD 49 per month, ~3 months</td><td>Year 0-1</td></tr>
-    <tr><td>Hugging Face NLP Course (free)</td><td>Free</td><td>Year 0-2</td></tr>
-    <tr><td>Stanford ML Specialization Coursera</td><td>USD 49 per month, ~4 months</td><td>Year 2 onwards</td></tr>
-    <tr><td>IIM or ISB Executive Programmes in Analytics</td><td>Rs 3 to 5 lakh</td><td>Year 3 onwards</td></tr>
+    <tr><td>AWS Certified Machine Learning Specialty</td><td>USD 300 exam</td><td>15 to 25 percent salary bump at mid-level</td><td>Year 2 onwards</td></tr>
+    <tr><td>Google Cloud Professional ML Engineer</td><td>USD 200 exam</td><td>15 to 25 percent at mid-level</td><td>Year 2 onwards</td></tr>
+    <tr><td>Microsoft Azure AI Engineer Associate</td><td>USD 165 exam</td><td>10 to 20 percent at mid-level</td><td>Year 2 onwards</td></tr>
+    <tr><td>Coursera Deep Learning Specialization (Andrew Ng)</td><td>USD 49 per month, ~3 months</td><td>Strong on resume; helps fresher placement</td><td>Year 0-1</td></tr>
+    <tr><td>Hugging Face NLP Course (free)</td><td>Free</td><td>GenAI signal for LLM roles</td><td>Year 0-2</td></tr>
+    <tr><td>Stanford ML Specialization Coursera</td><td>USD 49 per month, ~4 months</td><td>Strong academic signal for senior interviews</td><td>Year 2 onwards</td></tr>
+    <tr><td>IIM or ISB Executive Programmes in Analytics</td><td>Rs 3 to 5 lakh</td><td>15 to 25 percent at mid-level, opens management track</td><td>Year 3 onwards</td></tr>
   </tbody>
 </table>
 
@@ -25860,28 +25854,28 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <ul>
   <li>GenAI premium is real but may compress as the talent pool grows over 2026-27.</li>
-  <li>Big Tech equity grants add to base CTC at senior levels but vary by company and grant cycle.</li>
+  <li>Big Tech equity components add 30 to 50 percent to base CTC at senior levels but vary by company and grant cycle.</li>
   <li>Tier-2 city pay is lower in absolute numbers but the cost-of-living math often produces higher net savings.</li>
 </ul>
 
-<h2>The Year-by-Year Data Career Path</h2>
+<h2>The Year-by-Year Data Career Salary Curve</h2>
 
 <table>
-  <caption>Data scientist career path at a product company India 2026</caption>
-  <thead><tr><th>Year</th><th>Role</th></tr></thead>
+  <caption>Data scientist salary curve at product company India 2026</caption>
+  <thead><tr><th>Year</th><th>Role</th><th>Median CTC</th><th>Top decile CTC</th></tr></thead>
   <tbody>
-    <tr><td>Year 1</td><td>Associate Data Scientist</td></tr>
-    <tr><td>Year 2</td><td>Data Scientist</td></tr>
-    <tr><td>Year 3</td><td>Data Scientist II</td></tr>
-    <tr><td>Year 5</td><td>Senior Data Scientist</td></tr>
-    <tr><td>Year 7</td><td>Staff Data Scientist or Lead</td></tr>
-    <tr><td>Year 10</td><td>Principal DS or Manager</td></tr>
+    <tr><td>Year 1</td><td>Associate Data Scientist</td><td>Rs 9 to 14 LPA</td><td>Rs 18 to 25 LPA</td></tr>
+    <tr><td>Year 2</td><td>Data Scientist</td><td>Rs 14 to 20 LPA</td><td>Rs 25 to 35 LPA</td></tr>
+    <tr><td>Year 3</td><td>Data Scientist II</td><td>Rs 18 to 26 LPA</td><td>Rs 30 to 42 LPA</td></tr>
+    <tr><td>Year 5</td><td>Senior Data Scientist</td><td>Rs 25 to 36 LPA</td><td>Rs 42 to 60 LPA</td></tr>
+    <tr><td>Year 7</td><td>Staff Data Scientist or Lead</td><td>Rs 36 to 55 LPA</td><td>Rs 60 to 85 LPA</td></tr>
+    <tr><td>Year 10</td><td>Principal DS or Manager</td><td>Rs 50 to 80 LPA</td><td>Rs 90 LPA to 1.5 Cr</td></tr>
   </tbody>
 </table>
 
 <h2>Top Skills That Unlock Salary Jumps</h2>
 
-<p>Three skill transitions that tend to move pay.</p>
+<p>Three skill transitions that consistently produce 30-plus percent salary increases.</p>
 
 <ol>
   <li><strong>Data Analyst to Data Scientist transition:</strong> Adding Python plus statistics plus ML at year 2-3 unlocks Rs 8 to 15 LPA increase.</li>
@@ -26567,7 +26561,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: `Is direct employment possible after B.Sc without further study?`, a: `Possible but limited and salary-capped. Common direct paths: lab technician at hospital or pharma (Rs 2.5 to 4 LPA), data entry and IT support (Rs 2.5 to 3.5 LPA), school teaching with B.Ed (Rs 3 to 6 LPA private schools), retail and FMCG sales executive (Rs 2.8 to 4.5 LPA). Year-5 salary ceiling without postgrad or certification: Rs 5 to 8 LPA. Year-10 ceiling: Rs 7 to 12 LPA. Add a postgrad to break the ceiling.` },
       { q: `Which certification adds the most salary to a B.Sc degree?`, a: `By stream. B.Sc CS or IT: AWS Certified Solutions Architect (Rs 2 to 4 LPA boost), Python plus SQL (Rs 1.5 to 3 LPA), Data Analyst Power BI or Tableau (Rs 1.5 to 3 LPA). B.Sc Biotech: GLP and GMP regulatory training (Rs 1 to 2 LPA). B.Sc Nursing: NCLEX-RN US or NMC UK registration (transforms career). B.Sc Statistics: IAI actuarial papers (uncapped). The right certification depends entirely on the target role.` },
       { q: `What is the international B.Sc Nursing route worth?`, a: `For UK: NMC registration plus IELTS 7 (or OET B) plus CBT test plus OSCE. End salary: GBP 22K to 36K (Rs 23 to 38 LPA equivalent) at NHS Band 5, rising to GBP 50K-plus at senior nurse and ward sister level. For Canada: IELTS 7, NNAS evaluation, NCLEX-RN, CRNE. End salary: CAD 65K to 95K (Rs 40 to 58 LPA equivalent). For Australia: AHPRA registration, IELTS 7, OBA. Salary AUD 70K to 110K (Rs 38 to 60 LPA equivalent). Process takes 6 to 18 months.` },
-      { q: `Can a B.Sc graduate become an IAS officer in India 2026?`, a: `Yes. UPSC Civil Services is open to graduates from any stream. B.Sc graduates can choose Geography, Sociology, Physics, Chemistry, Botany, Zoology, Statistics, or Mathematics as optional subjects in Mains. The UPSC 2024-25 topper analysis shows roughly 16 percent of successful candidates had a Science background. The lever for success is preparation hours, not stream choice.` }
+      { q: `Can a B.Sc graduate become an IAS officer in India 2026?`, a: `Yes. UPSC Civil Services is open to graduates from any stream. B.Sc graduates can choose Geography, Sociology, Physics, Chemistry, Botany, Zoology, Statistics, or Mathematics as optional subjects in Mains. The lever for success is preparation hours, not stream choice.` }
     ],
     content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, edifyedu.in. NHS pay bands from the NHS Employers 2025-26 pay scales.</em></p>
 
@@ -26577,7 +26571,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="callout-key"><strong>One-line frame for B.Sc career planning:</strong> The B.Sc alone produces Rs 2.5 to 5 LPA fresher salaries with a Rs 8 to 12 LPA year-10 ceiling. B.Sc plus a specific certification or postgrad qualification (M.Sc, MBA, NMC for nursing, AWS for IT) breaks the ceiling and unlocks Rs 20 to 60 LPA careers. The "plus" matters more than the B.Sc itself.</div>
 
-<h2>The 6 B.Sc Streams and Their Realistic Salary Curves</h2>
+<h2>B.Sc Career Outcomes Depend on the Stream</h2>
 
 <figure style="margin: 28px 0;">
   <img src="https://images.pexels.com/photos/7580992/pexels-photo-7580992.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Indian professional in a modern office, illustrating science graduate career paths." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
@@ -26681,10 +26675,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <ol>
   <li><strong>Treating B.Sc as a final qualification.</strong> Without postgrad or certification, salary plateaus by year 6. Plan the stack from year 1.</li>
-  <li><strong>Choosing the wrong stream for the wrong reason.</strong> B.Sc Biotech is fascinating subject matter, but career outcomes lag CS and Mathematics by 30 to 40 percent. Pick stream for outcome, not just interest.</li>
+  <li><strong>Choosing the wrong stream for the wrong reason.</strong> B.Sc Biotech is fascinating subject matter, but career outcomes tend to trail CS and Mathematics. Pick stream for outcome, not just interest.</li>
   <li><strong>Underestimating the international Nursing path.</strong> Many B.Sc Nursing graduates never explore UK or Canada. It can be the highest-return move available to any B.Sc graduate.</li>
   <li><strong>Ignoring the data analyst entry path for non-CS streams.</strong> B.Sc Mathematics, Statistics, Physics, and even Chemistry graduates can enter analytics roles with 3 to 6 months of Python plus SQL upskilling. Underused path.</li>
-  <li><strong>Skipping certification because of cost.</strong> A Rs 30K AWS certification adds Rs 2 to 4 LPA. The ROI math always favours certification spend.</li>
+  <li><strong>Skipping certification because of cost.</strong> A certification costs far less than a degree. Check which roles it opens before you rule it out.</li>
 </ol>
 
 <h2>What to Do Next Based on Your B.Sc Stream</h2>
@@ -26709,15 +26703,13 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Indian Statistical Service (ISS):</strong> B.Sc Statistics or Mathematics graduates qualify. Specialised UPSC exam. Starting salary Rs 8 to 12 LPA at Group A level.</li>
 </ul>
 
-<h2>The B.Sc + Online MBA ROI Math</h2>
+<h2>B.Sc Plus Online MBA: The Career Trajectory</h2>
 
-<p>For B.Sc graduates 2 to 5 years into a career, the online MBA upgrade math is straightforward.</p>
+<p>For B.Sc graduates 2 to 5 years into a career, the online MBA upgrade looks like this.</p>
 
 <ul>
   <li><strong>Current B.Sc-only career trajectory:</strong> Rs 4 LPA in year 2, scaling to Rs 9 LPA by year 8 without postgrad.</li>
   <li><strong>B.Sc plus UGC-DEB online MBA (Rs 1.5 to 2.2 lakh, 2 years):</strong> Rs 5 LPA in year 2 (during MBA), Rs 8 LPA in year 3 post-MBA, Rs 16 to 22 LPA by year 8.</li>
-  <li><strong>Net 5-year gain over B.Sc-only:</strong> Rs 25 to 40 lakh additional earnings over a 5-year horizon.</li>
-  <li><strong>ROI breakeven:</strong> Typically 10 to 18 months from first salary increase post-MBA.</li>
 </ul>
 
 <p>The online MBA pairs particularly well with B.Sc Maths, Statistics, or CS for analytics roles. Less aligned with B.Sc Nursing (international route dominates the ROI) and B.Sc pure science (M.Sc or research is the better pair).</p>
@@ -26727,7 +26719,6 @@ export const BLOG_POSTS: BlogPost[] = [
 <ul>
   <li>International nursing salary figures use 2025-26 NHS pay scales and direct exchange rate calculations. Real net-of-tax take-home is lower than gross; cost of living in target countries also matters.</li>
   <li>Individual outcomes vary with college tier, city, and execution.</li>
-  <li>Stream-by-stream salary ranges shown are medians; bottom decile and top decile diverge widely from these numbers.</li>
 </ul>
 
 <div class="cta-box" style="background:#0f172a;color:#fff;border-radius:12px;padding:24px;margin:32px 0;text-align:center">
@@ -27012,16 +27003,6 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Foreign LLM (Oxford, Cambridge, Columbia, NYU):</strong> 1-year internationally recognised. Costs Rs 30-70 lakh including living. Strong for international practice or US Bar attempts.</li>
 </ul>
 
-<h2>LLM ROI Analysis 2026</h2>
-
-<p>Realistic ROI math for an LLB graduate considering LLM.</p>
-
-<ul>
-  <li><strong>Premium NLU LLM (Rs 3 lakh fee plus Rs 6 lakh opportunity cost):</strong> Total real cost Rs 9 lakh. Year-1 post-LLM CTC Rs 12-20 LPA at top law firms. Breakeven 12-18 months.</li>
-  <li><strong>Tier-2 LLM (Rs 6 lakh plus Rs 6 lakh opp cost):</strong> Total Rs 12 lakh. Year-1 CTC Rs 8-14 LPA. Breakeven 18-24 months.</li>
-  <li><strong>Foreign LLM (Oxford, Cambridge): Rs 40 lakh plus Rs 8 lakh opp cost):</strong> Total Rs 48 lakh. Year-1 CTC if India-based Rs 20-35 LPA; if international USD 80K-150K. Breakeven 2-4 years if international placement.</li>
-</ul>
-
 <h2>Top NLUs for LLM Admission 2026 (CLAT-PG Reference)</h2>
 
 <table>
@@ -27057,6 +27038,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Career Tracks After LLM Beyond Litigation 2026</h2>
 
 <ul>
+  <li><strong>Top law firm associate after a premium NLU LLM:</strong> year-1 CTC Rs 12-20 LPA.</li>
   <li><strong>Law firm Senior Associate then Partner:</strong> 7 to 10 years, Rs 50 LPA to 1 Cr-plus at Partner level.</li>
   <li><strong>In-house counsel at MNCs:</strong> Rs 18 to 40 LPA, better work-life balance.</li>
   <li><strong>Academia and PhD track:</strong> Rs 8 to 18 LPA at NLUs and central universities.</li>
@@ -27077,7 +27059,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>LLM is not a litigation entry:</strong> LLB plus Bar enrolment is sufficient for court practice. LLM is for academia, specialisation, or transactional law.</li>
   <li><strong>There is no valid distance or online LLM:</strong> UGC prohibits law in ODL and online mode. Court practice requires an LLB plus bar enrolment in any case.</li>
   <li><strong>Foreign LLM (Oxbridge, Ivies) needs Bar bridge in India:</strong> Foreign LLM does not automatically grant India bar enrolment. Bar Council requires Indian LLB.</li>
-  <li><strong>LLM payback at smaller firms is slow:</strong> Tier-3 LLMs from non-NLU universities often see year-1 CTC of Rs 4 to 8 LPA, breakeven 4 to 6 years.</li>
+  <li><strong>LLM payback at smaller firms is slow:</strong> Tier-3 LLMs from non-NLU universities often see year-1 CTC of Rs 4 to 8 LPA.</li>
 </ul>
 
 <h2>LLM Career FAQ 2026</h2>

@@ -1,5 +1,39 @@
 # Fix log
 
+## 2026-11-27 B3 batch 24 round 2: source claims, derived ROI, data-science out of the chunk
+
+Branch fix/b3-batch-24, on top of batch 24 (5432876). QA findings F1-F4 and A1-A3 (audits/qa/2026-11-27-b3-batch-24-premerge.md). No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt 2026-11-27 on every edited post.
+
+**F1. Source claims.** Why: none of these attributions is an approved source, and none is backed by lib/data.ts, the fix log or a verify sheet.
+- mba-fees: "Median placement Rs 32 to 38 LPA (FT 2024 reports)" deleted.
+- cyber: "Top Indian bug bounty hunters on HackerOne plus Bugcrowd report Rs 40 lakh to 2 crore annual earnings" now reads "Bug bounty earnings are uneven, and a small group of top hunters takes most of the payouts." The next bullet's label "Top 1 percent of hunters earn this" became "Large payouts go to a small group", because "this" pointed at the deleted figure.
+- bsc-career: "Stream-by-stream salary ranges shown are medians" deleted (it claimed a median basis for a table batch 24 removed). FAQ "The UPSC 2024-25 topper analysis shows roughly 16 percent ..." deleted (unsourced).
+
+**F2. Derived ROI and ratios.** Why: a breakeven or payback period divides one unsourced figure by another; a percent lag is a ratio of two unsourced salaries.
+- bsc-career: "lag CS and Mathematics by 30 to 40 percent" now "tend to trail CS and Mathematics"; "A Rs 30K AWS certification adds Rs 2 to 4 LPA. The ROI math always favours certification spend." replaced with a sentence without figures; the "Net 5-year gain ... Rs 25 to 40 lakh" and "ROI breakeven 10 to 18 months" bullets deleted, and the H2 "The B.Sc + Online MBA ROI Math" renamed "B.Sc Plus Online MBA: The Career Trajectory" to match what is left.
+- mba-fees: the three IIM breakevens, the ISB "ROI breakeven" bullet (now a "Format" bullet with no figure), the FMS "breakeven within 9 to 14 months" and "Strongest fee-to-placement ratio" bullets, and "4 to 6 years just to break even" deleted. The four worked lines under "The Payback Period Calculator" (8, 60, 36 and 27 months) were deleted too, and the FAQ "What is the MBA fee payback period in 2026?" now gives the formula without figures. The batch 24 entry had parked those for a fee batch; QA's re-run test is "no breakeven figure remains in mba-fees", so they go now. The formula paragraph stays, so the meta's "ROI math, payback timelines" still has a body to point at.
+- llm: the "LLM ROI Analysis 2026" section (three breakevens) deleted, and ", breakeven 4 to 6 years" removed from the "LLM payback at smaller firms" bullet.
+- Same class found by the re-run sweep in this batch's posts: mba-marketing "15 to 25 percent better placement outcomes per recent cohort data" and the "10 to 15 hours per week" claim beside it, and chennai's "Calculating ROI for Chennai MBA Aspirants" section (three break-even lines built on fee figures, one of them a wrong Amity MBA fee). All deleted.
+
+**F3. Salary metas.**
+- data-science-salary-india-2026-scope-jobs is out of the chunk. Its metaDescription promises a GenAI premium, a product-company gap and a city multiplier, and metas are out of bounds, so the body cannot lose those figures until Rishi decides the meta. The post is byte-identical to 24663a8 and its salary baseline line is back to 62. Listed for after 5 Dec / Rishi (Q71 in the batch 23 round 3 commit).
+- llm: the meta says "corporate law Rs 12L+ start". The only body figure behind it sat in the deleted ROI section, so that one figure is restored as a Career Tracks bullet: "Top law firm associate after a premium NLU LLM: year-1 CTC Rs 12-20 LPA." Decision: llm stays in the chunk with that figure kept.
+- Meta-against-body check over the 28 edited posts (.b8tmp/metachk24.cjs). Disagreements, none caused by this round:
+  - bsc-career meta "stream-by-stream salary curve": the stream table went in batch 24; the FAQ still gives stream-by-stream starting salaries, but no curve. Caused by batch 24.
+  - mba-marketing "Rs 12.2 LPA median"; mba-or-mca "Rs 6-25 LPA vs Rs 4-30 LPA salary curve"; arts-stream "BA average Rs 4.5L, corporate law Rs 8-25L, digital marketing Rs 3-15L"; ias "DA 38%". None of these figures is in the body at 24663a8 either, so they predate batch 24.
+  - mba-fees meta "IIM Rs 27L, ISB Rs 45L, private Rs 8-25L": the FAQs keep those figures (see A2).
+
+**F4.** bsc-career H2 "The 6 B.Sc Streams and Their Realistic Salary Curves" is now "B.Sc Career Outcomes Depend on the Stream", which is what its two sentences say.
+
+**A1-A3.**
+- mba-after-bsc H2: "(edifyedu.in Cohort Data)" removed.
+- mba-digital-marketing: "a 2025 to 2026 snapshot from edifyedu.in counsellor interviews" now "indicative".
+- mba-or-mca: "78 percent ... per NIRF 2024 placement data", "Growing 6 to 8 percent YoY", "7.7 percent annual growth per NASSCOM Tech Hiring Report" and "2,05,000 new tech jobs annually" deleted. The demand bullets keep their sector lists.
+- A2, mba-fees prose against the "Not tracked" table: the campus fee figures in the prose sections are gone. IIM Old and New tier fee ranges deleted; the ISB tuition, living and total bullets became one "Fees: Not tracked (campus programme)" bullet, and its H2 "ISB MBA Fees Deep Dive: Rs 38 to 45 Lakh Real Cost" is now "ISB MBA: What to Check"; FMS "Rs 2.32 lakh" (twice) and Mumbai/Anna "Rs 50K to 2 lakh" now "not tracked (campus programme)"; the FMS H2 "The Highest-ROI MBA in India" is now "A Government Campus MBA"; the tier-2 "Rs 8 to 15 lakh tuition (Rs 16 to 25 lakh real total)", "above Rs 8 lakh", the "Rs 15 lakh campus MBA ... Rs 28 to 35 lakh" sentence and the "Worth Rs 2 to 8 lakh waiver" clause deleted. Kept: the intro's "Rs 45 lakh-plus (ISB plus living costs)" and the FAQ fee answers, because the frozen meta "IIM Rs 27L, ISB Rs 45L, private Rs 8-25L" promises them. Removing them needs a meta change, which is Rishi's call.
+- A3: the mba-hr FAQ bullet "Approximately 50-55 percent women in MBA HR cohorts vs 25-30 percent in MBA Finance" deleted (unsourced).
+
+Gates: fee 205, blog-fees 1878 -> 1868 (deletions only: mba-fees 54 -> 47, chennai 11 -> 9, llm 19 -> 18), em-dash 227, salary 1530 -> 1550 (data-science back to its base 62, then 3 posts lowered by 10; base 1902), salary-ext 47.
+
 ## 2026-11-27 B3 batch 24: salary chunk 20d, multipliers, best-computer MCA fees, non-IGNOU 66,000
 
 Branch fix/b3-batch-24, on top of batch 23 round 2 (24663a8). No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post (FREEZE_SLUGS) touched. updatedAt 2026-11-27 on every edited post.
