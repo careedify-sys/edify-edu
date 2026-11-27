@@ -43,7 +43,7 @@ export function validateDraft(d: TemplateDraft): string | null {
   if (body.length > 1024) return `The message is ${body.length} characters; Meta allows 1,024.`
   for (const [label, t, max] of [['Header', d.header, 60], ['Footer', d.footer, 60]] as const) {
     if (t && t.trim().length > max) return `${label} is longer than ${max} characters.`
-    if (t && /[\n*_~]|\p{Extended_Pictographic}/u.test(t) && label === 'Header') return 'The header cannot contain new lines, formatting or emoji.'
+    if (t && /[\n*_~]|[\uD800-\uDFFF]|[☀-➿]/.test(t) && label === 'Header') return 'The header cannot contain new lines, formatting or emoji.'
   }
   for (const t of [d.header, body, d.footer]) {
     if (t && /\{\{/.test(t)) return 'Personalised fields like {{1}} are not supported: your list holds phone numbers only, so every student gets the same text.'

@@ -13,8 +13,16 @@ export type Action =
   | 'view' | 'send' | 'request_phone' | 'note' | 'link_lead' | 'create_lead'
   | 'record_call' | 'record_consent' | 'archive'
   | 'edit_settings' | 'toggle_sending' | 'override_cap' | 'connection_check' | 'delete_contact'
+  // Phase 3 campaigns
+  | 'campaign_view' | 'contacts_import' | 'list_edit' | 'campaign_edit' | 'campaign_pause'
+  | 'consent_bulk' | 'template_submit' | 'campaign_approve' | 'campaign_resume' | 'campaign_settings' | 'export'
 
-const OWNER_ONLY: ReadonlySet<Action> = new Set<Action>(['edit_settings', 'toggle_sending', 'override_cap', 'connection_check', 'delete_contact'])
+// Anything that can cause a send, spend money, change what students are
+// recorded as agreeing to, or take student numbers out of the system.
+const OWNER_ONLY: ReadonlySet<Action> = new Set<Action>([
+  'edit_settings', 'toggle_sending', 'override_cap', 'connection_check', 'delete_contact',
+  'consent_bulk', 'template_submit', 'campaign_approve', 'campaign_resume', 'campaign_settings', 'export',
+])
 
 export function can(actor: Actor | null, action: Action): boolean {
   if (!actor) return false

@@ -79,7 +79,7 @@ const finish = (ref: string, state: string, wamid: string | null = null, code: n
 const resetSpend = async () => { await db.exec(`delete from wa_campaign_recipients; delete from wa_campaigns;`) }
 
 // ── Migration ───────────────────────────────────────────────────────────────
-await test('migration runs twice, seeds budget settings as unset, keeps campaigns off', async () => {
+await test('migration runs twice, seeds Rishi's budgets (250 a day, 2,000 a month, batch 50), keeps campaigns off', async () => {
   await db.exec(migFile('whatsapp_campaigns.sql'))
   const s = Object.fromEntries((await all<{ key: string; value: any }>(`select key, value from wa_settings where key like 'campaign%'`)).map(r => [r.key, r.value]))
   assert.deepEqual(s, { campaign_budget_daily_inr: 250, campaign_budget_monthly_inr: 2000, campaign_default_batch: 50, campaign_tax_pct: 18, campaign_daily_max: 250, campaigns_enabled: false })
