@@ -47,6 +47,39 @@
   online-mba-business-data-analytics-india-2026, online-mba-supply-chain-management-india-2026,
   upes-online-mba-review-2026, best-online-mba-colleges-india-2026, online-mba-with-placement-india-2026,
   amity-vs-manipal-online-mba-2026, nmims-vs-symbiosis-online-mba-2026.
+- **Round 2 (QA audits/qa/2026-11-27-b3-batch-14-premerge.md, F1-F3 and A1):**
+  - **F1, page-content JSON:** the round 1 detector's lookbehind stopped at the "." in "Rs.", so "Rs.N" EMIs with no
+    month word were invisible to it. That is how the JAIN hub row "Monthly EMI | Rs.6,917 | Rs.6,111 | Rs.7,500" got
+    through (NMIMS 6,111 is 1,96,000 / 32; MUJ 7,500 is unsourced). With the fixed lookbehind, the pre-batch JSON
+    shows 184 unkept figures in 78 files (round 1 reported 182 in 77); after round 2 it shows 0.
+    - jain-university-online-mba.json: the whole comparisons section went. Besides the EMI row, it gave NMIMS NAAC
+      "A+" (lib/data.ts A++), NIRF Management #15 (lib/data.ts #24) and 5 specialisations (7), MUJ 12 specialisations
+      (14) and JAIN "NIRF listed" (#62). Too much was wrong to patch row by row, and the section is optional in the
+      schema.
+    - nmims-online-mba.json about.body: "Fees are Rs.1.96L and EMI starts." became "Fees are Rs.1.96L." The same
+      broken sentence in upes-online-mba.json became "Fees are Rs.1.75L to Rs.2.20L." (getExactFee range).
+  - **F2, amity-vs-manipal-online-mba-2026:** MUJ's ₹1,56,400 is "after 15% discount" in every payment mode
+    (feeBreakdown.mba.net), not a one-time price, so the "paid in full upfront" like-for-like comparison was wrong as
+    well as derived.
+    - Deleted: both "Gap:" paragraphs (₹50,600 and ₹41,000), both FAQ gap clauses (FAQ list and body copy), and the
+      "₹18,000 saved" and "₹27,600 saved" cells with their "Savings vs Semester" column.
+    - The snapshot table carried the Oct 2026 chart (MUJ ₹1,53,000 one-time, ₹1,80,000 semester-wise). Its rows are now
+      "lowest published" (Amity ₹2,07,000 one-time, MUJ ₹1,56,400 after 15% discount) and "list" (Amity ₹2,25,000
+      semester-wise, MUJ ₹1,84,000).
+    - "₹1.56L (one-time)" (3 places) now reads "₹1.84L list, or ₹1.56L after its 15% discount".
+    - The ₹50,600 gap paragraph is replaced by a sentence saying the discounted MUJ price does not line up with
+      Amity's one-time fee. No gap was computed.
+    - This corrects round 1, which kept the ₹50,600 and ₹41,000 gaps as current-figure arithmetic. A difference no
+      source states is still derived.
+  - **F3:** the placement FAQ now says no university in the guide publishes a "university-specific" average package.
+    That matches the post's table caption; the verify file shows the Online Manipal portal prints a pooled
+    "Average Salary Package 6 LPA*".
+  - **A1:** six SMU spec JSONs now say "Contact our counsellor for current EMI tenure options." The EMI line that
+    "tenure" referred to went in round 1. Chandigarh, Chitkara, Kurukshetra and UPES were not changed, because their
+    bodies still name the EMI tenures.
+  - **Gates:** check-blog-fees 1,951 to 1,950 (amity-vs-manipal 14 to 13); the baseline went down only. Tag balance is
+    unchanged and no em dashes were added. All 431 JSON files round-trip.
+  - **updatedAt** was already 2026-11-27 on both edited posts.
 
 ## 2026-11-26 · B3 batch 13: derived EMIs in blog copy, dead EdifyRecommends, placement percentages, international salary list; rule 4d fallback held (branch fix/b3-batch-13)
 

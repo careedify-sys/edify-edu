@@ -37215,7 +37215,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     faqs: [
       { q: 'Which online MBA in India has the best placement support?', a: 'NMIMS Online MBA at Rs 2.20 lakh and Symbiosis SSODL at Rs 3.15 lakh net report the strongest placement support among UGC-DEB online MBAs. Amity Online lists 450+ hiring partners and delivers consistent placement assistance. Chandigarh University Online MBA at Rs 1.75 lakh net offers Harvard PwC PMI certifications plus active placement cell. MUJ Online Manipal at Rs 1.56-1.84 lakh has Manipal recruiter network access. Choose based on your target sector and budget.' },
       { q: 'Do online MBA programs really provide placements like on-campus MBAs?', a: 'No. Online MBA placement support is genuinely weaker than on-campus equivalents at the same universities. Most online MBA placements are placement assistance like referrals, recruiter introductions, drives, rather than guaranteed placement drives. Realistic expectation is that the university opens doors and your own efforts close them. The strongest online MBAs (NMIMS, Symbiosis, Amity) offer placement support comparable to mid-tier on-campus B-schools, not top-tier IIM placement structures.' },
-      { q: 'What is the average placement package after online MBA in India?', a: 'No university in this guide publishes an average package for its online MBA graduates, so there is no reliable figure to quote. For working professionals with 2-5 years experience pre-MBA, the uplift usually comes through internal promotion or external switching.' },
+      { q: 'What is the average placement package after online MBA in India?', a: 'No university in this guide publishes a university-specific average package for its online MBA graduates, so there is no reliable figure to quote. For working professionals with 2-5 years experience pre-MBA, the uplift usually comes through internal promotion or external switching.' },
       { q: 'Are online MBA placement claims trustworthy?', a: 'Partially. Universities self-report placement data and there is no independent audit body for online MBA placement claims. Claims of highest packages are typically real but describe the top of the batch, not average outcomes. Average package claims are more representative. Verify by speaking to recent alumni on LinkedIn before believing marketing material. edifyedu.in counsellors share independent verified placement insights based on alumni feedback rather than university self-reports.' },
       { q: 'Which online MBA universities have actual campus placement drives?', a: 'NMIMS Online and Symbiosis SSODL conduct virtual placement drives for online students with industry partners. Amity Online runs structured placement drives through its 450+ hiring partners. Chandigarh University holds online placement drives with companies like Cognizant, TCS, Wipro, Infosys. MUJ Online Manipal accesses the Manipal Group recruiter network for online students. Most other UGC-DEB online MBAs offer placement assistance like referrals and resume support rather than structured placement drives.' },
       { q: 'Will companies hire from online MBA programmes?', a: 'Yes, most Indian companies hire from UGC-DEB online MBA programmes. IT services (TCS, Infosys, Wipro, HCL, Cognizant), BFSI (HDFC, ICICI, SBI, Axis), FMCG, retail, and consulting (mid-tier) actively recruit online MBA graduates. Tier-1 consulting firms (BCG, Bain, Mckinsey) and tier-1 BFSI (Goldman Sachs, JPMorgan) typically prefer full-time IIM/ISB graduates. Realistic expectation is that the online MBA opens mid-tier hiring doors, not top-tier elite hiring.' },
@@ -43821,8 +43821,8 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     targetKeyword: 'amity vs manipal online mba',
     relatedUniversities: ['amity-university-online', 'manipal-university-jaipur-online', 'manipal-academy-higher-education-online', 'sikkim-manipal-university-online'],
     faqs: [
-      { q: 'Is Amity online MBA better than Manipal online MBA?', a: 'It depends on your priorities. Amity offers QS ranking, WASC (USA) recognition, and many specialisations at ₹2.07L (one-time). MUJ offers the Manipal brand at ₹1.56L (one-time) with 13 specialisations. Both hold NAAC A+ and UGC-DEB approval. Choose Amity for international recognition, MUJ for value.' },
-      { q: 'What is the fee difference between Amity and Manipal MUJ online MBA?', a: 'On a like-for-like one-time payment basis, Amity charges ₹2.07L and MUJ charges ₹1.56L, a gap of about ₹50,600. On semester-wise payment, Amity totals ₹2.25L and MUJ totals ₹1.84L, a gap of about ₹41,000. Both offer no-cost EMI options.' },
+      { q: 'Is Amity online MBA better than Manipal online MBA?', a: 'It depends on your priorities. Amity offers QS ranking, WASC (USA) recognition, and many specialisations at ₹2.07L (one-time). MUJ offers the Manipal brand at ₹1.84L list, or ₹1.56L after its 15% discount, with 13 specialisations. Both hold NAAC A+ and UGC-DEB approval. Choose Amity for international recognition, MUJ for value.' },
+      { q: 'What is the fee difference between Amity and Manipal MUJ online MBA?', a: 'Amity charges ₹2.07L one-time (₹2.25L semester-wise). MUJ lists ₹1.84L, or ₹1.56L after its 15% discount. Both offer no-cost EMI options.' },
       { q: 'Which Manipal university does "Manipal online MBA" refer to?', a: 'Three universities use the Manipal name for online MBA: MAHE (₹2.92L, NAAC A++, NIRF #3), MUJ (₹1.56L, NAAC A+, NIRF #58), and SMU Sikkim (₹1.20L, NAAC A+). Most searches for "Manipal online MBA" refer to MUJ, which runs the Online Manipal platform alongside MAHE.' },
       { q: 'Are Amity and Manipal MUJ online MBA degrees UGC-DEB approved?', a: 'Yes. Both Amity University Online and Manipal University Jaipur (MUJ) Online appear on the current UGC-DEB entitled list. Their online MBA degrees are legally valid for all purposes including government jobs, higher education, and corporate hiring.' },
       { q: 'Which has better placements, Amity or Manipal MUJ online MBA?', a: 'Neither guarantees placement for online MBA students. Both list similar recruiters including TCS, Infosys, Accenture, and HDFC Bank. Amity reports a salary range of ₹5L to ₹12L and MUJ reports ₹4L to ₹15L. Your placement outcome depends more on your work experience and interview preparation than the university name.' },
@@ -43857,8 +43857,8 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb;font-weight:600">NAAC Grade</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">A+</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">A+</td></tr>
     <tr style="background:#f9fafb"><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb;font-weight:600">NIRF University Rank</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">#22 (2025)</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">#58 (2025)</td></tr>
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb;font-weight:600">NIRF Management Rank</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">#49 (2025)</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">#81 (2025)</td></tr>
-    <tr style="background:#f9fafb"><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb;font-weight:600">MBA Fee (one-time)</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹2,07,000</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹1,53,000</td></tr>
-    <tr><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb;font-weight:600">MBA Fee (semester-wise total)</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹2,25,000</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹1,80,000</td></tr>
+    <tr style="background:#f9fafb"><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb;font-weight:600">MBA Fee (lowest published)</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹2,07,000 (one-time)</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹1,56,400 (after 15% discount)</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb;font-weight:600">MBA Fee (list)</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹2,25,000 (semester-wise total)</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹1,84,000 (list)</td></tr>
     <tr style="background:#f9fafb"><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb;font-weight:600">EMI from</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹8,906/mo</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹6,517/mo</td></tr>
     <tr><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb;font-weight:600">Specialisations</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">19</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">13</td></tr>
     <tr style="background:#f9fafb"><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb;font-weight:600">Duration</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">2 Years</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">2 Years (4 Semesters)</td></tr>
@@ -43888,19 +43888,19 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <h2 id="fees">Fees Breakdown: Comparing Like for Like</h2>
 
-<p>Fee comparisons between Amity and MUJ get messy because both universities offer multiple payment modes at different effective totals. Comparing Amity's semester price against MUJ's one-time discount gives a misleading gap. Here are the numbers, payment mode by payment mode.</p>
+<p>Fee comparisons between Amity and MUJ get messy because both universities offer multiple payment modes at different effective totals. Comparing Amity's semester price against MUJ's discounted fee gives a misleading picture. Here are the numbers, payment mode by payment mode.</p>
 
-<h3>One-Time Payment (Best Price)</h3>
+<h3>Lowest Published Price</h3>
 
 <table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
-  <thead><tr style="background:#0f172a;color:#fff"><th style="padding:10px 14px;text-align:left">University</th><th style="padding:10px 14px;text-align:left">One-Time Fee</th><th style="padding:10px 14px;text-align:left">Savings vs Semester</th></tr></thead>
+  <thead><tr style="background:#0f172a;color:#fff"><th style="padding:10px 14px;text-align:left">University</th><th style="padding:10px 14px;text-align:left">Lowest Published Fee</th></tr></thead>
   <tbody>
-    <tr><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">Amity Online MBA</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb"><strong>₹2,07,000</strong></td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">₹18,000 saved</td></tr>
-    <tr style="background:#ecfdf5"><td style="padding:10px 14px">MUJ Online MBA</td><td style="padding:10px 14px"><strong>₹1,56,400</strong></td><td style="padding:10px 14px">₹27,600 saved</td></tr>
+    <tr><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb">Amity Online MBA</td><td style="padding:10px 14px;border-bottom:1px solid #e5e7eb"><strong>₹2,07,000</strong> (one-time)</td></tr>
+    <tr style="background:#ecfdf5"><td style="padding:10px 14px">MUJ Online MBA</td><td style="padding:10px 14px"><strong>₹1,56,400</strong> (after 15% discount)</td></tr>
   </tbody>
 </table>
 
-<p><strong>Gap: ₹50,600.</strong> MUJ is cheaper by about ₹50,600 when both are paid in full upfront. This is the fairest apples-to-apples comparison.</p>
+<p>MUJ's 15% discount applies across its payment modes, so ₹1,56,400 is not a one-time price and does not line up with Amity's one-time fee.</p>
 
 <h3>Semester-Wise Payment (Standard Price)</h3>
 
@@ -43911,8 +43911,6 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
     <tr style="background:#ecfdf5"><td style="padding:10px 14px">MUJ Online MBA</td><td style="padding:10px 14px">₹46,000</td><td style="padding:10px 14px"><strong>₹1,84,000</strong></td></tr>
   </tbody>
 </table>
-
-<p><strong>Gap: ₹41,000.</strong> On semester-wise payment, MUJ saves you about ₹41,000 over the full programme.</p>
 
 <h3>EMI Comparison</h3>
 
@@ -44011,7 +44009,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <div class="callout-key" style="background:#fefce8;border-left:4px solid #B8892A;padding:14px 18px;border-radius:8px;margin:20px 0;font-size:14px">
   <strong>Pick MUJ if:</strong>
   <ul style="margin:8px 0 0;padding-left:20px">
-    <li>You want the Manipal brand without paying MAHE's ₹2.92L fee. MUJ gives you the same brand umbrella at ₹1.56L (one-time).</li>
+    <li>You want the Manipal brand without paying MAHE's ₹2.92L fee. MUJ gives you the same brand umbrella at ₹1.84L list, or ₹1.56L after its 15% discount.</li>
     <li>Your target specialisation is in MUJ's list: Finance, Marketing, HR, Data Science, FinTech, BFSI, Supply Chain, or Project Management.</li>
     <li>You are targeting domestic careers only and do not need QS or WASC recognition.</li>
     <li>You want a lower monthly EMI commitment (₹6,517 vs ₹8,906).</li>
@@ -44033,10 +44031,10 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 <h2 id="faq">Frequently Asked Questions</h2>
 
 <h3>Is Amity online MBA better than Manipal online MBA?</h3>
-<p>It depends on your priorities. Amity offers QS ranking, WASC (USA) recognition, and many specialisations at ₹2.07L (one-time). MUJ offers the Manipal brand at ₹1.56L (one-time) with 13 specialisations. Both hold NAAC A+ and UGC-DEB approval. Choose Amity for international recognition, MUJ for value.</p>
+<p>It depends on your priorities. Amity offers QS ranking, WASC (USA) recognition, and many specialisations at ₹2.07L (one-time). MUJ offers the Manipal brand at ₹1.84L list, or ₹1.56L after its 15% discount, with 13 specialisations. Both hold NAAC A+ and UGC-DEB approval. Choose Amity for international recognition, MUJ for value.</p>
 
 <h3>What is the fee difference between Amity and Manipal MUJ online MBA?</h3>
-<p>On a like-for-like one-time payment basis, Amity charges ₹2.07L and MUJ charges ₹1.56L, a gap of about ₹50,600. On semester-wise payment, Amity totals ₹2.25L and MUJ totals ₹1.84L, a gap of about ₹41,000. Both offer no-cost EMI options.</p>
+<p>Amity charges ₹2.07L one-time (₹2.25L semester-wise). MUJ lists ₹1.84L, or ₹1.56L after its 15% discount. Both offer no-cost EMI options.</p>
 
 <h3>Which Manipal university does "Manipal online MBA" refer to?</h3>
 <p>Three universities use the Manipal name for online MBA: MAHE (₹2.92L, NAAC A++, NIRF #3), MUJ (₹1.56L, NAAC A+, NIRF #58), and SMU Sikkim (₹1.20L, NAAC A+). Most people searching "Manipal online MBA" are looking at MUJ, which runs the Online Manipal platform alongside MAHE.</p>
