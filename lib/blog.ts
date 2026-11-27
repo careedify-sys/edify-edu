@@ -43116,7 +43116,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>Karnataka State Open University (KSOU) is the state's dedicated open university, headquartered in Mysore. It holds NAAC A+ accreditation and UGC-DEB entitlement. The online MBA offers 4 specialisations: Finance, Marketing, HR, and Operations Management.</p>
 
-<p>Total fee: ₹80,000. This makes KSOU the most credible budget online MBA in Karnataka. The NAAC A+ grade at this price point is rare nationally. KSOU is the natural choice for candidates who need a government-recognised MBA for promotions, DPC eligibility, or KPSC preparation without spending over ₹1 lakh.</p>
+<p>KSOU total fee: ₹80,000. KSOU is the natural choice for candidates who need a government-recognised MBA for promotions, DPC eligibility, or KPSC preparation without spending over ₹1 lakh.</p>
 
 <h3>Adichunchanagiri University Online, Bengaluru</h3>
 
@@ -43191,7 +43191,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>The ₹1.30L to ₹1.96L mid-range works well for Bangalore tech professionals targeting private sector promotions, dual specialisation seekers (JAIN offers 18 specs with dual options), or candidates who want WES recognition for international plans. To break that into monthly payments, <a href="/tools/emi-calculator">use the free EMI calculator</a> to see what each university costs per month.</p>
 
-<p>The under-₹1L budget tier (KSOU at ₹80K, Alva's from ₹30K) works if your primary goal is the credential for government promotions, DPC eligibility, or competitive exam qualification. If you are comparing budget online MBA options across India, also check our <a href="/fees">fees comparison page</a> for side-by-side pricing.</p>
+<p>The under-₹1L budget tier (KSOU at ₹80K, Yenepoya at ₹50,000, Alva's from ₹30K) works if your primary goal is the credential for government promotions, DPC eligibility, or competitive exam qualification. If you are comparing budget online MBA options across India, also check our <a href="/fees">fees comparison page</a> for side-by-side pricing.</p>
 
 <h2>Exclusions and Why</h2>
 
@@ -43207,7 +43207,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>Karnataka gives you the full spectrum of online MBA options within one state. The NAAC profile is strong: three A++ universities, five A+ universities, and only one university below A grade.</p>
 
-<p>Your decision comes down to three variables: budget, specialisation needs, and whether you prioritise NIRF rank or NAAC grade. For the highest brand recognition nationally, MAHE. For the strongest Bangalore tech network, JAIN. For healthcare management, JSS AHER. For the best NAAC-to-fee ratio on a budget, KSOU. The table above lays out all 12 options. Pick the two or three that match your priorities, verify their current UGC-DEB status at <a href="https://deb.ugc.ac.in" rel="noopener" target="_blank">deb.ugc.ac.in</a>, and compare directly.</p>
+<p>Your decision comes down to three variables: budget, specialisation needs, and whether you prioritise NIRF rank or NAAC grade. For the highest brand recognition nationally, MAHE. For the strongest Bangalore tech network, JAIN. For healthcare management, JSS AHER. The table above lays out all 12 options. Pick the two or three that match your priorities, verify their current UGC-DEB status at <a href="https://deb.ugc.ac.in" rel="noopener" target="_blank">deb.ugc.ac.in</a>, and compare directly.</p>
 
 <div class="cta-box" style="background:#0f172a;color:#fff;padding:28px 24px;border-radius:12px;margin:32px 0">
 <p style="font-size:18px;font-weight:700;margin:0 0 10px">Ready to Shortlist?</p>

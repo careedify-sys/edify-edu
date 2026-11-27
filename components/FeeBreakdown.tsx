@@ -22,7 +22,7 @@ interface Props {
 // fee-component claims we hold no source for. For these the block drops the
 // "EMI available through lending partners" sentence and the "Study Material:
 // Included (digital)" row instead of asserting them.
-const NO_UNSOURCED_FEE_COMPONENTS = new Set(['vignan-university-online'])
+const NO_UNSOURCED_FEE_COMPONENTS = new Set(['vignan-university-online', 'yenepoya-university-online'])
 
 export default function FeeBreakdown({ u, pd, program, cleanName, headingOverride, spec }: Props) {
   // 2026-11-13: a university with a payment-mode fee plan (lib/data.ts

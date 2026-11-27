@@ -64,6 +64,20 @@
   "~Rs 1,75,000" and LPU "approximately ₹1,60,000" peer quotes in some spec JSON differ from lib/data.ts and were not in
   this brief.
 
+- **Round 2 (QA, audits/qa/2026-11-27-b3-batch-15-premerge.md):**
+  - F1: online-mba-karnataka-2026 now shows Yenepoya at Rs 50,000 (NAAC A+) but the copy still called KSOU "the most
+    credible budget online MBA in Karnataka" with "A+ at this price point is rare nationally" and "best NAAC-to-fee ratio
+    on a budget, KSOU", and the under-Rs 1L tier line left Yenepoya out. Superlatives deleted (Alva`s is also A+ from
+    Rs 30K, so they were shaky before); Yenepoya added to the under-Rs 1L line. Fee sentences kept verbatim.
+  - F2: with a fee now published, FeeBreakdown printed its generic "semester-wise or in full", "EMI available through
+    lending partners" and "Study Material Included (digital)" lines on 4 Yenepoya pages; the portal states none of
+    them. Yenepoya added to NO_UNSOURCED_FEE_COMPONENTS, the Vignan precedent.
+  - F3: jain-university-online-mba-ai-for-finance.json still quoted NMIMS "at Rs 1.6L-1.95L" in lakh notation, missed by
+    the rupee-format sweep. Now Rs 1.96L-2.20L (getExactFee 1,96,000-2,20,000).
+  - Noted, not changed: titles and OG text on Yenepoya pages and /fees now carry the verified Rs 50,000 through the
+    existing fee templates (no protected or frozen page). Yenepoya BBA/BCA/MCA OG descriptions show the MBA range
+    "Rs 50K-Rs 50K" from app/universities/[id]/layout.tsx:202, a template issue shared by 17 universities at base.
+
 ## 2026-11-27 · B3 batch 14: derived EMIs in spec page-content JSON, Amity MCA FAQ fee, a stale MUJ gap, UPES fee range, placement package ranges (branch fix/b3-batch-14)
 
 - **Source:** the B3 batch 14 brief. Facts come only from lib/data.ts (getExactFee, getDisplayFee), audits/verify
