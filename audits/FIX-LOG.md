@@ -1,5 +1,36 @@
 # Fix log
 
+## 2026-11-28 B3 batch 24 round 3: mba-fees campus FAQs, three leftover multipliers, wider sweep
+
+Branch fix/b3-batch-24, on top of round 2 (84e09b0). QA findings R1-R2 and advisories A1-A2 (audits/qa/2026-11-27-b3-batch-24-premerge-rerun.md). No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. data-science-salary-india-2026-scope-jobs not touched. updatedAt 2026-11-28 on every edited post (the date rolled over during the round).
+
+**R1. mba-fees FAQs against the body.** Why: the body reports FMS, JBIMS, IIT DMS and state campus fees as "Not tracked (campus programme)", the meta does not promise them, and "highest ROI" is the claim round 2 removed from the FMS heading. The FAQPage JSON-LD is built from the same faqs array, so it changes with them.
+- Government-colleges FAQ: the FMS "Rs 2.32 lakh ... the highest ROI MBA in India", JBIMS "Rs 7 to 9 lakh", IIT DMS "Rs 8 to 11 lakh" and state university "Rs 50K to Rs 2 lakh" figures now read "not tracked (campus programme)". The IIM and IGNOU figures stay (IIM is meta-promised).
+- Fee-range FAQ: "(FMS Rs 2.32 lakh is the lowest)" and "State government MBA: Rs 50K to Rs 2 lakh" deleted. "Tier-1 private (XLRI, MDI, FMS): Rs 2 to 25 lakh" is now "Tier-1 private (XLRI, MDI): up to Rs 25 lakh": FMS is not private, and the Rs 2 lakh floor was the FMS fee. The top of the range is the meta's "private Rs 8-25L" ceiling.
+- Byline: "Fee data sourced from official IIM, ISB, IIT, FMS Delhi admissions pages 2026-27" claimed a sourcing the body no longer carries. It now says online MBA fees come from edifyedu.in university profiles and campus figures are indicative, mostly not tracked.
+- Same post, same class: "Net difference often Rs 35 to 55 lakh" (a derived sum) and the "opportunity cost of Rs 10 to 25 lakh" beside it deleted; the category-table label "Tier-1 govt (low fee high ROI)" is now "Tier-1 govt"; "Lumpsum one-time payment typically offers 8 to 15 percent savings" and both "4 to 8 percent processing fee" lines (body and FAQ) reworded without the unsourced percentages.
+
+**R2. Leftover multipliers and payback.** Why: same classes round 1 and 2 removed elsewhere in these posts.
+- ias: "(which typically double salaries)" deleted.
+- mba-after-bsc FAQ: "Work experience 2-3 years between BSc and MBA improves outcomes 30 to 50 percent." deleted.
+- bba Scenario 1: "You recover the full investment within 2-3 years." deleted.
+
+**Advisories, done now.** Why: unsourced generalisations stated as figures.
+- iim: the "Rs 30 lakh investment makes sense only if you can reach Rs 50 LPA-plus within 3 years" bullet deleted (a payback threshold). Same post: "Most MNCs (six named) sponsor 50 to 100 percent fees" is now "Some employers sponsor part or all of the fee"; "5 to 15 percent reduction" is now "reductions".
+- career-after-bcom: "typically 8-12% per year. That means you'll be at ₹5L-₹6L after 5 years." deleted (a growth rate and a figure derived from it).
+- best-computer: "Soft skills compound salary 20 to 40 percent at mid-senior" is now "Soft skills matter at mid-senior level".
+- mba-digital-marketing: "25 to 40 percent of revenue", "digital teams of 200 to 400 people" and "35 to 50 percent of acquisition budget" reworded without the figures.
+
+**Wider sweep (QA's ratio.out and src2.out patterns, all 29 posts).** Fixed in the same class:
+- btech: "Placement rates at unaccredited colleges can be below 30%" is now "Placement support at unaccredited colleges is often weak".
+- amity-mca: "Several students report being surprised by additional costs after admission." deleted (an unsourced report).
+- online-mba-lpu: "Students report that the platform is easy to use ..." deleted (an unsourced report).
+- bba: "after advising hundreds of students" deleted (an unbacked first-hand claim).
+- chennai: "India's largest engineering alumni network" is now "a large engineering alumni network".
+- Left as they are, on purpose: eligibility percentages, DA and HRA rates (ias), loan interest ranges and the per-university EMI interest table (mba-fees, iim), qualitative "ROI" wording with no figure, salary figures (the salary gate owns them), mba-marketing "20 percent digital premium" (the meta promises "20%", so it waits for Q71 with the other meta decisions), and every hit in data-science (byte-identical to 24663a8 by decision).
+
+**bsc-career.** The round 2 H2 rename stays. Its meta goes into Q71 with data-science; the coordinator adds it there, so this commit does not edit QUESTIONS-FOR-RISHI.md.
+
 ## 2026-11-27 B3 batch 24 round 2: source claims, derived ROI, data-science out of the chunk
 
 Branch fix/b3-batch-24, on top of batch 24 (5432876). QA findings F1-F4 and A1-A3 (audits/qa/2026-11-27-b3-batch-24-premerge.md). No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt 2026-11-27 on every edited post.

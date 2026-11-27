@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-11-27",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 1868,
+  "totalUnverified": 1861,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 0,
@@ -18,7 +18,7 @@
     "career-after-bcom-jobs-salary-courses-2026": 35,
     "1-year-mba-india-executive-mba-2026": 26,
     "is-manipal-university-jaipur-fake-or-legit-2026": 0,
-    "mba-fees-india-complete-guide-2026": 47,
+    "mba-fees-india-complete-guide-2026": 40,
     "iim-online-mba-india-2026": 31,
     "career-after-12th-arts-courses-jobs-2026": 15,
     "mba-after-bca-is-it-good-career-2026": 5,
