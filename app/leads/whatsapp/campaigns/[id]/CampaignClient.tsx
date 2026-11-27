@@ -31,7 +31,7 @@ export default function CampaignClient({ mode, initial, lists, templates }: { mo
   const [agree, setAgree] = useState(false)
   const c = v.campaign
   const draft = c.status === 'draft'
-  const usable = templates.filter(t => t.category === 'MARKETING' && t.status === 'APPROVED' && !needsParameters(t.components))
+  const usable = templates.filter(t => t.category === 'MARKETING' && t.status === 'APPROVED' && !needsParameters(t.components, !!t.header_file_id))
   const p = v.preview
   const s = v.stats
 
@@ -175,7 +175,7 @@ export default function CampaignClient({ mode, initial, lists, templates }: { mo
 
           <section className={`card ${steps.template ? '' : 'locked'}`}>
             <h2 className="big"><span className="stepno">6</span>Exactly what students receive</h2>
-            {v.template ? <Preview header={v.template.header} body={v.template.body} footer={v.template.footer} buttons={v.template.buttons} /> : <span className="muted">Choose a template first.</span>}
+            {v.template ? <Preview header={v.template.header} headerKind={v.template.headerKind} imageUrl={v.template.headerKind === 'image' && v.template.headerFileId ? `/leads/whatsapp/media?file=${v.template.headerFileId}` : null} body={v.template.body} footer={v.template.footer} buttons={v.template.buttons} /> : <span className="muted">Choose a template first.</span>}
           </section>
 
           <section className="card done">

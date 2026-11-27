@@ -16,12 +16,15 @@ export type Action =
   // Phase 3 campaigns
   | 'campaign_view' | 'contacts_import' | 'list_edit' | 'campaign_edit' | 'campaign_pause'
   | 'consent_bulk' | 'template_submit' | 'campaign_approve' | 'campaign_resume' | 'campaign_settings' | 'export'
+  // Phase 4 referrals and automation
+  | 'referral_view' | 'referral_edit' | 'reward_approve' | 'reward_pay' | 'referral_rules' | 'automation_edit'
 
 // Anything that can cause a send, spend money, change what students are
 // recorded as agreeing to, or take student numbers out of the system.
 const OWNER_ONLY: ReadonlySet<Action> = new Set<Action>([
   'edit_settings', 'toggle_sending', 'override_cap', 'connection_check', 'delete_contact',
   'consent_bulk', 'template_submit', 'campaign_approve', 'campaign_resume', 'campaign_settings', 'export',
+  'reward_approve', 'reward_pay', 'referral_rules', 'automation_edit',
 ])
 
 export function can(actor: Actor | null, action: Action): boolean {

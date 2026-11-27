@@ -12,7 +12,7 @@ import { currentActor } from '@/lib/whatsapp/admin-session'
 import { supabaseCampaignRepo, type CampaignRepo } from '@/lib/whatsapp/campaign-repo'
 import { mockCampaignRepo } from '@/lib/whatsapp/campaign-mock'
 import { readGraphEnv, type GraphEnv } from '@/lib/whatsapp/graph'
-import type { TemplateDraft } from '@/lib/whatsapp/graph-templates'
+import type { DraftInput } from '@/lib/whatsapp/template-service'
 import * as svc from '@/lib/whatsapp/campaign-service'
 
 type Fail = { ok: false; error: string }
@@ -29,9 +29,16 @@ const fakeMeta = (async (url: string, init?: RequestInit) => {
   const u = String(url)
   const json = (b: unknown, status = 200) => ({ status, json: async () => b }) as unknown as Response
   if (u.endsWith('/messages')) return json({ error: { code: 0, message: 'mock never sends' } }, 400)
+  // Phase 4: header upload session, edit, delete and media upload.
+  if (/\/uploads\?/.test(u)) return json({ id: 'upload:mock' })
+  if (u.endsWith('/upload:mock')) return json({ h: '4::mockhandle' })
+  if (u.includes('/message_templates') && init?.method === 'DELETE') return json({ success: true })
+  if (/\/\d+$/.test(u) && init?.method === 'POST') return json({ success: true })
+  if (/\/\d+\?fields=status/.test(u)) return json({ status: 'PENDING', category: 'MARKETING' })
+  if (u.endsWith('/media') && init?.method === 'POST') return json({ id: `mockmedia_${Date.now()}` })
   if (u.includes('/message_templates') && init?.method === 'POST') {
     const body = JSON.parse(String(init.body ?? '{}'))
-    return json({ id: `mock_${Date.now()}`, status: 'PENDING', category: body.category })
+    return json({ id: String(Date.now()), status: 'PENDING', category: body.category })
   }
   if (u.includes('/message_templates')) return json({ data: [] })
   if (u.includes('quality_rating')) return json({ quality_rating: 'GREEN' })
@@ -97,7 +104,11 @@ export async function waContactHistory(contactId: string) { return run(({ repo }
 // Templates
 export async function waTemplates() { return run(({ repo }, a) => svc.loadTemplates(repo, a)) }
 export async function waSyncTemplates() { return run(({ repo, env, f }, a) => svc.syncTemplates(repo, a, env, f)) }
-export async function waSubmitTemplate(d: TemplateDraft) { return run(({ repo, env, f }, a) => svc.submitTemplate(repo, a, env, f, d)) }
+export async function waSubmitTemplate(d: DraftInput) { return run(({ repo, env, f }, a) => svc.submitTemplate(repo, a, env, f, d)) }
+export async function waEditTemplate(id: string, d: DraftInput) { return run(({ repo, env, f }, a) => svc.editTemplateDraft(repo, a, env, f, str(id, 40), d)) }
+export async function waDeleteTemplate(id: string, confirmName: string) { return run(({ repo, env, f }, a) => svc.removeTemplate(repo, a, env, f, str(id, 40), str(confirmName, 520))) }
+export async function waAttachHeaderFile(id: string, fileId: string | null) { return run(({ repo }, a) => svc.attachHeaderFile(repo, a, str(id, 40), fileId ? str(fileId, 40) : null)) }
+export async function waHeaderFiles() { return run(({ repo }, a) => svc.listFiles(repo, a, 'template_header')) }
 
 // Campaigns
 export async function waCampaigns() { return run(({ repo }, a) => svc.loadCampaigns(repo, a)) }

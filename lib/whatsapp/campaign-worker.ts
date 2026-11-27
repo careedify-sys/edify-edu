@@ -13,7 +13,9 @@
 // is safe because no request was made for them.
 import type { CampaignRepo } from './campaign-repo'
 import { sendMessage, type GraphEnv } from './graph'
-import { accountLimits, needsParameters, templateSendPayload, templateStatus } from './graph-templates'
+import { accountLimits, templateStatus } from './graph-templates'
+import { sendPlan, templatePayload } from './template-rules'
+import { ensureMetaMediaId } from './template-service'
 import { readCampaignSettings } from './campaign-service'
 
 // Same list as wa_campaign_stop_codes() in the migration.
@@ -47,12 +49,26 @@ export async function runCampaignWorker(repo: CampaignRepo, env: GraphEnv, f: ty
     rep.campaigns++
     const tpl = c.template_id ? await repo.getTemplate(c.template_id) : null
     if (!tpl?.meta_id) { rep.blocked.push('template_missing'); continue }
-    if (needsParameters(tpl.components)) { rep.blocked.push('template_needs_parameters'); continue }
+    const plan = sendPlan(tpl.components, !!tpl.header_file_id)
+    if (!plan.ok) { rep.blocked.push('template_needs_parameters'); continue }
     const live = await templateStatus(env, tpl.meta_id, f)
     if (!live) { rep.blocked.push('template_unreadable'); continue }
     if (live.status !== tpl.status || (live.category && live.category !== tpl.category)) {
       await repo.setTemplateStatus(tpl.id, live.status, live.category || null)
     }
+    // An image or PDF header goes out by Meta media id, uploaded once and
+    // reused for 29 days. Done before the claim, so a failed upload claims
+    // nobody.
+    let payload: Record<string, unknown>
+    try {
+      let mediaId: string | null = null, fileName: string | null = null
+      if (plan.plan.header) {
+        const m = await ensureMetaMediaId(repo, env, f, tpl.header_file_id!, now())
+        if (!m.ok) { rep.blocked.push('header_upload_failed'); continue }
+        mediaId = m.mediaId; fileName = m.file.file_name
+      }
+      payload = templatePayload(tpl.name, tpl.language, plan.plan, { mediaId, fileName, refToken: c.ref_token })
+    } catch { rep.blocked.push('template_needs_parameters'); continue }
     const rows = await repo.claim(c.id, c.batch_size, env.phoneNumberId)
     if (rows.length && rows[0].blocked) { rep.blocked.push(rows[0].blocked); continue }
 
@@ -64,7 +80,7 @@ export async function runCampaignWorker(repo: CampaignRepo, env: GraphEnv, f: ty
         const group = pending.slice(i, i + PARALLEL)
         if (stop || now() > deadline - SEND_TIMEOUT_MS) { unsent.push(...pending.slice(i).map(r => r.client_ref!)); break }
         await Promise.all(group.map(async r => {
-          const res = await sendMessage(env, { phoneDigits: r.phone!.replace(/^\+/, '') }, templateSendPayload(tpl.name, tpl.language), f, SEND_TIMEOUT_MS)
+          const res = await sendMessage(env, { phoneDigits: r.phone!.replace(/^\+/, '') }, payload, f, SEND_TIMEOUT_MS)
           try {
             if (res.state === 'accepted') { await repo.finish(r.client_ref!, res.wamid, 'accepted', null, null); rep.sent++ }
             else if (res.state === 'failed') {
