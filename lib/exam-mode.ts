@@ -133,3 +133,38 @@ export function examSentenceForUniversities(unis: ReadonlyArray<{ id: string; na
 /** True only when the record's examMode equals the confirmed value for that university. */
 export const isExamModeConfirmed = (u: Pick<University, 'id' | 'examMode'>) =>
   CONFIRMED_EXAM_MODE[u.id] !== undefined && CONFIRMED_EXAM_MODE[u.id] === u.examMode
+
+/**
+ * B7b (2026-11-28). What a per-university template may say about exams.
+ * - 'centre': examMode 'Exam Centre' (VIT, BITS; both confirmed). EXAM_CENTRE_LINE.
+ * - 'fromHome': confirmed 'Online' and in CONFIRMED_FROM_HOME. The only tier that
+ *   may say "from home", "no exam centre visit" or "no campus visits".
+ * - 'online': confirmed 'Online', location not stated. EXAM_ONLINE_LINE, with no
+ *   from-home, webcam or campus-visit claim.
+ * - 'unverified': UNVERIFIED_EXAM_MODE (B7). EXAM_MODE_COUNSELLOR_LINE.
+ * - 'unrecorded': everyone else. The record carries the importer default
+ *   examMode 'Online', which nobody has checked. EXAM_MODE_NEUTRAL_LINE.
+ * examMode in lib/data.ts is never changed by this; rendering decides here.
+ */
+export type ExamTier = 'centre' | 'fromHome' | 'online' | 'unverified' | 'unrecorded'
+
+export function examTier(u: Pick<University, 'id' | 'examMode'>): ExamTier {
+  if (isExamCentre(u)) return 'centre'
+  if (UNVERIFIED_EXAM_MODE.has(u.id)) return 'unverified'
+  if (isExamModeConfirmed(u)) return CONFIRMED_FROM_HOME.has(u.id) ? 'fromHome' : 'online'
+  return 'unrecorded'
+}
+
+/** No confirmed exam mode: the template states none. */
+export const isExamModeUnknown = (u: Pick<University, 'id' | 'examMode'>) => {
+  const t = examTier(u)
+  return t === 'unverified' || t === 'unrecorded'
+}
+
+/** The line a template prints in place of an exam mode it does not know. */
+export const examUnknownLine = (u: Pick<University, 'id'>) =>
+  UNVERIFIED_EXAM_MODE.has(u.id) ? EXAM_MODE_COUNSELLOR_LINE : EXAM_MODE_NEUTRAL_LINE
+
+export const isExamFromHome = (u: Pick<University, 'id' | 'examMode'>) => examTier(u) === 'fromHome'
+
+export const EXAM_ONLINE_LINE = 'Exams are online.'

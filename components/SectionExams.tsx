@@ -1,6 +1,6 @@
 import type { University } from '@/lib/data'
 import { ClipboardList, BookOpen, Briefcase } from 'lucide-react'
-import { isExamCentre, EXAM_CENTRE_LINE, isExamModeUnverified, EXAM_MODE_COUNSELLOR_LINE } from '@/lib/exam-mode'
+import { isExamCentre, EXAM_CENTRE_LINE, isExamModeUnknown, examUnknownLine, isExamFromHome, EXAM_ONLINE_LINE } from '@/lib/exam-mode'
 
 interface Props {
   u: University
@@ -16,11 +16,14 @@ export default function SectionExams({ u, program, cleanName }: Props) {
     {
       icon: ClipboardList,
       label: 'Exam Mode',
-      // B7 (2026-11-28): no mode is printed where the university's pages do not state one.
-      desc: isExamModeUnverified(u)
-        ? EXAM_MODE_COUNSELLOR_LINE
-        : isOnline
+      // B7 / B7b (2026-11-28): no mode is printed without a confirmed record,
+      // and "from home" only where the confirmed source says so.
+      desc: isExamModeUnknown(u)
+        ? examUnknownLine(u)
+        : isExamFromHome(u)
         ? 'Online proctored examinations from home. No exam centre visit required.'
+        : isOnline && !isExamCentre(u)
+        ? EXAM_ONLINE_LINE
         : isExamCentre(u)
           ? `${EXAM_CENTRE_LINE} Confirm your nearest centre with the university before enrolling.`
           : isAssignment
