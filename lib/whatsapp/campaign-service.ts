@@ -9,7 +9,7 @@
 // Audit entries carry ids and counts, never phone numbers or message text.
 import { can, type Action, type Actor } from './access'
 import type { CampaignRepo, CampaignRow, DraftPatch, NumberStatus, Preview, RecipientState, Stats } from './campaign-repo'
-import { createTemplate, draftComponents, listTemplates, previewText, validateDraft, accountLimits, needsParameters, type TemplateDraft, type AccountLimits } from './graph-templates'
+import { listTemplates, previewText, accountLimits, needsParameters, type AccountLimits } from './graph-templates'
 import type { GraphEnv } from './graph'
 import { parseRates } from './spend'
 
@@ -214,22 +214,8 @@ export async function syncTemplates(repo: CampaignRepo, actor: Actor | null, env
   return { ok: true, synced: r.templates.length }
 }
 
-export async function submitTemplate(repo: CampaignRepo, actor: Actor | null, env: GraphEnv, f: typeof fetch, d: TemplateDraft): Promise<Result<{ status: string; category: string }>> {
-  const g = gate(actor, 'template_submit'); if (g) return g
-  const draft: TemplateDraft = {
-    name: String(d?.name ?? '').trim(), language: String(d?.language ?? ''), category: d?.category,
-    header: typeof d?.header === 'string' ? d.header : undefined, body: String(d?.body ?? ''), footer: typeof d?.footer === 'string' ? d.footer : undefined,
-    buttons: Array.isArray(d?.buttons) ? d.buttons.slice(0, 11).map(b => b?.type === 'URL' ? { type: 'URL' as const, text: String(b.text ?? ''), url: String((b as { url?: string }).url ?? '') } : { type: 'QUICK_REPLY' as const, text: String(b?.text ?? '') }) : [],
-  }
-  const invalid = validateDraft(draft)
-  if (invalid) return bad(invalid)
-  const r = await createTemplate(env, draft, f)
-  if (!r.ok) return bad(`Meta did not accept it: ${r.error}`)
-  // Meta may move a template to another category; store what Meta says.
-  await repo.saveTemplate({ meta_id: r.meta_id, name: draft.name, language: draft.language, category: r.category, status: r.status, components: draftComponents(draft), reason: null, quality: null, submitted_by: actor!.id })
-  await repo.audit(actor!.id, 'template_submit', r.meta_id, { name: draft.name, category: r.category })
-  return { ok: true, status: r.status, category: r.category }
-}
+// Template submit, edit, delete and header files live in template-service.ts.
+export { submitTemplate, editTemplateDraft, removeTemplate, attachHeaderFile, uploadFile, listFiles } from './template-service'
 
 // ── Campaigns ───────────────────────────────────────────────────────────────
 
@@ -291,7 +277,7 @@ export async function updateDraft(repo: CampaignRepo, actor: Actor | null, id: s
       if (!t) return bad('Unknown template.')
       if (t.category !== 'MARKETING') return bad('Referral messages are marketing. Choose a Marketing template.')
       if (t.status !== 'APPROVED') return bad('Meta has not approved this template yet.')
-      const np = needsParameters(t.components); if (np) return bad(np)
+      const np = needsParameters(t.components, !!t.header_file_id); if (np) return bad(np)
       patch.template_id = t.id
     }
   }
@@ -412,7 +398,7 @@ export async function approveCampaign(repo: CampaignRepo, actor: Actor | null, i
   if (!c) return bad('Campaign not found.')
   const t = c.template_id ? await repo.getTemplate(c.template_id) : null
   if (!t || t.category !== 'MARKETING') return bad('Referral messages are marketing. Choose a Marketing template.')
-  const np = needsParameters(t.components); if (np) return bad(np)
+  const np = needsParameters(t.components, !!t.header_file_id); if (np) return bad(np)
   const why = await repo.approve(id, actor!.id, Math.floor(Number(i.seenEligible)), i.seenTemplate)
   if (why) return bad(BLOCK_TEXT[why] ?? why)
   await repo.audit(actor!.id, 'campaign_approve', id, { eligible: Math.floor(Number(i.seenEligible)), template_id: i.seenTemplate })
