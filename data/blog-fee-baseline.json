@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-27",
+  "updatedAt": "2026-11-28",
   "note": "Per-slug count of unverified blog fee figures (MISMATCH+SUPPRESSED+ORPHAN+UNRESOLVED). Ratchet blocks any per-slug increase and any figure in a new post. See scripts/check-blog-fees.mjs. Bumped 2026-08-07 for v2b extractor (tightened parenthetical + bucket-range rules; a few previously-MATCH rows now UNRESOLVED).",
-  "totalUnverified": 1861,
+  "totalUnverified": 1800,
   "perSlug": {
     "amity-online-mba-hr-worth-it": 2,
     "is-online-mba-worth-it-2026": 0,
