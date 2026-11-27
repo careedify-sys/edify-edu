@@ -1,5 +1,12 @@
 # Fix log
 
+## 2026-11-28 · B2: Adichunchanagiri officialUrl for schema sameAs (branch fix/b1-provenance)
+
+- **What:** `officialUrl: 'https://acuonline.edu.in'` on adichunchanagiri-university-online, from `audits/verify/b2-official-urls-2026-11-28.md` (CONFIRMED: acu.edu.in links its "Online Programmes" to the portal). No `feeVerifiedOn`: B2 checked the domain, not the fee, and Q31 still holds the fee open.
+- **Why:** the profile's CollegeOrUniversity JSON-LD emits `sameAs` only from `officialUrl` (A2), so ACU had no entity link. The value is used by schema only; no template renders `University.officialUrl` as visible copy.
+- **Sheet was stale on 3 of 4:** B2 marked BITS WILP, Dr. D.Y. Patil Vidyapeeth and Shoolini "absent", but origin/main already carries the same three URLs (BITS in B3 batch 1, 0703326, 18 Nov; Shoolini in B3 batch 2, 0a33af4, 19 Nov; all from the 18 Nov verify sheets). They were left unchanged. check-official-urls moves 29 to 30 portals, not 23 to 27: the sheet's 23 predates those additions.
+- **DSU left as is:** B2 marks dsuonline.com UNVERIFIED (Cloudflare blocked the main-domain check). The record already carries it from the 18 Nov sheet; not removed here, filed by the coordinator as Q80.
+
 ## 2026-11-28 · A6: 28 Nov guard check, clicks half PASS
 
 - **What:** weekly Search Console clicks on pages not containing /tools (Windsor, ISO weeks): W45 144, W46 187, W47 308, W48 partial 165 (23-25 Nov).

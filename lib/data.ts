@@ -8712,6 +8712,9 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     id: 'adichunchanagiri-university-online',
     logo: '/logos/university_logos/adichunchanagiri-university-online.webp',
     name: 'Adichunchanagiri University Online',
+    // B2 (2026-11-28): acu.edu.in links "Online Programmes" here. Domain only;
+    // no feeVerifiedOn, because B2 checked the domain, not the fee (Q31 open).
+    officialUrl: 'https://acuonline.edu.in',
     abbr: 'AU',
     city: 'B G Nagara',
     state: 'Karnataka',
