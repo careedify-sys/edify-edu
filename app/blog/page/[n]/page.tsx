@@ -20,9 +20,9 @@ export function generateMetadata({ params }: { params: { n: string } }): Metadat
   const url = `https://edifyedu.in/blog/page/${page}`
   return {
     title: `Online Degree Guides and Reviews, Page ${page} of ${totalPages}`,
-    description: `Page ${page} of the Edify blog archive: older guides and university reviews on online MBA, MCA, BBA and BCA in India, checked against UGC-DEB, NAAC and NIRF data.`,
+    description: `Page ${page} of the edifyedu.in blog archive: older guides and university reviews on online MBA, MCA, BBA and BCA in India, checked against UGC-DEB, NAAC and NIRF data.`,
     alternates: { canonical: url },
-    openGraph: { url, type: 'website', title: `Edify Blog, Page ${page}` },
+    openGraph: { url, type: 'website', title: `edifyedu.in Blog, Page ${page}` },
   }
 }
 

@@ -75,7 +75,7 @@ export async function generateMetadata(
   const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
   const nirfHook = nirfLabel ? ` ${nirfLabel},` : ''
   // CTR-tuned title (2026-05-25): lead with brand, fee number first, NAAC + bracket year hook.
-  // Pattern: "{Uni} Online: ₹{fee} Fees, NAAC {grade} [{year} Review] | EdifyEdu"
+  // Pattern: "{Uni} Online: ₹{fee} Fees, NAAC {grade} [{year} Review] | edifyedu.in"
   // Facts first: the fee and grade earn the click, the brand suffix does not.
   // clampTitle keeps the suffix and cuts the body, which left "Courses" alone.
   const head = `${brandName} ${onlinePrefix(u.id)}${year}: Courses`
@@ -172,7 +172,7 @@ function UniversitySchema({ u }: { u: NonNullable<ReturnType<typeof getUniversit
         '@id': `https://edifyedu.in/universities/${u.id}#university`,
         name: u.name,
         url: `https://edifyedu.in/universities/${u.id}`,
-        // No telephone here: the only number we have is Edify's own, and on
+        // No telephone here: the only number we have is edifyedu.in's own, and on
         // this node it would merge into the university entity (audit S2,
         // 2026-11-16). sameAs points at the official portal where we hold one
         // that belongs to this university alone (see schemaSameAs).

@@ -616,7 +616,7 @@ export default async function CouponDetailPage({ params }: { params: any }) {
 
         {/* Trust footer */}
         <div className="rounded-xl border border-slate-200 bg-slate-50 p-5 text-center">
-          <p className="text-xs text-slate-500">EdifyEdu earns zero referral commissions from {page.universityName}. All coupon information is verified against official university sources. Updated monthly.</p>
+          <p className="text-xs text-slate-500">edifyedu.in earns zero referral commissions from {page.universityName}. All coupon information is verified against official university sources. Updated monthly.</p>
         </div>
 
         {/* Buried legal disclaimer */}

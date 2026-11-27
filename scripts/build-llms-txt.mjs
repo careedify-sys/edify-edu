@@ -135,7 +135,7 @@ const featured = UNIVERSITIES
   .slice(0, 25)
 
 const L = []
-L.push('# Edify Education')
+L.push('# edifyedu.in')
 L.push(`> India's independent online degree comparison platform. We cover ${CLAIM_TEXT} UGC-DEB universities offering online MBA, MCA, BBA, BCA, BA, MA, B.Com, M.Com and MSc programmes.`)
 L.push('> Where a fee table shows a \'Fees checked\' date, that is when the fee was compared with the university\'s own fee page. No paid university partnerships and no referral commissions.')
 L.push('')
@@ -179,7 +179,7 @@ L.push(`- Percentage to GPA calculator: ${BASE}/tools/percentage-to-gpa`)
 L.push(`- Fee EMI calculator: ${BASE}/tools/emi-calculator`)
 L.push('')
 L.push('## About')
-L.push('Edify Education is an independent research portal for UGC-DEB approved online degrees in India.')
+L.push('edifyedu.in is an independent research portal for UGC-DEB approved online degrees in India.')
 L.push('We accept no payment from any university and we do not sell ranking positions.')
 L.push('Rankings cite NIRF with the category named; accreditation cites NAAC with its validity date.')
 L.push('Contact: hello@edifyedu.in')

@@ -4,7 +4,7 @@
 //
 // Why it exists. A live Perplexity test on 2026-09-28 built its "best online
 // MBA India" recommendation table from a competitor, citing them about ten
-// times, and cited EdifyEdu once for the verification steps only. The site held
+// times, and cited edifyedu.in once for the verification steps only. The site held
 // better data than that competitor but published none of it in a shape a model
 // could lift: /universities is 1.4MB of cards with zero table rows, and the
 // programme hubs rendered their university lists as linked cards inside a
@@ -185,7 +185,7 @@ export default function ProgrammeComparisonTable({
       <p className="text-xs text-ink-3 mt-4 leading-relaxed">
         Sources: UGC Distance Education Bureau programme register for entitlement, the NAAC
         accreditation database for grades and validity dates, and NIRF India Rankings for category
-        ranks. EdifyEdu takes no commission from any university listed and does not sell ranking
+        ranks. edifyedu.in takes no commission from any university listed and does not sell ranking
         positions.{' '}
         <Link href="/methodology" className="text-amber hover:underline no-underline">
           How we verify this

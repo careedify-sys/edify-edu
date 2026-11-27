@@ -68,7 +68,7 @@ export async function generateMetadata(
 
   // Pairs added in the AI-citation sprint carry the brand as "edifyedu.in";
   // the existing pairs keep their published wording (flagged, not changed).
-  const brand = config.derived || config.brandEdifyeduIn ? 'edifyedu.in' : 'EdifyEdu'
+  const brand = config.derived || config.brandEdifyeduIn ? 'edifyedu.in' : 'edifyedu.in'
   const title = `${nameA} vs ${nameB} Online ${prog} ${year}: Fees and Verdict | ${brand}`
   const feeA = getProgramFee(uA, prog)
   const feeB = getProgramFee(uB, prog)
@@ -213,7 +213,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
             <>
           Independent, commission-free comparison of two popular online {prog} programmes.
           We verified NIRF ranks, NAAC grades, and fee structures directly from official sources.
-          EdifyEdu takes no referral commissions from either university.
+          edifyedu.in takes no referral commissions from either university.
             </>
           )}
         </p>
@@ -387,7 +387,7 @@ export default async function PairPage({ params }: { params: Promise<{ pair: str
         <div className="rounded-xl bg-gradient-to-r from-slate-900 to-slate-700 p-6 text-center text-white mb-8">
           <h2 className="text-xl font-bold mb-2">Still deciding?</h2>
           <p className="text-slate-300 text-sm mb-4">
-            Edify compares public UGC/NAAC/NIRF data. No paid rankings, no referral commissions.
+            edifyedu.in compares public UGC/NAAC/NIRF data. No paid rankings, no referral commissions.
             Talk to a counsellor for personalised guidance.
           </p>
           <div className="flex gap-3 justify-center flex-wrap">

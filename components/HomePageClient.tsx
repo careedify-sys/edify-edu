@@ -186,7 +186,7 @@ export default function HomePageClient({ cardFees }: { cardFees: CardFees }) {
             ))}
           </div>
 
-          {/* Edify - The Hero Card */}
+          {/* edifyedu.in - The Hero Card */}
           <div className="p-8 rounded-[var(--r-md)] relative overflow-hidden transform md:-translate-y-4 transition-all hover:-translate-y-6" style={{ background:'var(--navy)', border:'none', boxShadow:'var(--shadow-md)' }}>
             <div className="absolute -right-12 -top-12 w-40 h-40 bg-blue-500 rounded-full blur-[60px] opacity-20"></div>
             <div className="flex items-center gap-3 mb-8 relative z-10">
@@ -420,7 +420,7 @@ export default function HomePageClient({ cardFees }: { cardFees: CardFees }) {
         </div>
       </section>
 
-      {/* ── Edify Trust Section ── */}
+      {/* ── edifyedu.in Trust Section ── */}
       <section style={{ padding:'0 0 64px', background:'var(--bg)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <EdifyTrust />
@@ -453,12 +453,12 @@ export default function HomePageClient({ cardFees }: { cardFees: CardFees }) {
               {
                 name:'Subham Rana',
                 program:'Online MBA',
-                review:'My experience was outstanding with Edify Learning. They provide the best college options and mentorship to help you make the right decision.',
+                review:'My experience was outstanding with edifyedu.in Learning. They provide the best college options and mentorship to help you make the right decision.',
               },
               {
                 name:'Sree Vardhan',
                 program:'Online Programme',
-                review:'My experience with Edify Learning was excellent and fully transparent. There was no bias toward any university, ensuring honest guidance. The team provided clear, personalized support throughout the process. Their interview preparation significantly boosted my confidence.',
+                review:'My experience with edifyedu.in Learning was excellent and fully transparent. There was no bias toward any university, ensuring honest guidance. The team provided clear, personalized support throughout the process. Their interview preparation significantly boosted my confidence.',
               },
               {
                 name:'AD Photography',
@@ -512,15 +512,15 @@ export default function HomePageClient({ cardFees }: { cardFees: CardFees }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'VideoObject',
-          'name': 'What is EdifyEdu.in? Compare 125+ UGC Approved Online Universities India 2026',
-          'description': 'EdifyEdu compares 125+ UGC DEB approved online universities in India. No paid rankings. All data sourced from official NIRF, NAAC, and UGC portals.',
+          'name': 'What is edifyedu.in? Compare 125+ UGC Approved Online Universities India 2026',
+          'description': 'edifyedu.in compares 125+ UGC DEB approved online universities in India. No paid rankings. All data sourced from official NIRF, NAAC, and UGC portals.',
           'thumbnailUrl': 'https://img.youtube.com/vi/Waj6Ph6baVg/maxresdefault.jpg',
           'uploadDate': '2026-05-27T00:00:00+05:30',
           'embedUrl': 'https://www.youtube.com/embed/Waj6Ph6baVg',
           'contentUrl': 'https://www.youtube.com/watch?v=Waj6Ph6baVg',
           'publisher': {
             '@type': 'Organization',
-            'name': 'EdifyEdu',
+            'name': 'edifyedu.in',
             'url': 'https://edifyedu.in',
           },
         })}}/>

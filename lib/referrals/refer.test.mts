@@ -61,6 +61,8 @@ await test('public referral text names no amount and no payment deadline (Q55/Q5
   const page = fs.readFileSync('app/refer/page.tsx', 'utf8') + fs.readFileSync('app/refer/ReferForm.tsx', 'utf8')
   for (const [name, text] of [['terms', [...REFERRAL_TERMS, ...REFERRAL_PRIVACY].join(' ')], ['auto-reply seeds', seeds], ['refer page', page]] as const) {
     assert.doesNotMatch(text, /(₹|Rs\.?\s?\d|INR\s?\d|\b\d+\s*(calendar\s+)?days?\b)/i, name)
+    // Brand name is "edifyedu.in" (Rishi, 28 Nov): never Edify, EdifyEdu or Edify Education.
+    assert.doesNotMatch(text, /\bEdify(Edu)?\b|Edify Education/, name)
   }
   assert.ok(seeds.includes("Thank you for your interest in our referral programme. Our education counsellor will connect with you shortly to explain the referral process, applicable benefits and eligibility details."))
 })

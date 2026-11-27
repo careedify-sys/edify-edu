@@ -118,7 +118,7 @@ export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
             Online MBA Courses in India 2026: {mbaUnis.length} UGC-Approved Universities Compared
           </h1>
           <p className="text-slate-400 text-base max-w-xl mx-auto mb-6">
-            Independent comparison by EdifyEdu. No paid rankings. No referral commissions. NIRF 2025 data verified.
+            Independent comparison by edifyedu.in. No paid rankings. No referral commissions. NIRF 2025 data verified.
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-6">
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
@@ -160,7 +160,7 @@ export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
         </p>
         <h2 className="text-2xl font-bold mb-4" style={{ color: '#0B1533' }}>How We Ranked the Best Online MBA Programmes in India 2026</h2>
         <p className="text-sm text-slate-600 leading-relaxed mb-4">
-          EdifyEdu is independent. We earn zero commissions from any university listed here. Every fee, NIRF rank, and accreditation you see has been verified against official UGC-DEB, NAAC, and university portals. Our ranking methodology prioritises data you can verify yourself, not marketing claims.
+          edifyedu.in is independent. We earn zero commissions from any university listed here. Every fee, NIRF rank, and accreditation you see has been verified against official UGC-DEB, NAAC, and university portals. Our ranking methodology prioritises data you can verify yourself, not marketing claims.
         </p>
         <p className="text-sm text-slate-600 leading-relaxed mb-4">
           Under UGC 2024 regulations, universities offering online MBA programmes must hold UGC-DEB entitlement, AICTE recognition (for deemed universities), and either NAAC accreditation of 3.01 CGPA or higher, or a top-100 NIRF ranking in at least 2 of the last 3 assessment cycles. Universities must also develop at least 60% of self-learning materials in-house.
@@ -317,7 +317,7 @@ export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
         </div>
       </section>
 
-      {/* Why EdifyEdu */}
+      {/* Why edifyedu.in */}
       <section className="max-w-3xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold mb-4" style={{ color: '#0B1533' }}>
           <Shield size={22} className="inline-block mr-2 text-amber-500" />
@@ -327,7 +327,7 @@ export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
           Most online MBA comparison platforms earn referral commissions from the universities they recommend. This creates conflicts of interest that affect which universities they highlight, how they describe placement support, whether they share negative student feedback, and how they build their "top 10" rankings.
         </p>
         <p className="text-sm text-slate-600 leading-relaxed mb-4">
-          EdifyEdu earns zero referral commissions. Our revenue comes from independent counselling fees only, paid by students, not universities. This means we can recommend <Link href="/universities/ignou-online/mba" className="text-blue-600 underline">IGNOU at Rs 66,000</Link> over Amity at Rs 2.07L when budget matters. We can share paraphrased Reddit and Quora negative feedback. We can tell you when an online MBA is the wrong choice for your career goal. We compare universities outside our platform when relevant.
+          edifyedu.in earns zero referral commissions. Our revenue comes from independent counselling fees only, paid by students, not universities. This means we can recommend <Link href="/universities/ignou-online/mba" className="text-blue-600 underline">IGNOU at Rs 66,000</Link> over Amity at Rs 2.07L when budget matters. We can share paraphrased Reddit and Quora negative feedback. We can tell you when an online MBA is the wrong choice for your career goal. We compare universities outside our platform when relevant.
         </p>
         <p className="text-sm text-slate-600 leading-relaxed">
           Every fee, NIRF rank, NAAC grade, and accreditation on this page is verified against official sources. If a number changes, we update it. If a university loses accreditation, we flag it. Independence is not a marketing claim for us. It is our business model.

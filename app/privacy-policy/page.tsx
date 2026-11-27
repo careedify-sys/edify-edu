@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Privacy Policy: Edify | edifyedu.in' },
-  description: 'Privacy Policy for EdifyEdu.in: how we collect, use and protect your personal data. Compliant with India\'s DPDP Act 2023.',
+  title: { absolute: 'Privacy Policy: edifyedu.in | edifyedu.in' },
+  description: 'Privacy Policy for edifyedu.in: how we collect, use and protect your personal data. Compliant with India\'s DPDP Act 2023.',
   alternates: { canonical: 'https://edifyedu.in/privacy-policy' },
   robots: { index: true, follow: true },
 }
@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
           <p className="text-xs text-ink-3 mb-8">Last updated: {lastUpdated}</p>
 
           <p className="text-ink-2 leading-relaxed">
-            Edify ("we", "our", or "us") operates <strong>edifyedu.in</strong>, an independent platform for comparing UGC DEB approved online universities in India. This Privacy Policy explains what personal data we collect, how we use it, and your rights under the <strong>Digital Personal Data Protection Act, 2023 (DPDP Act)</strong>.
+            edifyedu.in ("we", "our", or "us") operates <strong>edifyedu.in</strong>, an independent platform for comparing UGC DEB approved online universities in India. This Privacy Policy explains what personal data we collect, how we use it, and your rights under the <strong>Digital Personal Data Protection Act, 2023 (DPDP Act)</strong>.
           </p>
           <p className="text-ink-2 leading-relaxed">
             By using edifyedu.in, you consent to the practices described below.
@@ -100,7 +100,7 @@ export default function PrivacyPolicyPage() {
             <li><strong>Cloudflare</strong> carries traffic to our website, including the messages WhatsApp forwards to us, on its way to Vercel.</li>
           </ul>
           <p className="text-ink-2 mt-3">
-            Only Edify&apos;s counselling team can see your WhatsApp conversation. We do not share it with universities without your explicit consent.
+            Only edifyedu.in&apos;s counselling team can see your WhatsApp conversation. We do not share it with universities without your explicit consent.
           </p>
 
           <h2 className="font-bold text-navy mt-8 mb-3">4. Data Retention</h2>
@@ -134,7 +134,7 @@ export default function PrivacyPolicyPage() {
 
           <h2 className="font-bold text-navy mt-8 mb-3">8. Children's Privacy</h2>
           <p className="text-ink-2">
-            Edify is not directed to children under 18. We do not knowingly collect data from minors. If you believe we have collected data from a minor, contact us immediately at hello@edifyedu.in.
+            edifyedu.in is not directed to children under 18. We do not knowingly collect data from minors. If you believe we have collected data from a minor, contact us immediately at hello@edifyedu.in.
           </p>
 
           <h2 className="font-bold text-navy mt-8 mb-3">9. Security</h2>

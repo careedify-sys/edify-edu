@@ -71,7 +71,7 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
       category: 'Online Education',
       ...(offer?.['@type'] === 'Offer' && coupon ? {
         priceValidUntil: `${year}-12-31`,
-        description: `EdifyEdu Coupon: ${coupon.code} - ${coupon.savings}`,
+        description: `edifyedu.in Coupon: ${coupon.code} - ${coupon.savings}`,
       } : {}),
     },
     hasCourseInstance: {

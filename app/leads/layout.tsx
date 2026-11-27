@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import PrivateAreaGuard from './PrivateAreaGuard';
 
 export const metadata: Metadata = {
-  title: 'Leads CRM · Edify',
+  title: 'Leads CRM · edifyedu.in',
   robots: { index: false, follow: false },
 };
 

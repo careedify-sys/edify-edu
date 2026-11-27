@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://edifyedu.in/guides' },
   openGraph: {
-    title: 'Online Degree Guides India 2026: Honest Answers | Edify',
+    title: 'Online Degree Guides India 2026: Honest Answers | edifyedu.in',
     description: 'Straight answers on online degrees in India. Is it valid for govt jobs? How to choose? UGC DEB explained. No paid content.',
     url: 'https://edifyedu.in/guides',
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Online Degree Guides India 2026: Honest Answers | Edify',
+    title: 'Online Degree Guides India 2026: Honest Answers | edifyedu.in',
     description: 'Straight answers on online MBA, MCA, BBA in India. No fluff, no paid placements.',
   },
 }

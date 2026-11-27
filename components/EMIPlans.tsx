@@ -16,11 +16,11 @@ export default function EMIPlans({ u, pd, program }: Props) {
   if (programmeEmiFrom(u, program) <= 0) return null
 
   // A published plan table (feePlans) already carries the university's own
-  // instalments and EMI. The fee / 6, 12, 24 grid below is Edify arithmetic and
+  // instalments and EMI. The fee / 6, 12, 24 grid below is edifyedu.in arithmetic and
   // contradicted it (Alliance 7,250 under a published 8,700 minimum over 20
   // months; JIIT 7,292 beside a published 5,850), so it is skipped there.
   // B3 batch 2 (2026-11-18): the grid is gone for every university. It was
-  // u.feeMin / 6, 12 and 24, Edify arithmetic no university publishes (the
+  // u.feeMin / 6, 12 and 24, edifyedu.in arithmetic no university publishes (the
   // Amity, Uttaranchal, Shoolini and Adichunchanagiri sheets each flag it).
 
   return (

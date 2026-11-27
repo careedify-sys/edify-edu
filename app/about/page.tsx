@@ -4,20 +4,20 @@ import Image from 'next/image'
 import { Shield, Award, Users, Phone, Mail, CheckCircle, XCircle, Database, BarChart2 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Edify: India\'s Independent Online Education Guide',
+  title: { absolute: 'About edifyedu.in: Independent Online Degree Comparison' },
   description: 'edifyedu.in is India\'s independent guide to UGC DEB approved online degrees. No paid rankings. No university affiliations. We help students compare 125+ universities honestly.',
-  keywords: 'about edify, independent education guide india, ugc deb approved universities, honest online degree comparison, best online mba colleges in india, online mba india, nirf ranked online universities, naac a++ online university, online mba for working professionals, top 10 mba colleges in india',
+  keywords: 'about edifyedu.in, independent education guide india, ugc deb approved universities, honest online degree comparison, best online mba colleges in india, online mba india, nirf ranked online universities, naac a++ online university, online mba for working professionals, top 10 mba colleges in india',
   alternates: { canonical: 'https://edifyedu.in/about' },
   openGraph: {
-    title: 'About Edify: India\'s Independent Online Education Guide',
+    title: 'About edifyedu.in: Independent Online Degree Comparison',
     description: 'No paid rankings. No university affiliations. We help students compare 125+ UGC DEB approved online universities honestly.',
     url: 'https://edifyedu.in/about',
     type: 'website',
-    images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: 'About Edify' }],
+    images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: 'About edifyedu.in' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Edify: India\'s Independent Online Education Guide',
+    title: 'About edifyedu.in: Independent Online Degree Comparison',
     description: 'No paid rankings. No university affiliations. Honest comparison of 125+ UGC DEB approved online universities.',
   },
 }
@@ -43,7 +43,7 @@ const aboutFaqSchema = {
     {
       '@type': 'Question',
       name: 'Is edifyedu.in affiliated with any university?',
-      acceptedAnswer: { '@type': 'Answer', text: 'No. Edify is fully independent. We are not affiliated with, commissioned by, or paid by any university. All rankings and comparisons are based solely on official NIRF and NAAC data.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'No. edifyedu.in is fully independent. We are not affiliated with, commissioned by, or paid by any university. All rankings and comparisons are based solely on official NIRF and NAAC data.' },
     },
     {
       '@type': 'Question',
@@ -53,7 +53,7 @@ const aboutFaqSchema = {
     {
       '@type': 'Question',
       name: 'Does edifyedu.in take money from universities for placement or ranking?',
-      acceptedAnswer: { '@type': 'Answer', text: 'No. Edify maintains a strict zero-paid-ranking policy. Universities cannot pay to be ranked higher, featured prominently, or recommended. All placements are purely based on NIRF rank and NAAC grade.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'No. edifyedu.in maintains a strict zero-paid-ranking policy. Universities cannot pay to be ranked higher, featured prominently, or recommended. All placements are purely based on NIRF rank and NAAC grade.' },
     },
     {
       '@type': 'Question',
@@ -79,7 +79,7 @@ export default function AboutPage() {
             <Shield className="w-3 h-3" /> Independent · Unbiased · Free
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
-            About Edify
+            About edifyedu.in
           </h1>
           <p className="text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
             India&apos;s first independent research portal for UGC DEB approved online degrees.
