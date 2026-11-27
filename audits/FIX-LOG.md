@@ -49,6 +49,28 @@
   check-blog-fees 1950 unchanged, check-protected-pages OK, tag balance unchanged, JSON round-trip 431 ok.
 - **Open:** Christ's own MBA JSON still prints "Rs 60,000 to Rs 2,00,000" (own page, Christ lists no MBA); the
   Mysore pd.fees string waits for a labelled portal fee or a decision on the baseline.
+- **Round 2 (QA FAIL on F1, F2, F3, audits/qa/2026-11-27-b3-batch-16-premerge.md):**
+  - F1, why: peer16 attributed a figure to the university named earlier in the same sentence, so a bare "Fee is ..."
+    under a "**vs X:**" header fell back to the page's own university and passed. The detector now attributes such
+    sentences to the header (or, when the header names no alias, as in "Manipal Online MBA", to the first university
+    the block names), knows SSODL and ADB, and reads "Rs 2.5-3 lakh" as a lakh range. Fixed detector, peer quotes
+    differing from getExactFee (Christ's unbuilt own MBA JSON excluded): ab8f561 160, c9924b2 12, now 3. The 3 left
+    are own figures read as a peer's (BITS 3,12,400, CU 1,75,125, SRM Sikkim 1,10,000). Fixed: LPU in Amity IT, CU
+    marketing, Shoolini digital-marketing and IT management; MUJ in CU marketing and SMU finance; NMIMS in CU finance,
+    CU banking and BITS finance (a 1,96,000 endpoint shown as the whole fee); MAHE "around Rs 2.5-3 lakh" in Amity IT.
+  - F2, why: round 1 changed peer figures but left comparatives that were only true for the old figures, and some were
+    already false. New detector (.b8tmp/cmp16.ts plus cmprel16.ts) lists every price-comparative sentence that names
+    a peer and classes the getExactFee full ranges as strictly ordered, overlapping, or one side unpublished.
+    Overlapping or unpublished: ab8f561 107, c9924b2 104, now 11, and the 11 are not price claims (NIRF rank, NAAC
+    grade, "Lucknow" as a place, CU's "premium tier" name). Strictly ordered rows were read for direction: 4 more were
+    false or derived ratios and went ("nearly half the BITS Pilani WILP fee", "less than one-fifth of SSODL's fee",
+    "about one-quarter the BITS Pilani WILP fee", MUJ listed as premium above Chitkara). The comparative was deleted,
+    never recomputed; 10 CU "budget under Rs 1.2 lakh, LPU at lower fee" alternatives were removed (LPU's lowest
+    published fee is 1,46,240). 62 JSON files, 108 edits.
+  - F3, why: in Next 14 a page's own openGraph or twitter object replaces the layout's, images included, so round 1
+    dropped og:image and twitter:image on bba/[spec] and bca/[spec]. All six child routes now carry
+    https://edifyedu.in/og.png in both objects, as the layout does; og:url stays unset rather than point at the
+    university page. The bba, bca and mca hubs and mca/[spec] had no og:image at base either and now have it.
 
 ## 2026-11-27 · B3 batch 15: Yenepoya MBA fee from the portal, Mysore 1,60,000 removed, derived fee comparisons in spec JSON, UPES spec fee range, Q59 rewritten as a mode question (branch fix/b3-batch-15)
 

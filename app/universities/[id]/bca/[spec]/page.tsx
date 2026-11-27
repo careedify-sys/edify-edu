@@ -63,8 +63,8 @@ export async function generateMetadata(
     description,
     // Own OG/Twitter, so this page stops inheriting the university layout's
     // description and its fee clause (B3 batch 16).
-    openGraph: { title, description, type: 'website' },
-    twitter: { card: 'summary', title, description },
+    openGraph: { title, description, type: 'website', images: [{ url: 'https://edifyedu.in/og.png', width: 1200, height: 630 }] },
+    twitter: { card: 'summary', title, description, images: ['https://edifyedu.in/og.png'] },
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/bca/${canonicalSlug}` },
     robots: { index: shouldIndexUniversity(u.id) && !isSpecNoindexed(u.id, 'bca', canonicalSlug), follow: true },
   }
