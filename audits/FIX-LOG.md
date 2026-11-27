@@ -1,5 +1,24 @@
 # Fix log
 
+## 2026-11-27 B3 batch 22: salary chunk 20c, generic role-salary tables in 20 posts
+
+Branch fix/b3-batch-22, from b90b5e9, rebased onto the batch 21 round 2 tip (33bae44). Scope: the 20 posts in the 20c chunk (the 8 frozen posts and 14 salary-meta posts excluded, re-checked against the refreshed scope file), ordered by GSC impressions. No title, seoTitle, h1Title or metaDescription changed. No allowlist entry added. updatedAt is 2026-11-27 on all 20.
+
+- **Why:** these tables printed generic salary ranges (Year 1 CTC, Year 5 CTC, 10-year potential, sector medians, tier ladders) that name no source a reader can check. No approved source (UGC, UGC-DEB, NAAC, NIRF, a university portal) publishes figures in this form, so they cannot be verified and are removed, not reworded.
+- **Unit of work:** a table was in scope when the salary scope file put at least one of its rows in the role-table class. The salary column was then removed from the whole table, so a few university or campus rows in the same table lost their (equally unsourced) figure too. That is why the drop is 420, not the 365 role-table figures in the chunk.
+- **What changed, by treatment:**
+  - Salary columns dropped, role, skills, employer, duration and entrance columns kept: 23 tables. Captions that named salary or CTC were reworded to what the table now shows (for example "B.Tech branches and top recruiters India 2026 (tier-1 college)").
+  - Salary rows dropped where the table compares factors, not roles: the fresher vs experienced MBA table and the exam path vs degree path table (2 rows each).
+  - Replaced with a short role list: the Bengaluru target-role table (7 roles).
+  - Removed, because nothing meaningful is left without the figures: 10 tables (pure salary ladders, tier matrices and ROI tables). Where the section needed a line, it carries "Salaries vary by employer, city and experience; check current postings and the employer's own pay data." (at most once per post). The commerce-jobs CA curve and MBA Finance tier tables went without the line: their intro sentences claimed an ICAI 2025 survey and NIRF reports as the source, which the tables did not match, so those sentences were rewritten instead ("NIRF publishes a median graduate salary for each ranked institute, so compare those figures for the institutes on your list.").
+  - Prose that pointed at a removed table was trimmed: "These are broad ranges pulled from publicly available placement data and job portals" (online-mba-salary), the tier-1 year-10 parenthetical (freshers), "of this matrix" (mba-scope).
+- **Left alone on purpose:**
+  - Government pay: the banking exam table in career-after-12th-commerce (SBI PO, IBPS, RBI, SEBI and NABARD Grade A) is the 20e class. The salary scope file classes the SEBI and NABARD rows role-table, but they are regulator pay scales, so the table stays whole.
+  - The arts career-goal table keeps its "Starting Salary" column because it carries the IAS pay figure; its 7 generic LPA cells read "Varies by employer".
+  - Tables with no role-table row (for example the online-MBA university outcome table and the fresher "Should you do" table) and all prose figures belong to other chunks and were not touched.
+- **Fee figures exposed:** dropping a salary cell removes the LPA context the fee scanner uses to exempt a row, so 44 fee cells in 5 tables became countable (check-blog-fees rose to 1993 before this fix). None resolves MATCH. Following the batch 21 rule, campus programmes (NLUs, IIM/XLRI/MDI/SP Jain/SPJIMR, IIT/NIT and private B.Tech, MBBS and other campus courses) now read "Not tracked (campus programme)"; the two online rows (Online BCA, Coursera plus bootcamp) read "Contact our counsellor". The commerce-jobs "Rs 25 to 30 lakh fees ... total investment is Rs 40 to 50 lakh" clause (unsourced campus fee plus a derived sum) became "its fees plus 2 years of foregone income make it a far larger investment". check-blog-fees 1948 -> 1945.
+- **Gates:** salary 2336 -> 1916 (-420); blog-fees 1945; fee 205; em-dash 227; check-blog-updated-at 20 posts dated; protected pages unchanged.
+
 ## 2026-11-27 B3 batch 21 round 2: QA fixes (audits/qa/2026-11-27-b3-batch-21-premerge.md)
 
 Branch fix/b3-batch-21, new commit on b90b5e9. No title, seoTitle, h1Title or metaDescription changed. No allowlist entry added.
