@@ -222,7 +222,7 @@ export default function MethodologyPage() {
         <section className="card p-6 md:p-8 mb-6">
           <h2 className="text-xl font-bold text-navy mb-3">Who pays us</h2>
           <p className="text-sm text-ink-2 mb-3 leading-relaxed">
-            No university pays EdifyEdu. We take no referral commission on an admission, we do not
+            No university pays edifyedu.in. We take no referral commission on an admission, we do not
             sell ranking positions or placement in any list, and no university has editorial input
             into what we publish about it.
           </p>

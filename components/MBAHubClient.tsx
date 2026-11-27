@@ -118,7 +118,7 @@ export default function MBAHubClient({ fees }: { fees: MbaHubFees }) {
             Online MBA Courses in India 2026: {mbaUnis.length} UGC-Approved Universities Compared
           </h1>
           <p className="text-slate-400 text-base max-w-xl mx-auto mb-6">
-            Independent comparison by EdifyEdu. No paid rankings. No referral commissions. NIRF 2025 data verified.
+            Independent comparison by edifyedu.in. No paid rankings. No referral commissions. NIRF 2025 data verified.
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-6">
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
