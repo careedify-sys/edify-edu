@@ -10,6 +10,7 @@ import RankingBadge from './RankingBadge'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { debBasis } from '@/lib/seo/deb-basis'
 import { programmeEligibility } from '@/lib/seo/display-guards'
+import { feeCheckedLine, debSessionLine } from '@/lib/provenance'
 
 interface Props {
   u: University
@@ -121,8 +122,14 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
     ? `one-time payment, this track${specSemester ? `; ${inr(specSemester)} paid by semester` : ''}`
     : formatExactFeeDetail(exactFee)
 
+  // B1: the date the shown MBA fee was read on the portal, hub only. A spec
+  // page can print a track fee, which provenance.fee does not cover.
+  const feeChecked = !spec && feeValue !== FEE_COUNSELLOR_LINE ? feeCheckedLine(u, program) : null
+  // B1: DEB session beside the approval, only where the eyebrow claims it.
+  const debLine = modeVerified && !basis ? debSessionLine(u) : null
+
   const stats = [
-    { label: 'Total Fees', value: feeValue, highlight: true, sub: feeDetail },
+    { label: 'Total Fees', value: feeValue, highlight: true, sub: feeDetail, checked: feeChecked },
     { label: 'Duration',   value: pd.duration || '2 Years',       highlight: false },
     ...(eligibilityLabel ? [{ label: 'Eligibility', value: eligibilityLabel, highlight: false, sub: eligibilityNote }] : []),
     { label: 'NAAC',       value: u.naac,                         highlight: false },
@@ -152,6 +159,9 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
             {eyebrow}
           </span>
         </div>
+        {debLine && (
+          <p className="deb-session text-[11px] text-slate-400 -mt-2 mb-4">{debLine}</p>
+        )}
 
         {/* Logo (if available) + H1 block */}
         <div className="flex items-center gap-4 mb-4">
@@ -211,6 +221,9 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
               </div>
               {'sub' in s && s.sub && (
                 <div className="text-[11px] text-slate-300 mt-0.5 leading-snug" style={{ maxWidth: 240 }}>{s.sub}</div>
+              )}
+              {'checked' in s && s.checked && (
+                <div className="fee-checked-date text-[10px] text-slate-400 mt-1 leading-snug" style={{ maxWidth: 240 }}>{s.checked}</div>
               )}
             </div>
           ))}

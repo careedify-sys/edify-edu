@@ -247,6 +247,34 @@ export interface University {
   color: string
   enrollments?: number
   rankingBadge?: string
+  /**
+   * B1 (2026-11-28): where each volatile fact came from and when it was
+   * checked. Attached from UNIVERSITY_PROVENANCE below; never set on a record.
+   * Readers that print fees (getExactFee and the rest) ignore it. Only the fee
+   * date and the DEB session render (lib/provenance.ts); sourceUrl stays in
+   * data. Gate: scripts/check-fee-provenance.mts.
+   */
+  provenance?: UniProvenance
+}
+
+/** One sourced, dated fact. sheet is the audits/ file that records the check. */
+export interface FactProvenance<T = string> {
+  value: T
+  sourceUrl: string
+  checkedOn: string
+  session?: string
+  sheet: string
+}
+
+export interface UniProvenance {
+  /** MBA fee exactly as formatExactFee(getExactFee(u, 'MBA')) prints it. */
+  fee?: FactProvenance
+  /** value is the register's mode ('Online'); session the academic year. */
+  deb?: FactProvenance & { session: string }
+  /** value equals u.naac; session carries the cycle and declaration date. */
+  naac?: FactProvenance
+  /** value like 'University #62, Management #73'; session is the NIRF year. */
+  nirf?: FactProvenance
 }
 
 export interface FeePlanRow {
@@ -11001,9 +11029,71 @@ export const PROGRAM_META: Record<string, { icon: string; desc: string; duration
   'BSc': { icon: '⚗️', desc: 'Bachelor of Science', duration: '3 Years', level: 'UG' },
 }
 
+// B1 provenance (2026-11-28). Phase B queue universities only, values copied
+// from the 18 Nov verify sheets, which record a portal read of each figure on
+// that date. A fact with no dated check is left out, never guessed. Gaps:
+// dayananda-sagar-university-online (Q80, portal domain unverified) and
+// adichunchanagiri-university-online (Q81, payable MBA total unclear, Q31).
+// Amity has no naac entry: AUUP is absent from NAAC's valid list (Q24). BITS
+// has no deb entry: it has no DEB register rows. See check-fee-provenance.
+const DEB_REGISTER = 'https://deb.ugc.ac.in/Home/HEI_Prog_List'
+const NAAC_LIST = 'https://www.naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx'
+const NIRF_UNIVERSITY_2025 = 'https://www.nirfindia.org/Rankings/2025/UniversityRanking.html'
+const deb2627 = (sheet: string): FactProvenance & { session: string } =>
+  ({ value: 'Online', sourceUrl: DEB_REGISTER, checkedOn: '2026-11-18', session: '2026-27', sheet })
+
+export const UNIVERSITY_PROVENANCE: Record<string, UniProvenance> = {
+  'bits-pilani-work-integrated-online': {
+    fee: { value: '₹3,12,400', sourceUrl: 'https://bits-pilani-wilp.ac.in/mba/finance.php', checkedOn: '2026-11-18', sheet: 'audits/verify/bits-pilani-work-integrated-online-2026-11-18.md' },
+    naac: { value: 'A++', sourceUrl: NAAC_LIST, checkedOn: '2026-11-18', session: 'Cycle 4, declared 2024-11-29', sheet: 'audits/verify/bits-pilani-work-integrated-online-2026-11-18.md' },
+    nirf: { value: 'University #7', sourceUrl: NIRF_UNIVERSITY_2025, checkedOn: '2026-11-18', session: '2025', sheet: 'audits/verify/bits-pilani-work-integrated-online-2026-11-18.md' },
+  },
+  'galgotias-university-online': {
+    fee: { value: '₹80,200', sourceUrl: 'https://galgotiasonline.edu.in/online-mba-programs-india.php', checkedOn: '2026-11-18', sheet: 'audits/verify/galgotias-university-online-2026-11-18.md' },
+    deb: deb2627('audits/verify/galgotias-university-online-2026-11-18.md'),
+    naac: { value: 'A+', sourceUrl: NAAC_LIST, checkedOn: '2026-11-18', session: 'Cycle 1, declared 2022-08-16', sheet: 'audits/verify/galgotias-university-online-2026-11-18.md' },
+    nirf: { value: 'Management band 101-125', sourceUrl: 'https://www.nirfindia.org/Rankings/2025/ManagementRanking150.html', checkedOn: '2026-11-18', session: '2025', sheet: 'audits/verify/galgotias-university-online-2026-11-18.md' },
+  },
+  'jain-university-online': {
+    fee: { value: '₹1,60,000–₹2,98,000', sourceUrl: 'https://onlinejain.com/online-mba', checkedOn: '2026-11-18', sheet: 'audits/verify/jain-university-online-2026-11-18.md' },
+    deb: deb2627('audits/verify/jain-university-online-2026-11-18.md'),
+    naac: { value: 'A++', sourceUrl: NAAC_LIST, checkedOn: '2026-11-18', session: 'Cycle 2, declared 2021-12-06', sheet: 'audits/verify/jain-university-online-2026-11-18.md' },
+    nirf: { value: 'University #62, Management #73', sourceUrl: NIRF_UNIVERSITY_2025, checkedOn: '2026-11-18', session: '2025', sheet: 'audits/verify/jain-university-online-2026-11-18.md' },
+  },
+  'symbiosis-university-online': {
+    fee: { value: '₹3,15,000–₹3,70,000', sourceUrl: 'https://ssodl.edu.in/ug-pg-fees', checkedOn: '2026-11-18', sheet: 'audits/verify/symbiosis-university-online-2026-11-18.md' },
+    deb: deb2627('audits/verify/symbiosis-university-online-2026-11-18.md'),
+    naac: { value: 'A++', sourceUrl: NAAC_LIST, checkedOn: '2026-11-18', session: 'Cycle 3, declared 2022-12-20', sheet: 'audits/verify/symbiosis-university-online-2026-11-18.md' },
+    nirf: { value: 'University #24', sourceUrl: NIRF_UNIVERSITY_2025, checkedOn: '2026-11-18', session: '2025', sheet: 'audits/verify/symbiosis-university-online-2026-11-18.md' },
+  },
+  'dr-dy-patil-vidyapeeth-online': {
+    fee: { value: '₹1,89,400', sourceUrl: 'https://www.dypatilonline.com/mba.aspx', checkedOn: '2026-11-18', sheet: 'audits/verify/dr-dy-patil-vidyapeeth-online-2026-11-18.md' },
+    deb: deb2627('audits/verify/dr-dy-patil-vidyapeeth-online-2026-11-18.md'),
+    naac: { value: 'A++', sourceUrl: NAAC_LIST, checkedOn: '2026-11-18', session: 'Cycle 3, declared 2022-02-08', sheet: 'audits/verify/dr-dy-patil-vidyapeeth-online-2026-11-18.md' },
+    nirf: { value: 'University #41', sourceUrl: NIRF_UNIVERSITY_2025, checkedOn: '2026-11-18', session: '2025', sheet: 'audits/verify/dr-dy-patil-vidyapeeth-online-2026-11-18.md' },
+  },
+  'amity-university-online': {
+    fee: { value: '₹2,07,000–₹2,25,000', sourceUrl: 'https://amityonline.com/master-of-business-administration-online', checkedOn: '2026-11-18', sheet: 'audits/verify/amity-university-online-2026-11-18.md' },
+    deb: deb2627('audits/verify/amity-university-online-2026-11-18.md'),
+    nirf: { value: 'University #22, Management #49', sourceUrl: 'https://www.nirfindia.org/Rankings/2025/Ranking.html', checkedOn: '2026-11-18', session: '2025', sheet: 'audits/verify/amity-university-online-2026-11-18.md' },
+  },
+  'uttaranchal-university-online': {
+    fee: { value: '₹1,48,000 before scholarship; ₹99,600–₹1,03,600 after scholarship (one-time or semester-wise)', sourceUrl: 'https://www.onlineuu.in/mba.php', checkedOn: '2026-11-18', sheet: 'audits/verify/uttaranchal-university-online-2026-11-18.md' },
+    deb: deb2627('audits/verify/uttaranchal-university-online-2026-11-18.md'),
+    naac: { value: 'A+', sourceUrl: NAAC_LIST, checkedOn: '2026-11-18', session: 'Cycle 1, declared 2022-01-11', sheet: 'audits/verify/uttaranchal-university-online-2026-11-18.md' },
+  },
+  'shoolini-university-online': {
+    fee: { value: '₹1,30,000–₹1,58,000', sourceUrl: 'https://shoolini.online/mba.php', checkedOn: '2026-11-18', sheet: 'audits/verify/shoolini-university-online-2026-11-18.md' },
+    deb: deb2627('audits/verify/shoolini-university-online-2026-11-18.md'),
+    naac: { value: 'A+', sourceUrl: NAAC_LIST, checkedOn: '2026-11-18', session: 'Cycle 2, declared 2024-11-21', sheet: 'audits/verify/shoolini-university-online-2026-11-18.md' },
+    nirf: { value: 'University #69', sourceUrl: NIRF_UNIVERSITY_2025, checkedOn: '2026-11-18', session: '2025', sheet: 'audits/verify/shoolini-university-online-2026-11-18.md' },
+  },
+}
+
 export const UNIVERSITIES: University[] = UNIVERSITIES_RAW.map(u => ({
   ...u,
   highlight: buildHighlight(u),
+  ...(UNIVERSITY_PROVENANCE[u.id] ? { provenance: UNIVERSITY_PROVENANCE[u.id] } : {}),
 })) as University[]
 
 // Compat helpers

@@ -32,6 +32,7 @@ import OwnerMbaSentence from '@/components/OwnerMbaSentence'
 import { isExamCentre, EXAM_CENTRE_LINE, isExamModeConfirmed } from '@/lib/exam-mode'
 import { debBasis } from '@/lib/seo/deb-basis'
 import { programmeEligibility } from '@/lib/seo/display-guards'
+import { feeCheckedLine, debSessionLine } from '@/lib/provenance'
 import UniversityCover from '@/components/UniversityCover'
 import type { UniversityCover as UniversityCoverData } from '@/lib/university-covers'
 
@@ -330,6 +331,10 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     </div>
                   ))}
                 </div>
+                {/* B1: the date the shown MBA fee was read on the portal (lib/provenance.ts). */}
+                {feeShort(displayProgram) && feeCheckedLine(u, displayProgram) && (
+                  <p className="fee-checked-date text-[11px] text-slate-400 mb-2">{feeCheckedLine(u, displayProgram)}</p>
+                )}
                 <div className="mb-6">
                   <Link href="/tools/emi-calculator" className="text-[12px] text-amber no-underline hover:underline font-semibold">
                     Calculate your exact monthly EMI →
@@ -370,6 +375,10 @@ export default function UniversityPageClient({ university: u, linkableProgrammes
                     highlight={u.highlight}
                     layout="column"
                   />
+                  {/* B1: DEB session beside the approval, only where the page claims DEB approval. */}
+                  {!basis && debSessionLine(u) && (
+                    <p className="deb-session" style={{fontSize:11,color:'#94A3B8',marginTop:10,lineHeight:1.4}}>{debSessionLine(u)}</p>
+                  )}
                   <div style={{marginTop:16,paddingTop:14,borderTop:'1px solid rgba(255,255,255,0.08)'}}>
                     <div style={{fontSize:11,color:'#94A3B8',marginBottom:4}}>Govt Job Valid?</div>
                     <div style={{fontSize:13,fontWeight:700,color: u.govtRecognised && !basis ? '#4ADE80' : '#FBBF24'}}>
