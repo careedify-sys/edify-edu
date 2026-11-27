@@ -25,6 +25,8 @@ export default function ReferForm({ programmes, universities, disclosure, terms,
 
   useEffect(() => {
     opened.current = Date.now()
+    // The Reward auto-reply links to /refer#terms: open the terms there.
+    if (window.location.hash === '#terms') { const t = document.getElementById('terms') as HTMLDetailsElement | null; if (t) { t.open = true; t.scrollIntoView() } }
     const c = new URLSearchParams(window.location.search).get('c') ?? ''
     if (CAMPAIGN_TOKEN_RE.test(c)) {
       campaign.current = c
@@ -141,7 +143,7 @@ export default function ReferForm({ programmes, universities, disclosure, terms,
 
       <div className="bg-[#f1f5f9] rounded-xl p-4 text-sm text-slate-700 space-y-3">
         <p>{disclosure}</p>
-        <details>
+        <details id="terms">
           <summary className="cursor-pointer font-semibold text-navy">Referral terms (version {termsVersion})</summary>
           <ul className="list-disc pl-5 mt-2 space-y-1">{terms.map((t, i) => <li key={i}>{t}</li>)}</ul>
         </details>

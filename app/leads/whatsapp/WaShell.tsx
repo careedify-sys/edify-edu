@@ -9,6 +9,7 @@ export const TABS = [
   ['templates', '/leads/whatsapp/templates', 'Templates'],
   ['campaigns', '/leads/whatsapp/campaigns', 'Campaigns'],
   ['referrals', '/leads/whatsapp/referrals', 'Referrals'],
+  ['automation', '/leads/whatsapp/automation', 'Auto-replies'],
   ['reports', '/leads/whatsapp/reports', 'Reports'],
   ['settings', '/leads/whatsapp/settings', 'Campaign settings'],
 ] as const
