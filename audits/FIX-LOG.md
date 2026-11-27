@@ -1,5 +1,46 @@
 # Fix log
 
+## 2026-11-28 · B7b: no exam mode without a confirmed record; "from home" only for the 11 (branch fix/b7b-default-exam-mode, stacked on fix/b7-exam-mode b677143, not pushed)
+
+- **Why:** B7 deferred item (4). 111 records (143 minus 25 confirmed minus B7's 7) carry the importer default examMode 'Online' that nobody has
+  checked, and every template turned that default into "Online proctored examinations from home. No exam centre visit
+  required.", "No campus visits required", "via webcam from home or office", a green tick in the compare table's Online
+  Exam column and "edifyedu.in records X exams as Online". The same text also printed for confirmed universities whose
+  source says online but not from home (CHRIST, CU, Galgotias, GLA, JAIN, KL, Manav Rachna, UPES, VGU, Symbiosis,
+  Kurukshetra, DSU). VIT showed this wording while holding exams at centres, so the default is not safe to print.
+- **Rule (lib/exam-mode.ts examTier):** 'centre' (VIT, BITS) unchanged; 'fromHome' (CONFIRMED_FROM_HOME, the 11) keeps
+  the from-home wording; 'online' (confirmed, location not stated) gets "Exams are online." and no from-home, webcam or
+  campus-visit claim; 'unverified' (B7's 7) keeps the counsellor line; 'unrecorded' (everyone else) gets "Check the exam
+  format with our counsellor before you enrol.", a neutral dash in the compare table and "Ask our counsellor" in the stat
+  cells. examMode in lib/data.ts is unchanged for every record.
+- **Templates:** SectionExams, SectionClasses, SectionAbout ("no mandatory campus visits" now only for the 11),
+  UniProgramBody FAQ, UniSpecBody two FAQs, UniversityPageClient FAQ and both stat cells, ComparisonTable,
+  compare-answers row and FAQ, university-answers Q7 ("edifyedu.in has not confirmed how and where X holds its online
+  MBA exams."). The Galgotias BCA custom intro lost "with no mandatory campus visits" (Galgotias source: online
+  proctored, location not stated).
+- **Page-content JSON (28 files, 60 strings):** for unrecorded universities, sentences claiming online, proctored,
+  webcam, photo-ID-for-proctoring, "no mandatory campus visits" or exam centres were deleted, and exam sections and
+  exam FAQs that lost a sentence start or end with the neutral line. "Proctored" was dropped from the weighting
+  sentences, whose 30-40 / 60-70 splits stay (deferred item 1 applies to them too). For confirmed 'online'
+  universities, webcam, Aadhaar and "no mandatory campus visit" sentences were deleted; "proctored" stays where the
+  source says proctored and was removed for Kurukshetra and Symbiosis, whose sources do not. JAIN's and UPES's sources
+  do mention a webcam, but the webcam lines went too, per the tier rule; they can come back from those sources. One
+  Jaypee red flag ("Proctoring software has reported rejecting Voter ID ...") was removed: nothing sources it.
+  IGNOU's "TEE are held twice a year at 800+ exam centres" and "Online TEE options" went too: no sheet sources them.
+- **Kept on purpose:** "No campus visit is required for admission" (admission, not exams), "study from anywhere"
+  (study, not exams), DSU's optional networking visits, Shoolini's methodology-PDF sentence (sourced in B7).
+- **Not touched:** lib/blog.ts (out of bounds), lib/content.ts programme `format` strings (not rendered),
+  components/LearningExperience.tsx (not imported).
+- **Proof (next start on the build, all 2,150 valid-urls fetched, 0 failures; JSON-LD kept, RSC payload ignored):**
+  "from home" is on 285 pages: 278 belong to the 11 CONFIRMED_FROM_HOME universities, and 7 are /programs/mba/{spec}
+  hubs that list only universities from the 11 (agribusiness, analytics-and-data-science, digital-entrepreneurship,
+  environmental-social-and-governance-esg, global-finance-market, hospitality-management,
+  international-finance-and-accounting). "No exam centre visit required": 268 pages, all the 11. "via webcam": 11
+  pages, all the 11. Page checks: noida-international-university-online/mba shows the neutral line and no mode;
+  its profile stat cell reads "Ask our counsellor"; lovely-professional-university-online/mba keeps the from-home line;
+  upes-online/mba and its profile read "Exams are online." with no from-home, webcam or campus-visit claim. On the 41
+  compare pages, every "edifyedu.in records X exams as Online" names a confirmed university.
+
 ## 2026-11-28 · B7 round 2: QA F1, F5 and F15 (branch fix/b7-exam-mode, not pushed)
 
 QA report: audits/qa/2026-11-28-b7-exam-mode-premerge.md. Merged origin/main (0a8999e) first: FIX-LOG kept both

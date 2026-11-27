@@ -18,7 +18,7 @@
 // bullets; a plain "not recorded / not published" line where we lack data.
 
 import type { University } from '../data'
-import { isExamModeUnverified, EXAM_MODE_COUNSELLOR_LINE } from '../exam-mode'
+import { isExamModeUnverified, isExamModeUnknown, EXAM_MODE_COUNSELLOR_LINE, EXAM_MODE_NEUTRAL_LINE } from '../exam-mode'
 import { specName, getUniversityById } from '../data'
 import { getExactFee, formatExactFee, formatExactFeeShort, formatPublishedSemesterFee, type ExactFee } from '../fees'
 import syllabusManifest from '../data/syllabus-manifest.json'
@@ -393,6 +393,15 @@ function q7(u: University, n: string): AnswerSection | null {
     notPublished: 'Not recorded on edifyedu.in: the exam mode, the proctoring method, the split between assignments and term-end exams, and the passing mark.',
     faq: { q: `How are ${n} online MBA exams conducted?`, a: `${n} has not published how and where its online MBA exams are held. ${EXAM_MODE_COUNSELLOR_LINE}` },
     sources: ['lib/exam-mode.ts UNVERIFIED_EXAM_MODE', 'audits/exam-mode-verified-2026-11-16.md'], backed: true,
+  }
+  // B7b (2026-11-28): no confirmed record, so the importer default 'Online' is not stated as a fact.
+  if (isExamModeUnknown(u)) return {
+    key: 'exams', q: 'Q7', heading: `How are ${n} online MBA exams conducted?`,
+    lead: `edifyedu.in has not confirmed how and where ${n} holds its online MBA exams. ${EXAM_MODE_NEUTRAL_LINE} Ask how assignments and term-end exams are weighted at the same time.`,
+    bullets: ['Exam mode: not confirmed by edifyedu.in', 'Proctoring method: not recorded', 'Assignment and term-end weighting: not recorded'],
+    notPublished: 'Not recorded on edifyedu.in: the exam mode, the proctoring method, the split between assignments and term-end exams, and the passing mark.',
+    faq: { q: `How are ${n} online MBA exams conducted?`, a: `edifyedu.in has not confirmed how and where ${n} holds its online MBA exams. ${EXAM_MODE_NEUTRAL_LINE}` },
+    sources: ['lib/exam-mode.ts examTier (unrecorded)'], backed: true,
   }
   const gal = u.id === 'galgotias-university-online'
   const mode = u.examMode === 'Online' ? 'taken online' : u.examMode === 'Exam Centre' ? 'held at exam centres' : u.examMode === 'Hybrid' ? 'held in a hybrid format' : 'assignment-based'
