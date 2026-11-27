@@ -1,6 +1,6 @@
 // app/methodology/page.tsx
 //
-// Why this page exists. A live Perplexity test on 2026-09-28 cited EdifyEdu
+// Why this page exists. A live Perplexity test on 2026-09-28 cited edifyedu.in
 // exactly once in a "best online MBA India" answer, and the citation was on the
 // verification steps, not on the recommendation. The site already wins method
 // citations and had no page stating its method. This is that page.
@@ -20,12 +20,12 @@ import naacSnapshot from '@/data/naac-verified.json'
 const BASE = 'https://edifyedu.in'
 
 export const metadata: Metadata = {
-  title: 'Methodology: How EdifyEdu Verifies What It Publishes',
+  title: 'Methodology: How edifyedu.in Verifies What It Publishes',
   description:
-    'Where every figure on EdifyEdu comes from, when it was last checked, and what we do when a NAAC cycle lapses or a fee cannot be stood behind. No commission, no paid rankings.',
+    'Where every figure on edifyedu.in comes from, when it was last checked, and what we do when a NAAC cycle lapses or a fee cannot be stood behind. No commission, no paid rankings.',
   alternates: { canonical: `${BASE}/methodology` },
   openGraph: {
-    title: 'Methodology: How EdifyEdu Verifies What It Publishes',
+    title: 'Methodology: How edifyedu.in Verifies What It Publishes',
     description:
       'Where every figure comes from, when it was checked, and what we do when we cannot verify something.',
     url: `${BASE}/methodology`,
@@ -74,13 +74,13 @@ export default function MethodologyPage() {
   const webpage = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: 'Methodology: How EdifyEdu Verifies What It Publishes',
+    name: 'Methodology: How edifyedu.in Verifies What It Publishes',
     description:
-      'Where every figure on EdifyEdu comes from, when it was last checked, and what we do when something cannot be verified.',
+      'Where every figure on edifyedu.in comes from, when it was last checked, and what we do when something cannot be verified.',
     url: `${BASE}/methodology`,
     dateModified: asOf,
-    isPartOf: { '@type': 'WebSite', name: 'EdifyEdu', url: BASE },
-    publisher: { '@type': 'Organization', name: 'EdifyEdu', url: BASE },
+    isPartOf: { '@type': 'WebSite', name: 'edifyedu.in', url: BASE },
+    publisher: { '@type': 'Organization', name: 'edifyedu.in', url: BASE },
     breadcrumb,
   }
 
@@ -108,7 +108,7 @@ export default function MethodologyPage() {
 
       <main className="max-w-4xl mx-auto px-4 py-8">
         <h1 className="text-3xl md:text-4xl font-bold text-navy mb-3">
-          How EdifyEdu verifies what it publishes
+          How edifyedu.in verifies what it publishes
         </h1>
         <p className="text-base text-ink-2 leading-relaxed mb-2">
           We cover 125+ UGC-DEB universities. This page states where every figure

@@ -340,7 +340,7 @@
       "figure": 12000,
       "university": "gujarat-university-online",
       "programme": "B.Com",
-      "source": "lib/data.ts programDetails['B.Com'].fees for Gujarat University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Gujarat University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Gujarat University online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
     },
@@ -349,7 +349,7 @@
       "figure": 14400,
       "university": "ignou-online",
       "programme": "B.Com",
-      "source": "lib/data.ts programDetails['B.Com'].fees for IGNOU, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['B.Com'].fees for IGNOU, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "IGNOU online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
     },
@@ -358,7 +358,7 @@
       "figure": 16000,
       "university": "dr-babasaheb-ambedkar-open-university-online",
       "programme": "B.Com",
-      "source": "lib/data.ts programDetails['B.Com'].fees for Dr. Babasaheb Ambedkar Open University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Dr. Babasaheb Ambedkar Open University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Dr. Babasaheb Ambedkar Open University online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
     },
@@ -367,7 +367,7 @@
       "figure": 30000,
       "university": "university-of-lucknow-online",
       "programme": "B.Com",
-      "source": "lib/data.ts programDetails['B.Com'].fees for University of Lucknow, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['B.Com'].fees for University of Lucknow, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "University of Lucknow online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
     },
@@ -376,7 +376,7 @@
       "figure": 56500,
       "university": "deen-dayal-upadhyay-gorakhpur-university-online",
       "programme": "B.Com",
-      "source": "lib/data.ts programDetails['B.Com'].fees for DDU Gorakhpur University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['B.Com'].fees for DDU Gorakhpur University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "DDU Gorakhpur University online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
     },
@@ -385,7 +385,7 @@
       "figure": 60000,
       "university": "gla-university-online",
       "programme": "B.Com",
-      "source": "lib/data.ts programDetails['B.Com'].fees for GLA University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['B.Com'].fees for GLA University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "GLA University online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
     },
@@ -394,7 +394,7 @@
       "figure": 60100,
       "university": "alagappa-university-online",
       "programme": "B.Com",
-      "source": "lib/data.ts programDetails['B.Com'].fees for Alagappa University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Alagappa University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Alagappa University online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
     },
@@ -403,7 +403,7 @@
       "figure": 72661,
       "university": "kurukshetra-university-online",
       "programme": "B.Com",
-      "source": "lib/data.ts programDetails['B.Com'].fees for Kurukshetra University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Kurukshetra University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Kurukshetra University online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
     },
@@ -412,7 +412,7 @@
       "figure": 99000,
       "university": "nmims-online",
       "programme": "B.Com",
-      "source": "lib/data.ts programDetails['B.Com'].fees for NMIMS (also Manipal University Jaipur), verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['B.Com'].fees for NMIMS (also Manipal University Jaipur), verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "NMIMS (also Manipal University Jaipur) online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
     },
@@ -421,7 +421,7 @@
       "figure": 115000,
       "university": "amity-university-online",
       "programme": "B.Com",
-      "source": "lib/data.ts programDetails['B.Com'].fees for Amity University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Amity University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Amity University online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
     },
@@ -430,7 +430,7 @@
       "figure": 124000,
       "university": "sgt-university-online",
       "programme": "B.Com",
-      "source": "lib/data.ts programDetails['B.Com'].fees for SGT University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['B.Com'].fees for SGT University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "SGT University online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
     },
@@ -439,7 +439,7 @@
       "figure": 150000,
       "university": "amrita-vishwa-vidyapeetham-online",
       "programme": "B.Com",
-      "source": "lib/data.ts programDetails['B.Com'].fees for Amrita Vishwa Vidyapeetham, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Amrita Vishwa Vidyapeetham, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Amrita Vishwa Vidyapeetham online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
     },
@@ -448,7 +448,7 @@
       "figure": 294000,
       "university": "manipal-academy-higher-education-online",
       "programme": "B.Com",
-      "source": "lib/data.ts programDetails['B.Com'].fees for Manipal Academy of Higher Education, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Manipal Academy of Higher Education, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Manipal Academy of Higher Education online B.Com total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted only to cover the same figure inside the SVG chart, the at-a-glance list and multi-university sentences, where the scanner cannot attribute it to one university."
     },
@@ -457,7 +457,7 @@
       "figure": 45000,
       "university": "dr-babasaheb-ambedkar-open-university-online",
       "programme": "BCA",
-      "source": "lib/data.ts programDetails['BCA'].fees for Dr. Babasaheb Ambedkar Open University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BCA'].fees for Dr. Babasaheb Ambedkar Open University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Dr. Babasaheb Ambedkar Open University online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
     },
@@ -466,7 +466,7 @@
       "figure": 49800,
       "university": "ignou-online",
       "programme": "BCA",
-      "source": "lib/data.ts programDetails['BCA'].fees for IGNOU, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BCA'].fees for IGNOU, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "IGNOU online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
     },
@@ -475,7 +475,7 @@
       "figure": 52000,
       "university": "karnataka-state-open-university-online",
       "programme": "BCA",
-      "source": "lib/data.ts programDetails['BCA'].fees for Karnataka State Open University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BCA'].fees for Karnataka State Open University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Karnataka State Open University online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
     },
@@ -484,7 +484,7 @@
       "figure": 90000,
       "university": "shobhit-university-online",
       "programme": "BCA",
-      "source": "lib/data.ts programDetails['BCA'].fees for Shobhit Institute of Engineering and Technology, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BCA'].fees for Shobhit Institute of Engineering and Technology, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Shobhit Institute of Engineering and Technology online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
     },
@@ -493,7 +493,7 @@
       "figure": 99800,
       "university": "gla-university-online",
       "programme": "BCA",
-      "source": "lib/data.ts programDetails['BCA'].fees for GLA University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BCA'].fees for GLA University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "GLA University online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
     },
@@ -502,7 +502,7 @@
       "figure": 101000,
       "university": "vtu-online",
       "programme": "BCA",
-      "source": "lib/data.ts programDetails['BCA'].fees for Visvesvaraya Technological University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BCA'].fees for Visvesvaraya Technological University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Visvesvaraya Technological University online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
     },
@@ -511,7 +511,7 @@
       "figure": 129000,
       "university": "bharati-vidyapeeth-university-online",
       "programme": "BCA",
-      "source": "lib/data.ts programDetails['BCA'].fees for Bharati Vidyapeeth, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BCA'].fees for Bharati Vidyapeeth, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Bharati Vidyapeeth online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
     },
@@ -520,7 +520,7 @@
       "figure": 139000,
       "university": "sgt-university-online",
       "programme": "BCA",
-      "source": "lib/data.ts programDetails['BCA'].fees for SGT University (also Manipal University Jaipur), verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BCA'].fees for SGT University (also Manipal University Jaipur), verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "SGT University (also Manipal University Jaipur) online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
     },
@@ -529,7 +529,7 @@
       "figure": 147000,
       "university": "guru-ghasidas-vishwavidyalaya-online",
       "programme": "BCA",
-      "source": "lib/data.ts programDetails['BCA'].fees for Guru Ghasidas Vishwavidyalaya, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BCA'].fees for Guru Ghasidas Vishwavidyalaya, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Guru Ghasidas Vishwavidyalaya online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
     },
@@ -538,7 +538,7 @@
       "figure": 177000,
       "university": "chandigarh-university-online",
       "programme": "BCA",
-      "source": "lib/data.ts programDetails['BCA'].fees for Chandigarh University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BCA'].fees for Chandigarh University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Chandigarh University online BCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure where it appears in a summary band, a warning callout or a multi-university FAQ sentence that defeats attribution."
     },
@@ -547,7 +547,7 @@
       "figure": 50800,
       "university": "ignou-online",
       "programme": "MCA",
-      "source": "lib/data.ts programDetails['MCA'].fees for IGNOU, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['MCA'].fees for IGNOU, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "IGNOU online MCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the opening comparison, the SVG and multi-university sentences where attribution picks the wrong institution."
     },
@@ -556,7 +556,7 @@
       "figure": 65500,
       "university": "kl-university-online",
       "programme": "MCA",
-      "source": "lib/data.ts programDetails['MCA'].fees for Koneru Lakshmaiah Education Foundation, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['MCA'].fees for Koneru Lakshmaiah Education Foundation, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Koneru Lakshmaiah Education Foundation online MCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the opening comparison, the SVG and multi-university sentences where attribution picks the wrong institution."
     },
@@ -565,7 +565,7 @@
       "figure": 200000,
       "university": "shanmugha-arts-science-technology-research-academy-online",
       "programme": "MCA",
-      "source": "lib/data.ts programDetails['MCA'].fees for Shanmugha Arts, Science, Technology and Research Academy, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['MCA'].fees for Shanmugha Arts, Science, Technology and Research Academy, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Shanmugha Arts, Science, Technology and Research Academy online MCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the opening comparison, the SVG and multi-university sentences where attribution picks the wrong institution."
     },
@@ -574,7 +574,7 @@
       "figure": 230000,
       "university": "christ-university-online",
       "programme": "MCA",
-      "source": "lib/data.ts programDetails['MCA'].fees for Christ University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['MCA'].fees for Christ University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Christ University online MCA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the opening comparison, the SVG and multi-university sentences where attribution picks the wrong institution."
     },
@@ -583,7 +583,7 @@
       "figure": 39000,
       "university": "karnataka-state-open-university-online",
       "programme": "BBA",
-      "source": "lib/data.ts programDetails['BBA'].fees for Karnataka State Open University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BBA'].fees for Karnataka State Open University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Karnataka State Open University online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
     },
@@ -592,7 +592,7 @@
       "figure": 43000,
       "university": "bharathiar-university-online",
       "programme": "BBA",
-      "source": "lib/data.ts programDetails['BBA'].fees for Bharathiar University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BBA'].fees for Bharathiar University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Bharathiar University online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
     },
@@ -601,7 +601,7 @@
       "figure": 57500,
       "university": "deen-dayal-upadhyay-gorakhpur-university-online",
       "programme": "BBA",
-      "source": "lib/data.ts programDetails['BBA'].fees for DDU Gorakhpur University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BBA'].fees for DDU Gorakhpur University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "DDU Gorakhpur University online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
     },
@@ -610,7 +610,7 @@
       "figure": 60000,
       "university": "university-of-lucknow-online",
       "programme": "BBA",
-      "source": "lib/data.ts programDetails['BBA'].fees for University of Lucknow, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BBA'].fees for University of Lucknow, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "University of Lucknow online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
     },
@@ -619,7 +619,7 @@
       "figure": 72661,
       "university": "kurukshetra-university-online",
       "programme": "BBA",
-      "source": "lib/data.ts programDetails['BBA'].fees for Kurukshetra University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BBA'].fees for Kurukshetra University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Kurukshetra University online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
     },
@@ -628,7 +628,7 @@
       "figure": 77000,
       "university": "vtu-online",
       "programme": "BBA",
-      "source": "lib/data.ts programDetails['BBA'].fees for Visvesvaraya Technological University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BBA'].fees for Visvesvaraya Technological University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Visvesvaraya Technological University online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
     },
@@ -637,7 +637,7 @@
       "figure": 79000,
       "university": "kl-university-online",
       "programme": "BBA",
-      "source": "lib/data.ts programDetails['BBA'].fees for Koneru Lakshmaiah Education Foundation, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BBA'].fees for Koneru Lakshmaiah Education Foundation, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Koneru Lakshmaiah Education Foundation online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
     },
@@ -664,7 +664,7 @@
       "figure": 150000,
       "university": "amet-university-online",
       "programme": "BBA",
-      "source": "lib/data.ts programDetails['BBA'].fees for AMET University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BBA'].fees for AMET University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "AMET University online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
     },
@@ -673,7 +673,7 @@
       "figure": 169000,
       "university": "university-of-petroleum-energy-studies-online",
       "programme": "BBA",
-      "source": "lib/data.ts programDetails['BBA'].fees for University of Petroleum and Energy Studies, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BBA'].fees for University of Petroleum and Energy Studies, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "University of Petroleum and Energy Studies online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
     },
@@ -682,7 +682,7 @@
       "figure": 199000,
       "university": "amity-university-online",
       "programme": "BBA",
-      "source": "lib/data.ts programDetails['BBA'].fees for Amity University, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BBA'].fees for Amity University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Amity University online BBA total fee. Resolves to MATCH in the comparison table via table-first-cell attribution; allowlisted to cover the same verified figure in the intro, the SVG and multi-university sentences where attribution cannot pick one institution."
     },
@@ -691,7 +691,7 @@
       "figure": 77200,
       "university": "galgotias-university-online",
       "programme": "BBA",
-      "source": "lib/data.ts programDetails['BBA'].fees for Galgotias University Online, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BBA'].fees for Galgotias University Online, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Galgotias online BBA total fee. Correct for that programme; allowlisted because the surrounding sentence lists all four Galgotias programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
     },
@@ -700,7 +700,7 @@
       "figure": 83200,
       "university": "galgotias-university-online",
       "programme": "BCA",
-      "source": "lib/data.ts programDetails['BCA'].fees for Galgotias University Online, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BCA'].fees for Galgotias University Online, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Galgotias online BCA total fee. Correct for that programme; allowlisted because the surrounding sentence lists all four Galgotias programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
     },
@@ -709,7 +709,7 @@
       "figure": 84200,
       "university": "galgotias-university-online",
       "programme": "MCA",
-      "source": "lib/data.ts programDetails['MCA'].fees for Galgotias University Online, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['MCA'].fees for Galgotias University Online, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Galgotias online MCA total fee. Correct for that programme; allowlisted because the surrounding sentence lists all four Galgotias programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
     },
@@ -718,7 +718,7 @@
       "figure": 9600,
       "university": "ignou-online",
       "programme": "BA",
-      "source": "lib/data.ts programDetails['BA'].fees for IGNOU, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BA'].fees for IGNOU, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "IGNOU online BA total fee. Correct for that programme; allowlisted because this post discusses seven IGNOU programmes together, so the scanner attributes the university correctly but pairs each figure with the wrong programme."
     },
@@ -727,7 +727,7 @@
       "figure": 14400,
       "university": "ignou-online",
       "programme": "B.Com",
-      "source": "lib/data.ts programDetails['B.Com'].fees for IGNOU, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['B.Com'].fees for IGNOU, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "IGNOU online B.Com total fee. Correct for that programme; allowlisted because this post discusses seven IGNOU programmes together, so the scanner attributes the university correctly but pairs each figure with the wrong programme."
     },
@@ -736,7 +736,7 @@
       "figure": 18000,
       "university": "ignou-online",
       "programme": "M.Com",
-      "source": "lib/data.ts programDetails['M.Com'].fees for IGNOU (also the MA at the same fee), verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['M.Com'].fees for IGNOU (also the MA at the same fee), verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "IGNOU (also the MA at the same fee) online M.Com total fee. Correct for that programme; allowlisted because this post discusses seven IGNOU programmes together, so the scanner attributes the university correctly but pairs each figure with the wrong programme."
     },
@@ -745,7 +745,7 @@
       "figure": 49800,
       "university": "ignou-online",
       "programme": "BCA",
-      "source": "lib/data.ts programDetails['BCA'].fees for IGNOU, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BCA'].fees for IGNOU, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "IGNOU online BCA total fee. Correct for that programme; allowlisted because this post discusses seven IGNOU programmes together, so the scanner attributes the university correctly but pairs each figure with the wrong programme."
     },
@@ -754,7 +754,7 @@
       "figure": 50800,
       "university": "ignou-online",
       "programme": "MCA",
-      "source": "lib/data.ts programDetails['MCA'].fees for IGNOU, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['MCA'].fees for IGNOU, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "IGNOU online MCA total fee. Correct for that programme; allowlisted because this post discusses seven IGNOU programmes together, so the scanner attributes the university correctly but pairs each figure with the wrong programme."
     },
@@ -763,7 +763,7 @@
       "figure": 294000,
       "university": "manipal-academy-higher-education-online",
       "programme": "B.Com",
-      "source": "lib/data.ts programDetails['B.Com'].fees for Manipal Academy of Higher Education, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Manipal Academy of Higher Education, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Manipal Academy of Higher Education online B.Com total fee. Correct for that programme; allowlisted because this post discusses seven IGNOU programmes together, so the scanner attributes the university correctly but pairs each figure with the wrong programme."
     },
@@ -772,7 +772,7 @@
       "figure": 30000,
       "university": "integral-university-online",
       "programme": "MSc",
-      "source": "lib/data.ts programDetails['MSc'].fees for Integral University Online, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['MSc'].fees for Integral University Online, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Integral online MSc total fee. Correct for that programme; allowlisted because the surrounding sentence lists several Integral programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
     },
@@ -781,7 +781,7 @@
       "figure": 36000,
       "university": "integral-university-online",
       "programme": "B.Com",
-      "source": "lib/data.ts programDetails['B.Com'].fees for Integral University Online, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['B.Com'].fees for Integral University Online, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Integral online B.Com total fee. Correct for that programme; allowlisted because the surrounding sentence lists several Integral programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
     },
@@ -790,7 +790,7 @@
       "figure": 75300,
       "university": "integral-university-online",
       "programme": "BCA",
-      "source": "lib/data.ts programDetails['BCA'].fees for Integral University Online, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BCA'].fees for Integral University Online, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Integral online BCA total fee. Correct for that programme; allowlisted because the surrounding sentence lists several Integral programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
     },
@@ -799,7 +799,7 @@
       "figure": 110000,
       "university": "integral-university-online",
       "programme": "MBA",
-      "source": "lib/data.ts programDetails['MBA'].fees for Integral University Online, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['MBA'].fees for Integral University Online, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Integral online MBA total fee. Correct for that programme; allowlisted because the surrounding sentence lists several Integral programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
     },
@@ -844,7 +844,7 @@
       "figure": 150000,
       "university": "parul-university-online",
       "programme": "MBA",
-      "source": "lib/data.ts MBA fee for Parul University, verified against EdifyEdu university records",
+      "source": "lib/data.ts MBA fee for Parul University, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Parul University online MBA total fee, cited as a comparison anchor for the private NAAC A++ price band. Allowlisted because the sentence names no university, so the scanner cannot attribute it."
     },
@@ -853,7 +853,7 @@
       "figure": 178000,
       "university": "bharati-vidyapeeth-university-online",
       "programme": "MBA",
-      "source": "lib/data.ts MBA fee for Bharati Vidyapeeth, verified against EdifyEdu university records",
+      "source": "lib/data.ts MBA fee for Bharati Vidyapeeth, verified against edifyedu.in university records",
       "verified_date": "2026-08-26",
       "note": "Bharati Vidyapeeth online MBA total fee, cited as a comparison anchor for the private NAAC A++ price band. Allowlisted because the sentence names no university, so the scanner cannot attribute it."
     },
@@ -862,7 +862,7 @@
       "figure": 40000,
       "university": "parul-university-online",
       "programme": "M.Com",
-      "source": "lib/data.ts programDetails['M.Com'].fees for Parul University Online, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['M.Com'].fees for Parul University Online, verified against edifyedu.in university records",
       "verified_date": "2026-08-27",
       "note": "Parul online M.Com total fee. Correct for that programme; allowlisted because the sentence lists several Parul programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
     },
@@ -871,7 +871,7 @@
       "figure": 110000,
       "university": "parul-university-online",
       "programme": "BCA",
-      "source": "lib/data.ts programDetails['BCA'].fees for Parul University Online, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['BCA'].fees for Parul University Online, verified against edifyedu.in university records",
       "verified_date": "2026-08-27",
       "note": "Parul online BCA total fee. Correct for that programme; allowlisted because the sentence lists several Parul programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
     },
@@ -880,7 +880,7 @@
       "figure": 120000,
       "university": "parul-university-online",
       "programme": "MCA",
-      "source": "lib/data.ts programDetails['MCA'].fees for Parul University Online, verified against EdifyEdu university records",
+      "source": "lib/data.ts programDetails['MCA'].fees for Parul University Online, verified against edifyedu.in university records",
       "verified_date": "2026-08-27",
       "note": "Parul online MCA total fee. Correct for that programme; allowlisted because the sentence lists several Parul programmes together, so the scanner attributes the university correctly but pairs the figure with the wrong programme."
     },

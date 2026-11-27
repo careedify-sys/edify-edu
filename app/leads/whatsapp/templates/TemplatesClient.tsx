@@ -61,7 +61,7 @@ function parts(t: TemplateRow) {
   }
 }
 
-// A neutral starting point: Edify as an independent comparison and counselling
+// A neutral starting point: edifyedu.in as an independent comparison and counselling
 // service, no university named, no reward amount (none is configured).
 const STARTER = {
   body: 'Know someone planning an online degree?\n\nedifyedu.in helps students compare online universities using public UGC, NAAC and NIRF data, and our counsellors help them choose a suitable programme.\n\nRefer a friend, colleague or family member. Our team will connect with you to explain the referral programme and its benefits. Terms apply.',

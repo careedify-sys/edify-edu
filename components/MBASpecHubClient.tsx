@@ -255,7 +255,7 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
         </div>
       </section>
 
-      {/* Why EdifyEdu */}
+      {/* Why edifyedu.in */}
       <section className="max-w-3xl mx-auto px-4 pb-8">
         <div className="rounded-xl border border-amber-200 bg-amber-50 p-5">
           <h3 className="font-bold text-base mb-2 flex items-center gap-2" style={{ color: '#0B1533' }}>

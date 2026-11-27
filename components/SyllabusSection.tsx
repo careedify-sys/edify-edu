@@ -206,7 +206,7 @@ export default function SyllabusSection({ syllabus, program, universityName, act
         </div>
       )}
 
-      {/* Edify Recommends */}
+      {/* edifyedu.in Recommends */}
       {(syllabus.edifySkills?.length || syllabus.edifyProjects?.length || syllabus.edifyInternships?.length) ? (
         <div style={{ padding: '14px 20px', borderTop: '1px solid #F1F5F9', background: 'rgba(31,107,82,0.03)', }}>
           <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--sage)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 12 }}>

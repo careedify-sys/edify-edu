@@ -1,4 +1,4 @@
-# Edify Education
+# edifyedu.in
 > India's independent online degree comparison platform. We cover 125+ UGC-DEB universities offering online MBA, MCA, BBA, BCA, BA, MA, B.Com, M.Com and MSc programmes.
 > Where a fee table shows a 'Fees checked' date, that is when the fee was compared with the university's own fee page. No paid university partnerships and no referral commissions.
 
@@ -78,7 +78,7 @@
 - Fee EMI calculator: https://edifyedu.in/tools/emi-calculator
 
 ## About
-Edify Education is an independent research portal for UGC-DEB approved online degrees in India.
+edifyedu.in is an independent research portal for UGC-DEB approved online degrees in India.
 We accept no payment from any university and we do not sell ranking positions.
 Rankings cite NIRF with the category named; accreditation cites NAAC with its validity date.
 Contact: hello@edifyedu.in

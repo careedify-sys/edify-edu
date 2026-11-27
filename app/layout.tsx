@@ -57,8 +57,8 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: 'Online Universities India 2026: 125+ UGC-DEB Ranked | EdifyEdu',
-    template: '%s | EdifyEdu',
+    default: 'Online Universities India 2026: 125+ UGC-DEB Ranked | edifyedu.in',
+    template: '%s | edifyedu.in',
   },
   description: '125+ UGC-DEB online universities ranked by NIRF & NAAC. Zero paid rankings. Check eligibility free at EdifyEdu.',
   keywords: [
@@ -88,12 +88,12 @@ export const metadata: Metadata = {
     siteName: 'edifyedu.in',
     type: 'website',
     locale: 'en_IN',
-    title: 'Online Universities India 2026: 125+ UGC-DEB Ranked | EdifyEdu',
+    title: 'Online Universities India 2026: 125+ UGC-DEB Ranked | edifyedu.in',
     description: '125+ UGC-DEB online universities ranked by NIRF & NAAC. Zero paid rankings. Check eligibility free at EdifyEdu.',
     url: 'https://edifyedu.in',
     images: [{ url: 'https://edifyedu.in/og.webp', width: 1200, height: 630, alt: "edifyedu.in: India's honest guide to online degrees" }],
   },
-  twitter: { card: 'summary_large_image', site: '@edifyedu', title: 'Online Universities India 2026: 125+ UGC-DEB Ranked | EdifyEdu', description: '125+ UGC-DEB online universities ranked by NIRF & NAAC. Zero paid rankings. Check eligibility free.' },
+  twitter: { card: 'summary_large_image', site: '@edifyedu', title: 'Online Universities India 2026: 125+ UGC-DEB Ranked | edifyedu.in', description: '125+ UGC-DEB online universities ranked by NIRF & NAAC. Zero paid rankings. Check eligibility free.' },
   robots: {
     index: true,
     follow: true,
@@ -209,7 +209,7 @@ const authorSchema = {
   jobTitle: 'Senior Education Researcher',
   worksFor: { '@id': 'https://edifyedu.in/#organization' },
   affiliation: { '@id': 'https://edifyedu.in/#organization' },
-  description: 'Founder of EdifyEdu and senior education researcher focused on UGC-DEB approved online degrees in India. Independent comparisons, no paid rankings.',
+  description: 'Founder of edifyedu.in and senior education researcher focused on UGC-DEB approved online degrees in India. Independent comparisons, no paid rankings.',
   knowsAbout: [
     'Online MBA in India',
     'UGC DEB approved online degrees',

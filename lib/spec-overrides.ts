@@ -100,7 +100,7 @@ export function getUniversitySpecOverride(
       .filter(([k, v]) => k !== 'universitySlug' && k !== 'program' && k !== 'specialization' && k !== 'lastUpdated' && v != null)
       .map(([k]) => k)
     console.info(
-      `[EdifyEdu] spec-override applied: ${universitySlug}/${program}/${specialization} — overriding: ${fields.join(', ')}`
+      `[edifyedu.in] spec-override applied: ${universitySlug}/${program}/${specialization}, overriding: ${fields.join(', ')}`
     )
   }
 

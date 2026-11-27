@@ -1,5 +1,5 @@
 import { buildHighlight } from './highlight'
-// lib/data.ts — Edify University Database
+// lib/data.ts: edifyedu.in University Database
 // Each program has: specs, fees, roles, salary, companies, internship, careerOutcome
 
 export type Program = 'MBA' | 'MCA' | 'BBA' | 'BCA' | 'BA' | 'B.Com' | 'M.Com' | 'MA' | 'MSc' | 'BSc' | 'MBA (WX)'
@@ -63,7 +63,7 @@ export interface UniHighlightItem {
  * Those come from Supabase, which is the source of truth for NAAC, NIRF, AICTE
  * and AACSB. Third-party rankers such as QS and THE are not in Supabase, so
  * each entry names the ranking body and edition and reads as the ranker's
- * finding, not as an Edify verdict. Never fold one of these into `approvals`.
+ * finding, not as an edifyedu.in verdict. Never fold one of these into `approvals`.
  *
  * `valueAdds` are inclusions the UNIVERSITY bundles at no extra charge. Do not
  * put an edifyedu.in incentive here. Those belong with the enrollment bonus,
@@ -1593,7 +1593,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
           },
         ],
       },
-      verifyNote: 'Rankings are as published by QS and Times Higher Education for the editions named. Inclusions and platform access are as stated by Shoolini. Talk to our counsellor for what applies to your intake before you pay. Edify earns no commission on this listing.',
+      verifyNote: 'Rankings are as published by QS and Times Higher Education for the editions named. Inclusions and platform access are as stated by Shoolini. Talk to our counsellor for what applies to your intake before you pay. edifyedu.in earns no commission on this listing.',
     },
       rankingBadge: 'NIRF #69 (University 2025)',
   color: '#2563EB',

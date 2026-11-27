@@ -1,6 +1,6 @@
 {
   "_metadata": {
-    "purpose": "Edify verification tool - factual descriptions for top universities",
+    "purpose": "edifyedu.in verification tool - factual descriptions for top universities",
     "rule": "Only verifiable facts: founding year, location, university type, what they were originally founded for. No subjective claims, no rankings, no 'top X', no fabricated specifics.",
     "universities_skipped": "IGNOU, BITS Pilani, OP Jindal, Annamalai, IKGPTU, SRM - not currently in database. Add to Excel master and re-sync, then add descriptions in a follow-up.",
     "last_updated": "2026-05-01",

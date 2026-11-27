@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Will This Program Fit Me?, Program Suitability Guide | EdifyEdu',
+  title: 'Will This Program Fit Me?, Program Suitability Guide | edifyedu.in',
   description: 'Find out if an online MBA, MCA, BBA, or BCA is right for your career goals, eligibility, and budget. Free, unbiased guide by EdifyEdu.',
   robots: { index: true, follow: true },
 }
@@ -30,7 +30,7 @@ export default function ProgramFitPage() {
           Until the interactive tool launches, you can speak directly with an edifyedu.in counsellor who uses the same framework manually. The counsellor call is free, takes about 20 minutes, and results in a written recommendation you can take to any university you choose.
         </p>
         <p className="text-slate-600 text-base leading-relaxed mb-6">
-          EdifyEdu earns zero commission from universities. Our incentive is to give you the right answer, not the most expensive one.
+          edifyedu.in earns zero commission from universities. Our incentive is to give you the right answer, not the most expensive one.
         </p>
       </div>
 

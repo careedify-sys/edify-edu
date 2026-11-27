@@ -8,8 +8,8 @@ import { LoginPlaceholder } from '@/components/verify/LoginPlaceholder';
 
 export const metadata = {
   // CTR-tuned (2026-05-25): no em dash, lead with the count and bracket Free hook.
-  // absolute disables the root layout "%s | EdifyEdu" template (we already include the suffix).
-  title: { absolute: 'UGC-DEB, NAAC, NIRF Approval Checker [Free 2026] | EdifyEdu' },
+  // absolute disables the root layout "%s | edifyedu.in" template (we already include the suffix).
+  title: { absolute: 'UGC-DEB, NAAC, NIRF Approval Checker [Free 2026] | edifyedu.in' },
   description: '125+ online universities cross-checked across 5 official sources (UGC-DEB, NAAC, NIRF, AICTE, AACSB). Verify any approval in 10 seconds. Free, no login at EdifyEdu.',
   keywords: [
     'verify university ugc deb approval',
@@ -22,7 +22,7 @@ export const metadata = {
     'aicte approval check',
   ],
   openGraph: {
-    title: 'UGC-DEB, NAAC, NIRF Approval Checker [Free 2026] | EdifyEdu',
+    title: 'UGC-DEB, NAAC, NIRF Approval Checker [Free 2026] | edifyedu.in',
     description: '125+ online universities cross-checked across 5 official sources (UGC-DEB, NAAC, NIRF, AICTE, AACSB). Verify any approval in 10 seconds. Free, no login.',
     type: 'website',
     url: 'https://edifyedu.in/verify',
@@ -400,7 +400,7 @@ export default async function VerifyHomePage() {
             color: '#34d399', borderRadius: 999, fontSize: 11, fontWeight: 700,
             letterSpacing: '0.04em', marginBottom: 16,
           }}>
-            ONLY ON EDIFYEDU
+            ONLY ON EDIFYEDU.IN
           </div>
           <h2 style={{
             fontFamily: 'var(--font-display)', fontSize: 'clamp(1.4rem, 3vw, 1.8rem)',

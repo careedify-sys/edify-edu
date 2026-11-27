@@ -195,7 +195,7 @@ export default function UniversityEndCta({ config }: { config: UniversityBlogCta
             </button>
 
             <p className="text-[11px] text-center pt-1" style={{ color: 'rgba(255,255,255,0.4)' }}>
-              Free. No spam. Edify earns zero commission from any university.
+              Free. No spam. edifyedu.in earns zero commission from any university.
             </p>
           </form>
         )}
