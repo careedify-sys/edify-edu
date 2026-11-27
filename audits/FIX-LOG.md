@@ -1,5 +1,17 @@
 # Fix log
 
+## 2026-11-27 B3 batch 21 round 2: QA fixes (audits/qa/2026-11-27-b3-batch-21-premerge.md)
+
+Branch fix/b3-batch-21, new commit on b90b5e9. No title, seoTitle, h1Title or metaDescription changed. No allowlist entry added.
+
+- **F1, bba-full-form scenario 4.** Why: "Neither publishes a BBA-only placement figure" claimed more than the batch20a sheet shows. Row B7 (S13, S14) only shows that NIRF 2025 gives NMIMS and Symbiosis International a university-wide UG 3-year median, not a BBA-only figure. What changed: the sentence is now the coordinator's wording, "NIRF does not report a BBA-only figure for either: their NIRF medians cover all three-year undergraduate programmes together." updatedAt already 2026-11-27.
+- **C1, mba-vs-pgdm MUJ fee cell.** Why: a bare "Rs 1.56-1.84 lakh" under "Total Fees" had no label, and its floor is the discounted net: 1.84 lakh is the list fee and 1.56 lakh is the price after MUJ's 15% discount (FIX-LOG MUJ Jan 2027 entry). What changed: the cell reads "Rs 1.84 lakh list (Rs 1.56 lakh after 15% discount)". check-blog-fees stays 1948 with the first wording, so MUJ was not named in the cell. Note for QA: the scanner now classes both figures NON_FEE (discount context), not MATCH, so the gate no longer checks this cell against getExactFee.
+- **JAIN rank, same table.** Why: "NIRF University 73" is wrong. lib/data.ts (jain-university-online) holds nirf: 62 (University) and nirfMgt: 73 (Management). What changed: "NIRF Management 73". The same wrong "NIRF University 73" string sits in 10 rows on 8 other posts; those are outside this fix and are listed in the hand-back for a later batch.
+- **Campus rows.** Why: Edify does not track NMIMS Mumbai campus, Symbiosis Pune campus or SCMHRD fees, so "Contact our counsellor" implied a service Edify does not offer. What changed: those three fee cells read "Not tracked (campus programme)".
+- **S1, mba-vs-pgdm one-line frame.** Why: "Online MBA from NMIMS plus JAIN plus Amity is widely accepted at Rs 6-15 LPA lateral" is a university-attributed online outcome with no source row. What changed: the range is gone; the sentence ends "is widely accepted for lateral moves."
+- **FIX-LOG.** The batch 21 CU tagline line overstated the truncation gate; corrected in place.
+- Gates: fee 205, blog-fees 1948, em-dash 227, salary 2344 or lower.
+
 ## 2026-11-27 B3 batch 21: batch 20 stop-case resolved, MCA Payscale source, CU tagline
 
 Branch fix/b3-batch-21, from b7c902c, rebased onto the batch 20 round 2 tip (bc888b8). Coordinator decision on the batch 20 stop-case: deleting unverified figures does not weaken check-blog-fees, so delete, never allowlist. No title, seoTitle, h1Title or metaDescription changed. No allowlist entry added.
@@ -20,7 +32,7 @@ Branch fix/b3-batch-21, from b7c902c, rebased onto the batch 20 round 2 tip (bc8
 **3. CU tagline (lib/data.ts, data/string-truncation-allowlist.json).**
 - Why: "India's ONLY online MBA with Triple Industry Certification" has no source, "2 subjects co-taught" overstates CU's "taught by PwC India experts" (batch20 sheet 3f), the string was cut at 120 characters ("PMI ("), and it carried an em dash.
 - Checked first: no title, meta or OG reads tagline. Nothing in app/ or components/ reads it outside app/admin; it reaches the RSC payload and /api/universities with the whole record. So it was rewritten rather than filed for Rishi.
-- What changed: tagline is now "Triple Industry Certified MBA plan: two subjects taught by PwC India experts, plus PMI and Harvard certificates" (111 characters, CU plan name and wording, no superlative, no em dash). The string-truncation allowlist entry for the old text was removed, as that file requires once a string is fixed. check-string-truncation, check-duplicate-tagline, check-llms-txt and check-data-slim-drift pass.
+- What changed: tagline is now "Triple Industry Certified MBA plan: two subjects taught by PwC India experts, plus PMI and Harvard certificates" (111 characters, CU plan name and wording, no superlative, no em dash). The string-truncation allowlist entry for the old text was removed as a tidy-up. (Corrected in round 2: check-string-truncation only notes stale entries, it does not require removing them.) check-string-truncation, check-duplicate-tagline, check-llms-txt and check-data-slim-drift pass.
 
 **4. Salary chunk 20c scope.** Read-only; written to .b8tmp/batch21-20c-chunk.md (not committed).
 

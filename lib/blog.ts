@@ -11542,7 +11542,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>MBA and PGDM are used interchangeably in everyday conversation, but they are legally and structurally different credentials. Whether this difference matters to you depends on where you plan to work, how you plan to get there, and which route is actually available to you.</p>
 
-<div class="callout-key"><strong>One-line frame for MBA vs PGDM 2026:</strong> MBA is a UGC-recognised degree from universities. PGDM is an AICTE-approved diploma from autonomous institutes. IIM plus XLRI offer PGDM (not MBA) and place at Rs 25-40 LPA. Online MBA from NMIMS plus JAIN plus Amity is widely accepted at Rs 6-15 LPA lateral. Match credential type to college brand plus career sector.</div>
+<div class="callout-key"><strong>One-line frame for MBA vs PGDM 2026:</strong> MBA is a UGC-recognised degree from universities. PGDM is an AICTE-approved diploma from autonomous institutes. IIM plus XLRI offer PGDM (not MBA) and place at Rs 25-40 LPA. Online MBA from NMIMS plus JAIN plus Amity is widely accepted for lateral moves. Match credential type to college brand plus career sector.</div>
 
 <h2>The Core Legal Difference</h2>
 
@@ -11645,13 +11645,13 @@ export const BLOG_POSTS: BlogPost[] = [
   <thead><tr><th>University</th><th>NAAC plus NIRF</th><th>Total Fees</th></tr></thead>
   <tbody>
     <tr><td>NMIMS Online (Mumbai)</td><td>NAAC A plus plus, NIRF Mgmt 24</td><td>Contact our counsellor</td></tr>
-    <tr><td>NMIMS Mumbai Campus (Full-Time MBA)</td><td>Same as above</td><td>Contact our counsellor</td></tr>
-    <tr><td>JAIN Online (Bengaluru)</td><td>NAAC A plus plus, NIRF University 73</td><td>Rs 1.60-2.98 lakh</td></tr>
+    <tr><td>NMIMS Mumbai Campus (Full-Time MBA)</td><td>Same as above</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>JAIN Online (Bengaluru)</td><td>NAAC A plus plus, NIRF Management 73</td><td>Rs 1.60-2.98 lakh</td></tr>
     <tr><td>Amity University Online</td><td>NAAC A plus</td><td>Contact our counsellor</td></tr>
-    <tr><td>Manipal University Jaipur Online</td><td>NAAC A plus</td><td>Rs 1.56-1.84 lakh</td></tr>
+    <tr><td>Manipal University Jaipur Online</td><td>NAAC A plus</td><td>Rs 1.84 lakh list (Rs 1.56 lakh after 15% discount)</td></tr>
     <tr><td>Symbiosis SCDL (Pune)</td><td>NAAC A plus plus</td><td>Contact our counsellor</td></tr>
-    <tr><td>Symbiosis Pune Campus (Full-Time MBA)</td><td>Same as above</td><td>Contact our counsellor</td></tr>
-    <tr><td>SCMHRD Pune</td><td>NAAC A plus plus</td><td>Contact our counsellor</td></tr>
+    <tr><td>Symbiosis Pune Campus (Full-Time MBA)</td><td>Same as above</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>SCMHRD Pune</td><td>NAAC A plus plus</td><td>Not tracked (campus programme)</td></tr>
   </tbody>
 </table>
 
@@ -32637,7 +32637,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 </p>
 
 <p>
-  <strong>Scenario 4: BBA from a premium private college (like NMIMS or Symbiosis).</strong> Neither publishes a BBA-only placement figure: NIRF reports their campus medians for all undergraduate programmes together. The brand name of the college does a lot of heavy lifting in your first job search.
+  <strong>Scenario 4: BBA from a premium private college (like NMIMS or Symbiosis).</strong> NIRF does not report a BBA-only figure for either: their NIRF medians cover all three-year undergraduate programmes together. The brand name of the college does a lot of heavy lifting in your first job search.
 </p>
 
 <p class="ilink">
