@@ -113,7 +113,7 @@ export function examSentenceForUniversities(unis: ReadonlyArray<{ id: string; na
   if (unis.every(u => CONFIRMED_FROM_HOME.has(u.id) && CONFIRMED_EXAM_MODE[u.id] === 'Online')) {
     return 'Exams are online and proctored, and can be taken from home.'
   }
-  if (modes.every(m => m === 'Online')) return 'Exams are online at every university listed here.'
+  if (modes.every(m => m === 'Online')) return unis.length === 1 ? 'Exams are online.' : 'Exams are online at every university listed here.'
   const centres = unis.filter(u => CONFIRMED_EXAM_MODE[u.id] === 'Exam Centre').map(u => u.name).sort()
   const parts: string[] = []
   if (centres.length) {
@@ -121,8 +121,11 @@ export function examSentenceForUniversities(unis: ReadonlyArray<{ id: string; na
     parts.push(`${list} ${centres.length === 1 ? 'holds' : 'hold'} end-semester exams in person at designated exam centres.`)
   }
   const unconfirmed = unis.filter(u => CONFIRMED_EXAM_MODE[u.id] === undefined)
+  // B7 round 2 (QA F1): no claim that formats differ. Nothing on record shows
+  // it, and it is false on its face on a hub that lists one university.
   if (unconfirmed.length) {
-    parts.push(unconfirmed.some(u => UNVERIFIED_EXAM_MODE.has(u.id)) ? `Exam format differs by university. ${EXAM_MODE_COUNSELLOR_LINE}` : `Exam format differs by university. ${EXAM_MODE_NEUTRAL_LINE}`)
+    if (unis.length >= 2) parts.push('Each university sets its own exam format.')
+    parts.push(unconfirmed.some(u => UNVERIFIED_EXAM_MODE.has(u.id)) ? EXAM_MODE_COUNSELLOR_LINE : EXAM_MODE_NEUTRAL_LINE)
   }
   return parts.join(' ')
 }

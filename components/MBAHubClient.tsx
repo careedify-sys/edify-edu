@@ -53,7 +53,7 @@ export interface MbaHubFees {
 
 const FAQS = [
   { q: 'Is online MBA valid for jobs and government recognition?', a: 'Yes. UGC-DEB approved online MBA degrees are legally equivalent to campus degrees under UGC 2020 regulations. Per UGC (Online Programmes) Regulations 2018, the degree certificate clearly identifies the programme as "Online" mode: this is by regulator design and carries full legal validity. Valid for UPSC, IBPS, SBI PO, PSU recruitment, and all private-sector employment. Some government notifications may specifically require "regular mode" degrees, so verify each job posting individually.' },
-  { q: 'What is the difference between online MBA and distance MBA?', a: 'Online MBA uses a digital LMS with live weekend sessions, recorded lectures, AI-proctored online exams, and interactive discussion forums. Distance MBA uses printed study material with minimal digital interaction. UGC-DEB 2020 regulations brought online degrees at par with campus degrees in terms of legal validity and employer acceptance.' },
+  { q: 'What is the difference between online MBA and distance MBA?', a: 'Online MBA uses a digital LMS with live weekend sessions, recorded lectures and interactive discussion forums; exam format varies by university, so ask our counsellor. Distance MBA uses printed study material with minimal digital interaction. UGC-DEB 2020 regulations brought online degrees at par with campus degrees in terms of legal validity and employer acceptance.' },
   // Answer built from data in the component (feeAnswer). It was hardcoded as
   // "Rs 66,000 (IGNOU) to Rs 3,70,000 (Symbiosis SSODL)" plus two unsourced
   // claims (a "most popular" band and "one-time discounts are common").

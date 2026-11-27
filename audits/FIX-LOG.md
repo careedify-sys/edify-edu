@@ -1,5 +1,22 @@
 # Fix log
 
+## 2026-11-28 · B7 round 2: QA F1, F5 and F15 (branch fix/b7-exam-mode, not pushed)
+
+QA report: audits/qa/2026-11-28-b7-exam-mode-premerge.md. Merged origin/main (0a8999e) first: FIX-LOG kept both
+sides; lib/specFaqs.ts kept main's IGNOU "Rs 16,000 per semester" line and this branch's exam sentence.
+- **F1, why:** examSentenceForUniversities added "Exam format differs by university." whenever an unconfirmed
+  university was listed. That is false on its face on the 12 single-university spec hubs, and nothing on record shows
+  the formats differ on the others. **What:** the sentence is gone. "Each university sets its own exam format." is used
+  only where 2 or more universities are listed, before the counsellor or neutral line. A single confirmed-Online hub
+  now reads "Exams are online." instead of "at every university listed here".
+- **F5, why:** the earlier entry said DSU's wording was unchanged. It is corrected in place below, with the Q80
+  dependency.
+- **F15, why:** the /programs/mba FAQ (components/MBAHubClient.tsx) defined online MBA as having "AI-proctored online
+  exams", false for VIT and BITS. **What:** it now says "exam format varies by university, so ask our counsellor". That
+  holds on this page, which lists VIT and BITS (exam centres) beside confirmed online-proctored universities.
+- **Q29:** the "what stays" column now records that the Shoolini hub shows the counsellor line and its exams body
+  follows the methodology PDF.
+
 ## 2026-11-28 · B7 follow-up: spec-hub FAQ exam sentence from lib/exam-mode.ts (branch fix/b7-exam-mode, not pushed)
 
 - **Why:** lib/specFaqs.ts answered "Can I do online MBA in X while working full-time?" with "Exams are online and
@@ -35,7 +52,12 @@
   Line: "Talk to our counsellor for how and where exams are held." No mode is invented; examMode in lib/data.ts is unchanged.
 - **DSU is not in that set.** The 16 Nov audit listed it as unverified, but audits/verify/dayananda-sagar-university-online-2026-11-18.md
   row M6 is a MATCH ("Online Examination" on dsuonline.com/online-mba/, plus a "Remote Proctored Online Examination"
-  disclosure). DSU was added to CONFIRMED_EXAM_MODE as 'Online' with that citation, so 6 + DSU = the brief's 7. Its wording is unchanged.
+  disclosure). DSU was added to CONFIRMED_EXAM_MODE as 'Online' with that citation, so 6 + DSU = the brief's 7.
+  Corrected in round 2 (QA F5): this is not wording-neutral. Confirming DSU adds two rendered facts, both backed by
+  M6: "Exams: Online" in the DSU hub Quick Facts, and "Online classes; Online exams" on the DSU profile. The
+  confirmation depends on Q80: B2 (audits/verify/b2-official-urls-2026-11-28.md) still holds dsuonline.com UNVERIFIED as
+  DSU's official site. If Q80 comes back "no", remove DSU from CONFIRMED_EXAM_MODE. DSU's older "from home" and
+  "via webcam from home or office" lines, which M6 does not support, belong to deferred item (4).
 - **VIT:** already 'Exam Centre' since 3.4C1 (live 16 Nov, a6d3771), sourced to registration.vitonline.in in the audit
   CSV. Nothing to change. The 22 confirmed rows are untouched.
 - **Where it renders, what changed:** SectionExams "Exam Mode", SectionClasses "Assessments", SectionAbout intro (the
