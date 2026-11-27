@@ -80,6 +80,10 @@
   - **Gates:** check-blog-fees 1,951 to 1,950 (amity-vs-manipal 14 to 13); the baseline went down only. Tag balance is
     unchanged and no em dashes were added. All 431 JSON files round-trip.
   - **updatedAt** was already 2026-11-27 on both edited posts.
+  - **Follow-up commit:** the fresh build still printed "MUJ Fee ₹1.56L (one-time)" in the post's Quick Facts card. The
+    card reads lib/blog-quick-facts.ts, not the post, so it now says "₹1.56L (after 15% discount)".
+    - The H2 "Fees Breakdown: Comparing Like for Like" was kept. It now introduces mode-by-mode tables, and the text
+      under it says the discounted MUJ price does not line up with Amity's one-time fee.
 
 ## 2026-11-26 · B3 batch 13: derived EMIs in blog copy, dead EdifyRecommends, placement percentages, international salary list; rule 4d fallback held (branch fix/b3-batch-13)
 

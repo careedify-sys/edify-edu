@@ -393,7 +393,7 @@ export const BLOG_QUICK_FACTS: Record<string, { label: string; value: string; gr
   'amity-vs-manipal-online-mba-2026': [
     { label: 'Type',              value: 'Comparison' },
     { label: 'Amity Fee',         value: '₹2.07L (one-time)' },
-    { label: 'MUJ Fee',           value: '₹1.56L (one-time)' },
+    { label: 'MUJ Fee',           value: '₹1.56L (after 15% discount)' },
     { label: 'NAAC (Both)',       value: 'A+', green: true },
     { label: 'Amity NIRF Mgt',    value: '#49' },
     { label: 'MUJ NIRF Mgt',      value: '#81' },
