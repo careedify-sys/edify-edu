@@ -13,6 +13,7 @@ import { readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 import { createHash } from 'node:crypto'
 import { buildPayload, inboundText, statusEvent } from './test-fixtures'
+import { OPT_OUT_SAMPLES, isOptOutText } from './opt-out'
 
 const modPath = process.env.PGLITE_MODULE
 if (!modPath) {
@@ -383,7 +384,7 @@ await test('end to end: signed POST through handleWebhookPost into the real sche
 await test('P2: inbox migration is idempotent and seeds verified settings', async () => {
   await db.exec(readFileSync(join(MIG_DIR, readdirSync(MIG_DIR).find(f => f.endsWith('whatsapp_inbox.sql'))!), 'utf8'))
   const keys = (await db.query<{ key: string }>('select key from wa_settings order by key')).rows.map(r => r.key)
-  assert.deepEqual(keys, ['automation_enabled', 'billing_timezone', 'campaigns_enabled', 'cap_override', 'free_service_allowance', 'last_sweep', 'monthly_cap_inr', 'rates', 'sending_enabled'])
+  assert.deepEqual(keys, ['automation_enabled', 'billing_timezone', 'campaigns_enabled', 'cap_override', 'free_service_allowance', 'last_retention', 'last_sweep', 'monthly_cap_inr', 'rates', 'sending_enabled'])
   const rates = (await one<{ value: any }>(`select value from wa_settings where key = 'rates'`)).value
   assert.equal(rates.service, 0.115)
   assert.equal(rates.marketing, 0.8631)
@@ -437,8 +438,11 @@ await test('P2: lead lookup matches 91-prefixed and bare 10-digit phones only', 
 await test('P2: outbound is idempotent on client_ref and a status that arrives first is kept', async () => {
   const conv = (await one<{ id: string }>(`select cv.id from wa_conversations cv join wa_contacts c on c.id = cv.contact_id where c.phone_e164 = '+919800000101'`)).id
   const ref = '00000000-0000-4000-8000-000000000001'
-  const first = await one<any>('select * from wa_begin_outbound($1, $2, $3, $4, $5, $6)', [conv, ref, 'text', 'Fee details below', null, 'owner'])
-  const again = await one<any>('select * from wa_begin_outbound($1, $2, $3, $4, $5, $6)', [conv, ref, 'text', 'Fee details below', null, 'owner'])
+  await db.query(`update wa_settings set value = 'true' where key = 'sending_enabled'`)
+  await db.query(`update wa_conversations set last_inbound_at = now() where id = $1`, [conv])
+  const first = await one<any>('select * from wa_reserve_outbound($1, $2, $3, $4, $5, $6)', [conv, ref, 'text', 'Fee details below', null, 'owner'])
+  const again = await one<any>('select * from wa_reserve_outbound($1, $2, $3, $4, $5, $6)', [conv, ref, 'text', 'Fee details below', null, 'owner'])
+  assert.equal(first.blocked, null)
   assert.equal(first.is_new, true)
   assert.equal(again.is_new, false)
   assert.equal(again.message_id, first.message_id)
@@ -459,7 +463,8 @@ await test('P2: month usage counts delivered, in flight, failed and Meta billabl
   const conv = (await one<{ id: string }>(`select cv.id from wa_conversations cv join wa_contacts c on c.id = cv.contact_id where c.phone_e164 = '+919800000101'`)).id
   const mk = async (n: number, state: string, wamid: string | null) => {
     const ref = `00000000-0000-4000-8000-0000000001${String(n).padStart(2, '0')}`
-    await db.query('select * from wa_begin_outbound($1, $2, $3, $4, null, $5)', [conv, ref, 'text', 'x', 'owner'])
+    // Direct insert: this test is about counting, not the send rules.
+    await db.query(`insert into wa_messages (conversation_id, direction, client_ref, type, body, sent_by, send_state) values ($1, 'outbound', $2, 'text', 'x', 'owner', 'sending')`, [conv, ref])
     await db.query('select wa_finish_outbound($1, $2, $3, null, null)', [ref, wamid, state])
   }
   const usage = async () => (await one<any>(`select wa_month_usage('Asia/Kolkata') as u`)).u
@@ -510,6 +515,180 @@ await test('P2: anon and authenticated cannot call inbox functions; new tables h
     const r = await one<{ rls: boolean }>(`select relrowsecurity rls from pg_class where relname = $1`, [t])
     assert.equal(r.rls, true, t)
   }
+})
+
+await test('P2: opt-out words match the same way in SQL and in the app', async () => {
+  for (const [text, want] of OPT_OUT_SAMPLES) {
+    const r = await one<{ v: boolean }>('select wa_is_opt_out($1) as v', [text])
+    assert.equal(r.v, want, `SQL: ${JSON.stringify(text)}`)
+    assert.equal(isOptOutText(text), want, `JS: ${JSON.stringify(text)}`)
+  }
+})
+
+const nowTs = () => String(Math.floor(Date.now() / 1000))
+const reserve = (conv: string, ref: string, body = 'hello') =>
+  one<any>('select * from wa_reserve_outbound($1, $2, $3, $4, $5, $6)', [conv, ref, 'text', body, null, 'owner'])
+let refN = 9000
+const nextRef = () => `00000000-0000-4000-8000-${String(++refN).padStart(12, '0')}`
+
+await test('P2: reserve blocks when sending is off, the window is closed, or the ref is reused elsewhere; blocked writes nothing', async () => {
+  await deliver(buildPayload({ messages: [inboundText({ timestamp: nowTs(), id: 'wamid.Q2R1', from: '919800000201', text: 'Hi, MBA fees?', name: 'Rule One' })] }))
+  await deliver(buildPayload({ messages: [inboundText({ timestamp: nowTs(), id: 'wamid.Q2R2', from: '919800000202', text: 'Hello', name: 'Rule Two' })] }))
+  const c1 = (await one<{ id: string }>(`select cv.id from wa_conversations cv join wa_contacts c on c.id = cv.contact_id where c.phone_e164 = '+919800000201'`)).id
+  const c2 = (await one<{ id: string }>(`select cv.id from wa_conversations cv join wa_contacts c on c.id = cv.contact_id where c.phone_e164 = '+919800000202'`)).id
+  const before = await count(`select count(*) n from wa_messages where direction = 'outbound'`)
+
+  await db.query(`update wa_settings set value = 'false' where key = 'sending_enabled'`)
+  assert.equal((await reserve(c1, nextRef())).blocked, 'sending_off')
+  await db.query(`update wa_settings set value = 'true' where key = 'sending_enabled'`)
+
+  await db.query(`update wa_conversations set last_inbound_at = now() - interval '25 hours' where id = $1`, [c2])
+  assert.equal((await reserve(c2, nextRef())).blocked, 'window_closed')
+  assert.equal((await reserve('00000000-0000-4000-8000-00000000dead', nextRef())).blocked, 'no_conversation')
+  assert.equal(await count(`select count(*) n from wa_messages where direction = 'outbound'`), before, 'blocked sends write no row')
+
+  const ref = nextRef()
+  const ok = await reserve(c1, ref)
+  assert.equal(ok.blocked, null)
+  assert.equal(ok.is_new, true)
+  const again = await reserve(c1, ref)
+  assert.equal(again.is_new, false)
+  assert.equal(again.message_id, ok.message_id)
+  assert.equal((await reserve(c2, ref)).blocked, 'bad_ref', 'a key from another conversation is refused')
+  await db.query(`select wa_finish_outbound($1, 'wamid.Q2R1OUT', 'accepted', null, null)`, [ref])
+})
+
+await test('P2: STOP blocks replies at once, the sweep records a No for replies and calls, and only a new Yes unblocks', async () => {
+  const c1 = (await one<{ id: string; contact_id: string }>(`select cv.id, cv.contact_id from wa_conversations cv join wa_contacts c on c.id = cv.contact_id where c.phone_e164 = '+919800000201'`))
+  await deliver(buildPayload({ messages: [inboundText({ timestamp: nowTs(), id: 'wamid.Q2R1STOP', from: '919800000201', text: 'STOP', name: 'Rule One' })] }))
+  assert.equal((await reserve(c1.id, nextRef())).blocked, 'opted_out', 'blocked before the sweep runs')
+
+  assert.equal((await one<{ n: number }>('select wa_record_opt_outs() as n')).n, 1)
+  assert.equal((await one<{ n: number }>('select wa_record_opt_outs() as n')).n, 0, 'second run records nothing new')
+  const rows = (await db.query<any>(`select purpose, granted, recorded_by from wa_consent where contact_id = $1 order by purpose`, [c1.contact_id])).rows
+  assert.deepEqual(rows.map((r: any) => [r.purpose, r.granted, r.recorded_by]), [['counselling_call', false, 'system'], ['service', false, 'system']])
+  assert.equal((await reserve(c1.id, nextRef())).blocked, 'opted_out')
+
+  // A later message that is not an opt-out does not unblock on its own.
+  await deliver(buildPayload({ messages: [inboundText({ timestamp: nowTs(), id: 'wamid.Q2R1BACK', from: '919800000201', text: 'Sorry, I do want the fee details', name: 'Rule One' })] }))
+  assert.equal((await reserve(c1.id, nextRef())).blocked, 'opted_out')
+  // A person records the new Yes with evidence.
+  await db.query(`insert into wa_consent (contact_id, purpose, granted, source, evidence, recorded_by) values ($1, 'service', true, 'whatsapp_message', 'Asked for fee details again', 'owner')`, [c1.contact_id])
+  assert.equal((await reserve(c1.id, nextRef())).blocked, null)
+})
+
+await test('P2: the cap allows exactly what fits, then blocks; an override for this month raises it', async () => {
+  const c1 = (await one<{ id: string }>(`select cv.id from wa_conversations cv join wa_contacts c on c.id = cv.contact_id where c.phone_e164 = '+919800000201'`)).id
+  // Settle every in-flight row so the count is exact.
+  await db.query(`update wa_messages set send_state = 'failed' where direction = 'outbound' and send_state = 'sending'`)
+  const u = (await one<{ u: any }>(`select wa_month_usage('Asia/Kolkata') as u`)).u
+  const sent = u.service_delivered + u.service_in_flight
+  assert.ok(u.meta_billable <= sent, 'precondition: our count is not below Meta billable')
+  // No free tier; room for exactly 3 more paid replies at Rs 0.115.
+  await db.query(`update wa_settings set value = jsonb_set(value, '{per_month}', '0') where key = 'free_service_allowance'`)
+  await db.query(`update wa_settings set value = to_jsonb($1::numeric) where key = 'monthly_cap_inr'`, [((sent + 3) * 0.115 + 0.01).toFixed(4)])
+  const results = []
+  for (let i = 0; i < 5; i++) results.push((await reserve(c1, nextRef())).blocked)
+  assert.deepEqual(results, [null, null, null, 'cap_reached', 'cap_reached'])
+
+  await db.query(`update wa_settings set value = jsonb_build_object('month_start', $1::text, 'extra_inr', 0.2, 'by', 'owner', 'at', now()::text) where key = 'cap_override'`, [u.month_start])
+  assert.equal((await reserve(c1, nextRef())).blocked, null, 'override adds room for one more')
+  assert.equal((await reserve(c1, nextRef())).blocked, 'cap_reached')
+  // An override dated to another month does nothing.
+  await db.query(`update wa_settings set value = jsonb_set(value, '{month_start}', '"2026-01-01T00:00:00+05:30"') where key = 'cap_override'`)
+  assert.equal((await reserve(c1, nextRef())).blocked, 'cap_reached')
+
+  // Missing rate or cap blocks a paid reply instead of guessing.
+  await db.query(`update wa_settings set value = value - 'service' where key = 'rates'`)
+  assert.equal((await reserve(c1, nextRef())).blocked, 'rate_missing')
+  await db.query(`update wa_settings set value = jsonb_set(value, '{service}', '0.115') where key = 'rates'`)
+  await db.query(`update wa_settings set value = 'null' where key = 'monthly_cap_inr'`)
+  assert.equal((await reserve(c1, nextRef())).blocked, 'cap_missing')
+
+  // Restore the seeded values for later tests.
+  await db.query(`update wa_settings set value = '500' where key = 'monthly_cap_inr'`)
+  await db.query(`update wa_settings set value = 'null' where key = 'cap_override'`)
+  await db.query(`update wa_settings set value = jsonb_set(value, '{per_month}', '1000') where key = 'free_service_allowance'`)
+  await db.query(`update wa_messages set send_state = 'failed' where direction = 'outbound' and send_state = 'sending'`)
+})
+
+await test('P2: reserve takes the advisory lock before it reads anything', async () => {
+  const src = (await one<{ s: string }>(`select prosrc s from pg_proc where proname = 'wa_reserve_outbound'`)).s
+  const lock = src.indexOf('pg_advisory_xact_lock')
+  assert.ok(lock > 0, 'lock present')
+  assert.ok(lock < src.indexOf('from wa_messages') && lock < src.indexOf('from wa_settings'), 'lock comes first')
+})
+
+await test('P2: retention deletes 24-month-old data and inactive contacts, keeps recent data, runs once a day', async () => {
+  await deliver(buildPayload({ messages: [inboundText({ id: 'wamid.OLD1', from: '919800000301', text: 'old chat', name: 'Old Student' })] }))
+  await deliver(buildPayload({ messages: [inboundText({ id: 'wamid.MIX1', from: '919800000302', text: 'recent chat', name: 'Active Student' })] }))
+  const old = await one<{ id: string; cv: string }>(`select c.id, cv.id cv from wa_contacts c join wa_conversations cv on cv.contact_id = c.id where c.phone_e164 = '+919800000301'`)
+  const act = await one<{ id: string; cv: string }>(`select c.id, cv.id cv from wa_contacts c join wa_conversations cv on cv.contact_id = c.id where c.phone_e164 = '+919800000302'`)
+  const ago = `now() - interval '25 months'`
+  await db.query(`update wa_contacts set created_at = ${ago} where id in ($1, $2)`, [old.id, act.id])
+  await db.query(`update wa_conversations set created_at = ${ago}, last_message_at = ${ago}, last_inbound_at = ${ago} where id = $1`, [old.cv])
+  await db.query(`update wa_messages set created_at = ${ago} where wamid = 'wamid.OLD1'`)
+  // The active contact has one old message and one new one.
+  await db.query(`insert into wa_messages (conversation_id, direction, wamid, type, body, created_at) values ($1, 'inbound', 'wamid.MIX0', 'text', 'very old', ${ago})`, [act.cv])
+  await db.query(`insert into wa_notes (conversation_id, actor, body, created_at) values ($1, 'owner', 'old note', ${ago}), ($1, 'owner', 'new note', now())`, [act.cv])
+  await db.query(`insert into wa_audit_log (actor, action, created_at) values ('owner', 'old', ${ago})`)
+  await db.query(`update wa_settings set value = 'null' where key = 'last_retention'`)
+
+  const r = (await one<{ r: any }>('select wa_apply_retention() as r')).r
+  assert.ok(r && r.at, 'ran')
+  assert.equal(await count(`select count(*) n from wa_contacts where id = $1`, [old.id]), 0, 'inactive contact deleted')
+  assert.equal(await count(`select count(*) n from wa_messages where wamid = 'wamid.OLD1'`), 0)
+  assert.equal(await count(`select count(*) n from wa_contacts where id = $1`, [act.id]), 1, 'active contact kept')
+  assert.equal(await count(`select count(*) n from wa_messages where wamid = 'wamid.MIX0'`), 0, 'old message in an active chat deleted')
+  assert.equal(await count(`select count(*) n from wa_messages where wamid = 'wamid.MIX1'`), 1, 'recent message kept')
+  assert.deepEqual((await db.query<any>(`select body from wa_notes where conversation_id = $1`, [act.cv])).rows.map((x: any) => x.body), ['new note'])
+  assert.equal(await count(`select count(*) n from wa_audit_log where action = 'old'`), 0)
+  assert.equal((await one<{ r: any }>('select wa_apply_retention() as r')).r, null, 'not due again within 20 hours')
+  const lr = (await one<{ value: any }>(`select value from wa_settings where key = 'last_retention'`)).value
+  assert.equal(lr.contacts >= 1, true)
+})
+
+await test('P2: anon and authenticated cannot call the send, opt-out or retention functions', async () => {
+  for (const role of ['anon', 'authenticated']) {
+    await db.exec(`set role ${role}`)
+    try {
+      await assert.rejects(db.query(`select * from wa_reserve_outbound(null, null, 'text', 'x', null, 'x')`))
+      await assert.rejects(db.query(`select wa_record_opt_outs()`))
+      await assert.rejects(db.query(`select wa_apply_retention()`))
+    } finally { await db.exec('reset role') }
+  }
+})
+
+await test('QA R1: CRM blocks calls and messages from WhatsApp consent; enquiry-form leads are untouched', async () => {
+  await deliver(buildPayload({ messages: [inboundText({ id: 'wamid.CB1', from: '919800000401', text: 'hi', name: 'Form Lead' })] }))
+  await deliver(buildPayload({ messages: [inboundText({ id: 'wamid.CB2', from: '919800000402', text: 'hi', name: 'Wa Lead' })] }))
+  await deliver(buildPayload({ messages: [inboundText({ id: 'wamid.CB3', from: '919800000403', text: 'STOP', name: 'Stop Lead' })] }))
+  const lead = async (name: string, phone: string, source: string | null) =>
+    (await one<{ id: string }>(`insert into leads (name, phone, source) values ($1, $2, $3) returning id`, [name, phone, source])).id
+  const form = await lead('Form Lead', '919800000401', 'website')
+  const wa = await lead('Wa Lead', '919800000402', 'whatsapp')
+  const stop = await lead('Stop Lead', '919800000403', 'website')
+  const plain = await lead('Plain Lead', '919800000404', 'website')
+  const orphan = await lead('Orphan Wa Lead', '919800000405', 'whatsapp')
+  for (const [ph, id] of [['+919800000401', form], ['+919800000402', wa], ['+919800000403', stop]] as const) {
+    await db.query(`update wa_contacts set lead_id = $1, lead_link_method = 'manual' where phone_e164 = $2`, [id, ph])
+  }
+  const blocks = async () => Object.fromEntries((await db.query<any>('select * from wa_crm_contact_blocks()')).rows.map((r: any) => [r.lead_id, [r.no_call, r.no_message]]))
+  let b = await blocks()
+  assert.equal(b[form], undefined, 'enquiry-form lead linked to a chat: no block')
+  assert.deepEqual(b[wa], [true, false], 'created from WhatsApp, no call Yes')
+  assert.deepEqual(b[stop], [true, true], 'STOP blocks calls and messages')
+  assert.equal(b[plain], undefined, 'unlinked enquiry lead: no block')
+  assert.deepEqual(b[orphan], [true, false], 'WhatsApp lead with no contact link: no call Yes on record')
+  const waContact = (await one<{ id: string }>(`select id from wa_contacts where phone_e164 = '+919800000402'`)).id
+  await db.query(`insert into wa_consent (contact_id, purpose, granted, source, evidence, recorded_by) values ($1, 'counselling_call', true, 'whatsapp_message', 'Asked for a call', 'owner')`, [waContact])
+  const formContact = (await one<{ id: string }>(`select id from wa_contacts where phone_e164 = '+919800000401'`)).id
+  await db.query(`insert into wa_consent (contact_id, purpose, granted, source, evidence, recorded_by) values ($1, 'counselling_call', false, 'phone_call', 'Said no calls', 'owner')`, [formContact])
+  b = await blocks()
+  assert.equal(b[wa], undefined, 'a recorded call Yes clears it')
+  assert.deepEqual(b[form], [true, false], 'a recorded call No blocks even an enquiry-form lead')
+  await db.exec('set role anon')
+  try { await assert.rejects(db.query('select * from wa_crm_contact_blocks()')) } finally { await db.exec('reset role') }
 })
 
 await test('down migration removes everything it added and nothing else', async () => {

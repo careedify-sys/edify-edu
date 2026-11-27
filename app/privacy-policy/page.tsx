@@ -80,7 +80,7 @@ export default function PrivacyPolicyPage() {
           </ul>
           <h3 className="font-semibold text-navy mt-4 mb-2">d) Stopping messages</h3>
           <p className="text-ink-2">
-            Reply STOP, or tell us in any words that you do not want to hear from us. We record it and stop messaging and calling you. You can also email <a href="mailto:hello@edifyedu.in" className="text-amber font-semibold">hello@edifyedu.in</a>.
+            Reply STOP (or UNSUBSCRIBE, or &quot;band karo&quot;) and we record it automatically and stop messaging and calling you. If you tell us in other words, the person reading your message records it the same way. You can also email <a href="mailto:hello@edifyedu.in" className="text-amber font-semibold">hello@edifyedu.in</a>.
           </p>
           <h3 className="font-semibold text-navy mt-4 mb-2">e) How long we keep it</h3>
           <ul className="text-ink-2 space-y-1">
@@ -90,13 +90,14 @@ export default function PrivacyPolicyPage() {
           </ul>
           <h3 className="font-semibold text-navy mt-4 mb-2">f) Deleting your data</h3>
           <p className="text-ink-2">
-            Email <a href="mailto:hello@edifyedu.in" className="text-amber font-semibold">hello@edifyedu.in</a> with subject "Privacy Request", or ask us in the chat. We delete the messages, notes and contact details we hold about you within 30 days. Copies on your own phone, and data WhatsApp itself holds, are covered by WhatsApp&apos;s privacy policy, not ours.
+            Email <a href="mailto:hello@edifyedu.in" className="text-amber font-semibold">hello@edifyedu.in</a> with subject "Privacy Request", or ask us in the chat. We delete the WhatsApp messages, notes and contact details we hold about you within 30 days. If you also want your enquiry record deleted, say so in the same request and we delete it too. Copies on your own phone, and data WhatsApp itself holds, are covered by WhatsApp&apos;s privacy policy, not ours.
           </p>
           <h3 className="font-semibold text-navy mt-4 mb-2">g) Who processes it for us</h3>
           <ul className="text-ink-2 space-y-1">
             <li><strong>Meta Platforms (WhatsApp Business Platform)</strong> carries the messages between you and us. <a href="https://www.whatsapp.com/legal/business-policy" target="_blank" rel="noopener noreferrer" className="text-amber">WhatsApp Business Policy</a>.</li>
             <li><strong>Supabase</strong> hosts the database where we store the messages and notes.</li>
             <li><strong>Vercel</strong> hosts the website and the server that receives the messages.</li>
+            <li><strong>Cloudflare</strong> carries traffic to our website, including the messages WhatsApp forwards to us, on its way to Vercel.</li>
           </ul>
           <p className="text-ink-2 mt-3">
             Only Edify&apos;s counselling team can see your WhatsApp conversation. We do not share it with universities without your explicit consent.

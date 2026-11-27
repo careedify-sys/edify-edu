@@ -208,11 +208,13 @@ type Props = {
   initialLeads: Lead[];
   initialActivity: Activity[];
   progUnisIndex: Record<string, ProgUni[]>;
+  // From WhatsApp consent: leads that must not be called or messaged.
+  contactBlocks?: Record<string, { noCall: boolean; noMessage: boolean }>;
 };
 
 const PROG_KEYS: string[] = ['MBA','MCA','BBA','BCA','BA','B.Com','M.Com','MA','MSc','BSc','DBA'];
 
-export default function LeadsClient({ initialLeads, initialActivity, progUnisIndex }: Props) {
+export default function LeadsClient({ initialLeads, initialActivity, progUnisIndex, contactBlocks = {} }: Props) {
   const [leads, setLeads] = useState<Lead[]>(initialLeads);
   const [activityByLead, setActivityByLead] = useState<Record<string, Activity[]>>(() => {
     const m: Record<string, Activity[]> = {};
@@ -579,6 +581,7 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
               lead={selLead}
               activity={selActivity}
               progUnis={selLead.program ? (progUnisIndex[selLead.program] || []) : []}
+              block={contactBlocks[selLead.id] ?? null}
               waMode={waMode}
               setWaMode={setWaMode}
               capture={capture}
@@ -616,6 +619,7 @@ export default function LeadsClient({ initialLeads, initialActivity, progUnisInd
 // ── Detail pane ────────────────────────────────────────────────────────────
 function DetailPane(props: {
   lead: Lead; activity: Activity[]; progUnis: ProgUni[];
+  block: { noCall: boolean; noMessage: boolean } | null;
   waMode: TplKey | null; setWaMode: (k: TplKey | null) => void;
   capture: OutcomeKey | null; setCapture: (k: OutcomeKey | null) => void;
   showUniSel: boolean; setShowUniSel: (b: boolean) => void;
@@ -633,7 +637,10 @@ function DetailPane(props: {
   const tpl = templates(l);
   // Registered leads can still be called (chasing payment). Only Enrolled
   // and Not interested truly close the line.
-  const canCall = l.stage !== 'Enrolled' && l.stage !== 'Not interested';
+  // WhatsApp consent can also close it: a No to calls, an opt-out, or a lead
+  // created from WhatsApp with no recorded call permission.
+  const canCall = l.stage !== 'Enrolled' && l.stage !== 'Not interested' && !props.block?.noCall;
+  const canMessage = !props.block?.noMessage;
   const wa = waDigits(l.phone);
   const lastNote = [...activity].reverse().find(a => a.remark)?.remark || l.message;
 
@@ -714,10 +721,17 @@ function DetailPane(props: {
           href={canCall ? `tel:+${wa}` : undefined}
           aria-disabled={!canCall}
         >{iPhone} Call now</a>
-        <button className="btn-wa" onClick={() => setWaMode(waMode === null ? 'Welcome' : null)} title="WhatsApp">{iWa}</button>
+        <button className="btn-wa" disabled={!canMessage} onClick={() => setWaMode(waMode === null ? 'Welcome' : null)} title={canMessage ? 'WhatsApp' : 'This student opted out of WhatsApp messages'}>{iWa}</button>
       </div>
+      {props.block && (
+        <div style={{ fontSize: 12, color: 'var(--red)', marginTop: 6 }}>
+          {props.block.noMessage
+            ? 'This student opted out on WhatsApp. Do not call or message them.'
+            : 'No call permission is recorded on WhatsApp. Record it in the WhatsApp inbox, under Consent, before calling.'}
+        </div>
+      )}
 
-      <div className={`wa-box${waMode !== null ? ' show' : ''}`}>
+      <div className={`wa-box${waMode !== null && canMessage ? ' show' : ''}`}>
         <div className="wt">
           {(Object.keys(tpl) as TplKey[]).map(k => (
             <span key={k} className={`wa-t${waMode === k ? ' on' : ''}`} onClick={() => setWaMode(k)}>{k}</span>

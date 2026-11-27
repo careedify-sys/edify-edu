@@ -39,7 +39,20 @@ export default async function LeadsPage() {
   }
 
   const leads = (leadsData ?? []) as unknown as Lead[];
+
+  // WhatsApp consent blocks for linked leads (privacy policy 3(c) and 3(d)).
+  // Best effort: before the Phase 2 migration, or on any error, the list is
+  // empty and the CRM works exactly as before.
+  const contactBlocks: Record<string, { noCall: boolean; noMessage: boolean }> = {};
+  try {
+    const { data: blocks, error: blocksErr } = await sb.rpc('wa_crm_contact_blocks');
+    if (!blocksErr) {
+      for (const b of (blocks ?? []) as Array<{ lead_id: string; no_call: boolean; no_message: boolean }>) {
+        contactBlocks[b.lead_id] = { noCall: b.no_call === true, noMessage: b.no_message === true };
+      }
+    }
+  } catch { /* keep the CRM working */ }
   const activity = (actData ?? []) as Activity[];
 
-  return <LeadsClient initialLeads={leads} initialActivity={activity} progUnisIndex={progUnisIndex} />;
+  return <LeadsClient initialLeads={leads} initialActivity={activity} progUnisIndex={progUnisIndex} contactBlocks={contactBlocks} />;
 }

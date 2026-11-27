@@ -58,7 +58,16 @@ function windowLeft(lastInbound: string | null, now: number) {
 const displayName = (c: Pick<ConvRow, 'lead_name' | 'profile_name' | 'username' | 'phone_e164'>) =>
   c.lead_name || c.profile_name || (c.username ? `@${c.username}` : '') || fmtPhone(c.phone_e164) || 'WhatsApp user'
 
-const newRef = () => (typeof crypto !== 'undefined' && 'randomUUID' in crypto ? crypto.randomUUID() : `${Date.now()}-${Math.random()}`)
+// A v4 UUID. crypto.randomUUID needs a secure context; the fallback builds one
+// from getRandomValues so the server's UUID check still passes.
+const newRef = (): string => {
+  const c: Crypto = globalThis.crypto
+  if (typeof c.randomUUID === 'function') return c.randomUUID()
+  const b = c.getRandomValues(new Uint8Array(16))
+  b[6] = (b[6] & 0x0f) | 0x40; b[8] = (b[8] & 0x3f) | 0x80
+  const h = Array.from(b, x => x.toString(16).padStart(2, '0')).join('')
+  return `${h.slice(0, 8)}-${h.slice(8, 12)}-${h.slice(12, 16)}-${h.slice(16, 20)}-${h.slice(20)}`
+}
 
 // ── Small pieces ────────────────────────────────────────────────────────────
 
@@ -136,6 +145,7 @@ export default function InboxClient(props: {
   const loadMore = async () => {
     const last = rows[rows.length - 1]
     if (!last) return
+    // last_message_at already falls back to created_at in SQL, so it is the paging key.
     const r = await inboxList(listArgs({ at: last.last_message_at, id: last.id }))
     if (r.ok) { setRows(prev => [...prev, ...r.rows.filter(x => !prev.some(p => p.id === x.id))]); setHasMore(r.rows.length >= 30) }
   }
@@ -306,19 +316,26 @@ function Thread({ thread, settings, now, say, onChanged, onBack }: {
   const { conv, contact, messages, lead } = thread
   const [text, setText] = useState('')
   const [busy, setBusy] = useState(false)
-  const ref = useRef(newRef())
+  // One idempotency key per exact message. A retry after a network error
+  // reuses it (so it cannot send twice); a changed text or the other button
+  // gets a new key (so it is not mistaken for the first attempt).
+  const ref = useRef<{ what: string; key: string } | null>(null)
+  const keyFor = (what: string) => {
+    if (!ref.current || ref.current.what !== what) ref.current = { what, key: newRef() }
+    return ref.current.key
+  }
   const end = useRef<HTMLDivElement>(null)
   useEffect(() => { end.current?.scrollIntoView({ block: 'end' }) }, [messages.length])
 
   const w = windowLeft(conv.last_inbound_at, now)
-  const optedOut = thread.consent.service && !thread.consent.service.granted
+  const optedOut = (thread.consent.service && !thread.consent.service.granted) || thread.optOutHint
   const spend = settings?.spend
   const blocked =
     !settings ? 'Settings could not be loaded'
     : !settings.migrationReady ? 'Run the Phase 2 migration first'
     : !settings.sendingEnabled ? 'Sending is switched off (Settings)'
     : !w.open ? 'The 24-hour window is closed. A reply needs an approved template, which comes in a later phase.'
-    : optedOut ? 'The student asked not to be messaged'
+    : optedOut ? 'The student asked not to be messaged. Sending is blocked until they agree again and you record it under Consent.'
     : spend && !spend.next.allowed ? spend.next.reason
     : null
 
@@ -326,9 +343,13 @@ function Thread({ thread, settings, now, say, onChanged, onBack }: {
     if (busy) return
     setBusy(true)
     try {
-      const r = await inboxSend({ convId: conv.id, clientRef: ref.current, kind, text })
-      if (!r.ok) { say(r.error, true); return }
-      ref.current = newRef()
+      const clientRef = keyFor(`${conv.id}\u0000${kind}\u0000${kind === 'text' ? text.trim() : ''}`)
+      const r = await inboxSend({ convId: conv.id, clientRef, kind, text })
+      // Drop the key only on a definite answer: sent/failed/unknown (r.ok) or a
+      // rule block (nothing written). Any other error may have come after Meta
+      // accepted, so the key is kept and a retry returns the same message.
+      if (r.ok || 'blocked' in r) ref.current = null
+      if (!r.ok) { say(r.error, true); await onChanged(); return }
       if (r.state === 'accepted') { if (kind === 'text') setText(''); say(kind === 'text' ? 'Sent' : 'Phone request sent') }
       else if (r.state === 'failed') say(r.error ?? 'Meta refused the message', true)
       else if (r.state === 'unknown') { if (kind === 'text') setText(''); say(r.error ?? 'Not confirmed', true) }
@@ -357,7 +378,7 @@ function Thread({ thread, settings, now, say, onChanged, onBack }: {
           }}>{conv.status === 'archived' ? 'Unarchive' : 'Archive'}</button>
         </div>
         {thread.optOutHint && (
-          <div className="banner banner-red">The student may have asked to stop (for example, "STOP"). Record it under Consent, Replies on WhatsApp: No.</div>
+          <div className="banner banner-red">The student sent an opt-out message (for example, "STOP"). Replies and calls are blocked. It is recorded under Consent within 5 minutes.</div>
         )}
         <div className="messages">
           {messages.length === 0 && <div className="placeholder">No messages stored yet.</div>}
@@ -401,13 +422,12 @@ function ContactPanel({ thread, canMessage, busy, say, onChanged, onRequestPhone
   const copy = async (v: string, what: string) => {
     try { await navigator.clipboard.writeText(v); say(`${what} copied`) } catch { say('Copy failed. Select the text instead.', true) }
   }
-  const callNow = (e: React.MouseEvent) => {
-    if (callConsent?.granted) return
-    const msg = callConsent && !callConsent.granted
-      ? 'This student said no to calls. Call anyway?'
-      : 'No call consent is recorded. Starting a chat is not consent to a call. Call anyway?'
-    if (!window.confirm(msg)) e.preventDefault()
-  }
+  // Calls need a recorded Yes for counselling calls (privacy policy 3(c)).
+  // Starting a chat is not that Yes, and an opt-out cancels it.
+  const callBlock = thread.canCall ? null
+    : callConsent && !callConsent.granted ? 'The student said no to calls.'
+    : thread.optOutHint || (thread.consent.service && !thread.consent.service.granted) ? 'The student opted out, so calls are blocked too.'
+    : 'Record the student\'s permission for counselling calls under Consent first. Starting a chat is not permission to call.'
 
   return (
     <aside className="panel">
@@ -419,9 +439,12 @@ function ContactPanel({ thread, canMessage, busy, say, onChanged, onRequestPhone
             <div className="phone num">{fmtPhone(phone)}</div>
             <div className="muted small">Number {PHONE_SOURCE[contact.phone_source ?? ''] ?? 'on file'}</div>
             <div className="btn-row">
-              <a className="btn btn-navy" href={`tel:${phone}`} onClick={callNow}>Call now</a>
+              {callBlock
+                ? <button className="btn btn-navy" disabled aria-describedby="call-block">Call now</button>
+                : <a className="btn btn-navy" href={`tel:${phone}`}>Call now</a>}
               <button className="btn btn-ghost" onClick={() => copy(phone, 'Number')}>Copy number</button>
             </div>
+            {callBlock && <div id="call-block" className="muted small">{callBlock}</div>}
           </>
         ) : (
           <>

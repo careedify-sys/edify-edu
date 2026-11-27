@@ -4,6 +4,7 @@
 // development never reads or writes real student data.
 import type { createSupabaseServiceClient } from '@/lib/supabase/service'
 import type { Usage } from './spend'
+import { safeErrorTitle } from './graph'
 
 if (typeof window !== 'undefined') {
   throw new Error('lib/whatsapp/inbox-repo.ts must not be imported in the browser')
@@ -97,7 +98,12 @@ export type ListFilter = {
   limit: number
 }
 
-export type BeginOutbound = { message_id: string; is_new: boolean; send_state: string; wamid: string | null }
+// blocked: null when the row was reserved (or an earlier row came back), else
+// the rule that stopped it, decided in SQL under a lock (wa_reserve_outbound).
+export type ReserveBlock = 'bad_ref' | 'sending_off' | 'no_conversation' | 'window_closed' | 'opted_out' | 'rate_missing' | 'cap_missing' | 'cap_reached'
+export type ReserveOutbound =
+  | { blocked: null; message_id: string; is_new: boolean; send_state: string; wamid: string | null }
+  | { blocked: ReserveBlock }
 
 export interface InboxRepo {
   readonly mode: 'supabase' | 'mock'
@@ -120,7 +126,7 @@ export interface InboxRepo {
   getSettings(): Promise<Record<string, unknown>>
   setSetting(key: string, value: unknown): Promise<void>
   usage(tz: string): Promise<Usage>
-  beginOutbound(convId: string, clientRef: string, type: string, body: string | null, payload: unknown, sentBy: string): Promise<BeginOutbound>
+  reserveOutbound(convId: string, clientRef: string, type: string, body: string | null, payload: unknown, sentBy: string): Promise<ReserveOutbound>
   finishOutbound(clientRef: string, wamid: string | null, state: 'accepted' | 'failed' | 'unknown', code: number | null, title: string | null): Promise<void>
   audit(actor: string, action: string, target: string | null, detail: Record<string, unknown> | null): Promise<void>
   deleteContact(contactId: string): Promise<void>
@@ -175,7 +181,8 @@ export function supabaseInboxRepo(sb: Sb): InboxRepo {
       const { data, error } = await sb.from('wa_messages').select(MSG_COLS)
         .eq('conversation_id', convId).order('created_at', { ascending: false }).limit(limit)
       if (error) fail('messages', error)
-      return ((data ?? []) as MessageRow[]).reverse()
+      // Delivery-status errors are written by Phase 1 unredacted; strip number-like runs before display.
+      return ((data ?? []) as MessageRow[]).reverse().map(m => (m.error_title ? { ...m, error_title: safeErrorTitle(m.error_title) } : m))
     },
     async getNotes(convId) {
       const { data, error } = await sb.from('wa_notes').select('id,actor,body,created_at')
@@ -252,13 +259,15 @@ export function supabaseInboxRepo(sb: Sb): InboxRepo {
       if (error) fail('usage', error)
       return data as Usage
     },
-    async beginOutbound(convId, clientRef, type, body, payload, sentBy) {
-      const { data, error } = await sb.rpc('wa_begin_outbound', {
+    async reserveOutbound(convId, clientRef, type, body, payload, sentBy) {
+      const { data, error } = await sb.rpc('wa_reserve_outbound', {
         p_conv: convId, p_client_ref: clientRef, p_type: type, p_body: body, p_payload: payload, p_sent_by: sentBy,
       })
-      if (error) fail('begin send', error)
-      const row = Array.isArray(data) ? data[0] : data
-      return row as BeginOutbound
+      if (error) fail('reserve send', error)
+      const row = (Array.isArray(data) ? data[0] : data) as { message_id: string | null; is_new: boolean; send_state: string | null; wamid: string | null; blocked: string | null } | undefined
+      if (!row) throw Object.assign(new Error('reserve send: no row'), { code: 'no_row' })
+      if (row.blocked) return { blocked: row.blocked as ReserveBlock }
+      return { blocked: null, message_id: row.message_id!, is_new: row.is_new, send_state: row.send_state ?? 'sending', wamid: row.wamid }
     },
     async finishOutbound(clientRef, wamid, state, code, title) {
       const { error } = await sb.rpc('wa_finish_outbound', {

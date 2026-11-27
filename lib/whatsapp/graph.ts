@@ -43,7 +43,7 @@ const TIMEOUT_MS = 10_000
 // Meta error text can quote the recipient number. Keep codes, drop digits.
 export function safeErrorTitle(s: unknown): string | null {
   if (typeof s !== 'string' || !s) return null
-  return s.replace(/\+?\d[\d\s-]{6,}\d/g, '[number]').slice(0, 200)
+  return s.replace(/\+?\d[\d\s.()-]{6,}\d/g, '[number]').slice(0, 200)
 }
 
 async function call(f: Fetch, url: string, init: RequestInit, timeoutMs = TIMEOUT_MS) {

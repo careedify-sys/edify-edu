@@ -519,12 +519,45 @@ Manual end-to-end test after deploy: Rishi's own second phone only. No student i
 | D4 | Access token type | **APPROVED 26 Nov, Option C.** Use a restricted System User token. First validate the existing token through `debug_token` (type, expiry, scopes, granted WABA and phone number) without revealing it. Rotate only if it fails those checks. |
 | D5 | Deploy batching | Ship Phases 1 and 2 together as one deploy, so the inbox arrives with the storage it reads. |
 | D6 | Spend controls for replies | **APPROVED 26 Nov, Option C, cap ₹500 a month.** The cap is a setting; only the owner can override it, and every override goes to the audit log. The inbox shows free messages, paid messages, estimated charges and remaining budget. Rates verified 26 Nov from Meta's official INR rate card, effective 1 Oct 2026, India row: Service ₹0.115, Utility ₹0.115, Authentication ₹0.115, Authentication-International ₹2.4971, Marketing ₹0.8631 per delivered message. They are stored as settings with source and effective date, not in code. The 1,000 free service messages per number per month is also a setting, because Meta can change pricing on the first day of any quarter. |
-| D7 | Retention | As in Section 3: raw payloads 30 days, messages 24 months, consent while the contact exists + 3 years, audit 3 years. |
+| D7 | Retention | **APPROVED 27 Nov (Q-WA2):** up to 24 months for conversations, 30 days for raw webhook data, enforced by cleanup code: `wa_apply_retention` (daily, from the sweep) and `wa_purge_raw_bodies` (every 5 minutes). Consent records are kept while the contact exists. |
 | D8 | Privacy policy and consent wording | **APPROVED 26 Nov, Option A with consent safeguards.** Update `/privacy-policy` for WhatsApp storage, retention, phone collection, counselling, opt-out, deletion and third-party processors. Lead forms stay unchanged for now; their consent wording is reviewed and reported. Starting a chat is NOT treated as promotional or calling consent: call consent is recorded explicitly, with source and evidence, per contact. |
 | D9 | Media archiving | Off. Fetch media on demand only; revisit Supabase Storage if counsellors need documents kept. |
 | D10 | Read receipts to students | Do not send blue ticks automatically when an admin opens a thread; add a "Mark read on WhatsApp" button instead. |
 | D11 | Campaign approvals | Phase 5 launch requires two clicks with the recipient count and estimated cost on screen, plus a typed confirmation for any campaign above a threshold you choose. |
 | D12 | Opt-out keywords | STOP, UNSUBSCRIBE, and Hindi equivalents (for example "band karo"); you confirm the list. |
+
+### Business objective and next phase (Rishi, 27 Nov 2026)
+
+Primary goal: **student referral campaigns.** Rishi has an Excel list of students who enrolled through edifyedu.in. Eligible, opted-in contacts get a message asking whether friends, colleagues or family want an online degree.
+
+Order:
+1. Finish and deploy the Phase 2 inbox (one deploy).
+2. Then the campaign release, in this priority:
+   1. .xlsx and .csv upload.
+   2. Auto column mapping: name, phone, university, programme, admission batch.
+   3. Indian phone normalisation.
+   4. Duplicate detection.
+   5. Marketing consent verification and records.
+   6. Automatic opt-out exclusion.
+   7. Choosing an approved Meta marketing template.
+   8. Name personalisation.
+   9. Preview with estimated cost.
+   10. A separate campaign budget.
+   11. Batch sending with pause and cancel.
+   12. Sent, delivered, read, failed and replied tracking.
+   13. Replies landing in the inbox.
+   14. Phone and calling where permitted.
+   15. Referral enquiry tracking in the existing CRM.
+
+Rules:
+- Bulk campaigns are enabled in that release, but every campaign needs Rishi's explicit approval before anything is sent (D11).
+- Uploading a file never sends anything.
+- No paid third-party messaging platform or extra hosting subscription without approval.
+- This comes before advanced analytics, AI automation and multiple counsellor accounts.
+
+Open before the campaign build:
+- Where the opt-in for each enrolled student comes from. A marketing template needs a WhatsApp opt-in, and a phone number alone is not one.
+- Marketing messages cost Rs 0.8631 each (INR card, 1 Oct 2026).
 
 ### Not blocked, ready to start on approval
 

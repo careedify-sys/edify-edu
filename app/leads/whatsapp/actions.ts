@@ -62,10 +62,6 @@ async function run<T>(fn: (d: ReturnType<typeof deps>, actor: Awaited<ReturnType
   }
 }
 
-export async function inboxMode(): Promise<'mock' | 'live'> {
-  return mockEnabled() ? 'mock' : 'live'
-}
-
 export async function inboxList(f: { status: 'open' | 'archived' | null; search: string; unreadOnly: boolean; beforeAt: string | null; beforeId: string | null }) {
   return run(async ({ repo }, actor) => {
     if (!can(actor, 'view')) return { ok: false as const, error: 'You do not have permission for this' }

@@ -58,7 +58,19 @@ export async function GET(req: NextRequest) {
   if (leadsErr) {
     return NextResponse.json({ error: `leads query: ${leadsErr.message}` }, { status: 500 });
   }
-  const leads = (leadsData ?? []) as LeadRow[];
+  // Leave out leads WhatsApp consent says not to call (a call No, an opt-out,
+  // or a lead created from WhatsApp with no call permission recorded), so the
+  // email never prompts a call the privacy policy says we won't make. Best
+  // effort: before the WhatsApp Phase 2 migration, or on error, nobody is
+  // left out and the email works as before.
+  const noCall = new Set<string>();
+  try {
+    const { data: blocks, error: blocksErr } = await sb.rpc('wa_crm_contact_blocks');
+    if (!blocksErr) {
+      for (const b of (blocks ?? []) as Array<{ lead_id: string; no_call: boolean }>) if (b.no_call) noCall.add(b.lead_id);
+    }
+  } catch { /* keep the email working */ }
+  const leads = ((leadsData ?? []) as LeadRow[]).filter(l => !noCall.has(l.id));
   if (leads.length === 0) {
     return NextResponse.json({ ok: true, sent: false, reason: 'no active leads' });
   }

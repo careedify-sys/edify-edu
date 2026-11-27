@@ -5,7 +5,8 @@ import { randomUUID } from 'node:crypto'
 import type {
   InboxRepo, ConvRow, ContactRow, MessageRow, NoteRow, ConsentRow, LeadLite, LeadActivityRow,
 } from './inbox-repo'
-import type { Usage } from './spend'
+import { summariseSpend, parseRates, parseFreePerMonth, parseCap, parseOverride, windowState, type Usage } from './spend'
+import { looksLikeOptOut } from './opt-out'
 
 type State = {
   contacts: ContactRow[]
@@ -80,6 +81,17 @@ function digits(s: string) { return s.replace(/\D/g, '') }
 
 export function mockInboxRepo(state: State = seedState()): InboxRepo & { state: State } {
   const s = state
+  function usageNow(): Usage {
+    const start = new Date(); start.setDate(1); start.setHours(0, 0, 0, 0)
+    const out = s.messages.filter(m => m.direction === 'outbound' && m.created_at >= start.toISOString() && m.type !== 'template')
+    return {
+      month_start: start.toISOString(),
+      service_delivered: out.filter(m => m.status_rank >= 2).length,
+      service_in_flight: out.filter(m => m.status_rank < 2 && m.send_state !== 'failed').length,
+      service_failed: out.filter(m => m.send_state === 'failed').length,
+      templates_sent: 0, meta_billable: 0, meta_free: out.filter(m => m.status_rank >= 2).length,
+    }
+  }
   const full = (cv: State['convs'][number]): ConvRow => {
     const ct = s.contacts.find(c => c.id === cv.contact_id)!
     const lead = ct.lead_id ? s.leads.find(l => l.id === ct.lead_id) : undefined
@@ -135,24 +147,29 @@ export function mockInboxRepo(state: State = seedState()): InboxRepo & { state: 
     },
     async getSettings() { return structuredClone(s.settings) },
     async setSetting(key, value) { s.settings[key] = value },
-    async usage(): Promise<Usage> {
-      const start = new Date(); start.setDate(1); start.setHours(0, 0, 0, 0)
-      const out = s.messages.filter(m => m.direction === 'outbound' && m.created_at >= start.toISOString() && m.type !== 'template')
-      return {
-        month_start: start.toISOString(),
-        service_delivered: out.filter(m => m.status_rank >= 2).length,
-        service_in_flight: out.filter(m => m.status_rank < 2 && m.send_state !== 'failed').length,
-        service_failed: out.filter(m => m.send_state === 'failed').length,
-        templates_sent: 0, meta_billable: 0, meta_free: out.filter(m => m.status_rank >= 2).length,
-      }
-    },
-    async beginOutbound(convId, clientRef, type, body, _payload, sentBy) {
+    async usage(): Promise<Usage> { return usageNow() },
+    // Mirrors wa_reserve_outbound. Reads usage through this.usage so tests can
+    // set it; the mock has one user, so no lock is needed.
+    async reserveOutbound(convId, clientRef, type, body, _payload, sentBy) {
       const ex = s.messages.find(m => m.client_ref === clientRef)
-      if (ex) return { message_id: ex.id, is_new: false, send_state: ex.send_state ?? 'sending', wamid: ex.wamid }
+      if (ex) {
+        if (ex.conversation_id !== convId) return { blocked: 'bad_ref' }
+        return { blocked: null, message_id: ex.id, is_new: false, send_state: ex.send_state ?? 'sending', wamid: ex.wamid }
+      }
+      if (s.settings.sending_enabled !== true) return { blocked: 'sending_off' }
+      const cv = s.convs.find(c => c.id === convId)
+      if (!cv) return { blocked: 'no_conversation' }
+      if (!windowState(cv.last_inbound_at).open) return { blocked: 'window_closed' }
+      const svc = s.consent.filter(c => c.contact_id === cv.contact_id && c.purpose === 'service').sort((a, b) => b.recorded_at.localeCompare(a.recorded_at))[0]
+      const msgs = s.messages.filter(m => s.convs.some(v => v.id === m.conversation_id && v.contact_id === cv.contact_id))
+      if ((svc && !svc.granted) || looksLikeOptOut(msgs, svc?.recorded_at ?? null)) return { blocked: 'opted_out' }
+      const sum = summariseSpend({ usage: await this.usage(''), rates: parseRates(s.settings.rates), freePerMonth: parseFreePerMonth(s.settings.free_service_allowance),
+        capInr: parseCap(s.settings.monthly_cap_inr), override: parseOverride(s.settings.cap_override) })
+      if (!sum.next.allowed) return { blocked: sum.next.costInr == null ? 'rate_missing' : sum.budgetInr == null ? 'cap_missing' : 'cap_reached' }
       const id = randomUUID()
       s.messages.push({ id, conversation_id: convId, direction: 'outbound', type, body, status: null, status_rank: 0, send_state: 'sending',
         error_code: null, error_title: null, sent_by: sentBy, meta_timestamp: null, created_at: new Date().toISOString(), client_ref: clientRef, wamid: null })
-      return { message_id: id, is_new: true, send_state: 'sending', wamid: null }
+      return { blocked: null, message_id: id, is_new: true, send_state: 'sending', wamid: null }
     },
     async finishOutbound(clientRef, wamid, state, code, title) {
       const m = s.messages.find(x => x.client_ref === clientRef); if (!m) return

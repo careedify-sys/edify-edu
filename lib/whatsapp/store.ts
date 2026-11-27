@@ -69,3 +69,19 @@ export async function recordSweep(sb: Sb, value: Record<string, unknown>): Promi
     await sb.from('wa_settings').upsert({ key: 'last_sweep', value, updated_at: new Date().toISOString() })
   } catch { /* the next run tries again */ }
 }
+
+// Phase 2 duties of the sweep. Each returns null when its function is missing
+// or fails, so the Phase 1 retry work above is never blocked by them.
+//  - opt-outs: STOP-like messages become a recorded No for replies and calls;
+//  - retention: the 24-month deletion, due at most once every 20 hours.
+export async function recordOptOuts(sb: Sb): Promise<number | null> {
+  const { data, error } = await sb.rpc('wa_record_opt_outs')
+  if (error) { console.warn('[whatsapp-sweep] opt-out step failed', error.code); return null }
+  return Number(data ?? 0)
+}
+
+export async function applyRetention(sb: Sb): Promise<Record<string, unknown> | 'not_due' | null> {
+  const { data, error } = await sb.rpc('wa_apply_retention')
+  if (error) { console.warn('[whatsapp-sweep] retention step failed', error.code); return null }
+  return data == null ? 'not_due' : (data as Record<string, unknown>)
+}

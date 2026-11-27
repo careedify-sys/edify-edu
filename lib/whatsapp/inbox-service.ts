@@ -7,6 +7,8 @@
 // not opted out, and this month's cap allows it.
 import type { Actor, Action } from './access'
 import { can } from './access'
+import { looksLikeOptOut } from './opt-out'
+import type { ReserveBlock } from './inbox-repo'
 import type { InboxRepo, ConvRow, ContactRow, MessageRow, NoteRow, ConsentRow, ConsentPurpose, ConsentSource, LeadLite, LeadActivityRow } from './inbox-repo'
 import { summariseSpend, parseRates, parseFreePerMonth, parseCap, parseOverride, windowState, type SpendSummary } from './spend'
 import { sendMessage, textPayload, requestContactInfoPayload, checkConnection, type GraphEnv, type ConnectionReport } from './graph'
@@ -65,6 +67,7 @@ export type ThreadView = {
   leadActivity: LeadActivityRow[]
   leadMatches: Array<Pick<LeadLite, 'id' | 'name' | 'stage' | 'phone'>>
   optOutHint: boolean     // a STOP-like message arrived after the last 'service' consent record
+  canCall: boolean        // latest counselling_call record is a Yes and the student has not opted out
 }
 
 export async function loadThread(repo: InboxRepo, actor: Actor | null, convId: string): Promise<Result<{ thread: ThreadView }>> {
@@ -84,13 +87,14 @@ export async function loadThread(repo: InboxRepo, actor: Actor | null, convId: s
   const leadMatches = !lead && digits ? await repo.findLeadsByDigits(digits) : []
   const consent = currentConsent(consentRows)
   const optOutHint = !(consent.service && !consent.service.granted) && looksLikeOptOut(messages, consent.service?.recorded_at ?? null)
-  return { ok: true, thread: { conv, contact, messages, notes, consent, lead, leadActivity, leadMatches, optOutHint } }
+  const canCall = !!consent.counselling_call?.granted && !optOutHint && !(consent.service && !consent.service.granted)
+  return { ok: true, thread: { conv, contact, messages, notes, consent, lead, leadActivity, leadMatches, optOutHint, canCall } }
 }
 
 // ── Sending ────────────────────────────────────────────────────────────────
 
 export type SendInput = { convId: string; clientRef: string; kind: 'text' | 'request_phone'; text?: string }
-export type SendOutcome = Result<{ state: 'accepted' | 'failed' | 'unknown' | 'sending'; error?: string; duplicate?: boolean }>
+export type SendOutcome = Result<{ state: 'accepted' | 'failed' | 'unknown' | 'sending'; error?: string; duplicate?: boolean }> | { ok: false; error: string; blocked: ReserveBlock }
 
 export async function sendReply(
   repo: InboxRepo, env: GraphEnv, f: typeof fetch, actor: Actor | null, input: SendInput,
@@ -99,7 +103,7 @@ export async function sendReply(
   if (!UUID.test(input.convId) || !UUID.test(input.clientRef)) return bad('Bad request')
 
   const settings = await repo.getSettings()
-  if (settings.sending_enabled !== true) return bad('Sending is switched off. The owner can switch it on in Settings.')
+  if (settings.sending_enabled !== true) return bad(BLOCK_TEXT.sending_off)
 
   const conv = await repo.getConversation(input.convId)
   if (!conv) return bad('Unknown conversation')
@@ -109,8 +113,11 @@ export async function sendReply(
   if (!windowState(conv.last_inbound_at).open) {
     return bad('The 24-hour reply window is closed. A free-form reply is only allowed within 24 hours of the student\'s last message.')
   }
+  // Friendly early answers. The authoritative check is wa_reserve_outbound,
+  // which repeats every rule here under a lock.
   const consent = currentConsent(await repo.getConsent(contact.id))
-  if (consent.service && !consent.service.granted) return bad('This student asked not to be messaged. Sending is blocked.')
+  if (consent.service && !consent.service.granted) return bad(BLOCK_TEXT.opted_out)
+  if (looksLikeOptOut(await repo.getMessages(input.convId, 80), consent.service?.recorded_at ?? null)) return bad(BLOCK_TEXT.opted_out)
 
   let type: string, body: string, content: Record<string, unknown>
   if (input.kind === 'request_phone') {
@@ -123,45 +130,49 @@ export async function sendReply(
     type = 'text'; body = text; content = textPayload(text)
   }
 
-  // Reserve the row first so a double click returns the same message.
-  const begun = await repo.beginOutbound(input.convId, input.clientRef, type, body, content, actor!.id)
+  // Check every rule and reserve the row in one locked step. Nothing is
+  // written when a rule blocks, so the same key can be sent again later.
+  const begun = await repo.reserveOutbound(input.convId, input.clientRef, type, body, content, actor!.id)
+  if (begun.blocked) {
+    if (begun.blocked === 'cap_reached' || begun.blocked === 'opted_out') {
+      await repo.audit(actor!.id, 'send_blocked_' + begun.blocked, input.convId, null)
+    }
+    return { ok: false, error: BLOCK_TEXT[begun.blocked], blocked: begun.blocked }
+  }
   if (!begun.is_new) {
     return { ok: true, state: begun.send_state as 'accepted', duplicate: true }
   }
 
-  // Cap check after reserving, so the reserved row (and any other send in
-  // flight at the same moment) is already counted.
-  const allowed = await capAllows(repo, settings)
-  if (!allowed.ok) {
-    await repo.finishOutbound(input.clientRef, null, 'failed', null, 'Blocked by the monthly cap')
-    await repo.audit(actor!.id, 'send_blocked_cap', input.convId, { message_id: begun.message_id })
-    return bad(allowed.error)
-  }
-
   const r = await sendMessage(env, { phoneDigits: leadPhoneFromE164(contact.phone_e164), bsuid: contact.bsuid }, content, f)
-  if (r.state === 'accepted') await repo.finishOutbound(input.clientRef, r.wamid, 'accepted', null, null)
-  else if (r.state === 'failed') await repo.finishOutbound(input.clientRef, null, 'failed', r.code, r.title)
-  else await repo.finishOutbound(input.clientRef, null, 'unknown', null, `No confirmation from Meta (${r.reason})`)
-
-  await repo.audit(actor!.id, input.kind === 'request_phone' ? 'request_phone' : 'send', input.convId,
-    { message_id: begun.message_id, state: r.state, ...(r.state === 'failed' ? { code: r.code } : {}) })
+  // Meta has answered. From here on nothing may throw to the caller: an error
+  // would read as "try again", and a retry with a new key would message the
+  // student twice. If recording fails, the row stays 'sending' (counted in the
+  // cap) and the page says to check the thread.
+  try {
+    if (r.state === 'accepted') await repo.finishOutbound(input.clientRef, r.wamid, 'accepted', null, null)
+    else if (r.state === 'failed') await repo.finishOutbound(input.clientRef, null, 'failed', r.code, r.title)
+    else await repo.finishOutbound(input.clientRef, null, 'unknown', null, `No confirmation from Meta (${r.reason})`)
+    await repo.audit(actor!.id, input.kind === 'request_phone' ? 'request_phone' : 'send', input.convId,
+      { message_id: begun.message_id, state: r.state, ...(r.state === 'failed' ? { code: r.code } : {}) })
+  } catch {
+    if (r.state === 'failed') return { ok: true, state: 'failed', error: r.title ?? 'Meta refused the message' }
+    return { ok: true, state: 'unknown', error: 'The message may have gone, but it could not be recorded. Check the thread before sending it again.' }
+  }
 
   if (r.state === 'accepted') return { ok: true, state: 'accepted' }
   if (r.state === 'failed') return { ok: true, state: 'failed', error: r.title ?? 'Meta refused the message' }
   return { ok: true, state: 'unknown', error: 'Meta did not confirm this message. Check the thread before sending it again.' }
 }
 
-// The reserved row is already counted in flight, so the question is whether
-// the spend so far (including it) fits the budget.
-async function capAllows(repo: InboxRepo, settings: Record<string, unknown>): Promise<Result> {
-  const s = await spendSummary(repo, settings)
-  const rate = parseRates(settings.rates)?.service ?? null
-  const thisOneIsPaid = s.freePerMonth == null || s.serviceSent > s.freePerMonth || s.metaBillable > 0
-  if (!thisOneIsPaid) return { ok: true }
-  if (rate == null) return bad('The service message rate is not set, so the cost cannot be checked')
-  if (s.budgetInr == null) return bad('The monthly cap is not set')
-  if (s.chargesInr == null || s.chargesInr > s.budgetInr + 1e-9) return bad('This month\'s cap is reached. The owner can raise it in Settings.')
-  return { ok: true }
+export const BLOCK_TEXT: Record<ReserveBlock, string> = {
+  bad_ref: 'Bad request',
+  sending_off: 'Sending is switched off. The owner can switch it on in Settings.',
+  no_conversation: 'Unknown conversation',
+  window_closed: 'The 24-hour reply window is closed. A free-form reply is only allowed within 24 hours of the student\'s last message.',
+  opted_out: 'This student asked not to be messaged. Sending is blocked until they agree again and you record it under Consent.',
+  rate_missing: 'The service message rate is not set, so the cost cannot be checked',
+  cap_missing: 'The monthly cap is not set',
+  cap_reached: 'This month\'s cap is reached. The owner can raise it in Settings.',
 }
 
 // ── Notes, consent, archive ────────────────────────────────────────────────
@@ -194,6 +205,13 @@ export async function recordConsent(repo: InboxRepo, actor: Actor | null, i: {
     purpose: i.purpose as ConsentPurpose, granted: i.granted, source: i.source as ConsentSource,
     evidence: evidence || null, recorded_by: actor!.id,
   })
+  // An opt-out from messages is an opt-out from calls too (privacy policy 3(d)).
+  if (i.purpose === 'service' && !i.granted) {
+    await repo.addConsent(i.contactId, {
+      purpose: 'counselling_call', granted: false, source: i.source as ConsentSource,
+      evidence: evidence || 'Recorded with the opt-out from WhatsApp replies', recorded_by: actor!.id,
+    })
+  }
   await repo.audit(actor!.id, 'consent', i.contactId, { purpose: i.purpose, granted: i.granted, source: i.source })
   return { ok: true }
 }
@@ -366,10 +384,4 @@ export async function deleteContactData(repo: InboxRepo, actor: Actor | null, co
   return { ok: true }
 }
 
-// A short inbound message that reads like an opt-out, received after the
-// latest consent record. The inbox shows a prompt; a person records it.
-const STOP_WORDS = /^\s*(stop|unsubscribe|stop all|band karo|mat bhejo|no more messages)\s*[.!]*\s*$/i
-export function looksLikeOptOut(messages: Array<{ direction: string; type: string; body: string | null; created_at: string }>, lastConsentAt: string | null): boolean {
-  return messages.some(m => m.direction === 'inbound' && m.type === 'text' && !!m.body && STOP_WORDS.test(m.body)
-    && (!lastConsentAt || m.created_at > lastConsentAt))
-}
+export { looksLikeOptOut } from './opt-out'

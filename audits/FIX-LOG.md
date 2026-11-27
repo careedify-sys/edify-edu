@@ -7423,3 +7423,60 @@ Each fix has a regression test.
 - Open: /api/cron/whatsapp-sweep answers 500 "Not configured" because CRON_SECRET is not linked to edify-edu-dh2m (B1, Rishi's Vercel action). Until linked, failed events are not retried and raw bodies are not purged; new messages are still stored. The lead form was not submitted live (it would create a real lead); this deploy does not touch lead capture code.
 
 **CRON_SECRET linked (2026-11-26, Rishi, B1 closed):** Rishi added CRON_SECRET to edify-edu-dh2m and redeployed. /api/cron/whatsapp-sweep now answers 401 to a missing or wrong bearer (was 500 "Not configured"), so the secret is present at runtime. The same variable authenticates /api/cron/due-calls, so the 08:00 IST "leads to call" email should send from 27 Nov. Not observed directly: a successful Vercel-initiated run (Vercel logs are not readable from this session); check Vercel, Logs, `[whatsapp-sweep]` or the 27 Nov email.
+
+## WhatsApp Phase 2: inbox at /leads/whatsapp (2026-11-27, branch feat/wa-2-inbox)
+
+**What.** An internal inbox for the WhatsApp Business number, inside the existing CRM login. Counsellors can:
+- read and reply by hand;
+- ask a username-only student to share their phone;
+- link a chat to a CRM lead or create one;
+- log call outcomes and reminders through the CRM's own actions;
+- keep notes and record consent.
+
+The owner gets settings for the ₹500 monthly cap, the rates, a read-only connection check, and a delete button for privacy requests. There are no automated replies and no campaigns.
+
+**Why it is built this way.**
+- **Rishi's decisions (26 Nov):** D2 A, D4 C, D6 C with a ₹500 cap, D8 A and B2 A. Q-WA2 was approved 27 Nov: 24 months for conversations and 30 days for raw webhook data, enforced by code and not only stated.
+- **Send checks live in the database.** The send rules (sending switch, 24-hour window, opt-out, cap) are enforced in `wa_reserve_outbound` under `pg_advisory_xact_lock`. The page checks them too, but only to show a clearer message. A JS-only cap check could let two simultaneous replies both fit the last rupee.
+  - Real-Postgres race (`scripts/whatsapp/cap-race.mjs`): 20 concurrent sends with room for 3 reserved exactly 3.
+  - The same race on a copy without the lock reserved 20 of 20, so the test can see the failure it guards against.
+- **A blocked send writes nothing.** The first build reserved the row and then marked it failed on a cap block. QA S3 found that after the owner raised the cap, the same key returned that dead row and the reply never went. The page now also makes a new key per exact message, and reuses a key only after a network error.
+- **STOP blocks at once.**
+  - `wa_contact_opted_out` reads the inbound text directly, so a reply is refused in the minutes before the sweep runs.
+  - The sweep (`wa_record_opt_outs`) then records a No for replies and for calls. The privacy policy promises both.
+  - Only a person recording a new Yes with evidence unblocks. A later chatty message does not.
+- **Call now needs a recorded Yes for counselling calls.** The first build only warned. D8 says starting a chat is not permission to call, and the policy says "we call only if you ask". Copy number always works, so the CRM workflow is not broken.
+- **Third-party tags are kept off `/leads/*` and `/admin-login`.** They were loading there before this change: Clarity session recording, Meta Pixel, GA/Ads and Tawk. Clarity records page text, so it was capturing CRM lead details and would have captured WhatsApp messages. The fix is an inline path guard on each tag in `app/layout.tsx`, plus a mask attribute and a stop/shutdown in the `/leads` layout for client-side navigation. Public pages load all tags as before (browser-checked).
+- **Retention.** `wa_apply_retention` runs from the existing 5-minute sweep but only when due (once every 20 hours, decided in SQL), and deletes at most 5,000 rows per table per run. This minimises DB use (requirement 9) and adds no new cron (requirement 8).
+- **Rates.** The rates are settings, not constants, because Meta can change them each quarter. The source row is `audits/verify/meta-whatsapp-inr-rates-2026-11-26.md`.
+- **The inbox is a fixed overlay at z-index 2147483000, not a root layout change.** The public navbar and bottom nav render on `/leads`, and Tawk sat at 2e9.
+- **Mock mode** uses `WA_INBOX_MOCK=1` and is ignored in production. That allows a full UI check without the production database or Meta.
+
+**QA.** The first pass (`audits/qa/2026-11-27-whatsapp-phase2-premerge.md`) was PASS WITH FIXES.
+- S1 (retention not built), S2 (call and STOP promises not enforced) and S3 (stale key) were fixed as above.
+- Nits fixed:
+  - N1: mode is read in the page, not via an unauthenticated server action.
+  - N2: status error titles are redacted at display, and dotted numbers too.
+  - N3: Cloudflare is listed as a processor.
+  - N4: the policy says the enquiry record is deleted on request (by hand; the CRM has no delete).
+  - N6: a key reused in another conversation is refused.
+  - N8: the fallback key is a valid UUID.
+  - N10: paging uses `coalesce(last_message_at, created_at)`.
+  - N11: the rates source row was added.
+- Left: N5 (per-minute send limit; one user, and the cap holds), N7 (two extra reads per thread), N9 (palette tints).
+
+**QA rerun** (`audits/qa/2026-11-27-whatsapp-phase2-premerge-rerun.md`): PASS WITH FIXES, no blockers. Fixed:
+- R1: the CRM's own Call and WhatsApp buttons ignored WhatsApp consent, so the policy's promises held only in the inbox. Now `wa_crm_contact_blocks` drives them, read best-effort so the CRM never breaks.
+- R2: after the S3 change, an error after Meta accepted would drop the key and allow a second send. Now `sendReply` cannot throw after Meta answers, and the client keeps the key on any non-definite error.
+- R3: the race script deleted `./data` in the current folder, which is dangerous in the repo root. It now uses an OS temp folder.
+- R4: the daily due-calls email listed leads we must not call. It now skips noCall leads, best-effort.
+
+**Tests.** graph/spend 21, inbox service 18, ingest 14, SQL (PGlite) 42, real-Postgres race PASS. `npm run build` exit 0; `/leads/whatsapp` is 10.5 kB.
+
+**Not deployed.** Before deploy:
+- Rishi runs `20261202120000_whatsapp_inbox.sql` and pastes `select key from wa_settings order by key;`, which should return 10 rows.
+- Rishi confirms the cron is running: the Vercel cron logs were unreadable from this session (403, CLI read denied).
+
+**Next phase decided 27 Nov.** Student referral campaigns from Rishi's Excel come after this deploy. Each campaign needs his approval, uploading never sends, and there is no paid platform. See plan section 12. Q-WA4 asks for the opt-in source.
+
+After deploy, run the connection check (B2/D4) and confirm Health shows `last_sweep` within 5 minutes.

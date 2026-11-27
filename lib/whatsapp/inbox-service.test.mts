@@ -93,11 +93,11 @@ await test('request phone: refused when the number is known, sent by BSUID when 
   assert.equal(m.calls[0].interactive.type, 'request_contact_info')
 })
 
-await test('cap: a paid reply over the cap is blocked before Meta, row marked failed', async () => {
+await test('cap: a paid reply over the cap is blocked before Meta and writes nothing', async () => {
   const { repo, s, asha } = setup()
   s.settings.sending_enabled = true
   s.settings.monthly_cap_inr = 1
-  // 1,000 free + 9 paid at 0.115 = 1.035 > 1 once this one is counted.
+  // 1,000 free + 9 paid so far = 1.035 > 1 already; the next one is refused.
   repo.usage = async () => ({ month_start: '2026-11-30T18:30:00Z', service_delivered: 1008, service_in_flight: 1, meta_billable: 0, meta_free: 0 })
   const m = meta()
   const cr = ref()
@@ -105,11 +105,12 @@ await test('cap: a paid reply over the cap is blocked before Meta, row marked fa
   assert.equal(r.ok, false)
   assert.match((r as any).error, /cap/)
   assert.equal(m.calls.length, 0)
-  assert.equal(s.messages.find(x => x.client_ref === cr)!.send_state, 'failed')
-  // One message fewer fits: 8 paid = 0.92.
-  repo.usage = async () => ({ month_start: '2026-11-30T18:30:00Z', service_delivered: 1007, service_in_flight: 1, meta_billable: 0, meta_free: 0 })
-  const ok = await svc.sendReply(repo, env, m.f, OWNER, { convId: asha.cv.id, clientRef: ref(), kind: 'text', text: 'hi' })
-  assert.equal(ok.ok, true)
+  assert.equal((r as any).blocked, 'cap_reached')
+  assert.equal(s.messages.find(x => x.client_ref === cr), undefined, 'no row, so the same key works after the cap is raised')
+  // 7 paid so far = 0.805; one more = 0.92 fits under 1. Same key as the blocked try (QA S3).
+  repo.usage = async () => ({ month_start: '2026-11-30T18:30:00Z', service_delivered: 1006, service_in_flight: 1, meta_billable: 0, meta_free: 0 })
+  const ok = await svc.sendReply(repo, env, m.f, OWNER, { convId: asha.cv.id, clientRef: cr, kind: 'text', text: 'hi' })
+  assert.equal(ok.ok && ok.state, 'accepted')
 })
 
 await test('send: Meta timeout or 5xx is "unknown", recorded, and not retried', async () => {
@@ -230,6 +231,55 @@ await test('opt-out hint: STOP after the last consent record shows; a recorded N
   assert.ok(t2.ok && !t2.thread.optOutHint)
   assert.equal(svc.looksLikeOptOut([{ direction: 'inbound', type: 'text', body: 'please stop calling at work', created_at: 'z' }], null), false, 'only short opt-out messages')
   assert.equal(svc.looksLikeOptOut([{ direction: 'inbound', type: 'text', body: 'Band karo', created_at: 'z' }], null), true)
+})
+
+await test('opt-out: a STOP message blocks the next reply at once, with nothing sent or stored', async () => {
+  const { repo, s, asha } = setup()
+  s.settings.sending_enabled = true
+  s.messages.push({ id: 'stop1', conversation_id: asha.cv.id, direction: 'inbound', type: 'text', body: 'STOP', status: null, status_rank: 0,
+    send_state: null, error_code: null, error_title: null, sent_by: null, meta_timestamp: null, created_at: new Date().toISOString(), client_ref: null, wamid: 'wamid.stop1' } as any)
+  const m = meta()
+  const before = s.messages.length
+  for (const kind of ['text', 'request_phone'] as const) {
+    const r = await svc.sendReply(repo, env, m.f, OWNER, { convId: asha.cv.id, clientRef: ref(), kind, text: 'one more thing' })
+    assert.equal(r.ok, false, kind)
+  }
+  assert.equal(m.calls.length, 0)
+  assert.equal(s.messages.length, before)
+  // The repo's locked check refuses too, if the early check were skipped.
+  const direct = await repo.reserveOutbound(asha.cv.id, ref(), 'text', 'x', {}, 'owner')
+  assert.equal(direct.blocked, 'opted_out')
+  const t = await svc.loadThread(repo, OWNER, asha.cv.id)
+  assert.equal(t.ok && t.thread.canCall, false, 'Call now is blocked after STOP even with a call Yes on file')
+})
+
+await test('calls: Call now needs a recorded Yes; a No to replies also records a No to calls', async () => {
+  const { repo, asha, imran } = setup()
+  const a = await svc.loadThread(repo, OWNER, asha.cv.id)
+  assert.equal(a.ok && a.thread.canCall, true, 'Asha has a call Yes from the enquiry form')
+  const i = await svc.loadThread(repo, OWNER, imran.cv.id)
+  assert.equal(i.ok && i.thread.canCall, false, 'no record: starting a chat is not permission to call')
+  assert.equal((await svc.recordConsent(repo, OWNER, { contactId: asha.ct.id, purpose: 'service', granted: false, source: 'whatsapp_message', evidence: 'Asked us to stop' })).ok, true)
+  const cur = svc.currentConsent(await repo.getConsent(asha.ct.id))
+  assert.equal(cur.counselling_call?.granted, false)
+  const a2 = await svc.loadThread(repo, OWNER, asha.cv.id)
+  assert.equal(a2.ok && a2.thread.canCall, false)
+})
+
+await test('QA R2: recording fails after Meta accepted; the answer is "unknown" and a retry never sends twice', async () => {
+  const { repo, s, asha } = setup()
+  s.settings.sending_enabled = true
+  const m = meta()
+  const realFinish = repo.finishOutbound
+  repo.finishOutbound = async () => { throw Object.assign(new Error('db down'), { code: '57014' }) }
+  const cr = ref()
+  const r = await svc.sendReply(repo, env, m.f, OWNER, { convId: asha.cv.id, clientRef: cr, kind: 'text', text: 'Fee details' })
+  assert.equal(r.ok && r.state, 'unknown')
+  assert.equal(m.calls.length, 1)
+  repo.finishOutbound = realFinish
+  const again = await svc.sendReply(repo, env, m.f, OWNER, { convId: asha.cv.id, clientRef: cr, kind: 'text', text: 'Fee details' })
+  assert.equal(again.ok && again.duplicate, true)
+  assert.equal(m.calls.length, 1, 'Meta was called once in total')
 })
 
 console.log(`\n${passed} inbox service tests passed`)

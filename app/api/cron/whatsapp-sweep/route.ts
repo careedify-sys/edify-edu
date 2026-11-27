@@ -6,6 +6,11 @@
 //    exhausted and left for a person to look at.
 // 2. Retention: nulls raw webhook bodies 30 days after receipt, any state.
 //    Events older than 7 days are no longer retried and count as exhausted.
+// 3. Opt-outs (Phase 2): a STOP-like message becomes a recorded No for
+//    WhatsApp replies and for calls.
+// 4. Retention (Phase 2, Q-WA2): messages, notes and inactive contacts are
+//    deleted after 24 months. Due at most once every 20 hours; the database
+//    decides, so a run every 5 minutes costs one cheap read.
 //
 // Auth: Vercel Cron sends `Authorization: Bearer $CRON_SECRET`. Anything else
 // gets 401. Responses and logs carry counts only.
@@ -14,6 +19,7 @@ import { timingSafeEqual } from 'crypto'
 import { errorClass } from '@/lib/whatsapp/ingest'
 import {
   supabaseEventStore, retryIds, purgeRawBodies, exhaustedCount, whatsappServiceClient, recordSweep,
+  recordOptOuts, applyRetention,
 } from '@/lib/whatsapp/store'
 
 export const dynamic = 'force-dynamic'
@@ -46,7 +52,7 @@ export async function GET(req: NextRequest) {
   }
 
   const started = Date.now()
-  const counts = { retried: 0, completed: 0, failed: 0, busy: 0, errors: 0, purged: 0, exhausted: 0 }
+  const counts = { retried: 0, completed: 0, failed: 0, busy: 0, errors: 0, purged: 0, exhausted: 0, optOuts: -1, retention: 'skipped' }
   try {
     const ids = await retryIds(sb, BATCH)
     for (const id of ids) {
@@ -64,13 +70,17 @@ export async function GET(req: NextRequest) {
     }
     counts.purged = await purgeRawBodies(sb)
     counts.exhausted = await exhaustedCount(sb)
+    // After the retries, so an opt-out that just arrived is already stored.
+    counts.optOuts = (await recordOptOuts(sb)) ?? -1
+    const r = await applyRetention(sb)
+    counts.retention = r == null ? 'error' : r === 'not_due' ? 'not_due' : 'ran'
   } catch (err) {
     console.error('[whatsapp-sweep] failed', errorClass(err))
     await recordSweep(sb, { at: new Date().toISOString(), ok: false, ms: Date.now() - started, ...counts })
     return NextResponse.json({ error: 'Sweep failed', ...counts }, { status: 500 })
   }
 
-  if (counts.retried || counts.purged || counts.exhausted) {
+  if (counts.retried || counts.purged || counts.exhausted || counts.optOuts !== 0 || counts.retention !== 'not_due') {
     console.info('[whatsapp-sweep]', JSON.stringify(counts))
   }
   await recordSweep(sb, { at: new Date().toISOString(), ok: true, ms: Date.now() - started, ...counts })
