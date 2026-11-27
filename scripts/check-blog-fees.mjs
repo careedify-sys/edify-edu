@@ -93,6 +93,15 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
   const KLASS_CASES = [
     ['Shoolini University online MBA list fee is Rs 2,00,000.', 'MATCH'],
     ['Shoolini University online MBA list fee is Rs 2,45,000.', 'MISMATCH'],
+    // v5 (B3 batch 26) per-semester table, data/per-semester-fees.json: a
+    // printed per-semester figure is MATCH, a different one for a university
+    // with rows is MISMATCH, and a university with no row stays NON_FEE.
+    ['LPU online MBA costs Rs 40,400 per semester.', 'MATCH'],
+    ['LPU online MBA costs Rs 50,000 per semester.', 'MISMATCH'],
+    ['NMIMS online MBA</p><table><tr><th>University</th><th>Per Semester</th></tr><tr><td>NMIMS</td><td>Rs 49,000</td></tr></table><p>', 'MISMATCH'],
+    ['Galgotias online MBA costs Rs 20,050 per semester.', 'NON_FEE'],
+    // A per-semester exam fee is not a semester fee and stays NON_FEE.
+    ['LPU online MBA exam fee is Rs 2,000 per semester.', 'NON_FEE'],
   ]
   for (const [text, want] of KLASS_CASES) {
     const r = scanPost({ slug: '__selftest__', status: 'published', title: 'self-test', content: `<p>${text}</p>` })[0]

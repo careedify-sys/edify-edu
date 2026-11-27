@@ -12,6 +12,7 @@
 // endpoints, and had a Rs.? pattern with no word boundary. See
 // audits/blog-fee-precision-sample-2026-08-07.md for the failure taxonomy.
 
+import { readFileSync } from 'node:fs'
 import { BLOG_POSTS } from '../../lib/blog.ts'
 import { UNIVERSITIES } from '../../lib/data.ts'
 import { getDisplayFee, parseFeeStr } from '../../lib/fees.ts'
@@ -714,6 +715,82 @@ function computeDelta(lo, hi, intervals) {
   return signed
 }
 
+// -- v5 per-semester table (B3 batch 26) -----------------------------------
+//
+// data/per-semester-fees.json holds only per-semester amounts a university
+// prints itself (audits/verify/per-semester-fees-2026-11-27.md, section E
+// array 1). Nothing in it is computed. A blog figure that is marked as a
+// per-semester amount is MATCH when it equals a row for its university and
+// programme, and MISMATCH when that university and programme have rows but
+// none equals it. With no row it stays NON_FEE, as before; narrowing that
+// exemption is batch 27+.
+const PER_SEM_ROWS = JSON.parse(readFileSync(new URL('../../data/per-semester-fees.json', import.meta.url), 'utf8'))
+const PER_SEM = new Map()
+for (const r of PER_SEM_ROWS) {
+  if (!UNI_BY_ID.has(r.id)) throw new Error(`per-semester-fees.json: unknown university id ${r.id}`)
+  if (!Number.isInteger(r.amount) || r.amount <= 0) throw new Error(`per-semester-fees.json: bad amount for ${r.id}`)
+  if (!r.sourceUrl || !/^\d{4}-\d{2}-\d{2}$/.test(r.checkedOn || '') || !r.sheetRef) throw new Error(`per-semester-fees.json: ${r.id} ${r.amount} lacks sourceUrl, checkedOn or sheetRef`)
+  const k = `${r.id}|${r.programme}`
+  if (!PER_SEM.has(k)) PER_SEM.set(k, new Set())
+  PER_SEM.get(k).add(r.amount)
+}
+
+const PER_SEM_SOURCES = new Set([/per\s*sem(?:ester)?/i, /\/\s*sem/i, /per-semester/i, /per\s*sem\b/i, /\d\s*(?:sem|semester)s\b/i].map(r => r.source))
+const NON_PER_SEM_PATTERNS = PROXIMITY_PATTERNS.filter(re => !PER_SEM_SOURCES.has(re.source))
+if (NON_PER_SEM_PATTERNS.length !== PROXIMITY_PATTERNS.length - PER_SEM_SOURCES.size) {
+  throw new Error('blog-fee-scan: per-semester split drifted')
+}
+// The marker must sit right beside the figure, inside the same table cell.
+const PER_SEM_AFTER_RE = /^\s*\)?\s*(?:net\s+)?(?:per\s*sem(?:ester)?\b|per-semester\b|\/\s*sem(?:ester)?\b|(?:a|each|every)\s+semester\b)/i
+const PER_SEM_BEFORE_RE = /(?:per[\s-]*sem(?:ester)?|semester\s+fee|(?:each|every)\s+semester)\s*(?:fee\s*)?(?:is\s+|of\s+|at\s+|:\s*|-\s*)?(?:about\s+|around\s+|roughly\s+|approx\.?\s+|~\s*)?$/i
+// "Semester-wise" names a payment plan whose figure is a total, so it is not a marker.
+const PER_SEM_LABEL_RE = /per[\s-]*sem(?:ester)?|semester\s+fee/i
+
+// Visible text beside the figure, `before`/`after` characters each way after
+// tags are stripped (inline styles would otherwise fill a raw window), and
+// never across a table cell edge.
+function cellSlice(combined, start, len, before, after) {
+  let rawBefore = combined.slice(Math.max(0, start - 600), start)
+  const edges = [...rawBefore.matchAll(/<\/?t[dh]\b[^>]*>/gi)]
+  if (edges.length) { const last = edges[edges.length - 1]; rawBefore = rawBefore.slice(last.index + last[0].length) }
+  let rawAfter = combined.slice(start + len, start + len + 600)
+  const cut = rawAfter.search(CELL_EDGE_RE)
+  if (cut >= 0) rawAfter = rawAfter.slice(0, cut)
+  // A partial tag at the window's cut edge is dropped before stripping.
+  rawBefore = rawBefore.replace(/^[^<]*>/, '')
+  rawAfter = rawAfter.replace(/<[^>]*$/, '')
+  const b = stripTags(rawBefore).replace(/\s+/g, ' ')
+  const a = stripTags(rawAfter).replace(/\s+/g, ' ')
+  return { before: b.slice(Math.max(0, b.length - before)), after: a.slice(0, after) }
+}
+
+function perSemClassify(post, combined, tables, start, len, vMin, vMax, cell) {
+  const near = cellSlice(combined, start, len, 30, 30)
+  const colHeader = cell?.columnHeader || ''
+  const rowLabel = cell?.row?.firstText || ''
+  const marked = PER_SEM_AFTER_RE.test(near.after) || PER_SEM_BEFORE_RE.test(near.before) ||
+    PER_SEM_LABEL_RE.test(colHeader) || PER_SEM_LABEL_RE.test(rowLabel)
+  if (!marked) return null
+  // A figure that is NON_FEE for any other reason (exam fee, registration,
+  // EMI, discount amount, salary) stays NON_FEE.
+  const wide = cellSlice(combined, start, len, 40, 40)
+  const otherCtx = `${wide.before} ${combined.slice(start, start + len)} ${wide.after}`
+  if (NON_PER_SEM_PATTERNS.some(re => re.test(otherCtx))) return null
+  if (isDiscountAmount(combined, start, len)) return null
+  const strip = s => s.replace(/per[\s-]*sem(?:ester)?|semester\s+fee/gi, '')
+  if (isRowHeaderNonFeeNarrow(strip(colHeader)) || isRowHeaderNonFeeNarrow(strip(rowLabel))) return null
+  const attr = attribute(post, combined, tables, start, len)
+  if (!attr.uid) return null
+  let prog = detectProgramme(combined.slice(Math.max(0, start - 200), start + len + 200))
+  if (!prog && cell?.table?.caption) prog = detectProgramme(cell.table.caption)
+  if (!prog) prog = detectProgramme(`${post.slug.replace(/-/g, ' ')} ${post.title}`)
+  if (!prog) return null
+  const set = PER_SEM.get(`${attr.uid}|${prog}`)
+  if (!set) return null
+  const ok = set.has(vMin) && set.has(vMax)
+  return { klass: ok ? 'MATCH' : 'MISMATCH', uid: attr.uid, prog, confidence: attr.confidence, rule: attr.rule, accepted: [...set] }
+}
+
 // -- Main scan ------------------------------------------------------------
 
 export function scanAllPosts() {
@@ -804,6 +881,23 @@ export function scanPost(post, rows = []) {
         : (PROXIMITY_PATTERNS.some(re => re.test(tightCtx)) ||
             isDiscountAmount(combined, matchStart, consumedLen) ||
             isRowHeaderNonFeeNarrow(rowLabel) || isRowHeaderNonFeeNarrow(colHeader))
+      // v5 (B3 batch 26): a per-semester figure is checked against the
+      // verify-sheet table when its university and programme have a row.
+      // Only figures that are NON_FEE today can enter, and they leave as
+      // MATCH or MISMATCH, so no figure is checked less than before.
+      if (nonFee && !held && !isBucketRange(combined, matchStart, consumedLen)) {
+        const ps = perSemClassify(post, combined, tables, matchStart, consumedLen, vMin, vMax, cellForNonFee)
+        if (ps) {
+          rows.push({
+            slug: post.slug, publishedAt: post.publishedAt, raw: rawFull,
+            value, valueMin: vMin, valueMax: vMax,
+            klass: ps.klass, universityId: ps.uid, programme: ps.prog,
+            confidence: ps.confidence, attribRule: ps.rule, rule: 'per-semester-table',
+            perSemAccepted: ps.accepted, primary: '', context,
+          })
+          continue
+        }
+      }
       if (nonFee || isBucketRange(combined, matchStart, consumedLen)) {
         rows.push({
           slug: post.slug, publishedAt: post.publishedAt, raw: rawFull,

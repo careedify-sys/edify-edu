@@ -1,5 +1,49 @@
 # Fix log
 
+## 2026-11-28 B3 batch 26: per-semester fee table in the blog fee gate, section C misattributions, exposed mismatches
+
+Branch fix/b3-batch-26, stacked on batch 25 round 2 (10ffd3c). Source: audits/verify/per-semester-fees-2026-11-27.md, sections A, B, C and E. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt 2026-11-28 on all 13 edited posts.
+
+**Why.** Every figure marked "per semester" was NON_FEE, so a wrong semester fee was never checked. The verify sheet now holds semester amounts the universities print themselves, so the gate can check those figures for the universities it covers.
+
+**Data (data/per-semester-fees.json).** Section E array 1, 40 rows, copied as written, with a sheetRef to the section A row added to each. Nothing is computed. One row is added from array 2: Shoolini Offer 1 (Pay After Placement) ₹33,575, section A row 39. Why: the coordinator's 28 Nov note on Rishi's confirmed Shoolini fees says Shoolini prints ₹33,575 itself, and round 2 had already written it into the pharma post. Without the row, every correct ₹33,575 in four posts reads as a MISMATCH against Shoolini's ₹32,500 row; the row can only turn those into MATCH, never clear a wrong figure. The other 10 array 2 rows are left out, as instructed. The scanner refuses to load a row with an unknown university id, a non-integer amount, or no sourceUrl, checkedOn or sheetRef.
+
+**Scanner v5 (scripts/lib/blog-fee-scan.mjs).**
+- Only a figure that is NON_FEE today can enter, and only when a per-semester marker sits right beside it in the same table cell ("per semester", "/sem", "each semester", a "Per Semester" or "Semester fee" column or row label). "Semester-wise" is not a marker: it names a payment plan whose figure is a total (it first flagged the Amity and NMIMS semester-wise totals in the fees guide).
+- A figure that is NON_FEE for another reason (exam fee, registration, EMI, salary, a discount amount) stays NON_FEE.
+- With a row for its university and programme, the figure is MATCH when it equals a printed amount (both ends, for a range) and MISMATCH otherwise. With no row it stays NON_FEE, as today. Narrowing that exemption is batch 27+.
+- So a figure can only move NON_FEE to MATCH or NON_FEE to MISMATCH, and the gate checks no figure less than before. Held (frozen) posts are skipped.
+- The text beside a figure is read as visible text with tags removed, so inline styles do not hide a label.
+
+**Proof (old vs new scanner, figure by figure).** On the unchanged 10ffd3c content: 7019 figures, 136 NON_FEE to MATCH, 21 NON_FEE to MISMATCH, 0 other differences (class, university or programme). On the final content: 146 NON_FEE to MATCH, 0 MISMATCH, 0 other differences.
+
+**Self-test (check-blog-fees).** LPU Rs 40,400 per semester is MATCH; Rs 50,000 per semester is MISMATCH; NMIMS Rs 49,000 under a "Per Semester" column is MISMATCH; Galgotias (no row) stays NON_FEE; an LPU exam fee per semester stays NON_FEE. Proved: changing the LPU row to 40,401 fails the self-test.
+
+**Section C misattributions.**
+- online-mba-supply-chain-management-india-2026: UU's ₹25,900 read as SMU or MAHE because "UU Doon" alone names no university. Both sentences now say "Uttaranchal University (UU Doon)". The figures are unchanged and now MATCH UU's row (section A row 40).
+- mba-hr-management-online-india-2026: the ARKA JAIN row linked to /universities/jain-university-online with the text "JAIN University". It now links to /universities/arka-jain-university-online as "ARKA JAIN University". ₹1,08,500 is ARKA JAIN's lib/data.ts fee and ₹25,000 is section A row 36, so both now MATCH.
+- online-mba-hospital-healthcare-management-india-2026: ₹40,400 now classifies as the LPU MBA (MATCH, section A row 2). The text was already right, so it is not edited.
+- dy-patil-online-mba-review: the summary card's per-semester label is now "DPU Pune Per Semester", so "Rs. 44,400 to 50,000" reads as DPU Pune (MATCH, section A row 31), not Navi Mumbai.
+- amity-online-bba-fees-2026: IGNOU "Annual ₹10,300/yr" sat in the per-semester column. It is not a semester figure and is not verified, so it goes to the counsellor.
+
+**Exposed MISMATCHes (21), each fixed on its merits.**
+- LPU MBA ₹50,000 per semester (online-mba-lpu-review x4, is-lpu fake-or-legit, lpu-vs-chandigarh range) and LPU BBA ₹25,000 per semester (lpu-bba x2, amity-bba-fees): section A rows 3 and 5 say LPU never labels the "Actual Fee" as per semester, so the semester figure is deleted and the ₹2,00,000 / ₹1,50,000 totals stay. The lpu-review table cell becomes "Not published per semester".
+- DSU ₹32,500 avg (fees guide, mba-hr, analytics) and ₹30,000 (entrepreneurship): corrected to "₹32,375 to ₹32,875", section A row 35.
+- JAIN BBA "(Yearly ₹45,000)" (amity-bba-fees): a yearly figure in the per-semester column, deleted. ₹22,500 stays (row 21).
+- Symbiosis BBA first semester ₹35,000 (x5 in symbiosis-bba): section B, our sum of ₹30,000 and the ₹5,000 registration. Deleted; the first-semester amount goes to the counsellor and ₹26,000 per semester for semesters 2 to 6 (row 26) stays. "total ₹1,66,000" was our sum too and is deleted.
+- NMIMS ₹49,000 per semester (nmims-vs-symbiosis x3): section B, ₹1.96L / 4. The two FAQ mentions are deleted; the table cell becomes ₹55,000 (section A row 24) and its total the lib/data.ts range ₹1,96,000 to ₹2,20,000.
+
+**Section B deletions in posts already being edited.**
+- amity-bba-fees: CU ₹21,875 (Annual ₹43,750) to the counsellor; Sharda ₹1,20,000 / ₹20,000 (Annual ₹40,000) corrected to ₹1,35,000 (lib/data.ts) and ₹22,500 (section A row 25), in the table and in one sentence; the "+₹23,880" and "+₹13,930" difference cells become "Highest" and "Higher".
+- mba-hr and analytics: Galgotias "~₹20,050 avg", Kurukshetra ₹25,500, Bharati Vidyapeeth ₹40,000, MGR ₹34,000 to ₹40,000 (section A row 41 conflict) and Amrita ₹42,500 go to the counsellor.
+- lpu-bba FAQ: "saving ₹27,600 total" and "saving ₹4,600 per semester" deleted (our subtractions; round 2 missed this FAQ copy of ₹27,600).
+- fees guide: D.Y. Patil Navi Mumbai Rs 43,750 per semester to the counsellor; the unsourced "Rs 2,000 to Rs 7,000" exam fee range deleted.
+- dy-patil review: Navi Mumbai "Rs. 42,500/sem" to the counsellor and "Rs. 2,500/semester extra" exam fee to "Included in fees" (section A row 32).
+
+**Left for later.** amity-bba-fees still carries derived savings (₹23,880 and ₹13,930 in prose) and IGNOU ~₹30,900; mba-hr still prints JAIN ₹49,000 for HR electives (note J1). Both are batch 27 scope.
+
+**Counts.** check-blog-fees 1792 -> 1790. No slug above its baseline.
+
 ## 2026-11-28 B3 batch 25 round 2: QA F1-F8 (scanner exemptions, BVP revert, wrong and derived fees)
 
 Branch fix/b3-batch-25, on top of the origin/main merge 3efb19b. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. data-science-salary-india-2026-scope-jobs not touched. updatedAt 2026-11-28 on all 22 edited posts.
