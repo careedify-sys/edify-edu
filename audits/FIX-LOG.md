@@ -1,5 +1,55 @@
 # Fix log
 
+## 2026-11-27 · B3 batch 16: university-layout OG/Twitter fee clause, peer fee quotes in spec JSON, Karnataka H2, UPES unrendered JSON (branch fix/b3-batch-16)
+
+- **Source:** the B3 batch 16 brief. Every figure written comes from getExactFee in lib/fees.ts (lib/data.ts). No fee,
+  gap or EMI was computed. No title, seoTitle or metaDescription of a live (200) page changed.
+- **1. OG/Twitter descriptions (app/universities/[id]/layout.tsx and six child routes):**
+  - Why: the layout built "total fees (₹X–₹Y)" from the university-wide feeMin/feeMax, which is MBA-led (often the
+    60000/200000 placeholder, or a degenerate "₹1.7L–₹1.7L"). BBA, BCA and MCA hubs set no twitter block and the BBA/BCA
+    spec pages set no openGraph either, so they inherited that MBA figure: in the base build 772 pages in 88 universities
+    carried it in og:description or twitter:description (bba/spec 247, bca/spec 136, mca/spec 209, bba 71, bca 51,
+    mca 56, mba 2).
+  - What: the layout fee clause now uses formatExactFeeShort(getExactFee(u, mainProg)); no publishable fee drops the
+    clause, and min = max prints one figure. bba, bca, mca hubs and mca/[spec] now set twitter from their own title and
+    description; bba/[spec] and bca/[spec] set openGraph and twitter from their own. Their meta title and description
+    strings are unchanged.
+  - Build: og/twitter with "total fees (" 772 -> 3. Changed fields: og 413, twitter 820, all now equal to the page's own
+    description. The 15 meta descriptions that changed are prerendered 404 shells (noindex) that render the layout
+    metadata; the 3 left (andhra/mca ₹62,200, integral/mca ₹1,10,000, vignan/bba ₹90,000) are among them and now
+    show the getExactFee MBA figure instead of a placeholder range. Full before/after list: .b8tmp/meta16-changes.tsv
+    on the batch branch worktree.
+- **2. Mysore and the Karnataka post:**
+  - The MBA pd.fees "₹160K – ₹160K" was NOT cleared. Setting it to the record's "Not published" convention moves
+    check-fee-baseline from 205 to 206 (rule 4c counts it as a new suppression), and the brief says to stop that part
+    rather than raise a ratchet. lib/data.ts is unchanged; the string still reaches the RSC payload, never visible copy.
+  - online-mba-karnataka-2026: H2 "Mid-Range Tier: DSU, Christ, Alliance, and University of Mysore" became "DSU,
+    Christ, Alliance, and University of Mysore", so Mysore is no longer placed in a fee tier. updatedAt 2026-11-27.
+- **3. Peer fee quotes in lib/data/page-content/*.json (112 files, 173 strings):**
+  - Why: spec pages quoted other universities at figures lib/data.ts does not hold: JAIN "~Rs 1,75,000" (exact
+    1,60,000 to 2,98,000), NMIMS "Rs 2.5L+" and "2,50,000-3,00,000" (1,96,000 to 2,20,000), LPU "around Rs 1,20,000"
+    and an unlabelled 1,61,600 (list 2,00,000, 1,46,240 to 1,61,600 by payment plan), MUJ and Uttaranchal discounted
+    nets with no label, Amrita per-specialisation 2,20,000 / 2,24,000 / 2,44,000 (1,76,000 to 2,60,000), Symbiosis
+    "1.5L-2L" and 2,05,000 (3,15,000 to 3,70,000), SMU 1,50,000 (1,20,000) and others.
+  - What: each quote now reads the getExactFee figure, with its label where getExactFee labels it. Figures for
+    universities where getExactFee returns none (Madras, SRM Sikkim, Christ MBA) were deleted. Comparatives that only
+    held with the wrong figure were cut ("LPU ... at a lower fee", "Symbiosis ... at lower cost", "MAHE ... is more
+    expensive", "Fee is higher than DSU", "NMIMS charges more", "IGNOU ... below Rs.60,000", DSU "significantly
+    cheaper than").
+  - Detector (.b8tmp/peer16.ts, attributes each figure to the university named before it in the sentence): peer quotes
+    differing from getExactFee, source 194 -> 7, rendered spec pages see counts in the report. By university (base):
+    LPU 49, Uttaranchal 34, MUJ 30, JAIN 22, Amrita 15, Amity 10, NMIMS 7, Christ 8, Symbiosis 4, Madras 3,
+    Shoolini 3, Andhra 2, SRM Sikkim 2, DPU 1, IGNOU 1, SMU 1, plus 2 attribution misses. The 7 left are not peer
+    quotes: 5 on Christ's own MBA JSON (Christ has no MBA in lib/data.ts), BITS's own 3,12,400 read as MAHE's, and
+    SRM Sikkim's own "Rs 1,10,000 indicative fee" read as SRM IST's.
+- **4. UPES unrendered spec JSON** (financial-management, human-resource-management, logistics-supply-chain-management,
+  marketing-management, operations-management; their specSlugs match no built page): the "EMI option across up to 36
+  months" chooseIf line went; no Year 1/Year 2 split was left after batch 15. "36 months", Year 1/2 and NBFC: 1 -> 0.
+- **Gates:** check-fee-baseline 205 unchanged, verify-fees, check-data-slim-drift, check-placeholder-fee-ranges,
+  check-blog-fees 1950 unchanged, check-protected-pages OK, tag balance unchanged, JSON round-trip 431 ok.
+- **Open:** Christ's own MBA JSON still prints "Rs 60,000 to Rs 2,00,000" (own page, Christ lists no MBA); the
+  Mysore pd.fees string waits for a labelled portal fee or a decision on the baseline.
+
 ## 2026-11-27 · B3 batch 15: Yenepoya MBA fee from the portal, Mysore 1,60,000 removed, derived fee comparisons in spec JSON, UPES spec fee range, Q59 rewritten as a mode question (branch fix/b3-batch-15)
 
 - **Source:** the B3 batch 15 brief and audits/verify/fees-mku-mumbai-mysore-yenepoya-amitymca-2026-11-27.md (portal

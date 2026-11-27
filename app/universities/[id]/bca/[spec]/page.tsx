@@ -52,13 +52,19 @@ export async function generateMetadata(
   const nirfLabel = nirfForProgramme(u, 'BCA')
   const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
   // CTR-tuned title (2026-05-25): short uni + short spec, fee, NAAC, year. No em dash.
+  const title = clampTitleSpecLed(
+    `${titleName} BCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
+    `${shortName} BCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
+    shortSpec,
+  )
+  const description = shouldIndexUniversity(u.id) ? clampDescription(`${formatUniversityDisplayName(u.name)} Online BCA in ${spec} ${year}: ${feeExact ? `${feeExact} fees` : 'fees on request'}${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved 3-year degree. Check syllabus, eligibility & career scope free.`) : unverifiedDescription(u.name, 'BCA')
   return {
-    title: clampTitleSpecLed(
-      `${titleName} BCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
-      `${shortName} BCA ${shortSpec} ${year}: ${fee}${naacSegment(u.naac)} | EdifyEdu`,
-      shortSpec,
-    ),
-    description: shouldIndexUniversity(u.id) ? clampDescription(`${formatUniversityDisplayName(u.name)} Online BCA in ${spec} ${year}: ${feeExact ? `${feeExact} fees` : 'fees on request'}${naacSegment(u.naac)}${nirfStr}. UGC-DEB approved 3-year degree. Check syllabus, eligibility & career scope free.`) : unverifiedDescription(u.name, 'BCA'),
+    title,
+    description,
+    // Own OG/Twitter, so this page stops inheriting the university layout's
+    // description and its fee clause (B3 batch 16).
+    openGraph: { title, description, type: 'website' },
+    twitter: { card: 'summary', title, description },
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/bca/${canonicalSlug}` },
     robots: { index: shouldIndexUniversity(u.id) && !isSpecNoindexed(u.id, 'bca', canonicalSlug), follow: true },
   }

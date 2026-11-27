@@ -43068,7 +43068,7 @@ Total cost: INR 23,00,000 (fees alone). Plus opportunity cost. But median starti
 
 <p>For the full review, read our <a href="/blog/jain-online-mba-review-2026">JAIN online MBA review 2026</a>.</p>
 
-<h2>Mid-Range Tier: DSU, Christ, Alliance, and University of Mysore</h2>
+<h2>DSU, Christ, Alliance, and University of Mysore</h2>
 
 <h3>Dayananda Sagar University (DSU) Online, Bangalore</h3>
 

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import { getUniversityById, formatFee } from '@/lib/data'
+import { getUniversityById, type Program } from '@/lib/data'
+import { getExactFee, formatExactFeeShort } from '@/lib/fees'
 import { nirfForProgramme } from '@/lib/data-slim'
 import { getTitleName } from '@/lib/seo-title'
 import { naacSuffix, naacSegment, naacAccredited, naacPhrase } from '@/lib/seo/display-guards'
@@ -198,8 +199,12 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   const seoName = getSeoName(u.id, u.name)
   const mainProg = u.programs[0] || 'MBA'
   const progTitle = PROG_TITLE[mainProg] || (shouldIndexUniversity(u.id) ? `Online ${mainProg}` : mainProg)
-  const hasFee = u.feeMin > 0
-  const feeStr = `${formatFee(u.feeMin)}–${formatFee(u.feeMax)}`
+  // The fee clause uses the programme this metadata describes (mainProg) through
+  // getExactFee, never the university-wide feeMin/feeMax: that pair is MBA-led and
+  // was printed as "total fees" on BBA, BCA and MCA pages that inherit this
+  // metadata. No publishable fee drops the clause; min = max prints one figure.
+  const feeStr = formatExactFeeShort(getExactFee(u, mainProg as Program))
+  const hasFee = feeStr != null
   // Falls back through NIRF then NAAC then the one thing every record has.
   const nirf = nirfForProgramme(u) ?? naacPhrase(u.naac)
 

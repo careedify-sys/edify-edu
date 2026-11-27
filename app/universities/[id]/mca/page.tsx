@@ -85,6 +85,7 @@ export async function generateMetadata(
     keywords: syllabus?.metaKeywords || dynamicKw,
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/mca` },
     openGraph: { title, description, type: 'website' },
+    twitter: { card: 'summary', title, description },
     robots: { index: shouldIndexProgrammeHub(u, 'MCA').shouldIndex, follow: true },
   }
 }

@@ -79,6 +79,7 @@ export async function generateMetadata(
     keywords,
     alternates: { canonical: `https://edifyedu.in/universities/${u.id}/bca` },
     openGraph: { title, description, type: 'website' },
+    twitter: { card: 'summary', title, description },
     robots: { index: shouldIndexProgrammeHub(u, 'BCA').shouldIndex, follow: true },
   }
 }
