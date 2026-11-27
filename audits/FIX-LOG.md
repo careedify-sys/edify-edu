@@ -7,6 +7,178 @@
 - **Not checked:** the noindexed-count half. Windsor has no Indexing report; asked as Q79.
 - **Caveat:** W46 is 187 with this page filter vs 151 in Q7; W45 agrees (144). Recorded both, not reconciled.
 
+## 2026-11-28 B3 batch 23 round 4: merge of origin/main, updatedAt on 20 posts, MAHE NIRF category, mba-scope leftovers
+
+Branch fix/b3-batch-23r3: a merge commit of origin/main (f0c1fda: WA Phase 4, university logos, Q72-Q78) into 2a8e9df. Fixes F1 and F2 in audits/qa/2026-11-27-b3-batch-23-premerge-rerun2.md plus advisory 5. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry.
+
+**Merge conflicts.**
+- audits/QUESTIONS-FOR-RISHI.md: both sides kept, in number order Q69, Q70, Q71, Q72 to Q78. Git put main's block first; keeping that order would have put Q70 and Q71 after Q78. Each of Q69 to Q78 has 6 cells (counted by unescaped pipes).
+- audits/FIX-LOG.md: all entries kept, the three batch 23 entries first, then main's university-logos entry, each separated by a blank line.
+
+**F1. updatedAt "2026-11-28" on the 20 posts batch 23 touched.**
+- Why: check-blog-updated-at accepts an unchanged updatedAt only if it is today (IST). Round 3 passed on 27 Nov and fails on 28 Nov. Against main, 20 posts changed rendered content while keeping main's 2026-11-27 date. The list comes from the gate's own rule (contentText from scripts/lib/blog-content-text.mjs) run with origin/main as the base. It matches the QA list.
+- Posts: online-mba-for-working-professionals-india, mahe-online-mba-review-2026, mba-fees-india-complete-guide-2026, career-after-12th-arts-courses-jobs-2026, best-mba-specialization-india-2026, online-mba-salary-india-2026, online-mba-pune-university-2026, mba-after-engineering-india-2026, mba-data-science-analytics-career-2026, online-mba-for-freshers-india-2026, mba-scope-india-2026, distance-mba-meaning-what-is-it-2026, online-mba-courses-chennai-2026, top-correspondence-mba-colleges-india-2026, online-mba-fee-comparison-india-2026, best-computer-courses-after-12th-india-2026, courses-after-12th-science-complete-list-2026, best-online-mba-colleges-india-2026, amity-vs-manipal-online-mba-2026, nmims-vs-symbiosis-online-mba-2026.
+- The other 29 posts batch 23 changed carry a date that differs from main's, so the gate already accepts them.
+
+**F2. MAHE review body: "India overall" was the wrong NIRF category.**
+- Why: lib/data.ts nirf 3 is the University category, and the FIX-LOG 2026-10-27 entry confirms NIRF 2025 University MAHE 3. "Overall" is a different NIRF table. No verify sheet or FIX-LOG entry holds a 2024 MAHE rank or a "14th across all institutions" figure.
+- What changed (mahe-online-mba-review-2026): "NIRF ranked it third in India overall." and "NIRF ranked it 3rd in India overall in 2024 and 14th across all institutions." both now read "It holds rank 3 in the NIRF 2025 University category." The 2024 year and the 14th claim are deleted.
+- Left: online-manipal-mba-review-2026 has the same pill ("NIRF #3 / India overall 2024"). That post is not part of batch 23, so it goes to a later NIRF sweep.
+
+**Advisory 5. mba-scope leftovers.**
+- Why: two sentences survived the round 3 statistic deletions. "Employers accept an online MBA from a NAAC A or A+ university most readily for promotion. Campus MBA is still preferred mostly for fresher hiring." was a qualitative restatement of the deleted Naukri survey, so it still leaned on that survey. "Growth: very new, from a small base." read awkwardly once its figure was gone.
+- What changed: both sentences are deleted, with nothing added in their place.
+
+**Logged, not fixed (QA item 13; pre-existing unsourced percentages in the batch 23 posts, for a later batch):**
+- mba-after-engineering: "Real data from hiring platforms" with a 60-80% salary increase, "40 to 80 percent", and the FAQ "40-80% more".
+- online-mba-salary: 20-40%, 25-40%, 30-50% and 25-35%, and the 25/40/15% ROI split. "Use Glassdoor, Naukri, AmbitionBox" is advice only.
+- mba-scope: "8 to 10 percent" and "8 to 12 percent annually".
+- mahe: "25-40 percent upgrade".
+- working-professionals: "20-40 percent salary upgrade".
+- fintech: the Fintech Foundation, NASSCOM and RBI pointer (no figure).
+
+Gates on the merge commit: fee 205, blog-fees 1889 (main 1945), em-dash 227, salary 1902 (main 1913), salary-ext 65 (main has no ext baseline yet), check-blog-updated-at ok, check-nirf-category OK. The merge adds no figure above main's own levels.
+
+## 2026-11-27 B3 batch 23 round 3: IGNOU cells beside a ₹66,000 meta, Q70 cells and scope, Q71, mba-scope hiring statistics, NIRF categories
+
+Branch fix/b3-batch-23r3, one commit on 24663a8 (fix/b3-batch-23 was checked out in another worktree, so the fallback branch name was used). Fixes F1 and F2 in audits/qa/2026-11-27-b3-batch-23-premerge-rerun.md plus the round 3 brief. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt was already 2026-11-27 on all 12 edited posts.
+
+**F1. IGNOU "No total published" on pages whose meta prints ₹66,000 (lib/blog.ts).**
+- Why: the fintech, hospitality and real-estate metaDescriptions print "fee ranges ₹66,000 to ₹2,25,000" in the head, the Article JSON-LD and the visible dek, so a table cell on the same page saying IGNOU publishes no total contradicts the page. The meta stays (metas are Rishi's call, see Q70).
+- What changed: the IGNOU "Total Fee (2-year)" cell in online-mba-fintech-india-2026, online-mba-hospitality-management-india-2026 and online-mba-real-estate-management-india-2026 now reads "₹16,000 per semester (₹18,000 for the 3rd)" (audits/verify/batch20-facts-2026-11-27.md, D6), the same wording as the IGNOU hub. online-mba-logistics-management-india-2026 has the same table template and got the same cell for consistency (QA's optional item); its page does not print ₹66,000 today.
+- Built-page check (scan script in the session scratchpad, b23tools/scan66.cjs): every .html and .rsc file under .next/server/app, with the shared navbar fee map (ignou-online MBA "₹66,000", on every page) taken out first. 57 pages print 66,000 outside the navbar map. 0 of them also carry "no total", "not a programme total", "No total published", "publishes no total", "does not publish a total", "without a total" or "not a total". Control: 3 pages carry such a claim without 66,000 (distance-mba-kolkata "No total published: ₹16,000 per semester", the working-professionals "template, not a total" line, JMI's own fee note). Proof the detector fires: putting "No total published" back into a copy of the built fintech page makes it report 1 page with both.
+- Left: distance-mba-kolkata and is-distance-mba-worth-it keep "No total published"; neither page prints ₹66,000 (QA advisory: they become contradictions if those pages ever gain the figure).
+
+**F2. Q70 row (audits/QUESTIONS-FOR-RISHI.md).**
+- Why: four bare "|" (three page-title separators and 'ignou-online|mba') split the row into 10 cells, which broke the table Rishi answers in. The scope also missed the hand-written blog metas.
+- What changed: each literal pipe is now "\|"; the row renders as 6 cells. The page count now reads 49 built pages printing 66,000, 15 of them in JSON-LD (the QA count; the earlier estimate was about 42 and 8). New sentence: five hand-written blog metaDescriptions (distance-mba-meaning-what-is-it-2026, online-mba-fintech-india-2026, online-mba-hospitality-management-india-2026, online-mba-real-estate-management-india-2026, is-ignou-fake-or-legit-2026) also print 66,000, the lib/data.ts fix would not change them, and they need a separate meta decision. The "What stays" cell says the same. My own scan counts 57 pages because it also counts the RSC payload and the bare 66000 form; the row quotes QA's method.
+- FIX-LOG: a blank line now separates the batch 23 entry from the batch 22 round 3 heading.
+
+**D1. Q71 filed, accepted, pending Rishi.**
+- Why: titles and metas are Rishi's call, and these heads now promise content the cleanup removed: mba-scope-india-2026 seoTitle "... Brand x Spec Salary Map" and meta "brand x specialisation salary matrix" (plus "actual FY26 sector hiring numbers", whose percentages this round removes); commerce-jobs-list-salary-india-2026 seoTitle "10-Year Career Curve"; online-mba-for-freshers-india-2026 seoTitle "Real ROI vs Work-Ex Wait" and meta "ROI math vs waiting"; data-science-salary-india-2026-scope-jobs meta "25-40% GenAI/LLM premium, 2-3x product company gap, city multiplier" (its body still carries those figures; it is not a batch 22 post); bsc-career-options-scope-salary-india-2026 meta "stream-by-stream salary curve" (B3 batch 24, on its own branch, removes that curve from the body; on this branch the table is still there); llm-course-duration-fees-scope-india-2026 meta "corporate law Rs 12L+ start", which rests on one unsourced body bullet ("Year-1 post-LLM CTC Rs 12-20 LPA at top law firms") kept only so the meta has something behind it. The last two were added at the coordinator's request. Q71 is the next free number: Q70 was the highest on this branch, origin/main, every local branch and the main checkout's working copy. Row checked at 6 cells.
+
+**courses-after-12th-science-complete-list-2026: broken sentence and NASSCOM.**
+- Why: "MBA after engineering in India work in roles ..." had lost its subject (a statistic was cut earlier), and NASSCOM is not an approved source.
+- What changed: "many engineering graduates in India move into roles that do not require engineering skills, and an MBA after engineering is one common route." The internal link stays; no figure, no attribution.
+
+**mba-scope-india-2026: hiring statistics credited to NASSCOM, LinkedIn and Naukri.**
+- Why: none of these is an approved source (university portals, deb.ugc.ac.in, naac.gov.in, nirfindia.org, ugc.gov.in), and no verify sheet holds any of these figures, so each statistic is deleted, not re-attributed.
+- FAQ: "28 percent YoY" and "15 percent YoY" with the NASSCOM/LinkedIn lead-in; the Naukri "78 percent ... remaining 22 percent" sentence (now: online MBA from a NAAC A or A+ university is most readily accepted for promotion, campus still preferred for fresher hiring); "down 18 percent YoY according to NASSCOM 2025 Q4 data" (now "is shrinking"); "shrunk 25 percent over 3 years" (now "have shrunk"); "growing 40 percent YoY".
+- Body: the sector table loses its "YoY hiring growth" column and keeps the direction column ("Fastest growing" is now "Growing", because the ranking came from the deleted numbers); the caption, the H2 ("Sector-by-Sector Hiring Direction in 2026") and the intro line now say it is a direction, not a measured rate; ESG "Growth: 40 percent YoY" and AI Ops "80 percent YoY" deleted; the Naukri "survey of 1,200 hiring managers" line and its 78/63/41/22 percent list deleted (the practical-implication paragraph after it stays); "growing 6-8 percent YoY" and "28 percent vs 3 percent according to LinkedIn data" deleted; the Honest Gaps line about "FY25-Q4 to FY26-Q1" sector data now says the table gives a direction only.
+- Left: the salary figures (LPA) in this post belong to the salary chunks, and the NIRF method pointer ("NIRF placement reports are the closest thing to a national source") names an approved source.
+
+**NIRF categories in the 20 batch 22 posts.**
+- Scope: the 20 slugs batch 22 (3bc34bc) touched in lib/blog.ts. Detector: bare "NIRF n" / "NIRF #n" with no category within the cell, plus a column check on every table with a NIRF header. It found 10; 8 were bare ranks, 1 was a "NIRF 2025" header over cells that name their category, and 1 was the mba-scope NIRF 2024 placement line removed above.
+- What changed (lib/data.ts: JAIN nirfMgt 73, NMIMS nirfMgt 24, MAHE nirf 3; all NIRF 2025 per FIX-LOG 2026-10-27): JAIN "NIRF 73" -> "NIRF 2025 Management 73" (working-professionals, online-mba-pune, online-mba-salary); NMIMS "NIRF 24" -> "NIRF 2025 Management 24" (mba-after-engineering, best-mba-specialization, online-mba-salary); MAHE review accreditation pill "NIRF #3 / India overall" -> "NIRF #3 / University category, 2025" (the old label named the wrong category) and persona card "NIRF #3" -> "NIRF 2025 University #3".
+- Left: the career-after-12th-arts NLU table, whose header names the Law category.
+
+**best-mba-specialization-india-2026 heading.** "MBA Specialisations Ranked by Demand 2026" -> "MBA Specialisations and Demand Levels 2026": the table is not sorted by demand (Very High rows sit below High). H2 only, no fragment links to it.
+
+Gates: fee 205, blog-fees 1889 (unchanged), em-dash 227, salary 1902, salary-ext 65, check-nirf-category OK.
+
+## 2026-11-27 B3 batch 23 round 2: no "no total" claim beside ₹66,000, Q70, F3 split, NIRF years, IGNOU table
+
+Branch fix/b3-batch-23, on top of the rebased batch 23 commit (4d7bec8). QA round 1 findings F1-F3 and A1-A6. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt 2026-11-27 on every edited post (already set by batch 23).
+
+**F1. "No total" beside a printed ₹66,000.**
+- Why: getExactFee still prints ₹66,000 on the IGNOU MBA hub (hero, fee card), so a hub sentence saying IGNOU publishes no total contradicts the same page. Until Q70 is decided, the copy keeps the neutral per-semester fact and makes no claim about a total.
+- lib/data/page-content/ignou-online-mba.json: FAQ answer now "IGNOU publishes the MBA fee per semester and charges registration and development fees on top." (no figure, because check-hub-fee-text allows only the hub's top fee in FAQ fields). Comparison table Total Fees cell "No total published (Rs 16,000 per semester)" -> "Rs 16,000 per semester (Rs 18,000 for the 3rd)".
+- app/compare/[pair]/pairs.ts: the ignou-vs-lpu "What is the fee difference?" answer is back to its pre-batch-23 text. app/compare/[pair]/page.tsx (lines 117-120) replaces any fee-question answer that contains Rs with the getExactFee answer, so the batch 23 edit never rendered; reverting keeps the source honest about what ships. FAQ1 and the verdict edit stay (they render).
+- Sweep of lib, app and components for "no total", "not as a (programme) total" and "no programme total", each hit checked against the QA list of pages that render ₹66,000 (qa23/left66.out, 149 lines): the 6 blog cells (distance-mba-kolkata, is-distance-mba-worth-it, and the fintech, hospitality, logistics and real-estate posts) and the LPU MBA hub table cell are on pages that do not render ₹66,000, so they stay. JMI's "publishes no programme total" is about JMI. The 5 IGNOU spec JSONs carry no such claim.
+
+**F2. Q29 renumbered Q70 (audits/QUESTIONS-FOR-RISHI.md).**
+- Why: Q29 was already the Shoolini proctoring question. The row now states the real scope: ₹66,000 renders on about 42 pages and in JSON-LD on 8, by class: the IGNOU profile (Total Fees, FAQ and Course JSON-LD); the IGNOU MBA hub and 5 spec pages (hero, fee card, peer table, spec FAQ JSON-LD on finance, marketing, operations); /compare/ignou-vs-lpu and /compare/ignou-vs-amity (body, table, fee tiers, FAQ); /fees (2) and /universities (1); the "Universities offering MBA" cards on the andhra, dy-patil, srm-sikkim, ganpat, vignan and madras profiles; peer MBA hub and spec tables (andhra hub plus 3 specs, srm-sikkim hub plus 7, madras 7 pages); frozen posts and related-post cards. Plus the 6 titles, their metas and 2 /compare descriptions. It asks Rishi to approve treating the IGNOU MBA fee as per-semester in lib/data.ts, which changes those titles.
+
+**F3. The 1945 -> 1889 drop, split.** Recorded in the batch 23 entry below. The 31 figures that went NON_FEE by proximity to "per semester", with the university each belongs to (from the post text; "-" means a generic range, not one university):
+- is-ignou-fake-or-legit-2026: Rs 14,400, Rs 9,600 (x2), Rs 18,000 (IGNOU components)
+- ignou-online-admission-guide: Rs 18,000 (IGNOU)
+- how-to-choose-online-mba-university-india-2026: ₹1.25 lakh (SMU)
+- affordable-online-mba-india-2026: ₹1 Lakh (an H2 budget label, -)
+- mba-fees-india-complete-guide-2026: Rs 45 lakh (x2, ISB campus), Rs 80,200 (Galgotias), Rs 50K to Rs 2 lakh (-), Rs 1.56L to 2.25L (-)
+- distance-mba-kolkata-top-programs-2026: ₹20,000-₹30,000 (NSOU)
+- distance-mba-kerala-programs-2026: Rs 25-40K (Calicut)
+- distance-mba-meaning-what-is-it-2026: ₹2.20 lakh (NMIMS)
+- online-mba-courses-chennai-2026: Rs 15-40K and Rs 15,000-30,000 (Madras), Rs 20,000-40,000 and Rs 30,000 (Annamalai), Rs 30K (Annamalai)
+- best-online-mba-colleges-india-2026: ₹3.15 lakh (Symbiosis), ₹1,20,000 (SMU)
+- online-mba-fintech-india-2026: ₹2,25,000 (Amity), ₹1,30,600 (LPU)
+- online-mba-hospitality-management-india-2026: ₹2,25,000 (x2, Amity), ₹1,30,600 (LPU)
+- online-mba-logistics-management-india-2026: ₹2,25,000 (x2, Amity), ₹1,30,600 (LPU)
+- online-mba-real-estate-management-india-2026: ₹2,25,000 (Amity)
+- Added to the batch 25 exemption scope (.b8tmp/batch24-discount-gap.md, local working notes): the per-semester proximity exemption hides these exactly as the discount-word exemption hides others, so the narrowing must cover "per semester" too and these rows must be worked first.
+
+**A1. BITS.** The batch 23 reason was wrong and is corrected below: "NIRF #16 Overall 2025" was true (NIRF 2025 Overall #16); the edit changed the category to University #7, which is also true. The BITS review's "#16 Overall" is not a defect.
+
+**A2. NIRF years.** Where the source gives the 2025 edition, the batch 23 cells now name it: JAIN "NIRF 2025 Management 73" (mahe review, mba-after-engineering, mba-hr-career, mba-data-science-analytics, mba-for-commerce, dy-patil review), JAIN "NIRF 2025 University 62" (career-after-12th-arts, best-computer-courses x2), and MAHE "NIRF 2025 University category rank 3." (6 profession posts). Source: FIX-LOG 2026-10-27 NIRF 2025 confirmation and audits/verify/jain-university-online-2026-11-18.md. The 2 VIT "NIRF University 14" cells in distance-mba-chennai-2026 stay without a year: lib/data.ts has nirf 14 but no nirfYear, and no sheet in the repo dates it.
+
+**A3. IGNOU spec JSON.** ignou-online-mba-financial-management.json: "SMU at ₹1,20,000 total is nearly double IGNOU's cost." -> "SMU lists ₹1,20,000 in total." (the "nearly double" compared SMU with our own sum). Note: ignou-online-mba-financial-management.json, -marketing-management.json and -operations-management.json are never loaded; getSpecPageContent (lib/data/page-content.ts) reads ignou-online-mba-{specSlug}.json and the live spec slugs are finance, marketing and operations, so no file matches and those pages render from the template. Batch 23 and this edit to those three files change no page; hr-management and services-management do load.
+
+**A4. Labels and mixed ranges (lib/blog.ts).**
+- is-distance-mba-worth-it-india-2026: "Budget-constrained credential seeker (under Rs 1 lakh)" -> "Budget-constrained credential seeker" (the threshold leaned on the sum).
+- Ranges that ran a per-semester figure into a programme total are split: mba-fees-india-complete-guide-2026 "Rs 16,000 per semester (IGNOU) up to Rs 1.61L" -> "IGNOU Rs 16,000 per semester; others up to Rs 1.61L"; fintech, hospitality, logistics and real-estate posts "₹16,000 per semester (IGNOU) to ₹2,25,000 total (Amity)" -> "IGNOU ₹16,000 per semester; Amity up to ₹2,25,000 total".
+- Not changed: lib/specFaqs.ts "Galgotias (Rs 80,200)" (optional in the QA note; it is a separate fee check).
+
+**A6. IGNOU MBA hub comparison table.** NMIMS now reads NAAC A++ and NIRF Management #24 (FIX-LOG 2026-10-27, NIRF 2025 Management 24), not A+ and #15.
+
+Gates: fee 205, blog-fees 1889 (unchanged), em-dash 227, salary 1902, salary-ext 65.
+
+## 2026-11-27 B3 batch 23: IGNOU own-sum total, NIRF categories, CU Early Bird labels, salary gate gaps
+
+Branch fix/b3-batch-23, rebased onto the batch 22 round 2 commit (7efc2cc), then onto batch 22 round 3 (21d475a). No title, seoTitle, h1Title or metaDescription edited by hand; the CU label change moves 3 /compare meta descriptions (item 3). No allowlist entry added. No frozen post (FREEZE_SLUGS) touched. updatedAt is 2026-11-27 on every edited post (ignou-online-admission-guide had no updatedAt; one was added).
+
+**1. A3, IGNOU "Rs 66,000" (lib/blog.ts, page-content JSON, lib/*.ts, pairs.ts).**
+- Why: Rs 66,000 is our own sum. IGNOU publishes Rs 16,000 per semester for the 1st, 2nd and 4th semesters and Rs 18,000 for the 3rd, plus registration and development fees, with no total (audits/verify/batch20-facts-2026-11-27.md, D6). FIX-LOG 26 Nov (B3 batch 12) made /fees show "₹66,000" from lib/data.ts, which is where the sum entered the tables. No verify sheet or FIX-LOG entry cites an IGNOU document that states a total.
+- What changed:
+  - lib/blog.ts, 89 edits in 28 posts. Totals now read "Rs 16,000 per semester (Rs 18,000 for the 3rd)" (or the ₹ form), with "plus registration and development fees" in prose. Where a table has both a total and a per-semester column, the total cell reads "No total published".
+  - Deleted, because each compares or derives from the sum: "68% cheaper", "roughly 3x gap", "more than 3x apart", "one-fourth of NMIMS", the Chennai break-even line "IGNOU (Rs 66,000 fee) → break-even in just over 3 months", "lowest UGC-DEB cost", and the "under Rs 1 lakh" budget labels (now "Lowest fees", "Tight budget", "If budget constrained"). "From ₹66,000 to ₹2,25,000" ranges now say "up to ₹2,25,000" or "from ₹16,000 per semester at IGNOU to ₹2,25,000". ignou-online-admission-guide: both "That is / That totals Rs 66,000 in programme fee" sentences are gone; the per-semester list above them stays.
+  - Page-content JSON, 77 replacements in 22 files (5 IGNOU MBA hubs and specs, plus Galgotias, Uttaranchal, IIFT, LPU and Vignan peer sections). "Total tuition: ₹66,000" lines and "The total programme fee is ₹66,000" sentences are deleted; the published per-semester list stays. Derived "one-third of LPU / Amity" and "nearly double IGNOU's cost" claims are deleted. Comparison tables read "No total published (Rs 16,000 per semester)". In the IGNOU MBA hub tldr and FAQ answer, check-hub-fee-text allows only the hub's top fee, so the per-semester figures were deleted there instead ("fees charged per semester"; "publishes the MBA fee per semester"). Round 2 removed the "not as a programme total" clause and the "No total published" hub table cell, because the same page prints ₹66,000 from getExactFee.
+  - lib/blog-quick-facts.ts (ignou-online-admission-guide card), lib/specFaqs.ts, lib/internal-links.ts (anchor label "IGNOU Online MBA Fees 2026 and Review"; it is anchor text, not the post title), app/compare/[pair]/pairs.ts (ignou-vs-lpu FAQs and verdict). lib/coupon-pages.ts totalFeeNum 66000 -> 0: nothing reads the field and the type is a number.
+- Gates: check-blog-fees 1945 -> 1889. Split of the 56 (measured in round 2 with .b8tmp/f3.mts, the scanner run on the base tree and on this commit, rows keyed by post and figure): 30 unverified figures deleted, 1 now MATCH (is-ignou-fake-or-legit-2026 "Rs 50,800"), and 31 now NON_FEE only because new "per semester" wording sits within the scanner's 80-character window. The 56 is net of rows the edits moved between classes. Those 31 are not verified; they are listed in the round 2 entry above and added to the batch 25 exemption scope.
+- **Left as is, needs a decision (audits/QUESTIONS-FOR-RISHI.md Q70; first filed as Q29, a number already used by the Shoolini proctoring question):**
+  - lib/data.ts feeMin/feeMax 66000 and programDetails.MBA.fees "₹66,000" feed getExactFee, so the navbar fee map still prints ₹66,000. Measured: returning kind none for ignou-online|mba (a SUMMED_TOTAL_PAIRS set in lib/fees.ts) changes 6 titles (the IGNOU profile and 5 IGNOU MBA spec pages), their metas and 2 /compare descriptions. Titles are out of bounds, so the change was reverted.
+  - Frozen to 5 Dec: ignou-online-mba-review-2026 (13 hits including title, seoTitle, h1Title and meta, plus its quick-facts "Total Fee ₹66,000"), is-manipal-university-jaipur-fake-or-legit-2026 (1), amity-online-mba-review-2026 (2). lib/mba-seo-overrides.ts IGNOU hub title, description and intro.
+  - metaDescription hits: distance-mba-meaning-what-is-it-2026, best-online-mba-colleges-india-2026, online-mba-fintech-india-2026, online-mba-hospitality-management-india-2026, online-mba-real-estate-management-india-2026.
+  - components/MBAHubClient.tsx and components/MBASpecHubClient.tsx print "IGNOU at Rs 66,000" inside the commission-free paragraph, which stays word for word; data/fees-hub-data.json mirrors data.ts.
+  - Not IGNOU, untouched: KL University "Rs 0.66 L" (mba-digital-marketing), "short by Rs 66,000" (why-online-mba-fees-differ), KL MCA "around Rs. 66,000" (lib/content.ts).
+
+**2. NIRF category mismatches (lib/blog.ts).**
+- Why: lib/data.ts holds JAIN at nirf 62 (University) and nirfMgt 73 (Management), so "NIRF University 73" names the wrong category.
+- What changed, JAIN: 8 rows. MBA tables now read "NIRF Management 73" (mahe review, mba-after-engineering, mba-hr-career, mba-data-science-analytics, mba-for-commerce, plus dy-patil-online-mba-review "NIRF Uni 73"). University-level tables read "NIRF University 62": career-after-12th-arts (BA/BBA/BCA/B.Com) and best-computer-courses (BCA and MCA tables).
+- Sweep (.b8tmp/nirf23.mts: 508 "NIRF <category> <n>" matches attributed to the nearest university and compared with nirf / nirfMgt; it flagged the known frozen IGNOU-review row, so it detects). Fixed:
+  - distance-mba-chennai-2026: VIT "NIRF University 11" (x2) -> 14 (data nirf 14); Sri Ramachandra "NIRF Management 46" deleted (no nirfMgt in data).
+  - online-mba-ahmedabad-gujarat-2026: GTU "(NIRF Management 97)" deleted (GTU is unranked in data).
+  - 6 profession posts (supply-chain-logistics, doctors-mbbs, business-analysts, medical-representatives, hr-executives, nurses): MAHE "NIRF Management category rank 39" -> "NIRF University category rank 3". Management #39 is TAPMI's, a constituent school, and these cells did not say so.
+  - online-mba-for-working-professionals-india and best-online-mba-colleges-india-2026: BITS "NIRF #16 Overall 2025" -> "NIRF #7 University 2025". Corrected in round 2: this was a category change, not an error fix. BITS Pilani holds NIRF 2025 Overall #16 and University #7 (lib/data.ts nirf 7), so both forms were true; the cells now name the University table like the other rows.
+- Checked and correct: every Symbiosis "Management #11" and MAHE "Management #39" mention outside the 6 rows above names SIBM Pune or TAPMI; CU #19, LPU #31/#44, DPU #41, Vignan #70, Bharati Vidyapeeth #59, SRM #56, MUJ #81, UPES #36, Amrita #26, Jamia Hamdard #47/#87 match data.
+- Left (frozen or meta): ignou-online-mba-review-2026 JAIN "NIRF University 73"; chandigarh-university-online-mba-review JAIN "NIRF Uni 73"; mahe-online-mba-review-2026 meta "NIRF Management rank 39" (check-nirf-category already NOTEs it); bits-pilani-online-mba-review-2026 "NIRF #16 Overall" is correct as written (NIRF 2025 Overall #16) and is not a defect; it also sits in a frozen post.
+- Advisory: best-computer-courses MCA table gives JAIN and MUJ their MBA fee ranges ("Rs 1.60-2.98 lakh", "Rs 1.56 to 1.84 lakh"); untouched, for a fee batch.
+
+**3. A2, CU Early Bird labels (lib/data.ts).**
+- Why: the scholarship is "up to" 25% / 20%, not a fixed rate. The amounts are unchanged.
+- What changed: feeBreakdown.mba modes "MBA plan after up to 25% Early Bird" and "Triple Industry Certified MBA plan after up to 20% Early Bird". The tagline already reads "taught by PwC India experts" on this branch (batch 21).
+- Heads: rendered before and after for every CU route (profile, layout, 4 programme hubs, 26 MBA spec pages) and every CU /compare pair. No title changed. 3 meta descriptions (and og:description) change wording only: /compare/chandigarh-vs-lpu, /compare/amity-vs-chandigarh, /compare/manipal-jaipur-vs-chandigarh. None is in FREEZE_SLUGS or data/protected-ai-pages.csv.
+
+**4. A1, salary gate gaps (scripts/check-blog-salaries.mjs, new data/blog-salary-ext-baseline.json).**
+- Why: the gate counted only LPA / "lakh per annum" forms, so "lakh CTC", "CTC of Rs X lakh", "lakh/annum", "lakh yearly", "lacs", "L per year", full-rupee "per annum" figures and bare numbers under an LPA/salary table header (QA batch 22 A4) were never counted. Separately, "p.a." matched inside words, so "lakh package" and "lakh payable" counted as "lakh pa".
+- What changed:
+  - "p.a." / "pa" now match only as a whole token. That lowered the original baseline by 9 (nmims review "Rs 1.96L pa...", career-after-mba "₹25 lakh pa...", six "2.25L Pa..." / "lakh Pa..." fee lines); the ratchet lowered it, nothing was reseeded.
+  - SALARY_FIGURE_EXT and countHeaderUnitCells form a second counter, run on the text with every SALARY_FIGURE match blanked, so no figure counts twice. It has its own baseline, data/blog-salary-ext-baseline.json, seeded once (--seed-ext) at 66 and ratchet-down only (65 after "lakh/year" was dropped from the pattern, because it is also fee wording: an MA fee line matched). data/blog-salary-baseline.json keeps its own ratchet.
+  - Header comment: 122 posts -> 112. Self-test grows from 7 to 23 cases, covering each new pattern, both false positives and three table cases.
+- Proof: one example of each of the 7 notations plus the old mba-full-form table (2 bare cells) injected into online-mba-salary-india-2026 made the gate FAIL with "0 -> 9 (+9)" on the new counter while the original counter stayed unchanged; lib/blog.ts and both baselines were restored byte for byte.
+- Known residue in the new count: online-mba-lpu-review-2026 "₹4.5L per year" is an LPU campus fee, counted by the "L per year" form the brief asked for. Counting it can only block growth, never pass a figure.
+- Salary baseline: 1915 -> 1904 (9 from the token fix, 2 from item 5), and 1902 after the rebase onto batch 22 round 3 (that commit removed the mba-scope FAQ medians). New counter: 65 across 8 posts.
+
+**5. online-mba-salary-india-2026 city medians.**
+- Why: "Rs 12 LPA median in Mumbai versus Rs 8 LPA in Hyderabad" has no source (QA batch 22 A6).
+- What changed: the sentence now reads "The same Finance MBA can pay differently in Mumbai and Hyderabad at the same experience level."
+
+**6. Gate gap logged, not fixed: check-blog-fees discount-word exemption.**
+- Evidence (audits/qa/2026-11-27-b3-batch-21-premerge-rerun.md, C1): scripts/lib/blog-fee-scan.mjs classes any ₹ figure NON_FEE, never compared with lib/data.ts, when discount(ed), save(s/d), saving(s), scholarship, waiver, cheaper, lower, gap, "off," or cashback sits within 80 characters. QA injected "the Manipal University Jaipur online MBA costs Rs 9,99,000" (5.4 times the real fee) into four posts and it passed wherever "after the 15% discount" was nearby. 496 figures are exempt only by these words, 400 of them fee-sized.
+- Not fixed here: narrowing it exposes figures. Read-only scope in .b8tmp/batch24-discount-gap.md: keeping the exemption only for "save Rs X" / "Rs X off" moves 458 figures out of NON_FEE (180 MATCH, 64 MISMATCH, 213 UNRESOLVED, 1 ORPHAN; 41 already allowlisted), raising check-blog-fees by 258 across 73 posts (14 in frozen posts). Many MISMATCH rows are deliberate debunks of circulating figures or per-semester arithmetic, so those need their own NON_FEE patterns first.
+
+Also corrected: the batch 21 round 2 gates line said "salary 2344 or lower"; the committed figure was 2336.
+
+Gates: fee 205, blog-fees 1889, em-dash 227, salary 1902 (after the round 3 rebase), salary-ext 65.
+
 ## 2026-11-27 · University logos (138 of 143) and campus covers on 105 profiles (branch feat/university-logos-covers, shipped to main on Rishi's "Yes, ship it")
 
 - **Why logos:** 75 records showed no logo, and the 66 existing ones had defects. jawaharlal-nehru-university-online
@@ -157,7 +329,7 @@ Branch fix/b3-batch-21, new commit on b90b5e9. No title, seoTitle, h1Title or me
 - **Campus rows.** Why: Edify does not track NMIMS Mumbai campus, Symbiosis Pune campus or SCMHRD fees, so "Contact our counsellor" implied a service Edify does not offer. What changed: those three fee cells read "Not tracked (campus programme)".
 - **S1, mba-vs-pgdm one-line frame.** Why: "Online MBA from NMIMS plus JAIN plus Amity is widely accepted at Rs 6-15 LPA lateral" is a university-attributed online outcome with no source row. What changed: the range is gone; the sentence ends "is widely accepted for lateral moves."
 - **FIX-LOG.** The batch 21 CU tagline line overstated the truncation gate; corrected in place.
-- Gates: fee 205, blog-fees 1948, em-dash 227, salary 2344 or lower.
+- Gates: fee 205, blog-fees 1948, em-dash 227, salary 2336 (corrected in batch 23; the line first said "2344 or lower").
 
 ## 2026-11-27 B3 batch 21: batch 20 stop-case resolved, MCA Payscale source, CU tagline
 
