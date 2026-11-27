@@ -31,6 +31,9 @@ Branch fix/b3-batch-19, on the batch 18 round 2 tip (02552a9). Source: audits/ve
   - IFA (ACCA) Rs 2,60,000.
 - The source is named in text ("Amrita Online programme page, read 27 November 2026"), with no link to the university site.
 - Q60 is marked ANSWERED, with a pointer to the sheet.
+- Latent, found in the post-commit build:
+  - The four bodies do not render. All Amrita spec JSONs carry metadata.factSweep, so components/UniSpecBody.tsx renders FeeBreakdown from lib/data.ts instead of fees.body. 0 of the 4 built pages contain "Total Tuition Fee".
+  - Showing the figures needs Amrita feePlans in lib/data.ts with a specs list per plan (lib/fee-plans.ts getFeePlans picks a plan by spec). That also puts a plan table on the hub and the other spec pages, so it is left for a decision, not done here.
 
 **4. Chandigarh University MBA plan labels and annual fee.**
 - Why: CU's MBA page labels the Rs 1,75,125 / 43,781 a semester / 87,562 a year plan "MBA" and the Rs 1,90,400 / 47,600 / 95,200 plan "Triple Industry Certified MBA" (rows 2a, 2c, 2e). The site called them "with 1 certificate" and "with 3 certificates", and printed 87,563 where CU prints 87,562 (row 2d).
