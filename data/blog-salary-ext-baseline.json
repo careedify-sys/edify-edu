@@ -1,9 +1,8 @@
 {
   "updatedAt": "2026-11-27",
   "note": "Per-slug count of the extra salary notations (lakh CTC, CTC of Rs X lakh, lakh/annum, lakh yearly, lacs, L per year, full-rupee per annum) and of bare figures in LPA/salary/CTC table columns, in lib/blog.ts. Separate from blog-salary-baseline.json, seeded once in B3 batch 23. Ratchet: a count may only go down. See scripts/check-blog-salaries.mjs.",
-  "total": 65,
+  "total": 47,
   "perSlug": {
-    "bba-full-form-course-details-eligibility-fees-2026": 18,
     "bcom-full-form-course-details-eligibility-fees-2026": 14,
     "career-after-bcom-jobs-salary-courses-2026": 2,
     "ias-officer-salary-india-2026-pay-scale-perks": 1,
