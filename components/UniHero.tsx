@@ -11,6 +11,7 @@ import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { debBasis } from '@/lib/seo/deb-basis'
 import { programmeEligibility } from '@/lib/seo/display-guards'
 import { feeCheckedLine, debSessionLine } from '@/lib/provenance'
+import { answerFirstRows } from '@/lib/answer-first'
 
 interface Props {
   u: University
@@ -127,6 +128,9 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
   const feeChecked = !spec && feeValue !== FEE_COUNSELLOR_LINE ? feeCheckedLine(u, program) : null
   // B1: DEB session beside the approval, only where the eyebrow claims it.
   const debLine = modeVerified && !basis ? debSessionLine(u, program) : null
+  // B4: answer-first rows (fee, eligibility, exam mode, each dated) on the MBA
+  // hub of the ten queue universities. Spec pages are out of scope.
+  const answerFirst = spec ? null : answerFirstRows(u, program)
 
   const stats = [
     { label: 'Total Fees', value: feeValue, highlight: true, sub: feeDetail, checked: feeChecked },
@@ -186,6 +190,25 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
             {h1}
           </h1>
         </div>
+
+        {/* B4: answer-first block. No heading element, so it sits before the first H2. */}
+        {answerFirst && (
+          <dl
+            id="answer-first"
+            className="answer-first rounded-lg border mb-4 max-w-3xl divide-y"
+            style={{ background: 'rgba(255,255,255,0.04)', borderColor: 'rgba(255,255,255,0.12)' }}
+          >
+            {answerFirst.map(r => (
+              <div key={r.label} className="af-row grid gap-1 sm:gap-3 px-4 py-2 sm:grid-cols-[120px_1fr]" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
+                <dt className="text-[11px] font-bold uppercase tracking-wide text-slate-400 sm:pt-0.5">{r.label}</dt>
+                <dd className="text-[13px] text-white leading-snug">
+                  <span className="af-value">{r.value}</span>
+                  {r.checked && <span className="af-checked block text-[10px] text-slate-400 mt-0.5">{r.checked} by edifyedu.in</span>}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        )}
 
         {/* Ranking badges */}
         <RankingBadge u={u} />
