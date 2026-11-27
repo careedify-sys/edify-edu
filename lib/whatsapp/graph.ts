@@ -256,3 +256,6 @@ export async function checkConnection(env: GraphEnv, f: Fetch = fetch): Promise<
   for (const [k, v] of Object.entries(rep.vars)) if (v === 'missing') rep.problems.push(`${k} is not set in this deployment`)
   return rep
 }
+
+// Shared with graph-templates.ts (Phase 3). Same timeout and no-store rules.
+export { call as graphCall }

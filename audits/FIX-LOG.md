@@ -7609,3 +7609,5 @@ Rishi's goal: send referral messages to previously enrolled students from an Exc
 Tests: 16 phone/sheet tests, 18 campaign SQL tests, and the Phase 1/2 SQL suite still 42/42 with Phase 3 applied. On real Postgres, 20 concurrent claims reserved exactly 5 against a 5-message daily budget; the copy with the locks removed reserved 6.
 
 Next: Contacts and Lists pages, templates via the Graph API, the campaign wizard, the worker in the existing sweep, reports, then qa-checker. Blocked on Rishi before any real send: Q-WA4 (what students agreed to) and Q-WA5 (budgets, Meta tier, GST).
+
+**Budgets (27 Nov, Rishi's answer to Q-WA5 part 1).** The migration now seeds campaign_budget_daily_inr 250, campaign_budget_monthly_inr 2000 and a new campaign_default_batch 50, all editable in Settings and kept apart from the ₹500 inbox cap. WHY seeded rather than left null: Rishi gave the figures, and a null budget would still block sending, so nothing sends earlier because of this. The tax rate stays 18% until Rishi confirms GST; the Meta limit is read live and is never assumed above 250.

@@ -34,7 +34,7 @@ drop table if exists wa_lists;
 drop index if exists wa_messages_reply_to_idx;
 
 delete from wa_settings where key in
-  ('campaign_budget_daily_inr', 'campaign_budget_monthly_inr', 'campaign_tax_pct', 'campaign_daily_max');
+  ('campaign_budget_daily_inr', 'campaign_budget_monthly_inr', 'campaign_default_batch', 'campaign_tax_pct', 'campaign_daily_max');
 
 -- Phase 2 inbox list, exactly as 20261202120000_whatsapp_inbox.sql left it.
 create or replace function wa_list_conversations(

@@ -20,8 +20,8 @@
 --     'wa_campaign_preview','wa_campaign_approve','wa_campaign_control','wa_campaign_stop_codes');
 --   -- expect 16
 --   select key from wa_settings where key like 'campaign%' order by key;
---   -- expect campaign_budget_daily_inr, campaign_budget_monthly_inr,
---   --        campaign_daily_max, campaign_tax_pct, campaigns_enabled
+--   -- expect 6: campaign_budget_daily_inr, campaign_budget_monthly_inr,
+--   --   campaign_daily_max, campaign_default_batch, campaign_tax_pct, campaigns_enabled
 
 -- ── Lists ───────────────────────────────────────────────────────────────────
 create table if not exists wa_lists (
@@ -153,12 +153,16 @@ create trigger wa_campaign_recipients_guard before insert on wa_campaign_recipie
   for each row execute function wa_campaign_recipients_guard();
 
 -- ── Settings ────────────────────────────────────────────────────────────────
--- Budgets include the estimated tax. null blocks sending until Rishi sets
--- them (Q-WA5). campaign_daily_max is Meta's 24-hour messaging limit for the
--- whole business; 250 is the documented limit for a new portfolio.
+-- Budgets include the estimated tax. Rishi's figures of 27 Nov 2026: ₹250 a
+-- day, ₹2,000 a month, batches of 50; all editable in Settings. A budget set
+-- to null blocks sending. campaign_daily_max is Meta's 24-hour messaging
+-- limit for the whole business; 250 is the documented limit for a new
+-- portfolio until Rishi reads his real one. GST 18% is an assumption until
+-- he checks a Meta invoice.
 insert into wa_settings (key, value) values
-  ('campaign_budget_daily_inr',   'null'::jsonb),
-  ('campaign_budget_monthly_inr', 'null'::jsonb),
+  ('campaign_budget_daily_inr',   '250'::jsonb),
+  ('campaign_budget_monthly_inr', '2000'::jsonb),
+  ('campaign_default_batch',      '50'::jsonb),
   ('campaign_tax_pct',            '18'::jsonb),
   ('campaign_daily_max',          '250'::jsonb)
 on conflict (key) do nothing;

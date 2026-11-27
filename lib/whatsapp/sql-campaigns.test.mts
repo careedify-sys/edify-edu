@@ -82,7 +82,7 @@ const resetSpend = async () => { await db.exec(`delete from wa_campaign_recipien
 await test('migration runs twice, seeds budget settings as unset, keeps campaigns off', async () => {
   await db.exec(migFile('whatsapp_campaigns.sql'))
   const s = Object.fromEntries((await all<{ key: string; value: any }>(`select key, value from wa_settings where key like 'campaign%'`)).map(r => [r.key, r.value]))
-  assert.deepEqual(s, { campaign_budget_daily_inr: null, campaign_budget_monthly_inr: null, campaign_tax_pct: 18, campaign_daily_max: 250, campaigns_enabled: false })
+  assert.deepEqual(s, { campaign_budget_daily_inr: 250, campaign_budget_monthly_inr: 2000, campaign_default_batch: 50, campaign_tax_pct: 18, campaign_daily_max: 250, campaigns_enabled: false })
   for (const t of ['wa_lists', 'wa_list_members', 'wa_templates', 'wa_campaigns', 'wa_campaign_recipients']) {
     assert.equal((await one<{ r: boolean }>(`select relrowsecurity r from pg_class where relname = $1`, [t])).r, true, t + ' RLS')
   }
@@ -204,7 +204,7 @@ async function readyCampaign(o: { budget?: number; batch?: number; dailyMax?: nu
 await test('nothing sends while campaigns are off or budgets are unset', async () => {
   const c = await readyCampaign()
   assert.equal((await claim(c))[0].blocked, 'campaigns_off')
-  await setSettings({ campaigns_enabled: true })
+  await setSettings({ campaigns_enabled: true, campaign_budget_daily_inr: null })
   assert.equal((await claim(c))[0].blocked, 'budget_missing')
   assert.equal(await num(`select count(*) from wa_messages where type = 'template'`), 0)
   await setSettings({ campaign_budget_daily_inr: 1000, campaign_budget_monthly_inr: 5000 })
