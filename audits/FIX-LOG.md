@@ -1,5 +1,12 @@
 # Fix log
 
+## 2026-11-28 · A6: 28 Nov guard check, clicks half PASS
+
+- **What:** weekly Search Console clicks on pages not containing /tools (Windsor, ISO weeks): W45 144, W46 187, W47 308, W48 partial 165 (23-25 Nov).
+- **Why it passes:** the tracker rule fails only on two weeks running more than 15% under baseline. Against 350 (floor 297.5) only W46 is under; against Q7's proposed 183 (floor 156) nothing is. Same outcome under either baseline, so Q7 is no longer blocking this check; stop case (a) not triggered.
+- **Not checked:** the noindexed-count half. Windsor has no Indexing report; asked as Q79.
+- **Caveat:** W46 is 187 with this page filter vs 151 in Q7; W45 agrees (144). Recorded both, not reconciled.
+
 ## 2026-11-27 · University logos (138 of 143) and campus covers on 105 profiles (branch feat/university-logos-covers, shipped to main on Rishi's "Yes, ship it")
 
 - **Why logos:** 75 records showed no logo, and the 66 existing ones had defects. jawaharlal-nehru-university-online
