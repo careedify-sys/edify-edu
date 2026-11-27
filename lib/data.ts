@@ -2692,7 +2692,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
         listLabel: '6 semesters, inclusive of all taxes',
         modes: [
           { amount: 180000, label: 'BBA, 6 semesters, inclusive of all taxes' },
-          { amount: 240000, label: 'BBA (Honours), 8 semesters' },
+          { amount: 240000, label: 'BBA Honours, 8 semesters' },
         ],
         perSemester: { list: 30000 },
         source: 'onlinemanipal.com/online-bba-honors-mahe and /online-bba-mahe, read 2026-11-28',
@@ -2758,7 +2758,10 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
       'BBA': {
         specs: ['General Management'],
         fees: '₹1,80,000 – ₹2,40,000',
-        duration: '3 Years (Hons) / 4 Years (Hons with Research)',
+        // 2026-11-28 (QA F2): the portal prices the BBA at 6 semesters and the
+        // BBA (Honours) at 8 semesters, 4 years (audits/verify/bba-fees-mahe-amrita-2026-11-28.md
+        // rows 1-4). The old "3 Years (Hons) / 4 Years (Hons with Research)" put Honours on the 3-year route.
+        duration: '3 Years (BBA, 6 semesters) / 4 Years (BBA Honours, 8 semesters)',
         roles: ['Business Development', 'Marketing Executive', 'HR Trainee', 'Finance Analyst', 'Startup Founder'],
         avgSalary: '',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'HDFC Bank', 'ICICI Bank', 'Axis Bank'],

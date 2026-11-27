@@ -98,7 +98,9 @@ function BBAProgramSchema({
 }) {
   const baseUrl = 'https://edifyedu.in'
   const pageUrl = `${baseUrl}/universities/${u.id}/bba`
-  const durationYears = parseInt(pd.duration?.replace(/[^0-9]/g, '') || '3', 10) || 3
+  // First number only: stripping every non-digit turned "3 Years (Hons) / 4
+  // Years" into P34Y (QA 2026-11-28, MAHE BBA).
+  const durationYears = parseInt(pd.duration?.match(/\d+/)?.[0] || '3', 10) || 3
   const kw = pageKeywords[`${u.id}-bba`]?.join(', ') || ''
 
   const programSchema: Record<string, unknown> = {

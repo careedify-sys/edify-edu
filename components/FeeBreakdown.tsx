@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { University, ProgramDetail, Program } from '@/lib/data'
 import { formatINR } from '@/lib/format'
-import { getExactFee, formatExactFee, formatPublishedSemesterFee } from '@/lib/fees'
+import { getExactFee, formatExactFee, formatLabelledFee, isLabelledFee, getFeeExtras, formatPublishedSemesterFee } from '@/lib/fees'
 import { IndianRupee, AlertTriangle } from 'lucide-react'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { programmeEmiFrom } from '@/lib/seo/display-guards'
@@ -94,7 +94,11 @@ export default function FeeBreakdown({ u, pd, program, cleanName, headingOverrid
   }
 
   const rows = [
-    { label: 'Total Program Fee', value: totalText, highlight: true },
+    // QA 2026-11-28 (F1): a labelled fee (tuition only, payment routes, list vs
+    // net) is not a total, so its row says "Programme fee" and keeps the label.
+    isLabelledFee(exact)
+      ? { label: 'Programme fee', value: formatLabelledFee(exact) ?? totalText, highlight: true }
+      : { label: 'Total Program Fee', value: totalText, highlight: true },
     ...(semText ? [{ label: 'Per Semester', value: semText }] : []),
     ...(programmeEmiFrom(u, program) > 0 ? [{ label: 'EMI starts from', value: `${formatINR(u.emiFrom)}/month` }] : []),
     // A9 (2026-11-18): an "Exam Fee: Included in total (usually)" row was
@@ -105,7 +109,7 @@ export default function FeeBreakdown({ u, pd, program, cleanName, headingOverrid
     // separate (u.feeExtras) print as their own rows, never added in.
     // 2026-11-28: keyed by programme (BBA extras for MAHE and Amrita), so an
     // MBA charge still never prints on another programme's hub.
-    ...((program === 'MBA' ? u.feeExtras?.mba : program === 'BBA' ? u.feeExtras?.bba : undefined) ?? []).map(e => ({
+    ...getFeeExtras(u, program as Program).map(e => ({
       label: e.label,
       value: `${formatINR(e.amount)}${e.per ? ` ${e.per}` : ''}, charged separately`,
     })),
