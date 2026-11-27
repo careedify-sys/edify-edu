@@ -1,5 +1,99 @@
 # Fix log
 
+## 2026-11-27 B3 batch 22 round 3: stale salary-source callouts, source-claim sweep, ICAI figures, headings that name removed salary content
+
+Branch fix/b3-batch-22, new commit on 7efc2cc. This fixes F2 and the advisories in audits/qa/2026-11-27-b3-batch-22-premerge-rerun.md. No title, seoTitle, h1Title or metaDescription changed, and no allowlist entry was added. updatedAt was already 2026-11-27 on every edited post.
+
+**F2. Three callouts credited a source for salary figures that batch 22 removed.**
+- Why: each sat under a table whose salary column is gone. Each also named NIRF, NASSCOM, AICTE or "tier-1 MBA placements" as the source, and none of those is a sheet we hold.
+- courses-after-12th-science and mba-after-engineering: the source clause is deleted. The callout now keeps only "Verify before applying: Actual outcomes depend on ...".
+- best-computer-courses: the salary-source half is replaced with the fee line "Talk to our counsellor for your intake’s fee."
+
+**Source-claim sweep across the 20 batch 22 posts.** Detector: .b8tmp/src24.cjs. It looks for NIRF, NASSCOM, AICTE, LinkedIn, Naukri, survey, "placement reports/data/disclosures", "hiring data", "medians from", ICAI and "sourced" next to a salary word.
+- Why: same rule as A3. A post may not credit a source for salary figures unless the source is an approved one we hold.
+- online-mba-salary: "Salary ranges indicative based on placement data plus Naukri analytics" now reads "Salary ranges are indicative."
+- distance-mba-meaning: "These figures are from university career services data and LinkedIn salary reports" now reads "These figures are indicative, not guaranteed outcomes." The lead-in "Here is what the data shows" now reads "Here are indicative ranges".
+- online-mba-for-working-professionals: the byline sentence crediting university placement reports, Naukri Job Speak and alumni data is deleted.
+- mba-scope:
+  - The byline sentence crediting NIRF, NASSCOM, LinkedIn and Naukri is deleted.
+  - The FAQ sentences "NIRF 2024 placement data ... median salary of Rs 16.5 LPA ... Rs 6.5 LPA" and "NIRF data showing 35 percent year-on-year growth" are deleted.
+  - "with sourced 2026 hiring data" is deleted from the intro.
+  - The intro also pointed at "the brand-versus-specialisation matrix", which round 1 removed. It now asks "does brand or specialisation matter more".
+- Left on purpose:
+  - Method pointers with no figure: "NIRF publishes a median graduate salary for each ranked institute", "NIRF placement reports apply mostly to campus PGP cohorts", and "Use Glassdoor, Naukri, AmbitionBox" as advice.
+  - Fee "indicative" lines.
+  - The MAHE learner survey line (satisfaction, not salary).
+  - mba-scope's hiring statistics credited in the body to NASSCOM, the LinkedIn index and a Naukri HR survey (18 percent YoY, 28 vs 3 percent, 78 percent acceptance). These are hiring claims, not salary claims, and are listed in the hand-back as an advisory.
+
+**career-after-12th-commerce ICAI figures and medians claim.**
+- Why: ICAI is not an approved source, and the repo has no ICAI verify sheet. Batch 22 round 2 removed the same figures from commerce-jobs (A3).
+- The FAQ's "roughly 10 to 15 percent per attempt", "4.5 to 5 years" and "About 60 percent ... drop out" now read "CA takes several years to qualify and many students drop out before Final."
+- The coaching reality-check list of CA, CS and CMA pass and conversion rates is deleted. Its intro now tells the reader to check the latest pass rates on the institute's own results page.
+- In Honest Gaps:
+  - The "ICAI 2025 Final pass rate was approximately 12 percent" and "8 to 18 percent" sentences are gone.
+  - "Salary ranges shown are medians from 2024-25 data" now reads "Salary ranges are indicative, and individual pay varies widely."
+
+**Headings that name removed salary content.**
+- Why: the batch 22 tables under these headings lost their salary column, so each heading named something no longer on the page.
+- commerce-jobs: "MBA Finance: The Brand Multiplier" is now "MBA Finance: Why the Brand Matters". "The City Multiplier Nobody Models" is now "How Your City Changes the Picture".
+- best-computer-courses: "Detailed Salary Map" is now "Duration and Fees".
+- mahe: "Specialisation Salary Map" is now "Specialisations and Recruiters".
+- online-mba-salary:
+  - "Salary by City" is now "Hiring Sectors by City".
+  - "10-Year ... Salary Trajectory" is now "Role Trajectory".
+- distance-mba-bangalore: "Realistic Salary Uplift" is now "Realistic Role Moves".
+- mba-entrance-exams: "Career Outcome Map" is now "Exam to College Tier Map".
+- online-mba-pune: "Sector-Wise Salary Map" is now "Sector-Wise Employer Map".
+- best-mba-specialization: "Ranked by Average Salary" is now "Ranked by Demand".
+- Checked: no FAQ question repeats these headings, and nothing in lib/, app/, components/, data/ or scripts/ links to their fragments.
+
+Gates: check-blog-fees 1945 (unchanged). Salary 1915 -> 1913 (the mba-scope FAQ medians). Em-dash 227. Fee 205.
+
+## 2026-11-27 B3 batch 22 round 2: orphaned headings, renamed H2s, unsourced multipliers, commerce-jobs source claim, mba-full-form table
+
+Branch fix/b3-batch-22, new commit on 3bc34bc. Fixes from audits/qa/2026-11-27-b3-batch-22-premerge.md (F1, C1, A1, A3, A4). A6, the online-mba-salary Mumbai/Hyderabad medians, stays in batch 23 item 5. No title, seoTitle, h1Title or metaDescription changed. updatedAt was already 2026-11-27 on every edited post.
+
+**F1. Three orphaned H2s deleted with their line.**
+- Why: the removed table was the whole section, so each heading promised a calculation or data set that no longer exists, followed only by the neutral line.
+- What changed: the heading and the neutral line are gone in online-mba-for-working-professionals-india ("Working Professional Online MBA ROI Calculation 2026"), distance-mba-bangalore-2026 ("Bengaluru Specific Salary Uplift Data Across Industries") and distance-mba-meaning-what-is-it-2026 ("Distance MBA Salary Outcomes by University Tier 2026").
+
+**C1. Six H2s renamed to describe what is left.**
+- Why: each named an object the batch removed (a matrix, a salary map, a curve, ROI maths, a tier table). H2 text is not title or meta.
+- What changed: mba-scope "Brand or Specialisation: Which Matters More"; online-mba-salary "Why Pay Differs by City and Employer"; courses-after-12th-science "Top Engineering Branches and Recruiters India 2026 (PCM)"; commerce-jobs "Chartered Accountant: The Path and the Trade-offs"; freshers "Fresher MBA vs Wait for Tier-1: The Cost Trade-off"; cmat "Making CMAT Count for Your Career 2026".
+- Checked: none is a FAQ question, and no internal link in lib/, app/, components/ or data/ points at a #fragment on any of these posts, so no anchor needed updating.
+
+**A1. Unsourced multipliers deleted in the batch 22 posts.**
+- Why: a multiplier is a statistic, and none of these names an approved source (house rule 7).
+- What changed: mba-scope "brand is a 2-3x multiplier. Specialisation is a 1.3-1.5x multiplier" (now: brand usually moves pay more than specialisation), FAQ "2.5-3x the starting CTC" (deleted) and FAQ "2-4x more ... the gap halves" (now: earn more, gap narrows); freshers "15x to 25x higher" (now "far higher"); commerce-jobs "5x at year 1 and 8x by year 5", "4x more accessible" and the four-row city multiplier list (1.4x/1.5x and so on, attributed to an ISF report); mba-after-engineering "2x to 3x gap"; career-after-12th-commerce FAQ "adds 2x to 3x to the year-10 salary". The sweep script found further multipliers in posts outside batch 22; those are left for their own chunk.
+
+**A3. commerce-jobs source claims removed.**
+- Why: the byline credited the salary ranges to the Indian Staffing Federation 2026 report, NIRF 2024 placement disclosures, IBPS/RBI 2025 notifications and an ICAI 2025 survey, and the intro promised "sourced salary data". Batch 22 removed those tables because they did not match any such source, so the claim was unsupported.
+- What changed: the source list in the byline, "with sourced salary data" in the intro, the FAQ sentence "The Indian Staffing Federation 2026 report shows the median fresher B.Com salary at Rs 3.6 LPA", the ISF attribution in the city section and in the Honest Gaps list ("20 percent more than the Indian Staffing Federation median"), and the "median of 4.5 years according to ICAI 2024 pass rate data" and "About 60 percent ... drop out" statistics. Each sentence was reworded without a figure.
+
+**A4. mba-full-form "Salary by Specialization" table removed.**
+- Why: its two data columns were "Entry Level (LPA)" and "Mid-Career (LPA)" with 10 bare figures and no source. With both salary columns dropped only the specialisation names were left, and the prose below already discusses each one, so the H3 and the table went together. The salary gate never counted these bare cells (unit only in the header); batch 23 item 4 extends the detector.
+
+Gates: check-blog-fees 1945 (unchanged). Salary baseline 1916 -> 1915 (the ISF FAQ sentence). Em-dash and fee baselines unchanged.
+
+## 2026-11-27 B3 batch 22: salary chunk 20c, generic role-salary tables in 20 posts
+
+Branch fix/b3-batch-22, from b90b5e9, rebased onto the batch 21 round 2 tip (33bae44). Scope: the 20 posts in the 20c chunk (the 8 frozen posts and 14 salary-meta posts excluded, re-checked against the refreshed scope file), ordered by GSC impressions. No title, seoTitle, h1Title or metaDescription changed. No allowlist entry added. updatedAt is 2026-11-27 on all 20.
+
+- **Why:** these tables printed generic salary ranges (Year 1 CTC, Year 5 CTC, 10-year potential, sector medians, tier ladders) that name no source a reader can check. No approved source (UGC, UGC-DEB, NAAC, NIRF, a university portal) publishes figures in this form, so they cannot be verified and are removed, not reworded.
+- **Unit of work:** a table was in scope when the salary scope file put at least one of its rows in the role-table class. The salary column was then removed from the whole table, so a few university or campus rows in the same table lost their (equally unsourced) figure too. That is why the drop is 420, not the 365 role-table figures in the chunk.
+- **What changed, by treatment:**
+  - Salary columns dropped, role, skills, employer, duration and entrance columns kept: 23 tables. Captions that named salary or CTC were reworded to what the table now shows (for example "B.Tech branches and top recruiters India 2026 (tier-1 college)").
+  - Salary rows dropped where the table compares factors, not roles: the fresher vs experienced MBA table and the exam path vs degree path table (2 rows each).
+  - Replaced with a short role list: the Bengaluru target-role table (7 roles).
+  - Removed, because nothing meaningful is left without the figures: 10 tables (pure salary ladders, tier matrices and ROI tables). Where the section needed a line, it carries "Salaries vary by employer, city and experience; check current postings and the employer's own pay data." (at most once per post). The commerce-jobs CA curve and MBA Finance tier tables went without the line: their intro sentences claimed an ICAI 2025 survey and NIRF reports as the source, which the tables did not match, so those sentences were rewritten instead ("NIRF publishes a median graduate salary for each ranked institute, so compare those figures for the institutes on your list.").
+  - Prose that pointed at a removed table was trimmed: "These are broad ranges pulled from publicly available placement data and job portals" (online-mba-salary), the tier-1 year-10 parenthetical (freshers), "of this matrix" (mba-scope).
+- **Left alone on purpose:**
+  - Government pay: the banking exam table in career-after-12th-commerce (SBI PO, IBPS, RBI, SEBI and NABARD Grade A) is the 20e class. The salary scope file classes the SEBI and NABARD rows role-table, but they are regulator pay scales, so the table stays whole.
+  - The arts career-goal table keeps its "Starting Salary" column because it carries the IAS pay figure; its 7 generic LPA cells read "Varies by employer".
+  - Tables with no role-table row (for example the online-MBA university outcome table and the fresher "Should you do" table) and all prose figures belong to other chunks and were not touched.
+- **Fee figures exposed:** dropping a salary cell removes the LPA context the fee scanner uses to exempt a row, so 44 fee cells in 5 tables became countable (check-blog-fees rose to 1993 before this fix). None resolves MATCH. Following the batch 21 rule, campus programmes (NLUs, IIM/XLRI/MDI/SP Jain/SPJIMR, IIT/NIT and private B.Tech, MBBS and other campus courses) now read "Not tracked (campus programme)"; the two online rows (Online BCA, Coursera plus bootcamp) read "Contact our counsellor". The commerce-jobs "Rs 25 to 30 lakh fees ... total investment is Rs 40 to 50 lakh" clause (unsourced campus fee plus a derived sum) became "its fees plus 2 years of foregone income make it a far larger investment". check-blog-fees 1948 -> 1945.
+- **Gates:** salary 2336 -> 1916 (-420); blog-fees 1945; fee 205; em-dash 227; check-blog-updated-at 20 posts dated; protected pages unchanged.
+
 ## 2026-11-27 B3 batch 21 round 2: QA fixes (audits/qa/2026-11-27-b3-batch-21-premerge.md)
 
 Branch fix/b3-batch-21, new commit on b90b5e9. No title, seoTitle, h1Title or metaDescription changed. No allowlist entry added.

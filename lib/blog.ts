@@ -5738,7 +5738,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'online-mba-for-working-professionals-india',
-    updatedAt: '2026-11-19',
+    updatedAt: '2026-11-27',
     title: 'Online MBA for Working Professionals India 2026: Guide',
     seoTitle: 'Online MBA for Working Professionals 2026: How to Choose',
     metaDescription: 'An online MBA suits working professionals when the university is UGC-DEB entitled for your session. How to choose one around a full-time job.',
@@ -5761,7 +5761,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     ctaTitle: '',
     ctaDesc: '',
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, edifyedu.in. Working professional MBA data sourced from NMIMS, JAIN, MUJ, Amity, Symbiosis SCDL placement reports, Naukri.com Job Speak Q1 2026, plus 5 years of edifyedu.in counsellor working professional alumni data.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, edifyedu.in.</em></p>
 
 <!-- Slug: /online-mba-for-working-professionals-india -->
 
@@ -5895,20 +5895,6 @@ export const BLOG_POSTS: BlogPost[] = [
 </table>
 
 <p>This is a template, not a total. Ask the specific university for their own weekly time estimate, and ask two current students in your target programme for their honest one. The realistic commitment varies by programme and by your baseline (job intensity, family responsibilities, prior study habits).</p>
-
-<h2>Working Professional Online MBA ROI Calculation 2026</h2>
-
-<table>
-  <caption>ROI for working professional online MBA 2026</caption>
-  <thead><tr><th>Pre-MBA CTC</th><th>MBA Fee</th><th>Post-MBA CTC Year 1</th><th>ROI Time</th></tr></thead>
-  <tbody>
-    <tr><td>Rs 5 LPA</td><td>Rs 1.50 lakh</td><td>Rs 8-12 LPA</td><td>6-9 months</td></tr>
-    <tr><td>Rs 8 LPA</td><td>Rs 2.10 lakh</td><td>Rs 12-16 LPA</td><td>5-8 months</td></tr>
-    <tr><td>Rs 12 LPA</td><td>Rs 2.40 lakh</td><td>Rs 16-22 LPA</td><td>4-6 months</td></tr>
-    <tr><td>Rs 15 LPA</td><td>Rs 2.40 lakh</td><td>Rs 20-28 LPA</td><td>3-5 months</td></tr>
-    <tr><td>Govt employee promotion</td><td>Rs 66K (IGNOU)</td><td>Rs 12-15 LPA</td><td>2-3 months</td></tr>
-  </tbody>
-</table>
 
 <h2>Working Professional Online MBA Sector Recommendations 2026</h2>
 
@@ -6743,7 +6729,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'mahe-online-mba-review-2026',
-    updatedAt: "2026-11-25",
+    updatedAt: "2026-11-27",
     title: 'MAHE Online MBA Fees 2026: ₹2,92,000 and Review',
     seoTitle: 'MAHE Online MBA Fees 2026: ₹2,92,000 and Review',
     h1Title: 'Manipal Academy of Higher Education (MAHE) Online MBA Fees 2026: ₹2,92,000, Specialisations and Our Review',
@@ -6882,18 +6868,18 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="callout-key"><strong>One-line frame for MAHE Online MBA 2026:</strong> Rs 2.92 lakh total, NAAC A plus plus, NIRF University 3 plus Institution of Eminence status. Premium online MBA brand. Requires 1-year work experience. 9 specialisations including Healthcare, Pharmaceutical, Data Science. Best for working professionals targeting MAHE brand recognition plus international career.</div>
 
-<h2>MAHE Online MBA Specialisation Salary Map 2026</h2>
+<h2>MAHE Online MBA Specialisations and Recruiters 2026</h2>
 
 <table>
-  <caption>MAHE Online MBA salary outcomes 2026</caption>
-  <thead><tr><th>Specialisation</th><th>Year 1 CTC (lateral)</th><th>Year 5 CTC</th><th>Top Recruiters</th></tr></thead>
+  <caption>MAHE Online MBA specialisations and target sectors 2026</caption>
+  <thead><tr><th>Specialisation</th><th>Top Recruiters</th></tr></thead>
   <tbody>
-    <tr><td>Data Science plus Analytics</td><td>Rs 8-15 LPA</td><td>Rs 18-30 LPA</td><td>Big 4 plus product companies plus BFSI Analytics</td></tr>
-    <tr><td>Healthcare Management</td><td>Rs 7-13 LPA</td><td>Rs 16-28 LPA</td><td>Apollo, Fortis, Max Healthcare, Manipal Hospitals. See also: <a href="/blog/online-mba-hospital-healthcare-management-india-2026" class="ilink">Online MBA Healthcare Management India 2026: all 8 universities compared</a>.</td></tr>
-    <tr><td>Pharmaceutical Management</td><td>Rs 7-13 LPA</td><td>Rs 16-28 LPA</td><td>Biocon, Dr Reddy's, Sun Pharma, Cipla</td></tr>
-    <tr><td>Finance plus Banking</td><td>Rs 7-13 LPA</td><td>Rs 16-28 LPA</td><td>HDFC, ICICI, Axis, Kotak</td></tr>
-    <tr><td>Marketing plus Brand Mgmt</td><td>Rs 7-12 LPA</td><td>Rs 15-25 LPA</td><td>HUL, ITC, Marico, Nestle</td></tr>
-    <tr><td>Operations plus Supply Chain</td><td>Rs 6-12 LPA</td><td>Rs 14-25 LPA</td><td>Tata, Mahindra, Maruti, Reliance</td></tr>
+    <tr><td>Data Science plus Analytics</td><td>Big 4 plus product companies plus BFSI Analytics</td></tr>
+    <tr><td>Healthcare Management</td><td>Apollo, Fortis, Max Healthcare, Manipal Hospitals. See also: <a href="/blog/online-mba-hospital-healthcare-management-india-2026" class="ilink">Online MBA Healthcare Management India 2026: all 8 universities compared</a>.</td></tr>
+    <tr><td>Pharmaceutical Management</td><td>Biocon, Dr Reddy's, Sun Pharma, Cipla</td></tr>
+    <tr><td>Finance plus Banking</td><td>HDFC, ICICI, Axis, Kotak</td></tr>
+    <tr><td>Marketing plus Brand Mgmt</td><td>HUL, ITC, Marico, Nestle</td></tr>
+    <tr><td>Operations plus Supply Chain</td><td>Tata, Mahindra, Maruti, Reliance</td></tr>
   </tbody>
 </table>
 
@@ -8866,13 +8852,13 @@ export const BLOG_POSTS: BlogPost[] = [
 <thead><tr style="background:#f1f5f9"><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Career Goal</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Best Course</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Duration</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Starting Salary</th></tr></thead>
 <tbody>
 <tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Civil Services / Govt</td><td style="padding:10px 14px;font-weight:600">BA (History / Pol Sci)</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">₹56K/month (IAS)</td></tr>
-<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Management / Corporate</td><td style="padding:10px 14px;font-weight:600">BBA</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">₹3–6 LPA</td></tr>
-<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Law</td><td style="padding:10px 14px;font-weight:600">BA LLB (Integrated)</td><td style="padding:10px 14px">5 Years</td><td style="padding:10px 14px">₹4–10 LPA</td></tr>
-<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Media / Journalism</td><td style="padding:10px 14px;font-weight:600">BA (Journalism / Mass Comm)</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">₹2.5–5 LPA</td></tr>
-<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Design / Creativity</td><td style="padding:10px 14px;font-weight:600">BDes / BFA</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">₹3–7 LPA</td></tr>
-<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Hotel / Hospitality</td><td style="padding:10px 14px;font-weight:600">BHM / B.Sc Hotel Mgmt</td><td style="padding:10px 14px">3–4 Years</td><td style="padding:10px 14px">₹2.5–5 LPA</td></tr>
-<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">IT / Tech (with Maths)</td><td style="padding:10px 14px;font-weight:600">BCA</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">₹3–7 LPA</td></tr>
-<tr style="background:#f8fafc"><td style="padding:10px 14px">Psychology / Counselling</td><td style="padding:10px 14px;font-weight:600">BA Psychology</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">₹3–6 LPA</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Management / Corporate</td><td style="padding:10px 14px;font-weight:600">BBA</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">Varies by employer</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Law</td><td style="padding:10px 14px;font-weight:600">BA LLB (Integrated)</td><td style="padding:10px 14px">5 Years</td><td style="padding:10px 14px">Varies by employer</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Media / Journalism</td><td style="padding:10px 14px;font-weight:600">BA (Journalism / Mass Comm)</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">Varies by employer</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Design / Creativity</td><td style="padding:10px 14px;font-weight:600">BDes / BFA</td><td style="padding:10px 14px">4 Years</td><td style="padding:10px 14px">Varies by employer</td></tr>
+<tr style="background:#f8fafc;border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">Hotel / Hospitality</td><td style="padding:10px 14px;font-weight:600">BHM / B.Sc Hotel Mgmt</td><td style="padding:10px 14px">3–4 Years</td><td style="padding:10px 14px">Varies by employer</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px">IT / Tech (with Maths)</td><td style="padding:10px 14px;font-weight:600">BCA</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">Varies by employer</td></tr>
+<tr style="background:#f8fafc"><td style="padding:10px 14px">Psychology / Counselling</td><td style="padding:10px 14px;font-weight:600">BA Psychology</td><td style="padding:10px 14px">3 Years</td><td style="padding:10px 14px">Varies by employer</td></tr>
 </tbody>
 </table>
 </div>
@@ -8899,16 +8885,16 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <table>
   <caption>Top 8 NLUs for BA-LLB 2026</caption>
-  <thead><tr><th>NLU</th><th>NIRF Law Rank</th><th>BA-LLB Fee (5 years)</th><th>Year-1 Corporate Law CTC</th></tr></thead>
+  <thead><tr><th>NLU</th><th>NIRF Law Rank</th><th>BA-LLB Fee (5 years)</th></tr></thead>
   <tbody>
-    <tr><td>NLSIU Bangalore</td><td>1</td><td>Rs 14 to 18 lakh</td><td>Rs 18 to 22 LPA</td></tr>
-    <tr><td>NLU Delhi</td><td>2</td><td>Rs 7 to 9 lakh</td><td>Rs 18 to 22 LPA</td></tr>
-    <tr><td>NALSAR Hyderabad</td><td>3</td><td>Rs 12 to 14 lakh</td><td>Rs 16 to 20 LPA</td></tr>
-    <tr><td>WBNUJS Kolkata</td><td>4</td><td>Rs 10 to 12 lakh</td><td>Rs 15 to 18 LPA</td></tr>
-    <tr><td>NLU Jodhpur</td><td>5</td><td>Rs 10 to 12 lakh</td><td>Rs 14 to 18 LPA</td></tr>
-    <tr><td>GNLU Gandhinagar</td><td>6</td><td>Rs 10 to 12 lakh</td><td>Rs 13 to 16 LPA</td></tr>
-    <tr><td>HNLU Raipur</td><td>9</td><td>Rs 7 to 9 lakh</td><td>Rs 8 to 12 LPA</td></tr>
-    <tr><td>RGNUL Patiala</td><td>11</td><td>Rs 7 to 9 lakh</td><td>Rs 8 to 12 LPA</td></tr>
+    <tr><td>NLSIU Bangalore</td><td>1</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>NLU Delhi</td><td>2</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>NALSAR Hyderabad</td><td>3</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>WBNUJS Kolkata</td><td>4</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>NLU Jodhpur</td><td>5</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>GNLU Gandhinagar</td><td>6</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>HNLU Raipur</td><td>9</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>RGNUL Patiala</td><td>11</td><td>Not tracked (campus programme)</td></tr>
   </tbody>
 </table>
 
@@ -9497,7 +9483,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'best-mba-specialization-india-2026',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     title: 'Best MBA Specialisation India 2026: Salary by Spec',
     h1Title: 'Best MBA Specialisation in India: Salary by Specialisation',
     metaDescription: 'Complete guide to best MBA specialization in India 2026. Compare MBA Finance vs Marketing vs Data Science vs HR by salary, demand, difficulty, and career outcomes.',
@@ -9525,7 +9511,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="callout-key"><strong>One-line frame for MBA specialisation choice 2026:</strong> Data Science (Rs 7-12 LPA fresher), Finance (Rs 6-11 LPA fresher), and Business Analytics (Rs 6-10 LPA fresher) lead at entry. Operations, International Business, and HR pay less at start but offer specific career advantages. Match specialisation to personality, target sector, and 10-year career goal, not just year-1 salary.</div>
 
-<h2>MBA Specialisations Ranked by Average Salary 2026</h2>
+<h2>MBA Specialisations Ranked by Demand 2026</h2>
 <figure style="margin: 28px 0;">
   <img src="https://images.pexels.com/photos/7580710/pexels-photo-7580710.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Business professional writing notes at desk with multiple monitors in a modern office setting." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
   <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@rdne" target="_blank" rel="noopener nofollow">RDNE Stock project</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
@@ -9533,16 +9519,16 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="overflow-x-auto">
 <table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:1.5rem">
-<thead><tr style="background:#f1f5f9"><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Specialisation</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Avg Fresher CTC</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">3-Year Avg</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">10-Year Potential</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Demand 2026</th></tr></thead>
+<thead><tr style="background:#f1f5f9"><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Specialisation</th><th style="padding:10px 14px;text-align:left;border-bottom:2px solid #e2e8f0">Demand 2026</th></tr></thead>
 <tbody>
-<tr style="border-bottom:1px solid #e2e8f0;background:#f0fdf4"><td style="padding:10px 14px;font-weight:700">Data Science & Analytics</td><td style="padding:10px 14px;font-weight:700">₹7–12 LPA</td><td style="padding:10px 14px;font-weight:700">₹12–18 LPA</td><td style="padding:10px 14px;font-weight:700">₹35–60 LPA</td><td style="padding:10px 14px;color:#16a34a;font-weight:700">Very High</td></tr>
-<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:700">Finance</td><td style="padding:10px 14px;font-weight:700">₹6–11 LPA</td><td style="padding:10px 14px;font-weight:700">₹10–16 LPA</td><td style="padding:10px 14px;font-weight:700">₹30–60 LPA</td><td style="padding:10px 14px;color:#16a34a;font-weight:700">High</td></tr>
-<tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc"><td style="padding:10px 14px;font-weight:700">Business Analytics</td><td style="padding:10px 14px">₹6–10 LPA</td><td style="padding:10px 14px">₹10–15 LPA</td><td style="padding:10px 14px">₹28–50 LPA</td><td style="padding:10px 14px;color:#16a34a;font-weight:700">Very High</td></tr>
-<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:700">Digital Marketing</td><td style="padding:10px 14px">₹5–9 LPA</td><td style="padding:10px 14px">₹8–14 LPA</td><td style="padding:10px 14px">₹20–40 LPA</td><td style="padding:10px 14px;color:#16a34a;font-weight:700">Very High</td></tr>
-<tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc"><td style="padding:10px 14px;font-weight:700">Marketing</td><td style="padding:10px 14px">₹5–8 LPA</td><td style="padding:10px 14px">₹8–13 LPA</td><td style="padding:10px 14px">₹20–40 LPA</td><td style="padding:10px 14px;color:#2563eb;font-weight:600">High</td></tr>
-<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:700">International Business</td><td style="padding:10px 14px">₹5–8 LPA</td><td style="padding:10px 14px">₹8–13 LPA</td><td style="padding:10px 14px">₹18–35 LPA</td><td style="padding:10px 14px;color:#2563eb;font-weight:600">Moderate</td></tr>
-<tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc"><td style="padding:10px 14px;font-weight:700">Operations</td><td style="padding:10px 14px">₹5–8 LPA</td><td style="padding:10px 14px">₹7–12 LPA</td><td style="padding:10px 14px">₹18–35 LPA</td><td style="padding:10px 14px;color:#2563eb;font-weight:600">High</td></tr>
-<tr style="background:#f8fafc"><td style="padding:10px 14px;font-weight:700">Human Resources (HR)</td><td style="padding:10px 14px">₹4–7 LPA</td><td style="padding:10px 14px">₹7–11 LPA</td><td style="padding:10px 14px">₹15–30 LPA</td><td style="padding:10px 14px;color:#6b7280;font-weight:600">Moderate</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f0fdf4"><td style="padding:10px 14px;font-weight:700">Data Science & Analytics</td><td style="padding:10px 14px;color:#16a34a;font-weight:700">Very High</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:700">Finance</td><td style="padding:10px 14px;color:#16a34a;font-weight:700">High</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc"><td style="padding:10px 14px;font-weight:700">Business Analytics</td><td style="padding:10px 14px;color:#16a34a;font-weight:700">Very High</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:700">Digital Marketing</td><td style="padding:10px 14px;color:#16a34a;font-weight:700">Very High</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc"><td style="padding:10px 14px;font-weight:700">Marketing</td><td style="padding:10px 14px;color:#2563eb;font-weight:600">High</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0"><td style="padding:10px 14px;font-weight:700">International Business</td><td style="padding:10px 14px;color:#2563eb;font-weight:600">Moderate</td></tr>
+<tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc"><td style="padding:10px 14px;font-weight:700">Operations</td><td style="padding:10px 14px;color:#2563eb;font-weight:600">High</td></tr>
+<tr style="background:#f8fafc"><td style="padding:10px 14px;font-weight:700">Human Resources (HR)</td><td style="padding:10px 14px;color:#6b7280;font-weight:600">Moderate</td></tr>
 </tbody>
 </table>
 </div>
@@ -9929,7 +9915,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'career-after-12th-commerce-courses-jobs-2026',
-    updatedAt: '2026-11-13',
+    updatedAt: '2026-11-27',
     title: 'Career After 12th Commerce 2026: Best Courses and Jobs',
     seoTitle: 'Career After 12th Commerce 2026: Exam vs Degree Path',
     metaDescription: 'Career after 12th commerce 2026: CA vs BBA vs ACCA vs CS decision framework, Maths vs no-Maths impact, real 5-year salary outcomes by path.',
@@ -9947,8 +9933,8 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Which is the best course after 12th commerce in 2026?', a: 'Depends on aptitude and goals. By long-term salary ceiling: CA (Rs 25 to 60 LPA at year 10 for top performers). By 5-year ROI: BBA plus MBA from tier-1 institute. By global mobility: ACCA (UK qualification, US, UK, Middle East roles). By stability plus pension: B.Com plus government exam (SSC CGL, Bank PO). The right pick depends on whether you tolerate exam-heavy study (CA, CS, CMA) or prefer classroom-style learning (BBA, B.Com).' },
       { q: 'Is BBA better than B.Com after 12th commerce?', a: 'For most students not doing CA: yes. BBA has stronger direct placement outcomes for management, marketing, sales, and operations roles. B.Com is the traditional accounting-focused degree and is only the better pick if you specifically plan CA afterwards (B.Com plus CA is classic) or MBA Finance from a top tier-1 institute. BBA plus MBA produces broader career options than B.Com plus MBA.' },
       { q: 'Can commerce students do BCA without Maths?', a: 'BCA without Maths is possible at some universities (LPU, Chandigarh University, Amity, Manipal Jaipur) which accept commerce-without-Maths students. UGC norms allow this but individual universities can be more restrictive. With Maths in 12th, BCA admission is universally accepted. Commerce-plus-Maths students have a stronger BCA pathway.' },
-      { q: 'What is the salary after B.Com alone vs B.Com plus PG?', a: 'B.Com alone: Rs 2.5 to 4 LPA fresher, capping at Rs 6 to 9 LPA by year 8. B.Com plus MBA Finance: Rs 6 to 12 LPA fresher post-MBA, Rs 18 to 28 LPA by year 8. B.Com plus CA: Rs 7 to 12 LPA at Big 4, Rs 25 to 50 LPA by year 10. B.Com plus CMA: Rs 5 to 8 LPA fresher, manufacturing sector strength. B.Com plus CFA: Rs 7 to 12 LPA in financial analyst roles. The PG qualification or certification adds 2x to 3x to the year-10 salary.' },
-      { q: 'Is CA still a good career after 12th commerce in 2026?', a: 'Yes, for the right aptitude. CA remains the highest commerce salary ceiling in India: Rs 7 to 12 LPA fresher at Big 4 (Deloitte, EY, KPMG, PwC), Rs 25 to 50 LPA at year 10, partner-level Rs 50 LPA to Rs 2 Cr at large firms. ICAI Final pass rate is roughly 10 to 15 percent per attempt. Median time to qualify is 4.5 to 5 years from CA Foundation. About 60 percent of CA Foundation enrollees drop out before Final. If you tolerate exam-heavy multi-year study, CA is the highest ROI commerce qualification.' },
+      { q: 'What is the salary after B.Com alone vs B.Com plus PG?', a: 'B.Com alone: Rs 2.5 to 4 LPA fresher, capping at Rs 6 to 9 LPA by year 8. B.Com plus MBA Finance: Rs 6 to 12 LPA fresher post-MBA, Rs 18 to 28 LPA by year 8. B.Com plus CA: Rs 7 to 12 LPA at Big 4, Rs 25 to 50 LPA by year 10. B.Com plus CMA: Rs 5 to 8 LPA fresher, manufacturing sector strength. B.Com plus CFA: Rs 7 to 12 LPA in financial analyst roles.' },
+      { q: 'Is CA still a good career after 12th commerce in 2026?', a: 'Yes, for the right aptitude. CA remains the highest commerce salary ceiling in India: Rs 7 to 12 LPA fresher at Big 4 (Deloitte, EY, KPMG, PwC), Rs 25 to 50 LPA at year 10, partner-level Rs 50 LPA to Rs 2 Cr at large firms. CA takes several years to qualify and many students drop out before Final. If you tolerate exam-heavy multi-year study, CA is the highest ROI commerce qualification.' },
       { q: 'What is ACCA and is it worth doing after 12th commerce?', a: 'ACCA is a UK-issued globally recognised accounting qualification from the Association of Chartered Certified Accountants. 13 exams across 3 levels, can complete in 2 to 3 years alongside graduation. Total cost Rs 3 to 4 lakh including exam fees. Recognised in 180-plus countries. Strong for Indian aspirants targeting Big 4 international rotations, Middle East finance roles (UAE, Saudi), or UK and Australia migration. Often combined with B.Com (B.Com plus ACCA is the global path).' },
       { q: 'Can I get a government job after just 12th commerce?', a: 'Limited options. SSC CHSL (Lower Division Clerk, Postal Assistant), some bank clerk-cadre exams, and railways Group D accept 12th pass candidates. Starting salary Rs 18,000 to Rs 25,000 per month. For better government roles (Bank PO at SBI or IBPS, SSC CGL, RBI Grade B, UPSC), graduation is the minimum eligibility. Plan to combine B.Com or BBA with government exam preparation in parallel.' }
     ],
@@ -9976,8 +9962,6 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr><td>Time to qualify</td><td>3 to 5 years (CA Foundation to Final)</td><td>3 years (BBA or B.Com) plus 2 years (MBA optional)</td></tr>
     <tr><td>Total cost</td><td>Rs 1.5 to 4 lakh including coaching</td><td>Rs 2 to 8 lakh (degree) plus Rs 2 to 30 lakh (MBA)</td></tr>
     <tr><td>Pass rate</td><td>Roughly 8 to 15 percent at CA Final, similar at CS, CMA Finals</td><td>Roughly 80 to 95 percent degree completion</td></tr>
-    <tr><td>Year 1 salary</td><td>Rs 7 to 12 LPA at Big 4 if CA</td><td>Rs 3 to 6 LPA fresher (BBA or B.Com alone)</td></tr>
-    <tr><td>Year 10 ceiling</td><td>Rs 25 to 60 LPA (CA), Rs 15 to 30 LPA (CS, CMA)</td><td>Rs 15 to 35 LPA (BBA plus MBA), Rs 12 to 22 LPA (B.Com plus MBA)</td></tr>
     <tr><td>Best for</td><td>Self-disciplined, exam-tolerant, numbers-focused</td><td>Classroom learners, broad business exposure, faster credential</td></tr>
   </tbody>
 </table>
@@ -9987,19 +9971,19 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Best Courses After 12th Commerce by Career Goal</h2>
 
 <table>
-  <caption>Top courses after 12th commerce with salary and ROI 2026</caption>
-  <thead><tr><th>Course</th><th>Duration</th><th>Starting salary</th><th>Year 10 ceiling</th><th>Best for</th></tr></thead>
+  <caption>Top courses after 12th commerce 2026</caption>
+  <thead><tr><th>Course</th><th>Duration</th><th>Best for</th></tr></thead>
   <tbody>
-    <tr><td>CA (Chartered Accountancy)</td><td>4 to 5 years</td><td>Rs 7 to 12 LPA (Big 4)</td><td>Rs 25 to 60 LPA</td><td>Audit, tax, advisory, CFO track</td></tr>
-    <tr><td>BBA plus MBA (tier-1)</td><td>5 years</td><td>Rs 12 to 25 LPA post-MBA</td><td>Rs 35 to 60 LPA</td><td>Management, consulting, strategy</td></tr>
-    <tr><td>B.Com plus MBA (online or tier-2)</td><td>5 years</td><td>Rs 5 to 10 LPA post-MBA</td><td>Rs 18 to 30 LPA</td><td>Finance, banking, BFSI lateral</td></tr>
-    <tr><td>BBA LLB</td><td>5 years</td><td>Rs 4 to 8 LPA fresher</td><td>Rs 18 to 35 LPA</td><td>Corporate law, compliance</td></tr>
-    <tr><td>CS (Company Secretary)</td><td>3 to 4 years</td><td>Rs 5 to 9 LPA</td><td>Rs 15 to 25 LPA</td><td>Corporate governance, listed firm compliance</td></tr>
-    <tr><td>CMA (Cost Accountant)</td><td>3 to 4 years</td><td>Rs 5 to 8 LPA</td><td>Rs 15 to 25 LPA</td><td>Cost accounting, manufacturing sector</td></tr>
-    <tr><td>ACCA (UK qualification)</td><td>2 to 3 years</td><td>Rs 5 to 9 LPA in India, USD 35K-plus abroad</td><td>Rs 25 to 50 LPA (India), USD 80K-plus abroad</td><td>Global mobility, Big 4 international, Middle East</td></tr>
-    <tr><td>B.Com alone (no PG)</td><td>3 years</td><td>Rs 2.5 to 4 LPA</td><td>Rs 6 to 10 LPA (capped)</td><td>Foundation only; needs PG for break-out</td></tr>
-    <tr><td>CFA (US qualification)</td><td>3 to 4 years</td><td>Rs 7 to 12 LPA in analyst roles</td><td>Rs 25 to 50 LPA</td><td>Investment management, equity research</td></tr>
-    <tr><td>BFA or BMS</td><td>3 years</td><td>Rs 3 to 5 LPA</td><td>Rs 10 to 18 LPA</td><td>Niche management or finance entry</td></tr>
+    <tr><td>CA (Chartered Accountancy)</td><td>4 to 5 years</td><td>Audit, tax, advisory, CFO track</td></tr>
+    <tr><td>BBA plus MBA (tier-1)</td><td>5 years</td><td>Management, consulting, strategy</td></tr>
+    <tr><td>B.Com plus MBA (online or tier-2)</td><td>5 years</td><td>Finance, banking, BFSI lateral</td></tr>
+    <tr><td>BBA LLB</td><td>5 years</td><td>Corporate law, compliance</td></tr>
+    <tr><td>CS (Company Secretary)</td><td>3 to 4 years</td><td>Corporate governance, listed firm compliance</td></tr>
+    <tr><td>CMA (Cost Accountant)</td><td>3 to 4 years</td><td>Cost accounting, manufacturing sector</td></tr>
+    <tr><td>ACCA (UK qualification)</td><td>2 to 3 years</td><td>Global mobility, Big 4 international, Middle East</td></tr>
+    <tr><td>B.Com alone (no PG)</td><td>3 years</td><td>Foundation only; needs PG for break-out</td></tr>
+    <tr><td>CFA (US qualification)</td><td>3 to 4 years</td><td>Investment management, equity research</td></tr>
+    <tr><td>BFA or BMS</td><td>3 years</td><td>Niche management or finance entry</td></tr>
   </tbody>
 </table>
 
@@ -10120,23 +10104,15 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Honest Gaps in This Guide</h2>
 
 <ul>
-  <li>CA, CS, CMA pass rates fluctuate by attempt. The ICAI 2025 Final pass rate was approximately 12 percent. Earlier and later years show 8 to 18 percent range.</li>
-  <li>Salary ranges shown are medians from 2024-25 data. Top decile and bottom decile vary widely.</li>
+  <li>CA, CS, CMA pass rates fluctuate by attempt.</li>
+  <li>Salary ranges are indicative, and individual pay varies widely.</li>
   <li>ACCA exam fees update annually; check accaglobal.com for current rates.</li>
 </ul>
 
 <h2>The Parents' Guide: Sanity-Checking Coaching Centre Promises</h2>
 
-<p>Coaching centres for CA, CS, CMA, and ACCA promote success rates that often exceed actual ICAI or ICSI data. Reality check.</p>
+<p>Coaching centres for CA, CS, CMA, and ACCA promote success rates that can look far better than the institutes' own published results. Check the latest pass rates on the institute's own results page before you commit.</p>
 
-<ul>
-  <li><strong>CA Foundation pass rate 2025:</strong> 30 to 35 percent per ICAI data.</li>
-  <li><strong>CA Intermediate pass rate:</strong> 12 to 22 percent.</li>
-  <li><strong>CA Final pass rate:</strong> 10 to 15 percent.</li>
-  <li><strong>End-to-end CA Foundation to Final conversion:</strong> Roughly 8 to 12 percent of Foundation entrants reach Final qualification.</li>
-  <li><strong>CS Foundation to Final conversion:</strong> Roughly 10 to 15 percent.</li>
-  <li><strong>CMA Foundation to Final conversion:</strong> Roughly 12 to 18 percent.</li>
-</ul>
 
 <p>If coaching advertises 60-plus percent pass rates, that figure refers to attempt-by-attempt pass rate (often only at certain levels or for "qualified" students they pre-filtered). End-to-end conversion is significantly lower. Plan financially and emotionally for the realistic dropout scenario.</p>
 
@@ -10728,18 +10704,18 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <table>
   <caption>Top MAT-accepting MBA colleges India 2026</caption>
-  <thead><tr><th>College</th><th>Location</th><th>MAT Cutoff Percentile</th><th>Year 1 CTC</th></tr></thead>
+  <thead><tr><th>College</th><th>Location</th><th>MAT Cutoff Percentile</th></tr></thead>
   <tbody>
-    <tr><td><a href="/universities/christ-university-online">Christ University</a> Bangalore</td><td>Bangalore</td><td>85-plus</td><td>Rs 8-14 LPA</td></tr>
-    <tr><td>Welingkar Mumbai (some programs)</td><td>Mumbai</td><td>85-plus</td><td>Rs 8-14 LPA</td></tr>
-    <tr><td>NDIM Delhi</td><td>Delhi</td><td>80-plus</td><td>Rs 7-12 LPA</td></tr>
-    <tr><td>SRM University Chennai</td><td>Chennai</td><td>75-plus</td><td>Rs 6-10 LPA</td></tr>
-    <tr><td>VIT Vellore (MBA)</td><td>Vellore</td><td>80-plus</td><td>Rs 7-12 LPA</td></tr>
-    <tr><td>Amity Noida (campus MBA)</td><td>Noida</td><td>70-plus</td><td>Rs 6-10 LPA</td></tr>
-    <tr><td>JAIN Bengaluru</td><td>Bengaluru</td><td>75-plus</td><td>Rs 6-10 LPA</td></tr>
-    <tr><td>NIA Pune</td><td>Pune</td><td>75-plus</td><td>Rs 6-10 LPA</td></tr>
-    <tr><td>SCMHRD Pune</td><td>Pune</td><td>90-plus (rare)</td><td>Rs 18-25 LPA</td></tr>
-    <tr><td>SP Jain (some programmes)</td><td>Mumbai</td><td>90-plus</td><td>Rs 12-18 LPA</td></tr>
+    <tr><td><a href="/universities/christ-university-online">Christ University</a> Bangalore</td><td>Bangalore</td><td>85-plus</td></tr>
+    <tr><td>Welingkar Mumbai (some programs)</td><td>Mumbai</td><td>85-plus</td></tr>
+    <tr><td>NDIM Delhi</td><td>Delhi</td><td>80-plus</td></tr>
+    <tr><td>SRM University Chennai</td><td>Chennai</td><td>75-plus</td></tr>
+    <tr><td>VIT Vellore (MBA)</td><td>Vellore</td><td>80-plus</td></tr>
+    <tr><td>Amity Noida (campus MBA)</td><td>Noida</td><td>70-plus</td></tr>
+    <tr><td>JAIN Bengaluru</td><td>Bengaluru</td><td>75-plus</td></tr>
+    <tr><td>NIA Pune</td><td>Pune</td><td>75-plus</td></tr>
+    <tr><td>SCMHRD Pune</td><td>Pune</td><td>90-plus (rare)</td></tr>
+    <tr><td>SP Jain (some programmes)</td><td>Mumbai</td><td>90-plus</td></tr>
   </tbody>
 </table>
 
@@ -10866,7 +10842,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'MBA Entrance Exams',
     tags: ['CMAT Exam 2026', 'CMAT Eligibility', 'CMAT Pattern', 'NTA CMAT', 'MBA Entrance Exam', 'CMAT Score'],
     publishedAt: '2026-04-04',
-    updatedAt: '2026-11-13',
+    updatedAt: '2026-11-27',
     readTime: 5,
     targetKeyword: 'CMAT exam 2026',
     relatedUniversities: ['amity-university-online', 'symbiosis-university-online', 'jain-university-online'],
@@ -10936,18 +10912,18 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <table>
   <caption>Top CMAT-accepting MBA colleges India 2026</caption>
-  <thead><tr><th>College</th><th>City</th><th>Year 1 CTC (post-MBA)</th><th>CMAT Percentile Required</th></tr></thead>
+  <thead><tr><th>College</th><th>City</th><th>CMAT Percentile Required</th></tr></thead>
   <tbody>
-    <tr><td>JBIMS Mumbai</td><td>Mumbai</td><td>Rs 22 to 30 LPA</td><td>99-plus</td></tr>
-    <tr><td>KJ Somaiya Mumbai</td><td>Mumbai</td><td>Rs 12 to 18 LPA</td><td>95-plus</td></tr>
-    <tr><td>Great Lakes Chennai</td><td>Chennai</td><td>Rs 14 to 20 LPA</td><td>90-plus</td></tr>
-    <tr><td>NL Dalmia Mumbai</td><td>Mumbai</td><td>Rs 8 to 14 LPA</td><td>85-plus</td></tr>
-    <tr><td>SIMSREE Mumbai</td><td>Mumbai</td><td>Rs 10 to 16 LPA</td><td>95-plus</td></tr>
-    <tr><td>NDIM Delhi</td><td>Delhi</td><td>Rs 7 to 12 LPA</td><td>80-plus</td></tr>
-    <tr><td>BIM Trichy</td><td>Trichy</td><td>Rs 7 to 12 LPA</td><td>85-plus</td></tr>
-    <tr><td>Welingkar Mumbai (PGDM)</td><td>Mumbai</td><td>Rs 8 to 14 LPA</td><td>85-plus</td></tr>
-    <tr><td><a href="/universities/christ-university-online">Christ University</a> Bengaluru</td><td>Bengaluru</td><td>Rs 7 to 12 LPA</td><td>80-plus</td></tr>
-    <tr><td>Symbiosis Pune (some programmes)</td><td>Pune</td><td>Rs 8 to 14 LPA</td><td>80-plus</td></tr>
+    <tr><td>JBIMS Mumbai</td><td>Mumbai</td><td>99-plus</td></tr>
+    <tr><td>KJ Somaiya Mumbai</td><td>Mumbai</td><td>95-plus</td></tr>
+    <tr><td>Great Lakes Chennai</td><td>Chennai</td><td>90-plus</td></tr>
+    <tr><td>NL Dalmia Mumbai</td><td>Mumbai</td><td>85-plus</td></tr>
+    <tr><td>SIMSREE Mumbai</td><td>Mumbai</td><td>95-plus</td></tr>
+    <tr><td>NDIM Delhi</td><td>Delhi</td><td>80-plus</td></tr>
+    <tr><td>BIM Trichy</td><td>Trichy</td><td>85-plus</td></tr>
+    <tr><td>Welingkar Mumbai (PGDM)</td><td>Mumbai</td><td>85-plus</td></tr>
+    <tr><td><a href="/universities/christ-university-online">Christ University</a> Bengaluru</td><td>Bengaluru</td><td>80-plus</td></tr>
+    <tr><td>Symbiosis Pune (some programmes)</td><td>Pune</td><td>80-plus</td></tr>
   </tbody>
 </table>
 
@@ -11030,17 +11006,9 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>CMAT is a viable national MBA entrance for candidates targeting AICTE-approved colleges below IIM tier. Its single annual window plus moderate difficulty makes it accessible for working professionals plus students who do not have CAT-level intensity. Top CMAT colleges like JBIMS produce strong placement outcomes at Rs 20 to 30 LPA. For UGC-DEB online MBA aspirants, CMAT is not required. Match the exam plus path to your career target plus realistic preparation timeline. The right choice depends on your current academic profile, target college brand, plus 5-year career goal.</p>
 
-<h2>CMAT Career Outcomes by College Tier 2026</h2>
+<h2>Making CMAT Count for Your Career 2026</h2>
 
-<table>
-  <caption>CMAT MBA career outcomes by college tier 2026</caption>
-  <thead><tr><th>College Tier</th><th>Year 1 CTC</th><th>Year 5 CTC</th><th>Career Ceiling</th></tr></thead>
-  <tbody>
-    <tr><td>Tier-1 CMAT (JBIMS, KJ Somaiya)</td><td>Rs 14 to 30 LPA</td><td>Rs 25 to 45 LPA</td><td>VP plus Director Rs 60 LPA-plus</td></tr>
-    <tr><td>Tier-2 CMAT (Great Lakes, NL Dalmia)</td><td>Rs 8 to 18 LPA</td><td>Rs 18 to 30 LPA</td><td>Senior Manager Rs 40 LPA-plus</td></tr>
-    <tr><td>Tier-3 CMAT (smaller AICTE colleges)</td><td>Rs 4 to 9 LPA</td><td>Rs 10 to 18 LPA</td><td>Manager Rs 22 LPA</td></tr>
-  </tbody>
-</table>
+<p>Salaries vary by employer, city and experience; check current postings and the employer's own pay data.</p>
 
 <p>Choose CMAT prep deliberately. Aim for top CMAT colleges for strong career outcomes. Combine with active certification stacking (CFA, FRM, Tableau) during MBA for accelerated career trajectory.</p>
 
@@ -11096,7 +11064,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'MBA Entrance Exams',
     tags: ['MBA Entrance Exams India 2026', 'CAT vs MAT vs CMAT', 'XAT 2026', 'ATMA exam', 'MBA Admission India', 'best MBA entrance exam India'],
     publishedAt: '2026-04-04',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     readTime: 7,
     targetKeyword: 'MBA entrance exams India 2026',
     relatedUniversities: ['amity-university-online', 'nmims-online', 'symbiosis-university-online'],
@@ -11250,20 +11218,20 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>That last point deserves emphasis. If you are looking at online MBA programs (Amity, Symbiosis, JAIN, Manipal MAHE, Chandigarh University, LPU, Sharda, and most others in the UGC-DEB framework), none of them require an entrance exam. Admission is based on your bachelor's degree percentage and a counselling or interview process. You do not need to prepare for MAT, CMAT, or CAT to get into a quality online MBA program.</p>
 
-<h2>MBA Entrance Exam Plus Career Outcome Map 2026</h2>
+<h2>MBA Entrance Exam to College Tier Map 2026</h2>
 
 <table>
-  <caption>MBA entrance exam to college tier to career outcome 2026</caption>
-  <thead><tr><th>Exam Path</th><th>College Tier</th><th>Year 1 CTC</th></tr></thead>
+  <caption>MBA entrance exam to college tier 2026</caption>
+  <thead><tr><th>Exam Path</th><th>College Tier</th></tr></thead>
   <tbody>
-    <tr><td>CAT 99-plus to IIM A, B, C</td><td>Tier-1</td><td>Rs 25-40 LPA</td></tr>
-    <tr><td>CAT 95-99 to IIM L, K, I plus FMS Delhi</td><td>Tier-1 to 2</td><td>Rs 18-30 LPA</td></tr>
-    <tr><td>XAT 95-plus to XLRI</td><td>Tier-1</td><td>Rs 22-32 LPA</td></tr>
-    <tr><td>CMAT 95-plus to JBIMS</td><td>Tier-1</td><td>Rs 18-30 LPA</td></tr>
-    <tr><td>MAT 90-plus to Christ, Welingkar</td><td>Tier-2</td><td>Rs 10-18 LPA</td></tr>
-    <tr><td>ATMA 85-plus to Mid-tier college</td><td>Tier-3</td><td>Rs 5-12 LPA</td></tr>
-    <tr><td>GMAT 700-plus to ISB</td><td>Tier-1</td><td>Rs 22-35 LPA</td></tr>
-    <tr><td>No exam Online MBA at NMIMS</td><td>Tier-2 online</td><td>Rs 7-15 LPA lateral</td></tr>
+    <tr><td>CAT 99-plus to IIM A, B, C</td><td>Tier-1</td></tr>
+    <tr><td>CAT 95-99 to IIM L, K, I plus FMS Delhi</td><td>Tier-1 to 2</td></tr>
+    <tr><td>XAT 95-plus to XLRI</td><td>Tier-1</td></tr>
+    <tr><td>CMAT 95-plus to JBIMS</td><td>Tier-1</td></tr>
+    <tr><td>MAT 90-plus to Christ, Welingkar</td><td>Tier-2</td></tr>
+    <tr><td>ATMA 85-plus to Mid-tier college</td><td>Tier-3</td></tr>
+    <tr><td>GMAT 700-plus to ISB</td><td>Tier-1</td></tr>
+    <tr><td>No exam Online MBA at NMIMS</td><td>Tier-2 online</td></tr>
   </tbody>
 </table>
 
@@ -11623,18 +11591,18 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <table>
   <caption>Top PGDM institutes India 2026</caption>
-  <thead><tr><th>Institute</th><th>NIRF Mgmt Rank</th><th>Total Fees</th><th>Year 1 CTC</th></tr></thead>
+  <thead><tr><th>Institute</th><th>NIRF Mgmt Rank</th><th>Total Fees</th></tr></thead>
   <tbody>
-    <tr><td>IIM Ahmedabad</td><td>1</td><td>Rs 25-28 lakh</td><td>Rs 35-50 LPA</td></tr>
-    <tr><td>IIM Bangalore</td><td>2</td><td>Rs 25-28 lakh</td><td>Rs 32-48 LPA</td></tr>
-    <tr><td>IIM Calcutta</td><td>3-4</td><td>Rs 25-28 lakh</td><td>Rs 30-46 LPA</td></tr>
-    <tr><td>IIM Lucknow</td><td>5</td><td>Rs 16-22 lakh</td><td>Rs 25-38 LPA</td></tr>
-    <tr><td>IIM Kozhikode</td><td>6-7</td><td>Rs 18-22 lakh</td><td>Rs 25-38 LPA</td></tr>
-    <tr><td>IIM Indore</td><td>8</td><td>Rs 18-22 lakh</td><td>Rs 23-35 LPA</td></tr>
-    <tr><td>XLRI Jamshedpur</td><td>9-10</td><td>Rs 25-28 lakh</td><td>Rs 26-40 LPA</td></tr>
-    <tr><td>MDI Gurgaon</td><td>11-12</td><td>Rs 22-25 lakh</td><td>Rs 22-32 LPA</td></tr>
-    <tr><td>SP Jain Mumbai</td><td>15-20</td><td>Rs 20-22 lakh</td><td>Rs 22-30 LPA</td></tr>
-    <tr><td>SPJIMR Mumbai</td><td>20-25</td><td>Rs 22-25 lakh</td><td>Rs 22-32 LPA</td></tr>
+    <tr><td>IIM Ahmedabad</td><td>1</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>IIM Bangalore</td><td>2</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>IIM Calcutta</td><td>3-4</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>IIM Lucknow</td><td>5</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>IIM Kozhikode</td><td>6-7</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>IIM Indore</td><td>8</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>XLRI Jamshedpur</td><td>9-10</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>MDI Gurgaon</td><td>11-12</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>SP Jain Mumbai</td><td>15-20</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>SPJIMR Mumbai</td><td>20-25</td><td>Not tracked (campus programme)</td></tr>
   </tbody>
 </table>
 
@@ -11724,7 +11692,7 @@ export const BLOG_POSTS: BlogPost[] = [
   // ── ONLINE MBA SALARY INDIA ────────────────────────────────────────────────
   {
     slug: 'online-mba-salary-india-2026',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     title: 'Online MBA Salary in India 2026: What to Expect',
     seoTitle: 'Online MBA Salary India 2026: Average, Specialization-wise, ROI',
     metaDescription: 'Online MBA salary in India 2026: average packages by specialisation, university, and experience. What you can realistically expect.',
@@ -11760,46 +11728,32 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>If you are Type 2, the salary question is really "how much faster does this accelerate what was already happening?" rather than "what will my new salary be?"</p>
 
-<h2>Salary By Specialization</h2>
+<h2>Why Pay Differs by City and Employer</h2>
 <figure style="margin: 28px 0;">
   <img src="https://images.pexels.com/photos/7580995/pexels-photo-7580995.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Serious businessman reviewing a document while sitting in a modern office." loading="lazy" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F4;" />
   <figcaption style="font-size: 12px; color: #64788A; margin-top: 8px; text-align: center;">Photo by <a href="https://www.pexels.com/@rdne" target="_blank" rel="noopener nofollow">RDNE Stock project</a> on <a href="https://pexels.com" target="_blank" rel="noopener nofollow">Pexels</a></figcaption>
 </figure>
 
 
-<div class="fee-table">
-<table>
-<thead><tr><th>MBA Specialization</th><th>Entry Level (0–2 yrs)</th><th>Mid-Level (3–7 yrs)</th></tr></thead>
-<tbody>
-<tr><td>Finance</td><td>₹5–8 LPA</td><td>₹10–18 LPA</td></tr>
-<tr><td>Data Science & Analytics</td><td>₹6–10 LPA</td><td>₹12–22 LPA</td></tr>
-<tr><td>Business Analytics</td><td>₹5–9 LPA</td><td>₹10–18 LPA</td></tr>
-<tr><td>Marketing</td><td>₹4–7 LPA</td><td>₹8–15 LPA</td></tr>
-<tr><td>Digital Marketing</td><td>₹4–6 LPA</td><td>₹7–12 LPA</td></tr>
-<tr><td>Human Resource Management</td><td>₹4–6 LPA</td><td>₹7–13 LPA</td></tr>
-<tr><td>Operations Management</td><td>₹4–7 LPA</td><td>₹8–14 LPA</td></tr>
-<tr><td>International Business</td><td>₹4–7 LPA</td><td>₹8–15 LPA</td></tr>
-</tbody>
-</table>
-</div>
+<p>Salaries vary by employer, city and experience; check current postings and the employer's own pay data.</p>
 
-<p>These are broad ranges pulled from publicly available placement data and job portals. City matters. The same Finance MBA commands Rs 12 LPA median in Mumbai versus Rs 8 LPA in Hyderabad for the same experience level. Company type also matters significantly. MNC vs Indian startup vs PSU produce very different numbers. To <a href="/tools/salary-calculator" class="ilink">calculate expected salary by specialisation</a>, use the edifyedu.in salary calculator for a personalised estimate.</p>
+<p>City matters. The same Finance MBA commands Rs 12 LPA median in Mumbai versus Rs 8 LPA in Hyderabad for the same experience level. Company type also matters significantly. MNC vs Indian startup vs PSU produce very different numbers. To <a href="/tools/salary-calculator" class="ilink">calculate expected salary by specialisation</a>, use the edifyedu.in salary calculator for a personalised estimate.</p>
 
-<h2>Online MBA Salary by City India 2026</h2>
+<h2>Online MBA Hiring Sectors by City India 2026</h2>
 
 <table>
-  <caption>Online MBA salary by major Indian city 2026</caption>
-  <thead><tr><th>City</th><th>Year 1 CTC (lateral)</th><th>Year 5 CTC</th><th>Top Sectors</th></tr></thead>
+  <caption>Online MBA hiring sectors by major Indian city 2026</caption>
+  <thead><tr><th>City</th><th>Top Sectors</th></tr></thead>
   <tbody>
-    <tr><td>Bengaluru</td><td>Rs 8 to 15 LPA</td><td>Rs 18 to 32 LPA</td><td>Tech, SaaS, Product, Fintech</td></tr>
-    <tr><td>Mumbai</td><td>Rs 7 to 14 LPA</td><td>Rs 16 to 28 LPA</td><td>BFSI, Consulting, FMCG, Media</td></tr>
-    <tr><td>Delhi NCR</td><td>Rs 7 to 13 LPA</td><td>Rs 16 to 28 LPA</td><td>Consulting, Govt, Real Estate, MNC HQs</td></tr>
-    <tr><td>Hyderabad</td><td>Rs 6 to 12 LPA</td><td>Rs 14 to 24 LPA</td><td>Tech, Pharma, ITES</td></tr>
-    <tr><td>Pune</td><td>Rs 6 to 12 LPA</td><td>Rs 14 to 22 LPA</td><td>IT, Auto, BFSI</td></tr>
-    <tr><td>Chennai</td><td>Rs 5 to 10 LPA</td><td>Rs 12 to 20 LPA</td><td>IT, Auto SEZ, BFSI shared services</td></tr>
-    <tr><td>Kolkata</td><td>Rs 5 to 10 LPA</td><td>Rs 12 to 20 LPA</td><td>IT, BFSI, Manufacturing</td></tr>
-    <tr><td>Ahmedabad</td><td>Rs 5 to 10 LPA</td><td>Rs 12 to 18 LPA</td><td>Pharma, Textile, BFSI, GIFT City</td></tr>
-    <tr><td>Tier-2 cities</td><td>Rs 4 to 8 LPA</td><td>Rs 9 to 15 LPA</td><td>State industries, BFSI branches</td></tr>
+    <tr><td>Bengaluru</td><td>Tech, SaaS, Product, Fintech</td></tr>
+    <tr><td>Mumbai</td><td>BFSI, Consulting, FMCG, Media</td></tr>
+    <tr><td>Delhi NCR</td><td>Consulting, Govt, Real Estate, MNC HQs</td></tr>
+    <tr><td>Hyderabad</td><td>Tech, Pharma, ITES</td></tr>
+    <tr><td>Pune</td><td>IT, Auto, BFSI</td></tr>
+    <tr><td>Chennai</td><td>IT, Auto SEZ, BFSI shared services</td></tr>
+    <tr><td>Kolkata</td><td>IT, BFSI, Manufacturing</td></tr>
+    <tr><td>Ahmedabad</td><td>Pharma, Textile, BFSI, GIFT City</td></tr>
+    <tr><td>Tier-2 cities</td><td>State industries, BFSI branches</td></tr>
   </tbody>
 </table>
 
@@ -11820,7 +11774,7 @@ export const BLOG_POSTS: BlogPost[] = [
   </tbody>
 </table>
 
-<div class="callout-warning"><strong>Verify before paying:</strong> Salary ranges indicative based on placement data plus Naukri analytics. Actual outcomes depend on programme tier, prior experience, certification stacking, plus active job-search effort.</div>
+<div class="callout-warning"><strong>Verify before paying:</strong> Salary ranges are indicative. Actual outcomes depend on programme tier, prior experience, certification stacking, plus active job-search effort.</div>
 
 <h2>Online MBA vs Campus MBA: How Different Are Salaries Really?</h2>
 
@@ -11860,18 +11814,18 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>If you are a working professional in a growing domain, the MBA credential removes a formal barrier that was capping your growth. That is its real function. The salary increase follows from what you were already building. The MBA gives it institutional permission.</p>
 
-<h2>10-Year Online MBA Salary Trajectory 2026</h2>
+<h2>10-Year Online MBA Role Trajectory 2026</h2>
 
 <table>
-  <caption>Realistic 10-year salary trajectory post-online MBA 2026</caption>
-  <thead><tr><th>Year post-MBA</th><th>Typical Role</th><th>CTC Range (tier-1 online)</th></tr></thead>
+  <caption>Realistic 10-year role trajectory post-online MBA 2026</caption>
+  <thead><tr><th>Year post-MBA</th><th>Typical Role</th></tr></thead>
   <tbody>
-    <tr><td>Year 1</td><td>Lateral hire, Senior Analyst, Asst Manager</td><td>Rs 6 to 12 LPA</td></tr>
-    <tr><td>Year 2-3</td><td>Manager, Function lead</td><td>Rs 10 to 18 LPA</td></tr>
-    <tr><td>Year 4-6</td><td>Senior Manager, AGM</td><td>Rs 14 to 25 LPA</td></tr>
-    <tr><td>Year 7-9</td><td>AVP, GM</td><td>Rs 22 to 38 LPA</td></tr>
-    <tr><td>Year 10-12</td><td>VP, Director, Head of Function</td><td>Rs 35 to 60 LPA</td></tr>
-    <tr><td>Year 13-plus</td><td>SVP, CXO, Group Head</td><td>Rs 50 LPA to 1.5 Cr</td></tr>
+    <tr><td>Year 1</td><td>Lateral hire, Senior Analyst, Asst Manager</td></tr>
+    <tr><td>Year 2-3</td><td>Manager, Function lead</td></tr>
+    <tr><td>Year 4-6</td><td>Senior Manager, AGM</td></tr>
+    <tr><td>Year 7-9</td><td>AVP, GM</td></tr>
+    <tr><td>Year 10-12</td><td>VP, Director, Head of Function</td></tr>
+    <tr><td>Year 13-plus</td><td>SVP, CXO, Group Head</td></tr>
   </tbody>
 </table>
 
@@ -12766,17 +12720,17 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Career service quality varies:</strong> NMIMS plus Symbiosis have dedicated career teams. SPPU is self-driven.</li>
 </ul>
 
-<h2>Pune Online MBA Sector-Wise Salary Map 2026</h2>
+<h2>Pune Online MBA Sector-Wise Employer Map 2026</h2>
 
 <table>
-  <caption>Pune online MBA Year 1 CTC by sector 2026</caption>
-  <thead><tr><th>Sector</th><th>SPPU MBA</th><th>Top Employers</th></tr></thead>
+  <caption>Pune online MBA hiring sectors and employers 2026</caption>
+  <thead><tr><th>Sector</th><th>Top Employers</th></tr></thead>
   <tbody>
-    <tr><td>IT Services Hinjawadi</td><td>Rs 4-8 LPA</td><td>TCS, Infosys, Wipro, Capgemini</td></tr>
-    <tr><td>BFSI Shared Services</td><td>Rs 5-9 LPA</td><td>JP Morgan, Citi, Barclays Pune</td></tr>
-    <tr><td>Auto Manufacturing</td><td>Rs 5-9 LPA</td><td>Tata Motors, Bajaj Auto, Mercedes Benz Pune</td></tr>
-    <tr><td>Pharma plus Healthcare</td><td>Rs 5-10 LPA</td><td>Cipla, Lupin, Wockhardt, Bharat Forge</td></tr>
-    <tr><td>SaaS plus Startups</td><td>Rs 5-10 LPA</td><td>Razorpay, Postman, Bajaj Finserv Tech</td></tr>
+    <tr><td>IT Services Hinjawadi</td><td>TCS, Infosys, Wipro, Capgemini</td></tr>
+    <tr><td>BFSI Shared Services</td><td>JP Morgan, Citi, Barclays Pune</td></tr>
+    <tr><td>Auto Manufacturing</td><td>Tata Motors, Bajaj Auto, Mercedes Benz Pune</td></tr>
+    <tr><td>Pharma plus Healthcare</td><td>Cipla, Lupin, Wockhardt, Bharat Forge</td></tr>
+    <tr><td>SaaS plus Startups</td><td>Razorpay, Postman, Bajaj Finserv Tech</td></tr>
   </tbody>
 </table>
 
@@ -13331,7 +13285,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'mba-after-engineering-india-2026',
-    updatedAt: '2026-11-19',
+    updatedAt: '2026-11-27',
     title: 'MBA After Engineering India 2026: Worth It? Best Specs',
     seoTitle: 'MBA After Engineering India 2026: Worth It? Best Specialisations',
     metaDescription: 'MBA after engineering in India 2026: is it worth it, best specialisations for engineers, salary jump, and top colleges to consider.',
@@ -13391,13 +13345,13 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <div class="fee-table">
 <table>
-<thead><tr><th>Specialisation</th><th>Why It Fits Engineers</th><th>Career Outcomes</th><th>Avg Salary (Mid-Level)</th></tr></thead>
+<thead><tr><th>Specialisation</th><th>Why It Fits Engineers</th><th>Career Outcomes</th></tr></thead>
 <tbody>
-<tr><td>Data Science and Analytics</td><td>Extends existing analytical skills into business context</td><td>Analytics Manager, Data Product Manager</td><td>₹18-28 LPA</td></tr>
-<tr><td>Operations Management</td><td>Natural fit for engineers with process and systems thinking</td><td>Operations Head, Supply Chain Manager</td><td>₹14-22 LPA</td></tr>
-<tr><td>Finance</td><td>Strong for engineers targeting fintech or investment banking</td><td>Investment Analyst, CFO track</td><td>₹15-30 LPA</td></tr>
-<tr><td>Technology Management</td><td>Bridges IT and business strategy</td><td>CTO track, IT Director</td><td>₹20-35 LPA</td></tr>
-<tr><td>Marketing</td><td>Good for engineers moving into product marketing or growth</td><td>Product Marketing Manager, Growth Lead</td><td>₹12-20 LPA</td></tr>
+<tr><td>Data Science and Analytics</td><td>Extends existing analytical skills into business context</td><td>Analytics Manager, Data Product Manager</td></tr>
+<tr><td>Operations Management</td><td>Natural fit for engineers with process and systems thinking</td><td>Operations Head, Supply Chain Manager</td></tr>
+<tr><td>Finance</td><td>Strong for engineers targeting fintech or investment banking</td><td>Investment Analyst, CFO track</td></tr>
+<tr><td>Technology Management</td><td>Bridges IT and business strategy</td><td>CTO track, IT Director</td></tr>
+<tr><td>Marketing</td><td>Good for engineers moving into product marketing or growth</td><td>Product Marketing Manager, Growth Lead</td></tr>
 </tbody>
 </table>
 </div>
@@ -13444,20 +13398,20 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <table>
   <caption>Engineering branch to ideal MBA specialisation 2026</caption>
-  <thead><tr><th>Engineering Branch</th><th>Best MBA Spec</th><th>Year 1 Post-MBA CTC</th><th>Top Recruiters</th></tr></thead>
+  <thead><tr><th>Engineering Branch</th><th>Best MBA Spec</th><th>Top Recruiters</th></tr></thead>
   <tbody>
-    <tr><td>CSE plus IT</td><td>MBA Data Science or AI Product Management</td><td>Rs 12 to 25 LPA</td><td>Google, Microsoft, Amazon, Razorpay, Freshworks</td></tr>
-    <tr><td>ECE plus EEE</td><td>MBA Operations or Technology Management</td><td>Rs 10 to 18 LPA</td><td>Qualcomm, Texas Instruments, Samsung, Intel India</td></tr>
-    <tr><td>Mechanical</td><td>MBA Operations or Supply Chain</td><td>Rs 8 to 14 LPA</td><td>Maruti, Mahindra, Tata Motors, L&T, Boeing</td></tr>
-    <tr><td>Civil</td><td>MBA Infrastructure or Real Estate</td><td>Rs 8 to 14 LPA</td><td>L&T, DLF, Lodha, Brigade, Adani Realty</td></tr>
-    <tr><td>Chemical plus Petroleum</td><td>MBA Energy or Operations</td><td>Rs 10 to 18 LPA</td><td>Reliance, ONGC, IOC, BPCL, Shell India</td></tr>
-    <tr><td>Biotech</td><td>MBA Healthcare or Pharma Management</td><td>Rs 8 to 14 LPA</td><td>Biocon, Serum, Dr Reddy's, AstraZeneca</td></tr>
-    <tr><td>Aerospace</td><td>MBA Operations or Strategy</td><td>Rs 10 to 18 LPA</td><td>HAL, DRDO, ISRO, Boeing, Airbus India</td></tr>
-    <tr><td>Industrial or Production</td><td>MBA Operations plus Supply Chain</td><td>Rs 8 to 14 LPA</td><td>Mahindra, Bajaj Auto, Maruti, Boeing India</td></tr>
+    <tr><td>CSE plus IT</td><td>MBA Data Science or AI Product Management</td><td>Google, Microsoft, Amazon, Razorpay, Freshworks</td></tr>
+    <tr><td>ECE plus EEE</td><td>MBA Operations or Technology Management</td><td>Qualcomm, Texas Instruments, Samsung, Intel India</td></tr>
+    <tr><td>Mechanical</td><td>MBA Operations or Supply Chain</td><td>Maruti, Mahindra, Tata Motors, L&T, Boeing</td></tr>
+    <tr><td>Civil</td><td>MBA Infrastructure or Real Estate</td><td>L&T, DLF, Lodha, Brigade, Adani Realty</td></tr>
+    <tr><td>Chemical plus Petroleum</td><td>MBA Energy or Operations</td><td>Reliance, ONGC, IOC, BPCL, Shell India</td></tr>
+    <tr><td>Biotech</td><td>MBA Healthcare or Pharma Management</td><td>Biocon, Serum, Dr Reddy's, AstraZeneca</td></tr>
+    <tr><td>Aerospace</td><td>MBA Operations or Strategy</td><td>HAL, DRDO, ISRO, Boeing, Airbus India</td></tr>
+    <tr><td>Industrial or Production</td><td>MBA Operations plus Supply Chain</td><td>Mahindra, Bajaj Auto, Maruti, Boeing India</td></tr>
   </tbody>
 </table>
 
-<div class="callout-warning"><strong>Verify before applying:</strong> Salary outcomes indicative based on tier-1 MBA placements. Actual outcomes depend on undergraduate college tier, MBA programme rank, internship plus capstone quality, and active job-search effort.</div>
+<div class="callout-warning"><strong>Verify before applying:</strong> Actual outcomes depend on undergraduate college tier, MBA programme rank, internship plus capstone quality, and active job-search effort.</div>
 
 <h2>Top Online MBA Programmes for Engineers 2026</h2>
 
@@ -13478,15 +13432,15 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>MBA Plus Engineering Career Trajectory 2026 (Year-by-Year)</h2>
 
 <table>
-  <caption>Engineer plus MBA salary trajectory 2026 (tier-1)</caption>
-  <thead><tr><th>Year post-MBA</th><th>Typical Role</th><th>Median CTC</th></tr></thead>
+  <caption>Engineer plus MBA role trajectory 2026 (tier-1)</caption>
+  <thead><tr><th>Year post-MBA</th><th>Typical Role</th></tr></thead>
   <tbody>
-    <tr><td>Year 1</td><td>Product Manager or Senior Analyst</td><td>Rs 12 to 25 LPA</td></tr>
-    <tr><td>Year 2-3</td><td>Senior PM or Analytics Lead</td><td>Rs 20 to 35 LPA</td></tr>
-    <tr><td>Year 4-6</td><td>Group PM or Analytics Manager</td><td>Rs 28 to 45 LPA</td></tr>
-    <tr><td>Year 7-9</td><td>Director Product or VP Engineering Mgmt</td><td>Rs 45 to 70 LPA</td></tr>
-    <tr><td>Year 10-12</td><td>VP Product or CTO track</td><td>Rs 65 LPA to 1.5 Cr</td></tr>
-    <tr><td>Year 13-plus</td><td>CTO or CPO or Founder</td><td>Rs 1.5 Cr to 5 Cr-plus (with equity)</td></tr>
+    <tr><td>Year 1</td><td>Product Manager or Senior Analyst</td></tr>
+    <tr><td>Year 2-3</td><td>Senior PM or Analytics Lead</td></tr>
+    <tr><td>Year 4-6</td><td>Group PM or Analytics Manager</td></tr>
+    <tr><td>Year 7-9</td><td>Director Product or VP Engineering Mgmt</td></tr>
+    <tr><td>Year 10-12</td><td>VP Product or CTO track</td></tr>
+    <tr><td>Year 13-plus</td><td>CTO or CPO or Founder</td></tr>
   </tbody>
 </table>
 
@@ -13506,7 +13460,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Honest Gaps in MBA After Engineering 2026</h2>
 
 <ul>
-  <li><strong>Tier-1 IIM premium is real:</strong> IIM A, B, C, L, K, I place at Rs 25-40 LPA. Online MBA places at Rs 8-18 LPA lateral. The 2x to 3x gap reflects brand pull plus campus placement.</li>
+  <li><strong>Tier-1 IIM premium is real:</strong> IIM A, B, C, L, K, I place at Rs 25-40 LPA. Online MBA places at Rs 8-18 LPA lateral. The gap reflects brand pull plus campus placement.</li>
   <li><strong>Engineering background does not automatically open consulting doors:</strong> MBB plus Big 4 strategy prefer tier-1 IIM full-time MBA. Online MBA places at Big 4 advisory, not strategy practice.</li>
   <li><strong>Product Management requires portfolio plus side projects:</strong> MBA alone is insufficient for top PM roles. Build product portfolio (case studies, mock product designs) during MBA.</li>
   <li><strong>Online MBA placement is lateral:</strong> No mass campus placement. Self-driven via LinkedIn plus referrals plus active job search.</li>
@@ -14292,7 +14246,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'distance-mba-bangalore-2026',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     title: 'Distance MBA Bangalore 2026: Top Colleges and Fees',
     seoTitle: 'Distance MBA Bangalore 2026: JAIN vs Christ vs Manipal',
     metaDescription: 'Distance MBA Bangalore 2026: Whitefield vs Koramangala vs ORR job market map, JAIN A++ vs Christ vs Manipal vs Dayananda Sagar comparison.',
@@ -14417,17 +14371,17 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Total fee Rs 1.60L to 1.96L:</strong> Mid-range pricing, no-cost EMI available.</li>
 </ul>
 
-<h2>Realistic Salary Uplift for Bengaluru IT Professionals</h2>
+<h2>Realistic Role Moves for Bengaluru IT Professionals</h2>
 
 <table>
-  <caption>Bengaluru IT professional salary uplift after online MBA from NAAC A+ university 2026</caption>
-  <thead><tr><th>Pre-MBA role</th><th>Pre-MBA CTC</th><th>Post-MBA target role</th><th>Post-MBA Year 1</th><th>Post-MBA Year 3</th></tr></thead>
+  <caption>Bengaluru IT professional role moves after online MBA from NAAC A+ university 2026</caption>
+  <thead><tr><th>Pre-MBA role</th><th>Post-MBA target role</th></tr></thead>
   <tbody>
-    <tr><td>Software Engineer (TCS, Infosys, Wipro)</td><td>Rs 8 to 12 LPA</td><td>Senior Analyst, Tech BA</td><td>Rs 12 to 18 LPA</td><td>Rs 18 to 28 LPA</td></tr>
-    <tr><td>Tech Lead at services</td><td>Rs 14 to 18 LPA</td><td>Engineering Manager</td><td>Rs 20 to 28 LPA</td><td>Rs 28 to 40 LPA</td></tr>
-    <tr><td>Software Engineer at product</td><td>Rs 14 to 22 LPA</td><td>Product Manager</td><td>Rs 22 to 32 LPA</td><td>Rs 32 to 48 LPA</td></tr>
-    <tr><td>QA or Test Engineer at services</td><td>Rs 7 to 11 LPA</td><td>QA Manager, Operations</td><td>Rs 12 to 16 LPA</td><td>Rs 18 to 26 LPA</td></tr>
-    <tr><td>Data Engineer at services</td><td>Rs 10 to 16 LPA</td><td>Data Scientist, Senior Analyst</td><td>Rs 16 to 26 LPA</td><td>Rs 24 to 38 LPA</td></tr>
+    <tr><td>Software Engineer (TCS, Infosys, Wipro)</td><td>Senior Analyst, Tech BA</td></tr>
+    <tr><td>Tech Lead at services</td><td>Engineering Manager</td></tr>
+    <tr><td>Software Engineer at product</td><td>Product Manager</td></tr>
+    <tr><td>QA or Test Engineer at services</td><td>QA Manager, Operations</td></tr>
+    <tr><td>Data Engineer at services</td><td>Data Scientist, Senior Analyst</td></tr>
   </tbody>
 </table>
 
@@ -14474,19 +14428,15 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Bengaluru Sub-Specialisation Career Outcomes</h2>
 
-<table>
-  <caption>Bengaluru MBA specialisation career outcomes by target role 2026</caption>
-  <thead><tr><th>Bengaluru target role</th><th>Year 1 post-online-MBA CTC</th><th>Year 5 CTC</th></tr></thead>
-  <tbody>
-    <tr><td>Business Analyst at consulting (Big 4 lateral)</td><td>Rs 8 to 14 LPA</td><td>Rs 18 to 30 LPA</td></tr>
-    <tr><td>Product Manager at SaaS (Razorpay, Freshworks)</td><td>Rs 14 to 22 LPA</td><td>Rs 28 to 45 LPA</td></tr>
-    <tr><td>Data Scientist at product company</td><td>Rs 12 to 18 LPA</td><td>Rs 22 to 35 LPA</td></tr>
-    <tr><td>Engineering Manager at services to product transition</td><td>Rs 18 to 26 LPA</td><td>Rs 30 to 45 LPA</td></tr>
-    <tr><td>Operations Manager at e-commerce (Flipkart, Meesho)</td><td>Rs 10 to 16 LPA</td><td>Rs 20 to 30 LPA</td></tr>
-    <tr><td>Fintech BFSI lateral (PhonePe, Razorpay)</td><td>Rs 12 to 20 LPA</td><td>Rs 25 to 38 LPA</td></tr>
-    <tr><td>Marketing Lead at D2C (BoAt, Mamaearth Bengaluru ops)</td><td>Rs 10 to 16 LPA</td><td>Rs 20 to 32 LPA</td></tr>
-  </tbody>
-</table>
+<ul>
+  <li>Business Analyst at consulting (Big 4 lateral)</li>
+  <li>Product Manager at SaaS (Razorpay, Freshworks)</li>
+  <li>Data Scientist at product company</li>
+  <li>Engineering Manager at services to product transition</li>
+  <li>Operations Manager at e-commerce (Flipkart, Meesho)</li>
+  <li>Fintech BFSI lateral (PhonePe, Razorpay)</li>
+  <li>Marketing Lead at D2C (BoAt, Mamaearth Bengaluru ops)</li>
+</ul>
 
 <h2>Specific Bengaluru Application Tips for January 2027 Intake</h2>
 
@@ -14508,21 +14458,6 @@ export const BLOG_POSTS: BlogPost[] = [
   <li>Data Engineer to Senior Data Scientist or Analytics Lead: Rs 10 to 18 LPA uplift.</li>
   <li>Tech Lead at services to Engineering Manager at product: Rs 12 to 22 LPA uplift.</li>
 </ul>
-
-<h2>Bengaluru Specific Salary Uplift Data Across Industries</h2>
-
-<table>
-  <caption>Bengaluru sector-specific salary uplift after online MBA 2026</caption>
-  <thead><tr><th>Bengaluru sector</th><th>Pre-MBA Year 5 salary</th><th>Post-online-MBA Year 7 salary</th></tr></thead>
-  <tbody>
-    <tr><td>Tech IT services (TCS, Infosys, Wipro)</td><td>Rs 12 to 18 LPA</td><td>Rs 18 to 28 LPA</td></tr>
-    <tr><td>Tech product company (Razorpay, Flipkart)</td><td>Rs 18 to 28 LPA</td><td>Rs 26 to 42 LPA</td></tr>
-    <tr><td>FAANG India (Google, Microsoft, Amazon)</td><td>Rs 30 to 50 LPA</td><td>Rs 40 to 65 LPA</td></tr>
-    <tr><td>BFSI digital banking (HDFC, ICICI Bengaluru)</td><td>Rs 14 to 22 LPA</td><td>Rs 22 to 32 LPA</td></tr>
-    <tr><td>Fintech (PhonePe, Razorpay)</td><td>Rs 16 to 26 LPA</td><td>Rs 24 to 36 LPA</td></tr>
-    <tr><td>Consulting Analytics (McKinsey QB, BCG Gamma)</td><td>Rs 18 to 28 LPA</td><td>Rs 26 to 40 LPA</td></tr>
-  </tbody>
-</table>
 
 <h2>The Bengaluru Online MBA Plus Certification Stack</h2>
 
@@ -15072,7 +15007,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'online-mba-for-freshers-india-2026',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     title: 'Online MBA for Freshers India 2026: Is It Worth It?',
     seoTitle: 'Online MBA for Freshers India 2026: Real ROI vs Work-Ex Wait | Edify',
     metaDescription: 'Online MBA for freshers India 2026: 5-situation test for fresher MBA decision, ROI math vs waiting, specialisation by stream, NAAC A+ options.',
@@ -15130,19 +15065,11 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p><em>Takeaway: fresher online MBA works for 3 of 5 situations. Wait or work-first works for the other 2. Match your situation honestly.</em></p>
 
-<h2>The Realistic ROI Math: Fresher MBA vs Wait for Tier-1</h2>
+<h2>Fresher MBA vs Wait for Tier-1: The Cost Trade-off</h2>
 
-<table>
-  <caption>Fresher online MBA vs wait-for-tier-1 MBA: 10-year financial outcome</caption>
-  <thead><tr><th>Path</th><th>Year 1 CTC</th><th>Year 5 CTC</th><th>Year 10 CTC</th><th>Total 10-year investment</th></tr></thead>
-  <tbody>
-    <tr><td>BCom fresher to online MBA NAAC A+ (Rs 1.96L)</td><td>Rs 3 to 5 LPA</td><td>Rs 12 to 18 LPA</td><td>Rs 22 to 35 LPA</td><td>Rs 1.96 lakh tuition</td></tr>
-    <tr><td>BCom plus work 2 years to tier-1 MBA (Rs 28L)</td><td>Rs 4 LPA (work) then Rs 22 LPA (post-MBA)</td><td>Rs 32 LPA</td><td>Rs 55 to 80 LPA</td><td>Rs 28 lakh tuition plus Rs 6 lakh opp cost</td></tr>
-    <tr><td>BCom plus work 4 years to executive MBA tier-1 (Rs 35L)</td><td>Rs 4 LPA then Rs 12 LPA then Rs 35 LPA post-MBA</td><td>Rs 45 LPA</td><td>Rs 70 to 100 LPA</td><td>Rs 35 lakh tuition plus Rs 14 lakh opp cost</td></tr>
-  </tbody>
-</table>
+<p>Salaries vary by employer, city and experience; check current postings and the employer's own pay data.</p>
 
-<p>The tier-1 paths produce higher absolute year-10 outcomes (Rs 55 to 100 LPA vs Rs 22 to 35 LPA for fresher online MBA). But the upfront capital required is 15x to 25x higher. For most freshers without family financial backing, the fresher online MBA path is the practical default.</p>
+<p>The tier-1 paths can produce higher absolute year-10 outcomes. But the upfront capital required is far higher. For most freshers without family financial backing, the fresher online MBA path is the practical default.</p>
 
 <h2>UGC-DEB Approved Online MBA Options for Freshers (Live Data)</h2>
 
@@ -15213,8 +15140,6 @@ export const BLOG_POSTS: BlogPost[] = [
   <thead><tr><th>Factor</th><th>Fresher online MBA</th><th>2-3 year experienced online MBA</th></tr></thead>
   <tbody>
     <tr><td>Peer cohort quality</td><td>Mixed; some freshers, some experienced</td><td>Mostly working professionals, richer discussions</td></tr>
-    <tr><td>Year 1 post-MBA CTC</td><td>Rs 3 to 6 LPA</td><td>Rs 7 to 12 LPA (often via promotion or lateral move)</td></tr>
-    <tr><td>Year 5 post-MBA CTC</td><td>Rs 12 to 20 LPA</td><td>Rs 16 to 26 LPA</td></tr>
     <tr><td>Recruiter signal</td><td>Credential only; needs strong skill stack to compete</td><td>Credential plus work-ex; significantly stronger profile</td></tr>
     <tr><td>Specialisation alignment</td><td>Best guess; subject to change</td><td>Informed by 2-3 years of seeing what work suits you</td></tr>
     <tr><td>Time to credential</td><td>2 years (age 23-25)</td><td>2 years (age 25-27)</td></tr>
@@ -15245,14 +15170,14 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>First Job After Fresher MBA: Realistic Expectations</h2>
 
 <table>
-  <caption>Realistic first-job outcomes after fresher online MBA India 2026</caption>
-  <thead><tr><th>Pre-MBA background</th><th>Online MBA specialisation</th><th>Realistic first-job range</th></tr></thead>
+  <caption>Fresher online MBA: background to specialisation fit India 2026</caption>
+  <thead><tr><th>Pre-MBA background</th><th>Online MBA specialisation</th></tr></thead>
   <tbody>
-    <tr><td>BCom or BBA fresher</td><td>Finance, Banking, HR</td><td>Rs 3 to 5 LPA at Indian private firm; Rs 4 to 7 LPA at smaller MNC</td></tr>
-    <tr><td>BSc Maths or Stats fresher</td><td>Business Analytics, Data Science</td><td>Rs 4 to 7 LPA at mid-size data team; Rs 6 to 10 LPA with strong portfolio</td></tr>
-    <tr><td>BCA or BTech fresher</td><td>IT Management, Product Management</td><td>Rs 4 to 7 LPA at IT services; Rs 7 to 12 LPA at SaaS product company</td></tr>
-    <tr><td>BA fresher</td><td>Marketing, HR</td><td>Rs 3 to 4.5 LPA at agency or corporate marketing</td></tr>
-    <tr><td>Family business successor</td><td>General Management, Entrepreneurship</td><td>Not applicable; returns to family business at chosen entry level</td></tr>
+    <tr><td>BCom or BBA fresher</td><td>Finance, Banking, HR</td></tr>
+    <tr><td>BSc Maths or Stats fresher</td><td>Business Analytics, Data Science</td></tr>
+    <tr><td>BCA or BTech fresher</td><td>IT Management, Product Management</td></tr>
+    <tr><td>BA fresher</td><td>Marketing, HR</td></tr>
+    <tr><td>Family business successor</td><td>General Management, Entrepreneurship</td></tr>
   </tbody>
 </table>
 
@@ -16385,17 +16310,17 @@ export const BLOG_POSTS: BlogPost[] = [
     targetKeyword: 'mba scope india 2026',
     relatedUniversities: ["nmims-online","amity-university-online","jain-university-online","manipal-university-jaipur-online","chandigarh-university-online"],
     faqs: [
-      { q: 'What is the scope of MBA in India in 2026?', a: 'MBA graduates in India have job opportunities across 7 main sectors: BFSI (largest hirer), consulting, IT and product management, FMCG, e-commerce, healthcare, and manufacturing. NIRF 2024 placement data across 70 top management institutes shows median salary of Rs 16.5 LPA for top tier-1 brands and Rs 6.5 LPA at tier-3. The scope is widening for online MBA graduates from UGC-DEB approved universities, with NIRF data showing 35 percent year-on-year growth in online MBA placement reporting.' },
+      { q: 'What is the scope of MBA in India in 2026?', a: 'MBA graduates in India have job opportunities across 7 main sectors: BFSI (largest hirer), consulting, IT and product management, FMCG, e-commerce, healthcare, and manufacturing. The scope is widening for online MBA graduates from UGC-DEB approved universities.' },
       { q: 'Which MBA specialisation has the best scope in India in 2026?', a: 'By 2026 NASSCOM and LinkedIn India hiring index: Business Analytics and Data Science MBA tops on demand (28 percent YoY growth), followed by Finance (BFSI hiring strong post RBI rate cuts), Product Management (15 percent YoY), Marketing with Digital focus, and Pharmaceutical and Healthcare Management. Operations MBA is stable. HR MBA is the slowest growing in 2026. Sector demand changes faster than degree duration, so verify hiring data within 6 months of enrollment.' },
       { q: 'Is online MBA scope good in India in 2026?', a: 'Yes for working professionals with 2-plus years of experience. The legal validity is identical to campus MBA when the programme is UGC-DEB approved. Employer perception has shifted significantly since 2022: 78 percent of HR managers surveyed by Naukri.com in 2025 said they accept online MBA from NAAC A or A+ universities for promotion eligibility. The remaining 22 percent still prefer campus MBA, mostly for fresher hiring. For mid-career professionals, the mode of MBA matters less than the brand and your existing track record.' },
-      { q: 'What salary can I expect after MBA in India in 2026?', a: 'Freshers from tier-1 IIMs and ISB: Rs 25 to 35 LPA median. Tier-1 private (IIFT, SP Jain): Rs 12 to 18 LPA. Tier-2 government and private B-schools: Rs 6 to 10 LPA. UGC-DEB approved online MBA (with prior work experience): Rs 4 to 9 LPA for first role post-MBA, but typically used for promotion rather than fresh placement. Salary scales 8 to 12 percent annually with strong execution. 5-year post-MBA salary typically 2.5-3x the starting CTC.' },
+      { q: 'What salary can I expect after MBA in India in 2026?', a: 'Freshers from tier-1 IIMs and ISB: Rs 25 to 35 LPA median. Tier-1 private (IIFT, SP Jain): Rs 12 to 18 LPA. Tier-2 government and private B-schools: Rs 6 to 10 LPA. UGC-DEB approved online MBA (with prior work experience): Rs 4 to 9 LPA for first role post-MBA, but typically used for promotion rather than fresh placement. Salary scales 8 to 12 percent annually with strong execution.' },
       { q: 'Which sectors are SHRINKING for MBA hires in 2026?', a: 'Traditional IT services (TCS, Infosys, Wipro) MBA hiring is down 18 percent YoY according to NASSCOM 2025 Q4 data. Telecom MBA hiring has flattened post-Jio consolidation. Print media and traditional advertising MBA roles have shrunk 25 percent over 3 years. Pure consulting (McKinsey, BCG, Bain) hiring is stable but more competitive. The growth sectors are SaaS product, BFSI digital banking, climate and ESG, and pharma-tech.' },
-      { q: 'Does the mode of MBA (online, campus, executive) affect long-term salary?', a: 'Yes for the first 3 years post-MBA, then it diverges by performance not by mode. Tier-1 campus MBA freshers earn 2-4x more than online MBA freshers in year 1. By year 5, the gap halves. By year 10, role and skill outweigh original MBA mode. Performance reviews and lateral moves are what compound. The exception is consulting (McKinsey, BCG) and IB roles, where tier-1 campus MBA remains a near-mandatory filter even at senior levels.' },
+      { q: 'Does the mode of MBA (online, campus, executive) affect long-term salary?', a: 'Yes for the first 3 years post-MBA, then it diverges by performance not by mode. Tier-1 campus MBA freshers earn more than online MBA freshers in year 1, and the gap narrows over time. By year 10, role and skill outweigh original MBA mode. Performance reviews and lateral moves are what compound. The exception is consulting (McKinsey, BCG) and IB roles, where tier-1 campus MBA remains a near-mandatory filter even at senior levels.' },
       { q: 'What are the emerging MBA career paths in India 2026 that nobody talks about?', a: 'Three under-reported tracks. First, ESG and Climate Tech roles at corporates and ratings agencies (Rs 12 to 25 LPA mid-career, growing 40 percent YoY). Second, AI Operations Manager roles at SaaS companies (translating AI capabilities into business workflows, Rs 18 to 35 LPA). Third, D2C brand operator roles at consumer startups (Mamaearth, boAt, Nykaa-type companies, Rs 14 to 28 LPA with equity). These rarely show up in standard MBA scope articles.' }
     ],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, edifyedu.in. Hiring data sourced from NIRF 2024 placement reports across 70 management institutes, NASSCOM Q1 2026 sector tracker, LinkedIn India Hiring Index April 2026, and Naukri.com Job Speak January 2026.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, edifyedu.in.</em></p>
 
-<p>Standard "MBA scope in India" articles list 5 sectors and call it a guide. The real question every MBA aspirant has in 2026 is sharper: which sectors are actually hiring more this year, which are shrinking, what does the brand-versus-specialisation matrix actually look like, and is online MBA a career-killer or career-accelerator. This guide answers each with sourced 2026 hiring data and the trade-offs that competitor blogs miss.</p>
+<p>Standard "MBA scope in India" articles list 5 sectors and call it a guide. The real question every MBA aspirant has in 2026 is sharper: which sectors are actually hiring more this year, which are shrinking, does brand or specialisation matter more, and is online MBA a career-killer or career-accelerator. This guide answers each with the trade-offs that competitor blogs miss.</p>
 
 <p>Written for: candidates choosing between an online MBA and a campus MBA, working professionals deciding whether the MBA premium still exists, and B-school applicants picking a specialisation.</p>
 
@@ -16424,41 +16349,30 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <table>
   <caption>MBA hiring growth by sector in India 2026</caption>
-  <thead><tr><th>Sector</th><th>YoY hiring growth</th><th>Median fresher CTC</th><th>Top decile CTC</th><th>Demand direction</th></tr></thead>
+  <thead><tr><th>Sector</th><th>YoY hiring growth</th><th>Demand direction</th></tr></thead>
   <tbody>
-    <tr><td>BFSI (banking, NBFCs, insurance)</td><td>+12 percent</td><td>Rs 8 to 14 LPA</td><td>Rs 24 to 38 LPA</td><td>Growing</td></tr>
-    <tr><td>Business analytics and AI ops</td><td>+28 percent</td><td>Rs 10 to 16 LPA</td><td>Rs 28 to 42 LPA</td><td>Fastest growing</td></tr>
-    <tr><td>Product management (SaaS, B2B tech)</td><td>+15 percent</td><td>Rs 14 to 22 LPA</td><td>Rs 38 to 60 LPA</td><td>Growing</td></tr>
-    <tr><td>Pharma and healthcare management</td><td>+10 percent</td><td>Rs 7 to 12 LPA</td><td>Rs 22 to 35 LPA</td><td>Growing</td></tr>
-    <tr><td>FMCG (brand, sales, supply chain)</td><td>+4 percent</td><td>Rs 9 to 14 LPA</td><td>Rs 28 to 42 LPA</td><td>Stable</td></tr>
-    <tr><td>E-commerce and quick commerce</td><td>+8 percent</td><td>Rs 8 to 13 LPA</td><td>Rs 25 to 40 LPA</td><td>Growing</td></tr>
-    <tr><td>Consulting (Big 4 plus MBB)</td><td>0 percent</td><td>Rs 12 to 18 LPA (Big 4), Rs 28 to 35 LPA (MBB)</td><td>Rs 40 LPA-plus</td><td>Flat</td></tr>
-    <tr><td>Traditional IT services</td><td>-18 percent</td><td>Rs 6 to 10 LPA</td><td>Rs 18 to 28 LPA</td><td>Shrinking</td></tr>
-    <tr><td>Telecom</td><td>-3 percent</td><td>Rs 8 to 12 LPA</td><td>Rs 22 to 32 LPA</td><td>Flat to declining</td></tr>
-    <tr><td>Media, print, traditional advertising</td><td>-12 percent</td><td>Rs 5 to 9 LPA</td><td>Rs 18 to 25 LPA</td><td>Shrinking</td></tr>
+    <tr><td>BFSI (banking, NBFCs, insurance)</td><td>+12 percent</td><td>Growing</td></tr>
+    <tr><td>Business analytics and AI ops</td><td>+28 percent</td><td>Fastest growing</td></tr>
+    <tr><td>Product management (SaaS, B2B tech)</td><td>+15 percent</td><td>Growing</td></tr>
+    <tr><td>Pharma and healthcare management</td><td>+10 percent</td><td>Growing</td></tr>
+    <tr><td>FMCG (brand, sales, supply chain)</td><td>+4 percent</td><td>Stable</td></tr>
+    <tr><td>E-commerce and quick commerce</td><td>+8 percent</td><td>Growing</td></tr>
+    <tr><td>Consulting (Big 4 plus MBB)</td><td>0 percent</td><td>Flat</td></tr>
+    <tr><td>Traditional IT services</td><td>-18 percent</td><td>Shrinking</td></tr>
+    <tr><td>Telecom</td><td>-3 percent</td><td>Flat to declining</td></tr>
+    <tr><td>Media, print, traditional advertising</td><td>-12 percent</td><td>Shrinking</td></tr>
   </tbody>
 </table>
 
 <p><em>Takeaway: pick your specialisation to match growth sectors. Analytics, BFSI, and pharma are where the next 3 years of hiring expansion will sit.</em></p>
 
-<h2>The Brand x Specialisation Matrix Most Blogs Skip</h2>
+<h2>Brand or Specialisation: Which Matters More</h2>
 
 <p>Salary depends on the interaction of brand and specialisation, not just one of them. A Finance specialisation at IIM A is not the same career as Finance at a tier-3 college. The combination matters more than either factor alone.</p>
 
-<table>
-  <caption>Year-1 median CTC by brand tier and specialisation in India 2026</caption>
-  <thead><tr><th>Specialisation</th><th>Tier-1 (IIM A/B/C, ISB, XLRI)</th><th>Tier-2 (IIM L/K/I/S, MDI, FMS)</th><th>Tier-1 Private (NMIMS, SPJ, SIBM)</th><th>UGC-DEB online MBA</th></tr></thead>
-  <tbody>
-    <tr><td>Finance</td><td>Rs 28 to 38 LPA</td><td>Rs 18 to 26 LPA</td><td>Rs 12 to 18 LPA</td><td>Rs 5 to 9 LPA</td></tr>
-    <tr><td>Business Analytics</td><td>Rs 26 to 35 LPA</td><td>Rs 16 to 24 LPA</td><td>Rs 12 to 18 LPA</td><td>Rs 6 to 10 LPA</td></tr>
-    <tr><td>Product Management</td><td>Rs 30 to 42 LPA</td><td>Rs 18 to 28 LPA</td><td>Rs 14 to 22 LPA</td><td>Rs 7 to 12 LPA</td></tr>
-    <tr><td>Marketing</td><td>Rs 22 to 30 LPA</td><td>Rs 14 to 20 LPA</td><td>Rs 9 to 14 LPA</td><td>Rs 5 to 8 LPA</td></tr>
-    <tr><td>HR</td><td>Rs 18 to 26 LPA (XLRI)</td><td>Rs 12 to 18 LPA</td><td>Rs 7 to 12 LPA</td><td>Rs 4 to 7 LPA</td></tr>
-    <tr><td>Operations</td><td>Rs 22 to 30 LPA</td><td>Rs 14 to 20 LPA</td><td>Rs 9 to 14 LPA</td><td>Rs 5 to 9 LPA</td></tr>
-  </tbody>
-</table>
+<p>Salaries vary by employer, city and experience; check current postings and the employer's own pay data.</p>
 
-<p>The honest read of this matrix: brand is a 2-3x multiplier. Specialisation is a 1.3-1.5x multiplier. If you have to pick, prioritise brand. If brand is locked (you got into a tier-2 not a tier-1), pick the specialisation with the strongest growth tailwind. Use the <a href="/tools/salary-calculator" class="ilink">salary estimator</a> on edifyedu.in to model your expected CTC by specialisation and experience.</p>
+<p>The honest read: brand usually moves pay more than specialisation does. If you have to pick, prioritise brand. If brand is locked (you got into a tier-2 not a tier-1), pick the specialisation with the strongest growth tailwind. Use the <a href="/tools/salary-calculator" class="ilink">salary estimator</a> on edifyedu.in to model your expected CTC by specialisation and experience.</p>
 
 <h2>The Three Emerging MBA Careers Nobody Talks About</h2>
 
@@ -20318,7 +20232,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: 'distance-mba-meaning-what-is-it-2026',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     title: 'Distance MBA 2026: What It Is, Fees, and Complete Guide',
     seoTitle: 'Distance MBA 2026: Fees, Top Universities, Validity and How It Works',
     metaDescription: 'Distance MBA in India 2026: fees ₹66,000 to ₹2.25L. UGC-DEB validity, top universities, how exams work, online vs distance vs correspondence. Zero commission guide.',
@@ -20537,19 +20451,6 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Step 5: Pay first instalment plus begin programme:</strong> First semester payment (Rs 25K to 60K typical). LMS access activated. Onboarding webinar plus orientation begin.</li>
 </ol>
 
-<h2>Distance MBA Salary Outcomes by University Tier 2026</h2>
-
-<table>
-  <caption>Distance MBA salary outcomes May 2026</caption>
-  <thead><tr><th>University Tier</th><th>Year 1 Lateral CTC</th><th>Year 5 CTC</th><th>Career Ceiling</th></tr></thead>
-  <tbody>
-    <tr><td>Tier-1 distance MBA (NMIMS, JAIN, ISB Online)</td><td>Rs 8 to 15 LPA</td><td>Rs 18 to 28 LPA</td><td>VP, Director level Rs 50 LPA-plus</td></tr>
-    <tr><td>Tier-2 (MUJ, Amity, Chandigarh, Symbiosis)</td><td>Rs 5 to 10 LPA</td><td>Rs 12 to 20 LPA</td><td>Senior Manager Rs 35 LPA-plus</td></tr>
-    <tr><td>Tier-3 (Smaller private online)</td><td>Rs 4 to 8 LPA</td><td>Rs 9 to 15 LPA</td><td>Manager Rs 22 LPA</td></tr>
-    <tr><td>Government distance (IGNOU, DU SOL, KSOU)</td><td>Rs 4 to 8 LPA</td><td>Rs 10 to 18 LPA</td><td>Senior Manager Rs 28 LPA-plus</td></tr>
-  </tbody>
-</table>
-
 <h2>Best Distance MBA for Specific Career Goals 2026</h2>
 
 <ul>
@@ -20588,9 +20489,9 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Distance MBA Salary and Career Outcomes</h2>
 
-<p>Salary after a distance or online MBA depends more on your pre-MBA experience, target industry, and the university brand than on the mode of delivery. Here is what the data shows for online MBA graduates across Indian universities:</p>
+<p>Salary after a distance or online MBA depends more on your pre-MBA experience, target industry, and the university brand than on the mode of delivery. Here are indicative ranges for online MBA graduates across Indian universities:</p>
 
-<p>Entry-level (0 to 2 years experience before MBA): ₹3.5L to ₹6L per annum. Mid-career (3 to 7 years experience): ₹6L to ₹12L per annum. Senior professionals (8 or more years experience): ₹12L to ₹25L per annum. These figures are from university career services data and LinkedIn salary reports. They are not guaranteed outcomes.</p>
+<p>Entry-level (0 to 2 years experience before MBA): ₹3.5L to ₹6L per annum. Mid-career (3 to 7 years experience): ₹6L to ₹12L per annum. Senior professionals (8 or more years experience): ₹12L to ₹25L per annum. These figures are indicative, not guaranteed outcomes.</p>
 
 <p>Industries where a distance MBA adds the most value: BFSI (banking, financial services, insurance), IT services and consulting, FMCG and retail management, healthcare administration, and logistics. Government employees use distance MBAs for ACP (Assured Career Progression) and departmental promotions.</p>
 
@@ -24666,7 +24567,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'best-computer-courses-after-12th-india-2026',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     title: 'Best Computer Courses After 12th India 2026: Top Picks',
     h1Title: "Best Computer Courses After 12th in India: Which One Fits Your Goal",
     metaDescription: `Best computer courses after 12th in India 2026: matched to your actual career goal, not just the popular list. BCA, MCA pathway, certifications and more.`,
@@ -24737,24 +24638,24 @@ export const BLOG_POSTS: BlogPost[] = [
 <div style="overflow-x:auto;margin:1.5rem 0"><img src="/blog/blog05_computer_course_salary.svg" alt="Computer course salary comparison: fresher and 3-year experience ranges" loading="lazy" style="width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px" /></div>
 <p>These are ranges, not guarantees. Location matters. Bengaluru and Hyderabad pay significantly more than tier-2 cities for the same role. Skills matter too. A BCA graduate who knows cloud and Python well can earn more than a B.Tech graduate from a low-ranked college.</p>
 
-<h2>Computer Courses After 12th: Detailed Salary Map 2026</h2>
+<h2>Computer Courses After 12th: Duration and Fees 2026</h2>
 
 <table>
-  <caption>Computer course outcomes India 2026</caption>
-  <thead><tr><th>Course</th><th>Duration</th><th>Fees</th><th>Year 1 CTC</th><th>Year 5 CTC</th></tr></thead>
+  <caption>Computer courses after 12th India 2026</caption>
+  <thead><tr><th>Course</th><th>Duration</th><th>Fees</th></tr></thead>
   <tbody>
-    <tr><td>B.Tech CSE (tier-1 IIT or NIT)</td><td>4 years</td><td>Rs 4 to 10 lakh</td><td>Rs 18 to 40 LPA</td><td>Rs 35 to 80 LPA</td></tr>
-    <tr><td>B.Tech CSE (tier-2 private)</td><td>4 years</td><td>Rs 4 to 12 lakh</td><td>Rs 4 to 8 LPA</td><td>Rs 10 to 20 LPA</td></tr>
-    <tr><td>BCA (top university)</td><td>3 years</td><td>Rs 1.5 to 3 lakh</td><td>Rs 3 to 6 LPA</td><td>Rs 8 to 15 LPA</td></tr>
-    <tr><td>B.Sc Computer Science</td><td>3 years</td><td>Rs 60K to 2 lakh</td><td>Rs 3 to 6 LPA</td><td>Rs 8 to 14 LPA</td></tr>
-    <tr><td>Online BCA (UGC-DEB)</td><td>3 years</td><td>Rs 60K to 1.45 lakh</td><td>Rs 2.5 to 4 LPA (lateral)</td><td>Rs 7 to 12 LPA</td></tr>
-    <tr><td>DCA (Diploma)</td><td>6 to 12 months</td><td>Rs 5K to 30K</td><td>Rs 1.5 to 3 LPA</td><td>Rs 4 to 7 LPA</td></tr>
-    <tr><td>Polytechnic Diploma CS</td><td>3 years</td><td>Rs 60K to 1.5 lakh</td><td>Rs 2.5 to 4 LPA</td><td>Rs 6 to 10 LPA</td></tr>
-    <tr><td>Coursera plus Bootcamp (private)</td><td>6 to 18 months</td><td>Rs 1 to 5 lakh</td><td>Rs 4 to 10 LPA</td><td>Rs 10 to 20 LPA</td></tr>
+    <tr><td>B.Tech CSE (tier-1 IIT or NIT)</td><td>4 years</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>B.Tech CSE (tier-2 private)</td><td>4 years</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>BCA (top university)</td><td>3 years</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>B.Sc Computer Science</td><td>3 years</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>Online BCA (UGC-DEB)</td><td>3 years</td><td>Contact our counsellor</td></tr>
+    <tr><td>DCA (Diploma)</td><td>6 to 12 months</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>Polytechnic Diploma CS</td><td>3 years</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>Coursera plus Bootcamp (private)</td><td>6 to 18 months</td><td>Contact our counsellor</td></tr>
   </tbody>
 </table>
 
-<div class="callout-warning"><strong>Verify before paying:</strong> Salary ranges indicative based on NASSCOM 2026 hiring data plus AICTE outcome surveys. Actual outcomes depend on college tier, certification stacking, internship plus project portfolio quality.</div>
+<div class="callout-warning"><strong>Verify before paying:</strong> Talk to our counsellor for your intake’s fee. Actual outcomes depend on college tier, certification stacking, internship plus project portfolio quality.</div>
 
 <h2>Top Online BCA Programmes UGC-DEB Approved 2026</h2>
 
@@ -24856,7 +24757,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'courses-after-12th-science-complete-list-2026',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     title: 'Courses After 12th Science 2026: PCM and PCB Complete',
     h1Title: "Courses After 12th Science: The Full List for PCM and PCB Students",
     metaDescription: `Complete guide to courses after 12th Science in India 2026: PCM, PCB, PCMB options, admission routes, fees, and career outcomes explained honestly.`,
@@ -24897,17 +24798,17 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <table>
   <caption>PCM Top Courses Detailed 2026</caption>
-  <thead><tr><th>Course</th><th>Duration</th><th>Entrance</th><th>Year 1 CTC</th><th>Fees</th></tr></thead>
+  <thead><tr><th>Course</th><th>Duration</th><th>Entrance</th><th>Fees</th></tr></thead>
   <tbody>
-    <tr><td>B.Tech CSE (IIT, NIT)</td><td>4 years</td><td>JEE Main plus Advanced</td><td>Rs 15 to 40 LPA</td><td>Rs 4 to 10 lakh</td></tr>
-    <tr><td>B.Tech CSE (Tier-2 private)</td><td>4 years</td><td>JEE Main, state CET, college</td><td>Rs 4 to 8 LPA</td><td>Rs 4 to 12 lakh</td></tr>
-    <tr><td>B.Tech ECE, Mechanical, Civil</td><td>4 years</td><td>JEE, state CET</td><td>Rs 3 to 8 LPA</td><td>Rs 3 to 10 lakh</td></tr>
-    <tr><td>BCA</td><td>3 years</td><td>Profile-based, college CET</td><td>Rs 3 to 6 LPA</td><td>Rs 60K to 3 lakh</td></tr>
-    <tr><td>B.Sc Computer Science</td><td>3 years</td><td>College CET</td><td>Rs 3 to 5 LPA</td><td>Rs 60K to 2 lakh</td></tr>
-    <tr><td>B.Sc Physics or Mathematics</td><td>3 years</td><td>College admission</td><td>Rs 2.5 to 4 LPA (then MSc plus PhD)</td><td>Rs 40K to 1.5 lakh</td></tr>
-    <tr><td>B.Arch</td><td>5 years</td><td>NATA plus JEE Main Paper 2</td><td>Rs 3 to 6 LPA</td><td>Rs 4 to 8 lakh</td></tr>
-    <tr><td>B.Design (NID, NIFT)</td><td>4 years</td><td>NID DAT, NIFT entrance</td><td>Rs 4 to 8 LPA</td><td>Rs 5 to 10 lakh</td></tr>
-    <tr><td>BBA plus integrated CAT prep</td><td>3 years plus CAT</td><td>Profile, IPM at IIM</td><td>Rs 6 to 12 LPA (post-MBA)</td><td>Rs 1.5 to 5 lakh</td></tr>
+    <tr><td>B.Tech CSE (IIT, NIT)</td><td>4 years</td><td>JEE Main plus Advanced</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>B.Tech CSE (Tier-2 private)</td><td>4 years</td><td>JEE Main, state CET, college</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>B.Tech ECE, Mechanical, Civil</td><td>4 years</td><td>JEE, state CET</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>BCA</td><td>3 years</td><td>Profile-based, college CET</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>B.Sc Computer Science</td><td>3 years</td><td>College CET</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>B.Sc Physics or Mathematics</td><td>3 years</td><td>College admission</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>B.Arch</td><td>5 years</td><td>NATA plus JEE Main Paper 2</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>B.Design (NID, NIFT)</td><td>4 years</td><td>NID DAT, NIFT entrance</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>BBA plus integrated CAT prep</td><td>3 years plus CAT</td><td>Profile, IPM at IIM</td><td>Not tracked (campus programme)</td></tr>
   </tbody>
 </table>
 
@@ -24918,17 +24819,17 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <table>
   <caption>PCB Top Courses Detailed 2026</caption>
-  <thead><tr><th>Course</th><th>Duration</th><th>Entrance</th><th>Year 1 CTC (post-degree)</th><th>Fees</th></tr></thead>
+  <thead><tr><th>Course</th><th>Duration</th><th>Entrance</th><th>Fees</th></tr></thead>
   <tbody>
-    <tr><td>MBBS (Government)</td><td>5.5 years</td><td>NEET UG</td><td>Rs 7 to 15 LPA (post-internship)</td><td>Rs 25K to 1 lakh total</td></tr>
-    <tr><td>MBBS (Private)</td><td>5.5 years</td><td>NEET UG</td><td>Rs 7 to 15 LPA</td><td>Rs 50 lakh to 2 Cr-plus</td></tr>
-    <tr><td>BDS (Dental)</td><td>5 years</td><td>NEET UG</td><td>Rs 4 to 8 LPA</td><td>Rs 5 to 25 lakh</td></tr>
-    <tr><td>B.Pharm</td><td>4 years</td><td>NEET, JEE, state CET</td><td>Rs 3 to 6 LPA</td><td>Rs 3 to 10 lakh</td></tr>
-    <tr><td>B.Sc Nursing</td><td>4 years</td><td>NEET, state nursing entrance</td><td>Rs 3 to 6 LPA (India), Rs 20 to 60 LPA (abroad)</td><td>Rs 1 to 5 lakh</td></tr>
-    <tr><td>BAMS, BHMS, BUMS (AYUSH)</td><td>5.5 years</td><td>NEET UG</td><td>Rs 3 to 7 LPA</td><td>Rs 1 to 15 lakh</td></tr>
-    <tr><td>BPT (Physiotherapy)</td><td>4 to 4.5 years</td><td>State CET, NEET (some)</td><td>Rs 3 to 6 LPA</td><td>Rs 3 to 10 lakh</td></tr>
-    <tr><td>B.Sc Biotech, Microbiology, Biochem</td><td>3 years</td><td>College admission</td><td>Rs 2.5 to 5 LPA (then MSc plus PhD)</td><td>Rs 60K to 2 lakh</td></tr>
-    <tr><td>B.Sc Forensic Science</td><td>3 years</td><td>College admission</td><td>Rs 3 to 5 LPA</td><td>Rs 1 to 3 lakh</td></tr>
+    <tr><td>MBBS (Government)</td><td>5.5 years</td><td>NEET UG</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>MBBS (Private)</td><td>5.5 years</td><td>NEET UG</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>BDS (Dental)</td><td>5 years</td><td>NEET UG</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>B.Pharm</td><td>4 years</td><td>NEET, JEE, state CET</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>B.Sc Nursing</td><td>4 years</td><td>NEET, state nursing entrance</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>BAMS, BHMS, BUMS (AYUSH)</td><td>5.5 years</td><td>NEET UG</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>BPT (Physiotherapy)</td><td>4 to 4.5 years</td><td>State CET, NEET (some)</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>B.Sc Biotech, Microbiology, Biochem</td><td>3 years</td><td>College admission</td><td>Not tracked (campus programme)</td></tr>
+    <tr><td>B.Sc Forensic Science</td><td>3 years</td><td>College admission</td><td>Not tracked (campus programme)</td></tr>
   </tbody>
 </table>
 
@@ -24949,26 +24850,26 @@ export const BLOG_POSTS: BlogPost[] = [
 <a href="/universities" style="display:inline-block;background:#f59e0b;color:#000;padding:10px 22px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:8px">Explore All Programs</a>
 </div>
 
-<h2>Top Engineering Branches Salary Map India 2026 (PCM)</h2>
+<h2>Top Engineering Branches and Recruiters India 2026 (PCM)</h2>
 
 <table>
-  <caption>B.Tech branch salary outcomes India 2026 (tier-1 college)</caption>
-  <thead><tr><th>B.Tech Branch</th><th>Year 1 CTC</th><th>Year 5 CTC</th><th>Top Recruiters</th></tr></thead>
+  <caption>B.Tech branches and top recruiters India 2026 (tier-1 college)</caption>
+  <thead><tr><th>B.Tech Branch</th><th>Top Recruiters</th></tr></thead>
   <tbody>
-    <tr><td>CSE (Computer Science Engineering)</td><td>Rs 12 to 40 LPA</td><td>Rs 25 to 70 LPA</td><td>Google, Microsoft, Amazon, Adobe</td></tr>
-    <tr><td>AI plus ML (Artificial Intelligence)</td><td>Rs 14 to 35 LPA</td><td>Rs 28 to 60 LPA</td><td>OpenAI, Anthropic, Google AI, NVIDIA</td></tr>
-    <tr><td>ECE (Electronics and Communication)</td><td>Rs 6 to 15 LPA</td><td>Rs 12 to 28 LPA</td><td>Qualcomm, Texas Instruments, Intel, Samsung</td></tr>
-    <tr><td>EEE (Electrical and Electronics)</td><td>Rs 5 to 12 LPA</td><td>Rs 10 to 22 LPA</td><td>Siemens, ABB, L&T, NTPC</td></tr>
-    <tr><td>Mechanical</td><td>Rs 4 to 10 LPA</td><td>Rs 8 to 18 LPA</td><td>Maruti, Mahindra, Tata, L&T</td></tr>
-    <tr><td>Civil</td><td>Rs 4 to 9 LPA</td><td>Rs 8 to 16 LPA</td><td>L&T, Shapoorji, DLF, govt PWD</td></tr>
-    <tr><td>Chemical</td><td>Rs 5 to 11 LPA</td><td>Rs 10 to 20 LPA</td><td>Reliance, IOC, BPCL, Coromandel</td></tr>
-    <tr><td>Aerospace</td><td>Rs 5 to 12 LPA</td><td>Rs 12 to 25 LPA</td><td>ISRO, DRDO, HAL, Boeing India</td></tr>
-    <tr><td>Petroleum</td><td>Rs 8 to 18 LPA</td><td>Rs 15 to 32 LPA</td><td>ONGC, GAIL, Reliance, Shell</td></tr>
-    <tr><td>Biotech</td><td>Rs 4 to 8 LPA</td><td>Rs 9 to 16 LPA</td><td>Biocon, Serum, Dr Reddy's, AstraZeneca</td></tr>
+    <tr><td>CSE (Computer Science Engineering)</td><td>Google, Microsoft, Amazon, Adobe</td></tr>
+    <tr><td>AI plus ML (Artificial Intelligence)</td><td>OpenAI, Anthropic, Google AI, NVIDIA</td></tr>
+    <tr><td>ECE (Electronics and Communication)</td><td>Qualcomm, Texas Instruments, Intel, Samsung</td></tr>
+    <tr><td>EEE (Electrical and Electronics)</td><td>Siemens, ABB, L&T, NTPC</td></tr>
+    <tr><td>Mechanical</td><td>Maruti, Mahindra, Tata, L&T</td></tr>
+    <tr><td>Civil</td><td>L&T, Shapoorji, DLF, govt PWD</td></tr>
+    <tr><td>Chemical</td><td>Reliance, IOC, BPCL, Coromandel</td></tr>
+    <tr><td>Aerospace</td><td>ISRO, DRDO, HAL, Boeing India</td></tr>
+    <tr><td>Petroleum</td><td>ONGC, GAIL, Reliance, Shell</td></tr>
+    <tr><td>Biotech</td><td>Biocon, Serum, Dr Reddy's, AstraZeneca</td></tr>
   </tbody>
 </table>
 
-<div class="callout-warning"><strong>Verify before applying:</strong> Salary ranges indicative based on NIRF 2024-25 placement reports plus NASSCOM hiring data. Actual outcomes depend on college tier, internship plus project portfolio, and skill stacking.</div>
+<div class="callout-warning"><strong>Verify before applying:</strong> Actual outcomes depend on college tier, internship plus project portfolio, and skill stacking.</div>
 
 <h2>Medical Specialisations Most Sought After 2026 (PCB Career Path)</h2>
 
@@ -26559,7 +26460,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Career Guides',
     tags: ['commerce jobs india 2026', 'career after bcom india', 'commerce stream jobs list', 'ca salary india', 'mba after commerce', 'finance career india', 'bcom career options'],
     publishedAt: '2026-04-10',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     readTime: 9,
     targetKeyword: `commerce jobs india 2026`,
     relatedUniversities: ["jain-university-online","nmims-online"],
@@ -26571,15 +26472,15 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaDesc: `Explore all UGC DEB approved online degrees, MBA, MCA, BBA, BCA, <a href="/blog/career-after-bcom-jobs-salary-courses-2026" style="color:inherit;text-decoration:underline;text-underline-offset:2px">career after B.Com</a>, and find the right fit for your goals and budget.`,
     faqs: [
       { q: `What is the best job after B.Com in India in 2026?`, a: `By 10-year earnings, Chartered Accountant in audit/tax practice or as a corporate CFO is the highest commerce path (Rs 25 to 60 LPA by year 10). MBA Finance from a tier-1 institute is the second strongest (Rs 30 to 50 LPA by year 10). RBI Grade B Officer wins on stability plus pension. For B.Com graduates who do not want a postgraduate qualification, Bank PO or SSC CGL plateau around Rs 12 to 18 LPA by year 10. The right pick depends on whether you can invest 2-5 more years in a CA or MBA after graduation.` },
-      { q: `What is the realistic salary for a fresh B.Com graduate?`, a: `Rs 2.5 to 4 LPA in tier-2 cities for accounts assistant, junior auditor, or sales associate roles. Rs 3 to 5 LPA in metros for the same roles. Rs 4 to 7 LPA if you have additional certifications (Tally with GST, Advanced Excel, basic SQL) or join a Big 4 audit firm at the entry level. The Indian Staffing Federation 2026 report shows the median fresher B.Com salary at Rs 3.6 LPA.` },
+      { q: `What is the realistic salary for a fresh B.Com graduate?`, a: `Rs 2.5 to 4 LPA in tier-2 cities for accounts assistant, junior auditor, or sales associate roles. Rs 3 to 5 LPA in metros for the same roles. Rs 4 to 7 LPA if you have additional certifications (Tally with GST, Advanced Excel, basic SQL) or join a Big 4 audit firm at the entry level.` },
       { q: `Which is better after B.Com, CA or MBA?`, a: `CA wins on depth, lower upfront fees (Rs 1.5 to 2 lakh total), and corporate finance career ceiling. MBA wins on speed (2 years versus 4-5 for CA), broader role options, and lateral movement into consulting or product management. Both can be combined. The right pick depends on three things: whether you tolerate exam-heavy multi-year study (CA), whether you can afford Rs 15-30 LPA opportunity cost (full-time MBA), and whether your target role is in numbers (CA) or general management (MBA).` },
       { q: `Can commerce students become IAS officers in 2026?`, a: `Yes. UPSC Civil Services is open to graduates from any stream. Commerce graduates have a slight edge in the optional papers Public Administration, Commerce and Accountancy, or Economics. The UPSC topper analysis for 2024-25 shows 18 percent of successful candidates had a commerce background. The bigger lever is preparation hours and a coaching strategy, not stream.` },
       { q: `Are commerce jobs better in metros or tier-2 cities?`, a: `Metros pay 30 to 50 percent more in absolute numbers but cost of living eats most of the difference. A Rs 6 LPA accountant in Bengaluru takes home roughly the same as a Rs 4 LPA accountant in Indore once rent, transport, and food are accounted for. The real metro advantage is career velocity, not salary: faster promotions, more job-changing options, exposure to MNC processes. For long-term wealth, the Tier-2 path with disciplined saving often outperforms.` },
       { q: `Which commerce career has the highest 10-year salary ceiling?`, a: `Chartered Accountant in CFO track at a listed company can reach Rs 80 LPA to Rs 2 Cr by year 12-15. Investment banking with an MBA Finance from IIM or ISB tops out at Rs 1.5 to 4 Cr at Director level. Both are outliers. The realistic top quartile for commerce graduates with full investment in a postgraduate qualification is Rs 35 to 60 LPA at year 10, across CA, MBA Finance, and senior PSU bank roles.` }
     ],
-    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, edifyedu.in. Salary ranges sourced from Indian Staffing Federation 2026 report, NIRF 2024 placement disclosures, IBPS and RBI 2025 notifications, and ICAI member survey 2025.</em></p>
+    content: `<p style="font-size:13px;color:#64748b;margin:0 0 20px"><em>Last updated 14 May 2026 by Rishi Kumar, Senior Education Researcher and Founder, edifyedu.in.</em></p>
 
-<p>Most "commerce jobs" lists give you starting salaries and stop there. That is the wrong number to optimise for. The right number is what each career pays at year 1, year 5, and year 10, and where it hits a ceiling without a postgraduate qualifier. This guide answers that for the 14 most common commerce career paths in India for 2026, with sourced salary data and the trade-offs nobody else tells you about.</p>
+<p>Most "commerce jobs" lists give you starting salaries and stop there. That is the wrong number to optimise for. The right number is what each career pays at year 1, year 5, and year 10, and where it hits a ceiling without a postgraduate qualifier. This guide answers that for the 14 most common commerce career paths in India for 2026, with the trade-offs nobody else tells you about.</p>
 
 <p>Written for: Class 12 commerce students choosing a career direction, B.Com final-year students deciding next steps, and parents trying to sanity-check what they hear from coaching centres.</p>
 
@@ -26605,43 +26506,25 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p><em>Takeaway: pick your stream first, then pick the role. Most career mistakes happen when a student joins a Tier 2 role and discovers the ceiling at year 5.</em></p>
 
-<h2>Chartered Accountant: The Real 10-Year Curve</h2>
+<h2>Chartered Accountant: The Path and the Trade-offs</h2>
 
-<p>CA is the highest commerce ceiling in India, but the average reality is more pedestrian than coaching centres advertise. The 2025 ICAI member survey shows the following pay distribution for chartered accountants.</p>
+<p>CA is the highest commerce ceiling in India, but the average reality is more pedestrian than coaching centres advertise. Pay depends heavily on where a CA works and for how long.</p>
 
-<table>
-  <caption>CA salary curve in India by years post-qualification (ICAI 2025 data)</caption>
-  <thead><tr><th>Years post-CA</th><th>Median (private practice)</th><th>Median (corporate)</th><th>Top decile (corporate)</th></tr></thead>
-  <tbody>
-    <tr><td>0 to 2 years</td><td>Rs 6 to 9 LPA</td><td>Rs 8 to 12 LPA</td><td>Rs 18 to 25 LPA (Big 4)</td></tr>
-    <tr><td>3 to 5 years</td><td>Rs 12 to 18 LPA</td><td>Rs 14 to 22 LPA</td><td>Rs 28 to 40 LPA</td></tr>
-    <tr><td>6 to 10 years</td><td>Rs 20 to 35 LPA</td><td>Rs 25 to 45 LPA</td><td>Rs 50 to 80 LPA</td></tr>
-    <tr><td>10-plus years</td><td>Rs 30 LPA to 1 Cr (partner)</td><td>Rs 40 to 80 LPA (Director, VP Finance)</td><td>Rs 1 to 3 Cr (CFO listed firm)</td></tr>
-  </tbody>
-</table>
 
-<p>The path looks straightforward but isn't. CA Foundation to Final takes a median of 4.5 years according to ICAI 2024 pass rate data. About 60 percent of students drop out at the Intermediate stage. The opportunity cost during those 4 to 5 years (when peers are earning) is real.</p>
+
+<p>The path looks straightforward but isn't. CA Foundation to Final takes several years, and many students drop out at the Intermediate stage. The opportunity cost during those years (when peers are earning) is real.</p>
 
 <p>What nobody tells you: CA in private practice and CA in corporate are two different careers. Practice partners earn more after year 10 but build slowly. Corporate CAs hit Rs 20 LPA faster but plateau unless they move to CFO track. Pick deliberately, not by default.</p>
 
 <div class="callout-warning"><strong>The CA articleship gap:</strong> CA articleship pays Rs 5,000 to 25,000 per month for 3 years. If you cannot self-fund this period, factor a Rs 3 to 8 lakh family support requirement into the CA decision.</div>
 
-<h2>MBA Finance: The Brand Multiplier</h2>
+<h2>MBA Finance: Why the Brand Matters</h2>
 
-<p>MBA Finance salary depends almost entirely on which MBA. The gap between an IIM-A Finance MBA and a Tier-3 MBA can be 5x at year 1 and 8x by year 5. The 2025 NIRF placement reports show this clearly.</p>
+<p>MBA Finance salary depends almost entirely on which MBA. The gap between an IIM-A Finance MBA and a Tier-3 MBA can be wide at year 1, and it often grows with experience. NIRF publishes a median graduate salary for each ranked institute, so compare those figures for the institutes on your list.</p>
 
-<table>
-  <caption>MBA Finance salary by institute tier in India 2026</caption>
-  <thead><tr><th>Institute tier</th><th>Year 1 CTC</th><th>Year 5 CTC</th><th>Year 10 CTC</th></tr></thead>
-  <tbody>
-    <tr><td>IIM A/B/C, ISB, XLRI Finance</td><td>Rs 28 to 35 LPA</td><td>Rs 45 to 70 LPA</td><td>Rs 80 LPA to 2 Cr</td></tr>
-    <tr><td>IIM Tier 2 (L, K, I, S), MDI, FMS, JBIMS</td><td>Rs 18 to 26 LPA</td><td>Rs 32 to 50 LPA</td><td>Rs 55 to 90 LPA</td></tr>
-    <tr><td>Tier 1 private (SP Jain, IIFT, NMIMS, SIBM)</td><td>Rs 12 to 18 LPA</td><td>Rs 22 to 35 LPA</td><td>Rs 40 to 65 LPA</td></tr>
-    <tr><td>UGC-DEB online MBA from NAAC A+ university</td><td>Rs 5 to 9 LPA (with prior exp)</td><td>Rs 12 to 20 LPA</td><td>Rs 22 to 38 LPA</td></tr>
-  </tbody>
-</table>
 
-<p>The honest read: a tier-1 campus MBA gives you the highest expected value, but at Rs 25 to 30 lakh fees plus 2 years of foregone income (Rs 8 to 15 lakh), total investment is Rs 40 to 50 lakh. A UGC-DEB approved online MBA from a NAAC A+ university like <a href="/universities/jain-university-online" class="ilink">JAIN Online</a> or <a href="/universities/nmims-online" class="ilink">NMIMS Online</a> costs Rs 1.5 to 2.2 lakh and lets you keep earning. Lower ceiling, but the ROI calculation often favours the online route for working B.Com graduates who already have 2 to 3 years of experience.</p>
+
+<p>The honest read: a tier-1 campus MBA gives you the highest expected value, but its fees plus 2 years of foregone income make it a far larger investment. A UGC-DEB approved online MBA from a NAAC A+ university like <a href="/universities/jain-university-online" class="ilink">JAIN Online</a> or <a href="/universities/nmims-online" class="ilink">NMIMS Online</a> costs Rs 1.5 to 2.2 lakh and lets you keep earning. Lower ceiling, but the ROI calculation often favours the online route for working B.Com graduates who already have 2 to 3 years of experience.</p>
 
 <h2>Banking and PSU: Stable, Pensioned, Capped</h2>
 
@@ -26664,7 +26547,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p><strong>UPSC Civil Services for commerce graduates:</strong> Indian Revenue Service (IRS) is the natural commerce-aligned posting. IRS officers handle Income Tax and GST departments. Starting pay (after probation) is Rs 56,100 plus allowances, roughly Rs 12 to 14 LPA total. Year 10 (Joint Commissioner) is Rs 25 to 30 LPA. The non-monetary perks (housing, transport, social standing) are the real return.</p>
 
-<p><strong>SSC CGL for commerce graduates:</strong> Tax Assistant, Auditor, Junior Accountant, and Income Tax Inspector are the four commerce-aligned posts. Starting pay Rs 5 to 6 LPA in metro postings. The career grows to Rs 12 to 16 LPA by year 15 with internal promotions to Assistant Commissioner-grade roles. Lower ceiling than UPSC, but the entry exam is 4x more accessible.</p>
+<p><strong>SSC CGL for commerce graduates:</strong> Tax Assistant, Auditor, Junior Accountant, and Income Tax Inspector are the four commerce-aligned posts. Starting pay Rs 5 to 6 LPA in metro postings. The career grows to Rs 12 to 16 LPA by year 15 with internal promotions to Assistant Commissioner-grade roles. Lower ceiling than UPSC, but the entry exam is more accessible.</p>
 
 <p><strong>Specialist cadres (RBI Grade B, SEBI Grade A, NABARD Grade A, IBPS SO):</strong> RBI Grade B in particular is often called "the IAS of finance" among coaching circles. The 2025 RBI notification had 222 vacancies against 2.3 lakh applicants, but the recruitment is annual and cumulative.</p>
 
@@ -26674,28 +26557,21 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <table>
   <caption>Fast-growth commerce-adjacent careers India 2026</caption>
-  <thead><tr><th>Role</th><th>Entry qualification</th><th>Year 1</th><th>Year 5</th></tr></thead>
+  <thead><tr><th>Role</th><th>Entry qualification</th></tr></thead>
   <tbody>
-    <tr><td>Data analyst (BFSI)</td><td>B.Com plus SQL, Python, Power BI cert</td><td>Rs 4 to 7 LPA</td><td>Rs 12 to 20 LPA</td></tr>
-    <tr><td>FP&amp;A associate</td><td>B.Com plus advanced Excel, financial modelling</td><td>Rs 5 to 8 LPA</td><td>Rs 14 to 22 LPA</td></tr>
-    <tr><td>Fintech operations analyst</td><td>B.Com plus product-finance certification</td><td>Rs 5 to 9 LPA</td><td>Rs 15 to 24 LPA</td></tr>
-    <tr><td>GST consultant (independent)</td><td>B.Com plus GST practitioner cert</td><td>Rs 3 to 6 LPA</td><td>Rs 10 to 18 LPA (own practice)</td></tr>
-    <tr><td>ESG and sustainability analyst</td><td>B.Com plus ESG certificate (CFA Institute or NSE Academy)</td><td>Rs 6 to 10 LPA</td><td>Rs 16 to 28 LPA</td></tr>
+    <tr><td>Data analyst (BFSI)</td><td>B.Com plus SQL, Python, Power BI cert</td></tr>
+    <tr><td>FP&amp;A associate</td><td>B.Com plus advanced Excel, financial modelling</td></tr>
+    <tr><td>Fintech operations analyst</td><td>B.Com plus product-finance certification</td></tr>
+    <tr><td>GST consultant (independent)</td><td>B.Com plus GST practitioner cert</td></tr>
+    <tr><td>ESG and sustainability analyst</td><td>B.Com plus ESG certificate (CFA Institute or NSE Academy)</td></tr>
   </tbody>
 </table>
 
 <p>The pattern: a B.Com plus a specific Rs 25,000 to 60,000 certification opens roles that pay 30 to 50 percent more than generic accounts roles. The certification matters more than the college brand in this stream.</p>
 
-<h2>The City Multiplier Nobody Models</h2>
+<h2>How Your City Changes the Picture</h2>
 
-<p>The same job pays different amounts in different cities. The Indian Staffing Federation 2026 data shows the actual multiplier.</p>
-
-<ul>
-  <li>Bengaluru, Mumbai, Gurgaon: 1.4x base salary, but 1.5x cost of living. Real wealth gain: about the same or slightly lower than Tier 2.</li>
-  <li>Hyderabad, Pune, Chennai: 1.2x base salary, 1.2x cost of living. Net wash, but better career velocity.</li>
-  <li>Tier-2 (Indore, Jaipur, Lucknow, Coimbatore, Vadodara): 1.0x base, 0.7x cost. Highest real saving rate, slower career growth.</li>
-  <li>Tier-3 and remote roles: 0.8x base, 0.5x cost. Best for early-career savings if remote work is available.</li>
-</ul>
+<p>The same job pays different amounts in different cities, and living costs differ just as much. A metro salary premium is often offset by rent, so compare take-home pay after housing, not the headline figure.</p>
 
 <p>For a B.Com graduate optimising for long-term wealth (down payment on a house, FIRE target), starting in a Tier-2 city for 5 years and moving to a metro later is often the right play. The metro premium is mostly absorbed by rent.</p>
 
@@ -26736,7 +26612,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Three things to verify before acting on any salary number above.</p>
 
 <ul>
-  <li>City-level variance is wider than the table averages. Mumbai BFSI roles often pay 20 percent more than the Indian Staffing Federation median; Tier-3 government roles may pay less in early years before regularisation.</li>
+  <li>City-level variance is wide. Metro BFSI roles often pay more than the same role elsewhere; Tier-3 government roles may pay less in early years before regularisation.</li>
   <li>The 2026 fee figures for CA, MBA, and certifications are current as of May 2026. Talk to our counsellor (icai.org, target university portal) before paying.</li>
   <li>NPS versus OPS distinctions in government jobs depend on your specific recruitment year. Confirm at the time of joining.</li>
 </ul>
@@ -30905,7 +30781,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Career Guides',
     tags: ['mba full form','what is mba','mba course details','mba eligibility','mba fees','mba specializations','mba salary india'],
     publishedAt: '2026-04-26',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     readTime: 12,
     targetKeyword: 'mba full form',
     author: 'Rishi Kumar',
@@ -31110,59 +30986,48 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr>
       <th>Specialization</th>
       <th>Best For</th>
-      <th>Avg Salary Range (LPA)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><a href="/programs/mba/finance" class="ilink">Finance</a></td>
       <td>Analytical thinkers, number-oriented people</td>
-      <td>6 - 20 LPA</td>
     </tr>
     <tr>
       <td><a href="/programs/mba/marketing" class="ilink">Marketing</a></td>
       <td>Creative, people-oriented professionals</td>
-      <td>5 - 18 LPA</td>
     </tr>
     <tr>
       <td><a href="/programs/mba/human-resource-management" class="ilink">Human Resources (HR)</a></td>
       <td>People managers, policy-oriented roles</td>
-      <td>4 - 14 LPA</td>
     </tr>
     <tr>
       <td>Operations Management</td>
       <td>Process-driven, logistics, manufacturing</td>
-      <td>5 - 15 LPA</td>
     </tr>
     <tr>
       <td><a href="/programs/mba/data-science" class="ilink">Data Science and AI</a></td>
       <td>Tech-savvy, analytics, AI enthusiasts</td>
-      <td>7 - 22 LPA</td>
     </tr>
     <tr>
       <td>International Business</td>
       <td>Export/import, global operations</td>
-      <td>5 - 16 LPA</td>
     </tr>
     <tr>
       <td>Healthcare Management</td>
       <td>Hospital administration, pharma, health-tech</td>
-      <td>4 - 12 LPA</td>
     </tr>
     <tr>
       <td>IT Management</td>
       <td>Tech professionals moving into management</td>
-      <td>6 - 18 LPA</td>
     </tr>
     <tr>
       <td>Supply Chain Management</td>
       <td>Logistics, e-commerce, warehousing</td>
-      <td>5 - 14 LPA</td>
     </tr>
     <tr>
       <td>Digital Marketing</td>
       <td>Content, SEO, social media, brand strategy</td>
-      <td>4 - 15 LPA</td>
     </tr>
   </tbody>
 </table>
@@ -31279,70 +31144,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Let me set realistic expectations. The INR 1 crore salary packages you see in news headlines represent the top 1% of IIM graduates. The reality for most MBA holders looks quite different.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Tier</th>
-      <th>Salary Range (LPA)</th>
-      <th>Examples</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>IIMs and Top 10 B-Schools</td>
-      <td>15 - 25+ LPA</td>
-      <td>IIM A/B/C, XLRI, ISB</td>
-    </tr>
-    <tr>
-      <td>Top Private B-Schools</td>
-      <td>8 - 15 LPA</td>
-      <td>NMIMS, SPJIMR, MDI, SIBM</td>
-    </tr>
-    <tr>
-      <td>Tier 2 Colleges and Online MBA</td>
-      <td>4 - 10 LPA</td>
-      <td>State universities, UGC-DEB online programs</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>Salary by Specialization</h3>
-<table>
-  <thead>
-    <tr>
-      <th>Specialization</th>
-      <th>Entry Level (LPA)</th>
-      <th>Mid-Career (LPA)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Finance</td>
-      <td>5 - 8</td>
-      <td>12 - 25</td>
-    </tr>
-    <tr>
-      <td>Data Science/AI</td>
-      <td>6 - 10</td>
-      <td>15 - 28</td>
-    </tr>
-    <tr>
-      <td>Marketing</td>
-      <td>4 - 7</td>
-      <td>10 - 20</td>
-    </tr>
-    <tr>
-      <td>HR</td>
-      <td>3.5 - 6</td>
-      <td>8 - 15</td>
-    </tr>
-    <tr>
-      <td>Operations</td>
-      <td>4 - 7</td>
-      <td>10 - 18</td>
-    </tr>
-  </tbody>
-</table>
+<p>Salaries vary by employer, city and experience; check current postings and the employer's own pay data.</p>
 
 <p>Your salary after MBA depends on three things: the college brand, your specialization, and your prior work experience. An online MBA will not give you an IIM-level starting package. But if you already have 3-5 years of work experience and add an MBA, you become eligible for managerial roles that pay significantly more.</p>
 
