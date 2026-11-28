@@ -53,7 +53,7 @@ import QuickFactsCard     from './QuickFactsCard'
 import AssuredMarquee    from './AssuredMarquee'
 import RequestSyllabusCard from './RequestSyllabusCard'
 import { UniversityVideo } from './YouTubeVideo'
-import { getExactFee, formatExactFee } from '@/lib/fees'
+import { getExactFee, formatExactFee, feeAnswerSentences } from '@/lib/fees'
 import { feeSentence, emiSentence, programmeEmiFrom, NO_PROGRAMME_EMI, programmeEligibility } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { splitParagraph } from '@/lib/split-paragraphs'
@@ -341,10 +341,15 @@ export default function UniSpecBody({ u, program, programSlug, spec, specSlug, p
   const ownSemester = ownPlan?.rows.find(r => /semester/i.test(r.mode))?.total
   const specFeeText = ownOneTime
     ? `₹${ownOneTime.toLocaleString('en-IN')} paid one-time${ownSemester ? `, or ₹${ownSemester.toLocaleString('en-IN')} paid by semester` : ''}`
-    : formatExactFee(getExactFee(u, program as Program))
+    : null
+  // QA 2026-11-28 (F1, F2): the programme fee goes through feeAnswerSentences,
+  // which keeps a tuition-only or multi-route fee's label instead of "Total fee is".
+  const specFeeAnswer = specFeeText
+    ? `Total fee is ${specFeeText}.`
+    : feeAnswerSentences(getExactFee(u, program as Program), { u, program: program as Program })
   const templateFaqs: { q: string; a: string }[] = [
     { q: `Is ${cleanName} Online ${program} in ${spec} valid for jobs?`, a: debBasis(u.id) ? `${debBasis(u.id)!.sentence}${u.naac ? ` It is NAAC ${u.naac} accredited.` : ''} Confirm in writing that the degree meets the recognition your employer asks for.` : `Yes. ${cleanName} is UGC DEB approved${u.naac ? ` and NAAC ${u.naac} accredited` : ''}. The degree is identical to an on-campus degree.` },
-    { q: `What is the fee for ${program} ${spec} at ${cleanName}?`, a: `${specFeeText ? `Total fee is ${specFeeText}.` : 'The fee for the current intake is not published on this page yet.'} ${emiSentence(ownPlan?.rows.find(r => /emi/i.test(r.mode))?.instalment ?? programmeEmiFrom(u, program), program === 'MBA' ? undefined : NO_PROGRAMME_EMI)}` },
+    { q: `What is the fee for ${program} ${spec} at ${cleanName}?`, a: `${specFeeAnswer ?? 'The fee for the current intake is not published on this page yet.'} ${emiSentence(ownPlan?.rows.find(r => /emi/i.test(r.mode))?.instalment ?? programmeEmiFrom(u, program), program === 'MBA' ? undefined : NO_PROGRAMME_EMI)}` },
     { q: `Can I work while doing ${program} in ${spec} from ${cleanName}?`, a: `Yes. Live sessions on weekends, recordings available 24/7. ${isExamModeUnknown(u) ? examUnknownLine(u) : isExamCentre(u) ? EXAM_CENTRE_LINE : isExamFromHome(u) ? `${u.examMode} assessments. No campus visits required.` : `${u.examMode} assessments.`}` },
     { q: `What career opportunities does ${spec} specialisation offer?`, a: specContent?.careerBeginner?.length ? `${specContent.careerBeginner[0]?.title} and other roles.` : pd.avgSalary ? `Graduates typically enter ${spec}-related roles with salary ranges of ${pd.avgSalary} depending on experience.` : `Graduates typically enter ${spec}-related roles.` },
     { q: `What syllabus is covered in ${spec} specialisation?`, a: specContent?.skills?.length ? `Key areas include: ${specContent.skills.slice(0, 5).join(', ')}.` : `The specialisation covers core ${spec} subjects along with project work and industry case studies.` },

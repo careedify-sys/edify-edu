@@ -111,7 +111,7 @@ export interface University {
    * verify sheet. Printed as their own rows and never added into a total
    * (B3 batch 2, 2026-11-18).
    */
-  feeExtras?: { mba?: { label: string; amount: number; per?: string }[]; source: string; checkedOn: string }
+  feeExtras?: { mba?: { label: string; amount: number; per?: string }[]; bba?: { label: string; amount: number; per?: string }[]; source: string; checkedOn: string }
   nirfCategory?: string    // e.g. "Management"
   /**
    * Internal and end-semester weighting as the university publishes it, or
@@ -1276,6 +1276,27 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     feeMin: 176000,
     feeMax: 260000,
     emiFrom: 0,
+    // BBA, read 2026-11-28 on onlineamrita.com, the portal amrita.edu/ahead/bba
+    // redirects to (audits/verify/bba-fees-mahe-amrita-2026-11-28.md). Rs
+    // 1,41,000 is "Total Tuition Fee" for Indian students; registration Rs 700
+    // (one-time) and examination Rs 2,750 a semester are charged on top and are
+    // never added in. The foreign-national Rs 1,68,000 is not used.
+    feeBreakdown: {
+      bba: {
+        list: 141000,
+        listLabel: 'total tuition, Indian students',
+        perSemester: { list: 23500, listLabel: 'tuition per semester' },
+        source: 'onlineamrita.com/program/bachelor-of-business-administration, read 2026-11-28',
+      },
+    },
+    feeExtras: {
+      bba: [
+        { label: 'Registration fee', amount: 700, per: 'one-time' },
+        { label: 'Examination fee', amount: 2750, per: 'per semester' },
+      ],
+      source: 'onlineamrita.com/program/bachelor-of-business-administration, read 2026-11-28',
+      checkedOn: '2026-11-28',
+    },
     eligibility: 'Graduation with 50% marks from recognized university',
     eligibilityPct: 50,
     tagline: 'NAAC A++ accredited · UGC DEB approved online programs',
@@ -1308,7 +1329,7 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['Banking & Fintech', 'Data Analytics', 'Digital Marketing', 'International Finance (ACCA)'],
-        fees: '₹165K – ₹165K',
+        fees: '₹1,41,000',
         duration: '3 Years',
         roles: ['Management Trainee', 'Business Analyst', 'Operations Executive'],
         avgSalary: '',
@@ -2689,6 +2710,29 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
     programFees: { mca: { fee: 220000 } },
     // MBA total as read from the portal on feeVerifiedOn. No payment-mode split on record.
     feePlans: { mba: [{ id: 'standard', label: 'Online MBA', rows: [{ mode: 'Programme fee', total: 292000 }], source: 'onlinemanipal.com, read 2026-10-06', checkedOn: '2026-10-06' }] },
+    // BBA, read 2026-11-28 (audits/verify/bba-fees-mahe-amrita-2026-11-28.md).
+    // INR 1,80,000 for 6 semesters "inclusive of all taxes"; Honours INR
+    // 2,40,000 for 8 semesters; INR 30,000 a semester. The INR 1,71,000 "full
+    // fee payment" price is left out: the page prints it under the Honours
+    // heading against the 6-semester figure, so which route it belongs to is
+    // ambiguous. The INR 1,500 application fee is charged on top, never added in.
+    feeBreakdown: {
+      bba: {
+        list: 180000,
+        listLabel: '6 semesters, inclusive of all taxes',
+        modes: [
+          { amount: 180000, label: 'BBA, 6 semesters, inclusive of all taxes' },
+          { amount: 240000, label: 'BBA Honours, 8 semesters' },
+        ],
+        perSemester: { list: 30000 },
+        source: 'onlinemanipal.com/online-bba-honors-mahe and /online-bba-mahe, read 2026-11-28',
+      },
+    },
+    feeExtras: {
+      bba: [{ label: 'Application fee', amount: 1500, per: 'one-time, non-refundable' }],
+      source: 'onlinemanipal.com/online-bba-honors-mahe, read 2026-11-28',
+      checkedOn: '2026-11-28',
+    },
     logo: '/logos/university_logos/mahe-manipal-online-logo.svg',
     name: 'Manipal Academy of Higher Education (MAHE) Online',
     abbr: 'MAHEO',
@@ -2743,8 +2787,11 @@ const UNIVERSITIES_RAW: (Omit<University, 'highlight'>)[] = [
 
       'BBA': {
         specs: ['General Management'],
-        fees: '₹168K – ₹224K',
-        duration: '3 Years (Hons) / 4 Years (Hons with Research)',
+        fees: '₹1,80,000 – ₹2,40,000',
+        // 2026-11-28 (QA F2): the portal prices the BBA at 6 semesters and the
+        // BBA (Honours) at 8 semesters, 4 years (audits/verify/bba-fees-mahe-amrita-2026-11-28.md
+        // rows 1-4). The old "3 Years (Hons) / 4 Years (Hons with Research)" put Honours on the 3-year route.
+        duration: '3 Years (BBA, 6 semesters) / 4 Years (BBA Honours, 8 semesters)',
         roles: ['Business Development', 'Marketing Executive', 'HR Trainee', 'Finance Analyst', 'Startup Founder'],
         avgSalary: '',
         topCompanies: ['TCS', 'Infosys', 'Wipro', 'HCL', 'Cognizant', 'Accenture', 'IBM', 'HDFC Bank', 'ICICI Bank', 'Axis Bank'],

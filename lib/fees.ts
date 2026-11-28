@@ -403,6 +403,90 @@ export function formatExactFeeDetail(e: ExactFee): string | null {
  * labelled fee contributes its list price only, so a discounted net never
  * becomes the floor of a range it carries no label in.
  */
+/**
+ * Charges a verify sheet records as paid on top of the programme fee
+ * (u.feeExtras), for this programme only. An MBA charge never reaches a
+ * BBA page. Never added into a fee figure.
+ */
+export function getFeeExtras(u: University, program: Program): { label: string; amount: number; per?: string }[] {
+  if (program === 'MBA') return u.feeExtras?.mba ?? []
+  if (program === 'BBA') return u.feeExtras?.bba ?? []
+  return []
+}
+
+/** "registration fee and examination fee are charged separately", or null. Labels only, no rupees. */
+function extrasClause(u: University, program: Program, verb: 'are' | ''): string | null {
+  const labels = getFeeExtras(u, program).map(x => x.label.toLowerCase())
+  if (!labels.length) return null
+  const list = labels.length === 1 ? labels[0] : `${labels.slice(0, -1).join(', ')} and ${labels[labels.length - 1]}`
+  const plural = labels.length > 1
+  return verb ? `${list} ${plural ? 'are' : 'is'} charged separately` : `${list} charged separately`
+}
+
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1)
+
+/**
+ * True when the fee carries a label that says what the figure is (tuition
+ * only, one route of several, list vs net). Such a figure must never be
+ * printed as a bare "total fee" (QA 2026-11-28, F1: Amrita's tuition-only
+ * ₹1,41,000 read "Total programme fee is ₹1,41,000").
+ */
+export function isLabelledFee(e: ExactFee): boolean {
+  return e.kind === 'labelled' && !!(e.breakdown.modes?.length || e.breakdown.net || e.breakdown.listLabel)
+}
+
+/**
+ * The fee with its label, for a fee table row or a schema description.
+ * Same as formatExactFee, except that a list-only breakdown keeps its
+ * listLabel ("₹1,41,000 total tuition, Indian students") and each payment
+ * route reads "₹X (<label>)", so the labels never run into each other.
+ * Separately charged extras (labels only) follow after a semicolon.
+ */
+export function formatLabelledFee(e: ExactFee, u?: University, program?: Program): string | null {
+  if (e.kind !== 'labelled') return formatExactFee(e)
+  const b = e.breakdown
+  const main = b.modes?.length
+    ? b.modes.map(m => `${fmtIndianFull(m.amount)} (${m.label})`).join('; ')
+    : b.net
+      ? `${fmtIndianFull(b.list)} ${b.listLabel ?? 'list'}; ${rupees(b.net.min, b.net.max)} ${b.net.label}`
+      : b.listLabel ? `${fmtIndianFull(b.list)} ${b.listLabel}` : fmtIndianFull(b.list)
+  const extras = u && program ? extrasClause(u, program, '') : null
+  return extras ? `${main}; ${extras}` : main
+}
+
+/**
+ * The fee answer for an FAQ, as whole sentences, or null when no fee is on
+ * record. An unlabelled fee keeps the old wording ("Total programme fee is X
+ * across D." on a hub, "Total fee is X." on a spec page). A labelled fee
+ * never says "total": each payment route is its own sentence and the
+ * duration clause is dropped, because the route labels carry their own
+ * semesters; a list-only fee prints its label. Extras charged on top are
+ * named (labels only) and never added in.
+ */
+export function feeAnswerSentences(
+  e: ExactFee,
+  opts: { u: University; program: Program; duration?: string },
+): string | null {
+  const text = formatExactFee(e)
+  if (!text) return null
+  const extras = extrasClause(opts.u, opts.program, 'are')
+  const tail = extras ? ` ${cap(extras)}.` : ''
+  if (!isLabelledFee(e) || e.kind !== 'labelled') {
+    const main = opts.duration ? `Total programme fee is ${text} across ${opts.duration}.` : `Total fee is ${text}.`
+    return `${main}${tail}`
+  }
+  const b = e.breakdown
+  let main: string
+  if (b.modes?.length) {
+    main = b.modes.map((m, i) => `${i === 0 ? 'The fee is' : 'It is'} ${fmtIndianFull(m.amount)} (${m.label}).`).join(' ')
+  } else if (b.net) {
+    main = `The fee is ${fmtIndianFull(b.list)} ${b.listLabel ?? 'list'}, or ${rupees(b.net.min, b.net.max)} ${b.net.label}.`
+  } else {
+    main = `The fee is ${fmtIndianFull(b.list)} (${b.listLabel})${opts.duration ? ` across ${opts.duration}` : ''}.`
+  }
+  return `${main}${tail}`
+}
+
 export function exactFeeBounds(e: ExactFee): { min: number; max: number } | null {
   if (e.kind === 'none') return null
   if (e.kind === 'labelled' && e.breakdown.modes?.length) {

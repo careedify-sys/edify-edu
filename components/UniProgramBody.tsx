@@ -10,7 +10,7 @@ import { getShortUniversityName } from '@/lib/format'
 import { COUPONS } from '@/lib/coupons'
 import type { Program } from '@/lib/data'
 import { getPageContent } from '@/lib/data/page-content'
-import { getExactFee, formatExactFee, FEE_COUNSELLOR_LINE } from '@/lib/fees'
+import { getExactFee, formatExactFee, feeAnswerSentences, isLabelledFee, FEE_COUNSELLOR_LINE } from '@/lib/fees'
 import { nirfForProgramme } from '@/lib/data-slim'
 import type { PageContent } from '@/lib/data/page-content-schema'
 
@@ -187,15 +187,18 @@ export default function UniProgramBody({ u, program, programSlug, pd, customH1, 
   // getDisplayFee resolves the fee for this programme.
   // Exact rupees via getExactFee. getDisplayFee's range was parsed from
   // abbreviated pd.fees, so the LPU MBA FAQ said "₹1,61,000 to ₹2,00,000".
-  const feeStr = formatExactFee(getExactFee(u, program))
+  // QA 2026-11-28 (F1, F2): a labelled fee (tuition only, or several payment
+  // routes) is never called a total and never spliced into the template.
+  const exactFee = getExactFee(u, program)
+  const feeAnswer = feeAnswerSentences(exactFee, { u, program, duration: pd.duration || '2 years' })
   // Was "a NIRF rank of #22" from u.nirf on every programme, so the MBA FAQ gave
   // Amity's University rank with no category. Management first for MBA/BBA.
   const nirfLabel = nirfForProgramme(u, program)
   const nirfSuffix = nirfLabel ? ` and a ${nirfLabel} rank` : ''
 
   const templateFaqs: { q: string; a: string }[] = [
-    { q: `What is the total fee for ${program} at ${cleanName}?`,
-      a: `${feeSentence(feeStr, pd.duration || '2 years', !!feeStr)} ${emiSentence(programmeEmiFrom(u, program), program === 'MBA' ? undefined : NO_PROGRAMME_EMI)}` },
+    { q: `What is the ${isLabelledFee(exactFee) ? '' : 'total '}fee for ${program} at ${cleanName}?`,
+      a: `${feeAnswer ?? feeSentence(null, '', false)} ${emiSentence(programmeEmiFrom(u, program), program === 'MBA' ? undefined : NO_PROGRAMME_EMI)}` },
     { q: `Is the ${program} degree from ${cleanName} valid?`,
       // A8: a university not on the UGC-DEB register states its recorded basis.
       a: debBasis(u.id)

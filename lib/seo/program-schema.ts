@@ -17,7 +17,7 @@
 //      there is a range or a labelled breakdown.
 
 import type { University, Program } from '../data'
-import { getExactFee, formatExactFee } from '../fees'
+import { getExactFee, formatExactFee, formatLabelledFee, isLabelledFee } from '../fees'
 
 // 2026-10-27: prices come from getExactFee, not getDisplayFee's min/max, which
 // are parsed from abbreviated pd.fees strings. LPU's schema said 161000 while
@@ -48,14 +48,17 @@ export function getProgramSchemaOffer(
     const prices = b.modes?.length ? b.modes.map(m => m.amount) : [b.list, ...(b.net ? [b.net.min, b.net.max] : [])]
     min = Math.min(...prices); max = Math.max(...prices)
   }
+  // QA 2026-11-28 (F1): a single labelled price (Amrita BBA, tuition only)
+  // carries its label, so the price never reads as an all-in total.
+  const label = isLabelledFee(e) ? formatLabelledFee(e, u, program) : null
   if (min === max) {
-    return { '@type': 'Offer', price: String(min), priceCurrency: 'INR', availability: 'https://schema.org/InStock' }
+    return { '@type': 'Offer', price: String(min), ...(label ? { description: label } : {}), priceCurrency: 'INR', availability: 'https://schema.org/InStock' }
   }
   return {
     '@type': 'AggregateOffer',
     lowPrice: String(min),
     highPrice: String(max),
-    ...(e.kind === 'labelled' ? { description: formatExactFee(e)! } : {}),
+    ...(e.kind === 'labelled' ? { description: label ?? formatExactFee(e)! } : {}),
     priceCurrency: 'INR',
     availability: 'https://schema.org/InStock',
   }
@@ -67,6 +70,9 @@ export function getProgramSchemaFeeFragment(
   u: University,
   program: Program,
 ): string {
-  const text = formatExactFee(getExactFee(u, program))
+  // QA 2026-11-28 (F2): a labelled fee reads "₹X for <route>" and keeps its
+  // tuition label, instead of the label strings running into each other.
+  const e = getExactFee(u, program)
+  const text = isLabelledFee(e) ? formatLabelledFee(e, u, program) : formatExactFee(e)
   return text ? `, fees ${text}` : ''
 }
