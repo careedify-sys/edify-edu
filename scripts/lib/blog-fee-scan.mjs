@@ -12,6 +12,7 @@
 // endpoints, and had a Rs.? pattern with no word boundary. See
 // audits/blog-fee-precision-sample-2026-08-07.md for the failure taxonomy.
 
+import { readFileSync } from 'node:fs'
 import { BLOG_POSTS } from '../../lib/blog.ts'
 import { UNIVERSITIES } from '../../lib/data.ts'
 import { getDisplayFee, parseFeeStr } from '../../lib/fees.ts'
@@ -185,6 +186,11 @@ function findAllUnis(text) {
   return hits.filter(h => h.uid !== '__REJECT__').sort((a, b) => a.index - b.index)
 }
 
+function uniqueByUid(hits) {
+  const seen = new Set()
+  return hits.filter(h => (seen.has(h.uid) ? false : (seen.add(h.uid), true)))
+}
+
 function firstUniInText(text) {
   const hits = findAllUnis(text)
   return hits[0]?.uid || null
@@ -254,6 +260,91 @@ function isNonFee(context) {
   for (const re of NON_FEE_PATTERNS) if (re.test(context)) return true
   return false
 }
+
+// -- v4 (2026-11-27, B3 batch 25): discount words exempt by label only ------
+//
+// isNonFee() above exempts any figure within 80 characters of a discount
+// word. QA (batches 22 and 23) showed what that hides: "MUJ online MBA costs
+// Rs 9,99,000 after the 15% discount" passed as NON_FEE. Blog scanning now
+// lets gap, save, saving, discount, "off", cashback, scholarship, waiver,
+// cheaper and lower exempt a figure only when the figure IS that amount:
+// "save Rs X", "Rs X off", "a Rs X scholarship", "Rs X cheaper", "gap of
+// Rs X". A programme fee that merely sits near those words is checked.
+// The "per semester" proximity rule is unchanged in v4; batch 26 adds a
+// verify-sheet-backed per-semester table and batches 27+ narrow it post by
+// post (FIX-LOG 2026-11-27, B3 batch 25).
+// isNonFee() itself is unchanged: scripts/audit-spec-fees.mjs imports it.
+const DISCOUNT_SOURCES = new Set([
+  /\bgap\b\s*:?/i, /\bsave(?:s|d)?\b/i, /\bsaving(?:s)?\b/i,
+  /\bdiscount(?:ed)?\b/i, /\boff\b\s*[,.)]/i, /\bcashback\b/i,
+  /\bscholarship\b/i, /\bwaiver\b/i, /\bcheaper\b/i, /\blower\b/i,
+].map(r => r.source))
+const PROXIMITY_PATTERNS = NON_FEE_PATTERNS.filter(re => !DISCOUNT_SOURCES.has(re.source))
+// Round 3 (QA R1): the label test alone let "Rs X off-campus" and "Rs X off
+// the bat" through, which the old rule checked (its "off" needs punctuation
+// right after it). A figure is now exempt as a discount amount only when the
+// label test passes AND the old rule's own discount pattern is in the same
+// 80-character window, so the exemption is a strict subset of the old one.
+const DISCOUNT_PATTERNS = NON_FEE_PATTERNS.filter(re => DISCOUNT_SOURCES.has(re.source))
+if (DISCOUNT_PATTERNS.length !== DISCOUNT_SOURCES.size) throw new Error('blog-fee-scan: discount patterns drifted')
+if (PROXIMITY_PATTERNS.length !== NON_FEE_PATTERNS.length - DISCOUNT_SOURCES.size) {
+  throw new Error(`blog-fee-scan: discount-word split drifted (${PROXIMITY_PATTERNS.length} of ${NON_FEE_PATTERNS.length})`)
+}
+
+// Round 2 (QA F1): the label words are only the 10 DISCOUNT_SOURCES words.
+// v4 round 1 also let "difference of", "higher", "less", "more expensive",
+// "costlier", "concession", "rebate", "reduced by" and "knocks off" exempt a
+// figure, which the old rule never did, so 11 live figures dropped out. Every
+// label word left in these two patterns is one of the 10 discount words. These
+// patterns alone are not a subset of the old rule ("off" here needs no
+// punctuation after it); the call site also requires the old rule's own
+// discount pattern in the window (round 3, DISCOUNT_PATTERNS).
+const AMOUNT_BEFORE_RE = /\b(?:save[sd]?|saving[s]?(?:\s+of)?|discount(?:ed)?\s+(?:of|by)|(?:scholarship|waiver|cashback)\s+(?:of|worth)|gap\s+(?:of|is|was)|gap\s*:|cheaper\s+by|lower\s+by)\s+(?:up\s*to\s+|upto\s+|about\s+|around\s+|roughly\s+|nearly\s+|almost\s+|over\s+|a\s+further\s+|an?\s+(?:extra|additional)\s+)?$/i
+const AMOUNT_AFTER_RE = /^\s*(?:off\b|(?:in\s+)?savings?\b|discount\b|scholarship\b|waiver\b|cashback\b|cheaper\b|lower\b|gap\b)/i
+// A table cell boundary between the figure and the word ends the search, so
+// a word in the next cell ("Higher rate", "Discount") never exempts a total.
+const CELL_EDGE_RE = /<\/?t[dh]\b[^>]*>/i
+function isDiscountAmount(combined, start, len) {
+  let rawBefore = combined.slice(Math.max(0, start - 50), start)
+  const edges = [...rawBefore.matchAll(/<\/?t[dh]\b[^>]*>/gi)]
+  if (edges.length) { const last = edges[edges.length - 1]; rawBefore = rawBefore.slice(last.index + last[0].length) }
+  let rawAfter = combined.slice(start + len, start + len + 30)
+  const cut = rawAfter.search(CELL_EDGE_RE)
+  if (cut >= 0) rawAfter = rawAfter.slice(0, cut)
+  const before = stripTags(rawBefore).replace(/\s+/g, ' ')
+  const after = stripTags(rawAfter).replace(/\s+/g, ' ')
+  return AMOUNT_BEFORE_RE.test(before) || AMOUNT_AFTER_RE.test(after)
+}
+
+// Row and column labels: discount words exempt only a label that names the
+// amount itself ("Discount", "Savings", "Scholarship amount"), not a fee
+// after it ("Fee after discount", "Effective total after discount").
+function isRowHeaderNonFeeNarrow(label) {
+  if (!label) return false
+  if (/\bafter\b|\bnet\b|\btotal\b|\bfee\b|\bcost\b|\bprice\b/i.test(label) && /discount|savings|scholarship|waiver|effective|discounted|net\s+of/i.test(label)) {
+    const rest = label.replace(/discount(?:ed)?|savings|scholarship|waiver|effective|net\s+of|inclusive\s+of|exclusive\s+of/gi, '')
+    return ROW_HEADER_NON_FEE.test(rest)
+  }
+  return ROW_HEADER_NON_FEE.test(label)
+}
+
+// Time-boxed hold (Rishi's title freeze, check-protected-pages FREEZE_SLUGS):
+// these posts keep the pre-v4 discount-word exemption until their freeze ends, so
+// their bodies are not edited while their titles are held still. This is
+// not a weakening: their figures were already exempt before v4. After
+// EXEMPTION_HOLD_UNTIL, check-blog-fees fails while any slug is still listed.
+export const EXEMPTION_HOLD_UNTIL = '2026-12-05'
+export const EXEMPTION_HOLD_SLUGS = [
+  'is-manipal-university-jaipur-fake-or-legit-2026',
+  'chandigarh-university-online-mba-review',
+  'amity-online-mba-review-2026',
+  'smu-online-mba-review',
+  'ignou-online-mba-review-2026',
+  'symbiosis-online-mba-review-2026',
+  'jain-online-mba-review-2026',
+  'bits-pilani-online-mba-review-2026',
+]
+const HOLD = new Set(EXEMPTION_HOLD_SLUGS)
 
 // A table row's first cell often labels the whole row ("Add-on Charges",
 // "Per-Semester Fee", "Registration Fee", "Effective Total after Discount").
@@ -383,7 +474,8 @@ function indexTables(html) {
       if (r.cells.length && r.cells.every(c => c.isHeader)) { headerCells = r.cells; break }
     }
     if (!headerCells && rows[0]) headerCells = rows[0].cells
-    tables.push({ start: tStart, end: tEnd, rows, headerCells: headerCells || [] })
+    const caption = stripTags((tHtml.match(/<caption\b[^>]*>([\s\S]*?)<\/caption>/i) || [])[1] || '').trim()
+    tables.push({ start: tStart, end: tEnd, rows, headerCells: headerCells || [], caption })
   }
   return tables
 }
@@ -468,21 +560,23 @@ function attribute(post, html, tables, pos, rawLen) {
   // 2. Table cell
   const cell = findRow(tables, pos)
   if (cell && cell.row) {
-    const rowHits = findAllUnis(cell.row.firstText)
+    // Dedupe by university: "Symbiosis SSODL Pune" is two aliases of one
+    // university and must attribute, not fall through as ambiguous (v4).
+    const rowHits = uniqueByUid(findAllUnis(cell.row.firstText))
     if (rowHits.length === 1) {
       return { uid: rowHits[0].uid, confidence: 'high', rule: 'table-first-cell' }
     }
     // Table's header row may name a university (uni-as-column layout).
     // Check the column header text of THIS cell first (most specific).
     if (cell.columnHeader) {
-      const colHits = findAllUnis(cell.columnHeader)
+      const colHits = uniqueByUid(findAllUnis(cell.columnHeader))
       if (colHits.length === 1) {
         return { uid: colHits[0].uid, confidence: 'high', rule: 'table-column-header' }
       }
     }
     // Fall back to the full concatenated header row.
     const allHeaderText = (cell.table.headerCells || []).map(h => h.text).join(' | ')
-    const headerHits = findAllUnis(allHeaderText)
+    const headerHits = uniqueByUid(findAllUnis(allHeaderText))
     if (headerHits.length === 1) {
       return { uid: headerHits[0].uid, confidence: 'medium', rule: 'table-header' }
     }
@@ -561,8 +655,12 @@ function getAcceptableIntervals(u, program) {
   for (const plan of u.feePlans?.[key] ?? []) {
     const amts = [...plan.rows.map(r => r.total), ...(plan.list ? [plan.list] : [])]
     intervals.push({ min: Math.min(...amts), max: Math.max(...amts), source: `feePlans:${plan.id}` })
+    // v4: the plan's list fee is accepted on its own. A row that carries only an
+    // instalment (Shoolini "Offer 2: per semester") leaves the span above NaN, so
+    // the list fee never matched; the span itself stays as it was.
+    if (plan.list) intervals.push({ min: plan.list, max: plan.list, source: `feePlans:${plan.id}:list` })
     for (const r of plan.rows) {
-      intervals.push({ min: r.total, max: r.total, source: `feePlans:${plan.id}:${r.mode}` })
+      if (typeof r.total === 'number') intervals.push({ min: r.total, max: r.total, source: `feePlans:${plan.id}:${r.mode}` })
       if (r.instalment) intervals.push({ min: r.instalment, max: r.instalment, source: `feePlans:${plan.id}:${r.mode}:instalment` })
     }
   }
@@ -625,12 +723,97 @@ function computeDelta(lo, hi, intervals) {
   return signed
 }
 
+// -- v5 per-semester table (B3 batch 26) -----------------------------------
+//
+// data/per-semester-fees.json holds only per-semester amounts a university
+// prints itself (audits/verify/per-semester-fees-2026-11-27.md, section E
+// array 1). Nothing in it is computed. A blog figure that is marked as a
+// per-semester amount is MATCH when it equals a row for its university and
+// programme, and MISMATCH when that university and programme have rows but
+// none equals it. With no row it stays NON_FEE, as before; narrowing that
+// exemption is batch 27+.
+const PER_SEM_ROWS = JSON.parse(readFileSync(new URL('../../data/per-semester-fees.json', import.meta.url), 'utf8'))
+const PER_SEM = new Map()
+for (const r of PER_SEM_ROWS) {
+  if (!UNI_BY_ID.has(r.id)) throw new Error(`per-semester-fees.json: unknown university id ${r.id}`)
+  if (!Number.isInteger(r.amount) || r.amount <= 0) throw new Error(`per-semester-fees.json: bad amount for ${r.id}`)
+  if (!r.sourceUrl || !/^\d{4}-\d{2}-\d{2}$/.test(r.checkedOn || '') || !r.sheetRef) throw new Error(`per-semester-fees.json: ${r.id} ${r.amount} lacks sourceUrl, checkedOn or sheetRef`)
+  const k = `${r.id}|${r.programme}`
+  if (!PER_SEM.has(k)) PER_SEM.set(k, new Set())
+  PER_SEM.get(k).add(r.amount)
+}
+
+const PER_SEM_SOURCES = new Set([/per\s*sem(?:ester)?/i, /\/\s*sem/i, /per-semester/i, /per\s*sem\b/i, /\d\s*(?:sem|semester)s\b/i].map(r => r.source))
+const NON_PER_SEM_PATTERNS = PROXIMITY_PATTERNS.filter(re => !PER_SEM_SOURCES.has(re.source))
+if (NON_PER_SEM_PATTERNS.length !== PROXIMITY_PATTERNS.length - PER_SEM_SOURCES.size) {
+  throw new Error('blog-fee-scan: per-semester split drifted')
+}
+// The marker must sit right beside the figure, inside the same table cell.
+const PER_SEM_AFTER_RE = /^\s*\)?\s*(?:net\s+)?(?:per\s*sem(?:ester)?\b|per-semester\b|\/\s*sem(?:ester)?\b|(?:a|each|every)\s+semester\b)/i
+const PER_SEM_BEFORE_RE = /(?:per[\s-]*sem(?:ester)?|semester\s+fee|(?:each|every)\s+semester)\s*(?:fee\s*)?(?:is\s+|of\s+|at\s+|:\s*|-\s*)?(?:about\s+|around\s+|roughly\s+|approx\.?\s+|~\s*)?$/i
+// "Semester-wise" names a payment plan whose figure is a total, so it is not a marker.
+const PER_SEM_LABEL_RE = /per[\s-]*sem(?:ester)?|semester\s+fee/i
+
+// Visible text beside the figure, `before`/`after` characters each way after
+// tags are stripped (inline styles would otherwise fill a raw window), and
+// never across a table cell edge.
+function cellSlice(combined, start, len, before, after) {
+  let rawBefore = combined.slice(Math.max(0, start - 600), start)
+  const edges = [...rawBefore.matchAll(/<\/?t[dh]\b[^>]*>/gi)]
+  if (edges.length) { const last = edges[edges.length - 1]; rawBefore = rawBefore.slice(last.index + last[0].length) }
+  let rawAfter = combined.slice(start + len, start + len + 600)
+  const cut = rawAfter.search(CELL_EDGE_RE)
+  if (cut >= 0) rawAfter = rawAfter.slice(0, cut)
+  // A partial tag at the window's cut edge is dropped before stripping.
+  rawBefore = rawBefore.replace(/^[^<]*>/, '')
+  rawAfter = rawAfter.replace(/<[^>]*$/, '')
+  const b = stripTags(rawBefore).replace(/\s+/g, ' ')
+  const a = stripTags(rawAfter).replace(/\s+/g, ' ')
+  return { before: b.slice(Math.max(0, b.length - before)), after: a.slice(0, after) }
+}
+
+function perSemClassify(post, combined, tables, start, len, vMin, vMax, cell) {
+  const near = cellSlice(combined, start, len, 30, 30)
+  const colHeader = cell?.columnHeader || ''
+  const rowLabel = cell?.row?.firstText || ''
+  const marked = PER_SEM_AFTER_RE.test(near.after) || PER_SEM_BEFORE_RE.test(near.before) ||
+    PER_SEM_LABEL_RE.test(colHeader) || PER_SEM_LABEL_RE.test(rowLabel)
+  if (!marked) return null
+  // A figure that is NON_FEE for any other reason (exam fee, registration,
+  // EMI, discount amount, salary) stays NON_FEE.
+  const wide = cellSlice(combined, start, len, 40, 40)
+  const otherCtx = `${wide.before} ${combined.slice(start, start + len)} ${wide.after}`
+  if (NON_PER_SEM_PATTERNS.some(re => re.test(otherCtx))) return null
+  if (isDiscountAmount(combined, start, len)) return null
+  const strip = s => s.replace(/per[\s-]*sem(?:ester)?|semester\s+fee/gi, '')
+  if (isRowHeaderNonFeeNarrow(strip(colHeader)) || isRowHeaderNonFeeNarrow(strip(rowLabel))) return null
+  const attr = attribute(post, combined, tables, start, len)
+  if (!attr.uid) return null
+  let prog = detectProgramme(combined.slice(Math.max(0, start - 200), start + len + 200))
+  if (!prog && cell?.table?.caption) prog = detectProgramme(cell.table.caption)
+  if (!prog) prog = detectProgramme(`${post.slug.replace(/-/g, ' ')} ${post.title}`)
+  if (!prog) return null
+  const set = PER_SEM.get(`${attr.uid}|${prog}`)
+  if (!set) return null
+  const ok = set.has(vMin) && set.has(vMax)
+  return { klass: ok ? 'MATCH' : 'MISMATCH', uid: attr.uid, prog, confidence: attr.confidence, rule: attr.rule, accepted: [...set] }
+}
+
 // -- Main scan ------------------------------------------------------------
 
 export function scanAllPosts() {
   const rows = []
   for (const post of BLOG_POSTS) {
     if (post.status !== 'published') continue
+    scanPost(post, rows)
+  }
+  return rows
+}
+
+// One post's figures, appended to rows. Exported for the gate's self-test,
+// which scans injected text without touching lib/blog.ts.
+export function scanPost(post, rows = []) {
+  {
     const html = post.content || ''
     const faqBlob = (post.faqs || []).map(f => `${f.q}\n${f.a}`).join('\n')
     const combined = html + '\n' + faqBlob
@@ -700,7 +883,30 @@ export function scanAllPosts() {
       const cellForNonFee = findRow(tables, matchStart)
       const rowLabel = cellForNonFee?.row?.firstText || ''
       const colHeader = cellForNonFee?.columnHeader || ''
-      if (isNonFee(tightCtx) || isRowHeaderNonFee(rowLabel) || isRowHeaderNonFee(colHeader) || isBucketRange(combined, matchStart, consumedLen)) {
+      const held = HOLD.has(post.slug)
+      const nonFee = held
+        ? (isNonFee(tightCtx) || isRowHeaderNonFee(rowLabel) || isRowHeaderNonFee(colHeader))
+        : (PROXIMITY_PATTERNS.some(re => re.test(tightCtx)) ||
+            (isDiscountAmount(combined, matchStart, consumedLen) && DISCOUNT_PATTERNS.some(re => re.test(tightCtx))) ||
+            isRowHeaderNonFeeNarrow(rowLabel) || isRowHeaderNonFeeNarrow(colHeader))
+      // v5 (B3 batch 26): a per-semester figure is checked against the
+      // verify-sheet table when its university and programme have a row.
+      // Only figures that are NON_FEE today can enter, and they leave as
+      // MATCH or MISMATCH, so no figure is checked less than before.
+      if (nonFee && !held && !isBucketRange(combined, matchStart, consumedLen)) {
+        const ps = perSemClassify(post, combined, tables, matchStart, consumedLen, vMin, vMax, cellForNonFee)
+        if (ps) {
+          rows.push({
+            slug: post.slug, publishedAt: post.publishedAt, raw: rawFull,
+            value, valueMin: vMin, valueMax: vMax,
+            klass: ps.klass, universityId: ps.uid, programme: ps.prog,
+            confidence: ps.confidence, attribRule: ps.rule, rule: 'per-semester-table',
+            perSemAccepted: ps.accepted, primary: '', context,
+          })
+          continue
+        }
+      }
+      if (nonFee || isBucketRange(combined, matchStart, consumedLen)) {
         rows.push({
           slug: post.slug, publishedAt: post.publishedAt, raw: rawFull,
           value, valueMin: vMin, valueMax: vMax,
@@ -712,6 +918,9 @@ export function scanAllPosts() {
 
       const attr = attribute(post, combined, tables, matchStart, consumedLen)
       let prog = detectProgramme(combined.slice(Math.max(0, matchStart - 200), matchStart + consumedLen + 200))
+      // v4: a table caption names the programme of every row ("Top online MCA
+      // programmes") when the 200-character window does not.
+      if (!prog && cellForNonFee?.table?.caption) prog = detectProgramme(cellForNonFee.table.caption)
       if (!prog) prog = detectProgramme(`${post.slug.replace(/-/g, ' ')} ${post.title}`)
 
       const cls = classify({
@@ -746,6 +955,7 @@ export function scanAllPosts() {
   }
   return rows
 }
+
 
 // Per-slug count of NON-verified fee figures. Verified = MATCH or
 // allowlisted. NON_FEE is excluded. UNRESOLVED, MISMATCH, SUPPRESSED,

@@ -1,5 +1,425 @@
 # Fix log
 
+## 2026-11-28 · B4: answer-first block on 8 of the 10 queue MBA hubs (branch fix/b4-answer-first, not pushed)
+
+- **Why:** OPERATING-PLAN B4 asks for total fee, eligibility and exam mode, each with its date, above the fold on the top 10
+  hubs (audits/queue-ranking-2026-11-16.md). Those three answers were spread over the stat grid and the FAQ further down,
+  and the eligibility line on the hub came from lib/data.ts strings that predate the 18 Nov sheets.
+- **What:** lib/answer-first.ts builds three rows; components/UniHero.tsx renders them as a `<dl id="answer-first">` right
+  after the H1, only on the MBA hub (no spec) of the 8 ids. No heading element, no link, small "Checked {date} by
+  edifyedu.in" text under each sourced value.
+- **Sources:** fee = University.provenance.fee value and checkedOn (B1). Eligibility = row M3 of
+  audits/verify/{id}-2026-11-18.md, reworded only for length; every number and condition kept. Exam mode = examTier
+  (B7/B7b), dated by the sheet's M6 row; centre and from-home and online tiers print a mode, unverified and unrecorded
+  print the existing counsellor or neutral line with no date.
+- **Round 2 (QA 2026-11-28-b4-answer-first-premerge.md, coordinator decision F2 option a):**
+  - DSU and ACU are out of the block, which now covers 8 hubs. Their fee had no dated source (Q80, Q81), so the block
+    said "Ask our counsellor" about 250px above the stat grid's ₹1,30,000 and ₹1,40,000 on the same screen. DSU's
+    sheet is also read from dsuonline.com, which is not confirmed as DSU's official site, so its dated "Online" exam
+    row broke the block's own rule (F3). They return when Q80 and Q81 are answered.
+  - BITS eligibility now carries sheet M3 verbatim. Round 1 dropped "Integrated First Degree" and the Maths or
+    Statistics at school level requirement for 3-year degree holders (F1).
+  - JAIN's row is labelled "Programme fee" with "plus registration and exam fees", because sheet M5 says registration
+    and the yearly exam fee sit outside the programme fee (F4). Not summed into a total.
+  - The assert script now checks the full value of every cell and was shown to fail on an injected defect.
+- **Gaps:** B4 is partly blocked on Q80 (DSU) and Q81 (ACU). Shoolini exam mode prints the counsellor line
+  (unverified tier, sheet M6 UNCLEAR, Q29).
+- **FAQPage:** not extended. The hub FAQ already asks the fee, eligibility and exam-mode questions, so a copy would
+  duplicate them.
+- **Unchanged:** titles, seoTitle, meta, the stat grid, the FAQ, lib/data.ts.
+
+## 2026-11-28 · MAHE and Amrita BBA fees, round 2: QA F1 and F2 (branch fix/bba-fees-mahe-amrita)
+
+- **Why:** QA (audits/qa/2026-11-28-bba-fees-mahe-amrita-premerge.md) failed round 1 on two problems. F1: Amrita's ₹1,41,000 is tuition only, but the hub FAQ ("Total programme fee is ₹1,41,000 across 3 Years"), 4 spec FAQs ("Total fee is ₹1,41,000"), the FeeBreakdown row "Total Program Fee" and the bare Offer price all presented it as a total. F2: MAHE's FAQ and the Course description spliced the labelled route string into the template ("Total programme fee is ₹1,80,000 BBA, 6 semesters, ...; ₹2,40,000 BBA (Honours), 8 semesters across 3 Years (Hons) / ...").
+- **General fix, not Amrita-specific (lib/fees.ts):** `isLabelledFee` is true for any breakdown with modes, a net or a listLabel. `feeAnswerSentences` writes the FAQ answer. An unlabelled fee keeps the old "Total programme fee is X across D." / "Total fee is X.". A labelled fee never says "total": each payment route is its own sentence ("The fee is ₹X (label). It is ₹Y (label)."), with no duration clause, and a list-only fee keeps its label ("The fee is ₹1,41,000 (total tuition, Indian students) across 3 Years."). Separately charged `feeExtras` are named by label only, never summed and with no rupees ("Registration fee and examination fee are charged separately."). `formatLabelledFee` does the same for the fee row and the schema. `getFeeExtras` replaces the inline MBA/BBA switch.
+- **Where:** hub FAQ and FAQPage (UniProgramBody; the question drops "total" for a labelled fee), spec FAQ and FAQPage (UniSpecBody; the Amity own-track plan answer is unchanged), the FeeBreakdown row ("Programme fee" with the label for a labelled fee), the Offer (a single labelled price now carries a description; SchemaBlock keeps that label ahead of the coupon line instead of overwriting it), and the Course/Program schema fee fragment. This changes the FAQ wording on every labelled-fee hub (LPU, Amity BBA, CU, MUJ, Uttaranchal, Marwadi, PP Savani, Bharati Vidyapeeth, JSS, Alliance, GGSIPU, MATS); figures are unchanged.
+- **MAHE duration:** `programDetails.BBA.duration` is now "3 Years (BBA, 6 semesters) / 4 Years (BBA Honours, 8 semesters)" (verify sheet rows 1-4: 6 semesters for the BBA, 8 semesters, 4 years for the Honours). The 3 years was the existing lib/data.ts value; only the "Hons" label on it was wrong. The mode label is now "BBA Honours, 8 semesters" so the parenthesised route does not nest brackets.
+- **Schema duration:** SchemaBlock and the BBA hub read the first number of `duration`. Before this, stripping every non-digit made MAHE's "3 Years (Hons) / 4 Years ..." read P34Y. The other hub templates (bca, mba, mca, [program]) still use the old parse. Listed for a follow-up, not changed here.
+- **Hero tile (after the merge of origin/main 09a30c1):** UniHero's "Total Fees" tile reads "Programme fee" for a labelled fee, with the label still underneath. Without this, Amrita's hero said "Total Fees ₹1,41,000" above "total tuition, Indian students".
+- **Heads:** no title or meta source changed. The head-tag diff is in the hand-off.
+
+## 2026-11-28 · MAHE and Amrita online BBA fees from the portals (branch fix/bba-fees-mahe-amrita)
+
+- **Why:** both BBA records carried placeholder strings that matched no published figure: MAHE `'₹168K – ₹224K'` and Amrita `'₹165K – ₹165K'` (the same string Amrita's BCA carries). getExactFee returned none for both, so the hubs showed the counsellor block while getDisplayFee still fed ₹1.68L-₹2.24L and ₹1.65L into the schema description and /fees-style tables. Source: audits/verify/bba-fees-mahe-amrita-2026-11-28.md, read on onlinemanipal.com and onlineamrita.com that day.
+- **MAHE:** `feeBreakdown.bba`, list ₹1,80,000 ("6 semesters, inclusive of all taxes"), modes ₹1,80,000 (6 semesters) and ₹2,40,000 (Honours, 8 semesters), perSemester ₹30,000. The ₹1,71,000 "full fee payment" price is left out: the page prints it under the Honours heading against the 6-semester figure, so its route is ambiguous. ₹1,500 application fee as a `feeExtras.bba` row, "charged separately", never in a total. `programDetails.BBA.fees` is now `'₹1,80,000 – ₹2,40,000'`.
+- **Amrita:** `feeBreakdown.bba`, list ₹1,41,000 labelled "total tuition, Indian students", perSemester ₹23,500. Registration ₹700 (one-time) and examination ₹2,750 per semester as `feeExtras.bba` rows, "charged separately", never added in. The foreign-national ₹1,68,000 is not used. `programDetails.BBA.fees` is now `'₹1,41,000'`.
+- **Template:** `feeExtras` gained a `bba` key and FeeBreakdown reads the extras for the page's own programme (MBA charges still print only on MBA). MAHE joins NO_UNSOURCED_FEE_COMPONENTS: its portal names no lending partner and no study-material inclusion, so those two generic lines no longer print on MAHE's fee blocks (BBA and MCA).
+- **Title and meta held:** the BBA hub and BBA specialisation templates are fee-led whenever getExactFee returns a fee, so this fix alone rewrote the head of 7 pages (2 hubs, MAHE general-management, 4 Amrita specs: "fees on request" became the figure). Found by diffing the built head tags before and after. Both ids are in `BBA_HEAD_FROZEN_FEELESS` (lib/seo/bba-fee-title-freeze.ts), read by both BBA templates, and keep the live fee-less title and description until Rishi signs off on a title change. The cost: the hub description still says "Fee structure verified by our counsellor" and the spec metas "fees on request" while the body shows the fee.
+- **Blog fee ratchet fell:** data/blog-fee-baseline.json total 1,861 to 1,848 (auto-lowered by the hook): blog figures that quoted the real portal fees now MATCH (mahe-online-bba-review 11 to 6, amrita-online-bba-review 19 to 15, and four other BBA posts).
+- **Sweep:** no non-blog page-content JSON or template carried the old MAHE or Amrita BBA figures in any notation (the ₹2,24,000 in amrita-...-mba-operations.json is the MBA Operations tuition, and pairs.ts's ₹1,65,000 is Symbiosis). lib/blog.ts was not edited; its hits are listed for the blog owner in the hand-off.
+- **Not touched:** Amrita BCA `'₹165K – ₹165K'` (BCA was not read; same placeholder string, needs its own portal read). MAHE BBA `duration` "3 Years (Hons) / 4 Years (Hons with Research)" does not match the portal's "6 semesters / 8 semesters Honours" wording; left for a verify row.
+
+## 2026-11-28 B3 batch 26 round 3: QA rerun F1 to F6 (audits/qa/2026-11-28-b3-batch-25r3-26-premerge-rerun.md)
+
+Branch fix/b3-batch-26. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt 2026-11-28 on all 3 edited posts: amity-online-bba-fees-2026, amity-online-bba-review-2026 and best-online-bba-colleges-india-2026.
+
+**Why.** lib/data.ts backs only two Amity BBA figures: ₹1,75,120 one-time and ₹1,99,000 semester-wise. Section A row 15 adds ₹33,200 per semester. No verify row backs any of the following for the BBA:
+- a 0%, no-cost or zero-cost EMI. The batch20 row 1a "No-Cost EMI" is the MBA fee card.
+- the EMI and annual figures ₹7,877, ₹8,292, ₹63,020, ₹66,333 and ₹1,89,050.
+- the ₹1,100 application and ₹2,500 registration fees. Row 15 says the page lists no registration fee.
+
+Round 2 called these unverified on one page while two sibling posts in the same batch printed them as fact. Wherever they appeared, readers are now pointed to the counsellor, and no figure replaces them.
+
+**F1. amity-online-bba-fees-2026.**
+- The table label "24-Month No-Cost EMI" is now "24-Month EMI".
+- The credit-score-700 eligibility line and the international 0% EMI line become "Ask our counsellor about EMI eligibility, including for international applicants".
+- The international FAQ now says to ask the counsellor which EMI options apply.
+- The self-pay FAQ says "24-month EMI" without "0%".
+- The question "Is the Amity Online BBA EMI really 0% interest?" is now "Does the Amity Online BBA EMI charge interest?".
+
+**F2. BVP ₹1,78,000 in mba-hr-management-online-india-2026.** Kept, by coordinator decision: ₹1,78,000 per Rishi's 28 Oct confirmation; BVP page lists ₹1,76,000 plus ₹1,000 registration and ₹1,000 admission. The 28 Oct entry in this log records that confirmation, and Rishi's decisions are final. The post is not changed in this round.
+
+**F3. Sibling posts.**
+- **amity-online-bba-review-2026.** Every ₹7,877, ₹8,292, ₹63,020, ₹66,333, ₹1,89,050 and ₹13,930 figure is gone from:
+  - the fee FAQ, the cheapest FAQ and the EMI FAQ ("Is the 0% EMI ... really interest-free? Yes" becomes "Does the Amity Online BBA EMI charge interest?" with a counsellor answer);
+  - the quick answer, the quick-facts bullet and the key-facts table;
+  - Options 2 to 4, the additional-fees paragraph and the verdict.
+  The two "0% EMI" claims in the verdict and cheapest FAQ are gone too. In the two rewritten sentences, the ₹23,880 savings figure was replaced by "costs less than Semester-wise at ₹1,99,000".
+- **best-online-bba-colleges-india-2026.** The Amity ₹1,89,050 / ₹63,020 annual figures and all three ₹7,877 "no-cost" / "zero-cost" EMI mentions are removed. The Amrita EMI lines lose the "zero-cost" claim. The ₹4,375 figure is untouched and is queued for batch 27.
+
+**F5.** "₹33,200/sem × 6 = ₹1,99,000" was false arithmetic (6 × 33,200 is 1,99,200). Every form of it, in both Amity posts, is now printed as Amity prints it: "₹33,200 per semester; Amity lists the effective fee as ₹1,99,000". The semester-wise FAQ no longer compares against the unbacked annual plan.
+
+**F6.** The ₹1,100 application and ₹2,500 registration figures are removed from both Amity posts, and readers are pointed to the counsellor. The refund FAQ now asks readers to confirm the fees and their refundability.
+
+**Counts.** check-blog-fees 1784 -> 1783 (amity-online-bba-review-2026 7 to 6).
+
+**Left for batch 27.**
+- **F4.** ₹23,880 in amity-online-bba-fees-2026 (4 places: two callouts, the sticker table note, the self-pay FAQ) and in amity-online-bba-review-2026 (the quick-facts bullet and the "difference between cheapest and most expensive" line).
+- **Frozen metaDescriptions.** amity-online-bba-fees-2026 ("₹7,877/mo 0% EMI") and amity-online-bba-review-2026 ("0% EMI ₹7,877 monthly") now contradict their bodies, so they are a priority.
+- **F7.** Symbiosis BBA: does the ₹5,000 registration column sit inside ₹1,65,000? This is a verify question.
+- **F8.** Amrita BBA "NIRF top tier rank (top 10 university category typically)" gives no category rank.
+- **best-online-bba-colleges-india-2026:**
+  - Amrita "EMI ₹4,375 per month" has no verify row.
+  - Amity is "NIRF University rank #22" here but "NIRF #49 management" in the review.
+
+## 2026-11-28 B3 batch 26 round 2: QA N1 to N4 (audits/qa/2026-11-28-b3-batch-25r3-26-premerge.md)
+
+Branch fix/b3-batch-26. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt 2026-11-28 on all 5 edited posts.
+
+**N1. amrita-online-bba-review-2026.**
+- **Why.** Section A row 29 records ₹1,41,000 as the Total Tuition Fee for Indian students, with registration and examination fees charged on top. The post called it "Total fee" and "Total programme fee", so the page claimed a total that nobody publishes.
+- **Labels.** The quick facts, the fee table, the fee FAQ and the fee sentence now say "total tuition for Indian students", and add that registration and exam fees are charged on top. The parts are never added together. The peer table column is now "Listed Fee", and the Amrita cell says "tuition (Indian students)".
+- **Ordering claims deleted.** MAHE's ₹1,80,000 includes taxes and NMIMS lists the same ₹1,41,000, so a lower or higher fee ordering is not like-for-like. Deleted:
+  - "Peer Tier 1 Premium programmes list higher fees (MAHE ..., Symbiosis ...)".
+  - "Amrita differentiates through a lower fee".
+  - "Despite the lower fee tier" and "The accessible fee does not reflect lower brand quality ...".
+  - "structurally lower fee" (pros list) and "without a higher Tier 1 fee commitment".
+- **Derived savings deleted.** Part B missed two of these: "saves ₹39,000 versus MAHE Online BBA and ₹24,000 versus Symbiosis SSODL BBA" (fee FAQ) and the "Saves ₹39,000 versus MAHE" pros item. Both are our own subtractions.
+- **FIX-LOG correction.** The part B entry below calls ₹1,41,000 "the Amrita BBA total" and keeps the "list higher fees" sentence as backed. Both are wrong. The figure is tuition, and that sentence is now deleted.
+
+**N2. amity-online-bba-fees-2026.**
+- **Why.** lib/data.ts holds two Amity BBA modes: ₹1,75,120 one-time and ₹1,99,000 semester-wise. ₹33,200 per semester is section A row 15. No source backs the Annual and EMI figures (₹1,89,050, ₹63,020, ₹66,333, ₹7,877, ₹8,292), the "0% interest" claim, or the gaps built from them (₹13,930, ₹9,950). The row arithmetic does not reproduce either.
+- **Removed.** Every one of those figures in the FAQs, the quick answer, the fee table, the comparison table, the EMI section and the recommendation. Each now points to the counsellor. The comparison table keeps One-Time ("Baseline") and Semester-wise ("Costs more"), and "Higher" and "Highest" are gone. The ₹23,880 figures inside the rewritten sentences went with them.
+- **Not edited.** The metaDescription still carries "₹7,877/mo 0% EMI", because metadata is frozen; this needs Rishi or a later title batch. Four other ₹23,880 figures stay for batch 27: the self-pay reduction FAQ (which also still names a "24-month 0% EMI"), the two "saves ₹23,880" callouts and the sticker table note.
+
+**N3. lpu-online-bba-review-2026.** "saving ₹27,600" is our own subtraction (1,50,000 minus 1,22,400), so all 4 instances are deleted, including the "Total saving" table row.
+
+**N4.**
+- **symbiosis-online-bba-review-2026.** The sheet's excludes list names the ₹1,000 as the application fee (registration is ₹5,000, in its own column). So all 7 "registration ₹1,000" mentions now say "application fee". The summed "₹1,65,000 + ₹1,000 registration = ₹1,66,000" is gone too. The amrita-bba peer line uses the same label.
+- **mba-hr-management-online-india-2026.** The BVP table cell ₹1,76,000 becomes ₹1,78,000. That matches lib/data.ts (Standard ₹1,76,000 + ₹2,000, total 178000) and the prose.
+
+**Counts.** check-blog-fees 1785 -> 1784 (amrita-online-bba-review-2026 13 to 12).
+
+**Left for batch 27.**
+- amity-bba: the remaining ₹23,880 figures and the metaDescription EMI figure.
+- IGNOU "~₹30,900".
+- JAIN ₹49,000 in the HR note (J1).
+- amrita-bba: the NMIMS "₹1,50,000 / ₹1,80,000" cell.
+- nmims-bba: ₹1,80,000.
+- supply-chain: the "lowest semester fee" superlative.
+
+## 2026-11-28 B3 batch 26 part B: Amrita BBA fee in two posts, derived peer gaps
+
+Branch fix/b3-batch-26. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt 2026-11-28 on both posts.
+
+**Why.** The coordinator flagged these figures ahead of fix/bba-fees-mahe-amrita, which corrects MAHE and Amrita BBA in lib/data.ts. The figures used here already have a source with a URL and a date: audits/verify/per-semester-fees-2026-11-27.md section A row 29 (Amrita BBA, Total Tuition Fee Rs. 1,41,000; tuition only, registration and exam fees on top. Correction (round 2): this entry first called it the total) and row 9 (MAHE BBA course fee INR 1,80,000; INR 2,40,000 for Honours). Symbiosis BBA ₹1,65,000 and NMIMS BBA ₹1,41,000 are lib/data.ts exact fees.
+- online-bba-fees-india-2026-compared: Amrita "Rs 1,65,000" (table and link text) becomes Rs 1,41,000.
+- amrita-online-bba-review-2026:
+  - "Tier 1 fee commitment of ₹1,65,000-2,40,000" loses the range.
+  - The derived premiums "₹9,000", "₹24,000" and "₹39,000 over Amrita" and "Amrita saves ₹9,000 to ₹39,000" are deleted (our subtractions). The peer sentences keep each university's own fee and reason.
+  - NMIMS "₹1,50,000 standard" was wrong twice; lib/data.ts gives ₹1,41,000. The NMIMS sentence no longer claims a premium over Amrita, since the two fees are equal.
+  - "the highest value-to-fee ratio" (x2) and "structurally strongest pick" superlatives are deleted. "Peer Tier 1 Premium programmes list higher fees (MAHE ₹1,80,000, Symbiosis ₹1,65,000)" stays, backed by the sources above. Correction (round 2): that sentence compares tuition with a tax-inclusive fee and is now deleted.
+- Left for batch 27: the NMIMS "₹1,50,000 / ₹1,80,000 (BA electives)" table cell in amrita-online-bba-review-2026 and Amrita BCA figures elsewhere (BCA fee unverified).
+
+**Counts.** check-blog-fees 1789 -> 1785 (amrita-online-bba-review-2026 17 to 13).
+
+## 2026-11-28 B3 batch 26: per-semester fee table in the blog fee gate, section C misattributions, exposed mismatches
+
+Branch fix/b3-batch-26, stacked on batch 25 round 2 (10ffd3c). Source: audits/verify/per-semester-fees-2026-11-27.md, sections A, B, C and E. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt 2026-11-28 on all 13 edited posts.
+
+**Why.** Every figure marked "per semester" was NON_FEE, so a wrong semester fee was never checked. The verify sheet now holds semester amounts the universities print themselves, so the gate can check those figures for the universities it covers.
+
+**Data (data/per-semester-fees.json).** Section E array 1, 40 rows, copied as written, with a sheetRef to the section A row added to each. Nothing is computed. One row is added from array 2: Shoolini Offer 1 (Pay After Placement) ₹33,575, section A row 39. Why: the coordinator's 28 Nov note on Rishi's confirmed Shoolini fees says Shoolini prints ₹33,575 itself, and round 2 had already written it into the pharma post. Without the row, every correct ₹33,575 in four posts reads as a MISMATCH against Shoolini's ₹32,500 row; the row can only turn those into MATCH, never clear a wrong figure. The other 10 array 2 rows are left out, as instructed. The scanner refuses to load a row with an unknown university id, a non-integer amount, or no sourceUrl, checkedOn or sheetRef.
+
+**Scanner v5 (scripts/lib/blog-fee-scan.mjs).**
+- Only a figure that is NON_FEE today can enter, and only when a per-semester marker sits right beside it in the same table cell ("per semester", "/sem", "each semester", a "Per Semester" or "Semester fee" column or row label). "Semester-wise" is not a marker: it names a payment plan whose figure is a total (it first flagged the Amity and NMIMS semester-wise totals in the fees guide).
+- A figure that is NON_FEE for another reason (exam fee, registration, EMI, salary, a discount amount) stays NON_FEE.
+- With a row for its university and programme, the figure is MATCH when it equals a printed amount (both ends, for a range) and MISMATCH otherwise. With no row it stays NON_FEE, as today. Narrowing that exemption is batch 27+.
+- So a figure can only move NON_FEE to MATCH or NON_FEE to MISMATCH, and the gate checks no figure less than before. Held (frozen) posts are skipped.
+- The text beside a figure is read as visible text with tags removed, so inline styles do not hide a label.
+
+**Proof (old vs new scanner, figure by figure).** On the unchanged 10ffd3c content: 7019 figures, 136 NON_FEE to MATCH, 21 NON_FEE to MISMATCH, 0 other differences (class, university or programme). On the final content: 146 NON_FEE to MATCH, 0 MISMATCH, 0 other differences.
+
+**Self-test (check-blog-fees).** LPU Rs 40,400 per semester is MATCH; Rs 50,000 per semester is MISMATCH; NMIMS Rs 49,000 under a "Per Semester" column is MISMATCH; Galgotias (no row) stays NON_FEE; an LPU exam fee per semester stays NON_FEE. Proved: changing the LPU row to 40,401 fails the self-test.
+
+**Section C misattributions.**
+- online-mba-supply-chain-management-india-2026: UU's ₹25,900 read as SMU or MAHE because "UU Doon" alone names no university. Both sentences now say "Uttaranchal University (UU Doon)". The figures are unchanged and now MATCH UU's row (section A row 40).
+- mba-hr-management-online-india-2026: the ARKA JAIN row linked to /universities/jain-university-online with the text "JAIN University". It now links to /universities/arka-jain-university-online as "ARKA JAIN University". ₹1,08,500 is ARKA JAIN's lib/data.ts fee and ₹25,000 is section A row 36, so both now MATCH.
+- online-mba-hospital-healthcare-management-india-2026: ₹40,400 now classifies as the LPU MBA (MATCH, section A row 2). The text was already right, so it is not edited.
+- dy-patil-online-mba-review: the summary card's per-semester label is now "DPU Pune Per Semester", so "Rs. 44,400 to 50,000" reads as DPU Pune (MATCH, section A row 31), not Navi Mumbai.
+- amity-online-bba-fees-2026: IGNOU "Annual ₹10,300/yr" sat in the per-semester column. It is not a semester figure and is not verified, so it goes to the counsellor.
+
+**Exposed MISMATCHes (21), each fixed on its merits.**
+- LPU MBA ₹50,000 per semester (online-mba-lpu-review x4, is-lpu fake-or-legit, lpu-vs-chandigarh range) and LPU BBA ₹25,000 per semester (lpu-bba x2, amity-bba-fees): section A rows 3 and 5 say LPU never labels the "Actual Fee" as per semester, so the semester figure is deleted and the ₹2,00,000 / ₹1,50,000 totals stay. The lpu-review table cell becomes "Not published per semester".
+- DSU ₹32,500 avg (fees guide, mba-hr, analytics) and ₹30,000 (entrepreneurship): corrected to "₹32,375 to ₹32,875", section A row 35.
+- JAIN BBA "(Yearly ₹45,000)" (amity-bba-fees): a yearly figure in the per-semester column, deleted. ₹22,500 stays (row 21).
+- Symbiosis BBA first semester ₹35,000 (x5 in symbiosis-bba): section B, our sum of ₹30,000 and the ₹5,000 registration. Deleted; the first-semester amount goes to the counsellor and ₹26,000 per semester for semesters 2 to 6 (row 26) stays. "total ₹1,66,000" was our sum too and is deleted.
+- NMIMS ₹49,000 per semester (nmims-vs-symbiosis x3): section B, ₹1.96L / 4. The two FAQ mentions are deleted; the table cell becomes ₹55,000 (section A row 24) and its total the lib/data.ts range ₹1,96,000 to ₹2,20,000.
+
+**Section B deletions in posts already being edited.**
+- amity-bba-fees: CU ₹21,875 (Annual ₹43,750) to the counsellor; Sharda ₹1,20,000 / ₹20,000 (Annual ₹40,000) corrected to ₹1,35,000 (lib/data.ts) and ₹22,500 (section A row 25), in the table and in one sentence; the "+₹23,880" and "+₹13,930" difference cells become "Highest" and "Higher".
+- mba-hr and analytics: Galgotias "~₹20,050 avg", Kurukshetra ₹25,500, Bharati Vidyapeeth ₹40,000, MGR ₹34,000 to ₹40,000 (section A row 41 conflict) and Amrita ₹42,500 go to the counsellor.
+- lpu-bba FAQ: "saving ₹27,600 total" and "saving ₹4,600 per semester" deleted (our subtractions; round 2 missed this FAQ copy of ₹27,600).
+- fees guide: D.Y. Patil Navi Mumbai Rs 43,750 per semester to the counsellor; the unsourced "Rs 2,000 to Rs 7,000" exam fee range deleted.
+- dy-patil review: Navi Mumbai "Rs. 42,500/sem" to the counsellor and "Rs. 2,500/semester extra" exam fee to "Included in fees" (section A row 32).
+
+**Left for later.** amity-bba-fees still carries derived savings (₹23,880 and ₹13,930 in prose) and IGNOU ~₹30,900; mba-hr still prints JAIN ₹49,000 for HR electives (note J1). Both are batch 27 scope.
+
+**Counts.** check-blog-fees 1792 -> 1790. No slug above its baseline.
+
+## 2026-11-28 B3 batch 25 round 3: QA rerun R1-R5, origin/main brand rename merged
+
+Branch fix/b3-batch-25. First a merge of origin/main 7c867dd (it contains the brand rename 615c7d2 and 5b67ad9) as ba5e73b, then this commit. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt 2026-11-28 on the 5 edited posts.
+
+**Merge (R3).** lib/blog.ts had 10 conflicts, all in posts batch 25 edited, and in each one main's only change was the brand name. Resolution: the batch side, then main's rule on those lines (EdifyEdu, Edify Education and Edify become edifyedu.in, 21 strings). lib/blog.ts now has no "Edify" string, the same as main. data/blog-fee-allowlist.json is main's, unchanged. check-blog-fees stayed at 1792 after the merge.
+
+**R1, the "off" exemption (scripts/lib/blog-fee-scan.mjs).** Why: round 2's AMOUNT_AFTER_RE accepted "off" with nothing after it, so "Rs 9,99,000 off-campus", "off the bat" and "Rs 10,000 off the online MBA" became exempt, though the old rule checked them (its "off" needs punctuation right after it). A figure is now exempt as a discount amount only when the label test passes AND one of the old rule's 10 discount patterns is in the same 80-character window (DISCOUNT_PATTERNS). So the exemption is a strict subset of the old one. Self-test: the Amity "off the online MBA" case now must be checked, "off-campus" and "off the bat" are added as must-check cases, and "Rs 10,000 off," (with punctuation) stays exempt.
+
+**R1, the MAHE coupon figure.** mahe-online-mba-review-2026 went from 7 to 8: "up to Rs 5,000 off MAHE Online MBA" is now checked. Its only source is lib/coupon-pages.ts (maxSavings), which is not lib/data.ts or a verify sheet, so the figure is deleted from the callout. The callout still links to the MAHE coupon page, which carries the amount. No baseline rise, no allowlist entry.
+
+**R2, unbacked comparisons.** MAHE and Amrita BBA have no exact fee in lib/data.ts, so nothing backs an ordering against them:
+- symbiosis-online-bba-review-2026: "Symbiosis sits structurally in the middle of the fee range. MAHE costs more than Symbiosis" is deleted. The NIRF and IoE reason stays.
+- amrita-online-bba-review-2026: "Its fee tier sits alongside MAHE Online BBA and Symbiosis SSODL (₹1,65,000)" is deleted, and so is "structurally the most accessible among Tier 1 Premium", the same kind of claim in the same sentence. ₹1,41,000 stays; it is the Amrita BBA total in audits/verify/per-semester-fees-2026-11-27.md section A row 29.
+
+**Low items.**
+- dy-patil-online-mba-review: MUJ "Rs 1.56-1.84 lakh" (body and table) now reads "Rs 1.84 lakh list, Rs 1.56 lakh after 15%", the lib/data.ts labels (₹1,84,000 list, ₹1,56,400 after 15%).
+- online-manipal-mba-review-2026: "and so is the higher fee than MUJ and SMU" now reads "and MAHE charges more than MUJ and SMU". No new fact: the getExactFee values back it (QA checked them).
+- check-blog-fees (R5): FREEZE_SLUGS and EXEMPTION_HOLD_SLUGS must each be exactly the 8 frozen posts, so adding a slug to both files fails. Proved: one slug added to both lists gave FAIL on both checks; restored.
+- The round 2 FIX-LOG sentence "only when the old rule would also exempt it" is corrected in place, and so is the matching scanner comment.
+
+**Counts.** check-blog-fees 1792 after the merge, 1791 after this commit (amrita-online-bba-review-2026 18 to 17; MAHE back to 7). No slug above its baseline.
+
+## 2026-11-28 B3 batch 25 round 2: QA F1-F8 (scanner exemptions, BVP revert, wrong and derived fees)
+
+Branch fix/b3-batch-25, on top of the origin/main merge 3efb19b. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. data-science-salary-india-2026-scope-jobs not touched. updatedAt 2026-11-28 on all 22 edited posts.
+
+**F1, scanner (scripts/lib/blog-fee-scan.mjs).** Why: v4 let figures through that the old rule would never have exempted ("fee difference of Rs X", "Rs X higher", "Rs X less"), because AMOUNT_BEFORE_RE and AMOUNT_AFTER_RE accepted label words outside the 10 discount words, and a table row could borrow a discount word from the next cell. Now:
+- Both patterns accept only the 10 DISCOUNT_SOURCES words (gap, save, saving, discount, off, cashback, scholarship, waiver, cheaper, lower). Correction (round 3): this sentence first said that a figure was exempt only when the old rule would also exempt it. That was false for "off": the AFTER pattern took "off" with nothing after it, so "Rs X off-campus" and "Rs X off the bat" became exempt although the old rule (which needs punctuation right after "off") checked them. Round 3 closes this.
+- The look-behind and look-ahead stop at the nearest td/th edge, so a cell cannot borrow a word from its neighbour.
+- Self-test: QA's injected cases are added (fee difference, higher, more expensive, less, concession, and two table rows with "Higher rate" and "Discount" in the next cell must be checked; "Rs 10,000 off the online MBA" stays exempt). The gate fails before scanning if any case flips.
+
+**F1, figures the fixed scanner exposed (8).** Each one is a derived gap or an unsourced total, so it is deleted, not reworded around:
+- online-manipal-mba-review-2026: "fee difference of Rs 1.17 lakh over MUJ and Rs 1.82 lakh over SMU" deleted (a subtraction of our own).
+- du-online-mba-delhi-university-2026: "Total (approx 2 years) Rs 20,000-25,000" goes to the counsellor. DU SOL has no exact fee in lib/data.ts.
+- dy-patil-online-mba-review: "Rs 1.89 lakh higher than JAIN (Rs 1.50 lakh)" was wrong twice (DPU is Rs 1,89,400 total, not a gap; JAIN is not Rs 1.50 lakh). Now "DPU (Rs 1.89 lakh) costs more than MUJ".
+- amity-online-bba-fees-2026: "₹55,120 less" and "saves ₹40,120" deleted. Sharda was also wrong at ₹1,20,000; lib/data.ts gives ₹1,35,000.
+- amity-online-bba-review-2026: "₹31,120 less" deleted.
+- online-bba-programs-india-2026: "a difference of ₹23,880" deleted. "NMIMS Standard ₹1,50,000 sem-wise" was unsourced; NMIMS lists ₹1,41,000.
+- muj-online-bba-review-2026: "₹36,000 less than MAHE" (MAHE BBA has no exact fee), "saves ₹21,600" and "₹31,120 premium" deleted. MUJ ₹1,44,000, LPU ₹1,22,400 and Amity ₹1,75,120 kept; each is in lib/data.ts.
+- why-online-mba-fees-differ-india-2026: "a Rs 55,000 concession" deleted from that sentence.
+
+**F2, Bharati Vidyapeeth.** Why: round 1 reworded "Backlog exams cost Rs 400" to "The backlog exam fee is Rs 400" and that wording happened to change the figure's class. A reword made to change a gate result is gaming, so it is reverted to the original wording. The figures are then handled on their merits: ₹400 has no source in lib/data.ts or a verify sheet, so both mentions go to the counsellor; "listing sites quote Rs 1,60,000" goes to "a lower figure", because repeating an unsourced number to rebut it still prints it. Rs 1,68,000 stays (feePlans one-time figure).
+
+**F3, wrong fees beside round 1 edits.**
+- Shoolini (pharma, analytics FAQ): "standard ₹1,50,000" was wrong. Rishi confirmed Rs 1,58,000 / Rs 1,30,000 in chat, 28 Nov, matching lib/data.ts feePlans and the 18 Nov verify sheet. Both posts now name each figure: ₹1,30,000 without Pay-After-Placement and ₹1,58,000 with it, after scholarship, and ₹2,00,000 where the sentence is about the regular fee. No new "standard" figure. The pharma per-semester line "₹30,000 to ₹32,500" had an unsourced floor; it now gives Shoolini's own printed ₹32,500 (without PAP) and ₹33,575 (with PAP), and the one-time charge is called the ₹500 application fee. lib/data.ts and its checkedOn are unchanged (checkedOn stays the 18 Nov portal read).
+- mba-hr: "BVP (₹1,60,000)" x2 becomes "Bharati Vidyapeeth (₹1,78,000)", the lib/data.ts total. The ₹43,781 CU column stays (verify sheet per-semester-fees-2026-11-27, section A row 11).
+- CU rows in fintech, hospitality, logistics, real-estate: "₹1,16,250 net / ₹29,063 net" did not match the prose or lib/data.ts. Now ₹1,75,125 net (after up to 25% Early Bird) and ₹43,781 (section A row 11). ₹29,063 was our own division (section B).
+- jain-vs-amity: the ₹8,500 add-on (no source), the sums ₹2,04,500 and ₹1,83,500, and the gaps ₹20,500 and ₹29,000 are deleted; the add-on cells and totals go to the counsellor. ₹1.96L stays because the metaDescription quotes it; added to Q71 as item 7.
+
+**F4, derived figures.** lpu-bba "saves ₹27,600" x2, muj-bba "saves ₹21,600" and symbiosis-bba "MAHE at ₹1,80,000 commands ₹15,000 premium" deleted. Each was our own subtraction, and MAHE BBA has no exact fee.
+
+**F5, unbacked comparisons.** amrita-bba (4 places) and symbiosis-bba claimed Amrita costs less than MAHE and Symbiosis. Amrita BBA has no exact fee in lib/data.ts, so nothing backs the ordering; all five lose the comparison. The pharma H3 "lowest fee after scholarship" superlative is deleted.
+
+**F6, MATCH moves reviewed.** The 4 wrong moves are gone (Shoolini ₹1,50,000 x2 deleted, JAIN ₹2,04,500 and ₹1,83,500 deleted). integral-university-online-review: the "semester fee x semesters" products (₹33,000, ₹39,000, ₹76,800, ₹68,000, ₹36,000) and the "₹1,500 / ₹500 lower" differences were our own arithmetic, so they are deleted; the table now shows only the portal's semester fee, semester count and stated total. The other round 1 MATCH moves are figures for universities whose lib/data.ts record has a range, not an exact fee; they match the range and are left as they are.
+
+**F7, hold tied to the freeze.** check-blog-fees now fails unless EXEMPTION_HOLD_UNTIL equals FREEZE_UNTIL in check-protected-pages.mjs, the date is on or before 2026-12-05, and every held slug is in FREEZE_SLUGS. check-protected-pages runs its gate on import, so the constants are read from its file text. Proved: FREEZE_UNTIL set to 2026-12-04 gave FAIL; one frozen slug renamed gave FAIL "held slug smu-online-mba-review is not in FREEZE_SLUGS"; both restored.
+
+**F8.** The round 1 entry now names its base as 341f986 and lists the three missing moves. 1-year-mba "IIM Executive programmes (Rs 25 lakh-plus)" figure deleted (no source).
+
+**Counts.** check-blog-fees 1800 -> 1792 with the fixed scanner (it first rose to 1808 from the 8 exposed figures). No slug above its baseline; the gate lowered and staged the baseline.
+
+## 2026-11-28 B3 batch 25: discount-word narrowing in check-blog-fees, exposed figures fixed
+
+Branch fix/b3-batch-25, on top of batch 24 round 4 (341f986; corrected in round 2, this line first said b34594c). Option (a) as chosen by the coordinator. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. data-science-salary-india-2026-scope-jobs not touched. updatedAt 2026-11-28 on all 64 edited posts.
+
+**Why.** The old scanner treated any figure within reach of a discount word (scholarship, discount, saves, off, waiver, grant and four more) as NON_FEE. That exempted real fees that only sat near the word: "MUJ costs Rs 1,56,400 after the 15% discount" was never checked against lib/data.ts. The narrowing makes the gate check every fee and exempt only the discount amount itself.
+
+**Scanner v4 (scripts/lib/blog-fee-scan.mjs).**
+- The ten discount sources leave the proximity list. A figure is exempt as a discount only when it is the amount of the discount ("save Rs X", "Rs X off", "Rs X scholarship", "Rs X cheaper", "gap of Rs X"), via AMOUNT_BEFORE_RE and AMOUNT_AFTER_RE. The row-header rule is narrowed the same way.
+- Every other proximity pattern is unchanged, including the per-semester rule (kept as it is today, by decision).
+- Table hits are de-duplicated (uniqueByUid), and a table caption now feeds programme detection.
+- feePlans: a plan's list fee is accepted as its own exact interval, and a row interval is built only when the row has a numeric total. Why: Shoolini's MBA plan has a row with an instalment and no total, so the plan span was NaN and the published Rs 2,00,000 list fee failed. The plan span itself is unchanged. Dropping the NaN instead would have widened the span to Rs 23,700 to Rs 2,00,000 and accepted wrong figures.
+- Hold list: the 8 posts under the 5 Dec title freeze keep the pre-v4 exemption until EXEMPTION_HOLD_UNTIL = 2026-12-05, because their bodies cannot be edited before then. Measured now, the hold covers a net 9 figures (chandigarh-mba +2, amity-mba +5, bits +3, symbiosis -1; the first estimate was about 28 gross).
+
+**Gate (scripts/check-blog-fees.mjs).**
+- Fails after 2026-12-05 while any post is still on the hold list. The date is never moved forward. I proved this with the clock set to 2026-12-06: FAIL, listing the 8 posts.
+- Self-test before the scan: six discount-rule cases (a fee near a discount word must be checked; a discount amount must stay exempt) and two feePlans cases (the Shoolini list fee is MATCH; Rs 2,45,000 for the same plan is MISMATCH).
+
+**Counts.**
+- Unverified total: 1861 at 341f986 (old rule) to 1800 (new rule). Every slug is at or below its baseline, and the gate lowered the baseline itself.
+- On the same tree, the old rule gives 1843 and the new rule 1800. Moves: 236 NON_FEE to MATCH, 38 UNRESOLVED to MATCH, 15 NON_FEE to MISMATCH, 5 NON_FEE to UNRESOLVED, 3 MISMATCH to NON_FEE, 8 UNRESOLVED to NON_FEE, 7 UNRESOLVED to MISMATCH, 1 UNRESOLVED to ORPHAN, 1 MISMATCH to MATCH (the last three added in round 2; QA found them missing).
+
+**Content fixes (64 posts), by the batch rules.**
+- MATCH figures kept verbatim.
+- A figure in a sentence about a named online programme is now attributed: a multi-university sentence "Uni at Rs X" became "Uni (Rs X)", or the university name went into the sentence or the table's first cell. Wrong values were corrected to the labelled getExactFee value. Examples: Sharda BBA Rs 1,20,000 is now Rs 1,35,000; NMIMS BBA Rs 1,50,000 is now Rs 1,41,000; CU BBA Rs 1,40,000 is now Rs 1,31,250, and the CU BBA "sticker Rs 1,75,000" is gone; CU Triple plan Rs 1,80,400 "after 18%" is now Rs 1,90,400 after up to 20% Early Bird; BVP Rs 1,60,000 is now Rs 1,78,000; CU MBA Rs 1,16,250 and Rs 1.65 lakh / Rs 2.20 lakh are now Rs 1,75,125 / Rs 2,33,500.
+- Derived figures deleted, never recomputed: "saves Rs X versus", "commands Rs X premium", price gaps, net differences, scholarship savings, effective-fee bands, per-year and per-semester splits of the CU plans, and MAHE BBA first-semester scholarship maths. MAHE BBA and Amrita BBA have no exact fee in lib/data.ts, so their comparison figures went and the sentences now compare without numbers.
+- Campus, state and generic figures with no data behind them (AMU, TMU, MGR, Madras, MZU, Sathyabama, campus MBA and BCA ranges, budget brackets) deleted, or the sentence now points to our counsellor.
+
+**Plan for the next batches.**
+- Batch 26 (option b): a gate-only data file, data/per-semester-fees.json. It is seeded only from audits/verify/per-semester-fees-2026-11-27.md section E, array 1: the 40 rows where the blog figure matches the portal, each with its source URL and date. Array 2 is left out. Only check-blog-fees reads the file.
+- Before the gate's university matching changes, fix the section C misattributions: UU fees shown as SMU or MAHE, ARKA JAIN fees shown as JAIN, the LPU MBA tagged "MA", DPU Pune tagged Navi Mumbai, and IGNOU's annual Rs 10,300 shown per semester.
+- Batches 27 and later: turn on the per-semester rule post by post, with a flat ratchet. Delete the derived per-semester columns, the "x 6" lines and the 22 section B figures that are our own divisions.
+- 5 Dec: when the title freeze lifts, fix the 8 held posts and empty EXEMPTION_HOLD_SLUGS. The gate fails from 6 Dec until that is done.
+
+## 2026-11-28 · B7b: no exam mode without a confirmed record; "from home" only for the 11 (branch fix/b7b-default-exam-mode, stacked on fix/b7-exam-mode b677143, not pushed)
+
+- **Why:** B7 deferred item (4). 111 records (143 minus 25 confirmed minus B7's 7) carry the importer default examMode 'Online' that nobody has
+  checked, and every template turned that default into "Online proctored examinations from home. No exam centre visit
+  required.", "No campus visits required", "via webcam from home or office", a green tick in the compare table's Online
+  Exam column and "edifyedu.in records X exams as Online". The same text also printed for confirmed universities whose
+  source says online but not from home (CHRIST, CU, Galgotias, GLA, JAIN, KL, Manav Rachna, UPES, VGU, Symbiosis,
+  Kurukshetra, DSU). VIT showed this wording while holding exams at centres, so the default is not safe to print.
+- **Rule (lib/exam-mode.ts examTier):** 'centre' (VIT, BITS) unchanged; 'fromHome' (CONFIRMED_FROM_HOME, the 11) keeps
+  the from-home wording; 'online' (confirmed, location not stated) gets "Exams are online." and no from-home, webcam or
+  campus-visit claim; 'unverified' (B7's 7) keeps the counsellor line; 'unrecorded' (everyone else) gets "Check the exam
+  format with our counsellor before you enrol.", a neutral dash in the compare table and "Ask our counsellor" in the stat
+  cells. examMode in lib/data.ts is unchanged for every record.
+- **Templates:** SectionExams, SectionClasses, SectionAbout ("no mandatory campus visits" now only for the 11),
+  UniProgramBody FAQ, UniSpecBody two FAQs, UniversityPageClient FAQ and both stat cells, ComparisonTable,
+  compare-answers row and FAQ, university-answers Q7 ("edifyedu.in has not confirmed how and where X holds its online
+  MBA exams."). The Galgotias BCA custom intro lost "with no mandatory campus visits" (Galgotias source: online
+  proctored, location not stated).
+- **Page-content JSON (28 files, 60 strings):** for unrecorded universities, sentences claiming online, proctored,
+  webcam, photo-ID-for-proctoring, "no mandatory campus visits" or exam centres were deleted, and exam sections and
+  exam FAQs that lost a sentence start or end with the neutral line. "Proctored" was dropped from the weighting
+  sentences, whose 30-40 / 60-70 splits stay (deferred item 1 applies to them too). For confirmed 'online'
+  universities, webcam, Aadhaar and "no mandatory campus visit" sentences were deleted; "proctored" stays where the
+  source says proctored and was removed for Kurukshetra and Symbiosis, whose sources do not. JAIN's and UPES's sources
+  do mention a webcam, but the webcam lines went too, per the tier rule; they can come back from those sources. One
+  Jaypee red flag ("Proctoring software has reported rejecting Voter ID ...") was removed: nothing sources it.
+  IGNOU's "TEE are held twice a year at 800+ exam centres" and "Online TEE options" went too: no sheet sources them.
+- **Kept on purpose:** "No campus visit is required for admission" (admission, not exams), "study from anywhere"
+  (study, not exams), DSU's optional networking visits, Shoolini's methodology-PDF sentence (sourced in B7).
+- **Not touched:** lib/blog.ts (out of bounds), lib/content.ts programme `format` strings (not rendered),
+  components/LearningExperience.tsx (not imported).
+- **Proof (next start on the build, all 2,150 valid-urls fetched, 0 failures; JSON-LD kept, RSC payload ignored):**
+  "from home" is on 285 pages: 278 belong to the 11 CONFIRMED_FROM_HOME universities, and 7 are /programs/mba/{spec}
+  hubs that list only universities from the 11 (agribusiness, analytics-and-data-science, digital-entrepreneurship,
+  environmental-social-and-governance-esg, global-finance-market, hospitality-management,
+  international-finance-and-accounting). "No exam centre visit required": 268 pages, all the 11. "via webcam": 11
+  pages, all the 11. Page checks: noida-international-university-online/mba shows the neutral line and no mode;
+  its profile stat cell reads "Ask our counsellor"; lovely-professional-university-online/mba keeps the from-home line;
+  upes-online/mba and its profile read "Exams are online." with no from-home, webcam or campus-visit claim. On the 41
+  compare pages, every "edifyedu.in records X exams as Online" names a confirmed university.
+
+## 2026-11-28 · B7 round 2: QA F1, F5 and F15 (branch fix/b7-exam-mode, not pushed)
+
+QA report: audits/qa/2026-11-28-b7-exam-mode-premerge.md. Merged origin/main (0a8999e) first: FIX-LOG kept both
+sides; lib/specFaqs.ts kept main's IGNOU "Rs 16,000 per semester" line and this branch's exam sentence.
+- **F1, why:** examSentenceForUniversities added "Exam format differs by university." whenever an unconfirmed
+  university was listed. That is false on its face on the 12 single-university spec hubs, and nothing on record shows
+  the formats differ on the others. **What:** the sentence is gone. "Each university sets its own exam format." is used
+  only where 2 or more universities are listed, before the counsellor or neutral line. A single confirmed-Online hub
+  now reads "Exams are online." instead of "at every university listed here".
+- **F5, why:** the earlier entry said DSU's wording was unchanged. It is corrected in place below, with the Q80
+  dependency.
+- **F15, why:** the /programs/mba FAQ (components/MBAHubClient.tsx) defined online MBA as having "AI-proctored online
+  exams", false for VIT and BITS. **What:** it now says "exam format varies by university, so ask our counsellor". That
+  holds on this page, which lists VIT and BITS (exam centres) beside confirmed online-proctored universities.
+- **Q29:** the "what stays" column now records that the Shoolini hub shows the counsellor line and its exams body
+  follows the methodology PDF.
+
+## 2026-11-28 · B7 follow-up: spec-hub FAQ exam sentence from lib/exam-mode.ts (branch fix/b7-exam-mode, not pushed)
+
+- **Why:** lib/specFaqs.ts answered "Can I do online MBA in X while working full-time?" with "Exams are online and
+  AI-proctored from home" on every /programs/mba/{spec} hub, for every university listed. VIT and BITS hold end-semester
+  exams at centres (CONFIRMED_EXAM_MODE 'Exam Centre'), 7 universities have no sourced mode, and about 111 records have
+  no exam-mode record at all, so the sentence was false or a guess on every hub that listed them.
+- **What:** getSpecFAQs takes the listed universities (server page and MBASpecHubClient pass the same uniIds set) and
+  the sentence comes from examSentenceForUniversities in lib/exam-mode.ts. It may only claim what holds for every
+  university on the page: "from home" when all are in the new CONFIRMED_FROM_HOME set (the audit's 11 "from home or
+  anywhere" rows), "online" when all are confirmed 'Online'. Otherwise it names the confirmed Exam Centre universities
+  ("... hold end-semester exams in person at designated exam centres.") and ends with the counsellor line when an
+  UNVERIFIED_EXAM_MODE university is listed, or "Check the exam format with our counsellor before you enrol." when only
+  unrecorded ones are. No mode is invented. The "AI-proctored" claim is dropped: no sheet sources it for all.
+- **Other shared templates checked:** no other live template hard-codes "from home" for every university.
+  components/LearningExperience.tsx does ("from the absolute comfort of your home") but nothing imports it. The
+  per-university templates (SectionExams, UniversityPageClient FAQ) branch on examMode and are deferred item 4 below.
+- **Deferred, logged for later (coordinator, 28 Nov):** (1) the 30-40% / 60-70% weighting sentences in the DY Patil,
+  Sharda and Shoolini exams bodies, likely templated; (3) the NMIMS tagline "slot-based online exams" in lib/data.ts,
+  not rendered; (4) about 111 records with no exam-mode record still get the default "from home" wording in
+  SectionExams and the profile FAQ.
+
+## 2026-11-28 · B7 exam mode: counsellor line for 7 universities with no sourced mode (branch fix/b7-exam-mode, not pushed)
+
+- **Why:** every hub, spec page, profile FAQ and AI-answer block printed "Online proctored examinations from home. No
+  exam centre visit required." (or "Online examinations", "No campus visits required") for every record carrying the
+  importer default examMode 'Online'. For these universities nobody had read the mode on the university's own pages
+  (audits/exam-mode-verified-2026-11-16.md, "Not stated or conflicting", plus Shoolini as ambiguous), so the line was a
+  guess presented as fact. VIT showed the same error and was in person; Graphic Era's old guidelines and Shoolini's
+  methodology PDF both mention exam centres or campus invigilation. Date-locked to after the 28 Nov guard (passed today).
+- **Who gets the counsellor line (UNVERIFIED_EXAM_MODE, lib/exam-mode.ts):** dy-patil-university-online,
+  graphic-era-university-online, nmims-online, sharda-university-online, mody-university-online,
+  sathyabama-university-online (6 still unverified) and shoolini-university-online (ambiguous; Q29 still open).
+  Line: "Talk to our counsellor for how and where exams are held." No mode is invented; examMode in lib/data.ts is unchanged.
+- **DSU is not in that set.** The 16 Nov audit listed it as unverified, but audits/verify/dayananda-sagar-university-online-2026-11-18.md
+  row M6 is a MATCH ("Online Examination" on dsuonline.com/online-mba/, plus a "Remote Proctored Online Examination"
+  disclosure). DSU was added to CONFIRMED_EXAM_MODE as 'Online' with that citation, so 6 + DSU = the brief's 7.
+  Corrected in round 2 (QA F5): this is not wording-neutral. Confirming DSU adds two rendered facts, both backed by
+  M6: "Exams: Online" in the DSU hub Quick Facts, and "Online classes; Online exams" on the DSU profile. The
+  confirmation depends on Q80: B2 (audits/verify/b2-official-urls-2026-11-28.md) still holds dsuonline.com UNVERIFIED as
+  DSU's official site. If Q80 comes back "no", remove DSU from CONFIRMED_EXAM_MODE. DSU's older "from home" and
+  "via webcam from home or office" lines, which M6 does not support, belong to deferred item (4).
+- **VIT:** already 'Exam Centre' since 3.4C1 (live 16 Nov, a6d3771), sourced to registration.vitonline.in in the audit
+  CSV. Nothing to change. The 22 confirmed rows are untouched.
+- **Where it renders, what changed:** SectionExams "Exam Mode", SectionClasses "Assessments", SectionAbout intro (the
+  "with no mandatory campus visits" clause is dropped for the set), UniProgramBody FAQ, UniSpecBody two FAQs,
+  UniversityPageClient FAQ "How are exams conducted" and both "Exam Mode" stat cells ("Ask our counsellor"),
+  ComparisonTable "Online Exam" (neutral dash, not a green tick), compare-answers row and FAQ, university-answers Q7.
+- **Page-content JSON:** mode, proctoring, webcam and ID-for-proctoring sentences removed from the exams sections of
+  dy-patil, nmims, sharda and shoolini MBA hubs, the DY Patil work-while-studying FAQ, the NMIMS hero ("runs entirely
+  online with proctored exams") and the Shoolini classes body ("no mandatory campus visit"). Shoolini's exams body now
+  states what its methodology PDF says (both modes described). Graphic Era, Mody and Sathyabama JSON had no exam claim.
+- **Left alone, flagged:** the 30-40% / 60-70% weighting sentences in the DY Patil, Sharda and Shoolini exams bodies
+  look templated (B3 batch 2 called the same split typed, not sourced); out of B7 scope. lib/specFaqs.ts says "Exams are
+  online and AI-proctored from home" for all universities on /programs and MBA spec hubs; generic, also false for VIT and
+  BITS. The NMIMS tagline "slot-based online exams" in lib/data.ts is not rendered by any page. The other ~111 records
+  with no examModeSource still print the default wording, as the audit's draft notes; that widening is a separate decision.
+
+## 2026-11-28 · B1 round 2: QA F1 and F2, Amity and Symbiosis fee dates, JAIN NIRF source (branch fix/b1-provenance)
+
+QA report: audits/qa/2026-11-28-b1-provenance-premerge.md (FAIL, two blockers). Merged origin/main (0a8999e) first; QUESTIONS conflict resolved as Q80 then Q81.
+- **F1, DEB line on non-MBA pages.** Why: every `deb` entry rests on the register's MBA row, but `debSessionLine(u)` had no programme, so the line claimed a 2026-27 Online entitlement on 92 BBA/BCA/MCA pages that no sheet checked. Now `debSessionLine(u, program, named)` returns null unless program is MBA. The hub passes its programme. The profile names it: "Online MBA: UGC-DEB entitled, Online mode, 2026-27 session. Register checked 18 Nov 2026".
+- **F2, KNOWN_GAPS could grow.** Why: QA swapped BITS's dated fee for a "Q999" gap and the gate passed. Now `ALLOWED_GAP_IDS` is a frozen set (DSU, ACU) that may only lose entries, any gap outside it fails, each gap must start with a Q number that is a row in audits/QUESTIONS-FOR-RISHI.md, and an allowed id that gains fee provenance fails until removed. Self-test went from 8 to 11 cases (new gap added, missing question row, no question number); all caught.
+- **Advisory 7, two fee dates on Amity and Symbiosis.** Why: the payment-mode table said "Fees checked on 13 November 2026" beside the new 18 Nov line. Both 18 Nov sheets re-read the same figures on the portal (Amity standard rows MATCH, premium one-time/annual MATCH and the batch-2/17 corrected semester and EMI totals equal the published ones; Symbiosis both totals MATCH). `feePlans.checkedOn` is now 2026-11-18 on Amity's two tracks and Symbiosis's one, with the sheet named in `source`. `feeVerifiedOn` is left at 2026-11-13: it is not rendered, and it describes the whole record's fees, which the MBA-only sheets did not re-read. The Symbiosis "Registration" label question (Q16) is unchanged.
+- **Advisory 4, JAIN NIRF.** Why: the value names Management #73 but cited only the University table. Added `alsoSourceUrls: ['https://www.nirfindia.org/Rankings/2025/ManagementRanking.html']` (the sheet's Management row source); the gate checks every extra URL is on nirfindia.org.
+
+## 2026-11-28 · B1: fee, DEB, NAAC and NIRF provenance; fee date and DEB session rendered; check-fee-provenance gate (branch fix/b1-provenance)
+
+- **Why:** Phase B's exit gate is "checkedOn present on every fee for those 10". Before this, 26 records carried a `feeVerifiedOn` that no page rendered, and nothing tied a date to a figure: JAIN's 30 Oct date was a BBA/MCA read, and a fee could change while keeping its old date. A reader (or a model) had no way to see when a fee was last true.
+- **What:** `UNIVERSITY_PROVENANCE` in `lib/data.ts` with `{ value, sourceUrl, checkedOn, session, sheet }` for fee, DEB, NAAC and NIRF, attached to records as the optional `provenance` field. getExactFee, titles and metas never read it. Every value comes from the 18 Nov verify sheets, which record a portal (or register) read of that exact figure that day. Rendered: "Fee checked 18 Nov 2026 on the university portal" under the fee tile on the MBA hub and under the Quick Stats on the profile (MBA tab only); "UGC-DEB entitled, Online mode, 2026-27 session. Register checked 18 Nov 2026" under the hub eyebrow and in the profile's Approvals card. Small muted text, no link; sourceUrl stays in data.
+- **Covered (8):** BITS WILP, Galgotias, JAIN, Symbiosis, Dr. D.Y. Patil Vidyapeeth, Amity, Uttaranchal, Shoolini. Left out on purpose: Amity NAAC (AUUP absent from NAAC's valid list, Q24); BITS DEB (no register rows); DSU and Uttaranchal NIRF (not ranked, nothing to source).
+- **Gaps (2):** dayananda-sagar-university-online (Q80: B2 could not confirm dsuonline.com is DSU's own domain, so the fee source fails rule 5) and adichunchanagiri-university-online (Q81: payable MBA total unclear since Q31). Neither got a date.
+- **Gate:** `scripts/check-fee-provenance.mts`, run after check-fee-baseline with `--self-test`. Scope is the 10 queue universities plus any record with provenance. Fails on a missing or future `checkedOn`, a missing value, sourceUrl or sheet, a fee source off the record's officialUrl host, DEB/NAAC/NIRF sources off deb.ugc.ac.in / naac.gov.in / nirfindia.org, a DEB entry without a session, NAAC or NIRF disagreeing with the record, and a fee value that is not what the page prints (so a changed fee cannot keep an old date). KNOWN_GAPS only shrinks: a gap that gains provenance fails until it is removed. Acceptance: deleting Galgotias' `checkedOn` in lib/data.ts printed `galgotias-university-online.fee: missing checkedOn` and exit 1; restored, exit 0. Self-test injects 8 defects and catches all 8.
+- **Known wrinkle:** Amity and Symbiosis also show the older "Fees checked on 13 November 2026" line in their payment-mode tables (`feePlans.checkedOn`, Rishi's 13 Nov confirmation). Both dates are true, but a page now shows two. Not changed here, because B1 was scoped to add lines only; bringing those two `feePlans.checkedOn` to 18 Nov (the sheet re-read them, MATCH) is a one-line follow-up each.
+
+## 2026-11-28 · B2: Adichunchanagiri officialUrl for schema sameAs (branch fix/b1-provenance)
+
+- **What:** `officialUrl: 'https://acuonline.edu.in'` on adichunchanagiri-university-online, from `audits/verify/b2-official-urls-2026-11-28.md` (CONFIRMED: acu.edu.in links its "Online Programmes" to the portal). No `feeVerifiedOn`: B2 checked the domain, not the fee, and Q31 still holds the fee open.
+- **Why:** the profile's CollegeOrUniversity JSON-LD emits `sameAs` only from `officialUrl` (A2), so ACU had no entity link. The value is used by schema only; no template renders `University.officialUrl` as visible copy.
+- **Sheet was stale on 3 of 4:** B2 marked BITS WILP, Dr. D.Y. Patil Vidyapeeth and Shoolini "absent", but origin/main already carries the same three URLs (BITS in B3 batch 1, 0703326, 18 Nov; Shoolini in B3 batch 2, 0a33af4, 19 Nov; all from the 18 Nov verify sheets). They were left unchanged. check-official-urls moves 29 to 30 portals, not 23 to 27: the sheet's 23 predates those additions.
+- **DSU left as is:** B2 marks dsuonline.com UNVERIFIED (Cloudflare blocked the main-domain check). The record already carries it from the 18 Nov sheet; not removed here, filed by the coordinator as Q80.
+
 ## 2026-11-28 · A6: 28 Nov guard check, clicks half PASS
 
 - **What:** weekly Search Console clicks on pages not containing /tools (Windsor, ISO weeks): W45 144, W46 187, W47 308, W48 partial 165 (23-25 Nov).

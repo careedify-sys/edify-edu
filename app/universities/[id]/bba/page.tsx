@@ -21,6 +21,7 @@ import { resolveProgramme } from '@/lib/seo/resolve-programme'
 import { naacSuffix, naacSegment, naacAccredited, naacPhrase } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription, onlinePrefix } from '@/lib/seo/mode-unverified'
 import { formatUniversityDisplayName } from '@/lib/format'
+import { BBA_HEAD_FROZEN_FEELESS } from '@/lib/seo/bba-fee-title-freeze'
 
 export async function generateStaticParams() {
   return UNIVERSITIES.filter(u => u.programs.includes('BBA')).map(u => ({ id: u.id }))
@@ -47,7 +48,8 @@ export async function generateMetadata(
   // Title and description fee: exact rupees from getExactFee, list price for a
   // list-vs-discount fee. getDisplayFee's compact form was parsed from
   // abbreviated pd.fees ("₹1.61L" for a ₹1,61,600 fee).
-  const feeTok = formatExactFeeShort(getExactFee(u, 'BBA'))
+  // Head freeze for two corrected fees: see lib/seo/bba-fee-title-freeze.ts.
+  const feeTok = BBA_HEAD_FROZEN_FEELESS.has(u.id) ? null : formatExactFeeShort(getExactFee(u, 'BBA'))
   const specCount = pd?.specs?.length || 4
   const nirfLabel = nirfForProgramme(u, 'BBA')
   const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''
@@ -96,7 +98,9 @@ function BBAProgramSchema({
 }) {
   const baseUrl = 'https://edifyedu.in'
   const pageUrl = `${baseUrl}/universities/${u.id}/bba`
-  const durationYears = parseInt(pd.duration?.replace(/[^0-9]/g, '') || '3', 10) || 3
+  // First number only: stripping every non-digit turned "3 Years (Hons) / 4
+  // Years" into P34Y (QA 2026-11-28, MAHE BBA).
+  const durationYears = parseInt(pd.duration?.match(/\d+/)?.[0] || '3', 10) || 3
   const kw = pageKeywords[`${u.id}-bba`]?.join(', ') || ''
 
   const programSchema: Record<string, unknown> = {

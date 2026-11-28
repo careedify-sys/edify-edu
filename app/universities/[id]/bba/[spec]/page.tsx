@@ -7,6 +7,7 @@ import { getProgramSpecParams, resolveSpec } from '@/lib/data/programs'
 import UniSpecBody from '@/components/UniSpecBody'
 import { getTitleName, getShortTitleName, shortenSpec, clampTitle, clampTitleSpecLed, clampDescription } from '@/lib/seo-title'
 import { getExactFee, formatExactFeeShort } from '@/lib/fees'
+import { BBA_HEAD_FROZEN_FEELESS } from '@/lib/seo/bba-fee-title-freeze'
 import { pageKeywords } from '@/lib/page-keywords'
 import { naacSuffix, naacSegment, naacAccredited } from '@/lib/seo/display-guards'
 import { shouldIndexUniversity, unverifiedDescription } from '@/lib/seo/mode-unverified'
@@ -47,7 +48,8 @@ export async function generateMetadata(
   // Exact rupees via getExactFee, list price for a discounted fee. This was
   // compactFee of raw pd.fees, or of the MBA-led feeMin, with no getDisplayFee
   // gate, so a suppressed or placeholder fee could still reach the title.
-  const feeExact = formatExactFeeShort(getExactFee(u, 'BBA'))
+  // Head freeze for two corrected fees: see lib/seo/bba-fee-title-freeze.ts.
+  const feeExact = BBA_HEAD_FROZEN_FEELESS.has(u.id) ? null : formatExactFeeShort(getExactFee(u, 'BBA'))
   const fee = feeExact ?? 'UGC-DEB Approved'
   const nirfLabel = nirfForProgramme(u, 'BBA')
   const nirfStr = nirfLabel ? `, ${nirfLabel}` : ''

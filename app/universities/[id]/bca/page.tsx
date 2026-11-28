@@ -147,7 +147,7 @@ function BCAProgramSchema({
 // cited in an AI Overview, so its copy stays as it is.
 const BCA_INTRO_OVERRIDES: Record<string, string> = {
   'galgotias-university-online':
-    'Galgotias University, often searched as Galgotia University, runs an Online BCA programme recognised by UGC DEB. It suits working professionals and fresh graduates aiming for careers in software development, data science and IT management. The 3-year programme runs through live and recorded sessions on an online platform, with no mandatory campus visits.',
+    'Galgotias University, often searched as Galgotia University, runs an Online BCA programme recognised by UGC DEB. It suits working professionals and fresh graduates aiming for careers in software development, data science and IT management. The 3-year programme runs through live and recorded sessions on an online platform.',
 }
 
 export default async function OnlineBCAPage(

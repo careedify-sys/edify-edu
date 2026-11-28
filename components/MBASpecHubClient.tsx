@@ -62,7 +62,7 @@ export default function MBASpecHubClient({ specSlug, specName, customH1, customI
   // Exact rupees, never the compact "₹1.6L" form: these are fee figures, not titles.
   const feeFloorStr = hasFees ? formatINR(feeFloor) : 'Contact our counsellor for current fee details'
   const feeCeilingStr = hasFees ? formatINR(feeCeiling) : ''
-  const templateFaqs = getSpecFAQs(specName, uniCount, hasFees ? feeFloorStr : null, hasFees ? feeCeilingStr : null)
+  const templateFaqs = getSpecFAQs(specName, uniCount, hasFees ? feeFloorStr : null, hasFees ? feeCeilingStr : null, mbaUnis.map(u => ({ id: u.id, name: u.name })))
   const faqs = editorial ? [...editorial.faqs, ...templateFaqs] : templateFaqs
 
   return (

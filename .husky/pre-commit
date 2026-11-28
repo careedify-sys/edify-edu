@@ -22,6 +22,16 @@ node scripts/check-em-dash-baseline.mjs || exit 1
 echo "pre-commit: check-fee-baseline"
 node scripts/check-fee-baseline.mjs || exit 1
 
+# B1 fee provenance. A Phase B queue fee needs { value, sourceUrl, checkedOn }
+# in UNIVERSITY_PROVENANCE (lib/data.ts), and the value must be the MBA fee the
+# page prints, so a changed fee cannot keep an old date. 26 records carried a
+# feeVerifiedOn that no page rendered and nothing tied to a figure. Any new
+# provenance record must be complete; the known-gap list only shrinks. See the
+# header of scripts/check-fee-provenance.mts.
+echo "pre-commit: check-fee-provenance"
+npx tsx scripts/check-fee-provenance.mts --self-test || exit 1
+npx tsx scripts/check-fee-provenance.mts || exit 1
+
 # Blog fee ratchet. Blocks any per-slug increase in unverified blog fee
 # figures and any fee figure in a brand-new post. See scripts/check-blog-fees.mjs.
 # First-hand copy (lib/data/first-hand/): no typed rupee figures, no em

@@ -3,13 +3,15 @@
 import Image from 'next/image'
 import type { University, ProgramDetail, Program } from '@/lib/data'
 import { cleanCareerOutcome, getProgramLevel } from '@/lib/format'
-import { getExactFee, formatExactFeeShort, formatExactFeeDetail, FEE_COUNSELLOR_LINE } from '@/lib/fees'
+import { getExactFee, formatExactFeeShort, formatExactFeeDetail, isLabelledFee, FEE_COUNSELLOR_LINE } from '@/lib/fees'
 import { TrendingUp } from 'lucide-react'
 import LOGOS_MANIFEST from '@/lib/data/logos-manifest.json'
 import RankingBadge from './RankingBadge'
 import { shouldIndexUniversity } from '@/lib/seo/mode-unverified'
 import { debBasis } from '@/lib/seo/deb-basis'
 import { programmeEligibility } from '@/lib/seo/display-guards'
+import { feeCheckedLine, debSessionLine } from '@/lib/provenance'
+import { answerFirstRows } from '@/lib/answer-first'
 
 interface Props {
   u: University
@@ -121,8 +123,19 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
     ? `one-time payment, this track${specSemester ? `; ${inr(specSemester)} paid by semester` : ''}`
     : formatExactFeeDetail(exactFee)
 
+  // B1: the date the shown MBA fee was read on the portal, hub only. A spec
+  // page can print a track fee, which provenance.fee does not cover.
+  const feeChecked = !spec && feeValue !== FEE_COUNSELLOR_LINE ? feeCheckedLine(u, program) : null
+  // B1: DEB session beside the approval, only where the eyebrow claims it.
+  const debLine = modeVerified && !basis ? debSessionLine(u, program) : null
+  // B4: answer-first rows (fee, eligibility, exam mode, each dated) on the MBA
+  // hub of the ten queue universities. Spec pages are out of scope.
+  const answerFirst = spec ? null : answerFirstRows(u, program)
+
+  // QA 2026-11-28 (F1): a labelled fee (tuition only, routes, list vs net) is
+  // not a total, so the tile says "Programme fee"; the label sits underneath.
   const stats = [
-    { label: 'Total Fees', value: feeValue, highlight: true, sub: feeDetail },
+    { label: !specOneTime && isLabelledFee(exactFee) ? 'Programme fee' : 'Total Fees', value: feeValue, highlight: true, sub: feeDetail, checked: feeChecked },
     { label: 'Duration',   value: pd.duration || '2 Years',       highlight: false },
     ...(eligibilityLabel ? [{ label: 'Eligibility', value: eligibilityLabel, highlight: false, sub: eligibilityNote }] : []),
     { label: 'NAAC',       value: u.naac,                         highlight: false },
@@ -152,6 +165,9 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
             {eyebrow}
           </span>
         </div>
+        {debLine && (
+          <p className="deb-session text-[11px] text-slate-400 -mt-2 mb-4">{debLine}</p>
+        )}
 
         {/* Logo (if available) + H1 block */}
         <div className="flex items-center gap-4 mb-4">
@@ -176,6 +192,25 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
             {h1}
           </h1>
         </div>
+
+        {/* B4: answer-first block. No heading element, so it sits before the first H2. */}
+        {answerFirst && (
+          <dl
+            id="answer-first"
+            className="answer-first rounded-lg border mb-4 max-w-3xl divide-y"
+            style={{ background: 'rgba(255,255,255,0.04)', borderColor: 'rgba(255,255,255,0.12)' }}
+          >
+            {answerFirst.map(r => (
+              <div key={r.label} className="af-row grid gap-1 sm:gap-3 px-4 py-2 sm:grid-cols-[120px_1fr]" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
+                <dt className="text-[11px] font-bold uppercase tracking-wide text-slate-400 sm:pt-0.5">{r.label}</dt>
+                <dd className="text-[13px] text-white leading-snug">
+                  <span className="af-value">{r.value}</span>
+                  {r.checked && <span className="af-checked block text-[10px] text-slate-400 mt-0.5">{r.checked} by edifyedu.in</span>}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        )}
 
         {/* Ranking badges */}
         <RankingBadge u={u} />
@@ -211,6 +246,9 @@ export default function UniHero({ u, program, pd, cleanName, spec, specSlug, cus
               </div>
               {'sub' in s && s.sub && (
                 <div className="text-[11px] text-slate-300 mt-0.5 leading-snug" style={{ maxWidth: 240 }}>{s.sub}</div>
+              )}
+              {'checked' in s && s.checked && (
+                <div className="fee-checked-date text-[10px] text-slate-400 mt-1 leading-snug" style={{ maxWidth: 240 }}>{s.checked}</div>
               )}
             </div>
           ))}

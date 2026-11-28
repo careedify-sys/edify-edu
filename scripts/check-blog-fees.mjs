@@ -21,9 +21,118 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { spawnSync } from 'node:child_process'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
-import { scanAllPosts, perSlugUnverifiedCounts } from './lib/blog-fee-scan.mjs'
+import { scanAllPosts, scanPost, perSlugUnverifiedCounts, EXEMPTION_HOLD_UNTIL, EXEMPTION_HOLD_SLUGS } from './lib/blog-fee-scan.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
+
+// Time-boxed hold on the v4 discount-word narrowing (B3 batch 25). The listed
+// posts keep the pre-v4 exemption only until EXEMPTION_HOLD_UNTIL. After that
+// date the gate fails while any post is still listed: fix its figures, then
+// remove it from EXEMPTION_HOLD_SLUGS in scripts/lib/blog-fee-scan.mjs. The
+// date is never moved forward to make this pass.
+{
+  const d = new Date()
+  const today = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+  if (today > EXEMPTION_HOLD_UNTIL && EXEMPTION_HOLD_SLUGS.length > 0) {
+    console.error(`check-blog-fees: FAIL. The discount-word exemption hold expired on ${EXEMPTION_HOLD_UNTIL} and ${EXEMPTION_HOLD_SLUGS.length} post(s) are still listed:`)
+    for (const s of EXEMPTION_HOLD_SLUGS) console.error(`  ${s}`)
+    console.error('Fix their newly exposed figures and remove them from EXEMPTION_HOLD_SLUGS in scripts/lib/blog-fee-scan.mjs.')
+    process.exit(1)
+  }
+  // Round 2 (QA F7): the hold is tied to the title freeze. Its date must equal
+  // FREEZE_UNTIL in check-protected-pages.mjs and never pass 2026-12-05, and
+  // every held slug must be a frozen slug. check-protected-pages runs its gate
+  // on import, so its constants are read from the file text.
+  const pp = readFileSync(join(ROOT, 'scripts', 'check-protected-pages.mjs'), 'utf8')
+  const fu = pp.match(/const FREEZE_UNTIL = '(\d{4}-\d{2}-\d{2})'/)
+  const fsBlock = pp.match(/const FREEZE_SLUGS = \[([\s\S]*?)\]/)
+  const holdErr = []
+  if (!fu || !fsBlock) holdErr.push('could not read FREEZE_UNTIL / FREEZE_SLUGS from scripts/check-protected-pages.mjs')
+  else {
+    const freezeSlugs = new Set([...fsBlock[1].matchAll(/'([^']+)'/g)].map(m => m[1]))
+    if (freezeSlugs.size === 0) holdErr.push('FREEZE_SLUGS parsed as empty')
+    if (EXEMPTION_HOLD_UNTIL !== fu[1]) holdErr.push(`EXEMPTION_HOLD_UNTIL ${EXEMPTION_HOLD_UNTIL} differs from FREEZE_UNTIL ${fu[1]}`)
+    for (const s of EXEMPTION_HOLD_SLUGS) if (!freezeSlugs.has(s)) holdErr.push(`held slug ${s} is not in FREEZE_SLUGS`)
+    // Round 3 (QA R5): both lists must be exactly the 8 posts frozen on
+    // 6 Nov, so adding a slug to both files at once also fails.
+    const FROZEN_8 = [
+      'is-manipal-university-jaipur-fake-or-legit-2026',
+      'chandigarh-university-online-mba-review',
+      'amity-online-mba-review-2026',
+      'smu-online-mba-review',
+      'ignou-online-mba-review-2026',
+      'symbiosis-online-mba-review-2026',
+      'jain-online-mba-review-2026',
+      'bits-pilani-online-mba-review-2026',
+    ]
+    const same = (list) => list.length === FROZEN_8.length && FROZEN_8.every(s => list.includes(s))
+    if (!same([...freezeSlugs])) holdErr.push('FREEZE_SLUGS is not exactly the 8 frozen posts')
+    if (!same(EXEMPTION_HOLD_SLUGS) || new Set(EXEMPTION_HOLD_SLUGS).size !== EXEMPTION_HOLD_SLUGS.length) holdErr.push('EXEMPTION_HOLD_SLUGS is not exactly the 8 frozen posts')
+  }
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(EXEMPTION_HOLD_UNTIL) || EXEMPTION_HOLD_UNTIL > '2026-12-05') holdErr.push(`EXEMPTION_HOLD_UNTIL ${EXEMPTION_HOLD_UNTIL} is after 2026-12-05`)
+  if (holdErr.length) {
+    for (const e of holdErr) console.error(`check-blog-fees: FAIL. ${e}`)
+    process.exit(1)
+  }
+}
+
+// Self-test: the narrowed rule must catch a fee that only sits near a
+// discount word, and must still exempt a figure that is the discount amount.
+// A detector that cannot fail is not a gate (FIX-LOG, feedback 2026-09).
+{
+  const CASES = [
+    ['MUJ online MBA costs Rs 9,99,000 after the 15% discount.', false],
+    ['Pay upfront and save Rs 27,600 on the MUJ online MBA.', true],
+    // Round 3 (QA R1): "off" with no punctuation after it never exempted a
+    // figure under the old rule, so it must be checked now too.
+    ['Amity gives Rs 10,000 off the online MBA.', false],
+    ['The NMIMS online MBA costs Rs 9,99,000 off-campus.', false],
+    ['The NMIMS online MBA costs Rs 9,99,000 off the bat.', false],
+    ['Amity online MBA: Rs 10,000 off, for early applicants.', true],
+    // Round 2 (QA F1): words outside the 10 discount words never exempt a
+    // figure, and a word in another table cell never exempts it either.
+    ['NMIMS online MBA has a fee difference of Rs 1,17,000 over the MUJ online MBA.', false],
+    ['NMIMS online MBA is Rs 1,89,000 higher than the MUJ online MBA.', false],
+    ['NMIMS online MBA is Rs 64,000 more expensive than the MUJ online MBA.', false],
+    ['MUJ online BBA costs Rs 36,000 less than the NMIMS online BBA.', false],
+    ['NMIMS online MBA: Rs 9,99,000 concession-free for all.', false],
+    ['NMIMS online MBA</p><table><tr><td>Total</td><td>Rs 9,99,000</td><td>Higher rate</td></tr></table><p>', false],
+    ['NMIMS online MBA</p><table><tr><td>Total</td><td>Rs 9,99,000</td><td>Discount</td></tr></table><p>', false],
+    ['NMIMS offers a Rs 20,000 scholarship on the online MBA.', true],
+    ['LPU online MBA is Rs 40,000 cheaper than Amity online MBA.', true],
+    ['The gap of Rs 50,000 matters for the online MBA.', true],
+  ]
+  const bad = []
+  for (const [text, wantNonFee] of CASES) {
+    const r = scanPost({ slug: '__selftest__', status: 'published', title: 'self-test', content: `<p>${text}</p>` })[0]
+    const isNonFeeRow = r?.klass === 'NON_FEE'
+    if (!r || isNonFeeRow !== wantNonFee) bad.push(`${text} -> ${r ? r.klass : 'no figure'}`)
+  }
+  // v4 feePlans list interval: a plan whose rows lack a total must still
+  // accept its own list fee, and must not widen to accept an unrelated figure.
+  const KLASS_CASES = [
+    ['Shoolini University online MBA list fee is Rs 2,00,000.', 'MATCH'],
+    ['Shoolini University online MBA list fee is Rs 2,45,000.', 'MISMATCH'],
+    // v5 (B3 batch 26) per-semester table, data/per-semester-fees.json: a
+    // printed per-semester figure is MATCH, a different one for a university
+    // with rows is MISMATCH, and a university with no row stays NON_FEE.
+    ['LPU online MBA costs Rs 40,400 per semester.', 'MATCH'],
+    ['LPU online MBA costs Rs 50,000 per semester.', 'MISMATCH'],
+    ['NMIMS online MBA</p><table><tr><th>University</th><th>Per Semester</th></tr><tr><td>NMIMS</td><td>Rs 49,000</td></tr></table><p>', 'MISMATCH'],
+    ['Galgotias online MBA costs Rs 20,050 per semester.', 'NON_FEE'],
+    // A per-semester exam fee is not a semester fee and stays NON_FEE.
+    ['LPU online MBA exam fee is Rs 2,000 per semester.', 'NON_FEE'],
+  ]
+  for (const [text, want] of KLASS_CASES) {
+    const r = scanPost({ slug: '__selftest__', status: 'published', title: 'self-test', content: `<p>${text}</p>` })[0]
+    if (!r || r.klass !== want) bad.push(`${text} -> ${r ? r.klass : 'no figure'} (want ${want})`)
+  }
+  if (bad.length) {
+    console.error('check-blog-fees: FAIL (self-test). The discount-word rule did not behave as specified:')
+    for (const b of bad) console.error(`  ${b}`)
+    process.exit(1)
+  }
+}
 const BASELINE_PATH = join(ROOT, 'data', 'blog-fee-baseline.json')
 const ALLOWLIST_PATH = join(ROOT, 'data', 'blog-fee-allowlist.json')
 

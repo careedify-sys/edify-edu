@@ -24,7 +24,9 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
     ? `${baseUrl}/universities/${u.id}/${programSlug}/${specSlug}`
     : `${baseUrl}/universities/${u.id}/${programSlug}`
 
-  const durationYears = parseInt(pd.duration?.replace(/[^0-9]/g, '') || '2', 10) || 2
+  // First number only: stripping every non-digit turned "3 Years (Hons) / 4
+  // Years" into P34Y (QA 2026-11-28, MAHE BBA).
+  const durationYears = parseInt(pd.duration?.match(/\d+/)?.[0] || '2', 10) || 2
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -71,7 +73,8 @@ export default function SchemaBlock({ u, pd, program, programSlug, spec, specSlu
       category: 'Online Education',
       ...(offer?.['@type'] === 'Offer' && coupon ? {
         priceValidUntil: `${year}-12-31`,
-        description: `edifyedu.in Coupon: ${coupon.code} - ${coupon.savings}`,
+        // QA 2026-11-28 (F1): keep the fee label ahead of the coupon line.
+        description: `${offer.description ? `${offer.description}. ` : ''}edifyedu.in Coupon: ${coupon.code} - ${coupon.savings}`,
       } : {}),
     },
     hasCourseInstance: {
