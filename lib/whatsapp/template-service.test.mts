@@ -108,6 +108,28 @@ await test('submit with an image header: resumable upload, then create with the 
   assert.equal(bad.ok, false); assert.equal(calls.length, n)
 })
 
+await test('upload session ids carry ?sig= as Meta really returns them (28 Nov: "Meta returned 200" refusal)', async () => {
+  const repo = mockCampaignRepo()
+  const up = await ts.uploadFile(repo, OWNER, 'template_header', 'promo.png', 'image/png', PNG)
+  assert.ok(up.ok)
+  if (!up.ok) return
+  const session = 'upload:MTphdHRhY2htZW50OjVkNmY3ZDQ3LWU3ZTQtNGQ5Ni1iNjQ5?sig=ARZx-Ab_9cD8eF7gH6iJ5kL4m'
+  const { f, calls } = fakeMeta([
+    c => c.url.includes('/APP/uploads?') ? [200, { id: session }] : null,
+    c => c.url.endsWith('/' + session) ? [200, { h: '4::handle' }] : null,
+    c => c.url.includes('/WABA/message_templates') && c.method === 'POST' ? [200, { id: '778', status: 'PENDING', category: 'MARKETING' }] : null,
+  ])
+  const r = await ts.submitTemplate(repo, OWNER, env, f, { name: 'referral_invite_sig', language: 'en', category: 'MARKETING', body: 'Know someone planning an online degree? Refer them to edifyedu.in for free guidance.', buttons: referralButtons, headerFileId: up.id })
+  assert.deepEqual(r, { ok: true, status: 'PENDING', category: 'MARKETING' })
+  assert.equal(calls.length, 3)
+  // A session id that could leave the upload path is still refused.
+  for (const evil of ['upload:abc/../me', 'upload:abc?sig=x&access_token=y', 'upload:abc#x']) {
+    const g = fakeMeta([c => c.url.includes('/APP/uploads?') ? [200, { id: evil }] : null])
+    const e = await ts.submitTemplate(repo, OWNER, env, g.f, { name: 'referral_invite_evil', language: 'en', category: 'MARKETING', body: 'Know someone planning an online degree? Refer them to edifyedu.in for free guidance.', buttons: referralButtons, headerFileId: up.id })
+    assert.equal(e.ok, false, evil); assert.equal(g.calls.length, 1, evil)
+  }
+})
+
 await test('edit: only approved, rejected or paused; refused while a campaign uses it; never sends the category', async () => {
   const repo = mockCampaignRepo()
   const tpls = await repo.templates()

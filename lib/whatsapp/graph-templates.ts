@@ -203,7 +203,13 @@ export async function uploadHeaderSample(env: GraphEnv, bytes: Uint8Array, mime:
       method: 'POST', headers: { Authorization: `Bearer ${env.token}` },
     })
     const session = start.json?.id
-    if (start.status < 200 || start.status >= 300 || typeof session !== 'string' || !/^upload:[\w=:.-]+$/.test(session)) return fail(start)
+    // Meta's session id is "upload:<id>?sig=<signature>"; the sig is part of the
+    // id and goes on the next URL as is. Nothing else (no /, &, #) is accepted.
+    if (start.status < 200 || start.status >= 300 || typeof session !== 'string' || !/^upload:[\w=:.-]+(\?sig=[\w=:.%+-]+)?$/.test(session)) {
+      return start.status >= 200 && start.status < 300
+        ? { ok: false, code: null, error: 'Meta started the upload but sent an id this page does not recognise.' }
+        : fail(start)
+    }
     const up = await graphCall(f, `https://graph.facebook.com/${env.version}/${session}`, {
       method: 'POST',
       headers: { Authorization: `OAuth ${env.token}`, file_offset: '0', 'Content-Type': mime },
