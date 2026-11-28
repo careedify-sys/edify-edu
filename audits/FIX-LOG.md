@@ -1,5 +1,48 @@
 # Fix log
 
+## 2026-11-28 B3 batch 26 round 3: QA rerun F1 to F6 (audits/qa/2026-11-28-b3-batch-25r3-26-premerge-rerun.md)
+
+Branch fix/b3-batch-26. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt 2026-11-28 on all 3 edited posts: amity-online-bba-fees-2026, amity-online-bba-review-2026 and best-online-bba-colleges-india-2026.
+
+**Why.** lib/data.ts backs only two Amity BBA figures: ₹1,75,120 one-time and ₹1,99,000 semester-wise. Section A row 15 adds ₹33,200 per semester. No verify row backs any of the following for the BBA:
+- a 0%, no-cost or zero-cost EMI. The batch20 row 1a "No-Cost EMI" is the MBA fee card.
+- the EMI and annual figures ₹7,877, ₹8,292, ₹63,020, ₹66,333 and ₹1,89,050.
+- the ₹1,100 application and ₹2,500 registration fees. Row 15 says the page lists no registration fee.
+
+Round 2 called these unverified on one page while two sibling posts in the same batch printed them as fact. Wherever they appeared, readers are now pointed to the counsellor, and no figure replaces them.
+
+**F1. amity-online-bba-fees-2026.**
+- The table label "24-Month No-Cost EMI" is now "24-Month EMI".
+- The credit-score-700 eligibility line and the international 0% EMI line become "Ask our counsellor about EMI eligibility, including for international applicants".
+- The international FAQ now says to ask the counsellor which EMI options apply.
+- The self-pay FAQ says "24-month EMI" without "0%".
+- The question "Is the Amity Online BBA EMI really 0% interest?" is now "Does the Amity Online BBA EMI charge interest?".
+
+**F2. BVP ₹1,78,000 in mba-hr-management-online-india-2026.** Kept, by coordinator decision: ₹1,78,000 per Rishi's 28 Oct confirmation; BVP page lists ₹1,76,000 plus ₹1,000 registration and ₹1,000 admission. The 28 Oct entry in this log records that confirmation, and Rishi's decisions are final. The post is not changed in this round.
+
+**F3. Sibling posts.**
+- **amity-online-bba-review-2026.** Every ₹7,877, ₹8,292, ₹63,020, ₹66,333, ₹1,89,050 and ₹13,930 figure is gone from:
+  - the fee FAQ, the cheapest FAQ and the EMI FAQ ("Is the 0% EMI ... really interest-free? Yes" becomes "Does the Amity Online BBA EMI charge interest?" with a counsellor answer);
+  - the quick answer, the quick-facts bullet and the key-facts table;
+  - Options 2 to 4, the additional-fees paragraph and the verdict.
+  The two "0% EMI" claims in the verdict and cheapest FAQ are gone too. In the two rewritten sentences, the ₹23,880 savings figure was replaced by "costs less than Semester-wise at ₹1,99,000".
+- **best-online-bba-colleges-india-2026.** The Amity ₹1,89,050 / ₹63,020 annual figures and all three ₹7,877 "no-cost" / "zero-cost" EMI mentions are removed. The Amrita EMI lines lose the "zero-cost" claim. The ₹4,375 figure is untouched and is queued for batch 27.
+
+**F5.** "₹33,200/sem × 6 = ₹1,99,000" was false arithmetic (6 × 33,200 is 1,99,200). Every form of it, in both Amity posts, is now printed as Amity prints it: "₹33,200 per semester; Amity lists the effective fee as ₹1,99,000". The semester-wise FAQ no longer compares against the unbacked annual plan.
+
+**F6.** The ₹1,100 application and ₹2,500 registration figures are removed from both Amity posts, and readers are pointed to the counsellor. The refund FAQ now asks readers to confirm the fees and their refundability.
+
+**Counts.** check-blog-fees 1784 -> 1783 (amity-online-bba-review-2026 7 to 6).
+
+**Left for batch 27.**
+- **F4.** ₹23,880 in amity-online-bba-fees-2026 (4 places: two callouts, the sticker table note, the self-pay FAQ) and in amity-online-bba-review-2026 (the quick-facts bullet and the "difference between cheapest and most expensive" line).
+- **Frozen metaDescriptions.** amity-online-bba-fees-2026 ("₹7,877/mo 0% EMI") and amity-online-bba-review-2026 ("0% EMI ₹7,877 monthly") now contradict their bodies, so they are a priority.
+- **F7.** Symbiosis BBA: does the ₹5,000 registration column sit inside ₹1,65,000? This is a verify question.
+- **F8.** Amrita BBA "NIRF top tier rank (top 10 university category typically)" gives no category rank.
+- **best-online-bba-colleges-india-2026:**
+  - Amrita "EMI ₹4,375 per month" has no verify row.
+  - Amity is "NIRF University rank #22" here but "NIRF #49 management" in the review.
+
 ## 2026-11-28 B3 batch 26 round 2: QA N1 to N4 (audits/qa/2026-11-28-b3-batch-25r3-26-premerge.md)
 
 Branch fix/b3-batch-26. No title, seoTitle, h1Title or metaDescription edited. No allowlist entry. No frozen post touched. updatedAt 2026-11-28 on all 5 edited posts.
