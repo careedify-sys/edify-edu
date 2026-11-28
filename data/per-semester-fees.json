@@ -1,0 +1,531 @@
+[
+  {
+    "id": "ignou-online",
+    "programme": "MBA",
+    "label": "MBAOL, semesters 1, 2 and 4",
+    "amount": 16000,
+    "appliesTo": "sem 1, 2 and 4",
+    "excludes": [
+      "registration fee",
+      "development fee"
+    ],
+    "sourceUrl": "https://ignouiop.samarth.edu.in/index.php/site/programme-detail?id=6f5db5772cddf0f11bd46696112243d0528652930a76fee752719eb48ba3f1661671",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 1"
+  },
+  {
+    "id": "ignou-online",
+    "programme": "MBA",
+    "label": "MBAOL, semester 3 (8-credit project)",
+    "amount": 18000,
+    "appliesTo": "sem 3",
+    "excludes": [
+      "registration fee",
+      "development fee"
+    ],
+    "sourceUrl": "https://ignouiop.samarth.edu.in/index.php/site/programme-detail?id=6f5db5772cddf0f11bd46696112243d0528652930a76fee752719eb48ba3f1661671",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 1"
+  },
+  {
+    "id": "lovely-professional-university-online",
+    "programme": "MBA",
+    "label": "Applicable Fee (20% Student Grant)",
+    "amount": 40400,
+    "appliesTo": "every semester (4); includes exam fee 2,000 per semester",
+    "excludes": [
+      "registration fee 1,000"
+    ],
+    "sourceUrl": "https://www.lpuonline.com/online-mba-course",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 2"
+  },
+  {
+    "id": "lovely-professional-university-online",
+    "programme": "BBA",
+    "label": "Applicable Fee (20% Student Grant)",
+    "amount": 20400,
+    "appliesTo": "every semester (6); includes exam fee 2,000 per semester",
+    "excludes": [
+      "registration fee 1,000"
+    ],
+    "sourceUrl": "https://www.lpuonline.com/bachelor-of-business-administration-course-online",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 4"
+  },
+  {
+    "id": "manipal-university-jaipur-online",
+    "programme": "MBA",
+    "label": "Semester Fee Payment",
+    "amount": 46000,
+    "appliesTo": "every semester (4)",
+    "excludes": [
+      "application fee 500"
+    ],
+    "sourceUrl": "https://www.onlinemanipal.com/online-mba-manipal-university-jaipur",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 6"
+  },
+  {
+    "id": "manipal-university-jaipur-online",
+    "programme": "MBA",
+    "label": "Semester Fee Payment, 15% discount",
+    "amount": 39100,
+    "appliesTo": "every semester (4)",
+    "excludes": [
+      "application fee 500"
+    ],
+    "sourceUrl": "https://www.onlinemanipal.com/online-mba-manipal-university-jaipur",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 6"
+  },
+  {
+    "id": "manipal-university-jaipur-online",
+    "programme": "BBA",
+    "label": "Semester Fee Payment",
+    "amount": 24000,
+    "appliesTo": "every semester (6)",
+    "excludes": [
+      "application fee 500"
+    ],
+    "sourceUrl": "https://www.onlinemanipal.com/online-bba-degree-muj",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 7"
+  },
+  {
+    "id": "manipal-academy-higher-education-online",
+    "programme": "MBA",
+    "label": "Semester Fee Payment",
+    "amount": 73000,
+    "appliesTo": "every semester (4)",
+    "excludes": [
+      "application fee 1,500"
+    ],
+    "sourceUrl": "https://www.onlinemanipal.com/online-mba-degree-working-professionals-mahe",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 8"
+  },
+  {
+    "id": "manipal-academy-higher-education-online",
+    "programme": "BBA",
+    "label": "Semester Fee Payment (BBA and BBA Honours)",
+    "amount": 30000,
+    "appliesTo": "every semester (6, or 8 for Honours)",
+    "excludes": [
+      "application fee 1,500"
+    ],
+    "sourceUrl": "https://www.onlinemanipal.com/online-bba-honors-mahe",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 9"
+  },
+  {
+    "id": "sikkim-manipal-university-online",
+    "programme": "MBA",
+    "label": "Semester Fee Payment",
+    "amount": 30000,
+    "appliesTo": "every semester (4)",
+    "excludes": [
+      "application fee 500"
+    ],
+    "sourceUrl": "https://www.onlinemanipal.com/online-mba-degree-dual-specialization-smu",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 10"
+  },
+  {
+    "id": "sikkim-manipal-university-online",
+    "programme": "MBA",
+    "label": "Semester Fee Payment, 10% discount",
+    "amount": 27000,
+    "appliesTo": "every semester (4)",
+    "excludes": [
+      "application fee 500"
+    ],
+    "sourceUrl": "https://www.onlinemanipal.com/online-mba-degree-dual-specialization-smu",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 10"
+  },
+  {
+    "id": "chandigarh-university-online",
+    "programme": "MBA",
+    "label": "MBA",
+    "amount": 43781,
+    "appliesTo": "every semester (4)",
+    "excludes": [],
+    "sourceUrl": "https://www.cuonlineedu.in/mba",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 11"
+  },
+  {
+    "id": "chandigarh-university-online",
+    "programme": "MBA",
+    "label": "Triple Industry Certified MBA",
+    "amount": 47600,
+    "appliesTo": "every semester (4)",
+    "excludes": [],
+    "sourceUrl": "https://www.cuonlineedu.in/mba",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 12"
+  },
+  {
+    "id": "amity-university-online",
+    "programme": "BBA",
+    "label": "Per Semester Fee",
+    "amount": 33200,
+    "appliesTo": "every semester (6)",
+    "excludes": [],
+    "sourceUrl": "https://amityonline.com/bachelor-of-business-administration-online",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 15"
+  },
+  {
+    "id": "amity-university-online",
+    "programme": "MCA",
+    "label": "Per Semester Fee",
+    "amount": 49800,
+    "appliesTo": "every semester (4)",
+    "excludes": [],
+    "sourceUrl": "https://amityonline.com",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 16"
+  },
+  {
+    "id": "amity-university-online",
+    "programme": "MBA",
+    "label": "Per Semester Fee (standard tracks)",
+    "amount": 56300,
+    "appliesTo": "every semester (4)",
+    "excludes": [],
+    "sourceUrl": "https://amityonline.com/master-of-business-administration-online",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 17"
+  },
+  {
+    "id": "jain-university-online",
+    "programme": "MBA",
+    "label": "Pay Semesterly (1,96,000 electives, e.g. Finance and Business Analytics)",
+    "amount": 49000,
+    "appliesTo": "every semester (4)",
+    "excludes": [
+      "registration 2,500 one-time",
+      "exam fee 3,000 per year"
+    ],
+    "sourceUrl": "https://onlinejain.com/online-mba/finance-and-business-analytics",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 18"
+  },
+  {
+    "id": "jain-university-online",
+    "programme": "MBA",
+    "label": "Pay Semesterly (1,75,000 electives, e.g. Finance and Marketing)",
+    "amount": 43750,
+    "appliesTo": "every semester (4)",
+    "excludes": [
+      "registration 2,500 one-time",
+      "exam fee 3,000 per year"
+    ],
+    "sourceUrl": "https://onlinejain.com/online-mba/finance-and-marketing",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 19"
+  },
+  {
+    "id": "jain-university-online",
+    "programme": "MBA",
+    "label": "Pay Semesterly (1,60,000 electives, e.g. Finance)",
+    "amount": 40000,
+    "appliesTo": "every semester (4)",
+    "excludes": [
+      "registration 2,500 one-time",
+      "exam fee 3,000 per year"
+    ],
+    "sourceUrl": "https://onlinejain.com/online-mba/finance",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 20"
+  },
+  {
+    "id": "jain-university-online",
+    "programme": "BBA",
+    "label": "Pay Semesterly (Finance)",
+    "amount": 22500,
+    "appliesTo": "every semester (6)",
+    "excludes": [
+      "registration 2,500 one-time",
+      "exam fee 3,000 per year"
+    ],
+    "sourceUrl": "https://www.onlinejain.com/online-bba/finance",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 21"
+  },
+  {
+    "id": "nmims-online",
+    "programme": "BBA",
+    "label": "Semester fee payment, Fees for BBA",
+    "amount": 25000,
+    "appliesTo": "every semester (6)",
+    "excludes": [
+      "admission processing fee 1,200",
+      "exam fee 800 per subject per attempt"
+    ],
+    "sourceUrl": "https://online.nmims.edu/programs/hub/bachelors-program",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 22"
+  },
+  {
+    "id": "nmims-online",
+    "programme": "BBA",
+    "label": "Semester fee payment, BBA with Business Analytics Electives for Second & Third Year",
+    "amount": 30000,
+    "appliesTo": "every semester (6)",
+    "excludes": [
+      "admission processing fee 1,200",
+      "exam fee 800 per subject per attempt"
+    ],
+    "sourceUrl": "https://online.nmims.edu/programs/hub/bachelors-program",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 23"
+  },
+  {
+    "id": "nmims-online",
+    "programme": "MBA",
+    "label": "semester-wise",
+    "amount": 55000,
+    "appliesTo": "every semester (4)",
+    "excludes": [
+      "admission processing fee 1,200",
+      "exam fee 800 per subject per attempt"
+    ],
+    "sourceUrl": "https://online.nmims.edu/programs/hub/mba-online",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 24"
+  },
+  {
+    "id": "symbiosis-university-online",
+    "programme": "BBA",
+    "label": "EMI plan, semesters 2 to 6",
+    "amount": 26000,
+    "appliesTo": "sem 2-6",
+    "excludes": [
+      "application fee 1,000",
+      "registration fees 5,000 (own column)"
+    ],
+    "sourceUrl": "https://ssodl.edu.in/ug-pg-fees",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 26"
+  },
+  {
+    "id": "symbiosis-university-online",
+    "programme": "MBA",
+    "label": "EMI plan, semesters 1 and 2",
+    "amount": 92500,
+    "appliesTo": "sem 1-2",
+    "excludes": [
+      "application fee 1,000",
+      "registration fees 10,000 (own column)"
+    ],
+    "sourceUrl": "https://ssodl.edu.in/ug-pg-fees",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 27"
+  },
+  {
+    "id": "symbiosis-university-online",
+    "programme": "MBA",
+    "label": "EMI plan, semesters 3 and 4",
+    "amount": 87500,
+    "appliesTo": "sem 3-4",
+    "excludes": [
+      "application fee 1,000",
+      "registration fees 10,000 (own column)"
+    ],
+    "sourceUrl": "https://ssodl.edu.in/ug-pg-fees",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 27"
+  },
+  {
+    "id": "symbiosis-university-online",
+    "programme": "MBA",
+    "label": "EMI With Scholarship Of 55K (2 year experience), semesters 1 and 2",
+    "amount": 80000,
+    "appliesTo": "sem 1-2",
+    "excludes": [
+      "application fee 1,000",
+      "registration fees 10,000 (own column)"
+    ],
+    "sourceUrl": "https://ssodl.edu.in/ug-pg-fees",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 28"
+  },
+  {
+    "id": "symbiosis-university-online",
+    "programme": "MBA",
+    "label": "EMI With Scholarship Of 55K (2 year experience), semesters 3 and 4",
+    "amount": 72500,
+    "appliesTo": "sem 3-4",
+    "excludes": [
+      "application fee 1,000",
+      "registration fees 10,000 (own column)"
+    ],
+    "sourceUrl": "https://ssodl.edu.in/ug-pg-fees",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 28"
+  },
+  {
+    "id": "amrita-vishwa-vidyapeetham-online",
+    "programme": "BBA",
+    "label": "Semester Fee (Indian students)",
+    "amount": 23500,
+    "appliesTo": "every semester (6)",
+    "excludes": [
+      "registration 700",
+      "examination 2,750 per semester"
+    ],
+    "sourceUrl": "https://onlineamrita.com/program/bachelor-of-business-administration/",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 29"
+  },
+  {
+    "id": "dr-dy-patil-vidyapeeth-online",
+    "programme": "MBA",
+    "label": "Indian - Civilian, Sem I",
+    "amount": 50000,
+    "appliesTo": "sem 1",
+    "excludes": [],
+    "sourceUrl": "https://www.dypatilonline.com/mba.aspx",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 31"
+  },
+  {
+    "id": "dr-dy-patil-vidyapeeth-online",
+    "programme": "MBA",
+    "label": "Indian - Civilian, Sem II",
+    "amount": 50000,
+    "appliesTo": "sem 2",
+    "excludes": [],
+    "sourceUrl": "https://www.dypatilonline.com/mba.aspx",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 31"
+  },
+  {
+    "id": "dr-dy-patil-vidyapeeth-online",
+    "programme": "MBA",
+    "label": "Indian - Civilian, Sem III",
+    "amount": 45000,
+    "appliesTo": "sem 3",
+    "excludes": [],
+    "sourceUrl": "https://www.dypatilonline.com/mba.aspx",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 31"
+  },
+  {
+    "id": "dr-dy-patil-vidyapeeth-online",
+    "programme": "MBA",
+    "label": "Indian - Civilian, Sem IV",
+    "amount": 44400,
+    "appliesTo": "sem 4",
+    "excludes": [],
+    "sourceUrl": "https://www.dypatilonline.com/mba.aspx",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 31"
+  },
+  {
+    "id": "chitkara-university-online",
+    "programme": "MBA",
+    "label": "Per Semester Fee",
+    "amount": 50000,
+    "appliesTo": "every semester (4)",
+    "excludes": [
+      "application fee (amount not stated)"
+    ],
+    "sourceUrl": "https://www.chitkara.edu.in/online/online-mba-in-human-resource-management/",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 34"
+  },
+  {
+    "id": "dayananda-sagar-university-online",
+    "programme": "MBA",
+    "label": "Total, SEM 1 (includes 500 one-time processing fee and 1,875 exam fee)",
+    "amount": 32875,
+    "appliesTo": "sem 1",
+    "excludes": [
+      "application fee 1,000"
+    ],
+    "sourceUrl": "https://dsuonline.com/online-mba/",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 35"
+  },
+  {
+    "id": "dayananda-sagar-university-online",
+    "programme": "MBA",
+    "label": "Total, SEM 2 to 4 (includes 1,875 exam fee)",
+    "amount": 32375,
+    "appliesTo": "sem 2-4",
+    "excludes": [
+      "application fee 1,000"
+    ],
+    "sourceUrl": "https://dsuonline.com/online-mba/",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 35"
+  },
+  {
+    "id": "arka-jain-university-online",
+    "programme": "MBA",
+    "label": "Semester Fee",
+    "amount": 25000,
+    "appliesTo": "every semester (4)",
+    "excludes": [
+      "one-time registration fee 2,500",
+      "examination fees 3,000 paid yearly"
+    ],
+    "sourceUrl": "https://onlineaju.ac.in/mba/",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 36"
+  },
+  {
+    "id": "noida-international-university-online",
+    "programme": "MBA",
+    "label": "Fees, Sem 1 to Sem 4",
+    "amount": 29500,
+    "appliesTo": "sem 1-4; regular exam fees included",
+    "excludes": [
+      "application fee 1,100"
+    ],
+    "sourceUrl": "https://niuonline.edu.in/programme-detail/mba",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 37"
+  },
+  {
+    "id": "shoolini-university-online",
+    "programme": "MBA",
+    "label": "Offer 2: MBA (opt-out from Pay After Placement option)",
+    "amount": 32500,
+    "appliesTo": "every semester",
+    "excludes": [
+      "application fee 500"
+    ],
+    "sourceUrl": "https://shoolini.online/mba.php",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 38"
+  },
+  {
+    "id": "shoolini-university-online",
+    "programme": "MBA",
+    "label": "Offer 1: MBA (with Pay After Placement option)",
+    "amount": 33575,
+    "appliesTo": "every semester",
+    "excludes": [
+      "application fee 500"
+    ],
+    "sourceUrl": "https://shoolini.online/mba.php",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 39 (section E array 2; the only array 2 row taken, see FIX-LOG B3 batch 26)"
+  },
+  {
+    "id": "uttaranchal-university-online",
+    "programme": "MBA",
+    "label": "Semester Fee (Scholarship Applied)",
+    "amount": 25900,
+    "appliesTo": "every semester (4); includes exam fee 2,500 per semester",
+    "excludes": [],
+    "sourceUrl": "https://www.onlineuu.in/mba.php",
+    "checkedOn": "2026-11-27",
+    "sheetRef": "audits/verify/per-semester-fees-2026-11-27.md section A row 40"
+  }
+]
